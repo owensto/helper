@@ -1,0 +1,74 @@
+name: ATLAS D viewer recovery
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/atlas-d-recover.yml'
+permissions:
+  actions: read
+  contents: write
+jobs:
+  recover:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - name: Extract concise prior browser error
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python3 - <<'PY'
+          import urllib.request,os
+          from pathlib import Path
+          req=urllib.request.Request('https://api.github.com/repos/owensto/helper/actions/jobs/103451022533/logs',headers={'Authorization':'Bearer '+os.environ['GH_TOKEN'],'User-Agent':'ATLAS-recovery'})
+          data=urllib.request.urlopen(req).read().decode('utf8','replace')
+          i=data.find('Run node atlas_d_reconstruction/test.mjs')
+          text=data[i:i+14000] if i>=0 else data[-14000:]
+          Path('atlas_d_reconstruction/diagnostics.txt').write_text(text)
+          print(text)
+          PY
+          git config user.name 'ATLAS build'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add atlas_d_reconstruction/diagnostics.txt
+          git commit -m 'Record precise browser failure for viewer repair' || true
+          git push origin HEAD:main
+      - uses: actions/download-artifact@v4
+        with:
+          github-token: ${{ github.token }}
+          run-id: 34656850948
+          name: ATLAS-D-Reconstruction
+          path: /tmp/atlas-d
+      - name: Install browser dependencies
+        run: |
+          cd atlas_d_reconstruction
+          npm init -y >/dev/null
+          npm install --no-audit --no-fund playwright@1.55.0 >/dev/null
+          npx playwright install --with-deps chromium >/dev/null
+      - name: Reproduce browser test with concise evidence
+        id: tests
+        continue-on-error: true
+        run: |
+          node atlas_d_reconstruction/test.mjs > /tmp/atlas-d/review/test.log 2>&1
+      - name: Preserve diagnosis and test evidence
+        if: always()
+        run: |
+          test ! -f /tmp/atlas-d/review/test.log || tail -100 /tmp/atlas-d/review/test.log > atlas_d_reconstruction/recovery_test.txt
+          git add atlas_d_reconstruction/recovery_test.txt
+          git commit -m 'Record viewer recovery browser test result' || true
+          git pull --rebase origin main
+          git push origin HEAD:main
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ATLAS-D-Recovery-Evidence
+          path: /tmp/atlas-d/review/
+      - name: Publish when browser tests pass
+        if: steps.tests.outcome == 'success'
+        run: |
+          mkdir -p atlas_d_reconstruction/live
+          cp -R /tmp/atlas-d/site/. atlas_d_reconstruction/live/
+          cp /tmp/atlas-d/review/browser_validation.json atlas_d_reconstruction/live/
+          git add atlas_d_reconstruction/live
+          git commit -m 'Publish browser-verified ATLAS D reconstruction'
+          git pull --rebase origin main
+          git push origin HEAD:main
