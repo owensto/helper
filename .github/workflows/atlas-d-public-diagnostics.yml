@@ -19,29 +19,43 @@ jobs:
           npm init -y >/dev/null
           npm install --no-audit --no-fund playwright@1.55.0 >/dev/null
           npx playwright install --with-deps chromium >/dev/null
-      - name: Inspect hosting responses and real rendering
+      - name: Follow hosting confirmation and inspect actual 3D rendering
         run: |
           cat > atlas_d_reconstruction/check-hosts.mjs <<'JS'
           import {chromium} from 'playwright';
           import {writeFile} from 'node:fs/promises';
           const browser=await chromium.launch({headless:true,args:['--no-sandbox','--use-angle=swiftshader','--enable-unsafe-swiftshader']});
           const reports=[];
-          for(const host of ['raw.githack.com','rawcdn.githack.com']){
+          for(const host of ['rawcdn.githack.com','raw.githack.com']){
             const base=`https://${host}/owensto/helper/5ee5b714cc6fbeccdadbe865600fa0532f9db9b6/atlas_d_reconstruction/live/`;
-            const page=await browser.newPage({viewport:{width:1440,height:960}});const result={url:base+'index.html',assets:[],errors:[],console:[],failed:[]};
-            page.on('pageerror',e=>result.errors.push(String(e)));page.on('console',m=>{if(m.type()==='error')result.console.push(m.text().slice(0,1500));});page.on('requestfailed',r=>result.failed.push({url:r.url(),reason:r.failure()}));
+            const context=await browser.newContext({viewport:{width:1440,height:960}});
+            let page=await context.newPage();const result={url:base+'index.html',assets:[],errors:[],console:[],failed:[]};
+            function track(p){p.on('pageerror',e=>result.errors.push(String(e)));p.on('console',m=>{if(m.type()==='error')result.console.push(m.text().slice(0,1500));});p.on('requestfailed',r=>{if(r.url().includes('/atlas_d_reconstruction/'))result.failed.push({url:r.url(),reason:r.failure()});});}
+            track(page);
             try{
-              for(const f of ['index.html','viewer.js','ATLAS_D_Reconstruction.glb']){
-                const r=await page.request.get(base+f,{timeout:40000});const body=await r.body();result.assets.push({file:f,status:r.status(),type:r.headers()['content-type'],bytes:body.length,head:body.subarray(0,180).toString()});
+              const r=await page.goto(base+'index.html',{waitUntil:'domcontentloaded',timeout:45000});result.status=r.status();await page.waitForTimeout(1800);
+              const gate=page.getByText('Open the page',{exact:true});
+              if(await gate.isVisible()){
+                result.hostConfirmationRequired=true;
+                result.confirmationHTML=await gate.evaluate(el=>el.outerHTML);
+                const popupPromise=context.waitForEvent('page',{timeout:6000}).catch(()=>null);
+                await gate.click();const popup=await popupPromise;
+                if(popup){page=popup;track(page);}
               }
-              const r=await page.goto(base+'index.html',{waitUntil:'domcontentloaded',timeout:45000});result.status=r.status();
-              await page.waitForFunction(()=>window.ATLAS_D?.ready,{},{timeout:45000});await page.waitForTimeout(1500);
+              await page.waitForFunction(()=>window.ATLAS_D?.ready,{},{timeout:60000});await page.waitForTimeout(1500);
+              for(const f of ['index.html','viewer.js','ATLAS_D_Reconstruction.glb']){
+                const r=await page.request.get(base+f,{timeout:40000});const body=await r.body();result.assets.push({file:f,status:r.status(),type:r.headers()['content-type'],bytes:body.length});
+                if(r.status()!==200)throw new Error('Asset status '+r.status()+' '+f);
+                if(f.endsWith('.glb')&&body.subarray(0,4).toString()!=='glTF')throw new Error('Not GLB bytes');
+              }
               await page.screenshot({path:'/tmp/public-review/'+host+'_surface.png',timeout:90000});
-              await page.locator('[data-mode="submerged"]').click();await page.waitForFunction(()=>ATLAS_D.state==='submerged'&&!ATLAS_D.transitioning,{},{timeout:20000});await page.waitForTimeout(500);await page.screenshot({path:'/tmp/public-review/'+host+'_submerged.png',timeout:90000});
+              await page.locator('[data-view="profile"]').click();await page.waitForTimeout(500);
+              await page.locator('[data-mode="submerged"]').click();await page.waitForFunction(()=>ATLAS_D.state==='submerged'&&!ATLAS_D.transitioning,{},{timeout:20000});await page.waitForTimeout(700);await page.screenshot({path:'/tmp/public-review/'+host+'_submerged.png',timeout:90000});
               await page.locator('[data-mode="cutaway"]').click();await page.waitForTimeout(700);await page.screenshot({path:'/tmp/public-review/'+host+'_cutaway.png',timeout:90000});
-              result.passed=result.errors.length===0;result.modelReport=await page.evaluate(()=>ATLAS_D.report);result.physicalIPhoneTest=false;
+              await page.setViewportSize({width:430,height:932});await page.locator('[data-mode="surface"]').click();await page.waitForTimeout(900);await page.screenshot({path:'/tmp/public-review/'+host+'_phone.png',timeout:90000});
+              result.passed=result.errors.length===0&&result.failed.length===0;result.modelReport=await page.evaluate(()=>ATLAS_D.report);result.physicalIPhoneTest=false;result.finalURL=page.url();result.statesTested=['surface','submerged','cutaway'];
             }catch(e){result.passed=false;result.failure=String(e);result.body=(await page.locator('body').innerText().catch(()=>'' )).slice(0,3000);result.runtime=await page.evaluate(()=>window.ATLAS_D?.error||null).catch(()=>null);await page.screenshot({path:'/tmp/public-review/'+host+'_failure.png',timeout:30000}).catch(()=>{});}
-            reports.push(result);await page.close();
+            reports.push(result);await context.close();
             await writeFile('atlas_d_reconstruction/host_validation.json',JSON.stringify(reports,null,2));
             if(result.passed)break;
           }
@@ -54,7 +68,7 @@ jobs:
           git config user.name 'ATLAS build'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add atlas_d_reconstruction/host_validation.json
-          git commit -m 'Record exact public hosting diagnostics and verified URL'
+          git commit -m 'Record public viewer tests after hosting confirmation' || true
           git pull --rebase origin main
           git push origin HEAD:main
       - uses: actions/upload-artifact@v4
