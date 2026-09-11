@@ -14,16 +14,23 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Extract concise prior browser error
+        continue-on-error: true
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
           python3 - <<'PY'
-          import urllib.request,os
+          import urllib.request,urllib.error,os
           from pathlib import Path
+          class NoRedirect(urllib.request.HTTPRedirectHandler):
+              def redirect_request(self,*args,**kwargs): return None
           req=urllib.request.Request('https://api.github.com/repos/owensto/helper/actions/jobs/103451022533/logs',headers={'Authorization':'Bearer '+os.environ['GH_TOKEN'],'User-Agent':'ATLAS-recovery'})
-          data=urllib.request.urlopen(req).read().decode('utf8','replace')
+          try: response=urllib.request.build_opener(NoRedirect).open(req)
+          except urllib.error.HTTPError as e:
+              if e.code!=302: raise
+              response=urllib.request.urlopen(e.headers['Location'])
+          data=response.read().decode('utf8','replace')
           i=data.find('Run node atlas_d_reconstruction/test.mjs')
-          text=data[i:i+14000] if i>=0 else data[-14000:]
+          text=data[i:i+12000] if i>=0 else data[-12000:]
           Path('atlas_d_reconstruction/diagnostics.txt').write_text(text)
           print(text)
           PY
@@ -52,11 +59,15 @@ jobs:
       - name: Preserve diagnosis and test evidence
         if: always()
         run: |
-          test ! -f /tmp/atlas-d/review/test.log || tail -100 /tmp/atlas-d/review/test.log > atlas_d_reconstruction/recovery_test.txt
-          git add atlas_d_reconstruction/recovery_test.txt
-          git commit -m 'Record viewer recovery browser test result' || true
-          git pull --rebase origin main
-          git push origin HEAD:main
+          if [ -f /tmp/atlas-d/review/test.log ]; then
+            tail -100 /tmp/atlas-d/review/test.log > atlas_d_reconstruction/recovery_test.txt
+            git config user.name 'ATLAS build'
+            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+            git add atlas_d_reconstruction/recovery_test.txt
+            git commit -m 'Record viewer recovery browser test result' || true
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
       - uses: actions/upload-artifact@v4
         if: always()
         with:
