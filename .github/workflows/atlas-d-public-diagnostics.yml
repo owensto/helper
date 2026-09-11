@@ -1,0 +1,64 @@
+name: ATLAS D public hosting check
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/atlas-d-public-diagnostics.yml'
+permissions:
+  contents: write
+jobs:
+  check:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Prepare browser
+        run: |
+          mkdir -p /tmp/public-review
+          cd atlas_d_reconstruction
+          npm init -y >/dev/null
+          npm install --no-audit --no-fund playwright@1.55.0 >/dev/null
+          npx playwright install --with-deps chromium >/dev/null
+      - name: Inspect hosting responses and real rendering
+        run: |
+          cat > atlas_d_reconstruction/check-hosts.mjs <<'JS'
+          import {chromium} from 'playwright';
+          import {writeFile} from 'node:fs/promises';
+          const browser=await chromium.launch({headless:true,args:['--no-sandbox','--use-angle=swiftshader','--enable-unsafe-swiftshader']});
+          const reports=[];
+          for(const host of ['raw.githack.com','rawcdn.githack.com']){
+            const base=`https://${host}/owensto/helper/5ee5b714cc6fbeccdadbe865600fa0532f9db9b6/atlas_d_reconstruction/live/`;
+            const page=await browser.newPage({viewport:{width:1440,height:960}});const result={url:base+'index.html',assets:[],errors:[],console:[],failed:[]};
+            page.on('pageerror',e=>result.errors.push(String(e)));page.on('console',m=>{if(m.type()==='error')result.console.push(m.text().slice(0,1500));});page.on('requestfailed',r=>result.failed.push({url:r.url(),reason:r.failure()}));
+            try{
+              for(const f of ['index.html','viewer.js','ATLAS_D_Reconstruction.glb']){
+                const r=await page.request.get(base+f,{timeout:40000});const body=await r.body();result.assets.push({file:f,status:r.status(),type:r.headers()['content-type'],bytes:body.length,head:body.subarray(0,180).toString()});
+              }
+              const r=await page.goto(base+'index.html',{waitUntil:'domcontentloaded',timeout:45000});result.status=r.status();
+              await page.waitForFunction(()=>window.ATLAS_D?.ready,{},{timeout:45000});await page.waitForTimeout(1500);
+              await page.screenshot({path:'/tmp/public-review/'+host+'_surface.png',timeout:90000});
+              await page.locator('[data-mode="submerged"]').click();await page.waitForFunction(()=>ATLAS_D.state==='submerged'&&!ATLAS_D.transitioning,{},{timeout:20000});await page.waitForTimeout(500);await page.screenshot({path:'/tmp/public-review/'+host+'_submerged.png',timeout:90000});
+              await page.locator('[data-mode="cutaway"]').click();await page.waitForTimeout(700);await page.screenshot({path:'/tmp/public-review/'+host+'_cutaway.png',timeout:90000});
+              result.passed=result.errors.length===0;result.modelReport=await page.evaluate(()=>ATLAS_D.report);result.physicalIPhoneTest=false;
+            }catch(e){result.passed=false;result.failure=String(e);result.body=(await page.locator('body').innerText().catch(()=>'' )).slice(0,3000);result.runtime=await page.evaluate(()=>window.ATLAS_D?.error||null).catch(()=>null);await page.screenshot({path:'/tmp/public-review/'+host+'_failure.png',timeout:30000}).catch(()=>{});}
+            reports.push(result);await page.close();
+            await writeFile('atlas_d_reconstruction/host_validation.json',JSON.stringify(reports,null,2));
+            if(result.passed)break;
+          }
+          await browser.close();console.log(JSON.stringify(reports,null,2));
+          JS
+          node atlas_d_reconstruction/check-hosts.mjs
+      - name: Save exact public test report
+        if: always()
+        run: |
+          git config user.name 'ATLAS build'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add atlas_d_reconstruction/host_validation.json
+          git commit -m 'Record exact public hosting diagnostics and verified URL'
+          git pull --rebase origin main
+          git push origin HEAD:main
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ATLAS-D-Public-Hosting-Review
+          path: /tmp/public-review/
