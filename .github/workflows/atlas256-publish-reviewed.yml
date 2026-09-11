@@ -1,0 +1,62 @@
+name: Publish reviewed ATLAS exterior
+on:
+  push:
+    paths:
+      - 'atlas256/build/release.json'
+permissions:
+  actions: read
+  contents: write
+jobs:
+  publish:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - name: Read explicit reviewed build
+        run: |
+          python3 - <<'PY'
+          import json,os
+          r=json.load(open('atlas256/build/release.json'))
+          assert r['visually_reviewed'] is True
+          assert isinstance(r['run_id'],int)
+          with open(os.environ['GITHUB_ENV'],'a') as f:f.write('BUILD_RUN_ID='+str(r['run_id'])+'\n')
+          PY
+      - uses: actions/download-artifact@v4
+        with:
+          name: ATLAS-256-detailed-exterior
+          run-id: ${{ env.BUILD_RUN_ID }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          path: reviewed
+      - name: Check tested assets and publish
+        run: |
+          python3 - <<'PY'
+          import json,pathlib
+          p=pathlib.Path('reviewed')
+          r=json.loads((p/'browser_validation.json').read_text())
+          assert len(r['results'])>=2
+          assert all(not t['errors'] and not t['failed'] for t in r['results'])
+          assert all((p/'site'/n).stat().st_size>0 for n in ['index.html','viewer.js','poster.jpg','ATLAS_256_Exterior_Web.glb'])
+          PY
+          mkdir -p atlas256/v2
+          cp -R reviewed/site/. atlas256/v2/
+          cp reviewed/browser_validation.json atlas256/v2/
+          if [ ! -f atlas256/previous-exterior.html ]; then cp atlas256/index.html atlas256/previous-exterior.html; fi
+          printf '%s\n' '<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ATLAS 256</title><meta http-equiv="refresh" content="0;url=./v2/index.html"><a href="./v2/index.html">Open detailed ATLAS 256 exterior</a>' > atlas256/index.html
+          git config user.name 'ATLAS Build'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add atlas256/v2 atlas256/index.html atlas256/previous-exterior.html
+          git commit -m 'Release visually reviewed Blender ATLAS 256 exterior'
+          git push
+          echo "PUBLIC_COMMIT=$(git rev-parse HEAD)" >> "$GITHUB_ENV"
+      - name: Verify public model and desktop/mobile viewer
+        run: |
+          cd atlas256/build
+          npm install --no-audit --no-fund --save-exact @playwright/test@1.55.0
+          npx playwright install --with-deps chromium
+          node verify_public.mjs "$PUBLIC_COMMIT" "$GITHUB_WORKSPACE/reviewed"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ATLAS-256-public-verification
+          path: reviewed/public_*
+          retention-days: 30
