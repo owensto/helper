@@ -1,0 +1,39 @@
+name: Publish validated ATLAS 256 viewer
+on:
+  push:
+    paths:
+      - '.github/workflows/publish-atlas-validated.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+  actions: read
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download previously validated ATLAS build artifact
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p /tmp/atlas-artifact atlas256/v2
+          curl -fL \
+            -H "Authorization: Bearer $GH_TOKEN" \
+            -H "Accept: application/vnd.github+json" \
+            -H "X-GitHub-Api-Version: 2022-11-28" \
+            "https://api.github.com/repos/${GITHUB_REPOSITORY}/actions/artifacts/10267561158/zip" \
+            -o /tmp/atlas.zip
+          unzip -q /tmp/atlas.zip -d /tmp/atlas-artifact
+          test -s /tmp/atlas-artifact/site/index.html
+          test -s /tmp/atlas-artifact/site/ATLAS_256_Exterior_Web.glb
+          rm -rf atlas256/v2
+          mkdir -p atlas256/v2
+          cp -R /tmp/atlas-artifact/site/. atlas256/v2/
+          printf '%s\n' '<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ATLAS 256</title><meta http-equiv="refresh" content="0;url=./v2/"><a href="./v2/">Open ATLAS 256 detailed exterior</a>' > atlas256/index.html
+      - name: Commit validated viewer
+        run: |
+          git config user.name 'ATLAS Publisher'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add atlas256/index.html atlas256/v2
+          git commit -m 'Publish validated ATLAS 256 detailed viewer' || true
+          git push
