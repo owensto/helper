@@ -23,6 +23,7 @@ jobs:
           set -o pipefail
           mkdir -p atlas-output/source
           python3 atlas256/build/prepare_build.py
+          python3 atlas256/build/finish_stairwells.py
           cp atlas256/build/* atlas-output/source/
           blender -b -t 4 --python-exit-code 1 --python atlas256/build/build_exterior.py -- --out "$PWD/atlas-output" > atlas-output/build.log 2>&1 || { tail -60 atlas-output/build.log; exit 1; }
           tail -8 atlas-output/build.log
