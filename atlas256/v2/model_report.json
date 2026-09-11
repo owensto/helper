@@ -1,0 +1,20 @@
+{
+  "model": "ATLAS 256 Detailed Exterior R02",
+  "blender_version": "4.0.2",
+  "length_m": 78.2147,
+  "nominal_length_m": 78.2,
+  "length_ft": 256.56,
+  "hull_beam_m": 12.9,
+  "objects_master": 2435,
+  "mesh_objects_master": 2294,
+  "physical_teak_planks": 4536,
+  "scope": "Entire yacht exterior and running gear; tender fleet and full interiors not part of this release",
+  "construction_status": "Visualization only. No stability, structure, machinery or safety certification implied.",
+  "evaluated_triangles": 661755,
+  "web_geometry_source": "Evaluated geometry of the saved native Blender master; same detail, batched by collection",
+  "export_groups": 13,
+  "web_bytes": 5014384,
+  "uncompressed_web_bytes": 36460692,
+  "meshopt_compressed": true,
+  "viewer_bundle_bytes": 618681
+}
