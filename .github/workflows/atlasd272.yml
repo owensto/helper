@@ -1,0 +1,48 @@
+name: ATLAS D 272 build
+on:
+  push:
+    paths:
+      - 'atlasd272/**'
+      - '.github/workflows/atlasd272.yml'
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Blender
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y blender
+      - name: Build native master and GLB
+        run: |
+          mkdir -p /tmp/atlasd272
+          ATLAS_OUT=/tmp/atlasd272 blender -b --python atlasd272/build_concept.py
+          ls -lh /tmp/atlasd272
+      - name: Assemble viewer
+        run: |
+          rm -rf atlasd272/live
+          mkdir -p atlasd272/live
+          cp atlasd272/web/index.html atlasd272/live/index.html
+          cp /tmp/atlasd272/ATLAS_D_272.glb atlasd272/live/ATLAS_D_272.glb
+          cp /tmp/atlasd272/surface.jpg atlasd272/live/surface.jpg
+          cp /tmp/atlasd272/submerged.jpg atlasd272/live/submerged.jpg
+          cp /tmp/atlasd272/model_report.json atlasd272/live/model_report.json
+      - name: Preserve Blender master
+        uses: actions/upload-artifact@v4
+        with:
+          name: ATLAS-D-272-master
+          path: |
+            /tmp/atlasd272/ATLAS_D_272_Master.blend
+            /tmp/atlasd272/ATLAS_D_272.glb
+            /tmp/atlasd272/surface.jpg
+            /tmp/atlasd272/submerged.jpg
+            /tmp/atlasd272/model_report.json
+      - name: Publish viewer assets
+        run: |
+          git config user.name 'owensto'
+          git config user.email 'oas616@gmail.com'
+          git add -f atlasd272/live
+          git commit -m 'Publish ATLAS D 272 interactive concept' || exit 0
+          git push
