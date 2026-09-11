@@ -1,79 +1,58 @@
 [
   {
-    "url": "https://raw.githack.com/owensto/helper/5ee5b714cc6fbeccdadbe865600fa0532f9db9b6/atlas_d_reconstruction/live/index.html",
-    "assets": [
-      {
-        "file": "index.html",
-        "status": 200,
-        "type": "text/html; charset=utf-8",
-        "bytes": 6812,
-        "head": "<!doctype html>\n<html lang=\"en\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,viewport-fit=cover\"><meta name=\"theme-color\" content=\""
-      },
-      {
-        "file": "viewer.js",
-        "status": 200,
-        "type": "application/javascript; charset=utf-8",
-        "bytes": 602516,
-        "head": "var si={LEFT:0,MIDDLE:1,RIGHT:2,ROTATE:0,DOLLY:1,PAN:2},ri={ROTATE:0,PAN:1,DOLLY_PAN:2,DOLLY_ROTATE:3},mh=0,uc=1,gh=2;var dc=1,xo=2,wn=3,fn=0,Et=1,Ot=2,Wn=0,_i=1,fc=2,pc=3,mc=4,_h="
-      },
-      {
-        "file": "ATLAS_D_Reconstruction.glb",
-        "status": 200,
-        "type": "application/octet-stream",
-        "bytes": 5237576,
-        "head": "glTF\u0002\u0000\u0000\u0000H�O\u0000��\u0000\u0000JSON{\"asset\":{\"generator\":\"Khronos glTF Blender I/O v4.0.44\",\"version\":\"2.0\"},\"extensionsUsed\":[\"KHR_materials_emissive_strength\"],\"scene\":0,\"scenes\":[{\"name\":\"Scen"
-      }
-    ],
-    "errors": [],
-    "console": [
-      "Failed to load resource: net::ERR_BLOCKED_BY_RESPONSE.NotSameOrigin"
-    ],
-    "failed": [
-      {
-        "url": "https://server.ethicalads.io/api/v1/decision/?publisher=githackcom&ad_types=image-v1&div_ids=githack-other-ad&callback=ad_1789169502756_232573&keywords=&campaign_types=paid%7Cpublisher-house%7Ccommunity%7Chouse&format=jsonp&client_version=2.4.0&placement_index=0&url=https%3A%2F%2Fraw.githack.com%2Fowensto%2Fhelper%2F5ee5b714cc6fbeccdadbe865600fa0532f9db9b6%2Fatlas_d_reconstruction%2Flive%2Findex.html",
-        "reason": {
-          "errorText": "net::ERR_BLOCKED_BY_RESPONSE.NotSameOrigin"
-        }
-      }
-    ],
-    "status": 200,
-    "passed": false,
-    "failure": "TimeoutError: page.waitForFunction: Timeout 45000ms exceeded.",
-    "body": " rawgit.hack\nStatus Source code Report abuse\n\nOne more step\nThis HTML page is hosted on raw.githubusercontent.com and proxied as-is.\nrawgit.hack does not review third-party content.\n\nYou're going to open: \nOpen the page\nGo to homepage\n\nNot sure about the source? Avoid entering passwords, personal details, or payment information on the page.\n\n© 2013 — 2026 Pavel Puchkin\nSushi icon designed by Linda Yuki Nakanishi from The Noun Project.",
-    "runtime": null
-  },
-  {
     "url": "https://rawcdn.githack.com/owensto/helper/5ee5b714cc6fbeccdadbe865600fa0532f9db9b6/atlas_d_reconstruction/live/index.html",
     "assets": [
       {
         "file": "index.html",
         "status": 200,
         "type": "text/html; charset=utf-8",
-        "bytes": 6812,
-        "head": "<!doctype html>\n<html lang=\"en\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,viewport-fit=cover\"><meta name=\"theme-color\" content=\""
+        "bytes": 6812
       },
       {
         "file": "viewer.js",
         "status": 200,
         "type": "application/javascript; charset=utf-8",
-        "bytes": 602516,
-        "head": "var si={LEFT:0,MIDDLE:1,RIGHT:2,ROTATE:0,DOLLY:1,PAN:2},ri={ROTATE:0,PAN:1,DOLLY_PAN:2,DOLLY_ROTATE:3},mh=0,uc=1,gh=2;var dc=1,xo=2,wn=3,fn=0,Et=1,Ot=2,Wn=0,_i=1,fc=2,pc=3,mc=4,_h="
+        "bytes": 602516
       },
       {
         "file": "ATLAS_D_Reconstruction.glb",
         "status": 200,
         "type": "application/octet-stream",
-        "bytes": 5237576,
-        "head": "glTF\u0002\u0000\u0000\u0000H�O\u0000��\u0000\u0000JSON{\"asset\":{\"generator\":\"Khronos glTF Blender I/O v4.0.44\",\"version\":\"2.0\"},\"extensionsUsed\":[\"KHR_materials_emissive_strength\"],\"scene\":0,\"scenes\":[{\"name\":\"Scen"
+        "bytes": 5237576
       }
     ],
     "errors": [],
     "console": [],
     "failed": [],
     "status": 200,
-    "passed": false,
-    "failure": "TimeoutError: page.waitForFunction: Timeout 45000ms exceeded.",
-    "body": " rawgit.hack\nStatus Source code Report abuse\nThe AI-Ready Data Warehouse\nGoogle Cloud's unified data and AI platform for analytics on multimodal data.\nads via Carbon\n\nOne more step\nThis HTML page is hosted on raw.githubusercontent.com and proxied as-is.\nrawgit.hack does not review third-party content.\n\nYou're going to open: \nOpen the page\nGo to homepage\n\nNot sure about the source? Avoid entering passwords, personal details, or payment information on the page.\n\n© 2013 — 2026 Pavel Puchkin\nSushi icon designed by Linda Yuki Nakanishi from The Noun Project.",
-    "runtime": null
+    "hostConfirmationRequired": true,
+    "confirmationHTML": "<button type=\"submit\" class=\"url-action-button\">Open the page</button>",
+    "passed": true,
+    "modelReport": {
+      "name": "ATLAS D 272 | Reconstruction",
+      "design_length_m": 82.9,
+      "design_beam_m": 14.2,
+      "source_meshes": 2029,
+      "triangles": 208690,
+      "teak_boards": 2623,
+      "windows": 80,
+      "stanchions": 253,
+      "states": [
+        "surface",
+        "submerged",
+        "cutaway"
+      ],
+      "interpretation": "Reference-led visualization. Transition between concept envelopes is illustrative, not an engineered mechanism.",
+      "blender_version": "4.0.2",
+      "web_meshes": 66,
+      "glb_bytes": 5237576
+    },
+    "physicalIPhoneTest": false,
+    "finalURL": "https://rawcdn.githack.com/owensto/helper/5ee5b714cc6fbeccdadbe865600fa0532f9db9b6/atlas_d_reconstruction/live/index.html",
+    "statesTested": [
+      "surface",
+      "submerged",
+      "cutaway"
+    ]
   }
 ]
