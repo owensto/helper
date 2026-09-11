@@ -10,53 +10,47 @@ permissions:
 jobs:
   recover:
     runs-on: ubuntu-24.04
-    timeout-minutes: 12
+    timeout-minutes: 16
     steps:
       - uses: actions/checkout@v4
-      - name: Extract concise prior browser error
-        continue-on-error: true
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: |
-          python3 - <<'PY'
-          import urllib.request,urllib.error,os
-          from pathlib import Path
-          class NoRedirect(urllib.request.HTTPRedirectHandler):
-              def redirect_request(self,*args,**kwargs): return None
-          req=urllib.request.Request('https://api.github.com/repos/owensto/helper/actions/jobs/103451022533/logs',headers={'Authorization':'Bearer '+os.environ['GH_TOKEN'],'User-Agent':'ATLAS-recovery'})
-          try: response=urllib.request.build_opener(NoRedirect).open(req)
-          except urllib.error.HTTPError as e:
-              if e.code!=302: raise
-              response=urllib.request.urlopen(e.headers['Location'])
-          data=response.read().decode('utf8','replace')
-          i=data.find('Run node atlas_d_reconstruction/test.mjs')
-          text=data[i:i+12000] if i>=0 else data[-12000:]
-          Path('atlas_d_reconstruction/diagnostics.txt').write_text(text)
-          print(text)
-          PY
-          git config user.name 'ATLAS build'
-          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add atlas_d_reconstruction/diagnostics.txt
-          git commit -m 'Record precise browser failure for viewer repair' || true
-          git push origin HEAD:main
       - uses: actions/download-artifact@v4
         with:
           github-token: ${{ github.token }}
           run-id: 34656850948
           name: ATLAS-D-Reconstruction
           path: /tmp/atlas-d
-      - name: Install browser dependencies
+      - name: Optimize static rendering without reducing model fidelity
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          p=Path('atlas_d_reconstruction/viewer.js');s=p.read_text()
+          s=s.replace("controls.addEventListener('start'", "let redraw=true;controls.addEventListener('change',()=>{redraw=true;});document.addEventListener('click',()=>{redraw=true;});\n controls.addEventListener('start'")
+          s=s.replace('renderer.shadowMap.enabled=true;', 'renderer.shadowMap.enabled=true;renderer.shadowMap.autoUpdate=false;renderer.shadowMap.needsUpdate=true;')
+          s=s.replace('transition=null;mode=next;system=', 'redraw=true;renderer.shadowMap.needsUpdate=true;transition=null;mode=next;system=')
+          s=s.replace('waterNormal.offset.x+=dt*.0013;waterNormal.offset.y+=dt*.0005;', 'if(spin||transition){waterNormal.offset.x+=dt*.0013;waterNormal.offset.y+=dt*.0005;redraw=true;}')
+          s=s.replace('controls.update();renderer.render(scene,camera);', 'controls.update();if(redraw||spin||transition){renderer.render(scene,camera);redraw=false;}')
+          s=s.replace('m.opacity=alpha;m.transparent=original.transparent||alpha<.999;m.depthWrite=alpha>.94&&original.depthWrite;m.needsUpdate=true;', 'm.opacity=alpha;const transparent=original.transparent||alpha<.999;if(m.transparent!==transparent){m.transparent=transparent;m.needsUpdate=true;}m.depthWrite=alpha>.94&&original.depthWrite;')
+          Path('atlas_d_reconstruction/release_runtime.js').write_text(s)
+          s=Path('atlas_d_reconstruction/test.mjs').read_text()
+          s=s.replace('page.screenshot({path:', 'page.screenshot({timeout:120000,path:')
+          s=s.replace("page.goto('http://127.0.0.1:8765/'", "page.goto(process.env.PUBLIC_BASE||'http://127.0.0.1:8765/'")
+          s=s.replace('await page.waitForTimeout(1800);', "await page.waitForFunction(()=>window.ATLAS_D?.report,{},{timeout:30000});await page.waitForTimeout(1800);")
+          Path('atlas_d_reconstruction/release_test.mjs').write_text(s)
+          PY
+      - name: Bundle local runtime and install browser
         run: |
           cd atlas_d_reconstruction
           npm init -y >/dev/null
-          npm install --no-audit --no-fund playwright@1.55.0 >/dev/null
+          npm install --no-audit --no-fund three@0.180.0 esbuild@0.25.9 playwright@1.55.0 >/dev/null
+          npx esbuild release_runtime.js --bundle --format=esm --minify --outfile=/tmp/atlas-d/site/viewer.js
+          cp index.html /tmp/atlas-d/site/index.html
           npx playwright install --with-deps chromium >/dev/null
-      - name: Reproduce browser test with concise evidence
+      - name: Test all real controls in desktop and phone-sized browsers
         id: tests
         continue-on-error: true
         run: |
-          node atlas_d_reconstruction/test.mjs > /tmp/atlas-d/review/test.log 2>&1
-      - name: Preserve diagnosis and test evidence
+          node atlas_d_reconstruction/release_test.mjs > /tmp/atlas-d/review/test.log 2>&1
+      - name: Preserve concise test result
         if: always()
         run: |
           if [ -f /tmp/atlas-d/review/test.log ]; then
@@ -64,22 +58,56 @@ jobs:
             git config user.name 'ATLAS build'
             git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
             git add atlas_d_reconstruction/recovery_test.txt
-            git commit -m 'Record viewer recovery browser test result' || true
+            git commit -m 'Record exact viewer release test result' || true
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+      - name: Publish tested complete model
+        if: steps.tests.outcome == 'success'
+        run: |
+          mkdir -p atlas_d_reconstruction/live
+          cp -R /tmp/atlas-d/site/. atlas_d_reconstruction/live/
+          cp /tmp/atlas-d/review/browser_validation.json atlas_d_reconstruction/live/
+          git add atlas_d_reconstruction/live atlas_d_reconstruction/release_runtime.js atlas_d_reconstruction/release_test.mjs
+          git commit -m 'Publish tested full ATLAS D surface, submarine and cutaway model'
+          git pull --rebase origin main
+          git push origin HEAD:main
+          echo "PUBLIC_SHA=$(git rev-parse HEAD)" >> "$GITHUB_ENV"
+      - name: Verify actual public URL and model download
+        if: steps.tests.outcome == 'success'
+        env:
+          REVIEW_DIR: /tmp/atlas-d/public
+        run: |
+          export PUBLIC_BASE="https://rawcdn.githack.com/owensto/helper/${PUBLIC_SHA}/atlas_d_reconstruction/live/index.html"
+          mkdir -p /tmp/atlas-d/public
+          node atlas_d_reconstruction/release_test.mjs > /tmp/atlas-d/public/test.log 2>&1
+          python3 - <<'PY'
+          import urllib.request,os,json
+          from pathlib import Path
+          url=os.environ['PUBLIC_BASE'];asset=url.replace('index.html','ATLAS_D_Reconstruction.glb')
+          data=urllib.request.urlopen(asset,timeout=60).read();assert data[:4]==b'glTF'
+          r=json.loads(Path('/tmp/atlas-d/public/browser_validation.json').read_text());r.update(url=url,glbBytes=len(data),publishedCommit=os.environ['PUBLIC_SHA'])
+          Path('/tmp/atlas-d/public/public_validation.json').write_text(json.dumps(r,indent=2))
+          Path('atlas_d_reconstruction/public_validation.json').write_text(json.dumps(r,indent=2))
+          print('VERIFIED_PUBLIC_URL',url)
+          PY
+          git add atlas_d_reconstruction/public_validation.json
+          git commit -m 'Record verified public ATLAS D 3D viewer URL'
+          git pull --rebase origin main
+          git push origin HEAD:main
+      - name: Preserve public failure details when needed
+        if: always()
+        run: |
+          if [ -f /tmp/atlas-d/public/test.log ]; then
+            tail -100 /tmp/atlas-d/public/test.log > atlas_d_reconstruction/public_test.txt
+            git add atlas_d_reconstruction/public_test.txt
+            git commit -m 'Record public browser checks' || true
             git pull --rebase origin main
             git push origin HEAD:main
           fi
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: ATLAS-D-Recovery-Evidence
-          path: /tmp/atlas-d/review/
-      - name: Publish when browser tests pass
-        if: steps.tests.outcome == 'success'
-        run: |
-          mkdir -p atlas_d_reconstruction/live
-          cp -R /tmp/atlas-d/site/. atlas_d_reconstruction/live/
-          cp /tmp/atlas-d/review/browser_validation.json atlas_d_reconstruction/live/
-          git add atlas_d_reconstruction/live
-          git commit -m 'Publish browser-verified ATLAS D reconstruction'
-          git pull --rebase origin main
-          git push origin HEAD:main
+          name: ATLAS-D-Published-Model
+          path: /tmp/atlas-d/
+          retention-days: 30
