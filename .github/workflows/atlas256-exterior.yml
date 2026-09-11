@@ -1,0 +1,53 @@
+name: ATLAS 256 exterior build
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'atlas256/build/**'
+permissions:
+  contents: write
+jobs:
+  exterior:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Blender and geometry dependencies
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y blender python3-numpy
+          blender --version
+      - name: Build and render actual Blender master
+        run: |
+          mkdir -p atlas-output
+          blender -b -t 4 --python atlas256/build/build_exterior.py -- --out "$PWD/atlas-output" 2>&1 | tee atlas-output/build.log
+          test -s atlas-output/ATLAS_256_Exterior_Master.blend
+          test -s atlas-output/ATLAS_256_Exterior_Web.glb
+      - name: Build self-hosted web viewer
+        run: |
+          cd atlas256/build
+          npm install --no-audit --no-fund --save-exact three@0.180.0 esbuild@0.25.9 @playwright/test@1.55.0
+          node package_web.mjs ../../atlas-output
+      - name: Browser validation
+        run: |
+          cd atlas256/build
+          npx playwright install --with-deps chromium
+          node test_viewer.mjs ../../atlas-output/site
+      - name: Preserve complete build and test artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ATLAS-256-detailed-exterior
+          path: atlas-output/
+          retention-days: 30
+      - name: Publish validated viewer and exported Blender mesh
+        run: |
+          mkdir -p atlas256/v2
+          cp -R atlas-output/site/. atlas256/v2/
+          if [ ! -f atlas256/previous-exterior.html ]; then cp atlas256/index.html atlas256/previous-exterior.html; fi
+          printf '%s\n' '<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ATLAS 256</title><meta http-equiv="refresh" content="0;url=./v2/"><a href="./v2/">Open ATLAS 256 detailed exterior</a>' > atlas256/index.html
+          git config user.name 'ATLAS Build'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add atlas256/v2 atlas256/index.html atlas256/previous-exterior.html
+          git commit -m 'Publish validated detailed ATLAS 256 Blender exterior' || true
+          git push
