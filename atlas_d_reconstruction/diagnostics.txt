@@ -1,0 +1,62 @@
+Run node atlas_d_reconstruction/test.mjs
+2026-09-11T23:10:59.1176052Z [36;1mnode atlas_d_reconstruction/test.mjs[0m
+2026-09-11T23:10:59.1212512Z shell: /usr/bin/bash -e {0}
+2026-09-11T23:10:59.1212768Z ##[endgroup]
+2026-09-11T23:12:17.2245308Z node:internal/modules/run_main:123
+2026-09-11T23:12:17.2247439Z     triggerUncaughtException(
+2026-09-11T23:12:17.2247962Z     ^
+2026-09-11T23:12:17.2248145Z 
+2026-09-11T23:12:17.2248295Z page.screenshot: Timeout 30000ms exceeded.
+2026-09-11T23:12:17.2248654Z Call log:
+2026-09-11T23:12:17.2248861Z   - taking page screenshot
+2026-09-11T23:12:17.2249166Z   - waiting for fonts to load...
+2026-09-11T23:12:17.2249425Z   - fonts loaded
+2026-09-11T23:12:17.2249542Z 
+2026-09-11T23:12:17.2249768Z     at /home/runner/work/helper/helper/atlas_d_reconstruction/test.mjs:22:97 {
+2026-09-11T23:12:17.2250164Z   name: 'TimeoutError'
+2026-09-11T23:12:17.2250376Z }
+2026-09-11T23:12:17.2250471Z 
+2026-09-11T23:12:17.2250559Z Node.js v22.23.2
+2026-09-11T23:12:17.2337279Z ##[error]Process completed with exit code 1.
+2026-09-11T23:12:17.2414366Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+2026-09-11T23:12:17.2416386Z ##[group]Run actions/upload-artifact@v4
+2026-09-11T23:12:17.2416654Z with:
+2026-09-11T23:12:17.2416856Z   name: ATLAS-D-Reconstruction
+2026-09-11T23:12:17.2417099Z   path: /tmp/atlas-d/
+2026-09-11T23:12:17.2417319Z   retention-days: 30
+2026-09-11T23:12:17.2417537Z   if-no-files-found: error
+2026-09-11T23:12:17.2417763Z   compression-level: 6
+2026-09-11T23:12:17.2417969Z   overwrite: false
+2026-09-11T23:12:17.2418177Z   include-hidden-files: false
+2026-09-11T23:12:17.2418409Z ##[endgroup]
+2026-09-11T23:12:17.4052617Z (node:5446) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-09-11T23:12:17.4053551Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-09-11T23:12:17.4155322Z With the provided path, there will be 18 files uploaded
+2026-09-11T23:12:17.4161218Z Artifact name is valid!
+2026-09-11T23:12:17.4161935Z Root directory input is valid!
+2026-09-11T23:12:17.7904029Z Beginning upload of artifact content to blob storage
+2026-09-11T23:12:18.2163006Z (node:5446) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+2026-09-11T23:12:19.1389744Z Uploaded bytes 8049269
+2026-09-11T23:12:19.2239184Z Finished uploading artifact content to blob storage!
+2026-09-11T23:12:19.2240090Z SHA256 digest of uploaded artifact zip is aff138c9f22c4d57c99bdac5bc0bf550db58ca24b467628733df69aad3f35271
+2026-09-11T23:12:19.2242113Z Finalizing artifact upload
+2026-09-11T23:12:19.4894971Z Artifact ATLAS-D-Reconstruction.zip successfully finalized. Artifact ID 10285756800
+2026-09-11T23:12:19.4897073Z Artifact ATLAS-D-Reconstruction has been successfully uploaded! Final size is 8049269 bytes. Artifact ID is 10285756800
+2026-09-11T23:12:19.4903457Z Artifact download URL: https://github.com/owensto/helper/actions/runs/34656850948/artifacts/10285756800
+2026-09-11T23:12:19.5131713Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+2026-09-11T23:12:19.5132993Z Post job cleanup.
+2026-09-11T23:12:19.5984350Z [command]/usr/bin/git version
+2026-09-11T23:12:19.6029895Z git version 2.55.0
+2026-09-11T23:12:19.6069566Z Temporarily overriding HOME='/home/runner/work/_temp/9c8b7a6a-7f73-4715-887e-5dc16aa98594' before making global git config changes
+2026-09-11T23:12:19.6070863Z Adding repository directory to the temporary git global config as a safe directory
+2026-09-11T23:12:19.6076162Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/helper/helper
+2026-09-11T23:12:19.6117643Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-09-11T23:12:19.6153709Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-09-11T23:12:19.6451864Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-09-11T23:12:19.6476023Z http.https://github.com/.extraheader
+2026-09-11T23:12:19.6489852Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-09-11T23:12:19.6526051Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-09-11T23:12:19.6783622Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-09-11T23:12:19.6824421Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-09-11T23:12:19.7263225Z Cleaning up orphan processes
+2026-09-11T23:12:19.7687265Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
