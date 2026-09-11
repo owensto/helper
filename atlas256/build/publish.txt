@@ -1,3 +1,3 @@
-ATLAS 256 exterior review build 02.
-Native Blender execution, corrected furniture transforms, no denoiser dependency.
-Do not publish until the generated model and browser renders have been reviewed.
+ATLAS 256 exterior review build 03.
+Correct pool plank clipping, continuous deck boards, balustrade entry gaps, all aft stair flights, native file opening view, and balanced web lighting.
+Publish only after inspecting this build's actual native and browser renders.
