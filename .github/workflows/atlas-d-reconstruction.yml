@@ -1,0 +1,84 @@
+name: ATLAS D reconstruction
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'atlas_d_reconstruction/build.py'
+      - 'atlas_d_reconstruction/index.html'
+      - 'atlas_d_reconstruction/viewer.js'
+      - 'atlas_d_reconstruction/test.mjs'
+      - '.github/workflows/atlas-d-reconstruction.yml'
+permissions:
+  contents: write
+concurrency:
+  group: atlas-d-reconstruction
+  cancel-in-progress: true
+jobs:
+  build-and-verify:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install native modeling dependencies
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y blender python3-numpy python3-shapely libegl1 libgl1 libglx-mesa0 libxrender1 libxi6 libxkbcommon0
+          mkdir -p /tmp/atlas-d/site /tmp/atlas-d/review
+      - name: Refine small planforms and animation material updates
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          p=Path('atlas_d_reconstruction/build.py')
+          s=p.read_text()
+          s=s.replace("def footprint(x0,x1,b):\n return rounded", "def footprint(x0,x1,b):\n f=min(7,(x1-x0)*.38);n=min(2.3,f*.45)\n return rounded")
+          s=s.replace('(x1-7,-b)', '(x1-f,-b)').replace('(x1-7,b)', '(x1-f,b)').replace('(x1-2.3,-b*.72)', '(x1-n,-b*.72)').replace('(x1-2.3,b*.72)', '(x1-n,b*.72)')
+          p.write_text(s)
+          p=Path('atlas_d_reconstruction/viewer.js');s=p.read_text()
+          s=s.replace('m.opacity=alpha;m.transparent=original.transparent||alpha<.999;m.depthWrite=alpha>.94&&original.depthWrite;m.needsUpdate=true;', 'm.opacity=alpha;const transparent=original.transparent||alpha<.999;if(m.transparent!==transparent){m.transparent=transparent;m.needsUpdate=true;}m.depthWrite=alpha>.94&&original.depthWrite;')
+          p.write_text(s)
+          PY
+      - name: Build editable Blender master and exact GLB
+        env:
+          ATLAS_OUT: /tmp/atlas-d
+          LIBGL_ALWAYS_SOFTWARE: '1'
+        run: |
+          set -o pipefail
+          blender -b --threads 2 --python-exit-code 1 --python atlas_d_reconstruction/build.py 2>&1 | tee /tmp/atlas-d/build.log
+          test -s /tmp/atlas-d/ATLAS_D_Reconstruction.blend
+          test -s /tmp/atlas-d/ATLAS_D_Reconstruction.glb
+          test -s /tmp/atlas-d/model_report.json
+      - name: Bundle self-contained browser application
+        run: |
+          cd atlas_d_reconstruction
+          npm init -y
+          npm install --no-audit --no-fund three@0.180.0 esbuild@0.25.9 playwright@1.55.0
+          npx esbuild viewer.js --bundle --format=esm --minify --outfile=/tmp/atlas-d/site/viewer.js
+          cp index.html /tmp/atlas-d/site/index.html
+          cp /tmp/atlas-d/ATLAS_D_Reconstruction.glb /tmp/atlas-d/site/
+          cp /tmp/atlas-d/model_report.json /tmp/atlas-d/site/
+          cp /tmp/atlas-d/*.jpg /tmp/atlas-d/site/
+          cp node_modules/three/LICENSE /tmp/atlas-d/site/THIRD_PARTY_LICENSE.txt
+          npx playwright install --with-deps chromium
+      - name: Verify actual desktop and phone-sized 3D rendering
+        run: node atlas_d_reconstruction/test.mjs
+      - name: Preserve native model and review evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ATLAS-D-Reconstruction
+          path: /tmp/atlas-d/
+          retention-days: 30
+          if-no-files-found: error
+      - name: Publish tested browser assets
+        run: |
+          mkdir -p atlas_d_reconstruction/live
+          cp -R /tmp/atlas-d/site/. atlas_d_reconstruction/live/
+          cp /tmp/atlas-d/review/browser_validation.json atlas_d_reconstruction/live/
+          git config user.name 'ATLAS build'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add atlas_d_reconstruction/build.py atlas_d_reconstruction/viewer.js atlas_d_reconstruction/live
+          git diff --cached --quiet && exit 0
+          git commit -m 'Publish browser-tested ATLAS D reconstruction and native model report'
+          git pull --rebase origin main
+          git push origin HEAD:main
+          echo "PUBLIC_COMMIT=$(git rev-parse HEAD)" >> "$GITHUB_STEP_SUMMARY"
