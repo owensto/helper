@@ -113,7 +113,8 @@ world=bpy.context.scene.world or bpy.data.worlds.new('World');bpy.context.scene.
 bpy.ops.object.light_add(type='SUN',location=(0,50,50));sun=bpy.context.object;sun.data.energy=3.0;sun.rotation_euler=(math.radians(35),0,math.radians(-35))
 bpy.ops.object.light_add(type='AREA',location=(0,45,30));bpy.context.object.data.energy=1800;bpy.context.object.data.shape='DISK';bpy.context.object.data.size=45
 
-scene.render.engine='BLENDER_EEVEE_NEXT';scene.render.resolution_x=1600;scene.render.resolution_y=900;scene.render.resolution_percentage=60
+scene.render.engine='BLENDER_EEVEE';scene.render.resolution_x=1600;scene.render.resolution_y=900;scene.render.resolution_percentage=60
+scene.render.image_settings.file_format='JPEG';scene.render.image_settings.quality=90
 scene.camera=bpy.data.objects['CAM_SurfaceHero'];scene.render.filepath=os.path.join(OUT,'surface.jpg');bpy.ops.render.render(write_still=True)
 scene.frame_set(220);scene.camera=bpy.data.objects['CAM_Submerged'];scene.render.filepath=os.path.join(OUT,'submerged.jpg');bpy.ops.render.render(write_still=True)
 scene.frame_set(1)
