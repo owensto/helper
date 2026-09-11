@@ -1,3 +1,4 @@
-ATLAS 256 exterior release candidate.
-Includes complete stairwell cutouts through the deck and hull, clipped teak planking, stair guards, corrected glazing and balanced browser lighting.
-Final native and browser review required before publishing.
+ATLAS 256 detailed exterior release.
+Preserve the complete 78.2 m yacht and detailed Blender-exported geometry.
+Includes corrected stairwell patch indentation, pool clearance and deck circulation.
+Publish only after native Blender build, export and browser checks succeed.
