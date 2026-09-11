@@ -3,7 +3,8 @@ on:
   workflow_dispatch:
   push:
     paths:
-      - 'atlas256/build/**'
+      - 'atlas256/build/build_exterior.py'
+      - 'atlas256/build/publish.txt'
 permissions:
   contents: write
 jobs:
@@ -19,6 +20,7 @@ jobs:
           blender --version
       - name: Build and render actual Blender master
         run: |
+          set -o pipefail
           mkdir -p atlas-output
           blender -b -t 4 --python atlas256/build/build_exterior.py -- --out "$PWD/atlas-output" 2>&1 | tee atlas-output/build.log
           test -s atlas-output/ATLAS_256_Exterior_Master.blend
@@ -41,6 +43,7 @@ jobs:
           path: atlas-output/
           retention-days: 30
       - name: Publish validated viewer and exported Blender mesh
+        if: contains(github.event.head_commit.message, '[publish-atlas]')
         run: |
           mkdir -p atlas256/v2
           cp -R atlas-output/site/. atlas256/v2/
