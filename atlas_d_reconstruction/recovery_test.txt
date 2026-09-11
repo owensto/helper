@@ -1,0 +1,66 @@
+[
+  {
+    "viewport": "desktop",
+    "width": 1600,
+    "height": 1000,
+    "state": "surface",
+    "firstFrameMs": 598,
+    "visible": 47,
+    "triangles": 119130,
+    "calls": 53,
+    "report": {
+      "name": "ATLAS D 272 | Reconstruction",
+      "design_length_m": 82.9,
+      "design_beam_m": 14.2,
+      "source_meshes": 2029,
+      "triangles": 208690,
+      "teak_boards": 2623,
+      "windows": 80,
+      "stanchions": 253,
+      "states": [
+        "surface",
+        "submerged",
+        "cutaway"
+      ],
+      "interpretation": "Reference-led visualization. Transition between concept envelopes is illustrative, not an engineered mechanism.",
+      "blender_version": "4.0.2",
+      "web_meshes": 66,
+      "glb_bytes": 5237576
+    },
+    "errors": [],
+    "failedRequests": [],
+    "passed": true
+  },
+  {
+    "viewport": "phone",
+    "width": 430,
+    "height": 932,
+    "state": "surface",
+    "firstFrameMs": 387,
+    "visible": 47,
+    "triangles": 119130,
+    "calls": 53,
+    "report": {
+      "name": "ATLAS D 272 | Reconstruction",
+      "design_length_m": 82.9,
+      "design_beam_m": 14.2,
+      "source_meshes": 2029,
+      "triangles": 208690,
+      "teak_boards": 2623,
+      "windows": 80,
+      "stanchions": 253,
+      "states": [
+        "surface",
+        "submerged",
+        "cutaway"
+      ],
+      "interpretation": "Reference-led visualization. Transition between concept envelopes is illustrative, not an engineered mechanism.",
+      "blender_version": "4.0.2",
+      "web_meshes": 66,
+      "glb_bytes": 5237576
+    },
+    "errors": [],
+    "failedRequests": [],
+    "passed": true
+  }
+]
