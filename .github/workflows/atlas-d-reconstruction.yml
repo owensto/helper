@@ -24,7 +24,7 @@ jobs:
           sudo apt-get update -qq
           sudo apt-get install -y blender python3-numpy python3-shapely libegl1 libgl1 libglx-mesa0 libxrender1 libxi6 libxkbcommon0
           mkdir -p /tmp/atlas-d/site /tmp/atlas-d/review
-      - name: Refine small planforms and animation material updates
+      - name: Prepare planforms, renderer and animation materials
         run: |
           python3 - <<'PY'
           from pathlib import Path
@@ -32,6 +32,7 @@ jobs:
           s=p.read_text()
           s=s.replace("def footprint(x0,x1,b):\n return rounded", "def footprint(x0,x1,b):\n f=min(7,(x1-x0)*.38);n=min(2.3,f*.45)\n return rounded")
           s=s.replace('(x1-7,-b)', '(x1-f,-b)').replace('(x1-7,b)', '(x1-f,b)').replace('(x1-2.3,-b*.72)', '(x1-n,-b*.72)').replace('(x1-2.3,b*.72)', '(x1-n,b*.72)')
+          s=s.replace("scene.render.engine='CYCLES';scene.cycles.samples=16;scene.cycles.use_denoising=True", "scene.render.engine='BLENDER_EEVEE';scene.eevee.taa_render_samples=64;scene.eevee.use_gtao=True;scene.eevee.gtao_distance=3;scene.eevee.gtao_factor=1.15")
           p.write_text(s)
           p=Path('atlas_d_reconstruction/viewer.js');s=p.read_text()
           s=s.replace('m.opacity=alpha;m.transparent=original.transparent||alpha<.999;m.depthWrite=alpha>.94&&original.depthWrite;m.needsUpdate=true;', 'm.opacity=alpha;const transparent=original.transparent||alpha<.999;if(m.transparent!==transparent){m.transparent=transparent;m.needsUpdate=true;}m.depthWrite=alpha>.94&&original.depthWrite;')
