@@ -1,0 +1,78 @@
+name: ATLAS D public viewer verification
+on:
+  push:
+    paths:
+      - '.github/workflows/atlas-d-public-check.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  public-check:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 18
+    steps:
+      - name: Install browser verifier
+        run: |
+          mkdir -p /tmp/public-test
+          cd /tmp/public-test
+          npm init -y
+          npm install --no-audit --no-fund playwright@1.55.0
+          npx playwright install --with-deps chromium
+      - name: Resolve the completed publication
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python3 - <<'PY'
+          import urllib.request,json,os,time
+          endpoint='https://api.github.com/repos/owensto/helper/commits?path=atlas_d_reconstruction/live/index.html&per_page=1'
+          for attempt in range(40):
+              req=urllib.request.Request(endpoint,headers={'Authorization':'Bearer '+os.environ['GH_TOKEN'],'Accept':'application/vnd.github+json','User-Agent':'atlas-public-check'})
+              commits=json.load(urllib.request.urlopen(req))
+              if commits:
+                  sha=commits[0]['sha']
+                  open('/tmp/public-test/sha.txt','w').write(sha)
+                  print('Published asset commit:',sha)
+                  break
+              print('Waiting for validated model publication',attempt,flush=True)
+              time.sleep(15)
+          else: raise SystemExit('No validated publication appeared')
+          PY
+      - name: Test immutable public viewer and its GLB
+        run: |
+          cd /tmp/public-test
+          cat > verify.mjs <<'JS'
+          import {chromium} from 'playwright';
+          import {readFile,writeFile} from 'node:fs/promises';
+          import assert from 'node:assert/strict';
+          const sha=(await readFile('sha.txt','utf8')).trim();
+          const browser=await chromium.launch({headless:true,args:['--no-sandbox','--use-angle=swiftshader','--enable-unsafe-swiftshader']});
+          let success=false;
+          try{
+            for(const host of ['rawcdn.githack.com','raw.githack.com']){
+              const base=`https://${host}/owensto/helper/${sha}/atlas_d_reconstruction/live/`;
+              const page=await browser.newPage({viewport:{width:1440,height:960}});
+              const errors=[];page.on('pageerror',e=>errors.push(String(e)));
+              try{
+                const response=await page.goto(base+'index.html',{waitUntil:'networkidle',timeout:90000});assert.equal(response.status(),200);
+                await page.waitForFunction(()=>window.ATLAS_D?.ready,{},{timeout:90000});await page.waitForTimeout(1500);
+                const asset=await page.request.get(base+'ATLAS_D_Reconstruction.glb');assert.equal(asset.status(),200);const bytes=await asset.body();assert.equal(bytes.subarray(0,4).toString(),'glTF');
+                await page.screenshot({path:'public_surface.png'});
+                await page.locator('[data-mode="submerged"]').click();await page.waitForFunction(()=>ATLAS_D.state==='submerged'&&!ATLAS_D.transitioning,{},{timeout:20000});await page.waitForTimeout(700);await page.screenshot({path:'public_submerged.png'});
+                await page.locator('[data-mode="cutaway"]').click();await page.waitForTimeout(900);await page.screenshot({path:'public_cutaway.png'});assert.deepEqual(errors,[]);
+                const report={passed:true,url:base+'index.html',publishedCommit:sha,glbBytes:bytes.length,errors,firstFrameMs:await page.evaluate(()=>ATLAS_D.firstFrameMs),statesTested:['surface','submerged','cutaway'],physicalIPhoneTest:false};
+                await writeFile('public_validation.json',JSON.stringify(report,null,2));console.log(JSON.stringify(report,null,2));success=true;break;
+              }catch(e){console.error(host,String(e));}finally{await page.close();}
+            }
+            assert.ok(success,'No public viewer URL passed browser verification');
+          }finally{await browser.close();}
+          JS
+          node verify.mjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ATLAS-D-Public-Verification
+          path: |
+            /tmp/public-test/public_validation.json
+            /tmp/public-test/public_*.png
+          if-no-files-found: warn
+          retention-days: 30
