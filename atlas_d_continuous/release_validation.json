@@ -1,0 +1,185 @@
+{
+  "url": "https://rawcdn.githack.com/owensto/helper/050bef719792fde645c2201da8302842eb9551a2/atlas_d_continuous/live/index.html",
+  "passed": true,
+  "physicalIPhoneTest": false,
+  "tests": [
+    {
+      "label": "desktop",
+      "width": 1400,
+      "height": 900,
+      "errors": [],
+      "assetFailures": [],
+      "checks": [
+        {
+          "progress": 0,
+          "depth": 0,
+          "hullCount": 6,
+          "alternateEnvelopeNodes": 0,
+          "hullOpaque": true,
+          "animatedScaleTracks": 0,
+          "waterY": 0.012,
+          "tenderY": 0,
+          "deckAndHullLocalScaleFixed": true
+        },
+        {
+          "progress": 0.34,
+          "depth": 0,
+          "hullCount": 6,
+          "alternateEnvelopeNodes": 0,
+          "hullOpaque": true,
+          "animatedScaleTracks": 0,
+          "waterY": 0.012,
+          "tenderY": 0,
+          "deckAndHullLocalScaleFixed": true
+        },
+        {
+          "progress": 0.54,
+          "depth": 0,
+          "hullCount": 6,
+          "alternateEnvelopeNodes": 0,
+          "hullOpaque": true,
+          "animatedScaleTracks": 0,
+          "waterY": 0.012,
+          "tenderY": 0,
+          "deckAndHullLocalScaleFixed": true
+        },
+        {
+          "progress": 0.7,
+          "depth": 0,
+          "hullCount": 6,
+          "alternateEnvelopeNodes": 0,
+          "hullOpaque": true,
+          "animatedScaleTracks": 0,
+          "waterY": 0.012,
+          "tenderY": 0,
+          "deckAndHullLocalScaleFixed": true
+        },
+        {
+          "progress": 0.85,
+          "depth": 19.999996185302734,
+          "hullCount": 6,
+          "alternateEnvelopeNodes": 0,
+          "hullOpaque": true,
+          "animatedScaleTracks": 0,
+          "waterY": 0.012,
+          "tenderY": 0,
+          "deckAndHullLocalScaleFixed": true
+        },
+        {
+          "progress": 1,
+          "depth": 40,
+          "hullCount": 6,
+          "alternateEnvelopeNodes": 0,
+          "hullOpaque": true,
+          "animatedScaleTracks": 0,
+          "waterY": 0.012,
+          "tenderY": 0,
+          "deckAndHullLocalScaleFixed": true
+        }
+      ],
+      "httpStatus": 200,
+      "hostConfirmationRequired": true,
+      "revision": 2,
+      "finalURL": "https://rawcdn.githack.com/owensto/helper/050bef719792fde645c2201da8302842eb9551a2/atlas_d_continuous/live/index.html",
+      "controls": [
+        "scrubber",
+        "play",
+        "pause",
+        "reverse",
+        "reset",
+        "closures camera",
+        "X-ray"
+      ],
+      "passed": true
+    },
+    {
+      "label": "phone",
+      "width": 430,
+      "height": 932,
+      "errors": [],
+      "assetFailures": [],
+      "checks": [
+        {
+          "progress": 0,
+          "depth": 0,
+          "hullCount": 6,
+          "alternateEnvelopeNodes": 0,
+          "hullOpaque": true,
+          "animatedScaleTracks": 0,
+          "waterY": 0.012,
+          "tenderY": 0,
+          "deckAndHullLocalScaleFixed": true
+        },
+        {
+          "progress": 0.34,
+          "depth": 0,
+          "hullCount": 6,
+          "alternateEnvelopeNodes": 0,
+          "hullOpaque": true,
+          "animatedScaleTracks": 0,
+          "waterY": 0.012,
+          "tenderY": 0,
+          "deckAndHullLocalScaleFixed": true
+        },
+        {
+          "progress": 0.54,
+          "depth": 0,
+          "hullCount": 6,
+          "alternateEnvelopeNodes": 0,
+          "hullOpaque": true,
+          "animatedScaleTracks": 0,
+          "waterY": 0.012,
+          "tenderY": 0,
+          "deckAndHullLocalScaleFixed": true
+        },
+        {
+          "progress": 0.7,
+          "depth": 0,
+          "hullCount": 6,
+          "alternateEnvelopeNodes": 0,
+          "hullOpaque": true,
+          "animatedScaleTracks": 0,
+          "waterY": 0.012,
+          "tenderY": 0,
+          "deckAndHullLocalScaleFixed": true
+        },
+        {
+          "progress": 0.85,
+          "depth": 19.999996185302734,
+          "hullCount": 6,
+          "alternateEnvelopeNodes": 0,
+          "hullOpaque": true,
+          "animatedScaleTracks": 0,
+          "waterY": 0.012,
+          "tenderY": 0,
+          "deckAndHullLocalScaleFixed": true
+        },
+        {
+          "progress": 1,
+          "depth": 40,
+          "hullCount": 6,
+          "alternateEnvelopeNodes": 0,
+          "hullOpaque": true,
+          "animatedScaleTracks": 0,
+          "waterY": 0.012,
+          "tenderY": 0,
+          "deckAndHullLocalScaleFixed": true
+        }
+      ],
+      "httpStatus": 200,
+      "hostConfirmationRequired": true,
+      "revision": 2,
+      "finalURL": "https://rawcdn.githack.com/owensto/helper/050bef719792fde645c2201da8302842eb9551a2/atlas_d_continuous/live/index.html",
+      "controls": [
+        "scrubber",
+        "play",
+        "pause",
+        "reverse",
+        "reset",
+        "closures camera",
+        "X-ray"
+      ],
+      "passed": true
+    }
+  ]
+}
