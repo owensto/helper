@@ -1,0 +1,88 @@
+name: ATLAS D continuous viewer release
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'atlas_d_continuous/source/build_motion.py'
+      - 'atlas_d_continuous/source/make_runtime.py'
+      - 'atlas_d_continuous/site/index.html'
+      - 'atlas_d_continuous/site/viewer.js'
+      - 'atlas_d_continuous/test_online.mjs'
+      - '.github/workflows/atlas-d-continuous.yml'
+permissions:
+  contents: write
+concurrency:
+  group: atlas-d-continuous-release
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Restore exact original mesh and runtime
+        run: |
+          cp atlas_d_reconstruction/live/ATLAS_D_Reconstruction.glb atlas_d_continuous/source/ATLAS_D_Source.glb
+          cp atlas_d_reconstruction/live/viewer.js atlas_d_continuous/source/original_viewer.js
+          cp atlas_d_reconstruction/live/THIRD_PARTY_LICENSE.txt atlas_d_continuous/source/THIRD_PARTY_LICENSE.txt
+          echo '0aabf085159e411b78b6ad6de03f84f77f6073cd70f36e840ac64359ec356136  atlas_d_continuous/source/ATLAS_D_Source.glb' | sha256sum -c
+          echo '7872ff6555a4b0aaa9061ea5ab67e2be2f347aed1a6159c7a7b0df5c9047ac0d  atlas_d_continuous/source/original_viewer.js' | sha256sum -c
+      - name: Reproduce continuous model and bundled renderer
+        run: |
+          python -m pip install --quiet numpy==2.3.5
+          python atlas_d_continuous/source/build_motion.py
+          python atlas_d_continuous/source/make_runtime.py
+          echo '86b9cc4ce4aa10a3fd7f9f5636527cdafc1844fe73353d05f19e65dcd8485cd4  atlas_d_continuous/site/ATLAS_D_Continuous_Dive.glb' | sha256sum -c
+          echo 'ba1d6b5af31d53e99bcc44d19ff68ed7cb5c63f74aa11bab9f345d2623f668fe  atlas_d_continuous/site/runtime.js' | sha256sum -c
+      - name: Install browser test dependencies
+        run: |
+          cd atlas_d_continuous
+          npm init -y >/dev/null
+          npm install --no-audit --no-fund playwright@1.55.0 >/dev/null
+          npx playwright install --with-deps chromium >/dev/null
+      - name: Test exact release before publication
+        run: |
+          mkdir -p /tmp/atlas-continuous-review
+          python -m http.server 8765 --directory atlas_d_continuous/site >/tmp/atlas-server.log 2>&1 &
+          sleep 2
+          node atlas_d_continuous/test_online.mjs http://127.0.0.1:8765/index.html /tmp/atlas-continuous-review/local_validation.json
+      - name: Publish model and viewer without replacing older designs
+        id: publish
+        run: |
+          mkdir -p atlas_d_continuous/live
+          cp -R atlas_d_continuous/site/. atlas_d_continuous/live/
+          cp /tmp/atlas-continuous-review/local_validation.json atlas_d_continuous/live/browser_validation.json
+          git config user.name 'ATLAS release'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -f atlas_d_continuous/live
+          git commit -m 'Publish ATLAS D continuous-vessel revision 02'
+          git pull --rebase origin main
+          git push origin HEAD:main
+          sha=$(git rev-parse HEAD)
+          echo "sha=$sha" >> "$GITHUB_OUTPUT"
+          echo "url=https://rawcdn.githack.com/owensto/helper/$sha/atlas_d_continuous/live/index.html" >> "$GITHUB_OUTPUT"
+      - name: Verify public URL and actual interactive model
+        env:
+          VIEWER_URL: ${{ steps.publish.outputs.url }}
+        run: |
+          node atlas_d_continuous/test_online.mjs "$VIEWER_URL" /tmp/atlas-continuous-review/public_validation.json
+      - name: Preserve authoritative public verification
+        if: always()
+        run: |
+          if [ -f /tmp/atlas-continuous-review/public_validation.json ]; then
+            cp /tmp/atlas-continuous-review/public_validation.json atlas_d_continuous/release_validation.json
+            git add atlas_d_continuous/release_validation.json
+            git commit -m 'Record exact continuous-viewer public verification' || true
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ATLAS-D-Continuous-Public-Review
+          path: /tmp/atlas-continuous-review/
+          retention-days: 30
+          if-no-files-found: warn
