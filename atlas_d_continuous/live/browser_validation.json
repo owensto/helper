@@ -1,0 +1,185 @@
+{
+  "url": "http://127.0.0.1:8765/index.html",
+  "passed": true,
+  "physicalIPhoneTest": false,
+  "tests": [
+    {
+      "label": "desktop",
+      "width": 1400,
+      "height": 900,
+      "errors": [],
+      "assetFailures": [],
+      "checks": [
+        {
+          "progress": 0,
+          "depth": 0,
+          "hullCount": 6,
+          "alternateEnvelopeNodes": 0,
+          "hullOpaque": true,
+          "animatedScaleTracks": 0,
+          "waterY": 0.012,
+          "tenderY": 0,
+          "deckAndHullLocalScaleFixed": true
+        },
+        {
+          "progress": 0.34,
+          "depth": 0,
+          "hullCount": 6,
+          "alternateEnvelopeNodes": 0,
+          "hullOpaque": true,
+          "animatedScaleTracks": 0,
+          "waterY": 0.012,
+          "tenderY": 0,
+          "deckAndHullLocalScaleFixed": true
+        },
+        {
+          "progress": 0.54,
+          "depth": 0,
+          "hullCount": 6,
+          "alternateEnvelopeNodes": 0,
+          "hullOpaque": true,
+          "animatedScaleTracks": 0,
+          "waterY": 0.012,
+          "tenderY": 0,
+          "deckAndHullLocalScaleFixed": true
+        },
+        {
+          "progress": 0.7,
+          "depth": 0,
+          "hullCount": 6,
+          "alternateEnvelopeNodes": 0,
+          "hullOpaque": true,
+          "animatedScaleTracks": 0,
+          "waterY": 0.012,
+          "tenderY": 0,
+          "deckAndHullLocalScaleFixed": true
+        },
+        {
+          "progress": 0.85,
+          "depth": 19.999996185302734,
+          "hullCount": 6,
+          "alternateEnvelopeNodes": 0,
+          "hullOpaque": true,
+          "animatedScaleTracks": 0,
+          "waterY": 0.012,
+          "tenderY": 0,
+          "deckAndHullLocalScaleFixed": true
+        },
+        {
+          "progress": 1,
+          "depth": 40,
+          "hullCount": 6,
+          "alternateEnvelopeNodes": 0,
+          "hullOpaque": true,
+          "animatedScaleTracks": 0,
+          "waterY": 0.012,
+          "tenderY": 0,
+          "deckAndHullLocalScaleFixed": true
+        }
+      ],
+      "httpStatus": 200,
+      "hostConfirmationRequired": false,
+      "revision": 2,
+      "finalURL": "http://127.0.0.1:8765/index.html",
+      "controls": [
+        "scrubber",
+        "play",
+        "pause",
+        "reverse",
+        "reset",
+        "closures camera",
+        "X-ray"
+      ],
+      "passed": true
+    },
+    {
+      "label": "phone",
+      "width": 430,
+      "height": 932,
+      "errors": [],
+      "assetFailures": [],
+      "checks": [
+        {
+          "progress": 0,
+          "depth": 0,
+          "hullCount": 6,
+          "alternateEnvelopeNodes": 0,
+          "hullOpaque": true,
+          "animatedScaleTracks": 0,
+          "waterY": 0.012,
+          "tenderY": 0,
+          "deckAndHullLocalScaleFixed": true
+        },
+        {
+          "progress": 0.34,
+          "depth": 0,
+          "hullCount": 6,
+          "alternateEnvelopeNodes": 0,
+          "hullOpaque": true,
+          "animatedScaleTracks": 0,
+          "waterY": 0.012,
+          "tenderY": 0,
+          "deckAndHullLocalScaleFixed": true
+        },
+        {
+          "progress": 0.54,
+          "depth": 0,
+          "hullCount": 6,
+          "alternateEnvelopeNodes": 0,
+          "hullOpaque": true,
+          "animatedScaleTracks": 0,
+          "waterY": 0.012,
+          "tenderY": 0,
+          "deckAndHullLocalScaleFixed": true
+        },
+        {
+          "progress": 0.7,
+          "depth": 0,
+          "hullCount": 6,
+          "alternateEnvelopeNodes": 0,
+          "hullOpaque": true,
+          "animatedScaleTracks": 0,
+          "waterY": 0.012,
+          "tenderY": 0,
+          "deckAndHullLocalScaleFixed": true
+        },
+        {
+          "progress": 0.85,
+          "depth": 19.999996185302734,
+          "hullCount": 6,
+          "alternateEnvelopeNodes": 0,
+          "hullOpaque": true,
+          "animatedScaleTracks": 0,
+          "waterY": 0.012,
+          "tenderY": 0,
+          "deckAndHullLocalScaleFixed": true
+        },
+        {
+          "progress": 1,
+          "depth": 40,
+          "hullCount": 6,
+          "alternateEnvelopeNodes": 0,
+          "hullOpaque": true,
+          "animatedScaleTracks": 0,
+          "waterY": 0.012,
+          "tenderY": 0,
+          "deckAndHullLocalScaleFixed": true
+        }
+      ],
+      "httpStatus": 200,
+      "hostConfirmationRequired": false,
+      "revision": 2,
+      "finalURL": "http://127.0.0.1:8765/index.html",
+      "controls": [
+        "scrubber",
+        "play",
+        "pause",
+        "reverse",
+        "reset",
+        "closures camera",
+        "X-ray"
+      ],
+      "passed": true
+    }
+  ]
+}

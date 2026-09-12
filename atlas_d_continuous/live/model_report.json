@@ -1,0 +1,11 @@
+{
+  "revision": "02",
+  "name": "ATLAS D | Continuous Vessel",
+  "bytes": 8100328,
+  "nodes": 834,
+  "animation_channels": 305,
+  "duration_seconds": 26.0,
+  "rigid_motion_only": true,
+  "hull_swap": false,
+  "engineering_validated": false
+}
