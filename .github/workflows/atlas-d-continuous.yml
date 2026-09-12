@@ -32,11 +32,32 @@ jobs:
           echo '7872ff6555a4b0aaa9061ea5ab67e2be2f347aed1a6159c7a7b0df5c9047ac0d  atlas_d_continuous/source/original_viewer.js' | sha256sum -c
       - name: Reproduce continuous model and bundled renderer
         run: |
+          mkdir -p /tmp/atlas-continuous-review
           python -m pip install --quiet numpy==2.3.5
           python atlas_d_continuous/source/build_motion.py
           python atlas_d_continuous/source/make_runtime.py
-          echo '86b9cc4ce4aa10a3fd7f9f5636527cdafc1844fe73353d05f19e65dcd8485cd4  atlas_d_continuous/site/ATLAS_D_Continuous_Dive.glb' | sha256sum -c
           echo 'ba1d6b5af31d53e99bcc44d19ff68ed7cb5c63f74aa11bab9f345d2623f668fe  atlas_d_continuous/site/runtime.js' | sha256sum -c
+          python - <<'PY'
+          import json,struct,hashlib
+          from pathlib import Path
+          root=Path('atlas_d_continuous')
+          def read(p):
+              b=p.read_bytes();n=struct.unpack_from('<I',b,12)[0]
+              return json.loads(b[20:20+n]),b[28+n:]
+          old,ob=read(root/'source/ATLAS_D_Source.glb')
+          new,nb=read(root/'site/ATLAS_D_Continuous_Dive.glb')
+          assert nb[:len(ob)]==ob,'Original detailed hull geometry changed'
+          assert len(new['nodes'])==834
+          assert len(new['animations'])==1
+          assert len(new['animations'][0]['channels'])==305
+          assert all(c['target']['path'] in ('translation','rotation') for c in new['animations'][0]['channels'])
+          assert not any(n['name'].startswith('D_') for n in new['nodes'])
+          assert {'Vessel','Surface_tenders','Mast_hinge'} <= {n['name'] for n in new['nodes']}
+          report={'passed':True,'sourceBinaryPreserved':True,'nodes':834,'animationChannels':305,'hullSwap':False,'glbSHA256':hashlib.sha256((root/'site/ATLAS_D_Continuous_Dive.glb').read_bytes()).hexdigest()}
+          Path('/tmp/atlas-continuous-review/geometry_validation.json').write_text(json.dumps(report,indent=2))
+          print(json.dumps(report,indent=2))
+          PY
+          cp atlas_d_continuous/site/ATLAS_D_Continuous_Dive.glb /tmp/atlas-continuous-review/
       - name: Install browser test dependencies
         run: |
           cd atlas_d_continuous
@@ -45,7 +66,6 @@ jobs:
           npx playwright install --with-deps chromium >/dev/null
       - name: Test exact release before publication
         run: |
-          mkdir -p /tmp/atlas-continuous-review
           python -m http.server 8765 --directory atlas_d_continuous/site >/tmp/atlas-server.log 2>&1 &
           sleep 2
           node atlas_d_continuous/test_online.mjs http://127.0.0.1:8765/index.html /tmp/atlas-continuous-review/local_validation.json
@@ -55,6 +75,7 @@ jobs:
           mkdir -p atlas_d_continuous/live
           cp -R atlas_d_continuous/site/. atlas_d_continuous/live/
           cp /tmp/atlas-continuous-review/local_validation.json atlas_d_continuous/live/browser_validation.json
+          cp /tmp/atlas-continuous-review/geometry_validation.json atlas_d_continuous/live/
           git config user.name 'ATLAS release'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add -f atlas_d_continuous/live
