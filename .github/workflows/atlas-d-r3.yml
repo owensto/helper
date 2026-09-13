@@ -32,6 +32,14 @@ jobs:
           python /tmp/atlas-r3-build/source/build_systems.py
           python /tmp/atlas-r3-build/source/verify_geometry.py
           python /tmp/atlas-r3-build/patches/finish_return.py
+          python - <<'PY'
+          from pathlib import Path
+          p=Path('/tmp/atlas-r3-build/site/viewer.js');s=p.read_text()
+          old="alpha=m.name.startsWith('Pressure_capsule')?.14:.8"
+          assert old in s
+          s=s.replace(old,"alpha=m.name.startsWith('Pressure_capsule')?(system==='pressure'?.58:.14):.90")
+          p.write_text(s)
+          PY
           node --check /tmp/atlas-r3-build/site/viewer.js
       - name: Install browser
         run: |
@@ -54,7 +62,7 @@ jobs:
           git config user.name 'ATLAS release'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add atlas_d_engineering_r3/live
-          git commit -m 'Publish ATLAS D revision 03 with vent/blow/ascent sequencing' || true
+          git commit -m 'Publish ATLAS D revision 03 refined pressure-core inspector' || true
           git pull --rebase origin main
           git push origin HEAD:main
           echo "url=https://rawcdn.githack.com/owensto/helper/$(git rev-parse HEAD)/atlas_d_engineering_r3/live/index.html" >> "$GITHUB_OUTPUT"
@@ -77,9 +85,10 @@ jobs:
         continue-on-error: true
         run: |
           sudo apt-get update -qq
-          sudo apt-get install -y -qq blender libegl1 >/dev/null
+          sudo apt-get install -y -qq blender libegl1 python3-numpy >/dev/null
           mkdir -p /tmp/atlas-r3-review/native
-          LIBGL_ALWAYS_SOFTWARE=1 blender -b --python-expr "import bpy; bpy.ops.wm.read_factory_settings(use_empty=True); bpy.ops.import_scene.gltf(filepath='/tmp/atlas-r3-build/site/ATLAS_D_R3.glb'); bpy.context.scene.unit_settings.system='METRIC'; bpy.ops.wm.save_as_mainfile(filepath='/tmp/atlas-r3-review/native/ATLAS_D_R3_Review.blend')"
+          env -u LD_LIBRARY_PATH LIBGL_ALWAYS_SOFTWARE=1 blender -b --python-exit-code 1 --python-expr "import sys; sys.path.append('/usr/lib/python3/dist-packages'); import numpy,bpy; bpy.ops.wm.read_factory_settings(use_empty=True); bpy.ops.import_scene.gltf(filepath='/tmp/atlas-r3-build/site/ATLAS_D_R3.glb'); bpy.context.scene.unit_settings.system='METRIC'; bpy.ops.wm.save_as_mainfile(filepath='/tmp/atlas-r3-review/native/ATLAS_D_R3_Review.blend')"
+          test -s /tmp/atlas-r3-review/native/ATLAS_D_R3_Review.blend
       - uses: actions/upload-artifact@v4
         if: always()
         with:
