@@ -1,0 +1,45 @@
+{
+  "revision": 3,
+  "name": "ATLAS D / Pressure Boundary Study",
+  "length_m": 82.9,
+  "beam_m": 14.2,
+  "datum_descent_m": 40,
+  "certified_depth_m": null,
+  "pressure_hull": {
+    "radius_m": 3.6,
+    "straight_length_m": 48.0,
+    "overall_length_m": 55.2,
+    "center_y_m": 0.6,
+    "ideal_gross_volume_m3": 2149.754153739653,
+    "triangulated_volume_m3": 2145.8327192645934,
+    "closed_volume_mesh": true,
+    "note": "Gross geometric envelope, not usable accommodation volume; closed mesh is not pressure qualification. Ports, trunks, wall and reinforcement are arrangements only."
+  },
+  "ballast_gross_proxy_capacity_m3": 409.59999999999997,
+  "mass_budget": "NOT_ESTABLISHED",
+  "reserve_buoyancy": "NOT_ESTABLISHED",
+  "CG_CB_and_stability": "NOT_ESTABLISHED",
+  "depth_rating": "NONE",
+  "simulation": "42-second kinematic illustration, not a dynamic simulator or real dive duration",
+  "hydrostatic_constants": {
+    "seawater_density_kg_m3": 1025,
+    "g_m_s2": 9.80665,
+    "cabin_pressure_bar_abs": 1.01325
+  },
+  "new_geometry_nodes": 418,
+  "animation_channels": 357,
+  "checks": {
+    "exterior_unchanged": true,
+    "no_alternate_hull": true,
+    "no_hull_scale_tracks": true
+  },
+  "limitations": [
+    "No pressure shell scantlings or material grade",
+    "No pressure-boundary penetration structural analysis",
+    "Upper pavilions must be flood-compatible and unoccupied during dives",
+    "No validated buoyancy, stability, hydrodynamics, power or life support sizing",
+    "No emergency recovery capability demonstrated",
+    "Hatch interlocks are software teaching examples, not safety-rated controls"
+  ],
+  "glb_bytes": 10409680
+}

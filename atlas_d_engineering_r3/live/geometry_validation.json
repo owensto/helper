@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "preserved_original_hull_meshes": [
+    "S_Hull__pearl",
+    "S_Hull__graphite",
+    "S_Hull__rubber",
+    "S_Hull__chrome",
+    "S_Hull__glass",
+    "S_Hull__white"
+  ],
+  "closed_reference_volume": true,
+  "volume_discretization_error_fraction": 0.0018241315958096305,
+  "pressure_at_40m_bar_gauge": 4.0207265,
+  "pressure_at_100m_bar_gauge": 10.05181625,
+  "rigid_animation_channels": 357,
+  "engineering_validated": false,
+  "note": "Reference volume topology and software checks only; no proof of sealing, structural strength or operational capability."
+}
