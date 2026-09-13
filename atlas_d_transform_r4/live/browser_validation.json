@@ -21,7 +21,7 @@
             1
           ],
           "scaleTracks": 0,
-          "modelMeshes": 730,
+          "modelMeshes": 972,
           "revision": 4,
           "datumDepth": 0,
           "pressureBar": 0,
@@ -35,12 +35,12 @@
           "externalEqualizersOpen": false,
           "ratedDepth": null,
           "dynamicsSolved": false,
-          "rigidBindings": 387
+          "rigidBindings": 449
         },
         {
           "progress": 0.38,
           "depth": 0,
-          "roofLocalY": 13.466960906982422,
+          "roofLocalY": 14.92849063873291,
           "terraceQuaternion": [
             -0.44665753841400146,
             0,
@@ -48,7 +48,7 @@
             0.8947049975395203
           ],
           "scaleTracks": 0,
-          "modelMeshes": 721,
+          "modelMeshes": 963,
           "revision": 4,
           "datumDepth": 0,
           "pressureBar": 0,
@@ -62,7 +62,7 @@
           "externalEqualizersOpen": false,
           "ratedDepth": null,
           "dynamicsSolved": false,
-          "rigidBindings": 387
+          "rigidBindings": 449
         },
         {
           "progress": 0.62,
@@ -75,7 +75,7 @@
             0.7071067690849304
           ],
           "scaleTracks": 0,
-          "modelMeshes": 721,
+          "modelMeshes": 963,
           "revision": 4,
           "datumDepth": 0,
           "pressureBar": 0,
@@ -89,7 +89,7 @@
           "externalEqualizersOpen": true,
           "ratedDepth": null,
           "dynamicsSolved": false,
-          "rigidBindings": 387
+          "rigidBindings": 449
         },
         {
           "progress": 1,
@@ -102,7 +102,7 @@
             0.7071067690849304
           ],
           "scaleTracks": 0,
-          "modelMeshes": 721,
+          "modelMeshes": 963,
           "revision": 4,
           "datumDepth": 40,
           "pressureBar": 4.0207265,
@@ -116,10 +116,11 @@
           "externalEqualizersOpen": true,
           "ratedDepth": null,
           "dynamicsSolved": false,
-          "rigidBindings": 387
+          "rigidBindings": 449
         }
       ],
       "canopyDropMetres": 5.159999847412109,
+      "automaticSurfaceStop": true,
       "controls": [
         "Before / Ready",
         "Transform only",
@@ -146,7 +147,7 @@
             1
           ],
           "scaleTracks": 0,
-          "modelMeshes": 730,
+          "modelMeshes": 972,
           "revision": 4,
           "datumDepth": 0,
           "pressureBar": 0,
@@ -160,12 +161,12 @@
           "externalEqualizersOpen": false,
           "ratedDepth": null,
           "dynamicsSolved": false,
-          "rigidBindings": 387
+          "rigidBindings": 449
         },
         {
           "progress": 0.38,
           "depth": 0,
-          "roofLocalY": 13.466960906982422,
+          "roofLocalY": 14.92849063873291,
           "terraceQuaternion": [
             -0.44665753841400146,
             0,
@@ -173,7 +174,7 @@
             0.8947049975395203
           ],
           "scaleTracks": 0,
-          "modelMeshes": 721,
+          "modelMeshes": 963,
           "revision": 4,
           "datumDepth": 0,
           "pressureBar": 0,
@@ -187,7 +188,7 @@
           "externalEqualizersOpen": false,
           "ratedDepth": null,
           "dynamicsSolved": false,
-          "rigidBindings": 387
+          "rigidBindings": 449
         },
         {
           "progress": 0.62,
@@ -200,7 +201,7 @@
             0.7071067690849304
           ],
           "scaleTracks": 0,
-          "modelMeshes": 721,
+          "modelMeshes": 963,
           "revision": 4,
           "datumDepth": 0,
           "pressureBar": 0,
@@ -214,7 +215,7 @@
           "externalEqualizersOpen": true,
           "ratedDepth": null,
           "dynamicsSolved": false,
-          "rigidBindings": 387
+          "rigidBindings": 449
         },
         {
           "progress": 1,
@@ -227,7 +228,7 @@
             0.7071067690849304
           ],
           "scaleTracks": 0,
-          "modelMeshes": 721,
+          "modelMeshes": 963,
           "revision": 4,
           "datumDepth": 40,
           "pressureBar": 4.0207265,
@@ -241,10 +242,11 @@
           "externalEqualizersOpen": true,
           "ratedDepth": null,
           "dynamicsSolved": false,
-          "rigidBindings": 387
+          "rigidBindings": 449
         }
       ],
       "canopyDropMetres": 5.159999847412109,
+      "automaticSurfaceStop": true,
       "controls": [
         "Before / Ready",
         "Transform only",
