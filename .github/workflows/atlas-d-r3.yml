@@ -1,0 +1,85 @@
+name: ATLAS D pressure-boundary study
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'atlas_d_engineering_r3/source/**'
+      - 'atlas_d_engineering_r3/site/index.html'
+      - 'atlas_d_engineering_r3/site/style.css'
+      - 'atlas_d_engineering_r3/site/viewer.js'
+      - 'atlas_d_engineering_r3/site/design.html'
+      - '.github/workflows/atlas-d-r3.yml'
+permissions:
+  contents: write
+jobs:
+  publish:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 18
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Build original exterior plus new systems
+        run: |
+          python -m pip install --quiet numpy==2.3.5 trimesh==4.11.1 scipy
+          cp atlas_d_continuous/live/runtime.js atlas_d_engineering_r3/site/runtime.js
+          cp atlas_d_continuous/live/THIRD_PARTY_LICENSE.txt atlas_d_engineering_r3/site/THIRD_PARTY_LICENSE.txt
+          python atlas_d_engineering_r3/source/build_systems.py
+          python atlas_d_engineering_r3/source/verify_geometry.py
+      - name: Install browser
+        run: |
+          cd atlas_d_engineering_r3
+          npm init -y >/dev/null
+          npm install --no-audit --no-fund playwright@1.55.0 >/dev/null
+          npx playwright install --with-deps chromium >/dev/null
+      - name: Test local release and capture review images
+        run: |
+          mkdir -p /tmp/atlas-r3-review/local
+          python -m http.server 8755 --bind 127.0.0.1 --directory atlas_d_engineering_r3/site >/tmp/atlas-r3-review/http.log 2>&1 &
+          sleep 2
+          REVIEW_DIR=/tmp/atlas-r3-review/local node atlas_d_engineering_r3/source/verify.mjs
+      - name: Publish new revision without overwriting older concepts
+        id: publish
+        run: |
+          mkdir -p atlas_d_engineering_r3/live
+          cp -R atlas_d_engineering_r3/site/. atlas_d_engineering_r3/live/
+          cp /tmp/atlas-r3-review/local/validation.json atlas_d_engineering_r3/live/browser_validation.json
+          git config user.name 'ATLAS release'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add atlas_d_engineering_r3/live
+          git commit -m 'Publish ATLAS D revision 03 pressure-boundary study' || true
+          git pull --rebase origin main
+          git push origin HEAD:main
+          echo "url=https://rawcdn.githack.com/owensto/helper/$(git rev-parse HEAD)/atlas_d_engineering_r3/live/index.html" >> "$GITHUB_OUTPUT"
+      - name: Test actual public URL and controls
+        env:
+          BASE_URL: ${{ steps.publish.outputs.url }}
+          REVIEW_DIR: /tmp/atlas-r3-review/public
+        run: node atlas_d_engineering_r3/source/verify.mjs
+      - name: Save public verification
+        if: always()
+        run: |
+          if [ -f /tmp/atlas-r3-review/public/validation.json ]; then
+            cp /tmp/atlas-r3-review/public/validation.json atlas_d_engineering_r3/release_validation.json
+            git add atlas_d_engineering_r3/release_validation.json
+            git commit -m 'Record ATLAS D revision 03 public verification' || true
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+      - name: Create native Blender review scene
+        continue-on-error: true
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq blender libegl1 >/dev/null
+          mkdir -p /tmp/atlas-r3-review/native
+          LIBGL_ALWAYS_SOFTWARE=1 blender -b --python-expr "import bpy; bpy.ops.wm.read_factory_settings(use_empty=True); bpy.ops.import_scene.gltf(filepath='$(pwd)/atlas_d_engineering_r3/site/ATLAS_D_R3.glb'); bpy.context.scene.unit_settings.system='METRIC'; bpy.ops.wm.save_as_mainfile(filepath='/tmp/atlas-r3-review/native/ATLAS_D_R3_Review.blend')"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ATLAS-D-R3-Model-and-Review
+          path: |
+            /tmp/atlas-r3-review/
+            atlas_d_engineering_r3/site/
+            atlas_d_engineering_r3/source/
+          retention-days: 30
