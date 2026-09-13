@@ -1,0 +1,30 @@
+{
+  "revision": 4,
+  "name": "ATLAS D / Articulated exterior",
+  "hull_length_m": 82.9,
+  "hull_beam_m": 14.2,
+  "deployed_terrace_beam_m": 20.16,
+  "canopy_roof_top_surface_m": 15.39,
+  "canopy_roof_top_stowed_m": 10.23,
+  "roof_drop_m": 5.16,
+  "pressure_capsule_changed": false,
+  "main_hull_changed": false,
+  "upper_accommodation_redesigned_as_open_canopies": true,
+  "no_room_shrinking": true,
+  "structural_collision_and_load_validation": false,
+  "certified_depth_m": null,
+  "duration_seconds": 42,
+  "preparation_end_fraction": 0.62,
+  "glb_bytes": 6574412,
+  "animation_channels": 387,
+  "articulated_nodes": 155,
+  "mechanisms": [
+    "two-stage fixed-length scissor canopy",
+    "single-stage scissor canopy",
+    "radar folding with canopy",
+    "folding daybed backs",
+    "upfolding side terraces",
+    "linked roll-top aft exterior fairing"
+  ],
+  "limitation": "Kinematic design study only; loads, tolerances, pressure qualification, mass, buoyancy, stability and collision certification unresolved."
+}

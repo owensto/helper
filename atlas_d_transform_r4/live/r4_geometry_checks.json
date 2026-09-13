@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "checks": [
+    "identical R3 hull mesh references",
+    "identical pressure capsule mesh reference",
+    "all scissor link lengths exceed deployed rise",
+    "zero scale animation channels",
+    "all rendered animation targets reachable"
+  ],
+  "engineering_validated": false
+}
