@@ -52,7 +52,7 @@ jobs:
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add atlas_d_integrated_r5/live
           git commit -m 'Publish visually reviewed ATLAS D integrated exterior R5'
-          git pull --rebase origin main
+          git -c rebase.autoStash=true pull --rebase origin main
           git push origin HEAD:main
           echo "url=https://rawcdn.githack.com/owensto/helper/$(git rev-parse HEAD)/atlas_d_integrated_r5/live/index.html" >> "$GITHUB_OUTPUT"
       - name: Verify the exact public URL
@@ -67,7 +67,7 @@ jobs:
           cp /tmp/atlas5/public/validation.json atlas_d_integrated_r5/release_validation.json
           git add atlas_d_integrated_r5/release_validation.json
           git commit -m 'Record ATLAS D R5 public browser verification'
-          git pull --rebase origin main
+          git -c rebase.autoStash=true pull --rebase origin main
           git push origin HEAD:main
       - uses: actions/upload-artifact@v4
         if: always()
