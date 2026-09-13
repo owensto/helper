@@ -1,0 +1,75 @@
+name: ATLAS D visible exterior conversion
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'atlas_d_transform_r4/source/**'
+      - '.github/workflows/atlas-d-r4.yml'
+permissions:
+  contents: write
+concurrency:
+  group: atlas-d-transform-r4
+  cancel-in-progress: true
+jobs:
+  publish:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 18
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Build articulated exterior from immutable pressure-core source
+        run: |
+          python -m pip install -q numpy==2.3.5 trimesh==4.11.1 scipy
+          python atlas_d_transform_r4/source/build_transform.py
+          python atlas_d_transform_r4/source/patch_viewer.py
+      - name: Prepare browser verification
+        run: |
+          cd atlas_d_transform_r4
+          npm init -y >/dev/null
+          npm install --no-audit --no-fund playwright@1.55.0 >/dev/null
+          npx playwright install --with-deps chromium >/dev/null
+      - name: Test conversion and capture both silhouettes
+        run: |
+          mkdir -p /tmp/atlas-r4-review/local
+          python -m http.server 8764 --bind 127.0.0.1 --directory atlas_d_transform_r4/site >/tmp/atlas-r4-review/http.log 2>&1 &
+          sleep 2
+          node atlas_d_transform_r4/source/verify.mjs
+      - name: Publish tested separate revision
+        id: release
+        run: |
+          mkdir -p atlas_d_transform_r4/live
+          cp -R atlas_d_transform_r4/site/. atlas_d_transform_r4/live/
+          cp /tmp/atlas-r4-review/local/validation.json atlas_d_transform_r4/live/browser_validation.json
+          git config user.name 'ATLAS release'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add atlas_d_transform_r4/live
+          git commit -m 'Publish ATLAS D R4 articulated exterior' || true
+          git pull --rebase origin main
+          git push origin HEAD:main
+          echo "url=https://rawcdn.githack.com/owensto/helper/$(git rev-parse HEAD)/atlas_d_transform_r4/live/index.html" >> "$GITHUB_OUTPUT"
+      - name: Verify actual public viewer
+        env:
+          BASE_URL: ${{ steps.release.outputs.url }}
+          REVIEW_DIR: /tmp/atlas-r4-review/public
+        run: node atlas_d_transform_r4/source/verify.mjs
+      - name: Preserve exact release evidence
+        if: always()
+        run: |
+          if [ -f /tmp/atlas-r4-review/public/validation.json ]; then
+            cp /tmp/atlas-r4-review/public/validation.json atlas_d_transform_r4/release_validation.json
+            git add atlas_d_transform_r4/release_validation.json
+            git commit -m 'Record public ATLAS D R4 verification' || true
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ATLAS-D-R4-Viewer-and-Review
+          path: |
+            /tmp/atlas-r4-review/
+            atlas_d_transform_r4/site/
+            atlas_d_transform_r4/source/
+          retention-days: 30
