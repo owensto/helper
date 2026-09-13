@@ -1,0 +1,614 @@
+{
+  "url": "http://127.0.0.1:8787/index.html",
+  "passed": true,
+  "engineering_validated": false,
+  "physical_iPhone_test": false,
+  "tests": [
+    {
+      "label": "desktop",
+      "viewport": [
+        1600,
+        1000
+      ],
+      "http_status": 200,
+      "host_confirmation_required": false,
+      "poses": [
+        {
+          "progress": 0,
+          "depth": 0,
+          "upperDrop": 0,
+          "bridgeDrop": 0,
+          "skyDrop": 0,
+          "tenderChase": [
+            -23,
+            0,
+            17
+          ],
+          "tenderUtility": [
+            -10,
+            0,
+            17.200000762939453
+          ],
+          "mast": [
+            -2.5,
+            15.979999542236328,
+            0
+          ],
+          "mainHullScale": [
+            1,
+            1,
+            1
+          ],
+          "pressureCoreScale": [
+            1,
+            1,
+            1
+          ],
+          "mainHullVisible": true,
+          "scaleTracks": 0,
+          "calls": 139
+        },
+        {
+          "progress": 0.8,
+          "depth": 0,
+          "upperDrop": 2.3499999046325684,
+          "bridgeDrop": 4.670000076293945,
+          "skyDrop": 6.329999923706055,
+          "tenderChase": [
+            -34.81999969482422,
+            1.2999999523162842,
+            2.369999885559082
+          ],
+          "tenderUtility": [
+            -36.099998474121094,
+            1.2999999523162842,
+            -2.369999885559082
+          ],
+          "mast": [
+            -2.5,
+            4.860000133514404,
+            0
+          ],
+          "mainHullScale": [
+            1,
+            1,
+            1
+          ],
+          "pressureCoreScale": [
+            1,
+            1,
+            1
+          ],
+          "mainHullVisible": true,
+          "scaleTracks": 0,
+          "calls": 139
+        },
+        {
+          "progress": 0.53,
+          "depth": 0,
+          "upperDrop": 0,
+          "bridgeDrop": 0.8342788219451904,
+          "skyDrop": 4.899683475494385,
+          "tenderChase": [
+            -34.81999969482422,
+            1.2999999523162842,
+            2.369999885559082
+          ],
+          "tenderUtility": [
+            -36.099998474121094,
+            1.2999999523162842,
+            -2.369999885559082
+          ],
+          "mast": [
+            -2.5,
+            4.860000133514404,
+            0
+          ],
+          "mainHullScale": [
+            1,
+            1,
+            1
+          ],
+          "pressureCoreScale": [
+            1,
+            1,
+            1
+          ],
+          "mainHullVisible": true,
+          "scaleTracks": 0,
+          "calls": 139
+        },
+        {
+          "progress": 0,
+          "depth": 0,
+          "upperDrop": 0,
+          "bridgeDrop": 0,
+          "skyDrop": 0,
+          "tenderChase": [
+            -23,
+            0,
+            17
+          ],
+          "tenderUtility": [
+            -10,
+            0,
+            17.200000762939453
+          ],
+          "mast": [
+            -2.5,
+            15.979999542236328,
+            0
+          ],
+          "mainHullScale": [
+            1,
+            1,
+            1
+          ],
+          "pressureCoreScale": [
+            1,
+            1,
+            1
+          ],
+          "mainHullVisible": true,
+          "scaleTracks": 0,
+          "calls": 139
+        },
+        {
+          "progress": 0.8,
+          "depth": 0,
+          "upperDrop": 2.3499999046325684,
+          "bridgeDrop": 4.670000076293945,
+          "skyDrop": 6.329999923706055,
+          "tenderChase": [
+            -34.81999969482422,
+            1.2999999523162842,
+            2.369999885559082
+          ],
+          "tenderUtility": [
+            -36.099998474121094,
+            1.2999999523162842,
+            -2.369999885559082
+          ],
+          "mast": [
+            -2.5,
+            4.860000133514404,
+            0
+          ],
+          "mainHullScale": [
+            1,
+            1,
+            1
+          ],
+          "pressureCoreScale": [
+            1,
+            1,
+            1
+          ],
+          "mainHullVisible": true,
+          "scaleTracks": 0,
+          "calls": 139
+        },
+        {
+          "progress": 0.195,
+          "depth": 0,
+          "upperDrop": 0,
+          "bridgeDrop": 0,
+          "skyDrop": 0,
+          "tenderChase": [
+            -42.58460235595703,
+            1.2999999523162842,
+            2.369999885559082
+          ],
+          "tenderUtility": [
+            -43.85939407348633,
+            0,
+            17.200000762939453
+          ],
+          "mast": [
+            -2.5,
+            15.979999542236328,
+            0
+          ],
+          "mainHullScale": [
+            1,
+            1,
+            1
+          ],
+          "pressureCoreScale": [
+            1,
+            1,
+            1
+          ],
+          "mainHullVisible": true,
+          "scaleTracks": 0,
+          "calls": 137
+        },
+        {
+          "progress": 0.565,
+          "depth": 0,
+          "upperDrop": 0.08798524737358093,
+          "bridgeDrop": 2.60364031791687,
+          "skyDrop": 6.29832649230957,
+          "tenderChase": [
+            -34.81999969482422,
+            1.2999999523162842,
+            2.369999885559082
+          ],
+          "tenderUtility": [
+            -36.099998474121094,
+            1.2999999523162842,
+            -2.369999885559082
+          ],
+          "mast": [
+            -2.5,
+            4.860000133514404,
+            0
+          ],
+          "mainHullScale": [
+            1,
+            1,
+            1
+          ],
+          "pressureCoreScale": [
+            1,
+            1,
+            1
+          ],
+          "mainHullVisible": true,
+          "scaleTracks": 0,
+          "calls": 138
+        },
+        {
+          "progress": 1,
+          "depth": 26,
+          "upperDrop": 2.3499999046325684,
+          "bridgeDrop": 4.670000076293945,
+          "skyDrop": 6.329999923706055,
+          "tenderChase": [
+            -34.81999969482422,
+            -24.700000047683716,
+            2.369999885559082
+          ],
+          "tenderUtility": [
+            -36.099998474121094,
+            -24.700000047683716,
+            -2.369999885559082
+          ],
+          "mast": [
+            -2.5,
+            -21.139999866485596,
+            0
+          ],
+          "mainHullScale": [
+            1,
+            1,
+            1
+          ],
+          "pressureCoreScale": [
+            1,
+            1,
+            1
+          ],
+          "mainHullVisible": true,
+          "scaleTracks": 0,
+          "calls": 140
+        }
+      ],
+      "errors": [],
+      "asset_failures": [],
+      "controls": [
+        "surface/ready fixed camera",
+        "conversion stop above water",
+        "timeline",
+        "recovery camera",
+        "shells camera",
+        "x-ray bays",
+        "design limits"
+      ],
+      "passed": true
+    },
+    {
+      "label": "phone",
+      "viewport": [
+        430,
+        932
+      ],
+      "http_status": 200,
+      "host_confirmation_required": false,
+      "poses": [
+        {
+          "progress": 0,
+          "depth": 0,
+          "upperDrop": 0,
+          "bridgeDrop": 0,
+          "skyDrop": 0,
+          "tenderChase": [
+            -23,
+            0,
+            17
+          ],
+          "tenderUtility": [
+            -10,
+            0,
+            17.200000762939453
+          ],
+          "mast": [
+            -2.5,
+            15.979999542236328,
+            0
+          ],
+          "mainHullScale": [
+            1,
+            1,
+            1
+          ],
+          "pressureCoreScale": [
+            1,
+            1,
+            1
+          ],
+          "mainHullVisible": true,
+          "scaleTracks": 0,
+          "calls": 139
+        },
+        {
+          "progress": 0.8,
+          "depth": 0,
+          "upperDrop": 2.3499999046325684,
+          "bridgeDrop": 4.670000076293945,
+          "skyDrop": 6.329999923706055,
+          "tenderChase": [
+            -34.81999969482422,
+            1.2999999523162842,
+            2.369999885559082
+          ],
+          "tenderUtility": [
+            -36.099998474121094,
+            1.2999999523162842,
+            -2.369999885559082
+          ],
+          "mast": [
+            -2.5,
+            4.860000133514404,
+            0
+          ],
+          "mainHullScale": [
+            1,
+            1,
+            1
+          ],
+          "pressureCoreScale": [
+            1,
+            1,
+            1
+          ],
+          "mainHullVisible": true,
+          "scaleTracks": 0,
+          "calls": 139
+        },
+        {
+          "progress": 0.53,
+          "depth": 0,
+          "upperDrop": 0,
+          "bridgeDrop": 0.8342788219451904,
+          "skyDrop": 4.899683475494385,
+          "tenderChase": [
+            -34.81999969482422,
+            1.2999999523162842,
+            2.369999885559082
+          ],
+          "tenderUtility": [
+            -36.099998474121094,
+            1.2999999523162842,
+            -2.369999885559082
+          ],
+          "mast": [
+            -2.5,
+            4.860000133514404,
+            0
+          ],
+          "mainHullScale": [
+            1,
+            1,
+            1
+          ],
+          "pressureCoreScale": [
+            1,
+            1,
+            1
+          ],
+          "mainHullVisible": true,
+          "scaleTracks": 0,
+          "calls": 139
+        },
+        {
+          "progress": 0,
+          "depth": 0,
+          "upperDrop": 0,
+          "bridgeDrop": 0,
+          "skyDrop": 0,
+          "tenderChase": [
+            -23,
+            0,
+            17
+          ],
+          "tenderUtility": [
+            -10,
+            0,
+            17.200000762939453
+          ],
+          "mast": [
+            -2.5,
+            15.979999542236328,
+            0
+          ],
+          "mainHullScale": [
+            1,
+            1,
+            1
+          ],
+          "pressureCoreScale": [
+            1,
+            1,
+            1
+          ],
+          "mainHullVisible": true,
+          "scaleTracks": 0,
+          "calls": 139
+        },
+        {
+          "progress": 0.8,
+          "depth": 0,
+          "upperDrop": 2.3499999046325684,
+          "bridgeDrop": 4.670000076293945,
+          "skyDrop": 6.329999923706055,
+          "tenderChase": [
+            -34.81999969482422,
+            1.2999999523162842,
+            2.369999885559082
+          ],
+          "tenderUtility": [
+            -36.099998474121094,
+            1.2999999523162842,
+            -2.369999885559082
+          ],
+          "mast": [
+            -2.5,
+            4.860000133514404,
+            0
+          ],
+          "mainHullScale": [
+            1,
+            1,
+            1
+          ],
+          "pressureCoreScale": [
+            1,
+            1,
+            1
+          ],
+          "mainHullVisible": true,
+          "scaleTracks": 0,
+          "calls": 139
+        },
+        {
+          "progress": 0.195,
+          "depth": 0,
+          "upperDrop": 0,
+          "bridgeDrop": 0,
+          "skyDrop": 0,
+          "tenderChase": [
+            -42.58460235595703,
+            1.2999999523162842,
+            2.369999885559082
+          ],
+          "tenderUtility": [
+            -43.85939407348633,
+            0,
+            17.200000762939453
+          ],
+          "mast": [
+            -2.5,
+            15.979999542236328,
+            0
+          ],
+          "mainHullScale": [
+            1,
+            1,
+            1
+          ],
+          "pressureCoreScale": [
+            1,
+            1,
+            1
+          ],
+          "mainHullVisible": true,
+          "scaleTracks": 0,
+          "calls": 132
+        },
+        {
+          "progress": 0.565,
+          "depth": 0,
+          "upperDrop": 0.08798524737358093,
+          "bridgeDrop": 2.60364031791687,
+          "skyDrop": 6.29832649230957,
+          "tenderChase": [
+            -34.81999969482422,
+            1.2999999523162842,
+            2.369999885559082
+          ],
+          "tenderUtility": [
+            -36.099998474121094,
+            1.2999999523162842,
+            -2.369999885559082
+          ],
+          "mast": [
+            -2.5,
+            4.860000133514404,
+            0
+          ],
+          "mainHullScale": [
+            1,
+            1,
+            1
+          ],
+          "pressureCoreScale": [
+            1,
+            1,
+            1
+          ],
+          "mainHullVisible": true,
+          "scaleTracks": 0,
+          "calls": 138
+        },
+        {
+          "progress": 1,
+          "depth": 26,
+          "upperDrop": 2.3499999046325684,
+          "bridgeDrop": 4.670000076293945,
+          "skyDrop": 6.329999923706055,
+          "tenderChase": [
+            -34.81999969482422,
+            -24.700000047683716,
+            2.369999885559082
+          ],
+          "tenderUtility": [
+            -36.099998474121094,
+            -24.700000047683716,
+            -2.369999885559082
+          ],
+          "mast": [
+            -2.5,
+            -21.139999866485596,
+            0
+          ],
+          "mainHullScale": [
+            1,
+            1,
+            1
+          ],
+          "pressureCoreScale": [
+            1,
+            1,
+            1
+          ],
+          "mainHullVisible": true,
+          "scaleTracks": 0,
+          "calls": 140
+        }
+      ],
+      "errors": [],
+      "asset_failures": [],
+      "controls": [
+        "surface/ready fixed camera",
+        "conversion stop above water",
+        "timeline",
+        "recovery camera",
+        "shells camera",
+        "x-ray bays",
+        "design limits"
+      ],
+      "passed": true
+    }
+  ]
+}
