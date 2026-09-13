@@ -1,0 +1,442 @@
+{
+  "url": "https://rawcdn.githack.com/owensto/helper/ea18cbb06d30f7461d20d19492652f280d981dcd/atlas_d_integrated_r5/live/index.html",
+  "physical_iPhone_test": false,
+  "engineering_validation": false,
+  "tests": [
+    {
+      "label": "desktop",
+      "http_status": 200,
+      "host_confirmation_required": true,
+      "elapsed_test_seconds": 46.54,
+      "poses": [
+        {
+          "progress": 0,
+          "depth": 0,
+          "canopy": [
+            -12,
+            11.0649995803833,
+            0
+          ],
+          "mast": [
+            2.549999952316284,
+            12.039999961853027,
+            0
+          ],
+          "terrace": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1
+          ],
+          "coreFixed": true,
+          "renderCalls": 76
+        },
+        {
+          "progress": 0.3,
+          "depth": 0,
+          "canopy": [
+            -8.600000381469727,
+            11.0649995803833,
+            0
+          ],
+          "mast": [
+            2.549999952316284,
+            9.739999771118164,
+            0
+          ],
+          "terrace": [
+            -0.20221756398677826,
+            -0.0,
+            -0.0,
+            0.9793406128883362
+          ],
+          "coreFixed": true,
+          "renderCalls": 76
+        },
+        {
+          "progress": 0.62,
+          "depth": 0,
+          "canopy": [
+            -5.199999809265137,
+            11.0649995803833,
+            0
+          ],
+          "mast": [
+            2.549999952316284,
+            9.739999771118164,
+            0
+          ],
+          "terrace": [
+            -0.7071067690849304,
+            -0.0,
+            -0.0,
+            0.7071067690849304
+          ],
+          "coreFixed": true,
+          "renderCalls": 76
+        },
+        {
+          "progress": 0,
+          "depth": 0,
+          "canopy": [
+            -12,
+            11.0649995803833,
+            0
+          ],
+          "mast": [
+            2.549999952316284,
+            12.039999961853027,
+            0
+          ],
+          "terrace": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1
+          ],
+          "coreFixed": true,
+          "renderCalls": 76
+        },
+        {
+          "progress": 0,
+          "depth": 0,
+          "canopy": [
+            -12,
+            11.0649995803833,
+            0
+          ],
+          "mast": [
+            2.549999952316284,
+            12.039999961853027,
+            0
+          ],
+          "terrace": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1
+          ],
+          "coreFixed": true,
+          "renderCalls": 76
+        },
+        {
+          "progress": 0.29,
+          "depth": 0,
+          "canopy": [
+            -8.89960765838623,
+            11.0649995803833,
+            0
+          ],
+          "mast": [
+            2.549999952316284,
+            9.754470825195312,
+            0
+          ],
+          "terrace": [
+            -0.16888348758220673,
+            -0.0,
+            -0.0,
+            0.9856359958648682
+          ],
+          "coreFixed": true,
+          "renderCalls": 70
+        },
+        {
+          "progress": 0.2,
+          "depth": 0,
+          "canopy": [
+            -11.253979682922363,
+            11.0649995803833,
+            0
+          ],
+          "mast": [
+            2.549999952316284,
+            10.733613967895508,
+            0
+          ],
+          "terrace": [
+            -7.610760355269974e-10,
+            -0.0,
+            -0.0,
+            1
+          ],
+          "coreFixed": true,
+          "renderCalls": 53
+        },
+        {
+          "progress": 0.35,
+          "depth": 0,
+          "canopy": [
+            -7.143252849578857,
+            11.0649995803833,
+            0
+          ],
+          "mast": [
+            2.549999952316284,
+            9.739999771118164,
+            0
+          ],
+          "terrace": [
+            -0.3826833963394165,
+            -0.0,
+            -0.0,
+            0.9238795042037964
+          ],
+          "coreFixed": true,
+          "renderCalls": 72
+        },
+        {
+          "progress": 1,
+          "depth": 26,
+          "canopy": [
+            -5.199999809265137,
+            11.0649995803833,
+            0
+          ],
+          "mast": [
+            2.549999952316284,
+            9.739999771118164,
+            0
+          ],
+          "terrace": [
+            -0.7071067690849304,
+            -0.0,
+            -0.0,
+            0.7071067690849304
+          ],
+          "coreFixed": true,
+          "renderCalls": 76
+        }
+      ],
+      "errors": [],
+      "asset_failures": [],
+      "controls": [
+        "convert stops above water",
+        "before/stowed same camera",
+        "timeline",
+        "pressure core",
+        "stowage inspection",
+        "reset"
+      ],
+      "passed": true
+    },
+    {
+      "label": "phone",
+      "http_status": 200,
+      "host_confirmation_required": true,
+      "elapsed_test_seconds": 15.18,
+      "poses": [
+        {
+          "progress": 0,
+          "depth": 0,
+          "canopy": [
+            -12,
+            11.0649995803833,
+            0
+          ],
+          "mast": [
+            2.549999952316284,
+            12.039999961853027,
+            0
+          ],
+          "terrace": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1
+          ],
+          "coreFixed": true,
+          "renderCalls": 76
+        },
+        {
+          "progress": 0.3,
+          "depth": 0,
+          "canopy": [
+            -8.600000381469727,
+            11.0649995803833,
+            0
+          ],
+          "mast": [
+            2.549999952316284,
+            9.739999771118164,
+            0
+          ],
+          "terrace": [
+            -0.20221756398677826,
+            -0.0,
+            -0.0,
+            0.9793406128883362
+          ],
+          "coreFixed": true,
+          "renderCalls": 76
+        },
+        {
+          "progress": 0.62,
+          "depth": 0,
+          "canopy": [
+            -5.199999809265137,
+            11.0649995803833,
+            0
+          ],
+          "mast": [
+            2.549999952316284,
+            9.739999771118164,
+            0
+          ],
+          "terrace": [
+            -0.7071067690849304,
+            -0.0,
+            -0.0,
+            0.7071067690849304
+          ],
+          "coreFixed": true,
+          "renderCalls": 76
+        },
+        {
+          "progress": 0,
+          "depth": 0,
+          "canopy": [
+            -12,
+            11.0649995803833,
+            0
+          ],
+          "mast": [
+            2.549999952316284,
+            12.039999961853027,
+            0
+          ],
+          "terrace": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1
+          ],
+          "coreFixed": true,
+          "renderCalls": 76
+        },
+        {
+          "progress": 0,
+          "depth": 0,
+          "canopy": [
+            -12,
+            11.0649995803833,
+            0
+          ],
+          "mast": [
+            2.549999952316284,
+            12.039999961853027,
+            0
+          ],
+          "terrace": [
+            -0.0,
+            -0.0,
+            -0.0,
+            1
+          ],
+          "coreFixed": true,
+          "renderCalls": 72
+        },
+        {
+          "progress": 0.29,
+          "depth": 0,
+          "canopy": [
+            -8.89960765838623,
+            11.0649995803833,
+            0
+          ],
+          "mast": [
+            2.549999952316284,
+            9.754470825195312,
+            0
+          ],
+          "terrace": [
+            -0.16888348758220673,
+            -0.0,
+            -0.0,
+            0.9856359958648682
+          ],
+          "coreFixed": true,
+          "renderCalls": 69
+        },
+        {
+          "progress": 0.2,
+          "depth": 0,
+          "canopy": [
+            -11.253979682922363,
+            11.0649995803833,
+            0
+          ],
+          "mast": [
+            2.549999952316284,
+            10.733613967895508,
+            0
+          ],
+          "terrace": [
+            -7.610760355269974e-10,
+            -0.0,
+            -0.0,
+            1
+          ],
+          "coreFixed": true,
+          "renderCalls": 38
+        },
+        {
+          "progress": 0.35,
+          "depth": 0,
+          "canopy": [
+            -7.143252849578857,
+            11.0649995803833,
+            0
+          ],
+          "mast": [
+            2.549999952316284,
+            9.739999771118164,
+            0
+          ],
+          "terrace": [
+            -0.3826833963394165,
+            -0.0,
+            -0.0,
+            0.9238795042037964
+          ],
+          "coreFixed": true,
+          "renderCalls": 64
+        },
+        {
+          "progress": 1,
+          "depth": 26,
+          "canopy": [
+            -5.199999809265137,
+            11.0649995803833,
+            0
+          ],
+          "mast": [
+            2.549999952316284,
+            9.739999771118164,
+            0
+          ],
+          "terrace": [
+            -0.7071067690849304,
+            -0.0,
+            -0.0,
+            0.7071067690849304
+          ],
+          "coreFixed": true,
+          "renderCalls": 76
+        }
+      ],
+      "errors": [],
+      "asset_failures": [],
+      "controls": [
+        "convert stops above water",
+        "before/stowed same camera",
+        "timeline",
+        "pressure core",
+        "stowage inspection",
+        "reset"
+      ],
+      "passed": true
+    }
+  ],
+  "passed": true
+}
