@@ -38,7 +38,7 @@ try {
   await page.locator('#transform').click();await page.waitForTimeout(1200);
   if(!await page.evaluate(()=>ATLAS_D.transitioning))throw new Error('Transform control did not start');
   await page.locator('#play').click();if(await page.evaluate(()=>ATLAS_D.transitioning))throw new Error('Pause failed');
-  await page.evaluate(()=>{ATLAS_D.seek(.62);ATLAS_D.setView('mechanism')});
+  await page.locator('#transform').click();await page.evaluate(()=>{ATLAS_D.seek(.619);ATLAS_D.play()});await page.waitForFunction(()=>Math.abs(ATLAS_D.progress-.62)<.001&&!ATLAS_D.transitioning,{},{timeout:10000});row.automaticSurfaceStop=true;await page.evaluate(()=>{ATLAS_D.seek(.62);ATLAS_D.setView('mechanism')});
   await page.waitForTimeout(600);await page.screenshot({path:`${dir}/${label}_canopies.png`,timeout:90000});
   await page.locator('[data-view=stern]').click();await page.waitForTimeout(600);await page.screenshot({path:`${dir}/${label}_stern.png`,timeout:90000});
   await page.evaluate(()=>{ATLAS_D.setXray(true);ATLAS_D.setSystem('pressure')});await page.waitForTimeout(500);
