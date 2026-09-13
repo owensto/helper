@@ -1,0 +1,47 @@
+{
+  "revision": 5,
+  "name": "ATLAS D / Integrated exterior",
+  "loa_m": 82.9,
+  "beam_m": 14.2,
+  "fixed_pressure_core": true,
+  "certified_depth_m": null,
+  "new_upper_design": "fixed swept deckhouses, no folding glass pavilions",
+  "mechanisms": [
+    {
+      "name": "Sliding aft canopy",
+      "travel_m": 6.8,
+      "storage": "between crown top and soffit, x -9.4 to -2.0",
+      "nominal_vertical_clearance_m": 0.05
+    },
+    {
+      "name": "Sensor mast",
+      "vertical_travel_m": 2.3,
+      "storage": "dedicated non-pressure trunk outside pressure capsule"
+    },
+    {
+      "name": "Port and starboard terraces",
+      "hinge_angle_deg": 90,
+      "panel_m": [
+        8,
+        2.3
+      ],
+      "storage": "matching side-fairing recess; not a dry pressure closure"
+    },
+    {
+      "name": "Segmented pool fairing",
+      "segments": 4,
+      "storage": "nested cassette at forward edge of pool",
+      "pressure_door": false
+    }
+  ],
+  "structural_clearance_validation": false,
+  "physics_solved": false,
+  "duration_s": 36,
+  "prepare_end": 0.62,
+  "dive_start": 0.74,
+  "display_descent_m": 26,
+  "source_parts": 597,
+  "render_batches": 90,
+  "glb_bytes": 4524672,
+  "note": "Only geometric and playback checks. No watertightness, collapse strength, stability or recovery qualification."
+}
