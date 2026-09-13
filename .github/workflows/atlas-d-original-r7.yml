@@ -28,6 +28,7 @@ jobs:
           python -m pip install -q numpy==2.3.5 trimesh==4.11.1 scipy networkx shapely playwright==1.55.0
           cp atlas_d_continuous/live/runtime.js atlas_d_original_r7/site/runtime.js
           cp atlas_d_continuous/live/THIRD_PARTY_LICENSE.txt atlas_d_original_r7/site/THIRD_PARTY_LICENSE.txt
+          python atlas_d_original_r7/patches/refine.py
           ATLAS_ROOT="$PWD/atlas_d_original_r7" ATLAS_SOURCE="$PWD/atlas_d_reconstruction/live/ATLAS_D_Reconstruction.glb" python atlas_d_original_r7/source/build.py
       - name: Install browser
         run: python -m playwright install --with-deps chromium >/dev/null
