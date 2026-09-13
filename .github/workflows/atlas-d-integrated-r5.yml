@@ -23,7 +23,7 @@ jobs:
           python-version: '3.13'
       - name: Build integrated exterior and preserve source pressure arrangement
         run: |
-          python -m pip install -q numpy==2.3.5 trimesh==4.11.1 scipy playwright==1.55.0
+          python -m pip install -q numpy==2.3.5 trimesh==4.11.1 scipy networkx playwright==1.55.0
           cp atlas_d_continuous/live/runtime.js atlas_d_integrated_r5/site/runtime.js
           cp atlas_d_continuous/live/THIRD_PARTY_LICENSE.txt atlas_d_integrated_r5/site/THIRD_PARTY_LICENSE.txt
           ATLAS_ROOT="$PWD/atlas_d_integrated_r5" ATLAS_SOURCE="$PWD/atlas_d_engineering_r3/live/ATLAS_D_R3.glb" python atlas_d_integrated_r5/source/build.py
