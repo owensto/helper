@@ -1,0 +1,80 @@
+name: ATLAS D integrated exterior R5
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'atlas_d_integrated_r5/source/**'
+      - 'atlas_d_integrated_r5/site/**'
+      - 'atlas_d_integrated_r5/APPROVED.md'
+      - '.github/workflows/atlas-d-integrated-r5.yml'
+permissions:
+  contents: write
+concurrency:
+  group: atlas-d-integrated-r5
+  cancel-in-progress: true
+jobs:
+  review:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 18
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Build integrated exterior and preserve source pressure arrangement
+        run: |
+          python -m pip install -q numpy==2.3.5 trimesh==4.11.1 scipy playwright==1.55.0
+          cp atlas_d_continuous/live/runtime.js atlas_d_integrated_r5/site/runtime.js
+          cp atlas_d_continuous/live/THIRD_PARTY_LICENSE.txt atlas_d_integrated_r5/site/THIRD_PARTY_LICENSE.txt
+          ATLAS_ROOT="$PWD/atlas_d_integrated_r5" ATLAS_SOURCE="$PWD/atlas_d_engineering_r3/live/ATLAS_D_R3.glb" python atlas_d_integrated_r5/source/build.py
+      - name: Install browser
+        run: python -m playwright install --with-deps chromium >/dev/null
+      - name: Inspect the actual mesh in surface, intermediate and stowed configurations
+        run: |
+          mkdir -p /tmp/atlas5/review
+          python -m http.server 8785 --bind 127.0.0.1 --directory atlas_d_integrated_r5/site >/tmp/atlas5/http.log 2>&1 &
+          sleep 2
+          python atlas_d_integrated_r5/source/verify.py
+      - name: Create the actual native Blender model
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq blender python3-numpy libegl1 >/dev/null
+          env -u PYTHONHOME -u PYTHONPATH -u LD_LIBRARY_PATH ATLAS_ROOT="$PWD/atlas_d_integrated_r5" LIBGL_ALWAYS_SOFTWARE=1 /usr/bin/blender -b --python-exit-code 1 --python atlas_d_integrated_r5/source/native.py
+          test -s /tmp/atlas5/native/ATLAS_D_R5_Integrated_Exterior.blend
+      - name: Publish only after the visual review
+        id: release
+        if: contains(github.event.head_commit.message, '[publish]')
+        run: |
+          mkdir -p atlas_d_integrated_r5/live
+          cp -R atlas_d_integrated_r5/site/. atlas_d_integrated_r5/live/
+          cp /tmp/atlas5/review/validation.json atlas_d_integrated_r5/live/browser_validation.json
+          git config user.name 'ATLAS release'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add atlas_d_integrated_r5/live
+          git commit -m 'Publish visually reviewed ATLAS D integrated exterior R5'
+          git pull --rebase origin main
+          git push origin HEAD:main
+          echo "url=https://rawcdn.githack.com/owensto/helper/$(git rev-parse HEAD)/atlas_d_integrated_r5/live/index.html" >> "$GITHUB_OUTPUT"
+      - name: Verify the exact public URL
+        if: steps.release.outputs.url != ''
+        env:
+          BASE_URL: ${{ steps.release.outputs.url }}
+          REVIEW_DIR: /tmp/atlas5/public
+        run: python atlas_d_integrated_r5/source/verify.py
+      - name: Record public verification
+        if: steps.release.outputs.url != ''
+        run: |
+          cp /tmp/atlas5/public/validation.json atlas_d_integrated_r5/release_validation.json
+          git add atlas_d_integrated_r5/release_validation.json
+          git commit -m 'Record ATLAS D R5 public browser verification'
+          git pull --rebase origin main
+          git push origin HEAD:main
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ATLAS-D-R5-Review-and-Model
+          path: |
+            /tmp/atlas5/
+            atlas_d_integrated_r5/site/
+            atlas_d_integrated_r5/source/
+          retention-days: 30
