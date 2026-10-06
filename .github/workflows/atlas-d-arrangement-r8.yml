@@ -1,0 +1,111 @@
+name: ATLAS D R8 arrangement laboratory
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'atlas_d_arrangement_r8/transport/**'
+      - 'atlas_d_arrangement_r8/fixups.py'
+      - 'atlas_d_arrangement_r8/REVIEW.md'
+      - '.github/workflows/atlas-d-arrangement-r8.yml'
+permissions:
+  contents: write
+concurrency:
+  group: atlas-d-arrangement-r8
+  cancel-in-progress: true
+jobs:
+  review:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 18
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Restore exact source and decode reviewed text bundle
+        run: |
+          git fetch --no-tags origin 64d9814c831eb798a48c91b71a5a623cbe8a0e27
+          mkdir -p /tmp/atlas8-base/site /tmp/atlas8-base/source atlas_d_arrangement_r8/site
+          git show 64d9814c831eb798a48c91b71a5a623cbe8a0e27:atlas_d_original_r7/live/ATLAS_D_Original.glb > /tmp/atlas8-base/site/ATLAS_D_Original.glb
+          git show 64d9814c831eb798a48c91b71a5a623cbe8a0e27:atlas_d_original_r7/source/meshkit.py > /tmp/atlas8-base/source/meshkit.py
+          git show 64d9814c831eb798a48c91b71a5a623cbe8a0e27:atlas_d_original_r7/live/runtime.js > /tmp/atlas8-base/site/runtime.js
+          git show 64d9814c831eb798a48c91b71a5a623cbe8a0e27:atlas_d_original_r7/live/THIRD_PARTY_LICENSE.txt > /tmp/atlas8-base/site/THIRD_PARTY_LICENSE.txt
+          python - <<'PY'
+          from pathlib import Path
+          import base64,hashlib,json,lzma
+          root=Path('atlas_d_arrangement_r8')
+          parts=[root/'transport'/f'part{i}.b64' for i in range(4)]
+          texts=[p.read_text().strip() for p in parts]
+          # Repair a known duplicate in text transport, then verify the entire binary digest.
+          texts[0]=texts[0].replace('rPOPOKEeubrf','rPOKEeubrf')
+          encoded=''.join(texts)
+          data=base64.b64decode(encoded,validate=True)
+          assert hashlib.sha256(data).hexdigest()=='6bc40aa41935f27296045b9ac0cce16b8b5493599fe3df7ada3a51635d6fd38f','Source transport checksum mismatch'
+          files=json.loads(lzma.decompress(data))
+          for rel,content in files.items():
+              assert rel.startswith(('source/','site/')) and '..' not in Path(rel).parts
+              dest=root/rel;dest.parent.mkdir(parents=True,exist_ok=True);dest.write_text(content)
+          for p,text in zip(parts,texts):p.write_text(text)
+          print('Verified and restored',len(files),'plain-text source files')
+          PY
+          if [ -f atlas_d_arrangement_r8/fixups.py ]; then python atlas_d_arrangement_r8/fixups.py; fi
+      - name: Build and check arrangement reservations
+        env:
+          ATLAS_BASE: /tmp/atlas8-base
+          ATLAS_OUT: ${{ github.workspace }}/atlas_d_arrangement_r8/site
+        run: |
+          python -m pip install -q numpy==2.3.5 trimesh==4.11.1 scipy networkx shapely playwright==1.55.0
+          python atlas_d_arrangement_r8/source/build_r8.py
+      - name: Install browser
+        run: python -m playwright install --with-deps chromium >/dev/null
+      - name: Inspect actual geometry and interactive numerical cases
+        run: |
+          mkdir -p /tmp/atlas8/review
+          python -m http.server 8798 --bind 127.0.0.1 --directory atlas_d_arrangement_r8/site >/tmp/atlas8/http.log 2>&1 &
+          sleep 2
+          python atlas_d_arrangement_r8/source/verify.py
+      - name: Save editable native Blender arrangement
+        env:
+          ATLAS_OUT: ${{ github.workspace }}/atlas_d_arrangement_r8/site
+          ATLAS_NATIVE: /tmp/atlas8/native
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq blender python3-numpy libegl1 >/dev/null
+          env -u PYTHONHOME -u PYTHONPATH -u LD_LIBRARY_PATH LIBGL_ALWAYS_SOFTWARE=1 /usr/bin/blender -b --python-exit-code 1 --python atlas_d_arrangement_r8/source/native.py
+          test -s /tmp/atlas8/native/ATLAS_D_R8_Arrangement.blend
+      - name: Publish separate reviewed candidate
+        id: release
+        if: contains(github.event.head_commit.message, '[publish]')
+        run: |
+          mkdir -p atlas_d_arrangement_r8/live
+          cp -R atlas_d_arrangement_r8/site/. atlas_d_arrangement_r8/live/
+          cp /tmp/atlas8/review/validation.json atlas_d_arrangement_r8/live/browser_validation.json
+          git config user.name 'ATLAS release'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add atlas_d_arrangement_r8
+          git commit -m 'Publish R8 dimensioned candidate, transparent conflicts and buoyancy sensitivity' || true
+          git pull --rebase --autostash origin main
+          git push origin HEAD:main
+          echo "url=https://rawcdn.githack.com/owensto/helper/$(git rev-parse HEAD)/atlas_d_arrangement_r8/live/index.html" >> "$GITHUB_OUTPUT"
+      - name: Test exact public URL
+        if: steps.release.outputs.url != ''
+        env:
+          BASE_URL: ${{ steps.release.outputs.url }}
+          REVIEW_DIR: /tmp/atlas8/public
+        run: python atlas_d_arrangement_r8/source/verify.py
+      - name: Record public verification
+        if: steps.release.outputs.url != ''
+        run: |
+          cp /tmp/atlas8/public/validation.json atlas_d_arrangement_r8/release_validation.json
+          git add atlas_d_arrangement_r8/release_validation.json
+          git commit -m 'Record public R8 interaction verification, not engineering qualification'
+          git pull --rebase --autostash origin main
+          git push origin HEAD:main
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ATLAS-D-R8-Arrangement-and-Review
+          path: |
+            /tmp/atlas8/
+            atlas_d_arrangement_r8/source/
+            atlas_d_arrangement_r8/site/
+          retention-days: 30
