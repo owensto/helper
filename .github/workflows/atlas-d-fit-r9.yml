@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - 'atlas_d_fit_r9/source_bundle.b64'
+      - 'atlas_d_fit_r9/source/display.py'
       - 'atlas_d_fit_r9/REVIEW.md'
       - '.github/workflows/atlas-d-fit-r9.yml'
 permissions:
@@ -57,6 +58,7 @@ jobs:
           ATLAS_BASE=/tmp/atlas8-base ATLAS_OUT="$PWD/atlas_d_arrangement_r8/site" python atlas_d_arrangement_r8/source/build_r8.py
           python atlas_d_fit_r9/source/refine.py
           python atlas_d_fit_r9/source/viewer_patch.py
+          python atlas_d_fit_r9/source/display.py
           node --check atlas_d_fit_r9/site/lab.js
       - name: Install browser
         run: python -m playwright install --with-deps chromium >/dev/null
