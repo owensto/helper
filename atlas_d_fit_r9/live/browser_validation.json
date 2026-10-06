@@ -1,0 +1,316 @@
+{
+  "url": "http://127.0.0.1:8799/index.html",
+  "passed": true,
+  "engineering_validated": false,
+  "physical_phone_test": false,
+  "tests": [
+    {
+      "label": "desktop",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "http_status": 200,
+      "offline_injected": false,
+      "host_confirmation_required": false,
+      "modes": [
+        {
+          "progress": 0,
+          "mode": "exterior",
+          "depth": 0,
+          "roomCount": 29,
+          "roomFit": true,
+          "tenderFit": true,
+          "carrierFit": true,
+          "poolGap": 0.3000001907348633,
+          "engineeringValidated": false,
+          "mainScale": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "progress": 0.8,
+          "mode": "upper",
+          "depth": 0,
+          "roomCount": 29,
+          "roomFit": true,
+          "tenderFit": true,
+          "carrierFit": true,
+          "poolGap": 0.3000001907348633,
+          "engineeringValidated": false,
+          "mainScale": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "progress": 0.8,
+          "mode": "lower",
+          "depth": 0,
+          "roomCount": 29,
+          "roomFit": true,
+          "tenderFit": true,
+          "carrierFit": true,
+          "poolGap": 0.3000001907348633,
+          "engineeringValidated": false,
+          "mainScale": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "progress": 0.8,
+          "mode": "garages",
+          "depth": 0,
+          "roomCount": 29,
+          "roomFit": true,
+          "tenderFit": true,
+          "carrierFit": true,
+          "poolGap": 0.3000001907348633,
+          "engineeringValidated": false,
+          "mainScale": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "progress": 0.8,
+          "mode": "pool",
+          "depth": 0,
+          "roomCount": 29,
+          "roomFit": true,
+          "tenderFit": true,
+          "carrierFit": true,
+          "poolGap": 0.3000001907348633,
+          "engineeringValidated": false,
+          "mainScale": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "progress": 0.225,
+          "mode": "recovery",
+          "depth": 0,
+          "roomCount": 29,
+          "roomFit": true,
+          "tenderFit": true,
+          "carrierFit": true,
+          "poolGap": 0.3000001907348633,
+          "engineeringValidated": false,
+          "mainScale": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "progress": 0.8,
+          "mode": "buoyancy",
+          "depth": 0,
+          "roomCount": 29,
+          "roomFit": true,
+          "tenderFit": true,
+          "carrierFit": true,
+          "poolGap": 0.3000001907348633,
+          "engineeringValidated": false,
+          "mainScale": [
+            1,
+            1,
+            1
+          ]
+        }
+      ],
+      "submerged_poses": {
+        "depth": 26,
+        "chase": [
+          -33.70000076293945,
+          -24.830000042915344,
+          2.5
+        ],
+        "utility": [
+          -33.70000076293945,
+          -24.455999970436096,
+          -2.5
+        ],
+        "coreScale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "passed": true,
+      "errors": [],
+      "asset_failures": [],
+      "controls": [
+        "inspection tabs",
+        "previous/new carrier overlay",
+        "above-water stop",
+        "timeline",
+        "full dive",
+        "fixed dry-room layout",
+        "gross-buoyancy sensitivity"
+      ]
+    },
+    {
+      "label": "phone",
+      "viewport": [
+        430,
+        932
+      ],
+      "http_status": 200,
+      "offline_injected": false,
+      "host_confirmation_required": false,
+      "modes": [
+        {
+          "progress": 0,
+          "mode": "exterior",
+          "depth": 0,
+          "roomCount": 29,
+          "roomFit": true,
+          "tenderFit": true,
+          "carrierFit": true,
+          "poolGap": 0.3000001907348633,
+          "engineeringValidated": false,
+          "mainScale": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "progress": 0.8,
+          "mode": "upper",
+          "depth": 0,
+          "roomCount": 29,
+          "roomFit": true,
+          "tenderFit": true,
+          "carrierFit": true,
+          "poolGap": 0.3000001907348633,
+          "engineeringValidated": false,
+          "mainScale": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "progress": 0.8,
+          "mode": "lower",
+          "depth": 0,
+          "roomCount": 29,
+          "roomFit": true,
+          "tenderFit": true,
+          "carrierFit": true,
+          "poolGap": 0.3000001907348633,
+          "engineeringValidated": false,
+          "mainScale": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "progress": 0.8,
+          "mode": "garages",
+          "depth": 0,
+          "roomCount": 29,
+          "roomFit": true,
+          "tenderFit": true,
+          "carrierFit": true,
+          "poolGap": 0.3000001907348633,
+          "engineeringValidated": false,
+          "mainScale": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "progress": 0.8,
+          "mode": "pool",
+          "depth": 0,
+          "roomCount": 29,
+          "roomFit": true,
+          "tenderFit": true,
+          "carrierFit": true,
+          "poolGap": 0.3000001907348633,
+          "engineeringValidated": false,
+          "mainScale": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "progress": 0.225,
+          "mode": "recovery",
+          "depth": 0,
+          "roomCount": 29,
+          "roomFit": true,
+          "tenderFit": true,
+          "carrierFit": true,
+          "poolGap": 0.3000001907348633,
+          "engineeringValidated": false,
+          "mainScale": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "progress": 0.8,
+          "mode": "buoyancy",
+          "depth": 0,
+          "roomCount": 29,
+          "roomFit": true,
+          "tenderFit": true,
+          "carrierFit": true,
+          "poolGap": 0.3000001907348633,
+          "engineeringValidated": false,
+          "mainScale": [
+            1,
+            1,
+            1
+          ]
+        }
+      ],
+      "submerged_poses": {
+        "depth": 26,
+        "chase": [
+          -33.70000076293945,
+          -24.830000042915344,
+          2.5
+        ],
+        "utility": [
+          -33.70000076293945,
+          -24.455999970436096,
+          -2.5
+        ],
+        "coreScale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "passed": true,
+      "errors": [],
+      "asset_failures": [],
+      "controls": [
+        "inspection tabs",
+        "previous/new carrier overlay",
+        "above-water stop",
+        "timeline",
+        "full dive",
+        "fixed dry-room layout",
+        "gross-buoyancy sensitivity"
+      ]
+    }
+  ]
+}

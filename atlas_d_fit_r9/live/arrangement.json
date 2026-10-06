@@ -1,0 +1,723 @@
+{
+  "revision": 9,
+  "title": "ATLAS D / Measured fit revision",
+  "source": "R7 exterior and animation, separately preserved",
+  "engineering_validated": false,
+  "certified_depth_m": null,
+  "outer_design_length_m": 82.9,
+  "outer_design_beam_m": 14.2,
+  "architecture": {
+    "pressure_core_outer_diameter_m": 8.6,
+    "pressure_core_length_m": 50.6,
+    "cylinder_a_m": -18.5,
+    "cylinder_b_m": 23.5,
+    "center_y_m": 0.9,
+    "interior_planning_radius_m": 3.9,
+    "radial_structure_services_allowance_m": 0.3999999999999999,
+    "allowance_is_not_shell_thickness": true,
+    "fixed_deck_count": 2,
+    "planning_floor_width_m": 6.1,
+    "planning_floor_length_m": 41.0,
+    "clear_headroom_m": 2.2,
+    "two_deck_rectangular_gross_area_m2": 500.2,
+    "stair_opening_allowance_m2": 3.1806,
+    "gross_after_one_stair_opening_m2": 497.01939999999996,
+    "guest_berths": 12,
+    "crew_berths": 24,
+    "program_is_not_habitability_or_egress_approval": true
+  },
+  "volumes": {
+    "main_pressure_envelope_m3": 2772.7361657367132,
+    "main_mesh_volume_m3": 2767.9282835717313,
+    "garages_each_outer_m3": 264.2898853752828,
+    "credited_sealed_envelopes_total_m3": 3301.315936487279,
+    "seawater_density_kg_m3": 1025,
+    "fully_immersed_gross_buoyant_equivalent_tonnes": 3383.8488348994606,
+    "excludes_floodable_fairing_volume": true,
+    "additional_immersed_solid_displacement_not_yet_counted": true,
+    "all_up_mass_tonnes": null,
+    "CG_CB_and_surface_stability": "NOT_ESTABLISHED"
+  },
+  "rooms": [
+    {
+      "name": "Observation_salon",
+      "deck": "upper",
+      "x0": -18,
+      "x1": -12,
+      "z0": -3,
+      "z1": 3,
+      "floor_y": 1.0,
+      "clear_height_m": 2.2,
+      "gross_reserved_area_m2": 36,
+      "berths": 0,
+      "type": "public",
+      "minimum_radial_clearance_to_planning_envelope_m": 0.1198,
+      "full_height_envelope_fit": true
+    },
+    {
+      "name": "Stair_and_access_lobby",
+      "deck": "upper",
+      "x0": -12,
+      "x1": -9,
+      "z0": -3,
+      "z1": 1.8,
+      "floor_y": 1.0,
+      "clear_height_m": 2.2,
+      "gross_reserved_area_m2": 14.4,
+      "berths": 0,
+      "type": "public",
+      "minimum_radial_clearance_to_planning_envelope_m": 0.1198,
+      "full_height_envelope_fit": true
+    },
+    {
+      "name": "Guest_suite_1",
+      "deck": "upper",
+      "x0": -9.0,
+      "x1": -4.7,
+      "z0": -3,
+      "z1": 1.8,
+      "floor_y": 1.0,
+      "clear_height_m": 2.2,
+      "gross_reserved_area_m2": 20.64,
+      "berths": 2,
+      "type": "guest",
+      "minimum_radial_clearance_to_planning_envelope_m": 0.1198,
+      "full_height_envelope_fit": true
+    },
+    {
+      "name": "Guest_suite_2",
+      "deck": "upper",
+      "x0": -4.7,
+      "x1": -0.40000000000000036,
+      "z0": -3,
+      "z1": 1.8,
+      "floor_y": 1.0,
+      "clear_height_m": 2.2,
+      "gross_reserved_area_m2": 20.64,
+      "berths": 2,
+      "type": "guest",
+      "minimum_radial_clearance_to_planning_envelope_m": 0.1198,
+      "full_height_envelope_fit": true
+    },
+    {
+      "name": "Guest_suite_3",
+      "deck": "upper",
+      "x0": -0.40000000000000036,
+      "x1": 3.8999999999999986,
+      "z0": -3,
+      "z1": 1.8,
+      "floor_y": 1.0,
+      "clear_height_m": 2.2,
+      "gross_reserved_area_m2": 20.64,
+      "berths": 2,
+      "type": "guest",
+      "minimum_radial_clearance_to_planning_envelope_m": 0.1198,
+      "full_height_envelope_fit": true
+    },
+    {
+      "name": "Guest_suite_4",
+      "deck": "upper",
+      "x0": 3.8999999999999986,
+      "x1": 8.2,
+      "z0": -3,
+      "z1": 1.8,
+      "floor_y": 1.0,
+      "clear_height_m": 2.2,
+      "gross_reserved_area_m2": 20.64,
+      "berths": 2,
+      "type": "guest",
+      "minimum_radial_clearance_to_planning_envelope_m": 0.1198,
+      "full_height_envelope_fit": true
+    },
+    {
+      "name": "Guest_suite_5",
+      "deck": "upper",
+      "x0": 8.2,
+      "x1": 12.5,
+      "z0": -3,
+      "z1": 1.8,
+      "floor_y": 1.0,
+      "clear_height_m": 2.2,
+      "gross_reserved_area_m2": 20.64,
+      "berths": 2,
+      "type": "guest",
+      "minimum_radial_clearance_to_planning_envelope_m": 0.1198,
+      "full_height_envelope_fit": true
+    },
+    {
+      "name": "Command",
+      "deck": "upper",
+      "x0": 12.5,
+      "x1": 17.8,
+      "z0": -3,
+      "z1": 1.8,
+      "floor_y": 1.0,
+      "clear_height_m": 2.2,
+      "gross_reserved_area_m2": 25.44,
+      "berths": 0,
+      "type": "service",
+      "minimum_radial_clearance_to_planning_envelope_m": 0.1198,
+      "full_height_envelope_fit": true
+    },
+    {
+      "name": "Owner_suite",
+      "deck": "upper",
+      "x0": 17.8,
+      "x1": 23,
+      "z0": -3,
+      "z1": 3,
+      "floor_y": 1.0,
+      "clear_height_m": 2.2,
+      "gross_reserved_area_m2": 31.2,
+      "berths": 2,
+      "type": "guest",
+      "minimum_radial_clearance_to_planning_envelope_m": 0.1198,
+      "full_height_envelope_fit": true
+    },
+    {
+      "name": "Machinery_reservation",
+      "deck": "lower",
+      "x0": -18,
+      "x1": -12,
+      "z0": -3,
+      "z1": 3,
+      "floor_y": -1.4,
+      "clear_height_m": 2.2,
+      "gross_reserved_area_m2": 36,
+      "berths": 0,
+      "type": "service",
+      "minimum_radial_clearance_to_planning_envelope_m": 0.1198,
+      "full_height_envelope_fit": true
+    },
+    {
+      "name": "Interdeck_access",
+      "deck": "lower",
+      "x0": -12,
+      "x1": -9,
+      "z0": -3,
+      "z1": 3,
+      "floor_y": -1.4,
+      "clear_height_m": 2.2,
+      "gross_reserved_area_m2": 18,
+      "berths": 0,
+      "type": "public",
+      "minimum_radial_clearance_to_planning_envelope_m": 0.1198,
+      "full_height_envelope_fit": true
+    },
+    {
+      "name": "Crew_-1_1",
+      "deck": "lower",
+      "x0": -9,
+      "x1": -6,
+      "z0": -3,
+      "z1": -0.65,
+      "floor_y": -1.4,
+      "clear_height_m": 2.2,
+      "gross_reserved_area_m2": 7.05,
+      "berths": 2,
+      "type": "crew",
+      "minimum_radial_clearance_to_planning_envelope_m": 0.1198,
+      "full_height_envelope_fit": true
+    },
+    {
+      "name": "Crew_-1_2",
+      "deck": "lower",
+      "x0": -6,
+      "x1": -3,
+      "z0": -3,
+      "z1": -0.65,
+      "floor_y": -1.4,
+      "clear_height_m": 2.2,
+      "gross_reserved_area_m2": 7.05,
+      "berths": 2,
+      "type": "crew",
+      "minimum_radial_clearance_to_planning_envelope_m": 0.1198,
+      "full_height_envelope_fit": true
+    },
+    {
+      "name": "Crew_-1_3",
+      "deck": "lower",
+      "x0": -3,
+      "x1": 0,
+      "z0": -3,
+      "z1": -0.65,
+      "floor_y": -1.4,
+      "clear_height_m": 2.2,
+      "gross_reserved_area_m2": 7.05,
+      "berths": 2,
+      "type": "crew",
+      "minimum_radial_clearance_to_planning_envelope_m": 0.1198,
+      "full_height_envelope_fit": true
+    },
+    {
+      "name": "Crew_-1_4",
+      "deck": "lower",
+      "x0": 0,
+      "x1": 3,
+      "z0": -3,
+      "z1": -0.65,
+      "floor_y": -1.4,
+      "clear_height_m": 2.2,
+      "gross_reserved_area_m2": 7.05,
+      "berths": 2,
+      "type": "crew",
+      "minimum_radial_clearance_to_planning_envelope_m": 0.1198,
+      "full_height_envelope_fit": true
+    },
+    {
+      "name": "Crew_-1_5",
+      "deck": "lower",
+      "x0": 3,
+      "x1": 6,
+      "z0": -3,
+      "z1": -0.65,
+      "floor_y": -1.4,
+      "clear_height_m": 2.2,
+      "gross_reserved_area_m2": 7.05,
+      "berths": 2,
+      "type": "crew",
+      "minimum_radial_clearance_to_planning_envelope_m": 0.1198,
+      "full_height_envelope_fit": true
+    },
+    {
+      "name": "Crew_-1_6",
+      "deck": "lower",
+      "x0": 6,
+      "x1": 9,
+      "z0": -3,
+      "z1": -0.65,
+      "floor_y": -1.4,
+      "clear_height_m": 2.2,
+      "gross_reserved_area_m2": 7.05,
+      "berths": 2,
+      "type": "crew",
+      "minimum_radial_clearance_to_planning_envelope_m": 0.1198,
+      "full_height_envelope_fit": true
+    },
+    {
+      "name": "Mess",
+      "deck": "lower",
+      "x0": 9,
+      "x1": 14,
+      "z0": -3,
+      "z1": -0.65,
+      "floor_y": -1.4,
+      "clear_height_m": 2.2,
+      "gross_reserved_area_m2": 11.75,
+      "berths": 0,
+      "type": "service",
+      "minimum_radial_clearance_to_planning_envelope_m": 0.1198,
+      "full_height_envelope_fit": true
+    },
+    {
+      "name": "Sanitary_laundry",
+      "deck": "lower",
+      "x0": 14,
+      "x1": 18,
+      "z0": -3,
+      "z1": -0.65,
+      "floor_y": -1.4,
+      "clear_height_m": 2.2,
+      "gross_reserved_area_m2": 9.4,
+      "berths": 0,
+      "type": "service",
+      "minimum_radial_clearance_to_planning_envelope_m": 0.1198,
+      "full_height_envelope_fit": true
+    },
+    {
+      "name": "Life_support",
+      "deck": "lower",
+      "x0": 18,
+      "x1": 23,
+      "z0": -3,
+      "z1": -0.65,
+      "floor_y": -1.4,
+      "clear_height_m": 2.2,
+      "gross_reserved_area_m2": 11.75,
+      "berths": 0,
+      "type": "service",
+      "minimum_radial_clearance_to_planning_envelope_m": 0.1198,
+      "full_height_envelope_fit": true
+    },
+    {
+      "name": "Crew_1_1",
+      "deck": "lower",
+      "x0": -9,
+      "x1": -6,
+      "z0": 0.65,
+      "z1": 3,
+      "floor_y": -1.4,
+      "clear_height_m": 2.2,
+      "gross_reserved_area_m2": 7.05,
+      "berths": 2,
+      "type": "crew",
+      "minimum_radial_clearance_to_planning_envelope_m": 0.1198,
+      "full_height_envelope_fit": true
+    },
+    {
+      "name": "Crew_1_2",
+      "deck": "lower",
+      "x0": -6,
+      "x1": -3,
+      "z0": 0.65,
+      "z1": 3,
+      "floor_y": -1.4,
+      "clear_height_m": 2.2,
+      "gross_reserved_area_m2": 7.05,
+      "berths": 2,
+      "type": "crew",
+      "minimum_radial_clearance_to_planning_envelope_m": 0.1198,
+      "full_height_envelope_fit": true
+    },
+    {
+      "name": "Crew_1_3",
+      "deck": "lower",
+      "x0": -3,
+      "x1": 0,
+      "z0": 0.65,
+      "z1": 3,
+      "floor_y": -1.4,
+      "clear_height_m": 2.2,
+      "gross_reserved_area_m2": 7.05,
+      "berths": 2,
+      "type": "crew",
+      "minimum_radial_clearance_to_planning_envelope_m": 0.1198,
+      "full_height_envelope_fit": true
+    },
+    {
+      "name": "Crew_1_4",
+      "deck": "lower",
+      "x0": 0,
+      "x1": 3,
+      "z0": 0.65,
+      "z1": 3,
+      "floor_y": -1.4,
+      "clear_height_m": 2.2,
+      "gross_reserved_area_m2": 7.05,
+      "berths": 2,
+      "type": "crew",
+      "minimum_radial_clearance_to_planning_envelope_m": 0.1198,
+      "full_height_envelope_fit": true
+    },
+    {
+      "name": "Crew_1_5",
+      "deck": "lower",
+      "x0": 3,
+      "x1": 6,
+      "z0": 0.65,
+      "z1": 3,
+      "floor_y": -1.4,
+      "clear_height_m": 2.2,
+      "gross_reserved_area_m2": 7.05,
+      "berths": 2,
+      "type": "crew",
+      "minimum_radial_clearance_to_planning_envelope_m": 0.1198,
+      "full_height_envelope_fit": true
+    },
+    {
+      "name": "Crew_1_6",
+      "deck": "lower",
+      "x0": 6,
+      "x1": 9,
+      "z0": 0.65,
+      "z1": 3,
+      "floor_y": -1.4,
+      "clear_height_m": 2.2,
+      "gross_reserved_area_m2": 7.05,
+      "berths": 2,
+      "type": "crew",
+      "minimum_radial_clearance_to_planning_envelope_m": 0.1198,
+      "full_height_envelope_fit": true
+    },
+    {
+      "name": "Galley",
+      "deck": "lower",
+      "x0": 9,
+      "x1": 14,
+      "z0": 0.65,
+      "z1": 3,
+      "floor_y": -1.4,
+      "clear_height_m": 2.2,
+      "gross_reserved_area_m2": 11.75,
+      "berths": 0,
+      "type": "service",
+      "minimum_radial_clearance_to_planning_envelope_m": 0.1198,
+      "full_height_envelope_fit": true
+    },
+    {
+      "name": "Medical_stores",
+      "deck": "lower",
+      "x0": 14,
+      "x1": 18,
+      "z0": 0.65,
+      "z1": 3,
+      "floor_y": -1.4,
+      "clear_height_m": 2.2,
+      "gross_reserved_area_m2": 9.4,
+      "berths": 0,
+      "type": "service",
+      "minimum_radial_clearance_to_planning_envelope_m": 0.1198,
+      "full_height_envelope_fit": true
+    },
+    {
+      "name": "Electrical_control",
+      "deck": "lower",
+      "x0": 18,
+      "x1": 23,
+      "z0": 0.65,
+      "z1": 3,
+      "floor_y": -1.4,
+      "clear_height_m": 2.2,
+      "gross_reserved_area_m2": 11.75,
+      "berths": 0,
+      "type": "service",
+      "minimum_radial_clearance_to_planning_envelope_m": 0.1198,
+      "full_height_envelope_fit": true
+    }
+  ],
+  "tender_checks": [
+    {
+      "craft": "Chase",
+      "actual_mesh_length_m": 11.982001781463623,
+      "stored_position": [
+        -33.7,
+        1.17,
+        2.5
+      ],
+      "radial_clearance_m": 0.10907047419907823,
+      "aft_barrel_clearance_m": 0.21799926757812216,
+      "forward_barrel_clearance_m": 0.7999989509582548,
+      "sampled_tender_vertices_fit_cylindrical_bore": true
+    },
+    {
+      "craft": "Utility",
+      "actual_mesh_length_m": 7.131000757217407,
+      "stored_position": [
+        -33.7,
+        1.544,
+        -2.5
+      ],
+      "radial_clearance_m": 0.42317021337651717,
+      "aft_barrel_clearance_m": 2.618999528884885,
+      "forward_barrel_clearance_m": 3.249999713897708,
+      "sampled_tender_vertices_fit_cylindrical_bore": true
+    }
+  ],
+  "geometry_checks": {
+    "main_envelope_watertight_mesh": true,
+    "rooms_fit_analytic_planning_radius": true,
+    "main_to_garage_longitudinal_gap_m": 1.8499999999999979,
+    "port_starboard_pod_outer_gap_m": 0.2999999999999998,
+    "raised_mast_stow_m": 0.64,
+    "full_swept_collision_check": false,
+    "no_pressure_strength_check": true
+  },
+  "open_design_issues": [
+    {
+      "severity": "BLOCKER",
+      "item": "Aft recovery freeboard",
+      "detail": "Candidate inner opening bottom is only y=0.22 m above the ART-STUDY waterline. Surface equilibrium, waves, recovery lock and freeboard require redesign; not approved for opening at sea."
+    },
+    {
+      "severity": "BLOCKER",
+      "item": "Outer garage face",
+      "detail": "Circular pressure closure seats are shown behind original styling. The outer rectangular aperture and door must be redesigned around the circular passage."
+    },
+    {
+      "severity": "UNRESOLVED",
+      "item": "Carrier loads and full deployment path",
+      "detail": "Positive bore clearance is a selected geometric screen, not allowance for deflection, tolerances, waves, operating personnel or complete machinery clearance. Carrier / craft support contacts and pressure door mechanics require engineering."
+    },
+    {
+      "severity": "UNRESOLVED",
+      "item": "Mass, buoyancy and stability",
+      "detail": "Gross displacement is calculated, but structure/equipment masses, buoyancy of immersed solids, ballast capacity and centers remain unclosed. The 3,300 t interactive example is hypothetical, not an estimate."
+    },
+    {
+      "severity": "UNRESOLVED",
+      "item": "Upper shell and full accommodation",
+      "detail": "R7 nested skins are retained for visual comparison. Full swept-body clearance, mechanical load paths, service routes, egress and 36-person habitability are not established."
+    }
+  ],
+  "changes": [
+    "Broad recovery platforms replaced by narrow carriers with keel slots and outside-hull end ties.",
+    "Pool unit raised 0.42 m; modeled water depth retained and three access steps added.",
+    "Tenders now lift and align outside the candidate bore before straight axial insertion; outer doors close afterward."
+  ],
+  "assets": {
+    "glb_bytes": 11392544,
+    "new_triangles": 125976
+  },
+  "recovery_hardware_checks": [
+    {
+      "assembly": "Chase replacement carrier",
+      "stored_position": [
+        -33.699999999999996,
+        0.16999999999999993,
+        2.5
+      ],
+      "minimum_radial_clearance_m": 0.06363371553976993,
+      "aft_clearance_m": 0.09049926757813154,
+      "forward_clearance_m": 0.6324989509582473,
+      "fits_candidate_bore": true,
+      "scope": "Carrier and rollers only; structural and load qualification excluded"
+    },
+    {
+      "assembly": "Utility replacement carrier",
+      "stored_position": [
+        -33.699999999999996,
+        0.544,
+        -2.5
+      ],
+      "minimum_radial_clearance_m": 0.27133390819661707,
+      "aft_clearance_m": 2.4914995288848942,
+      "forward_clearance_m": 3.0824997138977004,
+      "fits_candidate_bore": true,
+      "scope": "Carrier and rollers only; structural and load qualification excluded"
+    }
+  ],
+  "previous_recovery_hardware_checks": [
+    {
+      "assembly": "R7 Chase recovery cradle",
+      "stored_position": [
+        -33.7,
+        0.17,
+        2.5
+      ],
+      "minimum_radial_clearance_m": -0.8237476303684161,
+      "maximum_radial_overrun_m": 0.8237476303684161,
+      "fits_candidate_bore": false,
+      "complete_swept_path_checked": false
+    },
+    {
+      "assembly": "R7 Utility recovery cradle",
+      "stored_position": [
+        -33.7,
+        0.544,
+        -2.5
+      ],
+      "minimum_radial_clearance_m": -0.5020292770438042,
+      "maximum_radial_overrun_m": 0.5020292770438042,
+      "fits_candidate_bore": false,
+      "complete_swept_path_checked": false
+    }
+  ],
+  "axial_insertion_screens": [
+    {
+      "craft": "Chase",
+      "samples": 241,
+      "evaluated_sections": 390,
+      "minimum_in_barrel_radial_clearance_m": 0.06363371553976993,
+      "cylindrical_barrel_screen_passed": true,
+      "scope": "Aligned craft capture through insertion, plus empty-carrier deployment; cylindrical barrel only. Free approach, outer aperture, closure sweep, waves, support deflection and full-system contact excluded."
+    },
+    {
+      "craft": "Utility",
+      "samples": 241,
+      "evaluated_sections": 332,
+      "minimum_in_barrel_radial_clearance_m": 0.27133390819661707,
+      "cylindrical_barrel_screen_passed": true,
+      "scope": "Aligned craft capture through insertion, plus empty-carrier deployment; cylindrical barrel only. Free approach, outer aperture, closure sweep, waves, support deflection and full-system contact excluded."
+    }
+  ],
+  "support_pad_samples": [
+    {
+      "craft": "Chase",
+      "x_m": -3.54,
+      "z_m": -1.0,
+      "sampled_pad_gap_m": 0.012,
+      "contact_and_load_analysis": false
+    },
+    {
+      "craft": "Chase",
+      "x_m": -3.54,
+      "z_m": 1.0,
+      "sampled_pad_gap_m": 0.012,
+      "contact_and_load_analysis": false
+    },
+    {
+      "craft": "Chase",
+      "x_m": 0,
+      "z_m": -1.0,
+      "sampled_pad_gap_m": 0.012,
+      "contact_and_load_analysis": false
+    },
+    {
+      "craft": "Chase",
+      "x_m": 0,
+      "z_m": 1.0,
+      "sampled_pad_gap_m": 0.012,
+      "contact_and_load_analysis": false
+    },
+    {
+      "craft": "Chase",
+      "x_m": 2.714,
+      "z_m": -1.0,
+      "sampled_pad_gap_m": 0.012,
+      "contact_and_load_analysis": false
+    },
+    {
+      "craft": "Chase",
+      "x_m": 2.714,
+      "z_m": 1.0,
+      "sampled_pad_gap_m": 0.012,
+      "contact_and_load_analysis": false
+    },
+    {
+      "craft": "Utility",
+      "x_m": -2.07,
+      "z_m": -1.0,
+      "sampled_pad_gap_m": 0.012,
+      "contact_and_load_analysis": false
+    },
+    {
+      "craft": "Utility",
+      "x_m": -2.07,
+      "z_m": 1.0,
+      "sampled_pad_gap_m": 0.012,
+      "contact_and_load_analysis": false
+    },
+    {
+      "craft": "Utility",
+      "x_m": 0,
+      "z_m": -1.0,
+      "sampled_pad_gap_m": 0.012,
+      "contact_and_load_analysis": false
+    },
+    {
+      "craft": "Utility",
+      "x_m": 0,
+      "z_m": 1.0,
+      "sampled_pad_gap_m": 0.012,
+      "contact_and_load_analysis": false
+    },
+    {
+      "craft": "Utility",
+      "x_m": 1.587,
+      "z_m": -1.0,
+      "sampled_pad_gap_m": 0.012,
+      "contact_and_load_analysis": false
+    },
+    {
+      "craft": "Utility",
+      "x_m": 1.587,
+      "z_m": 1.0,
+      "sampled_pad_gap_m": 0.012,
+      "contact_and_load_analysis": false
+    }
+  ],
+  "pool_revision": {
+    "unit_lift_m": 0.42,
+    "lowest_basin_underside_m": 5.050000190734863,
+    "garage_crown_m": 4.75,
+    "vertical_envelope_clearance_m": 0.3000001907348633,
+    "water_depth_preserved": true,
+    "access_steps_added": 3,
+    "structural_clearance_validated": false
+  },
+  "resolved_geometric_issues": [
+    "Broad recovery platforms replaced by narrow carriers with keel slots and outside-hull end ties.",
+    "Pool unit raised 0.42 m; modeled water depth retained and three access steps added.",
+    "Tenders now lift and align outside the candidate bore before straight axial insertion; outer doors close afterward."
+  ]
+}
