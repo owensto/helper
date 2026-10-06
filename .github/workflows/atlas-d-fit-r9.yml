@@ -1,0 +1,121 @@
+name: ATLAS D R9 measured fit study
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'atlas_d_fit_r9/source_bundle.b64'
+      - 'atlas_d_fit_r9/REVIEW.md'
+      - '.github/workflows/atlas-d-fit-r9.yml'
+permissions:
+  contents: write
+concurrency:
+  group: atlas-d-fit-r9
+  cancel-in-progress: true
+jobs:
+  review:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 18
+    env:
+      ATLAS_R9: ${{ github.workspace }}/atlas_d_fit_r9
+      ATLAS_R8: ${{ github.workspace }}/atlas_d_arrangement_r8
+      ATLAS_KIT: /tmp/atlas8-base/source
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Restore pinned reference geometry and checked source bundles
+        run: |
+          git fetch --no-tags origin 64d9814c831eb798a48c91b71a5a623cbe8a0e27
+          mkdir -p /tmp/atlas8-base/site /tmp/atlas8-base/source atlas_d_arrangement_r8/site atlas_d_fit_r9/site
+          git show 64d9814c831eb798a48c91b71a5a623cbe8a0e27:atlas_d_original_r7/live/ATLAS_D_Original.glb > /tmp/atlas8-base/site/ATLAS_D_Original.glb
+          git show 64d9814c831eb798a48c91b71a5a623cbe8a0e27:atlas_d_original_r7/source/meshkit.py > /tmp/atlas8-base/source/meshkit.py
+          git show 64d9814c831eb798a48c91b71a5a623cbe8a0e27:atlas_d_original_r7/live/runtime.js > /tmp/atlas8-base/site/runtime.js
+          git show 64d9814c831eb798a48c91b71a5a623cbe8a0e27:atlas_d_original_r7/live/THIRD_PARTY_LICENSE.txt > /tmp/atlas8-base/site/THIRD_PARTY_LICENSE.txt
+          python - <<'PY'
+          from pathlib import Path
+          import base64,hashlib,json,lzma
+          root=Path('atlas_d_arrangement_r8')
+          texts=[(root/'transport'/f'part{i}.b64').read_text().strip() for i in range(4)]
+          texts[0]=texts[0].replace('rPOPOKEeubrf','rPOKEeubrf')
+          data=base64.b64decode(''.join(texts),validate=True)
+          assert hashlib.sha256(data).hexdigest()=='6bc40aa41935f27296045b9ac0cce16b8b5493599fe3df7ada3a51635d6fd38f'
+          for rel,content in json.loads(lzma.decompress(data)).items():
+              assert rel.startswith(('source/','site/')) and '..' not in Path(rel).parts
+              p=root/rel;p.parent.mkdir(parents=True,exist_ok=True);p.write_text(content)
+          root=Path('atlas_d_fit_r9')
+          data=base64.b64decode((root/'source_bundle.b64').read_text().strip(),validate=True)
+          assert hashlib.sha256(data).hexdigest()=='fd56072d9d89fc698fd11650f016ea01e5a3b273a4fca129e5b455cc1a3ddb55','R9 source transport checksum mismatch'
+          for rel,content in json.loads(lzma.decompress(data)).items():
+              assert rel.startswith('source/') and '..' not in Path(rel).parts
+              p=root/rel;p.parent.mkdir(parents=True,exist_ok=True);p.write_text(content)
+          PY
+          python atlas_d_arrangement_r8/fixups.py
+      - name: Build arrangement and measure selected corrections
+        run: |
+          python -m pip install -q numpy==2.3.5 trimesh==4.11.1 scipy networkx shapely playwright==1.55.0
+          ATLAS_BASE=/tmp/atlas8-base ATLAS_OUT="$PWD/atlas_d_arrangement_r8/site" python atlas_d_arrangement_r8/source/build_r8.py
+          python atlas_d_fit_r9/source/refine.py
+          python atlas_d_fit_r9/source/viewer_patch.py
+          node --check atlas_d_fit_r9/site/lab.js
+      - name: Install browser
+        run: python -m playwright install --with-deps chromium >/dev/null
+      - name: Capture actual model and test fit inspection controls
+        env:
+          BASE_URL: http://127.0.0.1:8799/index.html
+          REVIEW_DIR: /tmp/atlas9/review
+        run: |
+          mkdir -p /tmp/atlas9/review
+          python -m http.server 8799 --bind 127.0.0.1 --directory atlas_d_fit_r9/site >/tmp/atlas9/http.log 2>&1 &
+          sleep 2
+          python atlas_d_fit_r9/source/verify.py
+      - name: Create editable Blender inspection scene from actual GLB
+        env:
+          ATLAS_OUT: ${{ github.workspace }}/atlas_d_fit_r9/site
+          ATLAS_NATIVE: /tmp/atlas9/native
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq blender python3-numpy libegl1 >/dev/null
+          env -u PYTHONHOME -u PYTHONPATH -u LD_LIBRARY_PATH LIBGL_ALWAYS_SOFTWARE=1 /usr/bin/blender -b --python-exit-code 1 --python atlas_d_fit_r9/source/native.py
+          test -s /tmp/atlas9/native/ATLAS_D_R9_Fit_Study.blend
+      - name: Publish separate visually reviewed study
+        id: release
+        if: contains(github.event.head_commit.message, '[publish]')
+        run: |
+          mkdir -p atlas_d_fit_r9/live
+          cp -R atlas_d_fit_r9/site/. atlas_d_fit_r9/live/
+          cp /tmp/atlas9/review/validation.json atlas_d_fit_r9/live/browser_validation.json
+          git config user.name 'ATLAS release'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add atlas_d_fit_r9/live atlas_d_fit_r9/source
+          git commit -m 'Publish ATLAS D R9 measured carrier, pool and recovery fit study'
+          git stash push -u -m generated-r9-review-files
+          git pull --rebase origin main
+          git push origin HEAD:main
+          git stash pop || true
+          echo "url=https://rawcdn.githack.com/owensto/helper/$(git rev-parse HEAD)/atlas_d_fit_r9/live/index.html" >> "$GITHUB_OUTPUT"
+      - name: Verify exact public URL and interactive assets
+        if: steps.release.outputs.url != ''
+        env:
+          BASE_URL: ${{ steps.release.outputs.url }}
+          REVIEW_DIR: /tmp/atlas9/public
+        run: python atlas_d_fit_r9/source/verify.py
+      - name: Record public verification without claiming engineering qualification
+        if: steps.release.outputs.url != ''
+        run: |
+          cp /tmp/atlas9/public/validation.json atlas_d_fit_r9/release_validation.json
+          git add atlas_d_fit_r9/release_validation.json
+          git commit -m 'Record ATLAS D R9 public interaction verification'
+          git stash push -u -m generated-r9-public-files
+          git pull --rebase origin main
+          git push origin HEAD:main
+          git stash pop || true
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ATLAS-D-R9-Fit-and-Review
+          path: |
+            /tmp/atlas9/
+            atlas_d_fit_r9/site/
+            atlas_d_fit_r9/source/
+          retention-days: 30
