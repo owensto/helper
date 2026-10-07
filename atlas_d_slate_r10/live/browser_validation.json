@@ -1,0 +1,448 @@
+{
+  "url": "http://127.0.0.1:8810/index.html",
+  "passed": true,
+  "physical_phone_test": false,
+  "engineering_validated": false,
+  "tests": [
+    {
+      "label": "desktop",
+      "viewport": [
+        1600,
+        1000
+      ],
+      "http_status": 200,
+      "offline_injected": false,
+      "host_confirmation_required": false,
+      "time_to_ready_seconds": 1.84,
+      "states": [
+        {
+          "progress": 0,
+          "finish": "blue",
+          "lighting": "day",
+          "depth": 0,
+          "chase": [
+            -23,
+            0,
+            17
+          ],
+          "utility": [
+            -10,
+            0,
+            17.200000762939453
+          ],
+          "hullScale": [
+            1,
+            1,
+            1
+          ],
+          "animationChannels": 47,
+          "visibleMeshes": 202,
+          "engineeringValidated": false
+        },
+        {
+          "progress": 0,
+          "finish": "blue",
+          "lighting": "day",
+          "depth": 0,
+          "chase": [
+            -23,
+            0,
+            17
+          ],
+          "utility": [
+            -10,
+            0,
+            17.200000762939453
+          ],
+          "hullScale": [
+            1,
+            1,
+            1
+          ],
+          "animationChannels": 47,
+          "visibleMeshes": 202,
+          "engineeringValidated": false
+        },
+        {
+          "progress": 0,
+          "finish": "blue",
+          "lighting": "day",
+          "depth": 0,
+          "chase": [
+            -23,
+            0,
+            17
+          ],
+          "utility": [
+            -10,
+            0,
+            17.200000762939453
+          ],
+          "hullScale": [
+            1,
+            1,
+            1
+          ],
+          "animationChannels": 47,
+          "visibleMeshes": 202,
+          "engineeringValidated": false
+        },
+        {
+          "progress": 0,
+          "finish": "blue",
+          "lighting": "day",
+          "depth": 0,
+          "chase": [
+            -23,
+            0,
+            17
+          ],
+          "utility": [
+            -10,
+            0,
+            17.200000762939453
+          ],
+          "hullScale": [
+            1,
+            1,
+            1
+          ],
+          "animationChannels": 47,
+          "visibleMeshes": 202,
+          "engineeringValidated": false
+        },
+        {
+          "progress": 0,
+          "finish": "blue",
+          "lighting": "day",
+          "depth": 0,
+          "chase": [
+            -23,
+            0,
+            17
+          ],
+          "utility": [
+            -10,
+            0,
+            17.200000762939453
+          ],
+          "hullScale": [
+            1,
+            1,
+            1
+          ],
+          "animationChannels": 47,
+          "visibleMeshes": 202,
+          "engineeringValidated": false
+        },
+        {
+          "progress": 0,
+          "finish": "blue",
+          "lighting": "day",
+          "depth": 0,
+          "chase": [
+            -23,
+            0,
+            17
+          ],
+          "utility": [
+            -10,
+            0,
+            17.200000762939453
+          ],
+          "hullScale": [
+            1,
+            1,
+            1
+          ],
+          "animationChannels": 47,
+          "visibleMeshes": 202,
+          "engineeringValidated": false
+        },
+        {
+          "progress": 0,
+          "finish": "blue",
+          "lighting": "day",
+          "depth": 0,
+          "chase": [
+            -23,
+            0,
+            17
+          ],
+          "utility": [
+            -10,
+            0,
+            17.200000762939453
+          ],
+          "hullScale": [
+            1,
+            1,
+            1
+          ],
+          "animationChannels": 47,
+          "visibleMeshes": 202,
+          "engineeringValidated": false
+        }
+      ],
+      "submerged": {
+        "progress": 1,
+        "finish": "blue",
+        "lighting": "day",
+        "depth": 26,
+        "chase": [
+          -33.70000076293945,
+          -24.830000042915344,
+          2.5
+        ],
+        "utility": [
+          -33.70000076293945,
+          -24.455999970436096,
+          -2.5
+        ],
+        "hullScale": [
+          1,
+          1,
+          1
+        ],
+        "animationChannels": 47,
+        "visibleMeshes": 202,
+        "engineeringValidated": false
+      },
+      "passed": true,
+      "errors": [],
+      "asset_failures": [],
+      "controls": [
+        "two hull finishes with fixed camera",
+        "daylight and golden hour",
+        "detail cameras",
+        "surface/ready",
+        "conversion stop above water",
+        "both tenders descend aboard",
+        "paint unchanged underwater",
+        "garage inspection",
+        "pause",
+        "notes dialog"
+      ]
+    },
+    {
+      "label": "phone",
+      "viewport": [
+        430,
+        932
+      ],
+      "http_status": 200,
+      "offline_injected": false,
+      "host_confirmation_required": false,
+      "time_to_ready_seconds": 1.43,
+      "states": [
+        {
+          "progress": 0,
+          "finish": "blue",
+          "lighting": "day",
+          "depth": 0,
+          "chase": [
+            -23,
+            0,
+            17
+          ],
+          "utility": [
+            -10,
+            0,
+            17.200000762939453
+          ],
+          "hullScale": [
+            1,
+            1,
+            1
+          ],
+          "animationChannels": 47,
+          "visibleMeshes": 202,
+          "engineeringValidated": false
+        },
+        {
+          "progress": 0,
+          "finish": "blue",
+          "lighting": "day",
+          "depth": 0,
+          "chase": [
+            -23,
+            0,
+            17
+          ],
+          "utility": [
+            -10,
+            0,
+            17.200000762939453
+          ],
+          "hullScale": [
+            1,
+            1,
+            1
+          ],
+          "animationChannels": 47,
+          "visibleMeshes": 202,
+          "engineeringValidated": false
+        },
+        {
+          "progress": 0,
+          "finish": "blue",
+          "lighting": "day",
+          "depth": 0,
+          "chase": [
+            -23,
+            0,
+            17
+          ],
+          "utility": [
+            -10,
+            0,
+            17.200000762939453
+          ],
+          "hullScale": [
+            1,
+            1,
+            1
+          ],
+          "animationChannels": 47,
+          "visibleMeshes": 202,
+          "engineeringValidated": false
+        },
+        {
+          "progress": 0,
+          "finish": "blue",
+          "lighting": "day",
+          "depth": 0,
+          "chase": [
+            -23,
+            0,
+            17
+          ],
+          "utility": [
+            -10,
+            0,
+            17.200000762939453
+          ],
+          "hullScale": [
+            1,
+            1,
+            1
+          ],
+          "animationChannels": 47,
+          "visibleMeshes": 202,
+          "engineeringValidated": false
+        },
+        {
+          "progress": 0,
+          "finish": "blue",
+          "lighting": "day",
+          "depth": 0,
+          "chase": [
+            -23,
+            0,
+            17
+          ],
+          "utility": [
+            -10,
+            0,
+            17.200000762939453
+          ],
+          "hullScale": [
+            1,
+            1,
+            1
+          ],
+          "animationChannels": 47,
+          "visibleMeshes": 202,
+          "engineeringValidated": false
+        },
+        {
+          "progress": 0,
+          "finish": "blue",
+          "lighting": "day",
+          "depth": 0,
+          "chase": [
+            -23,
+            0,
+            17
+          ],
+          "utility": [
+            -10,
+            0,
+            17.200000762939453
+          ],
+          "hullScale": [
+            1,
+            1,
+            1
+          ],
+          "animationChannels": 47,
+          "visibleMeshes": 202,
+          "engineeringValidated": false
+        },
+        {
+          "progress": 0,
+          "finish": "blue",
+          "lighting": "day",
+          "depth": 0,
+          "chase": [
+            -23,
+            0,
+            17
+          ],
+          "utility": [
+            -10,
+            0,
+            17.200000762939453
+          ],
+          "hullScale": [
+            1,
+            1,
+            1
+          ],
+          "animationChannels": 47,
+          "visibleMeshes": 202,
+          "engineeringValidated": false
+        }
+      ],
+      "submerged": {
+        "progress": 1,
+        "finish": "blue",
+        "lighting": "day",
+        "depth": 26,
+        "chase": [
+          -33.70000076293945,
+          -24.830000042915344,
+          2.5
+        ],
+        "utility": [
+          -33.70000076293945,
+          -24.455999970436096,
+          -2.5
+        ],
+        "hullScale": [
+          1,
+          1,
+          1
+        ],
+        "animationChannels": 47,
+        "visibleMeshes": 202,
+        "engineeringValidated": false
+      },
+      "passed": true,
+      "errors": [],
+      "asset_failures": [],
+      "controls": [
+        "two hull finishes with fixed camera",
+        "daylight and golden hour",
+        "detail cameras",
+        "surface/ready",
+        "conversion stop above water",
+        "both tenders descend aboard",
+        "paint unchanged underwater",
+        "garage inspection",
+        "pause",
+        "notes dialog"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,6725 @@
+{
+  "revision": 10,
+  "name": "ATLAS D | Slate & Titanium",
+  "length_m": 82.9,
+  "beam_m": 14.2,
+  "palette": {
+    "hull": "#405A6D",
+    "superstructure": "#A8AEB1",
+    "alternative_hull": "#747F88",
+    "glazing": "#192E3B",
+    "upholstery": "#C8C9C5"
+  },
+  "model_bytes": 20259848,
+  "source_sha256": "1174575c16ddda3fa3e54a4be9176b8b740a25070d6ac847fb7508bae84fdb1e",
+  "rounded_upholstery_components": 68,
+  "added_detail_components": 1338,
+  "render_meshes": 220,
+  "embedded_texture_count": 5,
+  "animation_channels": 47,
+  "animation_tracks_unchanged": true,
+  "hull_geometry_unchanged": true,
+  "helipad_retained": true,
+  "recovered_tenders": 2,
+  "engineering_validated": false,
+  "certified_depth_m": null,
+  "new_clearance_checks": false,
+  "limitations": [
+    "Original R9 geometric findings remain, not new engineering validation.",
+    "Added fittings and door details are illustrative, not load-rated, pressure-rated, or fully collision-checked.",
+    "Existing upper-shell nesting remains speculative and is not occupied accommodation.",
+    "No mass, stability, powered recovery or safe diving capability established."
+  ],
+  "detail_inventory": [
+    {
+      "name": "Cushion stitched piping",
+      "parent": "MOV_Tender_Chase__fabric",
+      "material": "ATLAS | upholstery piping"
+    },
+    {
+      "name": "Cushion stitched piping",
+      "parent": "MOV_Tender_Chase__fabric",
+      "material": "ATLAS | upholstery piping"
+    },
+    {
+      "name": "Cushion stitched piping",
+      "parent": "MOV_Tender_Chase__fabric",
+      "material": "ATLAS | upholstery piping"
+    },
+    {
+      "name": "Cushion stitched piping",
+      "parent": "MOV_Tender_Chase__fabric",
+      "material": "ATLAS | upholstery piping"
+    },
+    {
+      "name": "Cushion stitched piping",
+      "parent": "MOV_Tender_Chase__fabric",
+      "material": "ATLAS | upholstery piping"
+    },
+    {
+      "name": "Cushion stitched piping",
+      "parent": "MOV_Tender_Chase__fabric",
+      "material": "ATLAS | upholstery piping"
+    },
+    {
+      "name": "Cushion stitched piping",
+      "parent": "MOV_Tender_Utility__fabric",
+      "material": "ATLAS | upholstery piping"
+    },
+    {
+      "name": "Cushion stitched piping",
+      "parent": "MOV_Tender_Utility__fabric",
+      "material": "ATLAS | upholstery piping"
+    },
+    {
+      "name": "Cushion stitched piping",
+      "parent": "MOV_Tender_Utility__fabric",
+      "material": "ATLAS | upholstery piping"
+    },
+    {
+      "name": "Cushion stitched piping",
+      "parent": "MOV_Tender_Utility__fabric",
+      "material": "ATLAS | upholstery piping"
+    },
+    {
+      "name": "Cushion stitched piping",
+      "parent": "MOV_Furniture_Main-1__Warm_linen",
+      "material": "ATLAS | upholstery piping"
+    },
+    {
+      "name": "Cushion stitched piping",
+      "parent": "MOV_Furniture_Main-1__Warm_linen",
+      "material": "ATLAS | upholstery piping"
+    },
+    {
+      "name": "Cushion stitched piping",
+      "parent": "MOV_Furniture_Main-1__Warm_linen",
+      "material": "ATLAS | upholstery piping"
+    },
+    {
+      "name": "Cushion stitched piping",
+      "parent": "MOV_Furniture_Main-1__Warm_linen",
+      "material": "ATLAS | upholstery piping"
+    },
+    {
+      "name": "Cushion stitched piping",
+      "parent": "MOV_Furniture_Main1__Warm_linen",
+      "material": "ATLAS | upholstery piping"
+    },
+    {
+      "name": "Cushion stitched piping",
+      "parent": "MOV_Furniture_Main1__Warm_linen",
+      "material": "ATLAS | upholstery piping"
+    },
+    {
+      "name": "Cushion stitched piping",
+      "parent": "MOV_Furniture_Main1__Warm_linen",
+      "material": "ATLAS | upholstery piping"
+    },
+    {
+      "name": "Cushion stitched piping",
+      "parent": "MOV_Furniture_Main1__Warm_linen",
+      "material": "ATLAS | upholstery piping"
+    },
+    {
+      "name": "Cushion stitched piping",
+      "parent": "MOV_Furniture_Upper-1__Warm_linen",
+      "material": "ATLAS | upholstery piping"
+    },
+    {
+      "name": "Cushion stitched piping",
+      "parent": "MOV_Furniture_Upper-1__Warm_linen",
+      "material": "ATLAS | upholstery piping"
+    },
+    {
+      "name": "Cushion stitched piping",
+      "parent": "MOV_Furniture_Upper-1__Warm_linen",
+      "material": "ATLAS | upholstery piping"
+    },
+    {
+      "name": "Cushion stitched piping",
+      "parent": "MOV_Furniture_Upper-1__Warm_linen",
+      "material": "ATLAS | upholstery piping"
+    },
+    {
+      "name": "Cushion stitched piping",
+      "parent": "MOV_Furniture_Upper1__Warm_linen",
+      "material": "ATLAS | upholstery piping"
+    },
+    {
+      "name": "Cushion stitched piping",
+      "parent": "MOV_Furniture_Upper1__Warm_linen",
+      "material": "ATLAS | upholstery piping"
+    },
+    {
+      "name": "Cushion stitched piping",
+      "parent": "MOV_Furniture_Upper1__Warm_linen",
+      "material": "ATLAS | upholstery piping"
+    },
+    {
+      "name": "Cushion stitched piping",
+      "parent": "MOV_Furniture_Upper1__Warm_linen",
+      "material": "ATLAS | upholstery piping"
+    },
+    {
+      "name": "Cushion stitched piping",
+      "parent": "MOV_Furniture_Bridge-1__Warm_linen",
+      "material": "ATLAS | upholstery piping"
+    },
+    {
+      "name": "Cushion stitched piping",
+      "parent": "MOV_Furniture_Bridge-1__Warm_linen",
+      "material": "ATLAS | upholstery piping"
+    },
+    {
+      "name": "Cushion stitched piping",
+      "parent": "MOV_Furniture_Bridge-1__Warm_linen",
+      "material": "ATLAS | upholstery piping"
+    },
+    {
+      "name": "Cushion stitched piping",
+      "parent": "MOV_Furniture_Bridge-1__Warm_linen",
+      "material": "ATLAS | upholstery piping"
+    },
+    {
+      "name": "Cushion stitched piping",
+      "parent": "MOV_Furniture_Bridge1__Warm_linen",
+      "material": "ATLAS | upholstery piping"
+    },
+    {
+      "name": "Cushion stitched piping",
+      "parent": "MOV_Furniture_Bridge1__Warm_linen",
+      "material": "ATLAS | upholstery piping"
+    },
+    {
+      "name": "Cushion stitched piping",
+      "parent": "MOV_Furniture_Bridge1__Warm_linen",
+      "material": "ATLAS | upholstery piping"
+    },
+    {
+      "name": "Cushion stitched piping",
+      "parent": "MOV_Furniture_Bridge1__Warm_linen",
+      "material": "ATLAS | upholstery piping"
+    },
+    {
+      "name": "Cushion stitched piping",
+      "parent": "MOV_Aft_sunpads__Warm_linen",
+      "material": "ATLAS | upholstery piping"
+    },
+    {
+      "name": "Cushion stitched piping",
+      "parent": "MOV_Aft_sunpads__Warm_linen",
+      "material": "ATLAS | upholstery piping"
+    },
+    {
+      "name": "Cushion stitched piping",
+      "parent": "MOV_Aft_sunpads__Warm_linen",
+      "material": "ATLAS | upholstery piping"
+    },
+    {
+      "name": "Cushion stitched piping",
+      "parent": "MOV_Aft_sunpads__Warm_linen",
+      "material": "ATLAS | upholstery piping"
+    },
+    {
+      "name": "Segmented glazing vertical frame",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Soffit downlight bezel",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Soffit warm LED diffuser",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | warm-white LED lenses"
+    },
+    {
+      "name": "Segmented glazing vertical frame",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Soffit downlight bezel",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Soffit warm LED diffuser",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | warm-white LED lenses"
+    },
+    {
+      "name": "Segmented glazing vertical frame",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Soffit downlight bezel",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Soffit warm LED diffuser",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | warm-white LED lenses"
+    },
+    {
+      "name": "Segmented glazing vertical frame",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Soffit downlight bezel",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Soffit warm LED diffuser",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | warm-white LED lenses"
+    },
+    {
+      "name": "Segmented glazing vertical frame",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Soffit downlight bezel",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Soffit warm LED diffuser",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | warm-white LED lenses"
+    },
+    {
+      "name": "Segmented glazing vertical frame",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Soffit downlight bezel",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Soffit warm LED diffuser",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | warm-white LED lenses"
+    },
+    {
+      "name": "Segmented glazing vertical frame",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Soffit downlight bezel",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Soffit warm LED diffuser",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | warm-white LED lenses"
+    },
+    {
+      "name": "Segmented glazing vertical frame",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Soffit downlight bezel",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Soffit warm LED diffuser",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | warm-white LED lenses"
+    },
+    {
+      "name": "Segmented glazing vertical frame",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Soffit downlight bezel",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Soffit warm LED diffuser",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | warm-white LED lenses"
+    },
+    {
+      "name": "Segmented glazing vertical frame",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Soffit downlight bezel",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Soffit warm LED diffuser",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | warm-white LED lenses"
+    },
+    {
+      "name": "Segmented glazing vertical frame",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Soffit downlight bezel",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Soffit warm LED diffuser",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | warm-white LED lenses"
+    },
+    {
+      "name": "Segmented glazing vertical frame",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Soffit downlight bezel",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Soffit warm LED diffuser",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | warm-white LED lenses"
+    },
+    {
+      "name": "Segmented glazing vertical frame",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Soffit downlight bezel",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Soffit warm LED diffuser",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | warm-white LED lenses"
+    },
+    {
+      "name": "Segmented glazing vertical frame",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Soffit downlight bezel",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Soffit warm LED diffuser",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | warm-white LED lenses"
+    },
+    {
+      "name": "Segmented glazing vertical frame",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Soffit downlight bezel",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Soffit warm LED diffuser",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | warm-white LED lenses"
+    },
+    {
+      "name": "Segmented glazing vertical frame",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Soffit downlight bezel",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Soffit warm LED diffuser",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | warm-white LED lenses"
+    },
+    {
+      "name": "Segmented glazing vertical frame",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Soffit downlight bezel",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Soffit warm LED diffuser",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | warm-white LED lenses"
+    },
+    {
+      "name": "Segmented glazing vertical frame",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Soffit downlight bezel",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Soffit warm LED diffuser",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | warm-white LED lenses"
+    },
+    {
+      "name": "Segmented glazing vertical frame",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Soffit downlight bezel",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Soffit warm LED diffuser",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | warm-white LED lenses"
+    },
+    {
+      "name": "Stanchion mounting shoe",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Stanchion mounting shoe",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Stanchion mounting shoe",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Stanchion mounting shoe",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Stanchion mounting shoe",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Stanchion mounting shoe",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Stanchion mounting shoe",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Stanchion mounting shoe",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Stanchion mounting shoe",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Stanchion mounting shoe",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Stanchion mounting shoe",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Stanchion mounting shoe",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Stanchion mounting shoe",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Stanchion mounting shoe",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Stanchion mounting shoe",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Stanchion mounting shoe",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Stanchion mounting shoe",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Stanchion mounting shoe",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Stanchion mounting shoe",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Stanchion mounting shoe",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Stanchion mounting shoe",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Stanchion mounting shoe",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Stanchion mounting shoe",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Stanchion mounting shoe",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Segmented glazing vertical frame",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Soffit downlight bezel",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Soffit warm LED diffuser",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | warm-white LED lenses"
+    },
+    {
+      "name": "Segmented glazing vertical frame",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Soffit downlight bezel",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Soffit warm LED diffuser",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | warm-white LED lenses"
+    },
+    {
+      "name": "Segmented glazing vertical frame",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Soffit downlight bezel",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Soffit warm LED diffuser",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | warm-white LED lenses"
+    },
+    {
+      "name": "Segmented glazing vertical frame",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Soffit downlight bezel",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Soffit warm LED diffuser",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | warm-white LED lenses"
+    },
+    {
+      "name": "Segmented glazing vertical frame",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Soffit downlight bezel",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Soffit warm LED diffuser",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | warm-white LED lenses"
+    },
+    {
+      "name": "Segmented glazing vertical frame",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Soffit downlight bezel",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Soffit warm LED diffuser",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | warm-white LED lenses"
+    },
+    {
+      "name": "Segmented glazing vertical frame",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Soffit downlight bezel",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Soffit warm LED diffuser",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | warm-white LED lenses"
+    },
+    {
+      "name": "Segmented glazing vertical frame",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Soffit downlight bezel",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Soffit warm LED diffuser",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | warm-white LED lenses"
+    },
+    {
+      "name": "Segmented glazing vertical frame",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Soffit downlight bezel",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Soffit warm LED diffuser",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | warm-white LED lenses"
+    },
+    {
+      "name": "Segmented glazing vertical frame",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Soffit downlight bezel",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Soffit warm LED diffuser",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | warm-white LED lenses"
+    },
+    {
+      "name": "Segmented glazing vertical frame",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Soffit downlight bezel",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Soffit warm LED diffuser",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | warm-white LED lenses"
+    },
+    {
+      "name": "Segmented glazing vertical frame",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Soffit downlight bezel",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Soffit warm LED diffuser",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | warm-white LED lenses"
+    },
+    {
+      "name": "Segmented glazing vertical frame",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Soffit downlight bezel",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Soffit warm LED diffuser",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | warm-white LED lenses"
+    },
+    {
+      "name": "Segmented glazing vertical frame",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Soffit downlight bezel",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Soffit warm LED diffuser",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | warm-white LED lenses"
+    },
+    {
+      "name": "Segmented glazing vertical frame",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Soffit downlight bezel",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Soffit warm LED diffuser",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | warm-white LED lenses"
+    },
+    {
+      "name": "Segmented glazing vertical frame",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Soffit downlight bezel",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Soffit warm LED diffuser",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | warm-white LED lenses"
+    },
+    {
+      "name": "Segmented glazing vertical frame",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Soffit downlight bezel",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Soffit warm LED diffuser",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | warm-white LED lenses"
+    },
+    {
+      "name": "Segmented glazing vertical frame",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Soffit downlight bezel",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Soffit warm LED diffuser",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | warm-white LED lenses"
+    },
+    {
+      "name": "Segmented glazing vertical frame",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Soffit downlight bezel",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Soffit warm LED diffuser",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | warm-white LED lenses"
+    },
+    {
+      "name": "Stanchion mounting shoe",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Stanchion mounting shoe",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Stanchion mounting shoe",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Stanchion mounting shoe",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Stanchion mounting shoe",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Stanchion mounting shoe",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Stanchion mounting shoe",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Stanchion mounting shoe",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Stanchion mounting shoe",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Stanchion mounting shoe",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Stanchion mounting shoe",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Stanchion mounting shoe",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Stanchion mounting shoe",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Stanchion mounting shoe",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Stanchion mounting shoe",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Stanchion mounting shoe",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Stanchion mounting shoe",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Stanchion mounting shoe",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Stanchion mounting shoe",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Stanchion mounting shoe",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Stanchion mounting shoe",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Stanchion mounting shoe",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Stanchion mounting shoe",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Stanchion mounting shoe",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Main",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Exterior speaker enclosure",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Speaker grille slat",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Speaker grille slat",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Speaker grille slat",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Speaker grille slat",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Speaker grille slat",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Speaker grille slat",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Exterior speaker enclosure",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Speaker grille slat",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Speaker grille slat",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Speaker grille slat",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Speaker grille slat",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Speaker grille slat",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Speaker grille slat",
+      "parent": "DETAIL_Main",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Segmented glazing vertical frame",
+      "parent": "DETAIL_Upper",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Soffit downlight bezel",
+      "parent": "DETAIL_Upper",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Soffit warm LED diffuser",
+      "parent": "DETAIL_Upper",
+      "material": "ATLAS | warm-white LED lenses"
+    },
+    {
+      "name": "Segmented glazing vertical frame",
+      "parent": "DETAIL_Upper",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Soffit downlight bezel",
+      "parent": "DETAIL_Upper",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Soffit warm LED diffuser",
+      "parent": "DETAIL_Upper",
+      "material": "ATLAS | warm-white LED lenses"
+    },
+    {
+      "name": "Segmented glazing vertical frame",
+      "parent": "DETAIL_Upper",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Soffit downlight bezel",
+      "parent": "DETAIL_Upper",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Soffit warm LED diffuser",
+      "parent": "DETAIL_Upper",
+      "material": "ATLAS | warm-white LED lenses"
+    },
+    {
+      "name": "Segmented glazing vertical frame",
+      "parent": "DETAIL_Upper",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Soffit downlight bezel",
+      "parent": "DETAIL_Upper",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Soffit warm LED diffuser",
+      "parent": "DETAIL_Upper",
+      "material": "ATLAS | warm-white LED lenses"
+    },
+    {
+      "name": "Segmented glazing vertical frame",
+      "parent": "DETAIL_Upper",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Soffit downlight bezel",
+      "parent": "DETAIL_Upper",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Soffit warm LED diffuser",
+      "parent": "DETAIL_Upper",
+      "material": "ATLAS | warm-white LED lenses"
+    },
+    {
+      "name": "Segmented glazing vertical frame",
+      "parent": "DETAIL_Upper",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Soffit downlight bezel",
+      "parent": "DETAIL_Upper",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Soffit warm LED diffuser",
+      "parent": "DETAIL_Upper",
+      "material": "ATLAS | warm-white LED lenses"
+    },
+    {
+      "name": "Segmented glazing vertical frame",
+      "parent": "DETAIL_Upper",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Soffit downlight bezel",
+      "parent": "DETAIL_Upper",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Soffit warm LED diffuser",
+      "parent": "DETAIL_Upper",
+      "material": "ATLAS | warm-white LED lenses"
+    },
+    {
+      "name": "Segmented glazing vertical frame",
+      "parent": "DETAIL_Upper",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Soffit downlight bezel",
+      "parent": "DETAIL_Upper",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Soffit warm LED diffuser",
+      "parent": "DETAIL_Upper",
+      "material": "ATLAS | warm-white LED lenses"
+    },
+    {
+      "name": "Segmented glazing vertical frame",
+      "parent": "DETAIL_Upper",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Soffit downlight bezel",
+      "parent": "DETAIL_Upper",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Soffit warm LED diffuser",
+      "parent": "DETAIL_Upper",
+      "material": "ATLAS | warm-white LED lenses"
+    },
+    {
+      "name": "Segmented glazing vertical frame",
+      "parent": "DETAIL_Upper",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Soffit downlight bezel",
+      "parent": "DETAIL_Upper",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Soffit warm LED diffuser",
+      "parent": "DETAIL_Upper",
+      "material": "ATLAS | warm-white LED lenses"
+    },
+    {
+      "name": "Segmented glazing vertical frame",
+      "parent": "DETAIL_Upper",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Soffit downlight bezel",
+      "parent": "DETAIL_Upper",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Soffit warm LED diffuser",
+      "parent": "DETAIL_Upper",
+      "material": "ATLAS | warm-white LED lenses"
+    },
+    {
+      "name": "Segmented glazing vertical frame",
+      "parent": "DETAIL_Upper",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Soffit downlight bezel",
+      "parent": "DETAIL_Upper",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Soffit warm LED diffuser",
+      "parent": "DETAIL_Upper",
+      "material": "ATLAS | warm-white LED lenses"
+    },
+    {
+      "name": "Segmented glazing vertical frame",
+      "parent": "DETAIL_Upper",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Soffit downlight bezel",
+      "parent": "DETAIL_Upper",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Soffit warm LED diffuser",
+      "parent": "DETAIL_Upper",
+      "material": "ATLAS | warm-white LED lenses"
+    },
+    {
+      "name": "Stanchion mounting shoe",
+      "parent": "MOV_Rails_Upper",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Upper",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Upper",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Stanchion mounting shoe",
+      "parent": "MOV_Rails_Upper",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Upper",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Upper",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Stanchion mounting shoe",
+      "parent": "MOV_Rails_Upper",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Upper",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Upper",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Stanchion mounting shoe",
+      "parent": "MOV_Rails_Upper",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Upper",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Upper",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Stanchion mounting shoe",
+      "parent": "MOV_Rails_Upper",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Upper",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Upper",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Stanchion mounting shoe",
+      "parent": "MOV_Rails_Upper",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Upper",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Upper",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Stanchion mounting shoe",
+      "parent": "MOV_Rails_Upper",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Upper",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Upper",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Stanchion mounting shoe",
+      "parent": "MOV_Rails_Upper",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Upper",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Upper",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Stanchion mounting shoe",
+      "parent": "MOV_Rails_Upper",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Upper",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Upper",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Stanchion mounting shoe",
+      "parent": "MOV_Rails_Upper",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Upper",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Upper",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Stanchion mounting shoe",
+      "parent": "MOV_Rails_Upper",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Upper",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Upper",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Stanchion mounting shoe",
+      "parent": "MOV_Rails_Upper",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Upper",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Upper",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Stanchion mounting shoe",
+      "parent": "MOV_Rails_Upper",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Upper",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Upper",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Stanchion mounting shoe",
+      "parent": "MOV_Rails_Upper",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Upper",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Upper",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Stanchion mounting shoe",
+      "parent": "MOV_Rails_Upper",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Upper",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Upper",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Stanchion mounting shoe",
+      "parent": "MOV_Rails_Upper",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Upper",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Upper",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Stanchion mounting shoe",
+      "parent": "MOV_Rails_Upper",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Upper",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Upper",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Stanchion mounting shoe",
+      "parent": "MOV_Rails_Upper",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Upper",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Upper",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Segmented glazing vertical frame",
+      "parent": "DETAIL_Upper",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Soffit downlight bezel",
+      "parent": "DETAIL_Upper",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Soffit warm LED diffuser",
+      "parent": "DETAIL_Upper",
+      "material": "ATLAS | warm-white LED lenses"
+    },
+    {
+      "name": "Segmented glazing vertical frame",
+      "parent": "DETAIL_Upper",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Soffit downlight bezel",
+      "parent": "DETAIL_Upper",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Soffit warm LED diffuser",
+      "parent": "DETAIL_Upper",
+      "material": "ATLAS | warm-white LED lenses"
+    },
+    {
+      "name": "Segmented glazing vertical frame",
+      "parent": "DETAIL_Upper",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Soffit downlight bezel",
+      "parent": "DETAIL_Upper",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Soffit warm LED diffuser",
+      "parent": "DETAIL_Upper",
+      "material": "ATLAS | warm-white LED lenses"
+    },
+    {
+      "name": "Segmented glazing vertical frame",
+      "parent": "DETAIL_Upper",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Soffit downlight bezel",
+      "parent": "DETAIL_Upper",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Soffit warm LED diffuser",
+      "parent": "DETAIL_Upper",
+      "material": "ATLAS | warm-white LED lenses"
+    },
+    {
+      "name": "Segmented glazing vertical frame",
+      "parent": "DETAIL_Upper",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Soffit downlight bezel",
+      "parent": "DETAIL_Upper",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Soffit warm LED diffuser",
+      "parent": "DETAIL_Upper",
+      "material": "ATLAS | warm-white LED lenses"
+    },
+    {
+      "name": "Segmented glazing vertical frame",
+      "parent": "DETAIL_Upper",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Soffit downlight bezel",
+      "parent": "DETAIL_Upper",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Soffit warm LED diffuser",
+      "parent": "DETAIL_Upper",
+      "material": "ATLAS | warm-white LED lenses"
+    },
+    {
+      "name": "Segmented glazing vertical frame",
+      "parent": "DETAIL_Upper",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Soffit downlight bezel",
+      "parent": "DETAIL_Upper",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Soffit warm LED diffuser",
+      "parent": "DETAIL_Upper",
+      "material": "ATLAS | warm-white LED lenses"
+    },
+    {
+      "name": "Segmented glazing vertical frame",
+      "parent": "DETAIL_Upper",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Soffit downlight bezel",
+      "parent": "DETAIL_Upper",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Soffit warm LED diffuser",
+      "parent": "DETAIL_Upper",
+      "material": "ATLAS | warm-white LED lenses"
+    },
+    {
+      "name": "Segmented glazing vertical frame",
+      "parent": "DETAIL_Upper",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Soffit downlight bezel",
+      "parent": "DETAIL_Upper",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Soffit warm LED diffuser",
+      "parent": "DETAIL_Upper",
+      "material": "ATLAS | warm-white LED lenses"
+    },
+    {
+      "name": "Segmented glazing vertical frame",
+      "parent": "DETAIL_Upper",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Soffit downlight bezel",
+      "parent": "DETAIL_Upper",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Soffit warm LED diffuser",
+      "parent": "DETAIL_Upper",
+      "material": "ATLAS | warm-white LED lenses"
+    },
+    {
+      "name": "Segmented glazing vertical frame",
+      "parent": "DETAIL_Upper",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Soffit downlight bezel",
+      "parent": "DETAIL_Upper",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Soffit warm LED diffuser",
+      "parent": "DETAIL_Upper",
+      "material": "ATLAS | warm-white LED lenses"
+    },
+    {
+      "name": "Segmented glazing vertical frame",
+      "parent": "DETAIL_Upper",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Soffit downlight bezel",
+      "parent": "DETAIL_Upper",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Soffit warm LED diffuser",
+      "parent": "DETAIL_Upper",
+      "material": "ATLAS | warm-white LED lenses"
+    },
+    {
+      "name": "Segmented glazing vertical frame",
+      "parent": "DETAIL_Upper",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Soffit downlight bezel",
+      "parent": "DETAIL_Upper",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Soffit warm LED diffuser",
+      "parent": "DETAIL_Upper",
+      "material": "ATLAS | warm-white LED lenses"
+    },
+    {
+      "name": "Stanchion mounting shoe",
+      "parent": "MOV_Rails_Upper",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Upper",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Upper",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Stanchion mounting shoe",
+      "parent": "MOV_Rails_Upper",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Upper",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Upper",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Stanchion mounting shoe",
+      "parent": "MOV_Rails_Upper",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Upper",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Upper",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Stanchion mounting shoe",
+      "parent": "MOV_Rails_Upper",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Upper",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Upper",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Stanchion mounting shoe",
+      "parent": "MOV_Rails_Upper",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Upper",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Upper",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Stanchion mounting shoe",
+      "parent": "MOV_Rails_Upper",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Upper",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Upper",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Stanchion mounting shoe",
+      "parent": "MOV_Rails_Upper",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Upper",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Upper",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Stanchion mounting shoe",
+      "parent": "MOV_Rails_Upper",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Upper",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Upper",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Stanchion mounting shoe",
+      "parent": "MOV_Rails_Upper",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Upper",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Upper",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Stanchion mounting shoe",
+      "parent": "MOV_Rails_Upper",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Upper",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Upper",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Stanchion mounting shoe",
+      "parent": "MOV_Rails_Upper",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Upper",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Upper",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Stanchion mounting shoe",
+      "parent": "MOV_Rails_Upper",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Upper",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Upper",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Stanchion mounting shoe",
+      "parent": "MOV_Rails_Upper",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Upper",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Upper",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Stanchion mounting shoe",
+      "parent": "MOV_Rails_Upper",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Upper",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Upper",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Stanchion mounting shoe",
+      "parent": "MOV_Rails_Upper",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Upper",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Upper",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Stanchion mounting shoe",
+      "parent": "MOV_Rails_Upper",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Upper",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Upper",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Stanchion mounting shoe",
+      "parent": "MOV_Rails_Upper",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Upper",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Upper",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Stanchion mounting shoe",
+      "parent": "MOV_Rails_Upper",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Upper",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Upper",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Exterior speaker enclosure",
+      "parent": "DETAIL_Upper",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Speaker grille slat",
+      "parent": "DETAIL_Upper",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Speaker grille slat",
+      "parent": "DETAIL_Upper",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Speaker grille slat",
+      "parent": "DETAIL_Upper",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Speaker grille slat",
+      "parent": "DETAIL_Upper",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Speaker grille slat",
+      "parent": "DETAIL_Upper",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Speaker grille slat",
+      "parent": "DETAIL_Upper",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Exterior speaker enclosure",
+      "parent": "DETAIL_Upper",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Speaker grille slat",
+      "parent": "DETAIL_Upper",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Speaker grille slat",
+      "parent": "DETAIL_Upper",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Speaker grille slat",
+      "parent": "DETAIL_Upper",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Speaker grille slat",
+      "parent": "DETAIL_Upper",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Speaker grille slat",
+      "parent": "DETAIL_Upper",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Speaker grille slat",
+      "parent": "DETAIL_Upper",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Segmented glazing vertical frame",
+      "parent": "DETAIL_Bridge",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Soffit downlight bezel",
+      "parent": "DETAIL_Bridge",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Soffit warm LED diffuser",
+      "parent": "DETAIL_Bridge",
+      "material": "ATLAS | warm-white LED lenses"
+    },
+    {
+      "name": "Segmented glazing vertical frame",
+      "parent": "DETAIL_Bridge",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Soffit downlight bezel",
+      "parent": "DETAIL_Bridge",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Soffit warm LED diffuser",
+      "parent": "DETAIL_Bridge",
+      "material": "ATLAS | warm-white LED lenses"
+    },
+    {
+      "name": "Segmented glazing vertical frame",
+      "parent": "DETAIL_Bridge",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Soffit downlight bezel",
+      "parent": "DETAIL_Bridge",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Soffit warm LED diffuser",
+      "parent": "DETAIL_Bridge",
+      "material": "ATLAS | warm-white LED lenses"
+    },
+    {
+      "name": "Segmented glazing vertical frame",
+      "parent": "DETAIL_Bridge",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Soffit downlight bezel",
+      "parent": "DETAIL_Bridge",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Soffit warm LED diffuser",
+      "parent": "DETAIL_Bridge",
+      "material": "ATLAS | warm-white LED lenses"
+    },
+    {
+      "name": "Segmented glazing vertical frame",
+      "parent": "DETAIL_Bridge",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Soffit downlight bezel",
+      "parent": "DETAIL_Bridge",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Soffit warm LED diffuser",
+      "parent": "DETAIL_Bridge",
+      "material": "ATLAS | warm-white LED lenses"
+    },
+    {
+      "name": "Segmented glazing vertical frame",
+      "parent": "DETAIL_Bridge",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Soffit downlight bezel",
+      "parent": "DETAIL_Bridge",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Soffit warm LED diffuser",
+      "parent": "DETAIL_Bridge",
+      "material": "ATLAS | warm-white LED lenses"
+    },
+    {
+      "name": "Stanchion mounting shoe",
+      "parent": "MOV_Rails_Bridge",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Bridge",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Bridge",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Stanchion mounting shoe",
+      "parent": "MOV_Rails_Bridge",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Bridge",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Bridge",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Stanchion mounting shoe",
+      "parent": "MOV_Rails_Bridge",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Bridge",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Bridge",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Stanchion mounting shoe",
+      "parent": "MOV_Rails_Bridge",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Bridge",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Bridge",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Stanchion mounting shoe",
+      "parent": "MOV_Rails_Bridge",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Bridge",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Bridge",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Stanchion mounting shoe",
+      "parent": "MOV_Rails_Bridge",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Bridge",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Bridge",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Stanchion mounting shoe",
+      "parent": "MOV_Rails_Bridge",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Bridge",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Bridge",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Stanchion mounting shoe",
+      "parent": "MOV_Rails_Bridge",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Bridge",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Bridge",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Stanchion mounting shoe",
+      "parent": "MOV_Rails_Bridge",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Bridge",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Bridge",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Stanchion mounting shoe",
+      "parent": "MOV_Rails_Bridge",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Bridge",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Bridge",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Stanchion mounting shoe",
+      "parent": "MOV_Rails_Bridge",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Bridge",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Bridge",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Segmented glazing vertical frame",
+      "parent": "DETAIL_Bridge",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Soffit downlight bezel",
+      "parent": "DETAIL_Bridge",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Soffit warm LED diffuser",
+      "parent": "DETAIL_Bridge",
+      "material": "ATLAS | warm-white LED lenses"
+    },
+    {
+      "name": "Segmented glazing vertical frame",
+      "parent": "DETAIL_Bridge",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Soffit downlight bezel",
+      "parent": "DETAIL_Bridge",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Soffit warm LED diffuser",
+      "parent": "DETAIL_Bridge",
+      "material": "ATLAS | warm-white LED lenses"
+    },
+    {
+      "name": "Segmented glazing vertical frame",
+      "parent": "DETAIL_Bridge",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Soffit downlight bezel",
+      "parent": "DETAIL_Bridge",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Soffit warm LED diffuser",
+      "parent": "DETAIL_Bridge",
+      "material": "ATLAS | warm-white LED lenses"
+    },
+    {
+      "name": "Segmented glazing vertical frame",
+      "parent": "DETAIL_Bridge",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Soffit downlight bezel",
+      "parent": "DETAIL_Bridge",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Soffit warm LED diffuser",
+      "parent": "DETAIL_Bridge",
+      "material": "ATLAS | warm-white LED lenses"
+    },
+    {
+      "name": "Segmented glazing vertical frame",
+      "parent": "DETAIL_Bridge",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Soffit downlight bezel",
+      "parent": "DETAIL_Bridge",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Soffit warm LED diffuser",
+      "parent": "DETAIL_Bridge",
+      "material": "ATLAS | warm-white LED lenses"
+    },
+    {
+      "name": "Segmented glazing vertical frame",
+      "parent": "DETAIL_Bridge",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Soffit downlight bezel",
+      "parent": "DETAIL_Bridge",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Soffit warm LED diffuser",
+      "parent": "DETAIL_Bridge",
+      "material": "ATLAS | warm-white LED lenses"
+    },
+    {
+      "name": "Stanchion mounting shoe",
+      "parent": "MOV_Rails_Bridge",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Bridge",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Bridge",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Stanchion mounting shoe",
+      "parent": "MOV_Rails_Bridge",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Bridge",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Bridge",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Stanchion mounting shoe",
+      "parent": "MOV_Rails_Bridge",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Bridge",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Bridge",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Stanchion mounting shoe",
+      "parent": "MOV_Rails_Bridge",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Bridge",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Bridge",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Stanchion mounting shoe",
+      "parent": "MOV_Rails_Bridge",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Bridge",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Bridge",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Stanchion mounting shoe",
+      "parent": "MOV_Rails_Bridge",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Bridge",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Bridge",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Stanchion mounting shoe",
+      "parent": "MOV_Rails_Bridge",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Bridge",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Bridge",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Stanchion mounting shoe",
+      "parent": "MOV_Rails_Bridge",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Bridge",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Bridge",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Stanchion mounting shoe",
+      "parent": "MOV_Rails_Bridge",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Bridge",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Bridge",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Stanchion mounting shoe",
+      "parent": "MOV_Rails_Bridge",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Bridge",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Bridge",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Stanchion mounting shoe",
+      "parent": "MOV_Rails_Bridge",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Bridge",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Bridge",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Exterior speaker enclosure",
+      "parent": "DETAIL_Bridge",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Speaker grille slat",
+      "parent": "DETAIL_Bridge",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Speaker grille slat",
+      "parent": "DETAIL_Bridge",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Speaker grille slat",
+      "parent": "DETAIL_Bridge",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Speaker grille slat",
+      "parent": "DETAIL_Bridge",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Speaker grille slat",
+      "parent": "DETAIL_Bridge",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Speaker grille slat",
+      "parent": "DETAIL_Bridge",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Exterior speaker enclosure",
+      "parent": "DETAIL_Bridge",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Speaker grille slat",
+      "parent": "DETAIL_Bridge",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Speaker grille slat",
+      "parent": "DETAIL_Bridge",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Speaker grille slat",
+      "parent": "DETAIL_Bridge",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Speaker grille slat",
+      "parent": "DETAIL_Bridge",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Speaker grille slat",
+      "parent": "DETAIL_Bridge",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Speaker grille slat",
+      "parent": "DETAIL_Bridge",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Segmented glazing vertical frame",
+      "parent": "DETAIL_Sky",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Soffit downlight bezel",
+      "parent": "DETAIL_Sky",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Soffit warm LED diffuser",
+      "parent": "DETAIL_Sky",
+      "material": "ATLAS | warm-white LED lenses"
+    },
+    {
+      "name": "Stanchion mounting shoe",
+      "parent": "MOV_Rails_Sky",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Sky",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Sky",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Stanchion mounting shoe",
+      "parent": "MOV_Rails_Sky",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Sky",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Sky",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Stanchion mounting shoe",
+      "parent": "MOV_Rails_Sky",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Sky",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Sky",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Stanchion mounting shoe",
+      "parent": "MOV_Rails_Sky",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Sky",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Sky",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Segmented glazing vertical frame",
+      "parent": "DETAIL_Sky",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Soffit downlight bezel",
+      "parent": "DETAIL_Sky",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Soffit warm LED diffuser",
+      "parent": "DETAIL_Sky",
+      "material": "ATLAS | warm-white LED lenses"
+    },
+    {
+      "name": "Stanchion mounting shoe",
+      "parent": "MOV_Rails_Sky",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Sky",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Sky",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Stanchion mounting shoe",
+      "parent": "MOV_Rails_Sky",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Sky",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Sky",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Stanchion mounting shoe",
+      "parent": "MOV_Rails_Sky",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Sky",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Sky",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Stanchion mounting shoe",
+      "parent": "MOV_Rails_Sky",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Sky",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Railing countersunk screw",
+      "parent": "MOV_Rails_Sky",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Exterior speaker enclosure",
+      "parent": "DETAIL_Sky",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Speaker grille slat",
+      "parent": "DETAIL_Sky",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Speaker grille slat",
+      "parent": "DETAIL_Sky",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Speaker grille slat",
+      "parent": "DETAIL_Sky",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Speaker grille slat",
+      "parent": "DETAIL_Sky",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Speaker grille slat",
+      "parent": "DETAIL_Sky",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Speaker grille slat",
+      "parent": "DETAIL_Sky",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Exterior speaker enclosure",
+      "parent": "DETAIL_Sky",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Speaker grille slat",
+      "parent": "DETAIL_Sky",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Speaker grille slat",
+      "parent": "DETAIL_Sky",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Speaker grille slat",
+      "parent": "DETAIL_Sky",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Speaker grille slat",
+      "parent": "DETAIL_Sky",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Speaker grille slat",
+      "parent": "DETAIL_Sky",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Speaker grille slat",
+      "parent": "DETAIL_Sky",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Hull glazing gasket",
+      "parent": "DETAIL_Hull",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Flush service hatch gasket",
+      "parent": "DETAIL_Foredeck",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Flush service hatch lid",
+      "parent": "DETAIL_Foredeck",
+      "material": "ATLAS | titanium silver paint"
+    },
+    {
+      "name": "Recessed lifting handle surround",
+      "parent": "DETAIL_Foredeck",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Recessed lifting handle",
+      "parent": "DETAIL_Foredeck",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Captive deck fastener",
+      "parent": "DETAIL_Foredeck",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Captive deck fastener",
+      "parent": "DETAIL_Foredeck",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Captive deck fastener",
+      "parent": "DETAIL_Foredeck",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Captive deck fastener",
+      "parent": "DETAIL_Foredeck",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Flush service hatch gasket",
+      "parent": "DETAIL_Foredeck",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Flush service hatch lid",
+      "parent": "DETAIL_Foredeck",
+      "material": "ATLAS | titanium silver paint"
+    },
+    {
+      "name": "Recessed lifting handle surround",
+      "parent": "DETAIL_Foredeck",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Recessed lifting handle",
+      "parent": "DETAIL_Foredeck",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Captive deck fastener",
+      "parent": "DETAIL_Foredeck",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Captive deck fastener",
+      "parent": "DETAIL_Foredeck",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Captive deck fastener",
+      "parent": "DETAIL_Foredeck",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Captive deck fastener",
+      "parent": "DETAIL_Foredeck",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Flush service hatch gasket",
+      "parent": "DETAIL_Foredeck",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Flush service hatch lid",
+      "parent": "DETAIL_Foredeck",
+      "material": "ATLAS | titanium silver paint"
+    },
+    {
+      "name": "Recessed lifting handle surround",
+      "parent": "DETAIL_Foredeck",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Recessed lifting handle",
+      "parent": "DETAIL_Foredeck",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Captive deck fastener",
+      "parent": "DETAIL_Foredeck",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Captive deck fastener",
+      "parent": "DETAIL_Foredeck",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Captive deck fastener",
+      "parent": "DETAIL_Foredeck",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Captive deck fastener",
+      "parent": "DETAIL_Foredeck",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Flush service hatch gasket",
+      "parent": "DETAIL_Foredeck",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Flush service hatch lid",
+      "parent": "DETAIL_Foredeck",
+      "material": "ATLAS | titanium silver paint"
+    },
+    {
+      "name": "Recessed lifting handle surround",
+      "parent": "DETAIL_Foredeck",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Recessed lifting handle",
+      "parent": "DETAIL_Foredeck",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Captive deck fastener",
+      "parent": "DETAIL_Foredeck",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Captive deck fastener",
+      "parent": "DETAIL_Foredeck",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Captive deck fastener",
+      "parent": "DETAIL_Foredeck",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Captive deck fastener",
+      "parent": "DETAIL_Foredeck",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Pool perimeter drainage",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Drain grate slot",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Drain grate slot",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Drain grate slot",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Drain grate slot",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Drain grate slot",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Drain grate slot",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Drain grate slot",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Drain grate slot",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Drain grate slot",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Drain grate slot",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Drain grate slot",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Drain grate slot",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Drain grate slot",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Drain grate slot",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Drain grate slot",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Drain grate slot",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Drain grate slot",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Drain grate slot",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Drain grate slot",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Drain grate slot",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Drain grate slot",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Drain grate slot",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Drain grate slot",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Drain grate slot",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Drain grate slot",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Drain grate slot",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Drain grate slot",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Drain grate slot",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Drain grate slot",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Drain grate slot",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Drain grate slot",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Drain grate slot",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Drain grate slot",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Drain grate slot",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Drain grate slot",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Drain grate slot",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Drain grate slot",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Drain grate slot",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Drain grate slot",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Drain grate slot",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Drain grate slot",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Drain grate slot",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Drain grate slot",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Drain grate slot",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Drain grate slot",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Drain grate slot",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Drain grate slot",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Drain grate slot",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Drain grate slot",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Drain grate slot",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Drain grate slot",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Pool stainless coaming cap",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Pool perimeter drainage",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Drain grate slot",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Drain grate slot",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Drain grate slot",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Drain grate slot",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Drain grate slot",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Drain grate slot",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Drain grate slot",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Drain grate slot",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Drain grate slot",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Drain grate slot",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Drain grate slot",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Drain grate slot",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Drain grate slot",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Drain grate slot",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Drain grate slot",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Drain grate slot",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Drain grate slot",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Drain grate slot",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Drain grate slot",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Drain grate slot",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Drain grate slot",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Drain grate slot",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Drain grate slot",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Drain grate slot",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Drain grate slot",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Drain grate slot",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Drain grate slot",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Drain grate slot",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Drain grate slot",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Drain grate slot",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Drain grate slot",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Drain grate slot",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Drain grate slot",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Drain grate slot",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Drain grate slot",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Drain grate slot",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Drain grate slot",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Drain grate slot",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Drain grate slot",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Drain grate slot",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Drain grate slot",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Drain grate slot",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Drain grate slot",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Drain grate slot",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Drain grate slot",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Drain grate slot",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Drain grate slot",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Drain grate slot",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Drain grate slot",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Drain grate slot",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Drain grate slot",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Pool stainless coaming cap",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Pool access handhold",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Pool access handhold",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Pool wall lamp bezel",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Pool wall lamp lens",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | warm-white LED lenses"
+    },
+    {
+      "name": "Pool wall lamp bezel",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Pool wall lamp lens",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | warm-white LED lenses"
+    },
+    {
+      "name": "Pool wall lamp bezel",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Pool wall lamp lens",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | warm-white LED lenses"
+    },
+    {
+      "name": "Pool wall lamp bezel",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Pool wall lamp lens",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | warm-white LED lenses"
+    },
+    {
+      "name": "Pool wall lamp bezel",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Pool wall lamp lens",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | warm-white LED lenses"
+    },
+    {
+      "name": "Pool wall lamp bezel",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Pool wall lamp lens",
+      "parent": "DETAIL_Pool",
+      "material": "ATLAS | warm-white LED lenses"
+    },
+    {
+      "name": "Inclined stair support stringer",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Stair handrail",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Stair rail stanchion",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Stair rail stanchion",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Stair rail stanchion",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Stair rail stanchion",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Stair rail stanchion",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Inclined stair support stringer",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Stair handrail",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Stair rail stanchion",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Stair rail stanchion",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Stair rail stanchion",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Stair rail stanchion",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Stair rail stanchion",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Closed stair riser",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | titanium silver paint"
+    },
+    {
+      "name": "Metal step nosing",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Closed stair riser",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | titanium silver paint"
+    },
+    {
+      "name": "Metal step nosing",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Closed stair riser",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | titanium silver paint"
+    },
+    {
+      "name": "Metal step nosing",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Closed stair riser",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | titanium silver paint"
+    },
+    {
+      "name": "Metal step nosing",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Closed stair riser",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | titanium silver paint"
+    },
+    {
+      "name": "Metal step nosing",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Closed stair riser",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | titanium silver paint"
+    },
+    {
+      "name": "Metal step nosing",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Closed stair riser",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | titanium silver paint"
+    },
+    {
+      "name": "Metal step nosing",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Closed stair riser",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | titanium silver paint"
+    },
+    {
+      "name": "Metal step nosing",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Closed stair riser",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | titanium silver paint"
+    },
+    {
+      "name": "Metal step nosing",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Closed stair riser",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | titanium silver paint"
+    },
+    {
+      "name": "Metal step nosing",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Closed stair riser",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | titanium silver paint"
+    },
+    {
+      "name": "Metal step nosing",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Closed stair riser",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | titanium silver paint"
+    },
+    {
+      "name": "Metal step nosing",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Closed stair riser",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | titanium silver paint"
+    },
+    {
+      "name": "Metal step nosing",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Closed stair riser",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | titanium silver paint"
+    },
+    {
+      "name": "Metal step nosing",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Closed stair riser",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | titanium silver paint"
+    },
+    {
+      "name": "Metal step nosing",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Closed stair riser",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | titanium silver paint"
+    },
+    {
+      "name": "Metal step nosing",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Closed stair riser",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | titanium silver paint"
+    },
+    {
+      "name": "Metal step nosing",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Closed stair riser",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | titanium silver paint"
+    },
+    {
+      "name": "Metal step nosing",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Closed stair riser",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | titanium silver paint"
+    },
+    {
+      "name": "Metal step nosing",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Closed stair riser",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | titanium silver paint"
+    },
+    {
+      "name": "Metal step nosing",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Closed stair riser",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | titanium silver paint"
+    },
+    {
+      "name": "Metal step nosing",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Closed stair riser",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | titanium silver paint"
+    },
+    {
+      "name": "Metal step nosing",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Closed stair riser",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | titanium silver paint"
+    },
+    {
+      "name": "Metal step nosing",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Closed stair riser",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | titanium silver paint"
+    },
+    {
+      "name": "Metal step nosing",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Inclined stair support stringer",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Stair handrail",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Stair rail stanchion",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Stair rail stanchion",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Stair rail stanchion",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Stair rail stanchion",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Stair rail stanchion",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Inclined stair support stringer",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Stair handrail",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Stair rail stanchion",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Stair rail stanchion",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Stair rail stanchion",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Stair rail stanchion",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Stair rail stanchion",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Closed stair riser",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | titanium silver paint"
+    },
+    {
+      "name": "Metal step nosing",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Closed stair riser",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | titanium silver paint"
+    },
+    {
+      "name": "Metal step nosing",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Closed stair riser",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | titanium silver paint"
+    },
+    {
+      "name": "Metal step nosing",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Closed stair riser",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | titanium silver paint"
+    },
+    {
+      "name": "Metal step nosing",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Closed stair riser",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | titanium silver paint"
+    },
+    {
+      "name": "Metal step nosing",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Closed stair riser",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | titanium silver paint"
+    },
+    {
+      "name": "Metal step nosing",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Closed stair riser",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | titanium silver paint"
+    },
+    {
+      "name": "Metal step nosing",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Closed stair riser",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | titanium silver paint"
+    },
+    {
+      "name": "Metal step nosing",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Closed stair riser",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | titanium silver paint"
+    },
+    {
+      "name": "Metal step nosing",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Closed stair riser",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | titanium silver paint"
+    },
+    {
+      "name": "Metal step nosing",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Closed stair riser",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | titanium silver paint"
+    },
+    {
+      "name": "Metal step nosing",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Closed stair riser",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | titanium silver paint"
+    },
+    {
+      "name": "Metal step nosing",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Closed stair riser",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | titanium silver paint"
+    },
+    {
+      "name": "Metal step nosing",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Closed stair riser",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | titanium silver paint"
+    },
+    {
+      "name": "Metal step nosing",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Closed stair riser",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | titanium silver paint"
+    },
+    {
+      "name": "Metal step nosing",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Closed stair riser",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | titanium silver paint"
+    },
+    {
+      "name": "Metal step nosing",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Closed stair riser",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | titanium silver paint"
+    },
+    {
+      "name": "Metal step nosing",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Closed stair riser",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | titanium silver paint"
+    },
+    {
+      "name": "Metal step nosing",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Closed stair riser",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | titanium silver paint"
+    },
+    {
+      "name": "Metal step nosing",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Closed stair riser",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | titanium silver paint"
+    },
+    {
+      "name": "Metal step nosing",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Closed stair riser",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | titanium silver paint"
+    },
+    {
+      "name": "Metal step nosing",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Closed stair riser",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | titanium silver paint"
+    },
+    {
+      "name": "Metal step nosing",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Closed stair riser",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | titanium silver paint"
+    },
+    {
+      "name": "Metal step nosing",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Closed stair riser",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | titanium silver paint"
+    },
+    {
+      "name": "Metal step nosing",
+      "parent": "DETAIL_Stern_stairs",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Outer-door vertical perimeter seal",
+      "parent": "DETAIL_GarageDoor_-1",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Outer-door vertical perimeter seal",
+      "parent": "DETAIL_GarageDoor_-1",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Outer-door horizontal perimeter seal",
+      "parent": "DETAIL_GarageDoor_-1",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Outer-door horizontal perimeter seal",
+      "parent": "DETAIL_GarageDoor_-1",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Outer styling-door hinge knuckle",
+      "parent": "DETAIL_GarageDoor_-1",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Hinge pin end cap",
+      "parent": "DETAIL_GarageDoor_-1",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Outer styling-door hinge knuckle",
+      "parent": "DETAIL_GarageDoor_-1",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Hinge pin end cap",
+      "parent": "DETAIL_GarageDoor_-1",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Outer styling-door hinge knuckle",
+      "parent": "DETAIL_GarageDoor_-1",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Hinge pin end cap",
+      "parent": "DETAIL_GarageDoor_-1",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Outer styling-door hinge knuckle",
+      "parent": "DETAIL_GarageDoor_-1",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Hinge pin end cap",
+      "parent": "DETAIL_GarageDoor_-1",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Outer styling-door hinge knuckle",
+      "parent": "DETAIL_GarageDoor_-1",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Hinge pin end cap",
+      "parent": "DETAIL_GarageDoor_-1",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Closure handle recess",
+      "parent": "DETAIL_GarageDoor_-1",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Flush latch handle",
+      "parent": "DETAIL_GarageDoor_-1",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Closure handle recess",
+      "parent": "DETAIL_GarageDoor_-1",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Flush latch handle",
+      "parent": "DETAIL_GarageDoor_-1",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Closure handle recess",
+      "parent": "DETAIL_GarageDoor_-1",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Flush latch handle",
+      "parent": "DETAIL_GarageDoor_-1",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Closure handle recess",
+      "parent": "DETAIL_GarageDoor_-1",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Flush latch handle",
+      "parent": "DETAIL_GarageDoor_-1",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Closure handle recess",
+      "parent": "DETAIL_GarageDoor_-1",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Flush latch handle",
+      "parent": "DETAIL_GarageDoor_-1",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Closure handle recess",
+      "parent": "DETAIL_GarageDoor_-1",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Flush latch handle",
+      "parent": "DETAIL_GarageDoor_-1",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Inner door reinforcement rib",
+      "parent": "DETAIL_GarageDoor_-1",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Inner door reinforcement rib",
+      "parent": "DETAIL_GarageDoor_-1",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Inner door reinforcement rib",
+      "parent": "DETAIL_GarageDoor_-1",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Inner door reinforcement rib",
+      "parent": "DETAIL_GarageDoor_-1",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Perimeter captive fastener",
+      "parent": "DETAIL_GarageDoor_-1",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Perimeter captive fastener",
+      "parent": "DETAIL_GarageDoor_-1",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Perimeter captive fastener",
+      "parent": "DETAIL_GarageDoor_-1",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Perimeter captive fastener",
+      "parent": "DETAIL_GarageDoor_-1",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Perimeter captive fastener",
+      "parent": "DETAIL_GarageDoor_-1",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Perimeter captive fastener",
+      "parent": "DETAIL_GarageDoor_-1",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Perimeter captive fastener",
+      "parent": "DETAIL_GarageDoor_-1",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Perimeter captive fastener",
+      "parent": "DETAIL_GarageDoor_-1",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Perimeter captive fastener",
+      "parent": "DETAIL_GarageDoor_-1",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Perimeter captive fastener",
+      "parent": "DETAIL_GarageDoor_-1",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Perimeter captive fastener",
+      "parent": "DETAIL_GarageDoor_-1",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Perimeter captive fastener",
+      "parent": "DETAIL_GarageDoor_-1",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Perimeter captive fastener",
+      "parent": "DETAIL_GarageDoor_-1",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Perimeter captive fastener",
+      "parent": "DETAIL_GarageDoor_-1",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Perimeter captive fastener",
+      "parent": "DETAIL_GarageDoor_-1",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Perimeter captive fastener",
+      "parent": "DETAIL_GarageDoor_-1",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Perimeter captive fastener",
+      "parent": "DETAIL_GarageDoor_-1",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Perimeter captive fastener",
+      "parent": "DETAIL_GarageDoor_-1",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Outer-door vertical perimeter seal",
+      "parent": "DETAIL_GarageDoor_1",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Outer-door vertical perimeter seal",
+      "parent": "DETAIL_GarageDoor_1",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Outer-door horizontal perimeter seal",
+      "parent": "DETAIL_GarageDoor_1",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Outer-door horizontal perimeter seal",
+      "parent": "DETAIL_GarageDoor_1",
+      "material": "ATLAS | dark panel reveals"
+    },
+    {
+      "name": "Outer styling-door hinge knuckle",
+      "parent": "DETAIL_GarageDoor_1",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Hinge pin end cap",
+      "parent": "DETAIL_GarageDoor_1",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Outer styling-door hinge knuckle",
+      "parent": "DETAIL_GarageDoor_1",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Hinge pin end cap",
+      "parent": "DETAIL_GarageDoor_1",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Outer styling-door hinge knuckle",
+      "parent": "DETAIL_GarageDoor_1",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Hinge pin end cap",
+      "parent": "DETAIL_GarageDoor_1",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Outer styling-door hinge knuckle",
+      "parent": "DETAIL_GarageDoor_1",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Hinge pin end cap",
+      "parent": "DETAIL_GarageDoor_1",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Outer styling-door hinge knuckle",
+      "parent": "DETAIL_GarageDoor_1",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Hinge pin end cap",
+      "parent": "DETAIL_GarageDoor_1",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Closure handle recess",
+      "parent": "DETAIL_GarageDoor_1",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Flush latch handle",
+      "parent": "DETAIL_GarageDoor_1",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Closure handle recess",
+      "parent": "DETAIL_GarageDoor_1",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Flush latch handle",
+      "parent": "DETAIL_GarageDoor_1",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Closure handle recess",
+      "parent": "DETAIL_GarageDoor_1",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Flush latch handle",
+      "parent": "DETAIL_GarageDoor_1",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Closure handle recess",
+      "parent": "DETAIL_GarageDoor_1",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Flush latch handle",
+      "parent": "DETAIL_GarageDoor_1",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Closure handle recess",
+      "parent": "DETAIL_GarageDoor_1",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Flush latch handle",
+      "parent": "DETAIL_GarageDoor_1",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Closure handle recess",
+      "parent": "DETAIL_GarageDoor_1",
+      "material": "ATLAS | graphite elastomer"
+    },
+    {
+      "name": "Flush latch handle",
+      "parent": "DETAIL_GarageDoor_1",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Inner door reinforcement rib",
+      "parent": "DETAIL_GarageDoor_1",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Inner door reinforcement rib",
+      "parent": "DETAIL_GarageDoor_1",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Inner door reinforcement rib",
+      "parent": "DETAIL_GarageDoor_1",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Inner door reinforcement rib",
+      "parent": "DETAIL_GarageDoor_1",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Perimeter captive fastener",
+      "parent": "DETAIL_GarageDoor_1",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Perimeter captive fastener",
+      "parent": "DETAIL_GarageDoor_1",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Perimeter captive fastener",
+      "parent": "DETAIL_GarageDoor_1",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Perimeter captive fastener",
+      "parent": "DETAIL_GarageDoor_1",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Perimeter captive fastener",
+      "parent": "DETAIL_GarageDoor_1",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Perimeter captive fastener",
+      "parent": "DETAIL_GarageDoor_1",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Perimeter captive fastener",
+      "parent": "DETAIL_GarageDoor_1",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Perimeter captive fastener",
+      "parent": "DETAIL_GarageDoor_1",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Perimeter captive fastener",
+      "parent": "DETAIL_GarageDoor_1",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Perimeter captive fastener",
+      "parent": "DETAIL_GarageDoor_1",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Perimeter captive fastener",
+      "parent": "DETAIL_GarageDoor_1",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Perimeter captive fastener",
+      "parent": "DETAIL_GarageDoor_1",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Perimeter captive fastener",
+      "parent": "DETAIL_GarageDoor_1",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Perimeter captive fastener",
+      "parent": "DETAIL_GarageDoor_1",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Perimeter captive fastener",
+      "parent": "DETAIL_GarageDoor_1",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Perimeter captive fastener",
+      "parent": "DETAIL_GarageDoor_1",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Perimeter captive fastener",
+      "parent": "DETAIL_GarageDoor_1",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Perimeter captive fastener",
+      "parent": "DETAIL_GarageDoor_1",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Carrier support clamp",
+      "parent": "DETAIL_Carrier_Chase",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Carrier clamp bolt",
+      "parent": "DETAIL_Carrier_Chase",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Carrier clamp bolt",
+      "parent": "DETAIL_Carrier_Chase",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Carrier support clamp",
+      "parent": "DETAIL_Carrier_Chase",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Carrier clamp bolt",
+      "parent": "DETAIL_Carrier_Chase",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Carrier clamp bolt",
+      "parent": "DETAIL_Carrier_Chase",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Carrier support clamp",
+      "parent": "DETAIL_Carrier_Chase",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Carrier clamp bolt",
+      "parent": "DETAIL_Carrier_Chase",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Carrier clamp bolt",
+      "parent": "DETAIL_Carrier_Chase",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Carrier support clamp",
+      "parent": "DETAIL_Carrier_Chase",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Carrier clamp bolt",
+      "parent": "DETAIL_Carrier_Chase",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Carrier clamp bolt",
+      "parent": "DETAIL_Carrier_Chase",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Carrier support clamp",
+      "parent": "DETAIL_Carrier_Chase",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Carrier clamp bolt",
+      "parent": "DETAIL_Carrier_Chase",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Carrier clamp bolt",
+      "parent": "DETAIL_Carrier_Chase",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Carrier support clamp",
+      "parent": "DETAIL_Carrier_Chase",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Carrier clamp bolt",
+      "parent": "DETAIL_Carrier_Chase",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Carrier clamp bolt",
+      "parent": "DETAIL_Carrier_Chase",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Carrier support clamp",
+      "parent": "DETAIL_Carrier_Utility",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Carrier clamp bolt",
+      "parent": "DETAIL_Carrier_Utility",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Carrier clamp bolt",
+      "parent": "DETAIL_Carrier_Utility",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Carrier support clamp",
+      "parent": "DETAIL_Carrier_Utility",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Carrier clamp bolt",
+      "parent": "DETAIL_Carrier_Utility",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Carrier clamp bolt",
+      "parent": "DETAIL_Carrier_Utility",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Carrier support clamp",
+      "parent": "DETAIL_Carrier_Utility",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Carrier clamp bolt",
+      "parent": "DETAIL_Carrier_Utility",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Carrier clamp bolt",
+      "parent": "DETAIL_Carrier_Utility",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Carrier support clamp",
+      "parent": "DETAIL_Carrier_Utility",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Carrier clamp bolt",
+      "parent": "DETAIL_Carrier_Utility",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Carrier clamp bolt",
+      "parent": "DETAIL_Carrier_Utility",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Carrier support clamp",
+      "parent": "DETAIL_Carrier_Utility",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Carrier clamp bolt",
+      "parent": "DETAIL_Carrier_Utility",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Carrier clamp bolt",
+      "parent": "DETAIL_Carrier_Utility",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Carrier support clamp",
+      "parent": "DETAIL_Carrier_Utility",
+      "material": "ATLAS | brushed titanium trim"
+    },
+    {
+      "name": "Carrier clamp bolt",
+      "parent": "DETAIL_Carrier_Utility",
+      "material": "ATLAS | satin stainless"
+    },
+    {
+      "name": "Carrier clamp bolt",
+      "parent": "DETAIL_Carrier_Utility",
+      "material": "ATLAS | satin stainless"
+    }
+  ]
+}
