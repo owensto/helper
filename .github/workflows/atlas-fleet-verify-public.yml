@@ -26,7 +26,7 @@ jobs:
       - name: Verify immutable public release and preserve diagnostics
         env:
           REVIEW_DIR: /tmp/fleet-public
-          BASE_URL: https://rawcdn.githack.com/owensto/helper/414020893caab650676425147dd345ce92a923cf/atlas_fleet_v1/live/index.html
+          BASE_URL: https://raw.githack.com/owensto/helper/414020893caab650676425147dd345ce92a923cf/atlas_fleet_v1/live/index.html
         run: python atlas_fleet_v1/verify_public.py
       - name: Record verified public release
         run: |
