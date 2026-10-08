@@ -1,0 +1,95 @@
+name: Publish recovered ATLAS Fleet review
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/atlas-fleet-publish-reviewed.yml'
+permissions:
+  contents: write
+  actions: read
+concurrency:
+  group: atlas-fleet-reviewed-release
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 18
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Recover the exact completed five-model build
+        uses: actions/download-artifact@v4
+        with:
+          artifact-ids: '11500503110'
+          run-id: '37660008715'
+          github-token: ${{ github.token }}
+          path: /tmp/atlas-fleet-recovered
+          merge-multiple: true
+      - name: Verify saved evidence and stage the review release
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import hashlib,json,shutil
+          base=Path('/tmp/atlas-fleet-recovered')
+          source=base/'home/runner/work/helper/helper/atlas_fleet_v1'
+          review=base/'tmp/atlasfleet/review/validation.json'
+          evidence=json.loads(review.read_text())
+          assert evidence['passed'] and len(evidence['tests'])==10
+          assert all(t['passed'] and not t['errors'] and not t['asset_failures'] for t in evidence['tests'])
+          native=json.loads((source/'site/native_report.json').read_text())
+          assert len(native)==5
+          for item in native:
+              p=source/'models'/item['native_master']
+              assert p.stat().st_size==item['native_bytes'] and p.read_bytes()[:7]==b'BLENDER'
+          dest=Path('atlas_fleet_v1/live')
+          dest.mkdir(parents=True,exist_ok=True)
+          shutil.copytree(source/'site',dest,dirs_exist_ok=True)
+          shutil.copy2(review,dest/'browser_validation.json')
+          html=(dest/'index.html').read_text().replace('FLEET STUDIO / 01','FLEET REVIEW / 01')
+          html=html.replace('<p>The naval models are original,','<p><strong>First fleet review release, not the completed production plan.</strong> ATLAS-N and ATLAS-W have first-pass exteriors and schematic interiors; photorealistic finishing, full interior walkthroughs and comprehensive mechanism checks remain open.</p><p>The naval models are original,')
+          (dest/'index.html').write_text(html)
+          state={'release':'ATLAS Fleet 01 - review release','source_run_id':37660008715,'source_artifact_id':11500503110,'source_commit':'40da015cbb0aebb71765406b7b3ecd151ae42f9f','five_native_models_recovered':True,'complete_production_plan_finished':False,'engineering_validated':False,'remaining':['ATLAS-N and ATLAS-W exterior refinement and material finishing','Complete furnished interiors and human-height walkthroughs','Complete recovery path and mechanism clearance checks','Pressure, loads, mass, stability and safe operation qualification'],'assets':{}}
+          for p in sorted((dest/'assets').glob('*.glb')):
+              data=p.read_bytes();assert data[:4]==b'glTF'
+              state['assets'][p.name]={'bytes':len(data),'sha256':hashlib.sha256(data).hexdigest()}
+          (dest/'release_state.json').write_text(json.dumps(state,indent=2))
+          shutil.copytree(source/'source',Path('/tmp/atlas-fleet-source'),dirs_exist_ok=True)
+          print(json.dumps(state,indent=2))
+          PY
+      - name: Publish the first review viewer without changing R10
+        id: release
+        run: |
+          git config user.name 'ATLAS release'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -f atlas_fleet_v1/live
+          git commit -m 'Publish first fleet review: Explorer, submarine, surface ship, Bay 25 and Chase 12'
+          git pull --rebase origin main
+          git push origin HEAD:main
+          echo "url=https://rawcdn.githack.com/owensto/helper/$(git rev-parse HEAD)/atlas_fleet_v1/live/index.html" >> "$GITHUB_OUTPUT"
+      - name: Install browser verification tools
+        run: |
+          python -m pip install -q playwright==1.55.0
+          python -m playwright install --with-deps chromium >/dev/null
+      - name: Test all five entries on the exact public URL
+        env:
+          FLEET_ROOT: ${{ github.workspace }}/atlas_fleet_v1
+          BASE_URL: ${{ steps.release.outputs.url }}
+          REVIEW_DIR: /tmp/atlasfleet/public
+        run: python /tmp/atlas-fleet-source/verify.py
+      - name: Record actual public verification
+        run: |
+          cp /tmp/atlasfleet/public/validation.json atlas_fleet_v1/release_validation.json
+          git add atlas_fleet_v1/release_validation.json
+          git commit -m 'Record ten desktop and phone-sized public fleet viewer checks'
+          git pull --rebase origin main
+          git push origin HEAD:main
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ATLAS-Fleet-01-Public-Review-Evidence
+          path: |
+            /tmp/atlasfleet/public/
+            atlas_fleet_v1/live/release_state.json
+          retention-days: 30
