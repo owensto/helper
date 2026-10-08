@@ -1,0 +1,67 @@
+[
+  {
+    "asset": "ATLAS_Bay_25",
+    "native_master": "ATLAS_Bay_25_Master.blend",
+    "opened_in_blender": true,
+    "exported_from_native": true,
+    "blender_version": "4.0.2",
+    "objects": 67,
+    "packed_images": 0,
+    "native_bytes": 12816264,
+    "glb_bytes": 2728264,
+    "animation_duration_target": 60,
+    "engineering_validated": false
+  },
+  {
+    "asset": "ATLAS_N",
+    "native_master": "ATLAS_N_Submarine_Master.blend",
+    "opened_in_blender": true,
+    "exported_from_native": true,
+    "blender_version": "4.0.2",
+    "objects": 55,
+    "packed_images": 0,
+    "native_bytes": 22015604,
+    "glb_bytes": 5308264,
+    "animation_duration_target": 60,
+    "engineering_validated": false
+  },
+  {
+    "asset": "ATLAS_W",
+    "native_master": "ATLAS_W_Surface_Ship_Master.blend",
+    "opened_in_blender": true,
+    "exported_from_native": true,
+    "blender_version": "4.0.2",
+    "objects": 89,
+    "packed_images": 0,
+    "native_bytes": 85498672,
+    "glb_bytes": 24844780,
+    "animation_duration_target": 60,
+    "engineering_validated": false
+  },
+  {
+    "asset": "ATLAS_Chase_12",
+    "native_master": "ATLAS_Chase_12_Master.blend",
+    "opened_in_blender": true,
+    "exported_from_native": true,
+    "blender_version": "4.0.2",
+    "objects": 15,
+    "packed_images": 3,
+    "native_bytes": 2306596,
+    "glb_bytes": 655384,
+    "animation_duration_target": 0,
+    "engineering_validated": false
+  },
+  {
+    "asset": "ATLAS_D",
+    "native_master": "ATLAS_D_Explorer_Master.blend",
+    "opened_in_blender": true,
+    "exported_from_native": true,
+    "blender_version": "4.0.2",
+    "objects": 356,
+    "packed_images": 5,
+    "native_bytes": 71918880,
+    "glb_bytes": 17467036,
+    "animation_duration_target": 72,
+    "engineering_validated": false
+  }
+]

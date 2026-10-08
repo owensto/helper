@@ -1,0 +1,45 @@
+{
+  "release": "ATLAS Fleet 01 - review release",
+  "source_run_id": 37660008715,
+  "source_artifact_id": 11500503110,
+  "source_commit": "40da015cbb0aebb71765406b7b3ecd151ae42f9f",
+  "five_native_models_recovered": true,
+  "complete_production_plan_finished": false,
+  "engineering_validated": false,
+  "remaining": [
+    "ATLAS-N and ATLAS-W exterior refinement and material finishing",
+    "Complete furnished interiors and human-height walkthroughs",
+    "Complete recovery path and mechanism clearance checks",
+    "Pressure, loads, mass, stability and safe operation qualification"
+  ],
+  "assets": {
+    "ATLAS_Bay_25.glb": {
+      "bytes": 2728264,
+      "sha256": "924a9fd90f1d58a608a7e35d475bd467bf1e9071dc8e2ddc799c5f0ff11f3892"
+    },
+    "ATLAS_Chase_12.glb": {
+      "bytes": 655384,
+      "sha256": "ae2514764935f1e8b4ce2eb55f25d34cb02fda0ec80366510e04f99abb697db8"
+    },
+    "ATLAS_D.glb": {
+      "bytes": 17467036,
+      "sha256": "5891e68e82427b0401599efbbd6abc7c4a6f4ce8cf3b5e90a59da6aef3f03fc1"
+    },
+    "ATLAS_N.glb": {
+      "bytes": 1306476,
+      "sha256": "46acab115db35ad36eaf02e48a7d508b1942c160ff7bae78a1fef7a3b1e28456"
+    },
+    "ATLAS_N_Interior.glb": {
+      "bytes": 4002780,
+      "sha256": "4b7a9e56aacbf22f3fc9936add2f918c8f799b8ce74e904fd0465890b0fb919f"
+    },
+    "ATLAS_W.glb": {
+      "bytes": 13089608,
+      "sha256": "4781f8c2944dfb15e7122cece8f2e9dcd04d7be4dda03698767fc4281ee9aa4c"
+    },
+    "ATLAS_W_Interior.glb": {
+      "bytes": 11756772,
+      "sha256": "891e9b5be448627648d41e76c7398e4165892adbca99abaf4016c84abd806fb4"
+    }
+  }
+}

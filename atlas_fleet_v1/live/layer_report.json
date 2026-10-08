@@ -1,0 +1,14 @@
+[
+  {
+    "asset": "ATLAS_N",
+    "exterior_bytes": 1306476,
+    "interior_bytes": 4002780,
+    "method": "split native-exported graph without remodeling or geometry simplification"
+  },
+  {
+    "asset": "ATLAS_W",
+    "exterior_bytes": 13089608,
+    "interior_bytes": 11756772,
+    "method": "split native-exported graph without remodeling or geometry simplification"
+  }
+]

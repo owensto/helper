@@ -1,0 +1,685 @@
+{
+  "url": "http://127.0.0.1:8811/index.html",
+  "engineering_validated": false,
+  "physical_phone_test": false,
+  "offline_injected": false,
+  "tests": [
+    {
+      "device": "desktop",
+      "asset": "d",
+      "http_status": 200,
+      "host_confirmation_required": false,
+      "ready_seconds": 2.25,
+      "initial": {
+        "asset": "d",
+        "progress": 0,
+        "rootPosition": [
+          0,
+          0,
+          -0.0
+        ],
+        "duration": 57.599998474121094,
+        "animations": 56,
+        "meshes": 261,
+        "drawCalls": 237,
+        "cutaway": false,
+        "engineeringValidated": false,
+        "top": [
+          -10,
+          0,
+          17.200000762939453
+        ],
+        "bay": [
+          -10,
+          0,
+          17.200000762939453
+        ],
+        "chase": [
+          -23,
+          0,
+          17
+        ]
+      },
+      "mid": {
+        "asset": "d",
+        "progress": 0.3,
+        "rootPosition": [
+          0,
+          0,
+          -0.0
+        ],
+        "duration": 57.599998474121094,
+        "animations": 56,
+        "meshes": 261,
+        "drawCalls": 93,
+        "cutaway": false,
+        "engineeringValidated": false,
+        "top": [
+          -49.79999923706055,
+          1.3370000123977661,
+          -2.5
+        ],
+        "bay": [
+          -49.79999923706055,
+          1.3370000123977661,
+          -2.5
+        ],
+        "chase": [
+          -33.70000076293945,
+          1.1699999570846558,
+          2.5
+        ]
+      },
+      "final": {
+        "asset": "d",
+        "progress": 1,
+        "rootPosition": [
+          0,
+          -26,
+          -0.0
+        ],
+        "duration": 57.599998474121094,
+        "animations": 56,
+        "meshes": 261,
+        "drawCalls": 237,
+        "cutaway": false,
+        "engineeringValidated": false,
+        "top": [
+          -33.70000076293945,
+          -24.662999987602234,
+          -2.5
+        ],
+        "bay": [
+          -33.70000076293945,
+          -24.662999987602234,
+          -2.5
+        ],
+        "chase": [
+          -33.70000076293945,
+          -24.830000042915344,
+          2.5
+        ]
+      },
+      "errors": [],
+      "asset_failures": [],
+      "passed": true
+    },
+    {
+      "device": "desktop",
+      "asset": "n",
+      "http_status": 200,
+      "host_confirmation_required": false,
+      "ready_seconds": 0.85,
+      "initial": {
+        "asset": "n",
+        "progress": 0,
+        "rootPosition": [
+          0,
+          -2,
+          -0.0
+        ],
+        "duration": 48,
+        "animations": 8,
+        "meshes": 26,
+        "drawCalls": 27,
+        "cutaway": false,
+        "engineeringValidated": false,
+        "top": null,
+        "bay": null,
+        "chase": null
+      },
+      "mid": {
+        "asset": "n",
+        "progress": 0.3,
+        "rootPosition": [
+          0,
+          -2,
+          -0.0
+        ],
+        "duration": 48,
+        "animations": 8,
+        "meshes": 34,
+        "drawCalls": 27,
+        "cutaway": false,
+        "engineeringValidated": false,
+        "top": null,
+        "bay": null,
+        "chase": null
+      },
+      "final": {
+        "asset": "n",
+        "progress": 1,
+        "rootPosition": [
+          0,
+          -20,
+          -0.0
+        ],
+        "duration": 48,
+        "animations": 8,
+        "meshes": 34,
+        "drawCalls": 27,
+        "cutaway": false,
+        "engineeringValidated": false,
+        "top": null,
+        "bay": null,
+        "chase": null
+      },
+      "errors": [],
+      "asset_failures": [],
+      "passed": true
+    },
+    {
+      "device": "desktop",
+      "asset": "w",
+      "http_status": 200,
+      "host_confirmation_required": false,
+      "ready_seconds": 0.89,
+      "initial": {
+        "asset": "w",
+        "progress": 0,
+        "rootPosition": [
+          0,
+          0,
+          0
+        ],
+        "duration": 48,
+        "animations": 26,
+        "meshes": 47,
+        "drawCalls": 48,
+        "cutaway": false,
+        "engineeringValidated": false,
+        "top": null,
+        "bay": null,
+        "chase": null
+      },
+      "mid": {
+        "asset": "w",
+        "progress": 0.3,
+        "rootPosition": [
+          0,
+          0,
+          0
+        ],
+        "duration": 48,
+        "animations": 26,
+        "meshes": 55,
+        "drawCalls": 55,
+        "cutaway": false,
+        "engineeringValidated": false,
+        "top": null,
+        "bay": null,
+        "chase": null
+      },
+      "final": {
+        "asset": "w",
+        "progress": 1,
+        "rootPosition": [
+          0,
+          0,
+          0
+        ],
+        "duration": 48,
+        "animations": 26,
+        "meshes": 55,
+        "drawCalls": 48,
+        "cutaway": false,
+        "engineeringValidated": false,
+        "top": null,
+        "bay": null,
+        "chase": null
+      },
+      "errors": [],
+      "asset_failures": [],
+      "passed": true
+    },
+    {
+      "device": "desktop",
+      "asset": "bay",
+      "http_status": 200,
+      "host_confirmation_required": false,
+      "ready_seconds": 0.83,
+      "initial": {
+        "asset": "bay",
+        "progress": 0,
+        "rootPosition": [
+          0,
+          0,
+          0
+        ],
+        "duration": 48,
+        "animations": 9,
+        "meshes": 44,
+        "drawCalls": 45,
+        "cutaway": false,
+        "engineeringValidated": false,
+        "top": [
+          0,
+          0,
+          0
+        ],
+        "bay": null,
+        "chase": null
+      },
+      "mid": {
+        "asset": "bay",
+        "progress": 0.3,
+        "rootPosition": [
+          0,
+          0,
+          0
+        ],
+        "duration": 48,
+        "animations": 9,
+        "meshes": 44,
+        "drawCalls": 45,
+        "cutaway": false,
+        "engineeringValidated": false,
+        "top": [
+          0,
+          0,
+          0
+        ],
+        "bay": null,
+        "chase": null
+      },
+      "final": {
+        "asset": "bay",
+        "progress": 1,
+        "rootPosition": [
+          0,
+          0,
+          0
+        ],
+        "duration": 48,
+        "animations": 9,
+        "meshes": 44,
+        "drawCalls": 45,
+        "cutaway": false,
+        "engineeringValidated": false,
+        "top": [
+          0,
+          0,
+          0
+        ],
+        "bay": null,
+        "chase": null
+      },
+      "errors": [],
+      "asset_failures": [],
+      "passed": true
+    },
+    {
+      "device": "desktop",
+      "asset": "chase",
+      "http_status": 200,
+      "host_confirmation_required": false,
+      "ready_seconds": 1.24,
+      "initial": {
+        "asset": "chase",
+        "progress": 0,
+        "rootPosition": [
+          0,
+          0,
+          0
+        ],
+        "duration": 60,
+        "animations": 0,
+        "meshes": 9,
+        "drawCalls": 10,
+        "cutaway": false,
+        "engineeringValidated": false,
+        "top": null,
+        "bay": null,
+        "chase": [
+          0,
+          0,
+          0
+        ]
+      },
+      "mid": null,
+      "final": null,
+      "errors": [],
+      "asset_failures": [],
+      "passed": true
+    },
+    {
+      "device": "phone",
+      "asset": "d",
+      "http_status": 200,
+      "host_confirmation_required": false,
+      "ready_seconds": 1.82,
+      "initial": {
+        "asset": "d",
+        "progress": 0,
+        "rootPosition": [
+          0,
+          0,
+          -0.0
+        ],
+        "duration": 57.599998474121094,
+        "animations": 56,
+        "meshes": 261,
+        "drawCalls": 237,
+        "cutaway": false,
+        "engineeringValidated": false,
+        "top": [
+          -10,
+          0,
+          17.200000762939453
+        ],
+        "bay": [
+          -10,
+          0,
+          17.200000762939453
+        ],
+        "chase": [
+          -23,
+          0,
+          17
+        ]
+      },
+      "mid": {
+        "asset": "d",
+        "progress": 0.3,
+        "rootPosition": [
+          0,
+          0,
+          -0.0
+        ],
+        "duration": 57.599998474121094,
+        "animations": 56,
+        "meshes": 261,
+        "drawCalls": 87,
+        "cutaway": false,
+        "engineeringValidated": false,
+        "top": [
+          -49.79999923706055,
+          1.3370000123977661,
+          -2.5
+        ],
+        "bay": [
+          -49.79999923706055,
+          1.3370000123977661,
+          -2.5
+        ],
+        "chase": [
+          -33.70000076293945,
+          1.1699999570846558,
+          2.5
+        ]
+      },
+      "final": {
+        "asset": "d",
+        "progress": 1,
+        "rootPosition": [
+          0,
+          -26,
+          -0.0
+        ],
+        "duration": 57.599998474121094,
+        "animations": 56,
+        "meshes": 261,
+        "drawCalls": 237,
+        "cutaway": false,
+        "engineeringValidated": false,
+        "top": [
+          -33.70000076293945,
+          -24.662999987602234,
+          -2.5
+        ],
+        "bay": [
+          -33.70000076293945,
+          -24.662999987602234,
+          -2.5
+        ],
+        "chase": [
+          -33.70000076293945,
+          -24.830000042915344,
+          2.5
+        ]
+      },
+      "errors": [],
+      "asset_failures": [],
+      "passed": true
+    },
+    {
+      "device": "phone",
+      "asset": "n",
+      "http_status": 200,
+      "host_confirmation_required": false,
+      "ready_seconds": 0.78,
+      "initial": {
+        "asset": "n",
+        "progress": 0,
+        "rootPosition": [
+          0,
+          -2,
+          -0.0
+        ],
+        "duration": 48,
+        "animations": 8,
+        "meshes": 26,
+        "drawCalls": 27,
+        "cutaway": false,
+        "engineeringValidated": false,
+        "top": null,
+        "bay": null,
+        "chase": null
+      },
+      "mid": {
+        "asset": "n",
+        "progress": 0.3,
+        "rootPosition": [
+          0,
+          -2,
+          -0.0
+        ],
+        "duration": 48,
+        "animations": 8,
+        "meshes": 34,
+        "drawCalls": 23,
+        "cutaway": false,
+        "engineeringValidated": false,
+        "top": null,
+        "bay": null,
+        "chase": null
+      },
+      "final": {
+        "asset": "n",
+        "progress": 1,
+        "rootPosition": [
+          0,
+          -20,
+          -0.0
+        ],
+        "duration": 48,
+        "animations": 8,
+        "meshes": 34,
+        "drawCalls": 27,
+        "cutaway": false,
+        "engineeringValidated": false,
+        "top": null,
+        "bay": null,
+        "chase": null
+      },
+      "errors": [],
+      "asset_failures": [],
+      "passed": true
+    },
+    {
+      "device": "phone",
+      "asset": "w",
+      "http_status": 200,
+      "host_confirmation_required": false,
+      "ready_seconds": 0.83,
+      "initial": {
+        "asset": "w",
+        "progress": 0,
+        "rootPosition": [
+          0,
+          0,
+          0
+        ],
+        "duration": 48,
+        "animations": 26,
+        "meshes": 47,
+        "drawCalls": 48,
+        "cutaway": false,
+        "engineeringValidated": false,
+        "top": null,
+        "bay": null,
+        "chase": null
+      },
+      "mid": {
+        "asset": "w",
+        "progress": 0.3,
+        "rootPosition": [
+          0,
+          0,
+          0
+        ],
+        "duration": 48,
+        "animations": 26,
+        "meshes": 55,
+        "drawCalls": 49,
+        "cutaway": false,
+        "engineeringValidated": false,
+        "top": null,
+        "bay": null,
+        "chase": null
+      },
+      "final": {
+        "asset": "w",
+        "progress": 1,
+        "rootPosition": [
+          0,
+          0,
+          0
+        ],
+        "duration": 48,
+        "animations": 26,
+        "meshes": 55,
+        "drawCalls": 48,
+        "cutaway": false,
+        "engineeringValidated": false,
+        "top": null,
+        "bay": null,
+        "chase": null
+      },
+      "errors": [],
+      "asset_failures": [],
+      "passed": true
+    },
+    {
+      "device": "phone",
+      "asset": "bay",
+      "http_status": 200,
+      "host_confirmation_required": false,
+      "ready_seconds": 0.81,
+      "initial": {
+        "asset": "bay",
+        "progress": 0,
+        "rootPosition": [
+          0,
+          0,
+          0
+        ],
+        "duration": 48,
+        "animations": 9,
+        "meshes": 44,
+        "drawCalls": 45,
+        "cutaway": false,
+        "engineeringValidated": false,
+        "top": [
+          0,
+          0,
+          0
+        ],
+        "bay": null,
+        "chase": null
+      },
+      "mid": {
+        "asset": "bay",
+        "progress": 0.3,
+        "rootPosition": [
+          0,
+          0,
+          0
+        ],
+        "duration": 48,
+        "animations": 9,
+        "meshes": 44,
+        "drawCalls": 42,
+        "cutaway": false,
+        "engineeringValidated": false,
+        "top": [
+          0,
+          0,
+          0
+        ],
+        "bay": null,
+        "chase": null
+      },
+      "final": {
+        "asset": "bay",
+        "progress": 1,
+        "rootPosition": [
+          0,
+          0,
+          0
+        ],
+        "duration": 48,
+        "animations": 9,
+        "meshes": 44,
+        "drawCalls": 45,
+        "cutaway": false,
+        "engineeringValidated": false,
+        "top": [
+          0,
+          0,
+          0
+        ],
+        "bay": null,
+        "chase": null
+      },
+      "errors": [],
+      "asset_failures": [],
+      "passed": true
+    },
+    {
+      "device": "phone",
+      "asset": "chase",
+      "http_status": 200,
+      "host_confirmation_required": false,
+      "ready_seconds": 1.25,
+      "initial": {
+        "asset": "chase",
+        "progress": 0,
+        "rootPosition": [
+          0,
+          0,
+          0
+        ],
+        "duration": 60,
+        "animations": 0,
+        "meshes": 9,
+        "drawCalls": 10,
+        "cutaway": false,
+        "engineeringValidated": false,
+        "top": null,
+        "bay": null,
+        "chase": [
+          0,
+          0,
+          0
+        ]
+      },
+      "mid": null,
+      "final": null,
+      "errors": [],
+      "asset_failures": [],
+      "passed": true
+    }
+  ],
+  "passed": true
+}

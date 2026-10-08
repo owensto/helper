@@ -1,0 +1,71 @@
+{
+  "release": "ATLAS Fleet 01",
+  "date": "2026-10-07",
+  "source_r10_unchanged": true,
+  "assets": [
+    "ATLAS_D",
+    "ATLAS_N",
+    "ATLAS_W",
+    "ATLAS_Bay_25",
+    "ATLAS_Chase_12"
+  ],
+  "nominal_dimensions_m": {
+    "D": [
+      82.9,
+      14.2
+    ],
+    "N": [
+      80,
+      9
+    ],
+    "W": [
+      125,
+      18
+    ],
+    "Bay_hull": [
+      7.5,
+      2.6
+    ]
+  },
+  "fishing_tender": {
+    "fixed_t_top": true,
+    "t_top_not_scaled_or_removed": true,
+    "outboard_included": true,
+    "rods_stow_by_rigid_rotation": true,
+    "secured_full_mesh_bounds_m": [
+      [
+        -4.801321944167549,
+        -0.49998828768730164,
+        -1.3519929647445679
+      ],
+      [
+        3.7917354106903076,
+        2.8761608600616455,
+        1.3519929647445679
+      ]
+    ],
+    "secured_full_mesh_dimensions_m": [
+      8.593057354857857,
+      3.376149147748947,
+      2.7039859294891357
+    ],
+    "chosen_lift_m": 1.337,
+    "stored_craft_radial_gap_m": 0.2132588636681445,
+    "stored_carrier_radial_gap_m": 0.10696971360289398,
+    "combined_aft_gap_m": 1.6986772928929952,
+    "combined_forward_gap_m": 2.708265352249146,
+    "sampled_aligned_insertion_minimum_gap_m": 0.10696971360289398,
+    "samples": 81,
+    "geometric_barrel_containment_passed": true
+  },
+  "not_validated": [
+    "whole recovery path including outer styling apertures and closure sweeps",
+    "carrier contacts, structural loads, tolerances and wave motion",
+    "dry garage pressure resistance and surface opening freeboard",
+    "upper shell nesting against all installed services",
+    "whole vessel mass, stability, pressure rating, safe diving",
+    "naval combat, sensor or stealth performance"
+  ],
+  "engineering_validated": false,
+  "scope": "Visual models, selected geometric fit screen, original non-operational naval exterior representations"
+}
