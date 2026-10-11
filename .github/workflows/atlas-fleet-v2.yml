@@ -1,0 +1,86 @@
+name: ATLAS Fleet 02 visual and section review
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'atlas_fleet_v2/transport/**'
+      - 'atlas_fleet_v2/fixups.py'
+      - '.github/workflows/atlas-fleet-v2.yml'
+permissions:
+  contents: read
+concurrency:
+  group: atlas-fleet-v2-review
+  cancel-in-progress: true
+jobs:
+  review:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Restore original generators and checked refinement source
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import base64,lzma,json,hashlib,shutil
+          old=Path('atlas_fleet_v1');root=Path('atlas_fleet_v2')
+          data=base64.b64decode(''.join((old/'transport'/f'part{i}.b64').read_text().strip() for i in range(7)),validate=True)
+          assert hashlib.sha256(data).hexdigest()=='699a9ea5fe9fccc73222cd089e7bea2c121ad1a1efa6aff88cbf36e38b400703'
+          for rel,text in json.loads(lzma.decompress(data)).items():
+              if rel.startswith('source/'):
+                  dest=root/rel;dest.parent.mkdir(parents=True,exist_ok=True);dest.write_text(text)
+          (root/'site').mkdir(exist_ok=True)
+          for f in (old/'live').iterdir():
+              if f.is_file():shutil.copy2(f,root/'site'/f.name)
+          (root/'base/assets').mkdir(parents=True,exist_ok=True)
+          for name in ['ATLAS_D.glb','ATLAS_Chase_12.glb']:
+              shutil.copy2(old/'live/assets'/name,root/'base/assets'/name)
+          text=''.join((root/'transport'/f'part{i}.b64').read_text().strip() for i in range(3))
+          data=base64.b64decode(text,validate=True)
+          assert hashlib.sha256(data).hexdigest()=='9933782288a29bb6d4af9a613f9e7dbe9a56f50b988c751aa434a0e54020d1c6','New bundle checksum mismatch'
+          files=json.loads(lzma.decompress(data))
+          for rel,text in files.items():
+              assert rel.startswith(('source/','site/')) and '..' not in Path(rel).parts
+              dest=root/rel;dest.parent.mkdir(parents=True,exist_ok=True);dest.write_text(text)
+          print('Verified refinement files:',list(files))
+          PY
+          if [ -f atlas_fleet_v2/fixups.py ]; then python atlas_fleet_v2/fixups.py; fi
+      - name: Build new Bay 25 and refined fleet geometry
+        env:
+          FLEET_ROOT: ${{ github.workspace }}/atlas_fleet_v2
+        run: |
+          python -m pip install -q numpy==2.3.5 trimesh==4.11.1 scipy networkx shapely matplotlib pillow playwright==1.55.0
+          python atlas_fleet_v2/source/polish.py
+          python atlas_fleet_v2/source/patch_viewer.py
+      - name: Export five editable Blender masters
+        env:
+          FLEET_ROOT: ${{ github.workspace }}/atlas_fleet_v2
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq blender python3-numpy libegl1 >/dev/null
+          env -u PYTHONHOME -u PYTHONPATH -u LD_LIBRARY_PATH LIBGL_ALWAYS_SOFTWARE=1 /usr/bin/blender -b --python-exit-code 1 --python atlas_fleet_v2/source/native.py
+          python atlas_fleet_v2/source/split_interiors.py
+          test "$(find atlas_fleet_v2/models -name '*.blend' | wc -l)" -eq 5
+      - name: Install review browser
+        run: python -m playwright install --with-deps chromium >/dev/null
+      - name: Test actual models and first-click sectional cutaways
+        env:
+          FLEET_ROOT: ${{ github.workspace }}/atlas_fleet_v2
+          REVIEW_DIR: /tmp/fleet02/review
+        run: |
+          mkdir -p /tmp/fleet02/review
+          python -m http.server 8822 --bind 127.0.0.1 --directory atlas_fleet_v2/site >/tmp/fleet02/http.log 2>&1 &
+          sleep 2
+          python atlas_fleet_v2/source/test_v2.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ATLAS-Fleet-02-Models-and-Review
+          path: |
+            /tmp/fleet02/
+            atlas_fleet_v2/site/
+            atlas_fleet_v2/source/
+            atlas_fleet_v2/models/
+          retention-days: 30
