@@ -1,0 +1,110 @@
+name: Publish reviewed ATLAS Atelier 02
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/atlas-fleet-atelier-publish-reviewed.yml'
+permissions:
+  actions: read
+  contents: write
+concurrency:
+  group: atlas-atelier-reviewed-release
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - uses: actions/download-artifact@v4
+        with:
+          artifact-ids: '11710367954'
+          run-id: '38161103297'
+          github-token: ${{ github.token }}
+          repository: owensto/helper
+          path: /tmp/atelier-reviewed
+          merge-multiple: true
+      - name: Preserve reviewed models and finish public camera framing
+        run: |
+          python - <<'PY'
+          import json,shutil,hashlib
+          from pathlib import Path
+          base=Path('/tmp/atelier-reviewed')
+          src=base/'home/runner/work/helper/helper/atlas_fleet_atelier_02'
+          evidence=json.loads((base/'tmp/atelier/review/validation.json').read_text())
+          assert evidence['passed'] and len(evidence['tests'])==10
+          assert all(x['passed'] and not x['errors'] and not x['asset_failures'] for x in evidence['tests'])
+          masters=list((src/'models').glob('*.blend'))
+          assert len(masters)==5 and all(p.read_bytes()[:7]==b'BLENDER' for p in masters)
+          root=Path('atlas_fleet_atelier_02');dest=root/'live'
+          shutil.copytree(src/'site',dest,dirs_exist_ok=True)
+          shutil.copytree(src/'source',root/'source',dirs_exist_ok=True)
+          for p in src.glob('*.py'):shutil.copy2(p,root/p.name)
+          p=dest/'viewer.js';s=p.read_text()
+          pairs=[("'Interior':[[0,-1,0],[58,9,14],[.08,.13,1.4]]","'Interior':[[0,1.6,0],[86,17,16],[.08,.13,1.4]]"),("'Interior':[[0,4,0],[91,13,17],[.07,.12,1.4]]","'Interior':[[0,9,0],[134,36,30],[.07,.12,1.4]]"),("mobile()?0:-80,mobile()?-14:10","mobile()?0:(cut?0:-80),mobile()?-14:10")]
+          for old,new in pairs:
+              assert s.count(old)==1,old
+              s=s.replace(old,new)
+          p.write_text(s)
+          report=json.loads((dest/'release_report.json').read_text())
+          report['release_completion_scope']='Cutaway repair, Bay 25 visual refinement, presentation improvements, and limited ATLAS-D arrangement audit. Not full production plan completion.'
+          report['cutaway_camera']='Full-vessel framing for initial ATLAS-N and ATLAS-W section view; separate close-up presets remain.'
+          (dest/'release_report.json').write_text(json.dumps(report,indent=2))
+          state={'source_review_run':38161103297,'source_artifact':11710367954,'source_build_passed':True,'public_verification_pending':True,'complete_production_plan_finished':False,'engineering_validated':False,'assets':{}}
+          for p in sorted((dest/'assets').glob('*.glb')):
+              data=p.read_bytes();assert data[:4]==b'glTF'
+              state['assets'][p.name]={'bytes':len(data),'sha256':hashlib.sha256(data).hexdigest()}
+          (dest/'release_state.json').write_text(json.dumps(state,indent=2))
+          (dest/'browser_validation.json').write_text(json.dumps(evidence,indent=2))
+          # Keep the assembly checks unchanged; copied models are exactly the reviewed binaries.
+          print('Prepared',len(masters),'native masters and',len(state['assets']),'GLB layers')
+          PY
+      - name: Publish a separate release without replacing Fleet 01
+        id: release
+        run: |
+          git config user.name 'ATLAS release'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -f atlas_fleet_atelier_02/live atlas_fleet_atelier_02/source atlas_fleet_atelier_02/*.py
+          git commit -m 'Publish Atelier 02 visual upgrade, direct section loading and full-vessel cutaway cameras'
+          git pull --rebase --autostash origin main
+          git push origin HEAD:main
+          echo "url=https://rawcdn.githack.com/owensto/helper/$(git rev-parse HEAD)/atlas_fleet_atelier_02/live/index.html" >> "$GITHUB_OUTPUT"
+      - name: Install browser verification tools
+        run: |
+          python -m pip install -q playwright==1.55.0
+          python -m playwright install --with-deps chromium >/dev/null
+      - name: Verify public models and cutaway without using interior presets first
+        env:
+          BASE_URL: ${{ steps.release.outputs.url }}
+          REVIEW_DIR: /tmp/atelier-public
+        run: |
+          python atlas_fleet_atelier_02/verify.py
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          r=json.loads(Path('/tmp/atelier-public/validation.json').read_text())
+          assert r['passed'] and len(r['tests'])==10
+          assert all(t['passed'] and not t['errors'] and not t['asset_failures'] for t in r['tests'])
+          for t in r['tests']:
+              if t['asset'] in ['n','w']:
+                  assert t['cutaway']['visibleInteriorMeshes']>5 and t['cutaway']['clippedExteriorMeshes']>5 and t['cutaway_restores_exterior']
+          print('All ten public-entry checks passed. These are software tests, not vessel qualification.')
+          PY
+      - name: Record actual public evidence
+        run: |
+          cp /tmp/atelier-public/validation.json atlas_fleet_atelier_02/online_validation.json
+          git add atlas_fleet_atelier_02/online_validation.json
+          git commit -m 'Record Atelier 02 public entry, cutaway and model-control verification'
+          git pull --rebase --autostash origin main
+          git push origin HEAD:main
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ATLAS-Atelier-02-Public-Release-Evidence
+          path: |
+            /tmp/atelier-public/
+            atlas_fleet_atelier_02/live/
+          retention-days: 30
