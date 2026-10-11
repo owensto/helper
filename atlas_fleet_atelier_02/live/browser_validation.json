@@ -1,0 +1,907 @@
+{
+  "url": "http://127.0.0.1:8812/index.html",
+  "passed": true,
+  "engineering_validated": false,
+  "physical_phone_test": false,
+  "offline_injected": false,
+  "tests": [
+    {
+      "device": "desktop",
+      "asset": "bay",
+      "passed": true,
+      "host_confirmation_required": false,
+      "http_status": 200,
+      "ready_seconds": 1.14,
+      "initial": {
+        "asset": "bay",
+        "progress": 0,
+        "rootPosition": [
+          0,
+          0,
+          0
+        ],
+        "duration": 60,
+        "animations": 9,
+        "meshes": 57,
+        "drawCalls": 61,
+        "cutaway": false,
+        "visibleInteriorMeshes": 0,
+        "clippedExteriorMeshes": 0,
+        "interiorLoadState": "not-requested",
+        "sectionOffset": 0,
+        "sectionMode": "side",
+        "engineeringValidated": false,
+        "top": [
+          0,
+          0,
+          0
+        ],
+        "bay": null,
+        "chase": null
+      },
+      "ready_pose": {
+        "asset": "bay",
+        "progress": 0.8,
+        "rootPosition": [
+          0,
+          0,
+          0
+        ],
+        "duration": 60,
+        "animations": 9,
+        "meshes": 57,
+        "drawCalls": 59,
+        "cutaway": false,
+        "visibleInteriorMeshes": 0,
+        "clippedExteriorMeshes": 0,
+        "interiorLoadState": "not-requested",
+        "sectionOffset": 0,
+        "sectionMode": "side",
+        "engineeringValidated": false,
+        "top": [
+          0,
+          0,
+          0
+        ],
+        "bay": null,
+        "chase": null
+      },
+      "final": {
+        "asset": "bay",
+        "progress": 1,
+        "rootPosition": [
+          0,
+          0,
+          0
+        ],
+        "duration": 60,
+        "animations": 9,
+        "meshes": 57,
+        "drawCalls": 61,
+        "cutaway": false,
+        "visibleInteriorMeshes": 0,
+        "clippedExteriorMeshes": 0,
+        "interiorLoadState": "not-requested",
+        "sectionOffset": 0,
+        "sectionMode": "side",
+        "engineeringValidated": false,
+        "top": [
+          0,
+          0,
+          0
+        ],
+        "bay": null,
+        "chase": null
+      },
+      "errors": [],
+      "asset_failures": []
+    },
+    {
+      "device": "desktop",
+      "asset": "n",
+      "passed": true,
+      "host_confirmation_required": false,
+      "http_status": 200,
+      "ready_seconds": 0.51,
+      "initial": {
+        "asset": "n",
+        "progress": 0,
+        "rootPosition": [
+          0,
+          -2,
+          -0.0
+        ],
+        "duration": 60,
+        "animations": 8,
+        "meshes": 28,
+        "drawCalls": 29,
+        "cutaway": false,
+        "visibleInteriorMeshes": 0,
+        "clippedExteriorMeshes": 0,
+        "interiorLoadState": "not-requested",
+        "sectionOffset": 0,
+        "sectionMode": "side",
+        "engineeringValidated": false,
+        "top": null,
+        "bay": null,
+        "chase": null
+      },
+      "cutaway": {
+        "asset": "n",
+        "progress": 0,
+        "rootPosition": [
+          0,
+          -2,
+          -0.0
+        ],
+        "duration": 60,
+        "animations": 8,
+        "meshes": 39,
+        "drawCalls": 39,
+        "cutaway": true,
+        "visibleInteriorMeshes": 11,
+        "clippedExteriorMeshes": 28,
+        "interiorLoadState": "loaded",
+        "sectionOffset": 0,
+        "sectionMode": "side",
+        "engineeringValidated": false,
+        "top": null,
+        "bay": null,
+        "chase": null
+      },
+      "cutaway_restores_exterior": true,
+      "ready_pose": {
+        "asset": "n",
+        "progress": 0.8,
+        "rootPosition": [
+          0,
+          -19.51944923400879,
+          -0.0
+        ],
+        "duration": 60,
+        "animations": 8,
+        "meshes": 39,
+        "drawCalls": 25,
+        "cutaway": false,
+        "visibleInteriorMeshes": 0,
+        "clippedExteriorMeshes": 0,
+        "interiorLoadState": "loaded",
+        "sectionOffset": 0.45,
+        "sectionMode": "side",
+        "engineeringValidated": false,
+        "top": null,
+        "bay": null,
+        "chase": null
+      },
+      "final": {
+        "asset": "n",
+        "progress": 1,
+        "rootPosition": [
+          0,
+          -20,
+          -0.0
+        ],
+        "duration": 60,
+        "animations": 8,
+        "meshes": 39,
+        "drawCalls": 29,
+        "cutaway": false,
+        "visibleInteriorMeshes": 0,
+        "clippedExteriorMeshes": 0,
+        "interiorLoadState": "loaded",
+        "sectionOffset": 0.45,
+        "sectionMode": "side",
+        "engineeringValidated": false,
+        "top": null,
+        "bay": null,
+        "chase": null
+      },
+      "errors": [],
+      "asset_failures": []
+    },
+    {
+      "device": "desktop",
+      "asset": "w",
+      "passed": true,
+      "host_confirmation_required": false,
+      "http_status": 200,
+      "ready_seconds": 1.11,
+      "initial": {
+        "asset": "w",
+        "progress": 0,
+        "rootPosition": [
+          0,
+          0,
+          0
+        ],
+        "duration": 60,
+        "animations": 26,
+        "meshes": 55,
+        "drawCalls": 58,
+        "cutaway": false,
+        "visibleInteriorMeshes": 0,
+        "clippedExteriorMeshes": 0,
+        "interiorLoadState": "not-requested",
+        "sectionOffset": 0,
+        "sectionMode": "side",
+        "engineeringValidated": false,
+        "top": null,
+        "bay": null,
+        "chase": null
+      },
+      "cutaway": {
+        "asset": "w",
+        "progress": 0,
+        "rootPosition": [
+          0,
+          0,
+          0
+        ],
+        "duration": 60,
+        "animations": 26,
+        "meshes": 66,
+        "drawCalls": 68,
+        "cutaway": true,
+        "visibleInteriorMeshes": 11,
+        "clippedExteriorMeshes": 55,
+        "interiorLoadState": "loaded",
+        "sectionOffset": 0,
+        "sectionMode": "side",
+        "engineeringValidated": false,
+        "top": null,
+        "bay": null,
+        "chase": null
+      },
+      "cutaway_restores_exterior": true,
+      "ready_pose": {
+        "asset": "w",
+        "progress": 0.8,
+        "rootPosition": [
+          0,
+          0,
+          0
+        ],
+        "duration": 60,
+        "animations": 26,
+        "meshes": 66,
+        "drawCalls": 67,
+        "cutaway": false,
+        "visibleInteriorMeshes": 0,
+        "clippedExteriorMeshes": 0,
+        "interiorLoadState": "loaded",
+        "sectionOffset": 0.45,
+        "sectionMode": "side",
+        "engineeringValidated": false,
+        "top": null,
+        "bay": null,
+        "chase": null
+      },
+      "final": {
+        "asset": "w",
+        "progress": 1,
+        "rootPosition": [
+          0,
+          0,
+          0
+        ],
+        "duration": 60,
+        "animations": 26,
+        "meshes": 66,
+        "drawCalls": 58,
+        "cutaway": false,
+        "visibleInteriorMeshes": 0,
+        "clippedExteriorMeshes": 0,
+        "interiorLoadState": "loaded",
+        "sectionOffset": 0.45,
+        "sectionMode": "side",
+        "engineeringValidated": false,
+        "top": null,
+        "bay": null,
+        "chase": null
+      },
+      "errors": [],
+      "asset_failures": []
+    },
+    {
+      "device": "desktop",
+      "asset": "d",
+      "passed": true,
+      "host_confirmation_required": false,
+      "http_status": 200,
+      "ready_seconds": 2.21,
+      "initial": {
+        "asset": "d",
+        "progress": 0,
+        "rootPosition": [
+          0,
+          0,
+          -0.0
+        ],
+        "duration": 72,
+        "animations": 56,
+        "meshes": 274,
+        "drawCalls": 253,
+        "cutaway": false,
+        "visibleInteriorMeshes": 0,
+        "clippedExteriorMeshes": 0,
+        "interiorLoadState": "not-requested",
+        "sectionOffset": 0,
+        "sectionMode": "side",
+        "engineeringValidated": false,
+        "top": [
+          -10,
+          0,
+          17.200000762939453
+        ],
+        "bay": [
+          -10,
+          0,
+          17.200000762939453
+        ],
+        "chase": [
+          -23,
+          0,
+          17
+        ]
+      },
+      "ready_pose": {
+        "asset": "d",
+        "progress": 0.8,
+        "rootPosition": [
+          0,
+          0,
+          -0.0
+        ],
+        "duration": 72,
+        "animations": 56,
+        "meshes": 274,
+        "drawCalls": 166,
+        "cutaway": false,
+        "visibleInteriorMeshes": 0,
+        "clippedExteriorMeshes": 0,
+        "interiorLoadState": "not-requested",
+        "sectionOffset": 0,
+        "sectionMode": "side",
+        "engineeringValidated": false,
+        "top": [
+          -33.70000076293945,
+          1.340000033378601,
+          -2.5
+        ],
+        "bay": [
+          -33.70000076293945,
+          1.340000033378601,
+          -2.5
+        ],
+        "chase": [
+          -33.70000076293945,
+          1.1699999570846558,
+          2.5
+        ]
+      },
+      "final": {
+        "asset": "d",
+        "progress": 1,
+        "rootPosition": [
+          0,
+          -26,
+          -0.0
+        ],
+        "duration": 72,
+        "animations": 56,
+        "meshes": 274,
+        "drawCalls": 253,
+        "cutaway": false,
+        "visibleInteriorMeshes": 0,
+        "clippedExteriorMeshes": 0,
+        "interiorLoadState": "not-requested",
+        "sectionOffset": 0,
+        "sectionMode": "side",
+        "engineeringValidated": false,
+        "top": [
+          -33.70000076293945,
+          -24.6599999666214,
+          -2.5
+        ],
+        "bay": [
+          -33.70000076293945,
+          -24.6599999666214,
+          -2.5
+        ],
+        "chase": [
+          -33.70000076293945,
+          -24.830000042915344,
+          2.5
+        ]
+      },
+      "errors": [],
+      "asset_failures": []
+    },
+    {
+      "device": "desktop",
+      "asset": "chase",
+      "passed": true,
+      "host_confirmation_required": false,
+      "http_status": 200,
+      "ready_seconds": 0.96,
+      "initial": {
+        "asset": "chase",
+        "progress": 0,
+        "rootPosition": [
+          0,
+          0,
+          0
+        ],
+        "duration": 60,
+        "animations": 0,
+        "meshes": 9,
+        "drawCalls": 10,
+        "cutaway": false,
+        "visibleInteriorMeshes": 0,
+        "clippedExteriorMeshes": 0,
+        "interiorLoadState": "not-requested",
+        "sectionOffset": 0,
+        "sectionMode": "side",
+        "engineeringValidated": false,
+        "top": null,
+        "bay": null,
+        "chase": [
+          0,
+          0,
+          0
+        ]
+      },
+      "errors": [],
+      "asset_failures": []
+    },
+    {
+      "device": "phone",
+      "asset": "bay",
+      "passed": true,
+      "host_confirmation_required": false,
+      "http_status": 200,
+      "ready_seconds": 0.96,
+      "initial": {
+        "asset": "bay",
+        "progress": 0,
+        "rootPosition": [
+          0,
+          0,
+          0
+        ],
+        "duration": 60,
+        "animations": 9,
+        "meshes": 57,
+        "drawCalls": 61,
+        "cutaway": false,
+        "visibleInteriorMeshes": 0,
+        "clippedExteriorMeshes": 0,
+        "interiorLoadState": "not-requested",
+        "sectionOffset": 0,
+        "sectionMode": "side",
+        "engineeringValidated": false,
+        "top": [
+          0,
+          0,
+          0
+        ],
+        "bay": null,
+        "chase": null
+      },
+      "ready_pose": {
+        "asset": "bay",
+        "progress": 0.8,
+        "rootPosition": [
+          0,
+          0,
+          0
+        ],
+        "duration": 60,
+        "animations": 9,
+        "meshes": 57,
+        "drawCalls": 59,
+        "cutaway": false,
+        "visibleInteriorMeshes": 0,
+        "clippedExteriorMeshes": 0,
+        "interiorLoadState": "not-requested",
+        "sectionOffset": 0,
+        "sectionMode": "side",
+        "engineeringValidated": false,
+        "top": [
+          0,
+          0,
+          0
+        ],
+        "bay": null,
+        "chase": null
+      },
+      "final": {
+        "asset": "bay",
+        "progress": 1,
+        "rootPosition": [
+          0,
+          0,
+          0
+        ],
+        "duration": 60,
+        "animations": 9,
+        "meshes": 57,
+        "drawCalls": 61,
+        "cutaway": false,
+        "visibleInteriorMeshes": 0,
+        "clippedExteriorMeshes": 0,
+        "interiorLoadState": "not-requested",
+        "sectionOffset": 0,
+        "sectionMode": "side",
+        "engineeringValidated": false,
+        "top": [
+          0,
+          0,
+          0
+        ],
+        "bay": null,
+        "chase": null
+      },
+      "errors": [],
+      "asset_failures": []
+    },
+    {
+      "device": "phone",
+      "asset": "n",
+      "passed": true,
+      "host_confirmation_required": false,
+      "http_status": 200,
+      "ready_seconds": 0.52,
+      "initial": {
+        "asset": "n",
+        "progress": 0,
+        "rootPosition": [
+          0,
+          -2,
+          -0.0
+        ],
+        "duration": 60,
+        "animations": 8,
+        "meshes": 28,
+        "drawCalls": 29,
+        "cutaway": false,
+        "visibleInteriorMeshes": 0,
+        "clippedExteriorMeshes": 0,
+        "interiorLoadState": "not-requested",
+        "sectionOffset": 0,
+        "sectionMode": "side",
+        "engineeringValidated": false,
+        "top": null,
+        "bay": null,
+        "chase": null
+      },
+      "cutaway": {
+        "asset": "n",
+        "progress": 0,
+        "rootPosition": [
+          0,
+          -2,
+          -0.0
+        ],
+        "duration": 60,
+        "animations": 8,
+        "meshes": 39,
+        "drawCalls": 37,
+        "cutaway": true,
+        "visibleInteriorMeshes": 11,
+        "clippedExteriorMeshes": 28,
+        "interiorLoadState": "loaded",
+        "sectionOffset": 0,
+        "sectionMode": "side",
+        "engineeringValidated": false,
+        "top": null,
+        "bay": null,
+        "chase": null
+      },
+      "cutaway_restores_exterior": true,
+      "ready_pose": {
+        "asset": "n",
+        "progress": 0.8,
+        "rootPosition": [
+          0,
+          -19.51944923400879,
+          -0.0
+        ],
+        "duration": 60,
+        "animations": 8,
+        "meshes": 39,
+        "drawCalls": 23,
+        "cutaway": false,
+        "visibleInteriorMeshes": 0,
+        "clippedExteriorMeshes": 0,
+        "interiorLoadState": "loaded",
+        "sectionOffset": 0.45,
+        "sectionMode": "side",
+        "engineeringValidated": false,
+        "top": null,
+        "bay": null,
+        "chase": null
+      },
+      "final": {
+        "asset": "n",
+        "progress": 1,
+        "rootPosition": [
+          0,
+          -20,
+          -0.0
+        ],
+        "duration": 60,
+        "animations": 8,
+        "meshes": 39,
+        "drawCalls": 29,
+        "cutaway": false,
+        "visibleInteriorMeshes": 0,
+        "clippedExteriorMeshes": 0,
+        "interiorLoadState": "loaded",
+        "sectionOffset": 0.45,
+        "sectionMode": "side",
+        "engineeringValidated": false,
+        "top": null,
+        "bay": null,
+        "chase": null
+      },
+      "errors": [],
+      "asset_failures": []
+    },
+    {
+      "device": "phone",
+      "asset": "w",
+      "passed": true,
+      "host_confirmation_required": false,
+      "http_status": 200,
+      "ready_seconds": 1.0,
+      "initial": {
+        "asset": "w",
+        "progress": 0,
+        "rootPosition": [
+          0,
+          0,
+          0
+        ],
+        "duration": 60,
+        "animations": 26,
+        "meshes": 55,
+        "drawCalls": 58,
+        "cutaway": false,
+        "visibleInteriorMeshes": 0,
+        "clippedExteriorMeshes": 0,
+        "interiorLoadState": "not-requested",
+        "sectionOffset": 0,
+        "sectionMode": "side",
+        "engineeringValidated": false,
+        "top": null,
+        "bay": null,
+        "chase": null
+      },
+      "cutaway": {
+        "asset": "w",
+        "progress": 0,
+        "rootPosition": [
+          0,
+          0,
+          0
+        ],
+        "duration": 60,
+        "animations": 26,
+        "meshes": 66,
+        "drawCalls": 62,
+        "cutaway": true,
+        "visibleInteriorMeshes": 11,
+        "clippedExteriorMeshes": 55,
+        "interiorLoadState": "loaded",
+        "sectionOffset": 0,
+        "sectionMode": "side",
+        "engineeringValidated": false,
+        "top": null,
+        "bay": null,
+        "chase": null
+      },
+      "cutaway_restores_exterior": true,
+      "ready_pose": {
+        "asset": "w",
+        "progress": 0.8,
+        "rootPosition": [
+          0,
+          0,
+          0
+        ],
+        "duration": 60,
+        "animations": 26,
+        "meshes": 66,
+        "drawCalls": 46,
+        "cutaway": false,
+        "visibleInteriorMeshes": 0,
+        "clippedExteriorMeshes": 0,
+        "interiorLoadState": "loaded",
+        "sectionOffset": 0.45,
+        "sectionMode": "side",
+        "engineeringValidated": false,
+        "top": null,
+        "bay": null,
+        "chase": null
+      },
+      "final": {
+        "asset": "w",
+        "progress": 1,
+        "rootPosition": [
+          0,
+          0,
+          0
+        ],
+        "duration": 60,
+        "animations": 26,
+        "meshes": 66,
+        "drawCalls": 58,
+        "cutaway": false,
+        "visibleInteriorMeshes": 0,
+        "clippedExteriorMeshes": 0,
+        "interiorLoadState": "loaded",
+        "sectionOffset": 0.45,
+        "sectionMode": "side",
+        "engineeringValidated": false,
+        "top": null,
+        "bay": null,
+        "chase": null
+      },
+      "errors": [],
+      "asset_failures": []
+    },
+    {
+      "device": "phone",
+      "asset": "d",
+      "passed": true,
+      "host_confirmation_required": false,
+      "http_status": 200,
+      "ready_seconds": 1.92,
+      "initial": {
+        "asset": "d",
+        "progress": 0,
+        "rootPosition": [
+          0,
+          0,
+          -0.0
+        ],
+        "duration": 72,
+        "animations": 56,
+        "meshes": 274,
+        "drawCalls": 253,
+        "cutaway": false,
+        "visibleInteriorMeshes": 0,
+        "clippedExteriorMeshes": 0,
+        "interiorLoadState": "not-requested",
+        "sectionOffset": 0,
+        "sectionMode": "side",
+        "engineeringValidated": false,
+        "top": [
+          -10,
+          0,
+          17.200000762939453
+        ],
+        "bay": [
+          -10,
+          0,
+          17.200000762939453
+        ],
+        "chase": [
+          -23,
+          0,
+          17
+        ]
+      },
+      "ready_pose": {
+        "asset": "d",
+        "progress": 0.8,
+        "rootPosition": [
+          0,
+          0,
+          -0.0
+        ],
+        "duration": 72,
+        "animations": 56,
+        "meshes": 274,
+        "drawCalls": 196,
+        "cutaway": false,
+        "visibleInteriorMeshes": 0,
+        "clippedExteriorMeshes": 0,
+        "interiorLoadState": "not-requested",
+        "sectionOffset": 0,
+        "sectionMode": "side",
+        "engineeringValidated": false,
+        "top": [
+          -33.70000076293945,
+          1.340000033378601,
+          -2.5
+        ],
+        "bay": [
+          -33.70000076293945,
+          1.340000033378601,
+          -2.5
+        ],
+        "chase": [
+          -33.70000076293945,
+          1.1699999570846558,
+          2.5
+        ]
+      },
+      "final": {
+        "asset": "d",
+        "progress": 1,
+        "rootPosition": [
+          0,
+          -26,
+          -0.0
+        ],
+        "duration": 72,
+        "animations": 56,
+        "meshes": 274,
+        "drawCalls": 253,
+        "cutaway": false,
+        "visibleInteriorMeshes": 0,
+        "clippedExteriorMeshes": 0,
+        "interiorLoadState": "not-requested",
+        "sectionOffset": 0,
+        "sectionMode": "side",
+        "engineeringValidated": false,
+        "top": [
+          -33.70000076293945,
+          -24.6599999666214,
+          -2.5
+        ],
+        "bay": [
+          -33.70000076293945,
+          -24.6599999666214,
+          -2.5
+        ],
+        "chase": [
+          -33.70000076293945,
+          -24.830000042915344,
+          2.5
+        ]
+      },
+      "errors": [],
+      "asset_failures": []
+    },
+    {
+      "device": "phone",
+      "asset": "chase",
+      "passed": true,
+      "host_confirmation_required": false,
+      "http_status": 200,
+      "ready_seconds": 0.96,
+      "initial": {
+        "asset": "chase",
+        "progress": 0,
+        "rootPosition": [
+          0,
+          0,
+          0
+        ],
+        "duration": 60,
+        "animations": 0,
+        "meshes": 9,
+        "drawCalls": 10,
+        "cutaway": false,
+        "visibleInteriorMeshes": 0,
+        "clippedExteriorMeshes": 0,
+        "interiorLoadState": "not-requested",
+        "sectionOffset": 0,
+        "sectionMode": "side",
+        "engineeringValidated": false,
+        "top": null,
+        "bay": null,
+        "chase": [
+          0,
+          0,
+          0
+        ]
+      },
+      "errors": [],
+      "asset_failures": []
+    }
+  ]
+}

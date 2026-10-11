@@ -1,0 +1,38 @@
+{
+  "source_review_run": 38161103297,
+  "source_artifact": 11710367954,
+  "source_build_passed": true,
+  "public_verification_pending": true,
+  "complete_production_plan_finished": false,
+  "engineering_validated": false,
+  "assets": {
+    "ATLAS_Bay_25.glb": {
+      "bytes": 3835068,
+      "sha256": "d74b1f56a09dafc7e603e74d91672ca3531c15e15d115023678f9548d9f82313"
+    },
+    "ATLAS_Chase_12.glb": {
+      "bytes": 655384,
+      "sha256": "ae2514764935f1e8b4ce2eb55f25d34cb02fda0ec80366510e04f99abb697db8"
+    },
+    "ATLAS_D.glb": {
+      "bytes": 18573784,
+      "sha256": "ee88a5826248b5c97bb13c95cdce85e71d717da58c5c6905412864f171acf6e1"
+    },
+    "ATLAS_N.glb": {
+      "bytes": 1482408,
+      "sha256": "0887994518aee300122a298c708742f0264d6263780d3e360f17c4474f2c39c1"
+    },
+    "ATLAS_N_Interior.glb": {
+      "bytes": 4852572,
+      "sha256": "897bf10cafe217f06416e854da7976e4824fa0681a50559c1c6f9d2592159961"
+    },
+    "ATLAS_W.glb": {
+      "bytes": 6244704,
+      "sha256": "cfce666ed4c79446e7ad7c86be45385db7056618be4cdb233e4bf2b79241f27f"
+    },
+    "ATLAS_W_Interior.glb": {
+      "bytes": 13777492,
+      "sha256": "a985955061bd71b948babe14e25f393987e252e481b73eae9ce09386143ccab7"
+    }
+  }
+}
