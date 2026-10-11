@@ -1,0 +1,116 @@
+name: ATLAS Fleet Atelier 02
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'atlas_fleet_atelier_02/transport/**'
+      - 'atlas_fleet_atelier_02/fixups.py'
+      - 'atlas_fleet_atelier_02/REVIEW.md'
+      - '.github/workflows/atlas-fleet-atelier-02.yml'
+permissions:
+  contents: write
+concurrency:
+  group: atlas-fleet-atelier-02
+  cancel-in-progress: true
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    env:
+      FLEET_ROOT: ${{ github.workspace }}/atlas_fleet_atelier_02
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Restore original source and checksum-verified revision
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import base64,hashlib,json,lzma,shutil
+          root=Path('atlas_fleet_atelier_02')
+          original=Path('atlas_fleet_v1/transport')
+          data=base64.b64decode(''.join((original/f'part{i}.b64').read_text().strip() for i in range(7)),validate=True)
+          assert hashlib.sha256(data).hexdigest()=='699a9ea5fe9fccc73222cd089e7bea2c121ad1a1efa6aff88cbf36e38b400703'
+          for name,text in json.loads(lzma.decompress(data)).items():
+              assert name.startswith(('source/','site/')) and '..' not in Path(name).parts
+              p=root/name;p.parent.mkdir(parents=True,exist_ok=True);p.write_text(text)
+          data=base64.b64decode(''.join((root/'transport'/f'part{i}.b64').read_text().strip() for i in range(2)),validate=True)
+          assert hashlib.sha256(data).hexdigest()=='50ae21cbb7e34d661bf5a31e02489f7ff845946b4fe220e530b536d4087fca7b','Atelier source checksum mismatch'
+          for name,text in json.loads(lzma.decompress(data)).items():
+              assert Path(name).name==name and name.endswith('.py')
+              (root/name).write_text(text)
+          shutil.copy2(root/'detail.py',root/'source/detail.py')
+          PY
+          git fetch --no-tags origin 3a532afd6f899c608ebfd4e60525d6b8379e2e0a
+          mkdir -p "$FLEET_ROOT/base/r10/viewer" "$FLEET_ROOT/site/assets" "$FLEET_ROOT/models"
+          git show 3a532afd6f899c608ebfd4e60525d6b8379e2e0a:atlas_d_slate_r10/live/ATLAS_D_R10.glb > "$FLEET_ROOT/base/r10/viewer/ATLAS_D_R10.glb"
+          git show 3a532afd6f899c608ebfd4e60525d6b8379e2e0a:atlas_d_slate_r10/live/runtime.js > "$FLEET_ROOT/site/runtime.js"
+          git show 3a532afd6f899c608ebfd4e60525d6b8379e2e0a:atlas_d_slate_r10/live/THIRD_PARTY_LICENSE.txt > "$FLEET_ROOT/site/THIRD_PARTY_LICENSE.txt"
+          python "$FLEET_ROOT/patch_build.py" "$FLEET_ROOT"
+          python "$FLEET_ROOT/patch_viewer.py" "$FLEET_ROOT"
+          if [ -f "$FLEET_ROOT/fixups.py" ]; then python "$FLEET_ROOT/fixups.py"; fi
+      - name: Build revised geometry, materials and measured arrangement audit
+        run: |
+          python -m pip install -q numpy==2.3.5 trimesh==4.11.1 scipy networkx shapely matplotlib pillow playwright==1.55.0
+          python "$FLEET_ROOT/source/build_fleet.py"
+          python "$FLEET_ROOT/finish_assets.py"
+          python "$FLEET_ROOT/source/assemble.py"
+          python "$FLEET_ROOT/audit.py"
+      - name: Build five editable Blender masters and browser exports
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq blender python3-numpy libegl1 >/dev/null
+          env -u PYTHONHOME -u PYTHONPATH -u LD_LIBRARY_PATH LIBGL_ALWAYS_SOFTWARE=1 /usr/bin/blender -b --python-exit-code 1 --python "$FLEET_ROOT/source/native.py"
+          python "$FLEET_ROOT/source/split_interiors.py"
+          test "$(find "$FLEET_ROOT/models" -name '*.blend' | wc -l)" -eq 5
+      - name: Install browser and verify all direct cutaway and model controls
+        run: |
+          python -m playwright install --with-deps chromium >/dev/null
+          mkdir -p /tmp/atelier/review
+          python -m http.server 8812 --bind 127.0.0.1 --directory "$FLEET_ROOT/site" >/tmp/atelier/http.log 2>&1 &
+          sleep 2
+          BASE_URL=http://127.0.0.1:8812/index.html REVIEW_DIR=/tmp/atelier/review python "$FLEET_ROOT/verify.py"
+      - name: Publish separate visually reviewed release
+        id: release
+        if: contains(github.event.head_commit.message, '[publish]')
+        run: |
+          mkdir -p "$FLEET_ROOT/live"
+          cp -R "$FLEET_ROOT/site/." "$FLEET_ROOT/live/"
+          cp /tmp/atelier/review/validation.json "$FLEET_ROOT/live/browser_validation.json"
+          git config user.name 'ATLAS release'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -f atlas_fleet_atelier_02/live atlas_fleet_atelier_02/source atlas_fleet_atelier_02/*.py
+          git commit -m 'Publish Fleet Atelier 02: improved fishing tender and working section controls'
+          git stash push -u -m atelier-generated-assets
+          git pull --rebase origin main
+          git push origin HEAD:main
+          git stash pop || true
+          echo "url=https://rawcdn.githack.com/owensto/helper/$(git rev-parse HEAD)/atlas_fleet_atelier_02/live/index.html" >> "$GITHUB_OUTPUT"
+      - name: Verify exact public release
+        if: steps.release.outputs.url != ''
+        env:
+          BASE_URL: ${{ steps.release.outputs.url }}
+          REVIEW_DIR: /tmp/atelier/public
+        run: python "$FLEET_ROOT/verify.py"
+      - name: Preserve actual public verification
+        if: steps.release.outputs.url != ''
+        run: |
+          cp /tmp/atelier/public/validation.json "$FLEET_ROOT/online_validation.json"
+          git add atlas_fleet_atelier_02/online_validation.json
+          git commit -m 'Record public Atelier 02 browser tests, not engineering qualification'
+          git stash push -u -m atelier-generated-evidence
+          git pull --rebase origin main
+          git push origin HEAD:main
+          git stash pop || true
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ATLAS-Fleet-Atelier-02-Models-Viewer-Review
+          path: |
+            /tmp/atelier/
+            atlas_fleet_atelier_02/models/
+            atlas_fleet_atelier_02/site/
+            atlas_fleet_atelier_02/source/
+            atlas_fleet_atelier_02/*.py
+          retention-days: 30
