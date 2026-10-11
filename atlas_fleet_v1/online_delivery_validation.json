@@ -1,0 +1,48 @@
+{
+  "verified_at_utc": "2026-10-11T12:29:35Z",
+  "release": "ATLAS Fleet 01 — online review",
+  "url": "https://rawcdn.githack.com/owensto/helper/414020893caab650676425147dd345ce92a923cf/atlas_fleet_v1/live/index.html",
+  "source_commit": "414020893caab650676425147dd345ce92a923cf",
+  "verification_run_id": 38139180308,
+  "verification_artifact_id": 11701959763,
+  "passed": true,
+  "public_network_tested": true,
+  "offline_injected": false,
+  "host_confirmation_required": true,
+  "host_confirmation_button": "Open the page",
+  "browser": "Chromium via Playwright 1.55.0",
+  "viewports": {"desktop": [1600, 1000], "phone": [430, 932]},
+  "physical_phone_test": false,
+  "tests": [
+    {"device": "desktop", "asset": "bay", "passed": true, "http_status": 200, "viewer_javascript_errors": [], "required_asset_failures": []},
+    {"device": "desktop", "asset": "d", "passed": true, "http_status": 200, "viewer_javascript_errors": [], "required_asset_failures": []},
+    {"device": "desktop", "asset": "n", "passed": true, "http_status": 200, "viewer_javascript_errors": [], "required_asset_failures": []},
+    {"device": "desktop", "asset": "w", "passed": true, "http_status": 200, "viewer_javascript_errors": [], "required_asset_failures": []},
+    {"device": "desktop", "asset": "chase", "passed": true, "http_status": 200, "viewer_javascript_errors": [], "required_asset_failures": []},
+    {"device": "phone", "asset": "bay", "passed": true, "http_status": 200, "viewer_javascript_errors": [], "required_asset_failures": []},
+    {"device": "phone", "asset": "d", "passed": true, "http_status": 200, "viewer_javascript_errors": [], "required_asset_failures": []},
+    {"device": "phone", "asset": "n", "passed": true, "http_status": 200, "viewer_javascript_errors": [], "required_asset_failures": []},
+    {"device": "phone", "asset": "w", "passed": true, "http_status": 200, "viewer_javascript_errors": [], "required_asset_failures": []},
+    {"device": "phone", "asset": "chase", "passed": true, "http_status": 200, "viewer_javascript_errors": [], "required_asset_failures": []}
+  ],
+  "checked": [
+    "Direct query links: ?v=d, ?v=n, ?v=w, ?v=bay, ?v=chase",
+    "Selected detail cameras and lazy-loaded naval interiors",
+    "Animation at start, intermediate and final positions",
+    "Playback, pause, reset, lighting, gray finish and notes dialog controls",
+    "Bay 25 fixed T-top persists in standalone animation",
+    "ATLAS-D final pose contains both recovered tender roots below the visual waterline",
+    "ATLAS-W and Bay 25 do not expose a dive button; ATLAS-W root remains at the surface",
+    "Chase 12 is a static standalone inspection model"
+  ],
+  "third_party_host_ads": "Some host-advertising requests were blocked or aborted. These are retained in the full diagnostics, not counted as missing viewer assets.",
+  "models_changed_in_this_delivery": false,
+  "complete_production_plan_finished": false,
+  "engineering_validated": false,
+  "remaining": [
+    "ATLAS-N and ATLAS-W exterior and material refinement",
+    "Complete furnished interiors and human-height walkthroughs",
+    "Complete mechanism and recovery-path clearance checks",
+    "Pressure, loads, mass, stability and safe-operation qualification"
+  ]
+}
