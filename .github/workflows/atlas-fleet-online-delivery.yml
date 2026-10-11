@@ -1,0 +1,61 @@
+name: ATLAS Fleet online delivery
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/atlas-fleet-online-delivery.yml'
+      - 'atlas_fleet_v1/online_delivery.py'
+permissions:
+  contents: read
+  pages: read
+concurrency:
+  group: atlas-fleet-online-delivery
+  cancel-in-progress: true
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Inspect existing hosting without changing site settings
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p /tmp/fleet-delivery
+          python - <<'PY'
+          import urllib.request,json,os,concurrent.futures
+          from pathlib import Path
+          urls=[
+          'https://api.github.com/repos/owensto/helper/pages',
+          'https://owensto.github.io/helper/',
+          'https://atlas-250-superyacht.netlify.app/',
+          'https://raw.githubusercontent.com/owensto/helper/414020893caab650676425147dd345ce92a923cf/atlas_fleet_v1/live/assets/ATLAS_Bay_25.glb',
+          'https://cdn.jsdelivr.net/gh/owensto/helper@414020893caab650676425147dd345ce92a923cf/atlas_fleet_v1/live/assets/ATLAS_Bay_25.glb']
+          def get(url):
+              h={'User-Agent':'ATLAS-Fleet-delivery-check'}
+              if url.startswith('https://api.github.com/'):h['Authorization']='Bearer '+os.environ['GH_TOKEN']
+              try:
+                  with urllib.request.urlopen(urllib.request.Request(url,headers=h),timeout=25) as r:
+                      b=r.read(1000);return {'url':url,'status':r.status,'type':r.headers.get('content-type'),'cors':r.headers.get('access-control-allow-origin'),'head':b[:700].decode('utf-8','replace')}
+              except Exception as e:return {'url':url,'error':str(e)}
+          result=list(concurrent.futures.ThreadPoolExecutor(5).map(get,urls))
+          Path('/tmp/fleet-delivery/hosting.json').write_text(json.dumps(result,indent=2));print(json.dumps(result,indent=2),flush=True)
+          PY
+      - name: Install real browser
+        run: |
+          python -m pip install -q playwright==1.55.0
+          python -m playwright install --with-deps chromium >/dev/null
+      - name: Test actual public viewer and all model entries
+        env:
+          BASE_URL: https://rawcdn.githack.com/owensto/helper/414020893caab650676425147dd345ce92a923cf/atlas_fleet_v1/live/index.html
+          REVIEW_DIR: /tmp/fleet-delivery/public
+        run: python atlas_fleet_v1/verify_public.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ATLAS-Fleet-Online-Delivery-Evidence
+          path: /tmp/fleet-delivery/
+          retention-days: 30
