@@ -1,0 +1,115 @@
+name: ATLAS Bay 25 Studio 04
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'atlas_bay_studio_04/transport/**'
+      - 'atlas_bay_studio_04/fixups.py'
+      - '.github/workflows/atlas-bay-studio-04.yml'
+permissions:
+  contents: write
+concurrency:
+  group: atlas-bay-studio-04
+  cancel-in-progress: true
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    env:
+      FLEET_ROOT: ${{ github.workspace }}/atlas_bay_studio_04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Restore approved Studio 03 and verified detail source
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import base64,hashlib,json,lzma
+          root=Path('atlas_bay_studio_04')
+          data=base64.b64decode(''.join((root/'transport'/f'part{i}.b64').read_text().strip() for i in range(3)),validate=True)
+          assert hashlib.sha256(data).hexdigest()=='ed7a52fcfc33305610fc1919988cce4c771d1d76c7dbe846263ae4d55b54db39'
+          for name,text in json.loads(lzma.decompress(data)).items():
+              assert Path(name).name==name and name.endswith('.py')
+              (root/name).write_text(text)
+          PY
+          git fetch --no-tags origin 2c1ef51989ecbb75d7b90c73b180362fcc9c3108
+          mkdir -p /tmp/bay04-base /tmp/bay04/review "$FLEET_ROOT/staging" "$FLEET_ROOT/models"
+          git archive 2c1ef51989ecbb75d7b90c73b180362fcc9c3108 atlas_bay_studio_03/live atlas_bay_studio_03/source | tar -x -C /tmp/bay04-base
+          cp -R /tmp/bay04-base/atlas_bay_studio_03/live "$FLEET_ROOT/site"
+          cp -R /tmp/bay04-base/atlas_bay_studio_03/source "$FLEET_ROOT/source"
+          if [ -f "$FLEET_ROOT/fixups.py" ]; then python "$FLEET_ROOT/fixups.py"; fi
+      - name: Add close-up detail without replacing the approved hull
+        run: |
+          python -m pip install -q numpy==2.3.5 trimesh==4.11.1 scipy networkx shapely matplotlib pillow playwright==1.55.0
+          python "$FLEET_ROOT/polish.py"
+          python "$FLEET_ROOT/prepare04.py"
+          python - <<'PY'
+          from pathlib import Path
+          import os,hashlib,json
+          r=Path(os.environ['FLEET_ROOT']);old=Path('/tmp/bay04-base/atlas_bay_studio_03/live/assets')
+          report={}
+          for f in ['ATLAS_D.glb','ATLAS_N.glb','ATLAS_N_Interior.glb','ATLAS_W.glb','ATLAS_W_Interior.glb','ATLAS_Chase_12.glb']:
+              a=hashlib.sha256((old/f).read_bytes()).hexdigest();b=hashlib.sha256((r/'site/assets'/f).read_bytes()).hexdigest()
+              assert a==b,f+' unexpectedly changed';report[f]={'sha256':b,'unchanged':True}
+          (r/'site/unchanged_assets.json').write_text(json.dumps(report,indent=2))
+          PY
+      - name: Save native Blender model and render actual geometry
+        env:
+          ATLAS_STILLS: '1'
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq blender python3-numpy libegl1 >/dev/null
+          env -u PYTHONHOME -u PYTHONPATH -u LD_LIBRARY_PATH LIBGL_ALWAYS_SOFTWARE=1 /usr/bin/blender -b --python-exit-code 1 --python "$FLEET_ROOT/native04.py"
+          python "$FLEET_ROOT/audit04.py"
+      - name: Verify comparison, detail cameras and retained fleet controls
+        run: |
+          python -m playwright install --with-deps chromium >/dev/null
+          python -m http.server 8834 --bind 127.0.0.1 --directory "$FLEET_ROOT/site" >/tmp/bay04/http.log 2>&1 &
+          sleep 2
+          BASE_URL=http://127.0.0.1:8834/index.html REVIEW_DIR=/tmp/bay04/review python "$FLEET_ROOT/verify04.py"
+      - name: Publish visually reviewed detail pass
+        id: release
+        if: contains(github.event.head_commit.message, '[publish]')
+        run: |
+          mkdir -p "$FLEET_ROOT/live"
+          cp -R "$FLEET_ROOT/site/." "$FLEET_ROOT/live/"
+          cp /tmp/bay04/review/validation.json "$FLEET_ROOT/live/browser_validation.json"
+          git config user.name 'ATLAS release'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -f atlas_bay_studio_04/live atlas_bay_studio_04/source atlas_bay_studio_04/*.py
+          git commit -m 'Publish Bay 25 Studio 04 close-up detail pass, approved forms preserved'
+          git stash push -u -m bay04-generated-models
+          git pull --rebase origin main
+          git push origin HEAD:main
+          git stash pop || true
+          echo "url=https://rawcdn.githack.com/owensto/helper/$(git rev-parse HEAD)/atlas_bay_studio_04/live/index.html" >> "$GITHUB_OUTPUT"
+      - name: Test exact public release
+        if: steps.release.outputs.url != ''
+        env:
+          BASE_URL: ${{ steps.release.outputs.url }}
+          REVIEW_DIR: /tmp/bay04/public
+        run: python "$FLEET_ROOT/verify04.py"
+      - name: Preserve actual public test evidence
+        if: steps.release.outputs.url != ''
+        run: |
+          cp /tmp/bay04/public/validation.json "$FLEET_ROOT/online_validation.json"
+          git add atlas_bay_studio_04/online_validation.json
+          git commit -m 'Record Studio 04 public browser checks, not engineering qualification'
+          git stash push -u -m bay04-generated-evidence
+          git pull --rebase origin main
+          git push origin HEAD:main
+          git stash pop || true
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ATLAS-Bay-25-Studio-04-Model-Viewer-Review
+          path: |
+            /tmp/bay04/
+            atlas_bay_studio_04/models/
+            atlas_bay_studio_04/site/
+            atlas_bay_studio_04/source/
+            atlas_bay_studio_04/*.py
+            atlas_bay_studio_04/detail_inventory.json
+          retention-days: 30
