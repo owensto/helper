@@ -1,0 +1,80 @@
+name: ATLAS Bay 25 Studio 06 review
+on:
+  push:
+    paths:
+      - 'atlas_bay_studio_06/*.py'
+      - 'atlas_bay_studio_06/*.js'
+      - '.github/workflows/atlas-bay-studio-06.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: read
+concurrency:
+  group: atlas-bay-studio-06-review
+  cancel-in-progress: true
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    env:
+      FLEET_ROOT: ${{ github.workspace }}/atlas_bay_studio_06
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - uses: actions/download-artifact@v4
+        with:
+          artifact-ids: '11760794990'
+          run-id: '38282376335'
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          path: /tmp/bay06deps
+          merge-multiple: true
+      - name: Restore approved geometry and pinned renderer
+        run: |
+          git fetch --no-tags origin ffb9f5eef39ff765e9a1719e7824fa5a4c99024a
+          mkdir -p /tmp/bay06base /tmp/bay06/review "$FLEET_ROOT/staging" "$FLEET_ROOT/models"
+          git archive ffb9f5eef39ff765e9a1719e7824fa5a4c99024a atlas_bay_studio_05/live atlas_bay_studio_05/source | tar -x -C /tmp/bay06base
+          cp -R /tmp/bay06base/atlas_bay_studio_05/live "$FLEET_ROOT/site"
+          cp -R /tmp/bay06base/atlas_bay_studio_05/source "$FLEET_ROOT/source"
+          cp /tmp/bay06deps/runtime.js "$FLEET_ROOT/site/runtime.js"
+          cp /tmp/bay06deps/assets/* "$FLEET_ROOT/site/assets/"
+          cat /tmp/bay06deps/THIRD_PARTY_LICENSE.txt >> "$FLEET_ROOT/site/THIRD_PARTY_LICENSE.txt"
+      - name: Author Bay materials, GPS housing and presentation
+        run: |
+          python -m pip install -q numpy==2.3.5 trimesh==4.11.1 scipy shapely networkx pillow matplotlib playwright==1.55.0
+          python "$FLEET_ROOT/refine06.py"
+          python "$FLEET_ROOT/patch06.py"
+      - name: Save native Blender scenes and contact-shaded browser geometry
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq blender python3-numpy libegl1 >/dev/null
+          env -u PYTHONHOME -u PYTHONPATH -u LD_LIBRARY_PATH LIBGL_ALWAYS_SOFTWARE=1 /usr/bin/blender -b --python-exit-code 1 --python "$FLEET_ROOT/native06.py"
+          python "$FLEET_ROOT/audit06.py"
+          python - <<'PY'
+          from pathlib import Path
+          import os,hashlib,json
+          root=Path(os.environ['FLEET_ROOT']);base=Path('/tmp/bay06base/atlas_bay_studio_05/live/assets');report={}
+          for name in ['ATLAS_D.glb','ATLAS_N.glb','ATLAS_N_Interior.glb','ATLAS_W.glb','ATLAS_W_Interior.glb','ATLAS_Chase_12.glb']:
+              a=hashlib.sha256((base/name).read_bytes()).hexdigest();b=hashlib.sha256((root/'site/assets'/name).read_bytes()).hexdigest();assert a==b;report[name]={'unchanged':True,'sha256':b}
+          (root/'site/unchanged_assets.json').write_text(json.dumps(report,indent=2))
+          assert len(list((root/'models').glob('*.blend')))==2
+          PY
+      - name: Verify rendered geometry, lighting, comparison and fleet entries
+        run: |
+          python -m playwright install --with-deps chromium >/dev/null
+          python -m http.server 8816 --bind 127.0.0.1 --directory "$FLEET_ROOT/site" >/tmp/bay06/http.log 2>&1 &
+          sleep 2
+          BASE_URL=http://127.0.0.1:8816/index.html REVIEW_DIR=/tmp/bay06/review python "$FLEET_ROOT/verify06.py"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ATLAS-Bay-25-Studio-06-Models-Viewer-Review
+          path: |
+            /tmp/bay06/
+            atlas_bay_studio_06/models/
+            atlas_bay_studio_06/site/
+            atlas_bay_studio_06/source/
+            atlas_bay_studio_06/*.py
+            atlas_bay_studio_06/*.js
+          retention-days: 30
