@@ -1,0 +1,84 @@
+name: Publish reviewed Bay 25 Studio 06
+on:
+  push:
+    paths: ['.github/workflows/atlas-bay-studio-06-publish.yml']
+  workflow_dispatch:
+permissions:
+  contents: write
+  actions: read
+jobs:
+  publish:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 18
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - uses: actions/download-artifact@v4
+        with:
+          artifact-ids: '11764085435'
+          run-id: '38285817161'
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          path: /tmp/reviewed-bay06
+          merge-multiple: true
+      - name: Stage visually inspected assets without changing prior releases
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import json,shutil,hashlib
+          recovered=Path('/tmp/reviewed-bay06')
+          source=recovered/'native-bay06/home/runner/work/helper/helper/atlas_bay_studio_06'
+          evidence=json.loads((recovered/'bay06-presentation/validation.json').read_text())
+          assert evidence['passed'] and len(evidence['tests'])==2
+          dest=Path('atlas_bay_studio_06/live');dest.mkdir(parents=True,exist_ok=True)
+          shutil.copytree(source/'site',dest,dirs_exist_ok=True)
+          shutil.copy2(recovered/'bay06-presentation/validation.json',dest/'presentation_review.json')
+          state=json.loads((dest/'bay06_report.json').read_text())
+          state.update(native_review_run=38284422087,native_review_artifact=11762259510,presentation_review_run=38285817161,presentation_review_artifact=11764085435,complete_production_plan_finished=False)
+          state['asset_sha256']={p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in (dest/'assets').glob('*.glb')}
+          (dest/'bay06_report.json').write_text(json.dumps(state,indent=2))
+          verify=(source/'verify06.py').read_text()
+          anchor="if asset=='bay':page.wait_for_function('window.BAY_QUALITY?.ready',timeout=60000)"
+          replacement="""if asset=='bay':
+               page.wait_for_function('window.BAY_QUALITY?.ready',timeout=60000)
+               page.locator('#cleanscene').click();assert page.locator('body').evaluate('(e)=>e.classList.contains(\"capture\")')
+               page.wait_for_timeout(300);page.screenshot(path=str(OUT/f'{device}_bay_clean.png'))
+               page.locator('#cleanscene').click();assert not page.locator('body').evaluate('(e)=>e.classList.contains(\"capture\")');item['model_only_view_verified']=True"""
+          assert anchor in verify;verify=verify.replace(anchor,replacement)
+          Path('/tmp/verify_public06.py').write_text(verify)
+          PY
+          python -m py_compile /tmp/verify_public06.py
+      - name: Publish immutable Studio 06
+        id: release
+        run: |
+          git config user.name 'ATLAS release'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -f atlas_bay_studio_06/live
+          git commit -m 'Publish Bay 25 Studio 06: coastal materials, contact shading and GPS housing'
+          git pull --rebase origin main
+          git push origin HEAD:main
+          echo "url=https://rawcdn.githack.com/owensto/helper/$(git rev-parse HEAD)/atlas_bay_studio_06/live/index.html" >> "$GITHUB_OUTPUT"
+      - name: Verify public assets and all retained fleet controls
+        env:
+          BASE_URL: ${{ steps.release.outputs.url }}
+          REVIEW_DIR: /tmp/bay06-public
+        run: |
+          python -m pip install -q playwright==1.55.0
+          python -m playwright install --with-deps chromium >/dev/null
+          python /tmp/verify_public06.py
+      - name: Save actual public verification
+        run: |
+          cp /tmp/bay06-public/validation.json atlas_bay_studio_06/online_validation.json
+          git add atlas_bay_studio_06/online_validation.json
+          git commit -m 'Record ten public Studio 06 entry checks, not engineering qualification'
+          git pull --rebase origin main
+          git push origin HEAD:main
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ATLAS-Bay-25-Studio-06-Public-Evidence
+          path: |
+            /tmp/bay06-public/
+            /tmp/verify_public06.py
+          retention-days: 30
