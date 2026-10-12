@@ -1,0 +1,41 @@
+{
+  "permanent_envelopes": [
+    {
+      "assembly": "ENG_Pressure",
+      "maximum_internal_change_after_removing_vessel_translation_m": 0.0
+    },
+    {
+      "assembly": "ENG_Upper",
+      "maximum_internal_change_after_removing_vessel_translation_m": 0.0
+    },
+    {
+      "assembly": "ENG_Lower",
+      "maximum_internal_change_after_removing_vessel_translation_m": 0.0
+    }
+  ],
+  "outer_shell_vertical_screens": [
+    {
+      "assembly": "MOV_Shell_Upper",
+      "minimum_vertical_bbox_separation_from_core_m": 0.48000001907348633,
+      "samples": 25,
+      "scope": "Vertical bounds only. Excludes mast, access trunks, support mechanisms and all other body pairs."
+    },
+    {
+      "assembly": "MOV_Shell_Bridge",
+      "minimum_vertical_bbox_separation_from_core_m": 0.9899997711181641,
+      "samples": 25,
+      "scope": "Vertical bounds only. Excludes mast, access trunks, support mechanisms and all other body pairs."
+    },
+    {
+      "assembly": "MOV_Shell_Sky",
+      "minimum_vertical_bbox_separation_from_core_m": 2.0500001907348633,
+      "samples": 25,
+      "scope": "Vertical bounds only. Excludes mast, access trunks, support mechanisms and all other body pairs."
+    }
+  ],
+  "mass_budget_closed": false,
+  "surface_stability_solved": false,
+  "pressure_rating": null,
+  "garage_entrance_freeboard_resolved": false,
+  "speculative_shell_nesting": true
+}

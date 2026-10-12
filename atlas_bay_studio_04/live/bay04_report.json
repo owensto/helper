@@ -1,0 +1,50 @@
+{
+  "revision": "Bay 25 / Studio 04",
+  "scope": "Standalone Bay close-up refinement. All other fleet models unchanged.",
+  "approved_base_preservation": {
+    "EX_Hull": {
+      "original_meshes": 7,
+      "max_original_local_vertex_change_m": 0.0
+    },
+    "FIXED_TTop": {
+      "original_meshes": 8,
+      "max_original_local_vertex_change_m": 0.0
+    }
+  },
+  "animation_channels": 8,
+  "scale_animation_channels": 0,
+  "added_detail_items": 302,
+  "integrated_into_explorer": false,
+  "engineering_validated": false,
+  "changes": [
+    "Tailored bolster back panels with stitched diamond seams and compact grab handles",
+    "Original illustrative chart and sounder textures on actual instrument faces; tactile switches and knobs",
+    "Console storage and service-hatch hardware",
+    "Hardtop speaker bezels, grille wires, radio/handset and mounting details",
+    "Refined hatch hinges, drain grilles, fill caps and boarding-tread traction",
+    "Engine cowling split line, badges and service fasteners; follows existing engine animation"
+  ],
+  "limits": [
+    "Cosmetic geometry; no hardware load qualification",
+    "Full recovery and clearance checks not performed",
+    "Studio 03 fishing equipment choreography retained",
+    "Explorer still carries its older Fleet 02 Bay",
+    "Chase 12 and the other vessels not modified in this pass"
+  ],
+  "native_roundtrip_preservation": {
+    "EX_Hull": {
+      "maximum_original_mesh_world_deviation_m": 0
+    },
+    "FIXED_TTop": {
+      "maximum_original_mesh_world_deviation_m": 0
+    }
+  },
+  "export_animation_channels": 8,
+  "browser_bytes": 7032044,
+  "complete_secured_model_envelope_m": [
+    8.554251298489753,
+    3.2617639513544763,
+    2.659996509552002
+  ],
+  "base_version": "Studio 03"
+}

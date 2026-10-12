@@ -1,0 +1,1 @@
+Bay 25 Studio 04: retained Studio 03 hull/top; tailored seating, instruments, and close-up detailing. New Bay is standalone; Explorer still carries Fleet 02. Compare Studio 03 uses the same camera, palette, lighting and pose. Original instrumentation graphics are demonstration artwork only. No construction or operational qualification.
