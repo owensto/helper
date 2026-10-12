@@ -1,0 +1,86 @@
+name: Publish reviewed Bay 25 Studio 04
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/atlas-bay-studio-04-publish-reviewed.yml'
+permissions:
+  contents: write
+  actions: read
+concurrency:
+  group: atlas-bay-04-publish
+  cancel-in-progress: true
+jobs:
+  publish:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - uses: actions/download-artifact@v4
+        with:
+          artifact-ids: 11755873786
+          run-id: 38268770598
+          github-token: ${{ github.token }}
+          path: /tmp/bay04-recovered
+          merge-multiple: true
+      - name: Stage the exact visually reviewed build
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import json,shutil,hashlib
+          r=Path('/tmp/bay04-recovered')
+          src=r/'home/runner/work/helper/helper/atlas_bay_studio_04'
+          validation=json.loads((r/'tmp/bay04/review/validation.json').read_text())
+          assert validation['passed'] and len(validation['tests'])==10
+          assert all(t['passed'] and not t['errors'] and not t['asset_failures'] for t in validation['tests'])
+          report=json.loads((src/'site/bay04_report.json').read_text())
+          assert report['export_animation_channels']==8 and report['scale_animation_channels']==0
+          assert all(c['maximum_original_mesh_world_deviation_m']<2e-5 for c in report['native_roundtrip_preservation'].values())
+          native=src/'models/ATLAS_Bay_25_Studio04.blend'
+          assert native.read_bytes()[:7]==b'BLENDER'
+          out=Path('atlas_bay_studio_04');out.mkdir(exist_ok=True)
+          shutil.copytree(src/'site',out/'live',dirs_exist_ok=True)
+          shutil.copytree(src/'source',out/'source',dirs_exist_ok=True)
+          for f in src.glob('*.py'):shutil.copy2(f,out/f.name)
+          shutil.copy2(r/'tmp/bay04/review/validation.json',out/'live/browser_validation.json')
+          state={'release':'Bay 25 Studio 04','source_run':38268770598,'source_artifact':11755873786,'approved_hull_and_top_preserved':True,'other_four_assets_unchanged':True,'integrated_into_explorer':False,'engineering_validated':False,'changes_scope':'Close-up appearance and material detail; no new seaworthiness or recovery-system claim.','model_sha256':hashlib.sha256((out/'live/assets/ATLAS_Bay_25.glb').read_bytes()).hexdigest()}
+          (out/'live/bay04_release_state.json').write_text(json.dumps(state,indent=2))
+          PY
+      - name: Publish without changing Studio 03
+        id: release
+        run: |
+          git config user.name 'ATLAS release'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -f atlas_bay_studio_04/live atlas_bay_studio_04/source atlas_bay_studio_04/*.py
+          git commit -m 'Publish Bay 25 Studio 04: close-up detail with approved hull and roof preserved'
+          git pull --rebase origin main
+          git push origin HEAD:main
+          echo "url=https://rawcdn.githack.com/owensto/helper/$(git rev-parse HEAD)/atlas_bay_studio_04/live/index.html" >> "$GITHUB_OUTPUT"
+      - name: Install public browser verification tools
+        run: |
+          python -m pip install -q playwright==1.55.0
+          python -m playwright install --with-deps chromium >/dev/null
+      - name: Verify exact public link and comparison controls
+        env:
+          BASE_URL: ${{ steps.release.outputs.url }}
+          REVIEW_DIR: /tmp/bay04/public
+        run: python atlas_bay_studio_04/verify04.py
+      - name: Save actual public verification
+        run: |
+          cp /tmp/bay04/public/validation.json atlas_bay_studio_04/online_validation.json
+          git add atlas_bay_studio_04/online_validation.json
+          git commit -m 'Record Studio 04 public browser verification, not vessel engineering approval'
+          git pull --rebase origin main
+          git push origin HEAD:main
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ATLAS-Bay-25-Studio-04-Public-Evidence
+          path: |
+            /tmp/bay04/public/
+            atlas_bay_studio_04/live/bay04_report.json
+            atlas_bay_studio_04/live/bay04_release_state.json
+          retention-days: 30
