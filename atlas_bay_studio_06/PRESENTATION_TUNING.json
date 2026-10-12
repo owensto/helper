@@ -1,0 +1,12 @@
+{
+  "reviewed_source_run": 38284422087,
+  "reviewed_source_artifact": 11762259510,
+  "changes": [
+    "Reduce the water shader's white glare and excessive baseline reflection; use restrained turquoise body color.",
+    "Keep the exact native models and material exports from the reviewed build.",
+    "Add a model-only view toggle and Escape-to-restore controls.",
+    "Do not cast opaque shadows from transmissive windshield panes.",
+    "Group phone presentation controls into two columns rather than a long vertical strip."
+  ],
+  "engineering_validated": false
+}
