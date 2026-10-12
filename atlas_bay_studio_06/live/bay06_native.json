@@ -1,0 +1,20 @@
+[
+  {
+    "native_file": "ATLAS_Bay_25_Studio06.blend",
+    "blender_version": "4.0.2",
+    "contact_shaded_vertices": 81692,
+    "contact_shading_seconds": 4.6,
+    "browser_bytes": 9291912,
+    "exported_from_native": true,
+    "engineering_validated": false
+  },
+  {
+    "native_file": "ATLAS_Bay_25_Shallow_Study06.blend",
+    "blender_version": "4.0.2",
+    "contact_shaded_vertices": 83981,
+    "contact_shading_seconds": 4.5,
+    "browser_bytes": 9413036,
+    "exported_from_native": true,
+    "engineering_validated": false
+  }
+]
