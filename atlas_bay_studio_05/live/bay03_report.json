@@ -1,0 +1,41 @@
+{
+  "revision": "Bay 25 / Studio 03",
+  "scope": "Standalone fishing-tender refinement. Other four fleet assets unchanged.",
+  "integrated_into_explorer": false,
+  "original_hull_length_m": 7.5,
+  "beam_reference_m": 2.6,
+  "full_secured_envelope_m": [
+    8.554251172213636,
+    3.261763999934982,
+    2.659996509552002
+  ],
+  "candidate_barrel_screen": {
+    "radius_m": 2.18,
+    "center_y_m": 2.4,
+    "tested_lift_m": 1.314,
+    "minimum_static_radial_gap_m": 0.3792373825352695,
+    "passes_static_craft_only": true,
+    "screen_scope": "Every rendered craft vertex in secured pose against ideal circular barrel. Not carrier, doorway, latches, loads, waves or full recovery path."
+  },
+  "animation": {
+    "rigid_top": true,
+    "scale_channels": 0,
+    "duration_s": 60
+  },
+  "changes": [
+    "Rebuilt longitudinal hull, V-bottom and rising forepeak",
+    "Removed protruding lower foredeck/liner surfaces",
+    "Thinner rub rail and surface-following hull graphics",
+    "Swept rigid T-top with hollow fishing rod tubes",
+    "Three-sided wraparound windshield and sloped helm",
+    "Twin upholstered bolsters, tackle storage and clear side walkways",
+    "Closed livewell inspection lid and coordinated fishing fittings"
+  ],
+  "engineering_validated": false,
+  "remaining": [
+    "Full tender/garage and carrier interference analysis",
+    "Qualified construction and equipment selection",
+    "Integration of revised Bay 25 into Explorer",
+    "Further detailing of Chase 12, Explorer, submarine and surface ship"
+  ]
+}
