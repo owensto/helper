@@ -1,0 +1,69 @@
+name: ATLAS Bay 06 presentation review
+on:
+  push:
+    paths: ['.github/workflows/atlas-bay-studio-06-presentation.yml','atlas_bay_studio_06/PRESENTATION_TUNING.json']
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: read
+jobs:
+  review:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - uses: actions/download-artifact@v4
+        with:
+          artifact-ids: '11762259510'
+          run-id: '38284422087'
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          path: /tmp/native-bay06
+          merge-multiple: true
+      - name: Apply visually reviewed presentation corrections
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import shutil,json
+          root=Path('/tmp/native-bay06/home/runner/work/helper/helper/atlas_bay_studio_06')
+          site=root/'site'
+          q=(site/'quality06.js').read_text()
+          q=q.replace('waterColor:0x3f8c95,distortionScale:1.2','waterColor:0x409eac,distortionScale:.65')
+          old="water.rotation.x=-Math.PI/2;"
+          new="""water.material.fragmentShader=water.material.fragmentShader.replace('float rf0 = 0.3;', 'float rf0 = 0.035;').replace('vec3( 1.5, 1.0, 1.5 )','vec3( 0.7, 1.0, 0.7 )').replace('100.0, 2.0, 0.5','160.0, 0.7, 0.5').replace('( sunColor * diffuseLight * 0.3 + scatter )','( waterColor * (0.80 + diffuseLight * 0.28) + scatter * 0.10 )').replace('( vec3( 0.1 ) + reflectionSample * 0.9 + reflectionSample * specularLight )','( reflectionSample * 0.80 + reflectionSample * specularLight )');water.material.needsUpdate=true;water.rotation.x=-Math.PI/2;"""
+          assert old in q;q=q.replace(old,new)
+          q=q.replace('water.material.uniforms.size.value=3.0','water.material.uniforms.size.value=1.6')
+          q=q.replace('sun.shadow.mapSize.set(2048,2048)','sun.shadow.mapSize.set(window.innerWidth<900?1024:2048,window.innerWidth<900?1024:2048)')
+          anchor='const originalEnvironment=S.environment;'
+          extra="""const clean=document.createElement('button');clean.id='cleanscene';clean.textContent='Model only';clean.setAttribute('aria-label','Toggle model-only view');document.body.append(clean);let isolated=false;function clearView(value){isolated=value;F.capture(value);clean.textContent=value?'Show controls':'Model only';F.pose(F.progress)}clean.onclick=()=>clearView(!isolated);addEventListener('keydown',e=>{if(e.key==='Escape'&&isolated)clearView(false)});"""
+          assert anchor in q;q=q.replace(anchor,anchor+extra)
+          (site/'quality06.js').write_text(q);(root/'quality06.js').write_text(q)
+          v=(site/'viewer.js').read_text().replace('o.castShadow=!o.material.transparent;','o.castShadow=!o.material.transparent&&!(o.material.transmission>.5);')
+          (site/'viewer.js').write_text(v)
+          with (site/'style.css').open('a') as f:f.write('''\n#cleanscene{position:fixed;right:24px;bottom:24px;z-index:8;padding:10px 15px;border:1px solid #a9bac4;border-radius:8px;background:#e6eef1dd;color:#233d4c;backdrop-filter:blur(12px)}body.capture #cleanscene{opacity:.75}@media(max-width:899px){.presentation{display:grid;grid-template-columns:1fr 1fr;max-width:200px;gap:5px}.presentation button{min-width:0;width:auto;padding:7px 6px}.presentation #bayenvironment{grid-column:1 / 3}#cleanscene{bottom:auto;top:65px;right:12px;padding:6px 9px;font-size:10px}}\n''')
+          r=json.loads((site/'bay06_report.json').read_text());r['presentation_review']=['Reduced water glare','Model-only toggle','Transparent glass does not cast opaque shadow','Phone two-column controls'];(site/'bay06_report.json').write_text(json.dumps(r,indent=2))
+          verify=(root/'verify06.py').read_text().replace("for asset in ['bay','n','w','d','chase']:","for asset in ['bay']:").replace("len(report['tests'])==10","len(report['tests'])==2")
+          marker="page.wait_for_timeout(400);item['ready_seconds']"
+          verify=verify.replace(marker,"page.wait_for_timeout(400);page.locator('#cleanscene').click();page.wait_for_timeout(300);page.screenshot(path=str(OUT/f'{device}_bay_clean.png'));page.locator('#cleanscene').click();item['ready_seconds']")
+          (root/'verify_presentation.py').write_text(verify)
+          print(root)
+          PY
+      - name: Review both Bay viewports without publishing unreviewed changes
+        run: |
+          python -m pip install -q playwright==1.55.0
+          python -m playwright install --with-deps chromium >/dev/null
+          ROOT=/tmp/native-bay06/home/runner/work/helper/helper/atlas_bay_studio_06
+          mkdir -p /tmp/bay06-presentation
+          python -m http.server 8816 --bind 127.0.0.1 --directory "$ROOT/site" >/tmp/bay06-presentation/http.log 2>&1 &
+          sleep 2
+          BASE_URL=http://127.0.0.1:8816/index.html REVIEW_DIR=/tmp/bay06-presentation python "$ROOT/verify_presentation.py"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ATLAS-Bay-06-Tuned-Presentation-Review
+          path: |
+            /tmp/native-bay06/home/runner/work/helper/helper/atlas_bay_studio_06/
+            /tmp/bay06-presentation/
+          retention-days: 30
