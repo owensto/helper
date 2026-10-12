@@ -1,0 +1,605 @@
+{
+  "url": "https://rawcdn.githack.com/owensto/helper/ac6d3f81543fe23231d9de5c991cb430d8e54338/atlas_bay_studio_06/live/index.html",
+  "passed": true,
+  "offline_injected": false,
+  "physical_phone_test": false,
+  "engineering_validated": false,
+  "tests": [
+    {
+      "asset": "bay",
+      "device": "desktop",
+      "passed": true,
+      "errors": [],
+      "asset_failures": [],
+      "http_status": 200,
+      "host_confirmation_required": true,
+      "initial": {
+        "previousBay": false,
+        "shallowBay": false,
+        "topRodHolders": 6,
+        "asset": "bay",
+        "progress": 0,
+        "rootPosition": [
+          0,
+          0,
+          0
+        ],
+        "duration": 60,
+        "animations": 8,
+        "meshes": 99,
+        "drawCalls": 296,
+        "cutaway": false,
+        "visibleInteriorMeshes": 0,
+        "clippedExteriorMeshes": 0,
+        "interiorLoadState": "not-requested",
+        "sectionOffset": 0,
+        "sectionMode": "side",
+        "engineeringValidated": false,
+        "top": [
+          0,
+          0,
+          0
+        ],
+        "bay": null,
+        "chase": null
+      },
+      "model_only_view_verified": true,
+      "ready_seconds": 30.69,
+      "GPS_housing": true,
+      "comparison_camera_delta_m": 0.0,
+      "shader_errors": []
+    },
+    {
+      "asset": "n",
+      "device": "desktop",
+      "passed": true,
+      "errors": [],
+      "asset_failures": [],
+      "http_status": 200,
+      "host_confirmation_required": true,
+      "initial": {
+        "previousBay": false,
+        "shallowBay": false,
+        "topRodHolders": null,
+        "asset": "n",
+        "progress": 0,
+        "rootPosition": [
+          0,
+          -2,
+          -0.0
+        ],
+        "duration": 60,
+        "animations": 8,
+        "meshes": 28,
+        "drawCalls": 29,
+        "cutaway": false,
+        "visibleInteriorMeshes": 0,
+        "clippedExteriorMeshes": 0,
+        "interiorLoadState": "not-requested",
+        "sectionOffset": 0,
+        "sectionMode": "side",
+        "engineeringValidated": false,
+        "top": null,
+        "bay": null,
+        "chase": null
+      },
+      "ready_seconds": 1.78,
+      "cutaway": {
+        "previousBay": false,
+        "shallowBay": false,
+        "topRodHolders": null,
+        "asset": "n",
+        "progress": 0,
+        "rootPosition": [
+          0,
+          -2,
+          -0.0
+        ],
+        "duration": 60,
+        "animations": 8,
+        "meshes": 39,
+        "drawCalls": 39,
+        "cutaway": true,
+        "visibleInteriorMeshes": 11,
+        "clippedExteriorMeshes": 28,
+        "interiorLoadState": "loaded",
+        "sectionOffset": 0,
+        "sectionMode": "side",
+        "engineeringValidated": false,
+        "top": null,
+        "bay": null,
+        "chase": null
+      },
+      "shader_errors": []
+    },
+    {
+      "asset": "w",
+      "device": "desktop",
+      "passed": true,
+      "errors": [],
+      "asset_failures": [],
+      "http_status": 200,
+      "host_confirmation_required": true,
+      "initial": {
+        "previousBay": false,
+        "shallowBay": false,
+        "topRodHolders": null,
+        "asset": "w",
+        "progress": 0,
+        "rootPosition": [
+          0,
+          0,
+          0
+        ],
+        "duration": 60,
+        "animations": 26,
+        "meshes": 55,
+        "drawCalls": 58,
+        "cutaway": false,
+        "visibleInteriorMeshes": 0,
+        "clippedExteriorMeshes": 0,
+        "interiorLoadState": "not-requested",
+        "sectionOffset": 0,
+        "sectionMode": "side",
+        "engineeringValidated": false,
+        "top": null,
+        "bay": null,
+        "chase": null
+      },
+      "ready_seconds": 2.41,
+      "cutaway": {
+        "previousBay": false,
+        "shallowBay": false,
+        "topRodHolders": null,
+        "asset": "w",
+        "progress": 0,
+        "rootPosition": [
+          0,
+          0,
+          0
+        ],
+        "duration": 60,
+        "animations": 26,
+        "meshes": 66,
+        "drawCalls": 68,
+        "cutaway": true,
+        "visibleInteriorMeshes": 11,
+        "clippedExteriorMeshes": 55,
+        "interiorLoadState": "loaded",
+        "sectionOffset": 0,
+        "sectionMode": "side",
+        "engineeringValidated": false,
+        "top": null,
+        "bay": null,
+        "chase": null
+      },
+      "shader_errors": []
+    },
+    {
+      "asset": "d",
+      "device": "desktop",
+      "passed": true,
+      "errors": [],
+      "asset_failures": [],
+      "http_status": 200,
+      "host_confirmation_required": true,
+      "initial": {
+        "previousBay": false,
+        "shallowBay": false,
+        "topRodHolders": null,
+        "asset": "d",
+        "progress": 0,
+        "rootPosition": [
+          0,
+          0,
+          -0.0
+        ],
+        "duration": 72,
+        "animations": 56,
+        "meshes": 274,
+        "drawCalls": 253,
+        "cutaway": false,
+        "visibleInteriorMeshes": 0,
+        "clippedExteriorMeshes": 0,
+        "interiorLoadState": "not-requested",
+        "sectionOffset": 0,
+        "sectionMode": "side",
+        "engineeringValidated": false,
+        "top": [
+          -10,
+          0,
+          17.200000762939453
+        ],
+        "bay": [
+          -10,
+          0,
+          17.200000762939453
+        ],
+        "chase": [
+          -23,
+          0,
+          17
+        ]
+      },
+      "ready_seconds": 3.86,
+      "final": {
+        "previousBay": false,
+        "shallowBay": false,
+        "topRodHolders": null,
+        "asset": "d",
+        "progress": 1,
+        "rootPosition": [
+          0,
+          -26,
+          -0.0
+        ],
+        "duration": 72,
+        "animations": 56,
+        "meshes": 274,
+        "drawCalls": 253,
+        "cutaway": false,
+        "visibleInteriorMeshes": 0,
+        "clippedExteriorMeshes": 0,
+        "interiorLoadState": "not-requested",
+        "sectionOffset": 0,
+        "sectionMode": "side",
+        "engineeringValidated": false,
+        "top": [
+          -33.70000076293945,
+          -24.6599999666214,
+          -2.5
+        ],
+        "bay": [
+          -33.70000076293945,
+          -24.6599999666214,
+          -2.5
+        ],
+        "chase": [
+          -33.70000076293945,
+          -24.830000042915344,
+          2.5
+        ]
+      },
+      "shader_errors": []
+    },
+    {
+      "asset": "chase",
+      "device": "desktop",
+      "passed": true,
+      "errors": [],
+      "asset_failures": [],
+      "http_status": 200,
+      "host_confirmation_required": true,
+      "initial": {
+        "previousBay": false,
+        "shallowBay": false,
+        "topRodHolders": null,
+        "asset": "chase",
+        "progress": 0,
+        "rootPosition": [
+          0,
+          0,
+          0
+        ],
+        "duration": 60,
+        "animations": 0,
+        "meshes": 9,
+        "drawCalls": 10,
+        "cutaway": false,
+        "visibleInteriorMeshes": 0,
+        "clippedExteriorMeshes": 0,
+        "interiorLoadState": "not-requested",
+        "sectionOffset": 0,
+        "sectionMode": "side",
+        "engineeringValidated": false,
+        "top": null,
+        "bay": null,
+        "chase": [
+          0,
+          0,
+          0
+        ]
+      },
+      "ready_seconds": 5.58,
+      "shader_errors": []
+    },
+    {
+      "asset": "bay",
+      "device": "phone",
+      "passed": true,
+      "errors": [],
+      "asset_failures": [],
+      "http_status": 200,
+      "host_confirmation_required": true,
+      "initial": {
+        "previousBay": false,
+        "shallowBay": false,
+        "topRodHolders": 6,
+        "asset": "bay",
+        "progress": 0,
+        "rootPosition": [
+          0,
+          0,
+          0
+        ],
+        "duration": 60,
+        "animations": 8,
+        "meshes": 99,
+        "drawCalls": 296,
+        "cutaway": false,
+        "visibleInteriorMeshes": 0,
+        "clippedExteriorMeshes": 0,
+        "interiorLoadState": "not-requested",
+        "sectionOffset": 0,
+        "sectionMode": "side",
+        "engineeringValidated": false,
+        "top": [
+          0,
+          0,
+          0
+        ],
+        "bay": null,
+        "chase": null
+      },
+      "model_only_view_verified": true,
+      "ready_seconds": 16.6,
+      "GPS_housing": true,
+      "comparison_camera_delta_m": 0.0,
+      "shader_errors": []
+    },
+    {
+      "asset": "n",
+      "device": "phone",
+      "passed": true,
+      "errors": [],
+      "asset_failures": [],
+      "http_status": 200,
+      "host_confirmation_required": true,
+      "initial": {
+        "previousBay": false,
+        "shallowBay": false,
+        "topRodHolders": null,
+        "asset": "n",
+        "progress": 0,
+        "rootPosition": [
+          0,
+          -2,
+          -0.0
+        ],
+        "duration": 60,
+        "animations": 8,
+        "meshes": 28,
+        "drawCalls": 29,
+        "cutaway": false,
+        "visibleInteriorMeshes": 0,
+        "clippedExteriorMeshes": 0,
+        "interiorLoadState": "not-requested",
+        "sectionOffset": 0,
+        "sectionMode": "side",
+        "engineeringValidated": false,
+        "top": null,
+        "bay": null,
+        "chase": null
+      },
+      "ready_seconds": 4.64,
+      "cutaway": {
+        "previousBay": false,
+        "shallowBay": false,
+        "topRodHolders": null,
+        "asset": "n",
+        "progress": 0,
+        "rootPosition": [
+          0,
+          -2,
+          -0.0
+        ],
+        "duration": 60,
+        "animations": 8,
+        "meshes": 39,
+        "drawCalls": 39,
+        "cutaway": true,
+        "visibleInteriorMeshes": 11,
+        "clippedExteriorMeshes": 28,
+        "interiorLoadState": "loaded",
+        "sectionOffset": 0,
+        "sectionMode": "side",
+        "engineeringValidated": false,
+        "top": null,
+        "bay": null,
+        "chase": null
+      },
+      "shader_errors": []
+    },
+    {
+      "asset": "w",
+      "device": "phone",
+      "passed": true,
+      "errors": [],
+      "asset_failures": [],
+      "http_status": 200,
+      "host_confirmation_required": true,
+      "initial": {
+        "previousBay": false,
+        "shallowBay": false,
+        "topRodHolders": null,
+        "asset": "w",
+        "progress": 0,
+        "rootPosition": [
+          0,
+          0,
+          0
+        ],
+        "duration": 60,
+        "animations": 26,
+        "meshes": 55,
+        "drawCalls": 58,
+        "cutaway": false,
+        "visibleInteriorMeshes": 0,
+        "clippedExteriorMeshes": 0,
+        "interiorLoadState": "not-requested",
+        "sectionOffset": 0,
+        "sectionMode": "side",
+        "engineeringValidated": false,
+        "top": null,
+        "bay": null,
+        "chase": null
+      },
+      "ready_seconds": 2.55,
+      "cutaway": {
+        "previousBay": false,
+        "shallowBay": false,
+        "topRodHolders": null,
+        "asset": "w",
+        "progress": 0,
+        "rootPosition": [
+          0,
+          0,
+          0
+        ],
+        "duration": 60,
+        "animations": 26,
+        "meshes": 66,
+        "drawCalls": 68,
+        "cutaway": true,
+        "visibleInteriorMeshes": 11,
+        "clippedExteriorMeshes": 55,
+        "interiorLoadState": "loaded",
+        "sectionOffset": 0,
+        "sectionMode": "side",
+        "engineeringValidated": false,
+        "top": null,
+        "bay": null,
+        "chase": null
+      },
+      "shader_errors": []
+    },
+    {
+      "asset": "d",
+      "device": "phone",
+      "passed": true,
+      "errors": [],
+      "asset_failures": [],
+      "http_status": 200,
+      "host_confirmation_required": true,
+      "initial": {
+        "previousBay": false,
+        "shallowBay": false,
+        "topRodHolders": null,
+        "asset": "d",
+        "progress": 0,
+        "rootPosition": [
+          0,
+          0,
+          -0.0
+        ],
+        "duration": 72,
+        "animations": 56,
+        "meshes": 274,
+        "drawCalls": 253,
+        "cutaway": false,
+        "visibleInteriorMeshes": 0,
+        "clippedExteriorMeshes": 0,
+        "interiorLoadState": "not-requested",
+        "sectionOffset": 0,
+        "sectionMode": "side",
+        "engineeringValidated": false,
+        "top": [
+          -10,
+          0,
+          17.200000762939453
+        ],
+        "bay": [
+          -10,
+          0,
+          17.200000762939453
+        ],
+        "chase": [
+          -23,
+          0,
+          17
+        ]
+      },
+      "ready_seconds": 2.98,
+      "final": {
+        "previousBay": false,
+        "shallowBay": false,
+        "topRodHolders": null,
+        "asset": "d",
+        "progress": 1,
+        "rootPosition": [
+          0,
+          -26,
+          -0.0
+        ],
+        "duration": 72,
+        "animations": 56,
+        "meshes": 274,
+        "drawCalls": 253,
+        "cutaway": false,
+        "visibleInteriorMeshes": 0,
+        "clippedExteriorMeshes": 0,
+        "interiorLoadState": "not-requested",
+        "sectionOffset": 0,
+        "sectionMode": "side",
+        "engineeringValidated": false,
+        "top": [
+          -33.70000076293945,
+          -24.6599999666214,
+          -2.5
+        ],
+        "bay": [
+          -33.70000076293945,
+          -24.6599999666214,
+          -2.5
+        ],
+        "chase": [
+          -33.70000076293945,
+          -24.830000042915344,
+          2.5
+        ]
+      },
+      "shader_errors": []
+    },
+    {
+      "asset": "chase",
+      "device": "phone",
+      "passed": true,
+      "errors": [],
+      "asset_failures": [],
+      "http_status": 200,
+      "host_confirmation_required": true,
+      "initial": {
+        "previousBay": false,
+        "shallowBay": false,
+        "topRodHolders": null,
+        "asset": "chase",
+        "progress": 0,
+        "rootPosition": [
+          0,
+          0,
+          0
+        ],
+        "duration": 60,
+        "animations": 0,
+        "meshes": 9,
+        "drawCalls": 10,
+        "cutaway": false,
+        "visibleInteriorMeshes": 0,
+        "clippedExteriorMeshes": 0,
+        "interiorLoadState": "not-requested",
+        "sectionOffset": 0,
+        "sectionMode": "side",
+        "engineeringValidated": false,
+        "top": null,
+        "bay": null,
+        "chase": [
+          0,
+          0,
+          0
+        ]
+      },
+      "ready_seconds": 1.93,
+      "shader_errors": []
+    }
+  ]
+}
