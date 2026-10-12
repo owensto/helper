@@ -1,0 +1,45 @@
+name: ATLAS Bay 06 rendering dependencies
+on:
+  push:
+    paths: ['.github/workflows/atlas-bay-studio-06-renderdeps.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  prepare:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 8
+    steps:
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Bundle pinned browser renderer and retrieve CC0 lighting
+        run: |
+          mkdir -p /tmp/bay06deps/assets
+          cd /tmp/bay06deps
+          npm init -y >/dev/null
+          npm install --silent three@0.180.0 esbuild@0.25.10
+          cat > entry.js <<'JS'
+          import * as THREE from 'three';
+          import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+          import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+          import { RGBELoader } from 'three/addons/loaders/RGBELoader.js';
+          import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
+          import { Water } from 'three/addons/objects/Water.js';
+          window.ATLASRuntime={...THREE,OrbitControls,GLTFLoader,RGBELoader,RoomEnvironment,Water};
+          JS
+          npx esbuild entry.js --bundle --minify --outfile=runtime.js
+          curl --fail --retry 3 -L https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/1k/kloppenheim_06_puresky_1k.hdr -o assets/coastal_sky.hdr
+          curl --fail --retry 3 -L https://raw.githubusercontent.com/mrdoob/three.js/r180/examples/textures/waternormals.jpg -o assets/waternormals.jpg
+          cp node_modules/three/LICENSE THIRD_PARTY_LICENSE.txt
+          printf '\nSky HDRI: Kloppenheim 06 (Pure Sky), Poly Haven, CC0. https://polyhaven.com/a/kloppenheim_06_puresky https://polyhaven.com/license\nWater normal texture: Three.js r180 examples; used with Three.js MIT notice.\nPinned runtime: Three.js 0.180.0; esbuild 0.25.10.\n' >> THIRD_PARTY_LICENSE.txt
+          sha256sum runtime.js assets/* > SHA256SUMS
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ATLAS-Bay-06-Rendering-Dependencies
+          path: |
+            /tmp/bay06deps/runtime.js
+            /tmp/bay06deps/assets/
+            /tmp/bay06deps/THIRD_PARTY_LICENSE.txt
+            /tmp/bay06deps/SHA256SUMS
+          retention-days: 30
