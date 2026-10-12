@@ -34,9 +34,9 @@ jobs:
         run: |
           git fetch --no-tags origin ffb9f5eef39ff765e9a1719e7824fa5a4c99024a
           mkdir -p /tmp/bay06base /tmp/bay06/review "$FLEET_ROOT/staging" "$FLEET_ROOT/models"
-          git archive ffb9f5eef39ff765e9a1719e7824fa5a4c99024a atlas_bay_studio_05/live atlas_bay_studio_05/source | tar -x -C /tmp/bay06base
+          git archive ffb9f5eef39ff765e9a1719e7824fa5a4c99024a atlas_bay_studio_05/live atlas_bay_studio_04/source | tar -x -C /tmp/bay06base
           cp -R /tmp/bay06base/atlas_bay_studio_05/live "$FLEET_ROOT/site"
-          cp -R /tmp/bay06base/atlas_bay_studio_05/source "$FLEET_ROOT/source"
+          cp -R /tmp/bay06base/atlas_bay_studio_04/source "$FLEET_ROOT/source"
           cp /tmp/bay06deps/runtime.js "$FLEET_ROOT/site/runtime.js"
           cp /tmp/bay06deps/assets/* "$FLEET_ROOT/site/assets/"
           cat /tmp/bay06deps/THIRD_PARTY_LICENSE.txt >> "$FLEET_ROOT/site/THIRD_PARTY_LICENSE.txt"
