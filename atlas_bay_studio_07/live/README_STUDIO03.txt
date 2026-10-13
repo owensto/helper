@@ -1,0 +1,1 @@
+ATLAS Bay 25 / Studio 03. Standalone Bay refined first; other models unchanged. Compare previous Bay holds the camera. New tender has not been substituted into Explorer. Source and Blender master included in the build artifact. No operating, structural or pressure qualification.

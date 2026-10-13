@@ -1,0 +1,75 @@
+{
+  "revision": "Bay 25 Studio 07",
+  "scope": "Standalone Bay appearance refinement; fleet and Explorer integration unchanged",
+  "engine": "Single 300 hp-class original exterior concept, not a manufacturer replica or rated installation",
+  "450_status": "Not installed; retain for a separate equipment/weight/transom study",
+  "top_rod_holders": 6,
+  "GPS_housing": true,
+  "engineering_validated": false,
+  "actual_draft_known": false,
+  "changes": [
+    "Replaced coarse outboard cowling with continuous curved pearl shell and dark lower cowl",
+    "Surface-following intake inlays and fine ribs, smaller 300 and ATLAS identifiers",
+    "Contoured external driveshaft housing, lower-unit fairing, plate and skeg",
+    "Preserved approved hull, roof, all six holders, GPS and original fishing animation",
+    "Refined pale upholstery insert and deck-material contrast",
+    "New Showroom viewpoint and model-only presentation with corrected water reflections"
+  ],
+  "detail_components": 59,
+  "preservation": {
+    "ATLAS_Bay_25": {
+      "EX_Hull": 0.0,
+      "FIXED_TTop": 0.0
+    },
+    "ATLAS_Bay_25_Shallow_Study": {
+      "EX_Hull": 0.0,
+      "FIXED_TTop": 0.0
+    }
+  },
+  "assets": {
+    "ATLAS_Bay_25": {
+      "bytes": 10221040,
+      "animation_channels": 8,
+      "replaced_engine_meshes": 8,
+      "browser_bytes": 9273956
+    },
+    "ATLAS_Bay_25_Shallow_Study": {
+      "bytes": 10342160,
+      "animation_channels": 8,
+      "replaced_engine_meshes": 8,
+      "browser_bytes": 9374372
+    }
+  },
+  "native_preservation": {
+    "ATLAS_Bay_25": {
+      "EX_Hull": 0.0,
+      "FIXED_TTop": 0.0
+    },
+    "ATLAS_Bay_25_Shallow_Study": {
+      "EX_Hull": 0.0,
+      "FIXED_TTop": 0.0
+    }
+  },
+  "unchanged_fleet": {
+    "ATLAS_D.glb": "ee88a5826248b5c97bb13c95cdce85e71d717da58c5c6905412864f171acf6e1",
+    "ATLAS_N.glb": "0887994518aee300122a298c708742f0264d6263780d3e360f17c4474f2c39c1",
+    "ATLAS_N_Interior.glb": "897bf10cafe217f06416e854da7976e4824fa0681a50559c1c6f9d2592159961",
+    "ATLAS_W.glb": "cfce666ed4c79446e7ad7c86be45385db7056618be4cdb233e4bf2b79241f27f",
+    "ATLAS_W_Interior.glb": "a985955061bd71b948babe14e25f393987e252e481b73eae9ce09386143ccab7",
+    "ATLAS_Chase_12.glb": "ae2514764935f1e8b4ce2eb55f25d34cb02fda0ec80366510e04f99abb697db8"
+  },
+  "source_review_run": 38333829721,
+  "source_review_artifact": 11783783140,
+  "verification_method": "Wait for actual playback progress instead of assuming it occurs within 700 ms on software rendering. All motion, preservation, comparison, loading and error assertions retained.",
+  "asset_sha256": {
+    "ATLAS_N.glb": "0887994518aee300122a298c708742f0264d6263780d3e360f17c4474f2c39c1",
+    "ATLAS_Bay_25_Shallow_Study.glb": "172c4ecdd6bcbcbf2c070066773430a8941eeca088ff5739d007905db0ecf757",
+    "ATLAS_Bay_25_Previous.glb": "a018c328794cdc8c22b7ada072e631a28a7ad82896333f64c381c0b5c3ad2e6d",
+    "ATLAS_N_Interior.glb": "897bf10cafe217f06416e854da7976e4824fa0681a50559c1c6f9d2592159961",
+    "ATLAS_D.glb": "ee88a5826248b5c97bb13c95cdce85e71d717da58c5c6905412864f171acf6e1",
+    "ATLAS_Chase_12.glb": "ae2514764935f1e8b4ce2eb55f25d34cb02fda0ec80366510e04f99abb697db8",
+    "ATLAS_Bay_25.glb": "b6f579604c0226102abe1ac5418be7f0d5ba78b0ef84dff4f933b569cd575075",
+    "ATLAS_W.glb": "cfce666ed4c79446e7ad7c86be45385db7056618be4cdb233e4bf2b79241f27f",
+    "ATLAS_W_Interior.glb": "a985955061bd71b948babe14e25f393987e252e481b73eae9ce09386143ccab7"
+  }
+}

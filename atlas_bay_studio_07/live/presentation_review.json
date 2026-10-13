@@ -1,0 +1,95 @@
+{
+  "url": "http://127.0.0.1:8816/index.html",
+  "passed": true,
+  "offline_injected": false,
+  "physical_phone_test": false,
+  "engineering_validated": false,
+  "tests": [
+    {
+      "asset": "bay",
+      "device": "desktop",
+      "passed": true,
+      "errors": [],
+      "asset_failures": [],
+      "http_status": 200,
+      "host_confirmation_required": false,
+      "initial": {
+        "previousBay": false,
+        "shallowBay": false,
+        "topRodHolders": 6,
+        "asset": "bay",
+        "progress": 0,
+        "rootPosition": [
+          0,
+          0,
+          0
+        ],
+        "duration": 60,
+        "animations": 8,
+        "meshes": 99,
+        "drawCalls": 296,
+        "cutaway": false,
+        "visibleInteriorMeshes": 0,
+        "clippedExteriorMeshes": 0,
+        "interiorLoadState": "not-requested",
+        "sectionOffset": 0,
+        "sectionMode": "side",
+        "engineeringValidated": false,
+        "top": [
+          0,
+          0,
+          0
+        ],
+        "bay": null,
+        "chase": null
+      },
+      "ready_seconds": 29.03,
+      "GPS_housing": true,
+      "comparison_camera_delta_m": 0.0,
+      "shader_errors": []
+    },
+    {
+      "asset": "bay",
+      "device": "phone",
+      "passed": true,
+      "errors": [],
+      "asset_failures": [],
+      "http_status": 200,
+      "host_confirmation_required": false,
+      "initial": {
+        "previousBay": false,
+        "shallowBay": false,
+        "topRodHolders": 6,
+        "asset": "bay",
+        "progress": 0,
+        "rootPosition": [
+          0,
+          0,
+          0
+        ],
+        "duration": 60,
+        "animations": 8,
+        "meshes": 99,
+        "drawCalls": 296,
+        "cutaway": false,
+        "visibleInteriorMeshes": 0,
+        "clippedExteriorMeshes": 0,
+        "interiorLoadState": "not-requested",
+        "sectionOffset": 0,
+        "sectionMode": "side",
+        "engineeringValidated": false,
+        "top": [
+          0,
+          0,
+          0
+        ],
+        "bay": null,
+        "chase": null
+      },
+      "ready_seconds": 15.51,
+      "GPS_housing": true,
+      "comparison_camera_delta_m": 0.0,
+      "shader_errors": []
+    }
+  ]
+}

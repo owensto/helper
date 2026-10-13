@@ -1,0 +1,20 @@
+[
+  {
+    "asset": "ATLAS_Bay_25",
+    "native_file": "ATLAS_Bay_25_Studio05.blend",
+    "blender_version": "4.0.2",
+    "exported_from_native": true,
+    "native_bytes": 31279732,
+    "browser_bytes": 7407208,
+    "engineering_validated": false
+  },
+  {
+    "asset": "ATLAS_Bay_25_Shallow_Study",
+    "native_file": "ATLAS_Bay_25_Shallow_Study05.blend",
+    "blender_version": "4.0.2",
+    "exported_from_native": true,
+    "native_bytes": 31280108,
+    "browser_bytes": 7462220,
+    "engineering_validated": false
+  }
+]

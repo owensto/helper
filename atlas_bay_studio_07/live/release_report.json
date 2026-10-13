@@ -1,0 +1,125 @@
+{
+  "release": "ATLAS Fleet 02 \u2014 Atelier and section inspection",
+  "date": "2026-10-11",
+  "source_r10_unchanged": true,
+  "assets": [
+    "ATLAS_D",
+    "ATLAS_N",
+    "ATLAS_W",
+    "ATLAS_Bay_25",
+    "ATLAS_Chase_12"
+  ],
+  "nominal_dimensions_m": {
+    "D": [
+      82.9,
+      14.2
+    ],
+    "N": [
+      80,
+      9
+    ],
+    "W": [
+      125,
+      18
+    ],
+    "Bay_hull": [
+      7.5,
+      2.6
+    ]
+  },
+  "fishing_tender": {
+    "fixed_t_top": true,
+    "t_top_not_scaled_or_removed": true,
+    "outboard_included": true,
+    "rods_stow_by_rigid_rotation": true,
+    "secured_full_mesh_bounds_m": [
+      [
+        -4.801321944167549,
+        -0.49998828768730164,
+        -1.3519929647445679
+      ],
+      [
+        3.784679889678955,
+        2.8761608600616455,
+        1.3519929647445679
+      ]
+    ],
+    "secured_full_mesh_dimensions_m": [
+      8.586001833846504,
+      3.376149147748947,
+      2.7039859294891357
+    ],
+    "chosen_lift_m": 1.34,
+    "stored_craft_radial_gap_m": 0.21631162033300888,
+    "stored_carrier_radial_gap_m": 0.10696971360289398,
+    "combined_aft_gap_m": 1.6986772928929952,
+    "combined_forward_gap_m": 2.7153208732604988,
+    "sampled_aligned_insertion_minimum_gap_m": 0.10696971360289398,
+    "samples": 81,
+    "geometric_barrel_containment_passed": true
+  },
+  "not_validated": [
+    "whole recovery path including outer styling apertures and closure sweeps",
+    "carrier contacts, structural loads, tolerances and wave motion",
+    "dry garage pressure resistance and surface opening freeboard",
+    "upper shell nesting against all installed services",
+    "whole vessel mass, stability, pressure rating, safe diving",
+    "naval combat, sensor or stealth performance"
+  ],
+  "engineering_validated": false,
+  "scope": "Visual models, selected geometric fit screen, original non-operational naval exterior representations",
+  "complete_production_plan_finished": false,
+  "cutaway_implementation": "Local clipping of exterior meshes with separately loaded interior; cross-section side and deck controls",
+  "design_audit": {
+    "permanent_envelopes": [
+      {
+        "assembly": "ENG_Pressure",
+        "maximum_internal_change_after_removing_vessel_translation_m": 0.0
+      },
+      {
+        "assembly": "ENG_Upper",
+        "maximum_internal_change_after_removing_vessel_translation_m": 0.0
+      },
+      {
+        "assembly": "ENG_Lower",
+        "maximum_internal_change_after_removing_vessel_translation_m": 0.0
+      }
+    ],
+    "outer_shell_vertical_screens": [
+      {
+        "assembly": "MOV_Shell_Upper",
+        "minimum_vertical_bbox_separation_from_core_m": 0.48000001907348633,
+        "samples": 25,
+        "scope": "Vertical bounds only. Excludes mast, access trunks, support mechanisms and all other body pairs."
+      },
+      {
+        "assembly": "MOV_Shell_Bridge",
+        "minimum_vertical_bbox_separation_from_core_m": 0.9899997711181641,
+        "samples": 25,
+        "scope": "Vertical bounds only. Excludes mast, access trunks, support mechanisms and all other body pairs."
+      },
+      {
+        "assembly": "MOV_Shell_Sky",
+        "minimum_vertical_bbox_separation_from_core_m": 2.0500001907348633,
+        "samples": 25,
+        "scope": "Vertical bounds only. Excludes mast, access trunks, support mechanisms and all other body pairs."
+      }
+    ],
+    "mass_budget_closed": false,
+    "surface_stability_solved": false,
+    "pressure_rating": null,
+    "garage_entrance_freeboard_resolved": false,
+    "speculative_shell_nesting": true
+  },
+  "changes": [
+    "Rebuilt Bay 25 contoured T-top, console, twin bolster seating, outboard cowling and livewell aperture",
+    "New coaming pads, EVA inserts, audio grilles, hull trim, wiring and fishing fittings",
+    "New submarine sail surfacing and restrained exterior/access fittings",
+    "New ship doors, rail correction, flight-deck edge nets, service details and interior lights",
+    "Section clipping, retryable lazy interiors, side flip and deck-only mode replace fade-only cutaway",
+    "Paint clearcoat and embedded fabric/nonslip textures; model-scaled shadows and reflection environment",
+    "Native animation time-base correction"
+  ],
+  "release_completion_scope": "Cutaway repair, Bay 25 visual refinement, presentation improvements, and limited ATLAS-D arrangement audit. Not full production plan completion.",
+  "cutaway_camera": "Full-vessel framing for initial ATLAS-N and ATLAS-W section view; separate close-up presets remain."
+}
