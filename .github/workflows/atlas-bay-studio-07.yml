@@ -1,0 +1,91 @@
+name: ATLAS Bay 25 Studio 07
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'atlas_bay_studio_07/*.py'
+      - 'atlas_bay_studio_07/REVIEW.md'
+      - '.github/workflows/atlas-bay-studio-07.yml'
+permissions:
+  contents: write
+concurrency:
+  group: atlas-bay-studio-07
+  cancel-in-progress: true
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    env:
+      FLEET_ROOT: ${{ github.workspace }}/atlas_bay_studio_07
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Restore reviewed Bay baseline without changing earlier releases
+        run: |
+          git fetch --no-tags origin ac6d3f81543fe23231d9de5c991cb430d8e54338
+          mkdir -p /tmp/bay07-base /tmp/bay07/review "$FLEET_ROOT/models" "$FLEET_ROOT/staging"
+          git archive ac6d3f81543fe23231d9de5c991cb430d8e54338 atlas_bay_studio_06/live atlas_bay_studio_04/source | tar -x -C /tmp/bay07-base
+          cp -R /tmp/bay07-base/atlas_bay_studio_06/live "$FLEET_ROOT/site"
+          cp -R /tmp/bay07-base/atlas_bay_studio_04/source "$FLEET_ROOT/source"
+          python "$FLEET_ROOT/pipeline07.py" prepare
+      - name: Build actual outboard surfaces and preserve the hull
+        run: |
+          python -m pip install -q numpy==2.3.5 trimesh==4.11.1 scipy shapely networkx pillow matplotlib playwright==1.55.0
+          python "$FLEET_ROOT/refine07.py"
+      - name: Save native Blender masters and verify export geometry
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq blender python3-numpy libegl1 >/dev/null
+          env -u PYTHONHOME -u PYTHONPATH -u LD_LIBRARY_PATH LIBGL_ALWAYS_SOFTWARE=1 /usr/bin/blender -b --python-exit-code 1 --python "$FLEET_ROOT/native07.py"
+          python "$FLEET_ROOT/pipeline07.py" audit
+      - name: Inspect all viewer entries and model comparisons
+        run: |
+          python -m playwright install --with-deps chromium >/dev/null
+          python -m http.server 8837 --bind 127.0.0.1 --directory "$FLEET_ROOT/site" >/tmp/bay07/http.log 2>&1 &
+          sleep 2
+          BASE_URL=http://127.0.0.1:8837/index.html REVIEW_DIR=/tmp/bay07/review python "$FLEET_ROOT/verify07.py"
+      - name: Publish visually reviewed separate release
+        id: publish
+        if: contains(github.event.head_commit.message, '[ship]')
+        run: |
+          mkdir -p "$FLEET_ROOT/live"
+          cp -R "$FLEET_ROOT/site/." "$FLEET_ROOT/live/"
+          cp /tmp/bay07/review/validation.json "$FLEET_ROOT/live/browser_validation.json"
+          git config user.name 'ATLAS release'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -f atlas_bay_studio_07/live atlas_bay_studio_07/verify07.py
+          git commit -m 'Publish Bay Studio 07: sculpted 300, tailored finishes and coastal viewer'
+          git stash push -u -m bay07-generated
+          git pull --rebase origin main
+          git push origin HEAD:main
+          git stash pop || true
+          echo "url=https://rawcdn.githack.com/owensto/helper/$(git rev-parse HEAD)/atlas_bay_studio_07/live/index.html" >> "$GITHUB_OUTPUT"
+      - name: Verify the exact public URL
+        if: steps.publish.outputs.url != ''
+        env:
+          BASE_URL: ${{ steps.publish.outputs.url }}
+          REVIEW_DIR: /tmp/bay07/public
+        run: python "$FLEET_ROOT/verify07.py"
+      - name: Preserve public verification
+        if: steps.publish.outputs.url != ''
+        run: |
+          cp /tmp/bay07/public/validation.json "$FLEET_ROOT/online_validation.json"
+          git add atlas_bay_studio_07/online_validation.json
+          git commit -m 'Record actual Studio 07 public browser checks'
+          git stash push -u -m bay07-evidence
+          git pull --rebase origin main
+          git push origin HEAD:main
+          git stash pop || true
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ATLAS-Bay-25-Studio-07-Models-Viewer-Evidence
+          path: |
+            /tmp/bay07/
+            atlas_bay_studio_07/models/
+            atlas_bay_studio_07/site/
+            atlas_bay_studio_07/source/
+            atlas_bay_studio_07/*.py
+          retention-days: 30
