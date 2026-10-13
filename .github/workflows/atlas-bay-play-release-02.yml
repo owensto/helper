@@ -1,0 +1,110 @@
+name: ATLAS Bay Play Lab 02
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'atlas_bay_play_release_02/transport/**'
+      - 'atlas_bay_play_release_02/fixups.py'
+      - 'atlas_bay_play_release_02/REVIEW.md'
+      - '.github/workflows/atlas-bay-play-release-02.yml'
+permissions:
+  contents: write
+concurrency:
+  group: atlas-bay-play-release-02
+  cancel-in-progress: true
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    env:
+      BAY_ROOT: ${{ github.workspace }}/atlas_bay_play_release_02
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Restore checksum-verified source and approved boat
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import base64,lzma,json,hashlib
+          r=Path('atlas_bay_play_release_02')
+          b=base64.b64decode(''.join((r/'transport'/f'part{i}.b64').read_text().strip() for i in range(3)),validate=True)
+          assert hashlib.sha256(b).hexdigest()=='6207e2177098de2d64761ea351c3b80e233dfaab136a3c38ee5668ba59c1b0b3','Source transport checksum mismatch'
+          for name,text in json.loads(lzma.decompress(b)).items():
+              p=Path(name);assert p.parts[0] in ('site','source') and '..' not in p.parts
+              out=r/p;out.parent.mkdir(parents=True,exist_ok=True);out.write_text(text)
+          PY
+          git fetch --no-tags origin eb2f86fcf96372fc236d974d647b99139ae057a2
+          mkdir -p /tmp/bayplay02/base /tmp/bayplay02/review "$BAY_ROOT/site/assets" "$BAY_ROOT/models"
+          git archive eb2f86fcf96372fc236d974d647b99139ae057a2 atlas_bay_play_release_01/live atlas_bay_studio_04/source | tar -x -C /tmp/bayplay02/base
+          cp /tmp/bayplay02/base/atlas_bay_play_release_01/live/runtime.js "$BAY_ROOT/site/"
+          cp /tmp/bayplay02/base/atlas_bay_play_release_01/live/THIRD_PARTY_LICENSE.txt "$BAY_ROOT/site/"
+          cp -R /tmp/bayplay02/base/atlas_bay_play_release_01/live/assets/. "$BAY_ROOT/site/assets/"
+          cp "$BAY_ROOT/site/assets/ATLAS_Bay_Play.glb" "$BAY_ROOT/base.glb"
+          cp -R /tmp/bayplay02/base/atlas_bay_studio_04/source "$BAY_ROOT/helpers"
+          if [ -f "$BAY_ROOT/fixups.py" ]; then python "$BAY_ROOT/fixups.py"; fi
+      - name: Build pivoted fittings and test qualitative motion
+        run: |
+          python -m pip install -q numpy==2.3.5 trimesh==4.11.1 scipy shapely networkx pillow matplotlib playwright==1.55.0
+          python "$BAY_ROOT/source/build02.py"
+          for f in app physics coast sound; do node --check "$BAY_ROOT/site/$f.js"; done
+          node "$BAY_ROOT/source/test_motion.js" > /tmp/bayplay02/review/motion_tests.json
+      - name: Save native Blender master and verify preserved hull
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq blender python3-numpy libegl1 >/dev/null
+          env -u PYTHONHOME -u PYTHONPATH -u LD_LIBRARY_PATH LIBGL_ALWAYS_SOFTWARE=1 /usr/bin/blender -b --python-exit-code 1 --python "$BAY_ROOT/source/native02.py"
+          python "$BAY_ROOT/source/audit02.py"
+      - name: Test drawers, bolsters, trim, coasting, drift and UI
+        run: |
+          python -m playwright install --with-deps chromium >/dev/null
+          python -m http.server 8862 --bind 127.0.0.1 --directory "$BAY_ROOT/site" >/tmp/bayplay02/http.log 2>&1 &
+          sleep 2
+          BASE_URL=http://127.0.0.1:8862/index.html REVIEW_DIR=/tmp/bayplay02/review python "$BAY_ROOT/source/verify02.py"
+      - name: Publish only after visual review
+        if: contains(github.event.head_commit.message, '[publish]')
+        id: publish
+        run: |
+          mkdir -p "$BAY_ROOT/live"
+          cp -R "$BAY_ROOT/site/." "$BAY_ROOT/live/"
+          cp /tmp/bayplay02/review/validation.json "$BAY_ROOT/live/browser_validation.json"
+          cp /tmp/bayplay02/review/motion_tests.json "$BAY_ROOT/live/motion_tests.json"
+          git config user.name 'ATLAS release'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -f atlas_bay_play_release_02/live atlas_bay_play_release_02/source atlas_bay_play_release_02/helpers
+          git commit -m 'Publish Bay Play Lab 02: interactive cockpit and qualitative coastal handling'
+          git stash push -u -m bayplay02-generated
+          git pull --rebase origin main
+          git push origin HEAD:main
+          git stash pop || true
+          echo "url=https://rawcdn.githack.com/owensto/helper/$(git rev-parse HEAD)/atlas_bay_play_release_02/live/index.html" >> "$GITHUB_OUTPUT"
+      - name: Verify the exact public app
+        if: steps.publish.outputs.url != ''
+        env:
+          BASE_URL: ${{ steps.publish.outputs.url }}
+          REVIEW_DIR: /tmp/bayplay02/public
+        run: python "$BAY_ROOT/source/verify02.py"
+      - name: Record actual public evidence
+        if: steps.publish.outputs.url != ''
+        run: |
+          cp /tmp/bayplay02/public/validation.json "$BAY_ROOT/online_validation.json"
+          git add atlas_bay_play_release_02/online_validation.json
+          git commit -m 'Record public cockpit and driving tests; not vessel qualification'
+          git stash push -u -m bayplay02-public-evidence
+          git pull --rebase origin main
+          git push origin HEAD:main
+          git stash pop || true
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ATLAS-Bay-PlayLab-02-Models-Review
+          path: |
+            /tmp/bayplay02/review/
+            /tmp/bayplay02/public/
+            /tmp/bayplay02/http.log
+            atlas_bay_play_release_02/site/
+            atlas_bay_play_release_02/models/
+            atlas_bay_play_release_02/source/
+            atlas_bay_play_release_02/helpers/
+          retention-days: 30
