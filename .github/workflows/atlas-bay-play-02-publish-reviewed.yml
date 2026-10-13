@@ -1,0 +1,99 @@
+name: Publish reviewed Bay Play Lab 02
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/atlas-bay-play-02-publish-reviewed.yml'
+      - 'atlas_bay_play_release_02/PUBLISH_REVIEW.md'
+permissions:
+  contents: write
+  actions: read
+concurrency:
+  group: atlas-bay-play02-publish-reviewed
+  cancel-in-progress: true
+jobs:
+  publish:
+    runs-on: ubuntu-22.04
+    timeout-minutes: 20
+    env:
+      BAY_ROOT: ${{ github.workspace }}/atlas_bay_play_release_02
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - uses: actions/download-artifact@v4
+        with:
+          github-token: ${{ github.token }}
+          run-id: 38469301604
+          artifact-ids: 11850804160
+          path: /tmp/bayplay02-publish/recovered
+          merge-multiple: true
+      - name: Preserve the reviewed native asset and correct camera transition
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import os,shutil,hashlib,json
+          r=Path(os.environ['BAY_ROOT']);a=Path('/tmp/bayplay02-publish/recovered')
+          src=next(a.rglob('site/app.js')).parent.parent
+          evidence=next(a.rglob('review/validation.json'))
+          assert json.loads(evidence.read_text())['passed']
+          for name in ['site','source','models','helpers']:
+              shutil.copytree(src/name,r/name,dirs_exist_ok=True)
+          assert hashlib.sha256((r/'site/assets/ATLAS_Bay_Play.glb').read_bytes()).hexdigest()=='4456a7e157a19e550be0b270cf9649035ec6c17c77badfcad44789fb64ca26e1'
+          shutil.copy2(next(a.rglob('review/motion_tests.json')),r/'site/motion_tests.json')
+          PY
+          python "$BAY_ROOT/publish_patch.py"
+          for f in app physics coast sound; do node --check "$BAY_ROOT/site/$f.js"; done
+          node "$BAY_ROOT/source/test_motion.js" > "$BAY_ROOT/site/motion_tests.json"
+      - name: Verify every control before publication
+        run: |
+          python -m pip install -q playwright==1.55.0
+          python -m playwright install --with-deps chromium >/dev/null
+          mkdir -p /tmp/bayplay02-publish/review
+          python -m http.server 8862 --bind 127.0.0.1 --directory "$BAY_ROOT/site" >/tmp/bayplay02-publish/http.log 2>&1 &
+          sleep 2
+          BASE_URL=http://127.0.0.1:8862/index.html REVIEW_DIR=/tmp/bayplay02-publish/review python "$BAY_ROOT/source/verify02.py"
+      - name: Publish a separate immutable app release
+        id: publish
+        run: |
+          mkdir -p "$BAY_ROOT/live"
+          cp -R "$BAY_ROOT/site/." "$BAY_ROOT/live/"
+          cp /tmp/bayplay02-publish/review/validation.json "$BAY_ROOT/live/browser_validation.json"
+          git config user.name 'ATLAS release'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -f atlas_bay_play_release_02/live atlas_bay_play_release_02/source atlas_bay_play_release_02/helpers
+          git commit -m 'Publish Bay Play Lab 02: animated cockpit, trim, coasting and coastal conditions'
+          git stash push -u -m bayplay02-publish-generated
+          git pull --rebase origin main
+          git push origin HEAD:main
+          git stash pop || true
+          echo "url=https://rawcdn.githack.com/owensto/helper/$(git rev-parse HEAD)/atlas_bay_play_release_02/live/index.html" >> "$GITHUB_OUTPUT"
+      - name: Verify the exact public application with its real assets
+        env:
+          BASE_URL: ${{ steps.publish.outputs.url }}
+          REVIEW_DIR: /tmp/bayplay02-publish/public
+        run: python "$BAY_ROOT/source/verify02.py"
+      - name: Preserve public verification separately from engineering claims
+        run: |
+          cp /tmp/bayplay02-publish/public/validation.json "$BAY_ROOT/online_validation.json"
+          git add atlas_bay_play_release_02/online_validation.json
+          git commit -m 'Record real public cockpit and handling-control tests'
+          git stash push -u -m bayplay02-public-evidence
+          git pull --rebase origin main
+          git push origin HEAD:main
+          git stash pop || true
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ATLAS-Bay-PlayLab-02-Public-Models-Source-Evidence
+          path: |
+            /tmp/bayplay02-publish/review/
+            /tmp/bayplay02-publish/public/
+            /tmp/bayplay02-publish/http.log
+            atlas_bay_play_release_02/site/
+            atlas_bay_play_release_02/models/
+            atlas_bay_play_release_02/source/
+            atlas_bay_play_release_02/helpers/
+            atlas_bay_play_release_02/publish_patch.py
+          retention-days: 30
