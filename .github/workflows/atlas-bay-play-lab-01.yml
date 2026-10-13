@@ -1,0 +1,74 @@
+name: ATLAS Bay Play Lab 01
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'atlas_bay_play_lab_01/transport/**'
+      - 'atlas_bay_play_lab_01/fixups.py'
+      - '.github/workflows/atlas-bay-play-lab-01.yml'
+permissions:
+  contents: read
+concurrency:
+  group: atlas-bay-play-lab-01
+  cancel-in-progress: true
+jobs:
+  review:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    env:
+      BAY_ROOT: ${{ github.workspace }}/atlas_bay_play_lab_01
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Restore checked source and the approved native-model baseline
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import base64,lzma,json,hashlib
+          r=Path('atlas_bay_play_lab_01');(r/'src').mkdir(exist_ok=True)
+          b=base64.b64decode(''.join((r/'transport'/f'part{i}.b64').read_text().strip() for i in range(2)),validate=True)
+          assert hashlib.sha256(b).hexdigest()=='bcbcb279fd23e5b9388ac45fe0421098c897763ee17ea1decc35843f14a7c964'
+          for name,text in json.loads(lzma.decompress(b)).items():
+              assert Path(name).name==name and name.endswith(('.py','.js','.css','.html','.md'))
+              (r/'src'/name).write_text(text)
+          PY
+          git fetch --no-tags origin 1cb2e37e78ea20a8ea1a1803cc954b9cd8ef3f35
+          mkdir -p /tmp/bayplay/base "$BAY_ROOT/base/build" "$BAY_ROOT/site/assets" "$BAY_ROOT/models"
+          git archive 1cb2e37e78ea20a8ea1a1803cc954b9cd8ef3f35 atlas_bay_studio_07/live atlas_bay_studio_04/source | tar -x -C /tmp/bayplay/base
+          cp -R /tmp/bayplay/base/atlas_bay_studio_07/live "$BAY_ROOT/base/viewer"
+          cp -R /tmp/bayplay/base/atlas_bay_studio_04/source "$BAY_ROOT/base/build/source"
+          cp "$BAY_ROOT/src/index.html" "$BAY_ROOT/src/app.css" "$BAY_ROOT/src/app.js" "$BAY_ROOT/src/physics.js" "$BAY_ROOT/site/"
+          cp "$BAY_ROOT/base/viewer/runtime.js" "$BAY_ROOT/base/viewer/THIRD_PARTY_LICENSE.txt" "$BAY_ROOT/site/"
+          cp "$BAY_ROOT/base/viewer/assets/coastal_sky.hdr" "$BAY_ROOT/base/viewer/assets/waternormals.jpg" "$BAY_ROOT/site/assets/"
+          if [ -f "$BAY_ROOT/fixups.py" ]; then python "$BAY_ROOT/fixups.py"; fi
+      - name: Derive pivoted fittings and preserve the approved hull
+        run: |
+          python -m pip install -q numpy==2.3.5 trimesh==4.11.1 scipy shapely networkx pillow matplotlib playwright==1.55.0
+          python "$BAY_ROOT/src/build.py"
+          node --check "$BAY_ROOT/site/app.js"
+          node - <<'JS'
+          const B=require(process.env.BAY_ROOT+'/site/physics.js');const b=new B();b.engine=true;b.gear=1;b.throttle=.8;for(let i=0;i<600;i++)b.step(1/60);if(!(b.x>20&&b.u>0))throw Error('Forward failed');b.steer=.6;for(let i=0;i<300;i++)b.step(1/60);if(!(b.heading>.1))throw Error('Steering failed');b.stop();if(b.u!==0)throw Error('Stop failed');console.log('Uncalibrated motion unit checks passed');
+          JS
+      - name: Save Blender master and export the same interactive model
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq blender python3-numpy libegl1 >/dev/null
+          env -u PYTHONHOME -u PYTHONPATH -u LD_LIBRARY_PATH LIBGL_ALWAYS_SOFTWARE=1 /usr/bin/blender -b --python-exit-code 1 --python "$BAY_ROOT/src/native.py"
+      - name: Test actual lid, steering, throttle, reverse and camera controls
+        run: |
+          python -m playwright install --with-deps chromium >/dev/null
+          python -m http.server 8851 --bind 127.0.0.1 --directory "$BAY_ROOT/site" >/tmp/bayplay/http.log 2>&1 &
+          sleep 2
+          BASE_URL=http://127.0.0.1:8851/index.html REVIEW_DIR=/tmp/bayplay/review python "$BAY_ROOT/src/verify.py"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ATLAS-Bay-Play-Lab-01-Review
+          path: |
+            /tmp/bayplay/review/
+            atlas_bay_play_lab_01/site/
+            atlas_bay_play_lab_01/models/
+            atlas_bay_play_lab_01/src/
+          retention-days: 30
