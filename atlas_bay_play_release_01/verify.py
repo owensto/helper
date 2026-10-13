@@ -65,6 +65,8 @@ with sync_playwright() as pw:
    shot(page,OUT/f'{device}_drive_follow.png')
    page.click('[data-camera=helm]');assert page.evaluate('BAYPLAY.cameraMode()')=='helm'
    page.wait_for_timeout(250);shot(page,OUT/f'{device}_drive_helm.png')
+   page.click('#clearview');assert page.evaluate('document.body.classList.contains("clearview")')
+   shot(page,OUT/f'{device}_helm_clear.png');page.click('#clearview');assert not page.evaluate('document.body.classList.contains("clearview")')
    page.click('#stop');assert page.evaluate('BAYPLAY.state.throttle')==0 and page.evaluate('BAYPLAY.state.u')==0
    page.click('[data-gear="-1"]');slide(page,'#throttle',45)
    wait(page,'BAYPLAY.state.u<-.6')

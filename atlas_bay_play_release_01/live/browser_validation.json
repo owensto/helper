@@ -1,0 +1,294 @@
+{
+  "url": "http://127.0.0.1:8851/index.html",
+  "passed": true,
+  "offline_injected": false,
+  "physical_phone_test": false,
+  "physics_calibrated": false,
+  "engineering_validated": false,
+  "tests": [
+    {
+      "device": "desktop",
+      "passed": true,
+      "errors": [],
+      "missing_assets": [],
+      "http_status": 200,
+      "host_confirmation_required": false,
+      "initial": {
+        "ready": true,
+        "mode": "inspect",
+        "cameraMode": "orbit",
+        "physicsCalibrated": false,
+        "geographicData": false,
+        "skyReady": true,
+        "waterReady": true,
+        "gate": 0,
+        "hardware": {
+          "fishbox": {
+            "target": 0,
+            "value": 0,
+            "angle": 0
+          },
+          "rodlocker": {
+            "target": 0,
+            "value": 0,
+            "angle": 0
+          },
+          "livewell": {
+            "target": 0,
+            "value": 0,
+            "angle": -0.0
+          }
+        },
+        "snapshot": {
+          "x": -8,
+          "z": 0,
+          "heading": 0,
+          "speed": 0,
+          "throttle": 0,
+          "steer": 0,
+          "gear": 0,
+          "engine": false,
+          "distance": 0
+        },
+        "drawCalls": 7,
+        "triangles": 50,
+        "propellerAngle": 0,
+        "gearStowed": false,
+        "lamps": false,
+        "meshCount": 124,
+        "hasSteering": true,
+        "hasGPS": true,
+        "interactiveScreens": 2
+      },
+      "ready_seconds": 1.18,
+      "fishbox": {
+        "target": 1,
+        "value": 0.9787351541648107,
+        "angle": 1.3320585448183073
+      },
+      "rodlocker": {
+        "target": 1,
+        "value": 0.9698026165776815,
+        "angle": 1.3199013611622246
+      },
+      "livewell": {
+        "target": 1,
+        "value": 0.9698026165776815,
+        "angle": -1.260743401550986
+      },
+      "forward": {
+        "ready": true,
+        "mode": "drive",
+        "cameraMode": "follow",
+        "physicsCalibrated": false,
+        "geographicData": false,
+        "skyReady": true,
+        "waterReady": true,
+        "gate": 0,
+        "hardware": {
+          "fishbox": {
+            "target": 0,
+            "value": 0,
+            "angle": 0
+          },
+          "rodlocker": {
+            "target": 0,
+            "value": 0,
+            "angle": 0
+          },
+          "livewell": {
+            "target": 0,
+            "value": 0,
+            "angle": -0.0
+          }
+        },
+        "snapshot": {
+          "x": -4.32551827986764,
+          "z": 0,
+          "heading": 0,
+          "speed": 4.478421899638977,
+          "throttle": 0.55,
+          "steer": 0,
+          "gear": 1,
+          "engine": true,
+          "distance": 3.67448172013236
+        },
+        "drawCalls": 154,
+        "triangles": 405860,
+        "propellerAngle": 54.98615709223145,
+        "gearStowed": true,
+        "lamps": true,
+        "meshCount": 124,
+        "hasSteering": true,
+        "hasGPS": true,
+        "interactiveScreens": 2
+      },
+      "keyboard_steering": true,
+      "steered": {
+        "x": -1.0753422853847139,
+        "z": 0.03760928206212322,
+        "heading": 0.08564149758646983,
+        "speed": 5.4511495321094,
+        "throttle": 0.55,
+        "steer": 1,
+        "gear": 1,
+        "engine": true,
+        "distance": 6.925090071174942
+      },
+      "reverse": {
+        "x": 7.75088016903339,
+        "z": 1.2074325225418108,
+        "heading": 0.19637900228994418,
+        "speed": -0.6355800884328099,
+        "throttle": 0.45,
+        "steer": 0.00010948970843716595,
+        "gear": -1,
+        "engine": true,
+        "distance": 16.090641905418803
+      },
+      "body_scroll_width": 1600
+    },
+    {
+      "device": "phone",
+      "passed": true,
+      "errors": [],
+      "missing_assets": [],
+      "http_status": 200,
+      "host_confirmation_required": false,
+      "initial": {
+        "ready": true,
+        "mode": "inspect",
+        "cameraMode": "orbit",
+        "physicsCalibrated": false,
+        "geographicData": false,
+        "skyReady": true,
+        "waterReady": true,
+        "gate": 0,
+        "hardware": {
+          "fishbox": {
+            "target": 0,
+            "value": 0,
+            "angle": 0
+          },
+          "rodlocker": {
+            "target": 0,
+            "value": 0,
+            "angle": 0
+          },
+          "livewell": {
+            "target": 0,
+            "value": 0,
+            "angle": -0.0
+          }
+        },
+        "snapshot": {
+          "x": -8,
+          "z": 0,
+          "heading": 0,
+          "speed": 0,
+          "throttle": 0,
+          "steer": 0,
+          "gear": 0,
+          "engine": false,
+          "distance": 0
+        },
+        "drawCalls": 133,
+        "triangles": 403640,
+        "propellerAngle": 0,
+        "gearStowed": false,
+        "lamps": false,
+        "meshCount": 124,
+        "hasSteering": true,
+        "hasGPS": true,
+        "interactiveScreens": 2
+      },
+      "ready_seconds": 1.91,
+      "fishbox": {
+        "target": 1,
+        "value": 0.983144866334329,
+        "angle": 1.3380601630810216
+      },
+      "rodlocker": {
+        "target": 1,
+        "value": 0.9698026165776815,
+        "angle": 1.3199013611622246
+      },
+      "livewell": {
+        "target": 1,
+        "value": 0.9698026165776815,
+        "angle": -1.260743401550986
+      },
+      "forward": {
+        "ready": true,
+        "mode": "drive",
+        "cameraMode": "follow",
+        "physicsCalibrated": false,
+        "geographicData": false,
+        "skyReady": true,
+        "waterReady": true,
+        "gate": 0,
+        "hardware": {
+          "fishbox": {
+            "target": 0,
+            "value": 0,
+            "angle": 0
+          },
+          "rodlocker": {
+            "target": 0,
+            "value": 0,
+            "angle": 0
+          },
+          "livewell": {
+            "target": 0,
+            "value": 0,
+            "angle": -0.0
+          }
+        },
+        "snapshot": {
+          "x": -4.510573937677096,
+          "z": 0,
+          "heading": 0,
+          "speed": 4.403423521679545,
+          "throttle": 0.55,
+          "steer": 0,
+          "gear": 1,
+          "engine": true,
+          "distance": 3.489426062322904
+        },
+        "drawCalls": 140,
+        "triangles": 403976,
+        "propellerAngle": 52.90393797585159,
+        "gearStowed": true,
+        "lamps": true,
+        "meshCount": 124,
+        "hasSteering": true,
+        "hasGPS": true,
+        "interactiveScreens": 2
+      },
+      "pointer_steering": true,
+      "steered": {
+        "x": -1.3170630285405578,
+        "z": 0.01616471792014591,
+        "heading": 0.06099597199960273,
+        "speed": 5.39469631698951,
+        "throttle": 0.55,
+        "steer": 0,
+        "gear": 1,
+        "engine": true,
+        "distance": 6.683048790297318
+      },
+      "reverse": {
+        "x": 7.022446576289128,
+        "z": 0.7186786764826968,
+        "heading": 0.11742505553873933,
+        "speed": -0.6015215759244501,
+        "throttle": 0.45,
+        "steer": 0,
+        "gear": -1,
+        "engine": true,
+        "distance": 15.273148416060653
+      },
+      "body_scroll_width": 430
+    }
+  ]
+}

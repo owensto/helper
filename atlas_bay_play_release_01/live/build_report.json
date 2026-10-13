@@ -1,0 +1,64 @@
+{
+  "revision": "ATLAS Bay Play Lab 01.1",
+  "base_sha256": "b6f579604c0226102abe1ac5418be7f0d5ba78b0ef84dff4f933b569cd575075",
+  "scope": "Independent interactive fitting and driving prototype; not replacement Studio 07",
+  "engineering_validated": false,
+  "physics_calibrated": false,
+  "modified_hull": false,
+  "hardware": [
+    {
+      "name": "FISHBOX",
+      "pivot_m": [
+        0.97,
+        0.797,
+        0
+      ],
+      "moved_triangles": 6310,
+      "removed_solid_lip_triangles": 46,
+      "opening_deg": 78,
+      "load_qualified": false
+    },
+    {
+      "name": "RODLOCKER",
+      "pivot_m": [
+        0.935,
+        0.797,
+        -0.81
+      ],
+      "moved_triangles": 6302,
+      "removed_solid_lip_triangles": 46,
+      "opening_deg": 78,
+      "load_qualified": false
+    }
+  ],
+  "steering_wheel_triangles": 1460,
+  "native_input_bytes": 9993740,
+  "base_reference": "1cb2e37e78ea20a8ea1a1803cc954b9cd8ef3f35/atlas_bay_studio_07/live",
+  "recovered_source_run": 38443814429,
+  "render_timing": "Exponential interactive-part transitions with elapsed time, fixed 60 Hz driving steps, bounded catch-up and hidden-tab suspension",
+  "repairs": [
+    "Render-cadence-independent lid response",
+    "Batched dock seams",
+    "Canvas keyboard focus",
+    "Direction-change guard across neutral",
+    "Reset light state",
+    "Optional reduced-shadow rendering"
+  ],
+  "modes": [
+    "Explore",
+    "Drive"
+  ],
+  "not_included": [
+    "Free walking",
+    "Fishing gameplay",
+    "App-store distribution",
+    "Calibrated marine dynamics",
+    "Real GPS/bathymetry",
+    "Validated draft"
+  ],
+  "model_sha256": "7da41fc33c4220da3b318b284d99a68c4fe0b67fa4c2ceee369ed90cc95d4cd4",
+  "camera_review": [
+    "Lower, downward-facing helm viewpoint shows the cockpit instruments",
+    "Hide panels / Show controls provides an unobstructed view"
+  ]
+}
