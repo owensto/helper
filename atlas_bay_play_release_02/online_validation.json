@@ -1,0 +1,672 @@
+{
+  "url": "https://rawcdn.githack.com/owensto/helper/700240a66e6f7847eb04a7a65f2deefb61c2ca26/atlas_bay_play_release_02/live/index.html",
+  "passed": true,
+  "offline_injected": false,
+  "physical_phone_test": false,
+  "physics_calibrated": false,
+  "engineering_validated": false,
+  "tests": [
+    {
+      "device": "desktop",
+      "passed": true,
+      "errors": [],
+      "asset_failures": [],
+      "http_status": 200,
+      "host_confirmation_required": true,
+      "ready_seconds": 4.57,
+      "initial": {
+        "ready": true,
+        "mode": "inspect",
+        "cameraMode": "orbit",
+        "physicsCalibrated": false,
+        "geographicData": false,
+        "skyReady": true,
+        "waterReady": true,
+        "paused": false,
+        "gate": 0,
+        "drawers": [
+          {
+            "target": 0,
+            "value": 0,
+            "position": [
+              -1.9320000410079956,
+              0.5600000023841858,
+              0
+            ]
+          },
+          {
+            "target": 0,
+            "value": 0,
+            "position": [
+              -1.9320000410079956,
+              0.6650000214576721,
+              0
+            ]
+          },
+          {
+            "target": 0,
+            "value": 0,
+            "position": [
+              -1.9320000410079956,
+              0.7699999809265137,
+              0
+            ]
+          }
+        ],
+        "bolsters": {
+          "value": 0,
+          "target": 0
+        },
+        "trimAngle": 0.013264502315156908,
+        "throttleAngle": -0.0,
+        "environment": "calm",
+        "soundEnabled": false,
+        "hardware": {
+          "fishbox": {
+            "target": 0,
+            "value": 0,
+            "angle": 0
+          },
+          "rodlocker": {
+            "target": 0,
+            "value": 0,
+            "angle": 0
+          },
+          "livewell": {
+            "target": 0,
+            "value": 0,
+            "angle": -0.0
+          }
+        },
+        "snapshot": {
+          "x": -8,
+          "z": 0,
+          "heading": 0,
+          "speed": 0,
+          "sway": 0,
+          "speedOverGround": 0,
+          "throttle": 0,
+          "steer": 0,
+          "rudder": 0,
+          "gear": 0,
+          "engine": false,
+          "rpm": 0,
+          "trim": 0.18,
+          "planing": 0,
+          "pitch": 0,
+          "roll": 0,
+          "distance": 0,
+          "depth": 5.567627986344954,
+          "environment": "calm",
+          "contact": false,
+          "grounded": false
+        },
+        "drawCalls": 188,
+        "triangles": 499874,
+        "propellerAngle": 0,
+        "gearStowed": false,
+        "lamps": false,
+        "meshCount": 160,
+        "hasSteering": true,
+        "hasGPS": true,
+        "interactiveScreens": 2
+      },
+      "open_drawers": [
+        {
+          "target": 1,
+          "value": 1,
+          "position": [
+            -2.212000041007996,
+            0.5600000023841858,
+            0
+          ]
+        },
+        {
+          "target": 1,
+          "value": 1,
+          "position": [
+            -2.212000041007996,
+            0.6650000214576721,
+            0
+          ]
+        },
+        {
+          "target": 1,
+          "value": 0.9857357660910008,
+          "position": [
+            -2.2080060555134757,
+            0.7699999809265137,
+            0
+          ]
+        }
+      ],
+      "opt_in_audio_toggled": true,
+      "drive_closes_storage": true,
+      "engine_start_interlock": true,
+      "forward": {
+        "x": -3.199003040313982,
+        "z": 0,
+        "heading": 0,
+        "speed": 3.6681494662674905,
+        "sway": 0,
+        "speedOverGround": 3.6681494662674905,
+        "throttle": 0.55,
+        "steer": 0,
+        "rudder": 0,
+        "gear": 1,
+        "engine": true,
+        "rpm": 3383.8673217094956,
+        "trim": 0.18,
+        "planing": 0,
+        "pitch": 0.018701281270418174,
+        "roll": -0.0017388704864588346,
+        "distance": 4.800996959686019,
+        "depth": 5.587045827528956,
+        "environment": "calm",
+        "contact": false,
+        "grounded": false
+      },
+      "keyboard_steer": true,
+      "trim": {
+        "x": 7.25529223779967,
+        "z": 0.20503622555479264,
+        "heading": 0.24530674258997212,
+        "speed": 5.513287021743077,
+        "sway": -0.5661832994755044,
+        "speedOverGround": 5.542282680694446,
+        "throttle": 0.55,
+        "steer": 0.009657697627537772,
+        "rudder": 0.03161032594730331,
+        "gear": 1,
+        "engine": true,
+        "rpm": 3420.832640290062,
+        "trim": 0.7265320335647311,
+        "planing": 0.15707027870432352,
+        "pitch": 0.0708763566837255,
+        "roll": 0.010223529638079395,
+        "distance": 15.27530010717547,
+        "depth": 5.6,
+        "environment": "calm",
+        "contact": false,
+        "grounded": false
+      },
+      "helm_position_verified": true,
+      "neutral_coasts": true,
+      "pause_freezes_simulation": true,
+      "reverse": {
+        "x": -8.539621139830043,
+        "z": 0,
+        "heading": 0,
+        "speed": -0.683054118471143,
+        "sway": 0,
+        "speedOverGround": 0.683054118471143,
+        "throttle": 0.45,
+        "steer": 0,
+        "rudder": 0,
+        "gear": -1,
+        "engine": true,
+        "rpm": 2786.402625732791,
+        "trim": 0.18,
+        "planing": 0,
+        "pitch": 0.0010883605195194934,
+        "roll": -0.0012310477509181604,
+        "distance": 0.539621139830043,
+        "depth": 5.565448573347744,
+        "environment": "calm",
+        "contact": false,
+        "grounded": false
+      },
+      "neutral_drift": {
+        "x": -7.97904838853674,
+        "z": 0.3619918973359638,
+        "heading": 0,
+        "speed": -0.11406227807018532,
+        "sway": -0.010455529369553324,
+        "speedOverGround": 0.2300970990197923,
+        "throttle": 0,
+        "steer": 0,
+        "rudder": 0,
+        "gear": 0,
+        "engine": false,
+        "rpm": 0,
+        "trim": 0.18,
+        "planing": 0,
+        "pitch": -0.006818065730398732,
+        "roll": -0.0028419567158354422,
+        "distance": 0.36260822283859195,
+        "depth": 5.567712621099759,
+        "environment": "breeze",
+        "contact": false,
+        "grounded": false
+      },
+      "final": {
+        "ready": true,
+        "mode": "inspect",
+        "cameraMode": "orbit",
+        "physicsCalibrated": false,
+        "geographicData": false,
+        "skyReady": true,
+        "waterReady": true,
+        "paused": false,
+        "gate": 0,
+        "drawers": [
+          {
+            "target": 0,
+            "value": 0,
+            "position": [
+              -1.9320000410079956,
+              0.5600000023841858,
+              0
+            ]
+          },
+          {
+            "target": 0,
+            "value": 0,
+            "position": [
+              -1.9320000410079956,
+              0.6650000214576721,
+              0
+            ]
+          },
+          {
+            "target": 0,
+            "value": 0,
+            "position": [
+              -1.9320000410079956,
+              0.7699999809265137,
+              0
+            ]
+          }
+        ],
+        "bolsters": {
+          "value": 0,
+          "target": 0
+        },
+        "trimAngle": 0.013264502315156908,
+        "throttleAngle": -0.0,
+        "environment": "chop",
+        "soundEnabled": false,
+        "hardware": {
+          "fishbox": {
+            "target": 0,
+            "value": 0,
+            "angle": 0
+          },
+          "rodlocker": {
+            "target": 0,
+            "value": 0,
+            "angle": 0
+          },
+          "livewell": {
+            "target": 0,
+            "value": 0,
+            "angle": -0.0
+          }
+        },
+        "snapshot": {
+          "x": -8,
+          "z": 0,
+          "heading": 0,
+          "speed": 0,
+          "sway": 0,
+          "speedOverGround": 0,
+          "throttle": 0,
+          "steer": 0,
+          "rudder": 0,
+          "gear": 0,
+          "engine": false,
+          "rpm": 0,
+          "trim": 0.18,
+          "planing": 0,
+          "pitch": 0,
+          "roll": 0,
+          "distance": 0,
+          "depth": 5.567627986344954,
+          "environment": "chop",
+          "contact": false,
+          "grounded": false
+        },
+        "drawCalls": 188,
+        "triangles": 499874,
+        "propellerAngle": 595.788110663008,
+        "gearStowed": false,
+        "lamps": false,
+        "meshCount": 160,
+        "hasSteering": true,
+        "hasGPS": true,
+        "interactiveScreens": 2
+      }
+    },
+    {
+      "device": "phone",
+      "passed": true,
+      "errors": [],
+      "asset_failures": [],
+      "http_status": 200,
+      "host_confirmation_required": true,
+      "ready_seconds": 3.09,
+      "initial": {
+        "ready": true,
+        "mode": "inspect",
+        "cameraMode": "orbit",
+        "physicsCalibrated": false,
+        "geographicData": false,
+        "skyReady": true,
+        "waterReady": true,
+        "paused": false,
+        "gate": 0,
+        "drawers": [
+          {
+            "target": 0,
+            "value": 0,
+            "position": [
+              -1.9320000410079956,
+              0.5600000023841858,
+              0
+            ]
+          },
+          {
+            "target": 0,
+            "value": 0,
+            "position": [
+              -1.9320000410079956,
+              0.6650000214576721,
+              0
+            ]
+          },
+          {
+            "target": 0,
+            "value": 0,
+            "position": [
+              -1.9320000410079956,
+              0.7699999809265137,
+              0
+            ]
+          }
+        ],
+        "bolsters": {
+          "value": 0,
+          "target": 0
+        },
+        "trimAngle": 0.013264502315156908,
+        "throttleAngle": -0.0,
+        "environment": "calm",
+        "soundEnabled": false,
+        "hardware": {
+          "fishbox": {
+            "target": 0,
+            "value": 0,
+            "angle": 0
+          },
+          "rodlocker": {
+            "target": 0,
+            "value": 0,
+            "angle": 0
+          },
+          "livewell": {
+            "target": 0,
+            "value": 0,
+            "angle": -0.0
+          }
+        },
+        "snapshot": {
+          "x": -8,
+          "z": 0,
+          "heading": 0,
+          "speed": 0,
+          "sway": 0,
+          "speedOverGround": 0,
+          "throttle": 0,
+          "steer": 0,
+          "rudder": 0,
+          "gear": 0,
+          "engine": false,
+          "rpm": 0,
+          "trim": 0.18,
+          "planing": 0,
+          "pitch": 0,
+          "roll": 0,
+          "distance": 0,
+          "depth": 5.567627986344954,
+          "environment": "calm",
+          "contact": false,
+          "grounded": false
+        },
+        "drawCalls": 174,
+        "triangles": 499572,
+        "propellerAngle": 0,
+        "gearStowed": false,
+        "lamps": false,
+        "meshCount": 160,
+        "hasSteering": true,
+        "hasGPS": true,
+        "interactiveScreens": 2
+      },
+      "open_drawers": [
+        {
+          "target": 1,
+          "value": 1,
+          "position": [
+            -2.212000041007996,
+            0.5600000023841858,
+            0
+          ]
+        },
+        {
+          "target": 1,
+          "value": 1,
+          "position": [
+            -2.212000041007996,
+            0.6650000214576721,
+            0
+          ]
+        },
+        {
+          "target": 1,
+          "value": 0.9879739482115457,
+          "position": [
+            -2.208632746507228,
+            0.7699999809265137,
+            0
+          ]
+        }
+      ],
+      "opt_in_audio_toggled": true,
+      "drive_closes_storage": true,
+      "engine_start_interlock": true,
+      "forward": {
+        "x": -3.978525120732382,
+        "z": 0,
+        "heading": 0,
+        "speed": 3.3732404623891385,
+        "sway": 0,
+        "speedOverGround": 3.3732404623891385,
+        "throttle": 0.55,
+        "steer": 0,
+        "rudder": 0,
+        "gear": 1,
+        "engine": true,
+        "rpm": 3369.5203961315046,
+        "trim": 0.18,
+        "planing": 0,
+        "pitch": 0.016747750915839858,
+        "roll": -0.0014784104673937891,
+        "distance": 4.021474879267618,
+        "depth": 5.5838904161836735,
+        "environment": "calm",
+        "contact": false,
+        "grounded": false
+      },
+      "pointer_steer": true,
+      "trim": {
+        "x": 7.300537901636076,
+        "z": 0.2910969813493016,
+        "heading": 0.2405751433547951,
+        "speed": 5.5338450078225545,
+        "sway": -0.47591494342641916,
+        "speedOverGround": 5.55427183382117,
+        "throttle": 0.55,
+        "steer": 0,
+        "rudder": 0.005355825814282149,
+        "gear": 1,
+        "engine": true,
+        "rpm": 3420.8616059395804,
+        "trim": 0.7256555711790829,
+        "planing": 0.16090721642602765,
+        "pitch": 0.07266495209894261,
+        "roll": 0.006477088364267982,
+        "distance": 15.327921963343176,
+        "depth": 5.6,
+        "environment": "calm",
+        "contact": false,
+        "grounded": false
+      },
+      "helm_position_verified": true,
+      "neutral_coasts": true,
+      "pause_freezes_simulation": true,
+      "reverse": {
+        "x": -8.439479026289627,
+        "z": 0,
+        "heading": 0,
+        "speed": -0.6086241914098278,
+        "sway": 0,
+        "speedOverGround": 0.6086241914098278,
+        "throttle": 0.45,
+        "steer": 0,
+        "rudder": 0,
+        "gear": -1,
+        "engine": true,
+        "rpm": 2751.4758446907645,
+        "trim": 0.18,
+        "planing": 0,
+        "pitch": -5.624422344511237e-06,
+        "roll": -0.0009948845754380506,
+        "distance": 0.4394790262896269,
+        "depth": 5.565852965621157,
+        "environment": "calm",
+        "contact": false,
+        "grounded": false
+      },
+      "neutral_drift": {
+        "x": -7.978781126199166,
+        "z": 0.3658295767367548,
+        "heading": 0,
+        "speed": -0.11396425974558001,
+        "sway": -0.009739235952540282,
+        "speedOverGround": 0.23081846638695777,
+        "throttle": 0,
+        "steer": 0,
+        "rudder": 0,
+        "gear": 0,
+        "engine": false,
+        "rpm": 0,
+        "trim": 0.18,
+        "planing": 0,
+        "pitch": -0.006788906494470081,
+        "roll": -0.00286623535293511,
+        "distance": 0.3664551972783746,
+        "depth": 5.5677137007225825,
+        "environment": "breeze",
+        "contact": false,
+        "grounded": false
+      },
+      "final": {
+        "ready": true,
+        "mode": "inspect",
+        "cameraMode": "orbit",
+        "physicsCalibrated": false,
+        "geographicData": false,
+        "skyReady": true,
+        "waterReady": true,
+        "paused": false,
+        "gate": 0,
+        "drawers": [
+          {
+            "target": 0,
+            "value": 0,
+            "position": [
+              -1.9320000410079956,
+              0.5600000023841858,
+              0
+            ]
+          },
+          {
+            "target": 0,
+            "value": 0,
+            "position": [
+              -1.9320000410079956,
+              0.6650000214576721,
+              0
+            ]
+          },
+          {
+            "target": 0,
+            "value": 0,
+            "position": [
+              -1.9320000410079956,
+              0.7699999809265137,
+              0
+            ]
+          }
+        ],
+        "bolsters": {
+          "value": 0,
+          "target": 0
+        },
+        "trimAngle": 0.013264502315156908,
+        "throttleAngle": -0.0,
+        "environment": "chop",
+        "soundEnabled": false,
+        "hardware": {
+          "fishbox": {
+            "target": 0,
+            "value": 0,
+            "angle": 0
+          },
+          "rodlocker": {
+            "target": 0,
+            "value": 0,
+            "angle": 0
+          },
+          "livewell": {
+            "target": 0,
+            "value": 0,
+            "angle": -0.0
+          }
+        },
+        "snapshot": {
+          "x": -8,
+          "z": 0,
+          "heading": 0,
+          "speed": 0,
+          "sway": 0,
+          "speedOverGround": 0,
+          "throttle": 0,
+          "steer": 0,
+          "rudder": 0,
+          "gear": 0,
+          "engine": false,
+          "rpm": 0,
+          "trim": 0.18,
+          "planing": 0,
+          "pitch": 0,
+          "roll": 0,
+          "distance": 0,
+          "depth": 5.567627986344954,
+          "environment": "chop",
+          "contact": false,
+          "grounded": false
+        },
+        "drawCalls": 174,
+        "triangles": 499572,
+        "propellerAngle": 589.0969397499994,
+        "gearStowed": false,
+        "lamps": false,
+        "meshCount": 160,
+        "hasSteering": true,
+        "hasGPS": true,
+        "interactiveScreens": 2
+      }
+    }
+  ]
+}
