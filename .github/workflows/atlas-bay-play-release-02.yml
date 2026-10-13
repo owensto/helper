@@ -10,7 +10,7 @@ on:
 permissions:
   contents: write
 concurrency:
-  group: atlas-bay-play-release-02
+  group: atlas-bay-play-release-02-recovery
   cancel-in-progress: true
 jobs:
   build:
