@@ -6,6 +6,8 @@ s=s.replace("e.fillText(n(p.range?.nauticalMiles),275,174);", "e.fillText((p.ran
 s=s.replace("It is a one-way constant-condition estimate, not safe round-trip range.","It is a one-way constant-condition estimate, not safe round-trip range. Fuel changes adjust this bookkeeping scenario only; they do not recalculate the tested hull weight or its performance curve.")
 s=s.replace("${n(p.unmeteredSeconds,0)} s idle/reverse unmetered`", "${n(p.unmeteredSeconds,0)} s unmetered${p.balanceIsUpperBound?' · balance/range upper bounds':''}`")
 s=s.replace("if(!Number.isFinite(a)||!Number.isFinite(r)||a<0", "if(!$('#perf-fuel-input').value.trim()||!$('#perf-reserve-input').value.trim()||!Number.isFinite(a)||!Number.isFinite(r)||a<0")
+s=s.replace('<p id="fuel-coverage">','<p id="perf-fuel-error" role="alert" style="color:#9b3327"></p><p id="fuel-coverage">')
+s=s.replace("$('#fuel-coverage').textContent='Enter finite values: fuel 0–65 gal and hold-back no greater than fuel.';return}B.state.fuelStartGal", "$('#perf-fuel-error').textContent='Enter finite values: fuel 0–65 gal and hold-back no greater than fuel.';return}$('#perf-fuel-error').textContent='';B.state.fuelStartGal")
 p.write_text(s)
 p=r/'site/app.js';s=p.read_text()
 s=s.replace("function engineToggle(){if(mode!=='drive')return;", "function engineToggle(){if(mode!=='drive'||(state.referenceTrial&&!state.referenceTrial.complete))return;")
