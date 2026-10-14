@@ -16,7 +16,9 @@ jobs:
         with:
           python-version: '3.12'
       - run: pip install -q requests shapely
-      - run: python atlas_beaufort_04/fetch_beaufort.py
+      - run: |
+          sed -i 's/,300)/,50)/g; s/offset+300/offset+50/g' atlas_beaufort_04/fetch_beaufort.py
+          python atlas_beaufort_04/fetch_beaufort.py
       - uses: actions/upload-artifact@v4
         if: always()
         with:
