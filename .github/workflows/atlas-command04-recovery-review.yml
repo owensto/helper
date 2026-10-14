@@ -1,0 +1,34 @@
+name: Recover ATLAS Command 04 source
+on:
+  push:
+    paths: ['.github/workflows/atlas-command04-recovery-review.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  snapshot:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 4
+    steps:
+      - uses: actions/checkout@v4
+      - name: Preserve existing unfinished source and region
+        run: |
+          mkdir -p /tmp/atlas-command04-recovery
+          cp -R atlas_bay_command_04/. /tmp/atlas-command04-recovery/
+          python3 - <<'PY'
+          import pathlib,base64,lzma,json,hashlib
+          r=pathlib.Path('/tmp/atlas-command04-recovery')
+          b=base64.b64decode(''.join(p.read_text().strip() for p in sorted((r/'transport').glob('part*.b64'))),validate=True)
+          print('Transport SHA256',hashlib.sha256(b).hexdigest())
+          d=json.loads(lzma.decompress(b))
+          for name,text in d.items():
+              p=pathlib.Path(name)
+              assert not p.is_absolute() and '..' not in p.parts
+              o=r/'decoded'/p;o.parent.mkdir(parents=True,exist_ok=True);o.write_text(text)
+          print('Recovered',list(d))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ATLAS-Command04-Recovered-Source
+          path: /tmp/atlas-command04-recovery/
+          retention-days: 30
