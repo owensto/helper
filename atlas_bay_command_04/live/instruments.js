@@ -1,0 +1,28 @@
+/* Cockpit displays share simulated state. ENC interpolation is not a live sounder. */
+(()=>{'use strict';
+const history=[],track=[];let last=-1;const $=id=>document.getElementById(id),clamp=(v,a,b)=>Math.max(a,Math.min(b,v));
+const I=window.CMD_INSTRUMENTS={range:2200,follow:true,center:null,screenPage:'sonar',history,track,reset(){history.length=0;track.length=0;last=-1;},heading(s){return ((90+s.heading*180/Math.PI)%360+360)%360;},course(s){return s.speedOverGround>.15?((90+Math.atan2(s.vz,s.vx)*180/Math.PI)%360+360)%360:null;},depth(s){return Number.isFinite(s.depth)&&!s.airborne?Math.max(0,s.depth+(s.config?.tide||0)-.45+s.heave):null;},draw(s,left,right){
+ if(last<0||s.elapsed-last>.18||s.elapsed<last){last=s.elapsed;history.push(I.depth(s));if(history.length>240)history.shift();if(!track.length||Math.hypot(s.x-track.at(-1)[0],s.z-track.at(-1)[1])>2){track.push([s.x,s.z]);if(track.length>1200)track.shift();}}
+ I.chart(left,s,Math.min(I.range,1600),true);I.sonar(right,s);const panel=$('cmd-sonar');if(panel)I.sonar(panel,s);
+ const map=$('cmd-map');if(map)I.chart(map,s,I.range,false);
+ },chart(canvas,s,range,mini){
+ const c=canvas.getContext('2d'),w=canvas.width,h=canvas.height,G=window.BayGeo,geo=s.location==='beaufort'&&G?.ready;
+ c.fillStyle='#061c29';c.fillRect(0,0,w,h);const cx=I.follow||mini?s.x:(I.center?.[0]??s.x),cz=I.follow||mini?s.z:(I.center?.[1]??s.z),scale=(w-24)/range;
+ const X=x=>w/2+(x-cx)*scale,Y=z=>h/2+(z-cz)*scale;
+ c.save();c.beginPath();c.rect(0,35,w,h-66);c.clip();c.strokeStyle='#163540';c.lineWidth=1;for(let x=0;x<w;x+=w/6){c.beginPath();c.moveTo(x,0);c.lineTo(x,h);c.stroke()}for(let y=0;y<h;y+=h/5){c.beginPath();c.moveTo(0,y);c.lineTo(w,y);c.stroke()}
+ if(geo){c.fillStyle='#465842';c.strokeStyle='#879579';c.lineWidth=1.5;for(const rings of G.data.land){c.beginPath();for(const ring of rings){ring.forEach((p,i)=>i?c.lineTo(X(p[0]),Y(p[1])):c.moveTo(X(p[0]),Y(p[1])));c.closePath()}c.fill('evenodd');c.stroke()}
+ if(range<4500){c.fillStyle='#81abb3';c.font='13px monospace';for(const p of G.data.soundings){const x=X(p[0]),y=Y(p[1]);if(x>15&&x<w-25&&y>35&&y<h-36)c.fillText(p[2].toFixed(1),x,y);}}}
+ else{c.fillStyle='#314b44';for(const [x,z,r]of[[205,62,49],[-115,95,43],[95,225,46]]){c.beginPath();c.arc(X(x),Y(z),r*scale,0,Math.PI*2);c.fill()}c.fillStyle='#746f5b';c.fillRect(X(-27),Y(-9.7),49*scale,3.7*scale);}
+ c.strokeStyle='#eac38b';c.lineWidth=2;c.beginPath();track.forEach((p,i)=>i?c.lineTo(X(p[0]),Y(p[1])):c.moveTo(X(p[0]),Y(p[1])));c.stroke();
+ c.save();c.translate(X(s.x),Y(s.z));c.rotate(s.heading+Math.PI/2);c.fillStyle='#b3ead6';c.strokeStyle='#fff';c.beginPath();c.moveTo(0,-12);c.lineTo(7,9);c.lineTo(0,5);c.lineTo(-7,9);c.closePath();c.fill();c.stroke();c.restore();c.restore();
+ c.fillStyle='#0c2734';c.fillRect(0,0,w,35);c.fillRect(0,h-31,w,31);c.fillStyle='#e3eee8';c.font='bold 15px sans-serif';c.fillText(geo?'BEAUFORT / SIM GPS':'TEST BASIN / SIM GPS',12,23);c.textAlign='right';c.fillText('N ↑',w-14,23);c.font='13px monospace';c.fillText(range>=1000?(range/1000).toFixed(1)+' km':range.toFixed(0)+' m',w-12,h-11);c.textAlign='left';const ll=geo?G.toLL(s.x,s.z):null;c.fillText(ll?ll.lat.toFixed(5)+'  '+ll.lng.toFixed(5):'FICTIONAL REFERENCE LANE',12,h-11);
+ if(!mini){if($('chart-coords'))$('chart-coords').textContent=ll?`${ll.lat.toFixed(5)}° N · ${Math.abs(ll.lng).toFixed(5)}° W`:'Fictional basin · no real coordinates';if($('map-scale'))$('map-scale').textContent=(range/1000).toFixed(1)+' km';if($('chart-title'))$('chart-title').textContent=geo?'BEAUFORT / LIVE SIM POSITION':'CONTROLLED TEST BASIN';}
+ },sonar(canvas,s){
+ const c=canvas.getContext('2d'),w=canvas.width,h=canvas.height,d=I.depth(s);c.fillStyle='#071824';c.fillRect(0,0,w,h);c.fillStyle='#18303d';c.fillRect(0,0,w,70);c.fillStyle='#dfece7';c.font='bold 14px sans-serif';c.fillText('SIM SOUNDER / CHART ESTIMATE',13,22);c.font='bold 30px monospace';c.fillText(d===null?'NO RETURN':(d*3.28084).toFixed(1)+' ft',13,55);c.textAlign='right';c.fillStyle='#9fe0c3';c.fillText(s.engine?(s.config?.count===2?Math.round(s.portRpm||s.rpm)+' / '+Math.round(s.starboardRpm||s.rpm):Math.round(s.rpm).toLocaleString()):'OFF',w-12,55);c.font='12px sans-serif';c.fillText((s.config?.count||1)+' × '+(s.config?.hp||300)+' HP / RPM',w-12,22);c.textAlign='left';
+ const top=76,bottom=h-63,range=Math.max(10,Math.ceil((Math.max(...history.filter(Number.isFinite),d||0)+2)/5)*5);c.strokeStyle='#1b3844';c.fillStyle='#92a6b0';c.font='11px monospace';for(let i=0;i<5;i++){const y=top+(bottom-top)*i/4;c.beginPath();c.moveTo(38,y);c.lineTo(w,y);c.stroke();c.fillText((range*i/4*3.28084).toFixed(0),3,y+4);}
+ const sw=(w-44)/240;history.forEach((dep,i)=>{if(dep===null)return;const x=44+(240-history.length+i)*sw,yy=top+clamp(dep/range,0,1)*(bottom-top);c.fillStyle='#80502f';c.fillRect(x,yy,Math.ceil(sw),bottom-yy);c.fillStyle='#eea65a';c.fillRect(x,yy,Math.ceil(sw),4);c.fillStyle='#c87d39';c.fillRect(x,yy+5,Math.ceil(sw),3);});
+ c.fillStyle='#0c2734';c.fillRect(0,bottom,w,h-bottom);c.font='13px monospace';c.fillStyle='#d6e4e2';const speed=s.speedOverGround*1.943844;const hdg=I.heading(s);c.fillText(`${speed.toFixed(1)} kn   ${hdg.toFixed(0).padStart(3,'0')}°T   TRIM ${(s.trimActual*100).toFixed(0)}%`,12,h-42);
+ const ref=s.performanceMode==='reference',p=ref?s.performance():null;const fuel=ref?(p.lookup?`${p.lookup.gph.toFixed(1)} GPH / CURVE`:'FUEL UNMETERED'):`${(s.lastFuelRate||0).toFixed(1)} GPH / MODELED`;
+ c.fillStyle='#b5bdac';c.fillText(fuel,12,h-25);c.font='10px sans-serif';c.fillText(s.location==='beaufort'?'CHART ESTIMATE · ASSUMED TIDE · NOT LIVE SONAR':'FICTIONAL DEPTH / NOT NAVIGATION',12,h-10);
+ }};
+})();
