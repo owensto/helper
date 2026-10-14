@@ -1,0 +1,116 @@
+name: Publish Bay Performance Lab 03
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/atlas-bay-performance-03-publish.yml'
+permissions:
+  contents: write
+  actions: read
+concurrency:
+  group: atlas-bay-performance-03-publish
+  cancel-in-progress: true
+jobs:
+  publish:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 35
+    env:
+      BAY_ROOT: ${{ github.workspace }}/atlas_bay_performance_03
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - uses: actions/download-artifact@v4
+        with:
+          github-token: ${{ github.token }}
+          run-id: 38494297483
+          name: ATLAS-Bay-Performance-03-Review
+          path: /tmp/bayperf_publish/reviewed
+      - name: Restore reviewed runtime and unchanged detailed boat
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import os,shutil,json,hashlib
+          a=Path('/tmp/bayperf_publish/reviewed');r=Path(os.environ['BAY_ROOT'])
+          src=next(a.rglob('site/performance.js')).parent.parent
+          for n in ['site','source']:shutil.copytree(src/n,r/n,dirs_exist_ok=True)
+          ref=next(a.rglob('reference/reference_browser.json'));reg=next(a.rglob('regression/validation.json'))
+          assert json.loads(ref.read_text())['passed'] and json.loads(reg.read_text())['passed']
+          (r/'reviewed_evidence').mkdir(exist_ok=True)
+          for name,path in [('reference_browser.json',ref),('regression_browser.json',reg),('reference_unit_tests.json',next(a.rglob('reference_unit_tests.json'))),('experimental_unit_tests.json',next(a.rglob('experimental_unit_tests.json')))]:shutil.copy2(path,r/'reviewed_evidence'/name)
+          assert hashlib.sha256((r/'site/assets/ATLAS_Bay_Play.glb').read_bytes()).hexdigest()=='4456a7e157a19e550be0b270cf9649035ec6c17c77badfcad44789fb64ca26e1'
+          PY
+          python "$BAY_ROOT/polish.py"
+          python - <<'PY'
+          from pathlib import Path
+          import os
+          p=Path(os.environ['BAY_ROOT'])/'source/verify_reference.py';s=p.read_text()
+          s=s.replace("p.evaluate('BAYPLAY.testStep(65)');", "p.keyboard.press('KeyE');assert p.evaluate('BAYPLAY.state.engine');p.evaluate('BAYPLAY.testStep(65)');")
+          s=s.replace("assert ref['balanceIsUpperBound'];", "assert p.locator('#perf-range').inner_text().startswith('≤');assert ref['balanceIsUpperBound'];")
+          s=s.replace("r['rejects_invalid_fuel']=True", "p.wait_for_timeout(400);assert 'Enter finite values' in p.locator('#perf-fuel-error').inner_text();r['rejects_invalid_fuel']=True")
+          p.write_text(s)
+          PY
+          for f in "$BAY_ROOT"/site/*.js; do node --check "$f"; done
+          mkdir -p /tmp/bayperf_publish/final_local/reference /tmp/bayperf_publish/final_local/regression
+          node "$BAY_ROOT/source/test_reference.js" > /tmp/bayperf_publish/reference_unit_tests.json
+          node "$BAY_ROOT/source/test_experimental_regression.js" > /tmp/bayperf_publish/experimental_unit_tests.json
+      - name: Verify final reference and retained-control suites before publishing
+        run: |
+          python -m pip install -q playwright==1.55.0
+          python -m playwright install --with-deps chromium >/dev/null
+          python -m http.server 8873 --bind 127.0.0.1 --directory "$BAY_ROOT/site" >/tmp/bayperf_publish/http.log 2>&1 &
+          sleep 2
+          BASE_URL=http://127.0.0.1:8873/index.html REVIEW_DIR=/tmp/bayperf_publish/final_local/reference python "$BAY_ROOT/source/verify_reference.py"
+          BASE_URL=http://127.0.0.1:8873/index.html REVIEW_DIR=/tmp/bayperf_publish/final_local/regression python "$BAY_ROOT/source/verify_regression.py"
+      - name: Publish a separate source-backed performance app
+        id: release
+        run: |
+          mkdir -p "$BAY_ROOT/live"
+          cp -R "$BAY_ROOT/site/." "$BAY_ROOT/live/"
+          cp /tmp/bayperf_publish/reference_unit_tests.json "$BAY_ROOT/live/reference_unit_tests.json"
+          cp /tmp/bayperf_publish/experimental_unit_tests.json "$BAY_ROOT/live/experimental_unit_tests.json"
+          git config user.name 'ATLAS release'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -f atlas_bay_performance_03/live atlas_bay_performance_03/source atlas_bay_performance_03/reviewed_evidence
+          git commit -m 'Publish reference-backed F300 speed and fuel mode with explicit ATLAS limits'
+          git stash push -u -m bayperf-generated || true
+          git pull --rebase origin main
+          git push origin HEAD:main
+          echo "url=https://rawcdn.githack.com/owensto/helper/$(git rev-parse HEAD)/atlas_bay_performance_03/live/index.html" >> "$GITHUB_OUTPUT"
+          git stash pop || true
+      - name: Verify the exact public app without local substitutions
+        env:
+          BASE_URL: ${{ steps.release.outputs.url }}
+        run: |
+          REVIEW_DIR=/tmp/bayperf_publish/public/reference python "$BAY_ROOT/source/verify_reference.py"
+          REVIEW_DIR=/tmp/bayperf_publish/public/regression python "$BAY_ROOT/source/verify_regression.py"
+      - name: Save public evidence
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import os,json
+          r=Path(os.environ['BAY_ROOT']);a=Path('/tmp/bayperf_publish/public')
+          ref=json.loads((a/'reference/reference_browser.json').read_text());reg=json.loads((a/'regression/validation.json').read_text())
+          assert ref['passed'] and reg['passed']
+          result={'passed':True,'url':ref['url'],'reference_suite':ref,'retained_control_suite':reg,'atlas_performance_validated':False,'physical_phone_test':False,'long_reference_runs_use_actual_runtime_testStep':True,'geometry_changed':False}
+          (r/'online_validation.json').write_text(json.dumps(result,indent=2))
+          PY
+          git add atlas_bay_performance_03/online_validation.json
+          git commit -m 'Record published reference data, controls and limits verification'
+          git stash push -u -m bayperf-public || true
+          git pull --rebase origin main
+          git push origin HEAD:main
+          git stash pop || true
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ATLAS-Bay-Performance-03-Public-App-Source-Evidence
+          path: |
+            /tmp/bayperf_publish/final_local/
+            /tmp/bayperf_publish/public/
+            /tmp/bayperf_publish/*tests.json
+            atlas_bay_performance_03/site/
+            atlas_bay_performance_03/source/
+            atlas_bay_performance_03/polish.py
+          retention-days: 30
