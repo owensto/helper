@@ -1,0 +1,106 @@
+name: Deliver ATLAS Sea Lab 04.2
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'atlas_bay_command_04/delivery_fixups.py'
+      - '.github/workflows/atlas-sealab04-deliver.yml'
+permissions:
+  contents: write
+  actions: read
+concurrency:
+  group: atlas-sealab04-delivery
+  cancel-in-progress: true
+jobs:
+  deliver:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 38
+    env:
+      COMMAND_ROOT: ${{ github.workspace }}/atlas_bay_command_04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - uses: actions/download-artifact@v4
+        with:
+          github-token: ${{ github.token }}
+          run-id: 38593856163
+          artifact-ids: 11909727470
+          path: /tmp/sealab04/recovered
+          merge-multiple: true
+      - name: Preserve reviewed boat and apply bounded interface fixes
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import os,shutil,hashlib,json
+          r=Path(os.environ['COMMAND_ROOT']);src=next(Path('/tmp/sealab04/recovered').rglob('site/command.js')).parent.parent
+          for name in ['site','source','region']:
+              shutil.copytree(src/name,r/name,dirs_exist_ok=True)
+          shutil.copy2(src/'verify04.py',r/'verify04.py')
+          b=r/'site/assets/ATLAS_Bay_Play.glb'
+          h=hashlib.sha256(b.read_bytes()).hexdigest()
+          assert h=='4456a7e157a19e550be0b270cf9649035ec6c17c77badfcad44789fb64ca26e1'
+          (r/'model_integrity.json').write_text(json.dumps({'model_sha256':h,'base_geometry_unchanged':True,'engine_instances':'Runtime illustrative configurations; not qualified manufacturer replicas'},indent=2))
+          PY
+          python "$COMMAND_ROOT/delivery_fixups.py"
+          python -m py_compile "$COMMAND_ROOT/verify_release.py"
+          for f in "$COMMAND_ROOT/site/"*.js; do node --check "$f"; done
+          mkdir -p /tmp/sealab04/local /tmp/sealab04/public
+          node "$COMMAND_ROOT/source/test_command.js" > /tmp/sealab04/local/motion_checks.json
+      - name: Verify complete desktop and phone-size configurations and controls
+        run: |
+          pip install -q playwright==1.55.0
+          python -m playwright install --with-deps chromium >/dev/null
+          python -m http.server 8874 --bind 127.0.0.1 --directory "$COMMAND_ROOT/site" >/tmp/sealab04/http.log 2>&1 &
+          sleep 2
+          BASE_URL=http://127.0.0.1:8874/index.html REVIEW_DIR=/tmp/sealab04/local python "$COMMAND_ROOT/verify_release.py"
+      - name: Publish separate Sea Lab application
+        id: publish
+        run: |
+          mkdir -p "$COMMAND_ROOT/live"
+          cp -R "$COMMAND_ROOT/site/." "$COMMAND_ROOT/live/"
+          cp /tmp/sealab04/local/validation.json "$COMMAND_ROOT/live/browser_validation.json"
+          cp /tmp/sealab04/local/motion_checks.json "$COMMAND_ROOT/live/command_unit_tests.json"
+          cp "$COMMAND_ROOT/model_integrity.json" "$COMMAND_ROOT/live/model_integrity.json"
+          git config user.name 'ATLAS release'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -f atlas_bay_command_04/live atlas_bay_command_04/source atlas_bay_command_04/verify_release.py atlas_bay_command_04/model_integrity.json
+          git commit -m 'Publish Sea Lab 04.2: configurable engines, Beaufort, driving layouts and test workspaces'
+          git stash push -u -m sealab-generated-files
+          git pull --rebase origin main
+          git push origin HEAD:main
+          git stash pop || true
+          URL="https://rawcdn.githack.com/owensto/helper/$(git rev-parse HEAD)/atlas_bay_command_04/live/index.html"
+          echo "url=$URL" >> "$GITHUB_OUTPUT"
+          echo "$URL" > /tmp/sealab04/public_url.txt
+      - name: Verify the exact public app without injected replacement assets
+        env:
+          BASE_URL: ${{ steps.publish.outputs.url }}
+          REVIEW_DIR: /tmp/sealab04/public
+        run: python "$COMMAND_ROOT/verify_release.py"
+      - name: Preserve public evidence
+        run: |
+          cp /tmp/sealab04/public/validation.json "$COMMAND_ROOT/online_validation.json"
+          git add atlas_bay_command_04/online_validation.json
+          git commit -m 'Record Sea Lab 04.2 public browser controls and test-export verification'
+          git stash push -u -m sealab-public-evidence
+          git pull --rebase origin main
+          git push origin HEAD:main
+          git stash pop || true
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ATLAS-SeaLab04-Delivered-App-Source-Evidence
+          path: |
+            /tmp/sealab04/local/
+            /tmp/sealab04/public/
+            /tmp/sealab04/public_url.txt
+            /tmp/sealab04/http.log
+            atlas_bay_command_04/site/
+            atlas_bay_command_04/source/
+            atlas_bay_command_04/region/
+            atlas_bay_command_04/verify_release.py
+            atlas_bay_command_04/delivery_fixups.py
+            atlas_bay_command_04/model_integrity.json
+          retention-days: 30
