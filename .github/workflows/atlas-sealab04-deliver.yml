@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - 'atlas_bay_command_04/delivery_fixups.py'
+      - 'atlas_bay_command_04/delivery_verify_fix.py'
       - '.github/workflows/atlas-sealab04-deliver.yml'
 permissions:
   contents: write
@@ -44,6 +45,7 @@ jobs:
           (r/'model_integrity.json').write_text(json.dumps({'model_sha256':h,'base_geometry_unchanged':True,'engine_instances':'Runtime illustrative configurations; not qualified manufacturer replicas'},indent=2))
           PY
           python "$COMMAND_ROOT/delivery_fixups.py"
+          python "$COMMAND_ROOT/delivery_verify_fix.py"
           python -m py_compile "$COMMAND_ROOT/verify_release.py"
           for f in "$COMMAND_ROOT/site/"*.js; do node --check "$f"; done
           mkdir -p /tmp/sealab04/local /tmp/sealab04/public
@@ -102,5 +104,6 @@ jobs:
             atlas_bay_command_04/region/
             atlas_bay_command_04/verify_release.py
             atlas_bay_command_04/delivery_fixups.py
+            atlas_bay_command_04/delivery_verify_fix.py
             atlas_bay_command_04/model_integrity.json
           retention-days: 30
