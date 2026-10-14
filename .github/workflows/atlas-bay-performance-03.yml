@@ -1,0 +1,91 @@
+name: ATLAS Bay Performance 03
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'atlas_bay_performance_03/transport/**'
+      - 'atlas_bay_performance_03/fixups.py'
+      - '.github/workflows/atlas-bay-performance-03.yml'
+permissions:
+  contents: read
+concurrency:
+  group: atlas-bay-performance-03-review
+  cancel-in-progress: true
+jobs:
+  review:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    env:
+      BAY_ROOT: ${{ github.workspace }}/atlas_bay_performance_03
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Restore the exact approved app and verified performance source
+        run: |
+          git fetch --no-tags origin 700240a66e6f7847eb04a7a65f2deefb61c2ca26
+          mkdir -p /tmp/bayperf/base /tmp/bayperf/reference /tmp/bayperf/regression
+          git archive 700240a66e6f7847eb04a7a65f2deefb61c2ca26 atlas_bay_play_release_02/live atlas_bay_play_release_02/source | tar -x -C /tmp/bayperf/base
+          python - <<'PY'
+          import os,json,base64,lzma,hashlib,shutil
+          from pathlib import Path
+          r=Path(os.environ['BAY_ROOT']);base=Path('/tmp/bayperf/base/atlas_bay_play_release_02')
+          shutil.copytree(base/'live',r/'site',dirs_exist_ok=True)
+          payload=base64.b64decode(''.join((r/'transport'/f'part{i}.b64').read_text().strip() for i in range(2)),validate=True)
+          assert hashlib.sha256(payload).hexdigest()=='64344ebfb6800edbae0d59cfd245f11714702d0b379b9568dda8f32bede75e63','Source transport checksum mismatch'
+          for name,text in json.loads(lzma.decompress(payload)).items():
+              p=Path(name);assert not p.is_absolute() and '..' not in p.parts
+              out=r/p;out.parent.mkdir(parents=True,exist_ok=True);out.write_text(text)
+          for name,edits in json.loads((r/'source_edits.json').read_text()).items():
+              p=r/'site'/name;assert hashlib.sha256(p.read_bytes()).hexdigest()==edits['base_sha256'],name
+              text=p.read_text()
+              for start,end,replacement in reversed(edits['operations']):text=text[:start]+replacement+text[end:]
+              p.write_text(text)
+          raw=(r/'site/performance_data.json').read_text()
+          (r/'site/performance_data.js').write_text("/* Factual sea-trial rows; sources and limitations are retained. */\n(function(g){'use strict';const data="+raw+";g.BAY_REFERENCE_DATA=data;if(typeof module!=='undefined')module.exports=data;})(typeof window!=='undefined'?window:globalThis);\n")
+          t=(base/'source/test_motion.js').read_text()
+          t=t.replace("const B=require('../site/physics.js'),assert=require('assert'),fs=require('fs');const tests=[];","const Core=require('../site/physics.js'),assert=require('assert'),fs=require('fs');class B extends Core{constructor(){super();this.setPerformanceMode('experimental')}}B.surface=Core.surface;const tests=[];")
+          (r/'source/test_experimental_regression.js').write_text(t)
+          v=(base/'source/verify02.py').read_text()
+          v=v.replace("browser=pw.chromium.launch(headless=True,","browser=pw.chromium.launch(**({'executable_path':os.environ['CHROMIUM_PATH']} if os.environ.get('CHROMIUM_PATH') else {}),headless=True,")
+          v=v.replace("r['ready_seconds']=round(time.monotonic()-start,2);r['initial']","r['ready_seconds']=round(time.monotonic()-start,2);wait(p,'window.BAYPERF_UI');p.locator('[data-mode=drive]').click();p.locator('#performance-mode').select_option('experimental');r['initial']")
+          v=v.replace("'tests':[]}","'suite':'Retained Play Lab 02 controls in experimental mode','tests':[]}")
+          (r/'source/verify_regression.py').write_text(v)
+          for name,h in json.loads((r/'EXPECTED_SOURCE_SHA256.json').read_text()).items():assert hashlib.sha256((r/name).read_bytes()).hexdigest()==h,name+' final source mismatch'
+          h=hashlib.sha256((r/'site/assets/ATLAS_Bay_Play.glb').read_bytes()).hexdigest()
+          assert h=='4456a7e157a19e550be0b270cf9649035ec6c17c77badfcad44789fb64ca26e1','Approved model changed'
+          report={'revision':'ATLAS Bay Performance Lab 03','base_commit':'700240a66e6f7847eb04a7a65f2deefb61c2ca26','model_sha256':h,'geometry_changed':False,'scope':'Published Sportsman Masters 247 / Yamaha F300 empirical performance reference in the ATLAS visual app','atlas_performance_validated':False,'full_marine_dynamics_calibrated':False,'steady_rows':11,'rpm_range':[1000,5800],'measured_0_to_30_mph_s':7.70,'acceleration_status':'Single endpoint fit, not independent validation or measured transient trace','fuel_status':'Published steady curve; transient integration modeled; uncovered engine running time flagged','450_profile':False,'draft_validated':False,'source_transport_sha256':hashlib.sha256(payload).hexdigest()}
+          (r/'site/performance_build_report.json').write_text(json.dumps(report,indent=2))
+          PY
+          if [ -f "$BAY_ROOT/fixups.py" ]; then python "$BAY_ROOT/fixups.py"; fi
+      - name: Verify all reference rows, units, ledger and retained handling
+        run: |
+          for f in "$BAY_ROOT"/site/*.js; do node --check "$f"; done
+          node "$BAY_ROOT/source/test_reference.js" > /tmp/bayperf/reference_unit_tests.json
+          node "$BAY_ROOT/source/test_experimental_regression.js" > /tmp/bayperf/experimental_unit_tests.json
+          node "$BAY_ROOT/source/fit_acceleration.js" > /tmp/bayperf/acceleration_fit_check.json
+      - name: Test source table and reference driving in desktop and phone layouts
+        run: |
+          python -m pip install -q playwright==1.55.0
+          python -m playwright install --with-deps chromium >/dev/null
+          python -m http.server 8873 --bind 127.0.0.1 --directory "$BAY_ROOT/site" >/tmp/bayperf/http.log 2>&1 &
+          sleep 2
+          BASE_URL=http://127.0.0.1:8873/index.html REVIEW_DIR=/tmp/bayperf/reference python "$BAY_ROOT/source/verify_reference.py"
+      - name: Check existing cockpit interactions and experimental driving
+        run: |
+          BASE_URL=http://127.0.0.1:8873/index.html REVIEW_DIR=/tmp/bayperf/regression python "$BAY_ROOT/source/verify_regression.py"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ATLAS-Bay-Performance-03-Review
+          path: |
+            /tmp/bayperf/reference/
+            /tmp/bayperf/regression/
+            /tmp/bayperf/*tests.json
+            /tmp/bayperf/acceleration_fit_check.json
+            atlas_bay_performance_03/site/
+            atlas_bay_performance_03/source/
+            atlas_bay_performance_03/EXPECTED_SOURCE_SHA256.json
+            atlas_bay_performance_03/source_edits.json
+          retention-days: 30
