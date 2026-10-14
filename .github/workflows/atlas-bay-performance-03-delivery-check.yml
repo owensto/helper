@@ -1,0 +1,55 @@
+name: ATLAS performance delivery verification
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/atlas-bay-performance-03-delivery-check.yml'
+permissions:
+  contents: read
+concurrency:
+  group: atlas-performance-delivery-check
+  cancel-in-progress: true
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 18
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: 215c67d2c7a2d767beb9bbff65c63e7c1994ffa0
+          sparse-checkout: atlas_bay_performance_03
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Recheck published data, model integrity and numeric behavior
+        run: |
+          mkdir -p /tmp/atlas-performance-delivery
+          cp -R atlas_bay_performance_03/live atlas_bay_performance_03/site
+          node atlas_bay_performance_03/source/test_reference.js > /tmp/atlas-performance-delivery/reference_unit_tests.json
+          node atlas_bay_performance_03/source/test_experimental_regression.js > /tmp/atlas-performance-delivery/experimental_unit_tests.json
+          python - <<'PY'
+          import hashlib,json
+          from pathlib import Path
+          r=Path('atlas_bay_performance_03/live')
+          expected=[[1000,5.3,1.4],[1500,7.3,2.3],[2000,8.5,3.9],[2500,11.1,5.5],[3000,17.5,6.6],[3500,29.6,8.5],[4000,34.8,11.8],[4500,39.7,15.3],[5000,44.2,20.2],[5500,49.2,25.9],[5800,50.9,26.4]]
+          data=json.loads((r/'performance_data.json').read_text())
+          assert [[v['rpm'],v['mph'],v['gph']] for v in data['rows']]==expected
+          sha=hashlib.sha256((r/'assets/ATLAS_Bay_Play.glb').read_bytes()).hexdigest()
+          assert sha=='4456a7e157a19e550be0b270cf9649035ec6c17c77badfcad44789fb64ca26e1'
+          out={'passed':True,'source_id':data['bulletinId'],'reference_hull':data['boat'],'source_rows':11,'model_sha256':sha,'atlas_performance_validated':False,'source_checked_against':'Yamaha original bulletin and Sportsman manufacturer publication','note':'Data consistency and reference-curve reproduction, not independent marine validation.'}
+          Path('/tmp/atlas-performance-delivery/integrity.json').write_text(json.dumps(out,indent=2))
+          PY
+      - name: Verify actual public app on desktop and phone-sized browser
+        env:
+          BASE_URL: https://rawcdn.githack.com/owensto/helper/215c67d2c7a2d767beb9bbff65c63e7c1994ffa0/atlas_bay_performance_03/live/index.html
+          REVIEW_DIR: /tmp/atlas-performance-delivery/public
+        run: |
+          python -m pip install -q playwright==1.55.0
+          python -m playwright install --with-deps chromium >/dev/null
+          python atlas_bay_performance_03/source/verify_reference.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ATLAS-Performance-03-Delivery-Check
+          path: /tmp/atlas-performance-delivery/
+          retention-days: 30
