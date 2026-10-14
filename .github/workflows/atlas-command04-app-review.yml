@@ -1,0 +1,73 @@
+name: ATLAS Sea Lab 04 app review
+on:
+  push:
+    paths:
+      - '.github/workflows/atlas-command04-app-review.yml'
+      - 'atlas_bay_command_04/final_fixups.py'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: atlas-command04-app-review
+  cancel-in-progress: true
+jobs:
+  review:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 18
+    env:
+      COMMAND_ROOT: ${{ github.workspace }}/atlas_bay_command_04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Restore actual reference app and unfinished source
+        run: |
+          mkdir -p "$COMMAND_ROOT/site" /tmp/atlas-command04/review
+          cp -R atlas_bay_performance_03/live/. "$COMMAND_ROOT/site/"
+          python - <<'PY'
+          import os,pathlib,base64,lzma,json,hashlib
+          r=pathlib.Path(os.environ['COMMAND_ROOT'])
+          b=base64.b64decode(''.join(p.read_text().strip() for p in sorted((r/'transport').glob('part*.b64'))),validate=True)
+          for name,text in json.loads(lzma.decompress(b)).items():
+              p=pathlib.Path(name);assert not p.is_absolute() and '..' not in p.parts
+              o=r/p;o.parent.mkdir(parents=True,exist_ok=True);o.write_text(text)
+          b=base64.b64decode((r/'finish_source.b64').read_text(),validate=True)
+          assert hashlib.sha256(b).hexdigest()=='1bf6bd8c91111b26d8376c5b44f3d54bd942cbc343db8d126ca75479060503fc','Finish-source integrity failed'
+          for name,text in json.loads(lzma.decompress(b)).items():
+              assert pathlib.Path(name).name==name and name.endswith('.py')
+              (r/name).write_text(text)
+          PY
+      - name: Apply independently editable workspaces and behavior
+        run: |
+          pip install -q beautifulsoup4 playwright==1.55.0
+          python "$COMMAND_ROOT/source/build.py"
+          python "$COMMAND_ROOT/finish04.py"
+          python "$COMMAND_ROOT/extras04.py"
+          if [ -f "$COMMAND_ROOT/final_fixups.py" ]; then python "$COMMAND_ROOT/final_fixups.py"; fi
+          for f in "$COMMAND_ROOT/site/"*.js; do node --check "$f"; done
+          node "$COMMAND_ROOT/source/test_command.js" > /tmp/atlas-command04/review/motion_checks.json
+          python - <<'PY'
+          import os,pathlib,hashlib,json
+          r=pathlib.Path(os.environ['COMMAND_ROOT']);p=r/'site/assets/ATLAS_Bay_Play.glb'
+          h=hashlib.sha256(p.read_bytes()).hexdigest()
+          assert h=='4456a7e157a19e550be0b270cf9649035ec6c17c77badfcad44789fb64ca26e1'
+          (pathlib.Path('/tmp/atlas-command04/review/model_integrity.json')).write_text(json.dumps({'sha256':h,'geometry_changed':False,'engine_instances':'runtime configuration, not qualified engine replicas'}))
+          PY
+      - name: Test actual desktop and touch-size UI, model engines and test exports
+        run: |
+          python -m playwright install --with-deps chromium >/dev/null
+          python -m http.server 8874 --bind 127.0.0.1 --directory "$COMMAND_ROOT/site" >/tmp/atlas-command04/http.log 2>&1 &
+          sleep 2
+          BASE_URL=http://127.0.0.1:8874/index.html REVIEW_DIR=/tmp/atlas-command04/review python "$COMMAND_ROOT/verify04.py"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ATLAS-SeaLab04-Review-App-Source
+          path: |
+            /tmp/atlas-command04/
+            atlas_bay_command_04/site/
+            atlas_bay_command_04/source/
+            atlas_bay_command_04/region/
+            atlas_bay_command_04/*.py
+          retention-days: 30
