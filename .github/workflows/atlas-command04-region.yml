@@ -1,0 +1,35 @@
+name: ATLAS Command 04 Beaufort region
+on:
+  workflow_dispatch:
+  push:
+    paths: ['atlas_bay_command_04/fetch_beaufort.py', '.github/workflows/atlas-command04-region.yml']
+permissions:
+  contents: write
+concurrency:
+  group: atlas-command04-region
+  cancel-in-progress: true
+jobs:
+  region:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -q shapely
+      - run: python atlas_bay_command_04/fetch_beaufort.py
+      - name: Preserve sourced dataset
+        run: |
+          git config user.name 'ATLAS release'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add atlas_bay_command_04/region
+          git commit -m 'Preserve NOAA-derived Beaufort data and provenance'
+          git pull --rebase origin main
+          git push origin HEAD:main
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ATLAS-Command04-Beaufort
+          path: atlas_bay_command_04/region
+          retention-days: 30
