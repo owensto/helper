@@ -1,0 +1,25 @@
+name: ATLAS Beaufort geographic data
+on:
+  push:
+    branches: [atlas-beaufort-04]
+    paths: ['atlas_beaufort_04/fetch_beaufort.py', '.github/workflows/atlas-beaufort-data.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  data:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -q requests shapely
+      - run: python atlas_beaufort_04/fetch_beaufort.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ATLAS-Beaufort-NOAA-Data
+          path: atlas_beaufort_04/data/
+          retention-days: 30
