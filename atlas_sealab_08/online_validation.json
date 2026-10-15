@@ -1,0 +1,216 @@
+{
+  "url": "https://rawcdn.githack.com/owensto/helper/eb3ba6502b69f6eea2fcd714c003cd8f63cd170f/atlas_sealab_08/live/index.html",
+  "passed": true,
+  "release": "08",
+  "live_site": true,
+  "local_asset_injection": false,
+  "physical_device_test": false,
+  "live_radio_station_tested": false,
+  "tests": [
+    {
+      "device": "desktop",
+      "passed": true,
+      "errors": [],
+      "failed_assets": [],
+      "shader_errors": [],
+      "initial": {
+        "release": "08",
+        "ready": true,
+        "physicalMaterials": 4,
+        "sprayCapacity": 192,
+        "wakeCapacity": 220,
+        "marineValidated": false,
+        "liveBroadcastBundled": false,
+        "wakeEmissions": 0,
+        "sprayEmissions": 0,
+        "radio": {
+          "ready": true,
+          "wanted": false,
+          "playing": false,
+          "held": false,
+          "status": "Ready \u2014 press Play",
+          "error": null,
+          "volume": 0.36,
+          "outputMode": "cockpit",
+          "sourceKind": "original",
+          "title": "Lowcountry Drift",
+          "currentTime": 0,
+          "contextState": "not-created",
+          "level": 0,
+          "peak": 0,
+          "tracks": 2,
+          "localFilesUploaded": false,
+          "liveBroadcastBundled": false
+        },
+        "waterMask": true
+      },
+      "combined_start_and_recorded_sound": {
+        "version": "06",
+        "enabled": true,
+        "contextState": "running",
+        "sampleStatus": "Recorded texture ready",
+        "held": false,
+        "settings": {
+          "master": 0.6,
+          "engine": 0.85,
+          "water": 0.55,
+          "wind": 0.35,
+          "effects": 0.6
+        },
+        "metrics": {
+          "rms": 0.009960999344925774,
+          "engineLoads": [
+            {
+              "rpm": 3143,
+              "load": 0.55,
+              "gain": 0.6347872138969586,
+              "recorded": true
+            },
+            {
+              "rpm": 3143,
+              "load": 0.55,
+              "gain": 0,
+              "recorded": true
+            }
+          ],
+          "activeEngines": 1
+        },
+        "specificEngineRecording": false,
+        "recordedBowWater": true
+      },
+      "radio": {
+        "ready": true,
+        "wanted": true,
+        "playing": true,
+        "held": false,
+        "status": "Playing",
+        "error": null,
+        "volume": 0.36,
+        "outputMode": "cockpit",
+        "sourceKind": "original",
+        "title": "Lowcountry Drift",
+        "currentTime": 4.863473,
+        "contextState": "running",
+        "level": 0.00390540482221566,
+        "peak": 0.00390540482221566,
+        "tracks": 2,
+        "localFilesUploaded": false,
+        "liveBroadcastBundled": false
+      },
+      "knots": 17.714379218595145,
+      "scroll_width": 1600,
+      "timing": {
+        "frames": 49,
+        "wallSeconds": 32.3822,
+        "simulationSeconds": 32.36666666666611,
+        "stalls": 0,
+        "emaFrameMs": 644.7870947202811,
+        "slowFrames": 0,
+        "renderScale": 0.5
+      }
+    },
+    {
+      "device": "phone",
+      "passed": true,
+      "errors": [],
+      "failed_assets": [],
+      "shader_errors": [],
+      "initial": {
+        "release": "08",
+        "ready": true,
+        "physicalMaterials": 4,
+        "sprayCapacity": 192,
+        "wakeCapacity": 220,
+        "marineValidated": false,
+        "liveBroadcastBundled": false,
+        "wakeEmissions": 0,
+        "sprayEmissions": 0,
+        "radio": {
+          "ready": true,
+          "wanted": false,
+          "playing": false,
+          "held": false,
+          "status": "Ready \u2014 press Play",
+          "error": null,
+          "volume": 0.36,
+          "outputMode": "cockpit",
+          "sourceKind": "original",
+          "title": "Lowcountry Drift",
+          "currentTime": 0,
+          "contextState": "not-created",
+          "level": 0,
+          "peak": 0,
+          "tracks": 2,
+          "localFilesUploaded": false,
+          "liveBroadcastBundled": false
+        },
+        "waterMask": true
+      },
+      "combined_start_and_recorded_sound": {
+        "version": "06",
+        "enabled": true,
+        "contextState": "running",
+        "sampleStatus": "Recorded texture ready",
+        "held": false,
+        "settings": {
+          "master": 0.6,
+          "engine": 0.85,
+          "water": 0.55,
+          "wind": 0.35,
+          "effects": 0.6
+        },
+        "metrics": {
+          "rms": 0.06885450096469761,
+          "engineLoads": [
+            {
+              "rpm": 3151,
+              "load": 0.55,
+              "gain": 0.6353150508692719,
+              "recorded": true
+            },
+            {
+              "rpm": 3151,
+              "load": 0.55,
+              "gain": 0,
+              "recorded": true
+            }
+          ],
+          "activeEngines": 1
+        },
+        "specificEngineRecording": false,
+        "recordedBowWater": true
+      },
+      "radio": {
+        "ready": true,
+        "wanted": true,
+        "playing": true,
+        "held": false,
+        "status": "Playing",
+        "error": null,
+        "volume": 0.36,
+        "outputMode": "cockpit",
+        "sourceKind": "original",
+        "title": "Lowcountry Drift",
+        "currentTime": 2.600152,
+        "contextState": "running",
+        "level": 0.0043530281725000855,
+        "peak": 0.0043530281725000855,
+        "tracks": 2,
+        "localFilesUploaded": false,
+        "liveBroadcastBundled": false
+      },
+      "knots": 13.889401267152772,
+      "scroll_width": 430,
+      "timing": {
+        "frames": 55,
+        "wallSeconds": 22.232599999999998,
+        "simulationSeconds": 22.216666666666686,
+        "stalls": 0,
+        "emaFrameMs": 385.5857199435376,
+        "slowFrames": 0,
+        "renderScale": 0.5
+      }
+    }
+  ],
+  "published_commit": "eb3ba6502b69f6eea2fcd714c003cd8f63cd170f"
+}
