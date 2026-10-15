@@ -51,6 +51,8 @@ jobs:
           python atlas_sealab_09/patch_core09.py
       - name: Prepare real recorded layers and deterministic checks
         run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg >/dev/null
           python -m pip install -q numpy scipy soundfile playwright==1.55.0
           AUDIO_SOURCE=/tmp/audio09/river_outboard.mp3 python atlas_sealab_09/process_audio09.py
           rm -f atlas_sealab_09/recorded_source.wav
