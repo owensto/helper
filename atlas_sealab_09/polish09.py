@@ -44,3 +44,10 @@ assert needle in s;s=s.replace(needle,extra+needle)
 s=s.replace("assert r['final']['water']['knownSamples']>0;", "assert r['final']['water']['knownSamples']>0;assert r['final']['water']['nearWaterGridMetres']==.5;")
 p.write_text(s)
 print('Prepared 0.5m near-boat water grid, persistent panel controls, honest provider playback result and detail screenshots')
+# Audio reacts to deliberate key/gear actions immediately, independent of the
+# graphics frame rate. Report actual active engines rather than configured count.
+patch('site/helm09.js',"A.engineToggle();status('Ignition on.", "A.engineToggle();A.audio.tick(S);status('Ignition on.")
+patch('site/helm09.js',"A.engineToggle();status('Ignition off.", "A.engineToggle();A.audio.tick(S);status('Ignition off.")
+patch('site/helm09.js',"A.chooseGear(cap(Math.round(value),-1,1));status(", "A.chooseGear(cap(Math.round(value),-1,1));A.audio.tick(S);status(")
+patch('site/audio09.js','const speed=Math.hypot(s.u||0,s.v||0);', 'B.metrics.activeEngines=s.engine?count:0;\n  const speed=Math.hypot(s.u||0,s.v||0);')
+patch('verify09.py',"page.wait_for_function('!BAYPLAY.state.engine');page.wait_for_timeout(800);", "page.wait_for_function('!BAYPLAY.state.engine && BAYPLAY.audio.metrics.activeEngines===0 && BAYPLAY.audio.voices[0].gain.gain.value<.02');")
