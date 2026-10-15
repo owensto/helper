@@ -1,0 +1,70 @@
+name: ATLAS Sea Lab 10 operations review
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/atlas-sealab-10-review.yml'
+      - 'atlas_sealab_10/transport/**'
+      - 'atlas_sealab_10/review_fixups10.py'
+permissions:
+  contents: read
+  actions: read
+concurrency:
+  group: atlas-sealab-10-review
+  cancel-in-progress: true
+jobs:
+  review:
+    strategy:
+      fail-fast: false
+      matrix:
+        device: [desktop, phone]
+    runs-on: ubuntu-24.04
+    timeout-minutes: 22
+    env:
+      TEST_DEVICE: ${{ matrix.device }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - uses: actions/download-artifact@v4
+        with:
+          github-token: ${{ github.token }}
+          run-id: 38819695139
+          artifact-ids: 12011524224
+          path: /tmp/base09
+          merge-multiple: true
+      - name: Restore reviewed boat and verified new source
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import base64,lzma,json,hashlib,shutil
+          r=Path('atlas_sealab_10');base=Path('/tmp/base09')
+          shutil.copytree(base/'site',r/'site',dirs_exist_ok=True)
+          shutil.copytree(base/'source',r/'source',dirs_exist_ok=True)
+          shutil.copy2(base/'test09.js',r/'test09.js')
+          data=base64.b64decode(''.join((r/'transport'/f'part{i}.b64').read_text().strip() for i in range(2)),validate=True)
+          assert hashlib.sha256(data).hexdigest()=='2323882ce62b367021f050ffd89d1f31a499146b0d4c295cd7f39e628579d21a','Source checksum mismatch'
+          for name,text in json.loads(lzma.decompress(data)).items():
+              p=Path(name);assert not p.is_absolute() and '..' not in p.parts and p.suffix in ['.js','.css','.py']
+              dest=r/p;dest.parent.mkdir(parents=True,exist_ok=True);dest.write_text(text)
+          PY
+          python atlas_sealab_10/prepare10.py
+          if [ -f atlas_sealab_10/review_fixups10.py ]; then python atlas_sealab_10/review_fixups10.py; fi
+          for f in atlas_sealab_10/site/*.js; do node --check "$f"; done
+          mkdir -p atlas_sealab_10/review
+          node atlas_sealab_10/test10.js > atlas_sealab_10/review/unit10.json
+          node atlas_sealab_10/test09.js > atlas_sealab_10/review/physics09-regression.json
+      - name: Exercise rendered normal boating, weather and independent Easter eggs
+        run: |
+          python -m pip install -q playwright==1.55.0
+          python -m playwright install --with-deps chromium >/dev/null
+          python -m http.server 8910 --bind 127.0.0.1 --directory atlas_sealab_10/site >atlas_sealab_10/review/http.log 2>&1 &
+          sleep 2
+          BASE_URL=http://127.0.0.1:8910/index.html python atlas_sealab_10/verify10.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ATLAS-SeaLab10-Review-${{ matrix.device }}
+          path: atlas_sealab_10/
+          retention-days: 30
