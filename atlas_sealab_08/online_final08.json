@@ -1,0 +1,244 @@
+{
+  "url": "https://rawcdn.githack.com/owensto/helper/ca5d6bcd518d3be39dad9fff6f3841f8d72acb1a/atlas_sealab_08/live/index.html",
+  "passed": true,
+  "release": "08",
+  "live_site": true,
+  "local_asset_injection": false,
+  "physical_device_test": false,
+  "live_radio_station_tested": false,
+  "tests": [
+    {
+      "device": "desktop",
+      "passed": true,
+      "errors": [],
+      "failed_assets": [],
+      "shader_errors": [],
+      "initial": {
+        "release": "08",
+        "ready": true,
+        "physicalMaterials": 4,
+        "sprayCapacity": 192,
+        "wakeCapacity": 220,
+        "marineValidated": false,
+        "liveBroadcastBundled": false,
+        "wakeEmissions": 0,
+        "sprayEmissions": 0,
+        "radio": {
+          "ready": true,
+          "wanted": false,
+          "playing": false,
+          "held": false,
+          "status": "Ready \u2014 press Play",
+          "error": null,
+          "volume": 0.36,
+          "outputMode": "cockpit",
+          "sourceKind": "original",
+          "title": "Lowcountry Drift",
+          "currentTime": 0,
+          "contextState": "not-created",
+          "level": 0,
+          "peak": 0,
+          "tracks": 2,
+          "localFilesUploaded": false,
+          "liveBroadcastBundled": false
+        },
+        "waterMask": true
+      },
+      "combined_start_and_recorded_sound": {
+        "version": "06",
+        "enabled": true,
+        "contextState": "running",
+        "sampleStatus": "Recorded texture ready",
+        "held": false,
+        "settings": {
+          "master": 0.6,
+          "engine": 0.85,
+          "water": 0.55,
+          "wind": 0.35,
+          "effects": 0.6
+        },
+        "metrics": {
+          "rms": 0.07082214878559041,
+          "engineLoads": [
+            {
+              "rpm": 3340,
+              "load": 0.55,
+              "gain": 0.6471481407191915,
+              "recorded": true
+            },
+            {
+              "rpm": 3340,
+              "load": 0.55,
+              "gain": 0,
+              "recorded": true
+            }
+          ],
+          "activeEngines": 1
+        },
+        "specificEngineRecording": false,
+        "recordedBowWater": true
+      },
+      "radio": {
+        "ready": true,
+        "wanted": true,
+        "playing": true,
+        "held": false,
+        "status": "Playing",
+        "error": null,
+        "volume": 0.36,
+        "outputMode": "cockpit",
+        "sourceKind": "original",
+        "title": "Lowcountry Drift",
+        "currentTime": 2.864,
+        "contextState": "running",
+        "level": 0.02526498082958521,
+        "peak": 0.02526498082958521,
+        "tracks": 2,
+        "localFilesUploaded": false,
+        "liveBroadcastBundled": false
+      },
+      "knots": 16.078733430567993,
+      "scroll_width": 1600,
+      "timing": {
+        "frames": 48,
+        "wallSeconds": 30.598899999999993,
+        "simulationSeconds": 30.583333333332877,
+        "stalls": 0,
+        "emaFrameMs": 669.5510769176583,
+        "slowFrames": 0,
+        "renderScale": 0.5
+      }
+    },
+    {
+      "device": "phone",
+      "passed": true,
+      "errors": [],
+      "failed_assets": [],
+      "shader_errors": [],
+      "initial": {
+        "release": "08",
+        "ready": true,
+        "physicalMaterials": 4,
+        "sprayCapacity": 192,
+        "wakeCapacity": 220,
+        "marineValidated": false,
+        "liveBroadcastBundled": false,
+        "wakeEmissions": 0,
+        "sprayEmissions": 0,
+        "radio": {
+          "ready": true,
+          "wanted": false,
+          "playing": false,
+          "held": false,
+          "status": "Ready \u2014 press Play",
+          "error": null,
+          "volume": 0.36,
+          "outputMode": "cockpit",
+          "sourceKind": "original",
+          "title": "Lowcountry Drift",
+          "currentTime": 0,
+          "contextState": "not-created",
+          "level": 0,
+          "peak": 0,
+          "tracks": 2,
+          "localFilesUploaded": false,
+          "liveBroadcastBundled": false
+        },
+        "waterMask": true
+      },
+      "combined_start_and_recorded_sound": {
+        "version": "06",
+        "enabled": true,
+        "contextState": "running",
+        "sampleStatus": "Recorded texture ready",
+        "held": false,
+        "settings": {
+          "master": 0.6,
+          "engine": 0.85,
+          "water": 0.55,
+          "wind": 0.35,
+          "effects": 0.6
+        },
+        "metrics": {
+          "rms": 0.027415539358176165,
+          "engineLoads": [
+            {
+              "rpm": 3151,
+              "load": 0.55,
+              "gain": 0.6353191118769136,
+              "recorded": true
+            },
+            {
+              "rpm": 3151,
+              "load": 0.55,
+              "gain": 0,
+              "recorded": true
+            }
+          ],
+          "activeEngines": 1
+        },
+        "specificEngineRecording": false,
+        "recordedBowWater": true
+      },
+      "radio": {
+        "ready": true,
+        "wanted": true,
+        "playing": true,
+        "held": false,
+        "status": "Playing",
+        "error": null,
+        "volume": 0.36,
+        "outputMode": "cockpit",
+        "sourceKind": "original",
+        "title": "Lowcountry Drift",
+        "currentTime": 1.680635,
+        "contextState": "running",
+        "level": 0.005944714239300027,
+        "peak": 0.005944714239300027,
+        "tracks": 2,
+        "localFilesUploaded": false,
+        "liveBroadcastBundled": false
+      },
+      "knots": 10.982704159093936,
+      "phone_clear_layout": {
+        "boxes": [
+          {
+            "id": "speed-hud",
+            "x": 10,
+            "y": 16,
+            "width": 114,
+            "height": 140.15625
+          },
+          {
+            "id": "sea08-compass",
+            "x": 76.5390625,
+            "y": 166,
+            "width": 276.921875,
+            "height": 28
+          },
+          {
+            "id": "sea08-pause",
+            "x": 203.578125,
+            "y": 14,
+            "width": 76.421875,
+            "height": 38.84375
+          }
+        ],
+        "overlaps": []
+      },
+      "scroll_width": 430,
+      "timing": {
+        "frames": 56,
+        "wallSeconds": 22.232599999999994,
+        "simulationSeconds": 22.216666666666686,
+        "stalls": 0,
+        "emaFrameMs": 270.14086160112754,
+        "slowFrames": 0,
+        "renderScale": 0.5
+      }
+    }
+  ],
+  "published_commit": "ca5d6bcd518d3be39dad9fff6f3841f8d72acb1a",
+  "full_regression_run": 38812973288,
+  "final_delta": "CSS-only mobile HUD separation and duplicate-rail removal; public playback and control tests rerun on both layouts"
+}
