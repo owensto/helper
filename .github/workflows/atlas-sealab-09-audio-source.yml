@@ -1,0 +1,24 @@
+name: ATLAS Sea Lab 09 recorded audio source
+on:
+  workflow_dispatch:
+  push:
+    paths: ['.github/workflows/atlas-sealab-09-audio-source.yml']
+permissions:
+  contents: read
+jobs:
+  source:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - name: Retrieve existing CC0 source at original preview bandwidth
+        run: |
+          mkdir -p /tmp/atlas09-audio
+          curl --fail --location --retry 2 --max-time 90 https://cdn.freesound.org/previews/690/690160_938246-hq.mp3 -o /tmp/atlas09-audio/river_outboard.mp3
+          test "$(stat -c%s /tmp/atlas09-audio/river_outboard.mp3)" -gt 100000
+          sha256sum /tmp/atlas09-audio/river_outboard.mp3 > /tmp/atlas09-audio/SHA256.txt
+          printf '%s\n' 'River boat with outboard engine (at changing speeds), nomadas, Freesound 690160.' 'https://freesound.org/people/nomadas/sounds/690160/' 'CC0 1.0, verified source page. Generic outboard; exact engine and RPM unknown.' > /tmp/atlas09-audio/LICENSE.txt
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ATLAS-SeaLab09-Audio-Source
+          path: /tmp/atlas09-audio/
+          retention-days: 30
