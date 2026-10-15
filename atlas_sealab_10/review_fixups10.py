@@ -43,3 +43,38 @@ a="assert r['cinematicCrash']['activeParticles']>0;";assert s.count(a)==1;s=s.re
 a="assert r['effectsCleaned']['fxAllocations']<=2";assert s.count(a)==1;s=s.replace(a,a+";assert page.evaluate('SEA06.inspect().dryMaskEnabled')")
 p.write_text(s)
 print('No ghost water cutout or key after explosion; driver starts from the actual impact pose')
+# Preserve stall protection, but make an automatic pause explicit and recoverable.
+p=r/'site/app.js';s=p.read_text()
+a="gamePaused=true;acc=0;timing.stalls++;";assert s.count(a)==1;s=s.replace(a,a+"window.BAYPLAY.pauseReason='render-stall';")
+a="setPaused:(v)=>{gamePaused=!!v;";assert s.count(a)==1;s=s.replace(a,a+"window.BAYPLAY.pauseReason=null;");p.write_text(s)
+for name in ['operations10.js','site/operations10.js']:
+ p=r/name;s=p.read_text();a="const condition=document.createElement('div');";assert s.count(a)==1
+ s=s.replace(a,"""const stall=document.createElement('section');stall.id='sea10-performance';stall.hidden=true;stall.setAttribute('role','status');stall.innerHTML='<span>Graphics stalled — simulation paused. Resume, or choose Balanced graphics in Settings.</span><button id="sea10-resume">Resume</button>';$('helm09').append(stall);$('sea10-resume').onclick=()=>A.setPaused(false);
+ """+a)
+ a="setInterval(()=>{condition.textContent=";assert s.count(a)==1;s=s.replace(a,"setInterval(()=>{stall.hidden=A.pauseReason!=='render-stall';condition.textContent=");p.write_text(s)
+css="""
+#sea10-performance{position:absolute;left:50%;bottom:138px;transform:translateX(-50%);width:min(560px,calc(100vw - 32px));display:flex;gap:14px;align-items:center;background:#e8d9baf5;color:#263d42;padding:13px 16px;border-radius:12px;pointer-events:auto;box-shadow:0 6px 24px #09233130;font-size:12px;line-height:1.45;z-index:3}
+#helm09 #sea10-resume{white-space:nowrap;background:#244a52;color:#eff8e7}
+@media(max-width:900px){#sea10-performance{bottom:166px;font-size:11px;padding:10px 12px}}
+"""
+for name in ['operations10.css','site/operations10.css']:
+ p=r/name;p.write_text(p.read_text()+css)
+# Keep real speed and real output RMS gates. The stress run may incur a one-off
+# software-renderer compilation stall; exercise the visible Resume control and
+# report it, rather than disable protection or silently alter elapsed time.
+p=r/'verify10.py';s=p.read_text();a="def collision(page,seconds=.65,engine=False):";assert s.count(a)==1
+s=s.replace(a,"""def wait_driving(page,r):
+ for attempt in range(3):
+  page.wait_for_function('BAYPLAY.pauseReason===\"render-stall\" || (BAYPLAY.state.speedOverGround>1 && BAYPLAY.audio.metrics.rms>.0001)',timeout=60000)
+  if page.evaluate('BAYPLAY.pauseReason!==\"render-stall\"'):return
+  r.setdefault('renderStallRecovery',[]).append(page.evaluate('({...SEA_TIMING})'))
+  page.locator('#sea10-resume').click()
+ raise AssertionError('Repeated rendering stalls prevented normal driving')
+"""+a)
+a="page.wait_for_function('BAYPLAY.state.speedOverGround>1 && BAYPLAY.audio.metrics.rms>.0001',timeout=60000)";assert s.count(a)==1;s=s.replace(a,"wait_driving(page,r)")
+a="  except Exception as ex:\n   r['exception']";assert s.count(a)==1;s=s.replace(a,"  except Exception as ex:\n   try:r['failureState']=page.evaluate('({boat:BAYPLAY.inspect(),timing:window.SEA_TIMING,pauseReason:BAYPLAY.pauseReason,ops:SEA10.inspect()})')\n   except Exception:pass\n   r['exception']")
+p.write_text(s)
+# Match visible version metadata without touching legacy viewer destinations.
+p=r/'site/index.html';s=p.read_text().replace('<title>ATLAS Sea Lab 09 · At the Helm</title>','<title>ATLAS Sea Lab 10 · At the Helm</title>');p.write_text(s)
+p=r/'site/manifest.webmanifest';s=p.read_text().replace('ATLAS Sea Lab 08','ATLAS Sea Lab 10');p.write_text(s)
+print('Automatic render stalls now show Resume; gates retain real speed and audible output')
