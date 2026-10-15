@@ -1,0 +1,134 @@
+name: ATLAS Sea Lab 05.1
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'atlas_sealab_05_1/source_bundle.b64'
+      - 'atlas_sealab_05_1/fixups.py'
+      - 'atlas_sealab_05_1/REVIEW.md'
+      - '.github/workflows/atlas-sealab-05-1.yml'
+permissions:
+  contents: write
+  actions: read
+concurrency:
+  group: atlas-sealab-05-1
+  cancel-in-progress: true
+jobs:
+  review:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    env:
+      SEA_ROOT: ${{ github.workspace }}/atlas_sealab_05_1
+      COMMAND_ROOT: ${{ github.workspace }}/atlas_sealab_05_1
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            atlas_sealab_05_1
+            atlas_bay_command_04/live
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - uses: actions/download-artifact@v4
+        with:
+          github-token: ${{ github.token }}
+          run-id: 38660648623
+          artifact-ids: 11938184435
+          merge-multiple: true
+          path: /tmp/sea051/recovered
+      - name: Recover reviewed model and apply checked refinements
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import os,shutil,base64,hashlib,lzma,json
+          r=Path(os.environ['SEA_ROOT']);src=next(Path('/tmp/sea051/recovered').rglob('site/app.js')).parent.parent
+          for name in ['site','source']:
+              shutil.copytree(src/name,r/name,dirs_exist_ok=True)
+          b=base64.b64decode((r/'source_bundle.b64').read_text(),validate=True)
+          assert hashlib.sha256(b).hexdigest()=='b8e509baf76878f90dbb3663951c0cea9db81d08aa2bef937a21160bddaf148a'
+          for name,text in json.loads(lzma.decompress(b)).items():
+              assert Path(name).name==name and name.endswith(('.py','.js','.css','.json'))
+              (r/name).write_text(text)
+          assert hashlib.sha256((r/'site/assets/ATLAS_Bay_Play.glb').read_bytes()).hexdigest()=='4456a7e157a19e550be0b270cf9649035ec6c17c77badfcad44789fb64ca26e1'
+          PY
+          python "$SEA_ROOT/refine51.py"
+          if [ -f "$SEA_ROOT/fixups.py" ]; then python "$SEA_ROOT/fixups.py"; fi
+          for f in "$SEA_ROOT/site/"*.js; do node --check "$f"; done
+          mkdir -p /tmp/sea051/review /tmp/sea051/public
+          node "$SEA_ROOT/source/test_command.js" > /tmp/sea051/review/motion_checks.json
+      - name: Check old and new configuration speed on the same inputs
+        run: |
+          node - <<'JS' > /tmp/sea051/review/speed_comparison.json
+          const Old=require(process.cwd()+'/atlas_bay_command_04/live/command-motion.js');
+          const New=require(process.env.SEA_ROOT+'/site/command-motion.js');
+          const checks=[];
+          for(const cfg of [{count:1,hp:300,engineKg:277},{count:1,hp:450,engineKg:437},{count:2,hp:150,engineKg:230},{count:2,hp:300,engineKg:277}]){
+            const row={configuration:cfg,simulated_not_sea_trials:true};
+            for(const [label,B] of [['previous',Old],['revised',New]]){
+              const s=new B();s.configure({...cfg,location:'basin',physics:'seamanship',conditions:'calm'});s.x=-10000;s.z=-10000;s.start();for(let i=0;i<180;i++)s.step(1/60);s.gear=1;s.throttle=1;let t30=null;
+              for(let i=0;i<7200;i++){s.step(1/60);if(t30===null&&s.u>=30*.44704)t30=(i+1)/60;}
+              row[label]={knots:s.u*3600/1852,mph:s.u/.44704,zeroTo30Seconds:t30,totalMassKg:s.totalMassKg()};
+            }
+            checks.push(row);
+          }
+          if(!(checks[0].revised.knots>43&&checks[0].revised.knots<45))throw Error('Unexpected single300 modeled speed');
+          console.log(JSON.stringify(checks,null,2));
+          JS
+      - name: Verify real rendered controls, instruments and nonzero audio
+        run: |
+          pip install -q playwright==1.55.0
+          python -m playwright install --with-deps chromium >/dev/null
+          python -m http.server 8895 --bind 127.0.0.1 --directory "$SEA_ROOT/site" >/tmp/sea051/http.log 2>&1 &
+          sleep 2
+          BASE_URL=http://127.0.0.1:8895/index.html REVIEW_DIR=/tmp/sea051/review python "$SEA_ROOT/verify51.py"
+      - name: Publish separately after visual review
+        if: contains(github.event.head_commit.message, '[publish]')
+        id: publish
+        run: |
+          mkdir -p "$SEA_ROOT/live"
+          cp -a "$SEA_ROOT/site/." "$SEA_ROOT/live/"
+          cp /tmp/sea051/review/validation.json "$SEA_ROOT/live/browser_validation.json"
+          cp /tmp/sea051/review/speed_comparison.json "$SEA_ROOT/live/speed_comparison.json"
+          cp /tmp/sea051/review/motion_checks.json "$SEA_ROOT/live/motion_checks.json"
+          git config user.name 'ATLAS release'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -f atlas_sealab_05_1/live atlas_sealab_05_1/source atlas_sealab_05_1/refine51.py atlas_sealab_05_1/verify51.py atlas_sealab_05_1/engine_display.js atlas_sealab_05_1/polish51.js atlas_sealab_05_1/polish51.css
+          git commit -m 'Publish Sea Lab 05.1: revised speed, realistic-looking instruments and layered sound'
+          git stash push -u -m sea051-generated
+          git pull --rebase origin main
+          git push origin HEAD:main
+          URL="https://rawcdn.githack.com/owensto/helper/$(git rev-parse HEAD)/atlas_sealab_05_1/live/index.html"
+          git stash pop || true
+          echo "url=$URL" >> "$GITHUB_OUTPUT"
+          echo "$URL" > /tmp/sea051/public_url.txt
+      - name: Verify the exact public app with no local assets substituted
+        if: steps.publish.outputs.url != ''
+        env:
+          BASE_URL: ${{ steps.publish.outputs.url }}
+          REVIEW_DIR: /tmp/sea051/public
+        run: python "$SEA_ROOT/verify51.py"
+      - name: Preserve public verification
+        if: steps.publish.outputs.url != ''
+        run: |
+          cp /tmp/sea051/public/validation.json "$SEA_ROOT/online_validation.json"
+          git add atlas_sealab_05_1/online_validation.json
+          git commit -m 'Record public Sea Lab 05.1 instrument, audio and driving checks'
+          git stash push -u -m sea051-evidence
+          git pull --rebase origin main
+          git push origin HEAD:main
+          git stash pop || true
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ATLAS-SeaLab05-1-App-Source-Evidence
+          path: |
+            /tmp/sea051/review/
+            /tmp/sea051/public/
+            /tmp/sea051/public_url.txt
+            /tmp/sea051/http.log
+            atlas_sealab_05_1/site/
+            atlas_sealab_05_1/source/
+            atlas_sealab_05_1/*.py
+            atlas_sealab_05_1/*.js
+            atlas_sealab_05_1/*.css
+          retention-days: 30
