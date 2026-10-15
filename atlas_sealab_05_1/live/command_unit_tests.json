@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "qualitative": true,
+  "atlasValidated": false,
+  "checks": [
+    "Single 450 changes computed speed, not just a label",
+    "Twin installation changes assumed mass and speed",
+    "Payload reduces acceleration at fixed power",
+    "Neutral retains inertia",
+    "Turning produces yaw and actual trajectory",
+    "Twin differential thrust changes yaw",
+    "Jump is disabled in modeled realism",
+    "Sport hop becomes airborne then lands",
+    "Reference configuration forces 1x300",
+    "Published reference equilibrium retained",
+    "Basic integration remains finite across rates and settings"
+  ]
+}

@@ -1,0 +1,82 @@
+[
+  {
+    "configuration": {
+      "count": 1,
+      "hp": 300,
+      "engineKg": 277
+    },
+    "simulated_not_sea_trials": true,
+    "previous": {
+      "knots": 32.25845522113918,
+      "mph": 37.12236729347471,
+      "zeroTo30Seconds": 5.533333333333333,
+      "totalMassKg": 2123.189403962998
+    },
+    "revised": {
+      "knots": 43.769330372293695,
+      "mph": 50.368845846188215,
+      "zeroTo30Seconds": 7.95,
+      "totalMassKg": 2123.189403962998
+    }
+  },
+  {
+    "configuration": {
+      "count": 1,
+      "hp": 450,
+      "engineKg": 437
+    },
+    "simulated_not_sea_trials": true,
+    "previous": {
+      "knots": 37.61270054533081,
+      "mph": 43.28392277223059,
+      "zeroTo30Seconds": 3.7666666666666666,
+      "totalMassKg": 2281.9727504741377
+    },
+    "revised": {
+      "knots": 49.84364637176068,
+      "mph": 57.3590438591754,
+      "zeroTo30Seconds": 5.183333333333334,
+      "totalMassKg": 2281.9727504741377
+    }
+  },
+  {
+    "configuration": {
+      "count": 2,
+      "hp": 150,
+      "engineKg": 230
+    },
+    "simulated_not_sea_trials": true,
+    "previous": {
+      "knots": 31.312392652230645,
+      "mph": 36.03365793263041,
+      "zeroTo30Seconds": 6.033333333333333,
+      "totalMassKg": 2306.1075026359135
+    },
+    "revised": {
+      "knots": 42.57891904997288,
+      "mph": 48.9989449617669,
+      "zeroTo30Seconds": 8.816666666666666,
+      "totalMassKg": 2306.1075026359135
+    }
+  },
+  {
+    "configuration": {
+      "count": 2,
+      "hp": 300,
+      "engineKg": 277
+    },
+    "simulated_not_sea_trials": true,
+    "previous": {
+      "knots": 40.62792120499563,
+      "mph": 46.75377673862885,
+      "zeroTo30Seconds": 3,
+      "totalMassKg": 2397.6741956581955
+    },
+    "revised": {
+      "knots": 54.085231249956216,
+      "mph": 62.24017256405027,
+      "zeroTo30Seconds": 4,
+      "totalMassKg": 2397.6741956581955
+    }
+  }
+]

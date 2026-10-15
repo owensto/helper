@@ -1,0 +1,17 @@
+/* Keep the driving center clear; detailed displays are opened only on request. */
+#command-app.pure-cockpit #speed-hud{display:none!important}
+#command-app #return-helm[hidden]{display:none!important}
+#command-app .layout-switch.folded #console-focus,#command-app .layout-switch.folded #return-helm{display:none!important}
+#command-app .layout-switch #console-focus,#command-app .layout-switch #return-helm{font-size:10px;white-space:nowrap}
+#command-app #mfd-panel{border-radius:16px;box-shadow:0 24px 100px #0009;border-color:#446371;padding:15px}
+.mfd-screens canvas{border-radius:10px;border-width:5px;border-color:#263e4b;box-shadow:0 0 0 2px #02090f,0 8px 25px #0004}
+#mfd-route-note{display:block;font-size:10px;margin-top:5px;color:#bdab82}
+#mfd-chart{touch-action:none}
+#speed-explainer{margin-top:9px;font-size:11px;line-height:1.5;color:#99b6c1}#speed-explainer summary{cursor:pointer;color:#adcacb}#speed-explainer p{font-size:11px}
+#command-app #sound-quick{background:#234b58;color:#dfefe9;border:1px solid #73989155;border-radius:8px;white-space:nowrap;font-size:11px;padding:9px 13px}
+#command-app #sound-quick.active{background:#aadccb;color:#0d303e}
+#command-app.immersive #sound-quick{display:none}
+#runtime-status{font-variant-numeric:tabular-nums;min-width:50px}#sound-mixer a{color:#9fdcc7}
+@media(min-width:1200px){#command-app .layout-switch{max-width:calc(100vw - 480px);flex-wrap:wrap}#command-app #mfd-panel{width:min(1280px,92vw);max-height:84vh;bottom:56px}}
+@media(max-width:900px){#sound-quick{display:none!important}#command-app #mfd-panel{padding:9px;max-height:73vh}.mfd-toolbar{row-gap:6px}.mfd-toolbar button{min-height:31px}#command-app .layout-switch #console-focus{font-size:9px}.cmd-bottom{flex-wrap:wrap}}
+@media(max-width:700px){#command-app .layout-switch{max-width:calc(100vw - 18px);overflow-x:auto;flex-wrap:nowrap}#command-app #mfd-panel{width:96vw;bottom:118px}.mfd-screens canvas{border-width:3px}#mfd-route-note{font-size:8px}.mfd-toolbar input{max-width:65px}#runtime-status{display:none}#command-app #speed-hud{top:170px;width:124px;opacity:.94}#command-app.immersive #speed-hud{top:16px}#console-focus{display:none!important}}

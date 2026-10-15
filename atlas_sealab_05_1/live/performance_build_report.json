@@ -1,0 +1,33 @@
+{
+  "revision": "ATLAS Bay Performance Lab 03",
+  "base_commit": "700240a66e6f7847eb04a7a65f2deefb61c2ca26",
+  "model_sha256": "4456a7e157a19e550be0b270cf9649035ec6c17c77badfcad44789fb64ca26e1",
+  "geometry_changed": false,
+  "scope": "Published Sportsman Masters 247 / Yamaha F300 empirical performance reference in the ATLAS visual app",
+  "atlas_performance_validated": false,
+  "full_marine_dynamics_calibrated": false,
+  "steady_rows": 11,
+  "rpm_range": [
+    1000,
+    5800
+  ],
+  "measured_0_to_30_mph_s": 7.7,
+  "acceleration_status": "Single endpoint fit, not independent validation or measured transient trace",
+  "fuel_status": "Published steady curve; transient integration modeled; uncovered engine running time flagged",
+  "450_profile": false,
+  "draft_validated": false,
+  "source_transport_sha256": "64344ebfb6800edbae0d59cfd245f11714702d0b379b9568dda8f32bede75e63",
+  "review_polish": [
+    "Range upper-bound symbols on both displays",
+    "Fuel bookkeeping does not alter reference test weight",
+    "Dedicated fictional lane chart",
+    "Automated-trial engine and gear keyboard guards"
+  ],
+  "final_source_sha256": {
+    "app.js": "1fd03b7790a6ca5a37b0b512796b22d5baf589a04b27a4cb613ee1f033c9b4bd",
+    "physics.js": "836c50cf6508c6c3c65061953475dc938cdf23fe9bb3e72f0f3d55cb9225401a",
+    "performance-ui.js": "3109a7bc7b3306b7b9f5403adc82390f6d46c8984e9230c9111730f91a730270",
+    "performance.js": "cae104d3fd7a65bbe1bac1e83c161368fc1957abf134cdffa300ac7827c7da3d",
+    "performance_data.json": "5827ba1fb195eea132926b6fbd13d0c5f8c8f62dac73a573982fa2d2a3f35af0"
+  }
+}
