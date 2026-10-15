@@ -1,0 +1,72 @@
+name: ATLAS Sea Lab 09 functional review
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/atlas-sealab-09-review.yml'
+      - 'atlas_sealab_09/transport/**'
+      - 'atlas_sealab_09/review_fixups.py'
+permissions:
+  contents: read
+  actions: read
+concurrency:
+  group: atlas-sealab-09-review
+  cancel-in-progress: true
+jobs:
+  review:
+    strategy:
+      fail-fast: false
+      matrix:
+        device: [desktop, phone]
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    env:
+      TEST_DEVICE: ${{ matrix.device }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - uses: actions/download-artifact@v4
+        with:
+          github-token: ${{ github.token }}
+          run-id: 38816639623
+          artifact-ids: 12010573776
+          path: /tmp/audio09
+          merge-multiple: true
+      - name: Restore boat and checksum-verified readable source
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import base64,lzma,json,hashlib,shutil
+          r=Path('atlas_sealab_09');base=Path('atlas_sealab_08')
+          shutil.copytree(base/'live',r/'site',dirs_exist_ok=True)
+          shutil.copytree(base/'source',r/'source',dirs_exist_ok=True)
+          data=base64.b64decode(''.join((r/'transport'/f'part{i}.b64').read_text().strip() for i in range(4)),validate=True)
+          assert hashlib.sha256(data).hexdigest()=='8ab1dff583ffe8dd5e783d0f6ed2a570ece9ad1b95e2a85c1482ed8e771617be','Source checksum mismatch'
+          for name,text in json.loads(lzma.decompress(data)).items():
+              p=Path(name);assert not p.is_absolute() and '..' not in p.parts and p.suffix in ['.js','.css','.py']
+              dest=r/p;dest.parent.mkdir(parents=True,exist_ok=True);dest.write_text(text)
+          PY
+          python atlas_sealab_09/patch_core09.py
+      - name: Prepare real recorded layers and deterministic checks
+        run: |
+          python -m pip install -q numpy scipy soundfile playwright==1.55.0
+          AUDIO_SOURCE=/tmp/audio09/river_outboard.mp3 python atlas_sealab_09/process_audio09.py
+          rm -f atlas_sealab_09/recorded_source.wav
+          if [ -f atlas_sealab_09/review_fixups.py ]; then python atlas_sealab_09/review_fixups.py; fi
+          for f in atlas_sealab_09/site/*.js; do node --check "$f"; done
+          mkdir -p atlas_sealab_09/review
+          node atlas_sealab_09/test09.js > atlas_sealab_09/review/physics09.json
+      - name: Render and operate desktop and phone helm
+        run: |
+          python -m playwright install --with-deps chromium >/dev/null
+          python -m http.server 8899 --bind 127.0.0.1 --directory atlas_sealab_09/site >atlas_sealab_09/review/http.log 2>&1 &
+          sleep 2
+          BASE_URL=http://127.0.0.1:8899/index.html python atlas_sealab_09/verify09.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ATLAS-SeaLab09-Review-${{ matrix.device }}
+          path: atlas_sealab_09/
+          retention-days: 30
