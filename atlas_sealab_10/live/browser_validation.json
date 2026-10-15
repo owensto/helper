@@ -1,0 +1,1405 @@
+{
+  "version": "10",
+  "passed": true,
+  "review_run": 38824186709,
+  "source_commit": "9ca6047f18706de97b08d1541b9b66ab6c6f75db",
+  "physicalDeviceTested": false,
+  "tests": [
+    {
+      "device": "desktop",
+      "passed": true,
+      "errors": [],
+      "shaderErrors": [],
+      "assetErrors": [],
+      "defaults": {
+        "options": {
+          "graphics": "balanced",
+          "damage": true,
+          "explosions": false,
+          "ejection": false,
+          "killSwitch": true,
+          "hints": true,
+          "light": "day"
+        },
+        "weather": {
+          "name": "breeze",
+          "current": {
+            "label": "Sea breeze",
+            "amp": 0.125,
+            "wind": [
+              1.4,
+              3
+            ],
+            "current": [
+              0.13,
+              0.24
+            ],
+            "rain": 0,
+            "fog": 0.0018,
+            "cloud": 0.12
+          },
+          "target": {
+            "label": "Sea breeze",
+            "amp": 0.125,
+            "wind": [
+              1.4,
+              3
+            ],
+            "current": [
+              0.13,
+              0.24
+            ],
+            "rain": 0,
+            "fog": 0.0018,
+            "cloud": 0.12
+          }
+        },
+        "hullHealth": 100,
+        "engineDisabled": false,
+        "destroyed": false,
+        "ejected": false,
+        "spilled": false,
+        "collisionCount": 0,
+        "lastEvent": null,
+        "fxAllocations": 0,
+        "activeParticles": 0,
+        "rainVisible": false,
+        "rainPool": 600,
+        "graphics": {
+          "shadows": false,
+          "pixelRatio": 0.5
+        },
+        "multiplayer": false,
+        "accounts": false
+      },
+      "highGraphics": {
+        "options": {
+          "graphics": "realistic",
+          "damage": true,
+          "explosions": false,
+          "ejection": false,
+          "killSwitch": true,
+          "hints": true,
+          "light": "day"
+        },
+        "weather": {
+          "name": "breeze",
+          "current": {
+            "label": "Sea breeze",
+            "amp": 0.125,
+            "wind": [
+              1.4,
+              3
+            ],
+            "current": [
+              0.13,
+              0.24
+            ],
+            "rain": 0,
+            "fog": 0.0018,
+            "cloud": 0.12
+          },
+          "target": {
+            "label": "Sea breeze",
+            "amp": 0.125,
+            "wind": [
+              1.4,
+              3
+            ],
+            "current": [
+              0.13,
+              0.24
+            ],
+            "rain": 0,
+            "fog": 0.0018,
+            "cloud": 0.12
+          }
+        },
+        "hullHealth": 100,
+        "engineDisabled": false,
+        "destroyed": false,
+        "ejected": false,
+        "spilled": false,
+        "collisionCount": 0,
+        "lastEvent": null,
+        "fxAllocations": 0,
+        "activeParticles": 0,
+        "rainVisible": false,
+        "rainPool": 600,
+        "graphics": {
+          "shadows": true,
+          "pixelRatio": 1
+        },
+        "multiplayer": false,
+        "accounts": false
+      },
+      "physicalKey": [
+        441.2718320442295,
+        678.7617641700733
+      ],
+      "recordedEngine": {
+        "version": "09",
+        "enabled": true,
+        "contextState": "running",
+        "sampleStatus": "Three recorded layers ready",
+        "held": false,
+        "settings": {
+          "master": 0.6,
+          "engine": 0.85,
+          "water": 0.55,
+          "wind": 0.35,
+          "effects": 0.6
+        },
+        "metrics": {
+          "rms": 0.059694321878501024,
+          "engineLoads": [
+            {
+              "rpm": 3562,
+              "load": 0.6,
+              "gain": 0.6775784209303648,
+              "recorded": true
+            },
+            {
+              "rpm": 3562,
+              "load": 0.6,
+              "gain": 0,
+              "recorded": true
+            }
+          ],
+          "activeEngines": 1
+        },
+        "specificEngineRecording": false,
+        "recordedBowWater": true,
+        "realism09": {
+          "version": 9,
+          "layers": 3,
+          "lastContact": 0,
+          "events": [
+            {
+              "kind": "key",
+              "t": 0.1219047619047619
+            },
+            {
+              "kind": "start",
+              "t": 0.1219047619047619
+            },
+            {
+              "kind": "shift",
+              "t": 7.000816326530612
+            }
+          ],
+          "recordedDominant": true,
+          "acousticallyValidated": false
+        }
+      },
+      "immediateReverseWithInertia": true,
+      "weatherWhileRunning": true,
+      "rain": {
+        "options": {
+          "graphics": "balanced",
+          "damage": true,
+          "explosions": false,
+          "ejection": false,
+          "killSwitch": true,
+          "hints": true,
+          "light": "day"
+        },
+        "weather": {
+          "name": "rain",
+          "current": {
+            "label": "Sea breeze",
+            "amp": 0.2192385357063862,
+            "wind": [
+              2.9871753382128214,
+              4.983969172766028
+            ],
+            "current": [
+              0.22919845863830135,
+              0.34911830450213144
+            ],
+            "rain": 0.6943892104681092,
+            "fog": 0.004974350676425644,
+            "cloud": 0.8441487480595999
+          },
+          "target": {
+            "label": "Rain",
+            "amp": 0.22,
+            "wind": [
+              3,
+              5
+            ],
+            "current": [
+              0.23,
+              0.35
+            ],
+            "rain": 0.7,
+            "fog": 0.005,
+            "cloud": 0.85
+          }
+        },
+        "hullHealth": 100,
+        "engineDisabled": false,
+        "destroyed": false,
+        "ejected": false,
+        "spilled": false,
+        "collisionCount": 0,
+        "lastEvent": null,
+        "fxAllocations": 0,
+        "activeParticles": 0,
+        "rainVisible": true,
+        "rainPool": 600,
+        "graphics": {
+          "shadows": false,
+          "pixelRatio": 0.5
+        },
+        "multiplayer": false,
+        "accounts": false
+      },
+      "fogDensity": 0.017798052239855266,
+      "mapToggle": true,
+      "fittings": true,
+      "localRadio": {
+        "ready": true,
+        "wanted": true,
+        "playing": true,
+        "held": false,
+        "status": "Playing",
+        "error": null,
+        "volume": 0.36,
+        "outputMode": "cockpit",
+        "sourceKind": "original",
+        "title": "Lowcountry Drift",
+        "currentTime": 0.602495,
+        "contextState": "running",
+        "level": 0.005844617122269028,
+        "peak": 0.005844617122269028,
+        "tracks": 2,
+        "localFilesUploaded": false,
+        "liveBroadcastBundled": false
+      },
+      "spotify": "external-link-only",
+      "youtubeFrame": true,
+      "youtubeStatus": "Press Play. YouTube playback is direct; local music uses spatial boat speakers.",
+      "youtubeFrameSize": {
+        "x": 1048,
+        "y": 543,
+        "width": 373,
+        "height": 210
+      },
+      "bottom": {
+        "bed": -0.38550212492447056,
+        "depth": 0.38550212492447056,
+        "known": true,
+        "land": false,
+        "source": "Authored practice-bay terrain",
+        "waterDepth": 0.3936621867320623,
+        "contact": {
+          "part": "KEEL",
+          "x": 77.99857231544284,
+          "z": -39.99738199753701,
+          "bed": -0.38550212492447056,
+          "clearance": -0.007683788250069101,
+          "depth": 0.3936621867320623,
+          "draft": 0.46014205102231664,
+          "hullClearance": -0.007683788250069101
+        }
+      },
+      "bottomHitCount": 2,
+      "crashOff": {
+        "options": {
+          "graphics": "balanced",
+          "damage": true,
+          "explosions": false,
+          "ejection": false,
+          "killSwitch": true,
+          "hints": true,
+          "light": "day"
+        },
+        "weather": {
+          "name": "clear",
+          "current": {
+            "label": "Sea breeze",
+            "amp": 0.02500000102973061,
+            "wind": [
+              0.200000009304443,
+              0.3000000236407619
+            ],
+            "current": [
+              2.803283155215567e-09,
+              4.477754330435894e-09
+            ],
+            "rain": 2.958668651851089e-10,
+            "fog": 0.0012000004561533147,
+            "cloud": 2.6063121620216277e-08
+          },
+          "target": {
+            "label": "Clear & calm",
+            "amp": 0.025,
+            "wind": [
+              0.2,
+              0.3
+            ],
+            "current": [
+              0,
+              0
+            ],
+            "rain": 0,
+            "fog": 0.0012,
+            "cloud": 0
+          }
+        },
+        "hullHealth": 0,
+        "engineDisabled": true,
+        "destroyed": false,
+        "ejected": false,
+        "spilled": false,
+        "collisionCount": 3,
+        "lastEvent": {
+          "kind": "solid",
+          "obstacle": 0,
+          "time": 0.21666666666666665,
+          "x": 4.089772041308746e-06,
+          "z": -5.997964100241442,
+          "nx": 0,
+          "nz": 1,
+          "closing": 21.539855134448914,
+          "deltaV": 22.401449339826872,
+          "vx": 3.297838364251362e-05,
+          "vz": -21.539855134448914,
+          "forwardSpeed": 21.539855134448914,
+          "mass": 2125.7046122678,
+          "energy": 493126.6520058284,
+          "damage": 100,
+          "explode": false,
+          "eject": false,
+          "health": 0,
+          "sequence": 3
+        },
+        "fxAllocations": 0,
+        "activeParticles": 0,
+        "rainVisible": false,
+        "rainPool": 600,
+        "graphics": {
+          "shadows": false,
+          "pixelRatio": 0.5
+        },
+        "multiplayer": false,
+        "accounts": false
+      },
+      "ejectionOnly": {
+        "options": {
+          "graphics": "balanced",
+          "damage": false,
+          "explosions": false,
+          "ejection": true,
+          "killSwitch": true,
+          "hints": true,
+          "light": "day"
+        },
+        "weather": {
+          "name": "clear",
+          "current": {
+            "label": "Sea breeze",
+            "amp": 0.025000000147320147,
+            "wind": [
+              0.20000000133115586,
+              0.3000000033822053
+            ],
+            "current": [
+              4.0105642183800776e-10,
+              6.406174582446598e-10
+            ],
+            "rain": 4.2328690938979886e-11,
+            "fog": 0.0012000000652603413,
+            "cloud": 3.728764352429096e-09
+          },
+          "target": {
+            "label": "Clear & calm",
+            "amp": 0.025,
+            "wind": [
+              0.2,
+              0.3
+            ],
+            "current": [
+              0,
+              0
+            ],
+            "rain": 0,
+            "fog": 0.0012,
+            "cloud": 0
+          }
+        },
+        "hullHealth": 100,
+        "engineDisabled": false,
+        "destroyed": false,
+        "ejected": true,
+        "spilled": false,
+        "collisionCount": 4,
+        "lastEvent": {
+          "kind": "solid",
+          "obstacle": 0,
+          "time": 0.21666666666666665,
+          "x": 4.042443865246814e-06,
+          "z": -5.997963672407366,
+          "nx": 0,
+          "nz": 1,
+          "closing": 21.79655558051966,
+          "deltaV": 22.668417803740446,
+          "vx": 3.291147795419656e-05,
+          "vz": -21.79655558051966,
+          "forwardSpeed": 21.79655558051966,
+          "mass": 2125.702609122329,
+          "energy": 504949.8510991601,
+          "damage": 0,
+          "explode": false,
+          "eject": true,
+          "health": 100,
+          "sequence": 4
+        },
+        "fxAllocations": 1,
+        "activeParticles": 0,
+        "rainVisible": false,
+        "rainPool": 600,
+        "graphics": {
+          "shadows": false,
+          "pixelRatio": 0.5
+        },
+        "multiplayer": false,
+        "accounts": false
+      },
+      "splash": true,
+      "cinematicCrash": {
+        "options": {
+          "graphics": "balanced",
+          "damage": false,
+          "explosions": true,
+          "ejection": true,
+          "killSwitch": true,
+          "hints": true,
+          "light": "day"
+        },
+        "weather": {
+          "name": "clear",
+          "current": {
+            "label": "Sea breeze",
+            "amp": 0.025000000010451814,
+            "wind": [
+              0.20000000009444052,
+              0.30000000023995466
+            ],
+            "current": [
+              2.845343202639723e-11,
+              4.544937896655909e-11
+            ],
+            "rain": 3.0030600803722165e-12,
+            "fog": 0.0012000000046299736,
+            "cloud": 2.6454168856856817e-10
+          },
+          "target": {
+            "label": "Clear & calm",
+            "amp": 0.025,
+            "wind": [
+              0.2,
+              0.3
+            ],
+            "current": [
+              0,
+              0
+            ],
+            "rain": 0,
+            "fog": 0.0012,
+            "cloud": 0
+          }
+        },
+        "hullHealth": 100,
+        "engineDisabled": true,
+        "destroyed": true,
+        "ejected": true,
+        "spilled": false,
+        "collisionCount": 5,
+        "lastEvent": {
+          "kind": "solid",
+          "obstacle": 0,
+          "time": 0.21666666666666665,
+          "x": 4.0424141156531785e-06,
+          "z": -5.997963672407366,
+          "nx": 0,
+          "nz": 1,
+          "closing": 21.796555580564583,
+          "deltaV": 22.668417803787168,
+          "vx": 3.291124050462332e-05,
+          "vz": -21.796555580564583,
+          "forwardSpeed": 21.796555580564583,
+          "mass": 2125.702609122329,
+          "energy": 504949.8511012415,
+          "damage": 0,
+          "explode": true,
+          "eject": true,
+          "health": 100,
+          "sequence": 5
+        },
+        "fxAllocations": 2,
+        "activeParticles": 64,
+        "rainVisible": false,
+        "rainPool": 600,
+        "graphics": {
+          "shadows": false,
+          "pixelRatio": 0.5
+        },
+        "multiplayer": false,
+        "accounts": false
+      },
+      "effectsCleaned": {
+        "options": {
+          "graphics": "balanced",
+          "damage": false,
+          "explosions": false,
+          "ejection": false,
+          "killSwitch": true,
+          "hints": true,
+          "light": "day"
+        },
+        "weather": {
+          "name": "clear",
+          "current": {
+            "label": "Sea breeze",
+            "amp": 0.025000000010451814,
+            "wind": [
+              0.20000000009444052,
+              0.30000000023995466
+            ],
+            "current": [
+              2.845343202639723e-11,
+              4.544937896655909e-11
+            ],
+            "rain": 3.0030600803722165e-12,
+            "fog": 0.0012000000046299736,
+            "cloud": 2.6454168856856817e-10
+          },
+          "target": {
+            "label": "Clear & calm",
+            "amp": 0.025,
+            "wind": [
+              0.2,
+              0.3
+            ],
+            "current": [
+              0,
+              0
+            ],
+            "rain": 0,
+            "fog": 0.0012,
+            "cloud": 0
+          }
+        },
+        "hullHealth": 100,
+        "engineDisabled": false,
+        "destroyed": false,
+        "ejected": false,
+        "spilled": false,
+        "collisionCount": 5,
+        "lastEvent": {
+          "kind": "solid",
+          "obstacle": 0,
+          "time": 0.21666666666666665,
+          "x": 4.0424141156531785e-06,
+          "z": -5.997963672407366,
+          "nx": 0,
+          "nz": 1,
+          "closing": 21.796555580564583,
+          "deltaV": 22.668417803787168,
+          "vx": 3.291124050462332e-05,
+          "vz": -21.796555580564583,
+          "forwardSpeed": 21.796555580564583,
+          "mass": 2125.702609122329,
+          "energy": 504949.8511012415,
+          "damage": 0,
+          "explode": true,
+          "eject": true,
+          "health": 100,
+          "sequence": 5
+        },
+        "fxAllocations": 2,
+        "activeParticles": 0,
+        "rainVisible": false,
+        "rainPool": 600,
+        "graphics": {
+          "shadows": false,
+          "pixelRatio": 0.5
+        },
+        "multiplayer": false,
+        "accounts": false
+      },
+      "persisted": {
+        "options": {
+          "graphics": "balanced",
+          "damage": true,
+          "explosions": false,
+          "ejection": false,
+          "killSwitch": true,
+          "hints": false,
+          "light": "day"
+        },
+        "weather": {
+          "name": "breeze",
+          "current": {
+            "label": "Sea breeze",
+            "amp": 0.125,
+            "wind": [
+              1.4,
+              3
+            ],
+            "current": [
+              0.13,
+              0.24
+            ],
+            "rain": 0,
+            "fog": 0.0018,
+            "cloud": 0.12
+          },
+          "target": {
+            "label": "Sea breeze",
+            "amp": 0.125,
+            "wind": [
+              1.4,
+              3
+            ],
+            "current": [
+              0.13,
+              0.24
+            ],
+            "rain": 0,
+            "fog": 0.0018,
+            "cloud": 0.12
+          }
+        },
+        "hullHealth": 100,
+        "engineDisabled": false,
+        "destroyed": false,
+        "ejected": false,
+        "spilled": false,
+        "collisionCount": 0,
+        "lastEvent": null,
+        "fxAllocations": 0,
+        "activeParticles": 0,
+        "rainVisible": false,
+        "rainPool": 600,
+        "graphics": {
+          "shadows": false,
+          "pixelRatio": 0.5
+        },
+        "multiplayer": false,
+        "accounts": false
+      },
+      "water": {
+        "ready": true,
+        "terrainVertices": 16641,
+        "terrainRebuilds": 1,
+        "knownSamples": 16641,
+        "renderedBottom": true,
+        "referenceSurvey": false,
+        "nearWaterGridMetres": 0.5,
+        "waterVertices": 58081,
+        "colorArrayBound": true,
+        "seabedColorMean": 0.2172733130462873,
+        "shaderCompiled": true,
+        "turbidity": 0.23,
+        "origin": [
+          -0.0,
+          0
+        ]
+      },
+      "scrollWidth": 1440
+    },
+    {
+      "device": "phone",
+      "passed": true,
+      "errors": [],
+      "shaderErrors": [],
+      "assetErrors": [],
+      "defaults": {
+        "options": {
+          "graphics": "balanced",
+          "damage": true,
+          "explosions": false,
+          "ejection": false,
+          "killSwitch": true,
+          "hints": true,
+          "light": "day"
+        },
+        "weather": {
+          "name": "breeze",
+          "current": {
+            "label": "Sea breeze",
+            "amp": 0.125,
+            "wind": [
+              1.4,
+              3
+            ],
+            "current": [
+              0.13,
+              0.24
+            ],
+            "rain": 0,
+            "fog": 0.0018,
+            "cloud": 0.12
+          },
+          "target": {
+            "label": "Sea breeze",
+            "amp": 0.125,
+            "wind": [
+              1.4,
+              3
+            ],
+            "current": [
+              0.13,
+              0.24
+            ],
+            "rain": 0,
+            "fog": 0.0018,
+            "cloud": 0.12
+          }
+        },
+        "hullHealth": 100,
+        "engineDisabled": false,
+        "destroyed": false,
+        "ejected": false,
+        "spilled": false,
+        "collisionCount": 0,
+        "lastEvent": null,
+        "fxAllocations": 0,
+        "activeParticles": 0,
+        "rainVisible": false,
+        "rainPool": 600,
+        "graphics": {
+          "shadows": false,
+          "pixelRatio": 0.5
+        },
+        "multiplayer": false,
+        "accounts": false
+      },
+      "highGraphics": {
+        "options": {
+          "graphics": "realistic",
+          "damage": true,
+          "explosions": false,
+          "ejection": false,
+          "killSwitch": true,
+          "hints": true,
+          "light": "day"
+        },
+        "weather": {
+          "name": "breeze",
+          "current": {
+            "label": "Sea breeze",
+            "amp": 0.125,
+            "wind": [
+              1.4,
+              3
+            ],
+            "current": [
+              0.13,
+              0.24
+            ],
+            "rain": 0,
+            "fog": 0.0018,
+            "cloud": 0.12
+          },
+          "target": {
+            "label": "Sea breeze",
+            "amp": 0.125,
+            "wind": [
+              1.4,
+              3
+            ],
+            "current": [
+              0.13,
+              0.24
+            ],
+            "rain": 0,
+            "fog": 0.0018,
+            "cloud": 0.12
+          }
+        },
+        "hullHealth": 100,
+        "engineDisabled": false,
+        "destroyed": false,
+        "ejected": false,
+        "spilled": false,
+        "collisionCount": 0,
+        "lastEvent": null,
+        "fxAllocations": 0,
+        "activeParticles": 0,
+        "rainVisible": false,
+        "rainPool": 600,
+        "graphics": {
+          "shadows": true,
+          "pixelRatio": 1
+        },
+        "multiplayer": false,
+        "accounts": false
+      },
+      "recordedEngine": {
+        "version": "09",
+        "enabled": true,
+        "contextState": "running",
+        "sampleStatus": "Three recorded layers ready",
+        "held": false,
+        "settings": {
+          "master": 0.6,
+          "engine": 0.85,
+          "water": 0.55,
+          "wind": 0.35,
+          "effects": 0.6
+        },
+        "metrics": {
+          "rms": 0.05738989474404315,
+          "engineLoads": [
+            {
+              "rpm": 3255,
+              "load": 0.6,
+              "gain": 0.6582936378986664,
+              "recorded": true
+            },
+            {
+              "rpm": 3255,
+              "load": 0.6,
+              "gain": 0,
+              "recorded": true
+            }
+          ],
+          "activeEngines": 1
+        },
+        "specificEngineRecording": false,
+        "recordedBowWater": true,
+        "realism09": {
+          "version": 9,
+          "layers": 3,
+          "lastContact": 0,
+          "events": [
+            {
+              "kind": "key",
+              "t": 0.1306122448979592
+            },
+            {
+              "kind": "shift",
+              "t": 3.128888888888889
+            }
+          ],
+          "recordedDominant": true,
+          "acousticallyValidated": false
+        }
+      },
+      "immediateReverseWithInertia": true,
+      "weatherWhileRunning": true,
+      "rain": {
+        "options": {
+          "graphics": "balanced",
+          "damage": true,
+          "explosions": false,
+          "ejection": false,
+          "killSwitch": true,
+          "hints": true,
+          "light": "day"
+        },
+        "weather": {
+          "name": "rain",
+          "current": {
+            "label": "Sea breeze",
+            "amp": 0.21916078619770346,
+            "wind": [
+              2.9858658728034264,
+              4.982332341004283
+            ],
+            "current": [
+              0.22911661705021416,
+              0.34902827875523545
+            ],
+            "rain": 0.6938163193514988,
+            "fog": 0.004971731745606853,
+            "cloud": 0.8435513044665636
+          },
+          "target": {
+            "label": "Rain",
+            "amp": 0.22,
+            "wind": [
+              3,
+              5
+            ],
+            "current": [
+              0.23,
+              0.35
+            ],
+            "rain": 0.7,
+            "fog": 0.005,
+            "cloud": 0.85
+          }
+        },
+        "hullHealth": 100,
+        "engineDisabled": false,
+        "destroyed": false,
+        "ejected": false,
+        "spilled": false,
+        "collisionCount": 0,
+        "lastEvent": null,
+        "fxAllocations": 0,
+        "activeParticles": 0,
+        "rainVisible": true,
+        "rainPool": 600,
+        "graphics": {
+          "shadows": false,
+          "pixelRatio": 0.5
+        },
+        "multiplayer": false,
+        "accounts": false
+      },
+      "fogDensity": 0.017798011636335275,
+      "mapToggle": true,
+      "fittings": true,
+      "localRadio": {
+        "ready": true,
+        "wanted": true,
+        "playing": true,
+        "held": false,
+        "status": "Playing",
+        "error": null,
+        "volume": 0.36,
+        "outputMode": "cockpit",
+        "sourceKind": "original",
+        "title": "Lowcountry Drift",
+        "currentTime": 0.831764,
+        "contextState": "running",
+        "level": 0.006465327384142016,
+        "peak": 0.006465327384142016,
+        "tracks": 2,
+        "localFilesUploaded": false,
+        "liveBroadcastBundled": false
+      },
+      "spotify": "external-link-only",
+      "bottom": {
+        "bed": -0.38549487185031417,
+        "depth": 0.38549487185031417,
+        "known": true,
+        "land": false,
+        "source": "Authored practice-bay terrain",
+        "waterDepth": 0.3936556301306429,
+        "contact": {
+          "part": "KEEL",
+          "x": 77.99867031344614,
+          "z": -39.99696042407298,
+          "bed": -0.38549487185031417,
+          "clearance": -0.007688245112834946,
+          "depth": 0.3936556301306429,
+          "draft": 0.46014205102231664,
+          "hullClearance": -0.007688245112834946
+        }
+      },
+      "bottomHitCount": 2,
+      "crashOff": {
+        "options": {
+          "graphics": "balanced",
+          "damage": true,
+          "explosions": false,
+          "ejection": false,
+          "killSwitch": true,
+          "hints": true,
+          "light": "day"
+        },
+        "weather": {
+          "name": "clear",
+          "current": {
+            "label": "Sea breeze",
+            "amp": 0.025002457851370334,
+            "wind": [
+              0.20002220804402868,
+              0.30005642799624255
+            ],
+            "current": [
+              6.6912542976091746e-06,
+              1.0688149320514109e-05
+            ],
+            "rain": 7.056410657841978e-07,
+            "fog": 0.0012010888191297609,
+            "cloud": 6.221113991980879e-05
+          },
+          "target": {
+            "label": "Clear & calm",
+            "amp": 0.025,
+            "wind": [
+              0.2,
+              0.3
+            ],
+            "current": [
+              0,
+              0
+            ],
+            "rain": 0,
+            "fog": 0.0012,
+            "cloud": 0
+          }
+        },
+        "hullHealth": 0,
+        "engineDisabled": true,
+        "destroyed": false,
+        "ejected": false,
+        "spilled": false,
+        "collisionCount": 3,
+        "lastEvent": {
+          "kind": "solid",
+          "obstacle": 0,
+          "time": 0.21666666666666665,
+          "x": 4.62819660369566e-06,
+          "z": -5.997964100242566,
+          "nx": 0,
+          "nz": 1,
+          "closing": 21.539854460674057,
+          "deltaV": 22.401448639101016,
+          "vx": 3.722719204097497e-05,
+          "vz": -21.539854460674057,
+          "forwardSpeed": 21.539854460674057,
+          "mass": 2125.7046122678,
+          "energy": 493126.6211554506,
+          "damage": 100,
+          "explode": false,
+          "eject": false,
+          "health": 0,
+          "sequence": 3
+        },
+        "fxAllocations": 0,
+        "activeParticles": 0,
+        "rainVisible": false,
+        "rainPool": 600,
+        "graphics": {
+          "shadows": false,
+          "pixelRatio": 0.5
+        },
+        "multiplayer": false,
+        "accounts": false
+      },
+      "ejectionOnly": {
+        "options": {
+          "graphics": "balanced",
+          "damage": false,
+          "explosions": false,
+          "ejection": true,
+          "killSwitch": true,
+          "hints": true,
+          "light": "day"
+        },
+        "weather": {
+          "name": "clear",
+          "current": {
+            "label": "Sea breeze",
+            "amp": 0.025000814745792802,
+            "wind": [
+              0.2000073616780319,
+              0.3000187051475485
+            ],
+            "current": [
+              2.218063855815942e-06,
+              3.5429826216389218e-06
+            ],
+            "rain": 2.3391084445178053e-07,
+            "fog": 0.0012003609293937767,
+            "cloud": 2.0622184533405073e-05
+          },
+          "target": {
+            "label": "Clear & calm",
+            "amp": 0.025,
+            "wind": [
+              0.2,
+              0.3
+            ],
+            "current": [
+              0,
+              0
+            ],
+            "rain": 0,
+            "fog": 0.0012,
+            "cloud": 0
+          }
+        },
+        "hullHealth": 100,
+        "engineDisabled": false,
+        "destroyed": false,
+        "ejected": true,
+        "spilled": false,
+        "collisionCount": 4,
+        "lastEvent": {
+          "kind": "solid",
+          "obstacle": 0,
+          "time": 0.21666666666666665,
+          "x": 4.219507839035942e-06,
+          "z": -5.997963672407812,
+          "nx": 0,
+          "nz": 1,
+          "closing": 21.79655531309874,
+          "deltaV": 22.668417525622694,
+          "vx": 3.432473300560841e-05,
+          "vz": -21.79655531309874,
+          "forwardSpeed": 21.79655531309874,
+          "mass": 2125.702609122329,
+          "energy": 504949.838708748,
+          "damage": 0,
+          "explode": false,
+          "eject": true,
+          "health": 100,
+          "sequence": 4
+        },
+        "fxAllocations": 1,
+        "activeParticles": 0,
+        "rainVisible": false,
+        "rainPool": 600,
+        "graphics": {
+          "shadows": false,
+          "pixelRatio": 0.5
+        },
+        "multiplayer": false,
+        "accounts": false
+      },
+      "splash": true,
+      "cinematicCrash": {
+        "options": {
+          "graphics": "balanced",
+          "damage": false,
+          "explosions": true,
+          "ejection": true,
+          "killSwitch": true,
+          "hints": true,
+          "light": "day"
+        },
+        "weather": {
+          "name": "clear",
+          "current": {
+            "label": "Sea breeze",
+            "amp": 0.025000088907666498,
+            "wind": [
+              0.20000080332984974,
+              0.3000020411655203
+            ],
+            "current": [
+              2.420422214005103e-07,
+              3.8662159426849665e-07
+            ],
+            "rain": 2.55250994024927e-08,
+            "fog": 0.001200039385769715,
+            "cloud": 2.250358726827748e-06
+          },
+          "target": {
+            "label": "Clear & calm",
+            "amp": 0.025,
+            "wind": [
+              0.2,
+              0.3
+            ],
+            "current": [
+              0,
+              0
+            ],
+            "rain": 0,
+            "fog": 0.0012,
+            "cloud": 0
+          }
+        },
+        "hullHealth": 100,
+        "engineDisabled": true,
+        "destroyed": true,
+        "ejected": true,
+        "spilled": false,
+        "collisionCount": 5,
+        "lastEvent": {
+          "kind": "solid",
+          "obstacle": 0,
+          "time": 0.21666666666666665,
+          "x": 4.061737123751109e-06,
+          "z": -5.997963672407415,
+          "nx": 0,
+          "nz": 1,
+          "closing": 21.796555551380916,
+          "deltaV": 22.668417773436154,
+          "vx": 3.3065469166165305e-05,
+          "vz": -21.796555551380916,
+          "forwardSpeed": 21.796555551380916,
+          "mass": 2125.702609122329,
+          "energy": 504949.8497490748,
+          "damage": 0,
+          "explode": true,
+          "eject": true,
+          "health": 100,
+          "sequence": 5
+        },
+        "fxAllocations": 2,
+        "activeParticles": 64,
+        "rainVisible": false,
+        "rainPool": 600,
+        "graphics": {
+          "shadows": false,
+          "pixelRatio": 0.5
+        },
+        "multiplayer": false,
+        "accounts": false
+      },
+      "effectsCleaned": {
+        "options": {
+          "graphics": "balanced",
+          "damage": false,
+          "explosions": false,
+          "ejection": false,
+          "killSwitch": true,
+          "hints": true,
+          "light": "day"
+        },
+        "weather": {
+          "name": "clear",
+          "current": {
+            "label": "Sea breeze",
+            "amp": 0.025000088907666498,
+            "wind": [
+              0.20000080332984974,
+              0.3000020411655203
+            ],
+            "current": [
+              2.420422214005103e-07,
+              3.8662159426849665e-07
+            ],
+            "rain": 2.55250994024927e-08,
+            "fog": 0.001200039385769715,
+            "cloud": 2.250358726827748e-06
+          },
+          "target": {
+            "label": "Clear & calm",
+            "amp": 0.025,
+            "wind": [
+              0.2,
+              0.3
+            ],
+            "current": [
+              0,
+              0
+            ],
+            "rain": 0,
+            "fog": 0.0012,
+            "cloud": 0
+          }
+        },
+        "hullHealth": 100,
+        "engineDisabled": false,
+        "destroyed": false,
+        "ejected": false,
+        "spilled": false,
+        "collisionCount": 5,
+        "lastEvent": {
+          "kind": "solid",
+          "obstacle": 0,
+          "time": 0.21666666666666665,
+          "x": 4.061737123751109e-06,
+          "z": -5.997963672407415,
+          "nx": 0,
+          "nz": 1,
+          "closing": 21.796555551380916,
+          "deltaV": 22.668417773436154,
+          "vx": 3.3065469166165305e-05,
+          "vz": -21.796555551380916,
+          "forwardSpeed": 21.796555551380916,
+          "mass": 2125.702609122329,
+          "energy": 504949.8497490748,
+          "damage": 0,
+          "explode": true,
+          "eject": true,
+          "health": 100,
+          "sequence": 5
+        },
+        "fxAllocations": 2,
+        "activeParticles": 0,
+        "rainVisible": false,
+        "rainPool": 600,
+        "graphics": {
+          "shadows": false,
+          "pixelRatio": 0.5
+        },
+        "multiplayer": false,
+        "accounts": false
+      },
+      "persisted": {
+        "options": {
+          "graphics": "balanced",
+          "damage": true,
+          "explosions": false,
+          "ejection": false,
+          "killSwitch": true,
+          "hints": false,
+          "light": "day"
+        },
+        "weather": {
+          "name": "breeze",
+          "current": {
+            "label": "Sea breeze",
+            "amp": 0.125,
+            "wind": [
+              1.4,
+              3
+            ],
+            "current": [
+              0.13,
+              0.24
+            ],
+            "rain": 0,
+            "fog": 0.0018,
+            "cloud": 0.12
+          },
+          "target": {
+            "label": "Sea breeze",
+            "amp": 0.125,
+            "wind": [
+              1.4,
+              3
+            ],
+            "current": [
+              0.13,
+              0.24
+            ],
+            "rain": 0,
+            "fog": 0.0018,
+            "cloud": 0.12
+          }
+        },
+        "hullHealth": 100,
+        "engineDisabled": false,
+        "destroyed": false,
+        "ejected": false,
+        "spilled": false,
+        "collisionCount": 0,
+        "lastEvent": null,
+        "fxAllocations": 0,
+        "activeParticles": 0,
+        "rainVisible": false,
+        "rainPool": 600,
+        "graphics": {
+          "shadows": false,
+          "pixelRatio": 0.5
+        },
+        "multiplayer": false,
+        "accounts": false
+      },
+      "water": {
+        "ready": true,
+        "terrainVertices": 16641,
+        "terrainRebuilds": 1,
+        "knownSamples": 16641,
+        "renderedBottom": true,
+        "referenceSurvey": false,
+        "nearWaterGridMetres": 0.5,
+        "waterVertices": 58081,
+        "colorArrayBound": true,
+        "seabedColorMean": 0.2172733130462873,
+        "shaderCompiled": true,
+        "turbidity": 0.23,
+        "origin": [
+          -0.0,
+          0
+        ]
+      },
+      "scrollWidth": 430
+    }
+  ]
+}

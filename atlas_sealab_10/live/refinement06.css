@@ -1,0 +1,20 @@
+/* Cockpit first: unobstructed horizon, edge controls, optional full-size original MFD artwork. */
+#command-app .cmd-brand small{letter-spacing:.2em}
+#command-app #sound-quick{background:#143e4c!important;color:#e9fbf5!important;border-color:#8ab4b4!important}
+#command-app #sound-quick.active{background:#b2e6d5!important;color:#133b46!important}
+#command-app #speed-hud{border-radius:14px;background:#092731e8;border-color:#84b0af50;backdrop-filter:blur(12px)}
+#command-app #speed-hud strong{font-variant-numeric:tabular-nums;font-weight:550;letter-spacing:-.04em}
+#command-app #cruise-view{color:#153e48;background:#b4e4d7;border-color:#b4e4d7}
+#command-app .layout-switch.folded #cruise-view{display:none}
+#command-app.immersive .layout-switch,#command-app.immersive #mfd-panel,#command-app.immersive #sound-mixer{display:none!important}
+#command-app #mfd-panel{background:#081c27f5;border:1px solid #729d9d70}
+#command-app .mfd-screens{gap:18px}
+#command-app .mfd-screens canvas{border:6px solid #0b111a;border-radius:11px;box-shadow:0 0 0 1px #557986,0 16px 45px #0006;image-rendering:auto}
+#command-app #surface-note{display:block;color:#b9bba2;font-size:10px;margin-top:4px}
+#cruise-rail{display:none;align-items:center;gap:10px;position:fixed;bottom:18px;left:50%;transform:translateX(-50%);padding:10px 12px;border-radius:12px;background:#0a2733e8;border:1px solid #789b9f66;backdrop-filter:blur(10px);z-index:100;color:#d8e9e5}
+#cruise-rail button{border:1px solid #617f8855;padding:9px 13px;border-radius:7px;background:#183a47;color:#e1eee8;font-size:12px;min-height:35px}
+#cruise-rail button.active{background:#b2e6d5;color:#173c49}
+#cruise-rail>div{display:flex;gap:3px}#cruise-rail label{display:flex;gap:6px;align-items:center;font-size:10px}#cruise-rail input{width:120px;accent-color:#b2e6d5}
+#command-app.immersive[data-workspace=drive] #cruise-rail{display:flex}
+@media(min-width:1000px){#command-app #operator-controls{max-width:340px}#command-app #mfd-panel{width:min(1380px,95vw)}#command-app .layout-switch{max-width:calc(100vw - 410px)}}
+@media(max-width:700px){#cruise-rail{bottom:116px;max-width:calc(100vw - 20px);gap:4px;padding:7px}#cruise-rail input{width:74px}#cruise-rail button{font-size:11px;padding:7px 8px}#command-app #speed-hud{width:114px}#cruise-view{display:none!important}#command-app #mfd-panel{bottom:118px;max-height:76vh}.mfd-screens canvas{border-width:3px!important}#surface-note{font-size:9px!important}}

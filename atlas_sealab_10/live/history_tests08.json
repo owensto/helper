@@ -1,0 +1,44 @@
+{
+  "passed": true,
+  "duplicate_refresh_regressions": [
+    {
+      "offset": 0,
+      "real_samples": 316,
+      "unintended_resets": 0,
+      "passed": true
+    },
+    {
+      "offset": 0.01667,
+      "real_samples": 316,
+      "unintended_resets": 0,
+      "passed": true
+    },
+    {
+      "offset": 0.173,
+      "real_samples": 316,
+      "unintended_resets": 0,
+      "passed": true
+    },
+    {
+      "offset": 1.7733,
+      "real_samples": 316,
+      "unintended_resets": 0,
+      "passed": true
+    },
+    {
+      "offset": 7.42,
+      "real_samples": 316,
+      "unintended_resets": 0,
+      "passed": true
+    },
+    {
+      "offset": 21.975,
+      "real_samples": 316,
+      "unintended_resets": 0,
+      "passed": true
+    }
+  ],
+  "paused_no_fake_returns": true,
+  "location_waypoint_reset": true,
+  "teleport_and_clock_reset": true
+}
