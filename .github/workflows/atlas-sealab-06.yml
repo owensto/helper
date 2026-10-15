@@ -1,0 +1,88 @@
+name: ATLAS Sea Lab 06 review
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'atlas_sealab_06/source.b64'
+      - 'atlas_sealab_06/fixups.py'
+      - '.github/workflows/atlas-sealab-06.yml'
+permissions:
+  contents: read
+  actions: read
+concurrency:
+  group: atlas-sealab06-review
+  cancel-in-progress: true
+jobs:
+  review:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 35
+    env:
+      SEA_ROOT: ${{ github.workspace }}/atlas_sealab_06
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - uses: actions/download-artifact@v4
+        with:
+          github-token: ${{ github.token }}
+          run-id: 38670568644
+          artifact-ids: 11944098433
+          path: /tmp/sea06/recovered
+          merge-multiple: true
+      - name: Recover candidate and verify new repair source
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import os,shutil,hashlib,base64,lzma,json
+          r=Path(os.environ['SEA_ROOT'])
+          src=next(Path('/tmp/sea06/recovered').rglob('site/command.js')).parent.parent
+          for name in ['site','source']:
+              shutil.copytree(src/name,r/name,dirs_exist_ok=True)
+          b=(r/'site/assets/ATLAS_Bay_Play.glb').read_bytes()
+          assert hashlib.sha256(b).hexdigest()=='4456a7e157a19e550be0b270cf9649035ec6c17c77badfcad44789fb64ca26e1'
+          (r/'base.glb').write_bytes(b)
+          pack=base64.b64decode((r/'source.b64').read_text(),validate=True)
+          assert hashlib.sha256(pack).hexdigest()=='eefa665a36e0245625a9ccf00fe1668bdfef1ec4f8a9bfc11fc60b7a47b46e42'
+          for name,text in json.loads(lzma.decompress(pack)).items():
+              assert Path(name).name==name and name.endswith(('.py','.js','.css'))
+              (r/name).write_text(text)
+          for name in ['refinement06.js','refinement06.css']:
+              shutil.copy2(r/name,r/'site'/name)
+          PY
+      - name: Build explicit deck and liner repairs
+        run: |
+          pip install -q numpy==2.3.5 trimesh==4.11.1 scipy shapely networkx pillow requests playwright==1.55.0
+          python "$SEA_ROOT/build_geometry.py"
+          python "$SEA_ROOT/patch06.py"
+          if [ -f "$SEA_ROOT/fixups.py" ]; then python "$SEA_ROOT/fixups.py"; fi
+      - name: Save editable Blender master and prepare licensed water audio
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq blender python3-numpy ffmpeg libegl1 >/dev/null
+          python "$SEA_ROOT/audio06.py"
+          env -u PYTHONHOME -u PYTHONPATH -u LD_LIBRARY_PATH LIBGL_ALWAYS_SOFTWARE=1 /usr/bin/blender -b --python-exit-code 1 --python "$SEA_ROOT/native06.py"
+          python "$SEA_ROOT/audit06.py"
+          for f in "$SEA_ROOT/site/"*.js; do node --check "$f"; done
+          mkdir -p /tmp/sea06/review
+          node "$SEA_ROOT/source/test_command.js" > /tmp/sea06/review/motion_checks.json
+      - name: Verify geometry, sound, speed, displays and retained interactions
+        run: |
+          python -m playwright install --with-deps chromium >/dev/null
+          python -m http.server 8896 --bind 127.0.0.1 --directory "$SEA_ROOT/site" >/tmp/sea06/http.log 2>&1 &
+          sleep 2
+          BASE_URL=http://127.0.0.1:8896/index.html REVIEW_DIR=/tmp/sea06/review python "$SEA_ROOT/verify06.py"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ATLAS-SeaLab06-Review
+          path: |
+            /tmp/sea06/review/
+            /tmp/sea06/http.log
+            atlas_sealab_06/site/
+            atlas_sealab_06/models/
+            atlas_sealab_06/source/
+            atlas_sealab_06/*.py
+            atlas_sealab_06/*.js
+            atlas_sealab_06/*.css
+          retention-days: 30
