@@ -1,0 +1,135 @@
+name: ATLAS Sea Lab 05
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'atlas_sealab_05/transport/**'
+      - 'atlas_sealab_05/review_fix.py'
+      - 'atlas_sealab_05/REVIEW.md'
+      - '.github/workflows/atlas-sealab-05.yml'
+permissions:
+  contents: write
+  actions: read
+concurrency:
+  group: atlas-sealab-05
+  cancel-in-progress: true
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 22
+    env:
+      SEA_ROOT: ${{ github.workspace }}/atlas_sealab_05
+      COMMAND_ROOT: ${{ github.workspace }}/atlas_sealab_05
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            atlas_sealab_05
+            atlas_bay_command_04/live
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - uses: actions/download-artifact@v4
+        with:
+          github-token: ${{ github.token }}
+          run-id: 38659023656
+          artifact-ids: 11937832535
+          merge-multiple: true
+          path: atlas_sealab_05/audio_source
+      - name: Restore checked source; preserve previous release
+        run: |
+          python - <<'PY'
+          import os,hashlib,shutil,json,lzma,base64
+          from pathlib import Path
+          r=Path(os.environ['SEA_ROOT']);shutil.copytree('atlas_bay_command_04/live',r/'site',dirs_exist_ok=True)
+          blob=base64.b64decode(''.join((r/'transport'/f'part{i}.b64').read_text().strip() for i in range(2)),validate=True)
+          assert hashlib.sha256(blob).hexdigest()=='c6d61d9c75c7c48833b905c3d2501d5069e5397467249283a88847792534e29d','Source checksum mismatch'
+          changes=json.loads(lzma.decompress(blob))
+          for name,patch in changes['patches'].items():
+              p=r/'site'/name
+              assert p.parent==r/'site'
+              assert hashlib.sha256(p.read_bytes()).hexdigest()==patch['sha256'],'Baseline changed: '+name
+              text=p.read_text()
+              for a,b,repl in reversed(patch['edits']):text=text[:a]+repl+text[b:]
+              p.write_text(text)
+          for name,text in changes['files'].items():
+              p=Path(name);assert p.parts[0] in ('source','site') and '..' not in p.parts
+              f=r/p;f.parent.mkdir(parents=True,exist_ok=True);f.write_text(text)
+          src=r/'audio_source/river_outboard_preview.mp3'
+          assert hashlib.sha256(src.read_bytes()).hexdigest()=='6eb2a145b1850701243ff64730e07dffb3f6ea3720cfa0f28dae901916f44e62'
+          model=r/'site/assets/ATLAS_Bay_Play.glb'
+          assert hashlib.sha256(model.read_bytes()).hexdigest()=='4456a7e157a19e550be0b270cf9649035ec6c17c77badfcad44789fb64ca26e1'
+          if (r/'review_fix.py').exists():exec(compile((r/'review_fix.py').read_text(),'review_fix.py','exec'))
+          PY
+      - name: Prepare licensed recorded texture and check runtime
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg libsndfile1 >/dev/null
+          pip install -q numpy scipy soundfile playwright==1.55.0
+          python "$SEA_ROOT/source/process_audio.py"
+          for f in "$SEA_ROOT/site/"*.js; do node --check "$f"; done
+          mkdir -p /tmp/sea05/review /tmp/sea05/public
+          node "$SEA_ROOT/source/test_command.js" > /tmp/sea05/review/motion_checks.json
+          node - <<'JS'
+          const fs=require('fs'),B=require(process.env.SEA_ROOT+'/site/command-motion.js'),checks=[];
+          for(const cfg of [{count:1,hp:300,engineKg:277},{count:1,hp:450,engineKg:437},{count:2,hp:150,engineKg:230},{count:2,hp:300,engineKg:277}]){
+            const s=new B();s.configure(cfg);s.x=-10000;s.z=-10000;s.start();for(let i=0;i<180;i++)s.step(1/60);s.gear=1;s.throttle=1;let t30=null;
+            for(let i=0;i<7200;i++){s.step(1/60);if(t30===null&&s.u>=30*.44704)t30=i/60;}
+            checks.push({...cfg,knots:s.u*3600/1852,mph:s.u/.44704,zeroTo30Seconds:t30,totalMassKg:s.totalMassKg(),modeled:true});
+          }
+          if(!(checks[0].knots>43&&checks[0].knots<45))throw Error('300 baseline outside expected modeled interval');
+          fs.writeFileSync('/tmp/sea05/review/speed_checks.json',JSON.stringify(checks,null,2));
+          JS
+      - name: Verify new instruments, audible output, controls and engine profiles
+        run: |
+          python -m playwright install --with-deps chromium >/dev/null
+          python -m http.server 8885 --bind 127.0.0.1 --directory "$SEA_ROOT/site" >/tmp/sea05/http.log 2>&1 &
+          sleep 2
+          BASE_URL=http://127.0.0.1:8885/index.html REVIEW_DIR=/tmp/sea05/review python "$SEA_ROOT/source/verify05.py"
+      - name: Publish after visual review
+        if: contains(github.event.head_commit.message, '[publish]')
+        id: publish
+        run: |
+          mkdir -p "$SEA_ROOT/live"
+          cp -a "$SEA_ROOT/site/." "$SEA_ROOT/live/"
+          cp /tmp/sea05/review/validation.json "$SEA_ROOT/live/browser_validation05.json"
+          cp /tmp/sea05/review/speed_checks.json "$SEA_ROOT/live/speed_checks05.json"
+          git config user.name 'ATLAS release'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -f atlas_sealab_05/live atlas_sealab_05/source
+          git commit -m 'Publish Sea Lab 05: recorded engine layer, corrected speed and redesigned MFDs'
+          git stash push -u -m sea05-generated
+          git pull --rebase origin main
+          git push origin HEAD:main
+          URL="https://rawcdn.githack.com/owensto/helper/$(git rev-parse HEAD)/atlas_sealab_05/live/index.html"
+          git stash pop || true
+          echo "url=$URL" >> "$GITHUB_OUTPUT"
+          echo "$URL" > /tmp/sea05/public_url.txt
+      - name: Check exact public release
+        if: steps.publish.outputs.url != ''
+        env:
+          BASE_URL: ${{ steps.publish.outputs.url }}
+          REVIEW_DIR: /tmp/sea05/public
+        run: python "$SEA_ROOT/source/verify05.py"
+      - name: Preserve public verification
+        if: steps.publish.outputs.url != ''
+        run: |
+          cp /tmp/sea05/public/validation.json "$SEA_ROOT/online_validation.json"
+          git add atlas_sealab_05/online_validation.json
+          git commit -m 'Record public Sea Lab 05 control, sound output and instrument checks'
+          git stash push -u -m sea05-evidence
+          git pull --rebase origin main
+          git push origin HEAD:main
+          git stash pop || true
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ATLAS-SeaLab05-App-Source-Review
+          path: |
+            /tmp/sea05/review/
+            /tmp/sea05/public/
+            /tmp/sea05/public_url.txt
+            /tmp/sea05/http.log
+            atlas_sealab_05/site/
+            atlas_sealab_05/source/
+          retention-days: 30
