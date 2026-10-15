@@ -1,0 +1,42 @@
+name: ATLAS sound source review
+on:
+  workflow_dispatch:
+  push:
+    paths: ['.github/workflows/atlas-audio05-source-review.yml']
+permissions:
+  contents: read
+jobs:
+  source:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - name: Retrieve public CC0 preview and preserve provenance
+        run: |
+          mkdir -p /tmp/atlas-audio-source
+          python - <<'PY'
+          import urllib.request, re, json, hashlib, html
+          from pathlib import Path
+          root=Path('/tmp/atlas-audio-source')
+          url='https://freesound.org/people/nomadas/sounds/690160/'
+          req=urllib.request.Request(url,headers={'User-Agent':'Mozilla/5.0 ATLAS-audio-license-review'})
+          text=urllib.request.urlopen(req,timeout=25).read().decode()
+          (root/'source.html').write_text(text)
+          assert ('creativecommons.org/publicdomain/zero' in text or 'Creative Commons 0' in text), 'CC0 declaration not present'
+          candidates=re.findall(r'https?[^\s"<>]+?-hq\.mp3',html.unescape(text))
+          candidates=[u.replace('\\/','/') for u in candidates if '690160' in u and ('freesound.org' in u)]
+          if not candidates:
+              candidates=re.findall(r'https?[^\s"<>]+?\.mp3',html.unescape(text))
+              candidates=[u.replace('\\/','/') for u in candidates if '690160' in u and 'freesound.org' in u]
+          assert candidates,'Public preview URL not found; no authenticated download attempted'
+          preview=candidates[0]
+          b=urllib.request.urlopen(urllib.request.Request(preview,headers={'User-Agent':'Mozilla/5.0'}),timeout=30).read()
+          assert len(b)>20000,'Audio response too short'
+          (root/'river_outboard_preview.mp3').write_bytes(b)
+          (root/'provenance.json').write_text(json.dumps({'source':url,'preview':preview,'author':'nomadas','title':'River boat with outboard engine (at changing speeds)','license':'CC0 1.0','exact_engine_unknown':True,'sha256':hashlib.sha256(b).hexdigest()},indent=2))
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ATLAS-Audio05-Source-Review
+          path: /tmp/atlas-audio-source/
+          retention-days: 30
