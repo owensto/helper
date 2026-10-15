@@ -1,0 +1,130 @@
+name: ATLAS Sea Lab 10 gated publication
+on:
+  workflow_dispatch:
+  push:
+    paths: ['.github/workflows/atlas-sealab-10-publish.yml']
+permissions:
+  contents: read
+  actions: read
+concurrency:
+  group: atlas-sealab-10-publication
+  cancel-in-progress: true
+jobs:
+  publish:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 22
+    permissions:
+      contents: write
+      actions: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Require the final review workflow to finish successfully
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python - <<'PYREVIEW'
+          import json,os,time,urllib.request
+          for attempt in range(24):
+              req=urllib.request.Request('https://api.github.com/repos/owensto/helper/actions/runs/38824186709',headers={'Authorization':'Bearer '+os.environ['GH_TOKEN'],'Accept':'application/vnd.github+json'})
+              with urllib.request.urlopen(req,timeout=30) as response:d=json.load(response)
+              if d['status']=='completed':
+                  assert d['conclusion']=='success',d['conclusion']
+                  assert d['head_sha']=='9ca6047f18706de97b08d1541b9b66ab6c6f75db'
+                  print('Reviewed source workflow passed');break
+              time.sleep(20)
+          else:raise RuntimeError('Review was not ready; nothing published')
+          PYREVIEW
+      - uses: actions/download-artifact@v4
+        with:
+          github-token: ${{ github.token }}
+          run-id: 38824186709
+          name: ATLAS-SeaLab10-Review-desktop
+          path: /tmp/reviewed10/desktop
+      - uses: actions/download-artifact@v4
+        with:
+          github-token: ${{ github.token }}
+          run-id: 38824186709
+          name: ATLAS-SeaLab10-Review-phone
+          path: /tmp/reviewed10/phone
+      - name: Gate identical tested assets and publish readable source
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import json,hashlib,shutil,os
+          a=Path('/tmp/reviewed10/desktop');b=Path('/tmp/reviewed10/phone');r=Path('atlas_sealab_10');out=Path('/tmp/delivery10');out.mkdir(parents=True,exist_ok=True)
+          reports=[]
+          for p,dev in [(a,'desktop'),(b,'phone')]:
+              d=json.loads((p/'review/validation.json').read_text())
+              assert d['passed'] and len(d['tests'])==1 and d['tests'][0]['device']==dev and d['tests'][0]['passed'],d
+              for test in ['unit10.json','physics09-regression.json']:
+                  q=json.loads((p/'review'/test).read_text());assert q['passed'] and all(t['passed'] for t in q['tests'])
+              reports.append(d)
+          hashes=lambda p:{str(f.relative_to(p)):hashlib.sha256(f.read_bytes()).hexdigest() for f in p.rglob('*') if f.is_file()}
+          original=hashes(a/'site');assert original==hashes(b/'site'),'Desktop and phone did not test identical site assets'
+          shutil.copytree(a/'site',r/'live',dirs_exist_ok=True)
+          (r/'reviewed_source').mkdir(exist_ok=True)
+          for name in ['dynamics10.js','operations10.js','operations10.css','prepare10.py','test10.js','test09.js','verify10.py','review_fixups10.py']:
+              shutil.copy2(a/name,r/'reviewed_source'/name)
+          shutil.copy2(a/'verify10.py',r/'verify_release10.py')
+          combined={'version':'10','passed':True,'review_run':38824186709,'source_commit':'9ca6047f18706de97b08d1541b9b66ab6c6f75db','physicalDeviceTested':False,'tests':[t for d in reports for t in d['tests']]}
+          (r/'live/browser_validation.json').write_text(json.dumps(combined,indent=2))
+          for name in ['unit10.json','physics09-regression.json']:shutil.copy2(a/'review'/name,r/'live'/name)
+          release={'release':'10','review_run':38824186709,'browser_passed':['desktop','phone'],'source_commit':'9ca6047f18706de97b08d1541b9b66ab6c6f75db','model_sha256':original['assets/ATLAS_Bay_Play.glb'],'tested_asset_sha256':original,'default_graphics':'balanced','default_explosions':False,'default_ejection':False,'graphics_independent_of_easter_eggs':True,'weather_presets':['clear','breeze','swell','rain','fog','squall'],'recorded_engine_layers':3,'spotify':'external-link-only','youtube':'official-visible-player-provider-dependent','multiplayer':False,'accounts':False,'simulated_not_sea_trials':True,'physical_device_tested':False,'structural_or_acoustic_calibration':False}
+          (r/'live/release10.json').write_text(json.dumps(release,indent=2))
+          shutil.copy2(r/'README.md',out/'README.md');shutil.copy2(r/'live/browser_validation.json',out/'browser_validation.json');shutil.copy2(r/'live/release10.json',out/'release10.json')
+          final=hashes(r/'live')
+          for name,h in original.items():
+              if name!='browser_validation.json':assert final[name]==h,name
+          PY
+      - name: Publish new version without replacing older previews
+        id: release
+        run: |
+          git config user.name 'ATLAS release'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -f atlas_sealab_10/live atlas_sealab_10/reviewed_source atlas_sealab_10/verify_release10.py
+          git diff --cached --quiet || git commit -m 'Publish reviewed Sea Lab 10: operations, weather, translucent water and opt-in cinematic collisions'
+          git pull --rebase origin main
+          git push origin HEAD:main
+          echo "commit=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+          echo "url=https://rawcdn.githack.com/owensto/helper/$(git rev-parse HEAD)/atlas_sealab_10/live/index.html" >> "$GITHUB_OUTPUT"
+          python - <<'PY'
+          import json,subprocess
+          from pathlib import Path
+          sha=subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip()
+          Path('/tmp/delivery10/delivery.json').write_text(json.dumps({'commit':sha,'url':f'https://rawcdn.githack.com/owensto/helper/{sha}/atlas_sealab_10/live/index.html','public_test_passed':False},indent=2))
+          PY
+      - name: Operate the exact public URL on desktop and phone layouts
+        env:
+          BASE_URL: ${{ steps.release.outputs.url }}
+          REVIEW_DIR: /tmp/delivery10/public
+        run: |
+          python -m pip install -q playwright==1.55.0
+          python -m playwright install --with-deps chromium >/dev/null
+          python atlas_sealab_10/verify_public10.py
+      - name: Record public evidence and prepare portable release
+        env:
+          PUBLIC_URL: ${{ steps.release.outputs.url }}
+          PUBLIC_COMMIT: ${{ steps.release.outputs.commit }}
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import json,shutil,os
+          r=Path('atlas_sealab_10');out=Path('/tmp/delivery10');d=json.loads((out/'public/validation.json').read_text());assert d['passed'] and all(t['passed'] for t in d['tests'])
+          d['published_commit']=os.environ['PUBLIC_COMMIT'];d['url']=os.environ['PUBLIC_URL'];(r/'online_validation.json').write_text(json.dumps(d,indent=2));(out/'delivery.json').write_text(json.dumps({'url':d['url'],'commit':d['published_commit'],'public_test_passed':True},indent=2))
+          pkg=Path('/tmp/ATLAS_Sea_Lab_10');shutil.copytree(r/'live',pkg/'site',dirs_exist_ok=True);shutil.copytree(r/'reviewed_source',pkg/'reviewed_source',dirs_exist_ok=True);shutil.copy2(r/'README.md',pkg/'README.md');shutil.copy2(r/'online_validation.json',pkg/'public_validation.json');shutil.copy2(out/'delivery.json',pkg/'PLAY_ONLINE.json')
+          assert not any(p.suffix.lower() in ['.ttf','.otf','.woff','.woff2'] for p in pkg.rglob('*'))
+          shutil.make_archive(str(out/'ATLAS_Sea_Lab_10'),'zip',root_dir=pkg)
+          PY
+          git add atlas_sealab_10/online_validation.json
+          git diff --cached --quiet || git commit -m 'Record exact public Sea Lab 10 desktop and phone delivery checks'
+          git pull --rebase origin main
+          git push origin HEAD:main
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ATLAS-SeaLab10-Public-Delivery
+          path: /tmp/delivery10/
+          retention-days: 30
