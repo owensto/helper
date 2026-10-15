@@ -1,0 +1,20 @@
+/* Usable controls around the view, not stacked over the windscreen. */
+#command-app #sea08-pause{position:fixed;right:18px;top:79px;z-index:151;padding:9px 13px;border-radius:8px;pointer-events:auto;background:#153a49;color:#e3f0ed;border:1px solid #67929688;min-width:66px}
+#command-app #sea08-pause.active{background:#efd7a0;color:#233640}
+#command-app #sea08-start{background:#b4e3d2;color:#173b40;font-size:11px}
+#command-app #sea08-compass{position:fixed;top:80px;left:50%;transform:translateX(-50%);display:flex;align-items:center;gap:10px;padding:9px 17px;border-radius:8px;border:1px solid #c3dfdf3d;background:#0d2731c9;backdrop-filter:blur(8px);color:#e3eeea;pointer-events:none;z-index:9;font:11px system-ui;white-space:nowrap}
+#sea08-compass b{font-size:15px;font-variant-numeric:tabular-nums;font-weight:550}#sea08-compass span{letter-spacing:.08em;color:#a8c8c9}#sea08-compass i{opacity:.3;font-style:normal}
+#command-app:not([data-workspace=drive]) #sea08-compass{display:none}
+#command-app.immersive #sea08-pause{display:block!important;position:fixed;top:14px;right:164px;z-index:150;min-height:38px}
+#command-app.immersive #sea08-compass{top:18px}
+#command-app #radio-panel{max-height:calc(100dvh - 150px);overflow-y:auto;scrollbar-width:thin;border-radius:15px;background:linear-gradient(145deg,#102d3af7,#081923fa);box-shadow:0 18px 75px #00111b70}
+#radio-time{display:block;text-align:right;font-variant-numeric:tabular-nums;color:#aac5c9}#radio-panel .radio-controls button{min-height:42px}#radio-panel .muted{font-size:11px;line-height:1.5;color:#b4c9ca}
+#command-app #speed-hud{box-shadow:0 12px 35px #00132130}#command-app #speed-hud strong{text-shadow:0 1px 5px #00121c33}
+#command-app #mfd-panel{box-shadow:0 20px 80px #00121b80}#command-app #mfd-panel .mfd-toolbar{gap:7px}
+@media(max-width:900px){#command-app #sea08-compass{top:112px;font-size:9px;padding:6px 10px;gap:7px}#command-app #sea08-compass b{font-size:12px}#command-app #sea08-start{font-size:10px}#command-app #radio-panel{max-height:calc(100dvh - 160px);top:100px}}
+@media(max-width:700px){#command-app .header-right{gap:4px;flex-wrap:wrap;justify-content:flex-end}#command-app .header-right button{font-size:10px;padding:7px 8px;min-height:34px}#command-app #sea08-pause{min-width:53px}#command-app #sea08-compass{top:124px;max-width:calc(100vw - 24px)}#command-app.immersive #sea08-compass{top:64px}#command-app.immersive #sea08-pause{top:14px;right:150px}#command-app #radio-panel{left:10px;right:10px;width:auto;top:120px;max-height:calc(100dvh - 240px);padding:15px}#command-app #sea08-start{min-height:35px}#command-app #cmd-operator .row-actions{flex-wrap:wrap}#command-app #cmd-operator .row-actions button{flex:1 1 70px}#command-app #radio-open{display:inline-block!important}}
+@media(max-width:700px){#command-app:not(.immersive) #sea08-pause{top:154px;right:10px;padding:7px 10px;min-height:36px}}
+
+/* Keep telemetry clear of camera controls and the radio status pill. */
+@media(min-width:901px){#command-app:not(.immersive) #sea08-compass{top:126px}}
+@media(max-width:700px){#command-app #radio-mini,#command-app.immersive #radio-mini{top:316px;max-width:195px}#command-app:has(#mfd-panel:not([hidden])) #radio-mini{display:none}}

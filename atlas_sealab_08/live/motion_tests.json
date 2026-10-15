@@ -1,0 +1,50 @@
+{
+  "passed": true,
+  "physics_calibrated": false,
+  "tests": [
+    {
+      "name": "engine-off calm water does not accelerate",
+      "passed": true
+    },
+    {
+      "name": "startup interlock",
+      "passed": true
+    },
+    {
+      "name": "forward thrust and helm turning",
+      "passed": true
+    },
+    {
+      "name": "neutral coasts rather than brakes",
+      "passed": true
+    },
+    {
+      "name": "reverse steering reverses yaw response",
+      "passed": true
+    },
+    {
+      "name": "neutral current drift and through-water speed",
+      "passed": true
+    },
+    {
+      "name": "trim influences simulated bow attitude",
+      "passed": true
+    },
+    {
+      "name": "shared wave samples are finite",
+      "passed": true
+    },
+    {
+      "name": "conservative dock contact response",
+      "passed": true
+    },
+    {
+      "name": "fine-step convergence",
+      "passed": true
+    },
+    {
+      "name": "reset preserves requested conditions but clears helm",
+      "passed": true
+    }
+  ]
+}
