@@ -43,7 +43,9 @@ jobs:
           p=r/'verify_public_release08.py';s=p.read_text();needle="   r['scroll_width']=page.evaluate('document.documentElement.scrollWidth');"
           extra="""   if dev=='phone':
               assert page.locator('#cruise-rail').is_hidden(),'Duplicate mobile driving rail'
-              assert page.locator('#touch-helm').is_visible(),'Touch controls must remain reachable'
+              # Fixed-position children do not give their wrapper a bounding box.
+              # Test and click the actual controls, not the zero-height wrapper.
+              assert page.locator('#touch-neutral').is_visible() and page.locator('#touch-throttle').is_visible(),'Touch controls must remain reachable'
               r['phone_clear_layout']=page.evaluate('''() => {const ids=['speed-hud','sea08-compass','sea08-pause'];const boxes=ids.map(id=>{const r=document.getElementById(id).getBoundingClientRect();return {id,x:r.x,y:r.y,width:r.width,height:r.height};});let overlaps=[];for(let i=0;i<boxes.length;i++)for(let j=i+1;j<boxes.length;j++){const a=boxes[i],b=boxes[j];if(a.x<b.x+b.width&&b.x<a.x+a.width&&a.y<b.y+b.height&&b.y<a.y+a.height)overlaps.push([a.id,b.id]);}return {boxes,overlaps};}''')
               assert not r['phone_clear_layout']['overlaps'],r['phone_clear_layout']
               page.locator('#touch-neutral').click();assert page.evaluate('BAYPLAY.state.gear===0')
