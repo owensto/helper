@@ -1,0 +1,158 @@
+name: ATLAS Sea Lab 08 gated release
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/atlas-sealab-08-publish.yml'
+      - 'atlas_sealab_08/finish08.py'
+      - 'atlas_sealab_08/release08_fixups.py'
+      - 'atlas_sealab_08/test_history08.js'
+      - 'atlas_sealab_08/verify_public08.py'
+permissions:
+  contents: read
+  actions: read
+concurrency:
+  group: atlas-sealab-08-final-release
+  cancel-in-progress: true
+jobs:
+  review:
+    strategy:
+      fail-fast: false
+      matrix:
+        device: [desktop, phone]
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    env:
+      SEA_ROOT: ${{ github.workspace }}/atlas_sealab_08
+      TEST_DEVICE: ${{ matrix.device }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - uses: actions/download-artifact@v4
+        with:
+          github-token: ${{ github.token }}
+          run-id: 38810916740
+          artifact-ids: 12008956892
+          path: /tmp/sea08-reviewed
+          merge-multiple: true
+      - name: Restore exact reviewed source and fix demonstrated regressions
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import os,shutil
+          r=Path(os.environ['SEA_ROOT']);src=next(Path('/tmp/sea08-reviewed').rglob('site/realism08.js')).parent.parent
+          for name in ['site','source','models']:
+              shutil.copytree(src/name,r/name,dirs_exist_ok=True)
+          for name in ['verify08.py','verify07.py','speed_tests07.js','audit06.py','geometry07.py','music07.py','native07.py']:
+              shutil.copy2(src/name,r/name)
+          PY
+          python "$SEA_ROOT/release08_fixups.py"
+          python "$SEA_ROOT/finish08.py"
+          for f in "$SEA_ROOT/site/"*.js; do node --check "$f"; done
+          mkdir -p "$SEA_ROOT/review"
+          node "$SEA_ROOT/source/test_command.js" > "$SEA_ROOT/review/motion_tests08.json"
+          node "$SEA_ROOT/speed_tests07.js" > "$SEA_ROOT/review/speed_tests08.json"
+          node "$SEA_ROOT/test_history08.js" > "$SEA_ROOT/review/history_tests08.json"
+      - name: Full rendered functional and visual regression suite
+        run: |
+          python -m pip install -q playwright==1.55.0
+          python -m playwright install --with-deps chromium >/dev/null
+          python -m http.server 8898 --bind 127.0.0.1 --directory "$SEA_ROOT/site" >"$SEA_ROOT/review/http.log" 2>&1 &
+          sleep 2
+          BASE_URL=http://127.0.0.1:8898/index.html REVIEW_DIR="$SEA_ROOT/review" RADIO_TEST_FILE="$SEA_ROOT/site/assets/audio/lowcountry_drift.ogg" python "$SEA_ROOT/verify08.py"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ATLAS-SeaLab08-Final-${{ matrix.device }}
+          path: atlas_sealab_08/
+          retention-days: 30
+  publish:
+    needs: review
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    permissions:
+      contents: write
+      actions: read
+    outputs:
+      url: ${{ steps.release.outputs.url }}
+      commit: ${{ steps.release.outputs.commit }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - uses: actions/download-artifact@v4
+        with:
+          name: ATLAS-SeaLab08-Final-desktop
+          path: /tmp/final08/desktop
+      - uses: actions/download-artifact@v4
+        with:
+          name: ATLAS-SeaLab08-Final-phone
+          path: /tmp/final08/phone
+      - name: Require both passing reviews and identical site assets
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import shutil,json,hashlib,os
+          a=Path('/tmp/final08/desktop');b=Path('/tmp/final08/phone');r=Path('atlas_sealab_08')
+          reports=[]
+          for p,dev in [(a,'desktop'),(b,'phone')]:
+              d=json.loads((p/'review/validation.json').read_text())
+              assert d['passed'] and len(d['tests'])==1 and d['tests'][0]['device']==dev and d['tests'][0]['passed'],d
+              reports.append(d)
+          hashes=lambda p:{str(f.relative_to(p)):hashlib.sha256(f.read_bytes()).hexdigest() for f in p.rglob('*') if f.is_file()}
+          assert hashes(a/'site')==hashes(b/'site'),'Desktop and phone did not test identical assets'
+          shutil.copytree(a/'site',r/'live',dirs_exist_ok=True)
+          for name in ['models','source']:shutil.copytree(a/name,r/name,dirs_exist_ok=True)
+          shutil.copy2(a/'verify08.py',r/'verify_release08.py')
+          shutil.copy2(a/'verify_public08.py',r/'verify_public_release08.py')
+          combined={**reports[0],'url':'Local final release review','tests':[t for d in reports for t in d['tests']],'review_run':int(os.environ['GITHUB_RUN_ID'])}
+          (r/'live/browser_validation.json').write_text(json.dumps(combined,indent=2))
+          for name in ['motion_tests08.json','speed_tests08.json','history_tests08.json']:shutil.copy2(a/'review'/name,r/'live'/name)
+          release=json.loads((r/'live/release08.json').read_text());release.update({'review_run':int(os.environ['GITHUB_RUN_ID']),'browser_passed':['desktop','phone'],'physical_device_tested':False,'source_commit':os.environ['GITHUB_SHA'],'model_sha256':hashes(a/'site')['assets/ATLAS_Bay_Play.glb'],'sounder_history_reset_fixed':True})
+          (r/'live/release08.json').write_text(json.dumps(release,indent=2))
+          PY
+      - name: Publish new version without replacing older viewer links
+        id: release
+        run: |
+          git config user.name 'ATLAS release'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -f atlas_sealab_08/live atlas_sealab_08/models atlas_sealab_08/source atlas_sealab_08/verify_release08.py atlas_sealab_08/verify_public_release08.py
+          git commit -m 'Publish Sea Lab 08: recorded sound, knots, repaired cockpit, enhanced sonar and onboard stereo'
+          git pull --rebase origin main
+          git push origin HEAD:main
+          echo "commit=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+          echo "url=https://rawcdn.githack.com/owensto/helper/$(git rev-parse HEAD)/atlas_sealab_08/live/index.html" >> "$GITHUB_OUTPUT"
+      - name: Verify exact public boat, combined audio start and radio
+        env:
+          BASE_URL: ${{ steps.release.outputs.url }}
+          REVIEW_DIR: /tmp/final08/public
+        run: |
+          python -m pip install -q playwright==1.55.0
+          python -m playwright install --with-deps chromium >/dev/null
+          python atlas_sealab_08/verify_public_release08.py
+      - name: Record exact public delivery evidence
+        env:
+          PUBLIC_URL: ${{ steps.release.outputs.url }}
+          PUBLIC_COMMIT: ${{ steps.release.outputs.commit }}
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import json,os,shutil
+          d=json.loads(Path('/tmp/final08/public/validation.json').read_text());assert d['passed']
+          d['published_commit']=os.environ['PUBLIC_COMMIT'];d['url']=os.environ['PUBLIC_URL']
+          Path('atlas_sealab_08/online_validation.json').write_text(json.dumps(d,indent=2))
+          Path('/tmp/final08/delivery.json').write_text(json.dumps({'url':d['url'],'commit':d['published_commit'],'public_test_passed':True},indent=2))
+          PY
+          git add atlas_sealab_08/online_validation.json
+          git commit -m 'Record verified Sea Lab 08 public boat, sound and radio delivery'
+          git pull --rebase origin main
+          git push origin HEAD:main
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ATLAS-SeaLab08-Public-Evidence
+          path: /tmp/final08/
+          retention-days: 30
