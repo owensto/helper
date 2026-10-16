@@ -32,27 +32,53 @@ function createBridge(current){if(typeof current!=='function')throw Error('PRIVA
  }catch(e){return reject('INVALID_OWNER_PACKET',p?.frameId);}}
  return Object.freeze({consume,invalidate:reason=>reject(reason||'EXPLICIT_INVALIDATION',lastSeen)});
 }
+// Only this immutable owner pin can be used by a future scoped review build.
+// A missing ACK cannot equal another missing value and grant construction.
+const REVIEW_PINS=freeze({humanSHA:'10ed9c2f8d0c392828f238e686bcc689517d34f9',profileSHA256:'2d8f1b640ac9ffad745e889984b264d55531b72d7f0496e611be4ca1ca824902',physicalContactSHA256:'cc2a82dc89e3abfee8fd6a7d5def9dd153da179abb4c834dc91b09924d237f58',modelSHA256:'b1ef9c448309a9a5d85ec4f2efcf45d9406d999ab24d27bdd1534359a7278b82',rigSHA256:'e80b6e82ac31c3bfb1134952e0bcb9b840fedc26b71dc90e9b387ae8cd28ecd3',animationSHA256:'b0f10003c14416330d30c41fe26d7ec86bc34e3b39ca9bd91ca78a54db415b94',scope:'LIMITED_CONTACT_REVIEW',ownerACK:null,modules:{'captain12-adapter.mjs':'0767111188ff1c62c8b68c44f8132f8d292089ed','rig.mjs':'a39a40b7dfa8151705bfa325abe557ae75f706fd','contact.mjs':'882a3b189131c3544deba20b2a08c08616ed5a14','ik.mjs':'a71fe32b2a4c9c547593cfa541f742e72b53ad4f','pose-contract.mjs':'6107ae4151e70f7a54f473999faf96538a47f8c4','transform-contract.mjs':'497351fd363f99d922f3a63509100d4f0dd3f881'}});
+const reviewCapabilities=new WeakMap();
+async function preloadReview({T,candidate}){
+ if(!text(REVIEW_PINS.ownerACK)||candidate?.humanACK!==REVIEW_PINS.ownerACK)throw Error('SCOPED_HUMANS_OWNER_ACK_REQUIRED');
+ if(candidate.correctedHumanSHA!==REVIEW_PINS.humanSHA||candidate.rigProfileSHA256!==REVIEW_PINS.profileSHA256||candidate.physicalContactSHA256!==REVIEW_PINS.physicalContactSHA256||candidate.humanActivation!==true||candidate.productionEnabled!==false||candidate.reviewScope!==REVIEW_PINS.scope)throw Error('EXACT_LIMITED_REVIEW_MANIFEST_REQUIRED');
+ const hash=async(a,algorithm='SHA-256')=>Array.from(new Uint8Array(await crypto.subtle.digest(algorithm,a)),v=>v.toString(16).padStart(2,'0')).join(''),enc=new TextEncoder();
+ const read=async(p,want,git=false)=>{const r=await fetch(p,{cache:'no-store'});if(!r.ok)throw Error('RECEIVER_ASSET_UNAVAILABLE:'+p);const a=new Uint8Array(await r.arrayBuffer());let bytes=a;if(git){const h=enc.encode('blob '+a.length+'\0');bytes=new Uint8Array(h.length+a.length);bytes.set(h);bytes.set(a,h.length);}if(await hash(bytes,git?'SHA-1':'SHA-256')!==want)throw Error('RECEIVER_BYTE_ATTESTATION_FAILED:'+p);return a;};
+ const profileBytes=await read('human/profiles/bay12/profile.json',REVIEW_PINS.profileSHA256),profile=freeze(JSON.parse(new TextDecoder().decode(profileBytes)));
+ if(profile.productionEnabled!==false||profile.status!=='LIMITED_CONTACT_REVIEW_ONLY_NOT_GAMEPLAY_ACCEPTED'||profile.physicalContactSHA256!==REVIEW_PINS.physicalContactSHA256||profile.modelSHA256!==REVIEW_PINS.modelSHA256)throw Error('UNACCEPTED_PROFILE_SCOPE');
+ for(const [name,h]of Object.entries(REVIEW_PINS.modules))await read('human/src/'+name,h,true);
+ const [rigBytes,clipBytes]=await Promise.all([read('human/assets/RocketboxCaptain.glb',REVIEW_PINS.rigSHA256),read('human/assets/animations.json',REVIEW_PINS.animationSHA256)]);
+ const {createHelmRig}=await import('./human/src/rig.mjs'),{makeCaptain12Build}=await import('./human/src/captain12-adapter.mjs');
+ const gltf=await new Promise((resolve,reject)=>new T.GLTFLoader().parse(rigBytes.buffer,'',resolve,reject)),rig=createHelmRig(gltf,JSON.parse(new TextDecoder().decode(clipBytes)),{heightM:profile.heightM});
+ let sample=freeze({valid:false,reason:'AWAITING_CORE_COMMITTED_FRAME'}),buildCount=0;
+ const factory=makeCaptain12Build({rig,sampleHost:()=>sample,onUnsupported:()=>{}});
+ const handle=Object.freeze({build(){const out=factory();buildCount++;return out;}});
+ reviewCapabilities.set(handle,{profile,rig,candidate:copy(candidate),get buildCount(){return buildCount;},setSample:p=>{sample=copy(p);},claimed:false});return handle;
+}
+
 const sessions=new WeakMap();
-async function install({T,A,core,spec,inputs,candidate,receiver=null,approvedProfile=null}){
+async function install({T,A,core,spec,inputs,candidate,receiver=null,approvedProfile=null,reviewHandle=null}){
  if(sessions.has(A))throw Error('C2_ALREADY_REGISTERED');
  const reservation=Object.freeze({pending:true});sessions.set(A,reservation);let rollback=()=>{};try{
  if(candidate.c1SourceSHA!==C1||spec.designId!==DESIGN||candidate.physicalContactSHA256!==inputs.physicalContactSHA256)throw Error('C2_BASELINE_MISMATCH');
  const physical=G.CoreBayContactC2.bind(T,A,spec),boat=A.boat,model=A.model,S=A.state,captain=boat.getObjectByName('SEA12_CAPTAIN');if(!captain)throw Error('CAPTAIN_UNAVAILABLE');
- const scope=crypto.randomUUID(),instance=crypto.randomUUID(),profileDigest=approvedProfile?.sha256||sha256('C2_PHYSICAL_ONLY_NO_RIG_PROFILE');
- const verifiedProfile=!!(approvedProfile&&receiver&&candidate.humanActivation===true&&hex64(profileDigest)&&candidate.rigProfileSHA256===profileDigest&&approvedProfile.physicalContactSHA256===inputs.physicalContactSHA256&&approvedProfile.ownerACK===candidate.humanACK&&/^[a-f0-9]{40}$/.test(candidate.correctedHumanSHA));
- if((approvedProfile||receiver||candidate.humanActivation)&&!verifiedProfile)throw Error('MATCHING_HUMANS_SHA_ACK_PROFILE_REQUIRED');
+ const scope=crypto.randomUUID(),instance=crypto.randomUUID(),profileDigest=reviewHandle?REVIEW_PINS.profileSHA256:sha256('C2_PHYSICAL_ONLY_NO_RIG_PROFILE');
+ const grant=reviewHandle?reviewCapabilities.get(reviewHandle):null;
+ if(receiver||approvedProfile||reviewHandle&&!grant||candidate.humanActivation&&!grant)throw Error('BYTE_ATTESTED_PRIVATE_REVIEW_CAPABILITY_REQUIRED');
+ const verifiedProfile=!!grant;
+ if(verifiedProfile&&(grant.claimed||grant.buildCount!==1||grant.rig.group!==captain||JSON.stringify(grant.candidate)!==JSON.stringify(candidate)||!text(REVIEW_PINS.ownerACK)))throw Error('MATCHING_HUMANS_SHA_ACK_PROFILE_REQUIRED');
+ const profile=grant?.profile; if(grant)grant.claimed=true;
  let descriptor=await core.reader.describe(),refreshing=false,serial=0,activation=0,lastLifecycle=null,current=null,latest=null,disposed=false,seenCaptain=captain;
  const bridge=createBridge(()=>current),samples=[],events=[],noThrow=reason=>{try{if(events.at(-1)?.reason!==reason){events.push({reason,frameId:serial});if(events.length>128)events.shift();}}catch{}};
  const originalBefore=G.SEA06.beforeRender,sourceStep=S.step,priorAnimate=captain.userData.animateCaptain;
- rollback=()=>{if(G.SEA06.beforeRender===before)G.SEA06.beforeRender=originalBefore;captain.userData.animateCaptain=priorAnimate;physical.dispose();};
+ const deferredAnimate=()=>({valid:false,reason:'AWAITING_COMMITTED_OWNER_FRAME'});
+ rollback=()=>{if(G.SEA06.beforeRender===before)G.SEA06.beforeRender=originalBefore;if(captain.userData.animateCaptain===deferredAnimate)captain.userData.animateCaptain=priorAnimate;physical.dispose();};
  // Physical-only mode observes the original captain. Positive mode is a receiver
  // preloaded through the existing ensureDriver factory BEFORE C1 attachment.
- const ownerAnimate=verifiedProfile?receiver.animate:null;
- if(verifiedProfile){if(receiver.group!==captain||receiver.buildCount!==1)throw Error('EXISTING_FACTORY_LIFECYCLE_REQUIRED');captain.userData.animateCaptain=()=>({valid:false,reason:'AWAITING_COMMITTED_OWNER_FRAME'});}
+ const ownerAnimate=verifiedProfile?priorAnimate:null;
+ if(verifiedProfile){if(typeof ownerAnimate!=='function')throw Error('EXISTING_FACTORY_LIFECYCLE_REQUIRED');captain.userData.animateCaptain=deferredAnimate;}
  const rigid=a=>G.CoreBayContactC2.rigid(T,a);
- function invalidate(reason){latest=freeze({valid:false,reason,productionEnabled:false});bridge.invalidate(reason);noThrow(reason);if(verifiedProfile){try{ownerAnimate(A,S);}catch(e){captain.children.forEach(o=>o.visible=false);captain.userData.attachmentValid=false;noThrow('RECEIVER_EXCEPTION_CONTAINED');}}}
+ function invalidate(reason){latest=freeze({valid:false,reason,productionEnabled:false});bridge.invalidate(reason);noThrow(reason);if(verifiedProfile&&captain.userData.animateCaptain===deferredAnimate){grant.setSample(latest);try{ownerAnimate(A,S);}catch(e){captain.children.forEach(o=>o.visible=false);captain.userData.attachmentValid=false;noThrow('RECEIVER_EXCEPTION_CONTAINED');}}}
  function reDescribe(){if(refreshing)return;refreshing=true;core.reader.describe().then(d=>{descriptor=d;}).catch(e=>noThrow(String(e.message))).finally(()=>refreshing=false);}
  function commit(){if(disposed)return;serial++;const started=performance.now();try{
+  if(verifiedProfile&&captain.userData.animateCaptain!==deferredAnimate)throw Error('CAPTAIN_HOOK_OWNERSHIP_LOST');
   if(A.boat!==boat||A.model!==model||A.state!==S||S.step!==sourceStep||A.scene.getObjectByName('SEA12_CAPTAIN')!==seenCaptain)throw Error('PRIVATE_RUNTIME_IDENTITY_CHANGED');
   const p=core.reader.readPose(DESIGN,descriptor.worldRevision),op=G.SEA10.inspect();captain.updateWorldMatrix(true,false);const captainLocal=captain.matrix.clone();
   const inv=rigid(p.transform.worldToLocal),mat=rigid(p.transform.localToWorld),identity=mat.clone().multiply(inv).elements;if(identity.some((v,i)=>Math.abs(v-(i%5===0?1:0))>1e-8))throw Error('INVERSE_MISMATCH');
@@ -63,17 +89,26 @@ async function install({T,A,core,spec,inputs,candidate,receiver=null,approvedPro
   current=freeze({registered:true,runtimeScopeId:scope,vesselInstanceId:instance,designId:DESIGN,stationId:spec.stationId,modelSHA256:spec.modelSHA256,physicalContactSHA256:inputs.physicalContactSHA256,rigProfileSHA256:profileDigest,worldRevision:descriptor.worldRevision,frameId:serial,activationEpoch:activation,clock:p.clock,roll:p.motion.renderEulerYXZ[0],pitch:p.motion.renderEulerYXZ[2],invalidReason:invalid});
   const tick=bridge.consume({...current,roll:p.motion.renderEulerYXZ[0],pitch:p.motion.renderEulerYXZ[2]});if(!tick.valid){invalidate(tick.reason);return;}
   const contactFrames=physical.sample();
-  latest=copy({valid:verifiedProfile,reason:verifiedProfile?null:'CORRECTED_HUMANS_PROFILE_ACK_PENDING',productionEnabled:verifiedProfile,physicalAvailable:true,mapping:MAP,context:current,frame:tick.frame,reset:tick.reset,skipUpdate:tick.skipUpdate,physicalContacts:contactFrames,transform:{epoch:tick.frame.epoch,time:tick.frame.time,localToWorld:p.transform.localToWorld,worldToLocal:p.transform.worldToLocal},ejected:false});
-  // Positive targets must be supplied by the accepted HUMANS-owned profile mapper.
-  if(verifiedProfile&&!tick.skipUpdate){latest=copy(receiver.mapSample(latest,approvedProfile));if(!latest.valid)throw Error(latest.reason||'RIG_PROFILE_REJECTED');ownerAnimate(A,S);}
+  if(verifiedProfile){const w=A.model.getObjectByName('PLAY_STEERING');if(!w||!Number.isFinite(w.rotation.x))throw Error('WHEEL_POSE_UNAVAILABLE');if(Math.abs(w.rotation.x)>profile.bounds.wheelAngleAbsMaxRad||Math.abs(current.roll)>profile.bounds.rollAbsMaxRad||Math.abs(current.pitch)>profile.bounds.pitchAbsMaxRad)throw Error('H4_REVIEW_MOTION_BOUNDS_EXCEEDED');}
+  latest=copy({valid:verifiedProfile,reason:verifiedProfile?null:'CORRECTED_HUMANS_PROFILE_ACK_PENDING',productionEnabled:false,limitedReviewEnabled:verifiedProfile,physicalAvailable:true,mapping:MAP,context:current,frame:tick.frame,reset:tick.reset,skipUpdate:tick.skipUpdate,physicalContacts:contactFrames,transform:{epoch:tick.frame.epoch,time:tick.frame.time,localToWorld:p.transform.localToWorld,worldToLocal:p.transform.worldToLocal},ejected:false});
+  // Offsets and orientations come from exact HUMANS-owned profile bytes.
+  if(verifiedProfile&&!tick.skipUpdate){
+   const attachment={vesselId:DESIGN,revision:'bay-contact/1:'+sha256(JSON.stringify([DESIGN,spec.modelSHA256,inputs.physicalContactSHA256,profileDigest]))},quats={};
+   const captainInvQ=new T.Quaternion().setFromRotationMatrix(captain.matrixWorld).invert();
+   for(const [id,o]of Object.entries(profile.offsets)){const f=contactFrames[id];if(!f?.available)throw Error('PHYSICAL_CONTACT_UNAVAILABLE:'+id);attachment[id]=new T.Vector3().fromArray(o.positionContactM).applyMatrix4(new T.Matrix4().fromArray(f.contactToVessel)).toArray();if(o.orientationContactXYZW)quats[id]=captainInvQ.clone().multiply(new T.Quaternion().setFromRotationMatrix(new T.Matrix4().fromArray(f.contactToWorld))).multiply(new T.Quaternion().fromArray(o.orientationContactXYZW)).normalize().toArray();}
+   latest=copy({...latest,attachment,rigPose:{torsoPitch:profile.torsoPitchRad,handOrientations:[quats.leftHand,quats.rightHand],footOrientations:[quats.leftFoot,quats.rightFoot],balanceGain:profile.bounds.rollPitchVisualGain}});grant.setSample(latest);
+   const accepted=ownerAnimate(A,S);if(accepted?.valid===false||captain.userData.attachmentValid!==true)throw Error(accepted?.reason||'HUMANS_RECEIVER_REJECTED');
+   if(!Number.isFinite(accepted?.maxError)||accepted.maxError>profile.bounds.jointResidualMaxM)throw Error('HUMAN_JOINT_RESIDUAL_EXCEEDED');
+   latest=copy({...latest,receiverAccepted:true,rigResult:accepted});
+  }
   let max=0;for(const [id,f]of Object.entries(contactFrames)){const q=physical.query(id,f.pointWorld);max=Math.max(max,q.distanceM);}
   samples.push({frameId:serial,time:p.clock.seconds,epoch:p.clock.epoch,activationEpoch:activation,dt:tick.frame.dt,reset:tick.reset,physicalErrorM:max,captainUUID:captain.uuid,receiverUpdated:verifiedProfile&&!tick.skipUpdate,physicalContacts:5,cpuMs:performance.now()-started});if(samples.length>2000)samples.shift();
  }catch(e){invalidate(e.message||'C2_INVALID_SAMPLE');if(/WORLD/.test(e.message))reDescribe();}}
  function before(){originalBefore();commit();}
  G.SEA06.beforeRender=before;
- function dispose(){if(disposed)return;invalidate('C2_DISPOSED');disposed=true;if(G.SEA06.beforeRender===before)G.SEA06.beforeRender=originalBefore;if(verifiedProfile)captain.userData.animateCaptain=priorAnimate;physical.dispose();sessions.delete(A);}
+ function dispose(){if(disposed)return;invalidate('C2_DISPOSED');disposed=true;if(G.SEA06.beforeRender===before)G.SEA06.beforeRender=originalBefore;if(verifiedProfile&&captain.userData.animateCaptain===deferredAnimate)captain.userData.animateCaptain=priorAnimate;physical.dispose();sessions.delete(A);}
  const api=Object.freeze({read:()=>latest?copy({...latest,context:latest.context?Object.fromEntries(Object.entries(latest.context).filter(([k])=>!['runtimeScopeId','vesselInstanceId'].includes(k))):null}):null,inspect:()=>copy({mapping:MAP,privateRegistration:true,frameId:serial,activationEpoch:activation,positiveFactoryEnabled:verifiedProfile,reason:latest?.reason||null,worldRevision:descriptor.worldRevision,physicalAudit:physical.audit(),samples,events,existingCaptainUUID:captain.uuid,yachtAvailable:false,multiplayer:false}),showContacts:physical.show,queryContact:physical.query,dispose});sessions.set(A,api);commit();return api;
  }catch(error){rollback();if(sessions.get(A)===reservation)sessions.delete(A);throw error;}
 }
-const api=Object.freeze({revision:MAP,sha256,epoch,createBridge,install});G.CoreBayHelmC2=api;if(typeof module!=='undefined')module.exports=api;
+const api=Object.freeze({revision:MAP,sha256,epoch,createBridge,preloadReview,install});G.CoreBayHelmC2=api;if(typeof module!=='undefined')module.exports=api;
 })(typeof window!=='undefined'?window:globalThis);
