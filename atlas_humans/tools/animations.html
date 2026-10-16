@@ -1,0 +1,35 @@
+<!doctype html>
+<script type="importmap">
+  {
+    "imports": {
+      "three": "../node_modules/three/build/three.module.js",
+      "three/addons/": "../node_modules/three/examples/jsm/"
+    }
+  }
+</script>
+<script type="module">
+  import * as T from "three";
+  import { FBXLoader } from "three/addons/loaders/FBXLoader.js";
+  window.results = {};
+  for (const [key, file] of Object.entries({
+    idle: "m_idle_breathe_01.max.fbx",
+    helm: "m_sit_chair_breathe_01.max.fbx",
+    walk: "m_walk_neutral_01.max.fbx",
+  })) {
+    const object = await new FBXLoader().loadAsync(
+      "../assets/rocketbox-source/" + file,
+    );
+    results[key] = object.animations.map((clip) => {
+      clip.tracks = clip.tracks.filter(
+        (t) =>
+          t.name.endsWith(".quaternion") &&
+          !/Footsteps|Ey|Lip|Caninus|Cheek|Mouth|Nose|Tongue|Jaw|Masseter/.test(
+            t.name,
+          ),
+      );
+      clip.optimize();
+      return T.AnimationClip.toJSON(clip);
+    });
+  }
+  window.ready = true;
+</script>

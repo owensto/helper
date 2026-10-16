@@ -1,0 +1,62 @@
+{
+  "members": [
+    "PLAY_STEERING_EX_Console__black",
+    "PLAY_STEERING_EX_Console__chrome"
+  ],
+  "rigidFrameEqualitySamples": 61,
+  "name": "PLAY_STEERING_COMPOSITE",
+  "triangles": 1460,
+  "degenerateTriangles": 0,
+  "weldToleranceM": 0.000001,
+  "components": [
+    {
+      "id": 0,
+      "triangles": 24,
+      "closed": false,
+      "boundaryEdges": 24,
+      "nonmanifoldEdges": 0,
+      "windingErrors": 0
+    },
+    {
+      "id": 1,
+      "triangles": 1280,
+      "closed": false,
+      "boundaryEdges": 20,
+      "nonmanifoldEdges": 0,
+      "windingErrors": 0
+    },
+    {
+      "id": 2,
+      "triangles": 96,
+      "closed": true,
+      "boundaryEdges": 0,
+      "nonmanifoldEdges": 0,
+      "windingErrors": 0
+    },
+    {
+      "id": 3,
+      "triangles": 20,
+      "closed": false,
+      "boundaryEdges": 20,
+      "nonmanifoldEdges": 0,
+      "windingErrors": 0
+    },
+    {
+      "id": 4,
+      "triangles": 20,
+      "closed": false,
+      "boundaryEdges": 20,
+      "nonmanifoldEdges": 0,
+      "windingErrors": 0
+    },
+    {
+      "id": 5,
+      "triangles": 20,
+      "closed": false,
+      "boundaryEdges": 20,
+      "nonmanifoldEdges": 0,
+      "windingErrors": 0
+    }
+  ],
+  "solidComplete": false
+}

@@ -1,0 +1,95 @@
+{
+  "scope": "H7 actual-geometry authored RAF comparison with pinned H5 controller on identical inputs. No CORE integration; known H6 full-body failure unchanged.",
+  "productionEnabled": false,
+  "fullBodyAccepted": false,
+  "H6ClearanceStatus": "FAIL_UNCHANGED",
+  "baselineSource": "b84a980b0d86f247f216e1489d1dc4636875c884",
+  "equalValidFrames": 653,
+  "pausedRegressions": [
+    {
+      "kind": "nonfinite-point",
+      "rejected": true,
+      "reason": "HAND_SURFACE_INVALID",
+      "remainsBlocked": true,
+      "recovers": true
+    },
+    {
+      "kind": "changed-reach",
+      "rejected": true,
+      "reason": "PAUSED_RIG_CONTEXT_CHANGED",
+      "remainsBlocked": true,
+      "recovers": true
+    },
+    {
+      "kind": "changed-orientation",
+      "rejected": true,
+      "reason": "PAUSED_SURFACE_FRAME_CHANGED",
+      "remainsBlocked": true,
+      "recovers": true
+    }
+  ],
+  "motionRegressionPass": true,
+  "violations": [],
+  "renderedFrames": 653,
+  "durationSec": 15.0161,
+  "frameDeltaP95Sec": 0.03340000000000009,
+  "maxJointErrorM": 2.2867518753750974e-06,
+  "maxValidPalmDistanceM": 0.002920758165528157,
+  "bothHandsFreeFrames": 0,
+  "bothHandsFreeTimeSec": 0,
+  "kinematics": [
+    {
+      "maxSpeedMps": 0.1271599708968276,
+      "maxAccelerationMps2": 10.000000000000156,
+      "maxAngularSpeedRadSec": 0.0,
+      "maxFingerBlendPerSec": 4.000000000000002,
+      "contactFraction": 0.9908116385911179
+    },
+    {
+      "maxSpeedMps": 0.2603944141203796,
+      "maxAccelerationMps2": 8.454751280079579,
+      "maxAngularSpeedRadSec": 4.229150853488378,
+      "maxFingerBlendPerSec": 4.000000000000002,
+      "contactFraction": 0.9540581929555896
+    }
+  ],
+  "lifecycle": {
+    "pauseStable": true,
+    "changedPausedSurface": "PAUSED_SURFACE_MOVED",
+    "reset": true,
+    "ejection": "HAND_CONTEXT_UNAVAILABLE",
+    "cleared": true,
+    "reentry": true
+  },
+  "support": {
+    "seat": {
+      "probeCount": 1,
+      "missing": 0,
+      "minGapM": -0.001934096230547598,
+      "maxGapM": -0.0011482843472271076,
+      "minMarginM": 0.03238677093126563
+    },
+    "leftFoot": {
+      "probeCount": 42,
+      "missing": 0,
+      "minGapM": 0.002069020254585309,
+      "maxGapM": 0.0058269625169126565,
+      "minMarginM": 0.00595780700508286
+    },
+    "rightFoot": {
+      "probeCount": 42,
+      "missing": 0,
+      "minGapM": 0.002069180436167377,
+      "maxGapM": 0.005826467094426392,
+      "minMarginM": 0.005965846448657053
+    }
+  },
+  "budget": {
+    "scope": "Comparison fixture includes both baseline and new controllers; excludes renderer/skin/rays. Not single-character production budget.",
+    "newControllerP95Ms": 0.6000000089406967,
+    "comparisonFixtureMedianMs": 3.7999999970197678,
+    "comparisonFixtureP95Ms": 4.699999988079071,
+    "comparisonFixtureMaxMs": 8.799999997019768,
+    "rigUpdateP95Ms": 0.29999999701976776
+  }
+}

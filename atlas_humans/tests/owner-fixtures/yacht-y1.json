@@ -1,0 +1,42 @@
+{
+  "schemaVersion": "atlas-vessel-contact/1",
+  "contractStatus": "PROPOSED_NOT_SHARED_HOST_ACCEPTED",
+  "vesselId": "atlas-d-original-r7",
+  "sourceCommit": "48b9bef038ab2e422b6677d7ca9db4879419a3f9",
+  "sourceAssetSHA256": "b2966e8265edbd6d52ac2fa7aa1aaa764683df5ff1548a21c8cc1a024fdb3d48",
+  "units": {"position": "metres", "time": "seconds", "angle": "radians"},
+  "axes": {"forward": "+X", "up": "+Y", "starboard": "+Z", "handedness": "right", "positiveHeading": "+X toward +Z; negative rotation about +Y"},
+  "matrices": "column-major 4x4; pointWorld = worldFromLocal * pointLocal",
+  "quaternions": "[x,y,z,w]; local-to-world; right-handed active rotation",
+  "frames": [
+    {"id": "main-deck", "sourceNode": "FIXED_Main_deck", "occupiedInterior": false},
+    {"id": "upper-shell", "sourceNode": "MOV_Shell_Upper", "occupiedInterior": false},
+    {"id": "bridge-deck", "sourceNode": "MOV_Shell_Bridge", "occupiedInterior": false},
+    {"id": "sky-shell", "sourceNode": "MOV_Shell_Sky", "occupiedInterior": false}
+  ],
+  "helmAnchors": [
+    {"id": "helm.seat", "role": "pelvis-seat", "available": false, "sourceNode": null, "reason": "NO_SEMANTIC_HELM_ANCHOR_IN_R7"},
+    {"id": "helm.hand.left", "role": "left-hand-control", "available": false, "sourceNode": null, "reason": "NO_SEMANTIC_HELM_ANCHOR_IN_R7"},
+    {"id": "helm.hand.right", "role": "right-hand-control", "available": false, "sourceNode": null, "reason": "NO_SEMANTIC_HELM_ANCHOR_IN_R7"},
+    {"id": "helm.foot.left", "role": "left-foot-support", "available": false, "sourceNode": null, "reason": "NO_SEMANTIC_HELM_ANCHOR_IN_R7"},
+    {"id": "helm.foot.right", "role": "right-foot-support", "available": false, "sourceNode": null, "reason": "NO_SEMANTIC_HELM_ANCHOR_IN_R7"}
+  ],
+  "regions": [
+    {"id": "foredeck.port.patch", "deckFrame": "main-deck", "sourceMesh": "FIXED_Main_deck__Foredeck_landing_surface", "sourcePrimitive": 0, "boundsXZ": [28.8,31.2,-2.6,-1.4], "heightRangeM": [6.24,6.29], "normalLocalYMin": 0.98, "allowedModes": ["surface","secured"], "previewPointLocalM": [30,6.375,-2], "scope": "Point support on original landing-surface geometry; inset from edge and clear of raised H markings."},
+    {"id": "foredeck.starboard.patch", "deckFrame": "main-deck", "sourceMesh": "FIXED_Main_deck__Foredeck_landing_surface", "sourcePrimitive": 0, "boundsXZ": [28.8,31.2,1.4,2.6], "heightRangeM": [6.24,6.29], "normalLocalYMin": 0.98, "allowedModes": ["surface","secured"], "previewPointLocalM": [30,6.375,2], "scope": "Point support on original landing-surface geometry; inset from edge and clear of raised H markings."},
+    {"id": "bridge.aft.patch", "deckFrame": "bridge-deck", "sourceMesh": "MOV_Shell_Bridge__Teak_honey", "sourcePrimitive": 0, "boundsXZ": [-18.2,-16.4,-2.5,-1.5], "heightRangeM": [13.867,13.869], "normalLocalYMin": 0.999, "allowedModes": ["surface"], "previewPointLocalM": [-17,13.968,-2], "scope": "Original exposed aft terrace inset clear of furniture; no support during packing or secured configurations."}
+  ],
+  "supportPolicy": {
+    "pointProbeOnly": true,
+    "maximumWorldSlopeRadians": 0.7853981633974483,
+    "transitionModes": ["securing","deploying"],
+    "underwaterModes": ["diving","submerged","surfacing"],
+    "transitionReason": "TRANSFORMING_OCCUPANCY_UNSUPPORTED",
+    "underwaterReason": "SUBMERGED_EXTERIOR_UNSUPPORTED",
+    "wholeVesselWalkable": false,
+    "dryInteriorEstablished": false,
+    "newHumanOrIK": false,
+    "ownsVesselClock": false,
+    "bottomKnowledgeOwner": "Vessel controller; never infer bottom depth from a deck contact"
+  }
+}

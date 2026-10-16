@@ -1,0 +1,156 @@
+{
+  "assetBytes": 3211304,
+  "runtime": "153.0.8010.12",
+  "timestamp": "2026-10-16T05:40:57.288Z",
+  "scenarios": [
+    {
+      "mode": "calm",
+      "activity": "helm",
+      "frames": 481,
+      "simulatedSeconds": 7.999700000000021,
+      "maxContactErrorM": 8.944725194292956e-7,
+      "updateP95Ms": 0.29999999701976776,
+      "updateMaxMs": 0.6000000089406967,
+      "drawCalls": 10,
+      "triangles": 8654,
+      "motionChanged": true,
+      "soleY": {
+        "min": 0.0099059636387887,
+        "max": 0.1256171496253174,
+        "count": 406
+      }
+    },
+    {
+      "mode": "rough",
+      "activity": "helm",
+      "frames": 481,
+      "simulatedSeconds": 7.999599999999852,
+      "maxContactErrorM": 9.59868890178652e-7,
+      "updateP95Ms": 0.29999999701976776,
+      "updateMaxMs": 1,
+      "drawCalls": 10,
+      "triangles": 8654,
+      "motionChanged": true,
+      "soleY": {
+        "min": 0.00990612137269542,
+        "max": 0.125608470365411,
+        "count": 406
+      }
+    },
+    {
+      "mode": "maneuver",
+      "activity": "helm",
+      "frames": 481,
+      "simulatedSeconds": 7.9995999999997665,
+      "maxContactErrorM": 9.77187067923412e-7,
+      "updateP95Ms": 0.30000001192092896,
+      "updateMaxMs": 5.5,
+      "drawCalls": 10,
+      "triangles": 8654,
+      "motionChanged": true,
+      "soleY": {
+        "min": 0.009905828976350568,
+        "max": 0.1256168919179681,
+        "count": 406
+      }
+    },
+    {
+      "mode": "rough",
+      "activity": "idle",
+      "frames": 481,
+      "simulatedSeconds": 7.9996999999999545,
+      "maxContactErrorM": 0.00000104629317614783,
+      "updateP95Ms": 0.30000001192092896,
+      "updateMaxMs": 3.4000000059604645,
+      "drawCalls": 10,
+      "triangles": 8654,
+      "motionChanged": true,
+      "soleY": {
+        "min": 0.0019061834220305829,
+        "max": 0.11372882996349495,
+        "count": 406
+      }
+    },
+    {
+      "mode": "rough",
+      "activity": "walk",
+      "frames": 481,
+      "simulatedSeconds": 7.999700000000537,
+      "maxContactErrorM": 0.0000016377887052574993,
+      "updateP95Ms": 0.30000001192092896,
+      "updateMaxMs": 5.0999999940395355,
+      "drawCalls": 10,
+      "triangles": 8654,
+      "motionChanged": true,
+      "soleY": {
+        "min": 0.0019062882764036711,
+        "max": 0.11372876107743056,
+        "count": 406
+      }
+    }
+  ],
+  "errors": [],
+  "invalidPosePreservesRig": true,
+  "pauseStable": true,
+  "budget": [
+    {
+      "characterEnabled": false,
+      "updateP95Ms": 0.09999999403953552,
+      "renderSubmitP95Ms": 0.3999999910593033,
+      "drawCalls": 7,
+      "triangles": 1214
+    },
+    {
+      "characterEnabled": true,
+      "updateP95Ms": 0.3999999910593033,
+      "renderSubmitP95Ms": 0.5,
+      "drawCalls": 10,
+      "triangles": 8654
+    }
+  ],
+  "phone": {
+    "viewport": "390x844",
+    "errors": [],
+    "state": {
+      "contactErrorM": 2.7634459903978424e-7,
+      "errors": [
+        2.7634459903978424e-7,
+        9.185104317425496e-8,
+        2.0254711870926957e-7,
+        2.013453975542401e-7
+      ],
+      "updateMs": 0.09999999403953552,
+      "renderSubmitMs": 0.29999999701976776,
+      "drawCalls": 10,
+      "triangles": 8654,
+      "lean": [
+        -0.011500888459148885,
+        0.07519917638189381
+      ],
+      "activity": "helm",
+      "localPosition": [
+        0,
+        0.65,
+        0
+      ],
+      "feet": [
+        [
+          0.42,
+          0.11,
+          -0.13
+        ],
+        [
+          0.42,
+          0.11,
+          0.13
+        ]
+      ],
+      "time": 49.24149999999468,
+      "mode": "rough",
+      "paused": false,
+      "frames": 600
+    }
+  },
+  "video": "full-motion.webm",
+  "passed": true
+}

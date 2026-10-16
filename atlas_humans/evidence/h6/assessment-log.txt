@@ -1,0 +1,155 @@
+{
+  "clearanceStatus": "fail",
+  "contactSlicePass": true,
+  "poses": 61,
+  "worst": [
+    {
+      "name": "P02_grouped_detail_161_54",
+      "penetratingFrames": 61,
+      "crossingFrames": 61,
+      "maxPenetrationM": 0.06809507330143472,
+      "maxEdgeCrossings": 69,
+      "solidComplete": true
+    },
+    {
+      "name": "P02_flip_bolster_cushion001",
+      "penetratingFrames": 61,
+      "crossingFrames": 61,
+      "maxPenetrationM": 0.044292532485574326,
+      "maxEdgeCrossings": 67,
+      "solidComplete": true
+    },
+    {
+      "name": "P02_grouped_detail_161_50",
+      "penetratingFrames": 61,
+      "crossingFrames": 61,
+      "maxPenetrationM": 0.012419172181780125,
+      "maxEdgeCrossings": 407,
+      "solidComplete": true
+    },
+    {
+      "name": "P02_bolster_support001",
+      "penetratingFrames": 61,
+      "crossingFrames": 61,
+      "maxPenetrationM": 0.009816802832468337,
+      "maxEdgeCrossings": 54,
+      "solidComplete": true
+    },
+    {
+      "name": "EX_Seating__piping",
+      "penetratingFrames": 61,
+      "crossingFrames": 61,
+      "maxPenetrationM": 0.006998417489050535,
+      "maxEdgeCrossings": 47,
+      "solidComplete": true
+    },
+    {
+      "name": "P02_grouped_detail_161_55",
+      "penetratingFrames": 61,
+      "crossingFrames": 61,
+      "maxPenetrationM": 0.0033089119438522996,
+      "maxEdgeCrossings": 41,
+      "solidComplete": true
+    }
+  ],
+  "poseProbes": [
+    {
+      "variant": {
+        "seatShiftM": [
+          0,
+          0,
+          0
+        ],
+        "torsoPitch": 0.8
+      },
+      "maxJointErrorM": 0.0000014979744230011024,
+      "minSoleDeckGapM": 0.0020699765168469275,
+      "maxPenetrationM": 0.06796306901376506,
+      "status": "rejected"
+    },
+    {
+      "variant": {
+        "seatShiftM": [
+          0,
+          0.06,
+          0
+        ],
+        "torsoPitch": 0.8
+      },
+      "maxJointErrorM": 0.05081184199606891,
+      "minSoleDeckGapM": 0.04560507817319798,
+      "maxPenetrationM": 0.07519579984546887,
+      "status": "rejected"
+    },
+    {
+      "variant": {
+        "seatShiftM": [
+          0.04,
+          0.06,
+          0
+        ],
+        "torsoPitch": 0.8
+      },
+      "maxJointErrorM": 0.03351646905290014,
+      "minSoleDeckGapM": 0.03061190734475633,
+      "maxPenetrationM": 0.07168112327464604,
+      "status": "rejected"
+    },
+    {
+      "variant": {
+        "seatShiftM": [
+          0,
+          0.1,
+          0
+        ],
+        "torsoPitch": 0.8
+      },
+      "maxJointErrorM": 0.08665007388488459,
+      "minSoleDeckGapM": 0.07800641226504468,
+      "maxPenetrationM": 0.07853582605990217,
+      "status": "rejected"
+    },
+    {
+      "variant": {
+        "seatShiftM": [
+          0.04,
+          0.1,
+          0
+        ],
+        "torsoPitch": 0.8
+      },
+      "maxJointErrorM": 0.0700344942081096,
+      "minSoleDeckGapM": 0.06403587333175642,
+      "maxPenetrationM": 0.07878713722209241,
+      "status": "rejected"
+    },
+    {
+      "variant": {
+        "seatShiftM": [
+          0,
+          0.14,
+          0
+        ],
+        "torsoPitch": 0.8
+      },
+      "maxJointErrorM": 0.1228154565457156,
+      "minSoleDeckGapM": 0.11124035545979605,
+      "maxPenetrationM": 0.07722588401010722,
+      "status": "rejected"
+    },
+    {
+      "variant": {
+        "seatShiftM": [
+          0.04,
+          0.14,
+          0
+        ],
+        "torsoPitch": 0.8
+      },
+      "maxJointErrorM": 0.10683333119156617,
+      "minSoleDeckGapM": 0.09820579312323974,
+      "maxPenetrationM": 0.07979236109212495,
+      "status": "rejected"
+    }
+  ]
+}

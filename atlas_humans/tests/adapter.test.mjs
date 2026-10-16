@@ -1,0 +1,330 @@
+import { test } from "node:test";
+import assert from "node:assert/strict";
+import { Group } from "three";
+import { makeCaptain12Build } from "../src/captain12-adapter.mjs";
+const stamp = (boat, epoch, time) => {
+  boat.updateWorldMatrix(true, false);
+  return {
+    epoch,
+    time,
+    localToWorld: boat.matrixWorld.toArray(),
+    worldToLocal: boat.matrixWorld.clone().invert().toArray(),
+  };
+};
+const attachment = {
+  vesselId: "fixture",
+  revision: "v1",
+  seat: [0, 0.6, 0],
+  leftFoot: [0.3, 0, -0.1],
+  rightFoot: [0.3, 0, 0.1],
+  leftHand: [0.5, 1, -0.2],
+  rightHand: [0.5, 1, 0.2],
+};
+test("existing captain transform consumes vessel-local anchors without second insertion", () => {
+  const group = new Group(),
+    boat = new Group();
+  group.position.set(-1, 0.5, 0);
+  boat.add(group);
+  boat.rotation.set(0.2, 0.6, 0.1);
+  boat.position.set(100, 4, -20);
+  let pose;
+  const build = makeCaptain12Build({
+    rig: {
+      group,
+      update: (p) => {
+        pose = p;
+      },
+    },
+    sampleHost: () => ({
+      valid: true,
+      transform: stamp(boat, "test", 1),
+      attachment,
+      frame: { epoch: "test", time: 1, dt: 1 / 60 },
+    }),
+  });
+  const result = build();
+  assert.equal(result.group, group);
+  result.group.userData.animateCaptain({ boat }, {});
+  assert.ok(Math.abs(pose.seat[0] - 1) < 1e-10);
+  assert.ok(Math.abs(pose.seat[1] - 0.1) < 1e-10);
+  assert.throws(() => build());
+});
+test("unknown anchors stay visually hidden even when old host sets captain visibility", () => {
+  const group = new Group(),
+    visual = new Group();
+  group.add(visual);
+  const result = makeCaptain12Build({
+    rig: { group, update: () => assert.fail() },
+    sampleHost: () => ({ valid: false, reason: "No helm" }),
+  })();
+  result.group.userData.animateCaptain({}, {});
+  result.group.visible = true;
+  assert.equal(visual.visible, false);
+  assert.equal(group.userData.attachmentValid, false);
+});
+
+test("host epoch change resets balance before backwards simulation time", () => {
+  const group = new Group(),
+    boat = new Group();
+  boat.add(group);
+  let sample = {
+    valid: true,
+    attachment,
+    frame: { epoch: "one", time: 100, dt: 0.01 },
+  };
+  const build = makeCaptain12Build({
+    rig: { group, update: (p) => p },
+    sampleHost: () => ({
+      ...sample,
+      transform: stamp(boat, sample.frame.epoch, sample.frame.time),
+    }),
+  })();
+  build.group.userData.animateCaptain({ boat }, {});
+  sample = { ...sample, frame: { epoch: "two", time: 0, dt: 0 } };
+  assert.equal(build.group.userData.animateCaptain({ boat }, {}).time, 0);
+});
+
+test("bad frames hide the visual, do not update rig, and recover on a valid new frame", () => {
+  const group = new Group(),
+    visual = new Group(),
+    boat = new Group();
+  group.add(visual);
+  boat.add(group);
+  let calls = 0;
+  let sample = {
+    valid: true,
+    attachment,
+    frame: { epoch: "test", time: 1, dt: 0.01 },
+    transform: stamp(boat, "test", 1),
+  };
+  const factory = makeCaptain12Build({
+    rig: {
+      group,
+      update: () => {
+        calls++;
+      },
+    },
+    sampleHost: () => sample,
+  })();
+  factory.group.userData.animateCaptain({ boat }, {});
+  assert.equal(calls, 1);
+  const good = structuredClone(sample);
+  for (const mutate of [
+    (s) => delete s.transform,
+    (s) => (s.transform.time = 0),
+    (s) => (s.transform.localToWorld[0] = NaN),
+    (s) => (s.transform.worldToLocal[12] = 1),
+    (s) => (s.attachment.leftFoot[0] = Infinity),
+    (s) => (s.frame.dt = NaN),
+  ]) {
+    sample = structuredClone(good);
+    mutate(sample);
+    assert.doesNotThrow(() =>
+      factory.group.userData.animateCaptain({ boat }, {}),
+    );
+    assert.equal(visual.visible, false);
+    assert.equal(calls, 1);
+  }
+  sample = good;
+  factory.group.userData.animateCaptain({ boat }, {});
+  assert.equal(visual.visible, true);
+  assert.equal(calls, 2);
+});
+test("render pose mismatch and detached/scaled captain are not accepted as current contacts", () => {
+  const group = new Group(),
+    boat = new Group();
+  boat.add(group);
+  const sample = {
+    valid: true,
+    attachment,
+    frame: { epoch: "test", time: 1, dt: 0.01 },
+    transform: stamp(boat, "test", 1),
+  };
+  const factory = makeCaptain12Build({
+    rig: { group, update: () => assert.fail() },
+    sampleHost: () => sample,
+  })();
+  boat.position.x = 2;
+  assert.equal(
+    factory.group.userData.animateCaptain({ boat }, {}).reason,
+    "RENDER_TRANSFORM_MISMATCH",
+  );
+  boat.position.x = 0;
+  group.scale.x = 2;
+  assert.equal(
+    factory.group.userData.animateCaptain({ boat }, {}).valid,
+    false,
+  );
+});
+
+test("captain detached from its supplied vessel stays unsupported", () => {
+  const group = new Group(),
+    boat = new Group();
+  const factory = makeCaptain12Build({
+    rig: { group, update: () => assert.fail() },
+    sampleHost: () => ({
+      valid: true,
+      attachment,
+      frame: { epoch: "test", time: 1, dt: 0.01 },
+      transform: stamp(boat, "test", 1),
+    }),
+  })();
+  assert.equal(
+    factory.group.userData.animateCaptain({ boat }, {}).reason,
+    "CAPTAIN_DETACHED",
+  );
+});
+
+test("H3 throwing diagnostic sink is contained during init, invalid hide and exception catch", () => {
+  const group = new Group(),
+    visual = new Group(),
+    boat = new Group();
+  group.add(visual);
+  boat.add(group);
+  let sample = { valid: false, reason: "owner missing" },
+    calls = 0,
+    reports = 0,
+    factory;
+  const build = makeCaptain12Build({
+    rig: {
+      group,
+      update: () => {
+        calls++;
+      },
+    },
+    sampleHost: () => {
+      if (sample instanceof Error) throw sample;
+      return sample;
+    },
+    onUnsupported: () => {
+      reports++;
+      throw new Error("sink failed");
+    },
+  });
+  assert.doesNotThrow(() => (factory = build()));
+  assert.equal(visual.visible, false);
+  for (const bad of [
+    { valid: false, reason: "owner missing" },
+    new Error("owner threw"),
+    {
+      valid: true,
+      attachment,
+      frame: { epoch: "e", time: 1, dt: 0.01 },
+      transform: {},
+    },
+  ]) {
+    sample = bad;
+    let result;
+    assert.doesNotThrow(
+      () => (result = factory.group.userData.animateCaptain({ boat }, {})),
+    );
+    assert.equal(result.valid, false);
+    assert.equal(visual.visible, false);
+    assert.equal(calls, 0);
+  }
+  assert.equal(reports, 4);
+  sample = {
+    valid: true,
+    attachment,
+    frame: { epoch: "e", time: 1, dt: 0 },
+    transform: stamp(boat, "e", 1),
+  };
+  assert.doesNotThrow(() =>
+    factory.group.userData.animateCaptain({ boat }, {}),
+  );
+  assert.equal(calls, 1);
+  assert.equal(visual.visible, true);
+});
+
+test("H4 forwards complete reviewed rig pose and hides malformed orientations", () => {
+  const group = new Group(),
+    boat = new Group();
+  boat.add(group);
+  let received;
+  let sample = {
+    valid: true,
+    attachment,
+    frame: { epoch: "e", time: 1, dt: 0 },
+    transform: stamp(boat, "e", 1),
+    rigPose: {
+      torsoPitch: 0.8,
+      balanceGain: 0.15,
+      handOrientations: [
+        [0, 0, 0, 1],
+        [0, 0, 0, 1],
+      ],
+      footOrientations: [
+        [0, 0, 0, 1],
+        [0, 0, 0, 1],
+      ],
+    },
+  };
+  const f = makeCaptain12Build({
+    rig: { group, update: (p) => (received = p) },
+    sampleHost: () => sample,
+  })();
+  f.group.userData.animateCaptain({ boat }, {});
+  assert.equal(received.torsoPitch, 0.8);
+  assert.deepEqual(received.handOrientations, sample.rigPose.handOrientations);
+  sample.rigPose.handOrientations[0] = [0, 0, 0, 0];
+  received = null;
+  const result = f.group.userData.animateCaptain({ boat }, {});
+  assert.equal(result.valid, false);
+  assert.equal(received, null);
+});
+
+test("H5 forwards finger blend with separate truthful hand state, clearing it on loss", () => {
+  const group = new Group(),
+    boat = new Group();
+  boat.add(group);
+  let received = null;
+  const contact = {
+    state: "sliding",
+    contactValid: true,
+    materialLocked: false,
+    source: { triangle: 12, barycentric: [0.2, 0.3, 0.5] },
+  };
+  const sample = {
+    valid: true,
+    attachment,
+    frame: { epoch: "h5", time: 0, dt: 0 },
+    transform: stamp(boat, "h5", 0),
+    rigPose: {
+      torsoPitch: 0.8,
+      balanceGain: 0.15,
+      handOrientations: [
+        [0, 0, 0, 1],
+        [0, 0, 0, 1],
+      ],
+      footOrientations: [
+        [0, 0, 0, 1],
+        [0, 0, 0, 1],
+      ],
+      handGrip: [0.25, 0.75],
+      handContacts: [
+        contact,
+        { ...contact, state: "reaching", contactValid: false },
+      ],
+    },
+  };
+  const f = makeCaptain12Build({
+    rig: { group, update: (p) => (received = p) },
+    sampleHost: () => sample,
+  })();
+  f.group.userData.animateCaptain({ boat }, {});
+  assert.deepEqual(received.handGrip, [0.25, 0.75]);
+  assert.equal(group.userData.handContacts[1].contactValid, false);
+  assert.equal(group.userData.attachmentValid, true);
+  received = null;
+  sample.rigPose.handContacts[1].contactValid = true;
+  assert.equal(
+    f.group.userData.animateCaptain({ boat }, {}).reason,
+    "HAND_CONTACT_SEMANTICS_INVALID",
+  );
+  assert.equal(received, null);
+  assert.equal(group.userData.handContacts, null);
+  sample.valid = false;
+  f.group.userData.animateCaptain({ boat }, {});
+  assert.equal(group.userData.attachmentValid, false);
+  assert.equal(group.userData.handContacts, null);
+});

@@ -1,0 +1,126 @@
+{
+  "revision": "sealab12-core-integration/1.0.0",
+  "owner": "CORE",
+  "status": "CORE_APPROVED_RECEIVER_ACK_PENDING",
+  "baseline": {
+    "reviewSourceSHA": "5c62a713b014b97a47bb65b65ec05f382a23ac77",
+    "reviewRun": 38849136102,
+    "resultSHA": "a2d4eecc12e7b4db14c7f94a6f6fc5088a4061ff",
+    "publicSHA": "a2d4eecc12e7b4db14c7f94a6f6fc5088a4061ff",
+    "publicURL": "https://rawcdn.githack.com/owensto/helper/a2d4eecc12e7b4db14c7f94a6f6fc5088a4061ff/atlas_sealab_12/live/index.html",
+    "testedAssetsManifestGitBlob": "e5b675bb7b3b085162fa6293dc6097770a5a2572",
+    "testedAssetsManifestSHA256": "019d8d9efa042cdc35832215a31f39702863639c1d1b812353de37a787a5e9c3",
+    "hostFilesCanonicalSHA256": "2e9dec1629b89e1f799e5b9120e05954a80f78f71c5a04a30c2815c0f82be034"
+  },
+  "hostFiles": {
+    "app.js": "5161fac306457906f26c926da6269bd89075f5d27fe9c0d1aae62b8fe5b67460",
+    "runtime.js": "50a297fabc59ff592031fa916d3fc17511d55747fd11fcdfbd7119bc6148b7f4",
+    "physics.js": "41e226b4b984ff02a62b72e48015ddbf27ee4cf17020748d95e394ee585b8324",
+    "command-motion.js": "cb1652f8aa78afb4bb973ff027bd71de9b6bfa46139157f25c6fd780e807ae5b",
+    "world09.js": "f1df3de61c9a53e282a9f1a64d6b8787cc38beab7960de1c431ed63e1769c582",
+    "waves11.js": "dcaa9286597c5a99444781e2d8e9ae08112c3f874e2bcfd127a395a2574ae665",
+    "water12.js": "e1ed4c42eea2e2db907ac5642ef2a645b7d6351dd1fc842fd7cf3dd547494558",
+    "water09.js": "eb5054b2d24259ae865ceb90f1097c740e0adbf81a7c275716ad3c12f7f43db7",
+    "captain12.js": "2a692ebf3abac9987764766acc02aa7a941900a3b48e76b9e949b321e2a84540",
+    "operations10.js": "6df457c2ec638ea968ac30e7da2b3090b7260cdfda71b4214cf69c86ef027eb3",
+    "helm09.js": "3f2691cf3b8a71c6167c883c5cd233989f7bf40b2fbbe41633950cea3a2d3844",
+    "access11.js": "dbdaedee75b249fe1bbaabdbcd7655fdda9d292f5b98891d7a6c91a565f0ae19",
+    "experience12.js": "dc1d1bc917e84be8f069bae7db0414885d6bbbdccc2f32f595a446228475c456",
+    "geography.js": "71813eac5fbf486916c2e70a8edf44d026795ef774fa486c43a06ff10b7c2e0f",
+    "geo12.js": "727f0d9860505c7a5cab4cf368446eba901acc91144cf78df22ea3c06b538561",
+    "shore12.js": "11791e9e9ee9b8e3bd0c3e8815f1662bd0b8106b64a8ab909e03b7d2f5c711e7",
+    "dynamics10.js": "89a424a5300ef06542b64fb4afe81a3038ceb5181eb1c1965268095450b9ccf1",
+    "assets/ATLAS_Bay_Play.glb": "b1ef9c448309a9a5d85ec4f2efcf45d9406d999ab24d27bdd1534359a7278b82",
+    "assets/beaufort.json": "6cd8513f8888be9ddcaca141cf6c4d698dcbf035e6286c323d16ba3784aed077",
+    "assets/beaufort_features12.json": "eded52ddcff5b9f364fd047c7a68b885a36a1f1ac11e75f061f7646e76bf9374"
+  },
+  "units": {
+    "length": "metres",
+    "time": "seconds",
+    "angle": "radians",
+    "velocity": "metres/second",
+    "angularVelocity": "radians/second",
+    "quaternion": "unit XYZW",
+    "matrices": "column-major 4x4, column vectors"
+  },
+  "coordinates": {
+    "handedness": "right",
+    "local": {"forward": "+X", "up": "+Y", "starboard": "+Z"},
+    "world": {"east": "+X", "up": "+Y", "south": "+Z"},
+    "heading": "0=east; positive toward south; radians",
+    "renderEuler": {"order": "YXZ", "x": "state.roll", "y": "-state.heading", "z": "state.pitch"},
+    "matrixComposition": "T * Ry(-heading) * Rx(roll) * Rz(pitch); export actual render world matrix",
+    "quaternion": "XYZW from world matrix; no Euler reinterpretation; q and -q represent same orientation",
+    "depth": "bed is absolute world Y; surfaceY includes tide once; depth=surfaceY-bed; unknown bed/depth=null,known=false"
+  },
+  "authority": {
+    "physics": "CORE advances local state at 1/60 s in drive mode",
+    "clock": "CORE resettable per-client simulation seconds plus hook-observed reset epoch; derived tick is not a network clock",
+    "inspectTime": "inspect mode is not fixed-step, may advance seconds per frame",
+    "water": "host BayMotion.surface and Sea09World.sample at host current time; never a second wave solver",
+    "weather": "host SEA10 owns interpolation; target fingerprinted, current returned in samples",
+    "roomPhysicsOrigin": null,
+    "multiplayer": "client-owned cooperative pose exchange only; no remote physics/time, shared collision/damage, or crews",
+    "networkReader": "reader object only; never serialize or expose the local write capability",
+    "identity": "vesselId identifies design/controller; transport owns playerId and entity/boatId; CORE does not assign remote identity",
+    "remotePoseApplication": "not implemented here; MP owns interpolation; no remote write into local state",
+    "map": "opening/closing Map never calls pause; menu pause remains local only",
+    "worldRevision": "sl12-c1-sha256:<SHA256 sorted canonical descriptor world object>; changes with baseline, scene, model config, target weather, water/tide/clarity, rules or colliders; not with pose/time/fuel burned. Equal revision does not synchronize water phase."
+  },
+  "vessels": {
+    "atlas-bay-25-sealab12": {
+      "available": true,
+      "controller": "published CommandMotion",
+      "modelSHA256": "b1ef9c448309a9a5d85ec4f2efcf45d9406d999ab24d27bdd1534359a7278b82",
+      "pose": true,
+      "anchors": {
+        "captainRoot": "SEA12_CAPTAIN",
+        "captainRootLocal": [-1.6,1.06,0.18],
+        "steeringPivot": "PLAY_STEERING",
+        "throttlePivot": "PLAY_THROTTLE",
+        "seatContact": null,
+        "leftGrip": null,
+        "rightGrip": null,
+        "leftSole": null,
+        "rightSole": null,
+        "transitionOccupancy": null,
+        "note": "Root and pivot matrices are available. Pivots are not measured seat/grip/sole contacts."
+      },
+      "spawn": {
+        "availableScenes": ["basin"],
+        "profile": "seamanship, host amp current+target<=0.22, known static depth>=2.5m",
+        "slots": 8,
+        "slotRule": "x=-240+30*slot,z=-300,heading=0",
+        "envelope": {"longitudinalM": [-4.6,4.6], "transverseM": [-1.6,1.6], "broadphaseRadiusM": 5.4},
+        "callerMustSupplyOccupancy": true,
+        "beaufort": "UNAVAILABLE_NO_APPROVED_GEOGRAPHIC_SPAWNS"
+      },
+      "restore": "same-adapter local token, max16; stationary pose recovery only, paused engine-off, no time/fuel/damage rewind; arbitrary/serialized remote token rejected"
+    },
+    "atlas-d-original-r7": {
+      "available": false,
+      "reason": "YACHT_OWNER_ADAPTER_NOT_INTEGRATED",
+      "controller": "Yacht owner only; no Bay fallback",
+      "pose": false,
+      "spawn": null,
+      "restore": null,
+      "helmAnchors": null,
+      "transitionOccupancy": null,
+      "ownerProposal": 6208024942
+    }
+  },
+  "ownerDecisions": {
+    "coordinator6208021040": "ACCEPT ownership and acceptance separation",
+    "yacht6208024942": "ACCEPT SI,+X/+Y/+Z,column-major + inverse,XYZW,unavailable helm and transition; heading correction explicitly supplied",
+    "humans6208097580": "ACCEPT existing task exclusive ownership, host-only time and captain reuse; correct previous captain position; character/seat/animation networking remains disabled",
+    "multiplayer6208029226": "ACCEPT descriptor injection, immutable poses and local restore delegation; CORRECT no synchronized room physics origin; no remote physics; M2 stays with existing worker",
+    "multiplayer6208113641": "M1 diagnostic30-pass result is not exact ws certification; M2 active, not duplicated"
+  },
+  "ackRequired": {
+    "YACHT": ["descriptor revision + candidate commit", "heading/XYZW mapping cardinal and tilted poses", "per-vessel footprint and spawn contract", "helm and transition unavailable handling"],
+    "HUMANS": ["revision + candidate commit", "corrected captain root and actual pivot matrices", "no new captain instance or vessel clock", "null seat/grip/sole/transition handling"],
+    "MULTIPLAYER": ["revision + candidate commit", "client-only clock/epoch,worldRevision invalidation", "server identity separate from vessel type", "read-only snapshots and local-only restore", "pin/lock/audit gate still separate"]
+  },
+  "combinedAcceptance": false,
+  "candidateSourceCommit": "commit containing this descriptor; recorded separately in evidence to avoid self-referential SHA"
+}

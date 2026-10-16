@@ -1,0 +1,20 @@
+{
+  "schema": "atlas-human-clearance-candidate/1",
+  "revision": "bay12-h6-clearance-audit/1",
+  "status": "REJECTED_BODY_INTERSECTIONS",
+  "productionEnabled": false,
+  "fullBodyAccepted": false,
+  "sourceBaseline": "b84a980b0d86f247f216e1489d1dc4636875c884",
+  "profileSHA256": "2d8f1b640ac9ffad745e889984b264d55531b72d7f0496e611be4ca1ca824902",
+  "sourceSetSHA256": "2b5f5d7f2758afce4f6953090c63dd7c35903c93be4fdd0b7422b14e79f70a3a",
+  "preserveH5MaterialLocked": false,
+  "poseChangesApplied": false,
+  "scope": "All 4687 indexed skinned vertices and12042 body mesh edges at61 actual rendered poses. Diagnostic failure; not swept/full triangle-volume certification.",
+  "requiredOwnerInputs": [
+    "Current C2 seat/flip-bolster articulation, visibility and collision participation for every source in source-set.json",
+    "Owner-approved watertight collision solids or explicit sheet semantics for open meshes, especially PLAY_STEERING rim/spokes and EX_Seating fabric",
+    "Source-bound allowed contact/compliance volumes for pelvis, thighs, palms and fingers, including cushion penetration limits",
+    "Reviewed seat-foot support/occupancy configuration; six pelvis-offset alternatives lose reach/sole support",
+    "Current-frame vessel/activation/source-set/body-profile identities and a coupled runtime receiving boundary"
+  ]
+}

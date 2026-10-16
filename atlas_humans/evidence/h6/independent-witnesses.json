@@ -1,0 +1,248 @@
+[
+  {
+    "independentClosestM": 0.006957372882661968,
+    "name": "EX_Seating__piping",
+    "mesh": 0,
+    "index": 251,
+    "position": [
+      -1.7268892162673095,
+      1.3492023057879143,
+      0.28397098341481497
+    ],
+    "recordedPosition": [
+      -1.7268892162673095,
+      1.3492023057879143,
+      0.28397098341481497
+    ],
+    "reconstructionErrorM": 0,
+    "depthM": 0.0069573728826617465,
+    "weights": [
+      {
+        "bone": "Bip01_Pelvis",
+        "weight": 0.23685228824615479
+      },
+      {
+        "bone": "Bip01_Spine",
+        "weight": 0.7631477117538452
+      },
+      {
+        "bone": "Bip01_Pelvis",
+        "weight": 0
+      },
+      {
+        "bone": "Bip01_Pelvis",
+        "weight": 0
+      }
+    ],
+    "independentThreeRayCounts": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "independentClosestM": 0.011122678796711916,
+    "name": "P02_grouped_detail_161_50",
+    "mesh": 0,
+    "index": 177,
+    "position": [
+      -1.3953014225604299,
+      0.851377333124217,
+      0.2475975288780575
+    ],
+    "recordedPosition": [
+      -1.3953014225604299,
+      0.851377333124217,
+      0.2475975288780575
+    ],
+    "reconstructionErrorM": 0,
+    "depthM": 0.011122678796711916,
+    "weights": [
+      {
+        "bone": "Bip01_R_Thigh",
+        "weight": 0.5489999651908875
+      },
+      {
+        "bone": "Bip01_R_Calf",
+        "weight": 0.45100003480911255
+      },
+      {
+        "bone": "Bip01_Pelvis",
+        "weight": 0
+      },
+      {
+        "bone": "Bip01_Pelvis",
+        "weight": 0
+      }
+    ],
+    "independentThreeRayCounts": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "independentClosestM": 0.06796306901376506,
+    "name": "P02_grouped_detail_161_54",
+    "mesh": 0,
+    "index": 17,
+    "position": [
+      -1.677552809139184,
+      0.96973175249759,
+      0.09546306886475345
+    ],
+    "recordedPosition": [
+      -1.677552809139184,
+      0.96973175249759,
+      0.09546306886475345
+    ],
+    "reconstructionErrorM": 0,
+    "depthM": 0.06796306901376506,
+    "weights": [
+      {
+        "bone": "Bip01_L_Thigh",
+        "weight": 1
+      },
+      {
+        "bone": "Bip01_Pelvis",
+        "weight": 0
+      },
+      {
+        "bone": "Bip01_Pelvis",
+        "weight": 0
+      },
+      {
+        "bone": "Bip01_Pelvis",
+        "weight": 0
+      }
+    ],
+    "independentThreeRayCounts": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "independentClosestM": 0.0031060711076902336,
+    "name": "P02_grouped_detail_161_55",
+    "mesh": 0,
+    "index": 168,
+    "position": [
+      -1.632357987873961,
+      1.0443339809247807,
+      0.2073987497647153
+    ],
+    "recordedPosition": [
+      -1.632357987873961,
+      1.0443339809247807,
+      0.2073987497647153
+    ],
+    "reconstructionErrorM": 0,
+    "depthM": 0.0031060711076900116,
+    "weights": [
+      {
+        "bone": "Bip01_Pelvis",
+        "weight": 0.20000000298023224
+      },
+      {
+        "bone": "Bip01_R_Thigh",
+        "weight": 0.800000011920929
+      },
+      {
+        "bone": "Bip01_Pelvis",
+        "weight": 0
+      },
+      {
+        "bone": "Bip01_Pelvis",
+        "weight": 0
+      }
+    ],
+    "independentThreeRayCounts": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "independentClosestM": 0.00873652749934084,
+    "name": "P02_bolster_support001",
+    "mesh": 0,
+    "index": 2918,
+    "position": [
+      -1.425858050577933,
+      0.8772634985180866,
+      0.34260172916616094
+    ],
+    "recordedPosition": [
+      -1.425858050577933,
+      0.8772634985180866,
+      0.34260172916616094
+    ],
+    "reconstructionErrorM": 0,
+    "depthM": 0.008736527499340951,
+    "weights": [
+      {
+        "bone": "Bip01_R_Thigh",
+        "weight": 0.5
+      },
+      {
+        "bone": "Bip01_R_Calf",
+        "weight": 0.5
+      },
+      {
+        "bone": "Bip01_Pelvis",
+        "weight": 0
+      },
+      {
+        "bone": "Bip01_Pelvis",
+        "weight": 0
+      }
+    ],
+    "independentThreeRayCounts": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "independentClosestM": 0.0428135938061418,
+    "name": "P02_flip_bolster_cushion001",
+    "mesh": 0,
+    "index": 41,
+    "position": [
+      -1.4101864490142075,
+      0.9612245155114402,
+      0.07173172862161671
+    ],
+    "recordedPosition": [
+      -1.4101864490142075,
+      0.9612245155114402,
+      0.07173172862161671
+    ],
+    "reconstructionErrorM": 0,
+    "depthM": 0.0428135938061418,
+    "weights": [
+      {
+        "bone": "Bip01_L_Thigh",
+        "weight": 1
+      },
+      {
+        "bone": "Bip01_Pelvis",
+        "weight": 0
+      },
+      {
+        "bone": "Bip01_Pelvis",
+        "weight": 0
+      },
+      {
+        "bone": "Bip01_Pelvis",
+        "weight": 0
+      }
+    ],
+    "independentThreeRayCounts": [
+      1,
+      1,
+      1
+    ]
+  }
+]

@@ -1,0 +1,117 @@
+{
+  "scope": "normal RAF, exact source geometry, authored motion only",
+  "errors": [],
+  "scenarios": [
+    {
+      "name": "calm",
+      "frames": 835,
+      "seconds": 15.016,
+      "updateP95Ms": 0.4000000059604645,
+      "maxJointErrorM": 2.6663051557063217e-06,
+      "contact": {
+        "seat": {
+          "normalMinM": -0.0019339799902418076,
+          "normalMaxM": -0.0011483332135311386,
+          "edgeMarginMinM": 0.032387260353058056,
+          "sourceMissing": 0,
+          "sourceMinM": -0.001933979990241988,
+          "sourceMaxM": -0.001148333213531097
+        },
+        "leftHand": {
+          "normalMinM": 0.000999747795808914,
+          "normalMaxM": 0.001000422997057937,
+          "edgeMarginMinM": 0.011998550650044171,
+          "sourceMissing": 0,
+          "sourceMinM": 0.000999747795809025,
+          "sourceMaxM": 0.001000422997057826
+        },
+        "rightHand": {
+          "normalMinM": 0.000999920142122246,
+          "normalMaxM": 0.0010009487821536212,
+          "edgeMarginMinM": 0.011998351429201016,
+          "sourceMissing": 0,
+          "sourceMinM": 0.000999920142122336,
+          "sourceMaxM": 0.001000948782153642
+        },
+        "leftFoot": {
+          "normalMinM": 0.002068696822143834,
+          "normalMaxM": 0.0020737203366367196,
+          "edgeMarginMinM": 0.005957919725848249,
+          "sourceMissing": 0,
+          "sourceMinM": 0.0020686968221437646,
+          "sourceMaxM": 0.0058274779579494534
+        },
+        "rightFoot": {
+          "normalMinM": 0.0020693728040759862,
+          "normalMaxM": 0.002072822832522414,
+          "edgeMarginMinM": 0.005965781700553063,
+          "sourceMissing": 0,
+          "sourceMinM": 0.0020693728040759723,
+          "sourceMaxM": 0.005826618951016646
+        }
+      },
+      "violations": [],
+      "passed": true
+    },
+    {
+      "name": "rough-limited-wheel",
+      "frames": 826,
+      "seconds": 15.016,
+      "updateP95Ms": 0.4000000059604645,
+      "maxJointErrorM": 0.004318975732575847,
+      "contact": {
+        "seat": {
+          "normalMinM": -0.0019340725222121158,
+          "normalMaxM": -0.0011483815001167574,
+          "edgeMarginMinM": 0.03238742099485192,
+          "sourceMissing": 0,
+          "sourceMinM": -0.001934072522211984,
+          "sourceMaxM": -0.001148381500116806
+        },
+        "leftHand": {
+          "normalMinM": 0.0009997711646079208,
+          "normalMaxM": 0.0010003932192564897,
+          "edgeMarginMinM": 0.011998672130658406,
+          "sourceMissing": 0,
+          "sourceMinM": 0.0009997711646082957,
+          "sourceMaxM": 0.001000393219256844
+        },
+        "rightHand": {
+          "normalMinM": 0.0009999210247270132,
+          "normalMaxM": 0.0011670044353702112,
+          "edgeMarginMinM": 0.007765353828254487,
+          "sourceMissing": 0,
+          "sourceMinM": 0.0009999210247269782,
+          "sourceMaxM": 0.002479793116077593
+        },
+        "leftFoot": {
+          "normalMinM": 0.002068519753667619,
+          "normalMaxM": 0.0020731479657176695,
+          "edgeMarginMinM": 0.005957911069046307,
+          "sourceMissing": 0,
+          "sourceMinM": 0.0020685197536675845,
+          "sourceMaxM": 0.0058268615582417055
+        },
+        "rightFoot": {
+          "normalMinM": 0.0020693136830480237,
+          "normalMaxM": 0.0020727204298001127,
+          "edgeMarginMinM": 0.00596588492981287,
+          "sourceMissing": 0,
+          "sourceMinM": 0.0020693136830481004,
+          "sourceMaxM": 0.005826999887348888
+        }
+      },
+      "violations": [],
+      "passed": true
+    }
+  ],
+  "productionAccepted": false,
+  "passed": true,
+  "profileSHA256": "2d8f1b640ac9ffad745e889984b264d55531b72d7f0496e611be4ca1ca824902",
+  "fullSteeringNegative": {
+    "expectedRejected": true,
+    "maxJointErrorM": 0.25815823236208074,
+    "reason": "HAND_RELEASE_REGRIP_REQUIRED",
+    "evidence": "full-wheel.json"
+  }
+}

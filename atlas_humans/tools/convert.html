@@ -1,0 +1,111 @@
+<!doctype html>
+<script type="importmap">
+  {
+    "imports": {
+      "three": "../node_modules/three/build/three.module.js",
+      "three/addons/": "../node_modules/three/examples/jsm/"
+    }
+  }
+</script>
+<script type="module">
+  import * as T from "three";
+  import { FBXLoader } from "three/addons/loaders/FBXLoader.js";
+  import { TGALoader } from "three/addons/loaders/TGALoader.js";
+  import {
+    mergeVertices,
+    mergeGroups,
+  } from "three/addons/utils/BufferGeometryUtils.js";
+  import { GLTFExporter } from "three/addons/exporters/GLTFExporter.js";
+  const manager = new T.LoadingManager();
+  manager.addHandler(/\.tga$/i, new TGALoader(manager));
+  manager.setURLModifier((url) => {
+    const n = url.split(/[\\/]/).pop();
+    if (n.endsWith(".tga"))
+      return (
+        "../assets/rocketbox-source/" +
+        (n.includes("normal") || n.includes("specular")
+          ? n.replace(/normal|specular/, "color")
+          : n)
+      );
+    return url;
+  });
+  const model = await new FBXLoader(manager).loadAsync(
+    "../assets/rocketbox-source/Male_Adult_01.fbx",
+  );
+  const textures = {};
+  for (const part of ["body", "head", "opacity"]) {
+    const tex = await new TGALoader().loadAsync(
+      "../assets/rocketbox-source/m002_" + part + "_color.tga",
+    );
+    const canvas = document.createElement("canvas");
+    canvas.width = tex.image.width;
+    canvas.height = tex.image.height;
+    canvas
+      .getContext("2d")
+      .putImageData(
+        new ImageData(
+          new Uint8ClampedArray(tex.image.data),
+          tex.image.width,
+          tex.image.height,
+        ),
+        0,
+        0,
+      );
+    const map = new T.CanvasTexture(canvas);
+    map.flipY = true;
+    map.colorSpace = T.SRGBColorSpace;
+    if (part !== "opacity") map.userData.mimeType = "image/jpeg";
+    textures["m002_" + part] = map;
+  }
+  model.traverse((o) => {
+    if (o.isMesh)
+      for (const m of Array.isArray(o.material) ? o.material : [o.material])
+        m.map = textures[m.name];
+  });
+  window.model = model;
+  window.T = T;
+  window.info = [];
+  model.traverse((o) => {
+    if (o.isMesh)
+      info.push({
+        name: o.name,
+        vertices: o.geometry.attributes.position.count,
+        materials: (Array.isArray(o.material) ? o.material : [o.material]).map(
+          (m) => ({ name: m.name, map: m.map?.name }),
+        ),
+      });
+  });
+  window.ready = true;
+  window.convert = async () => {
+    const remove = [];
+    model.traverse((o) => {
+      if (o.isMesh && !o.name.includes("hipoly")) remove.push(o);
+    });
+    for (const o of remove) o.removeFromParent();
+    model.traverse((o) => {
+      if (o.isMesh) {
+        o.geometry = mergeGroups(mergeVertices(o.geometry));
+        const mats = (
+          Array.isArray(o.material) ? o.material : [o.material]
+        ).map(
+          (m) =>
+            new T.MeshStandardMaterial({
+              map: m.map,
+              color: 0xffffff,
+              roughness: 0.85,
+              metalness: 0,
+              side: T.DoubleSide,
+              transparent: false,
+              alphaTest: m.name.includes("opacity") ? 0.4 : 0,
+            }),
+        );
+        o.material = Array.isArray(o.material) ? mats : mats[0];
+      }
+    });
+    const data = await new GLTFExporter().parseAsync(model, {
+      binary: true,
+      maxTextureSize: 1024,
+    });
+    return Array.from(new Uint8Array(data));
+  };
+</script>

@@ -1,0 +1,4583 @@
+[
+  {
+    "name": "EX_Console__black",
+    "triangles": 2624,
+    "degenerateTriangles": 0,
+    "weldToleranceM": 1e-06,
+    "components": [
+      {
+        "id": 0,
+        "triangles": 972,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 1,
+        "triangles": 72,
+        "closed": false,
+        "boundaryEdges": 24,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 2,
+        "triangles": 608,
+        "closed": false,
+        "boundaryEdges": 16,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 3,
+        "triangles": 972,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      }
+    ],
+    "solidComplete": false
+  },
+  {
+    "name": "EX_Deck__darkdeck",
+    "triangles": 936,
+    "degenerateTriangles": 0,
+    "weldToleranceM": 1e-06,
+    "components": [
+      {
+        "id": 0,
+        "triangles": 96,
+        "closed": false,
+        "boundaryEdges": 96,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 1,
+        "triangles": 96,
+        "closed": false,
+        "boundaryEdges": 96,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 2,
+        "triangles": 188,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 3,
+        "triangles": 180,
+        "closed": false,
+        "boundaryEdges": 10,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 4,
+        "triangles": 188,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 5,
+        "triangles": 188,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      }
+    ],
+    "solidComplete": false
+  },
+  {
+    "name": "EX_Deck__fabric",
+    "triangles": 3888,
+    "degenerateTriangles": 0,
+    "weldToleranceM": 1e-06,
+    "components": [
+      {
+        "id": 0,
+        "triangles": 972,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 1,
+        "triangles": 972,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 2,
+        "triangles": 972,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 3,
+        "triangles": 972,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      }
+    ],
+    "solidComplete": true
+  },
+  {
+    "name": "EX_Deck__soft_deck_insert",
+    "triangles": 4028,
+    "degenerateTriangles": 0,
+    "weldToleranceM": 1e-06,
+    "components": [
+      {
+        "id": 0,
+        "triangles": 140,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 1,
+        "triangles": 972,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 2,
+        "triangles": 972,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 3,
+        "triangles": 972,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 4,
+        "triangles": 972,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      }
+    ],
+    "solidComplete": true
+  },
+  {
+    "name": "EX_Deck__upholstery_seam",
+    "triangles": 48,
+    "degenerateTriangles": 0,
+    "weldToleranceM": 1e-06,
+    "components": [
+      {
+        "id": 0,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 1,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 2,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 3,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      }
+    ],
+    "solidComplete": false
+  },
+  {
+    "name": "EX_Deck__white",
+    "triangles": 10142,
+    "degenerateTriangles": 0,
+    "weldToleranceM": 1e-06,
+    "components": [
+      {
+        "id": 0,
+        "triangles": 1076,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 1,
+        "triangles": 1106,
+        "closed": false,
+        "boundaryEdges": 70,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 2,
+        "triangles": 972,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 3,
+        "triangles": 336,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 4,
+        "triangles": 972,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 5,
+        "triangles": 972,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 6,
+        "triangles": 972,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 7,
+        "triangles": 972,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 8,
+        "triangles": 446,
+        "closed": false,
+        "boundaryEdges": 448,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 9,
+        "triangles": 892,
+        "closed": false,
+        "boundaryEdges": 450,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 10,
+        "triangles": 446,
+        "closed": false,
+        "boundaryEdges": 448,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 11,
+        "triangles": 892,
+        "closed": false,
+        "boundaryEdges": 450,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 12,
+        "triangles": 88,
+        "closed": false,
+        "boundaryEdges": 90,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      }
+    ],
+    "solidComplete": false
+  },
+  {
+    "name": "DT04_Hardware_Vessel__black",
+    "triangles": 984,
+    "degenerateTriangles": 0,
+    "weldToleranceM": 1e-06,
+    "components": [
+      {
+        "id": 0,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 1,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 2,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 3,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 4,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 5,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 6,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 7,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 8,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 9,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 10,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 11,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 12,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 13,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 14,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 15,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 16,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 17,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 18,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 19,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 20,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 21,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 22,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 23,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 24,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 25,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 26,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 27,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 28,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 29,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 30,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 31,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 32,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 33,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 34,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 35,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 36,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 37,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 38,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 39,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 40,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 41,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 42,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 43,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 44,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 45,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 46,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 47,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 48,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 49,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 50,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 51,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 52,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 53,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 54,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 55,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 56,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 57,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 58,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 59,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 60,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 61,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 62,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 63,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 64,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 65,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 66,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 67,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 68,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 69,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 70,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 71,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 72,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 73,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 74,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 75,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 76,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 77,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 78,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 79,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 80,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 81,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      }
+    ],
+    "solidComplete": false
+  },
+  {
+    "name": "DT04_Hardware_Vessel__chrome",
+    "triangles": 1600,
+    "degenerateTriangles": 0,
+    "weldToleranceM": 1e-06,
+    "components": [
+      {
+        "id": 0,
+        "triangles": 48,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 1,
+        "triangles": 48,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 2,
+        "triangles": 48,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 3,
+        "triangles": 48,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 4,
+        "triangles": 48,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 5,
+        "triangles": 48,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 6,
+        "triangles": 48,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 7,
+        "triangles": 48,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 8,
+        "triangles": 48,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 9,
+        "triangles": 48,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 10,
+        "triangles": 48,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 11,
+        "triangles": 48,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 12,
+        "triangles": 48,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 13,
+        "triangles": 48,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 14,
+        "triangles": 48,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 15,
+        "triangles": 48,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 16,
+        "triangles": 48,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 17,
+        "triangles": 48,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 18,
+        "triangles": 48,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 19,
+        "triangles": 48,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 20,
+        "triangles": 128,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 21,
+        "triangles": 48,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 22,
+        "triangles": 48,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 23,
+        "triangles": 48,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 24,
+        "triangles": 48,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 25,
+        "triangles": 128,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 26,
+        "triangles": 48,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 27,
+        "triangles": 48,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 28,
+        "triangles": 48,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 29,
+        "triangles": 48,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      }
+    ],
+    "solidComplete": true
+  },
+  {
+    "name": "DT04_Hardware_Vessel__silver",
+    "triangles": 2888,
+    "degenerateTriangles": 0,
+    "weldToleranceM": 1e-06,
+    "components": [
+      {
+        "id": 0,
+        "triangles": 576,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 1,
+        "triangles": 64,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 2,
+        "triangles": 64,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 3,
+        "triangles": 576,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 4,
+        "triangles": 64,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 5,
+        "triangles": 64,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 6,
+        "triangles": 576,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 7,
+        "triangles": 64,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 8,
+        "triangles": 64,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 9,
+        "triangles": 576,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 10,
+        "triangles": 64,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 11,
+        "triangles": 64,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 12,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 13,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 14,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 15,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 16,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 17,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      }
+    ],
+    "solidComplete": false
+  },
+  {
+    "name": "EX_Hardware__amber",
+    "triangles": 1944,
+    "degenerateTriangles": 0,
+    "weldToleranceM": 1e-06,
+    "components": [
+      {
+        "id": 0,
+        "triangles": 972,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 1,
+        "triangles": 972,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      }
+    ],
+    "solidComplete": true
+  },
+  {
+    "name": "EX_Hardware__black",
+    "triangles": 3624,
+    "degenerateTriangles": 0,
+    "weldToleranceM": 1e-06,
+    "components": [
+      {
+        "id": 0,
+        "triangles": 96,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 1,
+        "triangles": 96,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 2,
+        "triangles": 96,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 3,
+        "triangles": 96,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 4,
+        "triangles": 96,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 5,
+        "triangles": 96,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 6,
+        "triangles": 96,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 7,
+        "triangles": 96,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 8,
+        "triangles": 96,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 9,
+        "triangles": 96,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 10,
+        "triangles": 972,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 11,
+        "triangles": 20,
+        "closed": false,
+        "boundaryEdges": 20,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 12,
+        "triangles": 20,
+        "closed": false,
+        "boundaryEdges": 20,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 13,
+        "triangles": 1652,
+        "closed": false,
+        "boundaryEdges": 28,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      }
+    ],
+    "solidComplete": false
+  },
+  {
+    "name": "EX_Hardware__chrome",
+    "triangles": 32940,
+    "degenerateTriangles": 0,
+    "weldToleranceM": 1e-06,
+    "components": [
+      {
+        "id": 0,
+        "triangles": 1280,
+        "closed": false,
+        "boundaryEdges": 20,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 1,
+        "triangles": 972,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 2,
+        "triangles": 972,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 3,
+        "triangles": 1280,
+        "closed": false,
+        "boundaryEdges": 20,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 4,
+        "triangles": 972,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 5,
+        "triangles": 972,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 6,
+        "triangles": 1280,
+        "closed": false,
+        "boundaryEdges": 20,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 7,
+        "triangles": 972,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 8,
+        "triangles": 972,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 9,
+        "triangles": 1280,
+        "closed": false,
+        "boundaryEdges": 20,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 10,
+        "triangles": 972,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 11,
+        "triangles": 972,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 12,
+        "triangles": 972,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 13,
+        "triangles": 20,
+        "closed": false,
+        "boundaryEdges": 20,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 14,
+        "triangles": 1280,
+        "closed": false,
+        "boundaryEdges": 20,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 15,
+        "triangles": 972,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 16,
+        "triangles": 20,
+        "closed": false,
+        "boundaryEdges": 20,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 17,
+        "triangles": 1280,
+        "closed": false,
+        "boundaryEdges": 20,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 18,
+        "triangles": 972,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 19,
+        "triangles": 20,
+        "closed": false,
+        "boundaryEdges": 20,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 20,
+        "triangles": 1280,
+        "closed": false,
+        "boundaryEdges": 20,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 21,
+        "triangles": 96,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 22,
+        "triangles": 972,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 23,
+        "triangles": 20,
+        "closed": false,
+        "boundaryEdges": 20,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 24,
+        "triangles": 1280,
+        "closed": false,
+        "boundaryEdges": 20,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 25,
+        "triangles": 972,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 26,
+        "triangles": 20,
+        "closed": false,
+        "boundaryEdges": 20,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 27,
+        "triangles": 1280,
+        "closed": false,
+        "boundaryEdges": 20,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 28,
+        "triangles": 972,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 29,
+        "triangles": 20,
+        "closed": false,
+        "boundaryEdges": 20,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 30,
+        "triangles": 1280,
+        "closed": false,
+        "boundaryEdges": 20,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 31,
+        "triangles": 96,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 32,
+        "triangles": 972,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 33,
+        "triangles": 972,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 34,
+        "triangles": 972,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 35,
+        "triangles": 1652,
+        "closed": false,
+        "boundaryEdges": 28,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 36,
+        "triangles": 1652,
+        "closed": false,
+        "boundaryEdges": 28,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      }
+    ],
+    "solidComplete": false
+  },
+  {
+    "name": "EX_Hardware__darkdeck",
+    "triangles": 6116,
+    "degenerateTriangles": 0,
+    "weldToleranceM": 1e-06,
+    "components": [
+      {
+        "id": 0,
+        "triangles": 112,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 1,
+        "triangles": 972,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 2,
+        "triangles": 972,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 3,
+        "triangles": 972,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 4,
+        "triangles": 112,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 5,
+        "triangles": 972,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 6,
+        "triangles": 972,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 7,
+        "triangles": 972,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 8,
+        "triangles": 20,
+        "closed": false,
+        "boundaryEdges": 20,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 9,
+        "triangles": 20,
+        "closed": false,
+        "boundaryEdges": 20,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 10,
+        "triangles": 20,
+        "closed": false,
+        "boundaryEdges": 20,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      }
+    ],
+    "solidComplete": false
+  },
+  {
+    "name": "F05_Workspace_Vessel__black",
+    "triangles": 4424,
+    "degenerateTriangles": 0,
+    "weldToleranceM": 1e-06,
+    "components": [
+      {
+        "id": 0,
+        "triangles": 620,
+        "closed": false,
+        "boundaryEdges": 20,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 1,
+        "triangles": 620,
+        "closed": false,
+        "boundaryEdges": 20,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 2,
+        "triangles": 620,
+        "closed": false,
+        "boundaryEdges": 20,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 3,
+        "triangles": 620,
+        "closed": false,
+        "boundaryEdges": 20,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 4,
+        "triangles": 972,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 5,
+        "triangles": 972,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      }
+    ],
+    "solidComplete": false
+  },
+  {
+    "name": "F05_Workspace_Vessel__darkdeck",
+    "triangles": 1944,
+    "degenerateTriangles": 0,
+    "weldToleranceM": 1e-06,
+    "components": [
+      {
+        "id": 0,
+        "triangles": 972,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 1,
+        "triangles": 972,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      }
+    ],
+    "solidComplete": true
+  },
+  {
+    "name": "F05_Workspace_Vessel__white",
+    "triangles": 5862,
+    "degenerateTriangles": 0,
+    "weldToleranceM": 1e-06,
+    "components": [
+      {
+        "id": 0,
+        "triangles": 972,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 1,
+        "triangles": 972,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 2,
+        "triangles": 972,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 3,
+        "triangles": 972,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 4,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 5,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 6,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 7,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 8,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 9,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 10,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 11,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 12,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 13,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 14,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 15,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 16,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 17,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 18,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 19,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 20,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 21,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 22,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 23,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 24,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 25,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 26,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 27,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 28,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 29,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 30,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 31,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 32,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 33,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 34,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 35,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 36,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 37,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 38,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 39,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 40,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 41,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 42,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 43,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 44,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 45,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 46,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 47,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 48,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 49,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 50,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 51,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 52,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 53,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 54,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 55,
+        "triangles": 128,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 56,
+        "triangles": 40,
+        "closed": false,
+        "boundaryEdges": 6,
+        "nonmanifoldEdges": 2,
+        "windingErrors": 0
+      },
+      {
+        "id": 57,
+        "triangles": 128,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 58,
+        "triangles": 142,
+        "closed": false,
+        "boundaryEdges": 6,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 59,
+        "triangles": 128,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 60,
+        "triangles": 208,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 61,
+        "triangles": 128,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 62,
+        "triangles": 56,
+        "closed": false,
+        "boundaryEdges": 6,
+        "nonmanifoldEdges": 2,
+        "windingErrors": 0
+      },
+      {
+        "id": 63,
+        "triangles": 128,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 64,
+        "triangles": 148,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 65,
+        "triangles": 128,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      }
+    ],
+    "solidComplete": false
+  },
+  {
+    "name": "EX_Hull__black",
+    "triangles": 10704,
+    "degenerateTriangles": 0,
+    "weldToleranceM": 1e-06,
+    "components": [
+      {
+        "id": 0,
+        "triangles": 5352,
+        "closed": false,
+        "boundaryEdges": 24,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 1,
+        "triangles": 5352,
+        "closed": false,
+        "boundaryEdges": 24,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      }
+    ],
+    "solidComplete": false
+  },
+  {
+    "name": "EX_Hull__blue",
+    "triangles": 21411,
+    "degenerateTriangles": 0,
+    "weldToleranceM": 1e-06,
+    "components": [
+      {
+        "id": 0,
+        "triangles": 10704,
+        "closed": false,
+        "boundaryEdges": 494,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 1,
+        "triangles": 10704,
+        "closed": false,
+        "boundaryEdges": 494,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 2,
+        "triangles": 3,
+        "closed": false,
+        "boundaryEdges": 5,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      }
+    ],
+    "solidComplete": false
+  },
+  {
+    "name": "EX_Hull__chrome",
+    "triangles": 8920,
+    "degenerateTriangles": 0,
+    "weldToleranceM": 1e-06,
+    "components": [
+      {
+        "id": 0,
+        "triangles": 4460,
+        "closed": false,
+        "boundaryEdges": 20,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 1,
+        "triangles": 4460,
+        "closed": false,
+        "boundaryEdges": 20,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      }
+    ],
+    "solidComplete": false
+  },
+  {
+    "name": "EX_Hull__silver",
+    "triangles": 4128,
+    "degenerateTriangles": 0,
+    "weldToleranceM": 1e-06,
+    "components": [
+      {
+        "id": 0,
+        "triangles": 2064,
+        "closed": false,
+        "boundaryEdges": 16,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 1,
+        "triangles": 2064,
+        "closed": false,
+        "boundaryEdges": 16,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      }
+    ],
+    "solidComplete": false
+  },
+  {
+    "name": "EX_Hull__white",
+    "triangles": 19460,
+    "degenerateTriangles": 0,
+    "weldToleranceM": 1e-06,
+    "components": [
+      {
+        "id": 0,
+        "triangles": 13380,
+        "closed": false,
+        "boundaryEdges": 506,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 1,
+        "triangles": 1520,
+        "closed": false,
+        "boundaryEdges": 16,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 2,
+        "triangles": 1520,
+        "closed": false,
+        "boundaryEdges": 16,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 3,
+        "triangles": 1520,
+        "closed": false,
+        "boundaryEdges": 16,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 4,
+        "triangles": 1520,
+        "closed": false,
+        "boundaryEdges": 16,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      }
+    ],
+    "solidComplete": false
+  },
+  {
+    "name": "DT04_Seating_Vessel__piping",
+    "triangles": 13772,
+    "degenerateTriangles": 0,
+    "weldToleranceM": 1e-06,
+    "components": [
+      {
+        "id": 0,
+        "triangles": 1024,
+        "closed": false,
+        "boundaryEdges": 16,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 1,
+        "triangles": 144,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 2,
+        "triangles": 600,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 3,
+        "triangles": 1056,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 4,
+        "triangles": 780,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 5,
+        "triangles": 324,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 6,
+        "triangles": 144,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 7,
+        "triangles": 600,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 8,
+        "triangles": 1056,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 9,
+        "triangles": 780,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 10,
+        "triangles": 324,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 11,
+        "triangles": 1024,
+        "closed": false,
+        "boundaryEdges": 16,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 12,
+        "triangles": 144,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 13,
+        "triangles": 600,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 14,
+        "triangles": 1056,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 15,
+        "triangles": 780,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 16,
+        "triangles": 324,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 17,
+        "triangles": 144,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 18,
+        "triangles": 600,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 19,
+        "triangles": 1056,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 20,
+        "triangles": 780,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 21,
+        "triangles": 324,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 22,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 23,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 24,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 25,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 26,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 27,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 28,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 29,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 30,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      }
+    ],
+    "solidComplete": false
+  },
+  {
+    "name": "EX_Seating__chrome",
+    "triangles": 20,
+    "degenerateTriangles": 0,
+    "weldToleranceM": 1e-06,
+    "components": [
+      {
+        "id": 0,
+        "triangles": 20,
+        "closed": false,
+        "boundaryEdges": 20,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      }
+    ],
+    "solidComplete": false
+  },
+  {
+    "name": "EX_Seating__darkdeck",
+    "triangles": 5248,
+    "degenerateTriangles": 0,
+    "weldToleranceM": 1e-06,
+    "components": [
+      {
+        "id": 0,
+        "triangles": 1652,
+        "closed": false,
+        "boundaryEdges": 28,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 1,
+        "triangles": 1652,
+        "closed": false,
+        "boundaryEdges": 28,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 2,
+        "triangles": 972,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 3,
+        "triangles": 972,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      }
+    ],
+    "solidComplete": false
+  },
+  {
+    "name": "EX_Seating__fabric",
+    "triangles": 4258,
+    "degenerateTriangles": 0,
+    "weldToleranceM": 1e-06,
+    "components": [
+      {
+        "id": 0,
+        "triangles": 972,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 1,
+        "triangles": 972,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 2,
+        "triangles": 671,
+        "closed": false,
+        "boundaryEdges": 41,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 3,
+        "triangles": 671,
+        "closed": false,
+        "boundaryEdges": 41,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 4,
+        "triangles": 972,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      }
+    ],
+    "solidComplete": false
+  },
+  {
+    "name": "EX_Seating__piping",
+    "triangles": 1944,
+    "degenerateTriangles": 0,
+    "weldToleranceM": 1e-06,
+    "components": [
+      {
+        "id": 0,
+        "triangles": 972,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 1,
+        "triangles": 972,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      }
+    ],
+    "solidComplete": true
+  },
+  {
+    "name": "EX_Seating__upholstery_seam",
+    "triangles": 6728,
+    "degenerateTriangles": 0,
+    "weldToleranceM": 1e-06,
+    "components": [
+      {
+        "id": 0,
+        "triangles": 1652,
+        "closed": false,
+        "boundaryEdges": 28,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 1,
+        "triangles": 1652,
+        "closed": false,
+        "boundaryEdges": 28,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 2,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 3,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 4,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 5,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 6,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 7,
+        "triangles": 1652,
+        "closed": false,
+        "boundaryEdges": 28,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 8,
+        "triangles": 1652,
+        "closed": false,
+        "boundaryEdges": 28,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 9,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 10,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 11,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 12,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 13,
+        "triangles": 12,
+        "closed": false,
+        "boundaryEdges": 12,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      }
+    ],
+    "solidComplete": false
+  },
+  {
+    "name": "EX_Seating__white",
+    "triangles": 1944,
+    "degenerateTriangles": 0,
+    "weldToleranceM": 1e-06,
+    "components": [
+      {
+        "id": 0,
+        "triangles": 972,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 1,
+        "triangles": 972,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      }
+    ],
+    "solidComplete": true
+  },
+  {
+    "name": "DT04_Top_Vessel__silver",
+    "triangles": 15360,
+    "degenerateTriangles": 0,
+    "weldToleranceM": 1e-06,
+    "components": [
+      {
+        "id": 0,
+        "triangles": 1280,
+        "closed": false,
+        "boundaryEdges": 20,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 1,
+        "triangles": 1280,
+        "closed": false,
+        "boundaryEdges": 20,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 2,
+        "triangles": 1280,
+        "closed": false,
+        "boundaryEdges": 20,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 3,
+        "triangles": 1280,
+        "closed": false,
+        "boundaryEdges": 20,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 4,
+        "triangles": 1280,
+        "closed": false,
+        "boundaryEdges": 20,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 5,
+        "triangles": 1280,
+        "closed": false,
+        "boundaryEdges": 20,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 6,
+        "triangles": 1280,
+        "closed": false,
+        "boundaryEdges": 20,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 7,
+        "triangles": 1280,
+        "closed": false,
+        "boundaryEdges": 20,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 8,
+        "triangles": 1280,
+        "closed": false,
+        "boundaryEdges": 20,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 9,
+        "triangles": 1280,
+        "closed": false,
+        "boundaryEdges": 20,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 10,
+        "triangles": 1280,
+        "closed": false,
+        "boundaryEdges": 20,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 11,
+        "triangles": 1280,
+        "closed": false,
+        "boundaryEdges": 20,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      }
+    ],
+    "solidComplete": false
+  },
+  {
+    "name": "FIXED_TTop__chrome",
+    "triangles": 5200,
+    "degenerateTriangles": 0,
+    "weldToleranceM": 1e-06,
+    "components": [
+      {
+        "id": 0,
+        "triangles": 972,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 1,
+        "triangles": 32,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 2,
+        "triangles": 32,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 3,
+        "triangles": 972,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 4,
+        "triangles": 32,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 5,
+        "triangles": 32,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 6,
+        "triangles": 972,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 7,
+        "triangles": 32,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 8,
+        "triangles": 32,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 9,
+        "triangles": 972,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 10,
+        "triangles": 32,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 11,
+        "triangles": 32,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 12,
+        "triangles": 40,
+        "closed": false,
+        "boundaryEdges": 40,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 13,
+        "triangles": 224,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 14,
+        "triangles": 40,
+        "closed": false,
+        "boundaryEdges": 40,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 15,
+        "triangles": 224,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 16,
+        "triangles": 40,
+        "closed": false,
+        "boundaryEdges": 40,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 17,
+        "triangles": 224,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 18,
+        "triangles": 40,
+        "closed": false,
+        "boundaryEdges": 40,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 19,
+        "triangles": 224,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      }
+    ],
+    "solidComplete": false
+  },
+  {
+    "name": "FIXED_TTop__darkdeck",
+    "triangles": 10376,
+    "degenerateTriangles": 0,
+    "weldToleranceM": 1e-06,
+    "components": [
+      {
+        "id": 0,
+        "triangles": 1652,
+        "closed": false,
+        "boundaryEdges": 28,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 1,
+        "triangles": 1652,
+        "closed": false,
+        "boundaryEdges": 28,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 2,
+        "triangles": 1652,
+        "closed": false,
+        "boundaryEdges": 28,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 3,
+        "triangles": 1652,
+        "closed": false,
+        "boundaryEdges": 28,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 4,
+        "triangles": 1652,
+        "closed": false,
+        "boundaryEdges": 28,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 5,
+        "triangles": 1652,
+        "closed": false,
+        "boundaryEdges": 28,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 6,
+        "triangles": 96,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 7,
+        "triangles": 96,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 8,
+        "triangles": 96,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 9,
+        "triangles": 96,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 10,
+        "triangles": 20,
+        "closed": false,
+        "boundaryEdges": 20,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 11,
+        "triangles": 20,
+        "closed": false,
+        "boundaryEdges": 20,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 12,
+        "triangles": 20,
+        "closed": false,
+        "boundaryEdges": 20,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 13,
+        "triangles": 20,
+        "closed": false,
+        "boundaryEdges": 20,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      }
+    ],
+    "solidComplete": false
+  },
+  {
+    "name": "P02_grouped_detail_161_50",
+    "triangles": 6804,
+    "degenerateTriangles": 0,
+    "weldToleranceM": 1e-06,
+    "components": [
+      {
+        "id": 0,
+        "triangles": 972,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 1,
+        "triangles": 972,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 2,
+        "triangles": 972,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 3,
+        "triangles": 972,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 4,
+        "triangles": 972,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 5,
+        "triangles": 972,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 6,
+        "triangles": 972,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      }
+    ],
+    "solidComplete": true
+  },
+  {
+    "name": "P02_grouped_detail_161_54",
+    "triangles": 1944,
+    "degenerateTriangles": 0,
+    "weldToleranceM": 1e-06,
+    "components": [
+      {
+        "id": 0,
+        "triangles": 972,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 1,
+        "triangles": 972,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      }
+    ],
+    "solidComplete": true
+  },
+  {
+    "name": "P02_grouped_detail_161_55",
+    "triangles": 1944,
+    "degenerateTriangles": 0,
+    "weldToleranceM": 1e-06,
+    "components": [
+      {
+        "id": 0,
+        "triangles": 972,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 1,
+        "triangles": 972,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      }
+    ],
+    "solidComplete": true
+  },
+  {
+    "name": "P02_bolster_hinge",
+    "triangles": 48,
+    "degenerateTriangles": 0,
+    "weldToleranceM": 1e-06,
+    "components": [
+      {
+        "id": 0,
+        "triangles": 48,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      }
+    ],
+    "solidComplete": true
+  },
+  {
+    "name": "P02_bolster_support",
+    "triangles": 972,
+    "degenerateTriangles": 0,
+    "weldToleranceM": 1e-06,
+    "components": [
+      {
+        "id": 0,
+        "triangles": 972,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      }
+    ],
+    "solidComplete": true
+  },
+  {
+    "name": "P02_flip_bolster_cushion",
+    "triangles": 972,
+    "degenerateTriangles": 0,
+    "weldToleranceM": 1e-06,
+    "components": [
+      {
+        "id": 0,
+        "triangles": 972,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      }
+    ],
+    "solidComplete": true
+  },
+  {
+    "name": "P02_front_inset",
+    "triangles": 972,
+    "degenerateTriangles": 0,
+    "weldToleranceM": 1e-06,
+    "components": [
+      {
+        "id": 0,
+        "triangles": 972,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      }
+    ],
+    "solidComplete": true
+  },
+  {
+    "name": "P02_bolster_hinge001",
+    "triangles": 48,
+    "degenerateTriangles": 0,
+    "weldToleranceM": 1e-06,
+    "components": [
+      {
+        "id": 0,
+        "triangles": 48,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      }
+    ],
+    "solidComplete": true
+  },
+  {
+    "name": "P02_bolster_support001",
+    "triangles": 972,
+    "degenerateTriangles": 0,
+    "weldToleranceM": 1e-06,
+    "components": [
+      {
+        "id": 0,
+        "triangles": 972,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      }
+    ],
+    "solidComplete": true
+  },
+  {
+    "name": "P02_flip_bolster_cushion001",
+    "triangles": 972,
+    "degenerateTriangles": 0,
+    "weldToleranceM": 1e-06,
+    "components": [
+      {
+        "id": 0,
+        "triangles": 972,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      }
+    ],
+    "solidComplete": true
+  },
+  {
+    "name": "P02_front_inset001",
+    "triangles": 972,
+    "degenerateTriangles": 0,
+    "weldToleranceM": 1e-06,
+    "components": [
+      {
+        "id": 0,
+        "triangles": 972,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      }
+    ],
+    "solidComplete": true
+  },
+  {
+    "name": "P02_grouped_detail_170_50",
+    "triangles": 3888,
+    "degenerateTriangles": 0,
+    "weldToleranceM": 1e-06,
+    "components": [
+      {
+        "id": 0,
+        "triangles": 972,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 1,
+        "triangles": 972,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 2,
+        "triangles": 972,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 3,
+        "triangles": 972,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      }
+    ],
+    "solidComplete": true
+  },
+  {
+    "name": "P02_grouped_detail_170_52",
+    "triangles": 1944,
+    "degenerateTriangles": 0,
+    "weldToleranceM": 1e-06,
+    "components": [
+      {
+        "id": 0,
+        "triangles": 972,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 1,
+        "triangles": 972,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      }
+    ],
+    "solidComplete": true
+  },
+  {
+    "name": "P02_grouped_detail_170_53",
+    "triangles": 5832,
+    "degenerateTriangles": 0,
+    "weldToleranceM": 1e-06,
+    "components": [
+      {
+        "id": 0,
+        "triangles": 972,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 1,
+        "triangles": 972,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 2,
+        "triangles": 972,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 3,
+        "triangles": 972,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 4,
+        "triangles": 972,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 5,
+        "triangles": 972,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      }
+    ],
+    "solidComplete": true
+  },
+  {
+    "name": "P02_grouped_detail_170_56",
+    "triangles": 240,
+    "degenerateTriangles": 0,
+    "weldToleranceM": 1e-06,
+    "components": [
+      {
+        "id": 0,
+        "triangles": 80,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 1,
+        "triangles": 80,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 2,
+        "triangles": 80,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      }
+    ],
+    "solidComplete": true
+  },
+  {
+    "name": "P02_grouped_detail_170_57",
+    "triangles": 240,
+    "degenerateTriangles": 0,
+    "weldToleranceM": 1e-06,
+    "components": [
+      {
+        "id": 0,
+        "triangles": 80,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 1,
+        "triangles": 80,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 2,
+        "triangles": 80,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      }
+    ],
+    "solidComplete": true
+  },
+  {
+    "name": "P02_grouped_detail_190_50",
+    "triangles": 3888,
+    "degenerateTriangles": 0,
+    "weldToleranceM": 1e-06,
+    "components": [
+      {
+        "id": 0,
+        "triangles": 972,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 1,
+        "triangles": 972,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 2,
+        "triangles": 972,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 3,
+        "triangles": 972,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      }
+    ],
+    "solidComplete": true
+  },
+  {
+    "name": "P02_grouped_detail_190_52",
+    "triangles": 1944,
+    "degenerateTriangles": 0,
+    "weldToleranceM": 1e-06,
+    "components": [
+      {
+        "id": 0,
+        "triangles": 972,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 1,
+        "triangles": 972,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      }
+    ],
+    "solidComplete": true
+  },
+  {
+    "name": "P02_grouped_detail_190_53",
+    "triangles": 5832,
+    "degenerateTriangles": 0,
+    "weldToleranceM": 1e-06,
+    "components": [
+      {
+        "id": 0,
+        "triangles": 972,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 1,
+        "triangles": 972,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 2,
+        "triangles": 972,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 3,
+        "triangles": 972,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 4,
+        "triangles": 972,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 5,
+        "triangles": 972,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      }
+    ],
+    "solidComplete": true
+  },
+  {
+    "name": "P02_grouped_detail_190_56",
+    "triangles": 240,
+    "degenerateTriangles": 0,
+    "weldToleranceM": 1e-06,
+    "components": [
+      {
+        "id": 0,
+        "triangles": 80,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 1,
+        "triangles": 80,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 2,
+        "triangles": 80,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      }
+    ],
+    "solidComplete": true
+  },
+  {
+    "name": "P02_grouped_detail_190_57",
+    "triangles": 240,
+    "degenerateTriangles": 0,
+    "weldToleranceM": 1e-06,
+    "components": [
+      {
+        "id": 0,
+        "triangles": 80,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 1,
+        "triangles": 80,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 2,
+        "triangles": 80,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      }
+    ],
+    "solidComplete": true
+  },
+  {
+    "name": "P02_grouped_detail_210_50",
+    "triangles": 3888,
+    "degenerateTriangles": 0,
+    "weldToleranceM": 1e-06,
+    "components": [
+      {
+        "id": 0,
+        "triangles": 972,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 1,
+        "triangles": 972,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 2,
+        "triangles": 972,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 3,
+        "triangles": 972,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      }
+    ],
+    "solidComplete": true
+  },
+  {
+    "name": "P02_grouped_detail_210_52",
+    "triangles": 1944,
+    "degenerateTriangles": 0,
+    "weldToleranceM": 1e-06,
+    "components": [
+      {
+        "id": 0,
+        "triangles": 972,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 1,
+        "triangles": 972,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      }
+    ],
+    "solidComplete": true
+  },
+  {
+    "name": "P02_grouped_detail_210_53",
+    "triangles": 5832,
+    "degenerateTriangles": 0,
+    "weldToleranceM": 1e-06,
+    "components": [
+      {
+        "id": 0,
+        "triangles": 972,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 1,
+        "triangles": 972,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 2,
+        "triangles": 972,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 3,
+        "triangles": 972,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 4,
+        "triangles": 972,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 5,
+        "triangles": 972,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      }
+    ],
+    "solidComplete": true
+  },
+  {
+    "name": "P02_grouped_detail_210_56",
+    "triangles": 240,
+    "degenerateTriangles": 0,
+    "weldToleranceM": 1e-06,
+    "components": [
+      {
+        "id": 0,
+        "triangles": 80,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 1,
+        "triangles": 80,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 2,
+        "triangles": 80,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      }
+    ],
+    "solidComplete": true
+  },
+  {
+    "name": "P02_grouped_detail_210_57",
+    "triangles": 240,
+    "degenerateTriangles": 0,
+    "weldToleranceM": 1e-06,
+    "components": [
+      {
+        "id": 0,
+        "triangles": 80,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 1,
+        "triangles": 80,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 2,
+        "triangles": 80,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      }
+    ],
+    "solidComplete": true
+  },
+  {
+    "name": "PLAY_STEERING_EX_Console__black",
+    "triangles": 1304,
+    "degenerateTriangles": 0,
+    "weldToleranceM": 1e-06,
+    "components": [
+      {
+        "id": 0,
+        "triangles": 24,
+        "closed": false,
+        "boundaryEdges": 24,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 1,
+        "triangles": 1280,
+        "closed": false,
+        "boundaryEdges": 20,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      }
+    ],
+    "solidComplete": false
+  },
+  {
+    "name": "PLAY_STEERING_EX_Console__chrome",
+    "triangles": 156,
+    "degenerateTriangles": 0,
+    "weldToleranceM": 1e-06,
+    "components": [
+      {
+        "id": 0,
+        "triangles": 96,
+        "closed": true,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 1,
+        "triangles": 20,
+        "closed": false,
+        "boundaryEdges": 20,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 2,
+        "triangles": 20,
+        "closed": false,
+        "boundaryEdges": 20,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      },
+      {
+        "id": 3,
+        "triangles": 20,
+        "closed": false,
+        "boundaryEdges": 20,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      }
+    ],
+    "solidComplete": false
+  },
+  {
+    "name": "REPAIR06_Coaming_Closure_Port",
+    "triangles": 446,
+    "degenerateTriangles": 0,
+    "weldToleranceM": 1e-06,
+    "components": [
+      {
+        "id": 0,
+        "triangles": 446,
+        "closed": false,
+        "boundaryEdges": 448,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      }
+    ],
+    "solidComplete": false
+  },
+  {
+    "name": "REPAIR06_Coaming_Closure_Starboard",
+    "triangles": 446,
+    "degenerateTriangles": 0,
+    "weldToleranceM": 1e-06,
+    "components": [
+      {
+        "id": 0,
+        "triangles": 446,
+        "closed": false,
+        "boundaryEdges": 448,
+        "nonmanifoldEdges": 0,
+        "windingErrors": 0
+      }
+    ],
+    "solidComplete": false
+  }
+]

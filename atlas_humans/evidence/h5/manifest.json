@@ -1,0 +1,20 @@
+{
+  "baseline": "10ed9c2f8d0c392828f238e686bcc689517d34f9",
+  "files": {
+    "src/hand-controller.mjs": "0127ae03c524de171b453fdcc11bc0bb59b0205dab6003c0123018b23f8bf902",
+    "src/wheel-rim.mjs": "669d168737628467c7a2d7dfeb2634e53f98e56c46ca45896bd4bc9ba3786281",
+    "src/rig.mjs": "50a3203c95f4538b53acbf3f97748b28353dc2cf06deea59b7d0eaa135110365",
+    "src/pose-contract.mjs": "c690e6a7a830ea87f51a83153d40a0f873278c3f1987da928026bd329af21eb0",
+    "src/captain12-adapter.mjs": "df9c0298ee8f37faa02fa70d7f5c8676898389d227a11d14626b55a8af96a914",
+    "tools/h5-motion.mjs": "3cdbe5537d6d455f8797725f0e28c975d71821abf8a29196129719831c27dd4d",
+    "tools/h5-assess.py": "e06e9e334e0b2a8c4c8414a9dac5f0aa7da58c45c0ee9ea968b3070e8e9a9ccf",
+    "profiles/bay12-h5/candidate.json": "d85328166222239b67125b120527bb53eb2ad39f936d1624e882285a83ea649a",
+    "profiles/bay12-h5/rim-region.json": "a3f1242461f85897e4c3e729fd190ba714a0382d6246a01c8bc7693cae6b8f68",
+    "evidence/h5/motion.json": "3236cb7b63fc3ecb7a208e0c1ba8aaab222cbd1d4ce7de676b1ae60f5db950e5",
+    "evidence/h5/motion.webm": "166f79f5b15b7498a2c2259ef500e796880526047a68a0778a40726ade411a3c",
+    "evidence/h5/motion.png": "eee062d1901d3b5d925ff75981f4e28de23ed591d0049d36292ca6ba7278bc2d",
+    "evidence/h5/motion-sequence.png": "d1987459973fb5f9cd323a096e7352fabbc8b9ff9b9900faafecba1d84a9b590",
+    "evidence/h5/assessment.json": "3772f467d52c493e97c5aef43326eb95e0d4686e46e0b69dacf9cf9162352bc9",
+    "evidence/h5/unit.txt": "fcfcb4256a96880beac23742789711c47bf76beadeed271f0e987e275771521a"
+  }
+}

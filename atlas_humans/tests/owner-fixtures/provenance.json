@@ -1,0 +1,30 @@
+{
+  "repository": "owensto/helper",
+  "scope": "Immutable owner bytes for receiving tests only; not integration approval. Adapter extension changed for Node CommonJS loading.",
+  "files": [
+    {
+      "file": "core-c1.json",
+      "commit": "36903985f2182c902427fed77d4e28c61a7639ca",
+      "sourcePath": "atlas_sealab_12/integration/c1/descriptor.json",
+      "sha256": "851b0932720fcfbec786778cc71a9c76fecd4b1a96e322872b3574c6c7f41db3"
+    },
+    {
+      "file": "yacht-y1.json",
+      "commit": "09aeb97168c4cd627cb54766d8f9ef2e55b83183",
+      "sourcePath": "atlas_d_simulator_01/contact/anchors.json",
+      "sha256": "9d5c3039d4c7c25da3e7f04a9d2e2dd7be7873b5015b59974a680a42c4321a0f"
+    },
+    {
+      "file": "yacht-y1-adapter.cjs",
+      "commit": "09aeb97168c4cd627cb54766d8f9ef2e55b83183",
+      "sourcePath": "atlas_d_simulator_01/contact/attachment-adapter.js",
+      "sha256": "f013b47e6e7e262b50d54d85d84bd618a032e85b2cb1c0d8aa4fddf9675378cf"
+    },
+    {
+      "file": "core-c1-host-hooks.cjs",
+      "commit": "36903985f2182c902427fed77d4e28c61a7639ca",
+      "sourcePath": "atlas_sealab_12/integration/c1/host-hooks.js",
+      "sha256": "ad928f37dbfde0de2455a52744377a417a117c71c1a04f483283482d5728d9a1"
+    }
+  ]
+}

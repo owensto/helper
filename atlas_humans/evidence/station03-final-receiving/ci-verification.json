@@ -1,0 +1,1099 @@
+{
+  "revision": "humans-station03-final-ci-receiving/1",
+  "sourceSHA": "ba153f5d0b68391e4ac88e8a1e4a9d77fd60a069",
+  "artifactId": 12040578343,
+  "runId": 38887422403,
+  "status": "CI_BYTES_AND_EMPTY_GEOMETRY_VERIFIED",
+  "rows": [
+    {
+      "name": "desktop archive exact owner hash",
+      "pass": true,
+      "result": "043299ac0cb7fc052d0cb35c57c0a33fa2c2ca2a54a200f9fdc12baee2df1181"
+    },
+    {
+      "name": "complete artifact payload table",
+      "pass": true,
+      "result": 640
+    },
+    {
+      "name": "all candidate files and manifest bound",
+      "pass": true,
+      "result": {
+        "files": 110,
+        "candidateFingerprint": "153258ba44cde32dc57761820ceedaf5d495ef3bf8d0d279ad82343d0abf1347"
+      }
+    },
+    {
+      "name": "all seven owner sources equal immutable Git",
+      "pass": true,
+      "result": 7
+    },
+    {
+      "name": "design ledger geometry model exact pins",
+      "pass": true,
+      "result": {
+        "ledger": "b7062ef558793742a30b6c8b88bd8383a54c8de1c7d598559785203009f1e09c",
+        "geometry": "f9103d812b7dcf7ac4d1f9d04b66fcaddad0e649672e5ac16cfc0555db5b7694",
+        "design": "2e38a25a9cb15e3644eb6bf3295fc927340c19af139665b21f7f3df90ab89583"
+      }
+    },
+    {
+      "name": "replacement and survivor ledger against original GLB accessors",
+      "pass": true,
+      "result": {
+        "records": 171,
+        "distinctSurvivors": 130,
+        "survivingFaces": 356774,
+        "scope": "original bytes and surviving index selection; no current transforms or interior classification"
+      }
+    },
+    {
+      "name": "H6 topology and manifest buffers: seat-base",
+      "pass": true,
+      "result": {
+        "render": {
+          "name": "seat-base",
+          "triangles": 12,
+          "degenerateTriangles": 0,
+          "weldToleranceM": 0.000001,
+          "components": [
+            {
+              "id": 0,
+              "triangles": 12,
+              "closed": true,
+              "boundaryEdges": 0,
+              "nonmanifoldEdges": 0,
+              "windingErrors": 0
+            }
+          ],
+          "solidComplete": true
+        },
+        "collision": {
+          "name": "seat-base",
+          "triangles": 12,
+          "degenerateTriangles": 0,
+          "weldToleranceM": 0.000001,
+          "components": [
+            {
+              "id": 0,
+              "triangles": 12,
+              "closed": true,
+              "boundaryEdges": 0,
+              "nonmanifoldEdges": 0,
+              "windingErrors": 0
+            }
+          ],
+          "solidComplete": true
+        }
+      }
+    },
+    {
+      "name": "H6 topology and manifest buffers: seat-pedestal",
+      "pass": true,
+      "result": {
+        "render": {
+          "name": "seat-pedestal",
+          "triangles": 12,
+          "degenerateTriangles": 0,
+          "weldToleranceM": 0.000001,
+          "components": [
+            {
+              "id": 0,
+              "triangles": 12,
+              "closed": true,
+              "boundaryEdges": 0,
+              "nonmanifoldEdges": 0,
+              "windingErrors": 0
+            }
+          ],
+          "solidComplete": true
+        },
+        "collision": {
+          "name": "seat-pedestal",
+          "triangles": 12,
+          "degenerateTriangles": 0,
+          "weldToleranceM": 0.000001,
+          "components": [
+            {
+              "id": 0,
+              "triangles": 12,
+              "closed": true,
+              "boundaryEdges": 0,
+              "nonmanifoldEdges": 0,
+              "windingErrors": 0
+            }
+          ],
+          "solidComplete": true
+        }
+      }
+    },
+    {
+      "name": "H6 topology and manifest buffers: seat-pan",
+      "pass": true,
+      "result": {
+        "render": {
+          "name": "seat-pan",
+          "triangles": 12,
+          "degenerateTriangles": 0,
+          "weldToleranceM": 0.000001,
+          "components": [
+            {
+              "id": 0,
+              "triangles": 12,
+              "closed": true,
+              "boundaryEdges": 0,
+              "nonmanifoldEdges": 0,
+              "windingErrors": 0
+            }
+          ],
+          "solidComplete": true
+        },
+        "collision": {
+          "name": "seat-pan",
+          "triangles": 12,
+          "degenerateTriangles": 0,
+          "weldToleranceM": 0.000001,
+          "components": [
+            {
+              "id": 0,
+              "triangles": 12,
+              "closed": true,
+              "boundaryEdges": 0,
+              "nonmanifoldEdges": 0,
+              "windingErrors": 0
+            }
+          ],
+          "solidComplete": true
+        }
+      }
+    },
+    {
+      "name": "H6 topology and manifest buffers: seat-cushion",
+      "pass": true,
+      "result": {
+        "render": {
+          "name": "seat-cushion",
+          "triangles": 192,
+          "degenerateTriangles": 0,
+          "weldToleranceM": 0.000001,
+          "components": [
+            {
+              "id": 0,
+              "triangles": 192,
+              "closed": true,
+              "boundaryEdges": 0,
+              "nonmanifoldEdges": 0,
+              "windingErrors": 0
+            }
+          ],
+          "solidComplete": true
+        },
+        "collision": {
+          "name": "seat-cushion",
+          "triangles": 12,
+          "degenerateTriangles": 0,
+          "weldToleranceM": 0.000001,
+          "components": [
+            {
+              "id": 0,
+              "triangles": 12,
+              "closed": true,
+              "boundaryEdges": 0,
+              "nonmanifoldEdges": 0,
+              "windingErrors": 0
+            }
+          ],
+          "solidComplete": true
+        }
+      }
+    },
+    {
+      "name": "H6 topology and manifest buffers: back-shell",
+      "pass": true,
+      "result": {
+        "render": {
+          "name": "back-shell",
+          "triangles": 12,
+          "degenerateTriangles": 0,
+          "weldToleranceM": 0.000001,
+          "components": [
+            {
+              "id": 0,
+              "triangles": 12,
+              "closed": true,
+              "boundaryEdges": 0,
+              "nonmanifoldEdges": 0,
+              "windingErrors": 0
+            }
+          ],
+          "solidComplete": true
+        },
+        "collision": {
+          "name": "back-shell",
+          "triangles": 12,
+          "degenerateTriangles": 0,
+          "weldToleranceM": 0.000001,
+          "components": [
+            {
+              "id": 0,
+              "triangles": 12,
+              "closed": true,
+              "boundaryEdges": 0,
+              "nonmanifoldEdges": 0,
+              "windingErrors": 0
+            }
+          ],
+          "solidComplete": true
+        }
+      }
+    },
+    {
+      "name": "H6 topology and manifest buffers: back-pad",
+      "pass": true,
+      "result": {
+        "render": {
+          "name": "back-pad",
+          "triangles": 192,
+          "degenerateTriangles": 0,
+          "weldToleranceM": 0.000001,
+          "components": [
+            {
+              "id": 0,
+              "triangles": 192,
+              "closed": true,
+              "boundaryEdges": 0,
+              "nonmanifoldEdges": 0,
+              "windingErrors": 0
+            }
+          ],
+          "solidComplete": true
+        },
+        "collision": {
+          "name": "back-pad",
+          "triangles": 12,
+          "degenerateTriangles": 0,
+          "weldToleranceM": 0.000001,
+          "components": [
+            {
+              "id": 0,
+              "triangles": 12,
+              "closed": true,
+              "boundaryEdges": 0,
+              "nonmanifoldEdges": 0,
+              "windingErrors": 0
+            }
+          ],
+          "solidComplete": true
+        }
+      }
+    },
+    {
+      "name": "H6 topology and manifest buffers: rail-left",
+      "pass": true,
+      "result": {
+        "render": {
+          "name": "rail-left",
+          "triangles": 12,
+          "degenerateTriangles": 0,
+          "weldToleranceM": 0.000001,
+          "components": [
+            {
+              "id": 0,
+              "triangles": 12,
+              "closed": true,
+              "boundaryEdges": 0,
+              "nonmanifoldEdges": 0,
+              "windingErrors": 0
+            }
+          ],
+          "solidComplete": true
+        },
+        "collision": {
+          "name": "rail-left",
+          "triangles": 12,
+          "degenerateTriangles": 0,
+          "weldToleranceM": 0.000001,
+          "components": [
+            {
+              "id": 0,
+              "triangles": 12,
+              "closed": true,
+              "boundaryEdges": 0,
+              "nonmanifoldEdges": 0,
+              "windingErrors": 0
+            }
+          ],
+          "solidComplete": true
+        }
+      }
+    },
+    {
+      "name": "H6 topology and manifest buffers: rail-right",
+      "pass": true,
+      "result": {
+        "render": {
+          "name": "rail-right",
+          "triangles": 12,
+          "degenerateTriangles": 0,
+          "weldToleranceM": 0.000001,
+          "components": [
+            {
+              "id": 0,
+              "triangles": 12,
+              "closed": true,
+              "boundaryEdges": 0,
+              "nonmanifoldEdges": 0,
+              "windingErrors": 0
+            }
+          ],
+          "solidComplete": true
+        },
+        "collision": {
+          "name": "rail-right",
+          "triangles": 12,
+          "degenerateTriangles": 0,
+          "weldToleranceM": 0.000001,
+          "components": [
+            {
+              "id": 0,
+              "triangles": 12,
+              "closed": true,
+              "boundaryEdges": 0,
+              "nonmanifoldEdges": 0,
+              "windingErrors": 0
+            }
+          ],
+          "solidComplete": true
+        }
+      }
+    },
+    {
+      "name": "H6 topology and manifest buffers: foot-post-left",
+      "pass": true,
+      "result": {
+        "render": {
+          "name": "foot-post-left",
+          "triangles": 12,
+          "degenerateTriangles": 0,
+          "weldToleranceM": 0.000001,
+          "components": [
+            {
+              "id": 0,
+              "triangles": 12,
+              "closed": true,
+              "boundaryEdges": 0,
+              "nonmanifoldEdges": 0,
+              "windingErrors": 0
+            }
+          ],
+          "solidComplete": true
+        },
+        "collision": {
+          "name": "foot-post-left",
+          "triangles": 12,
+          "degenerateTriangles": 0,
+          "weldToleranceM": 0.000001,
+          "components": [
+            {
+              "id": 0,
+              "triangles": 12,
+              "closed": true,
+              "boundaryEdges": 0,
+              "nonmanifoldEdges": 0,
+              "windingErrors": 0
+            }
+          ],
+          "solidComplete": true
+        }
+      }
+    },
+    {
+      "name": "H6 topology and manifest buffers: foot-post-right",
+      "pass": true,
+      "result": {
+        "render": {
+          "name": "foot-post-right",
+          "triangles": 12,
+          "degenerateTriangles": 0,
+          "weldToleranceM": 0.000001,
+          "components": [
+            {
+              "id": 0,
+              "triangles": 12,
+              "closed": true,
+              "boundaryEdges": 0,
+              "nonmanifoldEdges": 0,
+              "windingErrors": 0
+            }
+          ],
+          "solidComplete": true
+        },
+        "collision": {
+          "name": "foot-post-right",
+          "triangles": 12,
+          "degenerateTriangles": 0,
+          "weldToleranceM": 0.000001,
+          "components": [
+            {
+              "id": 0,
+              "triangles": 12,
+              "closed": true,
+              "boundaryEdges": 0,
+              "nonmanifoldEdges": 0,
+              "windingErrors": 0
+            }
+          ],
+          "solidComplete": true
+        }
+      }
+    },
+    {
+      "name": "H6 topology and manifest buffers: foot-axle",
+      "pass": true,
+      "result": {
+        "render": {
+          "name": "foot-axle",
+          "triangles": 96,
+          "degenerateTriangles": 0,
+          "weldToleranceM": 0.000001,
+          "components": [
+            {
+              "id": 0,
+              "triangles": 96,
+              "closed": true,
+              "boundaryEdges": 0,
+              "nonmanifoldEdges": 0,
+              "windingErrors": 0
+            }
+          ],
+          "solidComplete": true
+        },
+        "collision": {
+          "name": "foot-axle",
+          "triangles": 96,
+          "degenerateTriangles": 0,
+          "weldToleranceM": 0.000001,
+          "components": [
+            {
+              "id": 0,
+              "triangles": 96,
+              "closed": true,
+              "boundaryEdges": 0,
+              "nonmanifoldEdges": 0,
+              "windingErrors": 0
+            }
+          ],
+          "solidComplete": true
+        }
+      }
+    },
+    {
+      "name": "H6 topology and manifest buffers: foot-left",
+      "pass": true,
+      "result": {
+        "render": {
+          "name": "foot-left",
+          "triangles": 192,
+          "degenerateTriangles": 0,
+          "weldToleranceM": 0.000001,
+          "components": [
+            {
+              "id": 0,
+              "triangles": 192,
+              "closed": true,
+              "boundaryEdges": 0,
+              "nonmanifoldEdges": 0,
+              "windingErrors": 0
+            }
+          ],
+          "solidComplete": true
+        },
+        "collision": {
+          "name": "foot-left",
+          "triangles": 12,
+          "degenerateTriangles": 0,
+          "weldToleranceM": 0.000001,
+          "components": [
+            {
+              "id": 0,
+              "triangles": 12,
+              "closed": true,
+              "boundaryEdges": 0,
+              "nonmanifoldEdges": 0,
+              "windingErrors": 0
+            }
+          ],
+          "solidComplete": true
+        }
+      }
+    },
+    {
+      "name": "H6 topology and manifest buffers: foot-right",
+      "pass": true,
+      "result": {
+        "render": {
+          "name": "foot-right",
+          "triangles": 192,
+          "degenerateTriangles": 0,
+          "weldToleranceM": 0.000001,
+          "components": [
+            {
+              "id": 0,
+              "triangles": 192,
+              "closed": true,
+              "boundaryEdges": 0,
+              "nonmanifoldEdges": 0,
+              "windingErrors": 0
+            }
+          ],
+          "solidComplete": true
+        },
+        "collision": {
+          "name": "foot-right",
+          "triangles": 12,
+          "degenerateTriangles": 0,
+          "weldToleranceM": 0.000001,
+          "components": [
+            {
+              "id": 0,
+              "triangles": 12,
+              "closed": true,
+              "boundaryEdges": 0,
+              "nonmanifoldEdges": 0,
+              "windingErrors": 0
+            }
+          ],
+          "solidComplete": true
+        }
+      }
+    },
+    {
+      "name": "H6 topology and manifest buffers: column-mount",
+      "pass": true,
+      "result": {
+        "render": {
+          "name": "column-mount",
+          "triangles": 12,
+          "degenerateTriangles": 0,
+          "weldToleranceM": 0.000001,
+          "components": [
+            {
+              "id": 0,
+              "triangles": 12,
+              "closed": true,
+              "boundaryEdges": 0,
+              "nonmanifoldEdges": 0,
+              "windingErrors": 0
+            }
+          ],
+          "solidComplete": true
+        },
+        "collision": {
+          "name": "column-mount",
+          "triangles": 12,
+          "degenerateTriangles": 0,
+          "weldToleranceM": 0.000001,
+          "components": [
+            {
+              "id": 0,
+              "triangles": 12,
+              "closed": true,
+              "boundaryEdges": 0,
+              "nonmanifoldEdges": 0,
+              "windingErrors": 0
+            }
+          ],
+          "solidComplete": true
+        }
+      }
+    },
+    {
+      "name": "H6 topology and manifest buffers: column-extension",
+      "pass": true,
+      "result": {
+        "render": {
+          "name": "column-extension",
+          "triangles": 64,
+          "degenerateTriangles": 0,
+          "weldToleranceM": 0.000001,
+          "components": [
+            {
+              "id": 0,
+              "triangles": 64,
+              "closed": true,
+              "boundaryEdges": 0,
+              "nonmanifoldEdges": 0,
+              "windingErrors": 0
+            }
+          ],
+          "solidComplete": true
+        },
+        "collision": {
+          "name": "column-extension",
+          "triangles": 64,
+          "degenerateTriangles": 0,
+          "weldToleranceM": 0.000001,
+          "components": [
+            {
+              "id": 0,
+              "triangles": 64,
+              "closed": true,
+              "boundaryEdges": 0,
+              "nonmanifoldEdges": 0,
+              "windingErrors": 0
+            }
+          ],
+          "solidComplete": true
+        }
+      }
+    },
+    {
+      "name": "H6 topology and manifest buffers: wheel-rim",
+      "pass": true,
+      "result": {
+        "render": {
+          "name": "wheel-rim",
+          "triangles": 2048,
+          "degenerateTriangles": 0,
+          "weldToleranceM": 0.000001,
+          "components": [
+            {
+              "id": 0,
+              "triangles": 2048,
+              "closed": true,
+              "boundaryEdges": 0,
+              "nonmanifoldEdges": 0,
+              "windingErrors": 0
+            }
+          ],
+          "solidComplete": true
+        },
+        "collision": {
+          "name": "wheel-rim",
+          "triangles": 2048,
+          "degenerateTriangles": 0,
+          "weldToleranceM": 0.000001,
+          "components": [
+            {
+              "id": 0,
+              "triangles": 2048,
+              "closed": true,
+              "boundaryEdges": 0,
+              "nonmanifoldEdges": 0,
+              "windingErrors": 0
+            }
+          ],
+          "solidComplete": true
+        }
+      }
+    },
+    {
+      "name": "H6 topology and manifest buffers: wheel-hub",
+      "pass": true,
+      "result": {
+        "render": {
+          "name": "wheel-hub",
+          "triangles": 96,
+          "degenerateTriangles": 0,
+          "weldToleranceM": 0.000001,
+          "components": [
+            {
+              "id": 0,
+              "triangles": 96,
+              "closed": true,
+              "boundaryEdges": 0,
+              "nonmanifoldEdges": 0,
+              "windingErrors": 0
+            }
+          ],
+          "solidComplete": true
+        },
+        "collision": {
+          "name": "wheel-hub",
+          "triangles": 96,
+          "degenerateTriangles": 0,
+          "weldToleranceM": 0.000001,
+          "components": [
+            {
+              "id": 0,
+              "triangles": 96,
+              "closed": true,
+              "boundaryEdges": 0,
+              "nonmanifoldEdges": 0,
+              "windingErrors": 0
+            }
+          ],
+          "solidComplete": true
+        }
+      }
+    },
+    {
+      "name": "H6 topology and manifest buffers: spoke-a",
+      "pass": true,
+      "result": {
+        "render": {
+          "name": "spoke-a",
+          "triangles": 64,
+          "degenerateTriangles": 0,
+          "weldToleranceM": 0.000001,
+          "components": [
+            {
+              "id": 0,
+              "triangles": 64,
+              "closed": true,
+              "boundaryEdges": 0,
+              "nonmanifoldEdges": 0,
+              "windingErrors": 0
+            }
+          ],
+          "solidComplete": true
+        },
+        "collision": {
+          "name": "spoke-a",
+          "triangles": 64,
+          "degenerateTriangles": 0,
+          "weldToleranceM": 0.000001,
+          "components": [
+            {
+              "id": 0,
+              "triangles": 64,
+              "closed": true,
+              "boundaryEdges": 0,
+              "nonmanifoldEdges": 0,
+              "windingErrors": 0
+            }
+          ],
+          "solidComplete": true
+        }
+      }
+    },
+    {
+      "name": "H6 topology and manifest buffers: spoke-b",
+      "pass": true,
+      "result": {
+        "render": {
+          "name": "spoke-b",
+          "triangles": 64,
+          "degenerateTriangles": 0,
+          "weldToleranceM": 0.000001,
+          "components": [
+            {
+              "id": 0,
+              "triangles": 64,
+              "closed": true,
+              "boundaryEdges": 0,
+              "nonmanifoldEdges": 0,
+              "windingErrors": 0
+            }
+          ],
+          "solidComplete": true
+        },
+        "collision": {
+          "name": "spoke-b",
+          "triangles": 64,
+          "degenerateTriangles": 0,
+          "weldToleranceM": 0.000001,
+          "components": [
+            {
+              "id": 0,
+              "triangles": 64,
+              "closed": true,
+              "boundaryEdges": 0,
+              "nonmanifoldEdges": 0,
+              "windingErrors": 0
+            }
+          ],
+          "solidComplete": true
+        }
+      }
+    },
+    {
+      "name": "H6 topology and manifest buffers: spoke-c",
+      "pass": true,
+      "result": {
+        "render": {
+          "name": "spoke-c",
+          "triangles": 64,
+          "degenerateTriangles": 0,
+          "weldToleranceM": 0.000001,
+          "components": [
+            {
+              "id": 0,
+              "triangles": 64,
+              "closed": true,
+              "boundaryEdges": 0,
+              "nonmanifoldEdges": 0,
+              "windingErrors": 0
+            }
+          ],
+          "solidComplete": true
+        },
+        "collision": {
+          "name": "spoke-c",
+          "triangles": 64,
+          "degenerateTriangles": 0,
+          "weldToleranceM": 0.000001,
+          "components": [
+            {
+              "id": 0,
+              "triangles": 64,
+              "closed": true,
+              "boundaryEdges": 0,
+              "nonmanifoldEdges": 0,
+              "windingErrors": 0
+            }
+          ],
+          "solidComplete": true
+        }
+      }
+    },
+    {
+      "name": "H6 topology and manifest buffers: throttle-base",
+      "pass": true,
+      "result": {
+        "render": {
+          "name": "throttle-base",
+          "triangles": 12,
+          "degenerateTriangles": 0,
+          "weldToleranceM": 0.000001,
+          "components": [
+            {
+              "id": 0,
+              "triangles": 12,
+              "closed": true,
+              "boundaryEdges": 0,
+              "nonmanifoldEdges": 0,
+              "windingErrors": 0
+            }
+          ],
+          "solidComplete": true
+        },
+        "collision": {
+          "name": "throttle-base",
+          "triangles": 12,
+          "degenerateTriangles": 0,
+          "weldToleranceM": 0.000001,
+          "components": [
+            {
+              "id": 0,
+              "triangles": 12,
+              "closed": true,
+              "boundaryEdges": 0,
+              "nonmanifoldEdges": 0,
+              "windingErrors": 0
+            }
+          ],
+          "solidComplete": true
+        }
+      }
+    },
+    {
+      "name": "H6 topology and manifest buffers: throttle-post",
+      "pass": true,
+      "result": {
+        "render": {
+          "name": "throttle-post",
+          "triangles": 12,
+          "degenerateTriangles": 0,
+          "weldToleranceM": 0.000001,
+          "components": [
+            {
+              "id": 0,
+              "triangles": 12,
+              "closed": true,
+              "boundaryEdges": 0,
+              "nonmanifoldEdges": 0,
+              "windingErrors": 0
+            }
+          ],
+          "solidComplete": true
+        },
+        "collision": {
+          "name": "throttle-post",
+          "triangles": 12,
+          "degenerateTriangles": 0,
+          "weldToleranceM": 0.000001,
+          "components": [
+            {
+              "id": 0,
+              "triangles": 12,
+              "closed": true,
+              "boundaryEdges": 0,
+              "nonmanifoldEdges": 0,
+              "windingErrors": 0
+            }
+          ],
+          "solidComplete": true
+        }
+      }
+    },
+    {
+      "name": "H6 topology and manifest buffers: throttle-shelf",
+      "pass": true,
+      "result": {
+        "render": {
+          "name": "throttle-shelf",
+          "triangles": 192,
+          "degenerateTriangles": 0,
+          "weldToleranceM": 0.000001,
+          "components": [
+            {
+              "id": 0,
+              "triangles": 192,
+              "closed": true,
+              "boundaryEdges": 0,
+              "nonmanifoldEdges": 0,
+              "windingErrors": 0
+            }
+          ],
+          "solidComplete": true
+        },
+        "collision": {
+          "name": "throttle-shelf",
+          "triangles": 12,
+          "degenerateTriangles": 0,
+          "weldToleranceM": 0.000001,
+          "components": [
+            {
+              "id": 0,
+              "triangles": 12,
+              "closed": true,
+              "boundaryEdges": 0,
+              "nonmanifoldEdges": 0,
+              "windingErrors": 0
+            }
+          ],
+          "solidComplete": true
+        }
+      }
+    },
+    {
+      "name": "H6 topology and manifest buffers: throttle-lever",
+      "pass": true,
+      "result": {
+        "render": {
+          "name": "throttle-lever",
+          "triangles": 96,
+          "degenerateTriangles": 0,
+          "weldToleranceM": 0.000001,
+          "components": [
+            {
+              "id": 0,
+              "triangles": 96,
+              "closed": true,
+              "boundaryEdges": 0,
+              "nonmanifoldEdges": 0,
+              "windingErrors": 0
+            }
+          ],
+          "solidComplete": true
+        },
+        "collision": {
+          "name": "throttle-lever",
+          "triangles": 96,
+          "degenerateTriangles": 0,
+          "weldToleranceM": 0.000001,
+          "components": [
+            {
+              "id": 0,
+              "triangles": 96,
+              "closed": true,
+              "boundaryEdges": 0,
+              "nonmanifoldEdges": 0,
+              "windingErrors": 0
+            }
+          ],
+          "solidComplete": true
+        }
+      }
+    },
+    {
+      "name": "H6 topology and manifest buffers: throttle-grip",
+      "pass": true,
+      "result": {
+        "render": {
+          "name": "throttle-grip",
+          "triangles": 192,
+          "degenerateTriangles": 0,
+          "weldToleranceM": 0.000001,
+          "components": [
+            {
+              "id": 0,
+              "triangles": 192,
+              "closed": true,
+              "boundaryEdges": 0,
+              "nonmanifoldEdges": 0,
+              "windingErrors": 0
+            }
+          ],
+          "solidComplete": true
+        },
+        "collision": {
+          "name": "throttle-grip",
+          "triangles": 12,
+          "degenerateTriangles": 0,
+          "weldToleranceM": 0.000001,
+          "components": [
+            {
+              "id": 0,
+              "triangles": 12,
+              "closed": true,
+              "boundaryEdges": 0,
+              "nonmanifoldEdges": 0,
+              "windingErrors": 0
+            }
+          ],
+          "solidComplete": true
+        }
+      }
+    },
+    {
+      "name": "evaluated down part buffers and support transforms",
+      "pass": true,
+      "result": {
+        "serial": 12,
+        "hostSeconds": 11.783333333333498,
+        "geometryReady": true,
+        "maxFrameError": 1.7763568394002505e-15,
+        "scope": "export internal coherence only; survivor current matrices absent"
+      }
+    },
+    {
+      "name": "evaluated up part buffers and support transforms",
+      "pass": true,
+      "result": {
+        "serial": 53,
+        "hostSeconds": 11.783333333333498,
+        "geometryReady": false,
+        "maxFrameError": 1.7763568394002505e-15,
+        "scope": "export internal coherence only; survivor current matrices absent"
+      }
+    },
+    {
+      "name": "evaluated returned part buffers and support transforms",
+      "pass": true,
+      "result": {
+        "serial": 91,
+        "hostSeconds": 11.783333333333498,
+        "geometryReady": true,
+        "maxFrameError": 1.7763568394002505e-15,
+        "scope": "export internal coherence only; survivor current matrices absent"
+      }
+    },
+    {
+      "name": "reported empty browser and geometry checks only",
+      "pass": true,
+      "result": {
+        "browser": 24,
+        "geometry": 32,
+        "replayedBrowser": false
+      }
+    }
+  ],
+  "receivingZipVerified": false,
+  "finalPolicyClosureVerified": false,
+  "bodyClearanceEvaluated": false,
+  "fittingAuthorized": false,
+  "fullBodyAccepted": false,
+  "productionAccepted": false
+}

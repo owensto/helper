@@ -1,0 +1,5506 @@
+{
+  "schema": "atlas-body-clearance-sources/1",
+  "revision": "bay12-h6-rendered-source-set/1",
+  "modelSHA256": "b1ef9c448309a9a5d85ec4f2efcf45d9406d999ab24d27bdd1534359a7278b82",
+  "modelCommit": "a2d4eecc12e7b4db14c7f94a6f6fc5088a4061ff",
+  "productionEnabled": false,
+  "solidInterpretationAccepted": false,
+  "sources": [
+    {
+      "id": "EX_Console__black",
+      "originalNodeIndex": 6,
+      "triangleCount": 2624,
+      "topology": {
+        "name": "EX_Console__black",
+        "triangles": 2624,
+        "degenerateTriangles": 0,
+        "weldToleranceM": 1e-06,
+        "components": [
+          {
+            "id": 0,
+            "triangles": 972,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 1,
+            "triangles": 72,
+            "closed": false,
+            "boundaryEdges": 24,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 2,
+            "triangles": 608,
+            "closed": false,
+            "boundaryEdges": 16,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 3,
+            "triangles": 972,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          }
+        ],
+        "solidComplete": false
+      },
+      "positionIndexJSONSHA256": "b2e294055c62f1e7ae7f1b08ae7271ce17df68b256a7951a801c5e52dc3d466a",
+      "solidInterpretationAccepted": false,
+      "penetrationToleranceM": 0.001,
+      "toleranceStatus": "H6 review gate; only original cushion has prior soft-contact tolerance",
+      "originalNodeName": "EX_Console__black",
+      "meshIndex": 5,
+      "primitiveIndex": 0,
+      "positionAccessor": 17,
+      "indexAccessor": 19,
+      "vertexClearanceMarginM": 0.002
+    },
+    {
+      "id": "EX_Deck__darkdeck",
+      "originalNodeIndex": 13,
+      "triangleCount": 936,
+      "topology": {
+        "name": "EX_Deck__darkdeck",
+        "triangles": 936,
+        "degenerateTriangles": 0,
+        "weldToleranceM": 1e-06,
+        "components": [
+          {
+            "id": 0,
+            "triangles": 96,
+            "closed": false,
+            "boundaryEdges": 96,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 1,
+            "triangles": 96,
+            "closed": false,
+            "boundaryEdges": 96,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 2,
+            "triangles": 188,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 3,
+            "triangles": 180,
+            "closed": false,
+            "boundaryEdges": 10,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 4,
+            "triangles": 188,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 5,
+            "triangles": 188,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          }
+        ],
+        "solidComplete": false
+      },
+      "positionIndexJSONSHA256": "371590988c7a11839392bf4ebd8fd33092757af9eb8454dcf1bc0ff1d6c3daee",
+      "solidInterpretationAccepted": false,
+      "penetrationToleranceM": 0.001,
+      "toleranceStatus": "H6 review gate; only original cushion has prior soft-contact tolerance",
+      "originalNodeName": "EX_Deck__darkdeck",
+      "meshIndex": 11,
+      "primitiveIndex": 0,
+      "positionAccessor": 41,
+      "indexAccessor": 43,
+      "vertexClearanceMarginM": 0.002
+    },
+    {
+      "id": "EX_Deck__fabric",
+      "originalNodeIndex": 14,
+      "triangleCount": 3888,
+      "topology": {
+        "name": "EX_Deck__fabric",
+        "triangles": 3888,
+        "degenerateTriangles": 0,
+        "weldToleranceM": 1e-06,
+        "components": [
+          {
+            "id": 0,
+            "triangles": 972,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 1,
+            "triangles": 972,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 2,
+            "triangles": 972,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 3,
+            "triangles": 972,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          }
+        ],
+        "solidComplete": true
+      },
+      "positionIndexJSONSHA256": "1da157bb71b0ef18ca4afe7d7e1c2fcf95b5529f49842ba11d899946ed19aecf",
+      "solidInterpretationAccepted": false,
+      "penetrationToleranceM": 0.001,
+      "toleranceStatus": "H6 review gate; only original cushion has prior soft-contact tolerance",
+      "originalNodeName": "EX_Deck__fabric",
+      "meshIndex": 12,
+      "primitiveIndex": 0,
+      "positionAccessor": 45,
+      "indexAccessor": 48,
+      "vertexClearanceMarginM": 0.002
+    },
+    {
+      "id": "EX_Deck__soft_deck_insert",
+      "originalNodeIndex": 15,
+      "triangleCount": 4028,
+      "topology": {
+        "name": "EX_Deck__soft_deck_insert",
+        "triangles": 4028,
+        "degenerateTriangles": 0,
+        "weldToleranceM": 1e-06,
+        "components": [
+          {
+            "id": 0,
+            "triangles": 140,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 1,
+            "triangles": 972,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 2,
+            "triangles": 972,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 3,
+            "triangles": 972,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 4,
+            "triangles": 972,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          }
+        ],
+        "solidComplete": true
+      },
+      "positionIndexJSONSHA256": "cab630adec2a0c80cb2ef35554eff49ff64206d5112cfd4dae11ee7ddec54a0f",
+      "solidInterpretationAccepted": false,
+      "penetrationToleranceM": 0.001,
+      "toleranceStatus": "H6 review gate; only original cushion has prior soft-contact tolerance",
+      "originalNodeName": "EX_Deck__soft_deck_insert",
+      "meshIndex": 13,
+      "primitiveIndex": 0,
+      "positionAccessor": 50,
+      "indexAccessor": 53,
+      "vertexClearanceMarginM": 0.002
+    },
+    {
+      "id": "EX_Deck__upholstery_seam",
+      "originalNodeIndex": 17,
+      "triangleCount": 48,
+      "topology": {
+        "name": "EX_Deck__upholstery_seam",
+        "triangles": 48,
+        "degenerateTriangles": 0,
+        "weldToleranceM": 1e-06,
+        "components": [
+          {
+            "id": 0,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 1,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 2,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 3,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          }
+        ],
+        "solidComplete": false
+      },
+      "positionIndexJSONSHA256": "286a1afc400bc4c65b6ad06936e2d3244db14cc6b0ef237b0979bee353e1dd94",
+      "solidInterpretationAccepted": false,
+      "penetrationToleranceM": 0.001,
+      "toleranceStatus": "H6 review gate; only original cushion has prior soft-contact tolerance",
+      "originalNodeName": "EX_Deck__upholstery_seam",
+      "meshIndex": 15,
+      "primitiveIndex": 0,
+      "positionAccessor": 58,
+      "indexAccessor": 60,
+      "vertexClearanceMarginM": 0.002
+    },
+    {
+      "id": "EX_Deck__white",
+      "originalNodeIndex": 18,
+      "triangleCount": 10142,
+      "topology": {
+        "name": "EX_Deck__white",
+        "triangles": 10142,
+        "degenerateTriangles": 0,
+        "weldToleranceM": 1e-06,
+        "components": [
+          {
+            "id": 0,
+            "triangles": 1076,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 1,
+            "triangles": 1106,
+            "closed": false,
+            "boundaryEdges": 70,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 2,
+            "triangles": 972,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 3,
+            "triangles": 336,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 4,
+            "triangles": 972,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 5,
+            "triangles": 972,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 6,
+            "triangles": 972,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 7,
+            "triangles": 972,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 8,
+            "triangles": 446,
+            "closed": false,
+            "boundaryEdges": 448,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 9,
+            "triangles": 892,
+            "closed": false,
+            "boundaryEdges": 450,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 10,
+            "triangles": 446,
+            "closed": false,
+            "boundaryEdges": 448,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 11,
+            "triangles": 892,
+            "closed": false,
+            "boundaryEdges": 450,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 12,
+            "triangles": 88,
+            "closed": false,
+            "boundaryEdges": 90,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          }
+        ],
+        "solidComplete": false
+      },
+      "positionIndexJSONSHA256": "beed48f093b6661c259abdbe5026ca28a7ef0b9de0ba8ac55fcaff8f19dc3f88",
+      "solidInterpretationAccepted": false,
+      "penetrationToleranceM": 0.001,
+      "toleranceStatus": "H6 review gate; only original cushion has prior soft-contact tolerance",
+      "originalNodeName": "EX_Deck__white",
+      "meshIndex": 16,
+      "primitiveIndex": 0,
+      "positionAccessor": 62,
+      "indexAccessor": 64,
+      "vertexClearanceMarginM": 0.002
+    },
+    {
+      "id": "DT04_Hardware_Vessel__black",
+      "originalNodeIndex": 31,
+      "triangleCount": 984,
+      "topology": {
+        "name": "DT04_Hardware_Vessel__black",
+        "triangles": 984,
+        "degenerateTriangles": 0,
+        "weldToleranceM": 1e-06,
+        "components": [
+          {
+            "id": 0,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 1,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 2,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 3,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 4,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 5,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 6,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 7,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 8,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 9,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 10,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 11,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 12,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 13,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 14,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 15,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 16,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 17,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 18,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 19,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 20,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 21,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 22,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 23,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 24,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 25,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 26,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 27,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 28,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 29,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 30,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 31,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 32,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 33,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 34,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 35,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 36,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 37,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 38,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 39,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 40,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 41,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 42,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 43,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 44,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 45,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 46,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 47,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 48,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 49,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 50,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 51,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 52,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 53,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 54,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 55,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 56,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 57,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 58,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 59,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 60,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 61,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 62,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 63,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 64,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 65,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 66,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 67,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 68,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 69,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 70,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 71,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 72,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 73,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 74,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 75,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 76,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 77,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 78,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 79,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 80,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 81,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          }
+        ],
+        "solidComplete": false
+      },
+      "positionIndexJSONSHA256": "725c3d9f21e42124ef57c32d9a81f93c7d7668145ce55bda8041435a25f92a1f",
+      "solidInterpretationAccepted": false,
+      "penetrationToleranceM": 0.001,
+      "toleranceStatus": "H6 review gate; only original cushion has prior soft-contact tolerance",
+      "originalNodeName": "DT04_Hardware_Vessel__black",
+      "meshIndex": 24,
+      "primitiveIndex": 0,
+      "positionAccessor": 88,
+      "indexAccessor": 90,
+      "vertexClearanceMarginM": 0.002
+    },
+    {
+      "id": "DT04_Hardware_Vessel__chrome",
+      "originalNodeIndex": 32,
+      "triangleCount": 1600,
+      "topology": {
+        "name": "DT04_Hardware_Vessel__chrome",
+        "triangles": 1600,
+        "degenerateTriangles": 0,
+        "weldToleranceM": 1e-06,
+        "components": [
+          {
+            "id": 0,
+            "triangles": 48,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 1,
+            "triangles": 48,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 2,
+            "triangles": 48,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 3,
+            "triangles": 48,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 4,
+            "triangles": 48,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 5,
+            "triangles": 48,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 6,
+            "triangles": 48,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 7,
+            "triangles": 48,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 8,
+            "triangles": 48,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 9,
+            "triangles": 48,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 10,
+            "triangles": 48,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 11,
+            "triangles": 48,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 12,
+            "triangles": 48,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 13,
+            "triangles": 48,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 14,
+            "triangles": 48,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 15,
+            "triangles": 48,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 16,
+            "triangles": 48,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 17,
+            "triangles": 48,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 18,
+            "triangles": 48,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 19,
+            "triangles": 48,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 20,
+            "triangles": 128,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 21,
+            "triangles": 48,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 22,
+            "triangles": 48,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 23,
+            "triangles": 48,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 24,
+            "triangles": 48,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 25,
+            "triangles": 128,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 26,
+            "triangles": 48,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 27,
+            "triangles": 48,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 28,
+            "triangles": 48,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 29,
+            "triangles": 48,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          }
+        ],
+        "solidComplete": true
+      },
+      "positionIndexJSONSHA256": "d20dd4f6a52fba29ba79fecd4ad188f8e15826e37337ab8de93791f1d26f32ba",
+      "solidInterpretationAccepted": false,
+      "penetrationToleranceM": 0.001,
+      "toleranceStatus": "H6 review gate; only original cushion has prior soft-contact tolerance",
+      "originalNodeName": "DT04_Hardware_Vessel__chrome",
+      "meshIndex": 25,
+      "primitiveIndex": 0,
+      "positionAccessor": 91,
+      "indexAccessor": 93,
+      "vertexClearanceMarginM": 0.002
+    },
+    {
+      "id": "DT04_Hardware_Vessel__silver",
+      "originalNodeIndex": 33,
+      "triangleCount": 2888,
+      "topology": {
+        "name": "DT04_Hardware_Vessel__silver",
+        "triangles": 2888,
+        "degenerateTriangles": 0,
+        "weldToleranceM": 1e-06,
+        "components": [
+          {
+            "id": 0,
+            "triangles": 576,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 1,
+            "triangles": 64,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 2,
+            "triangles": 64,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 3,
+            "triangles": 576,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 4,
+            "triangles": 64,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 5,
+            "triangles": 64,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 6,
+            "triangles": 576,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 7,
+            "triangles": 64,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 8,
+            "triangles": 64,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 9,
+            "triangles": 576,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 10,
+            "triangles": 64,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 11,
+            "triangles": 64,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 12,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 13,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 14,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 15,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 16,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 17,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          }
+        ],
+        "solidComplete": false
+      },
+      "positionIndexJSONSHA256": "af9ab439e49c05dc59f3c3503967375c800c7371384989bfaa8386c7d5c6cfda",
+      "solidInterpretationAccepted": false,
+      "penetrationToleranceM": 0.001,
+      "toleranceStatus": "H6 review gate; only original cushion has prior soft-contact tolerance",
+      "originalNodeName": "DT04_Hardware_Vessel__silver",
+      "meshIndex": 26,
+      "primitiveIndex": 0,
+      "positionAccessor": 94,
+      "indexAccessor": 96,
+      "vertexClearanceMarginM": 0.002
+    },
+    {
+      "id": "EX_Hardware__amber",
+      "originalNodeIndex": 35,
+      "triangleCount": 1944,
+      "topology": {
+        "name": "EX_Hardware__amber",
+        "triangles": 1944,
+        "degenerateTriangles": 0,
+        "weldToleranceM": 1e-06,
+        "components": [
+          {
+            "id": 0,
+            "triangles": 972,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 1,
+            "triangles": 972,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          }
+        ],
+        "solidComplete": true
+      },
+      "positionIndexJSONSHA256": "4be84f5dca8bfbe89208ebbfc10afd55f385a0afa4c6db0068a2b83f7a2dac45",
+      "solidInterpretationAccepted": false,
+      "penetrationToleranceM": 0.001,
+      "toleranceStatus": "H6 review gate; only original cushion has prior soft-contact tolerance",
+      "originalNodeName": "EX_Hardware__amber",
+      "meshIndex": 27,
+      "primitiveIndex": 0,
+      "positionAccessor": 97,
+      "indexAccessor": 99,
+      "vertexClearanceMarginM": 0.002
+    },
+    {
+      "id": "EX_Hardware__black",
+      "originalNodeIndex": 36,
+      "triangleCount": 3624,
+      "topology": {
+        "name": "EX_Hardware__black",
+        "triangles": 3624,
+        "degenerateTriangles": 0,
+        "weldToleranceM": 1e-06,
+        "components": [
+          {
+            "id": 0,
+            "triangles": 96,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 1,
+            "triangles": 96,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 2,
+            "triangles": 96,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 3,
+            "triangles": 96,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 4,
+            "triangles": 96,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 5,
+            "triangles": 96,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 6,
+            "triangles": 96,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 7,
+            "triangles": 96,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 8,
+            "triangles": 96,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 9,
+            "triangles": 96,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 10,
+            "triangles": 972,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 11,
+            "triangles": 20,
+            "closed": false,
+            "boundaryEdges": 20,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 12,
+            "triangles": 20,
+            "closed": false,
+            "boundaryEdges": 20,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 13,
+            "triangles": 1652,
+            "closed": false,
+            "boundaryEdges": 28,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          }
+        ],
+        "solidComplete": false
+      },
+      "positionIndexJSONSHA256": "a38166ca1ef8028d142f74c828711933cdacb98fe344bec67d50299972cdd3fe",
+      "solidInterpretationAccepted": false,
+      "penetrationToleranceM": 0.001,
+      "toleranceStatus": "H6 review gate; only original cushion has prior soft-contact tolerance",
+      "originalNodeName": "EX_Hardware__black",
+      "meshIndex": 28,
+      "primitiveIndex": 0,
+      "positionAccessor": 100,
+      "indexAccessor": 102,
+      "vertexClearanceMarginM": 0.002
+    },
+    {
+      "id": "EX_Hardware__chrome",
+      "originalNodeIndex": 37,
+      "triangleCount": 32940,
+      "topology": {
+        "name": "EX_Hardware__chrome",
+        "triangles": 32940,
+        "degenerateTriangles": 0,
+        "weldToleranceM": 1e-06,
+        "components": [
+          {
+            "id": 0,
+            "triangles": 1280,
+            "closed": false,
+            "boundaryEdges": 20,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 1,
+            "triangles": 972,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 2,
+            "triangles": 972,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 3,
+            "triangles": 1280,
+            "closed": false,
+            "boundaryEdges": 20,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 4,
+            "triangles": 972,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 5,
+            "triangles": 972,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 6,
+            "triangles": 1280,
+            "closed": false,
+            "boundaryEdges": 20,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 7,
+            "triangles": 972,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 8,
+            "triangles": 972,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 9,
+            "triangles": 1280,
+            "closed": false,
+            "boundaryEdges": 20,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 10,
+            "triangles": 972,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 11,
+            "triangles": 972,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 12,
+            "triangles": 972,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 13,
+            "triangles": 20,
+            "closed": false,
+            "boundaryEdges": 20,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 14,
+            "triangles": 1280,
+            "closed": false,
+            "boundaryEdges": 20,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 15,
+            "triangles": 972,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 16,
+            "triangles": 20,
+            "closed": false,
+            "boundaryEdges": 20,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 17,
+            "triangles": 1280,
+            "closed": false,
+            "boundaryEdges": 20,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 18,
+            "triangles": 972,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 19,
+            "triangles": 20,
+            "closed": false,
+            "boundaryEdges": 20,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 20,
+            "triangles": 1280,
+            "closed": false,
+            "boundaryEdges": 20,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 21,
+            "triangles": 96,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 22,
+            "triangles": 972,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 23,
+            "triangles": 20,
+            "closed": false,
+            "boundaryEdges": 20,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 24,
+            "triangles": 1280,
+            "closed": false,
+            "boundaryEdges": 20,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 25,
+            "triangles": 972,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 26,
+            "triangles": 20,
+            "closed": false,
+            "boundaryEdges": 20,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 27,
+            "triangles": 1280,
+            "closed": false,
+            "boundaryEdges": 20,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 28,
+            "triangles": 972,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 29,
+            "triangles": 20,
+            "closed": false,
+            "boundaryEdges": 20,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 30,
+            "triangles": 1280,
+            "closed": false,
+            "boundaryEdges": 20,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 31,
+            "triangles": 96,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 32,
+            "triangles": 972,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 33,
+            "triangles": 972,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 34,
+            "triangles": 972,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 35,
+            "triangles": 1652,
+            "closed": false,
+            "boundaryEdges": 28,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 36,
+            "triangles": 1652,
+            "closed": false,
+            "boundaryEdges": 28,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          }
+        ],
+        "solidComplete": false
+      },
+      "positionIndexJSONSHA256": "4fb12a9f8d8444e303fdfe3f2ecace3f7af4eafa665d2ab9f555777e89553d2c",
+      "solidInterpretationAccepted": false,
+      "penetrationToleranceM": 0.001,
+      "toleranceStatus": "H6 review gate; only original cushion has prior soft-contact tolerance",
+      "originalNodeName": "EX_Hardware__chrome",
+      "meshIndex": 29,
+      "primitiveIndex": 0,
+      "positionAccessor": 103,
+      "indexAccessor": 105,
+      "vertexClearanceMarginM": 0.002
+    },
+    {
+      "id": "EX_Hardware__darkdeck",
+      "originalNodeIndex": 38,
+      "triangleCount": 6116,
+      "topology": {
+        "name": "EX_Hardware__darkdeck",
+        "triangles": 6116,
+        "degenerateTriangles": 0,
+        "weldToleranceM": 1e-06,
+        "components": [
+          {
+            "id": 0,
+            "triangles": 112,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 1,
+            "triangles": 972,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 2,
+            "triangles": 972,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 3,
+            "triangles": 972,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 4,
+            "triangles": 112,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 5,
+            "triangles": 972,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 6,
+            "triangles": 972,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 7,
+            "triangles": 972,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 8,
+            "triangles": 20,
+            "closed": false,
+            "boundaryEdges": 20,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 9,
+            "triangles": 20,
+            "closed": false,
+            "boundaryEdges": 20,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 10,
+            "triangles": 20,
+            "closed": false,
+            "boundaryEdges": 20,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          }
+        ],
+        "solidComplete": false
+      },
+      "positionIndexJSONSHA256": "6f78daa7edcc2781a7f1d290297e36a98b98872abae3c27bae9274764a8b3df3",
+      "solidInterpretationAccepted": false,
+      "penetrationToleranceM": 0.001,
+      "toleranceStatus": "H6 review gate; only original cushion has prior soft-contact tolerance",
+      "originalNodeName": "EX_Hardware__darkdeck",
+      "meshIndex": 30,
+      "primitiveIndex": 0,
+      "positionAccessor": 107,
+      "indexAccessor": 109,
+      "vertexClearanceMarginM": 0.002
+    },
+    {
+      "id": "F05_Workspace_Vessel__black",
+      "originalNodeIndex": 40,
+      "triangleCount": 4424,
+      "topology": {
+        "name": "F05_Workspace_Vessel__black",
+        "triangles": 4424,
+        "degenerateTriangles": 0,
+        "weldToleranceM": 1e-06,
+        "components": [
+          {
+            "id": 0,
+            "triangles": 620,
+            "closed": false,
+            "boundaryEdges": 20,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 1,
+            "triangles": 620,
+            "closed": false,
+            "boundaryEdges": 20,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 2,
+            "triangles": 620,
+            "closed": false,
+            "boundaryEdges": 20,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 3,
+            "triangles": 620,
+            "closed": false,
+            "boundaryEdges": 20,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 4,
+            "triangles": 972,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 5,
+            "triangles": 972,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          }
+        ],
+        "solidComplete": false
+      },
+      "positionIndexJSONSHA256": "21b0d79ea6831a61a1b8b614cc5f6deb56721c08226e25d0a451cbc1ba1a8d7f",
+      "solidInterpretationAccepted": false,
+      "penetrationToleranceM": 0.001,
+      "toleranceStatus": "H6 review gate; only original cushion has prior soft-contact tolerance",
+      "originalNodeName": "F05_Workspace_Vessel__black",
+      "meshIndex": 32,
+      "primitiveIndex": 0,
+      "positionAccessor": 114,
+      "indexAccessor": 116,
+      "vertexClearanceMarginM": 0.002
+    },
+    {
+      "id": "F05_Workspace_Vessel__darkdeck",
+      "originalNodeIndex": 41,
+      "triangleCount": 1944,
+      "topology": {
+        "name": "F05_Workspace_Vessel__darkdeck",
+        "triangles": 1944,
+        "degenerateTriangles": 0,
+        "weldToleranceM": 1e-06,
+        "components": [
+          {
+            "id": 0,
+            "triangles": 972,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 1,
+            "triangles": 972,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          }
+        ],
+        "solidComplete": true
+      },
+      "positionIndexJSONSHA256": "0558c3afd98ccc879ff7a7c9a2ddb7abaab1315dc674d36d074c03fab3a1eba1",
+      "solidInterpretationAccepted": false,
+      "penetrationToleranceM": 0.001,
+      "toleranceStatus": "H6 review gate; only original cushion has prior soft-contact tolerance",
+      "originalNodeName": "F05_Workspace_Vessel__darkdeck",
+      "meshIndex": 33,
+      "primitiveIndex": 0,
+      "positionAccessor": 118,
+      "indexAccessor": 99,
+      "vertexClearanceMarginM": 0.002
+    },
+    {
+      "id": "F05_Workspace_Vessel__white",
+      "originalNodeIndex": 42,
+      "triangleCount": 5862,
+      "topology": {
+        "name": "F05_Workspace_Vessel__white",
+        "triangles": 5862,
+        "degenerateTriangles": 0,
+        "weldToleranceM": 1e-06,
+        "components": [
+          {
+            "id": 0,
+            "triangles": 972,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 1,
+            "triangles": 972,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 2,
+            "triangles": 972,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 3,
+            "triangles": 972,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 4,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 5,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 6,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 7,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 8,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 9,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 10,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 11,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 12,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 13,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 14,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 15,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 16,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 17,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 18,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 19,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 20,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 21,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 22,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 23,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 24,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 25,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 26,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 27,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 28,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 29,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 30,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 31,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 32,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 33,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 34,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 35,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 36,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 37,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 38,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 39,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 40,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 41,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 42,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 43,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 44,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 45,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 46,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 47,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 48,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 49,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 50,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 51,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 52,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 53,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 54,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 55,
+            "triangles": 128,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 56,
+            "triangles": 40,
+            "closed": false,
+            "boundaryEdges": 6,
+            "nonmanifoldEdges": 2,
+            "windingErrors": 0
+          },
+          {
+            "id": 57,
+            "triangles": 128,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 58,
+            "triangles": 142,
+            "closed": false,
+            "boundaryEdges": 6,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 59,
+            "triangles": 128,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 60,
+            "triangles": 208,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 61,
+            "triangles": 128,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 62,
+            "triangles": 56,
+            "closed": false,
+            "boundaryEdges": 6,
+            "nonmanifoldEdges": 2,
+            "windingErrors": 0
+          },
+          {
+            "id": 63,
+            "triangles": 128,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 64,
+            "triangles": 148,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 65,
+            "triangles": 128,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          }
+        ],
+        "solidComplete": false
+      },
+      "positionIndexJSONSHA256": "6cf3f29ed6164dba4200ca7bc9495e713a96fc291355e969e9ccb3801b839c01",
+      "solidInterpretationAccepted": false,
+      "penetrationToleranceM": 0.001,
+      "toleranceStatus": "H6 review gate; only original cushion has prior soft-contact tolerance",
+      "originalNodeName": "F05_Workspace_Vessel__white",
+      "meshIndex": 34,
+      "primitiveIndex": 0,
+      "positionAccessor": 121,
+      "indexAccessor": 123,
+      "vertexClearanceMarginM": 0.002
+    },
+    {
+      "id": "EX_Hull__black",
+      "originalNodeIndex": 65,
+      "triangleCount": 10704,
+      "topology": {
+        "name": "EX_Hull__black",
+        "triangles": 10704,
+        "degenerateTriangles": 0,
+        "weldToleranceM": 1e-06,
+        "components": [
+          {
+            "id": 0,
+            "triangles": 5352,
+            "closed": false,
+            "boundaryEdges": 24,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 1,
+            "triangles": 5352,
+            "closed": false,
+            "boundaryEdges": 24,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          }
+        ],
+        "solidComplete": false
+      },
+      "positionIndexJSONSHA256": "870819ba5a2b78d6951582c0f5c51444003577f184b9d498d7465b937b1310e6",
+      "solidInterpretationAccepted": false,
+      "penetrationToleranceM": 0.001,
+      "toleranceStatus": "H6 review gate; only original cushion has prior soft-contact tolerance",
+      "originalNodeName": "EX_Hull__black",
+      "meshIndex": 49,
+      "primitiveIndex": 0,
+      "positionAccessor": 160,
+      "indexAccessor": 162,
+      "vertexClearanceMarginM": 0.002
+    },
+    {
+      "id": "EX_Hull__blue",
+      "originalNodeIndex": 66,
+      "triangleCount": 21411,
+      "topology": {
+        "name": "EX_Hull__blue",
+        "triangles": 21411,
+        "degenerateTriangles": 0,
+        "weldToleranceM": 1e-06,
+        "components": [
+          {
+            "id": 0,
+            "triangles": 10704,
+            "closed": false,
+            "boundaryEdges": 494,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 1,
+            "triangles": 10704,
+            "closed": false,
+            "boundaryEdges": 494,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 2,
+            "triangles": 3,
+            "closed": false,
+            "boundaryEdges": 5,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          }
+        ],
+        "solidComplete": false
+      },
+      "positionIndexJSONSHA256": "f170c0d9e2a46db7d2bd81e3f23f09580f12f0b22587f9129c6c3fc9a6cf27ad",
+      "solidInterpretationAccepted": false,
+      "penetrationToleranceM": 0.001,
+      "toleranceStatus": "H6 review gate; only original cushion has prior soft-contact tolerance",
+      "originalNodeName": "EX_Hull__blue",
+      "meshIndex": 50,
+      "primitiveIndex": 0,
+      "positionAccessor": 163,
+      "indexAccessor": 165,
+      "vertexClearanceMarginM": 0.002
+    },
+    {
+      "id": "EX_Hull__chrome",
+      "originalNodeIndex": 67,
+      "triangleCount": 8920,
+      "topology": {
+        "name": "EX_Hull__chrome",
+        "triangles": 8920,
+        "degenerateTriangles": 0,
+        "weldToleranceM": 1e-06,
+        "components": [
+          {
+            "id": 0,
+            "triangles": 4460,
+            "closed": false,
+            "boundaryEdges": 20,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 1,
+            "triangles": 4460,
+            "closed": false,
+            "boundaryEdges": 20,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          }
+        ],
+        "solidComplete": false
+      },
+      "positionIndexJSONSHA256": "b27f1a6878cfbc995c6b3dcf7ba819a23e0a389da9714f0a27157dd1d0568796",
+      "solidInterpretationAccepted": false,
+      "penetrationToleranceM": 0.001,
+      "toleranceStatus": "H6 review gate; only original cushion has prior soft-contact tolerance",
+      "originalNodeName": "EX_Hull__chrome",
+      "meshIndex": 51,
+      "primitiveIndex": 0,
+      "positionAccessor": 166,
+      "indexAccessor": 168,
+      "vertexClearanceMarginM": 0.002
+    },
+    {
+      "id": "EX_Hull__silver",
+      "originalNodeIndex": 68,
+      "triangleCount": 4128,
+      "topology": {
+        "name": "EX_Hull__silver",
+        "triangles": 4128,
+        "degenerateTriangles": 0,
+        "weldToleranceM": 1e-06,
+        "components": [
+          {
+            "id": 0,
+            "triangles": 2064,
+            "closed": false,
+            "boundaryEdges": 16,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 1,
+            "triangles": 2064,
+            "closed": false,
+            "boundaryEdges": 16,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          }
+        ],
+        "solidComplete": false
+      },
+      "positionIndexJSONSHA256": "30cd22e3946989229b67b3edac8d732693d9a2d87f4db0c9e7eb8c50fa9153a6",
+      "solidInterpretationAccepted": false,
+      "penetrationToleranceM": 0.001,
+      "toleranceStatus": "H6 review gate; only original cushion has prior soft-contact tolerance",
+      "originalNodeName": "EX_Hull__silver",
+      "meshIndex": 52,
+      "primitiveIndex": 0,
+      "positionAccessor": 169,
+      "indexAccessor": 171,
+      "vertexClearanceMarginM": 0.002
+    },
+    {
+      "id": "EX_Hull__white",
+      "originalNodeIndex": 69,
+      "triangleCount": 19460,
+      "topology": {
+        "name": "EX_Hull__white",
+        "triangles": 19460,
+        "degenerateTriangles": 0,
+        "weldToleranceM": 1e-06,
+        "components": [
+          {
+            "id": 0,
+            "triangles": 13380,
+            "closed": false,
+            "boundaryEdges": 506,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 1,
+            "triangles": 1520,
+            "closed": false,
+            "boundaryEdges": 16,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 2,
+            "triangles": 1520,
+            "closed": false,
+            "boundaryEdges": 16,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 3,
+            "triangles": 1520,
+            "closed": false,
+            "boundaryEdges": 16,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 4,
+            "triangles": 1520,
+            "closed": false,
+            "boundaryEdges": 16,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          }
+        ],
+        "solidComplete": false
+      },
+      "positionIndexJSONSHA256": "4c4e1baaf216bfa4079ea6d83f4980d408054c0dc2d39ab0eb3e2c2330bfc403",
+      "solidInterpretationAccepted": false,
+      "penetrationToleranceM": 0.001,
+      "toleranceStatus": "H6 review gate; only original cushion has prior soft-contact tolerance",
+      "originalNodeName": "EX_Hull__white",
+      "meshIndex": 53,
+      "primitiveIndex": 0,
+      "positionAccessor": 173,
+      "indexAccessor": 175,
+      "vertexClearanceMarginM": 0.002
+    },
+    {
+      "id": "DT04_Seating_Vessel__piping",
+      "originalNodeIndex": 74,
+      "triangleCount": 13772,
+      "topology": {
+        "name": "DT04_Seating_Vessel__piping",
+        "triangles": 13772,
+        "degenerateTriangles": 0,
+        "weldToleranceM": 1e-06,
+        "components": [
+          {
+            "id": 0,
+            "triangles": 1024,
+            "closed": false,
+            "boundaryEdges": 16,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 1,
+            "triangles": 144,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 2,
+            "triangles": 600,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 3,
+            "triangles": 1056,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 4,
+            "triangles": 780,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 5,
+            "triangles": 324,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 6,
+            "triangles": 144,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 7,
+            "triangles": 600,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 8,
+            "triangles": 1056,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 9,
+            "triangles": 780,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 10,
+            "triangles": 324,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 11,
+            "triangles": 1024,
+            "closed": false,
+            "boundaryEdges": 16,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 12,
+            "triangles": 144,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 13,
+            "triangles": 600,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 14,
+            "triangles": 1056,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 15,
+            "triangles": 780,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 16,
+            "triangles": 324,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 17,
+            "triangles": 144,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 18,
+            "triangles": 600,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 19,
+            "triangles": 1056,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 20,
+            "triangles": 780,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 21,
+            "triangles": 324,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 22,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 23,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 24,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 25,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 26,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 27,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 28,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 29,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 30,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          }
+        ],
+        "solidComplete": false
+      },
+      "positionIndexJSONSHA256": "0785df476349968e84c6db11ed54267c581e56c4d502c9b74d7e74e883d3fc46",
+      "solidInterpretationAccepted": false,
+      "penetrationToleranceM": 0.001,
+      "toleranceStatus": "H6 review gate; only original cushion has prior soft-contact tolerance",
+      "originalNodeName": "DT04_Seating_Vessel__piping",
+      "meshIndex": 57,
+      "primitiveIndex": 0,
+      "positionAccessor": 186,
+      "indexAccessor": 188,
+      "vertexClearanceMarginM": 0.002
+    },
+    {
+      "id": "EX_Seating__chrome",
+      "originalNodeIndex": 78,
+      "triangleCount": 20,
+      "topology": {
+        "name": "EX_Seating__chrome",
+        "triangles": 20,
+        "degenerateTriangles": 0,
+        "weldToleranceM": 1e-06,
+        "components": [
+          {
+            "id": 0,
+            "triangles": 20,
+            "closed": false,
+            "boundaryEdges": 20,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          }
+        ],
+        "solidComplete": false
+      },
+      "positionIndexJSONSHA256": "92ef03487ebd59389401f1c91badcb545a9885cd6c104198a5e88bc05293c331",
+      "solidInterpretationAccepted": false,
+      "penetrationToleranceM": 0.001,
+      "toleranceStatus": "H6 review gate; only original cushion has prior soft-contact tolerance",
+      "originalNodeName": "EX_Seating__chrome",
+      "meshIndex": 59,
+      "primitiveIndex": 0,
+      "positionAccessor": 191,
+      "indexAccessor": 133,
+      "vertexClearanceMarginM": 0.002
+    },
+    {
+      "id": "EX_Seating__darkdeck",
+      "originalNodeIndex": 79,
+      "triangleCount": 5248,
+      "topology": {
+        "name": "EX_Seating__darkdeck",
+        "triangles": 5248,
+        "degenerateTriangles": 0,
+        "weldToleranceM": 1e-06,
+        "components": [
+          {
+            "id": 0,
+            "triangles": 1652,
+            "closed": false,
+            "boundaryEdges": 28,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 1,
+            "triangles": 1652,
+            "closed": false,
+            "boundaryEdges": 28,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 2,
+            "triangles": 972,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 3,
+            "triangles": 972,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          }
+        ],
+        "solidComplete": false
+      },
+      "positionIndexJSONSHA256": "1fbc7a73f6411f2887406862bfbcfdae1df9376b7080b3e0eb63394b09d718f0",
+      "solidInterpretationAccepted": false,
+      "penetrationToleranceM": 0.001,
+      "toleranceStatus": "H6 review gate; only original cushion has prior soft-contact tolerance",
+      "originalNodeName": "EX_Seating__darkdeck",
+      "meshIndex": 60,
+      "primitiveIndex": 0,
+      "positionAccessor": 194,
+      "indexAccessor": 196,
+      "vertexClearanceMarginM": 0.002
+    },
+    {
+      "id": "EX_Seating__fabric",
+      "originalNodeIndex": 80,
+      "triangleCount": 4258,
+      "topology": {
+        "name": "EX_Seating__fabric",
+        "triangles": 4258,
+        "degenerateTriangles": 0,
+        "weldToleranceM": 1e-06,
+        "components": [
+          {
+            "id": 0,
+            "triangles": 972,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 1,
+            "triangles": 972,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 2,
+            "triangles": 671,
+            "closed": false,
+            "boundaryEdges": 41,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 3,
+            "triangles": 671,
+            "closed": false,
+            "boundaryEdges": 41,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 4,
+            "triangles": 972,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          }
+        ],
+        "solidComplete": false
+      },
+      "positionIndexJSONSHA256": "5a1985aa898db8439d596b28c3d150f0aa3777da1b7e5c40c8815c0469e8008b",
+      "solidInterpretationAccepted": false,
+      "penetrationToleranceM": 0.001,
+      "toleranceStatus": "H6 review gate; only original cushion has prior soft-contact tolerance",
+      "originalNodeName": "EX_Seating__fabric",
+      "meshIndex": 61,
+      "primitiveIndex": 0,
+      "positionAccessor": 198,
+      "indexAccessor": 201,
+      "vertexClearanceMarginM": 0.002
+    },
+    {
+      "id": "EX_Seating__piping",
+      "originalNodeIndex": 81,
+      "triangleCount": 1944,
+      "topology": {
+        "name": "EX_Seating__piping",
+        "triangles": 1944,
+        "degenerateTriangles": 0,
+        "weldToleranceM": 1e-06,
+        "components": [
+          {
+            "id": 0,
+            "triangles": 972,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 1,
+            "triangles": 972,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          }
+        ],
+        "solidComplete": true
+      },
+      "positionIndexJSONSHA256": "4fe3c4dfe1f5b7a7d012d983a5f876c971614551f6b279c77efc47d7eb0c5a55",
+      "solidInterpretationAccepted": false,
+      "penetrationToleranceM": 0.001,
+      "toleranceStatus": "H6 review gate; only original cushion has prior soft-contact tolerance",
+      "originalNodeName": "EX_Seating__piping",
+      "meshIndex": 62,
+      "primitiveIndex": 0,
+      "positionAccessor": 202,
+      "indexAccessor": 99,
+      "vertexClearanceMarginM": 0.002
+    },
+    {
+      "id": "EX_Seating__upholstery_seam",
+      "originalNodeIndex": 82,
+      "triangleCount": 6728,
+      "topology": {
+        "name": "EX_Seating__upholstery_seam",
+        "triangles": 6728,
+        "degenerateTriangles": 0,
+        "weldToleranceM": 1e-06,
+        "components": [
+          {
+            "id": 0,
+            "triangles": 1652,
+            "closed": false,
+            "boundaryEdges": 28,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 1,
+            "triangles": 1652,
+            "closed": false,
+            "boundaryEdges": 28,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 2,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 3,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 4,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 5,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 6,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 7,
+            "triangles": 1652,
+            "closed": false,
+            "boundaryEdges": 28,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 8,
+            "triangles": 1652,
+            "closed": false,
+            "boundaryEdges": 28,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 9,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 10,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 11,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 12,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 13,
+            "triangles": 12,
+            "closed": false,
+            "boundaryEdges": 12,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          }
+        ],
+        "solidComplete": false
+      },
+      "positionIndexJSONSHA256": "d0e1ddbfec109b6a38344e28b1d8768bf22286e12b82db1dda459e09322bccaf",
+      "solidInterpretationAccepted": false,
+      "penetrationToleranceM": 0.001,
+      "toleranceStatus": "H6 review gate; only original cushion has prior soft-contact tolerance",
+      "originalNodeName": "EX_Seating__upholstery_seam",
+      "meshIndex": 63,
+      "primitiveIndex": 0,
+      "positionAccessor": 205,
+      "indexAccessor": 207,
+      "vertexClearanceMarginM": 0.002
+    },
+    {
+      "id": "EX_Seating__white",
+      "originalNodeIndex": 83,
+      "triangleCount": 1944,
+      "topology": {
+        "name": "EX_Seating__white",
+        "triangles": 1944,
+        "degenerateTriangles": 0,
+        "weldToleranceM": 1e-06,
+        "components": [
+          {
+            "id": 0,
+            "triangles": 972,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 1,
+            "triangles": 972,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          }
+        ],
+        "solidComplete": true
+      },
+      "positionIndexJSONSHA256": "e8c64da7870a10379f0fcbbdcc3c1757bbf9b331c88e19e904773d0ba5c91f41",
+      "solidInterpretationAccepted": false,
+      "penetrationToleranceM": 0.001,
+      "toleranceStatus": "H6 review gate; only original cushion has prior soft-contact tolerance",
+      "originalNodeName": "EX_Seating__white",
+      "meshIndex": 64,
+      "primitiveIndex": 0,
+      "positionAccessor": 209,
+      "indexAccessor": 99,
+      "vertexClearanceMarginM": 0.002
+    },
+    {
+      "id": "DT04_Top_Vessel__silver",
+      "originalNodeIndex": 91,
+      "triangleCount": 15360,
+      "topology": {
+        "name": "DT04_Top_Vessel__silver",
+        "triangles": 15360,
+        "degenerateTriangles": 0,
+        "weldToleranceM": 1e-06,
+        "components": [
+          {
+            "id": 0,
+            "triangles": 1280,
+            "closed": false,
+            "boundaryEdges": 20,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 1,
+            "triangles": 1280,
+            "closed": false,
+            "boundaryEdges": 20,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 2,
+            "triangles": 1280,
+            "closed": false,
+            "boundaryEdges": 20,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 3,
+            "triangles": 1280,
+            "closed": false,
+            "boundaryEdges": 20,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 4,
+            "triangles": 1280,
+            "closed": false,
+            "boundaryEdges": 20,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 5,
+            "triangles": 1280,
+            "closed": false,
+            "boundaryEdges": 20,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 6,
+            "triangles": 1280,
+            "closed": false,
+            "boundaryEdges": 20,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 7,
+            "triangles": 1280,
+            "closed": false,
+            "boundaryEdges": 20,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 8,
+            "triangles": 1280,
+            "closed": false,
+            "boundaryEdges": 20,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 9,
+            "triangles": 1280,
+            "closed": false,
+            "boundaryEdges": 20,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 10,
+            "triangles": 1280,
+            "closed": false,
+            "boundaryEdges": 20,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 11,
+            "triangles": 1280,
+            "closed": false,
+            "boundaryEdges": 20,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          }
+        ],
+        "solidComplete": false
+      },
+      "positionIndexJSONSHA256": "3aa9a194115523062a9e03862d80ad48e13ca59aead4002b76268167472ff86f",
+      "solidInterpretationAccepted": false,
+      "penetrationToleranceM": 0.001,
+      "toleranceStatus": "H6 review gate; only original cushion has prior soft-contact tolerance",
+      "originalNodeName": "DT04_Top_Vessel__silver",
+      "meshIndex": 71,
+      "primitiveIndex": 0,
+      "positionAccessor": 228,
+      "indexAccessor": 230,
+      "vertexClearanceMarginM": 0.002
+    },
+    {
+      "id": "FIXED_TTop__chrome",
+      "originalNodeIndex": 109,
+      "triangleCount": 5200,
+      "topology": {
+        "name": "FIXED_TTop__chrome",
+        "triangles": 5200,
+        "degenerateTriangles": 0,
+        "weldToleranceM": 1e-06,
+        "components": [
+          {
+            "id": 0,
+            "triangles": 972,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 1,
+            "triangles": 32,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 2,
+            "triangles": 32,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 3,
+            "triangles": 972,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 4,
+            "triangles": 32,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 5,
+            "triangles": 32,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 6,
+            "triangles": 972,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 7,
+            "triangles": 32,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 8,
+            "triangles": 32,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 9,
+            "triangles": 972,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 10,
+            "triangles": 32,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 11,
+            "triangles": 32,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 12,
+            "triangles": 40,
+            "closed": false,
+            "boundaryEdges": 40,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 13,
+            "triangles": 224,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 14,
+            "triangles": 40,
+            "closed": false,
+            "boundaryEdges": 40,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 15,
+            "triangles": 224,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 16,
+            "triangles": 40,
+            "closed": false,
+            "boundaryEdges": 40,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 17,
+            "triangles": 224,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 18,
+            "triangles": 40,
+            "closed": false,
+            "boundaryEdges": 40,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 19,
+            "triangles": 224,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          }
+        ],
+        "solidComplete": false
+      },
+      "positionIndexJSONSHA256": "e88d72022f83b44017f6ca135e3a922433b8c8e6aafec9462133b87b1f56b355",
+      "solidInterpretationAccepted": false,
+      "penetrationToleranceM": 0.001,
+      "toleranceStatus": "H6 review gate; only original cushion has prior soft-contact tolerance",
+      "originalNodeName": "FIXED_TTop__chrome",
+      "meshIndex": 84,
+      "primitiveIndex": 0,
+      "positionAccessor": 264,
+      "indexAccessor": 266,
+      "vertexClearanceMarginM": 0.002
+    },
+    {
+      "id": "FIXED_TTop__darkdeck",
+      "originalNodeIndex": 110,
+      "triangleCount": 10376,
+      "topology": {
+        "name": "FIXED_TTop__darkdeck",
+        "triangles": 10376,
+        "degenerateTriangles": 0,
+        "weldToleranceM": 1e-06,
+        "components": [
+          {
+            "id": 0,
+            "triangles": 1652,
+            "closed": false,
+            "boundaryEdges": 28,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 1,
+            "triangles": 1652,
+            "closed": false,
+            "boundaryEdges": 28,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 2,
+            "triangles": 1652,
+            "closed": false,
+            "boundaryEdges": 28,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 3,
+            "triangles": 1652,
+            "closed": false,
+            "boundaryEdges": 28,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 4,
+            "triangles": 1652,
+            "closed": false,
+            "boundaryEdges": 28,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 5,
+            "triangles": 1652,
+            "closed": false,
+            "boundaryEdges": 28,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 6,
+            "triangles": 96,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 7,
+            "triangles": 96,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 8,
+            "triangles": 96,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 9,
+            "triangles": 96,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 10,
+            "triangles": 20,
+            "closed": false,
+            "boundaryEdges": 20,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 11,
+            "triangles": 20,
+            "closed": false,
+            "boundaryEdges": 20,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 12,
+            "triangles": 20,
+            "closed": false,
+            "boundaryEdges": 20,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 13,
+            "triangles": 20,
+            "closed": false,
+            "boundaryEdges": 20,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          }
+        ],
+        "solidComplete": false
+      },
+      "positionIndexJSONSHA256": "391908846f846c78338d737374bc406d1774a6768b736e8e020ffd76da4abe5e",
+      "solidInterpretationAccepted": false,
+      "penetrationToleranceM": 0.001,
+      "toleranceStatus": "H6 review gate; only original cushion has prior soft-contact tolerance",
+      "originalNodeName": "FIXED_TTop__darkdeck",
+      "meshIndex": 85,
+      "primitiveIndex": 0,
+      "positionAccessor": 268,
+      "indexAccessor": 270,
+      "vertexClearanceMarginM": 0.002
+    },
+    {
+      "id": "P02_grouped_detail_161_50",
+      "originalNodeIndex": 137,
+      "triangleCount": 6804,
+      "topology": {
+        "name": "P02_grouped_detail_161_50",
+        "triangles": 6804,
+        "degenerateTriangles": 0,
+        "weldToleranceM": 1e-06,
+        "components": [
+          {
+            "id": 0,
+            "triangles": 972,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 1,
+            "triangles": 972,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 2,
+            "triangles": 972,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 3,
+            "triangles": 972,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 4,
+            "triangles": 972,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 5,
+            "triangles": 972,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 6,
+            "triangles": 972,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          }
+        ],
+        "solidComplete": true
+      },
+      "positionIndexJSONSHA256": "e78e47b5afb7323659bf6e86f5d9dc653e6b1fac368942934ca6e16ae214d20f",
+      "solidInterpretationAccepted": false,
+      "penetrationToleranceM": 0.001,
+      "toleranceStatus": "H6 review gate; only original cushion has prior soft-contact tolerance",
+      "originalNodeName": "P02 grouped detail 161 50",
+      "meshIndex": 96,
+      "primitiveIndex": 0,
+      "positionAccessor": 302,
+      "indexAccessor": 304,
+      "vertexClearanceMarginM": 0.002
+    },
+    {
+      "id": "P02_grouped_detail_161_54",
+      "originalNodeIndex": 138,
+      "triangleCount": 1944,
+      "topology": {
+        "name": "P02_grouped_detail_161_54",
+        "triangles": 1944,
+        "degenerateTriangles": 0,
+        "weldToleranceM": 1e-06,
+        "components": [
+          {
+            "id": 0,
+            "triangles": 972,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 1,
+            "triangles": 972,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          }
+        ],
+        "solidComplete": true
+      },
+      "positionIndexJSONSHA256": "8e45a82625789a87a08166743252275057d01ce3a3414914eb0094bbb607ec21",
+      "solidInterpretationAccepted": false,
+      "penetrationToleranceM": 0.001,
+      "toleranceStatus": "H6 review gate; only original cushion has prior soft-contact tolerance",
+      "originalNodeName": "P02 grouped detail 161 54",
+      "meshIndex": 97,
+      "primitiveIndex": 0,
+      "positionAccessor": 305,
+      "indexAccessor": 99,
+      "vertexClearanceMarginM": 0.002
+    },
+    {
+      "id": "P02_grouped_detail_161_55",
+      "originalNodeIndex": 139,
+      "triangleCount": 1944,
+      "topology": {
+        "name": "P02_grouped_detail_161_55",
+        "triangles": 1944,
+        "degenerateTriangles": 0,
+        "weldToleranceM": 1e-06,
+        "components": [
+          {
+            "id": 0,
+            "triangles": 972,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 1,
+            "triangles": 972,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          }
+        ],
+        "solidComplete": true
+      },
+      "positionIndexJSONSHA256": "a64554fdc7b78a83ed9b4257da46f15092d0c35dce51805b082bd7643d77b245",
+      "solidInterpretationAccepted": false,
+      "penetrationToleranceM": 0.003,
+      "toleranceStatus": "H6 review gate; only original cushion has prior soft-contact tolerance",
+      "originalNodeName": "P02 grouped detail 161 55",
+      "meshIndex": 98,
+      "primitiveIndex": 0,
+      "positionAccessor": 307,
+      "indexAccessor": 99,
+      "vertexClearanceMarginM": 0
+    },
+    {
+      "id": "P02_bolster_hinge",
+      "originalNodeIndex": 141,
+      "triangleCount": 48,
+      "topology": {
+        "name": "P02_bolster_hinge",
+        "triangles": 48,
+        "degenerateTriangles": 0,
+        "weldToleranceM": 1e-06,
+        "components": [
+          {
+            "id": 0,
+            "triangles": 48,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          }
+        ],
+        "solidComplete": true
+      },
+      "positionIndexJSONSHA256": "3191dec438f9cbb550246b215f6cbaad7abdc6d4e38f7b8859281656634aa885",
+      "solidInterpretationAccepted": false,
+      "penetrationToleranceM": 0.001,
+      "toleranceStatus": "H6 review gate; only original cushion has prior soft-contact tolerance",
+      "originalNodeName": "P02 bolster hinge",
+      "meshIndex": 100,
+      "primitiveIndex": 0,
+      "positionAccessor": 311,
+      "indexAccessor": 313,
+      "vertexClearanceMarginM": 0.002
+    },
+    {
+      "id": "P02_bolster_support",
+      "originalNodeIndex": 142,
+      "triangleCount": 972,
+      "topology": {
+        "name": "P02_bolster_support",
+        "triangles": 972,
+        "degenerateTriangles": 0,
+        "weldToleranceM": 1e-06,
+        "components": [
+          {
+            "id": 0,
+            "triangles": 972,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          }
+        ],
+        "solidComplete": true
+      },
+      "positionIndexJSONSHA256": "2d74608f80768fef6c7a7dbd6576d6ce5e1f1e68a27f2464225c0f5bdba3bdad",
+      "solidInterpretationAccepted": false,
+      "penetrationToleranceM": 0.001,
+      "toleranceStatus": "H6 review gate; only original cushion has prior soft-contact tolerance",
+      "originalNodeName": "P02 bolster support",
+      "meshIndex": 101,
+      "primitiveIndex": 0,
+      "positionAccessor": 314,
+      "indexAccessor": 16,
+      "vertexClearanceMarginM": 0.002
+    },
+    {
+      "id": "P02_flip_bolster_cushion",
+      "originalNodeIndex": 143,
+      "triangleCount": 972,
+      "topology": {
+        "name": "P02_flip_bolster_cushion",
+        "triangles": 972,
+        "degenerateTriangles": 0,
+        "weldToleranceM": 1e-06,
+        "components": [
+          {
+            "id": 0,
+            "triangles": 972,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          }
+        ],
+        "solidComplete": true
+      },
+      "positionIndexJSONSHA256": "8967b1a60d3994f17aad75d956f3fba03b3bb1fb16bb6df7d56a738283f1c181",
+      "solidInterpretationAccepted": false,
+      "penetrationToleranceM": 0.001,
+      "toleranceStatus": "H6 review gate; only original cushion has prior soft-contact tolerance",
+      "originalNodeName": "P02 flip bolster cushion",
+      "meshIndex": 102,
+      "primitiveIndex": 0,
+      "positionAccessor": 316,
+      "indexAccessor": 16,
+      "vertexClearanceMarginM": 0.002
+    },
+    {
+      "id": "P02_front_inset",
+      "originalNodeIndex": 144,
+      "triangleCount": 972,
+      "topology": {
+        "name": "P02_front_inset",
+        "triangles": 972,
+        "degenerateTriangles": 0,
+        "weldToleranceM": 1e-06,
+        "components": [
+          {
+            "id": 0,
+            "triangles": 972,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          }
+        ],
+        "solidComplete": true
+      },
+      "positionIndexJSONSHA256": "ddf7a13d73846d9ff4d29a4fae792c5e1b36fd2bee6d9a2f123dfae248e6956e",
+      "solidInterpretationAccepted": false,
+      "penetrationToleranceM": 0.001,
+      "toleranceStatus": "H6 review gate; only original cushion has prior soft-contact tolerance",
+      "originalNodeName": "P02 front inset",
+      "meshIndex": 103,
+      "primitiveIndex": 0,
+      "positionAccessor": 318,
+      "indexAccessor": 16,
+      "vertexClearanceMarginM": 0.002
+    },
+    {
+      "id": "P02_bolster_hinge001",
+      "originalNodeIndex": 146,
+      "triangleCount": 48,
+      "topology": {
+        "name": "P02_bolster_hinge001",
+        "triangles": 48,
+        "degenerateTriangles": 0,
+        "weldToleranceM": 1e-06,
+        "components": [
+          {
+            "id": 0,
+            "triangles": 48,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          }
+        ],
+        "solidComplete": true
+      },
+      "positionIndexJSONSHA256": "3191dec438f9cbb550246b215f6cbaad7abdc6d4e38f7b8859281656634aa885",
+      "solidInterpretationAccepted": false,
+      "penetrationToleranceM": 0.001,
+      "toleranceStatus": "H6 review gate; only original cushion has prior soft-contact tolerance",
+      "originalNodeName": "P02 bolster hinge.001",
+      "meshIndex": 104,
+      "primitiveIndex": 0,
+      "positionAccessor": 320,
+      "indexAccessor": 313,
+      "vertexClearanceMarginM": 0.002
+    },
+    {
+      "id": "P02_bolster_support001",
+      "originalNodeIndex": 147,
+      "triangleCount": 972,
+      "topology": {
+        "name": "P02_bolster_support001",
+        "triangles": 972,
+        "degenerateTriangles": 0,
+        "weldToleranceM": 1e-06,
+        "components": [
+          {
+            "id": 0,
+            "triangles": 972,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          }
+        ],
+        "solidComplete": true
+      },
+      "positionIndexJSONSHA256": "2d74608f80768fef6c7a7dbd6576d6ce5e1f1e68a27f2464225c0f5bdba3bdad",
+      "solidInterpretationAccepted": false,
+      "penetrationToleranceM": 0.001,
+      "toleranceStatus": "H6 review gate; only original cushion has prior soft-contact tolerance",
+      "originalNodeName": "P02 bolster support.001",
+      "meshIndex": 105,
+      "primitiveIndex": 0,
+      "positionAccessor": 322,
+      "indexAccessor": 16,
+      "vertexClearanceMarginM": 0.002
+    },
+    {
+      "id": "P02_flip_bolster_cushion001",
+      "originalNodeIndex": 148,
+      "triangleCount": 972,
+      "topology": {
+        "name": "P02_flip_bolster_cushion001",
+        "triangles": 972,
+        "degenerateTriangles": 0,
+        "weldToleranceM": 1e-06,
+        "components": [
+          {
+            "id": 0,
+            "triangles": 972,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          }
+        ],
+        "solidComplete": true
+      },
+      "positionIndexJSONSHA256": "8967b1a60d3994f17aad75d956f3fba03b3bb1fb16bb6df7d56a738283f1c181",
+      "solidInterpretationAccepted": false,
+      "penetrationToleranceM": 0.001,
+      "toleranceStatus": "H6 review gate; only original cushion has prior soft-contact tolerance",
+      "originalNodeName": "P02 flip bolster cushion.001",
+      "meshIndex": 106,
+      "primitiveIndex": 0,
+      "positionAccessor": 324,
+      "indexAccessor": 16,
+      "vertexClearanceMarginM": 0.002
+    },
+    {
+      "id": "P02_front_inset001",
+      "originalNodeIndex": 149,
+      "triangleCount": 972,
+      "topology": {
+        "name": "P02_front_inset001",
+        "triangles": 972,
+        "degenerateTriangles": 0,
+        "weldToleranceM": 1e-06,
+        "components": [
+          {
+            "id": 0,
+            "triangles": 972,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          }
+        ],
+        "solidComplete": true
+      },
+      "positionIndexJSONSHA256": "ddf7a13d73846d9ff4d29a4fae792c5e1b36fd2bee6d9a2f123dfae248e6956e",
+      "solidInterpretationAccepted": false,
+      "penetrationToleranceM": 0.001,
+      "toleranceStatus": "H6 review gate; only original cushion has prior soft-contact tolerance",
+      "originalNodeName": "P02 front inset.001",
+      "meshIndex": 107,
+      "primitiveIndex": 0,
+      "positionAccessor": 326,
+      "indexAccessor": 16,
+      "vertexClearanceMarginM": 0.002
+    },
+    {
+      "id": "P02_grouped_detail_170_50",
+      "originalNodeIndex": 151,
+      "triangleCount": 3888,
+      "topology": {
+        "name": "P02_grouped_detail_170_50",
+        "triangles": 3888,
+        "degenerateTriangles": 0,
+        "weldToleranceM": 1e-06,
+        "components": [
+          {
+            "id": 0,
+            "triangles": 972,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 1,
+            "triangles": 972,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 2,
+            "triangles": 972,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 3,
+            "triangles": 972,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          }
+        ],
+        "solidComplete": true
+      },
+      "positionIndexJSONSHA256": "a29c837333e226d54576665690e8d1b44f64c8d44558e53ad436d2a6f5798958",
+      "solidInterpretationAccepted": false,
+      "penetrationToleranceM": 0.001,
+      "toleranceStatus": "H6 review gate; only original cushion has prior soft-contact tolerance",
+      "originalNodeName": "P02 grouped detail 170 50",
+      "meshIndex": 108,
+      "primitiveIndex": 0,
+      "positionAccessor": 328,
+      "indexAccessor": 48,
+      "vertexClearanceMarginM": 0.002
+    },
+    {
+      "id": "P02_grouped_detail_170_52",
+      "originalNodeIndex": 152,
+      "triangleCount": 1944,
+      "topology": {
+        "name": "P02_grouped_detail_170_52",
+        "triangles": 1944,
+        "degenerateTriangles": 0,
+        "weldToleranceM": 1e-06,
+        "components": [
+          {
+            "id": 0,
+            "triangles": 972,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 1,
+            "triangles": 972,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          }
+        ],
+        "solidComplete": true
+      },
+      "positionIndexJSONSHA256": "e0e996f68feaba6f2c1d46f23e34b3363a0b706e0e28946acaa410a3613755ef",
+      "solidInterpretationAccepted": false,
+      "penetrationToleranceM": 0.001,
+      "toleranceStatus": "H6 review gate; only original cushion has prior soft-contact tolerance",
+      "originalNodeName": "P02 grouped detail 170 52",
+      "meshIndex": 109,
+      "primitiveIndex": 0,
+      "positionAccessor": 330,
+      "indexAccessor": 99,
+      "vertexClearanceMarginM": 0.002
+    },
+    {
+      "id": "P02_grouped_detail_170_53",
+      "originalNodeIndex": 153,
+      "triangleCount": 5832,
+      "topology": {
+        "name": "P02_grouped_detail_170_53",
+        "triangles": 5832,
+        "degenerateTriangles": 0,
+        "weldToleranceM": 1e-06,
+        "components": [
+          {
+            "id": 0,
+            "triangles": 972,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 1,
+            "triangles": 972,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 2,
+            "triangles": 972,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 3,
+            "triangles": 972,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 4,
+            "triangles": 972,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 5,
+            "triangles": 972,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          }
+        ],
+        "solidComplete": true
+      },
+      "positionIndexJSONSHA256": "c6e462a89f9e3dfda8633d4f13470beee6c21f58cc57f7efbbec49e00b336a17",
+      "solidInterpretationAccepted": false,
+      "penetrationToleranceM": 0.001,
+      "toleranceStatus": "H6 review gate; only original cushion has prior soft-contact tolerance",
+      "originalNodeName": "P02 grouped detail 170 53",
+      "meshIndex": 110,
+      "primitiveIndex": 0,
+      "positionAccessor": 332,
+      "indexAccessor": 334,
+      "vertexClearanceMarginM": 0.002
+    },
+    {
+      "id": "P02_grouped_detail_170_56",
+      "originalNodeIndex": 154,
+      "triangleCount": 240,
+      "topology": {
+        "name": "P02_grouped_detail_170_56",
+        "triangles": 240,
+        "degenerateTriangles": 0,
+        "weldToleranceM": 1e-06,
+        "components": [
+          {
+            "id": 0,
+            "triangles": 80,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 1,
+            "triangles": 80,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 2,
+            "triangles": 80,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          }
+        ],
+        "solidComplete": true
+      },
+      "positionIndexJSONSHA256": "8a5ef1900cbbdd48ef33a63c9aaaf3d4438531735cd36915ca0b2bb9bf0e9221",
+      "solidInterpretationAccepted": false,
+      "penetrationToleranceM": 0.001,
+      "toleranceStatus": "H6 review gate; only original cushion has prior soft-contact tolerance",
+      "originalNodeName": "P02 grouped detail 170 56",
+      "meshIndex": 111,
+      "primitiveIndex": 0,
+      "positionAccessor": 335,
+      "indexAccessor": 337,
+      "vertexClearanceMarginM": 0.002
+    },
+    {
+      "id": "P02_grouped_detail_170_57",
+      "originalNodeIndex": 155,
+      "triangleCount": 240,
+      "topology": {
+        "name": "P02_grouped_detail_170_57",
+        "triangles": 240,
+        "degenerateTriangles": 0,
+        "weldToleranceM": 1e-06,
+        "components": [
+          {
+            "id": 0,
+            "triangles": 80,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 1,
+            "triangles": 80,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 2,
+            "triangles": 80,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          }
+        ],
+        "solidComplete": true
+      },
+      "positionIndexJSONSHA256": "093aff0b1b88d3864066509cc8027beda04bf69f9621fed7a1d09b74794b0b1d",
+      "solidInterpretationAccepted": false,
+      "penetrationToleranceM": 0.001,
+      "toleranceStatus": "H6 review gate; only original cushion has prior soft-contact tolerance",
+      "originalNodeName": "P02 grouped detail 170 57",
+      "meshIndex": 112,
+      "primitiveIndex": 0,
+      "positionAccessor": 338,
+      "indexAccessor": 337,
+      "vertexClearanceMarginM": 0.002
+    },
+    {
+      "id": "P02_grouped_detail_190_50",
+      "originalNodeIndex": 158,
+      "triangleCount": 3888,
+      "topology": {
+        "name": "P02_grouped_detail_190_50",
+        "triangles": 3888,
+        "degenerateTriangles": 0,
+        "weldToleranceM": 1e-06,
+        "components": [
+          {
+            "id": 0,
+            "triangles": 972,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 1,
+            "triangles": 972,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 2,
+            "triangles": 972,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 3,
+            "triangles": 972,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          }
+        ],
+        "solidComplete": true
+      },
+      "positionIndexJSONSHA256": "a29c837333e226d54576665690e8d1b44f64c8d44558e53ad436d2a6f5798958",
+      "solidInterpretationAccepted": false,
+      "penetrationToleranceM": 0.001,
+      "toleranceStatus": "H6 review gate; only original cushion has prior soft-contact tolerance",
+      "originalNodeName": "P02 grouped detail 190 50",
+      "meshIndex": 114,
+      "primitiveIndex": 0,
+      "positionAccessor": 342,
+      "indexAccessor": 48,
+      "vertexClearanceMarginM": 0.002
+    },
+    {
+      "id": "P02_grouped_detail_190_52",
+      "originalNodeIndex": 159,
+      "triangleCount": 1944,
+      "topology": {
+        "name": "P02_grouped_detail_190_52",
+        "triangles": 1944,
+        "degenerateTriangles": 0,
+        "weldToleranceM": 1e-06,
+        "components": [
+          {
+            "id": 0,
+            "triangles": 972,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 1,
+            "triangles": 972,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          }
+        ],
+        "solidComplete": true
+      },
+      "positionIndexJSONSHA256": "e0e996f68feaba6f2c1d46f23e34b3363a0b706e0e28946acaa410a3613755ef",
+      "solidInterpretationAccepted": false,
+      "penetrationToleranceM": 0.001,
+      "toleranceStatus": "H6 review gate; only original cushion has prior soft-contact tolerance",
+      "originalNodeName": "P02 grouped detail 190 52",
+      "meshIndex": 115,
+      "primitiveIndex": 0,
+      "positionAccessor": 344,
+      "indexAccessor": 99,
+      "vertexClearanceMarginM": 0.002
+    },
+    {
+      "id": "P02_grouped_detail_190_53",
+      "originalNodeIndex": 160,
+      "triangleCount": 5832,
+      "topology": {
+        "name": "P02_grouped_detail_190_53",
+        "triangles": 5832,
+        "degenerateTriangles": 0,
+        "weldToleranceM": 1e-06,
+        "components": [
+          {
+            "id": 0,
+            "triangles": 972,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 1,
+            "triangles": 972,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 2,
+            "triangles": 972,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 3,
+            "triangles": 972,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 4,
+            "triangles": 972,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 5,
+            "triangles": 972,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          }
+        ],
+        "solidComplete": true
+      },
+      "positionIndexJSONSHA256": "c6e462a89f9e3dfda8633d4f13470beee6c21f58cc57f7efbbec49e00b336a17",
+      "solidInterpretationAccepted": false,
+      "penetrationToleranceM": 0.001,
+      "toleranceStatus": "H6 review gate; only original cushion has prior soft-contact tolerance",
+      "originalNodeName": "P02 grouped detail 190 53",
+      "meshIndex": 116,
+      "primitiveIndex": 0,
+      "positionAccessor": 346,
+      "indexAccessor": 334,
+      "vertexClearanceMarginM": 0.002
+    },
+    {
+      "id": "P02_grouped_detail_190_56",
+      "originalNodeIndex": 161,
+      "triangleCount": 240,
+      "topology": {
+        "name": "P02_grouped_detail_190_56",
+        "triangles": 240,
+        "degenerateTriangles": 0,
+        "weldToleranceM": 1e-06,
+        "components": [
+          {
+            "id": 0,
+            "triangles": 80,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 1,
+            "triangles": 80,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 2,
+            "triangles": 80,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          }
+        ],
+        "solidComplete": true
+      },
+      "positionIndexJSONSHA256": "8a5ef1900cbbdd48ef33a63c9aaaf3d4438531735cd36915ca0b2bb9bf0e9221",
+      "solidInterpretationAccepted": false,
+      "penetrationToleranceM": 0.001,
+      "toleranceStatus": "H6 review gate; only original cushion has prior soft-contact tolerance",
+      "originalNodeName": "P02 grouped detail 190 56",
+      "meshIndex": 117,
+      "primitiveIndex": 0,
+      "positionAccessor": 348,
+      "indexAccessor": 337,
+      "vertexClearanceMarginM": 0.002
+    },
+    {
+      "id": "P02_grouped_detail_190_57",
+      "originalNodeIndex": 162,
+      "triangleCount": 240,
+      "topology": {
+        "name": "P02_grouped_detail_190_57",
+        "triangles": 240,
+        "degenerateTriangles": 0,
+        "weldToleranceM": 1e-06,
+        "components": [
+          {
+            "id": 0,
+            "triangles": 80,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 1,
+            "triangles": 80,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 2,
+            "triangles": 80,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          }
+        ],
+        "solidComplete": true
+      },
+      "positionIndexJSONSHA256": "093aff0b1b88d3864066509cc8027beda04bf69f9621fed7a1d09b74794b0b1d",
+      "solidInterpretationAccepted": false,
+      "penetrationToleranceM": 0.001,
+      "toleranceStatus": "H6 review gate; only original cushion has prior soft-contact tolerance",
+      "originalNodeName": "P02 grouped detail 190 57",
+      "meshIndex": 118,
+      "primitiveIndex": 0,
+      "positionAccessor": 350,
+      "indexAccessor": 337,
+      "vertexClearanceMarginM": 0.002
+    },
+    {
+      "id": "P02_grouped_detail_210_50",
+      "originalNodeIndex": 165,
+      "triangleCount": 3888,
+      "topology": {
+        "name": "P02_grouped_detail_210_50",
+        "triangles": 3888,
+        "degenerateTriangles": 0,
+        "weldToleranceM": 1e-06,
+        "components": [
+          {
+            "id": 0,
+            "triangles": 972,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 1,
+            "triangles": 972,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 2,
+            "triangles": 972,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 3,
+            "triangles": 972,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          }
+        ],
+        "solidComplete": true
+      },
+      "positionIndexJSONSHA256": "a29c837333e226d54576665690e8d1b44f64c8d44558e53ad436d2a6f5798958",
+      "solidInterpretationAccepted": false,
+      "penetrationToleranceM": 0.001,
+      "toleranceStatus": "H6 review gate; only original cushion has prior soft-contact tolerance",
+      "originalNodeName": "P02 grouped detail 210 50",
+      "meshIndex": 120,
+      "primitiveIndex": 0,
+      "positionAccessor": 354,
+      "indexAccessor": 48,
+      "vertexClearanceMarginM": 0.002
+    },
+    {
+      "id": "P02_grouped_detail_210_52",
+      "originalNodeIndex": 166,
+      "triangleCount": 1944,
+      "topology": {
+        "name": "P02_grouped_detail_210_52",
+        "triangles": 1944,
+        "degenerateTriangles": 0,
+        "weldToleranceM": 1e-06,
+        "components": [
+          {
+            "id": 0,
+            "triangles": 972,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 1,
+            "triangles": 972,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          }
+        ],
+        "solidComplete": true
+      },
+      "positionIndexJSONSHA256": "e0e996f68feaba6f2c1d46f23e34b3363a0b706e0e28946acaa410a3613755ef",
+      "solidInterpretationAccepted": false,
+      "penetrationToleranceM": 0.001,
+      "toleranceStatus": "H6 review gate; only original cushion has prior soft-contact tolerance",
+      "originalNodeName": "P02 grouped detail 210 52",
+      "meshIndex": 121,
+      "primitiveIndex": 0,
+      "positionAccessor": 356,
+      "indexAccessor": 99,
+      "vertexClearanceMarginM": 0.002
+    },
+    {
+      "id": "P02_grouped_detail_210_53",
+      "originalNodeIndex": 167,
+      "triangleCount": 5832,
+      "topology": {
+        "name": "P02_grouped_detail_210_53",
+        "triangles": 5832,
+        "degenerateTriangles": 0,
+        "weldToleranceM": 1e-06,
+        "components": [
+          {
+            "id": 0,
+            "triangles": 972,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 1,
+            "triangles": 972,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 2,
+            "triangles": 972,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 3,
+            "triangles": 972,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 4,
+            "triangles": 972,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 5,
+            "triangles": 972,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          }
+        ],
+        "solidComplete": true
+      },
+      "positionIndexJSONSHA256": "c6e462a89f9e3dfda8633d4f13470beee6c21f58cc57f7efbbec49e00b336a17",
+      "solidInterpretationAccepted": false,
+      "penetrationToleranceM": 0.001,
+      "toleranceStatus": "H6 review gate; only original cushion has prior soft-contact tolerance",
+      "originalNodeName": "P02 grouped detail 210 53",
+      "meshIndex": 122,
+      "primitiveIndex": 0,
+      "positionAccessor": 358,
+      "indexAccessor": 334,
+      "vertexClearanceMarginM": 0.002
+    },
+    {
+      "id": "P02_grouped_detail_210_56",
+      "originalNodeIndex": 168,
+      "triangleCount": 240,
+      "topology": {
+        "name": "P02_grouped_detail_210_56",
+        "triangles": 240,
+        "degenerateTriangles": 0,
+        "weldToleranceM": 1e-06,
+        "components": [
+          {
+            "id": 0,
+            "triangles": 80,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 1,
+            "triangles": 80,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 2,
+            "triangles": 80,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          }
+        ],
+        "solidComplete": true
+      },
+      "positionIndexJSONSHA256": "8a5ef1900cbbdd48ef33a63c9aaaf3d4438531735cd36915ca0b2bb9bf0e9221",
+      "solidInterpretationAccepted": false,
+      "penetrationToleranceM": 0.001,
+      "toleranceStatus": "H6 review gate; only original cushion has prior soft-contact tolerance",
+      "originalNodeName": "P02 grouped detail 210 56",
+      "meshIndex": 123,
+      "primitiveIndex": 0,
+      "positionAccessor": 360,
+      "indexAccessor": 337,
+      "vertexClearanceMarginM": 0.002
+    },
+    {
+      "id": "P02_grouped_detail_210_57",
+      "originalNodeIndex": 169,
+      "triangleCount": 240,
+      "topology": {
+        "name": "P02_grouped_detail_210_57",
+        "triangles": 240,
+        "degenerateTriangles": 0,
+        "weldToleranceM": 1e-06,
+        "components": [
+          {
+            "id": 0,
+            "triangles": 80,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 1,
+            "triangles": 80,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 2,
+            "triangles": 80,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          }
+        ],
+        "solidComplete": true
+      },
+      "positionIndexJSONSHA256": "093aff0b1b88d3864066509cc8027beda04bf69f9621fed7a1d09b74794b0b1d",
+      "solidInterpretationAccepted": false,
+      "penetrationToleranceM": 0.001,
+      "toleranceStatus": "H6 review gate; only original cushion has prior soft-contact tolerance",
+      "originalNodeName": "P02 grouped detail 210 57",
+      "meshIndex": 124,
+      "primitiveIndex": 0,
+      "positionAccessor": 362,
+      "indexAccessor": 337,
+      "vertexClearanceMarginM": 0.002
+    },
+    {
+      "id": "PLAY_STEERING_EX_Console__black",
+      "originalNodeIndex": 199,
+      "triangleCount": 1304,
+      "topology": {
+        "name": "PLAY_STEERING_EX_Console__black",
+        "triangles": 1304,
+        "degenerateTriangles": 0,
+        "weldToleranceM": 1e-06,
+        "components": [
+          {
+            "id": 0,
+            "triangles": 24,
+            "closed": false,
+            "boundaryEdges": 24,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 1,
+            "triangles": 1280,
+            "closed": false,
+            "boundaryEdges": 20,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          }
+        ],
+        "solidComplete": false
+      },
+      "positionIndexJSONSHA256": "56feeabc80abfcbd234cfdb16bcb8e8380380d9acb675fb979bfda636452ed64",
+      "solidInterpretationAccepted": false,
+      "penetrationToleranceM": 0.001,
+      "toleranceStatus": "H6 review gate; only original cushion has prior soft-contact tolerance",
+      "originalNodeName": "PLAY_STEERING_EX_Console__black",
+      "meshIndex": 147,
+      "primitiveIndex": 0,
+      "positionAccessor": 423,
+      "indexAccessor": 425,
+      "vertexClearanceMarginM": 0
+    },
+    {
+      "id": "PLAY_STEERING_EX_Console__chrome",
+      "originalNodeIndex": 200,
+      "triangleCount": 156,
+      "topology": {
+        "name": "PLAY_STEERING_EX_Console__chrome",
+        "triangles": 156,
+        "degenerateTriangles": 0,
+        "weldToleranceM": 1e-06,
+        "components": [
+          {
+            "id": 0,
+            "triangles": 96,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 1,
+            "triangles": 20,
+            "closed": false,
+            "boundaryEdges": 20,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 2,
+            "triangles": 20,
+            "closed": false,
+            "boundaryEdges": 20,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          },
+          {
+            "id": 3,
+            "triangles": 20,
+            "closed": false,
+            "boundaryEdges": 20,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          }
+        ],
+        "solidComplete": false
+      },
+      "positionIndexJSONSHA256": "9ab80cb6570e63d4078914d483ba530277403b22d8d593425c25be5507924d14",
+      "solidInterpretationAccepted": false,
+      "penetrationToleranceM": 0.001,
+      "toleranceStatus": "H6 review gate; only original cushion has prior soft-contact tolerance",
+      "originalNodeName": "PLAY_STEERING_EX_Console__chrome",
+      "meshIndex": 148,
+      "primitiveIndex": 0,
+      "positionAccessor": 426,
+      "indexAccessor": 428,
+      "vertexClearanceMarginM": 0
+    },
+    {
+      "id": "REPAIR06_Coaming_Closure_Port",
+      "originalNodeIndex": 213,
+      "triangleCount": 446,
+      "topology": {
+        "name": "REPAIR06_Coaming_Closure_Port",
+        "triangles": 446,
+        "degenerateTriangles": 0,
+        "weldToleranceM": 1e-06,
+        "components": [
+          {
+            "id": 0,
+            "triangles": 446,
+            "closed": false,
+            "boundaryEdges": 448,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          }
+        ],
+        "solidComplete": false
+      },
+      "positionIndexJSONSHA256": "8bb87d4634cce6288d179ffaaeccae439e21c3fe60dd06be9d247230784b2043",
+      "solidInterpretationAccepted": false,
+      "penetrationToleranceM": 0.001,
+      "toleranceStatus": "H6 review gate; only original cushion has prior soft-contact tolerance",
+      "originalNodeName": "REPAIR06_Coaming_Closure_Port",
+      "meshIndex": 159,
+      "primitiveIndex": 0,
+      "positionAccessor": 456,
+      "indexAccessor": 458,
+      "vertexClearanceMarginM": 0.002
+    },
+    {
+      "id": "REPAIR06_Coaming_Closure_Starboard",
+      "originalNodeIndex": 214,
+      "triangleCount": 446,
+      "topology": {
+        "name": "REPAIR06_Coaming_Closure_Starboard",
+        "triangles": 446,
+        "degenerateTriangles": 0,
+        "weldToleranceM": 1e-06,
+        "components": [
+          {
+            "id": 0,
+            "triangles": 446,
+            "closed": false,
+            "boundaryEdges": 448,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          }
+        ],
+        "solidComplete": false
+      },
+      "positionIndexJSONSHA256": "ff22cb01f2fadf9deafdd002d68fa531dfe8542017eaf51412a5125d04aa5552",
+      "solidInterpretationAccepted": false,
+      "penetrationToleranceM": 0.001,
+      "toleranceStatus": "H6 review gate; only original cushion has prior soft-contact tolerance",
+      "originalNodeName": "REPAIR06_Coaming_Closure_Starboard",
+      "meshIndex": 160,
+      "primitiveIndex": 0,
+      "positionAccessor": 459,
+      "indexAccessor": 461,
+      "vertexClearanceMarginM": 0.002
+    }
+  ]
+}

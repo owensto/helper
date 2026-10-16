@@ -1,0 +1,89 @@
+TAP version 13
+# Subtest: H7 audit trace1: NaN sampled point cannot certify a paused cached hand
+not ok 1 - H7 audit trace1: NaN sampled point cannot certify a paused cached hand
+  ---
+  duration_ms: 1.390125
+  type: 'test'
+  location: '/Users/oven/Documents/Codex/2026-10-15/task-2/humans/atlas_humans/tests/h7-paused-input.test.mjs:51:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly equal:
+    
+    true !== false
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: false
+  actual: true
+  operator: 'strictEqual'
+  stack: |-
+    rejects (file:///Users/oven/Documents/Codex/2026-10-15/task-2/humans/atlas_humans/tests/h7-paused-input.test.mjs:49:10)
+    TestContext.<anonymous> (file:///Users/oven/Documents/Codex/2026-10-15/task-2/humans/atlas_humans/tests/h7-paused-input.test.mjs:53:3)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.start (node:internal/test_runner/test:944:17)
+    startSubtestAfterBootstrap (node:internal/test_runner/harness:296:17)
+  ...
+# Subtest: H7 audit trace2: changed finite shoulder/reach cannot certify unreachable paused hands
+not ok 2 - H7 audit trace2: changed finite shoulder/reach cannot certify unreachable paused hands
+  ---
+  duration_ms: 0.217792
+  type: 'test'
+  location: '/Users/oven/Documents/Codex/2026-10-15/task-2/humans/atlas_humans/tests/h7-paused-input.test.mjs:59:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly equal:
+    
+    true !== false
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: false
+  actual: true
+  operator: 'strictEqual'
+  stack: |-
+    rejects (file:///Users/oven/Documents/Codex/2026-10-15/task-2/humans/atlas_humans/tests/h7-paused-input.test.mjs:49:10)
+    TestContext.<anonymous> (file:///Users/oven/Documents/Codex/2026-10-15/task-2/humans/atlas_humans/tests/h7-paused-input.test.mjs:61:3)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async startSubtestAfterBootstrap (node:internal/test_runner/harness:296:3)
+  ...
+# Subtest: H7 audit trace3: changed contact orientation at the same point invalidates pause
+not ok 3 - H7 audit trace3: changed contact orientation at the same point invalidates pause
+  ---
+  duration_ms: 0.398042
+  type: 'test'
+  location: '/Users/oven/Documents/Codex/2026-10-15/task-2/humans/atlas_humans/tests/h7-paused-input.test.mjs:71:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly equal:
+    
+    true !== false
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: false
+  actual: true
+  operator: 'strictEqual'
+  stack: |-
+    rejects (file:///Users/oven/Documents/Codex/2026-10-15/task-2/humans/atlas_humans/tests/h7-paused-input.test.mjs:49:10)
+    TestContext.<anonymous> (file:///Users/oven/Documents/Codex/2026-10-15/task-2/humans/atlas_humans/tests/h7-paused-input.test.mjs:73:3)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+1..3
+# tests 3
+# suites 0
+# pass 0
+# fail 3
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 58.266208

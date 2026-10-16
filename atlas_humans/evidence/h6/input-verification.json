@@ -1,0 +1,9 @@
+{
+  "status": "pass",
+  "modelSHA256": "b1ef9c448309a9a5d85ec4f2efcf45d9406d999ab24d27bdd1534359a7278b82",
+  "rigSHA256": "e80b6e82ac31c3bfb1134952e0bcb9b840fedc26b71dc90e9b387ae8cd28ecd3",
+  "animationSHA256": "b0f10003c14416330d30c41fe26d7ec86bc34e3b39ca9bd91ca78a54db415b94",
+  "sourceSetSHA256": "2b5f5d7f2758afce4f6953090c63dd7c35903c93be4fdd0b7422b14e79f70a3a",
+  "exactSourceNodesPrimitivesAccessorsAndGeometryVerified": 61,
+  "productionEnabled": false
+}
