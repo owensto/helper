@@ -1,0 +1,68 @@
+{
+  "scope": "Isolated actual-geometry authored RAF motion. No CORE integration or production acceptance.",
+  "productionEnabled": false,
+  "contactSlicePass": true,
+  "violations": [],
+  "renderedFrames": 653,
+  "durationSec": 15.0161,
+  "frameDeltaP95Sec": 0.03340000000000055,
+  "maxJointErrorM": 2.2867518749257596e-06,
+  "maxValidPalmDistanceM": 0.002955070698606459,
+  "bothHandsFreeFrames": 0,
+  "bothHandsFreeTimeSec": 0,
+  "kinematics": [
+    {
+      "maxSpeedMps": 0.12715863525500332,
+      "maxAccelerationMps2": 10.000000000000043,
+      "maxAngularSpeedRadSec": 0.0,
+      "maxFingerBlendPerSec": 4.0000000000000036,
+      "contactFraction": 0.9938744257274119
+    },
+    {
+      "maxSpeedMps": 0.24725623804176405,
+      "maxAccelerationMps2": 8.983513932434686,
+      "maxAngularSpeedRadSec": 4.229150853488211,
+      "maxFingerBlendPerSec": 4.0000000000000036,
+      "contactFraction": 0.9525267993874426
+    }
+  ],
+  "lifecycle": {
+    "pauseStable": true,
+    "changedPausedSurface": "PAUSED_SURFACE_MOVED",
+    "reset": true,
+    "ejection": "HAND_CONTEXT_UNAVAILABLE",
+    "cleared": true,
+    "reentry": true
+  },
+  "support": {
+    "seat": {
+      "probeCount": 1,
+      "missing": 0,
+      "minGapM": -0.001934096230547598,
+      "maxGapM": -0.0011482843472271076,
+      "minMarginM": 0.03238677093126563
+    },
+    "leftFoot": {
+      "probeCount": 42,
+      "missing": 0,
+      "minGapM": 0.002069005801626715,
+      "maxGapM": 0.005826974463240382,
+      "minMarginM": 0.005957804452228488
+    },
+    "rightFoot": {
+      "probeCount": 42,
+      "missing": 0,
+      "minGapM": 0.002069180436167377,
+      "maxGapM": 0.005826467094426392,
+      "minMarginM": 0.005965846448656609
+    }
+  },
+  "budget": {
+    "wholeCharacterMedianMs": 3.2999999970197678,
+    "wholeCharacterP95Ms": 3.8999999910593033,
+    "wholeCharacterMaxMs": 7.300000011920929,
+    "rigUpdateP95Ms": 0.29999999701976776,
+    "targetP95Ms": 4,
+    "pass": true
+  }
+}

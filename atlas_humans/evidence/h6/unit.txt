@@ -1,0 +1,386 @@
+
+> atlas_humans@1.0.0 test
+> node --test tests/*.test.mjs
+
+TAP version 13
+# Subtest: existing captain transform consumes vessel-local anchors without second insertion
+ok 1 - existing captain transform consumes vessel-local anchors without second insertion
+  ---
+  duration_ms: 1.457
+  type: 'test'
+  ...
+# Subtest: unknown anchors stay visually hidden even when old host sets captain visibility
+ok 2 - unknown anchors stay visually hidden even when old host sets captain visibility
+  ---
+  duration_ms: 0.239916
+  type: 'test'
+  ...
+# Subtest: host epoch change resets balance before backwards simulation time
+ok 3 - host epoch change resets balance before backwards simulation time
+  ---
+  duration_ms: 1.160833
+  type: 'test'
+  ...
+# Subtest: bad frames hide the visual, do not update rig, and recover on a valid new frame
+ok 4 - bad frames hide the visual, do not update rig, and recover on a valid new frame
+  ---
+  duration_ms: 1.018666
+  type: 'test'
+  ...
+# Subtest: render pose mismatch and detached/scaled captain are not accepted as current contacts
+ok 5 - render pose mismatch and detached/scaled captain are not accepted as current contacts
+  ---
+  duration_ms: 0.208542
+  type: 'test'
+  ...
+# Subtest: captain detached from its supplied vessel stays unsupported
+ok 6 - captain detached from its supplied vessel stays unsupported
+  ---
+  duration_ms: 0.087375
+  type: 'test'
+  ...
+# Subtest: H3 throwing diagnostic sink is contained during init, invalid hide and exception catch
+ok 7 - H3 throwing diagnostic sink is contained during init, invalid hide and exception catch
+  ---
+  duration_ms: 0.263708
+  type: 'test'
+  ...
+# Subtest: H4 forwards complete reviewed rig pose and hides malformed orientations
+ok 8 - H4 forwards complete reviewed rig pose and hides malformed orientations
+  ---
+  duration_ms: 0.575166
+  type: 'test'
+  ...
+# Subtest: H5 forwards finger blend with separate truthful hand state, clearing it on loss
+ok 9 - H5 forwards finger blend with separate truthful hand state, clearing it on loss
+  ---
+  duration_ms: 0.50975
+  type: 'test'
+  ...
+# Subtest: H4 candidate binds exact C2 contact and rig assets; production remains off
+ok 10 - H4 candidate binds exact C2 contact and rig assets; production remains off
+  ---
+  duration_ms: 6.229041
+  type: 'test'
+  ...
+# Subtest: H4 calibrated hand orientations roundtrip from contact to vessel frame
+ok 11 - H4 calibrated hand orientations roundtrip from contact to vessel frame
+  ---
+  duration_ms: 0.264625
+  type: 'test'
+  ...
+# Subtest: H4 malformed posture/orientation rejects before rig use
+ok 12 - H4 malformed posture/orientation rejects before rig use
+  ---
+  duration_ms: 0.823917
+  type: 'test'
+  ...
+# Subtest: H4 full steering requires release/regrip; review bounds never clamp controls or enable production
+ok 13 - H4 full steering requires release/regrip; review bounds never clamp controls or enable production
+  ---
+  duration_ms: 1.148417
+  type: 'test'
+  ...
+# Subtest: final C1 hook provides rigid cardinal/tilted render matrices without stepping host
+ok 14 - final C1 hook provides rigid cardinal/tilted render matrices without stepping host
+  ---
+  duration_ms: 14.528583
+  type: 'test'
+  ...
+# Subtest: final C1 repeated/paused reads do not consume time; original reset advances epoch
+ok 15 - final C1 repeated/paused reads do not consume time; original reset advances epoch
+  ---
+  duration_ms: 9.311125
+  type: 'test'
+  ...
+# Subtest: final C1 actual anchor reader rejects absent contacts, ejection, detached captain and yacht
+ok 16 - final C1 actual anchor reader rejects absent contacts, ejection, detached captain and yacht
+  ---
+  duration_ms: 7.939333
+  type: 'test'
+  ...
+# Subtest: final C1 world changes invalidate earlier receiving revision
+ok 17 - final C1 world changes invalidate earlier receiving revision
+  ---
+  duration_ms: 7.851833
+  type: 'test'
+  ...
+# Subtest: remote pose accepts only expected identity/geometry and increasing sequence
+ok 18 - remote pose accepts only expected identity/geometry and increasing sequence
+  ---
+  duration_ms: 1.639667
+  type: 'test'
+  ...
+# Subtest: H3 rejects identities missing from both packet and expected context
+ok 19 - H3 rejects identities missing from both packet and expected context
+  ---
+  duration_ms: 0.35725
+  type: 'test'
+  ...
+# Subtest: H3 rejects empty identities on both packet and expected context
+ok 20 - H3 rejects empty identities on both packet and expected context
+  ---
+  duration_ms: 0.147625
+  type: 'test'
+  ...
+# Subtest: H3 rejects NaN and malformed sequence cursors before comparison
+ok 21 - H3 rejects NaN and malformed sequence cursors before comparison
+  ---
+  duration_ms: 0.158708
+  type: 'test'
+  ...
+# Subtest: H3 missing expected context rejects without throwing
+ok 22 - H3 missing expected context rejects without throwing
+  ---
+  duration_ms: 0.121167
+  type: 'test'
+  ...
+# Subtest: closed cube interior depth and exterior nearest surface have exact witnesses
+ok 23 - closed cube interior depth and exterior nearest surface have exact witnesses
+  ---
+  duration_ms: 4.190667
+  type: 'test'
+  ...
+# Subtest: rigid moving vessel/source frames preserve measured penetration
+ok 24 - rigid moving vessel/source frames preserve measured penetration
+  ---
+  duration_ms: 0.688833
+  type: 'test'
+  ...
+# Subtest: open plane cannot manufacture a signed solid; body edge crossing still detected
+ok 25 - open plane cannot manufacture a signed solid; body edge crossing still detected
+  ---
+  duration_ms: 0.436709
+  type: 'test'
+  ...
+# Subtest: thin obstacle crossing is detected with both body edge endpoints outside
+ok 26 - thin obstacle crossing is detected with both body edge endpoints outside
+  ---
+  duration_ms: 0.437958
+  type: 'test'
+  ...
+# Subtest: missing/open geometry cannot become clearance PASS; proven collisions dominate unknown
+ok 27 - missing/open geometry cannot become clearance PASS; proven collisions dominate unknown
+  ---
+  duration_ms: 0.10175
+  type: 'test'
+  ...
+# Subtest: malformed geometry/queries rejected
+ok 28 - malformed geometry/queries rejected
+  ---
+  duration_ms: 0.188291
+  type: 'test'
+  ...
+# Subtest: receiver binds independent current frame, source coverage and body/lifecycle revisions
+ok 29 - receiver binds independent current frame, source coverage and body/lifecycle revisions
+  ---
+  duration_ms: 0.465458
+  type: 'test'
+  ...
+# Subtest: open boundaries and reversed winding do not grant a closed solid
+ok 30 - open boundaries and reversed winding do not grant a closed solid
+  ---
+  duration_ms: 0.234875
+  type: 'test'
+  ...
+# Subtest: local contacts remain invariant through repeated rough vessel motion
+ok 31 - local contacts remain invariant through repeated rough vessel motion
+  ---
+  duration_ms: 15.141833
+  type: 'test'
+  ...
+# Subtest: pause does not change balance and backwards time requires reset
+ok 32 - pause does not change balance and backwards time requires reset
+  ---
+  duration_ms: 0.434292
+  type: 'test'
+  ...
+# Subtest: bad time and geometry fail explicitly
+ok 33 - bad time and geometry fail explicitly
+  ---
+  duration_ms: 0.351083
+  type: 'test'
+  ...
+# Subtest: snapshot copies values without transport or vessel mutation
+ok 34 - snapshot copies values without transport or vessel mutation
+  ---
+  duration_ms: 0.561583
+  type: 'test'
+  ...
+# Subtest: IK holds reachable targets after moving rotated parent
+ok 35 - IK holds reachable targets after moving rotated parent
+  ---
+  duration_ms: 9.057708
+  type: 'test'
+  ...
+# Subtest: IK reports unreachable target without stretching bones
+ok 36 - IK reports unreachable target without stretching bones
+  ---
+  duration_ms: 0.205084
+  type: 'test'
+  ...
+# Subtest: pause is idempotent; changed paused source fails closed until reset
+ok 37 - pause is idempotent; changed paused source fails closed until reset
+  ---
+  duration_ms: 2.983833
+  type: 'test'
+  ...
+# Subtest: no synthetic delta, backwards time, or oversized frame accepted
+ok 38 - no synthetic delta, backwards time, or oversized frame accepted
+  ---
+  duration_ms: 1.790875
+  type: 'test'
+  ...
+# Subtest: ejection clears state and requires a fresh zero-delta initialization
+ok 39 - ejection clears state and requires a fresh zero-delta initialization
+  ---
+  duration_ms: 0.356333
+  type: 'test'
+  ...
+# Subtest: smoothed miss is reported free, never a material lock; acceleration bounded
+ok 40 - smoothed miss is reported free, never a material lock; acceleration bounded
+  ---
+  duration_ms: 6.345417
+  type: 'test'
+  ...
+# Subtest: unreachable source and malformed configuration rejected
+ok 41 - unreachable source and malformed configuration rejected
+  ---
+  duration_ms: 0.183833
+  type: 'test'
+  ...
+# Subtest: walk remains within owner supplied patch and stops at edge
+ok 42 - walk remains within owner supplied patch and stops at edge
+  ---
+  duration_ms: 11.00625
+  type: 'test'
+  ...
+# Subtest: standing feet stay planted and pause preserves pose
+ok 43 - standing feet stay planted and pause preserves pose
+  ---
+  duration_ms: 1.231166
+  type: 'test'
+  ...
+# Subtest: capsule stops before obstacle and unavailable deck fails closed
+ok 44 - capsule stops before obstacle and unavailable deck fails closed
+  ---
+  duration_ms: 1.985625
+  type: 'test'
+  ...
+# Subtest: edge stop settles raised foot continuously and freezes exactly during pause
+ok 45 - edge stop settles raised foot continuously and freezes exactly during pause
+  ---
+  duration_ms: 1.515041
+  type: 'test'
+  ...
+# Subtest: walking foot targets stop outside obstacle, not just pelvis
+ok 46 - walking foot targets stop outside obstacle, not just pelvis
+  ---
+  duration_ms: 0.50325
+  type: 'test'
+  ...
+# Subtest: lost deck validity cannot silently resume with cached support
+ok 47 - lost deck validity cannot silently resume with cached support
+  ---
+  duration_ms: 0.117667
+  type: 'test'
+  ...
+# Subtest: C1 exact owner descriptor preserves captain root but rejects missing physical contacts
+ok 48 - C1 exact owner descriptor preserves captain root but rejects missing physical contacts
+  ---
+  duration_ms: 0.73625
+  type: 'test'
+  ...
+# Subtest: Y1 real owner sampler cannot turn absent helm into an origin attachment
+ok 49 - Y1 real owner sampler cannot turn absent helm into an origin attachment
+  ---
+  duration_ms: 1.248917
+  type: 'test'
+  ...
+# Subtest: actual R7 foredeck point hit never becomes whole-foot or walkable-rectangle approval
+ok 50 - actual R7 foredeck point hit never becomes whole-foot or walkable-rectangle approval
+  ---
+  duration_ms: 1.37575
+  type: 'test'
+  ...
+# Subtest: Y1 conversion, submerged and vessel switching fail closed; old frame cannot revive support
+ok 51 - Y1 conversion, submerged and vessel switching fail closed; old frame cannot revive support
+  ---
+  duration_ms: 1.15325
+  type: 'test'
+  ...
+# Subtest: owner fixture bytes match pinned provenance
+ok 52 - owner fixture bytes match pinned provenance
+  ---
+  duration_ms: 0.820708
+  type: 'test'
+  ...
+# Subtest: rig rejects nonfinite contacts, phase and balance before evaluating skeleton
+ok 53 - rig rejects nonfinite contacts, phase and balance before evaluating skeleton
+  ---
+  duration_ms: 1.952625
+  type: 'test'
+  ...
+# Subtest: finger opening is bounded and optional
+ok 54 - finger opening is bounded and optional
+  ---
+  duration_ms: 3.564667
+  type: 'test'
+  ...
+# Subtest: H3 publisher rejects absent vessel and geometry identities
+ok 55 - H3 publisher rejects absent vessel and geometry identities
+  ---
+  duration_ms: 1.646625
+  type: 'test'
+  ...
+# Subtest: H3 published valid state roundtrips through receiver bounds
+ok 56 - H3 published valid state roundtrips through receiver bounds
+  ---
+  duration_ms: 0.296125
+  type: 'test'
+  ...
+# Subtest: right-handed tilted transform and inverse round-trip without changing axes
+ok 57 - right-handed tilted transform and inverse round-trip without changing axes
+  ---
+  duration_ms: 0.741917
+  type: 'test'
+  ...
+# Subtest: missing, NaN, infinity, scale, shear, reflection and perspective rejected
+ok 58 - missing, NaN, infinity, scale, shear, reflection and perspective rejected
+  ---
+  duration_ms: 0.174542
+  type: 'test'
+  ...
+# Subtest: inverse, stale timestamp and simulation epoch mismatch reject
+ok 59 - inverse, stale timestamp and simulation epoch mismatch reject
+  ---
+  duration_ms: 0.198709
+  type: 'test'
+  ...
+# Subtest: source barycentric witness moves rigidly and closest lies on actual triangle
+ok 60 - source barycentric witness moves rigidly and closest lies on actual triangle
+  ---
+  duration_ms: 1.5695
+  type: 'test'
+  ...
+# Subtest: nonfinite/outside barycentric and nonrigid frames rejected
+ok 61 - nonfinite/outside barycentric and nonrigid frames rejected
+  ---
+  duration_ms: 0.828833
+  type: 'test'
+  ...
+# Subtest: in-place source change cannot silently remount
+ok 62 - in-place source change cannot silently remount
+  ---
+  duration_ms: 0.170042
+  type: 'test'
+  ...
+1..62
+# tests 62
+# suites 0
+# pass 62
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 453.979625
