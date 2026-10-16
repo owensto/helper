@@ -272,3 +272,59 @@ test("H4 forwards complete reviewed rig pose and hides malformed orientations", 
   assert.equal(result.valid, false);
   assert.equal(received, null);
 });
+
+test("H5 forwards finger blend with separate truthful hand state, clearing it on loss", () => {
+  const group = new Group(),
+    boat = new Group();
+  boat.add(group);
+  let received = null;
+  const contact = {
+    state: "sliding",
+    contactValid: true,
+    materialLocked: false,
+    source: { triangle: 12, barycentric: [0.2, 0.3, 0.5] },
+  };
+  const sample = {
+    valid: true,
+    attachment,
+    frame: { epoch: "h5", time: 0, dt: 0 },
+    transform: stamp(boat, "h5", 0),
+    rigPose: {
+      torsoPitch: 0.8,
+      balanceGain: 0.15,
+      handOrientations: [
+        [0, 0, 0, 1],
+        [0, 0, 0, 1],
+      ],
+      footOrientations: [
+        [0, 0, 0, 1],
+        [0, 0, 0, 1],
+      ],
+      handGrip: [0.25, 0.75],
+      handContacts: [
+        contact,
+        { ...contact, state: "reaching", contactValid: false },
+      ],
+    },
+  };
+  const f = makeCaptain12Build({
+    rig: { group, update: (p) => (received = p) },
+    sampleHost: () => sample,
+  })();
+  f.group.userData.animateCaptain({ boat }, {});
+  assert.deepEqual(received.handGrip, [0.25, 0.75]);
+  assert.equal(group.userData.handContacts[1].contactValid, false);
+  assert.equal(group.userData.attachmentValid, true);
+  received = null;
+  sample.rigPose.handContacts[1].contactValid = true;
+  assert.equal(
+    f.group.userData.animateCaptain({ boat }, {}).reason,
+    "HAND_CONTACT_SEMANTICS_INVALID",
+  );
+  assert.equal(received, null);
+  assert.equal(group.userData.handContacts, null);
+  sample.valid = false;
+  f.group.userData.animateCaptain({ boat }, {});
+  assert.equal(group.userData.attachmentValid, false);
+  assert.equal(group.userData.handContacts, null);
+});

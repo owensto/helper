@@ -31,3 +31,12 @@ test("rig rejects nonfinite contacts, phase and balance before evaluating skelet
     assert.throws(() => validateRigPose({ ...pose, ...patch }));
   assert.equal(validateRigPose(pose), pose);
 });
+
+test("finger opening is bounded and optional", () => {
+  for (const handGrip of [[NaN, 0], [-0.1, 1], [0, 1.1], [0]])
+    assert.throws(() => validateRigPose({ ...pose, handGrip }), /HAND_GRIP/);
+  assert.deepEqual(
+    validateRigPose({ ...pose, handGrip: [0, 1] }).handGrip,
+    [0, 1],
+  );
+});

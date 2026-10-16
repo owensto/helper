@@ -54,5 +54,10 @@ export function validateRigPose(pose) {
       ))
   )
     throw new TypeError("RIG_FOOT_ORIENTATION_INVALID");
+  if (
+    pose.handGrip !== undefined &&
+    (!vec(pose.handGrip, 2) || pose.handGrip.some((v) => v < 0 || v > 1))
+  )
+    throw new TypeError("RIG_HAND_GRIP_INVALID");
   return pose;
 }

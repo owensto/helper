@@ -1,0 +1,45 @@
+{
+  "schema": "atlas-human-hand-candidate/1",
+  "revision": "bay12-h5-release-slide/1",
+  "productionEnabled": false,
+  "ownerAccepted": false,
+  "baseProfilePath": "../bay12/profile.json",
+  "baseProfileSHA256": "2d8f1b640ac9ffad745e889984b264d55531b72d7f0496e611be4ca1ca824902",
+  "rimRegionSHA256": "a3f1242461f85897e4c3e729fd190ba714a0382d6246a01c8bc7693cae6b8f68",
+  "contactSemantics": {
+    "states": [
+      "sliding",
+      "reaching",
+      "released"
+    ],
+    "materialLocked": false,
+    "palmProbeToleranceM": 0.003,
+    "forceOrTorqueCapability": false
+  },
+  "scope": "One release and re-establishment of sliding palm contact. Not continuous hand-over-hand steering. Seat and sole support checked separately.",
+  "testEnvelope": {
+    "wheelRangeRad": [
+      -3.3,
+      3.3
+    ],
+    "wheelMaxVelocityRadSec": 3.96,
+    "rollAmplitudeRad": 0.08,
+    "pitchAmplitudeRad": 0.06,
+    "heaveAmplitudeM": 0.12,
+    "maxHostDtSec": 0.1,
+    "rigHeightM": 1.93
+  },
+  "budget": {
+    "wholeCharacterP95TargetMs": 4,
+    "includes": [
+      "source validation and candidates",
+      "two rig evaluations",
+      "hand controller"
+    ],
+    "excludes": [
+      "renderer",
+      "skin probes",
+      "diagnostic source rays"
+    ]
+  }
+}

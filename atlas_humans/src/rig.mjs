@@ -200,7 +200,7 @@ export function createHelmRig(gltf, animations = {}, { heightM = 1.78 } = {}) {
           if (f !== hand && f.isBone && !f.name.includes("Finger0"))
             f.quaternion.setFromAxisAngle(
               new T.Vector3(0, 0, 1),
-              f.parent === hand ? 0.65 : 1.05,
+              (f.parent === hand ? 0.65 : 1.05) * (pose.handGrip?.[i] ?? 1),
             );
         });
       }

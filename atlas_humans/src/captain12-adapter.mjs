@@ -30,6 +30,7 @@ export function makeCaptain12Build({
     let lastFailure = null;
     const hide = (reason) => {
       group.userData.attachmentValid = false;
+      group.userData.handContacts = null;
       group.children.forEach((o) => (o.visible = false));
       contact = null;
       revision = null;
@@ -97,6 +98,7 @@ export function makeCaptain12Build({
         pose.seat = local(pose.seat);
         pose.feet = pose.feet.map(local);
         pose.hands = pose.hands.map(local);
+        group.userData.handContacts = null;
         if (sample.rigPose !== undefined) {
           const r = sample.rigPose;
           if (
@@ -112,6 +114,35 @@ export function makeCaptain12Build({
           pose.torsoPitch = r.torsoPitch;
           pose.handOrientations = structuredClone(r.handOrientations);
           pose.footOrientations = structuredClone(r.footOrientations);
+          if (r.handGrip !== undefined) {
+            if (
+              !Array.isArray(r.handContacts) ||
+              r.handContacts.length !== 2 ||
+              r.handContacts.some(
+                (h) =>
+                  !h ||
+                  !["sliding", "reaching", "released"].includes(h.state) ||
+                  typeof h.contactValid !== "boolean" ||
+                  h.materialLocked !== false ||
+                  h.contactValid !== (h.state === "sliding") ||
+                  !Number.isSafeInteger(h.source?.triangle) ||
+                  h.source.triangle < 0 ||
+                  !Array.isArray(h.source?.barycentric) ||
+                  h.source.barycentric.length !== 3 ||
+                  !h.source.barycentric.every(Number.isFinite) ||
+                  h.source.barycentric.some(
+                    (v) => v < -1e-10 || v > 1 + 1e-10,
+                  ) ||
+                  Math.abs(
+                    h.source.barycentric.reduce((a, b) => a + b, 0) - 1,
+                  ) > 1e-8,
+              )
+            )
+              return hide("HAND_CONTACT_SEMANTICS_INVALID");
+            pose.handGrip = structuredClone(r.handGrip);
+            group.userData.handContacts = structuredClone(r.handContacts);
+          } else if (r.handContacts !== undefined)
+            return hide("HAND_CONTACT_SEMANTICS_INVALID");
           pose.lean = pose.lean.map((v) => v * r.balanceGain);
           validateRigPose(pose);
         }
