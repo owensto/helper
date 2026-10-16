@@ -1,0 +1,146 @@
+name: ATLAS Sea Lab 12 verified publication
+on:
+  workflow_dispatch:
+  push:
+    paths: ['.github/workflows/atlas-sealab-12-publish.yml']
+permissions:
+  contents: read
+  actions: read
+concurrency:
+  group: atlas12-publish
+  cancel-in-progress: true
+env:
+  REVIEW_RUN: '38849136102'
+  REVIEW_COMMIT: 5c62a713b014b97a47bb65b65ec05f382a23ac77
+jobs:
+  publish:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    permissions:
+      contents: write
+      actions: read
+    outputs:
+      url: ${{ steps.release.outputs.url }}
+      commit: ${{ steps.release.outputs.commit }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.13'}
+      - name: Require successful reviewed source
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python - <<'PY'
+          import json,os,urllib.request
+          u='https://api.github.com/repos/owensto/helper/actions/runs/'+os.environ['REVIEW_RUN']
+          req=urllib.request.Request(u,headers={'Authorization':'Bearer '+os.environ['GH_TOKEN'],'Accept':'application/vnd.github+json'})
+          with urllib.request.urlopen(req,timeout=30) as response:d=json.load(response)
+          assert d['status']=='completed' and d['conclusion']=='success'
+          assert d['head_sha']==os.environ['REVIEW_COMMIT']
+          PY
+      - uses: actions/download-artifact@v4
+        with:
+          github-token: ${{ github.token }}
+          run-id: ${{ env.REVIEW_RUN }}
+          name: ATLAS-SeaLab12-Review-desktop
+          path: /tmp/atlas12/desktop
+      - uses: actions/download-artifact@v4
+        with:
+          github-token: ${{ github.token }}
+          run-id: ${{ env.REVIEW_RUN }}
+          name: ATLAS-SeaLab12-Review-phone
+          path: /tmp/atlas12/phone
+      - name: Gate reviewed assets and model structure
+        env:
+          DESKTOP_REVIEW: /tmp/atlas12/desktop
+          PHONE_REVIEW: /tmp/atlas12/phone
+        run: python atlas_sealab_12/prepare_publication12.py
+      - name: Publish the exact reviewed application
+        id: release
+        run: |
+          git config user.name 'ATLAS release'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -f atlas_sealab_12/live atlas_sealab_12/reviewed_source atlas_sealab_12/publication
+          git diff --cached --quiet || git commit -m 'Publish tested Sea Lab 12: shared waves and wakes, captain, live Geo Map and real Beaufort vectors'
+          git pull --rebase origin main
+          git push origin HEAD:main
+          echo "commit=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+          echo "url=https://rawcdn.githack.com/owensto/helper/$(git rev-parse HEAD)/atlas_sealab_12/live/index.html" >> "$GITHUB_OUTPUT"
+  verify_public:
+    needs: publish
+    runs-on: ubuntu-24.04
+    timeout-minutes: 16
+    strategy:
+      fail-fast: false
+      matrix:
+        device: [desktop, phone]
+    env:
+      TEST_DEVICE: ${{ matrix.device }}
+      BASE_URL: ${{ needs.publish.outputs.url }}
+      REVIEW_DIR: /tmp/public12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ needs.publish.outputs.commit }}
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.13'}
+      - name: Operate actual public URL without substituting assets
+        run: |
+          python -m pip install -q playwright==1.55.0
+          python -m playwright install --with-deps chromium >/dev/null
+          python atlas_sealab_12/verify_public12.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ATLAS-SeaLab12-Public-${{ matrix.device }}
+          path: /tmp/public12/
+          retention-days: 30
+  record:
+    needs: [publish, verify_public]
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    permissions:
+      contents: write
+      actions: read
+    env:
+      PUBLIC_URL: ${{ needs.publish.outputs.url }}
+      PUBLIC_COMMIT: ${{ needs.publish.outputs.commit }}
+    steps:
+      - uses: actions/checkout@v4
+        with: {ref: main}
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: ATLAS-SeaLab12-Public-*
+          path: /tmp/delivery12
+      - name: Record delivery and make portable package from exact published assets
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import json,os,shutil,subprocess,tarfile,hashlib
+          r=Path('atlas_sealab_12');out=Path('/tmp/delivery12')
+          reports=[json.loads(p.read_text()) for p in out.rglob('validation.json')]
+          assert len(reports)==2 and all(d['passed'] for d in reports)
+          tests=[t for d in reports for t in d['tests']]
+          assert {t['device'] for t in tests}=={'desktop','phone','small-phone','landscape'} and all(t['passed'] for t in tests)
+          result={'release':12,'url':os.environ['PUBLIC_URL'],'published_commit':os.environ['PUBLIC_COMMIT'],'passed':True,'exactPublicAssets':True,'physicalDeviceTested':False,'review_run':int(os.environ['REVIEW_RUN']),'tests':tests}
+          (r/'online_validation.json').write_text(json.dumps(result,indent=2))
+          (out/'delivery.json').write_text(json.dumps({'url':result['url'],'commit':result['published_commit'],'public_test_passed':True},indent=2))
+          archive=Path('/tmp/exact12.tar');subprocess.run(['git','archive','--format=tar','-o',str(archive),os.environ['PUBLIC_COMMIT'],'atlas_sealab_12'],check=True)
+          extracted=Path('/tmp/published12')
+          with tarfile.open(archive) as t:t.extractall(extracted,filter='data')
+          src=extracted/'atlas_sealab_12';pkg=Path('/tmp/ATLAS_Sea_Lab_12')
+          shutil.copytree(src/'live',pkg/'site',dirs_exist_ok=True);shutil.copytree(src/'reviewed_source',pkg/'source',dirs_exist_ok=True);shutil.copytree(src/'publication',pkg/'tests',dirs_exist_ok=True)
+          shutil.copy2(src/'README.md',pkg/'README.md');shutil.copy2(src/'validate_model12.py',pkg/'validate_model12.py');shutil.copy2(src/'reviewed_source/model-contract12.json',pkg/'model-contract12.json');shutil.copy2(r/'online_validation.json',pkg/'tests/public_validation.json');shutil.copy2(out/'delivery.json',pkg/'PLAY_ONLINE.json')
+          assert not any(p.suffix.lower() in ['.ttf','.otf','.woff','.woff2'] for p in pkg.rglob('*'))
+          shutil.make_archive(str(out/'ATLAS_Sea_Lab_12'),'zip',root_dir=pkg)
+          PY
+          git add atlas_sealab_12/online_validation.json
+          git diff --cached --quiet || git commit -m 'Record verified Sea Lab 12 public driving, captain and non-pausing map checks'
+          git pull --rebase origin main
+          git push origin HEAD:main
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ATLAS-SeaLab12-Delivery
+          path: /tmp/delivery12/
+          retention-days: 30
