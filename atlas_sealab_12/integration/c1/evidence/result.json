@@ -1,0 +1,176 @@
+{
+  "revision": "sealab12-core-integration/1.0.0",
+  "owner": "CORE",
+  "candidateStatus": "PASS_RECEIVING_OWNER_FINAL_ACKS_PENDING",
+  "sourceResultSHA": "36903985f2182c902427fed77d4e28c61a7639ca",
+  "reviewSourceSHA": "5c62a713b014b97a47bb65b65ec05f382a23ac77",
+  "publicBaselineSHA": "a2d4eecc12e7b4db14c7f94a6f6fc5088a4061ff",
+  "publicUnchanged": true,
+  "newPublicApplicationAcceptance": false,
+  "combinedAcceptance": false,
+  "branch": "atlas/core-sealab12-handoff-c1-20261016",
+  "workdir": "/mnt/data/core-sealab12-c1-20261016",
+  "workdirProvenance": "Reconstructed pinned package snapshot, not a recovered Mac or full upstream checkout; current source synchronized from final CI artifact.",
+  "run": 38853676550,
+  "runURL": "https://github.com/owensto/helper/actions/runs/38853676550",
+  "baselineAssetsVerified": 104,
+  "criticalRuntimeAssetHashes": 20,
+  "scope": "Unmodified Sea Lab 12 host plus isolated C1 loader/hooks; no YACHT, HUMANS or MULTIPLAYER implementation loaded.",
+  "candidateChangedFiles": [
+    ".github/workflows/atlas-sealab-12-core-handoff.yml",
+    "atlas_sealab_12/integration/c1/HANDOFF.md",
+    "atlas_sealab_12/integration/c1/descriptor.json",
+    "atlas_sealab_12/integration/c1/host-hooks.js",
+    "atlas_sealab_12/integration/c1/prepare.py",
+    "atlas_sealab_12/integration/c1/test-contract.cjs",
+    "atlas_sealab_12/integration/c1/verify.py"
+  ],
+  "evidenceOnlyAdditionalFile": "atlas_sealab_12/integration/c1/evidence/result.json",
+  "codeSourceHashes": {
+    "verify.py": "f8ff2f8e7fc098074ae7b2d58dcac4d5b31e4e5a71097d91c9203193ec0864d3",
+    "HANDOFF.md": "32b41eed79fe0f39ca889575fa5a0701d2501eea1e49b8f1ff7c158a999de0ad",
+    "descriptor.json": "851b0932720fcfbec786778cc71a9c76fecd4b1a96e322872b3574c6c7f41db3",
+    "atlas-sealab-12-core-handoff.yml": "9751658353936d714f84fabacf5a4b1a10f751ceb21190b4a3a10e7292ab49ef",
+    "prepare.py": "01ba7b6da79bd9c4d7d86c1d8133a1eb68856a9e0940f4325d6b005ee50259a7",
+    "test-contract.cjs": "4ce88e8d3453364f6a64e8b5a4346ce95cee2447a594bee4338ee4a5628331f4",
+    "host-hooks.js": "ad928f37dbfde0de2455a52744377a417a117c71c1a04f483283482d5728d9a1"
+  },
+  "tests": {
+    "desktop": {
+      "passed": true,
+      "layout": [1440, 960],
+      "staticContractTestsPassed": 10,
+      "browserBoundaryTestsPassed": 13,
+      "browserChecks": [
+        "Existing map remains live with usable controls",
+        "Map does not intercept driving controls",
+        "Immutable snapshots and reads never advance host physics/time",
+        "Exact cardinal/tilted YXZ, XYZW and inverse matrix mapping",
+        "Same captain instance and actual semantic pivot matrices retained",
+        "Water/depth sample uses current host field and time",
+        "World revision stable for pose/time; changes for config/weather",
+        "Eight Bay-only spawn slots checked; unknown yacht and occupancy fail closed",
+        "Local stopped restoration preserves clock/fuel; serialized tokens rejected",
+        "Geographic scene/tide revisions and unknown depth remain explicit",
+        "Unexpected physics/water rebinding fails closed",
+        "Disposal removes only its reset wrapper; no host step replacement",
+        "Concurrent attach has one owner and leaves the original host reset intact"
+      ],
+      "id": 12026510333,
+      "job": 116820266215,
+      "zipSHA256": "0e8a237dedd46ffc6c1cdbbdb1262e3f8e6723c4571d8dcc8c93d3fc9c75937f",
+      "artifactURL": "https://github.com/owensto/helper/actions/runs/38853676550/artifacts/12026510333",
+      "pageErrors": 0,
+      "shaderErrors": 0,
+      "ownedAssetErrors": 0,
+      "mapClock": {"start": 34.91666666666597, "end": 38.466666666665766},
+      "mapCapturePaused": false,
+      "renderStalls": 2,
+      "visibleResumeRecoveries": 2,
+      "maxMatrixInverseError": 5.329070518200751e-15,
+      "archiveHashVerifiedLocally": true,
+      "sourceManifestVerifiedLocally": true,
+      "screenshotsReviewed": ["map_no_pause", "captain_unchanged"]
+    },
+    "phone": {
+      "passed": true,
+      "layout": [430, 932],
+      "staticContractTestsPassed": 10,
+      "browserBoundaryTestsPassed": 13,
+      "browserChecks": [
+        "Existing map remains live with usable controls",
+        "Map does not intercept driving controls",
+        "Immutable snapshots and reads never advance host physics/time",
+        "Exact cardinal/tilted YXZ, XYZW and inverse matrix mapping",
+        "Same captain instance and actual semantic pivot matrices retained",
+        "Water/depth sample uses current host field and time",
+        "World revision stable for pose/time; changes for config/weather",
+        "Eight Bay-only spawn slots checked; unknown yacht and occupancy fail closed",
+        "Local stopped restoration preserves clock/fuel; serialized tokens rejected",
+        "Geographic scene/tide revisions and unknown depth remain explicit",
+        "Unexpected physics/water rebinding fails closed",
+        "Disposal removes only its reset wrapper; no host step replacement",
+        "Concurrent attach has one owner and leaves the original host reset intact"
+      ],
+      "id": 12026650056,
+      "job": 116820266422,
+      "zipSHA256": "c8ec3f8ebebc429433671a9ee96a16eefda33ec1c112afb3a6ab641e21f84748",
+      "artifactURL": "https://github.com/owensto/helper/actions/runs/38853676550/artifacts/12026650056",
+      "pageErrors": 0,
+      "shaderErrors": 0,
+      "ownedAssetErrors": 0,
+      "mapClock": {"start": 23.299999999999958, "end": 23.533333333333278},
+      "mapCapturePaused": false,
+      "renderStalls": 0,
+      "visibleResumeRecoveries": 0,
+      "maxMatrixInverseError": 8.881784197001252e-16,
+      "archiveHashVerifiedLocally": true,
+      "sourceManifestVerifiedLocally": true,
+      "screenshotsReviewed": ["map_no_pause", "captain_unchanged"]
+    }
+  },
+  "ownerDecisions": {
+    "YACHT": "ACCEPT proposed SI,+X forward,+Y up,+Z starboard,column-major matrices+inverse,XYZW. Exact host uses Euler(roll,-heading,pitch,YXZ); positive heading is negative Y rotation. Yacht helm, spawn/restore and transition occupancy unavailable.",
+    "HUMANS": "ACCEPT existing exclusive owner/task and captain reuse. Correct root to [-1.60,1.06,+0.18]; semantic pivots are not seat/grip/sole contacts. Integer clock epoch to receiver epoch plus consumed-dt mapping remains explicit receiving work.",
+    "MULTIPLAYER": "ACCEPT cooperative client-owned poses and separate authenticated entity identity. CORRECT no synchronized room physics origin, remote physics clock, shared collisions or crews. Raw C1 is not the M1 wire schema; rpm is not exposed and must not be fabricated."
+  },
+  "receivingOwnerStatusAtResult": {
+    "YACHT": {
+      "resultSHA": "09aeb97168c4cd627cb54766d8f9ef2e55b83183",
+      "comment": 6208351149,
+      "reportedComponentTests": "35 contact + 22 controller; isolated browser",
+      "Y2Claim": 6208490632,
+      "finalC1ResultACK": false
+    },
+    "HUMANS": {
+      "resultSHA": "347e52ebc4cdb38b7647bb54b37405fbe59b57cf",
+      "comment": 6208422895,
+      "reportedComponentTests": "28 unit plus five motion fixtures; not full host",
+      "principleACKs": [6208233415, 6208422895],
+      "finalC1ResultACK": false
+    },
+    "MULTIPLAYER": {
+      "resultSHA": "eff8ea71c76c867c58c37d21e06eff6057a17085",
+      "comment": 6208496171,
+      "reportedDiagnostics": 58,
+      "browserMotionPasses": 0,
+      "exactPinLockAudit": "BLOCKED",
+      "M3Active": true,
+      "finalC1ResultACK": false
+    },
+    "coordinator": {"XAC01Result": 6208269881, "H2ReviewClaim": 6208483857}
+  },
+  "receiverACKRequirements": [
+    "Exact descriptor revision and sourceResultSHA",
+    "Own result SHA, branch/workdir and exact adapter paths",
+    "Explicit worldRevision, vessel/design/instance/player identity and clock/activation-epoch mapping",
+    "Consumed dt cannot be assumed equal to fixedStepSeconds",
+    "Unavailable contact/occupancy states must remain unavailable",
+    "No direct MP wire serialization, missing RPM fabrication or remote restore-token use"
+  ],
+  "limitations": [
+    "Phone-sized Chromium/SwiftShader, not physical device or smooth-frame-rate certification",
+    "Read methods return render-committed transforms and no host stepping",
+    "Bay spawn checks require explicit current occupancy, conservative authored-basin envelope; not an atomic room reservation",
+    "Restore is local same-adapter stationary token recovery; no clock/fuel/damage rewind or reload persistence",
+    "WorldRevision agreement does not synchronize local wave phase",
+    "Existing public four-layout evidence is separate historical release evidence, not this C1 overlay public acceptance"
+  ],
+  "failureHistory": [
+    {
+      "run": 38852729578,
+      "codeSHA": "e8fa1471f078a1d50dee33bf3aa8ef33afb0042f",
+      "result": "initial automated pass; phone map screenshot later caught a render-stall pause after clock check. Superseded with capture-time state and visible-recovery evidence."
+    },
+    {
+      "run": 38853304098,
+      "codeSHA": "44b9943fbab8bc752b2700cdf11d316b1f0b94c0",
+      "result": "verifier failed: Playwright auto-invoked an unused returned reset method unbound. Removed test expression only; failure preserved."
+    }
+  ],
+  "nextBoundedStep": {
+    "id": "C2_PROPOSED_NOT_DISPATCHED",
+    "owner": "CORE with existing HUMANS receiver owner",
+    "scope": "After exact-result receiver ACK and the already-active coordinator mapping review, author one Bay helm physical-contact definition and explicit clock/identity/consumed-dt mapping, consume the pinned H2 receiver without changing its owned files, and test the existing captain lifecycle on the real host. Keep yacht unavailable and MP disabled. No new worker."
+  }
+}
