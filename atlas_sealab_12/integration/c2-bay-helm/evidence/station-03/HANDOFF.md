@@ -1,0 +1,41 @@
+# STATION-03 — one empty simulator helm proposal
+
+`core-bay-helm-station/3.0.0-proposal.1`, station `bay12.starboard-helm.station03`. Source is the immutable commit in the generated manifest. Baseline SETTLE02 is `41215520997eee85eff0dafb03ac21ed6203e60c`, public/model source `a2d4eecc12e7b4db14c7f94a6f6fc5088a4061ff`. No public release. This is a simulator geometry design, not a real-vessel structural, ergonomic or safety certification.
+
+## Assembly choice
+
+Replace the complete two-place leaning-post and under-seat tackle storage with ONE single-seat pedestal chair and separate linked foot plates. This is a whole assembly substitution, not a pocket around H6 vertex17. The thin pan and single full cushion replace the thick twin cushion/shell volume. A rear-supported back, pedestal and deck flange provide an explicit modeled support path. Both feet receive full finite plates on a transverse axle and deck-mounted posts/rails. The original forward and aft non-helm cushions stay in place.
+
+The raised wheel moves aft to the end of a closed console-mounted extension; the throttle moves to a separate near-seat side pedestal. All new members have finite dimensions and closed geometry. Joined members are union solids with intentional mating overlaps, not a claim of fasteners, load capacity, hose/cable routing or physical retrofit feasibility.
+
+`design.json` enumerates whole-node retirement and EXACT face ranges for the two mixed source groups. `build-design.py` resolves original node/mesh/primitive/accessors, original/rest transforms, source bytes, all surviving faces and replacement meanings. Its welded connectivity check verifies that no removal splits a connected source component. Original GLB bytes are unchanged. Runtime detach/re-index operations retire those exact components in BOTH rendering and variant collision definitions; unrelated geometry survives. Disposal restores every original object/geometry/pivot. Source names are only lookup aliases after byte/transform validation, not a collision-policy inference.
+
+The complete old drawer assemblies are explicitly absent, and their controls return unavailable. Empty original bolster control pivots are retained as the unchanged SETTLE02 driver mechanism. They no longer carry the original seat bolsters. Their shared 0..85-degree travel folds the two new foot plates. This repurposing is explicit; no seating transition is approved while occupied.
+
+## Nominal layout (vessel metres)
+
+Seat top0.980; foot tops0.510, separation0.320; seat-to-foot vertical drop0.470 versus baseline0.68944. Seat centerX=-1.870, foot centersX=-1.230. Single seat cushion500x540x60mm, rigid pan35mm. Each foot plate340x180x20mm, with finite support patch300x140mm. Wheel center[-1.34,1.32,.18], major radius165mm plus16mm grip tube (362mm outside diameter). Throttle pivot[-1.50,1.03,-.22]. Positions and member transforms are normative in `design.json` and evaluated exports.
+
+The retained avatar target remains the exact1.93m Rocketbox rig. `measurements.json` reads bind-segment lengths without running a rig or changing any pose. Reference shoulder/ankle/pelvis points are explicitly OWNER LAYOUT ASSUMPTIONS, not joint targets or HUMANS offsets. A roughly542mm reference shoulder-to-rim distance is inside a roughly589mm two-arm-segment sum; this necessary reach screening does not certify grip position, joint limits, torso/garment clearance, full steering, or simultaneous feet/seat/helm fit. Nominal scale from static bind bounds is not claimed identical to H4's posed calibration. New HUMANS profile and current-body testing are mandatory.
+
+## Collision and whole-body contact scope
+
+All new boxes/cylinders/torus/spokes are CLOSED. Rounded visual members use conservative closed OBB proxies, including their bevel voids; the receiver must evaluate the larger proxy. The wheel is a deliberately authored32mm-diameter closed torus tube, with closed18mm spokes and a closed60mm-diameter/56mm-depth hub; signed volume is no longer inferred from the incomplete old wheel. Exported vertices/indices/hashes and exact evaluated matrices accompany every new member. Analytic dimensions and triangulated representations are separately identifiable; edge chord error must not be taken as free penetration when evaluating the analytic solid.
+
+Every surviving original source remains an obstacle irrespective of visibility. Validated closed original components retain their interiors; each surviving original triangle additionally has an explicitly authored4mm symmetric closed triangular-prism guard. The prism generator is supplied and topology-tested. This4mm is a simulator collision guard, NOT a measured material thickness. No source has an exemption based on its name, camera visibility, or a favorable body witness. Original source/ref data is linked by hashes, not redistributed as a model bundle.
+
+Ordinary body/garment collision has zero penetration allowance, numerical tolerance1e-7m, and2mm ordinary separation. ONLY the finite flat seat patch allows posterior pelvis/upper-thigh garment up to3mm; ONLY the finite front back-pad patch allows posterior torso garment up to2mm. Those regions apply to complete contacting body elements, not a handpicked vertex. Rounding/edges, other cushion faces, pedestal, shell, joins, hub and spokes have no soft exemption. Both sole patches allow zero penetration and at most5mm contact separation. Hands/fingers can have at most1mm grip-tube compression in explicitly bounded rotating material arcs; arc membership does not assert material locking or supported full-range choreography. H5's region and H7 implementation are not adopted.
+
+Future acceptance must test all indexed skin vertices AND body/source edges/faces, coplanar/contained/self-intersection cases, garment geometry, all support and control states, plus conservative swept collision or continuous collision detection. Endpoint-only/AABB/selected-probe success is insufficient. Any unavailable closed-volume or swept result remains unavailable. No contact forces/compliance deformation are implemented by this geometry proposal.
+
+## Runtime and receiving gate
+
+Open only the generated `station-site/index.html?station03=1`. `bayHuman` requests reject before host startup. All original gameplay scripts and the SETTLE02 app/endstop module stay byte-identical. An attested startup supplies an EMPTY holder to the existing ensureDriver lifecycle; it never constructs or updates a human rig. No C1/H4 receiver is attached to this different station. Map, water, boat controls and existing loop are retained. New transforms follow that loop; no separate physics/time/RAF/network clock exists.
+
+Support geometry ready means: unchanged registered sources/new members plus exact evaluated down endstop. It NEVER means occupied/gameplay accepted. Target departure invalidates immediately; paused fittings may still move; settled-UP, mutations or unavailable states reject. SETTLE02 original predicates/tolerances remain exact. The prior SETTLE02 human diagnostic gates are rerun on their OWN unchanged candidate; those results cannot certify this unoccupied station.
+
+HUMANS remains paused. Receiving owner must explicitly ACK immutable CORE source + manifest + geometry/ledger/contact digests, retained rig/clip identities, proxy/contact/swept policy, and proposed station. Only afterward may that existing owner author a new profile and report full-body/seat/both-sole/helm support together. No old H4 profile or diagnostic ACK automatically transfers. No new worker, human edits, MP/M6 input transfer, credentials/services/permissions/purchases/accounts or deployment.
+
+## Evidence and limitations
+
+`test.cjs`: actual pinned Three.js geometry, closed topology, finite volume and support-surface checks; not human evidence. `verify.py`: desktop/phone actual-host source retirement, controls, foot articulation, invalid/restored sources, map, exported current matrices, and baseline restoration. Captured side/top detail camera views are actual simulator renders, not image-generation mockups. Detailed combined humanoid clearance/performance awaits the receiving owner. Exact final SHA/run/results and retained failures are in the PR1 result and artifact manifests.

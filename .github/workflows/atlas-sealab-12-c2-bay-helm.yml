@@ -1,13 +1,10 @@
-name: ATLAS CORE settlement and station assessment
+name: ATLAS CORE Station03 geometry proposal
 on:
   workflow_dispatch:
   push:
     branches: ['atlas/core-c2-bay-helm-20261016']
     paths:
-      - 'atlas_sealab_12/integration/c2-bay-helm/bolster-state.js'
-      - 'atlas_sealab_12/integration/c2-bay-helm/evidence/settlement-02/*.py'
-      - 'atlas_sealab_12/integration/c2-bay-helm/evidence/settlement-02/test.cjs'
-      - 'atlas_sealab_12/integration/c2-bay-helm/evidence/settlement-02/policy.json'
+      - 'atlas_sealab_12/integration/c2-bay-helm/evidence/station-03/**'
       - '.github/workflows/atlas-sealab-12-c2-bay-helm.yml'
 permissions:
   contents: read
@@ -21,7 +18,7 @@ jobs:
       matrix:
         device: [desktop, phone]
     runs-on: ubuntu-24.04
-    timeout-minutes: 24
+    timeout-minutes: 30
     env:
       TEST_DEVICE: ${{ matrix.device }}
       C2_OUT: /tmp/atlas-c2-bay-helm
@@ -44,8 +41,8 @@ jobs:
           PYGATE
           python - <<'PYNARROW'
           import subprocess
-          paths=subprocess.check_output(['git','diff','--name-only','f560ee69dc9bd766bd024c7571f866230445a790','HEAD'],text=True).splitlines()
-          assert all(p=='atlas_sealab_12/integration/c2-bay-helm/bolster-state.js' or p.startswith('atlas_sealab_12/integration/c2-bay-helm/evidence/settlement-02/') or p=='.github/workflows/atlas-sealab-12-c2-bay-helm.yml' for p in paths),paths
+          paths=subprocess.check_output(['git','diff','--name-only','41215520997eee85eff0dafb03ac21ed6203e60c','HEAD'],text=True).splitlines()
+          assert all(p.startswith('atlas_sealab_12/integration/c2-bay-helm/evidence/station-03/') or p=='.github/workflows/atlas-sealab-12-c2-bay-helm.yml' for p in paths),paths
           PYNARROW
           export GITHUB_SHA=f641b5f2eaf2305e9c86b851843304260a811078
           python atlas_sealab_12/integration/c2-bay-helm/prepare.py
@@ -84,44 +81,63 @@ jobs:
         run: |
           GITHUB_SHA=f560ee69dc9bd766bd024c7571f866230445a790 python atlas_sealab_12/integration/c2-bay-helm/evidence/occupancy-01/prepare.py test
           GITHUB_SHA=f560ee69dc9bd766bd024c7571f866230445a790 python atlas_sealab_12/integration/c2-bay-helm/evidence/occupancy-01/prepare.py snapshot
-          python atlas_sealab_12/integration/c2-bay-helm/evidence/settlement-02/prepare.py
+          GITHUB_SHA=41215520997eee85eff0dafb03ac21ed6203e60c python atlas_sealab_12/integration/c2-bay-helm/evidence/settlement-02/prepare.py
           node atlas_sealab_12/integration/c2-bay-helm/evidence/settlement-02/test.cjs > "$C2_OUT/settlement-unit.json"
           for f in "$C2_OUT/settlement-site/"*.js; do node --check "$f"; done
-          python -m pip install -q playwright==1.55.0
+          python -m pip install -q playwright==1.55.0 numpy==2.3.5
           python -m playwright install --with-deps chromium >/dev/null
           python -m http.server 8938 --bind 127.0.0.1 --directory "$C2_OUT/settlement-site" >"$C2_OUT/settlement-http.log" 2>&1 &
           sleep 1
-      - name: Full existing-host H4 diagnostic regressions on new candidate
+      - name: Retain SETTLE02 full regression on its unchanged separate candidate
         id: regression
         continue-on-error: true
         run: |
-          BASE_URL=http://127.0.0.1:8938/index.html python "$C2_OUT/verify-settlement-regression.py"
-      - name: Actual endpoint approach return paused motion and threshold captures
+          GITHUB_SHA=41215520997eee85eff0dafb03ac21ed6203e60c BASE_URL=http://127.0.0.1:8938/index.html python "$C2_OUT/verify-settlement-regression.py"
+      - name: Retain SETTLE02 actual endpoint and threshold gates separately
         if: always()
         id: settlement
         continue-on-error: true
         run: |
-          python atlas_sealab_12/integration/c2-bay-helm/evidence/settlement-02/verify.py
-      - name: One source-bound mechanical and support feasibility assessment
+          GITHUB_SHA=41215520997eee85eff0dafb03ac21ed6203e60c python atlas_sealab_12/integration/c2-bay-helm/evidence/settlement-02/verify.py
+      - name: Build one new source-bound empty station and closed collision geometry
         if: always()
-        id: feasibility
+        id: geometry
         continue-on-error: true
+        env:
+          S03_BASE: /tmp/atlas-c2-bay-helm
+          S03_OUT: /tmp/atlas-c2-bay-helm/station03
         run: |
-          python atlas_sealab_12/integration/c2-bay-helm/evidence/settlement-02/feasibility.py
-      - name: Preserve all outcomes without inferring gameplay acceptance
+          python atlas_sealab_12/integration/c2-bay-helm/evidence/station-03/build-design.py
+          node atlas_sealab_12/integration/c2-bay-helm/evidence/station-03/test.cjs > "$S03_OUT/geometry-unit.stdout"
+          python atlas_sealab_12/integration/c2-bay-helm/evidence/station-03/prepare.py
+          for f in "$S03_OUT/station-site/"*.js; do node --check "$f"; done
+      - name: Inspect empty station geometry articulation controls and restoration in actual host
+        if: always()
+        id: station
+        continue-on-error: true
+        env:
+          S03_BASE: /tmp/atlas-c2-bay-helm
+          S03_OUT: /tmp/atlas-c2-bay-helm/station03
+        run: |
+          test -f "$S03_OUT/station-build.json"
+          python -m http.server 8920 --bind 127.0.0.1 --directory "$S03_OUT/station-site" >"$S03_OUT/http.log" 2>&1 &
+          sleep 1
+          python atlas_sealab_12/integration/c2-bay-helm/evidence/station-03/verify.py
+      - name: Preserve independent baseline and new geometry outcomes
         if: always()
         env:
           REGRESSION: ${{ steps.regression.outcome }}
           SETTLEMENT: ${{ steps.settlement.outcome }}
-          FEASIBILITY: ${{ steps.feasibility.outcome }}
+          GEOMETRY: ${{ steps.geometry.outcome }}
+          STATION: ${{ steps.station.outcome }}
         run: |
           python - <<'PYRESULT'
           from pathlib import Path
           import os,json
           p=Path(os.environ['C2_OUT']);p.mkdir(exist_ok=True)
-          d={'sourceSHA':os.environ['GITHUB_SHA'],'regression':os.environ['REGRESSION'],'settlement':os.environ['SETTLEMENT'],'feasibilityAssessment':os.environ['FEASIBILITY'],'publicActivation':False,'fullBodyAccepted':False,'feasibleStationApproved':False}
+          d={'sourceSHA':os.environ['GITHUB_SHA'],'baselineSHA':'41215520997eee85eff0dafb03ac21ed6203e60c','baselineRegression':os.environ['REGRESSION'],'baselineSettlement':os.environ['SETTLEMENT'],'stationGeometry':os.environ['GEOMETRY'],'stationBrowser':os.environ['STATION'],'humanFitting':False,'humanActivation':False,'fullBodyAccepted':False,'publicActivation':False,'combinedAcceptance':False}
           (p/'iteration-outcomes.json').write_text(json.dumps(d,indent=2))
-          assert all(d[k]=='success' for k in ['regression','settlement','feasibilityAssessment']),d
+          assert all(d[k]=='success' for k in ['baselineRegression','baselineSettlement','stationGeometry','stationBrowser']),d
           PYRESULT
       - name: Preserve exact source and archive manifest, including failures
         if: always()
@@ -129,6 +145,7 @@ jobs:
           mkdir -p "$C2_OUT/source"
           cp atlas_sealab_12/integration/c2-bay-helm/*.* "$C2_OUT/source/"
           cp -r atlas_sealab_12/integration/c2-bay-helm/evidence/settlement-02 "$C2_OUT/source/"
+          cp -r atlas_sealab_12/integration/c2-bay-helm/evidence/station-03 "$C2_OUT/source/"
           cp .github/workflows/atlas-sealab-12-c2-bay-helm.yml "$C2_OUT/source/"
           printf '%s\n' "$GITHUB_SHA" > "$C2_OUT/source-sha.txt"
           python - <<'PYHASH'
@@ -140,6 +157,6 @@ jobs:
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: ATLAS-CORE-Settlement02-${{ matrix.device }}
+          name: ATLAS-CORE-Station03-${{ matrix.device }}
           path: /tmp/atlas-c2-bay-helm/
           retention-days: 30
