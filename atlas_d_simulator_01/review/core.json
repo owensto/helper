@@ -1,0 +1,94 @@
+{
+  "passed": true,
+  "total": 22,
+  "tests": [
+    {
+      "name": "Original dimensional identity and no engineering claim",
+      "passed": true
+    },
+    {
+      "name": "Neutral and idle are required to start propulsion",
+      "passed": true
+    },
+    {
+      "name": "Gear reversal is immediate, velocity is not teleported",
+      "passed": true
+    },
+    {
+      "name": "Engine-off vessel coasts rather than instant stopping",
+      "passed": true
+    },
+    {
+      "name": "Pause freezes motion, ballast and original conversion",
+      "passed": true
+    },
+    {
+      "name": "Dive refuses an unsecured exterior",
+      "passed": true
+    },
+    {
+      "name": "Securing takes the original 38.4-second conversion section",
+      "passed": true
+    },
+    {
+      "name": "Tender recovery is blocked underway",
+      "passed": true
+    },
+    {
+      "name": "Entire footprint, not just boat centre, gates a dive",
+      "passed": true
+    },
+    {
+      "name": "Unknown coverage at one hull station blocks a dive",
+      "passed": true
+    },
+    {
+      "name": "Vertical motion is gradual and never the R7 playback descent",
+      "passed": true
+    },
+    {
+      "name": "Controlled dive reaches and holds target depth",
+      "passed": true
+    },
+    {
+      "name": "Underwater exterior deployment is refused",
+      "passed": true
+    },
+    {
+      "name": "Surface before reversing the same exterior sequence",
+      "passed": true
+    },
+    {
+      "name": "Lost coverage stops descent and commands surfacing",
+      "passed": true
+    },
+    {
+      "name": "Grounding is detected over the complete hull footprint",
+      "passed": true
+    },
+    {
+      "name": "Geometric draft changes clearance instead of using Bay draft",
+      "passed": true
+    },
+    {
+      "name": "Submerged translation cannot enter unknown chart coverage",
+      "passed": true
+    },
+    {
+      "name": "Invalid commands and step sizes never enter state",
+      "passed": true
+    },
+    {
+      "name": "Reset preserves source-derived geometric draft",
+      "passed": true
+    },
+    {
+      "name": "Snapshot is finite plain JSON and explicitly versioned",
+      "passed": true
+    },
+    {
+      "name": "Proving-ground bottom stays in the shared texture depth range",
+      "passed": true
+    }
+  ]
+}

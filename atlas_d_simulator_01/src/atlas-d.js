@@ -18,7 +18,7 @@ function setup(){
   root.innerHTML=`<header class="ad-header"><div><small>ORIGINAL SUPERYACHT / SUBMERSIBLE CONCEPT</small><h1>ATLAS <b>D</b></h1></div><div class="ad-header-right"><span id="ad-mode">SURFACE</span><button id="ad-pause">Pause</button><button id="ad-exit">Return to Bay 25</button></div></header>
   <div class="ad-location">DEEP-WATER PROVING GROUND <span>Authored scenario · not Beaufort</span></div>
   <aside class="ad-stats"><div><b id="ad-speed">0.0</b><span>knots</span></div><div><b id="ad-depth">0.0</b><span>depth datum · m</span></div><div><b id="ad-clearance">—</b><span>bottom clearance · m</span></div><div><b id="ad-heading">090°</b><span>heading</span></div></aside>
-  <nav class="ad-views" aria-label="Yacht cameras"><button data-ad-view="orbit" aria-pressed="true">Around yacht</button><button data-ad-view="follow">Follow</button><button data-ad-view="bridge">Bridge view</button><button data-ad-view="helipad">Helipad view</button><button id="ad-xray" aria-pressed="false">Systems view</button><button id="ad-map-toggle" aria-expanded="false">Map</button></nav>
+  <nav class="ad-views" aria-label="Yacht cameras"><button data-ad-view="orbit" aria-pressed="true">Around yacht</button><button data-ad-view="follow">Follow</button><button data-ad-view="bridge">Bridge view</button><button data-ad-view="subsea">Underwater view</button><button data-ad-view="helipad">Helipad view</button><button id="ad-xray" aria-pressed="false">Systems view</button><button id="ad-map-toggle" aria-expanded="false">Map</button></nav>
   <canvas id="ad-map" width="240" height="240" hidden aria-label="Fictional ATLAS D proving-ground bottom and yacht position"></canvas>
   <div id="ad-notice" role="status" aria-live="polite">Loading the original 82.9-meter model…</div>
   <section class="ad-controls"><div class="ad-helm"><div class="ad-section-heading">01 <b>PROPULSION</b><span id="ad-engine-state">OFF</span></div><div class="ad-row"><button id="ad-engine" class="ad-primary">Start propulsion · E</button><button id="ad-neutral">Idle & coast</button></div><div class="ad-row ad-gears"><button data-ad-gear="-1">Reverse</button><button data-ad-gear="0" aria-pressed="true">Neutral</button><button data-ad-gear="1">Forward</button></div><label for="ad-throttle">Power <output id="ad-power">0%</output></label><input id="ad-throttle" type="range" min="0" max="100" value="0"><div class="ad-row"><button id="ad-left" aria-label="Hold to steer port">← Port</button><button id="ad-center">Straight</button><button id="ad-right" aria-label="Hold to steer starboard">Starboard →</button></div><div class="ad-row ad-secondary"><button id="ad-bow-left">Bow thruster ←</button><button id="ad-bow-right">Bow thruster →</button></div></div>
@@ -56,7 +56,7 @@ function initAsset(g){
 function pose(conversion){const t=Math.max(0,Math.min(1,conversion))*38.4;for(const b of bindings)b.object[b.property].fromArray(b.interpolant.evaluate(t));vessel.position.set(0,0,0);model.updateMatrixWorld(true);}
 function wave(x,z,t){return G.BayMotion.surface(x,z,t,environment);}
 function snapshotHost(){
-  const fields=['x','z','heading','heave','pitch','roll','elapsed','location','u','environment','engine'];
+  const fields=['x','z','heading','heave','pitch','roll','elapsed','location','u','environment','engine','throttle','steer','gear'];
   return {fields:Object.fromEntries(fields.map(k=>[k,S[k]])),capturePaused:A.capturePaused,
     paused:A.inspect().paused,cameraMode:A.cameraMode(),background:A.scene.background,
     fog:A.scene.fog,environmentIntensity:A.scene.environmentIntensity,
@@ -111,11 +111,11 @@ function setView(name){view=name;orbit.enabled=active&&name==='orbit';camera.fov
   if(name==='orbit'){const ratio=innerWidth/innerHeight,zoom=ratio<0.9?1.65:1;camera.position.copy(local([70*zoom,42*zoom,108*zoom]));orbit.target.copy(local([0,5,0]));orbit.update();}
   document.querySelectorAll('[data-ad-view]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.adView===name)));
 }
-let lastPosition=null;
+let lastPosition=null,lastBelowSurface=false;
 function updateCamera(dt){
   if(view==='orbit'){const p=group.position.clone();if(lastPosition){const d=p.clone().sub(lastPosition);camera.position.add(d);orbit.target.add(d);}orbit.update();lastPosition=p;return;}
   lastPosition=group.position.clone();const k=state.conversion;
-  const eye=view==='bridge'?[7,12.8-4.6*k,0]:view==='helipad'?[30,8.8,0]:[-93,34,48];
+  const eye=view==='bridge'?[7,12.8-4.6*k,0]:view==='helipad'?[30,8.8,0]:view==='subsea'?[-85,6,48]:[-93,34,48];
   const at=view==='bridge'?[75,11.8-4.6*k,0]:view==='helipad'?[75,7.8,0]:[0,4,0];
   const desired=local(eye);if(view==='follow'&&dt>0)camera.position.lerp(desired,1-Math.exp(-3*dt));else camera.position.copy(desired);camera.lookAt(local(at));
 }
@@ -130,6 +130,8 @@ function draw(dt){
   const uniforms=A.coast.waterShader?.uniforms;if(uniforms?.uDryEnabled10)uniforms.uDryEnabled10.value=0;
   for(const item of meshes){item.mesh.visible=item.sys?xray:item.beam?state.depthM>12&&!xray:true;
     item.materials.forEach((m,i)=>{const base=item.bases[i],opacity=xray&&!item.sys&&!item.beam?0.10:base.opacity;m.opacity=opacity;m.transparent=base.transparent||opacity<0.999;m.depthWrite=base.depthWrite&&opacity>0.9;});}
+  if(state.depthM>10&&!lastBelowSurface)setView('subsea');
+  lastBelowSurface=state.depthM>10;
   updateCamera(dt);
   if(camera.position.y<-0.5){A.scene.background=new T.Color('#072d3b');A.scene.fog=new T.FogExp2('#072d3b',0.007);A.scene.environmentIntensity=0.46;}
   else{A.scene.background=saved.background;A.scene.fog=saved.fog;A.scene.environmentIntensity=saved.environmentIntensity;}
@@ -141,7 +143,7 @@ function input(dt){
   state.rudder=keys.has('KeyA')||keys.has('ArrowLeft')?-1:keys.has('KeyD')||keys.has('ArrowRight')?1:touchSteer;
   state.bowThruster=touchBow;
 }
-function loop(now){requestAnimationFrame(loop);if(!active){last=now;return;}const dt=Math.max(0,(now-last)/1000);last=now;if(document.hidden)return;
+function loop(now){requestAnimationFrame(loop);if(!active||status.holdFrameLoop){last=now;return;}const dt=Math.max(0,(now-last)/1000);last=now;if(document.hidden)return;
   if(dt>1.5&&!state.paused){state.paused=true;state.message='Rendering stalled. Paused instead of pretending simulated time kept up.';acc=0;}
   if(!state.paused){acc+=Math.min(dt,1.5);while(acc>=1/60){input(1/60);state.step(1/60,C.provingSample,wave);acc-=1/60;}}else acc=0;
   frameCount++;draw(state.paused?0:dt);if(now-lastUI>180){sync();if(!$('ad-map').hidden)map();lastUI=now;}

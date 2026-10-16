@@ -14,7 +14,7 @@
   const MODES = ['surface','securing','secured','diving','submerged','surfacing','deploying'];
   // The same fictional bottom function is supplied to host rendering and contact queries.
   function provingBed(x,z) {
-    return -54 + 50*Math.exp(-((x-310)/90)**2-((z-20)/150)**2)
+    return -54 + 50*Math.exp(-(((x-310)/90)**2)-(((z-20)/150)**2))
       + 2*Math.sin(x*0.007)*Math.sin(z*0.006);
   }
   function provingSample(x,z) {
