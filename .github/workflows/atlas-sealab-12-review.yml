@@ -1,0 +1,62 @@
+name: ATLAS Sea Lab 12 water and operations review
+on:
+  workflow_dispatch:
+  push:
+    paths: ['.github/workflows/atlas-sealab-12-review.yml','atlas_sealab_12/transport/**','atlas_sealab_12/review_fixups12.py']
+permissions:
+  contents: read
+  actions: read
+concurrency:
+  group: atlas12-review
+  cancel-in-progress: true
+jobs:
+  review:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 24
+    strategy:
+      fail-fast: false
+      matrix:
+        device: [desktop, phone]
+    env:
+      TEST_DEVICE: ${{ matrix.device }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.13'}
+      - uses: actions/download-artifact@v4
+        with:
+          github-token: ${{ github.token }}
+          run-id: 38846527603
+          artifact-ids: 12023736229
+          path: atlas_sealab_12/external
+          merge-multiple: true
+      - name: Restore published boat and checksum-verified source
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import json,base64,lzma,hashlib,shutil
+          r=Path('atlas_sealab_12');shutil.copytree('atlas_sealab_11/live',r/'site',dirs_exist_ok=True)
+          raw=base64.b64decode(''.join((r/'transport'/f'part{i}.b64').read_text().strip() for i in range(2)),validate=True)
+          assert hashlib.sha256(raw).hexdigest()=='aa8a7de8b1a8d87c66b8ea7c89f70c69dcd4b32d29cffff13c56424a0d1fa25f'
+          for name,text in json.loads(lzma.decompress(raw)).items():
+              p=Path(name);assert len(p.parts)==1 and p.suffix in ['.js','.css','.py','.md','.json']
+              (r/p).write_text(text)
+          PY
+          python atlas_sealab_12/build12.py
+          if [ -f atlas_sealab_12/review_fixups12.py ]; then python atlas_sealab_12/review_fixups12.py; fi
+          for f in atlas_sealab_12/site/*.js; do node --check "$f"; done
+          mkdir -p atlas_sealab_12/review
+          node atlas_sealab_12/test12.js > atlas_sealab_12/review/unit12.json
+      - name: Operate and render the actual application
+        run: |
+          python -m pip install -q playwright==1.55.0
+          python -m playwright install --with-deps chromium >/dev/null
+          python -m http.server 8912 --bind 127.0.0.1 --directory atlas_sealab_12/site >atlas_sealab_12/review/http.log 2>&1 &
+          sleep 2
+          BASE_URL=http://127.0.0.1:8912/index.html python atlas_sealab_12/verify12.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ATLAS-SeaLab12-Review-${{ matrix.device }}
+          path: atlas_sealab_12/
+          retention-days: 30
