@@ -1,16 +1,16 @@
-name: ATLAS D Y2 isolated physical helm review
+name: ATLAS D Y3 isolated articulated helm review
 on:
   push:
-    branches: ['atlas-d/yacht-helm-y2-20261016']
-    paths: ['.github/workflows/atlas-d-simulator-01.yml','atlas_d_simulator_01/contact/y2/**']
+    branches: ['atlas-d/yacht-wheel-y3-20261016']
+    paths: ['.github/workflows/atlas-d-simulator-01.yml','atlas_d_simulator_01/contact/y3/**']
 permissions:
   contents: write
 concurrency:
-  group: atlas-d-y2-helm-isolated
+  group: atlas-d-y3-wheel-isolated
   cancel-in-progress: true
 jobs:
   review:
-    if: github.ref == 'refs/heads/atlas-d/yacht-helm-y2-20261016'
+    if: github.ref == 'refs/heads/atlas-d/yacht-wheel-y3-20261016'
     runs-on: ubuntu-24.04
     timeout-minutes: 15
     steps:
@@ -26,45 +26,45 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - name: Verify untouched source and restore immutable receiver inputs
+      - name: Verify original preservation and wheel and unchanged regressions
         run: |
-          python atlas_d_simulator_01/contact/y2/prepare.py
+          python atlas_d_simulator_01/contact/y3/prepare.py
           npm ci --ignore-scripts --omit=dev --prefix atlas_d_simulator_01/contact/y2/dependencies/humans
-          for f in atlas_d_simulator_01/contact/y2/*.js; do node --check "$f"; done
-          node atlas_d_simulator_01/contact/y2/test-helm.cjs > atlas_d_simulator_01/contact/y2/evidence/unit.stdout
-          node atlas_d_simulator_01/contact/test-attachments.cjs > atlas_d_simulator_01/contact/y2/evidence/y1-tests.json
-          node atlas_d_simulator_01/test-core.cjs > atlas_d_simulator_01/contact/y2/evidence/core-regression.json
+          for f in atlas_d_simulator_01/contact/y3/*.js; do node --check "$f"; done
+          node atlas_d_simulator_01/contact/y3/test-wheel.cjs > atlas_d_simulator_01/contact/y3/evidence/unit.stdout
+          node atlas_d_simulator_01/contact/y2/test-helm.cjs > atlas_d_simulator_01/contact/y3/evidence/y2-tests.json
+          cp atlas_d_simulator_01/contact/y2/evidence/unit.json atlas_d_simulator_01/contact/y3/evidence/y2-regression.json
+          node atlas_d_simulator_01/contact/test-attachments.cjs > atlas_d_simulator_01/contact/y3/evidence/y1-tests.json
+          node atlas_d_simulator_01/test-core.cjs > atlas_d_simulator_01/contact/y3/evidence/core-regression.json
           python - <<'PY'
           import json
           from pathlib import Path
-          p=Path('atlas_d_simulator_01/contact/y2/evidence')
-          v=json.loads((p/'unit.json').read_text());assert v['passed'] and v['h2']['actualPinnedReader'] and v['h2']['transformAccepted'] and v['h2']['oldY1RemainsUnavailable']
-          assert json.loads((p/'y1-tests.json').read_text())['total']==35
-          assert json.loads((p/'core-regression.json').read_text())['total']==22
+          p=Path('atlas_d_simulator_01/contact/y3/evidence')
+          for name,total in [('unit.json',28),('y2-regression.json',28),('y1-tests.json',35),('core-regression.json',22)]:
+              v=json.loads((p/name).read_text());assert v['passed'] and v['total']==total,(name,v)
+          assert json.loads((p/'y2-regression.json').read_text())['h2']['actualPinnedReader']
           PY
-      - name: Capture original geometry, normal motion and lifecycle transitions
+      - name: Capture real owner controls and moving physical contacts
         run: |
           python -m pip install -q playwright==1.55.0
           python -m playwright install --with-deps chromium >/dev/null
-          python -m http.server 8916 --bind 127.0.0.1 --directory . >atlas_d_simulator_01/contact/y2/evidence/http.log 2>&1 &
+          python -m http.server 8917 --bind 127.0.0.1 --directory . >atlas_d_simulator_01/contact/y3/evidence/http.log 2>&1 &
           sleep 2
-          BASE_URL=http://127.0.0.1:8916/atlas_d_simulator_01/contact/y2/preview.html python atlas_d_simulator_01/contact/y2/verify.py
-      - name: Record bounded evidence without publishing
+          BASE_URL=http://127.0.0.1:8917/atlas_d_simulator_01/contact/y3/preview.html python atlas_d_simulator_01/contact/y3/verify.py
+      - name: Record bounded evidence without publication
         if: always()
         run: |
-          mkdir -p atlas_d_simulator_01/contact/y2/evidence
+          mkdir -p atlas_d_simulator_01/contact/y3/evidence
           python - <<'PY'
           from pathlib import Path
           import hashlib,json,os
-          r=Path('atlas_d_simulator_01/contact/y2')
-          files={str(p.relative_to(r)):hashlib.sha256(p.read_bytes()).hexdigest() for p in r.rglob('*') if p.is_file() and 'dependencies' not in p.parts and p.name!='artifact-manifest.json'}
-          (r/'evidence/artifact-manifest.json').write_text(json.dumps({'sourceCommit':'09aeb97168c4cd627cb54766d8f9ef2e55b83183','originalSourceCommit':'48b9bef038ab2e422b6677d7ca9db4879419a3f9','resultSourceCommit':os.environ['GITHUB_SHA'],'branch':os.environ['GITHUB_REF_NAME'],'productionEnabled':False,'integratedRelease':False,'files':files},indent=2))
+          r=Path('atlas_d_simulator_01/contact/y3')
+          files={str(p.relative_to(r)):hashlib.sha256(p.read_bytes()).hexdigest() for p in r.rglob('*') if p.is_file() and '__pycache__' not in p.parts and p.name!='artifact-manifest.json'}
+          (r/'evidence/artifact-manifest.json').write_text(json.dumps({'sourceCommit':'ce92886ac58f431e4e67d6fe71f269ad399a5c66','originalSourceCommit':'48b9bef038ab2e422b6677d7ca9db4879419a3f9','resultSourceCommit':os.environ['GITHUB_SHA'],'branch':os.environ['GITHUB_REF_NAME'],'productionEnabled':False,'integratedRelease':False,'files':files},indent=2))
           PY
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: ATLAS-D-Y2-physical-helm-review
-          path: |
-            atlas_d_simulator_01/contact/y2/
-            !atlas_d_simulator_01/contact/y2/dependencies/**
+          name: ATLAS-D-Y3-articulated-helm-review
+          path: atlas_d_simulator_01/contact/y3/
           retention-days: 7
