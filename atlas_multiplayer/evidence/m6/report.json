@@ -1,0 +1,43 @@
+{
+  "iteration": "M6",
+  "status": "BLOCKED_ORIGINAL_INTEGRITY_INPUTS",
+  "mpSourceSHA": "46c81ebfff13f83645f6b5091b63e845bc422871",
+  "ownerSourceSHA": "36903985f2182c902427fed77d4e28c61a7639ca",
+  "ownerRevision": "sealab12-core-integration/1.0.0",
+  "node": "v22.16.0",
+  "executionScope": "Unmodified C1 attach rejection before successful integrity-checked host binding. Actual MP constructor prerequisite rejection only.",
+  "observations": {
+    "descriptorTamperRejected": true,
+    "missingAssetRejected": true,
+    "hostStepUnchanged": true,
+    "hostResetUnchanged": true,
+    "MPMissingReaderRejected": true
+  },
+  "originalAssetsMatched": 0,
+  "originalAssetsRequired": 20,
+  "successfulC1Attach": false,
+  "successfulReceiverClientCoupling": false,
+  "positiveM6Checks": 0,
+  "unexecuted": [
+    "actual read/reset/dispose through MP client",
+    "unknown RPM=null through real hook",
+    "epoch/world/identity transition coupling",
+    "ejection/detachment receiving behavior",
+    "local restore capability separation after successful attach",
+    "non-stepping proof after successful attach"
+  ],
+  "productionFilesChanged": [],
+  "defectDisposition": "NO_MP_DEFECT_ESTABLISHED; missing prerequisites are not a product defect",
+  "externalGates": {
+    "exactWsPinLockAudit": "UNCHANGED_UNPASSED",
+    "browserMotion": "UNCHANGED_BLOCKED",
+    "integratedSeaLabRegression": "NOT_RUN",
+    "liveMultiplayer": false
+  },
+  "command": "node tests/owner-fixtures/c1-final/input-probe.mjs",
+  "exitCode": 2,
+  "sourceAndProbeSyntaxChecks": "PASS",
+  "unchangedRuntimeConfigFiles": 14,
+  "rawEvidence": "Archive: input-probe.json, input-probe.stderr.txt, source-manifest.json; regenerate with command.",
+  "rawStderr": "Environment TERM warning and escape sequence retained in archive."
+}
