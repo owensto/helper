@@ -10,8 +10,11 @@ report={'passed':False,'scope':'CORE_C1_REAL_HOST_CANDIDATE_ONLY','publicBaselin
  'candidateSourceSHA':os.environ.get('GITHUB_SHA','LOCAL_UNPUBLISHED'),'url':URL,'device':DEV,'combinedAcceptance':False,
  'physicalDeviceTested':False,'foreignWorkersLoaded':False,'tests':[],'errors':[],'shaderErrors':[],'assetErrors':[]}
 def shot(p,name):
- p.evaluate('BAYPLAY.refresh();SEA06.beforeRender();BAYPLAY.renderer.render(BAYPLAY.scene,BAYPLAY.camera);BAYPLAY.capturePaused=true')
- try:p.screenshot(path=str(OUT/(DEV+'_'+name+'.png')),timeout=60000)
+ state=p.evaluate('''()=>{const state={paused:BAYPLAY.inspect().paused,pauseReason:BAYPLAY.pauseReason||null,seconds:BAYPLAY.state.elapsed,timing:{...SEA_TIMING}};BAYPLAY.capturePaused=true;BAYPLAY.refresh();SEA06.beforeRender();BAYPLAY.renderer.render(BAYPLAY.scene,BAYPLAY.camera);return state;}''')
+ report.setdefault('captureStates',{})[name]=state
+ try:
+  p.wait_for_timeout(200)
+  p.screenshot(path=str(OUT/(DEV+'_'+name+'.png')),timeout=60000)
  finally:p.evaluate('BAYPLAY.capturePaused=false')
 def check(p,name,script):
  result=p.evaluate(script);assert result is not False,(name,result);report['tests'].append({'name':name,'passed':True,'result':result})
@@ -35,6 +38,7 @@ with sync_playwright() as pw:
   p.goto(URL,wait_until='domcontentloaded',timeout=120000)
   p.wait_for_function('window.CORE12_READY || window.CORE12_ERROR',timeout=120000)
   assert p.evaluate('window.CORE12_READY'),p.evaluate('window.CORE12_ERROR')
+  p.evaluate('window.__C1_RESET_HOOK=BAYPLAY.state.reset')
   p.locator('#helm09-key').click();drive_wait(p,'BAYPLAY.state.engine && BAYPLAY.state.startTimer===0')
   p.locator('[data-gear09="1"]').click();p.locator('#s12-wot').click()
   drive_wait(p,'BAYPLAY.state.speedOverGround>1')
@@ -45,7 +49,17 @@ with sync_playwright() as pw:
    return {start,paused:false,shown:true};}''')
   t=p.evaluate('BAYPLAY.state.elapsed');p.wait_for_function('(BAYPLAY.state.elapsed>'+str(t+.12)+') && !BAYPLAY.inspect().paused',timeout=60000)
   check(p,'Map does not intercept driving controls', '''()=>['helm09-key','s11-more'].every(id=>{const e=document.getElementById(id),r=e.getBoundingClientRect();return document.elementFromPoint(r.x+r.width/2,r.y+r.height/2)?.closest('button')?.id===id})''')
-  shot(p,'map_no_pause');p.locator('#helm09-mapclose').click();p.evaluate('BAYPLAY.setPaused(true)')
+  # Never silently unpause: use visible Resume, then measure fresh host progress.
+  drive_wait(p,'!BAYPLAY.inspect().paused');map_start=p.evaluate('BAYPLAY.state.elapsed')
+  drive_wait(p,'BAYPLAY.state.elapsed>'+str(map_start+.12))
+  report['mapClockEvidence']={'start':map_start,'end':p.evaluate('BAYPLAY.state.elapsed')}
+  for capture_attempt in range(3):
+   drive_wait(p,'!BAYPLAY.inspect().paused')
+   shot(p,'map_no_pause')
+   if not report['captureStates']['map_no_pause']['paused']:break
+  else:raise AssertionError('Could not capture running map with explicit stall recovery')
+  assert not report['captureStates']['map_no_pause']['paused']
+  p.locator('#helm09-mapclose').click();p.evaluate('BAYPLAY.setPaused(true)')
   p.evaluate('async()=>{window.d=await CORE12.reader.describe()}')
   check(p,'Immutable snapshots and reads never advance host physics/time', '''()=>{
    const t=BAYPLAY.state.elapsed,step=BAYPLAY.state.step,packet=JSON.stringify(Sea12Waves.packets);
@@ -126,10 +140,24 @@ with sync_playwright() as pw:
    try{CORE12.reader.readPose('atlas-bay-25-sealab12',rev)}catch(e){tideBad=/STALE_WORLD/.test(e.message)}
    if(!tideBad)throw Error('tide mismatch');window.d=await CORE12.reader.describe();
    return {sceneRejected:true,tideRejected:true,unknown:q};}''')
+  check(p,'Unexpected physics/water rebinding fails closed', '''()=>{
+   const S=BAYPLAY.state,step=S.step,surface=BayMotion.surface;let a=false,b=false;
+   S.step=function(){};try{CORE12.reader.readPose('atlas-bay-25-sealab12',d.worldRevision)}catch(e){a=/HOST_OWNERSHIP_CHANGED/.test(e.message)}finally{S.step=step;}
+   BayMotion.surface=function(){return 0};try{CORE12.reader.sampleWater('atlas-bay-25-sealab12',d.worldRevision,0,0)}catch(e){b=/HOST_OWNERSHIP_CHANGED/.test(e.message)}finally{BayMotion.surface=surface;}
+   if(!a||!b)throw Error('unapproved function accepted');return {physicsRebindingRejected:a,waterRebindingRejected:b};}''')
   check(p,'Disposal removes only its reset wrapper; no host step replacement', '''()=>{
    const step=BAYPLAY.state.step;CORE12.dispose();let rejected=false;
    try{CORE12.reader.capabilities('atlas-bay-25-sealab12')}catch(e){rejected=/DISPOSED/.test(e.message)}
    return rejected&&BAYPLAY.state.step===step&&step===__C1_STEP_BEFORE;}''')
+  check(p,'Concurrent attach has one owner and leaves the original host reset intact', '''async()=>{
+   const originalReset=BAYPLAY.state.reset,originalStep=BAYPLAY.state.step;
+   const staticDescriptor=await (await fetch('core-descriptor.json')).json();
+   const results=await Promise.allSettled([SeaLab12HostHooks.attach(staticDescriptor),SeaLab12HostHooks.attach(staticDescriptor)]);
+   const good=results.filter(x=>x.status==='fulfilled'),bad=results.filter(x=>x.status==='rejected');
+   if(good.length!==1||bad.length!==1||!/ALREADY_ATTACHED/.test(bad[0].reason.message))throw Error('duplicate ownership');
+   good[0].value.dispose();if(BAYPLAY.state.reset!==originalReset||BAYPLAY.state.step!==originalStep)throw Error('dispose clobbered host');
+   return {oneOwner:true,secondRejected:true,resetRestored:true,stepUnchanged:true};}''')
+  report['finalTiming']=p.evaluate('({...SEA_TIMING})')
   assert not report['errors'] and not report['shaderErrors'] and not report['assetErrors'],report
   report['passed']=True
  except Exception as e:
