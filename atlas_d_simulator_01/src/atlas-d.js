@@ -9,13 +9,15 @@ let A,T,S,model,vessel,group,state,camera,orbit,bindings=[],meshes=[],saved=null
   active=false,view='orbit',xray=false,environment='calm',last=0,acc=0,frameCount=0,
   touchSteer=0,touchBow=0,keys=new Set(),lastUI=0,oldSample,sceneVisibility=new Map();
 const BOARD_ID='atlasd-proving',v=(...a)=>new T.Vector3(...a);
+// ATLAS_D_FALLBACK_02: retain every original yacht mesh; lower only fallback rendering cost.
+let lowDetail=false,smoothWaterGeometry=null;
 function fail(e){status.error=String(e);console.error('ATLAS D integration:',e);if($('ad-notice'))$('ad-notice').textContent='The original yacht could not load. Return to Bay remains available.';if($('ad-board')){$('ad-board').disabled=false;$('ad-board').textContent='Retry ATLAS D';$('ad-board').onclick=()=>location.reload();}}
 function setup(){
   if(!G.BAYPLAY?.ready||!G.SEA09_WATER?.ready||!G.SEA11?.ready){return setTimeout(setup,100);}
   A=G.BAYPLAY;T=G.ATLASRuntime;S=A.state;
   const board=document.createElement('button');board.id='ad-board';board.textContent='Board original ATLAS D';board.disabled=true;document.body.append(board);
   const root=document.createElement('section');root.id='ad-root';root.hidden=true;
-  root.innerHTML=`<header class="ad-header"><div><small>ORIGINAL SUPERYACHT / SUBMERSIBLE CONCEPT</small><h1>ATLAS <b>D</b></h1></div><div class="ad-header-right"><span id="ad-mode">SURFACE</span><button id="ad-pause">Pause</button><button id="ad-exit">Return to Bay 25</button></div></header>
+  root.innerHTML=`<header class="ad-header"><div><small>ORIGINAL SUPERYACHT / SUBMERSIBLE CONCEPT</small><h1>ATLAS <b>D</b></h1></div><div class="ad-header-right"><span id="ad-mode">SURFACE</span><button id="ad-detail">Detail: auto</button><button id="ad-pause">Pause</button><button id="ad-exit">Return to Bay 25</button></div></header>
   <div class="ad-location">DEEP-WATER PROVING GROUND <span>Authored scenario · not Beaufort</span></div>
   <aside class="ad-stats"><div><b id="ad-speed">0.0</b><span>knots</span></div><div><b id="ad-depth">0.0</b><span>depth datum · m</span></div><div><b id="ad-clearance">—</b><span>bottom clearance · m</span></div><div><b id="ad-heading">090°</b><span>heading</span></div></aside>
   <nav class="ad-views" aria-label="Yacht cameras"><button data-ad-view="orbit" aria-pressed="true">Around yacht</button><button data-ad-view="follow">Follow</button><button data-ad-view="bridge">Bridge view</button><button data-ad-view="subsea">Underwater view</button><button data-ad-view="helipad">Helipad view</button><button id="ad-xray" aria-pressed="false">Systems view</button><button id="ad-map-toggle" aria-expanded="false">Map</button></nav>
@@ -61,7 +63,7 @@ function snapshotHost(){
     paused:A.inspect().paused,cameraMode:A.cameraMode(),background:A.scene.background,
     fog:A.scene.fog,environmentIntensity:A.scene.environmentIntensity,
     waterSide:A.coast.water.material.side,waterDepthWrite:A.coast.water.material.depthWrite,
-    title:document.title,pixelRatio:A.renderer.getPixelRatio()};
+    title:document.title,pixelRatio:A.renderer.getPixelRatio(),shadowEnabled:A.renderer.shadowMap.enabled,waterGeometry:A.coast.water.geometry};
 }
 function enter(){
   if(!status.ready||active)return;try{
@@ -70,7 +72,8 @@ function enter(){
     S.location=BOARD_ID;active=true;status.active=true;group.visible=true;
     $('ad-root').hidden=false;$('ad-board').hidden=true;document.body.classList.add('atlas-d-active');document.title='ATLAS D · Original superyacht / submarine simulator';
     A.coast.water.material.side=T.DoubleSide;A.coast.water.material.needsUpdate=true;
-    last=performance.now();acc=0;setView('orbit');draw(0);sync();
+    setDetail(!!G.SEA_SOFTWARE||innerWidth<700);
+    last=performance.now();acc=0;setView('orbit');draw(0);last=performance.now();sync();
   }catch(e){exit();fail(e);}
 }
 function exit(){
@@ -79,12 +82,26 @@ function exit(){
   if(saved){Object.assign(S,saved.fields);for(const [o,visible]of sceneVisibility)o.visible=visible;group.visible=false;
     A.scene.background=saved.background;A.scene.fog=saved.fog;A.scene.environmentIntensity=saved.environmentIntensity;
     A.coast.water.material.side=saved.waterSide;A.coast.water.material.depthWrite=saved.waterDepthWrite;A.coast.water.material.needsUpdate=true;
-    A.renderer.setPixelRatio(saved.pixelRatio);A.capturePaused=saved.capturePaused;A.setPaused(saved.paused);A.setCamera(saved.cameraMode);A.resetClock();A.refresh();document.title=saved.title;
+    A.renderer.setPixelRatio(saved.pixelRatio);A.renderer.shadowMap.enabled=saved.shadowEnabled;A.coast.water.geometry=saved.waterGeometry;A.capturePaused=saved.capturePaused;A.setPaused(saved.paused);A.setCamera(saved.cameraMode);A.resetClock();A.refresh();document.title=saved.title;
   }
+}
+function setDetail(low){
+  lowDetail=!!low;
+  A.renderer.setPixelRatio(Math.min(devicePixelRatio||1,lowDetail?(G.SEA_SOFTWARE?0.35:0.65):1.25));
+  A.renderer.shadowMap.enabled=!lowDetail&&!!saved?.shadowEnabled;
+  if(lowDetail&&!smoothWaterGeometry){
+    smoothWaterGeometry=new T.PlaneGeometry(1800,1800,80,80);smoothWaterGeometry.rotateX(-Math.PI/2);
+    const pos=smoothWaterGeometry.attributes.position,uv=smoothWaterGeometry.attributes.uv;
+    const warp=value=>{const n=Math.abs(value)/7.5;return Math.sign(value)*(n<=80?n*0.5:40+860*((n-80)/40)**2);};
+    for(let i=0;i<pos.count;i++){const x=warp(pos.getX(i)),z=warp(pos.getZ(i));pos.setX(i,x);pos.setZ(i,z);uv.setXY(i,x/1800+0.5,0.5-z/1800);}
+    pos.needsUpdate=true;uv.needsUpdate=true;smoothWaterGeometry.computeBoundingSphere();
+  }
+  if(saved)A.coast.water.geometry=lowDetail?smoothWaterGeometry:saved.waterGeometry;
+  $('ad-detail').textContent=lowDetail?'Detail: smooth':'Detail: high';
 }
 function command(name,value){if(!state)return false;const result=state.command(name,value,C.provingSample);sync();return result;}
 function bindUI(){
-  $('ad-exit').onclick=exit;$('ad-pause').onclick=()=>command('pause');$('ad-engine').onclick=()=>command('engine');$('ad-neutral').onclick=()=>command('neutral');
+  $('ad-detail').onclick=()=>setDetail(!lowDetail);$('ad-exit').onclick=exit;$('ad-pause').onclick=()=>command('pause');$('ad-engine').onclick=()=>command('engine');$('ad-neutral').onclick=()=>command('neutral');
   document.querySelectorAll('[data-ad-gear]').forEach(b=>b.onclick=()=>command('gear',Number(b.dataset.adGear)));
   document.querySelectorAll('[data-ad-view]').forEach(b=>b.onclick=()=>setView(b.dataset.adView));
   $('ad-throttle').oninput=e=>command('throttle',Number(e.target.value)/100);
@@ -144,8 +161,8 @@ function input(dt){
   state.bowThruster=touchBow;
 }
 function loop(now){requestAnimationFrame(loop);if(!active||status.holdFrameLoop){last=now;return;}const dt=Math.max(0,(now-last)/1000);last=now;if(document.hidden)return;
-  if(dt>1.5&&!state.paused){state.paused=true;state.message='Rendering stalled. Paused instead of pretending simulated time kept up.';acc=0;}
-  if(!state.paused){acc+=Math.min(dt,1.5);while(acc>=1/60){input(1/60);state.step(1/60,C.provingSample,wave);acc-=1/60;}}else acc=0;
+  if(dt>4&&!state.paused){state.paused=true;state.message='Rendering stalled. Paused instead of pretending simulated time kept up.';acc=0;}
+  if(!state.paused){acc+=Math.min(dt,4);while(acc>=1/60){input(1/60);state.step(1/60,C.provingSample,wave);acc-=1/60;}}else acc=0;
   frameCount++;draw(state.paused?0:dt);if(now-lastUI>180){sync();if(!$('ad-map').hidden)map();lastUI=now;}
 }
 function sync(){if(!state||!$('ad-mode'))return;const s=state;
@@ -168,6 +185,7 @@ function inspect(){const hull=model.getObjectByName('FIXED_Hull');return {ready:
   originalHullScale:hull.scale.toArray(),originalHullVisible:hull.visible,originalRootY:vessel.position.y,
   sourceScaleTracks:status.sourceScaleTracks,retainedTracks:bindings.length,geometricHullBounds:status.geometricHullBounds,
   sourceAsset:status.asset,sourceRevision:7,multiplayer:false,simulationOnly:true,
+  pixelRatio:A.renderer.getPixelRatio(),detail:lowDetail?'smooth':'high',softwareRendering:!!G.SEA_SOFTWARE,
   frameCount,drawCalls:A.renderer.info.render.calls,triangles:A.renderer.info.render.triangles,
   hostSuspended:A.capturePaused===true,waterLocation:S.location,
   tenderChase:model.getObjectByName('MOV_Tender_Chase')?.getWorldPosition(v()).toArray(),

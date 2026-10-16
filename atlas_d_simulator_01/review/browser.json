@@ -19,8 +19,8 @@
         "state": {
           "version": 1,
           "vesselId": "atlas-d-original-r7",
-          "sequence": 3,
-          "elapsed": 0.05,
+          "sequence": 0,
+          "elapsed": 0,
           "x": 0,
           "z": 0,
           "heading": 0,
@@ -41,11 +41,11 @@
           "contact": false,
           "draftM": 4.506932258605957,
           "depthKnown": true,
-          "waterDepthM": 53.999514876023646,
-          "clearanceM": 49.46181539079514,
-          "heaveM": -0.00013942850229039204,
-          "pitch": -0.0002045650376388686,
-          "roll": -0.000845242574381044
+          "waterDepthM": 53.99965430452593,
+          "clearanceM": 49.46195481929743,
+          "heaveM": 0,
+          "pitch": -0.0002049676849664509,
+          "roll": -0.00085310917454099
         },
         "camera": "orbit",
         "originalHullScale": [
@@ -73,20 +73,23 @@
         "sourceRevision": 7,
         "multiplayer": false,
         "simulationOnly": true,
+        "pixelRatio": 0.35,
+        "detail": "smooth",
+        "softwareRendering": true,
         "frameCount": 3,
         "drawCalls": 141,
-        "triangles": 493883,
+        "triangles": 289083,
         "hostSuspended": true,
         "waterLocation": "atlasd-proving",
         "tenderChase": [
-          -22.999999518761175,
-          0.018934687703392232,
-          16.999989950440465
+          -22.999999516864857,
+          0.0192171092137245,
+          16.99998979196546
         ],
         "tenderUtility": [
-          -9.999999790765727,
-          0.016444392322215187,
-          17.19999288972789
+          -9.999999789941242,
+          0.01672315276253464,
+          17.199992755302386
         ]
       },
       "primaryControls": [
@@ -146,8 +149,8 @@
         "state": {
           "version": 1,
           "vesselId": "atlas-d-original-r7",
-          "sequence": 6363,
-          "elapsed": 106.04999999999526,
+          "sequence": 6360,
+          "elapsed": 105.99999999999527,
           "x": 17.219877745550768,
           "z": 0,
           "heading": 0,
@@ -168,11 +171,11 @@
           "contact": false,
           "draftM": 4.506932258605957,
           "depthKnown": true,
-          "waterDepthM": 53.99194344602548,
-          "clearanceM": 49.431882395561814,
-          "heaveM": -0.006811399289177802,
-          "pitch": -0.0002916688198125702,
-          "roll": -0.0008219905606882782
+          "waterDepthM": 53.99177290587187,
+          "clearanceM": 49.4317118554082,
+          "heaveM": -0.006981939442785285,
+          "pitch": -0.0003055207563617329,
+          "roll": -0.00084811531480324
         },
         "camera": "orbit",
         "originalHullScale": [
@@ -200,20 +203,23 @@
         "sourceRevision": 7,
         "multiplayer": false,
         "simulationOnly": true,
+        "pixelRatio": 0.35,
+        "detail": "smooth",
+        "softwareRendering": true,
         "frameCount": 3,
         "drawCalls": 141,
-        "triangles": 493883,
+        "triangles": 289083,
         "hostSuspended": true,
         "waterLocation": "atlasd-proving",
         "tenderChase": [
-          -17.599741298746103,
-          1.3052920805039365,
-          2.3689221493084722
+          -17.599723147210497,
+          1.3056657462657255,
+          2.36888746105719
         ],
         "tenderUtility": [
-          -18.879740023597783,
-          1.3017691814750734,
-          -2.371076327353967
+          -18.87972186676795,
+          1.302036746398077,
+          -2.371110936990321
         ]
       },
       "submerged": {
@@ -222,8 +228,8 @@
         "state": {
           "version": 1,
           "vesselId": "atlas-d-original-r7",
-          "sequence": 15363,
-          "elapsed": 256.0500000000958,
+          "sequence": 15360,
+          "elapsed": 256.00000000009584,
           "x": 17.27998429254641,
           "z": 0,
           "heading": 0,
@@ -244,11 +250,11 @@
           "contact": false,
           "draftM": 4.506932258605957,
           "depthKnown": true,
-          "waterDepthM": 53.99870361392893,
-          "clearanceM": 31.438539022281624,
-          "heaveM": -4.5809743446997535e-05,
-          "pitch": 4.125422552973614e-06,
-          "roll": 7.591510080789628e-06
+          "waterDepthM": 53.99870285702054,
+          "clearanceM": 31.438538265373232,
+          "heaveM": -4.656665183871446e-05,
+          "pitch": 4.125255956984254e-06,
+          "roll": 7.901992827141943e-06
         },
         "camera": "subsea",
         "originalHullScale": [
@@ -276,20 +282,23 @@
         "sourceRevision": 7,
         "multiplayer": false,
         "simulationOnly": true,
+        "pixelRatio": 0.35,
+        "detail": "smooth",
+        "softwareRendering": true,
         "frameCount": 3,
         "drawCalls": 142,
-        "triangles": 494471,
+        "triangles": 289671,
         "hostSuspended": true,
         "waterLocation": "atlasd-proving",
         "tenderChase": [
-          -17.540020765030626,
-          -16.70020749656596,
-          2.370009753363033
+          -17.54002076481408,
+          -16.700208983520678,
+          2.370010156940334
         ],
         "tenderUtility": [
-          -18.820019544316608,
-          -16.700176793345747,
-          -2.369990017658633
+          -18.820019544100063,
+          -16.700176808399075,
+          -2.369989614071569
         ]
       },
       "originalBayRestored": true,
@@ -364,9 +373,12 @@
         "sourceRevision": 7,
         "multiplayer": false,
         "simulationOnly": true,
+        "pixelRatio": 0.35,
+        "detail": "smooth",
+        "softwareRendering": true,
         "frameCount": 3,
         "drawCalls": 141,
-        "triangles": 493883,
+        "triangles": 289083,
         "hostSuspended": true,
         "waterLocation": "atlasd-proving",
         "tenderChase": [
@@ -491,9 +503,12 @@
         "sourceRevision": 7,
         "multiplayer": false,
         "simulationOnly": true,
+        "pixelRatio": 0.35,
+        "detail": "smooth",
+        "softwareRendering": true,
         "frameCount": 3,
         "drawCalls": 141,
-        "triangles": 493883,
+        "triangles": 289083,
         "hostSuspended": true,
         "waterLocation": "atlasd-proving",
         "tenderChase": [
@@ -567,9 +582,12 @@
         "sourceRevision": 7,
         "multiplayer": false,
         "simulationOnly": true,
+        "pixelRatio": 0.35,
+        "detail": "smooth",
+        "softwareRendering": true,
         "frameCount": 3,
         "drawCalls": 110,
-        "triangles": 465183,
+        "triangles": 260383,
         "hostSuspended": true,
         "waterLocation": "atlasd-proving",
         "tenderChase": [
