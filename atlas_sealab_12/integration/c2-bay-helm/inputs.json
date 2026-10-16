@@ -12,9 +12,14 @@
   "physicalContactPath": "atlas_sealab_12/integration/c2-bay-helm/contacts.json",
   "stationId": "bay12.starboard-helm",
   "designId": "atlas-bay-25-sealab12",
-  "rigProfile": null,
-  "correctedHumanSHA": null,
-  "receiverACK": null,
+  "rigProfile": {
+    "revision": "bay12-rocketbox-calibration/1",
+    "sha256": "2d8f1b640ac9ffad745e889984b264d55531b72d7f0496e611be4ca1ca824902",
+    "scope": "LIMITED_CONTACT_REVIEW",
+    "productionEnabled": false
+  },
+  "correctedHumanSHA": "10ed9c2f8d0c392828f238e686bcc689517d34f9",
+  "receiverACK": "pr1:6209504553",
   "positiveFactoryEnabled": false,
   "COREMappingACK": {
     "epoch": "c1h/1: + SHA256(UTF8(JSON.stringify([\"c1-humans-map/1\",verifiedC1SourceSHA,privateRuntimeScopeId,registeredVesselInstanceId,\"client-simulation\",clock.epoch])))",
@@ -42,5 +47,17 @@
     "no source exceptions or invalid rig updates; continuous physical support evidence"
   ],
   "yachtAvailable": false,
-  "multiplayerEnabled": false
+  "multiplayerEnabled": false,
+  "receiverCorrectionEvidence": {
+    "ownerSHA": "10ed9c2f8d0c392828f238e686bcc689517d34f9",
+    "profileSHA256": "2d8f1b640ac9ffad745e889984b264d55531b72d7f0496e611be4ca1ca824902",
+    "unchangedUnitSuite": "44/44 PASS",
+    "coreReviewRun": 38860655424,
+    "positiveActivationApproved": false,
+    "scopedACKRequest": 6209120359,
+    "limitedReviewACK": 6209504553,
+    "conditions": "Close CORE attestation/receiver-return/owned-callback/cleanup preflight before loading one flag-only limited current-host rig"
+  },
+  "scopedReviewApproved": true,
+  "defaultHumanEnabled": false
 }

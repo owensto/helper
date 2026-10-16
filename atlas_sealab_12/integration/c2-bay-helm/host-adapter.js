@@ -34,23 +34,51 @@ function createBridge(current){if(typeof current!=='function')throw Error('PRIVA
 }
 // Only this immutable owner pin can be used by a future scoped review build.
 // A missing ACK cannot equal another missing value and grant construction.
-const REVIEW_PINS=freeze({humanSHA:'10ed9c2f8d0c392828f238e686bcc689517d34f9',profileSHA256:'2d8f1b640ac9ffad745e889984b264d55531b72d7f0496e611be4ca1ca824902',physicalContactSHA256:'cc2a82dc89e3abfee8fd6a7d5def9dd153da179abb4c834dc91b09924d237f58',modelSHA256:'b1ef9c448309a9a5d85ec4f2efcf45d9406d999ab24d27bdd1534359a7278b82',rigSHA256:'e80b6e82ac31c3bfb1134952e0bcb9b840fedc26b71dc90e9b387ae8cd28ecd3',animationSHA256:'b0f10003c14416330d30c41fe26d7ec86bc34e3b39ca9bd91ca78a54db415b94',scope:'LIMITED_CONTACT_REVIEW',ownerACK:null,modules:{'captain12-adapter.mjs':'0767111188ff1c62c8b68c44f8132f8d292089ed','rig.mjs':'a39a40b7dfa8151705bfa325abe557ae75f706fd','contact.mjs':'882a3b189131c3544deba20b2a08c08616ed5a14','ik.mjs':'a71fe32b2a4c9c547593cfa541f742e72b53ad4f','pose-contract.mjs':'6107ae4151e70f7a54f473999faf96538a47f8c4','transform-contract.mjs':'497351fd363f99d922f3a63509100d4f0dd3f881'}});
+const REVIEW_PINS=freeze({humanSHA:'10ed9c2f8d0c392828f238e686bcc689517d34f9',profileSHA256:'2d8f1b640ac9ffad745e889984b264d55531b72d7f0496e611be4ca1ca824902',physicalContactSHA256:'cc2a82dc89e3abfee8fd6a7d5def9dd153da179abb4c834dc91b09924d237f58',modelSHA256:'b1ef9c448309a9a5d85ec4f2efcf45d9406d999ab24d27bdd1534359a7278b82',rigSHA256:'e80b6e82ac31c3bfb1134952e0bcb9b840fedc26b71dc90e9b387ae8cd28ecd3',animationSHA256:'b0f10003c14416330d30c41fe26d7ec86bc34e3b39ca9bd91ca78a54db415b94',scope:'LIMITED_CONTACT_REVIEW',ownerACK:'pr1:6209504553',modules:{'captain12-adapter.mjs':'0767111188ff1c62c8b68c44f8132f8d292089ed','rig.mjs':'a39a40b7dfa8151705bfa325abe557ae75f706fd','contact.mjs':'882a3b189131c3544deba20b2a08c08616ed5a14','ik.mjs':'a71fe32b2a4c9c547593cfa541f742e72b53ad4f','pose-contract.mjs':'6107ae4151e70f7a54f473999faf96538a47f8c4','transform-contract.mjs':'497351fd363f99d922f3a63509100d4f0dd3f881'}});
+function receiverAcceptance(result,attachmentValid,bound){
+ if(result?.valid===false||attachmentValid!==true)throw Error(result?.reason||'HUMANS_RECEIVER_REJECTED');
+ if(!Number.isFinite(bound)||bound<0||!Number.isFinite(result?.maxError)||result.maxError<0||result.maxError>bound)throw Error('HUMAN_JOINT_RESIDUAL_EXCEEDED');
+ return result;
+}
+function restoreOwnedCallback(holder,key,owned,prior){if(holder[key]!==owned)return false;holder[key]=prior;return true;}
+function profileTargets(T,profile,frames,rootInverseQuaternion){const points={},quats={};for(const[id,o]of Object.entries(profile.offsets)){const f=frames[id],matrix=new T.Matrix4().fromArray(f.contactToVessel);points[id]=new T.Vector3().fromArray(o.positionContactM).applyMatrix4(matrix).toArray();if(o.orientationContactXYZW)quats[id]=rootInverseQuaternion.clone().multiply(new T.Quaternion().setFromRotationMatrix(new T.Matrix4().fromArray(f.contactToWorld))).multiply(new T.Quaternion().fromArray(o.orientationContactXYZW)).normalize().toArray();}return{points,quats};}
+function initializeProbeSet(T,rig,profile,contacts){
+ // HUMANS' exact calibration selection, used once on the SAME preloaded rig.
+ // No fixture model, offset retuning or substitute human solver is introduced.
+ rig.group.position.fromArray(profile.requiredRoot.position);rig.group.quaternion.fromArray(profile.requiredRoot.rotationXYZW);rig.group.scale.fromArray(profile.requiredRoot.scale);
+ const frames=Object.fromEntries(contacts.contacts.map(c=>[c.id,{contactToVessel:c.restContactToVessel,contactToWorld:c.restContactToVessel}]));
+ const {points,quats}=profileTargets(T,profile,frames,new T.Quaternion()),root=rig.group.position;
+ const local=id=>new T.Vector3().fromArray(points[id]).sub(root).toArray();
+ rig.update({mode:'helm',time:0,seat:local('seat'),feet:[local('leftFoot'),local('rightFoot')],hands:[local('leftHand'),local('rightHand')],handOrientations:[quats.leftHand,quats.rightHand],footOrientations:[quats.leftFoot,quats.rightFoot],torsoPitch:profile.torsoPitchRad,lean:[0,0],breath:0});
+ rig.group.updateWorldMatrix(true,true);const meshes=[],sole=[];rig.group.traverse(o=>{if(!o.isSkinnedMesh)return;const mi=meshes.length;meshes.push(o);o.skeleton.update();const a=o.geometry.attributes;for(const i of new Set(o.geometry.index.array)){let w=0;for(let j=0;j<4;j++)if(/Foot|Toe/.test(o.skeleton.bones[a.skinIndex.getComponent(i,j)].name))w+=a.skinWeight.getComponent(i,j);if(w<.7)continue;const v=new T.Vector3().fromBufferAttribute(a.position,i);o.applyBoneTransform(i,v);o.localToWorld(v);if(v.y<.366)sole.push({id:v.z<.18?'leftFoot':'rightFoot',mesh:mi,index:i});}});
+ if(sole.length!==84)throw Error('H4_SOLE_WITNESS_COUNT_MISMATCH:'+sole.length);
+ const probes=[...Object.entries(profile.skinProbes).map(([id,p])=>({id,...p})),...sole];
+ return{meshes,probes:freeze(probes),selection:'exact H4 zero-time profile selection: Foot|Toe skin weights >=0.7, vessel Y<0.366, side about Z0.18; selected once, no best-frame filtering'};
+}
+function skinContactTrace(T,captain,grant,physical){captain.updateWorldMatrix(true,true);for(const m of grant.probeSet.meshes)m.skeleton.update();const rows=[],contacts={};let valid=true;for(const p of grant.probeSet.probes){const m=grant.probeSet.meshes[p.mesh],v=new T.Vector3().fromBufferAttribute(m.geometry.attributes.position,p.index);m.applyBoneTransform(p.index,v);m.localToWorld(v);const q=physical.queryRay(p.id,v.toArray()),range=p.id==='seat'?grant.profile.bounds.seatProbeNormalRangeM:p.id.endsWith('Hand')?grant.profile.bounds.handProbeNormalRangeM:grant.profile.bounds.soleProbeNormalRangeM;const ok=q.available&&q.signedNormalM>=range[0]-1e-7&&q.signedNormalM<=range[1]+1e-7&&q.edgeMarginM>=-1e-7;valid=valid&&ok;const row={...p,valid:!!ok,sourceTriangle:q.sourceTriangle??null,normalM:q.signedNormalM??null,edgeMarginM:q.edgeMarginM};rows.push(row);let a=contacts[p.id]||(contacts[p.id]={count:0,minNormalM:Infinity,maxNormalM:-Infinity,minEdgeMarginM:Infinity,failures:0});a.count++;if(Number.isFinite(q.signedNormalM)){a.minNormalM=Math.min(a.minNormalM,q.signedNormalM);a.maxNormalM=Math.max(a.maxNormalM,q.signedNormalM);}a.minEdgeMarginM=Math.min(a.minEdgeMarginM,q.edgeMarginM);if(!ok)a.failures++;}return{valid,probeCount:rows.length,soleCount:84,contacts,failures:rows.filter(q=>!q.valid),numericToleranceM:1e-7,wholeBodyClearance:false};}
 const reviewCapabilities=new WeakMap();
 async function preloadReview({T,candidate}){
  if(!text(REVIEW_PINS.ownerACK)||candidate?.humanACK!==REVIEW_PINS.ownerACK)throw Error('SCOPED_HUMANS_OWNER_ACK_REQUIRED');
  if(candidate.correctedHumanSHA!==REVIEW_PINS.humanSHA||candidate.rigProfileSHA256!==REVIEW_PINS.profileSHA256||candidate.physicalContactSHA256!==REVIEW_PINS.physicalContactSHA256||candidate.humanActivation!==true||candidate.productionEnabled!==false||candidate.reviewScope!==REVIEW_PINS.scope)throw Error('EXACT_LIMITED_REVIEW_MANIFEST_REQUIRED');
  const hash=async(a,algorithm='SHA-256')=>Array.from(new Uint8Array(await crypto.subtle.digest(algorithm,a)),v=>v.toString(16).padStart(2,'0')).join(''),enc=new TextEncoder();
  const read=async(p,want,git=false)=>{const r=await fetch(p,{cache:'no-store'});if(!r.ok)throw Error('RECEIVER_ASSET_UNAVAILABLE:'+p);const a=new Uint8Array(await r.arrayBuffer());let bytes=a;if(git){const h=enc.encode('blob '+a.length+'\0');bytes=new Uint8Array(h.length+a.length);bytes.set(h);bytes.set(a,h.length);}if(await hash(bytes,git?'SHA-1':'SHA-256')!==want)throw Error('RECEIVER_BYTE_ATTESTATION_FAILED:'+p);return a;};
+ const manifestResponse=await fetch('c2-candidate.json',{cache:'no-store'});if(!manifestResponse.ok)throw Error('CANDIDATE_MANIFEST_UNAVAILABLE');
+ const manifestBytes=new Uint8Array(await manifestResponse.arrayBuffer()),expectedManifest=G.document?.querySelector('meta[name="c2-manifest"]')?.content;
+ if(!hex64(expectedManifest)||await hash(manifestBytes)!==expectedManifest)throw Error('INDEPENDENT_CANDIDATE_FINGERPRINT_REQUIRED');
+ const manifested=JSON.parse(new TextDecoder().decode(manifestBytes));if(JSON.stringify(manifested)!==JSON.stringify(candidate))throw Error('CANDIDATE_OBJECT_MISMATCH');
+ if(!candidate.assets||Object.keys(candidate.assets).length<110)throw Error('COMPLETE_CANDIDATE_ASSETS_REQUIRED');
+ for(const [p,d]of Object.entries(candidate.assets)){if(!/^[\w./-]+$/.test(p)||p.includes('..')||!hex64(d))throw Error('INVALID_CANDIDATE_ASSET');await read(p,d);}
  const profileBytes=await read('human/profiles/bay12/profile.json',REVIEW_PINS.profileSHA256),profile=freeze(JSON.parse(new TextDecoder().decode(profileBytes)));
  if(profile.productionEnabled!==false||profile.status!=='LIMITED_CONTACT_REVIEW_ONLY_NOT_GAMEPLAY_ACCEPTED'||profile.physicalContactSHA256!==REVIEW_PINS.physicalContactSHA256||profile.modelSHA256!==REVIEW_PINS.modelSHA256)throw Error('UNACCEPTED_PROFILE_SCOPE');
  for(const [name,h]of Object.entries(REVIEW_PINS.modules))await read('human/src/'+name,h,true);
  const [rigBytes,clipBytes]=await Promise.all([read('human/assets/RocketboxCaptain.glb',REVIEW_PINS.rigSHA256),read('human/assets/animations.json',REVIEW_PINS.animationSHA256)]);
  const {createHelmRig}=await import('./human/src/rig.mjs'),{makeCaptain12Build}=await import('./human/src/captain12-adapter.mjs');
  const gltf=await new Promise((resolve,reject)=>new T.GLTFLoader().parse(rigBytes.buffer,'',resolve,reject)),rig=createHelmRig(gltf,JSON.parse(new TextDecoder().decode(clipBytes)),{heightM:profile.heightM});
+ const contactBytes=await read('c2-contacts.json',REVIEW_PINS.physicalContactSHA256),probeSet=initializeProbeSet(T,rig,profile,JSON.parse(new TextDecoder().decode(contactBytes)));
  let sample=freeze({valid:false,reason:'AWAITING_CORE_COMMITTED_FRAME'}),buildCount=0;
  const factory=makeCaptain12Build({rig,sampleHost:()=>sample,onUnsupported:()=>{}});
  const handle=Object.freeze({build(){const out=factory();buildCount++;return out;}});
- reviewCapabilities.set(handle,{profile,rig,candidate:copy(candidate),get buildCount(){return buildCount;},setSample:p=>{sample=copy(p);},claimed:false});return handle;
+ reviewCapabilities.set(handle,{profile,rig,probeSet,candidate:copy(candidate),get buildCount(){return buildCount;},setSample:p=>{sample=copy(p);},claimed:false});return handle;
 }
 
 const sessions=new WeakMap();
@@ -58,7 +86,8 @@ async function install({T,A,core,spec,inputs,candidate,receiver=null,approvedPro
  if(sessions.has(A))throw Error('C2_ALREADY_REGISTERED');
  const reservation=Object.freeze({pending:true});sessions.set(A,reservation);let rollback=()=>{};try{
  if(candidate.c1SourceSHA!==C1||spec.designId!==DESIGN||candidate.physicalContactSHA256!==inputs.physicalContactSHA256)throw Error('C2_BASELINE_MISMATCH');
- const physical=G.CoreBayContactC2.bind(T,A,spec),boat=A.boat,model=A.model,S=A.state,captain=boat.getObjectByName('SEA12_CAPTAIN');if(!captain)throw Error('CAPTAIN_UNAVAILABLE');
+ const physical=G.CoreBayContactC2.bind(T,A,spec);rollback=()=>physical.dispose();
+ const boat=A.boat,model=A.model,S=A.state,captain=boat.getObjectByName('SEA12_CAPTAIN');if(!captain)throw Error('CAPTAIN_UNAVAILABLE');
  const scope=crypto.randomUUID(),instance=crypto.randomUUID(),profileDigest=reviewHandle?REVIEW_PINS.profileSHA256:sha256('C2_PHYSICAL_ONLY_NO_RIG_PROFILE');
  const grant=reviewHandle?reviewCapabilities.get(reviewHandle):null;
  if(receiver||approvedProfile||reviewHandle&&!grant||candidate.humanActivation&&!grant)throw Error('BYTE_ATTESTED_PRIVATE_REVIEW_CAPABILITY_REQUIRED');
@@ -66,10 +95,10 @@ async function install({T,A,core,spec,inputs,candidate,receiver=null,approvedPro
  if(verifiedProfile&&(grant.claimed||grant.buildCount!==1||grant.rig.group!==captain||JSON.stringify(grant.candidate)!==JSON.stringify(candidate)||!text(REVIEW_PINS.ownerACK)))throw Error('MATCHING_HUMANS_SHA_ACK_PROFILE_REQUIRED');
  const profile=grant?.profile; if(grant)grant.claimed=true;
  let descriptor=await core.reader.describe(),refreshing=false,serial=0,activation=0,lastLifecycle=null,current=null,latest=null,disposed=false,seenCaptain=captain;
- const bridge=createBridge(()=>current),samples=[],events=[],noThrow=reason=>{try{if(events.at(-1)?.reason!==reason){events.push({reason,frameId:serial});if(events.length>128)events.shift();}}catch{}};
+ const bridge=createBridge(()=>current),samples=[],skinSamples=[],events=[],noThrow=reason=>{try{if(events.at(-1)?.reason!==reason){events.push({reason,frameId:serial});if(events.length>128)events.shift();}}catch{}};
  const originalBefore=G.SEA06.beforeRender,sourceStep=S.step,priorAnimate=captain.userData.animateCaptain;
  const deferredAnimate=()=>({valid:false,reason:'AWAITING_COMMITTED_OWNER_FRAME'});
- rollback=()=>{if(G.SEA06.beforeRender===before)G.SEA06.beforeRender=originalBefore;if(captain.userData.animateCaptain===deferredAnimate)captain.userData.animateCaptain=priorAnimate;physical.dispose();};
+ rollback=()=>{if(G.SEA06.beforeRender===before)G.SEA06.beforeRender=originalBefore;restoreOwnedCallback(captain.userData,'animateCaptain',deferredAnimate,priorAnimate);physical.dispose();};
  // Physical-only mode observes the original captain. Positive mode is a receiver
  // preloaded through the existing ensureDriver factory BEFORE C1 attachment.
  const ownerAnimate=verifiedProfile?priorAnimate:null;
@@ -97,18 +126,19 @@ async function install({T,A,core,spec,inputs,candidate,receiver=null,approvedPro
    const captainInvQ=new T.Quaternion().setFromRotationMatrix(captain.matrixWorld).invert();
    for(const [id,o]of Object.entries(profile.offsets)){const f=contactFrames[id];if(!f?.available)throw Error('PHYSICAL_CONTACT_UNAVAILABLE:'+id);attachment[id]=new T.Vector3().fromArray(o.positionContactM).applyMatrix4(new T.Matrix4().fromArray(f.contactToVessel)).toArray();if(o.orientationContactXYZW)quats[id]=captainInvQ.clone().multiply(new T.Quaternion().setFromRotationMatrix(new T.Matrix4().fromArray(f.contactToWorld))).multiply(new T.Quaternion().fromArray(o.orientationContactXYZW)).normalize().toArray();}
    latest=copy({...latest,attachment,rigPose:{torsoPitch:profile.torsoPitchRad,handOrientations:[quats.leftHand,quats.rightHand],footOrientations:[quats.leftFoot,quats.rightFoot],balanceGain:profile.bounds.rollPitchVisualGain}});grant.setSample(latest);
-   const accepted=ownerAnimate(A,S);if(accepted?.valid===false||captain.userData.attachmentValid!==true)throw Error(accepted?.reason||'HUMANS_RECEIVER_REJECTED');
-   if(!Number.isFinite(accepted?.maxError)||accepted.maxError>profile.bounds.jointResidualMaxM)throw Error('HUMAN_JOINT_RESIDUAL_EXCEEDED');
-   latest=copy({...latest,receiverAccepted:true,rigResult:accepted});
+   const accepted=receiverAcceptance(ownerAnimate(A,S),captain.userData.attachmentValid,profile.bounds.jointResidualMaxM);
+   const skin=skinContactTrace(T,captain,grant,physical);skinSamples.push({frameId:serial,time:p.clock.seconds,epoch:p.clock.epoch,dt:tick.frame.dt,reset:tick.reset,jointErrorM:accepted.maxError,wheel:A.model.getObjectByName('PLAY_STEERING').rotation.x,roll:current.roll,pitch:current.pitch,...skin});if(skinSamples.length>2000)skinSamples.shift();
+   if(!skin.valid)throw Error('HUMAN_PHYSICAL_CONTACT_REJECTED');
+   latest=copy({...latest,receiverAccepted:true,rigResult:accepted,skin});
   }
   let max=0;for(const [id,f]of Object.entries(contactFrames)){const q=physical.query(id,f.pointWorld);max=Math.max(max,q.distanceM);}
   samples.push({frameId:serial,time:p.clock.seconds,epoch:p.clock.epoch,activationEpoch:activation,dt:tick.frame.dt,reset:tick.reset,physicalErrorM:max,captainUUID:captain.uuid,receiverUpdated:verifiedProfile&&!tick.skipUpdate,physicalContacts:5,cpuMs:performance.now()-started});if(samples.length>2000)samples.shift();
  }catch(e){invalidate(e.message||'C2_INVALID_SAMPLE');if(/WORLD/.test(e.message))reDescribe();}}
  function before(){originalBefore();commit();}
  G.SEA06.beforeRender=before;
- function dispose(){if(disposed)return;invalidate('C2_DISPOSED');disposed=true;if(G.SEA06.beforeRender===before)G.SEA06.beforeRender=originalBefore;if(verifiedProfile&&captain.userData.animateCaptain===deferredAnimate)captain.userData.animateCaptain=priorAnimate;physical.dispose();sessions.delete(A);}
- const api=Object.freeze({read:()=>latest?copy({...latest,context:latest.context?Object.fromEntries(Object.entries(latest.context).filter(([k])=>!['runtimeScopeId','vesselInstanceId'].includes(k))):null}):null,inspect:()=>copy({mapping:MAP,privateRegistration:true,frameId:serial,activationEpoch:activation,positiveFactoryEnabled:verifiedProfile,reason:latest?.reason||null,worldRevision:descriptor.worldRevision,physicalAudit:physical.audit(),samples,events,existingCaptainUUID:captain.uuid,yachtAvailable:false,multiplayer:false}),showContacts:physical.show,queryContact:physical.query,dispose});sessions.set(A,api);commit();return api;
- }catch(error){rollback();if(sessions.get(A)===reservation)sessions.delete(A);throw error;}
+ function dispose(){if(disposed)return;invalidate('C2_DISPOSED');disposed=true;if(G.SEA06.beforeRender===before)G.SEA06.beforeRender=originalBefore;if(verifiedProfile)restoreOwnedCallback(captain.userData,'animateCaptain',deferredAnimate,priorAnimate);physical.dispose();sessions.delete(A);}
+ const api=Object.freeze({read:()=>latest?copy({...latest,context:latest.context?Object.fromEntries(Object.entries(latest.context).filter(([k])=>!['runtimeScopeId','vesselInstanceId'].includes(k))):null}):null,inspect:()=>copy({mapping:MAP,privateRegistration:true,frameId:serial,activationEpoch:activation,positiveFactoryEnabled:verifiedProfile,reason:latest?.reason||null,worldRevision:descriptor.worldRevision,physicalAudit:physical.audit(),samples,skinSamples,probeSet:grant?{selection:grant.probeSet.selection,probes:grant.probeSet.probes}:null,events,existingCaptainUUID:captain.uuid,yachtAvailable:false,multiplayer:false}),showContacts:physical.show,queryContact:physical.query,dispose});sessions.set(A,api);commit();return api;
+ }catch(error){try{rollback();}catch{}finally{if(sessions.get(A)===reservation)sessions.delete(A);}throw error;}
 }
-const api=Object.freeze({revision:MAP,sha256,epoch,createBridge,preloadReview,install});G.CoreBayHelmC2=api;if(typeof module!=='undefined')module.exports=api;
+const api=Object.freeze({revision:MAP,sha256,epoch,createBridge,receiverAcceptance,restoreOwnedCallback,preloadReview,install});G.CoreBayHelmC2=api;if(typeof module!=='undefined')module.exports=api;
 })(typeof window!=='undefined'?window:globalThis);
