@@ -1,0 +1,30 @@
+{
+  "release": "Y11 isolated force-model demo",
+  "sourceCommit": "013e4a0fe2cac60fe16817cd1d8e52f0bcfde1d5",
+  "baselineCommit": "a9134318402f87f9e1d61864f76f834c0e8df174",
+  "model": "atlas-d-y11-3dof-1",
+  "assetSHA256": "b2966e8265edbd6d52ac2fa7aa1aaa764683df5ff1548a21c8cc1a024fdb3d48",
+  "parameterSource": "authored concept, not measured sea-trial data",
+  "multiplayer": false,
+  "sharedHostMerged": false,
+  "tests": 26,
+  "files": {
+    "preview.js": "bef5c667503b1eba006a6ddd25ad6188640c8f2b8f7e6e78e9b99e433ba7c130",
+    "test-physics.cjs": "dfb8c926078e5d034031a760b1e77f652b7d1c630267eec39fd08bde5f3211b9",
+    "report.html": "de252d10eac8d12f5dc3d5d275ec30bc27ab369d9cb74a50eb3fac63810249fc",
+    "verify.py": "59de95e8b0cff2fac8576b5ef48eefabab31488e5b8db0ae6384c759ef129b0b",
+    "telemetry.js": "65c7c20c648a25642c39ac3b9258441fd1d15770b08db2a2fc30d7ed8f7bf513",
+    "build.py": "6e5e590269ea8c5087de03cdd48ef1406db950de7ba05ab2c4a856a45ada738e",
+    "preview.html": "e5f6b92d0af34ae496a7ae234a24f84b1753c7f6fb27b6a23157f9005d9b6a4a",
+    "physics.js": "ed69a3640588235b34b2c425cfff7b0a2af72dbe13baeb81c1fb6aa047373a89",
+    "physics-results.json": "1510d2c8b1e8cc779e53dcb0488bdfa24130602469f5df95a1e84e0437b04e94",
+    "host/index.html": "8a75ad52dbccaae76b6a3b37002483ca6e7c4004aaf17b826dd78aaaf28505f9"
+  },
+  "inherited": {
+    "live/atlas-d.js": "b8dd34a083b988e479db3fa6c32ec432c4daf720128807eaaf42c887048b3e2b",
+    "live/atlas-d-core.js": "ca362b6e6d5a79b17dfde679e1746faace0863ceb3680cb241dc320de60d2ed5",
+    "contact/y4/preview.js": "e292ad1787ade2108f41ecdc2623a6245e758675519f41a56e6c5f17d9510bea",
+    "contact/y9/pause-recovery.js": "708351a192dec7a2c891b9d1cf4746d27bbb1e02c5309fe4040bb10c9d9a8c85",
+    "contact/y10/boarding-label.js": "9f3d06eb7693393402895e31d760e5e58ccc6132a28aa62e6cb0eebacc36ab47"
+  }
+}
