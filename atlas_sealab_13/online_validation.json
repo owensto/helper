@@ -1,0 +1,905 @@
+{
+  "release": 13,
+  "url": "https://rawcdn.githack.com/owensto/helper/491fbb0133fde085c03e4ee93db34f4e630a3c42/atlas_sealab_13/live/index.html",
+  "published_commit": "491fbb0133fde085c03e4ee93db34f4e630a3c42",
+  "source_commit": "ae5491ca0afad5ad7ea017c67be8df5b1647ced6",
+  "candidate_review_run": 38912757458,
+  "public_run": "38913888862",
+  "passed": true,
+  "exactPublicAssets": true,
+  "assetSubstitution": false,
+  "physicalDeviceTested": false,
+  "tests": [
+    {
+      "device": "desktop",
+      "passed": true,
+      "errors": [],
+      "shaderErrors": [],
+      "assetErrors": [],
+      "checks": [
+        "source-known Beaufort default; engine/audio opt-in; baked coast and worker active",
+        "large reachable controls; no horizontal overflow",
+        "tile crossing schedules visual worker; bounded main-thread commit/cache",
+        "live map, asynchronous depth raster, hidden chart stops requesting work",
+        "same captain and working source fittings retained",
+        "actual ignition/audio/acceleration, immediate reversal keeps inertia",
+        "wave animation and both graphic modes compile"
+      ],
+      "timeToReadySeconds": 29.057752765999993,
+      "initial": {
+        "version": 13,
+        "ready": true,
+        "location": "beaufort",
+        "defaultLocation": "beaufort",
+        "stream": {
+          "worker": true,
+          "requests": 1,
+          "cacheHits": 1,
+          "completed": 1,
+          "discarded": 0,
+          "fallback": false,
+          "maxApplyMs": 3.7000000000116415,
+          "maxWorkerMs": 31.39999999999418,
+          "errors": [],
+          "mainSamplingSlices": 0,
+          "startTilePreloaded": true,
+          "terrainRequests": 1,
+          "pending": 0,
+          "terrainTiles": 2,
+          "mapTiles": 0
+        },
+        "scenery": {
+          "ready": true,
+          "buildTimeMs": 2012.8000000000175,
+          "visibleChunks": 99,
+          "loadedChunks": 138,
+          "triangles": 91145,
+          "baked": true,
+          "sourcePreserved": true,
+          "counts": {
+            "bridges": 23,
+            "buildings": 514,
+            "roads": 79,
+            "trees": 520,
+            "land": 69
+          }
+        },
+        "hullMask": {
+          "source": "b1ef9c448309a9a5d85ec4f2efcf45d9406d999ab24d27bdd1534359a7278b82",
+          "sourceNodes": [
+            66,
+            69
+          ],
+          "insetM": 0.01,
+          "heightAware": true
+        },
+        "water": {
+          "ready": true,
+          "terrainVertices": 16641,
+          "terrainRebuilds": 2,
+          "knownSamples": 16641,
+          "renderedBottom": true,
+          "referenceSurvey": false,
+          "nearWaterGridMetres": 0.5,
+          "waterVertices": 58081,
+          "visualTilePending": false,
+          "colorArrayBound": true,
+          "seabedColorMean": 0.225524075686737,
+          "shaderCompiled": true,
+          "turbidity": 0.23,
+          "origin": [
+            -384,
+            -96
+          ]
+        },
+        "multiplayer": false,
+        "experimentalHuman": false
+      },
+      "modelTransport": {
+        "compressed": true,
+        "bytes": 4127109,
+        "load": null
+      },
+      "defaultDepth": {
+        "bed": -4.0255314513208384,
+        "depth": 4.0255314513208384,
+        "known": true,
+        "land": false,
+        "source": "Interpolated NOAA soundings",
+        "waterDepth": 3.972107672024222,
+        "contact": {
+          "part": "PROP",
+          "x": -389.27343955152617,
+          "z": -111.68495127335923,
+          "bed": -4.007651917111769,
+          "clearance": 3.203411492140095,
+          "depth": 3.9796091890466183,
+          "draft": 0.7497999999999999,
+          "hullClearance": 3.5109316177359444
+        }
+      },
+      "controls": [
+        {
+          "id": "helm09-key",
+          "x": 174,
+          "y": 775.796875,
+          "w": 164,
+          "h": 63.390625,
+          "hit": true
+        },
+        {
+          "id": "s11-less",
+          "x": 615,
+          "y": 791,
+          "w": 48,
+          "h": 48,
+          "hit": true
+        },
+        {
+          "id": "s11-more",
+          "x": 884.5,
+          "y": 791,
+          "w": 48,
+          "h": 48,
+          "hit": true
+        },
+        {
+          "id": "s11-left",
+          "x": 948.5,
+          "y": 793,
+          "w": 101.828125,
+          "h": 48,
+          "hit": true
+        },
+        {
+          "id": "s11-right",
+          "x": 1164.15625,
+          "y": 793,
+          "w": 101.828125,
+          "h": 48,
+          "hit": true
+        },
+        {
+          "id": "helm09-map",
+          "x": 863,
+          "y": 23,
+          "w": 78.71875,
+          "h": 48,
+          "hit": true
+        },
+        {
+          "id": "helm09-pause",
+          "x": 1307.859375,
+          "y": 23,
+          "w": 101.140625,
+          "h": 48,
+          "hit": true
+        }
+      ],
+      "renderBoundary": {
+        "calls": 0,
+        "elapsedMs": 0.39999999999417923,
+        "desired": [
+          -352,
+          -96
+        ]
+      },
+      "streamAfterTile": {
+        "worker": true,
+        "requests": 2,
+        "cacheHits": 1,
+        "completed": 2,
+        "discarded": 0,
+        "fallback": false,
+        "maxApplyMs": 3.7000000000116415,
+        "maxWorkerMs": 373.30000000001746,
+        "errors": [],
+        "mainSamplingSlices": 0,
+        "startTilePreloaded": true,
+        "terrainRequests": 2,
+        "pending": 0,
+        "terrainTiles": 3,
+        "mapTiles": 0
+      },
+      "poweredAudio": {
+        "version": "09",
+        "enabled": true,
+        "contextState": "running",
+        "sampleStatus": "Three recorded layers ready",
+        "held": false,
+        "settings": {
+          "master": 0.6,
+          "engine": 0.85,
+          "water": 0.55,
+          "wind": 0.35,
+          "effects": 0.6
+        },
+        "metrics": {
+          "rms": 0.029961640126531706,
+          "engineLoads": [
+            {
+              "rpm": 3177,
+              "load": 0.5,
+              "gain": 0.6203924488617986,
+              "recorded": true
+            },
+            {
+              "rpm": 3177,
+              "load": 0.5,
+              "gain": 0,
+              "recorded": true
+            }
+          ],
+          "activeEngines": 1
+        },
+        "specificEngineRecording": false,
+        "recordedBowWater": true,
+        "realism09": {
+          "version": 9,
+          "layers": 3,
+          "lastContact": 0,
+          "events": [
+            {
+              "kind": "key",
+              "t": 0.7227210884353742
+            },
+            {
+              "kind": "start",
+              "t": 0.7314285714285714
+            },
+            {
+              "kind": "shift",
+              "t": 4.330521541950113
+            }
+          ],
+          "recordedDominant": true,
+          "acousticallyValidated": false
+        }
+      },
+      "final": {
+        "version": 13,
+        "ready": true,
+        "location": "beaufort",
+        "defaultLocation": "beaufort",
+        "stream": {
+          "worker": true,
+          "requests": 9,
+          "cacheHits": 31,
+          "completed": 9,
+          "discarded": 5,
+          "fallback": false,
+          "maxApplyMs": 4.2999999999883585,
+          "maxWorkerMs": 373.30000000001746,
+          "errors": [],
+          "mainSamplingSlices": 0,
+          "startTilePreloaded": true,
+          "terrainRequests": 8,
+          "mapRequests": 1,
+          "pending": 0,
+          "terrainTiles": 6,
+          "mapTiles": 1
+        },
+        "scenery": {
+          "ready": true,
+          "buildTimeMs": 2012.8000000000175,
+          "visibleChunks": 99,
+          "loadedChunks": 138,
+          "triangles": 91145,
+          "baked": true,
+          "sourcePreserved": true,
+          "counts": {
+            "bridges": 23,
+            "buildings": 514,
+            "roads": 79,
+            "trees": 520,
+            "land": 69
+          }
+        },
+        "hullMask": {
+          "source": "b1ef9c448309a9a5d85ec4f2efcf45d9406d999ab24d27bdd1534359a7278b82",
+          "sourceNodes": [
+            66,
+            69
+          ],
+          "insetM": 0.01,
+          "heightAware": true
+        },
+        "water": {
+          "ready": true,
+          "terrainVertices": 16641,
+          "terrainRebuilds": 6,
+          "knownSamples": 16608,
+          "renderedBottom": true,
+          "referenceSurvey": false,
+          "nearWaterGridMetres": 0.5,
+          "waterVertices": 58081,
+          "visualTilePending": false,
+          "colorArrayBound": true,
+          "seabedColorMean": 0.21790301418014557,
+          "shaderCompiled": true,
+          "turbidity": 0.23,
+          "origin": [
+            -384,
+            -128
+          ]
+        },
+        "multiplayer": false,
+        "experimentalHuman": false
+      }
+    },
+    {
+      "device": "phone",
+      "passed": true,
+      "errors": [],
+      "shaderErrors": [],
+      "assetErrors": [],
+      "checks": [
+        "source-known Beaufort default; engine/audio opt-in; baked coast and worker active",
+        "large reachable controls; no horizontal overflow",
+        "tile crossing schedules visual worker; bounded main-thread commit/cache",
+        "live map, asynchronous depth raster, hidden chart stops requesting work",
+        "same captain and working source fittings retained",
+        "actual ignition/audio/acceleration, immediate reversal keeps inertia",
+        "wave animation and both graphic modes compile"
+      ],
+      "timeToReadySeconds": 30.663524046999996,
+      "initial": {
+        "version": 13,
+        "ready": true,
+        "location": "beaufort",
+        "defaultLocation": "beaufort",
+        "stream": {
+          "worker": true,
+          "requests": 1,
+          "cacheHits": 1,
+          "completed": 1,
+          "discarded": 0,
+          "fallback": false,
+          "maxApplyMs": 11.10000000000582,
+          "maxWorkerMs": 54.5,
+          "errors": [],
+          "mainSamplingSlices": 0,
+          "startTilePreloaded": true,
+          "terrainRequests": 1,
+          "pending": 0,
+          "terrainTiles": 2,
+          "mapTiles": 0
+        },
+        "scenery": {
+          "ready": true,
+          "buildTimeMs": 1180,
+          "visibleChunks": 99,
+          "loadedChunks": 138,
+          "triangles": 91145,
+          "baked": true,
+          "sourcePreserved": true,
+          "counts": {
+            "bridges": 23,
+            "buildings": 514,
+            "roads": 79,
+            "trees": 520,
+            "land": 69
+          }
+        },
+        "hullMask": {
+          "source": "b1ef9c448309a9a5d85ec4f2efcf45d9406d999ab24d27bdd1534359a7278b82",
+          "sourceNodes": [
+            66,
+            69
+          ],
+          "insetM": 0.01,
+          "heightAware": true
+        },
+        "water": {
+          "ready": true,
+          "terrainVertices": 16641,
+          "terrainRebuilds": 2,
+          "knownSamples": 16641,
+          "renderedBottom": true,
+          "referenceSurvey": false,
+          "nearWaterGridMetres": 0.5,
+          "waterVertices": 58081,
+          "visualTilePending": false,
+          "colorArrayBound": true,
+          "seabedColorMean": 0.225524075686737,
+          "shaderCompiled": true,
+          "turbidity": 0.23,
+          "origin": [
+            -384,
+            -96
+          ]
+        },
+        "multiplayer": false,
+        "experimentalHuman": false
+      },
+      "modelTransport": {
+        "compressed": true,
+        "bytes": 4127109,
+        "load": null
+      },
+      "defaultDepth": {
+        "bed": -4.0255314513208384,
+        "depth": 4.0255314513208384,
+        "known": true,
+        "land": false,
+        "source": "Interpolated NOAA soundings",
+        "waterDepth": 3.970569455538454,
+        "contact": {
+          "part": "PROP",
+          "x": -389.27304637221926,
+          "z": -111.73153428483216,
+          "bed": -4.007651917111769,
+          "clearance": 3.2067733046328613,
+          "depth": 3.9669487395402085,
+          "draft": 0.7497999999999999,
+          "hullClearance": 3.513315786984927
+        }
+      },
+      "controls": [
+        {
+          "id": "helm09-key",
+          "x": 20,
+          "y": 590.234375,
+          "w": 161.5,
+          "h": 54.984375,
+          "hit": true
+        },
+        {
+          "id": "s11-less",
+          "x": 20,
+          "y": 670.21875,
+          "w": 44,
+          "h": 48,
+          "hit": true
+        },
+        {
+          "id": "s11-more",
+          "x": 366,
+          "y": 670.21875,
+          "w": 44,
+          "h": 48,
+          "hit": true
+        },
+        {
+          "id": "s11-left",
+          "x": 20,
+          "y": 747.21875,
+          "w": 128,
+          "h": 48,
+          "hit": true
+        },
+        {
+          "id": "s11-right",
+          "x": 282,
+          "y": 747.21875,
+          "w": 128,
+          "h": 48,
+          "hit": true
+        },
+        {
+          "id": "helm09-map",
+          "x": 8,
+          "y": 874,
+          "w": 80.40625,
+          "h": 50,
+          "hit": true
+        },
+        {
+          "id": "helm09-pause",
+          "x": 307.859375,
+          "y": 17,
+          "w": 101.140625,
+          "h": 48,
+          "hit": true
+        }
+      ],
+      "renderBoundary": {
+        "calls": 0,
+        "elapsedMs": 1.5,
+        "desired": [
+          -352,
+          -96
+        ]
+      },
+      "streamAfterTile": {
+        "worker": true,
+        "requests": 2,
+        "cacheHits": 1,
+        "completed": 2,
+        "discarded": 0,
+        "fallback": false,
+        "maxApplyMs": 11.10000000000582,
+        "maxWorkerMs": 425.8999999999942,
+        "errors": [],
+        "mainSamplingSlices": 0,
+        "startTilePreloaded": true,
+        "terrainRequests": 2,
+        "pending": 0,
+        "terrainTiles": 3,
+        "mapTiles": 0
+      },
+      "visibleResumeRecoveries": 1,
+      "poweredAudio": {
+        "version": "09",
+        "enabled": true,
+        "contextState": "running",
+        "sampleStatus": "Three recorded layers ready",
+        "held": false,
+        "settings": {
+          "master": 0.6,
+          "engine": 0.85,
+          "water": 0.55,
+          "wind": 0.35,
+          "effects": 0.6
+        },
+        "metrics": {
+          "rms": 0.032589129294705386,
+          "engineLoads": [
+            {
+              "rpm": 3192,
+              "load": 0.5,
+              "gain": 0.6213417371284572,
+              "recorded": true
+            },
+            {
+              "rpm": 3192,
+              "load": 0.5,
+              "gain": 0,
+              "recorded": true
+            }
+          ],
+          "activeEngines": 1
+        },
+        "specificEngineRecording": false,
+        "recordedBowWater": true,
+        "realism09": {
+          "version": 9,
+          "layers": 3,
+          "lastContact": 0,
+          "events": [
+            {
+              "kind": "key",
+              "t": 0.7720634920634921
+            },
+            {
+              "kind": "start",
+              "t": 0.7720634920634921
+            }
+          ],
+          "recordedDominant": true,
+          "acousticallyValidated": false
+        }
+      },
+      "final": {
+        "version": 13,
+        "ready": true,
+        "location": "beaufort",
+        "defaultLocation": "beaufort",
+        "stream": {
+          "worker": true,
+          "requests": 8,
+          "cacheHits": 31,
+          "completed": 8,
+          "discarded": 5,
+          "fallback": false,
+          "maxApplyMs": 11.10000000000582,
+          "maxWorkerMs": 425.8999999999942,
+          "errors": [],
+          "mainSamplingSlices": 0,
+          "startTilePreloaded": true,
+          "terrainRequests": 7,
+          "mapRequests": 1,
+          "pending": 0,
+          "terrainTiles": 6,
+          "mapTiles": 1
+        },
+        "scenery": {
+          "ready": true,
+          "buildTimeMs": 1180,
+          "visibleChunks": 100,
+          "loadedChunks": 138,
+          "triangles": 91145,
+          "baked": true,
+          "sourcePreserved": true,
+          "counts": {
+            "bridges": 23,
+            "buildings": 514,
+            "roads": 79,
+            "trees": 520,
+            "land": 69
+          }
+        },
+        "hullMask": {
+          "source": "b1ef9c448309a9a5d85ec4f2efcf45d9406d999ab24d27bdd1534359a7278b82",
+          "sourceNodes": [
+            66,
+            69
+          ],
+          "insetM": 0.01,
+          "heightAware": true
+        },
+        "water": {
+          "ready": true,
+          "terrainVertices": 16641,
+          "terrainRebuilds": 5,
+          "knownSamples": 16641,
+          "renderedBottom": true,
+          "referenceSurvey": false,
+          "nearWaterGridMetres": 0.5,
+          "waterVertices": 58081,
+          "visualTilePending": false,
+          "colorArrayBound": true,
+          "seabedColorMean": 0.22650982098560973,
+          "shaderCompiled": true,
+          "turbidity": 0.23,
+          "origin": [
+            -352,
+            -96
+          ]
+        },
+        "multiplayer": false,
+        "experimentalHuman": false
+      }
+    },
+    {
+      "device": "small-phone",
+      "passed": true,
+      "errors": [],
+      "shaderErrors": [],
+      "assetErrors": [],
+      "checks": [
+        "source-known Beaufort default; engine/audio opt-in; baked coast and worker active",
+        "large reachable controls; no horizontal overflow",
+        "tile crossing schedules visual worker; bounded main-thread commit/cache",
+        "live map, asynchronous depth raster, hidden chart stops requesting work",
+        "same captain and working source fittings retained"
+      ],
+      "timeToReadySeconds": 23.379683271000005,
+      "initial": {
+        "version": 13,
+        "ready": true,
+        "location": "beaufort",
+        "defaultLocation": "beaufort",
+        "stream": {
+          "worker": true,
+          "requests": 1,
+          "cacheHits": 1,
+          "completed": 1,
+          "discarded": 0,
+          "fallback": false,
+          "maxApplyMs": 7.2000000000116415,
+          "maxWorkerMs": 31.39999999999418,
+          "errors": [],
+          "mainSamplingSlices": 0,
+          "startTilePreloaded": true,
+          "terrainRequests": 1,
+          "pending": 0,
+          "terrainTiles": 2,
+          "mapTiles": 0
+        },
+        "scenery": {
+          "ready": true,
+          "buildTimeMs": 762.5,
+          "visibleChunks": 99,
+          "loadedChunks": 138,
+          "triangles": 91145,
+          "baked": true,
+          "sourcePreserved": true,
+          "counts": {
+            "bridges": 23,
+            "buildings": 514,
+            "roads": 79,
+            "trees": 520,
+            "land": 69
+          }
+        },
+        "hullMask": {
+          "source": "b1ef9c448309a9a5d85ec4f2efcf45d9406d999ab24d27bdd1534359a7278b82",
+          "sourceNodes": [
+            66,
+            69
+          ],
+          "insetM": 0.01,
+          "heightAware": true
+        },
+        "water": {
+          "ready": true,
+          "terrainVertices": 16641,
+          "terrainRebuilds": 2,
+          "knownSamples": 16641,
+          "renderedBottom": true,
+          "referenceSurvey": false,
+          "nearWaterGridMetres": 0.5,
+          "waterVertices": 58081,
+          "visualTilePending": false,
+          "colorArrayBound": true,
+          "seabedColorMean": 0.225524075686737,
+          "shaderCompiled": true,
+          "turbidity": 0.23,
+          "origin": [
+            -384,
+            -96
+          ]
+        },
+        "multiplayer": false,
+        "experimentalHuman": false
+      },
+      "modelTransport": {
+        "compressed": true,
+        "bytes": 4127109,
+        "load": null
+      },
+      "defaultDepth": {
+        "bed": -4.0255314513208384,
+        "depth": 4.0255314513208384,
+        "known": true,
+        "land": false,
+        "source": "Interpolated NOAA soundings",
+        "waterDepth": 3.970569455538454,
+        "contact": {
+          "part": "PROP",
+          "x": -389.27304637221926,
+          "z": -111.73153428483216,
+          "bed": -4.007651917111769,
+          "clearance": 3.2067733046328613,
+          "depth": 3.9669487395402085,
+          "draft": 0.7497999999999999,
+          "hullClearance": 3.513315786984927
+        }
+      },
+      "controls": [
+        {
+          "id": "helm09-key",
+          "x": 20,
+          "y": 470.234375,
+          "w": 101.046875,
+          "h": 54.984375,
+          "hit": true
+        },
+        {
+          "id": "s11-less",
+          "x": 20,
+          "y": 550.21875,
+          "w": 44,
+          "h": 48,
+          "hit": true
+        },
+        {
+          "id": "s11-more",
+          "x": 293.15625,
+          "y": 550.21875,
+          "w": 44,
+          "h": 48,
+          "hit": true
+        },
+        {
+          "id": "s11-left",
+          "x": 20,
+          "y": 627.21875,
+          "w": 103.71875,
+          "h": 48,
+          "hit": true
+        },
+        {
+          "id": "s11-right",
+          "x": 233.4375,
+          "y": 627.21875,
+          "w": 103.71875,
+          "h": 48,
+          "hit": true
+        },
+        {
+          "id": "helm09-map",
+          "x": 8,
+          "y": 754,
+          "w": 69.40625,
+          "h": 50,
+          "hit": true
+        },
+        {
+          "id": "helm09-pause",
+          "x": 252.859375,
+          "y": 17,
+          "w": 101.140625,
+          "h": 48,
+          "hit": true
+        }
+      ],
+      "renderBoundary": {
+        "calls": 0,
+        "elapsedMs": 3.8999999999941792,
+        "desired": [
+          -352,
+          -96
+        ]
+      },
+      "streamAfterTile": {
+        "worker": true,
+        "requests": 2,
+        "cacheHits": 1,
+        "completed": 2,
+        "discarded": 0,
+        "fallback": false,
+        "maxApplyMs": 7.2000000000116415,
+        "maxWorkerMs": 441.29999999998836,
+        "errors": [],
+        "mainSamplingSlices": 0,
+        "startTilePreloaded": true,
+        "terrainRequests": 2,
+        "pending": 0,
+        "terrainTiles": 3,
+        "mapTiles": 0
+      },
+      "final": {
+        "version": 13,
+        "ready": true,
+        "location": "beaufort",
+        "defaultLocation": "beaufort",
+        "stream": {
+          "worker": true,
+          "requests": 3,
+          "cacheHits": 13,
+          "completed": 3,
+          "discarded": 0,
+          "fallback": false,
+          "maxApplyMs": 7.2000000000116415,
+          "maxWorkerMs": 441.29999999998836,
+          "errors": [],
+          "mainSamplingSlices": 0,
+          "startTilePreloaded": true,
+          "terrainRequests": 2,
+          "mapRequests": 1,
+          "pending": 0,
+          "terrainTiles": 3,
+          "mapTiles": 1
+        },
+        "scenery": {
+          "ready": true,
+          "buildTimeMs": 762.5,
+          "visibleChunks": 100,
+          "loadedChunks": 138,
+          "triangles": 91145,
+          "baked": true,
+          "sourcePreserved": true,
+          "counts": {
+            "bridges": 23,
+            "buildings": 514,
+            "roads": 79,
+            "trees": 520,
+            "land": 69
+          }
+        },
+        "hullMask": {
+          "source": "b1ef9c448309a9a5d85ec4f2efcf45d9406d999ab24d27bdd1534359a7278b82",
+          "sourceNodes": [
+            66,
+            69
+          ],
+          "insetM": 0.01,
+          "heightAware": true
+        },
+        "water": {
+          "ready": true,
+          "terrainVertices": 16641,
+          "terrainRebuilds": 3,
+          "knownSamples": 16641,
+          "renderedBottom": true,
+          "referenceSurvey": false,
+          "nearWaterGridMetres": 0.5,
+          "waterVertices": 58081,
+          "visualTilePending": false,
+          "colorArrayBound": true,
+          "seabedColorMean": 0.22650982098560973,
+          "shaderCompiled": true,
+          "turbidity": 0.23,
+          "origin": [
+            -352,
+            -96
+          ]
+        },
+        "multiplayer": false,
+        "experimentalHuman": false
+      }
+    }
+  ]
+}
