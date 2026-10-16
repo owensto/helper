@@ -1,22 +1,22 @@
-name: ATLAS D Y9 isolated pause recovery review
+name: ATLAS D Y10 isolated boarding-label review
 on:
   push:
-    branches: ['atlas-d/yacht-pause-ui-y9-20261016']
-    paths: ['.github/workflows/atlas-d-simulator-01.yml','atlas_d_simulator_01/contact/y9/**']
+    branches: ['atlas-d/yacht-boarding-label-y10-20261016']
+    paths: ['.github/workflows/atlas-d-simulator-01.yml','atlas_d_simulator_01/contact/y10/**']
 permissions:
   contents: write
 concurrency:
-  group: atlas-d-y9-pause-ui-isolated
+  group: atlas-d-y10-boarding-label-isolated
   cancel-in-progress: true
 jobs:
   review:
-    if: github.ref == 'refs/heads/atlas-d/yacht-pause-ui-y9-20261016'
+    if: github.ref == 'refs/heads/atlas-d/yacht-boarding-label-y10-20261016'
     strategy:
       fail-fast: false
       matrix:
         layout: [portrait, landscape]
     runs-on: ubuntu-24.04
-    timeout-minutes: 12
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
         with:
@@ -30,41 +30,37 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - name: Preserve exact runtime and unchanged regressions
+      - name: Preserve exact Y9 and test label, pause and controller
         run: |
-          python atlas_d_simulator_01/contact/y9/prepare.py
-          npm ci --ignore-scripts --omit=dev --prefix atlas_d_simulator_01/contact/y2/dependencies/humans
-          node --check atlas_d_simulator_01/contact/y9/pause-recovery.js
-          node atlas_d_simulator_01/contact/y9/test-pause.cjs > atlas_d_simulator_01/contact/y9/evidence/y9-tests.json
-          node atlas_d_simulator_01/contact/y4/test-preview.cjs > atlas_d_simulator_01/contact/y9/evidence/y4-tests.json
-          node atlas_d_simulator_01/contact/y3/test-wheel.cjs > atlas_d_simulator_01/contact/y9/evidence/y3-tests.json
-          node atlas_d_simulator_01/contact/y2/test-helm.cjs > atlas_d_simulator_01/contact/y9/evidence/y2-tests.json
-          node atlas_d_simulator_01/contact/test-attachments.cjs > atlas_d_simulator_01/contact/y9/evidence/y1-tests.json
-          node atlas_d_simulator_01/test-core.cjs > atlas_d_simulator_01/contact/y9/evidence/core-tests.json
-      - name: Compare actual baseline and native pause recovery on phone
+          python atlas_d_simulator_01/contact/y10/prepare.py
+          node --check atlas_d_simulator_01/contact/y10/boarding-label.js
+          node atlas_d_simulator_01/contact/y10/test-label.cjs > atlas_d_simulator_01/contact/y10/evidence/label-tests.json
+          node atlas_d_simulator_01/contact/y9/test-pause.cjs > atlas_d_simulator_01/contact/y10/evidence/pause-tests.json
+          node atlas_d_simulator_01/test-core.cjs > atlas_d_simulator_01/contact/y10/evidence/core-tests.json
+      - name: Actual baseline, loading gate, ready boarding and controlled error retry
         env:
           LAYOUT: ${{ matrix.layout }}
         run: |
           python -m pip install -q playwright==1.55.0
           python -m playwright install --with-deps chromium >/dev/null
-          python -m http.server 8923 --bind 127.0.0.1 --directory . >atlas_d_simulator_01/contact/y9/evidence/http.log 2>&1 &
+          python -m http.server 8924 --bind 127.0.0.1 --directory . >atlas_d_simulator_01/contact/y10/evidence/http.log 2>&1 &
           sleep 2
-          python atlas_d_simulator_01/contact/y9/verify.py
-      - name: Retain exact evidence without publication
+          python atlas_d_simulator_01/contact/y10/verify.py
+      - name: Retain exact evidence only
         if: always()
         run: |
           python - <<'PY'
           from pathlib import Path
-          import json,hashlib,os
-          r=Path('atlas_d_simulator_01/contact/y9');e=r/'evidence';e.mkdir(exist_ok=True)
+          import hashlib,json,os
+          r=Path('atlas_d_simulator_01/contact/y10');e=r/'evidence';e.mkdir(exist_ok=True)
           files={str(p.relative_to(r)):hashlib.sha256(p.read_bytes()).hexdigest() for p in r.rglob('*') if p.is_file() and '__pycache__' not in p.parts and p.name!='artifact-manifest.json'}
-          (e/'artifact-manifest.json').write_text(json.dumps({'runtimeBaseline':'e30edc8e33b863f3fafb303be0050cc86b7900f0','branchBaseline':'428251d63603bbe3d9915f145097889b66804e34','resultSourceCommit':os.environ['GITHUB_SHA'],'branch':os.environ['GITHUB_REF_NAME'],'productionEnabled':False,'files':files},indent=2))
+          (e/'artifact-manifest.json').write_text(json.dumps({'baseline':'d659b10e65c83fb671244f036c3d5fbab1d8f3bc','resultSourceCommit':os.environ['GITHUB_SHA'],'branch':os.environ['GITHUB_REF_NAME'],'productionEnabled':False,'files':files},indent=2))
           PY
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: ATLAS-D-Y9-${{ matrix.layout }}-pause-recovery
+          name: ATLAS-D-Y10-${{ matrix.layout }}-boarding-label
           path: |
-            atlas_d_simulator_01/contact/y9/
-            !atlas_d_simulator_01/contact/y9/__pycache__/**
+            atlas_d_simulator_01/contact/y10/
+            !atlas_d_simulator_01/contact/y10/__pycache__/**
           retention-days: 7
