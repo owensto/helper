@@ -37,6 +37,10 @@ async function attach(input) {
     const r = await fetch(new URL(path, document.baseURI), {cache: 'no-store'});
     if (!r.ok || await sha(await r.arrayBuffer()) !== expected) throw Error('HOST_ASSET_MISMATCH:' + path);
   }
+  // Recheck after asynchronous hashing: two simultaneous attach calls cannot both own reset.
+  if (sessions.has(A)) throw Error('ALREADY_ATTACHED');
+  const originalBoat=A.boat, originalModel=A.model;
+  const originalSurface=G.BayMotion.surface, originalSampler=G.Sea09World.sample;
   const originalStep = S.step, originalReset = S.reset, captain = A.boat.getObjectByName('SEA12_CAPTAIN');
   if (!captain || !A.model.getObjectByName('PLAY_STEERING') || !A.model.getObjectByName('PLAY_THROTTLE')) throw Error('HOST_ANCHOR_MISSING');
   let disposed = false, epoch = 0, descriptor = null, descriptorKey = '', checkpointCounter = 0;
@@ -49,7 +53,9 @@ async function attach(input) {
   S.reset = resetHook;
   function checkHost() {
     if (disposed) throw Error('DISPOSED');
-    if (A.state !== S || S.step !== originalStep || S.reset !== resetHook) throw Error('HOST_OWNERSHIP_CHANGED');
+    if (A.state !== S || A.boat !== originalBoat || A.model !== originalModel ||
+        G.BayMotion.surface !== originalSurface || G.Sea09World.sample !== originalSampler ||
+        S.step !== originalStep || S.reset !== resetHook) throw Error('HOST_OWNERSHIP_CHANGED');
   }
   function world() {
     const op = G.SEA10.inspect(), weather = op.weather;
