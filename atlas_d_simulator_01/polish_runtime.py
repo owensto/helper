@@ -31,9 +31,16 @@ function command(name,value){""")
     replace("if(dt>1.5&&!state.paused)","if(dt>4&&!state.paused)")
     replace("acc+=Math.min(dt,1.5);", "acc+=Math.min(dt,4);")
     replace("sourceAsset:status.asset,sourceRevision:7,multiplayer:false,simulationOnly:true,", "sourceAsset:status.asset,sourceRevision:7,multiplayer:false,simulationOnly:true,\n  pixelRatio:A.renderer.getPixelRatio(),detail:lowDetail?'smooth':'high',softwareRendering:!!G.SEA_SOFTWARE,")
-    p.write_text(s)
+if 'ATLAS_D_PORTRAIT_03' not in s:
+    old="  const desired=local(eye);"
+    new="""  // ATLAS_D_PORTRAIT_03: dolly exterior views back to fit portrait aspect.
+  if((view==='follow'||view==='subsea')&&innerWidth<innerHeight){const zoom=Math.max(1,0.92/(innerWidth/innerHeight));eye[0]*=zoom;eye[2]*=zoom;}
+  const desired=local(eye);"""
+    assert s.count(old)==1,old
+    s=s.replace(old,new)
+p.write_text(s)
 css=ROOT/'src/atlas-d.css';text=css.read_text()
 if 'ATLAS_D_FALLBACK_02' not in text:
     text+='\n/* ATLAS_D_FALLBACK_02: keep the phone header readable with the detail switch. */\n@media(max-width:600px){#ad-root #ad-detail{position:absolute;right:0;top:60px;font-size:9px;min-height:29px;max-width:90px;padding:4px 7px}#ad-root .ad-header-right{max-width:165px}}\n'
     css.write_text(text)
-print('Original yacht geometry retained; smooth fallback uses 80-segment shared-wave water and reduced render resolution.')
+print('Original yacht geometry retained; smooth fallback uses 80-segment shared-wave water, reduced render resolution and portrait-fitted exterior cameras.')
