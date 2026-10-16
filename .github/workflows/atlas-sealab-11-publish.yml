@@ -1,0 +1,159 @@
+name: ATLAS Sea Lab 11 verified publication
+on:
+  workflow_dispatch:
+  push:
+    paths: ['.github/workflows/atlas-sealab-11-publish.yml']
+permissions:
+  contents: read
+  actions: read
+concurrency:
+  group: atlas11-publication
+  cancel-in-progress: true
+jobs:
+  publish:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    permissions:
+      contents: write
+      actions: read
+    outputs:
+      url: ${{ steps.release.outputs.url }}
+      commit: ${{ steps.release.outputs.commit }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Require successful reviewed source
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python - <<'PY'
+          import json,os,urllib.request
+          req=urllib.request.Request('https://api.github.com/repos/owensto/helper/actions/runs/38828625848',headers={'Authorization':'Bearer '+os.environ['GH_TOKEN'],'Accept':'application/vnd.github+json'})
+          with urllib.request.urlopen(req,timeout=30) as response:d=json.load(response)
+          assert d['status']=='completed' and d['conclusion']=='success'
+          assert d['head_sha']=='e77f0fff32b80f6ce4b341045585a91577d8ff73'
+          PY
+      - uses: actions/download-artifact@v4
+        with:
+          github-token: ${{ github.token }}
+          run-id: 38828625848
+          name: ATLAS-SeaLab11-desktop
+          path: /tmp/atlas11/desktop
+      - uses: actions/download-artifact@v4
+        with:
+          github-token: ${{ github.token }}
+          run-id: 38828625848
+          name: ATLAS-SeaLab11-phone
+          path: /tmp/atlas11/phone
+      - name: Require identical tested assets and all passing checks
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import json,hashlib,shutil
+          a=Path('/tmp/atlas11/desktop');b=Path('/tmp/atlas11/phone');r=Path('atlas_sealab_11');reports=[]
+          for p,expected in [(a,{'desktop'}),(b,{'phone','small-phone','landscape'})]:
+              d=json.loads((p/'review/validation.json').read_text())
+              assert d['passed'] and {t['device'] for t in d['tests']}==expected and all(t['passed'] for t in d['tests'])
+              assert all(not t['errors'] and not t['shaderErrors'] and not t['assetErrors'] for t in d['tests'])
+              for name in ['unit11.json','grounding_regression09.json','operation_regression10.json']:
+                  q=json.loads((p/'review'/name).read_text());assert q['passed'] and all(t['passed'] for t in q['tests'])
+              reports.append(d)
+          hashes=lambda p:{str(f.relative_to(p)):hashlib.sha256(f.read_bytes()).hexdigest() for f in p.rglob('*') if f.is_file()}
+          original=hashes(a/'site');assert original==hashes(b/'site'),'Reviewed sites differ'
+          shutil.copytree(a/'site',r/'live',dirs_exist_ok=True)
+          source=r/'reviewed_source';source.mkdir(exist_ok=True)
+          for name in ['access11.js','access11.css','environment11.js','waves11.js','patch11.py','fix11.py','coast_polish11.py','test11.js','test10.js','test09.js','verify11.py']:
+              shutil.copy2(a/name,source/name)
+          evidence=r/'publication';evidence.mkdir(exist_ok=True)
+          combined={'release':11,'passed':True,'review_run':38828625848,'review_commit':'e77f0fff32b80f6ce4b341045585a91577d8ff73','physicalDeviceTested':False,'tests':[t for d in reports for t in d['tests']]}
+          (evidence/'review_validation.json').write_text(json.dumps(combined,indent=2))
+          for name in ['unit11.json','grounding_regression09.json','operation_regression10.json']:shutil.copy2(a/'review'/name,evidence/name)
+          (evidence/'tested_assets.json').write_text(json.dumps(original,indent=2))
+          assert hashes(r/'live')==original,'Publication changed reviewed assets'
+          PY
+      - name: Publish the exact reviewed application
+        id: release
+        run: |
+          git config user.name 'ATLAS release'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -f atlas_sealab_11/live atlas_sealab_11/reviewed_source atlas_sealab_11/publication
+          git diff --cached --quiet || git commit -m 'Publish tested Sea Lab 11: coastal scenery, waves and easier mobile helm'
+          git pull --rebase origin main
+          git push origin HEAD:main
+          echo "commit=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+          echo "url=https://rawcdn.githack.com/owensto/helper/$(git rev-parse HEAD)/atlas_sealab_11/live/index.html" >> "$GITHUB_OUTPUT"
+  verify_public:
+    needs: publish
+    runs-on: ubuntu-24.04
+    timeout-minutes: 14
+    strategy:
+      fail-fast: false
+      matrix:
+        device: [desktop, phone]
+    env:
+      BASE_URL: ${{ needs.publish.outputs.url }}
+      TEST_DEVICE: ${{ matrix.device }}
+      REVIEW_DIR: /tmp/atlas11-public
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ needs.publish.outputs.commit }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Operate the actual public URL without replacing assets
+        run: |
+          python -m pip install -q playwright==1.55.0
+          python -m playwright install --with-deps chromium >/dev/null
+          python atlas_sealab_11/verify_public11.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ATLAS-SeaLab11-Public-${{ matrix.device }}
+          path: /tmp/atlas11-public/
+          retention-days: 30
+  record:
+    needs: [publish, verify_public]
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    permissions:
+      contents: write
+      actions: read
+    env:
+      PUBLIC_URL: ${{ needs.publish.outputs.url }}
+      PUBLIC_COMMIT: ${{ needs.publish.outputs.commit }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: ATLAS-SeaLab11-Public-*
+          path: /tmp/atlas11-delivery
+      - name: Record verified public delivery
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import json,os
+          root=Path('/tmp/atlas11-delivery');reports=[json.loads(p.read_text()) for p in root.rglob('validation.json')]
+          assert len(reports)==2 and all(d['passed'] and d['url']==os.environ['PUBLIC_URL'] for d in reports)
+          tests=[t for d in reports for t in d['tests']]
+          assert {t['device'] for t in tests}=={'desktop','phone','small-phone','landscape'} and all(t['passed'] for t in tests)
+          d={'release':11,'url':os.environ['PUBLIC_URL'],'published_commit':os.environ['PUBLIC_COMMIT'],'passed':True,'exactPublicAssets':True,'physicalDeviceTested':False,'review_run':38828625848,'tests':tests}
+          Path('atlas_sealab_11/online_validation.json').write_text(json.dumps(d,indent=2))
+          (root/'delivery.json').write_text(json.dumps({'url':d['url'],'commit':d['published_commit'],'public_test_passed':True,'layouts':[t['device'] for t in tests]},indent=2))
+          PY
+          git config user.name 'ATLAS release'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add atlas_sealab_11/online_validation.json
+          git diff --cached --quiet || git commit -m 'Verify online Sea Lab 11 across desktop, phone, small phone and landscape'
+          git pull --rebase origin main
+          git push origin HEAD:main
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ATLAS-SeaLab11-Public-Delivery
+          path: /tmp/atlas11-delivery/
+          retention-days: 30
