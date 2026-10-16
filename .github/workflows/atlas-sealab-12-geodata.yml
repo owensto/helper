@@ -1,0 +1,22 @@
+name: ATLAS Sea Lab 12 geographic assets
+on:
+  workflow_dispatch:
+  push:
+    paths: ['.github/workflows/atlas-sealab-12-geodata.yml']
+permissions:
+  contents: read
+jobs:
+  source:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.13'}
+      - run: python atlas_sealab_12/fetch_region12.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ATLAS12-Geographic-Assets
+          path: atlas_sealab_12/external/
+          retention-days: 30
