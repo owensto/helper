@@ -1,0 +1,120 @@
+{
+  "revision": "bay12-rocketbox-calibration/1",
+  "status": "CALIBRATION_CANDIDATE_NOT_ACCEPTED",
+  "productionEnabled": false,
+  "ownerInputCommit": "9a9c12645a1fe55f077f880c3e3b2403c18c4410",
+  "physicalContactSHA256": "cc2a82dc89e3abfee8fd6a7d5def9dd153da179abb4c834dc91b09924d237f58",
+  "modelSHA256": "b1ef9c448309a9a5d85ec4f2efcf45d9406d999ab24d27bdd1534359a7278b82",
+  "rigSHA256": "e80b6e82ac31c3bfb1134952e0bcb9b840fedc26b71dc90e9b387ae8cd28ecd3",
+  "animationSHA256": "b0f10003c14416330d30c41fe26d7ec86bc34e3b39ca9bd91ca78a54db415b94",
+  "stationId": "bay12.starboard-helm",
+  "heightM": 1.93,
+  "requiredRoot": {
+    "position": [
+      -1.6,
+      1.06,
+      0.18
+    ],
+    "rotationXYZW": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "scale": [
+      1,
+      1,
+      1
+    ],
+    "directBoatParent": true
+  },
+  "torsoPitchRad": 0.8,
+  "offsets": {
+    "seat": {
+      "positionContactM": [
+        0.09999999999999987,
+        0.12641810011074495,
+        -0.08500000000000002
+      ]
+    },
+    "leftFoot": {
+      "positionContactM": [
+        -0.05500000000000016,
+        0.11059998974800112,
+        0.015136250141933722
+      ],
+      "orientationContactXYZW": [
+        -0.017851990952941266,
+        0.017791095778940447,
+        -0.7005766069806643,
+        0.7131319814322423
+      ]
+    },
+    "rightFoot": {
+      "positionContactM": [
+        -0.05500000000000016,
+        0.11059998974800112,
+        -0.015352982001250237
+      ],
+      "orientationContactXYZW": [
+        0.019601417822707773,
+        -0.019573799986180695,
+        -0.700529566880456,
+        0.7130855161448427
+      ]
+    },
+    "leftHand": {
+      "positionContactM": [
+        0.024641253481912262,
+        0.081698728856758,
+        -0.005445410446774934
+      ],
+      "orientationContactXYZW": [
+        0.3769296818542214,
+        -0.5982675111831458,
+        -0.5040296108109342,
+        0.49593764872792045
+      ]
+    },
+    "rightHand": {
+      "positionContactM": [
+        0.02464365161630333,
+        0.08169818218474734,
+        0.005446009996501688
+      ],
+      "orientationContactXYZW": [
+        -0.37692939375962864,
+        0.5982676926928269,
+        -0.5040297534222538,
+        0.4959375037896429
+      ]
+    }
+  },
+  "skinProbes": {
+    "seat": {
+      "mesh": 0,
+      "index": 166,
+      "boneFilter": "Pelvis|Thigh"
+    },
+    "leftHand": {
+      "mesh": 0,
+      "index": 2489,
+      "boneFilter": "Bip01_L_Hand"
+    },
+    "rightHand": {
+      "mesh": 0,
+      "index": 1895,
+      "boneFilter": "Bip01_R_Hand"
+    }
+  },
+  "staticCalibration": {
+    "maxError": 0.0000015661159944536746,
+    "errors": [
+      0.0000015661159944536746,
+      9.27101916261459e-8,
+      6.289879787219764e-7,
+      8.630388164942518e-7
+    ]
+  },
+  "bodyClearanceAccepted": false
+}

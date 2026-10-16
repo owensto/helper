@@ -31,5 +31,28 @@ export function validateRigPose(pose) {
     throw new TypeError("RIG_GRIP_INVALID");
   if (pose.mode === "walk" && (!Number.isFinite(pose.phase) || pose.phase < 0))
     throw new TypeError("RIG_GAIT_PHASE_INVALID");
+  if (
+    pose.torsoPitch !== undefined &&
+    (!Number.isFinite(pose.torsoPitch) || Math.abs(pose.torsoPitch) > 1.2)
+  )
+    throw new TypeError("RIG_TORSO_PITCH_INVALID");
+  if (
+    pose.handOrientations !== undefined &&
+    (!Array.isArray(pose.handOrientations) ||
+      pose.handOrientations.length !== 2 ||
+      !pose.handOrientations.every(
+        (q) => vec(q, 4) && Math.abs(Math.hypot(...q) - 1) < 1e-5,
+      ))
+  )
+    throw new TypeError("RIG_HAND_ORIENTATION_INVALID");
+  if (
+    pose.footOrientations !== undefined &&
+    (!Array.isArray(pose.footOrientations) ||
+      pose.footOrientations.length !== 2 ||
+      !pose.footOrientations.every(
+        (q) => vec(q, 4) && Math.abs(Math.hypot(...q) - 1) < 1e-5,
+      ))
+  )
+    throw new TypeError("RIG_FOOT_ORIENTATION_INVALID");
   return pose;
 }

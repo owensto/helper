@@ -1,7 +1,9 @@
 import { validateRigPose } from "./pose-contract.mjs";
 import * as T from "three";
 import { solveTwoBone } from "./ik.mjs";
-export function createHelmRig(gltf, animations = {}) {
+export function createHelmRig(gltf, animations = {}, { heightM = 1.78 } = {}) {
+  if (!Number.isFinite(heightM) || heightM < 1.5 || heightM > 2.0)
+    throw new TypeError("RIG_HEIGHT_INVALID");
   const group = new T.Group();
   group.name = "ATLAS_HUMAN_RIG";
   group.add(gltf.scene);
@@ -14,13 +16,14 @@ export function createHelmRig(gltf, animations = {}) {
   }
   gltf.scene.updateMatrixWorld(true);
   const bounds = new T.Box3().setFromObject(gltf.scene),
-    scale = 1.78 / (bounds.max.y - bounds.min.y);
+    scale = heightM / (bounds.max.y - bounds.min.y);
   gltf.scene.scale.setScalar(scale);
   gltf.scene.rotation.y = Math.PI / 2;
   gltf.scene.updateMatrixWorld(true);
   const node = (n) => gltf.scene.getObjectByName(n),
     hips = node("Bip01_Pelvis"),
-    chest = node("Bip01_Spine1");
+    chest = node("Bip01_Spine1"),
+    spine = node("Bip01_Spine");
   const legs = ["L", "R"].map((s) => [
     node(`Bip01_${s}_Thigh`),
     node(`Bip01_${s}_Calf`),
@@ -55,14 +58,16 @@ export function createHelmRig(gltf, animations = {}) {
       o.receiveShadow = true;
     }
   });
+  let rawAnimation = rest.map(([o]) => o.quaternion.clone());
   const v = new T.Vector3(),
     world = new T.Vector3(),
     pole = new T.Vector3();
   function update(pose) {
     validateRigPose(pose);
-    for (const [o, p, q] of rest) {
+    for (let i = 0; i < rest.length; i++) {
+      const [o, p] = rest[i];
       o.position.copy(p);
-      o.quaternion.copy(q);
+      o.quaternion.copy(rawAnimation[i]);
     }
     if (actions[pose.mode]) {
       if (activeMode !== pose.mode) {
@@ -83,6 +88,7 @@ export function createHelmRig(gltf, animations = {}) {
       }
       mixer.setTime(pose.mode === "walk" ? (pose.phase % 1) * 1.2 : pose.time);
     }
+    rawAnimation = rest.map(([o]) => o.quaternion.clone());
     if (transition) {
       const t = Math.min(1, Math.max(0, (pose.time - transition.time) / 0.22)),
         u = t * t * (3 - 2 * t);
@@ -98,10 +104,37 @@ export function createHelmRig(gltf, animations = {}) {
     hips.getWorldPosition(v);
     group.worldToLocal(v);
     gltf.scene.position.add(new T.Vector3(...pose.seat).sub(v));
+    if (pose.torsoPitch) {
+      group.updateWorldMatrix(true, true);
+      const delta = new T.Quaternion().setFromAxisAngle(
+        new T.Vector3(0, 0, 1),
+        -pose.torsoPitch,
+      );
+      const groupQ = group.getWorldQuaternion(new T.Quaternion());
+      const worldDelta = groupQ
+        .clone()
+        .multiply(delta)
+        .multiply(groupQ.clone().invert());
+      const desired = worldDelta.multiply(
+        spine.getWorldQuaternion(new T.Quaternion()),
+      );
+      spine.quaternion.copy(
+        spine.parent
+          .getWorldQuaternion(new T.Quaternion())
+          .invert()
+          .multiply(desired),
+      );
+    }
     chest.rotateY(pose.lean[0]);
     chest.rotateX(pose.lean[1]);
     chest.position.x += pose.breath / scale;
     group.updateWorldMatrix(true, true);
+    if (pose.torsoPitch) {
+      hips.getWorldPosition(v);
+      group.worldToLocal(v);
+      gltf.scene.position.add(new T.Vector3(...pose.seat).sub(v));
+      group.updateWorldMatrix(true, true);
+    }
     if (pose.mode !== "helm") {
       let lower = 0;
       for (let i = 0; i < 2; i++) {
@@ -155,10 +188,12 @@ export function createHelmRig(gltf, animations = {}) {
           handParent
             .multiply(handDeck)
             .multiply(
-              new T.Quaternion().setFromAxisAngle(
-                new T.Vector3(1, 0, 0),
-                i === 0 ? Math.PI / 2 : -Math.PI / 2,
-              ),
+              pose.handOrientations
+                ? new T.Quaternion().fromArray(pose.handOrientations[i])
+                : new T.Quaternion().setFromAxisAngle(
+                    new T.Vector3(1, 0, 0),
+                    i === 0 ? Math.PI / 2 : -Math.PI / 2,
+                  ),
             ),
         );
         hand.traverse((f) => {
@@ -173,7 +208,13 @@ export function createHelmRig(gltf, animations = {}) {
         parentQ = foot.parent.getWorldQuaternion(new T.Quaternion()).invert(),
         deckQ = group.getWorldQuaternion(new T.Quaternion());
       foot.quaternion.copy(
-        parentQ.multiply(deckQ).multiply(footOrientation[i]),
+        parentQ
+          .multiply(deckQ)
+          .multiply(
+            pose.footOrientations
+              ? new T.Quaternion().fromArray(pose.footOrientations[i])
+              : footOrientation[i],
+          ),
       );
     }
     return { maxError, errors };
