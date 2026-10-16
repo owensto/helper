@@ -1,6 +1,6 @@
 """Y5: trusted touch with same-session browser orientation changes; CI only."""
 from pathlib import Path
-import json,os,time,traceback,math
+import json,os,time,traceback,math,base64,struct
 from playwright.sync_api import sync_playwright
 R=Path(__file__).resolve().parent;E=R/'evidence';E.mkdir(exist_ok=True)
 ORIGIN=os.environ.get('ORIGIN','http://127.0.0.1:8919');NAME=os.environ.get('LAYOUT','portrait')
@@ -19,6 +19,7 @@ with sync_playwright() as pw:
   touch('touchEnd');page.wait_for_timeout(450)
  def wait(expr,timeout=60000):page.wait_for_function(expr,timeout=timeout)
  try:
+  cdp.send('Emulation.setDeviceMetricsOverride',{'width':w,'height':h,'deviceScaleFactor':1,'mobile':True,'screenWidth':w,'screenHeight':h,'screenOrientation':{'type':'landscapePrimary' if orientation=='landscape' else 'portraitPrimary','angle':90 if orientation=='landscape' else 0}})
   page.goto(ORIGIN+'/atlas_d_simulator_01/contact/'+ENTRY+'/preview.html',wait_until='domcontentloaded',timeout=90000);wait('window.Y4?.ready || window.Y4?.error',180000);assert not page.evaluate('Y4.error')
   f=page.frames[1];fl=page.frame_locator('#host')
   # Passive diagnostic recorder: actual trusted events, no input synthesis in DOM.
@@ -45,7 +46,7 @@ with sync_playwright() as pw:
    for r in row['rays']:assert r['hit'] and r['errorM']<1e-5 and r['normalError']<1e-6,r
    current=page.evaluate('Y4.current()');assert current['instanceId']==row['frame']['instanceId'];assert page.evaluate('Y4.physicalAgain().available')
    return row
-  def compact(row):return {k:row.get(k) for k in ['state','frame','screenContacts','viewport','rays','sourceUnchanged','visible']}
+  def compact(row):return {**{k:row.get(k) for k in ['state','frame','screenContacts','viewport','rays','sourceUnchanged','visible']},'frameToken':row['physical'].get('frameToken'),'controlPoseToken':row['physical']['articulation'].get('controlPoseToken'),'mappedIdentity':row['mapped']['identity'],'mappedFrame':row['mapped']['frame'],'physicalAvailable':row['physical']['available'],'rigAttachment':row['mapped']['attachment'],'rigValid':row['mapped']['valid']}
   def scene_gate(row):
    if page.evaluate('Y4.view')!='station':assert row['viewport']['ownerProjectionClone'];return
    rect=row['viewport']['scene'];assert rect['available'] and len(row.get('screenContacts',[]))==5
@@ -54,28 +55,36 @@ with sync_playwright() as pw:
     assert f.evaluate('(p)=>document.elementFromPoint(p.x,p.y)?.id',p)=='scene',p
   def screenshot(name):
    global count
-   count+=1;path=f'{count:02d}-{name}.png';page.screenshot(path=str(E/path),timeout=60000);return path
+   count+=1;path=f'{count:02d}-{name}.png'
+   # CDP metrics changes do not update Playwright's cached starting viewport.
+   # Capture the real current browser surface instead of resetting to that cache.
+   expected=page.evaluate('({w:innerWidth,h:innerHeight})')
+   raw=base64.b64decode(cdp.send('Page.captureScreenshot',{'format':'png','captureBeyondViewport':False,'fromSurface':True})['data'])
+   actual=struct.unpack('>II',raw[16:24]);assert actual==(expected['w'],expected['h']),(actual,expected)
+   assert page.evaluate('({w:innerWidth,h:innerHeight})')==expected,'Screenshot mutated viewport'
+   (E/path).write_bytes(raw);report.setdefault('screenshots',[]).append({'file':path,'width':actual[0],'height':actual[1],'orientation':orientation,'currentBrowserSurface':True});return path
   def rotate(label,checkScene=True):
    global orientation
-   before=sample();orientation='landscape' if orientation=='portrait' else 'portrait';w,h=VIEWPORTS[orientation]
+   before=sample();beforeSize=page.evaluate('({w:innerWidth,h:innerHeight})');assert (beforeSize['w'],beforeSize['h'])==VIEWPORTS[orientation],'Previous rotation did not persist'
+   orientation='landscape' if orientation=='portrait' else 'portrait';w,h=VIEWPORTS[orientation]
    cdp.send('Emulation.setDeviceMetricsOverride',{'width':w,'height':h,'deviceScaleFactor':1,'mobile':True,'screenWidth':w,'screenHeight':h,'screenOrientation':{'type':'landscapePrimary' if orientation=='landscape' else 'portraitPrimary','angle':90 if orientation=='landscape' else 0}})
    wait(f'innerWidth==={w} && innerHeight==={h}');wait(f'Y4.latest?.viewport?.width==={w} && Y4.latest?.viewport?.height==={h-56}');page.wait_for_timeout(1100);after=sample()
    assert page.evaluate('({top:performance.timeOrigin,host:document.getElementById("host").contentWindow.performance.timeOrigin})')==session,'Session reloaded'
    for key in ['instanceId','activationEpoch','simulationEpoch','hostSessionId','worldRevision']:assert before['frame'][key]==after['frame'][key],key
-   assert after['frame']['frameId']>before['frame']['frameId'];assert not page.evaluate('(old)=>Y4.station.sample(old,Y4.current()).available',before['frame'])
+   assert after['frame']['frameId']>before['frame']['frameId'];stale=page.evaluate('(old)=>{const s=Y4.station.sample(old,Y4.current());return {available:s.available,reason:s.reason};}',before['frame']);assert not stale['available']
    assert after['state']['paused']==before['state']['paused']
    if before['state']['paused']:assert after['state']['elapsed']==before['state']['elapsed'],'Paused time advanced during rotation'
    if checkScene:scene_gate(after)
    bounds={'outer':page.evaluate('({width:innerWidth,height:innerHeight,scrollWidth:document.documentElement.scrollWidth,angle:screen.orientation.angle,type:screen.orientation.type})'),'iframe':page.locator('#host').bounding_box(),'host':f.evaluate('({width:innerWidth,height:innerHeight,scrollWidth:document.documentElement.scrollWidth})')}
    assert bounds['host']['scrollWidth']<=w+1 and bounds['iframe']['width']==w,bounds
-   result={'name':label,'orientation':orientation,'before':compact(before),'after':compact(after),'bounds':bounds,'screenshot':screenshot(label),'passed':True};report['cases'].append(result);return result
+   result={'name':label,'orientation':orientation,'before':compact(before),'after':compact(after),'beforeSize':beforeSize,'bounds':bounds,'oldFrameRejection':stale,'screenshot':screenshot(label),'passed':True};report['cases'].append(result);return result
   tap('#ad-board');wait('Y4.latest?.physical.available');page.wait_for_timeout(1600)
   if f.evaluate('ATLAS_D_SIM.state.paused'):tap('#ad-pause');report['startupResumeViaTouch']=True
   screenshot('initial-unchanged-y4-station');scene_gate(sample())
   tap('#ad-engine');tap('[data-ad-gear="1"]');b,q=target('#ad-throttle');drag(b['x']+8,b['y']+b['height']/2,b['x']+b['width']*.40,b['y']+b['height']/2);wait('Y4.latest.state.throttle>.25');page.wait_for_timeout(1400)
   start=sample();wall=time.monotonic()
   for sel,value,label in [('#ad-left',-1,'active-left-held-rotation'),('#ad-right',1,'active-right-held-return')]:
-   hold(sel);wait(f'Y4.latest.state.rudder==={value}');power=sample()['state']['throttle'];screenshot(label+'-before');rotate(label);touch('touchEnd');wait('Y4.latest.state.rudder===0');page.wait_for_timeout(500);row=sample();assert row['state']['throttle']==power and row['state']['engine'] and row['state']['gear']==1;assert not row['state']['paused'];assert not f.evaluate('document.getElementById("'+sel[1:]+'").hasPointerCapture(2)');report['cases'][-1]['released']=compact(row);tap('#ad-center')
+   hold(sel);wait(f'Y4.latest.state.rudder==={value}');power=sample()['state']['throttle'];screenshot(label+'-before');rotate(label);touch('touchEnd');wait('Y4.latest.state.rudder===0');page.wait_for_timeout(500);row=sample();assert row['state']['throttle']==power and row['state']['engine'] and row['state']['gear']==1;assert not row['state']['paused'];report['cases'][-1]['released']=compact(row);tap('#ad-center')
   end=sample();rows=page.evaluate('(id)=>Y4.history.filter(x=>x.frame.frameId>id).map(x=>({state:x.state,frame:x.frame,rays:x.rays,sourceUnchanged:x.sourceUnchanged,visible:x.visible}))',start['frame']['frameId'])
   report['motion']={'wallSeconds':time.monotonic()-wall,'simulationSeconds':end['state']['elapsed']-start['state']['elapsed'],'frames':len(rows),'distanceM':math.hypot(end['state']['x']-start['state']['x'],end['state']['z']-start['state']['z']),'controls':sorted(set(r['state']['rudder'] for r in rows)),'testStep':False};report['motionTrace']=rows
   assert report['motion']['distanceM']>1 and report['motion']['simulationSeconds']>3 and {-1,0,1}<=set(report['motion']['controls'])
@@ -90,12 +99,14 @@ with sync_playwright() as pw:
   tap('#y4-helm-tab');tap('[data-ad-view="follow"]');wait('Y4.view==="overview"');rotate('native-follow-rotation');assert f.evaluate('ATLAS_D_SIM.inspect().camera')=='follow';tap('#station-view',True);rotate('station-camera-return');scene_gate(sample());assert sample()['state']['elapsed']==paused
   tap('#ad-pause');wait('!Y4.latest.state.paused');page.wait_for_timeout(1300);assert sample()['state']['elapsed']>paused;assert sample()['state']['rudder']==0;tap('#ad-neutral');screenshot('final-released-and-recovered')
   report['touchEvents']=page.evaluate('Y4.inputEvents');report['pointerEvents']=f.evaluate('__y5Events');downs=[r for r in report['pointerEvents'] if r['type']=='pointerdown'];assert downs and all(r['trusted'] and r['pointerType']=='touch' for r in downs)
-  # Every actual pointer-down ID must be released/cancelled; no guessed pointer ID.
   outstanding=set()
   for r in report['pointerEvents']:
    if r['type']=='pointerdown':outstanding.add(r['pointerId'])
    elif r['type'] in ['pointerup','pointercancel']:outstanding.discard(r['pointerId'])
   assert not outstanding,outstanding
+  heldIds=[r['pointerId'] for r in report['pointerEvents'] if r['type']=='pointerdown' and r['id'] in ['ad-left','ad-right']]
+  stillCaptured=f.evaluate('(ids)=>ids.some(id=>["ad-left","ad-right"].some(name=>document.getElementById(name).hasPointerCapture(id)))',heldIds)
+  assert not stillCaptured;report['heldPointerIds']=heldIds;report['stillCaptured']=stillCaptured
   report['pointerReleased']=True;report['sameSession']=True;report['final']=compact(sample());assert not report['errors'] and not report['shaderErrors'];report['passed']=True
  except Exception as e:
   report['error']=str(e);report['traceback']=traceback.format_exc()

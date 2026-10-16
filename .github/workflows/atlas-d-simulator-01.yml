@@ -39,7 +39,7 @@ jobs:
           node atlas_d_simulator_01/contact/y2/test-helm.cjs > atlas_d_simulator_01/contact/y5/evidence/y2-tests.json
           node atlas_d_simulator_01/contact/test-attachments.cjs > atlas_d_simulator_01/contact/y5/evidence/y1-tests.json
           node atlas_d_simulator_01/test-core.cjs > atlas_d_simulator_01/contact/y5/evidence/core-tests.json
-      - name: Reproduce rotation on actual unchanged Y4 with trusted touch
+      - name: Actual unchanged Y4 rotation with current-size screenshots and independent audit
         env:
           LAYOUT: ${{ matrix.layout }}
           ENTRY: y4
@@ -49,6 +49,7 @@ jobs:
           python -m http.server 8919 --bind 127.0.0.1 --directory . >atlas_d_simulator_01/contact/y5/evidence/http.log 2>&1 &
           sleep 2
           python atlas_d_simulator_01/contact/y5/verify.py
+          node atlas_d_simulator_01/contact/y5/test-rotation.cjs
       - name: Record exact evidence only
         if: always()
         run: |
