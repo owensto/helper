@@ -35,6 +35,7 @@ function createBridge(current){if(typeof current!=='function')throw Error('PRIVA
 const sessions=new WeakMap();
 async function install({T,A,core,spec,inputs,candidate,receiver=null,approvedProfile=null}){
  if(sessions.has(A))throw Error('C2_ALREADY_REGISTERED');
+ const reservation=Object.freeze({pending:true});sessions.set(A,reservation);let rollback=()=>{};try{
  if(candidate.c1SourceSHA!==C1||spec.designId!==DESIGN||candidate.physicalContactSHA256!==inputs.physicalContactSHA256)throw Error('C2_BASELINE_MISMATCH');
  const physical=G.CoreBayContactC2.bind(T,A,spec),boat=A.boat,model=A.model,S=A.state,captain=boat.getObjectByName('SEA12_CAPTAIN');if(!captain)throw Error('CAPTAIN_UNAVAILABLE');
  const scope=crypto.randomUUID(),instance=crypto.randomUUID(),profileDigest=approvedProfile?.sha256||sha256('C2_PHYSICAL_ONLY_NO_RIG_PROFILE');
@@ -43,6 +44,7 @@ async function install({T,A,core,spec,inputs,candidate,receiver=null,approvedPro
  let descriptor=await core.reader.describe(),refreshing=false,serial=0,activation=0,lastLifecycle=null,current=null,latest=null,disposed=false,seenCaptain=captain;
  const bridge=createBridge(()=>current),samples=[],events=[],noThrow=reason=>{try{if(events.at(-1)?.reason!==reason){events.push({reason,frameId:serial});if(events.length>128)events.shift();}}catch{}};
  const originalBefore=G.SEA06.beforeRender,sourceStep=S.step,priorAnimate=captain.userData.animateCaptain;
+ rollback=()=>{if(G.SEA06.beforeRender===before)G.SEA06.beforeRender=originalBefore;captain.userData.animateCaptain=priorAnimate;physical.dispose();};
  // Physical-only mode observes the original captain. Positive mode is a receiver
  // preloaded through the existing ensureDriver factory BEFORE C1 attachment.
  const ownerAnimate=verifiedProfile?receiver.animate:null;
@@ -69,8 +71,9 @@ async function install({T,A,core,spec,inputs,candidate,receiver=null,approvedPro
  }catch(e){invalidate(e.message||'C2_INVALID_SAMPLE');if(/WORLD/.test(e.message))reDescribe();}}
  function before(){originalBefore();commit();}
  G.SEA06.beforeRender=before;
- function dispose(){if(disposed)return;disposed=true;if(G.SEA06.beforeRender===before)G.SEA06.beforeRender=originalBefore;if(verifiedProfile)captain.userData.animateCaptain=priorAnimate;physical.dispose();sessions.delete(A);}
+ function dispose(){if(disposed)return;invalidate('C2_DISPOSED');disposed=true;if(G.SEA06.beforeRender===before)G.SEA06.beforeRender=originalBefore;if(verifiedProfile)captain.userData.animateCaptain=priorAnimate;physical.dispose();sessions.delete(A);}
  const api=Object.freeze({read:()=>latest?copy({...latest,context:latest.context?Object.fromEntries(Object.entries(latest.context).filter(([k])=>!['runtimeScopeId','vesselInstanceId'].includes(k))):null}):null,inspect:()=>copy({mapping:MAP,privateRegistration:true,frameId:serial,activationEpoch:activation,positiveFactoryEnabled:verifiedProfile,reason:latest?.reason||null,worldRevision:descriptor.worldRevision,physicalAudit:physical.audit(),samples,events,existingCaptainUUID:captain.uuid,yachtAvailable:false,multiplayer:false}),showContacts:physical.show,queryContact:physical.query,dispose});sessions.set(A,api);commit();return api;
+ }catch(error){rollback();if(sessions.get(A)===reservation)sessions.delete(A);throw error;}
 }
 const api=Object.freeze({revision:MAP,sha256,epoch,createBridge,install});G.CoreBayHelmC2=api;if(typeof module!=='undefined')module.exports=api;
 })(typeof window!=='undefined'?window:globalThis);
