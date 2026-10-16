@@ -84,3 +84,27 @@ test("H4 malformed posture/orientation rejects before rig use", () => {
   ])
     assert.throws(() => validateRigPose({ ...pose, ...patch }));
 });
+
+import { checkBayRigMotionBounds } from "../src/bay-profile.mjs";
+test("H4 full steering requires release/regrip; review bounds never clamp controls or enable production", () => {
+  const frame = { wheelAngleRad: 0.1, roll: 0.08, pitch: 0.06 };
+  const before = structuredClone(frame);
+  assert.equal(checkBayRigMotionBounds(profile, frame).valid, true);
+  assert.deepEqual(frame, before);
+  assert.equal(
+    checkBayRigMotionBounds(profile, { ...frame, wheelAngleRad: 3.3 }).reason,
+    "HAND_RELEASE_REGRIP_REQUIRED",
+  );
+  assert.equal(
+    checkBayRigMotionBounds(profile, { ...frame, roll: 0.081 }).valid,
+    false,
+  );
+  assert.equal(
+    checkBayRigMotionBounds(profile, { ...frame, wheelAngleRad: NaN }).valid,
+    false,
+  );
+  assert.equal(
+    checkBayRigMotionBounds(profile, frame).productionEnabled,
+    false,
+  );
+});

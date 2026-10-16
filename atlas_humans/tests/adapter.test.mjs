@@ -235,3 +235,40 @@ test("H3 throwing diagnostic sink is contained during init, invalid hide and exc
   assert.equal(calls, 1);
   assert.equal(visual.visible, true);
 });
+
+test("H4 forwards complete reviewed rig pose and hides malformed orientations", () => {
+  const group = new Group(),
+    boat = new Group();
+  boat.add(group);
+  let received;
+  let sample = {
+    valid: true,
+    attachment,
+    frame: { epoch: "e", time: 1, dt: 0 },
+    transform: stamp(boat, "e", 1),
+    rigPose: {
+      torsoPitch: 0.8,
+      balanceGain: 0.15,
+      handOrientations: [
+        [0, 0, 0, 1],
+        [0, 0, 0, 1],
+      ],
+      footOrientations: [
+        [0, 0, 0, 1],
+        [0, 0, 0, 1],
+      ],
+    },
+  };
+  const f = makeCaptain12Build({
+    rig: { group, update: (p) => (received = p) },
+    sampleHost: () => sample,
+  })();
+  f.group.userData.animateCaptain({ boat }, {});
+  assert.equal(received.torsoPitch, 0.8);
+  assert.deepEqual(received.handOrientations, sample.rigPose.handOrientations);
+  sample.rigPose.handOrientations[0] = [0, 0, 0, 0];
+  received = null;
+  const result = f.group.userData.animateCaptain({ boat }, {});
+  assert.equal(result.valid, false);
+  assert.equal(received, null);
+});

@@ -16,7 +16,7 @@ const r = await page.evaluate(() => {
   const pose = {
     mode: "helm",
     time: 0,
-    seat: [0.04, 0.1257, 0],
+    seat: [0.015, 0.1257, 0],
     feet: [
       [0.305, -0.5914, -0.1385],
       [0.305, -0.5914, 0.1385],
@@ -176,7 +176,7 @@ const hash = (f) =>
   createHash("sha256").update(fs.readFileSync(f)).digest("hex");
 const profile = {
   revision: "bay12-rocketbox-calibration/1",
-  status: "CALIBRATION_CANDIDATE_NOT_ACCEPTED",
+  status: "LIMITED_CONTACT_REVIEW_ONLY_NOT_GAMEPLAY_ACCEPTED",
   productionEnabled: false,
   ownerInputCommit: "9a9c12645a1fe55f077f880c3e3b2403c18c4410",
   physicalContactSHA256: hash("profiles/bay12/contacts.json"),
@@ -197,6 +197,22 @@ const profile = {
   skinProbes: r.probes,
   staticCalibration: r.result,
   bodyClearanceAccepted: false,
+  bounds: {
+    wheelAngleAbsMaxRad: 0.1,
+    rollAbsMaxRad: 0.08,
+    pitchAbsMaxRad: 0.06,
+    rollPitchVisualGain: 0.15,
+    measuredAccelerationAvailable: false,
+    fullSteeringSupported: false,
+    releaseRegripSupported: false,
+    jointResidualMaxM: 0.005,
+    seatProbeNormalRangeM: [-0.003, 0.005],
+    handProbeNormalRangeM: [-0.002, 0.005],
+    soleProbeNormalRangeM: [-0.002, 0.008],
+    finitePatchOverrunAllowedM: 0,
+  },
+  requiredBehaviorOutsideBounds:
+    "Hide this candidate or use an explicitly selected CORE fallback; never clamp steering or reuse stale contacts.",
 };
 fs.writeFileSync(
   "profiles/bay12/profile.json",

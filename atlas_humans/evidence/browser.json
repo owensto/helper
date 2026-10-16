@@ -1,22 +1,22 @@
 {
   "assetBytes": 3211304,
   "runtime": "153.0.8010.12",
-  "timestamp": "2026-10-16T04:56:14.159Z",
+  "timestamp": "2026-10-16T05:40:57.288Z",
   "scenarios": [
     {
       "mode": "calm",
       "activity": "helm",
       "frames": 481,
-      "simulatedSeconds": 7.999700000000029,
-      "maxContactErrorM": 0.0000013846475093145947,
-      "updateP95Ms": 0.20000000298023224,
-      "updateMaxMs": 0.7000000029802322,
+      "simulatedSeconds": 7.999700000000021,
+      "maxContactErrorM": 8.944725194292956e-7,
+      "updateP95Ms": 0.29999999701976776,
+      "updateMaxMs": 0.6000000089406967,
       "drawCalls": 10,
       "triangles": 8654,
       "motionChanged": true,
       "soleY": {
-        "min": 0.009906080055551617,
-        "max": 0.12568577905873643,
+        "min": 0.0099059636387887,
+        "max": 0.1256171496253174,
         "count": 406
       }
     },
@@ -24,16 +24,16 @@
       "mode": "rough",
       "activity": "helm",
       "frames": 481,
-      "simulatedSeconds": 7.999699999999834,
-      "maxContactErrorM": 0.0000014241403078303685,
-      "updateP95Ms": 0.20000000298023224,
-      "updateMaxMs": 0.4000000059604645,
+      "simulatedSeconds": 7.999599999999852,
+      "maxContactErrorM": 9.59868890178652e-7,
+      "updateP95Ms": 0.29999999701976776,
+      "updateMaxMs": 1,
       "drawCalls": 10,
       "triangles": 8654,
       "motionChanged": true,
       "soleY": {
-        "min": 0.009906220030374502,
-        "max": 0.12560868054444066,
+        "min": 0.00990612137269542,
+        "max": 0.125608470365411,
         "count": 406
       }
     },
@@ -41,16 +41,16 @@
       "mode": "maneuver",
       "activity": "helm",
       "frames": 481,
-      "simulatedSeconds": 7.999599999999745,
-      "maxContactErrorM": 0.0000014691167285874336,
-      "updateP95Ms": 0.20000000298023224,
-      "updateMaxMs": 3,
+      "simulatedSeconds": 7.9995999999997665,
+      "maxContactErrorM": 9.77187067923412e-7,
+      "updateP95Ms": 0.30000001192092896,
+      "updateMaxMs": 5.5,
       "drawCalls": 10,
       "triangles": 8654,
       "motionChanged": true,
       "soleY": {
-        "min": 0.009906111716998116,
-        "max": 0.12568523785703184,
+        "min": 0.009905828976350568,
+        "max": 0.1256168919179681,
         "count": 406
       }
     },
@@ -58,16 +58,16 @@
       "mode": "rough",
       "activity": "idle",
       "frames": 481,
-      "simulatedSeconds": 7.999699999999972,
-      "maxContactErrorM": 0.0000015746180783517894,
-      "updateP95Ms": 0.20000000298023224,
-      "updateMaxMs": 1.2000000029802322,
+      "simulatedSeconds": 7.9996999999999545,
+      "maxContactErrorM": 0.00000104629317614783,
+      "updateP95Ms": 0.30000001192092896,
+      "updateMaxMs": 3.4000000059604645,
       "drawCalls": 10,
       "triangles": 8654,
       "motionChanged": true,
       "soleY": {
-        "min": 0.0019058383932474554,
-        "max": 0.11372796902039892,
+        "min": 0.0019061834220305829,
+        "max": 0.11372882996349495,
         "count": 406
       }
     },
@@ -75,16 +75,16 @@
       "mode": "rough",
       "activity": "walk",
       "frames": 481,
-      "simulatedSeconds": 7.99970000000053,
-      "maxContactErrorM": 0.0000016384100505303547,
-      "updateP95Ms": 0.20000000298023224,
-      "updateMaxMs": 0.9000000059604645,
+      "simulatedSeconds": 7.999700000000537,
+      "maxContactErrorM": 0.0000016377887052574993,
+      "updateP95Ms": 0.30000001192092896,
+      "updateMaxMs": 5.0999999940395355,
       "drawCalls": 10,
       "triangles": 8654,
       "motionChanged": true,
       "soleY": {
-        "min": 0.0019062458513427437,
-        "max": 0.11372569656036004,
+        "min": 0.0019062882764036711,
+        "max": 0.11372876107743056,
         "count": 406
       }
     }
@@ -96,14 +96,14 @@
     {
       "characterEnabled": false,
       "updateP95Ms": 0.09999999403953552,
-      "renderSubmitP95Ms": 0.29999999701976776,
+      "renderSubmitP95Ms": 0.3999999910593033,
       "drawCalls": 7,
       "triangles": 1214
     },
     {
       "characterEnabled": true,
-      "updateP95Ms": 0.20000000298023224,
-      "renderSubmitP95Ms": 0.3999999910593033,
+      "updateP95Ms": 0.3999999910593033,
+      "renderSubmitP95Ms": 0.5,
       "drawCalls": 10,
       "triangles": 8654
     }
@@ -112,20 +112,20 @@
     "viewport": "390x844",
     "errors": [],
     "state": {
-      "contactErrorM": 1.4928238399668174e-7,
+      "contactErrorM": 2.7634459903978424e-7,
       "errors": [
-        3.403128605912871e-8,
-        5.496841533919599e-8,
-        6.300407439899551e-8,
-        1.4928238399668174e-7
+        2.7634459903978424e-7,
+        9.185104317425496e-8,
+        2.0254711870926957e-7,
+        2.013453975542401e-7
       ],
-      "updateMs": 0.10000000894069672,
-      "renderSubmitMs": 0.19999998807907104,
+      "updateMs": 0.09999999403953552,
+      "renderSubmitMs": 0.29999999701976776,
       "drawCalls": 10,
       "triangles": 8654,
       "lean": [
-        0.007819289603805473,
-        0.11379809793314787
+        -0.011500888459148885,
+        0.07519917638189381
       ],
       "activity": "helm",
       "localPosition": [
@@ -145,7 +145,7 @@
           0.13
         ]
       ],
-      "time": 49.01460000000061,
+      "time": 49.24149999999468,
       "mode": "rough",
       "paused": false,
       "frames": 600

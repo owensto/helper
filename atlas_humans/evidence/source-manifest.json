@@ -1,5 +1,6 @@
 {
-  "src/captain12-adapter.mjs": "6d7d236df974b1141ee3b3d45631adeffbd5646720336a40b7c6fa0bb7cdaa3e",
+  "src/bay-profile.mjs": "4ca73915378e3ffe71ba123fff17aa7999d008e1c9ef0b71bd9aa8ef1220034c",
+  "src/captain12-adapter.mjs": "25937b2908b4240aae922f8050446adec576db4456f4f48420d980ce64e561c1",
   "src/character-state.mjs": "925097cc4e07201aa9d6dbab2f0dcd2443ad255949bedd5c9d201d47a6224642",
   "src/contact.mjs": "67d53b36ebe9469abc827f89a20e4f8e68358cbdb79fce2dc3eea065c937d218",
   "src/demo.mjs": "77cfa5a57ff09f6a3f01ad6214d56400650d4f2021ba9382a3ada26a9df98ddf",

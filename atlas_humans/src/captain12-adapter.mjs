@@ -1,5 +1,6 @@
 import { CharacterContact, validateAttachment } from "./contact.mjs";
 import { Vector3 } from "three";
+import { validateRigPose } from "./pose-contract.mjs";
 import { stampedTransform, rigidMatrix } from "./transform-contract.mjs";
 // CORE opts in by replacing its existing Sea12Captain.build call with this factory.
 // No window globals, scene insertion, timer, network or vessel stepping occurs here.
@@ -96,6 +97,24 @@ export function makeCaptain12Build({
         pose.seat = local(pose.seat);
         pose.feet = pose.feet.map(local);
         pose.hands = pose.hands.map(local);
+        if (sample.rigPose !== undefined) {
+          const r = sample.rigPose;
+          if (
+            !r ||
+            !Number.isFinite(r.torsoPitch) ||
+            !r.handOrientations ||
+            !r.footOrientations ||
+            !Number.isFinite(r.balanceGain) ||
+            r.balanceGain < 0 ||
+            r.balanceGain > 1
+          )
+            return hide("INCOMPLETE_RIG_PROFILE_POSE");
+          pose.torsoPitch = r.torsoPitch;
+          pose.handOrientations = structuredClone(r.handOrientations);
+          pose.footOrientations = structuredClone(r.footOrientations);
+          pose.lean = pose.lean.map((v) => v * r.balanceGain);
+          validateRigPose(pose);
+        }
         group.userData.attachmentValid = true;
         group.children.forEach((o) => (o.visible = true));
         const result = rig.update(pose);

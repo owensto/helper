@@ -1,6 +1,6 @@
 {
   "revision": "bay12-rocketbox-calibration/1",
-  "status": "CALIBRATION_CANDIDATE_NOT_ACCEPTED",
+  "status": "LIMITED_CONTACT_REVIEW_ONLY_NOT_GAMEPLAY_ACCEPTED",
   "productionEnabled": false,
   "ownerInputCommit": "9a9c12645a1fe55f077f880c3e3b2403c18c4410",
   "physicalContactSHA256": "cc2a82dc89e3abfee8fd6a7d5def9dd153da179abb4c834dc91b09924d237f58",
@@ -32,8 +32,8 @@
   "offsets": {
     "seat": {
       "positionContactM": [
-        0.09999999999999987,
-        0.12641810011074495,
+        0.07499999999999973,
+        0.14564062506825137,
         -0.08500000000000002
       ]
     },
@@ -41,33 +41,33 @@
       "positionContactM": [
         -0.05500000000000016,
         0.11059998974800112,
-        0.015136250141933722
+        0.015136184922491042
       ],
       "orientationContactXYZW": [
-        -0.017851990952941266,
-        0.017791095778940447,
-        -0.7005766069806643,
-        0.7131319814322423
+        -0.017851992937122474,
+        0.017791108494143518,
+        -0.7005766054586199,
+        0.7131319829105284
       ]
     },
     "rightFoot": {
       "positionContactM": [
         -0.05500000000000016,
         0.11059998974800112,
-        -0.015352982001250237
+        -0.015352964788292955
       ],
       "orientationContactXYZW": [
-        0.019601417822707773,
-        -0.019573799986180695,
-        -0.700529566880456,
-        0.7130855161448427
+        0.019601411267610974,
+        -0.019573791810081828,
+        -0.7005295698387921,
+        0.7130855142332645
       ]
     },
     "leftHand": {
       "positionContactM": [
-        0.024641253481912262,
-        0.081698728856758,
-        -0.005445410446774934
+        0.024641245958858526,
+        0.0816987429600331,
+        -0.005445380553038781
       ],
       "orientationContactXYZW": [
         0.3769296818542214,
@@ -78,9 +78,9 @@
     },
     "rightHand": {
       "positionContactM": [
-        0.02464365161630333,
-        0.08169818218474734,
-        0.005446009996501688
+        0.024643754588254074,
+        0.08169815797158564,
+        0.005445885990221777
       ],
       "orientationContactXYZW": [
         -0.37692939375962864,
@@ -108,13 +108,37 @@
     }
   },
   "staticCalibration": {
-    "maxError": 0.0000015661159944536746,
+    "maxError": 1.4992829071998017e-06,
     "errors": [
-      0.0000015661159944536746,
-      9.27101916261459e-8,
-      6.289879787219764e-7,
-      8.630388164942518e-7
+      1.4992829071998017e-06,
+      6.735686362868975e-08,
+      6.132068284851493e-07,
+      8.74901534739851e-07
     ]
   },
-  "bodyClearanceAccepted": false
+  "bodyClearanceAccepted": false,
+  "bounds": {
+    "wheelAngleAbsMaxRad": 0.1,
+    "rollAbsMaxRad": 0.08,
+    "pitchAbsMaxRad": 0.06,
+    "rollPitchVisualGain": 0.15,
+    "measuredAccelerationAvailable": false,
+    "fullSteeringSupported": false,
+    "releaseRegripSupported": false,
+    "jointResidualMaxM": 0.005,
+    "seatProbeNormalRangeM": [
+      -0.003,
+      0.005
+    ],
+    "handProbeNormalRangeM": [
+      -0.002,
+      0.005
+    ],
+    "soleProbeNormalRangeM": [
+      -0.002,
+      0.008
+    ],
+    "finitePatchOverrunAllowedM": 0
+  },
+  "requiredBehaviorOutsideBounds": "Hide this candidate or use an explicitly selected CORE fallback; never clamp steering or reuse stale contacts."
 }
