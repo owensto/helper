@@ -1,3 +1,4 @@
+import { validateRigPose } from "./pose-contract.mjs";
 import * as T from "three";
 import { solveTwoBone } from "./ik.mjs";
 export function createHelmRig(gltf, animations = {}) {
@@ -40,7 +41,9 @@ export function createHelmRig(gltf, animations = {}) {
     clip.optimize();
     actions[mode] = mixer.clipAction(clip);
   }
-  let activeMode;
+  let activeMode,
+    transition = null,
+    lastAnimated = null;
   const footOrientation = legs.map((l) =>
     l[2].getWorldQuaternion(new T.Quaternion()),
   );
@@ -56,18 +59,40 @@ export function createHelmRig(gltf, animations = {}) {
     world = new T.Vector3(),
     pole = new T.Vector3();
   function update(pose) {
+    validateRigPose(pose);
     for (const [o, p, q] of rest) {
       o.position.copy(p);
       o.quaternion.copy(q);
     }
     if (actions[pose.mode]) {
       if (activeMode !== pose.mode) {
+        if (
+          activeMode &&
+          ["idle", "walk"].includes(activeMode) &&
+          ["idle", "walk"].includes(pose.mode)
+        )
+          transition = {
+            time: pose.time,
+            quaternions:
+              lastAnimated || rest.map(([o]) => o.quaternion.clone()),
+          };
+        else transition = null;
         mixer.stopAllAction();
         actions[pose.mode].play();
         activeMode = pose.mode;
       }
       mixer.setTime(pose.mode === "walk" ? (pose.phase % 1) * 1.2 : pose.time);
     }
+    if (transition) {
+      const t = Math.min(1, Math.max(0, (pose.time - transition.time) / 0.22)),
+        u = t * t * (3 - 2 * t);
+      for (let i = 0; i < rest.length; i++) {
+        const q = rest[i][0].quaternion.clone();
+        rest[i][0].quaternion.copy(transition.quaternions[i]).slerp(q, u);
+      }
+      if (t === 1) transition = null;
+    }
+    lastAnimated = rest.map(([o]) => o.quaternion.clone());
     gltf.scene.position.set(0, 0, 0);
     group.updateWorldMatrix(true, true);
     hips.getWorldPosition(v);

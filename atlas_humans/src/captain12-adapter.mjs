@@ -1,5 +1,6 @@
 import { CharacterContact, validateAttachment } from "./contact.mjs";
 import { Vector3 } from "three";
+import { stampedTransform, rigidMatrix } from "./transform-contract.mjs";
 // CORE opts in by replacing its existing Sea12Captain.build call with this factory.
 // No window globals, scene insertion, timer, network or vessel stepping occurs here.
 export function makeCaptain12Build({
@@ -25,49 +26,82 @@ export function makeCaptain12Build({
     built = true;
     const group = rig.group;
     group.name = "SEA12_CAPTAIN";
+    let lastFailure = null;
+    const hide = (reason) => {
+      group.userData.attachmentValid = false;
+      group.children.forEach((o) => (o.visible = false));
+      contact = null;
+      revision = null;
+      if (reason !== lastFailure) {
+        lastFailure = reason;
+        onUnsupported(reason);
+      }
+      return { valid: false, reason };
+    };
+    hide("AWAITING_VALID_ATTACHMENT");
     group.userData.animateCaptain = (A, S) => {
-      const sample = sampleHost(A, S);
-      if (
-        !sample?.valid ||
-        !sample.attachment ||
-        !sample.frame ||
-        typeof sample.frame.epoch !== "string" ||
-        !sample.frame.epoch ||
-        sample.ejected
-      ) {
-        group.userData.attachmentValid = false;
-        group.children.forEach((o) => (o.visible = false));
-        onUnsupported(sample?.reason || "Attachment unavailable");
-        return;
+      try {
+        const sample = sampleHost(A, S);
+        if (
+          !sample?.valid ||
+          !sample.attachment ||
+          !sample.frame ||
+          typeof sample.frame.epoch !== "string" ||
+          !sample.frame.epoch ||
+          sample.ejected
+        ) {
+          return hide(sample?.reason || "Attachment unavailable");
+        }
+        let ancestor = group.parent;
+        while (ancestor && ancestor !== A?.boat) ancestor = ancestor.parent;
+        if (!ancestor) return hide("CAPTAIN_DETACHED");
+        const supplied = stampedTransform(sample.transform, sample.frame);
+        if (!A?.boat?.updateWorldMatrix) return hide("VESSEL_ROOT_UNAVAILABLE");
+        A.boat.updateWorldMatrix(true, false);
+        group.updateWorldMatrix(true, false);
+        const actual = rigidMatrix(Array.from(A.boat.matrixWorld.elements));
+        rigidMatrix(Array.from(group.matrixWorld.elements));
+        if (
+          actual.elements.some(
+            (v, i) => Math.abs(v - supplied.forward.elements[i]) > 1e-5,
+          )
+        )
+          return hide("RENDER_TRANSFORM_MISMATCH");
+        const key =
+          sample.attachment.vesselId +
+          ":" +
+          sample.attachment.revision +
+          ":" +
+          sample.frame.epoch;
+        if (key !== revision) {
+          contact = new CharacterContact(sample.attachment);
+          revision = key;
+        }
+        if (sample.reset) contact.reset(sample.attachment);
+        // Owner may animate wheel/lever targets without changing geometry revision.
+        contact.attachment = validateAttachment(sample.attachment);
+        const pose = contact.update(sample.frame);
+        A.boat.updateWorldMatrix(true, false);
+        group.updateWorldMatrix(true, true);
+        const local = (point) => {
+          v.fromArray(point);
+          v.applyMatrix4(supplied.forward);
+          group.worldToLocal(v);
+          return v.toArray();
+        };
+        pose.seat = local(pose.seat);
+        pose.feet = pose.feet.map(local);
+        pose.hands = pose.hands.map(local);
+        group.userData.attachmentValid = true;
+        group.children.forEach((o) => (o.visible = true));
+        const result = rig.update(pose);
+        lastFailure = null;
+        return result;
+      } catch (error) {
+        return hide(
+          error instanceof Error ? error.message : "INVALID_OWNER_SAMPLE",
+        );
       }
-      const key =
-        sample.attachment.vesselId +
-        ":" +
-        sample.attachment.revision +
-        ":" +
-        sample.frame.epoch;
-      if (key !== revision) {
-        contact = new CharacterContact(sample.attachment);
-        revision = key;
-      }
-      if (sample.reset) contact.reset(sample.attachment);
-      // Owner may animate wheel/lever targets without changing geometry revision.
-      contact.attachment = validateAttachment(sample.attachment);
-      const pose = contact.update(sample.frame);
-      A.boat.updateWorldMatrix(true, false);
-      group.updateWorldMatrix(true, true);
-      const local = (point) => {
-        v.fromArray(point);
-        A.boat.localToWorld(v);
-        group.worldToLocal(v);
-        return v.toArray();
-      };
-      pose.seat = local(pose.seat);
-      pose.feet = pose.feet.map(local);
-      pose.hands = pose.hands.map(local);
-      group.userData.attachmentValid = true;
-      group.children.forEach((o) => (o.visible = true));
-      return rig.update(pose);
     };
     return { group, limbs: [] };
   };

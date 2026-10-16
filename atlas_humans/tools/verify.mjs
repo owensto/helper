@@ -25,6 +25,27 @@ const report = {
   scenarios: [],
   errors,
 };
+report.invalidPosePreservesRig = await page.evaluate(() => {
+  const rig = HUMANS_LAB.rig;
+  const before = JSON.stringify([
+    rig.hips.position.toArray(),
+    rig.hips.quaternion.toArray(),
+  ]);
+  let rejected = false;
+  try {
+    rig.update({ mode: "helm", time: NaN });
+  } catch {
+    rejected = true;
+  }
+  return (
+    rejected &&
+    before ===
+      JSON.stringify([
+        rig.hips.position.toArray(),
+        rig.hips.quaternion.toArray(),
+      ])
+  );
+});
 for (const [mode, activity] of process.env.WALK_ONLY
   ? [
       ["rough", "idle"],
@@ -173,6 +194,7 @@ await browser.close();
 report.passed =
   errors.length === 0 &&
   report.pauseStable &&
+  report.invalidPosePreservesRig &&
   report.scenarios.every(
     (x) =>
       x.motionChanged &&
@@ -184,6 +206,7 @@ report.passed =
 fs.writeFileSync("evidence/browser.json", JSON.stringify(report, null, 2));
 assert.equal(errors.length, 0);
 assert.ok(report.pauseStable);
+assert.ok(report.invalidPosePreservesRig);
 assert.ok(
   report.scenarios.every((x) => x.motionChanged && x.simulatedSeconds > 5),
 );

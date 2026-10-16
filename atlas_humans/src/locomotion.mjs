@@ -64,6 +64,10 @@ export class DeckLocomotion {
     this.feet = [null, null];
     this.swingStarts = [null, null];
     this.lastTime = null;
+    this.invalidated = false;
+    this.lastTargets = null;
+    this.wasMoving = false;
+    this.settling = null;
   }
   update({ time, dt, forward = 0, valid = true }) {
     if (![time, dt, forward].every(Number.isFinite) || dt < 0 || dt > 0.1)
@@ -71,7 +75,12 @@ export class DeckLocomotion {
     if (this.lastTime !== null && time < this.lastTime)
       throw new RangeError("Reset on host time discontinuity");
     this.lastTime = time;
-    if (!valid) return { valid: false, reason: "Owner marks deck unavailable" };
+    if (!valid) {
+      this.invalidated = true;
+      return { valid: false, reason: "Owner marks deck unavailable" };
+    }
+    if (this.invalidated)
+      return { valid: false, reason: "DECK_REACQUISITION_REQUIRES_RESET" };
     const p = this.patch,
       r = 0.23,
       b = p.bounds,
@@ -79,21 +88,31 @@ export class DeckLocomotion {
     // Braking at a boundary is conservative: no freefall, stair or jump inference.
     this.speed += (requested - this.speed) * (1 - Math.exp(-dt * 8));
     const previous = this.position[0];
-    let next = clamp(previous + this.speed * dt, b[0] + r, b[1] - r);
+    let limit = b[1] - r;
+    let next = clamp(previous + this.speed * dt, b[0] + r, limit);
     for (const o of p.obstacles) {
       if (
         this.position[1] > o.minZ - r &&
         this.position[1] < o.maxZ + r &&
         previous <= o.minX - r &&
-        next > o.minX - r
-      )
-        next = o.minX - r;
+        next >= previous
+      ) {
+        limit = Math.min(limit, o.minX - r);
+        next = Math.min(next, limit);
+      }
     }
     this.position[0] = next;
     if (dt > 0 && Math.abs(next - previous) < 1e-8) this.speed = 0;
     const moving = this.speed > 0.025;
     if (moving) this.phase += (this.speed * dt) / 0.55 / 0.9;
-    const footTargets = [];
+    let footTargets = [];
+    if (!moving && this.wasMoving && this.lastTargets)
+      this.settling = {
+        age: 0,
+        starts: this.lastTargets.map((p) => [...p]),
+        ends: this.feet.map((p) => [Math.min(p[0], limit), p[1], p[2]]),
+      };
+    if (moving) this.settling = null;
     for (let i = 0; i < 2; i++) {
       const localPhase = (this.phase + (i === 0 ? 0 : 0.5)) % 1,
         z = this.position[1] + (i === 0 ? -0.11 : 0.11),
@@ -108,7 +127,7 @@ export class DeckLocomotion {
         const t = (localPhase - 0.6) / 0.4,
           u = t * t * (3 - 2 * t),
           start = this.swingStarts[i];
-        const landing = Math.min(b[1] - r, this.position[0] + 0.18);
+        const landing = Math.min(limit, this.position[0] + 0.18);
         const target = [
           start[0] + (landing - start[0]) * u,
           y + Math.sin(Math.PI * t) * 0.1,
@@ -118,6 +137,21 @@ export class DeckLocomotion {
         this.feet[i] = [landing, y, z];
       }
     }
+    if (this.settling) {
+      const q = this.settling;
+      q.age += dt;
+      const t = Math.min(1, q.age / 0.18),
+        u = t * t * (3 - 2 * t);
+      footTargets = q.starts.map((p, i) =>
+        p.map((v, j) => v + (q.ends[i][j] - v) * u),
+      );
+      if (t === 1) {
+        this.feet = q.ends.map((p) => [...p]);
+        this.settling = null;
+      }
+    }
+    this.lastTargets = footTargets.map((p) => [...p]);
+    this.wasMoving = moving;
     return {
       valid: true,
       version: 1,

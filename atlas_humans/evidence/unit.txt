@@ -6,87 +6,177 @@ TAP version 13
 # Subtest: existing captain transform consumes vessel-local anchors without second insertion
 ok 1 - existing captain transform consumes vessel-local anchors without second insertion
   ---
-  duration_ms: 1.056292
+  duration_ms: 1.358
   type: 'test'
   ...
 # Subtest: unknown anchors stay visually hidden even when old host sets captain visibility
 ok 2 - unknown anchors stay visually hidden even when old host sets captain visibility
   ---
-  duration_ms: 0.198167
+  duration_ms: 0.19475
   type: 'test'
   ...
 # Subtest: host epoch change resets balance before backwards simulation time
 ok 3 - host epoch change resets balance before backwards simulation time
   ---
-  duration_ms: 0.358833
+  duration_ms: 1.315333
+  type: 'test'
+  ...
+# Subtest: bad frames hide the visual, do not update rig, and recover on a valid new frame
+ok 4 - bad frames hide the visual, do not update rig, and recover on a valid new frame
+  ---
+  duration_ms: 1.1595
+  type: 'test'
+  ...
+# Subtest: render pose mismatch and detached/scaled captain are not accepted as current contacts
+ok 5 - render pose mismatch and detached/scaled captain are not accepted as current contacts
+  ---
+  duration_ms: 0.243167
+  type: 'test'
+  ...
+# Subtest: captain detached from its supplied vessel stays unsupported
+ok 6 - captain detached from its supplied vessel stays unsupported
+  ---
+  duration_ms: 0.09325
   type: 'test'
   ...
 # Subtest: remote pose accepts only expected identity/geometry and increasing sequence
-ok 4 - remote pose accepts only expected identity/geometry and increasing sequence
+ok 7 - remote pose accepts only expected identity/geometry and increasing sequence
   ---
-  duration_ms: 0.489875
+  duration_ms: 0.630083
   type: 'test'
   ...
 # Subtest: local contacts remain invariant through repeated rough vessel motion
-ok 5 - local contacts remain invariant through repeated rough vessel motion
+ok 8 - local contacts remain invariant through repeated rough vessel motion
   ---
-  duration_ms: 10.150333
+  duration_ms: 14.208333
   type: 'test'
   ...
 # Subtest: pause does not change balance and backwards time requires reset
-ok 6 - pause does not change balance and backwards time requires reset
+ok 9 - pause does not change balance and backwards time requires reset
   ---
-  duration_ms: 0.296875
+  duration_ms: 0.308583
   type: 'test'
   ...
 # Subtest: bad time and geometry fail explicitly
-ok 7 - bad time and geometry fail explicitly
+ok 10 - bad time and geometry fail explicitly
   ---
-  duration_ms: 0.105209
+  duration_ms: 0.112125
   type: 'test'
   ...
 # Subtest: snapshot copies values without transport or vessel mutation
-ok 8 - snapshot copies values without transport or vessel mutation
+ok 11 - snapshot copies values without transport or vessel mutation
   ---
-  duration_ms: 0.370042
+  duration_ms: 0.176084
   type: 'test'
   ...
 # Subtest: IK holds reachable targets after moving rotated parent
-ok 9 - IK holds reachable targets after moving rotated parent
+ok 12 - IK holds reachable targets after moving rotated parent
   ---
-  duration_ms: 6.02825
+  duration_ms: 6.287083
   type: 'test'
   ...
 # Subtest: IK reports unreachable target without stretching bones
-ok 10 - IK reports unreachable target without stretching bones
+ok 13 - IK reports unreachable target without stretching bones
   ---
-  duration_ms: 0.174166
+  duration_ms: 0.166875
   type: 'test'
   ...
 # Subtest: walk remains within owner supplied patch and stops at edge
-ok 11 - walk remains within owner supplied patch and stops at edge
+ok 14 - walk remains within owner supplied patch and stops at edge
   ---
-  duration_ms: 5.733291
+  duration_ms: 7.769542
   type: 'test'
   ...
 # Subtest: standing feet stay planted and pause preserves pose
-ok 12 - standing feet stay planted and pause preserves pose
+ok 15 - standing feet stay planted and pause preserves pose
   ---
-  duration_ms: 1.163083
+  duration_ms: 2.641334
   type: 'test'
   ...
 # Subtest: capsule stops before obstacle and unavailable deck fails closed
-ok 13 - capsule stops before obstacle and unavailable deck fails closed
+ok 16 - capsule stops before obstacle and unavailable deck fails closed
   ---
-  duration_ms: 1.049375
+  duration_ms: 1.433167
   type: 'test'
   ...
-1..13
-# tests 13
+# Subtest: edge stop settles raised foot continuously and freezes exactly during pause
+ok 17 - edge stop settles raised foot continuously and freezes exactly during pause
+  ---
+  duration_ms: 1.573167
+  type: 'test'
+  ...
+# Subtest: walking foot targets stop outside obstacle, not just pelvis
+ok 18 - walking foot targets stop outside obstacle, not just pelvis
+  ---
+  duration_ms: 1.365958
+  type: 'test'
+  ...
+# Subtest: lost deck validity cannot silently resume with cached support
+ok 19 - lost deck validity cannot silently resume with cached support
+  ---
+  duration_ms: 0.28825
+  type: 'test'
+  ...
+# Subtest: C1 exact owner descriptor preserves captain root but rejects missing physical contacts
+ok 20 - C1 exact owner descriptor preserves captain root but rejects missing physical contacts
+  ---
+  duration_ms: 0.709167
+  type: 'test'
+  ...
+# Subtest: Y1 real owner sampler cannot turn absent helm into an origin attachment
+ok 21 - Y1 real owner sampler cannot turn absent helm into an origin attachment
+  ---
+  duration_ms: 0.902334
+  type: 'test'
+  ...
+# Subtest: actual R7 foredeck point hit never becomes whole-foot or walkable-rectangle approval
+ok 22 - actual R7 foredeck point hit never becomes whole-foot or walkable-rectangle approval
+  ---
+  duration_ms: 0.77625
+  type: 'test'
+  ...
+# Subtest: Y1 conversion, submerged and vessel switching fail closed; old frame cannot revive support
+ok 23 - Y1 conversion, submerged and vessel switching fail closed; old frame cannot revive support
+  ---
+  duration_ms: 0.649917
+  type: 'test'
+  ...
+# Subtest: owner fixture bytes match pinned provenance
+ok 24 - owner fixture bytes match pinned provenance
+  ---
+  duration_ms: 0.421875
+  type: 'test'
+  ...
+# Subtest: rig rejects nonfinite contacts, phase and balance before evaluating skeleton
+ok 25 - rig rejects nonfinite contacts, phase and balance before evaluating skeleton
+  ---
+  duration_ms: 0.656625
+  type: 'test'
+  ...
+# Subtest: right-handed tilted transform and inverse round-trip without changing axes
+ok 26 - right-handed tilted transform and inverse round-trip without changing axes
+  ---
+  duration_ms: 0.856792
+  type: 'test'
+  ...
+# Subtest: missing, NaN, infinity, scale, shear, reflection and perspective rejected
+ok 27 - missing, NaN, infinity, scale, shear, reflection and perspective rejected
+  ---
+  duration_ms: 0.176125
+  type: 'test'
+  ...
+# Subtest: inverse, stale timestamp and simulation epoch mismatch reject
+ok 28 - inverse, stale timestamp and simulation epoch mismatch reject
+  ---
+  duration_ms: 0.541833
+  type: 'test'
+  ...
+1..28
+# tests 28
 # suites 0
-# pass 13
+# pass 28
 # fail 0
 # cancelled 0
 # skipped 0
 # todo 0
-# duration_ms 95.356125
+# duration_ms 114.463459

@@ -1,22 +1,22 @@
 {
   "assetBytes": 3211304,
   "runtime": "153.0.8010.12",
-  "timestamp": "2026-10-16T04:43:06.699Z",
+  "timestamp": "2026-10-16T04:56:14.159Z",
   "scenarios": [
     {
       "mode": "calm",
       "activity": "helm",
       "frames": 481,
-      "simulatedSeconds": 7.999700000000022,
+      "simulatedSeconds": 7.999700000000029,
       "maxContactErrorM": 0.0000013846475093145947,
-      "updateP95Ms": 0.29999999701976776,
-      "updateMaxMs": 2.5,
+      "updateP95Ms": 0.20000000298023224,
+      "updateMaxMs": 0.7000000029802322,
       "drawCalls": 10,
       "triangles": 8654,
       "motionChanged": true,
       "soleY": {
-        "min": 0.009906080055552467,
-        "max": 0.12568577905873646,
+        "min": 0.009906080055551617,
+        "max": 0.12568577905873643,
         "count": 406
       }
     },
@@ -24,16 +24,16 @@
       "mode": "rough",
       "activity": "helm",
       "frames": 481,
-      "simulatedSeconds": 7.999699999999891,
-      "maxContactErrorM": 0.0000014155317419942321,
+      "simulatedSeconds": 7.999699999999834,
+      "maxContactErrorM": 0.0000014241403078303685,
       "updateP95Ms": 0.20000000298023224,
-      "updateMaxMs": 0.5,
+      "updateMaxMs": 0.4000000059604645,
       "drawCalls": 10,
       "triangles": 8654,
       "motionChanged": true,
       "soleY": {
-        "min": 0.009906303701300233,
-        "max": 0.12560854385682105,
+        "min": 0.009906220030374502,
+        "max": 0.12560868054444066,
         "count": 406
       }
     },
@@ -41,16 +41,16 @@
       "mode": "maneuver",
       "activity": "helm",
       "frames": 481,
-      "simulatedSeconds": 7.999699999999791,
-      "maxContactErrorM": 0.0000014601797598681577,
+      "simulatedSeconds": 7.999599999999745,
+      "maxContactErrorM": 0.0000014691167285874336,
       "updateP95Ms": 0.20000000298023224,
-      "updateMaxMs": 0.8999999910593033,
+      "updateMaxMs": 3,
       "drawCalls": 10,
       "triangles": 8654,
       "motionChanged": true,
       "soleY": {
-        "min": 0.009905925457391804,
-        "max": 0.1256851919990094,
+        "min": 0.009906111716998116,
+        "max": 0.12568523785703184,
         "count": 406
       }
     },
@@ -58,16 +58,16 @@
       "mode": "rough",
       "activity": "idle",
       "frames": 481,
-      "simulatedSeconds": 7.999699999999912,
-      "maxContactErrorM": 0.0000015746180793109297,
+      "simulatedSeconds": 7.999699999999972,
+      "maxContactErrorM": 0.0000015746180783517894,
       "updateP95Ms": 0.20000000298023224,
-      "updateMaxMs": 1.1000000089406967,
+      "updateMaxMs": 1.2000000029802322,
       "drawCalls": 10,
       "triangles": 8654,
       "motionChanged": true,
       "soleY": {
-        "min": 0.0019062266637862035,
-        "max": 0.11372885551038645,
+        "min": 0.0019058383932474554,
+        "max": 0.11372796902039892,
         "count": 406
       }
     },
@@ -75,21 +75,22 @@
       "mode": "rough",
       "activity": "walk",
       "frames": 481,
-      "simulatedSeconds": 7.999600000000477,
-      "maxContactErrorM": 0.00000162416756401308,
+      "simulatedSeconds": 7.99970000000053,
+      "maxContactErrorM": 0.0000016384100505303547,
       "updateP95Ms": 0.20000000298023224,
-      "updateMaxMs": 2.8999999910593033,
+      "updateMaxMs": 0.9000000059604645,
       "drawCalls": 10,
       "triangles": 8654,
       "motionChanged": true,
       "soleY": {
-        "min": 0.0019054858795568598,
-        "max": 0.11372863676199275,
+        "min": 0.0019062458513427437,
+        "max": 0.11372569656036004,
         "count": 406
       }
     }
   ],
   "errors": [],
+  "invalidPosePreservesRig": true,
   "pauseStable": true,
   "budget": [
     {
@@ -102,7 +103,7 @@
     {
       "characterEnabled": true,
       "updateP95Ms": 0.20000000298023224,
-      "renderSubmitP95Ms": 0.30000001192092896,
+      "renderSubmitP95Ms": 0.3999999910593033,
       "drawCalls": 10,
       "triangles": 8654
     }
@@ -111,20 +112,20 @@
     "viewport": "390x844",
     "errors": [],
     "state": {
-      "contactErrorM": 1.6883615766942147e-7,
+      "contactErrorM": 1.4928238399668174e-7,
       "errors": [
-        1.6883615766942147e-7,
-        8.470642727369252e-8,
-        6.616870373079694e-8,
-        1.6356940293360488e-7
+        3.403128605912871e-8,
+        5.496841533919599e-8,
+        6.300407439899551e-8,
+        1.4928238399668174e-7
       ],
-      "updateMs": 0.20000000298023224,
-      "renderSubmitMs": 0.29999999701976776,
+      "updateMs": 0.10000000894069672,
+      "renderSubmitMs": 0.19999998807907104,
       "drawCalls": 10,
       "triangles": 8654,
       "lean": [
-        -0.004959020723259827,
-        0.08935062519201367
+        0.007819289603805473,
+        0.11379809793314787
       ],
       "activity": "helm",
       "localPosition": [
@@ -144,7 +145,7 @@
           0.13
         ]
       ],
-      "time": 49.16460000000059,
+      "time": 49.01460000000061,
       "mode": "rough",
       "paused": false,
       "frames": 600

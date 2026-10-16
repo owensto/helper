@@ -36,7 +36,7 @@ Unit coverage includes moving-parent IK, unreachable targets without bone stretc
 1. Agree the current CORE descriptor/SHA and vessel attachments first. Reuse CORE's Three.js instance when bundling these modules. Load `RocketboxCaptain.glb` with GLTFLoader and `animations.json`, then call `createHelmRig(gltf, clips)` once per character.
 2. Supply `makeCaptain12Build({rig, sampleHost, onUnsupported})` at the existing `Sea12Captain.build(T)` call in `ensureDriver`; do not add a separate driver or global. Existing `SEA12_CAPTAIN` naming, visibility/camera logic and boat parenting remain CORE-owned. `sampleHost(A,S)` returns the contract below. Parent driver translation is handled explicitly by the consumer.
 3. Sample **once per host simulation frame** after vessel/control matrices update. Supply local-frame acceleration, roll/pitch and host time/dt. `dt` must be 0…0.1 s; subdivide larger host steps. Paused host supplies dt=0 and unchanged time. On clock reset change the explicit `frame.epoch` and set `reset:true`; on vessel/geometry change use the new identity/revision and new anchors.
-4. Preserve CORE wheel/throttle targeting: derive updated wrist targets from `PLAY_STEERING` / `PLAY_THROTTLE`, converted into the vessel coordinate frame, and pass them in `attachment`. Do not independently advance wheel or vessel time. The fixture grip assumes a wheel in the YZ plane; custom hand orientations and throttle-reaching poses need a separate reviewed rig profile.
+4. Preserve CORE wheel/throttle targeting, but require owner-authored physical grip targets and a reviewed wrist offset. `PLAY_STEERING` / `PLAY_THROTTLE` are semantic control pivots, not approved grip contacts. Convert approved targets into the vessel coordinate frame and pass them in `attachment`. Do not independently advance wheel or vessel time. The fixture grip assumes a wheel in the YZ plane; custom hand orientations and throttle-reaching poses need a separate reviewed rig profile.
 5. Mark missing/unsafe attachments `valid:false` with a reason. The visual child is hidden even if older host code re-enables the parent. CORE must suppress unsupported ejection/ragdoll updates for this rig or retain its procedural fallback for that mode; the factory returns no procedural limb list.
 6. Yacht owner supplies its own authoritative attachment/contact adapter. **Do not use Bay dimensions or these fixture coordinates on yacht.** Unknown helm geometry, conversion occupancy, stairs/interiors or depth do not become invented support surfaces. Neither Bay nor yacht integration is accepted by the fixture tests.
 
@@ -51,7 +51,9 @@ Unit coverage includes moving-parent IK, unreachable targets without bone stretc
     leftFoot: [x,y,z], rightFoot: [x,y,z], // ankle joint targets, not sole planes
     leftHand: [x,y,z], rightHand: [x,y,z] // wrist joint targets, not palm centers
   },
-  frame: {epoch, time, dt, acceleration: [ax,ay,az], roll, pitch}
+  frame: {epoch, time, dt, acceleration: [ax,ay,az], roll, pitch},
+  transform: {epoch, time, localToWorld: [/* 16 column-major values */],
+              worldToLocal: [/* exact inverse */]}
 }
 ```
 
@@ -62,3 +64,15 @@ Multiplayer proposal: `characterSnapshot(characterId, pose, sequence, simulation
 ## Unsupported / not accepted
 
 No full biomechanics, ragdoll, falling/overboard, buoyancy of people, dynamic hull collision, stairs, ladders, arbitrary slopes, sitting/standing transition choreography, two-way walking, pathfinding, face/eye animation, full-body reaction to impacts, multiplayer transport, or integrated Bay/yacht browser acceptance. Wrist/ankle numerical residual is not proof of every finger/sole vertex contact. The grip is authored for the fixture wheel; owner-specific wheel/throttle dimensions need calibration. Strong accelerations are bounded visual balance responses, not a balance/fall stability solver. Motion transitions between separate fixture exercises reset position deliberately.
+
+## H2 receiver conformance checkpoint
+
+Pinned owner inputs live under `tests/owner-fixtures/`; `provenance.json` records exact source paths, commits and byte hashes. C1 descriptor: `9227a6318f9524ac002b6a2ca9f78c9ebad4da2a`. Y1 manifest/adapter: `09aeb97168c4cd627cb54766d8f9ef2e55b83183` (Y1 result PR #1 comment 6208351149). These copies are test inputs, not replacement owner implementations.
+
+C1 corrects the existing captain root to `(-1.60, 1.06, +0.18)` but all six physical contact/occupancy fields remain unavailable. Y1 exposes three point-contact patches and no helm anchors. The receiver tests execute the actual Y1 adapter against the pinned original R7 GLB (hash checked); synthetic identity transforms isolate receiver math. Those tests are not evidence of an integrated moving yacht. A triangle point hit never grants whole-foot/body clearance or a walkable rectangle. `owner-contracts.mjs` keeps `productionEnabled:false` for every result.
+
+The proposed captain adapter now requires matching transform/time/epoch stamps, finite rigid matrices and agreeing inverses, actual render-pose agreement, and descent from the supplied vessel. Missing, stale, scaled, reflected, non-finite or malformed samples hide the visual child without crashing the host; a valid fresh sample can recover. Invalid rig poses are rejected before skeleton mutation. An owner must provide the current frame independently; cached samples cannot certify themselves as current. C1's numeric per-client simulation epoch, Y1's lifecycle activation epoch, and the proposed string character epoch are distinct. No implicit clock mapping is installed.
+
+Fixture walking now limits foot landings as well as pelvis travel at expanded obstacle boundaries, settles a stopped swing foot continuously, and blends idle/walk skeletal animation over 0.22 s. Loss of deck validity requires a new controller before movement resumes. This does not add seated/standing transition choreography. Unit tests cover boundary continuity, obstacle landings, pause, invalidation and malformed inputs; the browser repeats all five real-time fixture motion cases and checks rejection before rig mutation.
+
+**Remaining integration blocker:** owner-authored Bay/yacht seat/grip/sole contact surfaces, occupancy rules and reviewed rig offsets, plus explicit C1↔Y1 clock/world/identity mapping and CORE receiving approval. Y1 proposes authoring these in its own Y2 workstream. HUMANS has not invented anchors, changed yacht geometry or enabled shared wiring.
