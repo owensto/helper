@@ -9,6 +9,7 @@ on:
       - 'atlas_d_simulator_01/build.py'
       - 'atlas_d_simulator_01/test-core.cjs'
       - 'atlas_d_simulator_01/verify.py'
+      - 'atlas_d_simulator_01/verify_public.py'
 permissions:
   contents: write
 concurrency:
@@ -65,34 +66,9 @@ jobs:
           git push origin HEAD:main
           echo "PUBLIC_COMMIT=$(git rev-parse HEAD)" >> "$GITHUB_ENV"
           echo "PUBLIC_URL=https://rawcdn.githack.com/owensto/helper/$(git rev-parse HEAD)/atlas_d_simulator_01/live/index.html" >> "$GITHUB_ENV"
-      - name: Verify exact public assets and operate the immutable online preview
+      - name: Verify browser-delivered assets, real-time driving and public operation
         run: |
-          python - <<'PY'
-          from pathlib import Path
-          import json,os,hashlib,time,urllib.request
-          r=Path('atlas_d_simulator_01');base=os.environ['PUBLIC_URL'].rsplit('/',1)[0]+'/'
-          files=['index.html','atlas-d-core.js','atlas-d.js','atlas-d.css','assets/ATLAS_D_Original.glb']
-          rows=[]
-          for path in files:
-              expected=(r/'live'/path).read_bytes()
-              for attempt in range(5):
-                  try:
-                      with urllib.request.urlopen(base+path,timeout=60) as response:data=response.read()
-                      assert data==expected,path
-                      break
-                  except Exception:
-                      if attempt==4:raise
-                      time.sleep(5)
-              rows.append({'path':path,'sha256':hashlib.sha256(data).hexdigest(),'exact':True})
-          (r/'review/public-assets.json').write_text(json.dumps({'passed':True,'url':os.environ['PUBLIC_URL'],'commit':os.environ['PUBLIC_COMMIT'],'files':rows},indent=2))
-          PY
-          PUBLIC_CHECK=1 BASE_URL="$PUBLIC_URL" python atlas_d_simulator_01/verify.py
-          python - <<'PY'
-          from pathlib import Path
-          import json,os
-          r=Path('atlas_d_simulator_01');b=json.loads((r/'review/public-browser.json').read_text());assert b['passed']
-          (r/'RELEASE.json').write_text(json.dumps({'status':'Public asset hashes and desktop/phone browser operation passed','url':os.environ['PUBLIC_URL'],'publishedCommit':os.environ['PUBLIC_COMMIT'],'vesselId':'atlas-d-original-r7','multiplayer':False,'physicalDeviceTested':False,'engineeringValidated':False},indent=2))
-          PY
+          python atlas_d_simulator_01/verify_public.py
           git add -f atlas_d_simulator_01/review atlas_d_simulator_01/RELEASE.json
           git commit -m 'Verify immutable online ATLAS D yacht and submarine preview'
           git pull --rebase --autostash origin main
