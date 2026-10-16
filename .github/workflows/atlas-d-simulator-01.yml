@@ -1,22 +1,24 @@
-name: ATLAS D Y10 isolated boarding-label review
+name: ATLAS D Y11 measured physics online release
 on:
   push:
-    branches: ['atlas-d/yacht-boarding-label-y10-20261016']
-    paths: ['.github/workflows/atlas-d-simulator-01.yml','atlas_d_simulator_01/contact/y10/**']
+    branches: ['atlas-d/yacht-physics-live-y11-20261016']
+    paths:
+      - '.github/workflows/atlas-d-simulator-01.yml'
+      - 'atlas_d_simulator_01/contact/y11/physics.js'
+      - 'atlas_d_simulator_01/contact/y11/test-physics.cjs'
+      - 'atlas_d_simulator_01/contact/y11/build.py'
+      - 'atlas_d_simulator_01/contact/y11/telemetry.js'
+      - 'atlas_d_simulator_01/contact/y11/verify.py'
 permissions:
   contents: write
 concurrency:
-  group: atlas-d-y10-boarding-label-isolated
-  cancel-in-progress: true
+  group: atlas-d-y11-isolated-publication
+  cancel-in-progress: false
 jobs:
-  review:
-    if: github.ref == 'refs/heads/atlas-d/yacht-boarding-label-y10-20261016'
-    strategy:
-      fail-fast: false
-      matrix:
-        layout: [portrait, landscape]
+  verify-publish:
+    if: github.ref == 'refs/heads/atlas-d/yacht-physics-live-y11-20261016'
     runs-on: ubuntu-24.04
-    timeout-minutes: 10
+    timeout-minutes: 25
     steps:
       - uses: actions/checkout@v4
         with:
@@ -30,37 +32,69 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - name: Preserve exact Y9 and test label, pause and controller
+      - name: Deterministic physics, original safety and current UI regressions
         run: |
-          python atlas_d_simulator_01/contact/y10/prepare.py
-          node --check atlas_d_simulator_01/contact/y10/boarding-label.js
-          node atlas_d_simulator_01/contact/y10/test-label.cjs > atlas_d_simulator_01/contact/y10/evidence/label-tests.json
-          node atlas_d_simulator_01/contact/y9/test-pause.cjs > atlas_d_simulator_01/contact/y10/evidence/pause-tests.json
-          node atlas_d_simulator_01/test-core.cjs > atlas_d_simulator_01/contact/y10/evidence/core-tests.json
-      - name: Actual baseline, loading gate, ready boarding and controlled error retry
-        env:
-          LAYOUT: ${{ matrix.layout }}
+          mkdir -p atlas_d_simulator_01/contact/y11/evidence
+          node --check atlas_d_simulator_01/contact/y11/physics.js
+          node atlas_d_simulator_01/contact/y11/test-physics.cjs > atlas_d_simulator_01/contact/y11/evidence/physics.stdout
+          node atlas_d_simulator_01/test-core.cjs > atlas_d_simulator_01/contact/y11/evidence/original-core.json
+          node atlas_d_simulator_01/contact/y9/test-pause.cjs > atlas_d_simulator_01/contact/y11/evidence/pause-tests.json
+          node atlas_d_simulator_01/contact/y10/test-label.cjs > atlas_d_simulator_01/contact/y11/evidence/label-tests.json
+          python atlas_d_simulator_01/contact/y11/build.py
+      - name: Actual browser driving, pause, phone controls and complete dive cycle
         run: |
           python -m pip install -q playwright==1.55.0
           python -m playwright install --with-deps chromium >/dev/null
-          python -m http.server 8924 --bind 127.0.0.1 --directory . >atlas_d_simulator_01/contact/y10/evidence/http.log 2>&1 &
+          python -m http.server 8925 --bind 127.0.0.1 --directory . >atlas_d_simulator_01/contact/y11/evidence/http.log 2>&1 &
           sleep 2
-          python atlas_d_simulator_01/contact/y10/verify.py
-      - name: Retain exact evidence only
+          python atlas_d_simulator_01/contact/y11/verify.py
+      - name: Publish only the gated isolated Y11 entry and measured report
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          y=Path('atlas_d_simulator_01/contact/y11')
+          assert json.loads((y/'evidence/browser.json').read_text())['passed']
+          assert json.loads((y/'physics-results.json').read_text())['passed']
+          PY
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -f atlas_d_simulator_01/contact/y11/host/index.html atlas_d_simulator_01/contact/y11/preview.html atlas_d_simulator_01/contact/y11/preview.js atlas_d_simulator_01/contact/y11/report.html atlas_d_simulator_01/contact/y11/build.json atlas_d_simulator_01/contact/y11/physics-results.json
+          git commit -m 'Publish gated Y11 yacht demo and reproducible physics measurements'
+          git push origin HEAD:refs/heads/atlas-d/yacht-physics-live-y11-20261016
+          echo "PUBLIC_COMMIT=$(git rev-parse HEAD)" >> "$GITHUB_ENV"
+          echo "BASE_URL=https://rawcdn.githack.com/owensto/helper/$(git rev-parse HEAD)/atlas_d_simulator_01/contact/y11/preview.html" >> "$GITHUB_ENV"
+      - name: Operate the actual immutable public demo and compare delivered bytes
+        env:
+          PUBLIC_CHECK: '1'
+        run: |
+          python atlas_d_simulator_01/contact/y11/verify.py
+          python - <<'PY'
+          import json,os
+          from pathlib import Path
+          y=Path('atlas_d_simulator_01/contact/y11');p=json.loads((y/'evidence/public-browser.json').read_text());assert p['passed']
+          release={'status':'Exact public assets and actual desktop/portrait/landscape operation verified','sourceCommit':os.environ['GITHUB_SHA'],'publishedCommit':os.environ['PUBLIC_COMMIT'],'url':os.environ['BASE_URL'],'reportURL':os.environ['BASE_URL'].replace('preview.html','report.html'),'physicsTests':26,'publicBrowserVerified':True,'fullDiveCycleLocalCIVerified':True,'seaTrialValidated':False,'multiplayer':False,'sharedHostMerged':False,'physicalDeviceTested':False}
+          (y/'RELEASE.json').write_text(json.dumps(release,indent=2));print(json.dumps(release,indent=2))
+          PY
+          git add atlas_d_simulator_01/contact/y11/RELEASE.json
+          git commit -m 'Record successful actual online Y11 yacht verification'
+          git push origin HEAD:refs/heads/atlas-d/yacht-physics-live-y11-20261016
+          echo "$BASE_URL" >> "$GITHUB_STEP_SUMMARY"
+      - name: Retain exact source and evidence fingerprints
         if: always()
         run: |
           python - <<'PY'
           from pathlib import Path
           import hashlib,json,os
-          r=Path('atlas_d_simulator_01/contact/y10');e=r/'evidence';e.mkdir(exist_ok=True)
-          files={str(p.relative_to(r)):hashlib.sha256(p.read_bytes()).hexdigest() for p in r.rglob('*') if p.is_file() and '__pycache__' not in p.parts and p.name!='artifact-manifest.json'}
-          (e/'artifact-manifest.json').write_text(json.dumps({'baseline':'d659b10e65c83fb671244f036c3d5fbab1d8f3bc','resultSourceCommit':os.environ['GITHUB_SHA'],'branch':os.environ['GITHUB_REF_NAME'],'productionEnabled':False,'files':files},indent=2))
+          y=Path('atlas_d_simulator_01/contact/y11');e=y/'evidence';e.mkdir(exist_ok=True)
+          files={str(p.relative_to(y)):hashlib.sha256(p.read_bytes()).hexdigest() for p in y.rglob('*') if p.is_file() and '__pycache__' not in p.parts and p.name!='artifact-manifest.json'}
+          (e/'artifact-manifest.json').write_text(json.dumps({'sourceCommit':os.environ['GITHUB_SHA'],'publishCommit':os.environ.get('PUBLIC_COMMIT'),'url':os.environ.get('BASE_URL'),'files':files},indent=2))
           PY
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: ATLAS-D-Y10-${{ matrix.layout }}-boarding-label
+          name: ATLAS-D-Y11-public-physics-review
           path: |
-            atlas_d_simulator_01/contact/y10/
-            !atlas_d_simulator_01/contact/y10/__pycache__/**
-          retention-days: 7
+            atlas_d_simulator_01/contact/y11/
+            !atlas_d_simulator_01/contact/y11/__pycache__/**
+          retention-days: 14
