@@ -8,9 +8,9 @@ def check(name,condition,detail=None):
  report['tests'].append({'name':name,'passed':bool(condition),'detail':detail});assert condition,name
 
 def shot(p,label,view='side'):
- p.evaluate('(v)=>{BAYPLAY.capturePaused=true;STATION03.view(v);SEA06.beforeRender();BAYPLAY.renderer.render(BAYPLAY.scene,BAYPLAY.camera)}',view)
+ p.evaluate('(v)=>{BAYPLAY.capturePaused=true;const s=document.createElement("style");s.id="s03-capture-ui";s.textContent="#helm09,#command-app,#s03-panel{visibility:hidden!important}";document.head.append(s);const c=document.createElement("div");c.id="s03-capture-label";c.textContent="STATION 03 · EMPTY DESIGN PROPOSAL · ACTUAL HOST";c.style.cssText="position:fixed;left:12px;top:12px;z-index:9999;padding:10px;background:#102d38e8;color:white;font:11px system-ui;border-radius:8px";document.body.append(c);STATION03.view(v);SEA06.beforeRender();BAYPLAY.renderer.render(BAYPLAY.scene,BAYPLAY.camera)}',view)
  try:p.screenshot(path=str(OUT/(dev+'_'+label+'.png')),timeout=60000)
- finally:p.evaluate('BAYPLAY.capturePaused=false')
+ finally:p.evaluate('document.getElementById("s03-capture-ui").remove();document.getElementById("s03-capture-label").remove();BAYPLAY.capturePaused=false')
 
 def snap(p,label):
  d=p.evaluate('STATION03.exportPackage()');(OUT/(dev+'_'+label+'.json')).write_text(json.dumps(d,indent=2));return d
@@ -25,7 +25,7 @@ with sync_playwright() as pw:
  try:
   p.goto(URL,wait_until='domcontentloaded');p.wait_for_function('window.S03_READY||window.S03_ERROR',timeout=120000);check('attested empty candidate installed',p.evaluate('!!window.S03_READY'),p.evaluate('window.S03_ERROR||null'))
   check('no human construction, same single lifecycle holder',p.evaluate('S03_EMPTY_HOLDERS===1 && BAYPLAY.boat.getObjectByName("SEA12_CAPTAIN").children.length===0 && !window.C2_READY && !window.C2_FACTORY_BUILDS'))
-  p.wait_for_function('STATION03.inspect().supportGeometryReady');d=snap(p,'down');shot(p,'chair_and_helm');shot(p,'plan','top')
+  p.wait_for_function('STATION03.inspect().supportGeometryReady');p.screenshot(path=str(OUT/(dev+'_controls.png')),timeout=60000);d=snap(p,'down');shot(p,'chair_and_helm');shot(p,'plan','top')
   check('25 authored closed parts and four finite supports',len(d['parts'])==25 and len(d['surfaces'])==4)
   check('immutable source and manifest identity',d['snapshot']['sourceSHA']==os.environ['GITHUB_SHA'] and len(d['snapshot']['manifestSHA256'])==64)
   check('exact SETTLE02 down predicate retained',d['snapshot']['settlement']['downStable'] and not d['snapshot']['settlement']['transitioning'])
@@ -43,11 +43,13 @@ with sync_playwright() as pw:
   p.evaluate('BAYPLAY.model.getObjectByName("PLAY_BOLSTER_1").rotation.z=.01;SEA06.beforeRender()');check('nonzero original evaluated pivot behind zero aggregate rejects',not p.evaluate('STATION03.inspect().supportGeometryReady'));p.evaluate('BAYPLAY.refresh();SEA06.beforeRender()');p.wait_for_function('STATION03.inspect().supportGeometryReady')
   p.evaluate('BAYPLAY.setPaused(false)');p.locator('#helm09-map').click();t0=p.evaluate('BAYPLAY.state.elapsed');p.wait_for_timeout(1000);check('map does not pause actual host',p.evaluate('!BAYPLAY.inspect().paused && BAYPLAY.state.elapsed')>t0);p.locator('#helm09-map').click();p.evaluate('BAYPLAY.setPaused(true)')
   p.evaluate('BAYPLAY.testStep(.2,{steer:.7,rudder:.7});SEA06.beforeRender()');check('original steering drives new wheel',abs(p.evaluate('STATION03.inspect().wheelAngle'))>.1)
+  p.locator('[data-gear09="1"]').click();check('Forward selected before power-lever test',p.evaluate('BAYPLAY.state.gear===1'))
   p.locator('#helm09-throttle').evaluate('(e)=>{e.value=65;e.dispatchEvent(new Event("input",{bubbles:true}))}');p.evaluate('BAYPLAY.refresh();SEA06.beforeRender()');check('original power control drives new closed lever',abs(p.evaluate('STATION03.inspect().throttleAngle'))>.01)
   p.evaluate('BAYPLAY.testStep(.2,{steer:0,rudder:0,throttle:0});BAYPLAY.setPaused(true);SEA06.beforeRender()');shot(p,'operator_view','front')
   check('empty station remains activation-off throughout',not report['humanRequests'] and all(x['humanFactoryEnabled'] is False for x in trace) and p.evaluate('BAYPLAY.boat.getObjectByName("SEA12_CAPTAIN").children.length===0'))
   check('no horizontal viewport overflow',p.evaluate('document.documentElement.scrollWidth')<=w+2)
   p.evaluate('window.__s03holder=STATION03.originalHolder;STATION03.dispose()');check('dispose restores original source assemblies without spawning a human',p.evaluate('!!BAYPLAY.model.getObjectByName("P02_grouped_detail_161_54") && BAYPLAY.model.getObjectByName("PLAY_STEERING").position.x===-1.065000057220459 && BAYPLAY.boat.getObjectByName("SEA12_CAPTAIN").uuid===__s03holder && BAYPLAY.boat.getObjectByName("SEA12_CAPTAIN").children.length===0'))
+  check('all41 original retired source byte buffers restored',p.evaluate('async()=>{const l=await(await fetch("s03-sources.json")).json();for(const r of l.replacements){const n=BAYPLAY.model.getObjectByName(r.runtimeName);if(!n)return false;const g=n.geometry;const pos=g.attributes.position.array,ix=new Uint32Array(g.index.array);if(await CoreStation03.hash(new Uint8Array(pos.buffer,pos.byteOffset,pos.byteLength))!==r.positionSHA256||await CoreStation03.hash(new Uint8Array(ix.buffer))!==r.indexSHA256)return false;}return true;}'))
   check('no application shader or asset errors',not report['errors'] and not report['shaderErrors'] and not report['assetErrors'])
   report['passed']=True
  except Exception as e:
