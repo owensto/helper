@@ -1,0 +1,15 @@
+{
+  "auditedSource": "b84a980b0d86f247f216e1489d1dc4636875c884",
+  "controllerSHA256": "0127ae03c524de171b453fdcc11bc0bb59b0205dab6003c0123018b23f8bf902",
+  "scope": "Three specified audit traces recreated with real Three.js; not the unavailable original20-probe attachment or synthetic math spies.",
+  "before": {
+    "pass": 0,
+    "fail": 3,
+    "exitCode": 1
+  },
+  "after": {
+    "pass": 3,
+    "fail": 0,
+    "exitCode": 0
+  }
+}

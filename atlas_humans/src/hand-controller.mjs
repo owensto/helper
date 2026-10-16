@@ -1,6 +1,38 @@
 import { Vector3, Quaternion } from "three";
 const finiteVector = (a, n) =>
-  Array.isArray(a) && a.length === n && a.every(Number.isFinite);
+  Array.isArray(a) && a.length === n && Array.from(a).every(Number.isFinite);
+// Copy only the complete frame/witness consumed by the controller. Never retain
+// caller-owned arrays as cache validity evidence.
+function surfaceSnapshot(surface) {
+  if (
+    !surface ||
+    !Number.isSafeInteger(surface.triangle) ||
+    surface.triangle < 0 ||
+    !finiteVector(surface.barycentric, 3) ||
+    surface.barycentric.some((v) => v < -1e-10 || v > 1 + 1e-10) ||
+    Math.abs(surface.barycentric.reduce((a, b) => a + b, 0) - 1) > 1e-8 ||
+    !finiteVector(surface.point, 3) ||
+    !finiteVector(surface.normal, 3) ||
+    Math.abs(Math.hypot(...surface.normal) - 1) > 1e-5 ||
+    !finiteVector(surface.quaternion, 4) ||
+    Math.abs(Math.hypot(...surface.quaternion) - 1) > 1e-5
+  )
+    throw new TypeError("HAND_SURFACE_INVALID");
+  return {
+    triangle: surface.triangle,
+    barycentric: [...surface.barycentric],
+    point: [...surface.point],
+    normal: [...surface.normal],
+    quaternion: [...surface.quaternion],
+  };
+}
+const changedVector = (a, b, tolerance = 1e-6) =>
+  a.some((v, i) => Math.abs(v - b[i]) > tolerance);
+const changedRotation = (a, b) => {
+  const qa = new Quaternion(...a).normalize(),
+    qb = new Quaternion(...b).normalize();
+  return 1 - Math.abs(qa.dot(qb)) > 1e-12;
+};
 const V = (a) => new Vector3(...a),
   clamp = (x, a, b) => Math.max(a, Math.min(b, x));
 export class WheelHandController {
@@ -36,6 +68,7 @@ export class WheelHandController {
     this.lastTime = null;
     this.lastFrame = null;
     this.blocked = false;
+    this.evaluatedRigContext = null;
   }
   update({
     time,
@@ -50,6 +83,12 @@ export class WheelHandController {
     closest,
   }) {
     const fail = (reason) => ({ valid: false, reason });
+    const invalidate = (reason) => {
+      this.blocked = true;
+      this.hands = [null, null];
+      this.evaluatedRigContext = null;
+      return fail(reason);
+    };
     if (!valid) {
       this.reset();
       return fail("HAND_CONTEXT_UNAVAILABLE");
@@ -82,27 +121,61 @@ export class WheelHandController {
     if (
       !Array.isArray(shoulders) ||
       shoulders.length !== 2 ||
-      !shoulders.every((p) => finiteVector(p, 3)) ||
+      !Array.from(shoulders).every((p) => finiteVector(p, 3)) ||
       !finiteVector(reaches, 2) ||
       reaches.some((r) => r <= 0) ||
       !Array.isArray(candidates) ||
       typeof sample !== "function" ||
       typeof closest !== "function"
-    )
+    ) {
+      invalidate("HAND_INPUT_INVALID");
       throw new TypeError("HAND_INPUT_INVALID");
+    }
     if (this.lastTime !== null && Math.abs(time - this.lastTime - dt) > 1e-6) {
       this.blocked = true;
       return fail("HAND_DELTA_MISMATCH");
     }
+    const readSurface = (callback) => {
+      try {
+        return surfaceSnapshot(callback());
+      } catch (error) {
+        invalidate("HAND_SURFACE_INVALID");
+        throw error;
+      }
+    };
+    const originalSample = sample,
+      originalClosest = closest;
+    sample = (source) => readSurface(() => originalSample(source));
+    closest = (point) => readSurface(() => originalClosest(point));
+    candidates = Array.from(candidates, (surface) =>
+      readSurface(() => surface),
+    );
     if (this.hands.every(Boolean) && time === this.lastTime) {
+      const current = this.hands.map((h) => sample(h.source));
       if (
+        !this.evaluatedRigContext ||
+        shoulders.some((v, i) =>
+          changedVector(v, this.evaluatedRigContext.shoulders[i]),
+        ) ||
+        changedVector(reaches, this.evaluatedRigContext.reaches) ||
         this.hands.some(
-          (h) =>
-            V(sample(h.source).point).distanceTo(V(h.evaluatedSurface)) > 1e-6,
+          (h, i) =>
+            reaches[i] - V(shoulders[i]).distanceTo(h.point) < 0.001 - 1e-10,
         )
-      ) {
-        this.blocked = true;
-        return fail("PAUSED_SURFACE_MOVED");
+      )
+        return invalidate("PAUSED_RIG_CONTEXT_CHANGED");
+      for (let i = 0; i < this.hands.length; i++) {
+        const previous = this.hands[i].evaluatedSurface,
+          now = current[i];
+        if (V(now.point).distanceTo(V(previous.point)) > 1e-6)
+          return invalidate("PAUSED_SURFACE_MOVED");
+        if (
+          now.triangle !== previous.triangle ||
+          changedVector(now.barycentric, previous.barycentric, 1e-10) ||
+          changedVector(now.normal, previous.normal) ||
+          changedRotation(now.quaternion, previous.quaternion)
+        )
+          return invalidate("PAUSED_SURFACE_FRAME_CHANGED");
       }
       this.lastFrame = frameId;
       return { valid: true, hands: this.output(), repeated: true };
@@ -251,7 +324,7 @@ export class WheelHandController {
         palm = h.point
           .clone()
           .add(this.palmLocal[i].clone().applyQuaternion(h.q));
-      h.evaluatedSurface = [...actual.point];
+      h.evaluatedSurface = surfaceSnapshot(actual);
       h.contactValid =
         h.state !== "reaching" && palm.distanceTo(V(actual.point)) <= 0.003;
       if (!h.contactValid) h.grip = 0;
@@ -266,6 +339,10 @@ export class WheelHandController {
             slack(h.point, i),
         );
     }
+    this.evaluatedRigContext = {
+      shoulders: shoulders.map((v) => [...v]),
+      reaches: [...reaches],
+    };
     return { valid: true, hands: this.output() };
   }
   output() {

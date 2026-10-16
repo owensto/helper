@@ -1,0 +1,24 @@
+{
+  "baseline": "417a3f86656c3e4094453a5dae9476a4e9cdc983",
+  "auditedControllerSource": "b84a980b0d86f247f216e1489d1dc4636875c884",
+  "auditedControllerSHA256": "0127ae03c524de171b453fdcc11bc0bb59b0205dab6003c0123018b23f8bf902",
+  "status": "INPUT_GUARDS_CLOSED_FULL_BODY_CLEARANCE_STILL_FAIL",
+  "files": {
+    "evidence/h7/README.md": "b0ebd2aa4bbf2d3421a9c563a0940a36b04c0a8fe9ad89cbca5315ea06fa27b4",
+    "evidence/h7/after-three-traces.txt": "b4380adb0275342baaa5aaab1b77c3f033014fbd5d77b534ccb7904884aadfca",
+    "evidence/h7/assessment-log.txt": "14ad35b7e3ff50257139d3d39c90212913db91bdecb30a5a55ee72d1daaea117",
+    "evidence/h7/assessment.json": "14ad35b7e3ff50257139d3d39c90212913db91bdecb30a5a55ee72d1daaea117",
+    "evidence/h7/before.txt": "64e2019b872e6886e6fc1a53500a40af30339af368c1ec55e75b8264a7d82bd4",
+    "evidence/h7/motion-sequence.png": "9c8508a5f75483f7329caeae01ed80ec6ae4433e670b4b9d0b8634ea81d55c74",
+    "evidence/h7/motion.json": "2cd3763159a17f30d1a96a7a7ffd803c54d8aecdafddec4eb0ccb16206edca11",
+    "evidence/h7/motion.png": "939d7d97e0f8a23497a011ebea18f72f81ded6287cdfee5a197b284482bafae9",
+    "evidence/h7/motion.webm": "1e889bda0fd2ce469c8c06d24ed42ca7b6586d5fb87d2eeb0cd5c2b8983f5f70",
+    "evidence/h7/reproduction.json": "63be141313eca1d69782dbdf105073042b81ae87b6ea52ff49ea8f29be3cf7ad",
+    "evidence/h7/unit.txt": "99a2a580970e200427376eb9b35f4c508da8436b9199859caa2997270876e916",
+    "src/hand-controller.mjs": "0899086161c4bdb1d73adf004d27e98afd61f0e9ba7dbdddc86afaf03feac8b5",
+    "tests/h7-paused-input.test.mjs": "a4b25abbda66b6d8beb88367e77dc3c888ae4c447ef743718c8aaadbc959807e",
+    "tools/h7-assess.py": "638a604003007a143aaa3ef9266687a3852e0afe04d9fcae0512c002fc40696c",
+    "tools/h7-browser.mjs": "be3e80bfcd7aef6d1aaf7bc8b0b10129ff366d8982cc37fa2dd56902fa0af9c6",
+    "tools/h7-reproduce.mjs": "b8af31130436287f679ee12b87a4a37a6be6ea83eec7253329d777ef73d725a1"
+  }
+}
