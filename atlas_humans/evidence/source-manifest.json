@@ -1,0 +1,14 @@
+{
+  "src/locomotion.mjs": "282417ec964f73c2710b553aaf6ff371cd44b04b6303051793f03d3a3c861541",
+  "src/captain12-adapter.mjs": "8b8a13dd7b2e3f83e1544fad5aecb921c1a5fc3b87dee8b27750c779b7cc6eac",
+  "src/rig.mjs": "337e9aed7d3f6d3fd77a7ded27b7b9ef6dbfb9af64306cb3777dac48c5fe670b",
+  "src/character-state.mjs": "627839c1d5b4751040d8415583f66cf45d7b4cd94db0885d6d92c17b2f59e246",
+  "src/contact.mjs": "0e3ab387a8fc350d8f8c27bca80c9799cecad03cb5917ae1d33c74ce365169de",
+  "src/ik.mjs": "c52d8bf15e8c6613915547c31179e8058b6afae074b733b20f3ed5fc448a9b3d",
+  "src/demo.mjs": "77cfa5a57ff09f6a3f01ad6214d56400650d4f2021ba9382a3ada26a9df98ddf",
+  "assets/provenance.json": "b346210f4dd516bcf0a2baff4c55db7cefbb4cd9f9ae487d2fb2b67a4c1e655f",
+  "assets/animations.json": "b0f10003c14416330d30c41fe26d7ec86bc34e3b39ca9bd91ca78a54db415b94",
+  "assets/SOURCE.md": "dc9aa23176c301ce94175a6cb16856d0ade3af7545160af98374fd13bdebc493",
+  "assets/RocketboxCaptain.glb": "e80b6e82ac31c3bfb1134952e0bcb9b840fedc26b71dc90e9b387ae8cd28ecd3",
+  "assets/ROCKETBOX-LICENSE.md": "17474e386e0b9e1a700cc3d06b2b0882a2c376d9c6b49c7f8274409b8f8d2352"
+}

@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+  <meta charset="utf-8" /><meta
+    name="viewport"
+    content="width=device-width,initial-scale=1"
+  /><title>ATLAS Human contact lab</title
+  ><style>
+    body {
+      margin: 0;
+      background: #183d4b;
+      color: #f2f4ef;
+      font: 15px system-ui;
+    }
+    canvas {
+      display: block;
+    }
+    header {
+      position: absolute;
+      top: 22px;
+      left: 24px;
+      max-width: 410px;
+    }
+    h1 {
+      font-size: 25px;
+    }
+    p {
+      line-height: 1.5;
+      color: #c5d6d7;
+    }
+    .panel {
+      position: absolute;
+      bottom: 24px;
+      left: 24px;
+      background: #102832e8;
+      border: 1px solid #5e7c80;
+      padding: 16px;
+      border-radius: 12px;
+    }
+    button {
+      font: inherit;
+      color: white;
+      background: #2b515c;
+      padding: 10px;
+      border: 1px solid #708e90;
+      border-radius: 6px;
+      margin: 3px;
+    }
+    output {
+      display: block;
+      font: 12px monospace;
+      white-space: pre-line;
+      margin: 10px;
+    }
+    a {
+      color: #a5dcce;
+    }
+    @media (max-width: 600px) {
+      header {
+        top: 12px;
+        left: 16px;
+        max-width: calc(100% - 32px);
+      }
+      h1 {
+        font-size: 20px;
+        margin: 6px 0;
+      }
+      header p {
+        font-size: 12px;
+        max-width: 300px;
+      }
+      .panel {
+        bottom: 12px;
+        left: 12px;
+        right: 12px;
+        padding: 8px;
+      }
+      button {
+        font-size: 12px;
+        padding: 7px;
+      }
+      output {
+        font-size: 11px;
+        margin: 5px;
+      }
+    }
+  </style>
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "./node_modules/three/build/three.module.js",
+        "three/addons/": "./node_modules/three/examples/jsm/"
+      }
+    }
+  </script>
+  <header>
+    <small>ATLAS / ISOLATED CHARACTER WORKSTREAM</small>
+    <h1>Human contact lab</h1>
+    <p>
+      Rigged helm contact on a moving deck. Authored test motion. MIT-licensed
+      Rocketbox adult rig. Character motion is a tested approximation, not
+      validated biomechanics.
+    </p>
+    <p id="error"></p>
+  </header>
+  <div class="panel">
+    <div>
+      <button id="helm">Seated helm</button
+      ><button id="idle">Standing idle</button
+      ><button id="walk">Walk deck</button>
+    </div>
+    <button id="calm">Calm</button><button id="rough">Roll / pitch</button
+    ><button id="maneuver">Accelerate / brake / turn</button
+    ><button id="pause">Pause</button><output id="metrics">Loading…</output
+    ><small
+      >Drag to orbit · <a href="assets/SOURCE.md">Asset attribution</a></small
+    >
+  </div>
+  <script type="module" src="src/demo.mjs"></script>
+</html>

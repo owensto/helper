@@ -1,0 +1,155 @@
+{
+  "assetBytes": 3211304,
+  "runtime": "153.0.8010.12",
+  "timestamp": "2026-10-16T04:43:06.699Z",
+  "scenarios": [
+    {
+      "mode": "calm",
+      "activity": "helm",
+      "frames": 481,
+      "simulatedSeconds": 7.999700000000022,
+      "maxContactErrorM": 0.0000013846475093145947,
+      "updateP95Ms": 0.29999999701976776,
+      "updateMaxMs": 2.5,
+      "drawCalls": 10,
+      "triangles": 8654,
+      "motionChanged": true,
+      "soleY": {
+        "min": 0.009906080055552467,
+        "max": 0.12568577905873646,
+        "count": 406
+      }
+    },
+    {
+      "mode": "rough",
+      "activity": "helm",
+      "frames": 481,
+      "simulatedSeconds": 7.999699999999891,
+      "maxContactErrorM": 0.0000014155317419942321,
+      "updateP95Ms": 0.20000000298023224,
+      "updateMaxMs": 0.5,
+      "drawCalls": 10,
+      "triangles": 8654,
+      "motionChanged": true,
+      "soleY": {
+        "min": 0.009906303701300233,
+        "max": 0.12560854385682105,
+        "count": 406
+      }
+    },
+    {
+      "mode": "maneuver",
+      "activity": "helm",
+      "frames": 481,
+      "simulatedSeconds": 7.999699999999791,
+      "maxContactErrorM": 0.0000014601797598681577,
+      "updateP95Ms": 0.20000000298023224,
+      "updateMaxMs": 0.8999999910593033,
+      "drawCalls": 10,
+      "triangles": 8654,
+      "motionChanged": true,
+      "soleY": {
+        "min": 0.009905925457391804,
+        "max": 0.1256851919990094,
+        "count": 406
+      }
+    },
+    {
+      "mode": "rough",
+      "activity": "idle",
+      "frames": 481,
+      "simulatedSeconds": 7.999699999999912,
+      "maxContactErrorM": 0.0000015746180793109297,
+      "updateP95Ms": 0.20000000298023224,
+      "updateMaxMs": 1.1000000089406967,
+      "drawCalls": 10,
+      "triangles": 8654,
+      "motionChanged": true,
+      "soleY": {
+        "min": 0.0019062266637862035,
+        "max": 0.11372885551038645,
+        "count": 406
+      }
+    },
+    {
+      "mode": "rough",
+      "activity": "walk",
+      "frames": 481,
+      "simulatedSeconds": 7.999600000000477,
+      "maxContactErrorM": 0.00000162416756401308,
+      "updateP95Ms": 0.20000000298023224,
+      "updateMaxMs": 2.8999999910593033,
+      "drawCalls": 10,
+      "triangles": 8654,
+      "motionChanged": true,
+      "soleY": {
+        "min": 0.0019054858795568598,
+        "max": 0.11372863676199275,
+        "count": 406
+      }
+    }
+  ],
+  "errors": [],
+  "pauseStable": true,
+  "budget": [
+    {
+      "characterEnabled": false,
+      "updateP95Ms": 0.09999999403953552,
+      "renderSubmitP95Ms": 0.29999999701976776,
+      "drawCalls": 7,
+      "triangles": 1214
+    },
+    {
+      "characterEnabled": true,
+      "updateP95Ms": 0.20000000298023224,
+      "renderSubmitP95Ms": 0.30000001192092896,
+      "drawCalls": 10,
+      "triangles": 8654
+    }
+  ],
+  "phone": {
+    "viewport": "390x844",
+    "errors": [],
+    "state": {
+      "contactErrorM": 1.6883615766942147e-7,
+      "errors": [
+        1.6883615766942147e-7,
+        8.470642727369252e-8,
+        6.616870373079694e-8,
+        1.6356940293360488e-7
+      ],
+      "updateMs": 0.20000000298023224,
+      "renderSubmitMs": 0.29999999701976776,
+      "drawCalls": 10,
+      "triangles": 8654,
+      "lean": [
+        -0.004959020723259827,
+        0.08935062519201367
+      ],
+      "activity": "helm",
+      "localPosition": [
+        0,
+        0.65,
+        0
+      ],
+      "feet": [
+        [
+          0.42,
+          0.11,
+          -0.13
+        ],
+        [
+          0.42,
+          0.11,
+          0.13
+        ]
+      ],
+      "time": 49.16460000000059,
+      "mode": "rough",
+      "paused": false,
+      "frames": 600
+    }
+  },
+  "video": "full-motion.webm",
+  "passed": true
+}
