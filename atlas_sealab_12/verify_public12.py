@@ -32,8 +32,8 @@ with sync_playwright() as pw:
    r['targets']=p.evaluate('''ids=>ids.map(id=>{const r=document.getElementById(id).getBoundingClientRect();return {id,x:r.x,y:r.y,w:r.width,h:r.height,hit:document.elementFromPoint(r.x+r.width/2,r.y+r.height/2)?.closest('button')?.id===id}})''',ids)
    for q in r['targets']:assert q['hit'] and q['w']>=32 and q['h']>=44 and q['x']>=0 and q['y']>=0 and q['x']+q['w']<=w+1 and q['y']+q['h']<=h+1,q
    p.locator('#s11-more').click();assert p.evaluate('BAYPLAY.state.throttle>.09');p.locator('#s11-less').click();assert p.evaluate('BAYPLAY.state.throttle<.01')
-   p.locator('#helm09-settings').click();p.locator('#s12-captainview').click();p.wait_for_timeout(250);shot(p,dev+'_public_captain.png');assert p.evaluate('BAYPLAY.boat.getObjectByName("SEA12_CAPTAIN").visible')
-   p.locator('[data-view09="helm"]').click();p.evaluate('BAYPLAY.setPaused(false)');p.locator('#helm09-map').click();p.wait_for_timeout(400);assert not p.evaluate('BAYPLAY.inspect().paused'),'Opening map paused trip'
+   p.locator('#helm09-settings').click();p.locator('#s12-captain-view').click();p.wait_for_timeout(250);shot(p,dev+'_public_captain.png');assert p.evaluate('BAYPLAY.boat.getObjectByName("SEA12_CAPTAIN").visible')
+   p.evaluate('SEA09.view("helm");BAYPLAY.setPaused(false)');p.locator('#helm09-map').click();p.wait_for_timeout(400);assert not p.evaluate('BAYPLAY.inspect().paused'),'Opening map paused trip'
    r['mapTargets']=p.evaluate('''() => ['helm09-key','s11-more'].map(id=>{const r=document.getElementById(id).getBoundingClientRect();return {id,hit:document.elementFromPoint(r.x+r.width/2,r.y+r.height/2)?.closest('button')?.id===id}})''');assert all(q['hit'] for q in r['mapTargets'])
    t=p.evaluate('BAYPLAY.state.elapsed');p.wait_for_timeout(900);assert p.evaluate('BAYPLAY.state.elapsed')>t;r['liveMapNoPause']=True;shot(p,dev+'_public_live_map.png');p.locator('#helm09-mapclose').click();p.evaluate('BAYPLAY.setPaused(true)')
    if dev=='desktop':
