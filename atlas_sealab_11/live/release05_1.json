@@ -1,0 +1,27 @@
+{
+  "release": "05.1",
+  "approved_model_sha256": "4456a7e157a19e550be0b270cf9649035ec6c17c77badfcad44789fb64ca26e1",
+  "native_boat_mesh_unchanged": true,
+  "retired_static_screen_overlay": "EX_Console__top_underside",
+  "source_candidate_run": 38660648623,
+  "source_candidate_artifact": 11938184435,
+  "frame_time_limit_seconds": 2,
+  "oversized_stalls_pause": true,
+  "under_1ft_draft_established": false,
+  "custom_rigs_validated": false,
+  "specific_engine_sound": false,
+  "google_activated": false,
+  "changes": [
+    "Reference-informed resistance from reviewed 05 replaces 04.2 custom resistance",
+    "Recorded CC0 outboard sound layered with load/RPM synthesis, spatial twin voices",
+    "Readable knot speed HUD and test graph",
+    "Live chart with heading/course, target bearing/distance/ETA",
+    "Depth history sampled in fixed simulation steps; scroll and range controls",
+    "Separate live engine-monitor page",
+    "Retired static line overlays obscuring real cockpit screens",
+    "Persistent on-screen speed, optional pure cockpit view",
+    "Neutral coasting retained; no instant brake",
+    "Consistent wake density across render rates",
+    "Low-rate time handling corrected; severe stalls pause instead of silently losing time"
+  ]
+}

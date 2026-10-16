@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "tests": [
+    {
+      "name": "Six identical-source wave components",
+      "passed": true
+    },
+    {
+      "name": "Analytic wave slopes agree with finite differences",
+      "passed": true
+    },
+    {
+      "name": "Calm amplitude has a flat zero-amplitude limit",
+      "passed": true
+    },
+    {
+      "name": "Wave amplitude remains bounded",
+      "passed": true
+    },
+    {
+      "name": "Production buoyancy samples shared wave function",
+      "passed": true
+    },
+    {
+      "name": "Boat wave response finite through all sea states",
+      "passed": true
+    }
+  ]
+}

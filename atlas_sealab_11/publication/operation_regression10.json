@@ -1,0 +1,74 @@
+{
+  "passed": true,
+  "tests": [
+    {
+      "name": "continuous_collision_no_tunneling",
+      "passed": true,
+      "closing": 100,
+      "centerX": -4.4035,
+      "afterVx": -4
+    },
+    {
+      "name": "tangent_momentum_preserved",
+      "passed": true,
+      "closing": 10,
+      "tangentVelocity": 12
+    },
+    {
+      "name": "glancing_less_than_head_on",
+      "passed": true
+    },
+    {
+      "name": "separation_not_glued_to_dock",
+      "passed": true
+    },
+    {
+      "name": "easter_eggs_off_by_default",
+      "passed": true,
+      "damage": 100,
+      "explode": false,
+      "eject": false
+    },
+    {
+      "name": "graphics_cannot_enable_easter_eggs",
+      "passed": true
+    },
+    {
+      "name": "independent_effect_toggles",
+      "passed": true
+    },
+    {
+      "name": "no_explosion_on_soft_bottom",
+      "passed": true
+    },
+    {
+      "name": "reverse_hit_does_not_eject_through_bow",
+      "passed": true
+    },
+    {
+      "name": "weather_transitions_gradually",
+      "passed": true,
+      "waveAmplitude": 0.5599983901244696,
+      "rain": 0.9999962991367116
+    },
+    {
+      "name": "weather_presets_finite",
+      "passed": true
+    },
+    {
+      "name": "damage_prevents_engine_start",
+      "passed": true
+    },
+    {
+      "name": "fuel_empty_prevents_start",
+      "passed": true
+    },
+    {
+      "name": "real_model_hits_existing_marina_dock",
+      "passed": true,
+      "closing": 21.542254236818152,
+      "deltaV": 22.40394440629088
+    }
+  ],
+  "structurallyValidated": false
+}

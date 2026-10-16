@@ -1,0 +1,82 @@
+/* A calm, readable mobile-first helm. Controls are at least 48 px high. */
+#helm09.coastal11{--ink:#eaf2ee;--muted:#b5ccc9;--panel:#102b35f5;--line:#92b7b44a;--accent:#c5e6cf;font-family:ui-sans-serif,system-ui,-apple-system,sans-serif;color:var(--ink)}
+#helm09.coastal11 button{min-height:48px;font-size:15px;line-height:1.2;border-radius:12px;padding:12px 16px;border-color:var(--line);background:#173a46;color:var(--ink);touch-action:manipulation;-webkit-tap-highlight-color:transparent;font-weight:550}
+#helm09.coastal11 button.active,#helm09.coastal11 button[aria-pressed=true],#helm09.coastal11 .h09-primary{background:var(--accent);color:#143c37;border-color:#d1eddb}
+#helm09.coastal11 button:focus-visible,#helm09.coastal11 input:focus-visible,#helm09.coastal11 select:focus-visible{outline:3px solid #f3cf81;outline-offset:3px}
+#helm09.coastal11 .h09-top{top:12px;left:16px;right:16px;padding:10px 14px;background:var(--panel);gap:18px;border-radius:18px;display:flex;flex-wrap:nowrap}
+#helm09.coastal11 .h09-brand{font-size:22px;min-width:172px}#helm09.coastal11 .h09-brand span{font-size:10px;letter-spacing:.12em;color:var(--muted)}
+#helm09.coastal11 .h09-top nav button{font-size:14px;padding:12px;min-width:0}
+#helm09.coastal11 .h09-tools{gap:6px;margin-left:auto}#helm09.coastal11 .h09-views{gap:6px}#helm09.coastal11 #helm09-pause{min-width:78px;font-size:15px}
+#helm09.coastal11 #helm09-readouts{top:104px;left:20px;padding:13px 18px;background:var(--panel);gap:22px;border-radius:16px}
+#helm09.coastal11 #helm09-readouts small{font-size:12px;color:var(--muted)}#helm09.coastal11 .h09-depth>span,#helm09.coastal11 .h09-heading>span{font-size:11px;letter-spacing:.04em;color:var(--muted)}#helm09.coastal11 .h09-speed strong{font-size:36px}#helm09.coastal11 .h09-speed>span{font-size:14px}
+#helm09.coastal11 .h09-dock{bottom:44px;width:min(1130px,calc(100vw - 32px));max-width:none;padding:14px 18px;gap:16px;display:grid;grid-template-columns:164px 245px 1fr 1fr;border-radius:20px;background:var(--panel)}
+#helm09.coastal11 .h09-key{min-width:0;min-height:60px;font-size:15px}#helm09.coastal11 .h09-key small{font-size:12px;letter-spacing:0}
+#helm09.coastal11 .h09-gears{gap:5px}#helm09.coastal11 .h09-gears button{padding:12px 9px;min-width:0;min-height:56px;font-size:14px;flex:1}
+#helm09.coastal11 .h09-dock label{font-size:13px;letter-spacing:.04em;min-width:0;color:var(--muted);margin:0}#helm09.coastal11 .h09-dock input{height:42px;margin:0;min-width:20px;width:100%}
+#helm09.coastal11 .s11-throttle-row{display:flex;align-items:center;gap:8px}#helm09.coastal11 .s11-throttle-row button{min-width:48px;padding:6px;font-size:24px;flex-shrink:0}
+#helm09.coastal11 .s11-steer-row{display:flex;gap:6px;align-items:center;margin-top:4px}#helm09.coastal11 .s11-steer-row button{flex:1;font-size:13px;padding:10px 6px;white-space:nowrap}
+#helm09.coastal11 #helm09-steer,#helm09.coastal11 #helm09-center,#helm09.coastal11 #helm09-mute{display:none}
+#helm09.coastal11 .s11-quick{grid-column:1/-1;display:flex;gap:10px;justify-content:center}#helm09.coastal11 .s11-quick button{min-height:44px;padding:8px 15px;font-size:13px;background:#234751}
+#helm09.coastal11 .h09-help{display:none}#helm09.coastal11 #s11-notice{position:absolute;bottom:11px;left:20px;right:20px;text-align:center;font-size:13px;color:#e4f1e9;background:#11353cd9;width:fit-content;max-width:calc(100vw - 40px);margin:auto;border-radius:8px;padding:5px 14px}
+#helm09.coastal11 .h09-panel{top:104px;right:16px;left:auto;width:400px;max-height:calc(100dvh - 328px);background:var(--panel);border-radius:18px;z-index:9}
+#helm09.coastal11 .h09-panelhead{position:sticky;top:0;background:#102b35;z-index:2;padding:12px 16px}#helm09.coastal11 .h09-panelhead h2{font-size:20px;font-weight:650}#helm09.coastal11 .h09-panelhead button{font-size:15px;min-width:66px;min-height:48px;border:1px solid var(--line);padding:10px 12px}
+#helm09.coastal11 #helm09-panelbody{padding:0 18px 20px}#helm09.coastal11 #helm09-panelbody p,#helm09.coastal11 .h09-field{font-size:15px;line-height:1.55;color:var(--muted)}#helm09.coastal11 #helm09-panelbody h3{font-size:18px;color:var(--ink)}#helm09.coastal11 #helm09-panelbody small,#helm09.coastal11 .s10-toggle small{font-size:13px;line-height:1.4;color:var(--muted)}
+#helm09.coastal11 .s10-toggle,#helm09.coastal11 .s11-option{font-size:15px;padding:16px 0;display:flex;align-items:center;justify-content:space-between;gap:15px;border-bottom:1px solid var(--line)}
+#helm09.coastal11 .s11-option small{display:block;margin-top:5px}#helm09.coastal11 input[type=checkbox]{width:28px;height:28px;flex:0 0 28px;accent-color:#c5e6cf;margin:10px}
+#helm09.coastal11 select,#helm09.coastal11 input[type=url]{font-size:16px;min-height:50px;line-height:1.3}#helm09.coastal11 input[type=range]{height:44px;accent-color:#c5e6cf;touch-action:pan-y}
+#helm09.coastal11 input[type=range]::-webkit-slider-thumb{width:28px;height:28px}#helm09.coastal11 .s10-extras summary{font-size:16px;min-height:44px;display:flex;align-items:center}
+#helm09.coastal11 .s11-fittings>div{display:grid;grid-template-columns:1fr 70px;gap:8px;margin:10px 0}#helm09.coastal11 .s11-fittings [data-act09]{text-align:left;display:block}#helm09.coastal11 .s11-fittings small{display:block;font-size:12px;margin-top:3px}
+#helm09.coastal11 .s11-place{display:block;width:100%;text-align:left;margin:12px 0;font-size:17px}#helm09.coastal11 .s11-place small{display:block;margin-top:6px;font-size:14px;color:var(--muted)}
+#helm09.coastal11 .s11-steps p{border-bottom:1px solid var(--line);padding-bottom:15px}#helm09.coastal11 .s11-steps b{display:block;color:var(--ink);margin-bottom:5px}
+#helm09.coastal11 #helm09-mapcard{top:212px;left:20px;width:385px;max-height:calc(100dvh - 440px);overflow:auto;z-index:8}#helm09.coastal11 #helm09-mapnote{font-size:12px;line-height:1.4;padding:10px 14px}#helm09.coastal11 .h09-mapcontrols{flex-wrap:wrap}#helm09.coastal11 .h09-mapcontrols button{font-size:14px;min-height:48px}#helm09.coastal11 .h09-mapcontrols small{font-size:12px}
+#helm09.coastal11 #sea10-condition{top:198px;font-size:11px;left:21px}#helm09.coastal11 #helm09-alert{top:238px;font-size:14px}#helm09.coastal11 #sea10-incident{top:280px}#helm09.coastal11 #sea10-performance{bottom:230px;z-index:11}
+#helm09.coastal11 #helm09-youtube{bottom:250px;z-index:12}#helm09.coastal11 #helm09-ytstatus{font-size:13px}
+#s11-hotspots{position:absolute;inset:0;pointer-events:none}#helm09 #s11-hotspots button{position:absolute;transform:translate(-50%,-50%);font-size:13px;min-height:44px;padding:9px 12px;background:#f1e4bff2;color:#223e3f;border-color:#fff8df;box-shadow:0 3px 18px #142f4355}
+#helm09.coastal11.s11-large{--muted:#ccded9}#helm09.coastal11.s11-large button{font-size:17px}#helm09.coastal11.s11-large #helm09-panelbody p,#helm09.coastal11.s11-large .s11-option{font-size:18px}
+@media(max-width:1250px) and (min-width:901px){#helm09.coastal11 .h09-brand{min-width:130px}.coastal11 #s11-help{display:none}#helm09.coastal11 .h09-top{gap:9px}#helm09.coastal11 .h09-top nav button{font-size:13px;padding:9px}#helm09.coastal11 .h09-dock{grid-template-columns:140px 225px 1fr 1fr;gap:9px}}
+@media(max-width:900px){
+#helm09.coastal11{--safe:env(safe-area-inset-bottom,0px);--bottom:calc(302px + var(--safe))}
+#helm09.coastal11 .h09-top{top:8px;left:8px;right:8px;padding:8px 12px;display:flex;justify-content:space-between;gap:12px;border-radius:16px}
+#helm09.coastal11 .h09-brand{min-width:0;font-size:20px}#helm09.coastal11 .h09-brand span{font-size:9px}#helm09.coastal11 #helm09-pause{min-height:48px;font-size:15px;flex:0 0 auto}
+#helm09.coastal11 .h09-top .h09-tools{position:fixed;top:auto;bottom:0;left:0;right:0;display:flex;gap:3px;width:100%;margin:0;padding:8px 8px calc(8px + var(--safe));background:#0b2531f7;border-top:1px solid var(--line);border-radius:0;z-index:12;box-sizing:border-box;justify-content:space-between}
+#helm09.coastal11 .h09-top .h09-tools button{flex:1;min-height:50px;min-width:0;padding:9px 5px;font-size:13px!important;border-radius:12px}
+#helm09.coastal11 .h09-views{position:fixed;top:172px;left:8px;right:8px;display:flex;gap:5px;width:auto;justify-content:center;background:transparent;margin:0}
+#helm09.coastal11 .h09-views button{font-size:12px!important;min-height:44px;padding:8px 9px;flex:1;background:#143642e8}
+#helm09.coastal11 #s11-help{font-size:12px!important}
+#helm09.coastal11 #helm09-readouts{top:86px;left:8px;right:8px;width:auto;min-height:72px;padding:10px 12px;gap:10px;justify-content:space-between;border-radius:14px}
+#helm09.coastal11 .h09-speed{min-width:0}#helm09.coastal11 .h09-speed strong{font-size:30px}#helm09.coastal11 .h09-speed>span{font-size:11px;margin-left:4px}#helm09.coastal11 #helm09-readouts small{font-size:11px}
+#helm09.coastal11 .h09-depth>span,#helm09.coastal11 .h09-heading>span{font-size:10px;letter-spacing:0}#helm09.coastal11 .h09-depth strong,#helm09.coastal11 .h09-heading strong{font-size:22px}#helm09.coastal11 .h09-depth,#helm09.coastal11 .h09-heading{padding-left:10px;min-width:0}
+#helm09.coastal11 .h09-dock{bottom:calc(69px + var(--safe));left:8px;right:8px;transform:none;width:auto;max-width:none;display:grid;grid-template-columns:1fr 1fr;padding:11px;gap:9px 10px;border-radius:18px}
+#helm09.coastal11 .h09-key{grid-column:1;min-width:0;min-height:52px;padding:9px;gap:6px;font-size:14px}#helm09.coastal11 .h09-key svg{width:23px;height:23px}#helm09.coastal11 .h09-key small{font-size:11px}
+#helm09.coastal11 .h09-gears{grid-column:2;gap:4px}#helm09.coastal11 .h09-gears button{font-size:11px;padding:8px 3px;min-height:52px;min-width:0}
+#helm09.coastal11 .h09-dock label{font-size:12px}#helm09.coastal11 .s11-throttle-row{gap:4px}#helm09.coastal11 .s11-throttle-row button{min-width:44px;min-height:48px;font-size:23px}
+#helm09.coastal11 .s11-steer-row{gap:3px}#helm09.coastal11 .s11-steer-row button{min-height:48px;padding:8px 2px;font-size:11px}
+#helm09.coastal11 .s11-quick{gap:5px;justify-content:space-between}#helm09.coastal11 .s11-quick button{flex:1;min-height:44px;padding:8px 5px;font-size:11px;white-space:normal}
+#helm09.coastal11 #s11-notice{bottom:var(--bottom);font-size:12px;padding:6px 10px;max-width:calc(100vw - 20px);left:10px;right:10px;max-height:60px;overflow:hidden}
+#helm09.coastal11 #sea10-condition{display:none}#helm09.coastal11 #helm09-alert{top:222px;left:8px;right:8px;font-size:12px;padding:10px;transform:none}
+#helm09.coastal11 #sea10-incident{top:270px;z-index:14}#helm09.coastal11 #sea10-performance{bottom:var(--bottom);font-size:13px;z-index:14}
+#helm09.coastal11 .h09-panel{top:85px;bottom:calc(69px + var(--safe));left:8px;right:8px;width:auto;max-height:none;z-index:13;border-radius:18px}
+#helm09.coastal11.s11-panel-open .h09-dock{visibility:hidden}#helm09.coastal11.s11-panel-open #s11-notice{display:none}
+#helm09.coastal11 #helm09-mapcard{top:85px;bottom:calc(69px + var(--safe));left:8px;right:8px;width:auto;max-height:none;z-index:14;overflow-y:auto}#helm09.coastal11 #helm09-mapcanvas{max-height:none;height:auto;object-fit:contain}
+#helm09.coastal11 #helm09-youtube{top:90px;left:8px;right:8px;bottom:auto;z-index:16}#helm09.coastal11 #helm09-youtube iframe{min-height:220px;height:220px}
+#helm09.coastal11 .h09-panelhead h2{font-size:20px}#helm09.coastal11 #helm09-panelbody p{font-size:16px}#helm09.coastal11 #helm09-panelbody small{font-size:13px}
+#helm09.coastal11.s11-large .h09-panelhead h2{font-size:22px}#helm09.coastal11.s11-large .h09-key,#helm09.coastal11.s11-large .h09-gears button{font-size:13px}
+}
+@media(max-width:390px){#helm09.coastal11 .h09-heading{display:none}#helm09.coastal11 .h09-key svg{display:none}#helm09.coastal11 .h09-dock{grid-template-columns:.9fr 1.1fr}#helm09.coastal11 .h09-tools button{font-size:12px!important}#helm09.coastal11 .s11-quick button{font-size:10px}}
+@media(max-height:560px) and (max-width:1000px){
+#helm09.coastal11 .h09-top{left:8px;right:8px;top:6px;min-height:48px;padding:4px 10px}#helm09.coastal11 .h09-top .h09-tools{position:fixed;left:8px;right:292px;bottom:8px;width:auto;padding:4px;display:flex;border:0;border-radius:12px}#helm09.coastal11 .h09-top .h09-tools button{font-size:11px!important;min-height:44px}
+#helm09.coastal11 .h09-top .h09-views{display:none}#helm09.coastal11 #helm09-readouts{top:74px;left:8px;right:300px;padding:8px;gap:8px}#helm09.coastal11 .h09-heading{display:none}#helm09.coastal11 #helm09-readouts small{font-size:10px}
+#helm09.coastal11 .h09-dock{top:74px;bottom:auto;left:auto;right:8px;width:275px;padding:10px;gap:8px;transform:none;display:grid;grid-template-columns:1fr 1fr}#helm09.coastal11 .h09-key{grid-column:1/-1;min-height:48px}#helm09.coastal11 .h09-key svg{display:none}#helm09.coastal11 .h09-gears{grid-column:1/-1}#helm09.coastal11 .h09-gears button{min-height:44px;font-size:13px}#helm09.coastal11 .s11-quick{display:none}#helm09.coastal11 .s11-steer-row button{font-size:10px}#helm09.coastal11 .s11-throttle-row button{min-width:36px}
+#helm09.coastal11 .h09-panel,#helm09.coastal11 #helm09-mapcard{top:68px;bottom:8px;left:30%;right:8px;width:auto;max-height:none}#helm09.coastal11 #s11-notice{display:none}#helm09.coastal11 #helm09-alert{top:162px;left:8px;right:295px}#helm09.coastal11 #sea10-condition{display:none}}
+@media(prefers-reduced-motion:reduce){#helm09.coastal11 *{animation:none!important;transition:none!important}}
+
+/* Full-width thumb rows prioritize readable labels over more buttons in a row. */
+@media(max-width:900px) and (min-height:561px){
+#helm09.coastal11{--bottom:calc(360px + var(--safe))}
+#helm09.coastal11 .h09-dock{grid-template-columns:.85fr 1.15fr}
+#helm09.coastal11 .h09-throttle,#helm09.coastal11 .h09-steering{grid-column:1/-1}
+#helm09.coastal11 .h09-dock label{font-size:14px}
+#helm09.coastal11 .h09-gears button{font-size:13px}
+#helm09.coastal11 .s11-steer-row button{font-size:15px;padding:10px 8px}
+#helm09.coastal11 .s11-quick button{font-size:12px}
+}
