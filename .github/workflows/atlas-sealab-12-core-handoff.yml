@@ -1,0 +1,69 @@
+name: ATLAS Sea Lab 12 CORE C1 boundary
+on:
+  push:
+    branches: ['atlas/core-sealab12-handoff-c1-20261016']
+    paths: ['atlas_sealab_12/integration/c1/**','.github/workflows/atlas-sealab-12-core-handoff.yml']
+permissions:
+  contents: read
+concurrency:
+  group: atlas-core12-c1-boundary
+  cancel-in-progress: true
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 18
+    strategy:
+      fail-fast: false
+      matrix:
+        device: [desktop, phone]
+    env:
+      TEST_DEVICE: ${{ matrix.device }}
+      C1_OUT: /tmp/core12-c1
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Require isolated reservation and exact published host
+        run: |
+          git fetch --no-tags --depth=1 origin a2d4eecc12e7b4db14c7f94a6f6fc5088a4061ff
+          mkdir -p "$C1_OUT/review"
+          git diff --name-only a2d4eecc12e7b4db14c7f94a6f6fc5088a4061ff HEAD > "$C1_OUT/review/changed-files.txt"
+          python - <<'PY'
+          from pathlib import Path
+          allowed={'descriptor.json','host-hooks.js','HANDOFF.md','prepare.py','test-contract.cjs','verify.py'}
+          for name in Path('/tmp/core12-c1/review/changed-files.txt').read_text().splitlines():
+              if name=='.github/workflows/atlas-sealab-12-core-handoff.yml':continue
+              prefix='atlas_sealab_12/integration/c1/'
+              assert name.startswith(prefix),name
+              suffix=name[len(prefix):]
+              assert suffix in allowed or suffix.startswith('evidence/'),name
+          PY
+          node --check atlas_sealab_12/integration/c1/host-hooks.js
+          node atlas_sealab_12/integration/c1/test-contract.cjs > "$C1_OUT/review/contract-tests.json"
+          python atlas_sealab_12/integration/c1/prepare.py
+          python -m py_compile atlas_sealab_12/integration/c1/verify.py
+      - name: Operate the real host and validate only its C1 boundary
+        run: |
+          python -m pip install -q playwright==1.55.0
+          python -m playwright install --with-deps chromium >/dev/null
+          python -m http.server 8913 --bind 127.0.0.1 --directory "$C1_OUT/site" >"$C1_OUT/review/http.log" 2>&1 &
+          sleep 2
+          BASE_URL=http://127.0.0.1:8913/index.html python atlas_sealab_12/integration/c1/verify.py
+      - name: Retain exact handoff source for receivers
+        if: always()
+        run: |
+          mkdir -p "$C1_OUT/source"
+          cp atlas_sealab_12/integration/c1/*.{json,js,cjs,py,md} "$C1_OUT/source/"
+          cp .github/workflows/atlas-sealab-12-core-handoff.yml "$C1_OUT/source/"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ATLAS-Core12-C1-${{ matrix.device }}
+          path: |
+            /tmp/core12-c1/build.json
+            /tmp/core12-c1/review/
+            /tmp/core12-c1/source/
+          retention-days: 30
