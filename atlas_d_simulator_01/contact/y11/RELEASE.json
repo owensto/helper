@@ -1,0 +1,14 @@
+{
+  "status": "Exact public assets and actual desktop/portrait/landscape operation verified",
+  "sourceCommit": "013e4a0fe2cac60fe16817cd1d8e52f0bcfde1d5",
+  "publishedCommit": "006644dae913c9bc6f874cdaaaba31986dbc519b",
+  "url": "https://rawcdn.githack.com/owensto/helper/006644dae913c9bc6f874cdaaaba31986dbc519b/atlas_d_simulator_01/contact/y11/preview.html",
+  "reportURL": "https://rawcdn.githack.com/owensto/helper/006644dae913c9bc6f874cdaaaba31986dbc519b/atlas_d_simulator_01/contact/y11/report.html",
+  "physicsTests": 26,
+  "publicBrowserVerified": true,
+  "fullDiveCycleLocalCIVerified": true,
+  "seaTrialValidated": false,
+  "multiplayer": false,
+  "sharedHostMerged": false,
+  "physicalDeviceTested": false
+}
