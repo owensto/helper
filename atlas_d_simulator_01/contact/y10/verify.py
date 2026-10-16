@@ -64,7 +64,7 @@ with sync_playwright() as pw:
     if mode=='baseline':assert ready['label'].startswith('Loading'),ready
     else:assert ready['label']=='Board original ATLAS D',ready
     owner_source=(REPO/'atlas_d_simulator_01/live/atlas-d.js').read_text();native=owner_source[owner_source.index('function enter(){'):owner_source.index('\nfunction exit(){')];assert ready['handler']==native
-    row['nativeEnterSourceExact']=True;shot('ready-label');f=host();f.evaluate("window.__nativeBoardReference=document.getElementById('ad-board').onclick")
+    row['nativeEnterSourceExact']=True;shot('ready-label');f=host();f.evaluate("()=>{window.__nativeBoardReference=document.getElementById('ad-board').onclick;return true;}")
     tap('#ad-board');page.wait_for_function('Y4.latest?.physical.available',timeout=90000);entered=snap('boarded-native-handler');assert entered['active'] and entered['hidden']
     assert f.evaluate("document.getElementById('ad-board').onclick===window.__nativeBoardReference")
     x=page.evaluate('Y4.latest');assert x['sourceUnchanged'] and x['mapped']['attachment'] is None and x['mapped']['valid'] is False and len(x['rays'])==5
