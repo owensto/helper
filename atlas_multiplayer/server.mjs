@@ -24,8 +24,10 @@ export function createMultiplayerServer({ origins, maxConnections = 128, roomOpt
   server.headersTimeout = 5000; server.requestTimeout = 10000; server.keepAliveTimeout = 5000;
   server.maxHeadersCount = 32;
   const wss = new WebSocketServer({ noServer: true, maxPayload: 4096, perMessageDeflate: false });
+  const closing = new WeakSet();
   const close = (ws, code, reason) => {
-    if (ws.readyState === WebSocket.CLOSED) return;
+    if (ws.readyState === WebSocket.CLOSED || closing.has(ws)) return;
+    closing.add(ws);
     ws.close(code, reason);
     const timer = setTimeout(() => ws.terminate(), 1500); timer.unref();
     ws.once('close', () => clearTimeout(timer));
@@ -54,7 +56,7 @@ export function createMultiplayerServer({ origins, maxConnections = 128, roomOpt
     ws.on('error', () => {});
     ws.on('message', (raw, binary) => {
       try {
-        if (left) return;
+        if (left || closing.has(ws)) return;
         if (binary) throw new Error('TEXT_ONLY');
         if (!inbound.take(performance.now())) throw new Error('RATE_LIMIT');
         const message = JSON.parse(raw.toString());

@@ -1,11 +1,7 @@
 {
-  "status": "foundation-only-not-live",
-  "node": "v22.16.0",
-  "unit_tests": {"passed": 18, "failed": 0},
-  "server_syntax": "PASS",
-  "websocket_runtime": "NOT_RUN",
-  "dependency_install_and_audit": "NOT_RUN",
-  "browser_integration": "NOT_IMPLEMENTED",
+  "status": "DIAGNOSTIC_PASS_RELEASE_BLOCKED",
+  "latest_report": "evidence/m1/report.json",
   "public_multiplayer_deployment": "NOT_DEPLOYED",
-  "baseline": "ddcbf408df153cfdeb55e30ba4a04ced30feb9e8"
+  "pinned_dependency_and_lockfile": "BLOCKED",
+  "browser_integration": "NEXT_ITERATION"
 }
