@@ -1,195 +1,168 @@
 # Atlas D multiplayer — Chat 3
 
-**Status: isolated transport/client candidate, NOT live multiplayer.**
-Branch: `atlas-d/multiplayer-chat3`, PR #2, exclusive `atlas_multiplayer/**`.
-CORE owns the coupled simulation, captain, shared host and integrated publication.
-No production frontend, controller, yacht, human, workflow or deployment is changed.
+**Isolated client/transport candidate. NOT live multiplayer.**
+Branch `atlas-d/multiplayer-chat3`, PR #2, exclusive `atlas_multiplayer/**`.
+CORE owns the coupled simulation, local placement/capabilities, captain lifecycle,
+shared host and integrated frontend publication. No production frontend, physics,
+yacht, human, workflow, account, permission or hosting change is made here.
 
-## Evidence and blockers
+## Current evidence / release gates
 
-M1: 18 room tests + 12 real TCP/WebSocket tests passed. A flood test exposed repeated
-close listeners; idempotent shutdown fixed that warning. See `evidence/m1/report.json`.
+| Check | Result |
+|---|---|
+| M4 complete diagnostic suite | 105/105 PASS |
+| Independently executed dependency-free subset | 62/62 PASS |
+| Real TCP/WebSocket cases, including actual client module and host failures | 43 PASS using explicitly qualified test-only bundled ws |
+| Exact ws@8.22.0 install, npm-generated lockfile and audit | BLOCKED: EAI_AGAIN; no lockfile or audit pass invented |
+| Two independent Chromium processes | Launched in M2; first navigation denied by managed URL policy |
+| Independent browser motion / verified screenshots | 0 passes / 0 screenshots |
+| Actual integrated Sea Lab 12 single-player regression | NOT RUN |
+| Public multiplayer deployment | NOT DEPLOYED; Railway not installed |
 
-M2: 58 diagnostic tests pass: 18 room, 12 transport, 18 client/contract/interpolation,
-and 10 actual-client-module tests over real sockets. These tests use an explicit
-TEST-ONLY adapter to the already-installed Playwright bundled ws. This is actual
-TCP/WebSocket traffic, not a socket mock, but **NOT ws@8.22.0 certification**.
+M1, M2, M3 and M4 reports remain under `evidence/`. M4 includes two real failing
+regressions against unmodified M3 (escaped renderer exception and observer mutation),
+then 16 passing callback-fault cases plus four pure presentation tests. The full
+raw logs/source manifest accompany the conversation archive. These are fixture
+host tests, not actual C1/Sea Lab browser execution. DOM/UI visual behavior is not
+certified by the pure presentation tests.
 
+Diagnostics use the already-installed Playwright bundled WebSocket implementation
+via an explicit TEST-ONLY loader, with its hash recorded. They exchange actual TCP
+traffic; they are not network mocks and are NOT certification of the pinned npm
+package. Docker requires a real lockfile and therefore currently fails closed.
+The browser blocklist was only inspected, never changed or bypassed. M3/M4 did not
+rerun browsers. No unlaunched runner, paid capacity or public link is claimed.
 
-M3: 85 diagnostic tests pass: the earlier suite plus C1 read-only receiver, rigid
-transform/cardinal/tilt validation, source-clock/epoch checks and adversarial server
-snapshot tests. The dependency-free subset independently passes 58 tests; 27 tests
-exercise real TCP/WebSocket transport using the qualified bundled diagnostic runtime.
-`evidence/m3/report.json` and `evidence/m3/RECEIVER_ACK.md` separate those results from
-actual CORE/browser acceptance. No M3 browser run is claimed; the M2 policy blocker
-remains unresolved. A fresh npm lock-generation attempt still fails `EAI_AGAIN`.
+## Authority and final CORE C1 receiving boundary
 
-The exact pin remains `ws@8.22.0`. Upstream release existence is verified; registry
-installation fails `EAI_AGAIN`, no lockfile has been fabricated, and audit is not
-passed. Docker intentionally requires the missing npm-generated lockfile. The
-release gate cannot pass just because diagnostic tests do.
+Target: private 2–8-player cooperative rooms, one locally owned vessel per player.
+Membership/ownership and finite transform validation are not anti-cheat. Remote
+boats only interpolate received poses; no remote physics, shared collision/damage,
+crews, persistent accounts or character payload is implemented.
 
-Two independent Chromium processes launched, but first localhost navigation was
-blocked by `ERR_BLOCKED_BY_ADMINISTRATOR`. The managed URL blocklist was inspected
-read-only; it was not disabled or bypassed. **Zero browser motion checks passed.**
-UI, independent-browser motion, actual Sea Lab 12 regression and HTTPS/WSS/public
-acceptance remain unverified. Railway discovery reports not installed; no account,
-permission, service or paid capacity was added.
+ACK `sealab12-core-integration/1.0.0`, final tested CORE source
+`36903985f2182c902427fed77d4e28c61a7639ca`, owner comment 6208577721;
+evidence-only `85af47f0853f57b53a7e7cd6249f843727a49141`.
+Public baseline remains `a2d4eecc12e7b4db14c7f94a6f6fc5088a4061ff`.
+Exact descriptor/hook/provenance references are in
+`tests/owner-fixtures/c1-provenance.json`; MP's receiving ACK is
+`evidence/m3/RECEIVER_ACK.md` and PR comments 6208814500 / 6208818331.
+CORE's separate actual-host browser pass is not MP acceptance.
 
-## Authority and CORE C1 correction
+Accepted semantics: SI; right-handed local +X forward/+Y up/+Z starboard; world
++X east/+Y up/+Z south; actual render transform, column-major matrices/inverse and
+unit XYZW quaternion. C1 physics time is per-client/resettable integer epoch plus
+seconds. Arrival/RTT/interpolation timestamps and `transportRoomAgeSeconds` are
+network diagnostics only. They never advance CORE's physics, water or animation.
+Equal worldRevision does not synchronize water phase.
 
-The first target is private 2–8-player cooperative rooms, one locally owned vessel
-per player. Server ownership/membership and finite transforms are not anti-cheat.
-Remote boats interpolate received transforms; they never run another physics step.
-Shared collisions, damage, crews, persistence, public matchmaking and character
-payloads are not implemented.
+`client/c1-reader.mjs` accepts only the separate read-only reader with explicit
+world/design/server player/entity context. Full hook objects exposing `local`,
+spawn or restore capabilities reject. It checks baseline/world fingerprint, axes,
+rigid transform/inverse/quaternion agreement, clock progression and recovery state.
+Stale world or invalid owner state permanently invalidates the binding. C1 has no
+RPM reading: unavailable RPM is null, not a fabricated stopped-engine observation.
+Its 13 tests use synthetic C1-shaped snapshots, not a loaded C1 host.
 
-CORE C1 comment 6208194629 supersedes the earlier shared-physics-clock proposal:
-physics time is **per-client, resettable simulation time** with an explicit epoch.
-Network server timestamps serve ordering, latency, stale detection and interpolation
-only. `transportRoomAgeSeconds` is diagnostic network age, not a wave/physics clock.
-No network time callback is supplied to the host's preparation hook. Identical world
-revisions do not synchronize water phase. CORE still owns time, water and weather.
+The source SHA is an audit reference, not runtime authentication. Raw C1 provides
+no independently trusted runtime/instance/frame serial: CORE must bind the actual
+sampling phase and current-frame witness before activation. CORE alone validates
+current safe placement, depth and whole-room occupancy. C1's local spawn checks are
+not atomic multiplayer reservations. Remote poses and serialized tokens are never
+accepted as local restore capabilities. No rewind of fuel, damage or time is added.
 
-C1 candidate `sealab12-core-integration/1.0.0` was consumed at immutable source
-`36903985f2182c902427fed77d4e28c61a7639ca`: descriptor blob
-`30affbbcc2b04d8b8e78a07206cb9eab9c2af2f7`, host-hook blob
-`458a40ffb79be48c43a1190f2e5722112f8bfb99`. This is a receiving contract under review,
-not a completed integrated release; verify the owner's final result before wiring. The host's dynamic `sl12-c1-sha256:...` world revision, reset epochs,
-read-only reader, local-only opaque restore capability, and spawn occupancy checks
-are consumed by the separate `client/c1-reader.mjs` read-only mapper where available.
-Its test samples are explicitly synthetic, not captured CORE motion. Full CORE local
-placement/occupancy wiring and integrated regression remain pending. This candidate
-does not invent agreement or blindly import Sea Lab 11 globals.
+Yacht `atlas-d-original-r7` retains its own controller/footprint and unknown-depth
+semantics; C1 yacht capabilities remain unavailable, never a Bay fallback. HUMANS
+worker `01a142ed-0182-71c4-9393-7bdfe248f0fe` owns `atlas_humans/**`; current C2/H4
+contact/profile work and character identity/animation remain separate. MP does not
+duplicate their rig, contact solver, scoped animation clock or captain.
 
-Yacht design ID `atlas-d-original-r7` must keep its own controller/footprint and
-unknown-depth semantics. C1 says its integrated adapter/spawn/restore are unavailable;
-there is no Bay fallback. Human task `01a142ed-0182-71c4-9393-7bdfe248f0fe` owns
-`atlas_humans/**`. Agreed future direction is server player/entity identity plus
-vessel-local character metadata, with human-owned schema/animation/attachment
-revisions. Networking characters remains disabled pending CORE/HUMANS acceptance.
+## Adapter and protocol
 
-## Generic adapter: default off, no old-host mutation
+`createCoreAdapter` is inert by default: no socket, timer or host call when disabled.
+When enabled, CORE supplies `readLocal`, `prepareLocal`, `exitLocal`, `renderRemote`
+and `removeRemote`; optional `networkStatus` is diagnostic. CORE's existing frame
+loop calls `adapter.render()`. There is no additional render or simulation loop.
+Join/reconnect explicitly asks the host to accept safe local preparation with an
+AbortSignal. Unavailable or switched vessel identity rejects instead of coercing
+another controller. Leave/dispose are idempotent; disposed adapters cannot reconnect.
 
-`client/core-adapter.mjs` takes explicit host hooks. It creates no socket, timer or
-host call when `enabled:false`. The host supplies:
+`shared/world.mjs` defines **atlas-net-3**. No legacy Sea Lab 11 fallback exists.
+Server/client require the same canonical world SHA256 binding scene/config, axes,
+clock semantics, fixed weather, water/depth, vessel controller/footprint revisions
+and owner-validated spawns. The approval-ref field is an operator audit pointer,
+not proof of agreement. No approved production world JSON is supplied. Fixture
+positions and numeric bounds do not certify hull clearance or atomic occupancy.
 
-- `readLocal() -> {vesselId, pose, clock}`: a copy from the owning controller/render transform.
-- `prepareLocal(context) -> Promise<boolean>`: safe local spawn/reconnect acceptance.
-  Honor `context.signal` and reject unsafe placement. Do not deserialize a remote
-  payload as a local restore capability. CORE retains all local writes.
-- `exitLocal(reason)`: clear session-local presentation and perform only owner-approved
-  local cleanup. No automatic rewind of time, fuel, damage or controller state.
-- `renderRemote(peer)` / `removeRemote(entityId)`: render-only hooks, no remote stepping.
-- Optional `networkStatus(info)` for honest UI status.
+A pose is `{p:[x,y,z],q:[x,y,z,w],engine:boolean,rpm:number|null,gear:-1|0|1}`.
+Server playerId/entityId identifies one instance, separate from vesselId/design.
+State includes increasing `seq`, own pose and source clock. Core worlds require
+`{domain:'client-simulation',epoch,seconds}`; fixture null clocks are allowed until
+a real clock is supplied. Same-epoch backward seconds, older epochs and dropped
+known clocks reject atomically. A newer epoch may reset time and clears remote
+interpolation, even for a small placement change. Client-side replay checks also
+reject changed pose/clock at unchanged sequence and inconsistent identity/slot.
 
-The host's existing frame loop calls `adapter.render()`; the networking adapter does
-not create a physics/render loop. Different vessel identity during a session rejects
-publication and requires leave/rejoin instead of applying the wrong controller.
+10 Hz snapshots; at most 20 Hz local publishing; 32 interpolation samples/peer,
+150 ms delay, shortest-arc quaternion interpolation, no physical extrapolation.
+Disconnected/stale entities are marked; missing roster entities are removed.
+Room/session keys, expiry, rate/payload bounds, heartbeat, ownership, reconnect and
+slow-consumer checks live in `rooms.mjs` / `server.mjs`. In-memory rooms require one
+replica and disappear on process restart. Tokens are not competitive authority.
 
-`client/invite-controls.mjs` mounts scoped, nonmodal guest/create/join/leave/invite
-controls. Untrusted names use textContent, not HTML. Invite credentials are in URL
-fragments; reconnect tokens stay private in memory, never share links or localStorage.
-An invite cannot change the configured socket endpoint. The UI is implemented but
-browser navigation policy currently blocks visual/interaction certification.
+Guest/create/join/leave/invite controls are separate, scoped and nonmodal. Names
+use textContent; invitations use URL fragments; reconnect secrets remain in private
+memory, never shared links or localStorage. An invite cannot change the configured
+socket endpoint. No pause/map/weather/character commands are sent over the wire.
 
-Interpolation buffers at most 32 samples per peer, uses a 150 ms delay and shortest-
-arc quaternion interpolation, and never extrapolates physical motion. Disconnected
-or stale peers are marked and missing roster entities removed. Reconnect preserves
-identity/sequence and delegates restoration explicitly to the host. Cancelled async
-host preparation must not resurrect a left session.
+## Callback failures and honest cleanup
 
-## World / transport protocol
+Only `prepareLocal` is asynchronous; other hooks and subscriptions are synchronous.
+Hook references are captured once. Unexpected thenables are observed to contain
+rejection and rejected as unsupported, never awaited in CORE's frame. Arbitrary
+host side effects cannot be cancelled or rolled back. Required async hooks mark
+cleanup uncertain even if their promise might eventually settle successfully.
 
-`shared/world.mjs` defines `atlas-net-3` and immutable descriptor validation. There is
-no default Sea Lab 11 world. Server and client must agree exact canonical SHA-256 of
-scene/config, axes, clock semantics, fixed weather, water/depth semantics, vessel
-controller/footprint revisions and owner-validated spawn records. Any fingerprint
-mismatch rejects the handshake even if the short worldRevision string matches.
+Required read/render/remove/exit failures stop MP without throwing into the frame
+caller. Cleanup attempts all hooks once; failed removal/exit sets
+`cleanupIncomplete:true` and blocks rejoin with `HOST_CLEANUP_REQUIRED`. The UI does
+not claim restored single-player or cleared visuals in that state; owner recovery
+or workshop reload is needed. A failing optional status sink or subscriber is
+disabled once with a warning while valid networking continues. Every subscriber
+gets its own snapshot copy. Only bounded known error codes are exposed, never
+arbitrary exception text. These are generic MP guards, not CORE/HUMANS code changes.
 
-The descriptor's approval reference is an operator-supplied audit pointer, **not**
-proof that the referenced comment grants acceptance. No approved production world
-is shipped. Numeric/nonduplicate fixture positions do not certify hull clearance;
-CORE must provide real per-vessel occupancy/depth validation. Missing yacht spawns
-remain absent, not guessed. Weather/profile changes require a fresh matching room;
-there are no pause/map/weather/character control messages on the wire.
+## Reproduce / remaining gate
 
-Local pose is `{p:[x,y,z],q:[x,y,z,w],engine:boolean,rpm:number|null,gear:-1|0|1}`.
-Units are SI; local +X forward, +Y up, +Z starboard; quaternion XYZW comes from the
-actual render transform, not a guessed Euler mapping. Server playerId/entityId are
-separate from vesselId (design/controller identity). Receive-only numeric pose data
-must never contain controller objects or write capabilities.
-
-Protocol 3 preserves unavailable RPM as `null` because C1 does not expose that
-reading. Optional fixture `clock:null` means no source clock is supplied; a core
-world requires `{domain:"client-simulation",epoch,seconds}` on state publications.
-Epoch and time are scoped to the same server-owned player/entity instance. A newer
-source epoch may reset seconds and flushes remote interpolation, even for a small
-placement discontinuity. Same-epoch time regressions and dropped clocks are rejected.
-Arrival timestamps remain separate. No peer clock advances host physics or water.
-The client also independently rejects regressing sequence/epoch, changed identity
-or changed pose at an unchanged sequence in a server snapshot.
-
-The first message includes protocol, create/join/resume action, name, worldId,
-worldRevision, worldHash, vesselId; join adds roomId/key, resume also playerId and
-private resumeToken. `state` contains only increasing `seq`, own pose and source-clock metadata. Server
-assigns slot/entity identity and configured spawn; clients cannot write another boat.
-Room snapshots arrive at 10 Hz; local publication is bounded to 20 Hz. Each socket
-has finite payload, rate, heartbeat, timeout and slow-consumer bounds. Rooms are
-in-memory, expire and require one replica; process restart loses rooms.
-
-## CORE C1 read-only receiver
-
-`createC1PoseReceiver({reader,ownerSourceSha,worldRevision,vesselId,playerId,entityId})`
-requires complete negotiated identity and a matching descriptor. Only C1's separate
-reader is allowed; full hooks containing a local/spawn/restore capability reject.
-The module checks baseline, coordinate conventions, world hash, render-committed
-stage, rigid matrix/inverse/quaternion agreement, epoch/time ordering and recovery
-conditions. Output copies contain vessel pose and source-clock data only. Unknown
-RPM remains null. It neither advances the host nor reads character anchors.
-
-`ownerSourceSha` is an audit reference, not cryptographic runtime attestation. The
-13 receiver tests use C1-shaped synthetic snapshots, not a loaded Sea Lab instance.
-The caller still needs CORE's approved room descriptor and joining/occupancy hooks.
-This module deliberately does not call `local.spawnLocal` or `local.restoreLocal`.
-A received pose or copied token is never accepted as a local restoration capability.
-Yacht remains unsupported in C1 rather than falling back to Bay. Stale world or
-invalid owner state permanently invalidates this receiver and requires a fresh
-CORE-approved binding. See the receiving ACK for exact remaining gates.
-
-## Reproduce on an existing permitted runner
-
-With registry access, generate/review the real lock and verify installed artifacts:
+On an already-authorized runner with registry access:
 
 ```sh
 sh atlas_multiplayer/scripts/verify-clean-install.sh
 cd atlas_multiplayer
 npm run test:release
-npm run test:browser  # existing Python Playwright + permitted Chromium required
+npm run test:browser
 ```
 
-`verify-clean-install.sh` runs npm lock generation, clean install, metadata checks,
-audit and tests. Review and commit the resulting lockfile with its actual registry
-integrity. Never check a guessed lockfile into this branch.
+The script generates npm's real lockfile, clean-installs it, checks exact package
+metadata, runs audit and tests. Review/commit that real integrity result; do not
+manufacture a lockfile. Browser tests require existing Python Playwright and a
+permitted installed Chromium, not downloads or policy changes.
 
-For explicitly qualified local diagnostics with an already installed compatible bundle:
+Explicitly qualified local diagnostics:
 
 ```sh
 cd atlas_multiplayer
 export ATLAS_DIAGNOSTIC_BUNDLE=/absolute/path/to/playwright/driver/package/lib/utilsBundle.js
 node --import ./tests/diagnostic-register.mjs --test tests/*.test.mjs
-python tests/browser-evidence.py
 ```
 
-The browser script launches two separate Chromium processes and covers motion,
-invites, reconnect/stale state, leave, cancellation, identity and fixture feature-off
-regression. It masks private invite fields in screenshots. It does not change browser
-policy or download a browser. The fixture is a labeled flat-plane linear-motion test,
-not Sea Lab 12 or a replacement boat simulator. Fixture regression is not integrated
-single-player proof. Actual C1 receiver tests and integrated desktop/phone runs remain
-a separate gate owned jointly with CORE before any publication.
+The browser fixture is a labeled flat-plane linear-motion scene, NOT Sea Lab or
+boat physics. Its two separate Chromium launches test invites, motion, interpolation,
+reconnect/stale/leave, cancellation, identity and feature-off regression. Successful
+fixture evidence would still not prove actual Sea Lab single-player regression.
 
-Production startup requires explicit `ALLOWED_ORIGINS` and `ATLAS_WORLD_CONFIG` JSON
-path. Production rejects the fixture unless an explicitly test-only constructor is
-used. No test server/debug endpoint is included in the production container. No live
-server or public multiplayer URL exists from this workstream.
+Production requires exact `ALLOWED_ORIGINS` and `ATLAS_WORLD_CONFIG`; test fixtures
+are rejected by production startup. The test server/debug driver is not in the
+container. Exact pin/lock/audit, independent browsers, CORE-approved world/occupancy
+and actual integrated regression must pass before CORE's publication gate. There
+is no live multiplayer URL from this branch.

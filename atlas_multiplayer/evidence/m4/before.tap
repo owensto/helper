@@ -1,0 +1,63 @@
+TAP version 13
+# DIAGNOSTIC TRANSPORT ONLY — not ws@8.22.0 certification. Bundle SHA256: 6883cf83e2097e5029cce0763832338534a9e1c8e97bf62ca2f083b238613a49
+# Subtest: render callback failure cannot escape the host frame loop
+not ok 1 - render callback failure cannot escape the host frame loop
+  ---
+  duration_ms: 106.622779
+  type: 'test'
+  location: '/mnt/data/atlas-d-multiplayer-chat3/atlas_multiplayer/tests/host-fault.test.mjs:35:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Got unwanted exception.
+    Actual message: "PRIVATE_HOST_SECRET"
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  actual:
+  error: 'PRIVATE_HOST_SECRET'
+  stack: |-
+    blow (file:///mnt/data/atlas-d-multiplayer-chat3/atlas_multiplayer/tests/host-fault.test.mjs:19:51)
+    Object.renderRemote (file:///mnt/data/atlas-d-multiplayer-chat3/atlas_multiplayer/tests/host-fault.test.mjs:24:38)
+    Object.render (file:///mnt/data/atlas-d-multiplayer-chat3/atlas_multiplayer/client/core-adapter.mjs:47:36)
+    file:///mnt/data/atlas-d-multiplayer-chat3/atlas_multiplayer/tests/host-fault.test.mjs:37:36
+    getActual (node:assert:531:5)
+    Function.doesNotThrow (node:assert:697:32)
+    TestContext.<anonymous> (file:///mnt/data/atlas-d-multiplayer-chat3/atlas_multiplayer/tests/host-fault.test.mjs:37:36)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async startSubtestAfterBootstrap (node:internal/test_runner/harness:296:3)
+  operator: 'doesNotThrow'
+  stack: |-
+    TestContext.<anonymous> (file:///mnt/data/atlas-d-multiplayer-chat3/atlas_multiplayer/tests/host-fault.test.mjs:37:9)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async startSubtestAfterBootstrap (node:internal/test_runner/harness:296:3)
+  ...
+# Subtest: observer mutation cannot corrupt another subscriber or the network cursor
+not ok 2 - observer mutation cannot corrupt another subscriber or the network cursor
+  ---
+  duration_ms: 234.577296
+  type: 'test'
+  location: '/mnt/data/atlas-d-multiplayer-chat3/atlas_multiplayer/tests/host-fault.test.mjs:45:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    The expression evaluated to a falsy value:
+    
+      assert.ok(observed.seq<100)
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: true
+  actual: false
+  operator: '=='
+  stack: |-
+    TestContext.<anonymous> (file:///mnt/data/atlas-d-multiplayer-chat3/atlas_multiplayer/tests/host-fault.test.mjs:50:9)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+1..2
+# tests 2
+# suites 0
+# pass 0
+# fail 2
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 494.979791

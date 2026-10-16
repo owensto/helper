@@ -5,6 +5,20 @@ const FRIENDLY={ROOM_FULL:'This room is full.',ROOM_UNAVAILABLE:'This invitation
   CONNECTION_FAILED:'Could not connect. Single-player is still available.',SESSION_EXPIRED:'Your room session expired. Join again.',
   HOST_RESTORE_REFUSED:'The simulator could not safely restore this boat.',VESSEL_SWITCH_REQUIRES_REJOIN:'Leave the room before changing vessel.',
   BAD_NAME_OR_VESSEL:'Use a guest name of 1–24 characters.',STALE_WORLD_REVISION:'The world changed. Rejoin a matching room.',HOST_CLOCK_REGRESSION:'The local simulation changed unexpectedly. Rejoin the room.',CORE_RECOVERY_REQUIRED:'Recover the boat in the simulator before rejoining.'};
+/** Pure presentation policy; DOM/visual acceptance is a separate browser gate. */
+export function controlState(info) {
+  const cleanup=info.cleanupIncomplete===true;
+  const busy=['connecting','joining','connected','reconnecting'].includes(info.state);
+  const connected=info.state==='connected'&&!cleanup;
+  return {
+    statusMessage:cleanup?'Offline — simulator cleanup incomplete':connected?
+      `Connected · ${info.players} boat${info.players===1?'':'s'}${info.rttMs===null?'':` · ${info.rttMs} ms`}`:
+      ({idle:'Single-player',connecting:'Connecting…',joining:'Preparing boat…',reconnecting:'Connection lost — reconnecting…',error:'Offline — single-player available'}[info.state]||'Offline'),
+    errorMessage:cleanup?'Multiplayer stopped, but some remote visuals or session state could not be cleared. Reload the workshop before rejoining.':
+      info.error&&info.state==='error'?(FRIENDLY[info.error]||'Room unavailable. Leave or try again.'):'',
+    joinDisabled:busy||cleanup,leaveDisabled:!busy,copyDisabled:!connected
+  };
+}
 export function mountInviteControls({adapter,parent=document.body,fixture=false,baseUrl=location.href}) {
   if(adapter.info.state==='disabled')return {dispose:()=>{}};
   const root=document.createElement('section');root.dataset.atlasMp='';root.setAttribute('aria-label','Multiplayer');
@@ -21,15 +35,14 @@ export function mountInviteControls({adapter,parent=document.body,fixture=false,
   const $=s=>root.querySelector(s);$('.mp-scope').textContent=fixture?'Network test fixture — not the live simulator.':'Private cooperative boats. No shared collision physics.';
   parent.append(root);
   const update=info=>{
-    const busy=['connecting','joining','connected','reconnecting'].includes(info.state);
-    $('.mp-status').textContent=info.state==='connected'?`Connected · ${info.players} boat${info.players===1?'':'s'}${info.rttMs===null?'':` · ${info.rttMs} ms`}`:
-      ({idle:'Single-player',connecting:'Connecting…',joining:'Preparing boat…',reconnecting:'Connection lost — reconnecting…',error:'Offline — single-player available'}[info.state]||info.state);
-    $('.mp-create').disabled=busy;$('.mp-join').disabled=busy;$('.mp-name').disabled=busy;
-    $('.mp-leave').disabled=!busy;$('.mp-copy').disabled=info.state!=='connected';
-    if(info.state==='connected'){
+    const view=controlState(info);
+    $('.mp-status').textContent=view.statusMessage;
+    $('.mp-create').disabled=view.joinDisabled;$('.mp-join').disabled=view.joinDisabled;$('.mp-name').disabled=view.joinDisabled;
+    $('.mp-leave').disabled=view.leaveDisabled;$('.mp-copy').disabled=view.copyDisabled;
+    if(!view.copyDisabled){
       const link=adapter.invite();if($('.mp-share').value!==link)$('.mp-share').value=link;
     }else { $('.mp-share').value='';if(['idle','error'].includes(info.state))$('.mp-roster').replaceChildren(); }
-    if(info.error&&info.state==='error')$('.mp-error').textContent=FRIENDLY[info.error]||'Room unavailable. Leave or try again.';
+    $('.mp-error').textContent=view.errorMessage;
   };
   const run=async fn=>{ $('.mp-error').textContent='';try{await fn();}catch(e){if(e.code!=='CANCELLED')$('.mp-error').textContent=FRIENDLY[e.code||e.message]||'Could not join this room.';} };
   $('.mp-create').onclick=()=>run(()=>adapter.create($('.mp-name').value));
@@ -38,7 +51,7 @@ export function mountInviteControls({adapter,parent=document.body,fixture=false,
     // Only remove this component's invitation fragment; never clear unrelated CORE state.
     if(new URLSearchParams(location.hash.slice(1)).has('room'))history.replaceState(history.state,'',location.pathname+location.search);
   });
-  $('.mp-leave').onclick=()=>{adapter.leave();$('.mp-roster').replaceChildren();$('.mp-error').textContent='';};
+  $('.mp-leave').onclick=()=>{adapter.leave();$('.mp-roster').replaceChildren();update(adapter.info);};
   $('.mp-copy').onclick=async()=>{
     try{await navigator.clipboard.writeText(adapter.invite());$('.mp-copy-hint').textContent='Invitation copied.';}
     catch{$('.mp-share').focus();$('.mp-share').select();$('.mp-copy-hint').textContent='Copy the selected invitation.';}
