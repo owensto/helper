@@ -1,0 +1,94 @@
+{
+  "sourceSHA": "2d8fd2fe267310fd824e1b62652400ac04061d4a",
+  "status": "CONTRACT_VERIFIED_EXPORT_BYTES_UNAVAILABLE",
+  "rows": [
+    {
+      "name": "exact committed manifest and seven payloads",
+      "passed": true,
+      "result": {
+        "payloads": 7,
+        "manifestSHA256": "840854a6b15c3da6a1d297a2636414fa9e58f822aa6141ab1515bd4d23e23b46"
+      }
+    },
+    {
+      "name": "exact contract fingerprint and unchanged base",
+      "passed": true,
+      "result": true
+    },
+    {
+      "name": "branch cut and anatomical assignments",
+      "passed": true,
+      "result": true
+    },
+    {
+      "name": "closed angular endpoints and roundoff limit",
+      "passed": true,
+      "result": true
+    },
+    {
+      "name": "minus1 plus2mm exact gap supersedes5mm",
+      "passed": true,
+      "result": true
+    },
+    {
+      "name": "malformed and ambiguous projections reject",
+      "passed": true,
+      "result": true
+    },
+    {
+      "name": "optional back and required seat/both soles",
+      "passed": true,
+      "result": true
+    },
+    {
+      "name": "unknown interiors prohibit whole-domain pass",
+      "passed": true,
+      "result": true
+    },
+    {
+      "name": "guard topology and metre thickness under affine transforms",
+      "passed": true,
+      "result": {
+        "syntheticMatrices": 5,
+        "actualSurvivorBodiesTested": 0
+      }
+    },
+    {
+      "name": "singular and degenerate guards reject",
+      "passed": true,
+      "result": true
+    },
+    {
+      "name": "separation from guard boundary and no fit activation",
+      "passed": true,
+      "result": true
+    },
+    {
+      "name": "frozen contract null live identity and zero dt",
+      "passed": true,
+      "result": true
+    },
+    {
+      "name": "export hash is only a declared recipe pin",
+      "passed": true,
+      "result": {
+        "actualExportBytesVerified": false
+      }
+    }
+  ],
+  "contractVerified": true,
+  "manifestVerified": true,
+  "frozenExportVerified": false,
+  "originalReceivingZIPVerified": false,
+  "compiledSupportRecordVerified": false,
+  "owner39TestSuiteRerun": false,
+  "fullReceivingACK": false,
+  "scope": "Contract receipt and tested pure math only; no frozen export completeness, pose, fit or clearance acceptance",
+  "remainingBlockers": [
+    "Exact frozen-export JSON/GZIP or pinned receiving ZIP required to verify export/table/world/support bindings",
+    "All130 retained interior face sets explicitly unknown",
+    "Live current-frame/identity/epoch binding absent by design"
+  ],
+  "fittingAuthorized": false,
+  "fullBodyAccepted": false
+}
