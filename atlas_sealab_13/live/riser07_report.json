@@ -1,0 +1,20 @@
+{
+  "base_model_sha256": "3c973546b4892ffd6450b81b0ffb664d1929cf68fc0d6225c8dec3b81c06afd1",
+  "patch": "REPAIR07_CastingDeck_RiserBacking",
+  "bounds_m": [
+    [
+      0.7289999723434448,
+      0.34700000286102295,
+      -1.156000018119812
+    ],
+    [
+      0.7419999837875366,
+      0.7730000019073486,
+      1.156000018119812
+    ]
+  ],
+  "original_meshes_unmodified_in_append": true,
+  "original_hatch_apertures_not_covered": true,
+  "purpose": "Close visible outer-wing gaps at front casting-deck riser, from cockpit",
+  "marine_validated": false
+}

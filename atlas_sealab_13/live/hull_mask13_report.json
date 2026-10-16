@@ -1,0 +1,59 @@
+{
+  "sourceTriangles": 40871,
+  "sourceSHA256": "b1ef9c448309a9a5d85ec4f2efcf45d9406d999ab24d27bdd1534359a7278b82",
+  "grid": [
+    151,
+    86
+  ],
+  "insetM": 0.01,
+  "sampleWaterlineY": 0.0,
+  "waterlineHalfWidthsM": [
+    [
+      -3.75,
+      1.04528
+    ],
+    [
+      -3.0,
+      1.12156
+    ],
+    [
+      -2.25,
+      1.14783
+    ],
+    [
+      -1.5,
+      1.15322
+    ],
+    [
+      -0.75,
+      1.15386
+    ],
+    [
+      0.0,
+      1.14454
+    ],
+    [
+      0.75,
+      1.11782
+    ],
+    [
+      1.5,
+      0.83397
+    ],
+    [
+      2.25,
+      0.13187
+    ],
+    [
+      3.0,
+      0.0
+    ],
+    [
+      3.75,
+      0.0
+    ]
+  ],
+  "oldMidshipMaskHalfWidthM": 1.27553,
+  "newMidshipMaskHalfWidthM": 1.1445407108734647,
+  "maskBoundary": "Sampled unchanged hull XY projection, per-side half-width, linear interpolation; visual-only approximation."
+}

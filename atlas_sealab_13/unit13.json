@@ -1,0 +1,96 @@
+{
+  "passed": true,
+  "scope": "CPU/source/visual-raster tests, not browser FPS or public delivery",
+  "tests": [
+    {
+      "name": "Exact unchanged model decoded from transport compression",
+      "passed": true,
+      "rawBytes": 9962552,
+      "compressedBytes": 4127109,
+      "reductionPct": 58.573777080410714
+    },
+    {
+      "name": "Unchanged force/wave/captain/contact code and source chart",
+      "passed": true
+    },
+    {
+      "name": "Weather runtime differs only by scoped fair-weather visible haze",
+      "passed": true
+    },
+    {
+      "name": "Indexed cold lookup preserves original interpolation, land, holes and unknowns",
+      "passed": true,
+      "samples": 2500,
+      "known": 1407,
+      "unknown": 1093
+    },
+    {
+      "name": "Repeat and adjacent seabed grids stay cached without wholesale clear",
+      "passed": true,
+      "rows": [
+        {
+          "dx": 0,
+          "oldMs": 3055.291375,
+          "newMs": 420.1863290000001,
+          "sum": 56769.213342581104
+        },
+        {
+          "dx": 0,
+          "oldMs": 3036.376445,
+          "newMs": 10.339759000000413,
+          "sum": 56769.213342581104
+        },
+        {
+          "dx": 32,
+          "oldMs": 3043.114861,
+          "newMs": 32.437237000000096,
+          "sum": 56496.94969337729
+        }
+      ],
+      "cacheEntries": 17673
+    },
+    {
+      "name": "Visual raster coordinates and known-mask agree with original geometry orientation",
+      "passed": true,
+      "samples": 16641,
+      "normals": 16641
+    },
+    {
+      "name": "Default launch is source-known water, not land or no-data",
+      "passed": true,
+      "spawn": [
+        -385.24391984745563,
+        -111.31949079301413
+      ],
+      "sourceDepth": 4.005528492933639
+    },
+    {
+      "name": "Visual seed is same computed launch-tile bytes",
+      "passed": true,
+      "key": "beaufort:-384,-96",
+      "bytes": 532512,
+      "known": 16641
+    },
+    {
+      "name": "Coast source lineage, all mapped bridges and buildings preserved",
+      "passed": true,
+      "counts": {
+        "bridges": 23,
+        "buildings": 514,
+        "roads": 79,
+        "trees": 520,
+        "land": 69
+      },
+      "triangles": 91145,
+      "chunks": 138,
+      "gzipBytes": 585943
+    },
+    {
+      "name": "Hull mask follows height-dependent unchanged hull, not deck rectangle",
+      "passed": true,
+      "midshipAtWaterlineM": 1.1445456626230257,
+      "bowAtWaterlineM": 0,
+      "mask": "Height-aware hull texture; no square outer water cutout"
+    }
+  ]
+}

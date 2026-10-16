@@ -1,0 +1,64 @@
+{
+  "passed": true,
+  "version": 12,
+  "physicsValidated": false,
+  "tests": [
+    {
+      "name": "Eight wave components obey finite-depth dispersion",
+      "passed": true,
+      "referenceDepthM": 8
+    },
+    {
+      "name": "Wave height gradients and vertical velocity are analytic",
+      "passed": true
+    },
+    {
+      "name": "Zero amplitude flat and finite through rough-water bound",
+      "passed": true
+    },
+    {
+      "name": "Wake memory bounded and cleared on relocation",
+      "passed": true,
+      "boundedPackets": 12
+    },
+    {
+      "name": "Swept bank contact preserves tangential movement",
+      "passed": true,
+      "intoBankVelocity": 0,
+      "alongBankVelocity": 4.85
+    },
+    {
+      "name": "Production full throttle accelerates from rest without raising terminal speed",
+      "passed": true,
+      "secondsTo30Mph": 6.066666666666666,
+      "terminalKnots": 43.7645966853726,
+      "simulated": true
+    },
+    {
+      "name": "Immediate reverse retains inertia then moves astern",
+      "passed": true,
+      "beforeReverse": 19.609105630153604,
+      "after25Seconds": -5.094085955421392
+    },
+    {
+      "name": "Six-point buoyancy stable in all authored sea states",
+      "passed": true
+    },
+    {
+      "name": "Sandbar contact and powered reverse back off retained",
+      "passed": true,
+      "hits": 1,
+      "backOffMetres": 79.38845077412881
+    },
+    {
+      "name": "Actual Beaufort bridge and downtown footprint snapshot bundled",
+      "passed": true,
+      "mappedBridgeSegments": 23,
+      "mappedBuildingFootprints": 514
+    },
+    {
+      "name": "Old numeric reference and damage gates retained",
+      "passed": true
+    }
+  ]
+}
