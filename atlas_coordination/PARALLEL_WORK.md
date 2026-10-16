@@ -1,168 +1,106 @@
-# ATLAS — Parallel development control packet
+# ATLAS — active ownership and acceptance record
 
-Prepared October 15, 2026 (America/Chicago).
+Coordination/review revision: 2026-10-16. Read current PR #1 and PR #2 comments at every task boundary; later explicit claims/results supersede this snapshot.
 
-**Execution status: PREPARED, NOT LAUNCHED.** No additional ChatGPT conversations or subagents were started by creating this packet. No application code was changed. GitHub issues are disabled in this repository, so use the associated draft pull request as the coordination/handoff discussion. This document is not a running scheduler.
+This revision replaces the initial PREPARED-only roster and launch instructions. Multiplayer, the original yacht/submarine and HUMANS are active workstreams. The older launch prompts are retired: **do not launch duplicate workers or execute the initial UI/audio/QA dispatch merely because it was once proposed.** No separate UI/audio/QA execution is established by that old packet.
 
-## 1. Scope and current evidence
+Owen's supplied work horizon ends 2026-10-16 11:38 UTC. This record does not schedule work or claim autonomous monitoring. This chat's assignment is coordination/review only. CORE and yacht were reported generating; consume this record at a natural handoff, not by interrupting/restarting them.
 
-Project: the ATLAS boat simulator in `owensto/helper`, not unrelated products or every fleet model in this repository.
+## 1. Ownership acknowledged by this coordinator
 
-Observed repository history:
-- Sea Lab 11 publication: `a9c6d3472ddeb491ebcadbc129a7486631faeae7`.
-- Subsequent online-verification commit: `ddcbf408df153cfdeb55e30ba4a04ced30feb9e8`.
-- Sea Lab 12 geographic-assets preparation: `ca5bbb6f26b6b8801ca0b3c001a2757bcd3d7ec3`.
-- At inspection, `atlas_sealab_12/` contained `fetch_region12.py`; `.github/workflows/atlas-sealab-12-geodata.yml` prepares external assets. This does not establish a complete runnable Sea Lab 12 application.
-
-These are inspected repository records, not tests rerun by this coordination chat. They are not permission to fork a stale release over the original builder's ongoing work. The original development chat must identify its current source, uncommitted changes and safe integration baseline.
-
-Priorities from Owen: realistic boat operations; simpler UI; coherent water/boat motion; useful depth and visible shallows; accessible weather/map controls; better engine and environmental sound; interactive boat equipment. Optional exaggerated collision/ejection/explosion effects are separate from realism and default OFF. Accounts and multiplayer remain future work.
-
-## 2. Team: five roles, only three code writers
-
-| Role | Owner | Responsibility |
+| Owner | Protected boundary | Current evidence / acknowledgment |
 |---|---|---|
-| Product coordination | This coordination chat | Work-package boundaries, roadmap and review. No automatic monitoring or separate product-code edits. |
-| CORE / execution lead | Existing boat-development chat | Physics, propulsion/ignition/shifting, controls semantics, hull pose, water surface/depth, weather state, boat/water rendering, collision outcomes, main runtime, integration and release. Preserves its current work and dispatches the three prescribed workers when tool access permits. |
-| HELM-UI | New worker | Dashboard, touch/keyboard bindings through the command API, collapsible map/settings and discoverable interaction prompts. |
-| AUDIO | New worker | Engine/start/idle/load/shutdown audio, wind/water/collision sound, mixing, speaker presentation and radio-provider assessment. |
-| QA | New worker | Independent baseline/candidate tests, reproducible defects, screenshots and performance comparison. No application-code fixes or deployment. |
+| CORE / existing builder | Coupled vessel physics, boat/water graphics, control semantics, shared simulation/world/time, current captain integration, host/bootstrap and integrated frontend release | Authority confirmed by Owen and explicitly acknowledged by Chat 3. CORE's new versioned integration descriptor and exact per-task source/workdir/file claim are still awaited at its natural boundary. Do not infer them from moving `main`. |
+| Original yacht worker | `atlas_d_simulator_01/**` and its existing dedicated `.github/workflows/atlas-d-simulator-01.yml`; original yacht controller, footprint, conversion, deck geometry and attachment/contact definitions; clearly labeled isolated preview | Owner-authored HANDOFF/README establish its isolation and controller. Deck ownership is accepted; actual attachment coordinates/capabilities and Sea Lab 12 mapping remain pending. Existing preview publication is not integrated-release ownership or new publication permission. |
+| Multiplayer / Chat 3 | `atlas_multiplayer/**` only; room service/protocol, client transport/interpolation, multiplayer controls and verification | Explicit M1 claim/ACK in PR #2 comment 6207983343. Client-owned cooperative/noncompetitive boats; no server-authoritative shared physics, remote physics stepping, shared collisions/damage or shared crews. CORE owns integrated frontend publication. |
+| HUMANS | **Reserve `atlas_humans/**` exclusively** after the worker's PR #1 claim; source/tests/local preview/assets and licenses/evidence/integration README only | RUNNING, local task `01a142ed-0182-71c4-9393-7bdfe248f0fe`, title `Build Atlas human physics`. Worker claim 6207977321 and orchestrator confirmation 6207985116 supersede PREPARED. No second human/captain implementation. |
+| This coordination chat | `atlas_coordination/PARALLEL_WORK.md` on the existing coordination branch and PR #1/#2 coordination records | Review and records only. No product-code changes, test dispatch, worker launch, merge or deployment. |
 
-**Do not split physics, boat controls and water/boat graphics between independent owners.** The renderer, depth indication, boat pose and physical surface must agree. UI and audio consume the same authoritative state rather than creating separate simulations.
+A reserved directory is an exclusive ownership boundary, **not a substitute for an exact per-iteration filename list**. Each owner must enumerate files it will create/edit and any generated outputs. Proposed adapters outside an owner's boundary require the receiving owner to implement or explicitly approve them. Do not grant another worker write access to a whole host file to solve a small integration need.
 
-Do not spawn a duplicate CORE builder or a second execution coordinator. Initial limit: CORE + HELM-UI + AUDIO writing code, plus one QA worker. No recursive agent spawning or unbounded improvement loops. Serialize expensive browser/GPU test runs when hardware is shared.
+CORE retains the existing Sea Lab 12 captain and its generation/fixup sources. HUMANS is auditing/reusing `captain12` from the Sea Lab 12 transport; it must not overwrite CORE's current captain or add a second visible captain. Integrate through a reviewed narrow attachment/pose adapter. Yacht supplies its own deck/helm attachments; do not reuse Bay coordinates, footprint or draft blindly.
 
-## 3. Safe start and approved baseline
+## 2. Source/result and workspace ledger
 
-Before dispatching code changes, CORE posts this handoff in the coordination PR:
+| Workstream | Known immutable source/reference | Known result/evidence | Branch and workspace |
+|---|---|---|---|
+| CORE | Tested source `5c62a713b014b97a47bb65b65ec05f382a23ac77` | Run `38849136102` succeeded for desktop and phone. Candidate was built/tested on localhost. Artifacts: desktop `12024558013`, phone `12023644854`. This run establishes no later integrated/public result SHA. | Workflow head branch `main` and CI workdir are not proof of the developer's isolated checkout. Current development branch/workdir, uncommitted reservations and next result SHA remain to be posted. |
+| Yacht | Latest checked run source `edeb60f130bf7125a3056d02220e9108a1ddf7a0`; preview host and original asset remain pinned to Sea Lab 11 `ddcbf408df153cfdeb55e30ba4a04ced30feb9e8` | Published preview result `48b9bef038ab2e422b6677d7ca9db4879419a3f9`; successful run `38849454935`; artifact `12023944504` | Release workflow head branch `main` is observed, not an isolated development-workdir attestation. Worker must report its actual branch/workdir and exact next files. |
+| Multiplayer | Claimed current head `98f535cf7d01ba8a5cde8acfc4d3378990dbd77e`; historical Sea Lab 11 reference `ddcbf408df153cfdeb55e30ba4a04ced30feb9e8` | M1 transport/dependency/socket verification claimed and running; no newer result SHA or passing socket/browser report was visible at this review | `atlas-d/multiplayer-chat3`; worker reports reconstructing an isolated checkout from the verified branch after a runtime change. Exact resulting workdir and filename list pending. |
+| HUMANS | Audit reference `99c5300c1f10e5c25c7be380fc1e015a727fca81`; expressly NOT an agreed integration baseline | First slice claimed: vessel-local contact/pose adapter and measured isolated helm animation reusing captain work. No result SHA/browser acceptance yet posted | `atlas/humans-contact-20261016`; `/Users/oven/Documents/Codex/2026-10-15/task-2`, as reported by the worker. Exact individual reserved filenames still required within `atlas_humans/**`. |
 
-```text
-Repository:
-Source branch and exact commit:
-Uncommitted work / reserved paths:
-Application source directory and entry point:
-Build / test / preview commands:
-Verified preview URL (or UNAVAILABLE):
-Existing snapshot / command / event APIs:
-Proposed minimal adapter, if needed:
-Exact HELM-UI write allowlist:
-Exact AUDIO write allowlist:
-QA report / test-artifact location:
-```
+No row's source SHA, workflow head or isolated preview is automatically `BASELINE_APPROVED` for all workstreams. Record source commit, result commit and public artifact commit separately when they differ. Do not invent a commit for uncommitted work: post a patch/diff hash and state that no result commit exists yet.
 
-CORE then records `BASELINE_APPROVED` with an immutable source commit and exact ownership. The observed Sea Lab 12 preparation commit is not automatically that baseline. This coordination branch holds documentation only; workers must not mistake it for a new product release.
+## 3. Reconciled test evidence
 
-If source is monolithic or generated, CORE alone edits the source generator, main HTML/bootstrap and generated bundle. Extract or expose only the smallest reusable seam; do not perform a wholesale architecture rewrite merely to parallelize. UI/audio workers may create isolated components with fixtures after their allowlists and contract are approved, but cannot independently modify the monolith.
+| Run | Checked outcome | What it establishes / what it does not |
+|---|---|---|
+| CORE `38849136102` | **PASS**, completed 2026-10-16 04:16:54 UTC; phone and desktop both passed `Operate and render the actual application` | Supersedes the older desktop failure in `38847829056` for this candidate. Desktop log reports localhost browser operation, no recorded page/shader/asset errors, a visible `SEA12_CAPTAIN`, and `liveMapDoesNotPause: true`. Not an independently accepted public combined release, physical-phone test, visual-quality certification or human-contact validation. |
+| Yacht `38849053766` | **PASS**, completed 04:12:59 UTC; public assets, real-time driving and public operation step succeeded; source `4a6a1ffce0fdacf513cb86f5975fcbf59e1bacb9` | Preserve the passed public-movement checkpoint; do not repeat the older public-verification failure as current. |
+| Yacht `38849454935` | **PASS**, completed 04:16:44 UTC, no longer underway; source `edeb60f130bf7125a3056d02220e9108a1ddf7a0` | Logs show 22 controller tests, desktop/phone local and public browser passes, exact public asset verification and real-time motion for preview result `48b9bef038ab2e422b6677d7ca9db4879419a3f9`. Release flags explicitly state `multiplayer:false`, `sharedSeaLab12Merged:false`, `physicalDeviceTested:false`, `engineeringValidated:false`. |
+| Multiplayer | Prior 18 room-core tests are reported in PR #2's initial slice; M1 is now claimed | Do not convert unit-test success, an adapter fixture or DNS troubleshooting into real socket/two-browser/live acceptance. New evidence is due from the existing owner. |
+| HUMANS | Worker RUNNING; contact/animation evidence pending | Existing CORE captain visibility is not proof of new human IK, moving-deck contact, locomotion or biomechanical realism. |
 
-While the handoff is being prepared, the three new workers may run read-only audits against an explicitly identified snapshot. No one has to wait to inspect UI, audio or test coverage, but implementation must use the approved baseline rather than guessing the current source.
+Review method: read workflow metadata/job steps, CORE desktop browser log, latest yacht full job log, owner handoffs and yacht RELEASE.json. Artifacts are referenced; this coordinator did not rerun browsers or independently inspect every screenshot/video. The orchestrator's report of ongoing GPU visual review remains reported progress, not a new FAIL or PASS. Preserve passed checkpoints while keeping their scope narrow.
 
-## 4. Shared interface requirements — proposed, not implemented
+Evidence:
+- https://github.com/owensto/helper/actions/runs/38849136102
+- https://github.com/owensto/helper/actions/runs/38849136102/artifacts/12024558013
+- https://github.com/owensto/helper/actions/runs/38849136102/artifacts/12023644854
+- https://github.com/owensto/helper/actions/runs/38849053766
+- https://github.com/owensto/helper/actions/runs/38849454935
+- https://github.com/owensto/helper/actions/runs/38849454935/artifacts/12023944504
+- https://github.com/owensto/helper/blob/main/atlas_d_simulator_01/RELEASE.json
 
-Reuse existing equivalent interfaces when available. CORE owns their schema/version, units, axes, timestep and compatibility.
+## 4. Acknowledged boundaries versus still-proposed contracts
 
-- **Read-only snapshot:** simulation tick/time; vessel pose and velocity; engine state/RPM/load; requested and applied gear; throttle, steering and trim; valid/unknown depth and clearance; environment/weather; feature settings.
-- **Command interface:** ignition, throttle, steering, gear request, trim, supported interactions and environment/settings requests. UI sends intent; only CORE mutates simulation state.
-- **Event interface:** engine transitions, shifts, collisions/grounding and interactions, with ordering/event IDs suitable for avoiding duplicate one-shot audio/effects.
-- **Water/depth contract:** one authoritative surface/time model and depth/clearance meaning for dynamics, rendering, instruments and map. Unknown depth remains unknown. Graphics quality must not change physical water height or boat motion.
-- **Settings:** graphics quality, realistic mechanical consequences and exaggerated collision/ejection/explosion Easter eggs are independent. Exaggerated effects default OFF. Weather UI requests a change to CORE's environment instead of inventing separate wind/wave state.
+**Acknowledged:** this coordinator accepts Owen's ownership/release boundaries. Chat 3 explicitly acknowledges CORE's authority, its own transport-only scope, yacht identity/controller/unknown-depth semantics, no room pause from local map/tool activity, and the existing human worker. HUMANS has claimed its isolated boundary and captain-reuse approach. Yacht's existing handoff acknowledges isolated preview/controller ownership. These are not four-way approval of a concrete new shared schema. CORE and yacht must not be interrupted for acknowledgment while generating.
 
-UI must not directly modify renderer objects or physics variables. Audio must not create its own engine/throttle model. Numeric values and units must be explicit, not assumed. A missing interface triggers a narrow request to CORE, not an opportunistic cross-owner edit.
+**Module-local, not yet ratified for the new shared host:** yacht's documented `AtlasDCore` controller, `atlas-d-original-r7` identity, metre/second/radian units, local +X forward/+Y up, `sampleBottom(x,z) -> {known,bed}`, and `sampleWaveHeight(x,z,elapsed)`; multiplayer's XYZW pose convention and old Sea Lab 11 world identifiers. Preserve these documented semantics or explicitly map them; do not silently declare every module's axes or timestep identical.
 
-## 5. Bounded worker tickets
+**Still proposed / awaiting owner agreement and evidence:**
 
-### UI-01 — Primary driving HUD and collapsible controls
+1. CORE's versioned Sea Lab 12 descriptor: approved host/source SHA, schema revision, worldRevision tied to actual scene/configuration, coordinate/quaternion transforms, single simulation clock/timestep ownership, environment/water/depth semantics, per-vessel IDs/footprints, safe spawn and reconnect-restore hooks. The yacht's authored deep-water ground is not the same world as a Bay/Beaufort scene merely because both use Sea Lab code.
+2. Narrow host adapters, rather than copying the yacht's old host or directly wiring old Bay globals into new CORE. Chat 3 proposes a descriptor-injected adapter that fails closed without an approved production descriptor; this is an acknowledged proposal, not an accepted integrated implementation.
+3. Human contact schema: versioned vessel/deck/helm attachment IDs, vessel-local transforms, seat/hand/foot targets and capabilities, lifecycle on vessel switch, and receipt of the host's time and motion. CORE owns Bay attachments/current captain integration; yacht owns its attachments; HUMANS owns character behavior. No second vessel clock or duplicate captain.
+4. Character transport identity, pose/animation representation and local-versus-remote ownership agreed by HUMANS and multiplayer. This does not authorize shared crews, authoritative character physics or networking an unreviewed pose model.
 
-State: **NOT STARTED**. Logical owner: **HELM-UI**. Branch suggestion after baseline approval: `atlas/helm-ui-01`.
+## 5. Next unclaimed acceptance gap: XAC-01
 
-First audit: identify the primary driving actions, current clutter, duplicated bindings, obscured viewport and touch-layout problems. Then implement one focused pass on the driving HUD and map/settings shell in the exact approved files. Use the shared command/state API. CORE owns the physical 3D ignition switch, boat behavior and application wiring; UI owns its on-screen representation/bindings.
+**Gap:** independent acceptance of one agreed Sea Lab 12 integration descriptor and its yacht/human/multiplayer mappings. No explicit XAC-01 reviewer claim or four-way descriptor acceptance was visible in the discussions read for this revision. Do not reassign the already-claimed human first slice or multiplayer M1.
 
-Acceptance: ignition/gear/throttle/steering are discoverable; equivalent inputs dispatch equivalent commands; settings/map can collapse and restore; the view remains usable on desktop and phone; no hidden arbitrary speed blocker is reintroduced into gear selection; UI does not change simulation state directly. Use fixtures only as clearly labeled development scaffolding, never as real instrument output.
+**Next bounded iteration proposed, not launched:** at CORE's natural handoff, review one immutable descriptor against the three actual module handoffs; produce a single compatibility/ownership matrix and exact mismatches. Documentation/evidence review only, zero product-code edits. Isolated fixtures may support proposals but cannot earn combined acceptance.
 
-Out of scope: physics changes, a second map/depth engine, radio internals, wholesale redesign, backend/accounts/multiplayer and deployment.
+Prerequisites: CORE-approved candidate and descriptor revision; each owner's source/result SHA, isolated workdir/branch and exact files; authoritative Bay/yacht attachments. Until provided, mark the integration gate `PENDING CONTRACT/HANDOFF`, not a regression of the passed component tests. Independent work inside existing ownership continues; no wait/stop message to CORE or yacht.
 
-### AUDIO-01 — Engine sound lifecycle
+For subsequent combined browser acceptance, require exact build/URL and actual captures/logs showing: one active vessel controller and one shared time/water path; Bay/yacht switching with correct identity/footprint/unknown-depth behavior; one helm character attached to its vessel through calm/rough water, acceleration/braking/turning and switching; and, only once the existing multiplayer owner supplies the transport slice, two independent browsers exchanging client-owned motion with reconnect and local map/tool use not freezing the room. Compare frame-time/asset budgets against the same baseline; declare unsupported cases and physical-device coverage explicitly. No shared collisions/crews or authoritative-physics claims.
 
-State: **NOT STARTED**. Logical owner: **AUDIO**. Branch suggestion after baseline approval: `atlas/audio-01`.
-
-First audit: inventory existing audio, available assets and state/event signals. Implement one bounded engine start -> idle -> throttle/load -> shutdown pass, with a usable mute/volume path and clean lifecycle/resource handling. Consume the approved snapshot/events. Keep audio code inside the exact allowlist; send integration needs to CORE.
-
-Acceptance: audible state follows the actual engine, rapid start/stop does not stack duplicate sound sources, mute/unmute works, pause/resume behavior is explicit, asset origins/licenses are recorded, and before/after audio evidence is supplied where the tools allow. Mark subjective realism as subjective; do not call synthesized placeholders real recordings or claim 100% realism.
-
-Radio is a separate feasibility note in this pass: verify current official YouTube/Spotify integration and browser playback constraints before promising capabilities. Do not rip media, bypass provider controls or assume every provider can be routed into a spatial Web Audio speaker. No paid service signup, new credentials or additional spend.
-
-Out of scope: UI redesign, physics/engine-model changes, optional damage effects and deployment.
-
-### QA-01 — Baseline and integration regression report
-
-State: **NOT STARTED**. Logical owner: **QA**. Read-only application checkout; reports/artifacts only in an approved location.
-
-First capture baseline evidence for the exact source/URL supplied by CORE. Test the integration candidate against that same baseline. Do not fix bugs in worker-owned code, alter product settings persistently outside the test, or deploy.
-
-Proposed viewport coverage: desktop 1600x1000, phone 430x932, small phone 390x844, landscape 844x390. These are test targets, not claims of completed testing.
-
-Regression set: ignition consistency; forward/neutral/reverse requests without the old arbitrary speed blocker; equivalent throttle/steering inputs; visible water and boat-pose agreement; depth validity and grounding; weather controls; map toggle; UI hide/restore; audio transitions/mute; graphics-quality switching; optional exaggerated effects OFF by default; existing save/load and test-lab functions where present. Mark unavailable features NOT IMPLEMENTED rather than inventing results.
-
-Acceptance: reproducible PASS/FAIL/NOT RUN findings, exact build/URL, steps and evidence; performance measured against the same device/settings baseline; no new unexplained runtime errors; actual screenshots rather than generated illustrations. QA proposes severity and integration readiness; CORE owns fixes and release.
-
-## 6. Coordination and integration protocol
-
-1. One named owner, one bounded task, one branch and isolated working directory/worktree. Different chat tabs are not filesystem isolation.
-2. CORE allocates exact files before writes. No direct pushes to `main`, force pushes, shared-work resets, dependency/lockfile changes or workflow/deployment edits by specialists.
-3. Dispatch/claim and handoff happen in this PR discussion, not through assumptions about project memory. A task is RUNNING only after a real launch/claim with an actual session identifier when available. Prepared prompts do not count.
-4. Each worker posts its own report comment or coordinator-approved per-worker report. Do not have all agents race to edit one status file. Read the latest relevant handoff at each task boundary. If connector writes are unavailable, return a handoff for the execution lead to post; do not claim it was posted.
-5. CORE reviews and merges UI/audio into one integration candidate, reruns affected tests and obtains QA evidence. Passing an isolated branch is not proof that the merged application works.
-6. CORE is the only application integrator/deployer. Preserve the previous working release. No auto-merge or auto-deploy from this documentation setup or a worker's completion report. Verify the exact final preview URL before claiming publication.
-
-Required handoff:
+## 6. Required handoff at each bounded task boundary
 
 ```text
-Task and actual worker/session:
-State: NOT STARTED | RUNNING | BLOCKED | READY FOR REVIEW | ACCEPTED
-Baseline SHA / result SHA or patch:
-Branch / workspace:
-Exact changed files:
-Commands run and real results:
-Screenshot / audio / test evidence:
-Requested contract changes:
-Known limitations and checks NOT RUN:
-Next single action:
+Task ID / actual session or local task:
+State: RUNNING | BLOCKED | READY FOR REVIEW | ACCEPTED (scope stated)
+Source SHA / result SHA / public artifact SHA, or UNAVAILABLE:
+Actual isolated branch / absolute workdir:
+Exact reserved files / exact changed files / generated outputs:
+Contract revision consumed; explicit ACK or proposed delta:
+Narrow adapter boundary and receiving owner:
+Commands actually run / PASS, FAIL, NOT RUN:
+Run/job/artifact IDs and exact tested URL:
+Actual browser captures/video, runtime errors and baseline performance:
+Blocker, independent work still possible, next single bounded iteration:
 ```
 
-## 7. Launch prompts
+HUMANS currently reports missing authoritative attachment/capability coordinates and an approved shared SHA; parent-thread messaging is unavailable on its host, so use PR #1 rather than assuming direct delivery. The local orchestrator should allocate a browser slot when that existing worker's preview is ready; no slot or test launch is claimed by this record. Multiplayer reports a failed registry DNS attempt and continued permitted retrieval checks; record the eventual evidence rather than assuming a permanent install or hosting blocker.
 
-### Preferred: paste into the existing builder in a subagent-enabled Work/Codex environment
+No duplicate implementations; no new paid services, credentials, permission changes, purchases or account changes. No new merge/deployment authority. Keep production and the yacht's labeled isolated preview distinct. This revision changes coordination records only.
 
-```text
-Continue as CORE and the sole application integrator for the ATLAS boat simulator. Preserve your existing in-flight work; do not start a replacement implementation.
+## Claim/acknowledgment sources
 
-Read atlas_coordination/PARALLEL_WORK.md from branch atlas/parallel-coordination-20261015 in owensto/helper and its associated coordination PR. Execute its first bounded work cycle, not the entire roadmap.
-
-First actually launch three subagents for HELM-UI, AUDIO and read-only QA audits of the current identified snapshot. Do not launch another CORE or coordinator. Record real worker IDs/statuses. While those audits run, post your current source/commit, uncommitted reservations, entry point, test commands, minimal state/command/event contract and exact worker file allowlists. Preserve Sea Lab 12 work already underway.
-
-After the source baseline and contract are recorded, permit HELM-UI to implement UI-01 and AUDIO to implement AUDIO-01 in separate worktrees/checkouts based on that baseline. QA stays read-only on product code. Maximum three code writers including you; no recursive spawning and no automatic deployment.
-
-Gather concrete patches, tests and handoffs, integrate only reviewed work, and report the actual results. If this environment has no subagent launcher, explicitly report NOT LAUNCHED and return the three standalone briefs; do not present plans, branches or prompts as running agents.
-```
-
-### Standalone new ChatGPT conversation fallback
-
-Create three conversations inside the existing Atlas D project and give each this instruction with the corresponding role/ticket substituted:
-
-```text
-You are the ATLAS <HELM-UI / AUDIO / QA> specialist, assigned only <UI-01 / AUDIO-01 / QA-01>. Read the coordination packet at atlas_coordination/PARALLEL_WORK.md on branch atlas/parallel-coordination-20261015 in GitHub repository owensto/helper and its coordination PR. The original boat chat owns CORE, shared interfaces, integration and deployment.
-
-Begin with a read-only audit of the identified current build. Before any code edits, obtain the approved baseline, exact file allowlist and contract from the execution lead. Work only in an isolated checkout/branch, do not change shared files or deploy, and return the packet's required evidence-backed handoff. Missing tool access or source is a stated blocker, not permission to fabricate results. Do not assume other chats see your status automatically.
-```
-
-## 8. Platform facts checked against official documentation
-
-- ChatGPT Work exposes subagent delegation to eligible accounts; current Codex clients support explicit subagent requests. Subagents are not automatically new full ChatGPT Pro sidebar conversations, and this packet does not establish which model/entitlement a specific worker uses.
-- Codex is available with ChatGPT plans including Pro; usage limits and available execution surfaces depend on the plan, rollout and workspace settings. Parallel agents consume additional usage; no unlimited-concurrency guarantee is assumed.
-- Codex worktrees isolate checkouts. In the documented desktop workflow, choose Worktree in the new chat composer and select the source branch before submitting the task.
-- Project conversations can be branched, but shared project context is not a live task queue, code lock or automatic handoff system.
-
-Official sources checked October 15, 2026:
-- https://developers.openai.com/codex/agent-configuration/subagents
-- https://developers.openai.com/codex/environments/git-worktrees
-- https://help.openai.com/en/articles/11369540-using-codex-with-your-chatgpt-plan
-- https://help.openai.com/en/articles/10169521-projects-in-chatgpt
+- https://github.com/owensto/helper/pull/1#issuecomment-6207822353
+- https://github.com/owensto/helper/pull/1#issuecomment-6207977321
+- https://github.com/owensto/helper/pull/1#issuecomment-6207985116
+- https://github.com/owensto/helper/pull/2#issuecomment-6207983343
+- https://github.com/owensto/helper/blob/edeb60f130bf7125a3056d02220e9108a1ddf7a0/atlas_d_simulator_01/HANDOFF.md
+- https://github.com/owensto/helper/blob/edeb60f130bf7125a3056d02220e9108a1ddf7a0/atlas_d_simulator_01/README.md
+- https://github.com/owensto/helper/blob/98f535cf7d01ba8a5cde8acfc4d3378990dbd77e/atlas_multiplayer/README.md
