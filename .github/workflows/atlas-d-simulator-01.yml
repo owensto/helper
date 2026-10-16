@@ -49,6 +49,7 @@ jobs:
           python -m http.server 8918 --bind 127.0.0.1 --directory . >atlas_d_simulator_01/contact/y4/evidence/http.log 2>&1 &
           sleep 2
           python atlas_d_simulator_01/contact/y4/verify.py
+          node atlas_d_simulator_01/contact/y4/test-preview.cjs --audit-browser
       - name: Hash artifact without publishing or repository writes
         if: always()
         run: |
