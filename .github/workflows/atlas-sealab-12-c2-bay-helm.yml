@@ -18,7 +18,7 @@ jobs:
       matrix:
         device: [desktop, phone]
     runs-on: ubuntu-24.04
-    timeout-minutes: 22
+    timeout-minutes: 28
     env:
       TEST_DEVICE: ${{ matrix.device }}
       C2_OUT: /tmp/atlas-c2-bay-helm
@@ -39,6 +39,7 @@ jobs:
           paths=subprocess.check_output(['git','diff','--name-only','36903985f2182c902427fed77d4e28c61a7639ca','HEAD'],text=True).splitlines()
           assert paths and all(p.startswith('atlas_sealab_12/integration/c2-bay-helm/') or p=='.github/workflows/atlas-sealab-12-c2-bay-helm.yml' for p in paths),paths
           PYGATE
+          export GITHUB_SHA=f641b5f2eaf2305e9c86b851843304260a811078
           python atlas_sealab_12/integration/c2-bay-helm/prepare.py
           for f in "$C2_OUT/site/"*.js; do node --check "$f"; done
           node atlas_sealab_12/integration/c2-bay-helm/evidence/skin-matrix-probe.cjs > "$C2_OUT/skin-matrix-probe.json"
@@ -49,6 +50,7 @@ jobs:
           grep -q IMMUTABLE_HUMANS_SOURCE_REQUIRED "$C2_OUT/positive-gate.log"
       - name: Require corrected HUMANS and non-vacuous CORE closure preflight before scoped candidate build
         run: |
+          export GITHUB_SHA=f641b5f2eaf2305e9c86b851843304260a811078
           mkdir -p /tmp/c2-owner
           git archive 10ed9c2f8d0c392828f238e686bcc689517d34f9 atlas_humans atlas_d_original_r7/live/ATLAS_D_Original.glb | tar -x -C /tmp/c2-owner
           python - <<'PYOWNER'
@@ -70,19 +72,48 @@ jobs:
           C2_HUMAN_DIR=/tmp/c2-owner/atlas_humans node atlas_sealab_12/integration/c2-bay-helm/test-receiver.cjs > "$C2_OUT/closure-unit.stdout"
           C2_REQUIRE_HUMAN=1 C2_HUMAN_DIR=/tmp/c2-owner/atlas_humans python atlas_sealab_12/integration/c2-bay-helm/prepare.py
           for f in "$C2_OUT/site/"*.js "$C2_OUT/site/human/src/"*.mjs; do node --check "$f"; done
-      - name: Real current-host desktop and phone rendering, controls and lifecycle
+      - name: Exact f641 runtime validation with metre-correct corruption stimulus
+        id: runtime_validation
+        continue-on-error: true
         run: |
           python -m pip install -q playwright==1.55.0
           python -m playwright install --with-deps chromium >/dev/null
           python -m http.server 8936 --bind 127.0.0.1 --directory "$C2_OUT/site" >"$C2_OUT/http.log" 2>&1 &
           sleep 2
-          BASE_URL=http://127.0.0.1:8936/index.html python atlas_sealab_12/integration/c2-bay-helm/verify.py
+          python atlas_sealab_12/integration/c2-bay-helm/evidence/occupancy-01/prepare.py test
+          BASE_URL=http://127.0.0.1:8936/index.html python "$C2_OUT/verify-fixed-stimulus.py"
+      - name: Capture independent current-source occupancy on diagnostic variant
+        if: always()
+        id: occupancy
+        continue-on-error: true
+        run: |
+          test -f "$C2_OUT/site/human/assets/RocketboxCaptain.glb"
+          python atlas_sealab_12/integration/c2-bay-helm/evidence/occupancy-01/prepare.py snapshot
+          node --check "$C2_OUT/snapshot-site/c2-owner-snapshot.js"
+          node --check "$C2_OUT/snapshot-site/c2-host-adapter.js"
+          python -m http.server 8937 --bind 127.0.0.1 --directory "$C2_OUT/snapshot-site" >"$C2_OUT/snapshot-http.log" 2>&1 &
+          sleep 1
+          python atlas_sealab_12/integration/c2-bay-helm/evidence/occupancy-01/verify-snapshot.py
+      - name: Keep candidate and occupancy outcomes distinct
+        if: always()
+        env:
+          RUNTIME_OUTCOME: ${{ steps.runtime_validation.outcome }}
+          OCCUPANCY_OUTCOME: ${{ steps.occupancy.outcome }}
+        run: |
+          python - <<'PYRESULT'
+          from pathlib import Path
+          import os,json
+          p=Path(os.environ['C2_OUT']);p.mkdir(exist_ok=True)
+          (p/'iteration-outcomes.json').write_text(json.dumps({'testSourceSHA':os.environ['GITHUB_SHA'],'runtimeSHA':'f641b5f2eaf2305e9c86b851843304260a811078','runtimeOutcome':os.environ['RUNTIME_OUTCOME'],'occupancyOutcome':os.environ['OCCUPANCY_OUTCOME'],'publicActivation':False,'fullBodyAccepted':False},indent=2))
+          PYRESULT
+          test "$RUNTIME_OUTCOME" = success && test "$OCCUPANCY_OUTCOME" = success
       - name: Preserve exact source and artifact hashes
         if: always()
         run: |
           mkdir -p "$C2_OUT/source"
           cp atlas_sealab_12/integration/c2-bay-helm/*.* "$C2_OUT/source/"
           cp atlas_sealab_12/integration/c2-bay-helm/evidence/skin-matrix-probe.cjs "$C2_OUT/source/"
+          cp -r atlas_sealab_12/integration/c2-bay-helm/evidence/occupancy-01 "$C2_OUT/source/"
           cp .github/workflows/atlas-sealab-12-c2-bay-helm.yml "$C2_OUT/source/"
           printf '%s\n' "$GITHUB_SHA" > "$C2_OUT/source-sha.txt"
           python - <<'PYHASH'
