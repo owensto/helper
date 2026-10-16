@@ -34,7 +34,12 @@ export function makeCaptain12Build({
       revision = null;
       if (reason !== lastFailure) {
         lastFailure = reason;
-        onUnsupported(reason);
+        // Diagnostics are never allowed to escape the render/initialization boundary.
+        try {
+          onUnsupported(reason);
+        } catch {
+          /* The attachment is already hidden. */
+        }
       }
       return { valid: false, reason };
     };
@@ -67,12 +72,11 @@ export function makeCaptain12Build({
           )
         )
           return hide("RENDER_TRANSFORM_MISMATCH");
-        const key =
-          sample.attachment.vesselId +
-          ":" +
-          sample.attachment.revision +
-          ":" +
-          sample.frame.epoch;
+        const key = JSON.stringify([
+          sample.attachment.vesselId,
+          sample.attachment.revision,
+          sample.frame.epoch,
+        ]);
         if (key !== revision) {
           contact = new CharacterContact(sample.attachment);
           revision = key;

@@ -174,3 +174,64 @@ test("captain detached from its supplied vessel stays unsupported", () => {
     "CAPTAIN_DETACHED",
   );
 });
+
+test("H3 throwing diagnostic sink is contained during init, invalid hide and exception catch", () => {
+  const group = new Group(),
+    visual = new Group(),
+    boat = new Group();
+  group.add(visual);
+  boat.add(group);
+  let sample = { valid: false, reason: "owner missing" },
+    calls = 0,
+    reports = 0,
+    factory;
+  const build = makeCaptain12Build({
+    rig: {
+      group,
+      update: () => {
+        calls++;
+      },
+    },
+    sampleHost: () => {
+      if (sample instanceof Error) throw sample;
+      return sample;
+    },
+    onUnsupported: () => {
+      reports++;
+      throw new Error("sink failed");
+    },
+  });
+  assert.doesNotThrow(() => (factory = build()));
+  assert.equal(visual.visible, false);
+  for (const bad of [
+    { valid: false, reason: "owner missing" },
+    new Error("owner threw"),
+    {
+      valid: true,
+      attachment,
+      frame: { epoch: "e", time: 1, dt: 0.01 },
+      transform: {},
+    },
+  ]) {
+    sample = bad;
+    let result;
+    assert.doesNotThrow(
+      () => (result = factory.group.userData.animateCaptain({ boat }, {})),
+    );
+    assert.equal(result.valid, false);
+    assert.equal(visual.visible, false);
+    assert.equal(calls, 0);
+  }
+  assert.equal(reports, 4);
+  sample = {
+    valid: true,
+    attachment,
+    frame: { epoch: "e", time: 1, dt: 0 },
+    transform: stamp(boat, "e", 1),
+  };
+  assert.doesNotThrow(() =>
+    factory.group.userData.animateCaptain({ boat }, {}),
+  );
+  assert.equal(calls, 1);
+  assert.equal(visual.visible, true);
+});

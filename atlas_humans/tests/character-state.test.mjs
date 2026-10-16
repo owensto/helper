@@ -33,3 +33,49 @@ test("remote pose accepts only expected identity/geometry and increasing sequenc
     false,
   );
 });
+
+test("H3 rejects identities missing from both packet and expected context", () => {
+  const packet = { ...value },
+    expected = { ...authority };
+  for (const key of ["characterId", "vesselId", "geometryRevision"]) {
+    delete packet[key];
+    delete expected[key];
+  }
+  assert.equal(readRemoteCharacter(packet, expected).valid, false);
+});
+test("H3 rejects empty identities on both packet and expected context", () => {
+  for (const key of ["characterId", "vesselId", "geometryRevision"]) {
+    for (const bad of ["", "   ", null, undefined, 7])
+      assert.equal(
+        readRemoteCharacter(
+          { ...value, [key]: bad },
+          { ...authority, [key]: bad },
+        ).valid,
+        false,
+        key + String(bad),
+      );
+  }
+});
+test("H3 rejects NaN and malformed sequence cursors before comparison", () => {
+  for (const afterSequence of [NaN, Infinity, -Infinity, -2, 0.5, "1", null])
+    assert.equal(
+      readRemoteCharacter(value, { ...authority, afterSequence }).valid,
+      false,
+      String(afterSequence),
+    );
+  assert.equal(
+    readRemoteCharacter(value, { ...authority, afterSequence: -1 }).valid,
+    true,
+  );
+  assert.equal(
+    readRemoteCharacter(value, { ...authority, afterSequence: 1 }).valid,
+    true,
+  );
+});
+test("H3 missing expected context rejects without throwing", () => {
+  for (const expected of [undefined, null, {}, 7]) {
+    let result;
+    assert.doesNotThrow(() => (result = readRemoteCharacter(value, expected)));
+    assert.equal(result.valid, false);
+  }
+});

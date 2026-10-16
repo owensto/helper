@@ -1,7 +1,7 @@
 {
-  "src/captain12-adapter.mjs": "f9c77fad7f2ee8fbfe7d96a777564ccbc4f1c01b7dde748b75a98652eb93000f",
-  "src/character-state.mjs": "627839c1d5b4751040d8415583f66cf45d7b4cd94db0885d6d92c17b2f59e246",
-  "src/contact.mjs": "0e3ab387a8fc350d8f8c27bca80c9799cecad03cb5917ae1d33c74ce365169de",
+  "src/captain12-adapter.mjs": "6d7d236df974b1141ee3b3d45631adeffbd5646720336a40b7c6fa0bb7cdaa3e",
+  "src/character-state.mjs": "925097cc4e07201aa9d6dbab2f0dcd2443ad255949bedd5c9d201d47a6224642",
+  "src/contact.mjs": "67d53b36ebe9469abc827f89a20e4f8e68358cbdb79fce2dc3eea065c937d218",
   "src/demo.mjs": "77cfa5a57ff09f6a3f01ad6214d56400650d4f2021ba9382a3ada26a9df98ddf",
   "src/ik.mjs": "c52d8bf15e8c6613915547c31179e8058b6afae074b733b20f3ed5fc448a9b3d",
   "src/locomotion.mjs": "4fef78108b5d476c8ac4555afa032508c151f8ef8b5daff1e43318899b0c6f8e",

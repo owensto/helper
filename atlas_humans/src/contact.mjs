@@ -93,27 +93,38 @@ export function characterSnapshot(
 ) {
   if (
     typeof simulationEpoch !== "string" ||
-    !simulationEpoch ||
+    !simulationEpoch.trim() ||
     simulationEpoch.length > 128
   )
     throw new TypeError("Explicit host simulation epoch required");
   if (
     typeof characterId !== "string" ||
-    !characterId ||
+    !characterId.trim() ||
     characterId.length > 96
   )
     throw new TypeError("character identity required");
+  if (
+    !pose ||
+    typeof pose.vesselId !== "string" ||
+    !pose.vesselId.trim() ||
+    pose.vesselId.length > 128 ||
+    typeof pose.geometryRevision !== "string" ||
+    !pose.geometryRevision.trim() ||
+    pose.geometryRevision.length > 256
+  )
+    throw new TypeError("Explicit vessel and geometry identities required");
   if (!Number.isSafeInteger(sequence) || sequence < 0)
     throw new TypeError("sequence required");
   if (
     !["helm", "idle", "walk"].includes(pose.mode) ||
     !Number.isFinite(pose.time) ||
+    pose.time < 0 ||
     !Array.isArray(pose.seat) ||
     pose.seat.length !== 3 ||
-    !pose.seat.every(Number.isFinite) ||
+    !pose.seat.every((v) => Number.isFinite(v) && Math.abs(v) < 1000) ||
     !Array.isArray(pose.lean) ||
     pose.lean.length !== 2 ||
-    !pose.lean.every(Number.isFinite)
+    !pose.lean.every((v) => Number.isFinite(v) && Math.abs(v) <= 0.5)
   )
     throw new TypeError("Invalid pose");
   return {
