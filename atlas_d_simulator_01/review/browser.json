@@ -319,8 +319,8 @@
         "state": {
           "version": 1,
           "vesselId": "atlas-d-original-r7",
-          "sequence": 0,
-          "elapsed": 0,
+          "sequence": 105,
+          "elapsed": 1.7499999999999987,
           "x": 0,
           "z": 0,
           "heading": 0,
@@ -341,11 +341,11 @@
           "contact": false,
           "draftM": 4.506932258605957,
           "depthKnown": true,
-          "waterDepthM": 53.99965430452593,
-          "clearanceM": 49.46195481929743,
-          "heaveM": 0,
-          "pitch": -0.0002049676849664509,
-          "roll": -0.00085310917454099
+          "waterDepthM": 53.994317855335694,
+          "clearanceM": 49.45661837010719,
+          "heaveM": -0.005336449190240639,
+          "pitch": 0.00016533570813491517,
+          "roll": 0.0005740917577408334
         },
         "camera": "orbit",
         "originalHullScale": [
@@ -376,20 +376,20 @@
         "pixelRatio": 0.35,
         "detail": "smooth",
         "softwareRendering": true,
-        "frameCount": 3,
+        "frameCount": 2,
         "drawCalls": 141,
         "triangles": 289083,
         "hostSuspended": true,
         "waterLocation": "atlasd-proving",
         "tenderChase": [
-          -22.999999516864857,
-          0.0192171092137245,
-          16.99998979196546
+          -22.999999685637192,
+          -0.01889872917886494,
+          16.999995015447812
         ],
         "tenderUtility": [
-          -9.999999789941242,
-          0.01672315276253464,
-          17.199992755302386
+          -9.999999863320518,
+          -0.016864184120337068,
+          17.19999697936121
         ]
       },
       "primaryControls": [
@@ -449,8 +449,8 @@
         "state": {
           "version": 1,
           "vesselId": "atlas-d-original-r7",
-          "sequence": 6360,
-          "elapsed": 105.99999999999527,
+          "sequence": 6465,
+          "elapsed": 107.74999999999517,
           "x": 17.219877745550768,
           "z": 0,
           "heading": 0,
@@ -471,11 +471,11 @@
           "contact": false,
           "draftM": 4.506932258605957,
           "depthKnown": true,
-          "waterDepthM": 53.99177290587187,
-          "clearanceM": 49.4317118554082,
-          "heaveM": -0.006981939442785285,
-          "pitch": -0.0003055207563617329,
-          "roll": -0.00084811531480324
+          "waterDepthM": 54.00179333888977,
+          "clearanceM": 49.4417322884261,
+          "heaveM": 0.003038493575112328,
+          "pitch": 0.00031619497162957893,
+          "roll": 0.00010469990517198741
         },
         "camera": "orbit",
         "originalHullScale": [
@@ -506,20 +506,20 @@
         "pixelRatio": 0.35,
         "detail": "smooth",
         "softwareRendering": true,
-        "frameCount": 3,
+        "frameCount": 2,
         "drawCalls": 141,
         "triangles": 289083,
         "hostSuspended": true,
         "waterLocation": "atlasd-proving",
         "tenderChase": [
-          -17.599723147210497,
-          1.3056657462657255,
-          2.36888746105719
+          -17.600531262075755,
+          1.2917803264448724,
+          2.3701348296973204
         ],
         "tenderUtility": [
-          -18.87972186676795,
-          1.302036746398077,
-          -2.371110936990321
+          -18.88052997738596,
+          1.291871874801774,
+          -2.3698649578158446
         ]
       },
       "submerged": {
@@ -528,8 +528,8 @@
         "state": {
           "version": 1,
           "vesselId": "atlas-d-original-r7",
-          "sequence": 15360,
-          "elapsed": 256.00000000009584,
+          "sequence": 15465,
+          "elapsed": 257.75000000009425,
           "x": 17.27998429254641,
           "z": 0,
           "heading": 0,
@@ -550,11 +550,11 @@
           "contact": false,
           "draftM": 4.506932258605957,
           "depthKnown": true,
-          "waterDepthM": 53.99870285702054,
-          "clearanceM": 31.438538265373232,
-          "heaveM": -4.656665183871446e-05,
-          "pitch": 4.125255956984254e-06,
-          "roll": 7.901992827141943e-06
+          "waterDepthM": 53.99882458885042,
+          "clearanceM": 31.43865999720311,
+          "heaveM": 7.51651780398699e-05,
+          "pitch": -3.44642544179402e-06,
+          "roll": -7.542554398821398e-06
         },
         "camera": "subsea",
         "originalHullScale": [
@@ -585,20 +585,20 @@
         "pixelRatio": 0.35,
         "detail": "smooth",
         "softwareRendering": true,
-        "frameCount": 3,
-        "drawCalls": 110,
-        "triangles": 260383,
+        "frameCount": 2,
+        "drawCalls": 142,
+        "triangles": 289671,
         "hostSuspended": true,
         "waterLocation": "atlasd-proving",
         "tenderChase": [
-          -17.54002076481408,
-          -16.700208983520678,
-          2.370010156940334
+          -17.540010921718107,
+          -16.699787002164708,
+          2.3699900792661683
         ],
         "tenderUtility": [
-          -18.820019544100063,
-          -16.700176808399075,
-          -2.369989614071569
+          -18.820009701007386,
+          -16.69981834245047,
+          -2.37000969175044
         ]
       },
       "originalBayRestored": true,

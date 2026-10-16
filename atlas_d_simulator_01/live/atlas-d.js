@@ -134,6 +134,8 @@ function updateCamera(dt){
   lastPosition=group.position.clone();const k=state.conversion;
   const eye=view==='bridge'?[7,12.8-4.6*k,0]:view==='helipad'?[30,8.8,0]:view==='subsea'?[-85,6,48]:[-93,34,48];
   const at=view==='bridge'?[75,11.8-4.6*k,0]:view==='helipad'?[75,7.8,0]:[0,4,0];
+  // ATLAS_D_PORTRAIT_03: dolly exterior views back to fit portrait aspect.
+  if((view==='follow'||view==='subsea')&&innerWidth<innerHeight){const zoom=Math.max(1,0.92/(innerWidth/innerHeight));eye[0]*=zoom;eye[2]*=zoom;}
   const desired=local(eye);if(view==='follow'&&dt>0)camera.position.lerp(desired,1-Math.exp(-3*dt));else camera.position.copy(desired);camera.lookAt(local(at));
 }
 function draw(dt){
