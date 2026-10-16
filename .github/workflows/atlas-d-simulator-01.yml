@@ -1,16 +1,16 @@
-name: ATLAS D Y5 isolated same-session rotation review
+name: ATLAS D Y6 isolated responsiveness review
 on:
   push:
-    branches: ['atlas-d/yacht-rotation-y5-20261016']
-    paths: ['.github/workflows/atlas-d-simulator-01.yml','atlas_d_simulator_01/contact/y5/**']
+    branches: ['atlas-d/yacht-responsiveness-y6-20261016']
+    paths: ['.github/workflows/atlas-d-simulator-01.yml','atlas_d_simulator_01/contact/y6/**']
 permissions:
   contents: write
 concurrency:
-  group: atlas-d-y5-rotation-isolated
+  group: atlas-d-y6-responsiveness-isolated
   cancel-in-progress: true
 jobs:
   review:
-    if: github.ref == 'refs/heads/atlas-d/yacht-rotation-y5-20261016'
+    if: github.ref == 'refs/heads/atlas-d/yacht-responsiveness-y6-20261016'
     strategy:
       fail-fast: false
       matrix:
@@ -30,39 +30,42 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - name: Preserve exact Y4 and existing controller/contact regressions
+      - name: Preserve exact baseline and existing regressions
         run: |
-          python atlas_d_simulator_01/contact/y5/prepare.py
+          python atlas_d_simulator_01/contact/y6/prepare.py
           npm ci --ignore-scripts --omit=dev --prefix atlas_d_simulator_01/contact/y2/dependencies/humans
-          node atlas_d_simulator_01/contact/y4/test-preview.cjs > atlas_d_simulator_01/contact/y5/evidence/y4-tests.json
-          node atlas_d_simulator_01/contact/y3/test-wheel.cjs > atlas_d_simulator_01/contact/y5/evidence/y3-tests.json
-          node atlas_d_simulator_01/contact/y2/test-helm.cjs > atlas_d_simulator_01/contact/y5/evidence/y2-tests.json
-          node atlas_d_simulator_01/contact/test-attachments.cjs > atlas_d_simulator_01/contact/y5/evidence/y1-tests.json
-          node atlas_d_simulator_01/test-core.cjs > atlas_d_simulator_01/contact/y5/evidence/core-tests.json
-      - name: Actual unchanged Y4 rotation with current-size screenshots and independent audit
+          node --check atlas_d_simulator_01/contact/y6/measure.js
+          node atlas_d_simulator_01/contact/y4/test-preview.cjs > atlas_d_simulator_01/contact/y6/evidence/y4-tests.json
+          node atlas_d_simulator_01/contact/y3/test-wheel.cjs > atlas_d_simulator_01/contact/y6/evidence/y3-tests.json
+          node atlas_d_simulator_01/contact/y2/test-helm.cjs > atlas_d_simulator_01/contact/y6/evidence/y2-tests.json
+          node atlas_d_simulator_01/contact/test-attachments.cjs > atlas_d_simulator_01/contact/y6/evidence/y1-tests.json
+          node atlas_d_simulator_01/test-core.cjs > atlas_d_simulator_01/contact/y6/evidence/core-tests.json
+      - name: Repeated normal RAF, preview CPU and trusted touch latency
         env:
           LAYOUT: ${{ matrix.layout }}
-          ENTRY: y4
         run: |
           python -m pip install -q playwright==1.55.0
           python -m playwright install --with-deps chromium >/dev/null
-          python -m http.server 8919 --bind 127.0.0.1 --directory . >atlas_d_simulator_01/contact/y5/evidence/http.log 2>&1 &
+          python -m http.server 8920 --bind 127.0.0.1 --directory . >atlas_d_simulator_01/contact/y6/evidence/http.log 2>&1 &
           sleep 2
-          python atlas_d_simulator_01/contact/y5/verify.py
-          node atlas_d_simulator_01/contact/y5/test-rotation.cjs
-      - name: Record exact evidence only
+          python atlas_d_simulator_01/contact/y6/verify.py
+          python atlas_d_simulator_01/contact/y6/analyze.py
+          node atlas_d_simulator_01/contact/y6/test-metrics.cjs
+      - name: Preserve evidence without publication
         if: always()
         run: |
           python - <<'PY'
           from pathlib import Path
-          import hashlib,json,os
-          r=Path('atlas_d_simulator_01/contact/y5');e=r/'evidence';e.mkdir(exist_ok=True)
-          files={str(p.relative_to(r)):hashlib.sha256(p.read_bytes()).hexdigest() for p in r.rglob('*') if p.is_file() and p.name!='artifact-manifest.json'}
-          (e/'artifact-manifest.json').write_text(json.dumps({'sourceCommit':'e30edc8e33b863f3fafb303be0050cc86b7900f0','resultSourceCommit':os.environ['GITHUB_SHA'],'branch':os.environ['GITHUB_REF_NAME'],'productionEnabled':False,'files':files},indent=2))
+          import json,hashlib,os
+          r=Path('atlas_d_simulator_01/contact/y6');e=r/'evidence';e.mkdir(exist_ok=True)
+          files={str(p.relative_to(r)):hashlib.sha256(p.read_bytes()).hexdigest() for p in r.rglob('*') if p.is_file() and '__pycache__' not in p.parts and p.name!='artifact-manifest.json'}
+          (e/'artifact-manifest.json').write_text(json.dumps({'runtimeBaseline':'e30edc8e33b863f3fafb303be0050cc86b7900f0','branchBaseline':'ed1c8cc76d4c446f4ddeb59c78e120f948a0dacd','resultSourceCommit':os.environ['GITHUB_SHA'],'branch':os.environ['GITHUB_REF_NAME'],'productionEnabled':False,'files':files},indent=2))
           PY
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: ATLAS-D-Y5-${{ matrix.layout }}-rotation-review
-          path: atlas_d_simulator_01/contact/y5/
+          name: ATLAS-D-Y6-${{ matrix.layout }}-responsiveness
+          path: |
+            atlas_d_simulator_01/contact/y6/
+            !atlas_d_simulator_01/contact/y6/__pycache__/**
           retention-days: 7
