@@ -1,0 +1,15 @@
+{
+  "status": "Public assets, real-time motion and desktop/phone browser operation passed",
+  "url": "https://rawcdn.githack.com/owensto/helper/84360b1fd29998fd70d68d8c4c48cb7e28d494bd/atlas_d_simulator_01/live/index.html",
+  "publishedCommit": "84360b1fd29998fd70d68d8c4c48cb7e28d494bd",
+  "vesselId": "atlas-d-original-r7",
+  "originalAssetBytes": 9043328,
+  "coreTests": 22,
+  "publicExactAssets": true,
+  "publicRealTimeMotionTested": true,
+  "hostConfirmationObserved": true,
+  "multiplayer": false,
+  "sharedSeaLab12Merged": false,
+  "physicalDeviceTested": false,
+  "engineeringValidated": false
+}

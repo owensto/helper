@@ -1,0 +1,614 @@
+{
+  "passed": true,
+  "public": true,
+  "baseURL": "https://rawcdn.githack.com/owensto/helper/84360b1fd29998fd70d68d8c4c48cb7e28d494bd/atlas_d_simulator_01/live/index.html",
+  "physicalDeviceTested": false,
+  "multiplayerTested": false,
+  "devices": [
+    {
+      "device": "desktop",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "passed": true,
+      "public": true,
+      "initial": {
+        "ready": true,
+        "active": true,
+        "state": {
+          "version": 1,
+          "vesselId": "atlas-d-original-r7",
+          "sequence": 132,
+          "elapsed": 2.199999999999997,
+          "x": 0,
+          "z": 0,
+          "heading": 0,
+          "speedMps": 0,
+          "yawRate": 0,
+          "depthM": 0,
+          "verticalMps": 0,
+          "targetDepthM": 18,
+          "engine": false,
+          "gear": 0,
+          "throttle": 0,
+          "rudder": 0,
+          "bowThruster": 0,
+          "conversion": 0,
+          "mode": "surface",
+          "ballast": 0,
+          "paused": false,
+          "contact": false,
+          "draftM": 4.506932258605957,
+          "depthKnown": true,
+          "waterDepthM": 53.99668494659193,
+          "clearanceM": 49.458985461363426,
+          "heaveM": -0.002969357934005417,
+          "pitch": 0.00023504027345089463,
+          "roll": 0.0003469637004909545
+        },
+        "camera": "orbit",
+        "originalHullScale": [
+          1,
+          1,
+          1
+        ],
+        "originalHullVisible": true,
+        "originalRootY": 0,
+        "sourceScaleTracks": 0,
+        "retainedTracks": 46,
+        "geometricHullBounds": {
+          "min": [
+            -41.403499603271484,
+            -4.506932258605957,
+            -7.128942966461182
+          ],
+          "max": [
+            41.45000076293945,
+            6.449999809265137,
+            7.128942966461182
+          ]
+        },
+        "sourceAsset": "assets/ATLAS_D_Original.glb",
+        "sourceRevision": 7,
+        "multiplayer": false,
+        "simulationOnly": true,
+        "pixelRatio": 0.35,
+        "detail": "smooth",
+        "softwareRendering": true,
+        "frameCount": 3,
+        "drawCalls": 141,
+        "triangles": 289083,
+        "hostSuspended": true,
+        "waterLocation": "atlasd-proving",
+        "tenderChase": [
+          -22.999999364694805,
+          -0.014273666638210156,
+          16.999997101077494
+        ],
+        "tenderUtility": [
+          -9.99999972378035,
+          -0.011287536298817681,
+          17.199998912134248
+        ]
+      },
+      "primaryControls": [
+        {
+          "id": "ad-engine",
+          "x": 362,
+          "y": 694.21875,
+          "w": 164.5,
+          "h": 44
+        },
+        {
+          "id": "ad-neutral",
+          "x": 532.5,
+          "y": 694.21875,
+          "w": 164.5,
+          "h": 44
+        },
+        {
+          "id": "ad-left",
+          "x": 362,
+          "y": 852.609375,
+          "w": 107.671875,
+          "h": 44
+        },
+        {
+          "id": "ad-right",
+          "x": 589.34375,
+          "y": 852.609375,
+          "w": 107.671875,
+          "h": 44
+        },
+        {
+          "id": "ad-secure",
+          "x": 743,
+          "y": 694.21875,
+          "w": 164.5,
+          "h": 44
+        },
+        {
+          "id": "ad-reset",
+          "x": 900.5,
+          "y": 907,
+          "w": 177.5,
+          "h": 44
+        },
+        {
+          "id": "ad-exit",
+          "x": 1280.28125,
+          "y": 25.140625,
+          "w": 135.71875,
+          "h": 44
+        }
+      ],
+      "secured": {
+        "ready": true,
+        "active": true,
+        "state": {
+          "version": 1,
+          "vesselId": "atlas-d-original-r7",
+          "sequence": 6492,
+          "elapsed": 108.19999999999514,
+          "x": 17.219877745550768,
+          "z": 0,
+          "heading": 0,
+          "speedMps": 0.0033082400397331296,
+          "yawRate": 0,
+          "depthM": 0,
+          "verticalMps": 0,
+          "targetDepthM": 18,
+          "engine": true,
+          "gear": 0,
+          "throttle": 0,
+          "rudder": 0,
+          "bowThruster": 0,
+          "conversion": 1,
+          "mode": "secured",
+          "ballast": 0,
+          "paused": false,
+          "contact": false,
+          "draftM": 4.506932258605957,
+          "depthKnown": true,
+          "waterDepthM": 54.001494861909045,
+          "clearanceM": 49.44143381144538,
+          "heaveM": 0.0027400165943879708,
+          "pitch": 0.00026766656745713397,
+          "roll": 7.536226377938184e-05
+        },
+        "camera": "orbit",
+        "originalHullScale": [
+          1,
+          1,
+          1
+        ],
+        "originalHullVisible": true,
+        "originalRootY": 0,
+        "sourceScaleTracks": 0,
+        "retainedTracks": 46,
+        "geometricHullBounds": {
+          "min": [
+            -41.403499603271484,
+            -4.506932258605957,
+            -7.128942966461182
+          ],
+          "max": [
+            41.45000076293945,
+            6.449999809265137,
+            7.128942966461182
+          ]
+        },
+        "sourceAsset": "assets/ATLAS_D_Original.glb",
+        "sourceRevision": 7,
+        "multiplayer": false,
+        "simulationOnly": true,
+        "pixelRatio": 0.35,
+        "detail": "smooth",
+        "softwareRendering": true,
+        "frameCount": 3,
+        "drawCalls": 141,
+        "triangles": 289083,
+        "hostSuspended": true,
+        "waterLocation": "atlasd-proving",
+        "tenderChase": [
+          -17.60046866844798,
+          1.2932411604337362,
+          2.3700971473770482
+        ],
+        "tenderUtility": [
+          -18.88046740189185,
+          1.2932557646719236,
+          -2.369902636100852
+        ]
+      },
+      "submerged": {
+        "ready": true,
+        "active": true,
+        "state": {
+          "version": 1,
+          "vesselId": "atlas-d-original-r7",
+          "sequence": 15492,
+          "elapsed": 258.20000000009384,
+          "x": 17.27998429254641,
+          "z": 0,
+          "heading": 0,
+          "speedMps": 8.643060199885008e-07,
+          "yawRate": 0,
+          "depthM": 18.00000000000022,
+          "verticalMps": -4.845901457656119e-14,
+          "targetDepthM": 18,
+          "engine": true,
+          "gear": 0,
+          "throttle": 0,
+          "rudder": 0,
+          "bowThruster": 0,
+          "conversion": 1,
+          "mode": "submerged",
+          "ballast": 0.49999999999999667,
+          "paused": false,
+          "contact": false,
+          "draftM": 4.506932258605957,
+          "depthKnown": true,
+          "waterDepthM": 53.99880120613747,
+          "clearanceM": 31.438636614490164,
+          "heaveM": 5.1782465092876965e-05,
+          "pitch": -4.078331653996745e-06,
+          "roll": -1.5571228604299496e-05
+        },
+        "camera": "subsea",
+        "originalHullScale": [
+          1,
+          1,
+          1
+        ],
+        "originalHullVisible": true,
+        "originalRootY": 0,
+        "sourceScaleTracks": 0,
+        "retainedTracks": 46,
+        "geometricHullBounds": {
+          "min": [
+            -41.403499603271484,
+            -4.506932258605957,
+            -7.128942966461182
+          ],
+          "max": [
+            41.45000076293945,
+            6.449999809265137,
+            7.128942966461182
+          ]
+        },
+        "sourceAsset": "assets/ATLAS_D_Original.glb",
+        "sourceRevision": 7,
+        "multiplayer": false,
+        "simulationOnly": true,
+        "pixelRatio": 0.35,
+        "detail": "smooth",
+        "softwareRendering": true,
+        "frameCount": 3,
+        "drawCalls": 142,
+        "triangles": 289671,
+        "hostSuspended": true,
+        "waterLocation": "atlasd-proving",
+        "tenderChase": [
+          -17.540010100157282,
+          -16.699769354070316,
+          2.36997964046409
+        ],
+        "tenderUtility": [
+          -18.820008879443513,
+          -16.699837941430797,
+          -2.370020130160723
+        ]
+      },
+      "originalBayRestored": true,
+      "errors": [],
+      "failedRequests": [
+        {
+          "url": "https://server.ethicalads.io/api/v1/decision/?publisher=githackcom&ad_types=image-v1&div_ids=githack-other-ad&callback=ad_1792123895229_556384&keywords=&campaign_types=paid%7Cpublisher-house%7Ccommunity%7Chouse&format=jsonp&client_version=2.5.0&placement_index=0&url=https%3A%2F%2Frawcdn.githack.com%2Fowensto%2Fhelper%2F84360b1fd29998fd70d68d8c4c48cb7e28d494bd%2Fatlas_d_simulator_01%2Flive%2Findex.html",
+          "failure": "net::ERR_BLOCKED_BY_RESPONSE.NotSameOrigin"
+        }
+      ]
+    },
+    {
+      "device": "phone",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "passed": true,
+      "public": true,
+      "initial": {
+        "ready": true,
+        "active": true,
+        "state": {
+          "version": 1,
+          "vesselId": "atlas-d-original-r7",
+          "sequence": 0,
+          "elapsed": 0,
+          "x": 0,
+          "z": 0,
+          "heading": 0,
+          "speedMps": 0,
+          "yawRate": 0,
+          "depthM": 0,
+          "verticalMps": 0,
+          "targetDepthM": 18,
+          "engine": false,
+          "gear": 0,
+          "throttle": 0,
+          "rudder": 0,
+          "bowThruster": 0,
+          "conversion": 0,
+          "mode": "surface",
+          "ballast": 0,
+          "paused": false,
+          "contact": false,
+          "draftM": 4.506932258605957,
+          "depthKnown": true,
+          "waterDepthM": 53.99965430452593,
+          "clearanceM": 49.46195481929743,
+          "heaveM": 0,
+          "pitch": -0.0002049676849664509,
+          "roll": -0.00085310917454099
+        },
+        "camera": "orbit",
+        "originalHullScale": [
+          1,
+          1,
+          1
+        ],
+        "originalHullVisible": true,
+        "originalRootY": 0,
+        "sourceScaleTracks": 0,
+        "retainedTracks": 46,
+        "geometricHullBounds": {
+          "min": [
+            -41.403499603271484,
+            -4.506932258605957,
+            -7.128942966461182
+          ],
+          "max": [
+            41.45000076293945,
+            6.449999809265137,
+            7.128942966461182
+          ]
+        },
+        "sourceAsset": "assets/ATLAS_D_Original.glb",
+        "sourceRevision": 7,
+        "multiplayer": false,
+        "simulationOnly": true,
+        "pixelRatio": 0.35,
+        "detail": "smooth",
+        "softwareRendering": true,
+        "frameCount": 3,
+        "drawCalls": 141,
+        "triangles": 289083,
+        "hostSuspended": true,
+        "waterLocation": "atlasd-proving",
+        "tenderChase": [
+          -22.999999516864857,
+          0.0192171092137245,
+          16.99998979196546
+        ],
+        "tenderUtility": [
+          -9.999999789941242,
+          0.01672315276253464,
+          17.199992755302386
+        ]
+      },
+      "primaryControls": [
+        {
+          "id": "ad-engine",
+          "x": 19,
+          "y": 546.21875,
+          "w": 79.75,
+          "h": 52
+        },
+        {
+          "id": "ad-neutral",
+          "x": 102.75,
+          "y": 546.21875,
+          "w": 79.75,
+          "h": 52
+        },
+        {
+          "id": "ad-left",
+          "x": 19,
+          "y": 700.8125,
+          "w": 51.828125,
+          "h": 44
+        },
+        {
+          "id": "ad-right",
+          "x": 130.65625,
+          "y": 700.8125,
+          "w": 51.828125,
+          "h": 44
+        },
+        {
+          "id": "ad-secure",
+          "x": 207.5,
+          "y": 546.21875,
+          "w": 79.75,
+          "h": 44
+        },
+        {
+          "id": "ad-reset",
+          "x": 285.25,
+          "y": 761,
+          "w": 85.75,
+          "h": 44
+        },
+        {
+          "id": "ad-exit",
+          "x": 302,
+          "y": 17.21875,
+          "w": 76,
+          "h": 44
+        }
+      ],
+      "secured": {
+        "ready": true,
+        "active": true,
+        "state": {
+          "version": 1,
+          "vesselId": "atlas-d-original-r7",
+          "sequence": 6360,
+          "elapsed": 105.99999999999527,
+          "x": 17.219877745550768,
+          "z": 0,
+          "heading": 0,
+          "speedMps": 0.0033082400397331296,
+          "yawRate": 0,
+          "depthM": 0,
+          "verticalMps": 0,
+          "targetDepthM": 18,
+          "engine": true,
+          "gear": 0,
+          "throttle": 0,
+          "rudder": 0,
+          "bowThruster": 0,
+          "conversion": 1,
+          "mode": "secured",
+          "ballast": 0,
+          "paused": false,
+          "contact": false,
+          "draftM": 4.506932258605957,
+          "depthKnown": true,
+          "waterDepthM": 53.99177290587187,
+          "clearanceM": 49.4317118554082,
+          "heaveM": -0.006981939442785285,
+          "pitch": -0.0003055207563617329,
+          "roll": -0.00084811531480324
+        },
+        "camera": "orbit",
+        "originalHullScale": [
+          1,
+          1,
+          1
+        ],
+        "originalHullVisible": true,
+        "originalRootY": 0,
+        "sourceScaleTracks": 0,
+        "retainedTracks": 46,
+        "geometricHullBounds": {
+          "min": [
+            -41.403499603271484,
+            -4.506932258605957,
+            -7.128942966461182
+          ],
+          "max": [
+            41.45000076293945,
+            6.449999809265137,
+            7.128942966461182
+          ]
+        },
+        "sourceAsset": "assets/ATLAS_D_Original.glb",
+        "sourceRevision": 7,
+        "multiplayer": false,
+        "simulationOnly": true,
+        "pixelRatio": 0.35,
+        "detail": "smooth",
+        "softwareRendering": true,
+        "frameCount": 3,
+        "drawCalls": 141,
+        "triangles": 289083,
+        "hostSuspended": true,
+        "waterLocation": "atlasd-proving",
+        "tenderChase": [
+          -17.599723147210497,
+          1.3056657462657255,
+          2.36888746105719
+        ],
+        "tenderUtility": [
+          -18.87972186676795,
+          1.302036746398077,
+          -2.371110936990321
+        ]
+      },
+      "submerged": {
+        "ready": true,
+        "active": true,
+        "state": {
+          "version": 1,
+          "vesselId": "atlas-d-original-r7",
+          "sequence": 15360,
+          "elapsed": 256.00000000009584,
+          "x": 17.27998429254641,
+          "z": 0,
+          "heading": 0,
+          "speedMps": 8.643060199885008e-07,
+          "yawRate": 0,
+          "depthM": 18.00000000000022,
+          "verticalMps": -4.845901457656119e-14,
+          "targetDepthM": 18,
+          "engine": true,
+          "gear": 0,
+          "throttle": 0,
+          "rudder": 0,
+          "bowThruster": 0,
+          "conversion": 1,
+          "mode": "submerged",
+          "ballast": 0.49999999999999667,
+          "paused": false,
+          "contact": false,
+          "draftM": 4.506932258605957,
+          "depthKnown": true,
+          "waterDepthM": 53.99870285702054,
+          "clearanceM": 31.438538265373232,
+          "heaveM": -4.656665183871446e-05,
+          "pitch": 4.125255956984254e-06,
+          "roll": 7.901992827141943e-06
+        },
+        "camera": "subsea",
+        "originalHullScale": [
+          1,
+          1,
+          1
+        ],
+        "originalHullVisible": true,
+        "originalRootY": 0,
+        "sourceScaleTracks": 0,
+        "retainedTracks": 46,
+        "geometricHullBounds": {
+          "min": [
+            -41.403499603271484,
+            -4.506932258605957,
+            -7.128942966461182
+          ],
+          "max": [
+            41.45000076293945,
+            6.449999809265137,
+            7.128942966461182
+          ]
+        },
+        "sourceAsset": "assets/ATLAS_D_Original.glb",
+        "sourceRevision": 7,
+        "multiplayer": false,
+        "simulationOnly": true,
+        "pixelRatio": 0.35,
+        "detail": "smooth",
+        "softwareRendering": true,
+        "frameCount": 3,
+        "drawCalls": 110,
+        "triangles": 260383,
+        "hostSuspended": true,
+        "waterLocation": "atlasd-proving",
+        "tenderChase": [
+          -17.54002076481408,
+          -16.700208983520678,
+          2.370010156940334
+        ],
+        "tenderUtility": [
+          -18.820019544100063,
+          -16.700176808399075,
+          -2.369989614071569
+        ]
+      },
+      "originalBayRestored": true,
+      "errors": [],
+      "failedRequests": []
+    }
+  ]
+}
