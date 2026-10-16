@@ -1,0 +1,10 @@
+'use strict';const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path');const L=require('./preview.js');let n=0;const tests=[];function test(name,f){f();n++;tests.push({name,passed:true});}
+test('portrait free region stays above dock',()=>{const r=L.region(390,788,166,{x:12,y:450},false);assert.deepEqual(r,{available:true,x:8,y:174,width:374,height:268,reason:null});});
+test('landscape free region stays left of dock',()=>{const r=L.region(844,334,166,{x:494,y:8},true);assert.equal(r.width,478);assert.equal(r.height,152);assert(r.available);});
+test('hidden controls enlarge portrait view',()=>{assert(L.region(390,788,166,{x:12,y:726},false).height> L.region(390,788,166,{x:12,y:450},false).height);});
+test('too little space explicit unavailable',()=>assert.equal(L.region(390,250,166,{x:12,y:195},false).available,false));
+test('nonfinite viewport rejected',()=>assert.equal(L.region(NaN,788,166,{x:12,y:450},false).available,false));
+test('camera distance scales with available area, not vessel state',()=>{const a=L.region(390,788,166,{x:12,y:450},false),b=L.region(390,788,166,{x:12,y:726},false);assert(L.distance(1,a,390,788)>L.distance(1,b,390,788));assert.equal(L.distance(1,{available:false},390,788),null);});
+test('loads exact Y3 contacts and Y2 identity rather than new contracts',()=>{const html=fs.readFileSync(path.join(__dirname,'preview.html'),'utf8'),js=fs.readFileSync(path.join(__dirname,'preview.js'),'utf8');assert(html.includes('../y3/helm-station.js'));assert(html.includes('../y2/identity-map.js'));assert(js.includes("fetch('../y3/station.json')"));});
+test('preview cannot advance or issue owner controls',()=>{const js=fs.readFileSync(path.join(__dirname,'preview.js'),'utf8');for(const banned of ['testStep(','.command(','.step(','.state.reset(','requestAnimationFrame(','setInterval('])assert(!js.includes(banned),banned);});
+const out={passed:true,total:n,tests};fs.mkdirSync(path.join(__dirname,'evidence'),{recursive:true});fs.writeFileSync(path.join(__dirname,'evidence/preview-tests.json'),JSON.stringify(out,null,2));console.log(JSON.stringify(out,null,2));
