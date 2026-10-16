@@ -22,8 +22,8 @@ with sync_playwright() as pw:
   cdp.send('Emulation.setDeviceMetricsOverride',{'width':w,'height':h,'deviceScaleFactor':1,'mobile':True,'screenWidth':w,'screenHeight':h,'screenOrientation':{'type':'landscapePrimary' if orientation=='landscape' else 'portraitPrimary','angle':90 if orientation=='landscape' else 0}})
   page.goto(ORIGIN+'/atlas_d_simulator_01/contact/'+ENTRY+'/preview.html',wait_until='domcontentloaded',timeout=90000);wait('window.Y4?.ready || window.Y4?.error',180000);assert not page.evaluate('Y4.error')
   f=page.frames[1];fl=page.frame_locator('#host')
-  # Passive diagnostic recorder: actual trusted events, no input synthesis in DOM.
   f.evaluate("""() => {window.__y5Events=[];for(const event of ['pointerdown','pointerup','pointercancel','gotpointercapture','lostpointercapture'])document.addEventListener(event,e=>{window.__y5Events.push({type:event,id:e.target.id,pointerId:e.pointerId,pointerType:e.pointerType,trusted:e.isTrusted,seconds:ATLAS_D_SIM.state.elapsed,rudder:ATLAS_D_SIM.state.rudder,captured:e.target.hasPointerCapture?.(e.pointerId)});},true);} """)
+  f.evaluate('''() => {window.__y5Focus=[];for(const type of ['blur','focus','visibilitychange'])window.addEventListener(type,e=>__y5Focus.push({type,windowTarget:e.target===window,trusted:e.isTrusted,hasFocus:document.hasFocus(),hidden:document.hidden,seconds:ATLAS_D_SIM.state.elapsed,throttle:ATLAS_D_SIM.state.throttle,rudder:ATLAS_D_SIM.state.rudder,target:e.target.id||e.target.nodeName||'window'}),true);}''')
   session=page.evaluate('({top:performance.timeOrigin,host:document.getElementById("host").contentWindow.performance.timeOrigin})');report['session']=session
   def target(sel,outer=False):
    loc=page.locator(sel) if outer else fl.locator(sel)
@@ -56,8 +56,6 @@ with sync_playwright() as pw:
   def screenshot(name):
    global count
    count+=1;path=f'{count:02d}-{name}.png'
-   # CDP metrics changes do not update Playwright's cached starting viewport.
-   # Capture the real current browser surface instead of resetting to that cache.
    expected=page.evaluate('({w:innerWidth,h:innerHeight})')
    raw=base64.b64decode(cdp.send('Page.captureScreenshot',{'format':'png','captureBeyondViewport':False,'fromSurface':True})['data'])
    actual=struct.unpack('>II',raw[16:24]);assert actual==(expected['w'],expected['h']),(actual,expected)
@@ -83,8 +81,26 @@ with sync_playwright() as pw:
   screenshot('initial-unchanged-y4-station');scene_gate(sample())
   tap('#ad-engine');tap('[data-ad-gear="1"]');b,q=target('#ad-throttle');drag(b['x']+8,b['y']+b['height']/2,b['x']+b['width']*.40,b['y']+b['height']/2);wait('Y4.latest.state.throttle>.25');page.wait_for_timeout(1400)
   start=sample();wall=time.monotonic()
-  for sel,value,label in [('#ad-left',-1,'active-left-held-rotation'),('#ad-right',1,'active-right-held-return')]:
-   hold(sel);wait(f'Y4.latest.state.rudder==={value}');power=sample()['state']['throttle'];screenshot(label+'-before');rotate(label);touch('touchEnd');wait('Y4.latest.state.rudder===0');page.wait_for_timeout(500);row=sample();assert row['state']['throttle']==power and row['state']['engine'] and row['state']['gear']==1;assert not row['state']['paused'];report['cases'][-1]['released']=compact(row);tap('#ad-center')
+  def power_touch():
+   b,q=target('#ad-throttle');drag(b['x']+8,b['y']+b['height']/2,b['x']+b['width']*.40,b['y']+b['height']/2);wait('Y4.latest.state.throttle>.25')
+  def release_outcome(power,index):
+   row=sample();events=f.evaluate('(i)=>__y5Focus.slice(i)',index);blur=any(e['type']=='blur' and e['windowTarget'] and e['trusted'] for e in events)
+   assert row['state']['rudder']==0 and row['state']['engine'] and row['state']['gear']==1
+   # The immutable owner intentionally idles on Window blur. Never suppress it,
+   # restore thrust numerically, or call that safety response a preview fix.
+   same=row['state']['throttle']==power;idle=not same and row['state']['throttle']==0 and blur
+   assert same or idle,{'beforePower':power,'after':row['state'],'focusEvents':events}
+   return {'released':compact(row),'focusLossIdle':idle,'focusEvents':events}
+  for sel,value,label,insideRelease in [('#ad-left',-1,'active-left-held-rotation',False),('#ad-right',1,'active-right-held-return',True)]:
+   if sample()['state']['throttle']<=.25:power_touch();report.setdefault('safetyRearmsViaTouch',0);report['safetyRearmsViaTouch']+=1
+   focusIndex=f.evaluate('__y5Focus.length');hold(sel);wait(f'Y4.latest.state.rudder==={value}');power=sample()['state']['throttle'];assert power>.25
+   screenshot(label+'-before');case=rotate(label);assert case['after']['state']['throttle']==power,'Power changed before release'
+   if insideRelease:
+    rect=sample()['viewport']['scene'];touch('touchMove',rect['x']+rect['width']/2,56+rect['y']+rect['height']/2);page.wait_for_timeout(450)
+   touch('touchEnd');wait('Y4.latest.state.rudder===0');page.wait_for_timeout(500);case.update(release_outcome(power,focusIndex));case['releaseGesture']='trusted move inside current iframe, then lift' if insideRelease else 'lift at original screen point after rotation; no coordinate remap'
+   assert not case['released']['state']['paused']
+   if insideRelease:assert not case['focusLossIdle'],'Inside-iframe release unexpectedly lost power'
+   tap('#ad-center')
   end=sample();rows=page.evaluate('(id)=>Y4.history.filter(x=>x.frame.frameId>id).map(x=>({state:x.state,frame:x.frame,rays:x.rays,sourceUnchanged:x.sourceUnchanged,visible:x.visible}))',start['frame']['frameId'])
   report['motion']={'wallSeconds':time.monotonic()-wall,'simulationSeconds':end['state']['elapsed']-start['state']['elapsed'],'frames':len(rows),'distanceM':math.hypot(end['state']['x']-start['state']['x'],end['state']['z']-start['state']['z']),'controls':sorted(set(r['state']['rudder'] for r in rows)),'testStep':False};report['motionTrace']=rows
   assert report['motion']['distanceM']>1 and report['motion']['simulationSeconds']>3 and {-1,0,1}<=set(report['motion']['controls'])
@@ -92,13 +108,13 @@ with sync_playwright() as pw:
    assert row['sourceUnchanged'] and len(row['rays'])==5
    for r in row['rays']:assert r['hit'] and r['errorM']<1e-5 and r['normalError']<1e-6
   tap('#ad-pause');wait('Y4.latest.state.paused');paused=sample()['state']['elapsed'];power=sample()['state']['throttle']
-  hold('#ad-right');wait('Y4.latest.state.rudder===1');rotate('paused-held-steering');touch('touchEnd');wait('Y4.latest.state.rudder===0');rotate('paused-neutral-return');assert sample()['state']['elapsed']==paused and sample()['state']['throttle']==power
+  focusIndex=f.evaluate('__y5Focus.length');hold('#ad-right');wait('Y4.latest.state.rudder===1');rotate('paused-held-steering');touch('touchEnd');wait('Y4.latest.state.rudder===0');page.wait_for_timeout(500);report['pausedRelease']=release_outcome(power,focusIndex);rotate('paused-neutral-return');assert sample()['state']['elapsed']==paused
   for sel in ['#ad-left','#ad-center','#ad-right','#ad-engine','#ad-throttle','#ad-pause']:target(sel)
   tap('#y4-dive-tab');rotate('paused-dive-dock');target('#ad-target');target('#ad-reset');rotate('paused-dive-dock-return');target('#ad-reset');assert sample()['state']['elapsed']==paused
   tap('#info',True);assert page.locator('#review').is_visible();rotate('details-open-rotation',False);target('#close-info',True);assert page.locator('#review').is_visible();rotate('details-open-return',False);tap('#close-info',True);assert not page.locator('#review').is_visible();scene_gate(sample());assert sample()['state']['elapsed']==paused
   tap('#y4-helm-tab');tap('[data-ad-view="follow"]');wait('Y4.view==="overview"');rotate('native-follow-rotation');assert f.evaluate('ATLAS_D_SIM.inspect().camera')=='follow';tap('#station-view',True);rotate('station-camera-return');scene_gate(sample());assert sample()['state']['elapsed']==paused
   tap('#ad-pause');wait('!Y4.latest.state.paused');page.wait_for_timeout(1300);assert sample()['state']['elapsed']>paused;assert sample()['state']['rudder']==0;tap('#ad-neutral');screenshot('final-released-and-recovered')
-  report['touchEvents']=page.evaluate('Y4.inputEvents');report['pointerEvents']=f.evaluate('__y5Events');downs=[r for r in report['pointerEvents'] if r['type']=='pointerdown'];assert downs and all(r['trusted'] and r['pointerType']=='touch' for r in downs)
+  report['touchEvents']=page.evaluate('Y4.inputEvents');report['focusEvents']=f.evaluate('__y5Focus');report['pointerEvents']=f.evaluate('__y5Events');downs=[r for r in report['pointerEvents'] if r['type']=='pointerdown'];assert downs and all(r['trusted'] and r['pointerType']=='touch' for r in downs)
   outstanding=set()
   for r in report['pointerEvents']:
    if r['type']=='pointerdown':outstanding.add(r['pointerId'])
@@ -110,7 +126,7 @@ with sync_playwright() as pw:
   report['pointerReleased']=True;report['sameSession']=True;report['final']=compact(sample());assert not report['errors'] and not report['shaderErrors'];report['passed']=True
  except Exception as e:
   report['error']=str(e);report['traceback']=traceback.format_exc()
-  try:report['latest']=page.evaluate('window.Y4?.latest');report['touchEvents']=page.evaluate('window.Y4?.inputEvents');report['pointerEvents']=page.frames[1].evaluate('window.__y5Events');screenshot('FAILURE')
+  try:report['latest']=page.evaluate('window.Y4?.latest');report['touchEvents']=page.evaluate('window.Y4?.inputEvents');report['pointerEvents']=page.frames[1].evaluate('window.__y5Events');report['focusEvents']=page.frames[1].evaluate('window.__y5Focus');screenshot('FAILURE')
   except Exception:pass
   raise
  finally:

@@ -11,7 +11,7 @@ for(const c of r.cases){
  for(const key of ['instanceId','activationEpoch','simulationEpoch','hostSessionId','worldRevision'])assert.equal(c.before.frame[key],c.after.frame[key]);
  assert(c.after.frame.frameId>c.before.frame.frameId);assert.equal(c.before.state.paused,c.after.state.paused);
  if(c.before.state.paused)assert.equal(c.before.state.elapsed,c.after.state.elapsed);
- if(c.released){assert.equal(c.released.state.rudder,0);assert.equal(c.released.state.throttle,c.before.state.throttle);assert(c.released.state.engine);}
+ if(c.released){assert.equal(c.released.state.rudder,0);assert(c.released.state.engine);if(c.focusLossIdle){assert.equal(c.released.state.throttle,0);assert(c.focusEvents.some(e=>e.type==='blur'&&e.windowTarget&&e.trusted));}else assert.equal(c.released.state.throttle,c.before.state.throttle);}
  for(const row of [c.before,c.after,...(c.released?[c.released]:[])]){
   const f=row.frame;assert(row.sourceUnchanged&&row.physicalAvailable&&row.visible);assert.equal(row.rigAttachment,null);assert.equal(row.rigValid,false);
   assert.deepEqual(JSON.parse(row.frameToken),[f.vesselId,f.instanceId,f.activationEpoch,f.frameId,f.simTimeSeconds]);
@@ -24,4 +24,4 @@ for(const c of r.cases){
 }
 for(const s of r.screenshots){const png=fs.readFileSync(path.join(E,s.file));assert.deepEqual([png.readUInt32BE(16),png.readUInt32BE(20)],sizes[s.orientation]);assert.deepEqual([s.width,s.height],sizes[s.orientation]);assert(s.currentBrowserSurface);}
 assert.equal(previous,r.startOrientation);assert(r.motion.frames>0&&r.motion.distanceM>1&&!r.motion.testStep);assert.deepEqual(r.motion.controls,[-1,0,1]);assert(r.heldPointerIds.length>=3);assert(!r.errors.length&&!r.shaderErrors.length);
-const out={passed:true,entry:r.entry,startOrientation:r.startOrientation,rotations:10,currentSizeScreenshots:14,unchangedRuntime:true,separateClockLifecycleAndFrameTokens:true,allHeldPointersReleased:true,physicalDevice:false,productionEnabled:false};fs.writeFileSync(path.join(E,'independent-audit.json'),JSON.stringify(out,null,2));console.log(JSON.stringify(out,null,2));
+const out={passed:true,entry:r.entry,startOrientation:r.startOrientation,rotations:10,currentSizeScreenshots:14,unchangedRuntime:true,separateClockLifecycleAndFrameTokens:true,allHeldPointersReleased:true,physicalDevice:false,productionEnabled:false,ownerBlurIdles:r.cases.filter(c=>c.focusLossIdle).length,uninterruptedPowerAcrossOffscreenReleaseAccepted:false};fs.writeFileSync(path.join(E,'independent-audit.json'),JSON.stringify(out,null,2));console.log(JSON.stringify(out,null,2));
