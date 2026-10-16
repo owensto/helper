@@ -1,0 +1,111 @@
+name: ATLAS D original yacht simulator integration
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/atlas-d-simulator-01.yml'
+      - 'atlas_d_simulator_01/src/**'
+      - 'atlas_d_simulator_01/build.py'
+      - 'atlas_d_simulator_01/test-core.cjs'
+      - 'atlas_d_simulator_01/verify.py'
+permissions:
+  contents: write
+concurrency:
+  group: atlas-d-original-vessel-integration
+  cancel-in-progress: false
+jobs:
+  verify-and-publish:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 22
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          sparse-checkout: |
+            atlas_d_simulator_01
+            .github/workflows
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Assemble pinned original yacht and Sea Lab host
+        run: |
+          python atlas_d_simulator_01/build.py
+          mkdir -p atlas_d_simulator_01/review
+          for f in atlas_d_simulator_01/src/*.js; do node --check "$f"; done
+          node atlas_d_simulator_01/test-core.cjs > atlas_d_simulator_01/review/core.json
+          cat atlas_d_simulator_01/review/core.json
+      - name: Operate the original model in desktop and phone browsers
+        run: |
+          python -m pip install -q playwright==1.55.0
+          python -m playwright install --with-deps chromium >/dev/null
+          python -m http.server 8914 --bind 127.0.0.1 --directory atlas_d_simulator_01/site >atlas_d_simulator_01/review/http.log 2>&1 &
+          sleep 2
+          BASE_URL=http://127.0.0.1:8914/index.html python atlas_d_simulator_01/verify.py
+      - name: Publish only the tested vessel preview and its own evidence
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import json,shutil
+          r=Path('atlas_d_simulator_01')
+          assert json.loads((r/'review/core.json').read_text())['passed']
+          assert json.loads((r/'review/browser.json').read_text())['passed']
+          if (r/'live').exists():shutil.rmtree(r/'live')
+          shutil.copytree(r/'site',r/'live')
+          p=r/'live/atlas-d-build.json';m=json.loads(p.read_text());m['publicationStatus']='Local browser and core tests passed; public verification follows';p.write_text(json.dumps(m,indent=2))
+          PY
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -f atlas_d_simulator_01/src atlas_d_simulator_01/live atlas_d_simulator_01/review
+          git diff --cached --quiet || git commit -m 'Publish tested original ATLAS D vessel integration preview'
+          git pull --rebase --autostash origin main
+          git push origin HEAD:main
+          echo "PUBLIC_COMMIT=$(git rev-parse HEAD)" >> "$GITHUB_ENV"
+          echo "PUBLIC_URL=https://rawcdn.githack.com/owensto/helper/$(git rev-parse HEAD)/atlas_d_simulator_01/live/index.html" >> "$GITHUB_ENV"
+      - name: Verify exact public assets and operate the immutable online preview
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import json,os,hashlib,time,urllib.request
+          r=Path('atlas_d_simulator_01');base=os.environ['PUBLIC_URL'].rsplit('/',1)[0]+'/'
+          files=['index.html','atlas-d-core.js','atlas-d.js','atlas-d.css','assets/ATLAS_D_Original.glb']
+          rows=[]
+          for path in files:
+              expected=(r/'live'/path).read_bytes()
+              for attempt in range(5):
+                  try:
+                      with urllib.request.urlopen(base+path,timeout=60) as response:data=response.read()
+                      assert data==expected,path
+                      break
+                  except Exception:
+                      if attempt==4:raise
+                      time.sleep(5)
+              rows.append({'path':path,'sha256':hashlib.sha256(data).hexdigest(),'exact':True})
+          (r/'review/public-assets.json').write_text(json.dumps({'passed':True,'url':os.environ['PUBLIC_URL'],'commit':os.environ['PUBLIC_COMMIT'],'files':rows},indent=2))
+          PY
+          PUBLIC_CHECK=1 BASE_URL="$PUBLIC_URL" python atlas_d_simulator_01/verify.py
+          python - <<'PY'
+          from pathlib import Path
+          import json,os
+          r=Path('atlas_d_simulator_01');b=json.loads((r/'review/public-browser.json').read_text());assert b['passed']
+          (r/'RELEASE.json').write_text(json.dumps({'status':'Public asset hashes and desktop/phone browser operation passed','url':os.environ['PUBLIC_URL'],'publishedCommit':os.environ['PUBLIC_COMMIT'],'vesselId':'atlas-d-original-r7','multiplayer':False,'physicalDeviceTested':False,'engineeringValidated':False},indent=2))
+          PY
+          git add -f atlas_d_simulator_01/review atlas_d_simulator_01/RELEASE.json
+          git commit -m 'Verify immutable online ATLAS D yacht and submarine preview'
+          git pull --rebase --autostash origin main
+          git push origin HEAD:main
+          echo "### Original ATLAS D preview" >> "$GITHUB_STEP_SUMMARY"
+          echo "$PUBLIC_URL" >> "$GITHUB_STEP_SUMMARY"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ATLAS-D-original-vessel-integration
+          path: |
+            atlas_d_simulator_01/src/
+            atlas_d_simulator_01/review/
+            atlas_d_simulator_01/site/atlas-d-build.json
+            atlas_d_simulator_01/RELEASE.json
+          retention-days: 14
