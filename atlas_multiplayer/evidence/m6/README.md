@@ -29,9 +29,10 @@ The actual MP `createC1PoseReceiver` rejects the hook factory/missing reader as
 `READ_ONLY_READER_REQUIRED`; a successful paired reader/client is NOT constructed.
 
 The archive's `input-probe.json` preserves observations and all 20 required asset digests.
-The recorded stderr includes an environment `TERM` warning/escape sequence; it is
-retained rather than represented as clean output. The command exits 2 intentionally
-for missing prerequisites. This is not a reproduced product defect.
+The final direct-process rerun exits 2, writes 5,332 bytes of JSON stdout and
+zero bytes of stderr. This corrects the earlier evidence note about a TERM warning;
+no such warning is present in the retained process stderr. Missing prerequisites
+are not a reproduced product defect.
 
 **0/20 original host assets are mounted; 0 positive M6 checks executed.** No M6
 read/reset/dispose, unknown-RPM, epoch/world/identity, ejection/detachment, client
