@@ -1,0 +1,1294 @@
+{
+  "revision": "humans-station03-preliminary-receiving/1",
+  "sourceSHA": "c64a5aab845e70399aee930ea5ad87ed734fa8c0",
+  "descriptor": "core-bay-helm-station/3.0.0-proposal.1",
+  "stationId": "bay12.starboard-helm.station03",
+  "sourceHashes": {
+    "design": "2e38a25a9cb15e3644eb6bf3295fc927340c19af139665b21f7f3df90ab89583",
+    "geometry": "29b001a6a9bd0a8677c3a9c7bf5d20e13e1b149b6394bc32cf6adcb9c5397deb"
+  },
+  "receiverThreeRevision": "180",
+  "status": "PRELIMINARY_SOURCE_CHECKS_PASS_FINAL_PACKAGE_PENDING",
+  "rows": [
+    {
+      "name": "H6 oracle accepts closed collision topology: seat-base",
+      "pass": true,
+      "result": {
+        "name": "seat-base",
+        "triangles": 12,
+        "degenerateTriangles": 0,
+        "weldToleranceM": 0.000001,
+        "components": [
+          {
+            "id": 0,
+            "triangles": 12,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          }
+        ],
+        "solidComplete": true
+      }
+    },
+    {
+      "name": "H6 oracle accepts closed collision topology: seat-pedestal",
+      "pass": true,
+      "result": {
+        "name": "seat-pedestal",
+        "triangles": 12,
+        "degenerateTriangles": 0,
+        "weldToleranceM": 0.000001,
+        "components": [
+          {
+            "id": 0,
+            "triangles": 12,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          }
+        ],
+        "solidComplete": true
+      }
+    },
+    {
+      "name": "H6 oracle accepts closed collision topology: seat-pan",
+      "pass": true,
+      "result": {
+        "name": "seat-pan",
+        "triangles": 12,
+        "degenerateTriangles": 0,
+        "weldToleranceM": 0.000001,
+        "components": [
+          {
+            "id": 0,
+            "triangles": 12,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          }
+        ],
+        "solidComplete": true
+      }
+    },
+    {
+      "name": "H6 oracle accepts closed collision topology: seat-cushion",
+      "pass": true,
+      "result": {
+        "name": "seat-cushion",
+        "triangles": 12,
+        "degenerateTriangles": 0,
+        "weldToleranceM": 0.000001,
+        "components": [
+          {
+            "id": 0,
+            "triangles": 12,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          }
+        ],
+        "solidComplete": true
+      }
+    },
+    {
+      "name": "H6 oracle accepts closed collision topology: back-shell",
+      "pass": true,
+      "result": {
+        "name": "back-shell",
+        "triangles": 12,
+        "degenerateTriangles": 0,
+        "weldToleranceM": 0.000001,
+        "components": [
+          {
+            "id": 0,
+            "triangles": 12,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          }
+        ],
+        "solidComplete": true
+      }
+    },
+    {
+      "name": "H6 oracle accepts closed collision topology: back-pad",
+      "pass": true,
+      "result": {
+        "name": "back-pad",
+        "triangles": 12,
+        "degenerateTriangles": 0,
+        "weldToleranceM": 0.000001,
+        "components": [
+          {
+            "id": 0,
+            "triangles": 12,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          }
+        ],
+        "solidComplete": true
+      }
+    },
+    {
+      "name": "H6 oracle accepts closed collision topology: rail-left",
+      "pass": true,
+      "result": {
+        "name": "rail-left",
+        "triangles": 12,
+        "degenerateTriangles": 0,
+        "weldToleranceM": 0.000001,
+        "components": [
+          {
+            "id": 0,
+            "triangles": 12,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          }
+        ],
+        "solidComplete": true
+      }
+    },
+    {
+      "name": "H6 oracle accepts closed collision topology: rail-right",
+      "pass": true,
+      "result": {
+        "name": "rail-right",
+        "triangles": 12,
+        "degenerateTriangles": 0,
+        "weldToleranceM": 0.000001,
+        "components": [
+          {
+            "id": 0,
+            "triangles": 12,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          }
+        ],
+        "solidComplete": true
+      }
+    },
+    {
+      "name": "H6 oracle accepts closed collision topology: foot-post-left",
+      "pass": true,
+      "result": {
+        "name": "foot-post-left",
+        "triangles": 12,
+        "degenerateTriangles": 0,
+        "weldToleranceM": 0.000001,
+        "components": [
+          {
+            "id": 0,
+            "triangles": 12,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          }
+        ],
+        "solidComplete": true
+      }
+    },
+    {
+      "name": "H6 oracle accepts closed collision topology: foot-post-right",
+      "pass": true,
+      "result": {
+        "name": "foot-post-right",
+        "triangles": 12,
+        "degenerateTriangles": 0,
+        "weldToleranceM": 0.000001,
+        "components": [
+          {
+            "id": 0,
+            "triangles": 12,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          }
+        ],
+        "solidComplete": true
+      }
+    },
+    {
+      "name": "H6 oracle accepts closed collision topology: foot-axle",
+      "pass": true,
+      "result": {
+        "name": "foot-axle",
+        "triangles": 96,
+        "degenerateTriangles": 0,
+        "weldToleranceM": 0.000001,
+        "components": [
+          {
+            "id": 0,
+            "triangles": 96,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          }
+        ],
+        "solidComplete": true
+      }
+    },
+    {
+      "name": "H6 oracle accepts closed collision topology: foot-left",
+      "pass": true,
+      "result": {
+        "name": "foot-left",
+        "triangles": 12,
+        "degenerateTriangles": 0,
+        "weldToleranceM": 0.000001,
+        "components": [
+          {
+            "id": 0,
+            "triangles": 12,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          }
+        ],
+        "solidComplete": true
+      }
+    },
+    {
+      "name": "H6 oracle accepts closed collision topology: foot-right",
+      "pass": true,
+      "result": {
+        "name": "foot-right",
+        "triangles": 12,
+        "degenerateTriangles": 0,
+        "weldToleranceM": 0.000001,
+        "components": [
+          {
+            "id": 0,
+            "triangles": 12,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          }
+        ],
+        "solidComplete": true
+      }
+    },
+    {
+      "name": "H6 oracle accepts closed collision topology: column-mount",
+      "pass": true,
+      "result": {
+        "name": "column-mount",
+        "triangles": 12,
+        "degenerateTriangles": 0,
+        "weldToleranceM": 0.000001,
+        "components": [
+          {
+            "id": 0,
+            "triangles": 12,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          }
+        ],
+        "solidComplete": true
+      }
+    },
+    {
+      "name": "H6 oracle accepts closed collision topology: column-extension",
+      "pass": true,
+      "result": {
+        "name": "column-extension",
+        "triangles": 64,
+        "degenerateTriangles": 0,
+        "weldToleranceM": 0.000001,
+        "components": [
+          {
+            "id": 0,
+            "triangles": 64,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          }
+        ],
+        "solidComplete": true
+      }
+    },
+    {
+      "name": "H6 oracle accepts closed collision topology: wheel-rim",
+      "pass": true,
+      "result": {
+        "name": "wheel-rim",
+        "triangles": 2048,
+        "degenerateTriangles": 0,
+        "weldToleranceM": 0.000001,
+        "components": [
+          {
+            "id": 0,
+            "triangles": 2048,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          }
+        ],
+        "solidComplete": true
+      }
+    },
+    {
+      "name": "H6 oracle accepts closed collision topology: wheel-hub",
+      "pass": true,
+      "result": {
+        "name": "wheel-hub",
+        "triangles": 96,
+        "degenerateTriangles": 0,
+        "weldToleranceM": 0.000001,
+        "components": [
+          {
+            "id": 0,
+            "triangles": 96,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          }
+        ],
+        "solidComplete": true
+      }
+    },
+    {
+      "name": "H6 oracle accepts closed collision topology: spoke-a",
+      "pass": true,
+      "result": {
+        "name": "spoke-a",
+        "triangles": 64,
+        "degenerateTriangles": 0,
+        "weldToleranceM": 0.000001,
+        "components": [
+          {
+            "id": 0,
+            "triangles": 64,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          }
+        ],
+        "solidComplete": true
+      }
+    },
+    {
+      "name": "H6 oracle accepts closed collision topology: spoke-b",
+      "pass": true,
+      "result": {
+        "name": "spoke-b",
+        "triangles": 64,
+        "degenerateTriangles": 0,
+        "weldToleranceM": 0.000001,
+        "components": [
+          {
+            "id": 0,
+            "triangles": 64,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          }
+        ],
+        "solidComplete": true
+      }
+    },
+    {
+      "name": "H6 oracle accepts closed collision topology: spoke-c",
+      "pass": true,
+      "result": {
+        "name": "spoke-c",
+        "triangles": 64,
+        "degenerateTriangles": 0,
+        "weldToleranceM": 0.000001,
+        "components": [
+          {
+            "id": 0,
+            "triangles": 64,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          }
+        ],
+        "solidComplete": true
+      }
+    },
+    {
+      "name": "H6 oracle accepts closed collision topology: throttle-base",
+      "pass": true,
+      "result": {
+        "name": "throttle-base",
+        "triangles": 12,
+        "degenerateTriangles": 0,
+        "weldToleranceM": 0.000001,
+        "components": [
+          {
+            "id": 0,
+            "triangles": 12,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          }
+        ],
+        "solidComplete": true
+      }
+    },
+    {
+      "name": "H6 oracle accepts closed collision topology: throttle-post",
+      "pass": true,
+      "result": {
+        "name": "throttle-post",
+        "triangles": 12,
+        "degenerateTriangles": 0,
+        "weldToleranceM": 0.000001,
+        "components": [
+          {
+            "id": 0,
+            "triangles": 12,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          }
+        ],
+        "solidComplete": true
+      }
+    },
+    {
+      "name": "H6 oracle accepts closed collision topology: throttle-shelf",
+      "pass": true,
+      "result": {
+        "name": "throttle-shelf",
+        "triangles": 12,
+        "degenerateTriangles": 0,
+        "weldToleranceM": 0.000001,
+        "components": [
+          {
+            "id": 0,
+            "triangles": 12,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          }
+        ],
+        "solidComplete": true
+      }
+    },
+    {
+      "name": "H6 oracle accepts closed collision topology: throttle-lever",
+      "pass": true,
+      "result": {
+        "name": "throttle-lever",
+        "triangles": 96,
+        "degenerateTriangles": 0,
+        "weldToleranceM": 0.000001,
+        "components": [
+          {
+            "id": 0,
+            "triangles": 96,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          }
+        ],
+        "solidComplete": true
+      }
+    },
+    {
+      "name": "H6 oracle accepts closed collision topology: throttle-grip",
+      "pass": true,
+      "result": {
+        "name": "throttle-grip",
+        "triangles": 12,
+        "degenerateTriangles": 0,
+        "weldToleranceM": 0.000001,
+        "components": [
+          {
+            "id": 0,
+            "triangles": 12,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          }
+        ],
+        "solidComplete": true
+      }
+    },
+    {
+      "name": "finite entire support rectangle inside proxy face: seat",
+      "pass": true,
+      "result": {
+        "corners": [
+          [
+            -0.22,
+            0.03,
+            -0.235
+          ],
+          [
+            -0.22,
+            0.03,
+            0.235
+          ],
+          [
+            0.22,
+            0.03,
+            -0.235
+          ],
+          [
+            0.22,
+            0.03,
+            0.235
+          ]
+        ],
+        "bodyContactTested": false
+      }
+    },
+    {
+      "name": "finite entire support rectangle inside proxy face: back",
+      "pass": true,
+      "result": {
+        "corners": [
+          [
+            0.025,
+            -0.205,
+            0.225
+          ],
+          [
+            0.025,
+            -0.205,
+            -0.225
+          ],
+          [
+            0.025,
+            0.205,
+            0.225
+          ],
+          [
+            0.025,
+            0.205,
+            -0.225
+          ]
+        ],
+        "bodyContactTested": false
+      }
+    },
+    {
+      "name": "finite entire support rectangle inside proxy face: leftFoot",
+      "pass": true,
+      "result": {
+        "corners": [
+          [
+            -0.15,
+            0.01,
+            -0.07
+          ],
+          [
+            -0.15,
+            0.01,
+            0.07
+          ],
+          [
+            0.15,
+            0.01,
+            -0.07
+          ],
+          [
+            0.15,
+            0.01,
+            0.07
+          ]
+        ],
+        "bodyContactTested": false
+      }
+    },
+    {
+      "name": "finite entire support rectangle inside proxy face: rightFoot",
+      "pass": true,
+      "result": {
+        "corners": [
+          [
+            -0.15,
+            0.01,
+            -0.07
+          ],
+          [
+            -0.15,
+            0.01,
+            0.07
+          ],
+          [
+            0.15,
+            0.01,
+            -0.07
+          ],
+          [
+            0.15,
+            0.01,
+            0.07
+          ]
+        ],
+        "bodyContactTested": false
+      }
+    },
+    {
+      "name": "H6 oracle reads owner guard as closed and inside at midplane",
+      "pass": true,
+      "result": {
+        "depth": 0.002,
+        "topology": {
+          "name": "owner-unit-guard",
+          "triangles": 8,
+          "degenerateTriangles": 0,
+          "weldToleranceM": 0.000001,
+          "components": [
+            {
+              "id": 0,
+              "triangles": 8,
+              "closed": true,
+              "boundaryEdges": 0,
+              "nonmanifoldEdges": 0,
+              "windingErrors": 0
+            }
+          ],
+          "solidComplete": true
+        },
+        "frame": "synthetic vessel metres; no original transforms evaluated"
+      }
+    },
+    {
+      "name": "proposal explicitly forbids activation and old profile transfer",
+      "pass": true,
+      "result": {
+        "rigSHA256": "e80b6e82ac31c3bfb1134952e0bcb9b840fedc26b71dc90e9b387ae8cd28ecd3",
+        "clipSHA256": "b0f10003c14416330d30c41fe26d7ec86bc34e3b39ca9bd91ca78a54db415b94"
+      }
+    }
+  ],
+  "parts": [
+    {
+      "id": "seat-base",
+      "shape": "box",
+      "positionSHA256": "ad20167c33eb1d9b13ffc361c8209827c5b57dcafe24cd3e2748abd6ee230d2d",
+      "indexU32SHA256": "4d3b1ea9826e62e6af0195fc6626bba8ddac0c6a0469c3b817c8c730e6156c1e",
+      "topology": {
+        "name": "seat-base",
+        "triangles": 12,
+        "degenerateTriangles": 0,
+        "weldToleranceM": 0.000001,
+        "components": [
+          {
+            "id": 0,
+            "triangles": 12,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          }
+        ],
+        "solidComplete": true
+      }
+    },
+    {
+      "id": "seat-pedestal",
+      "shape": "box",
+      "positionSHA256": "3f0d6cf03f9c458b84ee0f3fa1e5aca1c02094736a4fe1cb1bb7559af3a2e224",
+      "indexU32SHA256": "4d3b1ea9826e62e6af0195fc6626bba8ddac0c6a0469c3b817c8c730e6156c1e",
+      "topology": {
+        "name": "seat-pedestal",
+        "triangles": 12,
+        "degenerateTriangles": 0,
+        "weldToleranceM": 0.000001,
+        "components": [
+          {
+            "id": 0,
+            "triangles": 12,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          }
+        ],
+        "solidComplete": true
+      }
+    },
+    {
+      "id": "seat-pan",
+      "shape": "box",
+      "positionSHA256": "44002719e8c56142ec6c3bdf060cc43673d3334d1223af6a572b8e37dfdde505",
+      "indexU32SHA256": "4d3b1ea9826e62e6af0195fc6626bba8ddac0c6a0469c3b817c8c730e6156c1e",
+      "topology": {
+        "name": "seat-pan",
+        "triangles": 12,
+        "degenerateTriangles": 0,
+        "weldToleranceM": 0.000001,
+        "components": [
+          {
+            "id": 0,
+            "triangles": 12,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          }
+        ],
+        "solidComplete": true
+      }
+    },
+    {
+      "id": "seat-cushion",
+      "shape": "roundbox",
+      "positionSHA256": "9d131add90f63c583342f78a9f1178177de8ca8fca70d808868f9da30ffba1d9",
+      "indexU32SHA256": "4d3b1ea9826e62e6af0195fc6626bba8ddac0c6a0469c3b817c8c730e6156c1e",
+      "topology": {
+        "name": "seat-cushion",
+        "triangles": 12,
+        "degenerateTriangles": 0,
+        "weldToleranceM": 0.000001,
+        "components": [
+          {
+            "id": 0,
+            "triangles": 12,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          }
+        ],
+        "solidComplete": true
+      }
+    },
+    {
+      "id": "back-shell",
+      "shape": "box",
+      "positionSHA256": "ba0a643a28027585a0f56cc83f3ee17f9ec4bbcdc9ce28c0eb8d2f4621929049",
+      "indexU32SHA256": "4d3b1ea9826e62e6af0195fc6626bba8ddac0c6a0469c3b817c8c730e6156c1e",
+      "topology": {
+        "name": "back-shell",
+        "triangles": 12,
+        "degenerateTriangles": 0,
+        "weldToleranceM": 0.000001,
+        "components": [
+          {
+            "id": 0,
+            "triangles": 12,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          }
+        ],
+        "solidComplete": true
+      }
+    },
+    {
+      "id": "back-pad",
+      "shape": "roundbox",
+      "positionSHA256": "0c9af9f547a62e145cf176d63bc56013e23cface2812e33ae05fda777077b450",
+      "indexU32SHA256": "4d3b1ea9826e62e6af0195fc6626bba8ddac0c6a0469c3b817c8c730e6156c1e",
+      "topology": {
+        "name": "back-pad",
+        "triangles": 12,
+        "degenerateTriangles": 0,
+        "weldToleranceM": 0.000001,
+        "components": [
+          {
+            "id": 0,
+            "triangles": 12,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          }
+        ],
+        "solidComplete": true
+      }
+    },
+    {
+      "id": "rail-left",
+      "shape": "box",
+      "positionSHA256": "be2fb18c7ecd480d08715e9841ad70d0c6dd02aac1ddf3b633a9879277b496ee",
+      "indexU32SHA256": "4d3b1ea9826e62e6af0195fc6626bba8ddac0c6a0469c3b817c8c730e6156c1e",
+      "topology": {
+        "name": "rail-left",
+        "triangles": 12,
+        "degenerateTriangles": 0,
+        "weldToleranceM": 0.000001,
+        "components": [
+          {
+            "id": 0,
+            "triangles": 12,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          }
+        ],
+        "solidComplete": true
+      }
+    },
+    {
+      "id": "rail-right",
+      "shape": "box",
+      "positionSHA256": "be2fb18c7ecd480d08715e9841ad70d0c6dd02aac1ddf3b633a9879277b496ee",
+      "indexU32SHA256": "4d3b1ea9826e62e6af0195fc6626bba8ddac0c6a0469c3b817c8c730e6156c1e",
+      "topology": {
+        "name": "rail-right",
+        "triangles": 12,
+        "degenerateTriangles": 0,
+        "weldToleranceM": 0.000001,
+        "components": [
+          {
+            "id": 0,
+            "triangles": 12,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          }
+        ],
+        "solidComplete": true
+      }
+    },
+    {
+      "id": "foot-post-left",
+      "shape": "box",
+      "positionSHA256": "f5269e7e579a18f4f1e391c0adfa97d651c04bd8610e0a9fcc5c7d8d08b88d4a",
+      "indexU32SHA256": "4d3b1ea9826e62e6af0195fc6626bba8ddac0c6a0469c3b817c8c730e6156c1e",
+      "topology": {
+        "name": "foot-post-left",
+        "triangles": 12,
+        "degenerateTriangles": 0,
+        "weldToleranceM": 0.000001,
+        "components": [
+          {
+            "id": 0,
+            "triangles": 12,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          }
+        ],
+        "solidComplete": true
+      }
+    },
+    {
+      "id": "foot-post-right",
+      "shape": "box",
+      "positionSHA256": "f5269e7e579a18f4f1e391c0adfa97d651c04bd8610e0a9fcc5c7d8d08b88d4a",
+      "indexU32SHA256": "4d3b1ea9826e62e6af0195fc6626bba8ddac0c6a0469c3b817c8c730e6156c1e",
+      "topology": {
+        "name": "foot-post-right",
+        "triangles": 12,
+        "degenerateTriangles": 0,
+        "weldToleranceM": 0.000001,
+        "components": [
+          {
+            "id": 0,
+            "triangles": 12,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          }
+        ],
+        "solidComplete": true
+      }
+    },
+    {
+      "id": "foot-axle",
+      "shape": "cylinder",
+      "positionSHA256": "fd8dddeba03fc2e033bc9204d997346f80232a7d3c57189835a4eaad3ada5b08",
+      "indexU32SHA256": "dd2ee11236c6d90767f60752b69abff10be503c708dc5878fb564c37810250c8",
+      "topology": {
+        "name": "foot-axle",
+        "triangles": 96,
+        "degenerateTriangles": 0,
+        "weldToleranceM": 0.000001,
+        "components": [
+          {
+            "id": 0,
+            "triangles": 96,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          }
+        ],
+        "solidComplete": true
+      }
+    },
+    {
+      "id": "foot-left",
+      "shape": "roundbox",
+      "positionSHA256": "71196c60cad232a0d74147061e310697429690826595e12e83965405a48723d0",
+      "indexU32SHA256": "4d3b1ea9826e62e6af0195fc6626bba8ddac0c6a0469c3b817c8c730e6156c1e",
+      "topology": {
+        "name": "foot-left",
+        "triangles": 12,
+        "degenerateTriangles": 0,
+        "weldToleranceM": 0.000001,
+        "components": [
+          {
+            "id": 0,
+            "triangles": 12,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          }
+        ],
+        "solidComplete": true
+      }
+    },
+    {
+      "id": "foot-right",
+      "shape": "roundbox",
+      "positionSHA256": "71196c60cad232a0d74147061e310697429690826595e12e83965405a48723d0",
+      "indexU32SHA256": "4d3b1ea9826e62e6af0195fc6626bba8ddac0c6a0469c3b817c8c730e6156c1e",
+      "topology": {
+        "name": "foot-right",
+        "triangles": 12,
+        "degenerateTriangles": 0,
+        "weldToleranceM": 0.000001,
+        "components": [
+          {
+            "id": 0,
+            "triangles": 12,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          }
+        ],
+        "solidComplete": true
+      }
+    },
+    {
+      "id": "column-mount",
+      "shape": "box",
+      "positionSHA256": "5f1cbbc62e8ac4c359d074135335ad39a3f160ed08788c021e5e82fb7eeb460e",
+      "indexU32SHA256": "4d3b1ea9826e62e6af0195fc6626bba8ddac0c6a0469c3b817c8c730e6156c1e",
+      "topology": {
+        "name": "column-mount",
+        "triangles": 12,
+        "degenerateTriangles": 0,
+        "weldToleranceM": 0.000001,
+        "components": [
+          {
+            "id": 0,
+            "triangles": 12,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          }
+        ],
+        "solidComplete": true
+      }
+    },
+    {
+      "id": "column-extension",
+      "shape": "link",
+      "positionSHA256": "362a0378448e7403789ab2aa0bf260dc43bb95ef21b775a42a46071532f2b2db",
+      "indexU32SHA256": "f87030fd3b6d6e65031a2d880a0d2cf8a8025d44ca6823a179800cc8df6c25a6",
+      "topology": {
+        "name": "column-extension",
+        "triangles": 64,
+        "degenerateTriangles": 0,
+        "weldToleranceM": 0.000001,
+        "components": [
+          {
+            "id": 0,
+            "triangles": 64,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          }
+        ],
+        "solidComplete": true
+      }
+    },
+    {
+      "id": "wheel-rim",
+      "shape": "torus",
+      "positionSHA256": "e940c70b63d522f17539bed0536e3074bfd70917db2cbe5d8061bc64118df09b",
+      "indexU32SHA256": "a01bd5c2c3100f9dfc8b04bb2e47ae0f29529c8002ac1e482a6ea0adc8575b3d",
+      "topology": {
+        "name": "wheel-rim",
+        "triangles": 2048,
+        "degenerateTriangles": 0,
+        "weldToleranceM": 0.000001,
+        "components": [
+          {
+            "id": 0,
+            "triangles": 2048,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          }
+        ],
+        "solidComplete": true
+      }
+    },
+    {
+      "id": "wheel-hub",
+      "shape": "cylinder",
+      "positionSHA256": "317e7a4aeec92959f0ee18234ecf1546da3716170f2d38bc07cca4da556ab06c",
+      "indexU32SHA256": "dd2ee11236c6d90767f60752b69abff10be503c708dc5878fb564c37810250c8",
+      "topology": {
+        "name": "wheel-hub",
+        "triangles": 96,
+        "degenerateTriangles": 0,
+        "weldToleranceM": 0.000001,
+        "components": [
+          {
+            "id": 0,
+            "triangles": 96,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          }
+        ],
+        "solidComplete": true
+      }
+    },
+    {
+      "id": "spoke-a",
+      "shape": "radial",
+      "positionSHA256": "994df0b7dc65034fc526fda458d5ef2fd6073c0270add1e906c02e18ba307a96",
+      "indexU32SHA256": "f87030fd3b6d6e65031a2d880a0d2cf8a8025d44ca6823a179800cc8df6c25a6",
+      "topology": {
+        "name": "spoke-a",
+        "triangles": 64,
+        "degenerateTriangles": 0,
+        "weldToleranceM": 0.000001,
+        "components": [
+          {
+            "id": 0,
+            "triangles": 64,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          }
+        ],
+        "solidComplete": true
+      }
+    },
+    {
+      "id": "spoke-b",
+      "shape": "radial",
+      "positionSHA256": "bcf19c6fe706fbc462b4dad2516205e8b2549cec651b105b8ea86dd9bcca7311",
+      "indexU32SHA256": "f87030fd3b6d6e65031a2d880a0d2cf8a8025d44ca6823a179800cc8df6c25a6",
+      "topology": {
+        "name": "spoke-b",
+        "triangles": 64,
+        "degenerateTriangles": 0,
+        "weldToleranceM": 0.000001,
+        "components": [
+          {
+            "id": 0,
+            "triangles": 64,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          }
+        ],
+        "solidComplete": true
+      }
+    },
+    {
+      "id": "spoke-c",
+      "shape": "radial",
+      "positionSHA256": "1879d904d33afe2a877fae7d7b87309e4e698033b678839b46203db9c1d19668",
+      "indexU32SHA256": "f87030fd3b6d6e65031a2d880a0d2cf8a8025d44ca6823a179800cc8df6c25a6",
+      "topology": {
+        "name": "spoke-c",
+        "triangles": 64,
+        "degenerateTriangles": 0,
+        "weldToleranceM": 0.000001,
+        "components": [
+          {
+            "id": 0,
+            "triangles": 64,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          }
+        ],
+        "solidComplete": true
+      }
+    },
+    {
+      "id": "throttle-base",
+      "shape": "box",
+      "positionSHA256": "7edacc1254f95850bb130512add1c3ccc38e1303af5ca371b0adca5571809c84",
+      "indexU32SHA256": "4d3b1ea9826e62e6af0195fc6626bba8ddac0c6a0469c3b817c8c730e6156c1e",
+      "topology": {
+        "name": "throttle-base",
+        "triangles": 12,
+        "degenerateTriangles": 0,
+        "weldToleranceM": 0.000001,
+        "components": [
+          {
+            "id": 0,
+            "triangles": 12,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          }
+        ],
+        "solidComplete": true
+      }
+    },
+    {
+      "id": "throttle-post",
+      "shape": "box",
+      "positionSHA256": "1409123e802796471316db8655410bec3fcfe0e0be145f35bb64ed40ef1302e8",
+      "indexU32SHA256": "4d3b1ea9826e62e6af0195fc6626bba8ddac0c6a0469c3b817c8c730e6156c1e",
+      "topology": {
+        "name": "throttle-post",
+        "triangles": 12,
+        "degenerateTriangles": 0,
+        "weldToleranceM": 0.000001,
+        "components": [
+          {
+            "id": 0,
+            "triangles": 12,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          }
+        ],
+        "solidComplete": true
+      }
+    },
+    {
+      "id": "throttle-shelf",
+      "shape": "roundbox",
+      "positionSHA256": "761445e3e0c1d2b62da176bf73d8ad5e2e045d031a87160633c82fbb98046a45",
+      "indexU32SHA256": "4d3b1ea9826e62e6af0195fc6626bba8ddac0c6a0469c3b817c8c730e6156c1e",
+      "topology": {
+        "name": "throttle-shelf",
+        "triangles": 12,
+        "degenerateTriangles": 0,
+        "weldToleranceM": 0.000001,
+        "components": [
+          {
+            "id": 0,
+            "triangles": 12,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          }
+        ],
+        "solidComplete": true
+      }
+    },
+    {
+      "id": "throttle-lever",
+      "shape": "cylinder",
+      "positionSHA256": "27cde62503eb4c5bd78c9c0facfb34184eb9e2e210e1922b123560f808591eaa",
+      "indexU32SHA256": "dd2ee11236c6d90767f60752b69abff10be503c708dc5878fb564c37810250c8",
+      "topology": {
+        "name": "throttle-lever",
+        "triangles": 96,
+        "degenerateTriangles": 0,
+        "weldToleranceM": 0.000001,
+        "components": [
+          {
+            "id": 0,
+            "triangles": 96,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          }
+        ],
+        "solidComplete": true
+      }
+    },
+    {
+      "id": "throttle-grip",
+      "shape": "roundbox",
+      "positionSHA256": "45427fcdd678127a2b0f3803a3eaf1031d49143661834da822f162eb2fc59280",
+      "indexU32SHA256": "4d3b1ea9826e62e6af0195fc6626bba8ddac0c6a0469c3b817c8c730e6156c1e",
+      "topology": {
+        "name": "throttle-grip",
+        "triangles": 12,
+        "degenerateTriangles": 0,
+        "weldToleranceM": 0.000001,
+        "components": [
+          {
+            "id": 0,
+            "triangles": 12,
+            "closed": true,
+            "boundaryEdges": 0,
+            "nonmanifoldEdges": 0,
+            "windingErrors": 0
+          }
+        ],
+        "solidComplete": true
+      }
+    }
+  ],
+  "gripArcAmbiguity": {
+    "point": [
+      -0.016,
+      -0.01647251374672664,
+      -0.16417568727087425
+    ],
+    "principal": -3.0415926535897935,
+    "storedInterval": [
+      2.891592653589793,
+      3.391592653589793
+    ],
+    "literalMembership": false
+  },
+  "limitations": [
+    "Local Three 180 geometry construction, not owner generated-runtime manifest equivalence",
+    "No actual host current transforms or survivor ledger generated/verified",
+    "H6 triangulated point/edge oracle is a negative diagnostic, not analytic/swept acceptance",
+    "No human pose, profile, body clearance or browser test performed"
+  ],
+  "pending": [
+    "Final source, generated manifest, design/geometry/ledger/contact digests and browser result",
+    "Circular grip membership, hand assignment, positive contact gap and back-support requirement",
+    "Retained closed component identities; guard construction frame and separation boundary",
+    "Single-frame binding for all survivor and authored matrices with independent host context",
+    "Analytic solid, reverse edge/face, coplanar/contained/self-intersection and swept collision coverage before acceptance"
+  ],
+  "fittingAuthorized": false,
+  "fullBodyAccepted": false,
+  "productionAccepted": false
+}
