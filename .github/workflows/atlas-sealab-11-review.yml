@@ -2,7 +2,7 @@ name: ATLAS Sea Lab 11 coast and mobile review
 on:
   workflow_dispatch:
   push:
-    paths: ['.github/workflows/atlas-sealab-11-review.yml','atlas_sealab_11/transport/**','atlas_sealab_11/fix11.py']
+    paths: ['.github/workflows/atlas-sealab-11-review.yml','atlas_sealab_11/transport/**','atlas_sealab_11/fix11.py','atlas_sealab_11/coast_polish11.py']
 permissions:
   contents: read
   actions: read
@@ -37,7 +37,8 @@ jobs:
               (r/p).write_text(text)
           PY
           python atlas_sealab_11/patch11.py
-          if [ -f atlas_sealab_11/fix11.py ]; then python atlas_sealab_11/fix11.py; fi
+          python atlas_sealab_11/fix11.py
+          python atlas_sealab_11/coast_polish11.py
           for f in atlas_sealab_11/site/*.js; do node --check "$f"; done
           mkdir -p atlas_sealab_11/review
           cd atlas_sealab_11
