@@ -1,41 +1,41 @@
 {
   "passed": true,
-  "url": "https://rawcdn.githack.com/owensto/helper/84360b1fd29998fd70d68d8c4c48cb7e28d494bd/atlas_d_simulator_01/live/index.html",
-  "commit": "84360b1fd29998fd70d68d8c4c48cb7e28d494bd",
+  "url": "https://rawcdn.githack.com/owensto/helper/48b9bef038ab2e422b6677d7ca9db4879419a3f9/atlas_d_simulator_01/live/index.html",
+  "commit": "48b9bef038ab2e422b6677d7ca9db4879419a3f9",
   "localAssetsSubstituted": false,
   "files": {
     "index.html": {
       "path": "index.html",
       "status": 200,
-      "url": "https://rawcdn.githack.com/owensto/helper/84360b1fd29998fd70d68d8c4c48cb7e28d494bd/atlas_d_simulator_01/live/index.html",
+      "url": "https://rawcdn.githack.com/owensto/helper/48b9bef038ab2e422b6677d7ca9db4879419a3f9/atlas_d_simulator_01/live/index.html",
       "sha256": "f2d6aa19dfbf8d713139aadf04a6ead4c8b44c280d6de7f7b4d45a2e29651a08",
+      "exact": true
+    },
+    "atlas-d.js": {
+      "path": "atlas-d.js",
+      "status": 200,
+      "url": "https://rawcdn.githack.com/owensto/helper/48b9bef038ab2e422b6677d7ca9db4879419a3f9/atlas_d_simulator_01/live/atlas-d.js",
+      "sha256": "b8dd34a083b988e479db3fa6c32ec432c4daf720128807eaaf42c887048b3e2b",
       "exact": true
     },
     "atlas-d.css": {
       "path": "atlas-d.css",
       "status": 200,
-      "url": "https://rawcdn.githack.com/owensto/helper/84360b1fd29998fd70d68d8c4c48cb7e28d494bd/atlas_d_simulator_01/live/atlas-d.css",
+      "url": "https://rawcdn.githack.com/owensto/helper/48b9bef038ab2e422b6677d7ca9db4879419a3f9/atlas_d_simulator_01/live/atlas-d.css",
       "sha256": "59652dd1eb6d66a6f6e1e5e5c95ed40bfbd48b05bee791641d80e655cc526ad6",
       "exact": true
     },
     "atlas-d-core.js": {
       "path": "atlas-d-core.js",
       "status": 200,
-      "url": "https://rawcdn.githack.com/owensto/helper/84360b1fd29998fd70d68d8c4c48cb7e28d494bd/atlas_d_simulator_01/live/atlas-d-core.js",
+      "url": "https://rawcdn.githack.com/owensto/helper/48b9bef038ab2e422b6677d7ca9db4879419a3f9/atlas_d_simulator_01/live/atlas-d-core.js",
       "sha256": "ca362b6e6d5a79b17dfde679e1746faace0863ceb3680cb241dc320de60d2ed5",
-      "exact": true
-    },
-    "atlas-d.js": {
-      "path": "atlas-d.js",
-      "status": 200,
-      "url": "https://rawcdn.githack.com/owensto/helper/84360b1fd29998fd70d68d8c4c48cb7e28d494bd/atlas_d_simulator_01/live/atlas-d.js",
-      "sha256": "910e70f1e8ea349d1502315516eac99e955eb8da910eb17ae5dcd84c4f022b3f",
       "exact": true
     },
     "assets/ATLAS_D_Original.glb": {
       "path": "assets/ATLAS_D_Original.glb",
       "status": 200,
-      "url": "https://raw.githubusercontent.com/owensto/helper/84360b1fd29998fd70d68d8c4c48cb7e28d494bd/atlas_d_simulator_01/live/assets/ATLAS_D_Original.glb",
+      "url": "https://raw.githubusercontent.com/owensto/helper/48b9bef038ab2e422b6677d7ca9db4879419a3f9/atlas_d_simulator_01/live/assets/ATLAS_D_Original.glb",
       "sha256": "b2966e8265edbd6d52ac2fa7aa1aaa764683df5ff1548a21c8cc1a024fdb3d48",
       "exact": true
     }
@@ -47,54 +47,54 @@
     {
       "path": "index.html",
       "status": 200,
-      "url": "https://rawcdn.githack.com/owensto/helper/84360b1fd29998fd70d68d8c4c48cb7e28d494bd/atlas_d_simulator_01/live/index.html",
-      "sha256": "338c35f8b2ce554f9def220fe7c9c0d9c26573a8d15ba5665ab9d2a067e18638",
+      "url": "https://rawcdn.githack.com/owensto/helper/48b9bef038ab2e422b6677d7ca9db4879419a3f9/atlas_d_simulator_01/live/index.html",
+      "sha256": "4bc972d33702c9033009a5a73da79f287244a272c8c47f98fd09ca589af6422c",
       "exact": false
     },
     {
       "path": "index.html",
       "status": 303,
-      "url": "https://rawcdn.githack.com/owensto/helper/84360b1fd29998fd70d68d8c4c48cb7e28d494bd/atlas_d_simulator_01/live/index.html",
+      "url": "https://rawcdn.githack.com/owensto/helper/48b9bef038ab2e422b6677d7ca9db4879419a3f9/atlas_d_simulator_01/live/index.html",
       "readError": "Response.body: Response body is unavailable for redirect responses"
     },
     {
       "path": "index.html",
       "status": 200,
-      "url": "https://rawcdn.githack.com/owensto/helper/84360b1fd29998fd70d68d8c4c48cb7e28d494bd/atlas_d_simulator_01/live/index.html",
+      "url": "https://rawcdn.githack.com/owensto/helper/48b9bef038ab2e422b6677d7ca9db4879419a3f9/atlas_d_simulator_01/live/index.html",
       "sha256": "f2d6aa19dfbf8d713139aadf04a6ead4c8b44c280d6de7f7b4d45a2e29651a08",
+      "exact": true
+    },
+    {
+      "path": "atlas-d.js",
+      "status": 200,
+      "url": "https://rawcdn.githack.com/owensto/helper/48b9bef038ab2e422b6677d7ca9db4879419a3f9/atlas_d_simulator_01/live/atlas-d.js",
+      "sha256": "b8dd34a083b988e479db3fa6c32ec432c4daf720128807eaaf42c887048b3e2b",
       "exact": true
     },
     {
       "path": "atlas-d.css",
       "status": 200,
-      "url": "https://rawcdn.githack.com/owensto/helper/84360b1fd29998fd70d68d8c4c48cb7e28d494bd/atlas_d_simulator_01/live/atlas-d.css",
+      "url": "https://rawcdn.githack.com/owensto/helper/48b9bef038ab2e422b6677d7ca9db4879419a3f9/atlas_d_simulator_01/live/atlas-d.css",
       "sha256": "59652dd1eb6d66a6f6e1e5e5c95ed40bfbd48b05bee791641d80e655cc526ad6",
       "exact": true
     },
     {
       "path": "atlas-d-core.js",
       "status": 200,
-      "url": "https://rawcdn.githack.com/owensto/helper/84360b1fd29998fd70d68d8c4c48cb7e28d494bd/atlas_d_simulator_01/live/atlas-d-core.js",
+      "url": "https://rawcdn.githack.com/owensto/helper/48b9bef038ab2e422b6677d7ca9db4879419a3f9/atlas_d_simulator_01/live/atlas-d-core.js",
       "sha256": "ca362b6e6d5a79b17dfde679e1746faace0863ceb3680cb241dc320de60d2ed5",
-      "exact": true
-    },
-    {
-      "path": "atlas-d.js",
-      "status": 200,
-      "url": "https://rawcdn.githack.com/owensto/helper/84360b1fd29998fd70d68d8c4c48cb7e28d494bd/atlas_d_simulator_01/live/atlas-d.js",
-      "sha256": "910e70f1e8ea349d1502315516eac99e955eb8da910eb17ae5dcd84c4f022b3f",
       "exact": true
     },
     {
       "path": "assets/ATLAS_D_Original.glb",
       "status": 301,
-      "url": "https://rawcdn.githack.com/owensto/helper/84360b1fd29998fd70d68d8c4c48cb7e28d494bd/atlas_d_simulator_01/live/assets/ATLAS_D_Original.glb",
+      "url": "https://rawcdn.githack.com/owensto/helper/48b9bef038ab2e422b6677d7ca9db4879419a3f9/atlas_d_simulator_01/live/assets/ATLAS_D_Original.glb",
       "readError": "Response.body: Response body is unavailable for redirect responses"
     },
     {
       "path": "assets/ATLAS_D_Original.glb",
       "status": 200,
-      "url": "https://raw.githubusercontent.com/owensto/helper/84360b1fd29998fd70d68d8c4c48cb7e28d494bd/atlas_d_simulator_01/live/assets/ATLAS_D_Original.glb",
+      "url": "https://raw.githubusercontent.com/owensto/helper/48b9bef038ab2e422b6677d7ca9db4879419a3f9/atlas_d_simulator_01/live/assets/ATLAS_D_Original.glb",
       "sha256": "b2966e8265edbd6d52ac2fa7aa1aaa764683df5ff1548a21c8cc1a024fdb3d48",
       "exact": true
     }
@@ -102,11 +102,11 @@
   "initialTitle": "External Content Notice | rawgit.hack",
   "initialStallRecovered": true,
   "realTime": {
-    "wallSeconds": 10.005344088000015,
-    "simulationSeconds": 9.833333333333586,
-    "frames": 11,
-    "distanceM": 5.648813584225949,
-    "speedMps": 1.0526976655843987,
+    "wallSeconds": 10.005321915000025,
+    "simulationSeconds": 9.883333333333537,
+    "frames": 15,
+    "distanceM": 5.701582826488926,
+    "speedMps": 1.0567272038494786,
     "paused": false,
     "deterministicTestStepUsed": false,
     "physicalHardwareBenchmark": false,
