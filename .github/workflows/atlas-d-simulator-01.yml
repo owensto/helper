@@ -7,9 +7,11 @@ on:
       - '.github/workflows/atlas-d-simulator-01.yml'
       - 'atlas_d_simulator_01/src/**'
       - 'atlas_d_simulator_01/build.py'
+      - 'atlas_d_simulator_01/polish_runtime.py'
       - 'atlas_d_simulator_01/test-core.cjs'
       - 'atlas_d_simulator_01/verify.py'
       - 'atlas_d_simulator_01/verify_public.py'
+      - 'atlas_d_simulator_01/verify_public_v2.py'
 permissions:
   contents: write
 concurrency:
@@ -34,6 +36,7 @@ jobs:
           node-version: '22'
       - name: Assemble pinned original yacht and Sea Lab host
         run: |
+          python atlas_d_simulator_01/polish_runtime.py
           python atlas_d_simulator_01/build.py
           mkdir -p atlas_d_simulator_01/review
           for f in atlas_d_simulator_01/src/*.js; do node --check "$f"; done
@@ -68,7 +71,7 @@ jobs:
           echo "PUBLIC_URL=https://rawcdn.githack.com/owensto/helper/$(git rev-parse HEAD)/atlas_d_simulator_01/live/index.html" >> "$GITHUB_ENV"
       - name: Verify browser-delivered assets, real-time driving and public operation
         run: |
-          python atlas_d_simulator_01/verify_public.py
+          python atlas_d_simulator_01/verify_public_v2.py
           git add -f atlas_d_simulator_01/review atlas_d_simulator_01/RELEASE.json
           git commit -m 'Verify immutable online ATLAS D yacht and submarine preview'
           git pull --rebase --autostash origin main
