@@ -1,8 +1,11 @@
 {
   "status": "DIAGNOSTIC_PASS_RELEASE_BLOCKED",
-  "latest_report": "evidence/m2/report.json",
+  "latest_report": "evidence/m3/report.json",
+  "protocol": "atlas-net-3",
   "live_multiplayer": false,
-  "pinned_dependency": "BLOCKED",
-  "browser_motion": "BLOCKED_BROWSER_POLICY",
+  "dependency_free_tests": 58,
+  "total_diagnostic_tests": 85,
+  "pinned_dependency": "BLOCKED_EAI_AGAIN",
+  "browser_motion": "BLOCKED_BY_PRIOR_BROWSER_POLICY",
   "integrated_regression": "NOT_RUN"
 }

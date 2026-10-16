@@ -1,4 +1,4 @@
-import {PROTOCOL,PLAYER_ID,ROOM_ID,finite,canonical,validatePose,validateWorld,worldFingerprint} from '../shared/world.mjs';
+import {PROTOCOL,PLAYER_ID,ROOM_ID,finite,canonical,validatePose,validateSourceClock,nextSourceClock,validateWorld,worldFingerprint} from '../shared/world.mjs';
 import {inviteLink,parseInvite} from './invite.mjs';
 const err=code=>Object.assign(new Error(code),{code});
 const nameOK=name=>typeof name==='string'&&name.trim()&&[...name].length<=24&&!/[\x00-\x1f\x7f<>]/.test(name);
@@ -9,19 +9,19 @@ export async function createRoomClient(options) {
   return new RoomClient({...options,world,hash});
 }
 class RoomClient extends EventTarget {
-  #session=null;#ws=null;#epoch=0;#seq=0;#stopped=true;#settle=null;#plan=null;
+  #session=null;#cursors=new Map();#ws=null;#epoch=0;#seq=0;#stopped=true;#settle=null;#plan=null;
   #sendTimer=null;#watchTimer=null;#pingTimer=null;#retryTimer=null;#connectTimer=null;
   #abort=null;#lossAt=null;#retry=0;#fatal=false;#welcomed=false;#snapshotTime=-1;
   #lastSnapshot=0;#lastSent=-Infinity;#offset=0;#roomOrigin=0;#lastAge=0;#pings=new Map();#rttSamples=[];
   #info={state:'idle',players:0,error:null,rttMs:null,playerId:null,entityId:null,vesselId:null,roomId:null};
-  constructor({world,hash,endpoint,baseUrl,onWelcome,readPose,now=()=>performance.now(),webSocketFactory=url=>new WebSocket(url)}) {
+  constructor({world,hash,endpoint,baseUrl,onWelcome,readPose,readSample,now=()=>performance.now(),webSocketFactory=url=>new WebSocket(url)}) {
     super();
     const url=new URL(endpoint);
     if(!['ws:','wss:'].includes(url.protocol)||url.username||url.password||url.pathname!=='/ws'||url.search||url.hash)throw err('BAD_ENDPOINT');
     if(url.protocol==='ws:'&&!['127.0.0.1','localhost','[::1]'].includes(url.hostname))throw err('INSECURE_ENDPOINT');
     if(globalThis.location?.protocol==='https:'&&url.protocol!=='wss:')throw err('INSECURE_ENDPOINT');
-    if(typeof onWelcome!=='function'||typeof readPose!=='function')throw err('HOST_ADAPTER_REQUIRED');
-    Object.assign(this,{world,worldHash:hash,endpoint:url.href,baseUrl,onWelcome,readPose,now,webSocketFactory});
+    if(typeof onWelcome!=='function'||(typeof readPose!=='function'&&typeof readSample!=='function'))throw err('HOST_ADAPTER_REQUIRED');
+    Object.assign(this,{world,worldHash:hash,endpoint:url.href,baseUrl,onWelcome,readPose,readSample,now,webSocketFactory});
     this.stats={sent:0,snapshots:0,reconnects:0};
   }
   get info(){return {...this.#info};}
@@ -40,7 +40,7 @@ class RoomClient extends EventTarget {
   #start(plan) {
     if(!['idle','error','offline'].includes(this.#info.state)||this.#session)throw err('ALREADY_ACTIVE');
     if(!nameOK(plan.name)||!Object.hasOwn(this.world.vessels,plan.vesselId||''))throw err('BAD_NAME_OR_VESSEL');
-    this.#stopped=false;this.#fatal=false;this.#retry=0;this.#lossAt=null;this.#lastAge=0;this.#rttSamples=[];this.#lastSent=-Infinity;this.#plan={...plan,name:plan.name.normalize('NFC').trim()};
+    this.#cursors.clear();this.#stopped=false;this.#fatal=false;this.#retry=0;this.#lossAt=null;this.#lastAge=0;this.#rttSamples=[];this.#lastSent=-Infinity;this.#plan={...plan,name:plan.name.normalize('NFC').trim()};
     const promise=new Promise((resolve,reject)=>{this.#settle={resolve,reject};});
     this.#dial(false);return promise;
   }
@@ -123,11 +123,23 @@ class RoomClient extends EventTarget {
          !finite(p.updatedAt,1e15)||p.updatedAt>m.serverTime||ids.has(p.id)||slots.has(p.slot))throw err('BAD_SERVER_MESSAGE');
       ids.add(p.id);slots.add(p.slot);
       return {id:p.id,entityId:p.entityId,vesselId:p.vesselId,slot:p.slot,name:p.name,connected:p.connected,
-        seq:p.seq,updatedAt:p.updatedAt,pose:validatePose(p.pose)};
+        seq:p.seq,updatedAt:p.updatedAt,pose:validatePose(p.pose),clock:validateSourceClock(p.clock??null)};
     });
+    // Authenticate identity/revision at handshake, then independently reject stale roster state.
+    const cursors=new Map();
+    for(const p of players){
+      const prev=this.#cursors.get(p.id);
+      if(prev){
+        if(p.vesselId!==prev.vesselId||p.slot!==prev.slot||p.seq<prev.seq||p.updatedAt<prev.updatedAt)throw err('BAD_SERVER_MESSAGE');
+        if(p.seq===prev.seq&&(canonical(p.pose)!==canonical(prev.pose)||canonical(p.clock)!==canonical(prev.clock)))throw err('BAD_SERVER_MESSAGE');
+        try{nextSourceClock(prev.clock,p.clock);}catch{throw err('BAD_SERVER_MESSAGE');}
+      }
+      if(this.world.kind==='core'&&p.seq>=0&&p.clock===null)throw err('BAD_SERVER_MESSAGE');
+      cursors.set(p.id,p);
+    }
     const self=players.find(p=>p.id===this.#session.playerId);
     if(!self||self.vesselId!==this.#session.vesselId||self.entityId!==this.#info.entityId)throw err('IDENTITY_MISMATCH');
-    this.#snapshotTime=m.serverTime;this.#lastSnapshot=this.now();this.stats.snapshots++;
+    this.#cursors=cursors;this.#snapshotTime=m.serverTime;this.#lastSnapshot=this.now();this.stats.snapshots++;
     this.#info.players=players.filter(p=>p.connected).length;
     this.#event('snapshot',{serverTime:m.serverTime,players,selfId:this.#session.playerId});
     this.#event('status',this.info);
@@ -148,10 +160,12 @@ class RoomClient extends EventTarget {
     if(!this.connected||this.#ws?.readyState!==1||this.now()-this.#lastSent<45)return;
     if(this.#ws.bufferedAmount>32768){closeQuietly(this.#ws,4008,'SLOW_CONNECTION');return;}
     try{
-      const pose=validatePose(this.readPose());
+      const sample=this.readSample?this.readSample():{pose:this.readPose(),clock:null};
+      const pose=validatePose(sample.pose),clock=validateSourceClock(sample.clock??null);
+      if(this.world.kind==='core'&&clock===null)throw err('SOURCE_CLOCK_REQUIRED');
       if(!Number.isSafeInteger(this.#seq))throw err('SEQUENCE_EXPIRED');
-      this.#ws.send(JSON.stringify({type:'state',seq:this.#seq++,pose}));this.#lastSent=this.now();this.stats.sent++;
-    }catch(e){this.#fail(e.code==='VESSEL_SWITCH_REQUIRES_REJOIN'?e.code:'HOST_SAMPLE_FAILED');}
+      this.#ws.send(JSON.stringify({type:'state',seq:this.#seq++,pose,clock}));this.#lastSent=this.now();this.stats.sent++;
+    }catch(e){const safe=new Set(['VESSEL_SWITCH_REQUIRES_REJOIN','STALE_WORLD_REVISION','HOST_CLOCK_REGRESSION','HOST_FRAME_INVALID','HOST_IDENTITY_MISMATCH','CORE_RECOVERY_REQUIRED','SOURCE_CLOCK_REQUIRED']);this.#fail(safe.has(e.code)?e.code:'HOST_SAMPLE_FAILED');}
   }
   #lost(){
     this.#clearConnectionTimers();this.#abort?.abort();
@@ -167,14 +181,14 @@ class RoomClient extends EventTarget {
     this.#fatal=true;this.#stopped=true;this.#epoch++;this.#abort?.abort();
     clearTimeout(this.#retryTimer);this.#clearConnectionTimers();
     if(this.#session&&this.#ws?.readyState===1){try{this.#ws.send(JSON.stringify({type:'leave'}));}catch{}}
-    closeQuietly(this.#ws,4000,'CLIENT_STOP');this.#ws=null;this.#session=null;
+    closeQuietly(this.#ws,4000,'CLIENT_STOP');this.#ws=null;this.#session=null;this.#cursors.clear();
     this.#settle?.reject(err(code));this.#settle=null;this.#info.players=0;
     this.#status('error',code);this.#event('exit',{reason:code});
   }
   leave(){
     this.#stopped=true;this.#epoch++;this.#abort?.abort();clearTimeout(this.#retryTimer);this.#clearConnectionTimers();
     if(this.#session&&this.#ws?.readyState===1){try{this.#ws.send(JSON.stringify({type:'leave'}));}catch{}}
-    closeQuietly(this.#ws);this.#ws=null;this.#session=null;this.#lastAge=0;this.#rttSamples=[];
+    closeQuietly(this.#ws);this.#ws=null;this.#session=null;this.#cursors.clear();this.#lastAge=0;this.#rttSamples=[];
     this.#settle?.reject(err('CANCELLED'));this.#settle=null;
     this.#info={state:'idle',players:0,error:null,rttMs:null,playerId:null,entityId:null,vesselId:null,roomId:null};
     this.#status('idle');this.#event('exit',{reason:'LEFT'});

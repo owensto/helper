@@ -29,7 +29,7 @@ async function setup(t){
     const c=new FixtureController(),peers=new Map(),statuses=[],counts={prepare:0,restore:0,exit:0,applied:0,render:0,remove:0};
     let forced=null,map=false,saved=null;
     const host={
-      readLocal:()=>({vesselId:forced||FIXTURE_VESSEL,pose:c.pose()}),
+      readLocal:()=>({vesselId:forced||FIXTURE_VESSEL,pose:c.pose(),clock:c.clock()}),
       prepareLocal:async context=>{
         counts.prepare++;counts.restore+=Number(context.resumed);saved??=c.snapshot();
         if(prepareDelay)await delay(prepareDelay);
@@ -135,3 +135,45 @@ test('disabled adapter leaves deterministic fixture controller outcome identical
   for(let i=0;i<600;i++)a.render();a.dispose();
   assert.deepEqual(regressionScenario(),expected);assert.equal(touched,0);
 });
+
+test('source epoch reset propagates through actual client sockets with no interpolation across placement',{timeout:6000},async t=>{
+  const f=await setup(t),a=await f.client(),b=await f.client();
+  await a.a.create('Owen');await b.a.join('Crew',a.a.invite());
+  a.c.p=[10,0,0];a.c.elapsed=20;
+  await until(()=>[...b.peers.values()][0]?.pose.p[0]===10);
+  const observed=[];const timer=setInterval(()=>{const p=[...b.peers.values()][0];if(p)observed.push(p.pose.p[0]);},3);
+  t.after(()=>clearInterval(timer));
+  a.c.apply({...a.c.pose(),p:[20,0,0]});a.c.elapsed=0;
+  await until(()=>[...b.peers.values()][0]?.pose.p[0]===20);clearInterval(timer);
+  assert.ok(observed.every(x=>x===10||x===20),'Never interpolate between two source epochs');
+  const own=f.app.store.snapshot(a.a.info.roomId).players.find(p=>p.id===a.a.info.playerId);
+  assert.equal(own.clock.epoch,a.c.epoch);assert.ok(own.clock.seconds<1);
+});
+
+test('source clock rollback over an actual socket is rejected without updating accepted pose',{timeout:6000},async t=>{
+  const f=await setup(t),a=await f.client();await a.a.create('Owen');
+  a.c.epoch=5;a.c.elapsed=20;await until(()=>f.app.store.snapshot(a.a.info.roomId)?.players[0].clock?.epoch===5);
+  const roomId=a.a.info.roomId,old=f.app.store.snapshot(roomId).players[0].pose.p[0];
+  a.c.epoch=4;a.c.p[0]=999;
+  await until(()=>a.a.info.state==='error');assert.equal(a.a.info.error,'SOURCE_CLOCK_REGRESSION');
+  const still=f.app.store.snapshot(roomId)?.players[0];if(still)assert.equal(still.pose.p[0],old);
+});
+
+for(const kind of ['sequence-rollback','same-sequence-pose-change','source-epoch-rollback']){
+  test('actual client rejects inconsistent server snapshot: '+kind,{timeout:6000},async t=>{
+    const f=await setup(t),a=await f.client();let received=null;
+    const unsubscribe=a.a.subscribe('snapshot',s=>{received=structuredClone(s);});t.after(unsubscribe);
+    await a.a.create('Owen');a.c.epoch=10;
+    await until(()=>a.a.stats.snapshots>=3&&f.app.store.snapshot(a.a.info.roomId)?.players[0].clock?.epoch===10);
+    const original=f.app.store.snapshot.bind(f.app.store),baseline=received.players[0];
+    f.app.store.snapshot=roomId=>{
+      const snap=original(roomId);if(!snap)return snap;const p=snap.players[0];
+      if(kind==='sequence-rollback')p.seq=-1;
+      if(kind==='same-sequence-pose-change'){p.seq=baseline.seq;p.updatedAt=baseline.updatedAt;p.clock=structuredClone(baseline.clock);p.pose=structuredClone(baseline.pose);p.pose.p[0]+=999;}
+      if(kind==='source-epoch-rollback')p.clock.epoch=9;
+      return snap;
+    };
+    await until(()=>a.a.info.state==='error');assert.equal(a.a.info.error,'BAD_SERVER_MESSAGE');
+    assert.equal(a.counts.exit,1);
+  });
+}

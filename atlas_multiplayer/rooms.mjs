@@ -1,6 +1,6 @@
-/** Atlas D cooperative multiplayer, protocol 2. No authoritative boat physics. */
+/** Atlas D cooperative multiplayer, protocol 3. No authoritative boat physics. */
 import { randomBytes, timingSafeEqual, createHash } from 'node:crypto';
-import { PROTOCOL, canonical, validateWorld, validatePose } from './shared/world.mjs';
+import { PROTOCOL, canonical, validateWorld, validatePose, nextSourceClock } from './shared/world.mjs';
 export { PROTOCOL, validatePose } from './shared/world.mjs';
 
 const token = () => randomBytes(24).toString('base64url');
@@ -67,7 +67,7 @@ export class RoomStore {
       const slot = Array.from({length: this.maxPlayers}, (_,i) => i).find(i => !occupied.has(i));
       const spawn = this.world.vessels[hello.vesselId].spawns[slot];
       player = { id: token(), name, vesselId: hello.vesselId, slot, spawn, resumeToken: token(), connectionId: null,
-        disconnectedAt: null, sequence: -1, pose: validatePose({p:spawn.p,q:spawn.q,engine:false,rpm:0,gear:0}), updatedAt: this.now(),
+        disconnectedAt: null, sequence: -1, clock: null, pose: validatePose({p:spawn.p,q:spawn.q,engine:false,rpm:0,gear:0}), updatedAt: this.now(),
         bucket: new Bucket(25, 40, this.now()) };
       player.entityId = 'boat:' + player.id;
       room.players.set(player.id, player);
@@ -81,7 +81,7 @@ export class RoomStore {
       playerId: player.id, resumeToken: player.resumeToken, nextSequence: player.sequence + 1,
       worldId: this.worldId, worldRevision: this.worldRevision, worldHash: this.worldHash, seed: room.seed,
       vesselId: player.vesselId, entityId: player.entityId, slot: player.slot, spawn: structuredClone(player.spawn),
-      resumed: hello.action === 'resume',
+      resumed: hello.action === 'resume', selfClock: player.clock ? structuredClone(player.clock) : null,
       roomCreatedAt: room.createdAt, serverTime: this.now(), selfPose: player.pose ? structuredClone(player.pose) : null,
       maxPlayers: this.maxPlayers, graceMs: this.graceMs, physicsAuthority: 'client-owned' };
   }
@@ -91,11 +91,13 @@ export class RoomStore {
     const room = this.rooms.get(session.roomId), player = room?.players.get(session.playerId);
     if (!player || player.connectionId !== connectionId) fail('SESSION_EXPIRED');
     if (!player.bucket.take(this.now())) fail('RATE_LIMIT');
-    if (!message || Object.keys(message).some(k => !['type', 'seq', 'pose'].includes(k)) ||
+    if (!message || Object.keys(message).some(k => !['type', 'seq', 'pose', 'clock'].includes(k)) ||
         message.type !== 'state' || !Number.isSafeInteger(message.seq) || message.seq < 0) fail('BAD_STATE');
     if (message.seq <= player.sequence) return false;
     const pose = validatePose(message.pose);
-    Object.assign(player, { pose, sequence: message.seq, updatedAt: this.now() });
+    const clock = nextSourceClock(player.clock, message.clock ?? null);
+    if (this.world.kind === 'core' && clock === null) fail('SOURCE_CLOCK_REQUIRED');
+    Object.assign(player, { pose, clock, sequence: message.seq, updatedAt: this.now() });
     return true;
   }
   disconnect(connectionId, abandon = false) {
@@ -138,6 +140,6 @@ export class RoomStore {
       players: [...room.players.values()].map(p => ({ id: p.id, name: p.name,
         entityId: p.entityId, vesselId: p.vesselId, slot: p.slot,
         connected: p.connectionId !== null, seq: p.sequence, updatedAt: p.updatedAt,
-        pose: p.pose ? structuredClone(p.pose) : null })) };
+        pose: p.pose ? structuredClone(p.pose) : null, clock: p.clock ? structuredClone(p.clock) : null })) };
   }
 }

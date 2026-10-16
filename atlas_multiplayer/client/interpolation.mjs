@@ -1,4 +1,4 @@
-import { validatePose } from '../shared/world.mjs';
+import { validatePose, validateSourceClock } from '../shared/world.mjs';
 const mix=(a,b,t)=>a+(b-a)*t;
 export function slerp(a,b,t) {
   let dot=a.reduce((s,n,i)=>s+n*b[i],0),end=[...b];
@@ -24,9 +24,9 @@ export class RemoteBuffer {
       peer.meta={id:player.id,entityId:player.entityId,vesselId:player.vesselId,name:player.name,connected:player.connected};
       // Repeated roster snapshots must not make an old boat pose look fresh.
       if(player.pose && player.seq>peer.seq) {
-        const pose=validatePose(player.pose),last=peer.samples.at(-1);
-        if(last && (player.updatedAt<last.at || Math.hypot(...pose.p.map((x,i)=>x-last.pose.p[i]))>this.snapDistanceM))peer.samples=[];
-        peer.samples.push({at:player.updatedAt,pose});peer.seq=player.seq;
+        const pose=validatePose(player.pose),clock=validateSourceClock(player.clock??null),last=peer.samples.at(-1);
+        if(last && (player.updatedAt<last.at || (last.clock?.epoch!==clock?.epoch) || Math.hypot(...pose.p.map((x,i)=>x-last.pose.p[i]))>this.snapDistanceM))peer.samples=[];
+        peer.samples.push({at:player.updatedAt,pose,clock});peer.seq=player.seq;
         if(peer.samples.length>this.maxSamples)peer.samples.splice(0,peer.samples.length-this.maxSamples);
       }
     }

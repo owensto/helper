@@ -4,7 +4,7 @@ const FRIENDLY={ROOM_FULL:'This room is full.',ROOM_UNAVAILABLE:'This invitation
   INVITE_ORIGIN_MISMATCH:'Use an invitation from this same workshop.',BAD_INVITE:'Paste a valid invitation link.',
   CONNECTION_FAILED:'Could not connect. Single-player is still available.',SESSION_EXPIRED:'Your room session expired. Join again.',
   HOST_RESTORE_REFUSED:'The simulator could not safely restore this boat.',VESSEL_SWITCH_REQUIRES_REJOIN:'Leave the room before changing vessel.',
-  BAD_NAME_OR_VESSEL:'Use a guest name of 1–24 characters.'};
+  BAD_NAME_OR_VESSEL:'Use a guest name of 1–24 characters.',STALE_WORLD_REVISION:'The world changed. Rejoin a matching room.',HOST_CLOCK_REGRESSION:'The local simulation changed unexpectedly. Rejoin the room.',CORE_RECOVERY_REQUIRED:'Recover the boat in the simulator before rejoining.'};
 export function mountInviteControls({adapter,parent=document.body,fixture=false,baseUrl=location.href}) {
   if(adapter.info.state==='disabled')return {dispose:()=>{}};
   const root=document.createElement('section');root.dataset.atlasMp='';root.setAttribute('aria-label','Multiplayer');
@@ -28,7 +28,7 @@ export function mountInviteControls({adapter,parent=document.body,fixture=false,
     $('.mp-leave').disabled=!busy;$('.mp-copy').disabled=info.state!=='connected';
     if(info.state==='connected'){
       const link=adapter.invite();if($('.mp-share').value!==link)$('.mp-share').value=link;
-    }else $('.mp-share').value='';
+    }else { $('.mp-share').value='';if(['idle','error'].includes(info.state))$('.mp-roster').replaceChildren(); }
     if(info.error&&info.state==='error')$('.mp-error').textContent=FRIENDLY[info.error]||'Room unavailable. Leave or try again.';
   };
   const run=async fn=>{ $('.mp-error').textContent='';try{await fn();}catch(e){if(e.code!=='CANCELLED')$('.mp-error').textContent=FRIENDLY[e.code||e.message]||'Could not join this room.';} };

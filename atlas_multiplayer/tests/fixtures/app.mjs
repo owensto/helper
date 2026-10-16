@@ -4,7 +4,7 @@ import {endpoint} from './config.mjs';
 const query=new URLSearchParams(location.search),controller=new FixtureController(),remotes=new Map();
 const hooks={prepare:0,restore:0,exit:0,render:0,remove:0},statuses=[];let saved=null,adapter=null,delayMs=0,forcedId=null;
 const host={
-  readLocal:()=>({vesselId:forcedId||FIXTURE_VESSEL,pose:controller.pose()}),
+  readLocal:()=>({vesselId:forcedId||FIXTURE_VESSEL,pose:controller.pose(),clock:controller.clock()}),
   prepareLocal:async context=>{
     hooks.prepare++;if(context.resumed)hooks.restore++;
     saved??=controller.snapshot();

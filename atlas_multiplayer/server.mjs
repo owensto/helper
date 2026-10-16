@@ -77,7 +77,7 @@ export function createMultiplayerServer({ origins, maxConnections = 128, roomOpt
         // Do not expose exception details, messages, tokens, or stack traces to peers.
         const known = new Set(['VERSION_MISMATCH','WORLD_MISMATCH','VESSEL_MISMATCH','BAD_NAME','ALREADY_JOINED','SERVER_FULL',
           'ROOM_UNAVAILABLE','SESSION_EXPIRED','SESSION_ACTIVE','BAD_ACTION','ROOM_FULL','NOT_JOINED',
-          'RATE_LIMIT','BAD_STATE','BAD_POSE','TEXT_ONLY','BAD_MESSAGE']);
+          'RATE_LIMIT','BAD_STATE','BAD_POSE','TEXT_ONLY','BAD_MESSAGE','BAD_SOURCE_CLOCK','SOURCE_CLOCK_REGRESSION','SOURCE_CLOCK_REQUIRED']);
         const code = known.has(error.message) ? error.message : 'BAD_MESSAGE';
         send(ws, { type: 'error', code }); close(ws, 4000, code);
       }

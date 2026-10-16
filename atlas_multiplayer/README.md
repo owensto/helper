@@ -15,6 +15,15 @@ and 10 actual-client-module tests over real sockets. These tests use an explicit
 TEST-ONLY adapter to the already-installed Playwright bundled ws. This is actual
 TCP/WebSocket traffic, not a socket mock, but **NOT ws@8.22.0 certification**.
 
+
+M3: 85 diagnostic tests pass: the earlier suite plus C1 read-only receiver, rigid
+transform/cardinal/tilt validation, source-clock/epoch checks and adversarial server
+snapshot tests. The dependency-free subset independently passes 58 tests; 27 tests
+exercise real TCP/WebSocket transport using the qualified bundled diagnostic runtime.
+`evidence/m3/report.json` and `evidence/m3/RECEIVER_ACK.md` separate those results from
+actual CORE/browser acceptance. No M3 browser run is claimed; the M2 policy blocker
+remains unresolved. A fresh npm lock-generation attempt still fails `EAI_AGAIN`.
+
 The exact pin remains `ws@8.22.0`. Upstream release existence is verified; registry
 installation fails `EAI_AGAIN`, no lockfile has been fabricated, and audit is not
 passed. Docker intentionally requires the missing npm-generated lockfile. The
@@ -42,14 +51,16 @@ only. `transportRoomAgeSeconds` is diagnostic network age, not a wave/physics cl
 No network time callback is supplied to the host's preparation hook. Identical world
 revisions do not synchronize water phase. CORE still owns time, water and weather.
 
-C1 candidate `sealab12-core-integration/1.0.0` is a receiving contract under review,
-not a completed integrated release. Its source descriptor/host-hook blobs inspected
-were `30affbbcc2b04d8b8e78a07206cb9eab9c2af2f7` and
-`e6e5cc62579b7d94404a106413d2c73ac3639319`; verify the owner's final candidate SHA
-before wiring. The host's dynamic `sl12-c1-sha256:...` world revision, reset epochs,
+C1 candidate `sealab12-core-integration/1.0.0` was consumed at immutable source
+`36903985f2182c902427fed77d4e28c61a7639ca`: descriptor blob
+`30affbbcc2b04d8b8e78a07206cb9eab9c2af2f7`, host-hook blob
+`458a40ffb79be48c43a1190f2e5722112f8bfb99`. This is a receiving contract under review,
+not a completed integrated release; verify the owner's final result before wiring. The host's dynamic `sl12-c1-sha256:...` world revision, reset epochs,
 read-only reader, local-only opaque restore capability, and spawn occupancy checks
-must be mapped in a separate receiving adapter. This candidate does not invent that
-agreement or blindly import Sea Lab 11 globals.
+are consumed by the separate `client/c1-reader.mjs` read-only mapper where available.
+Its test samples are explicitly synthetic, not captured CORE motion. Full CORE local
+placement/occupancy wiring and integrated regression remain pending. This candidate
+does not invent agreement or blindly import Sea Lab 11 globals.
 
 Yacht design ID `atlas-d-original-r7` must keep its own controller/footprint and
 unknown-depth semantics. C1 says its integrated adapter/spawn/restore are unavailable;
@@ -63,7 +74,7 @@ revisions. Networking characters remains disabled pending CORE/HUMANS acceptance
 `client/core-adapter.mjs` takes explicit host hooks. It creates no socket, timer or
 host call when `enabled:false`. The host supplies:
 
-- `readLocal() -> {vesselId, pose}`: a copy from the owning controller/render transform.
+- `readLocal() -> {vesselId, pose, clock}`: a copy from the owning controller/render transform.
 - `prepareLocal(context) -> Promise<boolean>`: safe local spawn/reconnect acceptance.
   Honor `context.signal` and reject unsafe placement. Do not deserialize a remote
   payload as a local restore capability. CORE retains all local writes.
@@ -90,7 +101,7 @@ host preparation must not resurrect a left session.
 
 ## World / transport protocol
 
-`shared/world.mjs` defines `atlas-net-2` and immutable descriptor validation. There is
+`shared/world.mjs` defines `atlas-net-3` and immutable descriptor validation. There is
 no default Sea Lab 11 world. Server and client must agree exact canonical SHA-256 of
 scene/config, axes, clock semantics, fixed weather, water/depth semantics, vessel
 controller/footprint revisions and owner-validated spawn records. Any fingerprint
@@ -103,19 +114,48 @@ CORE must provide real per-vessel occupancy/depth validation. Missing yacht spaw
 remain absent, not guessed. Weather/profile changes require a fresh matching room;
 there are no pause/map/weather/character control messages on the wire.
 
-Local pose is `{p:[x,y,z],q:[x,y,z,w],engine:boolean,rpm:number,gear:-1|0|1}`.
+Local pose is `{p:[x,y,z],q:[x,y,z,w],engine:boolean,rpm:number|null,gear:-1|0|1}`.
 Units are SI; local +X forward, +Y up, +Z starboard; quaternion XYZW comes from the
 actual render transform, not a guessed Euler mapping. Server playerId/entityId are
 separate from vesselId (design/controller identity). Receive-only numeric pose data
 must never contain controller objects or write capabilities.
 
+Protocol 3 preserves unavailable RPM as `null` because C1 does not expose that
+reading. Optional fixture `clock:null` means no source clock is supplied; a core
+world requires `{domain:"client-simulation",epoch,seconds}` on state publications.
+Epoch and time are scoped to the same server-owned player/entity instance. A newer
+source epoch may reset seconds and flushes remote interpolation, even for a small
+placement discontinuity. Same-epoch time regressions and dropped clocks are rejected.
+Arrival timestamps remain separate. No peer clock advances host physics or water.
+The client also independently rejects regressing sequence/epoch, changed identity
+or changed pose at an unchanged sequence in a server snapshot.
+
 The first message includes protocol, create/join/resume action, name, worldId,
 worldRevision, worldHash, vesselId; join adds roomId/key, resume also playerId and
-private resumeToken. `state` contains only increasing `seq` and own pose. Server
+private resumeToken. `state` contains only increasing `seq`, own pose and source-clock metadata. Server
 assigns slot/entity identity and configured spawn; clients cannot write another boat.
 Room snapshots arrive at 10 Hz; local publication is bounded to 20 Hz. Each socket
 has finite payload, rate, heartbeat, timeout and slow-consumer bounds. Rooms are
 in-memory, expire and require one replica; process restart loses rooms.
+
+## CORE C1 read-only receiver
+
+`createC1PoseReceiver({reader,ownerSourceSha,worldRevision,vesselId,playerId,entityId})`
+requires complete negotiated identity and a matching descriptor. Only C1's separate
+reader is allowed; full hooks containing a local/spawn/restore capability reject.
+The module checks baseline, coordinate conventions, world hash, render-committed
+stage, rigid matrix/inverse/quaternion agreement, epoch/time ordering and recovery
+conditions. Output copies contain vessel pose and source-clock data only. Unknown
+RPM remains null. It neither advances the host nor reads character anchors.
+
+`ownerSourceSha` is an audit reference, not cryptographic runtime attestation. The
+13 receiver tests use C1-shaped synthetic snapshots, not a loaded Sea Lab instance.
+The caller still needs CORE's approved room descriptor and joining/occupancy hooks.
+This module deliberately does not call `local.spawnLocal` or `local.restoreLocal`.
+A received pose or copied token is never accepted as a local restoration capability.
+Yacht remains unsupported in C1 rather than falling back to Bay. Stale world or
+invalid owner state permanently invalidates this receiver and requires a fresh
+CORE-approved binding. See the receiving ACK for exact remaining gates.
 
 ## Reproduce on an existing permitted runner
 

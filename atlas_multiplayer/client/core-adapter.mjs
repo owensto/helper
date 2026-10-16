@@ -10,10 +10,10 @@ export async function createCoreAdapter({enabled=false,host,world,vesselId,...op
   let begun=false,prepared=false,disposed=false;
   const buffer=new RemoteBuffer();
   const client=await createRoomClient({...options,world,
-    readPose:()=>{
+    readSample:()=>{
       const sample=host.readLocal();
       if(sample?.vesselId!==vesselId)throw Object.assign(new Error('VESSEL_SWITCH_REQUIRES_REJOIN'),{code:'VESSEL_SWITCH_REQUIRES_REJOIN'});
-      return sample.pose;
+      return {pose:sample.pose,clock:sample.clock??null};
     },
     onWelcome:async context=>{
       begun=true;

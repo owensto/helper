@@ -1,5 +1,5 @@
 /** Proposed wire contract, independent of CORE's physics or renderer. */
-export const PROTOCOL = 'atlas-net-2';
+export const PROTOCOL = 'atlas-net-3';
 export const ID = /^[a-zA-Z0-9_.:-]{1,80}$/;
 export const PLAYER_ID = /^[A-Za-z0-9_-]{32}$/;
 export const ROOM_ID = /^[a-f0-9]{16}$/;
@@ -12,7 +12,7 @@ export function validatePose(value) {
   if (Object.keys(value).some(k=>!['p','q','engine','rpm','gear'].includes(k))) fail('BAD_POSE');
   if (!vector(value.p,3,100000)||!vector(value.q,4,1.001)) fail('BAD_POSE');
   const norm=Math.hypot(...value.q);
-  if (Math.abs(norm-1)>.01||typeof value.engine!=='boolean'||!finite(value.rpm,10000)||value.rpm<0||![-1,0,1].includes(value.gear)) fail('BAD_POSE');
+  if (Math.abs(norm-1)>.01||typeof value.engine!=='boolean'||(value.rpm!==null&&(!finite(value.rpm,10000)||value.rpm<0))||![-1,0,1].includes(value.gear)) fail('BAD_POSE');
   return {p:[...value.p],q:value.q.map(n=>n/norm),engine:value.engine,rpm:value.rpm,gear:value.gear};
 }
 export function canonical(value) {
@@ -60,4 +60,20 @@ export async function worldFingerprint(world) {
   const bytes=new TextEncoder().encode(canonical(world));
   const digest=await globalThis.crypto.subtle.digest('SHA-256',bytes);
   return [...new Uint8Array(digest)].map(n=>n.toString(16).padStart(2,'0')).join('');
+}
+
+/** Owner simulation metadata only, never a clock for advancing physics. */
+export function validateSourceClock(value) {
+  if(value===null)return null;
+  if(!value||typeof value!=='object'||Array.isArray(value)||
+     Object.keys(value).some(k=>!['domain','epoch','seconds'].includes(k))||
+     value.domain!=='client-simulation'||!Number.isSafeInteger(value.epoch)||value.epoch<0||
+     !finite(value.seconds,1e12)||value.seconds<0)fail('BAD_SOURCE_CLOCK');
+  return {domain:'client-simulation',epoch:value.epoch,seconds:value.seconds};
+}
+export function nextSourceClock(previous,next) {
+  const clock=validateSourceClock(next);
+  if(previous!==null && (clock===null || clock.epoch<previous.epoch ||
+     (clock.epoch===previous.epoch&&clock.seconds<previous.seconds)))fail('SOURCE_CLOCK_REGRESSION');
+  return clock;
 }
