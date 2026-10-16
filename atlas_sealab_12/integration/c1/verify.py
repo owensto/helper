@@ -38,7 +38,6 @@ with sync_playwright() as pw:
   p.goto(URL,wait_until='domcontentloaded',timeout=120000)
   p.wait_for_function('window.CORE12_READY || window.CORE12_ERROR',timeout=120000)
   assert p.evaluate('window.CORE12_READY'),p.evaluate('window.CORE12_ERROR')
-  p.evaluate('window.__C1_RESET_HOOK=BAYPLAY.state.reset')
   p.locator('#helm09-key').click();drive_wait(p,'BAYPLAY.state.engine && BAYPLAY.state.startTimer===0')
   p.locator('[data-gear09="1"]').click();p.locator('#s12-wot').click()
   drive_wait(p,'BAYPLAY.state.speedOverGround>1')
