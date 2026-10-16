@@ -1,0 +1,655 @@
+{
+  "release": 12,
+  "url": "https://rawcdn.githack.com/owensto/helper/a2d4eecc12e7b4db14c7f94a6f6fc5088a4061ff/atlas_sealab_12/live/index.html",
+  "published_commit": "a2d4eecc12e7b4db14c7f94a6f6fc5088a4061ff",
+  "passed": true,
+  "exactPublicAssets": true,
+  "physicalDeviceTested": false,
+  "review_run": 38849136102,
+  "tests": [
+    {
+      "device": "phone",
+      "passed": true,
+      "errors": [],
+      "shaderErrors": [],
+      "assetErrors": [],
+      "initial": {
+        "ready": true,
+        "version": 12,
+        "mapPauses": false,
+        "options": {
+          "captain": true
+        },
+        "water": {
+          "ready": true,
+          "wakeCapacity": 12,
+          "reflectionFrames": 0,
+          "reflectionResolution": [
+            512,
+            256
+          ],
+          "fluidSolver": false,
+          "components": 8,
+          "referenceDepth": 8,
+          "wakePackets": 0,
+          "emissions": 0,
+          "capacity": 12,
+          "shaderCompiled": true,
+          "reflectionActive": false
+        },
+        "geo": {
+          "ready": true,
+          "bridges": 23,
+          "buildings": 514,
+          "roads": 79,
+          "photogrammetry": false,
+          "heightSurveyed": false,
+          "source": "OpenStreetMap contributors",
+          "retrieved": "2026-10-16T03:39:21Z",
+          "geoMapOpen": false,
+          "mapInitialized": false,
+          "visible": false,
+          "features": 616
+        },
+        "captain": true,
+        "trial": {
+          "logging": false,
+          "samples": 0
+        },
+        "spotify": "external only",
+        "youtube": "visible official player",
+        "multiplayer": false
+      },
+      "targets": [
+        {
+          "id": "helm09-key",
+          "x": 20,
+          "y": 590.234375,
+          "w": 161.5,
+          "h": 54.984375,
+          "hit": true
+        },
+        {
+          "id": "s11-less",
+          "x": 20,
+          "y": 670.21875,
+          "w": 44,
+          "h": 48,
+          "hit": true
+        },
+        {
+          "id": "s11-more",
+          "x": 366,
+          "y": 670.21875,
+          "w": 44,
+          "h": 48,
+          "hit": true
+        },
+        {
+          "id": "s11-left",
+          "x": 20,
+          "y": 747.21875,
+          "w": 128,
+          "h": 48,
+          "hit": true
+        },
+        {
+          "id": "s11-right",
+          "x": 282,
+          "y": 747.21875,
+          "w": 128,
+          "h": 48,
+          "hit": true
+        },
+        {
+          "id": "helm09-map",
+          "x": 8,
+          "y": 874,
+          "w": 80.40625,
+          "h": 50,
+          "hit": true
+        },
+        {
+          "id": "helm10-weather",
+          "x": 258.21875,
+          "y": 874,
+          "w": 80.40625,
+          "h": 50,
+          "hit": true
+        },
+        {
+          "id": "helm09-settings",
+          "x": 341.625,
+          "y": 874,
+          "w": 80.40625,
+          "h": 50,
+          "hit": true
+        },
+        {
+          "id": "helm09-pause",
+          "x": 307.859375,
+          "y": 17,
+          "w": 101.140625,
+          "h": 48,
+          "hit": true
+        }
+      ],
+      "mapTargets": [
+        {
+          "id": "helm09-key",
+          "hit": true
+        },
+        {
+          "id": "s11-more",
+          "hit": true
+        }
+      ],
+      "liveMapNoPause": true
+    },
+    {
+      "device": "small-phone",
+      "passed": true,
+      "errors": [],
+      "shaderErrors": [],
+      "assetErrors": [],
+      "initial": {
+        "ready": true,
+        "version": 12,
+        "mapPauses": false,
+        "options": {
+          "captain": true
+        },
+        "water": {
+          "ready": true,
+          "wakeCapacity": 12,
+          "reflectionFrames": 0,
+          "reflectionResolution": [
+            512,
+            256
+          ],
+          "fluidSolver": false,
+          "components": 8,
+          "referenceDepth": 8,
+          "wakePackets": 0,
+          "emissions": 0,
+          "capacity": 12,
+          "shaderCompiled": true,
+          "reflectionActive": false
+        },
+        "geo": {
+          "ready": true,
+          "bridges": 23,
+          "buildings": 514,
+          "roads": 79,
+          "photogrammetry": false,
+          "heightSurveyed": false,
+          "source": "OpenStreetMap contributors",
+          "retrieved": "2026-10-16T03:39:21Z",
+          "geoMapOpen": false,
+          "mapInitialized": false,
+          "visible": false,
+          "features": 616
+        },
+        "captain": true,
+        "trial": {
+          "logging": false,
+          "samples": 0
+        },
+        "spotify": "external only",
+        "youtube": "visible official player",
+        "multiplayer": false
+      },
+      "targets": [
+        {
+          "id": "helm09-key",
+          "x": 20,
+          "y": 470.234375,
+          "w": 101.046875,
+          "h": 54.984375,
+          "hit": true
+        },
+        {
+          "id": "s11-less",
+          "x": 20,
+          "y": 550.21875,
+          "w": 44,
+          "h": 48,
+          "hit": true
+        },
+        {
+          "id": "s11-more",
+          "x": 293.15625,
+          "y": 550.21875,
+          "w": 44,
+          "h": 48,
+          "hit": true
+        },
+        {
+          "id": "s11-left",
+          "x": 20,
+          "y": 627.21875,
+          "w": 103.71875,
+          "h": 48,
+          "hit": true
+        },
+        {
+          "id": "s11-right",
+          "x": 233.4375,
+          "y": 627.21875,
+          "w": 103.71875,
+          "h": 48,
+          "hit": true
+        },
+        {
+          "id": "helm09-map",
+          "x": 8,
+          "y": 754,
+          "w": 69.40625,
+          "h": 50,
+          "hit": true
+        },
+        {
+          "id": "helm10-weather",
+          "x": 225.21875,
+          "y": 754,
+          "w": 69.40625,
+          "h": 50,
+          "hit": true
+        },
+        {
+          "id": "helm09-settings",
+          "x": 297.625,
+          "y": 754,
+          "w": 69.40625,
+          "h": 50,
+          "hit": true
+        },
+        {
+          "id": "helm09-pause",
+          "x": 252.859375,
+          "y": 17,
+          "w": 101.140625,
+          "h": 48,
+          "hit": true
+        }
+      ],
+      "mapTargets": [
+        {
+          "id": "helm09-key",
+          "hit": true
+        },
+        {
+          "id": "s11-more",
+          "hit": true
+        }
+      ],
+      "liveMapNoPause": true
+    },
+    {
+      "device": "landscape",
+      "passed": true,
+      "errors": [],
+      "shaderErrors": [],
+      "assetErrors": [],
+      "initial": {
+        "ready": true,
+        "version": 12,
+        "mapPauses": false,
+        "options": {
+          "captain": true
+        },
+        "water": {
+          "ready": true,
+          "wakeCapacity": 12,
+          "reflectionFrames": 0,
+          "reflectionResolution": [
+            512,
+            256
+          ],
+          "fluidSolver": false,
+          "components": 8,
+          "referenceDepth": 8,
+          "wakePackets": 0,
+          "emissions": 0,
+          "capacity": 12,
+          "shaderCompiled": true,
+          "reflectionActive": false
+        },
+        "geo": {
+          "ready": true,
+          "bridges": 23,
+          "buildings": 514,
+          "roads": 79,
+          "photogrammetry": false,
+          "heightSurveyed": false,
+          "source": "OpenStreetMap contributors",
+          "retrieved": "2026-10-16T03:39:21Z",
+          "geoMapOpen": false,
+          "mapInitialized": false,
+          "visible": false,
+          "features": 616
+        },
+        "captain": true,
+        "trial": {
+          "logging": false,
+          "samples": 0
+        },
+        "spotify": "external only",
+        "youtube": "visible official player",
+        "multiplayer": false
+      },
+      "targets": [
+        {
+          "id": "helm09-key",
+          "x": 546,
+          "y": 80,
+          "w": 280,
+          "h": 48,
+          "hit": true
+        },
+        {
+          "id": "s11-less",
+          "x": 546,
+          "y": 198,
+          "w": 44,
+          "h": 48,
+          "hit": true
+        },
+        {
+          "id": "s11-more",
+          "x": 782,
+          "y": 198,
+          "w": 44,
+          "h": 48,
+          "hit": true
+        },
+        {
+          "id": "s11-left",
+          "x": 546,
+          "y": 270,
+          "w": 91.328125,
+          "h": 44,
+          "hit": true
+        },
+        {
+          "id": "s11-right",
+          "x": 734.65625,
+          "y": 270,
+          "w": 91.328125,
+          "h": 44,
+          "hit": true
+        },
+        {
+          "id": "helm09-map",
+          "x": 12,
+          "y": 334,
+          "w": 99.203125,
+          "h": 44,
+          "hit": true
+        },
+        {
+          "id": "helm10-weather",
+          "x": 318.609375,
+          "y": 334,
+          "w": 99.203125,
+          "h": 44,
+          "hit": true
+        },
+        {
+          "id": "helm09-settings",
+          "x": 420.8125,
+          "y": 334,
+          "w": 99.203125,
+          "h": 44,
+          "hit": true
+        },
+        {
+          "id": "helm09-pause",
+          "x": 723.859375,
+          "y": 11,
+          "w": 101.140625,
+          "h": 48,
+          "hit": true
+        }
+      ],
+      "mapTargets": [
+        {
+          "id": "helm09-key",
+          "hit": true
+        },
+        {
+          "id": "s11-more",
+          "hit": true
+        }
+      ],
+      "liveMapNoPause": true
+    },
+    {
+      "device": "desktop",
+      "passed": true,
+      "errors": [],
+      "shaderErrors": [],
+      "assetErrors": [],
+      "initial": {
+        "ready": true,
+        "version": 12,
+        "mapPauses": false,
+        "options": {
+          "captain": true
+        },
+        "water": {
+          "ready": true,
+          "wakeCapacity": 12,
+          "reflectionFrames": 0,
+          "reflectionResolution": [
+            512,
+            256
+          ],
+          "fluidSolver": false,
+          "components": 8,
+          "referenceDepth": 8,
+          "wakePackets": 0,
+          "emissions": 0,
+          "capacity": 12,
+          "shaderCompiled": true,
+          "reflectionActive": false
+        },
+        "geo": {
+          "ready": true,
+          "bridges": 23,
+          "buildings": 514,
+          "roads": 79,
+          "photogrammetry": false,
+          "heightSurveyed": false,
+          "source": "OpenStreetMap contributors",
+          "retrieved": "2026-10-16T03:39:21Z",
+          "geoMapOpen": false,
+          "mapInitialized": false,
+          "visible": false,
+          "features": 616
+        },
+        "captain": true,
+        "trial": {
+          "logging": false,
+          "samples": 0
+        },
+        "spotify": "external only",
+        "youtube": "visible official player",
+        "multiplayer": false
+      },
+      "targets": [
+        {
+          "id": "helm09-key",
+          "x": 174,
+          "y": 775.796875,
+          "w": 164,
+          "h": 63.390625,
+          "hit": true
+        },
+        {
+          "id": "s11-less",
+          "x": 615,
+          "y": 791,
+          "w": 48,
+          "h": 48,
+          "hit": true
+        },
+        {
+          "id": "s11-more",
+          "x": 884.5,
+          "y": 791,
+          "w": 48,
+          "h": 48,
+          "hit": true
+        },
+        {
+          "id": "s11-left",
+          "x": 948.5,
+          "y": 793,
+          "w": 101.828125,
+          "h": 48,
+          "hit": true
+        },
+        {
+          "id": "s11-right",
+          "x": 1164.15625,
+          "y": 793,
+          "w": 101.828125,
+          "h": 48,
+          "hit": true
+        },
+        {
+          "id": "helm09-map",
+          "x": 862.984375,
+          "y": 23,
+          "w": 78.71875,
+          "h": 48,
+          "hit": true
+        },
+        {
+          "id": "helm10-weather",
+          "x": 1124.9375,
+          "y": 23,
+          "w": 92.953125,
+          "h": 48,
+          "hit": true
+        },
+        {
+          "id": "helm09-settings",
+          "x": 1223.890625,
+          "y": 23,
+          "w": 65.953125,
+          "h": 48,
+          "hit": true
+        },
+        {
+          "id": "helm09-pause",
+          "x": 1307.84375,
+          "y": 23,
+          "w": 101.140625,
+          "h": 48,
+          "hit": true
+        }
+      ],
+      "mapTargets": [
+        {
+          "id": "helm09-key",
+          "hit": true
+        },
+        {
+          "id": "s11-more",
+          "hit": true
+        }
+      ],
+      "liveMapNoPause": true,
+      "drivingAudio": {
+        "version": "09",
+        "enabled": true,
+        "contextState": "running",
+        "sampleStatus": "Three recorded layers ready",
+        "held": false,
+        "settings": {
+          "master": 0.6,
+          "engine": 0.85,
+          "water": 0.55,
+          "wind": 0.35,
+          "effects": 0.6
+        },
+        "metrics": {
+          "rms": 0.07718854315505477,
+          "engineLoads": [
+            {
+              "rpm": 5410,
+              "load": 1,
+              "gain": 0.925540444760014,
+              "recorded": true
+            },
+            {
+              "rpm": 5410,
+              "load": 1,
+              "gain": 0,
+              "recorded": true
+            }
+          ],
+          "activeEngines": 1
+        },
+        "specificEngineRecording": false,
+        "recordedBowWater": true,
+        "realism09": {
+          "version": 9,
+          "layers": 3,
+          "lastContact": 0,
+          "events": [
+            {
+              "kind": "key",
+              "t": 1.1203628117913833
+            },
+            {
+              "kind": "start",
+              "t": 1.1319727891156464
+            },
+            {
+              "kind": "shift",
+              "t": 4.211519274376418
+            }
+          ],
+          "recordedDominant": true,
+          "acousticallyValidated": false
+        }
+      },
+      "water": {
+        "ready": true,
+        "wakeCapacity": 12,
+        "reflectionFrames": 0,
+        "reflectionResolution": [
+          512,
+          256
+        ],
+        "fluidSolver": false,
+        "components": 8,
+        "referenceDepth": 8,
+        "wakePackets": 6,
+        "emissions": 6,
+        "capacity": 12,
+        "shaderCompiled": true,
+        "reflectionActive": false
+      },
+      "beaufort": {
+        "ready": true,
+        "bridges": 23,
+        "buildings": 514,
+        "roads": 79,
+        "photogrammetry": false,
+        "heightSurveyed": false,
+        "source": "OpenStreetMap contributors",
+        "retrieved": "2026-10-16T03:39:21Z",
+        "geoMapOpen": false,
+        "mapInitialized": false,
+        "visible": true,
+        "features": 616
+      },
+      "youtubePlaylistParsing": true,
+      "externalMusicPlaybackVerified": false
+    }
+  ]
+}
