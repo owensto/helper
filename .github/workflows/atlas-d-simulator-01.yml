@@ -12,34 +12,49 @@ jobs:
   review:
     if: github.ref == 'refs/heads/atlas-d/yacht-contact-y1-20261016'
     runs-on: ubuntu-24.04
-    timeout-minutes: 12
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 1
           sparse-checkout: |
             atlas_d_simulator_01
-            .github/workflows/atlas-d-simulator-01.yml
+            .github/workflows
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - name: Recover exact read-only source and audit existing anchors
+      - name: Verify untouched source and inspect existing anchors
         run: |
-          mkdir -p /tmp/y1-base atlas_d_simulator_01/contact/evidence
+          mkdir -p atlas_d_simulator_01/contact/evidence
           git fetch --depth=1 origin 48b9bef038ab2e422b6677d7ca9db4879419a3f9
-          git archive 48b9bef038ab2e422b6677d7ca9db4879419a3f9 atlas_d_simulator_01/live atlas_d_simulator_01/src atlas_d_simulator_01/test-core.cjs atlas_d_simulator_01/verify.py | tar -x -C /tmp/y1-base
+          git diff --exit-code 48b9bef038ab2e422b6677d7ca9db4879419a3f9 -- atlas_d_simulator_01/live atlas_d_simulator_01/src atlas_d_simulator_01/test-core.cjs
           python -m pip install -q numpy==2.2.6
-          python atlas_d_simulator_01/contact/inspect-anchors.py /tmp/y1-base/atlas_d_simulator_01/live/assets/ATLAS_D_Original.glb atlas_d_simulator_01/contact/evidence/anchor-audit.json
-          node /tmp/y1-base/atlas_d_simulator_01/test-core.cjs > atlas_d_simulator_01/contact/evidence/core-regression.json
-          if [ -f atlas_d_simulator_01/contact/test-attachments.cjs ]; then node atlas_d_simulator_01/contact/test-attachments.cjs; fi
-      - name: Archive source evidence without publication
+          python atlas_d_simulator_01/contact/inspect-anchors.py atlas_d_simulator_01/live/assets/ATLAS_D_Original.glb atlas_d_simulator_01/contact/evidence/anchor-audit.json
+          node --check atlas_d_simulator_01/contact/attachment-adapter.js
+          node --check atlas_d_simulator_01/contact/preview.js
+          node atlas_d_simulator_01/test-core.cjs > atlas_d_simulator_01/contact/evidence/core-regression.json
+          node atlas_d_simulator_01/contact/test-attachments.cjs > atlas_d_simulator_01/contact/evidence/unit.stdout
+      - name: Capture the actual source during motion, conversion and vessel switching
         run: |
-          tar -czf atlas_d_simulator_01/contact/evidence/read-only-baseline.tar.gz -C /tmp/y1-base atlas_d_simulator_01
-          git diff --name-only > atlas_d_simulator_01/contact/evidence/tracked-diff.txt
+          python -m pip install -q playwright==1.55.0
+          python -m playwright install --with-deps chromium >/dev/null
+          python -m http.server 8915 --bind 127.0.0.1 --directory . >atlas_d_simulator_01/contact/evidence/http.log 2>&1 &
+          sleep 2
+          BASE_URL=http://127.0.0.1:8915/atlas_d_simulator_01/contact/preview.html python atlas_d_simulator_01/contact/capture-attachments.py
+      - name: Record branch evidence without publication
+        if: always()
+        run: |
+          git diff --name-only 48b9bef038ab2e422b6677d7ca9db4879419a3f9 HEAD > atlas_d_simulator_01/contact/evidence/changed-files.txt
           git rev-parse HEAD > atlas_d_simulator_01/contact/evidence/result-source-sha.txt
+          python - <<'PY'
+          from pathlib import Path
+          import json,hashlib,os
+          r=Path('atlas_d_simulator_01/contact');files={str(p.relative_to(r)):hashlib.sha256(p.read_bytes()).hexdigest() for p in r.rglob('*') if p.is_file() and p.name!='artifact-manifest.json'}
+          (r/'evidence/artifact-manifest.json').write_text(json.dumps({'sourceCommit':'48b9bef038ab2e422b6677d7ca9db4879419a3f9','resultSourceCommit':os.environ['GITHUB_SHA'],'branch':os.environ['GITHUB_REF_NAME'],'integratedRelease':False,'files':files},indent=2))
+          PY
       - uses: actions/upload-artifact@v4
         if: always()
         with:
