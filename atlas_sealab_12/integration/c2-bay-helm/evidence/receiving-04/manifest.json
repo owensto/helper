@@ -1,0 +1,28 @@
+{
+  "revision": "station03-receiving-closure-manifest/1",
+  "baseSourceSHA": "ba153f5d0b68391e4ac88e8a1e4a9d77fd60a069",
+  "baseRun": 38887422403,
+  "originalReceivingZIP_SHA256": "a8d9e6f2601bae364f0848693c249eeb87aad23310c5ec8fb308581ecc5f2d11",
+  "fileSHA256": {
+    "HANDOFF.md": "8f383d6875c1b59b529f4a00d6a4a95082c4f1f4df6674e7b3c8efd63e10eb8f",
+    "contract.json": "1b6c5bf6a4e4104c24d60c787df984aea9bdb30b31302779a80bcaf3ec6351ee",
+    "derive.py": "c120c10d1fb73164cb71304100f1b25460170a449d6afbce51db0611292b7f24",
+    "frozen-export.recipe.json": "f63f0b1cc5e4e67da93206f3928ee72fcd6120239f3c4ed62d91eb3ea7a3ea4e",
+    "geometry-contract.cjs": "1ecf0ab3b307a907904b80c24037c483b430c74984ead3ea39c82b2b832c5488",
+    "result.json": "ca0a43b99304ffc0d61dabd06157d8a1efd952bf896c46c3a906b14b11781fd3",
+    "test.cjs": "eea1d1797d2850ef9d41786c12fc38abc3c59ba27c4a1d0480762e75cf8fa4f0"
+  },
+  "frozenExportUncompressedSHA256": "8bd2bdd6b8e90b2d678e3b75869b89f69870dbe9488f2ab9e3cef7ae6c074a36",
+  "contractSHA256": "1b6c5bf6a4e4104c24d60c787df984aea9bdb30b31302779a80bcaf3ec6351ee",
+  "frozenWorldRevision": "s03-frozen-sha256:9a119b0fec3ee1f8fc4550a9755e4ab53afdffd7105bdbeba12dd55c6f6fa5e8",
+  "frozenTransformTableSHA256": "72e5a1ddf2560874681993995c7fdd7efb6e5ac7b40e3ef70932bba076443fff",
+  "originalDesignGeometryUntouched": true,
+  "liveBindingAvailable": false,
+  "receivingACK": false,
+  "allActivationOff": true,
+  "hashScope": "Every committed payload in this directory except manifest.json; generated JSON/GZIP verified separately. Bind manifest via exact receiving Git commit and PR1 SHA256.",
+  "generatedFilesSHA256": {
+    "frozen-export.json": "8bd2bdd6b8e90b2d678e3b75869b89f69870dbe9488f2ab9e3cef7ae6c074a36",
+    "frozen-export.json.gz": "9f9fe1e35d49509c2138a639453c7a5d94a069a45533ee5dae3447a0587e8d2c"
+  }
+}

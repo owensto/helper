@@ -1,0 +1,283 @@
+{
+  "task": "STATION03-RECEIVING-CLOSURE04",
+  "status": "FROZEN_CONTRACT_EXPORT_PUBLISHED_SOURCE_PENDING_FINAL_ACK",
+  "sourceCommitBinding": "Use containing Git commit plus manifest SHA256; no self-referential embedded commit assertion",
+  "baseSourceSHA": "ba153f5d0b68391e4ac88e8a1e4a9d77fd60a069",
+  "baseRun": 38887422403,
+  "claimComment": 6214050934,
+  "reviewComments": [
+    6213248126,
+    6213303827
+  ],
+  "branch": "atlas/core-c2-bay-helm-20261016",
+  "workdir": "/mnt/data/core-c2-bay-helm-20261016/receiving-closure04",
+  "workdirType": "reconstructed receiving-record snapshot, not recovered Mac checkout",
+  "newBrowserRuns": 0,
+  "newWorkflowRuns": 0,
+  "newBaselineAudits": 0,
+  "geometryChanges": 0,
+  "humanFits": 0,
+  "derivation": {
+    "checks": [
+      "exact_existing_receiving_membership",
+      "54_existing_package_payload_hashes_not_baseline_audit",
+      "original_source_pin",
+      "resolved_design_exact_body",
+      "manifest_geometry_ledger_design_links",
+      "support_compilation_linkage",
+      "authored_code_link",
+      "empty_station_original_activation",
+      "25_unchanged_new_geometry_pin_pairs",
+      "complete_unique_130_survivor_transform_rows",
+      "four_unchanged_compiled_supports",
+      "desktop_historic_empty_down",
+      "phone_historic_empty_down",
+      "historical_zero_control_parts_supports_consistent_not_live_binding",
+      "all_tables_invertible"
+    ],
+    "contractSHA256": "1b6c5bf6a4e4104c24d60c787df984aea9bdb30b31302779a80bcaf3ec6351ee",
+    "count": 15,
+    "frozenExportSHA256": "8bd2bdd6b8e90b2d678e3b75869b89f69870dbe9488f2ab9e3cef7ae6c074a36",
+    "frozenSources": 130,
+    "fullBodyAccepted": false,
+    "gzipSHA256": "9f9fe1e35d49509c2138a639453c7a5d94a069a45533ee5dae3447a0587e8d2c",
+    "humanFits": 0,
+    "inputPackagePayloadsVerified": 54,
+    "maxHistoricNewMatrixDelta": 3.1086244689504383e-15,
+    "newBaselineTopologyAudits": 0,
+    "newBrowserRuns": 0,
+    "newParts": 25,
+    "passed": true,
+    "revision": "station03-frozen-derivation-checks/1",
+    "sourceTriangles": 356774,
+    "supports": 4,
+    "tableSHA256": "72e5a1ddf2560874681993995c7fdd7efb6e5ac7b40e3ef70932bba076443fff",
+    "unknownRetainedInteriors": 130,
+    "worldRevision": "s03-frozen-sha256:9a119b0fec3ee1f8fc4550a9755e4ab53afdffd7105bdbeba12dd55c6f6fa5e8"
+  },
+  "contractTests": {
+    "revision": "station03-receiving-contract-tests/1",
+    "passed": true,
+    "passedCount": 39,
+    "failedCount": 0,
+    "checks": [
+      {
+        "name": "coordinator branch-cut example is port/left member, not literal interval",
+        "passed": true
+      },
+      {
+        "name": "port arc on both sides of atan2 branch cut",
+        "passed": true
+      },
+      {
+        "name": "four exact closed arc endpoints",
+        "passed": true
+      },
+      {
+        "name": "explicit angular roundoff band and outside rejection",
+        "passed": true
+      },
+      {
+        "name": "wrapped periodic equivalents",
+        "passed": true
+      },
+      {
+        "name": "center and nonmember angular cases",
+        "passed": true
+      },
+      {
+        "name": "anatomical assignments not camera names",
+        "passed": true
+      },
+      {
+        "name": "positive gap explicit 2mm bound",
+        "passed": true
+      },
+      {
+        "name": "negative compression retains 1mm limit",
+        "passed": true
+      },
+      {
+        "name": "contact gap is analytic torus distance and unit normal",
+        "passed": true
+      },
+      {
+        "name": "complete tube circumference remains bounded to assigned arc",
+        "passed": true
+      },
+      {
+        "name": "nonfinite, sparse and nonanatomical inputs reject",
+        "passed": true
+      },
+      {
+        "name": "ambiguous torus axis/centerline projection rejects",
+        "passed": true
+      },
+      {
+        "name": "no automatic choreography/full range/profile",
+        "passed": true
+      },
+      {
+        "name": "back optional; seat plus both soles mandatory",
+        "passed": true
+      },
+      {
+        "name": "original flat bounds and compression limits remain",
+        "passed": true
+      },
+      {
+        "name": "all retained interior face sets explicitly unknown, not empty",
+        "passed": true
+      },
+      {
+        "name": "source/prism identity guard closure and thickness",
+        "passed": true
+      },
+      {
+        "name": "uniform source scale does not scale guard thickness",
+        "passed": true
+      },
+      {
+        "name": "nonuniform source scale produces 4mm in vessel metres",
+        "passed": true
+      },
+      {
+        "name": "rotated source produces symmetric metre-normal guards",
+        "passed": true
+      },
+      {
+        "name": "sheared source normal is recomputed after transform",
+        "passed": true
+      },
+      {
+        "name": "reflected source remains closed positive oriented guard",
+        "passed": true
+      },
+      {
+        "name": "source-space extrusion would be wrong under scale",
+        "passed": true
+      },
+      {
+        "name": "degenerate/singular/nonaffine/malformed guards reject",
+        "passed": true
+      },
+      {
+        "name": "ordinary separation uses guard boundary not midplane",
+        "passed": true
+      },
+      {
+        "name": "frozen authority fields cannot masquerade as live stamps",
+        "passed": true
+      },
+      {
+        "name": "zero control pose includes both foot hinges and world identity",
+        "passed": true
+      },
+      {
+        "name": "complete immutable geometry and contact hashes",
+        "passed": true
+      },
+      {
+        "name": "complete original/new/support transform coverage",
+        "passed": true
+      },
+      {
+        "name": "frozen whole domain cannot pass from guards or optional back alone",
+        "passed": true
+      },
+      {
+        "name": "normal interval endpoints inclusive without increasing bounds",
+        "passed": true
+      },
+      {
+        "name": "outside roundoff cannot silently widen compression/gap",
+        "passed": true
+      },
+      {
+        "name": "nonfinite scalar gaps reject",
+        "passed": true
+      },
+      {
+        "name": "arc hand eligibility remains separate from angle membership",
+        "passed": true
+      },
+      {
+        "name": "wrong arc rejects geometrically even for its assigned hand",
+        "passed": true
+      },
+      {
+        "name": "fixed grip frame round trip uses one inverse",
+        "passed": true
+      },
+      {
+        "name": "retained face coverage not dropped when interiors unknown",
+        "passed": true
+      },
+      {
+        "name": "original model/rig bytes are not transferred in metadata",
+        "passed": true
+      }
+    ],
+    "scope": "Offline receiving math/metadata only; no full-body fit, live host or baseline audit"
+  },
+  "replayAndNegativeInput": {
+    "passed": true,
+    "checks": [
+      {
+        "name": "frozen-export.json repeat derivation exact bytes",
+        "passed": true
+      },
+      {
+        "name": "frozen-export.json.gz repeat derivation exact bytes",
+        "passed": true
+      },
+      {
+        "name": "derivation-report.json repeat derivation exact bytes",
+        "passed": true
+      },
+      {
+        "name": "changed archive rejected before output",
+        "passed": true,
+        "exitCode": 1
+      }
+    ],
+    "count": 4
+  },
+  "runtimeVersions": {
+    "python": "3.13.5",
+    "node": "22.16.0"
+  },
+  "preservedFailures": [
+    {
+      "sourceSHA": "c64a5aab845e70399aee930ea5ad87ed734fa8c0",
+      "run": 38884925556,
+      "finding": "Original new-station lever expectation failed in Neutral after17 checks; retained in original receiving package; not rerun or relabeled."
+    },
+    {
+      "sourceSHA": "417a3f86656c3e4094453a5dae9476a4e9cdc983",
+      "finding": "Historical old-station H6 clearance FAIL61/61 max68.095mm; not rerun, erased, or applied as a new-design fit result."
+    }
+  ],
+  "noAuthorityToInfer": [
+    "No live frame/epoch/activation binding.",
+    "No positive full-volume clearance while retained interior sets are unknown.",
+    "No new rig offsets, body solve, full-range hand choreography or receiving ACK."
+  ],
+  "activation": {
+    "fullBody": false,
+    "gameplay": false,
+    "public": false,
+    "default": false,
+    "humanFit": false,
+    "live": false,
+    "yacht": false,
+    "multiplayer": false,
+    "H5H7Adopted": false
+  },
+  "stoppedAfterPublication": true,
+  "distribution": {
+    "committed": "definitions, source, tests, frozen export recipe, manifest and result only",
+    "generated": "metadata-only frozen JSON/GZIP in conversation package; exact fingerprints committed in recipe/manifest",
+    "originalOrNewGeometryAssetTransfer": false
+  }
+}

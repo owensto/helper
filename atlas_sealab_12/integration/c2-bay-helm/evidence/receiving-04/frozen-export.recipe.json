@@ -1,0 +1,15 @@
+{
+  "revision": "station03-frozen-export-recipe/1",
+  "mode": "FROZEN_DESIGN_NOT_LIVE",
+  "deriveSource": "derive.py",
+  "originalReceivingZIP_SHA256": "a8d9e6f2601bae364f0848693c249eeb87aad23310c5ec8fb308581ecc5f2d11",
+  "command": "python derive.py /path/to/ATLAS_CORE_Station03_Receiving.zip --out ./derived",
+  "generatedFiles": {
+    "frozen-export.json": "8bd2bdd6b8e90b2d678e3b75869b89f69870dbe9488f2ab9e3cef7ae6c074a36",
+    "frozen-export.json.gz": "9f9fe1e35d49509c2138a639453c7a5d94a069a45533ee5dae3447a0587e8d2c"
+  },
+  "distribution": "Metadata-only generated export is supplied with the conversation closure package and is exactly reproducible from the already supplied receiving ZIP. This repository file is a recipe, not a claim to embed that binary. No original model/rig/clip or new geometry assets are transferred.",
+  "contractSHA256": "1b6c5bf6a4e4104c24d60c787df984aea9bdb30b31302779a80bcaf3ec6351ee",
+  "liveBindingAvailable": false,
+  "fullBodyAccepted": false
+}
