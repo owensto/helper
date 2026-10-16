@@ -1,0 +1,155 @@
+name: ATLAS Sea Lab 13 public delivery
+on:
+  workflow_dispatch:
+  push:
+    paths: ['.github/workflows/atlas-sealab-13-publish.yml']
+permissions:
+  contents: read
+  actions: read
+concurrency:
+  group: atlas-beaufort13-public-delivery
+  cancel-in-progress: false
+jobs:
+  publish:
+    if: github.ref == 'refs/heads/atlas/core-beaufort13-20261016'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    permissions:
+      contents: write
+      actions: read
+    outputs:
+      url: ${{ steps.publish.outputs.url }}
+      commit: ${{ steps.publish.outputs.commit }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          github-token: ${{ github.token }}
+          run-id: 38912757458
+          name: ATLAS-SeaLab13-desktop
+          path: /tmp/sea13/desktop
+      - uses: actions/download-artifact@v4
+        with:
+          github-token: ${{ github.token }}
+          run-id: 38912757458
+          name: ATLAS-SeaLab13-phone
+          path: /tmp/sea13/phone
+      - name: Gate exactly reviewed assets and retain all unchanged public12 files
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import json,hashlib,shutil
+          a=Path('/tmp/sea13/desktop');b=Path('/tmp/sea13/phone');r=Path('atlas_sealab_13')
+          hashes=lambda p:{str(f.relative_to(p)):hashlib.sha256(f.read_bytes()).hexdigest() for f in sorted(p.rglob('*')) if f.is_file()}
+          reports=[]
+          for p in [a,b]:
+              m=json.loads((p/'review/candidate.json').read_text());assert m['source']=='ae5491ca0afad5ad7ea017c67be8df5b1647ced6' and str(m['run'])=='38912757458'
+              assert hashes(p/'site')==m['files']
+              d=json.loads((p/'review/validation.json').read_text());assert d['passed'] and all(t['passed'] for t in d['tests']);reports.extend(d['tests'])
+              for name in ['unit13.json','physics12-regression.json']:
+                  q=json.loads((p/'review'/name).read_text());assert q['passed'] and all(t['passed'] for t in q['tests'])
+          assert {x['device'] for x in reports}=={'desktop','phone','small-phone'}
+          assert hashes(a/'site')==hashes(b/'site')
+          shutil.copytree(a/'site',r/'live',dirs_exist_ok=True)
+          src=r/'reviewed_source';src.mkdir(exist_ok=True)
+          for p in a.iterdir():
+              if p.is_file() and p.suffix in ['.js','.cjs','.py','.css']:shutil.copy2(p,src/p.name)
+          for name in ['unit13.json','physics12-regression.json','candidate.json']:shutil.copy2(a/'review'/name,r/name)
+          (r/'review13.json').write_text(json.dumps({'source':'ae5491ca0afad5ad7ea017c67be8df5b1647ced6','run':38912757458,'passed':True,'tests':reports,'scope':'Actual-host candidate functional checks, not physical-device performance'},indent=2))
+          assert hashes(r/'live')==hashes(a/'site')
+          assert not any(p.suffix.lower() in ['.ttf','.otf','.woff','.woff2'] for p in (r/'live').rglob('*'))
+          PY
+      - name: Publish separate Sea13 URL, never replace the old release
+        id: publish
+        run: |
+          git config user.name 'ATLAS release'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -f atlas_sealab_13/live atlas_sealab_13/reviewed_source atlas_sealab_13/review13.json atlas_sealab_13/unit13.json atlas_sealab_13/physics12-regression.json atlas_sealab_13/candidate.json
+          git commit -m 'Publish reviewed Sea13 Beaufort default, height-aware hull water and asynchronous visual tiles [skip ci]'
+          git push origin HEAD:refs/heads/atlas/core-beaufort13-20261016
+          echo "commit=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+          echo "url=https://rawcdn.githack.com/owensto/helper/$(git rev-parse HEAD)/atlas_sealab_13/live/index.html" >> "$GITHUB_OUTPUT"
+  public:
+    needs: publish
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    strategy:
+      fail-fast: false
+      matrix:
+        device: [desktop, phone]
+    env:
+      BASE_URL: ${{ needs.publish.outputs.url }}
+      REVIEW_DIR: /tmp/public13
+      TEST_DEVICE: ${{ matrix.device }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ needs.publish.outputs.commit }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Check exact public assets without substitution
+        run: |
+          python -m pip install -q playwright==1.55.0
+          python -m playwright install --with-deps chromium >/dev/null
+          python - <<'PY'
+          from pathlib import Path
+          p=Path('atlas_sealab_13/reviewed_source/verify13.py');s=p.read_text();old='A.camera.position.set(-180,24,-50);A.camera.lookAt(-50,5,-310);';assert s.count(old)==1
+          s=s.replace(old,'A.camera.position.set(250,18,-270);A.camera.lookAt(340,6,-435);')
+          Path('/tmp/verify_public13.py').write_text(s)
+          PY
+          python /tmp/verify_public13.py
+          cp /tmp/verify_public13.py /tmp/public13/verify_public13.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ATLAS13-Public-${{ matrix.device }}
+          path: /tmp/public13/
+          retention-days: 30
+  record:
+    needs: [publish, public]
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    permissions:
+      contents: write
+      actions: read
+    env:
+      PUBLIC_URL: ${{ needs.publish.outputs.url }}
+      PUBLIC_COMMIT: ${{ needs.publish.outputs.commit }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: atlas/core-beaufort13-20261016
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: ATLAS13-Public-*
+          path: /tmp/public13-all
+      - name: Record exact public verification and package the tested release
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import os,json,hashlib,shutil
+          r=Path('atlas_sealab_13');d=Path('/tmp/public13-all');reports=[json.loads(p.read_text()) for p in d.rglob('validation.json')]
+          assert len(reports)==2 and all(q['passed'] for q in reports)
+          tests=[t for q in reports for t in q['tests']];assert {t['device'] for t in tests}=={'desktop','phone','small-phone'} and all(t['passed'] for t in tests)
+          result={'release':13,'url':os.environ['PUBLIC_URL'],'published_commit':os.environ['PUBLIC_COMMIT'],'source_commit':'ae5491ca0afad5ad7ea017c67be8df5b1647ced6','candidate_review_run':38912757458,'public_run':os.environ['GITHUB_RUN_ID'],'passed':True,'exactPublicAssets':True,'assetSubstitution':False,'physicalDeviceTested':False,'tests':tests}
+          (r/'online_validation.json').write_text(json.dumps(result,indent=2));(d/'delivery.json').write_text(json.dumps({k:result[k] for k in ['url','published_commit','source_commit','passed','public_run']},indent=2))
+          pkg=Path('/tmp/ATLAS_Sea_Lab_13');shutil.copytree(r/'live',pkg/'site');shutil.copytree(r/'reviewed_source',pkg/'source')
+          for name in ['online_validation.json','review13.json','unit13.json','physics12-regression.json','candidate.json']:shutil.copy2(r/name,pkg/name)
+          readme='''ATLAS SEA LAB 13 — BEAUFORT RIVER\n\nOpen the URL in online_validation.json to play online. Beaufort is the default launch. Turn the key, choose Forward and add power. More includes Return to Beaufort waterfront; the practice bay remains in locations.\n\nThis release retains the Sea12 boat/physics/captain. It does NOT activate experimental human, station, accounts or multiplayer work. Mapped footprints/coast/bridge segments use the existing sources; facade detail, heights and vegetation are illustrative. No real-vessel or navigational certification.\n\nVisual terrain/chart rasters and their normals prepare off the render thread, with bounded nearby caches and a cooperative fallback. A height-aware hull mask follows original outer-hull triangles instead of using a broad deck-width cutout. The boat transport is gzip-compressed but decoded model geometry is identical. Balanced graphics remain recommended.\n\nCPU sampling timings are not frame-rate guarantees. Public tests are Chromium/SwiftShader viewport functional checks, not physical-phone/Safari certification. See online_validation.json for the actual exact URL test. Inherited older reports inside site are retained baseline provenance only.\n\nLocal use: python3 -m http.server 8080 --directory site\nThen open http://localhost:8080/\nIncluded assets require no API key. External YouTube playback is provider-dependent; Spotify opens externally.\n'''
+          (pkg/'README.txt').write_text(readme)
+          assert not any(p.suffix.lower() in ['.ttf','.otf','.woff','.woff2'] for p in pkg.rglob('*'))
+          shutil.make_archive(str(d/'ATLAS_Sea_Lab_13'),'zip',root_dir=pkg)
+          (d/'package_sha256.txt').write_text(hashlib.sha256((d/'ATLAS_Sea_Lab_13.zip').read_bytes()).hexdigest())
+          PY
+          git config user.name 'ATLAS release'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add atlas_sealab_13/online_validation.json
+          git commit -m 'Record exact public Sea13 Beaufort, waterline, map and driving verification [skip ci]'
+          git push origin HEAD:refs/heads/atlas/core-beaufort13-20261016
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ATLAS13-Public-Delivery
+          path: /tmp/public13-all/
+          retention-days: 30
