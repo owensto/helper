@@ -1,0 +1,42 @@
+name: ATLAS Sea Lab 12 record verified delivery
+on:
+  workflow_dispatch:
+  push:
+    paths: ['.github/workflows/atlas-sealab-12-record-delivery.yml']
+permissions:
+  contents: write
+  actions: read
+jobs:
+  record:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with: {ref: main}
+      - uses: actions/download-artifact@v4
+        with:
+          github-token: ${{ github.token }}
+          run-id: 38850236103
+          artifact-ids: 12025385211
+          path: /tmp/delivery12
+          merge-multiple: true
+      - name: Preserve exact public results and fix metadata recording identity
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import json,zipfile,hashlib
+          r=Path('atlas_sealab_12');out=Path('/tmp/delivery12');delivery=json.loads((out/'delivery.json').read_text())
+          assert delivery['public_test_passed'] and delivery['commit']=='a2d4eecc12e7b4db14c7f94a6f6fc5088a4061ff'
+          with zipfile.ZipFile(out/'ATLAS_Sea_Lab_12.zip') as z:
+              d=json.loads(z.read('tests/public_validation.json'))
+              assert d['url']==delivery['url'] and d['passed'] and {t['device'] for t in d['tests']}=={'desktop','phone','small-phone','landscape'}
+              assert all(t['passed'] and not t['errors'] and not t['shaderErrors'] and not t['assetErrors'] for t in d['tests'])
+          (r/'online_validation.json').write_text(json.dumps(d,indent=2))
+          (r/'publication/delivery.json').write_text(json.dumps({**delivery,'package_sha256':hashlib.sha256((out/'ATLAS_Sea_Lab_12.zip').read_bytes()).hexdigest(),'public_review_run':38850236103},indent=2))
+          PY
+          git config user.name 'ATLAS release'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add atlas_sealab_12/online_validation.json atlas_sealab_12/publication/delivery.json
+          git diff --cached --quiet || git commit -m 'Record verified Sea Lab 12 public delivery; application assets unchanged'
+          git pull --rebase origin main
+          git push origin HEAD:main
