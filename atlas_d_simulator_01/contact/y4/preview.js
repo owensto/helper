@@ -23,6 +23,15 @@ if(typeof window!=='undefined')(async()=>{'use strict';
   camera.aspect=size.x/size.y;camera.clearViewOffset();camera.updateProjectionMatrix();const box=new T.Box3().setFromObject(station.root),radius=box.getSize(new T.Vector3()).length()/2,target=box.getCenter(new T.Vector3()),dir=local([-1.9,1.55,1.35]).sub(local([0,.85,0])).normalize();camera.position.copy(target).addScaledVector(dir,L.distance(radius,rect,size.x,size.y));camera.lookAt(target);camera.setViewOffset(size.x,size.y,size.x/2-(rect.x+rect.width/2),size.y/2-(rect.y+rect.height/2),size.x,size.y);camera.updateMatrixWorld(true);
   out.latest.screenContacts=Object.values(out.latest.physical.contacts).filter(c=>c.available).map(c=>{const p=new T.Vector3(...c.pointWorldM).project(camera);return {id:c.id,x:(p.x+1)*size.x/2,y:(1-p.y)*size.y/2,inFront:p.z>=-1&&p.z<=1};});out.latest.viewport=out.viewport;return true;
  }
+ function ownerView(cam){
+  if(!cam.isPerspectiveCamera)return cam;
+  const size=h.BAYPLAY.renderer.getSize(new T.Vector2()),vr=views.getBoundingClientRect(),dr=dock.getBoundingClientRect(),landscape=h.matchMedia('(orientation:landscape) and (max-height:600px)').matches;
+  const rect=L.region(size.x,size.y,vr.bottom,{x:dr.x,y:dr.y},landscape);if(!rect.available)return cam;
+  // Presentation clone only: no write to the owner's position, target, projection or selected view.
+  const view=cam.clone();view.clearViewOffset();view.zoom=cam.zoom*Math.min(rect.width/size.x,rect.height/size.y)*.90;
+  view.setViewOffset(size.x,size.y,size.x/2-(rect.x+rect.width/2),size.y/2-(rect.y+rect.height/2),size.x,size.y);view.updateProjectionMatrix();view.updateMatrixWorld(true);
+  out.latest.viewport={width:size.x,height:size.y,landscape,scene:rect,panel:dock.dataset.panel,ownerProjectionClone:true};return view;
+ }
  function cameraChoice(name){out.view=name;document.getElementById('station-view').setAttribute('aria-pressed',String(name==='station'));document.getElementById('overview').setAttribute('aria-pressed',String(name==='overview'));}
  function layout(){const d=h.document;d.body.classList.add('y4-touch-preview');const style=d.createElement('style');style.id='y4-preview-style';style.textContent=css.split('/* HOST STYLE:')[1].split('*/').slice(1).join('*/');d.head.append(style);
   const controls=d.querySelector('.ad-controls'),notice=d.getElementById('ad-notice');dock=d.createElement('section');dock.className='y4-dock';dock.dataset.panel='helm';dock.id='y4-dock';
@@ -35,7 +44,7 @@ if(typeof window!=='undefined')(async()=>{'use strict';
   for(const event of ['pointerdown','pointerup','pointercancel','click','input','change'])d.addEventListener(event,e=>{const el=e.target.closest?.('button,input,select,summary');if(!el)return;out.inputEvents.push({event,id:el.id||null,gear:el.dataset.adGear??null,view:el.dataset.adView??null,type:e.pointerType||null,trusted:e.isTrusted,ownerSeconds:P.state.elapsed,value:el.value??null});if(out.inputEvents.length>2000)out.inputEvents.shift();},true);
  }
  function connect(){try{h=iframe.contentWindow;if(!h.ATLAS_D_SIM?.ready)return setTimeout(connect,100);T=h.ATLASRuntime;P=h.ATLAS_D_SIM;group=h.BAYPLAY.scene.getObjectByName('ATLAS_D_PLAYER');station=H.install(T,P.model,spec,manifest,X.ASSET);out.station=station;camera=new T.PerspectiveCamera(46,1,.01,2000);layout();h.document.getElementById('ad-reset').addEventListener('click',()=>{out.simulationEpoch++;},true);
-  const original=h.BAYPLAY.renderer.render.bind(h.BAYPLAY.renderer);h.BAYPLAY.renderer.render=function(scene,cam){if(scene!==h.BAYPLAY.scene||!out.enabled)return original(scene,cam);observe();if(out.view==='station'&&P.active&&station.root.visible&&cameraState())return original(scene,camera);return original(scene,cam);};
+  const original=h.BAYPLAY.renderer.render.bind(h.BAYPLAY.renderer);h.BAYPLAY.renderer.render=function(scene,cam){if(scene!==h.BAYPLAY.scene||!out.enabled)return original(scene,cam);observe();if(out.view==='station'&&P.active&&station.root.visible&&cameraState())return original(scene,camera);return original(scene,P.active?ownerView(cam):cam);};
   out.current=fresh;out.physicalAgain=()=>station.sample(out.latest.frame,fresh());document.getElementById('station-view').onclick=()=>cameraChoice('station');document.getElementById('overview').onclick=()=>cameraChoice('overview');
   const details=document.getElementById('review'),info=document.getElementById('info');const show=v=>{details.hidden=!v;info.setAttribute('aria-expanded',String(v));};info.onclick=()=>show(details.hidden);document.getElementById('close-info').onclick=()=>{show(false);info.focus();};out.ready=true;
  }catch(e){out.error=String(e);status.textContent=out.error;console.error(e);}}
