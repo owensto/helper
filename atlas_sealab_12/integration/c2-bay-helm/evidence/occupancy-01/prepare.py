@@ -17,8 +17,20 @@ if sys.argv[1]=='test':
     assert source.count(needle)==1
     source=source.replace(needle,"r['corruptionStimulus']=p.evaluate('C2_CORRUPTION_METRES');"+needle)
     source=source.replace("'candidateSourceSHA':os.environ.get('GITHUB_SHA','LOCAL_UNPUBLISHED')", "'candidateSourceSHA':"+repr(PIN)+",'verifierSourceSHA':os.environ.get('GITHUB_SHA','LOCAL_UNPUBLISHED')")
+    # Positive readiness must be a newer committed owner frame, not a cached
+    # pre-weather success. No time/physics mutation or tolerance change here.
+    helper="""def fresh_receiver(p):
+ before=p.evaluate('C2.inspect().frameId')
+ p.wait_for_function('(f)=>{const q=C2.read();return q?.receiverAccepted===true && q.context.frameId>f && Math.abs(q.frame.time-BAYPLAY.state.elapsed)<1e-9;}',arg=before,timeout=45000)
+ r.setdefault('freshReceiverBoundaries',[]).append(p.evaluate('(f)=>({before:f,after:C2.read().context.frameId,time:C2.read().frame.time,hostSeconds:BAYPLAY.state.elapsed,worldRevision:C2.read().context.worldRevision})',before))
+"""
+    anchor='def physical_ready(p):'
+    assert source.count(anchor)==1
+    source=source.replace(anchor,helper+anchor)
+    source,replacements=re.subn(r"p\.wait_for_function\('C2\.read\(\)\?\.receiverAccepted===true'(?:,timeout=45000)?\)", 'fresh_receiver(p)',source)
+    assert replacements>=10,replacements
     (OUT/'verify-fixed-stimulus.py').write_text(source)
-    (OUT/'verification-delta.json').write_text(json.dumps({'runtimeSHA':PIN,'sourceVerifierSHA256':sha(git(PIN+':atlas_sealab_12/integration/c2-bay-helm/verify.py')),'currentVerifierSHA256':sha(source.encode()),'allowedDelta':'measure and apply 0.5m actual skinned displacement rather than 0.5 asset-coordinate units; record two source revisions','unchangedProbeTolerances':True,'runtimeDelta':[]},indent=2))
+    (OUT/'verification-delta.json').write_text(json.dumps({'runtimeSHA':PIN,'sourceVerifierSHA256':sha(git(PIN+':atlas_sealab_12/integration/c2-bay-helm/verify.py')),'currentVerifierSHA256':sha(source.encode()),'allowedDelta':'measure and apply 0.5m actual skinned displacement rather than 0.5 asset-coordinate units; require positive readiness from a newer committed frame with matching actual host seconds; record two source revisions','unchangedProbeTolerances':True,'runtimeDelta':[]},indent=2))
     print('Corrected stimulus only; exact f641 runtime retained')
     sys.exit()
 assert sys.argv[1]=='snapshot'
