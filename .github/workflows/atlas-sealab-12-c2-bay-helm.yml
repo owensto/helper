@@ -1,0 +1,74 @@
+name: ATLAS C2 Bay helm boundary
+on:
+  workflow_dispatch:
+  push:
+    branches: ['atlas/core-c2-bay-helm-20261016']
+    paths:
+      - 'atlas_sealab_12/integration/c2-bay-helm/**'
+      - '.github/workflows/atlas-sealab-12-c2-bay-helm.yml'
+permissions:
+  contents: read
+concurrency:
+  group: atlas-c2-bay-helm-review
+  cancel-in-progress: true
+jobs:
+  review:
+    strategy:
+      fail-fast: false
+      matrix:
+        device: [desktop, phone]
+    runs-on: ubuntu-24.04
+    timeout-minutes: 16
+    env:
+      TEST_DEVICE: ${{ matrix.device }}
+      C2_OUT: /tmp/atlas-c2-bay-helm
+      REVIEW_DIR: /tmp/atlas-c2-bay-helm/review
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Guard isolated ownership and exact host; execute source geometry and clock tests
+        run: |
+          test "${GITHUB_REF_NAME}" = "atlas/core-c2-bay-helm-20261016"
+          python - <<'PYGATE'
+          import subprocess
+          paths=subprocess.check_output(['git','diff','--name-only','36903985f2182c902427fed77d4e28c61a7639ca','HEAD'],text=True).splitlines()
+          assert paths and all(p.startswith('atlas_sealab_12/integration/c2-bay-helm/') or p=='.github/workflows/atlas-sealab-12-c2-bay-helm.yml' for p in paths),paths
+          PYGATE
+          python atlas_sealab_12/integration/c2-bay-helm/prepare.py
+          for f in "$C2_OUT/site/"*.js; do node --check "$f"; done
+          node atlas_sealab_12/integration/c2-bay-helm/test-receiver.cjs > "$C2_OUT/unit.stdout"
+          if C2_REQUIRE_HUMAN=1 python atlas_sealab_12/integration/c2-bay-helm/prepare.py >"$C2_OUT/positive-gate.log" 2>&1; then
+            echo 'Ungated human activation was accepted'; exit 1
+          fi
+          grep -q CORRECTED_HUMANS_SHA_PROFILE_ACK_REQUIRED "$C2_OUT/positive-gate.log"
+      - name: Real current-host desktop and phone rendering, controls and lifecycle
+        run: |
+          python -m pip install -q playwright==1.55.0
+          python -m playwright install --with-deps chromium >/dev/null
+          python -m http.server 8936 --bind 127.0.0.1 --directory "$C2_OUT/site" >"$C2_OUT/http.log" 2>&1 &
+          sleep 2
+          BASE_URL=http://127.0.0.1:8936/index.html python atlas_sealab_12/integration/c2-bay-helm/verify.py
+      - name: Preserve exact source and artifact hashes
+        if: always()
+        run: |
+          mkdir -p "$C2_OUT/source"
+          cp atlas_sealab_12/integration/c2-bay-helm/*.* "$C2_OUT/source/"
+          cp .github/workflows/atlas-sealab-12-c2-bay-helm.yml "$C2_OUT/source/"
+          printf '%s\n' "$GITHUB_SHA" > "$C2_OUT/source-sha.txt"
+          python - <<'PYHASH'
+          from pathlib import Path
+          import hashlib,json,os
+          r=Path(os.environ['C2_OUT']);d={str(p.relative_to(r)):hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(r.rglob('*')) if p.is_file()}
+          (r/'artifact-hashes.json').write_text(json.dumps(d,indent=2))
+          PYHASH
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ATLAS-C2-Bay-Helm-${{ matrix.device }}
+          path: /tmp/atlas-c2-bay-helm/
+          retention-days: 30
