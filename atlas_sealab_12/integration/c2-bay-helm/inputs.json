@@ -7,7 +7,7 @@
     "publicSHA": "a2d4eecc12e7b4db14c7f94a6f6fc5088a4061ff",
     "modelSHA256": "b1ef9c448309a9a5d85ec4f2efcf45d9406d999ab24d27bdd1534359a7278b82"
   },
-  "physicalContactSHA256": "0584582127035c1942f55738d1d2d2699fe1f74a2ca7155fadd0360c1068baf7",
+  "physicalContactSHA256": "cc2a82dc89e3abfee8fd6a7d5def9dd153da179abb4c834dc91b09924d237f58",
   "digestEncoding": "SHA256 exact UTF-8 file bytes including trailing LF; lowercase hex",
   "physicalContactPath": "atlas_sealab_12/integration/c2-bay-helm/contacts.json",
   "stationId": "bay12.starboard-helm",
