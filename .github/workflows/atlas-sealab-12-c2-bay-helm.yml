@@ -46,6 +46,22 @@ jobs:
             echo 'Ungated human activation was accepted'; exit 1
           fi
           grep -q CORRECTED_HUMANS_SHA_PROFILE_ACK_REQUIRED "$C2_OUT/positive-gate.log"
+      - name: Verify immutable corrected HUMANS receiver without activating it
+        run: |
+          mkdir -p /tmp/c2-owner
+          git archive 10ed9c2f8d0c392828f238e686bcc689517d34f9 atlas_humans atlas_d_original_r7/live/ATLAS_D_Original.glb | tar -x -C /tmp/c2-owner
+          python - <<'PYOWNER'
+          from pathlib import Path
+          import hashlib,json,os
+          r=Path('/tmp/c2-owner/atlas_humans');out=Path(os.environ['C2_OUT'])
+          digest=hashlib.sha256((r/'profiles/bay12/profile.json').read_bytes()).hexdigest()
+          assert digest=='2d8f1b640ac9ffad745e889984b264d55531b72d7f0496e611be4ca1ca824902'
+          profile=json.loads((r/'profiles/bay12/profile.json').read_text());assert profile['productionEnabled'] is False
+          hashes={str(p.relative_to(r)):hashlib.sha256(p.read_bytes()).hexdigest() for p in r.rglob('*') if p.is_file()}
+          (out/'human-input-hashes.json').write_text(json.dumps({'sourceSHA':'10ed9c2f8d0c392828f238e686bcc689517d34f9','profileSHA256':digest,'activated':False,'hashes':hashes},indent=2))
+          PYOWNER
+          npm ci --prefix /tmp/c2-owner/atlas_humans --ignore-scripts --no-fund --no-audit > "$C2_OUT/human-install.log" 2>&1
+          npm test --prefix /tmp/c2-owner/atlas_humans > "$C2_OUT/human-unit.txt" 2>&1
       - name: Real current-host desktop and phone rendering, controls and lifecycle
         run: |
           python -m pip install -q playwright==1.55.0
