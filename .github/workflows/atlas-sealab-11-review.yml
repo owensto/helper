@@ -1,0 +1,57 @@
+name: ATLAS Sea Lab 11 coast and mobile review
+on:
+  workflow_dispatch:
+  push:
+    paths: ['.github/workflows/atlas-sealab-11-review.yml','atlas_sealab_11/transport/**','atlas_sealab_11/fix11.py']
+permissions:
+  contents: read
+  actions: read
+concurrency:
+  group: atlas11-review
+  cancel-in-progress: true
+jobs:
+  review:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 22
+    strategy:
+      fail-fast: false
+      matrix:
+        device: [desktop, phone]
+    env:
+      TEST_DEVICE: ${{ matrix.device }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Restore verified base and readable source
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import json,base64,lzma,hashlib,shutil
+          r=Path('atlas_sealab_11');shutil.copytree('atlas_sealab_10/live',r/'site',dirs_exist_ok=True)
+          raw=base64.b64decode(''.join((r/'transport'/f'part{i}.b64').read_text().strip() for i in range(2)),validate=True)
+          assert hashlib.sha256(raw).hexdigest()=='9abace0887610b6337577a017956810cac3602ab5dd5fedbb296d9783944eee5'
+          for name,text in json.loads(lzma.decompress(raw)).items():
+              p=Path(name);assert len(p.parts)==1 and p.suffix in ['.js','.css','.py']
+              (r/p).write_text(text)
+          PY
+          python atlas_sealab_11/patch11.py
+          if [ -f atlas_sealab_11/fix11.py ]; then python atlas_sealab_11/fix11.py; fi
+          for f in atlas_sealab_11/site/*.js; do node --check "$f"; done
+          mkdir -p atlas_sealab_11/review
+          cd atlas_sealab_11
+          node test11.js > review/unit11.json
+      - name: Operate desktop and mobile layouts using the actual app
+        run: |
+          python -m pip install -q playwright==1.55.0
+          python -m playwright install --with-deps chromium >/dev/null
+          python -m http.server 8911 --bind 127.0.0.1 --directory atlas_sealab_11/site >atlas_sealab_11/review/http.log 2>&1 &
+          sleep 2
+          BASE_URL=http://127.0.0.1:8911/index.html python atlas_sealab_11/verify11.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ATLAS-SeaLab11-${{ matrix.device }}
+          path: atlas_sealab_11/
+          retention-days: 30
