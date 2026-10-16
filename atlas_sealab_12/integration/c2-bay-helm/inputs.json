@@ -1,0 +1,46 @@
+{
+  "task": "C2-BAY-HELM-01",
+  "revision": "c1-humans-map/1",
+  "baseline": {
+    "c1SourceSHA": "36903985f2182c902427fed77d4e28c61a7639ca",
+    "c1Revision": "sealab12-core-integration/1.0.0",
+    "publicSHA": "a2d4eecc12e7b4db14c7f94a6f6fc5088a4061ff",
+    "modelSHA256": "b1ef9c448309a9a5d85ec4f2efcf45d9406d999ab24d27bdd1534359a7278b82"
+  },
+  "physicalContactSHA256": "0584582127035c1942f55738d1d2d2699fe1f74a2ca7155fadd0360c1068baf7",
+  "digestEncoding": "SHA256 exact UTF-8 file bytes including trailing LF; lowercase hex",
+  "physicalContactPath": "atlas_sealab_12/integration/c2-bay-helm/contacts.json",
+  "stationId": "bay12.starboard-helm",
+  "designId": "atlas-bay-25-sealab12",
+  "rigProfile": null,
+  "correctedHumanSHA": null,
+  "receiverACK": null,
+  "positiveFactoryEnabled": false,
+  "COREMappingACK": {
+    "epoch": "c1h/1: + SHA256(UTF8(JSON.stringify([\"c1-humans-map/1\",verifiedC1SourceSHA,privateRuntimeScopeId,registeredVesselInstanceId,\"client-simulation\",clock.epoch])))",
+    "epochLength": 70,
+    "epochSource": "nonnegative safe integer C1 clock.epoch; private runtime/instance nonempty cryptographically random identifiers, not incoming payload",
+    "frame": "private serial at existing CORE render-commit boundary; no second RAF or physics loop",
+    "time": "clock.seconds, finite nonnegative; copied into transform.time",
+    "firstAndReacquired": "reset:true,dt:0",
+    "repeatedFrame": "no receiver update; observation dt:0",
+    "pausedFreshFrame": "dt is actual host delta once (usually0); transition into pause may consume last advancement",
+    "negativeDelta": "invalid BACKWARDS_HOST_TIME; fresh frame reset, invalid interval discarded",
+    "longGap": "delta>0.1 -> HOST_TIME_GAP_REBASE_REQUIRED; hidden/no balance update; fresh frame reset:true dt:0; no clamp",
+    "ordinaryDelta": "0<=delta<=0.1 consumed once per distinct committed frame",
+    "invalidation": "world/contact/rig/instance/station/activation/simulationEpoch independently validated and reset",
+    "rollPitch": "motion.renderEulerYXZ[0]/[2]; never yaw",
+    "acceleration": "explicitly unavailable in first slice; reduced roll/pitch balance only, no measured acceleration claim",
+    "jointMapping": "contactToVessel*HUMANS_jointOffset, then inverse(captainWorld)*vesselWorld*jointVessel; orientations require reviewed identity local root rotation/scale",
+    "attachmentRevision": "bay-contact/1: + SHA256(JSON.stringify([designId,modelSHA256,physicalContactSHA256,rigProfileSHA256]))"
+  },
+  "activationGate": [
+    "corrected HUMANS SHA closing four identity/cursor/publisher probes and throwing onUnsupported callback",
+    "HUMANS-authored rig profile SHA256 bound to exact physicalContactSHA256",
+    "CORE and HUMANS exact mapping/profile digest ACKs",
+    "fresh candidate manifest covering host hooks, adapters, profiles, modules and assets",
+    "no source exceptions or invalid rig updates; continuous physical support evidence"
+  ],
+  "yachtAvailable": false,
+  "multiplayerEnabled": false
+}
