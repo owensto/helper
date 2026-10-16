@@ -1,0 +1,28 @@
+{
+  "revision": "core-bay-bolster-endstop/1",
+  "owner": "CORE",
+  "geometryBaseSHA256": "b1ef9c448309a9a5d85ec4f2efcf45d9406d999ab24d27bdd1534359a7278b82",
+  "pivots": [
+    145,
+    150
+  ],
+  "scope": "kinematic endstop for existing linked 0..85 degree fitting; not structural hinge or material validation",
+  "fittingRatePerSecond": 4,
+  "snapNormalizedResidualMax": 1e-05,
+  "snapOnlyOnPositiveFittingDt": true,
+  "snapChangesEvaluatedGeometry": true,
+  "maximumOriginalDescendantRadiusM": 0.2381472613364333,
+  "maximumSnapPointDisplacementM": 3.5329857426565315e-06,
+  "numericMatrixTolerance": 1e-12,
+  "occupancyRule": "Both value and target must equal exact0; BOTH original evaluated pivot rotations must equal exact0 with intact rest translation, identity X/Y rotation, scale and registered parent. Any pending/moving/incoherent state is unavailable. Exact1 is settled UP but never an occupied H4 seated configuration. Endpoint snap changes the actual fitting value and pose in the original fitting updater before classification; reads never snap or merely rename residual movement. No contact tolerance is changed.",
+  "pauseRule": "Physics pause does not pause fittings; evaluate actual fitting state at each existing committed boundary. Target departure invalidates immediately. Reacquire only after exact down and new current receiver frame.",
+  "physicalContactToleranceChanged": false,
+  "H4Source": "10ed9c2f8d0c392828f238e686bcc689517d34f9",
+  "H4ACK": "pr1:6209504553",
+  "fullBodyAccepted": false,
+  "gameplayStationAvailable": false,
+  "defaultHumanEnabled": false,
+  "publicActivation": false,
+  "H5Adopted": false,
+  "H7Adopted": false
+}

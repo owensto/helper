@@ -1,10 +1,13 @@
-name: ATLAS C2 Bay helm boundary
+name: ATLAS CORE settlement and station assessment
 on:
   workflow_dispatch:
   push:
     branches: ['atlas/core-c2-bay-helm-20261016']
     paths:
-      - 'atlas_sealab_12/integration/c2-bay-helm/**'
+      - 'atlas_sealab_12/integration/c2-bay-helm/bolster-state.js'
+      - 'atlas_sealab_12/integration/c2-bay-helm/evidence/settlement-02/*.py'
+      - 'atlas_sealab_12/integration/c2-bay-helm/evidence/settlement-02/test.cjs'
+      - 'atlas_sealab_12/integration/c2-bay-helm/evidence/settlement-02/policy.json'
       - '.github/workflows/atlas-sealab-12-c2-bay-helm.yml'
 permissions:
   contents: read
@@ -18,7 +21,7 @@ jobs:
       matrix:
         device: [desktop, phone]
     runs-on: ubuntu-24.04
-    timeout-minutes: 28
+    timeout-minutes: 24
     env:
       TEST_DEVICE: ${{ matrix.device }}
       C2_OUT: /tmp/atlas-c2-bay-helm
@@ -39,6 +42,11 @@ jobs:
           paths=subprocess.check_output(['git','diff','--name-only','36903985f2182c902427fed77d4e28c61a7639ca','HEAD'],text=True).splitlines()
           assert paths and all(p.startswith('atlas_sealab_12/integration/c2-bay-helm/') or p=='.github/workflows/atlas-sealab-12-c2-bay-helm.yml' for p in paths),paths
           PYGATE
+          python - <<'PYNARROW'
+          import subprocess
+          paths=subprocess.check_output(['git','diff','--name-only','f560ee69dc9bd766bd024c7571f866230445a790','HEAD'],text=True).splitlines()
+          assert all(p=='atlas_sealab_12/integration/c2-bay-helm/bolster-state.js' or p.startswith('atlas_sealab_12/integration/c2-bay-helm/evidence/settlement-02/') or p=='.github/workflows/atlas-sealab-12-c2-bay-helm.yml' for p in paths),paths
+          PYNARROW
           export GITHUB_SHA=f641b5f2eaf2305e9c86b851843304260a811078
           python atlas_sealab_12/integration/c2-bay-helm/prepare.py
           for f in "$C2_OUT/site/"*.js; do node --check "$f"; done
@@ -72,48 +80,55 @@ jobs:
           C2_HUMAN_DIR=/tmp/c2-owner/atlas_humans node atlas_sealab_12/integration/c2-bay-helm/test-receiver.cjs > "$C2_OUT/closure-unit.stdout"
           C2_REQUIRE_HUMAN=1 C2_HUMAN_DIR=/tmp/c2-owner/atlas_humans python atlas_sealab_12/integration/c2-bay-helm/prepare.py
           for f in "$C2_OUT/site/"*.js "$C2_OUT/site/human/src/"*.mjs; do node --check "$f"; done
-      - name: Exact f641 runtime validation with metre-correct corruption stimulus
-        id: runtime_validation
-        continue-on-error: true
+      - name: Build separately hashed endpoint candidate and run pure boundary tests
         run: |
+          GITHUB_SHA=f560ee69dc9bd766bd024c7571f866230445a790 python atlas_sealab_12/integration/c2-bay-helm/evidence/occupancy-01/prepare.py test
+          GITHUB_SHA=f560ee69dc9bd766bd024c7571f866230445a790 python atlas_sealab_12/integration/c2-bay-helm/evidence/occupancy-01/prepare.py snapshot
+          python atlas_sealab_12/integration/c2-bay-helm/evidence/settlement-02/prepare.py
+          node atlas_sealab_12/integration/c2-bay-helm/evidence/settlement-02/test.cjs > "$C2_OUT/settlement-unit.json"
+          for f in "$C2_OUT/settlement-site/"*.js; do node --check "$f"; done
           python -m pip install -q playwright==1.55.0
           python -m playwright install --with-deps chromium >/dev/null
-          python -m http.server 8936 --bind 127.0.0.1 --directory "$C2_OUT/site" >"$C2_OUT/http.log" 2>&1 &
-          sleep 2
-          python atlas_sealab_12/integration/c2-bay-helm/evidence/occupancy-01/prepare.py test
-          BASE_URL=http://127.0.0.1:8936/index.html python "$C2_OUT/verify-fixed-stimulus.py"
-      - name: Capture independent current-source occupancy on diagnostic variant
-        if: always()
-        id: occupancy
+          python -m http.server 8938 --bind 127.0.0.1 --directory "$C2_OUT/settlement-site" >"$C2_OUT/settlement-http.log" 2>&1 &
+          sleep 1
+      - name: Full existing-host H4 diagnostic regressions on new candidate
+        id: regression
         continue-on-error: true
         run: |
-          test -f "$C2_OUT/site/human/assets/RocketboxCaptain.glb"
-          python atlas_sealab_12/integration/c2-bay-helm/evidence/occupancy-01/prepare.py snapshot
-          node --check "$C2_OUT/snapshot-site/c2-owner-snapshot.js"
-          node --check "$C2_OUT/snapshot-site/c2-host-adapter.js"
-          python -m http.server 8937 --bind 127.0.0.1 --directory "$C2_OUT/snapshot-site" >"$C2_OUT/snapshot-http.log" 2>&1 &
-          sleep 1
-          python atlas_sealab_12/integration/c2-bay-helm/evidence/occupancy-01/verify-snapshot.py
-      - name: Keep candidate and occupancy outcomes distinct
+          BASE_URL=http://127.0.0.1:8938/index.html python "$C2_OUT/verify-settlement-regression.py"
+      - name: Actual endpoint approach return paused motion and threshold captures
+        if: always()
+        id: settlement
+        continue-on-error: true
+        run: |
+          python atlas_sealab_12/integration/c2-bay-helm/evidence/settlement-02/verify.py
+      - name: One source-bound mechanical and support feasibility assessment
+        if: always()
+        id: feasibility
+        continue-on-error: true
+        run: |
+          python atlas_sealab_12/integration/c2-bay-helm/evidence/settlement-02/feasibility.py
+      - name: Preserve all outcomes without inferring gameplay acceptance
         if: always()
         env:
-          RUNTIME_OUTCOME: ${{ steps.runtime_validation.outcome }}
-          OCCUPANCY_OUTCOME: ${{ steps.occupancy.outcome }}
+          REGRESSION: ${{ steps.regression.outcome }}
+          SETTLEMENT: ${{ steps.settlement.outcome }}
+          FEASIBILITY: ${{ steps.feasibility.outcome }}
         run: |
           python - <<'PYRESULT'
           from pathlib import Path
           import os,json
           p=Path(os.environ['C2_OUT']);p.mkdir(exist_ok=True)
-          (p/'iteration-outcomes.json').write_text(json.dumps({'testSourceSHA':os.environ['GITHUB_SHA'],'runtimeSHA':'f641b5f2eaf2305e9c86b851843304260a811078','runtimeOutcome':os.environ['RUNTIME_OUTCOME'],'occupancyOutcome':os.environ['OCCUPANCY_OUTCOME'],'publicActivation':False,'fullBodyAccepted':False},indent=2))
+          d={'sourceSHA':os.environ['GITHUB_SHA'],'regression':os.environ['REGRESSION'],'settlement':os.environ['SETTLEMENT'],'feasibilityAssessment':os.environ['FEASIBILITY'],'publicActivation':False,'fullBodyAccepted':False,'feasibleStationApproved':False}
+          (p/'iteration-outcomes.json').write_text(json.dumps(d,indent=2))
+          assert all(d[k]=='success' for k in ['regression','settlement','feasibilityAssessment']),d
           PYRESULT
-          test "$RUNTIME_OUTCOME" = success && test "$OCCUPANCY_OUTCOME" = success
-      - name: Preserve exact source and artifact hashes
+      - name: Preserve exact source and archive manifest, including failures
         if: always()
         run: |
           mkdir -p "$C2_OUT/source"
           cp atlas_sealab_12/integration/c2-bay-helm/*.* "$C2_OUT/source/"
-          cp atlas_sealab_12/integration/c2-bay-helm/evidence/skin-matrix-probe.cjs "$C2_OUT/source/"
-          cp -r atlas_sealab_12/integration/c2-bay-helm/evidence/occupancy-01 "$C2_OUT/source/"
+          cp -r atlas_sealab_12/integration/c2-bay-helm/evidence/settlement-02 "$C2_OUT/source/"
           cp .github/workflows/atlas-sealab-12-c2-bay-helm.yml "$C2_OUT/source/"
           printf '%s\n' "$GITHUB_SHA" > "$C2_OUT/source-sha.txt"
           python - <<'PYHASH'
@@ -125,6 +140,6 @@ jobs:
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: ATLAS-C2-Bay-Helm-${{ matrix.device }}
+          name: ATLAS-CORE-Settlement02-${{ matrix.device }}
           path: /tmp/atlas-c2-bay-helm/
           retention-days: 30
