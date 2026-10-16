@@ -1,0 +1,60 @@
+name: ATLAS Sea Lab 13 Beaufort review
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'atlas_sealab_13/**'
+      - '.github/workflows/atlas-sealab-13-review.yml'
+permissions:
+  contents: read
+concurrency:
+  group: atlas-beaufort13-review
+  cancel-in-progress: true
+jobs:
+  review:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    strategy:
+      fail-fast: false
+      matrix:
+        device: [desktop, phone]
+    env:
+      TEST_DEVICE: ${{ matrix.device }}
+      REVIEW_DIR: atlas_sealab_13/review
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22.16.0'
+      - name: Build source-backed water mask, baked scenery and compressed original boat
+        run: |
+          python -m pip install -q numpy==2.3.5 playwright==1.55.0
+          mkdir -p atlas_sealab_13/review
+          python atlas_sealab_13/build13.py > atlas_sealab_13/review/build.log
+          for f in atlas_sealab_13/site/*.js; do node --check "$f"; done
+          node atlas_sealab_13/test13.cjs > atlas_sealab_13/review/unit13.json
+          node atlas_sealab_13/test12.cjs > atlas_sealab_13/review/physics12-regression.json
+      - name: Real rendered Beaufort, waterline, map and controls
+        run: |
+          python -m playwright install --with-deps chromium >/dev/null
+          python -m http.server 8914 --bind 127.0.0.1 --directory atlas_sealab_13/site >atlas_sealab_13/review/http.log 2>&1 &
+          sleep 2
+          BASE_URL=http://127.0.0.1:8914/index.html python atlas_sealab_13/verify13.py
+      - name: Record exact candidate file hashes
+        if: always()
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import json,hashlib,os
+          r=Path('atlas_sealab_13');h={str(p.relative_to(r/'site')):hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted((r/'site').rglob('*')) if p.is_file()}
+          (r/'review/candidate.json').write_text(json.dumps({'source':os.environ['GITHUB_SHA'],'run':os.environ['GITHUB_RUN_ID'],'files':h},indent=2))
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ATLAS-SeaLab13-${{ matrix.device }}
+          path: atlas_sealab_13/
+          retention-days: 30
