@@ -6,10 +6,13 @@ import WebSocket from 'ws';
 import { createMultiplayerServer } from '../server.mjs';
 import { PROTOCOL } from '../rooms.mjs';
 
+import { FIXTURE_WORLD, FIXTURE_VESSEL } from './fixtures/world.mjs';
+import { worldFingerprint } from '../shared/world.mjs';
+const fixtureHash=await worldFingerprint(FIXTURE_WORLD);
 const ORIGIN = 'http://127.0.0.1:3000';
 const pose = x => ({p:[x,0,2],q:[0,0,0,1],engine:true,rpm:1000,gear:1});
 const hello = (action='create', extra={}) => ({protocol:PROTOCOL,action,
-  worldId:'practice-bay',worldRevision:'sealab11',name:'Socket test',...extra});
+  worldId:FIXTURE_WORLD.worldId,worldRevision:FIXTURE_WORLD.worldRevision,worldHash:fixtureHash,vesselId:FIXTURE_VESSEL,name:'Socket test',...extra});
 const join = h => hello('join',{roomId:h.roomId,key:h.key});
 const resume = h => hello('resume',{roomId:h.roomId,key:h.key,playerId:h.playerId,resumeToken:h.resumeToken});
 const within = (promise, ms=3000) => {
@@ -19,7 +22,7 @@ const within = (promise, ms=3000) => {
   })]).finally(()=>clearTimeout(timer));
 };
 async function fixture(t, opts={}) {
-  const app=createMultiplayerServer({origins:[ORIGIN],...opts});
+  const app=createMultiplayerServer({origins:[ORIGIN],...opts,roomOptions:{world:FIXTURE_WORLD,allowFixture:true,...opts.roomOptions}});
   app.server.listen(0,'127.0.0.1'); await once(app.server,'listening');
   const base=`http://127.0.0.1:${app.server.address().port}`;
   const clients=[];
@@ -119,7 +122,7 @@ test('spoofed owner field cannot update another boat across actual sockets',{tim
   const f=await fixture(t),a=await f.enter(),b=await f.enter(join(a.welcome));
   a.send({type:'state',seq:0,pose:pose(9),playerId:b.welcome.playerId});
   assert.equal((await a.waitClose()).reason,'BAD_STATE');
-  assert.equal(f.store.snapshot(a.welcome.roomId).players.find(p=>p.id===b.welcome.playerId).pose,null);
+  assert.deepEqual(f.store.snapshot(a.welcome.roomId).players.find(p=>p.id===b.welcome.playerId).pose,b.welcome.selfPose);
 });
 
 test('wrong protocol/world and invitation keys are rejected',{timeout:5000},async t=>{

@@ -1,10 +1,13 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { Bucket, PROTOCOL, RoomStore, validatePose } from '../rooms.mjs';
+import { FIXTURE_WORLD, FIXTURE_VESSEL } from './fixtures/world.mjs';
+import { worldFingerprint } from '../shared/world.mjs';
+const fixtureHash=await worldFingerprint(FIXTURE_WORLD);
 const pose = () => ({ p: [1, 0, 2], q: [0, 0, 0, 1], engine: true, rpm: 1000, gear: 1 });
 const hello = (action = 'create', extra = {}) => ({ protocol: PROTOCOL, action,
-  worldId: 'practice-bay', worldRevision: 'sealab11', name: 'Owen', ...extra });
-function setup(options = {}) { let time = 1000; const store = new RoomStore({ now: () => time, ...options });
+  worldId: FIXTURE_WORLD.worldId, worldRevision: FIXTURE_WORLD.worldRevision, worldHash: fixtureHash, vesselId: FIXTURE_VESSEL, name: 'Owen', ...extra });
+function setup(options = {}) { let time = 1000; const store = new RoomStore({ now: () => time, world: FIXTURE_WORLD, allowFixture: true, ...options });
   return { store, advance: n => { time += n; }, host: () => store.enter('a', hello()) }; }
 const join = h => hello('join', { roomId: h.roomId, key: h.key, name: 'Crew' });
 const resume = h => hello('resume', { ...h, action: 'resume', protocol: PROTOCOL, name: 'Owen' });
@@ -46,7 +49,7 @@ test('resume expires after grace period', () => {
 test('unknown owner fields are rejected and other boat state remains unchanged', () => {
   const { store, host } = setup(); const a = host(), b = store.enter('b', join(a));
   assert.throws(() => store.update('a', { type: 'state', seq: 0, pose: pose(), playerId: b.playerId }), /BAD_STATE/);
-  assert.equal(store.snapshot(a.roomId).players.find(p => p.id === b.playerId).pose, null);
+  assert.deepEqual(store.snapshot(a.roomId).players.find(p => p.id === b.playerId).pose, b.selfPose);
 });
 test('states require a joined connection and monotonically increasing sequence', () => {
   const { store, host } = setup(); host();

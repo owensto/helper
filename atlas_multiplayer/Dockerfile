@@ -5,6 +5,7 @@ WORKDIR /app
 COPY package.json package-lock.json ./
 RUN npm ci --omit=dev --omit=optional --ignore-scripts --no-audit --no-fund
 COPY rooms.mjs server.mjs ./
+COPY shared ./shared
 USER node
 EXPOSE 8080
 CMD ["node", "server.mjs"]

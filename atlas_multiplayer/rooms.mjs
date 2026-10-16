@@ -1,25 +1,12 @@
-/** Atlas D cooperative multiplayer, protocol 1. No authoritative boat physics. */
-import { randomBytes, timingSafeEqual } from 'node:crypto';
+/** Atlas D cooperative multiplayer, protocol 2. No authoritative boat physics. */
+import { randomBytes, timingSafeEqual, createHash } from 'node:crypto';
+import { PROTOCOL, canonical, validateWorld, validatePose } from './shared/world.mjs';
+export { PROTOCOL, validatePose } from './shared/world.mjs';
 
-export const PROTOCOL = 'atlas-net-1';
 const token = () => randomBytes(24).toString('base64url');
 const fail = (code) => { throw new Error(code); };
 const same = (a, b) => typeof a === 'string' && typeof b === 'string' &&
   /^[A-Za-z0-9_-]{32}$/.test(a) && a.length === b.length && timingSafeEqual(Buffer.from(a), Buffer.from(b));
-const identifier = (s) => typeof s === 'string' && /^[A-Za-z0-9_.:-]{1,80}$/.test(s);
-const number = (n, limit) => typeof n === 'number' && Number.isFinite(n) && Math.abs(n) <= limit;
-const vector = (v, length, limit) => Array.isArray(v) && v.length === length && v.every(n => number(n, limit));
-
-export function validatePose(value) {
-  if (!value || typeof value !== 'object' || Array.isArray(value)) fail('BAD_POSE');
-  if (Object.keys(value).some(k => !['p', 'q', 'engine', 'rpm', 'gear'].includes(k))) fail('BAD_POSE');
-  if (!vector(value.p, 3, 100000) || !vector(value.q, 4, 1.001)) fail('BAD_POSE');
-  const norm = Math.hypot(...value.q);
-  if (Math.abs(norm - 1) > 0.01 || typeof value.engine !== 'boolean' ||
-      !number(value.rpm, 10000) || value.rpm < 0 || ![-1, 0, 1].includes(value.gear)) fail('BAD_POSE');
-  return { p: [...value.p], q: value.q.map(n => n / norm), engine: value.engine, rpm: value.rpm, gear: value.gear };
-}
-
 /** Token bucket: bounded burst, monotonic clock injected by the caller. */
 export class Bucket {
   constructor(rate, capacity, now) { this.rate = rate; this.capacity = capacity; this.tokens = capacity; this.at = now; }
@@ -35,15 +22,18 @@ export class Bucket {
 export class RoomStore {
   constructor({ now = () => performance.now(), maxRooms = 32, maxPlayers = 8,
     graceMs = 30000, roomTtlMs = 21600000, emptyTtlMs = 60000,
-    worldId = 'practice-bay', worldRevision = 'sealab11' } = {}) {
-    if (!identifier(worldId) || !identifier(worldRevision)) fail('BAD_WORLD_CONFIG');
-    Object.assign(this, { now, maxRooms, maxPlayers, graceMs, roomTtlMs, emptyTtlMs, worldId, worldRevision });
+    world, allowFixture = false } = {}) {
+    this.world = validateWorld(world, {allowFixture});
+    this.worldHash = createHash('sha256').update(canonical(this.world)).digest('hex');
+    this.worldId = this.world.worldId; this.worldRevision = this.world.worldRevision;
+    Object.assign(this, { now, maxRooms, maxPlayers: Math.min(maxPlayers, this.world.capacity), graceMs, roomTtlMs, emptyTtlMs });
     this.rooms = new Map();
     this.sessions = new Map();
   }
   checkHello(hello) {
     if (!hello || hello.protocol !== PROTOCOL) fail('VERSION_MISMATCH');
-    if (hello.worldId !== this.worldId || hello.worldRevision !== this.worldRevision) fail('WORLD_MISMATCH');
+    if (hello.worldId !== this.worldId || hello.worldRevision !== this.worldRevision || hello.worldHash !== this.worldHash) fail('WORLD_MISMATCH');
+    if (!Object.hasOwn(this.world.vessels, hello.vesselId || '')) fail('VESSEL_MISMATCH');
     if (typeof hello.name !== 'string' || !hello.name.trim() || [...hello.name].length > 24 ||
         /[\x00-\x1f\x7f<>]/.test(hello.name)) fail('BAD_NAME');
     return hello.name.normalize('NFC').trim();
@@ -66,15 +56,20 @@ export class RoomStore {
       if (hello.action === 'resume') {
         player = room.players.get(hello.playerId);
         if (!player || !same(hello.resumeToken, player.resumeToken)) fail('SESSION_EXPIRED');
+        if (hello.vesselId !== player.vesselId) fail('VESSEL_MISMATCH');
         if (player.connectionId !== null) fail('SESSION_ACTIVE');
         if (this.now() - player.disconnectedAt > this.graceMs) fail('SESSION_EXPIRED');
       }
     } else fail('BAD_ACTION');
     if (!player) {
       if (room.players.size >= this.maxPlayers) fail('ROOM_FULL');
-      player = { id: token(), name, resumeToken: token(), connectionId: null,
-        disconnectedAt: null, sequence: -1, pose: null, updatedAt: null,
+      const occupied = new Set([...room.players.values()].map(p => p.slot));
+      const slot = Array.from({length: this.maxPlayers}, (_,i) => i).find(i => !occupied.has(i));
+      const spawn = this.world.vessels[hello.vesselId].spawns[slot];
+      player = { id: token(), name, vesselId: hello.vesselId, slot, spawn, resumeToken: token(), connectionId: null,
+        disconnectedAt: null, sequence: -1, pose: validatePose({p:spawn.p,q:spawn.q,engine:false,rpm:0,gear:0}), updatedAt: this.now(),
         bucket: new Bucket(25, 40, this.now()) };
+      player.entityId = 'boat:' + player.id;
       room.players.set(player.id, player);
     }
     player.connectionId = connectionId;
@@ -84,7 +79,9 @@ export class RoomStore {
     this.sessions.set(connectionId, { roomId: room.id, playerId: player.id });
     return { type: 'welcome', protocol: PROTOCOL, roomId: room.id, key: room.key,
       playerId: player.id, resumeToken: player.resumeToken, nextSequence: player.sequence + 1,
-      worldId: this.worldId, worldRevision: this.worldRevision, seed: room.seed,
+      worldId: this.worldId, worldRevision: this.worldRevision, worldHash: this.worldHash, seed: room.seed,
+      vesselId: player.vesselId, entityId: player.entityId, slot: player.slot, spawn: structuredClone(player.spawn),
+      resumed: hello.action === 'resume',
       roomCreatedAt: room.createdAt, serverTime: this.now(), selfPose: player.pose ? structuredClone(player.pose) : null,
       maxPlayers: this.maxPlayers, graceMs: this.graceMs, physicsAuthority: 'client-owned' };
   }
@@ -139,6 +136,7 @@ export class RoomStore {
     if (!room) return null;
     return { type: 'snapshot', protocol: PROTOCOL, roomId, serverTime: this.now(), hostId: room.hostId,
       players: [...room.players.values()].map(p => ({ id: p.id, name: p.name,
+        entityId: p.entityId, vesselId: p.vesselId, slot: p.slot,
         connected: p.connectionId !== null, seq: p.sequence, updatedAt: p.updatedAt,
         pose: p.pose ? structuredClone(p.pose) : null })) };
   }

@@ -11,7 +11,9 @@
     "test": "node --test tests/*.test.mjs",
     "test:unit": "node --test tests/rooms.test.mjs",
     "test:transport": "node --test tests/transport.test.mjs",
-    "test:release": "node scripts/verify-dependency.mjs && npm test"
+    "test:release": "node scripts/verify-dependency.mjs && npm test",
+    "test:client": "node --test tests/client-contract.test.mjs tests/client-socket.test.mjs",
+    "test:browser": "python tests/browser-evidence.py"
   },
   "dependencies": {
     "ws": "8.22.0"

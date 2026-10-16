@@ -1,7 +1,8 @@
 {
   "status": "DIAGNOSTIC_PASS_RELEASE_BLOCKED",
-  "latest_report": "evidence/m1/report.json",
-  "public_multiplayer_deployment": "NOT_DEPLOYED",
-  "pinned_dependency_and_lockfile": "BLOCKED",
-  "browser_integration": "NEXT_ITERATION"
+  "latest_report": "evidence/m2/report.json",
+  "live_multiplayer": false,
+  "pinned_dependency": "BLOCKED",
+  "browser_motion": "BLOCKED_BROWSER_POLICY",
+  "integrated_regression": "NOT_RUN"
 }

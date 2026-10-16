@@ -2,6 +2,7 @@
 import http from 'node:http';
 import { randomUUID } from 'node:crypto';
 import { pathToFileURL } from 'node:url';
+import { readFileSync } from 'node:fs';
 import { WebSocketServer, WebSocket } from 'ws';
 import { Bucket, PROTOCOL, RoomStore } from './rooms.mjs';
 
@@ -74,7 +75,7 @@ export function createMultiplayerServer({ origins, maxConnections = 128, roomOpt
         } else throw new Error('BAD_MESSAGE');
       } catch (error) {
         // Do not expose exception details, messages, tokens, or stack traces to peers.
-        const known = new Set(['VERSION_MISMATCH','WORLD_MISMATCH','BAD_NAME','ALREADY_JOINED','SERVER_FULL',
+        const known = new Set(['VERSION_MISMATCH','WORLD_MISMATCH','VESSEL_MISMATCH','BAD_NAME','ALREADY_JOINED','SERVER_FULL',
           'ROOM_UNAVAILABLE','SESSION_EXPIRED','SESSION_ACTIVE','BAD_ACTION','ROOM_FULL','NOT_JOINED',
           'RATE_LIMIT','BAD_STATE','BAD_POSE','TEXT_ONLY','BAD_MESSAGE']);
         const code = known.has(error.message) ? error.message : 'BAD_MESSAGE';
@@ -107,9 +108,9 @@ export function createMultiplayerServer({ origins, maxConnections = 128, roomOpt
 
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
   const origins = (process.env.ALLOWED_ORIGINS || '').split(',').map(v => v.trim()).filter(Boolean);
-  const { server, stop } = createMultiplayerServer({ origins, roomOptions: {
-    worldId: process.env.WORLD_ID || 'practice-bay', worldRevision: process.env.WORLD_REVISION || 'sealab11'
-  } });
+  if (!process.env.ATLAS_WORLD_CONFIG) throw new Error('ATLAS_WORLD_CONFIG is required; no legacy world fallback');
+  const world = JSON.parse(readFileSync(process.env.ATLAS_WORLD_CONFIG, 'utf8'));
+  const { server, stop } = createMultiplayerServer({ origins, roomOptions: { world } });
   server.listen(Number(process.env.PORT || 8080), '0.0.0.0', () => console.log('Atlas multiplayer listening'));
   for (const signal of ['SIGINT', 'SIGTERM']) process.once(signal, () => {
     stop().then(() => process.exit(0), () => process.exit(1));

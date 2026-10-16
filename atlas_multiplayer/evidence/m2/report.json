@@ -1,0 +1,44 @@
+{
+  "iteration": "M2",
+  "source_parent_sha": "c6b88fc1c3bc9df9979bf1d91d7fb04bec049b17",
+  "status": "DIAGNOSTIC_PASS_RELEASE_BLOCKED",
+  "checked_at_utc": "2026-10-16T04:50:04.595021+00:00",
+  "node": "v22.16.0",
+  "tests": {
+    "room": 18,
+    "socket_transport": 12,
+    "client_contract_interpolation": 18,
+    "actual_client_module_over_tcp": 10,
+    "total_passed": 58,
+    "failed": 0
+  },
+  "transport": {
+    "mode": "explicit TEST-ONLY Playwright bundled ws",
+    "pinned_ws_8_22_0_certified": false,
+    "bundle_sha256": "6883cf83e2097e5029cce0763832338534a9e1c8e97bf62ca2f083b238613a49"
+  },
+  "browser": {
+    "status": "BLOCKED_BROWSER_POLICY",
+    "launched_processes": 2,
+    "motion_checks_passed": 0,
+    "error": "ERR_BLOCKED_BY_ADMINISTRATOR",
+    "policy_modified": false,
+    "screenshots_verified": false
+  },
+  "pinned_install_lock_audit": "BLOCKED_EAI_AGAIN_NO_LOCKFILE",
+  "railway": "NOT_INSTALLED_NO_SERVICE_CREATED",
+  "core_c1": {
+    "owner_comment": 6208194629,
+    "revision": "sealab12-core-integration/1.0.0",
+    "descriptor_blob": "30affbbcc2b04d8b8e78a07206cb9eab9c2af2f7",
+    "host_hooks_blob": "e6e5cc62579b7d94404a106413d2c73ac3639319",
+    "time_correction_accepted": "CORE resettable per-client simulation; server timestamps for networking only; no shared water phase",
+    "production_mapping": "PENDING"
+  },
+  "single_player_regression": {
+    "fixture_node": "PASS",
+    "actual_sealab12": "NOT_RUN"
+  },
+  "live_multiplayer": false,
+  "next": "Receive final C1 SHA; implement/test read-only mapping, epoch/world invalidation and local-only restore boundary. Exact pinned dependency and actual browser gates need existing permitted runner."
+}
