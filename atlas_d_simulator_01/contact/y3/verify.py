@@ -21,7 +21,7 @@ with sync_playwright() as pw:
  page=context.new_page();page.on('pageerror',lambda e:report['errors'].append(str(e)))
  page.on('console',lambda m:report['shaderErrors'].append(m.text) if m.type=='error' and any(s in m.text.lower() for s in ['shader error','validate_status','program info log']) else None)
  try:
-  page.goto(URL,wait_until='domcontentloaded',timeout=90000);page.wait_for_function('Y3.ready || Y3.error',timeout=180000);assert not page.evaluate('Y3.error')
+  page.goto(URL,wait_until='domcontentloaded',timeout=90000);page.wait_for_function('window.Y3?.ready || window.Y3?.error',timeout=180000);assert not page.evaluate('Y3.error')
   h=page.frame_locator('#host');f=page.frames[1];f.evaluate('BAYPLAY.setPaused(true)')
   bay=f.evaluate('({x:BAYPLAY.state.x,z:BAYPLAY.state.z,t:BAYPLAY.state.elapsed,location:BAYPLAY.state.location})')
   h.locator('#ad-board').click();page.wait_for_function('Y3.latest?.physical.available',timeout=60000)
