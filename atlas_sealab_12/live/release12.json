@@ -1,0 +1,12 @@
+{
+  "release": 12,
+  "base": "Sea Lab 11",
+  "eightDispersiveWaves": true,
+  "referenceWaveDepthM": 8,
+  "captain": true,
+  "mapPauses": false,
+  "beaufortData": "OSM footprints / NOAA shoreline",
+  "photogrammetry": false,
+  "physicsValidated": false,
+  "spotify": "external only"
+}

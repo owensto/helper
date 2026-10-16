@@ -1,0 +1,650 @@
+{
+  "release": 12,
+  "passed": true,
+  "review_run": 38849136102,
+  "review_commit": "5c62a713b014b97a47bb65b65ec05f382a23ac77",
+  "physicalDeviceTested": false,
+  "tests": [
+    {
+      "device": "desktop",
+      "passed": true,
+      "errors": [],
+      "shaderErrors": [],
+      "assetErrors": [],
+      "initial": {
+        "version": 11,
+        "options": {
+          "largeText": false,
+          "steadyCamera": false,
+          "feet": true,
+          "docking": false,
+          "shallowAssist": false,
+          "spokenAlerts": false,
+          "hotspots": true,
+          "autoPause": true
+        },
+        "lookOffset": 0,
+        "steeringHeld": false,
+        "interactionsUsed": [],
+        "hotspotCount": 4,
+        "environment": {
+          "ready": true,
+          "waveComponents": 8,
+          "trees": 90,
+          "grass": 11052,
+          "rocks": 210,
+          "shaderCompiled": true,
+          "terrainMatchesWorld": true,
+          "photogrammetry": false,
+          "overlappingBottomSuppressed": true,
+          "sceneryLocation": "Authored practice bay",
+          "waypointVisible": false
+        },
+        "multiplayer": false
+      },
+      "initialLayout": [
+        {
+          "id": "helm09-key",
+          "x": 174,
+          "y": 775.796875,
+          "width": 164,
+          "height": 63.390625,
+          "hit": true
+        },
+        {
+          "id": "s11-less",
+          "x": 615,
+          "y": 791,
+          "width": 48,
+          "height": 48,
+          "hit": true
+        },
+        {
+          "id": "s11-more",
+          "x": 884.5,
+          "y": 791,
+          "width": 48,
+          "height": 48,
+          "hit": true
+        },
+        {
+          "id": "s11-left",
+          "x": 948.5,
+          "y": 793,
+          "width": 101.828125,
+          "height": 48,
+          "hit": true
+        },
+        {
+          "id": "s11-right",
+          "x": 1164.15625,
+          "y": 793,
+          "width": 101.828125,
+          "height": 48,
+          "hit": true
+        },
+        {
+          "id": "helm09-map",
+          "x": 862.984375,
+          "y": 23,
+          "width": 78.71875,
+          "height": 48,
+          "hit": true
+        },
+        {
+          "id": "helm10-weather",
+          "x": 1124.9375,
+          "y": 23,
+          "width": 92.953125,
+          "height": 48,
+          "hit": true
+        },
+        {
+          "id": "helm09-settings",
+          "x": 1223.890625,
+          "y": 23,
+          "width": 65.953125,
+          "height": 48,
+          "hit": true
+        },
+        {
+          "id": "helm09-pause",
+          "x": 1307.84375,
+          "y": 23,
+          "width": 101.140625,
+          "height": 48,
+          "hit": true
+        }
+      ],
+      "dockLimit": 0.22,
+      "pausedFittingWithoutPhysicsAdvance": true,
+      "waves": {
+        "height": 0.36682574679178764,
+        "amplitude": 0.4384059521621427,
+        "environment": {
+          "ready": true,
+          "waveComponents": 8,
+          "trees": 90,
+          "grass": 11052,
+          "rocks": 210,
+          "shaderCompiled": true,
+          "terrainMatchesWorld": true,
+          "photogrammetry": false,
+          "overlappingBottomSuppressed": true,
+          "sceneryLocation": "Authored practice bay",
+          "waypointVisible": true
+        }
+      },
+      "drivingAudio": {
+        "version": "09",
+        "enabled": true,
+        "contextState": "running",
+        "sampleStatus": "Three recorded layers ready",
+        "held": false,
+        "settings": {
+          "master": 0.6,
+          "engine": 0.85,
+          "water": 0.55,
+          "wind": 0.35,
+          "effects": 0.6
+        },
+        "metrics": {
+          "rms": 0.03791884390457522,
+          "engineLoads": [
+            {
+              "rpm": 2861,
+              "load": 0.5,
+              "gain": 0.6006060332309918,
+              "recorded": true
+            },
+            {
+              "rpm": 2861,
+              "load": 0.5,
+              "gain": 0,
+              "recorded": true
+            }
+          ],
+          "activeEngines": 1
+        },
+        "specificEngineRecording": false,
+        "recordedBowWater": true,
+        "realism09": {
+          "version": 9,
+          "layers": 3,
+          "lastContact": 0,
+          "events": [
+            {
+              "kind": "key",
+              "t": 0.19156462585034015
+            },
+            {
+              "kind": "shift",
+              "t": 14.050975056689342
+            }
+          ],
+          "recordedDominant": true,
+          "acousticallyValidated": false
+        }
+      },
+      "autoPauseResume": true,
+      "sceneryReview": {
+        "ready": true,
+        "waveComponents": 8,
+        "trees": 90,
+        "grass": 11052,
+        "rocks": 210,
+        "shaderCompiled": true,
+        "terrainMatchesWorld": true,
+        "photogrammetry": false,
+        "overlappingBottomSuppressed": true,
+        "sceneryLocation": "Authored practice bay",
+        "waypointVisible": true
+      },
+      "captain": {
+        "name": "SEA12_CAPTAIN",
+        "visible": true,
+        "meshes": 29
+      },
+      "liveMapDoesNotPause": true,
+      "bridgeScreenPoint": {
+        "x": 628.5264900443436,
+        "y": 284.23759760241705,
+        "z": 0.9995657791200107
+      },
+      "geo": {
+        "ready": true,
+        "bridges": 23,
+        "buildings": 514,
+        "roads": 79,
+        "photogrammetry": false,
+        "heightSurveyed": false,
+        "source": "OpenStreetMap contributors",
+        "retrieved": "2026-10-16T03:39:21Z",
+        "geoMapOpen": false,
+        "mapInitialized": false,
+        "visible": true,
+        "features": 616
+      },
+      "water12": {
+        "ready": true,
+        "wakeCapacity": 12,
+        "reflectionFrames": 6,
+        "reflectionResolution": [
+          512,
+          256
+        ],
+        "fluidSolver": false,
+        "components": 8,
+        "referenceDepth": 8,
+        "wakePackets": 12,
+        "emissions": 15,
+        "capacity": 12,
+        "shaderCompiled": true,
+        "reflectionActive": false
+      },
+      "reflection": {
+        "ready": true,
+        "wakeCapacity": 12,
+        "reflectionFrames": 7,
+        "reflectionResolution": [
+          512,
+          256
+        ],
+        "fluidSolver": false,
+        "components": 8,
+        "referenceDepth": 8,
+        "wakePackets": 12,
+        "emissions": 15,
+        "capacity": 12,
+        "shaderCompiled": true,
+        "reflectionActive": true
+      },
+      "log": {
+        "logging": true,
+        "samples": 2
+      },
+      "youtube": {
+        "frame": true,
+        "status": "Press Play. YouTube playback is direct; local music uses spatial boat speakers.",
+        "playbackVerified": false
+      }
+    },
+    {
+      "device": "phone",
+      "passed": true,
+      "errors": [],
+      "shaderErrors": [],
+      "assetErrors": [],
+      "initial": {
+        "version": 11,
+        "options": {
+          "largeText": false,
+          "steadyCamera": false,
+          "feet": true,
+          "docking": false,
+          "shallowAssist": false,
+          "spokenAlerts": false,
+          "hotspots": true,
+          "autoPause": true
+        },
+        "lookOffset": 0,
+        "steeringHeld": false,
+        "interactionsUsed": [],
+        "hotspotCount": 4,
+        "environment": {
+          "ready": true,
+          "waveComponents": 8,
+          "trees": 90,
+          "grass": 11052,
+          "rocks": 210,
+          "shaderCompiled": true,
+          "terrainMatchesWorld": true,
+          "photogrammetry": false,
+          "overlappingBottomSuppressed": true,
+          "sceneryLocation": "Authored practice bay",
+          "waypointVisible": false
+        },
+        "multiplayer": false
+      },
+      "initialLayout": [
+        {
+          "id": "helm09-key",
+          "x": 20,
+          "y": 590.234375,
+          "width": 161.5,
+          "height": 54.984375,
+          "hit": true
+        },
+        {
+          "id": "s11-less",
+          "x": 20,
+          "y": 670.21875,
+          "width": 44,
+          "height": 48,
+          "hit": true
+        },
+        {
+          "id": "s11-more",
+          "x": 366,
+          "y": 670.21875,
+          "width": 44,
+          "height": 48,
+          "hit": true
+        },
+        {
+          "id": "s11-left",
+          "x": 20,
+          "y": 747.21875,
+          "width": 128,
+          "height": 48,
+          "hit": true
+        },
+        {
+          "id": "s11-right",
+          "x": 282,
+          "y": 747.21875,
+          "width": 128,
+          "height": 48,
+          "hit": true
+        },
+        {
+          "id": "helm09-map",
+          "x": 8,
+          "y": 874,
+          "width": 80.40625,
+          "height": 50,
+          "hit": true
+        },
+        {
+          "id": "helm10-weather",
+          "x": 258.21875,
+          "y": 874,
+          "width": 80.40625,
+          "height": 50,
+          "hit": true
+        },
+        {
+          "id": "helm09-settings",
+          "x": 341.625,
+          "y": 874,
+          "width": 80.40625,
+          "height": 50,
+          "hit": true
+        },
+        {
+          "id": "helm09-pause",
+          "x": 307.859375,
+          "y": 17,
+          "width": 101.140625,
+          "height": 48,
+          "hit": true
+        }
+      ],
+      "dockLimit": 0.22,
+      "pausedFittingWithoutPhysicsAdvance": true,
+      "waves": {
+        "height": 0.36682574679178764,
+        "amplitude": 0.4384059521621427,
+        "environment": {
+          "ready": true,
+          "waveComponents": 8,
+          "trees": 90,
+          "grass": 11052,
+          "rocks": 210,
+          "shaderCompiled": true,
+          "terrainMatchesWorld": true,
+          "photogrammetry": false,
+          "overlappingBottomSuppressed": true,
+          "sceneryLocation": "Authored practice bay",
+          "waypointVisible": true
+        }
+      },
+      "captain": {
+        "name": "SEA12_CAPTAIN",
+        "visible": true,
+        "meshes": 29
+      },
+      "liveMapDoesNotPause": true
+    },
+    {
+      "device": "small-phone",
+      "passed": true,
+      "errors": [],
+      "shaderErrors": [],
+      "assetErrors": [],
+      "initial": {
+        "version": 11,
+        "options": {
+          "largeText": false,
+          "steadyCamera": false,
+          "feet": true,
+          "docking": false,
+          "shallowAssist": false,
+          "spokenAlerts": false,
+          "hotspots": true,
+          "autoPause": true
+        },
+        "lookOffset": 0,
+        "steeringHeld": false,
+        "interactionsUsed": [],
+        "hotspotCount": 4,
+        "environment": {
+          "ready": true,
+          "waveComponents": 8,
+          "trees": 90,
+          "grass": 11052,
+          "rocks": 210,
+          "shaderCompiled": true,
+          "terrainMatchesWorld": true,
+          "photogrammetry": false,
+          "overlappingBottomSuppressed": true,
+          "sceneryLocation": "Authored practice bay",
+          "waypointVisible": false
+        },
+        "multiplayer": false
+      },
+      "initialLayout": [
+        {
+          "id": "helm09-key",
+          "x": 20,
+          "y": 470.234375,
+          "width": 101.046875,
+          "height": 54.984375,
+          "hit": true
+        },
+        {
+          "id": "s11-less",
+          "x": 20,
+          "y": 550.21875,
+          "width": 44,
+          "height": 48,
+          "hit": true
+        },
+        {
+          "id": "s11-more",
+          "x": 293.15625,
+          "y": 550.21875,
+          "width": 44,
+          "height": 48,
+          "hit": true
+        },
+        {
+          "id": "s11-left",
+          "x": 20,
+          "y": 627.21875,
+          "width": 103.71875,
+          "height": 48,
+          "hit": true
+        },
+        {
+          "id": "s11-right",
+          "x": 233.4375,
+          "y": 627.21875,
+          "width": 103.71875,
+          "height": 48,
+          "hit": true
+        },
+        {
+          "id": "helm09-map",
+          "x": 8,
+          "y": 754,
+          "width": 69.40625,
+          "height": 50,
+          "hit": true
+        },
+        {
+          "id": "helm10-weather",
+          "x": 225.21875,
+          "y": 754,
+          "width": 69.40625,
+          "height": 50,
+          "hit": true
+        },
+        {
+          "id": "helm09-settings",
+          "x": 297.625,
+          "y": 754,
+          "width": 69.40625,
+          "height": 50,
+          "hit": true
+        },
+        {
+          "id": "helm09-pause",
+          "x": 252.859375,
+          "y": 17,
+          "width": 101.140625,
+          "height": 48,
+          "hit": true
+        }
+      ],
+      "dockLimit": 0.22,
+      "pausedFittingWithoutPhysicsAdvance": true,
+      "captain": {
+        "name": "SEA12_CAPTAIN",
+        "visible": true,
+        "meshes": 29
+      },
+      "liveMapDoesNotPause": true
+    },
+    {
+      "device": "landscape",
+      "passed": true,
+      "errors": [],
+      "shaderErrors": [],
+      "assetErrors": [],
+      "initial": {
+        "version": 11,
+        "options": {
+          "largeText": false,
+          "steadyCamera": false,
+          "feet": true,
+          "docking": false,
+          "shallowAssist": false,
+          "spokenAlerts": false,
+          "hotspots": true,
+          "autoPause": true
+        },
+        "lookOffset": 0,
+        "steeringHeld": false,
+        "interactionsUsed": [],
+        "hotspotCount": 4,
+        "environment": {
+          "ready": true,
+          "waveComponents": 8,
+          "trees": 90,
+          "grass": 11052,
+          "rocks": 210,
+          "shaderCompiled": true,
+          "terrainMatchesWorld": true,
+          "photogrammetry": false,
+          "overlappingBottomSuppressed": true,
+          "sceneryLocation": "Authored practice bay",
+          "waypointVisible": false
+        },
+        "multiplayer": false
+      },
+      "initialLayout": [
+        {
+          "id": "helm09-key",
+          "x": 546,
+          "y": 80,
+          "width": 280,
+          "height": 48,
+          "hit": true
+        },
+        {
+          "id": "s11-less",
+          "x": 546,
+          "y": 198,
+          "width": 44,
+          "height": 48,
+          "hit": true
+        },
+        {
+          "id": "s11-more",
+          "x": 782,
+          "y": 198,
+          "width": 44,
+          "height": 48,
+          "hit": true
+        },
+        {
+          "id": "s11-left",
+          "x": 546,
+          "y": 270,
+          "width": 91.328125,
+          "height": 44,
+          "hit": true
+        },
+        {
+          "id": "s11-right",
+          "x": 734.65625,
+          "y": 270,
+          "width": 91.328125,
+          "height": 44,
+          "hit": true
+        },
+        {
+          "id": "helm09-map",
+          "x": 12,
+          "y": 334,
+          "width": 99.203125,
+          "height": 44,
+          "hit": true
+        },
+        {
+          "id": "helm10-weather",
+          "x": 318.609375,
+          "y": 334,
+          "width": 99.203125,
+          "height": 44,
+          "hit": true
+        },
+        {
+          "id": "helm09-settings",
+          "x": 420.8125,
+          "y": 334,
+          "width": 99.203125,
+          "height": 44,
+          "hit": true
+        },
+        {
+          "id": "helm09-pause",
+          "x": 723.859375,
+          "y": 11,
+          "width": 101.140625,
+          "height": 48,
+          "hit": true
+        }
+      ],
+      "dockLimit": 0.22,
+      "pausedFittingWithoutPhysicsAdvance": true,
+      "captain": {
+        "name": "SEA12_CAPTAIN",
+        "visible": true,
+        "meshes": 29
+      },
+      "liveMapDoesNotPause": true
+    }
+  ]
+}

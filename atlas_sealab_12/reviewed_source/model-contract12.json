@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "units": "metres",
+  "axes": {"forward": "+X", "up": "+Y", "starboard": "+Z"},
+  "requiredWorkingNodes": ["Vessel", "PLAY_STEERING", "PLAY_THROTTLE", "MOV_Outboard_steer", "MOV_Outboard_trim", "MOV_Bay_prop", "PLAY_FISHBOX", "PLAY_RODLOCKER", "MOV_Livewell", "PLAY_DRAWER_1", "PLAY_DRAWER_2", "PLAY_DRAWER_3", "PLAY_BOLSTER_1", "PLAY_BOLSTER_2"],
+  "physicalInputs": ["dryKg", "loadKg", "engineKg", "count", "hp", "fuelGal", "tide"],
+  "separateAssets": ["render hull", "collision hull", "dry cockpit mask", "buoyancy sample locations", "camera and captain anchors"],
+  "gates": ["GLB loads", "no missing material or transparency holes", "all hinges and controls animate", "engine and radio audible after gesture", "motion/audio pause coherent", "waterline and depth coherent", "WOT from rest and speed benchmark", "bank strike and reverse back-off", "mobile controls not overlapped", "no JavaScript/shader/asset errors"],
+  "arbitraryImporterImplemented": false,
+  "physicsCalibratedForNewModels": false
+}

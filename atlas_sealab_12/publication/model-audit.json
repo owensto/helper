@@ -1,0 +1,32 @@
+{
+  "file": "ATLAS_Bay_Play.glb",
+  "sha256": "b1ef9c448309a9a5d85ec4f2efcf45d9406d999ab24d27bdd1534359a7278b82",
+  "structure_passed": true,
+  "issues": [],
+  "warnings": [],
+  "nodeCount": 223,
+  "meshCount": 168,
+  "verticesReferenced": 263463,
+  "triangleEstimate": 449218,
+  "finitePositionValuesChecked": 263463,
+  "requiredPivots": [
+    "Vessel",
+    "PLAY_STEERING",
+    "PLAY_THROTTLE",
+    "MOV_Outboard_steer",
+    "MOV_Outboard_trim",
+    "MOV_Bay_prop",
+    "PLAY_FISHBOX",
+    "PLAY_RODLOCKER",
+    "MOV_Livewell",
+    "PLAY_DRAWER_1",
+    "PLAY_DRAWER_2",
+    "PLAY_DRAWER_3",
+    "PLAY_BOLSTER_1",
+    "PLAY_BOLSTER_2"
+  ],
+  "requiresRenderedReview": true,
+  "watertightnessValidated": false,
+  "physicsValidated": false,
+  "arbitraryImporterImplemented": false
+}
