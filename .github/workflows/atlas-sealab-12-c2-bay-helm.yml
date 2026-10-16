@@ -41,6 +41,7 @@ jobs:
           PYGATE
           python atlas_sealab_12/integration/c2-bay-helm/prepare.py
           for f in "$C2_OUT/site/"*.js; do node --check "$f"; done
+          node atlas_sealab_12/integration/c2-bay-helm/evidence/skin-matrix-probe.cjs > "$C2_OUT/skin-matrix-probe.json"
           node atlas_sealab_12/integration/c2-bay-helm/test-receiver.cjs > "$C2_OUT/unit.stdout"
           if C2_REQUIRE_HUMAN=1 python atlas_sealab_12/integration/c2-bay-helm/prepare.py >"$C2_OUT/positive-gate.log" 2>&1; then
             echo 'Ungated human activation was accepted'; exit 1
@@ -81,6 +82,7 @@ jobs:
         run: |
           mkdir -p "$C2_OUT/source"
           cp atlas_sealab_12/integration/c2-bay-helm/*.* "$C2_OUT/source/"
+          cp atlas_sealab_12/integration/c2-bay-helm/evidence/skin-matrix-probe.cjs "$C2_OUT/source/"
           cp .github/workflows/atlas-sealab-12-c2-bay-helm.yml "$C2_OUT/source/"
           printf '%s\n' "$GITHUB_SHA" > "$C2_OUT/source-sha.txt"
           python - <<'PYHASH'
