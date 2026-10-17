@@ -1,48 +1,44 @@
 {
-  "status": "PUBLIC_LAUNCHER_AND_LINKED_SOLO_DEMO_SMOKE_PASSED",
-  "launcherCommit": "458ef79ac512a70468a4c134ddf0596449a3ccf1",
-  "launcherURL": "https://rawcdn.githack.com/owensto/helper/458ef79ac512a70468a4c134ddf0596449a3ccf1/atlas_launch/index.html",
-  "launcherSHA256": "ab669b793333305a41a5e228bfefa1095f54a0d2557f1c1b14a1bc31656f17d0",
-  "testSourceCommit": "a9b6b3bb8bb35b2a746d9f0e66490c30a3d715ec",
-  "testRun": 39003307245,
-  "artifactId": 12089463060,
-  "artifactSHA256": "38fce0dbe4580bff4c9f90ef3fde568756f9f9caaac9cf434b417432293fa3fb",
-  "artifactBytes": 1627967,
-  "artifactPayloadHashesVerified": 10,
-  "publicLauncherLayouts": {
+  "status": "PUBLIC_DIRECT_YACHT_ENTRY_PASSED",
+  "launcherCommit": "f0fa3d5543e497d31df9feaaaf4335bf89641137",
+  "launcherURL": "https://rawcdn.githack.com/owensto/helper/f0fa3d5543e497d31df9feaaaf4335bf89641137/atlas_launch/index.html",
+  "yachtURL": "https://rawcdn.githack.com/owensto/helper/f0fa3d5543e497d31df9feaaaf4335bf89641137/atlas_launch/yacht.html",
+  "launcherSHA256": "e500eaff47f9dc698f14f13a4f0f2c1305aac41ff6933b574bb65c7538525aed",
+  "yachtEntrySHA256": "d3daa16e2548951cd24d46de782cab8e71ab7c01f8841968f7bd497e2f3820f3",
+  "testSourceCommit": "a9e7996feeb91fa0445329ffd8bc5a2fcb35fe76",
+  "testRun": 39004481986,
+  "artifactId": 12090331929,
+  "artifactSHA256": "35ed30808dff282056ecef60642bd9b86596341639afbfe165c7c2e280986328",
+  "artifactBytes": 1894195,
+  "artifactPayloadHashesVerified": 12,
+  "baselineBayFirstIndependentlyReproduced": true,
+  "layouts": {
     "desktop1440x960": "PASS",
-    "phone390x844": "PASS",
-    "smallPhone375x812": "PASS",
+    "portrait390x844": "PASS",
     "landscape844x390": "PASS"
   },
-  "linkedDemos": {
-    "bay": {
-      "publishedCommit": "491fbb0133fde085c03e4ee93db34f4e630a3c42",
-      "url": "https://rawcdn.githack.com/owensto/helper/491fbb0133fde085c03e4ee93db34f4e630a3c42/atlas_sealab_13/live/index.html",
-      "thisRunDesktopNativeLoadingPowerMotionPauseResume": "PASS",
-      "experimentalHuman": false,
-      "multiplayer": false,
-      "ownerBroaderPublicRun": 38913888862
-    },
-    "yacht": {
-      "publishedCommit": "006644dae913c9bc6f874cdaaaba31986dbc519b",
-      "url": "https://rawcdn.githack.com/owensto/helper/006644dae913c9bc6f874cdaaaba31986dbc519b/atlas_d_simulator_01/contact/y11/preview.html",
-      "thisRunDesktopNativeBoardingPowerMotionPauseResume": "PASS",
-      "physicsModel": "atlas-d-y11-3dof-1",
-      "advancedHumanAttachment": null,
-      "ownerBroaderPublicRun": 38909804899
-    }
-  },
+  "checksPerLayout": [
+    "Actual served launcher and yacht-entry bytes match committed files",
+    "First revealed view is active R7 yacht, Overview, Y11 controller, engine off",
+    "Zero extra Board actions",
+    "Native propulsion, Forward, Power and ordinary-time movement",
+    "Native Pause/Resume and Choose vessel returns to launcher"
+  ],
+  "inheritedYachtCommit": "006644dae913c9bc6f874cdaaaba31986dbc519b",
+  "bayURLUnchanged": "https://rawcdn.githack.com/owensto/helper/491fbb0133fde085c03e4ee93db34f4e630a3c42/atlas_sealab_13/live/index.html",
   "pageErrors": 0,
   "responseSubstitution": false,
   "acceleratedSimulationSteps": false,
-  "normalHostingNoticeHandled": true,
+  "engineStartedByEntry": false,
+  "yachtModelOrPhysicsChanged": false,
+  "realismRebuildDelivered": false,
   "browser": "Headless Chromium 140.0.7339.16 / SwiftShader",
   "limitations": [
-    "Single launch page linking separate solo demos, not a merged shared game",
-    "Only launcher layouts were rechecked at phone sizes in this run; linked-demo operation was desktop",
+    "Repairs yacht selection and initial presentation only; existing prototype geometry, rendering and dynamics retained",
+    "Native render-stall safety remains and may require visible Resume; screenshots themselves can be expensive on the software runner",
+    "Loading failure UI is implemented, but fault injection was not browser-tested in this run",
+    "No physical-device, Safari, FPS, optical-latency, full dive-cycle or engineering certification",
     "Advanced human contact, Station03 and multiplayer remain disabled",
-    "No physical-phone, Safari, FPS, optical-latency, engineering or full-regression certification",
-    "Existing Netlify project and owner implementation files were not changed"
+    "No Netlify replacement or owner implementation changes"
   ]
 }
