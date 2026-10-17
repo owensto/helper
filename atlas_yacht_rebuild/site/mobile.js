@@ -17,7 +17,7 @@ function bindHold(button,channel,value){
 }
 function mount(B){
  const $=id=>document.getElementById(id),media=matchMedia('(max-width:680px), (max-height:600px) and (pointer:coarse)'),nav=document.querySelector('.camera-nav');let active=null,lastTrigger=null;
- function close(returnFocus=true){document.querySelectorAll('.panel').forEach(p=>p.hidden=true);nav.classList.remove('mobile-open');document.body.classList.remove('sheet-open');active=null;for(const id of ['views-toggle','settings-toggle','chart-toggle','docking-toggle','m-docking'])$(id)?.setAttribute('aria-expanded','false');if(returnFocus)lastTrigger?.focus({preventScroll:true});}
+ function close(returnFocus=true){B.clearInputs();document.querySelectorAll('.panel').forEach(p=>p.hidden=true);nav.classList.remove('mobile-open');document.body.classList.remove('sheet-open');active=null;for(const id of ['views-toggle','settings-toggle','chart-toggle','docking-toggle','m-docking'])$(id)?.setAttribute('aria-expanded','false');if(returnFocus)lastTrigger?.focus({preventScroll:true});}
  function open(id,trigger){if(active===id){close();return;}close(false);B.clearInputs();active=id;lastTrigger=trigger;document.body.classList.add('sheet-open');if(id==='views')nav.classList.add('mobile-open');else $(id).hidden=false;trigger?.setAttribute('aria-expanded','true');(id==='views'?nav:$(id)).querySelector('button')?.focus({preventScroll:true});}
  $('views-toggle').onclick=()=>open('views',$('views-toggle'));$('views-close').onclick=()=>close();
  for(const [trigger,id]of [['settings-toggle','settings'],['chart-toggle','chart'],['docking-toggle','docking'],['m-docking','docking']])$(trigger).onclick=()=>open(id,$(trigger));

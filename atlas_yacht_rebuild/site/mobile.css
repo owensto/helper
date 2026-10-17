@@ -26,3 +26,12 @@
  #mobile-readouts{right:calc(320px + env(safe-area-inset-right,0px));padding:4px 8px}#notice{left:14px;right:328px;bottom:15px;font-size:10px}#paused-banner{left:12px;right:328px;top:calc(106px + var(--safe-top));font-size:10px}.panel,.camera-nav.mobile-open{left:auto;right:max(8px,env(safe-area-inset-right));width:330px;bottom:8px;max-height:calc(100dvh - 74px - var(--safe-top));padding:10px 16px}.panel-top,.camera-top{top:-10px}body.helm-collapsed #mobile-readouts{right:12px}body.helm-collapsed #paused-banner{right:12px}#m-open-controls{left:auto;right:12px;transform:none;bottom:10px}body.helm-collapsed #notice{bottom:12px;right:215px}#chart-canvas{max-height:48dvh}
 }
 @media(prefers-reduced-motion:reduce){.loading-line{animation:none}}
+
+/* Recorded first-pass polish: no overflowed steering labels or duplicate pause notices. */
+@media(max-width:680px), (max-height:600px) and (pointer:coarse){
+ button.mobile-only{align-items:center;justify-content:center}
+ .steering-group #port-hold,.steering-group #starboard-hold{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px}
+ .steering-group .ends button span{font-size:21px;line-height:1}.steering-group .ends button small{font-size:10px;line-height:1.1;letter-spacing:0}
+ body.voyage-paused #notice{display:none}
+}
+@media(orientation:landscape) and (max-height:600px) and (pointer:coarse){#paused-banner{top:auto;bottom:12px}body.helm-collapsed #paused-banner{right:calc(208px + env(safe-area-inset-right,0px))}}
