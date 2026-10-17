@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en"><head><base href="https://rawcdn.githack.com/owensto/helper/006644dae913c9bc6f874cdaaaba31986dbc519b/atlas_d_simulator_01/contact/y9/"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="description" content="Open the original ATLAS D superyacht directly. Single-player concept simulation; no Bay boarding detour."><title>ATLAS D — Yacht</title><link rel="stylesheet" href="preview.css">
+<style>
+#host{visibility:hidden;pointer-events:none}body[data-yacht-ready="true"] #host{visibility:visible;pointer-events:auto}
+#entry-gate{position:fixed;inset:0;z-index:100;background:#0c2635;display:grid;place-items:center;padding:28px;overflow:auto}#entry-gate[hidden]{display:none}#entry-gate .entry-card{max-width:570px;width:100%}.entry-kicker{color:#ddc390;font-size:12px;letter-spacing:.2em}#entry-gate h1{font-size:clamp(36px,8vw,64px);line-height:1.08;margin:18px 0}#entry-gate p{font-size:16px;line-height:1.6;color:#c2d4dc}#entry-gate progress{width:100%;height:5px;accent-color:#ddc390}#entry-gate a{color:#ddc390;display:inline-block;padding:12px 0;min-height:44px}#entry-gate .entry-actions{display:flex;gap:20px;align-items:center;flex-wrap:wrap}#entry-retry[hidden],#entry-direct[hidden]{display:none}#entry-gate small{display:block;color:#91aeb8;line-height:1.6}.brand small{letter-spacing:.08em!important}
+</style></head><body>
+<section id="entry-gate" aria-label="Loading the yacht"><div class="entry-card"><div class="entry-kicker">ATLAS D / SUPERYACHT</div><h1>Preparing your yacht.</h1><p id="entry-status" role="status" aria-live="polite">Loading the original yacht and its ocean scene. The yacht will open directly; no Bay boat or extra boarding step.</p><progress aria-label="Loading yacht"></progress><div class="entry-actions"><button id="entry-retry" hidden>Retry loading</button><a id="entry-home" href="https://rawcdn.githack.com/owensto/helper/458ef79ac512a70468a4c134ddf0596449a3ccf1/atlas_launch/index.html">Choose another vessel</a><a id="entry-direct" hidden href="https://rawcdn.githack.com/owensto/helper/006644dae913c9bc6f874cdaaaba31986dbc519b/atlas_d_simulator_01/contact/y11/host/index.html?vessel=yacht">Open the yacht directly ↗</a></div><small>Existing Y11 concept model and force-based controller. This entry repair is not a yacht redesign or a real-vessel certification.</small></div></section>
+<header id="toolbar"><div class="brand">ATLAS D<small>YACHT · SINGLE PLAYER</small></div><button id="station-view" aria-pressed="false">Station</button><button id="overview" aria-pressed="true">Overview</button><button id="info" aria-expanded="false" aria-controls="review">Details</button></header>
+<iframe id="host" src="https://rawcdn.githack.com/owensto/helper/006644dae913c9bc6f874cdaaaba31986dbc519b/atlas_d_simulator_01/contact/y11/host/index.html?vessel=yacht" title="ATLAS D superyacht simulation"></iframe>
+<aside id="review" hidden><button id="close-info">Close details</button><h1>ATLAS D yacht</h1><p>The yacht opens directly in Overview. Start propulsion, select Forward and add Power. Use the native Pause / Resume control.</p><p><a href="../y11/report.html" target="_blank" rel="noopener">Physics measurements and assumptions ↗</a></p><div id="status" role="status">Loading original source…</div><pre id="contacts"></pre><p>This is the existing Y11 concept build, with its original model and force-based controller. The yacht's larger realism rebuild has not been delivered by this entry repair.</p><p>Station is an isolated articulated-deck inspection view, not an accepted crew station. Diving remains a speculative concept mode, not validated ballast or pressure-hull physics. No advanced human rig or multiplayer is enabled.</p></aside>
+<script>
+(()=>{'use strict';
+ const gate=document.getElementById('entry-gate'),status=document.getElementById('entry-status'),iframe=document.getElementById('host'),home=new URL('index.html',location.href).href;
+ const record=window.ATLAS_YACHT_ENTRY={revision:'direct-yacht-entry/1',ready:false,revealed:false,error:null,nativeAutoEnter:true,engineStartedByEntry:false,ownerPhysicsChanged:false,checks:0};
+ document.getElementById('entry-home').href=home;document.getElementById('entry-retry').onclick=()=>location.reload();
+ const started=performance.now();let finished=false;
+ function fail(message){finished=true;record.error=message;status.textContent=message+' The Bay view has not been substituted.';gate.querySelector('h1').textContent='The yacht could not finish loading.';gate.querySelector('progress').hidden=true;document.getElementById('entry-retry').hidden=false;document.getElementById('entry-direct').hidden=false;}
+ function inspect(){if(finished)return;record.checks++;
+  try{const h=iframe.contentWindow,p=h.ATLAS_D_SIM;
+   if(p?.error)return fail('Yacht loading failed: '+String(p.error));
+   if(window.Y4?.error)return fail('Yacht view failed: '+String(Y4.error));
+   if(p?.ready&&window.Y4?.ready&&window.Y9?.ready){
+    const s=p.state.snapshot(),hull=p.model?.getObjectByName('FIXED_Hull'),group=h.BAYPLAY?.scene.getObjectByName('ATLAS_D_PLAYER');
+    if(s.physicsModel!=='atlas-d-y11-3dof-1')return fail('The expected yacht controller did not load.');
+    if(p.active===true&&hull?.visible&&group?.visible&&Y4.latest?.physical.available&&Y4.view==='overview'){
+     record.firstReveal={active:p.active,sourceRevision:p.sourceRevision,asset:p.asset,physicsModel:s.physicsModel,hullName:hull.name,hullVisible:hull.visible,groupVisible:group.visible,view:Y4.view,engine:s.engine,paused:s.paused,ownerSeconds:s.elapsed,wallMs:performance.now()-started};
+     record.ready=true;record.revealed=true;document.body.dataset.yachtReady='true';gate.hidden=true;finished=true;
+     const exit=h.document.getElementById('ad-exit');if(exit){exit.textContent='Choose vessel';exit.addEventListener('click',()=>setTimeout(()=>location.assign(home),0));}
+     return;
+    }
+   }
+  }catch(e){record.lastObservationError=String(e);}
+  if(performance.now()-started>180000)return fail('The yacht is taking too long to load.');
+  setTimeout(inspect,120);
+ }
+ setTimeout(inspect,0);
+})();
+</script>
+<script src="../attachment-adapter.js"></script><script src="../y3/helm-station.js"></script><script src="../y2/identity-map.js"></script><script src="../y11/preview.js"></script><script src="pause-recovery.js"></script><script src="../y10/boarding-label.js"></script><script src="../y11/telemetry.js"></script>
+</body></html>
