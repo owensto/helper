@@ -12,7 +12,7 @@ E engines, W/S power, A/D helm, Space idle, F/N/R gears, P pause. Audio is opt-i
 https://www.damenyachting.com/news/damen-yachting-confirms-sale-of-new-amels-80
 https://feadship.nl/fleet/savannah
 
-Bridge screens currently contain illustrative navigation artwork; the overlaid helm, heading and chart display actual simulation state. No human occupancy, interior clearance, structural certification or helicopter operation is established. This first rebuild has no submarine transformation. No new human rig, shared world or multiplayer.
+Bridge heading, speed, engine and rudder readouts update from actual simulation state. The radar rings/blips remain explicitly illustrative; no real radar sensor is simulated. No human occupancy, interior clearance, structural certification or helicopter operation is established. This first rebuild has no submarine transformation. No new human rig, shared world or multiplayer.
 
 Reflected sea is a mean-plane approximation with generated normal texture; low-amplitude wave height and boat response share the analytic wave field. No fluid, flooding or CFD solver. Coast, chart, water depth and buoy placement are authored and not safe for real navigation. Decorative distant islands do not have detailed collision geometry. The sampled grounding envelope is approximate, not a swept exact hull collision.
 

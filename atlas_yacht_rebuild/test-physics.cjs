@@ -2,7 +2,7 @@
 const assert=require('node:assert/strict');const {Vessel,P,wave,depth}=require('./site/physics.js');
 const results=[];function test(name,fn){try{fn();results.push({name,passed:true});}catch(e){results.push({name,passed:false,error:String(e.stack)});}}
 function run(v,t,dt=1/60){for(let i=0;i<Math.round(t/dt);i++)v.step(dt);return v;}
-function underway(){const v=new Vessel();v.command('engine');v.command('port',1);v.command('starboard',1);return v;}
+function underway(){const v=new Vessel();v.command('engine');v.command('gear',1);v.command('port',1);v.command('starboard',1);return v;}
 test('engine-off commanded power cannot create thrust',()=>{const v=new Vessel();v.port=v.starboard=1;run(v,30);assert.equal(v.u,0);});
 test('twin forward acceleration with thrust lag',()=>{const v=underway();v.step(1/60);assert(v.thrustP>0&&v.thrustP<P.maxThrust/100);run(v,30);assert(v.u>.5);});
 test('matched engines do not spontaneously yaw in calm water',()=>{const v=underway();run(v,100);assert.equal(v.r,0);assert.equal(v.heading,0);});
@@ -14,7 +14,7 @@ test('astern creates negative forward speed from rest',()=>{const v=underway();v
 test('pause freezes state and clock exactly',()=>{const v=underway();run(v,20);v.command('pause');const s=JSON.stringify(v.read());run(v,30);assert.equal(JSON.stringify(v.read()),s);});
 test('reset increments epoch and disables propulsion',()=>{const v=underway();run(v,20);v.command('reset');assert.equal(v.epoch,1);assert.equal(v.engine,false);assert.equal(v.time,0);assert.equal(v.x,0);});
 test('invalid time steps rejected',()=>{for(const dt of [NaN,Infinity,-.01,.2])assert.throws(()=>new Vessel().step(dt));});
-test('input bounds and invalid gear rejected',()=>{const v=new Vessel();v.command('port',5);assert.equal(v.port,1);v.command('gear',55);assert.equal(v.gear,1);v.command('helm',NaN);assert.equal(v.helm,0);});
+test('input bounds and invalid gear rejected',()=>{const v=new Vessel();v.command('port',5);assert.equal(v.port,1);v.command('gear',55);assert.equal(v.gear,0);v.command('helm',NaN);assert.equal(v.helm,0);});
 test('60 Hz and 120 Hz straight trajectories converge',()=>{const a=run(underway(),120),b=run(underway(),120,1/120);assert(Math.abs(a.u-b.u)<.01);assert(Math.abs(a.x-b.x)<.3);});
 test('wave motion is finite and bounded in all sea states',()=>{for(let sea=0;sea<3;sea++){const v=new Vessel();v.sea=sea;run(v,120);assert(Math.abs(v.heave)<1);assert(Math.abs(v.roll)<.2);assert(Math.abs(v.pitch)<.1);}});
 test('unknown water is not reported as known depth',()=>{assert.equal(depth(13000,0),null);assert.equal(depth(NaN,0),null);assert.equal(depth(2100,-2300),0);});
