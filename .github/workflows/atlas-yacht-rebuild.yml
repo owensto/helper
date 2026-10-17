@@ -33,6 +33,7 @@ jobs:
             git show "8c503549c43b35864f1aad1cd5196c235c4e2930:atlas_yacht_rebuild/site/$p" > "atlas_yacht_rebuild/site/$p"
           done
           python atlas_yacht_rebuild/mobile/prepare.py
+          python atlas_yacht_rebuild/mobile/refine.py
           for p in atlas_yacht_rebuild/site/*.js; do node --check "$p"; done
           python -m py_compile atlas_yacht_rebuild/mobile/verify.py
           mkdir -p /tmp/atlas-mobile-review
