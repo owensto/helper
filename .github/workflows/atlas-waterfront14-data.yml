@@ -1,0 +1,59 @@
+name: ATLAS Waterfront14 source window
+on:
+  workflow_dispatch:
+  push:
+    paths: ['.github/workflows/atlas-waterfront14-data.yml']
+permissions:
+  contents: read
+jobs:
+  sources:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Bounded public source acquisition
+        run: |
+          python -m pip install -q rasterio==1.4.3 requests==2.32.3 numpy==2.2.6
+          mkdir -p /tmp/waterfront14
+          cat > /tmp/waterfront14/acquire.py <<'PY'
+          import json,math,hashlib,gzip,os,time,requests
+          from pathlib import Path
+          import numpy as np,rasterio
+          from rasterio.windows import from_bounds
+          from rasterio.enums import Resampling
+          out=Path('/tmp/waterfront14');report={'retrievedUTC':time.strftime('%Y-%m-%dT%H:%M:%SZ',time.gmtime()),'paidServices':False,'errors':[]}
+          url='https://chs.coast.noaa.gov/htdata/Inundation/SLR/BulkDownload/DEMs/SC/SC_South_GCS_3m_NAVDm.tif'
+          try:
+           R=6378137.;lat0=32.4271;lng0=-80.6749;D=math.pi/180
+           west=lng0-1800/(R*math.cos(lat0*D))/D;east=lng0+1800/(R*math.cos(lat0*D))/D;north=lat0+1500/R/D;south=lat0-1500/R/D
+           with rasterio.Env(GDAL_DISABLE_READDIR_ON_OPEN='EMPTY_DIR',CPL_VSIL_CURL_ALLOWED_EXTENSIONS='.tif',GDAL_HTTP_TIMEOUT='35',GDAL_HTTP_MAX_RETRY='1',VSI_CACHE='TRUE'):
+            with rasterio.open('/vsicurl/'+url) as ds:
+             assert ds.crs.to_epsg()==4326,str(ds.crs)
+             window=from_bounds(west,south,east,north,ds.transform)
+             arr=ds.read(1,window=window,out_shape=(301,361),resampling=Resampling.bilinear,masked=True)
+             valid=(~np.ma.getmaskarray(arr))&np.isfinite(arr.data)&(arr.data>-10)&(arr.data<80)
+             # Sampling cells are centered; preserve exact grid bounds and interpretation.
+             vals=np.where(valid,np.rint(arr.data*100),-32768).astype('<i2')
+             raw=vals.tobytes();(out/'terrain14.i16.gz').write_bytes(gzip.compress(raw,mtime=0))
+             meta={'source':url,'sourceCRS':str(ds.crs),'sourcePixelDegrees':list(ds.res),'sourceNoData':ds.nodata,'units':'centimetres NAVD88; int16 little-endian; -32768 unknown','horizontal':'equirectangular local metres; +X east,+Z south','origin':[lat0,lng0],'boundsXZ':[-1800,-1500,1800,1500],'width':361,'height':301,'gridInterpretation':'pixel centers over bounds; north to south rows','resampling':'bilinear downsample from source COG','validSamples':int(valid.sum()),'unknownSamples':int((~valid).sum()),'minNAVDm':float(arr.data[valid].min()),'maxNAVDm':float(arr.data[valid].max()),'rawSHA256':hashlib.sha256(raw).hexdigest(),'datumConversion':{'NAVD88toMLLWMetres':1.350,'station':'8667999','tidalEpoch':'1983-2001','source':'https://tidesandcurrents.noaa.gov/benchmarks/8667999.html','scope':'single local station approximation; not a spatial VDatum transform'},'notBathymetry':True}
+             (out/'terrain14.json').write_text(json.dumps(meta,indent=2));report['terrain']=meta
+           murl=url.replace('GCS_3m_NAVDm.tif','metadata.xml');mr=requests.get(murl,timeout=25)
+           if mr.ok:(out/'noaa_metadata.xml').write_bytes(mr.content)
+          except Exception as e:report['errors'].append({'terrain':str(e)})
+          query='[out:json][timeout:70];(way["leisure"="park"](32.423,-80.686,32.434,-80.667);way["man_made"="pier"](32.421,-80.690,32.434,-80.667);way["barrier"="retaining_wall"](32.423,-80.686,32.434,-80.667);way["highway"="footway"](32.425,-80.684,32.434,-80.669);node["natural"="tree"](32.425,-80.684,32.434,-80.669);way["building"](32.428,-80.682,32.434,-80.669););out tags geom;'
+          for endpoint in ['https://overpass-api.de/api/interpreter','https://overpass.kumi.systems/api/interpreter']:
+           try:
+            rr=requests.post(endpoint,data={'data':query},timeout=85);rr.raise_for_status();d=rr.json();assert 'elements' in d
+            (out/'waterfront_osm14.json').write_text(json.dumps(d,separators=(',',':')));report['osm']={'source':endpoint,'query':query,'elements':len(d['elements']),'licence':'OpenStreetMap contributors ODbL 1.0'};break
+           except Exception as e:report['errors'].append({'osm':str(e)})
+          (out/'acquisition.json').write_text(json.dumps(report,indent=2));print(json.dumps(report,indent=2))
+          PY
+          python /tmp/waterfront14/acquire.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ATLAS-Waterfront14-Sources
+          path: /tmp/waterfront14/
+          retention-days: 30
