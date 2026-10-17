@@ -20,7 +20,7 @@ with (S/'mobile.css').open('a') as f:f.write('''\n/* Recorded first-pass polish:
  .steering-group .ends button span{font-size:21px;line-height:1}.steering-group .ends button small{font-size:10px;line-height:1.1;letter-spacing:0}
  body.voyage-paused #notice{display:none}
 }
-@media(orientation:landscape) and (max-height:600px) and (pointer:coarse){#paused-banner{top:auto;bottom:12px}}
+@media(orientation:landscape) and (max-height:600px) and (pointer:coarse){#paused-banner{top:auto;bottom:12px}body.helm-collapsed #paused-banner{right:calc(208px + env(safe-area-inset-right,0px))}}
 ''')
 v=(M/'verify.py').read_text()
 v=once(v,"p.wait_for_function('window.ATLAS83_APP?.ready && window.ATLAS83_MOBILE',timeout=180000)","p.wait_for_function('window.ATLAS83_APP?.ready && window.ATLAS83_MOBILE',timeout=180000)\n   p.evaluate(\"window.__chartBoundary=[];for(const capture of [true,false])document.addEventListener('click',e=>{if(e.target.closest?.('#chart-toggle'))__chartBoundary.push({phase:capture?'before':'after',paused:ATLAS83_APP.inspect().state.paused,time:ATLAS83_APP.inspect().state.time,reason:ATLAS83_APP.inspect().pauseReason})},capture)\")")
@@ -28,4 +28,4 @@ v=once(v,"notice=p.locator('#notice').inner_text();assert 'long interruption' in
 v=once(v,"recoveries.append(notice);assert len(recoveries)<=3;tap('#resume')", "recoveries.append(notice);assert len(recoveries)<=3;tap('#pause')")
 v=once(v,"tap('#chart-toggle');ck('live chart remains unpaused',not state()['paused']);motion(.25);tap('[data-close=\"chart\"]')", "tap('#m-docking' if mobile else '#docking-toggle');tap('#hold');ck('heading hold engaged',p.evaluate('ATLAS83_APP.inspect().headingHold'));tap('[data-close=\"docking\"]')\n   tap('#chart-toggle');boundary=p.evaluate('__chartBoundary');row['chartClickBoundary']=boundary;ck('chart action preserves paused state synchronously',len(boundary)==2 and boundary[0]['paused']==boundary[1]['paused'],boundary);ck('opening and closing sheets preserves heading hold',p.evaluate('ATLAS83_APP.inspect().headingHold'));motion(.25);ck('chart live with actual advancing host after any recorded interruption',not state()['paused']);tap('[data-close=\"chart\"]')")
 (M/'verify.py').write_text(v)
-print('MOBILE_REFINEMENT_02 applied; no model/dynamics edits or interruption-guard weakening')
+print('MOBILE_REFINEMENT_03 applied; no model/dynamics edits or interruption-guard weakening')
