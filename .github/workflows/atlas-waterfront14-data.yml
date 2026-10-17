@@ -18,37 +18,46 @@ jobs:
           python -m pip install -q rasterio==1.4.3 requests==2.32.3 numpy==2.2.6
           mkdir -p /tmp/waterfront14
           cat > /tmp/waterfront14/acquire.py <<'PY'
-          import json,math,hashlib,gzip,os,time,requests
+          import json,math,hashlib,gzip,time,requests,xml.etree.ElementTree as ET
           from pathlib import Path
           import numpy as np,rasterio
           from rasterio.windows import from_bounds
           from rasterio.enums import Resampling
-          out=Path('/tmp/waterfront14');report={'retrievedUTC':time.strftime('%Y-%m-%dT%H:%M:%SZ',time.gmtime()),'paidServices':False,'errors':[]}
+          from rasterio.warp import transform_bounds,reproject
+          from rasterio.transform import from_bounds as grid_transform
+          out=Path('/tmp/waterfront14');report={'retrievedUTC':time.strftime('%Y-%m-%dT%H:%M:%SZ',time.gmtime()),'paidServices':False,'errors':[],'previousAttempt':'39003108821: source CRS was NAD83 not WGS84; Overpass endpoints unavailable. No data from that attempt are reused.'}
           url='https://chs.coast.noaa.gov/htdata/Inundation/SLR/BulkDownload/DEMs/SC/SC_South_GCS_3m_NAVDm.tif'
           try:
            R=6378137.;lat0=32.4271;lng0=-80.6749;D=math.pi/180
            west=lng0-1800/(R*math.cos(lat0*D))/D;east=lng0+1800/(R*math.cos(lat0*D))/D;north=lat0+1500/R/D;south=lat0-1500/R/D
            with rasterio.Env(GDAL_DISABLE_READDIR_ON_OPEN='EMPTY_DIR',CPL_VSIL_CURL_ALLOWED_EXTENSIONS='.tif',GDAL_HTTP_TIMEOUT='35',GDAL_HTTP_MAX_RETRY='1',VSI_CACHE='TRUE'):
             with rasterio.open('/vsicurl/'+url) as ds:
-             assert ds.crs.to_epsg()==4326,str(ds.crs)
-             window=from_bounds(west,south,east,north,ds.transform)
-             arr=ds.read(1,window=window,out_shape=(301,361),resampling=Resampling.bilinear,masked=True)
-             valid=(~np.ma.getmaskarray(arr))&np.isfinite(arr.data)&(arr.data>-10)&(arr.data<80)
-             # Sampling cells are centered; preserve exact grid bounds and interpretation.
-             vals=np.where(valid,np.rint(arr.data*100),-32768).astype('<i2')
-             raw=vals.tobytes();(out/'terrain14.i16.gz').write_bytes(gzip.compress(raw,mtime=0))
-             meta={'source':url,'sourceCRS':str(ds.crs),'sourcePixelDegrees':list(ds.res),'sourceNoData':ds.nodata,'units':'centimetres NAVD88; int16 little-endian; -32768 unknown','horizontal':'equirectangular local metres; +X east,+Z south','origin':[lat0,lng0],'boundsXZ':[-1800,-1500,1800,1500],'width':361,'height':301,'gridInterpretation':'pixel centers over bounds; north to south rows','resampling':'bilinear downsample from source COG','validSamples':int(valid.sum()),'unknownSamples':int((~valid).sum()),'minNAVDm':float(arr.data[valid].min()),'maxNAVDm':float(arr.data[valid].max()),'rawSHA256':hashlib.sha256(raw).hexdigest(),'datumConversion':{'NAVD88toMLLWMetres':1.350,'station':'8667999','tidalEpoch':'1983-2001','source':'https://tidesandcurrents.noaa.gov/benchmarks/8667999.html','scope':'single local station approximation; not a spatial VDatum transform'},'notBathymetry':True}
+             sb=transform_bounds('EPSG:4326',ds.crs,west,south,east,north);window=from_bounds(*sb,ds.transform).round_offsets().round_lengths()
+             src=ds.read(1,window=window);arr=np.full((301,361),-9999,dtype=np.float32)
+             reproject(source=src,destination=arr,src_transform=ds.window_transform(window),src_crs=ds.crs,src_nodata=ds.nodata,dst_transform=grid_transform(west,south,east,north,361,301),dst_crs='EPSG:4326',dst_nodata=-9999,resampling=Resampling.bilinear)
+             valid=np.isfinite(arr)&(arr>-10)&(arr<80);assert valid.sum()>1000
+             vals=np.where(valid,np.rint(arr*100),-32768).astype('<i2');raw=vals.tobytes();(out/'terrain14.i16.gz').write_bytes(gzip.compress(raw,mtime=0))
+             meta={'source':url,'sourceCRS':str(ds.crs),'outputCRS':'EPSG:4326','sourcePixelDegrees':list(ds.res),'sourceNoData':ds.nodata,'units':'centimetres NAVD88; int16 little-endian; -32768 unknown','horizontal':'equirectangular local metres; +X east,+Z south','origin':[lat0,lng0],'boundsXZ':[-1800,-1500,1800,1500],'width':361,'height':301,'gridInterpretation':'pixel centers over bounds; north to south rows','resampling':'rasterio GDAL CRS reprojection and bilinear downsampling; no survey-accuracy assertion','validSamples':int(valid.sum()),'unknownSamples':int((~valid).sum()),'minNAVDm':float(arr[valid].min()),'maxNAVDm':float(arr[valid].max()),'rawSHA256':hashlib.sha256(raw).hexdigest(),'datumConversion':{'NAVD88toMLLWMetres':1.350,'station':'8667999','tidalEpoch':'1983-2001','source':'https://tidesandcurrents.noaa.gov/benchmarks/8667999.html','scope':'single local station approximation; not a spatial VDatum transform'},'notBathymetry':True}
              (out/'terrain14.json').write_text(json.dumps(meta,indent=2));report['terrain']=meta
-           murl=url.replace('GCS_3m_NAVDm.tif','metadata.xml');mr=requests.get(murl,timeout=25)
+           mr=requests.get(url.replace('GCS_3m_NAVDm.tif','metadata.xml'),timeout=25)
            if mr.ok:(out/'noaa_metadata.xml').write_bytes(mr.content)
           except Exception as e:report['errors'].append({'terrain':str(e)})
-          query='[out:json][timeout:70];(way["leisure"="park"](32.423,-80.686,32.434,-80.667);way["man_made"="pier"](32.421,-80.690,32.434,-80.667);way["barrier"="retaining_wall"](32.423,-80.686,32.434,-80.667);way["highway"="footway"](32.425,-80.684,32.434,-80.669);node["natural"="tree"](32.425,-80.684,32.434,-80.669);way["building"](32.428,-80.682,32.434,-80.669););out tags geom;'
-          for endpoint in ['https://overpass-api.de/api/interpreter','https://overpass.kumi.systems/api/interpreter']:
-           try:
-            rr=requests.post(endpoint,data={'data':query},timeout=85);rr.raise_for_status();d=rr.json();assert 'elements' in d
-            (out/'waterfront_osm14.json').write_text(json.dumps(d,separators=(',',':')));report['osm']={'source':endpoint,'query':query,'elements':len(d['elements']),'licence':'OpenStreetMap contributors ODbL 1.0'};break
-           except Exception as e:report['errors'].append({'osm':str(e)})
+          endpoint='https://www.openstreetmap.org/api/0.6/map?bbox=-80.682,32.427,-80.668,32.433'
+          try:
+           rr=requests.get(endpoint,headers={'User-Agent':'AtlasD-Beaufort-Simulator-SourceReview/14'},timeout=60);rr.raise_for_status();root=ET.fromstring(rr.content);nodes={int(n.attrib['id']):n for n in root.findall('node')};elements=[]
+           def tags(n):return {t.attrib['k']:t.attrib['v'] for t in n.findall('tag')}
+           for n in nodes.values():
+            t=tags(n)
+            if t.get('natural')=='tree':elements.append({'type':'node','id':int(n.attrib['id']),'lat':float(n.attrib['lat']),'lon':float(n.attrib['lon']),'tags':t})
+           for w in root.findall('way'):
+            t=tags(w);ids=[int(n.attrib['ref']) for n in w.findall('nd')]
+            if not all(i in nodes for i in ids):continue
+            if not any(k in t for k in ['leisure','man_made','barrier','highway','building','natural']):continue
+            elements.append({'type':'way','id':int(w.attrib['id']),'tags':t,'geometry':[{'lat':float(nodes[i].attrib['lat']),'lon':float(nodes[i].attrib['lon'])} for i in ids]})
+           (out/'waterfront_osm14.json').write_text(json.dumps({'elements':elements},separators=(',',':')));report['osm']={'source':endpoint,'elements':len(elements),'licence':'OpenStreetMap contributors ODbL 1.0','rawResponseSHA256':hashlib.sha256(rr.content).hexdigest()}
+          except Exception as e:report['errors'].append({'osm':str(e)})
           (out/'acquisition.json').write_text(json.dumps(report,indent=2));print(json.dumps(report,indent=2))
+          assert 'terrain' in report,'No actual terrain acquired'
           PY
           python /tmp/waterfront14/acquire.py
       - uses: actions/upload-artifact@v4
