@@ -1,16 +1,16 @@
-name: ATLAS yacht rebuild
+name: ATLAS yacht mobile product pass
 on:
   push:
-    branches: ['atlas/yacht-rebuild-20261017']
-    paths: ['atlas_yacht_rebuild/**', '.github/workflows/atlas-yacht-rebuild.yml']
+    branches: ['atlas/yacht-mobile-20261017']
+    paths: ['atlas_yacht_rebuild/mobile/**', '.github/workflows/atlas-yacht-rebuild.yml']
   workflow_dispatch:
 permissions:
   contents: write
 concurrency:
-  group: atlas-yacht-rebuild-20261017
+  group: atlas-yacht-mobile-20261017
   cancel-in-progress: false
 jobs:
-  rebuild:
+  mobile:
     runs-on: ubuntu-24.04
     timeout-minutes: 28
     steps:
@@ -19,79 +19,77 @@ jobs:
           fetch-depth: 1
           sparse-checkout: |
             atlas_yacht_rebuild
-            .github/workflows
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
       - uses: actions/setup-python@v5
         with:
           python-version: '3.13'
-      - name: Prepare unchanged pinned runtime and check own source
+      - name: Build from original immutable yacht, run input and dynamics tests
         run: |
-          test "$GITHUB_REF_NAME" = atlas/yacht-rebuild-20261017
-          git fetch --depth=1 origin a2d4eecc12e7b4db14c7f94a6f6fc5088a4061ff
-          mkdir -p atlas_yacht_rebuild/site/vendor
-          git show a2d4eecc12e7b4db14c7f94a6f6fc5088a4061ff:atlas_sealab_12/live/runtime.js > atlas_yacht_rebuild/site/vendor/runtime.js
-          echo '50a297fabc59ff592031fa916d3fc17511d55747fd11fcdfbd7119bc6148b7f4  atlas_yacht_rebuild/site/vendor/runtime.js' | sha256sum -c -
-          python atlas_yacht_rebuild/polish.py
-          python atlas_yacht_rebuild/finish.py
+          test "$GITHUB_REF_NAME" = atlas/yacht-mobile-20261017
+          git fetch --depth=1 origin 8c503549c43b35864f1aad1cd5196c235c4e2930
+          for p in index.html app.js style.css physics.js model.js vendor/runtime.js; do
+            git show "8c503549c43b35864f1aad1cd5196c235c4e2930:atlas_yacht_rebuild/site/$p" > "atlas_yacht_rebuild/site/$p"
+          done
+          python atlas_yacht_rebuild/mobile/prepare.py
           for p in atlas_yacht_rebuild/site/*.js; do node --check "$p"; done
-          python -m py_compile atlas_yacht_rebuild/verify.py
-          cd atlas_yacht_rebuild
-          node test-physics.cjs > physics.stdout
-      - name: Browser dependencies
+          python -m py_compile atlas_yacht_rebuild/mobile/verify.py
+          mkdir -p /tmp/atlas-mobile-review
+          node --test atlas_yacht_rebuild/mobile/test-inputs.cjs > /tmp/atlas-mobile-review/input-tests.tap
+          (cd atlas_yacht_rebuild && node test-physics.cjs) > /tmp/atlas-mobile-review/physics-tests.stdout
+      - name: Pinned browser dependencies
         run: |
           python -m pip install playwright==1.55.0
-          python -m playwright install --with-deps chromium > /tmp/rebuild-browser-install.log
-      - name: Actual candidate scene and native operation
+          python -m playwright install --with-deps chromium > /tmp/mobile-browser-install.log
+      - name: Actual candidate touch, orientation and desktop checks
         env:
-          REVIEW_DIR: /tmp/atlas-rebuild-review/local
+          REVIEW_DIR: /tmp/atlas-mobile-review/local
         run: |
-          python -m http.server 8928 --bind 127.0.0.1 --directory atlas_yacht_rebuild/site > /tmp/rebuild-http.log 2>&1 &
+          python -m http.server 8931 --bind 127.0.0.1 --directory atlas_yacht_rebuild/site > /tmp/mobile-http.log 2>&1 &
           sleep 2
-          python atlas_yacht_rebuild/verify.py
-      - name: Publish only this isolated rebuilt yacht
+          python atlas_yacht_rebuild/mobile/verify.py
+      - name: Publish isolated mobile candidate only after local gates
         id: publish
         run: |
           python - <<'PY'
           from pathlib import Path
-          import json,hashlib,os
-          root=Path('atlas_yacht_rebuild/site')
-          record={'sourceSHA':os.environ['GITHUB_SHA'],'status':'candidate browser passed; public check follows','newModel':True,'originalDemosUnchanged':True,'humanContact':False,'multiplayer':False,'submersible':False,'files':{str(p.relative_to(root)):hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(root.rglob('*')) if p.is_file() and p.name!='BUILD.json'}}
-          (root/'BUILD.json').write_text(json.dumps(record,indent=2)+'\n')
+          import os,json,hashlib
+          s=Path('atlas_yacht_rebuild/site')
+          h={str(p.relative_to(s)):hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(s.rglob('*')) if p.is_file() and p.name!='BUILD.json'}
+          (s/'BUILD.json').write_text(json.dumps({'sourceSHA':os.environ['GITHUB_SHA'],'baseline':'8c503549c43b35864f1aad1cd5196c235c4e2930','status':'candidate touch checks passed; public check follows','mobilePass':1,'modelUnchanged':True,'physicsUnchanged':True,'files':h},indent=2)+'\n')
           PY
-          git config user.name 'ATLAS yacht release'
+          git config user.name 'ATLAS mobile release'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add atlas_yacht_rebuild/site atlas_yacht_rebuild/test-physics.cjs atlas_yacht_rebuild/verify.py
-          git commit -m 'Publish tested standalone rebuilt yacht assets [skip ci]'
-          git push origin HEAD:refs/heads/atlas/yacht-rebuild-20261017
+          git add atlas_yacht_rebuild/site
+          git commit -m 'Publish tested mobile yacht candidate [skip ci]'
+          git push origin HEAD:refs/heads/atlas/yacht-mobile-20261017
           echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
-      - name: Actual public loading and operation
+      - name: Verify actual public mobile yacht with unchanged responses
         env:
-          REVIEW_DIR: /tmp/atlas-rebuild-review/public
+          REVIEW_DIR: /tmp/atlas-mobile-review/public
           BASE_URL: https://rawcdn.githack.com/owensto/helper/${{ steps.publish.outputs.sha }}/atlas_yacht_rebuild/site/index.html
-        run: python atlas_yacht_rebuild/verify.py
-      - name: Preserve exact source and honest results
+        run: python atlas_yacht_rebuild/mobile/verify.py
+      - name: Preserve raw outcomes and source, including failures
         if: always()
         env:
           PUBLIC_SHA: ${{ steps.publish.outputs.sha }}
         run: |
-          mkdir -p /tmp/atlas-rebuild-review/source
-          cp atlas_yacht_rebuild/site/*.* /tmp/atlas-rebuild-review/source/
-          cp atlas_yacht_rebuild/test-physics.cjs atlas_yacht_rebuild/verify.py atlas_yacht_rebuild/polish.py atlas_yacht_rebuild/finish.py /tmp/atlas-rebuild-review/source/
-          cp atlas_yacht_rebuild/physics-results.json atlas_yacht_rebuild/physics.stdout /tmp/atlas-rebuild-review/ 2>/dev/null || true
-          cp /tmp/rebuild-http.log /tmp/atlas-rebuild-review/ 2>/dev/null || true
+          mkdir -p /tmp/atlas-mobile-review/source /tmp/atlas-mobile-review/site
+          cp atlas_yacht_rebuild/mobile/*.* /tmp/atlas-mobile-review/source/
+          cp atlas_yacht_rebuild/site/*.* /tmp/atlas-mobile-review/site/
+          cp atlas_yacht_rebuild/physics-results.json /tmp/atlas-mobile-review/ 2>/dev/null || true
           python - <<'PY'
-          from pathlib import Path
           import os,json,hashlib
-          r=Path('/tmp/atlas-rebuild-review')
-          (r/'provenance.json').write_text(json.dumps({'sourceSHA':os.environ['GITHUB_SHA'],'publicSHA':os.environ.get('PUBLIC_SHA'),'runner':'GitHub Actions; headless Chromium/SwiftShader','localBrowserInChat':'administratively blocked; not bypassed'},indent=2))
+          from pathlib import Path
+          r=Path('/tmp/atlas-mobile-review')
+          (r/'provenance.json').write_text(json.dumps({'sourceSHA':os.environ['GITHUB_SHA'],'publicSHA':os.environ.get('PUBLIC_SHA'),'baseline':'8c503549c43b35864f1aad1cd5196c235c4e2930','physicalDevice':False,'browser':'Chromium/SwiftShader; touch emulation','oldOwnerModulesUnchanged':True},indent=2))
           h={str(p.relative_to(r)):hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(r.rglob('*')) if p.is_file()}
           (r/'sha256.json').write_text(json.dumps(h,indent=2))
           PY
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: ATLAS-yacht-rebuild-review
-          path: /tmp/atlas-rebuild-review/
+          name: ATLAS-mobile-yacht-review
+          path: /tmp/atlas-mobile-review/
           retention-days: 14
