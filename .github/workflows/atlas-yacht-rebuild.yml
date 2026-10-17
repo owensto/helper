@@ -33,6 +33,7 @@ jobs:
           mkdir -p atlas_yacht_rebuild/site/vendor
           git show a2d4eecc12e7b4db14c7f94a6f6fc5088a4061ff:atlas_sealab_12/live/runtime.js > atlas_yacht_rebuild/site/vendor/runtime.js
           echo '50a297fabc59ff592031fa916d3fc17511d55747fd11fcdfbd7119bc6148b7f4  atlas_yacht_rebuild/site/vendor/runtime.js' | sha256sum -c -
+          python atlas_yacht_rebuild/polish.py
           for p in atlas_yacht_rebuild/site/*.js; do node --check "$p"; done
           python -m py_compile atlas_yacht_rebuild/verify.py
           cd atlas_yacht_rebuild
@@ -60,7 +61,7 @@ jobs:
           PY
           git config user.name 'ATLAS yacht release'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add atlas_yacht_rebuild/site/vendor/runtime.js atlas_yacht_rebuild/site/BUILD.json
+          git add atlas_yacht_rebuild/site atlas_yacht_rebuild/test-physics.cjs
           git commit -m 'Publish tested standalone rebuilt yacht assets [skip ci]'
           git push origin HEAD:refs/heads/atlas/yacht-rebuild-20261017
           echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
@@ -76,7 +77,7 @@ jobs:
         run: |
           mkdir -p /tmp/atlas-rebuild-review/source
           cp atlas_yacht_rebuild/site/*.* /tmp/atlas-rebuild-review/source/
-          cp atlas_yacht_rebuild/test-physics.cjs atlas_yacht_rebuild/verify.py /tmp/atlas-rebuild-review/source/
+          cp atlas_yacht_rebuild/test-physics.cjs atlas_yacht_rebuild/verify.py atlas_yacht_rebuild/polish.py /tmp/atlas-rebuild-review/source/
           cp atlas_yacht_rebuild/physics-results.json atlas_yacht_rebuild/physics.stdout /tmp/atlas-rebuild-review/ 2>/dev/null || true
           cp /tmp/rebuild-http.log /tmp/atlas-rebuild-review/ 2>/dev/null || true
           python - <<'PY'
