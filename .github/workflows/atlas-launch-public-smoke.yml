@@ -1,0 +1,56 @@
+name: ATLAS published launcher smoke
+on:
+  push:
+    branches: ['atlas/release-launcher-20261016']
+    paths:
+      - 'atlas_launch/**'
+      - '.github/workflows/atlas-launch-public-smoke.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: atlas-release-launcher-public-smoke
+  cancel-in-progress: false
+jobs:
+  public-smoke:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 18
+    env:
+      REVIEW_DIR: /tmp/atlas-launch-review
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+          sparse-checkout: |
+            atlas_launch
+          fetch-depth: 1
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Check source and install pinned test browser
+        run: |
+          test "$GITHUB_REF_NAME" = atlas/release-launcher-20261016
+          python -m py_compile atlas_launch/verify_public.py
+          python -m pip install playwright==1.55.0
+          python -m playwright install --with-deps chromium
+      - name: Verify actual public page and native linked-demo operation
+        run: python atlas_launch/verify_public.py
+      - name: Preserve actual results and test source
+        if: always()
+        run: |
+          mkdir -p "$REVIEW_DIR/source"
+          cp atlas_launch/index.html atlas_launch/verify_public.py "$REVIEW_DIR/source/"
+          printf '%s\n' "$GITHUB_SHA" > "$REVIEW_DIR/test-source-sha.txt"
+          python - <<'PY'
+          import hashlib,json,os
+          from pathlib import Path
+          root=Path(os.environ['REVIEW_DIR'])
+          hashes={str(p.relative_to(root)):hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(root.rglob('*')) if p.is_file()}
+          (root/'sha256.json').write_text(json.dumps(hashes,indent=2))
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ATLAS-launch-public-smoke
+          path: /tmp/atlas-launch-review/
+          retention-days: 14

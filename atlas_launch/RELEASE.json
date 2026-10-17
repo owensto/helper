@@ -1,0 +1,48 @@
+{
+  "status": "PUBLIC_LAUNCHER_AND_LINKED_SOLO_DEMO_SMOKE_PASSED",
+  "launcherCommit": "458ef79ac512a70468a4c134ddf0596449a3ccf1",
+  "launcherURL": "https://rawcdn.githack.com/owensto/helper/458ef79ac512a70468a4c134ddf0596449a3ccf1/atlas_launch/index.html",
+  "launcherSHA256": "ab669b793333305a41a5e228bfefa1095f54a0d2557f1c1b14a1bc31656f17d0",
+  "testSourceCommit": "a9b6b3bb8bb35b2a746d9f0e66490c30a3d715ec",
+  "testRun": 39003307245,
+  "artifactId": 12089463060,
+  "artifactSHA256": "38fce0dbe4580bff4c9f90ef3fde568756f9f9caaac9cf434b417432293fa3fb",
+  "artifactBytes": 1627967,
+  "artifactPayloadHashesVerified": 10,
+  "publicLauncherLayouts": {
+    "desktop1440x960": "PASS",
+    "phone390x844": "PASS",
+    "smallPhone375x812": "PASS",
+    "landscape844x390": "PASS"
+  },
+  "linkedDemos": {
+    "bay": {
+      "publishedCommit": "491fbb0133fde085c03e4ee93db34f4e630a3c42",
+      "url": "https://rawcdn.githack.com/owensto/helper/491fbb0133fde085c03e4ee93db34f4e630a3c42/atlas_sealab_13/live/index.html",
+      "thisRunDesktopNativeLoadingPowerMotionPauseResume": "PASS",
+      "experimentalHuman": false,
+      "multiplayer": false,
+      "ownerBroaderPublicRun": 38913888862
+    },
+    "yacht": {
+      "publishedCommit": "006644dae913c9bc6f874cdaaaba31986dbc519b",
+      "url": "https://rawcdn.githack.com/owensto/helper/006644dae913c9bc6f874cdaaaba31986dbc519b/atlas_d_simulator_01/contact/y11/preview.html",
+      "thisRunDesktopNativeBoardingPowerMotionPauseResume": "PASS",
+      "physicsModel": "atlas-d-y11-3dof-1",
+      "advancedHumanAttachment": null,
+      "ownerBroaderPublicRun": 38909804899
+    }
+  },
+  "pageErrors": 0,
+  "responseSubstitution": false,
+  "acceleratedSimulationSteps": false,
+  "normalHostingNoticeHandled": true,
+  "browser": "Headless Chromium 140.0.7339.16 / SwiftShader",
+  "limitations": [
+    "Single launch page linking separate solo demos, not a merged shared game",
+    "Only launcher layouts were rechecked at phone sizes in this run; linked-demo operation was desktop",
+    "Advanced human contact, Station03 and multiplayer remain disabled",
+    "No physical-phone, Safari, FPS, optical-latency, engineering or full-regression certification",
+    "Existing Netlify project and owner implementation files were not changed"
+  ]
+}
