@@ -56,7 +56,7 @@ edits('physics.js',[
 p=ROOT/'test-physics.cjs';s=p.read_text();s=s.replace("v.command('engine');v.command('port',1)","v.command('engine');v.command('gear',1);v.command('port',1)").replace('assert.equal(v.gear,1);v.command','assert.equal(v.gear,0);v.command');p.write_text(s)
 p=ROOT/'site'/'style.css';s=p.read_text()
 if 'ATLAS_REBUILD_POLISH_02' not in s:
- s+='\n/* ATLAS_REBUILD_POLISH_02: decorative labels cannot steal control input. */\n.view-label,.heading-box,#notice{pointer-events:none}\n@media(orientation:landscape) and (max-height:600px){.camera-nav{top:67px;left:16px;right:228px;flex-direction:row;gap:4px}.camera-nav button{min-width:0;flex:1;text-align:center;padding:5px 7px}.camera-nav button span{display:none}.view-label{bottom:122px}.view-label #view-help{display:none}}\n';p.write_text(s)
+ s+='\n/* ATLAS_REBUILD_POLISH_02: decorative labels cannot steal control input. */\n.view-label,.heading-box,#notice{pointer-events:none}\n@media(orientation:landscape) and (max-height:600px){.camera-nav{top:76px;left:15px;right:auto;flex-direction:column;gap:6px}.camera-nav button{min-width:109px;text-align:left;padding:5px 8px}.view-label{bottom:122px}.view-label #view-help{display:none}}\n';p.write_text(s)
 p=ROOT/'site'/'README.md'
 if p.exists():
  s=p.read_text().replace('Bridge screens currently contain illustrative navigation artwork; the overlaid helm, heading and chart display actual simulation state.','Bridge heading, speed, engine and rudder readouts update from actual simulation state. The radar rings/blips remain explicitly illustrative; no real radar sensor is simulated.')
