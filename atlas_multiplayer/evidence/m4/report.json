@@ -1,0 +1,77 @@
+{
+  "iteration": "M4",
+  "source_parent_sha": "61c02d34345f36fed899695be90034ce5ae4b96e",
+  "status": "DIAGNOSTIC_PASS_RELEASE_BLOCKED",
+  "tested_at_utc": "2026-10-16T05:40:45.284700+00:00",
+  "node": "v22.16.0",
+  "protocol": "atlas-net-3",
+  "tests": {
+    "room": 18,
+    "client_contract_interpolation": 18,
+    "source_clock": 9,
+    "c1_reader_synthetic": 13,
+    "presentation_pure": 4,
+    "transport_real_tcp": 12,
+    "client_real_tcp": 15,
+    "host_fault_real_tcp": 16,
+    "total": 105,
+    "passed": 105,
+    "failed": 0,
+    "independently_executed_dependency_free_subset": 62
+  },
+  "red_green": {
+    "baseline": "61c02d34345f36fed899695be90034ce5ae4b96e",
+    "focused_before": {
+      "tests": 2,
+      "failed": 2,
+      "passed": 0
+    },
+    "focused_after": {
+      "tests": 16,
+      "failed": 0,
+      "passed": 16
+    },
+    "bugs": [
+      "renderer exception escaped host frame caller",
+      "shared observer snapshot allowed mutation of another observer and client cursor data"
+    ]
+  },
+  "transport": {
+    "runtime": "Explicit TEST-ONLY preinstalled Playwright bundled ws",
+    "bundle_sha256": "6883cf83e2097e5029cce0763832338534a9e1c8e97bf62ca2f083b238613a49",
+    "ws_8_22_0_certified": false
+  },
+  "core_c1": {
+    "revision": "sealab12-core-integration/1.0.0",
+    "tested_owner_source_sha": "36903985f2182c902427fed77d4e28c61a7639ca",
+    "owner_final_comment": 6208577721,
+    "mp_receiver_ack_comment": 6208818331,
+    "integration_activated": false
+  },
+  "semantics": {
+    "required_callback_failure": "stop MP, contain exception, attempt cleanup; failed cleanup blocks rejoin",
+    "optional_observer_failure": "disable/detach once with warning; keep valid networking",
+    "async_callbacks": "only prepareLocal supported; observe rejected promises, reject others; no promise side-effect rollback claim",
+    "ui_proof": "pure presentation state only; actual DOM/browser gate blocked"
+  },
+  "pinned_install_lock_audit": "BLOCKED: prior genuine EAI_AGAIN; no lockfile, no audit pass, no retry claimed in M4",
+  "browser": "NOT_RUN_M4; prior M2 launched two Chromium processes but managed URL policy blocked first page; zero motion checks",
+  "integrated_sealab12_regression": "NOT_RUN",
+  "public_multiplayer": "NOT_LIVE",
+  "deployment_or_permission_changes": false,
+  "next_gate": "Existing authorized registry/browser runner executes exact pin/lock/ci/audit and two-browser fixture; CORE retains actual runtime/occupancy/publication gate",
+  "artifacts": {
+    "committed": [
+      "report.json",
+      "README.md",
+      "before.tap",
+      "focused-after.tap"
+    ],
+    "archive_additional": [
+      "all-diagnostic.tap",
+      "dependency-free.tap",
+      "core-adapter-before.mjs",
+      "source-manifest.json"
+    ]
+  }
+}

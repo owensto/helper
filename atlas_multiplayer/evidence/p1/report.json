@@ -1,0 +1,81 @@
+{
+  "iteration": "P1",
+  "status": "ORIGINAL_INPUTS_AND_NONBROWSER_COUPLING_PASS_RELEASE_BLOCKED",
+  "sourceParentSHA": "dd8a7c9c8f29d3c54d67086283b68c3f9db12f51",
+  "runtimeUnchangedSince": "46c81ebfff13f83645f6b5091b63e845bc422871",
+  "ownerSourceSHA": "36903985f2182c902427fed77d4e28c61a7639ca",
+  "ownerRevision": "sealab12-core-integration/1.0.0",
+  "testedAtUTC": "2026-10-16T13:16:53.717458+00:00",
+  "node": "v22.16.0",
+  "originalAssets": {
+    "required": 20,
+    "verified": 20,
+    "artifactId": 12028270005
+  },
+  "execution": {
+    "originalHook": true,
+    "originalRuntimeMathExports": true,
+    "nativeWebCrypto": true,
+    "successfulHookAttach": true,
+    "actualReceiverAndClient": true,
+    "syntheticSceneAndState": true,
+    "actualSeaLabHostLoop": false,
+    "browser": false
+  },
+  "tests": {
+    "newDirectHookReceiver": 17,
+    "newActualSocketCases": 8,
+    "newSuitePassed": 25,
+    "newSuiteFailed": 0,
+    "completeDiagnosticPassed": 130,
+    "completeDiagnosticFailed": 0
+  },
+  "transport": {
+    "qualification": "explicit TEST-ONLY preinstalled Playwright bundled ws; NOT pinned ws certification",
+    "sha256": "6883cf83e2097e5029cce0763832338534a9e1c8e97bf62ca2f083b238613a49"
+  },
+  "defects": {
+    "runtimeDefectEstablished": false,
+    "runtimePatched": false,
+    "before": "M6: 0/20 original asset bytes mounted; actual attach/coupling blocked",
+    "after": "20/20 original assets matched; 25 unchanged-hook/actual-receiver-client checks pass"
+  },
+  "nuance": "Detached captain returns CAPTAIN_NOT_SEATED from C1 readAnchors. C1 readPose remains a vessel pose and conveys no crew validity; no character networking inferred.",
+  "externalGates": {
+    "exactWsPinLockAudit": "UNPASSED",
+    "twoBrowserMotion": "BLOCKED_NO_NEW_BROWSER_ATTEMPT",
+    "integratedSinglePlayerRegression": "NOT_RUN",
+    "productionRoomWorldAndPlacement": "CORE_BINDING_REQUIRED",
+    "hostingAccess": "Railway and Render not connected at inspection",
+    "publicMultiplayer": "NOT_LIVE"
+  },
+  "noPolicyChange": true,
+  "noWorkflowOrRunnerSearchOrDispatch": true,
+  "noHostingOrBillingChanges": true,
+  "commands": [
+    "node --import ./tests/diagnostic-register.mjs --test tests/c1-final-hook.test.mjs",
+    "node --import ./tests/diagnostic-register.mjs --test tests/*.test.mjs"
+  ],
+  "evidenceFiles": {
+    "c1-final.tap": {
+      "bytes": 5891,
+      "sha256": "30758a03d15d29e13af89cf57256e6bb7c05871057bd8bb40a85bd4f5ff606ce"
+    },
+    "c1-final.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "all-diagnostic.tap": {
+      "bytes": 29814,
+      "sha256": "84959bde319eccad56d55e729ec791dd2a2fc54d8ad1edaf46023cf83f639f5a"
+    },
+    "all-diagnostic.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "unchanged-runtime.json": {
+      "bytes": 472,
+      "sha256": "d63e147aed14b3cb4a0464175ad40c6e37571199b8443fba096f81bb47a74805"
+    }
+  }
+}

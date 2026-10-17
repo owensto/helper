@@ -1,0 +1,72 @@
+{
+  "iteration": "M3",
+  "source_parent_sha": "eff8ea71c76c867c58c37d21e06eff6057a17085",
+  "status": "DIAGNOSTIC_PASS_RELEASE_BLOCKED",
+  "tested_at_utc": "2026-10-16T05:16:25.165954+00:00",
+  "node": "v22.16.0",
+  "protocol": "atlas-net-3",
+  "tests": {
+    "room": 18,
+    "client_contract_interpolation": 18,
+    "source_clock": 9,
+    "c1_reader_synthetic": 13,
+    "transport_real_tcp": 12,
+    "client_real_tcp": 15,
+    "total": 85,
+    "passed": 85,
+    "failed": 0,
+    "independent_dependency_free_subset_passed": 58
+  },
+  "transport": {
+    "runtime": "Explicit TEST-ONLY Playwright bundled ws",
+    "bundle_sha256": "6883cf83e2097e5029cce0763832338534a9e1c8e97bf62ca2f083b238613a49",
+    "ws_8_22_0_certified": false
+  },
+  "core_c1": {
+    "scope": "C1 reader shape and owner decisions consumed; runtime samples in tests are explicitly synthetic, not captured vessel motion",
+    "source_sha": "36903985f2182c902427fed77d4e28c61a7639ca",
+    "files": {
+      "atlas_sealab_12/integration/c1/descriptor.json": "30affbbcc2b04d8b8e78a07206cb9eab9c2af2f7",
+      "atlas_sealab_12/integration/c1/host-hooks.js": "458a40ffb79be48c43a1190f2e5722112f8bfb99",
+      "atlas_sealab_12/integration/c1/HANDOFF.md": "cf775a9d7ccf3f9916d24c0a2e26d3081b0f76a1"
+    },
+    "baseline_public_sha": "a2d4eecc12e7b4db14c7f94a6f6fc5088a4061ff",
+    "descriptor_revision": "sealab12-core-integration/1.0.0",
+    "receiving_scope": "read-only pose normalization and epoch/world invalidation; no activated CORE frontend, no spawn/restore writes or human module",
+    "world_axes": {
+      "east": "+X",
+      "up": "+Y",
+      "south": "+Z"
+    },
+    "quaternion": "actual render transform, XYZW; no Euler remapping",
+    "rpm": "C1 readPose omits rpm; network represents unavailable reading as null",
+    "restore": "same-adapter local token only, never sent to transport; current C1 local spawn/restore increments epoch and invalidates old tokens"
+  },
+  "new_checks": [
+    "read-only capability rejection",
+    "complete server player/entity versus vessel identity",
+    "world/baseline/axes fingerprint rejection",
+    "cardinal and 12 tilted synthetic transforms",
+    "nonfinite/singular/scaled/sheared/transposed/inconsistent inverse rejection",
+    "paused time and newer reset epoch",
+    "old epoch or same-epoch time rollback rejection",
+    "small epoch discontinuity flush over real sockets",
+    "adversarial server sequence/pose/epoch rejection",
+    "unknown rpm stays null",
+    "stale world and destroyed/ejected recovery rejection"
+  ],
+  "pinned_install_lock_audit": {
+    "lock_generation_retry": "BLOCKED_EAI_AGAIN",
+    "lockfile_exists": false,
+    "audit": "NOT_PASSED"
+  },
+  "browser": {
+    "m3_motion_checks": "NOT_RUN",
+    "prior_attempt": "M2: 2 Chromium processes launched; first navigation ERR_BLOCKED_BY_ADMINISTRATOR; 0 checks",
+    "policy_modified": false
+  },
+  "integrated_sealab12_regression": "NOT_RUN",
+  "live_multiplayer": false,
+  "hosting": "Railway not installed; no resources or permissions changed",
+  "next_gate": "CORE-approved room/occupancy/local-placement binding plus existing permitted runner for pinned npm lock/ci/audit and two independent browser motion/actual single-player regression"
+}
