@@ -12,3 +12,5 @@ p=r/'patch14.py';s=p.read_text()
 a="patch('water09.js','vec3(.13,.47,.43),vec3(.018,.18,.23)','vec3(.24,.32,.24),vec3(.035,.14,.165)')\npatch('water09.js','1.-exp(-depth09*.19)','1.-exp(-depth09*.28)')"
 b="patch('environment11.js','vec3(.10,.36,.29),vec3(.014,.095,.125),1.-exp(-depth09*.24)','vec3(.22,.30,.22),vec3(.025,.115,.135),1.-exp(-depth09*.28)')"
 assert s.count(a)==1;s=s.replace(a,b);p.write_text(s)
+polish=Path(__file__).with_name('polish14.py')
+exec(compile(polish.read_text(),str(polish),'exec'))
