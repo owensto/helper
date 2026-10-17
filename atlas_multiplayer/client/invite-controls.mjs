@@ -1,5 +1,5 @@
 // Static markup only; all names/status/data are inserted with textContent or value.
-const FRIENDLY={ROOM_FULL:'This room is full.',ROOM_UNAVAILABLE:'This invitation has expired or the room is unavailable.',
+const FRIENDLY={SPAWN_OCCUPIED:'Launch positions are occupied. Ask a boat to move away, then try joining again.',ROOM_FULL:'This room is full.',ROOM_UNAVAILABLE:'This invitation has expired or the room is unavailable.',
   WORLD_MISMATCH:'This room uses a different world version.',INVITE_WORLD_MISMATCH:'This invitation uses a different world version.',
   INVITE_ORIGIN_MISMATCH:'Use an invitation from this same workshop.',BAD_INVITE:'Paste a valid invitation link.',
   CONNECTION_FAILED:'Could not connect. Single-player is still available.',SESSION_EXPIRED:'Your room session expired. Join again.',

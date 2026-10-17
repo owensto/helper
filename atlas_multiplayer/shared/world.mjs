@@ -30,7 +30,8 @@ const frozen = value => {
 export function validateWorld(input,{allowFixture=false}={}) {
   if (!input || input.schema!=='atlas-world-1') fail('WORLD_CONFIG_REQUIRED');
   const w=structuredClone(input);
-  if (!['fixture','core'].includes(w.kind)) fail('WORLD_NOT_APPROVED');
+  if (!['fixture','core','standalone'].includes(w.kind)) fail('WORLD_NOT_APPROVED');
+  if (w.kind==='standalone' && (w.applicationId!=='atlas-d-open-water'||w.worldId!=='atlas-open-water'||w.coreSourceSha||w.approvalRef)) fail('WORLD_NOT_APPROVED');
   if (w.kind==='fixture' && !allowFixture) fail('FIXTURE_WORLD_NOT_ALLOWED');
   if (w.kind==='core' && (!/^[a-f0-9]{40}$/.test(w.coreSourceSha||'') ||
       !/^https:\/\/github\.com\/owensto\/helper\/pull\/[12]#issuecomment-\d+$/.test(w.approvalRef||''))) fail('WORLD_NOT_APPROVED');

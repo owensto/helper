@@ -1,0 +1,18 @@
+# Optional standalone service template. Does not touch SeaLab or enable billing.
+services:
+  - type: web
+    name: atlas-d-open-water
+    runtime: node
+    plan: free
+    repo: https://github.com/owensto/helper
+    branch: atlas-d/multiplayer-chat3
+    rootDir: atlas_multiplayer
+    buildCommand: sh standalone/prepare-release.sh
+    startCommand: node standalone/server.mjs
+    healthCheckPath: /healthz
+    autoDeployTrigger: 'off'
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: NODE_VERSION
+        value: 22.16.0

@@ -13,7 +13,11 @@
     "test:transport": "node --test tests/transport.test.mjs",
     "test:release": "node scripts/verify-dependency.mjs && npm test",
     "test:client": "node --test tests/client-contract.test.mjs tests/client-socket.test.mjs",
-    "test:browser": "python tests/browser-evidence.py"
+    "test:browser": "python tests/browser-evidence.py",
+    "start:standalone": "node standalone/server.mjs",
+    "test:standalone": "node --test standalone/tests/*.test.mjs",
+    "build:standalone": "node standalone/build.mjs",
+    "test:standalone-suite": "node --test tests/rooms.test.mjs tests/transport.test.mjs tests/client-contract.test.mjs tests/client-socket.test.mjs tests/clock.test.mjs tests/host-fault.test.mjs tests/presentation.test.mjs standalone/tests/*.test.mjs"
   },
   "dependencies": {
     "ws": "8.22.0"

@@ -6,7 +6,7 @@ import { readFileSync } from 'node:fs';
 import { WebSocketServer, WebSocket } from 'ws';
 import { Bucket, PROTOCOL, RoomStore } from './rooms.mjs';
 
-export function createMultiplayerServer({ origins, maxConnections = 128, roomOptions = {} } = {}) {
+export function createMultiplayerServer({ origins, maxConnections = 128, roomOptions = {}, httpHandler = null } = {}) {
   if (!Array.isArray(origins) || !origins.length || origins.includes('*')) throw new Error('Explicit origins required');
   const allowed = new Set(origins.map(value => {
     const url = new URL(value);
@@ -20,6 +20,8 @@ export function createMultiplayerServer({ origins, maxConnections = 128, roomOpt
     if (req.method === 'GET' && req.url === '/healthz') {
       res.writeHead(200, { 'Content-Type': 'application/json' });
       res.end(JSON.stringify({ ok: true, service: 'atlas-multiplayer', protocol: PROTOCOL }));
+    } else if (httpHandler) {
+      try { httpHandler(req, res); } catch { if (!res.headersSent) res.writeHead(500); res.end(); }
     } else { res.writeHead(404); res.end('Not found'); }
   });
   server.headersTimeout = 5000; server.requestTimeout = 10000; server.keepAliveTimeout = 5000;
@@ -77,7 +79,7 @@ export function createMultiplayerServer({ origins, maxConnections = 128, roomOpt
         // Do not expose exception details, messages, tokens, or stack traces to peers.
         const known = new Set(['VERSION_MISMATCH','WORLD_MISMATCH','VESSEL_MISMATCH','BAD_NAME','ALREADY_JOINED','SERVER_FULL',
           'ROOM_UNAVAILABLE','SESSION_EXPIRED','SESSION_ACTIVE','BAD_ACTION','ROOM_FULL','NOT_JOINED',
-          'RATE_LIMIT','BAD_STATE','BAD_POSE','TEXT_ONLY','BAD_MESSAGE','BAD_SOURCE_CLOCK','SOURCE_CLOCK_REGRESSION','SOURCE_CLOCK_REQUIRED']);
+          'SPAWN_OCCUPIED','RATE_LIMIT','BAD_STATE','BAD_POSE','TEXT_ONLY','BAD_MESSAGE','BAD_SOURCE_CLOCK','SOURCE_CLOCK_REGRESSION','SOURCE_CLOCK_REQUIRED']);
         const code = known.has(error.message) ? error.message : 'BAD_MESSAGE';
         send(ws, { type: 'error', code }); close(ws, 4000, code);
       }

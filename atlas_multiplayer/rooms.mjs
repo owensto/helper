@@ -64,7 +64,13 @@ export class RoomStore {
     if (!player) {
       if (room.players.size >= this.maxPlayers) fail('ROOM_FULL');
       const occupied = new Set([...room.players.values()].map(p => p.slot));
-      const slot = Array.from({length: this.maxPlayers}, (_,i) => i).find(i => !occupied.has(i));
+      const slot = Array.from({length: this.maxPlayers}, (_,i) => i).find(i => {
+        if (occupied.has(i)) return false;
+        if (this.world.kind !== 'standalone') return true;
+        const p=this.world.vessels[hello.vesselId].spawns[i].p;
+        return [...room.players.values()].every(other=>Math.hypot(p[0]-other.pose.p[0],p[2]-other.pose.p[2])>=14);
+      });
+      if (slot === undefined) fail('SPAWN_OCCUPIED');
       const spawn = this.world.vessels[hello.vesselId].spawns[slot];
       player = { id: token(), name, vesselId: hello.vesselId, slot, spawn, resumeToken: token(), connectionId: null,
         disconnectedAt: null, sequence: -1, clock: null, pose: validatePose({p:spawn.p,q:spawn.q,engine:false,rpm:0,gear:0}), updatedAt: this.now(),
@@ -96,7 +102,7 @@ export class RoomStore {
     if (message.seq <= player.sequence) return false;
     const pose = validatePose(message.pose);
     const clock = nextSourceClock(player.clock, message.clock ?? null);
-    if (this.world.kind === 'core' && clock === null) fail('SOURCE_CLOCK_REQUIRED');
+    if (['core','standalone'].includes(this.world.kind) && clock === null) fail('SOURCE_CLOCK_REQUIRED');
     Object.assign(player, { pose, clock, sequence: message.seq, updatedAt: this.now() });
     return true;
   }

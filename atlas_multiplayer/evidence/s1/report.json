@@ -1,0 +1,111 @@
+{
+  "iteration": "S1",
+  "application": "Atlas D Open Water",
+  "status": "STANDALONE_IMPLEMENTED_NONBROWSER_TESTED_NOT_DEPLOYED",
+  "sourceParentSHA": "7a7181097475a6f63a4456be982d0665d37da43c",
+  "testedAtUTC": "2026-10-17T04:56:46.855255+00:00",
+  "branch": "atlas-d/multiplayer-chat3",
+  "ownership": "atlas_multiplayer/**",
+  "separation": {
+    "seaLabAppLoaded": false,
+    "c1HooksRequired": false,
+    "c2HooksRequired": false,
+    "coreProductionWorldRequired": false,
+    "coreSpawnOwnerRequiredForThisApp": false,
+    "humansLoaded": false,
+    "yachtControllerChanged": false,
+    "sameOriginFrontendAndWebSocket": true,
+    "instances": 1,
+    "maxPlayersPerRoom": 8,
+    "maxRooms": 16
+  },
+  "assetReuse": {
+    "sourceSHA": "a2d4eecc12e7b4db14c7f94a6f6fc5088a4061ff",
+    "immutableAssets": [
+      "original Bay GLB",
+      "Three.js runtime bundle",
+      "third-party license notice"
+    ],
+    "modelGitBlob": "72fe90a7a52a00ed6ba13baa4a00636906e47219",
+    "runtimeGitBlob": "a2f8395db071ef309b3608b8471fea7e87a265e0",
+    "modelBytes": 9962552,
+    "simulation": "new authored casual controller; not measured SeaLab/yacht dynamics"
+  },
+  "tests": {
+    "standaloneReleaseSuite": {
+      "passed": 106,
+      "failed": 0,
+      "includesC1Tests": false,
+      "scope": "14 new controller/service tests plus 92 generic room/client tests; actual HTTP/TCP, not browser"
+    },
+    "legacyRegressionSeparate": {
+      "passed": 130,
+      "failed": 0,
+      "requiredByStandaloneRelease": false,
+      "overlapsStandaloneSuite": true
+    },
+    "newFocused": {
+      "passed": 14,
+      "failed": 0
+    },
+    "syntax": "PASS JavaScript and Python compile"
+  },
+  "transport": {
+    "node": "v22.16.0",
+    "implementation": "explicit TEST-ONLY preinstalled Playwright bundled ws",
+    "sha256": "6883cf83e2097e5029cce0763832338534a9e1c8e97bf62ca2f083b238613a49",
+    "certifiesPinnedWS": false
+  },
+  "release": {
+    "packageFiles": 22,
+    "packageManifest": "dist-standalone/ASSET-MANIFEST.json",
+    "genuineDependencyInstall": "BLOCKED EAI_AGAIN registry.npmjs.org",
+    "lockfileGenerated": false,
+    "auditPassed": false,
+    "browserScript": "standalone/verify-browser.py written and syntax checked, NOT RUN",
+    "browserPolicyChanged": false,
+    "twoIndependentBrowserMotion": "NOT_VERIFIED",
+    "publicDeployment": "NOT_DEPLOYED",
+    "publicMultiplayerURL": null,
+    "hosting": "Railway and Render unconnected; no service provisioned",
+    "newWorkflowOrDispatch": false,
+    "accountOrBillingChanges": false
+  },
+  "provenanceVerification": {
+    "standaloneTree": "e67bcdf63d30a709b6b1fa375420db56710e24fa",
+    "clientTree": "5f11e8a0efb66f8cbf5132909f52495afa6e6aac",
+    "sharedTree": "26031a7d3e2ab035242f5894946ae34a87d7a137",
+    "allThreeMatchUploadedGitTrees": true
+  },
+  "evidenceFiles": {
+    "focused.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "focused.tap": {
+      "bytes": 3687,
+      "sha256": "c3a0b02f75a48553373b6c2e2b5da1032dda042065b77c20960e88ccc532c1de"
+    },
+    "regression.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "regression.tap": {
+      "bytes": 29810,
+      "sha256": "40f6ca078e5115c8cd2fa83bee233b9d01387b7860eb2587b28612260b9b4a5e"
+    },
+    "source-manifest.json": {
+      "bytes": 5284,
+      "sha256": "3554b2d832ed6e42d3cd30cc99c2a3c810989492d2c592aa691cd3e585a09262"
+    },
+    "standalone-suite.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "standalone-suite.tap": {
+      "bytes": 24524,
+      "sha256": "f4fc9a29c97e2a0293c022412f14f17f93137e7a191372b0c6381823a3778e5b"
+    }
+  },
+  "next": "Authorize one hosting service, run genuine dependency/build gates, execute standalone browser acceptance on authorized machine, deploy separate HTTPS/WSS app; no SeaLab integration prerequisite."
+}
