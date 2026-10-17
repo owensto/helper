@@ -12,7 +12,12 @@ with sync_playwright() as pw:
   c=b.new_context(viewport={'width':w,'height':h},device_scale_factor=1,has_touch=name!='desktop');p=c.new_page();p.set_default_timeout(45000)
   row={'layout':name,'passed':False,'checks':[],'errors':[],'consoleErrors':[],'bindings':{}};report['layouts'].append(row)
   p.on('pageerror',lambda e:row['errors'].append(str(e)))
-  p.on('console',lambda m:row['consoleErrors'].append(m.text) if m.type=='error' else None)
+  def console(m):
+   if m.type=='error':
+    row['consoleErrors'].append(m.text)
+    row.setdefault('consoleErrorDetails',[]).append({'text':m.text,'location':m.location,'pageURL':p.url})
+  p.on('console',console)
+  p.on('requestfailed',lambda q:row.setdefault('networkFailures',[]).append({'url':q.url,'failure':q.failure,'resourceType':q.resource_type,'pageURL':p.url}))
   def bind(r):
    rel='vendor/runtime.js' if r.url.endswith('/vendor/runtime.js') else urlsplit(r.url).path.rsplit('/',1)[-1]
    if rel in ['index.html','style.css','physics.js','model.js','app.js','vendor/runtime.js'] and r.status==200:
@@ -27,6 +32,16 @@ with sync_playwright() as pw:
   def resume():
    if state()['state']['paused']:
     row.setdefault('visibleResumeActions',0);row['visibleResumeActions']+=1;p.locator('#resume').click();p.wait_for_function('!ATLAS83_APP.inspect().state.paused')
+  def drive_wait(expr):
+   for attempt in range(4):
+    p.wait_for_function('ATLAS83_APP.inspect().state.paused || ('+expr+')',timeout=60000)
+    if not state()['state']['paused']:return
+    why=p.locator('#notice').inner_text()
+    row.setdefault('motionRenderStallRecovery',[]).append({'reason':why,'state':state()['state'],'attempt':attempt})
+    assert 'Rendering paused after a long interruption' in why and p.evaluate('!document.hidden'),'Unexpected pause; do not automatically change it'
+    assert attempt<3,'Repeated interruption prevented ordinary operation'
+    resume()
+   raise AssertionError('Motion target not reached')
   def shot(label):
    if not state()['state']['paused']:p.locator('#pause').click()
    p.screenshot(path=str(OUT/(name+'-'+label+'.png')),timeout=60000)
@@ -45,7 +60,7 @@ with sync_playwright() as pw:
    shot('exterior');resume()
    p.locator('#engine').click();p.locator('[data-gear="1"]').click();power=p.locator('#power').bounding_box();p.mouse.click(power['x']+power['width']*.79,power['y']+power['height']/2)
    check('native engine, gear and power applied',state()['state']['engine'] and state()['state']['gear']==1 and state()['state']['port']>.5)
-   before=state()['state'];begin=time.monotonic();p.wait_for_function('ATLAS83_APP.inspect().state.time>'+str(before['time']+2)+' && ATLAS83_APP.inspect().state.speedKnots>.02',timeout=60000);after=state()['state'];row['motion']={'before':before,'after':after,'wallSeconds':time.monotonic()-begin,'acceleratedSteps':False}
+   before=state()['state'];begin=time.monotonic();drive_wait('ATLAS83_APP.inspect().state.time>'+str(before['time']+2)+' && ATLAS83_APP.inspect().state.speedKnots>.02');after=state()['state'];row['motion']={'before':before,'after':after,'wallSeconds':time.monotonic()-begin,'acceleratedSteps':False}
    check('ordinary-loop powered movement',after['x']>before['x'] and after['time']>before['time'])
    helm=p.locator('#helm-input').bounding_box();p.mouse.click(helm['x']+helm['width']*.86,helm['y']+helm['height']/2);p.wait_for_function('ATLAS83_APP.inspect().state.rudder>.01');check('rate-limited rudder responds',state()['state']['helm']>.1 and state()['state']['rudder']>0)
    p.locator('#pause').click();paused=state()['state'];p.wait_for_timeout(900);check('pause freezes numerical vessel state',state()['state']==paused);p.locator('#resume').click();p.wait_for_function('ATLAS83_APP.inspect().state.time>'+str(paused['time']));check('native resume advances',not state()['state']['paused'])
@@ -59,6 +74,8 @@ with sync_playwright() as pw:
    row['final']=state();row['passed']=True
   except Exception as e:
    row['error']=str(e);row['traceback']=traceback.format_exc()
+   try:row['failureState']=state()
+   except Exception:pass
    try:p.screenshot(path=str(OUT/(name+'-FAILURE.png')),timeout=30000)
    except Exception:pass
   finally:c.close();(OUT/'browser.json').write_text(json.dumps(report,indent=2))

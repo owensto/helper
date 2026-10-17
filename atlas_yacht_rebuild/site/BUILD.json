@@ -1,5 +1,5 @@
 {
-  "sourceSHA": "c978dd22f0f4f49103d483818b93d7435bb6844c",
+  "sourceSHA": "ac27d905e6cd69e27ef24cb874a5ecc80ab47554",
   "status": "candidate browser passed; public check follows",
   "newModel": true,
   "originalDemosUnchanged": true,
@@ -7,8 +7,8 @@
   "multiplayer": false,
   "submersible": false,
   "files": {
-    "README.md": "d11e15641c44394bfa8fc34cfefa5ce356952bad6c2bff4f3e72bf79c8b637b4",
-    "app.js": "a54fda8d26adee6a73e0eacfabe2202dfd75dde393e3fb59a87d253b89dcc22d",
+    "README.md": "2d6067c66940ab2ee81f46fbaf32f107cfeff66b16c24926c2794df14f38d6a9",
+    "app.js": "0c99f313fddd4d374a132df0475ae456b57539e16278cc206076e2cbb65faf59",
     "index.html": "aeac1c6348006e01af1d7615d1390d7a9f925b8af73feb87778402888cd42481",
     "model.js": "858057b31d2076f623458dfe704bf338ea7e313d6f81e4a4e95e84f0350cd5b8",
     "physics.js": "a60b52e0771d294e773d6fc4e5a509677d14b1fc26a519dc0f6348f415707627",

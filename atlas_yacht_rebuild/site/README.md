@@ -23,3 +23,5 @@ Run `node test-physics.cjs` from the parent directory. The result publishes repr
 
 ## Build and licensing
 The sole dependency is the repository's unchanged MIT-licensed Three.js r180 runtime at `a2d4eecc12e7b4db14c7f94a6f6fc5088a4061ff:atlas_sealab_12/live/runtime.js`, SHA256 `50a297fabc59ff592031fa916d3fc17511d55747fd11fcdfbd7119bc6148b7f4`. Build copies it to vendor/runtime.js and retains the bundled license. No model, font, texture, audio or paid-service download is needed. All texture artwork is generated in this app. Source/model/dynamics here are independent of the existing CORE, HUMANS and multiplayer workstreams.
+
+The nonuniform near-vessel water grid resolves local waves more densely than the far horizon; the analytical wave values remain the same. Surface scatter/reflection treatment is an authored visual approximation.
