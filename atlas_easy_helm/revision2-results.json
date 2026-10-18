@@ -1,0 +1,55 @@
+{
+  "status": "UNPUBLISHED_REVIEW",
+  "revision": 2,
+  "parentCommit": "94577838da6767363c78cef4ea659cfb9edf095c",
+  "branch": "atlas/easy-helm-country-20261017",
+  "uiTests": {
+    "passed": true,
+    "unique": 58,
+    "originalUnchanged": 34,
+    "usabilityRegression": 8,
+    "guideAndLifecycle": 16,
+    "scope": "CPU plus synthetic DOM/host; no rendered browser"
+  },
+  "beforeRegression": {
+    "passed": 1,
+    "failed": 7,
+    "testedRevision": 1
+  },
+  "inheritedPhysicsWaves": {
+    "passed": true,
+    "unique": 11,
+    "sourceUnchanged": true
+  },
+  "build": {
+    "status": "UNPUBLISHED_REVIEW",
+    "baseCommit": "491fbb0133fde085c03e4ee93db34f4e630a3c42",
+    "baseFiles": 120,
+    "unchangedOwnerFiles": 119,
+    "changedOwnerFiles": [
+      "index.html"
+    ],
+    "entryDelta": "Add four additive stylesheet/script references only",
+    "physicsModified": false,
+    "waterModified": false,
+    "captainModified": false,
+    "browserVerified": false,
+    "touchVerified": false,
+    "providerPlaybackVerified": false,
+    "addedFiles": {
+      "policy.js": "0537303543eb79242d0405fab9342176922b53243025ee3c21dde8bc9c2b2cca",
+      "easy-helm.js": "612799d15dd2a2569361a6aeff8a963db8feeb1b121d40d18e37133c27513ad7",
+      "easy-helm.css": "584654d0c0b5408d0c46f4077b2abda8b4361376ffc12d32f9bbef0a3937270d",
+      "beaufort13-adapter.js": "1c3d83774419b285a82e3ad6ff6b6fb11a099a6983e99f223e0ff940c15f8055"
+    }
+  },
+  "cssParsing": "PASS; not rendering or conformance",
+  "browser": {
+    "attemptedThisPass": false,
+    "previousBlocker": "net::ERR_BLOCKED_BY_ADMINISTRATOR",
+    "passed": false
+  },
+  "published": false,
+  "physicalDeviceTested": false,
+  "providerPlaybackTested": false
+}

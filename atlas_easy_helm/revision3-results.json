@@ -1,0 +1,32 @@
+{
+  "revision": 3,
+  "status": "isolated_review_preview_not_browser_verified",
+  "parentCommit": "6ea9ef89daa5793351251d048d89b27231c629f8",
+  "baseCommit": "491fbb0133fde085c03e4ee93db34f4e630a3c42",
+  "checks": {
+    "unchanged_original_UI_policy": {"passed": true, "count": 34},
+    "unchanged_usability_regressions": {"passed": true, "count": 8},
+    "unchanged_guide_lifecycle": {"passed": true, "count": 16},
+    "new_motor_music_synthetic_DOM": {"passed": true, "count": 19},
+    "actual_published_trim_bus_and_fixed_steps": {"passed": true, "count": 3},
+    "inherited_physics_waves": {"passed": true, "count": 11},
+    "preview_loader_in_memory_only": {"passed": true, "count": 5}
+  },
+  "scope": "CPU policy, synthetic DOM, exact published trim bus and fixed-step model; NOT actual browser, provider playback, rendered graphics, touch or device tests",
+  "initial_fixture_failure": "Three cross-VM array comparisons failed; test value normalization corrected serialization only. Expectations and product gates retained.",
+  "browserVerified": false,
+  "providerPlaybackVerified": false,
+  "physicalDeviceTested": false,
+  "harborGeometryAdded": false,
+  "physicsChanged": false,
+  "ownerFilesBytePreserved": 119,
+  "standaloneEntryDelta": "Six additive stylesheet/script references in copied index only",
+  "previewEntry": "atlas_easy_helm/preview/index.html",
+  "defaultQueues": ["Zach Bryan Favorites", "Country Cruise"],
+  "tracksPerQueue": 6,
+  "musicDelivery": "Artist-site-linked video IDs in visible official YouTube embed, explicit user Play, no audio download or spatial processing",
+  "trimDelivery": "Five-percentage-point target buttons delegated to original SEA09 trim bus; actual target and motor actuator values shown separately",
+  "defaultGameReplaced": false,
+  "core14Integrated": false,
+  "publicServingVerified": false
+}
