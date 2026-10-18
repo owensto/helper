@@ -1,0 +1,103 @@
+name: ATLAS Beaufort cruise static preview
+on:
+  workflow_dispatch:
+  push:
+    branches: ['atlas/beaufort-cruise-20261018']
+    paths:
+      - 'atlas_beaufort_cruise/source/**'
+      - '.github/workflows/atlas-beaufort-cruise.yml'
+permissions:
+  contents: read
+  actions: read
+concurrency:
+  group: atlas-beaufort-cruise-preview
+  cancel-in-progress: false
+jobs:
+  build-publish:
+    if: github.ref == 'refs/heads/atlas/beaufort-cruise-20261018'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 12
+    permissions:
+      contents: write
+      actions: read
+    env:
+      BASE14: /tmp/beaufort-base14
+      EASY4: ${{ github.workspace }}/atlas_easy_helm
+      CRUISE_OUT: ${{ github.workspace }}/atlas_beaufort_cruise/site
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/download-artifact@v4
+        with:
+          github-token: ${{ github.token }}
+          run-id: 39006587019
+          artifact-ids: 12091362853
+          path: /tmp/beaufort-base14
+          merge-multiple: true
+      - name: Build from pinned assets and run CPU checks only
+        run: |
+          python atlas_beaufort_cruise/source/build.py
+          python atlas_beaufort_cruise/source/check.py
+      - name: Prepare a bounded, explicitly unverified browser preview
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import hashlib,json,os,shutil
+          r=Path('atlas_beaufort_cruise');site=r/'site';src=r/'source'
+          report=json.loads((src/'verification.json').read_text())
+          assert report['passed'] and report['checks']==46
+          assert report['browserVerified'] is False and report['GPUVerified'] is False
+          assert report['build']['detailTiles']==64 and report['build']['collidersRetained']==2921
+          assert not (r/'transport').exists(),'Rejected staging data must not be executed or included'
+          assert not any(p.suffix.lower() in ['.ttf','.otf','.woff','.woff2'] for p in site.rglob('*'))
+          shutil.copy2(src/'README.md',r/'README.md')
+          files={str(p.relative_to(site)):hashlib.sha256(p.read_bytes()).hexdigest() for p in site.rglob('*') if p.is_file()}
+          record={'status':'PUBLIC_REVIEW_CANDIDATE','source_commit':os.environ['GITHUB_SHA'],'build_run':os.environ['GITHUB_RUN_ID'],'cpu_checks_passed':46,'browserVerified':False,'GPUVerified':False,'actualMusicPlaybackVerified':False,'physicalDeviceVerified':False,'finiteMappedRegion':True,'files':files}
+          (r/'BUILD.json').write_text(json.dumps(record,indent=2)+'\n')
+          PY
+      - name: Commit complete static assets to this isolated branch only
+        id: publication
+        run: |
+          git config user.name 'ATLAS preview build'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -f atlas_beaufort_cruise/site atlas_beaufort_cruise/README.md atlas_beaufort_cruise/BUILD.json atlas_beaufort_cruise/source/build-report.json atlas_beaufort_cruise/source/verification.json atlas_beaufort_cruise/source/checks
+          git diff --cached --name-only | grep -q '^atlas_beaufort_cruise/'
+          test -z "$(git diff --cached --name-only | grep -v '^atlas_beaufort_cruise/' || true)"
+          git commit -m 'Publish separate Beaufort cruise static candidate with streamed detail, piers, music and trim [skip ci]'
+          git push origin HEAD:refs/heads/atlas/beaufort-cruise-20261018
+          echo "commit=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+      - name: Record the exact public repository URL and make a portable copy
+        env:
+          PUBLIC_COMMIT: ${{ steps.publication.outputs.commit }}
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import json,os,shutil
+          r=Path('atlas_beaufort_cruise');out=Path('/tmp/atlas-beaufort-delivery');out.mkdir()
+          sha=os.environ['PUBLIC_COMMIT'];url=f'https://rawcdn.githack.com/owensto/helper/{sha}/atlas_beaufort_cruise/site/index.html'
+          d={'url':url,'published_commit':sha,'status':'STATIC_PREVIEW_COMMITTED','source_commit':os.environ['GITHUB_SHA'],'build_run':os.environ['GITHUB_RUN_ID'],'cpu_checks_passed':46,'browserVerified':False,'CDNVerified':False,'physicalDeviceVerified':False,'note':'Complete static site committed. No browser navigation, provider playback, public response or GPU verification was performed.'}
+          (r/'DELIVERY.json').write_text(json.dumps(d,indent=2)+'\n')
+          for name in ['README.md','BUILD.json','DELIVERY.json']:shutil.copy2(r/name,out/name)
+          shutil.copy2(r/'source/verification.json',out/'verification.json')
+          pkg=out/'Atlas_Beaufort_Cruise';shutil.copytree(r/'site',pkg/'site');shutil.copytree(r/'source',pkg/'source',ignore=shutil.ignore_patterns('__pycache__'))
+          shutil.copy2(r/'README.md',pkg/'README.md');shutil.copy2(r/'DELIVERY.json',pkg/'PLAY_ONLINE.json')
+          shutil.make_archive(str(out/'Atlas_Beaufort_Cruise'),'zip',root_dir=pkg)
+          shutil.rmtree(pkg)
+          PY
+          git add atlas_beaufort_cruise/DELIVERY.json
+          git commit -m 'Record Beaufort cruise preview link and explicit untested browser status [skip ci]'
+          git push origin HEAD:refs/heads/atlas/beaufort-cruise-20261018
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ATLAS-Beaufort-Cruise-Preview
+          path: |
+            /tmp/atlas-beaufort-delivery/
+            atlas_beaufort_cruise/source/checks/
+            atlas_beaufort_cruise/source/verification.json
+          retention-days: 30

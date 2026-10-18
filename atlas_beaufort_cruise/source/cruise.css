@@ -1,0 +1,69 @@
+/* Native controls retained. One coherent Waterfront14 layout receives trim and music. */
+#helm09.beaufort-cruise{--bc-ink:#123f43;--bc-paper:#f4f3e9;--bc-line:#688986;--bc-dock:260px}
+#helm09.beaufort-cruise .h09-dock{grid-template-columns:130px 170px minmax(180px,1fr) minmax(180px,1fr) 160px;max-width:1120px;gap:14px}
+#helm09.beaufort-cruise #eh-trim-controls{grid-column:5;grid-row:1;border:0;padding:0;align-content:center;gap:5px;color:#f5f6ef}
+#helm09.beaufort-cruise #eh-trim-controls>strong{display:none}
+#helm09.beaufort-cruise .eh-trim-buttons{gap:6px}
+#helm09.beaufort-cruise .eh-trim-buttons button{min-height:48px;font-size:15px}
+#helm09.beaufort-cruise .s11-quick{display:none!important}
+#helm09.beaufort-cruise .bc-stream-status{position:absolute;top:67px;left:20px;color:#e5f3e9;background:#153b43d9;padding:4px 9px;border-radius:8px;font-size:11px;pointer-events:none;max-width:calc(100vw - 40px)}
+#helm09.beaufort-cruise .bc-playlists{padding-bottom:20px;margin-bottom:14px;border-bottom:1px solid #6c8980}
+#helm09.beaufort-cruise .bc-music-card{background:#e6ebe0;color:#153e3a;border:1px solid #b1c5b9;padding:16px;border-radius:14px;margin:12px 0;display:flex;flex-direction:column;gap:8px}
+#helm09.beaufort-cruise .bc-music-card>strong{font-size:21px}
+#helm09.beaufort-cruise .bc-music-card>small{font-size:14px}
+#helm09.beaufort-cruise .bc-music-card button{min-height:48px;font-size:16px;white-space:normal;line-height:1.4}
+#helm09.beaufort-cruise .bc-music-card details button{display:block;width:100%;text-align:left;margin:8px 0}
+#helm09.beaufort-cruise .bc-music-card summary{min-height:44px;line-height:44px;font-size:16px;cursor:pointer}
+#helm09.beaufort-cruise .bc-small{font-size:13px!important;line-height:1.5}
+#helm09.beaufort-cruise #bc-voyage{position:absolute;top:240px;left:16px;width:320px;box-sizing:border-box;padding:12px 14px;border-radius:14px;background:#f4f3e9f2;color:#123f43;pointer-events:auto;z-index:9;display:grid;grid-template-columns:1fr auto;gap:8px}
+#bc-voyage>strong,#bc-voyage>span,#bc-voyage>small{grid-column:1/-1}#bc-voyage>strong{font-size:18px}#bc-voyage>small{font-size:13px;line-height:1.4}
+#helm09.beaufort-cruise #bc-voyage button{min-height:44px;font-size:15px;background:#245d55;color:white}
+#helm09.beaufort-cruise.s11-panel-open #bc-voyage,#helm09.beaufort-cruise.s12-map-open #bc-voyage,#helm09.beaufort-cruise.eh-music-open #bc-voyage{display:none}
+#helm09.beaufort-cruise [hidden]{display:none!important}
+#helm09.beaufort-cruise .h09-top .h09-tools #helm09-boat{display:none}
+#helm09.beaufort-cruise .eh-cruise-audio{top:235px;left:16px;width:340px}
+#helm09.beaufort-cruise .eh-cruise-audio .eh-audio-options select{background:#163e47;color:#fff}
+#helm09.beaufort-cruise .eh-motor-notice{top:202px;font-size:12px;max-width:450px}
+@media(max-width:900px) and (min-height:561px){
+ #helm09.beaufort-cruise .h09-dock{grid-template-columns:repeat(12,minmax(0,1fr));padding:10px;gap:8px;bottom:calc(65px + env(safe-area-inset-bottom,0px));max-width:none}
+ #helm09.beaufort-cruise .h09-dock .h09-key{grid-column:1/5;grid-row:1;min-height:52px;gap:6px;font-size:15px}
+ #helm09.beaufort-cruise .h09-key small{display:none}
+ #helm09.beaufort-cruise .h09-gears{grid-column:5/-1;grid-row:1;gap:5px}
+ #helm09.beaufort-cruise .h09-gears button{font-size:13px;min-width:44px;min-height:52px}
+ #helm09.beaufort-cruise .h09-throttle{grid-column:1/-1;grid-row:2;font-size:13px}
+ #helm09.beaufort-cruise .h09-steering{grid-column:1/8;grid-row:3;font-size:13px}
+ #helm09.beaufort-cruise .s11-steer-row{gap:5px}
+ #helm09.beaufort-cruise .s11-steer-row button{font-size:12px;min-width:44px;min-height:52px;padding:6px 1px}
+ #helm09.beaufort-cruise #eh-trim-controls{grid-column:8/-1;grid-row:3;display:flex;flex-direction:column;justify-content:flex-end;gap:4px}
+ #helm09.beaufort-cruise #eh-trim-value{font-size:12px;min-height:16px}
+ #helm09.beaufort-cruise .eh-trim-buttons button{min-width:44px;min-height:52px;padding:6px 2px;font-size:14px}
+ #helm09.beaufort-cruise .bc-stream-status{left:8px;top:62px;font-size:10px;padding:2px 8px}
+ #helm09.beaufort-cruise .h09-views{display:none!important}
+ #helm09.beaufort-cruise .h09-heading{display:none}
+ #helm09.beaufort-cruise .eh-cruise-audio{top:154px;left:8px;right:8px;width:auto;max-height:calc(100dvh - 470px);overflow:auto}
+ #helm09.beaufort-cruise .h09-panel{top:78px;bottom:calc(65px + env(safe-area-inset-bottom,0px));overscroll-behavior:contain}
+ #helm09.beaufort-cruise #bc-voyage{top:160px;left:8px;width:calc(100vw - 16px);max-height:170px;overflow:auto}
+ #helm09.beaufort-cruise #helm09-alert{top:150px}
+ #helm09.beaufort-cruise .eh-motor-notice{top:148px;max-width:none}
+ #helm09.beaufort-cruise .eh-queue-player.eh-player-docked{top:82px;width:calc(100vw - 16px);left:8px;right:8px}
+ #helm09.beaufort-cruise.eh-music-open .h09-panel,#helm09.beaufort-cruise.eh-music-open #helm09-mapcard{top:390px;bottom:65px;min-height:90px;max-height:none}
+ #helm09.beaufort-cruise.eh-music-open.s11-panel-open .h09-dock{visibility:hidden}
+ #helm09.beaufort-cruise .h09-top .h09-tools button{font-size:14px!important;min-height:50px}
+}
+@media(max-height:560px) and (max-width:1000px){
+ #helm09.beaufort-cruise .h09-dock{top:6px;bottom:62px;right:6px;left:auto;width:286px;max-width:none;grid-template-columns:repeat(12,minmax(0,1fr));gap:6px;padding:8px;overflow:auto;align-content:start}
+ #helm09.beaufort-cruise .h09-dock .h09-key{grid-column:1/-1;grid-row:1;min-height:44px;padding:4px}
+ #helm09.beaufort-cruise .h09-gears{grid-column:1/-1;grid-row:2}
+ #helm09.beaufort-cruise .h09-throttle{grid-column:1/-1;grid-row:3}
+ #helm09.beaufort-cruise .h09-steering{grid-column:1/8;grid-row:4}
+ #helm09.beaufort-cruise #eh-trim-controls{grid-column:8/-1;grid-row:4;display:flex;flex-direction:column;justify-content:flex-end;gap:4px}
+ #helm09.beaufort-cruise .eh-trim-buttons button{min-width:44px;min-height:44px;font-size:12px;padding:4px 1px}
+ #helm09.beaufort-cruise .h09-top,#helm09.beaufort-cruise #helm09-readouts{right:300px}
+ #helm09.beaufort-cruise .h09-views{display:none!important}
+ #helm09.beaufort-cruise .bc-stream-status{top:55px;left:8px;font-size:9px}
+ #helm09.beaufort-cruise #bc-voyage{top:145px;left:8px;width:calc(100vw - 310px);max-height:140px;overflow:auto}
+ #helm09.beaufort-cruise .eh-cruise-audio{top:135px;left:8px;width:calc(100vw - 310px);max-height:calc(100dvh - 210px);overflow:auto}
+ #helm09.beaufort-cruise .eh-queue-player.eh-player-docked{top:60px;left:8px;right:auto;width:calc(100vw - 310px);max-width:480px}
+ #helm09.beaufort-cruise .h09-panel,#helm09.beaufort-cruise #helm09-mapcard{right:300px}
+}
+@media(prefers-reduced-motion:reduce){#helm09.beaufort-cruise *{scroll-behavior:auto!important}}
