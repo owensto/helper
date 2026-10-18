@@ -1,0 +1,58 @@
+{
+  "status": "REVIEW_ONLY",
+  "parent": "29f863c859c04c31e12af6ced7854cd27feb43a7",
+  "base": "491fbb0133fde085c03e4ee93db34f4e630a3c42",
+  "testGroups": {
+    "test": 34,
+    "test-usability": 8,
+    "test-guide": 16,
+    "test-motor-music": 19,
+    "audio-final": 15,
+    "water-final": 17,
+    "native-audio-first": 7,
+    "trim": 3,
+    "loader-final": 5,
+    "waterfront-receiving": 5
+  },
+  "uniqueChecksIncludingInheritedBoat": 140,
+  "allListedChecksPassed": true,
+  "physicalDeviceTested": false,
+  "newBrowserRun": false,
+  "publicPlaybackVerified": false,
+  "gpuShaderCompiled": false,
+  "ownerAssetFilesChanged": false,
+  "runtimeWakeOpticsRefined": true,
+  "newMarinaInPreview": false,
+  "waterMetrics": {
+    "expiryHeightJumpMetres": {
+      "before": 0.01780318604601645,
+      "after": 0,
+      "sampleIntervalSeconds": 0.0002
+    },
+    "oneMetreDepthSixtyDegrees": {
+      "oldUnbentPath": 2,
+      "cosWater": 0.7602065399429698,
+      "path": 1.3154319878319112,
+      "fresnel": 0.0510125,
+      "transmission": 0.7850251796231673,
+      "alpha": 0.25502091735235954
+    },
+    "productionFixedStep": {
+      "seconds": 40,
+      "finite": true,
+      "maximumPacketCapacity": 12,
+      "finalSpeed": 2.9603749157894725,
+      "finalPitch": 0.13159258999442738
+    }
+  },
+  "nativeRadioFixtureMetrics": {
+    "directGain": 0.27,
+    "boatGain": {
+      "near": 0.27,
+      "fortyMetres": 0.08615188257817487,
+      "filterHz": 2400,
+      "pan": -0.75
+    }
+  },
+  "waterfrontProposalAppliedToOwner": false
+}

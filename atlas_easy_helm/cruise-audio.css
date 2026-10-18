@@ -1,0 +1,42 @@
+/* Radio stays out of the throttle/steering area; all new controls remain labeled. */
+#helm09 .eh-cruise-audio{position:absolute;top:150px;left:12px;width:min(460px,calc(100vw - 24px));box-sizing:border-box;background:#102e39f5;color:#f1f6f3;border:1px solid #66818a;border-radius:14px;pointer-events:auto;z-index:17;padding:8px 10px;box-shadow:0 6px 24px #071c2840}
+#helm09 .eh-cruise-audio[hidden]{display:none!important}
+#helm09 .eh-audio-bar{display:flex;align-items:center;gap:7px}
+#helm09 .eh-audio-now{flex:1;min-width:0;display:flex;flex-direction:column;gap:4px}
+#helm09 .eh-audio-now strong{font-size:15px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+#helm09 .eh-audio-now span{font-size:12px;color:#d3e5df}
+#helm09 .eh-audio-bar button{min-width:48px;min-height:48px;font-size:14px;padding:8px;white-space:nowrap}
+#helm09 .eh-audio-options summary{font-size:14px;min-height:36px;display:flex;align-items:center;cursor:pointer;text-decoration:underline}
+#helm09 .eh-audio-options select,#helm09 .eh-audio-options input[type=range]{font-size:16px;min-height:44px;width:100%;margin:6px 0;box-sizing:border-box}
+#helm09 .eh-keep-music{display:flex;align-items:center;gap:12px;font-size:15px;line-height:1.45;min-height:48px}
+#helm09 .eh-keep-music input{width:26px;height:26px;flex:0 0 26px}
+#helm09 .eh-audio-note{font-size:13px!important;line-height:1.45!important;color:#d3e5df!important;margin:8px 0!important}
+#helm09 #eh-cruise-status:empty{display:none}
+#helm09.eh-audio-active #eh-bottom-status{top:var(--eh-audio-bottom,270px)}
+/* Compact YouTube mode keeps the VIDEO visible, not an audio-only mini player. */
+#helm09 .eh-queue-player.eh-player-docked{top:82px;right:12px;left:auto;width:320px;max-height:none;overflow:visible}
+#helm09 .eh-player-docked .eh-queue-heading{padding:4px 8px;gap:6px}
+#helm09 .eh-player-docked .eh-queue-heading strong{font-size:14px}
+#helm09 .eh-player-docked .eh-queue-heading button{min-width:44px;min-height:44px;font-size:13px;padding:6px}
+#helm09 .eh-player-docked .eh-queue-frame iframe{height:200px;min-height:200px;min-width:200px}
+#helm09 .eh-player-docked .eh-queue-status{display:none}
+#helm09 .eh-player-docked>a{font-size:12px;min-height:28px;padding:5px 8px}
+#helm09 .eh-queue-tools{display:flex;gap:8px;padding:4px 10px 10px}
+#helm09 .eh-queue-tools button{font-size:14px;min-height:44px}
+#helm09 .eh-player-docked .eh-queue-tools{display:none}
+#helm09 .eh-player-docked #eh-drive-music{display:none}
+@media(min-width:901px){#helm09.eh-music-open .h09-panel{left:12px;right:auto;width:min(520px,calc(100vw - 370px))}#helm09.eh-music-open #helm09-mapcard{left:12px;right:auto;width:min(520px,calc(100vw - 370px))}}
+@media(max-width:900px) and (min-height:561px){
+ #helm09.eh-easy .eh-cruise-audio{top:150px;left:8px;right:8px;width:auto}
+ #helm09.eh-easy.eh-audio-active #eh-bottom-status{display:none}
+ #helm09 .eh-queue-player.eh-player-docked{top:72px;right:8px;left:auto;width:min(320px,calc(100vw - 16px));min-height:0}
+ #helm09.eh-music-open .h09-panel,#helm09.eh-music-open #helm09-mapcard{top:398px;bottom:calc(var(--eh-control-reserve,310px) + 8px);min-height:90px;max-height:none;z-index:16}
+ #helm09 .eh-cruise-audio:has(details[open]){max-height:calc(100dvh - var(--eh-control-reserve,320px) - 160px);overflow:auto;overscroll-behavior:contain}
+}
+@media(max-height:560px){
+ #helm09 .eh-queue-player.eh-player-docked{left:8px;right:auto;top:56px;bottom:auto;width:300px;max-height:none;min-height:0}
+ #helm09 .eh-player-docked .eh-queue-frame iframe{height:200px}
+ #helm09 .eh-player-docked .eh-queue-tools{display:none}
+ #helm09 .eh-cruise-audio{left:8px;top:72px;width:280px;max-height:calc(100dvh - 88px);overflow:auto}
+ #helm09.eh-music-open .h09-panel,#helm09.eh-music-open #helm09-mapcard{left:320px;right:8px;top:72px;bottom:8px;width:auto}
+}

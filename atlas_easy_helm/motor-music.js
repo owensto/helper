@@ -51,7 +51,10 @@ function install(host){
  const heading=el('div','','eh-queue-heading'),title=el('strong'),closeButton=el('button','Close music');closeButton.type='button';closeButton.id='eh-close-queue';
  heading.append(title,closeButton);const mount=el('div','','eh-queue-frame'),message=el('p','','eh-queue-status');message.setAttribute('role','status');
  const fallback=el('a','Open selected song on YouTube ↗');fallback.target='_blank';fallback.rel='noopener noreferrer';
- panel.append(heading,mount,message,fallback);own(panel,app);
+ const tools=el('div','','eh-queue-tools'),drive=el('button','Drive with music'),full=el('button','Larger player');drive.type=full.type='button';drive.id='eh-drive-music';full.id='eh-expand-music';tools.append(drive,full);
+ panel.append(heading,mount,message,tools,fallback);own(panel,app);
+ function dockPlayer(){if(!queue||!local())return;panel.classList.add?panel.classList.add('eh-player-docked'):panel.classList.toggle('eh-player-docked',true);host.closePanel?.();}
+ on(drive,'click',dockPlayer);on(full,'click',()=>{if(local())panel.classList.toggle('eh-player-docked',false);});
  function close(reason=''){if(video){video.remove();video=null;}mount.replaceChildren();queue=null;panel.hidden=true;app.classList.remove('eh-music-open');if(reason)notice.textContent=reason;}
  function openQueue(id,index=0){if(!local())throw Error('This preview supports the local boat only.');const q=selectQueue(id,index),src=embedURL(id,index);
   host.stopOtherMusic();close();queue=q;title.textContent=q.name;fallback.href='https://www.youtube.com/watch?v='+q.tracks[0].id;
@@ -65,12 +68,12 @@ function install(host){
  // A separate native player/local source must not continue underneath this one.
  const nativeMusicIds=new Set(['helm09-addmedia','helm09-localplay','helm09-next','helm09-prev','helm09-localfiles','s12-reopenmusic','s12-samplemusic']);
  const toolIds=new Set(['helm09-map','helm09-radio','helm09-boat','helm09-settings','helm10-weather','eh-help']);
- on(D,'click',e=>{let n=e.target;while(n&&n!==D){if(nativeMusicIds.has(n.id)||toolIds.has(n.id)){close();break;}n=n.parentNode;}},true);
+ on(D,'click',e=>{let n=e.target;while(n&&n!==D){if(nativeMusicIds.has(n.id)){close();break;}if(toolIds.has(n.id)&&queue){panel.classList.toggle('eh-player-docked',true);break;}n=n.parentNode;}},true);
  on(W,'keydown',e=>{if(e.code==='Escape'&&queue){close();}});
  function update(){if(disposed)return;if(!local()){close();down.disabled=up.disabled=true;readout.textContent='Trim unavailable';return;}if(D.hidden)return;let s;try{s=host.read();}catch(_){s=null;}const t=trimState(s);down.disabled=!t.available||t.target<=0;up.disabled=!t.available||t.target>=1;const text=t.label;if(text!==last){readout.textContent=text;last=text;}trim.dataset.high=String(!!t.high);}
  const timer=host.setInterval(update,200);update();
  function dispose(){if(disposed)return;close();disposed=true;host.clearInterval(timer);handlers.forEach(([n,t,f,c])=>n.removeEventListener(t,f,c));handlers.length=0;owned.forEach(n=>n.remove());}
- return Object.freeze({presets,openQueue,close,dispose,inspect:()=>({installed:!disposed,queue:queue?.id||null,iframeCount:video?1:0,tracks:queue?.tracks.length||0,automaticPlayback:false,spatialYouTube:false,physicsChanged:false})});
+ return Object.freeze({presets,openQueue,close,dockPlayer,dispose,inspect:()=>({installed:!disposed,queue:queue?.id||null,iframeCount:video?1:0,tracks:queue?.tracks.length||0,automaticPlayback:false,spatialYouTube:false,physicsChanged:false,continuesDuringDriving:true,keepsVisibleDuringMenus:true})});
 }
 return Object.freeze({presets,selectQueue,embedURL,trimState,trimTarget,install});
 });

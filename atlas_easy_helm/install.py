@@ -1,14 +1,15 @@
 #!/usr/bin/env python3
 """Build an isolated review site from exact public Beaufort13; never patch in place.
 Usage: python install.py --base /path/to/public13/site --out /path/to/new-review
-No credentials, network, dependency installation, physics changes or deployment.
+No credentials, network, dependency installation or deployment.
+Adds shared wake-envelope and optical refinements; preserves original coefficients.
 """
 from __future__ import annotations
 import argparse, hashlib, json, shutil
 from pathlib import Path
 
 HERE=Path(__file__).resolve().parent
-FILES=('policy.js','motor-music.js','motor-music.css','easy-helm.js','easy-helm.css','beaufort13-adapter.js')
+FILES=('policy.js','motor-music.js','motor-music.css','cruise-audio.js','cruise-audio.css','water-refinements.js','easy-helm.js','easy-helm.css','beaufort13-adapter.js')
 
 def digest(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
@@ -30,18 +31,21 @@ def build(base: Path, out: Path) -> dict:
         raise ValueError('Unexpected or already modified entry document.')
     for name in FILES:
         if not (HERE/name).is_file():raise ValueError('Missing add-on file: '+name)
+    wave_tag='<script defer src="waves11.js"></script>'
+    if text.count(wave_tag)!=1:raise ValueError('Wave initialization order changed.')
+    text=text.replace(wave_tag,wave_tag+'<script defer src="easy-helm/water-refinements.js"></script>')
     shutil.copytree(base,out)
     (out/'easy-helm').mkdir()
     for name in FILES:shutil.copy2(HERE/name,out/'easy-helm'/name)
-    tags='\n<link rel="stylesheet" href="easy-helm/easy-helm.css"><link rel="stylesheet" href="easy-helm/motor-music.css">\n'+''.join(
-        f'<script defer src="easy-helm/{name}"></script>\n' for name in ('policy.js','motor-music.js','easy-helm.js','beaufort13-adapter.js'))
+    tags='\n<link rel="stylesheet" href="easy-helm/easy-helm.css"><link rel="stylesheet" href="easy-helm/motor-music.css"><link rel="stylesheet" href="easy-helm/cruise-audio.css">\n'+''.join(
+        f'<script defer src="easy-helm/{name}"></script>\n' for name in ('policy.js','motor-music.js','cruise-audio.js','easy-helm.js','beaufort13-adapter.js'))
     (out/'index.html').write_text(text.replace('</head>',tags+'</head>'))
     unchanged=[name for name,h in original.items() if name!='index.html' and digest(out/name)==h]
     if len(unchanged)!=len(original)-1:raise RuntimeError('Unexpected owner-asset change.')
     report={'status':'UNPUBLISHED_REVIEW','baseCommit':pins['commit'],'baseFiles':len(original),
             'unchangedOwnerFiles':len(unchanged),'changedOwnerFiles':['index.html'],
-            'entryDelta':'Add six additive stylesheet/script references only',
-            'physicsModified':False,'waterModified':False,'captainModified':False,
+            'entryDelta':'Add nine references; wave refinement initializes before owner physics/water',
+            'physicsModified':True,'vesselCoefficientsChanged':False,'waterModified':True,'captainModified':False,
             'browserVerified':False,'touchVerified':False,'providerPlaybackVerified':False,
             'addedFiles':{name:digest(HERE/name) for name in FILES}}
     (out/'easy-helm-review.json').write_text(json.dumps(report,indent=2)+'\n')
