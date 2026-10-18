@@ -75,3 +75,35 @@
 /* Read-only layout measurement follows actual dock height, text and orientation. */
 #helm09.eh-easy .h09-top{min-width:0}
 @media(min-width:901px){#helm09 #eh-help{display:none}#helm09 #eh-toggle{min-width:80px;font-size:13px;padding:8px}#helm09.eh-easy .h09-brand{min-width:100px}}
+
+/* V2: a contextual first-trip guide instead of another permanent toolbar. */
+#helm09 .eh-guided-help{padding:8px 0 16px;border-bottom:1px solid #66818a;margin-bottom:16px}
+#helm09 #eh-begin-guide{width:100%;min-height:56px;font-size:18px;background:#c5e8d1;color:#183b35}
+#helm09 #eh-end-guide{min-height:44px;min-width:82px;font-size:14px;flex-shrink:0;pointer-events:auto;padding:10px;white-space:nowrap}
+#helm09 #eh-end-guide[hidden]{display:none!important}
+#helm09.eh-guide-active #eh-next-step{display:flex;position:absolute;left:16px;right:16px;bottom:calc(var(--eh-control-reserve,260px) + 8px);align-items:center;gap:12px;padding:12px;background:#102e39f5;color:#f4f7f1;border:1px solid #66818a;border-radius:12px;font-size:16px;line-height:1.4;z-index:8;pointer-events:none}
+#helm09.eh-guide-active #eh-coach-instruction{flex:1;min-width:0}
+#helm09.eh-guide-active .eh-guide-target{outline:3px solid #ffe38b;outline-offset:2px}
+#helm09.eh-guide-active.s11-panel-open #eh-next-step,#helm09.eh-guide-active.s12-map-open #eh-next-step{display:none!important}
+#helm09.eh-large #eh-coach-instruction{font-size:18px}
+@media(min-width:901px){#helm09 #eh-toggle,#helm09 #eh-help{display:none}}
+@media(max-width:900px) and (min-height:561px){
+ #helm09.eh-easy .eh-grid{gap:12px}
+ #helm09.eh-guide-active #eh-next-step{left:8px;right:8px;font-size:14px;padding:9px;gap:8px}
+ #helm09.eh-guide-active #eh-end-guide{min-width:72px;font-size:13px}
+ #helm09.eh-easy .h09-panel,#helm09.eh-easy #helm09-mapcard{overscroll-behavior:contain;-webkit-overflow-scrolling:touch}
+ #helm09.eh-easy #helm09-panelbody{padding-bottom:28px}
+}
+@media(max-width:900px) and (min-height:561px) and (max-height:720px){
+ #helm09.eh-easy #eh-bottom-status{display:none}
+ #helm09.eh-easy:not(.eh-guide-active) #eh-next-step{font-size:13px;padding:5px 8px}
+}
+@media(max-height:560px) and (max-width:1000px){
+ #helm09.eh-easy .h09-dock{max-height:calc(100dvh - 82px - env(safe-area-inset-bottom,0px));overflow-y:auto;overscroll-behavior:contain}
+ #helm09.eh-guide-active #eh-next-step{top:154px;bottom:auto;left:8px;right:320px;padding:9px;font-size:13px;flex-wrap:wrap}
+ #helm09.eh-guide-active #eh-end-guide{min-height:44px;font-size:13px}
+ #helm09.eh-easy .h09-panel{top:68px;bottom:8px;max-height:none;overflow-y:auto}
+ #helm09 .eh-announcement{bottom:64px;right:320px;left:8px;max-width:none;font-size:13px}
+}
+
+#helm09 #eh-next-step[hidden],#helm09 #eh-bottom-status[hidden]{display:none!important}

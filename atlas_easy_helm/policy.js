@@ -71,17 +71,32 @@
     if (!Number.isFinite(c)) return { tone: 'unknown', headline: 'Water depth ' + water, detail: 'Clearance under boat unknown.' };
     const part = sample.contact.part === 'PROP' ? 'propeller' : 'hull';
     if (c <= 0) return { tone: 'contact', headline: 'Bottom contact', detail: part + ' is touching the bottom. Reduce power.' };
-    const gap = (c * factor).toFixed(1) + ' ' + unit;
+    const gap = c * factor < 0.05 ? 'Less than 0.1 ' + unit : (c * factor).toFixed(1) + ' ' + unit;
     return { tone: c < 0.55 ? 'shallow' : 'depth', headline: gap + ' under ' + part,
       detail: 'Water depth ' + water + (c < 0.55 ? ' · Shallow water' : ' · Not a safe-route guarantee') };
   }
-  function nextInstruction(state) {
-    if (!state || state.destroyed10 || state.engineDisabled10) return 'Boat disabled. Open More for recovery.';
+  function nextInstruction(state, context = {}) {
+    if (!state) return 'Boat information unavailable. Pause before continuing.';
+    if (context.paused === true) return 'Paused. Press Resume when you are ready.';
+    if (state.destroyed10 || state.engineDisabled10) return 'Boat disabled. Open More for recovery.';
     if (state.startTimer > 0) return 'Engine starting…';
     if (!state.engine) return '1. Turn the key to start the engine.';
     if (!state.gear) return '2. Select Forward or Reverse.';
-    if (!(state.throttle > 0)) return '3. Tap + to add power gradually.';
+    if (!(state.throttle > 0)) return Math.abs(state.u || 0) > .2 ? 'Power at idle. The boat is still coasting; idle is not a brake.' : '3. Tap + to add power gradually.';
     return state.gear < 0 && state.u > 0.2 ? 'Reverse selected. Forward momentum is still slowing.' : 'Hold Left or Right to turn; release to straighten.';
+  }
+  // Read-only coaching. This selects instructions, never throttle, steering or time.
+  function guideStep(state, context = {}) {
+    if (!state) return {key:'unavailable',step:0,title:'Boat information unavailable',message:'Pause before continuing.',targets:[]};
+    if (state.destroyed10 || state.engineDisabled10) return {key:'disabled',step:0,title:'Boat disabled',message:'Open More for recovery. Nothing is reset automatically.',targets:[]};
+    if (context.paused === true) return {key:'paused',step:0,title:'Paused',message:'Press Resume when you are ready. Your guide will continue.',targets:['helm09-pause']};
+    if (context.depth?.tone === 'contact' || state.grounded === true) return {key:'contact',step:0,title:'Bottom contact',message:'Reduce power. Check the depth and use recovery if stuck.',targets:['s11-less']};
+    if (state.startTimer > 0) return {key:'starting',step:1,title:'Engine starting',message:'Wait for the engine to finish starting.',targets:[]};
+    if (!state.engine) return {key:'ignition',step:1,title:'Turn the key',message:'Tap Turn key on the driving panel. You stay in control.',targets:['helm09-key']};
+    if (state.gear !== 1 && state.gear !== -1) return {key:'direction',step:2,title:'Choose a direction',message:'Tap Forward to head ahead, or Reverse to move astern.',targets:['eh-native-gears']};
+    if (state.gear < 0 && state.u > .2) return {key:'reverse',step:3,title:'Reverse selected',message:'Forward momentum is still slowing. Reverse is not an instant stop.',targets:[]};
+    if (!(state.throttle > 0)) return {key:'power',step:3,title:'Add power gradually',message:Math.abs(state.u || 0)>.2?'You are coasting. Tap + only when you are ready to add power.':'Tap + once, then watch your speed. Use − to reduce power.',targets:['s11-more','s11-less']};
+    return {key:'steer',step:4,title:'Steer and watch the water',message:'Hold Left or Right for a gentle turn. Release to straighten. Keep an eye on depth.',targets:['s11-left','s11-right','s11-center']};
   }
   function createActions(host) {
     if (!host || ['dispatch','read','isLocal','pause','panel','weather','option','view'].some(k => typeof host[k] !== 'function')) throw Error('An explicit local host adapter is required.');
@@ -89,10 +104,11 @@
     return Object.freeze({
       coast() { ready(); host.dispatch('throttle',0); }, // Not a brake or anchor.
       pauseHelp() { ready(); host.pause(true); host.panel('help'); },
+      resumeGuide() { ready(); if (typeof host.closePanel !== 'function') throw Error('This host does not support the guide yet.'); host.closePanel(); host.pause(false); },
       weather(name) { ready(); if (!['clear','breeze','swell','rain','fog','squall'].includes(name)) throw Error('Unknown weather preset.'); host.weather(name); },
       option(name,value) { ready(); if (!['docking','steadyCamera','shallowAssist','spokenAlerts','feet','hotspots'].includes(name) || typeof value !== 'boolean') throw Error('Unsupported assistance option.'); host.option(name,value); },
       view(name) { ready(); if (!['helm','follow','orbit','deck','engine','instruments'].includes(name)) throw Error('Unknown view.'); host.view(name); }
     });
   }
-  return Object.freeze({ DEFAULTS,MAX_FAVORITES,preferences,mediaLink,favorites,addFavorite,depthStatus,nextInstruction,createActions });
+  return Object.freeze({ DEFAULTS,MAX_FAVORITES,preferences,mediaLink,favorites,addFavorite,depthStatus,nextInstruction,guideStep,createActions });
 });
