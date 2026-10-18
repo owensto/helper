@@ -81,7 +81,14 @@
       section.append(el('p','Your own music files use the boat speakers. YouTube uses its visible player. Spotify opens in its own app.','eh-note'));
       const shortcuts=el('div','','eh-grid');
       function link(text,url) { const a=el('a',text,'eh-link');a.href=url;a.target='_blank';a.rel='noopener noreferrer';return a; }
-      shortcuts.append(link('Zach Bryan · choose a service','https://zachbryan.lnk.to/SomethingInTheOrangeZE'),link('Find country on YouTube','https://www.youtube.com/results?search_query=country+music+official'));
+      const music=host.music;
+      if(music?.presets?.length){
+        for(const preset of music.presets){const card=el('section','','eh-playlist-card');card.append(el('h4',preset.name),el('p',preset.description,'eh-note'));
+          card.append(button('Load '+preset.name,()=>{music.openQueue(preset.id);},'eh-play-'+preset.id));
+          const songs=el('details'),summary=el('summary','See '+preset.tracks.length+' songs');songs.append(summary);
+          preset.tracks.forEach((track,index)=>songs.append(button(track.title+' · '+track.artist,()=>music.openQueue(preset.id,index))));
+          card.append(songs);shortcuts.append(card);}
+      }else shortcuts.append(el('p','Default music queues are unavailable in this host.','eh-note'));
       shortcuts.append(button('Choose my music files',()=>{const n=$('helm09-localfiles');if(n)n.click();}),button('Show YouTube link box',()=>{$('helm09-mediaurl').focus();$('helm09-mediaurl').scrollIntoView({block:'center'});}));section.append(shortcuts);
       const label=el('label','Favorite name','eh-label'),name=el('input');name.type='text';name.maxLength=64;name.placeholder='For example: My country playlist';name.id='eh-favorite-name';label.append(name);section.append(label);
       const save=button('Save the link below',()=>{saved=P.addFavorite(saved,$('helm09-mediaurl').value,name.value);const persisted=write(favKey,saved);renderFavorites();announce(persisted?'Favorite saved on this device.':'Favorite saved for this session; device storage is unavailable.');},'eh-save-link');section.append(save);

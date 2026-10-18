@@ -8,7 +8,7 @@ import argparse, hashlib, json, shutil
 from pathlib import Path
 
 HERE=Path(__file__).resolve().parent
-FILES=('policy.js','easy-helm.js','easy-helm.css','beaufort13-adapter.js')
+FILES=('policy.js','motor-music.js','motor-music.css','easy-helm.js','easy-helm.css','beaufort13-adapter.js')
 
 def digest(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
@@ -33,14 +33,14 @@ def build(base: Path, out: Path) -> dict:
     shutil.copytree(base,out)
     (out/'easy-helm').mkdir()
     for name in FILES:shutil.copy2(HERE/name,out/'easy-helm'/name)
-    tags='\n<link rel="stylesheet" href="easy-helm/easy-helm.css">\n'+''.join(
-        f'<script defer src="easy-helm/{name}"></script>\n' for name in ('policy.js','easy-helm.js','beaufort13-adapter.js'))
+    tags='\n<link rel="stylesheet" href="easy-helm/easy-helm.css"><link rel="stylesheet" href="easy-helm/motor-music.css">\n'+''.join(
+        f'<script defer src="easy-helm/{name}"></script>\n' for name in ('policy.js','motor-music.js','easy-helm.js','beaufort13-adapter.js'))
     (out/'index.html').write_text(text.replace('</head>',tags+'</head>'))
     unchanged=[name for name,h in original.items() if name!='index.html' and digest(out/name)==h]
     if len(unchanged)!=len(original)-1:raise RuntimeError('Unexpected owner-asset change.')
     report={'status':'UNPUBLISHED_REVIEW','baseCommit':pins['commit'],'baseFiles':len(original),
             'unchangedOwnerFiles':len(unchanged),'changedOwnerFiles':['index.html'],
-            'entryDelta':'Add four additive stylesheet/script references only',
+            'entryDelta':'Add six additive stylesheet/script references only',
             'physicsModified':False,'waterModified':False,'captainModified':False,
             'browserVerified':False,'touchVerified':False,'providerPlaybackVerified':False,
             'addedFiles':{name:digest(HERE/name) for name in FILES}}

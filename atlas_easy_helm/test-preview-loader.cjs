@@ -1,0 +1,14 @@
+'use strict';
+const assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm'),crypto=require('node:crypto');
+const site=process.env.ATLAS13_SITE;if(!site)throw Error('Set ATLAS13_SITE to the exact public13 site.');
+const source=fs.readFileSync(__dirname+'/preview-loader.js','utf8'),html=fs.readFileSync(site+'/index.html');const tests=[];
+async function check(name,fn){try{await fn();tests.push({name,passed:true});}catch(e){tests.push({name,passed:false,error:String(e)});}}
+async function run(bytes=html,ok=true,secure=true){let written=null,reads=[];const label={textContent:''};const c={URL,TextDecoder,Uint8Array,location:{href:'https://rawcdn.githack.com/owensto/helper/TEST_SHA/atlas_easy_helm/preview/index.html'},crypto:secure?crypto.webcrypto:{},document:{getElementById:()=>label,open(){},write:s=>written=s,close(){}},fetch:async u=>{reads.push(String(u));return{ok,status:ok?200:404,arrayBuffer:async()=>bytes.buffer.slice(bytes.byteOffset,bytes.byteOffset+bytes.byteLength)}}};c.window=c;vm.createContext(c);await vm.runInContext(source,c);return{written,reads,label};}
+(async()=>{
+ await check('Exact source hash accepted and original asset base pinned to same commit',async()=>{const r=await run();assert(r.written.includes('<base href="https://rawcdn.githack.com/owensto/helper/TEST_SHA/atlas_sealab_13/live/">'));assert.equal(r.reads.length,1);});
+ await check('All six add-on references resolve to the same preview revision',async()=>{const r=await run();for(const n of ['policy.js','motor-music.js','easy-helm.js','beaufort13-adapter.js','easy-helm.css','motor-music.css'])assert(r.written.includes('/TEST_SHA/atlas_easy_helm/'+n));assert(r.written.includes('Review preview · browser validation pending'));});
+ await check('Changed source fails closed with no HTML execution',async()=>{const r=await run(Buffer.concat([html,Buffer.from(' ') ]));assert.equal(r.written,null);assert.match(r.label.textContent,/mismatch/);});
+ await check('Unavailable source produces an honest error, not a different build',async()=>{const r=await run(html,false);assert.equal(r.written,null);assert.match(r.label.textContent,/404/);});
+ await check('No crypto verification means no unchecked startup',async()=>{const r=await run(html,true,false);assert.equal(r.written,null);assert.equal(r.reads.length,0);});
+ console.log(JSON.stringify({passed:tests.every(t=>t.passed),scope:'CPU with in-memory fetch/document substitutes; NOT actual navigation or browser initialization.',tests},null,2));process.exitCode=tests.every(t=>t.passed)?0:1;
+})();
