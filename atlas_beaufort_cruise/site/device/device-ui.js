@@ -37,7 +37,7 @@ G.installAtlasDeviceHelm=function(H){
  const message=E('div','','d2-message');message.id='d2-message';message.hidden=true;message.setAttribute('role','status');message.setAttribute('aria-live','polite');own(message);
  const music=E('section','','d2-now');music.id='d2-now';music.hidden=true;const musicTitle=B('Music',()=>open('radio'));const musicPause=B('Pause music',()=>$('eh-cruise-play')?.click(),'d2-music-pause');music.append(musicTitle,musicPause);own(music);
  const trip=B('Trip',()=>open('d2-trip'),'d2-trip');trip.hidden=true;own(trip);
- function paintSteer(){const v=steering.value;knob.style.setProperty('--steer',String(v));pad.setAttribute('aria-valuenow',String(Math.round(v*100)));pad.setAttribute('aria-valuetext',Math.abs(v)<.01?'Centered':Math.round(Math.abs(v)*100)+'% '+(v<0?'left':'right'));}
+ function paintSteer(){const v=window.ATLAS_HELM_KEYS?.steering&&steering.pointer===null?H.read().steer:steering.value;knob.style.setProperty('--steer',String(v));pad.setAttribute('aria-valuenow',String(Math.round(v*100)));pad.setAttribute('aria-valuetext',Math.abs(v)<.01?'Centered':Math.round(Math.abs(v)*100)+'% '+(v<0?'left':'right'));}
  function closeTrim(){expanded=false;trimPanel.hidden=true;trimButton.setAttribute('aria-expanded','false');}
  function open(kind){steering.reset();paintSteer();closeTrim();H.openPanel(kind);sync();}
  on($('helm09-pause'),'click',()=>{steering.reset();paintSteer();sync();});
@@ -72,7 +72,7 @@ G.installAtlasDeviceHelm=function(H){
   if((paused||photo||panelOpen)&&(steering.pointer!==null||steering.value!==0)){steering.reset();paintSteer();}
   const d=C.clearance(s,H.feet()),stamp=JSON.stringify([s.speedOverGround,d,s.throttle,s.engine,H.docking(),s.trim,s.trimActual,paused,panelOpen]);
   if(stamp!==uiStamp){speed.textContent=Number.isFinite(s.speedOverGround)?(s.speedOverGround*3600/1852).toFixed(1):'—';depth.textContent=d.text;depth.dataset.tone=d.tone;power.max=H.docking()?'22':'100';powerValue.textContent=Math.round(s.throttle*100)+'%'+(H.docking()?' · docking':'');if(D.activeElement!==power)power.value=String(Math.round(s.throttle*100));trimButton.textContent=C.trimText(s);menu.setAttribute('aria-expanded',String(panelOpen));uiStamp=stamp;}
-  const r=H.radio();music.hidden=photo||panelOpen||H.providerActive()||!r.wanted&&!r.playing;if(!music.hidden){musicTitle.textContent=r.title||'Music';musicPause.textContent=r.wanted?'Pause music':'Play music';}
+  paintSteer();const r=H.radio();music.hidden=photo||panelOpen||H.providerActive()||!r.wanted&&!r.playing;if(!music.hidden){musicTitle.textContent=r.title||'Music';musicPause.textContent=r.wanted?'Pause music':'Play music';}
   trip.hidden=photo||panelOpen||!$('bc-voyage')||$('bc-voyage').hidden;
   if(!message.hidden&&H.now()-noticeAt>6000)message.hidden=true;
  }

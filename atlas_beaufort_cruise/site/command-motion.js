@@ -33,7 +33,7 @@ class CommandMotion extends Base{
  if(this.performanceMode==='reference'){super.step(dt,obstacles);this.portRpm=this.rpm;this.starboardRpm=0;this.airborne=false;return;}
  dt=clamp(dt,0,.04);if(!dt)return;if(G.Sea10Runtime)G.Sea10Runtime.beforeStep(this,dt);if(G.Sea14Physics)G.Sea14Physics.beforeStep(this,dt);if(G.Sea12Waves)G.Sea12Waves.advance(this,dt);this.elapsed+=dt;this.contact=false;this.grounded=false;this.lastImpact*=Math.exp(-dt*3);
  const p=presets[this.environment]||presets.calm, cfg=this.config, sport=cfg.physics==='sport', M=this.totalMassKg(), IY=M*5.8;
- const c=Math.cos(this.heading),s=Math.sin(this.heading);this.u=(this.vx-p.current[0])*c+(this.vz-p.current[1])*s;this.v=-(this.vx-p.current[0])*s+(this.vz-p.current[1])*c;
+ const frameX=this.x,frameZ=this.z;const c=Math.cos(this.heading),s=Math.sin(this.heading);this.u=(this.vx-p.current[0])*c+(this.vz-p.current[1])*s;this.v=-(this.vx-p.current[0])*s+(this.vz-p.current[1])*c;
  this.rudder+=(clamp(this.steer,-1,1)-this.rudder)*(1-Math.exp(-(sport?7:3.6)*dt));this.trimActual+=(clamp(this.trim,0,1)-this.trimActual)*(1-Math.exp(-2.2*dt));this.startTimer=Math.max(0,this.startTimer-dt);
  const trpm=this.engine?(this.startTimer?280:this.gear===0?700+this.throttle*1100:700+this.throttle*5100):0;this.rpm+=(trpm-this.rpm)*(1-Math.exp(-dt/(sport?.38:.7)));
  this.planing=smooth(4,11,Math.max(0,this.u));let fx=0,fz=0,moment=0;
@@ -83,12 +83,13 @@ class CommandMotion extends Base{
   }else this.groundForce=0;
   this.wasBottomContact=touching;
  }
- // Four unilateral buoyancy/support samples. When support vanishes, gravity remains.
+ // Six unilateral buoyancy/support samples. Current/prior poses include yaw. When support vanishes, gravity remains.
  const omega=sport?3.5:2.75, spring=M*omega*omega/6, damping=M*(sport?1.0:2.05)/6;
  let up=0,pm=0,rm=0,support=0;const targetPitch=.05*this.planing+.032*this.trimActual+this.planing*this.trimActual*.035,targetRoll=this.yaw*this.u*(sport?.022:.012);
+ const buoyC=Math.cos(this.heading),buoyS=Math.sin(this.heading);
  for(const [xx,zz] of [[2.6,-.75],[2.6,.75],[0,-.95],[0,.95],[-2.6,-.85],[-2.6,.85]]){
-  const wx=this.x+c*xx-s*zz,wz=this.z+s*xx+c*zz,sea=CommandMotion.surface(wx,wz,this.elapsed,this.environment);
-  const seaPrev=CommandMotion.surface(wx-this.vx*dt,wz-this.vz*dt,this.elapsed-dt,this.environment),vs=(sea-seaPrev)/dt;
+  const wx=this.x+buoyC*xx-buoyS*zz,wz=this.z+buoyS*xx+buoyC*zz,sea=CommandMotion.surface(wx,wz,this.elapsed,this.environment);
+  const seaPrev=CommandMotion.surface(frameX+c*xx-s*zz,frameZ+s*xx+c*zz,this.elapsed-dt,this.environment),vs=(sea-seaPrev)/dt;
   const gap=sea+.04*this.planing+targetPitch*xx-targetRoll*zz-(this.heave+this.pitch*xx-this.roll*zz);
   const vel=this.verticalVel+this.pitchVel*xx-this.rollVel*zz-vs;
   let force=clamp(M*9.81/6+spring*gap-damping*vel,0,M*9.81*2.2);
