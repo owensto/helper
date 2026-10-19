@@ -1,10 +1,10 @@
-name: ATLAS Beaufort clean helm static preview
+name: ATLAS Beaufort Harbor Life static preview
 on:
   workflow_dispatch:
   push:
     branches: ['atlas/beaufort-cruise-20261018']
     paths:
-      - 'atlas_beaufort_cruise/source/device/**'
+      - 'atlas_beaufort_cruise/source/game3/**'
       - '.github/workflows/atlas-beaufort-cruise.yml'
 permissions:
   contents: read
@@ -24,8 +24,8 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/checkout@v4
         with:
-          ref: cdc915afef276e192786e5bb389c5b4fb4c3262e
-          path: _device_base
+          ref: c0593c5d43f634394407a8758abd6908640c75d1
+          path: _game_base
           persist-credentials: false
       - uses: actions/setup-python@v5
         with:
@@ -33,65 +33,65 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - name: Build pinned device revision and run CPU checks only
+      - name: Build and test native behavior without browser navigation
         run: |
-          python atlas_beaufort_cruise/source/device/build-device.py --base _device_base/atlas_beaufort_cruise/site --out /tmp/bc-clean-helm
-          python atlas_beaufort_cruise/source/device/check-device.py --base-site _device_base/atlas_beaufort_cruise/site --base-source _device_base/atlas_beaufort_cruise/source --easy atlas_easy_helm --site /tmp/bc-clean-helm --evidence atlas_beaufort_cruise/source/device/checks
-      - name: Require all functional gates and preserve independent browser status
+          python atlas_beaufort_cruise/source/game3/build.py --base _game_base/atlas_beaufort_cruise/site --out /tmp/bc-game3
+          python atlas_beaufort_cruise/source/game3/check.py --site /tmp/bc-game3 --base _game_base/atlas_beaufort_cruise/site --base-source _game_base/atlas_beaufort_cruise/source --easy atlas_easy_helm --out atlas_beaufort_cruise/source/game3/checks
+      - name: Preserve test scope and prepare complete static candidate
         run: |
           python - <<'PY'
           from pathlib import Path
-          import hashlib,json,os,shutil
-          r=Path('atlas_beaufort_cruise');src=r/'source/device';site=r/'site'
+          import json,hashlib,shutil,os
+          r=Path('atlas_beaufort_cruise');src=r/'source/game3';site=r/'site'
           d=json.loads((src/'checks/verification.json').read_text())
-          assert d['passed'] and d['cpuChecks']==69 and d['modeledPowerTrials']==4
+          assert d['passed'] and d['cpuChecks']==66 and len(d['powerTrials'])==4
           assert d['browserVerified'] is False and d['GPUVerified'] is False
-          assert d['build']['unchangedFiles']==272 and d['build']['simulationClockChanged'] is False
-          compiled=Path('/tmp/bc-clean-helm')
+          assert len(d['build']['changed'])==7 and d['build']['newPhysicsCoefficients'] is False
+          compiled=Path('/tmp/bc-game3')
           assert not any(p.suffix.lower() in ['.ttf','.otf','.woff','.woff2'] for p in compiled.rglob('*'))
           shutil.copytree(compiled,site,dirs_exist_ok=True)
-          shutil.copy2(src/'README.md',r/'CLEAN_HELM_2.md')
+          shutil.copy2(src/'README.md',r/'HARBOR_LIFE_3.md')
+          shutil.copy2(src/'GAME_PLAN.md',r/'GAME_PLAN.md')
           files={str(p.relative_to(site)):hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(site.rglob('*')) if p.is_file()}
-          record={'version':'Clean Helm 2','status':'PUBLIC_REVIEW_CANDIDATE','source_commit':os.environ['GITHUB_SHA'],'build_run':os.environ['GITHUB_RUN_ID'],'cpu_checks_passed':69,'modeled_power_trials':4,'browserVerified':False,'GPUVerified':False,'actualMusicPlaybackVerified':False,'physicalDeviceVerified':False,'CDNVerified':False,'frameRateVerified':False,'files':files}
-          (r/'BUILD2.json').write_text(json.dumps(record,indent=2)+'\n')
+          record={'version':'Harbor Life 3','status':'PUBLIC_REVIEW_CANDIDATE','source_commit':os.environ['GITHUB_SHA'],'build_run':os.environ['GITHUB_RUN_ID'],'cpu_checks_passed':66,'browserVerified':False,'GPUVerified':False,'actualMusicPlaybackVerified':False,'physicalDeviceVerified':False,'CDNVerified':False,'frameRateVerified':False,'files':files}
+          (r/'BUILD3.json').write_text(json.dumps(record,indent=2)+'\n')
           PY
-      - name: Commit full static candidate on this isolated branch only
+      - name: Commit candidate only to the existing isolated branch
         id: publication
         run: |
           git config user.name 'ATLAS preview build'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add -f atlas_beaufort_cruise/site atlas_beaufort_cruise/CLEAN_HELM_2.md atlas_beaufort_cruise/BUILD2.json atlas_beaufort_cruise/source/device/checks
+          git add -f atlas_beaufort_cruise/site atlas_beaufort_cruise/HARBOR_LIFE_3.md atlas_beaufort_cruise/GAME_PLAN.md atlas_beaufort_cruise/BUILD3.json atlas_beaufort_cruise/source/game3/checks
           test -z "$(git diff --cached --name-only | grep -v '^atlas_beaufort_cruise/' || true)"
-          git diff --cached --quiet || git commit -m 'Publish Beaufort Clean Helm 2: proportional controls, clear power limits and reduced redundant work [skip ci]'
+          git diff --cached --quiet || git commit -m 'Publish Beaufort Harbor Life3 preview: WASD, restored country cards, compact menu and yaw sampling [skip ci]'
           git push origin HEAD:refs/heads/atlas/beaufort-cruise-20261018
           echo "commit=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
-      - name: Record review link and package complete site
+      - name: Record static preview link and package exact assets
         env:
           PUBLIC_COMMIT: ${{ steps.publication.outputs.commit }}
         run: |
           python - <<'PY'
           from pathlib import Path
           import json,os,shutil
-          r=Path('atlas_beaufort_cruise');out=Path('/tmp/atlas-clean-helm-delivery');out.mkdir()
+          r=Path('atlas_beaufort_cruise');out=Path('/tmp/atlas-game3-delivery');out.mkdir()
           sha=os.environ['PUBLIC_COMMIT'];url=f'https://rawcdn.githack.com/owensto/helper/{sha}/atlas_beaufort_cruise/site/index.html'
-          d={'version':'Clean Helm 2','url':url,'published_commit':sha,'status':'STATIC_PREVIEW_COMMITTED','source_commit':os.environ['GITHUB_SHA'],'build_run':os.environ['GITHUB_RUN_ID'],'cpu_checks_passed':69,'modeled_power_trials':4,'browserVerified':False,'CDNVerified':False,'GPUVerified':False,'physicalDeviceVerified':False,'frameRateVerified':False,'note':'Complete static candidate committed after CPU checks. No browser, current public-response, GPU, actual audio playback or device verification performed.'}
-          for name in ['DELIVERY.json','DELIVERY2.json']:(r/name).write_text(json.dumps(d,indent=2)+'\n')
-          for name in ['BUILD2.json','DELIVERY2.json','CLEAN_HELM_2.md']:shutil.copy2(r/name,out/name)
-          shutil.copy2(r/'source/device/checks/verification.json',out/'verification.json')
-          pkg=out/'Atlas_Beaufort_Clean_Helm_2';shutil.copytree(r/'site',pkg/'site');shutil.copytree(r/'source',pkg/'source',ignore=shutil.ignore_patterns('__pycache__'))
-          shutil.copy2(r/'CLEAN_HELM_2.md',pkg/'README.md');shutil.copy2(r/'README.md',pkg/'ORIGINAL_BEAUFORT_README.md');shutil.copy2(r/'DELIVERY2.json',pkg/'PLAY_ONLINE.json')
+          d={'version':'Harbor Life 3','url':url,'published_commit':sha,'status':'STATIC_PREVIEW_COMMITTED','source_commit':os.environ['GITHUB_SHA'],'build_run':os.environ['GITHUB_RUN_ID'],'cpu_checks_passed':66,'browserVerified':False,'CDNVerified':False,'GPUVerified':False,'physicalDeviceVerified':False,'frameRateVerified':False,'note':'No browser, public-response, actual audio playback or GPU verification performed. Game career remains a plan.'}
+          for name in ['DELIVERY.json','DELIVERY3.json']:(r/name).write_text(json.dumps(d,indent=2)+'\n')
+          for name in ['BUILD3.json','DELIVERY3.json','HARBOR_LIFE_3.md','GAME_PLAN.md']:shutil.copy2(r/name,out/name)
+          shutil.copy2(r/'source/game3/checks/verification.json',out/'verification.json')
+          pkg=out/'Atlas_Beaufort_Harbor_Life_3';shutil.copytree(r/'site',pkg/'site');shutil.copytree(r/'source',pkg/'source',ignore=shutil.ignore_patterns('__pycache__'))
+          shutil.copy2(r/'HARBOR_LIFE_3.md',pkg/'README.md');shutil.copy2(r/'GAME_PLAN.md',pkg/'GAME_PLAN.md');shutil.copy2(r/'DELIVERY3.json',pkg/'PLAY_ONLINE.json')
           assert not any(p.suffix.lower() in ['.ttf','.otf','.woff','.woff2'] for p in pkg.rglob('*'))
-          shutil.make_archive(str(out/'Atlas_Beaufort_Clean_Helm_2'),'zip',root_dir=pkg)
-          shutil.rmtree(pkg)
+          shutil.make_archive(str(out/'Atlas_Beaufort_Harbor_Life_3'),'zip',root_dir=pkg);shutil.rmtree(pkg)
           PY
-          git add atlas_beaufort_cruise/DELIVERY.json atlas_beaufort_cruise/DELIVERY2.json
-          git diff --cached --quiet || git commit -m 'Record Clean Helm 2 static preview URL with explicit unverified device and browser status [skip ci]'
+          git add atlas_beaufort_cruise/DELIVERY.json atlas_beaufort_cruise/DELIVERY3.json
+          git diff --cached --quiet || git commit -m 'Record Harbor Life3 preview link and unverified browser scope [skip ci]'
           git push origin HEAD:refs/heads/atlas/beaufort-cruise-20261018
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: ATLAS-Beaufort-Clean-Helm2
+          name: ATLAS-Beaufort-Harbor-Life3
           path: |
-            /tmp/atlas-clean-helm-delivery/
-            atlas_beaufort_cruise/source/device/checks/
+            /tmp/atlas-game3-delivery/
+            atlas_beaufort_cruise/source/game3/checks/
           retention-days: 30
