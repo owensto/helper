@@ -1,16 +1,15 @@
 {
-  "version": "Clean Helm 2",
-  "url": "https://rawcdn.githack.com/owensto/helper/c0593c5d43f634394407a8758abd6908640c75d1/atlas_beaufort_cruise/site/index.html",
-  "published_commit": "c0593c5d43f634394407a8758abd6908640c75d1",
+  "version": "Harbor Life 3",
+  "url": "https://rawcdn.githack.com/owensto/helper/4139361fb5f407536b5bab227e44c7baf1ce387e/atlas_beaufort_cruise/site/index.html",
+  "published_commit": "4139361fb5f407536b5bab227e44c7baf1ce387e",
   "status": "STATIC_PREVIEW_COMMITTED",
-  "source_commit": "11599a28b7450941138c25a678607e4466928666",
-  "build_run": "39185085751",
-  "cpu_checks_passed": 69,
-  "modeled_power_trials": 4,
+  "source_commit": "8a8c2b21e0b5bf3d988331726832517f145d9d8b",
+  "build_run": "39197777867",
+  "cpu_checks_passed": 66,
   "browserVerified": false,
   "CDNVerified": false,
   "GPUVerified": false,
   "physicalDeviceVerified": false,
   "frameRateVerified": false,
-  "note": "Complete static candidate committed after CPU checks. No browser, current public-response, GPU, actual audio playback or device verification performed."
+  "note": "No browser, public-response, actual audio playback or GPU verification performed. Game career remains a plan."
 }
