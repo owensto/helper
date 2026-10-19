@@ -1,0 +1,112 @@
+/* Clean Helm: default view prioritizes the water, with only two driving surfaces.
+   These are CSS targets; actual portrait/landscape verification remains required. */
+#helm09.device2{--d2-dark:#102c35;--d2-line:#94b5b04d;--d2-ink:#eef5f1;--d2-highlight:#c4e6d0;--d2-bottom:134px}
+#helm09.device2>.h09-top,#helm09.device2>.h09-dock,#helm09.device2>#helm09-readouts,#helm09.device2>#helm09-hint,#helm09.device2>#s11-notice,#helm09.device2>#bc-stream-status,#helm09.device2>#bc-voyage,#helm09.device2>#eh-cruise-audio,#helm09.device2>#eh-motor-notice,#helm09.device2>#sea10-condition{display:none!important}
+#helm09.device2 [hidden]{display:none!important}
+#helm09.device2 button:focus-visible,#helm09.device2 [role=slider]:focus-visible,#helm09.device2 input:focus-visible,#helm09.device2 select:focus-visible{outline:3px solid #f5d486;outline-offset:3px}
+#helm09.device2 .d2-header{position:absolute;left:max(12px,env(safe-area-inset-left,0px));right:max(12px,env(safe-area-inset-right,0px));top:max(8px,env(safe-area-inset-top,0px));height:56px;display:flex;align-items:center;gap:16px;box-sizing:border-box;pointer-events:none;z-index:25}
+#helm09.device2 .d2-header button{pointer-events:auto;min-height:48px;min-width:68px;padding:8px 12px;border-radius:14px;border:1px solid var(--d2-line);background:var(--d2-dark);color:var(--d2-ink);font-size:16px}
+#helm09.device2 .d2-speed{display:flex;gap:8px;align-items:baseline;background:#102c35de;padding:8px 14px;border-radius:14px;white-space:nowrap;color:#fff}
+#helm09.device2 .d2-speed strong{font:600 27px/1.1 system-ui;font-variant-numeric:tabular-nums}
+#helm09.device2 .d2-speed small{font-size:13px}
+#helm09.device2 .d2-depth{font-size:15px;background:#102c35de;border-radius:12px;padding:12px;color:#fff;margin-right:auto}
+#helm09.device2 .d2-depth[data-tone=contact],#helm09.device2 .d2-depth[data-tone=shallow]{background:#ffdf9c;color:#35281c}
+#helm09.device2 .d2-driving{position:absolute;bottom:calc(10px + env(safe-area-inset-bottom,0px));left:max(12px,env(safe-area-inset-left,0px));right:max(12px,env(safe-area-inset-right,0px));display:grid;grid-template-columns:200px minmax(240px,400px) 200px;justify-content:space-between;align-items:end;gap:14px;z-index:20;pointer-events:none}
+#helm09.device2 .d2-card{height:124px;border-radius:20px;background:#102c35ec;border:1px solid var(--d2-line);padding:10px 12px;box-sizing:border-box;color:var(--d2-ink);pointer-events:auto}
+#helm09.device2 .d2-label{display:flex;justify-content:space-between;gap:8px;font:500 12px/1.3 system-ui;color:#c8dcd6;letter-spacing:.02em;white-space:nowrap}
+#helm09.device2 .d2-pad{height:70px;min-width:120px;display:flex;align-items:center;justify-content:space-between;position:relative;touch-action:none;user-select:none;cursor:ew-resize;background:linear-gradient(transparent 46%,#9ebeb534 47%,#9ebeb534 52%,transparent 53%);border-radius:12px}
+#helm09.device2 .d2-arrow{font:28px system-ui;pointer-events:none}
+#helm09.device2 .d2-knob{position:absolute;left:calc(50% + var(--steer,0)*40%);transform:translateX(-50%);width:44px;height:44px;border:2px solid #c4e6d0;border-radius:50%;display:grid;place-items:center;color:#ecfff3;background:#28534f;font-size:28px;pointer-events:none}
+#helm09.device2 #d2-power{appearance:auto!important;display:block;height:40px;width:100%;margin:0;accent-color:#bce4c9;touch-action:none;background:none}
+#helm09.device2 .d2-power-ends{display:flex;justify-content:space-between;gap:10px}
+#helm09.device2 .d2-power-ends button{min-height:44px;min-width:58px;border:0;background:none;color:#d7ece3;padding:0 6px;font-size:14px;text-decoration:underline}
+#helm09.device2 .d2-gearbox{pointer-events:auto;display:grid;grid-template-columns:80px 1fr 80px;gap:8px;align-items:center;padding:8px;border-radius:18px;background:#102c35e8;border:1px solid var(--d2-line);box-sizing:border-box}
+#helm09.device2 .d2-gearbox #helm09-key{grid-area:auto!important;width:auto!important;min-width:0;min-height:48px;height:48px;padding:8px;display:flex;align-items:center;justify-content:center;gap:0;font-size:13px;border-radius:12px;background:#1e4e49;color:#eefbef;line-height:1.2}
+#helm09.device2 .d2-gearbox #helm09-key svg{display:none}
+#helm09.device2 .d2-gearbox #helm09-key small{display:none}
+#helm09.device2 .d2-gearbox .h09-gears{grid-area:auto!important;display:grid;grid-template-columns:repeat(3,1fr);gap:5px;min-width:0}
+#helm09.device2 .d2-gearbox .h09-gears button{height:48px;min-height:48px;min-width:36px;padding:4px 3px;font-size:14px;border-radius:10px;color:#fff;background:#1e434b;border:1px solid #688c8640;white-space:nowrap}
+#helm09.device2 .d2-gearbox .h09-gears button.active{background:#c4e6d0;color:#173c34}
+#helm09.device2 #d2-trim{min-height:48px;font-size:12px;border-radius:12px;padding:6px 4px;background:#1e434b;color:#ecf4ed;white-space:normal;min-width:0}
+#helm09.device2 .d2-trim-panel{position:absolute;right:12px;bottom:calc(var(--d2-bottom) + 20px + env(safe-area-inset-bottom,0px));width:252px;padding:14px;box-sizing:border-box;border-radius:18px;background:var(--d2-dark);color:#fff;pointer-events:auto;z-index:35;border:1px solid var(--d2-line)}
+#helm09.device2 .d2-trim-panel #eh-trim-controls{display:grid!important;grid-area:auto!important;position:static!important;color:#fff;padding:0;border:0}
+#helm09.device2 .d2-trim-panel .eh-trim-buttons{display:flex;gap:8px}
+#helm09.device2 .d2-trim-panel button{min-height:44px;font-size:16px;flex:1;margin-top:8px;padding:8px 12px}
+#helm09.device2 #helm09-panel{top:72px;bottom:calc(12px + env(safe-area-inset-bottom,0px));left:auto;right:12px;width:min(470px,calc(100vw - 24px));max-height:none;box-sizing:border-box;z-index:30;background:#f3f4eb;color:#163d40;overscroll-behavior:contain}
+#helm09.device2 #helm09-panelbody{overflow:auto;overscroll-behavior:contain;font-size:17px;line-height:1.5}
+#helm09.device2 .d2-menu-section{margin-top:20px}
+#helm09.device2 .d2-menu-section h3{font-size:16px;margin-bottom:8px;color:#41645f}
+#helm09.device2 .d2-menu-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+#helm09.device2 .d2-menu-grid button,#helm09.device2 #helm09-panelbody>[id^=d2-rig]{display:block;min-height:52px;padding:10px 12px;font-size:16px;line-height:1.4;border-radius:14px;border:1px solid #b3c4b9;background:#e2ebe1;color:#18413c;white-space:normal}
+#helm09.device2 #helm09-panelbody>[id^=d2-rig]{width:100%;margin:10px 0}
+#helm09.device2 .d2-select{display:flex;flex-direction:column;gap:8px;font-size:16px;margin:12px 0}
+#helm09.device2 .d2-select select{min-height:50px;width:100%;background:#fff;color:#163d40;font-size:16px;border:1px solid #a1bab0;border-radius:10px;padding:10px}
+#helm09.device2 .d2-note{font-size:13px;line-height:1.5;color:#526d66}
+#helm09.device2 #helm09-mapcard{top:72px;bottom:calc(var(--d2-bottom) + 20px + env(safe-area-inset-bottom,0px));left:12px;right:auto;width:min(440px,calc(100vw - 24px));max-height:none;overflow:auto;z-index:26}
+#helm09.device2 #helm09-mapcanvas{max-height:calc(100dvh - var(--d2-bottom) - 255px);object-fit:contain;width:100%;height:auto}
+#helm09.device2 #helm09-alert{top:76px;left:12px;right:auto;max-width:min(400px,calc(100vw - 24px));font-size:14px;padding:8px 12px;z-index:29}
+#helm09.device2 .d2-message{position:absolute;bottom:calc(var(--d2-bottom) + 20px + env(safe-area-inset-bottom,0px));left:50%;transform:translateX(-50%);max-width:min(480px,calc(100vw - 32px));padding:10px 14px;border-radius:12px;background:#e6eddd;color:#193b32;pointer-events:none;font-size:15px;z-index:45}
+#helm09.device2 .d2-now{position:absolute;left:12px;top:74px;display:flex;gap:6px;align-items:center;max-width:360px;z-index:27;pointer-events:auto}
+#helm09.device2 .d2-now button{min-height:44px;background:#102c35e8;color:#dcefe4;border-radius:12px;padding:8px 10px;font-size:13px}
+#helm09.device2 .d2-now button:first-child{max-width:210px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+#helm09.device2 #d2-trip{position:absolute;top:74px;right:12px;min-height:44px;z-index:27;pointer-events:auto;font-size:14px;background:#102c35e8;color:#dcefe4;border-radius:12px}
+#helm09.device2:has(#helm09-alert:not([hidden])) .d2-now{top:120px}
+#helm09.device2 .eh-queue-player,#helm09.device2 #helm09-youtube{top:74px;left:12px;right:auto;width:360px;max-width:calc(100vw - 24px);z-index:40}
+#helm09.device2 .eh-queue-player iframe,#helm09.device2 #helm09-youtube iframe{width:100%;height:200px!important;min-height:200px;min-width:200px}
+#helm09.device2.eh-music-open #helm09-panel{top:74px;right:12px;left:auto;width:calc(100vw - 410px);max-width:470px}
+#helm09.device2.d2-panel-open>#d2-driving{display:none}
+#helm09.device2.d2-photo>#d2-header,#helm09.device2.d2-photo>#d2-driving,#helm09.device2.d2-photo>.d2-now,#helm09.device2.d2-photo>#d2-trip{display:none!important}
+@media(max-width:759px){
+ #helm09.device2{--d2-bottom:184px}
+ #helm09.device2 .d2-header{gap:6px;left:8px;right:8px;top:max(4px,env(safe-area-inset-top,0px))}
+ #helm09.device2 .d2-header button{min-width:54px;padding:8px;font-size:14px}
+ #helm09.device2 .d2-speed{padding:8px;gap:4px}
+ #helm09.device2 .d2-speed strong{font-size:23px}
+ #helm09.device2 .d2-speed small{font-size:11px}
+ #helm09.device2 .d2-depth{padding:8px 4px;font-size:12px;line-height:1.3;max-width:125px}
+ #helm09.device2 .d2-driving{left:8px;right:8px;bottom:calc(6px + env(safe-area-inset-bottom,0px));grid-template-columns:1fr 1fr;gap:7px}
+ #helm09.device2 .d2-card{height:112px;padding:8px 10px;border-radius:16px}
+ #helm09.device2 .d2-pad{height:63px}
+ #helm09.device2 .d2-label{font-size:10px}
+ #helm09.device2 .d2-gearbox{grid-column:1/-1;grid-row:2;grid-template-columns:74px 1fr 78px;gap:6px;padding:5px}
+ #helm09.device2 .d2-power{grid-column:2;grid-row:1}
+ #helm09.device2 .d2-gearbox .h09-gears button{font-size:13px}
+ #helm09.device2 #d2-power{height:34px}
+ #helm09.device2 #helm09-panel{top:65px;left:8px;right:8px;width:auto;bottom:calc(8px + env(safe-area-inset-bottom,0px))}
+ #helm09.device2 #helm09-mapcard{top:65px;left:8px;right:8px;width:auto;bottom:calc(var(--d2-bottom) + 14px + env(safe-area-inset-bottom,0px))}
+ #helm09.device2 #helm09-alert{top:65px;left:8px;right:8px;font-size:12px}
+ #helm09.device2 .d2-now{top:65px;left:8px;max-width:calc(100vw - 70px)}
+ #helm09.device2 #d2-trip{top:65px;right:8px}
+ #helm09.device2 .eh-queue-player,#helm09.device2 #helm09-youtube{top:65px;left:8px;right:8px;width:auto;max-width:none}
+ #helm09.device2.eh-music-open #helm09-panel{top:390px;left:8px;right:8px;width:auto;max-width:none;min-height:100px}
+}
+@media(max-height:560px) and (min-width:760px){
+ #helm09.device2 .d2-driving{grid-template-columns:165px minmax(310px,360px) 165px;gap:8px;left:8px;right:8px}
+ #helm09.device2 .d2-card{height:100px;padding:8px}
+ #helm09.device2 .d2-label{font-size:10px}
+ #helm09.device2 .eh-queue-player{top:68px;width:280px;max-height:calc(100dvh - 74px);overflow:auto}
+ #helm09.device2.eh-music-open #helm09-panel{left:305px;right:8px;width:auto}
+}
+@media(prefers-reduced-motion:reduce){#helm09.device2 *{scroll-behavior:auto!important}}
+
+@media(max-height:560px) and (min-width:680px){
+ #helm09.device2{--d2-bottom:134px}
+ #helm09.device2 .d2-driving{grid-template-columns:150px minmax(300px,360px) 150px;gap:8px;left:8px;right:8px}
+ #helm09.device2 .d2-gearbox{grid-column:2;grid-row:1}
+ #helm09.device2 .d2-power{grid-column:3;grid-row:1}
+ #helm09.device2 .d2-card{height:124px;padding:8px}
+ #helm09.device2 #helm09-panel{left:auto;right:8px;width:min(450px,calc(100vw - 24px))}
+}
+
+@media(max-height:560px) and (min-width:680px){
+ #helm09.device2 .eh-queue-player,#helm09.device2 #helm09-youtube{top:65px;left:8px;right:auto;width:280px;max-height:calc(100dvh - 72px);overflow:auto}
+ #helm09.device2.eh-music-open #helm09-panel{top:65px;left:305px;right:8px;width:auto;min-height:100px}
+}
+/* Keep complete direction labels readable at small desktop/tablet widths. */
+@media(min-width:760px) and (min-height:561px){
+ #helm09.device2 .d2-driving{grid-template-columns:minmax(140px,200px) minmax(330px,400px) minmax(140px,200px)}
+}
+@media(max-height:560px) and (min-width:680px){
+ #helm09.device2 .d2-gearbox{grid-template-columns:64px 1fr 68px;gap:6px;padding:6px}
+ #helm09.device2 .d2-gearbox .h09-gears button{font-size:12px}
+}
