@@ -1,12 +1,16 @@
 {
-  "url": "https://rawcdn.githack.com/owensto/helper/cdc915afef276e192786e5bb389c5b4fb4c3262e/atlas_beaufort_cruise/site/index.html",
-  "published_commit": "cdc915afef276e192786e5bb389c5b4fb4c3262e",
+  "version": "Clean Helm 2",
+  "url": "https://rawcdn.githack.com/owensto/helper/c0593c5d43f634394407a8758abd6908640c75d1/atlas_beaufort_cruise/site/index.html",
+  "published_commit": "c0593c5d43f634394407a8758abd6908640c75d1",
   "status": "STATIC_PREVIEW_COMMITTED",
-  "source_commit": "8dd945a760a112b3d27ba390a1ec02507338dd3e",
-  "build_run": "39172249088",
-  "cpu_checks_passed": 46,
+  "source_commit": "11599a28b7450941138c25a678607e4466928666",
+  "build_run": "39185085751",
+  "cpu_checks_passed": 69,
+  "modeled_power_trials": 4,
   "browserVerified": false,
   "CDNVerified": false,
+  "GPUVerified": false,
   "physicalDeviceVerified": false,
-  "note": "Complete static site committed. No browser navigation, provider playback, public response or GPU verification was performed."
+  "frameRateVerified": false,
+  "note": "Complete static candidate committed after CPU checks. No browser, current public-response, GPU, actual audio playback or device verification performed."
 }
