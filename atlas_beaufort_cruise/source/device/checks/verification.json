@@ -1,0 +1,172 @@
+{
+  "version": "Beaufort Clean Helm 2",
+  "passed": true,
+  "cpuChecks": 69,
+  "modeledPowerTrials": 4,
+  "suites": {
+    "device": 23,
+    "physics": 15,
+    "stream": 19,
+    "scene": 5,
+    "radio": 7
+  },
+  "scope": "CPU policy, synthetic DOM/media, exact native dispatch/cache fragments, actual prepared scenery and fixed-step vessel model",
+  "browserVerified": false,
+  "GPUVerified": false,
+  "physicalDeviceVerified": false,
+  "CDNVerified": false,
+  "frameRateVerified": false,
+  "actualMusicPlaybackVerified": false,
+  "realVesselValidated": false,
+  "powerTrials": [
+    {
+      "rig": "single300",
+      "horsepower": 300,
+      "throttlePercent": 22,
+      "secondsTo30mph": null,
+      "knots": 7.051699163667974,
+      "mph": 8.114950471193907,
+      "propWet": 1,
+      "loadKg": 2125.5234686476115
+    },
+    {
+      "rig": "single300",
+      "horsepower": 300,
+      "throttlePercent": 100,
+      "secondsTo30mph": 6.433333333333334,
+      "knots": 43.76703057462305,
+      "mph": 50.36619928629423,
+      "propWet": 1,
+      "loadKg": 2123.8227585583827
+    },
+    {
+      "rig": "single450",
+      "horsepower": 450,
+      "throttlePercent": 100,
+      "secondsTo30mph": 4.25,
+      "knots": 49.84028810392964,
+      "mph": 57.355179233574475,
+      "propWet": 1,
+      "loadKg": 2282.9127944004986
+    },
+    {
+      "rig": "twin300",
+      "horsepower": 600,
+      "throttlePercent": 100,
+      "secondsTo30mph": 3.316666666666667,
+      "knots": 54.080502995436184,
+      "mph": 62.23473138592359,
+      "propWet": 1,
+      "loadKg": 2398.940904848965
+    }
+  ],
+  "continuousInputRefreshProbe": {
+    "before": 1800,
+    "after": 0,
+    "sameFinalTargets": true,
+    "scope": "executed production dispatch body; not a measured FPS result"
+  },
+  "build": {
+    "version": "Beaufort Clean Helm 2",
+    "base": "cdc915afef276e192786e5bb389c5b4fb4c3262e",
+    "scope": "device presentation, proportional input, reduced redundant render work, reachable existing engine configurations",
+    "changedFiles": [
+      "access11.js",
+      "app.js",
+      "experience14.js",
+      "helm09.js",
+      "index.html"
+    ],
+    "patches": [
+      {
+        "file": "app.js",
+        "matches": 1,
+        "anchor": "setPaused:(v)=>{"
+      },
+      {
+        "file": "helm09.js",
+        "matches": 1,
+        "anchor": "A.refresh();return event;"
+      },
+      {
+        "file": "helm09.js",
+        "matches": 1,
+        "anchor": "ready:true,bus:Bus,ignition"
+      },
+      {
+        "file": "helm09.js",
+        "matches": 3,
+        "anchor": "A.inspect().paused"
+      },
+      {
+        "file": "access11.js",
+        "matches": 2,
+        "anchor": "A.inspect().paused"
+      },
+      {
+        "file": "experience14.js",
+        "matches": 3,
+        "anchor": "A.inspect().paused"
+      },
+      {
+        "file": "access11.js",
+        "matches": 1,
+        "anchor": "SEA09.inspect().panel"
+      },
+      {
+        "file": "app.js",
+        "matches": 1,
+        "anchor": "const safe=Object.values(hatches).every(h=>h.value<.03)&&drawers.every(d=>d.value<.03);"
+      },
+      {
+        "file": "app.js",
+        "matches": 1,
+        "anchor": "function updateBoat(dt,fittingDt=dt){"
+      },
+      {
+        "file": "app.js",
+        "nodeLookupSitesCached": 4
+      },
+      {
+        "file": "experience14.js",
+        "matches": 1,
+        "anchor": "effectiveScale=value==='detailed'?Math.min(devicePixelRatio||1,1.5):1;"
+      },
+      {
+        "file": "experience14.js",
+        "matches": 1,
+        "anchor": "if(ema>42)next=Math.max(window.SEA_SOFTWARE?.4:.65,next-.10);else if(ema<22)"
+      },
+      {
+        "file": "experience14.js",
+        "matches": 1,
+        "anchor": "if(dt>0&&dt<300)ema=ema*.96+dt*.04;"
+      },
+      {
+        "file": "app.js",
+        "matches": 1,
+        "anchor": "(!force&&time-lastChart<.18)"
+      }
+    ],
+    "unchangedFiles": 272,
+    "boatAndWorldPhysicsCoefficientsChanged": false,
+    "defaultHorsepowerChanged": false,
+    "simulationClockChanged": false,
+    "browserVerified": false,
+    "GPUVerified": false,
+    "physicalDeviceVerified": false,
+    "actualFrameRateMeasured": false
+  },
+  "sourceHashes": {
+    "README.md": "f441ae6b80e6d1e1896410077db897c1b36153d65ac66275b65a50ae9ee9e7d3",
+    "build-device.py": "8ee075ca69c7c512795b217a47f3716274d44a5747887d1a6ba02f73f3c1986c",
+    "check-device.py": "5f3cbd2ea43e5915b676ba5174a986ea73562f9d922be3da76dac385f31d4f13",
+    "device-base-pins.json": "8ac91a6da4ef19caf1a83825945086dbbaa16356797753212644ba3fc974a647",
+    "device-bootstrap.js": "dddd4a67beef9414209f56133a81dfb0e5f11ad56d7e469d060501763fd19706",
+    "device-core.js": "c2af7ffc8c6779e18bc19f7cb782dfab83a2f6991487d0856bfeeef36de0aa4d",
+    "device-ui.js": "a4ce524d4d2f344c1402a6e22e0d2cdbd9470b50006c4d38688c703ebc938643",
+    "device.css": "de4eacb0297c3325c617d0c6a1a590d2f7c0f987e704e7170ebdae0b810e7c79",
+    "test-device.cjs": "ea6fd7c34451d4a47529364bb36e5db7e3fd3c4d3d0ec54c1060a887cf6fe1b6",
+    "test-power.cjs": "d3997ff3f3c6f160ed4ad329a0f1f8f88be306c3aaa9f1daca39e7507d55d757"
+  }
+}

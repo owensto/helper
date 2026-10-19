@@ -1,0 +1,91 @@
+{
+  "version": "Beaufort Clean Helm 2",
+  "base": "cdc915afef276e192786e5bb389c5b4fb4c3262e",
+  "scope": "device presentation, proportional input, reduced redundant render work, reachable existing engine configurations",
+  "changedFiles": [
+    "access11.js",
+    "app.js",
+    "experience14.js",
+    "helm09.js",
+    "index.html"
+  ],
+  "patches": [
+    {
+      "file": "app.js",
+      "matches": 1,
+      "anchor": "setPaused:(v)=>{"
+    },
+    {
+      "file": "helm09.js",
+      "matches": 1,
+      "anchor": "A.refresh();return event;"
+    },
+    {
+      "file": "helm09.js",
+      "matches": 1,
+      "anchor": "ready:true,bus:Bus,ignition"
+    },
+    {
+      "file": "helm09.js",
+      "matches": 3,
+      "anchor": "A.inspect().paused"
+    },
+    {
+      "file": "access11.js",
+      "matches": 2,
+      "anchor": "A.inspect().paused"
+    },
+    {
+      "file": "experience14.js",
+      "matches": 3,
+      "anchor": "A.inspect().paused"
+    },
+    {
+      "file": "access11.js",
+      "matches": 1,
+      "anchor": "SEA09.inspect().panel"
+    },
+    {
+      "file": "app.js",
+      "matches": 1,
+      "anchor": "const safe=Object.values(hatches).every(h=>h.value<.03)&&drawers.every(d=>d.value<.03);"
+    },
+    {
+      "file": "app.js",
+      "matches": 1,
+      "anchor": "function updateBoat(dt,fittingDt=dt){"
+    },
+    {
+      "file": "app.js",
+      "nodeLookupSitesCached": 4
+    },
+    {
+      "file": "experience14.js",
+      "matches": 1,
+      "anchor": "effectiveScale=value==='detailed'?Math.min(devicePixelRatio||1,1.5):1;"
+    },
+    {
+      "file": "experience14.js",
+      "matches": 1,
+      "anchor": "if(ema>42)next=Math.max(window.SEA_SOFTWARE?.4:.65,next-.10);else if(ema<22)"
+    },
+    {
+      "file": "experience14.js",
+      "matches": 1,
+      "anchor": "if(dt>0&&dt<300)ema=ema*.96+dt*.04;"
+    },
+    {
+      "file": "app.js",
+      "matches": 1,
+      "anchor": "(!force&&time-lastChart<.18)"
+    }
+  ],
+  "unchangedFiles": 272,
+  "boatAndWorldPhysicsCoefficientsChanged": false,
+  "defaultHorsepowerChanged": false,
+  "simulationClockChanged": false,
+  "browserVerified": false,
+  "GPUVerified": false,
+  "physicalDeviceVerified": false,
+  "actualFrameRateMeasured": false
+}

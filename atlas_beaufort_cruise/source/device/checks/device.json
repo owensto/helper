@@ -1,0 +1,110 @@
+{
+  "passed": true,
+  "scope": "CPU policies, synthetic DOM/input, executed native source fragments. No browser/rendering/GPU/media/device certification.",
+  "tests": [
+    {
+      "name": "Proportional steering endpoints, center deadzone and fine center response",
+      "passed": true
+    },
+    {
+      "name": "Invalid steering geometry never produces NaN input",
+      "passed": true
+    },
+    {
+      "name": "Captured steering continues off pad, ignores other fingers, cancels cleanly",
+      "passed": true
+    },
+    {
+      "name": "Paused and remote states cannot begin a steering action",
+      "passed": true
+    },
+    {
+      "name": "Steering disposal and authority loss never write to another boat",
+      "passed": true
+    },
+    {
+      "name": "Power honors explicit docking limit; Full deliberately disables it without ignition or gear action",
+      "passed": true
+    },
+    {
+      "name": "Trim presentation separates actual and requested position; missing data stays unknown",
+      "passed": true
+    },
+    {
+      "name": "Engine preset change preserves world, state and original timeline",
+      "passed": true
+    },
+    {
+      "name": "Engine changes refuse moving, powered, reference, disabled and incomplete states",
+      "passed": true
+    },
+    {
+      "name": "Engine rebuild failure restores configuration and makes rollback attempt",
+      "passed": true
+    },
+    {
+      "name": "Performance renderer scale has lower pixel workload and never alters simulation",
+      "passed": true,
+      "performanceVsAutoPixelRatio": 0.5625,
+      "scope": "algebraic pixel-count target, not a measured GPU time"
+    },
+    {
+      "name": "Compact layout policy reserves less than 30% height at 390x844 and handles landscape",
+      "passed": true,
+      "portrait": {
+        "wide": false,
+        "header": 56,
+        "bottom": 184,
+        "unobstructedHeight": 580
+      },
+      "scope": "policy geometry, not browser box measurement"
+    },
+    {
+      "name": "Exact production Bus: continuous inputs no longer force instrument/model refresh",
+      "passed": true,
+      "beforeRefreshCalls": 1800,
+      "afterRefreshCalls": 0,
+      "scope": "executed original and patched production dispatch body"
+    },
+    {
+      "name": "Production simulation coefficients, model, depth, physics and fixed timestep are unchanged",
+      "passed": true
+    },
+    {
+      "name": "Production model-node cache preserves identity and avoids repeat traversal",
+      "passed": true
+    },
+    {
+      "name": "Actual new UI installer moves native controls without replacing handlers",
+      "passed": true
+    },
+    {
+      "name": "No menu, trim panel or music bar opens or plays on initial installation",
+      "passed": true
+    },
+    {
+      "name": "Menu hides driving presentation while preserving explicit Pause; closing restores controls",
+      "passed": true
+    },
+    {
+      "name": "Pointer cancellation via real installed event handlers resets target and hold flag",
+      "passed": true
+    },
+    {
+      "name": "Rapid menu changes leave obsolete detached buttons inert",
+      "passed": true
+    },
+    {
+      "name": "Dispose is idempotent and preserves later panel owner callback",
+      "passed": true
+    },
+    {
+      "name": "Music exposes speaker mode and pause policy without reopening an on-screen audio panel",
+      "passed": true
+    },
+    {
+      "name": "Obsolete music-menu work is cancelled before decorating a later menu",
+      "passed": true
+    }
+  ]
+}
