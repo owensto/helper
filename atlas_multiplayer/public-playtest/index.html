@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#071f29"><meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self' blob: data:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; connect-src 'self' blob: data:; img-src 'self' blob: data:; object-src 'none'; base-uri 'self'; frame-src 'none'">
+<title>Atlas D · Public Sailing Preview</title>
+<link rel="stylesheet" href="../standalone/public/style.css">
+<style>#rooms h2{margin:12px 32px 16px 0}#rooms p{font-size:14px;line-height:1.6;color:#c9e2e4}#rooms strong{color:#f2d9aa}#sea:focus{outline:none}.preview-tag{color:#f2d9aa}.status-strip{background:#082532d9;border:1px solid #a6c3c335;border-radius:8px;padding:9px 12px}.quiet{max-width:420px;line-height:1.5}</style>
+</head>
+<body>
+<main id="workshop" aria-label="Atlas D public solo sailing preview">
+<canvas id="sea" tabindex="0" aria-label="3D ocean and boat. W and S throttle, A and D steer."></canvas>
+<header><a class="brand" href="./index.html" aria-label="Restart Atlas D preview"><span class="emblem">A</span><span>ATLAS D<small>OPEN WATER</small></span></a><span class="edition preview-tag">PUBLIC SOLO PREVIEW</span><button id="roomsToggle" type="button" class="primary" aria-expanded="false">About this test</button></header>
+<section id="loading" role="status"><span class="overline">OPEN WATER · PUBLIC PLAYTEST</span><h1>Open the water.<br>Take the helm.</h1><p id="loadMessage">Loading the original boat model…</p><progress id="loadProgress" max="100" value="0"></progress><p class="quiet">No download or account needed.<br>Solo sailing preview. Multiplayer rooms are not online.</p></section>
+<section id="notice" hidden role="alert"><h2>The preview could not start</h2><p id="noticeText"></p><button id="retry" type="button">Reload preview</button></section>
+<aside id="rooms" hidden aria-label="About this public test"><button id="closeRooms" class="close" type="button" aria-label="Close information">×</button><h2>Try sailing here</h2><p><strong>This is solo-only.</strong> No other players or room server are connected. The separate multiplayer application is not deployed yet.</p><p>Press <strong>W</strong> to start and add throttle. Use <strong>A / D</strong> to steer, <strong>S</strong> to reduce throttle or reverse, <strong>Space</strong> to coast and <strong>C</strong> to change camera. On a phone, use the arrow and + / − buttons.</p><p>This public build has source, asset and nonbrowser checks, but has not passed rendered browser acceptance. It uses authored casual dynamics, not measured yacht or SeaLab physics.</p></aside>
+<section class="status-strip" aria-label="Preview status"><span id="connectionDot" class="dot"></span><span id="connection">Solo preview · Multiplayer unavailable</span><span id="rosterCount"></span></section>
+<section class="course" aria-label="Optional buoy course"><span class="overline">EXPLORER ROUTE</span><strong id="routeLabel">Buoy 1 / 5</strong><span id="routeDistance">— metres</span><button id="routeReset" type="button" aria-label="Restart buoy route">Restart route</button></section>
+<canvas id="radar" width="190" height="190" aria-label="Local navigation view"></canvas>
+<section class="dashboard" aria-label="Boat instruments and controls"><div class="speed"><strong id="speed">0.0</strong><span>KNOTS</span></div><div class="readouts"><span id="heading">090° E</span><span id="throttle">Throttle 0%</span><span id="gear">NEUTRAL</span></div><button id="power" type="button" aria-pressed="false">Start engine</button><button id="coast" type="button">Coast</button><button id="camera" type="button">Camera: chase</button></section>
+<section class="touch" aria-label="Touch helm"><div class="steering"><button data-hold="left" aria-label="Steer left">◀</button><button data-hold="right" aria-label="Steer right">▶</button></div><div class="thrust"><button data-hold="up" aria-label="Increase throttle">+</button><button data-hold="down" aria-label="Decrease throttle">−</button></div></section>
+<footer><span>W / S throttle · A / D steer · E engine · Space coast · C camera</span><span>Solo playtest · Casual dynamics · No room server</span></footer>
+</main>
+<script>
+window.addEventListener('error',function(event){
+  if(!event.message && !event.target?.src)return;
+  document.getElementById('loading').hidden=true;
+  document.getElementById('notice').hidden=false;
+  document.getElementById('noticeText').textContent='A required game resource failed to load or the renderer could not run. Reload, or try a browser with WebGL enabled. Multiplayer is not connected in this preview.';
+},true);
+</script>
+<script src="../standalone/public/assets/runtime.js"></script>
+<script type="module" src="./app.mjs"></script>
+</body></html>
