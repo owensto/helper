@@ -1,0 +1,34 @@
+{
+  "status": "PUBLIC_SOURCE_PREVIEW_BROWSER_UNVERIFIED",
+  "sourceSHA": "e86804a40c24b1c5a45aab6eba1bf32148ae620c",
+  "publicURL": "https://rawcdn.githack.com/owensto/helper/e86804a40c24b1c5a45aab6eba1bf32148ae620c/atlas_w_range/live/index.html?vessel=warship&range=1",
+  "baseFleetSHA": "8d7df3837046bdbf3b04bf4c4fca245a37aba2a5",
+  "changedScope": "Five new product files under atlas_w_range/live; original fleet files, GLB, both vessel physics, mobile input module, Three library and old public URLs unchanged.",
+  "physicsTests": {"passed":22,"failed":0,"command":"node --test test-flight.cjs"},
+  "sceneTests": {"passed":17,"failed":0,"command":"node --test test-scene.cjs","scope":"Actual addon and Three scene objects with synthetic DOM; no GPU/browser"},
+  "sourceIntegrity": {"newCompleteGitBlobsMatched":5,"unchangedBaselineFileHashesMatched":14,"resolvedRequiredResources":13,"requiredHostDOMIdsPresent":35,"originalMountCount":1},
+  "publicReceipt": "Web reader could not access the public URL; ordinary HTTP read from the container failed DNS resolution. No public-delivery, rendered-browser, touch or physical-phone verification is claimed.",
+  "blockedAutomation": "Earlier automated browser-test upload was not retried or routed elsewhere. No new automated browser or CI execution was started.",
+  "implemented": [
+    "Two projectiles launched from evaluated world-space barrel muzzles",
+    "Gravity and linear air-resistance motion, consuming existing host simulation time",
+    "Vessel translation and yaw contribute to initial projectile velocity",
+    "Swept spherical-target and sampled water collision; scoring only at collision",
+    "Manual traverse/elevation and rate-limited turret motion",
+    "Damped barrel recoil, muzzle flash, smoke, tracer trails, water rings and spray",
+    "Optional follow-shot camera and user-enabled synthesized firing sound",
+    "Visible Fire Salvo, Next Target, New Targets and Resume controls",
+    "Pause freeze, epoch reset, invalid-state rejection and bounded effect cleanup",
+    "F key firing is isolated from the sailing Forward-gear shortcut"
+  ],
+  "limitations": [
+    "Physics-based game prototype, not calibrated real naval ballistics",
+    "Recoil is visual, not a ship-dynamics impulse",
+    "Floating practice targets and water only; no ship or island projectile collision/damage solver",
+    "No real weapon data, crew, multiplayer or human-contact adoption",
+    "Actual browser, mobile layout, Safari, audio and visual acceptance remain unverified",
+    "Existing long-render interruption pause remains; native Resume is required"
+  ],
+  "initialTestCorrection": "Two strict pause/duplicate comparisons exposed sub-nanosecond timestamp noise; a near-zero elapsed guard was added. The same assertions now pass. Initial output is retained in the package.",
+  "package": {"file":"ATLAS_W_Online_Firing_Preview.zip","bytes":5298820,"sha256":"54f8140b7d1a43d6a8e3123a4ff2ffbd69ac7a06b9012e07ad3198257e33e1be"}
+}
