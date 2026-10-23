@@ -89,12 +89,12 @@ function install(T,H){
  }
  function next(){selected=(selected+1)%3;for(let i=0;i<3&&sim.targets[selected].hit;i++)selected=(selected+1)%3;manualPoint=null;assist=true;notice='Target '+(selected+1)+' selected';}
  function cameraMode(){mode=mode==='chase'?'gun':mode==='gun'?'orbit':'chase';H.controls.enabled=mode==='orbit';camReady=false;if(mode==='orbit')H.restoreView();}
- function act(a){if(a==='target')next();if(a==='camera')cameraMode();if(a==='idle')H.command('idle');if(a==='pause'){$('pause').click();clear();}if(a==='sound')toggleSound();if(a==='help'){$('a-help-card').hidden=!$('a-help-card').hidden;clear();}}
+ function act(a){if(a==='fire')fire();if(a==='target')next();if(a==='camera')cameraMode();if(a==='idle')H.command('idle');if(a==='pause'){$('pause').click();clear();}if(a==='sound')toggleSound();if(a==='help'){$('a-help-card').hidden=!$('a-help-card').hidden;clear();}}
  const blocked=()=>disposed||document.hidden||!!document.querySelector('dialog[open]')||!!document.querySelector('.panel:not([hidden])')||!$('a-help-card').hidden;
  cleanups.push(C.bindKeyboard(G,inputs,act,()=>!blocked()));
  for(const [id,action]of [['a-ahead','ahead'],['a-astern','astern'],['a-port','port'],['a-starboard','starboard'],['a-fire','fire']])cleanups.push(C.bindPointer($(id),action,inputs,()=>!blocked()&&!H.read().paused));
- // Native keyboard activation of the Fire button still works without a held pointer.
- $('a-fire').onclick=e=>{if(!e||e.detail===0)fire();};$('a-target').onclick=next;$('a-camera').onclick=cameraMode;$('a-idle').onclick=()=>act('idle');$('a-sound').onclick=toggleSound;
+ // A short tap fires immediately; holding repeats on simulation steps. Cooldown prevents duplicates.
+ $('a-fire').onclick=()=>fire();$('a-target').onclick=next;$('a-camera').onclick=cameraMode;$('a-idle').onclick=()=>act('idle');$('a-sound').onclick=toggleSound;
  $('a-help').onclick=()=>act('help');$('a-help-close').onclick=()=>$('a-help-card').hidden=true;
  $('a-assist').onclick=()=>{assist=!assist;manualPoint=null;};$('a-detail').onclick=()=>{detail=!detail;$('a-tray').hidden=!detail;};
  $('a-new').onclick=()=>{if(!H.read().paused)reset(H.read());else notice='Resume before resetting targets';};
