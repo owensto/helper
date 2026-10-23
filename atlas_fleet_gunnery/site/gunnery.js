@@ -21,7 +21,7 @@ function mount(B){
  function release(){firePointer=null;aimPointer=null;lastPointer=null;range.held=false;$('g-fire').classList.remove('held');}
  function pose(){const q=guns[range.selected];q.y=range.yaw;q.e=range.elevation;for(let i=0;i<guns.length;i++){const a=guns[i];a.yaw.rotation.y=-a.y*D;a.pitch.rotation.z=a.e*D;a.root.updateMatrixWorld(true);}const origin=q.muzzle.getWorldPosition(new T.Vector3()),direction=new T.Vector3(1,0,0).transformDirection(q.pitch.matrixWorld);return {origin,direction,q};}
  function message(s){lastStatus=s;$('g-status').textContent=s;}
- function clearEffects(){for(const e of effects){scene.remove(e.object);e.object.geometry?.dispose();e.object.material?.dispose();}effects=[];}
+ function clearEffects(){for(const q of guns){q.flash.visible=false;q.slide.position.x=0;q.lastShot=-Infinity;}for(const e of effects){scene.remove(e.object);e.object.geometry?.dispose();e.object.material?.dispose();}effects=[];}
  function disposeTargets(){targetsRoot.traverse(o=>{if(o.isMesh)o.geometry.dispose();});for(const m of targetMeshes){m.texture.dispose();m.label.material.dispose();}targetsRoot.clear();targetMeshes.length=0;}
  function newTargets(){release();clearEffects();disposeTargets();const data=[];[[0,190],[-28,235],[28,235],[-70,205],[70,205]].forEach(([a,r],i)=>{const p=model.localToWorld(v([40+Math.cos(a*D)*r,0,Math.sin(a*D)*r]));p.y=5;data.push({id:'T'+(i+1),point:p.toArray(),radius:5.5});
    const g=new T.Group();g.position.copy(p);g.rotation.y=-a*D-B.read().heading;targetsRoot.add(g);
@@ -64,7 +64,9 @@ function mount(B){
   const hit=C.trace(p.origin.toArray(),p.direction.toArray(),range.targets),cross=v(hit.point).project(camera);$('g-crosshair').style.left=(cross.x*.5+.5)*w+'px';$('g-crosshair').style.top=(-cross.y*.5+.5)*h+'px';$('g-crosshair').classList.toggle('on-target',hit.kind==='hit');$('g-target-hint').textContent=hit.targetId||'';
   $('g-angles').textContent=range.yaw.toFixed(1)+'° / '+range.elevation.toFixed(1)+'°';$('g-score').textContent=range.hits+' hits / '+range.total+' shots · '+range.destroyed+'/5';$('g-pause').hidden=!s.paused;$('g-fire').setAttribute('aria-disabled',String(s.paused));lastFrameTime=s.time;
  }
- const api={frame,release,inspect:()=>({...range.read(),mode,sourceMountHidden:!sourceMount.visible,gunMeshes:3,frameTime:lastFrameTime,aimPointer,firePointer,view:'gun-sight',muzzle:mode?pose().origin.toArray():null}),dispose(){exit();sourceMount.visible=true;for(const q of guns)model.remove(q.root);scene.remove(targetsRoot);overlay.remove();}};G.ATLAS_GUNNERY=Object.freeze({inspect:api.inspect});return api;
+ const api={frame,release,inspect:()=>({...range.read(),mode,sourceMountHidden:!sourceMount.visible,gunMeshes:3,frameTime:lastFrameTime,aimPointer,firePointer,view:'gun-sight',muzzle:mode?pose().origin.toArray():null}),dispose(){exit();sourceMount.visible=true;for(const q of guns)model.remove(q.root);scene.remove(targetsRoot);overlay.remove();}};G.ATLAS_GUNNERY=Object.freeze({inspect:api.inspect});pose();return api;
 }
 G.AtlasGunnery={mount};
 })(typeof window!=='undefined'?window:globalThis);
+
+// GUNNERY_VISUAL_CLEANUP_1

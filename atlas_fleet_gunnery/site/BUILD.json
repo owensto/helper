@@ -1,6 +1,6 @@
 {
   "baseline": "8d7df3837046bdbf3b04bf4c4fca245a37aba2a5",
-  "sourceSHA": "f9e513104281ef68c2e3c49e593821e0d0097f27",
+  "sourceSHA": "bd3eb65f9c3e134d80eab68b8423335783222031",
   "feature": "fictional-arcade-gunnery",
   "files": {
     "README.md": "58e1d865a7af5b2aa1d117c151736a96252b86092890d1ffb8fb0d87e38f1a67",
@@ -9,7 +9,7 @@
     "fleet.css": "89a501b61b838c79bba8fc2d5728b30436cfc480eafeb59cf39581aaa4fb8897",
     "fleet.js": "0cf7831bf6201737a3879aa52bd8d244f78a7e5538b9908224caab1e88596bfb",
     "gunnery.css": "904204148a779a83a1ff38894ff0b588aebf5c34a77a69dd5c7fcc26273c59d6",
-    "gunnery.js": "15e89daffa480d9aafeb49e5ff607971a3671a07d3c630240c0f1f75a85f2b81",
+    "gunnery.js": "164244459ee51bbc965ae63c9cc84f1fd5fe23cf49e9f6cf91903b25b5ed8b73",
     "index.html": "1409326d758e7ad6f0d74550698f8cb640a28105656ac1ea6b00519028d877f0",
     "mobile.css": "60526faf32238b580adf42a2c20d54bb5e47934ceeebabf2a9854da21ee6768d",
     "mobile.js": "d6142322e4003e632f960b16645052df16eee9243622c9a805823d002597bcc1",
