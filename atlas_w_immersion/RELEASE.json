@@ -1,0 +1,102 @@
+{
+  "status": "PUBLIC_SOURCE_PREVIEW_BROWSER_UNVERIFIED",
+  "name": "ATLAS-W — Crew & Sound",
+  "sourceSHA": "477fd6b85bcbcba01d89bf5e2fdb32bf2b4cf0d0",
+  "branch": "atlas/w-crew-sound-20261023",
+  "publicURL": "https://rawcdn.githack.com/owensto/helper/477fd6b85bcbcba01d89bf5e2fdb32bf2b4cf0d0/atlas_w_immersion/live/index.html?vessel=warship",
+  "baseOperatorSHA": "4f0b78a4572d934a219775089711c1b2183f7c60",
+  "baseEvidenceSHA": "1e2557dc550270619142305406d670e6894bf749",
+  "changedScope": "Seven additive product files under atlas_w_immersion/live. Original fleet, sailing host, both vessel dynamics, avatar assets, original rig modules, projectile/explosion modules and earlier previews remain unchanged.",
+  "sound": {
+    "origin": "Original synthesized game audio; not field recordings or real-weapon measurements",
+    "sampleFamilies": ["diesel", "wind", "water", "servo", "shot", "impact", "splash", "clack", "cycle"],
+    "continuousLayers": 5,
+    "features": [
+      "Independent port/starboard engine sources responding to actual simulated shaft thrust",
+      "Wind/wash responding to speed and motion; turret motor responding to slew",
+      "Camera-following spatial listener, HRTF panners and distance attenuation/filtering",
+      "Game sound-propagation delay; target impacts distinct from water splashes",
+      "Separate transient, low-frequency tail and mechanical sounds",
+      "User-enabled audio with volume and reduced-dynamic-range option",
+      "Pause/hidden/mute/reset/dispose cleanup and rapid enable/mute race protection",
+      "Optional audio graph failure is contained without breaking sailing"
+    ],
+    "maxPendingEvents": 24,
+    "maxActiveOneShots": 16,
+    "microphoneAccess": false,
+    "recordedShipAudio": false,
+    "deviceAudioVerified": false
+  },
+  "crew": {
+    "features": [
+      "Same licensed textured avatar at the first-/third-person station",
+      "Posture responds to ship pitch, roll, acceleration and turret movement",
+      "Control-stick movement, trigger-finger motion, small firing reaction and recovery",
+      "Input-triggered console gesture and regrip; left hand marked unsupported during gesture",
+      "Head tracking, breathing, headset/earcup/microphone visuals",
+      "Live console heading, speed, power, traverse, elevation and activity readings",
+      "Steady-camera comfort option; first-person headset/head hidden"
+    ],
+    "representation": "Presentation-only fictional seated operator, not a real person or military training",
+    "manualAmmunitionHandling": false,
+    "walking": false,
+    "fullBodyClearanceAccepted": false,
+    "originalRigImplementationUnchanged": true
+  },
+  "controls": {
+    "M_or_EnableSound": "Enable or mute sound",
+    "1_2_3": "First person / third person / ship view",
+    "V": "Look at hands and live console",
+    "WASD_or_Arrows": "Drive and steer",
+    "Space_or_FIRE": "Fire fictional game salvo",
+    "More": "Volume, reduced loudness, steady camera and manual aim",
+    "P_Escape": "Pause / Resume"
+  },
+  "tests": {
+    "command": "node --test tests-immersion/*.cjs",
+    "passed": 122,
+    "failed": 0,
+    "priorRegressionCasesRetained": 83,
+    "packagedRerunPassed": 122,
+    "scope": "Local Node execution; actual Three scene/skeleton/skin geometry with synthetic DOM and test-only texture decoding bypass. Actual PCM generation, but Web Audio graph/scheduling tested with fake AudioContext interfaces, not device output."
+  },
+  "integrity": {
+    "completeNewPublishedGitBlobsMatched": 7,
+    "unchangedFleetPayloadHashesMatched": 14,
+    "resolvedStaticScriptStylesheetResources": 20,
+    "packagePayloadHashesVerified": 79
+  },
+  "audioAudition": {
+    "file": "ATLAS_W_Sound_Audition.wav",
+    "seconds": 14,
+    "sampleRate": 24000,
+    "channels": 2,
+    "sha256": "c58066f8313d302f9a53cd1e56e12184e0cd064ed3cabe864b95fa85e711d203",
+    "peak": 0.27057236577029703,
+    "rms": 0.053122384845857,
+    "scope": "Offline stereo mix using these exact synthesis functions; not a browser/HRTF/gameplay recording"
+  },
+  "retainedCorrections": [
+    "Initial console gesture exceeded the original hand-reach assertion; shortened gesture, original assertion retained",
+    "Signed-zero sample endpoints corrected to exact zero",
+    "DSP high-pass state kept separate from output saturation; added explicit DC/level check",
+    "Optional audio failure containment added and tested"
+  ],
+  "publicReceipt": "Ordinary web-reader access to the exact public URL returned inaccessible. Source publication confirmed; no public HTTP, rendered browser, native touch or device-audio receipt claimed.",
+  "limits": [
+    "No new browser, CI or workflow execution; earlier blocked automation was not retried or routed elsewhere",
+    "No GPU shader, texture, physical phone, Safari, audible hardware output, FPS, battery or optical-latency verification",
+    "Synthesized sound, not real ship recordings; improved layering does not establish perceptual realism on a device",
+    "Ship/ocean/terrain/handling and projectile/explosion model unchanged; not a complete photorealistic or calibrated naval simulation",
+    "No full-body ergonomic/collision acceptance, military operations, manual loading, multiplayer or previous HUMANS/CORE approval transfer",
+    "Recoil remains visual; damage limited to existing practice targets/water",
+    "Existing long-render interruption pause remains and may require native Resume",
+    "Old immutable public URLs remain unchanged; use this preview URL"
+  ],
+  "package": {
+    "file": "ATLAS_W_Crew_and_Sound_Preview.zip",
+    "bytes": 5885109,
+    "sha256": "d1891ea65615733b8a7f8552734c8345b7e325907d96d41d345bff8e35eac353",
+    "payloadFiles": 80
+  }
+}
