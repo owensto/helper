@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="referrer" content="no-referrer"><meta name="theme-color" content="#102e3d">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net/npm/peerjs@1.5.5/dist/peerjs.min.js; style-src 'self'; connect-src 'self' https://rawcdn.githack.com https://0.peerjs.com wss://0.peerjs.com blob: data:; img-src 'self' blob: data:; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; frame-src 'none'">
+<title>Atlas D · Multiplayer Playtest</title><link rel="stylesheet" href="./style.css"></head>
+<body data-mode="multiplayer"><main>
+<canvas id="chart" tabindex="0" aria-label="Sailing chart. W/S throttle, A/D steer."></canvas><canvas id="sea" tabindex="0" aria-label="3D boat view" hidden></canvas>
+<header><div class="brand"><b>ATLAS D</b><span>OPEN WATER</span></div><span id="mode">OPEN WATER</span><nav><a href="./index.html">Solo</a><a href="./multiplayer.html">Multiplayer</a><button id="roomsToggle">Room</button></nav></header>
+<div id="starting" role="status">Starting the sailing chart…</div>
+<div class="connection"><span id="connection" role="status">Solo sailing</span><b id="count"></b></div>
+<aside id="rooms" hidden><button id="closeRooms" class="close" aria-label="Close room panel">×</button><h1>Sail with friends</h1><p>Public peer-to-peer playtest. The person who creates the room hosts it; keep that tab open and visible.</p>
+<label>Your name<input id="name" maxlength="24" placeholder="Captain" autocomplete="off"></label><button id="createRoom" class="accent">Create room</button>
+<label>Invitation from a friend<input id="inviteIn" placeholder="Paste invitation link" autocomplete="off" spellcheck="false"></label><button id="joinRoom">Join room</button>
+<label>Your room invitation<input id="inviteOut" readonly placeholder="Create a room first" spellcheck="false"></label><div class="row"><button id="copyInvite" disabled>Copy invitation</button><button id="leaveRoom" disabled>Leave room</button></div>
+<p id="roomStatus" role="status">No room connected.</p><small>Data only: no camera or microphone. PeerJS's free public service exchanges connection metadata. Peers may see each other's network addresses. Availability varies by network; no dedicated server or guaranteed relay. Rooms end when the host leaves. Refreshing requires a fresh join.</small></aside>
+<section class="helm" aria-label="Helm controls"><div class="speed"><strong id="speed">0.0</strong><small>KNOTS</small></div><span id="throttle">Power 0%</span><button id="power">Start engine</button><button id="coast">Coast</button><button id="camera">Chase</button><button id="visual">Chart view</button></section>
+<section class="touch" aria-label="Touch controls"><div><button data-hold="left" aria-label="Steer left">◀</button><button data-hold="right" aria-label="Steer right">▶</button></div><div><button data-hold="down" aria-label="Decrease throttle">−</button><button data-hold="up" aria-label="Increase throttle">+</button></div></section>
+<div id="route" class="route">Buoy 1/5</div>
+<footer><span>W/S throttle · A/D steer · E engine · Space coast · C camera</span><span>Casual dynamics · No boat collisions · Browser-hosted rooms</span></footer>
+<details id="diagnostics"><summary id="visualStatus">Starting chart view</summary><p>Chart view keeps working when 3D assets or graphics are unavailable. This is a public playtest, not a certified production release.</p><div class="row"><button id="retry3d">Retry 3D</button><button id="copyDebug">Copy diagnostics</button></div><pre id="debugResult"></pre></details>
+<noscript>JavaScript must be enabled to sail.</noscript></main><script type="module" src="./app.mjs"></script></body></html>

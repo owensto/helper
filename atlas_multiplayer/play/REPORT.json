@@ -1,0 +1,54 @@
+{
+  "sourceParentSHA": "f6e030870225432d75e1d8478a9b90ecae1db391",
+  "application": "Atlas D Open Water public peer playtest",
+  "status": "SOURCE_TESTED_PUBLIC_PLAYTEST_BROWSER_UNVERIFIED",
+  "tests": {
+    "passed": 24,
+    "failed": 0,
+    "command": "node --experimental-vm-modules --test play/tests/*.test.mjs",
+    "scope": "Native Node tests; real app lifecycle in synthetic DOM; real bundled Three.js scene construction; actual controller/protocol/peer adapter with in-memory event transport. No browser/WebGL draw/cloud/WebRTC execution."
+  },
+  "originalFailure": {
+    "reportedMessage": "The 3D game could not start",
+    "specificUserCause": "UNKNOWN: prior generic catch discarded failure details",
+    "sourceInspectedDesignDefect": "Original startup waits for renderer and model before starting any game loop; replacement starts chart loop independently and contains graphics errors."
+  },
+  "repairs": [
+    "Nonblocking chart-mode gameplay with optional original 3D boat",
+    "Stage-specific errors with HTTP/header/length/SHA256 validation",
+    "Keyboard focus preserved after switching chart/3D",
+    "Fragment-only invitations; data-only browser-hosted rooms; explicit host departure"
+  ],
+  "multiplayer": {
+    "protocol": "atlas-browser-room-1",
+    "library": "PeerJS 1.5.5, version-pinned CDN URL",
+    "signaling": "0.peerjs.com documented public cloud",
+    "transport": "WebRTC data channels; host browser relays room snapshots",
+    "cameraOrMic": false,
+    "maxPlayers": 8,
+    "requiresOpenHostTab": true,
+    "sameIdentityReconnect": false,
+    "dedicatedBackendDeployed": false,
+    "publicNetworkConnectionVerified": false,
+    "CDNLibraryBytesOrAuditVerified": false,
+    "warnings": [
+      "Public signaling/TURN availability unverified; some networks may fail",
+      "No server-side physics, competitive authority, persistence or host migration"
+    ]
+  },
+  "assets": {
+    "originalModelSHA256": "b1ef9c448309a9a5d85ec4f2efcf45d9406d999ab24d27bdd1534359a7278b82",
+    "modelByteLength": 9962552,
+    "geometryOrPhysicsChanged": false
+  },
+  "existingGates": {
+    "nodeWSVersionLockAudit": "UNCHANGED_UNPASSED",
+    "nativeTwoBrowserAcceptance": "NOT_RUN",
+    "publicHTTPVerification": "ATTEMPT_FAILED_DNS_OR_TOOL_ACCESS",
+    "SeaLabIntegration": "NOT_ADOPTED_OR_CLAIMED"
+  },
+  "noBrowserPolicyChange": true,
+  "noWorkflowDispatchOrRunnerSearch": true,
+  "noAccountsCredentialsBillingChanges": true,
+  "testLogSHA256": "4c37ae3a22b3569b295120e0144e0835e669ddfb9cffc0f13384afae3262a2fe"
+}
