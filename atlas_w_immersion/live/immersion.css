@@ -1,0 +1,6 @@
+/* Primary driving/firing remains visible; secondary sound and comfort settings stay in More. */
+#a-tray{max-height:min(62dvh,460px);overflow-y:auto;overscroll-behavior:contain}
+#a-tray label{display:block;padding:9px 0;color:#d7e1e2;font:13px system-ui}#a-volume{width:100%;min-height:38px}
+#a-night,#a-comfort{min-height:44px;margin:4px 0;width:100%}#a-crew-status{font-size:10px;letter-spacing:.08em}
+@media(max-width:420px){#operator-views{gap:3px}#a-crew-status{display:none}}
+@media(prefers-reduced-motion:reduce){#a-fire{animation:none!important}}
