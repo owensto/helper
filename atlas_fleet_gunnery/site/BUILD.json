@@ -1,0 +1,25 @@
+{
+  "baseline": "8d7df3837046bdbf3b04bf4c4fca245a37aba2a5",
+  "sourceSHA": "bd3eb65f9c3e134d80eab68b8423335783222031",
+  "feature": "fictional-arcade-gunnery",
+  "files": {
+    "README.md": "58e1d865a7af5b2aa1d117c151736a96252b86092890d1ffb8fb0d87e38f1a67",
+    "app.js": "97fc5e130093ebf39d25a507ca18c52dc2265ff7b3271e46f4b04891dd2513cb",
+    "assets/ATLAS_W.glb": "cfce666ed4c79446e7ad7c86be45385db7056618be4cdb233e4bf2b79241f27f",
+    "fleet.css": "89a501b61b838c79bba8fc2d5728b30436cfc480eafeb59cf39581aaa4fb8897",
+    "fleet.js": "0cf7831bf6201737a3879aa52bd8d244f78a7e5538b9908224caab1e88596bfb",
+    "gunnery.css": "904204148a779a83a1ff38894ff0b588aebf5c34a77a69dd5c7fcc26273c59d6",
+    "gunnery.js": "164244459ee51bbc965ae63c9cc84f1fd5fe23cf49e9f6cf91903b25b5ed8b73",
+    "index.html": "1409326d758e7ad6f0d74550698f8cb640a28105656ac1ea6b00519028d877f0",
+    "mobile.css": "60526faf32238b580adf42a2c20d54bb5e47934ceeebabf2a9854da21ee6768d",
+    "mobile.js": "d6142322e4003e632f960b16645052df16eee9243622c9a805823d002597bcc1",
+    "model.js": "858057b31d2076f623458dfe704bf338ea7e313d6f81e4a4e95e84f0350cd5b8",
+    "physics.js": "a60b52e0771d294e773d6fc4e5a509677d14b1fc26a519dc0f6348f415707627",
+    "range-core.js": "5202685645cc7d13c0dfff8d32f93405f0ccad29db4b51e9d39b6c4367eccb82",
+    "style.css": "44ad5ddc89119cc89e51fab4237a641b8894edf3ce8cc20bba5f8c5b7f889750",
+    "vendor/runtime.js": "50a297fabc59ff592031fa916d3fc17511d55747fd11fcdfbd7119bc6148b7f4",
+    "warship-asset.json": "18d07c5f52c02a0fe2fe8763fc1bc68b934f62de0bbc0256863932a86c0b7ec3",
+    "warship-physics.js": "37cc97b3e29c91cb36279091fe144c5649990551dbeaccd46f2a81d423fe04a3"
+  },
+  "publicVerified": false
+}
