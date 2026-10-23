@@ -1,24 +1,20 @@
-name: ATLAS D SUMARS Y12 live fleet
+name: ATLAS D SUMARS Y13 realism release
 on:
   push:
-    branches: ['atlas-d/sumars-fleet-y12-20261023']
+    branches: ['atlas-d/fleet-realism-y13-20261023']
     paths:
       - '.github/workflows/atlas-d-simulator-01.yml'
-      - 'atlas_d_simulator_01/contact/y12/*.js'
-      - 'atlas_d_simulator_01/contact/y12/*.cjs'
-      - 'atlas_d_simulator_01/contact/y12/*.py'
-      - 'atlas_d_simulator_01/contact/y12/*.html'
-      - 'atlas_d_simulator_01/contact/y12/*.css'
+      - 'atlas_d_simulator_01/contact/y13/**'
 permissions:
   contents: write
 concurrency:
-  group: atlas-d-y12-isolated-publication
+  group: atlas-d-y13-isolated-publication
   cancel-in-progress: false
 jobs:
   verify-publish:
-    if: github.ref == 'refs/heads/atlas-d/sumars-fleet-y12-20261023'
+    if: github.ref == 'refs/heads/atlas-d/fleet-realism-y13-20261023'
     runs-on: ubuntu-24.04
-    timeout-minutes: 25
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
         with:
@@ -33,65 +29,69 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - name: Measure four craft and verify immutable original inputs
+      - name: Build versioned realism derivative and preserve originals
         run: |
-          mkdir -p atlas_d_simulator_01/contact/y12/evidence
-          for f in atlas_d_simulator_01/contact/y12/*.js; do node --check "$f"; done
-          node atlas_d_simulator_01/contact/y12/test-fleet.cjs > atlas_d_simulator_01/contact/y12/evidence/physics-tests.json
-          node atlas_d_simulator_01/test-core.cjs > atlas_d_simulator_01/contact/y12/evidence/unchanged-original-core.json
-          python atlas_d_simulator_01/contact/y12/build.py
-      - name: Operate all craft, phone controls and real-time submarine recovery
+          mkdir -p atlas_d_simulator_01/contact/y13/evidence
+          python atlas_d_simulator_01/contact/y13/build.py
+          for f in atlas_d_simulator_01/contact/y13/*.js; do node --check "$f"; done
+          node atlas_d_simulator_01/contact/y13/test-fleet.cjs > atlas_d_simulator_01/contact/y13/evidence/fleet-tests.json
+          node atlas_d_simulator_01/contact/y13/test-realism.cjs > atlas_d_simulator_01/contact/y13/evidence/realism-tests.json
+          node atlas_d_simulator_01/test-core.cjs > atlas_d_simulator_01/contact/y13/evidence/original-core.json
+          python atlas_d_simulator_01/contact/y13/package.py
+      - name: Actual four-craft browser input, waves, dive recovery and baseline captures
         run: |
           python -m pip install -q playwright==1.55.0
           python -m playwright install --with-deps chromium >/dev/null
-          python -m http.server 8926 --bind 127.0.0.1 --directory . >atlas_d_simulator_01/contact/y12/evidence/http.log 2>&1 &
+          python -m http.server 8926 --bind 127.0.0.1 --directory . >atlas_d_simulator_01/contact/y13/evidence/http.log 2>&1 &
           sleep 2
-          python atlas_d_simulator_01/contact/y12/verify.py
-      - name: Publish only the gated isolated fleet and measurements
+          python atlas_d_simulator_01/contact/y13/verify.py
+      - name: Publish only gated isolated Y13 and its reproducible source
         run: |
+          python atlas_d_simulator_01/contact/y13/package.py
           python - <<'PY'
-          import json
+          import json,subprocess
           from pathlib import Path
-          y=Path('atlas_d_simulator_01/contact/y12')
+          y=Path('atlas_d_simulator_01/contact/y13')
           assert json.loads((y/'evidence/local-browser.json').read_text())['passed']
           assert json.loads((y/'measurements.json').read_text())['passed']
+          assert json.loads((y/'realism-results.json').read_text())['passed']
+          subprocess.run(['git','add','-f']+[str(p) for p in y.iterdir() if p.is_file()],check=True)
           PY
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add -f atlas_d_simulator_01/contact/y12/build.json atlas_d_simulator_01/contact/y12/measurements.json
-          git commit -m 'Publish gated ATLAS D SUMARS fleet and measured handling report'
-          git push origin HEAD:refs/heads/atlas-d/sumars-fleet-y12-20261023
+          git commit -m 'Publish gated Y13 fleet realism and measured wave-response report'
+          git push origin HEAD:refs/heads/atlas-d/fleet-realism-y13-20261023
           echo "PUBLIC_COMMIT=$(git rev-parse HEAD)" >> "$GITHUB_ENV"
-          echo "PUBLIC_URL=https://rawcdn.githack.com/owensto/helper/$(git rev-parse HEAD)/atlas_d_simulator_01/contact/y12/index.html" >> "$GITHUB_ENV"
-      - name: Verify actual public fleet, original model bytes and trusted controls
+          echo "PUBLIC_URL=https://rawcdn.githack.com/owensto/helper/$(git rev-parse HEAD)/atlas_d_simulator_01/contact/y13/index.html" >> "$GITHUB_ENV"
+      - name: Operate exact public bytes on desktop and both phone orientations
         run: |
-          python atlas_d_simulator_01/contact/y12/verify.py
+          python atlas_d_simulator_01/contact/y13/verify.py
           python - <<'PY'
           import json,os
           from pathlib import Path
-          y=Path('atlas_d_simulator_01/contact/y12');p=json.loads((y/'evidence/public-browser.json').read_text());assert p['passed']
-          release={'status':'Public four-craft desktop/portrait/landscape controls and exact assets verified','sourceCommit':os.environ['GITHUB_SHA'],'publishedCommit':os.environ['PUBLIC_COMMIT'],'url':os.environ['PUBLIC_URL'],'reportURL':os.environ['PUBLIC_URL'].replace('index.html','report.html'),'vessels':['ATLAS-D','ATLAS-N','SUMARS','ATLAS-W'],'oneActiveVessel':True,'focusedTests':51,'localDiveCycles':['ATLAS-D','ATLAS-N','SUMARS'],'publicBrowserVerified':True,'seaTrialValidated':False,'multiplayer':False,'sharedHostMerged':False,'physicalDeviceTested':False}
+          y=Path('atlas_d_simulator_01/contact/y13');p=json.loads((y/'evidence/public-browser.json').read_text());assert p['passed']
+          release={'status':'Exact public four-craft controls, wave checks and source bytes verified','sourceCommit':os.environ['GITHUB_SHA'],'publishedCommit':os.environ['PUBLIC_COMMIT'],'url':os.environ['PUBLIC_URL'],'reportURL':os.environ['PUBLIC_URL'].replace('index.html','report.html'),'vessels':['ATLAS-D','ATLAS-N','SUMARS','ATLAS-W'],'oneActiveVessel':True,'focusedTests':17,'fleetTests':51,'localDiveCycles':['ATLAS-D','ATLAS-N','SUMARS'],'gpuWaveChecks':True,'publicBrowserVerified':True,'seaTrialValidated':False,'multiplayer':False,'sharedHostMerged':False,'physicalDeviceTested':False}
           (y/'RELEASE.json').write_text(json.dumps(release,indent=2));print(json.dumps(release,indent=2))
           PY
-          git add atlas_d_simulator_01/contact/y12/RELEASE.json
-          git commit -m 'Record verified live SUMARS fleet release'
-          git push origin HEAD:refs/heads/atlas-d/sumars-fleet-y12-20261023
+          git add atlas_d_simulator_01/contact/y13/RELEASE.json
+          git commit -m 'Record verified online Y13 realism release'
+          git push origin HEAD:refs/heads/atlas-d/fleet-realism-y13-20261023
           echo "$PUBLIC_URL" >> "$GITHUB_STEP_SUMMARY"
-      - name: Retain exact source and actual result fingerprints
+      - name: Retain actual evidence and source hashes
         if: always()
         run: |
           python - <<'PY'
           from pathlib import Path
           import hashlib,json,os
-          y=Path('atlas_d_simulator_01/contact/y12');e=y/'evidence';e.mkdir(exist_ok=True)
+          y=Path('atlas_d_simulator_01/contact/y13');e=y/'evidence';e.mkdir(exist_ok=True)
           files={str(p.relative_to(y)):hashlib.sha256(p.read_bytes()).hexdigest() for p in y.rglob('*') if p.is_file() and '__pycache__' not in p.parts and p.name!='artifact-manifest.json'}
           (e/'artifact-manifest.json').write_text(json.dumps({'sourceCommit':os.environ['GITHUB_SHA'],'publishCommit':os.environ.get('PUBLIC_COMMIT'),'url':os.environ.get('PUBLIC_URL'),'files':files},indent=2))
           PY
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: ATLAS-D-SUMARS-Y12-fleet-review
+          name: ATLAS-D-SUMARS-Y13-realism-review
           path: |
-            atlas_d_simulator_01/contact/y12/
-            !atlas_d_simulator_01/contact/y12/__pycache__/**
+            atlas_d_simulator_01/contact/y13/
+            !atlas_d_simulator_01/contact/y13/__pycache__/**
           retention-days: 14
