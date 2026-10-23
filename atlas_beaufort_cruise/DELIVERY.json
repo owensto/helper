@@ -1,15 +1,16 @@
 {
-  "version": "Harbor Life 3",
-  "url": "https://rawcdn.githack.com/owensto/helper/4139361fb5f407536b5bab227e44c7baf1ce387e/atlas_beaufort_cruise/site/index.html",
-  "published_commit": "4139361fb5f407536b5bab227e44c7baf1ce387e",
+  "version": "Wildlife & Views 4",
+  "url": "https://rawcdn.githack.com/owensto/helper/2c2e75a441b5660d40eb5327b3a72f92acbd4ef2/atlas_beaufort_cruise/site/index.html",
+  "published_commit": "2c2e75a441b5660d40eb5327b3a72f92acbd4ef2",
   "status": "STATIC_PREVIEW_COMMITTED",
-  "source_commit": "8a8c2b21e0b5bf3d988331726832517f145d9d8b",
-  "build_run": "39197777867",
-  "cpu_checks_passed": 66,
+  "source_commit": "95f2668ce62c40adc8854e1aa1a81f67dc38c971",
+  "build_run": "39900393542",
+  "cpu_checks_passed": 84,
   "browserVerified": false,
   "CDNVerified": false,
   "GPUVerified": false,
   "physicalDeviceVerified": false,
   "frameRateVerified": false,
-  "note": "No browser, public-response, actual audio playback or GPU verification performed. Game career remains a plan."
+  "photorealismVerified": false,
+  "note": "Complete static site committed after CPU/model/geography tests. No browser, current public-response, actual audio playback or GPU verification performed."
 }
