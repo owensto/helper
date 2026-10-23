@@ -1,0 +1,89 @@
+{
+  "status": "PUBLIC_SOURCE_PREVIEW_BROWSER_UNVERIFIED",
+  "name": "ATLAS-W Gunner Station — First and Third Person",
+  "sourceSHA": "4f0b78a4572d934a219775089711c1b2183f7c60",
+  "branch": "atlas/w-visible-gunner-20261023",
+  "publicURL": "https://rawcdn.githack.com/owensto/helper/4f0b78a4572d934a219775089711c1b2183f7c60/atlas_w_operator/live/index.html?vessel=warship",
+  "baseActionSHA": "a571e6ff1f6d58c74d68933cd338f7bd4027183f",
+  "humanSourceSHA": "10ed9c2f8d0c392828f238e686bcc689517d34f9",
+  "scope": "Additive atlas_w_operator only. Original sailing host, fleet model/dynamics, mobile modules, projectile/effect modules and original HUMANS implementation are unchanged.",
+  "operator": {
+    "id": "atlas-w-visible-gunner-v1",
+    "asset": "Microsoft Rocketbox Male_Adult_01, existing RocketboxCaptain.glb",
+    "bytes": 2160396,
+    "gitBlob": "6d781ccfdb58d6a156636921cd8bde9058e5e2c8",
+    "sha256": "e80b6e82ac31c3bfb1134952e0bcb9b840fedc26b71dc90e9b387ae8cd28ecd3",
+    "license": "MIT; exact license/source/provenance retained beside asset",
+    "heightM": 1.78,
+    "skinnedMeshes": 3,
+    "originalRigModulesReusedWithoutChanges": true,
+    "representation": "Textured animated 3D character, not a live connected player or likeness of the user",
+    "station": "New fictional open training console on the turret roof; not Bay station acceptance"
+  },
+  "features": [
+    "Visible articulated gunner with hands on controls and feet on authored supports",
+    "Third-person view starts over the shoulder and follows the turret",
+    "First person uses the posed head location and hides head/hair only",
+    "Look-down view shows the actual hands and console; focus/zoom option",
+    "Breathing and small firing reactions use the same simulation time",
+    "WASD/arrows driving and Space/Fire remain available in both views",
+    "Mouse drag aims and short left click fires in first/third-person views",
+    "Mobile view buttons coexist with left driving pad and right Fire control",
+    "Asset failure disables unavailable character views rather than inventing a fallback person",
+    "Existing game projectiles, explosions, target scoring and pause behavior retained"
+  ],
+  "controls": {
+    "1": "First person",
+    "2": "Third person",
+    "3": "Whole-ship chase view",
+    "C": "Cycle third/first/ship/free camera",
+    "Z": "Focus / zoom",
+    "V": "Look at hands and console / return to sight",
+    "WASD_Arrows": "Drive and steer",
+    "Space_Fire": "Fire salvo; hold to repeat after cooldown",
+    "MouseDrag": "Manual traverse and elevation in gunner views",
+    "MouseClick": "Fire in gunner views",
+    "Tab": "Next practice target",
+    "P_Escape": "Pause / resume"
+  },
+  "tests": {
+    "command": "node --test tests-operator/*.cjs",
+    "passed": 83,
+    "failed": 0,
+    "unchangedRegressionAssertions": 59,
+    "operatorSceneCases": 20,
+    "bootstrapCases": 4,
+    "packagedRerunPassed": 83,
+    "scope": "Local Node execution using actual Three scene/skeleton/skin geometry and exact GLB, with synthetic DOM/events and a test-only texture decoder bypass. No browser or GPU."
+  },
+  "integrity": {
+    "completePublishedGitBlobsMatched": 17,
+    "unchangedFleetFileHashesMatched": 14,
+    "unchangedPriorActionFiles": 7,
+    "staticScriptStylesheetPathsResolved": 17,
+    "packageHashChecksPassed": 58
+  },
+  "numericChecks": {
+    "cameraProjectionLayouts": [[390,844],[844,390],[1440,960]],
+    "selectedFootSkinMinLocalY": 4.234906156965453,
+    "authoredSupportTopLocalY": 4.235,
+    "turretSweepMaximumJointResidual": 7.478468350847733e-8,
+    "qualification": "Joint and selected-foot/projection checks only; not complete full-body clearance, native UI or visual acceptance."
+  },
+  "publicReceipt": "Ordinary web-reader access to this exact URL was unavailable. Source publication is confirmed; no public HTTP/render/touch success is claimed.",
+  "limits": [
+    "No new browser, CI or workflow execution; earlier blocked automation was not retried or routed elsewhere",
+    "No rendered texture/shader, physical-phone, Safari, audio, FPS or optical-latency verification",
+    "No walk-around character, boarding animation, full-body collision/ergonomic certification or multiplayer",
+    "No H4/H5/H7, CORE station, human occupancy or fit approval transfer",
+    "Not a photorealistic human or military uniform claim; original licensed character texture retained",
+    "Original ship/water/terrain and physics coefficients unchanged; fictional game mechanics",
+    "Existing slow-render interruption pause remains and may require Resume"
+  ],
+  "package": {
+    "file": "ATLAS_W_First_Third_Person_Gunner.zip",
+    "bytes": 4645845,
+    "sha256": "c0bcf807785ade621d58681cf1d63f4d8c83e563db5ca33567c0495b4cec9827",
+    "payloadFiles": 59
+  }
+}
