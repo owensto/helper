@@ -1,10 +1,10 @@
-name: ATLAS Beaufort Harbor Life static preview
+name: ATLAS Beaufort Wildlife and Views static preview
 on:
   workflow_dispatch:
   push:
     branches: ['atlas/beaufort-cruise-20261018']
     paths:
-      - 'atlas_beaufort_cruise/source/game3/**'
+      - 'atlas_beaufort_cruise/source/harbor4/**'
       - '.github/workflows/atlas-beaufort-cruise.yml'
 permissions:
   contents: read
@@ -24,8 +24,8 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/checkout@v4
         with:
-          ref: c0593c5d43f634394407a8758abd6908640c75d1
-          path: _game_base
+          ref: 4139361fb5f407536b5bab227e44c7baf1ce387e
+          path: _harbor_base
           persist-credentials: false
       - uses: actions/setup-python@v5
         with:
@@ -33,65 +33,63 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - name: Build and test native behavior without browser navigation
+      - name: Build and test actual policies, model, geography and scene without browser navigation
         run: |
-          python atlas_beaufort_cruise/source/game3/build.py --base _game_base/atlas_beaufort_cruise/site --out /tmp/bc-game3
-          python atlas_beaufort_cruise/source/game3/check.py --site /tmp/bc-game3 --base _game_base/atlas_beaufort_cruise/site --base-source _game_base/atlas_beaufort_cruise/source --easy atlas_easy_helm --out atlas_beaufort_cruise/source/game3/checks
-      - name: Preserve test scope and prepare complete static candidate
+          python atlas_beaufort_cruise/source/harbor4/build.py --base _harbor_base/atlas_beaufort_cruise/site --out /tmp/bc-harbor4
+          python atlas_beaufort_cruise/source/harbor4/check.py --site /tmp/bc-harbor4 --base _harbor_base/atlas_beaufort_cruise/site --base-source _harbor_base/atlas_beaufort_cruise/source --easy atlas_easy_helm --out atlas_beaufort_cruise/source/harbor4/checks
+      - name: Require all CPU gates and retain honest graphics and device status
         run: |
           python - <<'PY'
           from pathlib import Path
           import json,hashlib,shutil,os
-          r=Path('atlas_beaufort_cruise');src=r/'source/game3';site=r/'site'
+          r=Path('atlas_beaufort_cruise');src=r/'source/harbor4';site=r/'site';compiled=Path('/tmp/bc-harbor4')
           d=json.loads((src/'checks/verification.json').read_text())
-          assert d['passed'] and d['cpuChecks']==66 and len(d['powerTrials'])==4
+          assert d['passed'] and d['cpuChecks']==84 and len(d['modeledPowerTrials'])==4
           assert d['browserVerified'] is False and d['GPUVerified'] is False
-          assert len(d['build']['changed'])==7 and d['build']['newPhysicsCoefficients'] is False
-          compiled=Path('/tmp/bc-game3')
+          assert len(d['build']['changed'])==9 and d['build']['geographyChanged'] is False
           assert not any(p.suffix.lower() in ['.ttf','.otf','.woff','.woff2'] for p in compiled.rglob('*'))
-          shutil.copytree(compiled,site,dirs_exist_ok=True)
-          shutil.copy2(src/'README.md',r/'HARBOR_LIFE_3.md')
-          shutil.copy2(src/'GAME_PLAN.md',r/'GAME_PLAN.md')
+          shutil.rmtree(site);shutil.copytree(compiled,site)
+          shutil.copy2(src/'README.md',r/'WILDLIFE_VIEWS_4.md')
           files={str(p.relative_to(site)):hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(site.rglob('*')) if p.is_file()}
-          record={'version':'Harbor Life 3','status':'PUBLIC_REVIEW_CANDIDATE','source_commit':os.environ['GITHUB_SHA'],'build_run':os.environ['GITHUB_RUN_ID'],'cpu_checks_passed':66,'browserVerified':False,'GPUVerified':False,'actualMusicPlaybackVerified':False,'physicalDeviceVerified':False,'CDNVerified':False,'frameRateVerified':False,'files':files}
-          (r/'BUILD3.json').write_text(json.dumps(record,indent=2)+'\n')
+          record={'version':'Wildlife & Views 4','status':'PUBLIC_REVIEW_CANDIDATE','source_commit':os.environ['GITHUB_SHA'],'build_run':os.environ['GITHUB_RUN_ID'],'cpu_checks_passed':84,'browserVerified':False,'GPUVerified':False,'actualMusicPlaybackVerified':False,'physicalDeviceVerified':False,'CDNVerified':False,'frameRateVerified':False,'photorealismVerified':False,'files':files}
+          (r/'BUILD4.json').write_text(json.dumps(record,indent=2)+'\n')
           PY
-      - name: Commit candidate only to the existing isolated branch
+      - name: Publish complete static candidate only to this existing isolated branch
         id: publication
         run: |
           git config user.name 'ATLAS preview build'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add -f atlas_beaufort_cruise/site atlas_beaufort_cruise/HARBOR_LIFE_3.md atlas_beaufort_cruise/GAME_PLAN.md atlas_beaufort_cruise/BUILD3.json atlas_beaufort_cruise/source/game3/checks
+          git add -f atlas_beaufort_cruise/site atlas_beaufort_cruise/WILDLIFE_VIEWS_4.md atlas_beaufort_cruise/BUILD4.json atlas_beaufort_cruise/source/harbor4/checks
           test -z "$(git diff --cached --name-only | grep -v '^atlas_beaufort_cruise/' || true)"
-          git diff --cached --quiet || git commit -m 'Publish Beaufort Harbor Life3 preview: WASD, restored country cards, compact menu and yaw sampling [skip ci]'
+          git diff --cached --quiet || git commit -m 'Publish Beaufort Wildlife and Views4: dolphins, camera modes, local recovery and consistent interface [skip ci]'
           git push origin HEAD:refs/heads/atlas/beaufort-cruise-20261018
           echo "commit=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
-      - name: Record static preview link and package exact assets
+      - name: Record exact preview URL and prepare complete portable site
         env:
           PUBLIC_COMMIT: ${{ steps.publication.outputs.commit }}
         run: |
           python - <<'PY'
           from pathlib import Path
           import json,os,shutil
-          r=Path('atlas_beaufort_cruise');out=Path('/tmp/atlas-game3-delivery');out.mkdir()
+          r=Path('atlas_beaufort_cruise');out=Path('/tmp/atlas-harbor4-delivery');out.mkdir()
           sha=os.environ['PUBLIC_COMMIT'];url=f'https://rawcdn.githack.com/owensto/helper/{sha}/atlas_beaufort_cruise/site/index.html'
-          d={'version':'Harbor Life 3','url':url,'published_commit':sha,'status':'STATIC_PREVIEW_COMMITTED','source_commit':os.environ['GITHUB_SHA'],'build_run':os.environ['GITHUB_RUN_ID'],'cpu_checks_passed':66,'browserVerified':False,'CDNVerified':False,'GPUVerified':False,'physicalDeviceVerified':False,'frameRateVerified':False,'note':'No browser, public-response, actual audio playback or GPU verification performed. Game career remains a plan.'}
-          for name in ['DELIVERY.json','DELIVERY3.json']:(r/name).write_text(json.dumps(d,indent=2)+'\n')
-          for name in ['BUILD3.json','DELIVERY3.json','HARBOR_LIFE_3.md','GAME_PLAN.md']:shutil.copy2(r/name,out/name)
-          shutil.copy2(r/'source/game3/checks/verification.json',out/'verification.json')
-          pkg=out/'Atlas_Beaufort_Harbor_Life_3';shutil.copytree(r/'site',pkg/'site');shutil.copytree(r/'source',pkg/'source',ignore=shutil.ignore_patterns('__pycache__'))
-          shutil.copy2(r/'HARBOR_LIFE_3.md',pkg/'README.md');shutil.copy2(r/'GAME_PLAN.md',pkg/'GAME_PLAN.md');shutil.copy2(r/'DELIVERY3.json',pkg/'PLAY_ONLINE.json')
+          d={'version':'Wildlife & Views 4','url':url,'published_commit':sha,'status':'STATIC_PREVIEW_COMMITTED','source_commit':os.environ['GITHUB_SHA'],'build_run':os.environ['GITHUB_RUN_ID'],'cpu_checks_passed':84,'browserVerified':False,'CDNVerified':False,'GPUVerified':False,'physicalDeviceVerified':False,'frameRateVerified':False,'photorealismVerified':False,'note':'Complete static site committed after CPU/model/geography tests. No browser, current public-response, actual audio playback or GPU verification performed.'}
+          for name in ['DELIVERY.json','DELIVERY4.json']:(r/name).write_text(json.dumps(d,indent=2)+'\n')
+          for name in ['BUILD4.json','DELIVERY4.json','WILDLIFE_VIEWS_4.md']:shutil.copy2(r/name,out/name)
+          shutil.copy2(r/'source/harbor4/checks/verification.json',out/'verification.json')
+          pkg=out/'Atlas_Beaufort_Wildlife_4';shutil.copytree(r/'site',pkg/'site');shutil.copytree(r/'source',pkg/'source',ignore=shutil.ignore_patterns('__pycache__'))
+          shutil.copy2(r/'WILDLIFE_VIEWS_4.md',pkg/'README.md');shutil.copy2(r/'GAME_PLAN.md',pkg/'GAME_PLAN.md');shutil.copy2(r/'DELIVERY4.json',pkg/'PLAY_ONLINE.json')
           assert not any(p.suffix.lower() in ['.ttf','.otf','.woff','.woff2'] for p in pkg.rglob('*'))
-          shutil.make_archive(str(out/'Atlas_Beaufort_Harbor_Life_3'),'zip',root_dir=pkg);shutil.rmtree(pkg)
+          shutil.make_archive(str(out/'Atlas_Beaufort_Wildlife_4'),'zip',root_dir=pkg);shutil.rmtree(pkg)
           PY
-          git add atlas_beaufort_cruise/DELIVERY.json atlas_beaufort_cruise/DELIVERY3.json
-          git diff --cached --quiet || git commit -m 'Record Harbor Life3 preview link and unverified browser scope [skip ci]'
+          git add atlas_beaufort_cruise/DELIVERY.json atlas_beaufort_cruise/DELIVERY4.json
+          git diff --cached --quiet || git commit -m 'Record Wildlife and Views4 link with explicit unverified device and graphics scope [skip ci]'
           git push origin HEAD:refs/heads/atlas/beaufort-cruise-20261018
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: ATLAS-Beaufort-Harbor-Life3
+          name: ATLAS-Beaufort-Wildlife-Views4
           path: |
-            /tmp/atlas-game3-delivery/
-            atlas_beaufort_cruise/source/game3/checks/
+            /tmp/atlas-harbor4-delivery/
+            atlas_beaufort_cruise/source/harbor4/checks/
           retention-days: 30
