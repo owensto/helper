@@ -28,7 +28,7 @@
   }
  }
  function bindKeyboard(target,inputs,act,enabled=()=>true){
-  const down=e=>{if(!enabled()||editable(e))return;const action=MAP[e.code],single=SHORT[e.code];if(!action&&!single)return;e.preventDefault();if(action)inputs.hold('key:'+e.code,action);else if(!e.repeat)act(single);};
+  const down=e=>{if(!enabled()||editable(e))return;const action=MAP[e.code],single=SHORT[e.code];if(!action&&!single)return;e.preventDefault();if(action){inputs.hold('key:'+e.code,action);if(action==='fire'&&!e.repeat)act('fire');}else if(!e.repeat)act(single);};
   const up=e=>{if(MAP[e.code]){inputs.release('key:'+e.code);if(enabled()&&!editable(e))e.preventDefault();}};
   target.addEventListener('keydown',down);target.addEventListener('keyup',up);
   return ()=>{target.removeEventListener('keydown',down);target.removeEventListener('keyup',up);inputs.clear();};
