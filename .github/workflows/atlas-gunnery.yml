@@ -29,11 +29,12 @@ jobs:
         run: |
           test "$GITHUB_REF_NAME" = atlas/fleet-gunnery-20261023
           git fetch --depth=1 origin 8d7df3837046bdbf3b04bf4c4fca245a37aba2a5
+          python atlas_fleet_gunnery/finish.py
           python atlas_fleet_gunnery/build.py
           for p in atlas_fleet_gunnery/site/*.js; do node --check "$p"; done
           python -m py_compile atlas_fleet_gunnery/verify.py
           cd atlas_fleet_gunnery
-          node --test test.cjs > unit.tap
+          node --test test.cjs test-ui.cjs > unit.tap
       - name: Prepare existing test browser
         run: |
           python -m pip install playwright==1.55.0
@@ -48,6 +49,7 @@ jobs:
       - name: Publish only the new gunnery candidate
         id: publish
         run: |
+          test "$(git ls-remote origin refs/heads/atlas/fleet-gunnery-20261023 | cut -f1)" = "$GITHUB_SHA"
           git config user.name 'ATLAS gunnery release'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add atlas_fleet_gunnery/site
