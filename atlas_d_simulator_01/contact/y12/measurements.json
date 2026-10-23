@@ -1,0 +1,522 @@
+{
+  "passed": true,
+  "total": 51,
+  "tests": [
+    {
+      "name": "d finite SI profile and static footprint",
+      "passed": true
+    },
+    {
+      "name": "d analytic steady longitudinal force",
+      "passed": true
+    },
+    {
+      "name": "d positive power and rate-bounded rudder",
+      "passed": true
+    },
+    {
+      "name": "d reversal preserves velocity, then slows",
+      "passed": true
+    },
+    {
+      "name": "d pause freezes every exported state field",
+      "passed": true
+    },
+    {
+      "name": "d no-drive energy dissipates",
+      "passed": true
+    },
+    {
+      "name": "d partial unknown and shallow footprint rejected",
+      "passed": true
+    },
+    {
+      "name": "d opposite rudders mirror yaw and sway",
+      "passed": true
+    },
+    {
+      "name": "d 60 versus 120 Hz converges",
+      "passed": true
+    },
+    {
+      "name": "d read-only snapshot observation changes nothing",
+      "passed": true
+    },
+    {
+      "name": "n finite SI profile and static footprint",
+      "passed": true
+    },
+    {
+      "name": "n analytic steady longitudinal force",
+      "passed": true
+    },
+    {
+      "name": "n positive power and rate-bounded rudder",
+      "passed": true
+    },
+    {
+      "name": "n reversal preserves velocity, then slows",
+      "passed": true
+    },
+    {
+      "name": "n pause freezes every exported state field",
+      "passed": true
+    },
+    {
+      "name": "n no-drive energy dissipates",
+      "passed": true
+    },
+    {
+      "name": "n partial unknown and shallow footprint rejected",
+      "passed": true
+    },
+    {
+      "name": "n opposite rudders mirror yaw and sway",
+      "passed": true
+    },
+    {
+      "name": "n 60 versus 120 Hz converges",
+      "passed": true
+    },
+    {
+      "name": "n read-only snapshot observation changes nothing",
+      "passed": true
+    },
+    {
+      "name": "pod finite SI profile and static footprint",
+      "passed": true
+    },
+    {
+      "name": "pod analytic steady longitudinal force",
+      "passed": true
+    },
+    {
+      "name": "pod positive power and rate-bounded rudder",
+      "passed": true
+    },
+    {
+      "name": "pod reversal preserves velocity, then slows",
+      "passed": true
+    },
+    {
+      "name": "pod pause freezes every exported state field",
+      "passed": true
+    },
+    {
+      "name": "pod no-drive energy dissipates",
+      "passed": true
+    },
+    {
+      "name": "pod partial unknown and shallow footprint rejected",
+      "passed": true
+    },
+    {
+      "name": "pod opposite rudders mirror yaw and sway",
+      "passed": true
+    },
+    {
+      "name": "pod 60 versus 120 Hz converges",
+      "passed": true
+    },
+    {
+      "name": "pod read-only snapshot observation changes nothing",
+      "passed": true
+    },
+    {
+      "name": "w finite SI profile and static footprint",
+      "passed": true
+    },
+    {
+      "name": "w analytic steady longitudinal force",
+      "passed": true
+    },
+    {
+      "name": "w positive power and rate-bounded rudder",
+      "passed": true
+    },
+    {
+      "name": "w reversal preserves velocity, then slows",
+      "passed": true
+    },
+    {
+      "name": "w pause freezes every exported state field",
+      "passed": true
+    },
+    {
+      "name": "w no-drive energy dissipates",
+      "passed": true
+    },
+    {
+      "name": "w partial unknown and shallow footprint rejected",
+      "passed": true
+    },
+    {
+      "name": "w opposite rudders mirror yaw and sway",
+      "passed": true
+    },
+    {
+      "name": "w 60 versus 120 Hz converges",
+      "passed": true
+    },
+    {
+      "name": "w read-only snapshot observation changes nothing",
+      "passed": true
+    },
+    {
+      "name": "D cannot dive before original exterior closes",
+      "passed": true
+    },
+    {
+      "name": "D cannot transform while moving or powered",
+      "passed": true
+    },
+    {
+      "name": "d actual owner dive, hold, rise and closed-underwater interlocks",
+      "passed": true
+    },
+    {
+      "name": "n actual owner dive, hold, rise and closed-underwater interlocks",
+      "passed": true
+    },
+    {
+      "name": "pod actual owner dive, hold, rise and closed-underwater interlocks",
+      "passed": true
+    },
+    {
+      "name": "W has no dive or yacht transformation",
+      "passed": true
+    },
+    {
+      "name": "Missing bottom prevents a submarine dive and triggers ascent",
+      "passed": true
+    },
+    {
+      "name": "Finite step/commands refuse NaN rather than coerce",
+      "passed": true
+    },
+    {
+      "name": "Wave response is gradual and depth attenuates it",
+      "passed": true
+    },
+    {
+      "name": "Startup document keeps original named assets and no old shared host",
+      "passed": true
+    },
+    {
+      "name": "D is faster than Y11 without advancing extra simulation time",
+      "passed": true
+    }
+  ],
+  "scenario": {
+    "water": "Synthetic 200m deep, calm",
+    "dtSeconds": 0.016666666666666666,
+    "equilibrationSeconds": 720,
+    "acceleration": "Rest, engine on, full forward power",
+    "stopping": "After equilibration, neutral or full reverse to first zero surge",
+    "units": "SI and knots",
+    "seaTrialValidated": false
+  },
+  "baselineY11": {
+    "steadyKnots": 13.995672620938274,
+    "timeTo10KnotsSeconds": 80.71666666666667,
+    "peakForwardAccelerationMps2": 0.08649187694189431,
+    "neutralToPoint5MpsSeconds": 378.83333333331746,
+    "neutralDistanceM": 806.097378091903,
+    "reverseStopSeconds": 111.9666666666616,
+    "reverseStopDistanceM": 331.77304227198925
+  },
+  "vessels": {
+    "d": {
+      "steadyKnots": 17.999999621724086,
+      "timeTo10KnotsSeconds": 46.516666666666666,
+      "peakForwardAccelerationMps2": 0.1328729029261999,
+      "neutralToPoint5MpsSeconds": 396.3166666666349,
+      "neutralDistanceM": 953.2154751424895,
+      "reverseStopSeconds": 79.96666666666341,
+      "reverseStopDistanceM": 315.51336842213107
+    },
+    "n": {
+      "steadyKnots": 15.999325082725287,
+      "timeTo10KnotsSeconds": 91.93333333333334,
+      "peakForwardAccelerationMps2": 0.07066210140093787,
+      "neutralToPoint5MpsSeconds": 614.683333333103,
+      "neutralDistanceM": 1382.7567281453128,
+      "reverseStopSeconds": 134.08333333333218,
+      "reverseStopDistanceM": 464.52906941582575
+    },
+    "pod": {
+      "steadyKnots": 7.999999999999734,
+      "timeTo10KnotsSeconds": null,
+      "peakForwardAccelerationMps2": 0.44089854354807834,
+      "neutralToPoint5MpsSeconds": 22.766666666666655,
+      "neutralDistanceM": 39.51834297088032,
+      "reverseStopSeconds": 9.533333333333387,
+      "reverseStopDistanceM": 19.647080196537246
+    },
+    "w": {
+      "steadyKnots": 21.999943502754437,
+      "timeTo10KnotsSeconds": 49.11666666666667,
+      "peakForwardAccelerationMps2": 0.11985408039919099,
+      "neutralToPoint5MpsSeconds": 616.5666666664346,
+      "neutralDistanceM": 1655.466299566497,
+      "reverseStopSeconds": 109.4833333333284,
+      "reverseStopDistanceM": 523.5608824850009
+    }
+  },
+  "parameters": {
+    "d": {
+      "addedSurge": 0.05,
+      "addedSway": 0.8,
+      "addedYaw": 0.25,
+      "crossflowCd": 1,
+      "rho": 1025,
+      "reverseFraction": 0.55,
+      "thrustTau": 1.8,
+      "rudderRate": 0.12217304763960307,
+      "rudderMax": 0.5235987755982988,
+      "propwash": 0.6,
+      "bowTau": 1.2,
+      "maxDepth": 30,
+      "diveRate": 0.45,
+      "ascentRate": 0.55,
+      "margin": 2,
+      "heavePeriod": 6.5,
+      "rollPeriod": 9.5,
+      "pitchPeriod": 7.5,
+      "rollGm": 2.5,
+      "forceHeight": 2,
+      "heaveDamping": 0.72,
+      "rollDamping": 0.5,
+      "pitchDamping": 0.68,
+      "key": "d",
+      "name": "ATLAS-D",
+      "title": "The explorer",
+      "tag": "SUPERYACHT / SUBMERSIBLE",
+      "description": "Your original 82.9 m yacht. Slate-blue finish, helipad, two tenders and the original dive transformation.",
+      "file": "../../live/assets/ATLAS_D_Original.glb",
+      "sha256": "b2966e8265edbd6d52ac2fa7aa1aaa764683df5ff1548a21c8cc1a024fdb3d48",
+      "length": 82.9,
+      "beam": 14.2,
+      "draft": 4.507,
+      "top": 18,
+      "mass": 2400000,
+      "dragLinear": 12000,
+      "dragQuadratic": 2800,
+      "swayLinear": 200000,
+      "yawLinear": 60000000,
+      "rudderArea": 4.2,
+      "rudderLever": -32,
+      "diskArea": 80,
+      "bowThrust": 35000,
+      "bowLever": 32,
+      "speedKn": 18,
+      "subSpeedKn": 6,
+      "conversionSeconds": 38.4,
+      "submersible": true,
+      "needsSecure": true,
+      "accent": "#a9cadb",
+      "bridge": [
+        8,
+        12.5,
+        0
+      ],
+      "id": "atlas-d-original-r7",
+      "modelVersion": "atlas-sumars-y12-1",
+      "validatedBySeaTrials": false,
+      "forwardThrust": 351213.2800000001,
+      "subThrust": 63717.031111111115
+    },
+    "n": {
+      "addedSurge": 0.05,
+      "addedSway": 0.8,
+      "addedYaw": 0.25,
+      "crossflowCd": 1,
+      "rho": 1025,
+      "reverseFraction": 0.55,
+      "thrustTau": 1.8,
+      "rudderRate": 0.12217304763960307,
+      "rudderMax": 0.5235987755982988,
+      "propwash": 0.6,
+      "bowTau": 1.2,
+      "maxDepth": 60,
+      "diveRate": 0.8,
+      "ascentRate": 0.85,
+      "margin": 2,
+      "heavePeriod": 6.5,
+      "rollPeriod": 9.5,
+      "pitchPeriod": 7.5,
+      "rollGm": 2.5,
+      "forceHeight": 2,
+      "heaveDamping": 0.72,
+      "rollDamping": 0.5,
+      "pitchDamping": 0.68,
+      "key": "n",
+      "name": "ATLAS-N",
+      "title": "The submarine",
+      "tag": "INDEPENDENT SUBMARINE",
+      "description": "The original dedicated submarine—not the yacht in disguise. Compact sail, retracting masts and a continuous 80 m body.",
+      "file": "../../../atlas_fleet_atelier_02/live/assets/ATLAS_N.glb",
+      "sha256": "0887994518aee300122a298c708742f0264d6263780d3e360f17c4474f2c39c1",
+      "length": 80,
+      "beam": 9.05,
+      "draft": 6.775,
+      "top": 9.66,
+      "mass": 3200000,
+      "dragLinear": 10000,
+      "dragQuadratic": 2400,
+      "swayLinear": 220000,
+      "yawLinear": 65000000,
+      "rudderArea": 5,
+      "rudderLever": -31,
+      "diskArea": 55,
+      "bowThrust": 32000,
+      "bowLever": 28,
+      "speedKn": 16,
+      "subSpeedKn": 14,
+      "conversionSeconds": 4,
+      "submersible": true,
+      "needsSecure": false,
+      "accent": "#bdcbd1",
+      "bridge": [
+        4,
+        9.3,
+        0
+      ],
+      "id": "atlas-n-atelier02",
+      "modelVersion": "atlas-sumars-y12-1",
+      "validatedBySeaTrials": false,
+      "forwardThrust": 244913.96740740744,
+      "subThrust": 196515.03407407412
+    },
+    "pod": {
+      "addedSurge": 0.05,
+      "addedSway": 0.8,
+      "addedYaw": 0.25,
+      "crossflowCd": 1,
+      "rho": 1025,
+      "reverseFraction": 0.55,
+      "thrustTau": 1.8,
+      "rudderRate": 0.12217304763960307,
+      "rudderMax": 0.5235987755982988,
+      "propwash": 0.6,
+      "bowTau": 1.2,
+      "maxDepth": 40,
+      "diveRate": 0.65,
+      "ascentRate": 0.75,
+      "margin": 2,
+      "heavePeriod": 3.3,
+      "rollPeriod": 4.2,
+      "pitchPeriod": 4,
+      "rollGm": 1.6,
+      "forceHeight": 0.6,
+      "heaveDamping": 0.72,
+      "rollDamping": 0.5,
+      "pitchDamping": 0.68,
+      "key": "pod",
+      "name": "SUMARS",
+      "title": "Kayley’s blue pod",
+      "tag": "BABY-BLUE EXPLORATION POD",
+      "description": "A new two-seat concept for Kayley. Baby-blue body, panoramic bubble canopy, twin thruster pods and warm ivory seats.",
+      "file": null,
+      "sha256": null,
+      "length": 6.4,
+      "beam": 3.8,
+      "draft": 1.35,
+      "top": 2.1,
+      "mass": 8000,
+      "dragLinear": 600,
+      "dragQuadratic": 170,
+      "swayLinear": 2600,
+      "yawLinear": 16000,
+      "rudderArea": 0.15,
+      "rudderLever": -2.4,
+      "diskArea": 1.2,
+      "bowThrust": 1600,
+      "bowLever": 2.1,
+      "speedKn": 8,
+      "subSpeedKn": 6,
+      "conversionSeconds": 0,
+      "submersible": true,
+      "needsSecure": false,
+      "accent": "#a8ddf5",
+      "bridge": [
+        1,
+        1.3,
+        0
+      ],
+      "id": "sumars-kayley-pod-1",
+      "modelVersion": "atlas-sumars-y12-1",
+      "validatedBySeaTrials": false,
+      "forwardThrust": 5348.758913580247,
+      "subThrust": 3471.676888888889
+    },
+    "w": {
+      "addedSurge": 0.05,
+      "addedSway": 0.8,
+      "addedYaw": 0.25,
+      "crossflowCd": 1,
+      "rho": 1025,
+      "reverseFraction": 0.55,
+      "thrustTau": 1.8,
+      "rudderRate": 0.12217304763960307,
+      "rudderMax": 0.5235987755982988,
+      "propwash": 0.6,
+      "bowTau": 1.2,
+      "maxDepth": 30,
+      "diveRate": 0.45,
+      "ascentRate": 0.55,
+      "margin": 2,
+      "heavePeriod": 8,
+      "rollPeriod": 11,
+      "pitchPeriod": 9,
+      "rollGm": 2.5,
+      "forceHeight": 2,
+      "heaveDamping": 0.72,
+      "rollDamping": 0.5,
+      "pitchDamping": 0.68,
+      "key": "w",
+      "name": "ATLAS-W",
+      "title": "The warship",
+      "tag": "SURFACE FLEET / 125 M",
+      "description": "Your original warship: bridge, mast, hangar and aft flight deck. Surface navigation only; military fittings are visual props.",
+      "file": "../../../atlas_fleet_atelier_02/live/assets/ATLAS_W.glb",
+      "sha256": "cfce666ed4c79446e7ad7c86be45385db7056618be4cdb233e4bf2b79241f27f",
+      "length": 125.03,
+      "beam": 19.71,
+      "draft": 4.85,
+      "top": 27.71,
+      "mass": 7000000,
+      "dragLinear": 24000,
+      "dragQuadratic": 5000,
+      "swayLinear": 450000,
+      "yawLinear": 180000000,
+      "rudderArea": 9,
+      "rudderLever": -48,
+      "diskArea": 130,
+      "bowThrust": 70000,
+      "bowLever": 48,
+      "speedKn": 22,
+      "subSpeedKn": 0,
+      "conversionSeconds": 0,
+      "submersible": false,
+      "needsSecure": false,
+      "accent": "#c7d0d6",
+      "bridge": [
+        12,
+        16,
+        0
+      ],
+      "id": "atlas-w-atelier02",
+      "modelVersion": "atlas-sumars-y12-1",
+      "validatedBySeaTrials": false,
+      "forwardThrust": 912087.135802469,
+      "subThrust": 0
+    }
+  },
+  "limitations": [
+    "Authored forces and mass; not sea-trial calibration",
+    "3DOF maneuvering plus separately damped wave response, not full6DOF hydrodynamics",
+    "Depth is a bounded simplified controller, not ballast/pressure-hull engineering",
+    "No combat, humans, vessel-to-vessel collision or shared multiplayer"
+  ]
+}

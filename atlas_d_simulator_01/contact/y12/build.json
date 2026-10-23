@@ -1,0 +1,31 @@
+{
+  "name": "ATLAS D SUMARS Fleet / Y12",
+  "sourceCommit": "db858491fa30ea0fadda18a51976df111d811a99",
+  "baselineCommit": "586a8acfa171e6ad634b562fd924544c5b1376bf",
+  "originalAssets": {
+    "atlas_d_simulator_01/live/assets/ATLAS_D_Original.glb": "b2966e8265edbd6d52ac2fa7aa1aaa764683df5ff1548a21c8cc1a024fdb3d48",
+    "atlas_fleet_atelier_02/live/assets/ATLAS_N.glb": "0887994518aee300122a298c708742f0264d6263780d3e360f17c4474f2c39c1",
+    "atlas_fleet_atelier_02/live/assets/ATLAS_W.glb": "cfce666ed4c79446e7ad7c86be45385db7056618be4cdb233e4bf2b79241f27f"
+  },
+  "model": "atlas-sumars-y12-1",
+  "newPod": "sumars-kayley-pod-1",
+  "tests": 51,
+  "geography": "Authored offshore water, not Beaufort",
+  "seaTrialValidated": false,
+  "sharedHostMerged": false,
+  "multiplayer": false,
+  "files": {
+    "README.md": "a9c7afdfcd0c362010f82ae20a28072f50658dac024c4d981ee48089ba320bc0",
+    "app.js": "48df515d8000743461ced9760aa0dfe87f16ca084b8983f89fabf60a4a45df69",
+    "build.py": "a0ee7aa91c2dea3d533d1f072f087050b538b8e70d09211a9af1f1401a5180c1",
+    "dynamics.js": "05a2b3d78cf1ab4f6c45ecca27a0a80103c2aad8cd641a98ca3086da12e2d3f9",
+    "fleet.js": "f1543e30d2e87c38d93797e34d6141eb6787686d6e6cadf4152adaa95666d73f",
+    "index.html": "fd4f592bba390a43642d12af62ed4246f6659b04196f030fcaba61bf13786c70",
+    "measurements.json": "7deee29ced4303f12d5e3ae185d686333d49a2572b6994de9cae9f1c93307290",
+    "pod.js": "e889aedabcf480cef4be31fed4c7f7a53ee4717980be740042ef4bc32530b742",
+    "report.html": "88657e77e0541ee71360eacce49dc8387273425aaab2e033424148c48a435764",
+    "style.css": "eefb8f29337c8df35fafde31002399297eac692607f2d4bcc5fdc0065f453a8f",
+    "test-fleet.cjs": "de81997b357904a01dc30d1d45b8697294f30eb0434bb904ce91a18b8986f974",
+    "verify.py": "ada37f69ce68e87ce5961f9a23e9e9036c7b852f0705b0ccd9a8e1330161c359"
+  }
+}
