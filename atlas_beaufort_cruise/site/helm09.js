@@ -28,7 +28,7 @@ function install(){if(!window.SEA09_WATER?.ready||!window.SEA09_AUDIO?.ready)ret
  <section id="helm09-mapcard" hidden aria-label="Toggleable navigation map"><div class="h09-panelhead"><h2>Chart <small id="helm09-maparea">PRACTICE BAY</small></h2><button id="helm09-mapclose" aria-label="Close map">×</button></div><canvas id="helm09-mapcanvas" width="720" height="520" aria-label="Bathymetry chart; click to set waypoint"></canvas><div class="h09-mapcontrols"><button id="helm09-zoomin" aria-label="Zoom map in">+</button><button id="helm09-zoomout" aria-label="Zoom map out">−</button><button id="helm09-clearway">Clear waypoint</button><small>Tap map to navigate</small></div><p id="helm09-mapnote">Authored practice terrain · depths in metres · not navigation</p></section>
  <section id="helm09-youtube" hidden aria-label="Visible YouTube player"><div class="h09-panelhead"><h2>YouTube <small>ONBOARD MEDIA</small></h2><button id="helm09-youtubeclose" aria-label="Stop and close YouTube">×</button></div><div id="helm09-youtube-player"></div><p id="helm09-ytstatus" role="status">Press Play in the YouTube player.</p></section>`;document.body.append(layer);
  const status=text=>{$('helm09-hint').textContent=text;};
- const Bus={version:1,mode:'local',dispatch(type,value){const event={v:1,seq:++sequence,tick:Math.round(S.elapsed*60),type,value};events.push(event);if(events.length>256)events.shift();
+ const Bus={version:1,mode:'local',dispatch(type,value){if(window.ATLAS_HARBOR4?.camera.isFree()&&['gear','throttle','steering','trim','action'].includes(type))return {blocked:true,type,value};const event={v:1,seq:++sequence,tick:Math.round(S.elapsed*60),type,value};events.push(event);if(events.length>256)events.shift();
   if(type==='gear'){A.chooseGear(cap(Math.round(value),-1,1));A.audio.tick(S);status('Gear selected immediately. Reverse thrust slows forward motion before moving astern.');}
   else if(type==='throttle'){S.throttle=cap(Number(value),0,1);S.lastThrottleAt12=S.elapsed;}
   else if(type==='steering')S.steer=cap(Number(value),-1,1);
@@ -37,7 +37,7 @@ function install(){if(!window.SEA09_WATER?.ready||!window.SEA09_AUDIO?.ready)ret
   else if(type==='pause')A.setPaused(!!value);
   if(!["steering","throttle","trim"].includes(type))A.refresh();return event;
  },snapshot(){return {v:1,seq:sequence,mode:'solo',vessel:S.snapshot()};},events:()=>events.slice()};
- async function ignition(){if(keyBusy)return;if(!S.engine&&(S.destroyed10||S.engineDisabled10||window.SEA10?.inspect().ejected)){status('Recover the boat before restarting.');return;}keyBusy=true;try{if(A.mode()!=='drive')CMD.setWorkspace('drive');if(A.isPaused())A.setPaused(false);
+ async function ignition(){if(keyBusy||window.ATLAS_HARBOR4?.camera.isFree())return;if(!S.engine&&(S.destroyed10||S.engineDisabled10||window.SEA10?.inspect().ejected)){status('Recover the boat before restarting.');return;}keyBusy=true;try{if(A.mode()!=='drive')CMD.setWorkspace('drive');if(A.isPaused())A.setPaused(false);
   if(!S.engine){S.neutral();if(!BAYPLAY.audio.enabled)await BAYPLAY.audio.toggle();muted=false;A.audio.event('key');A.engineToggle();A.audio.tick(S);status('Ignition on. Select F or R, then add throttle.');}
   else{A.engineToggle();A.audio.tick(S);status('Ignition off. The boat will coast and drift.');}
   events.push({v:1,seq:++sequence,tick:Math.round(S.elapsed*60),type:'ignition',value:S.engine});
@@ -91,7 +91,7 @@ function install(){if(!window.SEA09_WATER?.ready||!window.SEA09_AUDIO?.ready)ret
  const hit=new T.Mesh(new T.SphereGeometry(.065,12,8),new T.MeshBasicMaterial({transparent:true,opacity:0,depthWrite:false}));hit.userData.action09='ignition';key.add(hit);A.boat.add(key);
  const labels={ignition:'Turn ignition key',fishbox:'Open / close fish box',rodlocker:'Open / close rod locker',livewell:'Open / close livewell',bolsters:'Raise / lower bolsters',drawer1:'Top tackle drawer',drawer2:'Middle tackle drawer',drawer3:'Bottom tackle drawer',screens:'Open chart',wheel:'Center steering wheel',throttle:'Advance throttle',radio:'Open boat radio'};
  const ray=new T.Raycaster();let pointer=null,lastHover=0;
- function target(e){ray.setFromCamera(new T.Vector2(e.clientX/innerWidth*2-1,-e.clientY/innerHeight*2+1),A.camera);const hits=ray.intersectObjects([A.model,key],true);for(const q of hits){if(q.distance>12)break;let o=q.object;let visible=true;for(let p=o;p;p=p.parent)if(!p.visible)visible=false;if(!visible)continue;
+ function target(e){if(window.ATLAS_HARBOR4?.camera.isFree())return null;ray.setFromCamera(new T.Vector2(e.clientX/innerWidth*2-1,-e.clientY/innerHeight*2+1),A.camera);const hits=ray.intersectObjects([A.model,key],true);for(const q of hits){if(q.distance>12)break;let o=q.object;let visible=true;for(let p=o;p;p=p.parent)if(!p.visible)visible=false;if(!visible)continue;
   for(let p=o;p;p=p.parent){if(p.userData.action09)return {id:p.userData.action09,point:q.point};if(p.userData.action)return {id:p.userData.action,point:q.point};if(/PLAY_STEERING/.test(p.name))return {id:'wheel',point:q.point};if(/PLAY_THROTTLE/.test(p.name))return {id:'throttle',point:q.point};}
   if(/chart|sounder|display/.test(o.material?.name||''))return {id:'screens',point:q.point};
   // Only the first visible surface can be clicked; never click through the hull.

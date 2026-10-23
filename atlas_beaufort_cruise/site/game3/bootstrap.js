@@ -4,7 +4,7 @@ function install(){if(stopped)return;if(!window.ATLAS_DEVICE_HELM?.ready){if(per
  if(window.ATLAS_HELM_KEYS)return;
  const A=BAYPLAY,S=A.state,D=document,$=id=>D.getElementById(id),root=$('helm09'),scene=$('scene');scene.tabIndex=0;
  const local=()=>!stopped&&SEA09.bus.mode==='local';
- const keys=AtlasHelmInput.install({window,document,local,focus:()=>D.activeElement,blocked:()=>D.hidden||A.isPaused()||A.mode()!=='drive'||!$('helm09-panel').hidden||root.classList.contains('photo14')||!!D.querySelector('dialog[open]'),read:()=>S,docking:()=>SEA11.options.docking,pointerHeld:()=>ATLAS_DEVICE_HELM.inspect().pointerHeld,dispatch:(k,v)=>SEA09.bus.dispatch(k,v)});
+ const keys=AtlasHelmInput.install({window,document,local,focus:()=>D.activeElement,blocked:()=>!!window.ATLAS_HARBOR4?.camera.isFree()||D.hidden||A.isPaused()||A.mode()!=='drive'||!$('helm09-panel').hidden||root.classList.contains('photo14')||!!D.querySelector('dialog[open]'),read:()=>S,docking:()=>SEA11.options.docking,pointerHeld:()=>ATLAS_DEVICE_HELM.inspect().pointerHeld,dispatch:(k,v)=>SEA09.bus.dispatch(k,v)});
  window.ATLAS_HELM_KEYS=keys;
  const close=()=>{if(!$('helm09-panel').hidden)$('helm09-close').click();root.classList.remove('s14-tools-open','s11-panel-open','d2-panel-open');scene.focus({preventScroll:true});};
  const menu=installBeaufortMenu3({document:D,local,panels:SEA10,clearKeys:()=>keys.clear(),open:k=>SEA09.openPanel(k),close,map:()=>SEA09.toggleMap(),docking:()=>SEA11.options.docking,setDocking:v=>SEA11.setOption('docking',v),graphics:()=>SEA14.options.graphics,setGraphics:v=>SEA14.graphics(v),view:v=>SEA09.view(v)});

@@ -20,7 +20,7 @@ const World={version:9,units:'metres',islands,basinBed,
  },
  contact(s){const c=Math.cos(s.heading),sn=Math.sin(s.heading),tide=s.location==='beaufort'?(s.config?.tide||0):0;
   const mass=s.totalMassKg?s.totalMassKg():2124;const draft=clamp(.46+(mass-2124)/12000,.32,.72);
-  const samples=[[2.8,0,draft*.66,'BOW'],[0,0,draft,'KEEL'],[-2.9,0,draft*.9,'STERN'],[-4.12,0,.82-.39*(s.trimActual||0),'PROP']];
+  const samples=[[2.8,0,draft*.66,'BOW'],[0,0,draft,'KEEL'],[-2.9,0,draft*.9,'STERN'],[-4.12,0,.82-.39*(s.trimActual||0),'PROP'],[2.35,-.90,draft*.72,'PORT BOW'],[2.35,.90,draft*.72,'STARBOARD BOW'],[-2.35,-.96,draft*.82,'PORT STERN'],[-2.35,.96,draft*.82,'STARBOARD STERN']];
   let worst=null,hullClearance=Infinity;for(const[a,b,d,part]of samples){const x=s.x+c*a-sn*b,z=s.z+sn*a+c*b,q=this.sample(x,z,s.location);if(!q.known)continue;
    const y=tide+(s.heave||0)+(s.pitch||0)*a-(s.roll||0)*b-d,clearance=y-q.bed;
    if(part!=='PROP')hullClearance=Math.min(hullClearance,clearance);
