@@ -106,7 +106,7 @@ function install(T,H){
  const pointerMove=e=>{if(down&&down.id===e.pointerId&&mode!=='orbit')aimAt(e);};
  const pointerUp=e=>{if(down?.id===e.pointerId){if(mode==='orbit'&&Math.hypot(e.clientX-down.x,e.clientY-down.y)<6)aimAt(e);down=null;}};
  canvas.addEventListener('pointerdown',pointerDown);canvas.addEventListener('pointermove',pointerMove);canvas.addEventListener('pointerup',pointerUp);canvas.addEventListener('pointercancel',pointerUp);
- const blur=()=>{down=null;clear();};G.addEventListener('blur',blur);G.addEventListener('resize',blur);document.addEventListener('visibilitychange',blur);
+ const blur=()=>{down=null;clear();},resized=()=>{blur();camReady=false;};G.addEventListener('blur',blur);G.addEventListener('resize',resized);document.addEventListener('visibilitychange',blur);
  reset(H.read());
  function beforeStep(dt){if(blocked()){clear();return;}inputs.step(dt,H.read(),H.command);}
  function tick(s){
@@ -121,16 +121,17 @@ function install(T,H){
    for(const impact of sim.impacts){if(seen.has(impact.id))continue;seen.add(impact.id);if(seen.size>64)seen.delete(seen.values().next().value);fx.impact(impact.p,impact.kind,impact.time);sound('impact',impact.p);notice=impact.kind==='target'?'TARGET '+impact.targetId+' DESTROYED':'SPLASH';}
   }catch(e){sim.fail(e.message||'ACTION_UPDATE_FAILED');clear();clearFlight();}
  }
- function update(s){
-  if(disposed)return;tick(s);fx.update(sim.time,G.innerHeight||720);
+ function updateInner(s){
+  if(disposed)return;tick(s);if(sim.invalid){$('a-feedback').textContent='RESET VOYAGE — '+sim.reason;return;}fx.update(sim.time,G.innerHeight||720);
   targetMeshes.forEach((g,i)=>{const t=sim.targets[i],c=sim.center(t),age=t.hit?sim.time-t.hitAt:0;g.position.set(c.x,c.y-Math.max(0,age-1)*3,c.z);g.rotation.z=t.hit?Math.min(.9,age*.35):Math.sin(sim.time*.8+i)*.025;g.visible=!t.hit||age<4;});
   const t=target();marker.position.set(t.x,H.water(t.x,t.z,sim.time)+.15,t.z);marker.visible=manualPoint!==null||!sim.targets[selected].hit;
   const active=new Set(sim.shells.map(s=>s.id));for(const[id,o]of rounds)if(!active.has(id)){disposeRound(o);rounds.delete(id);}
   for(const q of sim.shells){if(!rounds.has(q.id)){const mesh=new T.Mesh(shotGeometry,shotMat),line=new T.Line(new T.BufferGeometry().setFromPoints([new T.Vector3(),new T.Vector3()]),lineMat);H.scene.add(mesh,line);rounds.set(q.id,{mesh,line});}const o=rounds.get(q.id);o.mesh.position.copy(q.p);const p=o.line.geometry.attributes.position;p.setXYZ(0,q.p.x,q.p.y,q.p.z);p.setXYZ(1,q.p.x-q.v.x*.14,q.p.y-q.v.y*.14,q.p.z-q.v.z*.14);p.needsUpdate=true;o.line.geometry.computeBoundingSphere();}
   H.controls.enabled=mode==='orbit';
   if(mode!=='orbit'){
-   H.root.updateMatrixWorld(true);const portrait=G.innerWidth<G.innerHeight,local=mode==='gun'?[14,27,24]:portrait?[-155,104,224]:[-102,67,142];
-   const destination=new T.Vector3(...local).applyMatrix4(H.root.matrixWorld),look=mode==='gun'?new T.Vector3(t.x,t.y,t.z):new T.Vector3(40,6,0).applyMatrix4(H.root.matrixWorld);
+   H.root.updateMatrixWorld(true);const portrait=G.innerWidth<G.innerHeight,local=mode==='gun'?[14,27,24]:portrait?[-200,110,15]:[-165,85,30];
+   const destination=new T.Vector3(...local).applyMatrix4(H.root.matrixWorld),look=mode==='gun'?new T.Vector3(t.x,t.y,t.z):new T.Vector3(85,7,0).applyMatrix4(H.root.matrixWorld).lerp(new T.Vector3(t.x,t.y,t.z),.22);
+   const fov=mode==='gun'?60:portrait?64:58;if(H.camera.fov!==fov){H.camera.fov=fov;H.camera.updateProjectionMatrix();}
    // Time-based low-pass follows the ship, never the projectile.
    const delta=camReady?Math.max(0,Math.min(.1,s.time-(update.cameraTime??s.time))):0;
    if(!camReady){followPosition.copy(destination);camReady=true;}else followPosition.lerp(destination,1-Math.exp(-7*delta));H.camera.position.copy(followPosition);update.cameraTime=s.time;
@@ -144,7 +145,8 @@ function install(T,H){
   if($('a-feedback').textContent!==message)$('a-feedback').textContent=message;
   if(document.activeElement!==$('a-bearing'))$('a-bearing').value=bearing;if(document.activeElement!==$('a-elevation'))$('a-elevation').value=elevation;
  }
- function dispose(){if(disposed)return;disposed=true;clear();cleanups.forEach(f=>f());clearFlight();fx.dispose();old.visible=priorVisible;for(const obj of[battery.root,targets]){obj.removeFromParent();obj.traverse(o=>{o.geometry?.dispose();if(o.material)[].concat(o.material).forEach(m=>m.dispose());});}shotGeometry.dispose();shotMat.dispose();lineMat.dispose();panel.remove();document.body.classList.remove('action-helm');G.removeEventListener('blur',blur);G.removeEventListener('resize',blur);document.removeEventListener('visibilitychange',blur);canvas.removeEventListener('pointerdown',pointerDown);canvas.removeEventListener('pointermove',pointerMove);canvas.removeEventListener('pointerup',pointerUp);canvas.removeEventListener('pointercancel',pointerUp);H.controls.enabled=true;audio?.close().catch(()=>{});delete G.ATLAS_W_RANGE;}
+ function update(s){try{if(!sim.valid(s)){tick(s);return;}updateInner(s);}catch(e){sim.fail(e.message||'ACTION_RENDER_FAILED');clear();clearFlight();$('a-feedback').textContent='RESET VOYAGE — '+sim.reason;}}
+ function dispose(){if(disposed)return;disposed=true;clear();cleanups.forEach(f=>f());clearFlight();fx.dispose();old.visible=priorVisible;for(const obj of[battery.root,targets]){obj.removeFromParent();obj.traverse(o=>{o.geometry?.dispose();if(o.material)[].concat(o.material).forEach(m=>m.dispose());});}shotGeometry.dispose();shotMat.dispose();lineMat.dispose();panel.remove();document.body.classList.remove('action-helm');G.removeEventListener('blur',blur);G.removeEventListener('resize',resized);document.removeEventListener('visibilitychange',blur);canvas.removeEventListener('pointerdown',pointerDown);canvas.removeEventListener('pointermove',pointerMove);canvas.removeEventListener('pointerup',pointerUp);canvas.removeEventListener('pointercancel',pointerUp);H.controls.enabled=true;audio?.close().catch(()=>{});delete G.ATLAS_W_RANGE;}
  const inspect=()=>({version:'atlas-w-action-helm-3',mode,assist,manualPoint,requested:{bearing,elevation},actual:{bearing:actualBearing,elevation:actualElevation},inArc,aligned:aligned(),held:[...inputs.tokens.values()],session:sim.inspect(),recoil:recoil.map(r=>({...r})),effects:fx.inspect(),roundMeshes:rounds.size,realWeaponCalibration:false});
  G.ATLAS_W_RANGE={inspect};return {beforeStep,tick,update,clear,inspect,dispose};
 }
