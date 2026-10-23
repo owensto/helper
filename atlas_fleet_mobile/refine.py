@@ -61,3 +61,11 @@ test('chooser pauses running vessel despite stale Resume label',()=>assert.deepE
 p=R/'build.py';s=p.read_text();a='.brand{white-space:nowrap;';assert s.count(a)==1
 s=s.replace(a,'.brand{pointer-events:auto;white-space:nowrap;');p.write_text(s)
 print('Fleet DOM, identity, authoritative pause and native selector hit target corrected.')
+
+# Original warship defaults to the existing Mobile preset, still user-selectable.
+p=R/'build.py';s=p.read_text();a="(site/'app.js').write_text(s)";assert s.count(a)==1
+old='$("quality").value=mobileMedia.matches?"mobile":"balanced";'
+new='$("quality").value=(mobileMedia.matches||AtlasFleet.config.id==="warship")?"mobile":"balanced";'
+s=s.replace(a,'s=once(s,'+repr(old)+','+repr(new)+')\n'+a);p.write_text(s)
+p=R/'verify.py';s=p.read_text();a="ck('warship distinct scale and parameters',s['parameters']['length']==125 and s['model']['bounds']['max'][0]>60 and s['model']['bounds']['min'][0]<-60)";assert s.count(a)==1
+s=s.replace(a,a+"\n    ck('warship starts lighter graphics without physics substitution',s['render']['quality']=='mobile' and not s['render']['shadows'])");p.write_text(s)
