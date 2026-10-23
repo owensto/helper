@@ -29,6 +29,9 @@ jobs:
         run: |
           test "$GITHUB_REF_NAME" = atlas/fleet-mobile-warship-20261022
           git fetch --depth=1 origin 170f328708accc967f36bbb57c6f7ad02c6d38cb 5d0e90f070643c4b3ee8b1602ec1dba88594cf15
+          mkdir -p /tmp/atlas-fleet-review/committed
+          cp atlas_fleet_mobile/*.py atlas_fleet_mobile/*.js atlas_fleet_mobile/*.cjs /tmp/atlas-fleet-review/committed/
+          python atlas_fleet_mobile/refine.py
           python atlas_fleet_mobile/build.py
           for p in atlas_fleet_mobile/site/*.js; do node --check "$p"; done
           python -m py_compile atlas_fleet_mobile/verify.py
