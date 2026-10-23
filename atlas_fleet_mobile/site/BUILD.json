@@ -1,0 +1,23 @@
+{
+  "sourceSHA": "e7c26d8324487a4c4ddaae3b38fb52d7d0241959",
+  "yachtBaseline": "170f328708accc967f36bbb57c6f7ad02c6d38cb",
+  "warshipSource": "5d0e90f070643c4b3ee8b1602ec1dba88594cf15",
+  "files": {
+    "README.md": "b62c5dbabd0cd9387f9aaf4c68fb4ebcd17a324d6f6895eeeed8dabd5c8f1a78",
+    "app.js": "c2ed23b57971f919205e4a28d2ccc3c666024f746df100897fa7ab888dd0b044",
+    "assets/ATLAS_W.glb": "cfce666ed4c79446e7ad7c86be45385db7056618be4cdb233e4bf2b79241f27f",
+    "fleet.css": "89a501b61b838c79bba8fc2d5728b30436cfc480eafeb59cf39581aaa4fb8897",
+    "fleet.js": "b9f009ee236475fcfa1018ffd4423572fcc4ea9d7980cc6d07a42f3c8a02ba41",
+    "index.html": "bd81a44353cd47d5dca9db67445e0dafe262592e5a50217bcdded10f3558bb57",
+    "mobile.css": "60526faf32238b580adf42a2c20d54bb5e47934ceeebabf2a9854da21ee6768d",
+    "mobile.js": "d6142322e4003e632f960b16645052df16eee9243622c9a805823d002597bcc1",
+    "model.js": "858057b31d2076f623458dfe704bf338ea7e313d6f81e4a4e95e84f0350cd5b8",
+    "physics.js": "a60b52e0771d294e773d6fc4e5a509677d14b1fc26a519dc0f6348f415707627",
+    "style.css": "44ad5ddc89119cc89e51fab4237a641b8894edf3ce8cc20bba5f8c5b7f889750",
+    "vendor/runtime.js": "50a297fabc59ff592031fa916d3fc17511d55747fd11fcdfbd7119bc6148b7f4",
+    "warship-asset.json": "18d07c5f52c02a0fe2fe8763fc1bc68b934f62de0bbc0256863932a86c0b7ec3",
+    "warship-physics.js": "37cc97b3e29c91cb36279091fe144c5649990551dbeaccd46f2a81d423fe04a3"
+  },
+  "publicVerified": false,
+  "incompleteSourceOnly": false
+}
