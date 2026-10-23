@@ -57,4 +57,7 @@ function chooserProbe(paused,label){
 test('chooser never resumes an already paused vessel despite stale label',()=>assert.deepEqual(chooserProbe(true,'Pause'),{paused:true,clicks:0,open:true}));
 test('chooser pauses running vessel despite stale Resume label',()=>assert.deepEqual(chooserProbe(false,'Resume'),{paused:true,clicks:1,open:true}));
 ''')
-print('DOM order and yacht identity fixed; source-bounded envelope; chooser uses actual paused state.')
+# Existing decorative header is pointer-events:none. Its new interactive brand must opt in.
+p=R/'build.py';s=p.read_text();a='.brand{white-space:nowrap;';assert s.count(a)==1
+s=s.replace(a,'.brand{pointer-events:auto;white-space:nowrap;');p.write_text(s)
+print('Fleet DOM, identity, authoritative pause and native selector hit target corrected.')
