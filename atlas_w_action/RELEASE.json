@@ -1,0 +1,74 @@
+{
+  "status": "PUBLIC_SOURCE_PREVIEW_BROWSER_UNVERIFIED",
+  "name": "ATLAS-W Action Helm — Drive + Fire",
+  "sourceSHA": "a571e6ff1f6d58c74d68933cd338f7bd4027183f",
+  "publicURL": "https://rawcdn.githack.com/owensto/helper/a571e6ff1f6d58c74d68933cd338f7bd4027183f/atlas_w_action/live/index.html?vessel=warship",
+  "branch": "atlas/w-action-helm-20261023",
+  "parentPreviewSHA": "e86804a40c24b1c5a45aab6eba1bf32148ae620c",
+  "baseFleetSHA": "8d7df3837046bdbf3b04bf4c4fca245a37aba2a5",
+  "scope": "Seven new product files under atlas_w_action/live. No original fleet, CORE, Y13, HUMANS, multiplayer, workflow, deployment configuration or prior immutable URL changed.",
+  "tests": {
+    "command": "node --test test-flight.cjs test-controls.cjs test-scene.cjs",
+    "passed": 59,
+    "failed": 0,
+    "flightCases": 22,
+    "controlCases": 17,
+    "sceneCases": 20,
+    "scope": "Local Node execution. Actual Three scene objects and unchanged Vessel with synthetic DOM/event interfaces; no browser or GPU.",
+    "packagedRerunPassed": 59
+  },
+  "integrity": {
+    "completeNewGitBlobsMatched": 7,
+    "unchangedBaselinePayloadHashesMatched": 14,
+    "resolvedStaticScriptStylesheetPaths": 15,
+    "uniqueHostDOMIds": 62
+  },
+  "controls": {
+    "W_ArrowUp": "Starts engines and progressively adds ahead power",
+    "S_ArrowDown": "Reduces current power, then applies reverse thrust; retains inertia",
+    "A_D_ArrowLeft_ArrowRight": "Hold steering; release commands center",
+    "Space_Fire": "Quick press fires immediately when ready; hold repeats after cooldown",
+    "Tab": "Next game target",
+    "Click_TapWater": "Choose a game aim point",
+    "C": "Chase, gun and free camera",
+    "X": "Idle",
+    "P_Escape": "Pause or resume",
+    "Q_E_R_F": "Manual traverse and elevation",
+    "M_Sound": "User-enabled synthesized audio",
+    "touch": "Left driving pad and right Fire control available together; multiple independent pointers"
+  },
+  "implemented": [
+    "No separate firing mode: sail, steer and shoot simultaneously",
+    "Optional game trajectory aim assist enabled by default; manual aiming remains available",
+    "Short key and pointer presses no longer depend on catching a rendered frame",
+    "Clear held inputs on pause, blur, cancellation, resizing and menu entry",
+    "Drive input and projectile updates consume existing fixed host steps",
+    "Each projectile inherits its own evaluated muzzle and vessel-velocity contribution",
+    "Moving-target relative sweeps and sampled water collision",
+    "Time-smoothed chase camera and numeric portrait/landscape target-framing checks",
+    "Turret slew, barrel recoil, muzzle flash and tracer effects",
+    "Bounded expanding game fire, rising smoke, fragments, splash spray, rings and flash lighting",
+    "Practice targets tilt and sink after a hit",
+    "Optional synthesized firing/impact sound with distance attenuation"
+  ],
+  "verificationLimits": [
+    "Actual rendered browser, GPU shader compilation, native touchscreen, physical iPhone, Safari and audio output not verified",
+    "Public hosting URL could not be read from this environment; source publication is confirmed, public delivery is not",
+    "Earlier blocked browser automation was not retried or moved to another route; no new browser or CI run",
+    "No measured frame-rate, battery, optical latency or smoothness gain"
+  ],
+  "simulationLimits": [
+    "Fictional game physics, not calibrated naval weapons or real explosives engineering",
+    "Original ship coefficients and both vessel dynamics modules unchanged",
+    "Recoil animates turret barrels, not a ship-dynamics impulse",
+    "Simplified practice-target/water impacts, no general ship/land damage solver",
+    "Inherited ship, ocean and terrain are not a new photorealistic rebuild",
+    "Existing long-render interruption pause remains; native Resume may be required",
+    "No crew contacts, submarine or multiplayer adoption"
+  ],
+  "package": {
+    "file": "ATLAS_W_Drive_and_Fire_Preview.zip",
+    "bytes": 2679475,
+    "sha256": "6aa5cdbc039d87b1a6c223425c1c0904430aad7e80690efdf6e54a70f893e8cc"
+  }
+}
