@@ -17,7 +17,7 @@ function samples(kind,sr=44100,seed=1){
   if(kind==='splash')v=(.6*low+.22*noise)*(1-Math.exp(-t*30))*Math.exp(-t*2)+.1*Math.sin(TAU*(160*t-15*t*t))*Math.exp(-t*6);
   if(kind==='clack')v=(.48*noise+.25*Math.sin(TAU*720*t)+.12*Math.sin(TAU*1370*t))*Math.exp(-t*28);
   if(kind==='cycle'){const env=Math.exp(-Math.abs(t-.09)*38)+.6*Math.exp(-Math.abs(t-.49)*40);v=(.55*low+.22*noise+.1*Math.sin(TAU*90*t))*env;}
-  // Stable zero-ended buffers allow overlapped loops, and remove DC before playback.
+  // Zero-ended buffers suppress loop-boundary clicks; DC is removed before playback.
   const edge=Math.min(1,t/.012,(duration-t)/.035),dc=v-previous+Math.exp(-TAU*15/sr)*hp;previous=v;hp=dc;
   out[i]=Math.tanh(dc*1.3)*Math.max(0,edge);
  }
@@ -68,7 +68,7 @@ function create(T,{root,camera,contextFactory}={}){
   const voice={src,clean(){if(cleaned)return;cleaned=true;src.disconnect();lp.disconnect();g.disconnect();pan.disconnect();voices.delete(voice);}};
   src.onended=voice.clean;voices.add(voice);src.start();stats.played++;stats.peakVoices=Math.max(stats.peakVoices,voices.size);record(e.kind,{distance:d,at:lastTime,due:e.due});
  }
- function update(s,{slew=0,firstPerson=false}={}){
+ function updateInternal(s,{slew=0,firstPerson=false}={}){
   if(disposed)return;
   if(!s||![s.time,s.epoch,s.port,s.starboard,s.speedKnots,s.roll,s.pitch].every(Number.isFinite)||s.time<0){paused=true;silence();return;}
   if(lastEpoch!==s.epoch)reset(s.epoch,s.time);
@@ -89,6 +89,7 @@ function create(T,{root,camera,contextFactory}={}){
   }
   for(let i=0;i<pending.length;){const e=pending[i];if(e.epoch!==lastEpoch){pending.splice(i,1);continue;}if(e.due<=s.time+1e-8){pending.splice(i,1);if(s.time-e.due<1)play(e);else stats.dropped++;}else i++;}
  }
+ function update(s,options){try{updateInternal(s,options);}catch(e){error=String(e.message||e);enabled=false;requested=false;silence();}}
  function setVolume(v){if(!Number.isFinite(v))return;volume=clamp(v,0,.8);if(master)param(master.gain,volume);}
  function setNight(v){night=!!v;if(compressor){param(compressor.threshold,night?-20:-12);param(compressor.ratio,night?6:3);}}
  function dispose(){if(disposed)return;disposed=true;enabled=false;requested=false;toggleVersion++;silence();for(const q of loops.values()){try{q.src.stop();}catch(_){}q.src.disconnect();q.g.disconnect();q.pan.disconnect();}loops.clear();buffers.clear();for(const n of[bus,filter,compressor,master])n?.disconnect();ctx?.close().catch(()=>{});}
