@@ -32,4 +32,29 @@ patch('verify.py','2be8d526628dc476a39058048952addc92f02450ea7fd114615f494b3ca78
  ("def choose(v):tap('.brand');ck('native vessel chooser visible',p.locator('#fleet-dialog').is_visible());tap('#select-'+v);ready()", "def choose(v):\n    tap('.brand');ck('native vessel chooser visible',p.locator('#fleet-dialog').is_visible())\n    with p.expect_navigation(wait_until='domcontentloaded',timeout=120000):tap('#select-'+v)\n    ready()"),
  ("try:row['failureState']=read();p.screenshot(path=str(OUT/(name+'-FAILURE.png')),timeout=60000)", "try:row['failureState']=p.evaluate('window.ATLAS83_APP?.inspect?.() || {message:document.getElementById(\"loading\")?.innerText}');p.screenshot(path=str(OUT/(name+'-FAILURE.png')),timeout=60000)")
 ])
-print('DOM order fixed; larger source-bounded sample envelope; explicit navigation and startup-error capture.')
+# The unchanged yacht reports its identity as model.model, not model.identity.
+p=R/'verify.py';s=p.read_text();assert s.count("y['model']['identity']")==1 and s.count("back['model']['identity']")==1
+s=s.replace("y['model']['identity']","y['model']['model']").replace("back['model']['identity']","back['model']['model']")
+a="tap('.brand');ck('native vessel chooser visible',p.locator('#fleet-dialog').is_visible())"
+assert s.count(a)==1
+s=s.replace(a,a+";ck('chooser pauses actual voyage',read()['state']['paused'])")
+p.write_text(s)
+# Read authoritative paused state; stale text must never resume a vessel.
+p=R/'fleet.js';s=p.read_text();a="document.getElementById('pause').textContent==='Pause'"
+assert s.count(a)==1
+s=s.replace(a,"!window.ATLAS83_APP.inspect().state.paused");p.write_text(s)
+with (R/'test.cjs').open('a') as f:f.write(r'''
+const vm=require('node:vm');
+function chooserProbe(paused,label){
+ const nodes={};const element=()=>({textContent:'',setAttribute(){},onclick:null,showModal(){this.open=true;},close(){this.open=false;}});
+ for(const k of ['brand','scene','helm','fleet-dialog','fleet-close','pause'])nodes[k]=element();
+ nodes.pause.textContent=label;let clicks=0;nodes.pause.click=()=>{clicks++;paused=!paused;};
+ const document={body:{dataset:{}},querySelector:s=>nodes[s==='.brand'?'brand':s.slice(1)],querySelectorAll:()=>[],getElementById:k=>nodes[k]};
+ const window={ATLAS83_APP:{inspect:()=>({state:{paused}})}};
+ vm.runInNewContext(fs.readFileSync('./site/fleet.js','utf8'),{window,document,URL,location:{href:'https://example.test/index.html?vessel=yacht'}});
+ window.AtlasFleet.mount();nodes.brand.onclick({preventDefault(){}});return {paused,clicks,open:nodes['fleet-dialog'].open};
+}
+test('chooser never resumes an already paused vessel despite stale label',()=>assert.deepEqual(chooserProbe(true,'Pause'),{paused:true,clicks:0,open:true}));
+test('chooser pauses running vessel despite stale Resume label',()=>assert.deepEqual(chooserProbe(false,'Resume'),{paused:true,clicks:1,open:true}));
+''')
+print('DOM order and yacht identity fixed; source-bounded envelope; chooser uses actual paused state.')
