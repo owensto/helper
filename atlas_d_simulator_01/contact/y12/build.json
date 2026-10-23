@@ -1,6 +1,6 @@
 {
   "name": "ATLAS D SUMARS Fleet / Y12",
-  "sourceCommit": "db858491fa30ea0fadda18a51976df111d811a99",
+  "sourceCommit": "7e231179123aa67492c3cc236ef57cf368478e4a",
   "baselineCommit": "586a8acfa171e6ad634b562fd924544c5b1376bf",
   "originalAssets": {
     "atlas_d_simulator_01/live/assets/ATLAS_D_Original.glb": "b2966e8265edbd6d52ac2fa7aa1aaa764683df5ff1548a21c8cc1a024fdb3d48",
@@ -16,7 +16,7 @@
   "multiplayer": false,
   "files": {
     "README.md": "a9c7afdfcd0c362010f82ae20a28072f50658dac024c4d981ee48089ba320bc0",
-    "app.js": "48df515d8000743461ced9760aa0dfe87f16ca084b8983f89fabf60a4a45df69",
+    "app.js": "2485bf442c9832d425cab2febd434a607b451d91f9965ecd63dcad816a4c0db0",
     "build.py": "a0ee7aa91c2dea3d533d1f072f087050b538b8e70d09211a9af1f1401a5180c1",
     "dynamics.js": "05a2b3d78cf1ab4f6c45ecca27a0a80103c2aad8cd641a98ca3086da12e2d3f9",
     "fleet.js": "f1543e30d2e87c38d93797e34d6141eb6787686d6e6cadf4152adaa95666d73f",
@@ -26,6 +26,6 @@
     "report.html": "88657e77e0541ee71360eacce49dc8387273425aaab2e033424148c48a435764",
     "style.css": "eefb8f29337c8df35fafde31002399297eac692607f2d4bcc5fdc0065f453a8f",
     "test-fleet.cjs": "de81997b357904a01dc30d1d45b8697294f30eb0434bb904ce91a18b8986f974",
-    "verify.py": "ada37f69ce68e87ce5961f9a23e9e9036c7b852f0705b0ccd9a8e1330161c359"
+    "verify.py": "d9c5cfa2a70e6c33554a520b9bc99ce691d2edbf498647cc6436e5ec8f517236"
   }
 }
