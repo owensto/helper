@@ -78,7 +78,8 @@ with sync_playwright() as pw:
      tap('#pause');wait('FLEET_APP.inspect().state.paused');paused=inspect()['state'];page.wait_for_timeout(800);assert inspect()['state']['elapsed']==paused['elapsed']
      assert page.locator('#pause-card').is_visible();b=target('#resume')[2];assert b['height']>=40
      page.screenshot(path=str(OUT/f'{label}-{name}-{key}.png'))
-     tap('#resume');wait('!FLEET_APP.inspect().state.paused');page.wait_for_timeout(500);assert inspect()['state']['elapsed']>paused['elapsed']
+     # Await an actual owner frame after Resume; a fixed 500ms sleep is not a frame guarantee on software rendering.
+     tap('#resume');wait('!FLEET_APP.inspect().state.paused && FLEET_APP.inspect().state.elapsed>'+repr(paused['elapsed']),10000);assert inspect()['state']['elapsed']>paused['elapsed']
      vr={'key':key,'entry':entry,'heldSteering':held,'afterMotion':after,'motion':{'wallSeconds':wall,'simulationSeconds':after['state']['elapsed']-before['state']['elapsed'],'distanceM':distance,'notAnFPSMeasure':True},'pauseFreeze':True,'deliberateResume':True,'oneActiveVessel':True}
      if key=='w':assert page.locator('#dive-toggle').is_hidden() and page.locator('#subsea-view').is_hidden();vr['surfaceOnly']=True
      row['vessels'].append(vr)
