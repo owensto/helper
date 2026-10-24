@@ -1,0 +1,236 @@
+{
+  "version": "Beaufort Wildlife & Views 4",
+  "passed": true,
+  "cpuChecks": 84,
+  "suites": {
+    "harbor": 25,
+    "integration": 9,
+    "beaufort-region": 4,
+    "native-physics": 15,
+    "stream": 19,
+    "scene": 5,
+    "native-radio": 7
+  },
+  "modeledPowerTrials": [
+    {
+      "rig": "single300",
+      "horsepower": 300,
+      "throttlePercent": 22,
+      "secondsTo30mph": null,
+      "knots": 7.051699163667974,
+      "mph": 8.114950471193907,
+      "propWet": 1,
+      "loadKg": 2125.5234686476115
+    },
+    {
+      "rig": "single300",
+      "horsepower": 300,
+      "throttlePercent": 100,
+      "secondsTo30mph": 6.433333333333334,
+      "knots": 43.76703057462305,
+      "mph": 50.36619928629423,
+      "propWet": 1,
+      "loadKg": 2123.8227585583827
+    },
+    {
+      "rig": "single450",
+      "horsepower": 450,
+      "throttlePercent": 100,
+      "secondsTo30mph": 4.25,
+      "knots": 49.84028810392964,
+      "mph": 57.355179233574475,
+      "propWet": 1,
+      "loadKg": 2282.9127944004986
+    },
+    {
+      "rig": "twin300",
+      "horsepower": 600,
+      "throttlePercent": 100,
+      "secondsTo30mph": 3.316666666666667,
+      "knots": 54.080502995436184,
+      "mph": 62.23473138592359,
+      "propWet": 1,
+      "loadKg": 2398.940904848965
+    }
+  ],
+  "scope": "CPU policy/synthetic host; actual native recovery closure, Three skinned geometry, production vessel/depth/geography/collision assets and radio media fixtures",
+  "browserVerified": false,
+  "GPUVerified": false,
+  "physicalDeviceVerified": false,
+  "CDNVerified": false,
+  "actualMusicPlaybackVerified": false,
+  "frameRateVerified": false,
+  "photorealismVerified": false,
+  "realVesselValidated": false,
+  "build": {
+    "version": "Beaufort Wildlife & Views 4",
+    "base": "4139361fb5f407536b5bab227e44c7baf1ce387e",
+    "changed": [
+      "app.js",
+      "coastal14.js",
+      "experience14.js",
+      "game3/bootstrap.js",
+      "helm09.js",
+      "index.html",
+      "operations10.js",
+      "water12.js",
+      "world09.js"
+    ],
+    "unchanged": 279,
+    "patches": [
+      {
+        "file": "operations10.js",
+        "anchor": "function recover(){stopEffects();SEA09.relocate('basin',-8,0,0);S.hull",
+        "count": 1
+      },
+      {
+        "file": "experience14.js",
+        "anchor": "for(const id of ['s13-return-beaufort','sea10-resetboat'])if($(id))$(i",
+        "count": 1
+      },
+      {
+        "file": "app.js",
+        "anchor": "function setCamera(next,instant=false){if(!ready)return;cameraMode=nex",
+        "count": 1
+      },
+      {
+        "file": "app.js",
+        "anchor": "function updateCamera(dt){if(!ready)return;",
+        "count": 1
+      },
+      {
+        "file": "app.js",
+        "anchor": "window.CMD?.syncMotors(simDt);updateCamera(dt);",
+        "count": 1
+      },
+      {
+        "file": "app.js",
+        "anchor": "function action(key,focus=true){if(!ready)return;",
+        "count": 1
+      },
+      {
+        "file": "game3/bootstrap.js",
+        "anchor": "blocked:()=>D.hidden||A.isPaused()",
+        "count": 1
+      },
+      {
+        "file": "helm09.js",
+        "anchor": "dispatch(type,value){const event=",
+        "count": 1
+      },
+      {
+        "file": "helm09.js",
+        "anchor": "async function ignition(){if(keyBusy)return;",
+        "count": 1
+      },
+      {
+        "file": "helm09.js",
+        "anchor": "target free-camera guard",
+        "count": 1
+      },
+      {
+        "file": "world09.js",
+        "anchor": "[-4.12,0,.82-.39*(s.trimActual||0),'PROP']];",
+        "count": 1
+      },
+      {
+        "file": "water12.js",
+        "anchor": "};mat.customProgramCacheKey=()=> 'atlas12-dispersive-wake-reflection';",
+        "count": 1
+      },
+      {
+        "file": "coastal14.js",
+        "anchor": "if(window.AtlasCoastalFinish)AtlasCoastalFinish.apply(kind,sh);",
+        "count": 1
+      },
+      {
+        "file": "coastal14.js",
+        "anchor": "coastal14-game3-${kind}",
+        "count": 1
+      },
+      {
+        "file": "index.html",
+        "anchor": "<script defer src=\"water12.js\">",
+        "count": 1
+      },
+      {
+        "file": "index.html",
+        "anchor": "</head>",
+        "count": 1
+      }
+    ],
+    "browserVerified": false,
+    "GPUVerified": false,
+    "physicalDeviceVerified": false,
+    "actualPlaybackVerified": false,
+    "photorealismVerified": false,
+    "newDefaultModeledRig": "single450",
+    "physicsChange": "roll-aware port/starboard chine contact samples; force model retained",
+    "geographyChanged": false
+  },
+  "regionChecks": [
+    {
+      "name": "Three dolphins can spawn in actual chart-known Beaufort water around the launch",
+      "passed": true,
+      "launch": [
+        -385.24391984745563,
+        -111.31949079301413
+      ],
+      "animals": [
+        {
+          "x": -332.9909166464182,
+          "z": -57.51778397554992
+        },
+        {
+          "x": -325.3271428435994,
+          "z": -49.62686697565517
+        },
+        {
+          "x": -317.6633690407806,
+          "z": -41.73594997576042
+        }
+      ]
+    },
+    {
+      "name": "One simulated minute of wildlife remains in actual known water clear of original piers",
+      "passed": true,
+      "colliders": 2921
+    },
+    {
+      "name": "Native launch crash has a checked nearby Beaufort recovery using full hull samples and original colliders",
+      "passed": true,
+      "from": [
+        -385.24391984745563,
+        -111.31949079301413
+      ],
+      "recovery": {
+        "x": -396.8708689079834,
+        "z": -114.2883383040684,
+        "heading": 0.25,
+        "location": "beaufort",
+        "reason": "nearby checked water",
+        "distance": 12
+      }
+    },
+    {
+      "name": "Lower tide forces revalidation rather than trusting stale recovery clearance",
+      "passed": true,
+      "recoveryAvailable": true
+    }
+  ],
+  "sourceHashes": {
+    "harbor-core.js": "ce0b261acd22046c4745f0b6924be3eb867264edc716461189cf508b9f6bdf5a",
+    "check.py": "d7a6d76316c3494eb343536cbdb492421839c666d4e5fcbe47749ae83ab9a945",
+    "test-region.cjs": "5b1f0d66da018ec47d0bcef8077d8b6acffd4fc105fa4aa885d86968c8de0bca",
+    "finish.js": "fedce54045f20dfa4664f083ea994e5d37a19c126e7b4aaf8705c6a77015aa18",
+    "dolphin.js": "04268fbe9ce3e6b156840268e8a933b9f38875f22945c190da99c76a2c9b978f",
+    "test.cjs": "4a9b98238ea8b511c45d7a77a4e0859d0c25c497e3f7c0ae3619d5fc815070c6",
+    "harbor.css": "e52e75d26299de707288753e4cda1a13fb7806289a5a9adb7d64de02db1355c5",
+    "camera.js": "61749d1d614f433a9fb8108e4b4d3f4948668095f1d5b4157fa75d9a5b1b4947",
+    "pins.json": "9053681d1af4f4f3d1056690be073ac8489b0009efc025a4ec262083e38663ea",
+    "harbor.js": "34d0bc9e92a3571078871aa1f5b4188fa4932c7822a387c1fe4d67477260278c",
+    "build.py": "d9a93ac947d3736c623edddf6c51f79ec9f2d3f11567f6de58f05ec2fe09b04f",
+    "README.md": "d569295c30cd7a3c7b1b8e8ab1a57ff86a07409badbe104769e34112ebf4de48",
+    "test-runtime.cjs": "20ea40788b5dcfdad5022f43a17bcfe9b6f29ebff65159e5829b969fea33f1cb"
+  }
+}

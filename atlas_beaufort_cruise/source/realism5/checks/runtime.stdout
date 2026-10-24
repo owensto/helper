@@ -1,0 +1,60 @@
+{
+  "passed": true,
+  "checks": 13,
+  "scope": "Synthetic host/DOM bootstrap with actual bundled Three geometry and native vessel configuration; no rendered/touch/GPU claim.",
+  "tests": [
+    {
+      "name": "Actual Harbor bootstrap installs one pod/scene and leaves source boat identity unchanged",
+      "passed": true,
+      "dolphins": 3
+    },
+    {
+      "name": "First-session native 450 rig preserves position/time/distance and remains engine-off",
+      "passed": true
+    },
+    {
+      "name": "Explicit remembered 300 or twin rig is not overwritten by faster default",
+      "passed": true
+    },
+    {
+      "name": "Camera UI switches first/third/look; free pause cannot be toggled from main header",
+      "passed": true
+    },
+    {
+      "name": "More view menu exposes actual four modes and does not change physics or world",
+      "passed": true
+    },
+    {
+      "name": "Wildlife clock uses current simulation only; pause does not move pod or consume extra members",
+      "passed": true
+    },
+    {
+      "name": "Runtime recovery breadcrumb is read from actual vessel position and depth adapter",
+      "passed": true
+    },
+    {
+      "name": "Lifecycle disposes meshes/listeners, restores owned callbacks and preserves later owner overrides",
+      "passed": true
+    },
+    {
+      "name": "pagehide cleanup occurs despite bootstrap stop flag and restores paused-free state",
+      "passed": true
+    },
+    {
+      "name": "Actual watch-dolphin action exposes the live animals and selects idle/Neutral without starting engine",
+      "passed": true
+    },
+    {
+      "name": "Fast boat remains visible while watch action asks it to coast below three knots",
+      "passed": true
+    },
+    {
+      "name": "Find-dolphin action re-enables disabled wildlife and navigation panels expose the same action",
+      "passed": true
+    },
+    {
+      "name": "Loss of habitat and reset hides pooled models safely rather than leaving visible phantom animals",
+      "passed": true
+    }
+  ]
+}

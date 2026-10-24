@@ -1,0 +1,13 @@
+{
+  "source": "https://freesound.org/people/nomadas/sounds/690160/",
+  "preview": "https://cdn.freesound.org/previews/690/690160_938246-hq.mp3",
+  "author": "nomadas",
+  "title": "River boat with outboard engine (at changing speeds)",
+  "license": "CC0 1.0",
+  "exact_engine_unknown": true,
+  "sha256": "6eb2a145b1850701243ff64730e07dffb3f6ea3720cfa0f28dae901916f44e62",
+  "derivative": "outboard_body.ogg",
+  "edits": "10\u201318 s mono excerpt; band-pass 36\u2013680 Hz, normalized, 350 ms loop crossfade, Ogg encoding",
+  "not_an_F300_recording": true,
+  "not_measured_RPM_layers": true
+}

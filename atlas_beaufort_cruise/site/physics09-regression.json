@@ -1,0 +1,52 @@
+{
+  "passed": true,
+  "physicsValidated": false,
+  "tests": [
+    {
+      "test": "forward_to_reverse",
+      "forwardKnots": 43.82028466024312,
+      "endingU": -4.821609266701729,
+      "positionDelta": 48.6368701791622,
+      "passed": true
+    },
+    {
+      "test": "sandbar_contact",
+      "hits": 2,
+      "clearance": -0.10278266672732905,
+      "x": 80.88118699484956,
+      "z": -40,
+      "speed": 0,
+      "part": "PROP",
+      "passed": true
+    },
+    {
+      "test": "back_off_sandbar",
+      "delta": -74.7622574290111,
+      "passed": true
+    },
+    {
+      "test": "rest_bobbing",
+      "heaveRange": 0.42776011860261265,
+      "rollRange": 0.031890029324724886,
+      "passed": true
+    },
+    {
+      "test": "depth_shared",
+      "sandbar": {
+        "bed": -0.1200000000000001,
+        "depth": 0.1200000000000001,
+        "known": true,
+        "land": false,
+        "source": "Authored practice-bay terrain"
+      },
+      "deep": {
+        "bed": -5.567627986344954,
+        "depth": 5.567627986344954,
+        "known": true,
+        "land": false,
+        "source": "Authored practice-bay terrain"
+      },
+      "passed": true
+    }
+  ]
+}

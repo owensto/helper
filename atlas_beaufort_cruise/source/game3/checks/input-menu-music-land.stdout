@@ -1,0 +1,102 @@
+{
+  "passed": true,
+  "scope": "CPU policy + synthetic DOM/event and exact native openPanel ordering; actual force-step and Three shader-source hooks, not browser/GPU/touch/audio acceptance",
+  "tests": [
+    {
+      "name": "WASD works from the focused power range; arrows remain slider-native",
+      "passed": true
+    },
+    {
+      "name": "W/S are continuous power intents; releasing retains the lever position",
+      "passed": true
+    },
+    {
+      "name": "A/D ramp target and center on release; both directions cancel",
+      "passed": true
+    },
+    {
+      "name": "Holding W and S together does not creep throttle",
+      "passed": true
+    },
+    {
+      "name": "Text, content-editable and modifier shortcuts never drive the boat",
+      "passed": true
+    },
+    {
+      "name": "Menu/Pause gating releases held keys and never resumes automatically",
+      "passed": true
+    },
+    {
+      "name": "Lost focus, hidden page and disposal clear installed input listeners",
+      "passed": true
+    },
+    {
+      "name": "Docking cap, reference trim and pointer ownership remain intact",
+      "passed": true
+    },
+    {
+      "name": "Space gives explicit idle+Neutral, not velocity manipulation",
+      "passed": true
+    },
+    {
+      "name": "Authority loss does not send input to another boat; event-code fallback works",
+      "passed": true
+    },
+    {
+      "name": "Native Music fallback reproduces disappearance before correction",
+      "passed": true,
+      "beforeCountryCards": 0
+    },
+    {
+      "name": "Same native Music flow retains both default queues after correction",
+      "passed": true,
+      "afterDefaultCountryQueues": 2
+    },
+    {
+      "name": "Rapid panel switch cannot resurrect playlists; reopening has one copy",
+      "passed": true
+    },
+    {
+      "name": "Detached country buttons are inert, with no autoplay on menu opening",
+      "passed": true
+    },
+    {
+      "name": "Dashboard has six labeled categories and Music at first level",
+      "passed": true
+    },
+    {
+      "name": "Menu roadmap labels planned gameplay; old buttons die after navigation",
+      "passed": true
+    },
+    {
+      "name": "Buoyancy current samples match the newly rotated hull, with red/green measurement",
+      "passed": true,
+      "before": {
+        "currentError": 0.026635020813022974,
+        "previousError": 0,
+        "heading": 0.7097371395313714
+      },
+      "after": {
+        "currentError": 0,
+        "previousError": 0,
+        "heading": 0.7097371395313714
+      },
+      "scope": "actual production step with an analytic test water surface"
+    },
+    {
+      "name": "Straight-heading calm model remains numerically unchanged",
+      "passed": true,
+      "knots": 43.766790699460294
+    },
+    {
+      "name": "Material detail hooks bind actual Three standard shader without adding geometry",
+      "passed": true,
+      "materials": 8,
+      "GPUCompiled": false
+    },
+    {
+      "name": "Native model, depth, colliders and 64-cell scenery are byte-preserved",
+      "passed": true
+    }
+  ]
+}

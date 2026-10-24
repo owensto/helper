@@ -1,0 +1,117 @@
+{
+  "version": 4,
+  "passed": true,
+  "checks": 25,
+  "scope": "CPU policies, actual bundled Three geometry and skinning, production recovery closure and native vessel model. Not browser, visual, GPU, music or device validation.",
+  "tests": [
+    {
+      "name": "Recovery rejects unknown, shallow or land under any hull sample",
+      "passed": true
+    },
+    {
+      "name": "Recovery uses yawed full hull overlap, not centre point only",
+      "passed": true
+    },
+    {
+      "name": "Crash recovery uses pre-crash Beaufort breadcrumb and never changes region",
+      "passed": true
+    },
+    {
+      "name": "Breadcrumb is revalidated when tide makes it shallow",
+      "passed": true
+    },
+    {
+      "name": "No known local recovery water returns null instead of test-basin fallback",
+      "passed": true
+    },
+    {
+      "name": "Recovery preserves time, weather, consumed fuel, rig and trip; clears propulsion",
+      "passed": true
+    },
+    {
+      "name": "Breadcrumb storage is bounded and a region change clears stale entries",
+      "passed": true
+    },
+    {
+      "name": "Actual crash recovery closure calls checked planner, preserves state and does not contain basin teleport",
+      "passed": true
+    },
+    {
+      "name": "Chase camera remains aft of current heading, with no vessel mutation",
+      "passed": true
+    },
+    {
+      "name": "Orbit rotates around moving boat and lock returns to aft view",
+      "passed": true
+    },
+    {
+      "name": "V-style toggle remembers orbit/locked third-person choice",
+      "passed": true
+    },
+    {
+      "name": "Free camera pauses local vessel; WASD changes camera only; exit restores prior pause",
+      "passed": true
+    },
+    {
+      "name": "Camera gestures and zoom are bounded; hidden/menu input does not fly",
+      "passed": true
+    },
+    {
+      "name": "Photo view remains under original owner; no competing camera update",
+      "passed": true
+    },
+    {
+      "name": "Dolphin is finite skinned geometry with horizontal flukes and normalized weights",
+      "passed": true,
+      "vertices": 2356,
+      "triangles": 4504,
+      "bones": 5,
+      "length": 2.86,
+      "originalGeometry": true,
+      "photorealismVerified": false
+    },
+    {
+      "name": "Dolphin animation flexes caudal spine vertically, not sideways",
+      "passed": true
+    },
+    {
+      "name": "Dolphins do not spawn in unknown/shallow/solid regions",
+      "passed": true
+    },
+    {
+      "name": "Wildlife stays finite, deterministic, inside checked water and stops on pause",
+      "passed": true,
+      "animals": 3
+    },
+    {
+      "name": "Reflections have lower distortion, bounded five-tap filter and preserved Fresnel",
+      "passed": true
+    },
+    {
+      "name": "Dock/bank material source assembles without deleting native normal/roughness blocks",
+      "passed": true
+    },
+    {
+      "name": "Roll-aware chine contact detects a side bank missed by old centreline samples",
+      "passed": true
+    },
+    {
+      "name": "Deep calm water retains original force coefficients and resulting speed",
+      "passed": true,
+      "baselineKnots": 43.76457653950954,
+      "candidateKnots": 43.76457653950954
+    },
+    {
+      "name": "First-session 450 selection still uses native rig guard and native mass/engine configuration",
+      "passed": true
+    },
+    {
+      "name": "Camera/free controls route through one native loop and prevent boat-fitting interaction",
+      "passed": true
+    },
+    {
+      "name": "UI has one fixed palette; state colors are restricted to warnings and selected borders",
+      "passed": true
+    }
+  ]
+}

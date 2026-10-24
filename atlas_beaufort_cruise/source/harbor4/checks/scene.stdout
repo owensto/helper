@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "scope": "Bundled Three.js CPU objects and exact geometry, with file-backed in-memory IO. No WebGL/browser or rendering certification.",
+  "tests": [
+    {
+      "name": "Foundation and nearest detail create real Three.js meshes; all physical colliders registered",
+      "passed": true,
+      "groups": 3
+    },
+    {
+      "name": "Actual quantized position/normal/color attributes and transformed bounds remain finite",
+      "passed": true,
+      "vertices": 829023
+    },
+    {
+      "name": "Tide moves floating dock meshes without changing collider membership",
+      "passed": true
+    },
+    {
+      "name": "Scenic-camera focus does not relocate the vessel",
+      "passed": true
+    },
+    {
+      "name": "Scene disposal releases geometry without deleting physical obstacles",
+      "passed": true,
+      "disposedObserved": 207
+    }
+  ]
+}

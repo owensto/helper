@@ -1,0 +1,11 @@
+{
+  "release": 13,
+  "basePublic": "a2d4eecc12e7b4db14c7f94a6f6fc5088a4061ff",
+  "default": "beaufort",
+  "asynchronousVisualRasters": true,
+  "prebuiltCoast": true,
+  "heightAwareHullWaterMask": true,
+  "unchangedPhysicsCoefficientsAndCaptain": true,
+  "experimentalHuman": false,
+  "multiplayer": false
+}

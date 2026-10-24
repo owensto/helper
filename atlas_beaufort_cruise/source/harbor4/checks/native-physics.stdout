@@ -1,0 +1,111 @@
+{
+  "version": 14,
+  "passed": true,
+  "realVesselValidated": false,
+  "tests": [
+    {
+      "name": "Source land window checksums, CRS, real nonflat land and unknown coverage",
+      "passed": true,
+      "landRangeM": [
+        3.156796296296297,
+        5.238111111111111
+      ],
+      "known": 71615,
+      "unknown": 37046
+    },
+    {
+      "name": "Fractional terrain grid is bilinear and NaN/unknown remains unknown",
+      "passed": true
+    },
+    {
+      "name": "Signed clutch ramps on engagement/reversal; never blocks selected gear",
+      "passed": true
+    },
+    {
+      "name": "Full power launch and terminal speed remain within specified model envelope",
+      "passed": true,
+      "secondsTo30mph": 6.433333333333334,
+      "terminalKnots": 43.764565452483474
+    },
+    {
+      "name": "Warm idle forward creep, neutral coasts and full reverse eventually backs away",
+      "passed": true,
+      "forwardIdleMps": 0.7186319474253482,
+      "afterReverseMps": -3.3983820782918746
+    },
+    {
+      "name": "High-speed reversal retains forward inertia and monotonic clutch ramp",
+      "passed": true,
+      "beforeMps": 16.740128351507902,
+      "afterMps": -4.289023741634406
+    },
+    {
+      "name": "In-water six-point damping reduces ring-down without freezing heave",
+      "passed": true,
+      "candidate": {
+        "rms": 0.012776244544164934,
+        "range": 0.42987906347324445
+      },
+      "baseline": null
+    },
+    {
+      "name": "All weather states remain finite and within existing heave/roll/pitch limits",
+      "passed": true
+    },
+    {
+      "name": "Angular hard stops do not retain outward hidden angular velocity",
+      "passed": true
+    },
+    {
+      "name": "Propeller immersion responds to aft pitching position and remains bounded",
+      "passed": true
+    },
+    {
+      "name": "Tide transitions do not teleport position or reverse elapsed time",
+      "passed": true
+    },
+    {
+      "name": "New dock/pier collisions are height-filtered independently of rendering and tide",
+      "passed": true
+    },
+    {
+      "name": "Sandbar still contacts and powered reverse backs off",
+      "passed": true,
+      "bottomHits": 1,
+      "backOffM": 77.57198841505841
+    },
+    {
+      "name": "Prebuilt scene carries full mapped landmarks, finite buffers and source provenance",
+      "passed": true,
+      "counts": {
+        "land": 69,
+        "buildings": 514,
+        "roads": 79,
+        "bridges": 23,
+        "trees": 220,
+        "piers": 19,
+        "parkPaths": 10,
+        "marshClumps": 500,
+        "inferredPitchedRoofs": 122
+      },
+      "chunks": 404,
+      "triangles": 596128,
+      "rawBytes": 21460608
+    },
+    {
+      "name": "Runtime does not adopt experimental humans or mutate original boat asset",
+      "passed": true
+    }
+  ],
+  "measurements": {
+    "launch14": {
+      "secondsTo30mph": 6.433333333333334,
+      "terminalKnots": 43.764565452483474
+    },
+    "decay14": {
+      "rms": 0.012776244544164934,
+      "range": 0.42987906347324445
+    },
+    "decay13": null
+  }
+}
