@@ -1,0 +1,56 @@
+{
+  "passed": true,
+  "scope": "CPU-only microbenchmark in this Node process; no end-to-end frame-rate, phone or GPU measurement",
+  "results": {
+    "benchSurface": {
+      "iterations": 24000,
+      "beforeMs": [
+        863.524624,
+        872.101425,
+        865.951615,
+        863.204301,
+        863.384708,
+        883.793641,
+        862.588964
+      ],
+      "afterMs": [
+        627.099128,
+        628.765145,
+        621.666196,
+        624.28522,
+        626.322129,
+        622.798167,
+        625.622791
+      ],
+      "medianBeforeMs": 863.524624,
+      "medianAfterMs": 625.622791,
+      "speedup": 1.3802640127923345,
+      "sameResult": true
+    },
+    "benchColliders": {
+      "iterations": 24000,
+      "beforeMs": [
+        54.344396,
+        54.207531,
+        54.597137,
+        54.294653,
+        53.920506,
+        55.435689,
+        54.003291
+      ],
+      "afterMs": [
+        26.73821,
+        26.837685,
+        26.791519,
+        26.987103,
+        29.730043,
+        26.039919,
+        25.715484
+      ],
+      "medianBeforeMs": 54.294653,
+      "medianAfterMs": 26.791519,
+      "speedup": 2.0265612039392016,
+      "sameResult": true
+    }
+  }
+}

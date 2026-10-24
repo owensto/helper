@@ -35,4 +35,5 @@
 #helm09.harbor4 #h4-views{top:auto;bottom:calc(var(--d2-bottom,140px) + 22px + env(safe-area-inset-bottom,0px));right:12px}
 #helm09.harbor4:has(#d2-trim-panel:not([hidden])) #h4-views{display:none!important}
 #helm09.harbor4 .d2-speed,#helm09.harbor4 .d2-depth{background:var(--h4-panel)!important;color:var(--h4-text)!important}
-#helm09.harbor4.h4-free #helm09-pause{opacity:.5;cursor:default}
+#helm09.harbor4.h4-free #helm09-pause:disabled{opacity:.5;cursor:default}
+#helm09.harbor4:has(#helm09-pause:not(:disabled)) .h4-flight{display:none!important}

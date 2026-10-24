@@ -19,8 +19,8 @@ function material(kind){const plant=['leaves','moss','marsh'].includes(kind),m=n
  if(kind==='marsh')code=`vec2 p=vec2((coastP14.x+coastP14.z)*34.,coastP14.y);float blade=sin(p.x+sin(coastTime14*1.1+p.x*.17)*coastWind14*.015);if(blade<.62)discard;diffuseColor.rgb*=.75+.35*n14(p);`;
  if(kind==='bridge'||kind==='rail'||kind==='trim')code=`diffuseColor.rgb*=.94+.06*n14(coastP14.xz*1.3);`;
  sh.fragmentShader=sh.fragmentShader.replace('#include <color_fragment>','#include <color_fragment>\n'+code);
- if(window.AtlasCoastalFinish)AtlasCoastalFinish.apply(kind,sh);if(window.AtlasHarborFinish)AtlasHarborFinish.material(kind,sh);
- };m.customProgramCacheKey=()=>`coastal14-harbor4-${kind}`;return m;}
+ if(window.AtlasCoastalFinish)AtlasCoastalFinish.apply(kind,sh);if(window.AtlasHarborFinish)AtlasHarborFinish.material(kind,sh);AtlasSurface5.coastal(kind,sh);
+ };m.customProgramCacheKey=()=>`coastal14-realism5-${kind}`;return m;}
 AtlasCruiseCoast.bind({T,base,material,report,clock,tide,wind,wet});
 window.SEA14_COAST={ready:true,meta:null,inspect:()=>({...report})};
 // The sky is procedural original artwork; mean environment illumination retains the bundled HDR.

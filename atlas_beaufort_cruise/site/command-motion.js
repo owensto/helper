@@ -88,8 +88,10 @@ class CommandMotion extends Base{
  let up=0,pm=0,rm=0,support=0;const targetPitch=.05*this.planing+.032*this.trimActual+this.planing*this.trimActual*.035,targetRoll=this.yaw*this.u*(sport?.022:.012);
  const buoyC=Math.cos(this.heading),buoyS=Math.sin(this.heading);
  for(const [xx,zz] of [[2.6,-.75],[2.6,.75],[0,-.95],[0,.95],[-2.6,-.85],[-2.6,.85]]){
-  const wx=this.x+buoyC*xx-buoyS*zz,wz=this.z+buoyS*xx+buoyC*zz,sea=CommandMotion.surface(wx,wz,this.elapsed,this.environment);
-  const seaPrev=CommandMotion.surface(frameX+c*xx-s*zz,frameZ+s*xx+c*zz,this.elapsed-dt,this.environment),vs=(sea-seaPrev)/dt;
+  const ox=buoyC*xx-buoyS*zz,oz=buoyS*xx+buoyC*zz,wx=this.x+ox,wz=this.z+oz;
+  const field=AtlasMarineField.sample(G.Sea11Waves,wx,wz,this.elapsed,p.amp),sea=field.height;
+  const turnRate=Math.atan2(buoyS*c-buoyC*s,buoyC*c+buoyS*s)/dt;
+  const vs=AtlasMarineField.encounter(field,(this.x-frameX)/dt,(this.z-frameZ)/dt,turnRate,ox,oz);
   const gap=sea+.04*this.planing+targetPitch*xx-targetRoll*zz-(this.heave+this.pitch*xx-this.roll*zz);
   const vel=this.verticalVel+this.pitchVel*xx-this.rollVel*zz-vs;
   let force=clamp(M*9.81/6+spring*gap-damping*vel,0,M*9.81*2.2);
@@ -108,6 +110,6 @@ class CommandMotion extends Base{
  }
  snapshot(){return {...super.snapshot(),configuration:{...this.config},totalMassKg:this.config?this.totalMassKg():null,airborne:this.airborne,airtime:this.airtime,verticalVelocity:this.verticalVel,peakAir:this.peakAir,propWet:this.propWet,fuelUsedGal:this.fuelUsedGal,fuelRateModeled:this.lastFuelRate,portRpm:this.portRpm,starboardRpm:this.starboardRpm,depthSource:this.depthSource,location:this.location,bottomClearance:this.bottomClearance,bottomPart:this.bottomPart,bottomHitCount:this.bottomHitCount,bottomHitSpeed:this.bottomHitSpeed};}
 }
-CommandMotion.RESISTANCE=RESISTANCE;CommandMotion.PRESETS=presets;CommandMotion.DEFAULTS=defaults;CommandMotion.surface=(x,z,t,p='calm')=>G.Sea11Waves.sample(x,z,t,(presets[p]||presets.calm).amp).height+(G.Sea12Waves?.wakeSample(x,z,t).height||0);
+CommandMotion.RESISTANCE=RESISTANCE;CommandMotion.PRESETS=presets;CommandMotion.DEFAULTS=defaults;CommandMotion.surface=(x,z,t,p='calm')=>AtlasMarineField.height(G.Sea11Waves,x,z,t,(presets[p]||presets.calm).amp);
 G.BayMotion=CommandMotion;if(typeof module!=='undefined')module.exports=CommandMotion;
 })(typeof window!=='undefined'?window:globalThis);
