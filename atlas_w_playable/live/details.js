@@ -80,7 +80,7 @@ function decorateBattery(T,b){
   const pipe=mesh(new T.CylinderGeometry(.11,.11,2.6,8),light,[1.5,1.7,side*2.82]);pipe.rotation.z=.32;
  }
  const ring=mesh(new T.TorusGeometry(3.72,.045,6,48),light,[0,.62,0]);ring.rotation.x=Math.PI/2;
- const geom=new T.CylinderGeometry(.065,.065,.08,6),bolts=new T.InstancedMesh(geom,light,32),d=new T.Object3D();for(let i=0;i<32;i++){const a=i/32*Math.PI*2;d.position.set(Math.cos(a)*3.45,.63,dummy=0);}
+ const geom=new T.CylinderGeometry(.065,.065,.08,6),bolts=new T.InstancedMesh(geom,light,32),d=new T.Object3D();for(let i=0;i<32;i++){const a=i/32*Math.PI*2;d.position.set(Math.cos(a)*3.45,.63,Math.sin(a)*3.45);d.updateMatrix();bolts.setMatrixAt(i,d.matrix);}group.add(bolts);
  for(const slide of b.barrels)for(const x of [2.9,4.2,8.4]){const m=new T.Mesh(new T.CylinderGeometry(.51,.51,.17,20),steel);m.rotation.z=-Math.PI/2;m.position.x=x;slide.add(m);}
  batchStatic(T,group);return group;
 }
