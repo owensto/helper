@@ -1,0 +1,92 @@
+{
+  "status": "PUBLIC_SOURCE_PREVIEW_BROWSER_UNVERIFIED",
+  "name": "ATLAS-W — Direct Control and Three Batteries",
+  "sourceSHA": "79c65352a7576ba653380a5d3948f44671251741",
+  "branch": "atlas/w-direct-control-20261023",
+  "publicURL": "https://rawcdn.githack.com/owensto/helper/79c65352a7576ba653380a5d3948f44671251741/atlas_w_playable/live/index.html?vessel=warship",
+  "baseProductSHA": "477fd6b85bcbcba01d89bf5e2fdb32bf2b4cf0d0",
+  "baseRecordSHA": "6f15c4ed603d39c4db9893cb19de7cd7f0a789f1",
+  "scope": "Eight new product files under atlas_w_playable/live only. Earlier modules, shared owners and prior immutable URLs are unchanged. The new isolated host deliberately changes visible-stall handling and graphics.",
+  "controls": {
+    "rightMouseDrag": "Direct manual turret traverse/elevation in first-person, third-person and whole-ship views",
+    "lockMouse": "Optional user-requested pointer lock; mouse movement aims, left click fires; denial/unsupported leaves drag fallback",
+    "WASD_or_arrows": "Drive and steer concurrently with aiming and firing",
+    "leftMouse_or_Space": "Fire; hold for repeat after selected gun cooldown",
+    "G_or_brackets": "Select next or previous of three twin gun stations",
+    "1_2_3": "First-person operator, third-person operator, ship view",
+    "mobile": "Left driving pad, right aim-swipe area and separate Fire; independent pointers",
+    "manualDefault": true,
+    "optionalAimAssist": true,
+    "actualAndRequestedAimIndicators": true
+  },
+  "guns": {
+    "stations": ["bow twin", "port twin", "starboard twin"],
+    "barrels": 6,
+    "independentAimAndReload": true,
+    "switchPreservesShotsInFlight": true,
+    "basePlacement": "Visual bases attached using actual original deck triangle intersections; not structural or full-body clearance acceptance",
+    "operator": "One existing seated avatar remains at the bow console. Side guns are selected remotely; no walking or duplicate gunner claimed.",
+    "calibratedRealWeapons": false
+  },
+  "visualChanges": [
+    "Procedural projected paint, roughness and bump maps with panel seams and subtle streaks",
+    "Non-slip deck grain and subtle waterline tint",
+    "Source-surface-attached deckhouse doors, louvres, handles, instanced fasteners and navigation-light housings",
+    "Beveled turret shells, layered cheeks, barrel collars, supports and detail rings",
+    "Batched static detail rather than one draw object per small fitting",
+    "Water shading normals follow the same analytic waves as displacement; softened foam-wake alpha",
+    "Smaller action HUD, camera alternatives in Options, requested/actual direction indicators"
+  ],
+  "timePolicy": {
+    "visibleLongFrame": "Discard elapsed debt instead of automatically leaving the voyage paused; the next normal fixed steps continue",
+    "hiddenTabAndManualPause": "Retained",
+    "measuredFPSGain": false
+  },
+  "tests": {
+    "newProductCommand": "node --test tests-playable/test-*.cjs",
+    "newProductPassed": 36,
+    "newProductFailed": 0,
+    "packagedNewProductRerunPassed": 36,
+    "pairedRightDrag": {
+      "beforePassed": 0,
+      "beforeFailed": 1,
+      "afterPassed": 1,
+      "afterFailed": 0,
+      "sameAssertionFile": true,
+      "rangeModuleImportOnlyDifference": true
+    },
+    "retainedBaselineSuitePassed": 122,
+    "retainedBaselineQualification": "Executed separately against unchanged previous baseline modules, not 122 new-product acceptance cases",
+    "scope": "Local Node v22.16.0, actual Three/source GLB/avatar geometry and source-loop excerpts, with synthetic DOM/events and test-only image-decoding bypass. No browser/GPU/native input."
+  },
+  "integrity": {
+    "completePublishedProductGitBlobsMatched": 8,
+    "unchangedOriginalPayloadFiles": 47,
+    "resolvedScriptStylesheetAndDynamicHostReferences": 24,
+    "uniqueHTMLIds": 62,
+    "packagePayloadHashesChecked": 100
+  },
+  "retainedCorrections": [
+    "The first weak paired probe measured actuator drift and passed both versions; a corrected probe asserts requested-angle change before actual-angle movement, with identical before/after assertions.",
+    "One paired rerun used a wrong relative import path and failed before execution; retained separately. Corrected invocation produced original failure/new pass.",
+    "Source hashing caught and corrected an instanced-detail transcription error and restored the tested practice-target geometry before final release.",
+    "Removed an irrelevant local Escape check on pointer events to match published controls; full product suite reran successfully."
+  ],
+  "publicReceipt": "Ordinary web-reader access to the exact public URL was unavailable. Git source publication confirmed; public HTTP and rendered behavior are not verified.",
+  "limits": [
+    "No new browser, CI or workflow execution; earlier blocked automation was not retried or routed around.",
+    "No rendered screenshots, GPU shader compilation, native pointer-lock/touch, physical phone, Safari, hardware-audio or performance verification.",
+    "This is not GTA-level visual quality, a new open-world engine, or a photorealistic overhaul.",
+    "Original ship and projectile coefficients unchanged; damage remains simplified practice-target/water impacts.",
+    "No full-body fit, collision, structural or ergonomic approval; prior HUMANS/CORE acceptance does not transfer.",
+    "Additional guns are fictional game content, not real weapon performance data or operational training.",
+    "Manual/background pause still needs Resume; a slow renderer can still slow simulation.",
+    "Older immutable links do not automatically update."
+  ],
+  "package": {
+    "file": "ATLAS_W_Direct_Control_Three_Batteries.zip",
+    "bytes": 5946593,
+    "sha256": "2c02661d49d4ce92710666b461d86964c00f3969f568abc2304542bf0b76ad40",
+    "payloadHashChecks": 100
+  }
+}
