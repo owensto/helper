@@ -58,10 +58,10 @@ function install(T,H){
   const audioControl=$('audio');if(audioControl){audioControl.textContent='Sound is controlled by M / Sound';audioControl.disabled=true;}
  }
  const targets=new T.Group();targets.name='ATLAS_GAME_PRACTICE_TARGETS';H.scene.add(targets);const targetMeshes=[];
- const floatMat=new T.MeshStandardMaterial({color:0x243744,roughness:.75,metalness:.1}),targetMat=new T.MeshStandardMaterial({color:0xe69a4a,roughness:.68}),stripeMat=new T.MeshStandardMaterial({color:0xe9e4c9,roughness:.75});
+ const floatMat=new T.MeshStandardMaterial({color:0x243744,roughness:.75,metalness:.1}),targetMat=new T.MeshStandardMaterial({color:0xd05e31,roughness:.8}),stripeMat=new T.MeshStandardMaterial({color:0xf7dba2,roughness:.75});
  for(let i=0;i<3;i++){
-  const g=new T.Group(),float=new T.Mesh(new T.CylinderGeometry(7.2,7.5,1.5,16),floatMat);g.add(float);
-  const block=new T.Mesh(new T.BoxGeometry(6.2,6.2,6.2),targetMat);block.position.y=1;g.add(block);
+  const g=new T.Group(),hull=new T.Mesh(new T.CylinderGeometry(6.3,5.5,1.5,10),floatMat);hull.position.y=-4.5;g.add(hull);
+  const box=new T.Mesh(new T.BoxGeometry(6.2,7,6.2),targetMat);box.position.y=-.4;g.add(box);
   for(const y of [-2,1]){const stripe=new T.Mesh(new T.BoxGeometry(6.28,.5,6.28),stripeMat);stripe.position.y=y;g.add(stripe);}
   const mast=new T.Mesh(new T.CylinderGeometry(.12,.12,3,6),stripeMat);mast.position.y=4.2;g.add(mast);targets.add(g);targetMeshes.push(g);
  }
