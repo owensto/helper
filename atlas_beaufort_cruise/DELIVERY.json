@@ -1,16 +1,16 @@
 {
-  "version": "Wildlife & Views 4",
-  "url": "https://rawcdn.githack.com/owensto/helper/2c2e75a441b5660d40eb5327b3a72f92acbd4ef2/atlas_beaufort_cruise/site/index.html",
-  "published_commit": "2c2e75a441b5660d40eb5327b3a72f92acbd4ef2",
+  "version": "Dolphins & Lightweight Realism 5",
+  "url": "https://rawcdn.githack.com/owensto/helper/6339a15b22232e2c830203c25a547c7a168c8e24/atlas_beaufort_cruise/site/index.html",
+  "published_commit": "6339a15b22232e2c830203c25a547c7a168c8e24",
   "status": "STATIC_PREVIEW_COMMITTED",
-  "source_commit": "95f2668ce62c40adc8854e1aa1a81f67dc38c971",
-  "build_run": "39900393542",
-  "cpu_checks_passed": 84,
+  "source_commit": "92a5f9a65c9143cf2cd1277a35918c7f9e77b02b",
+  "build_run": "40047043096",
+  "cpu_checks_passed": 107,
   "browserVerified": false,
   "CDNVerified": false,
   "GPUVerified": false,
   "physicalDeviceVerified": false,
   "frameRateVerified": false,
   "photorealismVerified": false,
-  "note": "Complete static site committed after CPU/model/geography tests. No browser, current public-response, actual audio playback or GPU verification performed."
+  "note": "Complete static site committed after native CPU/math/geography and synthetic-interface tests. No browser/public-response/GPU/touch/playback or actual FPS verification. Dolphin camera projection is not rendered visibility proof."
 }
