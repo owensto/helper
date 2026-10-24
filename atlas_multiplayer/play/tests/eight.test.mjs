@@ -39,7 +39,7 @@ test('same-identity active takeover rejected, expired slots become available',()
   h.disconnect(ids[2]);assert.throws(()=>h.add(randomId(),hello()),/ROOM_FULL/);now+=RESUME_MS+1;h.add(randomId(),hello());assert.equal(h.players.size,8);
 });
 test('room isolation and invitation world/version refusal do not affect existing fleet',async()=>{
-  const f=fleet();try{const h=await joinEight(f),other=f.make();await other.room.start({name:'Other room'});await settle();await f.tick(3);assert.equal(other.room.info.players,1);assert.equal(other.room.remotes().length,0);assert.equal(h.room.info.connected,8);const invite=parseInvite(h.room.link);assert.throws(()=>parseInvite(h.room.link.replace('v=2','v=1')),/BAD_INVITE/);assert.equal(invite.room,h.room.id);}finally{await f.close();}
+  const f=fleet();try{const h=await joinEight(f),other=f.make();await other.room.start({name:'Other room'});await settle();await f.tick(3);assert.equal(other.room.info.players,1);assert.equal(other.room.remotes().length,0);assert.equal(h.room.info.connected,8);const invite=parseInvite(h.room.link);assert.throws(()=>parseInvite(h.room.link.replace('v=3','v=2')),/BAD_INVITE/);assert.equal(invite.room,h.room.id);}finally{await f.close();}
 });
 test('one saturated peer drops latest snapshots instead of queuing unlimited history',async()=>{
   const f=fleet();try{const h=await joinEight(f);await f.tick(2);const c=h.room.connections.get(f.all[1].room.id).c;c.dataChannel.bufferedAmount=70000;await f.tick(10);assert.equal(h.room.info.state,'hosting');assert.equal(h.room.info.connected,8);assert.ok(h.room.metrics.dropped>=10);assert.ok(f.all[2].room.remotes().length===7);c.dataChannel.bufferedAmount=0;await f.tick(2);assert.equal(h.room.info.connected,8);}finally{await f.close();}

@@ -10,6 +10,11 @@ export function makeScene(T){
   for(const p of WORLD.route){const buoy=mesh(new T.CylinderGeometry(.7,1.4,3.4,12),'#eac879');buoy.position.set(p.x,1,p.z);scene.add(buoy);}
   const dock=mesh(new T.BoxGeometry(245,1,5),'#635746');dock.position.set(-140,0,303);scene.add(dock);return scene;
 }
+export function makeRallyBeacon(T){
+  const beacon=new T.Group(),ring=new T.Mesh(new T.RingGeometry(20,22,48),new T.MeshBasicMaterial({color:'#f3cf94',transparent:true,opacity:.7,side:T.DoubleSide}));
+  ring.rotation.x=-Math.PI/2;ring.position.y=.15;beacon.add(ring);
+  const pole=new T.Mesh(new T.CylinderGeometry(.18,.18,16,8),new T.MeshBasicMaterial({color:'#f3cf94'}));pole.position.y=8;beacon.add(pole);beacon.visible=false;return beacon;
+}
 function drawLabels(canvas,T,camera,others,w,h){
   const c=canvas?.getContext('2d');if(!c)return;
   if(canvas.width!==w||canvas.height!==h){canvas.width=w;canvas.height=h;}c.clearRect(0,0,w,h);c.font='600 13px system-ui';c.textAlign='center';
@@ -26,11 +31,13 @@ export async function createGraphics(canvas,onStatus=()=>{}){
     scene=makeScene(T);const camera=new T.PerspectiveCamera(52,1,.2,10000),target=new T.Vector3();
     const gltf=await loadOriginalBoat(T,{onStatus}),template=gltf.scene;const boat=new T.Group();boat.add(template.clone(true));scene.add(boat);const remotes=new Map();let initialized=false;
     const labelCanvas=globalThis.document?.getElementById('labels');
+    const beacon=makeRallyBeacon(T);scene.add(beacon);
     return {
-      draw(pose,others,view,dt){
+      draw(pose,others,view,dt,selfSlot=0,navigation=null){
         const w=canvas.clientWidth||innerWidth,h=canvas.clientHeight||innerHeight;
         if(canvas.width!==Math.floor(w*renderer.getPixelRatio())||canvas.height!==Math.floor(h*renderer.getPixelRatio())){renderer.setSize(w,h,false);camera.aspect=w/h;camera.updateProjectionMatrix();}
         boat.position.fromArray(pose.p);boat.quaternion.fromArray(pose.q);
+        beacon.visible=!!navigation;if(navigation)beacon.position.set(navigation.x,0,navigation.z);
         const ids=new Set();for(const other of others){ids.add(other.entityId);let b=remotes.get(other.entityId);if(!b){b=template.clone(true);scene.add(b);remotes.set(other.entityId,b);}b.position.fromArray(other.pose.p);b.quaternion.fromArray(other.pose.q);}
         for(const [id,b] of remotes)if(!ids.has(id)){scene.remove(b);remotes.delete(id);}
         const [x,,z]=pose.p,[qx,qy,qz,qw]=pose.q,hg=Math.atan2(2*(qx*qz-qw*qy),1-2*(qy*qy+qz*qz));
@@ -43,7 +50,7 @@ export async function createGraphics(canvas,onStatus=()=>{}){
     };
   }catch(e){renderer?.dispose();throw e;}
 }
-export function drawChart(canvas,controller,others,routeIndex,selfSlot=0){
+export function drawChart(canvas,controller,others,routeIndex,selfSlot=0,navigation=null){
   const ctx=canvas.getContext('2d');if(!ctx)throw Error('CANVAS_2D_UNAVAILABLE');
   const w=canvas.clientWidth||innerWidth,h=canvas.clientHeight||innerHeight,dpr=Math.min(globalThis.devicePixelRatio||1,2);
   if(canvas.width!==Math.floor(w*dpr)||canvas.height!==Math.floor(h*dpr)){canvas.width=Math.floor(w*dpr);canvas.height=Math.floor(h*dpr);}
@@ -55,6 +62,7 @@ export function drawChart(canvas,controller,others,routeIndex,selfSlot=0){
   for(const i of WORLD.islands){ctx.fillStyle='#c8bc96';ctx.beginPath();ctx.arc(i.x,i.z,i.radius,0,Math.PI*2);ctx.fill();ctx.fillStyle='#597356';ctx.beginPath();ctx.arc(i.x,i.z,i.radius*.91,0,Math.PI*2);ctx.fill();}
   ctx.fillStyle='#736452';ctx.fillRect(-262,300,245,5);
   WORLD.route.forEach((p,i)=>{ctx.fillStyle=i===routeIndex?'#ffe1a0':'#9caeac';ctx.beginPath();ctx.arc(p.x,p.z,i===routeIndex?5:3,0,Math.PI*2);ctx.fill();});
+  if(navigation){ctx.save();ctx.strokeStyle='#f3cf94';ctx.lineWidth=2/zoom;ctx.setLineDash([6/zoom,5/zoom]);ctx.beginPath();ctx.moveTo(controller.x,controller.z);ctx.lineTo(navigation.x,navigation.z);ctx.stroke();ctx.setLineDash([]);ctx.beginPath();ctx.arc(navigation.x,navigation.z,22,0,Math.PI*2);ctx.stroke();ctx.restore();}
   const draw=(p,q,name,color,stale=false)=>{const heading=Math.atan2(2*(q[0]*q[2]-q[3]*q[1]),1-2*(q[1]*q[1]+q[2]*q[2]));ctx.save();ctx.translate(p[0],p[2]);ctx.rotate(heading);ctx.globalAlpha=stale?.35:1;ctx.fillStyle=color;ctx.beginPath();ctx.moveTo(7,0);ctx.lineTo(1,-2.4);ctx.lineTo(-5,-2.2);ctx.lineTo(-5,2.2);ctx.lineTo(1,2.4);ctx.closePath();ctx.fill();ctx.fillStyle='#294552';ctx.fillRect(-2,-1.4,3,2.8);ctx.restore();if(name){ctx.fillStyle=color;ctx.font=`${12/zoom}px system-ui`;ctx.textAlign='center';ctx.fillText(name,p[0],p[2]-12/zoom);}};
   for(const r of others)draw(r.pose.p,r.pose.q,`${r.slot+1} · ${r.name}${r.stale?' (delayed)':''}`,COLORS[r.slot??0],r.stale);
   const p=controller.pose();draw(p.p,p.q,`${selfSlot+1} · YOU`,COLORS[selfSlot]);ctx.restore();

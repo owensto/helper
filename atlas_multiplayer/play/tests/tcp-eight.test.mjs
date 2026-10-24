@@ -43,3 +43,31 @@ test('eight real TCP clients: 56 moving remote views, ninth refusal and same-boa
     guest.room.leave();await until(()=>host.room.info.players===7);assert.equal(guest.room.info.state,'solo');
   }finally{clearInterval(simTimer);all.forEach(x=>x.room.leave(false));await sleep(150);}
 });
+
+test('eight TCP captains share ready/rally/departure, deny guest control and keep target on reconnect',async()=>{
+  const network=tcpNetwork(),all=[];let simulation;
+  function make(){const boat=new BoatController();let spawns=0;const room=new PeerRoom({read:()=>boat.sample(),onSpawn:p=>{boat.place(p);spawns++;},onResume:()=>boat.input(),peerFactory:network.factory});const item={boat,room,spawns:()=>spawns};all.push(item);return item;}
+  try{
+    const host=make();await host.room.start({name:'Owen'});await until(()=>!!host.room.link);
+    for(let i=1;i<8;i++)await make().room.start({name:`Captain ${i+1}`,invite:host.room.link});
+    await until(()=>all.every(p=>p.room.info.connected===8));const initial=all.map(p=>p.boat.sample());
+    assert.equal(host.room.command('destination','buoy-2'),true);
+    await until(()=>all.every(p=>p.room.plan.destination==='buoy-2'));
+    for(const p of all)assert.equal(p.room.command('ready',true),true);
+    await until(()=>all.every(p=>p.room.info.roster.filter(r=>r.ready).length===8));
+    assert.equal(host.room.command('depart'),true);
+    await until(()=>all.every(p=>p.room.plan.departAt===host.room.plan.departAt&&p.room.plan.departAt!==null));
+    // Group commands do not advance physics or drive any captain's boat.
+    assert.deepEqual(all.map(p=>p.boat.sample()),initial);
+    const attacker=all[4];attacker.room.command('destination','harbor');
+    await until(()=>attacker.room.info.controlNotice.includes('Only the host'));
+    assert.ok(all.every(p=>p.room.plan.destination==='buoy-2'));assert.equal(attacker.room.info.state,'connected');
+    // Countdown loss is explicit, with the same target and same membership on recovery.
+    const guest=all[3],identity=guest.room.id,slot=guest.room.slot;
+    guest.room.connections.get(host.room.id).c.close();
+    await until(()=>host.room.plan.departAt===null);await until(()=>guest.room.info.state==='connected'&&guest.room.info.connected===8);
+    assert.equal(guest.room.id,identity);assert.equal(guest.room.slot,slot);assert.equal(guest.spawns(),1);assert.equal(guest.room.plan.destination,'buoy-2');
+    assert.equal(guest.room.info.roster.find(p=>p.self).ready,false);
+    console.log('CREW_RALLY_TCP '+JSON.stringify({clients:8,sharedDestination:true,readyAcknowledged:8,commonDeparture:true,guestHostCommandRefused:true,reconnectPreserved:true,boatWritesFromCrewCommands:0,...network.metrics,scope:'real loopback TCP, not browser/WebRTC'}));
+  }finally{clearInterval(simulation);all.forEach(p=>p.room.leave(false));await sleep(150);}
+});

@@ -1,6 +1,7 @@
 import {WORLD} from '../standalone/world.mjs';
 import {RemoteBuffer} from '../client/interpolation.mjs';
 import {VERSION,LIMIT,RESUME_MS,HostRoom,randomId,secret,nameOf,parseMessage,parseInvite,inviteURL,checkedSnapshot} from './protocol.mjs';
+import {emptyPlan,crewProgress} from './crew-plan.mjs';
 import {loadScript} from './assets.mjs';
 export async function browserPeer(id){
   if(!globalThis.RTCPeerConnection)throw Error('WEBRTC_UNAVAILABLE');
@@ -8,6 +9,11 @@ export async function browserPeer(id){
   return new globalThis.Peer(id,{host:'0.peerjs.com',port:443,path:'/',key:'peerjs',secure:true,debug:0});
 }
 const friendly={
+  HOST_ONLY:'Only the host can set the fleet destination or start departure.',
+  CHOOSE_DESTINATION:'Ask the host to choose a destination first.',
+  CREW_NOT_READY:'At least two captains must be connected, visible and ready before departure.',
+  DEPARTURE_ACTIVE:'The departure is already scheduled. Cancel before starting again.',
+  BAD_CREW_COMMAND:'That crew command was not accepted.',
   WEBRTC_UNAVAILABLE:'WebRTC is unavailable in this browser. Solo sailing still works.',
   CONNECT_TIMEOUT:'Could not reach the host. Keep both tabs open; this network or the public relay may block the connection.',
   SCRIPT_DOWNLOAD_FAILED:'The connection library could not load. Solo sailing still works.',
@@ -31,11 +37,11 @@ const closeQuietly=c=>{try{c.close();}catch{}};
  */
 export class PeerRoom {
   constructor({read,onSpawn,onResume=()=>{},onState=()=>{},peerFactory=browserPeer,now=()=>performance.now(),visible=()=>!globalThis.document?.hidden,base=globalThis.location?.href||'https://example.invalid/play/multiplayer.html',tickMs=100}){
-    Object.assign(this,{read,onSpawn,onResume,onState,peerFactory,now,visible,base,tickMs});this.generation=0;this.connections=new Map();this.buffer=new RemoteBuffer({staleMs:1800});this.peer=null;this.timer=null;this.timeout=null;this.room=null;this.host=null;this.id=null;this.link='';this.roster=[];this.info={state:'solo',message:'Solo sailing',players:1,connected:1,capacity:LIMIT,roster:[]};this.serial=-1;this.lastSnapshot=null;this.lastSnapshotAt=null;this.offset=0;this.seq=0;this.rtt=null;this.signaling=false;this.everJoined=false;this.recoveryUntil=null;this.retryAt=0;this.retryCount=0;this.signalRetryAt=0;this.pingAt=0;this.pendingPing=null;this.slot=null;this.metrics={sent:0,received:0,dropped:0,retries:0,maxBytes:0};
+    Object.assign(this,{read,onSpawn,onResume,onState,peerFactory,now,visible,base,tickMs});this.controlSeq=0;this.controlNotice='';this.plan=emptyPlan();this.generation=0;this.connections=new Map();this.buffer=new RemoteBuffer({staleMs:1800});this.peer=null;this.timer=null;this.timeout=null;this.room=null;this.host=null;this.id=null;this.link='';this.roster=[];this.info={state:'solo',message:'Solo sailing',players:1,connected:1,capacity:LIMIT,roster:[]};this.serial=-1;this.lastSnapshot=null;this.lastSnapshotAt=null;this.offset=0;this.seq=0;this.rtt=null;this.signaling=false;this.everJoined=false;this.recoveryUntil=null;this.retryAt=0;this.retryCount=0;this.signalRetryAt=0;this.pingAt=0;this.pendingPing=null;this.slot=null;this.metrics={sent:0,received:0,dropped:0,retries:0,maxBytes:0};
   }
   publish(state,message){
-    const roster=this.roster.map(p=>({id:p.id,name:p.name,slot:p.slot,connected:p.connected,visible:p.visible,host:p.id===this.host,self:p.id===this.id}));
-    this.info={state,message,players:roster.length||1,connected:roster.filter(p=>p.connected).length||(!this.host?1:0),capacity:LIMIT,roster,latencyMs:this.rtt===null?null:Math.round(this.rtt),signaling:this.signaling,reconnectSeconds:this.recoveryUntil===null?null:Math.max(0,Math.ceil((this.recoveryUntil-this.now())/1000))};
+    const roster=this.roster.map(p=>({id:p.id,name:p.name,slot:p.slot,connected:p.connected,visible:p.visible,ready:p.ready,host:p.id===this.host,self:p.id===this.id}));
+    this.info={state,message,players:roster.length||1,connected:roster.filter(p=>p.connected).length||(!this.host?1:0),capacity:LIMIT,roster,plan:{...this.plan},crew:crewProgress(this.plan,this.roster,this.now()+this.offset),controlNotice:this.controlNotice,latencyMs:this.rtt===null?null:Math.round(this.rtt),signaling:this.signaling,reconnectSeconds:this.recoveryUntil===null?null:Math.max(0,Math.ceil((this.recoveryUntil-this.now())/1000))};
     try{this.onState(structuredClone(this.info));}catch{} // Observer failure never owns the room.
   }
   send(c,value,{volatile=false}={}){
@@ -50,7 +56,7 @@ export class PeerRoom {
   }
   async start({name,invite=null}={}){
     name=nameOf(name);const joining=invite?parseInvite(invite,this.base):null;this.leave(false);
-    const generation=this.generation,live=()=>generation===this.generation;this.id=randomId();this.name=name;this.joining=joining;this.resumeKey=secret();this.seq=0;this.everJoined=false;this.slot=null;this.startedAt=this.now();this.metrics={sent:0,received:0,dropped:0,retries:0,maxBytes:0};
+    const generation=this.generation,live=()=>generation===this.generation;this.id=randomId();this.name=name;this.joining=joining;this.resumeKey=secret();this.seq=0;this.controlSeq=0;this.controlNotice='';this.everJoined=false;this.slot=null;this.startedAt=this.now();this.metrics={sent:0,received:0,dropped:0,retries:0,maxBytes:0};
     this.publish('connecting',joining?'Opening your connection…':'Creating your eight-person room…');
     try{
       const peer=await this.peerFactory(this.id);if(!live()){peer.destroy();return;}this.peer=peer;
@@ -91,6 +97,10 @@ export class PeerRoom {
         const m=parseMessage(raw,4096);entry.lastRx=this.now();this.metrics.received++;
         if(!entry.joined){const welcome=this.room.add(c.peer,m);entry.joined=true;clearTimeout(entry.wait);this.send(c,welcome);this.ingest(this.room.snapshot());this.publish('hosting','Room open · share the invitation');}
         else if(m.type==='leave')entry.close(true);
+        else if(m.type==='crew'){
+          try{this.room.command(c.peer,m);this.ingest(this.room.snapshot());}
+          catch(e){if(['HOST_ONLY','CHOOSE_DESTINATION','CREW_NOT_READY','DEPARTURE_ACTIVE','BAD_CREW_COMMAND'].includes(e.message))this.send(c,{v:VERSION,type:'crew-error',code:e.message});else throw e;}
+        }
         else if(m.type==='ping'){if(!Number.isFinite(m.at)||m.at<0)throw Error('BAD_MESSAGE');this.send(c,{v:VERSION,type:'pong',at:m.at,serverTime:this.now()});}
         else this.room.update(c.peer,m);
       }catch(e){entry.rejecting=true;this.send(c,{v:VERSION,type:'error',code:friendly[e.message]?e.message:'BAD_MESSAGE'});entry.rejectTimer=setTimeout(()=>entry.close(true),80);}
@@ -108,9 +118,10 @@ export class PeerRoom {
       try{
         const m=parseMessage(raw);this.metrics.received++;if(m.type==='error')throw Error(m.code);if(m.type==='leave')throw Error('HOST_LEFT');
         if(!entry.joined){
-          if(m.type!=='welcome'||m.id!==this.id||m.host!==this.host||m.world!==WORLD.worldRevision||!Number.isInteger(m.slot)||m.slot<1||m.slot>=LIMIT||typeof m.resumed!=='boolean'||!Number.isSafeInteger(m.nextSequence)||m.nextSequence<0||JSON.stringify(m.spawn)!==JSON.stringify(WORLD.vessels['atlas-open-water-bay'].spawns[m.slot])||(this.everJoined&&(!m.resumed||m.slot!==this.slot)))throw Error('BAD_WELCOME');
+          if(m.type!=='welcome'||m.id!==this.id||m.host!==this.host||m.world!==WORLD.worldRevision||!Number.isInteger(m.slot)||m.slot<1||m.slot>=LIMIT||typeof m.resumed!=='boolean'||!Number.isSafeInteger(m.nextSequence)||m.nextSequence<0||!Number.isSafeInteger(m.nextControlSequence)||m.nextControlSequence<0||JSON.stringify(m.spawn)!==JSON.stringify(WORLD.vessels['atlas-open-water-bay'].spawns[m.slot])||(this.everJoined&&(!m.resumed||m.slot!==this.slot)))throw Error('BAD_WELCOME');
           if(!this.everJoined)this.onSpawn(m.spawn);else this.onResume();
-          this.slot=m.slot;this.everJoined=true;this.seq=Math.max(this.seq,m.nextSequence);entry.joined=true;this.lastSnapshotAt=this.now();this.recoveryUntil=null;this.retryCount=0;clearTimeout(this.timeout);this.publish('connecting','Connection open · waiting for the fleet');
+          this.slot=m.slot;this.everJoined=true;this.seq=Math.max(this.seq,m.nextSequence);this.controlSeq=Math.max(this.controlSeq,m.nextControlSequence);entry.joined=true;this.lastSnapshotAt=this.now();this.recoveryUntil=null;this.retryCount=0;clearTimeout(this.timeout);this.publish('connecting','Connection open · waiting for the fleet');
+        }else if(m.type==='crew-error'){this.controlNotice=friendly[m.code]||'Crew action was not accepted.';this.publish(this.info.state,this.info.message);
         }else if(m.type==='pong'){
           if(this.pendingPing!==null&&m.at===this.pendingPing){const elapsed=this.now()-m.at;if(elapsed>=0&&elapsed<15000)this.rtt=this.rtt===null?elapsed:this.rtt*.7+elapsed*.3;this.pendingPing=null;}
         }else{
@@ -126,7 +137,7 @@ export class PeerRoom {
     if(this.recoveryUntil===null){this.recoveryUntil=this.now()+RESUME_MS;try{this.onResume();}catch{};}
     this.retryAt=this.now()+Math.min(4000,500*2**Math.min(this.retryCount,3));this.publish('reconnecting','Connection interrupted · reserving your boat for 30 seconds');
   }
-  ingest(s){this.serial=s.serial;this.lastSnapshot=s;this.roster=s.players;this.buffer.ingest(s,this.id);}
+  ingest(s){this.plan={...s.plan};this.serial=s.serial;this.lastSnapshot=s;this.roster=s.players;this.buffer.ingest(s,this.id);}
   tick(){
     try{
       const t=this.now();
@@ -150,6 +161,17 @@ export class PeerRoom {
       }
     }catch(e){this.fail(e.message);}
   }
+  command(action,value){
+    if(!['hosting','connected'].includes(this.info.state)){this.controlNotice='Reconnect before changing the crew plan.';this.publish(this.info.state,this.info.message);return false;}
+    const m={v:VERSION,type:'crew',seq:this.controlSeq++,action,...(value===undefined?{}:{value})};
+    this.controlNotice='';
+    try{
+      if(this.room){this.room.command(this.id,m);this.ingest(this.room.snapshot());}
+      else if(!this.send(this.connections.get(this.host)?.c,m))throw Error('CONNECT_TIMEOUT');
+      this.publish(this.info.state,this.info.message);return true;
+    }catch(e){this.controlNotice=friendly[e.message]||'Crew action failed.';this.publish(this.info.state,this.info.message);return false;}
+  }
+  navigation(){return {plan:{...this.plan},...crewProgress(this.plan,this.roster,this.now()+this.offset)};}
   remotes(){return this.buffer.sample(this.now()+this.offset,['hosting','connected'].includes(this.info.state)).map(r=>({...r,slot:this.roster.find(p=>p.id===r.id)?.slot??0}));}
   fail(code){const message=friendly[code]||'Connection failed. Solo works; use a fresh invitation to try again.';this.leave(false);this.publish('error',message);}
   leave(notify=true){
@@ -159,7 +181,7 @@ export class PeerRoom {
     const peer=this.peer;this.peer=null;const finish=()=>{entries.forEach(e=>closeQuietly(e.c));try{peer?.destroy();}catch{}};
     // Best-effort flush of the leave notice. Save old resources; never destroy a newly opened room.
     if(notify&&entries.length)setTimeout(finish,120);else finish();
-    this.room=null;this.host=null;this.link='';this.buffer.clear();this.roster=[];this.serial=-1;this.lastSnapshot=null;this.lastSnapshotAt=null;this.offset=0;this.recoveryUntil=null;this.rtt=null;this.pendingPing=null;this.signaling=false;this.joining=null;this.resumeKey=null;
+    this.room=null;this.host=null;this.link='';this.plan=emptyPlan();this.controlNotice='';this.buffer.clear();this.roster=[];this.serial=-1;this.lastSnapshot=null;this.lastSnapshotAt=null;this.offset=0;this.recoveryUntil=null;this.rtt=null;this.pendingPing=null;this.signaling=false;this.joining=null;this.resumeKey=null;
     this.info={state:'solo',message:'Solo sailing',players:1,connected:1,capacity:LIMIT,roster:[]};if(notify)this.publish('solo','Solo sailing');
   }
 }

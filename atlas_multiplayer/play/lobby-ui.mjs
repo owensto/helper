@@ -4,7 +4,7 @@ export function rosterView(info){
   const players=info.roster||[];
   return Array.from({length:LIMIT},(_,slot)=>{
     const p=players.find(p=>p.slot===slot);
-    return {slot,color:COLORS[slot],name:p?`${p.name}${p.self?' (you)':''}`:'Open seat',status:!p?'Invite a friend':!p.connected?'Reconnecting':!p.visible?'Tab in background':p.host?'Host':'Connected',occupied:!!p};
+    return {slot,color:COLORS[slot],name:p?`${p.name}${p.self?' (you)':''}`:'Open seat',status:!p?'Invite a friend':!p.connected?'Reconnecting':!p.visible?'Tab in background':p.ready?(p.host?'Host · Ready':'Ready'):p.host?'Host':'Connected',occupied:!!p};
   });
 }
 export function roomSummary(info){

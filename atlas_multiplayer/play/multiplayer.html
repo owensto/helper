@@ -4,7 +4,7 @@
 <title>Atlas D · Crew 8</title><link rel="stylesheet" href="./style.css"></head>
 <body data-mode="multiplayer"><main>
 <canvas id="chart" tabindex="0" aria-label="Sailing chart. W/S throttle, A/D steer."></canvas><canvas id="sea" tabindex="0" aria-label="3D boat view" hidden></canvas><canvas id="labels" aria-hidden="true" hidden></canvas>
-<header><div class="brand"><b>ATLAS D</b><span>OPEN WATER</span></div><span id="mode">CREW 8 · PLAYTEST</span><nav><a href="./index.html">Solo</a><button id="roomsToggle" aria-expanded="false" aria-controls="rooms">Crew &amp; invite</button></nav></header>
+<header><div class="brand"><b>ATLAS D</b><span>OPEN WATER</span></div><span id="mode">CREW 8 · RALLY · PLAYTEST</span><nav><a href="./index.html">Solo</a><button id="roomsToggle" aria-expanded="false" aria-controls="rooms">Crew &amp; invite</button></nav></header>
 <div id="starting" role="status">Starting the sailing chart…</div>
 <div class="connection"><span id="connection" role="status">Solo sailing</span><b id="count"></b><small id="latency"></small></div>
 <aside id="rooms" aria-labelledby="lobbyTitle" hidden>
@@ -15,13 +15,25 @@
 <label>Invitation<input id="inviteIn" placeholder="Paste invitation link" autocomplete="off" spellcheck="false"></label><button id="joinRoom" class="wide">Join room</button>
 <label class="invite-label">Your invitation<input id="inviteOut" readonly placeholder="Available after creating a room" spellcheck="false"></label><div class="row"><button id="copyInvite" disabled>Copy link</button><button id="shareInvite" disabled>Share</button></div>
 </section><section class="crew-card" aria-label="Eight captain seats"><div class="crew-heading"><h2>The crew</h2><b id="lobbyCount">Not in a room</b></div><ol id="crew" class="crew-list"></ol></section></div>
+<section id="crewPlan" class="crew-plan" hidden aria-label="Shared sailing plan">
+<div class="crew-heading"><h2>Sail together</h2><b id="readyCount">0 / 8 ready</b></div>
+<p id="rallyName">Choose where to sail together</p>
+<div id="hostPlan"><label>Fleet destination<select id="rallyChoice" aria-label="Fleet destination"></select></label><button id="setRally" class="wide">Set shared destination</button></div>
+<div class="row"><button id="readyCrew" aria-pressed="false">I’m ready</button><button id="departCrew" class="accent" disabled>5-second departure</button><button id="cancelCruise" disabled>Cancel departure</button></div>
+<p id="crewNotice" class="hint" role="status">No automatic steering or engine changes.</p>
+</section>
 <p id="roomStatus" role="status" class="room-status">Create a room or join an invitation.</p>
 <div class="row actions"><button id="sailNow" class="accent" disabled>Take the helm</button><button id="keepAwake" disabled>Keep screen awake</button><button id="leaveRoom" disabled>Leave room</button></div>
 <p id="hostAdvice" class="host-advice" hidden>You are the host. Keep this tab open and visible. Closing it ends the room for everyone.</p>
-<details class="privacy"><summary>Connection &amp; playtest limits</summary><p>Data only: no camera or microphone. PeerJS's free public service exchanges connection metadata; peers may see network addresses. No dedicated server or guaranteed relay. Rooms end when the host leaves. Brief connection drops reserve your boat for 30 seconds while this page remains open; refreshing needs a fresh join. These eight-seat improvements have code and TCP tests, not an eight-device browser certification.</p></details>
+<details class="privacy"><summary>Connection &amp; playtest limits</summary><p>Data only: no camera or microphone. PeerJS's free public service exchanges connection metadata; peers may see network addresses. No dedicated server or guaranteed relay. Rooms end when the host leaves. Brief connection drops reserve your boat for 30 seconds while this page remains open; refreshing needs a fresh join. These group-navigation improvements have code and TCP tests, not an eight-device browser certification.</p></details>
 </aside>
 <section class="helm" aria-label="Helm controls"><div class="speed"><strong id="speed">0.0</strong><small>KNOTS</small></div><span id="throttle">Power 0%</span><button id="power">Start engine</button><button id="coast">Coast</button><button id="camera">Chase</button><button id="visual">Chart view</button></section>
 <section class="touch" aria-label="Touch controls"><div><button data-hold="left" aria-label="Steer left">◀</button><button data-hold="right" aria-label="Steer right">▶</button></div><div><button data-hold="down" aria-label="Decrease throttle">−</button><button data-hold="up" aria-label="Increase throttle">+</button></div></section>
+<section id="navigator" class="crew-navigator" hidden aria-label="Crew navigation">
+<label>Find<select id="trackCrew" aria-label="Track a teammate or the shared destination"><option value="rally">Shared destination</option></select></label>
+<div class="nav-line"><b id="navArrow" aria-hidden="true">↑</b><div><strong id="navName">Choose a destination</strong><span id="navDistance">—</span></div></div>
+<p id="cruiseStatus" role="status"></p>
+</section>
 <div id="route" class="route">Buoy 1/5</div>
 <footer><span>W/S throttle · A/D steer · E engine · Space coast · C camera</span><span>Casual dynamics · No boat collisions · Browser-hosted rooms</span></footer>
 <details id="diagnostics"><summary id="visualStatus">Starting chart view</summary><p>Chart sailing stays available when the 3D download or graphics fails. This public playtest has not passed native eight-browser acceptance.</p><div class="row"><button id="retry3d">Retry 3D</button><button id="copyDebug">Copy diagnostics</button></div><pre id="debugResult"></pre></details>

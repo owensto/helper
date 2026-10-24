@@ -1,74 +1,65 @@
-# Atlas D Open Water — Crew 8 (P3)
+# Atlas D — Crew 8 Rally (P4)
 
-Public **playtest source**, not eight-device production certification. Eight total
-captains means one browser host plus seven friends. Use this commit's
-`multiplayer.html`; older immutable links and room-1 invitations do not update.
-Create room, copy/share one invitation, and each guest enters a name and presses
-Join. Take the helm closes the lobby. No signup or local installation.
+Published-source playtest. Eight total captains: one host and seven guests.
+**Native browser / public WebRTC / eight-device acceptance is still unverified.**
+Existing SeaLab and dedicated Node-server projects are unchanged.
 
-## What changed
+## Play together
 
-An eight-seat color-coded roster shows host/self, connected/background/reconnecting
-status, live occupancy and local round-trip latency. The same numbered captain
-labels appear in chart view and above remote boats in 3D. Chart sailing remains
-available after a graphics/model failure. The precise original 3D failure remains
-unknown; native GPU/asset-delivery validation has not occurred in this environment.
+Open `multiplayer.html`, create a room and share one invitation. All players must
+use this revision and fresh protocol-v3 links. The host chooses one of five buoys
+or the harbor rendezvous in **Sail together**. Captains mark **I’m ready**. The host
+can then start a five-second advisory departure. **Take the helm** returns input
+to the boat. Nobody is automatically steered, teleported or given throttle.
 
-A guest's transient connection drop reserves its identity, seat and last accepted
-sequence for 30 seconds. Automatic retry is bounded and preserves the locally owned
-boat rather than spawning a duplicate or applying remote restore commands. This
-works only while the same page/Peer identity survives: refresh or an expired
-reservation requires a fresh join. Resume keys are private in-memory handshake
-capabilities, never invite links, roster snapshots, diagnostics or localStorage.
+The on-water Find selector locates the shared destination or a teammate. It shows
+distance, compass bearing and relative direction; chart mode draws a guide line,
+and 3D adds a destination ring/beacon. This is a direction indicator, not route
+planning around islands. The nearby count uses fresh reported positions within
+22 m; disconnected, background and stale captains do not count. It is not scoring.
 
-The host uses a seven-link star, not a full mesh. Pose snapshots publish at 10 Hz
-and remotes interpolate 150 ms behind arrival. Stale boats are labeled, not
-extrapolated. Backpressure skips old replaceable updates and eventually drops only
-the affected link. A reproduced single-guest send exception formerly ended the
-whole host room; it is now contained. Explicit leave attempts a short control-frame
-flush; abrupt exit is bounded by reconnect expiry. There is NO host migration or
-persistence. The host tab must remain open and visible. Optional screen wake lock
-is user-triggered, not a guarantee against background tab throttling.
+Changing destination resets readiness. A drop, unready captain, new arrival or
+stale/background state before departure cancels the countdown without erasing the
+destination. Same-page reconnection retains identity/seat and target, but the
+returning captain must ready again. Refresh still needs a fresh join. Host closure
+still ends the room. Keep the host visible; optional screen wake lock does not
+prevent browser throttling. Crew status is not shared authoritative physics.
 
-Browser transport still uses version-pinned PeerJS 1.5.5 and its existing public
-signaling/relay defaults. There is no new account, service or paid capacity. Actual
-public service uptime, TURN fallback and restrictive-network connectivity are not
-certified. Data only: no microphone/camera requests. Peers may learn network
-addresses; public signaling handles connection metadata. Client-owned cooperative
-boats only: no shared crews, physics collisions, competitive anti-cheat or humans.
+## Protocol boundaries
 
-## Executed evidence
+`atlas-browser-room-3`; invitations carry v=3 in the fragment. Existing v1/v2
+links are intentionally rejected. HostRoom owns an explicitly versioned shared
+plan; it accepts only named immutable standalone destinations, never arbitrary
+coordinates or room/world configuration. Guests can change only their own ready
+status. Control sequences are separate from movement sequences and preserved
+through resume. Forbidden crew actions return a nonfatal visible rejection rather
+than tearing down the fleet. Invalid snapshots, replayed plan revisions, malformed
+readiness and identity/clock regressions remain rejected.
 
-```
-cd atlas_multiplayer
+The five-second departure uses estimated host transport time. It is advisory, not
+clock synchronization for physics and not a competitive race start. No new vessel
+step, model/controller changes, captain implementation or collision physics.
+
+## Verification
+
+Run from `atlas_multiplayer`:
+
+```sh
 node --experimental-vm-modules --test play/tests/*.test.mjs
+node --test play/tests/tcp-eight.test.mjs
 ```
 
-45/45 PASS, twice. The original 24 checks remain with version-2 hello fixtures,
-explicit leave semantics, a fuller synthetic DOM, and an interpolation test that
-waits for actual translated poses rather than merely roster length. Added cases
-cover eight simultaneous adapters, 56 remote views, ninth rejection, reconnect,
-secret/identity/replay gates, stalled peers, host departure, safe roster rendering,
-and usable startup controls.
+Final **57/57 PASS twice**, against the actual local source; baseline P3 was45/45.
+Actual loopback TCP: eight adapters/controllers see all56 moving remote views,
+ninth admission rejects, same boat resumes. The added eight-client TCP case verifies
+shared destination, all8 ready acknowledgements, common departure, guest command
+refusal, preserved target/identity/slot after interruption and no boat writes from
+crew commands. Transport is an explicit native Node TCP Peer-compatible test shim,
+NOT a native browser, public signaling, ICE or WebRTC test. Pure protocol/navigation,
+actual app lifecycle with synthetic DOM/render boundaries and real original bundled
+Three.js marker construction are separately covered. No screenshots/GPU claim.
 
-`tcp-eight.test.mjs` runs eight independent adapters and controllers over real
-Node loopback TCP sockets. It verifies horizontally moving poses in all 56 remote
-views, ninth refusal, same-identity reconnect without respawn, and seat release.
-**It is not WebRTC, cloud signaling, eight browsers, GPUs, or eight devices.**
-In-memory fault tests are separately named. Baseline red tests (2/2 failed) and
-final/repeat logs are retained in the P3 evidence handoff.
-
-No browser, alternate navigation, runner search, workflow/dispatch, policy change,
-CORE/yacht/HUMANS edit or dedicated-backend deployment was performed. The earlier
-Node/ws lockfile/audit and hosted-service gates remain untouched. This peer build
-is separate from both that Node service and integrated SeaLab multiplayer.
-
-## Remaining acceptance
-
-Open the exact published revision on eight actual browsers/devices; verify the
-public HTML/modules/model/library, real signaling/ICE and all 56 moving remote
-views. Test invite copy/share, typed names, keyboard/touch, chart/3D, one guest's
-network interruption, a full-room refusal, and host departure on different networks.
-Record screenshots, browser errors, selected ICE route, session duration and actual
-connected count; do not infer this from Node tests. Public static serving itself
-must also be checked before calling this a verified live release.
+Read `REPORT.json` and `evidence/p4/tcp-eight.tap`. Complete outputs/manifests are in
+the conversation handoff. Public HTTP tool inspection was inaccessible; no delivery
+or connection result was inferred. No browser-policy change, workflow/dispatch,
+runner search, service, credentials, permissions, purchase or account change.

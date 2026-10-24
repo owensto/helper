@@ -1,92 +1,89 @@
 {
-  "iteration": "P3",
-  "application": "Atlas D Open Water \u2014 Crew 8",
-  "sourceParentSHA": "599e1aff5032271bbfe4b0f7a2c0c01deb9884e7",
-  "branch": "atlas-d/multiplayer-chat3",
-  "ownership": "atlas_multiplayer/play/**",
-  "status": "CODE_AND_TCP_PASS_NATIVE_EIGHT_BROWSER_UNVERIFIED",
-  "testedAtUTC": "2026-10-24T00:06:14.306362+00:00",
-  "capacity": {
-    "total": 8,
-    "host": 1,
-    "guests": 7
-  },
-  "protocol": "atlas-browser-room-2",
+  "iteration": "P4",
+  "product": "Crew 8 Rally",
+  "sourceParentSHA": "7e61ac3d1e04c22a048894ee22ec832e5c1ac43c",
+  "status": "SOURCE_TESTED_PUBLIC_BROWSER_UNVERIFIED",
+  "testedAtUTC": "2026-10-24T00:31:06.362819+00:00",
+  "protocol": "atlas-browser-room-3",
+  "capacity": 8,
+  "changes": [
+    "Shared immutable buoy/harbor destinations",
+    "Per-captain ready acknowledgements",
+    "Host-only five-second advisory departure",
+    "Canceled countdown on pre-departure interruption",
+    "Destination retained through same-page seat resume",
+    "Teammate/destination bearing and distance HUD",
+    "Chart direction line and 3D destination beacon"
+  ],
+  "authority": "Navigation and membership only. Crew commands never step, steer, place or reset boats.",
   "tests": {
-    "final": {
-      "passed": 45,
-      "failed": 0
-    },
-    "repeat": {
-      "passed": 45,
-      "failed": 0
-    },
-    "baselineFocused": {
-      "passed": 0,
-      "failed": 2
-    }
+    "baseline": 45,
+    "final": 57,
+    "repeat": 57,
+    "failed": 0,
+    "tcpCases": 2,
+    "newTests": 12
   },
-  "tcpEvidence": {
-    "clients": 8,
-    "remoteViews": 56,
-    "ninthRejected": true,
-    "sameIdentityResumed": true,
-    "frames": 407,
-    "bytes": 749216,
-    "maxBytes": 3822,
-    "scope": "native Node loopback TCP, not browser/WebRTC/cloud"
+  "evidenceScope": {
+    "actualNodeTCP": true,
+    "tcpClients": 8,
+    "movingRemoteViews": 56,
+    "newCrewTCPCaptains": 8,
+    "nativeWebRTC": false,
+    "nativeBrowsers": false,
+    "publicDeliveryVerified": false,
+    "gpuRendering": false
   },
-  "reproducedDefect": "One guest send exception ended the entire host room. Contained to that channel.",
-  "newCapabilities": [
-    "eight-seat live roster with host/self, colors and visibility state",
-    "same-page same-identity reconnect reservation for 30 seconds",
-    "bounded retries with no duplicate respawn",
-    "isolated guest failures, stale updates and backpressure",
-    "invitation sharing, latency, take-the-helm focus, optional screen wake lock",
-    "numbered names in chart and 3D labels"
+  "newCrewTCP": {
+    "sharedDestination": true,
+    "readyAcknowledged": 8,
+    "commonDeparture": true,
+    "guestHostCommandRefused": true,
+    "sameIdentityAndSlotResume": true,
+    "boatWritesFromCrewCommands": 0
+  },
+  "testFailureHistory": [
+    "Initial 44/45: inherited prior-version test literally replaced v=2 after protocol moved to v=3. Updated only that fixture to corrupt current v=3 to old v=2; rejection assertion unchanged.",
+    "Subsequent 55/55 then final 57/57 twice."
   ],
-  "failureLedger": [
-    "The initial memory harness advanced bobbing without starting engines; corrected to power all eight and require horizontal translation in all 56 views before final runs.",
-    "An inherited interpolation test waited only for roster length and asserted a prior pose. Retained failure; now waits boundedly for the same required translated pose. No interpolation gate removed."
+  "limitations": [
+    "Public page inspection via web tool inaccessible; no public serving/browser pass.",
+    "Existing managed browser policy not changed; no browser or alternate runner launched.",
+    "Peer host must stay open and visible; no migration or guaranteed public relay.",
+    "Countdown uses network-arrival estimate; not a synchronized physics clock or racing authority.",
+    "Arrival count is recent reported proximity, not a validated score.",
+    "Original user-specific 3D failure remains unknown; chart fallback unchanged.",
+    "No dedicated Node backend deployment or production dependency certification."
   ],
-  "limits": [
-    "Native browser/public WebRTC/cloud/ICE/eight-device/GPU acceptance NOT RUN",
-    "Original reported 3D exception still unknown; chart fallback and exact original asset preserved",
-    "Browser host must stay open/visible; no host migration or persistence",
-    "No refresh resume; expired reservations need fresh join",
-    "Free public signaling/relay availability unverified",
-    "Dedicated Node service not deployed; its ws pin/lock/audit gates unchanged"
-  ],
-  "newServicesOrCredentialsOrBilling": false,
-  "browserOrWorkflowOrRunnerSearch": false,
-  "evidenceFiles": {
-    "before.tap": {
-      "bytes": 2045,
-      "sha256": "680fae03dec9bdc54ed34c0e0be51844e5cb8c0aeb4cb2c68f5aeff0fd31cd62"
+  "ownership": "atlas_multiplayer/play/** only; no CORE, SeaLab, yacht, HUMANS, workflows, services or account changes",
+  "artifacts": {
+    "baseline.tap": {
+      "bytes": 10103,
+      "sha256": "2a7c992d2cde9ba6fdd887340effd716acdc3a64f3caa915e5d1f326db774977"
     },
     "final.tap": {
-      "bytes": 10096,
-      "sha256": "475ada53bfb1165683c8fe6b595e175e0f3c181eac2ed891b92352b132b422c1"
+      "bytes": 13232,
+      "sha256": "f384bbffb0b3ee28f0be4974bb70484660564a1ce3650ae85e36281e480ba94c"
+    },
+    "repeat.tap": {
+      "bytes": 13232,
+      "sha256": "d680bccd2d3535677f9179324abdc67118986d5e7017d1ee00990bb5357752c0"
+    },
+    "tcp-eight.tap": {
+      "bytes": 1114,
+      "sha256": "fbc457f727a5ece7850bf4a53ec854ea9148f066258adfcc8c954a37d2d88859"
     },
     "final.stderr": {
       "bytes": 0,
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     },
-    "repeat.tap": {
-      "bytes": 10097,
-      "sha256": "dd0bb29201f2a69eb61a618eaa969839c1790384e5fb299004644ef53e32c7c7"
-    },
     "repeat.stderr": {
       "bytes": 0,
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     },
-    "tcp-eight.tap": {
-      "bytes": 569,
-      "sha256": "b6ba6a3613c4a7bd8e86cb74f982f2f106d0ec82e21762cb62c4225d96e0736e"
-    },
-    "interim-test-timing.tap": {
-      "bytes": 10721,
-      "sha256": "8d20a6c62ec8be37379d6bde533dff203432bdcc8b119703d2bcdcce95970f02"
+    "interim-v2-invite-test.tap": {
+      "bytes": 10626,
+      "sha256": "068e171c1c10ef957a3e8f2f1ce603682084d818bcb61fee671a17d9b137f0c5"
     }
   }
 }

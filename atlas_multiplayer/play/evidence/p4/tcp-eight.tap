@@ -1,0 +1,24 @@
+TAP version 13
+# EIGHT_TCP_EVIDENCE {"clients":8,"remoteViews":56,"ninthRejected":true,"sameIdentityResumed":true,"frames":423,"bytes":831819,"maxBytes":4118,"scope":"native Node loopback TCP, not browser/WebRTC/cloud"}
+# Subtest: eight real TCP clients: 56 moving remote views, ninth refusal and same-boat reconnect
+ok 1 - eight real TCP clients: 56 moving remote views, ninth refusal and same-boat reconnect
+  ---
+  duration_ms: 3082.325905
+  type: 'test'
+  ...
+# CREW_RALLY_TCP {"clients":8,"sharedDestination":true,"readyAcknowledged":8,"commonDeparture":true,"guestHostCommandRefused":true,"reconnectPreserved":true,"boatWritesFromCrewCommands":0,"frames":174,"bytes":259152,"maxBytes":3433,"scope":"real loopback TCP, not browser/WebRTC"}
+# Subtest: eight TCP captains share ready/rally/departure, deny guest control and keep target on reconnect
+ok 2 - eight TCP captains share ready/rally/departure, deny guest control and keep target on reconnect
+  ---
+  duration_ms: 1262.105763
+  type: 'test'
+  ...
+1..2
+# tests 2
+# suites 0
+# pass 2
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 4399.268586
