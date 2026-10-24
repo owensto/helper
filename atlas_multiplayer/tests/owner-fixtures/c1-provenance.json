@@ -1,0 +1,20 @@
+{
+  "scope": "C1 reader shape and owner decisions consumed; runtime samples in tests are explicitly synthetic, not captured vessel motion",
+  "source_sha": "36903985f2182c902427fed77d4e28c61a7639ca",
+  "files": {
+    "atlas_sealab_12/integration/c1/descriptor.json": "30affbbcc2b04d8b8e78a07206cb9eab9c2af2f7",
+    "atlas_sealab_12/integration/c1/host-hooks.js": "458a40ffb79be48c43a1190f2e5722112f8bfb99",
+    "atlas_sealab_12/integration/c1/HANDOFF.md": "cf775a9d7ccf3f9916d24c0a2e26d3081b0f76a1"
+  },
+  "baseline_public_sha": "a2d4eecc12e7b4db14c7f94a6f6fc5088a4061ff",
+  "descriptor_revision": "sealab12-core-integration/1.0.0",
+  "receiving_scope": "read-only pose normalization and epoch/world invalidation; no activated CORE frontend, no spawn/restore writes or human module",
+  "world_axes": {
+    "east": "+X",
+    "up": "+Y",
+    "south": "+Z"
+  },
+  "quaternion": "actual render transform, XYZW; no Euler remapping",
+  "rpm": "C1 readPose omits rpm; network represents unavailable reading as null",
+  "restore": "same-adapter local token only, never sent to transport; current C1 local spawn/restore increments epoch and invalidates old tokens"
+}

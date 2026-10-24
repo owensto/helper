@@ -1,0 +1,38 @@
+/** VM + synthetic DOM/render boundaries: real app lifecycle, NOT browser/GPU proof. */
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+import {webcrypto} from 'node:crypto';
+import vm from 'node:vm';
+const root=new URL('../',import.meta.url);
+async function launch({failure=Error('MODEL_HTTP_404'),success=false,mode='solo',session=null}={}){
+ const html=readFileSync(new URL(mode==='solo'?'index.html':'multiplayer.html',root),'utf8');
+ const ids=[...html.matchAll(/id="([^"]+)"/g)].map(m=>m[1]);const nodes=new Map();let chartDraws=0,graphicsCalls=0,peerCreations=0,focused=null;let raf=null,peerInstance=null,crewCommands=[];
+ for(const id of ids)nodes.set(id,{id,hidden:['sea','rooms'].includes(id),value:'',style:{},textContent:'',disabled:false,open:false,listeners:{},children:[],setAttribute(){},replaceChildren(...c){this.children=c;},classList:{remove(){},add(){}},addEventListener(n,f){this.listeners[n]=f;},focus(){focused=id;},select(){},click(){this.onclick?.();this.listeners.click?.();}});
+ const events={},ctx=vm.createContext({console,crypto:webcrypto,TextEncoder,TextDecoder,URL,URLSearchParams,AbortController,structuredClone,performance,setTimeout,clearTimeout,setInterval,clearInterval,document:{createElement:()=>({textContent:"",children:[],append(...c){this.children.push(...c);}}),createDocumentFragment:()=>({children:[],append(...c){this.children.push(...c);}}),body:{dataset:{mode}},hidden:false,getElementById:id=>{assert.ok(nodes.has(id),`missing DOM ${id}`);return nodes.get(id);},querySelectorAll:()=>[],addEventListener:(n,f)=>events['document:'+n]=f},location:{href:'https://test.invalid/play/index.html',hash:''},navigator:{clipboard:{writeText:async()=>{}}},addEventListener:(n,f)=>events[n]=f,requestAnimationFrame:f=>{raf=f;return 1;},cancelAnimationFrame:()=>{raf=null;}});ctx.window=ctx;
+ const graphics=new vm.SyntheticModule(['drawChart','createGraphics'],function(){this.setExport('drawChart',()=>chartDraws++);this.setExport('createGraphics',async(_,status)=>{graphicsCalls++;status('Downloading original boat');if(!success)throw failure;return {draw(){},dispose(){}};});},{context:ctx});
+ const peers=new vm.SyntheticModule(['PeerRoom'],function(){this.setExport('PeerRoom',class{constructor({onState}){this.info={state:'solo',players:1,message:'Solo sailing'};this.link='';this.onState=onState;peerInstance=this;}navigation(){return {plan:{destination:null,departAt:null,revision:0},destination:null};}command(action,value){crewCommands.push({action,value});return true;}remotes(){return [];}start(){peerCreations++;return Promise.resolve();}leave(){}});},{context:ctx});
+ const cache=new Map();
+ async function load(url){if(cache.has(url.href))return cache.get(url.href);const source=readFileSync(url,'utf8'),m=new vm.SourceTextModule(source,{context:ctx,identifier:url.href,initializeImportMeta:meta=>meta.url=url.href});cache.set(url.href,m);await m.link((spec,mod)=>{if(spec==='./graphics.mjs')return graphics;if(spec==='./peer-room.mjs')return peers;return load(new URL(spec,mod.identifier));});return m;}
+ const app=await load(new URL('app.mjs',root));await app.evaluate();await new Promise(resolve=>setImmediate(resolve));
+ if(session){peerInstance.info=session;peerInstance.onState(session);}
+ return {ctx,nodes,events,crewCommands,peerInstance,counts:()=>({chartDraws,graphicsCalls,peerCreations}),focus:()=>focused,frame:time=>{assert.ok(raf);const f=raf;raf=null;f(time);},close:()=>events.pagehide()};
+}
+test('model 404 keeps real app loop and controls active in chart mode; precise diagnostic visible',async()=>{const a=await launch();try{assert.equal(a.nodes.get('starting').hidden,true);assert.equal(a.ctx.ATLAS_OPEN_WATER.inspect().renderer,'chart');assert.match(a.nodes.get('visualStatus').textContent,/MODEL_HTTP_404/);const old=a.ctx.ATLAS_OPEN_WATER.inspect().pose.p[0];a.events.keydown({code:'KeyW',target:{closest:()=>null},preventDefault(){},repeat:false});for(let i=1;i<=180;i++)a.frame(i*1000/60);assert.ok(a.ctx.ATLAS_OPEN_WATER.inspect().pose.p[0]>old);assert.ok(a.counts().chartDraws>100);assert.equal(a.counts().peerCreations,0);}finally{a.close();}});
+test('renderer-construction error is scoped to graphics, not whole game',async()=>{const a=await launch({failure:Error('Error creating WebGL context.')});try{a.frame(1000);assert.equal(a.nodes.get('sea').hidden,true);assert.equal(a.nodes.get('chart').hidden,false);assert.match(a.nodes.get('visualStatus').textContent,/Chart view is still playable/);}finally{a.close();}});
+test('successful graphics upgrade preserves helm focus and chart toggle',async()=>{const a=await launch({success:true});try{a.frame(1000);assert.equal(a.nodes.get('sea').hidden,false);a.nodes.get('power').click();assert.equal(a.focus(),'sea');a.nodes.get('visual').click();a.frame(1017);assert.equal(a.nodes.get('chart').hidden,false);assert.equal(a.ctx.ATLAS_OPEN_WATER.inspect().renderer,'chart');}finally{a.close();}});
+test('multiplayer entry shows room controls but does not contact signaling before user action',async()=>{const a=await launch({mode:'multiplayer'});try{assert.equal(a.nodes.get('rooms').hidden,false);assert.equal(a.counts().peerCreations,0);a.nodes.get('createRoom').click();assert.equal(a.counts().peerCreations,1);}finally{a.close();}});
+test('solo diagnostics never contain invitation keys or host identities',async()=>{const a=await launch();try{const d=JSON.stringify(a.ctx.ATLAS_OPEN_WATER.inspect());assert.ok(!d.includes('key'));assert.ok(!d.includes('ow-'));assert.equal(a.ctx.ATLAS_OPEN_WATER.inspect().seaLabIntegrated,false);}finally{a.close();}});
+test('room panel blocks hidden steering and the sail button restores canvas focus',async()=>{const a=await launch({mode:'multiplayer'});try{const before=a.ctx.ATLAS_OPEN_WATER.inspect().pose.p[0];a.events.keydown({code:'KeyW',target:{closest:()=>null},preventDefault(){},repeat:false});for(let i=1;i<120;i++)a.frame(i*1000/60);assert.equal(a.ctx.ATLAS_OPEN_WATER.inspect().pose.p[0],before);a.nodes.get('closeRooms').click();assert.equal(a.focus(),'chart');assert.equal(a.nodes.get('rooms').hidden,true);}finally{a.close();}});
+test('empty Join never accidentally creates a room or contacts signaling',async()=>{const a=await launch({mode:'multiplayer'});try{a.nodes.get('joinRoom').click();assert.equal(a.counts().peerCreations,0);assert.match(a.nodes.get('roomStatus').textContent,/invitation/);}finally{a.close();}});
+
+test('actual group UI wires ready, target and departure; select typing never steers boat',async()=>{
+ const session={state:'hosting',message:'Ready',players:2,connected:2,plan:{revision:1,destination:'buoy-1',departAt:null},roster:[{id:'host',slot:0,name:'Host',self:true,host:true,ready:true,connected:true,visible:true},{id:'guest',slot:1,name:'Crew',self:false,host:false,ready:true,connected:true,visible:true}]};
+ const a=await launch({mode:'multiplayer',session});try{
+  assert.equal(a.nodes.get('crewPlan').hidden,false);assert.equal(a.nodes.get('departCrew').disabled,false);
+  a.nodes.get('rallyChoice').value='harbor';a.nodes.get('setRally').click();a.nodes.get('readyCrew').click();a.nodes.get('departCrew').click();
+  assert.deepEqual(a.crewCommands,[{action:'destination',value:'harbor'},{action:'ready',value:false},{action:'depart',value:undefined}]);
+  a.nodes.get('closeRooms').click();const old=a.ctx.ATLAS_OPEN_WATER.inspect().pose.p[0];
+  a.events.keydown({code:'KeyW',target:{closest:()=>({tagName:'SELECT'})},preventDefault(){},repeat:false});for(let i=1;i<120;i++)a.frame(i*1000/60);assert.equal(a.ctx.ATLAS_OPEN_WATER.inspect().pose.p[0],old);
+ }finally{a.close();}
+});

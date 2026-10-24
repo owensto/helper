@@ -1,0 +1,26 @@
+{
+  "owner": "CORE",
+  "scope": "Read-only exact original source copies; M6 successful attach/receiver execution BLOCKED",
+  "ownerSourceSHA": "36903985f2182c902427fed77d4e28c61a7639ca",
+  "ownerRevision": "sealab12-core-integration/1.0.0",
+  "baselinePublicSHA": "a2d4eecc12e7b4db14c7f94a6f6fc5088a4061ff",
+  "retrievedVia": "GitHub connector fetch_file at immutable ref; local copies checked against Git blob and SHA256",
+  "files": {
+    "descriptor.json": {
+      "repositoryPath": "atlas_sealab_12/integration/c1/descriptor.json",
+      "gitBlob": "30affbbcc2b04d8b8e78a07206cb9eab9c2af2f7",
+      "sha256": "851b0932720fcfbec786778cc71a9c76fecd4b1a96e322872b3574c6c7f41db3",
+      "bytes": 8065
+    },
+    "host-hooks.cjs": {
+      "repositoryPath": "atlas_sealab_12/integration/c1/host-hooks.js",
+      "gitBlob": "458a40ffb79be48c43a1190f2e5722112f8bfb99",
+      "sha256": "ad928f37dbfde0de2455a52744377a417a117c71c1a04f483283482d5728d9a1",
+      "bytes": 13834
+    }
+  },
+  "hostAssets": "All 20 are required from original baseline; none copied or replaced. See descriptor.json hostFiles.",
+  "sourceMutations": false,
+  "hashSubstitution": false,
+  "browserExecution": false
+}

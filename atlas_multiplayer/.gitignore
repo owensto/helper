@@ -1,0 +1,7 @@
+node_modules/
+.cache/
+__pycache__/
+
+dist-standalone/
+standalone/__pycache__/
+.netlify/

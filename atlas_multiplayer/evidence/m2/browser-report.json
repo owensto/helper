@@ -1,0 +1,26 @@
+{
+  "suite": "two-independent-browser-fixture",
+  "status": "BLOCKED_BROWSER_POLICY",
+  "source_parent_sha": "c6b88fc1c3bc9df9979bf1d91d7fb04bec049b17",
+  "fixture_only": true,
+  "pinned_transport_certified": false,
+  "integrated_Sea_Lab_12_regression": "NOT_RUN",
+  "public_multiplayer": "NOT_LIVE",
+  "checks": [],
+  "screenshots": [],
+  "page_errors": [],
+  "diagnostic_bundle_sha256": "6883cf83e2097e5029cce0763832338534a9e1c8e97bf62ca2f083b238613a49",
+  "chromium_versions": [
+    "144.0.7559.96",
+    "144.0.7559.96"
+  ],
+  "failure": {
+    "type": "Error",
+    "message": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at http://127.0.0.1:33635/tests/fixtures/index.html?noimport=1\nCall log:\n  - navigating to \"http://127.0.0.1:33635/tests/fixtures/index.html?noimport=1\", waiting until \"load\"\n"
+  },
+  "requested_browser_processes": 2,
+  "launched_browser_processes": 2,
+  "independent_browser_motion_verified": false,
+  "browser_policy_changed": false,
+  "policy_diagnostic": "Read-only: managed URLBlocklist [\"*\"]"
+}

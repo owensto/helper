@@ -1,0 +1,48 @@
+{
+  "iteration": "M1",
+  "source_parent_sha": "98f535cf7d01ba8a5cde8acfc4d3378990dbd77e",
+  "status": "DIAGNOSTIC_PASS_RELEASE_BLOCKED",
+  "node": "v22.16.0",
+  "source_zip_code_config_blobs_match_remote": true,
+  "unit_tests": {
+    "passed": 18,
+    "failed": 0
+  },
+  "socket_tests": {
+    "passed": 12,
+    "failed": 0,
+    "real_tcp_websocket_connections": true,
+    "transport": "Preinstalled Playwright bundled ws; NOT certified ws@8.22.0",
+    "playwright_package_version": "1.57.0-beta-1764944708000",
+    "bundle_sha256": "6883cf83e2097e5029cce0763832338534a9e1c8e97bf62ca2f083b238613a49",
+    "scenarios": [
+      "bidirectional poses and room isolation",
+      "HTTP health and route restriction",
+      "absent/hostile/lookalike origin rejection",
+      "resume identity/pose/sequence without duplication",
+      "active-session takeover rejected",
+      "malformed JSON/null/binary/invalid transforms",
+      "oversized frame close 1009",
+      "ownership spoof rejected",
+      "protocol/world/invite mismatch",
+      "capacity and explicit leave",
+      "rate flood and warning-free close",
+      "bounded shutdown"
+    ]
+  },
+  "bug_fixed": "Repeated close timers/listeners after flood rejection; idempotent close and ignore further inbound frames while closing",
+  "regression_before_fix": "MaxListenersExceededWarning",
+  "regression_after_fix": "30/30 tests passed; no warnings",
+  "pinned_dependency": {
+    "version": "8.22.0",
+    "upstream_package_blob": "3dad931c4bbc5086b58c21b6503a6ae7adb455ff",
+    "upstream_release_confirmed": true,
+    "registry_install": "BLOCKED_EAI_AGAIN",
+    "lockfile": "NOT_GENERATED",
+    "audit": "BLOCKED_ENOLOCK",
+    "release_gate": "FAIL_CLOSED"
+  },
+  "production_world_agreement": "PENDING_CORE",
+  "public_multiplayer": "NOT_LIVE",
+  "next": "Descriptor-injected browser adapter and independent-browser fixture tests; do not wire Sea Lab 11 into CORE."
+}

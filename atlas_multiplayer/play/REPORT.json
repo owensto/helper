@@ -1,0 +1,89 @@
+{
+  "iteration": "P4",
+  "product": "Crew 8 Rally",
+  "sourceParentSHA": "7e61ac3d1e04c22a048894ee22ec832e5c1ac43c",
+  "status": "SOURCE_TESTED_PUBLIC_BROWSER_UNVERIFIED",
+  "testedAtUTC": "2026-10-24T00:31:06.362819+00:00",
+  "protocol": "atlas-browser-room-3",
+  "capacity": 8,
+  "changes": [
+    "Shared immutable buoy/harbor destinations",
+    "Per-captain ready acknowledgements",
+    "Host-only five-second advisory departure",
+    "Canceled countdown on pre-departure interruption",
+    "Destination retained through same-page seat resume",
+    "Teammate/destination bearing and distance HUD",
+    "Chart direction line and 3D destination beacon"
+  ],
+  "authority": "Navigation and membership only. Crew commands never step, steer, place or reset boats.",
+  "tests": {
+    "baseline": 45,
+    "final": 57,
+    "repeat": 57,
+    "failed": 0,
+    "tcpCases": 2,
+    "newTests": 12
+  },
+  "evidenceScope": {
+    "actualNodeTCP": true,
+    "tcpClients": 8,
+    "movingRemoteViews": 56,
+    "newCrewTCPCaptains": 8,
+    "nativeWebRTC": false,
+    "nativeBrowsers": false,
+    "publicDeliveryVerified": false,
+    "gpuRendering": false
+  },
+  "newCrewTCP": {
+    "sharedDestination": true,
+    "readyAcknowledged": 8,
+    "commonDeparture": true,
+    "guestHostCommandRefused": true,
+    "sameIdentityAndSlotResume": true,
+    "boatWritesFromCrewCommands": 0
+  },
+  "testFailureHistory": [
+    "Initial 44/45: inherited prior-version test literally replaced v=2 after protocol moved to v=3. Updated only that fixture to corrupt current v=3 to old v=2; rejection assertion unchanged.",
+    "Subsequent 55/55 then final 57/57 twice."
+  ],
+  "limitations": [
+    "Public page inspection via web tool inaccessible; no public serving/browser pass.",
+    "Existing managed browser policy not changed; no browser or alternate runner launched.",
+    "Peer host must stay open and visible; no migration or guaranteed public relay.",
+    "Countdown uses network-arrival estimate; not a synchronized physics clock or racing authority.",
+    "Arrival count is recent reported proximity, not a validated score.",
+    "Original user-specific 3D failure remains unknown; chart fallback unchanged.",
+    "No dedicated Node backend deployment or production dependency certification."
+  ],
+  "ownership": "atlas_multiplayer/play/** only; no CORE, SeaLab, yacht, HUMANS, workflows, services or account changes",
+  "artifacts": {
+    "baseline.tap": {
+      "bytes": 10103,
+      "sha256": "2a7c992d2cde9ba6fdd887340effd716acdc3a64f3caa915e5d1f326db774977"
+    },
+    "final.tap": {
+      "bytes": 13232,
+      "sha256": "f384bbffb0b3ee28f0be4974bb70484660564a1ce3650ae85e36281e480ba94c"
+    },
+    "repeat.tap": {
+      "bytes": 13232,
+      "sha256": "d680bccd2d3535677f9179324abdc67118986d5e7017d1ee00990bb5357752c0"
+    },
+    "tcp-eight.tap": {
+      "bytes": 1114,
+      "sha256": "fbc457f727a5ece7850bf4a53ec854ea9148f066258adfcc8c954a37d2d88859"
+    },
+    "final.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "repeat.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "interim-v2-invite-test.tap": {
+      "bytes": 10626,
+      "sha256": "068e171c1c10ef957a3e8f2f1ce603682084d818bcb61fee671a17d9b137f0c5"
+    }
+  }
+}

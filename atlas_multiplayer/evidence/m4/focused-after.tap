@@ -1,0 +1,107 @@
+TAP version 13
+# DIAGNOSTIC TRANSPORT ONLY — not ws@8.22.0 certification. Bundle SHA256: 6883cf83e2097e5029cce0763832338534a9e1c8e97bf62ca2f083b238613a49
+# Subtest: render callback failure cannot escape the host frame loop
+ok 1 - render callback failure cannot escape the host frame loop
+  ---
+  duration_ms: 230.689344
+  type: 'test'
+  ...
+# Subtest: observer mutation cannot corrupt another subscriber or the network cursor
+ok 2 - observer mutation cannot corrupt another subscriber or the network cursor
+  ---
+  duration_ms: 225.932582
+  type: 'test'
+  ...
+# Subtest: throwing optional status sink is disabled and recorded without disrupting motion
+ok 3 - throwing optional status sink is disabled and recorded without disrupting motion
+  ---
+  duration_ms: 186.210257
+  type: 'test'
+  ...
+# Subtest: throwing subscriber is detached once and healthy subscribers still receive state
+ok 4 - throwing subscriber is detached once and healthy subscribers still receive state
+  ---
+  duration_ms: 235.505878
+  type: 'test'
+  ...
+# Subtest: remote removal failure is surfaced as incomplete cleanup, not successful departure
+ok 5 - remote removal failure is surfaced as incomplete cleanup, not successful departure
+  ---
+  duration_ms: 208.503276
+  type: 'test'
+  ...
+# Subtest: throwing exit callback is contained, attempted once and blocks unsafe reuse
+ok 6 - throwing exit callback is contained, attempted once and blocks unsafe reuse
+  ---
+  duration_ms: 4.827987
+  type: 'test'
+  ...
+# Subtest: render failure still attempts all cleanup hooks without recursive teardown
+ok 7 - render failure still attempts all cleanup hooks without recursive teardown
+  ---
+  duration_ms: 109.753093
+  type: 'test'
+  ...
+# Subtest: prepare exception cannot leak host-controlled error codes
+ok 8 - prepare exception cannot leak host-controlled error codes
+  ---
+  duration_ms: 9.023849
+  type: 'test'
+  ...
+# Subtest: disposed adapter rejects new connections and remains inert
+ok 9 - disposed adapter rejects new connections and remains inert
+  ---
+  duration_ms: 9.022296
+  type: 'test'
+  ...
+# Subtest: asynchronous read hook is observed, contained and cannot report clean teardown
+ok 10 - asynchronous read hook is observed, contained and cannot report clean teardown
+  ---
+  duration_ms: 139.161405
+  type: 'test'
+  ...
+# Subtest: asynchronous render hook is observed, contained and cannot report clean teardown
+ok 11 - asynchronous render hook is observed, contained and cannot report clean teardown
+  ---
+  duration_ms: 136.263866
+  type: 'test'
+  ...
+# Subtest: asynchronous remove hook is observed, contained and cannot report clean teardown
+ok 12 - asynchronous remove hook is observed, contained and cannot report clean teardown
+  ---
+  duration_ms: 232.95206
+  type: 'test'
+  ...
+# Subtest: asynchronous exit hook is observed, contained and cannot report clean teardown
+ok 13 - asynchronous exit hook is observed, contained and cannot report clean teardown
+  ---
+  duration_ms: 135.15174
+  type: 'test'
+  ...
+# Subtest: asynchronous optional sink and observer reject once without unhandled rejection or outage
+ok 14 - asynchronous optional sink and observer reject once without unhandled rejection or outage
+  ---
+  duration_ms: 235.183169
+  type: 'test'
+  ...
+# Subtest: optional status getter failure is redacted and cannot prevent connection
+ok 15 - optional status getter failure is redacted and cannot prevent connection
+  ---
+  duration_ms: 135.848663
+  type: 'test'
+  ...
+# Subtest: C1 reader rejection codes remain specific but private details are not leaked
+ok 16 - C1 reader rejection codes remain specific but private details are not leaked
+  ---
+  duration_ms: 54.757581
+  type: 'test'
+  ...
+1..16
+# tests 16
+# suites 0
+# pass 16
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 2453.253666

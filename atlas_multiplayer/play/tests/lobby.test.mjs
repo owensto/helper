@@ -1,0 +1,10 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {rosterView,roomSummary,renderRoster} from '../lobby-ui.mjs';
+import {COLORS} from '../protocol.mjs';
+const roster=()=>Array.from({length:8},(_,slot)=>({slot,name:'Captain '+slot,id:'id'+slot,host:slot===0,self:slot===3,connected:true,visible:true}));
+test('lobby exposes eight distinct seat colors, host and self',()=>{const rows=rosterView({roster:roster()});assert.equal(rows.length,8);assert.equal(new Set(rows.map(x=>x.color)).size,8);assert.equal(rows[0].status,'Host');assert.match(rows[3].name,/\(you\)/);});
+test('connected count never presents a reserved or background player as active',()=>{const players=roster();players[4].connected=false;players[6].visible=false;const v=rosterView({roster:players});assert.equal(v[4].status,'Reconnecting');assert.equal(v[6].status,'Tab in background');assert.equal(roomSummary({state:'connected',players:8,connected:7}),'7 / 8 connected · 1 reserved');});
+test('solo and failed connection are not represented as an online room',()=>{for(const state of ['solo','error'])assert.equal(roomSummary({state,players:1,connected:1}),'Not in a room');assert.ok(rosterView({roster:[]}).every(x=>!x.occupied&&x.name==='Open seat'));});
+test('roster renderer uses text nodes, never HTML insertion for player names',()=>{const created=[];const create=()=>{const x={children:[],textContent:'',append(...nodes){this.children.push(...nodes);}};Object.defineProperty(x,'innerHTML',{set(){assert.fail('HTML insertion');}});created.push(x);return x;};const doc={createElement:create,createDocumentFragment:create},root={replaceChildren(fragment){this.fragment=fragment;}};const r=roster();r[2].name='<img src=x onerror=alert(1)>';renderRoster(doc,root,{roster:r});assert.equal(root.fragment.children.length,8);assert.ok(created.some(n=>n.textContent===r[2].name));assert.ok(root.fragment.children.every((n,i)=>n.className.includes(`seat-${i}`)));});
+test('palette is immutable and independent of inbound CSS',()=>{assert.ok(Object.isFrozen(COLORS));assert.throws(()=>{COLORS[0]='bad';});assert.ok(COLORS.every(c=>/^#[0-9a-f]{6}$/.test(c)));});

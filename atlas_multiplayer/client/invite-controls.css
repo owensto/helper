@@ -1,0 +1,7 @@
+[data-atlas-mp]{font:14px/1.4 system-ui,sans-serif;color:#edf5ff;background:#132432;border:1px solid #3d5264;border-radius:12px;padding:14px;width:min(320px,calc(100vw - 48px));box-sizing:border-box;box-shadow:0 8px 24px #0003}
+[data-atlas-mp] summary{font-size:18px;font-weight:700;cursor:pointer;min-height:28px}
+[data-atlas-mp] label{display:block;margin-top:10px}[data-atlas-mp] input{display:block;box-sizing:border-box;width:100%;min-height:42px;border:1px solid #617b8d;border-radius:6px;background:#091722;color:#edf5ff;padding:8px;font:inherit}
+[data-atlas-mp] button{min-height:44px;border:1px solid #87c6e1;border-radius:6px;background:#215675;color:#fff;padding:7px 12px;margin-top:8px;font:inherit;cursor:pointer}
+[data-atlas-mp] button:disabled{opacity:.5;cursor:default}[data-atlas-mp] :focus-visible{outline:3px solid #f5d87d;outline-offset:2px}
+[data-atlas-mp] .mp-actions{display:flex;gap:8px;flex-wrap:wrap}[data-atlas-mp] .mp-scope{font-size:12px;color:#bed0dd}[data-atlas-mp] .mp-error{color:#ffc1b6}[data-atlas-mp] .mp-copy-hint{font-size:12px}[data-atlas-mp] .mp-roster{padding-left:18px;max-height:160px;overflow:auto}
+[data-atlas-mp] .mp-share{font-size:12px}[data-atlas-mp] p:empty{display:none}
