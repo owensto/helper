@@ -1,0 +1,17 @@
+TAP version 13
+# EIGHT_TCP_EVIDENCE {"clients":8,"remoteViews":56,"ninthRejected":true,"sameIdentityResumed":true,"frames":407,"bytes":749271,"maxBytes":3822,"scope":"native Node loopback TCP, not browser/WebRTC/cloud"}
+# Subtest: eight real TCP clients: 56 moving remote views, ninth refusal and same-boat reconnect
+ok 1 - eight real TCP clients: 56 moving remote views, ninth refusal and same-boat reconnect
+  ---
+  duration_ms: 2970.889171
+  type: 'test'
+  ...
+1..1
+# tests 1
+# suites 0
+# pass 1
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 3025.015978
