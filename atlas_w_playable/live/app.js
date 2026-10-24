@@ -1,4 +1,4 @@
-/* Reuse the published sailing host unchanged; supply its one gunnery install with the verified avatar. */
+/* Prepare the existing verified avatar, then load this preview's isolated host derivative. */
 (function(G){'use strict';
 async function start(env){
  const {document,AtlasFleet,AtlasOperator,AtlasGunnery,ATLASRuntime}=env;
