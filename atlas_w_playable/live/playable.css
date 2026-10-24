@@ -1,0 +1,46 @@
+/* Smaller, non-blocking HUD. Scene aiming and gun selection are first-class controls. */
+body.action-helm #scene{touch-action:none;outline:none}
+#action-hud{font-family:system-ui,sans-serif}
+#action-readout{top:66px;background:#091921c7;border-color:#abc8cb30;backdrop-filter:blur(8px);border-radius:7px}
+#operator-views{top:120px;background:#091921bd;border-color:#abc8cb30;border-radius:7px}
+#battery-selector{position:absolute;right:20px;top:68px;display:flex;gap:4px;pointer-events:none}
+#battery-selector button{border-radius:6px;min-height:44px;padding:7px 12px}
+#a-gun{min-width:172px;font-variant-numeric:tabular-nums}
+#a-lock{position:absolute;right:20px;top:120px;padding:8px 16px;min-height:44px}
+#a-aim-pad{position:absolute;right:24px;bottom:290px;width:156px;height:106px;pointer-events:auto;touch-action:none;border:1px solid #bad9db50;border-radius:50%;background:radial-gradient(ellipse,#213f4f40,#122a3620);display:none;align-items:center;justify-content:center;flex-direction:column;color:#e8f1f0}
+#a-aim-pad span{font-size:9px;letter-spacing:.13em}#a-aim-pad i{font-style:normal;font-size:32px;color:#c6d6db8c}#a-aim-pad.pressed{background:#b5d8cc2e;border-color:#b3e8da}
+#a-actual-reticle{position:absolute;transform:translate(-50%,-50%);border:1px solid #e2ac70;width:9px;height:9px;border-radius:50%;pointer-events:none}
+#a-crosshair{width:22px;height:22px;border:1px solid #e4eee8;box-shadow:none;border-radius:2px}#a-crosshair:before{left:10px;top:5px;height:12px}#a-crosshair:after{top:10px;left:5px;width:12px}#a-crosshair span{top:29px;font-size:9px}
+#a-feedback{top:176px;background:#07181f99;max-width:calc(100% - 40px);font-size:11px}
+#action-hud button:focus-visible{outline:2px solid #dfcc9c}#action-hud button:hover:not(:focus-visible){outline:none}
+#a-fire{background:linear-gradient(140deg,#d29462,#8b4634)!important;border-color:#e4b885!important;border-radius:18px!important;box-shadow:0 6px 16px #0004!important}
+#a-keyboard-hint{font-size:11px}#a-tray{bottom:270px}
+@media(pointer:fine){#a-drive{opacity:.65;transform:scale(.9);transform-origin:left bottom}#a-fire-cluster{width:155px}}
+@media(pointer:coarse){#a-aim-pad{display:flex}#a-lock{display:none}}
+@media(max-width:680px){
+ #action-readout{top:59px;left:10px;gap:5px;font-size:10px;padding:4px 7px}#a-power{min-width:80px}#a-score{display:none}#action-readout #a-help{min-width:36px}
+ #operator-views{top:107px;height:48px;width:calc(100% - 20px)}
+ #battery-selector{top:165px;right:10px;left:10px;justify-content:center}#battery-selector button{min-height:44px}#a-gun{min-width:185px}
+ #a-feedback{top:214px;left:10px;max-width:calc(100% - 20px);font-size:10px;line-height:1.2}
+ #a-aim-pad{bottom:236px;right:16px;width:126px;height:96px;display:flex}
+ #a-lock{display:none}#a-drive{bottom:calc(14px + env(safe-area-inset-bottom));left:10px}#a-fire-cluster{right:10px;bottom:calc(14px + env(safe-area-inset-bottom));width:144px}
+ #a-tray{bottom:210px;max-height:calc(100dvh - 260px)}
+}
+@media(orientation:landscape) and (max-height:600px){
+ #action-readout{top:52px;left:12px;width:auto;right:auto;max-width:50vw}#a-power{min-width:84px}#a-score{display:none}#action-readout #a-sound{font-size:10px;padding:4px 7px}
+ #battery-selector{top:53px;left:auto;right:12px}#a-gun{min-width:150px;font-size:10px}#battery-selector button{min-height:40px;padding:6px 10px}
+ #operator-views{left:50%;top:auto;bottom:10px;transform:translateX(-50%);width:265px;max-width:calc(100vw - 350px);height:auto;padding:2px}
+ #operator-views button{min-width:0;font-size:10px;padding:3px;min-height:40px}#a-feedback{top:100px;font-size:10px;max-width:70vw}
+ #a-aim-pad{bottom:155px;right:36px;width:108px;height:78px}#a-fire-cluster{width:141px;bottom:10px}#a-fire{height:68px;min-height:68px;width:88px}#a-fire strong{font-size:19px}
+ #a-fire-cluster button:not(#a-fire){min-height:34px}#a-target{font-size:9px!important}#a-tray{bottom:12px;right:171px;max-height:calc(100dvh - 112px);top:auto}
+ #a-lock{display:none}#a-drive{bottom:10px;left:12px}
+}
+@media(max-width:390px){#action-readout #a-sound{font-size:9px;padding:3px 5px}#a-power{min-width:70px}#a-feedback{max-width:calc(100% - 20px)}}
+
+/* Camera choices live in Options; one always-visible view button replaces a full toolbar. */
+#action-readout #a-camera{display:inline-flex!important;align-items:center;justify-content:center;min-height:40px}
+#a-tray #operator-views{position:static;transform:none;display:flex;flex-wrap:wrap;top:auto;left:auto;bottom:auto;width:auto;max-width:none;height:auto;padding:0;background:none;border:0;margin:0 0 10px}
+#a-tray #operator-views button{min-width:60px;flex:1;font-size:10px}#a-tray #a-crew-status{display:none}
+#a-feedback{top:120px}
+@media(max-width:680px){#action-readout{flex-wrap:nowrap;max-width:calc(100% - 20px);gap:3px}#action-readout #a-camera{font-size:9px;min-width:60px;padding:3px}#a-speed{min-width:56px;font-size:16px}#a-power{min-width:64px;font-size:9px}#action-readout #a-sound{font-size:9px;padding:4px}#a-help{display:none}#battery-selector{top:110px}#a-feedback{top:160px}}
+@media(orientation:landscape) and (max-height:600px){#battery-selector{top:53px}#a-feedback{top:101px}#action-readout{max-width:57vw}#action-readout #a-camera{font-size:10px}}
