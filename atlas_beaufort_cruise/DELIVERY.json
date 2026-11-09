@@ -1,16 +1,16 @@
 {
-  "version": "Dolphins & Lightweight Realism 5",
-  "url": "https://rawcdn.githack.com/owensto/helper/6339a15b22232e2c830203c25a547c7a168c8e24/atlas_beaufort_cruise/site/index.html",
-  "published_commit": "6339a15b22232e2c830203c25a547c7a168c8e24",
+  "version": "Mobile Driving 6",
+  "url": "https://rawcdn.githack.com/owensto/helper/7ca9ab1fe9c67b5bd5aaa09a771bb46a7ce5f479/atlas_beaufort_cruise/site/index.html",
+  "published_commit": "7ca9ab1fe9c67b5bd5aaa09a771bb46a7ce5f479",
+  "source_commit": "0cfe0e7b027d0874b1845dfea2fa6d1deffa80d5",
+  "build_run": "42565953416",
   "status": "STATIC_PREVIEW_COMMITTED",
-  "source_commit": "92a5f9a65c9143cf2cd1277a35918c7f9e77b02b",
-  "build_run": "40047043096",
-  "cpu_checks_passed": 107,
+  "cpu_checks_passed": 136,
   "browserVerified": false,
-  "CDNVerified": false,
-  "GPUVerified": false,
   "physicalDeviceVerified": false,
+  "GPUVerified": false,
   "frameRateVerified": false,
-  "photorealismVerified": false,
-  "note": "Complete static site committed after native CPU/math/geography and synthetic-interface tests. No browser/public-response/GPU/touch/playback or actual FPS verification. Dolphin camera projection is not rendered visibility proof."
+  "CDNVerified": false,
+  "actualMusicPlaybackVerified": false,
+  "note": "Code/control tests passed. No rendered or physical-phone driving/FPS verification; long-frame pause is a safeguard, not proof all hitches are eliminated."
 }

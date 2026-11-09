@@ -1,0 +1,16 @@
+{
+  "version": "Mobile Driving 6",
+  "url": "https://rawcdn.githack.com/owensto/helper/7ca9ab1fe9c67b5bd5aaa09a771bb46a7ce5f479/atlas_beaufort_cruise/site/index.html",
+  "published_commit": "7ca9ab1fe9c67b5bd5aaa09a771bb46a7ce5f479",
+  "source_commit": "0cfe0e7b027d0874b1845dfea2fa6d1deffa80d5",
+  "build_run": "42565953416",
+  "status": "STATIC_PREVIEW_COMMITTED",
+  "cpu_checks_passed": 136,
+  "browserVerified": false,
+  "physicalDeviceVerified": false,
+  "GPUVerified": false,
+  "frameRateVerified": false,
+  "CDNVerified": false,
+  "actualMusicPlaybackVerified": false,
+  "note": "Code/control tests passed. No rendered or physical-phone driving/FPS verification; long-frame pause is a safeguard, not proof all hitches are eliminated."
+}
