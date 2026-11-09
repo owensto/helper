@@ -2,7 +2,7 @@
 (()=>{'use strict';let wait=null,stopped=false;const deadline=performance.now()+120000;
 function install(){if(stopped)return;if(!window.ATLAS_BEAUFORT_CRUISE?.ready){if(performance.now()<deadline)wait=setTimeout(install,150);return;}
  const A=BAYPLAY,S=A.state,$=id=>document.getElementById(id),root=$('helm09');
- try{installAtlasDeviceHelm({document,window,isLocal:()=>!stopped&&SEA09.bus.mode==='local',read:()=>S,paused:()=>A.isPaused(),held:v=>window.ATLAS_TOUCH_STEERING=v,dispatch:(k,v)=>SEA09.bus.dispatch(k,v),now:()=>performance.now(),setInterval:(f,ms)=>setInterval(f,ms),clearInterval:n=>clearInterval(n),
+ try{installAtlasDeviceHelm({document,window,isLocal:()=>!stopped&&SEA09.bus.mode==='local',read:()=>S,paused:()=>A.isPaused(),blocked:()=>document.hidden||!$('helm09-panel').hidden||!$('helm09-mapcard').hidden||root.classList.contains('photo14')||!!window.ATLAS_HARBOR4?.camera.isFree(),held:v=>window.ATLAS_TOUCH_STEERING=v,dispatch:(k,v)=>SEA09.bus.dispatch(k,v),now:()=>performance.now(),setInterval:(f,ms)=>setInterval(f,ms),clearInterval:n=>clearInterval(n),
   docking:()=>SEA11.options.docking,setDocking:v=>SEA11.setOption('docking',v),feet:()=>SEA11.options.feet,
   syncRig:()=>{CMD.syncRig();CMD.fill(S.config);A.refresh();},rigLabel:()=>S.config.count+' × '+S.config.hp+' hp · modeled',
   openPanel:k=>SEA09.openPanel(k),closePanel:()=>{if(!$('helm09-panel').hidden)$('helm09-close').click();root.classList.remove('s11-panel-open','s14-tools-open');},toggleMap:()=>SEA09.toggleMap(),panels:SEA10,

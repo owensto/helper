@@ -1,0 +1,33 @@
+/* Keep the current navy/teal theme. No extra permanent instrument panel. */
+@media(pointer:coarse){
+ #helm09.device2 #d2-power{height:48px!important;touch-action:none;-webkit-user-select:none;user-select:none}
+ #helm09.device2 .d2-pad{touch-action:none;-webkit-user-select:none;user-select:none;height:72px}
+ #helm09.device2 .d2-power-ends button{min-height:44px;min-width:56px;text-decoration:none;border:1px solid var(--d2-line);border-radius:10px}
+ #helm09.device2 .d2-card{height:140px;padding:10px}
+ #helm09.device2{--d2-bottom:208px}
+ #helm09.device2 .d2-label{font-size:11px;letter-spacing:0}
+ #helm09.device2 .d2-pad::after{content:'Drag from where you touch';position:absolute;left:0;right:0;bottom:-12px;text-align:center;font:10px system-ui;color:var(--d2-ink);opacity:.8;pointer-events:none}
+ #helm09.device2 #d2-driving{touch-action:none}
+ #helm09.device2 #helm09-panel{overscroll-behavior:contain}
+ #helm09.device2 #m6-compact-view{min-width:52px;min-height:48px}
+ #helm09.device2 .h4-views{display:none!important}
+}
+/* Short landscape: left thumb steers, right thumb powers; center remains open. */
+@media(pointer:coarse) and (orientation:landscape) and (max-height:560px){
+ #helm09.device2{--d2-bottom:134px}
+ #helm09.device2 #d2-driving{grid-template-columns:160px minmax(260px,1fr) 160px;gap:10px;align-items:end}
+ #helm09.device2 .d2-card{height:134px;padding:8px}
+ #helm09.device2 .d2-gearbox{grid-column:2;grid-row:1;align-self:end}
+ #helm09.device2 .d2-steer{grid-column:1;grid-row:1}
+ #helm09.device2 .d2-power{grid-column:3;grid-row:1}
+}
+@media(pointer:coarse) and (max-width:400px){
+ #helm09.device2 .d2-depth{max-width:88px;font-size:11px}
+ #helm09.device2 .d2-header{gap:4px}
+ #helm09.device2 .d2-header button{min-width:48px;font-size:12px;padding:7px}
+ #helm09.device2 .d2-speed strong{font-size:21px}
+}
+#helm09 #m6-assist-note{font-size:14px;line-height:1.5;color:var(--d2-ink)}
+
+#helm09.device2 #sea10-performance{top:76px;bottom:auto;z-index:60;max-width:calc(100vw - 24px);box-sizing:border-box;flex-wrap:wrap}
+#helm09.device2 #sea10-performance button{min-height:44px;min-width:80px}

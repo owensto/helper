@@ -2,7 +2,7 @@
  * no fitting interaction or vessel controls can leak into the free camera. */
 (function(G,f){if(typeof module==='object')module.exports=f;else G.AtlasHarborCamera=f;})(globalThis,function(H,C,T){'use strict';
 const A=H.app,S=A.state,cam=A.camera;let mode='chase',third='chase',yaw=0,elevation=.29,distance=14,freeYaw=0,freePitch=-.12,savedPause=null,internal=false,snap=true;
-const keys=new Set(),lookAt=new T.Vector3(),desired=new T.Vector3(),target=new T.Vector3(),dir=new T.Vector3(),right=new T.Vector3();
+let lastX=S.x,lastZ=S.z,lastLocation=S.location;const keys=new Set(),lookAt=new T.Vector3(),desired=new T.Vector3(),target=new T.Vector3(),dir=new T.Vector3(),right=new T.Vector3();
 function isFree(){return mode==='free'||mode==='wildlife';}
 function clear(){keys.clear();H.clearBoatKeys();}
 function select(next){if(!['first','chase','orbit','free','wildlife'].includes(next))throw Error('Unknown view');
@@ -15,7 +15,9 @@ function onNative(next){if(internal)return;if(mode==='free'){const old=savedPaus
 function drag(dx,dy){if(!Number.isFinite(dx+dy))return;if(mode==='orbit'||mode==='wildlife'){yaw=C.angle(yaw-dx*.005);elevation=C.clamp(elevation+dy*.004,.08,1.12);}else if(mode==='free'){freeYaw=C.angle(freeYaw+dx*.004);freePitch=C.clamp(freePitch-dy*.003,-1.35,1.35);}}
 function zoom(delta){if(mode==='orbit'||mode==='chase'||mode==='wildlife')distance=C.clamp(distance*Math.exp(C.clamp(delta,-300,300)*.0015),7,42);}
 function key(code,down){if(mode!=='free')return false;if(['KeyW','KeyS','KeyA','KeyD','KeyE','KeyQ','Space','ShiftLeft','ShiftRight'].includes(code)){down?keys.add(code):keys.delete(code);return true;}return false;}
-function update(dt){if(H.photo())return false;if(mode==='first'||mode==='native')return false;dt=Number.isFinite(dt)?C.clamp(dt,0,.10):0;
+function update(dt){const dx=S.x-lastX,dz=S.z-lastZ,same=lastLocation===S.location;lastX=S.x;lastZ=S.z;lastLocation=S.location;
+ if(!snap&&same&&Math.hypot(dx,dz)<80&&(mode==='chase'||mode==='orbit')){cam.position.x+=dx;cam.position.z+=dz;lookAt.x+=dx;lookAt.z+=dz;}
+ if(H.photo())return false;if(mode==='first'||mode==='native')return false;dt=Number.isFinite(dt)?C.clamp(dt,0,.10):0;
  if(mode==='wildlife'){
   const animal=H.wildlife?.();if(!animal)return false;
   const a=animal.heading+Math.PI+yaw,d=C.clamp(distance,7,42);desired.set(animal.x+Math.cos(a)*d,Math.max(H.waterHeight(animal.x,animal.z)+1.15,animal.y+1.15+Math.sin(elevation)*d),animal.z+Math.sin(a)*d);

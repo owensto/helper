@@ -1,0 +1,174 @@
+{
+  "version": "Mobile Driving 6",
+  "base": "6339a15b22232e2c830203c25a547c7a168c8e24",
+  "changed": [
+    "app.js",
+    "device/device-bootstrap.js",
+    "device/device-ui.js",
+    "experience14.js",
+    "game3/bootstrap.js",
+    "harbor4/camera.js",
+    "helm09.js",
+    "index.html",
+    "operations10.js"
+  ],
+  "unchanged": 290,
+  "newPhysicsCoefficients": false,
+  "fixedPhysicsStep": 0.016666666666666666,
+  "mobileMaxCatchupSteps": 12,
+  "browserVerified": false,
+  "physicalDeviceVerified": false,
+  "FPSVerified": false,
+  "patches": [
+    {
+      "file": "device/device-bootstrap.js",
+      "anchor": "paused:()=>A.isPaused(),",
+      "count": 1
+    },
+    {
+      "file": "device/device-ui.js",
+      "anchor": "const steering=new C.Steering(H);",
+      "count": 1
+    },
+    {
+      "file": "device/device-ui.js",
+      "anchor": "steering.start(e.pointerId,e.clientX,pad.getBoundingClientRe",
+      "count": 1
+    },
+    {
+      "file": "device/device-ui.js",
+      "anchor": "on(pad,'blur',()=>{steering.reset();paintSteer();});",
+      "count": 1
+    },
+    {
+      "file": "device/device-ui.js",
+      "anchor": "on(W,'blur',()=>{steering.reset();paintSteer();});on(D,'visi",
+      "count": 1
+    },
+    {
+      "file": "device/device-ui.js",
+      "anchor": "C.changePower(H,0);sync();",
+      "count": 1
+    },
+    {
+      "file": "device/device-ui.js",
+      "anchor": "C.fullPower(H);say('Full power selected; docking limit off. ",
+      "count": 1
+    },
+    {
+      "file": "device/device-ui.js",
+      "anchor": "on(power,'input',()=>{C.changePower(H,Number(power.value)/10",
+      "count": 1
+    },
+    {
+      "file": "device/device-ui.js",
+      "anchor": "function open(kind){steering.reset();",
+      "count": 1
+    },
+    {
+      "file": "device/device-ui.js",
+      "anchor": "on($('helm09-pause'),'click',()=>{steering.reset();",
+      "count": 1
+    },
+    {
+      "file": "device/device-ui.js",
+      "anchor": "powerValue.textContent=Math.round(s.throttle*100)+'%'+(H.doc",
+      "count": 1
+    },
+    {
+      "file": "device/device-ui.js",
+      "anchor": "s.trimActual,paused,panelOpen]",
+      "count": 1
+    },
+    {
+      "file": "device/device-ui.js",
+      "anchor": "if(D.activeElement!==power)power.value=",
+      "count": 1
+    },
+    {
+      "file": "device/device-ui.js",
+      "anchor": "const api={ready:true,inspect:",
+      "count": 1
+    },
+    {
+      "file": "device/device-ui.js",
+      "anchor": "if(disposed)return;steering.dispose();disposed=true;",
+      "count": 1
+    },
+    {
+      "file": "app.js",
+      "anchor": "let dt=Math.min(4,wallDt);if(wallDt>4&&ready",
+      "count": 1
+    },
+    {
+      "file": "app.js",
+      "anchor": "&&mode==='drive'&&state.engine){gamePaused=true;acc=0;timing",
+      "count": 1
+    },
+    {
+      "file": "app.js",
+      "anchor": "message('Rendering stalled. Paused instead of silently slowi",
+      "count": 1
+    },
+    {
+      "file": "app.js",
+      "anchor": "window.ATLAS_HELM_KEYS.tick(dt);",
+      "count": 1
+    },
+    {
+      "file": "game3/bootstrap.js",
+      "anchor": "||!$('helm09-panel').hidden||root.classList.contains('photo1",
+      "count": 1
+    },
+    {
+      "file": "harbor4/camera.js",
+      "anchor": "const keys=new Set(),",
+      "count": 1
+    },
+    {
+      "file": "harbor4/camera.js",
+      "anchor": "function update(dt){if(H.photo())return false;",
+      "count": 1
+    },
+    {
+      "file": "experience14.js",
+      "anchor": "if(window.SEA_SOFTWARE)effectiveScale=.5;",
+      "count": 1
+    },
+    {
+      "file": "experience14.js",
+      "anchor": "next=Math.min(1,next+.05)",
+      "count": 1
+    },
+    {
+      "file": "operations10.js",
+      "anchor": "Graphics stalled \u2014 simulation paused. Resume, or choose Bala",
+      "count": 1
+    },
+    {
+      "file": "operations10.js",
+      "anchor": "<button id=\"sea10-resume\">Resume</button>",
+      "count": 1
+    },
+    {
+      "file": "operations10.js",
+      "anchor": "$('sea10-resume').onclick=()=>A.setPaused(false);",
+      "count": 1
+    },
+    {
+      "file": "helm09.js",
+      "anchor": "function toggleMap(){",
+      "count": 1
+    },
+    {
+      "file": "index.html",
+      "anchor": "<script defer=\"\" src=\"app.js\">",
+      "count": 1
+    },
+    {
+      "file": "index.html",
+      "anchor": "</head>",
+      "count": 1
+    }
+  ]
+}

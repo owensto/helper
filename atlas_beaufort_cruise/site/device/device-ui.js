@@ -11,7 +11,7 @@ G.installAtlasDeviceHelm=function(H){
  const B=(text,fn,id)=>{const b=E('button',text);b.type='button';if(id)b.id=id;on(b,'click',()=>{if(disposed||!b.isConnected||!H.isLocal())return;try{fn();}catch(e){say(e.message);}});return b;};
  function own(n,p=app){owned.push(n);p.append(n);return n;}
  function move(n,p){if(!n)throw Error('Missing native helm control.');const marker=E('span');n.parentNode.insertBefore(marker,n);originals.push([n,marker]);p.append(n);return n;}
- const steering=new C.Steering(H);
+ const mobile=G.AtlasMobile6?.create(H,C),steering=mobile?.steering||new C.Steering(H);
  const header=E('section','','d2-header');header.id='d2-header';header.setAttribute('aria-label','Essential boat instruments');
  const speed=E('strong','0.0'),unit=E('small','knots'),speedbox=E('div','','d2-speed');speedbox.append(speed,unit);
  const depth=E('span','Depth unknown','d2-depth');depth.id='d2-depth';
@@ -20,16 +20,22 @@ G.installAtlasDeviceHelm=function(H){
  const steerBox=E('div','','d2-card d2-steer');steerBox.append(E('span','STEER · release to center','d2-label'));
  const pad=E('div','','d2-pad');pad.id='d2-steering';pad.tabIndex=0;pad.setAttribute('role','slider');pad.setAttribute('aria-label','Steer boat. Drag left or right; release to center. Arrow keys make small turns, Home centers.');pad.setAttribute('aria-valuemin','-100');pad.setAttribute('aria-valuemax','100');
  const left=E('span','‹','d2-arrow'),knob=E('span','○','d2-knob'),right=E('span','›','d2-arrow');pad.append(left,knob,right);steerBox.append(pad);
- on(pad,'pointerdown',e=>{if(e.button!==undefined&&e.button!==0)return;if(steering.start(e.pointerId,e.clientX,pad.getBoundingClientRect())){e.preventDefault();try{pad.setPointerCapture(e.pointerId);}catch(_){steering.reset();}paintSteer();}});
+ on(pad,'pointerdown',e=>{if(e.button!==undefined&&e.button!==0)return;if(steering.start(e.pointerId,e.clientX,pad.getBoundingClientRect(),e.pointerType)){e.preventDefault();try{pad.setPointerCapture(e.pointerId);}catch(_){steering.reset();}paintSteer();}});
  on(pad,'pointermove',e=>{if(steering.move(e.pointerId,e.clientX,pad.getBoundingClientRect())){e.preventDefault();paintSteer();}});
  for(const name of ['pointerup','pointercancel','lostpointercapture'])on(pad,name,e=>{steering.release(e.pointerId);paintSteer();});
  on(pad,'keydown',e=>{let v;if(e.key==='ArrowLeft')v=steering.value-.1;if(e.key==='ArrowRight')v=steering.value+.1;if(e.key==='Home'||e.key==='Escape')v=0;if(v!==undefined){e.preventDefault();e.stopPropagation();steering.key(v);paintSteer();}});
  on(pad,'keyup',e=>{if(['ArrowLeft','ArrowRight'].includes(e.key)){e.stopPropagation();steering.reset();paintSteer();}});
- on(pad,'blur',()=>{steering.reset();paintSteer();});on(W,'blur',()=>{steering.reset();paintSteer();});on(D,'visibilitychange',()=>{if(D.hidden)steering.reset();});
+ on(pad,'blur',()=>{if(steering.pointer===null)steering.reset();paintSteer();});on(W,'blur',()=>{mobile?.cancel();steering.reset();paintSteer();});on(D,'visibilitychange',()=>{if(D.hidden){mobile?.cancel();steering.reset();}});
  const powerBox=E('div','','d2-card d2-power'),powerLabel=E('label','','d2-label');powerLabel.setAttribute('for','d2-power');powerLabel.append(E('span','POWER'));const powerValue=E('b','0%');powerLabel.append(powerValue);
  const power=E('input');power.id='d2-power';power.type='range';power.min='0';power.max='100';power.step='1';power.value='0';power.setAttribute('aria-label','Engine power');
- const powerEnds=E('div','','d2-power-ends');const idle=B('Idle',()=>{C.changePower(H,0);sync();}),full=B('Full',()=>{C.fullPower(H);say('Full power selected; docking limit off. Gear and engine remain under your control.');sync();},'d2-full');
- powerEnds.append(idle,full);powerBox.append(powerLabel,power,powerEnds);on(power,'input',()=>{C.changePower(H,Number(power.value)/100);sync();});
+ const powerEnds=E('div','','d2-power-ends');const idle=B('Idle',()=>{mobile?mobile.power.idle():C.changePower(H,0);sync();}),full=B('Full',()=>{if(mobile&&G.AtlasMobile6.coarse(W)){mobile.power.full();say('Full power requested gradually; docking limit off.');}else{C.fullPower(H);say('Full power selected; docking limit off.');}sync();},'d2-full');
+ powerEnds.append(idle,full);powerBox.append(powerLabel,power,powerEnds);on(power,'input',()=>{if(mobile?.power.pointer!=null){power.value=String(Math.round(H.read().throttle*100));return;}mobile?.power.cancel();C.changePower(H,Number(power.value)/100);sync();});
+ if(mobile){
+  on(power,'pointerdown',e=>{if(!G.AtlasMobile6.isTouch(e))return;e.preventDefault();e.stopPropagation();if(mobile.power.start(e,power.getBoundingClientRect())){try{power.setPointerCapture(e.pointerId);}catch(_){mobile.power.cancel();}}});
+  on(power,'pointermove',e=>{if(mobile.power.move(e)){e.preventDefault();e.stopPropagation();}});
+  for(const type of ['pointerup','pointercancel','lostpointercapture'])on(power,type,e=>{if(mobile.power.end(e,type!=='pointerup')){e.preventDefault();e.stopPropagation();}});
+ }
+
  const gearbox=E('div','','d2-gearbox');move($('helm09-key'),gearbox);move(app.querySelector('.h09-gears'),gearbox);for(const b of gearbox.querySelectorAll('[data-gear09]')){const v=Number(b.dataset.gear09);b.textContent=v<0?'Reverse':v>0?'Forward':'Neutral';}
  const trimButton=B('Trim',()=>{expanded=!expanded;trimPanel.hidden=!expanded;trimButton.setAttribute('aria-expanded',String(expanded));},'d2-trim');trimButton.setAttribute('aria-expanded','false');gearbox.append(trimButton);
  driving.append(steerBox,gearbox,powerBox);own(driving);
@@ -39,8 +45,8 @@ G.installAtlasDeviceHelm=function(H){
  const trip=B('Trip',()=>open('d2-trip'),'d2-trip');trip.hidden=true;own(trip);
  function paintSteer(){const v=window.ATLAS_HELM_KEYS?.steering&&steering.pointer===null?H.read().steer:steering.value;knob.style.setProperty('--steer',String(v));pad.setAttribute('aria-valuenow',String(Math.round(v*100)));pad.setAttribute('aria-valuetext',Math.abs(v)<.01?'Centered':Math.round(Math.abs(v)*100)+'% '+(v<0?'left':'right'));}
  function closeTrim(){expanded=false;trimPanel.hidden=true;trimButton.setAttribute('aria-expanded','false');}
- function open(kind){steering.reset();paintSteer();closeTrim();H.openPanel(kind);sync();}
- on($('helm09-pause'),'click',()=>{steering.reset();paintSteer();sync();});
+ function open(kind){mobile?.cancel();steering.reset();paintSteer();closeTrim();H.openPanel(kind);sync();}
+ on($('helm09-pause'),'click',()=>{mobile?.cancel();steering.reset();paintSteer();sync();});
  const priorPanel=H.panels.renderPanel;
  function section(body,title){const n=E('div','','d2-menu-section');n.append(E('h3',title));body.append(n);return n;}
  function choices(parent,rows){const g=E('div','','d2-menu-grid');for(const [text,fn,id]of rows)g.append(B(text,fn,id));parent.append(g);return g;}
@@ -70,14 +76,14 @@ G.installAtlasDeviceHelm=function(H){
  function sync(){if(disposed||D.hidden)return;if(!H.isLocal()){steering.release();header.hidden=driving.hidden=true;return;}
   const s=H.read(),paused=H.paused(),panelOpen=!$('helm09-panel').hidden,photo=H.photo();app.classList.toggle('d2-panel-open',panelOpen);app.classList.toggle('d2-photo',photo);header.hidden=photo;driving.hidden=photo||panelOpen;
   if((paused||photo||panelOpen)&&(steering.pointer!==null||steering.value!==0)){steering.reset();paintSteer();}
-  const d=C.clearance(s,H.feet()),stamp=JSON.stringify([s.speedOverGround,d,s.throttle,s.engine,H.docking(),s.trim,s.trimActual,paused,panelOpen]);
-  if(stamp!==uiStamp){speed.textContent=Number.isFinite(s.speedOverGround)?(s.speedOverGround*3600/1852).toFixed(1):'—';depth.textContent=d.text;depth.dataset.tone=d.tone;power.max=H.docking()?'22':'100';powerValue.textContent=Math.round(s.throttle*100)+'%'+(H.docking()?' · docking':'');if(D.activeElement!==power)power.value=String(Math.round(s.throttle*100));trimButton.textContent=C.trimText(s);menu.setAttribute('aria-expanded',String(panelOpen));uiStamp=stamp;}
+  const d=C.clearance(s,H.feet()),stamp=JSON.stringify([s.speedOverGround,d,s.throttle,s.engine,H.docking(),s.trim,s.trimActual,paused,panelOpen,mobile?.power.target]);
+  if(stamp!==uiStamp){speed.textContent=Number.isFinite(s.speedOverGround)?(s.speedOverGround*3600/1852).toFixed(1):'—';depth.textContent=d.text;depth.dataset.tone=d.tone;power.max=H.docking()?'22':'100';powerValue.textContent=Math.round(s.throttle*100)+'%'+(mobile?.power.target!=null?' → '+Math.round(mobile.power.target*100)+'%':'')+(H.docking()?' · docking':'');if(mobile?.power.target!=null||D.activeElement!==power)power.value=String(Math.round(s.throttle*100));trimButton.textContent=C.trimText(s);menu.setAttribute('aria-expanded',String(panelOpen));uiStamp=stamp;}
   paintSteer();const r=H.radio();music.hidden=photo||panelOpen||H.providerActive()||!r.wanted&&!r.playing;if(!music.hidden){musicTitle.textContent=r.title||'Music';musicPause.textContent=r.wanted?'Pause music':'Play music';}
   trip.hidden=photo||panelOpen||!$('bc-voyage')||$('bc-voyage').hidden;
   if(!message.hidden&&H.now()-noticeAt>6000)message.hidden=true;
  }
  app.classList.add('device2');paintSteer();sync();const timer=H.setInterval(sync,100);
- const api={ready:true,inspect:()=>({version:2,steering:steering.value,pointerHeld:steering.pointer!==null,disposed,layout:C.layout(W.innerWidth,W.innerHeight),nativeControlsMoved:originals.length,browserVerified:false}),dispose(){if(disposed)return;steering.dispose();disposed=true;H.clearInterval(timer);abort.abort();panelAbort?.abort();if(H.panels.renderPanel===panel)H.panels.renderPanel=priorPanel;for(const[n,m]of originals){if(m.parentNode)m.parentNode.insertBefore(n,m);m.remove();}owned.forEach(n=>n.remove());app.classList.remove('device2','d2-photo','d2-panel-open');if(G.ATLAS_DEVICE_HELM===api)delete G.ATLAS_DEVICE_HELM;}};
+ const api={ready:true,tick:dt=>mobile?.tick(dt),cancelInput:()=>mobile?.cancel(),mobileInspect:()=>mobile?.inspect(),inspect:()=>({version:2,steering:steering.value,pointerHeld:steering.pointer!==null,disposed,layout:C.layout(W.innerWidth,W.innerHeight),nativeControlsMoved:originals.length,browserVerified:false}),dispose(){if(disposed)return;mobile?.dispose();steering.dispose();disposed=true;H.clearInterval(timer);abort.abort();panelAbort?.abort();if(H.panels.renderPanel===panel)H.panels.renderPanel=priorPanel;for(const[n,m]of originals){if(m.parentNode)m.parentNode.insertBefore(n,m);m.remove();}owned.forEach(n=>n.remove());app.classList.remove('device2','d2-photo','d2-panel-open');if(G.ATLAS_DEVICE_HELM===api)delete G.ATLAS_DEVICE_HELM;}};
  G.ATLAS_DEVICE_HELM=api;on(W,'pagehide',()=>api.dispose());return api;
 };
 })(typeof window==='undefined'?globalThis:window);

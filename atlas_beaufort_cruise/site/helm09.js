@@ -64,7 +64,7 @@ function install(){if(!window.SEA09_WATER?.ready||!window.SEA09_AUDIO?.ready)ret
  }
  function relocate(location,x,z,h){const config={...S.config,location,physics:'seamanship'};CMD.fill(config);CMD.apply(true);if(Number.isFinite(x)){S.x=x;S.z=z;S.heading=h||0;}I.reset();A.coast.reset();A.refresh();view('helm');}
  ['boat','settings','radio'].forEach(id=>$('helm09-'+id).onclick=()=>openPanel(id));$('helm09-close').onclick=closePanel;
- function toggleMap(){closePanel();const e=$('helm09-mapcard');e.hidden=!e.hidden;$('helm09-map').classList.toggle('active',!e.hidden);lastMap=-1;if(!e.hidden)drawMap();}
+ function toggleMap(){window.ATLAS_DEVICE_HELM?.cancelInput();closePanel();const e=$('helm09-mapcard');e.hidden=!e.hidden;$('helm09-map').classList.toggle('active',!e.hidden);lastMap=-1;if(!e.hidden)drawMap();}
  $('helm09-map').onclick=toggleMap;$('helm09-mapclose').onclick=toggleMap;$('helm09-zoomin').onclick=()=>{mapRange=Math.max(80,mapRange*.7);lastMap=-1;};$('helm09-zoomout').onclick=()=>{mapRange=Math.min(5000,mapRange/ .7);lastMap=-1;};$('helm09-clearway').onclick=()=>I.waypoint=null;
  const mapBg=document.createElement('canvas');mapBg.width=144;mapBg.height=104;let mapTile='';
  function drawMap(){const c=$('helm09-mapcanvas').getContext('2d'),w=720,h=520,scale=w/mapRange;const key=S.location+','+Math.round(S.x/12)+','+Math.round(S.z/12)+','+mapRange;

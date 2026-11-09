@@ -1,0 +1,133 @@
+{
+  "passed": true,
+  "scope": "Production JavaScript loop, camera and device handlers with synthetic DOM/render boundaries; NOT browser/touch/GPU/FPS evidence",
+  "tests": [
+    {
+      "name": "Reproduce old off-centre touch turn; new touch-down never turns",
+      "passed": true,
+      "beforeTarget": 1,
+      "afterTarget": 0
+    },
+    {
+      "name": "Drag is relative to first touch, not pad center; center deadzone is stable",
+      "passed": true
+    },
+    {
+      "name": "High-speed touch steering is gentler; slow maneuvering still has full range",
+      "passed": true,
+      "at48_6Knots": 0.21284634760705293,
+      "atRest": 1
+    },
+    {
+      "name": "Speed sensitivity follows water-relative motion, not current-only ground speed",
+      "passed": true
+    },
+    {
+      "name": "Touch steering slew is bounded, reversing drag cannot snap to opposite lock",
+      "passed": true
+    },
+    {
+      "name": "Mouse absolute steering and keyboard slider adjustment retain original behavior",
+      "passed": true
+    },
+    {
+      "name": "Second pointer cannot steal steering or release the first thumb",
+      "passed": true
+    },
+    {
+      "name": "Two independent thumb gestures adjust power and steering simultaneously",
+      "passed": true
+    },
+    {
+      "name": "Touching far end of power slider cannot jump to full throttle",
+      "passed": true
+    },
+    {
+      "name": "Power increases gradually, reduces faster, and reaches full without limiting terminal power",
+      "passed": true
+    },
+    {
+      "name": "Idle immediately cancels pending acceleration and never changes velocity or gear",
+      "passed": true
+    },
+    {
+      "name": "Canceled power gesture does not continue an unseen acceleration ramp",
+      "passed": true
+    },
+    {
+      "name": "Menus, Pause, map/free blockers and authority loss cancel held/pending input",
+      "passed": true
+    },
+    {
+      "name": "Gear or external throttle command wins over pending touch ramp",
+      "passed": true
+    },
+    {
+      "name": "Docking cap preserved unless Full explicitly removes it; no engine/gear operation",
+      "passed": true
+    },
+    {
+      "name": "30Hz and 60Hz touch ramps give the same actual target after one second",
+      "passed": true
+    },
+    {
+      "name": "Actual loop reproduction: old 1-second stall makes 59 unseen steps; mobile patch pauses before any",
+      "passed": true,
+      "beforeSteps": 59,
+      "beforeTravelM": 24.58333333333335,
+      "afterSteps": 0,
+      "afterTravelM": 0
+    },
+    {
+      "name": "Actual 30/60/120Hz simulation progress unchanged and native 1/60 step retained",
+      "passed": true
+    },
+    {
+      "name": "Actual long-frame guard also protects an unpowered coasting boat; desktop path retained",
+      "passed": true
+    },
+    {
+      "name": "Mobile catch-up bounded to 12 steps; hidden/paused frames do not generate false pauses",
+      "passed": true
+    },
+    {
+      "name": "A stationary unpowered boat does not pause merely because initial scenery is loading",
+      "passed": true
+    },
+    {
+      "name": "Actual chase camera: forward motion no longer adds metres of speed-dependent camera lag",
+      "passed": true,
+      "beforeLagM": 3.1709509241387934,
+      "afterLagM": 0,
+      "modeledSpeedMps": 25
+    },
+    {
+      "name": "Camera translation fix holds at 30/60/120Hz and preserves independent free inspection",
+      "passed": true
+    },
+    {
+      "name": "Actual installed handlers: second-thumb focus does not cancel captured steering",
+      "passed": true
+    },
+    {
+      "name": "Actual power pointer handlers suppress tap jump/native range writes and retain two-thumb input",
+      "passed": true
+    },
+    {
+      "name": "Actual menu and Pause actions clear gestures without operating engine/gears or hiding Pause",
+      "passed": true
+    },
+    {
+      "name": "Native mouse, keyboard, boat geometry, world/force coefficients, dolphins and music assets stay byte-identical",
+      "passed": true
+    },
+    {
+      "name": "Entry orders core before native loop and mobile receiver after camera/UI; no added animation/timer loop",
+      "passed": true
+    },
+    {
+      "name": "Actual mobile receiver selects locked chase and one View button; no simulation changes",
+      "passed": true
+    }
+  ]
+}
