@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - '.github/workflows/office-room-publish.yml'
+      - 'office_room_studio/source/**'
 permissions:
   contents: write
 concurrency:
@@ -32,8 +33,7 @@ jobs:
               for a,b in json.loads(repair.read_text()):
                   assert payload.count(a)==1, ('ambiguous repair',a[:40])
                   payload=payload.replace(a,b,1)
-          tail=src/'tail.txt'
-          if tail.exists(): payload+=tail.read_text().strip()
+          for tail in sorted(src.glob('tail*.txt')): payload+=tail.read_text().strip()
           print('Encoded source bytes:',len(payload))
           raw=zlib.decompress(base64.b64decode(payload,validate=True))
           assert hashlib.sha256(raw).hexdigest()=='fb7822ffc4a3f57e0917f709a219022771dc26a4df31f31e7ad8187a1d442034','source integrity check'
@@ -65,6 +65,7 @@ jobs:
           URL="https://rawcdn.githack.com/owensto/helper/$SHA/office_room_studio/site/index.html"
           printf '%s\n' "$URL" > office_room_studio/published-url.txt
           echo "url=$URL" >> "$GITHUB_OUTPUT"
+          echo "Published room viewer: $URL"
           echo "Published room viewer: $URL" >> "$GITHUB_STEP_SUMMARY"
       - name: Verify live viewer on desktop and phone viewport
         env:
@@ -92,6 +93,7 @@ jobs:
                   page.evaluate("ROOM_STUDIO.setMat('gold20')")
                   page.evaluate('ROOM_STUDIO.setRoom({w:150})')
                   assert page.evaluate('ROOM_STUDIO.state.room.w')==150
+                  page.wait_for_timeout(350)
                   page.reload(wait_until='load')
                   page.wait_for_function('window.ROOM_STUDIO?.ready && window.ROOM_STUDIO.yachtLoaded',timeout=60000)
                   assert page.evaluate('ROOM_STUDIO.state.room.w')==150
