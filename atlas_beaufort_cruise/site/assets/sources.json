@@ -1,0 +1,131 @@
+{
+  "features": 616,
+  "counts": {
+    "bridge": 23,
+    "building": 514,
+    "road": 79
+  },
+  "bridges": [
+    {
+      "id": 45095690,
+      "name": "Richard V Woods Memorial Bridge",
+      "points": 5
+    },
+    {
+      "id": 45144832,
+      "name": "Russell Bell Bridge",
+      "points": 10
+    },
+    {
+      "id": 45144833,
+      "name": null,
+      "points": 5
+    },
+    {
+      "id": 45144836,
+      "name": "Ribaut Road",
+      "points": 2
+    },
+    {
+      "id": 45144839,
+      "name": null,
+      "points": 12
+    },
+    {
+      "id": 81058440,
+      "name": "Ladys Island Drive",
+      "points": 15
+    },
+    {
+      "id": 124542321,
+      "name": "Tech Trestle",
+      "points": 4
+    },
+    {
+      "id": 154935592,
+      "name": "Spanish Moss Trail",
+      "points": 2
+    },
+    {
+      "id": 156258457,
+      "name": null,
+      "points": 7
+    },
+    {
+      "id": 156258458,
+      "name": null,
+      "points": 3
+    },
+    {
+      "id": 156258459,
+      "name": null,
+      "points": 2
+    },
+    {
+      "id": 157516468,
+      "name": "Cuba Street",
+      "points": 4
+    },
+    {
+      "id": 343060490,
+      "name": "Malecon Drive",
+      "points": 2
+    },
+    {
+      "id": 367491838,
+      "name": "Brickyard Point Road North",
+      "points": 2
+    },
+    {
+      "id": 406213407,
+      "name": "Richard V Woods Memorial Bridge",
+      "points": 2
+    },
+    {
+      "id": 406213409,
+      "name": "Richard V Woods Memorial Bridge",
+      "points": 2
+    },
+    {
+      "id": 430746128,
+      "name": "Sea Island Parkway",
+      "points": 2
+    },
+    {
+      "id": 810074423,
+      "name": "Spanish Moss Trail",
+      "points": 2
+    },
+    {
+      "id": 1080557502,
+      "name": "Trask Parkway",
+      "points": 2
+    },
+    {
+      "id": 1091088686,
+      "name": null,
+      "points": 9
+    },
+    {
+      "id": 1091095486,
+      "name": "Ladys Island Drive",
+      "points": 19
+    },
+    {
+      "id": 1306519448,
+      "name": "Geiger Boulevard",
+      "points": 2
+    },
+    {
+      "id": 1424904781,
+      "name": null,
+      "points": 5
+    }
+  ],
+  "sha256": {
+    "leaflet.css": "a7837102824184820dfa198d1ebcd109ff6d0ff9a2672a074b9a1b4d147d04c6",
+    "beaufort_features12.json": "eded52ddcff5b9f364fd047c7a68b885a36a1f1ac11e75f061f7646e76bf9374",
+    "LEAFLET_LICENSE.txt": "53e8dc25862014e4324741ca18fbe3611e11d42ef69f59f86ea8c5389647d4cb",
+    "leaflet.js": "db49d009c841f5ca34a888c96511ae936fd9f5533e90d8b2c4d57596f4e5641a"
+  }
+}

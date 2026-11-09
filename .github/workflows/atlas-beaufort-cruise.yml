@@ -1,0 +1,102 @@
+name: ATLAS Beaufort Mobile Driving static preview
+on:
+  workflow_dispatch:
+  push:
+    branches: ['atlas/beaufort-cruise-20261018']
+    paths:
+      - 'atlas_beaufort_cruise/source/mobile6/**'
+      - '.github/workflows/atlas-beaufort-cruise.yml'
+permissions:
+  contents: read
+  actions: read
+concurrency:
+  group: atlas-beaufort-cruise-preview
+  cancel-in-progress: false
+jobs:
+  build-publish:
+    if: github.ref == 'refs/heads/atlas/beaufort-cruise-20261018'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 12
+    permissions:
+      contents: write
+      actions: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          ref: 6339a15b22232e2c830203c25a547c7a168c8e24
+          path: _mobile_base
+          persist-credentials: false
+      - uses: actions/checkout@v4
+        with:
+          ref: 2c2e75a441b5660d40eb5327b3a72f92acbd4ef2
+          path: _wildlife_base
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Build pinned mobile correction and run CPU regressions only
+        run: |
+          python atlas_beaufort_cruise/source/mobile6/build.py --base _mobile_base/atlas_beaufort_cruise/site --out /tmp/bc-mobile6
+          python atlas_beaufort_cruise/source/mobile6/check.py --site /tmp/bc-mobile6 --base _mobile_base/atlas_beaufort_cruise --prior _wildlife_base/atlas_beaufort_cruise --easy atlas_easy_helm --out atlas_beaufort_cruise/source/mobile6/checks
+      - name: Gate tested source and retain explicit device acceptance status
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import json,hashlib,shutil,os
+          r=Path('atlas_beaufort_cruise');src=r/'source/mobile6';compiled=Path('/tmp/bc-mobile6')
+          d=json.loads((src/'checks/verification.json').read_text())
+          assert d['passed'] and d['cpuChecks']==136 and len(d['powerTrials'])==4
+          assert not d['browserVerified'] and not d['GPUVerified'] and not d['FPSVerified']
+          assert not d['build']['newPhysicsCoefficients'] and d['build']['mobileMaxCatchupSteps']==12
+          assert d['addedSiteBytes']<25000
+          assert not any(p.suffix.lower() in ['.ttf','.otf','.woff','.woff2'] for p in compiled.rglob('*'))
+          shutil.copytree(compiled,r/'site',dirs_exist_ok=True)
+          shutil.copy2(src/'README.md',r/'MOBILE_DRIVING_6.md')
+          shutil.rmtree(src/'checks/retained/fixtures')
+          files={str(p.relative_to(compiled)):hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(compiled.rglob('*')) if p.is_file()}
+          record={'version':'Mobile Driving 6','status':'STATIC_REVIEW_CANDIDATE','source_commit':os.environ['GITHUB_SHA'],'build_run':os.environ['GITHUB_RUN_ID'],'cpu_checks_passed':136,'browserVerified':False,'physicalDeviceVerified':False,'GPUVerified':False,'frameRateVerified':False,'CDNVerified':False,'actualMusicPlaybackVerified':False,'files':files}
+          (r/'BUILD6.json').write_text(json.dumps(record,indent=2)+'\n')
+          PY
+      - name: Commit complete candidate on the existing isolated branch only
+        id: publication
+        run: |
+          git config user.name 'ATLAS preview build'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -f atlas_beaufort_cruise/site atlas_beaufort_cruise/MOBILE_DRIVING_6.md atlas_beaufort_cruise/BUILD6.json atlas_beaufort_cruise/source/mobile6/checks
+          test -z "$(git diff --cached --name-only | grep -v '^atlas_beaufort_cruise/' || true)"
+          git diff --cached --quiet || git commit -m 'Publish Beaufort Mobile6: relative two-thumb control, camera translation and bounded frame catch-up [skip ci]'
+          git push origin HEAD:refs/heads/atlas/beaufort-cruise-20261018
+          echo "commit=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+      - name: Record exact preview and package full site without a browser claim
+        env:
+          PUBLIC_COMMIT: ${{ steps.publication.outputs.commit }}
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import json,os,shutil
+          r=Path('atlas_beaufort_cruise');out=Path('/tmp/atlas-mobile6-delivery');out.mkdir()
+          sha=os.environ['PUBLIC_COMMIT'];url=f'https://rawcdn.githack.com/owensto/helper/{sha}/atlas_beaufort_cruise/site/index.html'
+          d={'version':'Mobile Driving 6','url':url,'published_commit':sha,'source_commit':os.environ['GITHUB_SHA'],'build_run':os.environ['GITHUB_RUN_ID'],'status':'STATIC_PREVIEW_COMMITTED','cpu_checks_passed':136,'browserVerified':False,'physicalDeviceVerified':False,'GPUVerified':False,'frameRateVerified':False,'CDNVerified':False,'actualMusicPlaybackVerified':False,'note':'Code/control tests passed. No rendered or physical-phone driving/FPS verification; long-frame pause is a safeguard, not proof all hitches are eliminated.'}
+          for name in ['DELIVERY.json','DELIVERY6.json']:(r/name).write_text(json.dumps(d,indent=2)+'\n')
+          for name in ['BUILD6.json','DELIVERY6.json','MOBILE_DRIVING_6.md']:shutil.copy2(r/name,out/name)
+          shutil.copy2(r/'source/mobile6/checks/verification.json',out/'verification.json')
+          pkg=out/'Atlas_Beaufort_Mobile_6';shutil.copytree(r/'site',pkg/'site');shutil.copytree(r/'source',pkg/'source',ignore=shutil.ignore_patterns('__pycache__'))
+          shutil.copy2(r/'MOBILE_DRIVING_6.md',pkg/'README.md');shutil.copy2(r/'DELIVERY6.json',pkg/'PLAY_ONLINE.json')
+          assert not any(p.suffix.lower() in ['.ttf','.otf','.woff','.woff2'] for p in pkg.rglob('*'))
+          shutil.make_archive(str(out/'Atlas_Beaufort_Mobile_6'),'zip',root_dir=pkg);shutil.rmtree(pkg)
+          PY
+          git add atlas_beaufort_cruise/DELIVERY.json atlas_beaufort_cruise/DELIVERY6.json
+          git diff --cached --quiet || git commit -m 'Record Mobile6 preview link and open physical-device acceptance [skip ci]'
+          git push origin HEAD:refs/heads/atlas/beaufort-cruise-20261018
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ATLAS-Beaufort-Mobile6
+          path: |
+            /tmp/atlas-mobile6-delivery/
+            atlas_beaufort_cruise/source/mobile6/checks/
+          retention-days: 30

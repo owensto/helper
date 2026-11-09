@@ -1,0 +1,47 @@
+{
+  "passed": true,
+  "checks": 46,
+  "suites": {
+    "stream_and_assets": 19,
+    "native_scene": 5,
+    "native_physics": 15,
+    "native_radio": 7
+  },
+  "scope": "CPU real geometry/assets, deterministic streaming IO, exact boat step and radio with media fixtures",
+  "browserVerified": false,
+  "GPUVerified": false,
+  "actualMusicPlaybackVerified": false,
+  "physicalDeviceVerified": false,
+  "realVesselValidated": false,
+  "measurements": {
+    "launch14": {
+      "secondsTo30mph": 6.433333333333334,
+      "terminalKnots": 43.764565452483474
+    },
+    "decay14": {
+      "rms": 0.012776244544164934,
+      "range": 0.42987906347324445
+    },
+    "decay13": null
+  },
+  "build": {
+    "browserVerified": false,
+    "changedOwnerCopies": [
+      "browser_validation.json",
+      "coastal14.js",
+      "experience14.js",
+      "index.html"
+    ],
+    "collidersRetained": 2921,
+    "detailTiles": 64,
+    "foundationBytes": 7109064,
+    "inputFilesVerified": 133,
+    "newPhysicsCoefficients": false,
+    "originalSceneryBytes": 21460608,
+    "originalTriangleCount": 596128,
+    "passed": true,
+    "sharedWakeEnvelopeChanged": true,
+    "source14": "b5abae9ac7715d30533e4134ec45b8a092d6eb44",
+    "totalTileCompressedBytes": 3921101
+  }
+}

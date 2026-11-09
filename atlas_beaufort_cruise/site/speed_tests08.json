@@ -1,0 +1,54 @@
+{
+  "passed": true,
+  "method": "Same fixed-step shipped dynamics, straight fictional basin. A 60-second run is not terminal-speed validation.",
+  "results": [
+    {
+      "hpPerEngine": 300,
+      "engines": 1,
+      "assumedEngineKg": 277,
+      "profile": "seamanship",
+      "massKg": 2124.4561131537675,
+      "speedKnots": 43.76266250045546,
+      "speedMph": 50.36117259631472,
+      "zeroTo30Seconds": 7.934911266898799,
+      "elapsedSimulationSeconds": 60,
+      "performanceValidated": false
+    },
+    {
+      "hpPerEngine": 450,
+      "engines": 1,
+      "assumedEngineKg": 437,
+      "profile": "seamanship",
+      "massKg": 2283.8528383268585,
+      "speedKnots": 49.83659370974821,
+      "speedMph": 57.350927800677596,
+      "zeroTo30Seconds": 5.169716574872709,
+      "elapsedSimulationSeconds": 60,
+      "performanceValidated": false
+    },
+    {
+      "hpPerEngine": 300,
+      "engines": 2,
+      "assumedEngineKg": 277,
+      "profile": "seamanship",
+      "massKg": 2400.2076140397353,
+      "speedKnots": 54.07544422853457,
+      "speedMph": 62.22890986094087,
+      "zeroTo30Seconds": 3.995432060636948,
+      "elapsedSimulationSeconds": 60,
+      "performanceValidated": false
+    },
+    {
+      "hpPerEngine": 300,
+      "engines": 1,
+      "assumedEngineKg": 277,
+      "profile": "sport",
+      "massKg": 2124.446754645655,
+      "speedKnots": 47.08355103388973,
+      "speedMph": 54.18278286976792,
+      "zeroTo30Seconds": 4.3161370503484235,
+      "elapsedSimulationSeconds": 60,
+      "performanceValidated": false
+    }
+  ]
+}

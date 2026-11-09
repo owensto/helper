@@ -1,0 +1,21 @@
+{
+  "tracks": [
+    {
+      "file": "lowcountry_drift.ogg",
+      "duration_seconds": 64.0,
+      "sample_rate": 24000,
+      "channels": 2,
+      "sha256": "6436ebec105072261a469572009c40d77c4f0d74de48aa660d15f134650862f9",
+      "source": "Original deterministic instrumental synthesis, code included; not a broadcast or commercial recording"
+    },
+    {
+      "file": "tidal_run.ogg",
+      "duration_seconds": 51.429,
+      "sample_rate": 24000,
+      "channels": 2,
+      "sha256": "af55ac75722a234b3a3cb5eab805c19de964af46bc609527f1b9c0019e91c220",
+      "source": "Original deterministic instrumental synthesis, code included; not a broadcast or commercial recording"
+    }
+  ],
+  "attribution": "Original ATLAS app mixes; no claim of live radio reception."
+}

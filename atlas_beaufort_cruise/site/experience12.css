@@ -1,0 +1,25 @@
+/* Live chart never hides the driving controls. Native controls remain labeled. */
+#helm09.sea12 #s12-wot{background:#315c61;color:#fff;min-width:88px}
+#helm09.sea12 #helm09-mapcard{width:380px;max-height:500px;overflow:auto}
+#helm09.sea12 #helm09-mapcanvas{width:100%;height:auto;max-height:235px}
+#s12-maptabs{display:flex;gap:8px;padding:8px 12px}#s12-maptabs button{flex:1}
+#s12-geographic{height:250px;background:#b5d6dc;color:#182f36}#s12-geographic[hidden]{display:none!important}
+#s12-mapcredit{font-size:11px;line-height:1.45;padding:5px 12px;color:#c4d8d6}#s12-mapcredit a{color:#c4e5db}
+#helm09.sea12 #s12-streettiles{font-size:12px;min-height:38px;padding:6px 10px;margin-top:4px}
+#helm09.sea12 #s12-gobeaufort{width:calc(100% - 24px);margin:6px 12px}
+#helm09.sea12 .leaflet-control-zoom a{color:#12343c;font-size:24px}#helm09.sea12 .leaflet-control-attribution{font-size:10px;color:#333}
+#helm09.sea12 .leaflet-control-attribution a{color:#16596d}
+@media(max-width:900px) and (min-height:561px){
+#helm09.sea12 .s11-quick{display:grid;grid-template-columns:1fr 1fr 1fr}#helm09.sea12 #s11-look{display:none}
+#helm09.sea12 .h09-views{top:169px}#helm09.sea12 .h09-views #s11-help{display:none}
+#helm09.sea12 #helm09-mapcard{top:224px;bottom:auto;left:8px;right:8px;width:auto;max-height:calc(100dvh - 570px);min-height:142px;border-radius:16px;z-index:10}
+#helm09.sea12 #helm09-mapcard .h09-panelhead{padding:5px 10px}#helm09.sea12 #helm09-mapcard h2{font-size:16px}
+#helm09.sea12 #helm09-mapcard .h09-mapcontrols{display:none}#helm09.sea12 #helm09-mapnote{display:none}
+#helm09.sea12 #s12-maptabs{padding:4px 10px}#helm09.sea12 #s12-maptabs button{min-height:44px;padding:8px;font-size:13px}
+#helm09.sea12 #s12-geographic{height:190px}#helm09.sea12 #helm09-mapcanvas{max-height:180px;object-fit:contain}
+#helm09.sea12 #s12-mapcredit{font-size:10px}#helm09.sea12 #s12-gobeaufort{font-size:13px;min-height:44px}
+#helm09.sea12.s12-map-open .h09-dock{visibility:visible}#helm09.sea12.s12-map-open #s11-notice{display:none}
+}
+@media(max-height:560px) and (max-width:1000px){#helm09.sea12 #helm09-mapcard{top:70px;left:8px;right:300px;bottom:66px;width:auto;max-height:none;min-height:0}#helm09.sea12 #helm09-mapcanvas{height:160px;object-fit:contain}#helm09.sea12 #s12-geographic{height:160px}#helm09.sea12 #s12-mapcredit,#helm09.sea12 #helm09-mapnote,#helm09.sea12 .h09-mapcontrols{display:none}#helm09.sea12.s12-map-open .h09-dock{visibility:visible}}
+
+#helm09.coastal11 #s11-look{color:var(--ink)!important}

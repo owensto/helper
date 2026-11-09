@@ -1,0 +1,51 @@
+{
+  "retrievedUTC": "2026-10-17T04:39:03Z",
+  "paidServices": false,
+  "errors": [],
+  "previousAttempt": "39003108821: source CRS was NAD83 not WGS84; Overpass endpoints unavailable. No data from that attempt are reused.",
+  "terrain": {
+    "source": "https://chs.coast.noaa.gov/htdata/Inundation/SLR/BulkDownload/DEMs/SC/SC_South_GCS_3m_NAVDm.tif",
+    "sourceCRS": "EPSG:4269",
+    "outputCRS": "EPSG:4326",
+    "sourcePixelDegrees": [
+      2.6949458523585527e-05,
+      2.694945852358555e-05
+    ],
+    "sourceNoData": -9999.0,
+    "units": "centimetres NAVD88; int16 little-endian; -32768 unknown",
+    "horizontal": "equirectangular local metres; +X east,+Z south",
+    "origin": [
+      32.4271,
+      -80.6749
+    ],
+    "boundsXZ": [
+      -1800,
+      -1500,
+      1800,
+      1500
+    ],
+    "width": 361,
+    "height": 301,
+    "gridInterpretation": "pixel centers over bounds; north to south rows",
+    "resampling": "rasterio GDAL CRS reprojection and bilinear downsampling; no survey-accuracy assertion",
+    "validSamples": 71615,
+    "unknownSamples": 37046,
+    "minNAVDm": -9.995458602905273,
+    "maxNAVDm": 8.47325611114502,
+    "rawSHA256": "36eb4f3c8209443721c096d0827806fd46f4d385357b084314ded99ffa2f908f",
+    "datumConversion": {
+      "NAVD88toMLLWMetres": 1.35,
+      "station": "8667999",
+      "tidalEpoch": "1983-2001",
+      "source": "https://tidesandcurrents.noaa.gov/benchmarks/8667999.html",
+      "scope": "single local station approximation; not a spatial VDatum transform"
+    },
+    "notBathymetry": true
+  },
+  "osm": {
+    "source": "https://www.openstreetmap.org/api/0.6/map?bbox=-80.682,32.427,-80.668,32.433",
+    "elements": 260,
+    "licence": "OpenStreetMap contributors ODbL 1.0",
+    "rawResponseSHA256": "3ca7d18a86d8ca1b5b1d4ca90b0299ba7d39a94147ad800d25c7a8d6b086030b"
+  }
+}

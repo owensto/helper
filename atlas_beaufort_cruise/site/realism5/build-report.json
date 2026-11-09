@@ -1,0 +1,261 @@
+{
+  "version": "Lightweight Realism 5",
+  "base": "2c2e75a441b5660d40eb5327b3a72f92acbd4ef2",
+  "changed": [
+    "coastal14.js",
+    "command-motion.js",
+    "cruise/coast-stream.js",
+    "harbor4/camera.js",
+    "harbor4/dolphin.js",
+    "harbor4/harbor.css",
+    "harbor4/harbor.js",
+    "index.html",
+    "physics14.js",
+    "water12.js"
+  ],
+  "unchanged": 285,
+  "newFiles": [
+    "marine-field.js",
+    "wildlife.js",
+    "surfaces.js"
+  ],
+  "newTextures": 0,
+  "newModels": 0,
+  "newDrawCalls": 0,
+  "nativeClockRetained": true,
+  "forceCoefficientsChanged": false,
+  "waveGeometryChanged": false,
+  "geographyChanged": false,
+  "physicsChange": "analytic current-pose encounter-wave velocity instead of backward finite difference",
+  "browserVerified": false,
+  "GPUVerified": false,
+  "physicalDeviceVerified": false,
+  "FPSVerified": false,
+  "patches": [
+    {
+      "file": "command-motion.js",
+      "anchor": "const wx=this.x+buoyC*xx-buoyS*zz,wz=this.z+buoyS*xx+buoyC*zz,sea=Comm",
+      "count": 1
+    },
+    {
+      "file": "command-motion.js",
+      "anchor": "CommandMotion.surface=(x,z,t,p='calm')=>G.Sea11Waves.sample(x,z,t,(pre",
+      "count": 1
+    },
+    {
+      "file": "physics14.js",
+      "anchor": "let colliderList=[],grid=new Map();",
+      "count": 1
+    },
+    {
+      "file": "physics14.js",
+      "anchor": "installColliders(list){colliderList=list;grid=new Map();",
+      "count": 1
+    },
+    {
+      "file": "physics14.js",
+      "anchor": "const ids=new Set(),cx=Math.floor(s.x/32),cz=Math.floor(s.z/32);for(le",
+      "count": 1
+    },
+    {
+      "file": "physics14.js",
+      "anchor": "colliders:colliderList.length,indexCells:grid.size",
+      "count": 1
+    },
+    {
+      "file": "harbor4/harbor.js",
+      "anchor": "pod=new C.Pod(env)",
+      "count": 1
+    },
+    {
+      "file": "harbor4/harbor.js",
+      "anchor": "photo:()=>app.classList.contains('photo14'),blocked:",
+      "count": 1
+    },
+    {
+      "file": "harbor4/harbor.js",
+      "anchor": "app.classList.toggle('h4-free',mode==='free');$('helm09-pause').disabl",
+      "count": 1
+    },
+    {
+      "file": "harbor4/harbor.js",
+      "anchor": "function customLook(){return ['orbit','free'].includes(camera.inspect(",
+      "count": 1
+    },
+    {
+      "file": "harbor4/harbor.js",
+      "anchor": "if(['orbit','chase'].includes(camera.inspect().mode))",
+      "count": 1
+    },
+    {
+      "file": "harbor4/harbor.js",
+      "anchor": "function setWildlife(value){wildlife=!!value;",
+      "count": 1
+    },
+    {
+      "file": "harbor4/harbor.js",
+      "anchor": "// Decorative fittings are anchored to mapped pier collider centres, n",
+      "count": 1
+    },
+    {
+      "file": "harbor4/harbor.js",
+      "anchor": "add(wildlife?'Dolphins: on':'Dolphins: off'",
+      "count": 1
+    },
+    {
+      "file": "harbor4/harbor.js",
+      "anchor": "if(kind==='g3-play')add(wildlife?'Dolphins enabled \u00b7 watch the water':",
+      "count": 1
+    },
+    {
+      "file": "harbor4/harbor.js",
+      "anchor": "m.group.visible=d.active&&C.wildlifeWater(d.x,d.z,env);",
+      "count": 1
+    },
+    {
+      "file": "harbor4/harbor.js",
+      "anchor": "const ring=ripples[i],phase=(pod.elapsed+d.phase)%13;ring.visible=m.gr",
+      "count": 1
+    },
+    {
+      "file": "harbor4/harbor.js",
+      "anchor": "camera,tick,planRecovery,setWildlife,notice:say",
+      "count": 1
+    },
+    {
+      "file": "harbor4/harbor.js",
+      "anchor": "dolphins:models.length,dolphinEnabled:wildlife,",
+      "count": 1
+    },
+    {
+      "file": "harbor4/harbor.js",
+      "anchor": "document.title='ATLAS \u00b7 Beaufort Wildlife & Views';",
+      "count": 1
+    },
+    {
+      "file": "harbor4/camera.js",
+      "anchor": "function isFree(){return mode==='free';}",
+      "count": 1
+    },
+    {
+      "file": "harbor4/camera.js",
+      "anchor": "['first','chase','orbit','free'].includes(next)",
+      "count": 1
+    },
+    {
+      "file": "harbor4/camera.js",
+      "anchor": "const wasFree=isFree();",
+      "count": 1
+    },
+    {
+      "file": "harbor4/camera.js",
+      "anchor": "if(isFree()){const old=savedPause;",
+      "count": 1
+    },
+    {
+      "file": "harbor4/camera.js",
+      "anchor": "mode=next;if(next==='chase'",
+      "count": 1
+    },
+    {
+      "file": "harbor4/camera.js",
+      "anchor": "if(mode==='orbit'){yaw=",
+      "count": 1
+    },
+    {
+      "file": "harbor4/camera.js",
+      "anchor": "if(mode==='orbit'||mode==='chase')distance",
+      "count": 1
+    },
+    {
+      "file": "harbor4/camera.js",
+      "anchor": "if(!isFree())return false;",
+      "count": 1
+    },
+    {
+      "file": "harbor4/camera.js",
+      "anchor": " if(isFree()){\n",
+      "count": 1
+    },
+    {
+      "file": "harbor4/camera.js",
+      "anchor": "freeCameraPausesBoat:true,boatInputsDisabled:isFree()",
+      "count": 1
+    },
+    {
+      "file": "harbor4/camera.js",
+      "anchor": "if(isFree()&&savedPause!==null)",
+      "count": 1
+    },
+    {
+      "file": "harbor4/harbor.css",
+      "anchor": "#helm09.harbor4.h4-free #helm09-pause{opacity:.5;cursor:default}",
+      "count": 1
+    },
+    {
+      "file": "harbor4/harbor.js",
+      "anchor": "camera.key(e.code,true)||['KeyF','KeyR','KeyN','KeyP','KeyZ'].includes",
+      "count": 1
+    },
+    {
+      "file": "cruise/coast-stream.js",
+      "anchor": "g.computeBoundingSphere();",
+      "count": 1
+    },
+    {
+      "file": "harbor4/dolphin.js",
+      "anchor": "body.frustumCulled=false;body.castShadow=true;",
+      "count": 1
+    },
+    {
+      "file": "coastal14.js",
+      "anchor": "if(window.AtlasHarborFinish)AtlasHarborFinish.material(kind,sh);",
+      "count": 1
+    },
+    {
+      "file": "coastal14.js",
+      "anchor": "coastal14-harbor4-${kind}",
+      "count": 1
+    },
+    {
+      "file": "water12.js",
+      "anchor": "stern={value:new T.Vector4()};",
+      "count": 1
+    },
+    {
+      "file": "water12.js",
+      "anchor": "sh.uniforms.uStern12=stern;",
+      "count": 1
+    },
+    {
+      "file": "water12.js",
+      "anchor": "sh.fragmentShader=AtlasHarborFinish.reflection(sh.fragmentShader);",
+      "count": 1
+    },
+    {
+      "file": "water12.js",
+      "anchor": "atlas-harbor4-soft-reflection",
+      "count": 1
+    },
+    {
+      "file": "water12.js",
+      "anchor": "previous();count.value=",
+      "count": 1
+    },
+    {
+      "file": "water12.js",
+      "anchor": "let frame=0,lastReflection13=-1e6,reflectionReady=false,sh12=null;",
+      "count": 1
+    },
+    {
+      "file": "water12.js",
+      "anchor": "if(!quality||++frame%4!==0||performance.now()-lastReflection13<125||A.",
+      "count": 1
+    },
+    {
+      "file": "index.html",
+      "anchor": "<script defer src=\"command-motion.js\">",
+      "count": 1
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "release": "08",
+  "base_artifact": 11996022685,
+  "changes": [
+    "clearcoat gelcoat and fine deck/upholstery textures",
+    "bounded bow-foam and spray pools tied to vessel motion",
+    "bounded echo-band sounder and A-scope",
+    "always-reachable pause control",
+    "radio seek and stereo speaker positioning",
+    "preserved repaired geometry, instrument data and faster dynamics"
+  ],
+  "simulated_not_sea_trials": true,
+  "live_broadcast_bundled": false,
+  "review_run": 38812973288,
+  "browser_passed": [
+    "desktop",
+    "phone"
+  ],
+  "physical_device_tested": false,
+  "source_commit": "7d05d49db7de6b01dfdab9c9580d9f308f9a32bf",
+  "model_sha256": "b1ef9c448309a9a5d85ec4f2efcf45d9406d999ab24d27bdd1534359a7278b82",
+  "sounder_history_reset_fixed": true
+}

@@ -1,0 +1,12 @@
+{
+  "release": 14,
+  "basePublic": "491fbb0133fde085c03e4ee93db34f4e630a3c42",
+  "public13Unchanged": true,
+  "newStation": false,
+  "experimentalHuman": false,
+  "multiplayer": false,
+  "modelUnchanged": true,
+  "physics": "added mass, clutch take-up, idling thrust, pitch-aware prop immersion, buoyancy damping; uncalibrated",
+  "terrain": "NOAA NAVD88 land window plus station8667999 datum approximation; channel bathymetry retained",
+  "scenery": "OSM/reference-informed reconstruction; many heights and facade details illustrative"
+}

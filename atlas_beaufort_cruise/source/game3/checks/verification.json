@@ -1,0 +1,287 @@
+{
+  "version": "Beaufort Harbor Life 3",
+  "passed": true,
+  "cpuChecks": 66,
+  "powerTrials": [
+    {
+      "rig": "single300",
+      "horsepower": 300,
+      "throttlePercent": 22,
+      "secondsTo30mph": null,
+      "knots": 7.051699163667974,
+      "mph": 8.114950471193907,
+      "propWet": 1,
+      "loadKg": 2125.5234686476115
+    },
+    {
+      "rig": "single300",
+      "horsepower": 300,
+      "throttlePercent": 100,
+      "secondsTo30mph": 6.433333333333334,
+      "knots": 43.76703057462305,
+      "mph": 50.36619928629423,
+      "propWet": 1,
+      "loadKg": 2123.8227585583827
+    },
+    {
+      "rig": "single450",
+      "horsepower": 450,
+      "throttlePercent": 100,
+      "secondsTo30mph": 4.25,
+      "knots": 49.84028810392964,
+      "mph": 57.355179233574475,
+      "propWet": 1,
+      "loadKg": 2282.9127944004986
+    },
+    {
+      "rig": "twin300",
+      "horsepower": 600,
+      "throttlePercent": 100,
+      "secondsTo30mph": 3.316666666666667,
+      "knots": 54.080502995436184,
+      "mph": 62.23473138592359,
+      "propWet": 1,
+      "loadKg": 2398.940904848965
+    }
+  ],
+  "suites": {
+    "input-menu-music-land": 20,
+    "physics": 15,
+    "stream": 19,
+    "scene": 5,
+    "radio": 7
+  },
+  "scope": "CPU inputs, synthetic DOM and native panel order; exact vessel step and scene files; shader-source assembly; media fixtures",
+  "browserVerified": false,
+  "CDNVerified": false,
+  "GPUVerified": false,
+  "actualMusicPlaybackVerified": false,
+  "physicalDeviceVerified": false,
+  "frameRateVerified": false,
+  "newCareerGameplayImplemented": false,
+  "build": {
+    "version": "Beaufort Harbor Life 3",
+    "base": "c0593c5d43f634394407a8758abd6908640c75d1",
+    "changed": [
+      "command-motion.js",
+      "index.html",
+      "helm09.js",
+      "coastal14.js",
+      "app.js",
+      "device/device-ui.js",
+      "cruise/cruise-ui.js"
+    ],
+    "unchangedFiles": 275,
+    "patches": [
+      {
+        "file": "app.js",
+        "anchor": "addEventListener('keydown',e=>{if(/INPUT|TEXTAREA|SELECT/.test(e.",
+        "count": 1
+      },
+      {
+        "file": "app.js",
+        "anchor": "if(document.hidden)return;time+=dt;frame++;",
+        "count": 1
+      },
+      {
+        "file": "app.js",
+        "anchor": "setPaused:(v)=>{gamePaused=!!v;",
+        "count": 1
+      },
+      {
+        "file": "helm09.js",
+        "anchor": "function openPanel(kind){",
+        "count": 1
+      },
+      {
+        "file": "helm09.js",
+        "anchor": "addEventListener('keydown',e=>{if(/INPUT|TEXTAREA|SELECT/.test(e.",
+        "count": 1
+      },
+      {
+        "file": "cruise/cruise-ui.js",
+        "anchor": "const prior=SEA10.renderPanel;",
+        "count": 1
+      },
+      {
+        "file": "cruise/cruise-ui.js",
+        "anchor": "function panel(kind,body){",
+        "count": 1
+      },
+      {
+        "file": "cruise/cruise-ui.js",
+        "anchor": "if(kind==='radio'){\n   const box",
+        "count": 1
+      },
+      {
+        "file": "cruise/cruise-ui.js",
+        "anchor": "   body.prepend(box);\n  }",
+        "count": 1
+      },
+      {
+        "file": "cruise/cruise-ui.js",
+        "anchor": "n.onclick=()=>{if(local())fn();}",
+        "count": 1
+      },
+      {
+        "file": "device/device-ui.js",
+        "anchor": "function paintSteer(){const v=steering.value;",
+        "count": 1
+      },
+      {
+        "file": "device/device-ui.js",
+        "anchor": "const r=H.radio();music.hidden=",
+        "count": 1
+      },
+      {
+        "file": "command-motion.js",
+        "anchor": "const c=Math.cos(this.heading),s=Math.sin(this.heading);",
+        "count": 1
+      },
+      {
+        "file": "command-motion.js",
+        "anchor": "// Four unilateral buoyancy/support samples.",
+        "count": 1
+      },
+      {
+        "file": "command-motion.js",
+        "anchor": " for(const [xx,zz] of [[2.6,-.75]",
+        "count": 1
+      },
+      {
+        "file": "command-motion.js",
+        "anchor": "const wx=this.x+c*xx-s*zz,wz=this.z+s*xx+c*zz,sea=",
+        "count": 1
+      },
+      {
+        "file": "command-motion.js",
+        "anchor": "CommandMotion.surface(wx-this.vx*dt,wz-this.vz*dt,this.elapsed-dt",
+        "count": 1
+      },
+      {
+        "file": "coastal14.js",
+        "anchor": " };m.customProgramCacheKey=()=>`coastal14-${kind}`;",
+        "count": 1
+      },
+      {
+        "file": "index.html",
+        "anchor": "<script defer src=\"coastal14.js\">",
+        "count": 1
+      },
+      {
+        "file": "index.html",
+        "anchor": "</head>",
+        "count": 1
+      },
+      {
+        "file": "index.html",
+        "anchor": "<title>ATLAS Sea Lab 13 \u00b7 Beaufort River</title>",
+        "count": 1
+      }
+    ],
+    "newPhysicsCoefficients": false,
+    "yawSamplingCorrected": true,
+    "landMaterialChanged": true,
+    "newSceneryMeshes": false,
+    "browserVerified": false,
+    "GPUVerified": false
+  },
+  "regressions": [
+    {
+      "name": "WASD works from the focused power range; arrows remain slider-native",
+      "passed": true
+    },
+    {
+      "name": "W/S are continuous power intents; releasing retains the lever position",
+      "passed": true
+    },
+    {
+      "name": "A/D ramp target and center on release; both directions cancel",
+      "passed": true
+    },
+    {
+      "name": "Holding W and S together does not creep throttle",
+      "passed": true
+    },
+    {
+      "name": "Text, content-editable and modifier shortcuts never drive the boat",
+      "passed": true
+    },
+    {
+      "name": "Menu/Pause gating releases held keys and never resumes automatically",
+      "passed": true
+    },
+    {
+      "name": "Lost focus, hidden page and disposal clear installed input listeners",
+      "passed": true
+    },
+    {
+      "name": "Docking cap, reference trim and pointer ownership remain intact",
+      "passed": true
+    },
+    {
+      "name": "Space gives explicit idle+Neutral, not velocity manipulation",
+      "passed": true
+    },
+    {
+      "name": "Authority loss does not send input to another boat; event-code fallback works",
+      "passed": true
+    },
+    {
+      "name": "Native Music fallback reproduces disappearance before correction",
+      "passed": true,
+      "beforeCountryCards": 0
+    },
+    {
+      "name": "Same native Music flow retains both default queues after correction",
+      "passed": true,
+      "afterDefaultCountryQueues": 2
+    },
+    {
+      "name": "Rapid panel switch cannot resurrect playlists; reopening has one copy",
+      "passed": true
+    },
+    {
+      "name": "Detached country buttons are inert, with no autoplay on menu opening",
+      "passed": true
+    },
+    {
+      "name": "Dashboard has six labeled categories and Music at first level",
+      "passed": true
+    },
+    {
+      "name": "Menu roadmap labels planned gameplay; old buttons die after navigation",
+      "passed": true
+    },
+    {
+      "name": "Buoyancy current samples match the newly rotated hull, with red/green measurement",
+      "passed": true,
+      "before": {
+        "currentError": 0.026635020813022974,
+        "previousError": 0,
+        "heading": 0.7097371395313714
+      },
+      "after": {
+        "currentError": 0,
+        "previousError": 0,
+        "heading": 0.7097371395313714
+      },
+      "scope": "actual production step with an analytic test water surface"
+    },
+    {
+      "name": "Straight-heading calm model remains numerically unchanged",
+      "passed": true,
+      "knots": 43.766790699460294
+    },
+    {
+      "name": "Material detail hooks bind actual Three standard shader without adding geometry",
+      "passed": true,
+      "materials": 8,
+      "GPUCompiled": false
+    },
+    {
+      "name": "Native model, depth, colliders and 64-cell scenery are byte-preserved",
+      "passed": true
+    }
+  ]
+}

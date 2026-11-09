@@ -1,0 +1,19 @@
+{
+  "release": "06",
+  "base": "Sea Lab 05.1 unpublished candidate",
+  "audio": "Generic CC0 field recording + original synthesis; not specific F300/450",
+  "speed": "Reference-informed custom resistance; source F300 mode separate",
+  "real_hull_performance_validated": false,
+  "google_activated": false,
+  "render_repair": "New deck/liner geometry and hull-local water exclusion; not pressure or flooding physics",
+  "changes": [
+    "Closed eight unintended planar deck apertures",
+    "Closed coaming-to-liner and floor-to-liner seams",
+    "Prevented infinite water surface rendering inside the boat",
+    "Preserved hatches, drawers, bolsters, hull silhouette, engine configuration",
+    "Merged identical-material NOAA scenery into two opaque draw groups",
+    "Knots HUD, physical MFD chart/sounder/engine monitor",
+    "Recorded outboard with spatial engine voices and layered wake audio",
+    "Consistent idempotent pause and audio state"
+  ]
+}

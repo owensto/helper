@@ -1,0 +1,58 @@
+{
+  "source": "https://freesound.org/people/nomadas/sounds/690160/",
+  "author": "nomadas",
+  "license": "CC0 1.0",
+  "actual_engine_unknown": true,
+  "measured_rpm_layers": false,
+  "layer_mapping": "Art-directed low/mid/high texture blends, NOT measured RPM recordings",
+  "layers": [
+    {
+      "file": "engine09_low.ogg",
+      "excerpt_seconds": [
+        104,
+        112
+      ],
+      "bandpass_hz": [
+        42,
+        4800
+      ],
+      "crossfade_seconds": 0.45,
+      "rms": 0.15474928025110443,
+      "peak": 0.5887587471314792,
+      "duration": 7.55,
+      "sha256": "b0d6b120834a9f042c14bc0ccecd3b5242b51d403215ad3be713a2bc3afd2a20"
+    },
+    {
+      "file": "engine09_mid.ogg",
+      "excerpt_seconds": [
+        64,
+        72
+      ],
+      "bandpass_hz": [
+        42,
+        4800
+      ],
+      "crossfade_seconds": 0.45,
+      "rms": 0.15561270136485464,
+      "peak": 0.5058415904098735,
+      "duration": 7.55,
+      "sha256": "fb55968af6c168c654358a6dcc430f16d9fefa13dbddc728ed11f7146715da01"
+    },
+    {
+      "file": "engine09_high.ogg",
+      "excerpt_seconds": [
+        8,
+        16
+      ],
+      "bandpass_hz": [
+        42,
+        4800
+      ],
+      "crossfade_seconds": 0.45,
+      "rms": 0.15673364361741762,
+      "peak": 0.4225945994908692,
+      "duration": 7.55,
+      "sha256": "d9a86c844faf1a816abf215688beab9b832602ffb3890be5ddd71eddf5cc414f"
+    }
+  ]
+}

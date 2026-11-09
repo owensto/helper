@@ -1,0 +1,373 @@
+{
+  "version": "Mobile Driving 6",
+  "passed": true,
+  "cpuChecks": 136,
+  "newChecks": 29,
+  "retainedChecks": 107,
+  "powerTrials": [
+    {
+      "rig": "single300",
+      "horsepower": 300,
+      "throttlePercent": 22,
+      "secondsTo30mph": null,
+      "knots": 7.051699163667974,
+      "mph": 8.114950471193907,
+      "propWet": 1,
+      "loadKg": 2125.5234686476115
+    },
+    {
+      "rig": "single300",
+      "horsepower": 300,
+      "throttlePercent": 100,
+      "secondsTo30mph": 6.433333333333334,
+      "knots": 43.76703057462305,
+      "mph": 50.36619928629423,
+      "propWet": 1,
+      "loadKg": 2123.8227585583827
+    },
+    {
+      "rig": "single450",
+      "horsepower": 450,
+      "throttlePercent": 100,
+      "secondsTo30mph": 4.25,
+      "knots": 49.84028810392964,
+      "mph": 57.355179233574475,
+      "propWet": 1,
+      "loadKg": 2282.9127944004986
+    },
+    {
+      "rig": "twin300",
+      "horsepower": 600,
+      "throttlePercent": 100,
+      "secondsTo30mph": 3.316666666666667,
+      "knots": 54.080502995436184,
+      "mph": 62.23473138592359,
+      "propWet": 1,
+      "loadKg": 2398.940904848965
+    }
+  ],
+  "scope": "Executed native loop/camera/UI handlers with synthetic DOM/render boundaries, retained math/scene/radio checks; not phone/render/playback/FPS evidence",
+  "browserVerified": false,
+  "physicalDeviceVerified": false,
+  "GPUVerified": false,
+  "FPSVerified": false,
+  "CDNVerified": false,
+  "actualMusicPlaybackVerified": false,
+  "addedSiteBytes": 16524,
+  "newModels": 0,
+  "newTextures": 0,
+  "newLibraries": 0,
+  "build": {
+    "version": "Mobile Driving 6",
+    "base": "6339a15b22232e2c830203c25a547c7a168c8e24",
+    "changed": [
+      "app.js",
+      "device/device-bootstrap.js",
+      "device/device-ui.js",
+      "experience14.js",
+      "game3/bootstrap.js",
+      "harbor4/camera.js",
+      "helm09.js",
+      "index.html",
+      "operations10.js"
+    ],
+    "unchanged": 290,
+    "newPhysicsCoefficients": false,
+    "fixedPhysicsStep": 0.016666666666666666,
+    "mobileMaxCatchupSteps": 12,
+    "browserVerified": false,
+    "physicalDeviceVerified": false,
+    "FPSVerified": false,
+    "patches": [
+      {
+        "file": "device/device-bootstrap.js",
+        "anchor": "paused:()=>A.isPaused(),",
+        "count": 1
+      },
+      {
+        "file": "device/device-ui.js",
+        "anchor": "const steering=new C.Steering(H);",
+        "count": 1
+      },
+      {
+        "file": "device/device-ui.js",
+        "anchor": "steering.start(e.pointerId,e.clientX,pad.getBoundingClientRe",
+        "count": 1
+      },
+      {
+        "file": "device/device-ui.js",
+        "anchor": "on(pad,'blur',()=>{steering.reset();paintSteer();});",
+        "count": 1
+      },
+      {
+        "file": "device/device-ui.js",
+        "anchor": "on(W,'blur',()=>{steering.reset();paintSteer();});on(D,'visi",
+        "count": 1
+      },
+      {
+        "file": "device/device-ui.js",
+        "anchor": "C.changePower(H,0);sync();",
+        "count": 1
+      },
+      {
+        "file": "device/device-ui.js",
+        "anchor": "C.fullPower(H);say('Full power selected; docking limit off. ",
+        "count": 1
+      },
+      {
+        "file": "device/device-ui.js",
+        "anchor": "on(power,'input',()=>{C.changePower(H,Number(power.value)/10",
+        "count": 1
+      },
+      {
+        "file": "device/device-ui.js",
+        "anchor": "function open(kind){steering.reset();",
+        "count": 1
+      },
+      {
+        "file": "device/device-ui.js",
+        "anchor": "on($('helm09-pause'),'click',()=>{steering.reset();",
+        "count": 1
+      },
+      {
+        "file": "device/device-ui.js",
+        "anchor": "powerValue.textContent=Math.round(s.throttle*100)+'%'+(H.doc",
+        "count": 1
+      },
+      {
+        "file": "device/device-ui.js",
+        "anchor": "s.trimActual,paused,panelOpen]",
+        "count": 1
+      },
+      {
+        "file": "device/device-ui.js",
+        "anchor": "if(D.activeElement!==power)power.value=",
+        "count": 1
+      },
+      {
+        "file": "device/device-ui.js",
+        "anchor": "const api={ready:true,inspect:",
+        "count": 1
+      },
+      {
+        "file": "device/device-ui.js",
+        "anchor": "if(disposed)return;steering.dispose();disposed=true;",
+        "count": 1
+      },
+      {
+        "file": "app.js",
+        "anchor": "let dt=Math.min(4,wallDt);if(wallDt>4&&ready",
+        "count": 1
+      },
+      {
+        "file": "app.js",
+        "anchor": "&&mode==='drive'&&state.engine){gamePaused=true;acc=0;timing",
+        "count": 1
+      },
+      {
+        "file": "app.js",
+        "anchor": "message('Rendering stalled. Paused instead of silently slowi",
+        "count": 1
+      },
+      {
+        "file": "app.js",
+        "anchor": "window.ATLAS_HELM_KEYS.tick(dt);",
+        "count": 1
+      },
+      {
+        "file": "game3/bootstrap.js",
+        "anchor": "||!$('helm09-panel').hidden||root.classList.contains('photo1",
+        "count": 1
+      },
+      {
+        "file": "harbor4/camera.js",
+        "anchor": "const keys=new Set(),",
+        "count": 1
+      },
+      {
+        "file": "harbor4/camera.js",
+        "anchor": "function update(dt){if(H.photo())return false;",
+        "count": 1
+      },
+      {
+        "file": "experience14.js",
+        "anchor": "if(window.SEA_SOFTWARE)effectiveScale=.5;",
+        "count": 1
+      },
+      {
+        "file": "experience14.js",
+        "anchor": "next=Math.min(1,next+.05)",
+        "count": 1
+      },
+      {
+        "file": "operations10.js",
+        "anchor": "Graphics stalled \u2014 simulation paused. Resume, or choose Bala",
+        "count": 1
+      },
+      {
+        "file": "operations10.js",
+        "anchor": "<button id=\"sea10-resume\">Resume</button>",
+        "count": 1
+      },
+      {
+        "file": "operations10.js",
+        "anchor": "$('sea10-resume').onclick=()=>A.setPaused(false);",
+        "count": 1
+      },
+      {
+        "file": "helm09.js",
+        "anchor": "function toggleMap(){",
+        "count": 1
+      },
+      {
+        "file": "index.html",
+        "anchor": "<script defer=\"\" src=\"app.js\">",
+        "count": 1
+      },
+      {
+        "file": "index.html",
+        "anchor": "</head>",
+        "count": 1
+      }
+    ]
+  },
+  "mobileTests": [
+    {
+      "name": "Reproduce old off-centre touch turn; new touch-down never turns",
+      "passed": true,
+      "beforeTarget": 1,
+      "afterTarget": 0
+    },
+    {
+      "name": "Drag is relative to first touch, not pad center; center deadzone is stable",
+      "passed": true
+    },
+    {
+      "name": "High-speed touch steering is gentler; slow maneuvering still has full range",
+      "passed": true,
+      "at48_6Knots": 0.21284634760705293,
+      "atRest": 1
+    },
+    {
+      "name": "Speed sensitivity follows water-relative motion, not current-only ground speed",
+      "passed": true
+    },
+    {
+      "name": "Touch steering slew is bounded, reversing drag cannot snap to opposite lock",
+      "passed": true
+    },
+    {
+      "name": "Mouse absolute steering and keyboard slider adjustment retain original behavior",
+      "passed": true
+    },
+    {
+      "name": "Second pointer cannot steal steering or release the first thumb",
+      "passed": true
+    },
+    {
+      "name": "Two independent thumb gestures adjust power and steering simultaneously",
+      "passed": true
+    },
+    {
+      "name": "Touching far end of power slider cannot jump to full throttle",
+      "passed": true
+    },
+    {
+      "name": "Power increases gradually, reduces faster, and reaches full without limiting terminal power",
+      "passed": true
+    },
+    {
+      "name": "Idle immediately cancels pending acceleration and never changes velocity or gear",
+      "passed": true
+    },
+    {
+      "name": "Canceled power gesture does not continue an unseen acceleration ramp",
+      "passed": true
+    },
+    {
+      "name": "Menus, Pause, map/free blockers and authority loss cancel held/pending input",
+      "passed": true
+    },
+    {
+      "name": "Gear or external throttle command wins over pending touch ramp",
+      "passed": true
+    },
+    {
+      "name": "Docking cap preserved unless Full explicitly removes it; no engine/gear operation",
+      "passed": true
+    },
+    {
+      "name": "30Hz and 60Hz touch ramps give the same actual target after one second",
+      "passed": true
+    },
+    {
+      "name": "Actual loop reproduction: old 1-second stall makes 59 unseen steps; mobile patch pauses before any",
+      "passed": true,
+      "beforeSteps": 59,
+      "beforeTravelM": 24.58333333333335,
+      "afterSteps": 0,
+      "afterTravelM": 0
+    },
+    {
+      "name": "Actual 30/60/120Hz simulation progress unchanged and native 1/60 step retained",
+      "passed": true
+    },
+    {
+      "name": "Actual long-frame guard also protects an unpowered coasting boat; desktop path retained",
+      "passed": true
+    },
+    {
+      "name": "Mobile catch-up bounded to 12 steps; hidden/paused frames do not generate false pauses",
+      "passed": true
+    },
+    {
+      "name": "A stationary unpowered boat does not pause merely because initial scenery is loading",
+      "passed": true
+    },
+    {
+      "name": "Actual chase camera: forward motion no longer adds metres of speed-dependent camera lag",
+      "passed": true,
+      "beforeLagM": 3.1709509241387934,
+      "afterLagM": 0,
+      "modeledSpeedMps": 25
+    },
+    {
+      "name": "Camera translation fix holds at 30/60/120Hz and preserves independent free inspection",
+      "passed": true
+    },
+    {
+      "name": "Actual installed handlers: second-thumb focus does not cancel captured steering",
+      "passed": true
+    },
+    {
+      "name": "Actual power pointer handlers suppress tap jump/native range writes and retain two-thumb input",
+      "passed": true
+    },
+    {
+      "name": "Actual menu and Pause actions clear gestures without operating engine/gears or hiding Pause",
+      "passed": true
+    },
+    {
+      "name": "Native mouse, keyboard, boat geometry, world/force coefficients, dolphins and music assets stay byte-identical",
+      "passed": true
+    },
+    {
+      "name": "Entry orders core before native loop and mobile receiver after camera/UI; no added animation/timer loop",
+      "passed": true
+    },
+    {
+      "name": "Actual mobile receiver selects locked chase and one View button; no simulation changes",
+      "passed": true
+    }
+  ],
+  "sourceHashes": {
+    "pins.json": "6ab686fecce103532fe65f5d8d2de7a751dd07be72b6a33175f69ff4ca299b16",
+    "build.py": "ee437d0f7d4084cb8b82842f927e38f6f935e1f28ee4d4990757b7ffb8bf3913",
+    "test.cjs": "a0a9b9e2bc7380c2686700efed98f5404335e02c26268da8683824f57c76ae79",
+    "check.py": "54f20bd208c5ea1662cea1cee66bd4e6314b838b94f94b5519933d7ba4999e9d",
+    "mobile-core.js": "8cd5f369189230c88ebfe38bad68625bcb6e4727837f0954cd9d391b982b84de",
+    "mobile.css": "3e2a5ecedc4a7f1ec5deb6bb8d7e5fa383f29125069712ee700086a1fc78b409",
+    "README.md": "78af8c5a922df8b1b5b81bb6dd3a3450e6d7a8590e7e5b142f55a36ddc00627b",
+    "mobile-ui.js": "7e4d658f26577b6d8b32e613c9634d60972ae6e76dfbff0440b6520ce1efe880"
+  }
+}

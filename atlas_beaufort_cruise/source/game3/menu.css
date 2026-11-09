@@ -1,0 +1,41 @@
+/* One dashboard, six destinations. Default driving HUD stays small. */
+#helm09.game3.device2 #helm09-panel{width:min(640px,calc(100vw - 24px));left:auto;right:max(12px,env(safe-area-inset-right,0px));top:max(74px,env(safe-area-inset-top,0px));bottom:max(14px,env(safe-area-inset-bottom,0px));max-height:calc(100dvh - 88px);border:1px solid #57706980;border-radius:24px;background:linear-gradient(150deg,#153b43fa,#0e242afa);box-shadow:0 24px 90px #00181e55;color:#f1f6f2;overflow:hidden;backdrop-filter:blur(18px)}
+#helm09.game3.device2 .h09-panelhead{padding:16px 20px;border-bottom:1px solid #78988e33;gap:14px;flex-shrink:0}
+#helm09.game3.device2 .h09-panelhead h2{font:600 23px/1.2 system-ui;margin:0;color:#f1f6f2}
+#helm09.game3.device2 #helm09-close{width:48px;height:48px;min-width:48px;border-radius:50%;background:#254852;font:28px/1 system-ui;color:#fff}
+#helm09.game3.device2 #helm09-panelbody{padding:18px 20px 24px;overflow:auto;overscroll-behavior:contain;scrollbar-width:thin;min-height:0;line-height:1.5}
+#helm09.game3 .g3-hero{display:grid;grid-template-columns:1fr auto;gap:4px 16px;align-items:center;padding:0 0 18px}
+#helm09.game3 .g3-kicker{font:600 11px system-ui;letter-spacing:.17em;color:#b9d1c9;grid-column:1}
+#helm09.game3 .g3-hero p{font:500 21px/1.3 system-ui;margin:4px 0;color:#f0f5ee;grid-column:1}
+#helm09.game3 .g3-hero button{grid-column:2;grid-row:1/3;min-height:50px;padding:12px 16px;background:#c5e7cb;color:#1b3d32;border:0;border-radius:14px;font-size:15px}
+#helm09.game3 .g3-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:10px 0 18px}
+#helm09.game3 .g3-grid .g3-card{display:grid;grid-template-columns:34px minmax(0,1fr);gap:6px 10px;align-items:start;text-align:left;min-height:112px;min-width:0;padding:17px 15px;background:#21464c;border:1px solid #78978c4a;border-radius:17px;box-shadow:none;white-space:normal;color:#fff;font-family:system-ui;cursor:pointer}
+#helm09.game3 .g3-card strong{font-size:18px;line-height:1.3;align-self:center}
+#helm09.game3 .g3-card small{grid-column:2;color:#c3d8d1;font-size:13px;line-height:1.5;font-weight:400;white-space:normal}
+#helm09.game3 .g3-icon{grid-row:1/3;border-radius:12px;background:#305b5d;width:34px;height:36px;display:grid;place-items:center;color:#d8edce;font:22px system-ui}
+#helm09.game3 .g3-card:hover{border-color:#c1ddc2;background:#2b5357}
+#helm09.game3 #g3-music{background:#375a4a;border-color:#b7d89b80}
+#helm09.game3 .g3-back,#helm09.game3 .g3-foot{display:flex;justify-content:space-between;gap:12px;margin:0 0 16px}
+#helm09.game3 .g3-back button,#helm09.game3 .g3-foot button{min-height:48px;padding:10px 14px;background:transparent;color:#d6e8dc;border:1px solid #94b3a64a;border-radius:12px;font-size:15px}
+#helm09.game3 .g3-field{display:grid;gap:8px;font-size:16px;margin:16px 0}
+#helm09.game3 .g3-field select{width:100%;min-height:52px;padding:12px;border:1px solid #9db7af60;border-radius:12px;background:#183940;color:#fff;font-size:16px}
+#helm09.game3 .g3-note{font-size:14px!important;line-height:1.6!important;color:#c1d5ce!important}
+#helm09.game3 .g3-intro{font-size:17px;line-height:1.6;color:#e4eee7}
+#helm09.game3 .g3-keys{display:grid;grid-template-columns:105px minmax(0,1fr);gap:12px;align-items:center;margin:18px 0;font-size:16px}
+#helm09.game3 .g3-keys kbd{padding:10px;background:#244950;border-radius:9px;text-align:center;font:600 15px system-ui;white-space:nowrap;color:#e4edca}
+#helm09.game3 .g3-plan{padding:12px 16px;margin:12px 0;border:1px solid #66827860;background:#1b3c43;border-radius:14px}
+#helm09.game3 .g3-plan h3{font-size:17px;margin:0 0 8px}
+#helm09.game3 .g3-plan p{font-size:15px;margin:0;color:#caddd5}
+#helm09.game3 .bc-playlists{margin:0 0 22px;padding:0;border:0}
+#helm09.game3 .bc-playlists h3{font-size:24px;margin:2px 0 6px}
+#helm09.game3 .bc-playlists>p{font-size:15px;color:#c6dcd4;line-height:1.5}
+#helm09.game3 .bc-music-card{background:linear-gradient(130deg,#315548,#214049);border:1px solid #acc69a77;border-radius:18px;margin:14px 0;padding:17px;display:flex;flex-direction:column;gap:10px}
+#helm09.game3 .bc-music-card>strong{font-size:21px;color:#edf5e8}
+#helm09.game3 .bc-music-card>small{font-size:14px;color:#d0e1d5}
+#helm09.game3 .bc-music-card>button{min-height:52px;background:#c7e6bd;color:#153a32;border:0;border-radius:12px;font:600 16px system-ui}
+#helm09.game3 .bc-music-card summary{min-height:44px;padding:6px 0;font-size:15px;cursor:pointer}
+#helm09.game3 .bc-music-card details button{display:block;width:100%;min-height:48px;text-align:left;font-size:15px;white-space:normal;margin:6px 0;padding:10px;border-radius:10px;background:#183a40;color:#edf4ee}
+#helm09.game3 button:focus-visible,#helm09.game3 summary:focus-visible,#helm09.game3 select:focus-visible{outline:3px solid #f8d686;outline-offset:3px}
+@media(max-width:600px){#helm09.game3.device2 #helm09-panel{left:8px;right:8px;width:auto;border-radius:20px;top:70px;bottom:calc(8px + env(safe-area-inset-bottom,0px));max-height:none}#helm09.game3.device2 #helm09-panelbody{padding:14px 14px 22px}#helm09.game3 .g3-hero{grid-template-columns:1fr}.g3-hero button{grid-column:1!important;grid-row:auto!important;width:100%}#helm09.game3 .g3-grid{gap:9px}#helm09.game3 .g3-grid .g3-card{grid-template-columns:1fr;padding:14px 12px;gap:8px;min-height:125px}#helm09.game3 .g3-icon{grid-row:auto}#helm09.game3 .g3-card small{grid-column:1;font-size:12px}#helm09.game3 .g3-card strong{font-size:16px}#helm09.game3 .g3-kicker{display:none}}
+@media(max-height:500px){#helm09.game3.device2 #helm09-panel{top:8px;max-height:calc(100dvh - 16px);bottom:8px;width:min(680px,calc(100vw - 24px));z-index:42}#helm09.game3 .g3-grid{grid-template-columns:repeat(3,minmax(0,1fr))}#helm09.game3 .g3-grid .g3-card{min-height:106px;padding:12px}#helm09.game3 .g3-hero{display:none}}
+@media(prefers-reduced-motion:reduce){#helm09.game3 *{scroll-behavior:auto!important}}

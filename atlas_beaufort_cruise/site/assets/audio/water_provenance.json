@@ -1,0 +1,12 @@
+{
+  "title": "River boat with outboard engine (bow breaking through water)",
+  "author": "nomadas",
+  "source": "https://freesound.org/people/nomadas/sounds/690162/",
+  "license": "CC0 1.0",
+  "source_specific_engine_unknown": true,
+  "role": "Generic hull-water texture; not a specific Atlas or Yamaha recording",
+  "included": true,
+  "source_sha256": "191da9f96d624b595ba3368ccc64b3cf9f4e796c5a5f25cf7383bacbfd3acef3",
+  "duration_seconds": 11.5,
+  "edits": "Stereo excerpt, filtering, equal-power half-second seam, amplitude limiting, Ogg"
+}

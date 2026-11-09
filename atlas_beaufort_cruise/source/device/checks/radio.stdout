@@ -1,0 +1,43 @@
+{
+  "passed": true,
+  "scope": "Exact existing radio class/stereo wrapper in synthetic media/WebAudio/pose host; no browser playback or listening test.",
+  "metrics": {
+    "directGain": 0.27,
+    "boatGain": {
+      "near": 0.27,
+      "fortyMetres": 0.08615188257817487,
+      "filterHz": 2400,
+      "pan": -0.75
+    }
+  },
+  "tests": [
+    {
+      "name": "Actual native play works with paused boat when music independence enabled",
+      "passed": true
+    },
+    {
+      "name": "Actual native optional follow-pause still pauses and restores same track",
+      "passed": true
+    },
+    {
+      "name": "Direct radio output stays constant with distance and panning centered",
+      "passed": true
+    },
+    {
+      "name": "Boat-speaker radio attenuates and darkens with distance; direction pans",
+      "passed": true
+    },
+    {
+      "name": "Music Pause is not undone by boat Pause/Resume or mode changes",
+      "passed": true
+    },
+    {
+      "name": "Hidden-tab playback protection and existing wanted state stay intact",
+      "passed": true
+    },
+    {
+      "name": "Speaker switching reuses one source graph without reloading music",
+      "passed": true
+    }
+  ]
+}

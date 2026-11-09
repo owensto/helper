@@ -1,0 +1,122 @@
+{
+  "passed": true,
+  "scope": "CPU, real asset integrity, deterministic streaming IO, native wave sampler and interaction policy; not GPU/browser/media listening",
+  "tests": [
+    {
+      "name": "Every prepared cell is hash verified and matches exact original geometry bytes",
+      "passed": true,
+      "detailCells": 64,
+      "geometryChunks": 404,
+      "unchangedTriangleCount": 596128,
+      "colliders": 2921
+    },
+    {
+      "name": "Cell plan is deterministic and current-near geometry precedes distant detail",
+      "passed": true
+    },
+    {
+      "name": "Fast travel requests ahead; camera/collision state is not modified",
+      "passed": true
+    },
+    {
+      "name": "Invalid or nonfinite origin cannot manufacture scene coverage",
+      "passed": true
+    },
+    {
+      "name": "Bounds prevent a large sphere from selecting unrelated coastal detail",
+      "passed": true
+    },
+    {
+      "name": "Invalid descriptors, reversed bounds and duplicate IDs rejected",
+      "passed": true
+    },
+    {
+      "name": "Concurrency and combined staged/resident detail budgets stay bounded",
+      "passed": true,
+      "requests": 4,
+      "mounted": 4,
+      "evictions": 0,
+      "cancelled": 0,
+      "failures": 0,
+      "discarded": 0,
+      "peakResidentBytes": 400,
+      "peakPending": 2,
+      "peakStagedBytes": 200,
+      "closed": false,
+      "desired": 4,
+      "ready": 4,
+      "pending": 0,
+      "stagedBytes": 0,
+      "residentBytes": 400,
+      "maxBytes": 400,
+      "failedTiles": 0
+    },
+    {
+      "name": "Repeated same-position updates do not request duplicates",
+      "passed": true
+    },
+    {
+      "name": "Abrupt travel cancels and discards late results without mounting stale scenery",
+      "passed": true
+    },
+    {
+      "name": "Wrong-sized payload cannot become a visible tile",
+      "passed": true
+    },
+    {
+      "name": "Failed load retries are delayed and bounded, not an infinite request storm",
+      "passed": true
+    },
+    {
+      "name": "An explicit scenery retry can recover after a bounded offline failure",
+      "passed": true
+    },
+    {
+      "name": "Geometry allocation failure is reported without claiming a ready tile",
+      "passed": true
+    },
+    {
+      "name": "Revisiting a cell recovers the same stable identity",
+      "passed": true
+    },
+    {
+      "name": "Dispose aborts requests, releases mounted resources once, and forbids restart",
+      "passed": true
+    },
+    {
+      "name": "Mapped-region cache traversal uses real decoded cells, not fabricated data",
+      "passed": true,
+      "loadedCells": 44,
+      "requests": 44,
+      "mounted": 44,
+      "evictions": 29,
+      "cancelled": 0,
+      "failures": 0,
+      "discarded": 0,
+      "peakResidentBytes": 7756596,
+      "peakPending": 2,
+      "peakStagedBytes": 2839212,
+      "closed": false,
+      "desired": 15,
+      "ready": 15,
+      "pending": 0,
+      "stagedBytes": 0,
+      "residentBytes": 7756596,
+      "maxBytes": 10485760,
+      "failedTiles": 0,
+      "scope": "cache traversal, not navigation or rendered gameplay"
+    },
+    {
+      "name": "Sightseeing completion requires position, low speed and known water without contact",
+      "passed": true
+    },
+    {
+      "name": "All scripts/styles are present and shared wake code loads before vessel physics",
+      "passed": true
+    },
+    {
+      "name": "Actual shared wave sampler installs on native source and fades before expiry",
+      "passed": true
+    }
+  ]
+}

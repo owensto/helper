@@ -1,0 +1,157 @@
+{
+  "passed": true,
+  "checks": 23,
+  "scope": "Native boat-step/math, actual Beaufort chart and Three scene/projection; shader-source assembly only; no browser/GPU/listening/FPS validation",
+  "tests": [
+    {
+      "name": "Height-only fast path agrees with the existing shared rendered water field",
+      "passed": true,
+      "maxHeightDifferenceM": 0
+    },
+    {
+      "name": "Analytic wake time and space derivatives match centered differences through attack and expiry fade",
+      "passed": true,
+      "maxDerivativeError": 2.3271958804471637e-9
+    },
+    {
+      "name": "Wake birth/expiry values and derivatives vanish smoothly without a new clock or spectrum",
+      "passed": true
+    },
+    {
+      "name": "Encounter velocity includes vessel translation and rotation on the analytic water surface",
+      "passed": true
+    },
+    {
+      "name": "Actual vessel step halves full ambient derivative evaluations at six buoyancy supports",
+      "passed": true,
+      "before": 16,
+      "after": 6,
+      "scope": "Native step function calls; not FPS"
+    },
+    {
+      "name": "Calm-water acceleration and terminal speed are retained without force multipliers",
+      "passed": true,
+      "beforeKnots": 43.76457653950954,
+      "afterKnots": 43.76457653950954
+    },
+    {
+      "name": "Swell with steering and reversal remains finite with bounded hull response",
+      "passed": true,
+      "endingMps": -3.7294668029557014
+    },
+    {
+      "name": "Propeller wash follows actual engine, clutch and immersion and does not fake thrust",
+      "passed": true
+    },
+    {
+      "name": "Cached collision candidates exactly match original tide/height filtering across Beaufort",
+      "passed": true,
+      "queries": 500,
+      "colliders": 2921
+    },
+    {
+      "name": "One thousand same-cell obstacle queries build the candidate list once, still rechecking tide",
+      "passed": true,
+      "queries": 1000,
+      "candidateBuilds": 1
+    },
+    {
+      "name": "Replacing collision data invalidates cached candidates and restores empty fallback",
+      "passed": true
+    },
+    {
+      "name": "Three dolphins start within 38–80 metres and at least one is immediately surfaced",
+      "passed": true
+    },
+    {
+      "name": "Unknown, shallow, land or solid positions never become fabricated wildlife habitat",
+      "passed": true
+    },
+    {
+      "name": "Surfacing is staggered and relative to encounter time even after a long session",
+      "passed": true
+    },
+    {
+      "name": "Wildlife pauses with simulation, reuses exactly three animals, and only reseeds after far separation",
+      "passed": true
+    },
+    {
+      "name": "Dolphin habitat checks are bounded at around 10Hz, not each render frame",
+      "passed": true,
+      "queriesPerSimulatedMinute": 3600,
+      "oldMinimumPerMinute": 21600
+    },
+    {
+      "name": "Actual Beaufort launch creates visible-cycle pod in real chart-known water and avoids original piers",
+      "passed": true,
+      "start": [
+        {
+          "x": -361.6227410531704,
+          "z": -81.55306822716976,
+          "distance": 37.99999999999999,
+          "depth": 0.12
+        },
+        {
+          "x": -356.64986130700504,
+          "z": -75.28645295014988,
+          "distance": 46.00000000000002,
+          "depth": 1.0602329075882793
+        },
+        {
+          "x": -351.67698156083975,
+          "z": -69.01983767313001,
+          "distance": 54.00000000000001,
+          "depth": 1.15
+        }
+      ],
+      "launch": [
+        -385.24391984745563,
+        -111.31949079301413
+      ],
+      "minutePassed": true
+    },
+    {
+      "name": "Actual wildlife camera puts the surfaced dolphin above-water silhouette in frame on portrait and desktop",
+      "passed": true,
+      "measurements": [
+        {
+          "viewport": [
+            430,
+            932
+          ],
+          "aboveWaterDorsalPixels": 50.80800540079674
+        },
+        {
+          "viewport": [
+            1440,
+            960
+          ],
+          "aboveWaterDorsalPixels": 52.334426163910805
+        }
+      ],
+      "scope": "Three camera projection only; not a rendered visibility test"
+    },
+    {
+      "name": "Skinned model uses conservative culling sphere instead of always drawing offscreen",
+      "passed": true
+    },
+    {
+      "name": "Surface detail preserves base shader blocks and adds no texture samplers",
+      "passed": true
+    },
+    {
+      "name": "Water foam adds load-controlled stern wash and edge-fades reflections without a new render pass",
+      "passed": true
+    },
+    {
+      "name": "Actual water render hook updates prop-wash uniforms and respects paused and moving reflection budgets",
+      "passed": true,
+      "reflectionCapturesDuringMovingSecond": 7,
+      "scope": "Real scheduling callback with renderer boundary stub; not GPU capture"
+    },
+    {
+      "name": "No boat, geography, media or scenery assets are replaced or enlarged",
+      "passed": true
+    }
+  ]
+}

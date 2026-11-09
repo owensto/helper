@@ -1,0 +1,32 @@
+{
+  "outer_hull_and_top": {
+    "EX_Hull": 0.0,
+    "FIXED_TTop": 0.0
+  },
+  "engineering_validated": false,
+  "intentional_hatch_parts": {
+    "PLAY_FISHBOX": true,
+    "PLAY_RODLOCKER": true,
+    "PLAY_DRAWER_1": true,
+    "PLAY_DRAWER_2": true,
+    "PLAY_DRAWER_3": true,
+    "PLAY_BOLSTER_1": true,
+    "PLAY_BOLSTER_2": true
+  },
+  "repairs": [
+    "REPAIR06_Cockpit_Cove_Starboard",
+    "REPAIR06_Cockpit_Cove_Port",
+    "REPAIR06_Coaming_Closure_Starboard",
+    "REPAIR06_Coaming_Closure_Port",
+    "REPAIR06_CastingDeck_ClosedPatch_8",
+    "REPAIR06_CastingDeck_ClosedPatch_7",
+    "REPAIR06_CastingDeck_ClosedPatch_6",
+    "REPAIR06_CastingDeck_ClosedPatch_5",
+    "REPAIR06_CastingDeck_ClosedPatch_4",
+    "REPAIR06_CastingDeck_ClosedPatch_3",
+    "REPAIR06_CastingDeck_ClosedPatch_2",
+    "REPAIR06_CastingDeck_ClosedPatch_1"
+  ],
+  "model_sha256": "b1ef9c448309a9a5d85ec4f2efcf45d9406d999ab24d27bdd1534359a7278b82",
+  "bytes": 9962552
+}

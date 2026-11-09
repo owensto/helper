@@ -1,0 +1,47 @@
+{
+  "title": "Beaufort River, South Carolina",
+  "origin": {
+    "lat": 32.4271,
+    "lng": -80.6749
+  },
+  "bbox": [
+    -80.735,
+    32.335,
+    -80.605,
+    32.485
+  ],
+  "bounds": [
+    -5647.11,
+    -6445.4,
+    6567.94,
+    10252.53
+  ],
+  "sources": [
+    {
+      "url": "https://encdirect.noaa.gov/arcgis/rest/services/encdirect/enc_harbour/MapServer/233/query",
+      "bbox": [
+        -80.735,
+        32.335,
+        -80.605,
+        32.485
+      ],
+      "count": 80,
+      "layer": 233,
+      "band": "enc_harbour"
+    },
+    {
+      "url": "https://encdirect.noaa.gov/arcgis/rest/services/encdirect/enc_harbour/MapServer/76/query",
+      "bbox": [
+        -80.735,
+        32.335,
+        -80.605,
+        32.485
+      ],
+      "count": 344,
+      "layer": 76,
+      "band": "enc_harbour"
+    }
+  ],
+  "retrieved": "2026-10-14T13:22:25.801128+00:00",
+  "warning": "NOAA ENC Direct GIS derivative, not navigation. Sparse chart soundings; interpolation is NOT measured depth at the vessel. Tide input is an assumed offset, not a prediction. Terrain heights and vegetation are illustrative."
+}

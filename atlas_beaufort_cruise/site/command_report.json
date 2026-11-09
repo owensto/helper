@@ -1,0 +1,52 @@
+{
+  "revision": "ATLAS Bay Sea Lab 04.2",
+  "model_sha256": "4456a7e157a19e550be0b270cf9649035ec6c17c77badfcad44789fb64ca26e1",
+  "boat_geometry_changed": false,
+  "runtime_engine_instances": true,
+  "layouts": [
+    "helm",
+    "follow",
+    "split",
+    "orbit",
+    "deck",
+    "engine"
+  ],
+  "profiles": [
+    "reference",
+    "seamanship",
+    "sport"
+  ],
+  "config_hp_range": [
+    90,
+    600
+  ],
+  "engine_counts": [
+    1,
+    2
+  ],
+  "custom_rig_validated": false,
+  "beaufort_source": "NOAA ENC Direct / harbour scale",
+  "google_map_requires_authorized_key": true,
+  "google_live_tested": false,
+  "under_one_foot_draft_validated": false,
+  "sonar": "Simulated visual history using limited nearby chart interpolation, not live sensing",
+  "tests_are_simulation_only": true,
+  "default_workspace": "drive",
+  "default_view": "helm",
+  "persisted_setups": true,
+  "persisted_test_history": true,
+  "engine_envelopes": "Illustrative small / standard / large; not engine-maker geometry",
+  "google_api_activated": false,
+  "native_installation_verified": false,
+  "supports_reproducible_test_comparisons": true,
+  "sonar_coverage": "NO DATA beyond 350m of sparse nearby soundings; no invented fish returns",
+  "previous_releases_unchanged": true,
+  "portrait_compact_controls": true,
+  "collapsible_view_selector": true,
+  "sticky_configuration_actions": true,
+  "real_google_map_tested": false,
+  "marine_validated": false,
+  "google_maps_status": "Adapter implemented; authorized API key still required",
+  "source_review_run": 38593856163,
+  "source_review_artifact": 11909727470
+}

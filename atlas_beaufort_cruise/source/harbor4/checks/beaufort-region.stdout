@@ -1,0 +1,55 @@
+{
+  "passed": true,
+  "checks": 4,
+  "scope": "Actual bundled geographic depth/terrain, pier colliders and CPU wildlife/recovery; no browser or marine-navigation certification",
+  "tests": [
+    {
+      "name": "Three dolphins can spawn in actual chart-known Beaufort water around the launch",
+      "passed": true,
+      "launch": [
+        -385.24391984745563,
+        -111.31949079301413
+      ],
+      "animals": [
+        {
+          "x": -332.9909166464182,
+          "z": -57.51778397554992
+        },
+        {
+          "x": -325.3271428435994,
+          "z": -49.62686697565517
+        },
+        {
+          "x": -317.6633690407806,
+          "z": -41.73594997576042
+        }
+      ]
+    },
+    {
+      "name": "One simulated minute of wildlife remains in actual known water clear of original piers",
+      "passed": true,
+      "colliders": 2921
+    },
+    {
+      "name": "Native launch crash has a checked nearby Beaufort recovery using full hull samples and original colliders",
+      "passed": true,
+      "from": [
+        -385.24391984745563,
+        -111.31949079301413
+      ],
+      "recovery": {
+        "x": -396.8708689079834,
+        "z": -114.2883383040684,
+        "heading": 0.25,
+        "location": "beaufort",
+        "reason": "nearby checked water",
+        "distance": 12
+      }
+    },
+    {
+      "name": "Lower tide forces revalidation rather than trusting stale recovery clearance",
+      "passed": true,
+      "recoveryAvailable": true
+    }
+  ]
+}

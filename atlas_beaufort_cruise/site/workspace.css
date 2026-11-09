@@ -1,0 +1,78 @@
+/* Sea Lab: three task-oriented workspaces, edge-docked controls, clear helm sightline. */
+#legacy-ui,body>button#quality,body>button#clearview{display:none!important}
+#command-app{font-family:Arial,Helvetica,sans-serif}
+#command-app .cmd-header{height:64px;background:#f0f3ed;box-shadow:0 4px 20px #12313d10}
+#command-app .cmd-header button{font-size:12px}
+#command-app .workspace-tabs{padding:4px;gap:4px}
+#command-app .cmd-panel{background:rgba(13,36,47,.96);border-color:#91b4bb30}
+#command-app #cmd-sidebar{top:126px;bottom:55px;width:330px;padding:19px}
+#command-app .layout-switch{top:77px;left:50%;transform:translateX(-50%);padding:5px 8px;border:1px solid #9dc2c044;box-shadow:0 4px 22px #1739401c}
+#command-app .layout-switch button{min-width:60px;font-size:12px}
+#command-app #cmd-expand{top:78px}
+#command-app .cmd-chart{top:126px;right:20px;width:300px}
+#command-app[data-layout=split] .cmd-chart{width:330px}
+#command-app .cmd-chart canvas{height:205px}
+#command-app .cmd-status{top:137px;bottom:auto;left:374px;max-width:55%;font-size:10px}
+#command-app[data-workspace=drive] .cmd-status{left:20px;top:137px;max-width:calc(100% - 390px)}
+#command-app #cmd-operator{width:360px;bottom:54px;right:20px}
+#command-app #cmd-operator .operator-heading{padding-bottom:5px}
+#command-app .operator-heading button{width:29px;height:29px;font-size:19px}
+#command-app .cmd-metrics strong{font-size:22px}
+#command-app .cmd-metrics small{font-size:7px}
+#command-app .cmd-metrics>div:nth-child(3) strong{font-size:19px}
+#command-app .cmd-primary,#command-app .cmd-secondary{min-height:43px}
+#command-app input[type=text]{height:38px;width:100%;margin-top:5px;background:#203f4b;border:1px solid #43606a;border-radius:5px;color:#fff;padding:8px}
+#command-app .test-result{margin:10px 0;padding:12px;background:#213e48;border:1px solid #51707a70;border-left:3px solid #a8e6ce;border-radius:6px;line-height:1.6}
+#command-app .test-result strong{font-size:13px;color:#dcf1e7;display:block}
+#command-app .test-result p{margin:6px 0}
+#command-app .test-result small{font-size:10px;color:#dbc998;display:block}
+#command-app #test-live{margin:12px 0;color:#afe1d2;font-size:12px;font-variant-numeric:tabular-nums}
+#command-app .map-open{position:fixed;top:78px;right:20px;background:#193d4c}
+#command-app.immersive .map-open{display:none!important}
+#command-app .gear-chip{font-size:14px;display:inline-flex;align-items:center;justify-content:center;width:30px;height:25px;background:#254753;border-radius:5px;color:#b7cbd2;margin-left:auto;margin-right:10px}
+#command-app .gear-chip.in-gear{color:#0e3934;background:#abe4ce}
+#command-app #cmd-restored{pointer-events:auto}
+#command-app #cmd-chart-panel[hidden],#command-app #map-open[hidden]{display:none!important}
+#command-app[data-workspace=test] #cmd-operator{opacity:.88}
+#command-app[data-workspace=test] #cmd-operator:hover{opacity:1}
+#command-app .basis-note{font-size:11px}
+#command-app .cmd-bottom>span{max-width:65%;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;letter-spacing:.4px}
+#command-app .cmd-dialog input{font-size:14px}
+#cmd-map,#cmd-sonar{object-fit:contain;background:#071d29}
+@media (max-width:1100px) and (min-width:701px){#command-app .layout-switch{left:355px;right:auto;transform:none}#command-app .layout-switch button{min-width:43px;padding:6px!important;font-size:11px}#command-app .cmd-chart{width:240px}#command-app[data-layout=split] .cmd-chart{width:300px}#command-app .cmd-status{left:370px;font-size:8px;max-width:29%}}
+@media(max-width:700px){
+ #command-app .cmd-header{height:60px;padding:7px 9px;gap:6px}
+ #command-app .cmd-brand{font-size:15px;letter-spacing:2px}#command-app .cmd-brand small{font-size:6px}
+ #command-app .workspace-tabs{gap:1px;padding:2px}#command-app .workspace-tabs button{font-size:10px;padding:6px 7px!important}
+ #command-app .header-right #cmd-panels{font-size:9px;max-width:37px}
+ #command-app .layout-switch{top:70px;left:8px;right:8px;transform:none;padding:4px;gap:1px}
+ #command-app .layout-switch button{min-width:0;font-size:10px;padding:6px 3px!important;min-height:31px!important}
+ #command-app .layout-switch span{display:none}
+ #command-app #cmd-sidebar{top:151px;left:8px;right:8px;width:auto;bottom:42px;padding:16px}
+ #command-app #cmd-expand{top:115px;left:8px}
+ #command-app .map-open{top:114px;right:8px;font-size:11px;min-height:31px}
+ #command-app .cmd-status,#command-app[data-workspace=drive] .cmd-status{top:157px;left:10px!important;max-width:95%;font-size:7px;gap:4px;bottom:auto}
+ #command-app[data-workspace=configure] .cmd-status,#command-app[data-workspace=test] .cmd-status{display:none}
+ #command-app .cmd-status span{padding:4px 6px}
+ #command-app .cmd-chart,#command-app[data-layout=split] .cmd-chart{top:150px;left:auto;right:8px;width:205px;padding:9px}
+ #command-app .cmd-chart canvas{height:126px}
+ #command-app[data-layout=split] .cmd-status{display:none}
+ #command-app #cmd-operator{left:8px;right:8px;bottom:41px;width:auto;padding:10px 13px}
+ #command-app #cmd-operator .row-actions{margin:5px 0}
+ #command-app #cmd-operator .cmd-metrics strong{font-size:20px}
+ #command-app #cmd-operator .cmd-metrics small{font-size:6px}
+ #command-app #cmd-operator label{font-size:10px}
+ #command-app #cmd-operator input[type=range]{height:25px;margin:1px 0 0}
+ #command-app #cmd-operator .form-two{gap:0 11px}
+ #command-app[data-workspace=configure] #cmd-operator,#command-app[data-workspace=test]:not(.sidebar-hidden) #cmd-operator{display:none}
+ #command-app .cmd-bottom{height:32px;padding:3px 8px}
+ #command-app .cmd-bottom>span{max-width:42%;font-size:7px}
+ #command-app .cmd-bottom button{font-size:9px;padding:4px 7px!important;min-height:24px!important}
+ #command-app .cmd-dialog{width:94vw}
+}
+@media(max-height:540px) and (min-width:701px){#command-app #cmd-sidebar{top:117px}#command-app #cmd-operator{bottom:46px;width:325px;padding:7px 10px}#command-app #cmd-operator .cmd-metrics{display:none}#command-app .cmd-chart{width:205px;top:130px}#command-app .cmd-chart canvas{height:100px}#command-app .cmd-status{display:none}}
+
+#touch-helm{display:none}#command-app .touch-steer{display:flex;gap:10px;position:fixed;left:13px;bottom:24px}#command-app .touch-steer button{height:50px;min-width:50px;border-radius:50%;background:#133642b8;color:#e1f2e9;font-size:21px;touch-action:none;border:1px solid #d8f2eb60}#command-app .touch-power{position:fixed;right:17px;bottom:25px;width:135px;color:#d7ede6;font-size:9px;text-align:right;text-shadow:0 1px 4px #122c35}#command-app .touch-power input{height:42px;touch-action:none}
+@media(max-width:900px){#command-app.immersive[data-workspace=drive] #touch-helm{display:block}}
+
+#test-legend{font-size:10px;color:#c0d4d5;margin:7px 0 12px}#command-app .header-right>span{max-width:175px}

@@ -1,0 +1,178 @@
+{
+  "passed": true,
+  "source": "https://yamahaoutboards.com/outboards/350-150-hp/v6-4-2l/f300-(4-2l)/pb_spt_masters-247_f300xsb2_6-28-2023_bay",
+  "referenceCurveReproduction": true,
+  "atlasPerformanceValidated": false,
+  "fullMarineDynamicsCalibrated": false,
+  "tests": [
+    {
+      "name": "All 11 original RPM / mph / GPH points match exactly",
+      "passed": true
+    },
+    {
+      "name": "Midpoint interpolation is linear in speed and fuel, never extrapolated",
+      "passed": true
+    },
+    {
+      "name": "Exact unit conversions",
+      "passed": true
+    },
+    {
+      "name": "Ranges use speed/fuel, not rounded MPG; reserve is explicit",
+      "passed": true
+    },
+    {
+      "name": "All 11 held-RPM equilibria match the source, independent of rendered mesh",
+      "passed": true,
+      "rows": [
+        {
+          "rpm": 1000,
+          "sourceMph": 5.3,
+          "simulationMph": 5.299943377165866,
+          "errorMph": -0.00005662283413343516,
+          "sourceGph": 1.4,
+          "simulationCurveGph": 1.4
+        },
+        {
+          "rpm": 1500,
+          "sourceMph": 7.3,
+          "simulationMph": 7.299922010058642,
+          "errorMph": -0.00007798994135743698,
+          "sourceGph": 2.3,
+          "simulationCurveGph": 2.3
+        },
+        {
+          "rpm": 2000,
+          "sourceMph": 8.5,
+          "simulationMph": 8.49990918979431,
+          "errorMph": -0.00009081020568935116,
+          "sourceGph": 3.9,
+          "simulationCurveGph": 3.9
+        },
+        {
+          "rpm": 2500,
+          "sourceMph": 11.1,
+          "simulationMph": 11.09988141255492,
+          "errorMph": -0.00011858744507975416,
+          "sourceGph": 5.5,
+          "simulationCurveGph": 5.5
+        },
+        {
+          "rpm": 3000,
+          "sourceMph": 17.5,
+          "simulationMph": 17.49981303781181,
+          "errorMph": -0.00018696218819158616,
+          "sourceGph": 6.6,
+          "simulationCurveGph": 6.6
+        },
+        {
+          "rpm": 3500,
+          "sourceMph": 29.6,
+          "simulationMph": 29.59968376681311,
+          "errorMph": -0.00031623318689000257,
+          "sourceGph": 8.5,
+          "simulationCurveGph": 8.5
+        },
+        {
+          "rpm": 4000,
+          "sourceMph": 34.8,
+          "simulationMph": 34.79962821233433,
+          "errorMph": -0.00037178766566370314,
+          "sourceGph": 11.8,
+          "simulationCurveGph": 11.8
+        },
+        {
+          "rpm": 4500,
+          "sourceMph": 39.7,
+          "simulationMph": 39.69957586292172,
+          "errorMph": -0.00042413707828359293,
+          "sourceGph": 15.3,
+          "simulationCurveGph": 15.3
+        },
+        {
+          "rpm": 5000,
+          "sourceMph": 44.2,
+          "simulationMph": 44.19952778693034,
+          "errorMph": -0.0004722130696634963,
+          "sourceGph": 20.2,
+          "simulationCurveGph": 20.2
+        },
+        {
+          "rpm": 5500,
+          "sourceMph": 49.2,
+          "simulationMph": 49.199474369162324,
+          "errorMph": -0.0005256308376786478,
+          "sourceGph": 25.9,
+          "simulationCurveGph": 25.9
+        },
+        {
+          "rpm": 5800,
+          "sourceMph": 50.9,
+          "simulationMph": 50.89945620712119,
+          "errorMph": -0.0005437928788083468,
+          "sourceGph": 26.4,
+          "simulationCurveGph": 26.4
+        }
+      ]
+    },
+    {
+      "name": "Actual source weight metadata does not rate the ATLAS hull",
+      "passed": true
+    },
+    {
+      "name": "3000 and 4500 RPM are not treated as 300 or 450 horsepower options",
+      "passed": true
+    },
+    {
+      "name": "Idle, neutral and reverse have no invented measured GPH",
+      "passed": true
+    },
+    {
+      "name": "Fuel ledger integrates a 3500-RPM curve rate over simulation time",
+      "passed": true
+    },
+    {
+      "name": "Unmetered startup marks balance and range as upper-bound scenarios",
+      "passed": true
+    },
+    {
+      "name": "Neutral retains momentum; reference turns are explicitly off-reference",
+      "passed": true
+    },
+    {
+      "name": "Reference conditions/trim locked; original experimental drift remains",
+      "passed": true
+    },
+    {
+      "name": "0–30 endpoint fit is reproducible at 60 and 120 Hz (fit, not validation)",
+      "passed": true,
+      "fittedResults": [
+        {
+          "dt": 0.016666666666666666,
+          "seconds": 7.686141080047607,
+          "target": 7.7
+        },
+        {
+          "dt": 0.008333333333333333,
+          "seconds": 7.6938173689305565,
+          "target": 7.7
+        }
+      ]
+    },
+    {
+      "name": "65-second reference lane ends within water bounds without contacts",
+      "passed": true,
+      "x": 608.0067009764468,
+      "z": -300,
+      "performance": "STEADY / REFERENCE MATCH"
+    },
+    {
+      "name": "Fuel values never go negative on exhausted scenario",
+      "passed": true
+    },
+    {
+      "name": "Reset preserves selected profile and resets trial/ledger",
+      "passed": true
+    }
+  ]
+}

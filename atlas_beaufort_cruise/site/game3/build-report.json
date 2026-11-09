@@ -1,0 +1,127 @@
+{
+  "version": "Beaufort Harbor Life 3",
+  "base": "c0593c5d43f634394407a8758abd6908640c75d1",
+  "changed": [
+    "command-motion.js",
+    "index.html",
+    "helm09.js",
+    "coastal14.js",
+    "app.js",
+    "device/device-ui.js",
+    "cruise/cruise-ui.js"
+  ],
+  "unchangedFiles": 275,
+  "patches": [
+    {
+      "file": "app.js",
+      "anchor": "addEventListener('keydown',e=>{if(/INPUT|TEXTAREA|SELECT/.test(e.",
+      "count": 1
+    },
+    {
+      "file": "app.js",
+      "anchor": "if(document.hidden)return;time+=dt;frame++;",
+      "count": 1
+    },
+    {
+      "file": "app.js",
+      "anchor": "setPaused:(v)=>{gamePaused=!!v;",
+      "count": 1
+    },
+    {
+      "file": "helm09.js",
+      "anchor": "function openPanel(kind){",
+      "count": 1
+    },
+    {
+      "file": "helm09.js",
+      "anchor": "addEventListener('keydown',e=>{if(/INPUT|TEXTAREA|SELECT/.test(e.",
+      "count": 1
+    },
+    {
+      "file": "cruise/cruise-ui.js",
+      "anchor": "const prior=SEA10.renderPanel;",
+      "count": 1
+    },
+    {
+      "file": "cruise/cruise-ui.js",
+      "anchor": "function panel(kind,body){",
+      "count": 1
+    },
+    {
+      "file": "cruise/cruise-ui.js",
+      "anchor": "if(kind==='radio'){\n   const box",
+      "count": 1
+    },
+    {
+      "file": "cruise/cruise-ui.js",
+      "anchor": "   body.prepend(box);\n  }",
+      "count": 1
+    },
+    {
+      "file": "cruise/cruise-ui.js",
+      "anchor": "n.onclick=()=>{if(local())fn();}",
+      "count": 1
+    },
+    {
+      "file": "device/device-ui.js",
+      "anchor": "function paintSteer(){const v=steering.value;",
+      "count": 1
+    },
+    {
+      "file": "device/device-ui.js",
+      "anchor": "const r=H.radio();music.hidden=",
+      "count": 1
+    },
+    {
+      "file": "command-motion.js",
+      "anchor": "const c=Math.cos(this.heading),s=Math.sin(this.heading);",
+      "count": 1
+    },
+    {
+      "file": "command-motion.js",
+      "anchor": "// Four unilateral buoyancy/support samples.",
+      "count": 1
+    },
+    {
+      "file": "command-motion.js",
+      "anchor": " for(const [xx,zz] of [[2.6,-.75]",
+      "count": 1
+    },
+    {
+      "file": "command-motion.js",
+      "anchor": "const wx=this.x+c*xx-s*zz,wz=this.z+s*xx+c*zz,sea=",
+      "count": 1
+    },
+    {
+      "file": "command-motion.js",
+      "anchor": "CommandMotion.surface(wx-this.vx*dt,wz-this.vz*dt,this.elapsed-dt",
+      "count": 1
+    },
+    {
+      "file": "coastal14.js",
+      "anchor": " };m.customProgramCacheKey=()=>`coastal14-${kind}`;",
+      "count": 1
+    },
+    {
+      "file": "index.html",
+      "anchor": "<script defer src=\"coastal14.js\">",
+      "count": 1
+    },
+    {
+      "file": "index.html",
+      "anchor": "</head>",
+      "count": 1
+    },
+    {
+      "file": "index.html",
+      "anchor": "<title>ATLAS Sea Lab 13 \u00b7 Beaufort River</title>",
+      "count": 1
+    }
+  ],
+  "newPhysicsCoefficients": false,
+  "yawSamplingCorrected": true,
+  "landMaterialChanged": true,
+  "newSceneryMeshes": false,
+  "browserVerified": false,
+  "GPUVerified": false
+}

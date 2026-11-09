@@ -1,0 +1,22 @@
+{
+  "release": "07",
+  "base_review_run": 38763415683,
+  "base_artifact": 11988335475,
+  "features": [
+    "recorded generic outboard and bow-water layers",
+    "knots telemetry and faster reference-informed custom response",
+    "physical MFD chart/sounder/engine pages",
+    "deck seam repairs and hull-local water rendering exclusion",
+    "fitted casting-deck riser backing",
+    "independent onboard music player",
+    "local audio without upload",
+    "user-supplied permitted HTTPS/CORS stream entry",
+    "on-model radio page"
+  ],
+  "live_station_catalog": false,
+  "real_engine_acoustics_calibrated": false,
+  "atlas_performance_validated": false,
+  "google_map_authorized": false,
+  "source_radio_streams_bundled": false,
+  "boat_engine_options_preserved": true
+}

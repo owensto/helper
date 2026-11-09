@@ -1,0 +1,488 @@
+{
+  "version": "Beaufort Lightweight Realism 5",
+  "passed": true,
+  "cpuChecks": 107,
+  "suites": {
+    "realism5": 23,
+    "runtime": 13,
+    "retained-harbor": 25,
+    "physics": 15,
+    "stream": 19,
+    "scene": 5,
+    "radio": 7
+  },
+  "powerTrials": [
+    {
+      "rig": "single300",
+      "horsepower": 300,
+      "throttlePercent": 22,
+      "secondsTo30mph": null,
+      "knots": 7.051699163667974,
+      "mph": 8.114950471193907,
+      "propWet": 1,
+      "loadKg": 2125.5234686476115
+    },
+    {
+      "rig": "single300",
+      "horsepower": 300,
+      "throttlePercent": 100,
+      "secondsTo30mph": 6.433333333333334,
+      "knots": 43.76703057462305,
+      "mph": 50.36619928629423,
+      "propWet": 1,
+      "loadKg": 2123.8227585583827
+    },
+    {
+      "rig": "single450",
+      "horsepower": 450,
+      "throttlePercent": 100,
+      "secondsTo30mph": 4.25,
+      "knots": 49.84028810392964,
+      "mph": 57.355179233574475,
+      "propWet": 1,
+      "loadKg": 2282.9127944004986
+    },
+    {
+      "rig": "twin300",
+      "horsepower": 600,
+      "throttlePercent": 100,
+      "secondsTo30mph": 3.316666666666667,
+      "knots": 54.080502995436184,
+      "mph": 62.23473138592359,
+      "propWet": 1,
+      "loadKg": 2398.940904848965
+    }
+  ],
+  "addedSiteBytes": 20307,
+  "scope": "CPU actual vessel math, chart/collider IO, Three scene/projection and synthetic DOM/media; shader-source only",
+  "browserVerified": false,
+  "GPUVerified": false,
+  "physicalDeviceVerified": false,
+  "actualMusicPlaybackVerified": false,
+  "FPSVerified": false,
+  "photorealismVerified": false,
+  "build": {
+    "version": "Lightweight Realism 5",
+    "base": "2c2e75a441b5660d40eb5327b3a72f92acbd4ef2",
+    "changed": [
+      "coastal14.js",
+      "command-motion.js",
+      "cruise/coast-stream.js",
+      "harbor4/camera.js",
+      "harbor4/dolphin.js",
+      "harbor4/harbor.css",
+      "harbor4/harbor.js",
+      "index.html",
+      "physics14.js",
+      "water12.js"
+    ],
+    "unchanged": 285,
+    "newFiles": [
+      "marine-field.js",
+      "wildlife.js",
+      "surfaces.js"
+    ],
+    "newTextures": 0,
+    "newModels": 0,
+    "newDrawCalls": 0,
+    "nativeClockRetained": true,
+    "forceCoefficientsChanged": false,
+    "waveGeometryChanged": false,
+    "geographyChanged": false,
+    "physicsChange": "analytic current-pose encounter-wave velocity instead of backward finite difference",
+    "browserVerified": false,
+    "GPUVerified": false,
+    "physicalDeviceVerified": false,
+    "FPSVerified": false,
+    "patches": [
+      {
+        "file": "command-motion.js",
+        "anchor": "const wx=this.x+buoyC*xx-buoyS*zz,wz=this.z+buoyS*xx+buoyC*zz,sea=Comm",
+        "count": 1
+      },
+      {
+        "file": "command-motion.js",
+        "anchor": "CommandMotion.surface=(x,z,t,p='calm')=>G.Sea11Waves.sample(x,z,t,(pre",
+        "count": 1
+      },
+      {
+        "file": "physics14.js",
+        "anchor": "let colliderList=[],grid=new Map();",
+        "count": 1
+      },
+      {
+        "file": "physics14.js",
+        "anchor": "installColliders(list){colliderList=list;grid=new Map();",
+        "count": 1
+      },
+      {
+        "file": "physics14.js",
+        "anchor": "const ids=new Set(),cx=Math.floor(s.x/32),cz=Math.floor(s.z/32);for(le",
+        "count": 1
+      },
+      {
+        "file": "physics14.js",
+        "anchor": "colliders:colliderList.length,indexCells:grid.size",
+        "count": 1
+      },
+      {
+        "file": "harbor4/harbor.js",
+        "anchor": "pod=new C.Pod(env)",
+        "count": 1
+      },
+      {
+        "file": "harbor4/harbor.js",
+        "anchor": "photo:()=>app.classList.contains('photo14'),blocked:",
+        "count": 1
+      },
+      {
+        "file": "harbor4/harbor.js",
+        "anchor": "app.classList.toggle('h4-free',mode==='free');$('helm09-pause').disabl",
+        "count": 1
+      },
+      {
+        "file": "harbor4/harbor.js",
+        "anchor": "function customLook(){return ['orbit','free'].includes(camera.inspect(",
+        "count": 1
+      },
+      {
+        "file": "harbor4/harbor.js",
+        "anchor": "if(['orbit','chase'].includes(camera.inspect().mode))",
+        "count": 1
+      },
+      {
+        "file": "harbor4/harbor.js",
+        "anchor": "function setWildlife(value){wildlife=!!value;",
+        "count": 1
+      },
+      {
+        "file": "harbor4/harbor.js",
+        "anchor": "// Decorative fittings are anchored to mapped pier collider centres, n",
+        "count": 1
+      },
+      {
+        "file": "harbor4/harbor.js",
+        "anchor": "add(wildlife?'Dolphins: on':'Dolphins: off'",
+        "count": 1
+      },
+      {
+        "file": "harbor4/harbor.js",
+        "anchor": "if(kind==='g3-play')add(wildlife?'Dolphins enabled \u00b7 watch the water':",
+        "count": 1
+      },
+      {
+        "file": "harbor4/harbor.js",
+        "anchor": "m.group.visible=d.active&&C.wildlifeWater(d.x,d.z,env);",
+        "count": 1
+      },
+      {
+        "file": "harbor4/harbor.js",
+        "anchor": "const ring=ripples[i],phase=(pod.elapsed+d.phase)%13;ring.visible=m.gr",
+        "count": 1
+      },
+      {
+        "file": "harbor4/harbor.js",
+        "anchor": "camera,tick,planRecovery,setWildlife,notice:say",
+        "count": 1
+      },
+      {
+        "file": "harbor4/harbor.js",
+        "anchor": "dolphins:models.length,dolphinEnabled:wildlife,",
+        "count": 1
+      },
+      {
+        "file": "harbor4/harbor.js",
+        "anchor": "document.title='ATLAS \u00b7 Beaufort Wildlife & Views';",
+        "count": 1
+      },
+      {
+        "file": "harbor4/camera.js",
+        "anchor": "function isFree(){return mode==='free';}",
+        "count": 1
+      },
+      {
+        "file": "harbor4/camera.js",
+        "anchor": "['first','chase','orbit','free'].includes(next)",
+        "count": 1
+      },
+      {
+        "file": "harbor4/camera.js",
+        "anchor": "const wasFree=isFree();",
+        "count": 1
+      },
+      {
+        "file": "harbor4/camera.js",
+        "anchor": "if(isFree()){const old=savedPause;",
+        "count": 1
+      },
+      {
+        "file": "harbor4/camera.js",
+        "anchor": "mode=next;if(next==='chase'",
+        "count": 1
+      },
+      {
+        "file": "harbor4/camera.js",
+        "anchor": "if(mode==='orbit'){yaw=",
+        "count": 1
+      },
+      {
+        "file": "harbor4/camera.js",
+        "anchor": "if(mode==='orbit'||mode==='chase')distance",
+        "count": 1
+      },
+      {
+        "file": "harbor4/camera.js",
+        "anchor": "if(!isFree())return false;",
+        "count": 1
+      },
+      {
+        "file": "harbor4/camera.js",
+        "anchor": " if(isFree()){\n",
+        "count": 1
+      },
+      {
+        "file": "harbor4/camera.js",
+        "anchor": "freeCameraPausesBoat:true,boatInputsDisabled:isFree()",
+        "count": 1
+      },
+      {
+        "file": "harbor4/camera.js",
+        "anchor": "if(isFree()&&savedPause!==null)",
+        "count": 1
+      },
+      {
+        "file": "harbor4/harbor.css",
+        "anchor": "#helm09.harbor4.h4-free #helm09-pause{opacity:.5;cursor:default}",
+        "count": 1
+      },
+      {
+        "file": "harbor4/harbor.js",
+        "anchor": "camera.key(e.code,true)||['KeyF','KeyR','KeyN','KeyP','KeyZ'].includes",
+        "count": 1
+      },
+      {
+        "file": "cruise/coast-stream.js",
+        "anchor": "g.computeBoundingSphere();",
+        "count": 1
+      },
+      {
+        "file": "harbor4/dolphin.js",
+        "anchor": "body.frustumCulled=false;body.castShadow=true;",
+        "count": 1
+      },
+      {
+        "file": "coastal14.js",
+        "anchor": "if(window.AtlasHarborFinish)AtlasHarborFinish.material(kind,sh);",
+        "count": 1
+      },
+      {
+        "file": "coastal14.js",
+        "anchor": "coastal14-harbor4-${kind}",
+        "count": 1
+      },
+      {
+        "file": "water12.js",
+        "anchor": "stern={value:new T.Vector4()};",
+        "count": 1
+      },
+      {
+        "file": "water12.js",
+        "anchor": "sh.uniforms.uStern12=stern;",
+        "count": 1
+      },
+      {
+        "file": "water12.js",
+        "anchor": "sh.fragmentShader=AtlasHarborFinish.reflection(sh.fragmentShader);",
+        "count": 1
+      },
+      {
+        "file": "water12.js",
+        "anchor": "atlas-harbor4-soft-reflection",
+        "count": 1
+      },
+      {
+        "file": "water12.js",
+        "anchor": "previous();count.value=",
+        "count": 1
+      },
+      {
+        "file": "water12.js",
+        "anchor": "let frame=0,lastReflection13=-1e6,reflectionReady=false,sh12=null;",
+        "count": 1
+      },
+      {
+        "file": "water12.js",
+        "anchor": "if(!quality||++frame%4!==0||performance.now()-lastReflection13<125||A.",
+        "count": 1
+      },
+      {
+        "file": "index.html",
+        "anchor": "<script defer src=\"command-motion.js\">",
+        "count": 1
+      }
+    ]
+  },
+  "keyResults": [
+    {
+      "name": "Height-only fast path agrees with the existing shared rendered water field",
+      "passed": true,
+      "maxHeightDifferenceM": 0
+    },
+    {
+      "name": "Analytic wake time and space derivatives match centered differences through attack and expiry fade",
+      "passed": true,
+      "maxDerivativeError": 2.3271958804471637e-09
+    },
+    {
+      "name": "Wake birth/expiry values and derivatives vanish smoothly without a new clock or spectrum",
+      "passed": true
+    },
+    {
+      "name": "Encounter velocity includes vessel translation and rotation on the analytic water surface",
+      "passed": true
+    },
+    {
+      "name": "Actual vessel step halves full ambient derivative evaluations at six buoyancy supports",
+      "passed": true,
+      "before": 16,
+      "after": 6,
+      "scope": "Native step function calls; not FPS"
+    },
+    {
+      "name": "Calm-water acceleration and terminal speed are retained without force multipliers",
+      "passed": true,
+      "beforeKnots": 43.76457653950954,
+      "afterKnots": 43.76457653950954
+    },
+    {
+      "name": "Swell with steering and reversal remains finite with bounded hull response",
+      "passed": true,
+      "endingMps": -3.7294668029557014
+    },
+    {
+      "name": "Propeller wash follows actual engine, clutch and immersion and does not fake thrust",
+      "passed": true
+    },
+    {
+      "name": "Cached collision candidates exactly match original tide/height filtering across Beaufort",
+      "passed": true,
+      "queries": 500,
+      "colliders": 2921
+    },
+    {
+      "name": "One thousand same-cell obstacle queries build the candidate list once, still rechecking tide",
+      "passed": true,
+      "queries": 1000,
+      "candidateBuilds": 1
+    },
+    {
+      "name": "Replacing collision data invalidates cached candidates and restores empty fallback",
+      "passed": true
+    },
+    {
+      "name": "Three dolphins start within 38\u201380 metres and at least one is immediately surfaced",
+      "passed": true
+    },
+    {
+      "name": "Unknown, shallow, land or solid positions never become fabricated wildlife habitat",
+      "passed": true
+    },
+    {
+      "name": "Surfacing is staggered and relative to encounter time even after a long session",
+      "passed": true
+    },
+    {
+      "name": "Wildlife pauses with simulation, reuses exactly three animals, and only reseeds after far separation",
+      "passed": true
+    },
+    {
+      "name": "Dolphin habitat checks are bounded at around 10Hz, not each render frame",
+      "passed": true,
+      "queriesPerSimulatedMinute": 3600,
+      "oldMinimumPerMinute": 21600
+    },
+    {
+      "name": "Actual Beaufort launch creates visible-cycle pod in real chart-known water and avoids original piers",
+      "passed": true,
+      "start": [
+        {
+          "x": -361.6227410531704,
+          "z": -81.55306822716976,
+          "distance": 37.99999999999999,
+          "depth": 0.12
+        },
+        {
+          "x": -356.64986130700504,
+          "z": -75.28645295014988,
+          "distance": 46.00000000000002,
+          "depth": 1.0602329075882793
+        },
+        {
+          "x": -351.67698156083975,
+          "z": -69.01983767313001,
+          "distance": 54.00000000000001,
+          "depth": 1.15
+        }
+      ],
+      "launch": [
+        -385.24391984745563,
+        -111.31949079301413
+      ],
+      "minutePassed": true
+    },
+    {
+      "name": "Actual wildlife camera puts the surfaced dolphin above-water silhouette in frame on portrait and desktop",
+      "passed": true,
+      "measurements": [
+        {
+          "viewport": [
+            430,
+            932
+          ],
+          "aboveWaterDorsalPixels": 50.80800540079674
+        },
+        {
+          "viewport": [
+            1440,
+            960
+          ],
+          "aboveWaterDorsalPixels": 52.334426163910805
+        }
+      ],
+      "scope": "Three camera projection only; not a rendered visibility test"
+    },
+    {
+      "name": "Skinned model uses conservative culling sphere instead of always drawing offscreen",
+      "passed": true
+    },
+    {
+      "name": "Surface detail preserves base shader blocks and adds no texture samplers",
+      "passed": true
+    },
+    {
+      "name": "Water foam adds load-controlled stern wash and edge-fades reflections without a new render pass",
+      "passed": true
+    },
+    {
+      "name": "Actual water render hook updates prop-wash uniforms and respects paused and moving reflection budgets",
+      "passed": true,
+      "reflectionCapturesDuringMovingSecond": 7,
+      "scope": "Real scheduling callback with renderer boundary stub; not GPU capture"
+    },
+    {
+      "name": "No boat, geography, media or scenery assets are replaced or enlarged",
+      "passed": true
+    }
+  ],
+  "sourceHashes": {
+    "check.py": "4af2ffd4f14b593ac50059c7aa03cd7652863689ca571496f2915bcb4477b41e",
+    "test.cjs": "ebd5f38da02b3dac0356cd8d78b5f1c2d72c554c905c6cc26093c1c2be5460df",
+    "wildlife.js": "357159a376ba1b83931d82d1cfb89e370dbfca10879da73d8fba077e9bf42eef",
+    "pins.json": "aa550971eb865e8821602c262daf8e0070ae1dcd083df8e9fd400eb7314b9cfe",
+    "benchmark.cjs": "02a39e581d4f4319b86510a9350484d0bf6ca6b04b4f26754681d14bd6125a52",
+    "surfaces.js": "4f8bb2c206216116b4864dc322941826ee2475f993e23afbd239e1f8d2b87d45",
+    "build.py": "083c38a62c71ff276cfabc968164ebd98cdfc62224b3c9c785f68b5398ccfce7",
+    "README.md": "c8b97e7dfb9c4ccf0c513834b63ba3bbb3b0067882d5d73cf0902bafc26ec933",
+    "marine-field.js": "8cbce4932f4593e32111bab715269a2eb59f13aa9919a0558481932f06931710"
+  }
+}

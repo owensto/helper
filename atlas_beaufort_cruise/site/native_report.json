@@ -1,0 +1,20 @@
+{
+  "blender_version": "4.0.2",
+  "exported_from_native": true,
+  "required_interactive_nodes": [
+    "PLAY_DRAWER_1",
+    "PLAY_DRAWER_2",
+    "PLAY_DRAWER_3",
+    "PLAY_BOLSTER_1",
+    "PLAY_BOLSTER_2",
+    "PLAY_THROTTLE",
+    "PLAY_FISHBOX_STRUT_BARREL",
+    "PLAY_FISHBOX_STRUT_ROD",
+    "PLAY_LATCH_fishbox",
+    "PLAY_STEERING",
+    "MOV_Outboard_trim"
+  ],
+  "browser_bytes": 9735464,
+  "sha256": "4456a7e157a19e550be0b270cf9649035ec6c17c77badfcad44789fb64ca26e1",
+  "engineering_validated": false
+}
