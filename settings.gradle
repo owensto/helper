@@ -1,4 +1,0 @@
-rootProject.name = 'helper'
-include(
-        'core'
-)

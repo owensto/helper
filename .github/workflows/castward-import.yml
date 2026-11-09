@@ -1,0 +1,121 @@
+name: Import and verify Castward source and plan
+on:
+  push:
+    branches: [castward-launch]
+    paths: ['.github/workflows/castward-import.yml']
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: castward-source-import
+  cancel-in-progress: false
+jobs:
+  import:
+    if: github.ref == 'refs/heads/castward-launch'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: castward-launch
+          fetch-depth: 1
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Import hash-verified owner-provided archives
+        run: |
+          python - <<'PY'
+          from pathlib import Path, PurePosixPath
+          import urllib.request, zipfile, io, hashlib, json, stat
+          archives=[
+            ('source','https://d2ol7oe51mr4n9.cloudfront.net/user_3B4xSyaGaA2fSoDnFuoP6lsrxcD/6f96a0cf-9d55-4721-ac78-4b10fc2a07bd.zip','da3c43044aecf4d05c064753471856f39c8ea1a541a562efe67a228ba416a359'),
+            ('plan','https://d2ol7oe51mr4n9.cloudfront.net/user_3B4xSyaGaA2fSoDnFuoP6lsrxcD/ab7b816d-13ac-4c8d-91d4-1c7cedd26b94.zip','64f58c8f0a26210bf4b7e90112950bb1ec44ec11090be0c472052e5330d0bbed')
+          ]
+          receipt=[]
+          for kind,url,expected in archives:
+            with urllib.request.urlopen(url,timeout=60) as response: data=response.read(25_000_001)
+            assert len(data)<=25_000_000,'Archive too large'
+            assert hashlib.sha256(data).hexdigest()==expected,'Archive integrity mismatch'
+            z=zipfile.ZipFile(io.BytesIO(data));count=0
+            for item in z.infolist():
+              if item.is_dir(): continue
+              path=PurePosixPath(item.filename)
+              assert not path.is_absolute() and '..' not in path.parts,'Unsafe archive path'
+              assert not stat.S_ISLNK(item.external_attr>>16),'Symlink not permitted'
+              if any(part in {'.git','.github','node_modules','__pycache__','.netlify','.vercel'} for part in path.parts): continue
+              if path.suffix.lower() in {'.ttf','.otf','.woff','.woff2','.eot','.pyc'}: continue
+              if path.name.startswith('.env') and path.name!='.env.example': continue
+              if kind=='source':
+                assert path.parts[0]=='castward'
+                relative=PurePosixPath(*path.parts[1:])
+                destination=Path('website')/str(relative)
+              else:
+                if path.suffix not in {'.md','.csv','.json'}: continue
+                destination=Path('docs')/path.name
+              destination.parent.mkdir(parents=True,exist_ok=True)
+              destination.write_bytes(z.read(item));count+=1
+            receipt.append({'kind':kind,'sha256':expected,'files':count})
+          assert Path('website/src/world.json').exists()
+          world=json.loads(Path('website/src/world.json').read_text())
+          assert len(world['trips'])==796
+          Path('import-status.json').write_text(json.dumps({'archives':receipt,'tripProfiles':796,'hostedSourceIsSeparate':True,'tests':'pending','gitBranch':'castward-launch'},indent=2))
+          PY
+      - name: Build and test the portable website
+        working-directory: website
+        run: |
+          python3 scripts/build.py
+          node --test tests/engine.test.cjs tests/world-engine.test.cjs
+          python3 tests/static_test.py
+      - name: Prepare the self-contained public review version
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import json
+          src=Path('Fishing-Atlas-World-Preview.html')
+          assert src.exists()
+          html=src.read_text()
+          html=html.replace('<span>FISHING ATLAS<small>GO PREPARED.</small></span>','<span>CASTWARD<small>FISHING ATLAS.</small></span>')
+          html=html.replace('Fishing Atlas | Find your water. Go prepared.','Castward | Find your water. Go prepared.')
+          html=html.replace('WORKING PREVIEW · Saved on this browser · No payments or form submissions are sent','PUBLIC MVP · Plans saved on this browser · Booking and payments are not connected')
+          Path('live').mkdir(exist_ok=True)
+          Path('live/index.html').write_text(html)
+          status=json.loads(Path('import-status.json').read_text())
+          status['tests']={'planner':'passed','static_routes':'passed','public_browser':'not yet verified'}
+          Path('import-status.json').write_text(json.dumps(status,indent=2))
+          PY
+      - name: Commit only to the isolated Castward branch
+        run: |
+          test "${GITHUB_REF}" = 'refs/heads/castward-launch'
+          git config user.name 'Castward release'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A website docs live import-status.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Import Castward source, complete North America plan and tested public MVP [skip ci]'
+            git push origin HEAD:castward-launch
+          fi
+          echo "SOURCE_SHA=$(git rev-parse HEAD)" >> "$GITHUB_ENV"
+          echo "Public review URL: https://rawcdn.githack.com/owensto/helper/$(git rev-parse HEAD)/live/index.html" >> "$GITHUB_STEP_SUMMARY"
+      - name: Check the public review document without authentication
+        run: |
+          python - <<'PY'
+          import os,urllib.request,json,hashlib
+          from pathlib import Path
+          url=f"https://rawcdn.githack.com/owensto/helper/{os.environ['SOURCE_SHA']}/live/index.html"
+          result={'url':url,'sourceSha':os.environ['SOURCE_SHA'],'verification':'pending'}
+          try:
+            req=urllib.request.Request(url,headers={'User-Agent':'Mozilla/5.0','Accept':'text/html'})
+            with urllib.request.urlopen(req,timeout=90) as response:
+              body=response.read(30_000_000);result.update(http=response.status,contentType=response.headers.get('content-type'),finalUrl=response.url)
+            expected=Path('live/index.html').read_bytes()
+            result['htmlMatches']=hashlib.sha256(body).digest()==hashlib.sha256(expected).digest()
+            result['verification']='document verified' if result['htmlMatches'] else 'host interstitial or mismatch; browser review needed'
+          except Exception as error:result['verification']='not verified';result['error']=str(error)
+          Path('public-check.json').write_text(json.dumps(result,indent=2))
+          print(json.dumps(result,indent=2))
+          PY
+          git add public-check.json
+          git commit -m 'Record actual public HTTP check [skip ci]' || true
+          git push origin HEAD:castward-launch
