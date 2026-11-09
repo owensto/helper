@@ -32,8 +32,8 @@ function createUI(canvas,read,readProfile,sample,onChange){
  function unproject(x,y){return {x:center.x+(x-160)*range/320,z:center.z+(y-110)*range/320};}
  function background(){const key=[center.x,center.z,range].join(':');if(cacheKey===key)return;cacheKey=key;
   for(let y=0;y<220;y+=4)for(let x=0;x<320;x+=4){const q=unproject(x+2,y+2),d=sample(q.x,q.z),v=d?.known?-d.bed:null;bg.fillStyle=v===null?'#2f3f48':v<0?'#b6b193':v<5?'#c6d5be':v<15?'#548b8c':v<30?'#285d70':v<60?'#173e57':'#0e2c43';bg.fillRect(x,y,4,4);if(v>0&&[5,15,30,60].some(a=>Math.abs(v-a)<.5)){bg.fillStyle='#a5d9df55';bg.fillRect(x,y,3,1);}}
-  bg.strokeStyle='#badce216';bg.lineWidth=1;for(let x=0;x<=320;x+=40){bg.beginPath();bg.moveTo(x,0);bg.lineTo(x,220);bg.stroke();}for(let y=0;y<220;y+=40){bg.beginPath();bg.moveTo(0,y);bg.lineTo(320,y);bg.stroke();}
-  bg.font='10px system-ui';bg.fillStyle='#a9cbd2';for(let y=30;y<220;y+=65)for(let x=30;x<320;x+=90){const p=unproject(x,y),q=sample(p.x,p.z);if(q?.known&&q.bed<0)bg.fillText(Math.round(-q.bed).toString(),x,y);}
+  bg.strokeStyle='#badce216';bg.lineWidth=1;for(let x=0;x<=320;x+=40){bg.beginPath();bg.moveTo(x,0);bg.lineTo(x,220);bg.stroke();}for(let y=0;y<=220;y+=40){bg.beginPath();bg.moveTo(0,y);bg.lineTo(320,y);bg.stroke();}
+  bg.font='10px system-ui';bg.fillStyle='#a9cbd2';for(let y=30;y<220;y+=65)for(let x=30;x<320;x+=90){const p=unproject(x,y),q=sample(p.x,p.y);if(q?.known&&q.bed<0)bg.fillText(Math.round(-q.bed).toString(),x,y);}
  }
  function draw(s,p){center={x:Math.round(s.x/25)*25,z:Math.round(s.z/25)*25};background();ctx.clearRect(0,0,320,220);ctx.drawImage(cache,0,0);
   const line=(pts,color,dash=[])=>{if(!pts.length)return;ctx.strokeStyle=color;ctx.lineWidth=1.5;ctx.setLineDash(dash);ctx.beginPath();pts.forEach((a,i)=>{const q=project(a.x,a.z);i?ctx.lineTo(q.x,q.y):ctx.moveTo(q.x,q.y);});ctx.stroke();ctx.setLineDash([]);};line(nav.track,'#91cde570');line([{x:s.x,z:s.z},...nav.waypoints],'#e9c887',[5,4]);
@@ -42,7 +42,7 @@ function createUI(canvas,read,readProfile,sample,onChange){
   ctx.fillStyle='#e7f1f2';ctx.font='bold 11px system-ui';ctx.fillText('N ↑',10,18);ctx.font='9px system-ui';ctx.fillStyle='#afc9d2';ctx.fillText((range/NM).toFixed(2)+' NM ACROSS',10,209);ctx.fillText('SIMULATED CHART',210,209);
  }
  canvas.addEventListener('click',e=>{if(!editing)return;const s=read();if(!s)return;const b=canvas.getBoundingClientRect(),pt=unproject((e.clientX-b.left)*320/b.width,(e.clientY-b.top)*220/b.height),result=nav.add(pt.x,pt.z,s,sample);onChange(result);});
- return {nav,setEditing:v=>{editing=!!v;canvas.classList.toggle('plotting',editing);},zoom:factor=>{range=clamp(range*factor,250,5000);cacheKey='';},update:(s,p,serial)=>{last=nav.update(s,p,sample,serial);if(!canvas.closest('[hidden]'))draw(s,p);return last;},inspect:()=>({last,waypoints:nav.waypoints.map(p=>({...p})),trackCount:nav.track.length,rangeM:range,editing}),reset:()=>{nav.reset();cacheKey='';last=null;}};
+ return {nav,setEditing:v=>{editing=!!v;canvas.classList.toggle('plotting',editing);},zoom:factor=>{range=clamp(range*factor,250,5000);cacheKey='';},update:(s,p,serial)=>{last=nav.update(s,p,sample,serial);if(!canvas.closest('[hidden]'))draw(s,p);return last;},inspect:()=>({last,waypoints:nav.waypoints.map(p=>({...p})),trackCount:nav.track.length,rangeM:range,editing}),reset:()=>{nav.reset();cacheKey='';last=null;editing=false;canvas.classList.remove('plotting');const button=canvas.parentElement?.querySelector('#plot-route');if(button)button.setAttribute('aria-pressed','false');}};
 }
 const API={heading,bearing,circularError,routeInfo,lookAhead,Navigator,createUI,KNOT,NM};G.AtlasNavigation14=API;if(typeof module!=='undefined')module.exports=API;
 })(typeof window!=='undefined'?window:globalThis);
