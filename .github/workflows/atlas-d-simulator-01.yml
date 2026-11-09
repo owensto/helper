@@ -13,7 +13,7 @@ permissions:
   contents: write
 concurrency:
   group: atlas-d-y14-isolated-publication
-  cancel-in-progress: false
+  cancel-in-progress: true
 jobs:
   verify-publish:
     if: github.ref == 'refs/heads/atlas-d/fleet-navigation-y14-20261108'
