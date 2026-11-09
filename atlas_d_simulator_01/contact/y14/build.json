@@ -1,0 +1,32 @@
+{
+  "name": "ATLAS D SUMARS Y14 navigation and environment",
+  "baselineCommit": "8fa8616b2f10dea29127b0aa971e6646411cd785",
+  "sourceCommit": "4ccb40bb6902478199052d6e8cba821e128b1825",
+  "originalAssets": {
+    "atlas_d_simulator_01/live/assets/ATLAS_D_Original.glb": "b2966e8265edbd6d52ac2fa7aa1aaa764683df5ff1548a21c8cc1a024fdb3d48",
+    "atlas_fleet_atelier_02/live/assets/ATLAS_N.glb": "0887994518aee300122a298c708742f0264d6263780d3e360f17c4474f2c39c1",
+    "atlas_fleet_atelier_02/live/assets/ATLAS_W.glb": "cfce666ed4c79446e7ad7c86be45385db7056618be4cdb233e4bf2b79241f27f"
+  },
+  "y13SourceArchiveSHA256": "e8f62b488550efd3873579585f6eccd1a796c08bb66ed31e690cae67fc182c2c",
+  "physicalDeviceTested": false,
+  "seaTrialValidated": false,
+  "sharedHostMerged": false,
+  "multiplayer": false,
+  "files": {
+    "build.py": "8200528b5dec8419ad6ce1ff99b52cf50861e8ad62c5c40501cfc82f2486fbb8",
+    "dynamics.js": "0b3cc52d1349c1a82809078a1b68914f64685671d6e4d81babd95c7e41c602d0",
+    "navigation.js": "e5da37ab2772eb4727460fd9631b74dc068339f1b0b4161faf34be2c054d85a7",
+    "environment.js": "9a044832c7fc237ade00fd15af9b2c9739b3055dbc35176d4b331eeb5bdb6b54",
+    "materials.js": "415750e5574dddc48e08f622099ec4d0293de068193c3863ff759f3316e8fba3",
+    "pod-detail.js": "2a3a2b1b06d2cea7e0129e0e01dba2843157391712eba00410c279e35be938c3",
+    "ocean.js": "f51539cf06674af9ab49fa79aaff3a741dbc1ef7c83530ba7ae6a475afa31112",
+    "README.md": "e3a14de1552de71dad9d03d1ebde64b5f985d658ce835e8af212e53c8dd59031",
+    "report.html": "eacf085c884ce38540962ea98d60c40d98c254c9c8678028a41f6cdbf3305446",
+    "navigation.css": "34fb5636a7a2be054f52377a2397ed3dda6ed6ec36682a5c5c44b345f6ef5134",
+    "verify.py": "6bcaa999f26d8b40fcff65d660d1d652a79b3f857377a07a7be1b26acfd84965",
+    "index.html": "4681b6f5281959a34539135dfea4bec4947b0df5df3a6679a9460fcb93703b0a",
+    "generate.py": "21c68afcda49320c1bdb35c73517cfe85fd53431368806c646a7b2c11e5ad8b7",
+    "app.js": "7d53639bff52b2a001ca4d7715659b688625fc735e4b46c304a0ddd879b092cc",
+    "test-navigation.cjs": "d5e4a52752da137aff9fb00193f26297d5851da1fcbaad6d2d8648778b5b129e"
+  }
+}

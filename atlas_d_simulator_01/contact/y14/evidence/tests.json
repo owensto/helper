@@ -1,0 +1,243 @@
+{
+  "passed": true,
+  "total": 48,
+  "tests": [
+    {
+      "name": "d current change preserves inertial velocity",
+      "passed": true
+    },
+    {
+      "name": "d current acts through relative flow and yields drift",
+      "passed": true
+    },
+    {
+      "name": "d apparent wind is attenuated underwater",
+      "passed": true
+    },
+    {
+      "name": "d no-drive water-relative energy dissipates in still air",
+      "passed": true
+    },
+    {
+      "name": "d all new physics and navigation freeze when paused",
+      "passed": true
+    },
+    {
+      "name": "d read-only navigation leaves owner state unchanged",
+      "passed": true
+    },
+    {
+      "name": "d 60/120Hz current wind integration convergence",
+      "passed": true
+    },
+    {
+      "name": "d 21 distributed wave samples reproduce a planar slope",
+      "passed": true
+    },
+    {
+      "name": "n current change preserves inertial velocity",
+      "passed": true
+    },
+    {
+      "name": "n current acts through relative flow and yields drift",
+      "passed": true
+    },
+    {
+      "name": "n apparent wind is attenuated underwater",
+      "passed": true
+    },
+    {
+      "name": "n no-drive water-relative energy dissipates in still air",
+      "passed": true
+    },
+    {
+      "name": "n all new physics and navigation freeze when paused",
+      "passed": true
+    },
+    {
+      "name": "n read-only navigation leaves owner state unchanged",
+      "passed": true
+    },
+    {
+      "name": "n 60/120Hz current wind integration convergence",
+      "passed": true
+    },
+    {
+      "name": "n 21 distributed wave samples reproduce a planar slope",
+      "passed": true
+    },
+    {
+      "name": "pod current change preserves inertial velocity",
+      "passed": true
+    },
+    {
+      "name": "pod current acts through relative flow and yields drift",
+      "passed": true
+    },
+    {
+      "name": "pod apparent wind is attenuated underwater",
+      "passed": true
+    },
+    {
+      "name": "pod no-drive water-relative energy dissipates in still air",
+      "passed": true
+    },
+    {
+      "name": "pod all new physics and navigation freeze when paused",
+      "passed": true
+    },
+    {
+      "name": "pod read-only navigation leaves owner state unchanged",
+      "passed": true
+    },
+    {
+      "name": "pod 60/120Hz current wind integration convergence",
+      "passed": true
+    },
+    {
+      "name": "pod 21 distributed wave samples reproduce a planar slope",
+      "passed": true
+    },
+    {
+      "name": "w current change preserves inertial velocity",
+      "passed": true
+    },
+    {
+      "name": "w current acts through relative flow and yields drift",
+      "passed": true
+    },
+    {
+      "name": "w apparent wind is attenuated underwater",
+      "passed": true
+    },
+    {
+      "name": "w no-drive water-relative energy dissipates in still air",
+      "passed": true
+    },
+    {
+      "name": "w all new physics and navigation freeze when paused",
+      "passed": true
+    },
+    {
+      "name": "w read-only navigation leaves owner state unchanged",
+      "passed": true
+    },
+    {
+      "name": "w 60/120Hz current wind integration convergence",
+      "passed": true
+    },
+    {
+      "name": "w 21 distributed wave samples reproduce a planar slope",
+      "passed": true
+    },
+    {
+      "name": "d force-limited dive/hold/surface completes",
+      "passed": true
+    },
+    {
+      "name": "d unknown depth inhibits dive and commands ascent",
+      "passed": true
+    },
+    {
+      "name": "n force-limited dive/hold/surface completes",
+      "passed": true
+    },
+    {
+      "name": "n unknown depth inhibits dive and commands ascent",
+      "passed": true
+    },
+    {
+      "name": "pod force-limited dive/hold/surface completes",
+      "passed": true
+    },
+    {
+      "name": "pod unknown depth inhibits dive and commands ascent",
+      "passed": true
+    },
+    {
+      "name": "D closure and surface-only W remain guarded",
+      "passed": true
+    },
+    {
+      "name": "cardinal compass bearing and heading",
+      "passed": true
+    },
+    {
+      "name": "low ground speed course/ETA unavailable, not invented zero",
+      "passed": true
+    },
+    {
+      "name": "navigation shows different heading/course in cross-current",
+      "passed": true
+    },
+    {
+      "name": "retreating from waypoint has unavailable ETA",
+      "passed": true
+    },
+    {
+      "name": "route validates unknown/land inputs and caps eight waypoints",
+      "passed": true
+    },
+    {
+      "name": "route clears on vessel switch without changing owner",
+      "passed": true
+    },
+    {
+      "name": "shallow/unknown route look-ahead fail conservatively",
+      "passed": true
+    },
+    {
+      "name": "invalid environment/steps and normalized controls rejected",
+      "passed": true
+    },
+    {
+      "name": "wave CPU analytic normals match central differences",
+      "passed": true
+    }
+  ],
+  "comparisons": {
+    "d": {
+      "previous": {
+        "knotsAt300Seconds": 17.984161837073366,
+        "to10Seconds": 46.516666666666666
+      },
+      "candidate": {
+        "knotsAt300Seconds": 17.84190460691575,
+        "to10Seconds": 46.61666666666667
+      }
+    },
+    "n": {
+      "previous": {
+        "knotsAt300Seconds": 15.673851894919938,
+        "to10Seconds": 91.93333333333334
+      },
+      "candidate": {
+        "knotsAt300Seconds": 15.65320479328111,
+        "to10Seconds": 91.98333333333333
+      }
+    },
+    "pod": {
+      "previous": {
+        "knotsAt300Seconds": 7.999999999999734,
+        "to10Seconds": null
+      },
+      "candidate": {
+        "knotsAt300Seconds": 7.9755925482953804,
+        "to10Seconds": null
+      }
+    },
+    "w": {
+      "previous": {
+        "knotsAt300Seconds": 21.857051589774684,
+        "to10Seconds": 49.11666666666667
+      },
+      "candidate": {
+        "knotsAt300Seconds": 21.692027696302375,
+        "to10Seconds": 49.18333333333333
+      }
+    }
+  },
+  "model": "atlas-sumars-y14-1",
+  "scenario": "Still air/current and flat synthetic200m water for acceleration; full forward from rest",
+  "conceptNotCalibrated": true
+}
