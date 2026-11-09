@@ -1,0 +1,120 @@
+name: Publish standalone office room viewer
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/office-room-publish.yml'
+permissions:
+  contents: write
+concurrency:
+  group: office-room-publish
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-22.04
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            office_room_studio
+            atlas_d_continuous/live
+          fetch-depth: 1
+      - name: Assemble the verified room viewer
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import base64,zlib,json,hashlib,shutil
+          root=Path('office_room_studio'); src=root/'source'; out=root/'site'
+          payload=''.join((src/n).read_text().strip() for n in ['part1.txt','part2.txt'])
+          repair=src/'repairs.json'
+          if repair.exists():
+              for a,b in json.loads(repair.read_text()):
+                  assert payload.count(a)==1, ('ambiguous repair',a[:40])
+                  payload=payload.replace(a,b,1)
+          tail=src/'tail.txt'
+          if tail.exists(): payload+=tail.read_text().strip()
+          print('Encoded source bytes:',len(payload))
+          raw=zlib.decompress(base64.b64decode(payload,validate=True))
+          assert hashlib.sha256(raw).hexdigest()=='fb7822ffc4a3f57e0917f709a219022771dc26a4df31f31e7ad8187a1d442034','source integrity check'
+          data=json.loads(raw); out.mkdir(parents=True,exist_ok=True)
+          for name,text in data.items():
+              assert name in ['index.html','room.js','robots.txt','_headers']
+              assert not any(term in text.lower() for term in ['longview','78705','realtor.com','rdcpix.com'])
+              (out/name).write_text(text)
+          for name,want in [('runtime.js','e8735da9bdfd8d79b7c453db9b80aadf667ad2f6'),('ATLAS_D_Continuous_Dive.glb','89f74b1df857cca9f5195a83c82927695f96dcfa')]:
+              source=Path('atlas_d_continuous/live')/name; blob=source.read_bytes()
+              assert hashlib.sha1(f'blob {len(blob)}\0'.encode()+blob).hexdigest()==want
+              shutil.copy2(source,out/name)
+          shutil.copy2('atlas_d_continuous/live/THIRD_PARTY_LICENSE.txt',out/'THIRD_PARTY_LICENSE.txt')
+          print('Verified site assembled; original yacht and engine preserved.')
+          PY
+          node --check office_room_studio/site/room.js
+      - name: Publish only the new room directory
+        id: publish
+        run: |
+          git config user.name 'ATLAS Room Studio'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add office_room_studio/site
+          if ! git diff --cached --quiet; then
+            git commit -m 'Publish online office room viewer without address details'
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+          SHA=$(git rev-parse HEAD)
+          URL="https://rawcdn.githack.com/owensto/helper/$SHA/office_room_studio/site/index.html"
+          printf '%s\n' "$URL" > office_room_studio/published-url.txt
+          echo "url=$URL" >> "$GITHUB_OUTPUT"
+          echo "Published room viewer: $URL" >> "$GITHUB_STEP_SUMMARY"
+      - name: Verify live viewer on desktop and phone viewport
+        env:
+          VIEWER_URL: ${{ steps.publish.outputs.url }}
+        run: |
+          python -m pip install -q playwright==1.55.0
+          python - <<'PY'
+          import os,json,shutil
+          from pathlib import Path
+          from playwright.sync_api import sync_playwright
+          out=Path('office_room_studio/review');out.mkdir(exist_ok=True)
+          with sync_playwright() as p:
+              browser=p.chromium.launch(executable_path=shutil.which('google-chrome') or shutil.which('chromium'),headless=True,args=['--no-sandbox','--use-angle=swiftshader','--enable-unsafe-swiftshader'])
+              reports=[]
+              for name,width,height,mobile in [('desktop',1440,960,False),('mobile',390,844,True)]:
+                  page=browser.new_page(viewport={'width':width,'height':height},is_mobile=mobile,has_touch=mobile)
+                  errors=[];page.on('pageerror',lambda error:errors.append(str(error)))
+                  response=page.goto(os.environ['VIEWER_URL'],wait_until='load',timeout=90000)
+                  assert response.status==200
+                  page.wait_for_function('window.ROOM_STUDIO?.ready && window.ROOM_STUDIO.yachtLoaded',timeout=90000)
+                  page.locator('#viewPlan').click()
+                  page.locator('#viewOrbit').click()
+                  page.evaluate("ROOM_STUDIO.setMat('zebra2')")
+                  assert page.evaluate('ROOM_STUDIO.state.mat')=='zebra2'
+                  page.evaluate("ROOM_STUDIO.setMat('gold20')")
+                  page.evaluate('ROOM_STUDIO.setRoom({w:150})')
+                  assert page.evaluate('ROOM_STUDIO.state.room.w')==150
+                  page.reload(wait_until='load')
+                  page.wait_for_function('window.ROOM_STUDIO?.ready && window.ROOM_STUDIO.yachtLoaded',timeout=60000)
+                  assert page.evaluate('ROOM_STUDIO.state.room.w')==150
+                  if mobile:
+                      page.locator('#mobileMenu').click()
+                      page.locator('[data-tab=room]').click()
+                      assert page.locator('#roomW').is_visible()
+                      page.locator('#mobileMenu').click()
+                      assert page.locator('#moveMode').is_visible()
+                  page.screenshot(path=str(out/f'{name}.png'))
+                  report=page.evaluate('ROOM_STUDIO.diagnostics()');report['viewport']=name;report['errors']=errors
+                  reports.append(report);assert not errors,errors
+                  page.close()
+              browser.close()
+          (out/'verification.json').write_text(json.dumps(reports,indent=2))
+          print(json.dumps(reports))
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: office-room-publish-evidence
+          path: |
+            office_room_studio/source/
+            office_room_studio/review/
+            office_room_studio/published-url.txt
+          retention-days: 7
