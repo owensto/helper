@@ -1,0 +1,840 @@
+{
+  "generated": "2026-09-13",
+  "scope": "Reminder queue only: no sources fetched, no links tested and no articles automatically updated.",
+  "article_count": 41,
+  "items": [
+    {
+      "id": "situk-coho-river",
+      "kind": "trip",
+      "title": "Situk River coho fishing: bank, float and tackle decisions",
+      "due": "2026-10-13",
+      "priority": "scheduled",
+      "source_urls": [
+        "https://www.adfg.alaska.gov/index.cfm?adfg=ByAreaSoutheastYakutat.fishingOpps&fishery=Situk+River+sockeye+and+coho+salmon"
+      ],
+      "review": [
+        "Claim support and source scope",
+        "Recent local changes and seasonal qualifications",
+        "Equipment compatibility and operator provision",
+        "Reader feedback and unresolved questions"
+      ],
+      "known_qualifications": [],
+      "independent_review_pending": true
+    },
+    {
+      "id": "yakutat-halibut",
+      "kind": "trip",
+      "title": "Yakutat halibut charter guide: depth, tackle and boat-day preparation",
+      "due": "2026-10-13",
+      "priority": "scheduled",
+      "source_urls": [
+        "https://www.adfg.alaska.gov/index.cfm?adfg=ByAreaSoutheastYakutat.fishingOpps&fishery=Yakutat+Halibut"
+      ],
+      "review": [
+        "Claim support and source scope",
+        "Recent local changes and seasonal qualifications",
+        "Equipment compatibility and operator provision",
+        "Reader feedback and unresolved questions"
+      ],
+      "known_qualifications": [],
+      "independent_review_pending": true
+    },
+    {
+      "id": "delta-clearwater-grayling",
+      "kind": "trip",
+      "title": "Delta Clearwater grayling: clear-water flies, small lures and float access",
+      "due": "2026-10-13",
+      "priority": "scheduled",
+      "source_urls": [
+        "https://www.adfg.alaska.gov/index.cfm?adfg=ByAreaInteriorTanana.fishingOpps&fishery=Delta+Clearwater+River"
+      ],
+      "review": [
+        "Claim support and source scope",
+        "Recent local changes and seasonal qualifications",
+        "Equipment compatibility and operator provision",
+        "Reader feedback and unresolved questions"
+      ],
+      "known_qualifications": [],
+      "independent_review_pending": true
+    },
+    {
+      "id": "tanana-glacial-system",
+      "kind": "trip",
+      "title": "Tanana drainage fishing: glacial mainstem versus clear tributaries",
+      "due": "2026-10-13",
+      "priority": "scheduled",
+      "source_urls": [
+        "https://www.adfg.alaska.gov/index.cfm?adfg=ByAreaInteriorTanana.fishingInfo",
+        "https://www.adfg.alaska.gov/sf/FishingReports/index.cfm?ADFG=R3.archive&Area_key=36&RecordID=6895&Year=2026"
+      ],
+      "review": [
+        "Claim support and source scope",
+        "Recent local changes and seasonal qualifications",
+        "Equipment compatibility and operator provision",
+        "Reader feedback and unresolved questions"
+      ],
+      "known_qualifications": [
+        "A seasonal river observation is dated June 26, 2026."
+      ],
+      "independent_review_pending": true
+    },
+    {
+      "id": "rocky-mountain-alpine",
+      "kind": "trip",
+      "title": "Rocky Mountain alpine-lake fishing: verify the fishery before the hike",
+      "due": "2026-10-13",
+      "priority": "scheduled",
+      "source_urls": [
+        "https://www.nps.gov/romo/planyourvisit/fishing.htm"
+      ],
+      "review": [
+        "Claim support and source scope",
+        "Recent local changes and seasonal qualifications",
+        "Equipment compatibility and operator provision",
+        "Reader feedback and unresolved questions"
+      ],
+      "known_qualifications": [],
+      "independent_review_pending": true
+    },
+    {
+      "id": "texas-inshore-redfish",
+      "kind": "trip",
+      "title": "Texas inshore redfish and trout: flats, shell and seasonal depth",
+      "due": "2026-10-13",
+      "priority": "scheduled",
+      "source_urls": [
+        "https://tpwd.texas.gov/huntwild/wild/species/reddrum/",
+        "https://tpwd.texas.gov/huntwild/wild/species/strout/"
+      ],
+      "review": [
+        "Claim support and source scope",
+        "Recent local changes and seasonal qualifications",
+        "Equipment compatibility and operator provision",
+        "Reader feedback and unresolved questions"
+      ],
+      "known_qualifications": [],
+      "independent_review_pending": true
+    },
+    {
+      "id": "cape-hatteras-surf",
+      "kind": "trip",
+      "title": "Cape Hatteras surf fishing: beach access, rigs and conditions",
+      "due": "2026-10-13",
+      "priority": "scheduled",
+      "source_urls": [
+        "https://www.nps.gov/caha/planyourvisit/fishing.htm"
+      ],
+      "review": [
+        "Claim support and source scope",
+        "Recent local changes and seasonal qualifications",
+        "Equipment compatibility and operator provision",
+        "Reader feedback and unresolved questions"
+      ],
+      "known_qualifications": [],
+      "independent_review_pending": true
+    },
+    {
+      "id": "keys-flats",
+      "kind": "trip",
+      "title": "Florida Keys flats fishing: choose bonefish, permit or tarpon first",
+      "due": "2026-10-13",
+      "priority": "scheduled",
+      "source_urls": [
+        "https://visitfloridakeys.com/experiences/what-were-famous-for/fishing",
+        "https://howtoflyfish.orvis.com/video-lessons/the-basics-of-fly-fishing/chapter-11-fly-fishing-saltwater-flats"
+      ],
+      "review": [
+        "Claim support and source scope",
+        "Recent local changes and seasonal qualifications",
+        "Equipment compatibility and operator provision",
+        "Reader feedback and unresolved questions"
+      ],
+      "known_qualifications": [],
+      "independent_review_pending": true
+    },
+    {
+      "id": "keys-offshore",
+      "kind": "trip",
+      "title": "Florida Keys offshore fishing: distinguish trolling, reef and wreck trips",
+      "due": "2026-10-13",
+      "priority": "scheduled",
+      "source_urls": [
+        "https://visitfloridakeys.com/experiences/what-were-famous-for/fishing"
+      ],
+      "review": [
+        "Claim support and source scope",
+        "Recent local changes and seasonal qualifications",
+        "Equipment compatibility and operator provision",
+        "Reader feedback and unresolved questions"
+      ],
+      "known_qualifications": [],
+      "independent_review_pending": true
+    },
+    {
+      "id": "andros-bonefish",
+      "kind": "trip",
+      "title": "Andros bonefishing: flats access, sight-casting and a lighter gear list",
+      "due": "2026-10-13",
+      "priority": "scheduled",
+      "source_urls": [
+        "https://www.bahamas.com/experiences/fly-fishing-andros"
+      ],
+      "review": [
+        "Claim support and source scope",
+        "Recent local changes and seasonal qualifications",
+        "Equipment compatibility and operator provision",
+        "Reader feedback and unresolved questions"
+      ],
+      "known_qualifications": [],
+      "independent_review_pending": true
+    },
+    {
+      "id": "belize-permit",
+      "kind": "trip",
+      "title": "Belize permit and flats trips: choose the base, target and casting plan",
+      "due": "2026-10-13",
+      "priority": "scheduled",
+      "source_urls": [
+        "https://www.travelbelize.org/blog/hooked-on-belize-your-guide-to-fishing-adventures/",
+        "https://www.travelbelize.org/partner/blue-horizon-lodge/"
+      ],
+      "review": [
+        "Claim support and source scope",
+        "Recent local changes and seasonal qualifications",
+        "Equipment compatibility and operator provision",
+        "Reader feedback and unresolved questions"
+      ],
+      "known_qualifications": [],
+      "independent_review_pending": true
+    },
+    {
+      "id": "belize-reef",
+      "kind": "trip",
+      "title": "Belize reef fishing: a different trip from flats or deep sea",
+      "due": "2026-10-13",
+      "priority": "scheduled",
+      "source_urls": [
+        "https://www.travelbelize.org/blog/hooked-on-belize-your-guide-to-fishing-adventures/"
+      ],
+      "review": [
+        "Claim support and source scope",
+        "Recent local changes and seasonal qualifications",
+        "Equipment compatibility and operator provision",
+        "Reader feedback and unresolved questions"
+      ],
+      "known_qualifications": [],
+      "independent_review_pending": true
+    },
+    {
+      "id": "quepos-offshore",
+      "kind": "trip",
+      "title": "Quepos offshore sportfishing: select the target, boat and actual fishing time",
+      "due": "2026-10-13",
+      "priority": "scheduled",
+      "source_urls": [
+        "https://www.visitcostarica.com/plan-your-trip/when-to-visit"
+      ],
+      "review": [
+        "Claim support and source scope",
+        "Recent local changes and seasonal qualifications",
+        "Equipment compatibility and operator provision",
+        "Reader feedback and unresolved questions"
+      ],
+      "known_qualifications": [],
+      "independent_review_pending": true
+    },
+    {
+      "id": "costa-caribbean-canals",
+      "kind": "trip",
+      "title": "Costa Rica Caribbean canal fishing: tarpon, snook and a separate coast",
+      "due": "2026-10-13",
+      "priority": "scheduled",
+      "source_urls": [
+        "https://www.visitcostarica.com/things-to-do/sustainable-tourism"
+      ],
+      "review": [
+        "Claim support and source scope",
+        "Recent local changes and seasonal qualifications",
+        "Equipment compatibility and operator provision",
+        "Reader feedback and unresolved questions"
+      ],
+      "known_qualifications": [],
+      "independent_review_pending": true
+    },
+    {
+      "id": "rio-negro-peacock",
+      "kind": "trip",
+      "title": "Rio Negro peacock bass: basin, water level and lure-work planning",
+      "due": "2026-10-13",
+      "priority": "scheduled",
+      "source_urls": [
+        "https://www.amazonxtremefishing.com/",
+        "https://www.amazonxtremefishing.com/travel-planner"
+      ],
+      "review": [
+        "Claim support and source scope",
+        "Recent local changes and seasonal qualifications",
+        "Equipment compatibility and operator provision",
+        "Reader feedback and unresolved questions"
+      ],
+      "known_qualifications": [],
+      "independent_review_pending": true
+    },
+    {
+      "id": "northern-patagonia-trout",
+      "kind": "trip",
+      "title": "Northern Patagonia trout: river floats, spring creeks and lake days",
+      "due": "2026-10-13",
+      "priority": "scheduled",
+      "source_urls": [
+        "https://setflyfishing.com/en/fly-fishing-patagonia/",
+        "https://setflyfishing.com/en/homepage/"
+      ],
+      "review": [
+        "Claim support and source scope",
+        "Recent local changes and seasonal qualifications",
+        "Equipment compatibility and operator provision",
+        "Reader feedback and unresolved questions"
+      ],
+      "known_qualifications": [],
+      "independent_review_pending": true
+    },
+    {
+      "id": "norway-skrei",
+      "kind": "trip",
+      "title": "Northern Norway winter cod: skrei, boat equipment and weather flexibility",
+      "due": "2026-10-13",
+      "priority": "scheduled",
+      "source_urls": [
+        "https://www.visitnorway.com/things-to-do/outdoor-activities/fishing/sea-fishing/"
+      ],
+      "review": [
+        "Claim support and source scope",
+        "Recent local changes and seasonal qualifications",
+        "Equipment compatibility and operator provision",
+        "Reader feedback and unresolved questions"
+      ],
+      "known_qualifications": [],
+      "independent_review_pending": true
+    },
+    {
+      "id": "norway-summer-sea",
+      "kind": "trip",
+      "title": "Norway summer sea fishing: guided boat versus self-drive camp",
+      "due": "2026-10-13",
+      "priority": "scheduled",
+      "source_urls": [
+        "https://www.visitnorway.com/things-to-do/outdoor-activities/fishing/sea-fishing/"
+      ],
+      "review": [
+        "Claim support and source scope",
+        "Recent local changes and seasonal qualifications",
+        "Equipment compatibility and operator provision",
+        "Reader feedback and unresolved questions"
+      ],
+      "known_qualifications": [],
+      "independent_review_pending": true
+    },
+    {
+      "id": "finland-ice-fishing",
+      "kind": "trip",
+      "title": "Finnish lake ice fishing: guided introduction and a rental-first kit",
+      "due": "2026-10-13",
+      "priority": "scheduled",
+      "source_urls": [
+        "https://www.visitfinland.com/en/product/f631b6c9-021f-4d5f-bcca-33e78404c2c2/ice-fishing-with-a-finn/"
+      ],
+      "review": [
+        "Claim support and source scope",
+        "Recent local changes and seasonal qualifications",
+        "Equipment compatibility and operator provision",
+        "Reader feedback and unresolved questions"
+      ],
+      "known_qualifications": [],
+      "independent_review_pending": true
+    },
+    {
+      "id": "soca-fly-fishing",
+      "kind": "trip",
+      "title": "Soča Valley fly fishing: reach choice, trout and presentation",
+      "due": "2026-10-13",
+      "priority": "scheduled",
+      "source_urls": [
+        "https://www.soca-valley.com/en/in-search-of-adventure/activities/2021010510461140/fishing/"
+      ],
+      "review": [
+        "Claim support and source scope",
+        "Recent local changes and seasonal qualifications",
+        "Equipment compatibility and operator provision",
+        "Reader feedback and unresolved questions"
+      ],
+      "known_qualifications": [],
+      "independent_review_pending": true
+    },
+    {
+      "id": "lower-zambezi-tiger",
+      "kind": "trip",
+      "title": "Lower Zambezi tiger fishing: river conditions and a complete leader system",
+      "due": "2026-10-13",
+      "priority": "scheduled",
+      "source_urls": [
+        "https://www.zambiatourism.com/a-beginners-guide-to-tiger-fishing-on-the-lower-zambezi/"
+      ],
+      "review": [
+        "Claim support and source scope",
+        "Recent local changes and seasonal qualifications",
+        "Equipment compatibility and operator provision",
+        "Reader feedback and unresolved questions"
+      ],
+      "known_qualifications": [
+        "Local seasonal story dates to 2020."
+      ],
+      "independent_review_pending": true
+    },
+    {
+      "id": "cosmoledo-gt",
+      "kind": "trip",
+      "title": "Cosmoledo giant trevally on fly: heavy tackle is a separate system",
+      "due": "2026-10-13",
+      "priority": "scheduled",
+      "source_urls": [
+        "https://bluesafariflyfishing.com/seychelles/cosmoledo-atoll/",
+        "https://bluesafariflyfishing.com/our-species/giant-trevally/"
+      ],
+      "review": [
+        "Claim support and source scope",
+        "Recent local changes and seasonal qualifications",
+        "Equipment compatibility and operator provision",
+        "Reader feedback and unresolved questions"
+      ],
+      "known_qualifications": [],
+      "independent_review_pending": true
+    },
+    {
+      "id": "mongolia-taimen",
+      "kind": "trip",
+      "title": "Mongolia taimen expedition: distinguish river, season and supplied gear",
+      "due": "2026-10-13",
+      "priority": "scheduled",
+      "source_urls": [
+        "https://fishmongolia.com/details/",
+        "https://fishmongolia.com/the-river/"
+      ],
+      "review": [
+        "Claim support and source scope",
+        "Recent local changes and seasonal qualifications",
+        "Equipment compatibility and operator provision",
+        "Reader feedback and unresolved questions"
+      ],
+      "known_qualifications": [],
+      "independent_review_pending": true
+    },
+    {
+      "id": "hokkaido-char",
+      "kind": "trip",
+      "title": "Northern Hokkaido char fishing: a different outfit from an itou trip",
+      "due": "2026-10-13",
+      "priority": "scheduled",
+      "source_urls": [
+        "https://fareastflyfishing.com/japan-fly-fishing-lodge/"
+      ],
+      "review": [
+        "Claim support and source scope",
+        "Recent local changes and seasonal qualifications",
+        "Equipment compatibility and operator provision",
+        "Reader feedback and unresolved questions"
+      ],
+      "known_qualifications": [],
+      "independent_review_pending": true
+    },
+    {
+      "id": "gangwon-streams",
+      "kind": "trip",
+      "title": "Gangwon mountain-stream fly fishing: a short Korea trip without overpacking",
+      "due": "2026-10-13",
+      "priority": "scheduled",
+      "source_urls": [
+        "https://fareastflyfishing.com/"
+      ],
+      "review": [
+        "Claim support and source scope",
+        "Recent local changes and seasonal qualifications",
+        "Equipment compatibility and operator provision",
+        "Reader feedback and unresolved questions"
+      ],
+      "known_qualifications": [],
+      "independent_review_pending": true
+    },
+    {
+      "id": "top-end-barramundi",
+      "kind": "trip",
+      "title": "Top End barramundi: runoff, harbour and billabong trips are different",
+      "due": "2026-10-13",
+      "priority": "scheduled",
+      "source_urls": [
+        "https://barefootfishingsafaris.com.au/"
+      ],
+      "review": [
+        "Claim support and source scope",
+        "Recent local changes and seasonal qualifications",
+        "Equipment compatibility and operator provision",
+        "Reader feedback and unresolved questions"
+      ],
+      "known_qualifications": [],
+      "independent_review_pending": true
+    },
+    {
+      "id": "tasmania-great-lake",
+      "kind": "trip",
+      "title": "Yingina / Great Lake trout: shore, wind lanes and trolling",
+      "due": "2026-10-13",
+      "priority": "scheduled",
+      "source_urls": [
+        "https://www.ifs.tas.gov.au/fisheries/waters-a-z/yingina-great-lake/"
+      ],
+      "review": [
+        "Claim support and source scope",
+        "Recent local changes and seasonal qualifications",
+        "Equipment compatibility and operator provision",
+        "Reader feedback and unresolved questions"
+      ],
+      "known_qualifications": [
+        "Different named subwaters have distinct access/management context."
+      ],
+      "independent_review_pending": true
+    },
+    {
+      "id": "mataura-trout",
+      "kind": "trip",
+      "title": "Mataura River trout planning: choose a reach and a presentation",
+      "due": "2026-10-13",
+      "priority": "scheduled",
+      "source_urls": [
+        "https://www.newzealand.com/us/feature/ten-great-fishing-rivers/"
+      ],
+      "review": [
+        "Claim support and source scope",
+        "Recent local changes and seasonal qualifications",
+        "Equipment compatibility and operator provision",
+        "Reader feedback and unresolved questions"
+      ],
+      "known_qualifications": [],
+      "independent_review_pending": true
+    },
+    {
+      "id": "eglinton-river",
+      "kind": "trip",
+      "title": "Eglinton River fishing: a Fiordland valley day, not an alpine-lake template",
+      "due": "2026-10-13",
+      "priority": "scheduled",
+      "source_urls": [
+        "https://www.newzealand.com/us/feature/ten-great-fishing-rivers/"
+      ],
+      "review": [
+        "Claim support and source scope",
+        "Recent local changes and seasonal qualifications",
+        "Equipment compatibility and operator provision",
+        "Reader feedback and unresolved questions"
+      ],
+      "known_qualifications": [],
+      "independent_review_pending": true
+    },
+    {
+      "id": "rivers-streams",
+      "kind": "environment",
+      "title": "Rivers & streams fishing guide: understand the water before the gear",
+      "due": "2026-10-13",
+      "priority": "scheduled",
+      "source_urls": [
+        "https://howtoflyfish.orvis.com/video-lessons/the-basics-of-fly-fishing/chapter-eight-reading-water"
+      ],
+      "review": [
+        "Claim support and source scope",
+        "Recent local changes and seasonal qualifications",
+        "Equipment compatibility and operator provision",
+        "Reader feedback and unresolved questions"
+      ],
+      "known_qualifications": [],
+      "independent_review_pending": true
+    },
+    {
+      "id": "spring-fed",
+      "kind": "environment",
+      "title": "Spring-fed streams fishing guide: understand the water before the gear",
+      "due": "2026-10-13",
+      "priority": "scheduled",
+      "source_urls": [
+        "https://www.adfg.alaska.gov/index.cfm?adfg=ByAreaInteriorTanana.fishingOpps&fishery=Delta+Clearwater+River"
+      ],
+      "review": [
+        "Claim support and source scope",
+        "Recent local changes and seasonal qualifications",
+        "Equipment compatibility and operator provision",
+        "Reader feedback and unresolved questions"
+      ],
+      "known_qualifications": [],
+      "independent_review_pending": true
+    },
+    {
+      "id": "glacier-influenced",
+      "kind": "environment",
+      "title": "Glacier-influenced rivers fishing guide: understand the water before the gear",
+      "due": "2026-10-13",
+      "priority": "scheduled",
+      "source_urls": [
+        "https://www.adfg.alaska.gov/sf/FishingReports/index.cfm?ADFG=R3.archive&Area_key=36&RecordID=6895&Year=2026"
+      ],
+      "review": [
+        "Claim support and source scope",
+        "Recent local changes and seasonal qualifications",
+        "Equipment compatibility and operator provision",
+        "Reader feedback and unresolved questions"
+      ],
+      "known_qualifications": [
+        "A seasonal river observation is dated June 26, 2026."
+      ],
+      "independent_review_pending": true
+    },
+    {
+      "id": "lakes-reservoirs",
+      "kind": "environment",
+      "title": "Lakes & reservoirs fishing guide: understand the water before the gear",
+      "due": "2026-10-13",
+      "priority": "scheduled",
+      "source_urls": [
+        "https://howtoflyfish.orvis.com/video-lessons/the-basics-of-fly-fishing/chapter-nine-stillwater-trout"
+      ],
+      "review": [
+        "Claim support and source scope",
+        "Recent local changes and seasonal qualifications",
+        "Equipment compatibility and operator provision",
+        "Reader feedback and unresolved questions"
+      ],
+      "known_qualifications": [],
+      "independent_review_pending": true
+    },
+    {
+      "id": "alpine-lakes",
+      "kind": "environment",
+      "title": "Alpine lakes fishing guide: understand the water before the gear",
+      "due": "2026-10-13",
+      "priority": "scheduled",
+      "source_urls": [
+        "https://www.nps.gov/romo/planyourvisit/fishing.htm"
+      ],
+      "review": [
+        "Claim support and source scope",
+        "Recent local changes and seasonal qualifications",
+        "Equipment compatibility and operator provision",
+        "Reader feedback and unresolved questions"
+      ],
+      "known_qualifications": [],
+      "independent_review_pending": true
+    },
+    {
+      "id": "estuaries-mangroves",
+      "kind": "environment",
+      "title": "Estuaries & mangroves fishing guide: understand the water before the gear",
+      "due": "2026-10-13",
+      "priority": "scheduled",
+      "source_urls": [
+        "https://oceanservice.noaa.gov/facts/estuary.html"
+      ],
+      "review": [
+        "Claim support and source scope",
+        "Recent local changes and seasonal qualifications",
+        "Equipment compatibility and operator provision",
+        "Reader feedback and unresolved questions"
+      ],
+      "known_qualifications": [],
+      "independent_review_pending": true
+    },
+    {
+      "id": "saltwater-flats",
+      "kind": "environment",
+      "title": "Saltwater flats fishing guide: understand the water before the gear",
+      "due": "2026-10-13",
+      "priority": "scheduled",
+      "source_urls": [
+        "https://howtoflyfish.orvis.com/video-lessons/the-basics-of-fly-fishing/chapter-11-fly-fishing-saltwater-flats"
+      ],
+      "review": [
+        "Claim support and source scope",
+        "Recent local changes and seasonal qualifications",
+        "Equipment compatibility and operator provision",
+        "Reader feedback and unresolved questions"
+      ],
+      "known_qualifications": [],
+      "independent_review_pending": true
+    },
+    {
+      "id": "surf-beaches",
+      "kind": "environment",
+      "title": "Surf & beaches fishing guide: understand the water before the gear",
+      "due": "2026-10-13",
+      "priority": "scheduled",
+      "source_urls": [
+        "https://www.nps.gov/caha/planyourvisit/fishing.htm"
+      ],
+      "review": [
+        "Claim support and source scope",
+        "Recent local changes and seasonal qualifications",
+        "Equipment compatibility and operator provision",
+        "Reader feedback and unresolved questions"
+      ],
+      "known_qualifications": [],
+      "independent_review_pending": true
+    },
+    {
+      "id": "reef-bottom",
+      "kind": "environment",
+      "title": "Reef & bottom fishing guide: understand the water before the gear",
+      "due": "2026-10-13",
+      "priority": "scheduled",
+      "source_urls": [
+        "https://www.adfg.alaska.gov/index.cfm?adfg=ByAreaSoutheastYakutat.fishingOpps&fishery=Yakutat+Halibut"
+      ],
+      "review": [
+        "Claim support and source scope",
+        "Recent local changes and seasonal qualifications",
+        "Equipment compatibility and operator provision",
+        "Reader feedback and unresolved questions"
+      ],
+      "known_qualifications": [],
+      "independent_review_pending": true
+    },
+    {
+      "id": "offshore",
+      "kind": "environment",
+      "title": "Offshore fishing guide: understand the water before the gear",
+      "due": "2026-10-13",
+      "priority": "scheduled",
+      "source_urls": [
+        "https://visitfloridakeys.com/experiences/what-were-famous-for/fishing"
+      ],
+      "review": [
+        "Claim support and source scope",
+        "Recent local changes and seasonal qualifications",
+        "Equipment compatibility and operator provision",
+        "Reader feedback and unresolved questions"
+      ],
+      "known_qualifications": [],
+      "independent_review_pending": true
+    },
+    {
+      "id": "ice-fishing",
+      "kind": "environment",
+      "title": "Ice fishing fishing guide: understand the water before the gear",
+      "due": "2026-10-13",
+      "priority": "scheduled",
+      "source_urls": [
+        "https://www.visitfinland.com/en/product/f631b6c9-021f-4d5f-bcca-33e78404c2c2/ice-fishing-with-a-finn/"
+      ],
+      "review": [
+        "Claim support and source scope",
+        "Recent local changes and seasonal qualifications",
+        "Equipment compatibility and operator provision",
+        "Reader feedback and unresolved questions"
+      ],
+      "known_qualifications": [],
+      "independent_review_pending": true
+    },
+    {
+      "id": "tropical-floodplains",
+      "kind": "environment",
+      "title": "Tropical floodplains fishing guide: understand the water before the gear",
+      "due": "2026-10-13",
+      "priority": "scheduled",
+      "source_urls": [
+        "https://www.amazonxtremefishing.com/travel-planner"
+      ],
+      "review": [
+        "Claim support and source scope",
+        "Recent local changes and seasonal qualifications",
+        "Equipment compatibility and operator provision",
+        "Reader feedback and unresolved questions"
+      ],
+      "known_qualifications": [],
+      "independent_review_pending": true
+    }
+  ],
+  "unpublished_briefs": [
+    {
+      "region": "North America",
+      "country": "Canada",
+      "topic": "Great Lakes trolling, Canadian Shield pike/walleye and Pacific salmon",
+      "needed": "Separate lake, species, season and boat methods; primary local sources needed.",
+      "status": "not-published"
+    },
+    {
+      "region": "North America",
+      "country": "United States",
+      "topic": "Bass reservoirs, tailwaters, urban ponds and kayak fisheries",
+      "needed": "Add named waters, habitat/season evidence and method-specific gear.",
+      "status": "not-published"
+    },
+    {
+      "region": "South America",
+      "country": "Chile",
+      "topic": "Patagonian lakes, sea-run trout and remote river floats",
+      "needed": "Do not reuse Argentina seasonal or access statements.",
+      "status": "not-published"
+    },
+    {
+      "region": "Europe",
+      "country": "United Kingdom and Ireland",
+      "topic": "Coarse fishing, carp, chalkstreams and Atlantic salmon",
+      "needed": "Species/method-specific editorial review needed; not a generic trout expansion.",
+      "status": "not-published"
+    },
+    {
+      "region": "Europe",
+      "country": "Iceland",
+      "topic": "Salmon rivers, Arctic char and sea fishing",
+      "needed": "Glacier geography does not establish which waters are fishable.",
+      "status": "not-published"
+    },
+    {
+      "region": "Africa",
+      "country": "South Africa and Namibia",
+      "topic": "Rock shore, surf and offshore fisheries",
+      "needed": "Local surf/rock access and target-specific tackle sources required.",
+      "status": "not-published"
+    },
+    {
+      "region": "Asia",
+      "country": "Maldives and Oman",
+      "topic": "Atoll casting, jigging, tuna and trevally",
+      "needed": "Monsoon, specific atoll and presentation evidence required.",
+      "status": "not-published"
+    },
+    {
+      "region": "Asia",
+      "country": "Thailand and India",
+      "topic": "Native river fisheries and stocked venues",
+      "needed": "Distinguish managed ponds from native ecosystems and wild targets.",
+      "status": "not-published"
+    },
+    {
+      "region": "Oceania",
+      "country": "Australia",
+      "topic": "Great Barrier Reef, temperate estuaries and impoundment bass",
+      "needed": "Keep reef, offshore and freshwater methods separate.",
+      "status": "not-published"
+    },
+    {
+      "region": "Oceania",
+      "country": "New Zealand",
+      "topic": "Lake trolling, sea-run salmon and saltwater kingfish",
+      "needed": "Add dedicated local source and equipment chains.",
+      "status": "not-published"
+    },
+    {
+      "region": "Pacific",
+      "country": "Kiribati and Papua New Guinea",
+      "topic": "Flats, reef casting and tropical river predators",
+      "needed": "Remote travel, access and species verification needed before publication.",
+      "status": "not-published"
+    }
+  ]
+}

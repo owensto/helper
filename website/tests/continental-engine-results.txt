@@ -1,0 +1,166 @@
+TAP version 13
+# Subtest: unknown destination and incompatible style are normalized
+ok 1 - unknown destination and incompatible style are normalized
+  ---
+  duration_ms: 1.049986
+  type: 'test'
+  ...
+# Subtest: date is checked for actual calendar validity
+ok 2 - date is checked for actual calendar validity
+  ---
+  duration_ms: 0.746448
+  type: 'test'
+  ...
+# Subtest: trip length and party size are bounded
+ok 3 - trip length and party size are bounded
+  ---
+  duration_ms: 0.204199
+  type: 'test'
+  ...
+# Subtest: unknown gear and unsupported states are discarded
+ok 4 - unknown gear and unsupported states are discarded
+  ---
+  duration_ms: 0.610302
+  type: 'test'
+  ...
+# Subtest: river trips have conditional wading gear, boats do not
+ok 5 - river trips have conditional wading gear, boats do not
+  ---
+  duration_ms: 0.689852
+  type: 'test'
+  ...
+# Subtest: tropical plan excludes default insulating system
+ok 6 - tropical plan excludes default insulating system
+  ---
+  duration_ms: 0.153131
+  type: 'test'
+  ...
+# Subtest: duration and laundry change clothing quantities, per angler
+ok 7 - duration and laundry change clothing quantities, per angler
+  ---
+  duration_ms: 0.626356
+  type: 'test'
+  ...
+# Subtest: owned and confirmed provisions are removed from shopping needs
+ok 8 - owned and confirmed provisions are removed from shopping needs
+  ---
+  duration_ms: 0.24486
+  type: 'test'
+  ...
+# Subtest: packing an item removes it from purchase count without asserting suitability
+ok 9 - packing an item removes it from purchase count without asserting suitability
+  ---
+  duration_ms: 0.420645
+  type: 'test'
+  ...
+# Subtest: essentials filtering does not erase extra-item status
+ok 10 - essentials filtering does not erase extra-item status
+  ---
+  duration_ms: 0.460135
+  type: 'test'
+  ...
+# Subtest: technical items never fabricate a retail recommendation
+ok 11 - technical items never fabricate a retail recommendation
+  ---
+  duration_ms: 0.171199
+  type: 'test'
+  ...
+# Subtest: shopping URL is untagged by default and configurable
+ok 12 - shopping URL is untagged by default and configurable
+  ---
+  duration_ms: 0.446454
+  type: 'test'
+  ...
+# Subtest: attribution is allowlisted, bounded and sanitized
+ok 13 - attribution is allowlisted, bounded and sanitized
+  ---
+  duration_ms: 0.248256
+  type: 'test'
+  ...
+# Subtest: source data is consistent
+ok 14 - source data is consistent
+  ---
+  duration_ms: 0.156256
+  type: 'test'
+  ...
+# Subtest: All global trip profiles and retained original profiles are addressable
+ok 15 - All global trip profiles and retained original profiles are addressable
+  ---
+  duration_ms: 116.034987
+  type: 'test'
+  ...
+# Subtest: each trip receives exactly its own four decision requirements
+ok 16 - each trip receives exactly its own four decision requirements
+  ---
+  duration_ms: 346.328898
+  type: 'test'
+  ...
+# Subtest: new trips replace generic technical placeholders rather than adding them
+ok 17 - new trips replace generic technical placeholders rather than adding them
+  ---
+  duration_ms: 321.540866
+  type: 'test'
+  ...
+# Subtest: tropical boat programs cannot be normalized into independent wading
+ok 18 - tropical boat programs cannot be normalized into independent wading
+  ---
+  duration_ms: 2.776285
+  type: 'test'
+  ...
+# Subtest: tropical guided flats do not inherit chest waders or freshwater boots
+ok 19 - tropical guided flats do not inherit chest waders or freshwater boots
+  ---
+  duration_ms: 1.859809
+  type: 'test'
+  ...
+# Subtest: ice fishing uses winter insulation without wading or boat footwear
+ok 20 - ice fishing uses winter insulation without wading or boat footwear
+  ---
+  duration_ms: 0.658585
+  type: 'test'
+  ...
+# Subtest: hike-in alpine profile does not automatically become a wading trip
+ok 21 - hike-in alpine profile does not automatically become a wading trip
+  ---
+  duration_ms: 0.70215
+  type: 'test'
+  ...
+# Subtest: warm and cold preparation profiles meaningfully differ
+ok 22 - warm and cold preparation profiles meaningfully differ
+  ---
+  duration_ms: 1.530402
+  type: 'test'
+  ...
+# Subtest: unknown and outside-window dates are not changed to a fabricated season
+ok 23 - unknown and outside-window dates are not changed to a fabricated season
+  ---
+  duration_ms: 0.911277
+  type: 'test'
+  ...
+# Subtest: trip-specific ownership and provision statuses affect counts
+ok 24 - trip-specific ownership and provision statuses affect counts
+  ---
+  duration_ms: 1.496581
+  type: 'test'
+  ...
+# Subtest: equipment queries remain category searches with no invented prices or IDs
+ok 25 - equipment queries remain category searches with no invented prices or IDs
+  ---
+  duration_ms: 352.917072
+  type: 'test'
+  ...
+# Subtest: shared inventory never leaks another trip technical kit into the current checklist
+ok 26 - shared inventory never leaks another trip technical kit into the current checklist
+  ---
+  duration_ms: 1.16503
+  type: 'test'
+  ...
+1..26
+# tests 26
+# suites 0
+# pass 26
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 1267.180654

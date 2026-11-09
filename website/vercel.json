@@ -1,0 +1,2637 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "buildCommand": "python3 scripts/build_vercel.py",
+  "installCommand": "echo \"No package dependencies required for the static atlas\"",
+  "outputDirectory": "dist",
+  "trailingSlash": true,
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "SAMEORIGIN"
+        },
+        {
+          "key": "Permissions-Policy",
+          "value": "geolocation=(), camera=(), microphone=()"
+        }
+      ]
+    },
+    {
+      "source": "/assets/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=3600"
+        }
+      ]
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/continents/north-america/",
+      "destination": "/north-america/",
+      "permanent": true
+    },
+    {
+      "source": "/countries/canada/",
+      "destination": "/north-america/canada/",
+      "permanent": true
+    },
+    {
+      "source": "/countries/mexico/",
+      "destination": "/north-america/mexico/",
+      "permanent": true
+    },
+    {
+      "source": "/countries/united-states/",
+      "destination": "/north-america/united-states/",
+      "permanent": true
+    },
+    {
+      "source": "/destinations/",
+      "destination": "/continents/",
+      "permanent": true
+    },
+    {
+      "source": "/regions/africa/",
+      "destination": "/continents/africa/",
+      "permanent": true
+    },
+    {
+      "source": "/regions/asia/",
+      "destination": "/continents/asia/",
+      "permanent": true
+    },
+    {
+      "source": "/regions/europe/",
+      "destination": "/continents/europe/",
+      "permanent": true
+    },
+    {
+      "source": "/regions/north-america/",
+      "destination": "/north-america/",
+      "permanent": true
+    },
+    {
+      "source": "/regions/oceania/",
+      "destination": "/continents/oceania/",
+      "permanent": true
+    },
+    {
+      "source": "/regions/south-america/",
+      "destination": "/continents/south-america/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/cape-hatteras-surf/",
+      "destination": "/north-america/united-states/north-carolina/cape-hatteras-beaches-surf-and-beach-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/delta-clearwater-grayling/",
+      "destination": "/north-america/united-states/alaska/delta-clearwater-river-spring-fed-trout-and-grayling/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/g-canada-campbell-river-freshwater/",
+      "destination": "/north-america/canada/british-columbia/campbell-river-freshwater-reach-river-salmon/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/g-canada-ford-bay-smith-arm/",
+      "destination": "/north-america/canada/northwest-territories/great-bear-lake-remote-lodge-and-expedition/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/g-canada-great-bear-lake/",
+      "destination": "/north-america/canada/northwest-territories/great-bear-lake-remote-lodge-and-expedition/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/g-canada-great-slave-lake/",
+      "destination": "/north-america/canada/northwest-territories/great-slave-lake-remote-lodge-and-expedition/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/g-canada-haida-gwaii-coastal-fishing/",
+      "destination": "/north-america/canada/british-columbia/haida-gwaii-coastal-salmon/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/g-canada-tree-river-lodge/",
+      "destination": "/north-america/canada/nunavut/tree-river-remote-lodge-and-expedition/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/g-mexico-ascension-bay/",
+      "destination": "/north-america/mexico/quintana-roo/ascension-bay-saltwater-flats/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/g-mexico-espiritu-santo-bay/",
+      "destination": "/north-america/mexico/quintana-roo/espiritu-santo-bay-saltwater-flats/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/g-united-states-fall-river-california/",
+      "destination": "/north-america/united-states/california/fall-river-spring-fed-trout-and-grayling/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/g-united-states-hat-creek/",
+      "destination": "/north-america/united-states/california/hat-creek-spring-fed-trout-and-grayling/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/g-united-states-lower-sacramento-river/",
+      "destination": "/north-america/united-states/california/lower-sacramento-river-river-trout-and-grayling/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/g-united-states-mccloud-river/",
+      "destination": "/north-america/united-states/california/mccloud-river-river-trout-and-grayling/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/g-united-states-rogue-river/",
+      "destination": "/north-america/united-states/oregon/rogue-river-steelhead-and-anadromous-trout/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/g-united-states-smith-river-california/",
+      "destination": "/north-america/united-states/california/smith-river-steelhead-and-anadromous-trout/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-ca-ab-001/",
+      "destination": "/north-america/canada/alberta/bow-river-calgary-reach-river-trout-and-grayling/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-ca-ab-002/",
+      "destination": "/north-america/canada/alberta/crowsnest-river-small-stream-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-ca-ab-003/",
+      "destination": "/north-america/canada/alberta/oldman-river-upper-reach-river-trout-and-grayling/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-ca-ab-004/",
+      "destination": "/north-america/canada/alberta/red-deer-river-river-trout-and-grayling/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-ca-ab-005/",
+      "destination": "/north-america/canada/alberta/north-saskatchewan-river-edmonton-sturgeon-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-ca-ab-006/",
+      "destination": "/north-america/canada/alberta/lesser-slave-lake-walleye-and-reservoir-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-ca-ab-007/",
+      "destination": "/north-america/canada/alberta/lac-la-biche-walleye-and-reservoir-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-ca-ab-008/",
+      "destination": "/north-america/canada/alberta/cold-lake-alberta-base-coldwater-lake-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-ca-ab-009/",
+      "destination": "/north-america/canada/alberta/lake-newell-large-freshwater-predators/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-ca-ab-010/",
+      "destination": "/north-america/canada/alberta/upper-kananaskis-lake-alpine-lake-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-ca-bc-001/",
+      "destination": "/north-america/canada/british-columbia/fraser-river-lower-reach-sturgeon-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-ca-bc-002/",
+      "destination": "/north-america/canada/british-columbia/skeena-river-steelhead-and-anadromous-trout/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-ca-bc-003/",
+      "destination": "/north-america/canada/british-columbia/campbell-river-coastal-departure-coastal-salmon/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-ca-bc-006/",
+      "destination": "/north-america/canada/british-columbia/vancouver-howe-sound-coastal-salmon/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-ca-bc-007/",
+      "destination": "/north-america/canada/british-columbia/ucluelet-offshore-saltwater-bottom-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-ca-bc-008/",
+      "destination": "/north-america/canada/british-columbia/tofino-coastal-waters-coastal-salmon/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-ca-bc-009/",
+      "destination": "/north-america/canada/british-columbia/port-hardy-coastal-salmon/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-ca-bc-010/",
+      "destination": "/north-america/canada/british-columbia/cowichan-river-river-trout-and-grayling/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-ca-bc-011/",
+      "destination": "/north-america/canada/british-columbia/elk-river-fernie-river-trout-and-grayling/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-ca-bc-012/",
+      "destination": "/north-america/canada/british-columbia/kootenay-lake-coldwater-lake-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-ca-bc-013/",
+      "destination": "/north-america/canada/british-columbia/shuswap-lake-coldwater-lake-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-ca-bc-014/",
+      "destination": "/north-america/canada/british-columbia/quesnel-lake-remote-lodge-and-expedition/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-ca-bc-015/",
+      "destination": "/north-america/canada/british-columbia/adams-lake-coldwater-lake-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-ca-bc-016/",
+      "destination": "/north-america/canada/british-columbia/sheridan-lake-coldwater-lake-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-ca-bc-017/",
+      "destination": "/north-america/canada/british-columbia/dragon-lake-coldwater-lake-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-ca-bc-018/",
+      "destination": "/north-america/canada/british-columbia/stamp-river-steelhead-and-anadromous-trout/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-ca-bc-019/",
+      "destination": "/north-america/canada/british-columbia/chilliwack-vedder-river-steelhead-and-anadromous-trout/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-ca-bc-020/",
+      "destination": "/north-america/canada/british-columbia/dean-river-remote-lodge-and-expedition/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-ca-mb-001/",
+      "destination": "/north-america/canada/manitoba/red-river-lockport-catfish-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-ca-mb-002/",
+      "destination": "/north-america/canada/manitoba/lake-winnipeg-ice-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-ca-mb-003/",
+      "destination": "/north-america/canada/manitoba/lake-winnipeg-open-water-program-walleye-and-reservoir-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-ca-mb-004/",
+      "destination": "/north-america/canada/manitoba/lake-of-the-prairies-walleye-and-reservoir-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-ca-mb-005/",
+      "destination": "/north-america/canada/manitoba/clear-lake-riding-mountain-area-coldwater-lake-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-ca-mb-006/",
+      "destination": "/north-america/canada/manitoba/whiteshell-west-hawk-lake-coldwater-lake-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-ca-mb-007/",
+      "destination": "/north-america/canada/manitoba/winnipeg-river-pinawa-walleye-and-reservoir-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-ca-mb-008/",
+      "destination": "/north-america/canada/manitoba/north-seal-river-lodge-area-remote-lodge-and-expedition/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-ca-mb-009/",
+      "destination": "/north-america/canada/manitoba/nueltin-lake-manitoba-base-remote-lodge-and-expedition/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-ca-mb-010/",
+      "destination": "/north-america/canada/manitoba/churchill-river-manitoba-reach-remote-lodge-and-expedition/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-ca-nb-001/",
+      "destination": "/north-america/canada/new-brunswick/miramichi-river-river-salmon/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-ca-nb-002/",
+      "destination": "/north-america/canada/new-brunswick/restigouche-river-new-brunswick-base-remote-lodge-and-expedition/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-ca-nb-003/",
+      "destination": "/north-america/canada/new-brunswick/saint-john-river-fredericton-large-freshwater-predators/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-ca-nb-004/",
+      "destination": "/north-america/canada/new-brunswick/grand-manan-coastal-waters-saltwater-bottom-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-ca-nl-001/",
+      "destination": "/north-america/canada/newfoundland-and-labrador/gander-river-river-salmon/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-ca-nl-002/",
+      "destination": "/north-america/canada/newfoundland-and-labrador/humber-river-river-salmon/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-ca-nl-003/",
+      "destination": "/north-america/canada/newfoundland-and-labrador/exploits-river-river-salmon/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-ca-nl-004/",
+      "destination": "/north-america/canada/newfoundland-and-labrador/flowers-river-labrador-remote-lodge-and-expedition/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-ca-nl-005/",
+      "destination": "/north-america/canada/newfoundland-and-labrador/minipi-watershed-labrador-remote-lodge-and-expedition/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-ca-nl-006/",
+      "destination": "/north-america/canada/newfoundland-and-labrador/labrador-coastal-char-program-remote-lodge-and-expedition/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-ca-ns-001/",
+      "destination": "/north-america/canada/nova-scotia/margaree-river-river-salmon/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-ca-ns-002/",
+      "destination": "/north-america/canada/nova-scotia/bras-d-or-lakes-inshore-estuary-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-ca-ns-003/",
+      "destination": "/north-america/canada/nova-scotia/halifax-coastal-waters-nearshore-mixed-species-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-ca-ns-004/",
+      "destination": "/north-america/canada/nova-scotia/shubenacadie-tidal-reach-inshore-estuary-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-ca-nt-003/",
+      "destination": "/north-america/canada/northwest-territories/mackenzie-river-named-lodge-reach-remote-lodge-and-expedition/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-ca-on-001/",
+      "destination": "/north-america/canada/ontario/lake-of-the-woods-ontario-base-walleye-and-reservoir-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-ca-on-002/",
+      "destination": "/north-america/canada/ontario/lake-nipissing-walleye-and-reservoir-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-ca-on-003/",
+      "destination": "/north-america/canada/ontario/lake-simcoe-ice-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-ca-on-004/",
+      "destination": "/north-america/canada/ontario/lake-simcoe-open-water-trip-lake-and-reservoir-bass/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-ca-on-005/",
+      "destination": "/north-america/canada/ontario/lake-ontario-toronto-departure-great-lakes-open-water-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-ca-on-006/",
+      "destination": "/north-america/canada/ontario/niagara-river-ontario-base-steelhead-and-anadromous-trout/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-ca-on-007/",
+      "destination": "/north-america/canada/ontario/st-lawrence-river-ontario-base-large-freshwater-predators/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-ca-on-008/",
+      "destination": "/north-america/canada/ontario/ottawa-river-large-freshwater-predators/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-ca-on-009/",
+      "destination": "/north-america/canada/ontario/lake-temagami-remote-lodge-and-expedition/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-ca-on-010/",
+      "destination": "/north-america/canada/ontario/algonquin-verified-canoe-route-remote-lodge-and-expedition/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-ca-on-011/",
+      "destination": "/north-america/canada/ontario/nipigon-river-river-trout-and-grayling/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-ca-on-012/",
+      "destination": "/north-america/canada/ontario/lake-nipigon-remote-lodge-and-expedition/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-ca-on-013/",
+      "destination": "/north-america/canada/ontario/rainy-lake-ontario-base-walleye-and-reservoir-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-ca-on-014/",
+      "destination": "/north-america/canada/ontario/eagle-lake-northwest-ontario-large-freshwater-predators/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-ca-on-015/",
+      "destination": "/north-america/canada/ontario/lac-seul-walleye-and-reservoir-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-ca-on-016/",
+      "destination": "/north-america/canada/ontario/french-river-large-freshwater-predators/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-ca-on-017/",
+      "destination": "/north-america/canada/ontario/grand-river-ontario-river-trout-and-grayling/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-ca-on-018/",
+      "destination": "/north-america/canada/ontario/lake-erie-port-dover-walleye-and-reservoir-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-ca-pe-001/",
+      "destination": "/north-america/canada/prince-edward-island/north-lake-prince-edward-island-offshore-pelagic-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-ca-pe-002/",
+      "destination": "/north-america/canada/prince-edward-island/morell-river-small-stream-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-ca-qc-001/",
+      "destination": "/north-america/canada/quebec/bonaventure-river-river-salmon/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-ca-qc-002/",
+      "destination": "/north-america/canada/quebec/matapedia-river-river-salmon/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-ca-qc-003/",
+      "destination": "/north-america/canada/quebec/sainte-marguerite-river-saguenay-area-river-salmon/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-ca-qc-004/",
+      "destination": "/north-america/canada/quebec/moisie-river-remote-lodge-and-expedition/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-ca-qc-005/",
+      "destination": "/north-america/canada/quebec/ungava-koksoak-system-remote-lodge-and-expedition/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-ca-qc-006/",
+      "destination": "/north-america/canada/quebec/lac-saint-jean-coldwater-lake-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-ca-qc-007/",
+      "destination": "/north-america/canada/quebec/gouin-reservoir-remote-lodge-and-expedition/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-ca-qc-008/",
+      "destination": "/north-america/canada/quebec/cabonga-reservoir-remote-lodge-and-expedition/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-ca-qc-009/",
+      "destination": "/north-america/canada/quebec/laurentians-lac-nominingue-walleye-and-reservoir-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-ca-qc-010/",
+      "destination": "/north-america/canada/quebec/st-lawrence-river-montreal-reach-large-freshwater-predators/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-ca-qc-011/",
+      "destination": "/north-america/canada/quebec/gaspe-coastal-waters-inshore-estuary-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-ca-qc-012/",
+      "destination": "/north-america/canada/quebec/lac-memphremagog-quebec-base-coldwater-lake-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-ca-sk-001/",
+      "destination": "/north-america/canada/saskatchewan/lake-diefenbaker-coldwater-lake-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-ca-sk-002/",
+      "destination": "/north-america/canada/saskatchewan/tobin-lake-walleye-and-reservoir-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-ca-sk-003/",
+      "destination": "/north-america/canada/saskatchewan/lac-la-ronge-remote-lodge-and-expedition/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-ca-sk-004/",
+      "destination": "/north-america/canada/saskatchewan/reindeer-lake-saskatchewan-base-remote-lodge-and-expedition/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-ca-sk-005/",
+      "destination": "/north-america/canada/saskatchewan/cree-lake-remote-lodge-and-expedition/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-ca-sk-006/",
+      "destination": "/north-america/canada/saskatchewan/wollaston-lake-remote-lodge-and-expedition/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-ca-sk-007/",
+      "destination": "/north-america/canada/saskatchewan/last-mountain-lake-walleye-and-reservoir-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-ca-sk-008/",
+      "destination": "/north-america/canada/saskatchewan/athabasca-lake-saskatchewan-base-remote-lodge-and-expedition/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-ca-yt-001/",
+      "destination": "/north-america/canada/yukon/teslin-lake-yukon-base-remote-lodge-and-expedition/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-ca-yt-002/",
+      "destination": "/north-america/canada/yukon/yukon-river-whitehorse-reach-river-trout-and-grayling/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-mx-bcn-001/",
+      "destination": "/north-america/mexico/baja-california/ensenada-offshore-offshore-pelagic-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-mx-bcn-002/",
+      "destination": "/north-america/mexico/baja-california/san-quintin-coastal-waters-saltwater-bottom-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-mx-bcn-003/",
+      "destination": "/north-america/mexico/baja-california/bahia-de-los-angeles-saltwater-bottom-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-mx-bcn-004/",
+      "destination": "/north-america/mexico/baja-california/san-felipe-coastal-waters-inshore-estuary-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-mx-bcn-005/",
+      "destination": "/north-america/mexico/baja-california/cedros-island-remote-lodge-and-expedition/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-mx-bsc-001/",
+      "destination": "/north-america/mexico/baja-california-sur/cabo-san-lucas-offshore-offshore-pelagic-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-mx-bsc-002/",
+      "destination": "/north-america/mexico/baja-california-sur/san-jose-del-cabo-offshore-program-offshore-pelagic-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-mx-bsc-003/",
+      "destination": "/north-america/mexico/baja-california-sur/la-paz-espiritu-santo-coastal-waters-inshore-estuary-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-mx-bsc-004/",
+      "destination": "/north-america/mexico/baja-california-sur/east-cape-los-barriles-inshore-estuary-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-mx-bsc-005/",
+      "destination": "/north-america/mexico/baja-california-sur/east-cape-offshore-offshore-pelagic-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-mx-bsc-006/",
+      "destination": "/north-america/mexico/baja-california-sur/loreto-inshore-estuary-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-mx-bsc-007/",
+      "destination": "/north-america/mexico/baja-california-sur/magdalena-bay-mangroves-inshore-estuary-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-mx-bsc-008/",
+      "destination": "/north-america/mexico/baja-california-sur/magdalena-bay-offshore-offshore-pelagic-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-mx-bsc-009/",
+      "destination": "/north-america/mexico/baja-california-sur/baja-sur-pacific-beach-program-surf-and-beach-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-mx-bsc-010/",
+      "destination": "/north-america/mexico/baja-california-sur/la-ventana-coastal-waters-inshore-estuary-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-mx-cam-001/",
+      "destination": "/north-america/mexico/campeche/campeche-mangroves-inshore-estuary-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-mx-cam-002/",
+      "destination": "/north-america/mexico/campeche/sabancuy-lagoon-system-inshore-estuary-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-mx-ch-001/",
+      "destination": "/north-america/mexico/chiapas/puerto-chiapas-offshore-offshore-pelagic-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-mx-col-001/",
+      "destination": "/north-america/mexico/colima/manzanillo-offshore-offshore-pelagic-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-mx-gu-001/",
+      "destination": "/north-america/mexico/guerrero/zihuatanejo-offshore-offshore-pelagic-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-mx-gu-002/",
+      "destination": "/north-america/mexico/guerrero/ixtapa-coastal-waters-inshore-estuary-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-mx-gu-003/",
+      "destination": "/north-america/mexico/guerrero/acapulco-offshore-offshore-pelagic-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-mx-jal-001/",
+      "destination": "/north-america/mexico/jalisco/puerto-vallarta-offshore-offshore-pelagic-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-mx-jal-002/",
+      "destination": "/north-america/mexico/jalisco/banderas-bay-jalisco-coast-inshore-estuary-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-mx-jal-003/",
+      "destination": "/north-america/mexico/jalisco/lake-chapala-lake-and-reservoir-bass/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-mx-nay-001/",
+      "destination": "/north-america/mexico/nayarit/san-blas-estuary-inshore-estuary-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-mx-nay-002/",
+      "destination": "/north-america/mexico/nayarit/punta-mita-coastal-waters-inshore-estuary-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-mx-nay-003/",
+      "destination": "/north-america/mexico/nayarit/riviera-nayarit-offshore-offshore-pelagic-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-mx-oa-001/",
+      "destination": "/north-america/mexico/oaxaca/puerto-escondido-offshore-offshore-pelagic-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-mx-oa-002/",
+      "destination": "/north-america/mexico/oaxaca/huatulco-offshore-offshore-pelagic-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-mx-qr-003/",
+      "destination": "/north-america/mexico/quintana-roo/xcalak-flats-saltwater-flats/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-mx-qr-004/",
+      "destination": "/north-america/mexico/quintana-roo/isla-blanca-saltwater-flats/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-mx-qr-005/",
+      "destination": "/north-america/mexico/quintana-roo/isla-mujeres-offshore-offshore-pelagic-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-mx-qr-006/",
+      "destination": "/north-america/mexico/quintana-roo/cozumel-offshore-offshore-pelagic-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-mx-sin-001/",
+      "destination": "/north-america/mexico/sinaloa/lake-el-salto-lake-and-reservoir-bass/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-mx-sin-002/",
+      "destination": "/north-america/mexico/sinaloa/lake-picachos-lake-and-reservoir-bass/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-mx-sin-003/",
+      "destination": "/north-america/mexico/sinaloa/mazatlan-offshore-offshore-pelagic-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-mx-sin-004/",
+      "destination": "/north-america/mexico/sinaloa/topolobampo-coastal-waters-inshore-estuary-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-mx-son-001/",
+      "destination": "/north-america/mexico/sonora/puerto-penasco-nearshore-mixed-species-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-mx-son-002/",
+      "destination": "/north-america/mexico/sonora/san-carlos-offshore-offshore-pelagic-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-mx-son-003/",
+      "destination": "/north-america/mexico/sonora/kino-bay-saltwater-bottom-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-mx-tam-001/",
+      "destination": "/north-america/mexico/tamaulipas/lake-vicente-guerrero-lake-and-reservoir-bass/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-mx-tam-002/",
+      "destination": "/north-america/mexico/tamaulipas/la-pesca-laguna-madre-inshore-estuary-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-mx-ver-001/",
+      "destination": "/north-america/mexico/veracruz/veracruz-offshore-offshore-pelagic-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-mx-ver-002/",
+      "destination": "/north-america/mexico/veracruz/tecolutla-estuary-inshore-estuary-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-mx-yuc-001/",
+      "destination": "/north-america/mexico/yucatan/rio-lagartos-inshore-estuary-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-mx-yuc-002/",
+      "destination": "/north-america/mexico/yucatan/san-felipe-yucatan-inshore-estuary-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-mx-yuc-003/",
+      "destination": "/north-america/mexico/yucatan/progreso-coastal-waters-saltwater-bottom-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-ak-002/",
+      "destination": "/north-america/united-states/alaska/homer-kachemak-bay-saltwater-bottom-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-ak-003/",
+      "destination": "/north-america/united-states/alaska/kenai-river-river-salmon/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-ak-004/",
+      "destination": "/north-america/united-states/alaska/kenai-river-river-trout-and-grayling/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-ak-005/",
+      "destination": "/north-america/united-states/alaska/russian-river-river-salmon/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-ak-009/",
+      "destination": "/north-america/united-states/alaska/naknek-river-river-trout-and-grayling/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-ak-010/",
+      "destination": "/north-america/united-states/alaska/kvichak-river-remote-lodge-and-expedition/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-ak-011/",
+      "destination": "/north-america/united-states/alaska/nushagak-river-remote-lodge-and-expedition/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-ak-012/",
+      "destination": "/north-america/united-states/alaska/togiak-river-remote-lodge-and-expedition/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-ak-013/",
+      "destination": "/north-america/united-states/alaska/goodnews-river-remote-lodge-and-expedition/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-ak-014/",
+      "destination": "/north-america/united-states/alaska/karluk-river-kodiak-steelhead-and-anadromous-trout/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-ak-015/",
+      "destination": "/north-america/united-states/alaska/kodiak-coastal-waters-saltwater-bottom-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-ak-016/",
+      "destination": "/north-america/united-states/alaska/seward-resurrection-bay-coastal-salmon/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-ak-017/",
+      "destination": "/north-america/united-states/alaska/prince-william-sound-valdez-coastal-salmon/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-ak-018/",
+      "destination": "/north-america/united-states/alaska/talkeetna-clear-creek-remote-lodge-and-expedition/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-ak-019/",
+      "destination": "/north-america/united-states/alaska/quartz-lake-ice-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-ak-020/",
+      "destination": "/north-america/united-states/alaska/juneau-coastal-waters-coastal-salmon/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-al-001/",
+      "destination": "/north-america/united-states/alabama/lake-guntersville-lake-and-reservoir-bass/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-al-002/",
+      "destination": "/north-america/united-states/alabama/mobile-bay-inshore-estuary-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-al-003/",
+      "destination": "/north-america/united-states/alabama/orange-beach-offshore-offshore-pelagic-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-al-004/",
+      "destination": "/north-america/united-states/alabama/pickwick-lake-alabama-base-lake-and-reservoir-bass/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-al-005/",
+      "destination": "/north-america/united-states/alabama/smith-lake-lake-and-reservoir-bass/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-al-006/",
+      "destination": "/north-america/united-states/alabama/sipsey-fork-below-lewis-smith-dam-river-trout-and-grayling/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-ar-001/",
+      "destination": "/north-america/united-states/arkansas/white-river-below-bull-shoals-dam-river-trout-and-grayling/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-ar-002/",
+      "destination": "/north-america/united-states/arkansas/little-red-river-river-trout-and-grayling/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-ar-003/",
+      "destination": "/north-america/united-states/arkansas/norfork-river-river-trout-and-grayling/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-ar-004/",
+      "destination": "/north-america/united-states/arkansas/buffalo-national-river-river-smallmouth-and-bass/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-ar-005/",
+      "destination": "/north-america/united-states/arkansas/lake-ouachita-lake-and-reservoir-bass/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-ar-006/",
+      "destination": "/north-america/united-states/arkansas/greers-ferry-lake-walleye-and-reservoir-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-az-001/",
+      "destination": "/north-america/united-states/arizona/lees-ferry-colorado-river-river-trout-and-grayling/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-az-002/",
+      "destination": "/north-america/united-states/arizona/lake-havasu-arizona-base-lake-and-reservoir-bass/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-az-003/",
+      "destination": "/north-america/united-states/arizona/roosevelt-lake-lake-and-reservoir-bass/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-az-004/",
+      "destination": "/north-america/united-states/arizona/white-mountains-big-lake-coldwater-lake-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-az-005/",
+      "destination": "/north-america/united-states/arizona/oak-creek-small-stream-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-ca-002/",
+      "destination": "/north-america/united-states/california/san-diego-offshore-offshore-pelagic-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-ca-007/",
+      "destination": "/north-america/united-states/california/california-delta-lake-and-reservoir-bass/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-ca-008/",
+      "destination": "/north-america/united-states/california/lake-shasta-lake-and-reservoir-bass/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-ca-009/",
+      "destination": "/north-america/united-states/california/clear-lake-lake-and-reservoir-bass/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-ca-010/",
+      "destination": "/north-america/united-states/california/lake-tahoe-california-base-coldwater-lake-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-ca-011/",
+      "destination": "/north-america/united-states/california/truckee-river-river-trout-and-grayling/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-ca-012/",
+      "destination": "/north-america/united-states/california/eastern-sierra-upper-owens-river-trout-and-grayling/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-ca-013/",
+      "destination": "/north-america/united-states/california/mammoth-lakes-basin-alpine-lake-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-ca-014/",
+      "destination": "/north-america/united-states/california/san-francisco-bay-inshore-estuary-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-ca-015/",
+      "destination": "/north-america/united-states/california/monterey-bay-saltwater-bottom-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-ca-016/",
+      "destination": "/north-america/united-states/california/southern-california-huntington-beach-surf-surf-and-beach-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-co-001/",
+      "destination": "/north-america/united-states/colorado/south-platte-eleven-mile-canyon-river-trout-and-grayling/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-co-003/",
+      "destination": "/north-america/united-states/colorado/south-platte-dream-stream-river-trout-and-grayling/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-co-004/",
+      "destination": "/north-america/united-states/colorado/arkansas-river-salida-river-trout-and-grayling/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-co-005/",
+      "destination": "/north-america/united-states/colorado/fryingpan-river-river-trout-and-grayling/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-co-006/",
+      "destination": "/north-america/united-states/colorado/roaring-fork-river-river-trout-and-grayling/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-co-007/",
+      "destination": "/north-america/united-states/colorado/gunnison-river-gunnison-gorge-remote-lodge-and-expedition/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-co-008/",
+      "destination": "/north-america/united-states/colorado/animas-river-durango-river-trout-and-grayling/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-co-009/",
+      "destination": "/north-america/united-states/colorado/blue-mesa-reservoir-coldwater-lake-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-co-010/",
+      "destination": "/north-america/united-states/colorado/steamboat-lake-ice-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-ct-001/",
+      "destination": "/north-america/united-states/connecticut/farmington-river-river-trout-and-grayling/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-ct-002/",
+      "destination": "/north-america/united-states/connecticut/long-island-sound-connecticut-base-inshore-estuary-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-ct-003/",
+      "destination": "/north-america/united-states/connecticut/housatonic-river-cornwall-river-trout-and-grayling/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-de-001/",
+      "destination": "/north-america/united-states/delaware/indian-river-inlet-rocky-shore-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-de-002/",
+      "destination": "/north-america/united-states/delaware/delaware-bay-lewes-base-saltwater-bottom-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-de-003/",
+      "destination": "/north-america/united-states/delaware/brandywine-creek-delaware-reach-river-smallmouth-and-bass/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-fl-001/",
+      "destination": "/north-america/united-states/florida/islamorada-flats-saltwater-flats/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-fl-002/",
+      "destination": "/north-america/united-states/florida/lake-okeechobee-lake-and-reservoir-bass/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-fl-003/",
+      "destination": "/north-america/united-states/florida/florida-keys-tarpon-focused-trip-saltwater-flats/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-fl-004/",
+      "destination": "/north-america/united-states/florida/key-west-offshore-offshore-pelagic-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-fl-005/",
+      "destination": "/north-america/united-states/florida/marathon-reef-and-wreck-saltwater-bottom-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-fl-006/",
+      "destination": "/north-america/united-states/florida/everglades-florida-bay-inshore-estuary-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-fl-007/",
+      "destination": "/north-america/united-states/florida/biscayne-bay-saltwater-flats/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-fl-008/",
+      "destination": "/north-america/united-states/florida/mosquito-lagoon-inshore-estuary-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-fl-009/",
+      "destination": "/north-america/united-states/florida/indian-river-lagoon-inshore-estuary-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-fl-010/",
+      "destination": "/north-america/united-states/florida/tampa-bay-inshore-estuary-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-fl-011/",
+      "destination": "/north-america/united-states/florida/boca-grande-inshore-estuary-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-fl-012/",
+      "destination": "/north-america/united-states/florida/charlotte-harbor-inshore-estuary-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-fl-013/",
+      "destination": "/north-america/united-states/florida/jacksonville-st-johns-estuary-inshore-estuary-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-fl-014/",
+      "destination": "/north-america/united-states/florida/st-augustine-nearshore-nearshore-mixed-species-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-fl-015/",
+      "destination": "/north-america/united-states/florida/destin-offshore-offshore-pelagic-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-fl-016/",
+      "destination": "/north-america/united-states/florida/pensacola-inshore-inshore-estuary-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-fl-017/",
+      "destination": "/north-america/united-states/florida/miami-urban-canals-introduced-species-canal-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-fl-018/",
+      "destination": "/north-america/united-states/florida/st-johns-river-freshwater-reach-river-smallmouth-and-bass/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-fl-019/",
+      "destination": "/north-america/united-states/florida/suwannee-river-river-smallmouth-and-bass/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-fl-020/",
+      "destination": "/north-america/united-states/florida/sebastian-inlet-accessible-shoreline-rocky-shore-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-ga-001/",
+      "destination": "/north-america/united-states/georgia/lake-lanier-lake-and-reservoir-bass/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-ga-002/",
+      "destination": "/north-america/united-states/georgia/chattahoochee-below-buford-dam-river-trout-and-grayling/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-ga-003/",
+      "destination": "/north-america/united-states/georgia/savannah-tybee-estuary-inshore-estuary-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-ga-004/",
+      "destination": "/north-america/united-states/georgia/golden-isles-st-simons-inshore-estuary-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-ga-005/",
+      "destination": "/north-america/united-states/georgia/lake-seminole-georgia-base-lake-and-reservoir-bass/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-ga-006/",
+      "destination": "/north-america/united-states/georgia/toccoa-river-tailwater-river-trout-and-grayling/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-hi-001/",
+      "destination": "/north-america/united-states/hawaii/kona-offshore-offshore-pelagic-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-hi-002/",
+      "destination": "/north-america/united-states/hawaii/oahu-flats-saltwater-flats/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-hi-003/",
+      "destination": "/north-america/united-states/hawaii/kauai-nawiliwili-offshore-offshore-pelagic-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-hi-004/",
+      "destination": "/north-america/united-states/hawaii/maui-maalaea-offshore-offshore-pelagic-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-hi-005/",
+      "destination": "/north-america/united-states/hawaii/kokee-streams-kauai-small-stream-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-hi-006/",
+      "destination": "/north-america/united-states/hawaii/oahu-shoreline-rocky-shore-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-ia-001/",
+      "destination": "/north-america/united-states/iowa/spirit-lake-iowa-great-lakes-walleye-and-reservoir-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-ia-002/",
+      "destination": "/north-america/united-states/iowa/northeast-iowa-big-spring-trout-water-spring-fed-trout-and-grayling/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-ia-003/",
+      "destination": "/north-america/united-states/iowa/mississippi-river-pool-9-iowa-base-walleye-and-reservoir-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-id-001/",
+      "destination": "/north-america/united-states/idaho/henry-s-fork-spring-fed-trout-and-grayling/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-id-002/",
+      "destination": "/north-america/united-states/idaho/south-fork-snake-river-river-trout-and-grayling/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-id-003/",
+      "destination": "/north-america/united-states/idaho/silver-creek-spring-fed-trout-and-grayling/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-id-004/",
+      "destination": "/north-america/united-states/idaho/clearwater-river-steelhead-and-anadromous-trout/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-id-005/",
+      "destination": "/north-america/united-states/idaho/salmon-river-steelhead-and-anadromous-trout/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-id-006/",
+      "destination": "/north-america/united-states/idaho/lake-pend-oreille-coldwater-lake-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-id-007/",
+      "destination": "/north-america/united-states/idaho/lake-coeur-d-alene-coldwater-lake-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-id-008/",
+      "destination": "/north-america/united-states/idaho/sawtooth-mountains-verified-alpine-lakes-alpine-lake-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-il-001/",
+      "destination": "/north-america/united-states/illinois/lake-michigan-chicago-great-lakes-open-water-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-il-002/",
+      "destination": "/north-america/united-states/illinois/rend-lake-panfish-and-family-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-il-003/",
+      "destination": "/north-america/united-states/illinois/kankakee-river-river-smallmouth-and-bass/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-il-004/",
+      "destination": "/north-america/united-states/illinois/illinois-river-starved-rock-area-walleye-and-reservoir-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-in-001/",
+      "destination": "/north-america/united-states/indiana/lake-michigan-michigan-city-great-lakes-open-water-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-in-002/",
+      "destination": "/north-america/united-states/indiana/lake-monroe-panfish-and-family-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-in-003/",
+      "destination": "/north-america/united-states/indiana/st-joseph-river-south-bend-steelhead-and-anadromous-trout/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-in-004/",
+      "destination": "/north-america/united-states/indiana/white-river-central-indiana-river-smallmouth-and-bass/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-ks-001/",
+      "destination": "/north-america/united-states/kansas/milford-lake-catfish-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-ks-002/",
+      "destination": "/north-america/united-states/kansas/wilson-lake-lake-and-reservoir-bass/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-ks-003/",
+      "destination": "/north-america/united-states/kansas/clinton-lake-panfish-and-family-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-ky-001/",
+      "destination": "/north-america/united-states/kentucky/cumberland-river-below-wolf-creek-dam-river-trout-and-grayling/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-ky-002/",
+      "destination": "/north-america/united-states/kentucky/kentucky-lake-kentucky-base-panfish-and-family-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-ky-003/",
+      "destination": "/north-america/united-states/kentucky/dale-hollow-kentucky-base-lake-and-reservoir-bass/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-ky-004/",
+      "destination": "/north-america/united-states/kentucky/cave-run-lake-large-freshwater-predators/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-ky-005/",
+      "destination": "/north-america/united-states/kentucky/green-river-lake-panfish-and-family-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-la-001/",
+      "destination": "/north-america/united-states/louisiana/venice-marshes-inshore-estuary-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-la-002/",
+      "destination": "/north-america/united-states/louisiana/venice-offshore-offshore-pelagic-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-la-003/",
+      "destination": "/north-america/united-states/louisiana/delacroix-marshes-inshore-estuary-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-la-004/",
+      "destination": "/north-america/united-states/louisiana/hopedale-biloxi-marsh-inshore-estuary-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-la-005/",
+      "destination": "/north-america/united-states/louisiana/grand-isle-surf-surf-and-beach-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-la-006/",
+      "destination": "/north-america/united-states/louisiana/calcasieu-lake-inshore-estuary-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-la-007/",
+      "destination": "/north-america/united-states/louisiana/atchafalaya-basin-lake-and-reservoir-bass/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-la-008/",
+      "destination": "/north-america/united-states/louisiana/toledo-bend-louisiana-base-lake-and-reservoir-bass/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-la-009/",
+      "destination": "/north-america/united-states/louisiana/caney-creek-reservoir-lake-and-reservoir-bass/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-la-010/",
+      "destination": "/north-america/united-states/louisiana/cocodrie-terrebonne-marshes-inshore-estuary-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-ma-001/",
+      "destination": "/north-america/united-states/massachusetts/cape-cod-monomoy-inshore-estuary-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-ma-002/",
+      "destination": "/north-america/united-states/massachusetts/deerfield-river-river-trout-and-grayling/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-ma-003/",
+      "destination": "/north-america/united-states/massachusetts/cape-cod-canal-rocky-shore-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-ma-004/",
+      "destination": "/north-america/united-states/massachusetts/gloucester-offshore-offshore-pelagic-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-ma-005/",
+      "destination": "/north-america/united-states/massachusetts/martha-s-vineyard-beaches-surf-and-beach-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-ma-006/",
+      "destination": "/north-america/united-states/massachusetts/quabbin-reservoir-coldwater-lake-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-md-001/",
+      "destination": "/north-america/united-states/maryland/chesapeake-bay-maryland-base-inshore-estuary-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-md-002/",
+      "destination": "/north-america/united-states/maryland/gunpowder-falls-river-trout-and-grayling/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-md-003/",
+      "destination": "/north-america/united-states/maryland/ocean-city-offshore-offshore-pelagic-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-md-004/",
+      "destination": "/north-america/united-states/maryland/deep-creek-lake-walleye-and-reservoir-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-md-005/",
+      "destination": "/north-america/united-states/maryland/potomac-river-maryland-base-river-smallmouth-and-bass/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-me-001/",
+      "destination": "/north-america/united-states/maine/moosehead-lake-coldwater-lake-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-me-002/",
+      "destination": "/north-america/united-states/maine/kennebec-river-upper-reach-river-trout-and-grayling/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-me-003/",
+      "destination": "/north-america/united-states/maine/penobscot-bay-inshore-estuary-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-me-004/",
+      "destination": "/north-america/united-states/maine/rangeley-lake-coldwater-lake-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-me-005/",
+      "destination": "/north-america/united-states/maine/grand-lake-stream-small-stream-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-me-006/",
+      "destination": "/north-america/united-states/maine/belgrade-lakes-lake-and-reservoir-bass/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-me-007/",
+      "destination": "/north-america/united-states/maine/moosehead-lake-guided-winter-outing-ice-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-mi-001/",
+      "destination": "/north-america/united-states/michigan/lake-michigan-manistee-great-lakes-open-water-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-mi-002/",
+      "destination": "/north-america/united-states/michigan/au-sable-river-river-trout-and-grayling/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-mi-003/",
+      "destination": "/north-america/united-states/michigan/pere-marquette-river-steelhead-and-anadromous-trout/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-mi-004/",
+      "destination": "/north-america/united-states/michigan/manistee-river-tippy-dam-reach-steelhead-and-anadromous-trout/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-mi-005/",
+      "destination": "/north-america/united-states/michigan/muskegon-river-steelhead-and-anadromous-trout/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-mi-006/",
+      "destination": "/north-america/united-states/michigan/lake-st-clair-michigan-base-large-freshwater-predators/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-mi-007/",
+      "destination": "/north-america/united-states/michigan/saginaw-bay-walleye-and-reservoir-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-mi-008/",
+      "destination": "/north-america/united-states/michigan/detroit-river-walleye-and-reservoir-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-mi-009/",
+      "destination": "/north-america/united-states/michigan/grand-traverse-bay-lake-and-reservoir-bass/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-mi-010/",
+      "destination": "/north-america/united-states/michigan/lake-superior-marquette-great-lakes-open-water-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-mi-011/",
+      "destination": "/north-america/united-states/michigan/houghton-lake-ice-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-mi-012/",
+      "destination": "/north-america/united-states/michigan/escanaba-little-bay-de-noc-walleye-and-reservoir-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-mn-001/",
+      "destination": "/north-america/united-states/minnesota/lake-of-the-woods-minnesota-base-walleye-and-reservoir-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-mn-002/",
+      "destination": "/north-america/united-states/minnesota/boundary-waters-verified-entry-route-remote-lodge-and-expedition/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-mn-003/",
+      "destination": "/north-america/united-states/minnesota/mille-lacs-lake-lake-and-reservoir-bass/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-mn-004/",
+      "destination": "/north-america/united-states/minnesota/leech-lake-large-freshwater-predators/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-mn-005/",
+      "destination": "/north-america/united-states/minnesota/lake-winnibigoshish-walleye-and-reservoir-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-mn-006/",
+      "destination": "/north-america/united-states/minnesota/lake-vermilion-walleye-and-reservoir-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-mn-007/",
+      "destination": "/north-america/united-states/minnesota/rainy-river-sturgeon-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-mn-008/",
+      "destination": "/north-america/united-states/minnesota/lake-superior-duluth-great-lakes-open-water-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-mn-009/",
+      "destination": "/north-america/united-states/minnesota/root-river-southeast-minnesota-spring-fed-trout-and-grayling/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-mn-010/",
+      "destination": "/north-america/united-states/minnesota/upper-red-lake-ice-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-mo-001/",
+      "destination": "/north-america/united-states/missouri/lake-taneycomo-river-trout-and-grayling/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-mo-002/",
+      "destination": "/north-america/united-states/missouri/table-rock-lake-lake-and-reservoir-bass/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-mo-003/",
+      "destination": "/north-america/united-states/missouri/lake-of-the-ozarks-lake-and-reservoir-bass/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-mo-004/",
+      "destination": "/north-america/united-states/missouri/current-river-river-smallmouth-and-bass/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-mo-005/",
+      "destination": "/north-america/united-states/missouri/truman-lake-panfish-and-family-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-ms-001/",
+      "destination": "/north-america/united-states/mississippi/gulfport-biloxi-nearshore-inshore-estuary-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-ms-002/",
+      "destination": "/north-america/united-states/mississippi/grenada-lake-panfish-and-family-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-ms-003/",
+      "destination": "/north-america/united-states/mississippi/sardis-lake-panfish-and-family-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-ms-004/",
+      "destination": "/north-america/united-states/mississippi/ross-barnett-reservoir-lake-and-reservoir-bass/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-mt-001/",
+      "destination": "/north-america/united-states/montana/madison-river-river-trout-and-grayling/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-mt-002/",
+      "destination": "/north-america/united-states/montana/missouri-river-craig-river-trout-and-grayling/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-mt-003/",
+      "destination": "/north-america/united-states/montana/yellowstone-river-paradise-valley-river-trout-and-grayling/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-mt-004/",
+      "destination": "/north-america/united-states/montana/gallatin-river-river-trout-and-grayling/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-mt-005/",
+      "destination": "/north-america/united-states/montana/bighorn-river-river-trout-and-grayling/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-mt-006/",
+      "destination": "/north-america/united-states/montana/bitterroot-river-river-trout-and-grayling/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-mt-007/",
+      "destination": "/north-america/united-states/montana/blackfoot-river-river-trout-and-grayling/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-mt-008/",
+      "destination": "/north-america/united-states/montana/flathead-lake-coldwater-lake-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-mt-009/",
+      "destination": "/north-america/united-states/montana/rock-creek-near-missoula-small-stream-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-mt-010/",
+      "destination": "/north-america/united-states/montana/beaverhead-river-river-trout-and-grayling/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-nc-002/",
+      "destination": "/north-america/united-states/north-carolina/outer-banks-oregon-inlet-offshore-offshore-pelagic-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-nc-003/",
+      "destination": "/north-america/united-states/north-carolina/pamlico-sound-inshore-estuary-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-nc-004/",
+      "destination": "/north-america/united-states/north-carolina/wilmington-cape-fear-estuary-inshore-estuary-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-nc-005/",
+      "destination": "/north-america/united-states/north-carolina/brevard-davidson-river-river-trout-and-grayling/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-nc-006/",
+      "destination": "/north-america/united-states/north-carolina/tuckasegee-river-river-trout-and-grayling/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-nc-007/",
+      "destination": "/north-america/united-states/north-carolina/fontana-lake-lake-and-reservoir-bass/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-nc-008/",
+      "destination": "/north-america/united-states/north-carolina/lake-norman-lake-and-reservoir-bass/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-nc-009/",
+      "destination": "/north-america/united-states/north-carolina/roanoke-river-weldon-river-smallmouth-and-bass/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-nc-010/",
+      "destination": "/north-america/united-states/north-carolina/albemarle-sound-inshore-estuary-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-nd-001/",
+      "destination": "/north-america/united-states/north-dakota/devils-lake-walleye-and-reservoir-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-nd-002/",
+      "destination": "/north-america/united-states/north-dakota/lake-sakakawea-walleye-and-reservoir-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-nd-003/",
+      "destination": "/north-america/united-states/north-dakota/red-river-fargo-reach-catfish-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-nd-004/",
+      "destination": "/north-america/united-states/north-dakota/lake-audubon-ice-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-ne-001/",
+      "destination": "/north-america/united-states/nebraska/lake-mcconaughy-walleye-and-reservoir-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-ne-002/",
+      "destination": "/north-america/united-states/nebraska/niobrara-river-trout-reaches-small-stream-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-ne-003/",
+      "destination": "/north-america/united-states/nebraska/harlan-county-reservoir-walleye-and-reservoir-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-nh-001/",
+      "destination": "/north-america/united-states/new-hampshire/lake-winnipesaukee-coldwater-lake-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-nh-002/",
+      "destination": "/north-america/united-states/new-hampshire/upper-connecticut-river-pittsburg-river-trout-and-grayling/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-nh-003/",
+      "destination": "/north-america/united-states/new-hampshire/piscataqua-river-portsmouth-inshore-estuary-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-nh-004/",
+      "destination": "/north-america/united-states/new-hampshire/white-mountains-ellis-river-small-stream-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-nj-001/",
+      "destination": "/north-america/united-states/new-jersey/raritan-bay-inshore-estuary-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-nj-002/",
+      "destination": "/north-america/united-states/new-jersey/delaware-river-new-jersey-reach-river-smallmouth-and-bass/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-nj-003/",
+      "destination": "/north-america/united-states/new-jersey/island-beach-state-park-surf-and-beach-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-nj-004/",
+      "destination": "/north-america/united-states/new-jersey/manasquan-shark-river-departures-saltwater-bottom-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-nj-005/",
+      "destination": "/north-america/united-states/new-jersey/south-branch-raritan-river-small-stream-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-nm-001/",
+      "destination": "/north-america/united-states/new-mexico/san-juan-river-navajo-dam-river-trout-and-grayling/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-nm-002/",
+      "destination": "/north-america/united-states/new-mexico/rio-grande-taos-reach-river-trout-and-grayling/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-nm-003/",
+      "destination": "/north-america/united-states/new-mexico/pecos-river-small-stream-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-nm-004/",
+      "destination": "/north-america/united-states/new-mexico/eagle-nest-lake-coldwater-lake-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-nm-005/",
+      "destination": "/north-america/united-states/new-mexico/elephant-butte-reservoir-lake-and-reservoir-bass/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-nv-001/",
+      "destination": "/north-america/united-states/nevada/pyramid-lake-coldwater-lake-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-nv-002/",
+      "destination": "/north-america/united-states/nevada/lake-mead-nevada-base-lake-and-reservoir-bass/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-nv-003/",
+      "destination": "/north-america/united-states/nevada/wildhorse-reservoir-coldwater-lake-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-nv-004/",
+      "destination": "/north-america/united-states/nevada/ruby-mountains-accessible-alpine-lakes-alpine-lake-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-ny-001/",
+      "destination": "/north-america/united-states/new-york/salmon-river-pulaski-steelhead-and-anadromous-trout/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-ny-002/",
+      "destination": "/north-america/united-states/new-york/catskills-beaver-kill-river-trout-and-grayling/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-ny-003/",
+      "destination": "/north-america/united-states/new-york/west-branch-delaware-river-river-trout-and-grayling/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-ny-004/",
+      "destination": "/north-america/united-states/new-york/lake-ontario-oswego-great-lakes-open-water-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-ny-005/",
+      "destination": "/north-america/united-states/new-york/montauk-inshore-estuary-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-ny-006/",
+      "destination": "/north-america/united-states/new-york/adirondacks-ausable-river-river-trout-and-grayling/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-ny-007/",
+      "destination": "/north-america/united-states/new-york/lake-champlain-new-york-base-lake-and-reservoir-bass/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-ny-008/",
+      "destination": "/north-america/united-states/new-york/thousand-islands-st-lawrence-river-large-freshwater-predators/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-ny-009/",
+      "destination": "/north-america/united-states/new-york/finger-lakes-cayuga-lake-coldwater-lake-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-ny-010/",
+      "destination": "/north-america/united-states/new-york/hudson-river-tidal-reach-inshore-estuary-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-oh-001/",
+      "destination": "/north-america/united-states/ohio/lake-erie-port-clinton-walleye-and-reservoir-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-oh-002/",
+      "destination": "/north-america/united-states/ohio/mad-river-small-stream-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-oh-003/",
+      "destination": "/north-america/united-states/ohio/maumee-river-walleye-and-reservoir-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-oh-004/",
+      "destination": "/north-america/united-states/ohio/grand-river-lake-erie-tributary-steelhead-and-anadromous-trout/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-oh-005/",
+      "destination": "/north-america/united-states/ohio/alum-creek-lake-large-freshwater-predators/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-oh-006/",
+      "destination": "/north-america/united-states/ohio/ohio-river-cincinnati-reach-catfish-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-ok-001/",
+      "destination": "/north-america/united-states/oklahoma/lake-texoma-oklahoma-base-lake-and-reservoir-bass/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-ok-002/",
+      "destination": "/north-america/united-states/oklahoma/lower-mountain-fork-river-river-trout-and-grayling/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-ok-003/",
+      "destination": "/north-america/united-states/oklahoma/grand-lake-o-the-cherokees-lake-and-reservoir-bass/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-ok-004/",
+      "destination": "/north-america/united-states/oklahoma/lake-eufaula-panfish-and-family-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-ok-005/",
+      "destination": "/north-america/united-states/oklahoma/illinois-river-tahlequah-river-smallmouth-and-bass/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-or-001/",
+      "destination": "/north-america/united-states/oregon/deschutes-river-lower-reach-river-trout-and-grayling/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-or-003/",
+      "destination": "/north-america/united-states/oregon/columbia-river-oregon-launches-sturgeon-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-or-004/",
+      "destination": "/north-america/united-states/oregon/mckenzie-river-river-trout-and-grayling/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-or-005/",
+      "destination": "/north-america/united-states/oregon/metolius-river-spring-fed-trout-and-grayling/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-or-006/",
+      "destination": "/north-america/united-states/oregon/umpqua-river-north-umpqua-steelhead-and-anadromous-trout/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-or-007/",
+      "destination": "/north-america/united-states/oregon/klamath-lake-coldwater-lake-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-or-008/",
+      "destination": "/north-america/united-states/oregon/crane-prairie-reservoir-coldwater-lake-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-or-009/",
+      "destination": "/north-america/united-states/oregon/newport-offshore-offshore-pelagic-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-or-010/",
+      "destination": "/north-america/united-states/oregon/oregon-coast-pacific-city-beaches-surf-and-beach-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-pa-001/",
+      "destination": "/north-america/united-states/pennsylvania/spring-creek-centre-county-spring-fed-trout-and-grayling/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-pa-002/",
+      "destination": "/north-america/united-states/pennsylvania/susquehanna-river-harrisburg-reach-river-smallmouth-and-bass/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-pa-003/",
+      "destination": "/north-america/united-states/pennsylvania/penns-creek-river-trout-and-grayling/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-pa-004/",
+      "destination": "/north-america/united-states/pennsylvania/little-juniata-river-river-trout-and-grayling/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-pa-005/",
+      "destination": "/north-america/united-states/pennsylvania/letort-spring-run-spring-fed-trout-and-grayling/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-pa-006/",
+      "destination": "/north-america/united-states/pennsylvania/lake-erie-erie-port-walleye-and-reservoir-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-pa-007/",
+      "destination": "/north-america/united-states/pennsylvania/elk-creek-lake-erie-tributary-steelhead-and-anadromous-trout/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-pa-008/",
+      "destination": "/north-america/united-states/pennsylvania/raystown-lake-coldwater-lake-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-ri-001/",
+      "destination": "/north-america/united-states/rhode-island/narragansett-bay-inshore-estuary-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-ri-002/",
+      "destination": "/north-america/united-states/rhode-island/block-island-waters-inshore-estuary-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-ri-003/",
+      "destination": "/north-america/united-states/rhode-island/wood-river-small-stream-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-sc-001/",
+      "destination": "/north-america/united-states/south-carolina/charleston-marshes-inshore-estuary-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-sc-002/",
+      "destination": "/north-america/united-states/south-carolina/beaufort-port-royal-sound-inshore-estuary-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-sc-003/",
+      "destination": "/north-america/united-states/south-carolina/lake-murray-lake-and-reservoir-bass/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-sc-004/",
+      "destination": "/north-america/united-states/south-carolina/santee-cooper-lake-marion-catfish-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-sc-005/",
+      "destination": "/north-america/united-states/south-carolina/lake-hartwell-south-carolina-base-lake-and-reservoir-bass/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-sc-006/",
+      "destination": "/north-america/united-states/south-carolina/grand-strand-myrtle-beach-surf-surf-and-beach-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-sd-001/",
+      "destination": "/north-america/united-states/south-dakota/lake-oahe-pierre-base-walleye-and-reservoir-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-sd-002/",
+      "destination": "/north-america/united-states/south-dakota/black-hills-rapid-creek-small-stream-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-sd-003/",
+      "destination": "/north-america/united-states/south-dakota/lake-sharpe-walleye-and-reservoir-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-sd-004/",
+      "destination": "/north-america/united-states/south-dakota/waubay-lake-ice-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-tn-001/",
+      "destination": "/north-america/united-states/tennessee/south-holston-river-river-trout-and-grayling/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-tn-002/",
+      "destination": "/north-america/united-states/tennessee/chickamauga-lake-lake-and-reservoir-bass/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-tn-003/",
+      "destination": "/north-america/united-states/tennessee/watauga-river-river-trout-and-grayling/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-tn-004/",
+      "destination": "/north-america/united-states/tennessee/caney-fork-river-river-trout-and-grayling/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-tn-005/",
+      "destination": "/north-america/united-states/tennessee/dale-hollow-tennessee-base-lake-and-reservoir-bass/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-tn-006/",
+      "destination": "/north-america/united-states/tennessee/reelfoot-lake-panfish-and-family-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-tn-007/",
+      "destination": "/north-america/united-states/tennessee/great-smoky-mountains-little-river-small-stream-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-tx-001/",
+      "destination": "/north-america/united-states/texas/port-aransas-aransas-bay-inshore-estuary-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-tx-002/",
+      "destination": "/north-america/united-states/texas/lake-fork-lake-and-reservoir-bass/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-tx-003/",
+      "destination": "/north-america/united-states/texas/galveston-bay-inshore-estuary-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-tx-004/",
+      "destination": "/north-america/united-states/texas/lower-laguna-madre-south-padre-base-inshore-estuary-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-tx-005/",
+      "destination": "/north-america/united-states/texas/upper-laguna-madre-corpus-christi-base-inshore-estuary-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-tx-006/",
+      "destination": "/north-america/united-states/texas/south-padre-offshore-offshore-pelagic-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-tx-007/",
+      "destination": "/north-america/united-states/texas/matagorda-bay-inshore-estuary-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-tx-008/",
+      "destination": "/north-america/united-states/texas/guadalupe-river-below-canyon-lake-river-trout-and-grayling/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-tx-009/",
+      "destination": "/north-america/united-states/texas/llano-river-river-smallmouth-and-bass/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-tx-010/",
+      "destination": "/north-america/united-states/texas/lake-texoma-texas-base-lake-and-reservoir-bass/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-tx-011/",
+      "destination": "/north-america/united-states/texas/sam-rayburn-reservoir-lake-and-reservoir-bass/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-tx-012/",
+      "destination": "/north-america/united-states/texas/toledo-bend-texas-base-panfish-and-family-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-tx-013/",
+      "destination": "/north-america/united-states/texas/lake-amistad-texas-base-lake-and-reservoir-bass/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-tx-014/",
+      "destination": "/north-america/united-states/texas/padre-island-national-seashore-surf-and-beach-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-ut-001/",
+      "destination": "/north-america/united-states/utah/green-river-below-flaming-gorge-river-trout-and-grayling/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-ut-002/",
+      "destination": "/north-america/united-states/utah/provo-river-river-trout-and-grayling/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-ut-003/",
+      "destination": "/north-america/united-states/utah/weber-river-river-trout-and-grayling/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-ut-004/",
+      "destination": "/north-america/united-states/utah/strawberry-reservoir-coldwater-lake-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-ut-005/",
+      "destination": "/north-america/united-states/utah/flaming-gorge-utah-base-coldwater-lake-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-ut-006/",
+      "destination": "/north-america/united-states/utah/lake-powell-utah-base-lake-and-reservoir-bass/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-ut-007/",
+      "destination": "/north-america/united-states/utah/uinta-mountains-verified-lakes-alpine-lake-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-va-001/",
+      "destination": "/north-america/united-states/virginia/chesapeake-bay-virginia-beach-base-inshore-estuary-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-va-002/",
+      "destination": "/north-america/united-states/virginia/shenandoah-river-river-smallmouth-and-bass/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-va-003/",
+      "destination": "/north-america/united-states/virginia/jackson-river-tailwater-river-trout-and-grayling/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-va-004/",
+      "destination": "/north-america/united-states/virginia/mossy-creek-spring-fed-trout-and-grayling/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-va-005/",
+      "destination": "/north-america/united-states/virginia/smith-mountain-lake-lake-and-reservoir-bass/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-va-006/",
+      "destination": "/north-america/united-states/virginia/james-river-tidal-reach-catfish-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-va-007/",
+      "destination": "/north-america/united-states/virginia/south-holston-reservoir-virginia-base-coldwater-lake-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-vt-001/",
+      "destination": "/north-america/united-states/vermont/lake-champlain-vermont-base-lake-and-reservoir-bass/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-vt-002/",
+      "destination": "/north-america/united-states/vermont/battenkill-vermont-reach-river-trout-and-grayling/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-vt-003/",
+      "destination": "/north-america/united-states/vermont/otter-creek-river-trout-and-grayling/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-vt-004/",
+      "destination": "/north-america/united-states/vermont/lake-memphremagog-vermont-base-coldwater-lake-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-wa-001/",
+      "destination": "/north-america/united-states/washington/puget-sound-coastal-salmon/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-wa-002/",
+      "destination": "/north-america/united-states/washington/yakima-river-river-trout-and-grayling/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-wa-003/",
+      "destination": "/north-america/united-states/washington/columbia-river-lower-reach-river-salmon/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-wa-004/",
+      "destination": "/north-america/united-states/washington/olympic-peninsula-sol-duc-steelhead-and-anadromous-trout/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-wa-005/",
+      "destination": "/north-america/united-states/washington/hoh-river-steelhead-and-anadromous-trout/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-wa-006/",
+      "destination": "/north-america/united-states/washington/skagit-river-steelhead-and-anadromous-trout/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-wa-007/",
+      "destination": "/north-america/united-states/washington/lake-washington-coldwater-lake-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-wa-008/",
+      "destination": "/north-america/united-states/washington/lake-chelan-coldwater-lake-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-wa-009/",
+      "destination": "/north-america/united-states/washington/potholes-reservoir-walleye-and-reservoir-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-wa-010/",
+      "destination": "/north-america/united-states/washington/lake-roosevelt-coldwater-lake-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-wa-011/",
+      "destination": "/north-america/united-states/washington/westport-offshore-offshore-pelagic-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-wa-012/",
+      "destination": "/north-america/united-states/washington/spokane-river-river-trout-and-grayling/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-wi-001/",
+      "destination": "/north-america/united-states/wisconsin/green-bay-walleye-and-reservoir-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-wi-002/",
+      "destination": "/north-america/united-states/wisconsin/driftless-west-fork-kickapoo-spring-fed-trout-and-grayling/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-wi-003/",
+      "destination": "/north-america/united-states/wisconsin/lake-winnebago-walleye-and-reservoir-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-wi-004/",
+      "destination": "/north-america/united-states/wisconsin/eau-claire-chain-northwest-wisconsin-large-freshwater-predators/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-wi-005/",
+      "destination": "/north-america/united-states/wisconsin/chippewa-flowage-large-freshwater-predators/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-wi-006/",
+      "destination": "/north-america/united-states/wisconsin/door-county-sturgeon-bay-lake-and-reservoir-bass/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-wi-007/",
+      "destination": "/north-america/united-states/wisconsin/lake-michigan-milwaukee-great-lakes-open-water-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-wi-008/",
+      "destination": "/north-america/united-states/wisconsin/lake-superior-apostle-islands-area-great-lakes-open-water-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-wi-009/",
+      "destination": "/north-america/united-states/wisconsin/bois-brule-river-steelhead-and-anadromous-trout/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-wi-010/",
+      "destination": "/north-america/united-states/wisconsin/petenwell-flowage-ice-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-wv-001/",
+      "destination": "/north-america/united-states/west-virginia/new-river-river-smallmouth-and-bass/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-wv-002/",
+      "destination": "/north-america/united-states/west-virginia/elk-river-upper-reach-spring-fed-trout-and-grayling/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-wv-003/",
+      "destination": "/north-america/united-states/west-virginia/cranberry-river-small-stream-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-wv-004/",
+      "destination": "/north-america/united-states/west-virginia/summersville-lake-lake-and-reservoir-bass/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-wy-001/",
+      "destination": "/north-america/united-states/wyoming/north-platte-grey-reef-river-trout-and-grayling/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-wy-002/",
+      "destination": "/north-america/united-states/wyoming/snake-river-jackson-river-trout-and-grayling/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-wy-003/",
+      "destination": "/north-america/united-states/wyoming/north-platte-miracle-mile-river-trout-and-grayling/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-wy-004/",
+      "destination": "/north-america/united-states/wyoming/green-river-pinedale-river-trout-and-grayling/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-wy-005/",
+      "destination": "/north-america/united-states/wyoming/wind-river-dubois-river-trout-and-grayling/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-wy-006/",
+      "destination": "/north-america/united-states/wyoming/yellowstone-national-park-yellowstone-river-river-trout-and-grayling/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-wy-007/",
+      "destination": "/north-america/united-states/wyoming/bighorn-mountains-mountain-streams-small-stream-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/na-us-wy-008/",
+      "destination": "/north-america/united-states/wyoming/flaming-gorge-wyoming-base-coldwater-lake-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/rocky-mountain-alpine/",
+      "destination": "/north-america/united-states/colorado/rocky-mountain-national-park-verified-alpine-lakes-alpine-lake-fishing/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/situk-coho-river/",
+      "destination": "/north-america/united-states/alaska/situk-river-river-salmon/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/tanana-glacial-system/",
+      "destination": "/north-america/united-states/alaska/tanana-drainage-remote-lodge-and-expedition/",
+      "permanent": true
+    },
+    {
+      "source": "/trips/yakutat-halibut/",
+      "destination": "/north-america/united-states/alaska/yakutat-bay-saltwater-bottom-fishing/",
+      "permanent": true
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+[
+  {
+    "oldId": "situk-coho-river",
+    "planId": "US-AK-001",
+    "canonicalPath": "/north-america/united-states/alaska/situk-river-river-salmon/",
+    "action": "retained and connected to production route"
+  },
+  {
+    "oldId": "yakutat-halibut",
+    "planId": "US-AK-006",
+    "canonicalPath": "/north-america/united-states/alaska/yakutat-bay-saltwater-bottom-fishing/",
+    "action": "retained and connected to production route"
+  },
+  {
+    "oldId": "delta-clearwater-grayling",
+    "planId": "US-AK-007",
+    "canonicalPath": "/north-america/united-states/alaska/delta-clearwater-river-spring-fed-trout-and-grayling/",
+    "action": "retained and connected to production route"
+  },
+  {
+    "oldId": "tanana-glacial-system",
+    "planId": "US-AK-008",
+    "canonicalPath": "/north-america/united-states/alaska/tanana-drainage-remote-lodge-and-expedition/",
+    "action": "retained and connected to production route"
+  },
+  {
+    "oldId": "g-united-states-rogue-river",
+    "planId": "US-OR-002",
+    "canonicalPath": "/north-america/united-states/oregon/rogue-river-steelhead-and-anadromous-trout/",
+    "action": "retained and connected to production route"
+  },
+  {
+    "oldId": "g-united-states-lower-sacramento-river",
+    "planId": "US-CA-001",
+    "canonicalPath": "/north-america/united-states/california/lower-sacramento-river-river-trout-and-grayling/",
+    "action": "retained and connected to production route"
+  },
+  {
+    "oldId": "g-united-states-mccloud-river",
+    "planId": "US-CA-003",
+    "canonicalPath": "/north-america/united-states/california/mccloud-river-river-trout-and-grayling/",
+    "action": "retained and connected to production route"
+  },
+  {
+    "oldId": "g-united-states-hat-creek",
+    "planId": "US-CA-004",
+    "canonicalPath": "/north-america/united-states/california/hat-creek-spring-fed-trout-and-grayling/",
+    "action": "retained and connected to production route"
+  },
+  {
+    "oldId": "g-united-states-fall-river-california",
+    "planId": "US-CA-005",
+    "canonicalPath": "/north-america/united-states/california/fall-river-spring-fed-trout-and-grayling/",
+    "action": "retained and connected to production route"
+  },
+  {
+    "oldId": "g-united-states-smith-river-california",
+    "planId": "US-CA-006",
+    "canonicalPath": "/north-america/united-states/california/smith-river-steelhead-and-anadromous-trout/",
+    "action": "retained and connected to production route"
+  },
+  {
+    "oldId": "rocky-mountain-alpine",
+    "planId": "US-CO-002",
+    "canonicalPath": "/north-america/united-states/colorado/rocky-mountain-national-park-verified-alpine-lakes-alpine-lake-fishing/",
+    "action": "retained and connected to production route"
+  },
+  {
+    "oldId": "cape-hatteras-surf",
+    "planId": "US-NC-001",
+    "canonicalPath": "/north-america/united-states/north-carolina/cape-hatteras-beaches-surf-and-beach-fishing/",
+    "action": "retained and connected to production route"
+  },
+  {
+    "oldId": "g-canada-campbell-river-freshwater",
+    "planId": "CA-BC-004",
+    "canonicalPath": "/north-america/canada/british-columbia/campbell-river-freshwater-reach-river-salmon/",
+    "action": "retained and connected to production route"
+  },
+  {
+    "oldId": "g-canada-haida-gwaii-coastal-fishing",
+    "planId": "CA-BC-005",
+    "canonicalPath": "/north-america/canada/british-columbia/haida-gwaii-coastal-salmon/",
+    "action": "retained and connected to production route"
+  },
+  {
+    "oldId": "g-canada-great-bear-lake",
+    "planId": "CA-NT-001",
+    "canonicalPath": "/north-america/canada/northwest-territories/great-bear-lake-remote-lodge-and-expedition/",
+    "action": "retained and connected to production route"
+  },
+  {
+    "oldId": "g-canada-ford-bay-smith-arm",
+    "planId": "CA-NT-001",
+    "canonicalPath": "/north-america/canada/northwest-territories/great-bear-lake-remote-lodge-and-expedition/",
+    "action": "merged into same opportunity"
+  },
+  {
+    "oldId": "g-canada-great-slave-lake",
+    "planId": "CA-NT-002",
+    "canonicalPath": "/north-america/canada/northwest-territories/great-slave-lake-remote-lodge-and-expedition/",
+    "action": "retained and connected to production route"
+  },
+  {
+    "oldId": "g-canada-tree-river-lodge",
+    "planId": "CA-NU-001",
+    "canonicalPath": "/north-america/canada/nunavut/tree-river-remote-lodge-and-expedition/",
+    "action": "retained and connected to production route"
+  },
+  {
+    "oldId": "g-mexico-ascension-bay",
+    "planId": "MX-QR-001",
+    "canonicalPath": "/north-america/mexico/quintana-roo/ascension-bay-saltwater-flats/",
+    "action": "retained and connected to production route"
+  },
+  {
+    "oldId": "g-mexico-espiritu-santo-bay",
+    "planId": "MX-QR-002",
+    "canonicalPath": "/north-america/mexico/quintana-roo/espiritu-santo-bay-saltwater-flats/",
+    "action": "retained and connected to production route"
+  }
+]

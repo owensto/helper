@@ -1,0 +1,11 @@
+.git
+.netlify
+.vercel
+node_modules
+dist
+test-results
+config.json
+.env*
+*.zip
+*Preview.html
+*preview.html

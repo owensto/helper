@@ -1,0 +1,22 @@
+{
+  "archives": [
+    {
+      "kind": "source",
+      "sha256": "da3c43044aecf4d05c064753471856f39c8ea1a541a562efe67a228ba416a359",
+      "files": 100
+    },
+    {
+      "kind": "plan",
+      "sha256": "64f58c8f0a26210bf4b7e90112950bb1ec44ec11090be0c472052e5330d0bbed",
+      "files": 4
+    }
+  ],
+  "tripProfiles": 796,
+  "hostedSourceIsSeparate": true,
+  "tests": {
+    "planner": "passed",
+    "static_routes": "passed",
+    "public_browser": "not yet verified"
+  },
+  "gitBranch": "castward-launch"
+}

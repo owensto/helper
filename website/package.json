@@ -1,0 +1,16 @@
+{
+  "name": "fishing-atlas",
+  "version": "0.4.0",
+  "private": true,
+  "description": "Continental fishing atlas: integrated North America and evidence-aware publishing queues.",
+  "scripts": {
+    "build": "python3 scripts/compile_release.py && python3 scripts/build.py",
+    "test": "node --test tests/engine.test.cjs tests/world-engine.test.cjs",
+    "audit": "python3 tests/static_test.py && python3 tests/release_test.py",
+    "check": "node --check public/assets/app.js",
+    "preview": "python3 -m http.server 8000 --directory dist",
+    "test:browser": "python3 tests/continental_browser_test.py",
+    "build:vercel": "python3 scripts/build_vercel.py",
+    "test:vercel": "python3 tests/vercel_test.py"
+  }
+}

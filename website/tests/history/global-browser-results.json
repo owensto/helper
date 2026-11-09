@@ -1,0 +1,32 @@
+{
+  "passed": true,
+  "routeCount": 472,
+  "viewportChecks": 944,
+  "checks": [
+    "Homepage shows current global counts",
+    "Search Japan returns its five real profiles",
+    "Initial library page shows 24 matching profiles",
+    "Load more reveals another 24 profiles",
+    "Country filter finds three Kiribati trip scenarios",
+    "Country, water and habitat filters combine",
+    "Research-depth filter identifies the retained 29 guides",
+    "Season filtering explains missing evidence",
+    "Unknown searches show a coverage gap, not a invented trip",
+    "All 118 country/jurisdiction collections are linked",
+    "In-page region anchors do not reset the preview router",
+    "Country page renders the exact matching profiles",
+    "New trip brief has an explicit research-depth notice",
+    "New trip brief has four equipment decisions",
+    "New trip opens its own planner profile",
+    "Planner loads the chosen brief\u2019s four requirements",
+    "Tropical river boat profile does not imply independent wading",
+    "Gear state survives document remount using the storage shim",
+    "Research desk shows all 202 source records",
+    "All 472 routes render one H1 and a title at 1440px",
+    "All 472 routes render one H1 and a title at 390px",
+    "No JavaScript runtime errors during browser tests"
+  ],
+  "javascriptErrors": [],
+  "horizontalOverflows": [],
+  "scope": "Standalone preview in an in-memory document with a localStorage shim. File-origin navigation is blocked by the browser environment; hosted persistence and live integrations were not tested."
+}

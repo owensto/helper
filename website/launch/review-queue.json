@@ -1,0 +1,45 @@
+{
+  "generated": "2026-09-13",
+  "next_source_review_due": "2026-10-13",
+  "overdue": false,
+  "scope": "Review reminder only. This does not check external links, fetch conditions or update content.",
+  "items": [
+    {
+      "destination": "yakutat",
+      "priority": "scheduled-review",
+      "review": [
+        "source claims and current suitability",
+        "independent operator page and offerings",
+        "packing requirements and reader questions"
+      ],
+      "sources": [
+        "https://www.adfg.alaska.gov/index.cfm?adfg=ByAreaSoutheastYakutat.fishingOpps",
+        "https://www.adfg.alaska.gov/index.cfm?adfg=ByAreaSoutheastYakutat.fishingOpps&fishery=Yakutat+Halibut"
+      ]
+    },
+    {
+      "destination": "florida-keys",
+      "priority": "scheduled-review",
+      "review": [
+        "source claims and current suitability",
+        "independent operator page and offerings",
+        "packing requirements and reader questions"
+      ],
+      "sources": [
+        "https://visitfloridakeys.com/experiences/what-were-famous-for/fishing"
+      ]
+    },
+    {
+      "destination": "bozeman",
+      "priority": "scheduled-review",
+      "review": [
+        "source claims and current suitability",
+        "independent operator page and offerings",
+        "packing requirements and reader questions"
+      ],
+      "sources": [
+        "https://www.montanaflyfishing.com/"
+      ]
+    }
+  ]
+}

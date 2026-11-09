@@ -1,0 +1,1141 @@
+{
+  "continent": "South America",
+  "generated": "2026-09-13",
+  "count": 31,
+  "records": [
+    {
+      "id": "rio-negro-peacock",
+      "tripId": "rio-negro-peacock",
+      "continent": "South America",
+      "country": "Brazil",
+      "region": "Brazil & Atlantic waters",
+      "stateOrProvince": "",
+      "location": "Rio Negro programs, Brazilian Amazon",
+      "url": "/trips/rio-negro-peacock/",
+      "currentTier": "detailed-guide",
+      "indexEligible": true,
+      "sourceIds": [
+        "amazon",
+        "amazon-planner"
+      ],
+      "evidenceDepth": "Inspected source text",
+      "localDecision": "Choose the basin and program before choosing the week. “Amazon fishing” is too broad to justify one season chart, species list or tackle basket.",
+      "candidateTargets": "Peacock bass",
+      "confirmedTargets": [
+        "Peacock bass"
+      ],
+      "seasonalEvidence": "This guide does not assign one low-water month to the entire Amazon. Ask for the operating area and the operator’s assessment for the selected week. A calendar for a different tributary should not be silently substituted for the Rio Negro.",
+      "accessToVerify": "Guided boat",
+      "tackleDecision": "Guide-approved casting range and line system. | Confirm hooks, split rings, leader and spare quantities together. | Confirm tools provided before carrying duplicates. | Use the actual soft-bag size and weight allowance.",
+      "operatorQuestion": "Confirm actual access, equipment provision, meeting place and date availability.",
+      "sourceLeads": {},
+      "distributionAngle": "Show the local decision: Choose the basin and program before choosing the week. “Amazon fishing” is too broad to justify one season chart, species list or tackle basket.",
+      "nextAction": "Maintain attributed facts; obtain local corroboration and exact product selections.",
+      "acceptance": [
+        "Named fishery and scope supported by inspected sources",
+        "Local access and target are not inferred from a country",
+        "Seasonal claims have source/date/scope",
+        "Equipment requirements fit the actual method",
+        "No invented operator availability",
+        "Publish gate passed before search indexing"
+      ]
+    },
+    {
+      "id": "northern-patagonia-trout",
+      "tripId": "northern-patagonia-trout",
+      "continent": "South America",
+      "country": "Argentina",
+      "region": "Patagonia & Southern Cone",
+      "stateOrProvince": "",
+      "location": "Northern Patagonia, Argentina",
+      "url": "/trips/northern-patagonia-trout/",
+      "currentTier": "detailed-guide",
+      "indexEligible": true,
+      "sourceIds": [
+        "patagonia",
+        "set-regions"
+      ],
+      "evidenceDepth": "Inspected source text",
+      "localDecision": "Build a varied trout itinerary by water type, not by copying one fly selection across every day. A spring creek, river float and lake session are different experiences.",
+      "candidateTargets": "Brown trout / Rainbow trout / Brook trout",
+      "confirmedTargets": [
+        "Brown trout",
+        "Rainbow trout",
+        "Brook trout"
+      ],
+      "seasonalEvidence": "The December–January lake reference belongs to this operator’s northern Patagonia description. Do not apply it to every river, altitude or Chilean destination. Use Southern Hemisphere dates explicitly and obtain the intended water-by-water itinerary before specifying tackle.",
+      "accessToVerify": "River float / Bank / Guided boat",
+      "tackleDecision": "Choose around dry flies, nymphs or streamers. | Confirm the actual lake or streamer requirement. | Size, fit and operator provision checked in advance. | Separate daily access from lodge or camp luggage.",
+      "operatorQuestion": "Confirm actual access, equipment provision, meeting place and date availability.",
+      "sourceLeads": {},
+      "distributionAngle": "Show the local decision: Build a varied trout itinerary by water type, not by copying one fly selection across every day. A spring creek, river float and lake session are different experiences.",
+      "nextAction": "Maintain attributed facts; obtain local corroboration and exact product selections.",
+      "acceptance": [
+        "Named fishery and scope supported by inspected sources",
+        "Local access and target are not inferred from a country",
+        "Seasonal claims have source/date/scope",
+        "Equipment requirements fit the actual method",
+        "No invented operator availability",
+        "Publish gate passed before search indexing"
+      ]
+    },
+    {
+      "id": "g-argentina-rio-grande-tierra-del-fuego",
+      "tripId": "g-argentina-rio-grande-tierra-del-fuego",
+      "continent": "South America",
+      "country": "Argentina",
+      "region": "Patagonia & Southern Cone",
+      "stateOrProvince": "",
+      "location": "Rio Grande — Tierra del Fuego",
+      "url": "/trips/g-argentina-rio-grande-tierra-del-fuego/",
+      "currentTier": "trip-brief",
+      "indexEligible": false,
+      "sourceIds": [
+        "global-argentina"
+      ],
+      "evidenceDepth": "Inspected source text",
+      "localDecision": "Sea-run trout fly expedition in Rio Grande — Tierra del Fuego. Specify the lodge and beat before choosing a two-handed or single-handed outfit.",
+      "candidateTargets": "Sea trout",
+      "confirmedTargets": [
+        "Sea trout"
+      ],
+      "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
+      "accessToVerify": "Bank",
+      "tackleDecision": "Select the casting weight or fly-line system for the confirmed reach. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
+      "operatorQuestion": "Confirm actual access, equipment provision, meeting place and date availability.",
+      "sourceLeads": {},
+      "distributionAngle": "Show the local decision: Sea-run trout fly expedition in Rio Grande — Tierra del Fuego. Specify the lodge and beat before choosing a two-handed or single-handed outfit.",
+      "nextAction": "Inspect full primary/local source pages; establish targets, access and seasonal scope before editorial promotion.",
+      "acceptance": [
+        "Named fishery and scope supported by inspected sources",
+        "Local access and target are not inferred from a country",
+        "Seasonal claims have source/date/scope",
+        "Equipment requirements fit the actual method",
+        "No invented operator availability",
+        "Publish gate passed before search indexing"
+      ]
+    },
+    {
+      "id": "g-argentina-rio-gallegos",
+      "tripId": "g-argentina-rio-gallegos",
+      "continent": "South America",
+      "country": "Argentina",
+      "region": "Patagonia & Southern Cone",
+      "stateOrProvince": "",
+      "location": "Rio Gallegos",
+      "url": "/trips/g-argentina-rio-gallegos/",
+      "currentTier": "trip-brief",
+      "indexEligible": false,
+      "sourceIds": [
+        "global-argentina"
+      ],
+      "evidenceDepth": "Inspected source text",
+      "localDecision": "Southern river sea-trout program in Rio Gallegos. Confirm whether the itinerary focuses on lower or upper beats and how you move between them.",
+      "candidateTargets": "Sea trout",
+      "confirmedTargets": [
+        "Sea trout"
+      ],
+      "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
+      "accessToVerify": "Bank",
+      "tackleDecision": "Select the casting weight or fly-line system for the confirmed reach. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
+      "operatorQuestion": "Confirm actual access, equipment provision, meeting place and date availability.",
+      "sourceLeads": {},
+      "distributionAngle": "Show the local decision: Southern river sea-trout program in Rio Gallegos. Confirm whether the itinerary focuses on lower or upper beats and how you move between them.",
+      "nextAction": "Inspect full primary/local source pages; establish targets, access and seasonal scope before editorial promotion.",
+      "acceptance": [
+        "Named fishery and scope supported by inspected sources",
+        "Local access and target are not inferred from a country",
+        "Seasonal claims have source/date/scope",
+        "Equipment requirements fit the actual method",
+        "No invented operator availability",
+        "Publish gate passed before search indexing"
+      ]
+    },
+    {
+      "id": "g-argentina-rio-irigoyen",
+      "tripId": "g-argentina-rio-irigoyen",
+      "continent": "South America",
+      "country": "Argentina",
+      "region": "Patagonia & Southern Cone",
+      "stateOrProvince": "",
+      "location": "Rio Irigoyen",
+      "url": "/trips/g-argentina-rio-irigoyen/",
+      "currentTier": "trip-brief",
+      "indexEligible": false,
+      "sourceIds": [
+        "global-argentina"
+      ],
+      "evidenceDepth": "Inspected source text",
+      "localDecision": "Small-river sea-trout expedition in Rio Irigoyen. Ask about casting room, bank access and the recommended rod before bringing a large-river outfit.",
+      "candidateTargets": "Sea trout",
+      "confirmedTargets": [
+        "Sea trout"
+      ],
+      "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
+      "accessToVerify": "Bank",
+      "tackleDecision": "Select the casting weight or fly-line system for the confirmed reach. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
+      "operatorQuestion": "Confirm actual access, equipment provision, meeting place and date availability.",
+      "sourceLeads": {},
+      "distributionAngle": "Show the local decision: Small-river sea-trout expedition in Rio Irigoyen. Ask about casting room, bank access and the recommended rod before bringing a large-river outfit.",
+      "nextAction": "Inspect full primary/local source pages; establish targets, access and seasonal scope before editorial promotion.",
+      "acceptance": [
+        "Named fishery and scope supported by inspected sources",
+        "Local access and target are not inferred from a country",
+        "Seasonal claims have source/date/scope",
+        "Equipment requirements fit the actual method",
+        "No invented operator availability",
+        "Publish gate passed before search indexing"
+      ]
+    },
+    {
+      "id": "g-argentina-ibera-wetlands-pira-lodge",
+      "tripId": "g-argentina-ibera-wetlands-pira-lodge",
+      "continent": "South America",
+      "country": "Argentina",
+      "region": "Patagonia & Southern Cone",
+      "stateOrProvince": "",
+      "location": "Iberá wetlands — Pirá Lodge",
+      "url": "/trips/g-argentina-ibera-wetlands-pira-lodge/",
+      "currentTier": "trip-brief",
+      "indexEligible": false,
+      "sourceIds": [
+        "global-argentina"
+      ],
+      "evidenceDepth": "Inspected source text",
+      "localDecision": "Wetland dorado fly fishing in Iberá wetlands — Pirá Lodge. Request the skiff and channel itinerary, and clarify whether all sessions are afloat.",
+      "candidateTargets": "Golden dorado",
+      "confirmedTargets": [
+        "Golden dorado"
+      ],
+      "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
+      "accessToVerify": "Guided boat",
+      "tackleDecision": "Match lure or fly size, line, leader and connections to the outfitter’s program. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
+      "operatorQuestion": "Confirm actual access, equipment provision, meeting place and date availability.",
+      "sourceLeads": {},
+      "distributionAngle": "Show the local decision: Wetland dorado fly fishing in Iberá wetlands — Pirá Lodge. Request the skiff and channel itinerary, and clarify whether all sessions are afloat.",
+      "nextAction": "Inspect full primary/local source pages; establish targets, access and seasonal scope before editorial promotion.",
+      "acceptance": [
+        "Named fishery and scope supported by inspected sources",
+        "Local access and target are not inferred from a country",
+        "Seasonal claims have source/date/scope",
+        "Equipment requirements fit the actual method",
+        "No invented operator availability",
+        "Publish gate passed before search indexing"
+      ]
+    },
+    {
+      "id": "g-argentina-parana-river-argentine-program",
+      "tripId": "g-argentina-parana-river-argentine-program",
+      "continent": "South America",
+      "country": "Argentina",
+      "region": "Patagonia & Southern Cone",
+      "stateOrProvince": "",
+      "location": "Paraná River — Argentine program",
+      "url": "/trips/g-argentina-parana-river-argentine-program/",
+      "currentTier": "trip-brief",
+      "indexEligible": false,
+      "sourceIds": [
+        "global-argentina"
+      ],
+      "evidenceDepth": "Inspected source text",
+      "localDecision": "Large-river dorado boat fishing in Paraná River — Argentine program. A river this large requires an actual launch and lodge, not just a river name.",
+      "candidateTargets": "Golden dorado",
+      "confirmedTargets": [
+        "Golden dorado"
+      ],
+      "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
+      "accessToVerify": "River float",
+      "tackleDecision": "Select the casting weight or fly-line system for the confirmed reach. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
+      "operatorQuestion": "Confirm actual access, equipment provision, meeting place and date availability.",
+      "sourceLeads": {},
+      "distributionAngle": "Show the local decision: Large-river dorado boat fishing in Paraná River — Argentine program. A river this large requires an actual launch and lodge, not just a river name.",
+      "nextAction": "Inspect full primary/local source pages; establish targets, access and seasonal scope before editorial promotion.",
+      "acceptance": [
+        "Named fishery and scope supported by inspected sources",
+        "Local access and target are not inferred from a country",
+        "Seasonal claims have source/date/scope",
+        "Equipment requirements fit the actual method",
+        "No invented operator availability",
+        "Publish gate passed before search indexing"
+      ]
+    },
+    {
+      "id": "g-bolivia-agua-negra-river",
+      "tripId": "g-bolivia-agua-negra-river",
+      "continent": "South America",
+      "country": "Bolivia",
+      "region": "Andes & upper Amazon",
+      "stateOrProvince": "",
+      "location": "Agua Negra River",
+      "url": "/trips/g-bolivia-agua-negra-river/",
+      "currentTier": "trip-brief",
+      "indexEligible": false,
+      "sourceIds": [
+        "global-bolivia"
+      ],
+      "evidenceDepth": "Inspected source text",
+      "localDecision": "Jungle dorado fly expedition in Agua Negra River. Ask which river reaches are in the itinerary and how much walking is expected.",
+      "candidateTargets": "Golden dorado",
+      "confirmedTargets": [
+        "Golden dorado"
+      ],
+      "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
+      "accessToVerify": "Guided boat",
+      "tackleDecision": "Match lure or fly size, line, leader and connections to the outfitter’s program. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
+      "operatorQuestion": "Confirm actual access, equipment provision, meeting place and date availability.",
+      "sourceLeads": {},
+      "distributionAngle": "Show the local decision: Jungle dorado fly expedition in Agua Negra River. Ask which river reaches are in the itinerary and how much walking is expected.",
+      "nextAction": "Inspect full primary/local source pages; establish targets, access and seasonal scope before editorial promotion.",
+      "acceptance": [
+        "Named fishery and scope supported by inspected sources",
+        "Local access and target are not inferred from a country",
+        "Seasonal claims have source/date/scope",
+        "Equipment requirements fit the actual method",
+        "No invented operator availability",
+        "Publish gate passed before search indexing"
+      ]
+    },
+    {
+      "id": "g-bolivia-secure-river",
+      "tripId": "g-bolivia-secure-river",
+      "continent": "South America",
+      "country": "Bolivia",
+      "region": "Andes & upper Amazon",
+      "stateOrProvince": "",
+      "location": "Sécure River",
+      "url": "/trips/g-bolivia-secure-river/",
+      "currentTier": "trip-brief",
+      "indexEligible": false,
+      "sourceIds": [
+        "global-bolivia"
+      ],
+      "evidenceDepth": "Inspected source text",
+      "localDecision": "Guided tropical river casting in Sécure River. Separate boat travel equipment from the small kit carried during a fishing session.",
+      "candidateTargets": "Golden dorado",
+      "confirmedTargets": [
+        "Golden dorado"
+      ],
+      "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
+      "accessToVerify": "Guided boat",
+      "tackleDecision": "Match lure or fly size, line, leader and connections to the outfitter’s program. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
+      "operatorQuestion": "Confirm actual access, equipment provision, meeting place and date availability.",
+      "sourceLeads": {},
+      "distributionAngle": "Show the local decision: Guided tropical river casting in Sécure River. Separate boat travel equipment from the small kit carried during a fishing session.",
+      "nextAction": "Inspect full primary/local source pages; establish targets, access and seasonal scope before editorial promotion.",
+      "acceptance": [
+        "Named fishery and scope supported by inspected sources",
+        "Local access and target are not inferred from a country",
+        "Seasonal claims have source/date/scope",
+        "Equipment requirements fit the actual method",
+        "No invented operator availability",
+        "Publish gate passed before search indexing"
+      ]
+    },
+    {
+      "id": "g-bolivia-pluma-river",
+      "tripId": "g-bolivia-pluma-river",
+      "continent": "South America",
+      "country": "Bolivia",
+      "region": "Andes & upper Amazon",
+      "stateOrProvince": "",
+      "location": "Pluma River",
+      "url": "/trips/g-bolivia-pluma-river/",
+      "currentTier": "trip-brief",
+      "indexEligible": false,
+      "sourceIds": [
+        "global-bolivia"
+      ],
+      "evidenceDepth": "Inspected source text",
+      "localDecision": "River-based jungle fly fishing in Pluma River. Choose the lodge and daily access arrangement first.",
+      "candidateTargets": "Golden dorado",
+      "confirmedTargets": [
+        "Golden dorado"
+      ],
+      "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
+      "accessToVerify": "Guided boat",
+      "tackleDecision": "Match lure or fly size, line, leader and connections to the outfitter’s program. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
+      "operatorQuestion": "Confirm actual access, equipment provision, meeting place and date availability.",
+      "sourceLeads": {},
+      "distributionAngle": "Show the local decision: River-based jungle fly fishing in Pluma River. Choose the lodge and daily access arrangement first.",
+      "nextAction": "Inspect full primary/local source pages; establish targets, access and seasonal scope before editorial promotion.",
+      "acceptance": [
+        "Named fishery and scope supported by inspected sources",
+        "Local access and target are not inferred from a country",
+        "Seasonal claims have source/date/scope",
+        "Equipment requirements fit the actual method",
+        "No invented operator availability",
+        "Publish gate passed before search indexing"
+      ]
+    },
+    {
+      "id": "g-chile-futaleufu-river",
+      "tripId": "g-chile-futaleufu-river",
+      "continent": "South America",
+      "country": "Chile",
+      "region": "Patagonia & Southern Cone",
+      "stateOrProvince": "",
+      "location": "Futaleufú River",
+      "url": "/trips/g-chile-futaleufu-river/",
+      "currentTier": "trip-brief",
+      "indexEligible": false,
+      "sourceIds": [
+        "global-chile"
+      ],
+      "evidenceDepth": "Inspected source text",
+      "localDecision": "Glacier-influenced trout expedition in Futaleufú River. Ask which reaches are floated and which are bank-fished; the main river name does not establish safe wading.",
+      "candidateTargets": "Brown trout / Rainbow trout",
+      "confirmedTargets": [
+        "Brown trout",
+        "Rainbow trout"
+      ],
+      "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
+      "accessToVerify": "Guided boat",
+      "tackleDecision": "Select the casting weight or fly-line system for the confirmed reach. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
+      "operatorQuestion": "Confirm actual access, equipment provision, meeting place and date availability.",
+      "sourceLeads": {},
+      "distributionAngle": "Show the local decision: Glacier-influenced trout expedition in Futaleufú River. Ask which reaches are floated and which are bank-fished; the main river name does not establish safe wading.",
+      "nextAction": "Inspect full primary/local source pages; establish targets, access and seasonal scope before editorial promotion.",
+      "acceptance": [
+        "Named fishery and scope supported by inspected sources",
+        "Local access and target are not inferred from a country",
+        "Seasonal claims have source/date/scope",
+        "Equipment requirements fit the actual method",
+        "No invented operator availability",
+        "Publish gate passed before search indexing"
+      ]
+    },
+    {
+      "id": "g-colombia-tomo-river",
+      "tripId": "g-colombia-tomo-river",
+      "continent": "South America",
+      "country": "Colombia",
+      "region": "Andes & upper Amazon",
+      "stateOrProvince": "",
+      "location": "Tomo River",
+      "url": "/trips/g-colombia-tomo-river/",
+      "currentTier": "trip-brief",
+      "indexEligible": false,
+      "sourceIds": [
+        "global-colombia"
+      ],
+      "evidenceDepth": "Inspected source text",
+      "localDecision": "Colombian lowland river expedition in Tomo River. Confirm the camp, transfer route and target-specific method rather than assuming all jungle species use one setup.",
+      "candidateTargets": "Peacock bass / Payara",
+      "confirmedTargets": [
+        "Peacock bass",
+        "Payara"
+      ],
+      "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
+      "accessToVerify": "Guided boat",
+      "tackleDecision": "Match lure or fly size, line, leader and connections to the outfitter’s program. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
+      "operatorQuestion": "Confirm actual access, equipment provision, meeting place and date availability.",
+      "sourceLeads": {},
+      "distributionAngle": "Show the local decision: Colombian lowland river expedition in Tomo River. Confirm the camp, transfer route and target-specific method rather than assuming all jungle species use one setup.",
+      "nextAction": "Inspect full primary/local source pages; establish targets, access and seasonal scope before editorial promotion.",
+      "acceptance": [
+        "Named fishery and scope supported by inspected sources",
+        "Local access and target are not inferred from a country",
+        "Seasonal claims have source/date/scope",
+        "Equipment requirements fit the actual method",
+        "No invented operator availability",
+        "Publish gate passed before search indexing"
+      ]
+    },
+    {
+      "id": "g-colombia-orinoco-colombian-program",
+      "tripId": "g-colombia-orinoco-colombian-program",
+      "continent": "South America",
+      "country": "Colombia",
+      "region": "Andes & upper Amazon",
+      "stateOrProvince": "",
+      "location": "Orinoco — Colombian program",
+      "url": "/trips/g-colombia-orinoco-colombian-program/",
+      "currentTier": "trip-brief",
+      "indexEligible": false,
+      "sourceIds": [
+        "global-colombia"
+      ],
+      "evidenceDepth": "Inspected source text",
+      "localDecision": "Large-river predator fishing in Orinoco — Colombian program. Get a precise Colombian-side departure and intended water before buying transport.",
+      "candidateTargets": "Peacock bass / Payara",
+      "confirmedTargets": [
+        "Peacock bass",
+        "Payara"
+      ],
+      "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
+      "accessToVerify": "River float",
+      "tackleDecision": "Select the casting weight or fly-line system for the confirmed reach. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
+      "operatorQuestion": "Confirm actual access, equipment provision, meeting place and date availability.",
+      "sourceLeads": {},
+      "distributionAngle": "Show the local decision: Large-river predator fishing in Orinoco — Colombian program. Get a precise Colombian-side departure and intended water before buying transport.",
+      "nextAction": "Inspect full primary/local source pages; establish targets, access and seasonal scope before editorial promotion.",
+      "acceptance": [
+        "Named fishery and scope supported by inspected sources",
+        "Local access and target are not inferred from a country",
+        "Seasonal claims have source/date/scope",
+        "Equipment requirements fit the actual method",
+        "No invented operator availability",
+        "Publish gate passed before search indexing"
+      ]
+    },
+    {
+      "id": "g-brazil-juruenateles-pires-confluence",
+      "tripId": "g-brazil-juruenateles-pires-confluence",
+      "continent": "South America",
+      "country": "Brazil",
+      "region": "Brazil & Atlantic waters",
+      "stateOrProvince": "",
+      "location": "Juruena–Teles Pires confluence",
+      "url": "/trips/g-brazil-juruenateles-pires-confluence/",
+      "currentTier": "trip-brief",
+      "indexEligible": false,
+      "sourceIds": [
+        "global-amazon-programs"
+      ],
+      "evidenceDepth": "Inspected search excerpt",
+      "localDecision": "Confluence lodge fishing in Juruena–Teles Pires confluence. Confirm target species and which river reaches the lodge uses before selecting an outfit.",
+      "candidateTargets": "Local targets to confirm",
+      "confirmedTargets": [
+        "Local targets to confirm"
+      ],
+      "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
+      "accessToVerify": "River float",
+      "tackleDecision": "Select the casting weight or fly-line system for the confirmed reach. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
+      "operatorQuestion": "Confirm actual access, equipment provision, meeting place and date availability.",
+      "sourceLeads": {},
+      "distributionAngle": "Show the local decision: Confluence lodge fishing in Juruena–Teles Pires confluence. Confirm target species and which river reaches the lodge uses before selecting an outfit.",
+      "nextAction": "Inspect full primary/local source pages; establish targets, access and seasonal scope before editorial promotion.",
+      "acceptance": [
+        "Named fishery and scope supported by inspected sources",
+        "Local access and target are not inferred from a country",
+        "Seasonal claims have source/date/scope",
+        "Equipment requirements fit the actual method",
+        "No invented operator availability",
+        "Publish gate passed before search indexing"
+      ]
+    },
+    {
+      "id": "g-brazil-xingu-reservation-program",
+      "tripId": "g-brazil-xingu-reservation-program",
+      "continent": "South America",
+      "country": "Brazil",
+      "region": "Brazil & Atlantic waters",
+      "stateOrProvince": "",
+      "location": "Xingu reservation program",
+      "url": "/trips/g-brazil-xingu-reservation-program/",
+      "currentTier": "trip-brief",
+      "indexEligible": false,
+      "sourceIds": [
+        "global-amazon-programs"
+      ],
+      "evidenceDepth": "Inspected search excerpt",
+      "localDecision": "Guide-led Xingu fishing expedition in Xingu reservation program. Use the named operator to arrange access and local guiding.",
+      "candidateTargets": "Peacock bass",
+      "confirmedTargets": [
+        "Peacock bass"
+      ],
+      "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
+      "accessToVerify": "Guided boat",
+      "tackleDecision": "Match lure or fly size, line, leader and connections to the outfitter’s program. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
+      "operatorQuestion": "Confirm actual access, equipment provision, meeting place and date availability.",
+      "sourceLeads": {},
+      "distributionAngle": "Show the local decision: Guide-led Xingu fishing expedition in Xingu reservation program. Use the named operator to arrange access and local guiding.",
+      "nextAction": "Inspect full primary/local source pages; establish targets, access and seasonal scope before editorial promotion.",
+      "acceptance": [
+        "Named fishery and scope supported by inspected sources",
+        "Local access and target are not inferred from a country",
+        "Seasonal claims have source/date/scope",
+        "Equipment requirements fit the actual method",
+        "No invented operator availability",
+        "Publish gate passed before search indexing"
+      ]
+    },
+    {
+      "id": "g-brazil-acari-river-pinima-lodge",
+      "tripId": "g-brazil-acari-river-pinima-lodge",
+      "continent": "South America",
+      "country": "Brazil",
+      "region": "Brazil & Atlantic waters",
+      "stateOrProvince": "",
+      "location": "Acari River — Pinima Lodge",
+      "url": "/trips/g-brazil-acari-river-pinima-lodge/",
+      "currentTier": "trip-brief",
+      "indexEligible": false,
+      "sourceIds": [
+        "global-amazon-programs"
+      ],
+      "evidenceDepth": "Inspected search excerpt",
+      "localDecision": "Remote river lodge preparation in Acari River — Pinima Lodge. Request the current species and lure list before buying specialist equipment.",
+      "candidateTargets": "Local targets to confirm",
+      "confirmedTargets": [
+        "Local targets to confirm"
+      ],
+      "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
+      "accessToVerify": "Guided boat",
+      "tackleDecision": "Match lure or fly size, line, leader and connections to the outfitter’s program. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
+      "operatorQuestion": "Confirm actual access, equipment provision, meeting place and date availability.",
+      "sourceLeads": {},
+      "distributionAngle": "Show the local decision: Remote river lodge preparation in Acari River — Pinima Lodge. Request the current species and lure list before buying specialist equipment.",
+      "nextAction": "Inspect full primary/local source pages; establish targets, access and seasonal scope before editorial promotion.",
+      "acceptance": [
+        "Named fishery and scope supported by inspected sources",
+        "Local access and target are not inferred from a country",
+        "Seasonal claims have source/date/scope",
+        "Equipment requirements fit the actual method",
+        "No invented operator availability",
+        "Publish gate passed before search indexing"
+      ]
+    },
+    {
+      "id": "g-brazil-sucunduri-river",
+      "tripId": "g-brazil-sucunduri-river",
+      "continent": "South America",
+      "country": "Brazil",
+      "region": "Brazil & Atlantic waters",
+      "stateOrProvince": "",
+      "location": "Sucunduri River",
+      "url": "/trips/g-brazil-sucunduri-river/",
+      "currentTier": "trip-brief",
+      "indexEligible": false,
+      "sourceIds": [
+        "global-amazon-programs"
+      ],
+      "evidenceDepth": "Inspected search excerpt",
+      "localDecision": "Jungle lodge fishing inquiry in Sucunduri River. Clarify the target and boat plan directly rather than inheriting a Rio Negro peacock-bass checklist.",
+      "candidateTargets": "Local targets to confirm",
+      "confirmedTargets": [
+        "Local targets to confirm"
+      ],
+      "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
+      "accessToVerify": "Guided boat",
+      "tackleDecision": "Match lure or fly size, line, leader and connections to the outfitter’s program. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
+      "operatorQuestion": "Confirm actual access, equipment provision, meeting place and date availability.",
+      "sourceLeads": {},
+      "distributionAngle": "Show the local decision: Jungle lodge fishing inquiry in Sucunduri River. Clarify the target and boat plan directly rather than inheriting a Rio Negro peacock-bass checklist.",
+      "nextAction": "Inspect full primary/local source pages; establish targets, access and seasonal scope before editorial promotion.",
+      "acceptance": [
+        "Named fishery and scope supported by inspected sources",
+        "Local access and target are not inferred from a country",
+        "Seasonal claims have source/date/scope",
+        "Equipment requirements fit the actual method",
+        "No invented operator availability",
+        "Publish gate passed before search indexing"
+      ]
+    },
+    {
+      "id": "g-brazil-agua-boa-river",
+      "tripId": "g-brazil-agua-boa-river",
+      "continent": "South America",
+      "country": "Brazil",
+      "region": "Brazil & Atlantic waters",
+      "stateOrProvince": "",
+      "location": "Agua Boa River",
+      "url": "/trips/g-brazil-agua-boa-river/",
+      "currentTier": "trip-brief",
+      "indexEligible": false,
+      "sourceIds": [
+        "global-agua-boa"
+      ],
+      "evidenceDepth": "Inspected search excerpt",
+      "localDecision": "Clear-water Amazon fly fishing in Agua Boa River. Ask whether your dates favor sight fishing, blind casting or a mixture.",
+      "candidateTargets": "Peacock bass / Arowana / Pacu",
+      "confirmedTargets": [
+        "Peacock bass",
+        "Arowana",
+        "Pacu"
+      ],
+      "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
+      "accessToVerify": "Guided boat",
+      "tackleDecision": "Match lure or fly size, line, leader and connections to the outfitter’s program. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
+      "operatorQuestion": "Confirm actual access, equipment provision, meeting place and date availability.",
+      "sourceLeads": {},
+      "distributionAngle": "Show the local decision: Clear-water Amazon fly fishing in Agua Boa River. Ask whether your dates favor sight fishing, blind casting or a mixture.",
+      "nextAction": "Inspect full primary/local source pages; establish targets, access and seasonal scope before editorial promotion.",
+      "acceptance": [
+        "Named fishery and scope supported by inspected sources",
+        "Local access and target are not inferred from a country",
+        "Seasonal claims have source/date/scope",
+        "Equipment requirements fit the actual method",
+        "No invented operator availability",
+        "Publish gate passed before search indexing"
+      ]
+    },
+    {
+      "id": "g-guyana-rewa-arapaima-waters",
+      "tripId": "g-guyana-rewa-arapaima-waters",
+      "continent": "South America",
+      "country": "Guyana",
+      "region": "Guianas",
+      "stateOrProvince": "",
+      "location": "Rewa arapaima waters",
+      "url": "/trips/g-guyana-rewa-arapaima-waters/",
+      "currentTier": "trip-brief",
+      "indexEligible": false,
+      "sourceIds": [
+        "global-rewa"
+      ],
+      "evidenceDepth": "Inspected source text",
+      "localDecision": "Specialist arapaima fly expedition in Rewa arapaima waters. Book the specialist program explicitly and ask for its complete tackle and handling requirements.",
+      "candidateTargets": "Arapaima",
+      "confirmedTargets": [
+        "Arapaima"
+      ],
+      "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
+      "accessToVerify": "Guided boat",
+      "tackleDecision": "Match lure or fly size, line, leader and connections to the outfitter’s program. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
+      "operatorQuestion": "Confirm actual access, equipment provision, meeting place and date availability.",
+      "sourceLeads": {},
+      "distributionAngle": "Show the local decision: Specialist arapaima fly expedition in Rewa arapaima waters. Book the specialist program explicitly and ask for its complete tackle and handling requirements.",
+      "nextAction": "Inspect full primary/local source pages; establish targets, access and seasonal scope before editorial promotion.",
+      "acceptance": [
+        "Named fishery and scope supported by inspected sources",
+        "Local access and target are not inferred from a country",
+        "Seasonal claims have source/date/scope",
+        "Equipment requirements fit the actual method",
+        "No invented operator availability",
+        "Publish gate passed before search indexing"
+      ]
+    },
+    {
+      "id": "g-guyana-rewa-river-lodge-waters",
+      "tripId": "g-guyana-rewa-river-lodge-waters",
+      "continent": "South America",
+      "country": "Guyana",
+      "region": "Guianas",
+      "stateOrProvince": "",
+      "location": "Rewa River lodge waters",
+      "url": "/trips/g-guyana-rewa-river-lodge-waters/",
+      "currentTier": "trip-brief",
+      "indexEligible": false,
+      "sourceIds": [
+        "global-rewa"
+      ],
+      "evidenceDepth": "Inspected source text",
+      "localDecision": "Short conventional fishing stay in Rewa River lodge waters. This is a lighter commitment than the lodge’s long expedition.",
+      "candidateTargets": "Peacock bass / Piranha",
+      "confirmedTargets": [
+        "Peacock bass",
+        "Piranha"
+      ],
+      "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
+      "accessToVerify": "Guided boat",
+      "tackleDecision": "Match lure or fly size, line, leader and connections to the outfitter’s program. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
+      "operatorQuestion": "Confirm actual access, equipment provision, meeting place and date availability.",
+      "sourceLeads": {},
+      "distributionAngle": "Show the local decision: Short conventional fishing stay in Rewa River lodge waters. This is a lighter commitment than the lodge’s long expedition.",
+      "nextAction": "Inspect full primary/local source pages; establish targets, access and seasonal scope before editorial promotion.",
+      "acceptance": [
+        "Named fishery and scope supported by inspected sources",
+        "Local access and target are not inferred from a country",
+        "Seasonal claims have source/date/scope",
+        "Equipment requirements fit the actual method",
+        "No invented operator availability",
+        "Publish gate passed before search indexing"
+      ]
+    },
+    {
+      "id": "g-guyana-corona-falls-expedition",
+      "tripId": "g-guyana-corona-falls-expedition",
+      "continent": "South America",
+      "country": "Guyana",
+      "region": "Guianas",
+      "stateOrProvince": "",
+      "location": "Corona Falls expedition",
+      "url": "/trips/g-guyana-corona-falls-expedition/",
+      "currentTier": "trip-brief",
+      "indexEligible": false,
+      "sourceIds": [
+        "global-rewa"
+      ],
+      "evidenceDepth": "Inspected source text",
+      "localDecision": "Extended upriver camping itinerary in Corona Falls expedition. Ask which target species apply to each planned reach; the lodge’s overall species list is not a catch promise at the falls.",
+      "candidateTargets": "Tiger catfish / Wolf fish",
+      "confirmedTargets": [
+        "Tiger catfish",
+        "Wolf fish"
+      ],
+      "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
+      "accessToVerify": "Guided boat",
+      "tackleDecision": "Match lure or fly size, line, leader and connections to the outfitter’s program. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
+      "operatorQuestion": "Confirm actual access, equipment provision, meeting place and date availability.",
+      "sourceLeads": {},
+      "distributionAngle": "Show the local decision: Extended upriver camping itinerary in Corona Falls expedition. Ask which target species apply to each planned reach; the lodge’s overall species list is not a catch promise at the falls.",
+      "nextAction": "Inspect full primary/local source pages; establish targets, access and seasonal scope before editorial promotion.",
+      "acceptance": [
+        "Named fishery and scope supported by inspected sources",
+        "Local access and target are not inferred from a country",
+        "Seasonal claims have source/date/scope",
+        "Equipment requirements fit the actual method",
+        "No invented operator availability",
+        "Publish gate passed before search indexing"
+      ]
+    },
+    {
+      "id": "g-suriname-kabalebo-river",
+      "tripId": "g-suriname-kabalebo-river",
+      "continent": "South America",
+      "country": "Suriname",
+      "region": "Guianas",
+      "stateOrProvince": "",
+      "location": "Kabalebo River",
+      "url": "/trips/g-suriname-kabalebo-river/",
+      "currentTier": "trip-brief",
+      "indexEligible": false,
+      "sourceIds": [
+        "global-kabalebo"
+      ],
+      "evidenceDepth": "Inspected search excerpt",
+      "localDecision": "Multi-species rainforest lodge fishing in Kabalebo River. Choose the primary target before packing; casting for peacock bass and targeting large catfish are different sessions.",
+      "candidateTargets": "Redtail catfish / Wolf fish / Pacu / Peacock bass",
+      "confirmedTargets": [
+        "Redtail catfish",
+        "Wolf fish",
+        "Pacu",
+        "Peacock bass"
+      ],
+      "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
+      "accessToVerify": "Guided boat",
+      "tackleDecision": "Match lure or fly size, line, leader and connections to the outfitter’s program. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
+      "operatorQuestion": "Confirm actual access, equipment provision, meeting place and date availability.",
+      "sourceLeads": {},
+      "distributionAngle": "Show the local decision: Multi-species rainforest lodge fishing in Kabalebo River. Choose the primary target before packing; casting for peacock bass and targeting large catfish are different sessions.",
+      "nextAction": "Inspect full primary/local source pages; establish targets, access and seasonal scope before editorial promotion.",
+      "acceptance": [
+        "Named fishery and scope supported by inspected sources",
+        "Local access and target are not inferred from a country",
+        "Seasonal claims have source/date/scope",
+        "Equipment requirements fit the actual method",
+        "No invented operator availability",
+        "Publish gate passed before search indexing"
+      ]
+    },
+    {
+      "id": "g-suriname-wonotobo-falls",
+      "tripId": "g-suriname-wonotobo-falls",
+      "continent": "South America",
+      "country": "Suriname",
+      "region": "Guianas",
+      "stateOrProvince": "",
+      "location": "Wonotobo Falls",
+      "url": "/trips/g-suriname-wonotobo-falls/",
+      "currentTier": "trip-brief",
+      "indexEligible": false,
+      "sourceIds": [
+        "global-wonotobo"
+      ],
+      "evidenceDepth": "Inspected search excerpt",
+      "localDecision": "Remote river-camp fishing in Wonotobo Falls. Confirm the accessible fishing reaches and whether the itinerary remains active.",
+      "candidateTargets": "Wolf fish / Peacock bass",
+      "confirmedTargets": [
+        "Wolf fish",
+        "Peacock bass"
+      ],
+      "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
+      "accessToVerify": "Guided boat",
+      "tackleDecision": "Match lure or fly size, line, leader and connections to the outfitter’s program. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
+      "operatorQuestion": "Confirm actual access, equipment provision, meeting place and date availability.",
+      "sourceLeads": {},
+      "distributionAngle": "Show the local decision: Remote river-camp fishing in Wonotobo Falls. Confirm the accessible fishing reaches and whether the itinerary remains active.",
+      "nextAction": "Inspect full primary/local source pages; establish targets, access and seasonal scope before editorial promotion.",
+      "acceptance": [
+        "Named fishery and scope supported by inspected sources",
+        "Local access and target are not inferred from a country",
+        "Seasonal claims have source/date/scope",
+        "Equipment requirements fit the actual method",
+        "No invented operator availability",
+        "Publish gate passed before search indexing"
+      ]
+    },
+    {
+      "id": "g-suriname-amatopo",
+      "tripId": "g-suriname-amatopo",
+      "continent": "South America",
+      "country": "Suriname",
+      "region": "Guianas",
+      "stateOrProvince": "",
+      "location": "Amatopo",
+      "url": "/trips/g-suriname-amatopo/",
+      "currentTier": "trip-brief",
+      "indexEligible": false,
+      "sourceIds": [
+        "global-wonotobo"
+      ],
+      "evidenceDepth": "Inspected search excerpt",
+      "localDecision": "Extended Suriname jungle itinerary in Amatopo. This is an expedition-planning brief, not a verified local species calendar.",
+      "candidateTargets": "Local targets to confirm",
+      "confirmedTargets": [
+        "Local targets to confirm"
+      ],
+      "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
+      "accessToVerify": "Guided boat",
+      "tackleDecision": "Match lure or fly size, line, leader and connections to the outfitter’s program. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
+      "operatorQuestion": "Confirm actual access, equipment provision, meeting place and date availability.",
+      "sourceLeads": {},
+      "distributionAngle": "Show the local decision: Extended Suriname jungle itinerary in Amatopo. This is an expedition-planning brief, not a verified local species calendar.",
+      "nextAction": "Inspect full primary/local source pages; establish targets, access and seasonal scope before editorial promotion.",
+      "acceptance": [
+        "Named fishery and scope supported by inspected sources",
+        "Local access and target are not inferred from a country",
+        "Seasonal claims have source/date/scope",
+        "Equipment requirements fit the actual method",
+        "No invented operator availability",
+        "Publish gate passed before search indexing"
+      ]
+    },
+    {
+      "id": "g-ecuador-galapagos-tesoro-charter",
+      "tripId": "g-ecuador-galapagos-tesoro-charter",
+      "continent": "South America",
+      "country": "Ecuador",
+      "region": "Andes & upper Amazon",
+      "stateOrProvince": "",
+      "location": "Galápagos — Tesoro charter",
+      "url": "/trips/g-ecuador-galapagos-tesoro-charter/",
+      "currentTier": "trip-brief",
+      "indexEligible": false,
+      "sourceIds": [
+        "global-galapagos"
+      ],
+      "evidenceDepth": "Inspected search excerpt",
+      "localDecision": "Crew-equipped bluewater charter in Galápagos — Tesoro charter. Confirm the departure island and whether the booking is a fishing charter or a mixed wildlife tour.",
+      "candidateTargets": "Marlin / Yellowfin tuna",
+      "confirmedTargets": [
+        "Marlin",
+        "Yellowfin tuna"
+      ],
+      "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
+      "accessToVerify": "Charter boat",
+      "tackleDecision": "Confirm which rods, reels, rigs and replacement tackle the crew supplies. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
+      "operatorQuestion": "Confirm actual access, equipment provision, meeting place and date availability.",
+      "sourceLeads": {},
+      "distributionAngle": "Show the local decision: Crew-equipped bluewater charter in Galápagos — Tesoro charter. Confirm the departure island and whether the booking is a fishing charter or a mixed wildlife tour.",
+      "nextAction": "Inspect full primary/local source pages; establish targets, access and seasonal scope before editorial promotion.",
+      "acceptance": [
+        "Named fishery and scope supported by inspected sources",
+        "Local access and target are not inferred from a country",
+        "Seasonal claims have source/date/scope",
+        "Equipment requirements fit the actual method",
+        "No invented operator availability",
+        "Publish gate passed before search indexing"
+      ]
+    },
+    {
+      "id": "g-peru-cusco-sacred-valley-lakes",
+      "tripId": "g-peru-cusco-sacred-valley-lakes",
+      "continent": "South America",
+      "country": "Peru",
+      "region": "Andes & upper Amazon",
+      "stateOrProvince": "",
+      "location": "Cusco Sacred Valley lakes",
+      "url": "/trips/g-peru-cusco-sacred-valley-lakes/",
+      "currentTier": "trip-brief",
+      "indexEligible": false,
+      "sourceIds": [
+        "global-peru-anglers"
+      ],
+      "evidenceDepth": "Inspected search excerpt",
+      "localDecision": "Andean lake fly-fishing day in Cusco Sacred Valley lakes. Ask for the actual lake and travel time before comparing half-day and full-day options.",
+      "candidateTargets": "Rainbow trout",
+      "confirmedTargets": [
+        "Rainbow trout"
+      ],
+      "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
+      "accessToVerify": "Hike-in",
+      "tackleDecision": "Keep rod sections and tackle protection compatible with the hike. | Ask for the actual items, sizes and quantities used on this program. | Keep rain protection and a dry layer available without overloading the pack. | Keep phone, spare clothing and essentials separate from wet tackle.",
+      "operatorQuestion": "Confirm actual access, equipment provision, meeting place and date availability.",
+      "sourceLeads": {},
+      "distributionAngle": "Show the local decision: Andean lake fly-fishing day in Cusco Sacred Valley lakes. Ask for the actual lake and travel time before comparing half-day and full-day options.",
+      "nextAction": "Inspect full primary/local source pages; establish targets, access and seasonal scope before editorial promotion.",
+      "acceptance": [
+        "Named fishery and scope supported by inspected sources",
+        "Local access and target are not inferred from a country",
+        "Seasonal claims have source/date/scope",
+        "Equipment requirements fit the actual method",
+        "No invented operator availability",
+        "Publish gate passed before search indexing"
+      ]
+    },
+    {
+      "id": "g-peru-cusco-sacred-valley-streams",
+      "tripId": "g-peru-cusco-sacred-valley-streams",
+      "continent": "South America",
+      "country": "Peru",
+      "region": "Andes & upper Amazon",
+      "stateOrProvince": "",
+      "location": "Cusco Sacred Valley streams",
+      "url": "/trips/g-peru-cusco-sacred-valley-streams/",
+      "currentTier": "trip-brief",
+      "indexEligible": false,
+      "sourceIds": [
+        "global-peru-anglers"
+      ],
+      "evidenceDepth": "Inspected search excerpt",
+      "localDecision": "Mountain-stream fly-fishing day in Cusco Sacred Valley streams. Specify a stream-focused day so the preparation list is not copied from a boat lake outing.",
+      "candidateTargets": "Rainbow trout",
+      "confirmedTargets": [
+        "Rainbow trout"
+      ],
+      "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
+      "accessToVerify": "Bank",
+      "tackleDecision": "Select the casting weight or fly-line system for the confirmed reach. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
+      "operatorQuestion": "Confirm actual access, equipment provision, meeting place and date availability.",
+      "sourceLeads": {},
+      "distributionAngle": "Show the local decision: Mountain-stream fly-fishing day in Cusco Sacred Valley streams. Specify a stream-focused day so the preparation list is not copied from a boat lake outing.",
+      "nextAction": "Inspect full primary/local source pages; establish targets, access and seasonal scope before editorial promotion.",
+      "acceptance": [
+        "Named fishery and scope supported by inspected sources",
+        "Local access and target are not inferred from a country",
+        "Seasonal claims have source/date/scope",
+        "Equipment requirements fit the actual method",
+        "No invented operator availability",
+        "Publish gate passed before search indexing"
+      ]
+    },
+    {
+      "id": "g-peru-iquitos-paiche-tucunare-project",
+      "tripId": "g-peru-iquitos-paiche-tucunare-project",
+      "continent": "South America",
+      "country": "Peru",
+      "region": "Andes & upper Amazon",
+      "stateOrProvince": "",
+      "location": "Iquitos — Paiche/Tucunare project",
+      "url": "/trips/g-peru-iquitos-paiche-tucunare-project/",
+      "currentTier": "trip-brief",
+      "indexEligible": false,
+      "sourceIds": [
+        "global-peru-anglers"
+      ],
+      "evidenceDepth": "Inspected search excerpt",
+      "localDecision": "Amazon fishing-program inquiry in Iquitos — Paiche/Tucunare project. Ask whether the published project is running and what waters are actually visited.",
+      "candidateTargets": "Arapaima / Peacock bass",
+      "confirmedTargets": [
+        "Arapaima",
+        "Peacock bass"
+      ],
+      "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
+      "accessToVerify": "Guided boat",
+      "tackleDecision": "Match lure or fly size, line, leader and connections to the outfitter’s program. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
+      "operatorQuestion": "Confirm actual access, equipment provision, meeting place and date availability.",
+      "sourceLeads": {},
+      "distributionAngle": "Show the local decision: Amazon fishing-program inquiry in Iquitos — Paiche/Tucunare project. Ask whether the published project is running and what waters are actually visited.",
+      "nextAction": "Inspect full primary/local source pages; establish targets, access and seasonal scope before editorial promotion.",
+      "acceptance": [
+        "Named fishery and scope supported by inspected sources",
+        "Local access and target are not inferred from a country",
+        "Seasonal claims have source/date/scope",
+        "Equipment requirements fit the actual method",
+        "No invented operator availability",
+        "Publish gate passed before search indexing"
+      ]
+    },
+    {
+      "id": "g-peru-apurimac-river-cusco-program",
+      "tripId": "g-peru-apurimac-river-cusco-program",
+      "continent": "South America",
+      "country": "Peru",
+      "region": "Andes & upper Amazon",
+      "stateOrProvince": "",
+      "location": "Apurímac River — Cusco program",
+      "url": "/trips/g-peru-apurimac-river-cusco-program/",
+      "currentTier": "trip-brief",
+      "indexEligible": false,
+      "sourceIds": [
+        "global-apurimac"
+      ],
+      "evidenceDepth": "Inspected search excerpt",
+      "localDecision": "Guided highland trout outing in Apurímac River — Cusco program. Request the specific upper-river reach and road-transfer plan; a whole-river label does not identify fishable access.",
+      "candidateTargets": "Rainbow trout",
+      "confirmedTargets": [
+        "Rainbow trout"
+      ],
+      "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
+      "accessToVerify": "Bank",
+      "tackleDecision": "Select the casting weight or fly-line system for the confirmed reach. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
+      "operatorQuestion": "Confirm actual access, equipment provision, meeting place and date availability.",
+      "sourceLeads": {},
+      "distributionAngle": "Show the local decision: Guided highland trout outing in Apurímac River — Cusco program. Request the specific upper-river reach and road-transfer plan; a whole-river label does not identify fishable access.",
+      "nextAction": "Inspect full primary/local source pages; establish targets, access and seasonal scope before editorial promotion.",
+      "acceptance": [
+        "Named fishery and scope supported by inspected sources",
+        "Local access and target are not inferred from a country",
+        "Seasonal claims have source/date/scope",
+        "Equipment requirements fit the actual method",
+        "No invented operator availability",
+        "Publish gate passed before search indexing"
+      ]
+    },
+    {
+      "id": "g-peru-punta-sal",
+      "tripId": "g-peru-punta-sal",
+      "continent": "South America",
+      "country": "Peru",
+      "region": "Andes & upper Amazon",
+      "stateOrProvince": "",
+      "location": "Punta Sal",
+      "url": "/trips/g-peru-punta-sal/",
+      "currentTier": "trip-brief",
+      "indexEligible": false,
+      "sourceIds": [
+        "global-punta-sal"
+      ],
+      "evidenceDepth": "Inspected search excerpt",
+      "localDecision": "Northern Peru charter preparation in Punta Sal. Contact the current operator to establish target species, method and departure availability.",
+      "candidateTargets": "Local targets to confirm",
+      "confirmedTargets": [
+        "Local targets to confirm"
+      ],
+      "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
+      "accessToVerify": "Charter boat",
+      "tackleDecision": "Confirm which rods, reels, rigs and replacement tackle the crew supplies. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
+      "operatorQuestion": "Confirm actual access, equipment provision, meeting place and date availability.",
+      "sourceLeads": {},
+      "distributionAngle": "Show the local decision: Northern Peru charter preparation in Punta Sal. Contact the current operator to establish target species, method and departure availability.",
+      "nextAction": "Inspect full primary/local source pages; establish targets, access and seasonal scope before editorial promotion.",
+      "acceptance": [
+        "Named fishery and scope supported by inspected sources",
+        "Local access and target are not inferred from a country",
+        "Seasonal claims have source/date/scope",
+        "Equipment requirements fit the actual method",
+        "No invented operator availability",
+        "Publish gate passed before search indexing"
+      ]
+    },
+    {
+      "id": "g-uruguay-salto-grande-uruguay-side",
+      "tripId": "g-uruguay-salto-grande-uruguay-side",
+      "continent": "South America",
+      "country": "Uruguay",
+      "region": "Patagonia & Southern Cone",
+      "stateOrProvince": "",
+      "location": "Salto Grande — Uruguay side",
+      "url": "/trips/g-uruguay-salto-grande-uruguay-side/",
+      "currentTier": "trip-brief",
+      "indexEligible": false,
+      "sourceIds": [
+        "global-uruguay"
+      ],
+      "evidenceDepth": "Inspected source text",
+      "localDecision": "Tailwater dorado fishing in Salto Grande — Uruguay side. Confirm the exact fishing allocation and distinguish supplied conventional equipment from any fly gear you must bring.",
+      "candidateTargets": "Golden dorado",
+      "confirmedTargets": [
+        "Golden dorado"
+      ],
+      "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
+      "accessToVerify": "River float",
+      "tackleDecision": "Select the casting weight or fly-line system for the confirmed reach. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
+      "operatorQuestion": "Confirm actual access, equipment provision, meeting place and date availability.",
+      "sourceLeads": {},
+      "distributionAngle": "Show the local decision: Tailwater dorado fishing in Salto Grande — Uruguay side. Confirm the exact fishing allocation and distinguish supplied conventional equipment from any fly gear you must bring.",
+      "nextAction": "Inspect full primary/local source pages; establish targets, access and seasonal scope before editorial promotion.",
+      "acceptance": [
+        "Named fishery and scope supported by inspected sources",
+        "Local access and target are not inferred from a country",
+        "Seasonal claims have source/date/scope",
+        "Equipment requirements fit the actual method",
+        "No invented operator availability",
+        "Publish gate passed before search indexing"
+      ]
+    }
+  ],
+  "status": "Editorial production queue, not additional published guides"
+}

@@ -1,0 +1,1248 @@
+{
+  "continent": "Africa",
+  "generated": "2026-09-13",
+  "count": 34,
+  "records": [
+    {
+      "id": "lower-zambezi-tiger",
+      "tripId": "lower-zambezi-tiger",
+      "continent": "Africa",
+      "country": "Zambia",
+      "region": "Southern Africa",
+      "stateOrProvince": "",
+      "location": "Lower Zambezi",
+      "url": "/trips/lower-zambezi-tiger/",
+      "currentTier": "detailed-guide",
+      "indexEligible": true,
+      "sourceIds": [
+        "zambezi"
+      ],
+      "evidenceDepth": "Inspected source text",
+      "localDecision": "A tigerfish trip is a specialist river experience, not a recycled trout or bass packing list. Start with the intended method, boat access and the operator’s complete rig.",
+      "candidateTargets": "Tigerfish",
+      "confirmedTargets": [
+        "Tigerfish"
+      ],
+      "seasonalEvidence": "The September–November reference is historical seasonal guidance, not a current river or catch report. Confirm the selected reach and conditions with the operator. Do not extend this window to every African river or every species called tigerfish.",
+      "accessToVerify": "Guided boat",
+      "tackleDecision": "Operator specifies bite protection and connections. | Choose fly, casting or another confirmed method first. | Confirm who handles hooks and fish. | Secure sun protection, light layers and dry bag.",
+      "operatorQuestion": "Confirm actual access, equipment provision, meeting place and date availability.",
+      "sourceLeads": {},
+      "distributionAngle": "Show the local decision: A tigerfish trip is a specialist river experience, not a recycled trout or bass packing list. Start with the intended method, boat access and the operator’s complete rig.",
+      "nextAction": "Maintain attributed facts; obtain local corroboration and exact product selections.",
+      "acceptance": [
+        "Named fishery and scope supported by inspected sources",
+        "Local access and target are not inferred from a country",
+        "Seasonal claims have source/date/scope",
+        "Equipment requirements fit the actual method",
+        "No invented operator availability",
+        "Publish gate passed before search indexing"
+      ]
+    },
+    {
+      "id": "cosmoledo-gt",
+      "tripId": "cosmoledo-gt",
+      "continent": "Africa",
+      "country": "Seychelles",
+      "region": "Indian Ocean coast & islands",
+      "stateOrProvince": "",
+      "location": "Cosmoledo Atoll",
+      "url": "/trips/cosmoledo-gt/",
+      "currentTier": "detailed-guide",
+      "indexEligible": true,
+      "sourceIds": [
+        "cosmoledo",
+        "gt"
+      ],
+      "evidenceDepth": "Inspected source text",
+      "localDecision": "An atoll GT objective should not inherit a bonefish gear list. Treat the heavy fly system, access and remote-trip logistics as a single preparation problem.",
+      "candidateTargets": "Giant trevally",
+      "confirmedTargets": [
+        "Giant trevally"
+      ],
+      "seasonalEvidence": "No full atoll operating calendar is inferred here. Obtain the operator’s actual departure dates and an explanation of how the week’s conditions affect access. A tide stage is not a guarantee of a fish at a particular place.",
+      "accessToVerify": "Skiff / Guided wading",
+      "tackleDecision": "Operator reference: matched heavy rod and reel; confirm current complete specification. | Check strength, capacity and every connection as a system. | Operator-approved fit and protection for the exact route. | Use the operator’s dimensions and weight limits.",
+      "operatorQuestion": "Confirm actual access, equipment provision, meeting place and date availability.",
+      "sourceLeads": {},
+      "distributionAngle": "Show the local decision: An atoll GT objective should not inherit a bonefish gear list. Treat the heavy fly system, access and remote-trip logistics as a single preparation problem.",
+      "nextAction": "Maintain attributed facts; obtain local corroboration and exact product selections.",
+      "acceptance": [
+        "Named fishery and scope supported by inspected sources",
+        "Local access and target are not inferred from a country",
+        "Seasonal claims have source/date/scope",
+        "Equipment requirements fit the actual method",
+        "No invented operator availability",
+        "Publish gate passed before search indexing"
+      ]
+    },
+    {
+      "id": "g-angola-kwanza-river-mouth",
+      "tripId": "g-angola-kwanza-river-mouth",
+      "continent": "Africa",
+      "country": "Angola",
+      "region": "West & Central Atlantic",
+      "stateOrProvince": "",
+      "location": "Kwanza River mouth",
+      "url": "/trips/g-angola-kwanza-river-mouth/",
+      "currentTier": "trip-brief",
+      "indexEligible": false,
+      "sourceIds": [
+        "global-angola"
+      ],
+      "evidenceDepth": "Inspected source text",
+      "localDecision": "Estuary lure and fly expedition in Kwanza River mouth. Choose a river-mouth day rather than assuming every departure is offshore.",
+      "candidateTargets": "Tarpon / Jack crevalle / African cubera snapper",
+      "confirmedTargets": [
+        "Tarpon",
+        "Jack crevalle",
+        "African cubera snapper"
+      ],
+      "seasonalEvidence": "Operator describes November–March for its tarpon and jacks program; not a forecast or confirmed availability.",
+      "accessToVerify": "Guided boat",
+      "tackleDecision": "Obtain a target- and presentation-specific outfit list from the skipper. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
+      "operatorQuestion": "Confirm actual access, equipment provision, meeting place and date availability.",
+      "sourceLeads": {},
+      "distributionAngle": "Show the local decision: Estuary lure and fly expedition in Kwanza River mouth. Choose a river-mouth day rather than assuming every departure is offshore.",
+      "nextAction": "Inspect full primary/local source pages; establish targets, access and seasonal scope before editorial promotion.",
+      "acceptance": [
+        "Named fishery and scope supported by inspected sources",
+        "Local access and target are not inferred from a country",
+        "Seasonal claims have source/date/scope",
+        "Equipment requirements fit the actual method",
+        "No invented operator availability",
+        "Publish gate passed before search indexing"
+      ]
+    },
+    {
+      "id": "g-angola-kwanza-coast-offshore",
+      "tripId": "g-angola-kwanza-coast-offshore",
+      "continent": "Africa",
+      "country": "Angola",
+      "region": "West & Central Atlantic",
+      "stateOrProvince": "",
+      "location": "Kwanza coast offshore",
+      "url": "/trips/g-angola-kwanza-coast-offshore/",
+      "currentTier": "trip-brief",
+      "indexEligible": false,
+      "sourceIds": [
+        "global-angola"
+      ],
+      "evidenceDepth": "Inspected source text",
+      "localDecision": "Bluewater charter from the Kwanza coast in Kwanza coast offshore. Ask for a bluewater itinerary and expected running time before comparing prices with river outings.",
+      "candidateTargets": "Marlin / Sailfish / Yellowfin tuna",
+      "confirmedTargets": [
+        "Marlin",
+        "Sailfish",
+        "Yellowfin tuna"
+      ],
+      "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
+      "accessToVerify": "Charter boat",
+      "tackleDecision": "Confirm which rods, reels, rigs and replacement tackle the crew supplies. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
+      "operatorQuestion": "Confirm actual access, equipment provision, meeting place and date availability.",
+      "sourceLeads": {},
+      "distributionAngle": "Show the local decision: Bluewater charter from the Kwanza coast in Kwanza coast offshore. Ask for a bluewater itinerary and expected running time before comparing prices with river outings.",
+      "nextAction": "Inspect full primary/local source pages; establish targets, access and seasonal scope before editorial promotion.",
+      "acceptance": [
+        "Named fishery and scope supported by inspected sources",
+        "Local access and target are not inferred from a country",
+        "Seasonal claims have source/date/scope",
+        "Equipment requirements fit the actual method",
+        "No invented operator availability",
+        "Publish gate passed before search indexing"
+      ]
+    },
+    {
+      "id": "g-cameroon-faro-river-gassa-camp",
+      "tripId": "g-cameroon-faro-river-gassa-camp",
+      "continent": "Africa",
+      "country": "Cameroon",
+      "region": "West & Central Atlantic",
+      "stateOrProvince": "",
+      "location": "Faro River — Gassa Camp",
+      "url": "/trips/g-cameroon-faro-river-gassa-camp/",
+      "currentTier": "trip-brief",
+      "indexEligible": false,
+      "sourceIds": [
+        "global-cameroon"
+      ],
+      "evidenceDepth": "Inspected source text",
+      "localDecision": "Guided freshwater fly expedition in Faro River — Gassa Camp. This is a specialized freshwater expedition, not a general safari add-on.",
+      "candidateTargets": "Nile perch / Tigerfish",
+      "confirmedTargets": [
+        "Nile perch",
+        "Tigerfish"
+      ],
+      "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
+      "accessToVerify": "Guided boat",
+      "tackleDecision": "Match lure or fly size, line, leader and connections to the outfitter’s program. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
+      "operatorQuestion": "Confirm actual access, equipment provision, meeting place and date availability.",
+      "sourceLeads": {},
+      "distributionAngle": "Show the local decision: Guided freshwater fly expedition in Faro River — Gassa Camp. This is a specialized freshwater expedition, not a general safari add-on.",
+      "nextAction": "Inspect full primary/local source pages; establish targets, access and seasonal scope before editorial promotion.",
+      "acceptance": [
+        "Named fishery and scope supported by inspected sources",
+        "Local access and target are not inferred from a country",
+        "Seasonal claims have source/date/scope",
+        "Equipment requirements fit the actual method",
+        "No invented operator availability",
+        "Publish gate passed before search indexing"
+      ]
+    },
+    {
+      "id": "g-gabon-sette-cama",
+      "tripId": "g-gabon-sette-cama",
+      "continent": "Africa",
+      "country": "Gabon",
+      "region": "West & Central Atlantic",
+      "stateOrProvince": "",
+      "location": "Sette Cama",
+      "url": "/trips/g-gabon-sette-cama/",
+      "currentTier": "trip-brief",
+      "indexEligible": false,
+      "sourceIds": [
+        "global-gabon"
+      ],
+      "evidenceDepth": "Inspected source text",
+      "localDecision": "Lagoon and coastal casting expedition in Sette Cama. Decide how much of the trip is shore casting versus fishing from a boat.",
+      "candidateTargets": "Tarpon / Jacks / Threadfin",
+      "confirmedTargets": [
+        "Tarpon",
+        "Jacks",
+        "Threadfin"
+      ],
+      "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
+      "accessToVerify": "Guided boat",
+      "tackleDecision": "Obtain a target- and presentation-specific outfit list from the skipper. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
+      "operatorQuestion": "Confirm actual access, equipment provision, meeting place and date availability.",
+      "sourceLeads": {},
+      "distributionAngle": "Show the local decision: Lagoon and coastal casting expedition in Sette Cama. Decide how much of the trip is shore casting versus fishing from a boat.",
+      "nextAction": "Inspect full primary/local source pages; establish targets, access and seasonal scope before editorial promotion.",
+      "acceptance": [
+        "Named fishery and scope supported by inspected sources",
+        "Local access and target are not inferred from a country",
+        "Seasonal claims have source/date/scope",
+        "Equipment requirements fit the actual method",
+        "No invented operator availability",
+        "Publish gate passed before search indexing"
+      ]
+    },
+    {
+      "id": "g-gabon-port-gentil",
+      "tripId": "g-gabon-port-gentil",
+      "continent": "Africa",
+      "country": "Gabon",
+      "region": "West & Central Atlantic",
+      "stateOrProvince": "",
+      "location": "Port Gentil",
+      "url": "/trips/g-gabon-port-gentil/",
+      "currentTier": "trip-brief",
+      "indexEligible": false,
+      "sourceIds": [
+        "global-port-gentil"
+      ],
+      "evidenceDepth": "Inspected search excerpt",
+      "localDecision": "Tarpon-focused guided outing in Port Gentil. Use the dated report as evidence of a fishing program, not a prediction for your week.",
+      "candidateTargets": "Tarpon",
+      "confirmedTargets": [
+        "Tarpon"
+      ],
+      "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
+      "accessToVerify": "Guided boat",
+      "tackleDecision": "Obtain a target- and presentation-specific outfit list from the skipper. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
+      "operatorQuestion": "Confirm actual access, equipment provision, meeting place and date availability.",
+      "sourceLeads": {},
+      "distributionAngle": "Show the local decision: Tarpon-focused guided outing in Port Gentil. Use the dated report as evidence of a fishing program, not a prediction for your week.",
+      "nextAction": "Inspect full primary/local source pages; establish targets, access and seasonal scope before editorial promotion.",
+      "acceptance": [
+        "Named fishery and scope supported by inspected sources",
+        "Local access and target are not inferred from a country",
+        "Seasonal claims have source/date/scope",
+        "Equipment requirements fit the actual method",
+        "No invented operator availability",
+        "Publish gate passed before search indexing"
+      ]
+    },
+    {
+      "id": "g-guinea-bissau-bijagos-archipelago",
+      "tripId": "g-guinea-bissau-bijagos-archipelago",
+      "continent": "Africa",
+      "country": "Guinea-Bissau",
+      "region": "West & Central Atlantic",
+      "stateOrProvince": "",
+      "location": "Bijagós archipelago",
+      "url": "/trips/g-guinea-bissau-bijagos-archipelago/",
+      "currentTier": "trip-brief",
+      "indexEligible": false,
+      "sourceIds": [
+        "global-guinea-bissau"
+      ],
+      "evidenceDepth": "Inspected source text",
+      "localDecision": "Island reef casting and jigging in Bijagós archipelago. Request the actual island base and daily boat plan rather than booking an archipelago name alone.",
+      "candidateTargets": "Jacks / Snapper / Barracuda / Grouper",
+      "confirmedTargets": [
+        "Jacks",
+        "Snapper",
+        "Barracuda",
+        "Grouper"
+      ],
+      "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
+      "accessToVerify": "Guided boat",
+      "tackleDecision": "Confirm which rods, reels, rigs and replacement tackle the crew supplies. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
+      "operatorQuestion": "Confirm actual access, equipment provision, meeting place and date availability.",
+      "sourceLeads": {},
+      "distributionAngle": "Show the local decision: Island reef casting and jigging in Bijagós archipelago. Request the actual island base and daily boat plan rather than booking an archipelago name alone.",
+      "nextAction": "Inspect full primary/local source pages; establish targets, access and seasonal scope before editorial promotion.",
+      "acceptance": [
+        "Named fishery and scope supported by inspected sources",
+        "Local access and target are not inferred from a country",
+        "Seasonal claims have source/date/scope",
+        "Equipment requirements fit the actual method",
+        "No invented operator availability",
+        "Publish gate passed before search indexing"
+      ]
+    },
+    {
+      "id": "g-madagascar-nosy-be",
+      "tripId": "g-madagascar-nosy-be",
+      "continent": "Africa",
+      "country": "Madagascar",
+      "region": "Indian Ocean coast & islands",
+      "stateOrProvince": "",
+      "location": "Nosy Be",
+      "url": "/trips/g-madagascar-nosy-be/",
+      "currentTier": "trip-brief",
+      "indexEligible": false,
+      "sourceIds": [
+        "global-madagascar"
+      ],
+      "evidenceDepth": "Inspected source text",
+      "localDecision": "Reef popping and vertical jigging in Nosy Be. Have the crew identify whether casting or deep jigging dominates your dates.",
+      "candidateTargets": "Giant trevally / Dogtooth tuna / Grouper",
+      "confirmedTargets": [
+        "Giant trevally",
+        "Dogtooth tuna",
+        "Grouper"
+      ],
+      "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
+      "accessToVerify": "Guided boat",
+      "tackleDecision": "Confirm which rods, reels, rigs and replacement tackle the crew supplies. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
+      "operatorQuestion": "Confirm actual access, equipment provision, meeting place and date availability.",
+      "sourceLeads": {},
+      "distributionAngle": "Show the local decision: Reef popping and vertical jigging in Nosy Be. Have the crew identify whether casting or deep jigging dominates your dates.",
+      "nextAction": "Inspect full primary/local source pages; establish targets, access and seasonal scope before editorial promotion.",
+      "acceptance": [
+        "Named fishery and scope supported by inspected sources",
+        "Local access and target are not inferred from a country",
+        "Seasonal claims have source/date/scope",
+        "Equipment requirements fit the actual method",
+        "No invented operator availability",
+        "Publish gate passed before search indexing"
+      ]
+    },
+    {
+      "id": "g-mozambique-pomene",
+      "tripId": "g-mozambique-pomene",
+      "continent": "Africa",
+      "country": "Mozambique",
+      "region": "Indian Ocean coast & islands",
+      "stateOrProvince": "",
+      "location": "Pomene",
+      "url": "/trips/g-mozambique-pomene/",
+      "currentTier": "trip-brief",
+      "indexEligible": false,
+      "sourceIds": [
+        "global-mozambique"
+      ],
+      "evidenceDepth": "Inspected source text",
+      "localDecision": "Coastal lure fishing from a lodge base in Pomene. Specify whether you want shore sessions, guided boat days or a mixture.",
+      "candidateTargets": "Giant trevally / Queenfish",
+      "confirmedTargets": [
+        "Giant trevally",
+        "Queenfish"
+      ],
+      "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
+      "accessToVerify": "Guided boat",
+      "tackleDecision": "Confirm which rods, reels, rigs and replacement tackle the crew supplies. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
+      "operatorQuestion": "Confirm actual access, equipment provision, meeting place and date availability.",
+      "sourceLeads": {},
+      "distributionAngle": "Show the local decision: Coastal lure fishing from a lodge base in Pomene. Specify whether you want shore sessions, guided boat days or a mixture.",
+      "nextAction": "Inspect full primary/local source pages; establish targets, access and seasonal scope before editorial promotion.",
+      "acceptance": [
+        "Named fishery and scope supported by inspected sources",
+        "Local access and target are not inferred from a country",
+        "Seasonal claims have source/date/scope",
+        "Equipment requirements fit the actual method",
+        "No invented operator availability",
+        "Publish gate passed before search indexing"
+      ]
+    },
+    {
+      "id": "g-mozambique-bazaruto-archipelago",
+      "tripId": "g-mozambique-bazaruto-archipelago",
+      "continent": "Africa",
+      "country": "Mozambique",
+      "region": "Indian Ocean coast & islands",
+      "stateOrProvince": "",
+      "location": "Bazaruto archipelago",
+      "url": "/trips/g-mozambique-bazaruto-archipelago/",
+      "currentTier": "trip-brief",
+      "indexEligible": false,
+      "sourceIds": [
+        "global-mozambique"
+      ],
+      "evidenceDepth": "Inspected source text",
+      "localDecision": "Island-based offshore charter in Bazaruto archipelago. Ask which island or mainland port the charter uses and how long the run to fishing grounds takes.",
+      "candidateTargets": "Black marlin",
+      "confirmedTargets": [
+        "Black marlin"
+      ],
+      "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
+      "accessToVerify": "Charter boat",
+      "tackleDecision": "Confirm which rods, reels, rigs and replacement tackle the crew supplies. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
+      "operatorQuestion": "Confirm actual access, equipment provision, meeting place and date availability.",
+      "sourceLeads": {},
+      "distributionAngle": "Show the local decision: Island-based offshore charter in Bazaruto archipelago. Ask which island or mainland port the charter uses and how long the run to fishing grounds takes.",
+      "nextAction": "Inspect full primary/local source pages; establish targets, access and seasonal scope before editorial promotion.",
+      "acceptance": [
+        "Named fishery and scope supported by inspected sources",
+        "Local access and target are not inferred from a country",
+        "Seasonal claims have source/date/scope",
+        "Equipment requirements fit the actual method",
+        "No invented operator availability",
+        "Publish gate passed before search indexing"
+      ]
+    },
+    {
+      "id": "g-mozambique-inhaca-island",
+      "tripId": "g-mozambique-inhaca-island",
+      "continent": "Africa",
+      "country": "Mozambique",
+      "region": "Indian Ocean coast & islands",
+      "stateOrProvince": "",
+      "location": "Inhaca Island",
+      "url": "/trips/g-mozambique-inhaca-island/",
+      "currentTier": "trip-brief",
+      "indexEligible": false,
+      "sourceIds": [
+        "global-mozambique"
+      ],
+      "evidenceDepth": "Inspected source text",
+      "localDecision": "Island departure and charter planning in Inhaca Island. Treat this as a location brief until a captain confirms the target and approach.",
+      "candidateTargets": "Local targets to confirm",
+      "confirmedTargets": [
+        "Local targets to confirm"
+      ],
+      "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
+      "accessToVerify": "Charter boat",
+      "tackleDecision": "Confirm which rods, reels, rigs and replacement tackle the crew supplies. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
+      "operatorQuestion": "Confirm actual access, equipment provision, meeting place and date availability.",
+      "sourceLeads": {},
+      "distributionAngle": "Show the local decision: Island departure and charter planning in Inhaca Island. Treat this as a location brief until a captain confirms the target and approach.",
+      "nextAction": "Inspect full primary/local source pages; establish targets, access and seasonal scope before editorial promotion.",
+      "acceptance": [
+        "Named fishery and scope supported by inspected sources",
+        "Local access and target are not inferred from a country",
+        "Seasonal claims have source/date/scope",
+        "Equipment requirements fit the actual method",
+        "No invented operator availability",
+        "Publish gate passed before search indexing"
+      ]
+    },
+    {
+      "id": "g-mozambique-quirimbas-archipelago",
+      "tripId": "g-mozambique-quirimbas-archipelago",
+      "continent": "Africa",
+      "country": "Mozambique",
+      "region": "Indian Ocean coast & islands",
+      "stateOrProvince": "",
+      "location": "Quirimbas archipelago",
+      "url": "/trips/g-mozambique-quirimbas-archipelago/",
+      "currentTier": "trip-brief",
+      "indexEligible": false,
+      "sourceIds": [
+        "global-mozambique"
+      ],
+      "evidenceDepth": "Inspected source text",
+      "localDecision": "Remote island fishing-base selection in Quirimbas archipelago. Choose an actual lodge or boat base before making a gear list.",
+      "candidateTargets": "Local targets to confirm",
+      "confirmedTargets": [
+        "Local targets to confirm"
+      ],
+      "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
+      "accessToVerify": "Guided boat",
+      "tackleDecision": "Confirm which rods, reels, rigs and replacement tackle the crew supplies. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
+      "operatorQuestion": "Confirm actual access, equipment provision, meeting place and date availability.",
+      "sourceLeads": {},
+      "distributionAngle": "Show the local decision: Remote island fishing-base selection in Quirimbas archipelago. Choose an actual lodge or boat base before making a gear list.",
+      "nextAction": "Inspect full primary/local source pages; establish targets, access and seasonal scope before editorial promotion.",
+      "acceptance": [
+        "Named fishery and scope supported by inspected sources",
+        "Local access and target are not inferred from a country",
+        "Seasonal claims have source/date/scope",
+        "Equipment requirements fit the actual method",
+        "No invented operator availability",
+        "Publish gate passed before search indexing"
+      ]
+    },
+    {
+      "id": "g-namibia-skeleton-coast",
+      "tripId": "g-namibia-skeleton-coast",
+      "continent": "Africa",
+      "country": "Namibia",
+      "region": "Southern Africa",
+      "stateOrProvince": "",
+      "location": "Skeleton Coast",
+      "url": "/trips/g-namibia-skeleton-coast/",
+      "currentTier": "trip-brief",
+      "indexEligible": false,
+      "sourceIds": [
+        "global-namibia"
+      ],
+      "evidenceDepth": "Inspected source text",
+      "localDecision": "Guided heavy surf fishing in Skeleton Coast. Use a specialist guide and clarify bait, casting help and fish-handling responsibilities.",
+      "candidateTargets": "Bronze whaler shark",
+      "confirmedTargets": [
+        "Bronze whaler shark"
+      ],
+      "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
+      "accessToVerify": "Bank",
+      "tackleDecision": "Match rod rating, line and terminal system to the agreed presentation. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
+      "operatorQuestion": "Confirm actual access, equipment provision, meeting place and date availability.",
+      "sourceLeads": {},
+      "distributionAngle": "Show the local decision: Guided heavy surf fishing in Skeleton Coast. Use a specialist guide and clarify bait, casting help and fish-handling responsibilities.",
+      "nextAction": "Inspect full primary/local source pages; establish targets, access and seasonal scope before editorial promotion.",
+      "acceptance": [
+        "Named fishery and scope supported by inspected sources",
+        "Local access and target are not inferred from a country",
+        "Seasonal claims have source/date/scope",
+        "Equipment requirements fit the actual method",
+        "No invented operator availability",
+        "Publish gate passed before search indexing"
+      ]
+    },
+    {
+      "id": "g-tanzania-mnyera-river",
+      "tripId": "g-tanzania-mnyera-river",
+      "continent": "Africa",
+      "country": "Tanzania",
+      "region": "East Africa & inland waters",
+      "stateOrProvince": "",
+      "location": "Mnyera River",
+      "url": "/trips/g-tanzania-mnyera-river/",
+      "currentTier": "trip-brief",
+      "indexEligible": false,
+      "sourceIds": [
+        "global-tanzania"
+      ],
+      "evidenceDepth": "Inspected source text",
+      "localDecision": "Tigerfish drift-boat fly expedition in Mnyera River. Ask Dhala Camp for the current river-level outlook and the exact boat fishing system.",
+      "candidateTargets": "Tigerfish",
+      "confirmedTargets": [
+        "Tigerfish"
+      ],
+      "seasonalEvidence": "Operator program is described for early August–November; river conditions and camp operation need reconfirmation.",
+      "accessToVerify": "Guided boat",
+      "tackleDecision": "Match lure or fly size, line, leader and connections to the outfitter’s program. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
+      "operatorQuestion": "Confirm actual access, equipment provision, meeting place and date availability.",
+      "sourceLeads": {},
+      "distributionAngle": "Show the local decision: Tigerfish drift-boat fly expedition in Mnyera River. Ask Dhala Camp for the current river-level outlook and the exact boat fishing system.",
+      "nextAction": "Inspect full primary/local source pages; establish targets, access and seasonal scope before editorial promotion.",
+      "acceptance": [
+        "Named fishery and scope supported by inspected sources",
+        "Local access and target are not inferred from a country",
+        "Seasonal claims have source/date/scope",
+        "Equipment requirements fit the actual method",
+        "No invented operator availability",
+        "Publish gate passed before search indexing"
+      ]
+    },
+    {
+      "id": "g-tanzania-ruhudji-river",
+      "tripId": "g-tanzania-ruhudji-river",
+      "continent": "Africa",
+      "country": "Tanzania",
+      "region": "East Africa & inland waters",
+      "stateOrProvince": "",
+      "location": "Ruhudji River",
+      "url": "/trips/g-tanzania-ruhudji-river/",
+      "currentTier": "trip-brief",
+      "indexEligible": false,
+      "sourceIds": [
+        "global-tanzania"
+      ],
+      "evidenceDepth": "Inspected source text",
+      "localDecision": "Tigerfish drift-boat fly expedition in Ruhudji River. Build the Ruhudji visit around Samaki Camp’s own equipment guidance.",
+      "candidateTargets": "Tigerfish",
+      "confirmedTargets": [
+        "Tigerfish"
+      ],
+      "seasonalEvidence": "Operator program is described for early August–November; river conditions and camp operation need reconfirmation.",
+      "accessToVerify": "Guided boat",
+      "tackleDecision": "Match lure or fly size, line, leader and connections to the outfitter’s program. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
+      "operatorQuestion": "Confirm actual access, equipment provision, meeting place and date availability.",
+      "sourceLeads": {},
+      "distributionAngle": "Show the local decision: Tigerfish drift-boat fly expedition in Ruhudji River. Build the Ruhudji visit around Samaki Camp’s own equipment guidance.",
+      "nextAction": "Inspect full primary/local source pages; establish targets, access and seasonal scope before editorial promotion.",
+      "acceptance": [
+        "Named fishery and scope supported by inspected sources",
+        "Local access and target are not inferred from a country",
+        "Seasonal claims have source/date/scope",
+        "Equipment requirements fit the actual method",
+        "No invented operator availability",
+        "Publish gate passed before search indexing"
+      ]
+    },
+    {
+      "id": "g-tanzania-nyerere-dam-shangaa-camp",
+      "tripId": "g-tanzania-nyerere-dam-shangaa-camp",
+      "continent": "Africa",
+      "country": "Tanzania",
+      "region": "East Africa & inland waters",
+      "stateOrProvince": "",
+      "location": "Nyerere Dam — Shangaa Camp",
+      "url": "/trips/g-tanzania-nyerere-dam-shangaa-camp/",
+      "currentTier": "trip-brief",
+      "indexEligible": false,
+      "sourceIds": [
+        "global-shangaa"
+      ],
+      "evidenceDepth": "Inspected source text",
+      "localDecision": "Reservoir fishing expedition in Nyerere Dam — Shangaa Camp. This brief establishes a reservoir program, not a fully researched species calendar.",
+      "candidateTargets": "Local targets to confirm",
+      "confirmedTargets": [
+        "Local targets to confirm"
+      ],
+      "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
+      "accessToVerify": "Guided boat",
+      "tackleDecision": "Choose bank, trolling, jigging or casting equipment only after the method is fixed. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
+      "operatorQuestion": "Confirm actual access, equipment provision, meeting place and date availability.",
+      "sourceLeads": {},
+      "distributionAngle": "Show the local decision: Reservoir fishing expedition in Nyerere Dam — Shangaa Camp. This brief establishes a reservoir program, not a fully researched species calendar.",
+      "nextAction": "Inspect full primary/local source pages; establish targets, access and seasonal scope before editorial promotion.",
+      "acceptance": [
+        "Named fishery and scope supported by inspected sources",
+        "Local access and target are not inferred from a country",
+        "Seasonal claims have source/date/scope",
+        "Equipment requirements fit the actual method",
+        "No invented operator availability",
+        "Publish gate passed before search indexing"
+      ]
+    },
+    {
+      "id": "g-uganda-ngamba-island-lake-victoria",
+      "tripId": "g-uganda-ngamba-island-lake-victoria",
+      "continent": "Africa",
+      "country": "Uganda",
+      "region": "East Africa & inland waters",
+      "stateOrProvince": "",
+      "location": "Ngamba Island — Lake Victoria",
+      "url": "/trips/g-uganda-ngamba-island-lake-victoria/",
+      "currentTier": "trip-brief",
+      "indexEligible": false,
+      "sourceIds": [
+        "global-uganda"
+      ],
+      "evidenceDepth": "Inspected search excerpt",
+      "localDecision": "Lake Victoria guided boat fishing in Ngamba Island — Lake Victoria. Confirm the actual launch and guide rather than assuming a stay on the lake includes fishing.",
+      "candidateTargets": "Nile perch",
+      "confirmedTargets": [
+        "Nile perch"
+      ],
+      "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
+      "accessToVerify": "Guided boat",
+      "tackleDecision": "Choose bank, trolling, jigging or casting equipment only after the method is fixed. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
+      "operatorQuestion": "Confirm actual access, equipment provision, meeting place and date availability.",
+      "sourceLeads": {},
+      "distributionAngle": "Show the local decision: Lake Victoria guided boat fishing in Ngamba Island — Lake Victoria. Confirm the actual launch and guide rather than assuming a stay on the lake includes fishing.",
+      "nextAction": "Inspect full primary/local source pages; establish targets, access and seasonal scope before editorial promotion.",
+      "acceptance": [
+        "Named fishery and scope supported by inspected sources",
+        "Local access and target are not inferred from a country",
+        "Seasonal claims have source/date/scope",
+        "Equipment requirements fit the actual method",
+        "No invented operator availability",
+        "Publish gate passed before search indexing"
+      ]
+    },
+    {
+      "id": "g-uganda-bulago-island-lake-victoria",
+      "tripId": "g-uganda-bulago-island-lake-victoria",
+      "continent": "Africa",
+      "country": "Uganda",
+      "region": "East Africa & inland waters",
+      "stateOrProvince": "",
+      "location": "Bulago Island — Lake Victoria",
+      "url": "/trips/g-uganda-bulago-island-lake-victoria/",
+      "currentTier": "trip-brief",
+      "indexEligible": false,
+      "sourceIds": [
+        "global-uganda"
+      ],
+      "evidenceDepth": "Inspected search excerpt",
+      "localDecision": "Lake Victoria guided boat fishing in Bulago Island — Lake Victoria. Ask whether fishing is arranged from the island or requires a separate mainland launch and transfer.",
+      "candidateTargets": "Nile perch",
+      "confirmedTargets": [
+        "Nile perch"
+      ],
+      "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
+      "accessToVerify": "Guided boat",
+      "tackleDecision": "Choose bank, trolling, jigging or casting equipment only after the method is fixed. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
+      "operatorQuestion": "Confirm actual access, equipment provision, meeting place and date availability.",
+      "sourceLeads": {},
+      "distributionAngle": "Show the local decision: Lake Victoria guided boat fishing in Bulago Island — Lake Victoria. Ask whether fishing is arranged from the island or requires a separate mainland launch and transfer.",
+      "nextAction": "Inspect full primary/local source pages; establish targets, access and seasonal scope before editorial promotion.",
+      "acceptance": [
+        "Named fishery and scope supported by inspected sources",
+        "Local access and target are not inferred from a country",
+        "Seasonal claims have source/date/scope",
+        "Equipment requirements fit the actual method",
+        "No invented operator availability",
+        "Publish gate passed before search indexing"
+      ]
+    },
+    {
+      "id": "g-uganda-kalangala-islands-lake-victoria",
+      "tripId": "g-uganda-kalangala-islands-lake-victoria",
+      "continent": "Africa",
+      "country": "Uganda",
+      "region": "East Africa & inland waters",
+      "stateOrProvince": "",
+      "location": "Kalangala islands — Lake Victoria",
+      "url": "/trips/g-uganda-kalangala-islands-lake-victoria/",
+      "currentTier": "trip-brief",
+      "indexEligible": false,
+      "sourceIds": [
+        "global-uganda"
+      ],
+      "evidenceDepth": "Inspected search excerpt",
+      "localDecision": "Lake Victoria guided boat fishing in Kalangala islands — Lake Victoria. Choose the actual island base and ask the outfitter how the fishing day connects with your accommodation.",
+      "candidateTargets": "Nile perch",
+      "confirmedTargets": [
+        "Nile perch"
+      ],
+      "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
+      "accessToVerify": "Guided boat",
+      "tackleDecision": "Choose bank, trolling, jigging or casting equipment only after the method is fixed. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
+      "operatorQuestion": "Confirm actual access, equipment provision, meeting place and date availability.",
+      "sourceLeads": {},
+      "distributionAngle": "Show the local decision: Lake Victoria guided boat fishing in Kalangala islands — Lake Victoria. Choose the actual island base and ask the outfitter how the fishing day connects with your accommodation.",
+      "nextAction": "Inspect full primary/local source pages; establish targets, access and seasonal scope before editorial promotion.",
+      "acceptance": [
+        "Named fishery and scope supported by inspected sources",
+        "Local access and target are not inferred from a country",
+        "Seasonal claims have source/date/scope",
+        "Equipment requirements fit the actual method",
+        "No invented operator availability",
+        "Publish gate passed before search indexing"
+      ]
+    },
+    {
+      "id": "g-uganda-victoria-nile-murchison-falls",
+      "tripId": "g-uganda-victoria-nile-murchison-falls",
+      "continent": "Africa",
+      "country": "Uganda",
+      "region": "East Africa & inland waters",
+      "stateOrProvince": "",
+      "location": "Victoria Nile — Murchison Falls",
+      "url": "/trips/g-uganda-victoria-nile-murchison-falls/",
+      "currentTier": "trip-brief",
+      "indexEligible": false,
+      "sourceIds": [
+        "global-murchison"
+      ],
+      "evidenceDepth": "Inspected search excerpt",
+      "localDecision": "Guided river fishing expedition in Victoria Nile — Murchison Falls. River access and safe boat positioning belong with the local guide.",
+      "candidateTargets": "Nile perch",
+      "confirmedTargets": [
+        "Nile perch"
+      ],
+      "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
+      "accessToVerify": "River float",
+      "tackleDecision": "Select the casting weight or fly-line system for the confirmed reach. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
+      "operatorQuestion": "Confirm actual access, equipment provision, meeting place and date availability.",
+      "sourceLeads": {},
+      "distributionAngle": "Show the local decision: Guided river fishing expedition in Victoria Nile — Murchison Falls. River access and safe boat positioning belong with the local guide.",
+      "nextAction": "Inspect full primary/local source pages; establish targets, access and seasonal scope before editorial promotion.",
+      "acceptance": [
+        "Named fishery and scope supported by inspected sources",
+        "Local access and target are not inferred from a country",
+        "Seasonal claims have source/date/scope",
+        "Equipment requirements fit the actual method",
+        "No invented operator availability",
+        "Publish gate passed before search indexing"
+      ]
+    },
+    {
+      "id": "g-botswana-nxamaseri-okavango",
+      "tripId": "g-botswana-nxamaseri-okavango",
+      "continent": "Africa",
+      "country": "Botswana",
+      "region": "Southern Africa",
+      "stateOrProvince": "",
+      "location": "Nxamaseri — Okavango",
+      "url": "/trips/g-botswana-nxamaseri-okavango/",
+      "currentTier": "trip-brief",
+      "indexEligible": false,
+      "sourceIds": [
+        "global-nxamaseri"
+      ],
+      "evidenceDepth": "Inspected search excerpt",
+      "localDecision": "Delta-channel tigerfish expedition in Nxamaseri — Okavango. Ask how the channels accessible from the lodge change with your dates and water levels.",
+      "candidateTargets": "Tigerfish",
+      "confirmedTargets": [
+        "Tigerfish"
+      ],
+      "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
+      "accessToVerify": "Guided boat",
+      "tackleDecision": "Match lure or fly size, line, leader and connections to the outfitter’s program. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
+      "operatorQuestion": "Confirm actual access, equipment provision, meeting place and date availability.",
+      "sourceLeads": {},
+      "distributionAngle": "Show the local decision: Delta-channel tigerfish expedition in Nxamaseri — Okavango. Ask how the channels accessible from the lodge change with your dates and water levels.",
+      "nextAction": "Inspect full primary/local source pages; establish targets, access and seasonal scope before editorial promotion.",
+      "acceptance": [
+        "Named fishery and scope supported by inspected sources",
+        "Local access and target are not inferred from a country",
+        "Seasonal claims have source/date/scope",
+        "Equipment requirements fit the actual method",
+        "No invented operator availability",
+        "Publish gate passed before search indexing"
+      ]
+    },
+    {
+      "id": "g-zimbabwe-lake-kariba",
+      "tripId": "g-zimbabwe-lake-kariba",
+      "continent": "Africa",
+      "country": "Zimbabwe",
+      "region": "Southern Africa",
+      "stateOrProvince": "",
+      "location": "Lake Kariba",
+      "url": "/trips/g-zimbabwe-lake-kariba/",
+      "currentTier": "trip-brief",
+      "indexEligible": false,
+      "sourceIds": [
+        "global-zimbabwe"
+      ],
+      "evidenceDepth": "Inspected search excerpt",
+      "localDecision": "Tigerfish lake and houseboat planning in Lake Kariba. First choose between a day boat, lodge base and houseboat arrangement.",
+      "candidateTargets": "Tigerfish",
+      "confirmedTargets": [
+        "Tigerfish"
+      ],
+      "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
+      "accessToVerify": "Guided boat",
+      "tackleDecision": "Choose bank, trolling, jigging or casting equipment only after the method is fixed. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
+      "operatorQuestion": "Confirm actual access, equipment provision, meeting place and date availability.",
+      "sourceLeads": {},
+      "distributionAngle": "Show the local decision: Tigerfish lake and houseboat planning in Lake Kariba. First choose between a day boat, lodge base and houseboat arrangement.",
+      "nextAction": "Inspect full primary/local source pages; establish targets, access and seasonal scope before editorial promotion.",
+      "acceptance": [
+        "Named fishery and scope supported by inspected sources",
+        "Local access and target are not inferred from a country",
+        "Seasonal claims have source/date/scope",
+        "Equipment requirements fit the actual method",
+        "No invented operator availability",
+        "Publish gate passed before search indexing"
+      ]
+    },
+    {
+      "id": "g-zimbabwe-upper-zambezi-zimbabwe-bank",
+      "tripId": "g-zimbabwe-upper-zambezi-zimbabwe-bank",
+      "continent": "Africa",
+      "country": "Zimbabwe",
+      "region": "Southern Africa",
+      "stateOrProvince": "",
+      "location": "Upper Zambezi — Zimbabwe bank",
+      "url": "/trips/g-zimbabwe-upper-zambezi-zimbabwe-bank/",
+      "currentTier": "trip-brief",
+      "indexEligible": false,
+      "sourceIds": [
+        "global-zimbabwe"
+      ],
+      "evidenceDepth": "Inspected search excerpt",
+      "localDecision": "Guided river tigerfish outing in Upper Zambezi — Zimbabwe bank. Request the precise Zimbabwe-side launch and fishing reach when comparing river packages.",
+      "candidateTargets": "Tigerfish",
+      "confirmedTargets": [
+        "Tigerfish"
+      ],
+      "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
+      "accessToVerify": "River float",
+      "tackleDecision": "Select the casting weight or fly-line system for the confirmed reach. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
+      "operatorQuestion": "Confirm actual access, equipment provision, meeting place and date availability.",
+      "sourceLeads": {},
+      "distributionAngle": "Show the local decision: Guided river tigerfish outing in Upper Zambezi — Zimbabwe bank. Request the precise Zimbabwe-side launch and fishing reach when comparing river packages.",
+      "nextAction": "Inspect full primary/local source pages; establish targets, access and seasonal scope before editorial promotion.",
+      "acceptance": [
+        "Named fishery and scope supported by inspected sources",
+        "Local access and target are not inferred from a country",
+        "Seasonal claims have source/date/scope",
+        "Equipment requirements fit the actual method",
+        "No invented operator availability",
+        "Publish gate passed before search indexing"
+      ]
+    },
+    {
+      "id": "g-zambia-mwandi-upper-zambezi",
+      "tripId": "g-zambia-mwandi-upper-zambezi",
+      "continent": "Africa",
+      "country": "Zambia",
+      "region": "Southern Africa",
+      "stateOrProvince": "",
+      "location": "Mwandi — Upper Zambezi",
+      "url": "/trips/g-zambia-mwandi-upper-zambezi/",
+      "currentTier": "trip-brief",
+      "indexEligible": false,
+      "sourceIds": [
+        "global-shackletons"
+      ],
+      "evidenceDepth": "Inspected search excerpt",
+      "localDecision": "Upper Zambezi lodge-based fishing in Mwandi — Upper Zambezi. Keep this itinerary distinct from the Lower Zambezi camps.",
+      "candidateTargets": "Tigerfish",
+      "confirmedTargets": [
+        "Tigerfish"
+      ],
+      "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
+      "accessToVerify": "River float",
+      "tackleDecision": "Select the casting weight or fly-line system for the confirmed reach. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
+      "operatorQuestion": "Confirm actual access, equipment provision, meeting place and date availability.",
+      "sourceLeads": {},
+      "distributionAngle": "Show the local decision: Upper Zambezi lodge-based fishing in Mwandi — Upper Zambezi. Keep this itinerary distinct from the Lower Zambezi camps.",
+      "nextAction": "Inspect full primary/local source pages; establish targets, access and seasonal scope before editorial promotion.",
+      "acceptance": [
+        "Named fishery and scope supported by inspected sources",
+        "Local access and target are not inferred from a country",
+        "Seasonal claims have source/date/scope",
+        "Equipment requirements fit the actual method",
+        "No invented operator availability",
+        "Publish gate passed before search indexing"
+      ]
+    },
+    {
+      "id": "g-egypt-lake-nasser-abu-simbel",
+      "tripId": "g-egypt-lake-nasser-abu-simbel",
+      "continent": "Africa",
+      "country": "Egypt",
+      "region": "North Africa",
+      "stateOrProvince": "",
+      "location": "Lake Nasser — Abu Simbel",
+      "url": "/trips/g-egypt-lake-nasser-abu-simbel/",
+      "currentTier": "trip-brief",
+      "indexEligible": false,
+      "sourceIds": [
+        "global-nasser"
+      ],
+      "evidenceDepth": "Inspected search excerpt",
+      "localDecision": "Multi-day Nile perch boat safari in Lake Nasser — Abu Simbel. Decide between a mobile safari and a fixed base before comparing packing lists.",
+      "candidateTargets": "Nile perch",
+      "confirmedTargets": [
+        "Nile perch"
+      ],
+      "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
+      "accessToVerify": "Guided boat",
+      "tackleDecision": "Choose bank, trolling, jigging or casting equipment only after the method is fixed. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
+      "operatorQuestion": "Confirm actual access, equipment provision, meeting place and date availability.",
+      "sourceLeads": {},
+      "distributionAngle": "Show the local decision: Multi-day Nile perch boat safari in Lake Nasser — Abu Simbel. Decide between a mobile safari and a fixed base before comparing packing lists.",
+      "nextAction": "Inspect full primary/local source pages; establish targets, access and seasonal scope before editorial promotion.",
+      "acceptance": [
+        "Named fishery and scope supported by inspected sources",
+        "Local access and target are not inferred from a country",
+        "Seasonal claims have source/date/scope",
+        "Equipment requirements fit the actual method",
+        "No invented operator availability",
+        "Publish gate passed before search indexing"
+      ]
+    },
+    {
+      "id": "g-morocco-bin-el-ouidane",
+      "tripId": "g-morocco-bin-el-ouidane",
+      "continent": "Africa",
+      "country": "Morocco",
+      "region": "North Africa",
+      "stateOrProvince": "",
+      "location": "Bin el Ouidane",
+      "url": "/trips/g-morocco-bin-el-ouidane/",
+      "currentTier": "trip-brief",
+      "indexEligible": false,
+      "sourceIds": [
+        "global-binel"
+      ],
+      "evidenceDepth": "Inspected search excerpt",
+      "localDecision": "Carp-fishing holiday with equipment rental in Bin el Ouidane. Rental can remove the need to fly with bulky carp equipment.",
+      "candidateTargets": "Carp",
+      "confirmedTargets": [
+        "Carp"
+      ],
+      "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
+      "accessToVerify": "Bank",
+      "tackleDecision": "Get venue-specific requirements for rigs, bait and landing equipment. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
+      "operatorQuestion": "Confirm actual access, equipment provision, meeting place and date availability.",
+      "sourceLeads": {},
+      "distributionAngle": "Show the local decision: Carp-fishing holiday with equipment rental in Bin el Ouidane. Rental can remove the need to fly with bulky carp equipment.",
+      "nextAction": "Inspect full primary/local source pages; establish targets, access and seasonal scope before editorial promotion.",
+      "acceptance": [
+        "Named fishery and scope supported by inspected sources",
+        "Local access and target are not inferred from a country",
+        "Seasonal claims have source/date/scope",
+        "Equipment requirements fit the actual method",
+        "No invented operator availability",
+        "Publish gate passed before search indexing"
+      ]
+    },
+    {
+      "id": "g-gambia-barracuda-lodge-jetty",
+      "tripId": "g-gambia-barracuda-lodge-jetty",
+      "continent": "Africa",
+      "country": "Gambia",
+      "region": "West & Central Atlantic",
+      "stateOrProvince": "",
+      "location": "Barracuda Lodge jetty",
+      "url": "/trips/g-gambia-barracuda-lodge-jetty/",
+      "currentTier": "trip-brief",
+      "indexEligible": false,
+      "sourceIds": [
+        "global-gambia"
+      ],
+      "evidenceDepth": "Inspected search excerpt",
+      "localDecision": "Lodge-based handlining introduction in Barracuda Lodge jetty. For this introductory outing, ask whether tackle and bait are supplied before making any equipment purchase.",
+      "candidateTargets": "Local targets to confirm",
+      "confirmedTargets": [
+        "Local targets to confirm"
+      ],
+      "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
+      "accessToVerify": "Guided boat",
+      "tackleDecision": "Obtain a target- and presentation-specific outfit list from the skipper. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
+      "operatorQuestion": "Confirm actual access, equipment provision, meeting place and date availability.",
+      "sourceLeads": {},
+      "distributionAngle": "Show the local decision: Lodge-based handlining introduction in Barracuda Lodge jetty. For this introductory outing, ask whether tackle and bait are supplied before making any equipment purchase.",
+      "nextAction": "Inspect full primary/local source pages; establish targets, access and seasonal scope before editorial promotion.",
+      "acceptance": [
+        "Named fishery and scope supported by inspected sources",
+        "Local access and target are not inferred from a country",
+        "Seasonal claims have source/date/scope",
+        "Equipment requirements fit the actual method",
+        "No invented operator availability",
+        "Publish gate passed before search indexing"
+      ]
+    },
+    {
+      "id": "g-senegal-saly-marina",
+      "tripId": "g-senegal-saly-marina",
+      "continent": "Africa",
+      "country": "Senegal",
+      "region": "West & Central Atlantic",
+      "stateOrProvince": "",
+      "location": "Saly marina",
+      "url": "/trips/g-senegal-saly-marina/",
+      "currentTier": "trip-brief",
+      "indexEligible": false,
+      "sourceIds": [
+        "global-senegal"
+      ],
+      "evidenceDepth": "Inspected search excerpt",
+      "localDecision": "Resort-linked deep-sea fishing inquiry in Saly marina. Use this as a lead to confirm an active fishing operator, not bookable inventory.",
+      "candidateTargets": "Local targets to confirm",
+      "confirmedTargets": [
+        "Local targets to confirm"
+      ],
+      "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
+      "accessToVerify": "Charter boat",
+      "tackleDecision": "Confirm which rods, reels, rigs and replacement tackle the crew supplies. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
+      "operatorQuestion": "Confirm actual access, equipment provision, meeting place and date availability.",
+      "sourceLeads": {},
+      "distributionAngle": "Show the local decision: Resort-linked deep-sea fishing inquiry in Saly marina. Use this as a lead to confirm an active fishing operator, not bookable inventory.",
+      "nextAction": "Inspect full primary/local source pages; establish targets, access and seasonal scope before editorial promotion.",
+      "acceptance": [
+        "Named fishery and scope supported by inspected sources",
+        "Local access and target are not inferred from a country",
+        "Seasonal claims have source/date/scope",
+        "Equipment requirements fit the actual method",
+        "No invented operator availability",
+        "Publish gate passed before search indexing"
+      ]
+    },
+    {
+      "id": "g-tunisia-djerba",
+      "tripId": "g-tunisia-djerba",
+      "continent": "Africa",
+      "country": "Tunisia",
+      "region": "North Africa",
+      "stateOrProvince": "",
+      "location": "Djerba",
+      "url": "/trips/g-tunisia-djerba/",
+      "currentTier": "trip-brief",
+      "indexEligible": false,
+      "sourceIds": [
+        "global-djerba"
+      ],
+      "evidenceDepth": "Inspected search excerpt",
+      "localDecision": "Short equipment-included boat outing in Djerba. This is an introduction rather than a confirmed big-game program.",
+      "candidateTargets": "Local targets to confirm",
+      "confirmedTargets": [
+        "Local targets to confirm"
+      ],
+      "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
+      "accessToVerify": "Guided boat",
+      "tackleDecision": "Confirm which rods, reels, rigs and replacement tackle the crew supplies. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
+      "operatorQuestion": "Confirm actual access, equipment provision, meeting place and date availability.",
+      "sourceLeads": {},
+      "distributionAngle": "Show the local decision: Short equipment-included boat outing in Djerba. This is an introduction rather than a confirmed big-game program.",
+      "nextAction": "Inspect full primary/local source pages; establish targets, access and seasonal scope before editorial promotion.",
+      "acceptance": [
+        "Named fishery and scope supported by inspected sources",
+        "Local access and target are not inferred from a country",
+        "Seasonal claims have source/date/scope",
+        "Equipment requirements fit the actual method",
+        "No invented operator availability",
+        "Publish gate passed before search indexing"
+      ]
+    },
+    {
+      "id": "g-south-africa-sterkfontein-dam",
+      "tripId": "g-south-africa-sterkfontein-dam",
+      "continent": "Africa",
+      "country": "South Africa",
+      "region": "Southern Africa",
+      "stateOrProvince": "",
+      "location": "Sterkfontein Dam",
+      "url": "/trips/g-south-africa-sterkfontein-dam/",
+      "currentTier": "trip-brief",
+      "indexEligible": false,
+      "sourceIds": [
+        "global-sterkfontein"
+      ],
+      "evidenceDepth": "Inspected search excerpt",
+      "localDecision": "Stillwater yellowfish fly fishing in Sterkfontein Dam. Ask a local guide how they expect you to access the fishing water and what presentation suits the dates.",
+      "candidateTargets": "Yellowfish",
+      "confirmedTargets": [
+        "Yellowfish"
+      ],
+      "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
+      "accessToVerify": "Bank",
+      "tackleDecision": "Choose bank, trolling, jigging or casting equipment only after the method is fixed. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
+      "operatorQuestion": "Confirm actual access, equipment provision, meeting place and date availability.",
+      "sourceLeads": {},
+      "distributionAngle": "Show the local decision: Stillwater yellowfish fly fishing in Sterkfontein Dam. Ask a local guide how they expect you to access the fishing water and what presentation suits the dates.",
+      "nextAction": "Inspect full primary/local source pages; establish targets, access and seasonal scope before editorial promotion.",
+      "acceptance": [
+        "Named fishery and scope supported by inspected sources",
+        "Local access and target are not inferred from a country",
+        "Seasonal claims have source/date/scope",
+        "Equipment requirements fit the actual method",
+        "No invented operator availability",
+        "Publish gate passed before search indexing"
+      ]
+    },
+    {
+      "id": "g-lesotho-bokong-river-makhangoa",
+      "tripId": "g-lesotho-bokong-river-makhangoa",
+      "continent": "Africa",
+      "country": "Lesotho",
+      "region": "Southern Africa",
+      "stateOrProvince": "",
+      "location": "Bokong River — Makhangoa",
+      "url": "/trips/g-lesotho-bokong-river-makhangoa/",
+      "currentTier": "trip-brief",
+      "indexEligible": false,
+      "sourceIds": [
+        "global-lesotho"
+      ],
+      "evidenceDepth": "Inspected search excerpt",
+      "localDecision": "Community-camp mountain fly fishing in Bokong River — Makhangoa. Obtain the camp’s date-specific target and tackle list before deciding on a rod.",
+      "candidateTargets": "Local targets to confirm",
+      "confirmedTargets": [
+        "Local targets to confirm"
+      ],
+      "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
+      "accessToVerify": "Bank",
+      "tackleDecision": "Select the casting weight or fly-line system for the confirmed reach. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
+      "operatorQuestion": "Confirm actual access, equipment provision, meeting place and date availability.",
+      "sourceLeads": {},
+      "distributionAngle": "Show the local decision: Community-camp mountain fly fishing in Bokong River — Makhangoa. Obtain the camp’s date-specific target and tackle list before deciding on a rod.",
+      "nextAction": "Inspect full primary/local source pages; establish targets, access and seasonal scope before editorial promotion.",
+      "acceptance": [
+        "Named fishery and scope supported by inspected sources",
+        "Local access and target are not inferred from a country",
+        "Seasonal claims have source/date/scope",
+        "Equipment requirements fit the actual method",
+        "No invented operator availability",
+        "Publish gate passed before search indexing"
+      ]
+    },
+    {
+      "id": "g-mauritius-st-brandon",
+      "tripId": "g-mauritius-st-brandon",
+      "continent": "Africa",
+      "country": "Mauritius",
+      "region": "Indian Ocean coast & islands",
+      "stateOrProvince": "",
+      "location": "St. Brandon",
+      "url": "/trips/g-mauritius-st-brandon/",
+      "currentTier": "trip-brief",
+      "indexEligible": false,
+      "sourceIds": [
+        "global-mauritius"
+      ],
+      "evidenceDepth": "Inspected source text",
+      "localDecision": "Remote shoal fly-fishing expedition in St. Brandon. Treat this remote program separately from a Mauritius resort day charter.",
+      "candidateTargets": "Bonefish / Giant trevally / Permit",
+      "confirmedTargets": [
+        "Bonefish",
+        "Giant trevally",
+        "Permit"
+      ],
+      "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
+      "accessToVerify": "Skiff",
+      "tackleDecision": "Match the entire outfit to the primary target; obtain exact guide specifications. | Ask for the actual items, sizes and quantities used on this program. | Confirm skiff-only versus wading access before buying boots. | Keep phone, spare clothing and essentials separate from wet tackle.",
+      "operatorQuestion": "Confirm actual access, equipment provision, meeting place and date availability.",
+      "sourceLeads": {},
+      "distributionAngle": "Show the local decision: Remote shoal fly-fishing expedition in St. Brandon. Treat this remote program separately from a Mauritius resort day charter.",
+      "nextAction": "Inspect full primary/local source pages; establish targets, access and seasonal scope before editorial promotion.",
+      "acceptance": [
+        "Named fishery and scope supported by inspected sources",
+        "Local access and target are not inferred from a country",
+        "Seasonal claims have source/date/scope",
+        "Equipment requirements fit the actual method",
+        "No invented operator availability",
+        "Publish gate passed before search indexing"
+      ]
+    },
+    {
+      "id": "g-kenya-malindi-kingfisher",
+      "tripId": "g-kenya-malindi-kingfisher",
+      "continent": "Africa",
+      "country": "Kenya",
+      "region": "East Africa & inland waters",
+      "stateOrProvince": "",
+      "location": "Malindi — Kingfisher",
+      "url": "/trips/g-kenya-malindi-kingfisher/",
+      "currentTier": "trip-brief",
+      "indexEligible": false,
+      "sourceIds": [
+        "global-kenya"
+      ],
+      "evidenceDepth": "Inspected search excerpt",
+      "localDecision": "Method-specific Kenya charter inquiry in Malindi — Kingfisher. Choose one primary fishing objective and request a departure plan from the operator.",
+      "candidateTargets": "Local targets to confirm",
+      "confirmedTargets": [
+        "Local targets to confirm"
+      ],
+      "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
+      "accessToVerify": "Charter boat",
+      "tackleDecision": "Confirm which rods, reels, rigs and replacement tackle the crew supplies. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
+      "operatorQuestion": "Confirm actual access, equipment provision, meeting place and date availability.",
+      "sourceLeads": {},
+      "distributionAngle": "Show the local decision: Method-specific Kenya charter inquiry in Malindi — Kingfisher. Choose one primary fishing objective and request a departure plan from the operator.",
+      "nextAction": "Inspect full primary/local source pages; establish targets, access and seasonal scope before editorial promotion.",
+      "acceptance": [
+        "Named fishery and scope supported by inspected sources",
+        "Local access and target are not inferred from a country",
+        "Seasonal claims have source/date/scope",
+        "Equipment requirements fit the actual method",
+        "No invented operator availability",
+        "Publish gate passed before search indexing"
+      ]
+    }
+  ],
+  "status": "Editorial production queue, not additional published guides"
+}

@@ -1,0 +1,352 @@
+{
+  "passed": true,
+  "reviewed": "2026-09-13",
+  "scope": "Structure, references and text uniqueness only. This script does not establish truth, live conditions, or independent expert approval.",
+  "counts": {
+    "trip_guides": 29,
+    "environment_guides": 12,
+    "authored_article_words_excluding_shared_UI": 15874,
+    "countries": 16,
+    "regions": 6,
+    "inspected_source_records": 37,
+    "sources_linked_to_new_guides": 36,
+    "single_source_trip_guides": 21,
+    "multi_source_trip_guides": 8,
+    "qualified_seasonal_trip_guides": 10,
+    "recorded_research_exclusions_or_qualifications": 7
+  },
+  "checks": [
+    "Unique article IDs and titles",
+    "Attributed evidence and valid source records",
+    "No unsupported independent-review or field-test labels",
+    "Habitat and related-trip references resolve",
+    "Every kit decision explains its requirement and reason",
+    "Seasonal windows retain scope labels and source IDs",
+    "No exact duplicated authored paragraphs",
+    "Five-word-shingle near-duplicate body check"
+  ],
+  "limits": [
+    "21 of 29 local trip guides rely on one cited source; they are not independently triangulated.",
+    "All articles still need independent subject-matter review before being called expert-vetted.",
+    "Category shopping links have not been converted to exact-model product reviews.",
+    "A linked source is not proof of every editorial recommendation; only explicit attributed claims are represented as sourced.",
+    "No current-condition, weather, retailer-availability or booking-inventory feed is connected."
+  ],
+  "highest_body_similarity": [
+    {
+      "a": "rocky-mountain-alpine",
+      "b": "alpine-lakes",
+      "jaccard_5_word_shingles": 0.01093
+    },
+    {
+      "a": "costa-caribbean-canals",
+      "b": "estuaries-mangroves",
+      "jaccard_5_word_shingles": 0.00545
+    },
+    {
+      "a": "andros-bonefish",
+      "b": "lower-zambezi-tiger",
+      "jaccard_5_word_shingles": 0.00312
+    },
+    {
+      "a": "delta-clearwater-grayling",
+      "b": "eglinton-river",
+      "jaccard_5_word_shingles": 0.00306
+    },
+    {
+      "a": "rio-negro-peacock",
+      "b": "lower-zambezi-tiger",
+      "jaccard_5_word_shingles": 0.00299
+    }
+  ],
+  "articles": [
+    {
+      "id": "situk-coho-river",
+      "type": "trip",
+      "body_words": 518,
+      "sources": 1,
+      "independent_expert_review": false
+    },
+    {
+      "id": "yakutat-halibut",
+      "type": "trip",
+      "body_words": 477,
+      "sources": 1,
+      "independent_expert_review": false
+    },
+    {
+      "id": "delta-clearwater-grayling",
+      "type": "trip",
+      "body_words": 483,
+      "sources": 1,
+      "independent_expert_review": false
+    },
+    {
+      "id": "tanana-glacial-system",
+      "type": "trip",
+      "body_words": 426,
+      "sources": 2,
+      "independent_expert_review": false
+    },
+    {
+      "id": "rocky-mountain-alpine",
+      "type": "trip",
+      "body_words": 404,
+      "sources": 1,
+      "independent_expert_review": false
+    },
+    {
+      "id": "texas-inshore-redfish",
+      "type": "trip",
+      "body_words": 397,
+      "sources": 2,
+      "independent_expert_review": false
+    },
+    {
+      "id": "cape-hatteras-surf",
+      "type": "trip",
+      "body_words": 462,
+      "sources": 1,
+      "independent_expert_review": false
+    },
+    {
+      "id": "keys-flats",
+      "type": "trip",
+      "body_words": 424,
+      "sources": 2,
+      "independent_expert_review": false
+    },
+    {
+      "id": "keys-offshore",
+      "type": "trip",
+      "body_words": 403,
+      "sources": 1,
+      "independent_expert_review": false
+    },
+    {
+      "id": "andros-bonefish",
+      "type": "trip",
+      "body_words": 406,
+      "sources": 1,
+      "independent_expert_review": false
+    },
+    {
+      "id": "belize-permit",
+      "type": "trip",
+      "body_words": 432,
+      "sources": 2,
+      "independent_expert_review": false
+    },
+    {
+      "id": "belize-reef",
+      "type": "trip",
+      "body_words": 369,
+      "sources": 1,
+      "independent_expert_review": false
+    },
+    {
+      "id": "quepos-offshore",
+      "type": "trip",
+      "body_words": 383,
+      "sources": 1,
+      "independent_expert_review": false
+    },
+    {
+      "id": "costa-caribbean-canals",
+      "type": "trip",
+      "body_words": 392,
+      "sources": 1,
+      "independent_expert_review": false
+    },
+    {
+      "id": "rio-negro-peacock",
+      "type": "trip",
+      "body_words": 433,
+      "sources": 2,
+      "independent_expert_review": false
+    },
+    {
+      "id": "northern-patagonia-trout",
+      "type": "trip",
+      "body_words": 444,
+      "sources": 2,
+      "independent_expert_review": false
+    },
+    {
+      "id": "norway-skrei",
+      "type": "trip",
+      "body_words": 408,
+      "sources": 1,
+      "independent_expert_review": false
+    },
+    {
+      "id": "norway-summer-sea",
+      "type": "trip",
+      "body_words": 390,
+      "sources": 1,
+      "independent_expert_review": false
+    },
+    {
+      "id": "finland-ice-fishing",
+      "type": "trip",
+      "body_words": 434,
+      "sources": 1,
+      "independent_expert_review": false
+    },
+    {
+      "id": "soca-fly-fishing",
+      "type": "trip",
+      "body_words": 395,
+      "sources": 1,
+      "independent_expert_review": false
+    },
+    {
+      "id": "lower-zambezi-tiger",
+      "type": "trip",
+      "body_words": 401,
+      "sources": 1,
+      "independent_expert_review": false
+    },
+    {
+      "id": "cosmoledo-gt",
+      "type": "trip",
+      "body_words": 490,
+      "sources": 2,
+      "independent_expert_review": false
+    },
+    {
+      "id": "mongolia-taimen",
+      "type": "trip",
+      "body_words": 435,
+      "sources": 2,
+      "independent_expert_review": false
+    },
+    {
+      "id": "hokkaido-char",
+      "type": "trip",
+      "body_words": 414,
+      "sources": 1,
+      "independent_expert_review": false
+    },
+    {
+      "id": "gangwon-streams",
+      "type": "trip",
+      "body_words": 406,
+      "sources": 1,
+      "independent_expert_review": false
+    },
+    {
+      "id": "top-end-barramundi",
+      "type": "trip",
+      "body_words": 385,
+      "sources": 1,
+      "independent_expert_review": false
+    },
+    {
+      "id": "tasmania-great-lake",
+      "type": "trip",
+      "body_words": 425,
+      "sources": 1,
+      "independent_expert_review": false
+    },
+    {
+      "id": "mataura-trout",
+      "type": "trip",
+      "body_words": 390,
+      "sources": 1,
+      "independent_expert_review": false
+    },
+    {
+      "id": "eglinton-river",
+      "type": "trip",
+      "body_words": 398,
+      "sources": 1,
+      "independent_expert_review": false
+    },
+    {
+      "id": "rivers-streams",
+      "type": "environment",
+      "body_words": 333,
+      "sources": 1,
+      "independent_expert_review": false
+    },
+    {
+      "id": "spring-fed",
+      "type": "environment",
+      "body_words": 332,
+      "sources": 1,
+      "independent_expert_review": false
+    },
+    {
+      "id": "glacier-influenced",
+      "type": "environment",
+      "body_words": 298,
+      "sources": 1,
+      "independent_expert_review": false
+    },
+    {
+      "id": "lakes-reservoirs",
+      "type": "environment",
+      "body_words": 314,
+      "sources": 1,
+      "independent_expert_review": false
+    },
+    {
+      "id": "alpine-lakes",
+      "type": "environment",
+      "body_words": 304,
+      "sources": 1,
+      "independent_expert_review": false
+    },
+    {
+      "id": "estuaries-mangroves",
+      "type": "environment",
+      "body_words": 301,
+      "sources": 1,
+      "independent_expert_review": false
+    },
+    {
+      "id": "saltwater-flats",
+      "type": "environment",
+      "body_words": 288,
+      "sources": 1,
+      "independent_expert_review": false
+    },
+    {
+      "id": "surf-beaches",
+      "type": "environment",
+      "body_words": 309,
+      "sources": 1,
+      "independent_expert_review": false
+    },
+    {
+      "id": "reef-bottom",
+      "type": "environment",
+      "body_words": 290,
+      "sources": 1,
+      "independent_expert_review": false
+    },
+    {
+      "id": "offshore",
+      "type": "environment",
+      "body_words": 291,
+      "sources": 1,
+      "independent_expert_review": false
+    },
+    {
+      "id": "ice-fishing",
+      "type": "environment",
+      "body_words": 297,
+      "sources": 1,
+      "independent_expert_review": false
+    },
+    {
+      "id": "tropical-floodplains",
+      "type": "environment",
+      "body_words": 293,
+      "sources": 1,
+      "independent_expert_review": false
+    }
+  ],
+  "failures": []
+}

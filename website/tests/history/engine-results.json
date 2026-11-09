@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "tests": 26,
+  "scope": "14 retained starter rules and 12 world-profile rules; executed with Node test runner",
+  "files": [
+    "engine.test.cjs",
+    "world-engine.test.cjs"
+  ]
+}

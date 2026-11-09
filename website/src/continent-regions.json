@@ -1,0 +1,168 @@
+{
+  "Europe": {
+    "Nordic & Baltic": [
+      "Norway",
+      "Sweden",
+      "Finland",
+      "Iceland",
+      "Denmark",
+      "Estonia",
+      "Latvia",
+      "Lithuania"
+    ],
+    "Britain & Ireland": [
+      "United Kingdom",
+      "Ireland"
+    ],
+    "Western & Central Europe": [
+      "France",
+      "Belgium",
+      "Netherlands",
+      "Luxembourg",
+      "Germany",
+      "Poland",
+      "Czechia",
+      "Slovakia",
+      "Hungary"
+    ],
+    "Alpine & Adriatic": [
+      "Switzerland",
+      "Austria",
+      "Italy",
+      "Slovenia",
+      "Croatia"
+    ],
+    "Balkans & Eastern Europe": [
+      "Bosnia and Herzegovina",
+      "Serbia",
+      "Montenegro",
+      "Bulgaria",
+      "Romania"
+    ],
+    "Mediterranean & Iberia": [
+      "Spain",
+      "Portugal",
+      "Andorra",
+      "Monaco",
+      "Malta",
+      "Greece"
+    ]
+  },
+  "South America": {
+    "Patagonia & Southern Cone": [
+      "Argentina",
+      "Chile",
+      "Uruguay"
+    ],
+    "Brazil & Atlantic waters": [
+      "Brazil"
+    ],
+    "Andes & upper Amazon": [
+      "Bolivia",
+      "Peru",
+      "Ecuador",
+      "Colombia"
+    ],
+    "Guianas": [
+      "Guyana",
+      "Suriname"
+    ]
+  },
+  "Africa": {
+    "North Africa": [
+      "Morocco",
+      "Tunisia",
+      "Egypt"
+    ],
+    "West & Central Atlantic": [
+      "Senegal",
+      "Gambia",
+      "Guinea-Bissau",
+      "Cameroon",
+      "Gabon",
+      "Angola"
+    ],
+    "East Africa & inland waters": [
+      "Kenya",
+      "Tanzania",
+      "Uganda"
+    ],
+    "Southern Africa": [
+      "South Africa",
+      "Namibia",
+      "Botswana",
+      "Lesotho",
+      "Zambia",
+      "Zimbabwe"
+    ],
+    "Indian Ocean coast & islands": [
+      "Mozambique",
+      "Madagascar",
+      "Mauritius",
+      "Seychelles"
+    ]
+  },
+  "Asia": {
+    "East Asia": [
+      "Japan",
+      "South Korea"
+    ],
+    "Mongolia & inland Asia": [
+      "Mongolia"
+    ],
+    "Himalaya & South Asia": [
+      "Bhutan",
+      "Nepal",
+      "India",
+      "Sri Lanka"
+    ],
+    "Southeast Asia": [
+      "Thailand",
+      "Malaysia",
+      "Indonesia",
+      "Singapore",
+      "Philippines",
+      "Vietnam"
+    ],
+    "Arabian Peninsula": [
+      "Oman",
+      "United Arab Emirates",
+      "Qatar",
+      "Saudi Arabia"
+    ],
+    "Eastern Mediterranean": [
+      "Turkey",
+      "Cyprus",
+      "Jordan"
+    ],
+    "Indian Ocean islands": [
+      "Maldives"
+    ]
+  },
+  "Oceania": {
+    "Australia": [
+      "Australia"
+    ],
+    "New Zealand": [
+      "New Zealand"
+    ],
+    "Melanesia": [
+      "Fiji",
+      "Papua New Guinea",
+      "Solomon Islands",
+      "Vanuatu"
+    ],
+    "Micronesia": [
+      "Palau",
+      "Federated States of Micronesia",
+      "Marshall Islands",
+      "Kiribati"
+    ],
+    "Polynesia": [
+      "Cook Islands",
+      "Niue",
+      "Samoa",
+      "Tonga"
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "total_briefs": 507,
+  "country_counts": {
+    "US": 357,
+    "CA": 100,
+    "MX": 50
+  },
+  "us_states": 50,
+  "canada_jurisdictions": 13,
+  "mexico_states": 15,
+  "priorities": {
+    "P1": 100,
+    "P2": 129,
+    "P3": 128,
+    "P4": 100,
+    "P5": 50
+  },
+  "unique_ids": 507,
+  "unique_proposed_urls": 507,
+  "gear_modules": 26,
+  "existing_mappings": 23,
+  "verified_best_month_fields_populated": 0,
+  "quality_scores_fabricated": false,
+  "website_modified": false,
+  "independent_local_reviews_completed": 0
+}

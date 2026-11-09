@@ -1,0 +1,21 @@
+const test = require('node:test');
+const assert = require('node:assert/strict');
+const fs = require('node:fs');
+const path = require('node:path');
+const E=require('../public/assets/engine.js');
+const D=JSON.parse(fs.readFileSync(path.join(__dirname,'../src/data.json'),'utf8'));
+
+test('unknown destination and incompatible style are normalized',()=>{const p=E.normalize({destination:'not-real',style:'flats'},D);assert.equal(p.destination,'yakutat');assert.equal(p.style,'river');});
+test('date is checked for actual calendar validity',()=>{assert.equal(E.normalize({date:'2026-02-30'},D).date,'');assert.equal(E.normalize({date:'2028-02-29'},D).date,'2028-02-29');assert.equal(E.normalize({date:'<script>'},D).date,'');});
+test('trip length and party size are bounded',()=>{const p=E.normalize({days:999,party:-4},D);assert.equal(p.days,30);assert.equal(p.party,1);assert.equal(E.normalize({days:'NaN'},D).days,7);});
+test('unknown gear and unsupported states are discarded',()=>{const p=E.normalize({statuses:{shell:'owned',fake:'provided',rod:'paid'},packed:{fake:true,shell:true}},D);assert.deepEqual(p.statuses,{shell:'owned'});assert.deepEqual(p.packed,{shell:true});});
+test('river trips have conditional wading gear, boats do not',()=>{const river=E.requirements({destination:'yakutat',style:'river'},D);const boat=E.requirements({destination:'yakutat',style:'boat'},D);assert(river.some(x=>x.id==='waders'));assert(!boat.some(x=>x.id==='waders'));assert(boat.some(x=>x.id==='boatshoes'));});
+test('tropical plan excludes default insulating system',()=>{const g=E.requirements({destination:'florida-keys',style:'flats'},D);assert(g.some(x=>x.id==='sunshirt'));assert(!g.some(x=>x.id==='base'));assert(!g.some(x=>x.id==='beanie'));});
+test('duration and laundry change clothing quantities, per angler',()=>{const find=(p,id)=>E.requirements(p,D).find(g=>g.id===id).quantity;assert.equal(find({destination:'yakutat',days:7,laundry:false},'socks'),8);assert.equal(find({destination:'yakutat',days:7,laundry:true},'socks'),3);assert.equal(find({destination:'yakutat',days:1},'socks'),2);});
+test('owned and confirmed provisions are removed from shopping needs',()=>{const before=E.summarize(E.requirements({},D));const after=E.summarize(E.requirements({statuses:{shell:'owned',bottle:'provided'}},D));assert.equal(after.covered,2);assert.equal(after.toShop,before.toShop-2);});
+test('packing an item removes it from purchase count without asserting suitability',()=>{const before=E.summarize(E.requirements({},D));const after=E.summarize(E.requirements({packed:{shell:true,rod:true}},D));assert.equal(after.toShop,before.toShop-1);assert.equal(after.toConfirm,before.toConfirm);assert.equal(after.packed,2);});
+test('essentials filtering does not erase extra-item status',()=>{const p=E.normalize({essentialOnly:true,statuses:{powerbank:'owned'}},D);assert(!E.requirements(p,D).some(x=>x.id==='powerbank'));assert(E.requirements({...p,essentialOnly:false},D).some(x=>x.id==='powerbank'&&x.status==='owned'));});
+test('technical items never fabricate a retail recommendation',()=>{assert.equal(E.shoppingUrl(D.gear.find(g=>g.id==='rod'),'test-20'),null);});
+test('shopping URL is untagged by default and configurable',()=>{const item=D.gear.find(g=>g.id==='shell');const plain=new URL(E.shoppingUrl(item));const tagged=new URL(E.shoppingUrl(item,'example-20'));assert.equal(plain.hostname,'www.amazon.com');assert(!plain.searchParams.has('tag'));assert.equal(tagged.searchParams.get('tag'),'example-20');assert.equal(tagged.searchParams.get('k'),item.query);assert(!new URL(E.shoppingUrl(item,'<script>')).searchParams.has('tag'));});
+test('attribution is allowlisted, bounded and sanitized',()=>{const a=E.attribution(new URLSearchParams('utm_source=%3Cscript%3E&email=person@example.com&utm_campaign='+('a'.repeat(500))));assert.equal(a.utm_source,'script');assert(!('email'in a));assert.equal(a.utm_campaign.length,120);});
+test('source data is consistent',()=>{const ids=new Set(D.destinations.map(d=>d.id));for(const s of D.species)assert(ids.has(s.destination));for(const d of D.destinations){assert(d.styles.includes(d.defaultStyle));for(const k of d.sourceIds)assert(D.sources[k]);assert(new URL(d.operator.url).protocol==='https:');}});

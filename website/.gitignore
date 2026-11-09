@@ -1,0 +1,12 @@
+.netlify/
+node_modules/
+config.json
+.env*
+!\.env.example
+test-results/
+__pycache__/
+
+# Local publishing/authentication state must never be committed.
+.netlify/
+.vercel/
+*.bundle

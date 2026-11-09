@@ -1,0 +1,6 @@
+{
+  "passed": true,
+  "scope": "Build-only test using a reserved example origin, not a deployment",
+  "canonical_pages": 69,
+  "filter_query_urls_in_sitemap": 0
+}

@@ -1,0 +1,32 @@
+{
+  "passed": true,
+  "structuralAssertions": 814,
+  "routes": 1612,
+  "redirectRoutes": 519,
+  "nonRedirectPages": 1093,
+  "tripProfiles": 796,
+  "productionSitemapURLsInNonpublicTest": 96,
+  "sourceVerifiedTripPagesEligibleForSearch": 36,
+  "checks": [
+    "796 unique merged trip profiles",
+    "Unique IDs after Great Bear Lake merge",
+    "Unique canonical trip routes",
+    "All 507 actual plan entries imported exactly once",
+    "Correct per-country production counts",
+    "US: 50 distinct state/province collections",
+    "CA: 13 distinct state/province collections",
+    "MX: 15 distinct state/province collections",
+    "Route exists: situk-coho-river",
+    "All 479 unverified frameworks keep candidate species, evidence and months unconfirmed",
+    "All 796 trips have exactly four scoped gear decisions and valid reference links",
+    "Every index-eligible trip has attributed evidence and a source-checked tier",
+    "Every legacy redirect resolves directly to a live generated route, with no chains",
+    "Production hub plus six continent workbenches",
+    "Six actual continent queues have complete local-decision/gear/distribution fields",
+    "Production simulation: only eligible trip pages enter sitemap; pending and alias routes stay out",
+    "Production simulation: a pending trip retains noindex and its correct canonical URL",
+    "Final artifact restored to preview mode with no fake production origin",
+    "Non-planner dataset below 150KB instead of loading the full gear catalog"
+  ],
+  "limitation": "Structural correctness is not an independent fishing-expertise review. .invalid origin is only a test, never deployed."
+}

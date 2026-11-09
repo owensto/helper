@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "environment": "In-memory HTML; localStorage shim; no external transaction or live hosting verification",
+  "checks": [
+    "Homepage search routes to the real glacier-influenced river guide",
+    "Environment and regional filters combine correctly",
+    "Method, qualified seasonal filter and empty coverage states pass",
+    "Trip guide opens its own four equipment decisions; ownership persists in storage serialization",
+    "Tropical boat and ice profiles exclude automatic wading; uncertain dates stay qualified",
+    "Research register and excluded/qualified claim log render",
+    "All 73 routes render on desktop without horizontal overflow",
+    "All 73 routes render at 390px without horizontal overflow; mobile menu works",
+    "No JavaScript exceptions in tested flows"
+  ]
+}

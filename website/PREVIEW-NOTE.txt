@@ -1,0 +1,1 @@
+Open the separately supplied Fishing-Atlas-Continental-Preview.html in a normal browser, or serve dist/ locally. Rebuild with compile_release.py then build.py. The build writes its standalone HTML to the parent directory as Fishing-Atlas-World-Preview.html; release packaging renames it. Not a publicly deployed site.

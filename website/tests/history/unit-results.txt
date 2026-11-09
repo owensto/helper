@@ -1,0 +1,94 @@
+TAP version 13
+# Subtest: unknown destination and incompatible style are normalized
+ok 1 - unknown destination and incompatible style are normalized
+  ---
+  duration_ms: 0.959383
+  type: 'test'
+  ...
+# Subtest: date is checked for actual calendar validity
+ok 2 - date is checked for actual calendar validity
+  ---
+  duration_ms: 0.501199
+  type: 'test'
+  ...
+# Subtest: trip length and party size are bounded
+ok 3 - trip length and party size are bounded
+  ---
+  duration_ms: 0.185163
+  type: 'test'
+  ...
+# Subtest: unknown gear and unsupported states are discarded
+ok 4 - unknown gear and unsupported states are discarded
+  ---
+  duration_ms: 0.637669
+  type: 'test'
+  ...
+# Subtest: river trips have conditional wading gear, boats do not
+ok 5 - river trips have conditional wading gear, boats do not
+  ---
+  duration_ms: 0.389785
+  type: 'test'
+  ...
+# Subtest: tropical plan excludes default insulating system
+ok 6 - tropical plan excludes default insulating system
+  ---
+  duration_ms: 0.174898
+  type: 'test'
+  ...
+# Subtest: duration and laundry change clothing quantities, per angler
+ok 7 - duration and laundry change clothing quantities, per angler
+  ---
+  duration_ms: 0.265181
+  type: 'test'
+  ...
+# Subtest: owned and confirmed provisions are removed from shopping needs
+ok 8 - owned and confirmed provisions are removed from shopping needs
+  ---
+  duration_ms: 0.220114
+  type: 'test'
+  ...
+# Subtest: packing an item removes it from purchase count without asserting suitability
+ok 9 - packing an item removes it from purchase count without asserting suitability
+  ---
+  duration_ms: 0.357517
+  type: 'test'
+  ...
+# Subtest: essentials filtering does not erase extra-item status
+ok 10 - essentials filtering does not erase extra-item status
+  ---
+  duration_ms: 0.378888
+  type: 'test'
+  ...
+# Subtest: technical items never fabricate a retail recommendation
+ok 11 - technical items never fabricate a retail recommendation
+  ---
+  duration_ms: 0.166445
+  type: 'test'
+  ...
+# Subtest: shopping URL is untagged by default and configurable
+ok 12 - shopping URL is untagged by default and configurable
+  ---
+  duration_ms: 0.419999
+  type: 'test'
+  ...
+# Subtest: attribution is allowlisted, bounded and sanitized
+ok 13 - attribution is allowlisted, bounded and sanitized
+  ---
+  duration_ms: 0.241626
+  type: 'test'
+  ...
+# Subtest: source data is consistent
+ok 14 - source data is consistent
+  ---
+  duration_ms: 0.159876
+  type: 'test'
+  ...
+1..14
+# tests 14
+# suites 0
+# pass 14
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 54.530872
