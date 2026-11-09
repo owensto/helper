@@ -17,14 +17,14 @@ function create(T,scene,renderer,D,software=false){
  vec2 capillary=detail*.022*vec2(sin(p.x*1.21+p.z*.56-time*2.3)+.4*sin(p.z*2.2-p.x*.97+time*3.1),sin(p.z*1.37-p.x*.41+time*2.6)+.4*sin(p.x*2.03+p.z*.83-time*3.5));
  vec3 n=normalize(vec3(-w.y+capillary.x,1.,-w.z+capillary.y));vec3 eye=normalize(cameraPosition-p);float cosTheta=abs(dot(n,eye));float fresnel=.0203731878+.9796268122*pow(1.-clamp(cosTheta,0.,1.),5.);
  vec3 reflectedSky=mix(horizon,vec3(.12,.24,.35),max(0.,reflect(-eye,n).y)*.65);
- vec2 uv=reflection13.xy/max(reflection13.w,.0001)+n.xz*.012;float valid=step(0.,uv.x)*step(uv.x,1.)*step(0.,uv.y)*step(uv.y,1.);
+ vec2 uv=reflection13.xy/max(reflection13.w,.0001)+n.xz*.012;float valid=smoothstep(0.,.10,uv.x)*smoothstep(0.,.10,uv.y)*(1.-smoothstep(.90,1.,uv.x))*(1.-smoothstep(.90,1.,uv.y));
  vec3 reflected=texture2D(reflection,clamp(uv,.001,.999)).rgb;reflectedSky=mix(reflectedSky,reflected,valid*reflectionOn);
  float shallow=smoothstep(-17.,-.4,bottom);vec3 body=mix(color,vec3(.055,.28,.24),shallow*.55);vec3 col=mix(body,reflectedSky,clamp(fresnel+.09,0.,1.));
  vec3 halfV=normalize(sunDirection+eye);float ggx=pow(max(dot(n,halfV),0.),240.);col+=sunColor*ggx*.75*(1.-under);
  float whitecap=smoothstep(.25,.34,length(w.yz))*amplitude;col=mix(col,vec3(.70,.82,.80),whitecap*.3);
  float mist=1.-exp(-distanceToEye*.00018);col=mix(col,horizon,mist);col=mix(col,vec3(.022,.15,.19)+reflectedSky*.15,under*.72);gl_FragColor=vec4(col,1.);\n#include <tonemapping_fragment>\n#include <colorspace_fragment>\n}`});
  const water=new T.Mesh(O.waterGeometry(T),material);water.name='Y14_PhaseMatched_Water';water.frustumCulled=false;scene.add(water);
- const target=new T.WebGLRenderTarget(software?256:512,software?256:512,{depthBuffer:true});target.texture.colorSpace=T.LinearSRGBColorSpace;U.reflection.value=target.texture;
+ const target=new T.WebGLRenderTarget(software?384:768,software?384:768,{depthBuffer:true});target.texture.colorSpace=T.LinearSRGBColorSpace;U.reflection.value=target.texture;
  const mirrorCamera=new T.PerspectiveCamera(),plane=new T.Plane(V(0,1,0),-.015),normal=V(0,1,0),dir=V(),up=V(),eye=V(),look=V();let reflectionCalls=0,renderCalls=0,lastReflectionFrame=-999;const matrix=new T.Matrix4();
  function reflect(camera,frame,exclude=[],quality='auto'){
   renderCalls++;if(camera.position.y<.3||quality==='smooth'){U.reflectionOn.value=0;return;}
