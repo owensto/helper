@@ -1,10 +1,10 @@
-name: ATLAS Beaufort Lightweight Realism static preview
+name: ATLAS Beaufort Mobile Driving static preview
 on:
   workflow_dispatch:
   push:
     branches: ['atlas/beaufort-cruise-20261018']
     paths:
-      - 'atlas_beaufort_cruise/source/realism5/**'
+      - 'atlas_beaufort_cruise/source/mobile6/**'
       - '.github/workflows/atlas-beaufort-cruise.yml'
 permissions:
   contents: read
@@ -24,8 +24,13 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/checkout@v4
         with:
+          ref: 6339a15b22232e2c830203c25a547c7a168c8e24
+          path: _mobile_base
+          persist-credentials: false
+      - uses: actions/checkout@v4
+        with:
           ref: 2c2e75a441b5660d40eb5327b3a72f92acbd4ef2
-          path: _realism_base
+          path: _wildlife_base
           persist-credentials: false
       - uses: actions/setup-python@v5
         with:
@@ -33,70 +38,65 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - name: Build exact candidate and execute CPU, geometry and native-runtime checks
+      - name: Build pinned mobile correction and run CPU regressions only
         run: |
-          python atlas_beaufort_cruise/source/realism5/build.py --base _realism_base/atlas_beaufort_cruise/site --out /tmp/bc-realism5
-          python atlas_beaufort_cruise/source/realism5/check.py --site /tmp/bc-realism5 --base _realism_base/atlas_beaufort_cruise/site --base-source _realism_base/atlas_beaufort_cruise/source --easy atlas_easy_helm --out atlas_beaufort_cruise/source/realism5/checks
-          node atlas_beaufort_cruise/source/realism5/benchmark.cjs /tmp/bc-realism5 _realism_base/atlas_beaufort_cruise/site > atlas_beaufort_cruise/source/realism5/checks/benchmark.json
-      - name: Preserve test scope and prepare complete lightweight static candidate
+          python atlas_beaufort_cruise/source/mobile6/build.py --base _mobile_base/atlas_beaufort_cruise/site --out /tmp/bc-mobile6
+          python atlas_beaufort_cruise/source/mobile6/check.py --site /tmp/bc-mobile6 --base _mobile_base/atlas_beaufort_cruise --prior _wildlife_base/atlas_beaufort_cruise --easy atlas_easy_helm --out atlas_beaufort_cruise/source/mobile6/checks
+      - name: Gate tested source and retain explicit device acceptance status
         run: |
           python - <<'PY'
           from pathlib import Path
           import json,hashlib,shutil,os
-          r=Path('atlas_beaufort_cruise');src=r/'source/realism5';site=r/'site';compiled=Path('/tmp/bc-realism5')
-          d=json.loads((src/'checks/verification.json').read_text());bench=json.loads((src/'checks/benchmark.json').read_text())
-          assert d['passed'] and d['cpuChecks']==107 and len(d['powerTrials'])==4
-          assert bench['passed'] and all(v['sameResult'] for v in bench['results'].values())
-          assert d['browserVerified'] is False and d['GPUVerified'] is False and d['FPSVerified'] is False
-          assert len(d['build']['changed'])==10 and d['build']['unchanged']==285
-          assert d['build']['newTextures']==0 and d['build']['newDrawCalls']==0 and d['build']['forceCoefficientsChanged'] is False
-          assert d['addedSiteBytes']<30000
+          r=Path('atlas_beaufort_cruise');src=r/'source/mobile6';compiled=Path('/tmp/bc-mobile6')
+          d=json.loads((src/'checks/verification.json').read_text())
+          assert d['passed'] and d['cpuChecks']==136 and len(d['powerTrials'])==4
+          assert not d['browserVerified'] and not d['GPUVerified'] and not d['FPSVerified']
+          assert not d['build']['newPhysicsCoefficients'] and d['build']['mobileMaxCatchupSteps']==12
+          assert d['addedSiteBytes']<25000
           assert not any(p.suffix.lower() in ['.ttf','.otf','.woff','.woff2'] for p in compiled.rglob('*'))
-          shutil.copytree(compiled,site,dirs_exist_ok=True)
-          shutil.copy2(src/'README.md',r/'LIGHTWEIGHT_REALISM_5.md')
-          # Fixture copies are reproducible from pinned previous source and are not product assets.
-          shutil.rmtree(src/'checks/fixtures')
-          files={str(p.relative_to(site)):hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(site.rglob('*')) if p.is_file()}
-          assert len(files)==299
-          record={'version':'Dolphins & Lightweight Realism 5','status':'PUBLIC_REVIEW_CANDIDATE','source_commit':os.environ['GITHUB_SHA'],'build_run':os.environ['GITHUB_RUN_ID'],'cpu_checks_passed':107,'modeled_power_trials':4,'added_site_bytes':d['addedSiteBytes'],'new_models':0,'new_textures':0,'new_render_passes':0,'browserVerified':False,'GPUVerified':False,'actualMusicPlaybackVerified':False,'physicalDeviceVerified':False,'CDNVerified':False,'frameRateVerified':False,'files':files}
-          (r/'BUILD5.json').write_text(json.dumps(record,indent=2)+'\n')
+          shutil.copytree(compiled,r/'site',dirs_exist_ok=True)
+          shutil.copy2(src/'README.md',r/'MOBILE_DRIVING_6.md')
+          shutil.rmtree(src/'checks/retained/fixtures')
+          files={str(p.relative_to(compiled)):hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(compiled.rglob('*')) if p.is_file()}
+          record={'version':'Mobile Driving 6','status':'STATIC_REVIEW_CANDIDATE','source_commit':os.environ['GITHUB_SHA'],'build_run':os.environ['GITHUB_RUN_ID'],'cpu_checks_passed':136,'browserVerified':False,'physicalDeviceVerified':False,'GPUVerified':False,'frameRateVerified':False,'CDNVerified':False,'actualMusicPlaybackVerified':False,'files':files}
+          (r/'BUILD6.json').write_text(json.dumps(record,indent=2)+'\n')
           PY
-      - name: Commit candidate only to the existing isolated branch
+      - name: Commit complete candidate on the existing isolated branch only
         id: publication
         run: |
           git config user.name 'ATLAS preview build'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add -f atlas_beaufort_cruise/site atlas_beaufort_cruise/LIGHTWEIGHT_REALISM_5.md atlas_beaufort_cruise/BUILD5.json atlas_beaufort_cruise/source/realism5/checks
+          git add -f atlas_beaufort_cruise/site atlas_beaufort_cruise/MOBILE_DRIVING_6.md atlas_beaufort_cruise/BUILD6.json atlas_beaufort_cruise/source/mobile6/checks
           test -z "$(git diff --cached --name-only | grep -v '^atlas_beaufort_cruise/' || true)"
-          git diff --cached --quiet || git commit -m 'Publish Beaufort Realism5: find dolphins, analytic wave response and lighter effects [skip ci]'
+          git diff --cached --quiet || git commit -m 'Publish Beaufort Mobile6: relative two-thumb control, camera translation and bounded frame catch-up [skip ci]'
           git push origin HEAD:refs/heads/atlas/beaufort-cruise-20261018
           echo "commit=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
-      - name: Record exact preview and package complete static site with honest acceptance status
+      - name: Record exact preview and package full site without a browser claim
         env:
           PUBLIC_COMMIT: ${{ steps.publication.outputs.commit }}
         run: |
           python - <<'PY'
           from pathlib import Path
           import json,os,shutil
-          r=Path('atlas_beaufort_cruise');out=Path('/tmp/atlas-realism5-delivery');out.mkdir()
+          r=Path('atlas_beaufort_cruise');out=Path('/tmp/atlas-mobile6-delivery');out.mkdir()
           sha=os.environ['PUBLIC_COMMIT'];url=f'https://rawcdn.githack.com/owensto/helper/{sha}/atlas_beaufort_cruise/site/index.html'
-          d={'version':'Dolphins & Lightweight Realism 5','url':url,'published_commit':sha,'status':'STATIC_PREVIEW_COMMITTED','source_commit':os.environ['GITHUB_SHA'],'build_run':os.environ['GITHUB_RUN_ID'],'cpu_checks_passed':107,'browserVerified':False,'CDNVerified':False,'GPUVerified':False,'physicalDeviceVerified':False,'frameRateVerified':False,'photorealismVerified':False,'note':'Complete static site committed after native CPU/math/geography and synthetic-interface tests. No browser/public-response/GPU/touch/playback or actual FPS verification. Dolphin camera projection is not rendered visibility proof.'}
-          for name in ['DELIVERY.json','DELIVERY5.json']:(r/name).write_text(json.dumps(d,indent=2)+'\n')
-          for name in ['BUILD5.json','DELIVERY5.json','LIGHTWEIGHT_REALISM_5.md']:shutil.copy2(r/name,out/name)
-          for name in ['verification.json','benchmark.json']:shutil.copy2(r/'source/realism5/checks'/name,out/name)
-          pkg=out/'Atlas_Beaufort_Realism_5';shutil.copytree(r/'site',pkg/'site');shutil.copytree(r/'source',pkg/'source',ignore=shutil.ignore_patterns('__pycache__'))
-          shutil.copy2(r/'LIGHTWEIGHT_REALISM_5.md',pkg/'README.md');shutil.copy2(r/'DELIVERY5.json',pkg/'PLAY_ONLINE.json')
+          d={'version':'Mobile Driving 6','url':url,'published_commit':sha,'source_commit':os.environ['GITHUB_SHA'],'build_run':os.environ['GITHUB_RUN_ID'],'status':'STATIC_PREVIEW_COMMITTED','cpu_checks_passed':136,'browserVerified':False,'physicalDeviceVerified':False,'GPUVerified':False,'frameRateVerified':False,'CDNVerified':False,'actualMusicPlaybackVerified':False,'note':'Code/control tests passed. No rendered or physical-phone driving/FPS verification; long-frame pause is a safeguard, not proof all hitches are eliminated.'}
+          for name in ['DELIVERY.json','DELIVERY6.json']:(r/name).write_text(json.dumps(d,indent=2)+'\n')
+          for name in ['BUILD6.json','DELIVERY6.json','MOBILE_DRIVING_6.md']:shutil.copy2(r/name,out/name)
+          shutil.copy2(r/'source/mobile6/checks/verification.json',out/'verification.json')
+          pkg=out/'Atlas_Beaufort_Mobile_6';shutil.copytree(r/'site',pkg/'site');shutil.copytree(r/'source',pkg/'source',ignore=shutil.ignore_patterns('__pycache__'))
+          shutil.copy2(r/'MOBILE_DRIVING_6.md',pkg/'README.md');shutil.copy2(r/'DELIVERY6.json',pkg/'PLAY_ONLINE.json')
           assert not any(p.suffix.lower() in ['.ttf','.otf','.woff','.woff2'] for p in pkg.rglob('*'))
-          shutil.make_archive(str(out/'Atlas_Beaufort_Realism_5'),'zip',root_dir=pkg);shutil.rmtree(pkg)
+          shutil.make_archive(str(out/'Atlas_Beaufort_Mobile_6'),'zip',root_dir=pkg);shutil.rmtree(pkg)
           PY
-          git add atlas_beaufort_cruise/DELIVERY.json atlas_beaufort_cruise/DELIVERY5.json
-          git diff --cached --quiet || git commit -m 'Record Realism5 preview link and unverified device/graphics scope [skip ci]'
+          git add atlas_beaufort_cruise/DELIVERY.json atlas_beaufort_cruise/DELIVERY6.json
+          git diff --cached --quiet || git commit -m 'Record Mobile6 preview link and open physical-device acceptance [skip ci]'
           git push origin HEAD:refs/heads/atlas/beaufort-cruise-20261018
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: ATLAS-Beaufort-Realism5
+          name: ATLAS-Beaufort-Mobile6
           path: |
-            /tmp/atlas-realism5-delivery/
-            atlas_beaufort_cruise/source/realism5/checks/
+            /tmp/atlas-mobile6-delivery/
+            atlas_beaufort_cruise/source/mobile6/checks/
           retention-days: 30
