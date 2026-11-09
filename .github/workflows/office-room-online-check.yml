@@ -8,31 +8,57 @@ permissions:
 jobs:
   check:
     runs-on: ubuntu-22.04
-    timeout-minutes: 5
+    timeout-minutes: 6
     steps:
       - run: python -m pip install -q playwright==1.55.0
-      - name: Inspect live rendering
+      - name: Test the normal hosted-page entry and room controls
         run: |
           mkdir -p review
           python - <<'PY'
           from playwright.sync_api import sync_playwright
           import json,shutil
           url='https://rawcdn.githack.com/owensto/helper/821968d650542d4754caf725f96c1621b9bc7608/office_room_studio/site/index.html'
+          reports=[]
           with sync_playwright() as p:
               b=p.chromium.launch(executable_path=shutil.which('google-chrome'),headless=True,args=['--no-sandbox','--use-angle=swiftshader','--enable-unsafe-swiftshader'])
-              page=b.new_page(viewport={'width':1440,'height':960});errs=[];logs=[];net=[]
-              page.on('pageerror',lambda x:errs.append(str(x)))
-              page.on('console',lambda x:logs.append([x.type,x.text]))
-              page.on('response',lambda r:net.append([r.status,r.url,r.headers.get('content-type','')]))
-              page.on('requestfailed',lambda r:net.append(['failed',r.url,r.failure]))
-              try:
-                  page.goto(url,wait_until='load',timeout=60000)
-                  page.wait_for_timeout(12000)
-                  page.screenshot(path='review/live.png')
-                  result={'url':page.url,'errors':errs,'logs':logs,'network':net,'body':page.locator('body').inner_text()[:1800],'state':page.evaluate('window.ROOM_STUDIO ? ({ready:ROOM_STUDIO.ready,yachtLoaded:ROOM_STUDIO.yachtLoaded,error:ROOM_STUDIO.error}):null')}
-                  print(json.dumps(result,indent=2))
-                  open('review/diagnostics.json','w').write(json.dumps(result,indent=2))
-              finally:b.close()
+              for name,w,h,mobile in [('desktop',1440,960,False),('mobile',390,844,True)]:
+                  page=b.new_page(viewport={'width':w,'height':h},is_mobile=mobile,has_touch=mobile);errs=[];logs=[];net=[]
+                  page.on('pageerror',lambda x:errs.append(str(x)))
+                  page.on('console',lambda x:logs.append([x.type,x.text]))
+                  page.on('response',lambda r:net.append([r.status,r.url,r.headers.get('content-type','')]))
+                  page.on('requestfailed',lambda r:net.append(['failed',r.url,r.failure]))
+                  fail=None
+                  try:
+                      response=page.goto(url,wait_until='load',timeout=60000)
+                      assert response.status==200
+                      notice=page.get_by_text('Open the page',exact=True)
+                      if notice.count(): notice.click()
+                      page.wait_for_function('window.ROOM_STUDIO?.ready && window.ROOM_STUDIO.yachtLoaded',timeout=60000)
+                      page.locator('#viewPlan').click();page.locator('#viewOrbit').click()
+                      page.evaluate("ROOM_STUDIO.setMat('zebra2')")
+                      assert page.evaluate('ROOM_STUDIO.state.mat')=='zebra2'
+                      page.evaluate("ROOM_STUDIO.setMat('gold20')")
+                      page.evaluate('ROOM_STUDIO.setRoom({w:150})')
+                      page.wait_for_timeout(400)
+                      page.reload(wait_until='load')
+                      page.wait_for_function('window.ROOM_STUDIO?.ready && window.ROOM_STUDIO.yachtLoaded',timeout=60000)
+                      assert page.evaluate('ROOM_STUDIO.state.room.w')==150
+                      if mobile:
+                          page.locator('#mobileMenu').click();page.locator('[data-tab=room]').click()
+                          assert page.locator('#roomW').is_visible()
+                          page.locator('#mobileMenu').click()
+                          assert page.locator('#moveMode').is_visible()
+                      assert not errs,errs
+                  except Exception as e:fail=str(e)
+                  finally:
+                      page.screenshot(path=f'review/{name}.png')
+                      result={'viewport':name,'url':page.url,'failure':fail,'errors':errs,'logs':logs,'network':net,'body':page.locator('body').inner_text()[:1000],'state':page.evaluate('window.ROOM_STUDIO ? ({ready:ROOM_STUDIO.ready,yachtLoaded:ROOM_STUDIO.yachtLoaded,error:ROOM_STUDIO.error}):null')}
+                      print(json.dumps(result,indent=2));reports.append(result)
+                      open('review/diagnostics.json','w').write(json.dumps(reports,indent=2))
+                      page.close()
+                  if fail:break
+              b.close()
+          assert len(reports)==2 and all(not r['failure'] for r in reports),reports[-1]['failure']
           PY
       - uses: actions/upload-artifact@v4
         if: always()
