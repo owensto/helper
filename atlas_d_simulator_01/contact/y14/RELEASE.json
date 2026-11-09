@@ -1,0 +1,25 @@
+{
+  "status": "Public four-craft desktop/portrait/landscape navigation and exact assets verified",
+  "sourceCommit": "4ccb40bb6902478199052d6e8cba821e128b1825",
+  "publishedCommit": "21bf720fa3fe2ff178b95baf29d3645a48ed93cc",
+  "url": "https://rawcdn.githack.com/owensto/helper/21bf720fa3fe2ff178b95baf29d3645a48ed93cc/atlas_d_simulator_01/contact/y14/index.html",
+  "reportURL": "https://rawcdn.githack.com/owensto/helper/21bf720fa3fe2ff178b95baf29d3645a48ed93cc/atlas_d_simulator_01/contact/y14/report.html",
+  "vessels": [
+    "ATLAS-D",
+    "ATLAS-N",
+    "SUMARS",
+    "ATLAS-W"
+  ],
+  "oneActiveVessel": true,
+  "focusedTests": 48,
+  "localDiveCycles": [
+    "ATLAS-D",
+    "ATLAS-N",
+    "SUMARS"
+  ],
+  "publicBrowserVerified": true,
+  "seaTrialValidated": false,
+  "multiplayer": false,
+  "sharedHostMerged": false,
+  "physicalDeviceTested": false
+}
