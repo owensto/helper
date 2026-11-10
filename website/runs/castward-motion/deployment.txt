@@ -1,0 +1,27 @@
+<claude-code-hint v="1" type="plugin" value="vercel@claude-plugins-official" />
+Fetching deployment "castward.app" in owens-projects-f5c36e9a
+> Fetched deployment "castward-8gihfdemq-owens-projects-f5c36e9a.vercel.app" in owens-projects-f5c36e9a [241ms]
+
+  General
+
+    id		dpl_BsBnxWT7EmYKJxNcC7RfKHveTEJr
+    name	castward
+    target	production
+    status	● Ready
+    url		https://castward-8gihfdemq-owens-projects-f5c36e9a.vercel.app
+    created	Tue Nov 10 2026 15:45:55 GMT-0600 (Central Standard Time) [34s ago]
+
+
+  Aliases
+
+    ╶ https://castward.app
+    ╶ https://www.castward.app
+    ╶ https://castward-seven.vercel.app
+    ╶ https://castward-owens-projects-f5c36e9a.vercel.app
+    
+
+  Builds
+
+    ╶ .        [0ms]
+    
+

@@ -1,0 +1,16 @@
+
+> fishing-atlas@0.4.0 audit
+> python3 tests/static_test.py && python3 tests/release_test.py
+
+1613 static routes pass: H1s, descriptions and internal links
+{
+  "passed": true,
+  "structuralAssertions": 814,
+  "routes": 1613,
+  "redirectRoutes": 519,
+  "nonRedirectPages": 1094,
+  "tripProfiles": 796,
+  "productionSitemapURLsInNonpublicTest": 97,
+  "sourceVerifiedTripPagesEligibleForSearch": 36,
+  "limitation": "Structural correctness is not an independent fishing-expertise review. .invalid origin is only a test, never deployed."
+}

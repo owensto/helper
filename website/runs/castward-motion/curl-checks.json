@@ -1,0 +1,65 @@
+[
+  {
+    "route": "/",
+    "status": "200",
+    "canonical": true,
+    "motion": true,
+    "generatedScene": true
+  },
+  {
+    "route": "/trips/",
+    "status": "200",
+    "canonical": true,
+    "motion": true,
+    "generatedScene": true
+  },
+  {
+    "route": "/videos/",
+    "status": "200",
+    "canonical": true,
+    "motion": true,
+    "generatedScene": true
+  },
+  {
+    "route": "/plan/",
+    "status": "200",
+    "canonical": true,
+    "motion": true,
+    "generatedScene": true
+  },
+  {
+    "route": "/about/",
+    "status": "200",
+    "canonical": true,
+    "motion": true,
+    "generatedScene": true
+  },
+  {
+    "route": "/north-america/united-states/texas/lake-fork-lake-and-reservoir-bass/",
+    "status": "200",
+    "canonical": true,
+    "motion": true,
+    "generatedScene": true
+  },
+  {
+    "route": "/sitemap.xml",
+    "status": "200",
+    "canonical": false,
+    "motion": false,
+    "generatedScene": false
+  },
+  {
+    "route": "/robots.txt",
+    "status": "200",
+    "canonical": false,
+    "motion": false,
+    "generatedScene": false
+  },
+  {
+    "route": "/not-a-real-castward-page/",
+    "status": "404",
+    "canonical": true,
+    "motion": true,
+    "generatedScene": true
+  }
+]

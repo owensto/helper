@@ -1,0 +1,22 @@
+{
+  "base": "https://castward.app",
+  "checks": [
+    {
+      "width": 1440,
+      "triggers": 9,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "triggers": 0,
+      "overflow": false
+    },
+    {
+      "filmCount": "06 / 13",
+      "playing": 1
+    }
+  ],
+  "errors": [],
+  "reducedMotion": true,
+  "menuInert": true
+}

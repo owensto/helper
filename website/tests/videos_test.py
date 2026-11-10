@@ -9,7 +9,7 @@ class Media(HTMLParser):
         super().__init__();self.videos=[];self.sources=[];self.feed(text)
     def handle_starttag(self,tag,attrs):
         if tag=='video':self.videos.append(dict(attrs))
-        if tag=='source':self.sources.append(dict(attrs))
+        if tag=='source' and dict(attrs).get('type')=='video/mp4':self.sources.append(dict(attrs))
 class VideoTests(unittest.TestCase):
     def test_catalog_and_rendered_surfaces(self):
         catalog=json.loads((ROOT/'src/videos.json').read_text())
