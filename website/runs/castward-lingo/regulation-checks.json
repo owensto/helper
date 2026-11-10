@@ -1,0 +1,218 @@
+[
+  {
+    "url": "https://dam.assets.ohio.gov/image/upload/ohiodnr.gov/documents/wildlife/laws-regs-licenses/OhioFishingRegs_English",
+    "status": 200,
+    "final": "https://dam.assets.ohio.gov/image/upload/ohiodnr.gov/documents/wildlife/laws-regs-licenses/OhioFishingRegs_English",
+    "suspect": false
+  },
+  {
+    "url": "https://dec.ny.gov/things-to-do/freshwater-fishing/regulations",
+    "status": 200,
+    "final": "https://dec.ny.gov/things-to-do/freshwater-fishing/regulations",
+    "suspect": false
+  },
+  {
+    "url": "https://dec.ny.gov/things-to-do/saltwater-fishing/recreational-fishing-regulations",
+    "status": 200,
+    "final": "https://dec.ny.gov/things-to-do/saltwater-fishing/recreational-fishing-regulations",
+    "suspect": false
+  },
+  {
+    "url": "https://dep.nj.gov/njfw/fishing/marine/seasons-and-regulations/",
+    "status": 200,
+    "final": "https://dep.nj.gov/njfw/fishing/marine/seasons-and-regulations/",
+    "suspect": false
+  },
+  {
+    "url": "https://dlnr.hawaii.gov/dar/fishing/fishing-regulations/",
+    "status": 200,
+    "final": "https://dlnr.hawaii.gov/dar/fishing/fishing-regulations/",
+    "suspect": false
+  },
+  {
+    "url": "https://dnr.maryland.gov/fisheries/Pages/sb_reg_maps.aspx",
+    "status": 200,
+    "final": "https://dnr.maryland.gov/fisheries/Pages/sb_reg_maps.aspx",
+    "suspect": false
+  },
+  {
+    "url": "https://fwp.mt.gov/fish/regulations",
+    "status": 200,
+    "final": "https://fwp.mt.gov/fish/regulations",
+    "suspect": false
+  },
+  {
+    "url": "https://incopesca.go.cr/tramites_servicios/index.aspx",
+    "status": 200,
+    "final": "https://incopesca.go.cr/tramites_servicios/index.aspx",
+    "suspect": false
+  },
+  {
+    "url": "https://legalinfo.mn/mn/detail?lawId=202818",
+    "status": 200,
+    "final": "https://legalinfo.mn/mn/detail?lawId=202818",
+    "suspect": false
+  },
+  {
+    "url": "https://myfwc.com/fishing/freshwater/regulations/",
+    "status": 200,
+    "final": "https://myfwc.com/fishing/freshwater/regulations/",
+    "suspect": false
+  },
+  {
+    "url": "https://myfwc.com/fishing/saltwater/recreational/",
+    "status": 200,
+    "final": "https://myfwc.com/fishing/saltwater/recreational/",
+    "suspect": false
+  },
+  {
+    "url": "https://myodfw.com/fishing/columbia-zone",
+    "status": 200,
+    "final": "https://myodfw.com/fishing/columbia-zone",
+    "suspect": false
+  },
+  {
+    "url": "https://nt.gov.au/marine/recreational-fishing",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://pyramidlakefisheries.org/fishing/",
+    "status": 200,
+    "final": "https://pyramidlakefisheries.org/fishing/",
+    "suspect": false
+  },
+  {
+    "url": "https://tpwd.texas.gov/regulations/outdoor-annual/fishing/",
+    "status": 200,
+    "final": "https://tpwd.texas.gov/regulations/outdoor-annual/fishing/",
+    "suspect": false
+  },
+  {
+    "url": "https://wildlife.ca.gov/Fishing/Ocean",
+    "status": 200,
+    "final": "https://wildlife.ca.gov/Fishing/Ocean",
+    "suspect": false
+  },
+  {
+    "url": "https://www.adfg.alaska.gov/index.cfm?adfg=fishregulations.sport",
+    "status": 200,
+    "final": "https://www.adfg.alaska.gov/index.cfm?adfg=fishregulations.sport",
+    "suspect": false
+  },
+  {
+    "url": "https://www.bahamas.com/plan-your-trip/fishing/fishing-faq",
+    "status": 200,
+    "final": "https://www.bahamas.com/plan-your-trip/fishing/fishing-faq",
+    "suspect": false
+  },
+  {
+    "url": "https://www.deq.nc.gov/about/divisions/marine-fisheries/rules-proclamations-and-size-and-bag-limits/recreational-size-and-bag-limits",
+    "status": 200,
+    "final": "https://www.deq.nc.gov/about/divisions/marine-fisheries/rules-proclamations-and-size-and-bag-limits/recreational-size-and-bag-limits",
+    "suspect": false
+  },
+  {
+    "url": "https://www.dnr.sc.gov/regulations.html",
+    "status": 200,
+    "final": "https://www.dnr.sc.gov/regulations.html",
+    "suspect": false
+  },
+  {
+    "url": "https://www.dnr.state.mn.us/regulations/fishing/index.html",
+    "status": 200,
+    "final": "https://www.dnr.state.mn.us/regulations/fishing/index.html",
+    "suspect": false
+  },
+  {
+    "url": "https://www.dpyrcorrientes.gob.ar/",
+    "status": 200,
+    "final": "https://www.dpyrcorrientes.gob.ar/",
+    "suspect": false
+  },
+  {
+    "url": "https://www.fisheries.noaa.gov/southeast/rules-regulations/fishing-regulations-and-seasonal-closures-gulf-america",
+    "status": 200,
+    "final": "https://www.fisheries.noaa.gov/southeast/rules-regulations/fishing-regulations-and-seasonal-closures-gulf-america",
+    "suspect": false
+  },
+  {
+    "url": "https://www.gbrmpa.gov.au/access/zoning/recreational-fishing-activities",
+    "error": "The read operation timed out"
+  },
+  {
+    "url": "https://www.glf.dfo-mpo.gc.ca/en/node/20606",
+    "status": 200,
+    "final": "https://www.glf.dfo-mpo.gc.ca/en/node/20606",
+    "suspect": false
+  },
+  {
+    "url": "https://www.gob.mx/conapesca/documentos/conapesca-01-016-pesca-deportivo-recreativa?state=published",
+    "status": 200,
+    "final": "https://www.gob.mx/conapesca/documentos/conapesca-01-016-pesca-deportivo-recreativa?state=published",
+    "suspect": false
+  },
+  {
+    "url": "https://www.gov.mb.ca/elicensing/publications.html",
+    "status": 200,
+    "final": "https://www.gov.mb.ca/elicensing/publications.html",
+    "suspect": false
+  },
+  {
+    "url": "https://www.ipaam.am.gov.br/pesca-esportiva/",
+    "status": 200,
+    "final": "https://www.ipaam.am.gov.br/pesca-esportiva/",
+    "suspect": false
+  },
+  {
+    "url": "https://www.mdwfp.com/enforcement-education/general-fishing-rules-regulations",
+    "status": 200,
+    "final": "https://www.mdwfp.com/enforcement-education/general-fishing-rules-regulations",
+    "suspect": false
+  },
+  {
+    "url": "https://www.michigan.gov/dnr/things-to-do/fishing/fishing-regulations",
+    "status": 200,
+    "final": "https://www.michigan.gov/dnr/things-to-do/fishing/fishing-regulations",
+    "suspect": false
+  },
+  {
+    "url": "https://www.ncwildlife.gov/fish/trout-fishing-north-carolina",
+    "status": 200,
+    "final": "https://www.ncwildlife.gov/fish/trout-fishing-north-carolina",
+    "suspect": false
+  },
+  {
+    "url": "https://www.ontario.ca/document/ontario-fishing-regulations-summary",
+    "status": 200,
+    "final": "https://www.ontario.ca/document/ontario-fishing-regulations-summary",
+    "suspect": false
+  },
+  {
+    "url": "https://www.outdooralabama.com/alabama-saltwater-season-closures-notices-and-updates",
+    "status": 200,
+    "final": "https://www.outdooralabama.com/alabama-saltwater-season-closures-notices-and-updates",
+    "suspect": false
+  },
+  {
+    "url": "https://www.pa.gov/agencies/fishandboat/fishing/regulations",
+    "status": 200,
+    "final": "https://www.pa.gov/agencies/fishandboat/fishing/regulations",
+    "suspect": false
+  },
+  {
+    "url": "https://www.qld.gov.au/recreation/activities/boating-fishing/rec-fishing/rules",
+    "status": 200,
+    "final": "https://www.qld.gov.au/recreation/activities/boating-fishing/rec-fishing/rules",
+    "suspect": false
+  },
+  {
+    "url": "https://www.wlf.louisiana.gov/page/recreational-fishing",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://www2.gov.bc.ca/gov/content/environment/plants-animals-ecosystems/fish/fish-management/fraser-sturgeon-plan",
+    "status": 200,
+    "final": "https://www2.gov.bc.ca/gov/content/environment/plants-animals-ecosystems/fish/fish-management/fraser-sturgeon-plan",
+    "suspect": false
+  }
+]

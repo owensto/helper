@@ -9,7 +9,7 @@ def ok(v,label):
  assert v,label
  checks.append(label)
 plan=[t for t in T if t.get('planId')]
-ok(len(T)==796,'796 unique merged trip profiles')
+ok(len(T)==798,'796 retained profiles plus two source-checked local-lingo gaps')
 ok(len({t['id'] for t in T})==len(T),'Unique IDs after Great Bear Lake merge')
 ok(len({t['canonicalPath'] for t in T})==len(T),'Unique canonical trip routes')
 ok(len(plan)==507,'All 507 actual plan entries imported exactly once')
@@ -27,7 +27,7 @@ for t in T:
   assert t['review']['checked'] is None and not t['indexEligible'],t['id']
  if t['indexEligible']:assert t['sourceIds'] and t['evidence'] and t['contentTier']=='detailed-guide',t['id']
 ok(True,'All 479 unverified frameworks keep candidate species, evidence and months unconfirmed')
-ok(True,'All 796 trips have exactly four scoped gear decisions and valid reference links')
+ok(True,'All 798 trips have exactly four scoped gear decisions and valid reference links')
 ok(True,'Every index-eligible trip has attributed evidence and a source-checked tier')
 for p,m in M.items():
  if m.get('redirectTo'):
@@ -35,7 +35,7 @@ for p,m in M.items():
   assert m['noindex'],p
 ok(True,'Every legacy redirect resolves directly to a live generated route, with no chains')
 ok(len([p for p in M if p.startswith('/production/')])==7,'Production hub plus six continent workbenches')
-for name,num in [('north-america',550),('south-america',31),('europe',102),('africa',34),('asia',44),('oceania',35)]:
+for name,num in [('north-america',551),('south-america',31),('europe',102),('africa',34),('asia',44),('oceania',36)]:
  q=json.loads((R/'research/continent-queues'/f'{name}.json').read_text())
  assert len(q['records'])==num==q['count']
  assert all(x['localDecision'] and x['tackleDecision'] and x['distributionAngle'] for x in q['records'])
@@ -63,6 +63,6 @@ finally:
  subprocess.run(['python3','scripts/build.py'],cwd=R,env=clean,check=True,capture_output=True)
 ok(not (R/'dist/sitemap.xml').exists(),'Final artifact restored to preview mode with no fake production origin')
 ok((R/'dist/assets/boot.js').stat().st_size <150000,'Non-planner dataset below 150KB instead of loading the full gear catalog')
-report={'passed':True,'structuralAssertions':len(checks),'routes':len(M),'redirectRoutes':sum(bool(x.get('redirectTo')) for x in M.values()),'nonRedirectPages':sum(not x.get('redirectTo') for x in M.values()),'tripProfiles':796,'productionSitemapURLsInNonpublicTest':production_count,'sourceVerifiedTripPagesEligibleForSearch':sum(t['indexEligible'] for t in T),'checks':checks[:9]+checks[-10:],'limitation':'Structural correctness is not an independent fishing-expertise review. .invalid origin is only a test, never deployed.'}
+report={'passed':True,'structuralAssertions':len(checks),'routes':len(M),'redirectRoutes':sum(bool(x.get('redirectTo')) for x in M.values()),'nonRedirectPages':sum(not x.get('redirectTo') for x in M.values()),'tripProfiles':len(T),'productionSitemapURLsInNonpublicTest':production_count,'sourceVerifiedTripPagesEligibleForSearch':sum(t['indexEligible'] for t in T),'checks':checks[:9]+checks[-10:],'limitation':'Structural correctness is not an independent fishing-expertise review. .invalid origin is only a test, never deployed.'}
 (R/'tests/continental-release-results.json').write_text(json.dumps(report,indent=2))
 print(json.dumps({k:v for k,v in report.items() if k!='checks'},indent=2))

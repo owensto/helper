@@ -5,13 +5,15 @@
   function normalize(input,data){
     const i=input&&typeof input==='object'?input:{};
     const destination=data.destinations.find(d=>d.id===i.destination)||data.destinations[0];
-    const style=destination.styles.includes(i.style)?i.style:destination.defaultStyle;
+    const type=(data.tripTypes||[]).find(t=>t.slug===i.tripType&&t.profileIds.includes(destination.id));
+    const tripType=type?.slug||'';
+    const style=type?type.plannerStyle:(destination.styles.includes(i.style)?i.style:destination.defaultStyle);
     let date=typeof i.date==='string'&&/^\d{4}-\d{2}-\d{2}$/.test(i.date)?i.date:'';
     if(date){const dt=new Date(date+'T12:00:00Z');if(!Number.isFinite(dt.getTime())||dt.toISOString().slice(0,10)!==date)date='';}
     const valid=new Set(data.gear.map(g=>g.id));const statuses={};const packed={};
     if(i.statuses&&typeof i.statuses==='object')for(const [k,v] of Object.entries(i.statuses))if(valid.has(k)&&['need','owned','provided'].includes(v))statuses[k]=v;
     if(i.packed&&typeof i.packed==='object')for(const [k,v] of Object.entries(i.packed))if(valid.has(k)&&v===true)packed[k]=true;
-    return {version:1,destination:destination.id,style,date,days:clamp(i.days,1,30,7),party:clamp(i.party,1,12,2),laundry:i.laundry===true,essentialOnly:i.essentialOnly===true,statuses,packed};
+    return {version:1,destination:destination.id,tripType,style,date,days:clamp(i.days,1,30,7),party:clamp(i.party,1,12,2),laundry:i.laundry===true,essentialOnly:i.essentialOnly===true,statuses,packed};
   }
   function requirements(plan,data){
     const p=normalize(plan,data);const month=p.date?Number(p.date.slice(5,7)):0;
@@ -25,7 +27,7 @@
       .filter(g=>!(dest.technicalGear&&['rod','terminal'].includes(g.id)))
       // Tropical flats use their guide-specific footwear decision, not default chest waders.
       .filter(g=>!(dest.tripProfile&&dest.climate==='warm'&&['waders','boots'].includes(g.id)))
-      .filter(g=>g.scope==='trip'?g.tripId===dest.tripProfile:(g.scope==='all'||g.scope==='cool'&&cool||g.scope==='warm'&&warm||g.scope==='wade'&&wade||g.scope==='boat'&&boat))
+      .filter(g=>g.scope==='tripType'?g.tripTypeId===p.tripType:g.scope==='trip'?g.tripId===dest.tripProfile&&!p.tripType:(g.scope==='all'||g.scope==='cool'&&cool||g.scope==='warm'&&warm||g.scope==='wade'&&wade||g.scope==='boat'&&boat))
       .map(g=>{
       let quantity=1;if(g.qty==='socks')quantity=p.laundry?Math.min(p.days+1,3):Math.min(p.days+1,8);if(g.qty==='layers')quantity=p.days<=2?1:p.laundry?2:Math.min(3,Math.ceil(p.days/3));
       return {...g,quantity,status:p.statuses[g.id]||'need',packed:p.packed[g.id]===true};

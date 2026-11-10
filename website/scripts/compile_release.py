@@ -125,6 +125,9 @@ if extra_path.exists():
    t['review']={'checked':'2026-09-13','status':'source-checked','fieldTested':False,'independentExpertReviewed':False}
    t['evidenceDepth']='Full source-page text inspected in this release; not independently expert-reviewed'
    t['indexEligible']=True;t['contentTier']='detailed-guide'
+# Local trip-type membership is independent from the destination's evidence status.
+from trip_types import compile_into as compile_trip_types
+compile_trip_types(world, out, ROOT)
 # Classify editorial regions before page rendering, so a single clean build has working filters.
 groups=json.loads((ROOT/'src/continent-regions.json').read_text())
 for t in out:

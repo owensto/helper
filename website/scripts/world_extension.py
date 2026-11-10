@@ -9,6 +9,7 @@ from urllib.parse import urlencode
 
 WORLD=json.loads((ROOT/'src/world.json').read_text())
 TRIPS=WORLD['trips']; HABITATS=WORLD['habitats']; SOURCES=WORLD['sources']
+TRIP_TYPES=WORLD.get('tripTypes',[])
 TBY={t['id']:t for t in TRIPS}; HBY={h['name']:h for h in HABITATS}
 REGIONS=['North America','South America','Europe','Africa','Asia','Oceania']
 DISPLAY_TRIPS=[]
@@ -29,13 +30,15 @@ DATA['styleLabels']={'bank':'Bank / shore','guidedwade':'Guided wading','skiff':
 for sid,s in SOURCES.items():
     DATA['sources']['world-'+sid]={'label':s['title'],'url':s['url']}
 access_map={'Bank':'bank','River float':'float','Charter boat':'charter','Guided boat':'guidedboat','Guided wading':'guidedwade','Skiff':'skiff','Hike-in':'hike','Guided ice':'ice'}
+from trip_types import planner_data as add_trip_type_presets
+add_trip_type_presets(DATA, TRIP_TYPES)
 for t in TRIPS:
     s=SOURCES[t['sourceIds'][0]] if t['sourceIds'] else {'title':'Open research and trip questions','url':'/production/north-america/'}
     # Research resources are not portrayed as booked/vetted operator inventory.
     DATA['destinations'].append({'id':t['id'],'name':t['title'].split(':')[0], 'region':t['country'], 'species':t['fish'],
       'styles':[access_map[x] for x in t['access']], 'defaultStyle':access_map[t['access'][0]],'climate':t['climate'],
       'tripProfile':t['id'],'technicalGear':True,'guideUrl':t.get('canonicalPath','/trips/'+t['id']+'/'), 'seasonNote':t['season'],
-      'seasonWindows':t.get('seasonWindows',[]),
+      'seasonWindows':t.get('seasonWindows',[]),'tripTypeIds':t.get('tripTypeIds',[]),
       'operator':{'name':s['title'],'type':'Research source' if t['sourceIds'] else 'Research pending','url':s['url'],'note':'A research resource, not a booked trip or Atlas operator partnership. Confirm all inclusions and availability independently.'}})
     for i,k in enumerate(t['kit']):
         DATA['gear'].append({'id':t['id']+'-kit-'+str(i+1),'name':k['name'],
@@ -49,6 +52,7 @@ for r in REGIONS:
     options+=f'<optgroup label="{E(r)}">'+''.join(f'<option value="{t["id"]}">{E(t["title"].split(":")[0])} · {E(t["country"])}</option>' for t in TRIPS if t['region']==r)+'</optgroup>'
 for p in pages.values():
     p['body']=re.sub(r'(<select\b[^>]*\bname="destination"[^>]*>).*?(</select>)',lambda m:m.group(1)+options+m.group(2),p['body'],flags=re.S)
+pages['/plan/']['body']=pages['/plan/']['body'].replace('<div class="form-field"><label for="plan-date">', '<div class="form-field"><label for="plan-trip-type">Local trip type</label><select id="plan-trip-type" name="tripType"><option value="">General destination plan</option></select></div><div class="form-field"><label for="plan-date">', 1)
 
 HEADER=f'<a class="skip" href="#main">Skip to content</a><header class="site-header"><div class="wrap header-inner">{BRAND}<nav class="nav" id="site-nav" aria-label="Main navigation"><a href="/trips/">Explore trips</a><a href="/countries/">Countries</a><a href="/environments/">Types of water</a><a href="/species/">Find your fish</a><a href="/research/">Research desk</a></nav><div class="header-action"><span class="edition">GLOBAL EDITION / 003</span><a class="btn small" href="/plan/">My fishing plan ↗</a><button class="mobile-menu" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="site-nav" data-action="menu">☰</button></div></div></header>'
 FOOTER=f'<footer class="site-footer"><div class="wrap"><div class="footer-top"><div>{BRAND}<p class="footer-desc">Different waters. Different seasons. Different ways to fish. Research first; buy what your actual trip needs.</p></div><div class="footer-links"><a href="/trips/">Explore trips</a><a href="/environments/">Environment guides</a><a href="/guides/">Preparation library</a><a href="/seasons/">Seasonal evidence</a><a href="/for-guides/">For operators</a><a href="/research/">Sources &amp; quality</a><a href="/about/">Release notes</a></div></div><div class="footer-bottom"><span>© 2026 Fishing Atlas · Working name · Edition 003</span><span>{len(TRIPS)} trip profiles · {len(COUNTRIES)} country / jurisdiction collections · Coverage is not exhaustive.</span><span>Map illustrations are decorative, not navigation charts.</span></div></div></footer><div id="toast" class="toast" role="status" aria-live="polite"></div>'
@@ -68,16 +72,18 @@ def evidence_block(evidence,technique=None):
 def review_line(count,trip=None):
     status='Detailed guide · source text inspected' if trip is None or trip.get('contentTier')=='detailed-guide' else 'Trip brief · '+trip.get('evidenceDepth','source-linked')
     if trip and trip.get('contentTier')=='preparation-brief': status='Preparation brief · local research pending'
-    return f'<div class="review-line"><span class="review-dot"></span><span>{E(status)} · {DATE}</span><span>{count} reference{"s" if count!=1 else ""}</span><span>Not independently expert-reviewed</span></div>' 
+    return f'<div class="review-line"><span class="review-dot"></span><span>{E(status)} · {E(trip.get("review",{}).get("checked") or DATE) if trip else DATE}</span><span>{count} reference{"s" if count!=1 else ""}</span><span>Not independently expert-reviewed</span></div>'
 
 def refs_block(ids):
     unique=list(dict.fromkeys(ids))
     if not unique: return '<section class="reference-foot"><h2>Research still to complete</h2><p>The source leads in the production queue have not been inspected for this location. This page is a preparation framework, not a sourced destination recommendation. Candidate species, access and dates need local verification.</p><a class="link" href="/production/north-america/">Open the research queue ↗</a></section>'
-    return '<section class="reference-foot"><h2>Sources &amp; review notes</h2><p>The linked sources support the attributed claims above. The setup and preparation sections are editorial decision guidance, not a personal field test. Local conditions, availability and exact equipment still require confirmation.</p>'+''.join(f'<div class="reference-row">{source_link(sid)}<span>{E(SOURCES[sid]["type"].replace("-"," "))} · {E(SOURCES[sid].get("status","text-inspected").replace("-"," "))} · {DATE}</span>'+ (f'<p>{E(SOURCES[sid]["scopeNote"])}</p>' if SOURCES[sid]['scopeNote'] else '')+'</div>' for sid in unique)+'<p class="small">Product searches are not exact-model endorsements. No current prices or stock are asserted. <a class="link" href="/research/">Inspect the research standard ↗</a></p></section>'
+    return '<section class="reference-foot"><h2>Sources &amp; review notes</h2><p>The linked sources support the attributed claims above. The setup and preparation sections are editorial decision guidance, not a personal field test. Local conditions, availability and exact equipment still require confirmation.</p>'+''.join(f'<div class="reference-row">{source_link(sid)}<span>{E(SOURCES[sid]["type"].replace("-"," "))} · {E(SOURCES[sid].get("status","text-inspected").replace("-"," "))} · {E(SOURCES[sid].get("checked",DATE))}</span>'+ (f'<p>{E(SOURCES[sid]["scopeNote"])}</p>' if SOURCES[sid]['scopeNote'] else '')+'</div>' for sid in unique)+'<p class="small">Product searches are not exact-model endorsements. No current prices or stock are asserted. <a class="link" href="/research/">Inspect the research standard ↗</a></p></section>'
 
 def trip_card(t):
     windows=','.join(str(m) for m in sorted({m for w in t.get('seasonWindows',[]) for m in w['months']}))
     attrs={'depth':t.get('contentTier','detailed-guide'),'region':t['region'],'country':t['country'],'water':t['water'],'habitat':'|'.join(t['habitats']),'method':'|'.join(t['methods']),'month':windows,'state':t.get('state',''),'subregion':t.get('subregion',''),'search':' '.join([t.get('candidateTargets',''),t.get('state',''),t.get('subregion',''),t['title'],t['place'],t['country'],t['region'],*t['fish'],*t['habitats'],*t['landscape'],*t['methods']])}
+    attrs['type']='|'.join(t.get('tripTypeIds',[]))
+    attrs['search']+=' '+' '.join(t.get('tripTypeNames',[]))
     attr=' '.join(f'data-{k}="{E(v,quote=True)}"' for k,v in attrs.items())
     tier={'detailed-guide':'Source-checked guide','trip-brief':'Source-linked brief','preparation-brief':'Preparation · research pending'}.get(t.get('contentTier'),'Trip profile')
     path=E(t.get('canonicalPath','/trips/'+t['id']+'/'),quote=True)
@@ -92,6 +98,7 @@ def filters():
     out='<div class="library-filter" data-library-filter><label class="filter-search"><span>Search place, species or trip</span><input id="trip-search" type="search" placeholder="Try glacier, permit, Japan or alpine" autocomplete="off"></label>'
     for key,label,values in fields:
         out+=f'<label><span>{label}</span><select id="filter-{key}" data-library-select="{key}"><option value="">All {label.lower()}s</option>'+''.join(f'<option value="{E(v,quote=True)}">{E(v)}</option>' for v in values)+'</select></label>'
+    out+='<label><span>Local trip type</span><select id="filter-type" data-library-select="type"><option value="">All trip types</option>'+''.join(f'<option value="{E(t["slug"],quote=True)}">{E(t["name"])}</option>' for t in sorted(TRIP_TYPES,key=lambda t:t['name']))+'</select></label>'
     out+='<label><span>Research depth</span><select id="filter-depth" data-library-select="depth"><option value="">All profiles</option><option value="detailed-guide">Detailed guides</option><option value="trip-brief">Source-linked briefs</option><option value="preparation-brief">Preparation briefs · research pending</option></select></label>'
     out+='<label><span>Documented seasonal window</span><select id="filter-month" data-library-select="month"><option value="">Any / not specified</option>'+''.join(f'<option value="{i}">{m}</option>' for i,m in enumerate(MONTHS,1))+'</select></label><button type="button" class="btn outline" data-action="clear-library">Clear filters</button></div>'
     return out+f'<div class="library-status"><p id="trip-count" role="status" aria-live="polite">{len(TRIPS)} trip profiles</p><a href="/seasons/">How seasonal filtering works ↗</a></div><p class="season-filter-note" id="season-filter-note" hidden>This filter finds only documented windows in this edition. Missing results do not mean fishing is unavailable. Partial months, operator-specific opportunities and historical guidance retain their qualifications in each guide.</p>'

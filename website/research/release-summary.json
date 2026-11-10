@@ -1,12 +1,12 @@
 {
   "edition": "004",
   "date": "2026-09-13",
-  "tripProfiles": 796,
+  "tripProfiles": 798,
   "plannedNorthAmerica": 507,
   "continentCoverage": {
     "North America": {
-      "profiles": 550,
-      "guides": 23,
+      "profiles": 551,
+      "guides": 24,
       "sourceBriefs": 48,
       "preparationBriefs": 479,
       "countries": 16
@@ -40,26 +40,26 @@
       "countries": 21
     },
     "Oceania": {
-      "profiles": 35,
-      "guides": 4,
+      "profiles": 36,
+      "guides": 5,
       "sourceBriefs": 31,
       "preparationBriefs": 0,
       "countries": 14
     }
   },
   "contentTiers": {
-    "detailed-guide": 38,
+    "detailed-guide": 40,
     "preparation-brief": 479,
     "trip-brief": 279
   },
   "states": 50,
   "canadianProvincesTerritories": 13,
   "mexicanStates": 15,
-  "sourceRecords": 217,
+  "sourceRecords": 223,
   "freshlyReviewedSourceRecords": 15,
   "freshlyReviewedGuides": 10,
   "redirects": 519,
-  "searchEligibleTrips": 36,
+  "searchEligibleTrips": 38,
   "deployment": "Not deployed; new Netlify site confirmation pending",
   "integrations": {
     "amazonTagConfigured": false,

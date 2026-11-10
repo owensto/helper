@@ -1949,6 +1949,18 @@
     "noindex": true,
     "redirectTo": null
   },
+  "/trips/kabinakagami-lake-fly-in/": {
+    "kind": "article",
+    "title": "Kabinakagami Lake fly-in fishing: White River access and a Kaby Lodge preparation plan | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/trips/cairns-heavy-tackle-marlin/": {
+    "kind": "article",
+    "title": "Cairns heavy-tackle black marlin: reef-edge access and a multi-day charter plan | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
   "/regions/north-america/": {
     "kind": "redirect",
     "title": "Continue to Castward",
@@ -9674,6 +9686,264 @@
   "/videos/": {
     "kind": "page",
     "title": "Fishing videos | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/trip-types/": {
+    "kind": "trip-types",
+    "title": "Local fishing trip types and regional names | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/trip-types/boca-grande-tarpon/": {
+    "kind": "trip-type",
+    "title": "Boca Grande tarpon: species, season and trip plan | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/trip-types/lake-erie-walleye-charter/": {
+    "kind": "trip-type",
+    "title": "Lake Erie walleye charter: species, season and trip plan | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/trip-types/texoma-stripers/": {
+    "kind": "trip-type",
+    "title": "Texoma stripers: species, season and trip plan | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/trip-types/gulf-red-snapper-season/": {
+    "kind": "trip-type",
+    "title": "Gulf red snapper season: species, season and trip plan | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/trip-types/chesapeake-rockfish/": {
+    "kind": "trip-type",
+    "title": "Chesapeake rockfish charter: species, season and trip plan | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/trip-types/miami-canal-peacock-bass/": {
+    "kind": "trip-type",
+    "title": "Miami canal peacock bass: species, season and trip plan | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/trip-types/ontario-fly-in-fishing/": {
+    "kind": "trip-type",
+    "title": "Ontario fly-in fishing: species, season and trip plan | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/trip-types/fraser-white-sturgeon/": {
+    "kind": "trip-type",
+    "title": "Fraser white sturgeon fishing: species, season and trip plan | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/trip-types/cabo-striped-marlin/": {
+    "kind": "trip-type",
+    "title": "Cabo striped marlin: species, season and trip plan | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/trip-types/keys-grand-slam/": {
+    "kind": "trip-type",
+    "title": "Florida Keys Grand Slam: species, season and trip plan | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/trip-types/louisiana-bull-reds/": {
+    "kind": "trip-type",
+    "title": "Louisiana bull reds: species, season and trip plan | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/trip-types/seward-halibut-salmon-combo/": {
+    "kind": "trip-type",
+    "title": "Seward halibut and salmon combo: species, season and trip plan | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/trip-types/kenai-silver-salmon/": {
+    "kind": "trip-type",
+    "title": "Kenai silver salmon: species, season and trip plan | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/trip-types/buoy-10-salmon/": {
+    "kind": "trip-type",
+    "title": "Buoy 10 salmon: species, season and trip plan | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/trip-types/san-diego-night-jig-bluefin/": {
+    "kind": "trip-type",
+    "title": "San Diego night-jig bluefin: species, season and trip plan | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/trip-types/grenada-slabs/": {
+    "kind": "trip-type",
+    "title": "Grenada slabs: species, season and trip plan | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/trip-types/lake-of-the-woods-sleeper-house/": {
+    "kind": "trip-type",
+    "title": "Lake of the Woods sleeper-house ice fishing: species, season and trip plan | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/trip-types/detroit-river-walleye-jigging/": {
+    "kind": "trip-type",
+    "title": "Detroit River walleye jigging: species, season and trip plan | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/trip-types/texas-slam/": {
+    "kind": "trip-type",
+    "title": "Texas Slam: species, season and trip plan | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/trip-types/lowcountry-inshore-grand-slam/": {
+    "kind": "trip-type",
+    "title": "Lowcountry Inshore Grand Slam: species, season and trip plan | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/trip-types/montauk-fall-run/": {
+    "kind": "trip-type",
+    "title": "Montauk fall run: species, season and trip plan | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/trip-types/new-jersey-tog-fishing/": {
+    "kind": "trip-type",
+    "title": "New Jersey tog fishing: species, season and trip plan | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/trip-types/okeechobee-wild-shiner-bass/": {
+    "kind": "trip-type",
+    "title": "Okeechobee wild-shiner bass fishing: species, season and trip plan | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/trip-types/pyramid-lake-ladder-fishing/": {
+    "kind": "trip-type",
+    "title": "Pyramid Lake ladder fishing: species, season and trip plan | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/trip-types/pei-giant-bluefin/": {
+    "kind": "trip-type",
+    "title": "Prince Edward Island giant bluefin: species, season and trip plan | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/trip-types/mag-bay-bait-balls/": {
+    "kind": "trip-type",
+    "title": "Mag Bay bait balls: species, season and trip plan | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/trip-types/ascension-bay-grand-slam/": {
+    "kind": "trip-type",
+    "title": "Ascension Bay Grand Slam: species, season and trip plan | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/trip-types/el-salto-lobina/": {
+    "kind": "trip-type",
+    "title": "El Salto lobina fishing: species, season and trip plan | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/trip-types/andros-bonefishing/": {
+    "kind": "trip-type",
+    "title": "Andros bonefishing: species, season and trip plan | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/trip-types/rio-negro-tucunare-acu/": {
+    "kind": "trip-type",
+    "title": "Rio Negro tucunar\u00e9-a\u00e7u: species, season and trip plan | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/trip-types/ibera-golden-dorado/": {
+    "kind": "trip-type",
+    "title": "Iber\u00e1 golden dorado: species, season and trip plan | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/trip-types/mongolia-taimen-on-mouse/": {
+    "kind": "trip-type",
+    "title": "Mongolia taimen on mouse flies: species, season and trip plan | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/trip-types/top-end-barra-run-off/": {
+    "kind": "trip-type",
+    "title": "Top End barra run-off: species, season and trip plan | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/trip-types/cairns-heavy-tackle-black-marlin/": {
+    "kind": "trip-type",
+    "title": "Cairns heavy-tackle black marlin: species, season and trip plan | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/trip-types/costa-rica-fad-marlin/": {
+    "kind": "trip-type",
+    "title": "Costa Rica FAD marlin trip: species, season and trip plan | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/trip-types/steelhead-alley/": {
+    "kind": "trip-type",
+    "title": "Steelhead Alley: species, season and trip plan | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/trip-types/kona-blue-marlin-grander/": {
+    "kind": "trip-type",
+    "title": "Kona blue marlin and the grander tradition: species, season and trip plan | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/trip-types/north-carolina-delayed-harvest-trout/": {
+    "kind": "trip-type",
+    "title": "North Carolina delayed-harvest trout: species, season and trip plan | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/trip-types/madison-salmonfly-hatch/": {
+    "kind": "trip-type",
+    "title": "Madison River salmonfly hatch: species, season and trip plan | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/trip-types/lake-winnipeg-greenbacks/": {
+    "kind": "trip-type",
+    "title": "Lake Winnipeg greenback ice fishing: species, season and trip plan | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/trip-types/outer-banks-drum-run/": {
+    "kind": "trip-type",
+    "title": "Outer Banks drum run: species, season and trip plan | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/glossary/": {
+    "kind": "glossary",
+    "title": "Local fishing lingo glossary | Castward",
     "noindex": false,
     "redirectTo": null
   },

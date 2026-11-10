@@ -1,0 +1,638 @@
+{
+  "passed": true,
+  "curlPages": 90,
+  "sitemapUrls": 148,
+  "legacyRedirect": "200 https://castward.app/north-america/united-states/south-carolina/charleston-marshes-inshore-estuary-fishing/",
+  "checks": [
+    {
+      "path": "/glossary/",
+      "status": 200,
+      "robots": "index,follow",
+      "canonical": true,
+      "faq": false
+    },
+    {
+      "path": "/north-america/canada/british-columbia/fraser-river-lower-reach-sturgeon-fishing/",
+      "status": 200,
+      "robots": "noindex,follow",
+      "canonical": true,
+      "faq": false
+    },
+    {
+      "path": "/north-america/canada/manitoba/lake-winnipeg-ice-fishing/",
+      "status": 200,
+      "robots": "noindex,follow",
+      "canonical": true,
+      "faq": false
+    },
+    {
+      "path": "/north-america/canada/prince-edward-island/north-lake-prince-edward-island-offshore-pelagic-fishing/",
+      "status": 200,
+      "robots": "noindex,follow",
+      "canonical": true,
+      "faq": false
+    },
+    {
+      "path": "/north-america/mexico/baja-california-sur/cabo-san-lucas-offshore-offshore-pelagic-fishing/",
+      "status": 200,
+      "robots": "noindex,follow",
+      "canonical": true,
+      "faq": false
+    },
+    {
+      "path": "/north-america/mexico/baja-california-sur/magdalena-bay-offshore-offshore-pelagic-fishing/",
+      "status": 200,
+      "robots": "noindex,follow",
+      "canonical": true,
+      "faq": false
+    },
+    {
+      "path": "/north-america/mexico/quintana-roo/ascension-bay-saltwater-flats/",
+      "status": 200,
+      "robots": "noindex,follow",
+      "canonical": true,
+      "faq": false
+    },
+    {
+      "path": "/north-america/mexico/sinaloa/lake-el-salto-lake-and-reservoir-bass/",
+      "status": 200,
+      "robots": "noindex,follow",
+      "canonical": true,
+      "faq": false
+    },
+    {
+      "path": "/north-america/united-states/alaska/kenai-river-river-salmon/",
+      "status": 200,
+      "robots": "noindex,follow",
+      "canonical": true,
+      "faq": false
+    },
+    {
+      "path": "/north-america/united-states/alaska/seward-resurrection-bay-coastal-salmon/",
+      "status": 200,
+      "robots": "noindex,follow",
+      "canonical": true,
+      "faq": false
+    },
+    {
+      "path": "/north-america/united-states/california/san-diego-offshore-offshore-pelagic-fishing/",
+      "status": 200,
+      "robots": "noindex,follow",
+      "canonical": true,
+      "faq": false
+    },
+    {
+      "path": "/north-america/united-states/florida/boca-grande-inshore-estuary-fishing/",
+      "status": 200,
+      "robots": "noindex,follow",
+      "canonical": true,
+      "faq": false
+    },
+    {
+      "path": "/north-america/united-states/florida/destin-offshore-offshore-pelagic-fishing/",
+      "status": 200,
+      "robots": "noindex,follow",
+      "canonical": true,
+      "faq": false
+    },
+    {
+      "path": "/north-america/united-states/florida/islamorada-flats-saltwater-flats/",
+      "status": 200,
+      "robots": "index,follow",
+      "canonical": true,
+      "faq": false
+    },
+    {
+      "path": "/north-america/united-states/florida/lake-okeechobee-lake-and-reservoir-bass/",
+      "status": 200,
+      "robots": "index,follow",
+      "canonical": true,
+      "faq": false
+    },
+    {
+      "path": "/north-america/united-states/florida/miami-urban-canals-introduced-species-canal-fishing/",
+      "status": 200,
+      "robots": "noindex,follow",
+      "canonical": true,
+      "faq": false
+    },
+    {
+      "path": "/north-america/united-states/hawaii/kona-offshore-offshore-pelagic-fishing/",
+      "status": 200,
+      "robots": "noindex,follow",
+      "canonical": true,
+      "faq": false
+    },
+    {
+      "path": "/north-america/united-states/louisiana/hopedale-biloxi-marsh-inshore-estuary-fishing/",
+      "status": 200,
+      "robots": "noindex,follow",
+      "canonical": true,
+      "faq": false
+    },
+    {
+      "path": "/north-america/united-states/louisiana/venice-marshes-inshore-estuary-fishing/",
+      "status": 200,
+      "robots": "noindex,follow",
+      "canonical": true,
+      "faq": false
+    },
+    {
+      "path": "/north-america/united-states/maryland/chesapeake-bay-maryland-base-inshore-estuary-fishing/",
+      "status": 200,
+      "robots": "noindex,follow",
+      "canonical": true,
+      "faq": false
+    },
+    {
+      "path": "/north-america/united-states/michigan/detroit-river-walleye-and-reservoir-fishing/",
+      "status": 200,
+      "robots": "noindex,follow",
+      "canonical": true,
+      "faq": false
+    },
+    {
+      "path": "/north-america/united-states/minnesota/lake-of-the-woods-minnesota-base-walleye-and-reservoir-fishing/",
+      "status": 200,
+      "robots": "noindex,follow",
+      "canonical": true,
+      "faq": false
+    },
+    {
+      "path": "/north-america/united-states/mississippi/grenada-lake-panfish-and-family-fishing/",
+      "status": 200,
+      "robots": "noindex,follow",
+      "canonical": true,
+      "faq": false
+    },
+    {
+      "path": "/north-america/united-states/montana/madison-river-river-trout-and-grayling/",
+      "status": 200,
+      "robots": "noindex,follow",
+      "canonical": true,
+      "faq": false
+    },
+    {
+      "path": "/north-america/united-states/nevada/pyramid-lake-coldwater-lake-fishing/",
+      "status": 200,
+      "robots": "noindex,follow",
+      "canonical": true,
+      "faq": false
+    },
+    {
+      "path": "/north-america/united-states/new-jersey/manasquan-shark-river-departures-saltwater-bottom-fishing/",
+      "status": 200,
+      "robots": "noindex,follow",
+      "canonical": true,
+      "faq": false
+    },
+    {
+      "path": "/north-america/united-states/new-york/montauk-inshore-estuary-fishing/",
+      "status": 200,
+      "robots": "noindex,follow",
+      "canonical": true,
+      "faq": false
+    },
+    {
+      "path": "/north-america/united-states/north-carolina/cape-hatteras-beaches-surf-and-beach-fishing/",
+      "status": 200,
+      "robots": "index,follow",
+      "canonical": true,
+      "faq": false
+    },
+    {
+      "path": "/north-america/united-states/north-carolina/tuckasegee-river-river-trout-and-grayling/",
+      "status": 200,
+      "robots": "noindex,follow",
+      "canonical": true,
+      "faq": false
+    },
+    {
+      "path": "/north-america/united-states/ohio/grand-river-lake-erie-tributary-steelhead-and-anadromous-trout/",
+      "status": 200,
+      "robots": "noindex,follow",
+      "canonical": true,
+      "faq": false
+    },
+    {
+      "path": "/north-america/united-states/ohio/lake-erie-port-clinton-walleye-and-reservoir-fishing/",
+      "status": 200,
+      "robots": "noindex,follow",
+      "canonical": true,
+      "faq": false
+    },
+    {
+      "path": "/north-america/united-states/oklahoma/lake-texoma-oklahoma-base-lake-and-reservoir-bass/",
+      "status": 200,
+      "robots": "noindex,follow",
+      "canonical": true,
+      "faq": false
+    },
+    {
+      "path": "/north-america/united-states/pennsylvania/elk-creek-lake-erie-tributary-steelhead-and-anadromous-trout/",
+      "status": 200,
+      "robots": "noindex,follow",
+      "canonical": true,
+      "faq": false
+    },
+    {
+      "path": "/north-america/united-states/south-carolina/beaufort-port-royal-sound-inshore-estuary-fishing/",
+      "status": 200,
+      "robots": "index,follow",
+      "canonical": true,
+      "faq": false
+    },
+    {
+      "path": "/north-america/united-states/south-carolina/charleston-marshes-inshore-estuary-fishing/",
+      "status": 200,
+      "robots": "index,follow",
+      "canonical": true,
+      "faq": false
+    },
+    {
+      "path": "/north-america/united-states/texas/lake-texoma-texas-base-lake-and-reservoir-bass/",
+      "status": 200,
+      "robots": "noindex,follow",
+      "canonical": true,
+      "faq": false
+    },
+    {
+      "path": "/north-america/united-states/texas/matagorda-bay-inshore-estuary-fishing/",
+      "status": 200,
+      "robots": "noindex,follow",
+      "canonical": true,
+      "faq": false
+    },
+    {
+      "path": "/north-america/united-states/washington/columbia-river-lower-reach-river-salmon/",
+      "status": 200,
+      "robots": "noindex,follow",
+      "canonical": true,
+      "faq": false
+    },
+    {
+      "path": "/plan/",
+      "status": 200,
+      "robots": "noindex,follow",
+      "canonical": true,
+      "faq": false
+    },
+    {
+      "path": "/trip-types/",
+      "status": 200,
+      "robots": "index,follow",
+      "canonical": true,
+      "faq": false
+    },
+    {
+      "path": "/trip-types/andros-bonefishing/",
+      "status": 200,
+      "robots": "index,follow",
+      "canonical": true,
+      "faq": true
+    },
+    {
+      "path": "/trip-types/ascension-bay-grand-slam/",
+      "status": 200,
+      "robots": "index,follow",
+      "canonical": true,
+      "faq": true
+    },
+    {
+      "path": "/trip-types/boca-grande-tarpon/",
+      "status": 200,
+      "robots": "index,follow",
+      "canonical": true,
+      "faq": true
+    },
+    {
+      "path": "/trip-types/buoy-10-salmon/",
+      "status": 200,
+      "robots": "index,follow",
+      "canonical": true,
+      "faq": true
+    },
+    {
+      "path": "/trip-types/cabo-striped-marlin/",
+      "status": 200,
+      "robots": "index,follow",
+      "canonical": true,
+      "faq": true
+    },
+    {
+      "path": "/trip-types/cairns-heavy-tackle-black-marlin/",
+      "status": 200,
+      "robots": "index,follow",
+      "canonical": true,
+      "faq": true
+    },
+    {
+      "path": "/trip-types/chesapeake-rockfish/",
+      "status": 200,
+      "robots": "index,follow",
+      "canonical": true,
+      "faq": true
+    },
+    {
+      "path": "/trip-types/costa-rica-fad-marlin/",
+      "status": 200,
+      "robots": "index,follow",
+      "canonical": true,
+      "faq": true
+    },
+    {
+      "path": "/trip-types/detroit-river-walleye-jigging/",
+      "status": 200,
+      "robots": "index,follow",
+      "canonical": true,
+      "faq": true
+    },
+    {
+      "path": "/trip-types/el-salto-lobina/",
+      "status": 200,
+      "robots": "index,follow",
+      "canonical": true,
+      "faq": true
+    },
+    {
+      "path": "/trip-types/fraser-white-sturgeon/",
+      "status": 200,
+      "robots": "index,follow",
+      "canonical": true,
+      "faq": true
+    },
+    {
+      "path": "/trip-types/grenada-slabs/",
+      "status": 200,
+      "robots": "index,follow",
+      "canonical": true,
+      "faq": true
+    },
+    {
+      "path": "/trip-types/gulf-red-snapper-season/",
+      "status": 200,
+      "robots": "index,follow",
+      "canonical": true,
+      "faq": true
+    },
+    {
+      "path": "/trip-types/ibera-golden-dorado/",
+      "status": 200,
+      "robots": "index,follow",
+      "canonical": true,
+      "faq": true
+    },
+    {
+      "path": "/trip-types/kenai-silver-salmon/",
+      "status": 200,
+      "robots": "index,follow",
+      "canonical": true,
+      "faq": true
+    },
+    {
+      "path": "/trip-types/keys-grand-slam/",
+      "status": 200,
+      "robots": "index,follow",
+      "canonical": true,
+      "faq": true
+    },
+    {
+      "path": "/trip-types/kona-blue-marlin-grander/",
+      "status": 200,
+      "robots": "index,follow",
+      "canonical": true,
+      "faq": true
+    },
+    {
+      "path": "/trip-types/lake-erie-walleye-charter/",
+      "status": 200,
+      "robots": "index,follow",
+      "canonical": true,
+      "faq": true
+    },
+    {
+      "path": "/trip-types/lake-of-the-woods-sleeper-house/",
+      "status": 200,
+      "robots": "index,follow",
+      "canonical": true,
+      "faq": true
+    },
+    {
+      "path": "/trip-types/lake-winnipeg-greenbacks/",
+      "status": 200,
+      "robots": "index,follow",
+      "canonical": true,
+      "faq": true
+    },
+    {
+      "path": "/trip-types/louisiana-bull-reds/",
+      "status": 200,
+      "robots": "index,follow",
+      "canonical": true,
+      "faq": true
+    },
+    {
+      "path": "/trip-types/lowcountry-inshore-grand-slam/",
+      "status": 200,
+      "robots": "index,follow",
+      "canonical": true,
+      "faq": true
+    },
+    {
+      "path": "/trip-types/madison-salmonfly-hatch/",
+      "status": 200,
+      "robots": "index,follow",
+      "canonical": true,
+      "faq": true
+    },
+    {
+      "path": "/trip-types/mag-bay-bait-balls/",
+      "status": 200,
+      "robots": "index,follow",
+      "canonical": true,
+      "faq": true
+    },
+    {
+      "path": "/trip-types/miami-canal-peacock-bass/",
+      "status": 200,
+      "robots": "index,follow",
+      "canonical": true,
+      "faq": true
+    },
+    {
+      "path": "/trip-types/mongolia-taimen-on-mouse/",
+      "status": 200,
+      "robots": "index,follow",
+      "canonical": true,
+      "faq": true
+    },
+    {
+      "path": "/trip-types/montauk-fall-run/",
+      "status": 200,
+      "robots": "index,follow",
+      "canonical": true,
+      "faq": true
+    },
+    {
+      "path": "/trip-types/new-jersey-tog-fishing/",
+      "status": 200,
+      "robots": "index,follow",
+      "canonical": true,
+      "faq": true
+    },
+    {
+      "path": "/trip-types/north-carolina-delayed-harvest-trout/",
+      "status": 200,
+      "robots": "index,follow",
+      "canonical": true,
+      "faq": true
+    },
+    {
+      "path": "/trip-types/okeechobee-wild-shiner-bass/",
+      "status": 200,
+      "robots": "index,follow",
+      "canonical": true,
+      "faq": true
+    },
+    {
+      "path": "/trip-types/ontario-fly-in-fishing/",
+      "status": 200,
+      "robots": "index,follow",
+      "canonical": true,
+      "faq": true
+    },
+    {
+      "path": "/trip-types/outer-banks-drum-run/",
+      "status": 200,
+      "robots": "index,follow",
+      "canonical": true,
+      "faq": true
+    },
+    {
+      "path": "/trip-types/pei-giant-bluefin/",
+      "status": 200,
+      "robots": "index,follow",
+      "canonical": true,
+      "faq": true
+    },
+    {
+      "path": "/trip-types/pyramid-lake-ladder-fishing/",
+      "status": 200,
+      "robots": "index,follow",
+      "canonical": true,
+      "faq": true
+    },
+    {
+      "path": "/trip-types/rio-negro-tucunare-acu/",
+      "status": 200,
+      "robots": "index,follow",
+      "canonical": true,
+      "faq": true
+    },
+    {
+      "path": "/trip-types/san-diego-night-jig-bluefin/",
+      "status": 200,
+      "robots": "index,follow",
+      "canonical": true,
+      "faq": true
+    },
+    {
+      "path": "/trip-types/seward-halibut-salmon-combo/",
+      "status": 200,
+      "robots": "index,follow",
+      "canonical": true,
+      "faq": true
+    },
+    {
+      "path": "/trip-types/steelhead-alley/",
+      "status": 200,
+      "robots": "index,follow",
+      "canonical": true,
+      "faq": true
+    },
+    {
+      "path": "/trip-types/texas-slam/",
+      "status": 200,
+      "robots": "index,follow",
+      "canonical": true,
+      "faq": true
+    },
+    {
+      "path": "/trip-types/texoma-stripers/",
+      "status": 200,
+      "robots": "index,follow",
+      "canonical": true,
+      "faq": true
+    },
+    {
+      "path": "/trip-types/top-end-barra-run-off/",
+      "status": 200,
+      "robots": "index,follow",
+      "canonical": true,
+      "faq": true
+    },
+    {
+      "path": "/trips/",
+      "status": 200,
+      "robots": "index,follow",
+      "canonical": true,
+      "faq": false
+    },
+    {
+      "path": "/trips/andros-bonefish/",
+      "status": 200,
+      "robots": "index,follow",
+      "canonical": true,
+      "faq": false
+    },
+    {
+      "path": "/trips/cairns-heavy-tackle-marlin/",
+      "status": 200,
+      "robots": "index,follow",
+      "canonical": true,
+      "faq": false
+    },
+    {
+      "path": "/trips/g-argentina-ibera-wetlands-pira-lodge/",
+      "status": 200,
+      "robots": "noindex,follow",
+      "canonical": true,
+      "faq": false
+    },
+    {
+      "path": "/trips/kabinakagami-lake-fly-in/",
+      "status": 200,
+      "robots": "index,follow",
+      "canonical": true,
+      "faq": false
+    },
+    {
+      "path": "/trips/mongolia-taimen/",
+      "status": 200,
+      "robots": "index,follow",
+      "canonical": true,
+      "faq": false
+    },
+    {
+      "path": "/trips/quepos-offshore/",
+      "status": 200,
+      "robots": "index,follow",
+      "canonical": true,
+      "faq": false
+    },
+    {
+      "path": "/trips/rio-negro-peacock/",
+      "status": 200,
+      "robots": "index,follow",
+      "canonical": true,
+      "faq": false
+    },
+    {
+      "path": "/trips/top-end-barramundi/",
+      "status": 200,
+      "robots": "index,follow",
+      "canonical": true,
+      "faq": false
+    }
+  ]
+}

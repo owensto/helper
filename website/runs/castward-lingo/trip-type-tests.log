@@ -1,0 +1,46 @@
+TAP version 13
+# Subtest: all 40 research priorities publish, with one scoped glossary addition
+ok 1 - all 40 research priorities publish, with one scoped glossary addition
+  ---
+  duration_ms: 0.714583
+  type: 'test'
+  ...
+# Subtest: every hub has substantive authored sections, matching FAQ schema, sources, and an empty guide slot
+ok 2 - every hub has substantive authored sections, matching FAQ schema, sources, and an empty guide slot
+  ---
+  duration_ms: 9.819667
+  type: 'test'
+  ...
+# Subtest: name and alias membership survives every catalog transformation
+ok 3 - name and alias membership survives every catalog transformation
+  ---
+  duration_ms: 0.837125
+  type: 'test'
+  ...
+# Subtest: presets survive serialization and use their own kit without another type or generic destination kit
+ok 4 - presets survive serialization and use their own kit without another type or generic destination kit
+  ---
+  duration_ms: 36.356041
+  type: 'test'
+  ...
+# Subtest: changing destination or using an invalid type clears incompatible type data
+ok 5 - changing destination or using an invalid type clears incompatible type data
+  ---
+  duration_ms: 1.953458
+  type: 'test'
+  ...
+# Subtest: research-pending stays noindex and only the two named gaps add destination profiles
+ok 6 - research-pending stays noindex and only the two named gaps add destination profiles
+  ---
+  duration_ms: 1.736167
+  type: 'test'
+  ...
+1..6
+# tests 6
+# suites 0
+# pass 6
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 130.674208

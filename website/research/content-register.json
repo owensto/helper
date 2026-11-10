@@ -1,6 +1,6 @@
 {
   "reviewed": "2026-09-13",
-  "tripGuides": 796,
+  "tripGuides": 798,
   "environmentGuides": 12,
   "countries": [
     "Andorra",
@@ -130,7 +130,7 @@
     "Asia",
     "Oceania"
   ],
-  "sources": 217,
+  "sources": 223,
   "articles": [
     {
       "id": "situk-coho-river",
@@ -11119,6 +11119,38 @@
         "fieldTested": false,
         "independentExpertReviewed": false,
         "automatedAudit": "see research/global-quality-report.json"
+      }
+    },
+    {
+      "id": "kabinakagami-lake-fly-in",
+      "type": "trip",
+      "words": 197,
+      "sources": [
+        "Saeb942c3ec",
+        "Sc391fb56a4",
+        "S4fb98f910b"
+      ],
+      "review": {
+        "checked": "2026-11-10",
+        "status": "source-checked",
+        "fieldTested": false,
+        "independentExpertReviewed": false
+      }
+    },
+    {
+      "id": "cairns-heavy-tackle-marlin",
+      "type": "trip",
+      "words": 219,
+      "sources": [
+        "S13a8d30a07",
+        "S4e46eb9dc8",
+        "S4e77dd69a0"
+      ],
+      "review": {
+        "checked": "2026-11-10",
+        "status": "source-checked",
+        "fieldTested": false,
+        "independentExpertReviewed": false
       }
     },
     {

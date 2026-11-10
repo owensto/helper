@@ -1,0 +1,13 @@
+{
+  "inputSha256": "6607a9577b2540a488ded6439dff0ef3494baec4886c798e5b05534eada86a45",
+  "baseCommit": "ebc91c4f6160b5a9fb7eb54bbd6f43521aa3516e",
+  "priorityTypes": 40,
+  "publishedTypes": 41,
+  "glossaryTerms": 82,
+  "linkedDestinationProfiles": 45,
+  "newDestinationProfiles": 2,
+  "retainedDestinationProfiles": 796,
+  "retainedRoutes": 1619,
+  "addedRoutes": 45,
+  "researchPriorityIdsMatch": true
+}

@@ -1,0 +1,225 @@
+[
+  {
+    "id": "kabinakagami-lake-fly-in",
+    "title": "Kabinakagami Lake fly-in fishing: White River access and a Kaby Lodge preparation plan",
+    "place": "Kabinakagami Lake / White River air base",
+    "country": "Canada",
+    "region": "North America",
+    "water": "Freshwater",
+    "habitats": [
+      "Lakes & reservoirs"
+    ],
+    "landscape": [
+      "Kabinakagami Lake / White River air base"
+    ],
+    "methods": [
+      "Lure / spinning"
+    ],
+    "access": [
+      "Guided boat"
+    ],
+    "climate": "mixed",
+    "fish": [
+      "Walleye",
+      "Northern pike"
+    ],
+    "summary": "A trip format that uses an aircraft to reach a lodge or outpost. It is not one fishery or one Ontario season. The named example here is Kabinakagami Lake: a Northern Ontario Travel account describes Kaby Lodge and a flight from the White River Air base.",
+    "evidence": [
+      {
+        "source": "Saeb942c3ec",
+        "claim": "Northern Ontario Travel describes an early-June visit to Kaby Lodge on Kabinakagami Lake, with a flight from the White River Air base and guided small-boat fishing for walleye and northern pike."
+      }
+    ],
+    "season": "The inspected account describes an early-June visit. Current Kaby Lodge operating dates are not confirmed. This single visit does not establish a full lake season or a legal opening.",
+    "seasonWindows": [],
+    "sections": [
+      {
+        "title": "Fix the access before the equipment",
+        "text": "Use White River as the named air base in this example. Confirm the current flight operator, check-in location, baggage allowance, and weather-delay arrangement with the lodge. The source establishes a past trip route, not a flight reservation."
+      },
+      {
+        "title": "Choose the actual fishing format",
+        "text": "The Kaby account describes small-boat fishing for walleye and northern pike during an early-June visit. That observed visit does not establish a full operating season. Decide whether you want a guide and meals or a self-directed outpost arrangement. Do not transfer one lodge’s inclusions to another lake."
+      },
+      {
+        "title": "Separate your kit from the package",
+        "text": "A weighed soft bag within the air operator’s confirmed allowance. Weather layers, insect protection, and compact dry storage. Rods packed for the agreed aircraft load; confirm food and personal supplies separately. Confirm the lake, air base, flight operator, and weather-delay plan. Ask which meals, boats, fuel, guides, and tackle the named package includes. Confirm communication arrangements and the return-flight baggage plan."
+      },
+      {
+        "title": "Keep the source in its proper scope",
+        "text": "This profile uses the named source for the place, method, and trip format. It does not verify current availability, a price, or a guide partnership. Ask the operator for a written itinerary and inclusion list before a purchase. Use the linked local trip-type guide for the source qualifications and current authority links."
+      }
+    ],
+    "kit": [
+      {
+        "name": "Access and transfer plan",
+        "specification": "Use White River as the named air base in this example. Confirm the current flight operator, check-in location, baggage allowance, and weather-delay arrangement with the lodge. The source establishes a past trip route, not a flight reservation.",
+        "why": "The route determines baggage and time needs.",
+        "decision": "confirm",
+        "query": ""
+      },
+      {
+        "name": "Complete local tackle system",
+        "specification": "Confirm the lake, air base, flight operator, and weather-delay plan.",
+        "why": "Confirm the complete setup before buying separate components.",
+        "decision": "confirm",
+        "query": ""
+      },
+      {
+        "name": "Personal clothing and storage",
+        "specification": "A weighed soft bag within the air operator’s confirmed allowance. Weather layers, insect protection, and compact dry storage. Rods packed for the agreed aircraft load; confirm food and personal supplies separately.",
+        "why": "Match clothing and carried load to the actual itinerary.",
+        "decision": "confirm",
+        "query": ""
+      },
+      {
+        "name": "Package inclusions",
+        "specification": "Ask which meals, boats, fuel, guides, and tackle the named package includes. Confirm communication arrangements and the return-flight baggage plan.",
+        "why": "Only mark equipment as provided after the actual operator confirms it.",
+        "decision": "confirm",
+        "query": ""
+      }
+    ],
+    "mistakes": [
+      "Treating the cited seasonal example as current availability.",
+      "Assuming that every operator supplies the same equipment and transfers."
+    ],
+    "questions": [
+      "Confirm the lake, air base, flight operator, and weather-delay plan.",
+      "Ask which meals, boats, fuel, guides, and tackle the named package includes.",
+      "Confirm communication arrangements and the return-flight baggage plan."
+    ],
+    "related": [],
+    "review": {
+      "checked": "2026-11-10",
+      "status": "source-checked",
+      "fieldTested": false,
+      "independentExpertReviewed": false
+    },
+    "sourceIds": [
+      "Saeb942c3ec",
+      "Sc391fb56a4",
+      "S4fb98f910b"
+    ],
+    "contentTier": "detailed-guide",
+    "evidenceDepth": "Named source text inspected; current operating dates and availability remain unconfirmed",
+    "jurisdictionType": "country",
+    "catalogOrigin": "local-lingo-research-gap",
+    "canonicalPath": "/trips/kabinakagami-lake-fly-in/",
+    "indexEligible": true,
+    "planId": null,
+    "state": "Ontario",
+    "subregion": "Northern Ontario",
+    "countryCode": "CA",
+    "stateCode": "ON"
+  },
+  {
+    "id": "cairns-heavy-tackle-marlin",
+    "title": "Cairns heavy-tackle black marlin: reef-edge access and a multi-day charter plan",
+    "place": "Cairns / outer Great Barrier Reef",
+    "country": "Australia",
+    "region": "Oceania",
+    "water": "Saltwater",
+    "habitats": [
+      "Offshore"
+    ],
+    "landscape": [
+      "Cairns / outer Great Barrier Reef"
+    ],
+    "methods": [
+      "Trolling"
+    ],
+    "access": [
+      "Charter boat"
+    ],
+    "climate": "warm",
+    "fish": [
+      "Black marlin"
+    ],
+    "summary": "A specialist offshore black-marlin format outside the Great Barrier Reef near Cairns. The local industry distinguishes heavy-tackle trips from light-tackle trips for smaller marlin. Multi-day liveaboard and mothership arrangements are documented options, not interchangeable room categories.",
+    "evidence": [
+      {
+        "source": "S4e46eb9dc8",
+        "claim": "The Fishing Cairns industry source describes heavy-tackle black-marlin fishing outside the reef, large rigged fish baits, and day, liveaboard, or mothership formats. It gives September through December as the seasonal window."
+      }
+    ],
+    "season": "September through December is the local industry source’s window. It is not a guaranteed catch period or a legal opening. Confirm the vessel, reef zones, current rules, and dates directly.",
+    "seasonWindows": [],
+    "sections": [
+      {
+        "title": "Fix the access before the equipment",
+        "text": "Confirm where the vessel departs and whether the fishing program returns to port or stays near the reef. A liveaboard game boat and a separate mothership arrangement have different accommodation and transfer needs. The operator must identify the actual itinerary and lawful fishing zones."
+      },
+      {
+        "title": "Choose the actual fishing format",
+        "text": "The source describes trolling large rigged fish baits along the reef-edge fishery. Ask how the crew handles the tackle and how anglers use the fighting position. September–December is the cited industry window. Choose the boat, operating area, and overnight format together; a Cairns hotel stay does not imply a daily return to port."
+      },
+      {
+        "title": "Separate your kit from the package",
+        "text": "Soft luggage, deck clothing, sun protection, and a weather shell. Personal overnight items matched to the confirmed cabin and storage space. Personal tackle only if the skipper requests it; confirm the complete heavy system first. Ask about rods, reels, bait, harness or chair, and crew instruction. Confirm whether you sleep on the game boat or a separate mothership. Ask which meals, transfers, permits, and weather alternatives the actual charter includes."
+      },
+      {
+        "title": "Keep the source in its proper scope",
+        "text": "This profile uses the named source for the place, method, and trip format. It does not verify current availability, a price, or a guide partnership. Ask the operator for a written itinerary and inclusion list before a purchase. Use the linked local trip-type guide for the source qualifications and current authority links."
+      }
+    ],
+    "kit": [
+      {
+        "name": "Access and transfer plan",
+        "specification": "Confirm where the vessel departs and whether the fishing program returns to port or stays near the reef. A liveaboard game boat and a separate mothership arrangement have different accommodation and transfer needs. The operator must identify the actual itinerary and lawful fishing zones.",
+        "why": "The route determines baggage and time needs.",
+        "decision": "confirm",
+        "query": ""
+      },
+      {
+        "name": "Complete local tackle system",
+        "specification": "Ask about rods, reels, bait, harness or chair, and crew instruction.",
+        "why": "Confirm the complete setup before buying separate components.",
+        "decision": "confirm",
+        "query": ""
+      },
+      {
+        "name": "Personal clothing and storage",
+        "specification": "Soft luggage, deck clothing, sun protection, and a weather shell. Personal overnight items matched to the confirmed cabin and storage space. Personal tackle only if the skipper requests it; confirm the complete heavy system first.",
+        "why": "Match clothing and carried load to the actual itinerary.",
+        "decision": "confirm",
+        "query": ""
+      },
+      {
+        "name": "Package inclusions",
+        "specification": "Confirm whether you sleep on the game boat or a separate mothership. Ask which meals, transfers, permits, and weather alternatives the actual charter includes.",
+        "why": "Only mark equipment as provided after the actual operator confirms it.",
+        "decision": "confirm",
+        "query": ""
+      }
+    ],
+    "mistakes": [
+      "Treating the cited seasonal example as current availability.",
+      "Assuming that every operator supplies the same equipment and transfers."
+    ],
+    "questions": [
+      "Ask about rods, reels, bait, harness or chair, and crew instruction.",
+      "Confirm whether you sleep on the game boat or a separate mothership.",
+      "Ask which meals, transfers, permits, and weather alternatives the actual charter includes."
+    ],
+    "related": [],
+    "review": {
+      "checked": "2026-11-10",
+      "status": "source-checked",
+      "fieldTested": false,
+      "independentExpertReviewed": false
+    },
+    "sourceIds": [
+      "S13a8d30a07",
+      "S4e46eb9dc8",
+      "S4e77dd69a0"
+    ],
+    "contentTier": "detailed-guide",
+    "evidenceDepth": "Named source text inspected; current operating dates and availability remain unconfirmed",
+    "jurisdictionType": "country",
+    "catalogOrigin": "local-lingo-research-gap",
+    "canonicalPath": "/trips/cairns-heavy-tackle-marlin/",
+    "indexEligible": true,
+    "planId": null
+  }
+]

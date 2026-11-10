@@ -1,7 +1,7 @@
 {
   "continent": "North America",
   "generated": "2026-09-13",
-  "count": 550,
+  "count": 551,
   "records": [
     {
       "id": "US-AK-001",
@@ -20473,6 +20473,45 @@
       "sourceLeads": {},
       "distributionAngle": "Show the local decision: Offshore charter selection in Punta Cana — Mike’s Marina. Use the listing as an operator lead, not as live inventory.",
       "nextAction": "Inspect full primary/local source pages; establish targets, access and seasonal scope before editorial promotion.",
+      "acceptance": [
+        "Named fishery and scope supported by inspected sources",
+        "Local access and target are not inferred from a country",
+        "Seasonal claims have source/date/scope",
+        "Equipment requirements fit the actual method",
+        "No invented operator availability",
+        "Publish gate passed before search indexing"
+      ]
+    },
+    {
+      "id": "kabinakagami-lake-fly-in",
+      "tripId": "kabinakagami-lake-fly-in",
+      "continent": "North America",
+      "country": "Canada",
+      "region": "Northern Ontario",
+      "stateOrProvince": "Ontario",
+      "location": "Kabinakagami Lake / White River air base",
+      "url": "/trips/kabinakagami-lake-fly-in/",
+      "currentTier": "detailed-guide",
+      "indexEligible": true,
+      "sourceIds": [
+        "Saeb942c3ec",
+        "Sc391fb56a4",
+        "S4fb98f910b"
+      ],
+      "evidenceDepth": "Named source text inspected; current operating dates and availability remain unconfirmed",
+      "localDecision": "A trip format that uses an aircraft to reach a lodge or outpost. It is not one fishery or one Ontario season. The named example here is Kabinakagami Lake: a Northern Ontario Travel account describes Kaby Lodge and a flight from the White River Air base.",
+      "candidateTargets": "Walleye / Northern pike",
+      "confirmedTargets": [
+        "Walleye",
+        "Northern pike"
+      ],
+      "seasonalEvidence": "The inspected account describes an early-June visit. Current Kaby Lodge operating dates are not confirmed. This single visit does not establish a full lake season or a legal opening.",
+      "accessToVerify": "Guided boat",
+      "tackleDecision": "Use White River as the named air base in this example. Confirm the current flight operator, check-in location, baggage allowance, and weather-delay arrangement with the lodge. The source establishes a past trip route, not a flight reservation. | Confirm the lake, air base, flight operator, and weather-delay plan. | A weighed soft bag within the air operator’s confirmed allowance. Weather layers, insect protection, and compact dry storage. Rods packed for the agreed aircraft load; confirm food and personal supplies separately. | Ask which meals, boats, fuel, guides, and tackle the named package includes. Confirm communication arrangements and the return-flight baggage plan.",
+      "operatorQuestion": "Confirm actual access, equipment provision, meeting place and date availability.",
+      "sourceLeads": {},
+      "distributionAngle": "Show the local decision: A trip format that uses an aircraft to reach a lodge or outpost. It is not one fishery or one Ontario season. The named example here is Kabinakagami Lake: a Northern Ontario Travel account describes Kaby Lodge and a flight from the White River Air base.",
+      "nextAction": "Maintain attributed facts; obtain local corroboration and exact product selections.",
       "acceptance": [
         "Named fishery and scope supported by inspected sources",
         "Local access and target are not inferred from a country",
