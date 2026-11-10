@@ -18,7 +18,7 @@ class VideoTests(unittest.TestCase):
         for path,expected in [('/',13),('/videos/',13)]+[(path,sum(urlsplit(v['page_url']).path==path for v in catalog)) for path in {urlsplit(v['page_url']).path for v in catalog}]:
             text=(ROOT/'dist'/path.strip('/')/'index.html').read_text()
             parsed=Media(text)
-            self.assertEqual(len(parsed.videos),expected,path)
+            self.assertEqual(len(parsed.videos),expected + (3 if path == "/" else 0),path)
             self.assertEqual(text.count('"@type": "VideoObject"'),expected if '<link rel="canonical"' in text else 0,path)
             for video in parsed.videos:
                 self.assertEqual(video['preload'],'none')

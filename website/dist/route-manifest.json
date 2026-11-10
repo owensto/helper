@@ -9670,5 +9670,11 @@
     "title": "Continue to Fishing Atlas",
     "noindex": true,
     "redirectTo": "/north-america/mexico/tamaulipas/la-pesca-laguna-madre-inshore-estuary-fishing/"
+  },
+  "/videos/": {
+    "kind": "page",
+    "title": "Fishing videos | Castward",
+    "noindex": false,
+    "redirectTo": null
   }
 }

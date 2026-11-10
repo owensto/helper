@@ -1,0 +1,32 @@
+Environment labels: ['Alpine lakes', 'Estuaries & mangroves', 'Glacier-influenced rivers', 'Ice fishing', 'Lakes & reservoirs', 'Offshore', 'Reef & bottom', 'Rivers & streams', 'Saltwater flats', 'Spring-fed streams', 'Surf & beaches', 'Tropical floodplains']
+{
+  "tripProfiles": 796,
+  "detailedGuides": 38,
+  "newTripBriefs": 279,
+  "countryJurisdictionCollections": 118,
+  "countriesExcludingFreeAssociatedStates": 116,
+  "freeAssociatedStates": [
+    "Cook Islands",
+    "Niue"
+  ],
+  "sources": 217,
+  "sourceInspection": {
+    "text-inspected": 62,
+    "search-excerpt-inspected": 136,
+    "page-text-inspected": 19
+  },
+  "byRegion": {
+    "North America": 550,
+    "South America": 31,
+    "Europe": 102,
+    "Africa": 34,
+    "Asia": 44,
+    "Oceania": 35
+  },
+  "preparationBriefs": 479,
+  "northAmericaProductionRecords": 507
+}
+Imported plan rows: 507 unique states: 50
+Built 1613 pages, 796 trip guides + 12 environment guides + 6 retained preparation articles; preview: /Users/oven/orca/workspaces/castward/Fishing-Atlas-World-Preview.html
+Production origin: https://castward.app
+Vercel static build complete; authenticated upload has not been performed.

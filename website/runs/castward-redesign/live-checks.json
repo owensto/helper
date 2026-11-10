@@ -1,0 +1,32 @@
+[
+  {
+    "path": "/",
+    "status": 200,
+    "title": "Fishing Atlas | Find your water. Go prepared.",
+    "canonical": "https://castward.app/"
+  },
+  {
+    "path": "/trips/",
+    "status": 200,
+    "title": "Fishing trip guides by environment, species and region | Fishing Atlas",
+    "canonical": "https://castward.app/trips/"
+  },
+  {
+    "path": "/plan/",
+    "status": 200,
+    "title": "Your personalized fishing trip checklist \u2014 Fishing Atlas",
+    "canonical": "https://castward.app/plan/"
+  },
+  {
+    "path": "/north-america/united-states/texas/lake-fork-lake-and-reservoir-bass/",
+    "status": 200,
+    "title": "Lake Fork bass fishing: cover, launch choice and a compatible setup | Fishing Atlas",
+    "canonical": "https://castward.app/north-america/united-states/texas/lake-fork-lake-and-reservoir-bass/"
+  },
+  {
+    "path": "/videos/",
+    "status": 200,
+    "title": "Fishing videos | Castward",
+    "canonical": "https://castward.app/videos/"
+  }
+]

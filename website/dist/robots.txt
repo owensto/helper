@@ -1,3 +1,3 @@
 User-agent: *
-Disallow: /
-# Preview build: set SITE_URL to generate production canonical URLs and sitemap.
+Allow: /
+Sitemap: https://castward.app/sitemap.xml
