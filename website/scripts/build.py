@@ -173,6 +173,10 @@ def doc(path,p,preview=False):
     if p['kind']=='article':schema.update({'headline':p['title'],'datePublished':DATA['reviewed'],'dateModified':DATA['reviewed'],'author':{'@type':'Organization','name':'Fishing Atlas'}})
     return f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#142e26"><title>{E(p['title'])}</title><meta name="description" content="{E(p['desc'],quote=True)}"><meta name="robots" content="{robots}">{canonical}<meta property="og:type" content="{'article' if p['kind']=='article' else 'website'}"><meta property="og:title" content="{E(p['title'],quote=True)}"><meta property="og:description" content="{E(p['desc'],quote=True)}"><meta property="og:site_name" content="Fishing Atlas"><link rel="icon" href="/assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/assets/style.css"><script type="application/ld+json">{json.dumps(schema).replace('</','<\\/')}</script><script src="/assets/{datafile}" defer></script><script src="/assets/engine.js" defer></script><script src="/assets/app.js" defer></script></head><body data-page="{p['kind']}">{HEADER}<main id="main">{p['body']}</main>{FOOTER}{form_index}<noscript><div class="wrap note">Destination and field guides work without JavaScript. The interactive checklist requires JavaScript.</div></noscript></body></html>'''
 
+from videos import install as install_videos
+install_videos(pages, ROOT, CONFIG['siteUrl'], add)
+HEADER=HEADER.replace('</nav>', '<a href="/videos/">Watch</a></nav>')
+
 for path,p in pages.items():
     target=DIST/(path.strip('/')+'/index.html' if path!='/' else 'index.html')
     target.parent.mkdir(parents=True,exist_ok=True);target.write_text(doc(path,p))
