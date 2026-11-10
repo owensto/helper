@@ -1,0 +1,8 @@
+{
+  "status": 200,
+  "body": {
+    "ok": true,
+    "id": "01a1c775-6132-7d3f-b6eb-e4a719c38f68"
+  },
+  "message": "Your message was accepted by our email provider. Thank you. This does not confirm a booking."
+}

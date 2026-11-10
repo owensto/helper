@@ -12,16 +12,12 @@
   let plan=E.normalize(get(K.plan,{}),D),activeFilter='all',toastTimer;
   function current(){return PREVIEW?new URL(location.hash.startsWith('#/')?location.hash.slice(1):'/', 'https://atlas.preview'):new URL(location.href);}
   function track(name,props={}){
-    const saved=get(K.attribution,{});const attr=saved&&typeof saved==='object'&&!Array.isArray(saved)?saved:{};
-    const event={event:name,at:new Date().toISOString(),path:current().pathname,properties:props,attribution:attr};
-    let events=get(K.events,[]);if(!Array.isArray(events))events=[];set(K.events,[...events.slice(-199),event]);
-    window.dataLayer=window.dataLayer||[];window.dataLayer.push(event);
-    if(typeof window.plausible==='function')window.plausible(name,{props:{...props,...attr}});
+    const event={event:name,properties:props};
     window.dispatchEvent(new CustomEvent('atlas:event',{detail:event}));
   }
-  function captureAttribution(){const attr=E.attribution(current().searchParams);if(Object.keys(attr).length&&attr.utm_medium!=='internal'){set(K.attribution,attr);}}
+  function captureAttribution(){}
   function toast(message){const el=document.getElementById('toast');if(!el)return;el.textContent=message;el.classList.add('show');clearTimeout(toastTimer);toastTimer=setTimeout(()=>el.classList.remove('show'),3500);}
-  function save(){const saved=set(K.plan,plan);if(!saved){toast('Browser storage is unavailable. Export your plan to keep a copy.');return false;}try{if(document.body.dataset.page==='planner')history.replaceState(null,'',PREVIEW?'#/plan/':'/plan/');}catch{}return true;}
+  function save(){const saved=set(K.plan,plan);if(!saved){toast('Browser storage is unavailable. Export your plan to keep a copy.');return false;}try{if(document.body.dataset.page==='planner')history.replaceState(null,'',PREVIEW?'#/plan/':'/plan/');}catch{}track('plan_saved');return true;}
   function navigate(path){if(PREVIEW){if(location.hash==='#'+path){renderPreview();}else{location.hash=path;}}else{location.assign(path);}}
   function renderPreview(){
     const r=current(),path=r.pathname.endsWith('/')?r.pathname:r.pathname+'/';
