@@ -1,0 +1,66 @@
+{
+  "base": "https://castward.app",
+  "screens": [
+    {
+      "page": "home",
+      "width": 390,
+      "overflow": false,
+      "images": "loaded",
+      "title": "Fishing Atlas | Find your water. Go prepared."
+    },
+    {
+      "page": "trips",
+      "width": 390,
+      "overflow": false,
+      "images": "loaded",
+      "title": "Fishing trip guides by environment, species and region | Fishing Atlas"
+    },
+    {
+      "page": "guide",
+      "width": 390,
+      "overflow": false,
+      "images": "loaded",
+      "title": "Lake Fork bass fishing: cover, launch choice and a compatible setup | Fishing Atlas"
+    },
+    {
+      "page": "videos",
+      "width": 390,
+      "overflow": false,
+      "images": "loaded",
+      "title": "Fishing videos | Castward"
+    },
+    {
+      "page": "home",
+      "width": 1440,
+      "overflow": false,
+      "images": "loaded",
+      "title": "Fishing Atlas | Find your water. Go prepared."
+    },
+    {
+      "page": "trips",
+      "width": 1440,
+      "overflow": false,
+      "images": "loaded",
+      "title": "Fishing trip guides by environment, species and region | Fishing Atlas"
+    },
+    {
+      "page": "guide",
+      "width": 1440,
+      "overflow": false,
+      "images": "loaded",
+      "title": "Lake Fork bass fishing: cover, launch choice and a compatible setup | Fishing Atlas"
+    },
+    {
+      "page": "videos",
+      "width": 1440,
+      "overflow": false,
+      "images": "loaded",
+      "title": "Fishing videos | Castward"
+    }
+  ],
+  "search": true,
+  "menuEscape": true,
+  "habitatFilter": true,
+  "plannerPersistence": true,
+  "pageErrors": []
+}

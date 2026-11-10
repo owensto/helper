@@ -56,3 +56,12 @@
   document.addEventListener('visibilitychange', update);
   update();
 })();
+(() => {
+  const dialog = document.getElementById('search-dialog');
+  const trigger = document.querySelector('.search-toggle');
+  if (!dialog || !trigger) return;
+  trigger.addEventListener('click', () => { dialog.showModal(); document.getElementById('header-search').focus(); });
+  dialog.querySelector('.search-close').addEventListener('click', () => dialog.close());
+  dialog.addEventListener('click', event => { if (event.target === dialog && (event.clientX < dialog.getBoundingClientRect().left || event.clientX > dialog.getBoundingClientRect().right || event.clientY < dialog.getBoundingClientRect().top || event.clientY > dialog.getBoundingClientRect().bottom)) dialog.close(); });
+  dialog.addEventListener('close', () => trigger.focus());
+})();

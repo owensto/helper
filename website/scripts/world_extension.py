@@ -4,6 +4,7 @@ Executed in build.py's namespace after the retained starter routes have rendered
 Only authored records become articles; filters never generate combination pages.
 """
 from collections import Counter
+from photography import photo, water_photo
 from urllib.parse import urlencode
 
 WORLD=json.loads((ROOT/'src/world.json').read_text())
@@ -79,9 +80,8 @@ def trip_card(t):
     attrs={'depth':t.get('contentTier','detailed-guide'),'region':t['region'],'country':t['country'],'water':t['water'],'habitat':'|'.join(t['habitats']),'method':'|'.join(t['methods']),'month':windows,'state':t.get('state',''),'subregion':t.get('subregion',''),'search':' '.join([t.get('candidateTargets',''),t.get('state',''),t.get('subregion',''),t['title'],t['place'],t['country'],t['region'],*t['fish'],*t['habitats'],*t['landscape'],*t['methods']])}
     attr=' '.join(f'data-{k}="{E(v,quote=True)}"' for k,v in attrs.items())
     tier={'detailed-guide':'Source-checked guide','trip-brief':'Source-linked brief','preparation-brief':'Preparation · research pending'}.get(t.get('contentTier'),'Trip profile')
-    art='ocean' if t['water']=='Saltwater' else 'mountain' if any('lake' in h.lower() or 'alpine' in h.lower() for h in t['habitats']) else 'river'
     path=E(t.get('canonicalPath','/trips/'+t['id']+'/'),quote=True)
-    return f'<article class="world-card" data-trip-card {attr}><a class="trip-art" href="{path}" tabindex="-1" aria-hidden="true"><img src="/assets/water-{art}.svg" alt="" width="800" height="600" loading="lazy"></a><div class="world-card-top"><span class="eyebrow">{E(t["country"])} · {E(t["water"])}</span></div><h3><a href="{path}">{E(t["title"])}</a></h3><div class="world-card-bottom"><span>{tier}</span></div></article>'
+    return f'<article class="world-card" data-trip-card {attr}><a class="trip-art" href="{path}" tabindex="-1">{photo(water_photo(t), "(max-width: 700px) 100vw, (max-width: 1000px) 50vw, 33vw")}</a><div class="world-card-top"><span class="eyebrow">{E(t["country"])} · {E(t["water"])}</span></div><h3><a href="{path}">{E(t["title"])}</a></h3><div class="world-card-bottom"><span>{tier}</span></div></article>'
 
 def habitat_card(h):
     n=sum(h['name'] in t['habitats'] for t in TRIPS)

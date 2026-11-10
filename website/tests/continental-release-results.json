@@ -1,11 +1,11 @@
 {
   "passed": true,
   "structuralAssertions": 814,
-  "routes": 1612,
+  "routes": 1613,
   "redirectRoutes": 519,
-  "nonRedirectPages": 1093,
+  "nonRedirectPages": 1094,
   "tripProfiles": 796,
-  "productionSitemapURLsInNonpublicTest": 96,
+  "productionSitemapURLsInNonpublicTest": 97,
   "sourceVerifiedTripPagesEligibleForSearch": 36,
   "checks": [
     "796 unique merged trip profiles",

@@ -1,0 +1,102 @@
+[
+  {
+    "id": "river",
+    "photographer": "Mondakranta Saikia",
+    "sourceUrl": "https://unsplash.com/photos/Xqw7XgnvU3w",
+    "downloadUrl": "https://images.unsplash.com/photo-1521437620269-f477f5437820",
+    "license": "Unsplash License",
+    "licenseUrl": "https://unsplash.com/license",
+    "alt": "Wooden boats on clear river water beneath a wooded cliff.",
+    "widths": [
+      640,
+      1280,
+      2200
+    ],
+    "aspectRatio": [
+      2400,
+      1801
+    ],
+    "treatment": "Slight desaturation; responsive resize",
+    "use": "Representative water imagery, not a photograph of each linked destination"
+  },
+  {
+    "id": "stream",
+    "photographer": "Glen Rushton",
+    "sourceUrl": "https://unsplash.com/photos/7rIJ8THkyzM",
+    "downloadUrl": "https://images.unsplash.com/photo-1636404052981-a107622e09e0",
+    "license": "Unsplash License",
+    "licenseUrl": "https://unsplash.com/license",
+    "alt": "A fly rod rests on a rock beside a forest river.",
+    "widths": [
+      640,
+      1280,
+      2200
+    ],
+    "aspectRatio": [
+      2400,
+      1920
+    ],
+    "treatment": "Slight desaturation; responsive resize",
+    "use": "Representative water imagery, not a photograph of each linked destination"
+  },
+  {
+    "id": "ice",
+    "photographer": "Krzysztof Płocha",
+    "sourceUrl": "https://unsplash.com/photos/8kdLVHT7woY",
+    "downloadUrl": "https://images.unsplash.com/photo-1770752681522-2446c48a7f7c",
+    "license": "Unsplash License",
+    "licenseUrl": "https://unsplash.com/license",
+    "alt": "A snow-covered dock and boats beside a frozen river.",
+    "widths": [
+      640,
+      1280,
+      2200
+    ],
+    "aspectRatio": [
+      2400,
+      1600
+    ],
+    "treatment": "Slight desaturation; responsive resize",
+    "use": "Representative water imagery, not a photograph of each linked destination"
+  },
+  {
+    "id": "coast",
+    "photographer": "Yannick Apollon",
+    "sourceUrl": "https://unsplash.com/photos/rW7W4yVAcuo",
+    "downloadUrl": "https://images.unsplash.com/photo-1679220567464-8d6c659a2088",
+    "license": "Unsplash License",
+    "licenseUrl": "https://unsplash.com/license",
+    "alt": "A small boat sits in open blue-green coastal water.",
+    "widths": [
+      640,
+      1280,
+      2200
+    ],
+    "aspectRatio": [
+      2400,
+      1350
+    ],
+    "treatment": "Slight desaturation; responsive resize",
+    "use": "Representative water imagery, not a photograph of each linked destination"
+  },
+  {
+    "id": "inshore",
+    "photographer": "Gaddafi Rusli",
+    "sourceUrl": "https://unsplash.com/photos/2ueUnL4CkV8",
+    "downloadUrl": "https://images.unsplash.com/photo-1506929562872-bb421503ef21",
+    "license": "Unsplash License",
+    "licenseUrl": "https://unsplash.com/license",
+    "alt": "Small boats rest in shallow water along a forested island shore.",
+    "widths": [
+      640,
+      1280,
+      2200
+    ],
+    "aspectRatio": [
+      2400,
+      2975
+    ],
+    "treatment": "Slight desaturation; responsive resize",
+    "use": "Representative water imagery, not a photograph of each linked destination"
+  }
+]
