@@ -27,3 +27,24 @@ def water_photo(t):
     return 'river'
 def credits():
     return '<section class="section"><div class="wrap narrow prose"><h2>Scene images</h2><p>Our scene images are AI-generated illustrations created with GPT Image. They show representative water environments, not verified views of named destinations.</p><p><a href="/media/scenes/manifest.json">Image sources and descriptions</a></p></div></section>'
+
+TRIP_MANIFEST_PATH = ROOT / 'public/media/trips/manifest.json'
+TRIP_IMAGES = json.loads(TRIP_MANIFEST_PATH.read_text()) if TRIP_MANIFEST_PATH.exists() else {}
+
+def trip_srcset(slug, ext):
+    return ', '.join(f'/media/trips/{slug}-{w}.{ext} {w}w' for w in (640, 1200, 1600))
+
+def trip_photo(trip, sizes='100vw', eager=False):
+    slug = trip.get('id')
+    image = TRIP_IMAGES.get(slug)
+    if not image:
+        return photo(water_photo(trip), sizes, eager)
+    loading = 'loading="eager" fetchpriority="high"' if eager else 'loading="lazy"'
+    return f'<picture class="scene-picture"><source type="image/avif" srcset="{trip_srcset(slug, "avif")}" sizes="{sizes}"><img src="/media/trips/{slug}-1600.webp" srcset="{trip_srcset(slug, "webp")}" sizes="{sizes}" width="{image["width"]}" height="{image["height"]}" alt="{E(image["alt"], quote=True)}" {loading} decoding="async"></picture>'
+
+def trip_metadata(trip):
+    slug = trip.get('id')
+    if slug not in TRIP_IMAGES:
+        return {}
+    return {'ogImage': f'/media/trips/{slug}-1200.webp', 'ogImageAlt': TRIP_IMAGES[slug]['alt'],
+            'photoPreload': f'<link rel="preload" as="image" type="image/avif" imagesrcset="{trip_srcset(slug, "avif")}" imagesizes="100vw" fetchpriority="high">'}

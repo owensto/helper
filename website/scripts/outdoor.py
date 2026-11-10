@@ -1,5 +1,5 @@
 """Outdoor editorial presentation; route and evidence records stay with the atlas."""
-from photography import photo, credits, water_photo
+from photography import photo, credits, water_photo, trip_photo, trip_metadata
 from urllib.parse import urlencode
 
 def install(pages, root, header, footer, brand, featured, trip_card, trips):
@@ -21,8 +21,9 @@ def install(pages, root, header, footer, brand, featured, trip_card, trips):
     for path,p in pages.items():
         if p['kind']=='article' and not p.get('redirectTo'):
             # Use environment images as editorial context, never destination evidence.
-            image='<figure class="guide-landscape">'+photo(water_photo(trip_by_path.get(path,{})), eager=True)+'<figcaption>A water study. Representative scenery, not the named destination. <a href="/about/#photo-credits">Image notes</a></figcaption></figure>'
+            image='<figure class="guide-landscape">'+trip_photo(trip_by_path.get(path,{}), eager=True)+'<figcaption>A water study. Representative scenery, not the named destination. <a href="/about/#photo-credits">Image notes</a></figcaption></figure>'
             p['body']=image+p['body']
+            p.update(trip_metadata(trip_by_path.get(path, {})))
     pages['/about/']['body']+=credits().replace('<section class="section">','<section class="section" id="photo-credits">',1)
     footer=footer.replace('<div class="footer-links">','<div class="footer-links"><a href="/trip-types/">Local trip types</a><a href="/glossary/">Local glossary</a>')
     footer=footer.replace('Release notes','About &amp; image notes').replace('Illustrations are not navigation charts.','Go prepared. Leave the water better.')

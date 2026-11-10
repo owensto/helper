@@ -4,7 +4,7 @@ import re
 from copy import deepcopy
 from html import escape as E
 from urllib.parse import urlencode, urlsplit
-from photography import photo
+from photography import photo, trip_photo
 
 
 def compile_into(world, trips, root):
@@ -140,7 +140,7 @@ def install(pages, root, origin, add, trips, types):
         body += '</tbody></table></div></section><section id="where"><h2>Where to go.</h2><p>' + E(kind['region']) + '. These destination profiles match the named water or departure base. Each retains its own research status.</p><div class="type-destinations">'
         for trip in destinations:
             tier = {'detailed-guide':'Source-checked guide','trip-brief':'Source-linked brief','preparation-brief':'Research pending · preparation profile'}[trip['contentTier']]
-            body += '<div><span class="eyebrow">' + E(tier) + '</span><h3>' + link(trip['canonicalPath'], trip['place']) + '</h3>' + link(planner_url(kind, trip['id']), 'Use this destination preset') + '</div>'
+            body += '<div><a class="trip-art" href="' + E(trip['canonicalPath'], quote=True) + '">' + trip_photo(trip, '(max-width: 700px) 100vw, 50vw') + '</a><span class="eyebrow">' + E(tier) + '</span><h3>' + link(trip['canonicalPath'], trip['place']) + '</h3>' + link(planner_url(kind, trip['id']), 'Use this destination preset') + '</div>'
         body += '</div></section><section id="season"><span class="eyebrow">CHECKED 10 NOVEMBER 2026</span><h2>The season, with context.</h2>' + paragraphs(kind['season']['window']) + citations(kind, season=True)
         if kind['uncertainties']:
             body += '<div class="type-note">' + listing(kind['uncertainties']) + '</div>'
