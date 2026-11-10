@@ -188,6 +188,8 @@ install_guides(pages, ROOT, CONFIG['siteUrl'], add, TRIPS, trip_card, intro, bre
 
 from trust import install as install_trust
 FOOTER = install_trust(pages, add, intro, FOOTER)
+from premium_motion import install as install_premium_motion
+install_premium_motion(pages, ROOT, TRIPS, featured, trip_card)
 trip_paths = {t.get("canonicalPath", "/trips/"+t["id"]+"/") for t in TRIPS}
 for path, page in pages.items():
     page["analyticsKind"] = "trip" if path in trip_paths else page["kind"]

@@ -1,7 +1,7 @@
 (() => {
   'use strict';
   const id='G-4NYGJ2BF32', key='castward.analytics-consent.v1';
-  let allowed=false, loaded=false;
+  let allowed=false, loaded=false, consentReturnFocus;
   const read=()=>{try {const v=JSON.parse(localStorage.getItem(key));return v&&Date.now()-v.at<15552000000?v.choice:null;} catch{return null;}};
   window.dataLayer=window.dataLayer||[];
   window.gtag=function(){window.dataLayer.push(arguments);};
@@ -11,6 +11,7 @@
   window.castwardEvent=event;
   function pageEvent(){const kind=document.body.dataset.analyticsKind;if(kind==='planner')event('plan_start');if(kind==='trip'||kind==='destination')event('trip_view');if(['article','habitat-guide'].includes(kind))event('guide_view');}
   function apply(choice, persist=false) {
+    if(navigator.globalPrivacyControl)choice='reject';
     allowed=choice==='accept';window['ga-disable-'+id]=!allowed;
     if(persist)try{localStorage.setItem(key,JSON.stringify({choice,at:Date.now()}));}catch{}
     banner.hidden=!!choice;
@@ -25,7 +26,7 @@
     }
   }
   apply(navigator.globalPrivacyControl?'reject':read());
-  document.addEventListener('click',e=>{const b=e.target.closest('[data-consent]');if(b)apply(b.dataset.consent,true);if(e.target.closest('[data-cookie-settings]')){banner.hidden=false;banner.querySelector('button').focus();}const a=e.target.closest('a[data-outbound]');if(a&&a.dataset.outbound==='operator')event('outbound_booking_click',{link_domain:new URL(a.href).hostname});});
+  document.addEventListener('click',e=>{const b=e.target.closest('[data-consent]');if(b){apply(b.dataset.consent,true);consentReturnFocus?.focus();}if(e.target.closest('[data-cookie-settings]')){consentReturnFocus=e.target.closest('[data-cookie-settings]');banner.hidden=false;banner.querySelector('button').focus();}const a=e.target.closest('a[data-outbound]');if(a&&a.dataset.outbound==='operator')event('outbound_booking_click',{link_domain:new URL(a.href).hostname});});
   window.addEventListener('storage',e=>{if(e.key===key)apply(read());});
   window.addEventListener('atlas:event',e=>{if(e.detail.event==='atlas_search')event('search');if(e.detail.event==='plan_saved')event('plan_save');});
   let searchTimer;document.addEventListener('input',e=>{if(['trip-search','destination-search'].includes(e.target.id)){clearTimeout(searchTimer);searchTimer=setTimeout(()=>event('search'),800);}});

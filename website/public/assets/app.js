@@ -79,13 +79,17 @@
   }
   function filterDestinations(){const query=(document.getElementById('destination-search')?.value||'').toLowerCase().trim();let shown=0;document.querySelectorAll('[data-destination-card]').forEach(el=>{const matches=(activeFilter==='all'||el.dataset.styles.split(' ').includes(activeFilter))&&el.dataset.search.includes(query);el.hidden=!matches;if(matches)shown++;});const empty=document.getElementById('destination-empty');if(empty)empty.hidden=shown>0;}
 
-  let libraryLimit=24;
+  let libraryLimit=24,libraryReady=false;
   function initWorldLibrary(){
     const grid=document.getElementById('trip-grid');if(!grid)return;
     const params=current().searchParams;
     const search=document.getElementById('trip-search');if(search)search.value=params.get('q')||'';
     document.querySelectorAll('[data-library-select]').forEach(el=>{const v=params.get(el.dataset.librarySelect)||'';el.value=[...el.options].some(o=>o.value===v)?v:'';});
-    filterWorldLibrary();
+    const order=[...grid.children];
+    const label=document.createElement('label');label.innerHTML='<span>Sort trips</span><select id="trip-sort"><option value="recommended">Recommended</option><option value="az">Name: A to Z</option><option value="za">Name: Z to A</option></select>';
+    document.querySelector('[data-library-filter]')?.append(label);
+    label.querySelector('select').addEventListener('change',e=>{const cards=[...order];if(e.target.value!== 'recommended')cards.sort((a,b)=>a.querySelector('h3').textContent.localeCompare(b.querySelector('h3').textContent)*(e.target.value==='za'?-1:1));grid.append(...cards);filterWorldLibrary();});
+    filterWorldLibrary();libraryReady=true;
   }
   function filterWorldLibrary(keepLimit=false){
     if(!keepLimit)libraryLimit=24;
@@ -104,6 +108,7 @@
     const more=document.getElementById('load-more-trips');if(more)more.hidden=shown<=libraryLimit;
     const pageStatus=document.getElementById('trip-page-status');if(pageStatus)pageStatus.textContent=`Showing ${Math.min(shown,libraryLimit)} of ${shown} matches`;
     document.getElementById('season-filter-note').hidden=!active.some(([k])=>k==='month');
+    if(libraryReady)document.dispatchEvent(new CustomEvent('castward:list-change',{detail:document.getElementById('trip-grid')}));
   }
 
   function configureForms(){
