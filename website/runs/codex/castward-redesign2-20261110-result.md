@@ -29,7 +29,7 @@ The checks passed:
 - Static checks: one H1, descriptions, and internal links.
 - Release checks: 814 structural assertions.
 - Video catalog checks, including all 13 homepage films and their structured data.
-- JavaScript syntax and Git whitespace checks.
+- JavaScript syntax and source whitespace checks. The bundled font licenses retain their upstream whitespace.
 - Comparison of 1,614 HTML files, including the alternate 404 file: identical canonicals, robots rules, and structured data.
 - Identical sitemap and redirect rules.
 - Live search, habitat filters, mobile menu, Escape behavior, and saved planner values at both screen widths.
