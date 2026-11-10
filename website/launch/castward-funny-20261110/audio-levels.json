@@ -1,0 +1,50 @@
+{
+  "bait-thief": {
+    "input_i": "-15.98",
+    "input_tp": "-1.98",
+    "input_lra": "4.90",
+    "input_thresh": "-26.29",
+    "output_i": "-14.73",
+    "output_tp": "-2.50",
+    "output_lra": "1.70",
+    "output_thresh": "-24.91",
+    "normalization_type": "dynamic",
+    "target_offset": "0.73"
+  },
+  "lure-critic": {
+    "input_i": "-16.84",
+    "input_tp": "-2.00",
+    "input_lra": "5.90",
+    "input_thresh": "-27.68",
+    "output_i": "-15.69",
+    "output_tp": "-2.50",
+    "output_lra": "6.70",
+    "output_thresh": "-26.50",
+    "normalization_type": "dynamic",
+    "target_offset": "1.69"
+  },
+  "captain-guitar": {
+    "input_i": "-16.66",
+    "input_tp": "-1.56",
+    "input_lra": "7.30",
+    "input_thresh": "-26.97",
+    "output_i": "-15.17",
+    "output_tp": "-2.50",
+    "output_lra": "3.70",
+    "output_thresh": "-25.37",
+    "normalization_type": "dynamic",
+    "target_offset": "1.17"
+  },
+  "fish-tale": {
+    "input_i": "-16.82",
+    "input_tp": "-2.00",
+    "input_lra": "4.90",
+    "input_thresh": "-28.67",
+    "output_i": "-15.81",
+    "output_tp": "-2.50",
+    "output_lra": "22.90",
+    "output_thresh": "-27.34",
+    "normalization_type": "dynamic",
+    "target_offset": "1.81"
+  }
+}

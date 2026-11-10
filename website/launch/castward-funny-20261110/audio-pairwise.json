@@ -1,0 +1,58 @@
+{
+  "bait-thief": [
+    [
+      "islamorada-skiff-not-waders",
+      0.6464328656
+    ],
+    [
+      "lake-fork-hidden-cover",
+      0.6314587754500001
+    ],
+    [
+      "marlin-tail-walk",
+      0.6174494586874999
+    ]
+  ],
+  "lure-critic": [
+    [
+      "cup-of-light-20261109",
+      0.6069186669562501
+    ],
+    [
+      "desk-quest-star-20261109",
+      0.606019817984375
+    ],
+    [
+      "parcel-city-bridge-20261109",
+      0.5973958735656251
+    ]
+  ],
+  "captain-guitar": [
+    [
+      "pixel-fish-catch",
+      0.7021260311064514
+    ],
+    [
+      "paper-fish-chase",
+      0.7021260311064514
+    ],
+    [
+      "bass-strike-a-el-music",
+      0.7021260311064514
+    ]
+  ],
+  "fish-tale": [
+    [
+      "coin-market-20261109",
+      0.5940703364625
+    ],
+    [
+      "cup-of-light-20261109",
+      0.592067432746875
+    ],
+    [
+      "desk-quest-star-20261109",
+      0.58511559908125
+    ]
+  ]
+}

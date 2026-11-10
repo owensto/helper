@@ -13,9 +13,9 @@ class Media(HTMLParser):
 class VideoTests(unittest.TestCase):
     def test_catalog_and_rendered_surfaces(self):
         catalog=json.loads((ROOT/'src/videos.json').read_text())
-        self.assertEqual(len(catalog),9)
-        self.assertEqual(len({x['slug'] for x in catalog}),9)
-        for path,expected in [('/',9),('/videos/',9)]+[(urlsplit(v['page_url']).path,1) for v in catalog]:
+        self.assertEqual(len(catalog),13)
+        self.assertEqual(len({x['slug'] for x in catalog}),13)
+        for path,expected in [('/',13),('/videos/',13)]+[(path,sum(urlsplit(v['page_url']).path==path for v in catalog)) for path in {urlsplit(v['page_url']).path for v in catalog}]:
             text=(ROOT/'dist'/path.strip('/')/'index.html').read_text()
             parsed=Media(text)
             self.assertEqual(len(parsed.videos),expected,path)

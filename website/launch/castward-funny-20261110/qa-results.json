@@ -1,0 +1,62 @@
+{
+  "bait-thief": {
+    "uniqueness": {
+      "result": "PASS",
+      "errors": [],
+      "new_formats_today": 15,
+      "new_style_shortfall": 0
+    },
+    "baseline_count": 33,
+    "frames": 480,
+    "width": 1080,
+    "height": 1920,
+    "duration": 16,
+    "min_frame_change": 0.016975308641975308,
+    "sha256": "2b97f4cd8bee8553759876b5865da4a69579e128d7854bc982927520eb11fc63"
+  },
+  "lure-critic": {
+    "uniqueness": {
+      "result": "PASS",
+      "errors": [],
+      "new_formats_today": 15,
+      "new_style_shortfall": 0
+    },
+    "baseline_count": 33,
+    "frames": 480,
+    "width": 1080,
+    "height": 1920,
+    "duration": 16,
+    "min_frame_change": 0.0013503086419753086,
+    "sha256": "e59722bf98fd66506e998d8f5368aae2aa2c3804572487b3f4a71abe889e02ed"
+  },
+  "captain-guitar": {
+    "uniqueness": {
+      "result": "PASS",
+      "errors": [],
+      "new_formats_today": 15,
+      "new_style_shortfall": 0
+    },
+    "baseline_count": 33,
+    "frames": 480,
+    "width": 1080,
+    "height": 1920,
+    "duration": 16,
+    "min_frame_change": 0.00019290123456790122,
+    "sha256": "6d20d3c6ab38f68cdc67fce6c78dfcb8dd0104704517bd5225bf2a8afdbebd04"
+  },
+  "fish-tale": {
+    "uniqueness": {
+      "result": "PASS",
+      "errors": [],
+      "new_formats_today": 15,
+      "new_style_shortfall": 0
+    },
+    "baseline_count": 33,
+    "frames": 480,
+    "width": 1080,
+    "height": 1920,
+    "duration": 16,
+    "min_frame_change": 0.0005787037037037037,
+    "sha256": "eabff2c4481d86421e5297478e99c62cf2651a6015fc0b87cbac4159a0a3371d"
+  }
+}

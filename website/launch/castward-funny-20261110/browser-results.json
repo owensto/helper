@@ -1,0 +1,98 @@
+{
+  "played": [
+    {
+      "width": 720,
+      "height": 1280,
+      "duration": 16,
+      "time": 0.011529,
+      "error": null
+    },
+    {
+      "width": 720,
+      "height": 1280,
+      "duration": 16,
+      "time": 0.043423,
+      "error": null
+    },
+    {
+      "width": 720,
+      "height": 1280,
+      "duration": 16,
+      "time": 0.036789,
+      "error": null
+    },
+    {
+      "width": 720,
+      "height": 1280,
+      "duration": 16,
+      "time": 0.041098,
+      "error": null
+    },
+    {
+      "width": 720,
+      "height": 1280,
+      "duration": 16,
+      "time": 0.045441,
+      "error": null
+    },
+    {
+      "width": 720,
+      "height": 1280,
+      "duration": 16,
+      "time": 0.055015,
+      "error": null
+    },
+    {
+      "width": 720,
+      "height": 1280,
+      "duration": 16,
+      "time": 0.06011,
+      "error": null
+    },
+    {
+      "width": 720,
+      "height": 1280,
+      "duration": 16,
+      "time": 0.030627,
+      "error": null
+    },
+    {
+      "width": 720,
+      "height": 1280,
+      "duration": 16,
+      "time": 0.046184,
+      "error": null
+    },
+    {
+      "width": 720,
+      "height": 1280,
+      "duration": 16,
+      "time": 0.047976,
+      "error": null
+    },
+    {
+      "width": 720,
+      "height": 1280,
+      "duration": 16,
+      "time": 0.053016,
+      "error": null
+    },
+    {
+      "width": 720,
+      "height": 1280,
+      "duration": 16,
+      "time": 0.054969,
+      "error": null
+    },
+    {
+      "width": 720,
+      "height": 1280,
+      "duration": 16,
+      "time": 0.017845,
+      "error": null
+    }
+  ],
+  "lazyDeferredAtStart": 10,
+  "mobileOverflow": false,
+  "errors": []
+}

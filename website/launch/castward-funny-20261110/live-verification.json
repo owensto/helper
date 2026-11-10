@@ -1,0 +1,68 @@
+[
+  {
+    "url": "https://castward.app/",
+    "status": 200,
+    "players": 13,
+    "schema": 13
+  },
+  {
+    "url": "https://castward.app/videos/",
+    "status": 200,
+    "players": 13,
+    "schema": 13
+  },
+  {
+    "url": "https://castward.app/north-america/united-states/texas/lake-fork-lake-and-reservoir-bass/",
+    "status": 200,
+    "players": 5,
+    "schema": 5
+  },
+  {
+    "url": "https://castward.app/media/videos/bait-thief.mp4",
+    "status": 200
+  },
+  {
+    "url": "https://castward.app/media/videos/bait-thief.jpg",
+    "status": 200
+  },
+  {
+    "url": "https://castward.app/media/videos/bait-thief.vtt",
+    "status": 200
+  },
+  {
+    "url": "https://castward.app/media/videos/lure-critic.mp4",
+    "status": 200
+  },
+  {
+    "url": "https://castward.app/media/videos/lure-critic.jpg",
+    "status": 200
+  },
+  {
+    "url": "https://castward.app/media/videos/lure-critic.vtt",
+    "status": 200
+  },
+  {
+    "url": "https://castward.app/media/videos/captain-guitar.mp4",
+    "status": 200
+  },
+  {
+    "url": "https://castward.app/media/videos/captain-guitar.jpg",
+    "status": 200
+  },
+  {
+    "url": "https://castward.app/media/videos/captain-guitar.vtt",
+    "status": 200
+  },
+  {
+    "url": "https://castward.app/media/videos/fish-tale.mp4",
+    "status": 200
+  },
+  {
+    "url": "https://castward.app/media/videos/fish-tale.jpg",
+    "status": 200
+  },
+  {
+    "url": "https://castward.app/media/videos/fish-tale.vtt",
+    "status": 200
+  }
+]
