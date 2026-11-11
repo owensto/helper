@@ -1,8 +1,5 @@
 """Run after a production build: python3 tests/trip-images.test.py."""
 import json
-import sys
-sys.path.insert(0, str(__import__("pathlib").Path(__file__).resolve().parents[1] / "scripts"))
-from preview_images import TRIP_PREVIEWS, available, image_url
 from html import escape
 from html.parser import HTMLParser
 from pathlib import Path
@@ -15,9 +12,6 @@ for trip in trips:
     slug = trip['id']
     path = trip.get('canonicalPath', '/trips/' + slug + '/')
     page = (ROOT / 'dist' / path.strip('/') / 'index.html').read_text()
-    if slug not in images and available(TRIP_PREVIEWS.get(slug)):
-        assert '/' + image_url(TRIP_PREVIEWS[slug], 640, 'avif') in page, slug
-        continue
     if slug not in images:
         assert '<figure class="guide-landscape"><picture class="scene-picture"><source type="image/avif" srcset="/media/scenes/' in page, slug
         continue
@@ -31,8 +25,7 @@ for trip in trips:
         for ext in ('avif', 'webp'):
             assert (ROOT / 'dist' / f'{base[1:]}-{width}.{ext}').is_file()
 assert 'AI-generated illustrations created with GPT Image' in (ROOT / 'dist/about/index.html').read_text()
-preview_trips = sum(t['id'] not in images and available(TRIP_PREVIEWS.get(t['id'])) for t in trips)
-print(f'Passed: {len(images)} trip scenes, {preview_trips} preview scene overrides, {len(trips) - len(images) - preview_trips} shared environment heroes, metadata, responsive assets, and credits.')
+print(f'Passed: {len(images)} trip scenes, {len(trips) - len(images)} water-type fallback heroes, metadata, responsive assets, and credits.')
 
 class SceneChecks(HTMLParser):
     def handle_starttag(self, tag, attrs):

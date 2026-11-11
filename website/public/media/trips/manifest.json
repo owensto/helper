@@ -107,6 +107,18 @@
     "height": 1067,
     "width": 1600
   },
+  "g-australia-lake-eucumbene": {
+    "ai_generated": true,
+    "alt": "Illustration: a trout-fishing boat on a lake below grassy highland hills, Lake Eucumbene, Australia",
+    "height": 1067,
+    "width": 1600
+  },
+  "g-australia-lake-jindabyne": {
+    "ai_generated": true,
+    "alt": "Illustration: a trout boat beside granite shores and mountain ridges, Lake Jindabyne, Australia",
+    "height": 1067,
+    "width": 1600
+  },
   "g-austria-formarinsee-arlberg": {
     "ai_generated": true,
     "alt": "Illustration: a fly angler beside an emerald alpine lake below layered limestone cliffs, Formarinsee, Austria",
@@ -230,6 +242,30 @@
   "g-belize-turneffe-atoll": {
     "ai_generated": true,
     "alt": "Illustration: a poling skiff above clear seagrass flats with low mangrove islets at Turneffe Atoll, Belize",
+    "height": 1067,
+    "width": 1600
+  },
+  "g-bhutan-bumthang-valley": {
+    "ai_generated": true,
+    "alt": "Illustration: a fly angler on a grassy river bank beneath misty conifer-covered ridges, Bumthang Valley, Bhutan",
+    "height": 1067,
+    "width": 1600
+  },
+  "g-bhutan-haa-river": {
+    "ai_generated": true,
+    "alt": "Illustration: a bank angler beside a stony river and conifer-covered mountain valley, Haa River, Bhutan",
+    "height": 1067,
+    "width": 1600
+  },
+  "g-bhutan-manas-river-lodge": {
+    "ai_generated": true,
+    "alt": "Illustration: an angler and guide on a river raft below misty subtropical forest, Manas River, Bhutan",
+    "height": 1067,
+    "width": 1600
+  },
+  "g-bhutan-paro-valley": {
+    "ai_generated": true,
+    "alt": "Illustration: a fly angler on a cobble bank below meadows and pine-covered mountains, Paro Valley, Bhutan",
     "height": 1067,
     "width": 1600
   },
@@ -368,6 +404,12 @@
   "g-colombia-tomo-river": {
     "ai_generated": true,
     "alt": "Illustration: a guided fishing boat on a lowland river beside pale sand and gallery forest, Tomo River, Colombia",
+    "height": 1067,
+    "width": 1600
+  },
+  "g-cook-islands-aitutaki": {
+    "ai_generated": true,
+    "alt": "Illustration: a fly-fishing skiff on clear lagoon flats near palm islets, Aitutaki, Cook Islands",
     "height": 1067,
     "width": 1600
   },
@@ -527,6 +569,48 @@
     "height": 1067,
     "width": 1600
   },
+  "g-federated-states-of-micronesia-pohnpei": {
+    "ai_generated": true,
+    "alt": "Illustration: a reef-fishing boat below misty volcanic mountains, Pohnpei, Micronesia",
+    "height": 1067,
+    "width": 1600
+  },
+  "g-federated-states-of-micronesia-yap": {
+    "ai_generated": true,
+    "alt": "Illustration: a trolling boat beyond a barrier reef and green island coast, Yap, Micronesia",
+    "height": 1067,
+    "width": 1600
+  },
+  "g-fiji-coral-coast-cuvu-beach": {
+    "ai_generated": true,
+    "alt": "Illustration: an offshore fishing boat beyond a reef and palm beach, Coral Coast, Fiji",
+    "height": 1067,
+    "width": 1600
+  },
+  "g-fiji-mamanuca-islands": {
+    "ai_generated": true,
+    "alt": "Illustration: a fishing boat near turquoise reefs and low island hills, Mamanuca Islands, Fiji",
+    "height": 1067,
+    "width": 1600
+  },
+  "g-fiji-savusavu": {
+    "ai_generated": true,
+    "alt": "Illustration: a trolling boat on deep blue water below forested hills, Savusavu, Fiji",
+    "height": 1067,
+    "width": 1600
+  },
+  "g-fiji-taveuni-makaira": {
+    "ai_generated": true,
+    "alt": "Illustration: a trolling boat below rainforest-covered volcanic slopes, Taveuni, Fiji",
+    "height": 1067,
+    "width": 1600
+  },
+  "g-fiji-yasawa-islands": {
+    "ai_generated": true,
+    "alt": "Illustration: a casting boat near steep volcanic island ridges, Yasawa Islands, Fiji",
+    "height": 1067,
+    "width": 1600
+  },
   "g-finland-lake-inari": {
     "ai_generated": true,
     "alt": "Illustration: a fishing boat among rocky pine islands with distant rounded fells, Lake Inari, Finland",
@@ -665,6 +749,30 @@
     "height": 1067,
     "width": 1600
   },
+  "g-india-south-andaman-fishing-grounds": {
+    "ai_generated": true,
+    "alt": "Illustration: anglers in a guide boat beside forested tropical islands, South Andaman, India",
+    "height": 1067,
+    "width": 1600
+  },
+  "g-indonesia-bali": {
+    "ai_generated": true,
+    "alt": "Illustration: a charter boat off a dark sand coast with palms and a hazy volcanic mountain, Bali, Indonesia",
+    "height": 1067,
+    "width": 1600
+  },
+  "g-indonesia-komodo-region": {
+    "ai_generated": true,
+    "alt": "Illustration: a guided fishing boat beside turquoise reefs and rugged savanna-covered islands, Komodo region, Indonesia",
+    "height": 1067,
+    "width": 1600
+  },
+  "g-indonesia-lombok-and-gili-area": {
+    "ai_generated": true,
+    "alt": "Illustration: a fishing outrigger beside a tropical reef with a palm island and distant volcanic mountains, Lombok and Gili, Indonesia",
+    "height": 1067,
+    "width": 1600
+  },
   "g-ireland-lough-carra": {
     "ai_generated": true,
     "alt": "Illustration: trout anglers in a lake boat above pale marl shallows with reeds and wooded islands, Lough Carra, Ireland",
@@ -731,6 +839,54 @@
     "height": 1067,
     "width": 1600
   },
+  "g-japan-lake-akan": {
+    "ai_generated": true,
+    "alt": "Illustration: a fishing boat on a forest-lined volcanic lake below a mountain, Lake Akan, Japan",
+    "height": 1067,
+    "width": 1600
+  },
+  "g-japan-lake-biwa": {
+    "ai_generated": true,
+    "alt": "Illustration: a bass boat beside reeds with distant mountains, Lake Biwa, Japan",
+    "height": 1067,
+    "width": 1600
+  },
+  "g-japan-takayama-area-guided-waters": {
+    "ai_generated": true,
+    "alt": "Illustration: a fly angler beside a clear mountain stream and forested slopes near Takayama, Japan",
+    "height": 1067,
+    "width": 1600
+  },
+  "g-japan-tokyo-bay": {
+    "ai_generated": true,
+    "alt": "Illustration: a small lure-fishing boat on estuary water at dawn, Tokyo Bay, Japan",
+    "height": 1067,
+    "width": 1600
+  },
+  "g-jordan-aqaba": {
+    "ai_generated": true,
+    "alt": "Illustration: a fishing boat on blue reef water below desert mountains, Aqaba, Jordan",
+    "height": 1067,
+    "width": 1600
+  },
+  "g-kiribati-kiritimati-offshore-waters": {
+    "ai_generated": true,
+    "alt": "Illustration: an offshore trolling boat beside a low coral coast, Kiritimati, Kiribati",
+    "height": 1067,
+    "width": 1600
+  },
+  "g-kiribati-kiritimati-saltwater-flats": {
+    "ai_generated": true,
+    "alt": "Illustration: a fly-fishing skiff on broad sandy lagoon flats, Kiritimati, Kiribati",
+    "height": 1067,
+    "width": 1600
+  },
+  "g-kiribati-tabuaeran-fanning-island": {
+    "ai_generated": true,
+    "alt": "Illustration: a fly-fishing skiff beside a coconut-palm atoll rim, Tabuaeran, Kiribati",
+    "height": 1067,
+    "width": 1600
+  },
   "g-latvia-lake-burtnieks": {
     "ai_generated": true,
     "alt": "Illustration: a fishing boat on Lake Burtnieks beside reed beds, meadows and mixed woodland, Latvia",
@@ -791,9 +947,63 @@
     "height": 1067,
     "width": 1600
   },
+  "g-malaysia-kuala-rompin": {
+    "ai_generated": true,
+    "alt": "Illustration: a charter boat on blue-green sea beside a low tropical coast, Kuala Rompin, Malaysia",
+    "height": 1067,
+    "width": 1600
+  },
+  "g-malaysia-royal-belumtemenggor": {
+    "ai_generated": true,
+    "alt": "Illustration: a guided fishing boat among standing timber below misty rainforest hills, Royal Belum-Temenggor, Malaysia",
+    "height": 1067,
+    "width": 1600
+  },
+  "g-malaysia-sabah-borneo-program": {
+    "ai_generated": true,
+    "alt": "Illustration: a guided fishing boat on a quiet river beneath dense tropical rainforest, Sabah, Borneo",
+    "height": 1067,
+    "width": 1600
+  },
+  "g-maldives-baa-atoll": {
+    "ai_generated": true,
+    "alt": "Illustration: a fly-fishing skiff beside a curved sandbar and palm island, Baa Atoll, Maldives",
+    "height": 1067,
+    "width": 1600
+  },
+  "g-maldives-kaafu-atoll": {
+    "ai_generated": true,
+    "alt": "Illustration: a flats skiff on turquoise water with a palm-covered coral island, Kaafu Atoll, Maldives",
+    "height": 1067,
+    "width": 1600
+  },
+  "g-maldives-laamu-atoll": {
+    "ai_generated": true,
+    "alt": "Illustration: an offshore charter boat beyond a palm-lined atoll reef, Laamu Atoll, Maldives",
+    "height": 1067,
+    "width": 1600
+  },
+  "g-maldives-noonu-atoll": {
+    "ai_generated": true,
+    "alt": "Illustration: a small fly-fishing skiff on shallow flats beside a palm island, Noonu Atoll, Maldives",
+    "height": 1067,
+    "width": 1600
+  },
   "g-malta-gozo-offshore": {
     "ai_generated": true,
     "alt": "Illustration: a fishing boat off Gozo with layered honey-colored limestone sea cliffs, Malta",
+    "height": 1067,
+    "width": 1600
+  },
+  "g-marshall-islands-arno-atoll": {
+    "ai_generated": true,
+    "alt": "Illustration: a fishing boat in a turquoise lagoon beside palm islets, Arno Atoll, Marshall Islands",
+    "height": 1067,
+    "width": 1600
+  },
+  "g-marshall-islands-majuro": {
+    "ai_generated": true,
+    "alt": "Illustration: an offshore trolling boat beyond a low palm-covered atoll, Majuro, Marshall Islands",
     "height": 1067,
     "width": 1600
   },
@@ -881,6 +1091,18 @@
     "height": 1067,
     "width": 1600
   },
+  "g-nepal-setikarnali-river-system": {
+    "ai_generated": true,
+    "alt": "Illustration: a fishing raft on a blue-green river below forested slopes and rock faces, Seti-Karnali, Nepal",
+    "height": 1067,
+    "width": 1600
+  },
+  "g-nepal-trishuli-river": {
+    "ai_generated": true,
+    "alt": "Illustration: a fishing raft on a calm pool below boulder banks and green terraced slopes, Trishuli River, Nepal",
+    "height": 1067,
+    "width": 1600
+  },
   "g-netherlands-amsterdam-canals-and-ij": {
     "ai_generated": true,
     "alt": "Illustration: a lure angler on a canal quay with an arch bridge and autumn trees, Amsterdam, Netherlands",
@@ -890,6 +1112,24 @@
   "g-netherlands-sneekermeer-friesland": {
     "ai_generated": true,
     "alt": "Illustration: two anglers in a small lake boat beside reed beds and flat polders, Sneekermeer, Netherlands",
+    "height": 1067,
+    "width": 1600
+  },
+  "g-new-zealand-tongariro-river-lodge-based-fishing": {
+    "ai_generated": true,
+    "alt": "Illustration: a fly angler on a gravel bank beside a forest-lined river, Tongariro River, New Zealand",
+    "height": 1067,
+    "width": 1600
+  },
+  "g-new-zealand-upper-tongariro-river-raft-access": {
+    "ai_generated": true,
+    "alt": "Illustration: a fly angler and river raft beside a forested pool on the Upper Tongariro River, New Zealand",
+    "height": 1067,
+    "width": 1600
+  },
+  "g-niue-niue-ocean-fishing-charter": {
+    "ai_generated": true,
+    "alt": "Illustration: a trolling boat beside raised limestone sea cliffs, Niue",
     "height": 1067,
     "width": 1600
   },
@@ -917,6 +1157,30 @@
     "height": 1067,
     "width": 1600
   },
+  "g-oman-hallaniyat-islands": {
+    "ai_generated": true,
+    "alt": "Illustration: a casting boat near barren rocky island cliffs, Hallaniyat Islands, Oman",
+    "height": 1067,
+    "width": 1600
+  },
+  "g-oman-hasik": {
+    "ai_generated": true,
+    "alt": "Illustration: a coastal fishing boat below layered limestone cliffs, Hasik, Oman",
+    "height": 1067,
+    "width": 1600
+  },
+  "g-palau-palau-swings-bottom-fishing-charter": {
+    "ai_generated": true,
+    "alt": "Illustration: a bottom-fishing boat among turquoise reefs and limestone islands, Palau",
+    "height": 1067,
+    "width": 1600
+  },
+  "g-palau-palau-swings-trolling-charter": {
+    "ai_generated": true,
+    "alt": "Illustration: a trolling boat near rounded forested limestone islands, Palau",
+    "height": 1067,
+    "width": 1600
+  },
   "g-panama-gatun-lake-gamboa": {
     "ai_generated": true,
     "alt": "Illustration: anglers in a skiff among submerged tree trunks with rainforest behind, Gatún Lake near Gamboa, Panama",
@@ -932,6 +1196,12 @@
   "g-panama-isla-montuosa": {
     "ai_generated": true,
     "alt": "Illustration: a fishing charter boat on blue Pacific water below a forested island and rocky shore, Isla Montuosa, Panama",
+    "height": 1067,
+    "width": 1600
+  },
+  "g-papua-new-guinea-wari-long-reef-milne-bay": {
+    "ai_generated": true,
+    "alt": "Illustration: a casting boat along a coral reef with tropical islands behind, Milne Bay, Papua New Guinea",
     "height": 1067,
     "width": 1600
   },
@@ -965,6 +1235,18 @@
     "height": 1067,
     "width": 1600
   },
+  "g-philippines-pilar-siargao": {
+    "ai_generated": true,
+    "alt": "Illustration: an outrigger charter boat with rods beyond a palm-fringed reef coast, Pilar, Siargao, Philippines",
+    "height": 1067,
+    "width": 1600
+  },
+  "g-philippines-subic-bay-offshore": {
+    "ai_generated": true,
+    "alt": "Illustration: a charter boat on blue sea below forested hills and rocky headlands, Subic Bay offshore, Philippines",
+    "height": 1067,
+    "width": 1600
+  },
   "g-poland-lake-mamry": {
     "ai_generated": true,
     "alt": "Illustration: a fishing boat beside reed-lined wooded islands on Lake Mamry, Poland",
@@ -989,9 +1271,27 @@
     "height": 1067,
     "width": 1600
   },
+  "g-qatar-doha-charter-program": {
+    "ai_generated": true,
+    "alt": "Illustration: a coastal fishing launch beside a low sandy shoreline, Doha, Qatar",
+    "height": 1067,
+    "width": 1600
+  },
   "g-romania-holbina-danube-delta": {
     "ai_generated": true,
     "alt": "Illustration: a pike fishing boat among reeds and water lilies in the Holbina area of the Danube Delta, Romania",
+    "height": 1067,
+    "width": 1600
+  },
+  "g-samoa-apia": {
+    "ai_generated": true,
+    "alt": "Illustration: an offshore trolling boat below cloud-covered volcanic ridges, Apia, Samoa",
+    "height": 1067,
+    "width": 1600
+  },
+  "g-saudi-arabia-jeddah": {
+    "ai_generated": true,
+    "alt": "Illustration: a fishing boat beside turquoise reef water and a low desert coast, Jeddah",
     "height": 1067,
     "width": 1600
   },
@@ -1010,6 +1310,12 @@
   "g-serbia-stari-slankamen-tisadanube-confluence": {
     "ai_generated": true,
     "alt": "Illustration: a fishing boat at the Tisa-Danube confluence with wooded floodplain and loess bluffs, Serbia",
+    "height": 1067,
+    "width": 1600
+  },
+  "g-singapore-singapore-charter-waters": {
+    "ai_generated": true,
+    "alt": "Illustration: a fishing launch near tropical islands on calm coastal water, Singapore",
     "height": 1067,
     "width": 1600
   },
@@ -1049,9 +1355,33 @@
     "height": 1067,
     "width": 1600
   },
+  "g-solomon-islands-munda-roviana-lagoon": {
+    "ai_generated": true,
+    "alt": "Illustration: a fishing boat in a blue lagoon channel among forested islets, Roviana Lagoon, Solomon Islands",
+    "height": 1067,
+    "width": 1600
+  },
+  "g-solomon-islands-papatura-nearby-rivers": {
+    "ai_generated": true,
+    "alt": "Illustration: a lure-fishing boat on a rainforest river near Papatura, Solomon Islands",
+    "height": 1067,
+    "width": 1600
+  },
+  "g-solomon-islands-papatura-reef-waters": {
+    "ai_generated": true,
+    "alt": "Illustration: a fishing boat beside reef water and rainforest islands, Papatura, Solomon Islands",
+    "height": 1067,
+    "width": 1600
+  },
   "g-south-africa-sterkfontein-dam": {
     "ai_generated": true,
     "alt": "Illustration: a fly angler on a rocky lake shore below grassy mountain slopes, Sterkfontein Dam, South Africa",
+    "height": 1067,
+    "width": 1600
+  },
+  "g-south-korea-jeju-coastal-sunset-trip": {
+    "ai_generated": true,
+    "alt": "Illustration: a coastal fishing boat near volcanic cliffs at sunset, Jeju, South Korea",
     "height": 1067,
     "width": 1600
   },
@@ -1064,6 +1394,12 @@
   "g-spain-river-ebro-caspe": {
     "ai_generated": true,
     "alt": "Illustration: a fishing boat on the Ebro near Caspe beneath ochre limestone banks and dry scrub hills, Spain",
+    "height": 1067,
+    "width": 1600
+  },
+  "g-sri-lanka-bolgoda-lake": {
+    "ai_generated": true,
+    "alt": "Illustration: an angler and guide in a small boat beside mangroves and coconut palms, Bolgoda Lake, Sri Lanka",
     "height": 1067,
     "width": 1600
   },
@@ -1133,6 +1469,24 @@
     "height": 1067,
     "width": 1600
   },
+  "g-thailand-bangkok-managed-lake-circuit": {
+    "ai_generated": true,
+    "alt": "Illustration: a bank angler at a calm tropical managed lake near Bangkok, Thailand",
+    "height": 1067,
+    "width": 1600
+  },
+  "g-thailand-gillhams-krabi": {
+    "ai_generated": true,
+    "alt": "Illustration: bank anglers beside a tropical lake with limestone karst hills near Krabi, Thailand",
+    "height": 1067,
+    "width": 1600
+  },
+  "g-tonga-vavau": {
+    "ai_generated": true,
+    "alt": "Illustration: a trolling boat off forested limestone island cliffs, Vava'u, Tonga",
+    "height": 1067,
+    "width": 1600
+  },
   "g-tunisia-djerba": {
     "ai_generated": true,
     "alt": "Illustration: anglers in a small boat on pale blue coastal water beside a flat palm-lined shore, Djerba, Tunisia",
@@ -1160,6 +1514,30 @@
   "g-uganda-victoria-nile-murchison-falls": {
     "ai_generated": true,
     "alt": "Illustration: a guided fishing boat on the Victoria Nile below rocky wooded slopes, Murchison Falls area, Uganda",
+    "height": 1067,
+    "width": 1600
+  },
+  "g-united-arab-emirates-abu-dhabi": {
+    "ai_generated": true,
+    "alt": "Illustration: a fishing boat beside mangrove islands and sandy flats, Abu Dhabi",
+    "height": 1067,
+    "width": 1600
+  },
+  "g-united-arab-emirates-dubai": {
+    "ai_generated": true,
+    "alt": "Illustration: an offshore fishing boat on calm Gulf water beside a hazy desert coast, Dubai",
+    "height": 1067,
+    "width": 1600
+  },
+  "g-united-arab-emirates-fujairah": {
+    "ai_generated": true,
+    "alt": "Illustration: an offshore boat with trolling rods below arid mountain ridges, Fujairah",
+    "height": 1067,
+    "width": 1600
+  },
+  "g-united-arab-emirates-ras-al-khaimah": {
+    "ai_generated": true,
+    "alt": "Illustration: a fishing boat on coastal water below rocky Hajar mountains, Ras Al Khaimah",
     "height": 1067,
     "width": 1600
   },
@@ -1238,6 +1616,24 @@
   "g-uruguay-salto-grande-uruguay-side": {
     "ai_generated": true,
     "alt": "Illustration: anglers in a skiff on the Uruguay River beside rocky grass banks near Salto Grande, Uruguay",
+    "height": 1067,
+    "width": 1600
+  },
+  "g-vanuatu-luganville-espiritu-santo": {
+    "ai_generated": true,
+    "alt": "Illustration: a reef-fishing boat beside tropical forest and coral sand shores, Espiritu Santo, Vanuatu",
+    "height": 1067,
+    "width": 1600
+  },
+  "g-vanuatu-trees-and-fishes-vanuatu": {
+    "ai_generated": true,
+    "alt": "Illustration: a trolling charter boat off forested tropical headlands, Efate, Vanuatu",
+    "height": 1067,
+    "width": 1600
+  },
+  "g-vietnam-phu-quoc-offshore": {
+    "ai_generated": true,
+    "alt": "Illustration: a wooden fishing boat on tropical seawater with forested hills at sunrise, Phu Quoc, Vietnam",
     "height": 1067,
     "width": 1600
   },

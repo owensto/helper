@@ -4,7 +4,7 @@ import json
 import re
 from html import escape as E
 from photography import TRIP_IMAGES, MANIFEST, water_photo, ALIASES, trip_photo
-from preview_images import TRIP_PREVIEWS, available, image_url, placeholder
+from preview_images import placeholder
 
 
 def install(pages, root, origin, add, data, trips, styles):
@@ -22,8 +22,6 @@ def install(pages, root, origin, add, data, trips, styles):
         image_slug = image_trip.get('id', slug)
         if image_slug in TRIP_IMAGES:
             image = '/media/trips/'+image_slug+'-640.webp'
-        elif available(TRIP_PREVIEWS.get(image_slug)):
-            image = '/'+image_url(TRIP_PREVIEWS[image_slug])
         else:
             scene = ALIASES.get(water_photo(t),water_photo(t)) if t else 'hero'
             options = [p for p in MANIFEST if p['slot']==scene and p['kind']=='web' and p['file'].endswith('.webp')]
