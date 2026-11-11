@@ -918,6 +918,178 @@
     "world-S4e77dd69a0": {
       "label": "Heavy Tackle Extended - Fishing Cairns",
       "url": "https://www.fishingcairns.com.au/heavy-tackle-extended-charters/"
+    },
+    "world-g26-fwc-bonefish": {
+      "label": "FWC: bonefish",
+      "url": "https://myfwc.com/fishing/saltwater/recreational/bonefish/"
+    },
+    "world-g26-fwc-monroe": {
+      "label": "FWC: where to saltwater fish — Monroe County",
+      "url": "https://myfwc.com/fishing/saltwater/outreach/wheretofish/"
+    },
+    "world-g26-fwc-permit": {
+      "label": "FWC: permit regulations",
+      "url": "https://myfwc.com/fishing/saltwater/recreational/permit/"
+    },
+    "world-g26-fwc-permit-bio": {
+      "label": "FWC: permit species profile",
+      "url": "https://myfwc.com/wildlifehabitats/profiles/saltwater/jacks/permit/"
+    },
+    "world-g26-fwc-visitors": {
+      "label": "FWC: visitor licenses",
+      "url": "https://myfwc.com/license/recreational/visitors/"
+    },
+    "world-g26-fwc-charter": {
+      "label": "FWC: saltwater charter license coverage",
+      "url": "https://myfwc.com/license/commercial/saltwater/charter/"
+    },
+    "world-g26-fwc-salt": {
+      "label": "FWC: saltwater recreational regulations",
+      "url": "https://myfwc.com/fishing/saltwater/recreational/"
+    },
+    "world-g26-fwc-fresh": {
+      "label": "FWC: freshwater recreational regulations",
+      "url": "https://myfwc.com/fishing/freshwater/regulations/"
+    },
+    "world-g26-fwc-okee": {
+      "label": "FWC: Lake Okeechobee fishing and forecast",
+      "url": "https://myfwc.com/fishing/freshwater/sites-forecasts/s/lake-okeechobee/"
+    },
+    "world-g26-fwc-ramps": {
+      "label": "FWC: boat ramps and access",
+      "url": "https://myfwc.com/boating/boat-ramps-access/"
+    },
+    "world-g26-noaa-keys": {
+      "label": "NOAA: Florida Keys sanctuary fishing regulations",
+      "url": "https://floridakeys.noaa.gov/visitor_information/things-to-do/fishing-regulations.html"
+    },
+    "world-g26-nws-keys": {
+      "label": "NWS: Florida Keys marine forecasts",
+      "url": "https://www.weather.gov/key/marine"
+    },
+    "world-g26-nws-marine": {
+      "label": "NWS: understand a marine forecast",
+      "url": "https://www.weather.gov/safety/safeboating-marine"
+    },
+    "world-g26-uscg": {
+      "label": "US Coast Guard: checks before a passenger charter",
+      "url": "https://content.govdelivery.com/accounts/USDHSCG/bulletins/32b7fd9"
+    },
+    "world-g26-noaa-hms": {
+      "label": "NOAA Fisheries: Atlantic highly migratory species, for-hire fishing",
+      "url": "https://www.fisheries.noaa.gov/topic/atlantic-highly-migratory-species/for-hire-fishing"
+    },
+    "world-g26-fork": {
+      "label": "TPWD: Lake Fork fishing",
+      "url": "https://tpwd.texas.gov/fishboat/fish/recreational/lakes/fork/"
+    },
+    "world-g26-fork-access": {
+      "label": "TPWD: Lake Fork public access facilities",
+      "url": "https://tpwd.texas.gov/fishboat/fish/recreational/lakes/fork/access.phtml"
+    },
+    "world-g26-lighthouse": {
+      "label": "TPWD: Lighthouse Lakes paddling trail",
+      "url": "https://tpwd.texas.gov/boating/paddling-trails/gulf-coast/lighthouse-lakes/"
+    },
+    "world-g26-tx-license": {
+      "label": "TPWD: fishing licenses and packages",
+      "url": "https://tpwd.texas.gov/regulations/outdoor-annual/licenses/fishing-licenses-stamps-tags-packages/fishing-licenses-and-packages"
+    },
+    "world-g26-tx-rules": {
+      "label": "TPWD: general fishing regulations",
+      "url": "https://tpwd.texas.gov/regulations/outdoor-annual/fishing/general-rules-regulations/general-fishing-regulations/"
+    },
+    "world-g26-sc-red": {
+      "label": "SCDNR: red drum habitat",
+      "url": "https://www.dnr.sc.gov/marine/species/reddrum.html"
+    },
+    "world-g26-sc-license": {
+      "label": "SCDNR: license requirements",
+      "url": "https://dnr.sc.gov/licenses/genlicense.html"
+    },
+    "world-g26-sc-regs": {
+      "label": "SCDNR: current regulations",
+      "url": "https://www.dnr.sc.gov/regulations.html"
+    },
+    "world-g26-charleston-ramps": {
+      "label": "Charleston County Parks: boat landings",
+      "url": "https://www.ccprc.com/parks/boat-landings/enjoying-your-lowcountry-waterways/"
+    },
+    "world-g26-charleston-closure": {
+      "label": "Charleston County Parks: Remleys Point closure notice",
+      "url": "https://www.ccprc.com/news/post/remleys-point-boat-landing-temporarily-closing-for-improvements/"
+    },
+    "world-g26-caha": {
+      "label": "NPS: Cape Hatteras fishing",
+      "url": "https://www.nps.gov/caha/planyourvisit/fishing.htm"
+    },
+    "world-g26-caha-orv": {
+      "label": "NPS: Cape Hatteras off-road vehicle use",
+      "url": "https://www.nps.gov/caha/planyourvisit/beachactivities.htm#ORV"
+    },
+    "world-g26-nc-license": {
+      "label": "NC DEQ: recreational fishing licenses",
+      "url": "https://www.deq.nc.gov/about/divisions/marine-fisheries/licenses-permits-and-leases/recreational-fishing-licenses"
+    },
+    "world-g26-nc-rules": {
+      "label": "NC DEQ: current recreational size and bag limits",
+      "url": "https://www.deq.nc.gov/about/divisions/marine-fisheries/rules-proclamations-and-size-and-bag-limits/recreational-size-and-bag-limits"
+    },
+    "world-g26-nc-tuna": {
+      "label": "NC DEQ: yellowfin tuna",
+      "url": "https://www.deq.nc.gov/about/divisions/marine-fisheries/public-information-and-education/species-profiles/yellowfin-tuna"
+    },
+    "world-g26-nws-obx": {
+      "label": "NWS: Newport Morehead City marine forecasts",
+      "url": "https://www.weather.gov/mhx/marine"
+    },
+    "world-g26-lanier": {
+      "label": "Georgia DNR: fishing at Don Carter State Park",
+      "url": "https://georgiawildlife.com/DonCarter/Fishing"
+    },
+    "world-g26-ga-forecast": {
+      "label": "Georgia DNR: fishing forecasts",
+      "url": "https://georgiawildlife.com/fishing-forecasts"
+    },
+    "world-g26-ga-rules": {
+      "label": "Georgia DNR: current fishing regulations",
+      "url": "https://georgiawildlife.com/fishing-regulations"
+    },
+    "world-g26-ga-license": {
+      "label": "Georgia DNR: choose a license",
+      "url": "https://georgiawildlife.com/licenses-permits-passes/choose"
+    },
+    "world-g26-situk": {
+      "label": "ADF&G: Situk River sockeye and coho",
+      "url": "https://www.adfg.alaska.gov/index.cfm?adfg=ByAreaSoutheastYakutat.fishingOpps&fishery=Situk+River+sockeye+and+coho+salmon"
+    },
+    "world-g26-ak-rules": {
+      "label": "ADF&G: sport fishing regulations",
+      "url": "https://www.adfg.alaska.gov/index.cfm?adfg=fishregulations.sport"
+    },
+    "world-g26-ak-license": {
+      "label": "ADF&G: fishing licenses",
+      "url": "https://www.adfg.alaska.gov/index.cfm?adfg=license.main"
+    },
+    "world-g26-ak-orders": {
+      "label": "ADF&G: emergency orders and news",
+      "url": "https://www.adfg.alaska.gov/sf/EONR/index.cfm?ADFG=main.home"
+    },
+    "world-g26-mt-rules": {
+      "label": "Montana FWP: fishing regulations",
+      "url": "https://fwp.mt.gov/fish/regulations"
+    },
+    "world-g26-mt-closures": {
+      "label": "Montana FWP: current waterbody restrictions",
+      "url": "https://fwp.mt.gov/news/current-closures-restrictions/waterbody-closures"
+    },
+    "world-g26-mt-license": {
+      "label": "Montana FWP: fishing license basics",
+      "url": "https://fwp.mt.gov/fish/license"
+    },
+    "world-g26-mt-access": {
+      "label": "Montana FWP: stream access",
+      "url": "https://fwp.mt.gov/fish/stream-access"
     }
   },
   "destinations": [
@@ -1014,9 +1186,10 @@
     },
     {
       "id": "situk-coho-river",
-      "name": "Situk River coho fishing",
+      "name": "Situk River salmon fishing",
       "region": "United States",
       "species": [
+        "Sockeye salmon",
         "Coho salmon"
       ],
       "styles": [
@@ -1028,11 +1201,20 @@
       "tripProfile": "situk-coho-river",
       "technicalGear": true,
       "guideUrl": "/north-america/united-states/alaska/situk-river-river-salmon/",
-      "seasonNote": "Plan around the coho run and the intended river reach, not an undifferentiated “Alaska salmon season.” The source makes the later-September distinction important. This page does not establish current run strength, water level or a daily catch probability.",
-      "seasonWindows": [],
+      "seasonNote": "ADF&G describes sockeye entering in June–July and different coho reach choices. Its malformed date widget does not establish an exact coho calendar; confirm the run and reach locally.",
+      "seasonWindows": [
+        {
+          "months": [
+            6,
+            7
+          ],
+          "label": "ADF&G sockeye entry period; not an exact coho calendar",
+          "source": "g26-situk"
+        }
+      ],
       "tripTypeIds": [],
       "operator": {
-        "name": "ADF&G — Situk River sockeye and coho",
+        "name": "ADF&G: Situk River sockeye and coho",
         "type": "Research source",
         "url": "https://www.adfg.alaska.gov/index.cfm?adfg=ByAreaSoutheastYakutat.fishingOpps&fishery=Situk+River+sockeye+and+coho+salmon",
         "note": "A research resource, not a booked trip or Atlas operator partnership. Confirm all inclusions and availability independently."
@@ -7608,13 +7790,13 @@
       "tripProfile": "cape-hatteras-surf",
       "technicalGear": true,
       "guideUrl": "/north-america/united-states/north-carolina/cape-hatteras-beaches-surf-and-beach-fishing/",
-      "seasonNote": "The National Park Service describes spring and fall as broad fishing highlights and distinguishes summer offshore opportunity. That does not establish a species-specific surf calendar. Check a local beach report, tide and access conditions before committing your dates.",
+      "seasonNote": "NPS identifies spring and fall as broad fishing periods at Cape Hatteras. Conditions and open beach access still decide the practical outing.",
       "seasonWindows": [],
       "tripTypeIds": [
         "outer-banks-drum-run"
       ],
       "operator": {
-        "name": "National Park Service — Fishing at Cape Hatteras",
+        "name": "NPS: Cape Hatteras fishing",
         "type": "Research source",
         "url": "https://www.nps.gov/caha/planyourvisit/fishing.htm",
         "note": "A research resource, not a booked trip or Atlas operator partnership. Confirm all inclusions and availability independently."
@@ -7622,7 +7804,7 @@
     },
     {
       "id": "na-us-nc-002",
-      "name": "Oregon Inlet offshore fishing",
+      "name": "Outer Banks offshore charters",
       "region": "United States",
       "species": [
         "Yellowfin tuna",
@@ -7637,13 +7819,13 @@
       "tripProfile": "na-us-nc-002",
       "technicalGear": true,
       "guideUrl": "/north-america/united-states/north-carolina/outer-banks-oregon-inlet-offshore-offshore-pelagic-fishing/",
-      "seasonNote": "The fleet describes several offshore targets but that is not a promise they overlap on your dates. The park’s broad summer-offshore description is not a month-by-month tuna calendar. Ask the selected captain which target and trip duration are realistic for your visit.",
+      "seasonNote": "NPS identifies offshore fishing from Oregon Inlet and general summer offshore opportunity. NC DEQ supports yellowfin as an offshore charter target, not a guaranteed month-by-month run.",
       "seasonWindows": [],
       "tripTypeIds": [],
       "operator": {
-        "name": "Oregon Inlet Fishing Center — Charter options and preparation",
+        "name": "NPS: Cape Hatteras fishing",
         "type": "Research source",
-        "url": "https://www.oregon-inlet.com/",
+        "url": "https://www.nps.gov/caha/planyourvisit/fishing.htm",
         "note": "A research resource, not a booked trip or Atlas operator partnership. Confirm all inclusions and availability independently."
       }
     },
@@ -7840,7 +8022,7 @@
     },
     {
       "id": "na-us-sc-001",
-      "name": "Charleston inshore redfish",
+      "name": "Charleston redfish trips",
       "region": "United States",
       "species": [
         "Red drum"
@@ -7853,13 +8035,13 @@
       "tripProfile": "na-us-sc-001",
       "technicalGear": true,
       "guideUrl": "/north-america/united-states/south-carolina/charleston-marshes-inshore-estuary-fishing/",
-      "seasonNote": "South Carolina DNR distinguishes juvenile estuary use from adult open-water behavior. Its 2024 article describes late-summer spawning aggregations and encourages considering post-spawn opportunities; an aggregation is not an automatic recommendation for a trip. This guide does not rank Charleston months.",
+      "seasonNote": "SCDNR documents red drum year-round in South Carolina, with habitat changes by temperature and life stage. That does not guarantee a fishable marsh flat on a chosen tide.",
       "seasonWindows": [],
       "tripTypeIds": [
         "lowcountry-inshore-grand-slam"
       ],
       "operator": {
-        "name": "South Carolina DNR — Red drum species profile",
+        "name": "SCDNR: red drum habitat",
         "type": "Research source",
         "url": "https://www.dnr.sc.gov/marine/species/reddrum.html",
         "note": "A research resource, not a booked trip or Atlas operator partnership. Confirm all inclusions and availability independently."
@@ -8004,11 +8186,11 @@
       "tripProfile": "na-us-ga-001",
       "technicalGear": true,
       "guideUrl": "/north-america/united-states/georgia/lake-lanier-lake-and-reservoir-bass/",
-      "seasonNote": "Don Carter’s official page gives upper-lake spring and summer/fall habitat context. That is not a lake-wide monthly ranking. Confirm the chosen target, lake sector and current presentation; this guide avoids treating differing spotted/Alabama-bass labels across agency pages as interchangeable taxonomy.",
+      "seasonNote": "Georgia DNR’s Don Carter page highlights spring striper movements, spring rocky-shore bass and summer–fall open-water bass. These are agency patterns, not a current boat report.",
       "seasonWindows": [],
       "tripTypeIds": [],
       "operator": {
-        "name": "Georgia State Parks — Fishing at Don Carter",
+        "name": "Georgia DNR: fishing at Don Carter State Park",
         "type": "Research source",
         "url": "https://georgiawildlife.com/DonCarter/Fishing",
         "note": "A research resource, not a booked trip or Atlas operator partnership. Confirm all inclusions and availability independently."
@@ -8151,15 +8333,30 @@
       "tripProfile": "na-us-fl-001",
       "technicalGear": true,
       "guideUrl": "/north-america/united-states/florida/islamorada-flats-saltwater-flats/",
-      "seasonNote": "The tourism authority’s April 2023 regional guide gives different seasonal context for bonefish and permit. Use it as background, not a current Islamorada forecast. Ask a local captain how target, temperature, tide, wind and visibility shape the options for your dates; do not reuse offshore seasonality for a flats trip.",
-      "seasonWindows": [],
+      "seasonNote": "FWC gives March through October as a broad Keys bonefish peak. Its Monroe County overview emphasizes fall. These are different scopes, not a guarantee for a selected day.",
+      "seasonWindows": [
+        {
+          "months": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "label": "FWC broad Keys bonefish peak; conditions vary by day",
+          "source": "g26-fwc-bonefish"
+        }
+      ],
       "tripTypeIds": [
         "keys-grand-slam"
       ],
       "operator": {
-        "name": "Florida Keys tourism — Islamorada",
+        "name": "FWC: bonefish",
         "type": "Research source",
-        "url": "https://visitfloridakeys.com/discover-the-keys/destinations/islamorada",
+        "url": "https://myfwc.com/fishing/saltwater/recreational/bonefish/",
         "note": "A research resource, not a booked trip or Atlas operator partnership. Confirm all inclusions and availability independently."
       }
     },
@@ -8179,15 +8376,15 @@
       "tripProfile": "na-us-fl-002",
       "technicalGear": true,
       "guideUrl": "/north-america/united-states/florida/lake-okeechobee-lake-and-reservoir-bass/",
-      "seasonNote": "FWC links fishing distribution to water level and vegetation. The forecast page includes a dated June 2026 summer observation, not a current September water-level feed. Check the latest local and agency information before selecting a launch or buying presentation-specific equipment.",
+      "seasonNote": "The FWC forecast dated 21 September 2026 describes a late-winter and early-spring bass spawning peak. The dated water level and vegetation observations are not live conditions.",
       "seasonWindows": [],
       "tripTypeIds": [
         "okeechobee-wild-shiner-bass"
       ],
       "operator": {
-        "name": "Florida FWC — Okeechobee habitat management",
+        "name": "FWC: Lake Okeechobee fishing and forecast",
         "type": "Research source",
-        "url": "https://myfwc.com/conservation/management-plans/lake/okeechobee/",
+        "url": "https://myfwc.com/fishing/freshwater/sites-forecasts/s/lake-okeechobee/",
         "note": "A research resource, not a booked trip or Atlas operator partnership. Confirm all inclusions and availability independently."
       }
     },
@@ -9234,7 +9431,7 @@
     },
     {
       "id": "na-us-tx-001",
-      "name": "Port Aransas bay fishing",
+      "name": "Port Aransas fishing",
       "region": "United States",
       "species": [
         "Red drum",
@@ -9248,13 +9445,13 @@
       "tripProfile": "na-us-tx-001",
       "technicalGear": true,
       "guideUrl": "/north-america/united-states/texas/port-aransas-aransas-bay-inshore-estuary-fishing/",
-      "seasonNote": "The local tourism authority describes broad year-round opportunities and seasonal preferences. Those labels do not establish a particular day’s access or fish activity. Select the target, tide-dependent route and weather alternative with a local source before setting a detailed itinerary.",
+      "seasonNote": "The inspected sources establish red drum, spotted seatrout and flounder in the nearby estuary. They do not establish a reliable Port Aransas best-month ranking.",
       "seasonWindows": [],
       "tripTypeIds": [],
       "operator": {
-        "name": "Port Aransas tourism — Bay fishing",
+        "name": "TPWD: Lighthouse Lakes paddling trail",
         "type": "Research source",
-        "url": "https://www.portaransas.org/things-to-do/fishing/bay-fishing/",
+        "url": "https://tpwd.texas.gov/boating/paddling-trails/gulf-coast/lighthouse-lakes/",
         "note": "A research resource, not a booked trip or Atlas operator partnership. Confirm all inclusions and availability independently."
       }
     },
@@ -9274,11 +9471,21 @@
       "tripProfile": "na-us-tx-002",
       "technicalGear": true,
       "guideUrl": "/north-america/united-states/texas/lake-fork-lake-and-reservoir-bass/",
-      "seasonNote": "TPWD describes mid-February through April as a notable spring largemouth period, with different opportunities and presentations in other seasons. This is background rather than a guarantee or a live bite report. Ask how the current conditions affect your chosen sector and method.",
-      "seasonWindows": [],
+      "seasonNote": "TPWD describes spring, fall and winter as productive bass periods, with a shoreline spring pattern from mid-February to April. Water and weather change the actual pattern.",
+      "seasonWindows": [
+        {
+          "months": [
+            2,
+            3,
+            4
+          ],
+          "label": "TPWD spring shoreline pattern from mid-February to April; not a legal season",
+          "source": "g26-fork"
+        }
+      ],
       "tripTypeIds": [],
       "operator": {
-        "name": "Texas Parks and Wildlife — Lake Fork",
+        "name": "TPWD: Lake Fork fishing",
         "type": "Research source",
         "url": "https://tpwd.texas.gov/fishboat/fish/recreational/lakes/fork/",
         "note": "A research resource, not a booked trip or Atlas operator partnership. Confirm all inclusions and availability independently."
@@ -13161,7 +13368,7 @@
     },
     {
       "id": "keys-offshore",
-      "name": "Florida Keys offshore fishing",
+      "name": "Florida Keys offshore charters",
       "region": "United States",
       "species": [
         "Sailfish",
@@ -13176,13 +13383,13 @@
       "tripProfile": "keys-offshore",
       "technicalGear": true,
       "guideUrl": "/trips/keys-offshore/",
-      "seasonNote": "No exact species calendar or live offshore report is established by this source. Choose the target with the skipper for the selected period. The fact that a species appears on a destination page does not mean it will be a realistic objective on every half-day charter.",
+      "seasonNote": "FWC’s Monroe County guide associates dolphinfish with spring–summer and sailfish and blackfin tuna with fall–spring. These broad references do not promise fish or an open harvest season.",
       "seasonWindows": [],
       "tripTypeIds": [],
       "operator": {
-        "name": "Florida Keys visitor bureau — Fishing",
+        "name": "FWC: where to saltwater fish — Monroe County",
         "type": "Research source",
-        "url": "https://visitfloridakeys.com/experiences/what-were-famous-for/fishing",
+        "url": "https://myfwc.com/fishing/saltwater/outreach/wheretofish/",
         "note": "A research resource, not a booked trip or Atlas operator partnership. Confirm all inclusions and availability independently."
       }
     },
@@ -24080,9 +24287,9 @@
     },
     {
       "id": "situk-coho-river-kit-1",
-      "name": "Coho casting or fly setup",
+      "name": "Species-matched salmon setup",
       "group": "Trip-specific decisions",
-      "why": "Match the actual presentation weight and local leader choice. A spinner, jig and fly line do not share one rod-rating system.",
+      "why": "Choose sockeye or coho, then match the presentation, line and local leader choice. A spinner, jig and fly line do not share one rod-rating system.",
       "query": "",
       "essential": true,
       "scope": "trip",
@@ -65579,7 +65786,7 @@
     "trips": [
       {
         "id": "situk-coho-river",
-        "title": "Situk River coho fishing: bank, float and tackle decisions",
+        "title": "Situk River salmon fishing: bank access or a full float",
         "place": "Yakutat / Situk River",
         "country": "United States",
         "region": "North America",
@@ -65588,6 +65795,7 @@
         "canonicalPath": "/north-america/united-states/alaska/situk-river-river-salmon/",
         "contentTier": "detailed-guide",
         "fish": [
+          "Sockeye salmon",
           "Coho salmon"
         ],
         "candidateTargets": "Coho salmon",
@@ -69864,7 +70072,7 @@
       },
       {
         "id": "cape-hatteras-surf",
-        "title": "Cape Hatteras surf fishing: beach access, setups and a lighter packing list",
+        "title": "Cape Hatteras surf fishing: access, seasons and packing",
         "place": "Cape Hatteras, North Carolina",
         "country": "United States",
         "region": "North America",
@@ -69888,7 +70096,7 @@
       },
       {
         "id": "na-us-nc-002",
-        "title": "Oregon Inlet offshore fishing: choose the charter before buying tackle",
+        "title": "Outer Banks offshore charters: Oregon Inlet trip guide",
         "place": "Outer Banks / Oregon Inlet offshore",
         "country": "United States",
         "region": "North America",
@@ -70035,7 +70243,7 @@
       },
       {
         "id": "na-us-sc-001",
-        "title": "Charleston inshore redfish: choose the habitat and fish size before the kit",
+        "title": "Charleston redfish trips: marsh, tides and departures",
         "place": "Charleston marshes",
         "country": "United States",
         "region": "North America",
@@ -70157,7 +70365,7 @@
       },
       {
         "id": "na-us-ga-001",
-        "title": "Lake Lanier fishing: choose striped bass or a black-bass plan first",
+        "title": "Lake Lanier fishing: choose bass, stripers or the bank",
         "place": "Lake Lanier",
         "country": "United States",
         "region": "North America",
@@ -70253,7 +70461,7 @@
       },
       {
         "id": "na-us-fl-001",
-        "title": "Islamorada flats fishing: bonefish, permit and the right personal kit",
+        "title": "Islamorada flats fishing: bonefish, permit and trip choice",
         "place": "Islamorada / flats",
         "country": "United States",
         "region": "North America",
@@ -70282,7 +70490,7 @@
       },
       {
         "id": "na-us-fl-002",
-        "title": "Lake Okeechobee bass fishing: choose the sector, cover and access first",
+        "title": "Lake Okeechobee bass fishing: choose your launch and trip",
         "place": "Lake Okeechobee",
         "country": "United States",
         "region": "North America",
@@ -71011,7 +71219,7 @@
       },
       {
         "id": "na-us-tx-001",
-        "title": "Port Aransas bay fishing: separate skiff, kayak and shore preparation",
+        "title": "Port Aransas fishing: bay charter or kayak trip?",
         "place": "Port Aransas / Aransas Bay",
         "country": "United States",
         "region": "North America",
@@ -71029,7 +71237,7 @@
       },
       {
         "id": "na-us-tx-002",
-        "title": "Lake Fork bass fishing: cover, launch choice and a compatible setup",
+        "title": "Lake Fork bass fishing: seasons, ramps and guide prep",
         "place": "Lake Fork",
         "country": "United States",
         "region": "North America",
@@ -73607,7 +73815,7 @@
       },
       {
         "id": "keys-offshore",
-        "title": "Florida Keys offshore fishing: distinguish trolling, reef and wreck trips",
+        "title": "Florida Keys offshore charters: plan the right day",
         "place": "Florida Keys offshore waters",
         "country": "United States",
         "region": "North America",

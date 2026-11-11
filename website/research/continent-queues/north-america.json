@@ -15,15 +15,19 @@
       "currentTier": "detailed-guide",
       "indexEligible": true,
       "sourceIds": [
-        "situk"
+        "g26-situk",
+        "g26-ak-rules",
+        "g26-ak-orders",
+        "g26-ak-license"
       ],
-      "evidenceDepth": "Inspected source text",
+      "evidenceDepth": "Official source text checked 2026-11-10; preparation advice is editorial",
       "localDecision": "Separate bank access from the full float and confirm which reach suits the planned run stage.",
       "candidateTargets": "Coho salmon",
       "confirmedTargets": [
+        "Sockeye salmon",
         "Coho salmon"
       ],
-      "seasonalEvidence": "Plan around the coho run and the intended river reach, not an undifferentiated “Alaska salmon season.” The source makes the later-September distinction important. This page does not establish current run strength, water level or a daily catch probability.",
+      "seasonalEvidence": "ADF&G describes sockeye entering in June–July and different coho reach choices. Its malformed date widget does not establish an exact coho calendar; confirm the run and reach locally.",
       "accessToVerify": "Bank, wade or drift; choose before matching tackle",
       "tackleDecision": "Choose fly versus conventional presentation, then rod rating, line, leader and terminal components as a system",
       "operatorQuestion": "Waders and rods only after operator provision and access method are confirmed",
@@ -10241,13 +10245,17 @@
       "currentTier": "detailed-guide",
       "indexEligible": true,
       "sourceIds": [
-        "release-caha"
+        "g26-caha",
+        "g26-caha-orv",
+        "g26-nws-marine",
+        "g26-nc-license",
+        "g26-nc-rules"
       ],
-      "evidenceDepth": "Full source-page text inspected in this release; not independently expert-reviewed",
+      "evidenceDepth": "Official source text checked 2026-11-10; preparation advice is editorial",
       "localDecision": "Upgrade the retained surf guide with named access choices and tide-sensitive presentation research.",
       "candidateTargets": "Red drum / bluefish candidates",
       "confirmedTargets": [],
-      "seasonalEvidence": "The National Park Service describes spring and fall as broad fishing highlights and distinguishes summer offshore opportunity. That does not establish a species-specific surf calendar. Check a local beach report, tide and access conditions before committing your dates.",
+      "seasonalEvidence": "NPS identifies spring and fall as broad fishing periods at Cape Hatteras. Conditions and open beach access still decide the practical outing.",
       "accessToVerify": "Walk-on shore",
       "tackleDecision": "Match casting weight and presentation to surf conditions; check line, leader, sinker and rod compatibility",
       "operatorQuestion": "Bait availability, access distance and permitted equipment",
@@ -10280,10 +10288,15 @@
       "currentTier": "detailed-guide",
       "indexEligible": true,
       "sourceIds": [
-        "release-oregon-inlet",
-        "release-caha"
+        "g26-caha",
+        "g26-nc-tuna",
+        "g26-nws-obx",
+        "g26-uscg",
+        "g26-noaa-hms",
+        "g26-nc-license",
+        "g26-nc-rules"
       ],
-      "evidenceDepth": "Full source-page text inspected in this release; not independently expert-reviewed",
+      "evidenceDepth": "Official source text checked 2026-11-10; preparation advice is editorial",
       "localDecision": "Separate offshore charter run times from inlet or nearshore trips and confirm tackle provision.",
       "candidateTargets": "Tuna / mahi-mahi candidates",
       "confirmedTargets": [
@@ -10291,7 +10304,7 @@
         "Bluefin tuna",
         "Mahi-mahi"
       ],
-      "seasonalEvidence": "The fleet describes several offshore targets but that is not a promise they overlap on your dates. The park’s broad summer-offshore description is not a month-by-month tuna calendar. Ask the selected captain which target and trip duration are realistic for your visit.",
+      "seasonalEvidence": "NPS identifies offshore fishing from Oregon Inlet and general summer offshore opportunity. NC DEQ supports yellowfin as an offshore charter target, not a guaranteed month-by-month run.",
       "accessToVerify": "Charter / specialist boat",
       "tackleDecision": "Separate trolling, casting and jigging; confirm whether all fighting and terminal gear is provided",
       "operatorQuestion": "Rods, reels, harnesses, leaders, lures and fish-handling logistics",
@@ -10620,16 +10633,20 @@
       "currentTier": "detailed-guide",
       "indexEligible": true,
       "sourceIds": [
-        "release-sc-drum",
-        "release-sc-big-drum"
+        "g26-sc-red",
+        "g26-charleston-ramps",
+        "g26-charleston-closure",
+        "g26-sc-license",
+        "g26-uscg",
+        "g26-sc-regs"
       ],
-      "evidenceDepth": "Full source-page text inspected in this release; not independently expert-reviewed",
+      "evidenceDepth": "Official source text checked 2026-11-10; preparation advice is editorial",
       "localDecision": "Compare flats, creeks and nearshore outings and use the chosen tide-dependent access mode.",
       "candidateTargets": "Red drum",
       "confirmedTargets": [
         "Red drum"
       ],
-      "seasonalEvidence": "South Carolina DNR distinguishes juvenile estuary use from adult open-water behavior. Its 2024 article describes late-summer spawning aggregations and encourages considering post-spawn opportunities; an aggregation is not an automatic recommendation for a trip. This guide does not rank Charleston months.",
+      "seasonalEvidence": "SCDNR documents red drum year-round in South Carolina, with habitat changes by temperature and life stage. That does not guarantee a fishable marsh flat on a chosen tide.",
       "accessToVerify": "Skiff, kayak, bank or suitable wading",
       "tackleDecision": "Choose target and bait/lure/fly method; match rod, reel, leader, corrosion protection and landing gear",
       "operatorQuestion": "Provided tackle and boat versus bank access",
@@ -10852,17 +10869,19 @@
       "currentTier": "detailed-guide",
       "indexEligible": true,
       "sourceIds": [
-        "release-lanier",
-        "release-ga-forecast"
+        "g26-lanier",
+        "g26-ga-forecast",
+        "g26-ga-license",
+        "g26-ga-rules"
       ],
-      "evidenceDepth": "Full source-page text inspected in this release; not independently expert-reviewed",
+      "evidenceDepth": "Official source text checked 2026-11-10; preparation advice is editorial",
       "localDecision": "Choose the target before recommending tackle and compare guide-provided versus personal gear.",
       "candidateTargets": "Striped bass / spotted bass candidates",
       "confirmedTargets": [
         "Striped bass",
         "Largemouth bass"
       ],
-      "seasonalEvidence": "Don Carter’s official page gives upper-lake spring and summer/fall habitat context. That is not a lake-wide monthly ranking. Confirm the chosen target, lake sector and current presentation; this guide avoids treating differing spotted/Alabama-bass labels across agency pages as interchangeable taxonomy.",
+      "seasonalEvidence": "Georgia DNR’s Don Carter page highlights spring striper movements, spring rocky-shore bass and summer–fall open-water bass. These are agency patterns, not a current boat report.",
       "accessToVerify": "Bank, kayak or boat",
       "tackleDecision": "Match cover and lure weight to rod action, reel, line and hooks",
       "operatorQuestion": "Boat, electronics and guide tackle before purchases",
@@ -11087,17 +11106,23 @@
       "currentTier": "detailed-guide",
       "indexEligible": true,
       "sourceIds": [
-        "release-keys-islamorada",
-        "release-keys-season"
+        "g26-fwc-bonefish",
+        "g26-fwc-permit-bio",
+        "g26-fwc-monroe",
+        "g26-fwc-permit",
+        "g26-nws-keys",
+        "g26-fwc-charter",
+        "g26-fwc-visitors",
+        "g26-noaa-keys"
       ],
-      "evidenceDepth": "Full source-page text inspected in this release; not independently expert-reviewed",
+      "evidenceDepth": "Official source text checked 2026-11-10; preparation advice is editorial",
       "localDecision": "Split target-specific flats planning from generic Keys content and confirm boat versus wade access.",
       "candidateTargets": "Bonefish / permit candidates",
       "confirmedTargets": [
         "Bonefish",
         "Permit"
       ],
-      "seasonalEvidence": "The tourism authority’s April 2023 regional guide gives different seasonal context for bonefish and permit. Use it as background, not a current Islamorada forecast. Ask a local captain how target, temperature, tide, wind and visibility shape the options for your dates; do not reuse offshore seasonality for a flats trip.",
+      "seasonalEvidence": "FWC gives March through October as a broad Keys bonefish peak. Its Monroe County overview emphasizes fall. These are different scopes, not a guarantee for a selected day.",
       "accessToVerify": "Skiff, wade or kayak with local suitability confirmed",
       "tackleDecision": "Select target species and fly or spinning; match line, drag, leader, presentation and corrosion resistance",
       "operatorQuestion": "Rods, flies or lures and whether actual wading occurs",
@@ -11130,16 +11155,18 @@
       "currentTier": "detailed-guide",
       "indexEligible": true,
       "sourceIds": [
-        "release-okee-habitat",
-        "release-okee-fishing"
+        "g26-fwc-okee",
+        "g26-fwc-ramps",
+        "g26-fwc-visitors",
+        "g26-fwc-fresh"
       ],
-      "evidenceDepth": "Full source-page text inspected in this release; not independently expert-reviewed",
+      "evidenceDepth": "Official source text checked 2026-11-10; preparation advice is editorial",
       "localDecision": "Research launch sector, water level and guide methods rather than recommending a lake-wide pattern.",
       "candidateTargets": "Largemouth bass",
       "confirmedTargets": [
         "Largemouth bass"
       ],
-      "seasonalEvidence": "FWC links fishing distribution to water level and vegetation. The forecast page includes a dated June 2026 summer observation, not a current September water-level feed. Check the latest local and agency information before selecting a launch or buying presentation-specific equipment.",
+      "seasonalEvidence": "The FWC forecast dated 21 September 2026 describes a late-winter and early-spring bass spawning peak. The dated water level and vegetation observations are not live conditions.",
       "accessToVerify": "Bank, kayak or boat",
       "tackleDecision": "Match cover and lure weight to rod action, reel, line and hooks",
       "operatorQuestion": "Boat, electronics and guide tackle before purchases",
@@ -12800,16 +12827,19 @@
       "currentTier": "detailed-guide",
       "indexEligible": true,
       "sourceIds": [
-        "release-porta"
+        "g26-lighthouse",
+        "g26-nws-marine",
+        "g26-tx-license",
+        "g26-tx-rules"
       ],
-      "evidenceDepth": "Full source-page text inspected in this release; not independently expert-reviewed",
+      "evidenceDepth": "Official source text checked 2026-11-10; preparation advice is editorial",
       "localDecision": "Refine broad Texas coastal content into a departure-specific bay plan with confirmed access mode.",
       "candidateTargets": "Red drum / speckled trout candidates",
       "confirmedTargets": [
         "Red drum",
         "Spotted seatrout"
       ],
-      "seasonalEvidence": "The local tourism authority describes broad year-round opportunities and seasonal preferences. Those labels do not establish a particular day’s access or fish activity. Select the target, tide-dependent route and weather alternative with a local source before setting a detailed itinerary.",
+      "seasonalEvidence": "The inspected sources establish red drum, spotted seatrout and flounder in the nearby estuary. They do not establish a reliable Port Aransas best-month ranking.",
       "accessToVerify": "Skiff, kayak, bank or suitable wading",
       "tackleDecision": "Choose target and bait/lure/fly method; match rod, reel, leader, corrosion protection and landing gear",
       "operatorQuestion": "Provided tackle and boat versus bank access",
@@ -12842,16 +12872,18 @@
       "currentTier": "detailed-guide",
       "indexEligible": true,
       "sourceIds": [
-        "release-fork",
-        "release-fork-access"
+        "g26-fork",
+        "g26-fork-access",
+        "g26-tx-license",
+        "g26-tx-rules"
       ],
-      "evidenceDepth": "Full source-page text inspected in this release; not independently expert-reviewed",
+      "evidenceDepth": "Official source text checked 2026-11-10; preparation advice is editorial",
       "localDecision": "Research a target pattern, launch and guide approach before recommending specialized tackle.",
       "candidateTargets": "Largemouth bass",
       "confirmedTargets": [
         "Largemouth bass"
       ],
-      "seasonalEvidence": "TPWD describes mid-February through April as a notable spring largemouth period, with different opportunities and presentations in other seasons. This is background rather than a guarantee or a live bite report. Ask how the current conditions affect your chosen sector and method.",
+      "seasonalEvidence": "TPWD describes spring, fall and winter as productive bass periods, with a shoreline spring pattern from mid-February to April. Water and weather change the actual pattern.",
       "accessToVerify": "Bank, kayak or boat",
       "tackleDecision": "Match cover and lure weight to rod action, reel, line and hooks",
       "operatorQuestion": "Boat, electronics and guide tackle before purchases",
@@ -18991,22 +19023,30 @@
       "currentTier": "detailed-guide",
       "indexEligible": true,
       "sourceIds": [
-        "keys-world"
+        "g26-fwc-monroe",
+        "g26-nws-keys",
+        "g26-nws-marine",
+        "g26-uscg",
+        "g26-fwc-visitors",
+        "g26-fwc-charter",
+        "g26-fwc-salt",
+        "g26-noaa-keys",
+        "g26-noaa-hms"
       ],
-      "evidenceDepth": "Inspected source text",
-      "localDecision": "An offshore outing should be sold by target, method and time on the water. Reef fishing, working a wreck and trolling for pelagic fish are not substitute names for the same charter.",
+      "evidenceDepth": "Official source text checked 2026-11-10; preparation advice is editorial",
+      "localDecision": "Compare Florida Keys offshore, reef and wreck charters. Check target seasons, time at sea, crew provisions, weather terms and current rules.",
       "candidateTargets": "Sailfish / Mahi-mahi / Tuna",
       "confirmedTargets": [
         "Sailfish",
         "Mahi-mahi",
         "Tuna"
       ],
-      "seasonalEvidence": "No exact species calendar or live offshore report is established by this source. Choose the target with the skipper for the selected period. The fact that a species appears on a destination page does not mean it will be a realistic objective on every half-day charter.",
+      "seasonalEvidence": "FWC’s Monroe County guide associates dolphinfish with spring–summer and sailfish and blackfin tuna with fall–spring. These broad references do not promise fish or an open harvest season.",
       "accessToVerify": "Charter boat",
       "tackleDecision": "Inventory tied to trolling, jigging or bottom fishing. | Ask which tools are supplied and safe for passenger use. | Footwear approved for the vessel; sun and rain layers. | Capacity for phone and small essentials rather than a huge bag.",
       "operatorQuestion": "Confirm actual access, equipment provision, meeting place and date availability.",
       "sourceLeads": {},
-      "distributionAngle": "Show the local decision: An offshore outing should be sold by target, method and time on the water. Reef fishing, working a wreck and trolling for pelagic fish are not substitute names for the same charter.",
+      "distributionAngle": "Show the local decision: Compare Florida Keys offshore, reef and wreck charters. Check target seasons, time at sea, crew provisions, weather terms and current rules.",
       "nextAction": "Maintain attributed facts; obtain local corroboration and exact product selections.",
       "acceptance": [
         "Named fishery and scope supported by inspected sources",

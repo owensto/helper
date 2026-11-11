@@ -55,43 +55,43 @@
   },
   "/guides/": {
     "kind": "guide-index",
-    "title": "Fishing guides, environment research and packing articles | Castward",
+    "title": "Fishing trip guides, seasons and packing lists | Castward",
     "noindex": false,
     "redirectTo": null
   },
   "/guides/alaska-fishing-packing-list/": {
     "kind": "article",
-    "title": "Alaska fishing trip packing list: bring what matters. \u2014 Castward",
+    "title": "Alaska fishing packing list: river, boat and lodge | Castward",
     "noindex": false,
     "redirectTo": null
   },
   "/guides/florida-keys-fishing-packing-list/": {
     "kind": "article",
-    "title": "Florida Keys fishing packing list: flats, boats and better questions. \u2014 Castward",
+    "title": "Florida Keys fishing packing list: flats or offshore | Castward",
     "noindex": false,
     "redirectTo": null
   },
   "/guides/montana-first-fly-fishing-trip/": {
     "kind": "article",
-    "title": "Your first Montana fly-fishing trip: pack less, ask better questions. \u2014 Castward",
+    "title": "First Montana fly-fishing trip: wade, float and pack | Castward",
     "noindex": false,
     "redirectTo": null
   },
   "/guides/guided-fishing-trip-questions/": {
     "kind": "article",
-    "title": "Before you book a fishing guide, ask these questions. \u2014 Castward",
+    "title": "Questions to ask a fishing guide before you book | Castward",
     "noindex": false,
     "redirectTo": null
   },
   "/guides/fishing-gear-you-already-own/": {
     "kind": "article",
-    "title": "Before you buy fishing gear, check what you already own. \u2014 Castward",
+    "title": "Fishing gear you already own: check before you buy | Castward",
     "noindex": false,
     "redirectTo": null
   },
   "/guides/one-week-fishing-trip-checklist/": {
     "kind": "article",
-    "title": "The one-week fishing trip checklist: from booking to the last dry sock. \u2014 Castward",
+    "title": "One-week fishing trip checklist: plan, pack and return | Castward",
     "noindex": false,
     "redirectTo": null
   },
@@ -229,7 +229,7 @@
   },
   "/trips/keys-offshore/": {
     "kind": "article",
-    "title": "Florida Keys offshore fishing: distinguish trolling, reef and wreck trips | Castward",
+    "title": "Florida Keys offshore charters: plan the right day | Castward",
     "noindex": false,
     "redirectTo": null
   },
@@ -2725,7 +2725,7 @@
   },
   "/north-america/united-states/alaska/situk-river-river-salmon/": {
     "kind": "article",
-    "title": "Situk River coho fishing: bank, float and tackle decisions | Castward",
+    "title": "Situk River salmon fishing: bank access or a full float | Castward",
     "noindex": false,
     "redirectTo": null
   },
@@ -4375,13 +4375,13 @@
   },
   "/north-america/united-states/north-carolina/cape-hatteras-beaches-surf-and-beach-fishing/": {
     "kind": "article",
-    "title": "Cape Hatteras surf fishing: beach access, setups and a lighter packing list | Castward",
+    "title": "Cape Hatteras surf fishing: access, seasons and packing | Castward",
     "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/north-carolina/outer-banks-oregon-inlet-offshore-offshore-pelagic-fishing/": {
     "kind": "article",
-    "title": "Oregon Inlet offshore fishing: choose the charter before buying tackle | Castward",
+    "title": "Outer Banks offshore charters: Oregon Inlet trip guide | Castward",
     "noindex": false,
     "redirectTo": null
   },
@@ -4435,7 +4435,7 @@
   },
   "/north-america/united-states/south-carolina/charleston-marshes-inshore-estuary-fishing/": {
     "kind": "article",
-    "title": "Charleston inshore redfish: choose the habitat and fish size before the kit | Castward",
+    "title": "Charleston redfish trips: marsh, tides and departures | Castward",
     "noindex": false,
     "redirectTo": null
   },
@@ -4471,7 +4471,7 @@
   },
   "/north-america/united-states/georgia/lake-lanier-lake-and-reservoir-bass/": {
     "kind": "article",
-    "title": "Lake Lanier fishing: choose striped bass or a black-bass plan first | Castward",
+    "title": "Lake Lanier fishing: choose bass, stripers or the bank | Castward",
     "noindex": false,
     "redirectTo": null
   },
@@ -4507,13 +4507,13 @@
   },
   "/north-america/united-states/florida/islamorada-flats-saltwater-flats/": {
     "kind": "article",
-    "title": "Islamorada flats fishing: bonefish, permit and the right personal kit | Castward",
+    "title": "Islamorada flats fishing: bonefish, permit and trip choice | Castward",
     "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/florida/lake-okeechobee-lake-and-reservoir-bass/": {
     "kind": "article",
-    "title": "Lake Okeechobee bass fishing: choose the sector, cover and access first | Castward",
+    "title": "Lake Okeechobee bass fishing: choose your launch and trip | Castward",
     "noindex": false,
     "redirectTo": null
   },
@@ -4783,13 +4783,13 @@
   },
   "/north-america/united-states/texas/port-aransas-aransas-bay-inshore-estuary-fishing/": {
     "kind": "article",
-    "title": "Port Aransas bay fishing: separate skiff, kayak and shore preparation | Castward",
+    "title": "Port Aransas fishing: bay charter or kayak trip? | Castward",
     "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/texas/lake-fork-lake-and-reservoir-bass/": {
     "kind": "article",
-    "title": "Lake Fork bass fishing: cover, launch choice and a compatible setup | Castward",
+    "title": "Lake Fork bass fishing: seasons, ramps and guide prep | Castward",
     "noindex": false,
     "redirectTo": null
   },
@@ -9944,6 +9944,36 @@
   "/glossary/": {
     "kind": "glossary",
     "title": "Local fishing lingo glossary | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/guides/best-time-to-fish-florida-keys/": {
+    "kind": "article",
+    "title": "Best time to fish the Florida Keys: choose by target | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/guides/first-offshore-fishing-charter-checklist/": {
+    "kind": "article",
+    "title": "First offshore fishing charter: a practical checklist | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/guides/what-to-bring-on-a-guided-fishing-trip/": {
+    "kind": "article",
+    "title": "What to bring on a guided fishing trip | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/guides/inshore-vs-offshore-fishing-charter/": {
+    "kind": "article",
+    "title": "Inshore vs offshore fishing charter: which fits you? | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/guides/how-to-choose-a-fishing-guide/": {
+    "kind": "article",
+    "title": "How to choose a fishing guide for your trip | Castward",
     "noindex": false,
     "redirectTo": null
   },

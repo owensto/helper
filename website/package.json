@@ -11,6 +11,7 @@
     "preview": "python3 -m http.server 8000 --directory dist",
     "test:browser": "python3 tests/continental_browser_test.py",
     "build:vercel": "python3 scripts/build_vercel.py",
-    "test:vercel": "python3 tests/vercel_test.py"
+    "test:vercel": "python3 tests/vercel_test.py",
+    "test:guides": "python3 tests/guides_test.py"
   }
 }

@@ -1,0 +1,24 @@
+.guide-review{font-size:.85rem!important;color:var(--muted,#536356)}
+.guide-hero img{width:100%;max-height:480px;object-fit:cover;border-radius:8px}
+.guide-hero picture{display:block}
+.guide-toc{padding:24px;background:#edf0e6;border-radius:8px;margin-bottom:36px}
+.guide-toc ul{columns:2;column-gap:32px;padding-left:20px;margin:12px 0 0}
+.guide-toc li{break-inside:avoid;margin:0 0 10px}
+.guide-toc a,.guide-citations a,.reference-row a,.article-aside li a{text-decoration:underline;text-underline-offset:3px}
+.guide-table{overflow:auto;margin:20px 0;border:1px solid #d7dfd1;border-radius:6px}
+.guide-table-hint{display:none}
+.guide-table table{width:100%;border-collapse:collapse;font-size:.94rem;line-height:1.6}
+.guide-table th,.guide-table td{padding:15px;text-align:left;vertical-align:top;border-bottom:1px solid #d7dfd1;min-width:150px}
+.guide-table thead{background:#edf0e6}.guide-table th[scope=row]{font-weight:600;min-width:130px}
+.guide-citations{font-size:.84rem!important;line-height:1.7!important;color:#475744}
+.guide-faq{padding:17px 0;border-bottom:1px solid #cdd6c6}
+.guide-faq summary{cursor:pointer;font-weight:600;line-height:1.6}.guide-faq p{margin-top:14px}
+.article-main .prose-block ul,.article-main .prose-block ol{padding-left:24px;line-height:1.85}
+.article-main .prose-block li{margin-bottom:10px}
+.article-aside .panel h2{font-size:1.25rem;line-height:1.4;letter-spacing:normal}
+.article-aside .panel ul{padding-left:18px;margin:20px 0;line-height:1.65}
+.article-aside .panel li{margin-bottom:15px}.article-aside .panel p{line-height:1.75;margin:16px 0}
+.guide-end{padding-top:32px;padding-bottom:80px}.guide-end p{max-width:680px;margin:20px 0;line-height:1.8}
+.guide-booking{border-style:dashed}.prose-block[id],#faq,#sources{scroll-margin-top:110px}
+@media(max-width:700px){.guide-toc ul{columns:1}.guide-table th,.guide-table td{padding:12px;font-size:.9rem}.guide-table-hint{display:block;font-size:.8rem!important}.guide-hero img{max-height:280px}.guide-end{padding-bottom:48px}}
+@media print{.guide-toc,.watch-section,.guide-booking{display:none}.guide-faq>p{display:block!important}.guide-table{overflow:visible}.guide-table th,.guide-table td{min-width:0}}

@@ -1,0 +1,752 @@
+[
+  {
+    "id": "g26-fwc-bonefish",
+    "title": "FWC: bonefish",
+    "url": "https://myfwc.com/fishing/saltwater/recreational/bonefish/",
+    "type": "official-agency",
+    "status": "text-inspected",
+    "checked": "2026-11-10",
+    "scopeNote": "Florida Keys bonefish habitat and the broad March–October seasonal reference. This is not a daily catch forecast.",
+    "retrieval": "curl full HTML and extracted text",
+    "shellHTTP": "200",
+    "shellBodySHA256": "e5e9744ef125199140ffc4151ff6aabf39f91b929513a408fd9960524594d677",
+    "citedSections": [
+      "/north-america/united-states/florida/islamorada-flats-saltwater-flats/#choose",
+      "/north-america/united-states/florida/islamorada-flats-saltwater-flats/#when",
+      "/north-america/united-states/florida/islamorada-flats-saltwater-flats/#rules",
+      "/guides/best-time-to-fish-florida-keys/#when",
+      "/guides/inshore-vs-offshore-fishing-charter/#when"
+    ]
+  },
+  {
+    "id": "g26-fwc-monroe",
+    "title": "FWC: where to saltwater fish — Monroe County",
+    "url": "https://myfwc.com/fishing/saltwater/outreach/wheretofish/",
+    "type": "official-agency",
+    "status": "text-inspected",
+    "checked": "2026-11-10",
+    "scopeNote": "Monroe County species and broad seasonal references. The county includes the Keys and Everglades; it does not describe every departure.",
+    "retrieval": "curl full HTML and extracted text",
+    "shellHTTP": "200",
+    "shellBodySHA256": "6d879503259431d6c5bffafc1586aad6a10bd64942e402f8072dedd28a40c020",
+    "citedSections": [
+      "/north-america/united-states/florida/islamorada-flats-saltwater-flats/#when",
+      "/trips/keys-offshore/#when",
+      "/guides/best-time-to-fish-florida-keys/#when",
+      "/guides/inshore-vs-offshore-fishing-charter/#when",
+      "/guides/florida-keys-fishing-packing-list/#when"
+    ]
+  },
+  {
+    "id": "g26-fwc-permit",
+    "title": "FWC: permit regulations",
+    "url": "https://myfwc.com/fishing/saltwater/recreational/permit/",
+    "type": "official-agency",
+    "status": "text-inspected",
+    "checked": "2026-11-10",
+    "scopeNote": "The official permit rule page and Special Permit Zone. Check the current rule for the exact water and trip date.",
+    "retrieval": "curl full HTML and extracted text",
+    "shellHTTP": "200",
+    "shellBodySHA256": "c2c391170bde89804dd47c72583cdf5cea5d94713890a656144df01b88a47674",
+    "citedSections": [
+      "/north-america/united-states/florida/islamorada-flats-saltwater-flats/#when",
+      "/north-america/united-states/florida/islamorada-flats-saltwater-flats/#rules",
+      "/guides/best-time-to-fish-florida-keys/#rules",
+      "/guides/florida-keys-fishing-packing-list/#rules"
+    ]
+  },
+  {
+    "id": "g26-fwc-permit-bio",
+    "title": "FWC: permit species profile",
+    "url": "https://myfwc.com/wildlifehabitats/profiles/saltwater/jacks/permit/",
+    "type": "official-agency",
+    "status": "text-inspected",
+    "checked": "2026-11-10",
+    "scopeNote": "Permit habitats and feeding behavior. It does not establish a monthly Islamorada catch forecast.",
+    "retrieval": "curl full HTML and extracted text",
+    "shellHTTP": "200",
+    "shellBodySHA256": "dc5e555c1f81f6f863c8330128196a5c1a1c577c06b8d27a38367251213870d1",
+    "citedSections": [
+      "/north-america/united-states/florida/islamorada-flats-saltwater-flats/#choose",
+      "/guides/best-time-to-fish-florida-keys/#when"
+    ]
+  },
+  {
+    "id": "g26-fwc-visitors",
+    "title": "FWC: visitor licenses",
+    "url": "https://myfwc.com/license/recreational/visitors/",
+    "type": "official-agency",
+    "status": "text-inspected",
+    "checked": "2026-11-10",
+    "scopeNote": "Florida visitor license requirements and exceptions. Saltwater charter coverage must be confirmed for the actual vessel.",
+    "retrieval": "curl full HTML and extracted text",
+    "shellHTTP": "200",
+    "shellBodySHA256": "971c5753839bca3ac7791afff098419bf7235b962aab21a2fcda6635965f2a99",
+    "citedSections": [
+      "/north-america/united-states/florida/islamorada-flats-saltwater-flats/#rules",
+      "/trips/keys-offshore/#rules",
+      "/north-america/united-states/florida/lake-okeechobee-lake-and-reservoir-bass/#rules",
+      "/guides/best-time-to-fish-florida-keys/#rules",
+      "/guides/first-offshore-fishing-charter-checklist/#rules",
+      "/guides/what-to-bring-on-a-guided-fishing-trip/#rules",
+      "/guides/inshore-vs-offshore-fishing-charter/#rules",
+      "/guides/how-to-choose-a-fishing-guide/#rules",
+      "/guides/florida-keys-fishing-packing-list/#rules"
+    ]
+  },
+  {
+    "id": "g26-fwc-charter",
+    "title": "FWC: saltwater charter license coverage",
+    "url": "https://myfwc.com/license/commercial/saltwater/charter/",
+    "type": "official-agency",
+    "status": "text-inspected",
+    "checked": "2026-11-10",
+    "scopeNote": "Florida saltwater charter license scope. It does not confirm any individual operator or freshwater guest coverage.",
+    "retrieval": "curl full HTML and extracted text",
+    "shellHTTP": "200",
+    "shellBodySHA256": "92fcf998794b3f3c453c022718973de44689f2c657bbf56dfb1a1f9a4c0e2d00",
+    "citedSections": [
+      "/north-america/united-states/florida/islamorada-flats-saltwater-flats/#provided",
+      "/trips/keys-offshore/#rules",
+      "/guides/inshore-vs-offshore-fishing-charter/#rules",
+      "/guides/how-to-choose-a-fishing-guide/#verify",
+      "/guides/florida-keys-fishing-packing-list/#provided",
+      "/guides/guided-fishing-trip-questions/#provided"
+    ]
+  },
+  {
+    "id": "g26-fwc-salt",
+    "title": "FWC: saltwater recreational regulations",
+    "url": "https://myfwc.com/fishing/saltwater/recreational/",
+    "type": "official-agency",
+    "status": "text-inspected",
+    "checked": "2026-11-10",
+    "scopeNote": "The official Florida saltwater rules directory. Follow the species and area links before departure.",
+    "retrieval": "curl full HTML and extracted text",
+    "shellHTTP": "200",
+    "shellBodySHA256": "ef9b0befe5df8051d2fd7d783d5408fd7efab97549959d212f5bd16b83e349c1",
+    "citedSections": [
+      "/trips/keys-offshore/#rules",
+      "/guides/best-time-to-fish-florida-keys/#rules",
+      "/guides/florida-keys-fishing-packing-list/#rules"
+    ]
+  },
+  {
+    "id": "g26-fwc-fresh",
+    "title": "FWC: freshwater recreational regulations",
+    "url": "https://myfwc.com/fishing/freshwater/regulations/",
+    "type": "official-agency",
+    "status": "text-inspected",
+    "checked": "2026-11-10",
+    "scopeNote": "The official Florida freshwater rules directory. Check special waterbody rules as well as statewide rules.",
+    "retrieval": "curl full HTML and extracted text",
+    "shellHTTP": "200",
+    "shellBodySHA256": "7ff4af84133a37c1f9f5f769062510c407a2be6674357e174f6ec2b3fb01e198",
+    "citedSections": [
+      "/north-america/united-states/florida/lake-okeechobee-lake-and-reservoir-bass/#rules"
+    ]
+  },
+  {
+    "id": "g26-fwc-okee",
+    "title": "FWC: Lake Okeechobee fishing and forecast",
+    "url": "https://myfwc.com/fishing/freshwater/sites-forecasts/s/lake-okeechobee/",
+    "type": "official-agency",
+    "status": "text-inspected",
+    "checked": "2026-11-10",
+    "scopeNote": "Lake habitat, bass methods and a forecast dated 21 September 2026. The water-level observation is historical, not today’s measurement.",
+    "retrieval": "curl full HTML and extracted text",
+    "shellHTTP": "200",
+    "shellBodySHA256": "9d4f1f97269d6f1a9f03d6da7eb1ee7c7820e1d7d44d179359f9635c2e260585",
+    "citedSections": [
+      "/north-america/united-states/florida/lake-okeechobee-lake-and-reservoir-bass/#when",
+      "/north-america/united-states/florida/lake-okeechobee-lake-and-reservoir-bass/#access",
+      "/north-america/united-states/florida/lake-okeechobee-lake-and-reservoir-bass/#how",
+      "/north-america/united-states/florida/lake-okeechobee-lake-and-reservoir-bass/#rules"
+    ]
+  },
+  {
+    "id": "g26-fwc-ramps",
+    "title": "FWC: boat ramps and access",
+    "url": "https://myfwc.com/boating/boat-ramps-access/",
+    "type": "official-agency",
+    "status": "text-inspected",
+    "checked": "2026-11-10",
+    "scopeNote": "The FWC public ramp locator and access resources. A map listing does not establish that a ramp is open today.",
+    "retrieval": "curl full HTML and extracted text",
+    "shellHTTP": "200",
+    "shellBodySHA256": "00726848cda5e3ffec96b7a4d1d624893d5c7226d3804fca12ef044c7e224076",
+    "citedSections": [
+      "/north-america/united-states/florida/lake-okeechobee-lake-and-reservoir-bass/#access"
+    ]
+  },
+  {
+    "id": "g26-noaa-keys",
+    "title": "NOAA: Florida Keys sanctuary fishing regulations",
+    "url": "https://floridakeys.noaa.gov/visitor_information/things-to-do/fishing-regulations.html",
+    "type": "official-agency",
+    "status": "text-inspected",
+    "checked": "2026-11-10",
+    "scopeNote": "The sanctuary explains overlapping state, federal and sanctuary fishing rules. Check the exact fishing area.",
+    "retrieval": "curl full HTML and extracted text",
+    "shellHTTP": "200",
+    "shellBodySHA256": "235957f2ddd8fd928d5f567a407bc83571f10546f3a5e7f4ff468eb0748a450b",
+    "citedSections": [
+      "/north-america/united-states/florida/islamorada-flats-saltwater-flats/#rules",
+      "/trips/keys-offshore/#rules",
+      "/guides/best-time-to-fish-florida-keys/#rules",
+      "/guides/florida-keys-fishing-packing-list/#rules"
+    ]
+  },
+  {
+    "id": "g26-nws-keys",
+    "title": "NWS: Florida Keys marine forecasts",
+    "url": "https://www.weather.gov/key/marine",
+    "type": "official-agency",
+    "status": "text-inspected",
+    "checked": "2026-11-10",
+    "scopeNote": "The official Keys marine forecast directory. Use the current forecast and warnings for the route, not the check date here.",
+    "retrieval": "curl full HTML and extracted text",
+    "shellHTTP": "200",
+    "shellBodySHA256": "79b079f1c9d7fcac67125e80069fb55920a8533f1f7909312526dd9969e154fb",
+    "citedSections": [
+      "/north-america/united-states/florida/islamorada-flats-saltwater-flats/#when",
+      "/trips/keys-offshore/#when",
+      "/guides/best-time-to-fish-florida-keys/#weather",
+      "/guides/florida-keys-fishing-packing-list/#when"
+    ]
+  },
+  {
+    "id": "g26-nws-marine",
+    "title": "NWS: understand a marine forecast",
+    "url": "https://www.weather.gov/safety/safeboating-marine",
+    "type": "official-agency",
+    "status": "text-inspected",
+    "checked": "2026-11-10",
+    "scopeNote": "How to read marine wind, wave and warning information. The page does not approve a particular voyage.",
+    "retrieval": "curl full HTML and extracted text",
+    "shellHTTP": "200",
+    "shellBodySHA256": "85f1ff69630b679ecadd26fd749da25b1b359e5b2120fc17cad8b231f6a4a397",
+    "citedSections": [
+      "/trips/keys-offshore/#when",
+      "/north-america/united-states/texas/port-aransas-aransas-bay-inshore-estuary-fishing/#when",
+      "/north-america/united-states/north-carolina/cape-hatteras-beaches-surf-and-beach-fishing/#when",
+      "/guides/best-time-to-fish-florida-keys/#weather",
+      "/guides/first-offshore-fishing-charter-checklist/#when",
+      "/guides/first-offshore-fishing-charter-checklist/#day",
+      "/guides/what-to-bring-on-a-guided-fishing-trip/#when",
+      "/guides/inshore-vs-offshore-fishing-charter/#when",
+      "/guides/one-week-fishing-trip-checklist/#final"
+    ]
+  },
+  {
+    "id": "g26-uscg",
+    "title": "US Coast Guard: checks before a passenger charter",
+    "url": "https://content.govdelivery.com/accounts/USDHSCG/bulletins/32b7fd9",
+    "type": "official-agency",
+    "status": "text-inspected",
+    "checked": "2026-11-10",
+    "scopeNote": "US Coast Guard bulletin of 7 September 2022. It advises passengers to check the captain’s credential, safety plan and applicable vessel inspection.",
+    "retrieval": "curl full HTML and extracted text",
+    "shellHTTP": "200",
+    "shellBodySHA256": "956d0fa7caf0ea775b0508dc7ac70e3addeeab65ccd0091ce97ffe631c21431b",
+    "citedSections": [
+      "/trips/keys-offshore/#provided",
+      "/north-america/united-states/south-carolina/charleston-marshes-inshore-estuary-fishing/#provided",
+      "/north-america/united-states/north-carolina/outer-banks-oregon-inlet-offshore-offshore-pelagic-fishing/#provided",
+      "/guides/first-offshore-fishing-charter-checklist/#book",
+      "/guides/first-offshore-fishing-charter-checklist/#day",
+      "/guides/inshore-vs-offshore-fishing-charter/#provided",
+      "/guides/how-to-choose-a-fishing-guide/#verify",
+      "/guides/guided-fishing-trip-questions/#provided",
+      "/guides/fishing-gear-you-already-own/#provided"
+    ]
+  },
+  {
+    "id": "g26-noaa-hms",
+    "title": "NOAA Fisheries: Atlantic highly migratory species, for-hire fishing",
+    "url": "https://www.fisheries.noaa.gov/topic/atlantic-highly-migratory-species/for-hire-fishing",
+    "type": "official-agency",
+    "status": "text-inspected",
+    "checked": "2026-11-10",
+    "scopeNote": "The NOAA for-hire HMS rules and permit directory. Current fishery notices must be checked for the target and date.",
+    "retrieval": "curl full HTML and extracted text",
+    "shellHTTP": "200",
+    "shellBodySHA256": "809d6a4c234d220e12cb110e40a0fc7823bd0b8cdacb6cf3cfab905cd0f96627",
+    "citedSections": [
+      "/trips/keys-offshore/#rules",
+      "/north-america/united-states/north-carolina/outer-banks-oregon-inlet-offshore-offshore-pelagic-fishing/#provided",
+      "/north-america/united-states/north-carolina/outer-banks-oregon-inlet-offshore-offshore-pelagic-fishing/#rules",
+      "/guides/first-offshore-fishing-charter-checklist/#rules",
+      "/guides/inshore-vs-offshore-fishing-charter/#rules"
+    ]
+  },
+  {
+    "id": "g26-fork",
+    "title": "TPWD: Lake Fork fishing",
+    "url": "https://tpwd.texas.gov/fishboat/fish/recreational/lakes/fork/",
+    "type": "official-agency",
+    "status": "text-inspected",
+    "checked": "2026-11-10",
+    "scopeNote": "Lake Fork habitat, named targets and seasonal tactics. Special lake rules apply; old record-fish figures are not used here.",
+    "retrieval": "curl full HTML and extracted text",
+    "shellHTTP": "200",
+    "shellBodySHA256": "6bff3d2a2344ec59b256320fa452262628ca5a84d0180addddfaee8721e6e0c5",
+    "citedSections": [
+      "/north-america/united-states/texas/lake-fork-lake-and-reservoir-bass/#when",
+      "/north-america/united-states/texas/lake-fork-lake-and-reservoir-bass/#access",
+      "/north-america/united-states/texas/lake-fork-lake-and-reservoir-bass/#rules"
+    ]
+  },
+  {
+    "id": "g26-fork-access",
+    "title": "TPWD: Lake Fork public access facilities",
+    "url": "https://tpwd.texas.gov/fishboat/fish/recreational/lakes/fork/access.phtml",
+    "type": "official-agency",
+    "status": "text-inspected",
+    "checked": "2026-11-10",
+    "scopeNote": "TPWD lists public and private Lake Fork access facilities. Verify current ramp conditions and the exact meeting point.",
+    "retrieval": "curl full HTML and extracted text",
+    "shellHTTP": "200",
+    "shellBodySHA256": "e285c25e1dcfbdf0e19bb1c0c2948423c527fdac4f2ed379c30ee04d028a06aa",
+    "citedSections": [
+      "/north-america/united-states/texas/lake-fork-lake-and-reservoir-bass/#access"
+    ]
+  },
+  {
+    "id": "g26-lighthouse",
+    "title": "TPWD: Lighthouse Lakes paddling trail",
+    "url": "https://tpwd.texas.gov/boating/paddling-trails/gulf-coast/lighthouse-lakes/",
+    "type": "official-agency",
+    "status": "text-inspected",
+    "checked": "2026-11-10",
+    "scopeNote": "TPWD documents Lighthouse Lakes access, estuary species, channel crossings and seagrass protection. Loop-marker descriptions differ within the page; use the current trail map.",
+    "retrieval": "curl full HTML and extracted text",
+    "shellHTTP": "200",
+    "shellBodySHA256": "f1a573f3d3eec71bf3d95ee30677b9a15107ea6e8492e1e42f68d44e95bbca30",
+    "citedSections": [
+      "/north-america/united-states/texas/port-aransas-aransas-bay-inshore-estuary-fishing/#choose",
+      "/north-america/united-states/texas/port-aransas-aransas-bay-inshore-estuary-fishing/#when",
+      "/north-america/united-states/texas/port-aransas-aransas-bay-inshore-estuary-fishing/#access",
+      "/north-america/united-states/texas/port-aransas-aransas-bay-inshore-estuary-fishing/#rules"
+    ]
+  },
+  {
+    "id": "g26-tx-license",
+    "title": "TPWD: fishing licenses and packages",
+    "url": "https://tpwd.texas.gov/regulations/outdoor-annual/licenses/fishing-licenses-stamps-tags-packages/fishing-licenses-and-packages",
+    "type": "official-agency",
+    "status": "text-inspected",
+    "checked": "2026-11-10",
+    "scopeNote": "The Texas license and endorsement directory. Check the applicable visitor, age and trip requirements.",
+    "retrieval": "curl full HTML and extracted text",
+    "shellHTTP": "200",
+    "shellBodySHA256": "545d4bbcbb4e7f1f9bb0f5f95b45669e6e5601f0a06308dd84b72d2b1afd30d2",
+    "citedSections": [
+      "/north-america/united-states/texas/lake-fork-lake-and-reservoir-bass/#rules",
+      "/north-america/united-states/texas/port-aransas-aransas-bay-inshore-estuary-fishing/#rules",
+      "/guides/what-to-bring-on-a-guided-fishing-trip/#rules",
+      "/guides/how-to-choose-a-fishing-guide/#rules"
+    ]
+  },
+  {
+    "id": "g26-tx-rules",
+    "title": "TPWD: general fishing regulations",
+    "url": "https://tpwd.texas.gov/regulations/outdoor-annual/fishing/general-rules-regulations/general-fishing-regulations/",
+    "type": "official-agency",
+    "status": "text-inspected",
+    "checked": "2026-11-10",
+    "scopeNote": "The Texas general fishing rules directory. Check waterbody and species rules through the Outdoor Annual.",
+    "retrieval": "curl full HTML and extracted text",
+    "shellHTTP": "200",
+    "shellBodySHA256": "be319346f52eaf26bf48d4e01a5e787fe9be5b4aebbcbb21c17363f4c9c0e065",
+    "citedSections": [
+      "/north-america/united-states/texas/lake-fork-lake-and-reservoir-bass/#rules",
+      "/north-america/united-states/texas/port-aransas-aransas-bay-inshore-estuary-fishing/#rules"
+    ]
+  },
+  {
+    "id": "g26-sc-red",
+    "title": "SCDNR: red drum habitat",
+    "url": "https://www.dnr.sc.gov/marine/species/reddrum.html",
+    "type": "official-agency",
+    "status": "text-inspected",
+    "checked": "2026-11-10",
+    "scopeNote": "South Carolina red drum habitat and seasonal movement by life stage. It does not predict a specific Charleston tide or catch.",
+    "retrieval": "curl full HTML and extracted text",
+    "shellHTTP": "200",
+    "shellBodySHA256": "41f422877f2697b0b3e0c4c4575ef01c1ad5aa3def422a2997c438e6b3e2119d",
+    "citedSections": [
+      "/north-america/united-states/south-carolina/charleston-marshes-inshore-estuary-fishing/#choose",
+      "/north-america/united-states/south-carolina/charleston-marshes-inshore-estuary-fishing/#when",
+      "/north-america/united-states/south-carolina/charleston-marshes-inshore-estuary-fishing/#rules"
+    ]
+  },
+  {
+    "id": "g26-sc-license",
+    "title": "SCDNR: license requirements",
+    "url": "https://dnr.sc.gov/licenses/genlicense.html",
+    "type": "official-agency",
+    "status": "text-inspected",
+    "checked": "2026-11-10",
+    "scopeNote": "South Carolina license requirements, including the licensed charter exception. Some historical text remains on this page; use the current regulations directory too.",
+    "retrieval": "curl full HTML and extracted text",
+    "shellHTTP": "200",
+    "shellBodySHA256": "74ee690fc505458c2c1fe7e7a12a0116658a51e1f2059d18bdf8b57bee81cbfa",
+    "citedSections": [
+      "/north-america/united-states/south-carolina/charleston-marshes-inshore-estuary-fishing/#provided",
+      "/north-america/united-states/south-carolina/charleston-marshes-inshore-estuary-fishing/#rules"
+    ]
+  },
+  {
+    "id": "g26-sc-regs",
+    "title": "SCDNR: current regulations",
+    "url": "https://www.dnr.sc.gov/regulations.html",
+    "type": "official-agency",
+    "status": "text-inspected",
+    "checked": "2026-11-10",
+    "scopeNote": "SCDNR links the 2026–2027 regulations and state laws. Use the current edition and date-specific updates.",
+    "retrieval": "curl full HTML and extracted text",
+    "shellHTTP": "200",
+    "shellBodySHA256": "38d79ec9154d651d432e92e923dbfbb3f874cf9b5be98ec99b17612fa8dac16b",
+    "citedSections": [
+      "/north-america/united-states/south-carolina/charleston-marshes-inshore-estuary-fishing/#rules"
+    ]
+  },
+  {
+    "id": "g26-charleston-ramps",
+    "title": "Charleston County Parks: boat landings",
+    "url": "https://www.ccprc.com/parks/boat-landings/enjoying-your-lowcountry-waterways/",
+    "type": "official-agency",
+    "status": "text-inspected",
+    "checked": "2026-11-10",
+    "scopeNote": "Charleston County Parks identifies public landings and tide/current constraints. Access and parking need a fresh local check.",
+    "retrieval": "web tool full-page text",
+    "shellHTTP": "403",
+    "shellBodySHA256": "8450823c24d956bf8730607b3cef82c9231c01cc876da8a5c2656bd38067e54f",
+    "citedSections": [
+      "/north-america/united-states/south-carolina/charleston-marshes-inshore-estuary-fishing/#access"
+    ]
+  },
+  {
+    "id": "g26-charleston-closure",
+    "title": "Charleston County Parks: Remleys Point closure notice",
+    "url": "https://www.ccprc.com/news/post/remleys-point-boat-landing-temporarily-closing-for-improvements/",
+    "type": "official-agency",
+    "status": "text-inspected",
+    "checked": "2026-11-10",
+    "scopeNote": "Notice published 4 November 2026: Remley’s Point closure planned for mid-November, with reopening expected in early summer 2027. These are plans, not a completion report.",
+    "retrieval": "web tool full-page text",
+    "shellHTTP": "403",
+    "shellBodySHA256": "ed56935c86a3d7878889922f98c82e7815207b70abb7876d906a94db0f1697c2",
+    "citedSections": [
+      "/north-america/united-states/south-carolina/charleston-marshes-inshore-estuary-fishing/#access"
+    ]
+  },
+  {
+    "id": "g26-caha",
+    "title": "NPS: Cape Hatteras fishing",
+    "url": "https://www.nps.gov/caha/planyourvisit/fishing.htm",
+    "type": "official-agency",
+    "status": "text-inspected",
+    "checked": "2026-11-10",
+    "scopeNote": "NPS describes Cape Hatteras surf, pier and Oregon Inlet charter options, with general spring/fall context. Page updated 28 March 2025.",
+    "retrieval": "curl full HTML and extracted text",
+    "shellHTTP": "200",
+    "shellBodySHA256": "a30e93fd1a71992676ca11c396cae32918f404f6dc1609a5e04ea2c30ab675a7",
+    "citedSections": [
+      "/north-america/united-states/north-carolina/outer-banks-oregon-inlet-offshore-offshore-pelagic-fishing/#when",
+      "/north-america/united-states/north-carolina/outer-banks-oregon-inlet-offshore-offshore-pelagic-fishing/#access",
+      "/north-america/united-states/north-carolina/cape-hatteras-beaches-surf-and-beach-fishing/#choose",
+      "/north-america/united-states/north-carolina/cape-hatteras-beaches-surf-and-beach-fishing/#when",
+      "/north-america/united-states/north-carolina/cape-hatteras-beaches-surf-and-beach-fishing/#access"
+    ]
+  },
+  {
+    "id": "g26-caha-orv",
+    "title": "NPS: Cape Hatteras off-road vehicle use",
+    "url": "https://www.nps.gov/caha/planyourvisit/beachactivities.htm#ORV",
+    "type": "official-agency",
+    "status": "text-inspected",
+    "checked": "2026-11-10",
+    "scopeNote": "NPS beach activities and vehicle access links. Check permits, the current beach-access map and closures before travel.",
+    "retrieval": "curl full HTML and extracted text",
+    "shellHTTP": "200",
+    "shellBodySHA256": "fde0c6785efabb89be49c3b55a4f8dc3df11b6293f2b0c396b5e4ca0c60263a0",
+    "citedSections": [
+      "/north-america/united-states/north-carolina/cape-hatteras-beaches-surf-and-beach-fishing/#choose",
+      "/north-america/united-states/north-carolina/cape-hatteras-beaches-surf-and-beach-fishing/#access",
+      "/north-america/united-states/north-carolina/cape-hatteras-beaches-surf-and-beach-fishing/#rules"
+    ]
+  },
+  {
+    "id": "g26-nc-license",
+    "title": "NC DEQ: recreational fishing licenses",
+    "url": "https://www.deq.nc.gov/about/divisions/marine-fisheries/licenses-permits-and-leases/recreational-fishing-licenses",
+    "type": "official-agency",
+    "status": "text-inspected",
+    "checked": "2026-11-10",
+    "scopeNote": "NC DEQ explains coastal recreational licenses and for-hire coverage. Confirm the coverage for the actual trip.",
+    "retrieval": "curl full HTML and extracted text",
+    "shellHTTP": "200",
+    "shellBodySHA256": "fe59f2828aa9589efa60efef4d1624aa6a42960cee07a8cfa827c41d9b92a6f3",
+    "citedSections": [
+      "/north-america/united-states/north-carolina/outer-banks-oregon-inlet-offshore-offshore-pelagic-fishing/#rules",
+      "/north-america/united-states/north-carolina/cape-hatteras-beaches-surf-and-beach-fishing/#rules",
+      "/guides/first-offshore-fishing-charter-checklist/#rules",
+      "/guides/guided-fishing-trip-questions/#provided"
+    ]
+  },
+  {
+    "id": "g26-nc-rules",
+    "title": "NC DEQ: current recreational size and bag limits",
+    "url": "https://www.deq.nc.gov/about/divisions/marine-fisheries/rules-proclamations-and-size-and-bag-limits/recreational-size-and-bag-limits",
+    "type": "official-agency",
+    "status": "text-inspected",
+    "checked": "2026-11-10",
+    "scopeNote": "NC DEQ links recreational species rules and current proclamations. This article does not freeze limits or seasons.",
+    "retrieval": "curl full HTML and extracted text",
+    "shellHTTP": "200",
+    "shellBodySHA256": "5b86e5e893554fcde5dd55ad23a5c022383a1321f93fc957b53625fecdc29e50",
+    "citedSections": [
+      "/north-america/united-states/north-carolina/outer-banks-oregon-inlet-offshore-offshore-pelagic-fishing/#rules",
+      "/north-america/united-states/north-carolina/cape-hatteras-beaches-surf-and-beach-fishing/#rules",
+      "/guides/first-offshore-fishing-charter-checklist/#rules"
+    ]
+  },
+  {
+    "id": "g26-nc-tuna",
+    "title": "NC DEQ: yellowfin tuna",
+    "url": "https://www.deq.nc.gov/about/divisions/marine-fisheries/public-information-and-education/species-profiles/yellowfin-tuna",
+    "type": "official-agency",
+    "status": "text-inspected",
+    "checked": "2026-11-10",
+    "scopeNote": "NC DEQ identifies yellowfin tuna as an offshore charter target and describes trolling. It does not establish an Oregon Inlet monthly calendar.",
+    "retrieval": "curl full HTML and extracted text",
+    "shellHTTP": "200",
+    "shellBodySHA256": "60b5347aeae868cadc59e8f8da05b460ef03a5b14f26ee0462e3c836d84286bd",
+    "citedSections": [
+      "/north-america/united-states/north-carolina/outer-banks-oregon-inlet-offshore-offshore-pelagic-fishing/#when"
+    ]
+  },
+  {
+    "id": "g26-nws-obx",
+    "title": "NWS: Newport Morehead City marine forecasts",
+    "url": "https://www.weather.gov/mhx/marine",
+    "type": "official-agency",
+    "status": "text-inspected",
+    "checked": "2026-11-10",
+    "scopeNote": "The NWS Newport/Morehead City marine forecast portal. Select the relevant offshore waters and current warnings.",
+    "retrieval": "curl full HTML and extracted text",
+    "shellHTTP": "200",
+    "shellBodySHA256": "be2948baedaf0533c31e0aad3e22a80830385b6d9b15e83baf4ac720a797489d",
+    "citedSections": [
+      "/north-america/united-states/north-carolina/outer-banks-oregon-inlet-offshore-offshore-pelagic-fishing/#when"
+    ]
+  },
+  {
+    "id": "g26-lanier",
+    "title": "Georgia DNR: fishing at Don Carter State Park",
+    "url": "https://georgiawildlife.com/DonCarter/Fishing",
+    "type": "official-agency",
+    "status": "text-inspected",
+    "checked": "2026-11-10",
+    "scopeNote": "Georgia DNR’s Don Carter State Park page supports Lanier bass and striper targets, seasonal context and park access. Its “spotted bass” wording is retained as agency terminology.",
+    "retrieval": "curl full HTML and extracted text",
+    "shellHTTP": "200",
+    "shellBodySHA256": "0ad9e1c657e37e98ba9cd97e30a90c43efacb062cd54ed30555a69fb5d6187ee",
+    "citedSections": [
+      "/north-america/united-states/georgia/lake-lanier-lake-and-reservoir-bass/#choose",
+      "/north-america/united-states/georgia/lake-lanier-lake-and-reservoir-bass/#when",
+      "/north-america/united-states/georgia/lake-lanier-lake-and-reservoir-bass/#access"
+    ]
+  },
+  {
+    "id": "g26-ga-forecast",
+    "title": "Georgia DNR: fishing forecasts",
+    "url": "https://georgiawildlife.com/fishing-forecasts",
+    "type": "official-agency",
+    "status": "text-inspected",
+    "checked": "2026-11-10",
+    "scopeNote": "Georgia DNR’s forecast directory links the current Lanier forecast. Open that forecast for trip-date detail.",
+    "retrieval": "curl full HTML and extracted text",
+    "shellHTTP": "200",
+    "shellBodySHA256": "890985ba7c4b0ec413a5d44acc618e247a5a1417d548f9830edbc18818c668cc",
+    "citedSections": [
+      "/north-america/united-states/georgia/lake-lanier-lake-and-reservoir-bass/#when"
+    ]
+  },
+  {
+    "id": "g26-ga-rules",
+    "title": "Georgia DNR: current fishing regulations",
+    "url": "https://georgiawildlife.com/fishing-regulations",
+    "type": "official-agency",
+    "status": "text-inspected",
+    "checked": "2026-11-10",
+    "scopeNote": "Georgia DNR’s current fishing regulations directory. Check the named water and species.",
+    "retrieval": "curl full HTML and extracted text",
+    "shellHTTP": "200",
+    "shellBodySHA256": "239330bbd76e4be8e751d7bf2c6632cc45a557d094103720835215d28252bcbb",
+    "citedSections": [
+      "/north-america/united-states/georgia/lake-lanier-lake-and-reservoir-bass/#rules"
+    ]
+  },
+  {
+    "id": "g26-ga-license",
+    "title": "Georgia DNR: choose a license",
+    "url": "https://georgiawildlife.com/licenses-permits-passes/choose",
+    "type": "official-agency",
+    "status": "text-inspected",
+    "checked": "2026-11-10",
+    "scopeNote": "Georgia DNR’s license selection page. Check visitor eligibility and any additional privileges for the trip.",
+    "retrieval": "curl full HTML and extracted text",
+    "shellHTTP": "200",
+    "shellBodySHA256": "36a0ee26ad60e36c55a6013d4af36668ecb58df8f8ca0609e03e5490f35b9f44",
+    "citedSections": [
+      "/north-america/united-states/georgia/lake-lanier-lake-and-reservoir-bass/#rules"
+    ]
+  },
+  {
+    "id": "g26-situk",
+    "title": "ADF&G: Situk River sockeye and coho",
+    "url": "https://www.adfg.alaska.gov/index.cfm?adfg=ByAreaSoutheastYakutat.fishingOpps&fishery=Situk+River+sockeye+and+coho+salmon",
+    "type": "official-agency",
+    "status": "text-inspected",
+    "checked": "2026-11-10",
+    "scopeNote": "ADF&G describes Situk sockeye timing, coho reach selection, Nine Mile Bridge, Lower Landing and the 14-mile float. Its date widget is malformed; no exact coho window is inferred from it.",
+    "retrieval": "curl full HTML and extracted text",
+    "shellHTTP": "200",
+    "shellBodySHA256": "2bed6180b222a0f44c8a74fad5abf89610a9e6cc67c38f80bbde6b206a3acbbf",
+    "citedSections": [
+      "/north-america/united-states/alaska/situk-river-river-salmon/#choose",
+      "/north-america/united-states/alaska/situk-river-river-salmon/#when",
+      "/north-america/united-states/alaska/situk-river-river-salmon/#access",
+      "/guides/alaska-fishing-packing-list/#when"
+    ]
+  },
+  {
+    "id": "g26-ak-rules",
+    "title": "ADF&G: sport fishing regulations",
+    "url": "https://www.adfg.alaska.gov/index.cfm?adfg=fishregulations.sport",
+    "type": "official-agency",
+    "status": "text-inspected",
+    "checked": "2026-11-10",
+    "scopeNote": "ADF&G sport fishing regulations directory. Select Southeast Alaska and the named water, then check emergency orders.",
+    "retrieval": "curl full HTML and extracted text",
+    "shellHTTP": "200",
+    "shellBodySHA256": "e133782224b04115cf26029e4776b34e64362e4f8f2b32e7321ce238b74c0d4d",
+    "citedSections": [
+      "/north-america/united-states/alaska/situk-river-river-salmon/#when",
+      "/north-america/united-states/alaska/situk-river-river-salmon/#rules",
+      "/guides/what-to-bring-on-a-guided-fishing-trip/#rules",
+      "/guides/how-to-choose-a-fishing-guide/#rules",
+      "/guides/alaska-fishing-packing-list/#rules",
+      "/guides/guided-fishing-trip-questions/#rules",
+      "/guides/fishing-gear-you-already-own/#rules",
+      "/guides/one-week-fishing-trip-checklist/#final",
+      "/guides/one-week-fishing-trip-checklist/#rules"
+    ]
+  },
+  {
+    "id": "g26-ak-license",
+    "title": "ADF&G: fishing licenses",
+    "url": "https://www.adfg.alaska.gov/index.cfm?adfg=license.main",
+    "type": "official-agency",
+    "status": "text-inspected",
+    "checked": "2026-11-10",
+    "scopeNote": "ADF&G license directory. Confirm requirements for the individual traveler, species and trip.",
+    "retrieval": "curl full HTML and extracted text",
+    "shellHTTP": "200",
+    "shellBodySHA256": "e4a7eafee3ff8b5565b4d6fb7b3ba653390875b9ce008b0805ad36d02b202786",
+    "citedSections": [
+      "/north-america/united-states/alaska/situk-river-river-salmon/#rules",
+      "/guides/what-to-bring-on-a-guided-fishing-trip/#rules",
+      "/guides/how-to-choose-a-fishing-guide/#rules",
+      "/guides/alaska-fishing-packing-list/#rules",
+      "/guides/guided-fishing-trip-questions/#rules",
+      "/guides/fishing-gear-you-already-own/#rules",
+      "/guides/one-week-fishing-trip-checklist/#rules"
+    ]
+  },
+  {
+    "id": "g26-ak-orders",
+    "title": "ADF&G: emergency orders and news",
+    "url": "https://www.adfg.alaska.gov/sf/EONR/index.cfm?ADFG=main.home",
+    "type": "official-agency",
+    "status": "text-inspected",
+    "checked": "2026-11-10",
+    "scopeNote": "ADF&G emergency order search. Search the Yakutat management area immediately before the outing.",
+    "retrieval": "curl full HTML and extracted text",
+    "shellHTTP": "200",
+    "shellBodySHA256": "d27ee6cf1d23c6a44c0080b6582af79406df0fe818d81e4d25f630a46f3cfac0",
+    "citedSections": [
+      "/north-america/united-states/alaska/situk-river-river-salmon/#when",
+      "/north-america/united-states/alaska/situk-river-river-salmon/#rules",
+      "/guides/alaska-fishing-packing-list/#rules",
+      "/guides/guided-fishing-trip-questions/#rules",
+      "/guides/fishing-gear-you-already-own/#rules",
+      "/guides/one-week-fishing-trip-checklist/#final"
+    ]
+  },
+  {
+    "id": "g26-mt-rules",
+    "title": "Montana FWP: fishing regulations",
+    "url": "https://fwp.mt.gov/fish/regulations",
+    "type": "official-agency",
+    "status": "text-inspected",
+    "checked": "2026-11-10",
+    "scopeNote": "Montana FWP explains district rules and water-specific exceptions. Use the current year’s regulations.",
+    "retrieval": "curl full HTML and extracted text",
+    "shellHTTP": "200",
+    "shellBodySHA256": "e9e986fa132d94627c02b732b677930ec381ffa281bd7db77e141f726e1f0ccb",
+    "citedSections": [
+      "/guides/montana-first-fly-fishing-trip/#when",
+      "/guides/montana-first-fly-fishing-trip/#rules"
+    ]
+  },
+  {
+    "id": "g26-mt-closures",
+    "title": "Montana FWP: current waterbody restrictions",
+    "url": "https://fwp.mt.gov/news/current-closures-restrictions/waterbody-closures",
+    "type": "official-agency",
+    "status": "text-inspected",
+    "checked": "2026-11-10",
+    "scopeNote": "Montana FWP’s current waterbody restrictions. Drought, construction and other closures can change after this check.",
+    "retrieval": "curl full HTML and extracted text",
+    "shellHTTP": "200",
+    "shellBodySHA256": "3b4786ae23264c013cfd5ae949eb3a3cf84abed0fdd5ecde5e6da2e76307eca7",
+    "citedSections": [
+      "/guides/montana-first-fly-fishing-trip/#when",
+      "/guides/montana-first-fly-fishing-trip/#rules"
+    ]
+  },
+  {
+    "id": "g26-mt-license",
+    "title": "Montana FWP: fishing license basics",
+    "url": "https://fwp.mt.gov/fish/license",
+    "type": "official-agency",
+    "status": "text-inspected",
+    "checked": "2026-11-10",
+    "scopeNote": "Montana FWP license requirements and links. Confirm the necessary fishing, conservation and access permissions.",
+    "retrieval": "curl full HTML and extracted text",
+    "shellHTTP": "200",
+    "shellBodySHA256": "7a39c4079ca3a4d8fd660bedae770fcceab3ec634f5afd7c5a26dc0aa00cd147",
+    "citedSections": [
+      "/guides/montana-first-fly-fishing-trip/#rules"
+    ]
+  },
+  {
+    "id": "g26-mt-access",
+    "title": "Montana FWP: stream access",
+    "url": "https://fwp.mt.gov/fish/stream-access",
+    "type": "official-agency",
+    "status": "text-inspected",
+    "checked": "2026-11-10",
+    "scopeNote": "Montana FWP explains stream access and private-land constraints. Public water access does not grant a route across private land.",
+    "retrieval": "curl full HTML and extracted text",
+    "shellHTTP": "200",
+    "shellBodySHA256": "b1421035ecdb9e13dee6657f84175c574a135a506ab57d965dbc6e745c9633ae",
+    "citedSections": [
+      "/guides/montana-first-fly-fishing-trip/#access"
+    ]
+  }
+]

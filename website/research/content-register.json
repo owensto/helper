@@ -130,21 +130,23 @@
     "Asia",
     "Oceania"
   ],
-  "sources": 223,
+  "sources": 266,
   "articles": [
     {
       "id": "situk-coho-river",
       "type": "trip",
-      "words": 192,
+      "words": 644,
       "sources": [
-        "situk"
+        "g26-situk",
+        "g26-ak-rules",
+        "g26-ak-orders",
+        "g26-ak-license"
       ],
       "review": {
+        "checked": "2026-11-10",
         "status": "source-checked",
-        "checked": "2026-09-13",
         "fieldTested": false,
-        "independentExpertReviewed": false,
-        "automatedAudit": "see research/quality-report.json"
+        "independentExpertReviewed": false
       }
     },
     {
@@ -3733,12 +3735,16 @@
     {
       "id": "cape-hatteras-surf",
       "type": "trip",
-      "words": 259,
+      "words": 579,
       "sources": [
-        "release-caha"
+        "g26-caha",
+        "g26-caha-orv",
+        "g26-nws-marine",
+        "g26-nc-license",
+        "g26-nc-rules"
       ],
       "review": {
-        "checked": "2026-09-13",
+        "checked": "2026-11-10",
         "status": "source-checked",
         "fieldTested": false,
         "independentExpertReviewed": false
@@ -3747,13 +3753,18 @@
     {
       "id": "na-us-nc-002",
       "type": "trip",
-      "words": 247,
+      "words": 564,
       "sources": [
-        "release-oregon-inlet",
-        "release-caha"
+        "g26-caha",
+        "g26-nc-tuna",
+        "g26-nws-obx",
+        "g26-uscg",
+        "g26-noaa-hms",
+        "g26-nc-license",
+        "g26-nc-rules"
       ],
       "review": {
-        "checked": "2026-09-13",
+        "checked": "2026-11-10",
         "status": "source-checked",
         "fieldTested": false,
         "independentExpertReviewed": false
@@ -3866,13 +3877,17 @@
     {
       "id": "na-us-sc-001",
       "type": "trip",
-      "words": 224,
+      "words": 594,
       "sources": [
-        "release-sc-drum",
-        "release-sc-big-drum"
+        "g26-sc-red",
+        "g26-charleston-ramps",
+        "g26-charleston-closure",
+        "g26-sc-license",
+        "g26-uscg",
+        "g26-sc-regs"
       ],
       "review": {
-        "checked": "2026-09-13",
+        "checked": "2026-11-10",
         "status": "source-checked",
         "fieldTested": false,
         "independentExpertReviewed": false
@@ -3948,13 +3963,15 @@
     {
       "id": "na-us-ga-001",
       "type": "trip",
-      "words": 237,
+      "words": 596,
       "sources": [
-        "release-lanier",
-        "release-ga-forecast"
+        "g26-lanier",
+        "g26-ga-forecast",
+        "g26-ga-license",
+        "g26-ga-rules"
       ],
       "review": {
-        "checked": "2026-09-13",
+        "checked": "2026-11-10",
         "status": "source-checked",
         "fieldTested": false,
         "independentExpertReviewed": false
@@ -4031,13 +4048,19 @@
     {
       "id": "na-us-fl-001",
       "type": "trip",
-      "words": 212,
+      "words": 616,
       "sources": [
-        "release-keys-islamorada",
-        "release-keys-season"
+        "g26-fwc-bonefish",
+        "g26-fwc-permit-bio",
+        "g26-fwc-monroe",
+        "g26-fwc-permit",
+        "g26-nws-keys",
+        "g26-fwc-charter",
+        "g26-fwc-visitors",
+        "g26-noaa-keys"
       ],
       "review": {
-        "checked": "2026-09-13",
+        "checked": "2026-11-10",
         "status": "source-checked",
         "fieldTested": false,
         "independentExpertReviewed": false
@@ -4046,13 +4069,15 @@
     {
       "id": "na-us-fl-002",
       "type": "trip",
-      "words": 234,
+      "words": 566,
       "sources": [
-        "release-okee-habitat",
-        "release-okee-fishing"
+        "g26-fwc-okee",
+        "g26-fwc-ramps",
+        "g26-fwc-visitors",
+        "g26-fwc-fresh"
       ],
       "review": {
-        "checked": "2026-09-13",
+        "checked": "2026-11-10",
         "status": "source-checked",
         "fieldTested": false,
         "independentExpertReviewed": false
@@ -4633,12 +4658,15 @@
     {
       "id": "na-us-tx-001",
       "type": "trip",
-      "words": 228,
+      "words": 579,
       "sources": [
-        "release-porta"
+        "g26-lighthouse",
+        "g26-nws-marine",
+        "g26-tx-license",
+        "g26-tx-rules"
       ],
       "review": {
-        "checked": "2026-09-13",
+        "checked": "2026-11-10",
         "status": "source-checked",
         "fieldTested": false,
         "independentExpertReviewed": false
@@ -4647,13 +4675,15 @@
     {
       "id": "na-us-tx-002",
       "type": "trip",
-      "words": 231,
+      "words": 581,
       "sources": [
-        "release-fork",
-        "release-fork-access"
+        "g26-fork",
+        "g26-fork-access",
+        "g26-tx-license",
+        "g26-tx-rules"
       ],
       "review": {
-        "checked": "2026-09-13",
+        "checked": "2026-11-10",
         "status": "source-checked",
         "fieldTested": false,
         "independentExpertReviewed": false
@@ -6814,16 +6844,23 @@
     {
       "id": "keys-offshore",
       "type": "trip",
-      "words": 161,
+      "words": 611,
       "sources": [
-        "keys-world"
+        "g26-fwc-monroe",
+        "g26-nws-keys",
+        "g26-nws-marine",
+        "g26-uscg",
+        "g26-fwc-visitors",
+        "g26-fwc-charter",
+        "g26-fwc-salt",
+        "g26-noaa-keys",
+        "g26-noaa-hms"
       ],
       "review": {
+        "checked": "2026-11-10",
         "status": "source-checked",
-        "checked": "2026-09-13",
         "fieldTested": false,
-        "independentExpertReviewed": false,
-        "automatedAudit": "see research/quality-report.json"
+        "independentExpertReviewed": false
       }
     },
     {

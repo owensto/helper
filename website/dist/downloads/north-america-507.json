@@ -3,7 +3,7 @@
   "trips": [
     {
       "id": "situk-coho-river",
-      "title": "Situk River coho fishing: bank, float and tackle decisions",
+      "title": "Situk River salmon fishing: bank access or a full float",
       "place": "Yakutat / Situk River",
       "country": "United States",
       "region": "North America",
@@ -24,34 +24,55 @@
       ],
       "climate": "cool",
       "fish": [
+        "Sockeye salmon",
         "Coho salmon"
       ],
-      "summary": "A coho trip needs a river-reach decision before a rod recommendation. Separate bank access, a full float and the condition of the fish you want to target.",
+      "summary": "Plan a Situk River salmon trip from Yakutat. Compare bank access and the full float, separate sockeye and coho plans, and check current Alaska rules.",
       "evidence": [
         {
-          "source": "situk",
-          "claim": "ADF&G describes streamer and leech flies, jigs, spinners and spoons for Situk coho. It distinguishes fresher lower-river fish from dark or spawning fish farther upstream, particularly later in September. Its described float from Nine Mile Bridge to the Lower Landing is 14 miles."
+          "source": "g26-situk",
+          "claim": "ADF&G identifies Nine Mile Bridge and Lower Landing, a 14-mile float and distinct sockeye and coho reach choices."
         }
       ],
-      "season": "Plan around the coho run and the intended river reach, not an undifferentiated “Alaska salmon season.” The source makes the later-September distinction important. This page does not establish current run strength, water level or a daily catch probability.",
+      "season": "ADF&G describes sockeye entering in June–July and different coho reach choices. Its malformed date widget does not establish an exact coho calendar; confirm the run and reach locally.",
       "sections": [
         {
-          "title": "Choose a day you can actually fish",
-          "text": "Compare a bank outing with a float as different products. For a float, establish the pickup and takeout arrangement before choosing accommodation or estimating available fishing time. For a bank day, identify the legal access and the length of the walk. A guide who supplies the boat does not necessarily supply waders, boots or transport back to your car."
+          "title": "Who this trip suits",
+          "text": "Choose the Situk if you want a named river salmon trip with a clear species and access plan. A bank session and the full float have different transport, effort and equipment needs. Discuss your ability on uneven ground and your comfort in moving water. A guided float can suit someone who wants help with the route and fishing decisions, but confirm the time, boat access and ability to stop. Do not treat the full float as a short bank visit with a boat added."
         },
         {
-          "title": "Assemble around presentation weight",
-          "text": "Choose whether you will cast lures, fish jigs or use fly tackle. Ask for the actual lure or fly sizes and the weight needed for the intended water. Those answers determine the rod’s casting range and the line system. An existing suitable salmon setup is more useful than an arbitrary “Alaska combo.” Pack replacement leaders and a small working selection rather than every salmon lure in a catalog."
+          "title": "Choose the bank or the float",
+          "text": "Lower-river bank session; ADF&G describes bank anglers walking from Lower Landing.; Confirm the actual route, current conditions and the chosen target. Upper access near Nine Mile Bridge; Sockeye distribution changes as the run moves upriver.; Choose the reach from current information, not just easy road access. Full float; ADF&G describes about 14 river miles from Nine Mile Bridge to Lower Landing.; Arrange the boat, shuttle, take-out and full day’s supplies."
         },
         {
-          "title": "Keep a separate boat-day plan",
-          "text": "A Yakutat halibut day is not an extension of this river list. Keep wet wading equipment separate from dry clothing and boat footwear, and ask whether changing or drying space is available. Put the equipment you need at the first stop in accessible luggage. If the river is not suitable on the planned day, a guide-confirmed alternative is a contingency, not a guaranteed substitute fishery."
+          "title": "When to go: separate sockeye and coho",
+          "text": "ADF&G describes sockeye entering the Situk during June and July, with fish distribution moving upriver through the run. Its coho guidance emphasizes fresher fish in the lower river and notes that fish farther upstream can show spawning color later in September. This does not establish a complete coho booking calendar. The agency page’s date widget contains malformed values, so this guide does not use it for exact dates. Ask the Yakutat area office and your operator about the species, run stage and reach for your intended week. Check Southeast Alaska regulations and Yakutat emergency orders again close to the trip. A historical run window does not prove that a reach is open or a fishing method is permitted."
+        },
+        {
+          "title": "How to arrange the Yakutat day",
+          "text": "ADF&G describes road access from Yakutat to Nine Mile Bridge and a separate road to Lower Landing. Choose the actual starting point, take-out and transport plan. Save both pins offline and agree who moves the vehicle. For a float, confirm the expected duration, current river conditions, guide qualifications for the activity and the exit plan. For a bank visit, agree a turn-back time and suitable footwear. No water level or wading depth is declared safe by this article."
+        },
+        {
+          "title": "What to bring",
+          "text": "Base layer, insulation and rain shell; One usable layer system plus a dry backup; Use the actual weather and time away. Waders and boots; Only if the access plan calls for them; Confirm sizes, rental condition and permitted soles. Dry storage; One day bag and separate wet-gear bag; Keep the spare clothing dry until needed. Food, water and personal essentials; For the whole route and agreed contingency; A float needs a clear resupply and exit plan. Salmon setup; Only the approved fly or conventional system; Choose the species and presentation before line and tackle. Communication and local safety arrangements; Confirm with the operator; Ask about coverage, emergency contact and local wildlife procedures."
+        },
+        {
+          "title": "What the guide provides: confirm shuttle and sizes",
+          "text": "Request an inventory of boat equipment, rods, reels, terminal tackle, waders, boots and safety equipment. Ask who supplies and arranges the shuttle. A rod package does not imply footwear or transport. Confirm drying access at your accommodation and baggage limits with each transport provider. If you intend to retain fish where permitted, ask separately about processing, storage and the trip home. No lodge package or operator availability is verified here."
+        },
+        {
+          "title": "Local mistakes to avoid",
+          "text": "Booking “salmon season” without naming sockeye or coho. Choosing the bank reach only because it is close to the road. Failing to arrange the take-out and shuttle for the full float. Using a general Alaska forecast as a river access decision. Buying waders before confirming whether you will wade and what sizes the operator supplies."
+        },
+        {
+          "title": "Regulations and licenses",
+          "text": "Use ADF&G’s sport license and regulations pages. Select the Southeast Alaska rules and the Situk/Yakutat area, then search emergency orders for the trip date. Ask the operator to confirm the legal reach, target, method and any current restrictions. Fees, limits and rules can change. This guide links the authority instead of storing those details as permanent facts."
         }
       ],
       "kit": [
         {
-          "name": "Coho casting or fly setup",
-          "specification": "Match the actual presentation weight and local leader choice.",
+          "name": "Species-matched salmon setup",
+          "specification": "Choose sockeye or coho, then match the presentation, line and local leader choice.",
           "why": "A spinner, jig and fly line do not share one rod-rating system.",
           "query": "",
           "decision": "confirm"
@@ -92,24 +113,35 @@
         "delta-clearwater-grayling"
       ],
       "review": {
+        "checked": "2026-11-10",
         "status": "source-checked",
-        "checked": "2026-09-13",
         "fieldTested": false,
-        "independentExpertReviewed": false,
-        "automatedAudit": "see research/quality-report.json"
+        "independentExpertReviewed": false
       },
       "techniqueNote": {
         "source": "situk",
         "text": "ADF&G’s useful presentation families include streamer/leech flies, jigs, spinners and spoons. Its coho guidance includes bright fly and lure options. Choose one of those families, then obtain the useful size and weight for the intended reach; do not assume a mixed salmon kit contains the right variants."
       },
-      "seasonWindows": [],
+      "seasonWindows": [
+        {
+          "months": [
+            6,
+            7
+          ],
+          "label": "ADF&G sockeye entry period; not an exact coho calendar",
+          "source": "g26-situk"
+        }
+      ],
       "sourceIds": [
-        "situk"
+        "g26-situk",
+        "g26-ak-rules",
+        "g26-ak-orders",
+        "g26-ak-license"
       ],
       "sectionWordCount": 192,
-      "articleWordCount": 192,
+      "articleWordCount": 644,
       "contentTier": "detailed-guide",
-      "evidenceDepth": "Inspected source text",
+      "evidenceDepth": "Official source text checked 2026-11-10; preparation advice is editorial",
       "jurisdictionType": "country",
       "catalogOrigin": "retained-world-edition",
       "legacyIds": [
@@ -137,7 +169,245 @@
       },
       "indexEligible": true,
       "tripTypeIds": [],
-      "tripTypeNames": []
+      "tripTypeNames": [],
+      "planningGuide": {
+        "destination": "situk-coho-river",
+        "title": "Situk River salmon fishing: bank access or a full float",
+        "description": "Plan a Situk River salmon trip from Yakutat. Compare bank access and the full float, separate sockeye and coho plans, and check current Alaska rules.",
+        "category": "ALASKA / RIVER SALMON",
+        "season": "ADF&G describes sockeye entering in June–July and different coho reach choices. Its malformed date widget does not establish an exact coho calendar; confirm the run and reach locally.",
+        "evidence": [
+          {
+            "source": "g26-situk",
+            "claim": "ADF&G identifies Nine Mile Bridge and Lower Landing, a 14-mile float and distinct sockeye and coho reach choices."
+          }
+        ],
+        "sections": [
+          {
+            "id": "suits",
+            "title": "Who this trip suits",
+            "paragraphs": [
+              "Choose the Situk if you want a named river salmon trip with a clear species and access plan. A bank session and the full float have different transport, effort and equipment needs. Discuss your ability on uneven ground and your comfort in moving water.",
+              "A guided float can suit someone who wants help with the route and fishing decisions, but confirm the time, boat access and ability to stop. Do not treat the full float as a short bank visit with a boat added."
+            ],
+            "sources": []
+          },
+          {
+            "id": "choose",
+            "title": "Choose the bank or the float",
+            "paragraphs": [],
+            "table": {
+              "heads": [
+                "Plan",
+                "Official access context",
+                "Decision to settle"
+              ],
+              "rows": [
+                [
+                  "Lower-river bank session",
+                  "ADF&G describes bank anglers walking from Lower Landing.",
+                  "Confirm the actual route, current conditions and the chosen target."
+                ],
+                [
+                  "Upper access near Nine Mile Bridge",
+                  "Sockeye distribution changes as the run moves upriver.",
+                  "Choose the reach from current information, not just easy road access."
+                ],
+                [
+                  "Full float",
+                  "ADF&G describes about 14 river miles from Nine Mile Bridge to Lower Landing.",
+                  "Arrange the boat, shuttle, take-out and full day’s supplies."
+                ]
+              ]
+            },
+            "sources": [
+              "g26-situk"
+            ]
+          },
+          {
+            "id": "when",
+            "title": "When to go: separate sockeye and coho",
+            "paragraphs": [
+              "ADF&G describes sockeye entering the Situk during June and July, with fish distribution moving upriver through the run. Its coho guidance emphasizes fresher fish in the lower river and notes that fish farther upstream can show spawning color later in September.",
+              "This does not establish a complete coho booking calendar. The agency page’s date widget contains malformed values, so this guide does not use it for exact dates. Ask the Yakutat area office and your operator about the species, run stage and reach for your intended week.",
+              "Check Southeast Alaska regulations and Yakutat emergency orders again close to the trip. A historical run window does not prove that a reach is open or a fishing method is permitted."
+            ],
+            "sources": [
+              "g26-situk",
+              "g26-ak-rules",
+              "g26-ak-orders"
+            ]
+          },
+          {
+            "id": "access",
+            "title": "How to arrange the Yakutat day",
+            "paragraphs": [
+              "ADF&G describes road access from Yakutat to Nine Mile Bridge and a separate road to Lower Landing. Choose the actual starting point, take-out and transport plan. Save both pins offline and agree who moves the vehicle.",
+              "For a float, confirm the expected duration, current river conditions, guide qualifications for the activity and the exit plan. For a bank visit, agree a turn-back time and suitable footwear. No water level or wading depth is declared safe by this article."
+            ],
+            "sources": [
+              "g26-situk"
+            ]
+          },
+          {
+            "id": "bring",
+            "title": "What to bring",
+            "paragraphs": [],
+            "table": {
+              "heads": [
+                "Item",
+                "Starting quantity",
+                "What changes it"
+              ],
+              "rows": [
+                [
+                  "Base layer, insulation and rain shell",
+                  "One usable layer system plus a dry backup",
+                  "Use the actual weather and time away."
+                ],
+                [
+                  "Waders and boots",
+                  "Only if the access plan calls for them",
+                  "Confirm sizes, rental condition and permitted soles."
+                ],
+                [
+                  "Dry storage",
+                  "One day bag and separate wet-gear bag",
+                  "Keep the spare clothing dry until needed."
+                ],
+                [
+                  "Food, water and personal essentials",
+                  "For the whole route and agreed contingency",
+                  "A float needs a clear resupply and exit plan."
+                ],
+                [
+                  "Salmon setup",
+                  "Only the approved fly or conventional system",
+                  "Choose the species and presentation before line and tackle."
+                ],
+                [
+                  "Communication and local safety arrangements",
+                  "Confirm with the operator",
+                  "Ask about coverage, emergency contact and local wildlife procedures."
+                ]
+              ]
+            },
+            "sources": []
+          },
+          {
+            "id": "provided",
+            "title": "What the guide provides: confirm shuttle and sizes",
+            "paragraphs": [
+              "Request an inventory of boat equipment, rods, reels, terminal tackle, waders, boots and safety equipment. Ask who supplies and arranges the shuttle. A rod package does not imply footwear or transport.",
+              "Confirm drying access at your accommodation and baggage limits with each transport provider. If you intend to retain fish where permitted, ask separately about processing, storage and the trip home. No lodge package or operator availability is verified here."
+            ],
+            "sources": []
+          },
+          {
+            "id": "mistakes",
+            "title": "Local mistakes to avoid",
+            "paragraphs": [],
+            "items": [
+              "Booking “salmon season” without naming sockeye or coho.",
+              "Choosing the bank reach only because it is close to the road.",
+              "Failing to arrange the take-out and shuttle for the full float.",
+              "Using a general Alaska forecast as a river access decision.",
+              "Buying waders before confirming whether you will wade and what sizes the operator supplies."
+            ],
+            "sources": []
+          },
+          {
+            "id": "rules",
+            "title": "Regulations and licenses",
+            "paragraphs": [
+              "Use ADF&G’s sport license and regulations pages. Select the Southeast Alaska rules and the Situk/Yakutat area, then search emergency orders for the trip date.",
+              "Ask the operator to confirm the legal reach, target, method and any current restrictions. Fees, limits and rules can change. This guide links the authority instead of storing those details as permanent facts."
+            ],
+            "sources": [
+              "g26-ak-license",
+              "g26-ak-rules",
+              "g26-ak-orders"
+            ]
+          }
+        ],
+        "faq": [
+          {
+            "q": "How long is the Situk River float?",
+            "a": "ADF&G describes about 14 river miles from Nine Mile Bridge to Lower Landing. Ask the operator for a duration based on the current river and fishing plan."
+          },
+          {
+            "q": "When do sockeye enter the Situk?",
+            "a": "ADF&G describes a June–July entry period. Confirm the current run, reach and emergency orders before you travel."
+          },
+          {
+            "q": "Do I need waders for a Situk trip?",
+            "a": "That depends on the bank, float and wading plan. Ask about access, suitable footwear, sizes and confirmed rental or guide provision before buying."
+          }
+        ],
+        "relatedTrips": [
+          "yakutat-halibut",
+          "delta-clearwater-grayling"
+        ],
+        "relatedGuides": [
+          "alaska-fishing-packing-list",
+          "one-week-fishing-trip-checklist"
+        ],
+        "reel": {
+          "slug": "mountain-fly-loop",
+          "note": "No Situk reel is available. This related fly-casting animation links to a Korean stream guide; it does not show Situk salmon technique. This is an animation, not location footage or evidence of a catch."
+        },
+        "regionPath": "/north-america/united-states/alaska/",
+        "regionLabel": "Explore Alaska trips",
+        "plannerNote": "Start with this destination. Add your dates, choose the method, and mark equipment as provided only after the operator confirms it.",
+        "nextStep": "Choose sockeye or coho, then choose the reach and access. Confirm the shuttle and supplied equipment before packing.",
+        "revision": "Rebuilt the trip comparison, access plan, packing choices, rule links and FAQ from the listed official sources.",
+        "catalog": {
+          "fish": [
+            "Sockeye salmon",
+            "Coho salmon"
+          ],
+          "kit": [
+            {
+              "name": "Species-matched salmon setup",
+              "specification": "Choose sockeye or coho, then match the presentation, line and local leader choice.",
+              "why": "A spinner, jig and fly line do not share one rod-rating system.",
+              "query": "",
+              "decision": "confirm"
+            },
+            {
+              "name": "Wading system",
+              "specification": "Boot fit, belt and suitable traction; only if the actual outing involves wading.",
+              "why": "A bank or float booking may have different footwear requirements.",
+              "query": "breathable fishing waders rubber sole boots",
+              "decision": "confirm"
+            },
+            {
+              "name": "Leader and lure replenishment",
+              "specification": "Obtain a short local list of types, sizes and quantities.",
+              "why": "A few exact replacements beat a generic assortment.",
+              "query": "salmon fishing leader tackle organizer",
+              "decision": "confirm"
+            },
+            {
+              "name": "Dry change and rain shell",
+              "specification": "Pack a complete dry layer set away from used river gear.",
+              "why": "The return journey should not depend on wet clothing drying immediately.",
+              "query": "waterproof roll top dry bag",
+              "decision": "consider"
+            }
+          ]
+        },
+        "seasonWindows": [
+          {
+            "months": [
+              6,
+              7
+            ],
+            "label": "ADF&G sockeye entry period; not an exact coho calendar",
+            "source": "g26-situk"
+          }
+        ]
+      }
     },
     {
       "id": "na-us-ak-002",
@@ -36377,7 +36647,7 @@
     },
     {
       "id": "cape-hatteras-surf",
-      "title": "Cape Hatteras surf fishing: beach access, setups and a lighter packing list",
+      "title": "Cape Hatteras surf fishing: access, seasons and packing",
       "place": "Cape Hatteras, North Carolina",
       "country": "United States",
       "region": "North America",
@@ -36397,30 +36667,46 @@
       ],
       "climate": "mixed",
       "fish": [],
-      "summary": "Choose a beach outing rather than mixing surf, pier and offshore advice. Plan access first, then match your presentation and what you can carry.",
+      "summary": "Plan a Cape Hatteras surf trip with beach, pier and vehicle-access choices, seasonal context, a practical packing list and current official rules.",
       "evidence": [
         {
-          "source": "release-caha",
-          "claim": "Cape Hatteras National Seashore lists surf, pier, sound and offshore options. It identifies Oregon Inlet Fishing Center separately from beach fishing; those are different outings, not interchangeable access points."
+          "source": "g26-caha",
+          "claim": "NPS documents surf, pier and boat opportunities and general spring/fall timing."
         }
       ],
-      "season": "The National Park Service describes spring and fall as broad fishing highlights and distinguishes summer offshore opportunity. That does not establish a species-specific surf calendar. Check a local beach report, tide and access conditions before committing your dates.",
+      "season": "NPS identifies spring and fall as broad fishing periods at Cape Hatteras. Conditions and open beach access still decide the practical outing.",
       "sections": [
         {
-          "title": "Make the beach the unit of the plan",
-          "text": "Pick the beach sector and the route from your accommodation before choosing a large cooler or a cart. Write down whether your party will walk, use an authorized vehicle route, or switch to a pier. A beach outing should not inherit an offshore charter’s equipment list. A pier alternative also needs its own access confirmation rather than an assumption that all tackle transfers unchanged."
+          "title": "Who this trip suits",
+          "text": "A surf session suits someone who wants shore access and control over the pace of the day. It still needs a legal approach, suitable surf conditions and a way to carry the equipment. Choose a short first session if the group is new to the beach. A pier may suit a visitor who wants defined access and less equipment transport. An offshore charter is a different plan. Choose the access method before you buy a cart, a long surf rod or vehicle equipment."
         },
         {
-          "title": "Build around a presentation",
-          "text": "Choose between casting lures and holding a bait presentation before selecting rod length, lure or sinker range, reel capacity and leader. Ask a local tackle shop to check the complete combination for the intended target and conditions. A rod selected only because its title says “surf” may not suit the actual casting weight. Keep a modest set of terminal spares rather than buying every local lure category."
+          "title": "Choose foot access, vehicle access or a pier",
+          "text": "Walk-on beach; Open access, walking distance, weather and the return route.; A compact tackle kit and only what you can carry. Vehicle-access beach; Current NPS permit, approved route and closures.; Vehicle preparation and recovery needs, separate from fishing gear. Pier; The named facility’s current hours, access and rules.; A setup suited to the pier and its available services."
         },
         {
-          "title": "Carry only what the outing needs",
-          "text": "For a walking trip, separate the kit used at the water from spare clothes and a larger transport cooler left at the vehicle. Put water, personal essentials and a weather layer ahead of duplicate rods in the carrying plan. Existing suitable sunglasses, clothing and a dry bag should stay marked as owned. Choose footwear from the actual access arrangement rather than automatically adding chest waders."
+          "title": "When to go",
+          "text": "NPS highlights spring and fall in its broad seashore fishing guidance. This does not promise a particular species at Cape Point or on a selected week. Ask a local shop about current conditions after you check official access. Choose your session using the surf, wind, tide and daylight, not only the month. Keep a pier or a shorter shore outing as an alternative where open and suitable. A forecast is not permission to enter a closed beach."
         },
         {
-          "title": "Build an alternative into the day",
-          "text": "Decide in advance when a beach outing will be postponed or changed to a different format. Confirm the alternative itself is available; it is not enough to write “go to a pier” in an itinerary. Save the local information source with the plan and revisit it close to departure. No current target species, safe surf condition or open vehicle route is asserted here."
+          "title": "How to choose a practical access point",
+          "text": "NPS describes surf fishing at Cape Point and identifies Bonner Bridge Pier and Avon Fishing Pier as alternatives. Check the park and facility pages for current access before driving. Do not treat those names as a promise of an open fishing location. For beach driving, follow the current NPS vehicle permit instructions and beach-access map. A fishing license and a vehicle permit serve different purposes. Plan the walk from parking, restrooms, drinking water and how you will carry waste out."
+        },
+        {
+          "title": "What to bring",
+          "text": "Rod, reel, line and terminal tackle; One matched setup per active angler; Confirm the bait or lure and casting weight before purchase. Bait or lure selection; A small locally confirmed kit; Ask about storage and legal hooks for the target. Weather and sun clothing; One day set plus a shell; Use the forecast; secure hat and glasses. Water, dry storage and waste bag; One personal supply and shared waste bag; Carry what the walking route permits. Cart, sand spike or vehicle gear; Only after access is selected; Do not buy heavy beach equipment for a short pier session."
+        },
+        {
+          "title": "What a guide or pier provides: verify it",
+          "text": "An independent beach trip provides you with no automatic tackle, bait or safety service. If you hire a surf guide, ask about the rod setup, bait, transport, access permits and help for beginners. Confirm what you must carry yourself. For a pier, ask directly about equipment rental, bait, access and any license coverage. A service at one pier does not apply to a beach or another facility. The planner’s “Guide provides” status requires an actual answer."
+        },
+        {
+          "title": "Local mistakes to avoid",
+          "text": "Confusing the fishing license with permission to drive on the beach. Arriving with a heavy cart before checking the walk or vehicle route. Treating an old beach map as current access permission. Assuming a pier’s license arrangement covers a separate surf session. Leaving line, bait, fish waste or other litter on the beach."
+        },
+        {
+          "title": "Regulations and licenses",
+          "text": "Use NC DEQ’s coastal license page and current recreational regulations. Check the requirements for your age, method, water and any licensed-pier exception. Use the NPS page for vehicle permits and current beach restrictions. Follow official links for fees, harvest rules and closures. Check again shortly before the outing; this article is a preparation guide."
         }
       ],
       "kit": [
@@ -36463,11 +36749,11 @@
         "What alternative should we arrange when the beach plan does not work?"
       ],
       "related": [
-        "keys-offshore",
-        "texas-inshore-redfish"
+        "na-us-nc-002",
+        "na-us-sc-001"
       ],
       "review": {
-        "checked": "2026-09-13",
+        "checked": "2026-11-10",
         "status": "source-checked",
         "fieldTested": false,
         "independentExpertReviewed": false
@@ -36478,12 +36764,16 @@
       },
       "seasonWindows": [],
       "sourceIds": [
-        "release-caha"
+        "g26-caha",
+        "g26-caha-orv",
+        "g26-nws-marine",
+        "g26-nc-license",
+        "g26-nc-rules"
       ],
       "sectionWordCount": 171,
-      "articleWordCount": 259,
+      "articleWordCount": 579,
       "contentTier": "detailed-guide",
-      "evidenceDepth": "Full source-page text inspected in this release; not independently expert-reviewed",
+      "evidenceDepth": "Official source text checked 2026-11-10; preparation advice is editorial",
       "jurisdictionType": "country",
       "catalogOrigin": "retained-world-edition",
       "legacyIds": [
@@ -36529,11 +36819,199 @@
         "big drum",
         "drum run",
         "drum"
-      ]
+      ],
+      "planningGuide": {
+        "destination": "cape-hatteras-surf",
+        "title": "Cape Hatteras surf fishing: access, seasons and packing",
+        "description": "Plan a Cape Hatteras surf trip with beach, pier and vehicle-access choices, seasonal context, a practical packing list and current official rules.",
+        "category": "NORTH CAROLINA / SURF",
+        "season": "NPS identifies spring and fall as broad fishing periods at Cape Hatteras. Conditions and open beach access still decide the practical outing.",
+        "evidence": [
+          {
+            "source": "g26-caha",
+            "claim": "NPS documents surf, pier and boat opportunities and general spring/fall timing."
+          }
+        ],
+        "sections": [
+          {
+            "id": "suits",
+            "title": "Who this trip suits",
+            "paragraphs": [
+              "A surf session suits someone who wants shore access and control over the pace of the day. It still needs a legal approach, suitable surf conditions and a way to carry the equipment. Choose a short first session if the group is new to the beach.",
+              "A pier may suit a visitor who wants defined access and less equipment transport. An offshore charter is a different plan. Choose the access method before you buy a cart, a long surf rod or vehicle equipment."
+            ],
+            "sources": []
+          },
+          {
+            "id": "choose",
+            "title": "Choose foot access, vehicle access or a pier",
+            "paragraphs": [],
+            "table": {
+              "heads": [
+                "Option",
+                "What to settle",
+                "What changes in the bag"
+              ],
+              "rows": [
+                [
+                  "Walk-on beach",
+                  "Open access, walking distance, weather and the return route.",
+                  "A compact tackle kit and only what you can carry."
+                ],
+                [
+                  "Vehicle-access beach",
+                  "Current NPS permit, approved route and closures.",
+                  "Vehicle preparation and recovery needs, separate from fishing gear."
+                ],
+                [
+                  "Pier",
+                  "The named facility’s current hours, access and rules.",
+                  "A setup suited to the pier and its available services."
+                ]
+              ]
+            },
+            "sources": [
+              "g26-caha",
+              "g26-caha-orv"
+            ]
+          },
+          {
+            "id": "when",
+            "title": "When to go",
+            "paragraphs": [
+              "NPS highlights spring and fall in its broad seashore fishing guidance. This does not promise a particular species at Cape Point or on a selected week. Ask a local shop about current conditions after you check official access.",
+              "Choose your session using the surf, wind, tide and daylight, not only the month. Keep a pier or a shorter shore outing as an alternative where open and suitable. A forecast is not permission to enter a closed beach."
+            ],
+            "sources": [
+              "g26-caha",
+              "g26-nws-marine"
+            ]
+          },
+          {
+            "id": "access",
+            "title": "How to choose a practical access point",
+            "paragraphs": [
+              "NPS describes surf fishing at Cape Point and identifies Bonner Bridge Pier and Avon Fishing Pier as alternatives. Check the park and facility pages for current access before driving. Do not treat those names as a promise of an open fishing location.",
+              "For beach driving, follow the current NPS vehicle permit instructions and beach-access map. A fishing license and a vehicle permit serve different purposes. Plan the walk from parking, restrooms, drinking water and how you will carry waste out."
+            ],
+            "sources": [
+              "g26-caha",
+              "g26-caha-orv"
+            ]
+          },
+          {
+            "id": "bring",
+            "title": "What to bring",
+            "paragraphs": [],
+            "table": {
+              "heads": [
+                "Item",
+                "Starting quantity",
+                "Fit it to the outing"
+              ],
+              "rows": [
+                [
+                  "Rod, reel, line and terminal tackle",
+                  "One matched setup per active angler",
+                  "Confirm the bait or lure and casting weight before purchase."
+                ],
+                [
+                  "Bait or lure selection",
+                  "A small locally confirmed kit",
+                  "Ask about storage and legal hooks for the target."
+                ],
+                [
+                  "Weather and sun clothing",
+                  "One day set plus a shell",
+                  "Use the forecast; secure hat and glasses."
+                ],
+                [
+                  "Water, dry storage and waste bag",
+                  "One personal supply and shared waste bag",
+                  "Carry what the walking route permits."
+                ],
+                [
+                  "Cart, sand spike or vehicle gear",
+                  "Only after access is selected",
+                  "Do not buy heavy beach equipment for a short pier session."
+                ]
+              ]
+            },
+            "sources": []
+          },
+          {
+            "id": "provided",
+            "title": "What a guide or pier provides: verify it",
+            "paragraphs": [
+              "An independent beach trip provides you with no automatic tackle, bait or safety service. If you hire a surf guide, ask about the rod setup, bait, transport, access permits and help for beginners. Confirm what you must carry yourself.",
+              "For a pier, ask directly about equipment rental, bait, access and any license coverage. A service at one pier does not apply to a beach or another facility. The planner’s “Guide provides” status requires an actual answer."
+            ],
+            "sources": []
+          },
+          {
+            "id": "mistakes",
+            "title": "Local mistakes to avoid",
+            "paragraphs": [],
+            "items": [
+              "Confusing the fishing license with permission to drive on the beach.",
+              "Arriving with a heavy cart before checking the walk or vehicle route.",
+              "Treating an old beach map as current access permission.",
+              "Assuming a pier’s license arrangement covers a separate surf session.",
+              "Leaving line, bait, fish waste or other litter on the beach."
+            ],
+            "sources": []
+          },
+          {
+            "id": "rules",
+            "title": "Regulations and licenses",
+            "paragraphs": [
+              "Use NC DEQ’s coastal license page and current recreational regulations. Check the requirements for your age, method, water and any licensed-pier exception.",
+              "Use the NPS page for vehicle permits and current beach restrictions. Follow official links for fees, harvest rules and closures. Check again shortly before the outing; this article is a preparation guide."
+            ],
+            "sources": [
+              "g26-nc-license",
+              "g26-nc-rules",
+              "g26-caha-orv"
+            ]
+          }
+        ],
+        "faq": [
+          {
+            "q": "Do I need an ORV permit to fish at Cape Hatteras?",
+            "a": "An ORV permit concerns driving on designated beach routes. A walk-on or pier plan has different access needs. Check NPS and the fishing-license rules separately."
+          },
+          {
+            "q": "What is a good season for Cape Hatteras fishing?",
+            "a": "NPS identifies spring and fall as broad fishing periods. Choose the actual beach session using current surf conditions, target advice and open access."
+          },
+          {
+            "q": "Should I buy a beach cart?",
+            "a": "Choose the access point first. A heavy cart may not help on a short pier visit or a route where access changes."
+          }
+        ],
+        "relatedTrips": [
+          "na-us-nc-002",
+          "na-us-sc-001"
+        ],
+        "relatedGuides": [
+          "fishing-gear-you-already-own",
+          "one-week-fishing-trip-checklist"
+        ],
+        "reel": {
+          "slug": "sunrise-bird-run",
+          "note": "No Cape Hatteras reel is available. This related coastal animation links to Port Aransas and does not demonstrate Hatteras surf technique. This is an animation, not location footage or evidence of a catch."
+        },
+        "regionPath": "/north-america/united-states/north-carolina/",
+        "regionLabel": "Explore North Carolina trips",
+        "plannerNote": "Start with this destination. Add your dates, choose the method, and mark equipment as provided only after the operator confirms it.",
+        "nextStep": "Select one open access point and a practical alternative. Build the kit around the walk, pier or permitted vehicle route.",
+        "revision": "Rebuilt the trip comparison, access plan, packing choices, rule links and FAQ from the listed official sources.",
+        "catalog": {}
+      }
     },
     {
       "id": "na-us-nc-002",
-      "title": "Oregon Inlet offshore fishing: choose the charter before buying tackle",
+      "title": "Outer Banks offshore charters: Oregon Inlet trip guide",
       "place": "Outer Banks / Oregon Inlet offshore",
       "country": "United States",
       "region": "North America",
@@ -36558,53 +37036,73 @@
         "Mahi-mahi"
       ],
       "candidateTargets": "Tuna / mahi-mahi candidates",
-      "summary": "Compare the full offshore day with shorter coastal trips, then prepare for the booked boat instead of purchasing a second boat’s worth of equipment.",
+      "summary": "Plan an Oregon Inlet offshore charter with target and boat choices, travel-time questions, a packing list and official North Carolina and NOAA links.",
       "contentTier": "detailed-guide",
-      "evidenceDepth": "Full source-page text inspected in this release; not independently expert-reviewed",
+      "evidenceDepth": "Official source text checked 2026-11-10; preparation advice is editorial",
       "catalogOrigin": "north-america-production-import",
       "sourceIds": [
-        "release-oregon-inlet",
-        "release-caha"
+        "g26-caha",
+        "g26-nc-tuna",
+        "g26-nws-obx",
+        "g26-uscg",
+        "g26-noaa-hms",
+        "g26-nc-license",
+        "g26-nc-rules"
       ],
       "evidence": [
         {
-          "source": "release-oregon-inlet",
-          "claim": "The fishing center separates half-day inshore options from full-day offshore trips and names tuna and mahi-mahi among offshore targets. Its FAQ says its fleet supplies tackle and bait; fish cleaning is a separate paid service."
+          "source": "g26-caha",
+          "claim": "NPS directs visitors to Oregon Inlet offshore charters."
         },
         {
-          "source": "release-caha",
-          "claim": "The National Park Service identifies Oregon Inlet Fishing Center as the seashore’s charter-fishing resource, distinct from beaches and piers."
+          "source": "g26-nc-tuna",
+          "claim": "NC DEQ describes yellowfin tuna trolling and its role in North Carolina offshore charters."
         }
       ],
       "related": [
         "cape-hatteras-surf",
-        "na-us-nc-003",
-        "na-us-nc-004"
+        "keys-offshore"
       ],
       "review": {
-        "checked": "2026-09-13",
+        "checked": "2026-11-10",
         "status": "source-checked",
         "fieldTested": false,
         "independentExpertReviewed": false
       },
-      "season": "The fleet describes several offshore targets but that is not a promise they overlap on your dates. The park’s broad summer-offshore description is not a month-by-month tuna calendar. Ask the selected captain which target and trip duration are realistic for your visit.",
+      "season": "NPS identifies offshore fishing from Oregon Inlet and general summer offshore opportunity. NC DEQ supports yellowfin as an offshore charter target, not a guaranteed month-by-month run.",
       "seasonWindows": [],
       "sections": [
         {
-          "title": "Choose the trip duration and target together",
-          "text": "When comparing quotes, ask for the departure, expected return and the difference between total trip duration and fishing time. Name your preferred target but also state the group’s experience and comfort with a full boat day. An offshore itinerary should not be sold to the rest of the party as the same commitment as a short inlet trip. Confirm the boat and date rather than treating a fleet description as available inventory."
+          "title": "Who this trip suits",
+          "text": "Choose an offshore day if your party accepts time in open water and a plan that depends on the inlet, sea state and target. Tell the captain about first-time anglers, limited mobility and concerns about motion. If the main goal is a short family outing, compare an inlet or nearshore trip. A shorter trip label does not establish offshore fishing time. Ask the operator to describe what your party will actually do between departure and return."
         },
         {
-          "title": "Confirm what the booked boat includes",
-          "text": "Use the fleet’s supplied-equipment statement as a starting point and confirm it for your actual reservation. Ask whether a personal rod is welcome and whether it is useful for that day’s method. Do not buy large reels, line or trolling gear solely to complete a generic offshore list. A short written list of inclusions can remove the most expensive unnecessary purchases."
+          "title": "Choose the water before the boat",
+          "text": "Offshore charter; Target, technique, transit and full time aboard.; How much of this quote is travel, and how do anglers rotate? Nearshore trip; A different route and target plan.; Which species and methods are realistic without the offshore run? Inlet or sound trip; Access and exposure still depend on conditions.; Does this better fit our duration, comfort and experience?"
         },
         {
-          "title": "Separate onboard needs from the ride home",
-          "text": "The operator recommends sun protection, weather-appropriate clothing, non-slip shoes and refreshments, with a small onboard cooler and a larger transport cooler at the vehicle. Ask about deck storage and any cooler-size preferences before packing. Keep the fish-cleaning arrangement separate from the charter quote and decide how your party would transport a retained catch without assuming there will be one."
+          "title": "When to go",
+          "text": "NPS describes general spring and fall fishing at the seashore and identifies offshore opportunity in summer. That broad park guidance is not a tuna calendar. NC DEQ documents yellowfin trolling as part of the offshore fishery. Ask the captain about the current target, route and forecast for the proposed date. Review the NWS marine forecast for the relevant waters. No fixed Oregon Inlet run time or guaranteed catch season is established by the sources used here."
         },
         {
-          "title": "Use the plan as a captain briefing",
-          "text": "Record the group size, experience, preferred target and equipment questions in the inquiry. Add an alternative date where your itinerary permits, and ask how the operator communicates changes. This guide does not contain live boat availability. The inquiry button creates a preparation message, not a paid reservation or a claim that Atlas represents the fleet."
+          "title": "How to arrange an Oregon Inlet departure",
+          "text": "NPS identifies Oregon Inlet Fishing Center as a charter departure option. Confirm the actual boat, slip, arrival time and parking instructions directly with the operator. A search for Outer Banks charters can also return a different port. Get the cancellation, early-return and reschedule terms in writing. Ask when the captain decides whether the route is suitable. Agree in advance whether a nearshore replacement is acceptable and how the charge changes. Do not place a flight immediately after an uncertain return."
+        },
+        {
+          "title": "What to bring",
+          "text": "Boat-approved shoes; One pair; Accepted soles and grip. Rain shell and layers; One shell plus forecast-based layers; Exposure during the boat run as well as the fishing. Hat, glasses and sun coverage; One personal set; Secure loose items. Water, food and a compact bag; For each person and the full duration; Storage, included drinks and meal arrangements. Personal essentials; One dry pouch; Keep required documents and contact details accessible. Fish-transport supplies; Only after the catch plan is agreed; Cleaning, ice, packaging and legal transport are separate questions."
+        },
+        {
+          "title": "What the crew provides: confirm the system",
+          "text": "Request a list of rods, reels, terminal tackle, bait and any fighting support for the chosen method. Ask who rigs the equipment and who handles fish. A trolling trip and a jigging trip may involve different passenger effort. Confirm safety equipment, passenger capacity, toilet access and a place to rest. Request the captain’s credential and the applicable vessel inspection information. The charter operator must confirm its current fishing permissions and coverage."
+        },
+        {
+          "title": "Local mistakes to avoid",
+          "text": "Treating an inlet trip and an offshore trip as the same product. Assuming a short advertised duration leaves hours on distant fishing grounds. Using a land forecast to judge the ocean route. Expecting yellowfin merely because the species appears in a regional guide. Accepting a changed target or water without agreement on the trip and charge."
+        },
+        {
+          "title": "Regulations and licenses",
+          "text": "Start with NC DEQ’s coastal license and current recreational rules pages. Ask whether the vessel’s for-hire coverage applies to everyone in your party. For applicable tuna, shark and billfish fishing, check NOAA’s HMS for-hire guidance and current fishery notices with the captain. Federal permissions and a state license answer different questions. Use current official pages for limits and fees."
         }
       ],
       "kit": [
@@ -36684,7 +37182,204 @@
       ],
       "tripTypeIds": [],
       "tripTypeNames": [],
-      "articleWordCount": 247
+      "planningGuide": {
+        "destination": "na-us-nc-002",
+        "title": "Outer Banks offshore charters: Oregon Inlet trip guide",
+        "description": "Plan an Oregon Inlet offshore charter with target and boat choices, travel-time questions, a packing list and official North Carolina and NOAA links.",
+        "category": "OUTER BANKS / OFFSHORE",
+        "season": "NPS identifies offshore fishing from Oregon Inlet and general summer offshore opportunity. NC DEQ supports yellowfin as an offshore charter target, not a guaranteed month-by-month run.",
+        "evidence": [
+          {
+            "source": "g26-caha",
+            "claim": "NPS directs visitors to Oregon Inlet offshore charters."
+          },
+          {
+            "source": "g26-nc-tuna",
+            "claim": "NC DEQ describes yellowfin tuna trolling and its role in North Carolina offshore charters."
+          }
+        ],
+        "sections": [
+          {
+            "id": "suits",
+            "title": "Who this trip suits",
+            "paragraphs": [
+              "Choose an offshore day if your party accepts time in open water and a plan that depends on the inlet, sea state and target. Tell the captain about first-time anglers, limited mobility and concerns about motion.",
+              "If the main goal is a short family outing, compare an inlet or nearshore trip. A shorter trip label does not establish offshore fishing time. Ask the operator to describe what your party will actually do between departure and return."
+            ],
+            "sources": []
+          },
+          {
+            "id": "choose",
+            "title": "Choose the water before the boat",
+            "paragraphs": [],
+            "table": {
+              "heads": [
+                "Option",
+                "What to compare",
+                "Question"
+              ],
+              "rows": [
+                [
+                  "Offshore charter",
+                  "Target, technique, transit and full time aboard.",
+                  "How much of this quote is travel, and how do anglers rotate?"
+                ],
+                [
+                  "Nearshore trip",
+                  "A different route and target plan.",
+                  "Which species and methods are realistic without the offshore run?"
+                ],
+                [
+                  "Inlet or sound trip",
+                  "Access and exposure still depend on conditions.",
+                  "Does this better fit our duration, comfort and experience?"
+                ]
+              ]
+            },
+            "sources": []
+          },
+          {
+            "id": "when",
+            "title": "When to go",
+            "paragraphs": [
+              "NPS describes general spring and fall fishing at the seashore and identifies offshore opportunity in summer. That broad park guidance is not a tuna calendar. NC DEQ documents yellowfin trolling as part of the offshore fishery.",
+              "Ask the captain about the current target, route and forecast for the proposed date. Review the NWS marine forecast for the relevant waters. No fixed Oregon Inlet run time or guaranteed catch season is established by the sources used here."
+            ],
+            "sources": [
+              "g26-caha",
+              "g26-nc-tuna",
+              "g26-nws-obx"
+            ]
+          },
+          {
+            "id": "access",
+            "title": "How to arrange an Oregon Inlet departure",
+            "paragraphs": [
+              "NPS identifies Oregon Inlet Fishing Center as a charter departure option. Confirm the actual boat, slip, arrival time and parking instructions directly with the operator. A search for Outer Banks charters can also return a different port.",
+              "Get the cancellation, early-return and reschedule terms in writing. Ask when the captain decides whether the route is suitable. Agree in advance whether a nearshore replacement is acceptable and how the charge changes. Do not place a flight immediately after an uncertain return."
+            ],
+            "sources": [
+              "g26-caha"
+            ]
+          },
+          {
+            "id": "bring",
+            "title": "What to bring",
+            "paragraphs": [],
+            "table": {
+              "heads": [
+                "Item",
+                "Starting quantity",
+                "Confirm with the crew"
+              ],
+              "rows": [
+                [
+                  "Boat-approved shoes",
+                  "One pair",
+                  "Accepted soles and grip."
+                ],
+                [
+                  "Rain shell and layers",
+                  "One shell plus forecast-based layers",
+                  "Exposure during the boat run as well as the fishing."
+                ],
+                [
+                  "Hat, glasses and sun coverage",
+                  "One personal set",
+                  "Secure loose items."
+                ],
+                [
+                  "Water, food and a compact bag",
+                  "For each person and the full duration",
+                  "Storage, included drinks and meal arrangements."
+                ],
+                [
+                  "Personal essentials",
+                  "One dry pouch",
+                  "Keep required documents and contact details accessible."
+                ],
+                [
+                  "Fish-transport supplies",
+                  "Only after the catch plan is agreed",
+                  "Cleaning, ice, packaging and legal transport are separate questions."
+                ]
+              ]
+            },
+            "sources": []
+          },
+          {
+            "id": "provided",
+            "title": "What the crew provides: confirm the system",
+            "paragraphs": [
+              "Request a list of rods, reels, terminal tackle, bait and any fighting support for the chosen method. Ask who rigs the equipment and who handles fish. A trolling trip and a jigging trip may involve different passenger effort.",
+              "Confirm safety equipment, passenger capacity, toilet access and a place to rest. Request the captain’s credential and the applicable vessel inspection information. The charter operator must confirm its current fishing permissions and coverage."
+            ],
+            "sources": [
+              "g26-uscg",
+              "g26-noaa-hms"
+            ]
+          },
+          {
+            "id": "mistakes",
+            "title": "Local mistakes to avoid",
+            "paragraphs": [],
+            "items": [
+              "Treating an inlet trip and an offshore trip as the same product.",
+              "Assuming a short advertised duration leaves hours on distant fishing grounds.",
+              "Using a land forecast to judge the ocean route.",
+              "Expecting yellowfin merely because the species appears in a regional guide.",
+              "Accepting a changed target or water without agreement on the trip and charge."
+            ],
+            "sources": []
+          },
+          {
+            "id": "rules",
+            "title": "Regulations and licenses",
+            "paragraphs": [
+              "Start with NC DEQ’s coastal license and current recreational rules pages. Ask whether the vessel’s for-hire coverage applies to everyone in your party.",
+              "For applicable tuna, shark and billfish fishing, check NOAA’s HMS for-hire guidance and current fishery notices with the captain. Federal permissions and a state license answer different questions. Use current official pages for limits and fees."
+            ],
+            "sources": [
+              "g26-nc-license",
+              "g26-nc-rules",
+              "g26-noaa-hms"
+            ]
+          }
+        ],
+        "faq": [
+          {
+            "q": "How long is the run from Oregon Inlet?",
+            "a": "This guide does not give one fixed run time. The grounds, boat, inlet and sea conditions change it. Ask for the likely travel share of the quoted outing."
+          },
+          {
+            "q": "Can I choose yellowfin tuna as my target?",
+            "a": "NC DEQ identifies yellowfin as an offshore charter target. Ask the captain whether it fits your dates and conditions; the source does not guarantee a catch."
+          },
+          {
+            "q": "What happens if the offshore trip cannot run?",
+            "a": "Use the operator’s written terms. Clarify cancellation, early return, rescheduling and any nearshore substitute before payment."
+          }
+        ],
+        "relatedTrips": [
+          "cape-hatteras-surf",
+          "keys-offshore"
+        ],
+        "relatedGuides": [
+          "first-offshore-fishing-charter-checklist",
+          "guided-fishing-trip-questions"
+        ],
+        "reel": {
+          "slug": "marlin-tail-walk",
+          "note": "This related offshore animation links to the Quepos guide. It is not an Oregon Inlet species or trip record. This is an animation, not location footage or evidence of a catch."
+        },
+        "regionPath": "/north-america/united-states/north-carolina/",
+        "regionLabel": "Explore North Carolina trips",
+        "plannerNote": "Start with this destination. Add your dates, choose the method, and mark equipment as provided only after the operator confirms it.",
+        "nextStep": "Compare an offshore quote with a nearshore option. Choose the trip your whole party can use comfortably.",
+        "revision": "Rebuilt the trip comparison, access plan, packing choices, rule links and FAQ from the listed official sources.",
+        "catalog": {}
+      },
+      "articleWordCount": 564
     },
     {
       "id": "na-us-nc-003",
@@ -37750,7 +38445,7 @@
     },
     {
       "id": "na-us-sc-001",
-      "title": "Charleston inshore redfish: choose the habitat and fish size before the kit",
+      "title": "Charleston redfish trips: marsh, tides and departures",
       "place": "Charleston marshes",
       "country": "United States",
       "region": "North America",
@@ -37775,53 +38470,72 @@
         "Red drum"
       ],
       "candidateTargets": "Red drum",
-      "summary": "Build a marsh or harbor plan around the intended fish and access, rather than treating every redfish outing as the same technique.",
+      "summary": "Plan a Charleston redfish charter with marsh and nearshore choices, tide-aware access, a current landing notice and official South Carolina rules.",
       "contentTier": "detailed-guide",
-      "evidenceDepth": "Full source-page text inspected in this release; not independently expert-reviewed",
+      "evidenceDepth": "Official source text checked 2026-11-10; preparation advice is editorial",
       "catalogOrigin": "north-america-production-import",
       "sourceIds": [
-        "release-sc-drum",
-        "release-sc-big-drum"
+        "g26-sc-red",
+        "g26-charleston-ramps",
+        "g26-charleston-closure",
+        "g26-sc-license",
+        "g26-uscg",
+        "g26-sc-regs"
       ],
       "evidence": [
         {
-          "source": "release-sc-drum",
-          "claim": "SCDNR describes red drum across tidal-creek, oyster, beach and nearshore habitats, with different juvenile and adult habitat use."
+          "source": "g26-sc-red",
+          "claim": "SCDNR separates juvenile marsh habitat from adult nearshore movements."
         },
         {
-          "source": "release-sc-big-drum",
-          "claim": "The agency’s August 2024 article identifies Charleston Harbor among adult aggregation areas and discusses the implications of targeting large spawning fish."
+          "source": "g26-charleston-closure",
+          "claim": "A 4 November 2026 notice plans a mid-November closure at Remley’s Point."
         }
       ],
       "related": [
         "na-us-sc-002",
-        "na-us-sc-003",
-        "na-us-sc-004"
+        "na-us-tx-001"
       ],
       "review": {
-        "checked": "2026-09-13",
+        "checked": "2026-11-10",
         "status": "source-checked",
         "fieldTested": false,
         "independentExpertReviewed": false
       },
-      "season": "South Carolina DNR distinguishes juvenile estuary use from adult open-water behavior. Its 2024 article describes late-summer spawning aggregations and encourages considering post-spawn opportunities; an aggregation is not an automatic recommendation for a trip. This guide does not rank Charleston months.",
+      "season": "SCDNR documents red drum year-round in South Carolina, with habitat changes by temperature and life stage. That does not guarantee a fishable marsh flat on a chosen tide.",
       "seasonWindows": [],
       "sections": [
         {
-          "title": "Decide what “redfish trip” means",
-          "text": "Tell the guide whether you want to learn light-tackle marsh presentations or pursue larger fish in a different setting. Ask which plan suits the experience level and handling ability of the group. Choose the relevant creek, harbor or other area with local help. Charleston is the departure region, not a single uniform fishing spot."
+          "title": "Who this trip suits",
+          "text": "A Charleston marsh trip suits a visitor who wants an inshore redfish day shaped by tide and access. Tell the guide whether you want to cast lures, use bait or try fly fishing. Ask how much time each person can actively fish. A beginner can request instruction and a seated option. A dedicated sight-casting trip may require a different tide, water level and skill than a general redfish outing. Ask the captain to describe that difference before you choose."
         },
         {
-          "title": "Let the tide inform the itinerary",
-          "text": "Request the meeting time and expected access window for the chosen area rather than imposing a generic morning start. Ask which changes would trigger a different route. The guide should explain how the intended presentation fits the actual water being fished. This is a planning question, not a claim that one tide produces the best fishing everywhere."
+          "title": "Choose marsh fishing or a nearshore plan",
+          "text": "Marsh creeks and edges; Smaller-water access and water level shape the route.; Which tide supports the intended method? Sight casting on shallow flats; Visibility, depth and accurate presentation matter.; What is the alternative if the flat does not suit the day? Adult fish nearshore; An exposed-water trip can differ from a marsh day.; Does the quote include that route, boat and target?"
         },
         {
-          "title": "Buy the terminal system last",
-          "text": "Settle artificial versus natural-bait presentation, expected fish size and the crew’s handling approach before matching line, leader and hooks. A stronger-sounding rod is not automatically a better purchase. Check whether an owned setup is suitable and whether the boat has an appropriate landing tool. Keep specialized terminal purchases unresolved until that local decision is made."
+          "title": "When to go",
+          "text": "SCDNR describes red drum in South Carolina throughout the year. Juveniles use shallow estuary habitats and move into deeper inshore water in winter. Adult movements differ. Use that distinction when you discuss the target. Ask the guide to choose a departure time around the actual tide and route. “Fall redfish” is not enough detail to justify a flood-tide marsh booking. The source does not establish a dependable Charleston monthly catch score."
         },
         {
-          "title": "Prepare for the chosen access",
-          "text": "A boat-based marsh outing does not automatically require waders. Pack footwear the operator accepts, weather layers, sunglasses and compact personal storage. For an independent shore option, confirm actual public access before buying a different kit. Ask how fish will be handled and when the outing should move or stop rather than treating a photograph as the main objective."
+          "title": "Choose the departure and check landing changes",
+          "text": "County Parks lists Shem Creek in Mount Pleasant, Wappoo Cut in West Ashley and Folly Beach among the area’s public landings. These names are access choices, not verified charter meeting places. Confirm the actual dock and parking instructions with the captain. A County Parks notice dated 4 November 2026 plans to close Remley’s Point in mid-November, with reopening expected in early summer 2027. Check the project update before travel. The notice identifies Shem Creek as an alternative during the closure; confirm current use and capacity. The county warns that tides and currents affect ramps, with drop-offs possible at low tide. A public launch does not establish that a location suits wading."
+        },
+        {
+          "title": "What to bring",
+          "text": "Secure glasses and hat; One of each; Useful for sun, glare and casting protection. Sun clothing and a rain shell; One day set plus a shell; Add insulation for the forecast and boat run. Boat-approved footwear; One pair; Ask if the plan includes any shore or wade access. Small dry bag, water and food; One personal kit; Check space, water supply and the full time away. Personal fly or spinning tackle; Only the agreed setup; Confirm casting skill and lure or bait choice first."
+        },
+        {
+          "title": "What the guide provides: confirm in writing",
+          "text": "Ask about rods, reels, bait or lures, landing equipment and fish-handling help. Confirm life-jacket fit, seating, shade, toilet access and the plan for children. Do not infer these features from a boat photograph. Ask whether the quote includes a valid licensed charter operation and the passenger fishing coverage that applies. Request weather and cancellation terms separately. A marsh trip and an exposed nearshore replacement may not meet the same customer needs."
+        },
+        {
+          "title": "Local mistakes to avoid",
+          "text": "Assuming a redfish photograph proves the same target and access on every outing. Booking a fixed sightseeing time and expecting it to fit a specific marsh tide. Using Remley’s Point without a current project and access check. Confusing a public boat ramp with a safe place to wade. Applying a rule or license exception from a different state."
+        },
+        {
+          "title": "Regulations and licenses",
+          "text": "Use SCDNR’s current regulations directory for saltwater rules and the current guide edition. Confirm license coverage for the actual charter, or arrange the required personal license. Check the current red drum rules and natural-bait tackle requirements through the authority pages. Do not rely on a remembered rule, a past-year table or an old photograph of a retained fish."
         }
       ],
       "kit": [
@@ -37915,7 +38629,201 @@
         "slam",
         "tailing"
       ],
-      "articleWordCount": 224
+      "planningGuide": {
+        "destination": "na-us-sc-001",
+        "title": "Charleston redfish trips: marsh, tides and departures",
+        "description": "Plan a Charleston redfish charter with marsh and nearshore choices, tide-aware access, a current landing notice and official South Carolina rules.",
+        "category": "SOUTH CAROLINA / REDFISH",
+        "season": "SCDNR documents red drum year-round in South Carolina, with habitat changes by temperature and life stage. That does not guarantee a fishable marsh flat on a chosen tide.",
+        "evidence": [
+          {
+            "source": "g26-sc-red",
+            "claim": "SCDNR separates juvenile marsh habitat from adult nearshore movements."
+          },
+          {
+            "source": "g26-charleston-closure",
+            "claim": "A 4 November 2026 notice plans a mid-November closure at Remley’s Point."
+          }
+        ],
+        "sections": [
+          {
+            "id": "suits",
+            "title": "Who this trip suits",
+            "paragraphs": [
+              "A Charleston marsh trip suits a visitor who wants an inshore redfish day shaped by tide and access. Tell the guide whether you want to cast lures, use bait or try fly fishing. Ask how much time each person can actively fish.",
+              "A beginner can request instruction and a seated option. A dedicated sight-casting trip may require a different tide, water level and skill than a general redfish outing. Ask the captain to describe that difference before you choose."
+            ],
+            "sources": []
+          },
+          {
+            "id": "choose",
+            "title": "Choose marsh fishing or a nearshore plan",
+            "paragraphs": [],
+            "table": {
+              "heads": [
+                "Plan",
+                "What changes",
+                "Question to settle"
+              ],
+              "rows": [
+                [
+                  "Marsh creeks and edges",
+                  "Smaller-water access and water level shape the route.",
+                  "Which tide supports the intended method?"
+                ],
+                [
+                  "Sight casting on shallow flats",
+                  "Visibility, depth and accurate presentation matter.",
+                  "What is the alternative if the flat does not suit the day?"
+                ],
+                [
+                  "Adult fish nearshore",
+                  "An exposed-water trip can differ from a marsh day.",
+                  "Does the quote include that route, boat and target?"
+                ]
+              ]
+            },
+            "sources": [
+              "g26-sc-red"
+            ]
+          },
+          {
+            "id": "when",
+            "title": "When to go",
+            "paragraphs": [
+              "SCDNR describes red drum in South Carolina throughout the year. Juveniles use shallow estuary habitats and move into deeper inshore water in winter. Adult movements differ. Use that distinction when you discuss the target.",
+              "Ask the guide to choose a departure time around the actual tide and route. “Fall redfish” is not enough detail to justify a flood-tide marsh booking. The source does not establish a dependable Charleston monthly catch score."
+            ],
+            "sources": [
+              "g26-sc-red"
+            ]
+          },
+          {
+            "id": "access",
+            "title": "Choose the departure and check landing changes",
+            "paragraphs": [
+              "County Parks lists Shem Creek in Mount Pleasant, Wappoo Cut in West Ashley and Folly Beach among the area’s public landings. These names are access choices, not verified charter meeting places. Confirm the actual dock and parking instructions with the captain.",
+              "A County Parks notice dated 4 November 2026 plans to close Remley’s Point in mid-November, with reopening expected in early summer 2027. Check the project update before travel. The notice identifies Shem Creek as an alternative during the closure; confirm current use and capacity.",
+              "The county warns that tides and currents affect ramps, with drop-offs possible at low tide. A public launch does not establish that a location suits wading."
+            ],
+            "sources": [
+              "g26-charleston-ramps",
+              "g26-charleston-closure"
+            ]
+          },
+          {
+            "id": "bring",
+            "title": "What to bring",
+            "paragraphs": [],
+            "table": {
+              "heads": [
+                "Item",
+                "Quantity to start",
+                "Local decision"
+              ],
+              "rows": [
+                [
+                  "Secure glasses and hat",
+                  "One of each",
+                  "Useful for sun, glare and casting protection."
+                ],
+                [
+                  "Sun clothing and a rain shell",
+                  "One day set plus a shell",
+                  "Add insulation for the forecast and boat run."
+                ],
+                [
+                  "Boat-approved footwear",
+                  "One pair",
+                  "Ask if the plan includes any shore or wade access."
+                ],
+                [
+                  "Small dry bag, water and food",
+                  "One personal kit",
+                  "Check space, water supply and the full time away."
+                ],
+                [
+                  "Personal fly or spinning tackle",
+                  "Only the agreed setup",
+                  "Confirm casting skill and lure or bait choice first."
+                ]
+              ]
+            },
+            "sources": []
+          },
+          {
+            "id": "provided",
+            "title": "What the guide provides: confirm in writing",
+            "paragraphs": [
+              "Ask about rods, reels, bait or lures, landing equipment and fish-handling help. Confirm life-jacket fit, seating, shade, toilet access and the plan for children. Do not infer these features from a boat photograph.",
+              "Ask whether the quote includes a valid licensed charter operation and the passenger fishing coverage that applies. Request weather and cancellation terms separately. A marsh trip and an exposed nearshore replacement may not meet the same customer needs."
+            ],
+            "sources": [
+              "g26-sc-license",
+              "g26-uscg"
+            ]
+          },
+          {
+            "id": "mistakes",
+            "title": "Local mistakes to avoid",
+            "paragraphs": [],
+            "items": [
+              "Assuming a redfish photograph proves the same target and access on every outing.",
+              "Booking a fixed sightseeing time and expecting it to fit a specific marsh tide.",
+              "Using Remley’s Point without a current project and access check.",
+              "Confusing a public boat ramp with a safe place to wade.",
+              "Applying a rule or license exception from a different state."
+            ],
+            "sources": []
+          },
+          {
+            "id": "rules",
+            "title": "Regulations and licenses",
+            "paragraphs": [
+              "Use SCDNR’s current regulations directory for saltwater rules and the current guide edition. Confirm license coverage for the actual charter, or arrange the required personal license.",
+              "Check the current red drum rules and natural-bait tackle requirements through the authority pages. Do not rely on a remembered rule, a past-year table or an old photograph of a retained fish."
+            ],
+            "sources": [
+              "g26-sc-regs",
+              "g26-sc-license",
+              "g26-sc-red"
+            ]
+          }
+        ],
+        "faq": [
+          {
+            "q": "Can I plan a Charleston redfish trip all year?",
+            "a": "SCDNR documents red drum year-round in state waters. The habitat, target size, tide and access change; confirm a specific plan for your dates."
+          },
+          {
+            "q": "Where should I meet a Charleston fishing charter?",
+            "a": "Use the captain’s exact dock and map pin. Shem Creek, Wappoo Cut and other area landings are separate departures. Check the Remley’s Point project notice."
+          },
+          {
+            "q": "Is a flood-tide trip the same as any inshore charter?",
+            "a": "No. Ask what tide and water level the proposed shallow-marsh method needs, and what happens if conditions do not fit."
+          }
+        ],
+        "relatedTrips": [
+          "na-us-sc-002",
+          "na-us-tx-001"
+        ],
+        "relatedGuides": [
+          "what-to-bring-on-a-guided-fishing-trip",
+          "how-to-choose-a-fishing-guide"
+        ],
+        "reel": {
+          "slug": "marsh-tail-cast",
+          "note": "The matching marsh film illustrates a shallow-water redfish theme. This is an animation, not location footage or evidence of a catch."
+        },
+        "regionPath": "/north-america/united-states/south-carolina/",
+        "regionLabel": "Explore South Carolina trips",
+        "plannerNote": "Start with this destination. Add your dates, choose the method, and mark equipment as provided only after the operator confirms it.",
+        "nextStep": "Ask for the exact departure, tide-based plan and alternative. Add the confirmed location to your trip notes.",
+        "revision": "Rebuilt the trip comparison, access plan, packing choices, rule links and FAQ from the listed official sources.",
+        "catalog": {}
+      },
+      "articleWordCount": 594
     },
     {
       "id": "na-us-sc-002",
@@ -38613,7 +39521,7 @@
     },
     {
       "id": "na-us-ga-001",
-      "title": "Lake Lanier fishing: choose striped bass or a black-bass plan first",
+      "title": "Lake Lanier fishing: choose bass, stripers or the bank",
       "place": "Lake Lanier",
       "country": "United States",
       "region": "North America",
@@ -38638,53 +39546,66 @@
         "Largemouth bass"
       ],
       "candidateTargets": "Striped bass / spotted bass candidates",
-      "summary": "Use the target and launch area to choose between a guided open-water program, a bank outing and a smaller upper-lake plan.",
+      "summary": "Plan a Lake Lanier trip with bass and striper choices, Don Carter State Park access, seasonal context, guide questions and current Georgia rule links.",
       "contentTier": "detailed-guide",
-      "evidenceDepth": "Full source-page text inspected in this release; not independently expert-reviewed",
+      "evidenceDepth": "Official source text checked 2026-11-10; preparation advice is editorial",
       "catalogOrigin": "north-america-production-import",
       "sourceIds": [
-        "release-lanier",
-        "release-ga-forecast"
+        "g26-lanier",
+        "g26-ga-forecast",
+        "g26-ga-license",
+        "g26-ga-rules"
       ],
       "evidence": [
         {
-          "source": "release-lanier",
-          "claim": "Don Carter State Park describes upper Lake Lanier fishing, shoreline and paddling options, and several bass targets."
-        },
-        {
-          "source": "release-ga-forecast",
-          "claim": "The agency’s Lake Lanier forecast listing includes striped bass and largemouth bass and uses Alabama-bass terminology for another black-bass target."
+          "source": "g26-lanier",
+          "claim": "Georgia DNR describes striped, spotted and largemouth bass opportunities plus bank and paddle access at Don Carter State Park."
         }
       ],
       "related": [
         "na-us-ga-002",
-        "na-us-ga-003",
-        "na-us-ga-004"
+        "na-us-fl-002"
       ],
       "review": {
-        "checked": "2026-09-13",
+        "checked": "2026-11-10",
         "status": "source-checked",
         "fieldTested": false,
         "independentExpertReviewed": false
       },
-      "season": "Don Carter’s official page gives upper-lake spring and summer/fall habitat context. That is not a lake-wide monthly ranking. Confirm the chosen target, lake sector and current presentation; this guide avoids treating differing spotted/Alabama-bass labels across agency pages as interchangeable taxonomy.",
+      "season": "Georgia DNR’s Don Carter page highlights spring striper movements, spring rocky-shore bass and summer–fall open-water bass. These are agency patterns, not a current boat report.",
       "seasonWindows": [],
       "sections": [
         {
-          "title": "Choose the fish before selecting a package",
-          "text": "A customer saying “bass fishing” may be asking for very different outings. Specify striped bass or a particular black-bass program before comparing boats, lure selections and trip duration. Where the local species naming is unclear, ask the provider to identify the target rather than silently filling a planner field with a familiar label."
+          "title": "Who this trip suits",
+          "text": "Lake Lanier suits several different trips. A guided striper day, a bass-casting lesson and a short bank session need different expectations. State your preferred method and your party’s experience before you compare guides. For a short family visit, consider a named park access plan instead of buying boat tackle. For a guided day, ask how many people can fish at once, where they can sit and what happens if someone needs to return early."
         },
         {
-          "title": "Use a launch-sector plan",
-          "text": "The official Don Carter information is useful for an upper-lake visit, but it should not become directions for every part of Lanier. Choose the meeting area and verify how bank, paddle or guided-boat access will work there. Decide whether the group can manage its own transport and launch logistics before renting equipment. A geographic pin is not confirmation of a usable access route."
+          "title": "Choose the target and access",
+          "text": "Striper trip; What method, bait and equipment does the guide propose?; That a bass-lure kit covers the full plan. Bass casting; Which cover and lure presentation fit the day?; That every guide offers instruction or the same tackle. Don Carter bank or paddle visit; Which access is open, what is available and what permissions apply?; That a park listing confirms today’s kayak rental stock or fishing conditions."
         },
         {
-          "title": "Match equipment to the selected method",
-          "text": "Request the proposed presentation and the supplied-equipment list from a guide. A bank-casting kit should not automatically inherit a guided trolling program’s rod and storage requirements. For personal tackle, match the actual lure or bait approach and expected load with an appropriately balanced rod, reel and line. Save expensive purchases until those specifications are known."
+          "title": "When to go",
+          "text": "The Don Carter page highlights spring striped-bass movement toward the Chattahoochee River. It describes rocky-shore bass fishing in spring and open-water forage patterns from summer into fall. These are broad patterns for the park and reservoir. DNR’s park page uses the term “spotted bass.” Other agency materials may use Alabama bass terminology. Ask the guide to identify the actual target and applicable rules. This guide does not resolve the taxonomy by silently changing an official label. Open the latest Lanier forecast from DNR’s forecast directory before the trip. Ask the guide to confirm the actual method, sector and conditions rather than select tackle by the month alone."
         },
         {
-          "title": "Make the day bag fit the platform",
-          "text": "For an independent outing, pack only what can be managed at the chosen access. For a boat booking, confirm storage and provided equipment. Keep hydration, personal weather protection and a way to protect essentials on the list while removing duplicate rods and large tackle boxes the plan does not use. Check current conditions through the agency resources rather than treating this article as a live report."
+          "title": "How to arrange the departure",
+          "text": "Georgia DNR identifies bank access and paddling options at Don Carter State Park. Confirm the current access, park requirements and any rental arrangements directly with the park. Treat the park as one possible access choice, not the automatic meeting place for every Lanier guide. For a charter, obtain the exact ramp or marina and the planned lake sector before booking accommodation. Save parking instructions and a contact number. Ask whether weather or a target change can move the departure."
+        },
+        {
+          "title": "What to bring",
+          "text": "Sun coverage, glasses and hat; One personal set; Bank, paddle and boat outings all need a forecast check. Rain shell and layers; One shell plus suitable layers; Pack for the boat run or shore exposure. Footwear; One pair suited to the approach; A bank route and a boat deck can need different shoes. Water, food and dry storage; For the actual duration; Check restrooms, shade and provision. Fishing setup; One agreed method or supplied tackle; Keep striper gear separate from a bass-casting assumption."
+        },
+        {
+          "title": "What the guide provides: ask by target",
+          "text": "Confirm rods, reels, terminal tackle and bait or lures for the named target. Ask whether the guide sets and tends the rods or teaches you to cast. That distinction can change the value of the day for a beginner. Confirm boat safety equipment, passenger capacity, storage, drinking water and rest arrangements. For a park rental, check the craft, paddle, PFD and return terms separately. No live rental or charter inventory is listed here."
+        },
+        {
+          "title": "Local mistakes to avoid",
+          "text": "Booking “bass fishing” without clarifying striped bass versus a casting trip. Treating Don Carter as the departure for every guide on the lake. Assuming summer open-water patterns mean the same setup as spring shoreline fishing. Using a fish nickname instead of checking the actual species rules. Buying tackle before deciding between bank, paddle and guided boat access."
+        },
+        {
+          "title": "Regulations and licenses",
+          "text": "Start with Georgia DNR’s license selection and current fishing regulations pages. Confirm the requirements for each traveler and the named water and target. Ask the park about access or rental requirements separately. A guide fee, park entry or rental does not by itself establish license coverage. Use official pages for the current fees, limits and exceptions."
         }
       ],
       "kit": [
@@ -38764,7 +39685,193 @@
       ],
       "tripTypeIds": [],
       "tripTypeNames": [],
-      "articleWordCount": 237
+      "planningGuide": {
+        "destination": "na-us-ga-001",
+        "title": "Lake Lanier fishing: choose bass, stripers or the bank",
+        "description": "Plan a Lake Lanier trip with bass and striper choices, Don Carter State Park access, seasonal context, guide questions and current Georgia rule links.",
+        "category": "GEORGIA / LAKE FISHING",
+        "season": "Georgia DNR’s Don Carter page highlights spring striper movements, spring rocky-shore bass and summer–fall open-water bass. These are agency patterns, not a current boat report.",
+        "evidence": [
+          {
+            "source": "g26-lanier",
+            "claim": "Georgia DNR describes striped, spotted and largemouth bass opportunities plus bank and paddle access at Don Carter State Park."
+          }
+        ],
+        "sections": [
+          {
+            "id": "suits",
+            "title": "Who this trip suits",
+            "paragraphs": [
+              "Lake Lanier suits several different trips. A guided striper day, a bass-casting lesson and a short bank session need different expectations. State your preferred method and your party’s experience before you compare guides.",
+              "For a short family visit, consider a named park access plan instead of buying boat tackle. For a guided day, ask how many people can fish at once, where they can sit and what happens if someone needs to return early."
+            ],
+            "sources": []
+          },
+          {
+            "id": "choose",
+            "title": "Choose the target and access",
+            "paragraphs": [],
+            "table": {
+              "heads": [
+                "Choice",
+                "What to ask",
+                "Do not assume"
+              ],
+              "rows": [
+                [
+                  "Striper trip",
+                  "What method, bait and equipment does the guide propose?",
+                  "That a bass-lure kit covers the full plan."
+                ],
+                [
+                  "Bass casting",
+                  "Which cover and lure presentation fit the day?",
+                  "That every guide offers instruction or the same tackle."
+                ],
+                [
+                  "Don Carter bank or paddle visit",
+                  "Which access is open, what is available and what permissions apply?",
+                  "That a park listing confirms today’s kayak rental stock or fishing conditions."
+                ]
+              ]
+            },
+            "sources": [
+              "g26-lanier"
+            ]
+          },
+          {
+            "id": "when",
+            "title": "When to go",
+            "paragraphs": [
+              "The Don Carter page highlights spring striped-bass movement toward the Chattahoochee River. It describes rocky-shore bass fishing in spring and open-water forage patterns from summer into fall. These are broad patterns for the park and reservoir.",
+              "DNR’s park page uses the term “spotted bass.” Other agency materials may use Alabama bass terminology. Ask the guide to identify the actual target and applicable rules. This guide does not resolve the taxonomy by silently changing an official label.",
+              "Open the latest Lanier forecast from DNR’s forecast directory before the trip. Ask the guide to confirm the actual method, sector and conditions rather than select tackle by the month alone."
+            ],
+            "sources": [
+              "g26-lanier",
+              "g26-ga-forecast"
+            ]
+          },
+          {
+            "id": "access",
+            "title": "How to arrange the departure",
+            "paragraphs": [
+              "Georgia DNR identifies bank access and paddling options at Don Carter State Park. Confirm the current access, park requirements and any rental arrangements directly with the park. Treat the park as one possible access choice, not the automatic meeting place for every Lanier guide.",
+              "For a charter, obtain the exact ramp or marina and the planned lake sector before booking accommodation. Save parking instructions and a contact number. Ask whether weather or a target change can move the departure."
+            ],
+            "sources": [
+              "g26-lanier"
+            ]
+          },
+          {
+            "id": "bring",
+            "title": "What to bring",
+            "paragraphs": [],
+            "table": {
+              "heads": [
+                "Item",
+                "Starting quantity",
+                "Choose by access"
+              ],
+              "rows": [
+                [
+                  "Sun coverage, glasses and hat",
+                  "One personal set",
+                  "Bank, paddle and boat outings all need a forecast check."
+                ],
+                [
+                  "Rain shell and layers",
+                  "One shell plus suitable layers",
+                  "Pack for the boat run or shore exposure."
+                ],
+                [
+                  "Footwear",
+                  "One pair suited to the approach",
+                  "A bank route and a boat deck can need different shoes."
+                ],
+                [
+                  "Water, food and dry storage",
+                  "For the actual duration",
+                  "Check restrooms, shade and provision."
+                ],
+                [
+                  "Fishing setup",
+                  "One agreed method or supplied tackle",
+                  "Keep striper gear separate from a bass-casting assumption."
+                ]
+              ]
+            },
+            "sources": []
+          },
+          {
+            "id": "provided",
+            "title": "What the guide provides: ask by target",
+            "paragraphs": [
+              "Confirm rods, reels, terminal tackle and bait or lures for the named target. Ask whether the guide sets and tends the rods or teaches you to cast. That distinction can change the value of the day for a beginner.",
+              "Confirm boat safety equipment, passenger capacity, storage, drinking water and rest arrangements. For a park rental, check the craft, paddle, PFD and return terms separately. No live rental or charter inventory is listed here."
+            ],
+            "sources": []
+          },
+          {
+            "id": "mistakes",
+            "title": "Local mistakes to avoid",
+            "paragraphs": [],
+            "items": [
+              "Booking “bass fishing” without clarifying striped bass versus a casting trip.",
+              "Treating Don Carter as the departure for every guide on the lake.",
+              "Assuming summer open-water patterns mean the same setup as spring shoreline fishing.",
+              "Using a fish nickname instead of checking the actual species rules.",
+              "Buying tackle before deciding between bank, paddle and guided boat access."
+            ],
+            "sources": []
+          },
+          {
+            "id": "rules",
+            "title": "Regulations and licenses",
+            "paragraphs": [
+              "Start with Georgia DNR’s license selection and current fishing regulations pages. Confirm the requirements for each traveler and the named water and target.",
+              "Ask the park about access or rental requirements separately. A guide fee, park entry or rental does not by itself establish license coverage. Use official pages for the current fees, limits and exceptions."
+            ],
+            "sources": [
+              "g26-ga-license",
+              "g26-ga-rules"
+            ]
+          }
+        ],
+        "faq": [
+          {
+            "q": "Is a Lake Lanier bass trip the same as a striper trip?",
+            "a": "No. Ask the operator to name the species, method and supplied setup. The same lake supports different trip plans."
+          },
+          {
+            "q": "Can I fish from the bank at Lake Lanier?",
+            "a": "Georgia DNR identifies bank access at Don Carter State Park. Confirm the current park access and requirements before you travel."
+          },
+          {
+            "q": "Should a beginner bring a full tackle box?",
+            "a": "Confirm the target and provision first. A guided trip may only need personal clothing and essentials, while an independent outing needs its own matched setup."
+          }
+        ],
+        "relatedTrips": [
+          "na-us-ga-002",
+          "na-us-fl-002"
+        ],
+        "relatedGuides": [
+          "fishing-gear-you-already-own",
+          "what-to-bring-on-a-guided-fishing-trip"
+        ],
+        "reel": {
+          "slug": "bass-strike",
+          "note": "This related bass animation links to Lake Fork. It does not identify a Lanier fish or demonstrate a striper method. This is an animation, not location footage or evidence of a catch."
+        },
+        "regionPath": "/north-america/united-states/georgia/",
+        "regionLabel": "Explore Georgia trips",
+        "plannerNote": "Start with this destination. Add your dates, choose the method, and mark equipment as provided only after the operator confirms it.",
+        "nextStep": "Name the target and choose bank, paddle or guided boat access. Then save the exact departure in your plan.",
+        "revision": "Rebuilt the trip comparison, access plan, packing choices, rule links and FAQ from the listed official sources.",
+        "catalog": {}
+      },
+      "articleWordCount": 596
     },
     {
       "id": "na-us-ga-002",
@@ -39462,7 +40569,7 @@
     },
     {
       "id": "na-us-fl-001",
-      "title": "Islamorada flats fishing: bonefish, permit and the right personal kit",
+      "title": "Islamorada flats fishing: bonefish, permit and trip choice",
       "place": "Islamorada / flats",
       "country": "United States",
       "region": "North America",
@@ -39487,53 +40594,89 @@
         "Permit"
       ],
       "candidateTargets": "Bonefish / permit candidates",
-      "summary": "Choose the target and fly or conventional approach before buying equipment. A skiff day is not automatically a wading trip.",
+      "summary": "Plan an Islamorada flats trip with clear bonefish and permit choices, seasonal context, a skiff packing list and official license links.",
       "contentTier": "detailed-guide",
-      "evidenceDepth": "Full source-page text inspected in this release; not independently expert-reviewed",
+      "evidenceDepth": "Official source text checked 2026-11-10; preparation advice is editorial",
       "catalogOrigin": "north-america-production-import",
       "sourceIds": [
-        "release-keys-islamorada",
-        "release-keys-season"
+        "g26-fwc-bonefish",
+        "g26-fwc-permit-bio",
+        "g26-fwc-monroe",
+        "g26-fwc-permit",
+        "g26-nws-keys",
+        "g26-fwc-charter",
+        "g26-fwc-visitors",
+        "g26-noaa-keys"
       ],
       "evidence": [
         {
-          "source": "release-keys-islamorada",
-          "claim": "The destination authority separates Islamorada’s shallow-water fishing from offshore experiences."
+          "source": "g26-fwc-bonefish",
+          "claim": "FWC documents a Keys bonefish fishery and a broad March–October peak."
         },
         {
-          "source": "release-keys-season",
-          "claim": "The authority’s 2023 Keys-wide guide names bonefish and permit among shallow-water targets and describes different seasonal patterns for individual species."
+          "source": "g26-fwc-permit-bio",
+          "claim": "Permit use grass flats, sand, channels and offshore structure."
         }
       ],
       "related": [
-        "na-us-fl-002",
-        "na-us-fl-003",
-        "na-us-fl-004"
+        "keys-flats",
+        "keys-offshore"
       ],
       "review": {
-        "checked": "2026-09-13",
+        "checked": "2026-11-10",
         "status": "source-checked",
         "fieldTested": false,
         "independentExpertReviewed": false
       },
-      "season": "The tourism authority’s April 2023 regional guide gives different seasonal context for bonefish and permit. Use it as background, not a current Islamorada forecast. Ask a local captain how target, temperature, tide, wind and visibility shape the options for your dates; do not reuse offshore seasonality for a flats trip.",
-      "seasonWindows": [],
+      "season": "FWC gives March through October as a broad Keys bonefish peak. Its Monroe County overview emphasizes fall. These are different scopes, not a guarantee for a selected day.",
+      "seasonWindows": [
+        {
+          "months": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "label": "FWC broad Keys bonefish peak; conditions vary by day",
+          "source": "g26-fwc-bonefish"
+        }
+      ],
       "sections": [
         {
-          "title": "Choose a primary target",
-          "text": "Tell the guide whether bonefish or permit is the main objective, while leaving room for an alternative the captain considers realistic. A broad “flats grand slam” label should not be mistaken for a promise to catch multiple species. Ask how much instruction and casting practice the day includes and describe the group’s actual experience."
+          "title": "Who this trip suits",
+          "text": "Choose this trip if you want a focused shallow-water day and accept that the guide may spend time looking for fish. Tell the guide whether you want to learn to cast, try a new species, or maximize time with a familiar method. For a first outing, ask about seated rest breaks, shade and instruction. A sight-fishing skiff day can require patience and accurate casts. A party that wants everyone to fish continuously should compare the actual boat layout and fishing rotation before paying."
         },
         {
-          "title": "Choose fly or conventional before shopping",
-          "text": "Have the provider specify the method and confirm what it supplies. For owned gear, check line, leader, reel capacity and the intended presentation together. Avoid selecting a rod solely because a product listing says saltwater. Fly and conventional approaches should remain separate equipment choices rather than items combined in one recommended bundle."
+          "title": "Choose the target and method",
+          "text": "Bonefish; A shallow-flat plan with close attention to visibility and presentation.; Will we use fly or spinning gear, and how much casting practice should I do? Permit; A different target and presentation; the FWC profile includes both inshore and offshore habitat.; Is the proposed day a flats trip or a structure trip? Mixed backcountry day; A flexible species plan with a different purpose from a dedicated flats target.; Which alternatives fit our dates, ability and desired method?"
         },
         {
-          "title": "Keep skiff and wading preparation separate",
-          "text": "This plan defaults to a guided skiff. Ask about deck footwear and line management. Do not add chest waders or dedicated wading boots unless the actual itinerary includes locally suitable wading. Use existing sun-protective clothing, polarized eyewear and compact storage where appropriate. Select layer weight close to travel using the real conditions, not a tropical label alone."
+          "title": "When to go",
+          "text": "Use the broad bonefish window as an initial travel filter. FWC’s species page describes a March–October peak; the county guide highlights fall. Neither source ranks individual weeks at Islamorada. Ask the guide to explain the tide, wind and visibility for your dates. Request a second fishing plan before you commit. The permit rule calendar is a legal check, not a measure of catch probability."
         },
         {
-          "title": "Make the booking inquiry specific",
-          "text": "Include the preferred target, dates, number of anglers and experience. Ask for the departure location, total time, gear provision and what would trigger a different plan. Treat the source resources as research and operator-discovery aids. No listed date, price or partnership has been confirmed by Atlas in this edition."
+          "title": "How to arrange the day",
+          "text": "Confirm the actual Islamorada meeting marina before you choose accommodation. A listing for the Florida Keys can refer to a different island or departure. Save the dock name, map pin, parking instructions and a direct contact number. Agree whether the trip stays in the skiff. Wading is a separate decision that needs permission, local conditions and suitable footwear. Do not pack chest waders merely because the trip involves shallow water. Ask who makes the weather decision and when you will receive it."
+        },
+        {
+          "title": "What to bring",
+          "text": "Polarized glasses and a secure hat; One of each per person; Use glasses that fit securely; ask about glare and visibility. Sun clothing and a weather shell; One day set plus one shell; Adjust layers to the actual forecast and spray exposure. Water, food and a small dry bag; One personal bag; water for the agreed duration; Confirm drinking-water supply, refill access and food storage. Deck shoes or wading footwear; One pair for the agreed access method; Ask which soles the boat permits; do not assume wading. Personal rod and tackle; Only the agreed setup; Send the rod, reel, line and intended method to the guide first."
+        },
+        {
+          "title": "What the guide provides: confirm each item",
+          "text": "No guide inventory is verified here. Ask for a written list of rods, reels, leaders, flies or bait, landing equipment and safety equipment. Specify a left- or right-handed reel preference when relevant. Also confirm passenger capacity, storage, shade, toilet arrangements and the plan for children or mobility needs. Mark “Guide provides” in the planner only for the items the operator names. A saltwater charter license is a separate question from a captain’s credential."
+        },
+        {
+          "title": "Local mistakes to avoid",
+          "text": "Treating bonefish and permit as interchangeable targets with one guaranteed season. Booking an offshore permit opportunity while expecting a shallow flats day. Arriving at a different Keys marina because the island was not specified. Assuming every flat allows fishing or that a nearby protected zone has the same rules. Buying a full fly outfit before the guide confirms the method and provision."
+        },
+        {
+          "title": "Regulations and licenses",
+          "text": "Start with the FWC visitor license page. Ask whether the exact for-hire vessel has valid saltwater charter coverage. Check bonefish and permit rules, including the Special Permit Zone, for your trip date. Use NOAA’s sanctuary guidance for the planned area. State, federal and sanctuary rules can overlap. Follow the live authority pages for fees, limits, handling requirements and closures; this guide does not reproduce them as fixed facts."
         }
       ],
       "kit": [
@@ -39624,11 +40767,221 @@
         "tarpon",
         "flats"
       ],
-      "articleWordCount": 212
+      "planningGuide": {
+        "destination": "na-us-fl-001",
+        "title": "Islamorada flats fishing: bonefish, permit and trip choice",
+        "description": "Plan an Islamorada flats trip with clear bonefish and permit choices, seasonal context, a skiff packing list and official license links.",
+        "category": "FLORIDA KEYS / FLATS",
+        "season": "FWC gives March through October as a broad Keys bonefish peak. Its Monroe County overview emphasizes fall. These are different scopes, not a guarantee for a selected day.",
+        "evidence": [
+          {
+            "source": "g26-fwc-bonefish",
+            "claim": "FWC documents a Keys bonefish fishery and a broad March–October peak."
+          },
+          {
+            "source": "g26-fwc-permit-bio",
+            "claim": "Permit use grass flats, sand, channels and offshore structure."
+          }
+        ],
+        "sections": [
+          {
+            "id": "suits",
+            "title": "Who this trip suits",
+            "paragraphs": [
+              "Choose this trip if you want a focused shallow-water day and accept that the guide may spend time looking for fish. Tell the guide whether you want to learn to cast, try a new species, or maximize time with a familiar method.",
+              "For a first outing, ask about seated rest breaks, shade and instruction. A sight-fishing skiff day can require patience and accurate casts. A party that wants everyone to fish continuously should compare the actual boat layout and fishing rotation before paying."
+            ],
+            "sources": []
+          },
+          {
+            "id": "choose",
+            "title": "Choose the target and method",
+            "paragraphs": [],
+            "table": {
+              "heads": [
+                "Choice",
+                "What changes",
+                "Ask before you book"
+              ],
+              "rows": [
+                [
+                  "Bonefish",
+                  "A shallow-flat plan with close attention to visibility and presentation.",
+                  "Will we use fly or spinning gear, and how much casting practice should I do?"
+                ],
+                [
+                  "Permit",
+                  "A different target and presentation; the FWC profile includes both inshore and offshore habitat.",
+                  "Is the proposed day a flats trip or a structure trip?"
+                ],
+                [
+                  "Mixed backcountry day",
+                  "A flexible species plan with a different purpose from a dedicated flats target.",
+                  "Which alternatives fit our dates, ability and desired method?"
+                ]
+              ]
+            },
+            "sources": [
+              "g26-fwc-bonefish",
+              "g26-fwc-permit-bio"
+            ]
+          },
+          {
+            "id": "when",
+            "title": "When to go",
+            "paragraphs": [
+              "Use the broad bonefish window as an initial travel filter. FWC’s species page describes a March–October peak; the county guide highlights fall. Neither source ranks individual weeks at Islamorada.",
+              "Ask the guide to explain the tide, wind and visibility for your dates. Request a second fishing plan before you commit. The permit rule calendar is a legal check, not a measure of catch probability."
+            ],
+            "sources": [
+              "g26-fwc-bonefish",
+              "g26-fwc-monroe",
+              "g26-fwc-permit",
+              "g26-nws-keys"
+            ]
+          },
+          {
+            "id": "access",
+            "title": "How to arrange the day",
+            "paragraphs": [
+              "Confirm the actual Islamorada meeting marina before you choose accommodation. A listing for the Florida Keys can refer to a different island or departure. Save the dock name, map pin, parking instructions and a direct contact number.",
+              "Agree whether the trip stays in the skiff. Wading is a separate decision that needs permission, local conditions and suitable footwear. Do not pack chest waders merely because the trip involves shallow water. Ask who makes the weather decision and when you will receive it."
+            ],
+            "sources": []
+          },
+          {
+            "id": "bring",
+            "title": "What to bring",
+            "paragraphs": [],
+            "table": {
+              "heads": [
+                "Pack",
+                "Quantity to start with",
+                "Confirm or adapt"
+              ],
+              "rows": [
+                [
+                  "Polarized glasses and a secure hat",
+                  "One of each per person",
+                  "Use glasses that fit securely; ask about glare and visibility."
+                ],
+                [
+                  "Sun clothing and a weather shell",
+                  "One day set plus one shell",
+                  "Adjust layers to the actual forecast and spray exposure."
+                ],
+                [
+                  "Water, food and a small dry bag",
+                  "One personal bag; water for the agreed duration",
+                  "Confirm drinking-water supply, refill access and food storage."
+                ],
+                [
+                  "Deck shoes or wading footwear",
+                  "One pair for the agreed access method",
+                  "Ask which soles the boat permits; do not assume wading."
+                ],
+                [
+                  "Personal rod and tackle",
+                  "Only the agreed setup",
+                  "Send the rod, reel, line and intended method to the guide first."
+                ]
+              ]
+            },
+            "sources": []
+          },
+          {
+            "id": "provided",
+            "title": "What the guide provides: confirm each item",
+            "paragraphs": [
+              "No guide inventory is verified here. Ask for a written list of rods, reels, leaders, flies or bait, landing equipment and safety equipment. Specify a left- or right-handed reel preference when relevant.",
+              "Also confirm passenger capacity, storage, shade, toilet arrangements and the plan for children or mobility needs. Mark “Guide provides” in the planner only for the items the operator names. A saltwater charter license is a separate question from a captain’s credential."
+            ],
+            "sources": [
+              "g26-fwc-charter"
+            ]
+          },
+          {
+            "id": "mistakes",
+            "title": "Local mistakes to avoid",
+            "paragraphs": [],
+            "items": [
+              "Treating bonefish and permit as interchangeable targets with one guaranteed season.",
+              "Booking an offshore permit opportunity while expecting a shallow flats day.",
+              "Arriving at a different Keys marina because the island was not specified.",
+              "Assuming every flat allows fishing or that a nearby protected zone has the same rules.",
+              "Buying a full fly outfit before the guide confirms the method and provision."
+            ],
+            "sources": []
+          },
+          {
+            "id": "rules",
+            "title": "Regulations and licenses",
+            "paragraphs": [
+              "Start with the FWC visitor license page. Ask whether the exact for-hire vessel has valid saltwater charter coverage. Check bonefish and permit rules, including the Special Permit Zone, for your trip date.",
+              "Use NOAA’s sanctuary guidance for the planned area. State, federal and sanctuary rules can overlap. Follow the live authority pages for fees, limits, handling requirements and closures; this guide does not reproduce them as fixed facts."
+            ],
+            "sources": [
+              "g26-fwc-visitors",
+              "g26-fwc-bonefish",
+              "g26-fwc-permit",
+              "g26-noaa-keys"
+            ]
+          }
+        ],
+        "faq": [
+          {
+            "q": "Is fly fishing required for an Islamorada flats trip?",
+            "a": "No single method is assumed here. Ask the guide which fly or spinning option fits the target, your skill and the conditions."
+          },
+          {
+            "q": "What is the best time for bonefish in Islamorada?",
+            "a": "FWC gives March–October as a broad Keys peak, while its county guide highlights fall. Choose the actual day with local tide, wind and visibility information."
+          },
+          {
+            "q": "Does the charter cover my Florida license?",
+            "a": "It can if the for-hire vessel has valid Florida saltwater charter coverage. Confirm that coverage with the operator and check FWC’s visitor rules."
+          }
+        ],
+        "relatedTrips": [
+          "keys-flats",
+          "keys-offshore"
+        ],
+        "relatedGuides": [
+          "best-time-to-fish-florida-keys",
+          "florida-keys-fishing-packing-list"
+        ],
+        "reel": {
+          "slug": "shadow-school-reveal",
+          "note": "The matching flats film illustrates the search for fish in shallow water. This is an animation, not location footage or evidence of a catch."
+        },
+        "regionPath": "/north-america/united-states/florida/",
+        "regionLabel": "Explore Florida trips",
+        "plannerNote": "Start with this destination. Add your dates, choose the method, and mark equipment as provided only after the operator confirms it.",
+        "nextStep": "Choose bonefish, permit or a flexible backcountry day. Then ask the guide to confirm the method and the exact departure.",
+        "revision": "Rebuilt the trip comparison, access plan, packing choices, rule links and FAQ from the listed official sources.",
+        "catalog": {},
+        "seasonWindows": [
+          {
+            "months": [
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10
+            ],
+            "label": "FWC broad Keys bonefish peak; conditions vary by day",
+            "source": "g26-fwc-bonefish"
+          }
+        ]
+      },
+      "articleWordCount": 616
     },
     {
       "id": "na-us-fl-002",
-      "title": "Lake Okeechobee bass fishing: choose the sector, cover and access first",
+      "title": "Lake Okeechobee bass fishing: choose your launch and trip",
       "place": "Lake Okeechobee",
       "country": "United States",
       "region": "North America",
@@ -39652,53 +41005,66 @@
         "Largemouth bass"
       ],
       "candidateTargets": "Largemouth bass",
-      "summary": "Use water level, vegetation and the actual departure area to narrow a vast lake into a workable bass-fishing plan.",
+      "summary": "Plan a Lake Okeechobee bass trip around the launch sector, water level and method. Compare guide provisions, packing needs and official Florida rules.",
       "contentTier": "detailed-guide",
-      "evidenceDepth": "Full source-page text inspected in this release; not independently expert-reviewed",
+      "evidenceDepth": "Official source text checked 2026-11-10; preparation advice is editorial",
       "catalogOrigin": "north-america-production-import",
       "sourceIds": [
-        "release-okee-habitat",
-        "release-okee-fishing"
+        "g26-fwc-okee",
+        "g26-fwc-ramps",
+        "g26-fwc-visitors",
+        "g26-fwc-fresh"
       ],
       "evidence": [
         {
-          "source": "release-okee-habitat",
-          "claim": "FWC describes Okeechobee as a shallow lake with extensive marsh habitat supporting largemouth bass and black crappie."
-        },
-        {
-          "source": "release-okee-fishing",
-          "claim": "FWC’s fishing guide connects changing water level and vegetation with fish distribution and distinguishes presentations around edges from those in heavier cover."
+          "source": "g26-fwc-okee",
+          "claim": "FWC documents bass habitat, a shallow-water warning and a forecast dated 21 September 2026."
         }
       ],
       "related": [
-        "na-us-fl-001",
-        "na-us-fl-003",
-        "na-us-fl-004"
+        "na-us-tx-002",
+        "na-us-ga-001"
       ],
       "review": {
-        "checked": "2026-09-13",
+        "checked": "2026-11-10",
         "status": "source-checked",
         "fieldTested": false,
         "independentExpertReviewed": false
       },
-      "season": "FWC links fishing distribution to water level and vegetation. The forecast page includes a dated June 2026 summer observation, not a current September water-level feed. Check the latest local and agency information before selecting a launch or buying presentation-specific equipment.",
+      "season": "The FWC forecast dated 21 September 2026 describes a late-winter and early-spring bass spawning peak. The dated water level and vegetation observations are not live conditions.",
       "seasonWindows": [],
       "sections": [
         {
-          "title": "Start with one sector",
-          "text": "Ask which launch area and portion of the lake the planned day uses. Do not assume lodging on one shore is convenient for a departure on another. Resolve the transport and meeting point before deciding the duration. A useful itinerary names the area and an alternative rather than promising to cover the entire lake."
+          "title": "Who this trip suits",
+          "text": "Choose this trip for a bass-focused boat day with an access plan that can change as the lake changes. A guide can help a first-time visitor choose a sector and method. Confirm instruction, seating and the number of active anglers. If you mainly want crappie, ask for a crappie plan rather than assume a bass charter covers it. Discuss whether your priority is casting artificial lures, fishing live bait, or learning the lake. Those choices affect provision and the day’s pace."
         },
         {
-          "title": "Choose the cover and presentation",
-          "text": "Ask whether the day is built around casting near edges, fishing heavier cover or another confirmed approach. That decision changes the appropriate rod, line and lure system. Do not automatically place a heavy-cover setup and a lighter casting setup on the same shopping list when the trip will use only one. If a guide supplies equipment, record that before making any technical purchase."
+          "title": "When to go",
+          "text": "FWC’s forecast dated 21 September 2026 describes bass moving toward a late-winter and early-spring spawning peak. It also reports shallow-water concerns and changing vegetation. Treat that as dated context, not a current report. Ask the guide for a fresh view of water level, launch access, wind exposure and vegetation before you settle the meeting point. This guide does not repeat the September water level as today’s measurement. An old productive area may not provide the same access on your date."
         },
         {
-          "title": "Read reports with their dates attached",
-          "text": "Keep the observation date with any water-level or fishing note. A summer example can explain a method without proving it is the best choice for your visit. Save the agency forecast and ask the local provider which parts apply to the selected sector now. When a launch or vegetation pattern changes, update the plan instead of simply changing the date in the article."
+          "title": "Choose the lake sector before the hotel",
+          "text": "Ask whether the guide proposes the northern, southern or western side of the lake and why that sector suits the day. Get the exact ramp or marina and a second meeting option. Do not use “Lake Okeechobee” as a complete departure address. Use FWC’s ramp locator as a starting point, then confirm the ramp with its manager or your guide. The fishery page links a shallow-water hazard map. A mapped launch does not prove that the route beyond it is usable at the current level."
         },
         {
-          "title": "Pack for the booked platform",
-          "text": "For a guided boat outing, use compact personal storage, suitable footwear and forecast-based layers. Ask whether drinks, bait and equipment are included and whether there are storage restrictions. A bank or independent boat outing needs its own verified access arrangement. The primary way to reduce wasted purchases is to settle those platform decisions first."
+          "title": "Choose live bait or artificial lures",
+          "text": "Live-bait bass day; What bait is proposed, how is it priced, and who rigs it?; Confirm the complete supplied setup and bait allowance. Artificial-lure bass day; Which presentation fits the cover and our casting ability?; Bring only the rods and lures the guide approves. Mixed or instructional day; Can we try both, and how does that change the quote?; Avoid two full personal tackle kits unless they are needed."
+        },
+        {
+          "title": "What to bring",
+          "text": "Sun shirt, secure hat and glasses; One day set; Shade on the boat and the planned exposure. Weather shell and layers; One shell plus forecast-based layers; Do not assume a warm region means a warm boat run. Boat shoes; One accepted pair; Grip and sole requirements. Water, food and dry storage; One personal kit for the full outing; Included drinks, cooler space and rest breaks. Personal tackle; Only the agreed set; Match the bait or lure method, rather than a generic bass label."
+        },
+        {
+          "title": "What the guide provides: price bait separately if needed",
+          "text": "Confirm the boat, rods, reels, terminal tackle, lures, bait, safety equipment and fish-handling help. Ask whether bait is included, capped or charged separately. Request the total quote without assuming any standard package. Confirm the cancellation terms and whether a launch change affects travel or the charge. Ask about shade, toilet arrangements and a seated option. No operator inventory or live availability is verified by Castward."
+        },
+        {
+          "title": "Local mistakes to avoid",
+          "text": "Using a September forecast as a live November report. Booking lodging before the guide selects the launch sector. Assuming visible vegetation proves safe access through shallow water. Comparing live-bait and lure quotes without checking inclusions. Applying Florida saltwater charter-license coverage to a freshwater bass trip."
+        },
+        {
+          "title": "Regulations and licenses",
+          "text": "Use FWC’s visitor license page to check freshwater requirements. Do not assume a saltwater charter exemption applies on Lake Okeechobee. Check the freshwater regulations directory and the lake page for the applicable waterbody and species rules. Follow official updates for licenses, fees, limits and closures. Ask how any planned catch will be handled before deciding to keep fish."
         }
       ],
       "kit": [
@@ -39787,7 +41153,193 @@
         "Big O",
         "wild shiner"
       ],
-      "articleWordCount": 234
+      "planningGuide": {
+        "destination": "na-us-fl-002",
+        "title": "Lake Okeechobee bass fishing: choose your launch and trip",
+        "description": "Plan a Lake Okeechobee bass trip around the launch sector, water level and method. Compare guide provisions, packing needs and official Florida rules.",
+        "category": "FLORIDA / LAKE BASS",
+        "season": "The FWC forecast dated 21 September 2026 describes a late-winter and early-spring bass spawning peak. The dated water level and vegetation observations are not live conditions.",
+        "evidence": [
+          {
+            "source": "g26-fwc-okee",
+            "claim": "FWC documents bass habitat, a shallow-water warning and a forecast dated 21 September 2026."
+          }
+        ],
+        "sections": [
+          {
+            "id": "suits",
+            "title": "Who this trip suits",
+            "paragraphs": [
+              "Choose this trip for a bass-focused boat day with an access plan that can change as the lake changes. A guide can help a first-time visitor choose a sector and method. Confirm instruction, seating and the number of active anglers.",
+              "If you mainly want crappie, ask for a crappie plan rather than assume a bass charter covers it. Discuss whether your priority is casting artificial lures, fishing live bait, or learning the lake. Those choices affect provision and the day’s pace."
+            ],
+            "sources": []
+          },
+          {
+            "id": "when",
+            "title": "When to go",
+            "paragraphs": [
+              "FWC’s forecast dated 21 September 2026 describes bass moving toward a late-winter and early-spring spawning peak. It also reports shallow-water concerns and changing vegetation. Treat that as dated context, not a current report.",
+              "Ask the guide for a fresh view of water level, launch access, wind exposure and vegetation before you settle the meeting point. This guide does not repeat the September water level as today’s measurement. An old productive area may not provide the same access on your date."
+            ],
+            "sources": [
+              "g26-fwc-okee"
+            ]
+          },
+          {
+            "id": "access",
+            "title": "Choose the lake sector before the hotel",
+            "paragraphs": [
+              "Ask whether the guide proposes the northern, southern or western side of the lake and why that sector suits the day. Get the exact ramp or marina and a second meeting option. Do not use “Lake Okeechobee” as a complete departure address.",
+              "Use FWC’s ramp locator as a starting point, then confirm the ramp with its manager or your guide. The fishery page links a shallow-water hazard map. A mapped launch does not prove that the route beyond it is usable at the current level."
+            ],
+            "sources": [
+              "g26-fwc-ramps",
+              "g26-fwc-okee"
+            ]
+          },
+          {
+            "id": "how",
+            "title": "Choose live bait or artificial lures",
+            "paragraphs": [],
+            "table": {
+              "heads": [
+                "Choice",
+                "Question before you book",
+                "Equipment effect"
+              ],
+              "rows": [
+                [
+                  "Live-bait bass day",
+                  "What bait is proposed, how is it priced, and who rigs it?",
+                  "Confirm the complete supplied setup and bait allowance."
+                ],
+                [
+                  "Artificial-lure bass day",
+                  "Which presentation fits the cover and our casting ability?",
+                  "Bring only the rods and lures the guide approves."
+                ],
+                [
+                  "Mixed or instructional day",
+                  "Can we try both, and how does that change the quote?",
+                  "Avoid two full personal tackle kits unless they are needed."
+                ]
+              ]
+            },
+            "sources": [
+              "g26-fwc-okee"
+            ]
+          },
+          {
+            "id": "bring",
+            "title": "What to bring",
+            "paragraphs": [],
+            "table": {
+              "heads": [
+                "Item",
+                "Starting quantity",
+                "Confirm"
+              ],
+              "rows": [
+                [
+                  "Sun shirt, secure hat and glasses",
+                  "One day set",
+                  "Shade on the boat and the planned exposure."
+                ],
+                [
+                  "Weather shell and layers",
+                  "One shell plus forecast-based layers",
+                  "Do not assume a warm region means a warm boat run."
+                ],
+                [
+                  "Boat shoes",
+                  "One accepted pair",
+                  "Grip and sole requirements."
+                ],
+                [
+                  "Water, food and dry storage",
+                  "One personal kit for the full outing",
+                  "Included drinks, cooler space and rest breaks."
+                ],
+                [
+                  "Personal tackle",
+                  "Only the agreed set",
+                  "Match the bait or lure method, rather than a generic bass label."
+                ]
+              ]
+            },
+            "sources": []
+          },
+          {
+            "id": "provided",
+            "title": "What the guide provides: price bait separately if needed",
+            "paragraphs": [
+              "Confirm the boat, rods, reels, terminal tackle, lures, bait, safety equipment and fish-handling help. Ask whether bait is included, capped or charged separately. Request the total quote without assuming any standard package.",
+              "Confirm the cancellation terms and whether a launch change affects travel or the charge. Ask about shade, toilet arrangements and a seated option. No operator inventory or live availability is verified by Castward."
+            ],
+            "sources": []
+          },
+          {
+            "id": "mistakes",
+            "title": "Local mistakes to avoid",
+            "paragraphs": [],
+            "items": [
+              "Using a September forecast as a live November report.",
+              "Booking lodging before the guide selects the launch sector.",
+              "Assuming visible vegetation proves safe access through shallow water.",
+              "Comparing live-bait and lure quotes without checking inclusions.",
+              "Applying Florida saltwater charter-license coverage to a freshwater bass trip."
+            ],
+            "sources": []
+          },
+          {
+            "id": "rules",
+            "title": "Regulations and licenses",
+            "paragraphs": [
+              "Use FWC’s visitor license page to check freshwater requirements. Do not assume a saltwater charter exemption applies on Lake Okeechobee.",
+              "Check the freshwater regulations directory and the lake page for the applicable waterbody and species rules. Follow official updates for licenses, fees, limits and closures. Ask how any planned catch will be handled before deciding to keep fish."
+            ],
+            "sources": [
+              "g26-fwc-visitors",
+              "g26-fwc-fresh",
+              "g26-fwc-okee"
+            ]
+          }
+        ],
+        "faq": [
+          {
+            "q": "When should I plan an Okeechobee bass trip?",
+            "a": "FWC’s September 2026 forecast describes a late-winter and early-spring spawning peak. Ask for current level, access and fishing conditions before choosing the exact day."
+          },
+          {
+            "q": "Should I use shiners or artificial lures?",
+            "a": "Choose the experience with the guide. Confirm bait costs and provision for live bait, or the expected presentation and casting needs for lures."
+          },
+          {
+            "q": "Does my guided bass trip include a fishing license?",
+            "a": "Do not assume so. Check FWC’s freshwater visitor requirements. Saltwater charter coverage is not a general freshwater exemption."
+          }
+        ],
+        "relatedTrips": [
+          "na-us-tx-002",
+          "na-us-ga-001"
+        ],
+        "relatedGuides": [
+          "what-to-bring-on-a-guided-fishing-trip",
+          "guided-fishing-trip-questions"
+        ],
+        "reel": {
+          "slug": "bass-strike",
+          "note": "This related bass animation links to Lake Fork. It illustrates a bass theme, not Okeechobee conditions. This is an animation, not location footage or evidence of a catch."
+        },
+        "regionPath": "/north-america/united-states/florida/",
+        "regionLabel": "Explore Florida trips",
+        "plannerNote": "Start with this destination. Add your dates, choose the method, and mark equipment as provided only after the operator confirms it.",
+        "nextStep": "Confirm the launch sector and bait or lure plan. Ask for a fresh access check before the final travel decision.",
+        "revision": "Rebuilt the trip comparison, access plan, packing choices, rule links and FAQ from the listed official sources.",
+        "catalog": {}
+      },
+      "articleWordCount": 566
     },
     {
       "id": "na-us-fl-003",
@@ -45616,7 +47168,7 @@
     },
     {
       "id": "na-us-tx-001",
-      "title": "Port Aransas bay fishing: separate skiff, kayak and shore preparation",
+      "title": "Port Aransas fishing: bay charter or kayak trip?",
       "place": "Port Aransas / Aransas Bay",
       "country": "United States",
       "region": "North America",
@@ -45642,48 +47194,66 @@
         "Spotted seatrout"
       ],
       "candidateTargets": "Red drum / speckled trout candidates",
-      "summary": "Choose a bay outing and the actual access mode before building a redfish or seatrout shopping list.",
+      "summary": "Compare a Port Aransas bay charter with Lighthouse Lakes kayak fishing. Plan the departure, tide checks, personal gear and Texas license requirements.",
       "contentTier": "detailed-guide",
-      "evidenceDepth": "Full source-page text inspected in this release; not independently expert-reviewed",
+      "evidenceDepth": "Official source text checked 2026-11-10; preparation advice is editorial",
       "catalogOrigin": "north-america-production-import",
       "sourceIds": [
-        "release-porta"
+        "g26-lighthouse",
+        "g26-nws-marine",
+        "g26-tx-license",
+        "g26-tx-rules"
       ],
       "evidence": [
         {
-          "source": "release-porta",
-          "claim": "Port Aransas tourism lists redfish and spotted seatrout among bay targets and distinguishes guided boating, wading and kayak options around the local bays and flats."
+          "source": "g26-lighthouse",
+          "claim": "TPWD documents red drum, spotted seatrout and flounder in Lighthouse Lakes, part of Redfish Bay."
         }
       ],
       "related": [
-        "na-us-tx-002",
-        "na-us-tx-003",
-        "na-us-tx-004"
+        "texas-inshore-redfish",
+        "na-us-sc-001"
       ],
       "review": {
-        "checked": "2026-09-13",
+        "checked": "2026-11-10",
         "status": "source-checked",
         "fieldTested": false,
         "independentExpertReviewed": false
       },
-      "season": "The local tourism authority describes broad year-round opportunities and seasonal preferences. Those labels do not establish a particular day’s access or fish activity. Select the target, tide-dependent route and weather alternative with a local source before setting a detailed itinerary.",
+      "season": "The inspected sources establish red drum, spotted seatrout and flounder in the nearby estuary. They do not establish a reliable Port Aransas best-month ranking.",
       "seasonWindows": [],
       "sections": [
         {
-          "title": "Choose the platform first",
-          "text": "A guided skiff, a kayak and an independent shore outing solve different access problems. Choose one before adding footwear, storage, flotation or a second rod to the plan. Ask a provider to specify the actual departure and what water the trip will cover. A bay-fishing page is not confirmation that a particular shoreline can be reached from the road."
+          "title": "Who this trip suits",
+          "text": "A guided bay trip suits visitors who want coastal fishing without assuming an offshore itinerary. It can fit a first-time party if the boat, seating, instruction and duration match their needs. “Inshore” does not promise flat water. A kayak outing adds paddle effort, navigation, channel crossings and a return route. Choose it because you want that experience, not because it looks like a cheaper version of the same charter. Ask a local provider to assess your ability and the conditions."
         },
         {
-          "title": "Choose a target and presentation",
-          "text": "Tell the local shop or guide whether redfish or seatrout is the intended focus and ask which approach fits the outing. Check an owned setup before replacing it. Natural-bait and artificial presentations may call for different components; do not buy both entire systems unless the planned day genuinely needs both. The guide contains no exact locally vetted product model."
+          "title": "Choose the bay and access",
+          "text": "Guided bay boat; The captain selects accessible water for the agreed target.; Confirm the launch town, target, time aboard and whether you will wade. Lighthouse Lakes kayak; A mangrove and flats network in nearby Redfish Bay.; Confirm a route, tide, wind, return plan and the channel crossing. Bank or pier alternative; A separate access plan with its own permissions.; Name the actual facility; a bay-boat quote does not establish public shore access."
         },
         {
-          "title": "Separate owned, rented and supplied items",
-          "text": "For a guide booking, obtain the tackle and flotation inclusions. For a kayak outing, resolve the rental equipment, fit and launch logistics before buying personal accessories. Wading footwear belongs only on a confirmed wading plan. Use compact storage and shared essentials appropriate to the platform rather than copying an offshore packing list."
+          "title": "When to go",
+          "text": "Do not choose a fixed month from this article. The official sources support the estuary and its targets, but not a ranked local calendar. Ask the guide which species and method fit your travel dates. For kayak plans, review wind, tide and the ability to return against the conditions. TPWD notes strong prevailing winds, channel traffic and the risk of losing your route in the mangroves. A short route can still need a careful plan."
         },
         {
-          "title": "Keep the bay plan adaptable",
-          "text": "Ask about conditions that would change the route or cancel the outing and record an alternative date where possible. The tourism source establishes a range of experiences, not which one is suitable for you on a particular day. This edition uses a single local overview source; exact access and method details still benefit from an additional local check."
+          "title": "How to reach the right departure",
+          "text": "Port Aransas, Aransas Pass and the surrounding bays are not one meeting point. Confirm the town, exact ramp or marina, and whether your road route involves a ferry. Leave the travel allowance to your actual route and departure time. TPWD lists Lighthouse Lakes Trail Park and Crabman Marina access from Highway 361. The trail starts across the Aransas Channel from some access points. Inspect the current trail map and local conditions before crossing. The source’s loop-marker descriptions differ; do not navigate from this article."
+        },
+        {
+          "title": "What to bring",
+          "text": "Clothing; Sun coverage, hat, glasses and a forecast-based shell.; Clothing for spray and a dry backup. Personal storage; One compact dry bag.; Secure the bag to the craft with an agreed system. Water and food; Confirm supply for the trip duration.; Carry the quantity agreed for the route and conditions. Footwear; The captain’s accepted deck shoes.; Ask about launch footing; no barefoot launch assumption. Fishing and safety kit; Confirm tackle and boat safety provisions.; Confirm PFD fit, paddle, communication, navigation and all required equipment."
+        },
+        {
+          "title": "What the guide provides: boat and paddle trips differ",
+          "text": "For the boat, request a tackle and bait list, life-jacket sizes, storage, shade and any wading plan. For a kayak service, separately confirm the kayak, paddle, PFD, launch support, route briefing and recovery arrangement. Ask who supplies bait, ice, water and fish handling. Mark only confirmed items as provided. Do not buy a saltwater rod until the guide confirms the target, lure or bait weight, line and leader combination."
+        },
+        {
+          "title": "Local mistakes to avoid",
+          "text": "Booking a bay trip while expecting offshore species. Confusing Port Aransas with Aransas Pass when you arrange transport. Treating Lighthouse Lakes as a marked road with no navigation decisions. Crossing the commercial channel without a traffic and return plan. Damaging shallow seagrass while trying to reach a fishing spot."
+        },
+        {
+          "title": "Regulations and licenses",
+          "text": "Check the current Texas fishing license and saltwater requirements. Do not assume the price of a charter automatically covers the guest’s license. Check the Outdoor Annual for the target species and fishing method. TPWD identifies seagrass protection in the Redfish Bay State Scientific Area. Check the current restrictions and avoid routes that damage the bottom. A fishing license does not replace access permission or boat requirements."
         }
       ],
       "kit": [
@@ -45757,11 +47327,197 @@
       ],
       "tripTypeIds": [],
       "tripTypeNames": [],
-      "articleWordCount": 228
+      "planningGuide": {
+        "destination": "na-us-tx-001",
+        "title": "Port Aransas fishing: bay charter or kayak trip?",
+        "description": "Compare a Port Aransas bay charter with Lighthouse Lakes kayak fishing. Plan the departure, tide checks, personal gear and Texas license requirements.",
+        "category": "TEXAS / COASTAL BAYS",
+        "season": "The inspected sources establish red drum, spotted seatrout and flounder in the nearby estuary. They do not establish a reliable Port Aransas best-month ranking.",
+        "evidence": [
+          {
+            "source": "g26-lighthouse",
+            "claim": "TPWD documents red drum, spotted seatrout and flounder in Lighthouse Lakes, part of Redfish Bay."
+          }
+        ],
+        "sections": [
+          {
+            "id": "suits",
+            "title": "Who this trip suits",
+            "paragraphs": [
+              "A guided bay trip suits visitors who want coastal fishing without assuming an offshore itinerary. It can fit a first-time party if the boat, seating, instruction and duration match their needs. “Inshore” does not promise flat water.",
+              "A kayak outing adds paddle effort, navigation, channel crossings and a return route. Choose it because you want that experience, not because it looks like a cheaper version of the same charter. Ask a local provider to assess your ability and the conditions."
+            ],
+            "sources": []
+          },
+          {
+            "id": "choose",
+            "title": "Choose the bay and access",
+            "paragraphs": [],
+            "table": {
+              "heads": [
+                "Option",
+                "What it means",
+                "Decision before payment"
+              ],
+              "rows": [
+                [
+                  "Guided bay boat",
+                  "The captain selects accessible water for the agreed target.",
+                  "Confirm the launch town, target, time aboard and whether you will wade."
+                ],
+                [
+                  "Lighthouse Lakes kayak",
+                  "A mangrove and flats network in nearby Redfish Bay.",
+                  "Confirm a route, tide, wind, return plan and the channel crossing."
+                ],
+                [
+                  "Bank or pier alternative",
+                  "A separate access plan with its own permissions.",
+                  "Name the actual facility; a bay-boat quote does not establish public shore access."
+                ]
+              ]
+            },
+            "sources": [
+              "g26-lighthouse"
+            ]
+          },
+          {
+            "id": "when",
+            "title": "When to go",
+            "paragraphs": [
+              "Do not choose a fixed month from this article. The official sources support the estuary and its targets, but not a ranked local calendar. Ask the guide which species and method fit your travel dates.",
+              "For kayak plans, review wind, tide and the ability to return against the conditions. TPWD notes strong prevailing winds, channel traffic and the risk of losing your route in the mangroves. A short route can still need a careful plan."
+            ],
+            "sources": [
+              "g26-lighthouse",
+              "g26-nws-marine"
+            ]
+          },
+          {
+            "id": "access",
+            "title": "How to reach the right departure",
+            "paragraphs": [
+              "Port Aransas, Aransas Pass and the surrounding bays are not one meeting point. Confirm the town, exact ramp or marina, and whether your road route involves a ferry. Leave the travel allowance to your actual route and departure time.",
+              "TPWD lists Lighthouse Lakes Trail Park and Crabman Marina access from Highway 361. The trail starts across the Aransas Channel from some access points. Inspect the current trail map and local conditions before crossing. The source’s loop-marker descriptions differ; do not navigate from this article."
+            ],
+            "sources": [
+              "g26-lighthouse"
+            ]
+          },
+          {
+            "id": "bring",
+            "title": "What to bring",
+            "paragraphs": [],
+            "table": {
+              "heads": [
+                "Item",
+                "Bay boat",
+                "Kayak addition"
+              ],
+              "rows": [
+                [
+                  "Clothing",
+                  "Sun coverage, hat, glasses and a forecast-based shell.",
+                  "Clothing for spray and a dry backup."
+                ],
+                [
+                  "Personal storage",
+                  "One compact dry bag.",
+                  "Secure the bag to the craft with an agreed system."
+                ],
+                [
+                  "Water and food",
+                  "Confirm supply for the trip duration.",
+                  "Carry the quantity agreed for the route and conditions."
+                ],
+                [
+                  "Footwear",
+                  "The captain’s accepted deck shoes.",
+                  "Ask about launch footing; no barefoot launch assumption."
+                ],
+                [
+                  "Fishing and safety kit",
+                  "Confirm tackle and boat safety provisions.",
+                  "Confirm PFD fit, paddle, communication, navigation and all required equipment."
+                ]
+              ]
+            },
+            "sources": []
+          },
+          {
+            "id": "provided",
+            "title": "What the guide provides: boat and paddle trips differ",
+            "paragraphs": [
+              "For the boat, request a tackle and bait list, life-jacket sizes, storage, shade and any wading plan. For a kayak service, separately confirm the kayak, paddle, PFD, launch support, route briefing and recovery arrangement.",
+              "Ask who supplies bait, ice, water and fish handling. Mark only confirmed items as provided. Do not buy a saltwater rod until the guide confirms the target, lure or bait weight, line and leader combination."
+            ],
+            "sources": []
+          },
+          {
+            "id": "mistakes",
+            "title": "Local mistakes to avoid",
+            "paragraphs": [],
+            "items": [
+              "Booking a bay trip while expecting offshore species.",
+              "Confusing Port Aransas with Aransas Pass when you arrange transport.",
+              "Treating Lighthouse Lakes as a marked road with no navigation decisions.",
+              "Crossing the commercial channel without a traffic and return plan.",
+              "Damaging shallow seagrass while trying to reach a fishing spot."
+            ],
+            "sources": []
+          },
+          {
+            "id": "rules",
+            "title": "Regulations and licenses",
+            "paragraphs": [
+              "Check the current Texas fishing license and saltwater requirements. Do not assume the price of a charter automatically covers the guest’s license. Check the Outdoor Annual for the target species and fishing method.",
+              "TPWD identifies seagrass protection in the Redfish Bay State Scientific Area. Check the current restrictions and avoid routes that damage the bottom. A fishing license does not replace access permission or boat requirements."
+            ],
+            "sources": [
+              "g26-tx-license",
+              "g26-tx-rules",
+              "g26-lighthouse"
+            ]
+          }
+        ],
+        "faq": [
+          {
+            "q": "Is Lighthouse Lakes part of Aransas Bay?",
+            "a": "TPWD places Lighthouse Lakes in Redfish Bay, which lies between Aransas and Corpus Christi Bays. Choose the exact access point before you travel."
+          },
+          {
+            "q": "Is a kayak trip suitable for a beginner?",
+            "a": "That depends on the route, wind, tide, channel traffic and your ability. Ask a local provider to assess the specific plan; do not assume all inshore water is easy."
+          },
+          {
+            "q": "Does this guide name a best month for Port Aransas?",
+            "a": "No. The inspected sources do not support a reliable local month ranking. Confirm the target and conditions for your proposed dates."
+          }
+        ],
+        "relatedTrips": [
+          "texas-inshore-redfish",
+          "na-us-sc-001"
+        ],
+        "relatedGuides": [
+          "inshore-vs-offshore-fishing-charter",
+          "what-to-bring-on-a-guided-fishing-trip"
+        ],
+        "reel": {
+          "slug": "sunrise-bird-run",
+          "note": "The matching coastal film shows birds over fish. It illustrates the theme, not a current local report. This is an animation, not location footage or evidence of a catch."
+        },
+        "regionPath": "/north-america/united-states/texas/",
+        "regionLabel": "Explore Texas trips",
+        "plannerNote": "Start with this destination. Add your dates, choose the method, and mark equipment as provided only after the operator confirms it.",
+        "nextStep": "Choose a bay boat or a kayak. Save the exact departure and ask for the route, equipment and weather terms.",
+        "revision": "Rebuilt the trip comparison, access plan, packing choices, rule links and FAQ from the listed official sources.",
+        "catalog": {}
+      },
+      "articleWordCount": 579
     },
     {
       "id": "na-us-tx-002",
-      "title": "Lake Fork bass fishing: cover, launch choice and a compatible setup",
+      "title": "Lake Fork bass fishing: seasons, ramps and guide prep",
       "place": "Lake Fork",
       "country": "United States",
       "region": "North America",
@@ -45785,53 +47541,80 @@
         "Largemouth bass"
       ],
       "candidateTargets": "Largemouth bass",
-      "summary": "Match your bass presentation to cover and access. Keep navigation planning separate from the lure shopping list.",
+      "summary": "Plan a Lake Fork bass trip with seasonal tactics, public ramp choices, a guide packing list and links to current Texas licenses and lake rules.",
       "contentTier": "detailed-guide",
-      "evidenceDepth": "Full source-page text inspected in this release; not independently expert-reviewed",
+      "evidenceDepth": "Official source text checked 2026-11-10; preparation advice is editorial",
       "catalogOrigin": "north-america-production-import",
       "sourceIds": [
-        "release-fork",
-        "release-fork-access"
+        "g26-fork",
+        "g26-fork-access",
+        "g26-tx-license",
+        "g26-tx-rules"
       ],
       "evidence": [
         {
-          "source": "release-fork",
-          "claim": "TPWD identifies largemouth bass as a principal Lake Fork target and describes timber, vegetation and constructed cover. It also warns about submerged obstructions."
+          "source": "g26-fork",
+          "claim": "TPWD identifies largemouth bass, seasonal tactics and submerged timber hazards at Lake Fork."
         },
         {
-          "source": "release-fork-access",
-          "claim": "TPWD lists public and private access choices, including Sabine River Authority ramps. Named facilities still require a trip-date availability check."
+          "source": "g26-fork-access",
+          "claim": "TPWD lists named public and private launch facilities."
         }
       ],
       "related": [
-        "na-us-tx-001",
-        "na-us-tx-003",
-        "na-us-tx-004"
+        "na-us-fl-002",
+        "na-us-ga-001"
       ],
       "review": {
-        "checked": "2026-09-13",
+        "checked": "2026-11-10",
         "status": "source-checked",
         "fieldTested": false,
         "independentExpertReviewed": false
       },
-      "season": "TPWD describes mid-February through April as a notable spring largemouth period, with different opportunities and presentations in other seasons. This is background rather than a guarantee or a live bite report. Ask how the current conditions affect your chosen sector and method.",
-      "seasonWindows": [],
+      "season": "TPWD describes spring, fall and winter as productive bass periods, with a shoreline spring pattern from mid-February to April. Water and weather change the actual pattern.",
+      "seasonWindows": [
+        {
+          "months": [
+            2,
+            3,
+            4
+          ],
+          "label": "TPWD spring shoreline pattern from mid-February to April; not a legal season",
+          "source": "g26-fork"
+        }
+      ],
       "sections": [
         {
-          "title": "Choose the launch with the guide or route",
-          "text": "Pick the area you intend to fish before selecting a convenient-looking launch on a map. Confirm the meeting point, parking and return arrangement. For an independent boat outing, address local navigation and current access before discussing lure colors. A buoyed route is not a guarantee that every nearby area is clear of obstructions."
+          "title": "Who this trip suits",
+          "text": "Lake Fork suits a bass-focused visitor who wants to learn a lake pattern or spend a day with a local guide. Discuss whether you value instruction, a particular lure method, or a patient search for larger fish. No guide can promise a trophy. For a family or mixed-ability party, ask how much standing and casting the proposed boat day involves. A bass boat layout, seating arrangement and number of active anglers may matter more than a long list of tackle."
         },
         {
-          "title": "Match cover to the setup",
-          "text": "Ask whether the plan focuses on vegetation, timber, docks or a different verified feature. Choose the rod’s working range, line and terminal components for the actual presentation rather than combining every bass method in one kit. Check owned equipment with the guide before buying a specialized outfit. One coherent system is more useful than a premium reel paired with unsuitable line or lure weight."
+          "title": "When to go",
+          "text": "TPWD describes spring, fall and winter as useful periods for largemouth bass. Its spring guidance places shoreline fishing around mid-February to April. In hot weather, the timing and exposure plan become a separate comfort decision. Ask about the recent water level, clarity and the specific cover the guide expects to fish. A calendar month alone does not select the lure or launch. The agency’s night-fishing discussion is a tactic reference, not a recommendation for an unfamiliar visitor to navigate the lake after dark."
         },
         {
-          "title": "Use seasonal background without promising a trophy",
-          "text": "The agency’s spring guidance helps frame an initial conversation, but it does not establish a personal catch outcome. Keep the chosen method and current observations beside their dates. Decide whether the trip is primarily instructional, exploratory or focused on a specific technique, so that the value of the outing does not depend on a single fish."
+          "title": "Choose a launch before your lodging",
+          "text": "TPWD’s access directory lists FM 17 Ramp, Highway 515 East Ramp and Highway 154 Ramp, among other facilities. Use the directory to compare the part of the lake where you will meet. Confirm current access with the operator before you travel. Ask whether you meet at a ramp, a marina or an accommodation dock. Get a map pin and parking plan. TPWD warns that submerged timber is a navigation hazard even with marked boat lanes. A chart and a guide’s local knowledge do not make every route safe."
         },
         {
-          "title": "Plan the day, not just the tackle box",
-          "text": "Separate boat-provided equipment from personal items. Bring appropriate eyewear and clothing, refreshments as agreed, and only the spare tackle requested for the method. Keep larger storage at the vehicle when the operator prefers a compact onboard load. Record an alternative for a route or weather change, and do not treat any source link here as a confirmed reservation."
+          "title": "Choose how you will fish",
+          "text": "Learn with the guide’s tackle; Casting instruction, lure choices and rigging help.; Bring personal gear only; ask to try supplied equipment. Use your own bass setup; Rod lure rating, line and reel for the planned cover.; Pack the agreed rods and a small approved selection. Change the target; Whether a crappie or other trip is actually offered.; Do not assume a bass package includes the different tackle or method."
+        },
+        {
+          "title": "What to bring",
+          "text": "Weather shell and adjustable layers; One shell and layers for the forecast; Keep a dry backup in a small bag. Secure hat and glasses; One of each; Protect your eyes during casting and travel. Boat-approved footwear; One pair; Ask about grip and soles. Water, food and sun protection; For each person and the actual duration; Confirm storage and crew provisions. Personal tackle; Only the confirmed set; Avoid a tournament-size bag for a short guided outing."
+        },
+        {
+          "title": "What the guide provides: request an inventory",
+          "text": "Confirm the boat, safety equipment, rods, reels, lures and replacement tackle terms. Ask who handles rigging and unhooking. If you want to learn a technique, request instruction rather than assume it comes with boat time. Ask about drinks, fish-care arrangements and the weather policy. The public ramp directory is not a list of Castward partners. No named operator, price or available date is verified here."
+        },
+        {
+          "title": "Local mistakes to avoid",
+          "text": "Choosing a hotel before the guide confirms the launch sector. Expecting a trophy because the lake has a trophy reputation. Navigating through timber as though marked lanes remove all hazards. Using statewide rules without checking Lake Fork exceptions. Buying rods and lures before the guide confirms the pattern and supplied tackle."
+        },
+        {
+          "title": "Regulations and licenses",
+          "text": "Use TPWD’s license page to select the applicable Texas license and freshwater privileges. The Lake Fork page identifies special rules for this reservoir. Follow its fishing-regulations link and the current Outdoor Annual before the trip. The direct lake-limit service returned an error during this review. Start from the official Lake Fork page or contact TPWD if it remains unavailable. Do not substitute an old screenshot or a third-party limit table."
         }
       ],
       "kit": [
@@ -45911,7 +47694,206 @@
       ],
       "tripTypeIds": [],
       "tripTypeNames": [],
-      "articleWordCount": 231
+      "planningGuide": {
+        "destination": "na-us-tx-002",
+        "title": "Lake Fork bass fishing: seasons, ramps and guide prep",
+        "description": "Plan a Lake Fork bass trip with seasonal tactics, public ramp choices, a guide packing list and links to current Texas licenses and lake rules.",
+        "category": "TEXAS / LAKE BASS",
+        "season": "TPWD describes spring, fall and winter as productive bass periods, with a shoreline spring pattern from mid-February to April. Water and weather change the actual pattern.",
+        "evidence": [
+          {
+            "source": "g26-fork",
+            "claim": "TPWD identifies largemouth bass, seasonal tactics and submerged timber hazards at Lake Fork."
+          },
+          {
+            "source": "g26-fork-access",
+            "claim": "TPWD lists named public and private launch facilities."
+          }
+        ],
+        "sections": [
+          {
+            "id": "suits",
+            "title": "Who this trip suits",
+            "paragraphs": [
+              "Lake Fork suits a bass-focused visitor who wants to learn a lake pattern or spend a day with a local guide. Discuss whether you value instruction, a particular lure method, or a patient search for larger fish. No guide can promise a trophy.",
+              "For a family or mixed-ability party, ask how much standing and casting the proposed boat day involves. A bass boat layout, seating arrangement and number of active anglers may matter more than a long list of tackle."
+            ],
+            "sources": []
+          },
+          {
+            "id": "when",
+            "title": "When to go",
+            "paragraphs": [
+              "TPWD describes spring, fall and winter as useful periods for largemouth bass. Its spring guidance places shoreline fishing around mid-February to April. In hot weather, the timing and exposure plan become a separate comfort decision.",
+              "Ask about the recent water level, clarity and the specific cover the guide expects to fish. A calendar month alone does not select the lure or launch. The agency’s night-fishing discussion is a tactic reference, not a recommendation for an unfamiliar visitor to navigate the lake after dark."
+            ],
+            "sources": [
+              "g26-fork"
+            ]
+          },
+          {
+            "id": "access",
+            "title": "Choose a launch before your lodging",
+            "paragraphs": [
+              "TPWD’s access directory lists FM 17 Ramp, Highway 515 East Ramp and Highway 154 Ramp, among other facilities. Use the directory to compare the part of the lake where you will meet. Confirm current access with the operator before you travel.",
+              "Ask whether you meet at a ramp, a marina or an accommodation dock. Get a map pin and parking plan. TPWD warns that submerged timber is a navigation hazard even with marked boat lanes. A chart and a guide’s local knowledge do not make every route safe."
+            ],
+            "sources": [
+              "g26-fork-access",
+              "g26-fork"
+            ]
+          },
+          {
+            "id": "how",
+            "title": "Choose how you will fish",
+            "paragraphs": [],
+            "table": {
+              "heads": [
+                "Plan",
+                "What to confirm",
+                "Packing effect"
+              ],
+              "rows": [
+                [
+                  "Learn with the guide’s tackle",
+                  "Casting instruction, lure choices and rigging help.",
+                  "Bring personal gear only; ask to try supplied equipment."
+                ],
+                [
+                  "Use your own bass setup",
+                  "Rod lure rating, line and reel for the planned cover.",
+                  "Pack the agreed rods and a small approved selection."
+                ],
+                [
+                  "Change the target",
+                  "Whether a crappie or other trip is actually offered.",
+                  "Do not assume a bass package includes the different tackle or method."
+                ]
+              ]
+            },
+            "sources": []
+          },
+          {
+            "id": "bring",
+            "title": "What to bring",
+            "paragraphs": [],
+            "table": {
+              "heads": [
+                "Item",
+                "Starting quantity",
+                "Check first"
+              ],
+              "rows": [
+                [
+                  "Weather shell and adjustable layers",
+                  "One shell and layers for the forecast",
+                  "Keep a dry backup in a small bag."
+                ],
+                [
+                  "Secure hat and glasses",
+                  "One of each",
+                  "Protect your eyes during casting and travel."
+                ],
+                [
+                  "Boat-approved footwear",
+                  "One pair",
+                  "Ask about grip and soles."
+                ],
+                [
+                  "Water, food and sun protection",
+                  "For each person and the actual duration",
+                  "Confirm storage and crew provisions."
+                ],
+                [
+                  "Personal tackle",
+                  "Only the confirmed set",
+                  "Avoid a tournament-size bag for a short guided outing."
+                ]
+              ]
+            },
+            "sources": []
+          },
+          {
+            "id": "provided",
+            "title": "What the guide provides: request an inventory",
+            "paragraphs": [
+              "Confirm the boat, safety equipment, rods, reels, lures and replacement tackle terms. Ask who handles rigging and unhooking. If you want to learn a technique, request instruction rather than assume it comes with boat time.",
+              "Ask about drinks, fish-care arrangements and the weather policy. The public ramp directory is not a list of Castward partners. No named operator, price or available date is verified here."
+            ],
+            "sources": []
+          },
+          {
+            "id": "mistakes",
+            "title": "Local mistakes to avoid",
+            "paragraphs": [],
+            "items": [
+              "Choosing a hotel before the guide confirms the launch sector.",
+              "Expecting a trophy because the lake has a trophy reputation.",
+              "Navigating through timber as though marked lanes remove all hazards.",
+              "Using statewide rules without checking Lake Fork exceptions.",
+              "Buying rods and lures before the guide confirms the pattern and supplied tackle."
+            ],
+            "sources": []
+          },
+          {
+            "id": "rules",
+            "title": "Regulations and licenses",
+            "paragraphs": [
+              "Use TPWD’s license page to select the applicable Texas license and freshwater privileges. The Lake Fork page identifies special rules for this reservoir. Follow its fishing-regulations link and the current Outdoor Annual before the trip.",
+              "The direct lake-limit service returned an error during this review. Start from the official Lake Fork page or contact TPWD if it remains unavailable. Do not substitute an old screenshot or a third-party limit table."
+            ],
+            "sources": [
+              "g26-tx-license",
+              "g26-fork",
+              "g26-tx-rules"
+            ]
+          }
+        ],
+        "faq": [
+          {
+            "q": "What is the best season for Lake Fork bass?",
+            "a": "TPWD highlights spring, fall and winter, with spring shoreline tactics around mid-February to April. Ask a local guide about the actual water conditions before choosing a method."
+          },
+          {
+            "q": "Which Lake Fork ramp should I use?",
+            "a": "Choose the ramp with your guide. TPWD lists options including FM 17, Highway 515 East and Highway 154; confirm current access and the meeting pin."
+          },
+          {
+            "q": "Do normal Texas bass rules apply at Lake Fork?",
+            "a": "Lake Fork has special waterbody rules. Check the official lake page and current Outdoor Annual instead of relying only on statewide defaults."
+          }
+        ],
+        "relatedTrips": [
+          "na-us-fl-002",
+          "na-us-ga-001"
+        ],
+        "relatedGuides": [
+          "what-to-bring-on-a-guided-fishing-trip",
+          "fishing-gear-you-already-own"
+        ],
+        "reel": {
+          "slug": "bass-strike",
+          "note": "The matching bass film illustrates a lure strike. The guide keeps one relevant reel; the other comedies remain in the film library. This is an animation, not location footage or evidence of a catch."
+        },
+        "regionPath": "/north-america/united-states/texas/",
+        "regionLabel": "Explore Texas trips",
+        "plannerNote": "Start with this destination. Add your dates, choose the method, and mark equipment as provided only after the operator confirms it.",
+        "nextStep": "Confirm the launch and the method with the guide. Then remove any duplicate tackle from your packing list.",
+        "revision": "Rebuilt the trip comparison, access plan, packing choices, rule links and FAQ from the listed official sources.",
+        "catalog": {},
+        "seasonWindows": [
+          {
+            "months": [
+              2,
+              3,
+              4
+            ],
+            "label": "TPWD spring shoreline pattern from mid-February to April; not a legal season",
+            "source": "g26-fork"
+          }
+        ]
+      },
+      "articleWordCount": 581
     },
     {
       "id": "na-us-tx-003",
