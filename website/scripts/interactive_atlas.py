@@ -15,10 +15,15 @@ def install(pages, root, origin, add, data, trips, styles):
     for d in data['destinations']:
         t = by_id.get(d['id'], {})
         slug = d['id']
-        if slug in TRIP_IMAGES:
-            image = '/media/trips/'+slug+'-640.webp'
-        elif available(TRIP_PREVIEWS.get(slug)):
-            image = '/'+image_url(TRIP_PREVIEWS[slug])
+        # The three original regional guides retain their own atlas data.
+        # These examples supply only their environment images.
+        example = {'yakutat':'yakutat-halibut', 'florida-keys':'keys-flats', 'bozeman':'na-us-mt-001'}.get(slug, slug)
+        image_trip = by_id.get(example, t)
+        image_slug = image_trip.get('id', slug)
+        if image_slug in TRIP_IMAGES:
+            image = '/media/trips/'+image_slug+'-640.webp'
+        elif available(TRIP_PREVIEWS.get(image_slug)):
+            image = '/'+image_url(TRIP_PREVIEWS[image_slug])
         else:
             scene = ALIASES.get(water_photo(t),water_photo(t)) if t else 'hero'
             options = [p for p in MANIFEST if p['slot']==scene and p['kind']=='web' and p['file'].endswith('.webp')]
@@ -31,7 +36,7 @@ def install(pages, root, origin, add, data, trips, styles):
                         'waters':[t['water']] if t else {'yakutat':['Freshwater','Saltwater'],'florida-keys':['Saltwater'],'bozeman':['Freshwater']}[slug],
                         'ice':'Ice fishing' in t.get('habitats',[]),'months':sorted({m for w in d.get('seasonWindows',[]) for m in w['months']}),
                         'coordinates':d['coordinates'],'locationLabel':location['label'] if location else 'Location not established',
-                        'precision':d['locationPrecision'],'image':image,'imageHtml':trip_photo(t, '320px', eager=True),'imagePlaceholder':placeholder(image),'tier':t.get('contentTier','detailed-guide')})
+                        'precision':d['locationPrecision'],'image':image,'imageHtml':trip_photo(image_trip, '320px', eager=True),'imagePlaceholder':placeholder(image),'tier':t.get('contentTier','detailed-guide')})
     payload = json.dumps({'trips':records,'styles':[{'slug':s['slug'],'name':s['name']} for s in styles]},ensure_ascii=False,separators=(',',':'))
     version = hashlib.sha256(payload.encode()).hexdigest()[:12]
     (root/'dist/assets'/('atlas-data-'+version+'.json')).write_text(payload)
