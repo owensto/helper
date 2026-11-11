@@ -4,7 +4,7 @@ import re
 from copy import deepcopy
 from html import escape as E
 from urllib.parse import urlencode, urlsplit
-from photography import photo, trip_photo
+from photography import photo, trip_photo, preview_photo
 
 
 def compile_into(world, trips, root):
@@ -112,12 +112,12 @@ def install(pages, root, origin, add, trips, types):
         return '<div class="wrap breadcrumb"><a href="/">Home</a><span> / </span><a href="/trip-types/">Trip types</a><span> / </span>' + E(label) + '</div>'
 
     def card(kind, number):
-        return f'''<article class="type-card" data-type-card data-search="{E(' '.join([kind['name'], *kind['aliases'], kind['region'], *[g['term'] for g in kind['glossary']]]), quote=True)}"><a class="type-card-image" href="{type_path(kind)}" tabindex="-1">{photo(kind['image'], '(max-width: 700px) 100vw, 33vw')}</a><div class="type-card-meta"><span>{number:02d} / LOCAL KNOWLEDGE</span><span>{E(kind['country'])}</span></div><h2><a href="{type_path(kind)}">{E(kind['name'])}</a></h2><p>{E(kind['region'])}</p><p class="type-card-fish">{E(' · '.join(s['local_name'] for s in kind['species'] if s.get('role') != 'Bait, not the target'))}</p><a class="link" href="{type_path(kind)}">Read the trip ↗</a></article>'''
+        return f'''<article class="type-card" data-type-card data-search="{E(' '.join([kind['name'], *kind['aliases'], kind['region'], *[g['term'] for g in kind['glossary']]]), quote=True)}"><a class="type-card-image" href="{type_path(kind)}" tabindex="-1">{preview_photo(type_path(kind), '(max-width: 700px) 100vw, (max-width: 1000px) 50vw, 33vw', eager=number <= 3, fallback=kind['image'])}</a><div class="type-card-meta"><span>{number:02d} / LOCAL KNOWLEDGE</span><span>{E(kind['country'])}</span></div><h2><a href="{type_path(kind)}">{E(kind['name'])}</a></h2><p>{E(kind['region'])}</p><p class="type-card-fish">{E(' · '.join(s['local_name'] for s in kind['species'] if s.get('role') != 'Bait, not the target'))}</p><a class="link" href="{type_path(kind)}">Read the trip ↗</a></article>'''
 
     intro = '<section class="type-index-hero"><div class="type-index-image">' + photo('inshore', eager=True) + '</div><div class="wrap type-index-copy"><span class="eyebrow">THE WORDS OF THE WATER</span><h1>Local names.<br>Real trips.</h1><p>Know what a local name means before you plan the day.</p><a class="quiet-button" href="#type-library">Find your trip type <span aria-hidden="true">↓</span></a></div></section>'
     body = intro + '<section class="section wrap" id="type-library"><div class="type-index-heading"><div><span class="eyebrow">40 PRIORITY GUIDES + THE DRUM RUN</span><h2>Ask for it by name.</h2></div><p>Species, seasons, and methods change with the place. Each guide names its waters, explains the evidence, and connects to a preparation plan.</p></div><div class="type-index-tools"><label for="type-search">Find a local name, fish, or place<input type="search" id="type-search" placeholder="Try Texas Slam, specks, or greenbacks"></label><a href="/glossary/">Explore the local glossary ↗</a></div><p id="type-count" role="status" aria-live="polite">41 trip types</p><div class="type-grid">'
     body += ''.join(card(kind, n) for n, kind in enumerate(types, 1))
-    body += '</div><p id="type-empty" hidden>No matching local name. Try a place or another term.</p><p class="photo-note">Scene illustrations show representative water environments, not the named destinations.</p></section><script src="/assets/trip-types.js" defer></script>'
+    body += '</div><p id="type-empty" hidden>No matching local name. Try a place or another term.</p><p class="photo-note">AI illustrations show the landscape character of each named destination. They are not verified photographs.</p></section><script src="/assets/trip-types.js" defer></script>'
     add('/trip-types/', 'Local fishing trip types and regional names | Castward', 'Explore local fishing trip names, species, sourced season windows, destination guides, and practical planner presets.', body, 'trip-types')
     pages['/trip-types/']['modified'] = '2026-11-10'
 
@@ -128,7 +128,7 @@ def install(pages, root, origin, add, trips, types):
         matched_reels = [v for v in videos if urlsplit(v['page_url']).path in destination_paths]
         body = breadcrumbs(kind['name'])
         body += '<header class="wrap type-heading"><span class="eyebrow">LOCAL TRIP TYPE / ' + E(kind['country']) + '</span><h1>' + E(kind['name']) + '</h1><p class="type-deck">' + E(kind['region']) + '</p><p class="type-aliases"><b>Also called:</b> ' + E(' · '.join(a for a in kind['aliases'] if a != kind['name'])) + '</p><div class="type-actions">' + link(planner_url(kind), 'Open the planner preset') + link('/trips/?' + urlencode({'type': kind['slug']}), 'Filter matching trips') + '</div></header>'
-        body += '<figure class="type-landscape">' + photo(kind['image'], eager=True) + '<figcaption>Representative scene illustration. <a href="/about/#photo-credits">Image notes</a></figcaption></figure>'
+        body += '<figure class="type-landscape">' + preview_photo(type_path(kind), eager=True, fallback=kind['image']) + '<figcaption>AI illustration of this destination’s environment. <a href="/about/#photo-credits">Image notes</a></figcaption></figure>'
         body += '<div class="wrap type-body"><aside class="type-toc" aria-label="On this page"><span class="eyebrow">PLAN THE TRIP</span>'
         for anchor, label in [('meaning','What it is'),('species','Species'),('where','Where to go'),('season','Season & sources'),('method','How it is fished'),('kit','What to bring'),('guide','What a guide provides'),('local-terms','Local terms'),('faq','Questions'),('book-a-guide','Book a guide')]:
             body += link('#' + anchor, label)

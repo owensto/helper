@@ -38,7 +38,9 @@ export async function mount(root) {
   const closePreview=()=>{preview.hidden=true;selected=null;};
   function card(trip){
     selected=trip.id;preview.hidden=false;
-    preview.innerHTML=`<button type="button" class="atlas-close" aria-label="Close destination card">×</button>${trip.imageHtml}<div class="atlas-preview-copy"><span class="eyebrow">${esc(trip.region)}</span><h3>${esc(trip.name)}</h3><p>${esc(trip.species.length?trip.species.slice(0,4).join(' · '):'Species not yet verified')}</p><small>${esc(tierLabel(trip))} · ${trip.precision==='country'?'Country reference only':('Approximate '+(trip.precision==='region'?'region':'place'))}: ${esc(trip.locationLabel)}</small><a class="link" href="${esc(trip.path)}">Open trip ↗</a></div>`;
+    preview.innerHTML=`<button type="button" class="atlas-close" aria-label="Close destination card">×</button><span class="preview-media">${trip.imageHtml.replace('<picture ', '<picture data-preview-media ')}</span><div class="atlas-preview-copy"><span class="eyebrow">${esc(trip.region)}</span><h3>${esc(trip.name)}</h3><p>${esc(trip.species.length?trip.species.slice(0,4).join(' · '):'Species not yet verified')}</p><small>${esc(tierLabel(trip))} · ${trip.precision==='country'?'Country reference only':('Approximate '+(trip.precision==='region'?'region':'place'))}: ${esc(trip.locationLabel)}</small><a class="link" href="${esc(trip.path)}">Open trip ↗</a></div>`;
+    preview.dataset.previewCard='';
+    document.dispatchEvent(new CustomEvent('castward:preview-add',{detail:preview}));
     preview.querySelector('button').onclick=closePreview;
   }
   function clusterCard(group){

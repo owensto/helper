@@ -2,7 +2,7 @@
 import json
 import re
 from html import escape as E
-from photography import photo
+from photography import photo, preview_photo
 
 
 def style_ids(trip, styles):
@@ -70,10 +70,11 @@ def install(pages, root, origin, add, trips, destinations):
                         'species':d.get('species',[]), 'tier':t.get('contentTier','detailed-guide')})
     crumb = '<div class="wrap breadcrumb"><a href="/">Home</a><span> / </span><a href="/trip-types/">Trip styles</a>'
     cards = ''
-    for s in styles:
+    for index, s in enumerate(styles):
         matches = [r for r in records if s['slug'] in r['styles']]
-        cards += '<article class="type-card"><a class="type-card-image" tabindex="-1" href="'+path(s)+'">'+photo(s['image'],'(max-width: 700px) 100vw, 33vw')+'</a><div class="type-card-meta"><span>'+str(len(matches))+' MATCHING DESTINATIONS</span></div><h2><a href="'+path(s)+'">'+E(s['name'])+'</a></h2><p>'+E(s['definition'])+'</p></article>'
+        cards += '<article class="type-card"><a class="type-card-image" tabindex="-1" href="'+path(s)+'">'+preview_photo(path(s),'(max-width: 700px) 100vw, (max-width: 1000px) 50vw, 33vw', eager=index < 3, fallback=s['image'])+'</a><div class="type-card-meta"><span>'+str(len(matches))+' MATCHING DESTINATIONS</span></div><h2><a href="'+path(s)+'">'+E(s['name'])+'</a></h2><p>'+E(s['definition'])+'</p></article>'
         body = crumb+'<span> / </span>'+E(s['name'])+'</div><header class="wrap type-heading"><span class="eyebrow">TRIP STYLE</span><h1>'+E(s['name'])+'</h1><p class="type-deck">'+E(s['definition'])+'</p><a class="link" href="/atlas/?style='+s['slug']+'">Find this style on the atlas ↗</a></header>'
+        body += '<figure class="type-landscape">'+preview_photo(path(s), eager=True, fallback=s['image'])+'<figcaption>AI illustration of a representative trip environment. <a href="/about/#photo-credits">Image notes</a></figcaption></figure>'
         body += '<section class="wrap style-notes">'+''.join('<div><h2>'+title+'</h2><p>'+E(s[key])+'</p></div>' for title,key in [('Who it suits','suits'),('Boats & gear','gear'),('Seasons','season')])+'</section>'
         local = [c for c in classics if c['slug'] in s['classicIds']]
         if local:
@@ -87,7 +88,7 @@ def install(pages, root, origin, add, trips, destinations):
         pages[path(s)]['modified']='2026-11-10'
         collection={'@context':'https://schema.org','@type':'CollectionPage','name':s['name'],'url':origin+path(s),'mainEntity':{'@type':'ItemList','numberOfItems':len(matches),'itemListElement':[{'@type':'ListItem','position':i,'url':origin+r['path'],'name':r['name']} for i,r in enumerate(matches,1)]}}
         pages[path(s)]['body'] += '<script type="application/ld+json">'+json.dumps(collection).replace('</','<\\/')+'</script>'
-    body = crumb+'</div><header class="wrap type-heading"><span class="eyebrow">CHOOSE HOW YOU FISH</span><h1>Find your kind<br>of day.</h1><p class="type-deck">A style describes the day. A destination gives it a place.</p><p>Explore the methods, boats and waters that suit you. Then choose from every matching catalog trip.</p><a class="link" href="/local-classics/">Looking for a local name? Explore 41 local classics ↗</a></header><section class="wrap section"><div class="type-grid">'+cards+'</div></section>'
+    body = crumb+'</div><header class="wrap type-heading"><span class="eyebrow">CHOOSE HOW YOU FISH</span><h1>Find your kind<br>of day.</h1><p class="type-deck">A style describes the day. A destination gives it a place.</p><p>Explore the methods, boats and waters that suit you. Then choose from every matching catalog trip.</p><a class="link" href="/local-classics/">Looking for a local name? Explore 41 local classics ↗</a></header><section class="wrap section"><div class="type-grid">'+cards+'</div><p class="photo-note">AI illustrations show representative environments for each trip style.</p></section>'
     add('/trip-types/','Fishing trip styles: find your kind of day | Castward','Explore 16 fishing trip styles, with boats, gear, seasons, local classics and all matching destinations.',body,'trip-styles')
     pages['/trip-types/']['modified']='2026-11-10'
     # One semantic contract for all forward and reverse discovery links.

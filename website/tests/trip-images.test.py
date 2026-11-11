@@ -1,5 +1,8 @@
 """Run after a production build: python3 tests/trip-images.test.py."""
 import json
+import sys
+sys.path.insert(0, str(__import__("pathlib").Path(__file__).resolve().parents[1] / "scripts"))
+from preview_images import TRIP_PREVIEWS, available, image_url
 from html import escape
 from html.parser import HTMLParser
 from pathlib import Path
@@ -12,6 +15,9 @@ for trip in trips:
     slug = trip['id']
     path = trip.get('canonicalPath', '/trips/' + slug + '/')
     page = (ROOT / 'dist' / path.strip('/') / 'index.html').read_text()
+    if slug not in images and available(TRIP_PREVIEWS.get(slug)):
+        assert '/' + image_url(TRIP_PREVIEWS[slug], 640, 'avif') in page, slug
+        continue
     if slug not in images:
         assert '<figure class="guide-landscape"><picture class="scene-picture"><source type="image/avif" srcset="/media/scenes/' in page, slug
         continue
