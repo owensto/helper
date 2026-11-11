@@ -1,0 +1,46 @@
+[
+  {
+    "name": "node-tests",
+    "exitCode": 0
+  },
+  {
+    "name": "static-tests",
+    "exitCode": 0
+  },
+  {
+    "name": "vercel-tests",
+    "exitCode": 0
+  },
+  {
+    "name": "species-tests",
+    "exitCode": 0
+  },
+  {
+    "name": "guide-tests",
+    "exitCode": 0
+  },
+  {
+    "name": "atlas-tests",
+    "exitCode": 0
+  },
+  {
+    "name": "video-tests",
+    "exitCode": 0
+  },
+  {
+    "name": "image-tests",
+    "exitCode": 0
+  },
+  {
+    "name": "index-tests",
+    "exitCode": 0
+  },
+  {
+    "name": "publish-tests",
+    "exitCode": 0
+  },
+  {
+    "name": "syntax",
+    "exitCode": 0
+  }
+]

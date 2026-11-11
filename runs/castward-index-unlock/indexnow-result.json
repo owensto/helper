@@ -1,0 +1,16 @@
+{
+  "endpoint": "https://api.indexnow.org/indexnow",
+  "submittedAt": "2026-11-11T02:12:19.482367+00:00",
+  "urlCount": 233,
+  "httpStatus": 200,
+  "body": "",
+  "headers": {
+    "X-Cache": "CONFIG_NOCACHE",
+    "Accept-CH": "Sec-CH-UA-Arch, Sec-CH-UA-Bitness, Sec-CH-UA-Full-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform, Sec-CH-UA-Platform-Version",
+    "X-MSEdge-Ref": "Ref A: F03CBCDD13354A7895444205696D1DF2 Ref B: DFW311000103019 Ref C: 2026-11-11T02:12:19Z",
+    "Date": "Wed, 11 Nov 2026 02:12:19 GMT",
+    "Connection": "close",
+    "Content-Length": "0"
+  },
+  "accepted": true
+}

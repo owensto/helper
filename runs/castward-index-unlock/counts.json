@@ -1,0 +1,62 @@
+{
+  "before": {
+    "commit": "cad42bd99ebbb39cd05142067b27419da28d1fab",
+    "tripPages": 798,
+    "indexableTrips": 38,
+    "routes": 2452,
+    "sitemapURLs": 936
+  },
+  "after": {
+    "routes": 2452,
+    "tripPages": 798,
+    "indexableTrips": 196,
+    "noindexTrips": 602,
+    "sitemapURLs": 1132,
+    "sitemapFiles": {
+      "sitemap-2.xml": 132,
+      "sitemap-1.xml": 1000
+    }
+  },
+  "newlyIndexableURLs": 233,
+  "newlyIndexableTrips": 183,
+  "newlyNoindexTrips": 25,
+  "removedURLs": [
+    "https://castward.app/continents/africa/",
+    "https://castward.app/continents/asia/",
+    "https://castward.app/continents/asia/regions/east-asia/",
+    "https://castward.app/continents/oceania/regions/australia/",
+    "https://castward.app/continents/oceania/regions/new-zealand/",
+    "https://castward.app/countries/australia/",
+    "https://castward.app/countries/belize/",
+    "https://castward.app/countries/costa-rica/",
+    "https://castward.app/countries/new-zealand/",
+    "https://castward.app/countries/norway/",
+    "https://castward.app/north-america/united-states/alaska/yakutat-bay-saltwater-bottom-fishing/",
+    "https://castward.app/north-america/united-states/florida/lake-okeechobee-lake-and-reservoir-bass/",
+    "https://castward.app/north-america/united-states/north-carolina/",
+    "https://castward.app/north-america/united-states/north-carolina/cape-hatteras-beaches-surf-and-beach-fishing/",
+    "https://castward.app/north-america/united-states/north-carolina/outer-banks-oregon-inlet-offshore-offshore-pelagic-fishing/",
+    "https://castward.app/north-america/united-states/south-carolina/",
+    "https://castward.app/north-america/united-states/south-carolina/beaufort-port-royal-sound-inshore-estuary-fishing/",
+    "https://castward.app/north-america/united-states/south-carolina/charleston-marshes-inshore-estuary-fishing/",
+    "https://castward.app/trips/andros-bonefish/",
+    "https://castward.app/trips/belize-permit/",
+    "https://castward.app/trips/belize-reef/",
+    "https://castward.app/trips/cairns-heavy-tackle-marlin/",
+    "https://castward.app/trips/cosmoledo-gt/",
+    "https://castward.app/trips/costa-caribbean-canals/",
+    "https://castward.app/trips/finland-ice-fishing/",
+    "https://castward.app/trips/gangwon-streams/",
+    "https://castward.app/trips/hokkaido-char/",
+    "https://castward.app/trips/keys-flats/",
+    "https://castward.app/trips/keys-offshore/",
+    "https://castward.app/trips/lower-zambezi-tiger/",
+    "https://castward.app/trips/mataura-trout/",
+    "https://castward.app/trips/mongolia-taimen/",
+    "https://castward.app/trips/norway-skrei/",
+    "https://castward.app/trips/norway-summer-sea/",
+    "https://castward.app/trips/quepos-offshore/",
+    "https://castward.app/trips/rio-negro-peacock/",
+    "https://castward.app/trips/top-end-barramundi/"
+  ]
+}
