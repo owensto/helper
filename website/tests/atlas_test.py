@@ -1,6 +1,9 @@
 """Contract checks across the authored taxonomy, compiler, rendered pages and map export."""
 import json
 from pathlib import Path
+import sys
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
+from index_policy import sitemap_entries
 from html.parser import HTMLParser
 ROOT=Path(__file__).resolve().parents[1]
 D=json.loads((ROOT/'src/compiled-data.json').read_text())
@@ -59,6 +62,6 @@ assert 'ice-fishing' not in by_id['quepos-offshore']['styles']
 assert 'inshore-flats' in by_id['na-us-fl-001']['styles']
 assert 'big-game' in by_id['cairns-heavy-tackle-marlin']['styles']
 assert not by_id['na-us-ak-002']['months']  # Unknown seasons must stay unknown.
-sitemap=(ROOT/'dist/sitemap.xml').read_text()
-for route in ['/atlas/','/local-classics/']+['/trip-types/'+s['slug']+'/' for s in S]:assert 'https://castward.app'+route+'</loc>' in sitemap,route
+sitemap=sitemap_entries(ROOT/'dist')
+for route in ['/atlas/','/local-classics/']+['/trip-types/'+s['slug']+'/' for s in S]:assert 'https://castward.app'+route in sitemap,route
 print('Atlas contract passes: 801 records, 16 shared styles, 41 preserved classics, images, sources, seasons and discovery links.')

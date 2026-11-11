@@ -5,6 +5,9 @@ import xml.etree.ElementTree as ET
 from html import unescape
 from html.parser import HTMLParser
 from pathlib import Path
+import sys
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
+from index_policy import sitemap_entries
 from urllib.parse import parse_qs, urlsplit
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -44,17 +47,19 @@ assert len(C['articles']) == 11 and sum(g['new'] for g in C['articles']) == 5
 routes = {T[k]['canonicalPath']: g for k, g in C['trips'].items()}
 routes.update({'/guides/' + g['slug'] + '/': g for g in C['articles']})
 hub = (ROOT / 'dist/guides/index.html').read_text()
-sitemap = {u.find('{*}loc').text: u.find('{*}lastmod').text for u in ET.parse(ROOT / 'dist/sitemap.xml').getroot()}
+sitemap = sitemap_entries(ROOT / 'dist')
 report = []
 for route, guide in routes.items():
     raw = (ROOT / 'dist' / route.strip('/') / 'index.html').read_text()
     page = Page(raw)
     assert page.h1 == 1 and page.videos == 1, route
     assert page.canonical == 'https://castward.app' + route, route
-    assert page.meta['robots'] == 'index,follow', route
+    eligible = not M[route]['noindex']
+    assert page.meta['robots'] == ('index,follow' if eligible else 'noindex,follow'), route
     assert page.meta['description'] == guide['description'], route
     assert text(re.search(r'<title>(.*?)</title>', raw).group(1)) == guide['title'] + ' | Castward', route
-    assert sitemap[page.canonical] == '2026-11-10', route
+    assert (page.canonical in sitemap) == eligible, route
+    if eligible: assert sitemap[page.canonical] == '2026-11-10', route
     assert route in hub, 'Orphan guide: ' + route
     assert 'Book a guide here' in raw and 'booking is not available' in raw, route
     assert 'Plan this trip' in raw and 'guideStyle' not in raw, route
@@ -88,7 +93,7 @@ for trip in W['trips']:
     if trip.get('review', {}).get('status') == 'source-checked': assert trip['canonicalPath'] in hub
     if not trip['indexEligible']: assert 'https://castward.app' + trip['canonicalPath'] not in sitemap
 for key in ['tanana-glacial-system', 'rocky-mountain-alpine']:
-    assert M[T[key]['canonicalPath']]['noindex']
+    assert M[T[key]['canonicalPath']]['noindex'] == (not T[key]['indexEligible'])
 out = ROOT / 'test-results/guides.json'
 out.parent.mkdir(exist_ok=True)
 out.write_text(json.dumps({'passed': True, 'pages': report, 'checkedDestinationsOnHub': 40}, indent=2) + '\n')

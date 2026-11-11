@@ -8,7 +8,7 @@ const W=require('../src/world.json');
 const T=require('../src/trip-types.json').types;
 const M=require('../dist/route-manifest.json');
 const read=route=>fs.readFileSync(path.join(__dirname,'../dist',route,'index.html'),'utf8');
-const sitemap=fs.readFileSync(path.join(__dirname,'../dist/sitemap.xml'),'utf8');
+const sitemap=fs.readdirSync(path.join(__dirname,'../dist')).filter(f=>/^sitemap(?:-\d+)?\.xml$/.test(f)).map(f=>fs.readFileSync(path.join(__dirname,'../dist',f),'utf8')).join('');
 
 test('all 40 research priorities publish, with one scoped glossary addition',()=>{
   assert.equal(T.filter(t=>t.priority!==null).length,40);
@@ -66,10 +66,10 @@ test('changing destination or using an invalid type clears incompatible type dat
   assert.equal(base.filter(g=>g.scope==='tripType').length,0);
 });
 
-test('research-pending stays noindex and only the two named gaps add destination profiles',()=>{
+test('failed content gates stay noindex and only the two named gaps add destination profiles',()=>{
   const additions=W.trips.filter(t=>t.catalogOrigin==='local-lingo-research-gap');
   assert.deepEqual(additions.map(t=>t.id).sort(),['cairns-heavy-tackle-marlin','kabinakagami-lake-fly-in']);
-  for(const t of W.trips.filter(t=>t.review.status==='research-pending')){
+  for(const t of W.trips.filter(t=>!t.indexEligible)){
     assert.equal(M[t.canonicalPath].noindex,true,t.id);
     assert.ok(!sitemap.includes('https://castward.app'+t.canonicalPath+'</loc>'),t.id);
   }

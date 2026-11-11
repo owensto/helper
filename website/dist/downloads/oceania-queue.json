@@ -13,7 +13,7 @@
       "location": "Northern Territory Top End",
       "url": "/trips/top-end-barramundi/",
       "currentTier": "detailed-guide",
-      "indexEligible": true,
+      "indexEligible": false,
       "sourceIds": [
         "topend",
         "species-0e74327fd6d8"
@@ -89,7 +89,7 @@
       "location": "Mataura River, Southland",
       "url": "/trips/mataura-trout/",
       "currentTier": "detailed-guide",
-      "indexEligible": true,
+      "indexEligible": false,
       "sourceIds": [
         "nz-rivers",
         "species-2e3369ef97c4",
@@ -552,7 +552,7 @@
       "location": "Apia",
       "url": "/trips/g-samoa-apia/",
       "currentTier": "trip-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "global-samoa",
         "species-f24cff9da114"
@@ -661,7 +661,7 @@
       "location": "Majuro",
       "url": "/trips/g-marshall-islands-majuro/",
       "currentTier": "trip-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "global-marshall",
         "species-4098c075e2e2"
@@ -1283,7 +1283,7 @@
       "location": "Cairns / outer Great Barrier Reef",
       "url": "/trips/cairns-heavy-tackle-marlin/",
       "currentTier": "detailed-guide",
-      "indexEligible": true,
+      "indexEligible": false,
       "sourceIds": [
         "S13a8d30a07",
         "S4e46eb9dc8",

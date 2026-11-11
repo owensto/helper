@@ -13,7 +13,7 @@
       "location": "Lower Zambezi",
       "url": "/trips/lower-zambezi-tiger/",
       "currentTier": "detailed-guide",
-      "indexEligible": true,
+      "indexEligible": false,
       "sourceIds": [
         "zambezi",
         "species-397b256aee10"
@@ -50,7 +50,7 @@
       "location": "Cosmoledo Atoll",
       "url": "/trips/cosmoledo-gt/",
       "currentTier": "detailed-guide",
-      "indexEligible": true,
+      "indexEligible": false,
       "sourceIds": [
         "cosmoledo",
         "gt",
@@ -89,7 +89,7 @@
       "location": "Kwanza River mouth",
       "url": "/trips/g-angola-kwanza-river-mouth/",
       "currentTier": "trip-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "global-angola",
         "species-06c778c52877"

@@ -4,6 +4,9 @@ from pathlib import Path
 from html.parser import HTMLParser
 from urllib.parse import urlsplit
 ROOT=Path(__file__).resolve().parents[1]
+import sys
+sys.path.insert(0, str(ROOT / "scripts"))
+from index_policy import sitemap_entries
 class Media(HTMLParser):
     def __init__(self,text):
         super().__init__();self.videos=[];self.sources=[];self.feed(text)
@@ -36,5 +39,5 @@ class VideoTests(unittest.TestCase):
                 self.assertNotIn('src',source)
                 self.assertTrue((ROOT/'dist'/source['data-src'].lstrip('/')).is_file())
         sitemap=ROOT/'dist/sitemap.xml'
-        if sitemap.exists():self.assertIn('/videos/</loc>',sitemap.read_text())
+        if sitemap.exists():self.assertTrue(any(url.endswith('/videos/') for url in sitemap_entries(ROOT/'dist')))
 if __name__=='__main__':unittest.main()

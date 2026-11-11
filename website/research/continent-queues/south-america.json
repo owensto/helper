@@ -13,7 +13,7 @@
       "location": "Rio Negro programs, Brazilian Amazon",
       "url": "/trips/rio-negro-peacock/",
       "currentTier": "detailed-guide",
-      "indexEligible": true,
+      "indexEligible": false,
       "sourceIds": [
         "amazon",
         "amazon-planner",
@@ -389,7 +389,7 @@
       "location": "Futaleufú River",
       "url": "/trips/g-chile-futaleufu-river/",
       "currentTier": "trip-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "global-chile",
         "species-52309ea23cd9"

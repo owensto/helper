@@ -59,7 +59,7 @@
   "freshlyReviewedSourceRecords": 15,
   "freshlyReviewedGuides": 10,
   "redirects": 519,
-  "searchEligibleTrips": 38,
+  "searchEligibleTrips": 196,
   "deployment": "Not deployed; new Netlify site confirmation pending",
   "integrations": {
     "amazonTagConfigured": false,

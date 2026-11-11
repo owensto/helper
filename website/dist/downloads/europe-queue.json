@@ -13,7 +13,7 @@
       "location": "Northern Norway coast",
       "url": "/trips/norway-skrei/",
       "currentTier": "detailed-guide",
-      "indexEligible": true,
+      "indexEligible": false,
       "sourceIds": [
         "norway",
         "species-85cb0645fc73"
@@ -50,7 +50,7 @@
       "location": "Norwegian coastal fishing camps",
       "url": "/trips/norway-summer-sea/",
       "currentTier": "detailed-guide",
-      "indexEligible": true,
+      "indexEligible": false,
       "sourceIds": [
         "norway",
         "species-85cb0645fc73"
@@ -89,7 +89,7 @@
       "location": "Lake Iso-Virmas experience, Finland",
       "url": "/trips/finland-ice-fishing/",
       "currentTier": "detailed-guide",
-      "indexEligible": true,
+      "indexEligible": false,
       "sourceIds": [
         "finland"
       ],
@@ -162,7 +162,7 @@
       "location": "West Rangá",
       "url": "/trips/g-iceland-west-ranga/",
       "currentTier": "trip-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "global-is-sportquest",
         "species-d3753bb69b4a"
@@ -200,7 +200,7 @@
       "location": "Vatnsdalsá",
       "url": "/trips/g-iceland-vatnsdalsa/",
       "currentTier": "trip-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "global-is-sportquest",
         "species-d3753bb69b4a"
@@ -238,7 +238,7 @@
       "location": "Mýrarkvísl",
       "url": "/trips/g-iceland-myrarkvisl/",
       "currentTier": "trip-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "global-is-sportquest",
         "species-d3753bb69b4a"
@@ -276,7 +276,7 @@
       "location": "Reykjadalsá",
       "url": "/trips/g-iceland-reykjadalsa/",
       "currentTier": "trip-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "global-is-sportquest",
         "species-d3753bb69b4a"
@@ -314,7 +314,7 @@
       "location": "Lónsá / Langanes",
       "url": "/trips/g-iceland-lonsa-langanes/",
       "currentTier": "trip-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "global-is-sportquest",
         "species-d3753bb69b4a"
@@ -535,7 +535,7 @@
       "location": "High Coast",
       "url": "/trips/g-sweden-high-coast/",
       "currentTier": "trip-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "global-se-visit",
         "species-a8f08dfd3e3a"
@@ -573,7 +573,7 @@
       "location": "Lake Vättern",
       "url": "/trips/g-sweden-lake-vattern/",
       "currentTier": "trip-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "global-se-vattern",
         "species-b7a95bfa73d0"
@@ -651,7 +651,7 @@
       "location": "Lake Inari",
       "url": "/trips/g-finland-lake-inari/",
       "currentTier": "trip-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "global-fi-lakes",
         "species-56427aa9096d"
@@ -2450,7 +2450,7 @@
       "location": "Ribnik",
       "url": "/trips/g-bosnia-and-herzegovina-ribnik/",
       "currentTier": "trip-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "global-ba-rivers",
         "species-0cd5273fcb92"
@@ -2522,7 +2522,7 @@
       "location": "Gacka",
       "url": "/trips/g-croatia-gacka/",
       "currentTier": "trip-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "global-hr-river",
         "species-6cd824d128fb"
@@ -2636,7 +2636,7 @@
       "location": "Tara River",
       "url": "/trips/g-montenegro-tara-river/",
       "currentTier": "trip-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "global-me-local",
         "species-d64ca2ac848d"
@@ -3419,7 +3419,7 @@
       "location": "Lake Lungern",
       "url": "/trips/g-switzerland-lake-lungern/",
       "currentTier": "trip-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "global-ch-lungern",
         "species-eabb0e383201"
@@ -3568,7 +3568,7 @@
       "location": "River Ebro / Caspe",
       "url": "/trips/g-spain-river-ebro-caspe/",
       "currentTier": "trip-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "global-es-ebro",
         "species-a9dffdf96d52"
@@ -3681,7 +3681,7 @@
       "location": "Krka",
       "url": "/trips/g-slovenia-krka/",
       "currentTier": "trip-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "global-si-local",
         "species-958bfd9fa844"

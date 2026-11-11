@@ -63,7 +63,7 @@
       "location": "Homer / Kachemak Bay",
       "url": "/north-america/united-states/alaska/homer-kachemak-bay-saltwater-bottom-fishing/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-062707996bb3",
         "species-ee715ca4e47a",
@@ -113,7 +113,7 @@
       "location": "Kenai River",
       "url": "/north-america/united-states/alaska/kenai-river-river-salmon/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-3d62c9ef3a96",
         "species-be2e7f49c8be",
@@ -162,7 +162,7 @@
       "location": "Kenai River",
       "url": "/north-america/united-states/alaska/kenai-river-river-trout-and-grayling/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-3d62c9ef3a96",
         "species-be2e7f49c8be",
@@ -211,7 +211,7 @@
       "location": "Russian River",
       "url": "/north-america/united-states/alaska/russian-river-river-salmon/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-2ddba22fa2c2"
       ],
@@ -254,7 +254,7 @@
       "location": "Yakutat Bay and adjacent Gulf waters",
       "url": "/north-america/united-states/alaska/yakutat-bay-saltwater-bottom-fishing/",
       "currentTier": "detailed-guide",
-      "indexEligible": true,
+      "indexEligible": false,
       "sourceIds": [
         "halibut",
         "species-57ff527f5531"
@@ -340,7 +340,7 @@
       "location": "Tanana drainage, Interior Alaska",
       "url": "/north-america/united-states/alaska/tanana-drainage-remote-lodge-and-expedition/",
       "currentTier": "detailed-guide",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "tanana",
         "tanana-report",
@@ -389,7 +389,7 @@
       "location": "Naknek River",
       "url": "/north-america/united-states/alaska/naknek-river-river-trout-and-grayling/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-b4e3622fcd0a",
         "species-b67ab176f23c",
@@ -436,7 +436,7 @@
       "location": "Kvichak River",
       "url": "/north-america/united-states/alaska/kvichak-river-remote-lodge-and-expedition/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-09e84b35a157",
         "species-78aaa72c3eb3"
@@ -483,7 +483,7 @@
       "location": "Nushagak River",
       "url": "/north-america/united-states/alaska/nushagak-river-remote-lodge-and-expedition/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-f65f1ec0b3c1",
         "species-b0767029c1b9"
@@ -526,7 +526,7 @@
       "location": "Togiak River",
       "url": "/north-america/united-states/alaska/togiak-river-remote-lodge-and-expedition/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-442fd3df50ae",
         "species-a914907e690f",
@@ -572,7 +572,7 @@
       "location": "Goodnews River",
       "url": "/north-america/united-states/alaska/goodnews-river-remote-lodge-and-expedition/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-7781ac595708",
         "species-85b700638cc4"
@@ -615,7 +615,7 @@
       "location": "Karluk River / Kodiak",
       "url": "/north-america/united-states/alaska/karluk-river-kodiak-steelhead-and-anadromous-trout/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-ee76eb59ec3c",
         "species-142cd98f8fa0"
@@ -658,7 +658,7 @@
       "location": "Kodiak coastal waters",
       "url": "/north-america/united-states/alaska/kodiak-coastal-waters-saltwater-bottom-fishing/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-676b52929a1a",
         "species-c64b088ce672"
@@ -703,7 +703,7 @@
       "location": "Seward / Resurrection Bay",
       "url": "/north-america/united-states/alaska/seward-resurrection-bay-coastal-salmon/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-4b3f9d9248e4",
         "species-92f841dcc9b1",
@@ -753,7 +753,7 @@
       "location": "Prince William Sound / Valdez",
       "url": "/north-america/united-states/alaska/prince-william-sound-valdez-coastal-salmon/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-b02edaa821bd",
         "species-4ef793d10c74",
@@ -803,7 +803,7 @@
       "location": "Talkeetna / Clear Creek",
       "url": "/north-america/united-states/alaska/talkeetna-clear-creek-remote-lodge-and-expedition/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-505d4236b6bb"
       ],
@@ -850,7 +850,7 @@
       "location": "Quartz Lake",
       "url": "/north-america/united-states/alaska/quartz-lake-ice-fishing/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-72bc09f7b2cc"
       ],
@@ -894,7 +894,7 @@
       "location": "Juneau coastal waters",
       "url": "/north-america/united-states/alaska/juneau-coastal-waters-coastal-salmon/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-e354fff62557",
         "species-72e4028c3a6c",
@@ -1254,7 +1254,7 @@
       "location": "Columbia River / lower reach",
       "url": "/north-america/united-states/washington/columbia-river-lower-reach-river-salmon/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-c4472a0d80ee",
         "species-40763178b05c"
@@ -1415,7 +1415,7 @@
       "location": "Lake Washington",
       "url": "/north-america/united-states/washington/lake-washington-coldwater-lake-fishing/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-b90375483838",
         "species-7043d24efe03"
@@ -1460,7 +1460,7 @@
       "location": "Lake Chelan",
       "url": "/north-america/united-states/washington/lake-chelan-coldwater-lake-fishing/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-2cc65c61e911",
         "species-54e8aea9d901"
@@ -1506,7 +1506,7 @@
       "location": "Potholes Reservoir",
       "url": "/north-america/united-states/washington/potholes-reservoir-walleye-and-reservoir-fishing/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-1f0609515988",
         "species-9d44ce2994d5"
@@ -1554,7 +1554,7 @@
       "location": "Lake Roosevelt",
       "url": "/north-america/united-states/washington/lake-roosevelt-coldwater-lake-fishing/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-10e776f787c7",
         "species-3238eea8202c"
@@ -1677,7 +1677,7 @@
       "location": "Deschutes River / lower reach",
       "url": "/north-america/united-states/oregon/deschutes-river-lower-reach-river-trout-and-grayling/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-79de076360f2"
       ],
@@ -1764,7 +1764,7 @@
       "location": "Columbia River / Oregon launches",
       "url": "/north-america/united-states/oregon/columbia-river-oregon-launches-sturgeon-fishing/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-3e14e4df29ef",
         "species-546bf260c627",
@@ -1894,7 +1894,7 @@
       "location": "Umpqua River / North Umpqua",
       "url": "/north-america/united-states/oregon/umpqua-river-north-umpqua-steelhead-and-anadromous-trout/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-1976e3328850",
         "species-a79f25fe2d89"
@@ -1938,7 +1938,7 @@
       "location": "Klamath Lake",
       "url": "/north-america/united-states/oregon/klamath-lake-coldwater-lake-fishing/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-82bf8d0d29a0",
         "species-20543c443d91"
@@ -1982,7 +1982,7 @@
       "location": "Crane Prairie Reservoir",
       "url": "/north-america/united-states/oregon/crane-prairie-reservoir-coldwater-lake-fishing/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-546bf260c627",
         "species-ebbded5f4363"
@@ -2183,7 +2183,7 @@
       "location": "McCloud River",
       "url": "/north-america/united-states/california/mccloud-river-river-trout-and-grayling/",
       "currentTier": "trip-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "global-jacktrout",
         "species-3a316fffb0c5",
@@ -2228,7 +2228,7 @@
       "location": "Hat Creek",
       "url": "/north-america/united-states/california/hat-creek-spring-fed-trout-and-grayling/",
       "currentTier": "trip-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "global-jacktrout",
         "species-3a316fffb0c5"
@@ -2829,7 +2829,7 @@
       "location": "Wildhorse Reservoir",
       "url": "/north-america/united-states/nevada/wildhorse-reservoir-coldwater-lake-fishing/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-ae5cc5aee254",
         "species-aee86f4d05b7"
@@ -2951,7 +2951,7 @@
       "location": "Lake Havasu / Arizona base",
       "url": "/north-america/united-states/arizona/lake-havasu-arizona-base-lake-and-reservoir-bass/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-e4a9ed51e91b"
       ],
@@ -2998,7 +2998,7 @@
       "location": "Roosevelt Lake",
       "url": "/north-america/united-states/arizona/roosevelt-lake-lake-and-reservoir-bass/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-ca066775f0d5"
       ],
@@ -3122,7 +3122,7 @@
       "location": "San Juan River / Navajo Dam",
       "url": "/north-america/united-states/new-mexico/san-juan-river-navajo-dam-river-trout-and-grayling/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-cd7c99bd8513"
       ],
@@ -3239,7 +3239,7 @@
       "location": "Eagle Nest Lake",
       "url": "/north-america/united-states/new-mexico/eagle-nest-lake-coldwater-lake-fishing/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-266719908510",
         "species-92b6acd2177f",
@@ -3285,7 +3285,7 @@
       "location": "Elephant Butte Reservoir",
       "url": "/north-america/united-states/new-mexico/elephant-butte-reservoir-lake-and-reservoir-bass/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-266719908510"
       ],
@@ -3364,7 +3364,7 @@
       "location": "South Fork Snake River",
       "url": "/north-america/united-states/idaho/south-fork-snake-river-river-trout-and-grayling/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-0846a9f7f31e"
       ],
@@ -3526,7 +3526,7 @@
       "location": "Lake Pend Oreille",
       "url": "/north-america/united-states/idaho/lake-pend-oreille-coldwater-lake-fishing/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-b1b31197becb",
         "species-ac9bf5a07d7e",
@@ -3650,7 +3650,7 @@
       "location": "Madison River",
       "url": "/north-america/united-states/montana/madison-river-river-trout-and-grayling/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-533490f4ed3e",
         "species-05183701f53b"
@@ -3731,7 +3731,7 @@
       "location": "Yellowstone River / Paradise Valley",
       "url": "/north-america/united-states/montana/yellowstone-river-paradise-valley-river-trout-and-grayling/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-541499943a1b"
       ],
@@ -3774,7 +3774,7 @@
       "location": "Gallatin River",
       "url": "/north-america/united-states/montana/gallatin-river-river-trout-and-grayling/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-0a8de1353b38",
         "species-6e2538cc53e1"
@@ -3817,7 +3817,7 @@
       "location": "Bighorn River",
       "url": "/north-america/united-states/montana/bighorn-river-river-trout-and-grayling/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-01cac052c5c8"
       ],
@@ -3862,7 +3862,7 @@
       "location": "Bitterroot River",
       "url": "/north-america/united-states/montana/bitterroot-river-river-trout-and-grayling/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-53d3e9e81a6e",
         "species-7b5819fd0a41"
@@ -3947,7 +3947,7 @@
       "location": "Flathead Lake",
       "url": "/north-america/united-states/montana/flathead-lake-coldwater-lake-fishing/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-d80c166b055f",
         "species-7eab25ed58d2"
@@ -4031,7 +4031,7 @@
       "location": "Beaverhead River",
       "url": "/north-america/united-states/montana/beaverhead-river-river-trout-and-grayling/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-5161ed27162d"
       ],
@@ -4110,7 +4110,7 @@
       "location": "Snake River / Jackson",
       "url": "/north-america/united-states/wyoming/snake-river-jackson-river-trout-and-grayling/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-de9bebe3c6e0",
         "species-be4c77a6081f"
@@ -4190,7 +4190,7 @@
       "location": "Green River / Pinedale",
       "url": "/north-america/united-states/wyoming/green-river-pinedale-river-trout-and-grayling/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-e0138e8b1f5b",
         "species-90c16192002a"
@@ -4352,7 +4352,7 @@
       "location": "Flaming Gorge / Wyoming base",
       "url": "/north-america/united-states/wyoming/flaming-gorge-wyoming-base-coldwater-lake-fishing/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-f8d5b702680e",
         "species-be4c77a6081f"
@@ -4399,7 +4399,7 @@
       "location": "South Platte / Eleven Mile Canyon",
       "url": "/north-america/united-states/colorado/south-platte-eleven-mile-canyon-river-trout-and-grayling/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-155d35e9ba24"
       ],
@@ -4484,7 +4484,7 @@
       "location": "South Platte / Dream Stream",
       "url": "/north-america/united-states/colorado/south-platte-dream-stream-river-trout-and-grayling/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-155d35e9ba24"
       ],
@@ -4604,7 +4604,7 @@
       "location": "Roaring Fork River",
       "url": "/north-america/united-states/colorado/roaring-fork-river-river-trout-and-grayling/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-1453d7e18a41"
       ],
@@ -4720,7 +4720,7 @@
       "location": "Blue Mesa Reservoir",
       "url": "/north-america/united-states/colorado/blue-mesa-reservoir-coldwater-lake-fishing/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-9280e3e01ac6",
         "species-d74fde6afc2a"
@@ -4967,7 +4967,7 @@
       "location": "Flaming Gorge / Utah base",
       "url": "/north-america/united-states/utah/flaming-gorge-utah-base-coldwater-lake-fishing/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-bdb6c009fcfb",
         "species-99661cdbe999",
@@ -5012,7 +5012,7 @@
       "location": "Lake Powell / Utah base",
       "url": "/north-america/united-states/utah/lake-powell-utah-base-lake-and-reservoir-bass/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-9a9a534ee96a",
         "species-2b55f88b72a3"
@@ -5055,7 +5055,7 @@
       "location": "Uinta Mountains / verified lakes",
       "url": "/north-america/united-states/utah/uinta-mountains-verified-lakes-alpine-lake-fishing/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-0929797e9990"
       ],
@@ -5097,7 +5097,7 @@
       "location": "Devils Lake",
       "url": "/north-america/united-states/north-dakota/devils-lake-walleye-and-reservoir-fishing/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-7731853f9016"
       ],
@@ -5141,7 +5141,7 @@
       "location": "Lake Sakakawea",
       "url": "/north-america/united-states/north-dakota/lake-sakakawea-walleye-and-reservoir-fishing/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-7731853f9016",
         "species-1aae59efc95c"
@@ -5187,7 +5187,7 @@
       "location": "Red River / Fargo reach",
       "url": "/north-america/united-states/north-dakota/red-river-fargo-reach-catfish-fishing/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-ca03b2cdb13f"
       ],
@@ -5230,7 +5230,7 @@
       "location": "Lake Audubon",
       "url": "/north-america/united-states/north-dakota/lake-audubon-ice-fishing/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-e4bb92c5d0bb",
         "species-5c91a5cd3b9f"
@@ -5274,7 +5274,7 @@
       "location": "Lake Oahe / Pierre base",
       "url": "/north-america/united-states/south-dakota/lake-oahe-pierre-base-walleye-and-reservoir-fishing/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-bb4e86a11178",
         "species-fc517b3a4f02"
@@ -5354,7 +5354,7 @@
       "location": "Lake Sharpe",
       "url": "/north-america/united-states/south-dakota/lake-sharpe-walleye-and-reservoir-fishing/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-c31610c2651b",
         "species-cec2ba7b9f55"
@@ -5397,7 +5397,7 @@
       "location": "Waubay Lake",
       "url": "/north-america/united-states/south-dakota/waubay-lake-ice-fishing/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-dbbd81bd8bf3"
       ],
@@ -5442,7 +5442,7 @@
       "location": "Lake McConaughy",
       "url": "/north-america/united-states/nebraska/lake-mcconaughy-walleye-and-reservoir-fishing/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-272101f51911",
         "species-935973dec941",
@@ -5686,7 +5686,7 @@
       "location": "Lake Texoma / Oklahoma base",
       "url": "/north-america/united-states/oklahoma/lake-texoma-oklahoma-base-lake-and-reservoir-bass/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-0017f1d0e188",
         "species-3f9ea1ca2c01",
@@ -5862,7 +5862,7 @@
       "location": "Illinois River / Tahlequah",
       "url": "/north-america/united-states/oklahoma/illinois-river-tahlequah-river-smallmouth-and-bass/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-52d4a134cdb2"
       ],
@@ -5904,7 +5904,7 @@
       "location": "Lake of the Woods / Minnesota base",
       "url": "/north-america/united-states/minnesota/lake-of-the-woods-minnesota-base-walleye-and-reservoir-fishing/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-23769b2d897b"
       ],
@@ -5993,7 +5993,7 @@
       "location": "Mille Lacs Lake",
       "url": "/north-america/united-states/minnesota/mille-lacs-lake-lake-and-reservoir-bass/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-41dd236aa966",
         "species-d57b0b44884c"
@@ -6039,7 +6039,7 @@
       "location": "Leech Lake",
       "url": "/north-america/united-states/minnesota/leech-lake-large-freshwater-predators/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-57c95a3896ad",
         "species-e781a4cbc7d8"
@@ -6087,7 +6087,7 @@
       "location": "Lake Winnibigoshish",
       "url": "/north-america/united-states/minnesota/lake-winnibigoshish-walleye-and-reservoir-fishing/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-05d696ffefea"
       ],
@@ -6129,7 +6129,7 @@
       "location": "Lake Vermilion",
       "url": "/north-america/united-states/minnesota/lake-vermilion-walleye-and-reservoir-fishing/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-6f5a26abde6d",
         "species-9ecce4087fb5",
@@ -6177,7 +6177,7 @@
       "location": "Rainy River",
       "url": "/north-america/united-states/minnesota/rainy-river-sturgeon-fishing/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-7065ad955f45",
         "species-cfea4acad781"
@@ -6222,7 +6222,7 @@
       "location": "Lake Superior / Duluth",
       "url": "/north-america/united-states/minnesota/lake-superior-duluth-great-lakes-open-water-fishing/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-ba37b56b4730",
         "species-486f2e5abb07",
@@ -6313,7 +6313,7 @@
       "location": "Upper Red Lake",
       "url": "/north-america/united-states/minnesota/upper-red-lake-ice-fishing/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-7065ad955f45"
       ],
@@ -6655,7 +6655,7 @@
       "location": "Bois Brule River",
       "url": "/north-america/united-states/wisconsin/bois-brule-river-steelhead-and-anadromous-trout/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-1e21f38b677c",
         "species-9e1825e858d2"
@@ -6773,7 +6773,7 @@
       "location": "Au Sable River",
       "url": "/north-america/united-states/michigan/au-sable-river-river-trout-and-grayling/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-c12ebd8fe845",
         "species-2047cc2e0129"
@@ -6817,7 +6817,7 @@
       "location": "Pere Marquette River",
       "url": "/north-america/united-states/michigan/pere-marquette-river-steelhead-and-anadromous-trout/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-e5add5401fd0"
       ],
@@ -6860,7 +6860,7 @@
       "location": "Manistee River / Tippy Dam reach",
       "url": "/north-america/united-states/michigan/manistee-river-tippy-dam-reach-steelhead-and-anadromous-trout/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-0a3b704d91d5",
         "species-5976966212ce"
@@ -6904,7 +6904,7 @@
       "location": "Muskegon River",
       "url": "/north-america/united-states/michigan/muskegon-river-steelhead-and-anadromous-trout/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-6a3a906ccd20",
         "species-2bd46574bdbb",
@@ -7027,7 +7027,7 @@
       "location": "Detroit River",
       "url": "/north-america/united-states/michigan/detroit-river-walleye-and-reservoir-fishing/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-99268a4e79f4",
         "species-143757e1dac3",
@@ -7073,7 +7073,7 @@
       "location": "Grand Traverse Bay",
       "url": "/north-america/united-states/michigan/grand-traverse-bay-lake-and-reservoir-bass/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-d43c8eaab086",
         "species-1b7b5eb52a09"
@@ -7163,7 +7163,7 @@
       "location": "Houghton Lake",
       "url": "/north-america/united-states/michigan/houghton-lake-ice-fishing/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-f4cd12fcb684",
         "species-865cd4955bc7"
@@ -7248,7 +7248,7 @@
       "location": "Lake Michigan / Chicago",
       "url": "/north-america/united-states/illinois/lake-michigan-chicago-great-lakes-open-water-fishing/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-9b6418855e83",
         "species-fc1bf0c87969"
@@ -7291,7 +7291,7 @@
       "location": "Rend Lake",
       "url": "/north-america/united-states/illinois/rend-lake-panfish-and-family-fishing/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-05d2a930443e",
         "species-99004eaba0e4"
@@ -7339,7 +7339,7 @@
       "location": "Kankakee River",
       "url": "/north-america/united-states/illinois/kankakee-river-river-smallmouth-and-bass/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-699374a63de7",
         "species-679625b3108d"
@@ -7387,7 +7387,7 @@
       "location": "Illinois River / Starved Rock area",
       "url": "/north-america/united-states/illinois/illinois-river-starved-rock-area-walleye-and-reservoir-fishing/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-554d430b710b",
         "species-3d894fb7c614",
@@ -7437,7 +7437,7 @@
       "location": "Lake Michigan / Michigan City",
       "url": "/north-america/united-states/indiana/lake-michigan-michigan-city-great-lakes-open-water-fishing/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-074e1b086991",
         "species-9e9d96a2e61a"
@@ -7560,7 +7560,7 @@
       "location": "White River / central Indiana",
       "url": "/north-america/united-states/indiana/white-river-central-indiana-river-smallmouth-and-bass/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-edf2279bb621",
         "species-6b06888fe2a0",
@@ -7610,7 +7610,7 @@
       "location": "Lake Erie / Port Clinton",
       "url": "/north-america/united-states/ohio/lake-erie-port-clinton-walleye-and-reservoir-fishing/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-e3324bd7b2d8"
       ],
@@ -7693,7 +7693,7 @@
       "location": "Maumee River",
       "url": "/north-america/united-states/ohio/maumee-river-walleye-and-reservoir-fishing/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-b7704b4b4cf7"
       ],
@@ -7776,7 +7776,7 @@
       "location": "Alum Creek Lake",
       "url": "/north-america/united-states/ohio/alum-creek-lake-large-freshwater-predators/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-c8c9ead83bf5"
       ],
@@ -7821,7 +7821,7 @@
       "location": "Ohio River / Cincinnati reach",
       "url": "/north-america/united-states/ohio/ohio-river-cincinnati-reach-catfish-fishing/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-3e2c9f97f8d3"
       ],
@@ -7869,7 +7869,7 @@
       "location": "Spirit Lake / Iowa Great Lakes",
       "url": "/north-america/united-states/iowa/spirit-lake-iowa-great-lakes-walleye-and-reservoir-fishing/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-94ed5c23062c"
       ],
@@ -7912,7 +7912,7 @@
       "location": "Northeast Iowa / Big Spring trout water",
       "url": "/north-america/united-states/iowa/northeast-iowa-big-spring-trout-water-spring-fed-trout-and-grayling/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-60e9439fe71b"
       ],
@@ -7955,7 +7955,7 @@
       "location": "Mississippi River / Pool 9 Iowa base",
       "url": "/north-america/united-states/iowa/mississippi-river-pool-9-iowa-base-walleye-and-reservoir-fishing/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-7cfc70e7cd3e"
       ],
@@ -7997,7 +7997,7 @@
       "location": "Lake Taneycomo",
       "url": "/north-america/united-states/missouri/lake-taneycomo-river-trout-and-grayling/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-9b4b98faf477"
       ],
@@ -8039,7 +8039,7 @@
       "location": "Table Rock Lake",
       "url": "/north-america/united-states/missouri/table-rock-lake-lake-and-reservoir-bass/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-badeadcdc2ff",
         "species-00961acdd7a3"
@@ -8088,7 +8088,7 @@
       "location": "Lake of the Ozarks",
       "url": "/north-america/united-states/missouri/lake-of-the-ozarks-lake-and-reservoir-bass/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-d5a65bd51760",
         "species-4ed191b8075b"
@@ -8139,7 +8139,7 @@
       "location": "Current River",
       "url": "/north-america/united-states/missouri/current-river-river-smallmouth-and-bass/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-f0b1502c41c2",
         "species-9e67997262c6"
@@ -8183,7 +8183,7 @@
       "location": "Truman Lake",
       "url": "/north-america/united-states/missouri/truman-lake-panfish-and-family-fishing/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-56afa7160ef3",
         "species-a79edc77da46",
@@ -8275,7 +8275,7 @@
       "location": "Kennebec River / upper reach",
       "url": "/north-america/united-states/maine/kennebec-river-upper-reach-river-trout-and-grayling/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-ab677f443148"
       ],
@@ -8436,7 +8436,7 @@
       "location": "Belgrade Lakes",
       "url": "/north-america/united-states/maine/belgrade-lakes-lake-and-reservoir-bass/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-f8fb6f5b0382",
         "species-1e030bffa4ce"
@@ -8522,7 +8522,7 @@
       "location": "Lake Winnipesaukee",
       "url": "/north-america/united-states/new-hampshire/lake-winnipesaukee-coldwater-lake-fishing/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-515211de2d1e"
       ],
@@ -8677,7 +8677,7 @@
       "location": "Lake Champlain / Vermont base",
       "url": "/north-america/united-states/vermont/lake-champlain-vermont-base-lake-and-reservoir-bass/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-f2f5b59703be",
         "species-1dbf0d4ea735",
@@ -8727,7 +8727,7 @@
       "location": "Battenkill / Vermont reach",
       "url": "/north-america/united-states/vermont/battenkill-vermont-reach-river-trout-and-grayling/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-225b1b31bd4f"
       ],
@@ -8769,7 +8769,7 @@
       "location": "Otter Creek",
       "url": "/north-america/united-states/vermont/otter-creek-river-trout-and-grayling/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-c7ff509a90e7",
         "species-d79802aa14b6",
@@ -8816,7 +8816,7 @@
       "location": "Lake Memphremagog / Vermont base",
       "url": "/north-america/united-states/vermont/lake-memphremagog-vermont-base-coldwater-lake-fishing/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-42ab929b96e9",
         "species-8599c7c5bdcc",
@@ -8899,7 +8899,7 @@
       "location": "Deerfield River",
       "url": "/north-america/united-states/massachusetts/deerfield-river-river-trout-and-grayling/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-a043189f7151"
       ],
@@ -8942,7 +8942,7 @@
       "location": "Cape Cod Canal",
       "url": "/north-america/united-states/massachusetts/cape-cod-canal-rocky-shore-fishing/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-8ef96ec699a3"
       ],
@@ -9269,7 +9269,7 @@
       "location": "Long Island Sound / Connecticut base",
       "url": "/north-america/united-states/connecticut/long-island-sound-connecticut-base-inshore-estuary-fishing/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-941c4945c707"
       ],
@@ -9354,7 +9354,7 @@
       "location": "Salmon River / Pulaski",
       "url": "/north-america/united-states/new-york/salmon-river-pulaski-steelhead-and-anadromous-trout/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-3022907fbb5f",
         "species-043030e04b5e"
@@ -9474,7 +9474,7 @@
       "location": "Lake Ontario / Oswego",
       "url": "/north-america/united-states/new-york/lake-ontario-oswego-great-lakes-open-water-fishing/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-41cd6e043936",
         "species-fc86b3246405"
@@ -9555,7 +9555,7 @@
       "location": "Adirondacks / Ausable River",
       "url": "/north-america/united-states/new-york/adirondacks-ausable-river-river-trout-and-grayling/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-3f0e0fee78b9"
       ],
@@ -9597,7 +9597,7 @@
       "location": "Lake Champlain / New York base",
       "url": "/north-america/united-states/new-york/lake-champlain-new-york-base-lake-and-reservoir-bass/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-09478c492c34",
         "species-08bfda4be046",
@@ -9735,7 +9735,7 @@
       "location": "Hudson River / tidal reach",
       "url": "/north-america/united-states/new-york/hudson-river-tidal-reach-inshore-estuary-fishing/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-11444c883a5e",
         "species-6a3636fd1994",
@@ -10409,7 +10409,7 @@
       "location": "Gunpowder Falls",
       "url": "/north-america/united-states/maryland/gunpowder-falls-river-trout-and-grayling/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-62cf5617b6bf",
         "species-44d64ca37f05"
@@ -10490,7 +10490,7 @@
       "location": "Deep Creek Lake",
       "url": "/north-america/united-states/maryland/deep-creek-lake-walleye-and-reservoir-fishing/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-79dbe08ef662",
         "species-413ad2e23d09",
@@ -10543,7 +10543,7 @@
       "location": "Potomac River / Maryland base",
       "url": "/north-america/united-states/maryland/potomac-river-maryland-base-river-smallmouth-and-bass/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-19dd50ff8fe9"
       ],
@@ -10588,7 +10588,7 @@
       "location": "Chesapeake Bay / Virginia Beach base",
       "url": "/north-america/united-states/virginia/chesapeake-bay-virginia-beach-base-inshore-estuary-fishing/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-03761df62a81",
         "species-6ebf42664e94"
@@ -10631,7 +10631,7 @@
       "location": "Shenandoah River",
       "url": "/north-america/united-states/virginia/shenandoah-river-river-smallmouth-and-bass/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-9d4a6cee3a60",
         "species-3c6b18164a41"
@@ -10677,7 +10677,7 @@
       "location": "Jackson River / tailwater",
       "url": "/north-america/united-states/virginia/jackson-river-tailwater-river-trout-and-grayling/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-21025b3af728"
       ],
@@ -10756,7 +10756,7 @@
       "location": "Smith Mountain Lake",
       "url": "/north-america/united-states/virginia/smith-mountain-lake-lake-and-reservoir-bass/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-f001b72258b0",
         "species-ac4395e80347"
@@ -10804,7 +10804,7 @@
       "location": "James River / tidal reach",
       "url": "/north-america/united-states/virginia/james-river-tidal-reach-catfish-fishing/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-6db4ceef08f3",
         "species-ac96b7a8120f"
@@ -10847,7 +10847,7 @@
       "location": "South Holston Reservoir / Virginia base",
       "url": "/north-america/united-states/virginia/south-holston-reservoir-virginia-base-coldwater-lake-fishing/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-55d7ac6e43b2",
         "species-9baec6bcbb33"
@@ -10896,7 +10896,7 @@
       "location": "New River",
       "url": "/north-america/united-states/west-virginia/new-river-river-smallmouth-and-bass/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-64273ce3a28d",
         "species-7bd2b930eb10"
@@ -11017,7 +11017,7 @@
       "location": "Summersville Lake",
       "url": "/north-america/united-states/west-virginia/summersville-lake-lake-and-reservoir-bass/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-5e1e8eee6c3c",
         "species-4fbefab60184"
@@ -11065,7 +11065,7 @@
       "location": "Cumberland River / below Wolf Creek Dam",
       "url": "/north-america/united-states/kentucky/cumberland-river-below-wolf-creek-dam-river-trout-and-grayling/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-bdb22b610d22",
         "species-e7ec8941820e"
@@ -11110,7 +11110,7 @@
       "location": "Kentucky Lake / Kentucky base",
       "url": "/north-america/united-states/kentucky/kentucky-lake-kentucky-base-panfish-and-family-fishing/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-8e982a480bd8",
         "species-490a8ee3055d",
@@ -11201,7 +11201,7 @@
       "location": "Cave Run Lake",
       "url": "/north-america/united-states/kentucky/cave-run-lake-large-freshwater-predators/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-fadad1ac9770",
         "species-877f9a8d2312",
@@ -11249,7 +11249,7 @@
       "location": "Green River Lake",
       "url": "/north-america/united-states/kentucky/green-river-lake-panfish-and-family-fishing/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-037a17b0cff7",
         "species-afdf3d4c174a",
@@ -11457,7 +11457,7 @@
       "location": "Dale Hollow / Tennessee base",
       "url": "/north-america/united-states/tennessee/dale-hollow-tennessee-base-lake-and-reservoir-bass/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-fafb84a05ce0",
         "species-8401365b8811"
@@ -11506,7 +11506,7 @@
       "location": "Reelfoot Lake",
       "url": "/north-america/united-states/tennessee/reelfoot-lake-panfish-and-family-fishing/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-6baf7e3d692d",
         "species-7435eb36f26d",
@@ -11589,7 +11589,7 @@
       "location": "Cape Hatteras, North Carolina",
       "url": "/north-america/united-states/north-carolina/cape-hatteras-beaches-surf-and-beach-fishing/",
       "currentTier": "detailed-guide",
-      "indexEligible": true,
+      "indexEligible": false,
       "sourceIds": [
         "g26-caha",
         "g26-caha-orv",
@@ -11632,7 +11632,7 @@
       "location": "Outer Banks / Oregon Inlet offshore",
       "url": "/north-america/united-states/north-carolina/outer-banks-oregon-inlet-offshore-offshore-pelagic-fishing/",
       "currentTier": "detailed-guide",
-      "indexEligible": true,
+      "indexEligible": false,
       "sourceIds": [
         "g26-caha",
         "g26-nc-tuna",
@@ -11979,7 +11979,7 @@
       "location": "Charleston marshes",
       "url": "/north-america/united-states/south-carolina/charleston-marshes-inshore-estuary-fishing/",
       "currentTier": "detailed-guide",
-      "indexEligible": true,
+      "indexEligible": false,
       "sourceIds": [
         "g26-sc-red",
         "g26-charleston-ramps",
@@ -12027,7 +12027,7 @@
       "location": "Beaufort / Port Royal Sound",
       "url": "/north-america/united-states/south-carolina/beaufort-port-royal-sound-inshore-estuary-fishing/",
       "currentTier": "detailed-guide",
-      "indexEligible": true,
+      "indexEligible": false,
       "sourceIds": [
         "release-sc-big-drum",
         "release-sc-drum",
@@ -12071,7 +12071,7 @@
       "location": "Lake Murray",
       "url": "/north-america/united-states/south-carolina/lake-murray-lake-and-reservoir-bass/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-e0b855e285f5",
         "species-cdb398490b3f"
@@ -12549,7 +12549,7 @@
       "location": "Lake Okeechobee",
       "url": "/north-america/united-states/florida/lake-okeechobee-lake-and-reservoir-bass/",
       "currentTier": "detailed-guide",
-      "indexEligible": true,
+      "indexEligible": false,
       "sourceIds": [
         "g26-fwc-okee",
         "g26-fwc-ramps",
@@ -12789,7 +12789,7 @@
       "location": "Mosquito Lagoon",
       "url": "/north-america/united-states/florida/mosquito-lagoon-inshore-estuary-fishing/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-1384132f784e",
         "species-decd2093a6ef"
@@ -12916,7 +12916,7 @@
       "location": "Boca Grande",
       "url": "/north-america/united-states/florida/boca-grande-inshore-estuary-fishing/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-856ec983df95"
       ],
@@ -13185,7 +13185,7 @@
       "location": "St. Johns River / freshwater reach",
       "url": "/north-america/united-states/florida/st-johns-river-freshwater-reach-river-smallmouth-and-bass/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-860fe5211108",
         "species-ae6d9881c203"
@@ -13232,7 +13232,7 @@
       "location": "Suwannee River",
       "url": "/north-america/united-states/florida/suwannee-river-river-smallmouth-and-bass/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-4f75304e88f2",
         "species-f3d0f14709bd",
@@ -13277,7 +13277,7 @@
       "location": "Sebastian Inlet / accessible shoreline",
       "url": "/north-america/united-states/florida/sebastian-inlet-accessible-shoreline-rocky-shore-fishing/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-ebfc04215e2e"
       ],
@@ -13320,7 +13320,7 @@
       "location": "Lake Guntersville",
       "url": "/north-america/united-states/alabama/lake-guntersville-lake-and-reservoir-bass/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-1b78ca56dea2",
         "species-d2712ffe4c3b"
@@ -13369,7 +13369,7 @@
       "location": "Mobile Bay",
       "url": "/north-america/united-states/alabama/mobile-bay-inshore-estuary-fishing/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-89708a89a1ac"
       ],
@@ -13448,7 +13448,7 @@
       "location": "Pickwick Lake / Alabama base",
       "url": "/north-america/united-states/alabama/pickwick-lake-alabama-base-lake-and-reservoir-bass/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-8642388c16fb",
         "species-ccdaab9426ad",
@@ -13616,7 +13616,7 @@
       "location": "Grenada Lake",
       "url": "/north-america/united-states/mississippi/grenada-lake-panfish-and-family-fishing/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-46b50392e0f4",
         "species-73cb1d38b2c6"
@@ -14461,7 +14461,7 @@
       "location": "Galveston Bay",
       "url": "/north-america/united-states/texas/galveston-bay-inshore-estuary-fishing/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-1f832907947d",
         "species-e0a37d182425"
@@ -14508,7 +14508,7 @@
       "location": "Lower Laguna Madre / South Padre base",
       "url": "/north-america/united-states/texas/lower-laguna-madre-south-padre-base-inshore-estuary-fishing/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-2bfb5cf3138f"
       ],
@@ -14665,7 +14665,7 @@
       "location": "Guadalupe River / below Canyon Lake",
       "url": "/north-america/united-states/texas/guadalupe-river-below-canyon-lake-river-trout-and-grayling/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-5daab7116cf2",
         "species-4493b3f54b54"
@@ -14711,7 +14711,7 @@
       "location": "Llano River",
       "url": "/north-america/united-states/texas/llano-river-river-smallmouth-and-bass/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-c1ca5ad023fc",
         "species-618403f43de9",
@@ -14757,7 +14757,7 @@
       "location": "Lake Texoma / Texas base",
       "url": "/north-america/united-states/texas/lake-texoma-texas-base-lake-and-reservoir-bass/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-57c96eee13cb",
         "species-8c4472b2be66",
@@ -14808,7 +14808,7 @@
       "location": "Sam Rayburn Reservoir",
       "url": "/north-america/united-states/texas/sam-rayburn-reservoir-lake-and-reservoir-bass/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-e21d34148021",
         "species-760fd38bb0af"
@@ -14855,7 +14855,7 @@
       "location": "Toledo Bend / Texas base",
       "url": "/north-america/united-states/texas/toledo-bend-texas-base-panfish-and-family-fishing/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-9d2772f48a2e"
       ],
@@ -15093,7 +15093,7 @@
       "location": "Campbell River — freshwater",
       "url": "/north-america/canada/british-columbia/campbell-river-freshwater-reach-river-salmon/",
       "currentTier": "trip-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "global-campbell",
         "species-636186d9f000"
@@ -15288,7 +15288,7 @@
       "location": "Port Hardy",
       "url": "/north-america/canada/british-columbia/port-hardy-coastal-salmon/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-1521415eafba"
       ],
@@ -15413,7 +15413,7 @@
       "location": "Kootenay Lake",
       "url": "/north-america/canada/british-columbia/kootenay-lake-coldwater-lake-fishing/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-87cd382d70af"
       ],
@@ -15455,7 +15455,7 @@
       "location": "Shuswap Lake",
       "url": "/north-america/canada/british-columbia/shuswap-lake-coldwater-lake-fishing/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-66a07067e3ac"
       ],
@@ -15498,7 +15498,7 @@
       "location": "Quesnel Lake",
       "url": "/north-america/canada/british-columbia/quesnel-lake-remote-lodge-and-expedition/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-a28c245293e5",
         "species-85c3e026624b"
@@ -15542,7 +15542,7 @@
       "location": "Adams Lake",
       "url": "/north-america/canada/british-columbia/adams-lake-coldwater-lake-fishing/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-f8313766fe9e"
       ],
@@ -16049,7 +16049,7 @@
       "location": "Cold Lake / Alberta base",
       "url": "/north-america/canada/alberta/cold-lake-alberta-base-coldwater-lake-fishing/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-54c0faef4364"
       ],
@@ -16319,7 +16319,7 @@
       "location": "Cree Lake",
       "url": "/north-america/canada/saskatchewan/cree-lake-remote-lodge-and-expedition/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-efb9875b563c"
       ],
@@ -16472,7 +16472,7 @@
       "location": "Red River / Lockport",
       "url": "/north-america/canada/manitoba/red-river-lockport-catfish-fishing/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-e50d6e8303c3",
         "species-e5fd174ed196",
@@ -16942,7 +16942,7 @@
       "location": "Lake Simcoe",
       "url": "/north-america/canada/ontario/lake-simcoe-ice-fishing/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-d3282b8c7ef7"
       ],
@@ -17141,7 +17141,7 @@
       "location": "Ottawa River",
       "url": "/north-america/canada/ontario/ottawa-river-large-freshwater-predators/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-2cbf2ff7fba4"
       ],
@@ -17309,7 +17309,7 @@
       "location": "Lake Nipigon",
       "url": "/north-america/canada/ontario/lake-nipigon-remote-lodge-and-expedition/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-a9845b5c8f23"
       ],
@@ -17466,7 +17466,7 @@
       "location": "French River",
       "url": "/north-america/canada/ontario/french-river-large-freshwater-predators/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-078bd15e535f"
       ],
@@ -17509,7 +17509,7 @@
       "location": "Grand River / Ontario",
       "url": "/north-america/canada/ontario/grand-river-ontario-river-trout-and-grayling/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-078bd15e535f"
       ],
@@ -17784,7 +17784,7 @@
       "location": "Lac Saint-Jean",
       "url": "/north-america/canada/quebec/lac-saint-jean-coldwater-lake-fishing/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-80f9d282835a",
         "species-c6e093bf54f3",
@@ -18800,7 +18800,7 @@
       "location": "Great Slave Lake",
       "url": "/north-america/canada/northwest-territories/great-slave-lake-remote-lodge-and-expedition/",
       "currentTier": "trip-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "global-plummers",
         "species-08f628720ef0"
@@ -20842,7 +20842,7 @@
       "location": "Florida Keys flats and backcountry",
       "url": "/trips/keys-flats/",
       "currentTier": "detailed-guide",
-      "indexEligible": true,
+      "indexEligible": false,
       "sourceIds": [
         "keys-world",
         "flats-learning",
@@ -20883,7 +20883,7 @@
       "location": "Florida Keys offshore waters",
       "url": "/trips/keys-offshore/",
       "currentTier": "detailed-guide",
-      "indexEligible": true,
+      "indexEligible": false,
       "sourceIds": [
         "g26-fwc-monroe",
         "g26-nws-keys",
@@ -20930,7 +20930,7 @@
       "location": "Andros, The Bahamas",
       "url": "/trips/andros-bonefish/",
       "currentTier": "detailed-guide",
-      "indexEligible": true,
+      "indexEligible": false,
       "sourceIds": [
         "andros",
         "species-d880ac192c1a"
@@ -20967,7 +20967,7 @@
       "location": "Placencia, Punta Gorda and Belize flats",
       "url": "/trips/belize-permit/",
       "currentTier": "detailed-guide",
-      "indexEligible": true,
+      "indexEligible": false,
       "sourceIds": [
         "belize",
         "blue-horizon",
@@ -21008,7 +21008,7 @@
       "location": "Belize Barrier Reef area",
       "url": "/trips/belize-reef/",
       "currentTier": "detailed-guide",
-      "indexEligible": true,
+      "indexEligible": false,
       "sourceIds": [
         "belize",
         "species-bef532734953"
@@ -21047,7 +21047,7 @@
       "location": "Quepos, Central Pacific coast",
       "url": "/trips/quepos-offshore/",
       "currentTier": "detailed-guide",
-      "indexEligible": true,
+      "indexEligible": false,
       "sourceIds": [
         "costa-seasons",
         "species-4cd7972f4cc0"
@@ -21085,7 +21085,7 @@
       "location": "Tortuguero and Barra del Colorado area",
       "url": "/trips/costa-caribbean-canals/",
       "currentTier": "detailed-guide",
-      "indexEligible": true,
+      "indexEligible": false,
       "sourceIds": [
         "costa-caribbean",
         "species-361d88546d01"
@@ -21688,7 +21688,7 @@
       "location": "Bimini",
       "url": "/trips/g-bahamas-bimini/",
       "currentTier": "trip-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "global-bahamas-local",
         "species-6b4cbc6770bc",

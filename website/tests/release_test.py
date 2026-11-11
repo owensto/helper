@@ -1,5 +1,8 @@
 """Structural, evidence and production-metadata gates for continental edition 004."""
 from pathlib import Path
+import sys
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
+from index_policy import sitemap_entries
 from collections import Counter
 import json,os,subprocess,re,xml.etree.ElementTree as ET
 R=Path(__file__).resolve().parents[1]
@@ -31,11 +34,14 @@ for t in T:
    assert t['evidence'] and t['sourceIds'] and all(x['sourceUrls'] for x in researched),t['id']
   else:
    assert not t['fish'] and not t['evidence'] and not t['sourceIds'],t['id']
-  assert t['review']['checked'] is None and not t['indexEligible'],t['id']
- if t['indexEligible']:assert t['sourceIds'] and t['evidence'] and t['contentTier']=='detailed-guide',t['id']
+  assert t['review']['checked'] is None,t['id']
+ assert t['indexEligible'] == t['indexAssessment']['eligible'],t['id']
+ if t['indexEligible']:
+  assert t['sourceIds'] and t['evidence'],t['id']
+  assert len(t['indexAssessment']['verifiedSpeciesIds']) >= 2 and t['indexAssessment']['descriptionWords'] >= 120,t['id']
 ok(True,'Preparation frameworks publish only individually sourced targets and keep unverified seasons and access unconfirmed')
 ok(True,'All 798 trips have exactly four scoped gear decisions and valid reference links')
-ok(True,'Every index-eligible trip has attributed evidence and a source-checked tier')
+ok(True,'Every index-eligible trip passes the shared species, description, season and canonical checks')
 for p,m in M.items():
  if m.get('redirectTo'):
   assert m['redirectTo'] in M and not M[m['redirectTo']].get('redirectTo'),p
@@ -51,14 +57,14 @@ ok(True,'Six actual continent queues have complete local-decision/gear/distribut
 base=dict(os.environ);base['SITE_URL']='https://fishing-atlas.invalid'
 try:
  subprocess.run(['python3','scripts/build.py'],cwd=R,env=base,check=True,capture_output=True)
- urls={x.text for x in ET.parse(R/'dist/sitemap.xml').getroot().findall('{*}url/{*}loc')}
+ urls=set(sitemap_entries(R/'dist'))
  for t in T:
   listed=base['SITE_URL']+t['canonicalPath'] in urls
   assert listed==bool(t['indexEligible']),t['id']
  for p,m in M.items():
   if m.get('redirectTo') or p.startswith('/production/'):
    assert base['SITE_URL']+p not in urls,p
- sample=next(t for t in T if t['contentTier']=='preparation-brief')
+ sample=next(t for t in T if not t['indexEligible'])
  text=(R/'dist'/sample['canonicalPath'].strip('/')/'index.html').read_text()
  assert 'content="noindex,follow"' in text
  assert f'href="{base["SITE_URL"]+sample["canonicalPath"]}"' in text

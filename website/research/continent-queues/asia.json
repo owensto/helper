@@ -13,7 +13,7 @@
       "location": "Fish Mongolia river programs",
       "url": "/trips/mongolia-taimen/",
       "currentTier": "detailed-guide",
-      "indexEligible": true,
+      "indexEligible": false,
       "sourceIds": [
         "mongolia",
         "mongolia-river",
@@ -52,7 +52,7 @@
       "location": "Northern Hokkaido",
       "url": "/trips/hokkaido-char/",
       "currentTier": "detailed-guide",
-      "indexEligible": true,
+      "indexEligible": false,
       "sourceIds": [
         "hokkaido",
         "species-0ae801a3a4b7"
@@ -89,7 +89,7 @@
       "location": "Gangwon stream programs",
       "url": "/trips/gangwon-streams/",
       "currentTier": "detailed-guide",
-      "indexEligible": true,
+      "indexEligible": false,
       "sourceIds": [
         "korea",
         "species-4f002aa451cf"
@@ -378,7 +378,7 @@
       "location": "Manas River Lodge",
       "url": "/trips/g-bhutan-manas-river-lodge/",
       "currentTier": "trip-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "global-manas",
         "species-b3586e769095"

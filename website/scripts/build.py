@@ -200,6 +200,8 @@ from trip_styles import install as install_trip_styles
 TRIP_STYLES = install_trip_styles(pages, ROOT, CONFIG['siteUrl'], add, TRIPS, DATA['destinations'])
 from interactive_atlas import install as install_atlas
 install_atlas(pages, ROOT, CONFIG['siteUrl'], add, DATA, TRIPS, TRIP_STYLES)
+from index_policy import install as install_index_policy, write_sitemaps
+install_index_policy(pages, TRIPS, CONFIG['siteUrl'], DIST)
 trip_paths = {t.get("canonicalPath", "/trips/"+t["id"]+"/") for t in TRIPS}
 for path, page in pages.items():
     page["analyticsKind"] = "trip" if path in trip_paths else page["kind"]
@@ -214,8 +216,7 @@ shutil.copyfile(DIST/'404/index.html',DIST/'404.html')
 (DIST/'assets/favicon.svg').write_text(LOGO.replace('currentColor','#193a2c'))
 # Metadata becomes indexable only after a real canonical origin is supplied.
 if CONFIG['siteUrl']:
-    sitemap='<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+''.join(f'<url><loc>{E(CONFIG["siteUrl"]+p)}</loc><lastmod>{x.get("modified",DATA["reviewed"])}</lastmod></url>' for p,x in pages.items() if not x['noindex'])+'</urlset>'
-    (DIST/'sitemap.xml').write_text(sitemap)
+    write_sitemaps(DIST, pages, CONFIG['siteUrl'], DATA['reviewed'])
     (DIST/'robots.txt').write_text('User-agent: *\nAllow: /\nSitemap: '+CONFIG['siteUrl']+'/sitemap.xml\n')
 else:
     (DIST/'robots.txt').write_text('User-agent: *\nDisallow: /\n# Preview build: set SITE_URL to generate production canonical URLs and sitemap.\n')

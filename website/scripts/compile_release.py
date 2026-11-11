@@ -134,6 +134,8 @@ from guides import compile_into as compile_guides
 compile_guides(world, out, ROOT)
 from species_glossary import compile_into as compile_species
 compile_species(world, out, ROOT)
+from index_policy import compile_into as compile_index_policy
+compile_index_policy(out, ROOT)
 # Classify editorial regions before page rendering, so a single clean build has working filters.
 groups=json.loads((ROOT/'src/continent-regions.json').read_text())
 for t in out:

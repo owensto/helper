@@ -224,49 +224,49 @@
   "/trips/keys-flats/": {
     "kind": "article",
     "title": "Florida Keys flats fishing: choose bonefish, permit or tarpon first | Castward",
-    "noindex": false,
+    "noindex": true,
     "redirectTo": null
   },
   "/trips/keys-offshore/": {
     "kind": "article",
     "title": "Florida Keys offshore charters: plan the right day | Castward",
-    "noindex": false,
+    "noindex": true,
     "redirectTo": null
   },
   "/trips/andros-bonefish/": {
     "kind": "article",
     "title": "Andros bonefishing: flats access, sight-casting and a lighter gear list | Castward",
-    "noindex": false,
+    "noindex": true,
     "redirectTo": null
   },
   "/trips/belize-permit/": {
     "kind": "article",
     "title": "Belize permit and flats trips: choose the base, target and casting plan | Castward",
-    "noindex": false,
+    "noindex": true,
     "redirectTo": null
   },
   "/trips/belize-reef/": {
     "kind": "article",
     "title": "Belize reef fishing: a different trip from flats or deep sea | Castward",
-    "noindex": false,
+    "noindex": true,
     "redirectTo": null
   },
   "/trips/quepos-offshore/": {
     "kind": "article",
     "title": "Quepos offshore sportfishing: select the target, boat and actual fishing time | Castward",
-    "noindex": false,
+    "noindex": true,
     "redirectTo": null
   },
   "/trips/costa-caribbean-canals/": {
     "kind": "article",
     "title": "Costa Rica Caribbean canal fishing: tarpon, snook and a separate coast | Castward",
-    "noindex": false,
+    "noindex": true,
     "redirectTo": null
   },
   "/trips/rio-negro-peacock/": {
     "kind": "article",
     "title": "Rio Negro peacock bass: basin, water level and lure-work planning | Castward",
-    "noindex": false,
+    "noindex": true,
     "redirectTo": null
   },
   "/trips/northern-patagonia-trout/": {
@@ -278,19 +278,19 @@
   "/trips/norway-skrei/": {
     "kind": "article",
     "title": "Northern Norway winter cod: skrei, boat equipment and weather flexibility | Castward",
-    "noindex": false,
+    "noindex": true,
     "redirectTo": null
   },
   "/trips/norway-summer-sea/": {
     "kind": "article",
     "title": "Norway summer sea fishing: guided boat versus self-drive camp | Castward",
-    "noindex": false,
+    "noindex": true,
     "redirectTo": null
   },
   "/trips/finland-ice-fishing/": {
     "kind": "article",
     "title": "Finnish lake ice fishing: guided introduction and a rental-first kit | Castward",
-    "noindex": false,
+    "noindex": true,
     "redirectTo": null
   },
   "/trips/soca-fly-fishing/": {
@@ -302,37 +302,37 @@
   "/trips/lower-zambezi-tiger/": {
     "kind": "article",
     "title": "Lower Zambezi tiger fishing: river conditions and a complete leader system | Castward",
-    "noindex": false,
+    "noindex": true,
     "redirectTo": null
   },
   "/trips/cosmoledo-gt/": {
     "kind": "article",
     "title": "Cosmoledo giant trevally on fly: heavy tackle is a separate system | Castward",
-    "noindex": false,
+    "noindex": true,
     "redirectTo": null
   },
   "/trips/mongolia-taimen/": {
     "kind": "article",
     "title": "Mongolia taimen expedition: distinguish river, season and supplied gear | Castward",
-    "noindex": false,
+    "noindex": true,
     "redirectTo": null
   },
   "/trips/hokkaido-char/": {
     "kind": "article",
     "title": "Northern Hokkaido char fishing: a different outfit from an itou trip | Castward",
-    "noindex": false,
+    "noindex": true,
     "redirectTo": null
   },
   "/trips/gangwon-streams/": {
     "kind": "article",
     "title": "Gangwon mountain-stream fly fishing: a short Korea trip without overpacking | Castward",
-    "noindex": false,
+    "noindex": true,
     "redirectTo": null
   },
   "/trips/top-end-barramundi/": {
     "kind": "article",
     "title": "Top End barramundi: runoff, harbour and billabong trips are different | Castward",
-    "noindex": false,
+    "noindex": true,
     "redirectTo": null
   },
   "/trips/tasmania-great-lake/": {
@@ -344,7 +344,7 @@
   "/trips/mataura-trout/": {
     "kind": "article",
     "title": "Mataura River trout planning: choose a reach and a presentation | Castward",
-    "noindex": false,
+    "noindex": true,
     "redirectTo": null
   },
   "/trips/eglinton-river/": {
@@ -356,31 +356,31 @@
   "/trips/g-iceland-west-ranga/": {
     "kind": "article",
     "title": "West Rang\u00e1: spring-fed salmon program | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/trips/g-iceland-vatnsdalsa/": {
     "kind": "article",
     "title": "Vatnsdals\u00e1: northwestern river beats | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/trips/g-iceland-myrarkvisl/": {
     "kind": "article",
     "title": "M\u00fdrarkv\u00edsl: small-river trout and salmon | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/trips/g-iceland-reykjadalsa/": {
     "kind": "article",
     "title": "Reykjadals\u00e1: dry-fly-focused river day | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/trips/g-iceland-lonsa-langanes/": {
     "kind": "article",
     "title": "L\u00f3ns\u00e1 / Langanes: northeastern trout and char | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/trips/g-norway-gaula/": {
@@ -416,13 +416,13 @@
   "/trips/g-sweden-high-coast/": {
     "kind": "article",
     "title": "High Coast: mixed coastal fishing | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/trips/g-sweden-lake-vattern/": {
     "kind": "article",
     "title": "Lake V\u00e4ttern: large-lake species choice | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/trips/g-finland-lake-saimaa/": {
@@ -434,7 +434,7 @@
   "/trips/g-finland-lake-inari/": {
     "kind": "article",
     "title": "Lake Inari: northern-lake route planning | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/trips/g-denmark-helns-fyn/": {
@@ -734,7 +734,7 @@
   "/trips/g-bosnia-and-herzegovina-ribnik/": {
     "kind": "article",
     "title": "Ribnik: clear-water fly presentation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/trips/g-bosnia-and-herzegovina-pliva/": {
@@ -746,7 +746,7 @@
   "/trips/g-croatia-gacka/": {
     "kind": "article",
     "title": "Gacka: slow chalkstream trout | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/trips/g-croatia-kupa-gorski-kotar/": {
@@ -764,7 +764,7 @@
   "/trips/g-montenegro-tara-river/": {
     "kind": "article",
     "title": "Tara River: mountain-river fly-fishing | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/trips/g-montenegro-biograd-lake/": {
@@ -902,7 +902,7 @@
   "/trips/g-switzerland-lake-lungern/": {
     "kind": "article",
     "title": "Lake Lungern: alpine-region lake selection | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/trips/g-andorra-tristaina-lakes-ordino/": {
@@ -926,7 +926,7 @@
   "/trips/g-spain-river-ebro-caspe/": {
     "kind": "article",
     "title": "River Ebro / Caspe: species-specific guided ebro stay | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/trips/g-slovenia-idrijca/": {
@@ -944,13 +944,13 @@
   "/trips/g-slovenia-krka/": {
     "kind": "article",
     "title": "Krka: choose trout or huchen before packing | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/trips/g-angola-kwanza-river-mouth/": {
     "kind": "article",
     "title": "Kwanza River mouth: estuary lure and fly expedition | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/trips/g-angola-kwanza-coast-offshore/": {
@@ -1178,7 +1178,7 @@
   "/trips/g-chile-futaleufu-river/": {
     "kind": "article",
     "title": "Futaleuf\u00fa River: glacier-influenced trout expedition | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/trips/g-colombia-tomo-river/": {
@@ -1400,7 +1400,7 @@
   "/trips/g-bahamas-bimini/": {
     "kind": "article",
     "title": "Bimini: island-based billfish charter | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/trips/g-bahamas-ragged-island/": {
@@ -1508,7 +1508,7 @@
   "/trips/g-bhutan-manas-river-lodge/": {
     "kind": "article",
     "title": "Manas River Lodge: lodge-based mahseer fly fishing | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/trips/g-sri-lanka-bolgoda-lake/": {
@@ -1772,7 +1772,7 @@
   "/trips/g-samoa-apia/": {
     "kind": "article",
     "title": "Apia: select a trolling-focused charter | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/trips/g-palau-palau-swings-trolling-charter/": {
@@ -1790,7 +1790,7 @@
   "/trips/g-marshall-islands-majuro/": {
     "kind": "article",
     "title": "Majuro: hotel-arranged offshore fishing | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/trips/g-marshall-islands-arno-atoll/": {
@@ -1958,7 +1958,7 @@
   "/trips/cairns-heavy-tackle-marlin/": {
     "kind": "article",
     "title": "Cairns heavy-tackle black marlin: reef-edge access and a multi-day charter plan | Castward",
-    "noindex": false,
+    "noindex": true,
     "redirectTo": null
   },
   "/regions/north-america/": {
@@ -2012,7 +2012,7 @@
   "/countries/belize/": {
     "kind": "country-hub",
     "title": "Belize fishing trips, locations and gear planning | Castward",
-    "noindex": false,
+    "noindex": true,
     "redirectTo": null
   },
   "/countries/canada/": {
@@ -2024,7 +2024,7 @@
   "/countries/costa-rica/": {
     "kind": "country-hub",
     "title": "Costa Rica fishing trips, locations and gear planning | Castward",
-    "noindex": false,
+    "noindex": true,
     "redirectTo": null
   },
   "/countries/cuba/": {
@@ -2240,7 +2240,7 @@
   "/countries/iceland/": {
     "kind": "country-hub",
     "title": "Iceland fishing trips, locations and gear planning | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/countries/ireland/": {
@@ -2300,7 +2300,7 @@
   "/countries/norway/": {
     "kind": "country-hub",
     "title": "Norway fishing trips, locations and gear planning | Castward",
-    "noindex": false,
+    "noindex": true,
     "redirectTo": null
   },
   "/countries/poland/": {
@@ -2336,7 +2336,7 @@
   "/countries/slovenia/": {
     "kind": "country-hub",
     "title": "Slovenia fishing trips, locations and gear planning | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/countries/spain/": {
@@ -2348,7 +2348,7 @@
   "/countries/sweden/": {
     "kind": "country-hub",
     "title": "Sweden fishing trips, locations and gear planning | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/countries/switzerland/": {
@@ -2624,7 +2624,7 @@
   "/countries/australia/": {
     "kind": "country-hub",
     "title": "Australia fishing trips, locations and gear planning | Castward",
-    "noindex": false,
+    "noindex": true,
     "redirectTo": null
   },
   "/countries/cook-islands/": {
@@ -2660,7 +2660,7 @@
   "/countries/new-zealand/": {
     "kind": "country-hub",
     "title": "New Zealand fishing trips, locations and gear planning | Castward",
-    "noindex": false,
+    "noindex": true,
     "redirectTo": null
   },
   "/countries/niue/": {
@@ -2732,31 +2732,31 @@
   "/north-america/united-states/alaska/homer-kachemak-bay-saltwater-bottom-fishing/": {
     "kind": "article",
     "title": "Homer / Kachemak Bay fishing: saltwater bottom fishing trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/alaska/kenai-river-river-salmon/": {
     "kind": "article",
     "title": "Kenai River fishing: river salmon trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/alaska/kenai-river-river-trout-and-grayling/": {
     "kind": "article",
     "title": "Kenai River fishing: river trout and grayling trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/alaska/russian-river-river-salmon/": {
     "kind": "article",
     "title": "Russian River fishing: river salmon trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/alaska/yakutat-bay-saltwater-bottom-fishing/": {
     "kind": "article",
     "title": "Yakutat halibut charter guide: depth, tackle and boat-day preparation | Castward",
-    "noindex": false,
+    "noindex": true,
     "redirectTo": null
   },
   "/north-america/united-states/alaska/delta-clearwater-river-spring-fed-trout-and-grayling/": {
@@ -2768,79 +2768,79 @@
   "/north-america/united-states/alaska/tanana-drainage-remote-lodge-and-expedition/": {
     "kind": "article",
     "title": "Tanana drainage fishing: glacial mainstem versus clear tributaries | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/alaska/naknek-river-river-trout-and-grayling/": {
     "kind": "article",
     "title": "Naknek River fishing: river trout and grayling trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/alaska/kvichak-river-remote-lodge-and-expedition/": {
     "kind": "article",
     "title": "Kvichak River fishing: remote lodge and expedition trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/alaska/nushagak-river-remote-lodge-and-expedition/": {
     "kind": "article",
     "title": "Nushagak River fishing: remote lodge and expedition trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/alaska/togiak-river-remote-lodge-and-expedition/": {
     "kind": "article",
     "title": "Togiak River fishing: remote lodge and expedition trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/alaska/goodnews-river-remote-lodge-and-expedition/": {
     "kind": "article",
     "title": "Goodnews River fishing: remote lodge and expedition trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/alaska/karluk-river-kodiak-steelhead-and-anadromous-trout/": {
     "kind": "article",
     "title": "Karluk River / Kodiak fishing: steelhead and anadromous trout trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/alaska/kodiak-coastal-waters-saltwater-bottom-fishing/": {
     "kind": "article",
     "title": "Kodiak coastal waters fishing: saltwater bottom fishing trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/alaska/seward-resurrection-bay-coastal-salmon/": {
     "kind": "article",
     "title": "Seward / Resurrection Bay fishing: coastal salmon trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/alaska/prince-william-sound-valdez-coastal-salmon/": {
     "kind": "article",
     "title": "Prince William Sound / Valdez fishing: coastal salmon trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/alaska/talkeetna-clear-creek-remote-lodge-and-expedition/": {
     "kind": "article",
     "title": "Talkeetna / Clear Creek fishing: remote lodge and expedition trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/alaska/quartz-lake-ice-fishing/": {
     "kind": "article",
     "title": "Quartz Lake fishing: ice fishing trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/alaska/juneau-coastal-waters-coastal-salmon/": {
     "kind": "article",
     "title": "Juneau coastal waters fishing: coastal salmon trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/hawaii/kona-offshore-offshore-pelagic-fishing/": {
@@ -2894,7 +2894,7 @@
   "/north-america/united-states/washington/columbia-river-lower-reach-river-salmon/": {
     "kind": "article",
     "title": "Columbia River / lower reach fishing: river salmon trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/washington/olympic-peninsula-sol-duc-steelhead-and-anadromous-trout/": {
@@ -2918,25 +2918,25 @@
   "/north-america/united-states/washington/lake-washington-coldwater-lake-fishing/": {
     "kind": "article",
     "title": "Lake Washington fishing: coldwater lake fishing trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/washington/lake-chelan-coldwater-lake-fishing/": {
     "kind": "article",
     "title": "Lake Chelan fishing: coldwater lake fishing trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/washington/potholes-reservoir-walleye-and-reservoir-fishing/": {
     "kind": "article",
     "title": "Potholes Reservoir fishing: walleye and reservoir fishing trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/washington/lake-roosevelt-coldwater-lake-fishing/": {
     "kind": "article",
     "title": "Lake Roosevelt fishing: coldwater lake fishing trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/washington/westport-offshore-offshore-pelagic-fishing/": {
@@ -2954,7 +2954,7 @@
   "/north-america/united-states/oregon/deschutes-river-lower-reach-river-trout-and-grayling/": {
     "kind": "article",
     "title": "Deschutes River / lower reach fishing: river trout and grayling trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/oregon/rogue-river-steelhead-and-anadromous-trout/": {
@@ -2966,7 +2966,7 @@
   "/north-america/united-states/oregon/columbia-river-oregon-launches-sturgeon-fishing/": {
     "kind": "article",
     "title": "Columbia River / Oregon launches fishing: sturgeon fishing trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/oregon/mckenzie-river-river-trout-and-grayling/": {
@@ -2984,19 +2984,19 @@
   "/north-america/united-states/oregon/umpqua-river-north-umpqua-steelhead-and-anadromous-trout/": {
     "kind": "article",
     "title": "Umpqua River / North Umpqua fishing: steelhead and anadromous trout trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/oregon/klamath-lake-coldwater-lake-fishing/": {
     "kind": "article",
     "title": "Klamath Lake fishing: coldwater lake fishing trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/oregon/crane-prairie-reservoir-coldwater-lake-fishing/": {
     "kind": "article",
     "title": "Crane Prairie Reservoir fishing: coldwater lake fishing trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/oregon/newport-offshore-offshore-pelagic-fishing/": {
@@ -3026,13 +3026,13 @@
   "/north-america/united-states/california/mccloud-river-river-trout-and-grayling/": {
     "kind": "article",
     "title": "McCloud River: mountain-river fly fishing | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/california/hat-creek-spring-fed-trout-and-grayling/": {
     "kind": "article",
     "title": "Hat Creek: spring-fed trout presentation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/california/fall-river-spring-fed-trout-and-grayling/": {
@@ -3122,7 +3122,7 @@
   "/north-america/united-states/nevada/wildhorse-reservoir-coldwater-lake-fishing/": {
     "kind": "article",
     "title": "Wildhorse Reservoir fishing: coldwater lake fishing trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/nevada/ruby-mountains-accessible-alpine-lakes-alpine-lake-fishing/": {
@@ -3140,13 +3140,13 @@
   "/north-america/united-states/arizona/lake-havasu-arizona-base-lake-and-reservoir-bass/": {
     "kind": "article",
     "title": "Lake Havasu / Arizona base fishing: lake and reservoir bass trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/arizona/roosevelt-lake-lake-and-reservoir-bass/": {
     "kind": "article",
     "title": "Roosevelt Lake fishing: lake and reservoir bass trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/arizona/white-mountains-big-lake-coldwater-lake-fishing/": {
@@ -3164,7 +3164,7 @@
   "/north-america/united-states/new-mexico/san-juan-river-navajo-dam-river-trout-and-grayling/": {
     "kind": "article",
     "title": "San Juan River / Navajo Dam fishing: river trout and grayling trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/new-mexico/rio-grande-taos-reach-river-trout-and-grayling/": {
@@ -3182,13 +3182,13 @@
   "/north-america/united-states/new-mexico/eagle-nest-lake-coldwater-lake-fishing/": {
     "kind": "article",
     "title": "Eagle Nest Lake fishing: coldwater lake fishing trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/new-mexico/elephant-butte-reservoir-lake-and-reservoir-bass/": {
     "kind": "article",
     "title": "Elephant Butte Reservoir fishing: lake and reservoir bass trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/idaho/henry-s-fork-spring-fed-trout-and-grayling/": {
@@ -3200,7 +3200,7 @@
   "/north-america/united-states/idaho/south-fork-snake-river-river-trout-and-grayling/": {
     "kind": "article",
     "title": "South Fork Snake River fishing: river trout and grayling trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/idaho/silver-creek-spring-fed-trout-and-grayling/": {
@@ -3224,7 +3224,7 @@
   "/north-america/united-states/idaho/lake-pend-oreille-coldwater-lake-fishing/": {
     "kind": "article",
     "title": "Lake Pend Oreille fishing: coldwater lake fishing trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/idaho/lake-coeur-d-alene-coldwater-lake-fishing/": {
@@ -3242,7 +3242,7 @@
   "/north-america/united-states/montana/madison-river-river-trout-and-grayling/": {
     "kind": "article",
     "title": "Madison River fishing: river trout and grayling trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/montana/missouri-river-craig-river-trout-and-grayling/": {
@@ -3254,25 +3254,25 @@
   "/north-america/united-states/montana/yellowstone-river-paradise-valley-river-trout-and-grayling/": {
     "kind": "article",
     "title": "Yellowstone River / Paradise Valley fishing: river trout and grayling trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/montana/gallatin-river-river-trout-and-grayling/": {
     "kind": "article",
     "title": "Gallatin River fishing: river trout and grayling trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/montana/bighorn-river-river-trout-and-grayling/": {
     "kind": "article",
     "title": "Bighorn River fishing: river trout and grayling trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/montana/bitterroot-river-river-trout-and-grayling/": {
     "kind": "article",
     "title": "Bitterroot River fishing: river trout and grayling trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/montana/blackfoot-river-river-trout-and-grayling/": {
@@ -3284,7 +3284,7 @@
   "/north-america/united-states/montana/flathead-lake-coldwater-lake-fishing/": {
     "kind": "article",
     "title": "Flathead Lake fishing: coldwater lake fishing trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/montana/rock-creek-near-missoula-small-stream-fishing/": {
@@ -3296,7 +3296,7 @@
   "/north-america/united-states/montana/beaverhead-river-river-trout-and-grayling/": {
     "kind": "article",
     "title": "Beaverhead River fishing: river trout and grayling trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/wyoming/north-platte-grey-reef-river-trout-and-grayling/": {
@@ -3308,7 +3308,7 @@
   "/north-america/united-states/wyoming/snake-river-jackson-river-trout-and-grayling/": {
     "kind": "article",
     "title": "Snake River / Jackson fishing: river trout and grayling trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/wyoming/north-platte-miracle-mile-river-trout-and-grayling/": {
@@ -3320,7 +3320,7 @@
   "/north-america/united-states/wyoming/green-river-pinedale-river-trout-and-grayling/": {
     "kind": "article",
     "title": "Green River / Pinedale fishing: river trout and grayling trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/wyoming/wind-river-dubois-river-trout-and-grayling/": {
@@ -3344,13 +3344,13 @@
   "/north-america/united-states/wyoming/flaming-gorge-wyoming-base-coldwater-lake-fishing/": {
     "kind": "article",
     "title": "Flaming Gorge / Wyoming base fishing: coldwater lake fishing trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/colorado/south-platte-eleven-mile-canyon-river-trout-and-grayling/": {
     "kind": "article",
     "title": "South Platte / Eleven Mile Canyon fishing: river trout and grayling trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/colorado/rocky-mountain-national-park-verified-alpine-lakes-alpine-lake-fishing/": {
@@ -3362,7 +3362,7 @@
   "/north-america/united-states/colorado/south-platte-dream-stream-river-trout-and-grayling/": {
     "kind": "article",
     "title": "South Platte / Dream Stream fishing: river trout and grayling trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/colorado/arkansas-river-salida-river-trout-and-grayling/": {
@@ -3380,7 +3380,7 @@
   "/north-america/united-states/colorado/roaring-fork-river-river-trout-and-grayling/": {
     "kind": "article",
     "title": "Roaring Fork River fishing: river trout and grayling trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/colorado/gunnison-river-gunnison-gorge-remote-lodge-and-expedition/": {
@@ -3398,7 +3398,7 @@
   "/north-america/united-states/colorado/blue-mesa-reservoir-coldwater-lake-fishing/": {
     "kind": "article",
     "title": "Blue Mesa Reservoir fishing: coldwater lake fishing trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/colorado/steamboat-lake-ice-fishing/": {
@@ -3434,49 +3434,49 @@
   "/north-america/united-states/utah/flaming-gorge-utah-base-coldwater-lake-fishing/": {
     "kind": "article",
     "title": "Flaming Gorge / Utah base fishing: coldwater lake fishing trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/utah/lake-powell-utah-base-lake-and-reservoir-bass/": {
     "kind": "article",
     "title": "Lake Powell / Utah base fishing: lake and reservoir bass trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/utah/uinta-mountains-verified-lakes-alpine-lake-fishing/": {
     "kind": "article",
     "title": "Uinta Mountains / verified lakes fishing: alpine lake fishing trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/north-dakota/devils-lake-walleye-and-reservoir-fishing/": {
     "kind": "article",
     "title": "Devils Lake fishing: walleye and reservoir fishing trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/north-dakota/lake-sakakawea-walleye-and-reservoir-fishing/": {
     "kind": "article",
     "title": "Lake Sakakawea fishing: walleye and reservoir fishing trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/north-dakota/red-river-fargo-reach-catfish-fishing/": {
     "kind": "article",
     "title": "Red River / Fargo reach fishing: catfish fishing trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/north-dakota/lake-audubon-ice-fishing/": {
     "kind": "article",
     "title": "Lake Audubon fishing: ice fishing trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/south-dakota/lake-oahe-pierre-base-walleye-and-reservoir-fishing/": {
     "kind": "article",
     "title": "Lake Oahe / Pierre base fishing: walleye and reservoir fishing trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/south-dakota/black-hills-rapid-creek-small-stream-fishing/": {
@@ -3488,19 +3488,19 @@
   "/north-america/united-states/south-dakota/lake-sharpe-walleye-and-reservoir-fishing/": {
     "kind": "article",
     "title": "Lake Sharpe fishing: walleye and reservoir fishing trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/south-dakota/waubay-lake-ice-fishing/": {
     "kind": "article",
     "title": "Waubay Lake fishing: ice fishing trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/nebraska/lake-mcconaughy-walleye-and-reservoir-fishing/": {
     "kind": "article",
     "title": "Lake McConaughy fishing: walleye and reservoir fishing trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/nebraska/niobrara-river-trout-reaches-small-stream-fishing/": {
@@ -3536,7 +3536,7 @@
   "/north-america/united-states/oklahoma/lake-texoma-oklahoma-base-lake-and-reservoir-bass/": {
     "kind": "article",
     "title": "Lake Texoma / Oklahoma base fishing: lake and reservoir bass trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/oklahoma/lower-mountain-fork-river-river-trout-and-grayling/": {
@@ -3560,13 +3560,13 @@
   "/north-america/united-states/oklahoma/illinois-river-tahlequah-river-smallmouth-and-bass/": {
     "kind": "article",
     "title": "Illinois River / Tahlequah fishing: river smallmouth and bass trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/minnesota/lake-of-the-woods-minnesota-base-walleye-and-reservoir-fishing/": {
     "kind": "article",
     "title": "Lake of the Woods / Minnesota base fishing: walleye and reservoir fishing trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/minnesota/boundary-waters-verified-entry-route-remote-lodge-and-expedition/": {
@@ -3578,37 +3578,37 @@
   "/north-america/united-states/minnesota/mille-lacs-lake-lake-and-reservoir-bass/": {
     "kind": "article",
     "title": "Mille Lacs Lake fishing: lake and reservoir bass trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/minnesota/leech-lake-large-freshwater-predators/": {
     "kind": "article",
     "title": "Leech Lake fishing: large freshwater predators trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/minnesota/lake-winnibigoshish-walleye-and-reservoir-fishing/": {
     "kind": "article",
     "title": "Lake Winnibigoshish fishing: walleye and reservoir fishing trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/minnesota/lake-vermilion-walleye-and-reservoir-fishing/": {
     "kind": "article",
     "title": "Lake Vermilion fishing: walleye and reservoir fishing trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/minnesota/rainy-river-sturgeon-fishing/": {
     "kind": "article",
     "title": "Rainy River fishing: sturgeon fishing trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/minnesota/lake-superior-duluth-great-lakes-open-water-fishing/": {
     "kind": "article",
     "title": "Lake Superior / Duluth fishing: great lakes open-water fishing trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/minnesota/root-river-southeast-minnesota-spring-fed-trout-and-grayling/": {
@@ -3620,7 +3620,7 @@
   "/north-america/united-states/minnesota/upper-red-lake-ice-fishing/": {
     "kind": "article",
     "title": "Upper Red Lake fishing: ice fishing trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/wisconsin/green-bay-walleye-and-reservoir-fishing/": {
@@ -3674,7 +3674,7 @@
   "/north-america/united-states/wisconsin/bois-brule-river-steelhead-and-anadromous-trout/": {
     "kind": "article",
     "title": "Bois Brule River fishing: steelhead and anadromous trout trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/wisconsin/petenwell-flowage-ice-fishing/": {
@@ -3692,25 +3692,25 @@
   "/north-america/united-states/michigan/au-sable-river-river-trout-and-grayling/": {
     "kind": "article",
     "title": "Au Sable River fishing: river trout and grayling trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/michigan/pere-marquette-river-steelhead-and-anadromous-trout/": {
     "kind": "article",
     "title": "Pere Marquette River fishing: steelhead and anadromous trout trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/michigan/manistee-river-tippy-dam-reach-steelhead-and-anadromous-trout/": {
     "kind": "article",
     "title": "Manistee River / Tippy Dam reach fishing: steelhead and anadromous trout trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/michigan/muskegon-river-steelhead-and-anadromous-trout/": {
     "kind": "article",
     "title": "Muskegon River fishing: steelhead and anadromous trout trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/michigan/lake-st-clair-michigan-base-large-freshwater-predators/": {
@@ -3728,13 +3728,13 @@
   "/north-america/united-states/michigan/detroit-river-walleye-and-reservoir-fishing/": {
     "kind": "article",
     "title": "Detroit River fishing: walleye and reservoir fishing trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/michigan/grand-traverse-bay-lake-and-reservoir-bass/": {
     "kind": "article",
     "title": "Grand Traverse Bay fishing: lake and reservoir bass trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/michigan/lake-superior-marquette-great-lakes-open-water-fishing/": {
@@ -3746,7 +3746,7 @@
   "/north-america/united-states/michigan/houghton-lake-ice-fishing/": {
     "kind": "article",
     "title": "Houghton Lake fishing: ice fishing trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/michigan/escanaba-little-bay-de-noc-walleye-and-reservoir-fishing/": {
@@ -3758,31 +3758,31 @@
   "/north-america/united-states/illinois/lake-michigan-chicago-great-lakes-open-water-fishing/": {
     "kind": "article",
     "title": "Lake Michigan / Chicago fishing: great lakes open-water fishing trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/illinois/rend-lake-panfish-and-family-fishing/": {
     "kind": "article",
     "title": "Rend Lake fishing: panfish and family fishing trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/illinois/kankakee-river-river-smallmouth-and-bass/": {
     "kind": "article",
     "title": "Kankakee River fishing: river smallmouth and bass trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/illinois/illinois-river-starved-rock-area-walleye-and-reservoir-fishing/": {
     "kind": "article",
     "title": "Illinois River / Starved Rock area fishing: walleye and reservoir fishing trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/indiana/lake-michigan-michigan-city-great-lakes-open-water-fishing/": {
     "kind": "article",
     "title": "Lake Michigan / Michigan City fishing: great lakes open-water fishing trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/indiana/lake-monroe-panfish-and-family-fishing/": {
@@ -3800,13 +3800,13 @@
   "/north-america/united-states/indiana/white-river-central-indiana-river-smallmouth-and-bass/": {
     "kind": "article",
     "title": "White River / central Indiana fishing: river smallmouth and bass trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/ohio/lake-erie-port-clinton-walleye-and-reservoir-fishing/": {
     "kind": "article",
     "title": "Lake Erie / Port Clinton fishing: walleye and reservoir fishing trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/ohio/mad-river-small-stream-fishing/": {
@@ -3818,7 +3818,7 @@
   "/north-america/united-states/ohio/maumee-river-walleye-and-reservoir-fishing/": {
     "kind": "article",
     "title": "Maumee River fishing: walleye and reservoir fishing trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/ohio/grand-river-lake-erie-tributary-steelhead-and-anadromous-trout/": {
@@ -3830,61 +3830,61 @@
   "/north-america/united-states/ohio/alum-creek-lake-large-freshwater-predators/": {
     "kind": "article",
     "title": "Alum Creek Lake fishing: large freshwater predators trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/ohio/ohio-river-cincinnati-reach-catfish-fishing/": {
     "kind": "article",
     "title": "Ohio River / Cincinnati reach fishing: catfish fishing trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/iowa/spirit-lake-iowa-great-lakes-walleye-and-reservoir-fishing/": {
     "kind": "article",
     "title": "Spirit Lake / Iowa Great Lakes fishing: walleye and reservoir fishing trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/iowa/northeast-iowa-big-spring-trout-water-spring-fed-trout-and-grayling/": {
     "kind": "article",
     "title": "Northeast Iowa / Big Spring trout water fishing: spring-fed trout and grayling trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/iowa/mississippi-river-pool-9-iowa-base-walleye-and-reservoir-fishing/": {
     "kind": "article",
     "title": "Mississippi River / Pool 9 Iowa base fishing: walleye and reservoir fishing trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/missouri/lake-taneycomo-river-trout-and-grayling/": {
     "kind": "article",
     "title": "Lake Taneycomo fishing: river trout and grayling trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/missouri/table-rock-lake-lake-and-reservoir-bass/": {
     "kind": "article",
     "title": "Table Rock Lake fishing: lake and reservoir bass trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/missouri/lake-of-the-ozarks-lake-and-reservoir-bass/": {
     "kind": "article",
     "title": "Lake of the Ozarks fishing: lake and reservoir bass trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/missouri/current-river-river-smallmouth-and-bass/": {
     "kind": "article",
     "title": "Current River fishing: river smallmouth and bass trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/missouri/truman-lake-panfish-and-family-fishing/": {
     "kind": "article",
     "title": "Truman Lake fishing: panfish and family fishing trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/maine/moosehead-lake-coldwater-lake-fishing/": {
@@ -3896,7 +3896,7 @@
   "/north-america/united-states/maine/kennebec-river-upper-reach-river-trout-and-grayling/": {
     "kind": "article",
     "title": "Kennebec River / upper reach fishing: river trout and grayling trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/maine/penobscot-bay-inshore-estuary-fishing/": {
@@ -3920,7 +3920,7 @@
   "/north-america/united-states/maine/belgrade-lakes-lake-and-reservoir-bass/": {
     "kind": "article",
     "title": "Belgrade Lakes fishing: lake and reservoir bass trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/maine/moosehead-lake-guided-winter-outing-ice-fishing/": {
@@ -3932,7 +3932,7 @@
   "/north-america/united-states/new-hampshire/lake-winnipesaukee-coldwater-lake-fishing/": {
     "kind": "article",
     "title": "Lake Winnipesaukee fishing: coldwater lake fishing trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/new-hampshire/upper-connecticut-river-pittsburg-river-trout-and-grayling/": {
@@ -3956,25 +3956,25 @@
   "/north-america/united-states/vermont/lake-champlain-vermont-base-lake-and-reservoir-bass/": {
     "kind": "article",
     "title": "Lake Champlain / Vermont base fishing: lake and reservoir bass trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/vermont/battenkill-vermont-reach-river-trout-and-grayling/": {
     "kind": "article",
     "title": "Battenkill / Vermont reach fishing: river trout and grayling trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/vermont/otter-creek-river-trout-and-grayling/": {
     "kind": "article",
     "title": "Otter Creek fishing: river trout and grayling trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/vermont/lake-memphremagog-vermont-base-coldwater-lake-fishing/": {
     "kind": "article",
     "title": "Lake Memphremagog / Vermont base fishing: coldwater lake fishing trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/massachusetts/cape-cod-monomoy-inshore-estuary-fishing/": {
@@ -3986,13 +3986,13 @@
   "/north-america/united-states/massachusetts/deerfield-river-river-trout-and-grayling/": {
     "kind": "article",
     "title": "Deerfield River fishing: river trout and grayling trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/massachusetts/cape-cod-canal-rocky-shore-fishing/": {
     "kind": "article",
     "title": "Cape Cod Canal fishing: rocky-shore fishing trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/massachusetts/gloucester-offshore-offshore-pelagic-fishing/": {
@@ -4040,7 +4040,7 @@
   "/north-america/united-states/connecticut/long-island-sound-connecticut-base-inshore-estuary-fishing/": {
     "kind": "article",
     "title": "Long Island Sound / Connecticut base fishing: inshore estuary fishing trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/connecticut/housatonic-river-cornwall-river-trout-and-grayling/": {
@@ -4052,7 +4052,7 @@
   "/north-america/united-states/new-york/salmon-river-pulaski-steelhead-and-anadromous-trout/": {
     "kind": "article",
     "title": "Salmon River / Pulaski fishing: steelhead and anadromous trout trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/new-york/catskills-beaver-kill-river-trout-and-grayling/": {
@@ -4070,7 +4070,7 @@
   "/north-america/united-states/new-york/lake-ontario-oswego-great-lakes-open-water-fishing/": {
     "kind": "article",
     "title": "Lake Ontario / Oswego fishing: great lakes open-water fishing trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/new-york/montauk-inshore-estuary-fishing/": {
@@ -4082,13 +4082,13 @@
   "/north-america/united-states/new-york/adirondacks-ausable-river-river-trout-and-grayling/": {
     "kind": "article",
     "title": "Adirondacks / Ausable River fishing: river trout and grayling trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/new-york/lake-champlain-new-york-base-lake-and-reservoir-bass/": {
     "kind": "article",
     "title": "Lake Champlain / New York base fishing: lake and reservoir bass trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/new-york/thousand-islands-st-lawrence-river-large-freshwater-predators/": {
@@ -4106,7 +4106,7 @@
   "/north-america/united-states/new-york/hudson-river-tidal-reach-inshore-estuary-fishing/": {
     "kind": "article",
     "title": "Hudson River / tidal reach fishing: inshore estuary fishing trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/new-jersey/raritan-bay-inshore-estuary-fishing/": {
@@ -4214,7 +4214,7 @@
   "/north-america/united-states/maryland/gunpowder-falls-river-trout-and-grayling/": {
     "kind": "article",
     "title": "Gunpowder Falls fishing: river trout and grayling trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/maryland/ocean-city-offshore-offshore-pelagic-fishing/": {
@@ -4226,31 +4226,31 @@
   "/north-america/united-states/maryland/deep-creek-lake-walleye-and-reservoir-fishing/": {
     "kind": "article",
     "title": "Deep Creek Lake fishing: walleye and reservoir fishing trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/maryland/potomac-river-maryland-base-river-smallmouth-and-bass/": {
     "kind": "article",
     "title": "Potomac River / Maryland base fishing: river smallmouth and bass trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/virginia/chesapeake-bay-virginia-beach-base-inshore-estuary-fishing/": {
     "kind": "article",
     "title": "Chesapeake Bay / Virginia Beach base fishing: inshore estuary fishing trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/virginia/shenandoah-river-river-smallmouth-and-bass/": {
     "kind": "article",
     "title": "Shenandoah River fishing: river smallmouth and bass trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/virginia/jackson-river-tailwater-river-trout-and-grayling/": {
     "kind": "article",
     "title": "Jackson River / tailwater fishing: river trout and grayling trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/virginia/mossy-creek-spring-fed-trout-and-grayling/": {
@@ -4262,25 +4262,25 @@
   "/north-america/united-states/virginia/smith-mountain-lake-lake-and-reservoir-bass/": {
     "kind": "article",
     "title": "Smith Mountain Lake fishing: lake and reservoir bass trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/virginia/james-river-tidal-reach-catfish-fishing/": {
     "kind": "article",
     "title": "James River / tidal reach fishing: catfish fishing trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/virginia/south-holston-reservoir-virginia-base-coldwater-lake-fishing/": {
     "kind": "article",
     "title": "South Holston Reservoir / Virginia base fishing: coldwater lake fishing trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/west-virginia/new-river-river-smallmouth-and-bass/": {
     "kind": "article",
     "title": "New River fishing: river smallmouth and bass trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/west-virginia/elk-river-upper-reach-spring-fed-trout-and-grayling/": {
@@ -4298,19 +4298,19 @@
   "/north-america/united-states/west-virginia/summersville-lake-lake-and-reservoir-bass/": {
     "kind": "article",
     "title": "Summersville Lake fishing: lake and reservoir bass trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/kentucky/cumberland-river-below-wolf-creek-dam-river-trout-and-grayling/": {
     "kind": "article",
     "title": "Cumberland River / below Wolf Creek Dam fishing: river trout and grayling trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/kentucky/kentucky-lake-kentucky-base-panfish-and-family-fishing/": {
     "kind": "article",
     "title": "Kentucky Lake / Kentucky base fishing: panfish and family fishing trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/kentucky/dale-hollow-kentucky-base-lake-and-reservoir-bass/": {
@@ -4322,13 +4322,13 @@
   "/north-america/united-states/kentucky/cave-run-lake-large-freshwater-predators/": {
     "kind": "article",
     "title": "Cave Run Lake fishing: large freshwater predators trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/kentucky/green-river-lake-panfish-and-family-fishing/": {
     "kind": "article",
     "title": "Green River Lake fishing: panfish and family fishing trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/tennessee/south-holston-river-river-trout-and-grayling/": {
@@ -4358,13 +4358,13 @@
   "/north-america/united-states/tennessee/dale-hollow-tennessee-base-lake-and-reservoir-bass/": {
     "kind": "article",
     "title": "Dale Hollow / Tennessee base fishing: lake and reservoir bass trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/tennessee/reelfoot-lake-panfish-and-family-fishing/": {
     "kind": "article",
     "title": "Reelfoot Lake fishing: panfish and family fishing trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/tennessee/great-smoky-mountains-little-river-small-stream-fishing/": {
@@ -4376,13 +4376,13 @@
   "/north-america/united-states/north-carolina/cape-hatteras-beaches-surf-and-beach-fishing/": {
     "kind": "article",
     "title": "Cape Hatteras surf fishing: access, seasons and packing | Castward",
-    "noindex": false,
+    "noindex": true,
     "redirectTo": null
   },
   "/north-america/united-states/north-carolina/outer-banks-oregon-inlet-offshore-offshore-pelagic-fishing/": {
     "kind": "article",
     "title": "Outer Banks offshore charters: Oregon Inlet trip guide | Castward",
-    "noindex": false,
+    "noindex": true,
     "redirectTo": null
   },
   "/north-america/united-states/north-carolina/pamlico-sound-inshore-estuary-fishing/": {
@@ -4436,19 +4436,19 @@
   "/north-america/united-states/south-carolina/charleston-marshes-inshore-estuary-fishing/": {
     "kind": "article",
     "title": "Charleston redfish trips: marsh, tides and departures | Castward",
-    "noindex": false,
+    "noindex": true,
     "redirectTo": null
   },
   "/north-america/united-states/south-carolina/beaufort-port-royal-sound-inshore-estuary-fishing/": {
     "kind": "article",
     "title": "Beaufort and Port Royal Sound redfish: boat choice, access and preparation | Castward",
-    "noindex": false,
+    "noindex": true,
     "redirectTo": null
   },
   "/north-america/united-states/south-carolina/lake-murray-lake-and-reservoir-bass/": {
     "kind": "article",
     "title": "Lake Murray fishing: lake and reservoir bass trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/south-carolina/santee-cooper-lake-marion-catfish-fishing/": {
@@ -4514,7 +4514,7 @@
   "/north-america/united-states/florida/lake-okeechobee-lake-and-reservoir-bass/": {
     "kind": "article",
     "title": "Lake Okeechobee bass fishing: choose your launch and trip | Castward",
-    "noindex": false,
+    "noindex": true,
     "redirectTo": null
   },
   "/north-america/united-states/florida/florida-keys-tarpon-focused-trip-saltwater-flats/": {
@@ -4550,7 +4550,7 @@
   "/north-america/united-states/florida/mosquito-lagoon-inshore-estuary-fishing/": {
     "kind": "article",
     "title": "Mosquito Lagoon fishing: inshore estuary fishing trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/florida/indian-river-lagoon-inshore-estuary-fishing/": {
@@ -4568,7 +4568,7 @@
   "/north-america/united-states/florida/boca-grande-inshore-estuary-fishing/": {
     "kind": "article",
     "title": "Boca Grande fishing: inshore estuary fishing trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/florida/charlotte-harbor-inshore-estuary-fishing/": {
@@ -4610,31 +4610,31 @@
   "/north-america/united-states/florida/st-johns-river-freshwater-reach-river-smallmouth-and-bass/": {
     "kind": "article",
     "title": "St. Johns River / freshwater reach fishing: river smallmouth and bass trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/florida/suwannee-river-river-smallmouth-and-bass/": {
     "kind": "article",
     "title": "Suwannee River fishing: river smallmouth and bass trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/florida/sebastian-inlet-accessible-shoreline-rocky-shore-fishing/": {
     "kind": "article",
     "title": "Sebastian Inlet / accessible shoreline fishing: rocky-shore fishing trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/alabama/lake-guntersville-lake-and-reservoir-bass/": {
     "kind": "article",
     "title": "Lake Guntersville fishing: lake and reservoir bass trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/alabama/mobile-bay-inshore-estuary-fishing/": {
     "kind": "article",
     "title": "Mobile Bay fishing: inshore estuary fishing trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/alabama/orange-beach-offshore-offshore-pelagic-fishing/": {
@@ -4646,7 +4646,7 @@
   "/north-america/united-states/alabama/pickwick-lake-alabama-base-lake-and-reservoir-bass/": {
     "kind": "article",
     "title": "Pickwick Lake / Alabama base fishing: lake and reservoir bass trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/alabama/smith-lake-lake-and-reservoir-bass/": {
@@ -4670,7 +4670,7 @@
   "/north-america/united-states/mississippi/grenada-lake-panfish-and-family-fishing/": {
     "kind": "article",
     "title": "Grenada Lake fishing: panfish and family fishing trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/mississippi/sardis-lake-panfish-and-family-fishing/": {
@@ -4796,13 +4796,13 @@
   "/north-america/united-states/texas/galveston-bay-inshore-estuary-fishing/": {
     "kind": "article",
     "title": "Galveston Bay fishing: inshore estuary fishing trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/texas/lower-laguna-madre-south-padre-base-inshore-estuary-fishing/": {
     "kind": "article",
     "title": "Lower Laguna Madre / South Padre base fishing: inshore estuary fishing trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/texas/upper-laguna-madre-corpus-christi-base-inshore-estuary-fishing/": {
@@ -4826,31 +4826,31 @@
   "/north-america/united-states/texas/guadalupe-river-below-canyon-lake-river-trout-and-grayling/": {
     "kind": "article",
     "title": "Guadalupe River / below Canyon Lake fishing: river trout and grayling trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/texas/llano-river-river-smallmouth-and-bass/": {
     "kind": "article",
     "title": "Llano River fishing: river smallmouth and bass trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/texas/lake-texoma-texas-base-lake-and-reservoir-bass/": {
     "kind": "article",
     "title": "Lake Texoma / Texas base fishing: lake and reservoir bass trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/texas/sam-rayburn-reservoir-lake-and-reservoir-bass/": {
     "kind": "article",
     "title": "Sam Rayburn Reservoir fishing: lake and reservoir bass trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/texas/toledo-bend-texas-base-panfish-and-family-fishing/": {
     "kind": "article",
     "title": "Toledo Bend / Texas base fishing: panfish and family fishing trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/texas/lake-amistad-texas-base-lake-and-reservoir-bass/": {
@@ -4886,7 +4886,7 @@
   "/north-america/canada/british-columbia/campbell-river-freshwater-reach-river-salmon/": {
     "kind": "article",
     "title": "Campbell River \u2014 freshwater: river-based salmon fishing | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/canada/british-columbia/haida-gwaii-coastal-salmon/": {
@@ -4916,7 +4916,7 @@
   "/north-america/canada/british-columbia/port-hardy-coastal-salmon/": {
     "kind": "article",
     "title": "Port Hardy fishing: coastal salmon trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/canada/british-columbia/cowichan-river-river-trout-and-grayling/": {
@@ -4934,25 +4934,25 @@
   "/north-america/canada/british-columbia/kootenay-lake-coldwater-lake-fishing/": {
     "kind": "article",
     "title": "Kootenay Lake fishing: coldwater lake fishing trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/canada/british-columbia/shuswap-lake-coldwater-lake-fishing/": {
     "kind": "article",
     "title": "Shuswap Lake fishing: coldwater lake fishing trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/canada/british-columbia/quesnel-lake-remote-lodge-and-expedition/": {
     "kind": "article",
     "title": "Quesnel Lake fishing: remote lodge and expedition trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/canada/british-columbia/adams-lake-coldwater-lake-fishing/": {
     "kind": "article",
     "title": "Adams Lake fishing: coldwater lake fishing trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/canada/british-columbia/sheridan-lake-coldwater-lake-fishing/": {
@@ -5030,7 +5030,7 @@
   "/north-america/canada/alberta/cold-lake-alberta-base-coldwater-lake-fishing/": {
     "kind": "article",
     "title": "Cold Lake / Alberta base fishing: coldwater lake fishing trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/canada/alberta/lake-newell-large-freshwater-predators/": {
@@ -5072,7 +5072,7 @@
   "/north-america/canada/saskatchewan/cree-lake-remote-lodge-and-expedition/": {
     "kind": "article",
     "title": "Cree Lake fishing: remote lodge and expedition trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/canada/saskatchewan/wollaston-lake-remote-lodge-and-expedition/": {
@@ -5096,7 +5096,7 @@
   "/north-america/canada/manitoba/red-river-lockport-catfish-fishing/": {
     "kind": "article",
     "title": "Red River / Lockport fishing: catfish fishing trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/canada/manitoba/lake-winnipeg-ice-fishing/": {
@@ -5168,7 +5168,7 @@
   "/north-america/canada/ontario/lake-simcoe-ice-fishing/": {
     "kind": "article",
     "title": "Lake Simcoe fishing: ice fishing trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/canada/ontario/lake-simcoe-open-water-trip-lake-and-reservoir-bass/": {
@@ -5198,7 +5198,7 @@
   "/north-america/canada/ontario/ottawa-river-large-freshwater-predators/": {
     "kind": "article",
     "title": "Ottawa River fishing: large freshwater predators trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/canada/ontario/lake-temagami-remote-lodge-and-expedition/": {
@@ -5222,7 +5222,7 @@
   "/north-america/canada/ontario/lake-nipigon-remote-lodge-and-expedition/": {
     "kind": "article",
     "title": "Lake Nipigon fishing: remote lodge and expedition trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/canada/ontario/rainy-lake-ontario-base-walleye-and-reservoir-fishing/": {
@@ -5246,13 +5246,13 @@
   "/north-america/canada/ontario/french-river-large-freshwater-predators/": {
     "kind": "article",
     "title": "French River fishing: large freshwater predators trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/canada/ontario/grand-river-ontario-river-trout-and-grayling/": {
     "kind": "article",
     "title": "Grand River / Ontario fishing: river trout and grayling trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/canada/ontario/lake-erie-port-dover-walleye-and-reservoir-fishing/": {
@@ -5294,7 +5294,7 @@
   "/north-america/canada/quebec/lac-saint-jean-coldwater-lake-fishing/": {
     "kind": "article",
     "title": "Lac Saint-Jean fishing: coldwater lake fishing trip preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/canada/quebec/gouin-reservoir-remote-lodge-and-expedition/": {
@@ -5450,7 +5450,7 @@
   "/north-america/canada/northwest-territories/great-slave-lake-remote-lodge-and-expedition/": {
     "kind": "article",
     "title": "Great Slave Lake: guided northern-lake fishing | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/canada/northwest-territories/mackenzie-river-named-lodge-reach-remote-lodge-and-expedition/": {
@@ -5768,7 +5768,7 @@
   "/north-america/united-states/alabama/": {
     "kind": "collection",
     "title": "Alabama fishing trips and preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/alaska/": {
@@ -5780,7 +5780,7 @@
   "/north-america/united-states/arizona/": {
     "kind": "collection",
     "title": "Arizona fishing trips and preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/arkansas/": {
@@ -5792,13 +5792,13 @@
   "/north-america/united-states/california/": {
     "kind": "collection",
     "title": "California fishing trips and preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/colorado/": {
     "kind": "collection",
     "title": "Colorado fishing trips and preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/connecticut/": {
@@ -5834,25 +5834,25 @@
   "/north-america/united-states/idaho/": {
     "kind": "collection",
     "title": "Idaho fishing trips and preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/illinois/": {
     "kind": "collection",
     "title": "Illinois fishing trips and preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/indiana/": {
     "kind": "collection",
     "title": "Indiana fishing trips and preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/iowa/": {
     "kind": "collection",
     "title": "Iowa fishing trips and preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/kansas/": {
@@ -5864,7 +5864,7 @@
   "/north-america/united-states/kentucky/": {
     "kind": "collection",
     "title": "Kentucky fishing trips and preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/louisiana/": {
@@ -5876,31 +5876,31 @@
   "/north-america/united-states/maine/": {
     "kind": "collection",
     "title": "Maine fishing trips and preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/maryland/": {
     "kind": "collection",
     "title": "Maryland fishing trips and preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/massachusetts/": {
     "kind": "collection",
     "title": "Massachusetts fishing trips and preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/michigan/": {
     "kind": "collection",
     "title": "Michigan fishing trips and preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/minnesota/": {
     "kind": "collection",
     "title": "Minnesota fishing trips and preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/mississippi/": {
@@ -5912,13 +5912,13 @@
   "/north-america/united-states/missouri/": {
     "kind": "collection",
     "title": "Missouri fishing trips and preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/montana/": {
     "kind": "collection",
     "title": "Montana fishing trips and preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/nebraska/": {
@@ -5948,43 +5948,43 @@
   "/north-america/united-states/new-mexico/": {
     "kind": "collection",
     "title": "New Mexico fishing trips and preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/new-york/": {
     "kind": "collection",
     "title": "New York fishing trips and preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/north-carolina/": {
     "kind": "collection",
     "title": "North Carolina fishing trips and preparation | Castward",
-    "noindex": false,
+    "noindex": true,
     "redirectTo": null
   },
   "/north-america/united-states/north-dakota/": {
     "kind": "collection",
     "title": "North Dakota fishing trips and preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/ohio/": {
     "kind": "collection",
     "title": "Ohio fishing trips and preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/oklahoma/": {
     "kind": "collection",
     "title": "Oklahoma fishing trips and preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/oregon/": {
     "kind": "collection",
     "title": "Oregon fishing trips and preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/pennsylvania/": {
@@ -6002,19 +6002,19 @@
   "/north-america/united-states/south-carolina/": {
     "kind": "collection",
     "title": "South Carolina fishing trips and preparation | Castward",
-    "noindex": false,
+    "noindex": true,
     "redirectTo": null
   },
   "/north-america/united-states/south-dakota/": {
     "kind": "collection",
     "title": "South Dakota fishing trips and preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/tennessee/": {
     "kind": "collection",
     "title": "Tennessee fishing trips and preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/texas/": {
@@ -6026,31 +6026,31 @@
   "/north-america/united-states/utah/": {
     "kind": "collection",
     "title": "Utah fishing trips and preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/vermont/": {
     "kind": "collection",
     "title": "Vermont fishing trips and preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/virginia/": {
     "kind": "collection",
     "title": "Virginia fishing trips and preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/washington/": {
     "kind": "collection",
     "title": "Washington fishing trips and preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/west-virginia/": {
     "kind": "collection",
     "title": "West Virginia fishing trips and preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/wisconsin/": {
@@ -6062,7 +6062,7 @@
   "/north-america/united-states/wyoming/": {
     "kind": "collection",
     "title": "Wyoming fishing trips and preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/": {
@@ -6086,49 +6086,49 @@
   "/north-america/united-states/regions/pacific-northwest/": {
     "kind": "collection",
     "title": "Pacific Northwest fishing trips and preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/regions/pacific-desert-southwest/": {
     "kind": "collection",
     "title": "Pacific & Desert Southwest fishing trips and preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/regions/rockies/": {
     "kind": "collection",
     "title": "Rockies fishing trips and preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/regions/great-plains/": {
     "kind": "collection",
     "title": "Great Plains fishing trips and preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/regions/great-lakes-upper-midwest/": {
     "kind": "collection",
     "title": "Great Lakes & Upper Midwest fishing trips and preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/regions/northeast/": {
     "kind": "collection",
     "title": "Northeast fishing trips and preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/regions/mid-atlantic/": {
     "kind": "collection",
     "title": "Mid-Atlantic fishing trips and preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/regions/appalachia/": {
     "kind": "collection",
     "title": "Appalachia fishing trips and preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/regions/southeast/": {
@@ -6152,7 +6152,7 @@
   "/north-america/canada/british-columbia/": {
     "kind": "collection",
     "title": "British Columbia fishing trips and preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/canada/manitoba/": {
@@ -6194,7 +6194,7 @@
   "/north-america/canada/ontario/": {
     "kind": "collection",
     "title": "Ontario fishing trips and preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/canada/prince-edward-island/": {
@@ -6224,25 +6224,25 @@
   "/north-america/canada/": {
     "kind": "country",
     "title": "Canada fishing by province or territory | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/canada/regions/pacific-canada/": {
     "kind": "collection",
     "title": "Pacific Canada fishing trips and preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/canada/regions/prairie-canada/": {
     "kind": "collection",
     "title": "Prairie Canada fishing trips and preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/canada/regions/central-canada/": {
     "kind": "collection",
     "title": "Central Canada fishing trips and preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/canada/regions/atlantic-canada/": {
@@ -6398,7 +6398,7 @@
   "/continents/south-america/regions/patagonia-southern-cone/": {
     "kind": "collection",
     "title": "Patagonia & Southern Cone fishing trips and preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/continents/south-america/regions/brazil-atlantic-waters/": {
@@ -6446,13 +6446,13 @@
   "/continents/europe/regions/alpine-adriatic/": {
     "kind": "collection",
     "title": "Alpine & Adriatic fishing trips and preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/continents/europe/regions/balkans-eastern-europe/": {
     "kind": "collection",
     "title": "Balkans & Eastern Europe fishing trips and preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/continents/europe/regions/mediterranean-iberia/": {
@@ -6500,13 +6500,13 @@
   "/continents/africa/": {
     "kind": "continent",
     "title": "Africa fishing by region and country | Castward",
-    "noindex": false,
+    "noindex": true,
     "redirectTo": null
   },
   "/continents/asia/regions/east-asia/": {
     "kind": "collection",
     "title": "East Asia fishing trips and preparation | Castward",
-    "noindex": false,
+    "noindex": true,
     "redirectTo": null
   },
   "/continents/asia/regions/mongolia-inland-asia/": {
@@ -6548,19 +6548,19 @@
   "/continents/asia/": {
     "kind": "continent",
     "title": "Asia fishing by region and country | Castward",
-    "noindex": false,
+    "noindex": true,
     "redirectTo": null
   },
   "/continents/oceania/regions/australia/": {
     "kind": "collection",
     "title": "Australia fishing trips and preparation | Castward",
-    "noindex": false,
+    "noindex": true,
     "redirectTo": null
   },
   "/continents/oceania/regions/new-zealand/": {
     "kind": "collection",
     "title": "New Zealand fishing trips and preparation | Castward",
-    "noindex": false,
+    "noindex": true,
     "redirectTo": null
   },
   "/continents/oceania/regions/melanesia/": {
