@@ -34,6 +34,7 @@ for file in (ROOT/'dist').rglob('index.html'):
         markup = body[card['start']:card['end']]
         imgs = Images(markup).images
         assert imgs, (file, card['kind'], 'missing image')
+        assert 'background-image:url(data:image/webp;base64,' in markup, (file, 'missing inline poster')
         image = imgs[0]
         assert image.get('width') and image.get('height') and image.get('alt'), (file, card)
         assert image.get('sizes') and all(f'{w}w' in image.get('srcset', '') for w in (640,1200,1600)) or '/media/scenes/' in image['src'], file

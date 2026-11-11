@@ -31,7 +31,8 @@ for trip in trips:
         for ext in ('avif', 'webp'):
             assert (ROOT / 'dist' / f'{base[1:]}-{width}.{ext}').is_file()
 assert 'AI-generated illustrations created with GPT Image' in (ROOT / 'dist/about/index.html').read_text()
-print(f'Passed: {len(images)} scenes, {len(trips) - len(images)} fallback heroes, metadata, responsive assets, and credits.')
+preview_trips = sum(t['id'] not in images and available(TRIP_PREVIEWS.get(t['id'])) for t in trips)
+print(f'Passed: {len(images)} trip scenes, {preview_trips} preview scene overrides, {len(trips) - len(images) - preview_trips} shared environment heroes, metadata, responsive assets, and credits.')
 
 class SceneChecks(HTMLParser):
     def handle_starttag(self, tag, attrs):

@@ -3,7 +3,7 @@ import re
 from collections import Counter
 from html.parser import HTMLParser
 from photography import preview_photo, photo
-from preview_images import PREVIEWS, available
+from preview_images import PREVIEWS, available, placeholder
 
 CARD_CLASSES = {'world-card', 'type-card', 'country-card', 'habitat-card', 'article-card', 'field-fish-card'}
 VOID = {'area', 'base', 'br', 'col', 'embed', 'hr', 'img', 'input', 'link', 'meta', 'param', 'source', 'track', 'wbr'}
@@ -82,7 +82,10 @@ def install(pages):
                     url = source.group(1).split(',')[0].strip().split()[0]
                     mobile_sources.append(f'<source media="(max-width: 700px)" type="image/{ext}" srcset="{url}" sizes="calc(100vw - 32px)">')
             markup = re.sub(r'(<picture\b[^>]*>)', lambda match: match.group() + ''.join(mobile_sources), markup, count=1)
-            markup = markup.replace('<picture ', '<picture data-preview-media ', 1)
+            image_source = re.search(r'<img[^>]*src="([^"]+)"', markup)
+            poster = placeholder(image_source.group(1)) if image_source else ''
+            poster_style = f' style="background-image:url({poster})"' if poster else ''
+            markup = markup.replace('<picture ', '<picture data-preview-media' + poster_style + ' ', 1)
             def loading(match):
                 image = re.sub(r'\s(?:loading|fetchpriority)="[^"]*"', '', match.group())
                 return image[:-1] + (' loading="eager" fetchpriority="high">' if eager else ' loading="lazy">')

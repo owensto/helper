@@ -1,0 +1,30 @@
+/* The poster is ordinary server-rendered content; motion never controls visibility. */
+[data-preview-card] { min-width: 0; }
+.preview-media { display: block; aspect-ratio: 3 / 2; overflow: hidden; margin-bottom: 22px; background: #c8d2c8; }
+[data-preview-media] { display: block; position: relative; width: 100%; height: 100%; overflow: hidden; isolation: isolate; background-size: cover; background-position: center; }
+[data-preview-media] img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.country-card .preview-media,.habitat-card .preview-media { margin: -1px -1px 22px; }
+.field-fish-card .preview-media { margin-bottom: 20px; }
+.type-card-image { display: block; background: #c8d2c8; }
+@media (prefers-reduced-motion: no-preference) {
+  [data-preview-media] { translate: 0 var(--preview-y, 0px); scale: 1.05; }
+  [data-preview-media] img { animation: preview-drift 7s ease-in-out infinite alternate paused; transition: scale 220ms ease, filter 220ms ease; }
+  [data-preview-media]::after { content: ''; position: absolute; inset: -30%; pointer-events: none; background: linear-gradient(112deg, transparent 35%, #fff9 48%, transparent 61%); opacity: 0; transform: translateX(-40%); animation: preview-light 4.6s ease-in-out infinite paused; }
+  .preview-in-view img,.preview-in-view::after { animation-play-state: running; }
+  [data-preview-card]:hover [data-preview-media] img,[data-preview-card]:focus-within [data-preview-media] img { scale: 1.035; filter: brightness(1.06); }
+  .preview-motion-paused [data-preview-media] img,.preview-motion-paused [data-preview-media]::after { animation-play-state: paused; }
+  .preview-motion-paused [data-preview-media] { translate: none; }
+}
+@keyframes preview-drift { from { transform: scale(1.02) translateX(-.4%); } to { transform: scale(1.065) translateX(.5%); } }
+@keyframes preview-light { 0%,20%,100% { opacity: 0; transform: translateX(-40%); } 45% { opacity: .075; } 70% { opacity: 0; transform: translateX(40%); } }
+@media (prefers-reduced-motion: reduce) {
+  [data-preview-media],[data-preview-media] img { animation: none!important; transition: none!important; transform: none!important; scale: none!important; translate: none!important; clip-path: none!important; filter: none!important; }
+  [data-preview-media]::after { display: none; }
+}
+@media print { [data-preview-media],[data-preview-media] img { animation: none!important; transform: none!important; scale: none!important; translate: none!important; } }
+
+.atlas-preview .preview-media { margin: 0; height: 135px; aspect-ratio: auto; }
+
+.region-band .country-card .preview-media { width: 100%; margin: 0 0 20px; }
+.region-band a.country-card { display: block; }
+.region-band a.country-card > span:not(.preview-media) { float: right; }

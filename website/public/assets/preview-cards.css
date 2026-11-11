@@ -1,7 +1,7 @@
 /* The poster is ordinary server-rendered content; motion never controls visibility. */
 [data-preview-card] { min-width: 0; }
 .preview-media { display: block; aspect-ratio: 3 / 2; overflow: hidden; margin-bottom: 22px; background: #c8d2c8; }
-[data-preview-media] { display: block; position: relative; width: 100%; height: 100%; overflow: hidden; isolation: isolate; }
+[data-preview-media] { display: block; position: relative; width: 100%; height: 100%; overflow: hidden; isolation: isolate; background-size: cover; background-position: center; }
 [data-preview-media] img { display: block; width: 100%; height: 100%; object-fit: cover; }
 .country-card .preview-media,.habitat-card .preview-media { margin: -1px -1px 22px; }
 .field-fish-card .preview-media { margin-bottom: 20px; }
@@ -24,3 +24,7 @@
 @media print { [data-preview-media],[data-preview-media] img { animation: none!important; transform: none!important; scale: none!important; translate: none!important; } }
 
 .atlas-preview .preview-media { margin: 0; height: 135px; aspect-ratio: auto; }
+
+.region-band .country-card .preview-media { width: 100%; margin: 0 0 20px; }
+.region-band a.country-card { display: block; }
+.region-band a.country-card > span:not(.preview-media) { float: right; }

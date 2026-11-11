@@ -1,5 +1,6 @@
 """One route-to-scene contract for collection cards, detail pages and trip reuse."""
 import json
+import re
 from html import escape as E
 from pathlib import Path
 
@@ -13,7 +14,7 @@ for route, record in PREVIEWS.items():
         TRIP_PREVIEWS.setdefault(record['sourceTrip'], record)
 
 def available(record):
-    return record and (ROOT / 'public' / image_url(record, 640)).is_file()
+    return bool(record) and (ROOT / 'public' / image_url(record, 640)).is_file()
 
 def image_url(record, width=640, extension='webp'):
     return f'media/{record["directory"]}/{record["slug"]}-{width}.{extension}'
@@ -25,3 +26,10 @@ def picture(record, sizes='100vw', eager=False):
     return (f'<picture class="scene-picture"><source type="image/avif" srcset="{srcset("avif")}" sizes="{sizes}">'
             f'<img src="/{image_url(record, 640)}" srcset="{srcset("webp")}" sizes="{sizes}" '
             f'width="1600" height="{record.get("height", 1067)}" alt="{E(record["alt"], quote=True)}" {loading} decoding="async"></picture>')
+
+
+PLACEHOLDER_PATH = ROOT / 'public/media/previews/placeholders.json'
+PLACEHOLDERS = json.loads(PLACEHOLDER_PATH.read_text()) if PLACEHOLDER_PATH.exists() else {}
+
+def placeholder(image):
+    return PLACEHOLDERS.get(re.sub(r'-\d+\.(?:webp|avif)$', '', image), '')
