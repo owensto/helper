@@ -4,6 +4,7 @@ from collections import Counter
 import json,os,subprocess,re,xml.etree.ElementTree as ET
 R=Path(__file__).resolve().parents[1]
 W=json.loads((R/'src/world.json').read_text());T=W['trips'];M=json.loads((R/'dist/route-manifest.json').read_text());S=json.loads((R/'research/release-summary.json').read_text())
+SPECIES_RESEARCH={d['id']:d for d in json.loads((R/'src/destination-species.json').read_text())['destinations']}
 checks=[]
 def ok(v,label):
  assert v,label
@@ -23,10 +24,16 @@ for t in T:
  assert all(e['source'] in t['sourceIds'] for e in t['evidence']),t['id']
  if not t['indexEligible']:assert M[t['canonicalPath']]['noindex'],t['id']
  if t['contentTier']=='preparation-brief':
-  assert not t['fish'] and not t['seasonWindows'] and not t['evidence'] and not t['sourceIds'],t['id']
+  assert not t['seasonWindows'],t['id']
+  researched=SPECIES_RESEARCH[t['id']]['targets']
+  assert t['speciesIds']==[x['speciesId'] for x in researched],t['id']
+  if researched:
+   assert t['evidence'] and t['sourceIds'] and all(x['sourceUrls'] for x in researched),t['id']
+  else:
+   assert not t['fish'] and not t['evidence'] and not t['sourceIds'],t['id']
   assert t['review']['checked'] is None and not t['indexEligible'],t['id']
  if t['indexEligible']:assert t['sourceIds'] and t['evidence'] and t['contentTier']=='detailed-guide',t['id']
-ok(True,'All 479 unverified frameworks keep candidate species, evidence and months unconfirmed')
+ok(True,'Preparation frameworks publish only individually sourced targets and keep unverified seasons and access unconfirmed')
 ok(True,'All 798 trips have exactly four scoped gear decisions and valid reference links')
 ok(True,'Every index-eligible trip has attributed evidence and a source-checked tier')
 for p,m in M.items():

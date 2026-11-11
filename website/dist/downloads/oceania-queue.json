@@ -15,7 +15,8 @@
       "currentTier": "detailed-guide",
       "indexEligible": true,
       "sourceIds": [
-        "topend"
+        "topend",
+        "species-0e74327fd6d8"
       ],
       "evidenceDepth": "Inspected source text",
       "localDecision": "Choose a runoff, harbour or billabong program before choosing gear. Dates alone do not tell you which Top End habitat the boat will fish.",
@@ -51,13 +52,15 @@
       "currentTier": "detailed-guide",
       "indexEligible": true,
       "sourceIds": [
-        "greatlake"
+        "greatlake",
+        "species-d62f0527c91e",
+        "species-d6a2e6ab870f"
       ],
       "evidenceDepth": "Inspected source text",
       "localDecision": "A highland lake is not a slow river. Build separate plans for shore sight-fishing, boat-based fly fishing and trolling before selecting line or tackle.",
-      "candidateTargets": "Brown trout / Rainbow trout",
+      "candidateTargets": "Sea trout / Rainbow trout",
       "confirmedTargets": [
-        "Brown trout",
+        "Sea trout",
         "Rainbow trout"
       ],
       "seasonalEvidence": "The December–February reference is a Southern Hemisphere insect-fishing context, not the only possible way to fish the lake. Confirm the specific area and method: different bays and subwaters have different conditions and management. No live lake level or weather feed is embedded here.",
@@ -88,13 +91,16 @@
       "currentTier": "detailed-guide",
       "indexEligible": true,
       "sourceIds": [
-        "nz-rivers"
+        "nz-rivers",
+        "species-2e3369ef97c4",
+        "species-67e9116d7b9f"
       ],
       "evidenceDepth": "Inspected source text",
       "localDecision": "Build a Southland river day around access, presentation and the chosen reach. A trout-river reputation is not a complete plan for a visiting angler.",
-      "candidateTargets": "Trout",
+      "candidateTargets": "Trout / Sea trout",
       "confirmedTargets": [
-        "Trout"
+        "Trout",
+        "Sea trout"
       ],
       "seasonalEvidence": "The reviewed article does not supply a current hatch report or a universal monthly calendar. Confirm the intended section and current conditions. Use Southern Hemisphere dates explicitly rather than importing a Montana seasonal template.",
       "accessToVerify": "Bank / Guided wading",
@@ -124,13 +130,14 @@
       "currentTier": "detailed-guide",
       "indexEligible": true,
       "sourceIds": [
-        "nz-rivers"
+        "nz-rivers",
+        "species-2e3369ef97c4"
       ],
       "evidenceDepth": "Inspected source text",
       "localDecision": "Distinguish a valley river from a hike-in mountain lake. The same scenic region can contain very different access, timing and equipment requirements.",
-      "candidateTargets": "Brown trout / Rainbow trout",
+      "candidateTargets": "Sea trout / Rainbow trout",
       "confirmedTargets": [
-        "Brown trout",
+        "Sea trout",
         "Rainbow trout"
       ],
       "seasonalEvidence": "This overview establishes the river setting, not a current water-level report, access map or monthly fishing guarantee. Confirm a specific reach and route for the selected date, with a practical alternative if conditions make the plan unsuitable.",
@@ -165,10 +172,8 @@
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "Resort-based fishing charter in Savusavu. Decide whether the outing is a dedicated fishing charter or a mixed family excursion.",
-      "candidateTargets": "Local targets to confirm",
-      "confirmedTargets": [
-        "Local targets to confirm"
-      ],
+      "candidateTargets": "",
+      "confirmedTargets": [],
       "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
       "accessToVerify": "Charter boat",
       "tackleDecision": "Confirm which rods, reels, rigs and replacement tackle the crew supplies. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
@@ -201,10 +206,8 @@
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "Island-group fishing charter in Mamanuca Islands. Give the skipper your actual island or resort, not just Fiji.",
-      "candidateTargets": "Local targets to confirm",
-      "confirmedTargets": [
-        "Local targets to confirm"
-      ],
+      "candidateTargets": "",
+      "confirmedTargets": [],
       "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
       "accessToVerify": "Guided boat",
       "tackleDecision": "Confirm which rods, reels, rigs and replacement tackle the crew supplies. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
@@ -237,10 +240,8 @@
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "Remote-island fishing-day planning in Yasawa Islands. Agree on the transfer and fishing grounds before treating the listing as an easy day trip.",
-      "candidateTargets": "Local targets to confirm",
-      "confirmedTargets": [
-        "Local targets to confirm"
-      ],
+      "candidateTargets": "",
+      "confirmedTargets": [],
       "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
       "accessToVerify": "Guided boat",
       "tackleDecision": "Confirm which rods, reels, rigs and replacement tackle the crew supplies. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
@@ -273,10 +274,8 @@
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "Custom island sportfishing charter in Taveuni — Makaira. Request the target and technique for your dates directly from the operator.",
-      "candidateTargets": "Local targets to confirm",
-      "confirmedTargets": [
-        "Local targets to confirm"
-      ],
+      "candidateTargets": "",
+      "confirmedTargets": [],
       "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
       "accessToVerify": "Charter boat",
       "tackleDecision": "Confirm which rods, reels, rigs and replacement tackle the crew supplies. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
@@ -309,10 +308,8 @@
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "Choose a family or game-fishing charter in Coral Coast — Cuvu Beach. Select the fishing objective before selecting a duration.",
-      "candidateTargets": "Local targets to confirm",
-      "confirmedTargets": [
-        "Local targets to confirm"
-      ],
+      "candidateTargets": "",
+      "confirmedTargets": [],
       "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
       "accessToVerify": "Charter boat",
       "tackleDecision": "Confirm which rods, reels, rigs and replacement tackle the crew supplies. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
@@ -345,10 +342,8 @@
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "Local guided island fishing in Luganville — Espiritu Santo. Keep this booking separate from Port Vila services.",
-      "candidateTargets": "Local targets to confirm",
-      "confirmedTargets": [
-        "Local targets to confirm"
-      ],
+      "candidateTargets": "",
+      "confirmedTargets": [],
       "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
       "accessToVerify": "Guided boat",
       "tackleDecision": "Confirm which rods, reels, rigs and replacement tackle the crew supplies. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
@@ -377,7 +372,8 @@
       "currentTier": "trip-brief",
       "indexEligible": false,
       "sourceIds": [
-        "global-vanuatu-oceanblue"
+        "global-vanuatu-oceanblue",
+        "species-20ea32331176"
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "Multi-day bluewater fishing program in Trees and Fishes — Vanuatu. Choose which target drives your own tackle.",
@@ -419,10 +415,8 @@
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "Lodge-based reef fishing in Papatura — reef waters. Select a primary method with the lodge and ask which equipment is available.",
-      "candidateTargets": "Local targets to confirm",
-      "confirmedTargets": [
-        "Local targets to confirm"
-      ],
+      "candidateTargets": "",
+      "confirmedTargets": [],
       "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
       "accessToVerify": "Guided boat",
       "tackleDecision": "Confirm which rods, reels, rigs and replacement tackle the crew supplies. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
@@ -451,14 +445,15 @@
       "currentTier": "trip-brief",
       "indexEligible": false,
       "sourceIds": [
-        "global-solomons-papatura"
+        "global-solomons-papatura",
+        "species-b8b1e36c849f"
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "Tropical river fishing from an island lodge in Papatura — nearby rivers. Confirm the actual river access and whether you remain in a boat.",
-      "candidateTargets": "Spot-tail bass / Mangrove jack",
+      "candidateTargets": "Spot-tail bass / Mangrove red snapper",
       "confirmedTargets": [
         "Spot-tail bass",
-        "Mangrove jack"
+        "Mangrove red snapper"
       ],
       "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
       "accessToVerify": "Guided boat",
@@ -492,10 +487,8 @@
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "Lagoon fishing based at Agnes Lodge in Munda — Roviana Lagoon. Confirm that a dedicated fishing boat and guide are available for your dates, rather than assuming a dive-lodge package includes angling.",
-      "candidateTargets": "Local targets to confirm",
-      "confirmedTargets": [
-        "Local targets to confirm"
-      ],
+      "candidateTargets": "",
+      "confirmedTargets": [],
       "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
       "accessToVerify": "Guided boat",
       "tackleDecision": "Confirm which rods, reels, rigs and replacement tackle the crew supplies. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
@@ -524,7 +517,8 @@
       "currentTier": "trip-brief",
       "indexEligible": false,
       "sourceIds": [
-        "global-tonga"
+        "global-tonga",
+        "species-8f19ca9d1323"
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "Skipper-led blue-marlin charter in Vava’u. Ask how the charter is configured for your experience and party size.",
@@ -560,7 +554,8 @@
       "currentTier": "trip-brief",
       "indexEligible": false,
       "sourceIds": [
-        "global-samoa"
+        "global-samoa",
+        "species-f24cff9da114"
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "Select a trolling-focused charter in Apia. Choose a primary objective rather than expecting every listed species on one outing.",
@@ -604,10 +599,8 @@
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "Offshore trolling program inquiry in Palau — Swings trolling charter. Ask for the launch point and proposed offshore target before finalizing a trip.",
-      "candidateTargets": "Local targets to confirm",
-      "confirmedTargets": [
-        "Local targets to confirm"
-      ],
+      "candidateTargets": "",
+      "confirmedTargets": [],
       "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
       "accessToVerify": "Charter boat",
       "tackleDecision": "Confirm which rods, reels, rigs and replacement tackle the crew supplies. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
@@ -640,10 +633,8 @@
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "Guided bottom fishing and casting in Palau — Swings bottom-fishing charter. Confirm the intended depth, hook system and tackle provision.",
-      "candidateTargets": "Local targets to confirm",
-      "confirmedTargets": [
-        "Local targets to confirm"
-      ],
+      "candidateTargets": "",
+      "confirmedTargets": [],
       "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
       "accessToVerify": "Guided boat",
       "tackleDecision": "Confirm which rods, reels, rigs and replacement tackle the crew supplies. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
@@ -672,7 +663,8 @@
       "currentTier": "trip-brief",
       "indexEligible": false,
       "sourceIds": [
-        "global-marshall"
+        "global-marshall",
+        "species-4098c075e2e2"
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "Hotel-arranged offshore fishing in Majuro. Ask which of the operator’s listed species is the actual target for your dates.",
@@ -714,10 +706,8 @@
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "Atoll fishing with confirmed transfer in Arno Atoll. Agree on an Arno-specific transfer and fishing program rather than assuming the standard Majuro departure reaches it.",
-      "candidateTargets": "Local targets to confirm",
-      "confirmedTargets": [
-        "Local targets to confirm"
-      ],
+      "candidateTargets": "",
+      "confirmedTargets": [],
       "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
       "accessToVerify": "Guided boat",
       "tackleDecision": "Confirm which rods, reels, rigs and replacement tackle the crew supplies. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
@@ -750,10 +740,8 @@
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "Island fishing-charter inquiry in Pohnpei. Request a fishing-specific itinerary with named grounds and a target, not a general surf or atoll tour.",
-      "candidateTargets": "Local targets to confirm",
-      "confirmedTargets": [
-        "Local targets to confirm"
-      ],
+      "candidateTargets": "",
+      "confirmedTargets": [],
       "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
       "accessToVerify": "Guided boat",
       "tackleDecision": "Confirm which rods, reels, rigs and replacement tackle the crew supplies. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
@@ -786,10 +774,8 @@
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "Half- or full-day equipped charter in Yap. Confirm the target and boat arrangement before buying any tackle.",
-      "candidateTargets": "Local targets to confirm",
-      "confirmedTargets": [
-        "Local targets to confirm"
-      ],
+      "candidateTargets": "",
+      "confirmedTargets": [],
       "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
       "accessToVerify": "Charter boat",
       "tackleDecision": "Confirm which rods, reels, rigs and replacement tackle the crew supplies. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
@@ -818,7 +804,8 @@
       "currentTier": "trip-brief",
       "indexEligible": false,
       "sourceIds": [
-        "global-aitutaki"
+        "global-aitutaki",
+        "species-8a609bcf1f39"
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "Guide-arranged bonefishing day in Aitutaki. Ask whether the session uses a skiff, wading or both.",
@@ -854,7 +841,8 @@
       "currentTier": "trip-brief",
       "indexEligible": false,
       "sourceIds": [
-        "global-niue"
+        "global-niue",
+        "species-58f89d44b8c7"
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "Island-based offshore fishing inquiry in Niue — ocean fishing charter. Confirm the departure arrangement, boat capacity and weather alternative before fitting the outing into a short island stay.",
@@ -891,7 +879,9 @@
       "currentTier": "trip-brief",
       "indexEligible": false,
       "sourceIds": [
-        "global-kiritimati"
+        "global-kiritimati",
+        "species-c6b063dcc7f4",
+        "species-e0af957bc9ef"
       ],
       "evidenceDepth": "Inspected source text",
       "localDecision": "Atoll fly-fishing program in Kiritimati — saltwater flats. This is Kiritimati in Kiribati, not Australia’s Christmas Island.",
@@ -929,7 +919,8 @@
       "currentTier": "trip-brief",
       "indexEligible": false,
       "sourceIds": [
-        "global-kiritimati"
+        "global-kiritimati",
+        "species-c6b063dcc7f4"
       ],
       "evidenceDepth": "Inspected source text",
       "localDecision": "Offshore extension to an atoll trip in Kiritimati — offshore waters. Treat offshore fishing as a separately confirmed boat day rather than an automatic inclusion in a flats package.",
@@ -965,7 +956,8 @@
       "currentTier": "trip-brief",
       "indexEligible": false,
       "sourceIds": [
-        "global-tabuaeran"
+        "global-tabuaeran",
+        "species-032a44d7c973"
       ],
       "evidenceDepth": "Inspected source text",
       "localDecision": "Remote-atoll fly-fishing expedition in Tabuaeran — Fanning Island. Confirm the complete transfer chain and current program operation before fixing the rest of the journey.",
@@ -1002,7 +994,8 @@
       "currentTier": "trip-brief",
       "indexEligible": false,
       "sourceIds": [
-        "global-png"
+        "global-png",
+        "species-8d3bc58d9518"
       ],
       "evidenceDepth": "Inspected source text",
       "localDecision": "Remote popping and jigging program in Wari Long Reef — Milne Bay. Ask the outfitter to specify separate popping and jigging systems, including lure weights and connections.",
@@ -1039,7 +1032,8 @@
       "currentTier": "trip-brief",
       "indexEligible": false,
       "sourceIds": [
-        "global-australia-snowy"
+        "global-australia-snowy",
+        "species-412431db1a47"
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "Guided highland lake fishing in Lake Eucumbene. Choose between boat-based fishing and a shore or fly session before selecting tackle.",
@@ -1075,7 +1069,8 @@
       "currentTier": "trip-brief",
       "indexEligible": false,
       "sourceIds": [
-        "global-australia-snowy"
+        "global-australia-snowy",
+        "species-412431db1a47"
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "Lake trout fishing with a guide in Lake Jindabyne. Confirm the exact technique and boat provision rather than copying a river checklist.",
@@ -1111,13 +1106,16 @@
       "currentTier": "trip-brief",
       "indexEligible": false,
       "sourceIds": [
-        "global-nz-tongariro"
+        "global-nz-tongariro",
+        "species-3e315666a4d7",
+        "species-de6f1aa4a4d5"
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "Central Plateau guided fly fishing in Tongariro River — lodge-based fishing. Decide whether you want casting instruction, a specific river day or a multi-day lodge program.",
-      "candidateTargets": "Trout",
+      "candidateTargets": "Trout / Sea trout",
       "confirmedTargets": [
-        "Trout"
+        "Trout",
+        "Sea trout"
       ],
       "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
       "accessToVerify": "Bank",
@@ -1151,10 +1149,8 @@
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "Raft-supported fly-fishing day in Upper Tongariro River — raft access. Ask how fishing sessions alternate with rafting and how equipment is secured during rapids.",
-      "candidateTargets": "Local targets to confirm",
-      "confirmedTargets": [
-        "Local targets to confirm"
-      ],
+      "candidateTargets": "",
+      "confirmedTargets": [],
       "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
       "accessToVerify": "River float",
       "tackleDecision": "Select the casting weight or fly-line system for the confirmed reach. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
@@ -1183,7 +1179,9 @@
       "currentTier": "trip-brief",
       "indexEligible": false,
       "sourceIds": [
-        "global-nz-taupo"
+        "global-nz-taupo",
+        "species-afc5d088819f",
+        "species-891178a8e0f2"
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "Method-specific lake fishing in Lake Taupō. Choose a lake method and confirm the relevant fishing area before purchasing tackle.",
@@ -1223,10 +1221,8 @@
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "South Island lodge-based fly-fishing inquiry in Owen River Lodge. Ask the lodge for the actual waters used during your stay rather than assuming every day is on its namesake river.",
-      "candidateTargets": "Local targets to confirm",
-      "confirmedTargets": [
-        "Local targets to confirm"
-      ],
+      "candidateTargets": "",
+      "confirmedTargets": [],
       "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
       "accessToVerify": "Bank",
       "tackleDecision": "Select the casting weight or fly-line system for the confirmed reach. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
@@ -1259,10 +1255,8 @@
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "Lodge-based lake-fishing inquiry in Lake Brunner Eco Lodge. Confirm whether your proposed fishing is on the lake, a nearby tributary or both.",
-      "candidateTargets": "Local targets to confirm",
-      "confirmedTargets": [
-        "Local targets to confirm"
-      ],
+      "candidateTargets": "",
+      "confirmedTargets": [],
       "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
       "accessToVerify": "Guided boat",
       "tackleDecision": "Choose bank, trolling, jigging or casting equipment only after the method is fixed. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
@@ -1293,7 +1287,10 @@
       "sourceIds": [
         "S13a8d30a07",
         "S4e46eb9dc8",
-        "S4e77dd69a0"
+        "S4e77dd69a0",
+        "species-13a8d30a07e2",
+        "species-4e46eb9dc812",
+        "species-4e77dd69a04f"
       ],
       "evidenceDepth": "Named source text inspected; current operating dates and availability remain unconfirmed",
       "localDecision": "A specialist offshore black-marlin format outside the Great Barrier Reef near Cairns. The local industry distinguishes heavy-tackle trips from light-tackle trips for smaller marlin. Multi-day liveaboard and mothership arrangements are documented options, not interchangeable room categories.",

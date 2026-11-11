@@ -73,7 +73,7 @@ const base=process.env.TEST_ORIGIN||'http://127.0.0.1:8766';
     ok((await page.locator('#inquiry-text').innerText()).includes('Costa Rica FAD marlin trip'),'A type selected inside the planner reaches its inquiry');
     await go('/glossary/');await page.locator('#glossary-search').fill('albie blitz');
     ok(await page.locator('[data-glossary-term]:visible').count()===1,'Glossary term filter works');
-    ok((await page.locator('[data-glossary-term]:visible a').getAttribute('href')).includes('montauk-fall-run'),'Albie blitz links to its supported Montauk type');
+    ok((await page.locator('[data-glossary-term]:visible a').first().getAttribute('href')).includes('montauk-fall-run'),'Albie blitz links to its supported Montauk type');
     const routes=['/trip-types/','/glossary/',...T.map(t=>'/trip-types/'+t.slug+'/'),'/trips/?type=texas-slam','/plan/?destination=na-us-mn-001&tripType=lake-of-the-woods-sleeper-house'];
     for(const width of [1440,390]){
       await page.setViewportSize({width,height:width===390?844:1000});

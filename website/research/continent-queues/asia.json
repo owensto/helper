@@ -16,7 +16,9 @@
       "indexEligible": true,
       "sourceIds": [
         "mongolia",
-        "mongolia-river"
+        "mongolia-river",
+        "species-4e8a34f2f4c7",
+        "species-5531ccaa5045"
       ],
       "evidenceDepth": "Inspected source text",
       "localDecision": "An expedition needs a named program and watershed, not just “Mongolia” on the packing list. Camp logistics and personal tackle provision matter as much as the fish.",
@@ -52,7 +54,8 @@
       "currentTier": "detailed-guide",
       "indexEligible": true,
       "sourceIds": [
-        "hokkaido"
+        "hokkaido",
+        "species-0ae801a3a4b7"
       ],
       "evidenceDepth": "Inspected source text",
       "localDecision": "Distinguish a char outing from a specialist itou-taimen trip. They are not interchangeable bookings merely because both appear on a Hokkaido lodge page.",
@@ -88,7 +91,8 @@
       "currentTier": "detailed-guide",
       "indexEligible": true,
       "sourceIds": [
-        "korea"
+        "korea",
+        "species-4f002aa451cf"
       ],
       "evidenceDepth": "Inspected source text",
       "localDecision": "A short mountain-stream outing should be built around the actual access, time available and target—not a country-wide list of every fish an operator offers.",
@@ -125,7 +129,8 @@
       "currentTier": "trip-brief",
       "indexEligible": false,
       "sourceIds": [
-        "global-cy-local"
+        "global-cy-local",
+        "species-b42fcb365425"
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "season-dependent tuna outing in Ayia Napa harbour. Request the tuna species, season for that program and current available date before reserving travel around it.",
@@ -161,13 +166,14 @@
       "currentTier": "trip-brief",
       "indexEligible": false,
       "sourceIds": [
-        "global-nepal"
+        "global-nepal",
+        "species-08143485b5e6"
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "Guided mahseer river expedition in Babai River. Separate fishing days from any wildlife extension.",
-      "candidateTargets": "Golden mahseer",
+      "candidateTargets": "Putitor mahseer",
       "confirmedTargets": [
-        "Golden mahseer"
+        "Putitor mahseer"
       ],
       "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
       "accessToVerify": "River float",
@@ -197,13 +203,14 @@
       "currentTier": "trip-brief",
       "indexEligible": false,
       "sourceIds": [
-        "global-nepal"
+        "global-nepal",
+        "species-08143485b5e6"
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "Multi-day Himalayan river fishing in Seti–Karnali river system. Confirm the route and actual time devoted to angling rather than assuming a rafting itinerary is a fishing trip.",
-      "candidateTargets": "Golden mahseer",
+      "candidateTargets": "Putitor mahseer",
       "confirmedTargets": [
-        "Golden mahseer"
+        "Putitor mahseer"
       ],
       "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
       "accessToVerify": "River float",
@@ -233,13 +240,14 @@
       "currentTier": "trip-brief",
       "indexEligible": false,
       "sourceIds": [
-        "global-nepal"
+        "global-nepal",
+        "species-08143485b5e6"
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "River fishing with guide-selected targets in Trishuli River. Ask which of those targets applies to your exact reach and dates.",
-      "candidateTargets": "Golden mahseer / Goonch catfish",
+      "candidateTargets": "Putitor mahseer / Goonch catfish",
       "confirmedTargets": [
-        "Golden mahseer",
+        "Putitor mahseer",
         "Goonch catfish"
       ],
       "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
@@ -274,10 +282,8 @@
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "Guided valley fly fishing in Haa River. Arrange a specific guided beat and ask about current target fish before choosing tackle.",
-      "candidateTargets": "Local targets to confirm",
-      "confirmedTargets": [
-        "Local targets to confirm"
-      ],
+      "candidateTargets": "",
+      "confirmedTargets": [],
       "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
       "accessToVerify": "Bank",
       "tackleDecision": "Select the casting weight or fly-line system for the confirmed reach. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
@@ -310,10 +316,8 @@
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "Valley-based fishing day in Paro Valley. Ask for a fishing itinerary rather than a general valley tour.",
-      "candidateTargets": "Local targets to confirm",
-      "confirmedTargets": [
-        "Local targets to confirm"
-      ],
+      "candidateTargets": "",
+      "confirmedTargets": [],
       "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
       "accessToVerify": "Bank",
       "tackleDecision": "Select the casting weight or fly-line system for the confirmed reach. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
@@ -346,10 +350,8 @@
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "Highland fishing itinerary inquiry in Bumthang Valley. Use this brief to request a specific water and daily plan.",
-      "candidateTargets": "Local targets to confirm",
-      "confirmedTargets": [
-        "Local targets to confirm"
-      ],
+      "candidateTargets": "",
+      "confirmedTargets": [],
       "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
       "accessToVerify": "Bank",
       "tackleDecision": "Select the casting weight or fly-line system for the confirmed reach. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
@@ -378,14 +380,15 @@
       "currentTier": "trip-brief",
       "indexEligible": false,
       "sourceIds": [
-        "global-manas"
+        "global-manas",
+        "species-b3586e769095"
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "Lodge-based mahseer fly fishing in Manas River Lodge. Confirm the guided waters, target mix and transfers with the lodge.",
-      "candidateTargets": "Golden mahseer / Chocolate mahseer",
+      "candidateTargets": "Putitor mahseer / Copper mahseer",
       "confirmedTargets": [
-        "Golden mahseer",
-        "Chocolate mahseer"
+        "Putitor mahseer",
+        "Copper mahseer"
       ],
       "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
       "accessToVerify": "River float",
@@ -419,10 +422,8 @@
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "Guided casting and trolling day in Bolgoda Lake. Ask which part of the lake system and target apply to your outing.",
-      "candidateTargets": "Local targets to confirm",
-      "confirmedTargets": [
-        "Local targets to confirm"
-      ],
+      "candidateTargets": "",
+      "confirmedTargets": [],
       "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
       "accessToVerify": "Guided boat",
       "tackleDecision": "Obtain a target- and presentation-specific outfit list from the skipper. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
@@ -451,7 +452,8 @@
       "currentTier": "trip-brief",
       "indexEligible": false,
       "sourceIds": [
-        "global-malaysia"
+        "global-malaysia",
+        "species-efe7a37520b8"
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "Sailfish-focused boat charter in Kuala Rompin. Tell the operator whether you want conventional tackle or a fly-fishing attempt.",
@@ -491,10 +493,8 @@
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "Rainforest reservoir and houseboat fishing in Royal Belum–Temenggor. Clarify whether the price includes a dedicated fishing skiff and guide, not just the houseboat.",
-      "candidateTargets": "Local targets to confirm",
-      "confirmedTargets": [
-        "Local targets to confirm"
-      ],
+      "candidateTargets": "",
+      "confirmedTargets": [],
       "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
       "accessToVerify": "Guided boat",
       "tackleDecision": "Choose bank, trolling, jigging or casting equipment only after the method is fixed. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
@@ -527,10 +527,8 @@
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "Borneo fishing-program selection in Sabah — Borneo program. This regional brief requires a specific river or sea itinerary before becoming a complete gear plan.",
-      "candidateTargets": "Local targets to confirm",
-      "confirmedTargets": [
-        "Local targets to confirm"
-      ],
+      "candidateTargets": "",
+      "confirmedTargets": [],
       "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
       "accessToVerify": "Guided boat",
       "tackleDecision": "Match lure or fly size, line, leader and connections to the outfitter’s program. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
@@ -563,10 +561,8 @@
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "Guided boat fishing inquiry in Komodo region. Confirm the exact fishing grounds and distinguish them from sightseeing or protected dive sites.",
-      "candidateTargets": "Local targets to confirm",
-      "confirmedTargets": [
-        "Local targets to confirm"
-      ],
+      "candidateTargets": "",
+      "confirmedTargets": [],
       "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
       "accessToVerify": "Guided boat",
       "tackleDecision": "Confirm which rods, reels, rigs and replacement tackle the crew supplies. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
@@ -599,10 +595,8 @@
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "Method-specific fishing charter selection in Bali. Select one primary method rather than booking a vague all-technique trip.",
-      "candidateTargets": "Local targets to confirm",
-      "confirmedTargets": [
-        "Local targets to confirm"
-      ],
+      "candidateTargets": "",
+      "confirmedTargets": [],
       "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
       "accessToVerify": "Charter boat",
       "tackleDecision": "Confirm which rods, reels, rigs and replacement tackle the crew supplies. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
@@ -635,10 +629,8 @@
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "Island fishing charter planning in Lombok and Gili area. Request a dedicated fishing offer with a named departure and proposed grounds.",
-      "candidateTargets": "Local targets to confirm",
-      "confirmedTargets": [
-        "Local targets to confirm"
-      ],
+      "candidateTargets": "",
+      "confirmedTargets": [],
       "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
       "accessToVerify": "Guided boat",
       "tackleDecision": "Confirm which rods, reels, rigs and replacement tackle the crew supplies. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
@@ -667,7 +659,8 @@
       "currentTier": "trip-brief",
       "indexEligible": false,
       "sourceIds": [
-        "global-siargao"
+        "global-siargao",
+        "species-368f7b95ed18"
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "Trolling, drift or night fishing in Pilar — Siargao. Choose the actual session type before deciding on clothing and equipment.",
@@ -707,10 +700,8 @@
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "Dedicated deeper-water charter in Subic Bay offshore. Ask whether the quoted duration includes the full outbound and return run.",
-      "candidateTargets": "Local targets to confirm",
-      "confirmedTargets": [
-        "Local targets to confirm"
-      ],
+      "candidateTargets": "",
+      "confirmedTargets": [],
       "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
       "accessToVerify": "Charter boat",
       "tackleDecision": "Confirm which rods, reels, rigs and replacement tackle the crew supplies. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
@@ -743,10 +734,8 @@
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "Local-fisherman offshore experience in Phú Quốc offshore. Clarify whether you want a dedicated fishing day or a cultural boat experience.",
-      "candidateTargets": "Local targets to confirm",
-      "confirmedTargets": [
-        "Local targets to confirm"
-      ],
+      "candidateTargets": "",
+      "confirmedTargets": [],
       "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
       "accessToVerify": "Charter boat",
       "tackleDecision": "Confirm which rods, reels, rigs and replacement tackle the crew supplies. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
@@ -779,10 +768,8 @@
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "Private fishing and onboard-cooking outing in Singapore charter waters. Request the actual marina and intended waters before finalizing travel.",
-      "candidateTargets": "Local targets to confirm",
-      "confirmedTargets": [
-        "Local targets to confirm"
-      ],
+      "candidateTargets": "",
+      "confirmedTargets": [],
       "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
       "accessToVerify": "Guided boat",
       "tackleDecision": "Confirm which rods, reels, rigs and replacement tackle the crew supplies. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
@@ -811,7 +798,8 @@
       "currentTier": "trip-brief",
       "indexEligible": false,
       "sourceIds": [
-        "global-japan"
+        "global-japan",
+        "species-971174139baf"
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "Urban boat-based sea-bass fishing in Tokyo Bay. Ask which marina and start time fit your transit plans, and choose fly or spinning in advance.",
@@ -851,10 +839,8 @@
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "Hokkaido lake-fishing inquiry in Lake Akan. Confirm the target species, exact season and whether the day is shore-based or afloat.",
-      "candidateTargets": "Local targets to confirm",
-      "confirmedTargets": [
-        "Local targets to confirm"
-      ],
+      "candidateTargets": "",
+      "confirmedTargets": [],
       "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
       "accessToVerify": "Guided boat",
       "tackleDecision": "Choose bank, trolling, jigging or casting equipment only after the method is fixed. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
@@ -887,10 +873,8 @@
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "Mountain-region fly-fishing day in Takayama-area guided waters. Ask for the actual river and access plan before packing.",
-      "candidateTargets": "Local targets to confirm",
-      "confirmedTargets": [
-        "Local targets to confirm"
-      ],
+      "candidateTargets": "",
+      "confirmedTargets": [],
       "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
       "accessToVerify": "Bank",
       "tackleDecision": "Select the casting weight or fly-line system for the confirmed reach. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
@@ -919,7 +903,8 @@
       "currentTier": "trip-brief",
       "indexEligible": false,
       "sourceIds": [
-        "global-biwa"
+        "global-biwa",
+        "species-30fdb8be5907"
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "Guided bass-boat fishing in Lake Biwa. Ask whether your chosen technique and equipment are provided.",
@@ -959,10 +944,8 @@
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "Short evening boat-fishing experience in Jeju coastal sunset trip. Confirm departure port, target and supplied equipment.",
-      "candidateTargets": "Local targets to confirm",
-      "confirmedTargets": [
-        "Local targets to confirm"
-      ],
+      "candidateTargets": "",
+      "confirmedTargets": [],
       "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
       "accessToVerify": "Guided boat",
       "tackleDecision": "Confirm which rods, reels, rigs and replacement tackle the crew supplies. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
@@ -995,10 +978,8 @@
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "City-marina charter fishing in Dubai. Choose a fishing-first departure rather than a general yacht rental.",
-      "candidateTargets": "Local targets to confirm",
-      "confirmedTargets": [
-        "Local targets to confirm"
-      ],
+      "candidateTargets": "",
+      "confirmedTargets": [],
       "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
       "accessToVerify": "Charter boat",
       "tackleDecision": "Confirm which rods, reels, rigs and replacement tackle the crew supplies. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
@@ -1031,10 +1012,8 @@
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "Guided coastal boat fishing in Abu Dhabi. Request the actual marina and proposed fishing method before deciding on gear.",
-      "candidateTargets": "Local targets to confirm",
-      "confirmedTargets": [
-        "Local targets to confirm"
-      ],
+      "candidateTargets": "",
+      "confirmedTargets": [],
       "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
       "accessToVerify": "Guided boat",
       "tackleDecision": "Confirm which rods, reels, rigs and replacement tackle the crew supplies. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
@@ -1067,10 +1046,8 @@
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "Northern-emirate fishing charter in Ras Al Khaimah. Confirm the boat’s departure point and intended fishing area.",
-      "candidateTargets": "Local targets to confirm",
-      "confirmedTargets": [
-        "Local targets to confirm"
-      ],
+      "candidateTargets": "",
+      "confirmedTargets": [],
       "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
       "accessToVerify": "Guided boat",
       "tackleDecision": "Confirm which rods, reels, rigs and replacement tackle the crew supplies. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
@@ -1103,10 +1080,8 @@
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "East-coast fishing charter in Fujairah. Book an east-coast departure explicitly and ask for the target and equipment list.",
-      "candidateTargets": "Local targets to confirm",
-      "confirmedTargets": [
-        "Local targets to confirm"
-      ],
+      "candidateTargets": "",
+      "confirmedTargets": [],
       "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
       "accessToVerify": "Charter boat",
       "tackleDecision": "Confirm which rods, reels, rigs and replacement tackle the crew supplies. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
@@ -1139,10 +1114,8 @@
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "Private fishing excursion in Doha charter program. Confirm the harbor, duration on the water and included tackle directly.",
-      "candidateTargets": "Local targets to confirm",
-      "confirmedTargets": [
-        "Local targets to confirm"
-      ],
+      "candidateTargets": "",
+      "confirmedTargets": [],
       "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
       "accessToVerify": "Guided boat",
       "tackleDecision": "Confirm which rods, reels, rigs and replacement tackle the crew supplies. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
@@ -1171,7 +1144,8 @@
       "currentTier": "trip-brief",
       "indexEligible": false,
       "sourceIds": [
-        "global-jordan"
+        "global-jordan",
+        "species-98d42fcfe8fd"
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "Red Sea trolling, jigging or bottom fishing in Aqaba. Agree on the main method and intended fishing area rather than expecting every advertised target in one session.",
@@ -1213,10 +1187,8 @@
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "Red Sea guided fishing inquiry in Jeddah. Use the named operator as a starting point and confirm the current departure, target and method.",
-      "candidateTargets": "Local targets to confirm",
-      "confirmedTargets": [
-        "Local targets to confirm"
-      ],
+      "candidateTargets": "",
+      "confirmedTargets": [],
       "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
       "accessToVerify": "Guided boat",
       "tackleDecision": "Confirm which rods, reels, rigs and replacement tackle the crew supplies. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
@@ -1245,7 +1217,8 @@
       "currentTier": "trip-brief",
       "indexEligible": false,
       "sourceIds": [
-        "global-andamans"
+        "global-andamans",
+        "species-88a59486ae14"
       ],
       "evidenceDepth": "Inspected source text",
       "localDecision": "Popping and jigging expedition in South Andaman fishing grounds. Ask which species and technique dominate your program before carrying two heavy outfits.",
@@ -1286,10 +1259,8 @@
       ],
       "evidenceDepth": "Inspected source text",
       "localDecision": "Atoll flats-fishing program selection in Kaafu Atoll. Confirm which island and fishing water the guide can actually use.",
-      "candidateTargets": "Local targets to confirm",
-      "confirmedTargets": [
-        "Local targets to confirm"
-      ],
+      "candidateTargets": "",
+      "confirmedTargets": [],
       "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
       "accessToVerify": "Skiff",
       "tackleDecision": "Match the entire outfit to the primary target; obtain exact guide specifications. | Ask for the actual items, sizes and quantities used on this program. | Confirm skiff-only versus wading access before buying boots. | Keep phone, spare clothing and essentials separate from wet tackle.",
@@ -1322,10 +1293,8 @@
       ],
       "evidenceDepth": "Inspected source text",
       "localDecision": "Guide-led atoll fishing inquiry in Baa Atoll. Request a target-specific itinerary and current access arrangement.",
-      "candidateTargets": "Local targets to confirm",
-      "confirmedTargets": [
-        "Local targets to confirm"
-      ],
+      "candidateTargets": "",
+      "confirmedTargets": [],
       "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
       "accessToVerify": "Skiff",
       "tackleDecision": "Match the entire outfit to the primary target; obtain exact guide specifications. | Ask for the actual items, sizes and quantities used on this program. | Confirm skiff-only versus wading access before buying boots. | Keep phone, spare clothing and essentials separate from wet tackle.",
@@ -1358,10 +1327,8 @@
       ],
       "evidenceDepth": "Inspected source text",
       "localDecision": "Remote-atoll fishing preparation in Noonu Atoll. Clarify the transfer and boat program before selecting specialist gear.",
-      "candidateTargets": "Local targets to confirm",
-      "confirmedTargets": [
-        "Local targets to confirm"
-      ],
+      "candidateTargets": "",
+      "confirmedTargets": [],
       "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
       "accessToVerify": "Skiff",
       "tackleDecision": "Match the entire outfit to the primary target; obtain exact guide specifications. | Ask for the actual items, sizes and quantities used on this program. | Confirm skiff-only versus wading access before buying boots. | Keep phone, spare clothing and essentials separate from wet tackle.",
@@ -1390,7 +1357,8 @@
       "currentTier": "trip-brief",
       "indexEligible": false,
       "sourceIds": [
-        "global-maldives"
+        "global-maldives",
+        "species-f3376fe2c719"
       ],
       "evidenceDepth": "Inspected source text",
       "localDecision": "Southern-atoll offshore program in Laamu Atoll. Keep the offshore charter distinct from a shallow-flat day.",
@@ -1428,7 +1396,8 @@
       "currentTier": "trip-brief",
       "indexEligible": false,
       "sourceIds": [
-        "global-oman-local"
+        "global-oman-local",
+        "species-5be469e41eac"
       ],
       "evidenceDepth": "Inspected source text",
       "localDecision": "Specialist giant-trevally boat fishing in Hallaniyat Islands. Confirm the exact departure base and operator-recommended casting system.",
@@ -1468,10 +1437,8 @@
       ],
       "evidenceDepth": "Inspected source text",
       "localDecision": "Southern Oman fishing-base inquiry in Hasik. Ask which target and technique the advertised program actually emphasizes.",
-      "candidateTargets": "Local targets to confirm",
-      "confirmedTargets": [
-        "Local targets to confirm"
-      ],
+      "candidateTargets": "",
+      "confirmedTargets": [],
       "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
       "accessToVerify": "Guided boat",
       "tackleDecision": "Confirm which rods, reels, rigs and replacement tackle the crew supplies. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
@@ -1500,7 +1467,8 @@
       "currentTier": "trip-brief",
       "indexEligible": false,
       "sourceIds": [
-        "global-thailand"
+        "global-thailand",
+        "species-1edf5f07a3cc"
       ],
       "evidenceDepth": "Inspected source text",
       "localDecision": "Managed-fishery trip. Managed multi-species fishing lake in Gillhams — Krabi. This is a stocked fishery, not evidence that Amazon species are native to Thai rivers.",
@@ -1542,10 +1510,8 @@
       ],
       "evidenceDepth": "Inspected source text",
       "localDecision": "Managed-fishery trip. Guided stocked-fishery itinerary in Bangkok managed-lake circuit. Request the exact venues and targets for your dates.",
-      "candidateTargets": "Local targets to confirm",
-      "confirmedTargets": [
-        "Local targets to confirm"
-      ],
+      "candidateTargets": "",
+      "confirmedTargets": [],
       "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
       "accessToVerify": "Bank",
       "tackleDecision": "Get venue-specific requirements for rigs, bait and landing equipment. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
@@ -1578,10 +1544,8 @@
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "Equipped beginner-friendly fishing tour in Antalya — Mediterranean boat fishing. Confirm whether the actual itinerary is nearshore bottom fishing or a farther offshore trip.",
-      "candidateTargets": "Local targets to confirm",
-      "confirmedTargets": [
-        "Local targets to confirm"
-      ],
+      "candidateTargets": "",
+      "confirmedTargets": [],
       "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
       "accessToVerify": "Guided boat",
       "tackleDecision": "Confirm which rods, reels, rigs and replacement tackle the crew supplies. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",

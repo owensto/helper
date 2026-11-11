@@ -15,13 +15,14 @@
       "currentTier": "detailed-guide",
       "indexEligible": true,
       "sourceIds": [
-        "norway"
+        "norway",
+        "species-85cb0645fc73"
       ],
       "evidenceDepth": "Inspected source text",
       "localDecision": "Winter cod is its own trip category. It should not inherit the clothing, daylight or operating assumptions of a summer fjord holiday.",
-      "candidateTargets": "Atlantic cod / skrei",
+      "candidateTargets": "Atlantic cod",
       "confirmedTargets": [
-        "Atlantic cod / skrei"
+        "Atlantic cod"
       ],
       "seasonalEvidence": "January–March is a broad published skrei reference. It is not evidence that every coastal town, boat and date offers the same opportunity. Keep weather flexibility and the actual operator’s season in the booking conversation.",
       "accessToVerify": "Charter boat",
@@ -51,7 +52,8 @@
       "currentTier": "detailed-guide",
       "indexEligible": true,
       "sourceIds": [
-        "norway"
+        "norway",
+        "species-85cb0645fc73"
       ],
       "evidenceDepth": "Inspected source text",
       "localDecision": "A coastal fishing camp, a guided charter and a self-drive boat rental are different products. Choose the responsibility level before building the shopping list.",
@@ -93,10 +95,8 @@
       ],
       "evidenceDepth": "Inspected source text",
       "localDecision": "Ice fishing is a surface-condition and access category, not “glacier fishing.” Start with a locally operated outing and confirm the full equipment and clothing plan.",
-      "candidateTargets": "Locally confirmed lake fish",
-      "confirmedTargets": [
-        "Locally confirmed lake fish"
-      ],
+      "candidateTargets": "",
+      "confirmedTargets": [],
       "seasonalEvidence": "There is no safe-ice date derived from a month selector. Book only an outing the local provider can assess and operate under the actual conditions. This guide deliberately does not publish a universal ice-thickness rule or a guaranteed winter operating window.",
       "accessToVerify": "Guided ice",
       "tackleDecision": "Confirm rod, jig/bait, auger and seating provision. | Provider-confirmed fit for session length and conditions. | Keep an accessible backup pair. | Provider makes the actual ice and route decision.",
@@ -125,7 +125,8 @@
       "currentTier": "detailed-guide",
       "indexEligible": true,
       "sourceIds": [
-        "soca"
+        "soca",
+        "species-d760215e5e4d"
       ],
       "evidenceDepth": "Inspected source text",
       "localDecision": "A Soča plan should identify a specific reach and target. Alpine scenery is not a reason to copy an Alaska glacial-river kit or a generic trout assortment.",
@@ -163,14 +164,15 @@
       "currentTier": "trip-brief",
       "indexEligible": false,
       "sourceIds": [
-        "global-is-sportquest"
+        "global-is-sportquest",
+        "species-d3753bb69b4a"
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "spring-fed salmon program in West Rangá. Choose the salmon program or trout objective before comparing packages.",
-      "candidateTargets": "Atlantic salmon / Brown trout",
+      "candidateTargets": "Atlantic salmon / Sea trout",
       "confirmedTargets": [
         "Atlantic salmon",
-        "Brown trout"
+        "Sea trout"
       ],
       "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
       "accessToVerify": "Bank",
@@ -200,7 +202,8 @@
       "currentTier": "trip-brief",
       "indexEligible": false,
       "sourceIds": [
-        "global-is-sportquest"
+        "global-is-sportquest",
+        "species-d3753bb69b4a"
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "northwestern river beats in Vatnsdalsá. Request the beat rotation, daily transport and division between species.",
@@ -237,13 +240,14 @@
       "currentTier": "trip-brief",
       "indexEligible": false,
       "sourceIds": [
-        "global-is-sportquest"
+        "global-is-sportquest",
+        "species-d3753bb69b4a"
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "small-river trout and salmon in Mýrarkvísl. Decide whether this is a trout-focused outing or a salmon booking.",
-      "candidateTargets": "Brown trout / Atlantic salmon",
+      "candidateTargets": "Sea trout / Atlantic salmon",
       "confirmedTargets": [
-        "Brown trout",
+        "Sea trout",
         "Atlantic salmon"
       ],
       "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
@@ -274,13 +278,14 @@
       "currentTier": "trip-brief",
       "indexEligible": false,
       "sourceIds": [
-        "global-is-sportquest"
+        "global-is-sportquest",
+        "species-d3753bb69b4a"
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "dry-fly-focused river day in Reykjadalsá. Prioritize presentation and an agreed dry-fly selection over heavy salmon tackle.",
-      "candidateTargets": "Brown trout / Arctic char",
+      "candidateTargets": "Sea trout / Arctic char",
       "confirmedTargets": [
-        "Brown trout",
+        "Sea trout",
         "Arctic char"
       ],
       "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
@@ -311,13 +316,14 @@
       "currentTier": "trip-brief",
       "indexEligible": false,
       "sourceIds": [
-        "global-is-sportquest"
+        "global-is-sportquest",
+        "species-d3753bb69b4a"
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "northeastern trout and char in Lónsá / Langanes. Treat the remoteness of the selected program as a transfer and resupply question.",
-      "candidateTargets": "Brown trout / Arctic char",
+      "candidateTargets": "Sea trout / Arctic char",
       "confirmedTargets": [
-        "Brown trout",
+        "Sea trout",
         "Arctic char"
       ],
       "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
@@ -348,7 +354,8 @@
       "currentTier": "trip-brief",
       "indexEligible": false,
       "sourceIds": [
-        "global-no-fresh"
+        "global-no-fresh",
+        "species-cd2dce533cc3"
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "salmon beat planning in Gaula. Build the Gaula visit around an actual stretch of river and a named host.",
@@ -384,7 +391,8 @@
       "currentTier": "trip-brief",
       "indexEligible": false,
       "sourceIds": [
-        "global-no-fresh"
+        "global-no-fresh",
+        "species-cd2dce533cc3"
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "salmon beat planning in Orkla. Choose the host and allocated stretch before arranging accommodation.",
@@ -420,7 +428,8 @@
       "currentTier": "trip-brief",
       "indexEligible": false,
       "sourceIds": [
-        "global-no-fresh"
+        "global-no-fresh",
+        "species-cd2dce533cc3"
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "salmon beat planning in Namsen. Compare a bank-based salmon day with any boat-supported option the host actually offers.",
@@ -456,7 +465,8 @@
       "currentTier": "trip-brief",
       "indexEligible": false,
       "sourceIds": [
-        "global-no-south"
+        "global-no-south",
+        "species-28b6402031cc"
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "southern Norway river visit in Otra / Kristiansand. A short city-based visit needs a clearly identified fishing reach and a transfer plan.",
@@ -497,10 +507,8 @@
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "northern fly-fishing introduction in Swedish Lapland. Select a named river and a base with the guide before arranging domestic transport.",
-      "candidateTargets": "Local targets to confirm",
-      "confirmedTargets": [
-        "Local targets to confirm"
-      ],
+      "candidateTargets": "",
+      "confirmedTargets": [],
       "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
       "accessToVerify": "Bank",
       "tackleDecision": "Select the casting weight or fly-line system for the confirmed reach. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
@@ -529,13 +537,14 @@
       "currentTier": "trip-brief",
       "indexEligible": false,
       "sourceIds": [
-        "global-se-visit"
+        "global-se-visit",
+        "species-a8f08dfd3e3a"
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "mixed coastal fishing in High Coast. Separate sheltered-water predator fishing from an exposed coastal outing.",
-      "candidateTargets": "Pike / Sea trout",
+      "candidateTargets": "Northern pike / Sea trout",
       "confirmedTargets": [
-        "Pike",
+        "Northern pike",
         "Sea trout"
       ],
       "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
@@ -566,15 +575,16 @@
       "currentTier": "trip-brief",
       "indexEligible": false,
       "sourceIds": [
-        "global-se-vattern"
+        "global-se-vattern",
+        "species-b7a95bfa73d0"
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "large-lake species choice in Lake Vättern. Choose one primary objective and a suitable boat or bank session.",
-      "candidateTargets": "Arctic char / Landlocked salmon / Pike",
+      "candidateTargets": "Arctic char / Landlocked salmon / Northern pike",
       "confirmedTargets": [
         "Arctic char",
         "Landlocked salmon",
-        "Pike"
+        "Northern pike"
       ],
       "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
       "accessToVerify": "Guided boat",
@@ -604,13 +614,14 @@
       "currentTier": "trip-brief",
       "indexEligible": false,
       "sourceIds": [
-        "global-fi-lakes"
+        "global-fi-lakes",
+        "species-56427aa9096d"
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "reed margins versus open-water trolling in Lake Saimaa. Choose a trolling day or an active casting day before selecting rods.",
-      "candidateTargets": "Pike / Perch / Zander",
+      "candidateTargets": "Northern pike / Perch / Zander",
       "confirmedTargets": [
-        "Pike",
+        "Northern pike",
         "Perch",
         "Zander"
       ],
@@ -642,7 +653,8 @@
       "currentTier": "trip-brief",
       "indexEligible": false,
       "sourceIds": [
-        "global-fi-lakes"
+        "global-fi-lakes",
+        "species-56427aa9096d"
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "northern-lake route planning in Lake Inari. Ask which sheltered launch and fishing area suit the intended species and conditions.",
@@ -680,7 +692,8 @@
       "currentTier": "trip-brief",
       "indexEligible": false,
       "sourceIds": [
-        "global-dk-guide"
+        "global-dk-guide",
+        "species-2719d76dbda0"
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "coastal fly and spinning day in Helnæs / Fyn. Pick fly or spinning as the primary method, and ask how the guide selects a shore for the wind on the day.",
@@ -720,10 +733,8 @@
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "fjord shore discovery in Mariager Fjord. Request a specific section of shore, target and entry point before treating this fjord overview as a finished plan.",
-      "candidateTargets": "Local targets to confirm",
-      "confirmedTargets": [
-        "Local targets to confirm"
-      ],
+      "candidateTargets": "",
+      "confirmedTargets": [],
       "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
       "accessToVerify": "Guided boat",
       "tackleDecision": "Confirm which rods, reels, rigs and replacement tackle the crew supplies. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
@@ -756,10 +767,8 @@
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "shore versus boat selection in Little Belt. Make the bank-versus-boat decision early.",
-      "candidateTargets": "Local targets to confirm",
-      "confirmedTargets": [
-        "Local targets to confirm"
-      ],
+      "candidateTargets": "",
+      "confirmedTargets": [],
       "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
       "accessToVerify": "Guided boat",
       "tackleDecision": "Confirm which rods, reels, rigs and replacement tackle the crew supplies. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
@@ -788,13 +797,14 @@
       "currentTier": "trip-brief",
       "indexEligible": false,
       "sourceIds": [
-        "global-ie-if"
+        "global-ie-if",
+        "species-9f478379c671"
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "trout day with a local boatman in Lough Corrib. A current local report is more useful than a fixed annual hatch promise.",
-      "candidateTargets": "Brown trout",
+      "candidateTargets": "Sea trout",
       "confirmedTargets": [
-        "Brown trout"
+        "Sea trout"
       ],
       "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
       "accessToVerify": "Guided boat",
@@ -824,13 +834,14 @@
       "currentTier": "trip-brief",
       "indexEligible": false,
       "sourceIds": [
-        "global-ie-if"
+        "global-ie-if",
+        "species-9f478379c671"
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "choose the reach before the species list in River Shannon. Choose a bounded reach and one primary target.",
-      "candidateTargets": "Pike / Trout",
+      "candidateTargets": "Northern pike / Trout",
       "confirmedTargets": [
-        "Pike",
+        "Northern pike",
         "Trout"
       ],
       "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
@@ -861,13 +872,14 @@
       "currentTier": "trip-brief",
       "indexEligible": false,
       "sourceIds": [
-        "global-ie-guide"
+        "global-ie-guide",
+        "species-dc0297765f1a"
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "western lough boat session in Lough Conn. Ask which part of Lough Conn the boatman expects to fish and what the weather alternative is.",
-      "candidateTargets": "Brown trout",
+      "candidateTargets": "Sea trout",
       "confirmedTargets": [
-        "Brown trout"
+        "Sea trout"
       ],
       "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
       "accessToVerify": "Guided boat",
@@ -897,13 +909,15 @@
       "currentTier": "trip-brief",
       "indexEligible": false,
       "sourceIds": [
-        "global-ie-guide"
+        "global-ie-guide",
+        "species-dc0297765f1a",
+        "species-a3b1b1019d4b"
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "western lough boat session in Lough Mask. Begin with the guide’s launch point and the intended fishing style.",
-      "candidateTargets": "Brown trout",
+      "candidateTargets": "Sea trout",
       "confirmedTargets": [
-        "Brown trout"
+        "Sea trout"
       ],
       "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
       "accessToVerify": "Guided boat",
@@ -933,13 +947,15 @@
       "currentTier": "trip-brief",
       "indexEligible": false,
       "sourceIds": [
-        "global-ie-guide"
+        "global-ie-guide",
+        "species-dc0297765f1a",
+        "species-89848a48094c"
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "western lough boat session in Lough Carra. Fit the outing to the amount of time you can spend fishing after transfers.",
-      "candidateTargets": "Brown trout",
+      "candidateTargets": "Sea trout",
       "confirmedTargets": [
-        "Brown trout"
+        "Sea trout"
       ],
       "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
       "accessToVerify": "Guided boat",
@@ -969,7 +985,8 @@
       "currentTier": "trip-brief",
       "indexEligible": false,
       "sourceIds": [
-        "global-uk-alba"
+        "global-uk-alba",
+        "species-8f676edb8c5f"
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "Scottish salmon beat visit in River Tweed. Compare River Tweed offers at beat level: host, bank allocation, session length and equipment provision.",
@@ -1005,7 +1022,8 @@
       "currentTier": "trip-brief",
       "indexEligible": false,
       "sourceIds": [
-        "global-uk-alba"
+        "global-uk-alba",
+        "species-8f676edb8c5f"
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "Scottish salmon beat visit in River Tay. Specify whether the goal is learning salmon presentation or spending a full session on allocated water.",
@@ -1041,7 +1059,8 @@
       "currentTier": "trip-brief",
       "indexEligible": false,
       "sourceIds": [
-        "global-uk-alba"
+        "global-uk-alba",
+        "species-8f676edb8c5f"
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "Scottish salmon beat visit in River Spey. Discuss casting instruction explicitly when enquiring about a Spey trip.",
@@ -1077,7 +1096,8 @@
       "currentTier": "trip-brief",
       "indexEligible": false,
       "sourceIds": [
-        "global-uk-alba"
+        "global-uk-alba",
+        "species-8f676edb8c5f"
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "Scottish salmon beat visit in River Dee. Ask how the beat visit is organized: meeting time, fishing rotation, local assistance and any walking between positions.",
@@ -1113,7 +1133,8 @@
       "currentTier": "trip-brief",
       "indexEligible": false,
       "sourceIds": [
-        "global-uk-kennet"
+        "global-uk-kennet",
+        "species-5be469e41eac"
       ],
       "evidenceDepth": "Inspected source text",
       "localDecision": "chalkstream day-trip planning in Barton Court / River Kennet. Plan a specific estate-water day rather than general public-river access.",
@@ -1149,13 +1170,16 @@
       "currentTier": "trip-brief",
       "indexEligible": false,
       "sourceIds": [
-        "global-uk-wales"
+        "global-uk-wales",
+        "species-b1695c790782",
+        "species-8ed195641fb0"
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "managed fishery introduction in Llyn Y Gors / Anglesey. Ask the fishery which lake fits a beginner, the preferred target and the available hire equipment.",
-      "candidateTargets": "Coarse fish",
+      "candidateTargets": "Coarse fish / Common carp",
       "confirmedTargets": [
-        "Coarse fish"
+        "Coarse fish",
+        "Common carp"
       ],
       "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
       "accessToVerify": "Bank",
@@ -1185,13 +1209,14 @@
       "currentTier": "trip-brief",
       "indexEligible": false,
       "sourceIds": [
-        "global-nl-urban"
+        "global-nl-urban",
+        "species-19f223835df4"
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "city predator-fishing session in Amsterdam canals and IJ. Choose street fishing or a guided boat session before estimating walking, tackle and luggage needs.",
-      "candidateTargets": "Pike / Perch / Zander",
+      "candidateTargets": "Northern pike / Perch / Zander",
       "confirmedTargets": [
-        "Pike",
+        "Northern pike",
         "Perch",
         "Zander"
       ],
@@ -1223,13 +1248,14 @@
       "currentTier": "trip-brief",
       "indexEligible": false,
       "sourceIds": [
-        "global-nl-fries"
+        "global-nl-fries",
+        "species-54e759e83b64"
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "Friesland predator boat trip in Sneekermeer / Friesland. Ask which lake is proposed for the booked day; the operator may use several waters.",
-      "candidateTargets": "Pike / Perch / Zander",
+      "candidateTargets": "Northern pike / Perch / Zander",
       "confirmedTargets": [
-        "Pike",
+        "Northern pike",
         "Perch",
         "Zander"
       ],
@@ -1265,10 +1291,8 @@
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "guided angling instruction in Ourthe Valley / RIVEO. Book by the skill you want to learn and the water used for that lesson.",
-      "candidateTargets": "Local targets to confirm",
-      "confirmedTargets": [
-        "Local targets to confirm"
-      ],
+      "candidateTargets": "",
+      "confirmedTargets": [],
       "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
       "accessToVerify": "Bank",
       "tackleDecision": "Select the casting weight or fly-line system for the confirmed reach. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
@@ -1301,10 +1325,8 @@
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "access-first freshwater outing in Nisramont Lake. Use the listed water to arrange a specific Nisramont Lake outing, not to infer a species or season.",
-      "candidateTargets": "Local targets to confirm",
-      "confirmedTargets": [
-        "Local targets to confirm"
-      ],
+      "candidateTargets": "",
+      "confirmedTargets": [],
       "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
       "accessToVerify": "Bank",
       "tackleDecision": "Choose bank, trolling, jigging or casting equipment only after the method is fixed. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
@@ -1337,10 +1359,8 @@
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "access-first freshwater outing in Semois / Herbeumont. Use Herbeumont to narrow the enquiry to a particular river reach, then ask which target and technique fit your intended visit.",
-      "candidateTargets": "Local targets to confirm",
-      "confirmedTargets": [
-        "Local targets to confirm"
-      ],
+      "candidateTargets": "",
+      "confirmedTargets": [],
       "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
       "accessToVerify": "Bank",
       "tackleDecision": "Select the casting weight or fly-line system for the confirmed reach. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
@@ -1373,10 +1393,8 @@
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "access-first freshwater outing in Eau d’Heure Lakes. Choose the specific lake and shore before treating this lake group as one fishing destination.",
-      "candidateTargets": "Local targets to confirm",
-      "confirmedTargets": [
-        "Local targets to confirm"
-      ],
+      "candidateTargets": "",
+      "confirmedTargets": [],
       "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
       "accessToVerify": "Bank",
       "tackleDecision": "Choose bank, trolling, jigging or casting equipment only after the method is fixed. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
@@ -1409,10 +1427,8 @@
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "small-country river day in Sûre River. Identify the exact river section and arrange local tackle guidance before arrival.",
-      "candidateTargets": "Local targets to confirm",
-      "confirmedTargets": [
-        "Local targets to confirm"
-      ],
+      "candidateTargets": "",
+      "confirmedTargets": [],
       "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
       "accessToVerify": "Bank",
       "tackleDecision": "Select the casting weight or fly-line system for the confirmed reach. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
@@ -1445,10 +1461,8 @@
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "border-river bank planning in Moselle / Wasserbillig. Use Wasserbillig as a planning base, then confirm the actual bank and target with a local source.",
-      "candidateTargets": "Local targets to confirm",
-      "confirmedTargets": [
-        "Local targets to confirm"
-      ],
+      "candidateTargets": "",
+      "confirmedTargets": [],
       "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
       "accessToVerify": "Bank",
       "tackleDecision": "Select the casting weight or fly-line system for the confirmed reach. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
@@ -1481,10 +1495,8 @@
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "reservoir day-trip research in Vianden reservoir / Our. Confirm the specific reservoir access and intended method before buying terminal tackle.",
-      "candidateTargets": "Local targets to confirm",
-      "confirmedTargets": [
-        "Local targets to confirm"
-      ],
+      "candidateTargets": "",
+      "confirmedTargets": [],
       "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
       "accessToVerify": "Bank",
       "tackleDecision": "Choose bank, trolling, jigging or casting equipment only after the method is fixed. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
@@ -1513,13 +1525,14 @@
       "currentTier": "trip-brief",
       "indexEligible": false,
       "sourceIds": [
-        "global-de-muritz"
+        "global-de-muritz",
+        "species-6b56f8f81852"
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "large-lake guided predators in Lake Müritz. Compare a guided boat with a self-run rental according to your experience.",
-      "candidateTargets": "Pike / Perch / Zander",
+      "candidateTargets": "Northern pike / Perch / Zander",
       "confirmedTargets": [
-        "Pike",
+        "Northern pike",
         "Perch",
         "Zander"
       ],
@@ -1555,10 +1568,8 @@
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "Austrian river fly-fishing in Ybbs / Mostviertel. Choose the hosted reach first and ask what technique is intended there.",
-      "candidateTargets": "Local targets to confirm",
-      "confirmedTargets": [
-        "Local targets to confirm"
-      ],
+      "candidateTargets": "",
+      "confirmedTargets": [],
       "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
       "accessToVerify": "Bank",
       "tackleDecision": "Select the casting weight or fly-line system for the confirmed reach. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
@@ -1591,10 +1602,8 @@
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "high-country lake outing in Lünersee / Rätikon. Coordinate mountain access and fishing time before picking rod length or lure quantities.",
-      "candidateTargets": "Local targets to confirm",
-      "confirmedTargets": [
-        "Local targets to confirm"
-      ],
+      "candidateTargets": "",
+      "confirmedTargets": [],
       "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
       "accessToVerify": "Hike-in",
       "tackleDecision": "Keep rod sections and tackle protection compatible with the hike. | Ask for the actual items, sizes and quantities used on this program. | Keep rain protection and a dry layer available without overloading the pack. | Keep phone, spare clothing and essentials separate from wet tackle.",
@@ -1627,10 +1636,8 @@
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "mountain-lake day planning in Formarinsee / Arlberg. Separate the scenic lake visit from confirmation of the fishing session.",
-      "candidateTargets": "Local targets to confirm",
-      "confirmedTargets": [
-        "Local targets to confirm"
-      ],
+      "candidateTargets": "",
+      "confirmedTargets": [],
       "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
       "accessToVerify": "Hike-in",
       "tackleDecision": "Keep rod sections and tackle protection compatible with the hike. | Ask for the actual items, sizes and quantities used on this program. | Keep rain protection and a dry layer available without overloading the pack. | Keep phone, spare clothing and essentials separate from wet tackle.",
@@ -1659,13 +1666,14 @@
       "currentTier": "trip-brief",
       "indexEligible": false,
       "sourceIds": [
-        "global-at-traun"
+        "global-at-traun",
+        "species-db98134fd83e"
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "bounded fly-fishing reach in Goiserer Traun. Ask for the exact included stretch and available instruction.",
-      "candidateTargets": "Brown trout",
+      "candidateTargets": "Sea trout",
       "confirmedTargets": [
-        "Brown trout"
+        "Sea trout"
       ],
       "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
       "accessToVerify": "Bank",
@@ -1695,13 +1703,14 @@
       "currentTier": "trip-brief",
       "indexEligible": false,
       "sourceIds": [
-        "global-at-seevilla"
+        "global-at-seevilla",
+        "species-d5c79ffd80a6"
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "lake predator session in Grundlsee. Treat the lake-predator outing as a separate kit from neighboring trout streams.",
-      "candidateTargets": "Pike",
+      "candidateTargets": "Northern pike",
       "confirmedTargets": [
-        "Pike"
+        "Northern pike"
       ],
       "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
       "accessToVerify": "Guided boat",
@@ -1731,7 +1740,8 @@
       "currentTier": "trip-brief",
       "indexEligible": false,
       "sourceIds": [
-        "global-mc-operator"
+        "global-mc-operator",
+        "species-f60a0726d6bd"
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "Riviera offshore charter in Monaco offshore. Specify the target and method when requesting the trip.",
@@ -1768,7 +1778,8 @@
       "currentTier": "trip-brief",
       "indexEligible": false,
       "sourceIds": [
-        "global-mc-operator"
+        "global-mc-operator",
+        "species-f60a0726d6bd"
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "evening light-tackle outing in Monaco coastal night fishing. Ask how long the outing runs after dark and what lighting and tackle are supplied.",
@@ -1810,10 +1821,8 @@
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "guided coastal lure session in Île de Ré. Choose the small-boat coastal lesson or larger offshore program explicitly.",
-      "candidateTargets": "Local targets to confirm",
-      "confirmedTargets": [
-        "Local targets to confirm"
-      ],
+      "candidateTargets": "",
+      "confirmedTargets": [],
       "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
       "accessToVerify": "Guided boat",
       "tackleDecision": "Confirm which rods, reels, rigs and replacement tackle the crew supplies. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
@@ -1846,10 +1855,8 @@
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "shore versus guided boat day in Var coast. Pick a named departure port and a clear technique before comparing offers.",
-      "candidateTargets": "Local targets to confirm",
-      "confirmedTargets": [
-        "Local targets to confirm"
-      ],
+      "candidateTargets": "",
+      "confirmedTargets": [],
       "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
       "accessToVerify": "Guided boat",
       "tackleDecision": "Confirm which rods, reels, rigs and replacement tackle the crew supplies. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
@@ -1878,13 +1885,14 @@
       "currentTier": "trip-brief",
       "indexEligible": false,
       "sourceIds": [
-        "global-es-leon"
+        "global-es-leon",
+        "species-5be469e41eac"
       ],
       "evidenceDepth": "Inspected source text",
       "localDecision": "Cantabrian trout program in Cistierna / León. Use the base to compare actual fishing days and transfers, not just hotel quality.",
-      "candidateTargets": "Brown trout",
+      "candidateTargets": "Sea trout",
       "confirmedTargets": [
-        "Brown trout"
+        "Sea trout"
       ],
       "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
       "accessToVerify": "Bank",
@@ -1918,10 +1926,8 @@
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "Azores charter discovery in Ponta Delgada / São Miguel. Select the target and trip duration with the listed provider before using this as an offshore plan.",
-      "candidateTargets": "Local targets to confirm",
-      "confirmedTargets": [
-        "Local targets to confirm"
-      ],
+      "candidateTargets": "",
+      "confirmedTargets": [],
       "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
       "accessToVerify": "Charter boat",
       "tackleDecision": "Confirm which rods, reels, rigs and replacement tackle the crew supplies. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
@@ -1954,10 +1960,8 @@
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "Trentino reach-specific fishing in Sarca / Regorie. Plan the Sarca / Regorie outing around the exact reach shown by the local fishery rather than a river-wide assumption.",
-      "candidateTargets": "Local targets to confirm",
-      "confirmedTargets": [
-        "Local targets to confirm"
-      ],
+      "candidateTargets": "",
+      "confirmedTargets": [],
       "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
       "accessToVerify": "Bank",
       "tackleDecision": "Select the casting weight or fly-line system for the confirmed reach. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
@@ -1990,10 +1994,8 @@
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "Trentino reach-specific fishing in Chiese / Val di Fumo. Establish the approach and return arrangement for the selected Val di Fumo outing.",
-      "candidateTargets": "Local targets to confirm",
-      "confirmedTargets": [
-        "Local targets to confirm"
-      ],
+      "candidateTargets": "",
+      "confirmedTargets": [],
       "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
       "accessToVerify": "Bank",
       "tackleDecision": "Select the casting weight or fly-line system for the confirmed reach. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
@@ -2026,10 +2028,8 @@
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "Trentino reach-specific fishing in Avisio / CK reach. Use the reach identifier when asking the fishery about this trip; a general Avisio enquiry may refer to different water.",
-      "candidateTargets": "Local targets to confirm",
-      "confirmedTargets": [
-        "Local targets to confirm"
-      ],
+      "candidateTargets": "",
+      "confirmedTargets": [],
       "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
       "accessToVerify": "Bank",
       "tackleDecision": "Select the casting weight or fly-line system for the confirmed reach. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
@@ -2062,10 +2062,8 @@
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "Trentino reach-specific fishing in Adige / NKC reach. Confirm the NKC reach and the actual access point before organizing the day.",
-      "candidateTargets": "Local targets to confirm",
-      "confirmedTargets": [
-        "Local targets to confirm"
-      ],
+      "candidateTargets": "",
+      "confirmedTargets": [],
       "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
       "accessToVerify": "Bank",
       "tackleDecision": "Select the casting weight or fly-line system for the confirmed reach. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
@@ -2098,10 +2096,8 @@
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "reserve-based river session in Sesia / Varallo. Compare the exact reserve and the permitted fishing style when arranging a guide.",
-      "candidateTargets": "Local targets to confirm",
-      "confirmedTargets": [
-        "Local targets to confirm"
-      ],
+      "candidateTargets": "",
+      "confirmedTargets": [],
       "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
       "accessToVerify": "Bank",
       "tackleDecision": "Select the casting weight or fly-line system for the confirmed reach. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
@@ -2134,10 +2130,8 @@
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "upper-valley fishing visit in Sesia / Alagna. Treat this upper-valley visit as its own reach-specific plan instead of copying the Varallo checklist.",
-      "candidateTargets": "Local targets to confirm",
-      "confirmedTargets": [
-        "Local targets to confirm"
-      ],
+      "candidateTargets": "",
+      "confirmedTargets": [],
       "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
       "accessToVerify": "Bank",
       "tackleDecision": "Select the casting weight or fly-line system for the confirmed reach. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
@@ -2170,10 +2164,8 @@
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "hosted ice-fishing day in Lake Peipsi / Varnja winter. Book the hosted experience rather than treating a published winter activity as approval to go onto ice alone.",
-      "candidateTargets": "Local targets to confirm",
-      "confirmedTargets": [
-        "Local targets to confirm"
-      ],
+      "candidateTargets": "",
+      "confirmedTargets": [],
       "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
       "accessToVerify": "Guided ice",
       "tackleDecision": "Confirm rods, auger, bait, shelter and transport with the guide. | Ask for the actual items, sizes and quantities used on this program. | Confirm footwear and layered clothing for the guided winter outing. | Keep phone, spare clothing and essentials separate from wet tackle.",
@@ -2206,10 +2198,8 @@
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "open-water rental or guided day in Lake Peipsi / Varnja open water. An open-water boat outing is a separate plan from the winter experience.",
-      "candidateTargets": "Local targets to confirm",
-      "confirmedTargets": [
-        "Local targets to confirm"
-      ],
+      "candidateTargets": "",
+      "confirmedTargets": [],
       "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
       "accessToVerify": "Guided boat",
       "tackleDecision": "Choose bank, trolling, jigging or casting equipment only after the method is fixed. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
@@ -2242,10 +2232,8 @@
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "Valmiera-area lake trip in Lake Burtnieks. Ask a local host to narrow the target and boat route before choosing tackle.",
-      "candidateTargets": "Local targets to confirm",
-      "confirmedTargets": [
-        "Local targets to confirm"
-      ],
+      "candidateTargets": "",
+      "confirmedTargets": [],
       "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
       "accessToVerify": "Guided boat",
       "tackleDecision": "Choose bank, trolling, jigging or casting equipment only after the method is fixed. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
@@ -2274,13 +2262,14 @@
       "currentTier": "trip-brief",
       "indexEligible": false,
       "sourceIds": [
-        "global-lv-guide"
+        "global-lv-guide",
+        "species-0bb2423068a0"
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "lake predator casting in Lake Usma. Specify pike or perch as the main objective and ask the guide to provide appropriate lure sizes.",
-      "candidateTargets": "Pike / Perch",
+      "candidateTargets": "Northern pike / Perch",
       "confirmedTargets": [
-        "Pike",
+        "Northern pike",
         "Perch"
       ],
       "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
@@ -2311,13 +2300,14 @@
       "currentTier": "trip-brief",
       "indexEligible": false,
       "sourceIds": [
-        "global-lv-guide"
+        "global-lv-guide",
+        "species-0bb2423068a0"
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "guided freshwater predator day in Lake Lubāns. Plan the launch and sheltered alternative with a local host.",
-      "candidateTargets": "Pike / Perch",
+      "candidateTargets": "Northern pike / Perch",
       "confirmedTargets": [
-        "Pike",
+        "Northern pike",
         "Perch"
       ],
       "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
@@ -2348,13 +2338,14 @@
       "currentTier": "trip-brief",
       "indexEligible": false,
       "sourceIds": [
-        "global-pl-guide"
+        "global-pl-guide",
+        "species-97cab4844372"
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "Masurian guided predator fishing in Lake Mamry. Ask whether Lake Mamry is the planned water for your date or one option within a mobile guiding area.",
-      "candidateTargets": "Pike / Perch",
+      "candidateTargets": "Northern pike / Perch",
       "confirmedTargets": [
-        "Pike",
+        "Northern pike",
         "Perch"
       ],
       "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
@@ -2385,13 +2376,14 @@
       "currentTier": "trip-brief",
       "indexEligible": false,
       "sourceIds": [
-        "global-pl-guide"
+        "global-pl-guide",
+        "species-97cab4844372"
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "Masurian guided predator fishing in Lake Śniardwy. Discuss the boat plan and a weather alternative when enquiring about Śniardwy.",
-      "candidateTargets": "Pike / Perch",
+      "candidateTargets": "Northern pike / Perch",
       "confirmedTargets": [
-        "Pike",
+        "Northern pike",
         "Perch"
       ],
       "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
@@ -2422,13 +2414,14 @@
       "currentTier": "trip-brief",
       "indexEligible": false,
       "sourceIds": [
-        "global-pl-guide"
+        "global-pl-guide",
+        "species-97cab4844372"
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "Masurian guided predator fishing in Lake Niegocin. Treat Niegocin as a specific enquiry within the operator’s wider guiding area.",
-      "candidateTargets": "Pike / Perch",
+      "candidateTargets": "Northern pike / Perch",
       "confirmedTargets": [
-        "Pike",
+        "Northern pike",
         "Perch"
       ],
       "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
@@ -2459,14 +2452,15 @@
       "currentTier": "trip-brief",
       "indexEligible": false,
       "sourceIds": [
-        "global-ba-rivers"
+        "global-ba-rivers",
+        "species-0cd5273fcb92"
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "clear-water fly presentation in Ribnik. Make presentation skill the central preparation task.",
-      "candidateTargets": "Grayling / Brown trout",
+      "candidateTargets": "Grayling / Sea trout",
       "confirmedTargets": [
         "Grayling",
-        "Brown trout"
+        "Sea trout"
       ],
       "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
       "accessToVerify": "Bank",
@@ -2500,10 +2494,8 @@
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "river-specific guided fly day in Pliva. Ask why the Pliva is the proposed water for your date and experience level.",
-      "candidateTargets": "Local targets to confirm",
-      "confirmedTargets": [
-        "Local targets to confirm"
-      ],
+      "candidateTargets": "",
+      "confirmedTargets": [],
       "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
       "accessToVerify": "Bank",
       "tackleDecision": "Select the casting weight or fly-line system for the confirmed reach. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
@@ -2532,13 +2524,14 @@
       "currentTier": "trip-brief",
       "indexEligible": false,
       "sourceIds": [
-        "global-hr-river"
+        "global-hr-river",
+        "species-6cd824d128fb"
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "slow chalkstream trout in Gacka. Prepare to work on drift and approach rather than automatically selecting heavy nymphs.",
-      "candidateTargets": "Brown trout / Rainbow trout",
+      "candidateTargets": "Sea trout / Rainbow trout",
       "confirmedTargets": [
-        "Brown trout",
+        "Sea trout",
         "Rainbow trout"
       ],
       "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
@@ -2569,7 +2562,8 @@
       "currentTier": "trip-brief",
       "indexEligible": false,
       "sourceIds": [
-        "global-hr-river"
+        "global-hr-river",
+        "species-6cd824d128fb"
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "grayling and trout itinerary in Kupa / Gorski Kotar. Confirm which part of the system the guide will fish and whether changing water is part of the package.",
@@ -2606,7 +2600,8 @@
       "currentTier": "trip-brief",
       "indexEligible": false,
       "sourceIds": [
-        "global-hr-river"
+        "global-hr-river",
+        "species-6cd824d128fb"
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "smaller-water guided session in Kupica / Gorski Kotar. Ask for a session specific to the Kupica instead of assuming the larger Kupa checklist applies unchanged.",
@@ -2643,13 +2638,14 @@
       "currentTier": "trip-brief",
       "indexEligible": false,
       "sourceIds": [
-        "global-me-local"
+        "global-me-local",
+        "species-d64ca2ac848d"
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "mountain-river fly-fishing in Tara River. Make the primary species explicit: a trout or grayling day should not inherit a specialist huchen tackle list.",
-      "candidateTargets": "Brown trout / Grayling / Huchen",
+      "candidateTargets": "Sea trout / Grayling / Huchen",
       "confirmedTargets": [
-        "Brown trout",
+        "Sea trout",
         "Grayling",
         "Huchen"
       ],
@@ -2681,13 +2677,14 @@
       "currentTier": "trip-brief",
       "indexEligible": false,
       "sourceIds": [
-        "global-me-local"
+        "global-me-local",
+        "species-d64ca2ac848d"
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "lake-based trout visit in Biograd Lake. Keep the lake visit distinct from a Tara river itinerary.",
-      "candidateTargets": "Brown trout",
+      "candidateTargets": "Sea trout",
       "confirmedTargets": [
-        "Brown trout"
+        "Sea trout"
       ],
       "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
       "accessToVerify": "Hike-in",
@@ -2717,7 +2714,8 @@
       "currentTier": "trip-brief",
       "indexEligible": false,
       "sourceIds": [
-        "global-me-lim"
+        "global-me-lim",
+        "species-bd8650ea77ab"
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "grayling-oriented guided day in Lim River. Ask for a day built around grayling, including the stretch, presentation and walking distance.",
@@ -2757,10 +2755,8 @@
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "tailwater fly-fishing plan in Drina / Serbian bank. Confirm the exact bank and session with the guide, including how changing water conditions affect the plan.",
-      "candidateTargets": "Local targets to confirm",
-      "confirmedTargets": [
-        "Local targets to confirm"
-      ],
+      "candidateTargets": "",
+      "confirmedTargets": [],
       "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
       "accessToVerify": "Bank",
       "tackleDecision": "Select the casting weight or fly-line system for the confirmed reach. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
@@ -2793,10 +2789,8 @@
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "confluence boat-fishing discovery in Stari Slankamen / Tisa–Danube confluence. Choose a guided boat session with a defined target and fishing area.",
-      "candidateTargets": "Local targets to confirm",
-      "confirmedTargets": [
-        "Local targets to confirm"
-      ],
+      "candidateTargets": "",
+      "confirmedTargets": [],
       "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
       "accessToVerify": "River float",
       "tackleDecision": "Select the casting weight or fly-line system for the confirmed reach. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
@@ -2829,10 +2823,8 @@
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "guided nymphing and river skills in Otava / Šumava. Use the trip to develop the technique the host teaches, not simply to visit a famous river.",
-      "candidateTargets": "Local targets to confirm",
-      "confirmedTargets": [
-        "Local targets to confirm"
-      ],
+      "candidateTargets": "",
+      "confirmedTargets": [],
       "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
       "accessToVerify": "Bank",
       "tackleDecision": "Select the casting weight or fly-line system for the confirmed reach. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
@@ -2865,10 +2857,8 @@
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "Czech river instruction in Vltava. Ask for a specific reach and contemporary guide availability; the page includes older guiding history.",
-      "candidateTargets": "Local targets to confirm",
-      "confirmedTargets": [
-        "Local targets to confirm"
-      ],
+      "candidateTargets": "",
+      "confirmedTargets": [],
       "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
       "accessToVerify": "Bank",
       "tackleDecision": "Select the casting weight or fly-line system for the confirmed reach. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
@@ -2901,10 +2891,8 @@
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "northeastern Bohemian fly day in Jizera. Confirm the current local host, reach and travel time before arranging the day.",
-      "candidateTargets": "Local targets to confirm",
-      "confirmedTargets": [
-        "Local targets to confirm"
-      ],
+      "candidateTargets": "",
+      "confirmedTargets": [],
       "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
       "accessToVerify": "Bank",
       "tackleDecision": "Select the casting weight or fly-line system for the confirmed reach. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
@@ -2937,10 +2925,8 @@
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "wild-water guided session in Belá. Ask about the selected reach, current water conditions and alternatives before committing to a wading plan.",
-      "candidateTargets": "Local targets to confirm",
-      "confirmedTargets": [
-        "Local targets to confirm"
-      ],
+      "candidateTargets": "",
+      "confirmedTargets": [],
       "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
       "accessToVerify": "Bank",
       "tackleDecision": "Select the casting weight or fly-line system for the confirmed reach. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
@@ -2973,10 +2959,8 @@
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "wide-river fly-fishing day in Váh. Ask whether the chosen presentation and casting distances suit your existing outfit.",
-      "candidateTargets": "Local targets to confirm",
-      "confirmedTargets": [
-        "Local targets to confirm"
-      ],
+      "candidateTargets": "",
+      "confirmedTargets": [],
       "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
       "accessToVerify": "Bank",
       "tackleDecision": "Select the casting weight or fly-line system for the confirmed reach. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
@@ -3009,10 +2993,8 @@
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "urban river introduction in Poprad. Build the day around a precise meeting point and a locally selected stretch.",
-      "candidateTargets": "Local targets to confirm",
-      "confirmedTargets": [
-        "Local targets to confirm"
-      ],
+      "candidateTargets": "",
+      "confirmedTargets": [],
       "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
       "accessToVerify": "Bank",
       "tackleDecision": "Select the casting weight or fly-line system for the confirmed reach. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
@@ -3041,13 +3023,14 @@
       "currentTier": "trip-brief",
       "indexEligible": false,
       "sourceIds": [
-        "global-hu-carp"
+        "global-hu-carp",
+        "species-5f29ea76a813"
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "multi-day carp base in Lake Balaton. Compare the actual swim, accommodation and equipment package, not just the lake name.",
-      "candidateTargets": "Carp",
+      "candidateTargets": "Common carp",
       "confirmedTargets": [
-        "Carp"
+        "Common carp"
       ],
       "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
       "accessToVerify": "Bank",
@@ -3077,13 +3060,14 @@
       "currentTier": "trip-brief",
       "indexEligible": false,
       "sourceIds": [
-        "global-hu-carp"
+        "global-hu-carp",
+        "species-5f29ea76a813"
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "chalet-based managed fishery in Paradise Lake / Hungary. Treat this as a managed-venue holiday rather than a wild-water expedition.",
-      "candidateTargets": "Carp",
+      "candidateTargets": "Common carp",
       "confirmedTargets": [
-        "Carp"
+        "Common carp"
       ],
       "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
       "accessToVerify": "Bank",
@@ -3113,13 +3097,14 @@
       "currentTier": "trip-brief",
       "indexEligible": false,
       "sourceIds": [
-        "global-hu-carp"
+        "global-hu-carp",
+        "species-5f29ea76a813"
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "bivvy-based carp session in Valley Lake / Hungary. Build the plan around the exact swim and overnight arrangement.",
-      "candidateTargets": "Carp",
+      "candidateTargets": "Common carp",
       "confirmedTargets": [
-        "Carp"
+        "Common carp"
       ],
       "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
       "accessToVerify": "Bank",
@@ -3149,13 +3134,14 @@
       "currentTier": "trip-brief",
       "indexEligible": false,
       "sourceIds": [
-        "global-ro-holbina"
+        "global-ro-holbina",
+        "species-529c3f802246"
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "delta pike lodge visit in Holbina / Danube Delta. Compare the fishing boat, daily route and transfer to the lodge separately from a sightseeing cruise.",
-      "candidateTargets": "Pike",
+      "candidateTargets": "Northern pike",
       "confirmedTargets": [
-        "Pike"
+        "Northern pike"
       ],
       "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
       "accessToVerify": "Guided boat",
@@ -3189,10 +3175,8 @@
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "Rhodope-region fly-fishing discovery in Arda River. Arrange the Arda outing with a specific local guide and target.",
-      "candidateTargets": "Local targets to confirm",
-      "confirmedTargets": [
-        "Local targets to confirm"
-      ],
+      "candidateTargets": "",
+      "confirmedTargets": [],
       "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
       "accessToVerify": "Bank",
       "tackleDecision": "Select the casting weight or fly-line system for the confirmed reach. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
@@ -3225,10 +3209,8 @@
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "Rhodope-region fly-fishing discovery in Kanina River. Ask the guide what a Kanina day would involve for your level of experience: walking, casting, instruction and time actually fishing.",
-      "candidateTargets": "Local targets to confirm",
-      "confirmedTargets": [
-        "Local targets to confirm"
-      ],
+      "candidateTargets": "",
+      "confirmedTargets": [],
       "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
       "accessToVerify": "Bank",
       "tackleDecision": "Select the casting weight or fly-line system for the confirmed reach. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
@@ -3261,10 +3243,8 @@
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "Rhodope-region fly-fishing discovery in Iugovska River. Request a named session on the Iugovska rather than assuming it is interchangeable with the operator’s other Bulgarian rivers.",
-      "candidateTargets": "Local targets to confirm",
-      "confirmedTargets": [
-        "Local targets to confirm"
-      ],
+      "candidateTargets": "",
+      "confirmedTargets": [],
       "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
       "accessToVerify": "Bank",
       "tackleDecision": "Select the casting weight or fly-line system for the confirmed reach. | Ask for the actual items, sizes and quantities used on this program. | Check the actual forecast and supplied shelter before choosing layers. | Keep phone, spare clothing and essentials separate from wet tackle.",
@@ -3293,7 +3273,8 @@
       "currentTier": "trip-brief",
       "indexEligible": false,
       "sourceIds": [
-        "global-gr-crete"
+        "global-gr-crete",
+        "species-c63396c114eb"
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "guided jigging and bottom fishing in Chania Bay / Crete. Ask which technique occupies most of the trip and whether the captain supplies tackle suited to it.",
@@ -3329,7 +3310,8 @@
       "currentTier": "trip-brief",
       "indexEligible": false,
       "sourceIds": [
-        "global-gr-crete"
+        "global-gr-crete",
+        "species-c63396c114eb"
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "targeted bay and reef charter in Kissamos Bay / Crete. Compare a local bay session with a longer route beyond the bay.",
@@ -3367,7 +3349,8 @@
       "currentTier": "trip-brief",
       "indexEligible": false,
       "sourceIds": [
-        "global-mt-listing"
+        "global-mt-listing",
+        "species-ae99c76072ee"
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "deep bottom fishing with trolling transit in Gozo offshore. Ask which activity is the main objective and what electric or conventional tackle is supplied.",
@@ -3408,10 +3391,8 @@
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "mountain-lake summer fishing in Oeschinensee. Coordinate the mountain access and fishing session rather than assuming the lake can be visited on any schedule.",
-      "candidateTargets": "Local targets to confirm",
-      "confirmedTargets": [
-        "Local targets to confirm"
-      ],
+      "candidateTargets": "",
+      "confirmedTargets": [],
       "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
       "accessToVerify": "Hike-in",
       "tackleDecision": "Keep rod sections and tackle protection compatible with the hike. | Ask for the actual items, sizes and quantities used on this program. | Keep rain protection and a dry layer available without overloading the pack. | Keep phone, spare clothing and essentials separate from wet tackle.",
@@ -3440,14 +3421,15 @@
       "currentTier": "trip-brief",
       "indexEligible": false,
       "sourceIds": [
-        "global-ch-lungern"
+        "global-ch-lungern",
+        "species-eabb0e383201"
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "Alpine-region lake selection in Lake Lungern. Choose a primary target and bank or boat plan with the local host.",
-      "candidateTargets": "Rainbow trout / Brown trout / Perch",
+      "candidateTargets": "Rainbow trout / Sea trout / Perch",
       "confirmedTargets": [
         "Rainbow trout",
-        "Brown trout",
+        "Sea trout",
         "Perch"
       ],
       "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
@@ -3482,10 +3464,8 @@
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "Pyrenean fishing-and-hiking day in Tristaina lakes / Ordino. Choose the actual lake and access route with a local source before treating the group of lakes as one fishery.",
-      "candidateTargets": "Local targets to confirm",
-      "confirmedTargets": [
-        "Local targets to confirm"
-      ],
+      "candidateTargets": "",
+      "confirmedTargets": [],
       "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
       "accessToVerify": "Hike-in",
       "tackleDecision": "Keep rod sections and tackle protection compatible with the hike. | Ask for the actual items, sizes and quantities used on this program. | Keep rain protection and a dry layer available without overloading the pack. | Keep phone, spare clothing and essentials separate from wet tackle.",
@@ -3514,13 +3494,14 @@
       "currentTier": "trip-brief",
       "indexEligible": false,
       "sourceIds": [
-        "global-lt-guide"
+        "global-lt-guide",
+        "species-29ad9ff893ee"
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "lagoon predator boat session in Curonian Lagoon / Lithuanian side. Choose the primary predator and confirm a Lithuanian departure and fishing area.",
-      "candidateTargets": "Pike / Perch / Zander",
+      "candidateTargets": "Northern pike / Perch / Zander",
       "confirmedTargets": [
-        "Pike",
+        "Northern pike",
         "Perch",
         "Zander"
       ],
@@ -3552,7 +3533,8 @@
       "currentTier": "trip-brief",
       "indexEligible": false,
       "sourceIds": [
-        "global-lt-guide"
+        "global-lt-guide",
+        "species-29ad9ff893ee"
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "guided salmon trolling in Lithuanian Baltic coast. Confirm the departure port, target window and amount of trolling equipment supplied.",
@@ -3588,14 +3570,15 @@
       "currentTier": "trip-brief",
       "indexEligible": false,
       "sourceIds": [
-        "global-es-ebro"
+        "global-es-ebro",
+        "species-a9dffdf96d52"
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "species-specific guided Ebro stay in River Ebro / Caspe. Choose one primary fishing objective before comparing packages.",
-      "candidateTargets": "Wels catfish / Carp / Zander",
+      "candidateTargets": "Wels catfish / Common carp / Zander",
       "confirmedTargets": [
         "Wels catfish",
-        "Carp",
+        "Common carp",
         "Zander"
       ],
       "seasonalEvidence": "A reliable month-by-month fishing window has not been established from the inspected material for this particular trip. Ask the local operator or fisheries service to confirm the target, access and conditions for your dates before making non-refundable arrangements.",
@@ -3626,7 +3609,8 @@
       "currentTier": "trip-brief",
       "indexEligible": false,
       "sourceIds": [
-        "global-si-local"
+        "global-si-local",
+        "species-958bfd9fa844"
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "marble-trout river itinerary in Idrijca. Ask which reach and presentation are realistic for your experience and the planned date.",
@@ -3662,7 +3646,8 @@
       "currentTier": "trip-brief",
       "indexEligible": false,
       "sourceIds": [
-        "global-si-local"
+        "global-si-local",
+        "species-958bfd9fa844"
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "clear-stream presentation practice in Unec. Ask about the selected reach and current water before copying the seasonal information from another Slovenian river.",
@@ -3698,13 +3683,14 @@
       "currentTier": "trip-brief",
       "indexEligible": false,
       "sourceIds": [
-        "global-si-local"
+        "global-si-local",
+        "species-958bfd9fa844"
       ],
       "evidenceDepth": "Inspected search excerpt",
       "localDecision": "choose trout or huchen before packing in Krka. Do not combine the equipment lists for a trout lesson and a specialist huchen outing.",
-      "candidateTargets": "Brown trout / Rainbow trout / Huchen",
+      "candidateTargets": "Sea trout / Rainbow trout / Huchen",
       "confirmedTargets": [
-        "Brown trout",
+        "Sea trout",
         "Rainbow trout",
         "Huchen"
       ],

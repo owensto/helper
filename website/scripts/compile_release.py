@@ -130,6 +130,8 @@ from trip_types import compile_into as compile_trip_types
 compile_trip_types(world, out, ROOT)
 from guides import compile_into as compile_guides
 compile_guides(world, out, ROOT)
+from species_glossary import compile_into as compile_species
+compile_species(world, out, ROOT)
 # Classify editorial regions before page rendering, so a single clean build has working filters.
 groups=json.loads((ROOT/'src/continent-regions.json').read_text())
 for t in out:

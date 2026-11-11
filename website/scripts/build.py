@@ -154,6 +154,9 @@ add('/404/','Page not found — Fishing Atlas','Find your way back to Fishing At
 
 exec(compile((ROOT/'scripts/world_extension.py').read_text(),str(ROOT/'scripts/world_extension.py'),'exec'))
 exec(compile((ROOT/'scripts/continental_extension.py').read_text(),str(ROOT/'scripts/continental_extension.py'),'exec'))
+from species_glossary import planner_data as add_species_data
+add_species_data(DATA, ROOT)
+(ROOT/'src/compiled-data.json').write_text(json.dumps(DATA, ensure_ascii=False, indent=2))
 
 (DIST/'assets/data.js').write_text('window.ATLAS_DATA='+json.dumps(DATA,ensure_ascii=False).replace('</','<\\/')+';\nwindow.ATLAS_CONFIG='+json.dumps(CONFIG,ensure_ascii=False).replace('</','<\\/')+';\n')
 
@@ -191,6 +194,8 @@ from trust import install as install_trust
 FOOTER = install_trust(pages, add, intro, FOOTER)
 from premium_motion import install as install_premium_motion
 install_premium_motion(pages, ROOT, TRIPS, featured, trip_card)
+from species_glossary import install as install_species_glossary
+install_species_glossary(pages, ROOT, add, TRIPS, DATA)
 trip_paths = {t.get("canonicalPath", "/trips/"+t["id"]+"/") for t in TRIPS}
 for path, page in pages.items():
     page["analyticsKind"] = "trip" if path in trip_paths else page["kind"]

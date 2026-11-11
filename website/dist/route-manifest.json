@@ -30,26 +30,26 @@
     "redirectTo": null
   },
   "/species/": {
-    "kind": "species-index",
-    "title": "Find fishing trips by species | Castward",
+    "kind": "species",
+    "title": "World fish species and local names | Castward",
     "noindex": false,
     "redirectTo": null
   },
   "/species/coho-salmon/": {
     "kind": "species-detail",
-    "title": "Coho salmon fishing trip planning \u2014 Castward",
+    "title": "Coho salmon fishing, local names and destinations | Castward",
     "noindex": false,
     "redirectTo": null
   },
   "/species/tarpon/": {
     "kind": "species-detail",
-    "title": "Tarpon fishing trip planning \u2014 Castward",
+    "title": "Tarpon fishing, local names and destinations | Castward",
     "noindex": false,
     "redirectTo": null
   },
   "/species/trout/": {
     "kind": "species-detail",
-    "title": "Trout fishing trip planning \u2014 Castward",
+    "title": "Trout fishing, local names and destinations | Castward",
     "noindex": false,
     "redirectTo": null
   },
@@ -9943,7 +9943,7 @@
   },
   "/glossary/": {
     "kind": "glossary",
-    "title": "Local fishing lingo glossary | Castward",
+    "title": "World fishing glossary: local fish names, methods and gear | Castward",
     "noindex": false,
     "redirectTo": null
   },
@@ -10016,6 +10016,4590 @@
   "/contact/": {
     "kind": "contact",
     "title": "Contact Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/acoupa-weakfish/": {
+    "kind": "species-detail",
+    "title": "Acoupa weakfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/adriatic-trout/": {
+    "kind": "species-detail",
+    "title": "Adriatic trout fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/african-brown-snapper/": {
+    "kind": "species-detail",
+    "title": "African brown snapper fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/african-longfin-eel/": {
+    "kind": "species-detail",
+    "title": "African longfin eel fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/african-mottled-eel/": {
+    "kind": "species-detail",
+    "title": "African mottled eel fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/african-red-snapper/": {
+    "kind": "species-detail",
+    "title": "African red snapper fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/alabama-bass/": {
+    "kind": "species-detail",
+    "title": "Alabama bass fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/alaska-pollock/": {
+    "kind": "species-detail",
+    "title": "Alaska pollock fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/alaska-whitefish/": {
+    "kind": "species-detail",
+    "title": "Alaska whitefish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/albacore/": {
+    "kind": "species-detail",
+    "title": "Albacore fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/albert-lates/": {
+    "kind": "species-detail",
+    "title": "Albert lates fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/alligator-gar/": {
+    "kind": "species-detail",
+    "title": "Alligator gar fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/allis-shad/": {
+    "kind": "species-detail",
+    "title": "Allis shad fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/amberjack/": {
+    "kind": "species-detail",
+    "title": "Amberjack fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/american-conger/": {
+    "kind": "species-detail",
+    "title": "American conger fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/american-eel/": {
+    "kind": "species-detail",
+    "title": "American eel fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/american-shad/": {
+    "kind": "species-detail",
+    "title": "American shad fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/amur-catfish/": {
+    "kind": "species-detail",
+    "title": "Amur catfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/amur-pike/": {
+    "kind": "species-detail",
+    "title": "Amur pike fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/andalusian-barbel/": {
+    "kind": "species-detail",
+    "title": "Andalusian barbel fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/annular-seabream/": {
+    "kind": "species-detail",
+    "title": "Annular seabream fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/apache-trout/": {
+    "kind": "species-detail",
+    "title": "Apache trout fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/arabian-smooth-hound/": {
+    "kind": "species-detail",
+    "title": "Arabian smooth-hound fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/arapaima/": {
+    "kind": "species-detail",
+    "title": "Arapaima fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/arctic-char/": {
+    "kind": "species-detail",
+    "title": "Arctic char fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/arctic-grayling/": {
+    "kind": "species-detail",
+    "title": "Arctic grayling fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/argentine-hake/": {
+    "kind": "species-detail",
+    "title": "Argentine hake fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/armed-snook/": {
+    "kind": "species-detail",
+    "title": "Armed snook fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/arowana/": {
+    "kind": "species-detail",
+    "title": "Arowana fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/asp/": {
+    "kind": "species-detail",
+    "title": "Asp fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/atlantic-bluefin-tuna/": {
+    "kind": "species-detail",
+    "title": "Atlantic bluefin tuna fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/atlantic-bonito/": {
+    "kind": "species-detail",
+    "title": "Atlantic bonito fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/atlantic-cod/": {
+    "kind": "species-detail",
+    "title": "Atlantic cod fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/atlantic-croaker/": {
+    "kind": "species-detail",
+    "title": "Atlantic croaker fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/atlantic-goliath-grouper/": {
+    "kind": "species-detail",
+    "title": "Atlantic goliath grouper fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/atlantic-halibut/": {
+    "kind": "species-detail",
+    "title": "Atlantic halibut fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/atlantic-herring/": {
+    "kind": "species-detail",
+    "title": "Atlantic herring fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/atlantic-mackerel/": {
+    "kind": "species-detail",
+    "title": "Atlantic mackerel fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/atlantic-menhaden/": {
+    "kind": "species-detail",
+    "title": "Atlantic menhaden fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/atlantic-sailfish/": {
+    "kind": "species-detail",
+    "title": "Atlantic sailfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/atlantic-salmon/": {
+    "kind": "species-detail",
+    "title": "Atlantic salmon fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/atlantic-spanish-mackerel/": {
+    "kind": "species-detail",
+    "title": "Atlantic Spanish mackerel fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/atlantic-white-marlin/": {
+    "kind": "species-detail",
+    "title": "Atlantic white marlin fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/australian-barracuda/": {
+    "kind": "species-detail",
+    "title": "Australian barracuda fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/australian-bonito/": {
+    "kind": "species-detail",
+    "title": "Australian bonito fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/australian-freshwater-catfish/": {
+    "kind": "species-detail",
+    "title": "Australian freshwater catfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/australian-herring/": {
+    "kind": "species-detail",
+    "title": "Australian herring fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/australian-salmon/": {
+    "kind": "species-detail",
+    "title": "Australian salmon fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/australian-spotted-mackerel/": {
+    "kind": "species-detail",
+    "title": "Australian spotted mackerel fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/ayu-sweetfish/": {
+    "kind": "species-detail",
+    "title": "Ayu sweetfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/bank-rockfish/": {
+    "kind": "species-detail",
+    "title": "Bank rockfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/bar-jack/": {
+    "kind": "species-detail",
+    "title": "Bar jack fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/barbel/": {
+    "kind": "species-detail",
+    "title": "Barbel fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/barracuda/": {
+    "kind": "species-detail",
+    "title": "Barracuda fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/barramundi/": {
+    "kind": "species-detail",
+    "title": "Barramundi fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/barred-sorubim/": {
+    "kind": "species-detail",
+    "title": "Barred sorubim fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/bartail-flathead/": {
+    "kind": "species-detail",
+    "title": "Bartail flathead fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/bass/": {
+    "kind": "species-detail",
+    "title": "Bass fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/bastard-halibut/": {
+    "kind": "species-detail",
+    "title": "Bastard halibut fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/beach-conger/": {
+    "kind": "species-detail",
+    "title": "Beach conger fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/bigeye-lates/": {
+    "kind": "species-detail",
+    "title": "Bigeye lates fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/bigeye-stumpnose/": {
+    "kind": "species-detail",
+    "title": "Bigeye stumpnose fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/bigeye-thresher/": {
+    "kind": "species-detail",
+    "title": "Bigeye thresher fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/bigeye-trevally/": {
+    "kind": "species-detail",
+    "title": "Bigeye trevally fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/bigeye-tuna/": {
+    "kind": "species-detail",
+    "title": "Bigeye tuna fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/bighead-carp/": {
+    "kind": "species-detail",
+    "title": "Bighead carp fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/bigmouth-buffalo/": {
+    "kind": "species-detail",
+    "title": "Bigmouth buffalo fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/bignose-shark/": {
+    "kind": "species-detail",
+    "title": "Bignose shark fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/black-acara/": {
+    "kind": "species-detail",
+    "title": "Black acara fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/black-bream/": {
+    "kind": "species-detail",
+    "title": "Black bream fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/black-buffalo/": {
+    "kind": "species-detail",
+    "title": "Black buffalo fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/black-bullhead/": {
+    "kind": "species-detail",
+    "title": "Black bullhead fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/black-crappie/": {
+    "kind": "species-detail",
+    "title": "Black crappie fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/black-drum/": {
+    "kind": "species-detail",
+    "title": "Black drum fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/black-grouper/": {
+    "kind": "species-detail",
+    "title": "Black grouper fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/black-jack/": {
+    "kind": "species-detail",
+    "title": "Black jack fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/black-marlin/": {
+    "kind": "species-detail",
+    "title": "Black marlin fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/black-rockfish/": {
+    "kind": "species-detail",
+    "title": "Black rockfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/black-seabass/": {
+    "kind": "species-detail",
+    "title": "Black seabass fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/black-skipjack/": {
+    "kind": "species-detail",
+    "title": "Black skipjack fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/black-snook/": {
+    "kind": "species-detail",
+    "title": "Black snook fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/blackblotch-pompano/": {
+    "kind": "species-detail",
+    "title": "Blackblotch pompano fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/blackfin-barracuda/": {
+    "kind": "species-detail",
+    "title": "Blackfin barracuda fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/blackfin-snapper/": {
+    "kind": "species-detail",
+    "title": "Blackfin snapper fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/blackfin-snook/": {
+    "kind": "species-detail",
+    "title": "Blackfin snook fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/blackfin-tuna/": {
+    "kind": "species-detail",
+    "title": "Blackfin tuna fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/blackgill-rockfish/": {
+    "kind": "species-detail",
+    "title": "Blackgill rockfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/blackhead-seabream/": {
+    "kind": "species-detail",
+    "title": "Blackhead seabream fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/blacknose-shark/": {
+    "kind": "species-detail",
+    "title": "Blacknose shark fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/blacksaddled-coralgrouper/": {
+    "kind": "species-detail",
+    "title": "Blacksaddled coralgrouper fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/blackspot-shark/": {
+    "kind": "species-detail",
+    "title": "Blackspot shark fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/blackspot-threadfin/": {
+    "kind": "species-detail",
+    "title": "Blackspot threadfin fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/blacktail-reef-shark/": {
+    "kind": "species-detail",
+    "title": "Blacktail reef shark fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/blacktail-snapper/": {
+    "kind": "species-detail",
+    "title": "Blacktail snapper fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/blacktip-grouper/": {
+    "kind": "species-detail",
+    "title": "Blacktip grouper fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/blacktip-reef-shark/": {
+    "kind": "species-detail",
+    "title": "Blacktip reef shark fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/blacktip-shark/": {
+    "kind": "species-detail",
+    "title": "Blacktip shark fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/blacktip-trevally/": {
+    "kind": "species-detail",
+    "title": "Blacktip trevally fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/blotched-snakehead/": {
+    "kind": "species-detail",
+    "title": "Blotched snakehead fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/blubberlip-snapper/": {
+    "kind": "species-detail",
+    "title": "Blubberlip snapper fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/blue-bastard/": {
+    "kind": "species-detail",
+    "title": "Blue bastard fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/blue-catfish/": {
+    "kind": "species-detail",
+    "title": "Blue catfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/blue-mackerel/": {
+    "kind": "species-detail",
+    "title": "Blue mackerel fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/blue-marlin/": {
+    "kind": "species-detail",
+    "title": "Blue marlin fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/blue-marlin-group/": {
+    "kind": "species-detail",
+    "title": "Blue marlin fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/blue-rockfish/": {
+    "kind": "species-detail",
+    "title": "Blue rockfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/blue-runner/": {
+    "kind": "species-detail",
+    "title": "Blue runner fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/blue-shark/": {
+    "kind": "species-detail",
+    "title": "Blue shark fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/blue-tilapia/": {
+    "kind": "species-detail",
+    "title": "Blue tilapia fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/bluefin-trevally/": {
+    "kind": "species-detail",
+    "title": "Bluefin trevally fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/bluefin-tuna/": {
+    "kind": "species-detail",
+    "title": "Bluefin tuna fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/bluefish/": {
+    "kind": "species-detail",
+    "title": "Bluefish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/bluegill/": {
+    "kind": "species-detail",
+    "title": "Bluegill fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/bluespotted-seabream/": {
+    "kind": "species-detail",
+    "title": "Bluespotted seabream fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/bluespotted-trevally/": {
+    "kind": "species-detail",
+    "title": "Bluespotted trevally fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/blunt-toothed-african-catfish/": {
+    "kind": "species-detail",
+    "title": "Blunt-toothed African catfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/bocaccio-rockfish/": {
+    "kind": "species-detail",
+    "title": "Bocaccio rockfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/boccone-weakfish/": {
+    "kind": "species-detail",
+    "title": "Boccone weakfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/bonefish/": {
+    "kind": "species-detail",
+    "title": "Bonefish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/bonefish-group/": {
+    "kind": "species-detail",
+    "title": "Bonefish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/bowfin/": {
+    "kind": "species-detail",
+    "title": "Bowfin fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/brassy-trevally/": {
+    "kind": "species-detail",
+    "title": "Brassy trevally fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/brazilian-flounder/": {
+    "kind": "species-detail",
+    "title": "Brazilian flounder fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/bream/": {
+    "kind": "species-detail",
+    "title": "Bream fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/brill/": {
+    "kind": "species-detail",
+    "title": "Brill fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/broad-whitefish/": {
+    "kind": "species-detail",
+    "title": "Broad whitefish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/broad-barred-king-mackerel/": {
+    "kind": "species-detail",
+    "title": "Broad-barred king mackerel fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/bronzespotted-rockfish/": {
+    "kind": "species-detail",
+    "title": "Bronzespotted rockfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/brook-trout/": {
+    "kind": "species-detail",
+    "title": "Brook trout fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/brook-trout-group/": {
+    "kind": "species-detail",
+    "title": "Brook trout fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/broomtail-grouper/": {
+    "kind": "species-detail",
+    "title": "Broomtail grouper fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/brown-bullhead/": {
+    "kind": "species-detail",
+    "title": "Brown bullhead fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/brown-rockfish/": {
+    "kind": "species-detail",
+    "title": "Brown rockfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/brown-smooth-hound/": {
+    "kind": "species-detail",
+    "title": "Brown smooth-hound fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/brown-marbled-grouper/": {
+    "kind": "species-detail",
+    "title": "Brown-marbled grouper fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/brownspot-largemouth/": {
+    "kind": "species-detail",
+    "title": "Brownspot largemouth fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/bull-shark/": {
+    "kind": "species-detail",
+    "title": "Bull shark fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/bull-trout/": {
+    "kind": "species-detail",
+    "title": "Bull trout fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/burbot/": {
+    "kind": "species-detail",
+    "title": "Burbot fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/cachama/": {
+    "kind": "species-detail",
+    "title": "Cachama fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/cachema-weakfish/": {
+    "kind": "species-detail",
+    "title": "Cachema weakfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/california-flounder/": {
+    "kind": "species-detail",
+    "title": "California flounder fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/california-kingcroaker/": {
+    "kind": "species-detail",
+    "title": "California kingcroaker fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/californian-anchovy/": {
+    "kind": "species-detail",
+    "title": "Californian anchovy fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/canary-dentex/": {
+    "kind": "species-detail",
+    "title": "Canary dentex fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/canary-rockfish/": {
+    "kind": "species-detail",
+    "title": "Canary rockfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/cape-redfish/": {
+    "kind": "species-detail",
+    "title": "Cape redfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/cape-stumpnose/": {
+    "kind": "species-detail",
+    "title": "Cape stumpnose fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/cape-white-seabream/": {
+    "kind": "species-detail",
+    "title": "Cape white seabream fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/caribbean-reef-shark/": {
+    "kind": "species-detail",
+    "title": "Caribbean reef shark fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/carp/": {
+    "kind": "species-detail",
+    "title": "Carp fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/catalonian-barbel/": {
+    "kind": "species-detail",
+    "title": "Catalonian barbel fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/catface-grouper/": {
+    "kind": "species-detail",
+    "title": "Catface grouper fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/catfish/": {
+    "kind": "species-detail",
+    "title": "Catfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/catla/": {
+    "kind": "species-detail",
+    "title": "Catla fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/cero/": {
+    "kind": "species-detail",
+    "title": "Cero fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/chain-pickerel/": {
+    "kind": "species-detail",
+    "title": "Chain pickerel fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/chameleon-rockfish/": {
+    "kind": "species-detail",
+    "title": "Chameleon rockfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/channel-catfish/": {
+    "kind": "species-detail",
+    "title": "Channel catfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/chilipepper-rockfish/": {
+    "kind": "species-detail",
+    "title": "Chilipepper rockfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/china-rockfish/": {
+    "kind": "species-detail",
+    "title": "China rockfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/chinese-seerfish/": {
+    "kind": "species-detail",
+    "title": "Chinese seerfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/chinook-salmon/": {
+    "kind": "species-detail",
+    "title": "Chinook salmon fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/chub/": {
+    "kind": "species-detail",
+    "title": "Chub fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/chum-salmon/": {
+    "kind": "species-detail",
+    "title": "Chum salmon fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/cisco/": {
+    "kind": "species-detail",
+    "title": "Cisco fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/clanwilliam-sandfish/": {
+    "kind": "species-detail",
+    "title": "Clanwilliam sandfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/clanwilliam-yellowfish/": {
+    "kind": "species-detail",
+    "title": "Clanwilliam yellowfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/coarse-fish/": {
+    "kind": "species-detail",
+    "title": "Coarse fish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/cobia/": {
+    "kind": "species-detail",
+    "title": "Cobia fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/cocinero/": {
+    "kind": "species-detail",
+    "title": "Cocinero fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/cod/": {
+    "kind": "species-detail",
+    "title": "Cod fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/colorado-snapper/": {
+    "kind": "species-detail",
+    "title": "Colorado snapper fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/comb-grouper/": {
+    "kind": "species-detail",
+    "title": "Comb grouper fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/comet-grouper/": {
+    "kind": "species-detail",
+    "title": "Comet grouper fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/common-bluestripe-snapper/": {
+    "kind": "species-detail",
+    "title": "Common bluestripe snapper fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/common-carp/": {
+    "kind": "species-detail",
+    "title": "Common carp fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/common-dab/": {
+    "kind": "species-detail",
+    "title": "Common dab fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/common-dace/": {
+    "kind": "species-detail",
+    "title": "Common dace fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/common-dentex/": {
+    "kind": "species-detail",
+    "title": "Common dentex fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/common-snook/": {
+    "kind": "species-detail",
+    "title": "Common snook fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/common-sole/": {
+    "kind": "species-detail",
+    "title": "Common sole fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/common-two-banded-seabream/": {
+    "kind": "species-detail",
+    "title": "Common two-banded seabream fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/coney/": {
+    "kind": "species-detail",
+    "title": "Coney fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/convict-grouper/": {
+    "kind": "species-detail",
+    "title": "Convict grouper fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/copper-mahseer/": {
+    "kind": "species-detail",
+    "title": "Copper mahseer fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/copper-rockfish/": {
+    "kind": "species-detail",
+    "title": "Copper rockfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/copper-shark/": {
+    "kind": "species-detail",
+    "title": "Copper shark fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/coral-hind/": {
+    "kind": "species-detail",
+    "title": "Coral hind fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/cowcod/": {
+    "kind": "species-detail",
+    "title": "Cowcod fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/crappie/": {
+    "kind": "species-detail",
+    "title": "Crappie fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/crevalle-jack/": {
+    "kind": "species-detail",
+    "title": "Crevalle jack fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/crimson-jobfish/": {
+    "kind": "species-detail",
+    "title": "Crimson jobfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/crimsonband-wrasse/": {
+    "kind": "species-detail",
+    "title": "Crimsonband wrasse fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/crucian-carp/": {
+    "kind": "species-detail",
+    "title": "Crucian carp fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/cubera-snapper/": {
+    "kind": "species-detail",
+    "title": "Cubera snapper fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/cusk/": {
+    "kind": "species-detail",
+    "title": "Cusk fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/cutthroat-trout/": {
+    "kind": "species-detail",
+    "title": "Cutthroat trout fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/daggerhead-seabream/": {
+    "kind": "species-detail",
+    "title": "Daggerhead seabream fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/darkblotched-rockfish/": {
+    "kind": "species-detail",
+    "title": "Darkblotched rockfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/deccan-mahseer/": {
+    "kind": "species-detail",
+    "title": "Deccan mahseer fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/deepwater-longtail-red-snapper/": {
+    "kind": "species-detail",
+    "title": "Deepwater longtail red snapper fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/deepwater-red-snapper/": {
+    "kind": "species-detail",
+    "title": "Deepwater red snapper fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/dentex/": {
+    "kind": "species-detail",
+    "title": "Dentex fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/dog-snapper/": {
+    "kind": "species-detail",
+    "title": "Dog snapper fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/dogtooth-tuna/": {
+    "kind": "species-detail",
+    "title": "Dogtooth tuna fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/dolly-varden/": {
+    "kind": "species-detail",
+    "title": "Dolly Varden fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/dorada/": {
+    "kind": "species-detail",
+    "title": "Dorada fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/dorado/": {
+    "kind": "species-detail",
+    "title": "Dorado fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/dory-snapper/": {
+    "kind": "species-detail",
+    "title": "Dory snapper fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/doublespotted-queenfish/": {
+    "kind": "species-detail",
+    "title": "Doublespotted queenfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/dusky-flathead/": {
+    "kind": "species-detail",
+    "title": "Dusky flathead fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/dusky-grouper/": {
+    "kind": "species-detail",
+    "title": "Dusky grouper fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/dusky-rockfish/": {
+    "kind": "species-detail",
+    "title": "Dusky rockfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/dusky-shark/": {
+    "kind": "species-detail",
+    "title": "Dusky shark fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/dusky-smooth-hound/": {
+    "kind": "species-detail",
+    "title": "Dusky smooth-hound fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/eastern-pacific-bonito/": {
+    "kind": "species-detail",
+    "title": "Eastern Pacific bonito fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/elongate-tigerfish/": {
+    "kind": "species-detail",
+    "title": "Elongate tigerfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/emperor-red-snapper/": {
+    "kind": "species-detail",
+    "title": "Emperor red snapper fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/eurasian-catfish/": {
+    "kind": "species-detail",
+    "title": "Eurasian catfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/european-barracuda/": {
+    "kind": "species-detail",
+    "title": "European barracuda fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/european-conger/": {
+    "kind": "species-detail",
+    "title": "European conger fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/european-eel/": {
+    "kind": "species-detail",
+    "title": "European eel fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/european-flounder/": {
+    "kind": "species-detail",
+    "title": "European flounder fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/european-hake/": {
+    "kind": "species-detail",
+    "title": "European hake fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/european-perch/": {
+    "kind": "species-detail",
+    "title": "European perch fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/european-plaice/": {
+    "kind": "species-detail",
+    "title": "European plaice fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/european-sea-bass/": {
+    "kind": "species-detail",
+    "title": "European sea bass fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/european-whitefish/": {
+    "kind": "species-detail",
+    "title": "European whitefish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/fat-greenling/": {
+    "kind": "species-detail",
+    "title": "Fat greenling fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/fat-snook/": {
+    "kind": "species-detail",
+    "title": "Fat snook fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/fathead-minnow/": {
+    "kind": "species-detail",
+    "title": "Fathead minnow fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/five-lined-snapper/": {
+    "kind": "species-detail",
+    "title": "Five-lined snapper fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/flag-rockfish/": {
+    "kind": "species-detail",
+    "title": "Flag rockfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/flathead-catfish/": {
+    "kind": "species-detail",
+    "title": "Flathead catfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/florida-gar/": {
+    "kind": "species-detail",
+    "title": "Florida gar fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/florida-pompano/": {
+    "kind": "species-detail",
+    "title": "Florida pompano fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/forktail-lates/": {
+    "kind": "species-detail",
+    "title": "Forktail lates fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/fortune-jack/": {
+    "kind": "species-detail",
+    "title": "Fortune jack fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/foursaddle-grouper/": {
+    "kind": "species-detail",
+    "title": "Foursaddle grouper fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/freshwater-bream/": {
+    "kind": "species-detail",
+    "title": "Freshwater bream fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/freshwater-drum/": {
+    "kind": "species-detail",
+    "title": "Freshwater drum fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/gafftopsail-pompano/": {
+    "kind": "species-detail",
+    "title": "Gafftopsail pompano fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/gag/": {
+    "kind": "species-detail",
+    "title": "Gag fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/galapagos-shark/": {
+    "kind": "species-detail",
+    "title": "Galapagos shark fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/garish-hind/": {
+    "kind": "species-detail",
+    "title": "Garish hind fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/giant-african-threadfin/": {
+    "kind": "species-detail",
+    "title": "Giant African threadfin fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/giant-grouper/": {
+    "kind": "species-detail",
+    "title": "Giant grouper fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/giant-mottled-eel/": {
+    "kind": "species-detail",
+    "title": "Giant mottled eel fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/giant-tigerfish/": {
+    "kind": "species-detail",
+    "title": "Giant tigerfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/giant-trahira/": {
+    "kind": "species-detail",
+    "title": "Giant trahira fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/giant-trevally/": {
+    "kind": "species-detail",
+    "title": "Giant trevally fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/giant-trevally-group/": {
+    "kind": "species-detail",
+    "title": "Giant trevally fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/gila-trout/": {
+    "kind": "species-detail",
+    "title": "Gila trout fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/gilded-catfish/": {
+    "kind": "species-detail",
+    "title": "Gilded catfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/gilthead-seabream/": {
+    "kind": "species-detail",
+    "title": "Gilthead seabream fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/golden-dorado/": {
+    "kind": "species-detail",
+    "title": "Golden dorado fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/golden-perch/": {
+    "kind": "species-detail",
+    "title": "Golden perch fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/golden-redfish/": {
+    "kind": "species-detail",
+    "title": "Golden redfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/golden-shiner/": {
+    "kind": "species-detail",
+    "title": "Golden shiner fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/golden-snapper/": {
+    "kind": "species-detail",
+    "title": "Golden snapper fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/golden-trout/": {
+    "kind": "species-detail",
+    "title": "Golden trout fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/goldfish/": {
+    "kind": "species-detail",
+    "title": "Goldfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/goldflag-jobfish/": {
+    "kind": "species-detail",
+    "title": "Goldflag jobfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/goldlined-seabream/": {
+    "kind": "species-detail",
+    "title": "Goldlined seabream fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/goldsilk-seabream/": {
+    "kind": "species-detail",
+    "title": "Goldsilk seabream fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/goonch/": {
+    "kind": "species-detail",
+    "title": "Goonch fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/goonch-catfish/": {
+    "kind": "species-detail",
+    "title": "Goonch catfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/gopher-rockfish/": {
+    "kind": "species-detail",
+    "title": "Gopher rockfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/grass-carp/": {
+    "kind": "species-detail",
+    "title": "Grass carp fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/grass-emperor/": {
+    "kind": "species-detail",
+    "title": "Grass emperor fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/grass-rockfish/": {
+    "kind": "species-detail",
+    "title": "Grass rockfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/gray-rockfish/": {
+    "kind": "species-detail",
+    "title": "Gray rockfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/gray-smoothhound/": {
+    "kind": "species-detail",
+    "title": "Gray smoothhound fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/grayling/": {
+    "kind": "species-detail",
+    "title": "Grayling fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/grayling-group/": {
+    "kind": "species-detail",
+    "title": "Grayling fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/greasy-grouper/": {
+    "kind": "species-detail",
+    "title": "Greasy grouper fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/great-barracuda/": {
+    "kind": "species-detail",
+    "title": "Great barracuda fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/great-pompano/": {
+    "kind": "species-detail",
+    "title": "Great pompano fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/great-snakehead/": {
+    "kind": "species-detail",
+    "title": "Great snakehead fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/greater-amberjack/": {
+    "kind": "species-detail",
+    "title": "Greater amberjack fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/green-jack/": {
+    "kind": "species-detail",
+    "title": "Green jack fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/green-jobfish/": {
+    "kind": "species-detail",
+    "title": "Green jobfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/green-sturgeon/": {
+    "kind": "species-detail",
+    "title": "Green sturgeon fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/green-sunfish/": {
+    "kind": "species-detail",
+    "title": "Green sunfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/green-weakfish/": {
+    "kind": "species-detail",
+    "title": "Green weakfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/greenland-halibut/": {
+    "kind": "species-detail",
+    "title": "Greenland halibut fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/greenspotted-rockfish/": {
+    "kind": "species-detail",
+    "title": "Greenspotted rockfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/greenstriped-rockfish/": {
+    "kind": "species-detail",
+    "title": "Greenstriped rockfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/grey-snapper/": {
+    "kind": "species-detail",
+    "title": "Grey snapper fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/grouper/": {
+    "kind": "species-detail",
+    "title": "Grouper fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/guadalupe-bass/": {
+    "kind": "species-detail",
+    "title": "Guadalupe bass fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/guinean-amberjack/": {
+    "kind": "species-detail",
+    "title": "Guinean amberjack fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/guinean-barracuda/": {
+    "kind": "species-detail",
+    "title": "Guinean barracuda fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/guinean-pompano/": {
+    "kind": "species-detail",
+    "title": "Guinean pompano fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/gulf-flounder/": {
+    "kind": "species-detail",
+    "title": "Gulf flounder fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/gulf-grouper/": {
+    "kind": "species-detail",
+    "title": "Gulf grouper fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/gulf-kingcroaker/": {
+    "kind": "species-detail",
+    "title": "Gulf kingcroaker fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/gulf-menhaden/": {
+    "kind": "species-detail",
+    "title": "Gulf menhaden fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/gulf-weakfish/": {
+    "kind": "species-detail",
+    "title": "Gulf weakfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/gummy-shark/": {
+    "kind": "species-detail",
+    "title": "Gummy shark fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/haddock/": {
+    "kind": "species-detail",
+    "title": "Haddock fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/halibut/": {
+    "kind": "species-detail",
+    "title": "Halibut fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/hampala-barb/": {
+    "kind": "species-detail",
+    "title": "Hampala barb fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/harlequin-hind/": {
+    "kind": "species-detail",
+    "title": "Harlequin hind fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/harlequin-rockfish/": {
+    "kind": "species-detail",
+    "title": "Harlequin rockfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/hawaiian-grouper/": {
+    "kind": "species-detail",
+    "title": "Hawaiian grouper fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/hawaiian-ladyfish/": {
+    "kind": "species-detail",
+    "title": "Hawaiian ladyfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/hickory-shad/": {
+    "kind": "species-detail",
+    "title": "Hickory shad fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/highfin-coralgrouper/": {
+    "kind": "species-detail",
+    "title": "Highfin coralgrouper fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/honeycomb-grouper/": {
+    "kind": "species-detail",
+    "title": "Honeycomb grouper fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/hong-kong-grouper/": {
+    "kind": "species-detail",
+    "title": "Hong Kong grouper fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/horse-eye-jack/": {
+    "kind": "species-detail",
+    "title": "Horse-eye jack fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/huchen/": {
+    "kind": "species-detail",
+    "title": "Huchen fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/humpback-red-snapper/": {
+    "kind": "species-detail",
+    "title": "Humpback red snapper fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/humpback-smooth-hound/": {
+    "kind": "species-detail",
+    "title": "Humpback smooth-hound fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/humphead-snapper/": {
+    "kind": "species-detail",
+    "title": "Humphead snapper fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/iberian-barbel/": {
+    "kind": "species-detail",
+    "title": "Iberian barbel fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/ide/": {
+    "kind": "species-detail",
+    "title": "Ide fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/indian-mottled-eel/": {
+    "kind": "species-detail",
+    "title": "Indian mottled eel fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/indian-pompano/": {
+    "kind": "species-detail",
+    "title": "Indian pompano fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/indo-pacific-blue-marlin/": {
+    "kind": "species-detail",
+    "title": "Indo-Pacific blue marlin fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/indo-pacific-king-mackerel/": {
+    "kind": "species-detail",
+    "title": "Indo-Pacific king mackerel fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/indo-pacific-sailfish/": {
+    "kind": "species-detail",
+    "title": "Indo-Pacific sailfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/indo-pacific-tarpon/": {
+    "kind": "species-detail",
+    "title": "Indo-Pacific tarpon fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/indonesian-snakehead/": {
+    "kind": "species-detail",
+    "title": "Indonesian snakehead fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/jacks/": {
+    "kind": "species-detail",
+    "title": "Jacks fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/jamaica-weakfish/": {
+    "kind": "species-detail",
+    "title": "Jamaica weakfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/japanese-amberjack/": {
+    "kind": "species-detail",
+    "title": "Japanese amberjack fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/japanese-huchen/": {
+    "kind": "species-detail",
+    "title": "Japanese huchen fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/japanese-lates/": {
+    "kind": "species-detail",
+    "title": "Japanese lates fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/japanese-sea-bass/": {
+    "kind": "species-detail",
+    "title": "Japanese sea bass fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/japanese-spanish-mackerel/": {
+    "kind": "species-detail",
+    "title": "Japanese Spanish mackerel fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/john-s-snapper/": {
+    "kind": "species-detail",
+    "title": "John's snapper fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/jordan-s-snapper/": {
+    "kind": "species-detail",
+    "title": "Jordan's snapper fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/juan-fernandez-trevally/": {
+    "kind": "species-detail",
+    "title": "Juan Fernandez trevally fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/kanadi-kingfish/": {
+    "kind": "species-detail",
+    "title": "Kanadi kingfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/kariba-tilapia/": {
+    "kind": "species-detail",
+    "title": "Kariba tilapia fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/kawakawa/": {
+    "kind": "species-detail",
+    "title": "Kawakawa fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/kelp-greenling/": {
+    "kind": "species-detail",
+    "title": "Kelp greenling fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/king-george-whiting/": {
+    "kind": "species-detail",
+    "title": "King George whiting fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/king-mackerel/": {
+    "kind": "species-detail",
+    "title": "King mackerel fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/king-threadfin/": {
+    "kind": "species-detail",
+    "title": "King threadfin fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/korean-rockfish/": {
+    "kind": "species-detail",
+    "title": "Korean rockfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/korean-seerfish/": {
+    "kind": "species-detail",
+    "title": "Korean seerfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/kumakuma/": {
+    "kind": "species-detail",
+    "title": "Kumakuma fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/ladyfish/": {
+    "kind": "species-detail",
+    "title": "Ladyfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/lake-sturgeon/": {
+    "kind": "species-detail",
+    "title": "Lake sturgeon fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/lake-trout/": {
+    "kind": "species-detail",
+    "title": "Lake trout fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/lake-trout-group/": {
+    "kind": "species-detail",
+    "title": "Lake trout fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/lake-whitefish/": {
+    "kind": "species-detail",
+    "title": "Lake whitefish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/landlocked-cherry-salmon/": {
+    "kind": "species-detail",
+    "title": "Landlocked cherry salmon fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/landlocked-salmon/": {
+    "kind": "species-detail",
+    "title": "Landlocked salmon fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/lane-snapper/": {
+    "kind": "species-detail",
+    "title": "Lane snapper fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/large-eye-dentex/": {
+    "kind": "species-detail",
+    "title": "Large-eye dentex fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/largemouth-bass/": {
+    "kind": "species-detail",
+    "title": "Largemouth bass fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/largemouth-yellowfish/": {
+    "kind": "species-detail",
+    "title": "Largemouth yellowfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/largescale-blackfish/": {
+    "kind": "species-detail",
+    "title": "Largescale blackfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/largescale-fat-snook/": {
+    "kind": "species-detail",
+    "title": "Largescale fat snook fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/largescale-yellowfish/": {
+    "kind": "species-detail",
+    "title": "Largescale yellowfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/largespotted-dart/": {
+    "kind": "species-detail",
+    "title": "Largespotted dart fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/laulao-catfish/": {
+    "kind": "species-detail",
+    "title": "Laulao catfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/lavender-jobfish/": {
+    "kind": "species-detail",
+    "title": "Lavender jobfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/leaden-labeo/": {
+    "kind": "species-detail",
+    "title": "Leaden labeo fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/leopard-coralgrouper/": {
+    "kind": "species-detail",
+    "title": "Leopard coralgrouper fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/leopard-grouper/": {
+    "kind": "species-detail",
+    "title": "Leopard grouper fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/lesser-amberjack/": {
+    "kind": "species-detail",
+    "title": "Lesser amberjack fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/lesser-spotted-dogfish/": {
+    "kind": "species-detail",
+    "title": "Lesser spotted dogfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/light-dusky-rockfish/": {
+    "kind": "species-detail",
+    "title": "Light dusky rockfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/ling/": {
+    "kind": "species-detail",
+    "title": "Ling fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/lingcod/": {
+    "kind": "species-detail",
+    "title": "Lingcod fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/little-tunny/": {
+    "kind": "species-detail",
+    "title": "Little tunny fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/local-bottom-fish/": {
+    "kind": "species-detail",
+    "title": "Local bottom fish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/longbill-spearfish/": {
+    "kind": "species-detail",
+    "title": "Longbill spearfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/longface-emperor/": {
+    "kind": "species-detail",
+    "title": "Longface emperor fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/longfin-african-conger/": {
+    "kind": "species-detail",
+    "title": "Longfin African conger fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/longfin-tilapia/": {
+    "kind": "species-detail",
+    "title": "Longfin tilapia fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/longfin-yellowtail/": {
+    "kind": "species-detail",
+    "title": "Longfin yellowtail fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/longnose-gar/": {
+    "kind": "species-detail",
+    "title": "Longnose gar fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/longtail-tuna/": {
+    "kind": "species-detail",
+    "title": "Longtail tuna fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/longtooth-grouper/": {
+    "kind": "species-detail",
+    "title": "Longtooth grouper fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/lowveld-largemouth/": {
+    "kind": "species-detail",
+    "title": "Lowveld largemouth fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/lucas-barracuda/": {
+    "kind": "species-detail",
+    "title": "Lucas barracuda fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/macedonian-vimba/": {
+    "kind": "species-detail",
+    "title": "Macedonian vimba fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/machaca/": {
+    "kind": "species-detail",
+    "title": "Machaca fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/machete/": {
+    "kind": "species-detail",
+    "title": "Machete fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/mackerel/": {
+    "kind": "species-detail",
+    "title": "Mackerel fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/macquarie-perch/": {
+    "kind": "species-detail",
+    "title": "Macquarie perch fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/mahi-mahi/": {
+    "kind": "species-detail",
+    "title": "Mahi-mahi fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/mahi-mahi-group/": {
+    "kind": "species-detail",
+    "title": "Mahi-mahi fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/mahogany-snapper/": {
+    "kind": "species-detail",
+    "title": "Mahogany snapper fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/malabar-blood-snapper/": {
+    "kind": "species-detail",
+    "title": "Malabar blood snapper fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/malabar-grouper/": {
+    "kind": "species-detail",
+    "title": "Malabar grouper fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/mangrove-red-snapper/": {
+    "kind": "species-detail",
+    "title": "Mangrove red snapper fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/marble-trout/": {
+    "kind": "species-detail",
+    "title": "Marble trout fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/marlin/": {
+    "kind": "species-detail",
+    "title": "Marlin fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/masked-greenling/": {
+    "kind": "species-detail",
+    "title": "Masked greenling fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/masu-salmon/": {
+    "kind": "species-detail",
+    "title": "Masu salmon fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/mediterranean-barbel/": {
+    "kind": "species-detail",
+    "title": "Mediterranean barbel fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/mekong-catfish/": {
+    "kind": "species-detail",
+    "title": "Mekong catfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/mexican-barracuda/": {
+    "kind": "species-detail",
+    "title": "Mexican barracuda fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/mexican-rockfish/": {
+    "kind": "species-detail",
+    "title": "Mexican rockfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/mexican-snook/": {
+    "kind": "species-detail",
+    "title": "Mexican snook fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/milkfish/": {
+    "kind": "species-detail",
+    "title": "Milkfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/mississippi-paddlefish/": {
+    "kind": "species-detail",
+    "title": "Mississippi paddlefish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/misty-grouper/": {
+    "kind": "species-detail",
+    "title": "Misty grouper fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/moggel/": {
+    "kind": "species-detail",
+    "title": "Moggel fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/monoculus-peacock-bass/": {
+    "kind": "species-detail",
+    "title": "Monoculus peacock bass fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/monterey-spanish-mackerel/": {
+    "kind": "species-detail",
+    "title": "Monterey Spanish mackerel fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/morocco-dentex/": {
+    "kind": "species-detail",
+    "title": "Morocco dentex fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/mountain-whitefish/": {
+    "kind": "species-detail",
+    "title": "Mountain whitefish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/moustache-grouper/": {
+    "kind": "species-detail",
+    "title": "Moustache grouper fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/mozambique-tilapia/": {
+    "kind": "species-detail",
+    "title": "Mozambique tilapia fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/mullet-snapper/": {
+    "kind": "species-detail",
+    "title": "Mullet snapper fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/murray-cod/": {
+    "kind": "species-detail",
+    "title": "Murray cod fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/muskellunge/": {
+    "kind": "species-detail",
+    "title": "Muskellunge fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/mutton-snapper/": {
+    "kind": "species-detail",
+    "title": "Mutton snapper fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/narrow-barred-spanish-mackerel/": {
+    "kind": "species-detail",
+    "title": "Narrow-barred Spanish mackerel fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/narrowfin-smooth-hound/": {
+    "kind": "species-detail",
+    "title": "Narrowfin smooth-hound fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/nassau-grouper/": {
+    "kind": "species-detail",
+    "title": "Nassau grouper fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/needlescaled-queenfish/": {
+    "kind": "species-detail",
+    "title": "Needlescaled queenfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/niger-barb/": {
+    "kind": "species-detail",
+    "title": "Niger barb fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/night-shark/": {
+    "kind": "species-detail",
+    "title": "Night shark fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/nile-perch/": {
+    "kind": "species-detail",
+    "title": "Nile perch fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/north-african-catfish/": {
+    "kind": "species-detail",
+    "title": "North African catfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/north-pacific-hake/": {
+    "kind": "species-detail",
+    "title": "North Pacific hake fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/northern-kingfish/": {
+    "kind": "species-detail",
+    "title": "Northern kingfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/northern-pike/": {
+    "kind": "species-detail",
+    "title": "Northern pike fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/northern-red-snapper/": {
+    "kind": "species-detail",
+    "title": "Northern red snapper fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/oblique-banded-snapper/": {
+    "kind": "species-detail",
+    "title": "Oblique-banded snapper fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/obtuse-barracuda/": {
+    "kind": "species-detail",
+    "title": "Obtuse barracuda fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/oceanic-whitetip-shark/": {
+    "kind": "species-detail",
+    "title": "Oceanic whitetip shark fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/ohrid-trout/": {
+    "kind": "species-detail",
+    "title": "Ohrid trout fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/okinawa-seabream/": {
+    "kind": "species-detail",
+    "title": "Okinawa seabream fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/olive-grouper/": {
+    "kind": "species-detail",
+    "title": "Olive grouper fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/olive-rockfish/": {
+    "kind": "species-detail",
+    "title": "Olive rockfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/opaleye/": {
+    "kind": "species-detail",
+    "title": "Opaleye fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/orange-river-mudfish/": {
+    "kind": "species-detail",
+    "title": "Orange river mudfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/orange-spotted-grouper/": {
+    "kind": "species-detail",
+    "title": "Orange-spotted grouper fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/orangemouth-weakfish/": {
+    "kind": "species-detail",
+    "title": "Orangemouth weakfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/orinoco-peacock-bass/": {
+    "kind": "species-detail",
+    "title": "Orinoco peacock bass fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/oscar/": {
+    "kind": "species-detail",
+    "title": "Oscar fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/oyster-pompano/": {
+    "kind": "species-detail",
+    "title": "Oyster pompano fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/ozark-bass/": {
+    "kind": "species-detail",
+    "title": "Ozark bass fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/pacific-barracuda/": {
+    "kind": "species-detail",
+    "title": "Pacific barracuda fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/pacific-bluefin-tuna/": {
+    "kind": "species-detail",
+    "title": "Pacific bluefin tuna fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/pacific-bonito/": {
+    "kind": "species-detail",
+    "title": "Pacific bonito fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/pacific-chub-mackerel/": {
+    "kind": "species-detail",
+    "title": "Pacific Chub mackerel fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/pacific-cod/": {
+    "kind": "species-detail",
+    "title": "Pacific cod fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/pacific-crevalle-jack/": {
+    "kind": "species-detail",
+    "title": "Pacific crevalle jack fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/pacific-dog-snapper/": {
+    "kind": "species-detail",
+    "title": "Pacific dog snapper fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/pacific-graysby/": {
+    "kind": "species-detail",
+    "title": "Pacific graysby fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/pacific-halibut/": {
+    "kind": "species-detail",
+    "title": "Pacific halibut fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/pacific-herring/": {
+    "kind": "species-detail",
+    "title": "Pacific herring fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/pacific-ocean-perch/": {
+    "kind": "species-detail",
+    "title": "Pacific ocean perch fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/pacific-rainbow-smelt/": {
+    "kind": "species-detail",
+    "title": "Pacific rainbow smelt fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/pacific-red-snapper/": {
+    "kind": "species-detail",
+    "title": "Pacific red snapper fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/pacific-sardine/": {
+    "kind": "species-detail",
+    "title": "Pacific sardine fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/pacific-sierra/": {
+    "kind": "species-detail",
+    "title": "Pacific sierra fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/pacific-yellowtail-emperor/": {
+    "kind": "species-detail",
+    "title": "Pacific yellowtail emperor fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/pacu/": {
+    "kind": "species-detail",
+    "title": "Pacu fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/pacu-group/": {
+    "kind": "species-detail",
+    "title": "Pacu fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/pale-snapper/": {
+    "kind": "species-detail",
+    "title": "Pale snapper fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/papuan-black-snapper/": {
+    "kind": "species-detail",
+    "title": "Papuan black snapper fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/papuan-seerfish/": {
+    "kind": "species-detail",
+    "title": "Papuan seerfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/parore/": {
+    "kind": "species-detail",
+    "title": "Parore fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/payara/": {
+    "kind": "species-detail",
+    "title": "Payara fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/peacock-bass/": {
+    "kind": "species-detail",
+    "title": "Peacock bass fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/peacock-cichlid/": {
+    "kind": "species-detail",
+    "title": "Peacock cichlid fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/peacock-hind/": {
+    "kind": "species-detail",
+    "title": "Peacock hind fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/pelagic-thresher/": {
+    "kind": "species-detail",
+    "title": "Pelagic thresher fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/perch/": {
+    "kind": "species-detail",
+    "title": "Perch fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/permit/": {
+    "kind": "species-detail",
+    "title": "Permit fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/permit-group/": {
+    "kind": "species-detail",
+    "title": "Permit fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/philippine-catfish/": {
+    "kind": "species-detail",
+    "title": "Philippine catfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/pickhandle-barracuda/": {
+    "kind": "species-detail",
+    "title": "Pickhandle barracuda fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/pigeye-shark/": {
+    "kind": "species-detail",
+    "title": "Pigeye shark fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/piked-dogfish/": {
+    "kind": "species-detail",
+    "title": "Piked dogfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/pinfish/": {
+    "kind": "species-detail",
+    "title": "Pinfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/pink-dentex/": {
+    "kind": "species-detail",
+    "title": "Pink dentex fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/pink-rockfish/": {
+    "kind": "species-detail",
+    "title": "Pink rockfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/pink-salmon/": {
+    "kind": "species-detail",
+    "title": "Pink salmon fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/piranha/": {
+    "kind": "species-detail",
+    "title": "Piranha fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/pirapitinga/": {
+    "kind": "species-detail",
+    "title": "Pirapitinga fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/pollack/": {
+    "kind": "species-detail",
+    "title": "Pollack fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/pompano/": {
+    "kind": "species-detail",
+    "title": "Pompano fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/pompano-group/": {
+    "kind": "species-detail",
+    "title": "Pompano fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/pompano-dolphinfish/": {
+    "kind": "species-detail",
+    "title": "Pompano dolphinfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/potato-grouper/": {
+    "kind": "species-detail",
+    "title": "Potato grouper fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/pumpkinseed/": {
+    "kind": "species-detail",
+    "title": "Pumpkinseed fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/pungwe-chiselmouth/": {
+    "kind": "species-detail",
+    "title": "Pungwe chiselmouth fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/purple-labeo/": {
+    "kind": "species-detail",
+    "title": "Purple labeo fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/purpleface-largemouth/": {
+    "kind": "species-detail",
+    "title": "Purpleface largemouth fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/putitor-mahseer/": {
+    "kind": "species-detail",
+    "title": "Putitor mahseer fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/pygmy-whitefish/": {
+    "kind": "species-detail",
+    "title": "Pygmy whitefish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/queen-snapper/": {
+    "kind": "species-detail",
+    "title": "Queen snapper fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/queenfish/": {
+    "kind": "species-detail",
+    "title": "Queenfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/queensland-school-mackerel/": {
+    "kind": "species-detail",
+    "title": "Queensland school mackerel fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/quillback-rockfish/": {
+    "kind": "species-detail",
+    "title": "Quillback rockfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/rainbow-bass/": {
+    "kind": "species-detail",
+    "title": "Rainbow bass fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/rainbow-runner/": {
+    "kind": "species-detail",
+    "title": "Rainbow runner fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/rainbow-smelt/": {
+    "kind": "species-detail",
+    "title": "Rainbow smelt fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/rainbow-trout/": {
+    "kind": "species-detail",
+    "title": "Rainbow trout fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/red-codling/": {
+    "kind": "species-detail",
+    "title": "Red codling fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/red-drum/": {
+    "kind": "species-detail",
+    "title": "Red drum fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/red-grouper/": {
+    "kind": "species-detail",
+    "title": "Red grouper fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/red-hind/": {
+    "kind": "species-detail",
+    "title": "Red hind fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/red-porgy/": {
+    "kind": "species-detail",
+    "title": "Red porgy fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/red-seabream/": {
+    "kind": "species-detail",
+    "title": "Red seabream fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/red-stumpnose-seabream/": {
+    "kind": "species-detail",
+    "title": "Red stumpnose seabream fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/red-tipped-grouper/": {
+    "kind": "species-detail",
+    "title": "Red-tipped grouper fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/redbanded-seabream/": {
+    "kind": "species-detail",
+    "title": "Redbanded seabream fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/redbreast-sunfish/": {
+    "kind": "species-detail",
+    "title": "Redbreast sunfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/redear-sunfish/": {
+    "kind": "species-detail",
+    "title": "Redear sunfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/redeye-bass/": {
+    "kind": "species-detail",
+    "title": "Redeye bass fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/redfin-pickerel/": {
+    "kind": "species-detail",
+    "title": "Redfin pickerel fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/rednose-labeo/": {
+    "kind": "species-detail",
+    "title": "Rednose labeo fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/redstripe-rockfish/": {
+    "kind": "species-detail",
+    "title": "Redstripe rockfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/redtail-catfish/": {
+    "kind": "species-detail",
+    "title": "Redtail catfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/rhinofish/": {
+    "kind": "species-detail",
+    "title": "Rhinofish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/ripon-barbel/": {
+    "kind": "species-detail",
+    "title": "Ripon barbel fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/roach/": {
+    "kind": "species-detail",
+    "title": "Roach fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/roanoke-bass/": {
+    "kind": "species-detail",
+    "title": "Roanoke bass fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/rock-bass/": {
+    "kind": "species-detail",
+    "title": "Rock bass fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/rock-greenling/": {
+    "kind": "species-detail",
+    "title": "Rock greenling fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/rock-hind/": {
+    "kind": "species-detail",
+    "title": "Rock hind fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/rockfish/": {
+    "kind": "species-detail",
+    "title": "Rockfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/roho-labeo/": {
+    "kind": "species-detail",
+    "title": "Roho labeo fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/roman-seabream/": {
+    "kind": "species-detail",
+    "title": "Roman seabream fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/roosterfish/": {
+    "kind": "species-detail",
+    "title": "Roosterfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/rosethorn-rockfish/": {
+    "kind": "species-detail",
+    "title": "Rosethorn rockfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/rougheye-rockfish/": {
+    "kind": "species-detail",
+    "title": "Rougheye rockfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/round-whitefish/": {
+    "kind": "species-detail",
+    "title": "Round whitefish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/roundjaw-bonefish/": {
+    "kind": "species-detail",
+    "title": "Roundjaw bonefish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/roving-coralgrouper/": {
+    "kind": "species-detail",
+    "title": "Roving coralgrouper fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/rudd/": {
+    "kind": "species-detail",
+    "title": "Rudd fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/rudolf-lates/": {
+    "kind": "species-detail",
+    "title": "Rudolf lates fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/ruffe/": {
+    "kind": "species-detail",
+    "title": "Ruffe fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/russell-s-snapper/": {
+    "kind": "species-detail",
+    "title": "Russell's snapper fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/sablefish/": {
+    "kind": "species-detail",
+    "title": "Sablefish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/saddletail-grouper/": {
+    "kind": "species-detail",
+    "title": "Saddletail grouper fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/sailfish/": {
+    "kind": "species-detail",
+    "title": "Sailfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/saithe/": {
+    "kind": "species-detail",
+    "title": "Saithe fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/salmon/": {
+    "kind": "species-detail",
+    "title": "Salmon fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/samson-fish/": {
+    "kind": "species-detail",
+    "title": "Samson fish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/sand-sillago/": {
+    "kind": "species-detail",
+    "title": "Sand sillago fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/sand-steenbras/": {
+    "kind": "species-detail",
+    "title": "Sand steenbras fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/sand-weakfish/": {
+    "kind": "species-detail",
+    "title": "Sand weakfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/sandbar-shark/": {
+    "kind": "species-detail",
+    "title": "Sandbar shark fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/sardine-cisco/": {
+    "kind": "species-detail",
+    "title": "Sardine cisco fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/sauger/": {
+    "kind": "species-detail",
+    "title": "Sauger fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/sawtooth-barracuda/": {
+    "kind": "species-detail",
+    "title": "Sawtooth barracuda fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/scaled-herring/": {
+    "kind": "species-detail",
+    "title": "Scaled herring fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/scaly/": {
+    "kind": "species-detail",
+    "title": "Scaly fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/scamp/": {
+    "kind": "species-detail",
+    "title": "Scamp fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/schoolmaster-snapper/": {
+    "kind": "species-detail",
+    "title": "Schoolmaster snapper fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/schraetzer/": {
+    "kind": "species-detail",
+    "title": "Schraetzer fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/scup/": {
+    "kind": "species-detail",
+    "title": "Scup fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/sea-trout/": {
+    "kind": "species-detail",
+    "title": "Sea trout fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/sea-trout-group/": {
+    "kind": "species-detail",
+    "title": "Sea trout fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/senegalese-ladyfish/": {
+    "kind": "species-detail",
+    "title": "Senegalese ladyfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/serra-spanish-mackerel/": {
+    "kind": "species-detail",
+    "title": "Serra Spanish mackerel fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/sevan-trout/": {
+    "kind": "species-detail",
+    "title": "Sevan trout fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/shadow-bass/": {
+    "kind": "species-detail",
+    "title": "Shadow bass fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/sharpchin-rockfish/": {
+    "kind": "species-detail",
+    "title": "Sharpchin rockfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/sharpsnout-seabream/": {
+    "kind": "species-detail",
+    "title": "Sharpsnout seabream fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/sheepshead/": {
+    "kind": "species-detail",
+    "title": "Sheepshead fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/shoal-bass/": {
+    "kind": "species-detail",
+    "title": "Shoal bass fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/short-finned-eel/": {
+    "kind": "species-detail",
+    "title": "Short-finned eel fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/shortbelly-rockfish/": {
+    "kind": "species-detail",
+    "title": "Shortbelly rockfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/shortbill-spearfish/": {
+    "kind": "species-detail",
+    "title": "Shortbill spearfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/shortfin-mako/": {
+    "kind": "species-detail",
+    "title": "Shortfin mako fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/shortfin-pompano/": {
+    "kind": "species-detail",
+    "title": "Shortfin pompano fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/shortfin-weakfish/": {
+    "kind": "species-detail",
+    "title": "Shortfin weakfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/shortnose-gar/": {
+    "kind": "species-detail",
+    "title": "Shortnose gar fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/shortnose-spurdog/": {
+    "kind": "species-detail",
+    "title": "Shortnose spurdog fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/shortnose-sturgeon/": {
+    "kind": "species-detail",
+    "title": "Shortnose sturgeon fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/shortraker-rockfish/": {
+    "kind": "species-detail",
+    "title": "Shortraker rockfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/siamese-carp/": {
+    "kind": "species-detail",
+    "title": "Siamese carp fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/silk-snapper/": {
+    "kind": "species-detail",
+    "title": "Silk snapper fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/silver-hake/": {
+    "kind": "species-detail",
+    "title": "Silver hake fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/silver-labeo/": {
+    "kind": "species-detail",
+    "title": "Silver labeo fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/silver-perch/": {
+    "kind": "species-detail",
+    "title": "Silver perch fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/silver-seabream/": {
+    "kind": "species-detail",
+    "title": "Silver seabream fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/silver-seatrout/": {
+    "kind": "species-detail",
+    "title": "Silver seatrout fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/silvergray-rockfish/": {
+    "kind": "species-detail",
+    "title": "Silvergray rockfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/silvertip-shark/": {
+    "kind": "species-detail",
+    "title": "Silvertip shark fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/sixblotch-hind/": {
+    "kind": "species-detail",
+    "title": "Sixblotch hind fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/sixfinger-threadfin/": {
+    "kind": "species-detail",
+    "title": "Sixfinger threadfin fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/skipjack-shad/": {
+    "kind": "species-detail",
+    "title": "Skipjack shad fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/skipjack-tuna/": {
+    "kind": "species-detail",
+    "title": "Skipjack tuna fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/sky-emperor/": {
+    "kind": "species-detail",
+    "title": "Sky emperor fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/slinger-seabream/": {
+    "kind": "species-detail",
+    "title": "Slinger seabream fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/slobbering-catfish/": {
+    "kind": "species-detail",
+    "title": "Slobbering catfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/small-spotted-dart/": {
+    "kind": "species-detail",
+    "title": "Small spotted dart fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/smallmouth-bass/": {
+    "kind": "species-detail",
+    "title": "Smallmouth bass fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/smallmouth-buffalo/": {
+    "kind": "species-detail",
+    "title": "Smallmouth buffalo fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/smallmouth-yellowfish/": {
+    "kind": "species-detail",
+    "title": "Smallmouth yellowfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/smallscale-yellowfish/": {
+    "kind": "species-detail",
+    "title": "Smallscale yellowfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/smalltooth-emperor/": {
+    "kind": "species-detail",
+    "title": "Smalltooth emperor fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/smooth-weakfish/": {
+    "kind": "species-detail",
+    "title": "Smooth weakfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/smooth-hound/": {
+    "kind": "species-detail",
+    "title": "Smooth-hound fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/snakehead/": {
+    "kind": "species-detail",
+    "title": "Snakehead fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/snapper/": {
+    "kind": "species-detail",
+    "title": "Snapper fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/snook/": {
+    "kind": "species-detail",
+    "title": "Snook fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/snowy-grouper/": {
+    "kind": "species-detail",
+    "title": "Snowy grouper fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/snubnose-pompano/": {
+    "kind": "species-detail",
+    "title": "Snubnose pompano fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/sockeye-salmon/": {
+    "kind": "species-detail",
+    "title": "Sockeye salmon fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/south-american-silver-porgy/": {
+    "kind": "species-detail",
+    "title": "South American silver porgy fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/southern-bluefin-tuna/": {
+    "kind": "species-detail",
+    "title": "Southern bluefin tuna fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/southern-common-seabream/": {
+    "kind": "species-detail",
+    "title": "Southern common seabream fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/southern-flounder/": {
+    "kind": "species-detail",
+    "title": "Southern flounder fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/southern-kingcroaker/": {
+    "kind": "species-detail",
+    "title": "Southern kingcroaker fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/southern-pompano/": {
+    "kind": "species-detail",
+    "title": "Southern pompano fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/southern-school-whiting/": {
+    "kind": "species-detail",
+    "title": "Southern school whiting fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/southern-sennet/": {
+    "kind": "species-detail",
+    "title": "Southern sennet fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/spangled-emperor/": {
+    "kind": "species-detail",
+    "title": "Spangled emperor fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/spanish-flag-snapper/": {
+    "kind": "species-detail",
+    "title": "Spanish flag snapper fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/speckled-hind/": {
+    "kind": "species-detail",
+    "title": "Speckled hind fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/speckled-longfin-eel/": {
+    "kind": "species-detail",
+    "title": "Speckled longfin eel fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/speckled-pavon/": {
+    "kind": "species-detail",
+    "title": "Speckled pavon fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/speckled-rockfish/": {
+    "kind": "species-detail",
+    "title": "Speckled rockfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/spinner-shark/": {
+    "kind": "species-detail",
+    "title": "Spinner shark fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/splitnose-rockfish/": {
+    "kind": "species-detail",
+    "title": "Splitnose rockfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/spot-croaker/": {
+    "kind": "species-detail",
+    "title": "Spot croaker fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/spot-tail-bass/": {
+    "kind": "species-detail",
+    "title": "Spot-tail bass fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/spotted-bass/": {
+    "kind": "species-detail",
+    "title": "Spotted bass fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/spotted-coralgrouper/": {
+    "kind": "species-detail",
+    "title": "Spotted coralgrouper fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/spotted-estuary-smooth-hound/": {
+    "kind": "species-detail",
+    "title": "Spotted estuary smooth-hound fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/spotted-gar/": {
+    "kind": "species-detail",
+    "title": "Spotted gar fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/spotted-grouper/": {
+    "kind": "species-detail",
+    "title": "Spotted grouper fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/spotted-rose-snapper/": {
+    "kind": "species-detail",
+    "title": "Spotted rose snapper fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/spotted-seabass/": {
+    "kind": "species-detail",
+    "title": "Spotted seabass fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/spotted-seatrout/": {
+    "kind": "species-detail",
+    "title": "Spotted seatrout fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/spotted-sorubim/": {
+    "kind": "species-detail",
+    "title": "Spotted sorubim fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/spotty-bellied-greenling/": {
+    "kind": "species-detail",
+    "title": "Spotty-bellied greenling fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/squeteague/": {
+    "kind": "species-detail",
+    "title": "Squeteague fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/squid/": {
+    "kind": "species-detail",
+    "title": "Squid fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/star-studded-grouper/": {
+    "kind": "species-detail",
+    "title": "Star-studded grouper fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/starry-flounder/": {
+    "kind": "species-detail",
+    "title": "Starry flounder fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/starry-grouper/": {
+    "kind": "species-detail",
+    "title": "Starry grouper fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/starry-rockfish/": {
+    "kind": "species-detail",
+    "title": "Starry rockfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/starry-smooth-hound/": {
+    "kind": "species-detail",
+    "title": "Starry smooth-hound fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/starspotted-grouper/": {
+    "kind": "species-detail",
+    "title": "Starspotted grouper fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/starspotted-smooth-hound/": {
+    "kind": "species-detail",
+    "title": "Starspotted smooth-hound fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/steel-pompano/": {
+    "kind": "species-detail",
+    "title": "Steel pompano fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/stolzmann-s-weakfish/": {
+    "kind": "species-detail",
+    "title": "Stolzmann's weakfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/stone-flounder/": {
+    "kind": "species-detail",
+    "title": "Stone flounder fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/strawberry-hind/": {
+    "kind": "species-detail",
+    "title": "Strawberry hind fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/streaked-seerfish/": {
+    "kind": "species-detail",
+    "title": "Streaked seerfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/striped-bass/": {
+    "kind": "species-detail",
+    "title": "Striped bass fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/striped-bonito/": {
+    "kind": "species-detail",
+    "title": "Striped bonito fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/striped-marlin/": {
+    "kind": "species-detail",
+    "title": "Striped marlin fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/striped-threadfin/": {
+    "kind": "species-detail",
+    "title": "Striped threadfin fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/striped-fin-grouper/": {
+    "kind": "species-detail",
+    "title": "Striped-fin grouper fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/stripetail-rockfish/": {
+    "kind": "species-detail",
+    "title": "Stripetail rockfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/summer-flounder/": {
+    "kind": "species-detail",
+    "title": "Summer flounder fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/surfperch/": {
+    "kind": "species-detail",
+    "title": "Surfperch fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/suwannee-bass/": {
+    "kind": "species-detail",
+    "title": "Suwannee bass fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/swordfish/": {
+    "kind": "species-detail",
+    "title": "Swordfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/swordfish-group/": {
+    "kind": "species-detail",
+    "title": "Swordfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/swordspine-snook/": {
+    "kind": "species-detail",
+    "title": "Swordspine snook fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/taimen/": {
+    "kind": "species-detail",
+    "title": "Taimen fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/talang-queenfish/": {
+    "kind": "species-detail",
+    "title": "Talang queenfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/tanganyika-lates/": {
+    "kind": "species-detail",
+    "title": "Tanganyika lates fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/tarakihi/": {
+    "kind": "species-detail",
+    "title": "Tarakihi fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/tarpon-group/": {
+    "kind": "species-detail",
+    "title": "Tarpon fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/tarpon-snook/": {
+    "kind": "species-detail",
+    "title": "Tarpon snook fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/tautog/": {
+    "kind": "species-detail",
+    "title": "Tautog fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/tench/": {
+    "kind": "species-detail",
+    "title": "Tench fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/tenpounder/": {
+    "kind": "species-detail",
+    "title": "Tenpounder fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/thinface-cichlid/": {
+    "kind": "species-detail",
+    "title": "Thinface cichlid fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/threadfin/": {
+    "kind": "species-detail",
+    "title": "Threadfin fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/three-spotted-tilapia/": {
+    "kind": "species-detail",
+    "title": "Three spotted tilapia fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/thresher/": {
+    "kind": "species-detail",
+    "title": "Thresher fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/tiger-catfish/": {
+    "kind": "species-detail",
+    "title": "Tiger catfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/tiger-fish/": {
+    "kind": "species-detail",
+    "title": "Tiger fish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/tiger-flathead/": {
+    "kind": "species-detail",
+    "title": "Tiger flathead fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/tiger-grouper/": {
+    "kind": "species-detail",
+    "title": "Tiger grouper fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/tiger-rockfish/": {
+    "kind": "species-detail",
+    "title": "Tiger rockfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/tiger-sorubim/": {
+    "kind": "species-detail",
+    "title": "Tiger sorubim fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/tigerfish/": {
+    "kind": "species-detail",
+    "title": "Tigerfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/tille-trevally/": {
+    "kind": "species-detail",
+    "title": "Tille trevally fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/tomato-hind/": {
+    "kind": "species-detail",
+    "title": "Tomato hind fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/tope-shark/": {
+    "kind": "species-detail",
+    "title": "Tope shark fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/tor-barb/": {
+    "kind": "species-detail",
+    "title": "Tor barb fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/trahira/": {
+    "kind": "species-detail",
+    "title": "Trahira fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/triggerfish/": {
+    "kind": "species-detail",
+    "title": "Triggerfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/trout-cod/": {
+    "kind": "species-detail",
+    "title": "Trout cod fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/trumpet-emperor/": {
+    "kind": "species-detail",
+    "title": "Trumpet emperor fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/trumpeter-whiting/": {
+    "kind": "species-detail",
+    "title": "Trumpeter whiting fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/tugela-labeo/": {
+    "kind": "species-detail",
+    "title": "Tugela labeo fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/tuna/": {
+    "kind": "species-detail",
+    "title": "Tuna fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/turbot/": {
+    "kind": "species-detail",
+    "title": "Turbot fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/two-spot-red-snapper/": {
+    "kind": "species-detail",
+    "title": "Two-spot red snapper fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/union-snook/": {
+    "kind": "species-detail",
+    "title": "Union snook fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/upper-zambezi-yellowfish/": {
+    "kind": "species-detail",
+    "title": "Upper Zambezi yellowfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/vermilion-rockfish/": {
+    "kind": "species-detail",
+    "title": "Vermilion rockfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/vermilion-snapper/": {
+    "kind": "species-detail",
+    "title": "Vermilion snapper fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/vimba-bream/": {
+    "kind": "species-detail",
+    "title": "Vimba bream fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/volga-pikeperch/": {
+    "kind": "species-detail",
+    "title": "Volga pikeperch fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/wahoo/": {
+    "kind": "species-detail",
+    "title": "Wahoo fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/wallago/": {
+    "kind": "species-detail",
+    "title": "Wallago fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/walleye/": {
+    "kind": "species-detail",
+    "title": "Walleye fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/warmouth/": {
+    "kind": "species-detail",
+    "title": "Warmouth fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/warsaw-grouper/": {
+    "kind": "species-detail",
+    "title": "Warsaw grouper fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/wels-catfish/": {
+    "kind": "species-detail",
+    "title": "Wels catfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/wenchman/": {
+    "kind": "species-detail",
+    "title": "Wenchman fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/west-african-ladyfish/": {
+    "kind": "species-detail",
+    "title": "West African ladyfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/west-african-spanish-mackerel/": {
+    "kind": "species-detail",
+    "title": "West African Spanish mackerel fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/west-australian-dhufish/": {
+    "kind": "species-detail",
+    "title": "West Australian dhufish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/west-coast-seabream/": {
+    "kind": "species-detail",
+    "title": "West coast seabream fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/western-australian-salmon/": {
+    "kind": "species-detail",
+    "title": "Western Australian salmon fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/white-bass/": {
+    "kind": "species-detail",
+    "title": "White bass fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/white-catfish/": {
+    "kind": "species-detail",
+    "title": "White catfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/white-crappie/": {
+    "kind": "species-detail",
+    "title": "White crappie fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/white-grouper/": {
+    "kind": "species-detail",
+    "title": "White grouper fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/white-perch/": {
+    "kind": "species-detail",
+    "title": "White perch fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/white-seabream/": {
+    "kind": "species-detail",
+    "title": "White seabream fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/white-snook/": {
+    "kind": "species-detail",
+    "title": "White snook fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/white-steenbras/": {
+    "kind": "species-detail",
+    "title": "White steenbras fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/white-stumpnose/": {
+    "kind": "species-detail",
+    "title": "White stumpnose fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/white-sturgeon/": {
+    "kind": "species-detail",
+    "title": "White sturgeon fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/white-trevally/": {
+    "kind": "species-detail",
+    "title": "White trevally fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/white-spotted-char/": {
+    "kind": "species-detail",
+    "title": "White-spotted char fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/whitespotted-char/": {
+    "kind": "species-detail",
+    "title": "Whitespotted char fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/whitespotted-conger/": {
+    "kind": "species-detail",
+    "title": "Whitespotted conger fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/whitespotted-greenling/": {
+    "kind": "species-detail",
+    "title": "Whitespotted greenling fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/whitespotted-smooth-hound/": {
+    "kind": "species-detail",
+    "title": "Whitespotted smooth-hound fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/whiting/": {
+    "kind": "species-detail",
+    "title": "Whiting fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/widow-rockfish/": {
+    "kind": "species-detail",
+    "title": "Widow rockfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/wolf-fish/": {
+    "kind": "species-detail",
+    "title": "Wolf fish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/yellow-bass/": {
+    "kind": "species-detail",
+    "title": "Yellow bass fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/yellow-bullhead/": {
+    "kind": "species-detail",
+    "title": "Yellow bullhead fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/yellow-jack/": {
+    "kind": "species-detail",
+    "title": "Yellow jack fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/yellow-perch/": {
+    "kind": "species-detail",
+    "title": "Yellow perch fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/yellow-snapper/": {
+    "kind": "species-detail",
+    "title": "Yellow snapper fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/yellow-belly-bream/": {
+    "kind": "species-detail",
+    "title": "Yellow-belly bream fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/yellow-eye-mullet/": {
+    "kind": "species-detail",
+    "title": "Yellow-eye mullet fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/yellowbanded-snapper/": {
+    "kind": "species-detail",
+    "title": "Yellowbanded snapper fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/yellowedge-grouper/": {
+    "kind": "species-detail",
+    "title": "Yellowedge grouper fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/yelloweye-rockfish/": {
+    "kind": "species-detail",
+    "title": "Yelloweye rockfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/yellowfin-bream/": {
+    "kind": "species-detail",
+    "title": "Yellowfin bream fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/yellowfin-grouper/": {
+    "kind": "species-detail",
+    "title": "Yellowfin grouper fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/yellowfin-seabream/": {
+    "kind": "species-detail",
+    "title": "Yellowfin seabream fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/yellowfin-snook/": {
+    "kind": "species-detail",
+    "title": "Yellowfin snook fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/yellowfin-sole/": {
+    "kind": "species-detail",
+    "title": "Yellowfin sole fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/yellowfin-tuna/": {
+    "kind": "species-detail",
+    "title": "Yellowfin tuna fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/yellowfin-whiting/": {
+    "kind": "species-detail",
+    "title": "Yellowfin whiting fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/yellowfish/": {
+    "kind": "species-detail",
+    "title": "Yellowfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/yellowlip-emperor/": {
+    "kind": "species-detail",
+    "title": "Yellowlip emperor fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/yellowmouth-barracuda/": {
+    "kind": "species-detail",
+    "title": "Yellowmouth barracuda fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/yellowmouth-grouper/": {
+    "kind": "species-detail",
+    "title": "Yellowmouth grouper fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/yellowspotted-catshark/": {
+    "kind": "species-detail",
+    "title": "Yellowspotted catshark fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/yellowtail-amberjack/": {
+    "kind": "species-detail",
+    "title": "Yellowtail amberjack fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/yellowtail-emperor/": {
+    "kind": "species-detail",
+    "title": "Yellowtail emperor fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/yellowtail-rockfish/": {
+    "kind": "species-detail",
+    "title": "Yellowtail rockfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/yellowtail-snapper/": {
+    "kind": "species-detail",
+    "title": "Yellowtail snapper fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/zander/": {
+    "kind": "species-detail",
+    "title": "Zander fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/zander-group/": {
+    "kind": "species-detail",
+    "title": "Zander fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/zebra/": {
+    "kind": "species-detail",
+    "title": "Zebra fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/zebra-catfish/": {
+    "kind": "species-detail",
+    "title": "Zebra catfish fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/zebra-seabream/": {
+    "kind": "species-detail",
+    "title": "Zebra seabream fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/species/zungaro-dorado/": {
+    "kind": "species-detail",
+    "title": "Zungaro dorado fishing, local names and destinations | Castward",
     "noindex": false,
     "redirectTo": null
   }

@@ -130,7 +130,7 @@
     "Asia",
     "Oceania"
   ],
-  "sources": 266,
+  "sources": 848,
   "articles": [
     {
       "id": "situk-coho-river",
@@ -140,7 +140,10 @@
         "g26-situk",
         "g26-ak-rules",
         "g26-ak-orders",
-        "g26-ak-license"
+        "g26-ak-license",
+        "species-e4b4ce359a5f",
+        "species-3636ea32acb6",
+        "species-864d44e8fa6e"
       ],
       "review": {
         "checked": "2026-11-10",
@@ -153,7 +156,12 @@
       "id": "na-us-ak-002",
       "type": "trip",
       "words": 218,
-      "sources": [],
+      "sources": [
+        "species-062707996bb3",
+        "species-ee715ca4e47a",
+        "species-0bfb0a6c78ad",
+        "species-48c3f2407559"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -166,7 +174,12 @@
       "id": "na-us-ak-003",
       "type": "trip",
       "words": 224,
-      "sources": [],
+      "sources": [
+        "species-3d62c9ef3a96",
+        "species-be2e7f49c8be",
+        "species-4cf18fcca024",
+        "species-93c98ca684ee"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -179,7 +192,12 @@
       "id": "na-us-ak-004",
       "type": "trip",
       "words": 215,
-      "sources": [],
+      "sources": [
+        "species-3d62c9ef3a96",
+        "species-be2e7f49c8be",
+        "species-4cf18fcca024",
+        "species-93c98ca684ee"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -192,7 +210,9 @@
       "id": "na-us-ak-005",
       "type": "trip",
       "words": 223,
-      "sources": [],
+      "sources": [
+        "species-2ddba22fa2c2"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -206,7 +226,8 @@
       "type": "trip",
       "words": 182,
       "sources": [
-        "halibut"
+        "halibut",
+        "species-57ff527f5531"
       ],
       "review": {
         "status": "source-checked",
@@ -221,7 +242,9 @@
       "type": "trip",
       "words": 172,
       "sources": [
-        "clearwater"
+        "clearwater",
+        "species-f938a593d445",
+        "species-058d06e1f8fa"
       ],
       "review": {
         "status": "source-checked",
@@ -237,7 +260,10 @@
       "words": 170,
       "sources": [
         "tanana",
-        "tanana-report"
+        "tanana-report",
+        "species-e28c3d680097",
+        "species-fbcc64a4e712",
+        "species-19b2c736f40e"
       ],
       "review": {
         "status": "source-checked",
@@ -251,7 +277,12 @@
       "id": "na-us-ak-009",
       "type": "trip",
       "words": 214,
-      "sources": [],
+      "sources": [
+        "species-b4e3622fcd0a",
+        "species-b67ab176f23c",
+        "species-5eb7e685a672",
+        "species-14ff19f9dfb5"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -264,7 +295,10 @@
       "id": "na-us-ak-010",
       "type": "trip",
       "words": 212,
-      "sources": [],
+      "sources": [
+        "species-09e84b35a157",
+        "species-78aaa72c3eb3"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -277,7 +311,10 @@
       "id": "na-us-ak-011",
       "type": "trip",
       "words": 219,
-      "sources": [],
+      "sources": [
+        "species-f65f1ec0b3c1",
+        "species-b0767029c1b9"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -290,7 +327,11 @@
       "id": "na-us-ak-012",
       "type": "trip",
       "words": 212,
-      "sources": [],
+      "sources": [
+        "species-442fd3df50ae",
+        "species-a914907e690f",
+        "species-8871eb353726"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -303,7 +344,10 @@
       "id": "na-us-ak-013",
       "type": "trip",
       "words": 216,
-      "sources": [],
+      "sources": [
+        "species-7781ac595708",
+        "species-85b700638cc4"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -316,7 +360,10 @@
       "id": "na-us-ak-014",
       "type": "trip",
       "words": 213,
-      "sources": [],
+      "sources": [
+        "species-ee76eb59ec3c",
+        "species-142cd98f8fa0"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -329,7 +376,10 @@
       "id": "na-us-ak-015",
       "type": "trip",
       "words": 214,
-      "sources": [],
+      "sources": [
+        "species-676b52929a1a",
+        "species-c64b088ce672"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -342,7 +392,13 @@
       "id": "na-us-ak-016",
       "type": "trip",
       "words": 207,
-      "sources": [],
+      "sources": [
+        "species-4b3f9d9248e4",
+        "species-92f841dcc9b1",
+        "species-4e895d30c339",
+        "species-79f54a519ed4",
+        "species-6b603ac9a27a"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -355,7 +411,12 @@
       "id": "na-us-ak-017",
       "type": "trip",
       "words": 209,
-      "sources": [],
+      "sources": [
+        "species-b02edaa821bd",
+        "species-4ef793d10c74",
+        "species-f7e7eee3ccd1",
+        "species-0b120d94d995"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -368,7 +429,9 @@
       "id": "na-us-ak-018",
       "type": "trip",
       "words": 214,
-      "sources": [],
+      "sources": [
+        "species-505d4236b6bb"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -381,7 +444,9 @@
       "id": "na-us-ak-019",
       "type": "trip",
       "words": 212,
-      "sources": [],
+      "sources": [
+        "species-72bc09f7b2cc"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -394,7 +459,11 @@
       "id": "na-us-ak-020",
       "type": "trip",
       "words": 207,
-      "sources": [],
+      "sources": [
+        "species-e354fff62557",
+        "species-72e4028c3a6c",
+        "species-291f35b9854c"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -459,7 +528,9 @@
       "id": "na-us-hi-005",
       "type": "trip",
       "words": 214,
-      "sources": [],
+      "sources": [
+        "species-292a7cd52d34"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -485,7 +556,10 @@
       "id": "na-us-wa-001",
       "type": "trip",
       "words": 206,
-      "sources": [],
+      "sources": [
+        "species-ee31ccde8257",
+        "species-8a9f59c073b4"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -498,7 +572,10 @@
       "id": "na-us-wa-002",
       "type": "trip",
       "words": 214,
-      "sources": [],
+      "sources": [
+        "species-c1657a607c9f",
+        "species-4ff4379c5749"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -511,7 +588,10 @@
       "id": "na-us-wa-003",
       "type": "trip",
       "words": 223,
-      "sources": [],
+      "sources": [
+        "species-c4472a0d80ee",
+        "species-40763178b05c"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -550,7 +630,9 @@
       "id": "na-us-wa-006",
       "type": "trip",
       "words": 212,
-      "sources": [],
+      "sources": [
+        "species-38e991c630b4"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -563,7 +645,10 @@
       "id": "na-us-wa-007",
       "type": "trip",
       "words": 208,
-      "sources": [],
+      "sources": [
+        "species-b90375483838",
+        "species-7043d24efe03"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -576,7 +661,10 @@
       "id": "na-us-wa-008",
       "type": "trip",
       "words": 205,
-      "sources": [],
+      "sources": [
+        "species-2cc65c61e911",
+        "species-54e8aea9d901"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -589,7 +677,10 @@
       "id": "na-us-wa-009",
       "type": "trip",
       "words": 203,
-      "sources": [],
+      "sources": [
+        "species-1f0609515988",
+        "species-9d44ce2994d5"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -602,7 +693,10 @@
       "id": "na-us-wa-010",
       "type": "trip",
       "words": 203,
-      "sources": [],
+      "sources": [
+        "species-10e776f787c7",
+        "species-3238eea8202c"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -615,7 +709,10 @@
       "id": "na-us-wa-011",
       "type": "trip",
       "words": 212,
-      "sources": [],
+      "sources": [
+        "species-eaf5df4c3f40",
+        "species-b3994403fafa"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -641,7 +738,9 @@
       "id": "na-us-or-001",
       "type": "trip",
       "words": 219,
-      "sources": [],
+      "sources": [
+        "species-79de076360f2"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -655,7 +754,9 @@
       "type": "trip",
       "words": 130,
       "sources": [
-        "global-jacktrout"
+        "global-jacktrout",
+        "species-3a316fffb0c5",
+        "species-5c5bc27c515e"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -669,7 +770,11 @@
       "id": "na-us-or-003",
       "type": "trip",
       "words": 212,
-      "sources": [],
+      "sources": [
+        "species-3e14e4df29ef",
+        "species-546bf260c627",
+        "species-8797aa8303c3"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -682,7 +787,9 @@
       "id": "na-us-or-004",
       "type": "trip",
       "words": 216,
-      "sources": [],
+      "sources": [
+        "species-f7b1fe591df9"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -695,7 +802,9 @@
       "id": "na-us-or-005",
       "type": "trip",
       "words": 207,
-      "sources": [],
+      "sources": [
+        "species-dd403106fcf5"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -708,7 +817,10 @@
       "id": "na-us-or-006",
       "type": "trip",
       "words": 213,
-      "sources": [],
+      "sources": [
+        "species-1976e3328850",
+        "species-a79f25fe2d89"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -721,7 +833,10 @@
       "id": "na-us-or-007",
       "type": "trip",
       "words": 207,
-      "sources": [],
+      "sources": [
+        "species-82bf8d0d29a0",
+        "species-20543c443d91"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -734,7 +849,10 @@
       "id": "na-us-or-008",
       "type": "trip",
       "words": 208,
-      "sources": [],
+      "sources": [
+        "species-546bf260c627",
+        "species-ebbded5f4363"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -760,7 +878,9 @@
       "id": "na-us-or-010",
       "type": "trip",
       "words": 217,
-      "sources": [],
+      "sources": [
+        "species-438c365adcf1"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -774,7 +894,8 @@
       "type": "trip",
       "words": 132,
       "sources": [
-        "global-jacktrout"
+        "global-jacktrout",
+        "species-3a316fffb0c5"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -802,7 +923,9 @@
       "type": "trip",
       "words": 129,
       "sources": [
-        "global-jacktrout"
+        "global-jacktrout",
+        "species-3a316fffb0c5",
+        "species-111e52512a18"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -817,7 +940,8 @@
       "type": "trip",
       "words": 129,
       "sources": [
-        "global-jacktrout"
+        "global-jacktrout",
+        "species-3a316fffb0c5"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -832,7 +956,8 @@
       "type": "trip",
       "words": 128,
       "sources": [
-        "global-jacktrout"
+        "global-jacktrout",
+        "species-3a316fffb0c5"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -847,7 +972,9 @@
       "type": "trip",
       "words": 127,
       "sources": [
-        "global-jacktrout"
+        "global-jacktrout",
+        "species-3a316fffb0c5",
+        "species-6103d446839c"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -861,7 +988,9 @@
       "id": "na-us-ca-007",
       "type": "trip",
       "words": 204,
-      "sources": [],
+      "sources": [
+        "species-d8a0b2e08ea8"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -887,7 +1016,9 @@
       "id": "na-us-ca-009",
       "type": "trip",
       "words": 206,
-      "sources": [],
+      "sources": [
+        "species-5761920f51ad"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -913,7 +1044,9 @@
       "id": "na-us-ca-011",
       "type": "trip",
       "words": 214,
-      "sources": [],
+      "sources": [
+        "species-7682d21f5064"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -952,7 +1085,9 @@
       "id": "na-us-ca-014",
       "type": "trip",
       "words": 215,
-      "sources": [],
+      "sources": [
+        "species-43de4b894c3f"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -978,7 +1113,9 @@
       "id": "na-us-ca-016",
       "type": "trip",
       "words": 216,
-      "sources": [],
+      "sources": [
+        "species-ed1d54b2a813"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -991,7 +1128,9 @@
       "id": "na-us-nv-001",
       "type": "trip",
       "words": 210,
-      "sources": [],
+      "sources": [
+        "species-c396f5d16b99"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -1004,7 +1143,9 @@
       "id": "na-us-nv-002",
       "type": "trip",
       "words": 209,
-      "sources": [],
+      "sources": [
+        "species-49a34b3c6f98"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -1017,7 +1158,10 @@
       "id": "na-us-nv-003",
       "type": "trip",
       "words": 208,
-      "sources": [],
+      "sources": [
+        "species-ae5cc5aee254",
+        "species-aee86f4d05b7"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -1043,7 +1187,9 @@
       "id": "na-us-az-001",
       "type": "trip",
       "words": 216,
-      "sources": [],
+      "sources": [
+        "species-d964732357fa"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -1056,7 +1202,9 @@
       "id": "na-us-az-002",
       "type": "trip",
       "words": 206,
-      "sources": [],
+      "sources": [
+        "species-e4a9ed51e91b"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -1069,7 +1217,9 @@
       "id": "na-us-az-003",
       "type": "trip",
       "words": 204,
-      "sources": [],
+      "sources": [
+        "species-ca066775f0d5"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -1082,7 +1232,9 @@
       "id": "na-us-az-004",
       "type": "trip",
       "words": 210,
-      "sources": [],
+      "sources": [
+        "species-682eb2fb4bab"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -1095,7 +1247,9 @@
       "id": "na-us-az-005",
       "type": "trip",
       "words": 212,
-      "sources": [],
+      "sources": [
+        "species-9537e1d7f0a1"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -1108,7 +1262,9 @@
       "id": "na-us-nm-001",
       "type": "trip",
       "words": 219,
-      "sources": [],
+      "sources": [
+        "species-cd7c99bd8513"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -1147,7 +1303,11 @@
       "id": "na-us-nm-004",
       "type": "trip",
       "words": 209,
-      "sources": [],
+      "sources": [
+        "species-266719908510",
+        "species-92b6acd2177f",
+        "species-cd7c99bd8513"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -1160,7 +1320,9 @@
       "id": "na-us-nm-005",
       "type": "trip",
       "words": 205,
-      "sources": [],
+      "sources": [
+        "species-266719908510"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -1186,7 +1348,9 @@
       "id": "na-us-id-002",
       "type": "trip",
       "words": 218,
-      "sources": [],
+      "sources": [
+        "species-0846a9f7f31e"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -1199,7 +1363,9 @@
       "id": "na-us-id-003",
       "type": "trip",
       "words": 208,
-      "sources": [],
+      "sources": [
+        "species-94987cd36c0a"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -1212,7 +1378,9 @@
       "id": "na-us-id-004",
       "type": "trip",
       "words": 209,
-      "sources": [],
+      "sources": [
+        "species-592acc92ba7d"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -1238,7 +1406,11 @@
       "id": "na-us-id-006",
       "type": "trip",
       "words": 205,
-      "sources": [],
+      "sources": [
+        "species-b1b31197becb",
+        "species-ac9bf5a07d7e",
+        "species-93ca3e88757c"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -1277,7 +1449,10 @@
       "id": "na-us-mt-001",
       "type": "trip",
       "words": 217,
-      "sources": [],
+      "sources": [
+        "species-533490f4ed3e",
+        "species-05183701f53b"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -1303,7 +1478,9 @@
       "id": "na-us-mt-003",
       "type": "trip",
       "words": 221,
-      "sources": [],
+      "sources": [
+        "species-541499943a1b"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -1316,7 +1493,10 @@
       "id": "na-us-mt-004",
       "type": "trip",
       "words": 214,
-      "sources": [],
+      "sources": [
+        "species-0a8de1353b38",
+        "species-6e2538cc53e1"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -1329,7 +1509,9 @@
       "id": "na-us-mt-005",
       "type": "trip",
       "words": 212,
-      "sources": [],
+      "sources": [
+        "species-01cac052c5c8"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -1342,7 +1524,10 @@
       "id": "na-us-mt-006",
       "type": "trip",
       "words": 214,
-      "sources": [],
+      "sources": [
+        "species-53d3e9e81a6e",
+        "species-7b5819fd0a41"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -1355,7 +1540,9 @@
       "id": "na-us-mt-007",
       "type": "trip",
       "words": 215,
-      "sources": [],
+      "sources": [
+        "species-40f9cec3ebd2"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -1368,7 +1555,10 @@
       "id": "na-us-mt-008",
       "type": "trip",
       "words": 205,
-      "sources": [],
+      "sources": [
+        "species-d80c166b055f",
+        "species-7eab25ed58d2"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -1381,7 +1571,9 @@
       "id": "na-us-mt-009",
       "type": "trip",
       "words": 213,
-      "sources": [],
+      "sources": [
+        "species-4a08058eaecc"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -1394,7 +1586,9 @@
       "id": "na-us-mt-010",
       "type": "trip",
       "words": 215,
-      "sources": [],
+      "sources": [
+        "species-5161ed27162d"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -1420,7 +1614,10 @@
       "id": "na-us-wy-002",
       "type": "trip",
       "words": 218,
-      "sources": [],
+      "sources": [
+        "species-de9bebe3c6e0",
+        "species-be4c77a6081f"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -1446,7 +1643,10 @@
       "id": "na-us-wy-004",
       "type": "trip",
       "words": 220,
-      "sources": [],
+      "sources": [
+        "species-e0138e8b1f5b",
+        "species-90c16192002a"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -1459,7 +1659,9 @@
       "id": "na-us-wy-005",
       "type": "trip",
       "words": 218,
-      "sources": [],
+      "sources": [
+        "species-cc4194fb7b40"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -1485,7 +1687,9 @@
       "id": "na-us-wy-007",
       "type": "trip",
       "words": 212,
-      "sources": [],
+      "sources": [
+        "species-be4c77a6081f"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -1498,7 +1702,10 @@
       "id": "na-us-wy-008",
       "type": "trip",
       "words": 211,
-      "sources": [],
+      "sources": [
+        "species-f8d5b702680e",
+        "species-be4c77a6081f"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -1511,7 +1718,9 @@
       "id": "na-us-co-001",
       "type": "trip",
       "words": 219,
-      "sources": [],
+      "sources": [
+        "species-155d35e9ba24"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -1525,7 +1734,8 @@
       "type": "trip",
       "words": 156,
       "sources": [
-        "rocky"
+        "rocky",
+        "species-c3431a2a6859"
       ],
       "review": {
         "status": "source-checked",
@@ -1539,7 +1749,9 @@
       "id": "na-us-co-003",
       "type": "trip",
       "words": 218,
-      "sources": [],
+      "sources": [
+        "species-155d35e9ba24"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -1552,7 +1764,9 @@
       "id": "na-us-co-004",
       "type": "trip",
       "words": 218,
-      "sources": [],
+      "sources": [
+        "species-b44f6918b7e2"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -1578,7 +1792,9 @@
       "id": "na-us-co-006",
       "type": "trip",
       "words": 217,
-      "sources": [],
+      "sources": [
+        "species-1453d7e18a41"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -1617,7 +1833,10 @@
       "id": "na-us-co-009",
       "type": "trip",
       "words": 205,
-      "sources": [],
+      "sources": [
+        "species-9280e3e01ac6",
+        "species-d74fde6afc2a"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -1630,7 +1849,9 @@
       "id": "na-us-co-010",
       "type": "trip",
       "words": 210,
-      "sources": [],
+      "sources": [
+        "species-597ca1fa6c9a"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -1656,7 +1877,9 @@
       "id": "na-us-ut-002",
       "type": "trip",
       "words": 214,
-      "sources": [],
+      "sources": [
+        "species-83e93573ea7e"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -1669,7 +1892,9 @@
       "id": "na-us-ut-003",
       "type": "trip",
       "words": 214,
-      "sources": [],
+      "sources": [
+        "species-03e6a0711d42"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -1682,7 +1907,9 @@
       "id": "na-us-ut-004",
       "type": "trip",
       "words": 206,
-      "sources": [],
+      "sources": [
+        "species-bdb6c009fcfb"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -1695,7 +1922,11 @@
       "id": "na-us-ut-005",
       "type": "trip",
       "words": 211,
-      "sources": [],
+      "sources": [
+        "species-bdb6c009fcfb",
+        "species-99661cdbe999",
+        "species-83e93573ea7e"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -1708,7 +1939,10 @@
       "id": "na-us-ut-006",
       "type": "trip",
       "words": 209,
-      "sources": [],
+      "sources": [
+        "species-9a9a534ee96a",
+        "species-2b55f88b72a3"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -1721,7 +1955,9 @@
       "id": "na-us-ut-007",
       "type": "trip",
       "words": 212,
-      "sources": [],
+      "sources": [
+        "species-0929797e9990"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -1734,7 +1970,9 @@
       "id": "na-us-nd-001",
       "type": "trip",
       "words": 202,
-      "sources": [],
+      "sources": [
+        "species-7731853f9016"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -1747,7 +1985,10 @@
       "id": "na-us-nd-002",
       "type": "trip",
       "words": 203,
-      "sources": [],
+      "sources": [
+        "species-7731853f9016",
+        "species-1aae59efc95c"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -1760,7 +2001,9 @@
       "id": "na-us-nd-003",
       "type": "trip",
       "words": 216,
-      "sources": [],
+      "sources": [
+        "species-ca03b2cdb13f"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -1773,7 +2016,10 @@
       "id": "na-us-nd-004",
       "type": "trip",
       "words": 214,
-      "sources": [],
+      "sources": [
+        "species-e4bb92c5d0bb",
+        "species-5c91a5cd3b9f"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -1786,7 +2032,10 @@
       "id": "na-us-sd-001",
       "type": "trip",
       "words": 208,
-      "sources": [],
+      "sources": [
+        "species-bb4e86a11178",
+        "species-fc517b3a4f02"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -1812,7 +2061,10 @@
       "id": "na-us-sd-003",
       "type": "trip",
       "words": 201,
-      "sources": [],
+      "sources": [
+        "species-c31610c2651b",
+        "species-cec2ba7b9f55"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -1825,7 +2077,9 @@
       "id": "na-us-sd-004",
       "type": "trip",
       "words": 213,
-      "sources": [],
+      "sources": [
+        "species-dbbd81bd8bf3"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -1838,7 +2092,11 @@
       "id": "na-us-ne-001",
       "type": "trip",
       "words": 201,
-      "sources": [],
+      "sources": [
+        "species-272101f51911",
+        "species-935973dec941",
+        "species-649a31e7451d"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -1851,7 +2109,9 @@
       "id": "na-us-ne-002",
       "type": "trip",
       "words": 213,
-      "sources": [],
+      "sources": [
+        "species-aa7e6f28d2c0"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -1864,7 +2124,10 @@
       "id": "na-us-ne-003",
       "type": "trip",
       "words": 202,
-      "sources": [],
+      "sources": [
+        "species-15da94f6ad30",
+        "species-8a89b6ee2813"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -1877,7 +2140,9 @@
       "id": "na-us-ks-001",
       "type": "trip",
       "words": 215,
-      "sources": [],
+      "sources": [
+        "species-75fb36019a77"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -1916,7 +2181,11 @@
       "id": "na-us-ok-001",
       "type": "trip",
       "words": 206,
-      "sources": [],
+      "sources": [
+        "species-0017f1d0e188",
+        "species-3f9ea1ca2c01",
+        "species-7430a5552ed4"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -1929,7 +2198,9 @@
       "id": "na-us-ok-002",
       "type": "trip",
       "words": 218,
-      "sources": [],
+      "sources": [
+        "species-9bc42d88aa3b"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -1942,7 +2213,9 @@
       "id": "na-us-ok-003",
       "type": "trip",
       "words": 205,
-      "sources": [],
+      "sources": [
+        "species-d4ab6b999e80"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -1955,7 +2228,9 @@
       "id": "na-us-ok-004",
       "type": "trip",
       "words": 211,
-      "sources": [],
+      "sources": [
+        "species-a15b31e74a5f"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -1968,7 +2243,9 @@
       "id": "na-us-ok-005",
       "type": "trip",
       "words": 212,
-      "sources": [],
+      "sources": [
+        "species-52d4a134cdb2"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -1981,7 +2258,9 @@
       "id": "na-us-mn-001",
       "type": "trip",
       "words": 210,
-      "sources": [],
+      "sources": [
+        "species-23769b2d897b"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -1994,7 +2273,9 @@
       "id": "na-us-mn-002",
       "type": "trip",
       "words": 218,
-      "sources": [],
+      "sources": [
+        "species-113a39a7fe71"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -2007,7 +2288,10 @@
       "id": "na-us-mn-003",
       "type": "trip",
       "words": 205,
-      "sources": [],
+      "sources": [
+        "species-41dd236aa966",
+        "species-d57b0b44884c"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -2020,7 +2304,10 @@
       "id": "na-us-mn-004",
       "type": "trip",
       "words": 209,
-      "sources": [],
+      "sources": [
+        "species-57c95a3896ad",
+        "species-e781a4cbc7d8"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -2033,7 +2320,9 @@
       "id": "na-us-mn-005",
       "type": "trip",
       "words": 198,
-      "sources": [],
+      "sources": [
+        "species-05d696ffefea"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -2046,7 +2335,11 @@
       "id": "na-us-mn-006",
       "type": "trip",
       "words": 203,
-      "sources": [],
+      "sources": [
+        "species-6f5a26abde6d",
+        "species-9ecce4087fb5",
+        "species-05d696ffefea"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -2059,7 +2352,10 @@
       "id": "na-us-mn-007",
       "type": "trip",
       "words": 208,
-      "sources": [],
+      "sources": [
+        "species-7065ad955f45",
+        "species-cfea4acad781"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -2072,7 +2368,12 @@
       "id": "na-us-mn-008",
       "type": "trip",
       "words": 202,
-      "sources": [],
+      "sources": [
+        "species-ba37b56b4730",
+        "species-486f2e5abb07",
+        "species-efedcb307c98",
+        "species-9b565b812784"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -2085,7 +2386,9 @@
       "id": "na-us-mn-009",
       "type": "trip",
       "words": 212,
-      "sources": [],
+      "sources": [
+        "species-31b8a2722b40"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -2098,7 +2401,9 @@
       "id": "na-us-mn-010",
       "type": "trip",
       "words": 208,
-      "sources": [],
+      "sources": [
+        "species-7065ad955f45"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -2111,7 +2416,9 @@
       "id": "na-us-wi-001",
       "type": "trip",
       "words": 201,
-      "sources": [],
+      "sources": [
+        "species-f44e31b92ffa"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -2215,7 +2522,10 @@
       "id": "na-us-wi-009",
       "type": "trip",
       "words": 212,
-      "sources": [],
+      "sources": [
+        "species-1e21f38b677c",
+        "species-9e1825e858d2"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -2254,7 +2564,10 @@
       "id": "na-us-mi-002",
       "type": "trip",
       "words": 215,
-      "sources": [],
+      "sources": [
+        "species-c12ebd8fe845",
+        "species-2047cc2e0129"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -2267,7 +2580,9 @@
       "id": "na-us-mi-003",
       "type": "trip",
       "words": 211,
-      "sources": [],
+      "sources": [
+        "species-e5add5401fd0"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -2280,7 +2595,10 @@
       "id": "na-us-mi-004",
       "type": "trip",
       "words": 210,
-      "sources": [],
+      "sources": [
+        "species-0a3b704d91d5",
+        "species-5976966212ce"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -2293,7 +2611,11 @@
       "id": "na-us-mi-005",
       "type": "trip",
       "words": 206,
-      "sources": [],
+      "sources": [
+        "species-6a3a906ccd20",
+        "species-2bd46574bdbb",
+        "species-020bfc08209f"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -2319,7 +2641,9 @@
       "id": "na-us-mi-007",
       "type": "trip",
       "words": 201,
-      "sources": [],
+      "sources": [
+        "species-2925b61b2299"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -2332,7 +2656,11 @@
       "id": "na-us-mi-008",
       "type": "trip",
       "words": 204,
-      "sources": [],
+      "sources": [
+        "species-99268a4e79f4",
+        "species-143757e1dac3",
+        "species-114647b8a4a9"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -2345,7 +2673,10 @@
       "id": "na-us-mi-009",
       "type": "trip",
       "words": 205,
-      "sources": [],
+      "sources": [
+        "species-d43c8eaab086",
+        "species-1b7b5eb52a09"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -2358,7 +2689,10 @@
       "id": "na-us-mi-010",
       "type": "trip",
       "words": 204,
-      "sources": [],
+      "sources": [
+        "species-b30487996591",
+        "species-e2f3d758efde"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -2371,7 +2705,10 @@
       "id": "na-us-mi-011",
       "type": "trip",
       "words": 208,
-      "sources": [],
+      "sources": [
+        "species-f4cd12fcb684",
+        "species-865cd4955bc7"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -2397,7 +2734,10 @@
       "id": "na-us-il-001",
       "type": "trip",
       "words": 203,
-      "sources": [],
+      "sources": [
+        "species-9b6418855e83",
+        "species-fc1bf0c87969"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -2410,7 +2750,10 @@
       "id": "na-us-il-002",
       "type": "trip",
       "words": 209,
-      "sources": [],
+      "sources": [
+        "species-05d2a930443e",
+        "species-99004eaba0e4"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -2423,7 +2766,10 @@
       "id": "na-us-il-003",
       "type": "trip",
       "words": 210,
-      "sources": [],
+      "sources": [
+        "species-699374a63de7",
+        "species-679625b3108d"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -2436,7 +2782,11 @@
       "id": "na-us-il-004",
       "type": "trip",
       "words": 204,
-      "sources": [],
+      "sources": [
+        "species-554d430b710b",
+        "species-3d894fb7c614",
+        "species-6c5c29b2ecd3"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -2449,7 +2799,10 @@
       "id": "na-us-in-001",
       "type": "trip",
       "words": 202,
-      "sources": [],
+      "sources": [
+        "species-074e1b086991",
+        "species-9e9d96a2e61a"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -2475,7 +2828,9 @@
       "id": "na-us-in-003",
       "type": "trip",
       "words": 216,
-      "sources": [],
+      "sources": [
+        "species-cf56ed6ee5c6"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -2488,7 +2843,11 @@
       "id": "na-us-in-004",
       "type": "trip",
       "words": 212,
-      "sources": [],
+      "sources": [
+        "species-edf2279bb621",
+        "species-6b06888fe2a0",
+        "species-53bfc715799d"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -2501,7 +2860,9 @@
       "id": "na-us-oh-001",
       "type": "trip",
       "words": 206,
-      "sources": [],
+      "sources": [
+        "species-e3324bd7b2d8"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -2514,7 +2875,9 @@
       "id": "na-us-oh-002",
       "type": "trip",
       "words": 210,
-      "sources": [],
+      "sources": [
+        "species-c166bd8aa061"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -2527,7 +2890,9 @@
       "id": "na-us-oh-003",
       "type": "trip",
       "words": 205,
-      "sources": [],
+      "sources": [
+        "species-b7704b4b4cf7"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -2540,7 +2905,9 @@
       "id": "na-us-oh-004",
       "type": "trip",
       "words": 212,
-      "sources": [],
+      "sources": [
+        "species-3941faeda4c8"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -2553,7 +2920,9 @@
       "id": "na-us-oh-005",
       "type": "trip",
       "words": 209,
-      "sources": [],
+      "sources": [
+        "species-c8c9ead83bf5"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -2566,7 +2935,9 @@
       "id": "na-us-oh-006",
       "type": "trip",
       "words": 215,
-      "sources": [],
+      "sources": [
+        "species-3e2c9f97f8d3"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -2579,7 +2950,9 @@
       "id": "na-us-ia-001",
       "type": "trip",
       "words": 206,
-      "sources": [],
+      "sources": [
+        "species-94ed5c23062c"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -2592,7 +2965,9 @@
       "id": "na-us-ia-002",
       "type": "trip",
       "words": 213,
-      "sources": [],
+      "sources": [
+        "species-60e9439fe71b"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -2605,7 +2980,9 @@
       "id": "na-us-ia-003",
       "type": "trip",
       "words": 208,
-      "sources": [],
+      "sources": [
+        "species-7cfc70e7cd3e"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -2618,7 +2995,9 @@
       "id": "na-us-mo-001",
       "type": "trip",
       "words": 212,
-      "sources": [],
+      "sources": [
+        "species-9b4b98faf477"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -2631,7 +3010,10 @@
       "id": "na-us-mo-002",
       "type": "trip",
       "words": 204,
-      "sources": [],
+      "sources": [
+        "species-badeadcdc2ff",
+        "species-00961acdd7a3"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -2644,7 +3026,10 @@
       "id": "na-us-mo-003",
       "type": "trip",
       "words": 207,
-      "sources": [],
+      "sources": [
+        "species-d5a65bd51760",
+        "species-4ed191b8075b"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -2657,7 +3042,10 @@
       "id": "na-us-mo-004",
       "type": "trip",
       "words": 209,
-      "sources": [],
+      "sources": [
+        "species-f0b1502c41c2",
+        "species-9e67997262c6"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -2670,7 +3058,12 @@
       "id": "na-us-mo-005",
       "type": "trip",
       "words": 212,
-      "sources": [],
+      "sources": [
+        "species-56afa7160ef3",
+        "species-a79edc77da46",
+        "species-e9dfe86d88e4",
+        "species-7d8e9260b1c5"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -2683,7 +3076,10 @@
       "id": "na-us-me-001",
       "type": "trip",
       "words": 209,
-      "sources": [],
+      "sources": [
+        "species-5610eafc0fdf",
+        "species-8b5a711cdd90"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -2696,7 +3092,9 @@
       "id": "na-us-me-002",
       "type": "trip",
       "words": 216,
-      "sources": [],
+      "sources": [
+        "species-ab677f443148"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -2722,7 +3120,10 @@
       "id": "na-us-me-004",
       "type": "trip",
       "words": 204,
-      "sources": [],
+      "sources": [
+        "species-e09b4640dbca",
+        "species-8e8272254753"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -2748,7 +3149,10 @@
       "id": "na-us-me-006",
       "type": "trip",
       "words": 203,
-      "sources": [],
+      "sources": [
+        "species-f8fb6f5b0382",
+        "species-1e030bffa4ce"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -2761,7 +3165,10 @@
       "id": "na-us-me-007",
       "type": "trip",
       "words": 217,
-      "sources": [],
+      "sources": [
+        "species-5610eafc0fdf",
+        "species-8b5a711cdd90"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -2774,7 +3181,9 @@
       "id": "na-us-nh-001",
       "type": "trip",
       "words": 206,
-      "sources": [],
+      "sources": [
+        "species-515211de2d1e"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -2826,7 +3235,11 @@
       "id": "na-us-vt-001",
       "type": "trip",
       "words": 210,
-      "sources": [],
+      "sources": [
+        "species-f2f5b59703be",
+        "species-1dbf0d4ea735",
+        "species-9e95827a2e4c"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -2839,7 +3252,9 @@
       "id": "na-us-vt-002",
       "type": "trip",
       "words": 216,
-      "sources": [],
+      "sources": [
+        "species-225b1b31bd4f"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -2852,7 +3267,12 @@
       "id": "na-us-vt-003",
       "type": "trip",
       "words": 214,
-      "sources": [],
+      "sources": [
+        "species-c7ff509a90e7",
+        "species-d79802aa14b6",
+        "species-a6461cff8bc2",
+        "species-3c1b44158142"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -2865,7 +3285,11 @@
       "id": "na-us-vt-004",
       "type": "trip",
       "words": 211,
-      "sources": [],
+      "sources": [
+        "species-42ab929b96e9",
+        "species-8599c7c5bdcc",
+        "species-a87b3c64ca58"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -2891,7 +3315,9 @@
       "id": "na-us-ma-002",
       "type": "trip",
       "words": 216,
-      "sources": [],
+      "sources": [
+        "species-a043189f7151"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -2904,7 +3330,9 @@
       "id": "na-us-ma-003",
       "type": "trip",
       "words": 218,
-      "sources": [],
+      "sources": [
+        "species-8ef96ec699a3"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -2917,7 +3345,9 @@
       "id": "na-us-ma-004",
       "type": "trip",
       "words": 214,
-      "sources": [],
+      "sources": [
+        "species-80d6bd1950ce"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -2943,7 +3373,10 @@
       "id": "na-us-ma-006",
       "type": "trip",
       "words": 203,
-      "sources": [],
+      "sources": [
+        "species-3e960a762fae",
+        "species-fc437668d53a"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -2956,7 +3389,9 @@
       "id": "na-us-ri-001",
       "type": "trip",
       "words": 214,
-      "sources": [],
+      "sources": [
+        "species-eda5b954996b"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -2982,7 +3417,9 @@
       "id": "na-us-ri-003",
       "type": "trip",
       "words": 209,
-      "sources": [],
+      "sources": [
+        "species-060b3dc75dd2"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -2995,7 +3432,10 @@
       "id": "na-us-ct-001",
       "type": "trip",
       "words": 215,
-      "sources": [],
+      "sources": [
+        "species-fd9c916c0ecd",
+        "species-0b7cf7d37af0"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -3008,7 +3448,9 @@
       "id": "na-us-ct-002",
       "type": "trip",
       "words": 219,
-      "sources": [],
+      "sources": [
+        "species-941c4945c707"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -3021,7 +3463,9 @@
       "id": "na-us-ct-003",
       "type": "trip",
       "words": 215,
-      "sources": [],
+      "sources": [
+        "species-b5b7d6da8093"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -3034,7 +3478,10 @@
       "id": "na-us-ny-001",
       "type": "trip",
       "words": 211,
-      "sources": [],
+      "sources": [
+        "species-3022907fbb5f",
+        "species-043030e04b5e"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -3073,7 +3520,10 @@
       "id": "na-us-ny-004",
       "type": "trip",
       "words": 199,
-      "sources": [],
+      "sources": [
+        "species-41cd6e043936",
+        "species-fc86b3246405"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -3099,7 +3549,9 @@
       "id": "na-us-ny-006",
       "type": "trip",
       "words": 217,
-      "sources": [],
+      "sources": [
+        "species-3f0e0fee78b9"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -3112,7 +3564,13 @@
       "id": "na-us-ny-007",
       "type": "trip",
       "words": 209,
-      "sources": [],
+      "sources": [
+        "species-09478c492c34",
+        "species-08bfda4be046",
+        "species-c29fad3d99a2",
+        "species-89159c7bf0c9",
+        "species-52071ef44d20"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -3125,7 +3583,9 @@
       "id": "na-us-ny-008",
       "type": "trip",
       "words": 212,
-      "sources": [],
+      "sources": [
+        "species-87519e5ac67a"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -3151,7 +3611,11 @@
       "id": "na-us-ny-010",
       "type": "trip",
       "words": 219,
-      "sources": [],
+      "sources": [
+        "species-11444c883a5e",
+        "species-6a3636fd1994",
+        "species-a97e76aa0853"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -3385,7 +3849,10 @@
       "id": "na-us-md-002",
       "type": "trip",
       "words": 213,
-      "sources": [],
+      "sources": [
+        "species-62cf5617b6bf",
+        "species-44d64ca37f05"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -3411,7 +3878,11 @@
       "id": "na-us-md-004",
       "type": "trip",
       "words": 202,
-      "sources": [],
+      "sources": [
+        "species-79dbe08ef662",
+        "species-413ad2e23d09",
+        "species-d8de865bcc85"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -3424,7 +3895,9 @@
       "id": "na-us-md-005",
       "type": "trip",
       "words": 213,
-      "sources": [],
+      "sources": [
+        "species-19dd50ff8fe9"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -3437,7 +3910,10 @@
       "id": "na-us-va-001",
       "type": "trip",
       "words": 217,
-      "sources": [],
+      "sources": [
+        "species-03761df62a81",
+        "species-6ebf42664e94"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -3450,7 +3926,10 @@
       "id": "na-us-va-002",
       "type": "trip",
       "words": 210,
-      "sources": [],
+      "sources": [
+        "species-9d4a6cee3a60",
+        "species-3c6b18164a41"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -3463,7 +3942,9 @@
       "id": "na-us-va-003",
       "type": "trip",
       "words": 217,
-      "sources": [],
+      "sources": [
+        "species-21025b3af728"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -3489,7 +3970,10 @@
       "id": "na-us-va-005",
       "type": "trip",
       "words": 206,
-      "sources": [],
+      "sources": [
+        "species-f001b72258b0",
+        "species-ac4395e80347"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -3502,7 +3986,10 @@
       "id": "na-us-va-006",
       "type": "trip",
       "words": 216,
-      "sources": [],
+      "sources": [
+        "species-6db4ceef08f3",
+        "species-ac96b7a8120f"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -3515,7 +4002,10 @@
       "id": "na-us-va-007",
       "type": "trip",
       "words": 212,
-      "sources": [],
+      "sources": [
+        "species-55d7ac6e43b2",
+        "species-9baec6bcbb33"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -3528,7 +4018,10 @@
       "id": "na-us-wv-001",
       "type": "trip",
       "words": 208,
-      "sources": [],
+      "sources": [
+        "species-64273ce3a28d",
+        "species-7bd2b930eb10"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -3554,7 +4047,9 @@
       "id": "na-us-wv-003",
       "type": "trip",
       "words": 209,
-      "sources": [],
+      "sources": [
+        "species-cf036f0da641"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -3567,7 +4062,10 @@
       "id": "na-us-wv-004",
       "type": "trip",
       "words": 204,
-      "sources": [],
+      "sources": [
+        "species-5e1e8eee6c3c",
+        "species-4fbefab60184"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -3580,7 +4078,10 @@
       "id": "na-us-ky-001",
       "type": "trip",
       "words": 218,
-      "sources": [],
+      "sources": [
+        "species-bdb22b610d22",
+        "species-e7ec8941820e"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -3593,7 +4094,13 @@
       "id": "na-us-ky-002",
       "type": "trip",
       "words": 213,
-      "sources": [],
+      "sources": [
+        "species-8e982a480bd8",
+        "species-490a8ee3055d",
+        "species-95463576b001",
+        "species-45bad65c3a4d",
+        "species-51f372823c3c"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -3606,7 +4113,9 @@
       "id": "na-us-ky-003",
       "type": "trip",
       "words": 207,
-      "sources": [],
+      "sources": [
+        "species-4d1af485fab1"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -3619,7 +4128,12 @@
       "id": "na-us-ky-004",
       "type": "trip",
       "words": 209,
-      "sources": [],
+      "sources": [
+        "species-fadad1ac9770",
+        "species-877f9a8d2312",
+        "species-e6b461b199fc",
+        "species-00a975cb1b3b"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -3632,7 +4146,12 @@
       "id": "na-us-ky-005",
       "type": "trip",
       "words": 210,
-      "sources": [],
+      "sources": [
+        "species-037a17b0cff7",
+        "species-afdf3d4c174a",
+        "species-4febbf5850f6",
+        "species-aceb94f81c78"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -3671,7 +4190,9 @@
       "id": "na-us-tn-003",
       "type": "trip",
       "words": 213,
-      "sources": [],
+      "sources": [
+        "species-ca052077bd73"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -3684,7 +4205,9 @@
       "id": "na-us-tn-004",
       "type": "trip",
       "words": 216,
-      "sources": [],
+      "sources": [
+        "species-3c5bdbd6df03"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -3697,7 +4220,10 @@
       "id": "na-us-tn-005",
       "type": "trip",
       "words": 209,
-      "sources": [],
+      "sources": [
+        "species-fafb84a05ce0",
+        "species-8401365b8811"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -3710,7 +4236,11 @@
       "id": "na-us-tn-006",
       "type": "trip",
       "words": 210,
-      "sources": [],
+      "sources": [
+        "species-6baf7e3d692d",
+        "species-7435eb36f26d",
+        "species-d6590b24a7f1"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -3761,7 +4291,9 @@
         "g26-uscg",
         "g26-noaa-hms",
         "g26-nc-license",
-        "g26-nc-rules"
+        "g26-nc-rules",
+        "species-6935fa780faa",
+        "species-cb05a7c56d9f"
       ],
       "review": {
         "checked": "2026-11-10",
@@ -3884,7 +4416,9 @@
         "g26-charleston-closure",
         "g26-sc-license",
         "g26-uscg",
-        "g26-sc-regs"
+        "g26-sc-regs",
+        "species-dd59c875e1d1",
+        "species-99126f9d1186"
       ],
       "review": {
         "checked": "2026-11-10",
@@ -3899,7 +4433,9 @@
       "words": 220,
       "sources": [
         "release-sc-big-drum",
-        "release-sc-drum"
+        "release-sc-drum",
+        "species-99126f9d1186",
+        "species-dd59c875e1d1"
       ],
       "review": {
         "checked": "2026-09-13",
@@ -3912,7 +4448,10 @@
       "id": "na-us-sc-003",
       "type": "trip",
       "words": 202,
-      "sources": [],
+      "sources": [
+        "species-e0b855e285f5",
+        "species-cdb398490b3f"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -3925,7 +4464,9 @@
       "id": "na-us-sc-004",
       "type": "trip",
       "words": 217,
-      "sources": [],
+      "sources": [
+        "species-8f47cb64dda8"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -3938,7 +4479,9 @@
       "id": "na-us-sc-005",
       "type": "trip",
       "words": 210,
-      "sources": [],
+      "sources": [
+        "species-3bda53dfcd9a"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -3951,7 +4494,9 @@
       "id": "na-us-sc-006",
       "type": "trip",
       "words": 218,
-      "sources": [],
+      "sources": [
+        "species-51c2790dfb41"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -3968,7 +4513,9 @@
         "g26-lanier",
         "g26-ga-forecast",
         "g26-ga-license",
-        "g26-ga-rules"
+        "g26-ga-rules",
+        "species-562052b46c8e",
+        "species-0410f036435c"
       ],
       "review": {
         "checked": "2026-11-10",
@@ -3984,7 +4531,11 @@
       "sources": [
         "release-chat-fishing",
         "release-chat-conditions",
-        "release-ga-forecast"
+        "release-ga-forecast",
+        "species-40e74926a78d",
+        "species-31c681fb39ac",
+        "species-0410f036435c",
+        "species-beee88828770"
       ],
       "review": {
         "checked": "2026-09-13",
@@ -4036,7 +4587,9 @@
       "id": "na-us-ga-006",
       "type": "trip",
       "words": 215,
-      "sources": [],
+      "sources": [
+        "species-beee88828770"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -4057,7 +4610,10 @@
         "g26-nws-keys",
         "g26-fwc-charter",
         "g26-fwc-visitors",
-        "g26-noaa-keys"
+        "g26-noaa-keys",
+        "species-708b852a51b9",
+        "species-2659d13a0f92",
+        "species-a5173787b75a"
       ],
       "review": {
         "checked": "2026-11-10",
@@ -4074,7 +4630,11 @@
         "g26-fwc-okee",
         "g26-fwc-ramps",
         "g26-fwc-visitors",
-        "g26-fwc-fresh"
+        "g26-fwc-fresh",
+        "species-25d1b0e4eb23",
+        "species-23be9632059f",
+        "species-4f75304e88f2",
+        "species-fda5f0f2ae17"
       ],
       "review": {
         "checked": "2026-11-10",
@@ -4139,7 +4699,9 @@
       "id": "na-us-fl-007",
       "type": "trip",
       "words": 213,
-      "sources": [],
+      "sources": [
+        "species-5ca29179efd4"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -4152,7 +4714,10 @@
       "id": "na-us-fl-008",
       "type": "trip",
       "words": 212,
-      "sources": [],
+      "sources": [
+        "species-1384132f784e",
+        "species-decd2093a6ef"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -4165,7 +4730,9 @@
       "id": "na-us-fl-009",
       "type": "trip",
       "words": 217,
-      "sources": [],
+      "sources": [
+        "species-c55dd2c0b2a0"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -4178,7 +4745,9 @@
       "id": "na-us-fl-010",
       "type": "trip",
       "words": 212,
-      "sources": [],
+      "sources": [
+        "species-438ff120ed1c"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -4191,7 +4760,9 @@
       "id": "na-us-fl-011",
       "type": "trip",
       "words": 211,
-      "sources": [],
+      "sources": [
+        "species-856ec983df95"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -4282,7 +4853,10 @@
       "id": "na-us-fl-018",
       "type": "trip",
       "words": 211,
-      "sources": [],
+      "sources": [
+        "species-860fe5211108",
+        "species-ae6d9881c203"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -4295,7 +4869,11 @@
       "id": "na-us-fl-019",
       "type": "trip",
       "words": 206,
-      "sources": [],
+      "sources": [
+        "species-4f75304e88f2",
+        "species-f3d0f14709bd",
+        "species-018e745fd7f6"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -4308,7 +4886,9 @@
       "id": "na-us-fl-020",
       "type": "trip",
       "words": 219,
-      "sources": [],
+      "sources": [
+        "species-ebfc04215e2e"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -4321,7 +4901,10 @@
       "id": "na-us-al-001",
       "type": "trip",
       "words": 204,
-      "sources": [],
+      "sources": [
+        "species-1b78ca56dea2",
+        "species-d2712ffe4c3b"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -4334,7 +4917,9 @@
       "id": "na-us-al-002",
       "type": "trip",
       "words": 213,
-      "sources": [],
+      "sources": [
+        "species-89708a89a1ac"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -4360,7 +4945,11 @@
       "id": "na-us-al-004",
       "type": "trip",
       "words": 207,
-      "sources": [],
+      "sources": [
+        "species-8642388c16fb",
+        "species-ccdaab9426ad",
+        "species-9a978121d6fc"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -4373,7 +4962,9 @@
       "id": "na-us-al-005",
       "type": "trip",
       "words": 200,
-      "sources": [],
+      "sources": [
+        "species-ec3a7b6cf881"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -4386,7 +4977,9 @@
       "id": "na-us-al-006",
       "type": "trip",
       "words": 219,
-      "sources": [],
+      "sources": [
+        "species-56dce5b70691"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -4412,7 +5005,10 @@
       "id": "na-us-ms-002",
       "type": "trip",
       "words": 210,
-      "sources": [],
+      "sources": [
+        "species-46b50392e0f4",
+        "species-73cb1d38b2c6"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -4425,7 +5021,9 @@
       "id": "na-us-ms-003",
       "type": "trip",
       "words": 210,
-      "sources": [],
+      "sources": [
+        "species-38ba7bbf792e"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -4438,7 +5036,10 @@
       "id": "na-us-ms-004",
       "type": "trip",
       "words": 204,
-      "sources": [],
+      "sources": [
+        "species-71e5046502d9",
+        "species-fe495c03796c"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -4581,7 +5182,10 @@
       "id": "na-us-ar-001",
       "type": "trip",
       "words": 221,
-      "sources": [],
+      "sources": [
+        "species-28770e01073f",
+        "species-c9ec49e23241"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -4594,7 +5198,9 @@
       "id": "na-us-ar-002",
       "type": "trip",
       "words": 217,
-      "sources": [],
+      "sources": [
+        "species-01a56c0cc57b"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -4633,7 +5239,10 @@
       "id": "na-us-ar-005",
       "type": "trip",
       "words": 204,
-      "sources": [],
+      "sources": [
+        "species-ec41f6cca9f7",
+        "species-799b55c05c99"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -4646,7 +5255,9 @@
       "id": "na-us-ar-006",
       "type": "trip",
       "words": 201,
-      "sources": [],
+      "sources": [
+        "species-220f2acef144"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -4663,7 +5274,9 @@
         "g26-lighthouse",
         "g26-nws-marine",
         "g26-tx-license",
-        "g26-tx-rules"
+        "g26-tx-rules",
+        "species-b0487784602f",
+        "species-82d62a3d5288"
       ],
       "review": {
         "checked": "2026-11-10",
@@ -4680,7 +5293,10 @@
         "g26-fork",
         "g26-fork-access",
         "g26-tx-license",
-        "g26-tx-rules"
+        "g26-tx-rules",
+        "species-f17760e9e9a7",
+        "species-23dee112b15d",
+        "species-d3d5e4a90abf"
       ],
       "review": {
         "checked": "2026-11-10",
@@ -4693,7 +5309,10 @@
       "id": "na-us-tx-003",
       "type": "trip",
       "words": 213,
-      "sources": [],
+      "sources": [
+        "species-1f832907947d",
+        "species-e0a37d182425"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -4706,7 +5325,9 @@
       "id": "na-us-tx-004",
       "type": "trip",
       "words": 217,
-      "sources": [],
+      "sources": [
+        "species-2bfb5cf3138f"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -4719,7 +5340,9 @@
       "id": "na-us-tx-005",
       "type": "trip",
       "words": 220,
-      "sources": [],
+      "sources": [
+        "species-2bfb5cf3138f"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -4758,7 +5381,10 @@
       "id": "na-us-tx-008",
       "type": "trip",
       "words": 221,
-      "sources": [],
+      "sources": [
+        "species-5daab7116cf2",
+        "species-4493b3f54b54"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -4771,7 +5397,11 @@
       "id": "na-us-tx-009",
       "type": "trip",
       "words": 209,
-      "sources": [],
+      "sources": [
+        "species-c1ca5ad023fc",
+        "species-618403f43de9",
+        "species-6438f66a0637"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -4784,7 +5414,11 @@
       "id": "na-us-tx-010",
       "type": "trip",
       "words": 206,
-      "sources": [],
+      "sources": [
+        "species-57c96eee13cb",
+        "species-8c4472b2be66",
+        "species-14f5c9c4a206"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -4797,7 +5431,10 @@
       "id": "na-us-tx-011",
       "type": "trip",
       "words": 201,
-      "sources": [],
+      "sources": [
+        "species-e21d34148021",
+        "species-760fd38bb0af"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -4810,7 +5447,9 @@
       "id": "na-us-tx-012",
       "type": "trip",
       "words": 214,
-      "sources": [],
+      "sources": [
+        "species-9d2772f48a2e"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -4849,7 +5488,9 @@
       "id": "na-ca-bc-001",
       "type": "trip",
       "words": 212,
-      "sources": [],
+      "sources": [
+        "species-7c2be29fe963"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -4862,7 +5503,9 @@
       "id": "na-ca-bc-002",
       "type": "trip",
       "words": 209,
-      "sources": [],
+      "sources": [
+        "species-38327d641c3c"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -4889,7 +5532,8 @@
       "type": "trip",
       "words": 138,
       "sources": [
-        "global-campbell"
+        "global-campbell",
+        "species-636186d9f000"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -4957,7 +5601,9 @@
       "id": "na-ca-bc-009",
       "type": "trip",
       "words": 203,
-      "sources": [],
+      "sources": [
+        "species-1521415eafba"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -4970,7 +5616,9 @@
       "id": "na-ca-bc-010",
       "type": "trip",
       "words": 212,
-      "sources": [],
+      "sources": [
+        "species-4c671a481920"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -4983,7 +5631,9 @@
       "id": "na-ca-bc-011",
       "type": "trip",
       "words": 217,
-      "sources": [],
+      "sources": [
+        "species-9e174af3c0cf"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -4996,7 +5646,9 @@
       "id": "na-ca-bc-012",
       "type": "trip",
       "words": 205,
-      "sources": [],
+      "sources": [
+        "species-87cd382d70af"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -5009,7 +5661,9 @@
       "id": "na-ca-bc-013",
       "type": "trip",
       "words": 203,
-      "sources": [],
+      "sources": [
+        "species-66a07067e3ac"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -5022,7 +5676,10 @@
       "id": "na-ca-bc-014",
       "type": "trip",
       "words": 212,
-      "sources": [],
+      "sources": [
+        "species-a28c245293e5",
+        "species-85c3e026624b"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -5035,7 +5692,9 @@
       "id": "na-ca-bc-015",
       "type": "trip",
       "words": 205,
-      "sources": [],
+      "sources": [
+        "species-f8313766fe9e"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -5074,7 +5733,9 @@
       "id": "na-ca-bc-018",
       "type": "trip",
       "words": 209,
-      "sources": [],
+      "sources": [
+        "species-425521ae76db"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -5087,7 +5748,9 @@
       "id": "na-ca-bc-019",
       "type": "trip",
       "words": 208,
-      "sources": [],
+      "sources": [
+        "species-7c2be29fe963"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -5100,7 +5763,9 @@
       "id": "na-ca-bc-020",
       "type": "trip",
       "words": 210,
-      "sources": [],
+      "sources": [
+        "species-7c2be29fe963"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -5139,7 +5804,9 @@
       "id": "na-ca-ab-003",
       "type": "trip",
       "words": 218,
-      "sources": [],
+      "sources": [
+        "species-4a0733bc158d"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -5178,7 +5845,9 @@
       "id": "na-ca-ab-006",
       "type": "trip",
       "words": 202,
-      "sources": [],
+      "sources": [
+        "species-17d9bcb248bd"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -5204,7 +5873,9 @@
       "id": "na-ca-ab-008",
       "type": "trip",
       "words": 208,
-      "sources": [],
+      "sources": [
+        "species-54c0faef4364"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -5256,7 +5927,9 @@
       "id": "na-ca-sk-002",
       "type": "trip",
       "words": 200,
-      "sources": [],
+      "sources": [
+        "species-1e15633d8b4b"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -5295,7 +5968,9 @@
       "id": "na-ca-sk-005",
       "type": "trip",
       "words": 209,
-      "sources": [],
+      "sources": [
+        "species-efb9875b563c"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -5347,7 +6022,11 @@
       "id": "na-ca-mb-001",
       "type": "trip",
       "words": 213,
-      "sources": [],
+      "sources": [
+        "species-e50d6e8303c3",
+        "species-e5fd174ed196",
+        "species-230ac60e7d67"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -5360,7 +6039,9 @@
       "id": "na-ca-mb-002",
       "type": "trip",
       "words": 211,
-      "sources": [],
+      "sources": [
+        "species-2aa766664e64"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -5386,7 +6067,9 @@
       "id": "na-ca-mb-004",
       "type": "trip",
       "words": 202,
-      "sources": [],
+      "sources": [
+        "species-6b27c269d331"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -5425,7 +6108,9 @@
       "id": "na-ca-mb-007",
       "type": "trip",
       "words": 203,
-      "sources": [],
+      "sources": [
+        "species-e50d6e8303c3"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -5490,7 +6175,9 @@
       "id": "na-ca-on-002",
       "type": "trip",
       "words": 202,
-      "sources": [],
+      "sources": [
+        "species-5b9fd2f3f321"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -5503,7 +6190,9 @@
       "id": "na-ca-on-003",
       "type": "trip",
       "words": 208,
-      "sources": [],
+      "sources": [
+        "species-d3282b8c7ef7"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -5516,7 +6205,9 @@
       "id": "na-ca-on-004",
       "type": "trip",
       "words": 207,
-      "sources": [],
+      "sources": [
+        "species-d3282b8c7ef7"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -5542,7 +6233,9 @@
       "id": "na-ca-on-006",
       "type": "trip",
       "words": 211,
-      "sources": [],
+      "sources": [
+        "species-77efc9416f68"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -5568,7 +6261,9 @@
       "id": "na-ca-on-008",
       "type": "trip",
       "words": 207,
-      "sources": [],
+      "sources": [
+        "species-2cbf2ff7fba4"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -5581,7 +6276,9 @@
       "id": "na-ca-on-009",
       "type": "trip",
       "words": 211,
-      "sources": [],
+      "sources": [
+        "species-078bd15e535f"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -5594,7 +6291,9 @@
       "id": "na-ca-on-010",
       "type": "trip",
       "words": 215,
-      "sources": [],
+      "sources": [
+        "species-86cc27018b21"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -5607,7 +6306,9 @@
       "id": "na-ca-on-011",
       "type": "trip",
       "words": 210,
-      "sources": [],
+      "sources": [
+        "species-078bd15e535f"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -5620,7 +6321,9 @@
       "id": "na-ca-on-012",
       "type": "trip",
       "words": 214,
-      "sources": [],
+      "sources": [
+        "species-a9845b5c8f23"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -5633,7 +6336,9 @@
       "id": "na-ca-on-013",
       "type": "trip",
       "words": 203,
-      "sources": [],
+      "sources": [
+        "species-77e089e9b1ec"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -5672,7 +6377,9 @@
       "id": "na-ca-on-016",
       "type": "trip",
       "words": 210,
-      "sources": [],
+      "sources": [
+        "species-078bd15e535f"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -5685,7 +6392,9 @@
       "id": "na-ca-on-017",
       "type": "trip",
       "words": 216,
-      "sources": [],
+      "sources": [
+        "species-078bd15e535f"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -5698,7 +6407,9 @@
       "id": "na-ca-on-018",
       "type": "trip",
       "words": 203,
-      "sources": [],
+      "sources": [
+        "species-5a48081fbe18"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -5711,7 +6422,9 @@
       "id": "na-ca-qc-001",
       "type": "trip",
       "words": 220,
-      "sources": [],
+      "sources": [
+        "species-5c693c054bf5"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -5776,7 +6489,11 @@
       "id": "na-ca-qc-006",
       "type": "trip",
       "words": 203,
-      "sources": [],
+      "sources": [
+        "species-80f9d282835a",
+        "species-c6e093bf54f3",
+        "species-da83bafdc428"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -5802,7 +6519,9 @@
       "id": "na-ca-qc-008",
       "type": "trip",
       "words": 212,
-      "sources": [],
+      "sources": [
+        "species-18290baed370"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -5867,7 +6586,9 @@
       "id": "na-ca-nb-001",
       "type": "trip",
       "words": 219,
-      "sources": [],
+      "sources": [
+        "species-f6d4c03152bc"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -5880,7 +6601,9 @@
       "id": "na-ca-nb-002",
       "type": "trip",
       "words": 218,
-      "sources": [],
+      "sources": [
+        "species-6238272e99d5"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -5893,7 +6616,9 @@
       "id": "na-ca-nb-003",
       "type": "trip",
       "words": 214,
-      "sources": [],
+      "sources": [
+        "species-c6e0a19d7275"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -5919,7 +6644,9 @@
       "id": "na-ca-ns-001",
       "type": "trip",
       "words": 225,
-      "sources": [],
+      "sources": [
+        "species-a900e15e57d7"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -5984,7 +6711,9 @@
       "id": "na-ca-nl-002",
       "type": "trip",
       "words": 221,
-      "sources": [],
+      "sources": [
+        "species-e63ecf5fdef9"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -5997,7 +6726,9 @@
       "id": "na-ca-nl-003",
       "type": "trip",
       "words": 222,
-      "sources": [],
+      "sources": [
+        "species-307a2e94581c"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -6023,7 +6754,9 @@
       "id": "na-ca-nl-005",
       "type": "trip",
       "words": 217,
-      "sources": [],
+      "sources": [
+        "species-d300e60ad73a"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -6049,7 +6782,9 @@
       "id": "na-ca-pe-001",
       "type": "trip",
       "words": 213,
-      "sources": [],
+      "sources": [
+        "species-b1ddb97f361f"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -6062,7 +6797,9 @@
       "id": "na-ca-pe-002",
       "type": "trip",
       "words": 211,
-      "sources": [],
+      "sources": [
+        "species-1c7a1040d248"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -6102,7 +6839,8 @@
       "type": "trip",
       "words": 124,
       "sources": [
-        "global-plummers"
+        "global-plummers",
+        "species-08f628720ef0"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -6117,7 +6855,8 @@
       "type": "trip",
       "words": 131,
       "sources": [
-        "global-plummers"
+        "global-plummers",
+        "species-08f628720ef0"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -6224,7 +6963,9 @@
       "id": "na-mx-bsc-001",
       "type": "trip",
       "words": 214,
-      "sources": [],
+      "sources": [
+        "species-6355392e0098"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -6250,7 +6991,9 @@
       "id": "na-mx-bsc-003",
       "type": "trip",
       "words": 217,
-      "sources": [],
+      "sources": [
+        "species-c2c7c2f16547"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -6263,7 +7006,9 @@
       "id": "na-mx-bsc-004",
       "type": "trip",
       "words": 216,
-      "sources": [],
+      "sources": [
+        "species-63b0600f61d4"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -6276,7 +7021,9 @@
       "id": "na-mx-bsc-005",
       "type": "trip",
       "words": 214,
-      "sources": [],
+      "sources": [
+        "species-6355392e0098"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -6289,7 +7036,9 @@
       "id": "na-mx-bsc-006",
       "type": "trip",
       "words": 214,
-      "sources": [],
+      "sources": [
+        "species-ba95961536f0"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -6615,7 +7364,8 @@
       "type": "trip",
       "words": 115,
       "sources": [
-        "global-mexico-fly"
+        "global-mexico-fly",
+        "species-404cd5b784e9"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -6630,7 +7380,8 @@
       "type": "trip",
       "words": 115,
       "sources": [
-        "global-espiritu"
+        "global-espiritu",
+        "species-5be469e41eac"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -6815,7 +7566,9 @@
       "words": 157,
       "sources": [
         "red-drum",
-        "seatrout"
+        "seatrout",
+        "species-1ed79707d5bc",
+        "species-3f7ed05ec81c"
       ],
       "review": {
         "status": "source-checked",
@@ -6831,7 +7584,9 @@
       "words": 165,
       "sources": [
         "keys-world",
-        "flats-learning"
+        "flats-learning",
+        "species-2634e40cbf08",
+        "species-996b2d1b6f87"
       ],
       "review": {
         "status": "source-checked",
@@ -6854,7 +7609,8 @@
         "g26-fwc-charter",
         "g26-fwc-salt",
         "g26-noaa-keys",
-        "g26-noaa-hms"
+        "g26-noaa-hms",
+        "species-2634e40cbf08"
       ],
       "review": {
         "checked": "2026-11-10",
@@ -6868,7 +7624,8 @@
       "type": "trip",
       "words": 160,
       "sources": [
-        "andros"
+        "andros",
+        "species-d880ac192c1a"
       ],
       "review": {
         "status": "source-checked",
@@ -6884,7 +7641,9 @@
       "words": 161,
       "sources": [
         "belize",
-        "blue-horizon"
+        "blue-horizon",
+        "species-bef532734953",
+        "species-1f5d333ddddd"
       ],
       "review": {
         "status": "source-checked",
@@ -6899,7 +7658,8 @@
       "type": "trip",
       "words": 158,
       "sources": [
-        "belize"
+        "belize",
+        "species-bef532734953"
       ],
       "review": {
         "status": "source-checked",
@@ -6914,7 +7674,8 @@
       "type": "trip",
       "words": 159,
       "sources": [
-        "costa-seasons"
+        "costa-seasons",
+        "species-4cd7972f4cc0"
       ],
       "review": {
         "status": "source-checked",
@@ -6929,7 +7690,8 @@
       "type": "trip",
       "words": 165,
       "sources": [
-        "costa-caribbean"
+        "costa-caribbean",
+        "species-361d88546d01"
       ],
       "review": {
         "status": "source-checked",
@@ -6945,7 +7707,9 @@
       "words": 174,
       "sources": [
         "amazon",
-        "amazon-planner"
+        "amazon-planner",
+        "species-595774ac63c4",
+        "species-e05c45140a92"
       ],
       "review": {
         "status": "source-checked",
@@ -6961,7 +7725,9 @@
       "words": 174,
       "sources": [
         "patagonia",
-        "set-regions"
+        "set-regions",
+        "species-db67f528ebd1",
+        "species-d43b75f3ae09"
       ],
       "review": {
         "status": "source-checked",
@@ -6976,7 +7742,8 @@
       "type": "trip",
       "words": 177,
       "sources": [
-        "norway"
+        "norway",
+        "species-85cb0645fc73"
       ],
       "review": {
         "status": "source-checked",
@@ -6991,7 +7758,8 @@
       "type": "trip",
       "words": 163,
       "sources": [
-        "norway"
+        "norway",
+        "species-85cb0645fc73"
       ],
       "review": {
         "status": "source-checked",
@@ -7021,7 +7789,8 @@
       "type": "trip",
       "words": 168,
       "sources": [
-        "soca"
+        "soca",
+        "species-d760215e5e4d"
       ],
       "review": {
         "status": "source-checked",
@@ -7036,7 +7805,8 @@
       "type": "trip",
       "words": 168,
       "sources": [
-        "zambezi"
+        "zambezi",
+        "species-397b256aee10"
       ],
       "review": {
         "status": "source-checked",
@@ -7052,7 +7822,9 @@
       "words": 178,
       "sources": [
         "cosmoledo",
-        "gt"
+        "gt",
+        "species-624de4586427",
+        "species-0efa4c9683db"
       ],
       "review": {
         "status": "source-checked",
@@ -7068,7 +7840,9 @@
       "words": 177,
       "sources": [
         "mongolia",
-        "mongolia-river"
+        "mongolia-river",
+        "species-4e8a34f2f4c7",
+        "species-5531ccaa5045"
       ],
       "review": {
         "status": "source-checked",
@@ -7083,7 +7857,8 @@
       "type": "trip",
       "words": 168,
       "sources": [
-        "hokkaido"
+        "hokkaido",
+        "species-0ae801a3a4b7"
       ],
       "review": {
         "status": "source-checked",
@@ -7098,7 +7873,8 @@
       "type": "trip",
       "words": 169,
       "sources": [
-        "korea"
+        "korea",
+        "species-4f002aa451cf"
       ],
       "review": {
         "status": "source-checked",
@@ -7113,7 +7889,8 @@
       "type": "trip",
       "words": 163,
       "sources": [
-        "topend"
+        "topend",
+        "species-0e74327fd6d8"
       ],
       "review": {
         "status": "source-checked",
@@ -7128,7 +7905,9 @@
       "type": "trip",
       "words": 174,
       "sources": [
-        "greatlake"
+        "greatlake",
+        "species-d62f0527c91e",
+        "species-d6a2e6ab870f"
       ],
       "review": {
         "status": "source-checked",
@@ -7143,7 +7922,9 @@
       "type": "trip",
       "words": 163,
       "sources": [
-        "nz-rivers"
+        "nz-rivers",
+        "species-2e3369ef97c4",
+        "species-67e9116d7b9f"
       ],
       "review": {
         "status": "source-checked",
@@ -7158,7 +7939,8 @@
       "type": "trip",
       "words": 162,
       "sources": [
-        "nz-rivers"
+        "nz-rivers",
+        "species-2e3369ef97c4"
       ],
       "review": {
         "status": "source-checked",
@@ -7173,7 +7955,8 @@
       "type": "trip",
       "words": 140,
       "sources": [
-        "global-is-sportquest"
+        "global-is-sportquest",
+        "species-d3753bb69b4a"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -7188,7 +7971,8 @@
       "type": "trip",
       "words": 144,
       "sources": [
-        "global-is-sportquest"
+        "global-is-sportquest",
+        "species-d3753bb69b4a"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -7203,7 +7987,8 @@
       "type": "trip",
       "words": 138,
       "sources": [
-        "global-is-sportquest"
+        "global-is-sportquest",
+        "species-d3753bb69b4a"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -7218,7 +8003,8 @@
       "type": "trip",
       "words": 134,
       "sources": [
-        "global-is-sportquest"
+        "global-is-sportquest",
+        "species-d3753bb69b4a"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -7233,7 +8019,8 @@
       "type": "trip",
       "words": 130,
       "sources": [
-        "global-is-sportquest"
+        "global-is-sportquest",
+        "species-d3753bb69b4a"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -7248,7 +8035,8 @@
       "type": "trip",
       "words": 147,
       "sources": [
-        "global-no-fresh"
+        "global-no-fresh",
+        "species-cd2dce533cc3"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -7263,7 +8051,8 @@
       "type": "trip",
       "words": 145,
       "sources": [
-        "global-no-fresh"
+        "global-no-fresh",
+        "species-cd2dce533cc3"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -7278,7 +8067,8 @@
       "type": "trip",
       "words": 147,
       "sources": [
-        "global-no-fresh"
+        "global-no-fresh",
+        "species-cd2dce533cc3"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -7293,7 +8083,8 @@
       "type": "trip",
       "words": 136,
       "sources": [
-        "global-no-south"
+        "global-no-south",
+        "species-28b6402031cc"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -7323,7 +8114,8 @@
       "type": "trip",
       "words": 132,
       "sources": [
-        "global-se-visit"
+        "global-se-visit",
+        "species-a8f08dfd3e3a"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -7338,7 +8130,8 @@
       "type": "trip",
       "words": 135,
       "sources": [
-        "global-se-vattern"
+        "global-se-vattern",
+        "species-b7a95bfa73d0"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -7353,7 +8146,8 @@
       "type": "trip",
       "words": 135,
       "sources": [
-        "global-fi-lakes"
+        "global-fi-lakes",
+        "species-56427aa9096d"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -7368,7 +8162,8 @@
       "type": "trip",
       "words": 131,
       "sources": [
-        "global-fi-lakes"
+        "global-fi-lakes",
+        "species-56427aa9096d"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -7383,7 +8178,8 @@
       "type": "trip",
       "words": 136,
       "sources": [
-        "global-dk-guide"
+        "global-dk-guide",
+        "species-2719d76dbda0"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -7428,7 +8224,8 @@
       "type": "trip",
       "words": 135,
       "sources": [
-        "global-ie-if"
+        "global-ie-if",
+        "species-9f478379c671"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -7443,7 +8240,8 @@
       "type": "trip",
       "words": 141,
       "sources": [
-        "global-ie-if"
+        "global-ie-if",
+        "species-9f478379c671"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -7458,7 +8256,8 @@
       "type": "trip",
       "words": 141,
       "sources": [
-        "global-ie-guide"
+        "global-ie-guide",
+        "species-dc0297765f1a"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -7473,7 +8272,9 @@
       "type": "trip",
       "words": 141,
       "sources": [
-        "global-ie-guide"
+        "global-ie-guide",
+        "species-dc0297765f1a",
+        "species-a3b1b1019d4b"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -7488,7 +8289,9 @@
       "type": "trip",
       "words": 142,
       "sources": [
-        "global-ie-guide"
+        "global-ie-guide",
+        "species-dc0297765f1a",
+        "species-89848a48094c"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -7503,7 +8306,8 @@
       "type": "trip",
       "words": 144,
       "sources": [
-        "global-uk-alba"
+        "global-uk-alba",
+        "species-8f676edb8c5f"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -7518,7 +8322,8 @@
       "type": "trip",
       "words": 149,
       "sources": [
-        "global-uk-alba"
+        "global-uk-alba",
+        "species-8f676edb8c5f"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -7533,7 +8338,8 @@
       "type": "trip",
       "words": 146,
       "sources": [
-        "global-uk-alba"
+        "global-uk-alba",
+        "species-8f676edb8c5f"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -7548,7 +8354,8 @@
       "type": "trip",
       "words": 145,
       "sources": [
-        "global-uk-alba"
+        "global-uk-alba",
+        "species-8f676edb8c5f"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -7563,7 +8370,8 @@
       "type": "trip",
       "words": 126,
       "sources": [
-        "global-uk-kennet"
+        "global-uk-kennet",
+        "species-5be469e41eac"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -7578,7 +8386,9 @@
       "type": "trip",
       "words": 128,
       "sources": [
-        "global-uk-wales"
+        "global-uk-wales",
+        "species-b1695c790782",
+        "species-8ed195641fb0"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -7593,7 +8403,8 @@
       "type": "trip",
       "words": 137,
       "sources": [
-        "global-nl-urban"
+        "global-nl-urban",
+        "species-19f223835df4"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -7608,7 +8419,8 @@
       "type": "trip",
       "words": 134,
       "sources": [
-        "global-nl-fries"
+        "global-nl-fries",
+        "species-54e759e83b64"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -7728,7 +8540,8 @@
       "type": "trip",
       "words": 131,
       "sources": [
-        "global-de-muritz"
+        "global-de-muritz",
+        "species-6b56f8f81852"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -7788,7 +8601,8 @@
       "type": "trip",
       "words": 141,
       "sources": [
-        "global-at-traun"
+        "global-at-traun",
+        "species-db98134fd83e"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -7803,7 +8617,8 @@
       "type": "trip",
       "words": 137,
       "sources": [
-        "global-at-seevilla"
+        "global-at-seevilla",
+        "species-d5c79ffd80a6"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -7818,7 +8633,8 @@
       "type": "trip",
       "words": 137,
       "sources": [
-        "global-mc-operator"
+        "global-mc-operator",
+        "species-f60a0726d6bd"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -7833,7 +8649,8 @@
       "type": "trip",
       "words": 138,
       "sources": [
-        "global-mc-operator"
+        "global-mc-operator",
+        "species-f60a0726d6bd"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -7878,7 +8695,8 @@
       "type": "trip",
       "words": 131,
       "sources": [
-        "global-es-leon"
+        "global-es-leon",
+        "species-5be469e41eac"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -8043,7 +8861,8 @@
       "type": "trip",
       "words": 137,
       "sources": [
-        "global-lv-guide"
+        "global-lv-guide",
+        "species-0bb2423068a0"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -8058,7 +8877,8 @@
       "type": "trip",
       "words": 135,
       "sources": [
-        "global-lv-guide"
+        "global-lv-guide",
+        "species-0bb2423068a0"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -8073,7 +8893,8 @@
       "type": "trip",
       "words": 139,
       "sources": [
-        "global-pl-guide"
+        "global-pl-guide",
+        "species-97cab4844372"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -8088,7 +8909,8 @@
       "type": "trip",
       "words": 140,
       "sources": [
-        "global-pl-guide"
+        "global-pl-guide",
+        "species-97cab4844372"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -8103,7 +8925,8 @@
       "type": "trip",
       "words": 138,
       "sources": [
-        "global-pl-guide"
+        "global-pl-guide",
+        "species-97cab4844372"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -8118,7 +8941,8 @@
       "type": "trip",
       "words": 151,
       "sources": [
-        "global-ba-rivers"
+        "global-ba-rivers",
+        "species-0cd5273fcb92"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -8148,7 +8972,8 @@
       "type": "trip",
       "words": 141,
       "sources": [
-        "global-hr-river"
+        "global-hr-river",
+        "species-6cd824d128fb"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -8163,7 +8988,8 @@
       "type": "trip",
       "words": 144,
       "sources": [
-        "global-hr-river"
+        "global-hr-river",
+        "species-6cd824d128fb"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -8178,7 +9004,8 @@
       "type": "trip",
       "words": 145,
       "sources": [
-        "global-hr-river"
+        "global-hr-river",
+        "species-6cd824d128fb"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -8193,7 +9020,8 @@
       "type": "trip",
       "words": 144,
       "sources": [
-        "global-me-local"
+        "global-me-local",
+        "species-d64ca2ac848d"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -8208,7 +9036,8 @@
       "type": "trip",
       "words": 129,
       "sources": [
-        "global-me-local"
+        "global-me-local",
+        "species-d64ca2ac848d"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -8223,7 +9052,8 @@
       "type": "trip",
       "words": 140,
       "sources": [
-        "global-me-lim"
+        "global-me-lim",
+        "species-bd8650ea77ab"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -8358,7 +9188,8 @@
       "type": "trip",
       "words": 135,
       "sources": [
-        "global-hu-carp"
+        "global-hu-carp",
+        "species-5f29ea76a813"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -8373,7 +9204,8 @@
       "type": "trip",
       "words": 136,
       "sources": [
-        "global-hu-carp"
+        "global-hu-carp",
+        "species-5f29ea76a813"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -8388,7 +9220,8 @@
       "type": "trip",
       "words": 133,
       "sources": [
-        "global-hu-carp"
+        "global-hu-carp",
+        "species-5f29ea76a813"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -8403,7 +9236,8 @@
       "type": "trip",
       "words": 133,
       "sources": [
-        "global-ro-holbina"
+        "global-ro-holbina",
+        "species-529c3f802246"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -8463,7 +9297,8 @@
       "type": "trip",
       "words": 140,
       "sources": [
-        "global-gr-crete"
+        "global-gr-crete",
+        "species-c63396c114eb"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -8478,7 +9313,8 @@
       "type": "trip",
       "words": 135,
       "sources": [
-        "global-gr-crete"
+        "global-gr-crete",
+        "species-c63396c114eb"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -8493,7 +9329,8 @@
       "type": "trip",
       "words": 137,
       "sources": [
-        "global-cy-local"
+        "global-cy-local",
+        "species-b42fcb365425"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -8508,7 +9345,8 @@
       "type": "trip",
       "words": 134,
       "sources": [
-        "global-mt-listing"
+        "global-mt-listing",
+        "species-ae99c76072ee"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -8538,7 +9376,8 @@
       "type": "trip",
       "words": 136,
       "sources": [
-        "global-ch-lungern"
+        "global-ch-lungern",
+        "species-eabb0e383201"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -8568,7 +9407,8 @@
       "type": "trip",
       "words": 132,
       "sources": [
-        "global-lt-guide"
+        "global-lt-guide",
+        "species-29ad9ff893ee"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -8583,7 +9423,8 @@
       "type": "trip",
       "words": 139,
       "sources": [
-        "global-lt-guide"
+        "global-lt-guide",
+        "species-29ad9ff893ee"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -8598,7 +9439,8 @@
       "type": "trip",
       "words": 145,
       "sources": [
-        "global-es-ebro"
+        "global-es-ebro",
+        "species-a9dffdf96d52"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -8613,7 +9455,8 @@
       "type": "trip",
       "words": 144,
       "sources": [
-        "global-si-local"
+        "global-si-local",
+        "species-958bfd9fa844"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -8628,7 +9471,8 @@
       "type": "trip",
       "words": 143,
       "sources": [
-        "global-si-local"
+        "global-si-local",
+        "species-958bfd9fa844"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -8643,7 +9487,8 @@
       "type": "trip",
       "words": 144,
       "sources": [
-        "global-si-local"
+        "global-si-local",
+        "species-958bfd9fa844"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -8658,7 +9503,8 @@
       "type": "trip",
       "words": 130,
       "sources": [
-        "global-angola"
+        "global-angola",
+        "species-06c778c52877"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -8673,7 +9519,8 @@
       "type": "trip",
       "words": 127,
       "sources": [
-        "global-angola"
+        "global-angola",
+        "species-06c778c52877"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -8688,7 +9535,8 @@
       "type": "trip",
       "words": 120,
       "sources": [
-        "global-cameroon"
+        "global-cameroon",
+        "species-d1f83a832756"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -8703,7 +9551,8 @@
       "type": "trip",
       "words": 124,
       "sources": [
-        "global-gabon"
+        "global-gabon",
+        "species-e89571f2871e"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -8718,7 +9567,8 @@
       "type": "trip",
       "words": 139,
       "sources": [
-        "global-port-gentil"
+        "global-port-gentil",
+        "species-2b7a9bcd0bf8"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -8733,7 +9583,8 @@
       "type": "trip",
       "words": 123,
       "sources": [
-        "global-guinea-bissau"
+        "global-guinea-bissau",
+        "species-3c227c5e603c"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -8748,7 +9599,8 @@
       "type": "trip",
       "words": 126,
       "sources": [
-        "global-madagascar"
+        "global-madagascar",
+        "species-6b29e835151b"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -8763,7 +9615,8 @@
       "type": "trip",
       "words": 126,
       "sources": [
-        "global-mozambique"
+        "global-mozambique",
+        "species-840890580f48"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -8778,7 +9631,8 @@
       "type": "trip",
       "words": 123,
       "sources": [
-        "global-mozambique"
+        "global-mozambique",
+        "species-840890580f48"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -8823,7 +9677,8 @@
       "type": "trip",
       "words": 121,
       "sources": [
-        "global-namibia"
+        "global-namibia",
+        "species-1c1abfd15dfc"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -8838,7 +9693,8 @@
       "type": "trip",
       "words": 123,
       "sources": [
-        "global-tanzania"
+        "global-tanzania",
+        "species-0ccafd0d9822"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -8853,7 +9709,8 @@
       "type": "trip",
       "words": 122,
       "sources": [
-        "global-tanzania"
+        "global-tanzania",
+        "species-0ccafd0d9822"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -8883,7 +9740,8 @@
       "type": "trip",
       "words": 136,
       "sources": [
-        "global-uganda"
+        "global-uganda",
+        "species-b5fc32f08d66"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -8898,7 +9756,8 @@
       "type": "trip",
       "words": 138,
       "sources": [
-        "global-uganda"
+        "global-uganda",
+        "species-b5fc32f08d66"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -8913,7 +9772,8 @@
       "type": "trip",
       "words": 137,
       "sources": [
-        "global-uganda"
+        "global-uganda",
+        "species-b5fc32f08d66"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -8928,7 +9788,8 @@
       "type": "trip",
       "words": 145,
       "sources": [
-        "global-murchison"
+        "global-murchison",
+        "species-214fe0aaf08a"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -8943,7 +9804,8 @@
       "type": "trip",
       "words": 136,
       "sources": [
-        "global-nxamaseri"
+        "global-nxamaseri",
+        "species-260a4618fb8a"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -8958,7 +9820,8 @@
       "type": "trip",
       "words": 135,
       "sources": [
-        "global-zimbabwe"
+        "global-zimbabwe",
+        "species-df3aef284781"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -8973,7 +9836,8 @@
       "type": "trip",
       "words": 142,
       "sources": [
-        "global-zimbabwe"
+        "global-zimbabwe",
+        "species-df3aef284781"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -8988,7 +9852,8 @@
       "type": "trip",
       "words": 144,
       "sources": [
-        "global-shackletons"
+        "global-shackletons",
+        "species-9576fcea123b"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -9003,7 +9868,8 @@
       "type": "trip",
       "words": 136,
       "sources": [
-        "global-nasser"
+        "global-nasser",
+        "species-087b5ec38e11"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -9018,7 +9884,8 @@
       "type": "trip",
       "words": 137,
       "sources": [
-        "global-binel"
+        "global-binel",
+        "species-7b2a384a8542"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -9078,7 +9945,8 @@
       "type": "trip",
       "words": 140,
       "sources": [
-        "global-sterkfontein"
+        "global-sterkfontein",
+        "species-0a5b4565381b"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -9108,7 +9976,8 @@
       "type": "trip",
       "words": 120,
       "sources": [
-        "global-argentina"
+        "global-argentina",
+        "species-59a565d2e420"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -9123,7 +9992,8 @@
       "type": "trip",
       "words": 118,
       "sources": [
-        "global-argentina"
+        "global-argentina",
+        "species-59a565d2e420"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -9138,7 +10008,8 @@
       "type": "trip",
       "words": 116,
       "sources": [
-        "global-argentina"
+        "global-argentina",
+        "species-59a565d2e420"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -9153,7 +10024,8 @@
       "type": "trip",
       "words": 113,
       "sources": [
-        "global-argentina"
+        "global-argentina",
+        "species-59a565d2e420"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -9168,7 +10040,8 @@
       "type": "trip",
       "words": 118,
       "sources": [
-        "global-argentina"
+        "global-argentina",
+        "species-59a565d2e420"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -9183,7 +10056,8 @@
       "type": "trip",
       "words": 108,
       "sources": [
-        "global-bolivia"
+        "global-bolivia",
+        "species-ed8fa04f5307"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -9198,7 +10072,8 @@
       "type": "trip",
       "words": 108,
       "sources": [
-        "global-bolivia"
+        "global-bolivia",
+        "species-ed8fa04f5307"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -9213,7 +10088,8 @@
       "type": "trip",
       "words": 106,
       "sources": [
-        "global-bolivia"
+        "global-bolivia",
+        "species-ed8fa04f5307"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -9228,7 +10104,8 @@
       "type": "trip",
       "words": 117,
       "sources": [
-        "global-chile"
+        "global-chile",
+        "species-52309ea23cd9"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -9243,7 +10120,8 @@
       "type": "trip",
       "words": 109,
       "sources": [
-        "global-colombia"
+        "global-colombia",
+        "species-5f415914071c"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -9258,7 +10136,8 @@
       "type": "trip",
       "words": 119,
       "sources": [
-        "global-colombia"
+        "global-colombia",
+        "species-5f415914071c"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -9288,7 +10167,8 @@
       "type": "trip",
       "words": 122,
       "sources": [
-        "global-amazon-programs"
+        "global-amazon-programs",
+        "species-595774ac63c4"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -9333,7 +10213,8 @@
       "type": "trip",
       "words": 125,
       "sources": [
-        "global-agua-boa"
+        "global-agua-boa",
+        "species-bb899629e93e"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -9348,7 +10229,8 @@
       "type": "trip",
       "words": 110,
       "sources": [
-        "global-rewa"
+        "global-rewa",
+        "species-8fd94ebafb77"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -9363,7 +10245,8 @@
       "type": "trip",
       "words": 108,
       "sources": [
-        "global-rewa"
+        "global-rewa",
+        "species-8fd94ebafb77"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -9378,7 +10261,8 @@
       "type": "trip",
       "words": 112,
       "sources": [
-        "global-rewa"
+        "global-rewa",
+        "species-8fd94ebafb77"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -9393,7 +10277,8 @@
       "type": "trip",
       "words": 119,
       "sources": [
-        "global-kabalebo"
+        "global-kabalebo",
+        "species-1edecfae9531"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -9408,7 +10293,8 @@
       "type": "trip",
       "words": 124,
       "sources": [
-        "global-wonotobo"
+        "global-wonotobo",
+        "species-76e7611ddbcd"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -9438,7 +10324,8 @@
       "type": "trip",
       "words": 131,
       "sources": [
-        "global-galapagos"
+        "global-galapagos",
+        "species-7e662de1cbb4"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -9453,7 +10340,8 @@
       "type": "trip",
       "words": 118,
       "sources": [
-        "global-peru-anglers"
+        "global-peru-anglers",
+        "species-f39bb283ee5d"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -9468,7 +10356,8 @@
       "type": "trip",
       "words": 130,
       "sources": [
-        "global-peru-anglers"
+        "global-peru-anglers",
+        "species-f39bb283ee5d"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -9483,7 +10372,8 @@
       "type": "trip",
       "words": 121,
       "sources": [
-        "global-peru-anglers"
+        "global-peru-anglers",
+        "species-f39bb283ee5d"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -9498,7 +10388,8 @@
       "type": "trip",
       "words": 129,
       "sources": [
-        "global-apurimac"
+        "global-apurimac",
+        "species-6bd36244b631"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -9528,7 +10419,8 @@
       "type": "trip",
       "words": 116,
       "sources": [
-        "global-uruguay"
+        "global-uruguay",
+        "species-bd82558282d0"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -9678,7 +10570,8 @@
       "type": "trip",
       "words": 128,
       "sources": [
-        "global-arenal"
+        "global-arenal",
+        "species-7eb1cf170c44"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -9693,7 +10586,8 @@
       "type": "trip",
       "words": 122,
       "sources": [
-        "global-los-suenos"
+        "global-los-suenos",
+        "species-9e07e1f7c2bb"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -9708,7 +10602,8 @@
       "type": "trip",
       "words": 113,
       "sources": [
-        "global-panama"
+        "global-panama",
+        "species-ac8ad878481b"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -9738,7 +10633,8 @@
       "type": "trip",
       "words": 122,
       "sources": [
-        "global-gatun"
+        "global-gatun",
+        "species-8ed06d96ca42"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -9753,7 +10649,8 @@
       "type": "trip",
       "words": 128,
       "sources": [
-        "global-bahamas-local"
+        "global-bahamas-local",
+        "species-6b4cbc6770bc"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -9768,7 +10665,8 @@
       "type": "trip",
       "words": 127,
       "sources": [
-        "global-bahamas-local"
+        "global-bahamas-local",
+        "species-6b4cbc6770bc"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -9783,7 +10681,10 @@
       "type": "trip",
       "words": 122,
       "sources": [
-        "global-bahamas-local"
+        "global-bahamas-local",
+        "species-6b4cbc6770bc",
+        "species-5ed0dc59abbd",
+        "species-69e9863dd1a3"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -9798,7 +10699,8 @@
       "type": "trip",
       "words": 125,
       "sources": [
-        "global-bahamas-local"
+        "global-bahamas-local",
+        "species-6b4cbc6770bc"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -9828,7 +10730,8 @@
       "type": "trip",
       "words": 126,
       "sources": [
-        "global-bahamas-flies"
+        "global-bahamas-flies",
+        "species-fc43cc110001"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -9843,7 +10746,9 @@
       "type": "trip",
       "words": 123,
       "sources": [
-        "global-bahamas-flies"
+        "global-bahamas-flies",
+        "species-fc43cc110001",
+        "species-5ed0dc59abbd"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -9858,7 +10763,8 @@
       "type": "trip",
       "words": 123,
       "sources": [
-        "global-bahamas-flies"
+        "global-bahamas-flies",
+        "species-fc43cc110001"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -9873,7 +10779,8 @@
       "type": "trip",
       "words": 132,
       "sources": [
-        "global-guatemala"
+        "global-guatemala",
+        "species-abc8356efd8d"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -9888,7 +10795,8 @@
       "type": "trip",
       "words": 117,
       "sources": [
-        "global-cuba"
+        "global-cuba",
+        "species-bcecd2337009"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -9903,7 +10811,8 @@
       "type": "trip",
       "words": 130,
       "sources": [
-        "global-cuba"
+        "global-cuba",
+        "species-bcecd2337009"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -9918,7 +10827,8 @@
       "type": "trip",
       "words": 131,
       "sources": [
-        "global-cuba"
+        "global-cuba",
+        "species-bcecd2337009"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -9933,7 +10843,8 @@
       "type": "trip",
       "words": 128,
       "sources": [
-        "global-cuba"
+        "global-cuba",
+        "species-bcecd2337009"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -9948,7 +10859,8 @@
       "type": "trip",
       "words": 130,
       "sources": [
-        "global-cuba"
+        "global-cuba",
+        "species-bcecd2337009"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -9963,7 +10875,8 @@
       "type": "trip",
       "words": 131,
       "sources": [
-        "global-nepal"
+        "global-nepal",
+        "species-08143485b5e6"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -9978,7 +10891,8 @@
       "type": "trip",
       "words": 132,
       "sources": [
-        "global-nepal"
+        "global-nepal",
+        "species-08143485b5e6"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -9993,7 +10907,8 @@
       "type": "trip",
       "words": 133,
       "sources": [
-        "global-nepal"
+        "global-nepal",
+        "species-08143485b5e6"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -10053,7 +10968,8 @@
       "type": "trip",
       "words": 130,
       "sources": [
-        "global-manas"
+        "global-manas",
+        "species-b3586e769095"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -10083,7 +10999,8 @@
       "type": "trip",
       "words": 127,
       "sources": [
-        "global-malaysia"
+        "global-malaysia",
+        "species-efe7a37520b8"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -10173,7 +11090,8 @@
       "type": "trip",
       "words": 122,
       "sources": [
-        "global-siargao"
+        "global-siargao",
+        "species-368f7b95ed18"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -10233,7 +11151,8 @@
       "type": "trip",
       "words": 126,
       "sources": [
-        "global-japan"
+        "global-japan",
+        "species-971174139baf"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -10278,7 +11197,8 @@
       "type": "trip",
       "words": 123,
       "sources": [
-        "global-biwa"
+        "global-biwa",
+        "species-30fdb8be5907"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -10383,7 +11303,8 @@
       "type": "trip",
       "words": 125,
       "sources": [
-        "global-jordan"
+        "global-jordan",
+        "species-98d42fcfe8fd"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -10413,7 +11334,8 @@
       "type": "trip",
       "words": 115,
       "sources": [
-        "global-andamans"
+        "global-andamans",
+        "species-88a59486ae14"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -10473,7 +11395,8 @@
       "type": "trip",
       "words": 122,
       "sources": [
-        "global-maldives"
+        "global-maldives",
+        "species-f3376fe2c719"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -10488,7 +11411,8 @@
       "type": "trip",
       "words": 111,
       "sources": [
-        "global-oman-local"
+        "global-oman-local",
+        "species-5be469e41eac"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -10518,7 +11442,8 @@
       "type": "trip",
       "words": 142,
       "sources": [
-        "global-thailand"
+        "global-thailand",
+        "species-1edf5f07a3cc"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -10638,7 +11563,8 @@
       "type": "trip",
       "words": 123,
       "sources": [
-        "global-vanuatu-oceanblue"
+        "global-vanuatu-oceanblue",
+        "species-20ea32331176"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -10668,7 +11594,8 @@
       "type": "trip",
       "words": 127,
       "sources": [
-        "global-solomons-papatura"
+        "global-solomons-papatura",
+        "species-b8b1e36c849f"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -10698,7 +11625,8 @@
       "type": "trip",
       "words": 126,
       "sources": [
-        "global-tonga"
+        "global-tonga",
+        "species-8f19ca9d1323"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -10713,7 +11641,8 @@
       "type": "trip",
       "words": 128,
       "sources": [
-        "global-samoa"
+        "global-samoa",
+        "species-f24cff9da114"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -10758,7 +11687,8 @@
       "type": "trip",
       "words": 130,
       "sources": [
-        "global-marshall"
+        "global-marshall",
+        "species-4098c075e2e2"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -10818,7 +11748,8 @@
       "type": "trip",
       "words": 131,
       "sources": [
-        "global-aitutaki"
+        "global-aitutaki",
+        "species-8a609bcf1f39"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -10833,7 +11764,8 @@
       "type": "trip",
       "words": 128,
       "sources": [
-        "global-niue"
+        "global-niue",
+        "species-58f89d44b8c7"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -10848,7 +11780,9 @@
       "type": "trip",
       "words": 118,
       "sources": [
-        "global-kiritimati"
+        "global-kiritimati",
+        "species-c6b063dcc7f4",
+        "species-e0af957bc9ef"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -10863,7 +11797,8 @@
       "type": "trip",
       "words": 115,
       "sources": [
-        "global-kiritimati"
+        "global-kiritimati",
+        "species-c6b063dcc7f4"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -10878,7 +11813,8 @@
       "type": "trip",
       "words": 117,
       "sources": [
-        "global-tabuaeran"
+        "global-tabuaeran",
+        "species-032a44d7c973"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -10893,7 +11829,8 @@
       "type": "trip",
       "words": 112,
       "sources": [
-        "global-png"
+        "global-png",
+        "species-8d3bc58d9518"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -10908,7 +11845,8 @@
       "type": "trip",
       "words": 127,
       "sources": [
-        "global-australia-snowy"
+        "global-australia-snowy",
+        "species-412431db1a47"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -10923,7 +11861,8 @@
       "type": "trip",
       "words": 131,
       "sources": [
-        "global-australia-snowy"
+        "global-australia-snowy",
+        "species-412431db1a47"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -10938,7 +11877,9 @@
       "type": "trip",
       "words": 136,
       "sources": [
-        "global-nz-tongariro"
+        "global-nz-tongariro",
+        "species-3e315666a4d7",
+        "species-de6f1aa4a4d5"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -10968,7 +11909,9 @@
       "type": "trip",
       "words": 128,
       "sources": [
-        "global-nz-taupo"
+        "global-nz-taupo",
+        "species-afc5d088819f",
+        "species-891178a8e0f2"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -10983,7 +11926,8 @@
       "type": "trip",
       "words": 128,
       "sources": [
-        "global-grenada"
+        "global-grenada",
+        "species-9e791cbec0df"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -11073,7 +12017,8 @@
       "type": "trip",
       "words": 127,
       "sources": [
-        "global-dominican"
+        "global-dominican",
+        "species-a06377c5b822"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -11088,7 +12033,8 @@
       "type": "trip",
       "words": 113,
       "sources": [
-        "global-mauritius"
+        "global-mauritius",
+        "species-9f5320035563"
       ],
       "review": {
         "status": "source-linked-brief",
@@ -11165,7 +12111,10 @@
       "sources": [
         "Saeb942c3ec",
         "Sc391fb56a4",
-        "S4fb98f910b"
+        "S4fb98f910b",
+        "species-aeb942c3ec14",
+        "species-c391fb56a412",
+        "species-4fb98f910b9d"
       ],
       "review": {
         "checked": "2026-11-10",
@@ -11181,7 +12130,10 @@
       "sources": [
         "S13a8d30a07",
         "S4e46eb9dc8",
-        "S4e77dd69a0"
+        "S4e77dd69a0",
+        "species-13a8d30a07e2",
+        "species-4e46eb9dc812",
+        "species-4e77dd69a04f"
       ],
       "review": {
         "checked": "2026-11-10",

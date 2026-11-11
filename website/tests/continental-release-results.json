@@ -1,11 +1,11 @@
 {
   "passed": true,
   "structuralAssertions": 816,
-  "routes": 1670,
+  "routes": 2434,
   "redirectRoutes": 519,
-  "nonRedirectPages": 1151,
+  "nonRedirectPages": 1915,
   "tripProfiles": 798,
-  "productionSitemapURLsInNonpublicTest": 154,
+  "productionSitemapURLsInNonpublicTest": 918,
   "sourceVerifiedTripPagesEligibleForSearch": 38,
   "checks": [
     "796 retained profiles plus two source-checked local-lingo gaps",
@@ -17,7 +17,7 @@
     "CA: 13 distinct state/province collections",
     "MX: 15 distinct state/province collections",
     "Route exists: situk-coho-river",
-    "All 479 unverified frameworks keep candidate species, evidence and months unconfirmed",
+    "Preparation frameworks publish only individually sourced targets and keep unverified seasons and access unconfirmed",
     "All 798 trips have exactly four scoped gear decisions and valid reference links",
     "Every index-eligible trip has attributed evidence and a source-checked tier",
     "Every legacy redirect resolves directly to a live generated route, with no chains",
