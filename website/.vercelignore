@@ -9,3 +9,6 @@ config.json
 *.zip
 *Preview.html
 *preview.html
+
+research/atlas-geocode-*.json
+client/node_modules

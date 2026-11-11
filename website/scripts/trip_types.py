@@ -57,7 +57,7 @@ def planner_data(data, types):
             data['gear'].append({
                 'id': 'type-' + kind['slug'] + '-' + str(i),
                 'name': ('Personal kit ' if i <= len(kind['bring']) else 'Guide provision ') + str(i if i <= len(kind['bring']) else i-len(kind['bring'])),
-                'group': kind['name'] + ' · trip-type preset', 'why': text,
+                'group': kind['name'] + ' · local-classic preset', 'why': text,
                 'query': '', 'essential': True, 'scope': 'tripType',
                 'tripTypeId': kind['slug'], 'qty': 'one', 'confirm': True,
                 'decision': 'confirm',
@@ -146,7 +146,7 @@ def install(pages, root, origin, add, trips, types):
             body += '<div class="type-note">' + listing(kind['uncertainties']) + '</div>'
         body += '<p>A seasonal pattern, a provider schedule, and a legal opening are different facts. Confirm the current rule for the exact water and trip category.</p><h3>Official rules and permissions</h3><div class="type-citations">' + ''.join(link(r['url'], r['label']) for r in kind['regulations']) + '</div></section>'
         body += '<section id="method"><h2>How it is fished.</h2><p class="type-method">' + E(kind['method']) + '.</p>' + paragraphs(kind['fishingNotes']) + '<p><b>Planning format:</b> ' + E(kind['format']) + '. Confirm the actual duration with the provider.</p></section>'
-        body += '<section id="kit"><span class="eyebrow">EDITORIAL PREPARATION ADVICE</span><h2>What to bring.</h2>' + listing(kind['bring']) + '<a class="btn" href="' + E(planner_url(kind), quote=True) + '">Customize this trip-type preset ↗</a></section>'
+        body += '<section id="kit"><span class="eyebrow">EDITORIAL PREPARATION ADVICE</span><h2>What to bring.</h2>' + listing(kind['bring']) + '<a class="btn" href="' + E(planner_url(kind), quote=True) + '">Customize this local-classic preset ↗</a></section>'
         body += '<section id="guide"><h2>What a guide provides.</h2><p>No provider inclusions are confirmed here. Use this trip-specific list to ask what the actual guide supplies. Mark an item “Guide provides” only after confirmation.</p>' + listing(kind['guideChecklist']) + '</section>'
         body += '<section id="local-terms"><h2>Words from this water.</h2><dl class="type-terms">' + ''.join('<div><dt>' + link('/glossary/#' + term_id(g['term']), g['term']) + '</dt><dd>' + E(g['definition']) + '</dd></div>' for g in kind['glossary']) + '</dl></section>'
         body += '<section id="faq"><h2>Before you go.</h2>' + ''.join('<details class="type-faq"><summary>' + E(f['question']) + '</summary><p>' + E(f['answer']) + '</p></details>' for f in kind['faq']) + '</section>'
@@ -170,10 +170,10 @@ def install(pages, root, origin, add, trips, types):
         if not trip['tripTypeIds']:
             continue
         path = trip['canonicalPath']
-        module = '<section class="wrap profile-trip-types" aria-label="Local trip types"><span class="eyebrow">ASK FOR IT BY NAME</span><h2>Local trip types.</h2><p>These linked guides explain the local names and their sources. The destination profile keeps its own research status.</p>'
+        module = '<section class="wrap profile-trip-types" aria-label="Local classics"><span class="eyebrow">ASK FOR IT BY NAME</span><h2>Local classics.</h2><p>These linked guides explain the local names and their sources. The destination profile keeps its own research status.</p>'
         for slug in trip['tripTypeIds']:
             kind = by_slug[slug]
-            module += '<div><h3>' + link(type_path(kind), kind['name']) + '</h3><p>' + E(' · '.join(s['local_name'] + ' — ' + s['standard_name'] for s in kind['species'])) + '</p><p><b>Also called:</b> ' + E(' · '.join(kind['aliases'])) + '</p>' + link(planner_url(kind, trip['id']), 'Open this trip-type preset') + '</div>'
+            module += '<div><h3>' + link(type_path(kind), kind['name']) + '</h3><p>' + E(' · '.join(s['local_name'] + ' — ' + s['standard_name'] for s in kind['species'])) + '</p><p><b>Also called:</b> ' + E(' · '.join(kind['aliases'])) + '</p>' + link(planner_url(kind, trip['id']), 'Open this local-classic preset') + '</div>'
         module += '</section>'
         marker = '<section class="section article-section">'
         assert marker in pages[path]['body'], path
@@ -196,4 +196,4 @@ def install(pages, root, origin, add, trips, types):
     body += '</dl><p id="glossary-empty" hidden>No matching term. Try another local name.</p></section><script src="/assets/trip-types.js" defer></script>'
     add('/glossary/', 'Local fishing lingo glossary | Castward', 'Learn bull reds, specks, tailing, slam, drum run, albie blitz, and more local fishing terms. Each definition links to its trip type.', body, 'glossary')
     pages['/glossary/']['modified'] = '2026-11-10'
-    pages['/guides/']['body'] += '<section class="wrap section type-guide-link"><span class="eyebrow">LOCAL KNOWLEDGE</span><h2>Know the name. Plan the trip.</h2><p>Connect a local phrase to its species, place, season, and equipment plan.</p>' + link('/trip-types/', 'Explore local trip types') + ' ' + link('/glossary/', 'Read the fishing glossary') + '</section>'
+    pages['/guides/']['body'] += '<section class="wrap section type-guide-link"><span class="eyebrow">LOCAL KNOWLEDGE</span><h2>Know the name. Plan the trip.</h2><p>Connect a local phrase to its species, place, season, and equipment plan.</p>' + link('/trip-types/', 'Explore local classics') + ' ' + link('/glossary/', 'Read the fishing glossary') + '</section>'

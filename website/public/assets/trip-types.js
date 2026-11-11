@@ -13,6 +13,7 @@
     };
     input.addEventListener('input',update);update();
   }
-  setup('type-search','[data-type-card]','type-count','type-empty','trip types');
+  setup('style-search','[data-style-trip]','style-count','style-empty','destinations');
+  setup('type-search','[data-type-card]','type-count','type-empty','local classics');
   setup('glossary-search','[data-glossary-term]','glossary-count','glossary-empty','local terms');
 })();

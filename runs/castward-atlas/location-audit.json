@@ -1,0 +1,47 @@
+{
+  "destinations": 801,
+  "byPrecision": {
+    "region": 192,
+    "place-area": 602,
+    "country": 7
+  },
+  "bySource": {
+    "OpenStreetMap": 786,
+    "USGS": 1,
+    "Wikidata": 1,
+    "GeoNames": 9,
+    "Pessacq, Lozano and Muz\u00f3n, Agrion 20(2), 2015": 1,
+    "Retained authored catalog": 3
+  },
+  "countryReferences": [
+    {
+      "id": "mongolia-taimen",
+      "label": "Mongolia"
+    },
+    {
+      "id": "g-monaco-monaco-offshore",
+      "label": "Monaco"
+    },
+    {
+      "id": "g-monaco-monaco-coastal-night-fishing",
+      "label": "Monaco"
+    },
+    {
+      "id": "g-lithuania-lithuanian-baltic-coast",
+      "label": "Lithuania"
+    },
+    {
+      "id": "norway-summer-sea",
+      "label": "Norway"
+    },
+    {
+      "id": "g-gambia-barracuda-lodge-jetty",
+      "label": "The Gambia"
+    },
+    {
+      "id": "g-singapore-singapore-charter-waters",
+      "label": "Singapore"
+    }
+  ],
+  "unresolved": []
+}

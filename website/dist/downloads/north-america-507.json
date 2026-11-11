@@ -191,6 +191,12 @@
       "indexEligible": true,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "river-float",
+        "bank-wading",
+        "river-fishing"
+      ],
       "planningGuide": {
         "destination": "situk-coho-river",
         "title": "Situk River salmon fishing: bank access or a full float",
@@ -713,6 +719,9 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "bottom-combo"
+      ],
       "speciesIds": [
         "pacific-cod",
         "halibut",
@@ -1031,6 +1040,12 @@
         "Kenai coho",
         "silvers"
       ],
+      "tripStyleIds": [
+        "fly-fishing",
+        "river-float",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [
         "coho-salmon",
         "rainbow-trout",
@@ -1326,6 +1341,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [
         "coho-salmon",
         "rainbow-trout",
@@ -1603,6 +1623,12 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "river-float",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [
         "pink-salmon",
         "rainbow-trout",
@@ -1837,6 +1863,10 @@
       "indexEligible": true,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "offshore-bluewater",
+        "bottom-combo"
+      ],
       "speciesIds": [
         "pacific-halibut"
       ],
@@ -2046,6 +2076,12 @@
       "indexEligible": true,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "river-float",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [
         "arctic-grayling",
         "coho-salmon"
@@ -2277,6 +2313,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [
         "arctic-grayling",
         "northern-pike",
@@ -2550,6 +2591,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [
         "rainbow-trout",
         "dolly-varden",
@@ -2810,6 +2856,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "remote-lodge",
+        "river-fishing"
+      ],
       "speciesIds": [
         "rainbow-trout",
         "dolly-varden",
@@ -3081,6 +3132,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "remote-lodge",
+        "river-fishing"
+      ],
       "speciesIds": [
         "chinook-salmon",
         "coho-salmon"
@@ -3299,6 +3355,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "remote-lodge",
+        "river-fishing"
+      ],
       "speciesIds": [
         "arctic-grayling",
         "coho-salmon",
@@ -3535,6 +3596,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "remote-lodge",
+        "river-fishing"
+      ],
       "speciesIds": [
         "rainbow-trout",
         "chinook-salmon"
@@ -3744,6 +3810,12 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "river-float",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [
         "rainbow-trout",
         "sockeye-salmon"
@@ -3960,6 +4032,9 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "bottom-combo"
+      ],
       "speciesIds": [
         "rockfish",
         "black-rockfish",
@@ -4227,6 +4302,9 @@
         "rockfish",
         "combo",
         "silvers"
+      ],
+      "tripStyleIds": [
+        "bottom-combo"
       ],
       "speciesIds": [
         "halibut",
@@ -4525,6 +4603,9 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "bottom-combo"
+      ],
       "speciesIds": [
         "coho-salmon",
         "halibut",
@@ -4841,6 +4922,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "remote-lodge",
+        "river-fishing"
+      ],
       "speciesIds": [
         "pink-salmon",
         "dolly-varden",
@@ -5138,6 +5224,9 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "ice-fishing"
+      ],
       "speciesIds": [
         "arctic-char",
         "chinook-salmon",
@@ -5397,6 +5486,9 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "bottom-combo"
+      ],
       "speciesIds": [
         "coho-salmon",
         "pink-salmon",
@@ -5672,6 +5764,10 @@
         "blue marlin",
         "grander"
       ],
+      "tripStyleIds": [
+        "offshore-bluewater",
+        "big-game"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -5843,6 +5939,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "inshore-flats",
+        "fly-fishing",
+        "sight-fishing"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -6001,6 +6102,9 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "offshore-bluewater"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -6171,6 +6275,9 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "offshore-bluewater"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -6343,6 +6450,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [
         "rainbow-trout"
       ],
@@ -6534,6 +6646,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "surf-pier",
+        "bank-wading"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -6718,6 +6834,9 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "bottom-combo"
+      ],
       "speciesIds": [
         "coho-salmon",
         "halibut"
@@ -6927,6 +7046,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [
         "trout",
         "chinook-salmon"
@@ -7157,6 +7281,12 @@
         "kings",
         "silvers",
         "Buoy 10"
+      ],
+      "tripStyleIds": [
+        "fly-fishing",
+        "river-float",
+        "bank-wading",
+        "river-fishing"
       ],
       "speciesIds": [
         "sockeye-salmon",
@@ -7399,6 +7529,12 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "river-float",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -7564,6 +7700,12 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "river-float",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -7740,6 +7882,12 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "river-float",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [
         "coho-salmon"
       ],
@@ -7942,6 +8090,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [
         "cutthroat-trout",
         "largemouth-bass",
@@ -8195,6 +8347,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [
         "lake-trout",
         "sockeye-salmon",
@@ -8477,6 +8633,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [
         "walleye",
         "smallmouth-bass",
@@ -8766,6 +8926,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [
         "white-sturgeon",
         "walleye"
@@ -8972,6 +9136,9 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "offshore-bluewater"
+      ],
       "speciesIds": [
         "salmon",
         "albacore"
@@ -9160,6 +9327,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -9348,6 +9520,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [
         "rainbow-trout",
         "chinook-salmon",
@@ -9575,6 +9752,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "river-float",
+        "river-fishing"
+      ],
       "speciesIds": [
         "salmon",
         "rainbow-trout"
@@ -9793,6 +9974,9 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "river-fishing"
+      ],
       "speciesIds": [
         "salmon",
         "rainbow-trout",
@@ -10034,6 +10218,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [
         "trout",
         "salmon",
@@ -10251,6 +10440,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [
         "bull-trout"
       ],
@@ -10445,6 +10639,12 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "river-float",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [
         "chinook-salmon",
         "rainbow-trout",
@@ -10672,6 +10872,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [
         "trout",
         "rainbow-trout",
@@ -10901,6 +11105,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [
         "largemouth-bass",
         "rainbow-trout",
@@ -11107,6 +11315,9 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "offshore-bluewater"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -11276,6 +11487,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "surf-pier",
+        "bank-wading"
+      ],
       "speciesIds": [
         "surfperch"
       ],
@@ -11468,6 +11683,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "river-float",
+        "river-fishing"
+      ],
       "speciesIds": [
         "rainbow-trout"
       ],
@@ -11651,6 +11870,11 @@
         "bluefin",
         "night jigging",
         "Pacific bluefin"
+      ],
+      "tripStyleIds": [
+        "offshore-bluewater",
+        "night-fishing",
+        "big-game"
       ],
       "speciesIds": [],
       "speciesEvidence": [],
@@ -11847,6 +12071,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [
         "rainbow-trout",
         "sea-trout",
@@ -12076,6 +12305,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [
         "rainbow-trout",
         "sea-trout"
@@ -12283,6 +12517,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [
         "trout"
       ],
@@ -12477,6 +12716,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "river-float",
+        "river-fishing"
+      ],
       "speciesIds": [
         "salmon",
         "rainbow-trout"
@@ -12680,6 +12923,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [
         "white-sturgeon"
       ],
@@ -12854,6 +13101,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -13029,6 +13280,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [
         "bass"
       ],
@@ -13204,6 +13459,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -13381,6 +13640,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [
         "trout"
       ],
@@ -13558,6 +13822,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -13730,6 +13999,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -13899,6 +14173,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "inshore-flats",
+        "fly-fishing"
+      ],
       "speciesIds": [
         "striped-bass"
       ],
@@ -14073,6 +14351,9 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "bottom-combo"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -14246,6 +14527,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "surf-pier",
+        "bank-wading"
+      ],
       "speciesIds": [
         "california-flounder"
       ],
@@ -14437,6 +14722,11 @@
         "ladder fishing",
         "Lahontan cutthroat"
       ],
+      "tripStyleIds": [
+        "fly-fishing",
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [
         "cutthroat-trout"
       ],
@@ -14619,6 +14909,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [
         "striped-bass"
       ],
@@ -14815,6 +15109,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [
         "yellow-perch",
         "trout",
@@ -15023,6 +15321,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -15203,6 +15506,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [
         "rainbow-trout"
       ],
@@ -15424,6 +15732,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [
         "largemouth-bass",
         "smallmouth-bass",
@@ -15707,6 +16019,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [
         "yellow-bass",
         "smallmouth-bass"
@@ -15905,6 +16221,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [
         "rainbow-trout"
       ],
@@ -16087,6 +16407,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [
         "rainbow-trout"
       ],
@@ -16278,6 +16603,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [
         "rainbow-trout",
         "sea-trout",
@@ -16486,6 +16816,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -16651,6 +16986,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -16842,6 +17182,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [
         "sockeye-salmon",
         "trout",
@@ -17081,6 +17425,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [
         "white-bass",
         "blue-catfish"
@@ -17273,6 +17621,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -17458,6 +17811,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [
         "cutthroat-trout",
         "rainbow-trout",
@@ -17676,6 +18034,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [
         "trout"
       ],
@@ -17863,6 +18226,12 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "river-float",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [
         "smallmouth-bass"
       ],
@@ -18039,6 +18408,12 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "river-float",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -18249,6 +18624,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [
         "perch",
         "smallmouth-bass",
@@ -18538,6 +18917,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -18713,6 +19096,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -18910,6 +19298,12 @@
         "browns",
         "salmonfly",
         "hatch"
+      ],
+      "tripStyleIds": [
+        "fly-fishing",
+        "river-float",
+        "bank-wading",
+        "river-fishing"
       ],
       "speciesIds": [
         "sea-trout",
@@ -19120,6 +19514,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -19307,6 +19706,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [
         "rainbow-trout",
         "sea-trout",
@@ -19532,6 +19936,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [
         "sea-trout",
         "rainbow-trout"
@@ -19753,6 +20162,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [
         "smallmouth-bass",
         "walleye",
@@ -20015,6 +20429,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [
         "cutthroat-trout",
         "trout",
@@ -20233,6 +20652,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [
         "cutthroat-trout"
       ],
@@ -20425,6 +20849,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [
         "cutthroat-trout",
         "lake-trout"
@@ -20626,6 +21054,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [
         "sea-trout"
       ],
@@ -20817,6 +21250,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [
         "rainbow-trout",
         "sea-trout"
@@ -21009,6 +21447,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -21190,6 +21633,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [
         "cutthroat-trout",
         "rainbow-trout"
@@ -21381,6 +21829,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -21562,6 +22015,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [
         "rainbow-trout",
         "sea-trout"
@@ -21764,6 +22222,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [
         "rainbow-trout"
       ],
@@ -21941,6 +22404,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -22117,6 +22585,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [
         "trout"
       ],
@@ -22328,6 +22801,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [
         "lake-trout",
         "burbot",
@@ -22605,6 +23082,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [
         "trout",
         "sea-trout",
@@ -22821,6 +23303,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [
         "trout"
       ],
@@ -23012,6 +23499,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [
         "sea-trout",
         "rainbow-trout"
@@ -23213,6 +23705,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [
         "rainbow-trout"
       ],
@@ -23390,6 +23887,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -23567,6 +24069,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [
         "sea-trout",
         "rainbow-trout"
@@ -23760,6 +24267,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "remote-lodge",
+        "river-fishing"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -23924,6 +24436,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -24116,6 +24633,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [
         "lake-trout",
         "sea-trout",
@@ -24360,6 +24881,9 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "ice-fishing"
+      ],
       "speciesIds": [
         "rainbow-trout"
       ],
@@ -24535,6 +25059,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -24708,6 +25237,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [
         "sea-trout"
       ],
@@ -24893,6 +25427,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [
         "cutthroat-trout"
       ],
@@ -25078,6 +25617,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [
         "sockeye-salmon"
       ],
@@ -25277,6 +25820,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [
         "lake-trout",
         "sockeye-salmon",
@@ -25498,6 +26045,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [
         "striped-bass",
         "bluegill"
@@ -25704,6 +26255,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [
         "brook-trout",
         "cutthroat-trout"
@@ -25920,6 +26476,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [
         "walleye",
         "yellow-perch",
@@ -26175,6 +26735,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [
         "walleye",
         "smallmouth-bass",
@@ -26435,6 +26999,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [
         "channel-catfish",
         "walleye",
@@ -26663,6 +27232,9 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "ice-fishing"
+      ],
       "speciesIds": [
         "walleye",
         "perch",
@@ -26892,6 +27464,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [
         "chinook-salmon",
         "walleye"
@@ -27083,6 +27659,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -27262,6 +27843,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [
         "smallmouth-bass",
         "walleye"
@@ -27481,6 +28066,9 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "ice-fishing"
+      ],
       "speciesIds": [
         "black-crappie",
         "bluegill",
@@ -27737,6 +28325,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [
         "largemouth-bass",
         "channel-catfish",
@@ -27953,6 +28545,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [
         "trout"
       ],
@@ -28140,6 +28737,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [
         "catfish",
         "white-bass"
@@ -28341,6 +28942,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [
         "walleye"
       ],
@@ -28517,6 +29123,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -28691,6 +29301,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -28920,6 +29534,10 @@
         "Texoma striper guide",
         "stripers",
         "live shad"
+      ],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
       ],
       "speciesIds": [
         "largemouth-bass",
@@ -29232,6 +29850,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [
         "sea-trout"
       ],
@@ -29428,6 +30051,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [
         "largemouth-bass",
         "crappie",
@@ -29645,6 +30272,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [
         "crappie"
       ],
@@ -29835,6 +30466,12 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "river-float",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [
         "largemouth-bass",
         "channel-catfish"
@@ -30080,6 +30717,11 @@
         "walleye",
         "sauger",
         "sleeper house"
+      ],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "ice-fishing",
+        "bank-wading"
       ],
       "speciesIds": [
         "walleye",
@@ -30377,6 +31019,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "remote-lodge",
+        "river-fishing"
+      ],
       "speciesIds": [
         "lake-trout"
       ],
@@ -30583,6 +31230,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [
         "walleye",
         "smallmouth-bass",
@@ -30860,6 +31511,9 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir"
+      ],
       "speciesIds": [
         "walleye",
         "yellow-perch",
@@ -31147,6 +31801,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [
         "yellow-perch",
         "northern-pike"
@@ -31377,6 +32035,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [
         "muskellunge",
         "bluegill",
@@ -31653,6 +32315,9 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "river-fishing"
+      ],
       "speciesIds": [
         "lake-sturgeon",
         "walleye",
@@ -31917,6 +32582,9 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir"
+      ],
       "speciesIds": [
         "brook-trout",
         "lake-trout",
@@ -32200,6 +32868,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [
         "sea-trout"
       ],
@@ -32390,6 +33063,9 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "ice-fishing"
+      ],
       "speciesIds": [
         "walleye",
         "northern-pike"
@@ -32593,6 +33269,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [
         "perch"
       ],
@@ -32770,6 +33450,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -32939,6 +33624,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -33104,6 +33793,9 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -33279,6 +33971,9 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -33445,6 +34140,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -33603,6 +34302,9 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -33775,6 +34477,9 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -33970,6 +34675,12 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "river-float",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [
         "sea-trout",
         "rainbow-trout",
@@ -34182,6 +34893,9 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "ice-fishing"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -34347,6 +35061,9 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -34536,6 +35253,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [
         "rainbow-trout",
         "sea-trout",
@@ -34764,6 +35486,12 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "river-float",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [
         "brook-trout",
         "smallmouth-bass",
@@ -34991,6 +35719,12 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "river-float",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [
         "rainbow-trout",
         "sea-trout",
@@ -35222,6 +35956,12 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "river-float",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [
         "chinook-salmon",
         "walleye",
@@ -35430,6 +36170,9 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -35614,6 +36357,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [
         "yellow-perch"
       ],
@@ -35825,6 +36572,11 @@
         "walleye",
         "vertical jigging",
         "spring walleye"
+      ],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading",
+        "river-fishing"
       ],
       "speciesIds": [
         "walleye",
@@ -36080,6 +36832,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [
         "sea-trout",
         "rainbow-trout",
@@ -36338,6 +37094,9 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir"
+      ],
       "speciesIds": [
         "lake-trout",
         "trout",
@@ -36584,6 +37343,9 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "ice-fishing"
+      ],
       "speciesIds": [
         "crappie",
         "largemouth-bass",
@@ -36858,6 +37620,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -37040,6 +37806,9 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir"
+      ],
       "speciesIds": [
         "chinook-salmon",
         "burbot"
@@ -37272,6 +38041,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [
         "yellow-bass",
         "largemouth-bass",
@@ -37582,6 +38355,12 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "river-float",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [
         "smallmouth-bass",
         "channel-catfish",
@@ -37900,6 +38679,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [
         "crappie",
         "bluegill",
@@ -38206,6 +38989,9 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir"
+      ],
       "speciesIds": [
         "sea-trout",
         "rainbow-trout",
@@ -38413,6 +39199,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -38597,6 +39387,12 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "river-float",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [
         "trout",
         "salmon"
@@ -38854,6 +39650,12 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "river-float",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [
         "spotted-bass",
         "flathead-catfish",
@@ -39173,6 +39975,10 @@
         "eyes",
         "walleye chop"
       ],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [
         "walleye",
         "yellow-perch"
@@ -39369,6 +40175,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [
         "sea-trout"
       ],
@@ -39555,6 +40366,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [
         "walleye",
         "white-bass"
@@ -39759,6 +40574,12 @@
         "steelhead",
         "lake-run"
       ],
+      "tripStyleIds": [
+        "fly-fishing",
+        "river-float",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [
         "rainbow-trout"
       ],
@@ -39958,6 +40779,9 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir"
+      ],
       "speciesIds": [
         "smallmouth-bass",
         "largemouth-bass",
@@ -40239,6 +41063,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [
         "largemouth-bass",
         "smallmouth-bass",
@@ -40543,6 +41372,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [
         "crappie",
         "bluegill",
@@ -40770,6 +41603,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [
         "sea-trout",
         "rainbow-trout",
@@ -40993,6 +41831,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [
         "walleye",
         "sauger"
@@ -41201,6 +42043,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [
         "rainbow-trout",
         "sea-trout"
@@ -41438,6 +42285,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [
         "bluegill",
         "white-crappie",
@@ -41777,6 +42628,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [
         "redear-sunfish",
         "largemouth-bass",
@@ -42118,6 +42973,12 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "river-float",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [
         "trout",
         "smallmouth-bass",
@@ -42361,6 +43222,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [
         "blue-catfish",
         "flathead-catfish",
@@ -42633,6 +43498,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [
         "salmon",
         "lake-trout"
@@ -42851,6 +43720,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [
         "brook-trout",
         "sea-trout",
@@ -43077,6 +43951,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "inshore-flats",
+        "fly-fishing"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -43267,6 +44145,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [
         "salmon",
         "brook-trout"
@@ -43460,6 +44342,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -43638,6 +44525,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [
         "northern-pike",
         "black-crappie"
@@ -43844,6 +44735,9 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "ice-fishing"
+      ],
       "speciesIds": [
         "salmon",
         "lake-trout"
@@ -44062,6 +44956,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [
         "salmon",
         "smallmouth-bass",
@@ -44275,6 +45173,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -44424,6 +45327,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "inshore-flats",
+        "fly-fishing"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -44570,6 +45477,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -44765,6 +45677,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [
         "bluegill",
         "largemouth-bass",
@@ -45068,6 +45984,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [
         "sea-trout",
         "brook-trout"
@@ -45285,6 +46206,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [
         "sea-trout",
         "yellow-perch",
@@ -45532,6 +46458,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [
         "yellow-perch",
         "rock-bass",
@@ -45757,6 +46687,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "inshore-flats",
+        "fly-fishing"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -45944,6 +46878,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [
         "brook-trout",
         "rainbow-trout",
@@ -46168,6 +47107,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "surf-pier",
+        "bank-wading"
+      ],
       "speciesIds": [
         "tautog",
         "striped-bass",
@@ -46389,6 +47332,9 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "offshore-bluewater"
+      ],
       "speciesIds": [
         "haddock",
         "halibut"
@@ -46594,6 +47540,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "surf-pier",
+        "bank-wading"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -46781,6 +47731,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [
         "trout",
         "atlantic-salmon"
@@ -46983,6 +47937,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "inshore-flats",
+        "fly-fishing"
+      ],
       "speciesIds": [
         "striped-bass"
       ],
@@ -47159,6 +48117,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "inshore-flats",
+        "fly-fishing"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -47338,6 +48300,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [
         "trout"
       ],
@@ -47528,6 +48495,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [
         "trout",
         "sea-trout"
@@ -47745,6 +48717,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "inshore-flats",
+        "fly-fishing"
+      ],
       "speciesIds": [
         "striped-bass",
         "summer-flounder",
@@ -47977,6 +48953,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [
         "smallmouth-bass"
       ],
@@ -48185,6 +49166,12 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "river-float",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [
         "chinook-salmon",
         "coho-salmon",
@@ -48425,6 +49412,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -48593,6 +49585,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -48776,6 +49773,9 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir"
+      ],
       "speciesIds": [
         "lake-trout",
         "sea-trout",
@@ -48997,6 +49997,11 @@
         "albies",
         "blues"
       ],
+      "tripStyleIds": [
+        "inshore-flats",
+        "surf-pier",
+        "fly-fishing"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -49184,6 +50189,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [
         "sea-trout",
         "rainbow-trout"
@@ -49463,6 +50473,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [
         "largemouth-bass",
         "walleye",
@@ -49886,6 +50900,9 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir"
+      ],
       "speciesIds": [
         "smallmouth-bass"
       ],
@@ -50072,6 +51089,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -50258,6 +51279,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "inshore-flats",
+        "fly-fishing"
+      ],
       "speciesIds": [
         "striped-bass",
         "white-catfish",
@@ -50467,6 +51492,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "inshore-flats",
+        "fly-fishing"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -50639,6 +51668,12 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "river-float",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -50807,6 +51842,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "surf-pier",
+        "bank-wading"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -50982,6 +52021,9 @@
         "tog",
         "blackfishing"
       ],
+      "tripStyleIds": [
+        "bottom-combo"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -51152,6 +52194,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -51311,6 +52358,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -51460,6 +52512,12 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "river-float",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -51610,6 +52668,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -51758,6 +52821,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -51909,6 +52977,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -52056,6 +53129,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -52211,6 +53288,12 @@
         "steelhead",
         "lake-run"
       ],
+      "tripStyleIds": [
+        "fly-fishing",
+        "river-float",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -52359,6 +53442,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -52505,6 +53592,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "surf-pier",
+        "bank-wading"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -52645,6 +53736,9 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "bottom-combo"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -52787,6 +53881,12 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "river-float",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -52937,6 +54037,10 @@
         "light-tackle rockfish",
         "rockfish",
         "live-lining"
+      ],
+      "tripStyleIds": [
+        "inshore-flats",
+        "fly-fishing"
       ],
       "speciesIds": [],
       "speciesEvidence": [],
@@ -53130,6 +54234,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [
         "trout",
         "sea-trout",
@@ -53336,6 +54445,9 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "offshore-bluewater"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -53557,6 +54669,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [
         "northern-pike",
         "largemouth-bass",
@@ -53924,6 +55040,12 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "river-float",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [
         "smallmouth-bass",
         "largemouth-bass",
@@ -54181,6 +55303,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "inshore-flats",
+        "fly-fishing"
+      ],
       "speciesIds": [
         "blue-catfish",
         "striped-bass"
@@ -54404,6 +55530,12 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "river-float",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [
         "channel-catfish",
         "walleye",
@@ -54660,6 +55792,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [
         "rainbow-trout",
         "sea-trout"
@@ -54852,6 +55989,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -55053,6 +56195,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [
         "catfish",
         "striped-bass",
@@ -55338,6 +56484,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [
         "largemouth-bass",
         "striped-bass"
@@ -55576,6 +56727,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [
         "bass",
         "crappie",
@@ -55878,6 +57033,12 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "river-float",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [
         "walleye",
         "smallmouth-bass"
@@ -56071,6 +57232,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -56244,6 +57410,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [
         "trout"
       ],
@@ -56461,6 +57632,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [
         "bluegill",
         "flathead-catfish",
@@ -56759,6 +57934,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [
         "trout",
         "sea-trout",
@@ -57021,6 +58201,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [
         "largemouth-bass",
         "catfish",
@@ -57287,6 +58471,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [
         "smallmouth-bass"
       ],
@@ -57493,6 +58681,9 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir"
+      ],
       "speciesIds": [
         "largemouth-bass",
         "crappie",
@@ -57780,6 +58971,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [
         "largemouth-bass",
         "channel-catfish",
@@ -58070,6 +59265,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -58228,6 +59428,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -58400,6 +59604,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [
         "trout"
       ],
@@ -58591,6 +59800,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [
         "trout",
         "brook-trout"
@@ -58827,6 +60041,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [
         "spotted-bass",
         "white-crappie",
@@ -59139,6 +60357,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [
         "crappie",
         "largemouth-bass",
@@ -59361,6 +60583,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -59572,6 +60799,10 @@
         "big drum",
         "drum run",
         "drum"
+      ],
+      "tripStyleIds": [
+        "surf-pier",
+        "bank-wading"
       ],
       "planningGuide": {
         "destination": "cape-hatteras-surf",
@@ -59962,6 +61193,10 @@
       ],
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "offshore-bluewater",
+        "big-game"
+      ],
       "planningGuide": {
         "destination": "na-us-nc-002",
         "title": "Outer Banks offshore charters: Oregon Inlet trip guide",
@@ -60370,6 +61605,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "inshore-flats",
+        "fly-fishing"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -60514,6 +61753,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "inshore-flats",
+        "fly-fishing",
+        "kayak"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -60658,6 +61902,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -60810,6 +62059,11 @@
         "DH",
         "stocking"
       ],
+      "tripStyleIds": [
+        "fly-fishing",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -60953,6 +62207,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -61096,6 +62354,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -61240,6 +62502,12 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "river-float",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -61385,6 +62653,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "inshore-flats",
+        "fly-fishing"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -61590,6 +62862,11 @@
         "flounder",
         "slam",
         "tailing"
+      ],
+      "tripStyleIds": [
+        "inshore-flats",
+        "fly-fishing",
+        "multi-species-slams"
       ],
       "planningGuide": {
         "destination": "na-us-sc-001",
@@ -62005,6 +63282,11 @@
         "slam",
         "tailing"
       ],
+      "tripStyleIds": [
+        "inshore-flats",
+        "fly-fishing",
+        "multi-species-slams"
+      ],
       "speciesIds": [
         "red-drum"
       ],
@@ -62227,6 +63509,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [
         "catfish",
         "crappie",
@@ -62524,6 +63810,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [
         "striped-bass"
       ],
@@ -62720,6 +64011,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [
         "bass",
         "black-crappie",
@@ -62937,6 +64232,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "surf-pier",
+        "bank-wading"
+      ],
       "speciesIds": [
         "king-mackerel"
       ],
@@ -63160,6 +64459,10 @@
       ],
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "planningGuide": {
         "destination": "na-us-ga-001",
         "title": "Lake Lanier fishing: choose bass, stripers or the bank",
@@ -63595,6 +64898,11 @@
       ],
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [
         "rainbow-trout",
         "sea-trout"
@@ -63797,6 +65105,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "inshore-flats",
+        "fly-fishing"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -63965,6 +65277,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "inshore-flats",
+        "fly-fishing",
+        "sight-fishing"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -64136,6 +65453,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -64314,6 +65635,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [
         "trout"
       ],
@@ -64596,6 +65922,12 @@
         "permit",
         "tarpon",
         "flats"
+      ],
+      "tripStyleIds": [
+        "inshore-flats",
+        "fly-fishing",
+        "sight-fishing",
+        "multi-species-slams"
       ],
       "planningGuide": {
         "destination": "na-us-fl-001",
@@ -65182,6 +66514,10 @@
         "Big O",
         "wild shiner"
       ],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "planningGuide": {
         "destination": "na-us-fl-002",
         "title": "Lake Okeechobee bass fishing: choose your launch and trip",
@@ -65606,6 +66942,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "inshore-flats",
+        "fly-fishing"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -65767,6 +67107,9 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "offshore-bluewater"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -65926,6 +67269,9 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "bottom-combo"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -66100,6 +67446,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "inshore-flats",
+        "fly-fishing"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -66274,6 +67624,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "inshore-flats",
+        "fly-fishing"
+      ],
       "speciesIds": [
         "bonefish-group"
       ],
@@ -66475,6 +67829,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "inshore-flats",
+        "fly-fishing"
+      ],
       "speciesIds": [
         "red-drum",
         "tarpon",
@@ -66708,6 +68066,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "inshore-flats",
+        "fly-fishing"
+      ],
       "speciesIds": [
         "red-drum"
       ],
@@ -66893,6 +68255,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "inshore-flats",
+        "fly-fishing"
+      ],
       "speciesIds": [
         "spotted-seatrout"
       ],
@@ -67114,6 +68480,10 @@
         "Pass tarpon",
         "silver king",
         "pass tarpon"
+      ],
+      "tripStyleIds": [
+        "inshore-flats",
+        "fly-fishing"
       ],
       "speciesIds": [
         "tarpon",
@@ -67386,6 +68756,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "inshore-flats",
+        "fly-fishing"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -67547,6 +68921,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "inshore-flats",
+        "fly-fishing"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -67713,6 +69091,9 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "bottom-combo"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -67881,6 +69262,10 @@
         "red snapper",
         "bottom fishing"
       ],
+      "tripStyleIds": [
+        "offshore-bluewater",
+        "bottom-combo"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -68044,6 +69429,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "inshore-flats",
+        "fly-fishing"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -68210,6 +69599,12 @@
         "Miami peacocks",
         "peacock bass",
         "canal trip"
+      ],
+      "tripStyleIds": [
+        "fly-fishing",
+        "lake-reservoir",
+        "bank-wading",
+        "river-fishing"
       ],
       "speciesIds": [],
       "speciesEvidence": [],
@@ -68404,6 +69799,12 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "river-float",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [
         "largemouth-bass",
         "redear-sunfish",
@@ -68697,6 +70098,12 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "river-float",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [
         "catfish",
         "suwannee-bass",
@@ -68924,6 +70331,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "surf-pier",
+        "bank-wading"
+      ],
       "speciesIds": [
         "red-drum",
         "sea-trout-group",
@@ -69176,6 +70587,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [
         "bass",
         "bream",
@@ -69480,6 +70895,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "inshore-flats",
+        "fly-fishing"
+      ],
       "speciesIds": [
         "spotted-seatrout",
         "red-drum"
@@ -69672,6 +71091,9 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "offshore-bluewater"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -69857,6 +71279,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [
         "largemouth-bass",
         "smallmouth-bass",
@@ -70106,6 +71532,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [
         "bass",
         "bream",
@@ -70340,6 +71770,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [
         "rainbow-trout"
       ],
@@ -70517,6 +71952,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "inshore-flats",
+        "fly-fishing"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -70727,6 +72166,10 @@
         "Trophy crappie",
         "spider rigging",
         "slabs"
+      ],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
       ],
       "speciesIds": [
         "crappie",
@@ -70993,6 +72436,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [
         "crappie"
       ],
@@ -71193,6 +72640,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [
         "crappie",
         "bream",
@@ -71423,6 +72874,11 @@
         "marsh bulls",
         "bull reds"
       ],
+      "tripStyleIds": [
+        "inshore-flats",
+        "fly-fishing",
+        "sight-fishing"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -71577,6 +73033,9 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "offshore-bluewater"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -71729,6 +73188,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "inshore-flats",
+        "fly-fishing"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -71886,6 +73349,10 @@
         "marsh bulls",
         "bull reds"
       ],
+      "tripStyleIds": [
+        "inshore-flats",
+        "fly-fishing"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -72040,6 +73507,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "surf-pier",
+        "bank-wading"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -72191,6 +73662,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "inshore-flats",
+        "fly-fishing"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -72344,6 +73819,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -72494,6 +73973,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -72643,6 +74126,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -72793,6 +74280,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "inshore-flats",
+        "fly-fishing"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -72958,6 +74449,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [
         "trout",
         "walleye"
@@ -73157,6 +74653,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [
         "trout"
       ],
@@ -73333,6 +74834,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -73494,6 +75000,12 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "river-float",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -73680,6 +75192,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [
         "bass",
         "crappie",
@@ -73897,6 +75413,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [
         "smallmouth-bass"
       ],
@@ -74119,6 +75639,11 @@
       ],
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "inshore-flats",
+        "fly-fishing",
+        "kayak"
+      ],
       "planningGuide": {
         "destination": "na-us-tx-001",
         "title": "Port Aransas fishing: bay charter or kayak trip?",
@@ -74602,6 +76127,10 @@
       ],
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "planningGuide": {
         "destination": "na-us-tx-002",
         "title": "Lake Fork bass fishing: seasons, ramps and guide prep",
@@ -75100,6 +76629,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "inshore-flats",
+        "fly-fishing"
+      ],
       "speciesIds": [
         "spotted-seatrout",
         "red-drum",
@@ -75371,6 +76904,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "inshore-flats",
+        "fly-fishing"
+      ],
       "speciesIds": [
         "spotted-seatrout",
         "red-drum"
@@ -75573,6 +77110,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "inshore-flats",
+        "fly-fishing"
+      ],
       "speciesIds": [
         "black-drum"
       ],
@@ -75748,6 +77289,9 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "offshore-bluewater"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -75930,6 +77474,12 @@
         "redfish",
         "trout",
         "flounder"
+      ],
+      "tripStyleIds": [
+        "inshore-flats",
+        "fly-fishing",
+        "sight-fishing",
+        "multi-species-slams"
       ],
       "speciesIds": [],
       "speciesEvidence": [],
@@ -76131,6 +77681,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [
         "sea-trout",
         "guadalupe-bass",
@@ -76396,6 +77951,12 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "river-float",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [
         "guadalupe-bass",
         "channel-catfish",
@@ -76677,6 +78238,10 @@
         "Texoma striper guide",
         "stripers",
         "live shad"
+      ],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
       ],
       "speciesIds": [
         "striped-bass",
@@ -77014,6 +78579,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [
         "largemouth-bass",
         "white-bass",
@@ -77297,6 +78866,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [
         "largemouth-bass",
         "crappie",
@@ -77534,6 +79107,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -77703,6 +79280,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "surf-pier",
+        "bank-wading"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -77881,6 +79462,9 @@
         "sturgeon",
         "white sturgeon",
         "release trip"
+      ],
+      "tripStyleIds": [
+        "river-fishing"
       ],
       "speciesIds": [
         "white-sturgeon"
@@ -78112,6 +79696,12 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "river-float",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [
         "salmon"
       ],
@@ -78300,6 +79890,9 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "bottom-combo"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -78532,6 +80125,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [
         "chinook-salmon",
         "chum-salmon",
@@ -78776,6 +80374,9 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "bottom-combo"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -78939,6 +80540,9 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "bottom-combo"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -79135,6 +80739,9 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "bottom-combo"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -79330,6 +80937,9 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "bottom-combo"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -79540,6 +81150,9 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "bottom-combo"
+      ],
       "speciesIds": [
         "chinook-salmon",
         "coho-salmon"
@@ -79780,6 +81393,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [
         "salmon",
         "trout"
@@ -80018,6 +81636,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [
         "cutthroat-trout"
       ],
@@ -80247,6 +81870,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [
         "rainbow-trout",
         "sockeye-salmon"
@@ -80490,6 +82117,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [
         "sockeye-salmon",
         "bull-trout",
@@ -80759,6 +82390,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "remote-lodge",
+        "river-fishing"
+      ],
       "speciesIds": [
         "sockeye-salmon",
         "rainbow-trout",
@@ -81018,6 +82654,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [
         "sockeye-salmon",
         "rainbow-trout"
@@ -81236,6 +82876,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -81427,6 +83071,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -81627,6 +83275,12 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "river-float",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [
         "salmon"
       ],
@@ -81826,6 +83480,12 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "river-float",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [
         "salmon",
         "rainbow-trout"
@@ -82070,6 +83730,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "remote-lodge",
+        "river-fishing"
+      ],
       "speciesIds": [
         "rainbow-trout"
       ],
@@ -82276,6 +83941,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -82475,6 +84145,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -82677,6 +84352,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [
         "cutthroat-trout"
       ],
@@ -82888,6 +84568,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -83084,6 +84769,9 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "river-fishing"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -83289,6 +84977,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [
         "walleye"
       ],
@@ -83500,6 +85192,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -83718,6 +85414,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [
         "lake-trout",
         "walleye",
@@ -83969,6 +85669,9 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -84163,6 +85866,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -84354,6 +86062,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -84556,6 +86268,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [
         "walleye"
       ],
@@ -84755,6 +86471,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "remote-lodge",
+        "river-fishing"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -84938,6 +86659,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "remote-lodge",
+        "river-fishing"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -85136,6 +86862,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "remote-lodge",
+        "river-fishing"
+      ],
       "speciesIds": [
         "northern-pike",
         "lake-trout"
@@ -85352,6 +87083,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "remote-lodge",
+        "river-fishing"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -85533,6 +87269,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -85727,6 +87467,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "remote-lodge",
+        "river-fishing"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -85946,6 +87691,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [
         "walleye",
         "sauger",
@@ -86255,6 +88005,9 @@
         "greenback",
         "greenbacks"
       ],
+      "tripStyleIds": [
+        "ice-fishing"
+      ],
       "speciesIds": [
         "walleye"
       ],
@@ -86474,6 +88227,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -86673,6 +88430,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [
         "walleye"
       ],
@@ -86884,6 +88645,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -87077,6 +88842,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -87284,6 +89053,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [
         "smallmouth-bass"
       ],
@@ -87495,6 +89268,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "remote-lodge",
+        "river-fishing"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -87679,6 +89457,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "remote-lodge",
+        "river-fishing"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -87858,6 +89641,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "remote-lodge",
+        "river-fishing"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -88053,6 +89841,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -88262,6 +90054,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [
         "bass"
       ],
@@ -88491,6 +90287,9 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "ice-fishing"
+      ],
       "speciesIds": [
         "yellow-perch",
         "smallmouth-bass"
@@ -88731,6 +90530,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [
         "yellow-perch"
       ],
@@ -88944,6 +90747,9 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -89173,6 +90979,12 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "river-float",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [
         "trout",
         "salmon"
@@ -89371,6 +91183,9 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -89588,6 +91403,9 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir"
+      ],
       "speciesIds": [
         "walleye",
         "sauger",
@@ -89871,6 +91689,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "remote-lodge",
+        "river-fishing"
+      ],
       "speciesIds": [
         "walleye"
       ],
@@ -90095,6 +91918,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "remote-lodge",
+        "river-fishing"
+      ],
       "speciesIds": [
         "trout"
       ],
@@ -90325,6 +92153,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [
         "brook-trout"
       ],
@@ -90552,6 +92385,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "remote-lodge",
+        "river-fishing"
+      ],
       "speciesIds": [
         "lake-trout",
         "brook-trout"
@@ -90793,6 +92631,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [
         "black-crappie"
       ],
@@ -90999,6 +92841,9 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -91192,6 +93037,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -91400,6 +93249,9 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir"
+      ],
       "speciesIds": [
         "smallmouth-bass",
         "muskellunge",
@@ -91672,6 +93524,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [
         "sea-trout",
         "rainbow-trout",
@@ -91961,6 +93818,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [
         "walleye"
       ],
@@ -92165,6 +94026,12 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "river-float",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [
         "atlantic-salmon"
       ],
@@ -92362,6 +94229,12 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "river-float",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -92543,6 +94416,12 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "river-float",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -92719,6 +94598,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "remote-lodge",
+        "river-fishing"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -92901,6 +94785,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "remote-lodge",
+        "river-fishing"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -93109,6 +94998,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [
         "burbot",
         "walleye",
@@ -93342,6 +95235,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "remote-lodge",
+        "river-fishing"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -93529,6 +95427,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "remote-lodge",
+        "river-fishing"
+      ],
       "speciesIds": [
         "walleye"
       ],
@@ -93720,6 +95623,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -93907,6 +95814,9 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -94090,6 +96000,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "inshore-flats",
+        "fly-fishing"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -94273,6 +96187,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -94464,6 +96382,12 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "river-float",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [
         "atlantic-salmon"
       ],
@@ -94678,6 +96602,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "remote-lodge",
+        "river-fishing"
+      ],
       "speciesIds": [
         "atlantic-salmon"
       ],
@@ -94889,6 +96818,9 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir"
+      ],
       "speciesIds": [
         "smallmouth-bass"
       ],
@@ -95095,6 +97027,9 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "bottom-combo"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -95284,6 +97219,12 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "river-float",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [
         "atlantic-salmon"
       ],
@@ -95499,6 +97440,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "inshore-flats",
+        "fly-fishing"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -95691,6 +97636,9 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "bottom-combo"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -95885,6 +97833,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "inshore-flats",
+        "fly-fishing"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -96085,6 +98037,12 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "river-float",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -96276,6 +98234,12 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "river-float",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [
         "atlantic-salmon"
       ],
@@ -96480,6 +98444,12 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "river-float",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [
         "atlantic-salmon"
       ],
@@ -96680,6 +98650,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "remote-lodge",
+        "river-fishing"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -96866,6 +98841,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "remote-lodge",
+        "river-fishing"
+      ],
       "speciesIds": [
         "brook-trout"
       ],
@@ -97060,6 +99040,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "remote-lodge",
+        "river-fishing"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -97241,6 +99226,10 @@
         "PEI giant tuna",
         "bluefin",
         "catch-and-release charter"
+      ],
+      "tripStyleIds": [
+        "offshore-bluewater",
+        "big-game"
       ],
       "speciesIds": [
         "tuna"
@@ -97453,6 +99442,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [
         "atlantic-salmon"
       ],
@@ -97647,6 +99641,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "remote-lodge",
+        "river-fishing"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -97832,6 +99831,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -98054,6 +100058,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "remote-lodge"
+      ],
       "speciesIds": [
         "lake-trout-group",
         "arctic-grayling"
@@ -98282,6 +100290,9 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir"
+      ],
       "speciesIds": [
         "lake-trout-group",
         "arctic-grayling",
@@ -98502,6 +100513,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "remote-lodge",
+        "river-fishing"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -98688,6 +100704,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "fly-fishing",
+        "bank-wading",
+        "river-fishing"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -98857,6 +100878,9 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "offshore-bluewater"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -99048,6 +101072,9 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "bottom-combo"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -99225,6 +101252,9 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "bottom-combo"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -99412,6 +101442,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "inshore-flats",
+        "fly-fishing"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -99585,6 +101619,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "remote-lodge",
+        "river-fishing"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -99786,6 +101825,10 @@
         "Cabo marlin",
         "marlin rayado"
       ],
+      "tripStyleIds": [
+        "offshore-bluewater",
+        "big-game"
+      ],
       "speciesIds": [
         "blue-marlin"
       ],
@@ -99986,6 +102029,9 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "offshore-bluewater"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -100181,6 +102227,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "inshore-flats",
+        "fly-fishing"
+      ],
       "speciesIds": [
         "mahi-mahi"
       ],
@@ -100403,6 +102453,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "inshore-flats",
+        "fly-fishing",
+        "sight-fishing"
+      ],
       "speciesIds": [
         "swordfish"
       ],
@@ -100613,6 +102668,9 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "offshore-bluewater"
+      ],
       "speciesIds": [
         "blue-marlin"
       ],
@@ -100815,6 +102873,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "inshore-flats",
+        "fly-fishing"
+      ],
       "speciesIds": [
         "mahi-mahi"
       ],
@@ -101016,6 +103078,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "inshore-flats",
+        "fly-fishing"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -101208,6 +103274,10 @@
         "bait ball",
         "Mag Bay"
       ],
+      "tripStyleIds": [
+        "offshore-bluewater",
+        "big-game"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -101373,6 +103443,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "surf-pier",
+        "bank-wading"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -101559,6 +103633,11 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "inshore-flats",
+        "fly-fishing",
+        "kayak"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -101730,6 +103809,9 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "bottom-combo"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -101909,6 +103991,9 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "offshore-bluewater"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -102086,6 +104171,9 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "bottom-combo"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -102272,6 +104360,10 @@
         "trophy bass",
         "lobina"
       ],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -102434,6 +104526,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -102602,6 +104698,9 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "offshore-bluewater"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -102790,6 +104889,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "inshore-flats",
+        "fly-fishing"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -102962,6 +105065,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "inshore-flats",
+        "fly-fishing"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -103130,6 +105237,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "inshore-flats",
+        "fly-fishing"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -103299,6 +105410,9 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "offshore-bluewater"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -103468,6 +105582,9 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "offshore-bluewater"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -103655,6 +105772,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "inshore-flats",
+        "fly-fishing"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -103839,6 +105960,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -104015,6 +106140,9 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "offshore-bluewater"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -104199,6 +106327,9 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "offshore-bluewater"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -104373,6 +106504,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "inshore-flats",
+        "fly-fishing"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -104537,6 +106672,9 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "offshore-bluewater"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -104715,6 +106853,9 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "offshore-bluewater"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -104892,6 +107033,9 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "offshore-bluewater"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -105067,6 +107211,9 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "offshore-bluewater"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -105289,6 +107436,12 @@
         "permit",
         "tarpon",
         "palometa"
+      ],
+      "tripStyleIds": [
+        "inshore-flats",
+        "fly-fishing",
+        "sight-fishing",
+        "multi-species-slams"
       ],
       "speciesIds": [
         "bonefish-group",
@@ -105518,6 +107671,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "inshore-flats",
+        "fly-fishing"
+      ],
       "speciesIds": [
         "permit-group"
       ],
@@ -105701,6 +107858,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "inshore-flats",
+        "fly-fishing"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -105869,6 +108030,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "inshore-flats",
+        "fly-fishing"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -106052,6 +108217,9 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "offshore-bluewater"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -106234,6 +108402,9 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "offshore-bluewater"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -106408,6 +108579,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "inshore-flats",
+        "fly-fishing"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -106592,6 +108767,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "inshore-flats",
+        "fly-fishing"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -106778,6 +108957,9 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "bottom-combo"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -106952,6 +109134,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "inshore-flats",
+        "fly-fishing"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -107131,6 +109317,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "inshore-flats",
+        "fly-fishing"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -107307,6 +109497,9 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "offshore-bluewater"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -107496,6 +109689,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "inshore-flats",
+        "fly-fishing"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -107662,6 +109859,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "lake-reservoir",
+        "bank-wading"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -107829,6 +110030,10 @@
       "indexEligible": false,
       "tripTypeIds": [],
       "tripTypeNames": [],
+      "tripStyleIds": [
+        "inshore-flats",
+        "fly-fishing"
+      ],
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {

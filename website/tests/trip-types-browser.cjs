@@ -6,7 +6,7 @@ const assert=require('node:assert/strict');
 const T=require('../src/trip-types.json').types;
 const W=require('../src/world.json');
 const root=path.resolve(__dirname,'..');
-const out=path.join(root,'runs/castward-lingo');
+const out=process.env.TRIP_TYPES_TEST_OUTPUT||path.join(root,'runs/castward-lingo');fs.mkdirSync(out,{recursive:true});
 const base=process.env.TEST_ORIGIN||'http://127.0.0.1:8766';
 (async()=>{
   const browser=await chromium.launch({headless:true});
@@ -16,7 +16,7 @@ const base=process.env.TEST_ORIGIN||'http://127.0.0.1:8766';
   const go=async url=>{await page.goto(base+url,{waitUntil:'domcontentloaded'});await page.waitForFunction(()=>!!window.AtlasEngine);};
   const ok=(value,label)=>{assert.ok(value,label);checks.push(label);};
   try{
-    await go('/trip-types/');
+    await go('/local-classics/');
     const reject=page.getByRole('button',{name:'Reject non-essential'});if(await reject.isVisible())await reject.click();
     await page.locator('.type-index-image img').evaluate(img=>img.decode());
     await page.screenshot({path:path.join(out,'index-1440.png')});
@@ -50,7 +50,7 @@ const base=process.env.TEST_ORIGIN||'http://127.0.0.1:8766';
     await page.locator('.type-landscape img').evaluate(img=>img.decode());
     await page.screenshot({path:path.join(out,'lowcountry-1440.png')});
     ok(await page.locator('video').count()===1,'Matching Charleston reel appears on the Lowcountry hub');
-    await page.getByRole('link',{name:'Customize this trip-type preset'}).click();
+    await page.getByRole('link',{name:'Customize this local-classic preset'}).click();
     await page.waitForSelector('.type-preset-note');
     ok(await page.locator('#plan-trip-type').inputValue()==='lowcountry-inshore-grand-slam','Hub opens the correct named planner preset');
     ok((await page.locator('#inquiry-text').innerText()).includes('Lowcountry Inshore Grand Slam'),'Guide inquiry retains the local trip name');
@@ -74,7 +74,7 @@ const base=process.env.TEST_ORIGIN||'http://127.0.0.1:8766';
     await go('/glossary/');await page.locator('#glossary-search').fill('albie blitz');
     ok(await page.locator('[data-glossary-term]:visible').count()===1,'Glossary term filter works');
     ok((await page.locator('[data-glossary-term]:visible a').first().getAttribute('href')).includes('montauk-fall-run'),'Albie blitz links to its supported Montauk type');
-    const routes=['/trip-types/','/glossary/',...T.map(t=>'/trip-types/'+t.slug+'/'),'/trips/?type=texas-slam','/plan/?destination=na-us-mn-001&tripType=lake-of-the-woods-sleeper-house'];
+    const routes=['/trip-types/','/local-classics/','/glossary/',...T.map(t=>'/trip-types/'+t.slug+'/'),'/trips/?type=texas-slam','/plan/?destination=na-us-mn-001&tripType=lake-of-the-woods-sleeper-house'];
     for(const width of [1440,390]){
       await page.setViewportSize({width,height:width===390?844:1000});
       for(const route of routes){
@@ -84,10 +84,10 @@ const base=process.env.TEST_ORIGIN||'http://127.0.0.1:8766';
         if(dims.scroll>dims.width+1)overflow.push({route,width,scroll:dims.scroll});
       }
       if(width===390){
-        await go('/trip-types/');await page.locator('.type-index-image img').evaluate(img=>img.decode());
+        await go('/local-classics/');await page.locator('.type-index-image img').evaluate(img=>img.decode());
         await page.screenshot({path:path.join(out,'index-390.png')});
         await page.getByRole('button',{name:'Toggle navigation'}).click();
-        ok(await page.locator('#site-nav').getByRole('link',{name:'Trip types',exact:true}).isVisible(),'Mobile navigation exposes Trip types');
+        ok(await page.locator('#site-nav').getByRole('link',{name:'Trip styles',exact:true}).isVisible(),'Mobile navigation exposes Trip styles');
         await go('/trip-types/lowcountry-inshore-grand-slam/');await page.screenshot({path:path.join(out,'lowcountry-390.png')});
         await page.locator('#species').scrollIntoViewIfNeeded();await page.screenshot({path:path.join(out,'lowcountry-species-390.png')});
         await go('/glossary/');await page.screenshot({path:path.join(out,'glossary-390.png')});

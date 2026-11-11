@@ -10,6 +10,10 @@ from urllib.parse import urlencode
 WORLD=json.loads((ROOT/'src/world.json').read_text())
 TRIPS=WORLD['trips']; HABITATS=WORLD['habitats']; SOURCES=WORLD['sources']
 TRIP_TYPES=WORLD.get('tripTypes',[])
+DATA['tripStyles']=WORLD['tripStyles']
+original_styles={'yakutat':['river-fishing','bottom-combo','bank-wading'], 'florida-keys':['inshore-flats','offshore-bluewater'], 'bozeman':['river-fishing','fly-fishing','bank-wading']}
+for d in DATA['destinations']:
+    d['tripStyleIds']=original_styles[d['id']]
 TBY={t['id']:t for t in TRIPS}; HBY={h['name']:h for h in HABITATS}
 REGIONS=['North America','South America','Europe','Africa','Asia','Oceania']
 DISPLAY_TRIPS=[]
@@ -38,7 +42,7 @@ for t in TRIPS:
     DATA['destinations'].append({'id':t['id'],'name':t['title'].split(':')[0], 'region':t['country'], 'species':t['fish'],
       'styles':[access_map[x] for x in t['access']], 'defaultStyle':access_map[t['access'][0]],'climate':t['climate'],
       'tripProfile':t['id'],'technicalGear':True,'guideUrl':t.get('canonicalPath','/trips/'+t['id']+'/'), 'seasonNote':t['season'],
-      'seasonWindows':t.get('seasonWindows',[]),'tripTypeIds':t.get('tripTypeIds',[]),
+      'seasonWindows':t.get('seasonWindows',[]),'tripTypeIds':t.get('tripTypeIds',[]),'tripStyleIds':t['tripStyleIds'],
       'operator':{'name':s['title'],'type':'Research source' if t['sourceIds'] else 'Research pending','url':s['url'],'note':'A research resource, not a booked trip or Atlas operator partnership. Confirm all inclusions and availability independently.'}})
     for i,k in enumerate(t['kit']):
         DATA['gear'].append({'id':t['id']+'-kit-'+str(i+1),'name':k['name'],
@@ -46,13 +50,16 @@ for t in TRIPS:
           'query':k.get('query',''),'essential':k['decision']!='optional','scope':'trip','tripId':t['id'],'qty':'one',
           'confirm':k['decision']=='confirm','decision':k['decision']})
 
+from atlas_locations import enrich as enrich_atlas_locations
+enrich_atlas_locations(DATA, ROOT)
+
 # Populate existing planner and sharing forms with all trip profiles.
 options='<optgroup label="Original broad trip profiles">'+''.join(f'<option value="{d["id"]}">{E(d["name"])}</option>' for d in DATA['destinations'][:3])+'</optgroup>'
 for r in REGIONS:
     options+=f'<optgroup label="{E(r)}">'+''.join(f'<option value="{t["id"]}">{E(t["title"].split(":")[0])} · {E(t["country"])}</option>' for t in TRIPS if t['region']==r)+'</optgroup>'
 for p in pages.values():
     p['body']=re.sub(r'(<select\b[^>]*\bname="destination"[^>]*>).*?(</select>)',lambda m:m.group(1)+options+m.group(2),p['body'],flags=re.S)
-pages['/plan/']['body']=pages['/plan/']['body'].replace('<div class="form-field"><label for="plan-date">', '<div class="form-field"><label for="plan-trip-type">Local trip type</label><select id="plan-trip-type" name="tripType"><option value="">General destination plan</option></select></div><div class="form-field"><label for="plan-date">', 1)
+pages['/plan/']['body']=pages['/plan/']['body'].replace('<div class="form-field"><label for="plan-date">', '<div class="form-field"><label for="plan-trip-type">Local classic</label><select id="plan-trip-type" name="tripType"><option value="">General destination plan</option></select></div><div class="form-field"><label for="plan-date">', 1)
 
 HEADER=f'<a class="skip" href="#main">Skip to content</a><header class="site-header"><div class="wrap header-inner">{BRAND}<nav class="nav" id="site-nav" aria-label="Main navigation"><a href="/trips/">Explore trips</a><a href="/countries/">Countries</a><a href="/environments/">Types of water</a><a href="/species/">Find your fish</a><a href="/research/">Research desk</a></nav><div class="header-action"><span class="edition">GLOBAL EDITION / 003</span><a class="btn small" href="/plan/">My fishing plan ↗</a><button class="mobile-menu" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="site-nav" data-action="menu">☰</button></div></div></header>'
 FOOTER=f'<footer class="site-footer"><div class="wrap"><div class="footer-top"><div>{BRAND}<p class="footer-desc">Different waters. Different seasons. Different ways to fish. Research first; buy what your actual trip needs.</p></div><div class="footer-links"><a href="/trips/">Explore trips</a><a href="/environments/">Environment guides</a><a href="/guides/">Preparation library</a><a href="/seasons/">Seasonal evidence</a><a href="/for-guides/">For operators</a><a href="/research/">Sources &amp; quality</a><a href="/about/">Release notes</a></div></div><div class="footer-bottom"><span>© 2026 Fishing Atlas · Working name · Edition 003</span><span>{len(TRIPS)} trip profiles · {len(COUNTRIES)} country / jurisdiction collections · Coverage is not exhaustive.</span><span>Map illustrations are decorative, not navigation charts.</span></div></div></footer><div id="toast" class="toast" role="status" aria-live="polite"></div>'
@@ -98,7 +105,7 @@ def filters():
     out='<div class="library-filter" data-library-filter><label class="filter-search"><span>Search place, species or trip</span><input id="trip-search" type="search" placeholder="Try glacier, permit, Japan or alpine" autocomplete="off"></label>'
     for key,label,values in fields:
         out+=f'<label><span>{label}</span><select id="filter-{key}" data-library-select="{key}"><option value="">All {label.lower()}s</option>'+''.join(f'<option value="{E(v,quote=True)}">{E(v)}</option>' for v in values)+'</select></label>'
-    out+='<label><span>Local trip type</span><select id="filter-type" data-library-select="type"><option value="">All trip types</option>'+''.join(f'<option value="{E(t["slug"],quote=True)}">{E(t["name"])}</option>' for t in sorted(TRIP_TYPES,key=lambda t:t['name']))+'</select></label>'
+    out+='<label><span>Local classic</span><select id="filter-type" data-library-select="type"><option value="">All local classics</option>'+''.join(f'<option value="{E(t["slug"],quote=True)}">{E(t["name"])}</option>' for t in sorted(TRIP_TYPES,key=lambda t:t['name']))+'</select></label>'
     out+='<label><span>Research depth</span><select id="filter-depth" data-library-select="depth"><option value="">All profiles</option><option value="detailed-guide">Detailed guides</option><option value="trip-brief">Source-linked briefs</option><option value="preparation-brief">Preparation briefs · research pending</option></select></label>'
     out+='<label><span>Documented seasonal window</span><select id="filter-month" data-library-select="month"><option value="">Any / not specified</option>'+''.join(f'<option value="{i}">{m}</option>' for i,m in enumerate(MONTHS,1))+'</select></label><button type="button" class="btn outline" data-action="clear-library">Clear filters</button></div>'
     return out+f'<div class="library-status"><p id="trip-count" role="status" aria-live="polite">{len(TRIPS)} trip profiles</p><a href="/seasons/">How seasonal filtering works ↗</a></div><p class="season-filter-note" id="season-filter-note" hidden>This filter finds only documented windows in this edition. Missing results do not mean fishing is unavailable. Partial months, operator-specific opportunities and historical guidance retain their qualifications in each guide.</p>'

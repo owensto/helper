@@ -1,0 +1,257 @@
+{
+  "reviewed": "2026-11-10",
+  "styles": [
+    {
+      "slug": "inshore-flats",
+      "name": "Inshore & flats",
+      "image": "inshore",
+      "definition": "Fish sheltered bays, estuaries, mangroves or shallow saltwater flats. The water and tide shape the day.",
+      "suits": "Anglers who want short casts, shallow water and a smaller-boat trip.",
+      "gear": "Skiffs and bay boats are common choices. Match spinning or fly tackle to the target, cover and wind.",
+      "season": "Ask about tide, water clarity and wind as well as the month.",
+      "classicIds": [
+        "boca-grande-tarpon",
+        "chesapeake-rockfish",
+        "keys-grand-slam",
+        "louisiana-bull-reds",
+        "texas-slam",
+        "lowcountry-inshore-grand-slam",
+        "ascension-bay-grand-slam",
+        "andros-bonefishing",
+        "top-end-barra-run-off"
+      ]
+    },
+    {
+      "slug": "offshore-bluewater",
+      "name": "Offshore & bluewater",
+      "image": "coast",
+      "definition": "Travel beyond the sheltered coast to fish open water. Trolling, casting and other methods depend on the target.",
+      "suits": "Anglers comfortable with longer boat runs and changing sea conditions.",
+      "gear": "A charter boat, suitable safety equipment and guide-selected tackle form the starting point. Confirm the run time and supplied equipment.",
+      "season": "Ask about the target’s local window and a weather alternative. A calendar month does not predict sea conditions.",
+      "classicIds": [
+        "cabo-striped-marlin",
+        "san-diego-night-jig-bluefin",
+        "pei-giant-bluefin",
+        "mag-bay-bait-balls",
+        "cairns-heavy-tackle-black-marlin",
+        "costa-rica-fad-marlin",
+        "kona-blue-marlin-grander"
+      ]
+    },
+    {
+      "slug": "surf-pier",
+      "name": "Surf & pier",
+      "image": "surf-beach",
+      "definition": "Fish from the beach, rocks or a pier. Access, casting space and surf conditions set the limits.",
+      "suits": "Anglers who prefer a shore-based day and can adapt to local access conditions.",
+      "gear": "Shore tackle, a suitable landing method and secure footwear matter. Confirm the cast, current and allowed access before choosing weights.",
+      "season": "Ask how tides, swell and local fish movements affect the proposed date.",
+      "classicIds": [
+        "montauk-fall-run",
+        "outer-banks-drum-run"
+      ]
+    },
+    {
+      "slug": "fly-fishing",
+      "name": "Fly fishing",
+      "image": "stream",
+      "definition": "Present a fly with a fly rod. This method spans small streams, large rivers and saltwater flats.",
+      "suits": "Anglers who enjoy presentation and want to practise casting or learn with a guide.",
+      "gear": "Choose the rod, line, leader and flies for the target and water. A wade, boat or skiff trip needs a different access plan.",
+      "season": "Match the date to local water conditions and the target. A hatch is a local event, not a worldwide season.",
+      "classicIds": [
+        "keys-grand-slam",
+        "pyramid-lake-ladder-fishing",
+        "ascension-bay-grand-slam",
+        "andros-bonefishing",
+        "ibera-golden-dorado",
+        "mongolia-taimen-on-mouse",
+        "steelhead-alley",
+        "north-carolina-delayed-harvest-trout",
+        "madison-salmonfly-hatch"
+      ]
+    },
+    {
+      "slug": "river-float",
+      "name": "River float & drift boat",
+      "image": "stream",
+      "definition": "Cover a river reach from a moving boat. The launch, take-out and river level are part of the trip plan.",
+      "suits": "Anglers who want to cover more water with a guide or a planned shuttle.",
+      "gear": "A drift boat, raft or local river boat may suit the reach. Confirm the craft, flotation equipment and tackle with the operator.",
+      "season": "River level and flow can change the route. Ask about the exact reach and a high-water alternative.",
+      "classicIds": [
+        "kenai-silver-salmon",
+        "madison-salmonfly-hatch",
+        "ibera-golden-dorado"
+      ]
+    },
+    {
+      "slug": "lake-reservoir",
+      "name": "Lake & reservoir",
+      "image": "river",
+      "definition": "Fish enclosed freshwater, from a large reservoir to a smaller lake. Depth, access and species determine the method.",
+      "suits": "Anglers who want to choose between bank access and a boat day.",
+      "gear": "Bank tackle or a guide’s boat setup can work. Confirm the launch, target depth and method before packing.",
+      "season": "Water temperature, lake level and local fish movements matter. Use the documented windows below as a starting point.",
+      "classicIds": [
+        "lake-erie-walleye-charter",
+        "texoma-stripers",
+        "miami-canal-peacock-bass",
+        "ontario-fly-in-fishing",
+        "grenada-slabs",
+        "okeechobee-wild-shiner-bass",
+        "pyramid-lake-ladder-fishing",
+        "el-salto-lobina"
+      ]
+    },
+    {
+      "slug": "ice-fishing",
+      "name": "Ice fishing",
+      "image": "ice",
+      "definition": "Fish through ice with a locally assessed access plan. A winter date alone does not establish safe ice.",
+      "suits": "Anglers who want a winter trip and can confirm suitable local support.",
+      "gear": "Ice tackle, warm layers and locally specified safety equipment are needed. Confirm shelter, transport and guide provisions.",
+      "season": "The trip depends on current local ice conditions. Do not use the month filter as an ice-safety test.",
+      "classicIds": [
+        "lake-of-the-woods-sleeper-house",
+        "lake-winnipeg-greenbacks"
+      ]
+    },
+    {
+      "slug": "remote-lodge",
+      "name": "Fly-in & remote lodge",
+      "image": "stream",
+      "definition": "Use a remote lodge or an air transfer as the base for a fishing trip. Travel and equipment limits shape the plan.",
+      "suits": "Anglers who want several days based near remote water and can accept travel changes.",
+      "gear": "Confirm aircraft baggage limits, transfers, boats, guide support and supplied tackle directly with the lodge.",
+      "season": "Operating dates and weather delays differ by lodge. Confirm the transfer schedule and a spare travel day.",
+      "classicIds": [
+        "ontario-fly-in-fishing",
+        "rio-negro-tucunare-acu",
+        "mongolia-taimen-on-mouse"
+      ]
+    },
+    {
+      "slug": "kayak",
+      "name": "Kayak fishing",
+      "image": "inshore",
+      "definition": "Fish from a small paddle or pedal craft. The route, launch and weather plan are as important as the tackle.",
+      "suits": "Anglers who want close access and can meet the physical and safety needs of the chosen water.",
+      "gear": "Confirm the kayak, personal flotation equipment, secure tackle storage and return route. Ask whether instruction or a guide is available.",
+      "season": "Wind, tides, current and water temperature can change the route. Confirm conditions close to departure.",
+      "classicIds": []
+    },
+    {
+      "slug": "bottom-combo",
+      "name": "Bottom fishing & combo charters",
+      "image": "coast",
+      "definition": "Fish near the bottom for local targets, or combine supported fisheries in one boat day. A combo depends on time and conditions.",
+      "suits": "Anglers who want a boat trip focused on reef, rock or bottom habitat.",
+      "gear": "Boat tackle and weights must suit the depth, current and target. Ask what the crew supplies and how the day divides between targets.",
+      "season": "Species windows and local rules may differ within one trip. Confirm each target and the available boat time.",
+      "classicIds": [
+        "gulf-red-snapper-season",
+        "seward-halibut-salmon-combo",
+        "new-jersey-tog-fishing"
+      ]
+    },
+    {
+      "slug": "night-fishing",
+      "name": "Night fishing",
+      "image": "coast",
+      "definition": "Fish after dark with a plan for visibility, access and the return. The method depends on the place and target.",
+      "suits": "Anglers comfortable with reduced visibility and a later or overnight schedule.",
+      "gear": "Confirm lighting, safe access, communication and suitable tackle. On a charter, ask about rest space and the total trip length.",
+      "season": "Ask which local conditions support the night method. Do not assume that a daytime season also supports a night trip.",
+      "classicIds": [
+        "san-diego-night-jig-bluefin"
+      ]
+    },
+    {
+      "slug": "sight-fishing",
+      "name": "Sight fishing",
+      "image": "inshore",
+      "definition": "Locate a visible fish before the cast. Light, clarity and a careful approach are central to the method.",
+      "suits": "Anglers who enjoy observation, accurate casts and patient presentations.",
+      "gear": "Polarized glasses and a target-specific setup can help. A skiff or a wade trip needs a separate access plan.",
+      "season": "Ask about light, wind, tides and clarity. A local monthly window cannot guarantee visibility.",
+      "classicIds": [
+        "keys-grand-slam",
+        "ascension-bay-grand-slam",
+        "andros-bonefishing",
+        "texas-slam"
+      ]
+    },
+    {
+      "slug": "big-game",
+      "name": "Big-game & billfish",
+      "image": "coast",
+      "definition": "Plan a boat trip around large pelagic fish such as billfish or tuna. The target and local method define the tackle.",
+      "suits": "Anglers who want a focused offshore trip and can meet its physical and time demands.",
+      "gear": "Confirm the boat, tackle class, fish-handling plan and crew support. Do not buy specialist tackle before checking the charter’s provisions.",
+      "season": "Ask about the named target’s local window and current rules. The records below retain their own season evidence.",
+      "classicIds": [
+        "cabo-striped-marlin",
+        "san-diego-night-jig-bluefin",
+        "pei-giant-bluefin",
+        "mag-bay-bait-balls",
+        "cairns-heavy-tackle-black-marlin",
+        "costa-rica-fad-marlin",
+        "kona-blue-marlin-grander"
+      ]
+    },
+    {
+      "slug": "multi-species-slams",
+      "name": "Multi-species slams",
+      "image": "inshore",
+      "definition": "Work toward a locally defined group of species in one trip. The meaning of a slam changes with the region.",
+      "suits": "Anglers who value variety and can adjust the plan as tides and conditions change.",
+      "gear": "Several presentations may be needed. Confirm each target, suitable tackle and whether the operator treats the slam as a goal.",
+      "season": "Look for an overlap between the target species. A slam is an objective, never a promised result.",
+      "classicIds": [
+        "keys-grand-slam",
+        "texas-slam",
+        "lowcountry-inshore-grand-slam",
+        "ascension-bay-grand-slam"
+      ]
+    },
+    {
+      "slug": "bank-wading",
+      "name": "Bank & wade",
+      "image": "stream",
+      "definition": "Reach the water from shore or by wading. Access rights, footing, depth and current set the practical limits.",
+      "suits": "Anglers who prefer to stay close to shore or explore a short stretch on foot.",
+      "gear": "Choose footwear, clothing and tackle for the water. Ask whether waders or a wading staff are appropriate for the exact reach.",
+      "season": "Water level and temperature affect access. Confirm the route and conditions, even within a documented seasonal window.",
+      "classicIds": [
+        "steelhead-alley",
+        "north-carolina-delayed-harvest-trout",
+        "pyramid-lake-ladder-fishing",
+        "outer-banks-drum-run"
+      ]
+    },
+    {
+      "slug": "river-fishing",
+      "name": "River & stream",
+      "image": "stream",
+      "definition": "Fish flowing freshwater from the bank, by wading or from a boat. The reach and water level shape the day.",
+      "suits": "Anglers who want to explore current, pools and changing river habitat.",
+      "gear": "Match tackle to the target and flow. Choose the access method separately, then confirm the launch or bank route.",
+      "season": "Ask about flow, temperature and local restrictions for the exact reach. Some catalog records have no verified month window.",
+      "classicIds": [
+        "fraser-white-sturgeon",
+        "kenai-silver-salmon",
+        "buoy-10-salmon",
+        "detroit-river-walleye-jigging",
+        "rio-negro-tucunare-acu",
+        "ibera-golden-dorado",
+        "mongolia-taimen-on-mouse",
+        "steelhead-alley",
+        "north-carolina-delayed-harvest-trout",
+        "madison-salmonfly-hatch",
+        "top-end-barra-run-off"
+      ]
+    }
+  ]
+}

@@ -128,6 +128,8 @@ if extra_path.exists():
 # Local trip-type membership is independent from the destination's evidence status.
 from trip_types import compile_into as compile_trip_types
 compile_trip_types(world, out, ROOT)
+from trip_styles import compile_into as compile_trip_styles
+compile_trip_styles(world, out, ROOT)
 from guides import compile_into as compile_guides
 compile_guides(world, out, ROOT)
 from species_glossary import compile_into as compile_species

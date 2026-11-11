@@ -9689,12 +9689,6 @@
     "noindex": false,
     "redirectTo": null
   },
-  "/trip-types/": {
-    "kind": "trip-types",
-    "title": "Local fishing trip types and regional names | Castward",
-    "noindex": false,
-    "redirectTo": null
-  },
   "/trip-types/boca-grande-tarpon/": {
     "kind": "trip-type",
     "title": "Boca Grande tarpon: species, season and trip plan | Castward",
@@ -14600,6 +14594,120 @@
   "/species/zungaro-dorado/": {
     "kind": "species-detail",
     "title": "Zungaro dorado fishing, local names and destinations | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/local-classics/": {
+    "kind": "local-classics",
+    "title": "Local fishing classics | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/trip-types/inshore-flats/": {
+    "kind": "trip-style",
+    "title": "Inshore & flats fishing trips | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/trip-types/offshore-bluewater/": {
+    "kind": "trip-style",
+    "title": "Offshore & bluewater fishing trips | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/trip-types/surf-pier/": {
+    "kind": "trip-style",
+    "title": "Surf & pier fishing trips | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/trip-types/fly-fishing/": {
+    "kind": "trip-style",
+    "title": "Fly fishing fishing trips | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/trip-types/river-float/": {
+    "kind": "trip-style",
+    "title": "River float & drift boat fishing trips | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/trip-types/lake-reservoir/": {
+    "kind": "trip-style",
+    "title": "Lake & reservoir fishing trips | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/trip-types/ice-fishing/": {
+    "kind": "trip-style",
+    "title": "Ice fishing fishing trips | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/trip-types/remote-lodge/": {
+    "kind": "trip-style",
+    "title": "Fly-in & remote lodge fishing trips | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/trip-types/kayak/": {
+    "kind": "trip-style",
+    "title": "Kayak fishing fishing trips | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/trip-types/bottom-combo/": {
+    "kind": "trip-style",
+    "title": "Bottom fishing & combo charters fishing trips | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/trip-types/night-fishing/": {
+    "kind": "trip-style",
+    "title": "Night fishing fishing trips | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/trip-types/sight-fishing/": {
+    "kind": "trip-style",
+    "title": "Sight fishing fishing trips | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/trip-types/big-game/": {
+    "kind": "trip-style",
+    "title": "Big-game & billfish fishing trips | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/trip-types/multi-species-slams/": {
+    "kind": "trip-style",
+    "title": "Multi-species slams fishing trips | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/trip-types/bank-wading/": {
+    "kind": "trip-style",
+    "title": "Bank & wade fishing trips | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/trip-types/river-fishing/": {
+    "kind": "trip-style",
+    "title": "River & stream fishing trips | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/trip-types/": {
+    "kind": "trip-styles",
+    "title": "Fishing trip styles: find your kind of day | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/atlas/": {
+    "kind": "atlas",
+    "title": "Interactive fishing atlas | Castward",
     "noindex": false,
     "redirectTo": null
   }

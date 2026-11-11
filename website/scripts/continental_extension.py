@@ -213,7 +213,7 @@ for c in COUNTRIES:
  if cp in pages and not pages[cp].get('redirectTo'):
   pages[cp]['noindex']=not indexable([t for t in TRIPS if t['country']==c])
 # The public bundle need only contain compact trip routing/filter metadata, not duplicate all prose.
-DATA['world']['trips']=[{k:t.get(k) for k in ['id','title','place','country','region','state','subregion','canonicalPath','contentTier','fish','candidateTargets','tripTypeIds','tripTypeNames']} for t in TRIPS]
+DATA['world']['trips']=[{k:t.get(k) for k in ['id','title','place','country','region','state','subregion','canonicalPath','contentTier','fish','candidateTargets','tripTypeIds','tripTypeNames','tripStyleIds']} for t in TRIPS]
 DATA['world'].pop('sources',None)
 DATA['continentalCoverage']=COV
 (ROOT/'src/compiled-data.json').write_text(json.dumps(DATA,ensure_ascii=False,indent=2))
