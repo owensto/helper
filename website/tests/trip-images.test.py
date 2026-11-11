@@ -52,3 +52,15 @@ for path in (ROOT / 'dist').rglob('index.html'):
         collections.add(path.relative_to(ROOT / 'dist').parts[0])
 assert {'trips', 'trip-types', 'countries', 'continents', 'destinations'} <= collections, collections
 print(f'Passed: responsive dimensions, alt text, and loading attributes on {checks.count} scene uses across all pages.')
+
+# Map cards use the same responsive markup as profile and collection cards.
+for catalog in (ROOT / 'dist/assets').glob('atlas-data-*.json'):
+    for trip in json.loads(catalog.read_text())['trips']:
+        if trip['id'] not in images:
+            continue
+        checks.path = f"{catalog.name}:{trip['id']}"
+        before = checks.count
+        checks.feed(trip['imageHtml'])
+        assert checks.count == before + 1, checks.path
+        assert escape(images[trip['id']]['alt'], quote=True) in trip['imageHtml']
+print('Passed: atlas cards retain responsive scene markup and manifest alt text.')

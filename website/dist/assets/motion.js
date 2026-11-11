@@ -41,7 +41,7 @@
   const tripBand=document.querySelector('.trip-band-track');
   let sequenceTrigger,bandTrigger;
   sequence?.querySelectorAll('[data-water-step]').forEach(button=>button.addEventListener('click',()=>{
-    if(!sequenceTrigger)return;
+    if(!sequenceTrigger){const p=button.closest('.water-sequence')?.querySelectorAll('.water-story')[Number(button.dataset.waterStep)];p?.scrollIntoView({behavior:'smooth',block:'start'});return;}
     const i=Number(button.dataset.waterStep),y=sequenceTrigger.start+(i/3)*(sequenceTrigger.end-sequenceTrigger.start);
     if(lenis)lenis.scrollTo(y,{duration:.45});else scrollTo(0,y);
   }));
@@ -57,7 +57,7 @@
       gsap.to(hero.querySelector('.scene-picture'),{yPercent:15,ease:'none',scrollTrigger:{trigger:hero,start:'top top',end:'bottom top',scrub:true}});
       gsap.to(hero.querySelector('.outdoor-hero-copy'),{y:65,ease:'none',scrollTrigger:{trigger:hero,start:'top top',end:'bottom top',scrub:true}});
     }
-    if(sequence){
+    if(false&&sequence){ // owner 2026-11-10: no scroll-locked sections
       const panels=[...sequence.querySelectorAll('.water-story')],buttons=[...sequence.querySelectorAll('[data-water-step]')];
       sequence.classList.add('sequence-pinned');
       gsap.set(panels.slice(1),{autoAlpha:0});
@@ -69,7 +69,7 @@
       sequenceTrigger=ScrollTrigger.create({trigger:sequence,start:'top 82px',end:'+=1800',pin:sequence.querySelector('.sequence-stage'),animation:timeline,scrub:.15,invalidateOnRefresh:true});
       cleanup.push(()=>{sequence.classList.remove('sequence-pinned');panels.forEach(p=>{p.inert=false;p.removeAttribute('aria-hidden');});sequenceTrigger=null;});
     }
-    if(tripBand){
+    if(false&&tripBand){ // owner 2026-11-10: no scroll-locked sections
       const section=tripBand.closest('.trip-band');section.classList.add('band-pinned');
       bandTrigger=ScrollTrigger.create({trigger:section,start:'top 82px',end:()=>'+='+Math.max(500,(tripBand.scrollWidth-tripBand.clientWidth)*.65),pin:true,scrub:.18,invalidateOnRefresh:true,animation:gsap.to(tripBand,{x:()=>-(tripBand.scrollWidth-tripBand.clientWidth),ease:'none'})});
       const focus=e=>{const card=e.target.closest('.world-card');if(!card||!bandTrigger)return;const x=card.offsetLeft-tripBand.firstElementChild.offsetLeft;const ratio=Math.min(1,x/(tripBand.scrollWidth-tripBand.clientWidth));lenis?.scrollTo(bandTrigger.start+ratio*(bandTrigger.end-bandTrigger.start),{immediate:true});};
@@ -166,7 +166,7 @@
       gsap.utils.toArray('.story-index').forEach(el=>gsap.from(el,{y:18,opacity:0,duration:.4,scrollTrigger:{trigger:el,start:'top 95%',once:true}}));
     });
     context.add('(min-width: 901px) and (pointer: fine) and (prefers-reduced-motion: no-preference)',()=>{
-      lenis=new Lenis({duration:.55,anchors:{offset:-170,duration:.45},smoothWheel:true});lenis.on('scroll',ScrollTrigger.update);
+      lenis=null; // owner 2026-11-10: native scroll, no smooth-scroll takeover
       const tick=time=>lenis?.raf(time*1000);gsap.ticker.add(tick);
       document.querySelectorAll('.water-story .story-image').forEach(el=>{
         if(el.closest('.water-sequence'))return;
@@ -174,7 +174,7 @@
         gsap.fromTo(el.querySelector('img'),{yPercent:-10,scale:1.025},{yPercent:0,scale:1,ease:'none',scrollTrigger:{trigger:el,start:'top bottom',end:'bottom top',scrub:true}});
       });
       const premiumCleanup=premiumDesktop();
-      if(films){films.classList.add('is-pinned');filmTrigger=ScrollTrigger.create({trigger:films,start:'top 82px',end:()=>'+='+(strip.scrollWidth-strip.clientWidth)*.6,pin:true,invalidateOnRefresh:true,animation:gsap.to(strip,{x:()=>-(strip.scrollWidth-strip.clientWidth),ease:'none'}),scrub:.5,onUpdate:filmUpdate});}
+      if(false&&films){films.classList.add('is-pinned');filmTrigger=ScrollTrigger.create({trigger:films,start:'top 82px',end:()=>'+='+(strip.scrollWidth-strip.clientWidth)*.6,pin:true,invalidateOnRefresh:true,animation:gsap.to(strip,{x:()=>-(strip.scrollWidth-strip.clientWidth),ease:'none'}),scrub:.5,onUpdate:filmUpdate});}
       const cursor=document.createElement('div');cursor.className='motion-cursor';document.body.append(cursor);
       const move=e=>{gsap.to(cursor,{x:e.clientX-14,y:e.clientY-14,duration:.22,overwrite:true});cursor.style.opacity='1';cursor.classList.toggle('active',!!e.target.closest('a,button'));};const hide=()=>cursor.style.opacity='0';document.addEventListener('pointermove',move);document.addEventListener('pointerleave',hide);
       const cleanups=[];

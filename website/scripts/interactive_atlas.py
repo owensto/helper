@@ -3,7 +3,7 @@ import hashlib
 import json
 import re
 from html import escape as E
-from photography import TRIP_IMAGES, MANIFEST, water_photo, ALIASES
+from photography import TRIP_IMAGES, MANIFEST, water_photo, ALIASES, trip_photo
 
 
 def install(pages, root, origin, add, data, trips, styles):
@@ -28,7 +28,7 @@ def install(pages, root, origin, add, data, trips, styles):
                         'waters':[t['water']] if t else {'yakutat':['Freshwater','Saltwater'],'florida-keys':['Saltwater'],'bozeman':['Freshwater']}[slug],
                         'ice':'Ice fishing' in t.get('habitats',[]),'months':sorted({m for w in d.get('seasonWindows',[]) for m in w['months']}),
                         'coordinates':d['coordinates'],'locationLabel':location['label'] if location else 'Location not established',
-                        'precision':d['locationPrecision'],'image':image,'tier':t.get('contentTier','detailed-guide')})
+                        'precision':d['locationPrecision'],'image':image,'imageHtml':trip_photo(t, '320px'),'tier':t.get('contentTier','detailed-guide')})
     payload = json.dumps({'trips':records,'styles':[{'slug':s['slug'],'name':s['name']} for s in styles]},ensure_ascii=False,separators=(',',':'))
     version = hashlib.sha256(payload.encode()).hexdigest()[:12]
     (root/'dist/assets'/('atlas-data-'+version+'.json')).write_text(payload)
