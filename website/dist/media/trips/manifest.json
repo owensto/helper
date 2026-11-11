@@ -17,6 +17,12 @@
     "height": 1067,
     "width": 1600
   },
+  "cairns-heavy-tackle-marlin": {
+    "ai_generated": true,
+    "alt": "Illustration: a marlin charter boat beside turquoise reef water and a sandy coral cay on the outer Great Barrier Reef, Australia.",
+    "height": 1067,
+    "width": 1600
+  },
   "cape-hatteras-surf": {
     "ai_generated": true,
     "alt": "Illustration: a surf angler beside Atlantic breakers, sand dunes and sea oats at Cape Hatteras, North Carolina.",
@@ -53,15 +59,219 @@
     "height": 1067,
     "width": 1600
   },
+  "g-canada-campbell-river-freshwater": {
+    "ai_generated": true,
+    "alt": "Illustration: a fly angler beside freshwater riffles with autumn foliage and misty forest at Campbell River, British Columbia.",
+    "height": 1067,
+    "width": 1600
+  },
+  "g-canada-great-bear-lake": {
+    "ai_generated": true,
+    "alt": "Illustration: a fishing boat on Great Bear Lake beside rocky tundra shores and sparse spruce, Northwest Territories.",
+    "height": 1067,
+    "width": 1600
+  },
+  "g-canada-great-slave-lake": {
+    "ai_generated": true,
+    "alt": "Illustration: a guided fishing boat among granite islands and boreal spruce on Great Slave Lake, Northwest Territories.",
+    "height": 1067,
+    "width": 1600
+  },
+  "g-canada-haida-gwaii-coastal-fishing": {
+    "ai_generated": true,
+    "alt": "Illustration: a guided fishing boat off a rocky rainforest headland and misty islands in Haida Gwaii, British Columbia.",
+    "height": 1067,
+    "width": 1600
+  },
+  "g-canada-tree-river-lodge": {
+    "ai_generated": true,
+    "alt": "Illustration: a fly angler on the rocky Tree River bank with treeless Arctic tundra in the background, Nunavut.",
+    "height": 1067,
+    "width": 1600
+  },
+  "g-denmark-helns-fyn": {
+    "ai_generated": true,
+    "alt": "Illustration: anglers in a coastal boat beside a stony shore and low green fields, Helnæs, Fyn, Denmark",
+    "height": 1067,
+    "width": 1600
+  },
+  "g-denmark-little-belt": {
+    "ai_generated": true,
+    "alt": "Illustration: a fishing boat on a tidal channel with wooded headlands and pale coastal bluffs, Little Belt, Denmark",
+    "height": 1067,
+    "width": 1600
+  },
+  "g-denmark-mariager-fjord": {
+    "ai_generated": true,
+    "alt": "Illustration: a fishing boat on a sheltered inlet with beech woods, reeds and green hills, Mariager Fjord, Denmark",
+    "height": 1067,
+    "width": 1600
+  },
+  "g-finland-lake-inari": {
+    "ai_generated": true,
+    "alt": "Illustration: a fishing boat among rocky pine islands with distant rounded fells, Lake Inari, Finland",
+    "height": 1067,
+    "width": 1600
+  },
+  "g-finland-lake-saimaa": {
+    "ai_generated": true,
+    "alt": "Illustration: two anglers in a boat among pine-covered granite islands and reeds, Lake Saimaa, Finland",
+    "height": 1067,
+    "width": 1600
+  },
+  "g-iceland-lonsa-langanes": {
+    "ai_generated": true,
+    "alt": "Illustration: a fly angler beside a coastal heath stream with a distant sea horizon, Lónsá and Langanes, Iceland",
+    "height": 1067,
+    "width": 1600
+  },
+  "g-iceland-myrarkvisl": {
+    "ai_generated": true,
+    "alt": "Illustration: a fly angler beside a clear stream pool and open grassy hills, Mýrarkvísl, Iceland",
+    "height": 1067,
+    "width": 1600
+  },
+  "g-iceland-reykjadalsa": {
+    "ai_generated": true,
+    "alt": "Illustration: a fly angler beside a misty river with rounded grassy hills, Reykjadalsá, Iceland",
+    "height": 1067,
+    "width": 1600
+  },
+  "g-iceland-vatnsdalsa": {
+    "ai_generated": true,
+    "alt": "Illustration: a fly angler beside a winding river beneath green basalt slopes, Vatnsdalsá, Iceland",
+    "height": 1067,
+    "width": 1600
+  },
+  "g-iceland-west-ranga": {
+    "ai_generated": true,
+    "alt": "Illustration: a fly angler on a gravel riverbank with open grassland and volcanic uplands, West Rangá, Iceland",
+    "height": 1067,
+    "width": 1600
+  },
+  "g-ireland-lough-carra": {
+    "ai_generated": true,
+    "alt": "Illustration: trout anglers in a lake boat above pale marl shallows with reeds and wooded islands, Lough Carra, Ireland",
+    "height": 1067,
+    "width": 1600
+  },
+  "g-ireland-lough-conn": {
+    "ai_generated": true,
+    "alt": "Illustration: trout anglers in a lake boat with stony islands and Nephin mountain beyond, Lough Conn, Ireland",
+    "height": 1067,
+    "width": 1600
+  },
+  "g-ireland-lough-corrib": {
+    "ai_generated": true,
+    "alt": "Illustration: anglers in an Irish lake boat beside limestone islands with distant hills, Lough Corrib, Ireland",
+    "height": 1067,
+    "width": 1600
+  },
+  "g-ireland-lough-mask": {
+    "ai_generated": true,
+    "alt": "Illustration: trout anglers in a lake boat beside limestone shores with rugged hills beyond, Lough Mask, Ireland",
+    "height": 1067,
+    "width": 1600
+  },
+  "g-ireland-river-shannon": {
+    "ai_generated": true,
+    "alt": "Illustration: anglers in a river boat beside reeds, willows and misty low meadows, River Shannon, Ireland",
+    "height": 1067,
+    "width": 1600
+  },
+  "g-mexico-ascension-bay": {
+    "ai_generated": true,
+    "alt": "Illustration: a guide poles a flats skiff while an angler casts beside mangroves in Ascension Bay, Mexico.",
+    "height": 1067,
+    "width": 1600
+  },
+  "g-mexico-espiritu-santo-bay": {
+    "ai_generated": true,
+    "alt": "Illustration: a fly angler and guide on a skiff over turquoise flats beside mangroves, Espíritu Santo Bay, Mexico",
+    "height": 1067,
+    "width": 1600
+  },
+  "g-norway-gaula": {
+    "ai_generated": true,
+    "alt": "Illustration: a salmon fly angler on a gravel bank with spruce and birch hills, Gaula River, Norway",
+    "height": 1067,
+    "width": 1600
+  },
+  "g-norway-namsen": {
+    "ai_generated": true,
+    "alt": "Illustration: a distant fly angler on a gravel bank beside a broad river and forested hills, Namsen, Norway",
+    "height": 1067,
+    "width": 1600
+  },
+  "g-norway-orkla": {
+    "ai_generated": true,
+    "alt": "Illustration: a salmon fly angler beside a misty river pool with birch, spruce and valley meadows, Orkla, Norway",
+    "height": 1067,
+    "width": 1600
+  },
+  "g-norway-otra-kristiansand": {
+    "ai_generated": true,
+    "alt": "Illustration: a fly angler on a rock bank beside a clear river with pine and birch forest, Otra near Kristiansand, Norway",
+    "height": 1067,
+    "width": 1600
+  },
+  "g-sweden-high-coast": {
+    "ai_generated": true,
+    "alt": "Illustration: anglers in a small boat beside granite islands and forested coastal hills, High Coast, Sweden",
+    "height": 1067,
+    "width": 1600
+  },
+  "g-sweden-lake-vattern": {
+    "ai_generated": true,
+    "alt": "Illustration: a small fishing boat on clear open lake water with a distant wooded shore, Lake Vättern, Sweden",
+    "height": 1067,
+    "width": 1600
+  },
+  "g-sweden-swedish-lapland": {
+    "ai_generated": true,
+    "alt": "Illustration: a fly angler beside a clear rocky river with sparse birch woodland and distant fells, Swedish Lapland",
+    "height": 1067,
+    "width": 1600
+  },
+  "g-united-kingdom-river-tweed": {
+    "ai_generated": true,
+    "alt": "Illustration: a salmon fly angler on a gravel bank below wooded hills, River Tweed, Scotland",
+    "height": 1067,
+    "width": 1600
+  },
+  "g-united-states-fall-river-california": {
+    "ai_generated": true,
+    "alt": "Illustration: a fly angler on the Fall River bank with open grassland and distant volcanic peaks, California.",
+    "height": 1067,
+    "width": 1600
+  },
+  "g-united-states-hat-creek": {
+    "ai_generated": true,
+    "alt": "Illustration: a fly angler beside Hat Creek with grassy banks, lava rocks and pine-covered hills, California.",
+    "height": 1067,
+    "width": 1600
+  },
   "g-united-states-lower-sacramento-river": {
     "ai_generated": true,
     "alt": "Illustration: a drift boat on the Lower Sacramento River beside gravel bars and golden oak foothills, California.",
     "height": 1067,
     "width": 1600
   },
+  "g-united-states-mccloud-river": {
+    "ai_generated": true,
+    "alt": "Illustration: a fly angler on the rocky McCloud River bank below a forested canyon, California.",
+    "height": 1067,
+    "width": 1600
+  },
   "g-united-states-rogue-river": {
     "ai_generated": true,
     "alt": "Illustration: a drift boat on the Rogue River below rocky canyon slopes and evergreen forest, Oregon.",
+    "height": 1067,
+    "width": 1600
+  },
+  "g-united-states-smith-river-california": {
+    "ai_generated": true,
+    "alt": "Illustration: a guided drift boat on the emerald Smith River below a misty evergreen forest, California.",
     "height": 1067,
     "width": 1600
   },
@@ -74,6 +284,12 @@
   "hokkaido-char": {
     "ai_generated": true,
     "alt": "Illustration: a fly angler in a clear summer stream beneath birch woods and forested hills, northern Hokkaido.",
+    "height": 1067,
+    "width": 1600
+  },
+  "kabinakagami-lake-fly-in": {
+    "ai_generated": true,
+    "alt": "Illustration: two anglers in a small boat beside a rocky boreal forest shore on Kabinakagami Lake, Ontario.",
     "height": 1067,
     "width": 1600
   },
