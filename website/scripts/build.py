@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Dependency-free static build with a standalone, offline-capable HTML preview."""
 from pathlib import Path
-import json, os, html, shutil, re
+import json, os, html, shutil, re, hashlib
 ROOT=Path(__file__).resolve().parents[1]
 DIST=ROOT/'dist'
 DATA=json.loads((ROOT/'src/data.json').read_text())
@@ -18,6 +18,7 @@ if CONFIG['siteUrl'] and not re.match(r'^https?://[a-zA-Z0-9.-]+(?::\d+)?$',CONF
 if DIST.exists():shutil.rmtree(DIST)
 shutil.copytree(ROOT/'public',DIST)
 E=html.escape
+ASSET_VERSIONS = {name: hashlib.sha256((ROOT/'public/assets'/name).read_bytes()).hexdigest()[:12] for name in ['app.js','motion.js','motion.css','trust.js','trust.css']}
 pages={}
 
 def contour(kind='hero'):
@@ -173,7 +174,7 @@ def doc(path,p,preview=False):
     schema={'@context':'https://schema.org','@type':'Article' if p['kind']=='article' else 'WebPage','name':p['title'],'description':p['desc']}
     if CONFIG['siteUrl']:schema['url']=CONFIG['siteUrl']+path
     if p['kind']=='article':schema.update({'headline':p['title'],'datePublished':p.get('published',DATA['reviewed']),'dateModified':p.get('modified',DATA['reviewed']),'author':{'@type':'Organization','name':'Castward'}})
-    return f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#142e26"><title>{E(p['title'])}</title><meta name="description" content="{E(p['desc'],quote=True)}"><meta name="robots" content="{robots}">{canonical}{p.get('photoPreload','')}<meta property="og:image" content="https://castward.app{E(p.get('ogImage', '/media/scenes/og-1200.webp'),quote=True)}"><meta property="og:image:alt" content="{E(p.get('ogImageAlt', 'A pale sandbar curves across a coastal estuary at first light.'),quote=True)}"><meta name="twitter:card" content="summary_large_image"><meta property="og:type" content="{'article' if p['kind']=='article' else 'website'}"><meta property="og:title" content="{E(p['title'],quote=True)}"><meta property="og:description" content="{E(p['desc'],quote=True)}"><meta property="og:site_name" content="Castward"><link rel="icon" href="/assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/assets/style.css"><link rel="stylesheet" href="/assets/design.css"><link rel="stylesheet" href="/assets/fonts/fonts.css"><link rel="stylesheet" href="/assets/outdoor.css"><link rel="stylesheet" href="/assets/motion.css"><link rel="stylesheet" href="/assets/trip-types.css">{guide_css}<script src="/assets/motion.js" defer></script><script src="/assets/design.js" defer></script><script type="application/ld+json">{json.dumps(schema).replace('</','<\\/')}</script><script src="/assets/{datafile}" defer></script><script src="/assets/engine.js" defer></script><link rel="stylesheet" href="/assets/trust.css"><script src="/assets/trust.js" defer></script><script src="/assets/app.js" defer></script></head><body data-page="{p['kind']}" data-analytics-kind="{p.get('analyticsKind',p['kind'])}">{HEADER}<main id="main">{p['body']}</main>{FOOTER}{form_index}<noscript><div class="wrap note">Destination and field guides work without JavaScript. The interactive checklist requires JavaScript.</div></noscript></body></html>'''
+    return f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#142e26"><title>{E(p['title'])}</title><meta name="description" content="{E(p['desc'],quote=True)}"><meta name="robots" content="{robots}">{canonical}{p.get('photoPreload','')}<meta property="og:image" content="https://castward.app{E(p.get('ogImage', '/media/scenes/og-1200.webp'),quote=True)}"><meta property="og:image:alt" content="{E(p.get('ogImageAlt', 'A pale sandbar curves across a coastal estuary at first light.'),quote=True)}"><meta name="twitter:card" content="summary_large_image"><meta property="og:type" content="{'article' if p['kind']=='article' else 'website'}"><meta property="og:title" content="{E(p['title'],quote=True)}"><meta property="og:description" content="{E(p['desc'],quote=True)}"><meta property="og:site_name" content="Castward"><link rel="icon" href="/assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/assets/style.css"><link rel="stylesheet" href="/assets/design.css"><link rel="stylesheet" href="/assets/fonts/fonts.css"><link rel="stylesheet" href="/assets/outdoor.css"><link rel="stylesheet" href="/assets/motion.css?v={ASSET_VERSIONS["motion.css"]}"><link rel="stylesheet" href="/assets/trip-types.css">{guide_css}<script src="/assets/motion.js?v={ASSET_VERSIONS["motion.js"]}" defer></script><script src="/assets/design.js" defer></script><script type="application/ld+json">{json.dumps(schema).replace('</','<\\/')}</script><script src="/assets/{datafile}" defer></script><script src="/assets/engine.js" defer></script><link rel="stylesheet" href="/assets/trust.css?v={ASSET_VERSIONS["trust.css"]}"><script src="/assets/trust.js?v={ASSET_VERSIONS["trust.js"]}" defer></script><script src="/assets/app.js?v={ASSET_VERSIONS["app.js"]}" defer></script></head><body data-page="{p['kind']}" data-analytics-kind="{p.get('analyticsKind',p['kind'])}">{HEADER}<main id="main">{p['body']}</main>{FOOTER}{form_index}<noscript><div class="wrap note">Destination and field guides work without JavaScript. The interactive checklist requires JavaScript.</div></noscript></body></html>'''
 
 from outdoor import install as install_outdoor
 from videos import install as install_videos
@@ -211,7 +212,7 @@ else:
 # Single-file review build with all rendered pages and logic embedded. No server required.
 preview=doc('/',pages['/'],True)
 preview=preview.replace('<link rel="stylesheet" href="/assets/style.css"><link rel="stylesheet" href="/assets/design.css"><link rel="stylesheet" href="/assets/fonts/fonts.css"><link rel="stylesheet" href="/assets/outdoor.css"><script src="/assets/design.js" defer></script>','<style>'+re.sub(r"@import url\([^)]*\);",'',(DIST/'assets/style.css').read_text())+'</style>')
-for f in ('data.js','engine.js','app.js'):preview=preview.replace(f'<script src="/assets/{f}" defer></script>','')
+for f in ('data.js','engine.js','app.js'):preview=re.sub(r'<script src="/assets/'+re.escape(f)+r'(?:\?v=[a-f0-9]+)?" defer></script>','',preview)
 preview=preview.replace('<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">','')
 exports={('/downloads/'+x.name):x.read_text() for x in (DIST/'downloads').glob('*-queue.*')}
 payload=json.dumps(pages,ensure_ascii=False).replace('</','<\\/')
