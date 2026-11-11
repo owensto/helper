@@ -9991,19 +9991,25 @@
   },
   "/cookies/": {
     "kind": "trust",
-    "title": "Cookies and storage | Castward",
+    "title": "Cookies and consent policy | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/disclaimer/": {
+    "kind": "trust",
+    "title": "Fishing and boating safety | Castward",
     "noindex": false,
     "redirectTo": null
   },
   "/affiliate-disclosure/": {
     "kind": "trust",
-    "title": "Affiliate disclosure | Castward",
+    "title": "Affiliate and commercial disclosure | Castward",
     "noindex": false,
     "redirectTo": null
   },
   "/accessibility/": {
     "kind": "trust",
-    "title": "Accessibility | Castward",
+    "title": "Accessibility statement | Castward",
     "noindex": false,
     "redirectTo": null
   },

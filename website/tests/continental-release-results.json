@@ -1,11 +1,11 @@
 {
   "passed": true,
   "structuralAssertions": 816,
-  "routes": 1669,
+  "routes": 1670,
   "redirectRoutes": 519,
-  "nonRedirectPages": 1150,
+  "nonRedirectPages": 1151,
   "tripProfiles": 798,
-  "productionSitemapURLsInNonpublicTest": 153,
+  "productionSitemapURLsInNonpublicTest": 154,
   "sourceVerifiedTripPagesEligibleForSearch": 38,
   "checks": [
     "796 retained profiles plus two source-checked local-lingo gaps",
