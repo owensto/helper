@@ -56,7 +56,7 @@ class SpeciesGlossaryTests(unittest.TestCase):
             for term in kind['glossary']:
                 anchor = re.sub('[^a-z0-9]+', '-', term['term'].lower()).strip('-')
                 self.assertIn('id="' + anchor + '"', html)
-        for text in ['rockfish', 'yelloweye', 'lingcod', 'boilie', 'barra', 'mooching', 'tip-up']:
+        for text in ['rockfish', 'yelloweye', 'lingcod', 'boilie', 'barra', 'mooching', 'tip-up', 'id="gt"']:
             self.assertIn(text, html.lower())
         for term in TERMS:
             for entry in term['entries']:

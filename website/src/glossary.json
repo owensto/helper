@@ -22098,6 +22098,34 @@
       "relatedTrips": []
     },
     {
+      "id": "gt",
+      "term": "GT",
+      "entries": [
+        {
+          "definition": "A short name for giant trevally.",
+          "regions": [
+            "Australia"
+          ],
+          "relatedSpecies": [
+            "giant-trevally"
+          ],
+          "relatedTrips": [],
+          "relatedTripTypes": [],
+          "sourceUrls": [
+            "https://www.dcceew.gov.au/sites/default/files/documents/bioregional-profile.pdf"
+          ],
+          "category": "local name"
+        }
+      ],
+      "regions": [
+        "Australia"
+      ],
+      "relatedSpecies": [
+        "giant-trevally"
+      ],
+      "relatedTrips": []
+    },
+    {
       "id": "guasinuco",
       "term": "Guasinuco",
       "entries": [

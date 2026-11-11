@@ -4,7 +4,7 @@ The catalog contains 705 fish species and 62 broader fish groups. Scientific nam
 
 All 801 destinations have a research record. Sources support target lists at 475 destinations. The other 326 records remain unverified with empty target lists. Country occurrence alone does not establish a destination target. Season and method fields stay unverified unless a cited source supports them. This release does not claim complete verified destination coverage.
 
-The glossary contains 1,379 terms and 1,838 definitions. It keeps all 82 original terms and their anchors. It includes 102 added method, equipment and boat definitions, plus regional fish names. Each definition has sources and related species or trip references where the evidence supports them.
+The glossary contains 1,380 terms and 1,839 definitions. It keeps all 82 original terms and their anchors. It includes 102 added method, equipment and boat definitions, plus regional fish names. Each definition has sources and related species or trip references where the evidence supports them.
 
 Canonical source files:
 - `src/species-catalog.json`: FishBase v26.06 taxonomy, recorded regional names, agency references and supported seasonal notes.
