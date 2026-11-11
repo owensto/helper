@@ -1,0 +1,42 @@
+{
+  "/": {
+    "url": "https://castward.app/",
+    "fetchTime": "2026-11-11T01:40:55.680Z",
+    "formFactor": "mobile",
+    "throttlingMethod": "simulate",
+    "lighthouseVersion": "13.6.0",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": "1.0\u00a0s",
+      "largest-contentful-paint": "1.7\u00a0s",
+      "total-blocking-time": "0\u00a0ms",
+      "cumulative-layout-shift": "0.006",
+      "speed-index": "1.1\u00a0s"
+    }
+  },
+  "/atlas/": {
+    "url": "https://castward.app/atlas/",
+    "fetchTime": "2026-11-11T01:41:43.951Z",
+    "formFactor": "mobile",
+    "throttlingMethod": "simulate",
+    "lighthouseVersion": "13.6.0",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": "1.1\u00a0s",
+      "largest-contentful-paint": "1.5\u00a0s",
+      "total-blocking-time": "30\u00a0ms",
+      "cumulative-layout-shift": "0.034",
+      "speed-index": "1.1\u00a0s"
+    }
+  }
+}

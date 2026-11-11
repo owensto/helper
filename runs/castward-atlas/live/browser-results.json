@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "base": "https://castward.app",
+  "checks": [
+    "Home defers the bundle, geography and map catalog until the section approaches",
+    "All water choices, trip style, month and three-month windows match catalog membership",
+    "Combined filters, empty state and clear filters work",
+    "Accessible list pagination preserves access to the full result set",
+    "Region fly-to, reset, buttons, keyboard, wheel and drag work",
+    "List selection opens the trip image and link; Escape closes the card",
+    "Style pages filter all matching destinations and retain the empty state",
+    "Shared atlas URLs retain the style filter",
+    "Phone filters, region tap and two-finger pinch work",
+    "Phone navigation has one plan link and an Atlas link",
+    "All 801 destination links remain available without JavaScript",
+    "No script errors, layout overflow or automated WCAG A/AA violations"
+  ],
+  "errors": [],
+  "violations": []
+}

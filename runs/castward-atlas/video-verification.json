@@ -1,0 +1,36 @@
+[
+  {
+    "file": "atlas-desktop-20s.webm",
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "vp9",
+        "width": 960,
+        "height": 676,
+        "r_frame_rate": "20/1"
+      }
+    ],
+    "format": {
+      "duration": "20.000000",
+      "size": "376317"
+    }
+  },
+  {
+    "file": "atlas-phone-20s.webm",
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "vp9",
+        "width": 390,
+        "height": 844,
+        "r_frame_rate": "20/1"
+      }
+    ],
+    "format": {
+      "duration": "20.000000",
+      "size": "380032"
+    }
+  }
+]

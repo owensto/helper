@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "base": "http://127.0.0.1:8053",
+  "checks": [
+    "Type index resolves local glossary terms",
+    "Type index resolves the requested Texas name",
+    "All local names and aliases match their mapped destinations in site search",
+    "Every trip-type filter returns exactly its mapped destination profiles",
+    "Type filter hydrates from the hub URL",
+    "Local type combines with state filters",
+    "Clear filters restores library pagination",
+    "Matching Charleston reel appears on the Lowcountry hub",
+    "Hub opens the correct named planner preset",
+    "Guide inquiry retains the local trip name",
+    "Planner shows personal kit and provision questions for the type",
+    "Saved type inventory survives reload",
+    "Shared snapshot retains the local trip type",
+    "Offline export retains the local trip name",
+    "A destination change clears an incompatible type",
+    "A type selected inside the planner reaches its inquiry",
+    "Glossary term filter works",
+    "Albie blitz links to its supported Montauk type",
+    "Mobile navigation exposes Trip styles",
+    "No horizontal overflow on every type hub at desktop and phone widths",
+    "No page JavaScript errors"
+  ],
+  "routeViewportChecks": 92,
+  "errors": [],
+  "overflow": []
+}

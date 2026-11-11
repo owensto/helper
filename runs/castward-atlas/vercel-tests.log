@@ -1,0 +1,15 @@
+test_assigned_domain (__main__.VercelTests.test_assigned_domain) ... ok
+test_explicit_origin (__main__.VercelTests.test_explicit_origin) ... ok
+test_invalid_origins (__main__.VercelTests.test_invalid_origins) ... ok
+test_local_is_preview (__main__.VercelTests.test_local_is_preview) ... ok
+test_local_placeholder_allowed_only_outside_vercel (__main__.VercelTests.test_local_placeholder_allowed_only_outside_vercel) ... ok
+test_missing_domain_fails (__main__.VercelTests.test_missing_domain_fails) ... ok
+test_no_credentials_in_vercel_config (__main__.VercelTests.test_no_credentials_in_vercel_config) ... ok
+test_no_spa_rewrite_or_project_secrets (__main__.VercelTests.test_no_spa_rewrite_or_project_secrets) ... ok
+test_preview_is_unindexed_even_with_site_url (__main__.VercelTests.test_preview_is_unindexed_even_with_site_url) ... ok
+test_redirects_unique_and_not_loops (__main__.VercelTests.test_redirects_unique_and_not_loops) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.003s
+
+OK

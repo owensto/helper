@@ -1,0 +1,32 @@
+{
+  "/": {
+    "status": 200,
+    "matchesLocal": true,
+    "bytes": 52909
+  },
+  "/atlas/": {
+    "status": 200,
+    "matchesLocal": true,
+    "bytes": 127665
+  },
+  "/trip-types/": {
+    "status": 200,
+    "matchesLocal": true,
+    "bytes": 23132
+  },
+  "/local-classics/": {
+    "status": 200,
+    "matchesLocal": true,
+    "bytes": 58296
+  },
+  "/species/black-rockfish/": {
+    "status": 200,
+    "matchesLocal": true,
+    "bytes": 11550
+  },
+  "/glossary/": {
+    "status": 200,
+    "matchesLocal": true,
+    "bytes": 1247177
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "structuralAssertions": 816,
+  "routes": 2452,
+  "redirectRoutes": 519,
+  "nonRedirectPages": 1933,
+  "tripProfiles": 798,
+  "productionSitemapURLsInNonpublicTest": 936,
+  "sourceVerifiedTripPagesEligibleForSearch": 38,
+  "limitation": "Structural correctness is not an independent fishing-expertise review. .invalid origin is only a test, never deployed."
+}

@@ -4,7 +4,7 @@ const fs=require('node:fs'),path=require('node:path'),{execFileSync}=require('no
 const base=process.env.TEST_ORIGIN||'https://castward.app';
 const out=process.env.ATLAS_TEST_OUTPUT||path.resolve(__dirname,'../../runs/castward-atlas');fs.mkdirSync(out,{recursive:true});
 (async()=>{const browser=await chromium.launch({headless:true});
- for(const phone of [false,true]){
+ for(const phone of (process.env.RECORD_DEVICE==='phone'?[true]:[false,true])){
   const size=phone?{width:390,height:844}:{width:1280,height:900};
   const ctx=await browser.newContext({viewport:size,isMobile:phone,hasTouch:phone,recordVideo:{dir:out+'/raw',size}});
   const page=await ctx.newPage();await page.goto(base+'/atlas/');
@@ -13,7 +13,7 @@ const out=process.env.ATLAS_TEST_OUTPUT||path.resolve(__dirname,'../../runs/cast
   await page.waitForTimeout(1100);await page.locator('[data-region=Alaska]').click();await page.waitForTimeout(1400);
   await page.locator('[data-region=Florida]').click();await page.waitForTimeout(1400);
   const marker=page.locator('.atlas-single').first();
-  if(await marker.count()){await marker.click();await page.waitForTimeout(1600);await page.locator('.atlas-close').click();}
+  if(await marker.count()){if(phone)await marker.tap();else await marker.hover();await page.waitForTimeout(1600);if(phone)await page.locator('.atlas-close').tap();else await page.locator('.atlas-close').click();}
   await page.getByRole('button',{name:'Zoom in',exact:true}).click();await page.waitForTimeout(600);
   if(phone){
    const cdp=await ctx.newCDPSession(page);const b=await page.locator('.atlas-map').boundingBox();const x=Math.round(b.x+b.width/2),y=Math.round(Math.max(180,Math.min(600,b.y+b.height/2)));
@@ -40,4 +40,4 @@ const out=process.env.ATLAS_TEST_OUTPUT||path.resolve(__dirname,'../../runs/cast
   console.log(name,fs.statSync(out+'/'+name).size+' bytes');
  }
  await browser.close();
-})().catch(e=>{console.error(e);process.exitCode=1;});
+})().catch(e=>{console.error(e);process.exit(1);});
