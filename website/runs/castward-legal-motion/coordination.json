@@ -1,0 +1,5 @@
+{
+  "guidesJobExited": true,
+  "guidesCommit": "69d8367ec536bb36bb4f2a8d509de691df56203d",
+  "note": "The pgrep search also matches coordination references in other job prompts; the actual guides invocation has exited."
+}

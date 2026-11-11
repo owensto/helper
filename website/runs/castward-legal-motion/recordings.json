@@ -1,0 +1,9 @@
+{
+  "base": "https://castward.app",
+  "widths": [
+    1440,
+    390
+  ],
+  "scrollSeconds": 20,
+  "pageErrors": []
+}

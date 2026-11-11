@@ -1,0 +1,208 @@
+TAP version 13
+# Subtest: unknown destination and incompatible style are normalized
+ok 1 - unknown destination and incompatible style are normalized
+  ---
+  duration_ms: 0.562417
+  type: 'test'
+  ...
+# Subtest: date is checked for actual calendar validity
+ok 2 - date is checked for actual calendar validity
+  ---
+  duration_ms: 0.774167
+  type: 'test'
+  ...
+# Subtest: trip length and party size are bounded
+ok 3 - trip length and party size are bounded
+  ---
+  duration_ms: 0.389583
+  type: 'test'
+  ...
+# Subtest: unknown gear and unsupported states are discarded
+ok 4 - unknown gear and unsupported states are discarded
+  ---
+  duration_ms: 0.37825
+  type: 'test'
+  ...
+# Subtest: river trips have conditional wading gear, boats do not
+ok 5 - river trips have conditional wading gear, boats do not
+  ---
+  duration_ms: 0.349584
+  type: 'test'
+  ...
+# Subtest: tropical plan excludes default insulating system
+ok 6 - tropical plan excludes default insulating system
+  ---
+  duration_ms: 0.066375
+  type: 'test'
+  ...
+# Subtest: duration and laundry change clothing quantities, per angler
+ok 7 - duration and laundry change clothing quantities, per angler
+  ---
+  duration_ms: 0.1335
+  type: 'test'
+  ...
+# Subtest: owned and confirmed provisions are removed from shopping needs
+ok 8 - owned and confirmed provisions are removed from shopping needs
+  ---
+  duration_ms: 0.121083
+  type: 'test'
+  ...
+# Subtest: packing an item removes it from purchase count without asserting suitability
+ok 9 - packing an item removes it from purchase count without asserting suitability
+  ---
+  duration_ms: 0.288958
+  type: 'test'
+  ...
+# Subtest: essentials filtering does not erase extra-item status
+ok 10 - essentials filtering does not erase extra-item status
+  ---
+  duration_ms: 0.308209
+  type: 'test'
+  ...
+# Subtest: technical items never fabricate a retail recommendation
+ok 11 - technical items never fabricate a retail recommendation
+  ---
+  duration_ms: 0.103042
+  type: 'test'
+  ...
+# Subtest: shopping URL is untagged by default and configurable
+ok 12 - shopping URL is untagged by default and configurable
+  ---
+  duration_ms: 0.242667
+  type: 'test'
+  ...
+# Subtest: attribution is allowlisted, bounded and sanitized
+ok 13 - attribution is allowlisted, bounded and sanitized
+  ---
+  duration_ms: 0.138458
+  type: 'test'
+  ...
+# Subtest: source data is consistent
+ok 14 - source data is consistent
+  ---
+  duration_ms: 0.06775
+  type: 'test'
+  ...
+# Subtest: all 40 research priorities publish, with one scoped glossary addition
+ok 15 - all 40 research priorities publish, with one scoped glossary addition
+  ---
+  duration_ms: 0.677375
+  type: 'test'
+  ...
+# Subtest: every hub has substantive authored sections, matching FAQ schema, sources, and an empty guide slot
+ok 16 - every hub has substantive authored sections, matching FAQ schema, sources, and an empty guide slot
+  ---
+  duration_ms: 8.235917
+  type: 'test'
+  ...
+# Subtest: name and alias membership survives every catalog transformation
+ok 17 - name and alias membership survives every catalog transformation
+  ---
+  duration_ms: 0.76025
+  type: 'test'
+  ...
+# Subtest: presets survive serialization and use their own kit without another type or generic destination kit
+ok 18 - presets survive serialization and use their own kit without another type or generic destination kit
+  ---
+  duration_ms: 26.99525
+  type: 'test'
+  ...
+# Subtest: changing destination or using an invalid type clears incompatible type data
+ok 19 - changing destination or using an invalid type clears incompatible type data
+  ---
+  duration_ms: 0.762583
+  type: 'test'
+  ...
+# Subtest: research-pending stays noindex and only the two named gaps add destination profiles
+ok 20 - research-pending stays noindex and only the two named gaps add destination profiles
+  ---
+  duration_ms: 1.832
+  type: 'test'
+  ...
+# Subtest: contact validates input and reports provider acceptance and failure
+ok 21 - contact validates input and reports provider acceptance and failure
+  ---
+  duration_ms: 1.648958
+  type: 'test'
+  ...
+# Subtest: All global trip profiles and retained original profiles are addressable
+ok 22 - All global trip profiles and retained original profiles are addressable
+  ---
+  duration_ms: 82.109875
+  type: 'test'
+  ...
+# Subtest: each trip receives exactly its own four decision requirements
+ok 23 - each trip receives exactly its own four decision requirements
+  ---
+  duration_ms: 215.599708
+  type: 'test'
+  ...
+# Subtest: new trips replace generic technical placeholders rather than adding them
+ok 24 - new trips replace generic technical placeholders rather than adding them
+  ---
+  duration_ms: 212.383459
+  type: 'test'
+  ...
+# Subtest: tropical boat programs cannot be normalized into independent wading
+ok 25 - tropical boat programs cannot be normalized into independent wading
+  ---
+  duration_ms: 1.71125
+  type: 'test'
+  ...
+# Subtest: tropical guided flats do not inherit chest waders or freshwater boots
+ok 26 - tropical guided flats do not inherit chest waders or freshwater boots
+  ---
+  duration_ms: 1.131917
+  type: 'test'
+  ...
+# Subtest: ice fishing uses winter insulation without wading or boat footwear
+ok 27 - ice fishing uses winter insulation without wading or boat footwear
+  ---
+  duration_ms: 0.337333
+  type: 'test'
+  ...
+# Subtest: hike-in alpine profile does not automatically become a wading trip
+ok 28 - hike-in alpine profile does not automatically become a wading trip
+  ---
+  duration_ms: 0.407334
+  type: 'test'
+  ...
+# Subtest: warm and cold preparation profiles meaningfully differ
+ok 29 - warm and cold preparation profiles meaningfully differ
+  ---
+  duration_ms: 0.9085
+  type: 'test'
+  ...
+# Subtest: unknown and outside-window dates are not changed to a fabricated season
+ok 30 - unknown and outside-window dates are not changed to a fabricated season
+  ---
+  duration_ms: 1.065209
+  type: 'test'
+  ...
+# Subtest: trip-specific ownership and provision statuses affect counts
+ok 31 - trip-specific ownership and provision statuses affect counts
+  ---
+  duration_ms: 0.924208
+  type: 'test'
+  ...
+# Subtest: equipment queries remain category searches with no invented prices or IDs
+ok 32 - equipment queries remain category searches with no invented prices or IDs
+  ---
+  duration_ms: 230.746958
+  type: 'test'
+  ...
+# Subtest: shared inventory never leaks another trip technical kit into the current checklist
+ok 33 - shared inventory never leaks another trip technical kit into the current checklist
+  ---
+  duration_ms: 0.412959
+  type: 'test'
+  ...
+1..33
+# tests 33
+# suites 0
+# pass 33
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 820.152625

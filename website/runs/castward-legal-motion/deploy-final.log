@@ -1,0 +1,83 @@
+<claude-code-hint v="1" type="plugin" value="vercel@claude-plugins-official" />
+Retrieving project…
+Deploying owens-projects-f5c36e9a/castward
+Uploading [--------------------] (0.0B/13.1MB)
+Uploading [=====---------------] (3.3MB/13.1MB)
+Uploading [==========----------] (6.5MB/13.1MB)
+Uploading [===============-----] (9.8MB/13.1MB)
+Uploading [====================] (13.1MB/13.1MB)
+Inspect: https://vercel.com/owens-projects-f5c36e9a/castward/8reLq9RVEBrvDdmZaHDyE9sy74DT [4s]
+Production: https://castward-b377sjmdj-owens-projects-f5c36e9a.vercel.app [4s]
+Building...
+Building...
+Building: Running build in Washington, D.C., USA (East) – iad1
+Building: Build machine configuration: 4 cores, 8 GB (Standard Build Machine)
+Building: Retrieving list of deployment files...
+Building: Previous build caches not available.
+Building: Downloading 712 deployment files...
+Building: Running "vercel build"
+Building: Vercel CLI 65.11.0
+Building: Running "install" command: `echo "No package dependencies required for the static atlas"`...
+Building: No package dependencies required for the static atlas
+Building: Environment labels: ['Alpine lakes', 'Estuaries & mangroves', 'Glacier-influenced rivers', 'Ice fishing', 'Lakes & reservoirs', 'Offshore', 'Reef & bottom', 'Rivers & streams', 'Saltwater flats', 'Spring-fed streams', 'Surf & beaches', 'Tropical floodplains']
+Building: {
+Building: "tripProfiles": 798,
+Building: "detailedGuides": 40,
+Building: "newTripBriefs": 279,
+Building: "countryJurisdictionCollections": 118,
+Building: "countriesExcludingFreeAssociatedStates": 116,
+Building: "freeAssociatedStates": [
+Building: "Cook Islands",
+Building: "Niue"
+Building: ],
+Building: "sources": 266,
+Building: "sourceInspection": {
+Building: "text-inspected": 111,
+Building: "search-excerpt-inspected": 136,
+Building: "page-text-inspected": 19
+Building: },
+Building: "byRegion": {
+Building: "North America": 551,
+Building: "South America": 31,
+Building: "Europe": 102,
+Building: "Africa": 34,
+Building: "Asia": 44,
+Building: "Oceania": 36
+Building: },
+Building: "preparationBriefs": 479,
+Building: "northAmericaProductionRecords": 507
+Building: }
+Building: Imported plan rows: 507 unique states: 50
+Building: Built 1670 pages, 798 trip guides + 12 environment guides + 11 preparation articles; preview: /vercel/Fishing-Atlas-World-Preview.html
+Building: Production origin: https://castward.app
+Building: Vercel static build complete; authenticated upload has not been performed.
+Building: Installing dependencies...
+Building: npm warn Unknown env config "cache-dir". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+Building: up to date in 385ms
+Building: Build Completed in /vercel/output [7s]
+Building: Deploying outputs...
+[2K[1A[2K[GProduction: https://castward-b377sjmdj-owens-projects-f5c36e9a.vercel.app [20s]
+Completing...
+Aliased: https://castward.app [20s]
+{
+  "status": "ok",
+  "deployment": {
+    "id": "dpl_8reLq9RVEBrvDdmZaHDyE9sy74DT",
+    "url": "https://castward-b377sjmdj-owens-projects-f5c36e9a.vercel.app",
+    "inspectorUrl": "https://vercel.com/owens-projects-f5c36e9a/castward/8reLq9RVEBrvDdmZaHDyE9sy74DT",
+    "readyState": "READY",
+    "target": "production",
+    "deploymentApiUrl": "https://api.vercel.com/v13/deployments/dpl_8reLq9RVEBrvDdmZaHDyE9sy74DT"
+  },
+  "message": "Deployment castward-b377sjmdj-owens-projects-f5c36e9a.vercel.app ready.",
+  "next": [
+    {
+      "command": "vercel inspect castward-b377sjmdj-owens-projects-f5c36e9a.vercel.app --scope owens-projects-f5c36e9a",
+      "when": "Inspect deployment"
+    },
+    {
+      "command": "vercel deploy --prod --scope owens-projects-f5c36e9a",
+      "when": "Promote to production"
+    }
+  ]
+}

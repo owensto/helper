@@ -1,0 +1,40 @@
+{
+  "pages": [
+    {
+      "route": "/privacy/",
+      "sitemap": true,
+      "placeholders": false
+    },
+    {
+      "route": "/terms/",
+      "sitemap": true,
+      "placeholders": false
+    },
+    {
+      "route": "/cookies/",
+      "sitemap": true,
+      "placeholders": false
+    },
+    {
+      "route": "/disclaimer/",
+      "sitemap": true,
+      "placeholders": false
+    },
+    {
+      "route": "/affiliate-disclosure/",
+      "sitemap": true,
+      "placeholders": false
+    },
+    {
+      "route": "/accessibility/",
+      "sitemap": true,
+      "placeholders": false
+    },
+    {
+      "route": "/contact/",
+      "sitemap": true,
+      "placeholders": false
+    }
+  ],
+  "siteWideEntityPlaceholders": 0
+}

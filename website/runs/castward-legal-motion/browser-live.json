@@ -1,0 +1,86 @@
+{
+  "base": "https://castward.app",
+  "checks": [
+    {
+      "width": 1440,
+      "route": "/privacy/",
+      "sections": 17,
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "route": "/terms/",
+      "sections": 18,
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "route": "/cookies/",
+      "sections": 8,
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "route": "/disclaimer/",
+      "sections": 10,
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "route": "/affiliate-disclosure/",
+      "sections": 7,
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "route": "/accessibility/",
+      "sections": 6,
+      "passed": true
+    },
+    {
+      "width": 390,
+      "route": "/privacy/",
+      "sections": 17,
+      "passed": true
+    },
+    {
+      "width": 390,
+      "route": "/terms/",
+      "sections": 18,
+      "passed": true
+    },
+    {
+      "width": 390,
+      "route": "/cookies/",
+      "sections": 8,
+      "passed": true
+    },
+    {
+      "width": 390,
+      "route": "/disclaimer/",
+      "sections": 10,
+      "passed": true
+    },
+    {
+      "width": 390,
+      "route": "/affiliate-disclosure/",
+      "sections": 7,
+      "passed": true
+    },
+    {
+      "width": 390,
+      "route": "/accessibility/",
+      "sections": 6,
+      "passed": true
+    }
+  ],
+  "pageErrors": [],
+  "analyticsCookiesObserved": [
+    "_ga",
+    "_ga_4NYGJ2BF32"
+  ],
+  "consentAndGPC": true,
+  "reducedMotionAndPause": true,
+  "noJavaScriptContent": true,
+  "sortAndFilter": true
+}

@@ -1,0 +1,54 @@
+{
+  "checks": [
+    {
+      "path": "/",
+      "status": 200
+    },
+    {
+      "path": "/privacy/",
+      "status": 200
+    },
+    {
+      "path": "/terms/",
+      "status": 200
+    },
+    {
+      "path": "/cookies/",
+      "status": 200
+    },
+    {
+      "path": "/disclaimer/",
+      "status": 200
+    },
+    {
+      "path": "/affiliate-disclosure/",
+      "status": 200
+    },
+    {
+      "path": "/accessibility/",
+      "status": 200
+    },
+    {
+      "path": "/contact/",
+      "status": 200
+    },
+    {
+      "path": "/guides/",
+      "status": 200
+    },
+    {
+      "path": "/glossary/",
+      "status": 200
+    },
+    {
+      "path": "/north-america/united-states/texas/lake-fork-lake-and-reservoir-bass/",
+      "status": 200
+    },
+    {
+      "path": "/guides/how-to-choose-a-fishing-guide/",
+      "status": 200
+    }
+  ],
+  "sitemapURLs": 154,
+  "legalURLsPresent": true
+}

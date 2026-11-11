@@ -1,0 +1,28 @@
+{
+  "routes": 1670,
+  "javascriptTests": 33,
+  "vercelTests": 10,
+  "guidePagesChecked": 21,
+  "imageScenesChecked": 40,
+  "fallbackHeroesChecked": 758,
+  "productionSitemapURLs": 154,
+  "guideCommitPreserved": "69d8367ec536bb36bb4f2a8d509de691df56203d",
+  "codeCommit": "41cff465",
+  "deploymentId": "dpl_8reLq9RVEBrvDdmZaHDyE9sy74DT",
+  "mobileLighthouse": {
+    "home": {
+      "performance": 99,
+      "accessibility": 100,
+      "LCP": "1.7\u00a0s",
+      "TBT": "70\u00a0ms",
+      "CLS": "0"
+    },
+    "trip": {
+      "performance": 100,
+      "accessibility": 100,
+      "LCP": "0.9\u00a0s",
+      "TBT": "40\u00a0ms",
+      "CLS": "0"
+    }
+  }
+}
