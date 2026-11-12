@@ -28,6 +28,8 @@ def install(pages, root, origin, add, data, trips, styles):
             image = '/media/scenes/'+options[0]['file'].split('/')[-1]
         location = locations.get(slug)
         records.append({'id':slug,'name':d['name'],'region':' · '.join(filter(None,[t.get('state'),t.get('country',d['region'])])),
+                        'country':t.get('country', 'United States'),
+                        'environments':t.get('habitats', {'yakutat':['Rivers & streams','Offshore'], 'florida-keys':['Saltwater flats','Offshore'], 'bozeman':['Rivers & streams']}.get(slug, [])),
                         'path':d.get('guideUrl','/destinations/'+slug+'/'),'species':d.get('species',[]),
                         'candidateTargets':t.get('candidateTargets',''),'styles':d['tripStyleIds'],
                         'classicNames':t.get('tripTypeNames',[]),'water':t.get('water','To confirm'),
@@ -38,6 +40,10 @@ def install(pages, root, origin, add, data, trips, styles):
     payload = json.dumps({'trips':records,'styles':[{'slug':s['slug'],'name':s['name']} for s in styles]},ensure_ascii=False,separators=(',',':'))
     version = hashlib.sha256(payload.encode()).hexdigest()[:12]
     (root/'dist/assets'/('atlas-data-'+version+'.json')).write_text(payload)
+    # The full map needs only card/filter fields, not embedded picture markup or placeholders.
+    compact = json.dumps({'trips':[{k:v for k,v in r.items() if k not in ('imageHtml','imagePlaceholder')} for r in records]}, ensure_ascii=False,separators=(',',':'))
+    compact_version = hashlib.sha256(compact.encode()).hexdigest()[:12]
+    (root/'dist/assets'/('atlas-gl-data-'+compact_version+'.json')).write_text(compact)
     def versioned(name):
         digest=hashlib.sha256((root/'public/assets'/name).read_bytes()).hexdigest()[:12]
         return '/assets/'+name+'?v='+digest
@@ -55,10 +61,12 @@ def install(pages, root, origin, add, data, trips, styles):
     start=pages['/']['body'].index('<section class="atlas-journey wrap">')
     end=pages['/']['body'].index('<section class="region-band wrap">',start)
     pages['/']['body']=pages['/']['body'][:start]+markup()+pages['/']['body'][end:]
-    add('/atlas/','Interactive fishing atlas | Castward','Explore all 801 fishing destinations on a world map. Filter water, trip style, documented months, species and places.',markup(True),'atlas')
+    from atlas_view import markup as map_markup
+    add('/atlas/','Interactive fishing atlas | Castward','Explore fishing trips on an interactive world map. Filter by water, environment, species and month, then find your next trip.',map_markup(records, styles, '/assets/atlas-gl-data-'+compact_version+'.json'),'atlas')
     for route in ['/','/atlas/']:
         pages[route]['atlasAssets']='<link rel="stylesheet" href="'+versioned('atlas.css')+'"><script src="'+versioned('atlas-loader.js')+'" defer></script>'
         pages[route]['modified']='2026-11-10'
+    pages['/atlas/']['atlasAssets'] = '<link rel="stylesheet" href="https://unpkg.com/maplibre-gl@5.6.2/dist/maplibre-gl.css"><link rel="stylesheet" href="'+versioned('atlas-gl.css')+'"><script src="https://unpkg.com/maplibre-gl@5.6.2/dist/maplibre-gl.js" defer></script><script src="'+versioned('atlas-gl.js')+'" defer></script>'
     for route,p in pages.items():
         if route.startswith('/trip-types/') or route in ['/local-classics/','/atlas/']:
             parts=[('Home','/')]

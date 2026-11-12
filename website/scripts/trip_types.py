@@ -128,7 +128,7 @@ def install(pages, root, origin, add, trips, types):
         matched_reels = [v for v in videos if urlsplit(v['page_url']).path in destination_paths]
         body = breadcrumbs(kind['name'])
         body += '<header class="wrap type-heading"><span class="eyebrow">LOCAL TRIP TYPE / ' + E(kind['country']) + '</span><h1>' + E(kind['name']) + '</h1><p class="type-deck">' + E(kind['region']) + '</p><p class="type-aliases"><b>Also called:</b> ' + E(' · '.join(a for a in kind['aliases'] if a != kind['name'])) + '</p><div class="type-actions">' + link(planner_url(kind), 'Open the planner preset') + link('/trips/?' + urlencode({'type': kind['slug']}), 'Filter matching trips') + '</div></header>'
-        body += '<figure class="type-landscape">' + preview_photo(type_path(kind), eager=True, fallback=kind['image']) + '<figcaption>AI illustration of this destination’s environment. <a href="/about/#photo-credits">Image notes</a></figcaption></figure>'
+        body += '<figure class="type-landscape">' + preview_photo(type_path(kind), eager=True, fallback=kind['image']) + '</figure>'
         body += '<div class="wrap type-body"><aside class="type-toc" aria-label="On this page"><span class="eyebrow">PLAN THE TRIP</span>'
         for anchor, label in [('meaning','What it is'),('species','Species'),('where','Where to go'),('season','Season & sources'),('method','How it is fished'),('kit','What to bring'),('guide','What a guide provides'),('local-terms','Local terms'),('faq','Questions'),('book-a-guide','Book a guide')]:
             body += link('#' + anchor, label)

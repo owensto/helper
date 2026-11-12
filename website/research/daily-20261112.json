@@ -1,0 +1,40 @@
+{
+  "date": "2026-11-12",
+  "licenseSelection": "All 191 records tied at 2026-11-11. Selected five core US trip jurisdictions.",
+  "licenseChecks": [
+    "us-alaska",
+    "us-california",
+    "us-florida",
+    "us-minnesota",
+    "us-montana"
+  ],
+  "alaskaFreeDays": "No general free-day schedule confirmed; none asserted.",
+  "image": {
+    "name": "florida-visitor-license",
+    "tool": "built-in image_gen",
+    "prompt": "Original Florida coastal pier, mangrove shore, small unbranded boat, rod and tackle bag on bench; no people, catches, logos, text, or real location claim.",
+    "digitalSourceType": "trainedAlgorithmicMedia"
+  },
+  "guideSourceChecks": [
+    "FWC shoreline, license exemptions, saltwater fees, charter coverage, free days, purchase channels",
+    "Simms size-fit guide",
+    "REI layering basics",
+    "National Weather Service cold water safety"
+  ],
+  "author": "Castward organization retained. No invented person or credentials.",
+  "recheckedGuideSources": [
+    "gr-orvis-clearwater",
+    "gr-orvis-size",
+    "gr-g3",
+    "frog-canyon",
+    "gr-gearaid",
+    "gr-repair-kit",
+    "gr-simms-repair",
+    "gr-wading",
+    "simms-care",
+    "gr-shell",
+    "columbia-fleece",
+    "smart-thermal",
+    "gr-ice-care"
+  ]
+}

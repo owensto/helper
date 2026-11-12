@@ -1,0 +1,427 @@
+[
+  {
+    "slug": "woolly-bugger",
+    "name": "Woolly Bugger",
+    "source": "ft26-bugger-dnr",
+    "materials": [
+      [
+        "Hook",
+        "Size 8 streamer hook"
+      ],
+      [
+        "Thread",
+        "Olive 6/0"
+      ],
+      [
+        "Tail",
+        "Olive marabou"
+      ],
+      [
+        "Body",
+        "Olive chenille"
+      ],
+      [
+        "Hackle",
+        "Soft olive saddle feather"
+      ],
+      [
+        "Finish",
+        "Head cement"
+      ]
+    ],
+    "steps": [
+      {
+        "title": "Start the thread",
+        "text": "Clamp the hook bend. Cover the shank with olive thread, leaving the eye clear.",
+        "tip": "Keep the shank level.",
+        "state": "A bronze long shank streamer hook clamped at its bend in a vise, eye right, shank covered with a thin olive thread base, thread hanging at rear. No other materials.",
+        "image": "woolly-bugger-01"
+      },
+      {
+        "title": "Set the tail",
+        "text": "Tie in a small marabou bunch at the bend, about one shank long. Trim the butt ends.",
+        "tip": "Too much marabou makes a bulky body.",
+        "state": "Same long hook with olive thread base and soft olive marabou tail extending one shank length left from bend. Smooth bound-down butt ends along shank. Thread at rear. No hackle or chenille yet.",
+        "image": "woolly-bugger-02"
+      },
+      {
+        "title": "Anchor the hackle",
+        "text": "Secure the feather by its tip at the tail base. Leave the feather loose.",
+        "tip": "Choose soft hackle for this streamer.",
+        "state": "Olive marabou tail left, olive thread base on long bronze hook. One long olive saddle hackle feather tied by narrow tip at rear with rest of feather extending down-left loose. No wound hackle, no chenille.",
+        "image": "woolly-bugger-03"
+      },
+      {
+        "title": "Tie in the chenille",
+        "text": "Expose a little chenille core. Bind it at the tail base, then move the thread forward.",
+        "tip": "Leave room behind the eye.",
+        "state": "Olive marabou tail, loose olive hackle feather trailing down-left, olive chenille cord attached at rear and hanging down. Shank still thin thread base; olive tying thread hangs just behind eye at right.",
+        "image": "woolly-bugger-04"
+      },
+      {
+        "title": "Build the body",
+        "text": "Wind the chenille forward in touching turns. Secure it behind the eye and trim.",
+        "tip": "Close the gaps without piling up wraps.",
+        "state": "Long hook now has even cylindrical fuzzy olive chenille body and olive marabou tail left. A long loose olive hackle feather remains attached at rear and trails down-left. No hackle wound yet. Thread hangs just behind eye.",
+        "image": "woolly-bugger-05"
+      },
+      {
+        "title": "Wrap the hackle",
+        "text": "Spiral the feather forward over the body. Secure its stem behind the eye and trim.",
+        "tip": "Sweep trapped fibers clear.",
+        "state": "Olive Woolly Bugger almost finished: marabou tail left, chenille cylindrical body with evenly spaced olive hackle spirals all along body, free hook eye right, thread hanging at small head. No loose hackle feather.",
+        "image": "woolly-bugger-06"
+      },
+      {
+        "title": "Finish the knot",
+        "text": "Make a whip finish behind the eye. Cut the tying thread.",
+        "tip": "Keep the eye open for your tippet.",
+        "state": "Completed olive Woolly Bugger in vise: olive marabou tail left, evenly palmered olive hackle along chenille body, compact olive thread head, unobstructed eye right. No thread hanging, no bobbin.",
+        "image": "woolly-bugger-07"
+      },
+      {
+        "title": "Seal the head",
+        "text": "Touch a tiny drop of head cement to the thread head. Let it cure as directed.",
+        "tip": "Use a bodkin to avoid flooding the eye.",
+        "state": "Completed olive Woolly Bugger held in vise. A fine wooden-handled bodkin tip touches a tiny clear drop to compact olive thread head behind open eye right. Tail left, palmered body, no hanging thread.",
+        "image": "woolly-bugger-08"
+      }
+    ]
+  },
+  {
+    "slug": "pheasant-tail-nymph",
+    "name": "Pheasant Tail Nymph",
+    "source": "ft26-pheasant",
+    "materials": [
+      [
+        "Hook",
+        "Size 14, 2X-long nymph hook"
+      ],
+      [
+        "Thread",
+        "Brown 6/0"
+      ],
+      [
+        "Tail, body, wingcase",
+        "Pheasant tail fibers"
+      ],
+      [
+        "Rib",
+        "Small copper wire"
+      ],
+      [
+        "Thorax",
+        "Peacock herl"
+      ]
+    ],
+    "steps": [
+      {
+        "title": "Lay the foundation",
+        "text": "Cover the shank with brown thread. Bind copper wire along its side, with the free end at the bend.",
+        "tip": "Leave a little space behind the eye.",
+        "state": "Bronze nymph hook horizontal in black vise, eye right, thin brown thread base, fine copper wire tied along near side with loose wire trailing left at bend. No feathers yet.",
+        "image": "pheasant-tail-nymph-01"
+      },
+      {
+        "title": "Measure the tail",
+        "text": "Tie in aligned pheasant fibers. Aim for a tail about three-quarters of the shank length.",
+        "tip": "Keep the fiber tips together.",
+        "state": "Brown thread base on bronze nymph hook, sparse straight brown pheasant fiber tail extending left about three quarters shank length, fiber butt ends extending loose upwards from bend, loose copper wire left, thread at rear.",
+        "image": "pheasant-tail-nymph-02"
+      },
+      {
+        "title": "Wrap the abdomen",
+        "text": "Wind the fiber butts forward to cover the rear two-thirds. Tie off and trim.",
+        "tip": "Keep space for the thorax.",
+        "state": "Nymph in vise with sparse brown tail left, slender brown pheasant-fiber abdomen covering rear two thirds of hook, front third thin brown thread bare. Copper wire still loose from rear. Thread at front of abdomen.",
+        "image": "pheasant-tail-nymph-03"
+      },
+      {
+        "title": "Add the copper rib",
+        "text": "Spiral the wire forward opposite the body wraps. Tie off, then break away the excess.",
+        "tip": "Do not use fine scissors on wire.",
+        "state": "Nymph in vise, sparse brown tail left, brown pheasant fiber abdomen now reinforced by five fine evenly spaced copper spiral ribs, front third bare brown thread. No loose wire. Thread at abdomen front.",
+        "image": "pheasant-tail-nymph-04"
+      },
+      {
+        "title": "Set the wingcase",
+        "text": "Tie a new pheasant bundle at the thorax rear, with its long butts pointing back.",
+        "tip": "Save the forward tips for the legs.",
+        "state": "Nymph with ribbed brown abdomen and tail. New narrow bundle of brown pheasant fibers secured at rear of bare thorax; long butt ends point backward left above abdomen, short tips point forward right over bare thorax. Thread at thorax rear.",
+        "image": "pheasant-tail-nymph-05"
+      },
+      {
+        "title": "Build the thorax",
+        "text": "Tie in peacock herl. Wind a small thorax, then secure and trim.",
+        "tip": "Keep the thorax slightly fuller than the abdomen.",
+        "state": "Nymph with brown tail and copper ribbed abdomen, compact iridescent green peacock herl thorax on front third. Pheasant wingcase butt bundle still points backward above abdomen. Short brown fiber tips extend forward. Eye clear.",
+        "image": "pheasant-tail-nymph-06"
+      },
+      {
+        "title": "Close the wingcase",
+        "text": "Pull the butts over the thorax. Secure behind the eye and trim; sweep the saved tips down each side.",
+        "tip": "Do not cover the eye with fibers.",
+        "state": "Nearly completed pheasant tail nymph: brown tail left, ribbed abdomen, dark green peacock thorax covered on top by narrow brown pheasant wingcase. Several short brown legs angle backward along each side. Thread hangs from small brown head behind eye right.",
+        "image": "pheasant-tail-nymph-07"
+      },
+      {
+        "title": "Finish the fly",
+        "text": "Whip finish behind the eye. Cut the thread and check the wingcase stays put.",
+        "tip": "A gentle tug finds loose materials.",
+        "state": "Finished American pheasant tail nymph in vise: sparse straight brown tail left, slim brown abdomen with copper spiral rib, round peacock herl thorax, neat brown wingcase on top, short swept brown legs, tiny brown head, clear eye right, no hanging thread.",
+        "image": "pheasant-tail-nymph-08"
+      }
+    ]
+  },
+  {
+    "slug": "elk-hair-caddis",
+    "name": "Elk Hair Caddis",
+    "source": "ft26-caddis",
+    "materials": [
+      [
+        "Hook",
+        "Size 14 dry-fly hook"
+      ],
+      [
+        "Thread",
+        "Tan 70 denier"
+      ],
+      [
+        "Rib",
+        "Fine gold wire"
+      ],
+      [
+        "Body",
+        "Tan dry-fly dubbing"
+      ],
+      [
+        "Hackle",
+        "Brown dry-fly feather"
+      ],
+      [
+        "Wing",
+        "Cleaned elk hair"
+      ]
+    ],
+    "steps": [
+      {
+        "title": "Start with thread and wire",
+        "text": "Cover the shank with tan thread. Tie in fine gold wire, leaving its free end at the bend.",
+        "tip": "Keep a clear space behind the eye.",
+        "state": "Bronze dry fly hook in black vise eye right, tan thread base along shank, fine gold wire loose from bend left, no other materials.",
+        "image": "elk-hair-caddis-01"
+      },
+      {
+        "title": "Dub a slim body",
+        "text": "Twist a small pinch of dubbing onto the thread. Wrap a tapered tan body toward the eye.",
+        "tip": "Use less dubbing than you expect.",
+        "state": "Dry fly hook with tapered slim tan dubbed body, free gold wire at rear left, thread hangs from front just behind eye. No feather or wing yet.",
+        "image": "elk-hair-caddis-02"
+      },
+      {
+        "title": "Tie in the hackle",
+        "text": "Secure the bare feather stem at the front of the body.",
+        "tip": "Match the hackle to the hook size.",
+        "state": "Tan dubbed body on dry hook, loose gold wire at rear. A single brown dry-fly hackle feather tied by bare stem at front just behind eye, long feather extending diagonally up-right. No wrapped hackle, no wing.",
+        "image": "elk-hair-caddis-03"
+      },
+      {
+        "title": "Palmer toward the bend",
+        "text": "Wind the hackle rearward in open turns. Trap its tip with the wire at the bend.",
+        "tip": "Palmer means wind the feather along the body.",
+        "state": "Tan caddis body now surrounded by evenly spaced stiff brown hackle turns, feather tip trapped by gold wire at rear bend; excess feather tip extends left. Wire loose below rear. No elk wing yet. Eye right.",
+        "image": "elk-hair-caddis-04"
+      },
+      {
+        "title": "Lock the hackle",
+        "text": "Spiral the wire forward through the hackle. Secure it; remove excess wire and feather.",
+        "tip": "Wiggle the wire between the fibers.",
+        "state": "Tan caddis body palmered with stiff brown hackle and fine gold counter-rib, no loose feather or wire. Top hackle lightly trimmed to make wing seat. Bare hook eye right. No elk hair yet.",
+        "image": "elk-hair-caddis-05"
+      },
+      {
+        "title": "Prepare the wing",
+        "text": "Clean a small elk-hair bunch. Align the tips in a stacker and measure them to the hook bend.",
+        "tip": "Remove the soft underfur first.",
+        "state": "Same tan hackled dry fly without wing in black vise eye right. Just above it, a neatly aligned small bunch of natural tan elk hair held horizontally in two fingertips, tips left aligned with hook bend, cut butts right near eye. No hair tied on yet.",
+        "image": "elk-hair-caddis-06"
+      },
+      {
+        "title": "Secure the elk hair",
+        "text": "Hold the bunch on top. Make loose collecting wraps, tighten, and trim the butts into a short head.",
+        "tip": "Hold the wing to prevent it rolling.",
+        "state": "Almost finished Elk Hair Caddis in vise: tan dubbed hackled body, swept-back natural tan elk hair wing on top with aligned tips ending at bend left, short trimmed hair butts make head just behind eye right. Tan thread hangs at head.",
+        "image": "elk-hair-caddis-07"
+      },
+      {
+        "title": "Make the finish",
+        "text": "Whip finish under the hair head. Cut the thread and clear the eye.",
+        "tip": "Check that the wing does not spin.",
+        "state": "Finished Elk Hair Caddis in vise eye right: tan body ringed by stiff brown palmered hackle, low swept natural elk hair wing tips end at bend left, short clipped hair head, open eye, no hanging thread or tools.",
+        "image": "elk-hair-caddis-08"
+      }
+    ]
+  },
+  {
+    "slug": "zebra-midge",
+    "name": "Zebra Midge",
+    "source": "ft26-zebra",
+    "materials": [
+      [
+        "Hook",
+        "Size 18 curved emerger hook"
+      ],
+      [
+        "Bead",
+        "Silver; test fit on your hook"
+      ],
+      [
+        "Thread and body",
+        "Black 70 denier"
+      ],
+      [
+        "Rib",
+        "Small silver wire"
+      ]
+    ],
+    "steps": [
+      {
+        "title": "Fit the bead",
+        "text": "Pass the hook point through the bead\u2019s small hole. Slide the bead to the eye, then clamp the bend.",
+        "tip": "Test the bead before you start.",
+        "state": "Bare bronze curved emerger hook in black vise eye right, small silver round bead immediately behind eye. No thread or wire.",
+        "image": "zebra-midge-01"
+      },
+      {
+        "title": "Start the thread",
+        "text": "Anchor black thread just behind the bead. Trim the tag.",
+        "tip": "Avoid a bulky thread lump.",
+        "state": "Curved hook with silver bead head right, a few black thread wraps just behind bead, black thread hangs there. Rest of hook bare.",
+        "image": "zebra-midge-02"
+      },
+      {
+        "title": "Anchor the rib",
+        "text": "Secure the silver wire behind the bead. Bind it down the curved shank.",
+        "tip": "Keep the wire on one side.",
+        "state": "Curved hook with silver bead right, thin black thread base covers shank into bend, fine silver wire attached along shank and loose end trails rear left from bend. Thread at rear.",
+        "image": "zebra-midge-03"
+      },
+      {
+        "title": "Shape the taper",
+        "text": "Work the thread back and forth, with more wraps near the bead.",
+        "tip": "Keep the rear slender.",
+        "state": "Curved silver bead hook, black tapered thread body thicker near head and narrow at rear, a few visible thread ridges. Silver wire still loose trailing rear left. Thread at bead.",
+        "image": "zebra-midge-04"
+      },
+      {
+        "title": "Smooth the body",
+        "text": "Flatten the thread and cover the ridges with close turns.",
+        "tip": "Untwist your thread as needed.",
+        "state": "Curved hook with silver bead right and smooth black tapered body, fine silver wire still loose from rear left. Body has no silver rib yet. Black thread at front.",
+        "image": "zebra-midge-05"
+      },
+      {
+        "title": "Wind the rib",
+        "text": "Spiral the wire toward the bead in even gaps.",
+        "tip": "Leave black body visible between turns.",
+        "state": "Zebra midge with silver bead right, smooth black tapered curved body now with five evenly spaced silver wire rib turns. Excess wire projects up-right behind bead, tying thread hangs there.",
+        "image": "zebra-midge-06"
+      },
+      {
+        "title": "Secure the wire",
+        "text": "Bind the wire behind the bead. Brace it and twist away the excess.",
+        "tip": "Protect your fine scissors from the wire.",
+        "state": "Zebra midge in vise, silver bead right, black curved tapered body with five silver ribs, no excess wire. Small black collar behind bead with tying thread still hanging.",
+        "image": "zebra-midge-07"
+      },
+      {
+        "title": "Finish the collar",
+        "text": "Whip finish behind the bead. Cut the thread.",
+        "tip": "Keep the collar small.",
+        "state": "Finished Zebra Midge in vise, small silver bead head at right, smooth slender black tapered curved body, five precise silver wire ribs, tiny black collar, clear hook eye, no loose thread or wire.",
+        "image": "zebra-midge-08"
+      }
+    ]
+  },
+  {
+    "slug": "san-juan-worm",
+    "name": "San Juan Worm",
+    "source": "ft26-worm",
+    "materials": [
+      [
+        "Hook",
+        "Size 12 or 14 nymph hook"
+      ],
+      [
+        "Thread",
+        "Red 6/0"
+      ],
+      [
+        "Body",
+        "Red fine Ultra-Chenille"
+      ],
+      [
+        "Finish",
+        "Optional head cement"
+      ]
+    ],
+    "steps": [
+      {
+        "title": "Set the hook",
+        "text": "Clamp the lower hook bend with the shank level.",
+        "tip": "Keep the point clear of your fingers.",
+        "state": "Bare bronze nymph hook in small black vise, straight horizontal shank, eye right, bend left, no thread or material.",
+        "image": "san-juan-worm-01"
+      },
+      {
+        "title": "Lay a thread base",
+        "text": "Cover the shank with red thread. Stop at the bend.",
+        "tip": "A full base helps the chenille grip.",
+        "state": "Bronze nymph hook shank wrapped in thin red thread base, eye right, red thread hangs at rear bend. No chenille yet.",
+        "image": "san-juan-worm-02"
+      },
+      {
+        "title": "Cut the chenille",
+        "text": "Cut a short red chenille length with enough material to extend beyond both ends of the hook.",
+        "tip": "Trim to your preferred length at the end.",
+        "state": "Red thread based nymph hook in vise eye right, thread at rear. Separate red fine chenille cord lies horizontally just above hook, clearly unattached, about twice total hook length.",
+        "image": "san-juan-worm-03"
+      },
+      {
+        "title": "Anchor the rear",
+        "text": "Bind the chenille on top at the bend, leaving a soft tail behind.",
+        "tip": "Keep the chenille above the hook.",
+        "state": "Red chenille tied on top of thread based hook at rear bend only. Soft rear red chenille tail extends left; loose front chenille section lifts up-right above bare red-thread shank. Thread at rear.",
+        "image": "san-juan-worm-04"
+      },
+      {
+        "title": "Move the thread forward",
+        "text": "Lift the front chenille clear. Wrap the thread to just behind the eye.",
+        "tip": "Do not trap the lifted chenille.",
+        "state": "Same red chenille anchored only at rear, rear tail left, front red cord lifted high diagonally right. Red thread now hangs just behind eye right, exposed red-thread hook shank below lifted chenille.",
+        "image": "san-juan-worm-05"
+      },
+      {
+        "title": "Anchor the front",
+        "text": "Lower the chenille onto the shank. Secure it behind the eye with a short thread band.",
+        "tip": "Leave the front tip free.",
+        "state": "Red San Juan worm chenille now lies on top of hook shank with red thread bands at bend and just behind eye. Soft chenille ends extend freely left and right; right end slightly long. Red thread hangs at front band.",
+        "image": "san-juan-worm-06"
+      },
+      {
+        "title": "Tie the finish",
+        "text": "Whip finish on the front band. Snip the thread.",
+        "tip": "Do not cut the chenille.",
+        "state": "Red San Juan worm in vise, chenille secured on top at two red thread bands, both soft ends free, front end long past eye right. No hanging thread, no tools.",
+        "image": "san-juan-worm-07"
+      },
+      {
+        "title": "Trim and inspect",
+        "text": "Trim the two ends with scissors. Check the eye and tug each end gently.",
+        "tip": "This beginner version uses cut ends; no flame is needed.",
+        "state": "Finished red San Juan Worm in vise, red fine chenille lies on top of horizontal hook secured with narrow red bands at rear bend and front, neat cut fuzzy tail left and shorter front end right, clear bronze eye visible beneath front chenille. No thread or tools.",
+        "image": "san-juan-worm-08"
+      }
+    ]
+  }
+]

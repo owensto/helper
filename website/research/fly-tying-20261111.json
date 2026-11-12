@@ -1,0 +1,1328 @@
+{
+  "sources": {
+    "ft26-orvis-101": {
+      "title": "Orvis: Fly Tying 101",
+      "url": "https://howtoflyfish.orvis.com/fly-tying-101",
+      "checked": "2026-11-11",
+      "scopeNote": "Basic tool functions, core attachment skills, and a beginner course with simple fly patterns."
+    },
+    "ft26-hooks": {
+      "title": "Orvis: Hook Basics — Hook Sizes",
+      "url": "https://howtoflyfish.orvis.com/fly-tying-videos/techniques/1143-hook_basics_hook_sizes",
+      "checked": "2026-11-11",
+      "scopeNote": "Hook numbering and differences between manufacturers and hook models."
+    },
+    "ft26-thread": {
+      "title": "Charlie’s Fly Box: Thread; A Tangled Mess",
+      "url": "https://charliesflybox.com/blogs/archived-fly-tying-articles/thread-a-tangled-mess",
+      "checked": "2026-11-11",
+      "scopeNote": "Denier, inconsistent aught labels, and the behavior of common nylon and polyester threads."
+    },
+    "ft26-slick": {
+      "title": "Dr. Slick: 2025–2026 Product Catalog",
+      "url": "https://www.drslick.com/download/catalog/Dr_Slick_Catalog_25-26.pdf",
+      "checked": "2026-11-11",
+      "scopeNote": "Maker descriptions and model listings for bobbins, scissors, hackle pliers, stackers, whip finishers, and the TYER gift set. The PDF text was read directly."
+    },
+    "ft26-griffin": {
+      "title": "Griffin Enterprises: Odyssey Spider Vise",
+      "url": "https://www.griffinenterprisesinc.com/index.cfm/product/18_2/odyssey-spider-vise.htm",
+      "checked": "2026-11-11",
+      "scopeNote": "Maker describes true rotation and a hook range from size 28 through 4/0."
+    },
+    "ft26-griffin-travel": {
+      "title": "Griffin Enterprises: The Odyssey Spider Travel Kit",
+      "url": "https://www.griffinenterprisesinc.com/index.cfm/product/20_2/the-odyssey-spider-travel-kit.htm",
+      "checked": "2026-11-11",
+      "scopeNote": "Maker list of the vise, C-clamp, cradle, tools, and case included in this specific travel kit."
+    },
+    "ft26-wapsi-starter": {
+      "title": "Wapsi: Fly Tying Starter Kit",
+      "url": "https://wapsifly.com/products/kits/wapsi-fly-tying-starter-kit/",
+      "checked": "2026-11-11",
+      "scopeNote": "Maker states that the kit has tools, materials, and handbook instructions for ten fly patterns."
+    },
+    "ft26-wapsi-deluxe": {
+      "title": "Wapsi: Deluxe Fly Tying Starter Kit",
+      "url": "https://wapsifly.com/products/kits/wapsi-deluxe-fly-tying-starter-kit/",
+      "checked": "2026-11-11",
+      "scopeNote": "Maker states that the expanded kit has tools and materials for seventeen patterns and a handbook."
+    },
+    "ft26-renzetti": {
+      "title": "Renzetti / Mayfly Outdoors: Traveler C 2003 Pedestal Base Vise",
+      "url": "https://mayflyoutdoors.com/collections/renzetti-vises/products/renzetti-traveler-c2003-pedestal-base-fly-tying-vise",
+      "checked": "2026-11-11",
+      "scopeNote": "Official product page reached through renzetti.com. Supports true rotary action, cam jaws, size 28–4/0 hooks, and handed versions."
+    },
+    "ft26-regal": {
+      "title": "Regal Vise: Vise Identification",
+      "url": "https://regalvise.com/vise-identification/",
+      "checked": "2026-11-11",
+      "scopeNote": "Maker distinguishes Medallion rotation and tilt from Revolution rotation, and explains base and jaw choices."
+    },
+    "ft26-regal-operation": {
+      "title": "Regal Vise: Vises and Jaw Operation",
+      "url": "https://regalvise.com/",
+      "checked": "2026-11-11",
+      "scopeNote": "Maker describes the squeeze-handle hook grip and the Medallion and Revolution jaw system."
+    },
+    "ft26-regal-warranty": {
+      "title": "Regal Vise: Care, Repairs & Warranty",
+      "url": "https://regalvise.com/care-repair/",
+      "checked": "2026-11-11",
+      "scopeNote": "Limited lifetime defect coverage, normal-wear and misuse exclusions, and restrictions on hook placement and unauthorized repair."
+    },
+    "ft26-peak": {
+      "title": "PEAK Fishing: PRV-G2 Rotary Vise with Pedestal Base",
+      "url": "https://peakfishing.com/products/fly-tying-vises/prv-g2/",
+      "checked": "2026-11-11",
+      "scopeNote": "Maker describes the base, adjustable rotation resistance, supplied bobbin cradle, and limited lifetime defect warranty."
+    },
+    "ft26-bugger": {
+      "title": "Fly Fishers International: The Lowly Woolly Bugger",
+      "url": "https://www.flyfishersinternational.org/Portals/0/FlyoftheMonth/PreviousIssues/1998-10%20October%20-%20Woolly%20Bugger.pdf?ver=R1ahAS3Iw92AOv7zxdwSpw%3D%3D",
+      "checked": "2026-11-11",
+      "scopeNote": "Jim Abbs’s FFF Fly of the Month article supports the basic recipe, food forms, and river and lake methods. Credit: FFF website."
+    },
+    "ft26-bugger-olive": {
+      "title": "Orvis: How to Tie the Olive Woolly Bugger",
+      "url": "https://news.orvis.com/fly-fishing/video-how-to-tie-the-olive-woolly-bugger",
+      "checked": "2026-11-11",
+      "scopeNote": "A separate weighted variation supports marabou, chenille, hackle, and a 140-denier thread option; not the exact beginner recipe."
+    },
+    "ft26-pheasant": {
+      "title": "Orvis: American Pheasant Tail Nymph",
+      "url": "https://howtoflyfish.orvis.com/fly-tying-videos/nymph-flies/692-american_pheasant_tail_nymph",
+      "checked": "2026-11-11",
+      "scopeNote": "American-style recipe with thread, copper wire, pheasant fibers, peacock thorax, and mayfly-nymph imitation."
+    },
+    "ft26-caddis": {
+      "title": "Orvis: Elk Hair Caddis Pattern & Tying Instructions",
+      "url": "https://howtoflyfish.orvis.com/fly-tying-videos/dry-flies/735-elk_hair_caddis",
+      "checked": "2026-11-11",
+      "scopeNote": "The transcript supports a fine-wire rib, dry-fly dubbing, palmered hackle, and a cleaned, stacked hair wing."
+    },
+    "ft26-caddis-tom": {
+      "title": "Orvis: Tying an Elk-Hair Caddis with Tom",
+      "url": "https://news.orvis.com/fly-fishing/video-tying-an-elk-hair-caddis-with-tom",
+      "checked": "2026-11-11",
+      "scopeNote": "Brown-hackle, tan-dubbing recipe and several surface presentation methods."
+    },
+    "ft26-zebra": {
+      "title": "Orvis: Zebra Midge Pattern & Tying Instructions",
+      "url": "https://howtoflyfish.orvis.com/fly-tying-videos/nymph-flies/659-zebra_midge",
+      "checked": "2026-11-11",
+      "scopeNote": "Short emerger hooks, a black thread body, silver wire, bead placement, and body construction. Demonstrated bead size applies to the demonstrated hook."
+    },
+    "ft26-midges": {
+      "title": "Orvis: How to Fish Midge Patterns in Winter",
+      "url": "https://news.orvis.com/fly-fishing/how-to-fish-midge-patterns-in-winter-redux",
+      "checked": "2026-11-11",
+      "scopeNote": "Midge life stages, tailwater relevance, and subsurface presentation. Broad seasonal and success-percentage claims are not used."
+    },
+    "ft26-worm": {
+      "title": "Charlie’s Fly Box: San Juan Worm",
+      "url": "https://charliesflybox.com/blogs/step-by-step-tutorials/san-juan-worm",
+      "checked": "2026-11-11",
+      "scopeNote": "Aquatic-worm imitation, TMC 3761 hooks, UNI 6/0 thread, Ultra-Chenille, and two attachment points. The beginner steps omit flame treatment."
+    },
+    "ft26-wire": {
+      "title": "Wapsi: Ultra Wire",
+      "url": "https://wapsifly.com/products/spooled/ultra-wire/",
+      "checked": "2026-11-11",
+      "scopeNote": "Maker identifies copper wire and its uses for ribs, weight, flash, and bodies; lists small copper, gold, and silver options."
+    },
+    "ft26-chenille": {
+      "title": "Wapsi: Ultra Chenille",
+      "url": "https://wapsifly.com/products/yarns/ultra-chenille/",
+      "checked": "2026-11-11",
+      "scopeNote": "Maker product identity for the worm material in the shopping lists."
+    },
+    "ft26-whiting-packs": {
+      "title": "The Fly Shop: Whiting Farms 100 Packs",
+      "url": "https://catalog.theflyshop.com/products/whiting-farms-100-packs",
+      "checked": "2026-11-11",
+      "scopeNote": "Retailer confirmation of the named dry-fly hackle product. No maker warranty, yield, or performance claim relies on this page."
+    },
+    "ft26-orvis-materials": {
+      "title": "Orvis: Fly Tying Tools & Materials",
+      "url": "https://www.orvis.com/fly-fishing/fly-tying",
+      "checked": "2026-11-11",
+      "scopeNote": "General beginner pattern progression, material groups, and finishing steps."
+    },
+    "ft26-bugger-dnr": {
+      "title": "Minnesota DNR: Tying the Wooly Bugger",
+      "url": "https://files.dnr.state.mn.us/recreation/fishing/fin/tie_wooly_bugger.pdf",
+      "checked": "2026-11-11",
+      "scopeNote": "MinnAqua instruction on the basic marabou, chenille, and hackle fly, with attachment and finishing steps."
+    },
+    "ft26-caddis-craven": {
+      "title": "Fly Fisherman / Charlie Craven: How to Tie the Elk Hair Caddis Fly",
+      "url": "https://www.flyfisherman.com/editorial/fly-tying-the-elk-hair-caddis/151932",
+      "checked": "2026-11-11",
+      "scopeNote": "Firsthand recipe and steps for the dubbed body, rearward hackle, forward wire rib, and elk-hair wing."
+    },
+    "ft26-ffi-manual": {
+      "title": "Fly Fishers International: Beginner Fly Tying Manual",
+      "url": "https://www.flyfishersinternational.org/Portals/0/LearningCenter/Presentations/FlyTying/FFI_Fundamental_Flies_Beginner_Fly_Tier_Manual.pdf?ver=FzXU1dNKlzv78Gb5cr7QIQ%3D%3D",
+      "checked": "2026-11-11",
+      "scopeNote": "Basic thread attachment, body construction, hook shapes, and finishing. Used for the beginner workflow and material explanations."
+    },
+    "ft26-tmc-hooks": {
+      "title": "Tiemco: TMC Fly Hooks Catalog",
+      "url": "https://www.tiemco.co.jp/featuredbrand/tmc/img/TMCFlyHooksCatalog_JPN.pdf",
+      "checked": "2026-11-11",
+      "scopeNote": "Maker descriptions of the TMC 5262, 5263, 2488, 100, and 3761 hook families used as shopping options."
+    },
+    "ft26-wapsi-bugger-kit": {
+      "title": "Wapsi: Wooly Bugger Kit",
+      "url": "https://wapsifly.com/products/kits/wooly-bugger-kit/",
+      "checked": "2026-11-11",
+      "scopeNote": "Maker confirms the named pattern kit. The shopping notes make no quantity or tool-inclusion claim."
+    },
+    "ft26-wapsi-kits": {
+      "title": "Wapsi: Kits",
+      "url": "https://wapsifly.com/products/kits/",
+      "checked": "2026-11-11",
+      "scopeNote": "Maker lists the San Juan Worm and Wooly Bugger pattern kits."
+    },
+    "ft26-wapsi-dubbing": {
+      "title": "Wapsi: Super Fine Dubbing",
+      "url": "https://wapsifly.com/products/dubbing/super-fine-dubbing/",
+      "checked": "2026-11-11",
+      "scopeNote": "Maker product identity for the dry-fly dubbing shopping option."
+    },
+    "ft26-wapsi-elk": {
+      "title": "Wapsi: Elk Body Hair",
+      "url": "https://wapsifly.com/products/hair/elk-body-hair/",
+      "checked": "2026-11-11",
+      "scopeNote": "Maker product identity for the elk-hair shopping option."
+    },
+    "ft26-wapsi-peacock": {
+      "title": "Wapsi: Peacock Herl",
+      "url": "https://wapsifly.com/products/feathers/peacock-herl/",
+      "checked": "2026-11-11",
+      "scopeNote": "Maker product identity for the nymph-thorax shopping option."
+    },
+    "ft26-pheasant-craven": {
+      "title": "Charlie’s Fly Box: Pheasant Tail Fly Tying Video",
+      "url": "https://charliesflybox.com/blogs/fly-tying-videos/pheasant-tail-fly-tying-video",
+      "checked": "2026-11-11",
+      "scopeNote": "Additional firsthand support for the mayfly-nymph imitation and the pheasant-fiber, wire, and peacock material roles. The hook choice differs from the article recipe."
+    },
+    "ft26-wapsi-pheasant": {
+      "title": "Bear’s Den: Wapsi Ringneck Pheasant Tail Feathers",
+      "url": "https://bearsden.com/products/221-wapsi-ringneck-tail-feathers",
+      "checked": "2026-11-11",
+      "scopeNote": "Retailer confirmation of the named feather product and natural-color option. No performance or warranty claim is used."
+    },
+    "ft26-wapsi-beads": {
+      "title": "St. Peter’s Fly Shop: Cyclops Beads",
+      "url": "https://stpetes.com/collections/beads-cones-eyes/products/cyclops-beads-black-24-pack",
+      "checked": "2026-11-11",
+      "scopeNote": "Retailer lists Wapsi Cyclops beads and a silver option. The article requires a fit check instead of a universal bead-to-hook chart."
+    }
+  },
+  "articles": [
+    {
+      "slug": "fly-tying-for-beginners",
+      "title": "Fly tying for beginners: tools, materials, and your first fly",
+      "description": "Learn the basic fly-tying tools, choose hooks and materials, and follow a simple bench routine for your first trout flies.",
+      "category": "FLY TYING / BEGINNERS",
+      "destination": "na-us-mt-001",
+      "sections": [
+        {
+          "id": "start",
+          "title": "What fly tying is",
+          "paragraphs": [
+            "Fly tying means attaching thread, feathers, hair, or synthetic materials to a hook to make an artificial fly. Some flies copy insects. Others suggest a small fish, a leech, or a worm. You build the shape a little at a time, then secure the thread with a finishing knot.",
+            "You do not need artistic talent to begin. You need a clear recipe and enough room to see your hands. A plain fly with secure materials is a useful first goal. Start with a San Juan Worm or a Woolly Bugger. Save tiny dry flies for later.",
+            "Think of the recipe as a short list of jobs. The hook carries the fly. The thread holds everything together. The other materials provide the shape and movement. Once those jobs make sense, the long wall of packets in a fly shop becomes easier to understand."
+          ],
+          "sources": [
+            "ft26-orvis-materials",
+            "ft26-orvis-101"
+          ]
+        },
+        {
+          "id": "why",
+          "title": "Why tie your own flies?",
+          "paragraphs": [
+            "Tie because you want more control over the flies in your box. You can make the same pattern smaller, change its color, or leave out extra weight. You can also replace a favorite pattern without accepting whatever size remains in the shop bin.",
+            "The bench gives you a reason to examine a fly closely. Notice its slim abdomen, the space behind the eye, and the amount of hair in the wing. Those details give each practice session a purpose. They also give you useful questions to ask another angler.",
+            "Treat savings as a possible benefit, not a promise. Tools, unused materials, and an expanding collection of feathers all cost money. Set a small first project: six flies of one pattern. Buy for that project. Decide what to add after you finish it."
+          ],
+          "sources": []
+        },
+        {
+          "id": "vise",
+          "title": "Choose a vise that fits your table",
+          "paragraphs": [
+            "A vise holds the hook while both hands work. First choose the mount. A C-clamp attaches to a table edge. A pedestal sits on the tabletop. Measure the available edge before you buy a clamp, including any apron beneath the table.",
+            "Then choose how the head moves. A stationary vise keeps the hook fixed during the wrap. A true rotary vise lets a correctly aligned hook shank turn around its own axis. A head that turns for inspection does not necessarily offer that same alignment.",
+            "A rotary vise can help with a chenille body or an even wire rib. It also adds a setup task: aligning the hook. You can learn every fly in this beginner series with ordinary hand wraps. Give secure hook grip and comfortable hand clearance first priority."
+          ],
+          "table": {
+            "heads": [
+              "Choice",
+              "Useful feature",
+              "Check before purchase"
+            ],
+            "rows": [
+              [
+                "C-clamp mount",
+                "Leaves most of the tabletop clear",
+                "The clamp must reach and fit the table edge."
+              ],
+              [
+                "Pedestal mount",
+                "Moves between suitable flat surfaces",
+                "Try your usual thread pull for sliding or tipping."
+              ],
+              [
+                "Stationary head",
+                "Keeps the first wrap routine simple",
+                "Leave space for fingers around the hook bend."
+              ],
+              [
+                "True rotary head",
+                "Turns an aligned shank for material wraps",
+                "Check alignment and the position of the rotation control."
+              ]
+            ]
+          },
+          "sources": [
+            "ft26-regal",
+            "ft26-griffin",
+            "ft26-renzetti"
+          ]
+        },
+        {
+          "id": "tools",
+          "title": "The small tool set you will actually use",
+          "paragraphs": [
+            "The bobbin holds the thread spool and guides the thread through a tube. Choose one that releases thread smoothly. A damaged tube can frustrate your practice. Test it with the thread you plan to use. Dr. Slick offers ceramic-insert and glass-insert bobbins.",
+            "Use sharp, fine scissors for thread and fibers. Keep another cutter for wire. A whip finisher helps form the final thread knot. Practice that movement on a bare hook before you surround it with feathers. A bodkin is a handled needle for small jobs, such as placing cement.",
+            "Hackle pliers grip a feather stem while you wrap it. They help when the feather leaves little room for your fingers. Try a scrap feather first. A hair stacker aligns hair tips for an Elk Hair Caddis. Add it when you reach that pattern.",
+            "Put each tool in a fixed place beside the vise. Keep the scissors on the side of your cutting hand. Leave the space directly below the hook clear for the bobbin. You want to reach a tool without searching beneath a pile of material packets.",
+            "The shopping list offers a complete kit and separate parts. Choose one route first. Skip tools that your kit already includes. The premium vise is an optional alternative, not another item you need beside the starter vise."
+          ],
+          "sources": [
+            "ft26-orvis-101",
+            "ft26-slick"
+          ]
+        },
+        {
+          "id": "hooks",
+          "title": "Hooks: learn the shape as well as the number",
+          "paragraphs": [
+            "For ordinary numbered hooks, a larger number generally means a smaller hook. A size 16 is smaller than a size 10 within a comparable hook model. The aught scale runs the other way: 4/0 is larger than 2/0. Hook sizes vary between models and makers.",
+            "A dry-fly hook, a nymph hook, and a streamer hook can have different shapes at the same numbered size. Match the recipe’s hook style before its number. A long streamer shank gives a Woolly Bugger room for its body. A short emerger hook gives a Zebra Midge its compact outline.",
+            "Buy one hook model in one size for the first batch. Keep the packet beside the vise. Use the hook shank as your ruler when you measure a tail or wing. This is easier than trying to judge a few loose fibers against an empty background."
+          ],
+          "sources": [
+            "ft26-hooks",
+            "ft26-bugger",
+            "ft26-zebra"
+          ]
+        },
+        {
+          "id": "thread",
+          "title": "Thread sizes without the headache",
+          "paragraphs": [
+            "Fly-tying thread often carries an aught label, such as 6/0 or 8/0, or a denier number. Denier measures mass for a fixed length. It does not directly state diameter or breaking strength. Aught labels also differ between brands, so a universal conversion chart can mislead you.",
+            "For a simple start, choose 140-denier nylon for a size 8 Woolly Bugger and 70-denier nylon for a small thread-bodied midge. These are starting choices, not rules for every fly. A recipe that names a particular brand gives you a useful reference.",
+            "Stay with the same spool while you learn tension. Changing brand, material, and size together makes the result harder to understand. Black and brown cover these first practice projects. Add colors when a recipe needs them rather than buying a full rack immediately."
+          ],
+          "sources": [
+            "ft26-thread",
+            "ft26-bugger-olive",
+            "ft26-zebra"
+          ]
+        },
+        {
+          "id": "feathers",
+          "title": "Hackle, dubbing, and chenille",
+          "paragraphs": [
+            "Hackle is a feather wrapped around the hook. The fibers may support a dry fly or give a wet fly movement. The Elk Hair Caddis uses dry-fly hackle. The Woolly Bugger uses softer hackle around its body. Choose the feather for that job rather than color alone.",
+            "Dubbing consists of short fibers used to form a body. A small pinch twisted onto the thread becomes a thin rope, often called a dubbing noodle. Start with less than you think you need. You can add another pinch more easily than remove a thick body.",
+            "Chenille has fibers around a central core. You wind it into the Woolly Bugger’s body. Ultra Chenille also forms the exposed body of a San Juan Worm. Keep the recipe’s material name on your list. A bulky streamer chenille and a slim worm material need different amounts of room.",
+            "Buy one useful color of each material for your chosen fly. Lay a feather beside the hook before you attach it. Check the fiber length and the room left for the head. This quick comparison can save a full restart."
+          ],
+          "sources": [
+            "ft26-bugger",
+            "ft26-caddis-tom",
+            "ft26-ffi-manual",
+            "ft26-worm"
+          ]
+        },
+        {
+          "id": "beads-wire",
+          "title": "Beads and wire have different jobs",
+          "paragraphs": [
+            "A bead can give a nymph a head and extra weight. Fit it to the actual hook before you start the thread. The Zebra Midge lesson from Orvis uses a small silver bead. That bead size belongs to the demonstrated hook combination, not every hook on the shelf.",
+            "Wire can form a rib, add weight, or create a body. Wapsi lists these uses for Ultra Wire. A fine rib also helps protect delicate materials when its wraps cross them. Use the size in your recipe. Thick wire can overwhelm a small fly.",
+            "For the first attempt, make an unweighted Woolly Bugger or a plain worm. Add beads when you want to learn their effect. Keep the finished weighted and unweighted flies in separate rows. A small label is easier to read than a guess beside the river."
+          ],
+          "sources": [
+            "ft26-zebra",
+            "ft26-wire"
+          ]
+        },
+        {
+          "id": "workflow",
+          "title": "A starter workflow for one calm session",
+          "paragraphs": [
+            "Choose a single recipe before you clear the table. Read the whole sequence once. Put only its materials within reach. Set the vise at a height that lets your shoulders relax. Aim a lamp at the hook without putting your hands in the main shadow.",
+            "Use this routine for the first batch. The goal is a repeatable fly, not speed. If a step looks wrong, stop there. Back out a few wraps while the material is still easy to reach. Covering a lump with more thread usually creates a larger lump."
+          ],
+          "items": [
+            "Seat the hook in the jaws as the vise maker directs. Keep the eye and the tying area clear.",
+            "Start the thread behind the eye. Trap the short tag with several wraps, then trim it.",
+            "Cover the working shank with a controlled thread base. Leave room for the final head.",
+            "Measure the first material against the hook. Hold it in place while the first securing wraps tighten.",
+            "Complete the recipe in order. Check the outline after each material rather than only at the end.",
+            "Secure the head with a whip finish. Trim the thread after the knot seats.",
+            "Clear the hook eye. Test the attached materials with a gentle pull before the fly enters your box.",
+            "Put the first fly beside the vise. Use it to compare the next five flies."
+          ],
+          "ordered": true,
+          "sources": [
+            "ft26-orvis-materials",
+            "ft26-ffi-manual"
+          ]
+        },
+        {
+          "id": "mistakes",
+          "title": "Common mistakes and useful fixes",
+          "paragraphs": [
+            "Thread breaks deserve a pause. Look for contact with the hook point, excessive tension, or a rough bobbin tube. Change one thing at a time. Pull thread through the bobbin away from the hook to help separate a tube problem from a hook-point problem.",
+            "A crowded eye usually starts earlier than the final knot. Mark the head space in your mind before the first material goes on. End the body short of that space. If the last wraps creep forward, remove a few instead of hiding the problem under cement.",
+            "Loose materials need a better attachment, not a larger head. Hold the material firmly through the first wraps. Check it before you continue. If the tail rotates around the hook, undo it now. You will learn more from that repair than from finishing a weak fly.",
+            "Finish each session with one note: what improved, and what you will change next time. Keep an early fly for comparison. The first useful milestone is simple: several flies with clear eyes, secure materials, and similar shapes. You can build a good fly box from there."
+          ],
+          "sources": [
+            "ft26-ffi-manual",
+            "ft26-slick"
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Do I need a rotary vise to learn?",
+          "a": "No. Hand wraps work for these first patterns. Choose a vise that holds your hooks securely and fits your table."
+        },
+        {
+          "q": "Which fly should I tie first?",
+          "a": "Start with the San Juan Worm for thread attachment and finishing. Try the Woolly Bugger next for tails and wrapped bodies."
+        },
+        {
+          "q": "Should I buy all the materials at once?",
+          "a": "Buy for one pattern and one hook size first. Add the next recipe after you finish a small batch."
+        }
+      ],
+      "relatedTrips": [
+        "na-us-mt-001"
+      ],
+      "relatedGuides": [
+        "first-five-flies-to-tie",
+        "fly-tying-kit-buying-guide"
+      ],
+      "reel": {
+        "slug": "mountain-fly-loop",
+        "note": "A short fly-casting animation accompanies this guide."
+      },
+      "regionPath": "/north-america/united-states/montana/",
+      "regionLabel": "Explore Montana fishing trips",
+      "nextStep": "Choose one pattern and tie six copies. Keep the best one beside the vise for the next session.",
+      "new": true,
+      "plannerNote": "The planner starts with the Madison River in Montana. Select your own destination before you prepare the trip list.",
+      "revision": "Added fly-tying instruction and sources checked on November 11, 2026."
+    },
+    {
+      "slug": "first-five-flies-to-tie",
+      "title": "The first five flies to tie: recipes that teach useful skills",
+      "description": "Tie a Woolly Bugger, Pheasant Tail Nymph, Elk Hair Caddis, Zebra Midge, and San Juan Worm with simple recipes and numbered steps.",
+      "category": "FLY TYING / PATTERNS",
+      "destination": "na-us-mt-001",
+      "sections": [
+        {
+          "id": "start",
+          "title": "Five patterns, five useful lessons",
+          "paragraphs": [
+            "A first fly box does not need dozens of patterns. These five give you a streamer, a dry fly, and three subsurface choices. They also introduce different bench skills without a new tool for every fly. Pick one pattern for tonight and leave the other packets closed.",
+            "The suggested sizes below favor room for your fingers. The recipes use familiar versions of the classics, with a few stated beginner choices. You can reduce the hook size later. First aim for an open eye, secure materials, and a shape you can repeat.",
+            "Read the recipe before you start the thread. Put the hook, thread spool, and materials beside the vise in the order you will use them. Watch the linked lesson when a hand movement is unclear. Pause at the same stage on your own hook."
+          ],
+          "sources": [
+            "ft26-orvis-101"
+          ]
+        },
+        {
+          "id": "compare",
+          "title": "Compare the five before you start",
+          "paragraphs": [
+            "For the gentlest start, tie the worm first. Follow it with the Bugger, the midge, the Pheasant Tail, and the caddis. That is a suggested learning order. If you mainly fish streamers, spend more time on the Bugger before you move on."
+          ],
+          "table": {
+            "heads": [
+              "Fly",
+              "Food it suggests",
+              "Water or presentation",
+              "Main bench lesson"
+            ],
+            "rows": [
+              [
+                "Woolly Bugger",
+                "Leeches, small fish, or larger aquatic food",
+                "Streams and lakes; a slow retrieve or swing",
+                "A mobile tail and wrapped body"
+              ],
+              [
+                "Pheasant Tail Nymph",
+                "Mayfly nymphs",
+                "Trout streams; a drift below the surface",
+                "A slim abdomen and compact thorax"
+              ],
+              [
+                "Elk Hair Caddis",
+                "Adult caddisflies",
+                "The surface of trout streams",
+                "Hackle control and a hair wing"
+              ],
+              [
+                "Zebra Midge",
+                "Subsurface midges, especially pupae",
+                "Tailwater runs; a controlled subsurface drift",
+                "A smooth thread taper and wire rib"
+              ],
+              [
+                "San Juan Worm",
+                "Aquatic worms",
+                "Stream runs; a subsurface drift",
+                "Secure attachment and a clean finish"
+              ]
+            ]
+          },
+          "sources": [
+            "ft26-bugger",
+            "ft26-pheasant",
+            "ft26-caddis-tom",
+            "ft26-zebra",
+            "ft26-midges",
+            "ft26-worm"
+          ]
+        },
+        {
+          "id": "woolly-bugger",
+          "title": "1. Woolly Bugger: learn the larger movements",
+          "paragraphs": [
+            "The Woolly Bugger suggests several foods rather than one exact insect. Fish it in streams or lakes. Let the current move it on a slow swing, or try short pulls in still water. Jim Abbs describes both approaches in the FFF pattern article.",
+            "This first version has no bead or added weight. It follows the basic marabou, chenille, and hackle construction taught by Minnesota DNR and FFF. Use black for the first batch. Olive can be your next variation.",
+            "Before you tighten the tail wraps, view the hook from the side. Compare the tail length with the shank. Take a photograph of the finished fly if you want a record. On the next attempt, change only the tail amount or body thickness."
+          ],
+          "table": {
+            "heads": [
+              "Part",
+              "Starter recipe"
+            ],
+            "rows": [
+              [
+                "Hook",
+                "Size 8 long-shank streamer hook"
+              ],
+              [
+                "Thread",
+                "Black 140-denier nylon"
+              ],
+              [
+                "Tail",
+                "Black marabou"
+              ],
+              [
+                "Body",
+                "Black chenille sized for the hook"
+              ],
+              [
+                "Hackle",
+                "Soft black saddle feather"
+              ],
+              [
+                "Finish",
+                "A small amount of head cement"
+              ]
+            ]
+          },
+          "items": [
+            "Secure the hook. Lay a thread base back to the bend.",
+            "Tie in a marabou tail about one shank long. Bind the excess forward without filling the head space.",
+            "Return the thread to the bend. Attach the prepared hackle at the rear, ready to wrap forward.",
+            "Expose a short section of the chenille core. Secure that core beside the hackle attachment.",
+            "Move the thread forward. Stop short of the eye.",
+            "Wind adjacent chenille turns toward the thread. Secure the end and trim the excess.",
+            "Wrap the feather forward in spaced turns. Stroke trapped fibers back as you go.",
+            "Tie off the hackle. Form a small thread head, then whip finish.",
+            "Trim the thread. Place a small drop of cement on the head without blocking the eye."
+          ],
+          "ordered": true,
+          "sources": [
+            "ft26-bugger",
+            "ft26-bugger-dnr",
+            "ft26-bugger-olive",
+            "ft26-wapsi-bugger-kit"
+          ]
+        },
+        {
+          "id": "pheasant-tail",
+          "title": "2. Pheasant Tail Nymph: keep the body slim",
+          "paragraphs": [
+            "This is the American-style Pheasant Tail, with a peacock thorax and thread. It suggests mayfly nymphs. Drift it below the surface in a trout stream. The recipe follows the Orvis lesson, with size 14 as a roomier first attempt.",
+            "Keep a clear boundary between the abdomen and thorax. Think of the rear two-thirds as the slim body and the front third as the chest. Leave a separate space for the head. Stop before adding the peacock if the abdomen already fills that space.",
+            "For practice, compare three finished flies from above. Look at the width of each body. Choose one as your target for the next three. A consistent shape is a more useful early goal than an exact fiber count on every tail."
+          ],
+          "table": {
+            "heads": [
+              "Part",
+              "Starter recipe"
+            ],
+            "rows": [
+              [
+                "Hook",
+                "Size 14, 2X-long nymph hook"
+              ],
+              [
+                "Thread",
+                "Brown UTC Ultra Thread, 70 denier"
+              ],
+              [
+                "Tail and abdomen",
+                "Pheasant-tail fibers"
+              ],
+              [
+                "Rib",
+                "Small copper wire"
+              ],
+              [
+                "Wingcase and legs",
+                "A separate bunch of pheasant-tail fibers"
+              ],
+              [
+                "Thorax",
+                "Peacock herl"
+              ]
+            ]
+          },
+          "items": [
+            "Start the thread behind the head space. Secure the wire along the shank.",
+            "Attach a sparse pheasant tail at the bend. Aim for roughly three-quarters of the shank length.",
+            "Wrap the fiber butts forward for the abdomen. Tie them off at the two-thirds point.",
+            "Counter-wrap the copper rib across the abdomen. Secure the wire and remove its excess.",
+            "Attach the wingcase bunch at the abdomen’s front. Point its tips rearward, with enough length for the cover and legs.",
+            "Tie in peacock herl. Wrap a compact thorax, then secure and trim it.",
+            "Pull the wingcase forward over the thorax. Anchor it behind the eye.",
+            "Divide the projecting tips into two groups. Fold them back as legs and secure them.",
+            "Whip finish a small head. Clear the eye before you remove the fly."
+          ],
+          "ordered": true,
+          "sources": [
+            "ft26-pheasant",
+            "ft26-tmc-hooks",
+            "ft26-wapsi-peacock",
+            "ft26-pheasant-craven",
+            "ft26-wapsi-pheasant"
+          ]
+        },
+        {
+          "id": "elk-hair-caddis",
+          "title": "3. Elk Hair Caddis: meet the hair wing",
+          "paragraphs": [
+            "The Elk Hair Caddis is an adult-caddis dry fly. Start with a natural drift on a trout stream. Orvis also describes surface skitters and strips as ways to fish it. Try the quiet drift first so you can watch how your fly sits.",
+            "This tan version combines a dubbed body, brown dry-fly hackle, and an elk-hair wing. The wire crosses the hackle stem to hold it in place. Charlie Craven and Orvis both show this general method. A rotary vise is optional.",
+            "Keep the wing bundle modest. Before you tie it down, hold it over the finished body and look from above. Set aside some hair if the bundle overwhelms the hook. Save that loose hair for another attempt instead of forcing it all onto this fly."
+          ],
+          "table": {
+            "heads": [
+              "Part",
+              "Starter recipe"
+            ],
+            "rows": [
+              [
+                "Hook",
+                "Size 14 standard dry-fly hook"
+              ],
+              [
+                "Thread",
+                "Tan UNI 6/0"
+              ],
+              [
+                "Body",
+                "Tan Superfine dry-fly dubbing"
+              ],
+              [
+                "Hackle",
+                "Brown dry-fly rooster feather matched to the hook"
+              ],
+              [
+                "Rib",
+                "Fine copper wire"
+              ],
+              [
+                "Wing",
+                "Natural elk hair, cleaned and stacked"
+              ]
+            ]
+          },
+          "items": [
+            "Start the thread behind the eye. Bind the wire along the shank to the bend.",
+            "Twist a small amount of dubbing onto the thread. Wrap a slim body toward the front.",
+            "Attach the hackle stem at the body’s front. Keep the head space clear.",
+            "Spiral the feather rearward to the bend. Hold its tip under tension.",
+            "Trap the feather tip with the wire. Wind the wire forward through the hackle.",
+            "Secure the wire. Remove the spare wire and feather tip.",
+            "Clean the loose underfur from a small elk-hair bunch. Align the tips in a hair stacker.",
+            "Measure the wing so the tips reach the hook bend. Trim the butts to leave a short head.",
+            "Hold the hair on top of the shank. Make two gathering wraps, then tighten without releasing the bundle.",
+            "Add securing wraps. Whip finish with the eye clear of hair."
+          ],
+          "ordered": true,
+          "sources": [
+            "ft26-caddis",
+            "ft26-caddis-tom",
+            "ft26-caddis-craven",
+            "ft26-tmc-hooks",
+            "ft26-wapsi-elk",
+            "ft26-wapsi-dubbing",
+            "ft26-whiting-packs"
+          ]
+        },
+        {
+          "id": "zebra-midge",
+          "title": "4. Zebra Midge: learn to stop adding thread",
+          "paragraphs": [
+            "The Zebra Midge is a small subsurface midge pattern. Tailwater trout often feed on midges, and the pupal stage is an important target. Fish this fly below the surface with a controlled drift. Change depth before you assume the color is wrong.",
+            "Start on a size 18 hook if a size 20 feels cramped. Select a silver bead that passes the bend and seats behind the eye. Orvis demonstrates a 1/16-inch bead on its size 20 hook. Test the fit on your own hook model.",
+            "A thread body shows every extra wrap. That makes this a useful practice fly even before you fish it. Stop after each pass along the shank and inspect the outline. Compare the first and last flies in a batch to see where you used unnecessary thread."
+          ],
+          "table": {
+            "heads": [
+              "Part",
+              "Starter recipe"
+            ],
+            "rows": [
+              [
+                "Hook",
+                "Size 18 short emerger hook"
+              ],
+              [
+                "Thread and body",
+                "Black UTC Ultra Thread 70 denier"
+              ],
+              [
+                "Bead",
+                "Silver; fit to the selected hook"
+              ],
+              [
+                "Rib",
+                "Small silver Ultra Wire"
+              ]
+            ]
+          },
+          "items": [
+            "Slide the bead onto the hook, small hole first. Secure the hook in the vise.",
+            "Start the thread behind the bead. Attach the wire along the shank.",
+            "Bind the wire down toward the bend. Return the thread toward the bead.",
+            "Use controlled thread passes to form a slim taper. Keep the rear narrower than the front.",
+            "Wind the wire forward in evenly spaced open turns. Secure it behind the bead.",
+            "Remove the excess wire. Whip finish a small collar behind the bead."
+          ],
+          "ordered": true,
+          "sources": [
+            "ft26-zebra",
+            "ft26-midges",
+            "ft26-tmc-hooks",
+            "ft26-wapsi-beads",
+            "ft26-wire",
+            "ft26-thread"
+          ]
+        },
+        {
+          "id": "san-juan-worm",
+          "title": "5. San Juan Worm: a simple fly with a clear job",
+          "paragraphs": [
+            "The San Juan Worm suggests an aquatic worm that lives in the stream bottom. Drift it below the surface through a run. Charlie Craven recommends brighter versions for discolored water. A brown body makes a useful first practice version.",
+            "This recipe uses Ultra Chenille, with attachment points near the rear and front of the hook. It is the chenille classic, rather than a stretchy silicone worm. Keep the first version plain. You can compare body lengths after you can make both attachment points secure.",
+            "Check the fly from below before it leaves the vise. The hook point and gap need to remain open. Give each free end a gentle pull. If the body slides, undo the front knot and improve the attachment instead of adding a thick layer of cement."
+          ],
+          "table": {
+            "heads": [
+              "Part",
+              "Starter recipe"
+            ],
+            "rows": [
+              [
+                "Hook",
+                "Tiemco TMC 3761, size 12 or 14"
+              ],
+              [
+                "Thread",
+                "Brown or pink UNI 6/0"
+              ],
+              [
+                "Body",
+                "Brown Ultra Chenille"
+              ],
+              [
+                "Finish",
+                "A small amount of head cement on the thread"
+              ]
+            ]
+          },
+          "items": [
+            "Cover the shank with a thread base. Finish at the bend.",
+            "Place a two-inch chenille length along the hook. Leave a free end behind the bend.",
+            "Secure the chenille at the rear with several firm wraps.",
+            "Lift the front chenille end. Move the thread to just behind the eye.",
+            "Lower the chenille onto the shank. Form a second secure thread band near the front.",
+            "Whip finish on that band. Trim the thread and the chenille ends to your chosen length.",
+            "Apply a small amount of cement to the thread bands. Leave the eye open."
+          ],
+          "ordered": true,
+          "sources": [
+            "ft26-worm",
+            "ft26-chenille",
+            "ft26-tmc-hooks",
+            "ft26-wapsi-kits"
+          ]
+        },
+        {
+          "id": "practice",
+          "title": "Turn five recipes into a useful fly box",
+          "paragraphs": [
+            "Tie three copies of a pattern before you judge your progress. Put the first and third beside each other. Choose one feature to improve on the next attempt. It might be a shorter tail, a smaller head, or more even wire turns.",
+            "Label the rows in your box with the pattern and hook size. Keep the recipe packet until you know what you want to repeat. When you fish a fly, note the water type and the presentation. A record of the drift or retrieve is more useful than color alone.",
+            "Bring a few store-bought examples if you want a comparison at the river. Alternate them with your own flies under similar conditions. If yours tangles or loses material, take it back to the bench. That is useful feedback for the next batch, not a reason to abandon the pattern."
+          ],
+          "sources": []
+        }
+      ],
+      "faq": [
+        {
+          "q": "Must I tie all five before I fish?",
+          "a": "No. Tie a small batch of the pattern you need next. Add another when you want to learn a new skill."
+        },
+        {
+          "q": "Can I use the same hook for every pattern?",
+          "a": "Follow each recipe’s hook style. The long Bugger body, short midge body, and dry-fly shape need different working space."
+        },
+        {
+          "q": "When should I change colors or sizes?",
+          "a": "First make several similar flies. Then change one feature at a time so you can see what the change does."
+        }
+      ],
+      "relatedTrips": [
+        "na-us-mt-001"
+      ],
+      "relatedGuides": [
+        "fly-tying-for-beginners",
+        "fly-tying-kit-buying-guide"
+      ],
+      "reel": {
+        "slug": "mountain-fly-loop",
+        "note": "A short fly-casting animation accompanies this guide."
+      },
+      "regionPath": "/north-america/united-states/montana/",
+      "regionLabel": "Explore Montana fishing trips",
+      "nextStep": "Pick one fly from the table and tie a small batch. Add the next pattern when the first feels comfortable.",
+      "new": true,
+      "plannerNote": "The planner starts with the Madison River in Montana. Select your own destination before you prepare the trip list.",
+      "revision": "Added fly-tying instruction and sources checked on November 11, 2026."
+    },
+    {
+      "slug": "fly-tying-kit-buying-guide",
+      "title": "Fly-tying kit buying guide: a sensible first bench",
+      "description": "Compare starter kits, a kit you build yourself, and premium vises from Griffin, Regal, Renzetti, and PEAK, with maker-sourced details.",
+      "category": "FLY TYING / TOOLS",
+      "destination": "na-us-mt-001",
+      "sections": [
+        {
+          "id": "start",
+          "title": "Buy for the flies you want to tie",
+          "paragraphs": [
+            "The best first setup is one you can sit down and use. Start with the flies you want in your box. A few worms and Buggers need a different material purchase from a season of small dry flies. Write down three patterns before you compare kits.",
+            "You have three useful routes: a complete starter kit, a kit assembled from separate parts, or a premium vise with selected tools. None removes the need to practice. The better route is the one that fits your table, your hands, and the amount you want to spend.",
+            "Use Budget, Mid-range, and Premium as spending tiers for this shopping plan. They are not maker grades or fixed price bands. The premium group contains several distinct vise designs. A premium vise can share a bench with ordinary scissors and a modest selection of materials."
+          ],
+          "sources": []
+        },
+        {
+          "id": "routes",
+          "title": "Compare the three routes",
+          "paragraphs": [
+            "A complete kit makes the first purchase shorter. A custom kit lets you choose each tool. A premium vise makes sense when you know which features you will use. Compare the whole first project, including hooks and materials, rather than the vise alone."
+          ],
+          "table": {
+            "heads": [
+              "Route",
+              "Examples to compare",
+              "Main reason to choose it",
+              "What to check"
+            ],
+            "rows": [
+              [
+                "Budget starter kit",
+                "Wapsi Fly Tying Starter Kit; Wapsi Deluxe",
+                "Tools and a defined set of learning patterns arrive together",
+                "The included patterns must suit your first projects."
+              ],
+              [
+                "Mid-range custom kit",
+                "Griffin Odyssey Spider with selected Dr. Slick tools",
+                "Choose the vise and hand tools separately",
+                "Allow room in the budget for materials and hooks."
+              ],
+              [
+                "Mid-range travel package",
+                "Griffin Odyssey Spider Travel Kit",
+                "A named vise and tool group share a case",
+                "Check the list for missing tools and materials."
+              ],
+              [
+                "Premium vise with separate tools",
+                "Regal Medallion; Renzetti Traveler C 2003; PEAK PRV-G2",
+                "Choose a particular grip, rotation method, or base",
+                "Try the controls with the hooks you intend to tie."
+              ]
+            ]
+          },
+          "sources": [
+            "ft26-wapsi-starter",
+            "ft26-wapsi-deluxe",
+            "ft26-griffin",
+            "ft26-slick",
+            "ft26-regal",
+            "ft26-renzetti",
+            "ft26-peak"
+          ]
+        },
+        {
+          "id": "budget",
+          "title": "Budget kits: inspect the lesson as well as the box",
+          "paragraphs": [
+            "Wapsi states that its Fly Tying Starter Kit includes tools and materials for ten patterns, with a handbook. Its Deluxe version expands that figure to seventeen patterns. Those are pattern counts, not promises about how many finished flies you will produce.",
+            "A kit is a good choice when you want someone to gather the basics for you. Read its pattern list before you buy. Look for flies that you want to fish. A long inventory has less value when most of it serves patterns you never plan to tie.",
+            "Check the exact package at the seller. Note the vise, bobbin, scissors, finishing tool, hooks, and instruction format. Match the product name to the maker page. A starter kit, a tool kit, and a material kit can be three different purchases.",
+            "Use the supplied lesson for your first batch. Keep each material in its labeled packet. If a tool causes trouble, identify that problem before you replace the entire kit. One better bobbin or a sharper pair of scissors may be the only change you need."
+          ],
+          "sources": [
+            "ft26-wapsi-starter",
+            "ft26-wapsi-deluxe"
+          ]
+        },
+        {
+          "id": "custom",
+          "title": "Build your own: buy the foundation first",
+          "paragraphs": [
+            "A custom kit suits an angler who already knows the first few recipes. Choose the vise and mount first. Add a bobbin, fine scissors, a whip finisher, and a bodkin. Add hackle pliers for feather wraps and a hair stacker when you start hair-wing flies.",
+            "Griffin describes the Odyssey Spider as an entry model in its true-rotating vise family. The maker lists hook capacity from size 28 through 4/0. That range gives you a useful comparison point. It does not replace a trial with your own hook models.",
+            "Dr. Slick’s catalog lists a TYER set with scissors, a ceramic bobbin, bodkin, threader, hair stacker, whip finisher, and hackle pliers. It provides hand tools. You still need a vise, hooks, thread, and materials for your chosen patterns.",
+            "Compare that set with the tools you already have. If you own a suitable bobbin and scissors, buy only the missing pieces. A custom kit gives you the freedom to stop. You do not need every handle on the bench to carry the same brand."
+          ],
+          "sources": [
+            "ft26-griffin",
+            "ft26-slick"
+          ]
+        },
+        {
+          "id": "travel",
+          "title": "A travel kit can also be a compact home kit",
+          "paragraphs": [
+            "Griffin’s Odyssey Spider Travel Kit lists the vise, C-clamp, bobbin cradle, Supreme ceramic bobbin, hackle pliers, hair evener, scissors, and bodkin. The maker also lists a padded zippered case. Its published inventory does not list a whip finisher or pattern materials.",
+            "That package is worth a look if you clear the dining table after each session. Put it beside a small bag of materials for one recipe. Try the clamp on the table you will actually use. A neat case is only useful if the mount fits.",
+            "For a trip, pack the materials for a short list of replacement flies. Put the hook packets inside a closed container. Keep the threads and recipe notes together. Avoid moving your whole home supply just because the tool case has spare room."
+          ],
+          "sources": [
+            "ft26-griffin-travel"
+          ]
+        },
+        {
+          "id": "premium",
+          "title": "Premium vises: choose the mechanism you enjoy",
+          "paragraphs": [
+            "Regal uses a squeeze handle to open its hook jaws. The Medallion head rotates and tilts, while the Revolution adds a control knob and smoother rotation. Choose between them by how you want to work at the hook. Do not treat all rotating heads as identical.",
+            "The official Renzetti Traveler C 2003 page describes true rotary operation, cam jaws, and a size 28–4/0 hook range. It offers right-handed and left-handed versions. Select the correct orientation at purchase.",
+            "PEAK’s PRV-G2 comes with a pedestal base and an adjustable bobbin cradle. The maker describes adjustable rotation resistance and a white base with a hook-and-bead pocket. Those features may suit a bench where you want a visible work area below the fly.",
+            "These are separate choices, not a ladder you must climb. Try the hook grip, the clearance around the jaws, and the motion of the controls. Turn a sample hook through a full rotation. Picture the bobbin and your fingers in the same space.",
+            "Give the vise a specific job in your budget. If you mainly wrap flies by hand, comfortable access may matter more than a rotation feature. If you want to wrap bodies with the vise, try that motion before you buy. Choose the action that feels natural."
+          ],
+          "sources": [
+            "ft26-regal-operation",
+            "ft26-regal",
+            "ft26-renzetti",
+            "ft26-peak"
+          ]
+        },
+        {
+          "id": "mount",
+          "title": "C-clamp or pedestal: start with your furniture",
+          "paragraphs": [
+            "A C-clamp needs an accessible edge. Measure the tabletop thickness and look beneath it for an apron or drawer. Compare those measurements with the actual clamp. Sit in your normal chair and check where the hook will sit relative to your chest.",
+            "A pedestal needs a suitable flat surface. Try a normal downward thread pull on a display model. Watch for movement at the base. Move your hands around the jaw to check that the base does not force the hook too far away.",
+            "For rotary work, ask for a demonstration of hook alignment. The shank should turn around the rotation axis when set correctly. Then try an ordinary hand wrap. You will probably use both methods, and each needs room for the bobbin."
+          ],
+          "sources": [
+            "ft26-regal",
+            "ft26-renzetti",
+            "ft26-peak"
+          ]
+        },
+        {
+          "id": "materials",
+          "title": "Leave room for materials that match each other",
+          "paragraphs": [
+            "Write a complete recipe beside the tool list. Include the hook model, size, thread, bead if needed, and each body material. Circle the items you own. A good vise cannot solve a mismatch between a large bead and a small hook bend.",
+            "Buy the first materials in small, useful groups. For the worm, choose its hook, thread, and chenille. For the Bugger, add marabou, body chenille, and suitable hackle. For the caddis, add dry-fly dubbing, elk hair, and dry-fly hackle.",
+            "Avoid buying thread by aught number alone. Labels vary between makers. Use the brand and line named in the recipe while you learn. Later, compare alternatives on the same hook. Write the spool details in your notes if you like the result.",
+            "A dry-fly hackle purchase deserves its own look. Hold a feather against the hook you plan to use. Select for that fly before you choose a large assortment. The shopping list includes a Whiting Farms 100 Pack as an option for a focused dry-fly purchase."
+          ],
+          "sources": [
+            "ft26-worm",
+            "ft26-bugger-olive",
+            "ft26-caddis-tom",
+            "ft26-thread",
+            "ft26-whiting-packs"
+          ]
+        },
+        {
+          "id": "warranty",
+          "title": "Read the warranty as carefully as the tool list",
+          "paragraphs": [
+            "PEAK states a limited lifetime warranty against defects in materials or workmanship for the PRV-G2. Regal also states limited lifetime coverage for defects in materials and workmanship. Regal excludes normal wear and misuse. Its page warns that improper hook placement and unauthorized repair can invalidate coverage.",
+            "Keep the receipt and the exact model name with your instructions. Ask the seller how a service request reaches the maker. Read the warranty for the model you buy before you attempt an adjustment beyond normal setup. A familiar brand name is not a substitute for its written terms."
+          ],
+          "sources": [
+            "ft26-peak",
+            "ft26-regal-warranty"
+          ]
+        },
+        {
+          "id": "check",
+          "title": "Try this short check before you order",
+          "paragraphs": [
+            "If you can handle a sample, bring two hooks from your first recipes. One larger Bugger hook and one small nymph hook make a useful pair. Ask the shop to show the correct jaw placement. Then try the setup yourself at a comfortable height."
+          ],
+          "items": [
+            "Check the mount against your table measurements.",
+            "Check access around both hooks without moving them to an unsafe jaw position.",
+            "Try the jaw control with your normal hand position.",
+            "Pull thread through the bobbin with the spool you plan to use.",
+            "Compare the kit contents with your first recipe.",
+            "Remove duplicate tools from the order.",
+            "Keep enough of the budget for hooks, materials, and a useful light."
+          ],
+          "ordered": true,
+          "sources": []
+        },
+        {
+          "id": "choose",
+          "title": "Three sensible first purchases",
+          "paragraphs": [
+            "Choose the Budget route if you want a complete lesson in a box and its patterns appeal to you. Start with the regular Wapsi kit. Consider the Deluxe only when its extra patterns interest you. More material is helpful when you have a use for it.",
+            "Choose the Mid-range route if you want to select your tools and use a rotary vise from the start. Compare the Griffin Spider with the travel package. Add Dr. Slick tools individually or as a set according to what the package lacks.",
+            "Choose the Premium route when a particular vise feature earns its place at your bench. Compare the Regal grip with the Renzetti and PEAK rotary options. Keep the rest of the kit simple. Spend the first evening on a familiar recipe so you learn the new controls.",
+            "Treat the shopping list as a set of alternatives and missing parts. Choose one vise route. Buy one useful tool set or the individual tools you need. When the first batch is complete, let a real problem at the bench guide the next purchase."
+          ],
+          "sources": [
+            "ft26-wapsi-starter",
+            "ft26-wapsi-deluxe",
+            "ft26-griffin-travel",
+            "ft26-regal-operation",
+            "ft26-renzetti",
+            "ft26-peak"
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Is a premium vise necessary for good flies?",
+          "a": "No. Secure hook grip and room for your hands matter first. Choose extra features when they solve a problem you can name."
+        },
+        {
+          "q": "Does a tool kit include a vise and materials?",
+          "a": "Check its exact inventory. The Dr. Slick TYER set is a hand-tool set. A complete starter kit includes a different group of items."
+        },
+        {
+          "q": "What should I upgrade first?",
+          "a": "Replace the part that causes a clear problem. Test the hook grip, thread feed, and scissors before you spend on optional accessories."
+        }
+      ],
+      "relatedTrips": [
+        "na-us-mt-001"
+      ],
+      "relatedGuides": [
+        "fly-tying-for-beginners",
+        "first-five-flies-to-tie"
+      ],
+      "reel": {
+        "slug": "mountain-fly-loop",
+        "note": "A short fly-casting animation accompanies this guide."
+      },
+      "regionPath": "/north-america/united-states/montana/",
+      "regionLabel": "Explore Montana fishing trips",
+      "nextStep": "Choose a kit route, check its contents, and buy the missing materials for one first pattern.",
+      "new": true,
+      "plannerNote": "The planner starts with the Madison River in Montana. Select your own destination before you prepare the trip list.",
+      "revision": "Added fly-tying instruction and sources checked on November 11, 2026."
+    }
+  ],
+  "shoppingLists": {
+    "/guides/fly-tying-for-beginners/": {
+      "title": "Fly-tying beginner shopping list",
+      "items": [
+        {
+          "tier": "Budget",
+          "name": "Wapsi Fly Tying Starter Kit",
+          "note": "One complete-kit route. Check its contents before adding separate tools.",
+          "query": "Wapsi Fly Tying Starter Kit"
+        },
+        {
+          "tier": "Mid-range",
+          "name": "Griffin Odyssey Spider Vise",
+          "note": "A separate-vise option for a kit you assemble yourself. Check the mount in the selected package.",
+          "query": "Griffin Odyssey Spider fly tying vise"
+        },
+        {
+          "tier": "Mid-range",
+          "name": "Dr. Slick Ceramic Bobbin",
+          "note": "Choose this if you need a separate bobbin or want to replace the kit bobbin.",
+          "query": "Dr Slick Ceramic Bobbin CBOB4"
+        },
+        {
+          "tier": "Mid-range",
+          "name": "Dr. Slick All Purpose Scissors",
+          "note": "Use for thread and fibers. Keep a separate cutter for wire.",
+          "query": "Dr Slick All Purpose Scissors SAP4G"
+        },
+        {
+          "tier": "Mid-range",
+          "name": "Dr. Slick Whip Finisher",
+          "note": "Practice the knot on a bare hook before the first full fly.",
+          "query": "Dr Slick Whip Finisher WF4"
+        },
+        {
+          "tier": "Budget",
+          "name": "Dr. Slick Bodkin",
+          "note": "Use for small cement drops and material adjustments.",
+          "query": "Dr Slick Bodkin BOD"
+        },
+        {
+          "tier": "Budget",
+          "name": "Dr. Slick Hackle Pliers",
+          "note": "Add for the feather wraps on a Woolly Bugger or caddis.",
+          "query": "Dr Slick Hackle Pliers HP"
+        },
+        {
+          "tier": "Budget",
+          "name": "Wapsi San Juan Worm Kit",
+          "note": "A focused first-pattern option. Compare the package with the tools you already own.",
+          "query": "Wapsi San Juan Worm Kit"
+        },
+        {
+          "tier": "Budget",
+          "name": "Wapsi Wooly Bugger Kit",
+          "note": "Choose this pattern kit if the Bugger is your first project.",
+          "query": "Wapsi Wooly Bugger Kit"
+        },
+        {
+          "tier": "Budget",
+          "name": "UTC Ultra Thread",
+          "note": "Start with black 140 denier for Buggers or black 70 denier for midges.",
+          "query": "UTC Ultra Thread 70 140 denier black"
+        },
+        {
+          "tier": "Budget",
+          "name": "Wapsi Ultra Wire",
+          "note": "Choose the color and wire size listed in the fly recipe.",
+          "query": "Wapsi UTC Ultra Wire small copper silver"
+        },
+        {
+          "tier": "Premium",
+          "name": "Renzetti Traveler C 2003 Vise",
+          "note": "An optional premium vise route. Select the correct handed version.",
+          "query": "Renzetti Traveler C2003 pedestal fly tying vise"
+        }
+      ]
+    },
+    "/guides/first-five-flies-to-tie/": {
+      "title": "Materials for your first five flies",
+      "items": [
+        {
+          "tier": "Mid-range",
+          "name": "Tiemco TMC 5263 Streamer Hooks",
+          "note": "Choose size 8 for the first Woolly Bugger batch.",
+          "query": "Tiemco TMC 5263 fly tying hooks size 8"
+        },
+        {
+          "tier": "Mid-range",
+          "name": "Tiemco TMC 5262 Nymph Hooks",
+          "note": "Choose size 14 for the Pheasant Tail recipe.",
+          "query": "Tiemco TMC 5262 nymph hooks size 14"
+        },
+        {
+          "tier": "Mid-range",
+          "name": "Tiemco TMC 100 Dry-Fly Hooks",
+          "note": "Choose size 14 for the Elk Hair Caddis.",
+          "query": "Tiemco TMC 100 dry fly hooks size 14"
+        },
+        {
+          "tier": "Mid-range",
+          "name": "Tiemco TMC 2488 Hooks",
+          "note": "Choose size 18 for the Zebra Midge. Fit the bead to the actual hook.",
+          "query": "Tiemco TMC 2488 hooks size 18"
+        },
+        {
+          "tier": "Mid-range",
+          "name": "Tiemco TMC 3761 Nymph Hooks",
+          "note": "Choose size 12 or 14 for the San Juan Worm.",
+          "query": "Tiemco TMC 3761 nymph hooks size 14"
+        },
+        {
+          "tier": "Budget",
+          "name": "UTC Ultra Thread and UNI-Thread",
+          "note": "Select separate spools: UTC 70 and 140 denier, plus UNI 6/0, in the recipe colors.",
+          "query": "UTC Ultra Thread UNI Thread 70 140 6/0 fly tying"
+        },
+        {
+          "tier": "Budget",
+          "name": "Wapsi Wooly Bugger Kit",
+          "note": "A pattern-kit option for the Bugger. Compare its contents with the black recipe before adding separate materials.",
+          "query": "Wapsi Wooly Bugger Kit black"
+        },
+        {
+          "tier": "Budget",
+          "name": "Wapsi Ringneck Pheasant Tail",
+          "note": "Use natural or dark brown tail fibers for the nymph.",
+          "query": "Wapsi Ringneck Pheasant Tail feathers"
+        },
+        {
+          "tier": "Budget",
+          "name": "Wapsi Peacock Herl",
+          "note": "Use a small amount for the Pheasant Tail thorax.",
+          "query": "Wapsi Peacock Herl natural"
+        },
+        {
+          "tier": "Budget",
+          "name": "Wapsi Ultra Chenille",
+          "note": "Choose brown for the worm recipe. Add bright colors later if you want to compare them.",
+          "query": "Wapsi Ultra Chenille brown fly tying"
+        },
+        {
+          "tier": "Budget",
+          "name": "Wapsi Super Fine Dubbing",
+          "note": "Choose tan for the caddis body. Start with a small pinch.",
+          "query": "Wapsi Super Fine Dubbing tan"
+        },
+        {
+          "tier": "Mid-range",
+          "name": "Wapsi Elk Body Hair",
+          "note": "Choose a patch for the caddis wing. Clean and align the tips before use.",
+          "query": "Wapsi Elk Body Hair natural"
+        },
+        {
+          "tier": "Premium",
+          "name": "Whiting Farms 100 Pack Dry-Fly Hackle",
+          "note": "Select brown hackle for the size 14 caddis. Keep it separate from the Bugger hackle.",
+          "query": "Whiting Farms 100 Pack dry fly hackle brown size 14"
+        },
+        {
+          "tier": "Budget",
+          "name": "Wapsi Ultra Wire",
+          "note": "Choose small copper for the nymph and caddis, and small silver for the midge.",
+          "query": "Wapsi UTC Ultra Wire small copper silver"
+        },
+        {
+          "tier": "Budget",
+          "name": "Wapsi Cyclops Beads",
+          "note": "Choose silver beads that fit the midge hook. Test the fit before you tie.",
+          "query": "Wapsi Cyclops Beads silver fly tying"
+        }
+      ]
+    },
+    "/guides/fly-tying-kit-buying-guide/": {
+      "title": "Fly-tying kit and vise shopping list",
+      "items": [
+        {
+          "tier": "Budget",
+          "name": "Wapsi Fly Tying Starter Kit",
+          "note": "The regular complete-kit option. Choose it when its learning patterns suit you.",
+          "query": "Wapsi Fly Tying Starter Kit"
+        },
+        {
+          "tier": "Budget",
+          "name": "Wapsi Deluxe Fly Tying Starter Kit",
+          "note": "An alternative to the regular kit. Buy the extra pattern range only if you want it.",
+          "query": "Wapsi Deluxe Fly Tying Starter Kit"
+        },
+        {
+          "tier": "Mid-range",
+          "name": "Griffin Odyssey Spider Vise",
+          "note": "The separate-vise route. Add only the tools and materials you lack.",
+          "query": "Griffin Odyssey Spider Vise"
+        },
+        {
+          "tier": "Mid-range",
+          "name": "Griffin Odyssey Spider Travel Kit",
+          "note": "An alternative package with a case. Add a finishing tool and recipe materials if needed.",
+          "query": "Griffin Odyssey Spider Travel Kit"
+        },
+        {
+          "tier": "Mid-range",
+          "name": "Dr. Slick Fly Tyer Gift Set",
+          "note": "A hand-tool set for a separate vise. Compare its tools with any kit you already own.",
+          "query": "Dr Slick Fly Tyer Gift Set TYER"
+        },
+        {
+          "tier": "Mid-range",
+          "name": "Dr. Slick Ceramic Bobbin",
+          "note": "A single-tool purchase if your existing bobbin causes thread-feed trouble.",
+          "query": "Dr Slick Ceramic Bobbin CBOB4"
+        },
+        {
+          "tier": "Mid-range",
+          "name": "Dr. Slick All Purpose Scissors",
+          "note": "A single-tool purchase if you already have the rest of the set.",
+          "query": "Dr Slick All Purpose Scissors SAP4G"
+        },
+        {
+          "tier": "Mid-range",
+          "name": "Dr. Slick Whip Finisher",
+          "note": "Add this when the selected package lacks a finishing tool.",
+          "query": "Dr Slick Whip Finisher WF4"
+        },
+        {
+          "tier": "Premium",
+          "name": "Regal Medallion Vise",
+          "note": "Choose the jaw and base for your hook sizes and table.",
+          "query": "Regal Medallion Vise regular jaws pedestal"
+        },
+        {
+          "tier": "Premium",
+          "name": "Renzetti Traveler C 2003 Vise",
+          "note": "Choose this rotary option in the correct handed version.",
+          "query": "Renzetti Traveler C2003 pedestal vise"
+        },
+        {
+          "tier": "Premium",
+          "name": "PEAK Rotary Vise PRV-G2",
+          "note": "Compare this pedestal option with the other vises before choosing one.",
+          "query": "PEAK Rotary Vise PRV G2 pedestal"
+        },
+        {
+          "tier": "Budget",
+          "name": "Wapsi San Juan Worm Kit",
+          "note": "A focused first pattern after you choose the vise and tools.",
+          "query": "Wapsi San Juan Worm Kit"
+        }
+      ]
+    }
+  }
+}

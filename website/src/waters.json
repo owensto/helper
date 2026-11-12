@@ -1,0 +1,1478 @@
+{
+  "sources": {
+    "reading-water": {
+      "title": "Orvis Learning Center — Reading the water",
+      "url": "https://howtoflyfish.orvis.com/video-lessons/the-basics-of-fly-fishing/chapter-eight-reading-water",
+      "checked": "2026-11-11",
+      "scopeNote": "Trout location, current, food and cover; the chapter introduction and lesson list."
+    },
+    "clearwater": {
+      "title": "ADF&G — Delta Clearwater River",
+      "url": "https://www.adfg.alaska.gov/index.cfm?adfg=ByAreaInteriorTanana.fishingOpps&fishery=Delta+Clearwater+River",
+      "checked": "2026-11-11",
+      "scopeNote": "Grayling habitat and fly or spinning tactics on Alaska’s Delta Clearwater River."
+    },
+    "tanana-report": {
+      "title": "ADF&G — Tanana report, June 26, 2026",
+      "url": "https://www.adfg.alaska.gov/sf/FishingReports/index.cfm?ADFG=R3.archive&Area_key=36&RecordID=6895&Year=2026",
+      "checked": "2026-11-11",
+      "scopeNote": "The June 26, 2026 Tanana report records rising water from glacial melt; a dated example of melt effects."
+    },
+    "stillwater": {
+      "title": "Orvis Learning Center — Stillwater trout",
+      "url": "https://howtoflyfish.orvis.com/video-lessons/the-basics-of-fly-fishing/chapter-nine-stillwater-trout",
+      "checked": "2026-11-11",
+      "scopeNote": "Trout tactics in lakes, including depth, structure and presentation; the chapter introduction and lesson list."
+    },
+    "rocky": {
+      "title": "National Park Service — Rocky Mountain fishing",
+      "url": "https://www.nps.gov/romo/planyourvisit/fishing.htm",
+      "checked": "2026-11-11",
+      "scopeNote": "Rocky Mountain National Park fish populations, access restrictions and protection of aquatic habitats."
+    },
+    "estuary": {
+      "title": "NOAA — What is an estuary?",
+      "url": "https://oceanservice.noaa.gov/facts/estuary.html",
+      "checked": "2026-11-11",
+      "scopeNote": "Coastal freshwater and saltwater mixing, nursery habitat and freshwater estuaries."
+    },
+    "flats-learning": {
+      "title": "Orvis Learning Center — Saltwater inshore flats",
+      "url": "https://howtoflyfish.orvis.com/video-lessons/the-basics-of-fly-fishing/chapter-11-fly-fishing-saltwater-flats",
+      "checked": "2026-11-11",
+      "scopeNote": "Flats sight fishing, tides, fly selection and presentation; the chapter introduction and lesson list."
+    },
+    "hatteras": {
+      "title": "National Park Service — Cape Hatteras fishing",
+      "url": "https://www.nps.gov/caha/planyourvisit/fishing.htm",
+      "checked": "2026-11-11",
+      "scopeNote": "Cape Hatteras shore access, fishing settings and broad seasonal opportunities."
+    },
+    "halibut": {
+      "title": "ADF&G — Yakutat halibut",
+      "url": "https://www.adfg.alaska.gov/index.cfm?adfg=ByAreaSoutheastYakutat.fishingOpps&fishery=Yakutat+Halibut",
+      "checked": "2026-11-11",
+      "scopeNote": "Yakutat halibut habitat, bait and jig options; local timing applies to Yakutat."
+    },
+    "amazon-planner": {
+      "title": "Amazon Xtreme Fishing — Travel planner",
+      "url": "https://www.amazonxtremefishing.com/travel-planner",
+      "checked": "2026-11-11",
+      "scopeNote": "Rio Negro trip preparation and the need to match destinations with seasonal water levels."
+    },
+    "odfw-trout": {
+      "title": "Oregon Department of Fish & Wildlife — How to fish for trout",
+      "url": "https://myodfw.com/articles/how-fish-trout",
+      "checked": "2026-11-11",
+      "scopeNote": "Trout habitat, seasonal location and basic bait, lure and fly approaches in Oregon."
+    },
+    "orvis-leaders": {
+      "title": "Orvis — How to Choose the Right Leader Length",
+      "url": "https://howtoflyfish.orvis.com/choosing-equipment/equipment-articles/473-how-to-choose-the-right-leader-length",
+      "checked": "2026-11-11",
+      "scopeNote": "Leader length choices for clear water, wind and short casts."
+    },
+    "orvis-small-stream-tactics": {
+      "title": "Orvis — Smart Tactics for Small Streams",
+      "url": "https://howtoflyfish.orvis.com/how-to-articles/trout-fishing-articles/small-stream-fishing-part-3-smart-tactics-for-small-streams",
+      "checked": "2026-11-11",
+      "scopeNote": "Quiet approaches, low profiles and short casts on small trout streams."
+    },
+    "orvis-small-stream-flies": {
+      "title": "Orvis — Successful Flies for Small Streams",
+      "url": "https://howtoflyfish.orvis.com/how-to-articles/trout-fishing-articles/small-stream-fishing-part-2-successful-flies-for-small-streams",
+      "checked": "2026-11-11",
+      "scopeNote": "Visible dry flies and dry-dropper options for small streams."
+    },
+    "alaska-aquatic": {
+      "title": "Alaska Department of Fish and Game — Aquatic Habitats",
+      "url": "https://www.adfg.alaska.gov/static-sf/statewide/NG_plan/PDFs/Appendix5.7aquatic.pdf",
+      "checked": "2026-11-11",
+      "scopeNote": "Glacial rivers, seasonal meltwater, sediment and winter base flows."
+    },
+    "kenai-confluence": {
+      "title": "Alaska Department of Fish and Game — Kenai Wildlife Viewing Trail Guide",
+      "url": "https://www.adfg.alaska.gov/static/viewing/pdfs/kenai_guidebook.pdf",
+      "checked": "2026-11-11",
+      "scopeNote": "The Moose–Kenai confluence as a local example of clear and glacial waters meeting near salmon habitat."
+    },
+    "tmf-lakes": {
+      "title": "Take Me Fishing — Fishing Lakes and Ponds",
+      "url": "https://www.takemefishing.org/freshwater-fishing/types-of-freshwater-fishing/lakes-and-ponds/",
+      "checked": "2026-11-11",
+      "scopeNote": "Lake points, drop-offs, vegetation and other places to search for fish."
+    },
+    "tmf-bass": {
+      "title": "Take Me Fishing / Tailored Tackle — Bass Fishing Quick Guide",
+      "url": "https://www.takemefishing.org/getmedia/233269a1-478f-4dbc-baf7-c0e03fcbbfb6/How-to-Bass-Fish-Tailored-Tackle-Take-Me-Fishing-Book.pdf",
+      "checked": "2026-11-11",
+      "scopeNote": "Bass presentations including jigs, soft plastics and drop-shot rigs."
+    },
+    "idaho-ponds": {
+      "title": "Idaho Fish and Game — The Essential Guide to Urban/Suburban Fishing",
+      "url": "https://idfg.idaho.gov/article/see-pond-fish-pond-essential-guide-urbansuburban-fishing",
+      "checked": "2026-11-11",
+      "scopeNote": "Seasonal pond targets, small tackle, floats, worms and private access in Idaho."
+    },
+    "washington-high-lakes": {
+      "title": "Washington Department of Fish & Wildlife — High Lakes",
+      "url": "https://wdfw.wa.gov/fishing/locations/high-lakes",
+      "checked": "2026-11-11",
+      "scopeNote": "Fish presence, stocking, careful approaches and light tackle in Washington high lakes."
+    },
+    "tva-water-safety": {
+      "title": "Tennessee Valley Authority — Boating & Water Safety",
+      "url": "https://www.tva.com/environment/lake-levels/water-safety",
+      "checked": "2026-11-11",
+      "scopeNote": "Dam warnings, restricted areas, flotation and escape routes below TVA dams."
+    },
+    "tennessee-tailwaters": {
+      "title": "Tennessee Wildlife Resources Agency — Trout Fishing and Stockings",
+      "url": "https://www.tn.gov/content/tn/twra/fishing/trout-information-stockings.html",
+      "checked": "2026-11-11",
+      "scopeNote": "Coldwater tailwater fisheries and the need to check dam discharge schedules."
+    },
+    "species-bdb22b610d22": {
+      "title": "Kentucky Department of Fish & Wildlife Resources — Cumberland River Tailwater",
+      "url": "https://fw.ky.gov/Education/Pages/Cumberland-River-Tailwater.aspx",
+      "checked": "2026-11-11",
+      "scopeNote": "Cumberland trout locations and nymph, streamer and spinning presentations."
+    },
+    "missouri-big-rivers": {
+      "title": "Missouri Department of Conservation — Catfishing Missouri’s Big Rivers",
+      "url": "https://mdc.mo.gov/magazines/conservationist/2014-07/catfishing-missouris-big-rivers",
+      "checked": "2026-11-11",
+      "scopeNote": "Species-specific catfish habitat, wing dikes, scour holes and bait approaches."
+    },
+    "wisconsin-superior": {
+      "title": "Wisconsin DNR — Fishing Calendar for Lake Superior",
+      "url": "https://dnr.wisconsin.gov/topic/Fishing/lakesuperior/fishingcalendar.html",
+      "checked": "2026-11-11",
+      "scopeNote": "Seasonal movement and techniques in Wisconsin’s Lake Superior waters; not a current rules page."
+    },
+    "michigan-lake-trout": {
+      "title": "Michigan DNR — Lake Trout",
+      "url": "https://www.michigan.gov/dnr/education/michigan-species/fish-species/lake-trout",
+      "checked": "2026-11-11",
+      "scopeNote": "Lake trout use of cold, deeper summer water in the Great Lakes."
+    },
+    "nws-great-lakes": {
+      "title": "National Weather Service — Great Lakes Safety",
+      "url": "https://www.weather.gov/safety/great-lakes",
+      "checked": "2026-11-11",
+      "scopeNote": "Waves, dangerous currents and hazards near Great Lakes piers."
+    },
+    "minnesota-ice": {
+      "title": "Minnesota DNR — Learn to Ice Fish",
+      "url": "https://www.dnr.state.mn.us/gofishing/learn-ice-fish.html",
+      "checked": "2026-11-11",
+      "scopeNote": "Ice fishing locations, mobility, timing, clothing and shelter hazards."
+    },
+    "new-york-ice": {
+      "title": "New York State DEC — Learn How to Ice Fish",
+      "url": "https://dec.ny.gov/things-to-do/freshwater-fishing/learn-to-fish/tips-skills/how-to-ice-fish",
+      "checked": "2026-11-11",
+      "scopeNote": "Jigs, bait, tip-ups, clothing and variable ice conditions."
+    },
+    "minnesota-ice-travel": {
+      "title": "Minnesota DNR — Traveling on Ice",
+      "url": "https://www.dnr.state.mn.us/safety/ice/travel.html",
+      "checked": "2026-11-11",
+      "scopeNote": "Ice assessment, accessible ice picks, flotation and escape preparation."
+    },
+    "igfa-peacock": {
+      "title": "IGFA — King of the Jungle: Giant Peacock Bass on Fly",
+      "url": "https://igfa.org/2023/03/29/king-of-the-jungle-giant-peacock-bass-on-fly/",
+      "checked": "2026-11-11",
+      "scopeNote": "Rio Negro giant peacock bass tactics from guide Rodrigo Salles; water levels, cover and fly tackle."
+    },
+    "fwc-peacock": {
+      "title": "Florida Fish and Wildlife Conservation Commission — Butterfly Peacock Bass Fishing Tips",
+      "url": "https://myfwc.com/fishing/freshwater/fishing-tips/butterfly-peacock-bass/",
+      "checked": "2026-11-11",
+      "scopeNote": "Daylight fishing, canal cover and fish-imitating lures for Florida butterfly peacock bass."
+    },
+    "fwc-snook": {
+      "title": "Florida Fish and Wildlife Conservation Commission — Snook",
+      "url": "https://myfwc.com/wildlifehabitats/profiles/saltwater/snook/snook/",
+      "checked": "2026-11-11",
+      "scopeNote": "Snook habitat, current-facing behavior and live bait presentations."
+    },
+    "fwc-marine-habitat": {
+      "title": "Florida Fish and Wildlife Conservation Commission — Marine Fisheries Habitats",
+      "url": "https://myfwc.com/wildlifehabitats/habitat/marine/",
+      "checked": "2026-11-11",
+      "scopeNote": "Mangrove roots, food, shelter and careful casts along mangrove shorelines."
+    },
+    "noaa-habitat": {
+      "title": "NOAA Fisheries — Fishing Smart Around Essential Fish Habitats in the Southeast",
+      "url": "https://www.fisheries.noaa.gov/feature-story/fishing-smart-around-essential-fish-habitats-southeast",
+      "checked": "2026-11-11",
+      "scopeNote": "Protection of mangroves, seagrass, reefs and other coastal fish habitats."
+    },
+    "texas-red-drum": {
+      "title": "Texas Parks and Wildlife — Red Drum",
+      "url": "https://tpwd.texas.gov/huntwild/wild/species/index.phtml?o=reddrum",
+      "checked": "2026-11-11",
+      "scopeNote": "Red drum habitat and shrimp, popping cork, spoon and fly presentations."
+    },
+    "fwc-saltwater-tips": {
+      "title": "Florida Fish and Wildlife Conservation Commission — Saltwater Fishing Tips",
+      "url": "https://myfwc.com/fishing/saltwater/outreach/how-to-fish/",
+      "checked": "2026-11-11",
+      "scopeNote": "Flats, tides, shore fishing and matching tactics to local habitat."
+    },
+    "orvis-bonefish-set": {
+      "title": "Orvis — How to Hook More Bonefish by Sight-Setting",
+      "url": "https://news.orvis.com/fly-fishing/pro-tips-how-to-hook-more-bonefish-by-sight-setting",
+      "checked": "2026-11-11",
+      "scopeNote": "Line-hand hook sets and visual bite cues for bonefish."
+    },
+    "orvis-wading-flats": {
+      "title": "Orvis — Wading the Flats",
+      "url": "https://www.orvis.com/wading-the-flats.html",
+      "checked": "2026-11-11",
+      "scopeNote": "Shallow flats, fish spotting and presentations with shrimp-style flies."
+    },
+    "tmf-surf": {
+      "title": "Take Me Fishing / Tailored Tackle — How to Surf Fish",
+      "url": "https://www.takemefishing.org/getmedia/2fa26371-1fd8-43ea-b54b-d155746eb3d3/How-to-Surf-Fish-Tailored-Tackle-Take-Me-Fishing-Book.pdf",
+      "checked": "2026-11-11",
+      "scopeNote": "Beach troughs, sandbars, cuts and surf rigs."
+    },
+    "tmf-pier": {
+      "title": "Take Me Fishing — Saltwater Pier and Surf Fishing",
+      "url": "https://www.takemefishing.org/saltwater-fishing/types-of-saltwater-fishing/saltwater-pier-surf-fishing/",
+      "checked": "2026-11-11",
+      "scopeNote": "Pier structure, shoreline cover and the effect of tide and location."
+    },
+    "odfw-marine-shore": {
+      "title": "Oregon Department of Fish & Wildlife — Oregon Marine Shore Fishing",
+      "url": "https://myodfw.com/articles/oregon-marine-shore-fishing",
+      "checked": "2026-11-11",
+      "scopeNote": "Rocky shore species, jigs, bait rigs and hazards around rocks and jetties."
+    },
+    "igfa-kelp-bass": {
+      "title": "IGFA — Kelp Bass",
+      "url": "https://igfa.org/game-fish-database/?search_term_1=85&search_type=SpeciesID",
+      "checked": "2026-11-11",
+      "scopeNote": "Kelp bass habitat and angling methods in the eastern Pacific."
+    },
+    "nws-waves": {
+      "title": "National Weather Service — Sneaker/High Waves and Log Rolls Can Be Deadly",
+      "url": "https://www.weather.gov/safety/ripcurrent-waves",
+      "checked": "2026-11-11",
+      "scopeNote": "Unexpected waves and unstable drift logs on exposed shores."
+    },
+    "noaa-release": {
+      "title": "NOAA Fisheries — Catch and Release Fishing Best Practices",
+      "url": "https://www.fisheries.noaa.gov/national/resources-fishing/catch-and-release-fishing-best-practices",
+      "checked": "2026-11-11",
+      "scopeNote": "Suitable tackle, circle hooks, fish handling and release at depth."
+    },
+    "noaa-rockfish-release": {
+      "title": "NOAA Fisheries — Rockfish Barotrauma and Recompression",
+      "url": "https://www.fisheries.noaa.gov/west-coast/recreational-fishing/rockfish-barotrauma-and-recompression",
+      "checked": "2026-11-11",
+      "scopeNote": "Barotrauma and descending devices for rockfish."
+    },
+    "tmf-offshore": {
+      "title": "Take Me Fishing — Deep Sea Fishing",
+      "url": "https://www.takemefishing.org/saltwater-fishing/types-of-saltwater-fishing/deep-sea-fishing/",
+      "checked": "2026-11-11",
+      "scopeNote": "Offshore structure, trolling, jigging, bottom fishing and tackle choices."
+    },
+    "tmf-kayak": {
+      "title": "Take Me Fishing — Kayak Fishing Tips",
+      "url": "https://www.takemefishing.org/how-to-fish/fishing-tips/kayak-fishing-tips/",
+      "checked": "2026-11-11",
+      "scopeNote": "Kayak tackle organization, positioning and fish landing."
+    },
+    "fwc-paddling": {
+      "title": "Florida Fish and Wildlife Conservation Commission — Florida Keys Paddling Trails",
+      "url": "https://gis.myfwc.com/boating_guides/Florida_Keys/pages/paddling_trails.html",
+      "checked": "2026-11-11",
+      "scopeNote": "Paddle fishing, route preparation, weather and safety in the Florida Keys."
+    },
+    "nws-cold-water": {
+      "title": "National Weather Service — Cold Water Hazards and Safety",
+      "url": "https://www.weather.gov/safety/coldwater",
+      "checked": "2026-11-11",
+      "scopeNote": "Cold water shock, flotation and clothing for immersion."
+    },
+    "noaa-sargassum": {
+      "title": "NOAA Ocean Exploration — What Is Sargassum?",
+      "url": "https://oceanexplorer.noaa.gov/ocean-fact/sargassum/",
+      "checked": "2026-11-11",
+      "scopeNote": "Floating Sargassum as habitat and nursery cover for mahi mahi, jacks and other fish."
+    },
+    "kakadu-runoff": {
+      "title": "Parks Australia — East Alligator River",
+      "url": "https://kakadu.gov.au/things-do/activities/fishing-boating/east-alligator-river/",
+      "checked": "2026-11-11",
+      "scopeNote": "Floodplain runoff carries baitfish into the East Alligator River; local barramundi access and crocodile precautions."
+    },
+    "wisconsin-shore-tackle": {
+      "title": "Wisconsin DNR — Close to Home: Lake Michigan Shore Fishing",
+      "url": "https://dnr.wisconsin.gov/sites/default/files/topic/Fishing/LM_closetohome_letter.pdf",
+      "checked": "2026-11-11",
+      "scopeNote": "Shore tackle and landing-net guidance from the 2009 brochure; check present access and regulations separately."
+    }
+  },
+  "habitats": [
+    {
+      "id": "rivers-streams",
+      "name": "Rivers & streams",
+      "title": "River and Stream Fishing: How to Read Moving Water",
+      "summary": "Find fish behind rocks, along current seams, and under banks. Learn simple drifts, useful lures, and safe ways to work a river.",
+      "keywords": [
+        "river",
+        "stream",
+        "riffle",
+        "boulders"
+      ],
+      "sections": [
+        {
+          "title": "Start where fast water meets slow water",
+          "text": "Before the first cast, watch a leaf travel downstream. It shows the main current and the quieter lanes beside it. For trout, look for a place with food passing close to shelter. The soft pocket behind a boulder, an undercut bank, and the head of a pool deserve a cast. Smallmouth bass also use rocks and current breaks, but give warmer pools and rocky edges a look when they are your target.\n\nFish the near bank before you step into the river. A long cast across several currents can pull your lure or fly away from the fish. Start with one short lane. Cover its shallow edge, deeper middle, and downstream end. Then move a few steps. That steady approach teaches you more than a cast at every splash."
+        },
+        {
+          "title": "Let the current do some work",
+          "text": "For trout, a small spinner, a beadhead nymph, or a dry fly covers three useful jobs. Cast the spinner slightly upstream. Retrieve fast enough to keep its blade working without dragging it across the surface. Let it pass beside a rock before you lift it out. With a nymph, use a float or strike indicator where local rules allow. Adjust the depth until the fly travels near the bottom with occasional contact.\n\nA dry fly should drift at roughly the speed of nearby bubbles. Lift and reposition spare line upstream if the current pulls the fly sideways. Make that adjustment early, before the fly reaches the fish. For river bass, try a small soft plastic on a jighead along the slower rocky edge. Change the weight before you change the whole lure box."
+        },
+        {
+          "title": "Match the hour to the river",
+          "text": "Dawn and evening are useful starting times in warm weather, especially where bright light and boat traffic make the fish wary. On a cold trout stream, a warmer afternoon and an insect hatch can matter more than an early alarm. Watch for rises before you tie on a dry fly. If nothing breaks the surface, start below it.\n\nCheck the river gauge and recent rain before departure. Compare the level with your last visit, then judge the bank when you arrive. A familiar rock under water tells you more about your crossing than a familiar date. Carry a thermometer for trout trips. Follow local warm-water closures and stop if the fish struggle to recover. If the water rises, fills with debris, or hides your footing, move to a safe bank or leave."
+        },
+        {
+          "title": "Keep your feet and your manners",
+          "text": "Choose a bank position first. Wade only where you can see a firm route and return without crossing stronger water. Wear a wading belt and suitable footwear. Use a staff for balance, and wear flotation where a fall could carry you away. Do not step over a submerged log into an unseen hole. A fish on the far bank can stay there.\n\nGive another angler room to fish the whole pool. Ask which direction they plan to move before you pass. Walk around shallow gravel nests and keep dogs out of water someone is fishing. Carry a rubber-mesh net and forceps within reach. Wet your hands before you touch a fish, then release it with little delay. Remove mud and plant fragments from your boots before you visit another river."
+        }
+      ],
+      "checklist": [
+        "Check the river level.",
+        "Fish the near seam first.",
+        "Adjust the drift depth.",
+        "Choose a clear exit.",
+        "Pack out line and hooks."
+      ],
+      "evidence": [
+        {
+          "source": "reading-water",
+          "claim": "Trout choose holding positions according to current, food and protection; rocks, logs and pool tails are useful features to inspect."
+        },
+        {
+          "source": "odfw-trout",
+          "claim": "Trout use cover and cool water; Oregon’s guidance describes seasonal shifts between faster summer water and slower winter water."
+        },
+        {
+          "source": "noaa-release",
+          "claim": "Wet hands, a soft net and tackle that lands fish promptly reduce harm during release."
+        }
+      ]
+    },
+    {
+      "id": "spring-fed",
+      "name": "Spring-fed streams",
+      "title": "Spring Creek Fishing: Quiet Casts in Clear Water",
+      "summary": "Get close without spooking fish. Read weed channels, match the hatch, and make clean drifts through clear spring-fed water.",
+      "keywords": [
+        "spring",
+        "creek",
+        "clear-water",
+        "meadow"
+      ],
+      "sections": [
+        {
+          "title": "Watch the fish before you show them a fly",
+          "text": "A clear spring creek rewards a slow approach. Stop well back from the edge and look through polarized glasses. Search the dark slots between weed beds, the shade below grass banks, and the soft water beside a deeper run. A pale mouth opening or a tail shifting sideways can reveal a fish that never rises. Use a bush or a high bank as cover while you choose your position.\n\nFish the nearest opening first. Keep your shadow off the water and avoid a skyline silhouette. You often need a careful short cast more than a long one. If a fish bolts, pause and look elsewhere instead of casting repeatedly at the empty spot. In Alaska’s Delta Clearwater, grayling use pools and quiet eddies; that gives you another place to start beyond the classic meadow-creek weed channel."
+        },
+        {
+          "title": "Make the fly arrive before the line",
+          "text": "When a trout feeds near the surface, watch several rises to learn its lane. Cast far enough upstream to let the fly settle before it arrives. Aim to keep the heavier fly line away from the fish. A longer tapered leader can help in smooth water, but shorten it if the wind prevents a clean turnover. Use a tippet that suits the hook and still lets you land the fish promptly.\n\nStart with a dry fly close to the size of the insects you see. If the fish ignore it, check for drag before you change the pattern. A tiny sideways wake can spoil a good cast. For subsurface work, try one small nymph with enough weight to reach the lane. Place each cast deliberately. Several clean drifts beat a continuous shower of line."
+        },
+        {
+          "title": "Work below the hatch",
+          "text": "You can still fish when the surface stays quiet. Drift a nymph along the clear edge of a weed bed, then shorten or lengthen the depth setting. Keep the indicator small enough to land gently. Where spinning tackle is allowed, a small spoon, spinner, or jig gives you a useful alternative. Retrieve it through an open lane rather than straight through thick plants. Lift the rod before the lure reaches the near-bank weeds.\n\nLet local insect activity set the pace of the day. A spring-fed label alone does not tell you when a hatch starts. Arrive with both surface and subsurface options, then watch what the fish do. In bright light, give shaded banks a careful pass. If fish follow without taking, try a slower retrieve or a different angle before you move on."
+        },
+        {
+          "title": "Protect the banks that protect the fish",
+          "text": "Stay on established paths where they exist. Soft banks and undercuts can collapse under a careless step, and repeated shortcuts can turn a green edge into mud. Keep off private meadows unless you have permission. At narrow crossings, carry the rod behind you and look for another angler’s line before you pass. Leave livestock gates as you found them.\n\nClear water can hide deep holes among the weeds. Test each step and avoid wading just to shorten a cast. Some spring-fed rivers have limited bank access, so check the actual entry and exit points before the trip. Keep a net ready beside your fishing position. Unhook the fish over water, away from dry grass. Clean your boots and net between streams, and collect broken tippet before it disappears into the vegetation."
+        }
+      ],
+      "checklist": [
+        "Approach behind bank cover.",
+        "Watch several rises first.",
+        "Carry dry flies and nymphs.",
+        "Check the leader for drag.",
+        "Use established bank paths."
+      ],
+      "evidence": [
+        {
+          "source": "clearwater",
+          "claim": "The cold, clear Delta Clearwater supports grayling fishing with dry flies, nymphs, small spoons, spinners and jigs; pools and slack eddies are productive."
+        },
+        {
+          "source": "orvis-leaders",
+          "claim": "Longer leaders suit wary fish and smooth water, while shorter leaders improve turnover in wind and on short casts."
+        },
+        {
+          "source": "orvis-small-stream-tactics",
+          "claim": "Low profiles, bank cover and short casts help anglers approach trout without alarming them."
+        }
+      ]
+    },
+    {
+      "id": "glacier-influenced",
+      "name": "Glacier-influenced rivers",
+      "title": "Glacial River Fishing: Find the Clear Edges",
+      "summary": "Work tributary mouths, softer seams, and clear side water. Adjust your tackle to visibility and leave room for changing flows.",
+      "keywords": [
+        "glacial-river",
+        "silt",
+        "confluence",
+        "mountains"
+      ],
+      "sections": [
+        {
+          "title": "Look for the seam between two waters",
+          "text": "Start with the places where you can see a change. A clear tributary entering a cloudy main river creates an edge worth a look. So does a side channel, a bank eddy, or a sheltered pocket behind a gravel bar. Watch where drifting debris slows or turns. Fish the softer side of the seam from a firm bank before you consider a boat move.\n\nChoose the target before you choose the presentation. Trout and grayling in clear tributary water call for different tactics from migrating salmon in the main channel. At the Moose–Kenai confluence, Alaska’s fish agency describes a salmon holding area where the waters meet. Use that as a reason to inspect confluences, then check the species and access at your river. A color change alone does not tell you what lives below it."
+        },
+        {
+          "title": "Give the lure a useful path",
+          "text": "In clear side water, start with a small spinner, spoon, or nymph sized for the local trout or grayling. Cast upstream of the pocket and let the presentation reach depth before it passes the likely lie. Keep enough tension to feel a take without dragging everything too fast. A heavier lure is useful only if it improves that path.\n\nIn stained water, try a more visible spoon or streamer and make shorter, controlled passes beside cover. Work close to the bank where you can still judge the current. For salmon, use the local legal bait, lure, or fly method for the species. Do not copy a rig from a neighboring river without checking its rules. If the main channel becomes too dirty or strong to fish well, move to an open tributary with suitable conditions."
+        },
+        {
+          "title": "Read the melt and the weather together",
+          "text": "Glacial rivers can change as warm weather increases meltwater. Rain can add another pulse, and the effect reaches different parts of a basin at different times. Check a nearby gauge before the trip and again before you leave service. Ask a local shop which reaches remain fishable at the present level. The June 26, 2026 Tanana report recorded a rise from glacial melt; use current observations for your own day.\n\nAt the river, pick a fixed stone or bank mark and watch the water against it. Notice new floating sticks or a loss of visibility near your feet. Do not assume an early start guarantees lower water. A lake upstream can alter the river’s flow and sediment. Keep a second bank location in mind, and leave before a rising channel cuts your route."
+        },
+        {
+          "title": "Stay on solid ground",
+          "text": "Opaque water hides holes, shifting gravel, and submerged wood. Fish from established banks or with a skilled local boat operator when you cannot assess a crossing. Do not wade toward a clear seam through a cloudy main channel. Cold water and strong current give you little room to recover from a fall. Wear a life jacket aboard and keep spare clothes in a dry bag.\n\nGive bank vegetation a wide margin when the edge looks undercut. Keep away from ice faces and unstable slopes. In bear country, follow local food-storage and wildlife guidance, and never block an animal’s route to the water. Share limited bank openings without casting over other lines. Keep your net and pliers ready so a landed fish spends little time out of the river. Take every scrap of line home."
+        }
+      ],
+      "checklist": [
+        "Check the gauge and rain.",
+        "Locate clear side water.",
+        "Match the rig to the species.",
+        "Avoid unseen crossings.",
+        "Watch the return route."
+      ],
+      "evidence": [
+        {
+          "source": "tanana-report",
+          "claim": "ADF&G recorded rising Tanana water from glacial melt on June 26, 2026."
+        },
+        {
+          "source": "alaska-aquatic",
+          "claim": "Glacial river flow and sediment vary with melt; lakes can moderate flow and reduce downstream sediment."
+        },
+        {
+          "source": "kenai-confluence",
+          "claim": "The Moose River meets the glacial Kenai at a documented sockeye salmon holding area."
+        },
+        {
+          "source": "clearwater",
+          "claim": "Small lures, dry flies and nymphs are established grayling methods in the nearby clear, spring-fed Delta Clearwater fishery."
+        }
+      ]
+    },
+    {
+      "id": "backcountry-small-streams",
+      "name": "Backcountry & small streams",
+      "title": "Small Stream Fishing: Short Casts, Quiet Feet, Wild Places",
+      "summary": "Find trout in pocket water, shaded bends, and plunge pools. Carry a light kit, make short casts, and leave time for the walk back.",
+      "keywords": [
+        "small-stream",
+        "backcountry",
+        "forest",
+        "plunge-pool"
+      ],
+      "sections": [
+        {
+          "title": "Make the first cast before the first step",
+          "text": "Stop below a pool and look for the deepest pocket, a shaded bank, or the soft water behind a stone. Small-stream trout can hide in water that looks empty from the trail. Keep your profile low and use trees or rocks as cover. Fish the tail of the pool before moving toward its head. A careless step can send a warning through all the water you meant to fish.\n\nKeep casts short enough to control. Often the best position lets you place the fly with only a little line beyond the rod tip. Work one pocket, then move a few steps upstream where the route is safe. Avoid repeated casts over the same fish. If you meet another angler, agree on separate stretches rather than following closely through their water. Leave enough space for both of you to find undisturbed pools."
+        },
+        {
+          "title": "Use a fly you can see",
+          "text": "A buoyant dry fly makes a useful first choice on broken water. Pick a size and outline that suit local insects, then keep it where you can see the drift. Cast into the pocket and hold excess line off conflicting currents. Lift out before the fly drags across the next lie. A few clean drifts tell you more than a long cast through several seams.\n\nWhere multiple flies are allowed, a small beadhead nymph below a dry fly can test the water beneath the surface. Use a dropper short enough to control around the rocks. In deeper pools, fish a single weighted nymph or small streamer. Spinning anglers can use a small spinner or jig with short, accurate casts. Keep the lure moving clear of snags. Choose a hook arrangement that makes release easy in close quarters."
+        },
+        {
+          "title": "Pack for the walk and the water",
+          "text": "Carry one rod, a small box, spare tippet or leader, forceps, and a compact net if it suits the fish. Protect the rod on the approach and assemble it only when the path allows. Keep a map, headlamp, rain layer, food, drinking water, and basic emergency gear in the pack. Save the route before you lose phone service. Tell someone where you plan to return.\n\nCheck stream rules, public access, and any seasonal closures before the hike. On a cold day, the warmer afternoon may give insects and trout more activity. In hot weather, check water temperature and leave trout alone when local guidance or poor recovery calls for it. After heavy rain, steep small streams can rise quickly. Choose a route that avoids repeated crossings and keep a turn-around time you can actually meet."
+        },
+        {
+          "title": "Keep the stream as small and quiet as you found it",
+          "text": "Stay on durable ground where possible and avoid cutting new paths through wet banks. Step around shallow gravel nests. Do not move rocks to improve a casting position or build small dams for a photograph. Fish from the bank when it gives you a clean presentation. If you must wade, check the depth and footing before every move, and leave fast or unseen crossings alone.\n\nWet your hands before handling a trout and keep it over the water. Remove the hook with forceps rather than squeezing a small fish. Release it promptly into suitable quiet water. Clean mud and organisms from boots and tackle before you visit another drainage. Keep your location notes private enough to protect fragile access, and respect landowners. Pack out line from branches when it is safe to reach. Finish before the walk becomes a race with darkness."
+        }
+      ],
+      "checklist": [
+        "Save the route before departure.",
+        "Fish the pool tail first.",
+        "Keep casts short and quiet.",
+        "Carry a headlamp and dry layer.",
+        "Clean boots between streams."
+      ],
+      "evidence": [
+        {
+          "source": "orvis-small-stream-tactics",
+          "claim": "Orvis recommends low profiles, natural cover and short casts to avoid spooking small-stream trout and reduce drag."
+        },
+        {
+          "source": "orvis-small-stream-flies",
+          "claim": "Visible dry flies and a small nymph dropper are useful small-stream presentations."
+        },
+        {
+          "source": "rocky",
+          "claim": "Park guidance calls for protection of aquatic habitats and disinfection of gear that can carry invasive organisms."
+        }
+      ]
+    },
+    {
+      "id": "tailwaters",
+      "name": "Tailwaters (below dams)",
+      "title": "Tailwater Fishing: Read the Release and Find the Drift",
+      "summary": "Fish the seams below dams with controlled drifts and simple rigs. Check releases, watch the level, and keep a clear route out.",
+      "keywords": [
+        "tailwater",
+        "dam",
+        "river",
+        "shoal"
+      ],
+      "sections": [
+        {
+          "title": "Check the dam before the tackle",
+          "text": "Find the dam operator’s release information and the gauge for your fishing reach. Check them before departure and again at the water. A generation schedule helps you plan, but releases can change. Learn the local warning signals and restricted zones. Stay well away from the dam’s turbulent outflow and any low-head barrier. Powerful recirculating water is a place to avoid entirely.\n\nChoose a bank position with a direct exit. If you wade, use suitable flotation and stay close to that exit. Do not cross a channel that rising water could cut off. Watch a fixed rock or shoreline mark while you fish. Leave immediately when warnings sound or the level starts to rise. Do not wait to finish a cast. A good tailwater day starts with enough margin to stop fishing before the route changes."
+        },
+        {
+          "title": "Find soft water beside the delivery lane",
+          "text": "Below a dam, fish still need a manageable place to hold. Look at the edge of a fast tongue, the downstream side of a boulder, and the transition from a shoal into a pool. Work the nearby seam before casting across the main flow. At lower releases, smaller pockets and subtle depth changes become easier to see. Mark them mentally for the next visit.\n\nColdwater tailwaters can support trout, but other dams create warmwater fisheries. Pick the target from the local fishery information. On the Cumberland, Kentucky’s agency highlights rocky shoals, pools, and woody cover for trout. Use similar features as starting places where your river supports them. Keep the presentation in one current lane long enough to fish well. If the line crosses several speeds, shorten the cast or change your position from the bank."
+        },
+        {
+          "title": "Adjust depth before you add flies",
+          "text": "For tailwater trout, start with one small nymph or midge pattern under an indicator where that rig is allowed. Cast upstream of the lie and give the fly time to sink. Adjust the depth until it passes near the fish with occasional bottom contact. If it hangs up every drift, shorten the setting or reduce weight. A clean drift often helps more than an extra fly.\n\nA small spinner or suspending minnow lure gives spinning anglers a useful alternative. Retrieve across the softer edge while keeping the lure below the surface. Around woody cover, try a streamer with controlled pulls and pauses. Match the line and fly weight to the depth. Check hook and bait restrictions for the exact reach; adjacent sections can differ. Keep a spare leader ready so a snag does not consume a short safe fishing window."
+        },
+        {
+          "title": "Build the day around fish and flow",
+          "text": "On a trout tailwater, watch for insect activity and surface rises during a stable release. A hatch can make a quiet afternoon more useful than a hurried dawn session. When fish stay down, continue with the nymph or lure and test the next deeper lane. Keep notes on the release, water level, and location of each bite so the next visit starts with a useful comparison.\n\nShare crowded access with patience. Ask before you step into another angler’s drift lane, and leave space for boats to pass. Avoid shallow gravel nests and use established paths around soft banks. If the release makes the reach unsuitable, choose another legal bank location or finish the session. A boat offers a different access option, but it does not remove the hazards of strong flow. Use a skilled operator for unfamiliar tailwaters."
+        }
+      ],
+      "checklist": [
+        "Check releases and the gauge.",
+        "Identify warning signals.",
+        "Choose a direct bank exit.",
+        "Adjust the drift depth.",
+        "Leave at the first rise."
+      ],
+      "evidence": [
+        {
+          "source": "tva-water-safety",
+          "claim": "TVA advises anglers to obey dam warnings, wear flotation, stay outside restricted areas and plan an immediate exit."
+        },
+        {
+          "source": "tennessee-tailwaters",
+          "claim": "Tennessee stocks trout in coldwater tailwaters and directs anglers to check dam discharge and generation schedules."
+        },
+        {
+          "source": "species-bdb22b610d22",
+          "claim": "Kentucky describes trout around Cumberland shoals, pools and cover, with nymphs, midges, streamers, spinners and small jerkbaits as options."
+        }
+      ]
+    },
+    {
+      "id": "big-rivers",
+      "name": "Big rivers",
+      "title": "Big River Fishing: Find Fish Out of the Main Push",
+      "summary": "Break a broad river into seams, backwaters, and deep edges. Choose solid bank access and simple rigs for fish beside the heavy current.",
+      "keywords": [
+        "big-river",
+        "wing-dike",
+        "backwater",
+        "channel"
+      ],
+      "sections": [
+        {
+          "title": "Fish one useful edge at a time",
+          "text": "Forget the far bank for a moment. On a broad river, start with the quieter water near your side. Look behind a wing dike, inside a bend, beside a tributary mouth, or along the edge of a side channel. Follow the boundary where floating debris slows down. That gives you a smaller area to fish than the whole main channel.\n\nFor catfish, separate the likely species. Channel catfish often use slower water and backwaters. Blue catfish may hold along deeper channel edges and scour holes. Flatheads favor substantial cover such as wood or rock near deeper pools. These are useful starting patterns on the Mississippi and Missouri, not a reason to ignore local advice. From a safe bank, test the near edge of a feature before you cast across it. Keep a landing place in view."
+        },
+        {
+          "title": "Set a bait without overloading the rod",
+          "text": "A sliding sinker rig is a straightforward catfish option: main line through the sinker, then a swivel, leader, and suitable hook. Use fresh legal cut bait for fish-eating catfish or a local bait suited to the target. Choose enough weight to hold the presentation near the chosen edge. Check the rod’s casting rating with the bait included. Strong current is not a reason to exceed it.\n\nLeave the hook point clear and set the rod in a secure holder. With a circle hook, let the rod load and reel into the fish. Keep the drag ready for a run without allowing the fish unlimited line toward cover. Check the bait after a quiet period. If debris continually loads the line, move to softer water. Never tie a rod to your body or wrap line around your hand."
+        },
+        {
+          "title": "Move with the river level",
+          "text": "Check the gauge, recent rain, and the trend before you choose the access point. Rising water can cover low banks and send wood through the main channel. Falling water can leave a shallow backwater difficult to reach. Look at the path you must use to leave, not only the spot where you want to stand. Avoid floodwater and unstable banks.\n\nLow light can be a useful time to try cover for flatheads, while other catfish may feed during daylight. Let the target and local conditions set the schedule. If a well-placed bait gets no attention, try the next feature rather than adding rods across a large stretch. For a lure session, work a jig or minnow imitation along a reachable seam where local predatory fish occur. Keep the cast controlled and the line out of passing traffic."
+        },
+        {
+          "title": "Give commercial traffic the whole channel",
+          "text": "Wear a life jacket aboard and keep clear of barges, towboats, locks, and navigation structures. Large vessels need room and cannot turn or stop like a fishing boat. Their wakes can reach a bank after the vessel passes. Keep tackle and yourself above the wash, with a clear retreat. Never fish between a tow and its barges or tie to navigation markers.\n\nUse a suitable boat and an operator familiar with the river. Avoid anchoring in navigation lanes or near dams. From shore, stay off closed industrial ground and slippery dike tips. Share established access without blocking another angler’s landing area. Bring a net large enough for the target and unhook fish away from loose hooks. Pack out line, bait containers, and food scraps. On a big river, good control matters more than a heroic cast."
+        }
+      ],
+      "checklist": [
+        "Check the river level trend.",
+        "Start beside a current break.",
+        "Match bait to the catfish species.",
+        "Leave the navigation channel clear.",
+        "Choose a stable landing place."
+      ],
+      "evidence": [
+        {
+          "source": "missouri-big-rivers",
+          "claim": "Missouri describes distinct catfish habitat around dikes, holes and wood, plus slip-sinker rigs and steady reeling to engage circle hooks."
+        },
+        {
+          "source": "reading-water",
+          "claim": "Current, food and shelter help narrow the search for fish within moving water; the Orvis chapter includes large-river features."
+        }
+      ]
+    },
+    {
+      "id": "tropical-floodplains",
+      "name": "Tropical floodplains",
+      "title": "Floodplain Fishing: Follow the Water Back to the Fish",
+      "summary": "Work lagoon mouths, flooded timber, and draining creeks. Match lures to the local predator and let water levels guide the day.",
+      "keywords": [
+        "floodplain",
+        "lagoon",
+        "jungle",
+        "flooded-timber"
+      ],
+      "sections": [
+        {
+          "title": "Find the connection between river and floodplain",
+          "text": "Look at the water level before you choose a bank. A flooded forest, an open lagoon, and a narrow drain offer different ways to reach fish. Start where a lagoon meets the river or where water passes a point of timber. Watch for bait along the edge. Cast where you can bring a hooked fish into open water rather than across a wall of branches.\n\nIn the Rio Negro basin, peacock bass use timber and vegetation as ambush cover. In northern Australia, runoff creeks can carry baitfish from floodplains into barramundi water. Keep those targets separate when you pack. Ask the local guide which connection is active today. Work the mouth, its outer edge, and the nearest deeper pocket before moving. If one small area produces, look for another with the same water movement and cover."
+        },
+        {
+          "title": "Choose a lure you can place accurately",
+          "text": "For peacock bass, bring a surface lure and a subsurface option that your rod can cast all day. A popper lets you work an opening beside timber. A minnow lure or streamer lets you search below it. Place the first cast close enough to draw a fish out, then retrieve toward clear water. Pause or change speed when a fish follows without taking.\n\nFly anglers need stout connections and a rod suited to large flies. A floating line handles surface work; an intermediate or sinking tip reaches deeper pockets. For barramundi at a drain, try a local minnow-style lure or soft plastic and work the edge of the flow. Choose its diving depth to clear the bottom. Inspect hooks, split rings, and leaders after hard strikes. Replace damaged parts before the next cast, not after the next lost fish."
+        },
+        {
+          "title": "Let the water level set the pace",
+          "text": "Ask whether the water is rising, stable, or falling at the actual fishing area. A calendar for another tributary can send you to the wrong place. Falling water may draw fish out of flooded cover, while higher water can spread the available habitat. At the East Alligator River, Parks Australia highlights runoff creeks as feeding places for barramundi. That local pattern belongs to the local wet season.\n\nIn peacock water, a difficult rise does not mean you must keep throwing the largest lure. Try a smaller streamer and a slower retrieve, or a deeper presentation at a lagoon mouth. Keep useful alternatives close at hand. Watch the guide’s choice of banks and ask what changed after the last stop. Save the productive depth, cover, and water stage in a few notes for the next day."
+        },
+        {
+          "title": "Fish with respect for the place",
+          "text": "Use established access and a local operator familiar with the water, wildlife, and community permissions. Tropical shallows are not an invitation to wade. In crocodile country, follow local rules and stay well away from unprotected water edges. Keep hands inside the boat while you travel, and let the guide choose landing places. Wear a life jacket and keep communications gear dry.\n\nCarry drinking water, sun protection, rain cover, and insect protection within reach. Rest your casting arm before fatigue spoils your accuracy. Keep a generous gap between anglers who use large hooks. Ask before entering a village, landing on community ground, or taking photographs of people. Support fish for a quick release and avoid repeated casts at fish guarding young. Pack out tackle and rubbish, including scraps that seem too small to matter."
+        }
+      ],
+      "checklist": [
+        "Check the local water trend.",
+        "Fish lagoon and creek mouths.",
+        "Carry surface and deeper lures.",
+        "Inspect hooks and connections.",
+        "Follow local wildlife guidance."
+      ],
+      "evidence": [
+        {
+          "source": "igfa-peacock",
+          "claim": "IGFA’s Rio Negro interview describes peacock bass near timber, floating and sinking fly presentations, and smaller flies with slower retrieves in higher water."
+        },
+        {
+          "source": "kakadu-runoff",
+          "claim": "Parks Australia identifies floodplain creeks carrying baitfish into the East Alligator River during runoff as barramundi fishing locations."
+        },
+        {
+          "source": "amazon-planner",
+          "claim": "The Rio Negro operator organizes trip preparation around the destination and seasonal water levels."
+        }
+      ]
+    },
+    {
+      "id": "ponds-small-lakes",
+      "name": "Ponds & small lakes",
+      "title": "Pond Fishing: Simple Tackle, Better Casts, More Water",
+      "summary": "Find bass, bluegill, and stocked trout close to home. Fish shade and weed edges with a small kit and a few easy presentations.",
+      "keywords": [
+        "pond",
+        "small-lake",
+        "reeds",
+        "bank"
+      ],
+      "sections": [
+        {
+          "title": "Walk the bank before you settle in",
+          "text": "Make a slow lap where access allows. Look for a shaded corner, a fallen branch, an opening in reeds, or a bank that drops quickly into deeper water. These small changes can hold more promise than the busiest patch of bare shore. Stay back from the edge while you look. Fish often use the first few feet of water, especially beside cover.\n\nStart with a cast along the bank. Then cover a short fan toward the middle. Move after you test the available depth and cover, rather than spending the whole visit beside the car park. Check which species live in the pond. A stocked trout pond in cool weather and a summer bass-and-bluegill pond need different baits. Get permission for private water, even when a path or road runs beside it."
+        },
+        {
+          "title": "Make a float rig earn its place",
+          "text": "For bluegill and other small panfish, use a small hook with a piece of worm under a float. Add only enough split shot to help the rig cast and settle. Set the bait just above the weeds or bottom, then adjust the depth if nothing happens. Keep the bait small enough for the fish to take. A whole worm can leave too much for a fish to steal.\n\nCast near a weed opening and let the float settle. Move it gently, pause, and watch for a sideways slide as well as a full dip. With a jig, use a tiny plastic or piece of bait and the same patient approach. Keep a spare hook and float ready for a child or first-time angler. A simple rig that stays in the water teaches more than frequent tackle changes."
+        },
+        {
+          "title": "Give bass and trout their own turn",
+          "text": "For pond bass, try a small spinnerbait along an open weed edge or a soft plastic rigged with the hook point tucked clear of snags. Let the plastic fall beside cover, then lift it gently and pause. Watch the line during the fall. Use stronger line around wood than you would for tiny panfish in open water.\n\nFor stocked trout, carry a small spoon or inline spinner, or use permitted bait at a measured depth. Check the stocking information, but do not assume the pond becomes empty between deliveries. Warmwater fish may still provide action when trout stocking pauses. In hot weather, start early or return in the evening. During cooler periods, give the warmer part of the day a try. Keep notes on shade, depth, and which side of the pond produced bites."
+        },
+        {
+          "title": "Share a small piece of water well",
+          "text": "A small pond gives everyone a close view of your casts. Check behind you for walkers, bicycles, children, and dogs. Keep hooks inside a box until you need them. Choose a stable bank with space to land a fish, and keep children close beside deep or steep edges. Never climb a fence or enter a stormwater structure to retrieve a lure.\n\nUse wet hands and a small net to release fish quickly. Follow the local harvest rules and take only what you will use. Small ponds can receive heavy fishing pressure, so each retained fish matters. Keep discarded bait and aquarium fish out of the water. Collect line from bushes when you can reach it safely. Finish with a clean bank, a few useful notes, and enough time to enjoy the walk home."
+        }
+      ],
+      "checklist": [
+        "Confirm public access.",
+        "Cast along the bank first.",
+        "Start with a small float rig.",
+        "Adjust the bait depth.",
+        "Keep hooks clear of walkers."
+      ],
+      "evidence": [
+        {
+          "source": "idaho-ponds",
+          "claim": "Idaho Fish and Game recommends small float rigs, worms, jigs, spinners and soft plastics for mixed pond fisheries, with cooler periods favoring trout."
+        },
+        {
+          "source": "tmf-lakes",
+          "claim": "Weeds, shore cover, points and depth changes provide useful places to locate fish in small lakes and ponds."
+        }
+      ]
+    },
+    {
+      "id": "lakes-reservoirs",
+      "name": "Lakes & reservoirs",
+      "title": "Lake and Reservoir Fishing: Find the Depth That Works",
+      "summary": "Find fish on points, weed edges, and drop-offs. Use simple depth control to make better casts from a bank or boat throughout the day.",
+      "keywords": [
+        "lake",
+        "reservoir",
+        "boat",
+        "point"
+      ],
+      "sections": [
+        {
+          "title": "Find a change in the bottom",
+          "text": "A point, a weed edge, or a submerged creek channel gives you somewhere useful to start. Look for shallow feeding water beside a deeper escape route. On a map, closely spaced depth contours show a steep drop. Widely spaced contours show a gentler shelf. From shore, a rocky point or a sudden change in bank slope can help you choose the first casts.\n\nCover the near water before you reach for distance. Cast across a small fan, then repeat it with a little more sink time. From a boat, hold off the feature and cast across it rather than sitting directly above the fish. If you get a bite, note the depth, cover, and retrieve. Try another place with the same features. One useful pattern can shrink a very large lake into a manageable day."
+        },
+        {
+          "title": "Keep the bait at the right level",
+          "text": "For bass along weeds, start with a weedless soft plastic or a small swimbait. Work it over the tops or along the outside edge. On a clean rocky drop, a jig or drop-shot rig lets you hold the bait near the bottom. On a drop-shot rig, tie the hook above the sinker. Keep the weight light enough to feel the lure, but heavy enough to know where it is. If every cast snags, change the angle or lift the bait higher.\n\nFor panfish, put a small jig or worm under a float and adjust the depth. For trout, try a spoon, spinner, or small streamer where the water stays cool. A floating fly line works near the surface; a sinking line helps reach deeper fish. Count the sink time and repeat productive casts. Change one part of the presentation at a time."
+        },
+        {
+          "title": "Follow shade, temperature, and food",
+          "text": "In warm weather, try shallow cover early and late. As the sun climbs, test shade and the next deeper edge. Trout need cool water, so the same sunny bay that suits bass may be a poor summer trout spot. Look for local temperature information and recent catches before you choose a target. Watch for baitfish, insect hatches, and birds, then confirm that fish are actually using the area.\n\nA light breeze can make one shoreline worth a closer look, but comfort and boat control come first. Reservoir levels also change the available cover. A dock that held fish last month may sit over dry ground today. Check the ramp and water level before towing a boat. After a change in conditions, revisit the depth of your last bite before you blame the lure color."
+        },
+        {
+          "title": "Make room on the water",
+          "text": "Wear a life jacket aboard and check the wind forecast for the whole trip. Choose a return route with shelter when possible. Leave exposed water when thunder threatens. At the ramp, load tackle and fit drain plugs before you enter the launch lane. Move to the preparation area after retrieval so the next crew can launch.\n\nGive shore anglers enough space to cast. Pass docks and small boats slowly, and avoid cutting between an angler and the bank they are fishing. Keep a landing net and measuring tool ready before the first cast. Release fish beside the boat instead of dropping them from above. Before you leave, drain the boat and remove weeds from the trailer, motor, and tackle. Follow the local clean-and-dry rules before the next lake."
+        }
+      ],
+      "checklist": [
+        "Mark a point or drop-off.",
+        "Start with the near water.",
+        "Count each lure’s sink time.",
+        "Check the ramp and wind.",
+        "Clean and drain the boat."
+      ],
+      "evidence": [
+        {
+          "source": "tmf-lakes",
+          "claim": "Points, vegetation, drop-offs and other structure help anglers locate fish in lakes and ponds."
+        },
+        {
+          "source": "tmf-bass",
+          "claim": "Jigs, soft plastics and drop-shot rigs offer different ways to present baits to bass near cover or deeper structure."
+        },
+        {
+          "source": "stillwater",
+          "claim": "Stillwater trout fishing requires attention to structure, line choice, presentation and retrieve."
+        },
+        {
+          "source": "odfw-trout",
+          "claim": "Trout seek cool water and cover, including structure and stream inlets in lakes."
+        }
+      ]
+    },
+    {
+      "id": "alpine-lakes",
+      "name": "Alpine lakes",
+      "title": "Alpine Lake Fishing: Pack Light and Find Cruising Trout",
+      "summary": "Choose a fish-filled lake, pack a small tackle box, and work the shore for cruising trout while you keep weather and the hike in view.",
+      "keywords": [
+        "alpine-lake",
+        "mountain",
+        "trout",
+        "shore"
+      ],
+      "sections": [
+        {
+          "title": "Pick the lake before you pack the rod",
+          "text": "Check a state fishery page or park lake list before you commit to the climb. Many high lakes have no fish, and a blue patch on a map cannot tell you otherwise. Look for the species, access route, and any special tackle rules. A recent stocking record helps, but the stocking date and fish size matter too. Tiny stocked fry do not become catchable trout overnight.\n\nChoose a route that leaves real time beside the water. Check trail closures, snow, daylight, and the forecast for the lake’s elevation. Carry one outfit, a compact lure or fly box, spare leader, and forceps. Keep rain gear, a warm layer, navigation, food, and water ahead of spare tackle. Set a turn-around time before you start. The final climb back out often takes longer than it looks from the shore."
+        },
+        {
+          "title": "Fish the edge before the middle",
+          "text": "Stop above the lake and watch for cruising trout. Look along a shelf, beside a boulder, or where a shallow bay meets deeper water. If you see a fish, follow its route before you cast. Place the lure or fly ahead of it instead of on its head. Clear mountain water makes a quiet approach worthwhile.\n\nStart from a stable bank and keep your shadow off the shallows. Work the near edge with short casts, then extend your reach. Inlets and outlets deserve a look where fishing is open, but avoid shallow spawning gravel. If the first shore shows no life, move to a different depth or bottom type. You can learn more from two careful stops than from an hour of casts toward the center. Keep track of the path back as you move."
+        },
+        {
+          "title": "Carry a few lures that cover different depths",
+          "text": "A small spoon and an inline spinner make a simple spinning kit. Let the spoon sink briefly, then retrieve it steadily with an occasional pause. Start the spinner soon enough to keep its blade turning above rocks or weeds. If trout follow, try a new speed or cast angle. Use a leader that suits the fish and the shoreline, with enough strength to land a trout promptly.\n\nFor flies, carry a buoyant dry, an ant or beetle, and a small leech or nymph. Show a dry fly to a cruising fish or let it rest near a feeding lane. Retrieve the subsurface fly with short pulls and pauses. Observe the lake before deciding that dawn is essential. On a cold day, fish may become more active as the shallows warm and insects appear."
+        },
+        {
+          "title": "Leave before the mountain changes the plan",
+          "text": "Watch clouds as closely as the water. If thunder develops, leave exposed shores and ridges for proper shelter. Do not wait for the last bite to start a long retreat. Keep dry clothing protected from spray and rain. Cold water makes an unnecessary wade a poor trade for a few extra feet of casting distance.\n\nUse durable shore surfaces and established campsites. Avoid trampling wet meadow edges to reach a fish. Keep soap, food scraps, and fish waste out of the lake, and follow local disposal rules. Handle trout over water with wet hands and a ready net. Follow lake-specific harvest guidance; some waters protect sparse native fish, while others encourage removal of introduced trout. Pack out all line and hooks. A small lake shows the effect of every visitor."
+        }
+      ],
+      "checklist": [
+        "Check the lake’s fish list.",
+        "Check the trail and forecast.",
+        "Pack one versatile outfit.",
+        "Cast ahead of cruising fish.",
+        "Keep the turn-around time."
+      ],
+      "evidence": [
+        {
+          "source": "rocky",
+          "claim": "Many high-altitude lakes in Rocky Mountain National Park lack reproducing fish populations, and some waters have special restrictions."
+        },
+        {
+          "source": "washington-high-lakes",
+          "claim": "Most Washington high lakes are fishless; the agency provides stocking and access information and recommends careful approaches in clear water."
+        },
+        {
+          "source": "odfw-trout",
+          "claim": "Trout use cool water, cover and food sources near lake structure and inlets."
+        }
+      ]
+    },
+    {
+      "id": "great-lakes",
+      "name": "Great Lakes",
+      "title": "Great Lakes Fishing: Follow Cold Water and Seasonal Fish",
+      "summary": "Choose a shore, harbor, or boat approach for trout, salmon, perch, and walleye. Follow local seasons, bait, and changing water conditions.",
+      "keywords": [
+        "great-lakes",
+        "harbor",
+        "breakwall",
+        "freshwater-coast"
+      ],
+      "sections": [
+        {
+          "title": "Choose a lake, a port, and a target",
+          "text": "Start with one named area and the fish available there. A Lake Erie walleye trip, a Lake Michigan salmon trip, and a Lake Superior trout trip need different gear and water. Use state agency maps and recent local reports to choose a harbor or launch. Check license, stamp, and boundary requirements for the water you will actually fish.\n\nFrom shore, look for public harbors, accessible breakwalls, and river mouths that are open to fishing. From a boat, study nearby contours and the route back before you search farther out. Trout and salmon can move with the season and water temperature, so yesterday’s depth matters more than a distant fish photograph. Start near recent bait or fish marks. Keep the first trip small enough to learn one area well rather than crossing a broad lake to chase scattered reports."
+        },
+        {
+          "title": "Make shore tackle cover several depths",
+          "text": "For trout or salmon within reach, carry a casting spoon and a minnow-style lure that your rod handles comfortably. Cast from a clear position and let the spoon sink for a measured count. Repeat the next cast a little deeper until you find fish or the bottom. Vary the retrieve without losing control near rocks. Use a leader that resists abrasion and a net suited to the height of the platform.\n\nFor perch, try a small jig or permitted bait near the bottom. A float can help hold the bait at a steady depth in sheltered water. Keep the rig simple when wind makes line control difficult. Visit river mouths only where the rules allow, and avoid walking on spawning beds in tributaries. If waves reach the pier, leave. A sheltered harbor bank is a better choice than a wet outer wall."
+        },
+        {
+          "title": "Use the boat to hold a repeatable depth",
+          "text": "For open-water trout and salmon, depth control is central to a trolling pass. The local setup may use downriggers, diving devices, weighted line, or other gear. Learn one system before adding a wide spread. Watch the sounder for bait and fish, note the depth of a strike, and repeat that part of the pass. Keep lure action consistent as you turn or change speed.\n\nLake trout follow colder water deeper during summer. Wisconsin’s Lake Superior guidance describes deeper summer trolling and renewed trout and salmon opportunities near river mouths as water cools. Those patterns are useful starting points, not one calendar for all five lakes. For walleye or perch, use the local seasonal pattern and suitable tackle instead. Ask a charter crew to explain its depth control on a first trip. That lesson makes later equipment choices much easier."
+        },
+        {
+          "title": "Treat the shore like an exposed coast",
+          "text": "Check the marine forecast, wave forecast, and weather warnings before every trip. A Great Lake can develop dangerous waves and currents, and cold water remains a serious hazard. Wear a life jacket aboard and dress for the water as well as the air. Carry proper communications and navigation equipment. Keep enough fuel and time to return before the weather changes.\n\nOn shore, stay off closed or wave-washed piers. Keep away from the edge in strong wind and give passing boat wakes room. Avoid lines across harbor entrances or other anglers’ casts. Use a suitable net and a planned release route. Check consumption advice if you plan to keep fish. At the ramp, drain equipment and remove plants before travel. Follow local invasive-species rules, especially when you move between lakes or tributaries."
+        }
+      ],
+      "checklist": [
+        "Choose one port and target.",
+        "Check marine weather and waves.",
+        "Count the lure’s sink time.",
+        "Repeat the depth of a bite.",
+        "Clean and drain all equipment."
+      ],
+      "evidence": [
+        {
+          "source": "wisconsin-superior",
+          "claim": "Wisconsin describes deeper summer trolling for trout and salmon and cooler-season opportunities around Lake Superior river mouths."
+        },
+        {
+          "source": "michigan-lake-trout",
+          "claim": "Great Lakes lake trout move into deeper cold water as nearshore water warms in summer."
+        },
+        {
+          "source": "nws-great-lakes",
+          "claim": "Great Lakes waves and currents create coastal hazards, especially around piers and shore structures."
+        },
+        {
+          "source": "wisconsin-shore-tackle",
+          "claim": "Wisconsin DNR recommends casting spoons, float-and-bait rigs and suitable landing nets for Lake Michigan shore fishing."
+        }
+      ]
+    },
+    {
+      "id": "ice-fishing",
+      "name": "Ice fishing",
+      "title": "Ice Fishing: Find the Fish Beneath Your Feet",
+      "summary": "Choose a checked route, drill with a plan, and work small jigs at the right depth. Stay warm and keep rescue gear close at hand.",
+      "keywords": [
+        "ice",
+        "frozen-lake",
+        "shelter",
+        "winter"
+      ],
+      "sections": [
+        {
+          "title": "Check the route before you drill",
+          "text": "Start with a lake you know and an experienced local ice angler. Check recent conditions, access restrictions, and the forecast. Inspect and measure the ice as you travel; one hole does not describe the whole route. Stay away from current, inlets, outlets, pressure ridges, and aerated water. Snow can hide weak areas. Tracks and other anglers are not proof that your route will support you.\n\nCarry accessible ice picks, a throw rope, and a charged phone protected from water. Wear suitable flotation for travel on foot. Tell someone the location and return time, and go with a partner. Keep a clear way back to shore. If the ice changes underfoot or the weather threatens that route, leave. Treat local thickness guidance as a minimum condition to assess, never as a promise of safety."
+        },
+        {
+          "title": "Drill around a feature, not at random",
+          "text": "Use a depth map to choose a weed edge, a point, or a break into deeper water. Pick a manageable area on the checked route. Drill a few holes across the change in depth, then keep the loose ice clear. Measure the depth at each hole with your lure or a sounder. Note where the weeds end and the bottom drops.\n\nFor panfish, start near remaining vegetation or a nearby deeper edge. Search above the bottom as well as close to it; fish can suspend. A sonar unit helps show fish and your jig, but careful depth changes still teach you without one. Give each hole a fair try, then move within the assessed area if nothing happens. Keep a productive hole quiet. Repeated drilling beside another angler can disturb both the fish and the day."
+        },
+        {
+          "title": "Make a small jig come alive",
+          "text": "A short rod, light line, and a small jig make a useful panfish setup. Add a tiny soft plastic or a permitted piece of bait. Lower it to the chosen depth, then use small lifts and pauses. Watch the line and rod tip. Some bites pull down; others remove weight as a fish lifts the jig. Raise the lure slowly if a fish follows but stops short.\n\nFor walleye or larger trout, use a jigging spoon or other lure sized to the target. Avoid one heavy, constant pumping motion. Try a lift, a fall under control, and a pause. Where tip-ups are legal, set an allowed bait at a measured depth and attend the gear closely. Check local line and hook limits before setting more holes. Keep spare rigs ready so cold fingers spend less time tying knots."
+        },
+        {
+          "title": "Stay warm without losing awareness",
+          "text": "Wear dry layers and waterproof insulated boots. Carry spare gloves because bait, slush, and fish quickly wet the first pair. Open layers before hard work, then close them when you stop. A small pad under your feet can make a stationary session more comfortable. Keep warm drinks and food accessible, and shorten the trip if anyone becomes cold or tired.\n\nA shelter blocks wind, but heaters need proper ventilation and the manufacturer’s clearances. Use suitable carbon monoxide protection with fuel-burning equipment. Keep the exit free of tackle and loose line. Early and late light can be productive, so organize the return before darkness hides the route. Follow local rules for shelter removal and marking large holes. Remove bait, litter, and line when you leave. Keep released fish out of freezing air as briefly as possible."
+        }
+      ],
+      "checklist": [
+        "Check ice along the route.",
+        "Keep picks and rope accessible.",
+        "Drill across a depth change.",
+        "Try pauses between jig lifts.",
+        "Clear the shelter exit."
+      ],
+      "evidence": [
+        {
+          "source": "minnesota-ice-travel",
+          "claim": "Minnesota DNR advises assessment and measurement of ice, accessible ice picks, flotation for travel on foot and an escape plan."
+        },
+        {
+          "source": "minnesota-ice",
+          "claim": "Minnesota DNR recommends fishing around features, moving between holes, quiet approaches and attention to heater hazards."
+        },
+        {
+          "source": "new-york-ice",
+          "claim": "Small jigs, spoons, permitted bait and tip-ups are established ice fishing methods; layers and waterproof boots help anglers stay warm."
+        }
+      ]
+    },
+    {
+      "id": "canals-urban-water",
+      "name": "Canals & urban water",
+      "title": "Canal and Urban Fishing: Find Fish Close to Home",
+      "summary": "Work bridge shade, canal junctions, and park banks with a compact kit. Find legal access, choose the local target, and keep casts tidy.",
+      "keywords": [
+        "canal",
+        "urban",
+        "park",
+        "bridge"
+      ],
+      "sections": [
+        {
+          "title": "Look for the feature that breaks the straight line",
+          "text": "A long canal becomes easier to fish when you look for something different. Try a junction, a wider basin, a shaded bridge, or a section with plants and deeper water beside it. Watch for baitfish and check the near wall before casting across the canal. A short stretch with cover can deserve more attention than a long bare bank.\n\nUse public access maps and posted signs to choose where you stand. A waterway beside a road is not automatically open for fishing. Keep away from restricted pumps, gates, culverts, and flood-control works. Learn which fish live in the reach. Florida butterfly peacock bass use canal intersections, dead ends, fallen trees, and shade. Elsewhere, your target may be perch, bass, carp, or a stocked trout. Choose the local fish first, then work the nearby cover."
+        },
+        {
+          "title": "Bring a small kit with two useful approaches",
+          "text": "A light spinning outfit and a small box cover many urban sessions. For panfish, try a small jig or worm under a float. Set the bait above weed or debris, then work the shaded edge. For bass around plants, use a weedless soft plastic. In open water, a small minnow lure or spinner lets you cover more ground without carrying much gear.\n\nFor Florida butterfly peacocks, choose fish-shaped lures such as a small jerkbait, topwater plug, or jig. They favor fish prey, so the plastic worm you use for largemouth bass may be a poor first choice. Cast beside bridge shade or a canal junction and vary the retrieve. Keep enough line strength to guide the fish away from concrete. Carry pliers, spare leader, and a landing net suited to the bank height."
+        },
+        {
+          "title": "Fit a useful session into the day",
+          "text": "Scout a new access point in daylight. Note the opening hours, foot traffic, bank height, and a place to land fish. Then choose a short session around the target’s habits. Morning and evening can be comfortable in summer, but Florida butterfly peacock bass feed during daylight. A quiet lunchtime visit can be more useful than a night trip aimed at the wrong species.\n\nWatch changes in flow and level. Rain and control gates can alter a canal quickly, so stay clear of outlets and steep wet edges. If the near-bank water becomes muddy or full of debris, move to another open area. Keep a few notes on shade and the depth of bites. Return to the same stretch under a different light or water level. Small local visits let you learn those changes without a long journey."
+        },
+        {
+          "title": "Leave the path open and the bank clean",
+          "text": "Pause your cast when a walker or cyclist passes. Keep rods, bags, and net handles out of the path. Use a controlled cast rather than a wide swing with exposed hooks. Stay away from overhead power lines and never climb a fence for a snag. From a steep canal wall, fish only where you have safe footing and a workable landing and release plan.\n\nFollow local rules for bait, fish transport, and harvest. Check fish-consumption advice before keeping fish for food. Do not release aquarium fish or move live fish into another waterway. Use wet hands and keep the fish off hot pavement. Collect line from railings and bushes where it is safe to reach. Respect nearby homes with quiet voices and careful parking. Good access often depends on anglers being welcome neighbors."
+        }
+      ],
+      "checklist": [
+        "Confirm access and opening hours.",
+        "Find shade or a canal junction.",
+        "Match the lure to the local fish.",
+        "Plan the landing from the bank.",
+        "Keep the public path clear."
+      ],
+      "evidence": [
+        {
+          "source": "fwc-peacock",
+          "claim": "Florida butterfly peacock bass feed by day, prefer fish or fish-imitating lures, and gather at canal junctions, dead ends, fallen trees and shade."
+        },
+        {
+          "source": "idaho-ponds",
+          "claim": "Urban waters can support mixed fisheries; Idaho recommends compact tackle and respect for private pond access."
+        }
+      ]
+    },
+    {
+      "id": "estuaries-mangroves",
+      "name": "Estuaries & mangroves",
+      "title": "Estuary and Mangrove Fishing: Work the Tide and the Edges",
+      "summary": "Find fish along mangrove shade, creek mouths, and channel edges. Match your casts to the tide and keep roots and seagrass intact.",
+      "keywords": [
+        "estuary",
+        "mangrove",
+        "tidal-creek",
+        "roots"
+      ],
+      "sections": [
+        {
+          "title": "Start at the edge of the cover",
+          "text": "Look for a creek mouth, a mangrove point, or a gap where a channel runs close to the roots. These places give you a clear casting target and a route for moving bait. Watch for small fish dimpling the surface, a nervous patch of water, or birds feeding along one short stretch. Start at the outside edge before you try a cast beneath the branches.\n\nCoastal estuaries mix river water and seawater, so the fish can change as you move through the system. In warm Florida waters, snook use mangrove shorelines, seagrass, and other cover. Elsewhere, choose the local target before you copy a rig. Position the boat far enough away for a quiet presentation. A cast parallel to the edge keeps the lure near shelter longer than a cast straight at the bank."
+        },
+        {
+          "title": "Use the current to carry the bait",
+          "text": "Watch which way the water moves around the point. Cast up-current and let a bait or lightly weighted lure travel toward the cover. Snook often face moving water as they wait for prey. Give the bait a natural path without letting it wash deep into the roots. Keep your rod ready to guide a hooked fish toward open water.\n\nTry a shrimp imitation, a small paddletail, or a shallow-running minnow lure. Choose the lightest jighead that keeps contact at the working depth. Over grass, a weedless hook can save repeated fouled casts. Where live bait is allowed, use a locally suitable shrimp or baitfish on an appropriate hook. Leave a circle hook’s point exposed and reel steadily when the fish takes. Inspect the leader after every fish and every scrape against roots or oysters."
+        },
+        {
+          "title": "Fish the water that the tide opens",
+          "text": "On a rising tide, inspect newly flooded edges and places where bait enters the mangroves. On a falling tide, try the mouths of small drains and the nearest deeper channel. Use these as starting places, then watch the actual current. Wind and river flow can change the water level, and a tide table for the coast may not match an inland creek exactly.\n\nKeep a record of the water stage when you find fish. Note whether they held inside the cover, beside the roots, or out on the channel edge. That detail helps on the next trip. Low light can make a quiet shoreline worth a first pass, but moving water may create a useful chance later. Plan the return around shallow crossings. Do not let a productive bank leave the boat stranded on the falling tide."
+        },
+        {
+          "title": "Leave the nursery in good shape",
+          "text": "Keep the motor out of shallow seagrass and avoid dragging an anchor through living cover. Use a pole or suitable shallow-water approach where it is safe and allowed. Stay clear of mangrove roots with the hull. If a cast catches a branch, retrieve the line only from a safe position. Do not break the branch or leave a long loop for birds to find.\n\nWear a life jacket and carry a chart or saved map of the creeks. Similar-looking channels become confusing when the tide changes. Keep a safe distance from wildlife and avoid wading where local hazards make it unsuitable. Give other boats room to work a shoreline without cutting across their casts. Rinse salt from tackle afterward, check worn leaders, and remove loose line from the deck before it blows away."
+        }
+      ],
+      "checklist": [
+        "Check the local tide.",
+        "Watch the bait at creek mouths.",
+        "Cast along the cover.",
+        "Check the leader for wear.",
+        "Keep the propeller off seagrass."
+      ],
+      "evidence": [
+        {
+          "source": "estuary",
+          "claim": "Coastal estuaries commonly mix fresh water with salt water and provide important nursery habitat."
+        },
+        {
+          "source": "fwc-snook",
+          "claim": "Snook use mangrove shorelines and face moving water; live shrimp and baitfish are established presentations."
+        },
+        {
+          "source": "fwc-marine-habitat",
+          "claim": "Mangrove roots supply shelter and food for fish; branches and shorelines offer angling opportunities."
+        },
+        {
+          "source": "noaa-habitat",
+          "claim": "Care around mangroves and seagrass helps protect essential fish habitat."
+        }
+      ]
+    },
+    {
+      "id": "bayous-coastal-marsh",
+      "name": "Bayous & coastal marsh",
+      "title": "Bayou and Marsh Fishing: Follow the Drains and Grass Edges",
+      "summary": "Find redfish and other marsh fish around drains, grass points, and deeper bends. Work shallow rigs and plan your return with the tide.",
+      "keywords": [
+        "bayou",
+        "marsh",
+        "grass",
+        "tidal-drain"
+      ],
+      "sections": [
+        {
+          "title": "Look for a small opening in a big marsh",
+          "text": "Start at a drain, a narrow creek mouth, or a grass point beside deeper water. Watch for shrimp skipping, baitfish bunching, or a push of water moving along the edge. A redfish can reveal itself with a tail above the surface, but many stay entirely below it. Cast to the route the fish uses rather than waiting for a perfect sighting.\n\nBayous can change from fresh to brackish or salty water along the same trip. Choose the target for the reach. Redfish suit many coastal marsh areas, while bass or catfish may be more useful farther inland. Look for a firm, legal bank access or use a shallow-draft boat appropriate to the water. Study the creek junctions before you leave. A low grass horizon can make several different channels look exactly alike."
+        },
+        {
+          "title": "Keep the hook above the grass",
+          "text": "A shrimp or shrimp imitation beneath a popping cork is a useful marsh starting rig for redfish. Set the leader so the bait stays above grass or soft bottom. Give the cork a short pop, let the bait settle, and wait. Cast where the current can carry the rig along the edge without burying it in vegetation. If it catches grass, shorten the depth setting before you add weight.\n\nFor an active search, try a weedless spoon or a soft plastic on a light, weedless hook. Retrieve steadily over shallow cover, then slow near a gap. In a deeper bend, use a jig with enough weight to stay in contact. Fly anglers can lead visible redfish with a small shrimp, crab, or baitfish pattern. Let the fly settle before you move it away from the approaching fish."
+        },
+        {
+          "title": "Use the falling water without getting trapped",
+          "text": "A falling tide can make a small drain worth a patient stop as water leaves the grass. Fish outside the mouth and along the nearest deeper edge. On a rise, look farther into flooded margins where bait can spread. Compare several drains before you commit to one. The one with visible food and a useful depth change usually deserves more time than an empty-looking opening.\n\nCheck the wind as well as the tide. Wind can raise or lower shallow coastal water and change the return trip. Mark the main route and identify shallow crossings before fishing side creeks. Keep enough water beneath the boat to return without dragging through grass. Early light is comfortable in hot weather, but a useful flow can create a midday chance. After cold weather, give deeper protected bends a look for redfish."
+        },
+        {
+          "title": "Keep the marsh quiet and intact",
+          "text": "Use a pole, paddle, or careful motor approach that leaves the grass and soft bottom undamaged. Do not power across a shallow flat just because another boat left a track. Keep wakes small near banks and other anglers. Give a boat working a drain room to finish rather than stopping directly in its drift. Avoid birds at nests and do not approach wildlife for a closer photograph.\n\nWear a life jacket and carry a map, water, sun protection, and a reliable way to call for help. Thunderstorms and fog can change a simple route quickly. Keep clear of alligators and other local hazards; avoid casual wading into muddy water. Test footing before stepping onto a bank. Use a net for fish beside the boat, remove hooks promptly, and carry all discarded line back to shore."
+        }
+      ],
+      "checklist": [
+        "Mark the main return channel.",
+        "Watch bait at small drains.",
+        "Set the cork above grass.",
+        "Check wind-driven water changes.",
+        "Keep the propeller off the marsh."
+      ],
+      "evidence": [
+        {
+          "source": "texas-red-drum",
+          "claim": "Red drum use mud, submerged vegetation, oyster areas and shoreline breaks; shrimp under popping corks, weedless spoons and flies are established methods."
+        },
+        {
+          "source": "fwc-saltwater-tips",
+          "claim": "Tide, time, temperature, food and shelter help determine where inshore fish feed."
+        },
+        {
+          "source": "noaa-habitat",
+          "claim": "Careful boating and fishing protect coastal habitats that provide fish with food and shelter."
+        }
+      ]
+    },
+    {
+      "id": "saltwater-flats",
+      "name": "Saltwater flats",
+      "title": "Saltwater Flats Fishing: Spot the Fish and Make the Cast",
+      "summary": "Learn to spot tails, shadows, and moving fish on shallow flats. Lead the fish with a light lure or fly and stay ready for the first run.",
+      "keywords": [
+        "flat",
+        "sand",
+        "bonefish",
+        "skiff"
+      ],
+      "sections": [
+        {
+          "title": "Look for movement before color",
+          "text": "Slow down before you cast. Scan a short patch of water through polarized glasses, then shift your gaze farther out. A moving shadow, a tail tip, or a small push of water can reveal a fish before its outline becomes clear. Sand patches make good places to learn. On grass or broken bottom, follow the direction of travel rather than staring at one dark shape.\n\nKeep the sun behind or beside you when the route allows. From a skiff, agree on distance and clock-face directions with the person on the platform. From shore, take small steps and stop often. Stay far enough away that your line and shadow miss the fish. When you find one, decide where the lure should land before you lift the rod. An unhurried first cast is often the best chance."
+        },
+        {
+          "title": "Lead the fish and let the fly settle",
+          "text": "For bonefish, start with a small shrimp-style fly or jig suited to the depth. Use less weight in very shallow water and more when the fly must sink before the fish arrives. Cast ahead of the fish, not onto it. Let the presentation settle, then use a short pull to draw attention. If the fish turns toward it, watch closely and avoid dragging the bait into its face.\n\nKeep the fly rod low. When the fish takes and the line tightens, set with a firm pull of the line hand. Clear loose line from feet and fittings as the fish runs. With spinning gear, a small shrimp lure offers a similar quiet presentation. Match the outfit to the target: a bonefish setup is no substitute for tackle intended for large tarpon or giant trevally."
+        },
+        {
+          "title": "Follow the tide without losing your exit",
+          "text": "A rising tide can let fish spread onto shallow feeding areas. As the water falls, check channels and the edges that lead toward deeper water. Spend time watching how fish enter and leave your flat. A local tide chart gives you a starting time, while the water at your feet tells you what is happening now.\n\nChoose calm, bright conditions when you want to learn fish spotting. A low sun, cloud, or wind ripple makes the job harder, even when fish are present. In poor visibility, work a known edge with controlled casts instead of chasing uncertain shapes. Before you wade out, identify a route that stays usable as the tide rises. Avoid crossing deep channels to reach a distant tail. Leave room in the day to return against wind or current."
+        },
+        {
+          "title": "Keep the deck clear and the flat quiet",
+          "text": "Lay out only the line you can manage. Strip it into a clean part of the deck or a suitable line basket, away from buckles and loose bags. Check the leader knot and hook point before each new fish. A short practice cast shows whether the fly turns over in the wind. Wear glasses and keep hooks away from the guide and your partner.\n\nWade only on suitable ground with local knowledge of holes, rays, and sharp bottom. Wear footwear matched to the surface. Avoid living coral and fragile grass. Give another angler or skiff a wide berth, and never run through a flat someone is stalking. Bring the fish to hand promptly, support it in the water, and release it without a long photo session. Carry drinking water and cover exposed skin."
+        }
+      ],
+      "checklist": [
+        "Clean the glasses.",
+        "Clear loose line from the deck.",
+        "Lead the fish with the cast.",
+        "Match fly weight to depth.",
+        "Check the wading exit."
+      ],
+      "evidence": [
+        {
+          "source": "flats-learning",
+          "claim": "Orvis teaches flats fishing through fish spotting, tides, guide communication, fly selection and presentation."
+        },
+        {
+          "source": "orvis-wading-flats",
+          "claim": "Bonefish and other flats fish can be approached on foot, with small movements of a fly near the bottom."
+        },
+        {
+          "source": "orvis-bonefish-set",
+          "claim": "Bonefish on fly require a line-hand strip set rather than an upward trout-style rod lift."
+        },
+        {
+          "source": "fwc-saltwater-tips",
+          "claim": "Rising water can bring fish onto flats, while falling water directs them toward deeper areas."
+        }
+      ]
+    },
+    {
+      "id": "surf-beaches",
+      "name": "Surf & beaches",
+      "title": "Surf Fishing: Read the Beach Before You Cast",
+      "summary": "Find troughs, cuts, and feeding lanes close to shore. Choose a simple bait rig or lure and fish the beach without chasing distance.",
+      "keywords": [
+        "surf",
+        "beach",
+        "sandbar",
+        "waves"
+      ],
+      "sections": [
+        {
+          "title": "Find the trough before the fish",
+          "text": "Walk the beach and watch several sets of waves from dry ground. Waves often break over shallow bars and soften over deeper troughs. Look for a gap in a bar, a darker lane, or a steeper section of beach. These changes give bait and predators routes along the shore. A low-tide visit can help you see the shape before higher water covers it.\n\nBegin with the nearest trough. Many anglers cast beyond useful water because the horizon looks more promising. Make a short cast beside a cut, then work progressively farther out. If you use a lure, walk between casts and cover new water. If you fish bait, set up where you can watch the rod and the surf together. A gap that carries water offshore is a fishing feature to cast toward from shore, not a place to wade."
+        },
+        {
+          "title": "Choose one bait rig or one search lure",
+          "text": "For bait fishing, a sliding sinker rig lets the main line move through the weight to a swivel and leader. Use a hook suited to the bait and target. Keep the point clear. A pyramid or grip-style sinker can help hold in moving surf, but the rod must handle the whole cast load, including bait. If you need more weight than the rod permits, choose another position or another day.\n\nUse local shrimp, worms, shellfish, or cut bait where allowed. Check it after missed bites or a long quiet spell. For an active approach, try a metal spoon, a bucktail, or a minnow lure sized to the forage. Cast along the trough as well as across it. Keep enough contact to feel the lure and vary the retrieve before changing color."
+        },
+        {
+          "title": "Use the tide as a place to start",
+          "text": "A tide change can shift the best lane closer to or farther from the beach. Watch where the waves break as the water rises, and move your casts with that change. Early and late light often make pleasant fishing windows, but the local species and surf conditions matter. At Cape Hatteras, the park describes strong broad opportunities in spring and fall; your own coast may follow another pattern.\n\nKeep a few notes after each visit: water stage, wind direction, bait, and the distance of your bites. Those details help you return to the right part of the beach. If a rig rolls constantly or weed covers the hook on every cast, move along the shore or shorten the session. More weight is not always the answer. Check the tide against the route back around any headland."
+        },
+        {
+          "title": "Stay clear of waves, hooks, and crowds",
+          "text": "Keep your eyes on the sea and stay beyond the reach of the surf. Unexpected large waves can reach well above the last wet mark, especially on exposed coasts. Stay away from drift logs and slippery rocks. Check surf warnings before departure. A calm interval is not permission to step onto a wave-washed ledge.\n\nLook behind you before every cast. Leave swimmers, walkers, dogs, and other anglers a generous gap. Keep bait knives and spare hooks inside a closed box. Place rods in secure holders while you change rigs, and keep reels out of the sand. Follow bird nesting closures and beach vehicle rules. Carry a bag for line, bait wrappers, and broken tackle. Unhook fish on a wet surface or in the water, then return unwanted fish promptly."
+        }
+      ],
+      "checklist": [
+        "Find a trough or bar gap.",
+        "Try the near water first.",
+        "Check the full casting weight.",
+        "Watch the surf and exit.",
+        "Clear the area behind each cast."
+      ],
+      "evidence": [
+        {
+          "source": "tmf-surf",
+          "claim": "Troughs between the beach and sandbars, plus gaps through the bars, concentrate useful surf fishing lanes."
+        },
+        {
+          "source": "hatteras",
+          "claim": "Cape Hatteras offers surf fishing and identifies spring and fall as broadly productive seasons."
+        },
+        {
+          "source": "nws-waves",
+          "claim": "Sneaker waves can reach unexpectedly far up shore, and waves can move heavy drift logs."
+        },
+        {
+          "source": "noaa-release",
+          "claim": "Circle hooks and prompt, careful handling can improve the survival of released fish."
+        }
+      ]
+    },
+    {
+      "id": "piers-jetties-bridges",
+      "name": "Piers, jetties & bridges",
+      "title": "Pier, Jetty, and Bridge Fishing: Work the Structure",
+      "summary": "Fish pilings, shade lines, and current breaks with simple rigs. Plan the landing first and leave room for waves, boats, and other anglers.",
+      "keywords": [
+        "pier",
+        "jetty",
+        "bridge",
+        "pilings"
+      ],
+      "sections": [
+        {
+          "title": "Start beside the structure",
+          "text": "Look straight down before you make a long cast. Pilings, rock gaps, and the shadow of a bridge can hold food and cover close to your feet. Watch the current around each support. A soft pocket behind it or a line between light and shade gives you a specific place to present a bait. Fish the near edge first, then the outer water.\n\nChoose the target from local catches and the season. A tiny hook for perch has a different job from a large bait rig for a strong predator. On a jetty, rocky cover may hold bottomfish close to the stones. On a pier, fish may move along the outside pilings. Plan where the fish can go when hooked. Do not drop a bait into a gap you cannot safely fish or land from."
+        },
+        {
+          "title": "Keep the rig simple and under control",
+          "text": "For small fish near pilings, lower a bait on a short leader with enough weight to keep it in place. A simple dropper rig works where local hook rules allow. Use small pieces of shrimp, squid, or other permitted local bait, and keep the hook point exposed. Lift the rig clear of rocks rather than dragging it through every crevice.\n\nFor active fish, cast a jig or spoon beyond the structure and retrieve beside it. Let the lure sink to a repeatable depth, then change that depth if the first passes draw nothing. Keep the line away from sharp concrete, oysters, and barnacles. Retie after a scrape. If the current carries your rig through neighboring lines, use a shorter cast or another position. More distance can create more tangles without putting the hook near more fish."
+        },
+        {
+          "title": "Use tide, light, and a landing plan",
+          "text": "Watch where the current carries bait as the tide changes. Try the down-current edge of a piling or rock point, then adjust when the flow reverses. Dawn and dusk can be useful, and bridge lights may draw bait after dark where night access is allowed. Visit in daylight first so you know the surface, railings, and exit.\n\nBring the correct net before the first cast. A long-handled net may suit a low platform; a proper drop net can reach fish from a high pier. Check its line and coordinate with a partner. Do not lift a heavy fish by the rod or drag it up rough rocks. Decide how you will release fish from that height as well. If you cannot land and release the target safely, choose a lower or better-equipped fishing spot."
+        },
+        {
+          "title": "Make space for people and the sea",
+          "text": "Stay on open, designated fishing access. A road bridge without a safe pedestrian area is not a fishing platform. Keep paths clear of bags and rods, and look behind you before casting. Ask how nearby anglers work their lines before you join them. Give a hooked fish room and help with the net when asked. Keep spare hooks secured where children and birds cannot reach them.\n\nWear suitable footwear and flotation on exposed structures. Stay off jetties and piers when waves wash over them or warnings advise against access. A dry interval does not remove the danger of the next set. Do not climb down to retrieve a snag. Watch passing boat wakes and keep the navigation opening clear. Pack out line, and never throw bait scraps toward birds gathered around the fishing area."
+        }
+      ],
+      "checklist": [
+        "Check that access is open.",
+        "Fish beside the pilings first.",
+        "Inspect leaders for abrasion.",
+        "Bring a suitable landing net.",
+        "Stay off wave-washed structures."
+      ],
+      "evidence": [
+        {
+          "source": "tmf-pier",
+          "claim": "Piers, seawalls and related structures provide cover for bait and fish; tide, time and position affect fishing."
+        },
+        {
+          "source": "odfw-marine-shore",
+          "claim": "Bottomfish often stay close to rocks and jetties, and rock contact can fray line."
+        },
+        {
+          "source": "nws-great-lakes",
+          "claim": "Waves and currents around piers can be dangerous, including on freshwater Great Lakes shores."
+        },
+        {
+          "source": "nws-waves",
+          "claim": "Unexpected waves can sweep exposed shore structures and move large objects."
+        },
+        {
+          "source": "fwc-saltwater-tips",
+          "claim": "FWC advises anglers on piers and bridges to use specialized nets or slings that support a fish’s whole body."
+        }
+      ]
+    },
+    {
+      "id": "rocky-shores-kelp",
+      "name": "Rocky shores & kelp",
+      "title": "Rocky Shore and Kelp Fishing: Work the Gaps and Edges",
+      "summary": "Find nearshore fish around rock, kelp, and open pockets. Control lure depth, protect your leader, and choose a shore with room to retreat.",
+      "keywords": [
+        "rocky-shore",
+        "kelp",
+        "headland",
+        "nearshore"
+      ],
+      "sections": [
+        {
+          "title": "Find a reachable patch of cover",
+          "text": "Look for the edge of a kelp bed, an open pocket among rocks, or a change from reef to sand. These features give you a target you can fish without covering the entire coast. From a boat, stay outside the thickest kelp and cast along the edge. From shore, use only a stable position well clear of wave wash. A tempting pocket below a slippery ledge can stay unfished.\n\nChoose the fish for the coast you visit. In California, kelp bass use kelp, reefs, jetties, and other shallow structure. Farther north, rocky shores can offer rockfish, greenling, cabezon, and lingcod. Their tackle needs differ. Start with the local species list and current rules. Inspect the route from the hook to your landing place before you cast. Rocks become much harder to avoid with a fish on the line."
+        },
+        {
+          "title": "Swim the lure above the worst snags",
+          "text": "A soft plastic on a jighead gives you a clear way to work rocky water. Cast beside the feature, allow a controlled sink, and retrieve above the bottom. Use short lifts when the lure approaches rising rock. A weedless rig can help around kelp, but it still needs a clear path. Start lighter in shallow pockets and add weight only when you lose control of the depth.\n\nFor bait, use a local rig with squid, shrimp, or another permitted offering. Match the hook to the fish’s mouth and the bait size. Keep enough tension to detect a take without pinning the sinker between rocks. After each snag or fish, run your fingers along the leader and replace rough sections. Keep the rod at a useful fighting angle. Do not lift a fish over a ledge with the rod tip."
+        },
+        {
+          "title": "Watch current and swell together",
+          "text": "Fish may feed around kelp and rock during several tide stages, so use the local current to choose the cast. A manageable flow lets a lure pass close to cover. Too much flow can sweep it into kelp or pull a boat toward shallow rock. On a new shore, favor a calm daylight visit so you can learn the route and see the water clearly.\n\nCheck swell height, period, wind, and tide before departure. Watch the sea from a safe distance when you arrive. A quiet spell does not show the largest wave that may arrive later. Keep the retreat above the rising tide and avoid headlands that become cut off. If the water reaches your chosen platform, leave it. Change to a sheltered legal spot instead of trying to solve unsafe conditions with heavier tackle."
+        },
+        {
+          "title": "Protect fish and keep your footing",
+          "text": "Wear a life jacket on exposed rocky shores and shoes suited to the surface. Fish with a partner, and leave algae-covered slopes alone. Never turn your back on the waves while you work near the sea. Keep away from drift logs. From a boat, maintain room to move away from the kelp and reef if the engine stops or the wind changes.\n\nCheck protected areas and species rules before retaining a fish. Similar-looking rockfish can have different restrictions. Have pliers and a landing net ready, and avoid sharp teeth and spines. For rockfish brought up from depth, carry and know how to use a descending device. Keep anchors off living habitat. Retrieve broken line only where you can do so safely. Leave tide pools, nesting birds, and shoreline plants undisturbed on the walk out."
+        }
+      ],
+      "checklist": [
+        "Check swell, wind, and tide.",
+        "Choose a clear retreat.",
+        "Cast along kelp edges.",
+        "Replace scraped leaders.",
+        "Carry suitable release tools."
+      ],
+      "evidence": [
+        {
+          "source": "igfa-kelp-bass",
+          "claim": "Kelp bass occur near kelp beds, reefs, jetties and other structure and take local live bait and artificial lures."
+        },
+        {
+          "source": "odfw-marine-shore",
+          "claim": "Oregon shore guidance identifies rockfish, lingcod, greenling and cabezon around rocky habitat and describes bait and jig methods."
+        },
+        {
+          "source": "nws-waves",
+          "claim": "Unexpected large waves and wave-moved logs pose serious hazards on exposed shores."
+        },
+        {
+          "source": "noaa-rockfish-release",
+          "claim": "Recompression with descending devices helps rockfish affected by barotrauma return to depth."
+        }
+      ]
+    },
+    {
+      "id": "reef-bottom",
+      "name": "Reef & bottom",
+      "title": "Reef and Bottom Fishing: Stay in Touch Without Getting Stuck",
+      "summary": "Work reef edges, wrecks, and deep bottom with controlled drops. Choose the right weight, feel the bite, and prepare fish for release.",
+      "keywords": [
+        "reef",
+        "wreck",
+        "ocean",
+        "boat"
+      ],
+      "sections": [
+        {
+          "title": "Find the edge of the structure",
+          "text": "Use a chart and sounder to locate a reef, wreck, rocky rise, or change from hard bottom to sand. Then look for fish and bait near it. The highest part is not always the best drop. Try the edge where your bait can reach fish without disappearing into a crack. A short drift across the feature helps show the current and bottom shape.\n\nFor tropical snapper or grouper, the target may sit close to cover. For halibut, the useful bottom and presentation can differ. Ask the skipper where the rig should finish, then lower it from the correct side of the boat. Keep an eye on the line angle. If it trails far behind, retrieve and reset before it sweeps across everyone else’s tackle. Repeat the useful part of the drift, not the whole empty stretch."
+        },
+        {
+          "title": "Use enough weight to know where the hook is",
+          "text": "Choose a rod rated for the sinker or jig you need. Start with enough weight to reach bottom without a long, uncontrolled belly of line. After contact, lift the rig just clear of the rocks. Lower it again briefly to check depth as the boat moves. If the bottom rises, reel early. A lure wedged in a reef catches nothing.\n\nFor bait, use a simple local rig with squid, fish strips, or another allowed bait. Leave the hook point exposed. With a circle hook, wind into steady pressure instead of striking hard. For active fishing, try a metal jig or soft plastic on a suitable head. Lift, pause, and follow the drop with controlled tension. In Yakutat, herring, squid, octopus, large jigs, and spoons are established halibut choices. Match the bait to your own fishery."
+        },
+        {
+          "title": "Let current and control choose the window",
+          "text": "A manageable current lets you hold a useful line angle and feel changes at the hook. If the tide runs too hard for your gear, try a sheltered feature or wait for less flow. Slack water can make depth control easier, but it does not guarantee feeding fish. Watch the sounder and the bites rather than following one tide rule everywhere.\n\nSet the drift before anyone drops. On a shared boat, listen for the skipper’s call and retrieve promptly when asked. If one angler hooks a strong fish, clear nearby lines and leave room to move. Learn to distinguish a bite from repeated bottom taps by checking how the rod loads. After a missed take, inspect the bait and hook point. If you repeatedly catch unwanted small fish, change the spot or presentation rather than continuing the same drop."
+        },
+        {
+          "title": "Prepare the release before the first drop",
+          "text": "Know which species you may keep and carry the tools to return the others. Fish raised from depth can suffer barotrauma and may struggle to swim down. Have a suitable descending device rigged and learn its use before departure. Follow local requirements for release gear. Do not push a protruding stomach back into a fish or puncture it with a hook.\n\nKeep dehookers, pliers, and a measuring tool in reach. Avoid sharp teeth and spines, and support fish that leave the water. Leave the gaff for fish that will legally be kept. Wear a life jacket and stable deck shoes. Keep heavy sinkers low and secure while the boat moves. Never wrap braid or leader around a hand to pull a snag. Let the crew deal with large fish and heavy terminal tackle."
+        }
+      ],
+      "checklist": [
+        "Check the target and rules.",
+        "Set the drift before the drop.",
+        "Keep the rig near vertical.",
+        "Rig a descending device.",
+        "Secure loose hooks and sinkers."
+      ],
+      "evidence": [
+        {
+          "source": "halibut",
+          "claim": "ADF&G lists herring, squid, octopus, large squid jigs and spoons as Yakutat halibut tackle."
+        },
+        {
+          "source": "tmf-offshore",
+          "claim": "Rocky bottom and other uneven structure provide shelter and ambush cover; jigging and bottom presentations can reach these fish."
+        },
+        {
+          "source": "noaa-rockfish-release",
+          "claim": "Descending devices return rockfish to depth and counter the effects of barotrauma."
+        },
+        {
+          "source": "noaa-release",
+          "claim": "NOAA recommends suitable tackle, careful dehooking and prompt release at depth for fish affected by barotrauma."
+        }
+      ]
+    },
+    {
+      "id": "offshore",
+      "name": "Offshore",
+      "title": "Offshore Fishing: Find Life in the Blue Water",
+      "summary": "Look for bait, birds, current edges, and floating cover. Learn the basics of trolling, casting, and working with an offshore crew.",
+      "keywords": [
+        "offshore",
+        "blue-water",
+        "sportfishing-boat",
+        "weedline"
+      ],
+      "sections": [
+        {
+          "title": "Search for life, not just deep water",
+          "text": "An empty-looking ocean becomes easier to read when you look for food. Watch for birds working one area, bait near the surface, or fish breaking beside floating cover. A current edge or a weed line deserves a careful pass when it also shows life. Floating Sargassum supports young fish and other animals, which helps explain its value in an offshore search.\n\nUse local seasonal reports to choose the target and trip date. Start in daylight when you first learn to spot birds, bait, and current edges. Mahi mahi around floating cover call for a different approach from tuna holding deep or grouper beside a wreck. Use the sounder and the crew’s recent knowledge to choose the working depth. Mark a bite or visible school so you can return to the same water. Approach a feeding group from the edge. Driving through its middle scatters the opportunity and can spoil the fishing for other boats."
+        },
+        {
+          "title": "Make the trolling spread work",
+          "text": "Before the boat reaches the fishing area, learn which rod is yours and how its drag works. For trolling, the crew sets lures or baits at different distances so they run cleanly behind the boat. Watch each one near the surface before it goes farther back. A bait that spins or a lure packed with weed needs attention, even if the rest of the spread looks good.\n\nWhen a fish strikes, follow the crew’s call. Keep steady pressure and wind when you can gain line. Avoid pumping the rod so high that you lose control near the tip. Other anglers should clear spare lines and loose gear. Ask for help before a fish crosses the stern or heads beneath the boat. Let the crew handle heavy leaders. A strong run can tighten a loose loop dangerously fast."
+        },
+        {
+          "title": "Be ready to cast or drop",
+          "text": "A school beside floating cover may give you a chance to cast. Keep a suitable spinning rod ready with a baitfish lure or jig, and leave the hook secured until the skipper positions the boat. Cast clear of other lines and retrieve through the edge of the school. If fish follow without taking, change the speed or let the lure sink a little deeper.\n\nFor fish marked below the boat, lower a jig to the indicated depth and work that layer. You do not need to touch bottom when the fish sit above it. Count the drop or use marked line so you can repeat the depth after a bite. Carry only tackle that fits the target and the crew’s method. A heavy jigging outfit and a light casting outfit have different jobs, even on the same trip."
+        },
+        {
+          "title": "Prepare for the whole day at sea",
+          "text": "Choose an experienced crew for a first offshore trip. Ask about the target, method, travel time, and equipment before departure. Check the marine forecast and accept a shorter route or cancellation when conditions demand it. Pack drinking water, sun cover, rain protection, and shoes that grip a wet deck. Keep personal items in one compact bag away from the work area.\n\nListen to the safety briefing and locate the life jackets and emergency equipment. Know where to stand during a strike and where to move when a large fish reaches the boat. Never wrap a leader around your hand or brace against an unsecured rod. Keep hooks covered during travel. Respect another boat’s drift or trolling path. For released fish, let the crew unhook them with minimal handling and keep large fish in the water whenever possible."
+        }
+      ],
+      "checklist": [
+        "Check the marine forecast.",
+        "Learn the drag before departure.",
+        "Watch baits for weeds.",
+        "Clear lines after a strike.",
+        "Leave heavy leaders to the crew."
+      ],
+      "evidence": [
+        {
+          "source": "noaa-sargassum",
+          "claim": "Floating Sargassum provides nursery habitat for mahi mahi, jacks and amberjacks."
+        },
+        {
+          "source": "tmf-offshore",
+          "claim": "Offshore methods include trolling, jigging and bottom fishing, with different tackle for different targets; beginners benefit from a charter or guide."
+        },
+        {
+          "source": "noaa-release",
+          "claim": "Tackle that lands fish promptly and dehooking with minimal air exposure support successful release."
+        },
+        {
+          "source": "fwc-marine-habitat",
+          "claim": "FWC identifies floating debris, Sargassum, current edges, eddies and water-color changes as places to look for offshore fish."
+        }
+      ]
+    },
+    {
+      "id": "kayak-fishing",
+      "name": "Kayak fishing",
+      "title": "Kayak Fishing: Get Close and Keep the Boat Simple",
+      "summary": "Use a kayak to reach lake edges, sheltered bays, and gentle rivers. Set up a clean deck, control your drift, and land fish from a seat.",
+      "keywords": [
+        "kayak",
+        "paddle",
+        "lake",
+        "sheltered-bay"
+      ],
+      "sections": [
+        {
+          "title": "Choose water that fits your paddling skills",
+          "text": "Start on a small, sheltered lake or protected bay with an easy launch and landing. Learn to paddle, turn, stop, and recover from a capsize before you add fishing gear. Practice rescue skills with qualified help in controlled conditions. A wide fishing kayak still needs a skilled paddler when wind, current, or waves increase. Leave exposed coasts and strong rivers for suitable training and equipment.\n\nChoose one short route with several nearby fishing stops. Check the wind, weather, water temperature, and tide where relevant. An easy outward drift can become a hard paddle home. Leave a float plan with someone ashore and carry a reliable way to call for help. Wear a properly fitted life jacket throughout the trip. Dress for an unexpected immersion, including appropriate cold-water protection when the water demands it."
+        },
+        {
+          "title": "Rig the boat so everything has a place",
+          "text": "Begin with one rod and a small tackle box. Put pliers, spare leader, and a compact net where you can reach them without twisting far behind the seat. Secure the box and loose items. Keep hooks covered until you need them. Arrange the paddle so you can take hold of it immediately, even with a fish on. Avoid loose cords and loops around your legs.\n\nChoose tackle for the water, just as you would from shore. A weedless plastic suits a lake edge; a light jig or shrimp imitation can suit a sheltered saltwater flat. Practice short casts while seated before the trip. Check that the lure clears rods and equipment behind you. Pack drinking water and weather layers within reach. Leave unnecessary spare gear ashore so the working area stays clear when a fish arrives."
+        },
+        {
+          "title": "Set the drift before you cast",
+          "text": "Stop short of the cover and see how the boat moves. A small amount of wind or current can carry you past a useful edge while you cast ahead. Make a short pass, then paddle back outside the fishing area to repeat it. Keep the boat away from the bank you plan to fish. Quiet movement is useful only if you do not drift over the fish first.\n\nIn a lake, work along weeds or a point with a jig, small swimbait, or soft plastic. In a sheltered bay, use the same controlled drift beside a grass edge. On a gentle river, plan the next safe stopping point before the cast. Do not anchor in current without suitable equipment and training. Keep clear of submerged branches, dams, navigation channels, and motorboats. Put the rod down whenever boat control needs both hands."
+        },
+        {
+          "title": "Land the fish from the seat",
+          "text": "Keep your weight centered and guide the fish alongside the kayak. Leave enough line beyond the rod tip to bring it to the net without pulling the rod straight overhead. Lower the net into the water and guide the fish over it. Avoid a long sideways reach. If the fish surges, let the drag work and settle it again before another attempt.\n\nKeep the hook and fish away from your legs. Use pliers and support the fish for a quick release beside the boat. A photograph can wait if the kayak drifts toward trouble. Give bank anglers and other paddlers space, and keep your wake small near wildlife. Return while you still have energy and daylight. At the launch, unload away from the ramp, then drain and clean the kayak before it goes to another water."
+        }
+      ],
+      "checklist": [
+        "Wear a fitted life jacket.",
+        "Check wind and water temperature.",
+        "Leave a float plan ashore.",
+        "Keep the paddle within reach.",
+        "Land fish with your weight centered."
+      ],
+      "evidence": [
+        {
+          "source": "fwc-paddling",
+          "claim": "FWC advises paddlers to wear flotation, check tides and wind, leave a float plan, carry communications and give anglers room."
+        },
+        {
+          "source": "nws-cold-water",
+          "claim": "Cold-water immersion can impair breathing and movement; flotation and clothing matched to water temperature improve preparedness."
+        },
+        {
+          "source": "tmf-kayak",
+          "claim": "Take Me Fishing advises leaving enough line beyond the rod tip when landing a fish from a kayak."
+        }
+      ]
+    }
+  ]
+}

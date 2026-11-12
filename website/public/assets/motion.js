@@ -41,7 +41,7 @@
   const tripBand=document.querySelector('.trip-band-track');
   let sequenceTrigger,bandTrigger;
   sequence?.querySelectorAll('[data-water-step]').forEach(button=>button.addEventListener('click',()=>{
-    if(!sequenceTrigger){const p=button.closest('.water-sequence')?.querySelectorAll('.water-story')[Number(button.dataset.waterStep)];p?.scrollIntoView({behavior:'smooth',block:'start'});return;}
+    if(!sequenceTrigger){const p=button.closest('.water-sequence')?.querySelectorAll('.water-story')[Number(button.dataset.waterStep)];p?.scrollIntoView({behavior:reduced.matches?'instant':'smooth',block:'start'});return;}
     const i=Number(button.dataset.waterStep),y=sequenceTrigger.start+(i/3)*(sequenceTrigger.end-sequenceTrigger.start);
     if(lenis)lenis.scrollTo(y,{duration:.45});else scrollTo(0,y);
   }));
@@ -52,34 +52,6 @@
   }));
   function premiumDesktop(){
     const cleanup=[];
-    const hero=document.querySelector('.outdoor-hero');
-    if(hero){
-      gsap.to(hero.querySelector('.scene-picture'),{yPercent:15,ease:'none',scrollTrigger:{trigger:hero,start:'top top',end:'bottom top',scrub:true}});
-      gsap.to(hero.querySelector('.outdoor-hero-copy'),{y:65,ease:'none',scrollTrigger:{trigger:hero,start:'top top',end:'bottom top',scrub:true}});
-    }
-    if(false&&sequence){ // owner 2026-11-10: no scroll-locked sections
-      const panels=[...sequence.querySelectorAll('.water-story')],buttons=[...sequence.querySelectorAll('[data-water-step]')];
-      sequence.classList.add('sequence-pinned');
-      gsap.set(panels.slice(1),{autoAlpha:0});
-      let current=-1;
-      const select=i=>{if(i===current)return;current=i;panels.forEach((p,j)=>{p.inert=i!==j;p.setAttribute('aria-hidden',String(i!==j));});buttons.forEach((b,j)=>b.setAttribute('aria-current',String(i===j)));};
-      select(0);
-      const timeline=gsap.timeline({onUpdate:()=>select(Math.min(3,Math.floor(timeline.time()+.1)))});
-      panels.slice(1).forEach((p,i)=>{timeline.to(panels[i],{autoAlpha:0,duration:.3},i+.65).fromTo(p,{autoAlpha:0},{autoAlpha:1,duration:.3},i+.65).fromTo(p.querySelector('.story-image img'),{scale:1.065},{scale:1,duration:1,ease:'none'},i+.65);});
-      sequenceTrigger=ScrollTrigger.create({trigger:sequence,start:'top 82px',end:'+=1800',pin:sequence.querySelector('.sequence-stage'),animation:timeline,scrub:.15,invalidateOnRefresh:true});
-      cleanup.push(()=>{sequence.classList.remove('sequence-pinned');panels.forEach(p=>{p.inert=false;p.removeAttribute('aria-hidden');});sequenceTrigger=null;});
-    }
-    if(false&&tripBand){ // owner 2026-11-10: no scroll-locked sections
-      const section=tripBand.closest('.trip-band');section.classList.add('band-pinned');
-      bandTrigger=ScrollTrigger.create({trigger:section,start:'top 82px',end:()=>'+='+Math.max(500,(tripBand.scrollWidth-tripBand.clientWidth)*.65),pin:true,scrub:.18,invalidateOnRefresh:true,animation:gsap.to(tripBand,{x:()=>-(tripBand.scrollWidth-tripBand.clientWidth),ease:'none'})});
-      const focus=e=>{const card=e.target.closest('.world-card');if(!card||!bandTrigger)return;const x=card.offsetLeft-tripBand.firstElementChild.offsetLeft;const ratio=Math.min(1,x/(tripBand.scrollWidth-tripBand.clientWidth));lenis?.scrollTo(bandTrigger.start+ratio*(bandTrigger.end-bandTrigger.start),{immediate:true});};
-      tripBand.addEventListener('focusin',focus);cleanup.push(()=>{tripBand.removeEventListener('focusin',focus);section.classList.remove('band-pinned');bandTrigger=null;});
-    }
-    document.querySelectorAll('.atlas-routes path').forEach((path,i)=>gsap.fromTo(path,{strokeDasharray:1,strokeDashoffset:1},{strokeDashoffset:0,duration:1,ease:'none',scrollTrigger:{trigger:path.closest('.atlas-art'),start:`top ${85-i*8}%`,end:'bottom 65%',scrub:true}}));
-    document.querySelectorAll('.guide-landscape,.guide-hero').forEach(el=>{
-      gsap.fromTo(el,{clipPath:'inset(0 3% 6% 3%)'},{clipPath:'inset(0% 0% 0% 0%)',duration:.55,ease:'power2.out'});
-      gsap.to(el.querySelector('img'),{yPercent:8,ease:'none',scrollTrigger:{trigger:el,start:'top top',end:'bottom top',scrub:true}});
-    });
     document.querySelectorAll('.month-strip').forEach(el=>gsap.from(el.querySelectorAll('.documented'),{scaleY:.2,transformOrigin:'bottom',duration:.35,stagger:.025,scrollTrigger:{trigger:el,start:'top 94%',once:true}}));
     // Delegation keeps the 798-card library from allocating hundreds of listeners.
     let activeCard,cardFrame=0,lastEvent;
@@ -149,9 +121,11 @@
     document.documentElement.classList.toggle('motion-paused',paused);
     document.documentElement.classList.toggle('mobile-motion',!desktop.matches&&!paused&&!reduced.matches);
     if(reduced.matches||paused){filmUpdate();if(playButton){playButton.textContent='Play autoplay';}return;}
+    if(document.querySelector('.guide-rich'))return; // Rich guides use native scroll and CSS hover only.
     revealCleanup=revealContent();
-    if(!desktop.matches){filmUpdate();return;}
-    try{libraries ||= Promise.all([load('/assets/vendor/gsap-3.13.0.min.js'),load('/assets/vendor/ScrollTrigger-3.13.0.min.js'),load('/assets/vendor/lenis-1.3.11.min.js')]);await libraries;}catch{return;}
+    // The game and reference use native scrolling and their own light interactions.
+    if(!desktop.matches||document.querySelector('[data-fishing-game],.lingo-page')){filmUpdate();return;}
+    try{libraries ||= Promise.all([load('/assets/vendor/gsap-3.13.0.min.js'),load('/assets/vendor/ScrollTrigger-3.13.0.min.js')]);await libraries;}catch{return;}
     if(version!==startVersion||reduced.matches||paused||!desktop.matches)return;
     gsap.registerPlugin(ScrollTrigger);
     context=gsap.matchMedia();
@@ -168,13 +142,7 @@
     context.add('(min-width: 901px) and (pointer: fine) and (prefers-reduced-motion: no-preference)',()=>{
       lenis=null; // owner 2026-11-10: native scroll, no smooth-scroll takeover
       const tick=time=>lenis?.raf(time*1000);gsap.ticker.add(tick);
-      document.querySelectorAll('.water-story .story-image').forEach(el=>{
-        if(el.closest('.water-sequence'))return;
-        gsap.fromTo(el,{clipPath:'inset(8% 5% 8% 5%)'},{clipPath:'inset(0% 0% 0% 0%)',ease:'none',scrollTrigger:{trigger:el,start:'top 95%',end:'top 30%',scrub:true}});
-        gsap.fromTo(el.querySelector('img'),{yPercent:-10,scale:1.025},{yPercent:0,scale:1,ease:'none',scrollTrigger:{trigger:el,start:'top bottom',end:'bottom top',scrub:true}});
-      });
       const premiumCleanup=premiumDesktop();
-      if(false&&films){films.classList.add('is-pinned');filmTrigger=ScrollTrigger.create({trigger:films,start:'top 82px',end:()=>'+='+(strip.scrollWidth-strip.clientWidth)*.6,pin:true,invalidateOnRefresh:true,animation:gsap.to(strip,{x:()=>-(strip.scrollWidth-strip.clientWidth),ease:'none'}),scrub:.5,onUpdate:filmUpdate});}
       const cursor=document.createElement('div');cursor.className='motion-cursor';document.body.append(cursor);
       const move=e=>{gsap.to(cursor,{x:e.clientX-14,y:e.clientY-14,duration:.22,overwrite:true});cursor.style.opacity='1';cursor.classList.toggle('active',!!e.target.closest('a,button'));};const hide=()=>cursor.style.opacity='0';document.addEventListener('pointermove',move);document.addEventListener('pointerleave',hide);
       const cleanups=[];

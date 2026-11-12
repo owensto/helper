@@ -1,0 +1,4280 @@
+{
+  "jurisdictions": [
+    {
+      "id": "us-alabama",
+      "name": "Alabama",
+      "country": "United States",
+      "region": "Alabama",
+      "authority": {
+        "name": "Alabama Department of Conservation and Natural Resources",
+        "url": "https://www.outdooralabama.com/freshwater-fishing-lic/fw-fish--nr"
+      },
+      "buyUrl": null,
+      "summary": "Visitors aged 16 or older need the correct freshwater or saltwater licence. The senior exemption applies to Alabama residents, not visiting seniors.",
+      "whoNeedsOne": [
+        "Non-residents aged 16 or older."
+      ],
+      "exemptions": [
+        "Children under 16.",
+        "Alabama residents aged 65 or older; saltwater registration can still apply."
+      ],
+      "options": [
+        {
+          "name": "Non-resident freshwater 7-day",
+          "who": "non-resident",
+          "duration": "7 days",
+          "price": 37,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Non-resident freshwater annual",
+          "who": "non-resident",
+          "duration": "Through August 31",
+          "price": null,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Non-resident saltwater 7-day",
+          "who": "non-resident",
+          "duration": "7 days",
+          "price": null,
+          "currency": "USD",
+          "water": "saltwater"
+        }
+      ],
+      "extras": [
+        {
+          "name": "Gulf Reef Fish Endorsement",
+          "when": "Required from age 16 to take, attempt to take, or possess listed Gulf reef fish.",
+          "price": 10,
+          "currency": "USD"
+        }
+      ],
+      "saltwater": "Saltwater areas require a separate licence. Fees can depend on the visitor's home state.",
+      "guidedTrips": null,
+      "keyRules": [
+        "Annual recreational licences expire August 31.",
+        "The public fishing lakes licence covers only state-owned county public fishing lakes."
+      ],
+      "howToBuy": "Online through Outdoor Alabama, at licence agents or department offices, or by phone at 1-888-848-6887.",
+      "sources": [
+        {
+          "title": "Non-resident freshwater licences",
+          "url": "https://www.outdooralabama.com/freshwater-fishing-lic/fw-fish--nr"
+        },
+        {
+          "title": "Saltwater licences",
+          "url": "https://www.outdooralabama.com/licenses/saltwater-recreational-licenses"
+        },
+        {
+          "title": "Reef Fish Endorsement",
+          "url": "https://www.outdooralabama.com/saltwater-fishing/saltwater-reef-fish-endorsement"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Confirm residence-based fees and charter coverage. The saltwater fee table is dated August 2025. Use the authority page to confirm the current online purchase link."
+    },
+    {
+      "id": "us-alaska",
+      "name": "Alaska",
+      "country": "United States",
+      "region": "Alaska",
+      "authority": {
+        "name": "Alaska Department of Fish and Game",
+        "url": "https://www.adfg.alaska.gov/index.cfm?adfg=sportlicense.main"
+      },
+      "buyUrl": "https://store.adfg.alaska.gov/",
+      "summary": "Non-residents aged 16 or older need a sport fishing licence. A king salmon stamp is normally required even when you release the fish.",
+      "whoNeedsOne": [
+        "Non-residents aged 16 or older.",
+        "Residents aged 18 or older, unless exempt."
+      ],
+      "exemptions": [
+        "Non-residents under 16; harvest records can still apply.",
+        "Resident seniors aged 60 or older with the required ADF&G identification card."
+      ],
+      "options": [
+        {
+          "name": "Non-resident 1-day",
+          "who": "non-resident",
+          "duration": "1 day",
+          "price": 15,
+          "currency": "USD",
+          "water": "both"
+        },
+        {
+          "name": "Non-resident 3-day",
+          "who": "non-resident",
+          "duration": "3 days",
+          "price": 30,
+          "currency": "USD",
+          "water": "both"
+        },
+        {
+          "name": "Non-resident 7-day",
+          "who": "non-resident",
+          "duration": "7 days",
+          "price": 45,
+          "currency": "USD",
+          "water": "both"
+        },
+        {
+          "name": "Non-resident 14-day",
+          "who": "non-resident",
+          "duration": "14 days",
+          "price": 75,
+          "currency": "USD",
+          "water": "both"
+        },
+        {
+          "name": "Non-resident annual",
+          "who": "non-resident",
+          "duration": "Calendar year",
+          "price": 100,
+          "currency": "USD",
+          "water": "both"
+        }
+      ],
+      "extras": [
+        {
+          "name": "Non-resident king salmon stamp, 1-day",
+          "when": "Required to fish for king salmon, except stocked lakes and exempt anglers.",
+          "price": 15,
+          "currency": "USD"
+        },
+        {
+          "name": "Sport Fishing Harvest Record Card",
+          "when": "Required for licence-exempt anglers in fisheries with annual harvest limits.",
+          "price": 0,
+          "currency": "USD"
+        }
+      ],
+      "saltwater": "The sport fishing licence covers fresh and salt water.",
+      "guidedTrips": null,
+      "keyRules": [
+        "Record catches subject to annual harvest limits.",
+        "Annual licences and annual king salmon stamps follow the calendar year."
+      ],
+      "howToBuy": "Buy through ADF&G's online licence service or a licence vendor.",
+      "sources": [
+        {
+          "title": "Sport fishing licences and king salmon stamps",
+          "url": "https://www.adfg.alaska.gov/index.cfm?adfg=sportlicense.main"
+        },
+        {
+          "title": "Licence and stamp prices",
+          "url": "https://www.adfg.alaska.gov/index.cfm?adfg=residentfishing.prices"
+        },
+        {
+          "title": "Licence questions",
+          "url": "https://www.wafwa.adfg.alaska.gov/index.cfm?adfg=license.general"
+        },
+        {
+          "title": "2026 fishing licence requirements",
+          "url": "https://www.adfg.alaska.gov/static/regulations/fishregulations/PDFs/northern/2026northern_sfregs_licensing.pdf"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Confirm whether a guided trip covers the client's licence."
+    },
+    {
+      "id": "us-arizona",
+      "name": "Arizona",
+      "country": "United States",
+      "region": "Arizona",
+      "authority": {
+        "name": "Arizona Game and Fish Department",
+        "url": "https://www.azgfd.com/fishing-2/licenses-and-regulations/"
+      },
+      "buyUrl": null,
+      "summary": "Residents and visitors aged 10 or older need a licence for publicly accessible waters. Children aged 10 to 17 need the youth licence.",
+      "whoNeedsOne": [
+        "Residents and non-residents aged 10 or older in publicly accessible water."
+      ],
+      "exemptions": [
+        "Children under 10.",
+        "Blind Arizona residents."
+      ],
+      "options": [
+        {
+          "name": "Non-resident general fishing",
+          "who": "non-resident",
+          "duration": "365 days",
+          "price": 55,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Youth combination, ages 10–17",
+          "who": "any",
+          "duration": "365 days",
+          "price": 5,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Non-resident short-term combination",
+          "who": "non-resident",
+          "duration": "Per selected day",
+          "price": 20,
+          "currency": "USD",
+          "water": "freshwater"
+        }
+      ],
+      "extras": [],
+      "saltwater": null,
+      "guidedTrips": null,
+      "keyRules": [
+        "Annual licences last 365 days.",
+        "Purchased licences cannot be exchanged or refunded."
+      ],
+      "howToBuy": "Use the online purchase links on the department's fishing licence page.",
+      "sources": [
+        {
+          "title": "Fishing licences and regulations",
+          "url": "https://www.azgfd.com/fishing-2/licenses-and-regulations/"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Confirm tribal-water permits, local rules, and guide coverage with the relevant authority. Use the authority page to confirm the current online purchase link."
+    },
+    {
+      "id": "us-arkansas",
+      "name": "Arkansas",
+      "country": "United States",
+      "region": "Arkansas",
+      "authority": {
+        "name": "Arkansas Game and Fish Commission",
+        "url": "https://www.agfc.com/resources/licensing/fishing-license-descriptions-and-fees/"
+      },
+      "buyUrl": null,
+      "summary": "Anglers aged 16 or older need a fishing licence. A trout permit also applies in specified trout waters, even if you keep no trout.",
+      "whoNeedsOne": [
+        "Anyone aged 16 or older who takes or attempts to take aquatic wildlife."
+      ],
+      "exemptions": [
+        "Children under 16.",
+        "Anglers at licensed put-and-take pay lakes."
+      ],
+      "options": [
+        {
+          "name": "Non-resident 1-day",
+          "who": "non-resident",
+          "duration": "1 specified day",
+          "price": 15,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Non-resident 3-day",
+          "who": "non-resident",
+          "duration": "72 hours from the selected start time",
+          "price": 30,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Non-resident annual",
+          "who": "non-resident",
+          "duration": "Annual",
+          "price": 60,
+          "currency": "USD",
+          "water": "freshwater"
+        }
+      ],
+      "extras": [
+        {
+          "name": "Non-resident trout permit",
+          "when": "Required to retain trout anywhere or fish specified trout waters.",
+          "price": 20,
+          "currency": "USD"
+        }
+      ],
+      "saltwater": null,
+      "guidedTrips": "A guide licence does not include fishing privileges. Clients need their own required licence and trout permit.",
+      "keyRules": [
+        "Carry your valid fishing licence.",
+        "The trout permit applies to designated tailwaters and the specified part of Spavinaw Creek."
+      ],
+      "howToBuy": "Online, at licence agents, or at AGFC regional offices.",
+      "sources": [
+        {
+          "title": "Fishing licence descriptions and fees",
+          "url": "https://www.agfc.com/resources/licensing/fishing-license-descriptions-and-fees/"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Use the authority page to confirm the current online purchase link."
+    },
+    {
+      "id": "us-california",
+      "name": "California",
+      "country": "United States",
+      "region": "California",
+      "authority": {
+        "name": "California Department of Fish and Wildlife",
+        "url": "https://wildlife.ca.gov/Licensing/Fishing"
+      },
+      "buyUrl": "https://www.licenses.wildlife.ca.gov/internetsales",
+      "summary": "Anglers aged 16 or older generally need a sport fishing licence in fresh or ocean water. Children and public-pier anglers can still need species report cards.",
+      "whoNeedsOne": [
+        "Anglers aged 16 or older, unless exempt."
+      ],
+      "exemptions": [
+        "Children under 16.",
+        "Public-pier anglers have a licence exemption; report-card requirements remain."
+      ],
+      "options": [
+        {
+          "name": "One-day sport fishing",
+          "who": "any",
+          "duration": "1 specified day",
+          "price": 21.09,
+          "currency": "USD",
+          "water": "both"
+        },
+        {
+          "name": "Two-day sport fishing",
+          "who": "any",
+          "duration": "2 consecutive days",
+          "price": 32.4,
+          "currency": "USD",
+          "water": "both"
+        },
+        {
+          "name": "Non-resident 10-day",
+          "who": "non-resident",
+          "duration": "10 consecutive days",
+          "price": 64.54,
+          "currency": "USD",
+          "water": "both"
+        },
+        {
+          "name": "Non-resident sport fishing",
+          "who": "non-resident",
+          "duration": "365 days",
+          "price": 174.14,
+          "currency": "USD",
+          "water": "both"
+        }
+      ],
+      "extras": [
+        {
+          "name": "Ocean Enhancement Validation",
+          "when": "Ocean fishing south of Point Arguello; not required with one-day or two-day licences.",
+          "price": 7.3,
+          "currency": "USD"
+        },
+        {
+          "name": "Species report cards",
+          "when": "Required for specified species and areas, including steelhead and sturgeon.",
+          "price": null,
+          "currency": "USD"
+        }
+      ],
+      "saltwater": "The same licence covers ocean fishing. Southern ocean waters can require an extra validation.",
+      "guidedTrips": null,
+      "keyRules": [
+        "Report-card duties can apply even without a licence.",
+        "A second-rod validation applies to eligible inland two-rod fishing."
+      ],
+      "howToBuy": "Use CDFW online licence sales or a licence agent. Eligible licences can appear in the CDFW License App.",
+      "sources": [
+        {
+          "title": "Sport fishing licences and report cards",
+          "url": "https://wildlife.ca.gov/Licensing/Fishing"
+        },
+        {
+          "title": "CDFW License App",
+          "url": "https://wildlife.ca.gov/LicenseApp"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Confirm current report-card prices, species closures, and charter requirements."
+    },
+    {
+      "id": "us-colorado",
+      "name": "Colorado",
+      "country": "United States",
+      "region": "Colorado",
+      "authority": {
+        "name": "Colorado Parks and Wildlife",
+        "url": "https://cpw.state.co.us/activities/fishing/fishing-licenses-and-dates"
+      },
+      "buyUrl": "https://www.cpwshop.com/licensing.page",
+      "summary": "Anglers aged 16 or older need a fishing licence. Most adults also pay for a Habitat Stamp; the first two daily licences are exempt.",
+      "whoNeedsOne": [
+        "Anglers aged 16 or older."
+      ],
+      "exemptions": [
+        "Children under 16 need no base fishing licence."
+      ],
+      "options": [
+        {
+          "name": "Non-resident 1-day",
+          "who": "non-resident",
+          "duration": "1 day",
+          "price": 21.9,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Non-resident 5-day",
+          "who": "non-resident",
+          "duration": "5 days",
+          "price": 41.04,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Non-resident annual",
+          "who": "non-resident",
+          "duration": "March 1, 2026–March 31, 2027",
+          "price": 124.01,
+          "currency": "USD",
+          "water": "freshwater"
+        }
+      ],
+      "extras": [
+        {
+          "name": "Habitat Stamp",
+          "when": "Usually required once yearly for buyers aged 18–64; the first two one-day/additional-day licences are exempt.",
+          "price": 12.76,
+          "currency": "USD"
+        },
+        {
+          "name": "Second-rod stamp",
+          "when": "Required to use a second rod, including for children under 16.",
+          "price": 14.24,
+          "currency": "USD"
+        }
+      ],
+      "saltwater": null,
+      "guidedTrips": null,
+      "keyRules": [
+        "The 2026 annual licence ends March 31, 2027.",
+        "Show acceptable identification when you buy a licence."
+      ],
+      "howToBuy": "Online, at CPW offices or licence agents, or by phone at 1-800-244-5613.",
+      "sources": [
+        {
+          "title": "Fishing licences and dates",
+          "url": "https://cpw.state.co.us/activities/fishing/fishing-licenses-and-dates"
+        },
+        {
+          "title": "Acceptable identification",
+          "url": "https://cpw.state.co.us/acceptable-identification-purchase-license"
+        },
+        {
+          "title": "Habitat Stamp",
+          "url": "https://cpw.state.co.us/habitat-stamp"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Confirm whether a guided trip covers the client's licence."
+    },
+    {
+      "id": "us-connecticut",
+      "name": "Connecticut",
+      "country": "United States",
+      "region": "Connecticut",
+      "authority": {
+        "name": "Connecticut Department of Energy and Environmental Protection",
+        "url": "https://portal.ct.gov/deep-fishinglicense"
+      },
+      "buyUrl": "https://portal.ct.gov/CTOutdoorLicenses",
+      "summary": "Anglers aged 16 or older need inland, marine, or all-waters coverage. The trout and salmon stamp applies in some managed waters even for catch and release.",
+      "whoNeedsOne": [
+        "Anglers aged 16 or older in inland or marine waters, unless exempt."
+      ],
+      "exemptions": [
+        "Children under 16.",
+        "Eligible marine anglers with recognised reciprocal state licences."
+      ],
+      "options": [
+        {
+          "name": "Non-resident inland 3-day",
+          "who": "non-resident",
+          "duration": "3 consecutive days",
+          "price": 22,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Non-resident marine 3-day",
+          "who": "non-resident",
+          "duration": "3 consecutive days",
+          "price": 8,
+          "currency": "USD",
+          "water": "saltwater"
+        },
+        {
+          "name": "Non-resident inland annual",
+          "who": "non-resident",
+          "duration": "Through December 31",
+          "price": 55,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Non-resident all-waters annual",
+          "who": "non-resident",
+          "duration": "Through December 31",
+          "price": 63,
+          "currency": "USD",
+          "water": "both"
+        }
+      ],
+      "extras": [
+        {
+          "name": "Trout and Salmon Stamp",
+          "when": "Required to keep trout or salmon, or fish designated trout/salmon management waters, unless exempt.",
+          "price": 5,
+          "currency": "USD"
+        }
+      ],
+      "saltwater": "Use a marine or all-waters licence. Reciprocity depends on the other state and residency.",
+      "guidedTrips": "Passengers on CT DEEP-registered party or charter vessels are exempt from the marine licence requirement.",
+      "keyRules": [
+        "Annual licences expire December 31.",
+        "Online licences are electronically signed; agent-issued licences must be printed and signed."
+      ],
+      "howToBuy": "Use CT Outdoor Licenses, participating retailers and town halls, or selected DEEP offices.",
+      "sources": [
+        {
+          "title": "Fisheries licences and permits",
+          "url": "https://portal.ct.gov/deep-fishinglicense"
+        },
+        {
+          "title": "Trout and salmon stamp",
+          "url": "https://portal.ct.gov/deep/fishing/general-information/trout-and-salmon-stamp"
+        },
+        {
+          "title": "Saltwater licence questions",
+          "url": "https://portal.ct.gov/deep/fishing/saltwater/saltwater-license-frequently-asked-questions"
+        },
+        {
+          "title": "Licence formats and purchase",
+          "url": "https://portal.ct.gov/deep/fishing/freshwater-fishing-guide/licenses-and-permits"
+        }
+      ],
+      "checked": "2026-11-11"
+    },
+    {
+      "id": "us-delaware",
+      "name": "Delaware",
+      "country": "United States",
+      "region": "Delaware",
+      "authority": {
+        "name": "Delaware Department of Natural Resources and Environmental Control",
+        "url": "https://dnrec.delaware.gov/fish-wildlife/licenses/"
+      },
+      "buyUrl": "https://epermitting.dnrec.delaware.gov/",
+      "summary": "Visitors aged 16 or older need a licence for fresh and tidal waters. A licence exemption does not always remove the separate FIN registration requirement.",
+      "whoNeedsOne": [
+        "Non-residents aged 16 or older.",
+        "Recreational fish, crab, and clam harvesters, unless exempt."
+      ],
+      "exemptions": [
+        "Children under 16 need no general fishing licence.",
+        "Resident seniors have an exemption that does not extend to visiting seniors."
+      ],
+      "options": [
+        {
+          "name": "Non-resident annual",
+          "who": "non-resident",
+          "duration": "Annual",
+          "price": 20,
+          "currency": "USD",
+          "water": "both"
+        },
+        {
+          "name": "Non-resident 7-day",
+          "who": "non-resident",
+          "duration": "7 consecutive days",
+          "price": 12.5,
+          "currency": "USD",
+          "water": "both"
+        }
+      ],
+      "extras": [
+        {
+          "name": "Fisherman Information Network number",
+          "when": "Required registration; issued with most individual fishing licences.",
+          "price": 0,
+          "currency": "USD"
+        },
+        {
+          "name": "Non-resident trout stamp",
+          "when": "Required from age 12 in designated trout streams during the stated spring and autumn periods.",
+          "price": 6.2,
+          "currency": "USD"
+        }
+      ],
+      "saltwater": "One general licence covers fresh and tidal waters, including recreational crabs and clams.",
+      "guidedTrips": null,
+      "keyRules": [
+        "A non-resident boat licence does not cover fishing from shore.",
+        "The surf-vehicle permit exemption covers the vehicle operator, not every passenger."
+      ],
+      "howToBuy": "Use Digital DNREC, authorised licence agents, or the DNREC licensing desk in Dover. Agent fees can apply.",
+      "sources": [
+        {
+          "title": "Recreational licensing",
+          "url": "https://dnrec.delaware.gov/fish-wildlife/licenses/"
+        },
+        {
+          "title": "Licence fees",
+          "url": "https://dnrec.delaware.gov/fish-wildlife/licenses/fees/"
+        },
+        {
+          "title": "Fishing licence questions",
+          "url": "https://dnrec.delaware.gov/fish-wildlife/licenses/fishing-license-questions/"
+        },
+        {
+          "title": "Freshwater trout rules",
+          "url": "https://dnrec.delaware.gov/fish-wildlife/fishing/freshwater-trout/"
+        },
+        {
+          "title": "Online licence purchase",
+          "url": "https://dnrec.delaware.gov/fish-wildlife/licenses/automated/"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Confirm whether a guided trip covers the client's licence."
+    },
+    {
+      "id": "us-florida",
+      "name": "Florida",
+      "country": "United States",
+      "region": "Florida",
+      "authority": {
+        "name": "Florida Fish and Wildlife Conservation Commission",
+        "url": "https://myfwc.com/license/recreational/visitors/"
+      },
+      "buyUrl": "https://gooutdoorsflorida.com/",
+      "summary": "Visitors aged 16 or older need freshwater or saltwater coverage for the species they target. The free shoreline licence is only for Florida residents.",
+      "whoNeedsOne": [
+        "Non-residents aged 16 or older, including anglers who release their catch."
+      ],
+      "exemptions": [
+        "Children under 16.",
+        "Saltwater anglers on properly licensed charter vessels or licensed piers."
+      ],
+      "options": [
+        {
+          "name": "Non-resident freshwater 3-day",
+          "who": "non-resident",
+          "duration": "3 days",
+          "price": 17,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Non-resident freshwater 7-day",
+          "who": "non-resident",
+          "duration": "7 days",
+          "price": 30,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Non-resident freshwater annual",
+          "who": "non-resident",
+          "duration": "1 year",
+          "price": 47,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Non-resident saltwater 3-day",
+          "who": "non-resident",
+          "duration": "3 days",
+          "price": 17,
+          "currency": "USD",
+          "water": "saltwater"
+        },
+        {
+          "name": "Non-resident saltwater 7-day",
+          "who": "non-resident",
+          "duration": "7 days",
+          "price": 30,
+          "currency": "USD",
+          "water": "saltwater"
+        },
+        {
+          "name": "Non-resident saltwater annual",
+          "who": "non-resident",
+          "duration": "1 year",
+          "price": 47,
+          "currency": "USD",
+          "water": "saltwater"
+        }
+      ],
+      "extras": [
+        {
+          "name": "Snook permit",
+          "when": "Required for snook take or attempted take unless a permit exemption applies.",
+          "price": 10,
+          "currency": "USD"
+        },
+        {
+          "name": "Spiny lobster permit",
+          "when": "Required for lobster take or attempted take unless exempt.",
+          "price": 5,
+          "currency": "USD"
+        },
+        {
+          "name": "State Reef Fish Angler designation",
+          "when": "Required from age 16 for specified reef fish from a private vessel, including many licence-exempt anglers.",
+          "price": 0,
+          "currency": "USD"
+        },
+        {
+          "name": "Shore-based Shark Fishing permit",
+          "when": "Required from age 16 for shore-based shark fishing; complete the course and renew annually.",
+          "price": 0,
+          "currency": "USD"
+        }
+      ],
+      "saltwater": "Separate freshwater and saltwater licences follow the target species, including in mixed waters.",
+      "guidedTrips": "A valid saltwater charter licence covers clients' saltwater licence and usual snook/lobster permit requirements.",
+      "keyRules": [
+        "An out-of-state licence is not valid in Florida.",
+        "Saltwater landings in Florida require coverage even when the fish came from federal waters."
+      ],
+      "howToBuy": "Buy through Go Outdoors Florida or a licence agent.",
+      "sources": [
+        {
+          "title": "Visitor licence rules",
+          "url": "https://myfwc.com/license/recreational/visitors/"
+        },
+        {
+          "title": "Saltwater licences and permits",
+          "url": "https://myfwc.com/license/recreational/saltwater-fishing/"
+        },
+        {
+          "title": "Shoreline rules",
+          "url": "https://myfwc.com/license/recreational/saltwater-fishing/shoreline-faqs/"
+        },
+        {
+          "title": "Licence questions",
+          "url": "https://myfwc.com/license/recreational/faqs/"
+        },
+        {
+          "title": "Freshwater licences",
+          "url": "https://myfwc.com/license/recreational/freshwater-fishing/"
+        },
+        {
+          "title": "State Reef Fish Survey",
+          "url": "https://myfwc.com/fishing/saltwater/recreational/state-reef-fish-survey/"
+        },
+        {
+          "title": "Shark fishing requirements",
+          "url": "https://myfwc.com/fishing/saltwater/recreational/sharks/"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Check species seasons, shark-gear conditions, and trap registrations for your trip."
+    },
+    {
+      "id": "us-georgia",
+      "name": "Georgia",
+      "country": "United States",
+      "region": "Georgia",
+      "authority": {
+        "name": "Georgia Department of Natural Resources, Wildlife Resources Division",
+        "url": "https://georgiawildlife.com/licenses-permits-passes/choose"
+      },
+      "buyUrl": "https://gooutdoorsgeorgia.com/",
+      "summary": "Visitors aged 16 or older need a fishing licence in fresh and salt water. Saltwater fishing also needs the free SIP permit.",
+      "whoNeedsOne": [
+        "Non-residents aged 16 or older.",
+        "People who actively help an angler, such as by baiting a hook or netting a fish."
+      ],
+      "exemptions": [
+        "Children aged 15 or younger need no fishing licence, trout licence, or SIP permit."
+      ],
+      "options": [
+        {
+          "name": "Non-resident 1-day",
+          "who": "non-resident",
+          "duration": "1 day",
+          "price": 10,
+          "currency": "USD",
+          "water": "both"
+        },
+        {
+          "name": "Non-resident additional day",
+          "who": "non-resident",
+          "duration": "Per additional day",
+          "price": 3.5,
+          "currency": "USD",
+          "water": "both"
+        },
+        {
+          "name": "Non-resident annual",
+          "who": "non-resident",
+          "duration": "365 days",
+          "price": 50,
+          "currency": "USD",
+          "water": "both"
+        }
+      ],
+      "extras": [
+        {
+          "name": "Saltwater Information Program permit",
+          "when": "Required for saltwater fishing from age 16.",
+          "price": 0,
+          "currency": "USD"
+        },
+        {
+          "name": "Trout licence",
+          "when": "Required for mountain trout fishing from age 16.",
+          "price": null,
+          "currency": "USD"
+        }
+      ],
+      "saltwater": "The base licence covers both water types; add the free SIP permit for saltwater.",
+      "guidedTrips": null,
+      "keyRules": [
+        "A Lands Pass alone does not permit fishing.",
+        "Foreign visitors must carry the identification used to obtain the licence."
+      ],
+      "howToBuy": "Use Go Outdoors Georgia, licence agents, or phone sales. Transaction fees apply.",
+      "sources": [
+        {
+          "title": "Choose a licence",
+          "url": "https://georgiawildlife.com/licenses-permits-passes/choose"
+        },
+        {
+          "title": "Licence questions",
+          "url": "https://georgiawildlife.com/licenses-permits-passes/help"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Confirm the trout licence price and charter coverage."
+    },
+    {
+      "id": "us-hawaii",
+      "name": "Hawaii",
+      "country": "United States",
+      "region": "Hawaii",
+      "authority": {
+        "name": "Hawaii Department of Land and Natural Resources, Division of Aquatic Resources",
+        "url": "https://dlnr.hawaii.gov/dar/licenses-permits/"
+      },
+      "buyUrl": "https://fishing.hawaii.gov/",
+      "summary": "Visitors aged 15 or older need a recreational marine fishing licence. Hawaii also has a separate licence for introduced freshwater game fish.",
+      "whoNeedsOne": [
+        "Non-residents aged 15 or older who fish in the ocean.",
+        "Anglers who take introduced freshwater game fish, subject to freshwater licence exemptions."
+      ],
+      "exemptions": [
+        "Marine anglers aged 14 or younger.",
+        "Active-duty military members in Hawaii, their spouses, and minor children are exempt from the marine licence."
+      ],
+      "options": [
+        {
+          "name": "Non-resident marine 1-day",
+          "who": "non-resident",
+          "duration": "Selected calendar day",
+          "price": 20,
+          "currency": "USD",
+          "water": "saltwater"
+        },
+        {
+          "name": "Non-resident marine 7-day",
+          "who": "non-resident",
+          "duration": "7 days",
+          "price": 40,
+          "currency": "USD",
+          "water": "saltwater"
+        },
+        {
+          "name": "Non-resident marine annual",
+          "who": "non-resident",
+          "duration": "1 year",
+          "price": 70,
+          "currency": "USD",
+          "water": "saltwater"
+        },
+        {
+          "name": "Tourist freshwater 7-day",
+          "who": "non-resident",
+          "duration": "7 days",
+          "price": 10,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Tourist freshwater 30-day",
+          "who": "non-resident",
+          "duration": "30 days",
+          "price": 20,
+          "currency": "USD",
+          "water": "freshwater"
+        }
+      ],
+      "extras": [
+        {
+          "name": "Wahiawa Public Fishing Area entry permit",
+          "when": "Required for entry to fish, with a freshwater game fishing licence.",
+          "price": 0,
+          "currency": "USD"
+        }
+      ],
+      "saltwater": "Residents need no recreational marine licence. Visitors need the separate marine licence.",
+      "guidedTrips": "DAR advises all non-resident fishing-charter passengers to hold a marine licence, even if they do not plan to fish.",
+      "keyRules": [
+        "A marine one-day licence ends at 11:59 p.m.",
+        "Deep 7 bottomfish vessels require separate registration."
+      ],
+      "howToBuy": "Buy the marine licence online at fishing.hawaii.gov. Online processing fees can apply.",
+      "sources": [
+        {
+          "title": "Licences and permits",
+          "url": "https://dlnr.hawaii.gov/dar/licenses-permits/"
+        },
+        {
+          "title": "Marine licence questions",
+          "url": "https://dlnr.hawaii.gov/dar/files/2025/01/NRMFL-FAQs.pdf"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Confirm freshwater age exemptions before a family trip."
+    },
+    {
+      "id": "us-idaho",
+      "name": "Idaho",
+      "country": "United States",
+      "region": "Idaho",
+      "authority": {
+        "name": "Idaho Department of Fish and Game",
+        "url": "https://idfg.idaho.gov/licenses/fees-nonresident"
+      },
+      "buyUrl": "https://gooutdoorsidaho.com/",
+      "summary": "Anglers aged 14 or older need a licence. Unlicensed visiting children must fish with a licence holder and share that person's catch limit.",
+      "whoNeedsOne": [
+        "Residents and non-residents aged 14 or older."
+      ],
+      "exemptions": [
+        "Non-residents under 14 with a licensed companion; their catch counts toward the companion's limit."
+      ],
+      "options": [
+        {
+          "name": "Non-resident daily",
+          "who": "non-resident",
+          "duration": "First day",
+          "price": 22.75,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Non-resident additional day",
+          "who": "non-resident",
+          "duration": "Per consecutive day bought at the same time",
+          "price": 7,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Non-resident annual adult",
+          "who": "non-resident",
+          "duration": "Annual",
+          "price": 108,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Non-resident salmon/steelhead 3-day",
+          "who": "non-resident",
+          "duration": "3 days",
+          "price": 44.75,
+          "currency": "USD",
+          "water": "freshwater"
+        }
+      ],
+      "extras": [
+        {
+          "name": "Salmon or steelhead permit",
+          "when": "Required for the relevant ocean-run species, including named hatchery fisheries; the special 3-day product includes coverage.",
+          "price": 28.25,
+          "currency": "USD"
+        },
+        {
+          "name": "Depredation Management/Access fee",
+          "when": "Added to annual fishing licences.",
+          "price": null,
+          "currency": "USD"
+        }
+      ],
+      "saltwater": null,
+      "guidedTrips": null,
+      "keyRules": [
+        "Carry required salmon or steelhead licences and permits.",
+        "Tribal reservations can require separate licences and rules."
+      ],
+      "howToBuy": "Use Go Outdoors Idaho, licence vendors, Fish and Game offices, or 1-800-554-8685. Online and phone fees apply.",
+      "sources": [
+        {
+          "title": "Non-resident licence prices",
+          "url": "https://idfg.idaho.gov/licenses/fees-nonresident"
+        },
+        {
+          "title": "2025–2027 fishing rules",
+          "url": "https://idfg.idaho.gov/sites/default/files/seasons-rules-fishing-2025-2027.pdf"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Confirm the annual access surcharge and guide coverage."
+    },
+    {
+      "id": "us-illinois",
+      "name": "Illinois",
+      "country": "United States",
+      "region": "Illinois",
+      "authority": {
+        "name": "Illinois Department of Natural Resources",
+        "url": "https://dnr.illinois.gov/lpr/non-residentlicensespermitsfees.html"
+      },
+      "buyUrl": null,
+      "summary": "Visitors aged 16 or older generally need a sport fishing licence. Trout and Lake Michigan salmon fishing can require separate stamps.",
+      "whoNeedsOne": [
+        "Non-residents aged 16 or older, unless an exemption or boundary-water agreement applies."
+      ],
+      "exemptions": [
+        "Children under 16.",
+        "Licensed fee-fishing areas.",
+        "Free fishing days in 2026: June 19–22."
+      ],
+      "options": [
+        {
+          "name": "Non-resident 24-hour",
+          "who": "non-resident",
+          "duration": "24 hours",
+          "price": 10.5,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Non-resident 3-day",
+          "who": "non-resident",
+          "duration": "3 days",
+          "price": 15.5,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Non-resident annual",
+          "who": "non-resident",
+          "duration": "Annual",
+          "price": 31.5,
+          "currency": "USD",
+          "water": "freshwater"
+        }
+      ],
+      "extras": [
+        {
+          "name": "Inland Trout Stamp",
+          "when": "Required for trout outside Lake Michigan unless exempt.",
+          "price": 6.5,
+          "currency": "USD"
+        },
+        {
+          "name": "Lake Michigan Salmon Stamp",
+          "when": "Required for trout or salmon in Lake Michigan unless exempt.",
+          "price": 6.5,
+          "currency": "USD"
+        }
+      ],
+      "saltwater": null,
+      "guidedTrips": null,
+      "keyRules": [
+        "A short-term licence does not remove applicable trout or salmon stamp duties.",
+        "Keep fishing poles and tip-ups under observation."
+      ],
+      "howToBuy": "Buy through the online links on the IDNR licence page or an authorised vendor.",
+      "sources": [
+        {
+          "title": "Non-resident licences and fees",
+          "url": "https://dnr.illinois.gov/lpr/non-residentlicensespermitsfees.html"
+        },
+        {
+          "title": "2026 Illinois fishing regulations",
+          "url": "https://dnr.illinois.gov/content/dam/soi/en/web/dnr/publications/documents/00000953.pdf"
+        },
+        {
+          "title": "Trout and salmon stamp rules",
+          "url": "https://dnr.illinois.gov/content/dam/soi/en/web/dnr/publications/documents/00000924.pdf"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Use the authority page to confirm the current online purchase link. Confirm whether a guided trip covers the client's licence."
+    },
+    {
+      "id": "us-indiana",
+      "name": "Indiana",
+      "country": "United States",
+      "region": "Indiana",
+      "authority": {
+        "name": "Indiana Department of Natural Resources, Division of Fish and Wildlife",
+        "url": "https://www.in.gov/dnr/fish-and-wildlife/licenses-and-permits/license-fees/"
+      },
+      "buyUrl": "https://www.gooutdoorsin.com/",
+      "summary": "Adult visitors need a fishing licence. The one-day licence includes trout and salmon privileges, but longer licences can need an added stamp.",
+      "whoNeedsOne": [
+        "Non-residents aged 18 or older, unless exempt."
+      ],
+      "exemptions": [
+        "Non-residents aged 17 or younger."
+      ],
+      "options": [
+        {
+          "name": "Non-resident 1-day, including trout/salmon",
+          "who": "non-resident",
+          "duration": "1 calendar day",
+          "price": 15,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Non-resident 7-day",
+          "who": "non-resident",
+          "duration": "7 consecutive days",
+          "price": 35,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Non-resident annual",
+          "who": "non-resident",
+          "duration": "April 1, 2026–March 31, 2027",
+          "price": 60,
+          "currency": "USD",
+          "water": "freshwater"
+        }
+      ],
+      "extras": [
+        {
+          "name": "Trout/Salmon Stamp Privilege",
+          "when": "Required for trout or salmon privileges with a licence that does not include them.",
+          "price": 11,
+          "currency": "USD"
+        }
+      ],
+      "saltwater": null,
+      "guidedTrips": null,
+      "keyRules": [
+        "Annual licences and stamp privileges expire March 31.",
+        "The seven-day licence excludes trout and salmon privileges unless the stamp is added."
+      ],
+      "howToBuy": "Use Indiana's online outdoor licence system or a licence retailer.",
+      "sources": [
+        {
+          "title": "Licence fees",
+          "url": "https://www.in.gov/dnr/fish-and-wildlife/licenses-and-permits/license-fees/"
+        },
+        {
+          "title": "Indiana Outdoor Licensing questions",
+          "url": "https://secure.in.gov/ai/appfiles/dnr-license/faq.html"
+        },
+        {
+          "title": "Licence terms",
+          "url": "https://www.in.gov/nrc/files/LSA24-165_Final-Rule.pdf"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Confirm whether a guided trip covers the client's licence."
+    },
+    {
+      "id": "us-iowa",
+      "name": "Iowa",
+      "country": "United States",
+      "region": "Iowa",
+      "authority": {
+        "name": "Iowa Department of Natural Resources",
+        "url": "https://www.iowadnr.gov/things-do/fishing/fishing-licenses"
+      },
+      "buyUrl": "https://gooutdoorsiowa.com/",
+      "summary": "Anglers aged 16 or older need a fishing licence. Children need their own trout fee to keep a separate trout limit.",
+      "whoNeedsOne": [
+        "Residents and non-residents aged 16 or older, unless exempt."
+      ],
+      "exemptions": [
+        "Children under 16 need no base licence.",
+        "Children can share a trout limit with an adult who has paid the trout fee."
+      ],
+      "options": [
+        {
+          "name": "Non-resident 1-day",
+          "who": "non-resident",
+          "duration": "1 day",
+          "price": 12,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Non-resident 3-day",
+          "who": "non-resident",
+          "duration": "3 days",
+          "price": 20.5,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Non-resident 7-day",
+          "who": "non-resident",
+          "duration": "7 days",
+          "price": 37.5,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Non-resident annual",
+          "who": "non-resident",
+          "duration": "Annual",
+          "price": 48,
+          "currency": "USD",
+          "water": "freshwater"
+        }
+      ],
+      "extras": [
+        {
+          "name": "Non-resident trout fee",
+          "when": "Required to fish for or possess trout; children need it for their own trout limit.",
+          "price": 17.5,
+          "currency": "USD"
+        },
+        {
+          "name": "Bonus Line privilege",
+          "when": "Required for a third fishing line.",
+          "price": 14,
+          "currency": "USD"
+        }
+      ],
+      "saltwater": null,
+      "guidedTrips": null,
+      "keyRules": [
+        "Show the licence to an enforcement officer or the person who controls the land or water upon request.",
+        "An unlicensed child's shared trout catch counts toward the adult's daily limit."
+      ],
+      "howToBuy": "Use Go Outdoors Iowa or local licence retailers and bait shops.",
+      "sources": [
+        {
+          "title": "Fishing licences and fees",
+          "url": "https://www.iowadnr.gov/things-do/fishing/fishing-licenses"
+        },
+        {
+          "title": "Trout fishing requirements",
+          "url": "https://www.iowadnr.gov/things-do/fishing/where-fish/trout-fishing"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Confirm whether a guided trip covers the client's licence."
+    },
+    {
+      "id": "us-kansas",
+      "name": "Kansas",
+      "country": "United States",
+      "region": "Kansas",
+      "authority": {
+        "name": "Kansas Department of Wildlife and Parks",
+        "url": "https://ksoutdoors.com/Fishing/Fishing-Application-and-Fees"
+      },
+      "buyUrl": null,
+      "summary": "Non-residents aged 16 or older need a fishing licence, including visiting seniors. During trout season, some waters require a trout permit for every angler.",
+      "whoNeedsOne": [
+        "All non-residents aged 16 or older, unless exempt."
+      ],
+      "exemptions": [
+        "Children under 16 need no base licence.",
+        "Private ponds not leased for public fishing."
+      ],
+      "options": [
+        {
+          "name": "Non-resident 1-day",
+          "who": "non-resident",
+          "duration": "1 day",
+          "price": 12.5,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Non-resident 5-day",
+          "who": "non-resident",
+          "duration": "5 days",
+          "price": 27.5,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Non-resident annual",
+          "who": "non-resident",
+          "duration": "365 days",
+          "price": 77.5,
+          "currency": "USD",
+          "water": "freshwater"
+        }
+      ],
+      "extras": [
+        {
+          "name": "Adult trout permit",
+          "when": "December 1–March 31: required in listed trout waters, either for all fishing or when targeting trout.",
+          "price": 14.5,
+          "currency": "USD"
+        },
+        {
+          "name": "Youth trout permit",
+          "when": "For anglers aged 15 or younger where a trout permit is required.",
+          "price": 7,
+          "currency": "USD"
+        }
+      ],
+      "saltwater": null,
+      "guidedTrips": null,
+      "keyRules": [
+        "Most annual licences last 365 days.",
+        "Local trout programmes can charge separate access fees."
+      ],
+      "howToBuy": "Online, through licence agents or KDWP offices, or by phone at 1-833-587-2164.",
+      "sources": [
+        {
+          "title": "Fishing applications and fees",
+          "url": "https://ksoutdoors.com/Fishing/Fishing-Application-and-Fees"
+        },
+        {
+          "title": "Trout programme",
+          "url": "https://ksoutdoors.com/Fishing/Special-Fishing-Programs-for-You/Trout-Fishing-Program"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Use the authority page to confirm the current online purchase link. Confirm whether a guided trip covers the client's licence."
+    },
+    {
+      "id": "us-kentucky",
+      "name": "Kentucky",
+      "country": "United States",
+      "region": "Kentucky",
+      "authority": {
+        "name": "Kentucky Department of Fish and Wildlife Resources",
+        "url": "https://fw.ky.gov/licenses/pages/fees.aspx"
+      },
+      "buyUrl": "https://app.fw.ky.gov/solar/",
+      "summary": "Anglers aged 16 or older generally need a fishing licence. The Cumberland River trout-permit rule also covers anglers who release all their fish.",
+      "whoNeedsOne": [
+        "Anglers aged 16 or older, unless licence-exempt."
+      ],
+      "exemptions": [
+        "Children under 16 need no fishing licence."
+      ],
+      "options": [
+        {
+          "name": "Non-resident 1-day",
+          "who": "non-resident",
+          "duration": "1 day",
+          "price": 15.86,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Non-resident 7-day",
+          "who": "non-resident",
+          "duration": "7 days",
+          "price": 37,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Non-resident annual",
+          "who": "non-resident",
+          "duration": "March 1 through the last day of February",
+          "price": 58.14,
+          "currency": "USD",
+          "water": "freshwater"
+        }
+      ],
+      "extras": [
+        {
+          "name": "Trout permit",
+          "when": "Required to keep trout or fish the specified Cumberland River section, its tributaries to the first riffle, and Hatchery Creek; exemptions apply.",
+          "price": 10.57,
+          "currency": "USD"
+        }
+      ],
+      "saltwater": null,
+      "guidedTrips": null,
+      "keyRules": [
+        "The annual licence year ends on the last day of February.",
+        "Do not chum trout in the Cumberland River below Wolf Creek Dam to the state line and the specified tributaries."
+      ],
+      "howToBuy": "Buy through the department's licence service or a licence agent.",
+      "sources": [
+        {
+          "title": "Licence and permit fees",
+          "url": "https://fw.ky.gov/licenses/pages/fees.aspx"
+        },
+        {
+          "title": "Fishing questions",
+          "url": "https://fw.ky.gov/More/Pages/FAQ.aspx"
+        },
+        {
+          "title": "Lake Cumberland tailwater rules",
+          "url": "https://app.fw.ky.gov/fisheries/WaterbodyDetail.aspx?wid=186"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Confirm whether a guided trip covers the client's licence."
+    },
+    {
+      "id": "us-louisiana",
+      "name": "Louisiana",
+      "country": "United States",
+      "region": "Louisiana",
+      "authority": {
+        "name": "Louisiana Department of Wildlife and Fisheries",
+        "url": "https://www.wlf.louisiana.gov/page/recreational-fishing-licenses-and-permits"
+      },
+      "buyUrl": null,
+      "summary": "Anglers aged 18 or older need fishing coverage. Saltwater anglers generally need both Basic Fishing and Saltwater licences; a guide's licence alone is not the client licence.",
+      "whoNeedsOne": [
+        "Anglers aged 18 or older who take or possess fish."
+      ],
+      "exemptions": [
+        "Children aged 17 or younger."
+      ],
+      "options": [
+        {
+          "name": "Non-resident Basic Fishing 5-day",
+          "who": "non-resident",
+          "duration": "5 days",
+          "price": 30,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Non-resident Basic Fishing annual",
+          "who": "non-resident",
+          "duration": "1 year",
+          "price": 68,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Charter Passenger Freshwater",
+          "who": "any",
+          "duration": "3 days on a qualifying guided trip",
+          "price": 10,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Charter Passenger Saltwater",
+          "who": "any",
+          "duration": "3 days on a qualifying charter vessel",
+          "price": 20,
+          "currency": "USD",
+          "water": "saltwater"
+        }
+      ],
+      "extras": [
+        {
+          "name": "Non-resident Saltwater 5-day licence",
+          "when": "Added to Basic Fishing for saltwater fishing outside an applicable charter-passenger arrangement.",
+          "price": 30,
+          "currency": "USD"
+        },
+        {
+          "name": "Recreational Offshore Landing Permit",
+          "when": "Required for private anglers aged 18 or older who possess listed offshore species.",
+          "price": 0,
+          "currency": "USD"
+        }
+      ],
+      "saltwater": "The Saltwater licence is normally an addition to Basic Fishing, not a replacement.",
+      "guidedTrips": "Clients need applicable standard licences or a charter-passenger licence. A captain's charter ROLP covers paid clients for that permit.",
+      "keyRules": [
+        "The saltwater charter-passenger licence requires a licensed guide aboard.",
+        "Listed offshore species need ROLP coverage before possession in Louisiana waters."
+      ],
+      "howToBuy": "Use the LDWF online licence service or an authorised licence vendor.",
+      "sources": [
+        {
+          "title": "Recreational licences",
+          "url": "https://www.wlf.louisiana.gov/page/recreational-fishing-licenses-and-permits"
+        },
+        {
+          "title": "LDWF fishing guide",
+          "url": "https://www.wlf.louisiana.gov/assets/Resources/Publications/Regulations/25LAFW.pdf"
+        },
+        {
+          "title": "LDWF licence help",
+          "url": "https://support.louisianaoutdoors.com/hc/en-us/articles/40924740287252-Licenses-and-Permits"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "The fee source is the 2025 guide. Confirm current prices and special gear permits at purchase. Use the authority page to confirm the current online purchase link."
+    },
+    {
+      "id": "us-maine",
+      "name": "Maine",
+      "country": "United States",
+      "region": "Maine",
+      "authority": {
+        "name": "Maine Department of Inland Fisheries and Wildlife; Department of Marine Resources",
+        "url": "https://www.maine.gov/ifw/fishing-boating/fishing/laws-rules/license-requirements.html"
+      },
+      "buyUrl": null,
+      "summary": "Anglers aged 16 or older need a licence for inland fishing. Saltwater uses a separate registry, with exemptions for many licence holders and charter clients.",
+      "whoNeedsOne": [
+        "Anglers aged 16 or older who fish inland or transport inland-caught fish.",
+        "Saltwater anglers who do not qualify for a registry exemption."
+      ],
+      "exemptions": [
+        "Children under 16.",
+        "Saltwater registry exemptions include valid non-lifetime Maine freshwater licences and recognised other-state registrations."
+      ],
+      "options": [
+        {
+          "name": "Non-resident 1-day",
+          "who": "non-resident",
+          "duration": "24 hours",
+          "price": 18,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Non-resident 3-day",
+          "who": "non-resident",
+          "duration": "3 days",
+          "price": 30,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Non-resident 7-day",
+          "who": "non-resident",
+          "duration": "7 days",
+          "price": 62,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Non-resident season",
+          "who": "non-resident",
+          "duration": "Fishing season",
+          "price": 83,
+          "currency": "USD",
+          "water": "freshwater"
+        }
+      ],
+      "extras": [
+        {
+          "name": "Saltwater registration",
+          "when": "Annual registration if no exemption applies; online price.",
+          "price": 1,
+          "currency": "USD"
+        }
+      ],
+      "saltwater": "Register with DMR unless exempt. A Maine lifetime freshwater licence alone does not provide the registry exemption.",
+      "guidedTrips": "Passengers with a captain who holds a valid For-Hire Charter Boat Operator's Licence are exempt from saltwater registration.",
+      "keyRules": [
+        "Carry proof of saltwater registration or an exemption.",
+        "A Maine freshwater lifetime licence does not automatically cover saltwater registration."
+      ],
+      "howToBuy": "Use the inland licence service or a licence agent. Saltwater registration uses DMR LEEDS, mail, or participating offices.",
+      "sources": [
+        {
+          "title": "Inland licence requirements and fees",
+          "url": "https://www.maine.gov/ifw/fishing-boating/fishing/laws-rules/license-requirements.html"
+        },
+        {
+          "title": "Saltwater registry",
+          "url": "https://www1.maine.gov/dmr/fisheries/recreational/licenses-registry/saltwater-recreational-fishing-registry-license"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Use the authority page to confirm the current online purchase link."
+    },
+    {
+      "id": "us-maryland",
+      "name": "Maryland",
+      "country": "United States",
+      "region": "Maryland",
+      "authority": {
+        "name": "Maryland Department of Natural Resources",
+        "url": "https://dnr.maryland.gov/Pages/service_fishing_license.aspx"
+      },
+      "buyUrl": "https://mdoutdoors.maryland.gov/",
+      "summary": "Anglers aged 16 or older generally need freshwater or Bay and Coastal coverage. Non-resident freshwater fees depend on the visitor's home state.",
+      "whoNeedsOne": [
+        "Anglers aged 16 or older, unless exempt."
+      ],
+      "exemptions": [
+        "Children under 16 need no recreational fishing licence."
+      ],
+      "options": [
+        {
+          "name": "Non-resident freshwater annual",
+          "who": "non-resident",
+          "duration": "365 days",
+          "price": null,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Non-resident freshwater 3-day",
+          "who": "non-resident",
+          "duration": "3 consecutive days",
+          "price": null,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Non-resident Bay and Coastal 7-day",
+          "who": "non-resident",
+          "duration": "7 days",
+          "price": 12,
+          "currency": "USD",
+          "water": "saltwater"
+        },
+        {
+          "name": "Non-resident Bay and Coastal annual",
+          "who": "non-resident",
+          "duration": "365 days",
+          "price": 22.5,
+          "currency": "USD",
+          "water": "saltwater"
+        }
+      ],
+      "extras": [
+        {
+          "name": "Non-resident trout stamp",
+          "when": "Required from age 16 to catch, attempt to catch, or possess trout from non-tidal waters.",
+          "price": 30,
+          "currency": "USD"
+        },
+        {
+          "name": "Saltwater Angler Registration",
+          "when": "Required for certain licence-exempt anglers in Chesapeake Bay and the tidal Potomac.",
+          "price": 0,
+          "currency": "USD"
+        }
+      ],
+      "saltwater": "The Bay and Coastal licence is separate from the non-tidal freshwater licence.",
+      "guidedTrips": null,
+      "keyRules": [
+        "The non-resident annual freshwater fee is at least USD 55 and can be higher under reciprocal pricing.",
+        "Visiting seniors still need the applicable non-resident trout stamp."
+      ],
+      "howToBuy": "Use MD Outdoors or a DNR licence service centre.",
+      "sources": [
+        {
+          "title": "Sport fishing and crabbing licences",
+          "url": "https://dnr.maryland.gov/Pages/service_fishing_license.aspx"
+        },
+        {
+          "title": "DNR licence services",
+          "url": "https://dnr.maryland.gov/Pages/List-of-DNR-Licenses-and-Permits.aspx"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Check residence-based freshwater prices, charter coverage, and any registration exemption."
+    },
+    {
+      "id": "us-massachusetts",
+      "name": "Massachusetts",
+      "country": "United States",
+      "region": "Massachusetts",
+      "authority": {
+        "name": "Massachusetts Division of Fisheries and Wildlife; Division of Marine Fisheries",
+        "url": "https://www.mass.gov/info-details/license-types-and-fees"
+      },
+      "buyUrl": null,
+      "summary": "Freshwater anglers aged 15 or older need a licence. Saltwater uses a separate permit from age 16, and seniors must obtain it even when it is free.",
+      "whoNeedsOne": [
+        "Freshwater anglers aged 15 or older.",
+        "Saltwater anglers aged 16 or older, unless exempt."
+      ],
+      "exemptions": [
+        "Freshwater anglers under 15.",
+        "Saltwater anglers under 16.",
+        "Saltwater anglers on permitted for-hire vessels."
+      ],
+      "options": [
+        {
+          "name": "Non-resident freshwater 3-day",
+          "who": "non-resident",
+          "duration": "3 days",
+          "price": 30.5,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Non-resident freshwater annual",
+          "who": "non-resident",
+          "duration": "Calendar year",
+          "price": 50,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Recreational saltwater permit",
+          "who": "any",
+          "duration": "Through December 31",
+          "price": 10,
+          "currency": "USD",
+          "water": "saltwater"
+        }
+      ],
+      "extras": [
+        {
+          "name": "Wildlands Conservation Stamp",
+          "when": "Added to all non-resident freshwater licences.",
+          "price": 5,
+          "currency": "USD"
+        }
+      ],
+      "saltwater": "The marine permit costs the same for residents and visitors. Anglers aged 60 or older must obtain a free permit.",
+      "guidedTrips": "A permitted saltwater charter or head boat exempts its clients from the individual marine permit.",
+      "keyRules": [
+        "Carry the current saltwater permit in paper or digital form.",
+        "Freshwater fees exclude the conservation stamp; online transaction fees can also apply."
+      ],
+      "howToBuy": "Use MassFishHunt online or a licence sales location.",
+      "sources": [
+        {
+          "title": "2026 licence fees",
+          "url": "https://www.mass.gov/info-details/license-types-and-fees"
+        },
+        {
+          "title": "Saltwater permit requirements",
+          "url": "https://www.mass.gov/how-to/get-a-recreational-saltwater-fishing-permit"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Use the authority page to confirm the current online purchase link."
+    },
+    {
+      "id": "us-michigan",
+      "name": "Michigan",
+      "country": "United States",
+      "region": "Michigan",
+      "authority": {
+        "name": "Michigan Department of Natural Resources",
+        "url": "https://www.michigan.gov/dnr/things-to-do/fishing/license-info"
+      },
+      "buyUrl": "https://www.mdnr-elicense.com/",
+      "summary": "Anglers aged 17 or older need an all-species fishing licence. An adult who actively helps a child also needs a licence.",
+      "whoNeedsOne": [
+        "Anglers aged 17 or older in public waters.",
+        "Adults who actively assist a minor."
+      ],
+      "exemptions": [
+        "Children under 17; all fishing rules still apply."
+      ],
+      "options": [
+        {
+          "name": "Daily all-species",
+          "who": "any",
+          "duration": "24 hours",
+          "price": 10,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Non-resident annual all-species",
+          "who": "non-resident",
+          "duration": "Through March 31, 2027",
+          "price": 76,
+          "currency": "USD",
+          "water": "freshwater"
+        }
+      ],
+      "extras": [
+        {
+          "name": "Annual licence surcharge",
+          "when": "Added to the annual fishing licence.",
+          "price": 1,
+          "currency": "USD"
+        }
+      ],
+      "saltwater": null,
+      "guidedTrips": null,
+      "keyRules": [
+        "Carry the licence and the identification used to buy it.",
+        "A digital licence copy is accepted.",
+        "Some species and methods have separate reporting requirements."
+      ],
+      "howToBuy": "Use the Michigan DNR Hunt Fish app, eLicense, or a licence retailer.",
+      "sources": [
+        {
+          "title": "Fishing licence information",
+          "url": "https://www.michigan.gov/dnr/things-to-do/fishing/license-info"
+        },
+        {
+          "title": "2026 licence notice",
+          "url": "https://www.michigan.gov/dnr/about/newsroom/releases/2026/03/02/2026-michigan-fishing-licenses-now-available"
+        },
+        {
+          "title": "2026 fishing regulations",
+          "url": "https://www.michigan.gov/dnr/-/media/Project/Websites/dnr/Documents/LED/digests/2026-Michigan-Fishing-Regulations_web_accessible.pdf?rev=757205538cf14691943cd322ed6bc9b2"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Confirm whether a guided trip covers the client's licence."
+    },
+    {
+      "id": "us-minnesota",
+      "name": "Minnesota",
+      "country": "United States",
+      "region": "Minnesota",
+      "authority": {
+        "name": "Minnesota Department of Natural Resources",
+        "url": "https://www.dnr.state.mn.us/fishing/index.html"
+      },
+      "buyUrl": "https://licenses.dnr.state.mn.us/",
+      "summary": "Anglers aged 16 or older need a fishing licence. Visiting children under 16 must use a parent's or guardian's licence or obtain a youth licence.",
+      "whoNeedsOne": [
+        "Anglers aged 16 or older.",
+        "Visiting children under 16 who do not fish under a parent's or guardian's licence."
+      ],
+      "exemptions": [
+        "Non-resident children under 16 can fish under a parent's or guardian's licence; applicable shared limits remain."
+      ],
+      "options": [
+        {
+          "name": "Non-resident 24-hour",
+          "who": "non-resident",
+          "duration": "24 hours",
+          "price": 14,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Non-resident 72-hour",
+          "who": "non-resident",
+          "duration": "72 hours",
+          "price": 36,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Non-resident 7-day",
+          "who": "non-resident",
+          "duration": "7 consecutive days",
+          "price": 43,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Non-resident annual adult",
+          "who": "non-resident",
+          "duration": "Through February 28, 2027",
+          "price": 51,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Non-resident youth, ages 0–17",
+          "who": "non-resident",
+          "duration": "Through February 28, 2027",
+          "price": 5,
+          "currency": "USD",
+          "water": "freshwater"
+        }
+      ],
+      "extras": [
+        {
+          "name": "Trout/Salmon Stamp Validation",
+          "when": "Required in designated waters or for trout harvest where applicable; 24-hour, 72-hour and youth licences have exemptions.",
+          "price": 10,
+          "currency": "USD"
+        }
+      ],
+      "saltwater": null,
+      "guidedTrips": null,
+      "keyRules": [
+        "Buy a youth licence for a visiting child's separate limit, unless a family licence provides it.",
+        "Species seasons and limits still apply with an all-year licence."
+      ],
+      "howToBuy": "Use the Minnesota DNR online licence shop.",
+      "sources": [
+        {
+          "title": "Fishing licence overview",
+          "url": "https://www.dnr.state.mn.us/fishing/index.html"
+        },
+        {
+          "title": "Official licence shop",
+          "url": "https://licenses.dnr.state.mn.us/?catalogItem=Stamps"
+        },
+        {
+          "title": "2026 fishing regulations",
+          "url": "https://files.dnr.state.mn.us/rlp/regulations/fishing/fishing_regs_2026.pdf?v=2026.02.24-08.24.56"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Confirm whether a guided trip covers the client's licence."
+    },
+    {
+      "id": "us-mississippi",
+      "name": "Mississippi",
+      "country": "United States",
+      "region": "Mississippi",
+      "authority": {
+        "name": "Mississippi Department of Wildlife, Fisheries, and Parks; Department of Marine Resources",
+        "url": "https://www.mdwfp.com/licenses-permits/fishing-license-requirements"
+      },
+      "buyUrl": null,
+      "summary": "Non-residents aged 16 or older need a fishing licence. Louisiana residents face an extra saltwater rule and must also buy freshwater privileges.",
+      "whoNeedsOne": [
+        "Non-residents aged 16 or older in fresh or marine waters."
+      ],
+      "exemptions": [
+        "Non-residents under 16."
+      ],
+      "options": [
+        {
+          "name": "Non-resident freshwater 1-day",
+          "who": "non-resident",
+          "duration": "1 day",
+          "price": 10,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Non-resident freshwater 3-day",
+          "who": "non-resident",
+          "duration": "3 days",
+          "price": 30,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Non-resident freshwater annual",
+          "who": "non-resident",
+          "duration": "1 year",
+          "price": 68,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Non-resident saltwater 3-day",
+          "who": "non-resident",
+          "duration": "3 days",
+          "price": 15,
+          "currency": "USD",
+          "water": "saltwater"
+        },
+        {
+          "name": "Non-resident saltwater annual, except Louisiana",
+          "who": "non-resident",
+          "duration": "1 year",
+          "price": 30,
+          "currency": "USD",
+          "water": "saltwater"
+        }
+      ],
+      "extras": [
+        {
+          "name": "Tails n' Scales trip authorisation",
+          "when": "At least one angler aboard needs a trip number for a red snapper trip.",
+          "price": null,
+          "currency": "USD"
+        },
+        {
+          "name": "Recreational Offshore Landing Permit",
+          "when": "Required from age 16 to possess listed offshore fish, unless exempt; some inshore gray snapper fishing is exempt.",
+          "price": 0,
+          "currency": "USD"
+        }
+      ],
+      "saltwater": "Saltwater coverage applies south of US 90. Either licence works between I-10 and US 90; saltwater coverage stops north of I-10.",
+      "guidedTrips": "A charter captain's ROLP covers passengers for that permit. Confirm separate client fishing-licence coverage.",
+      "keyRules": [
+        "Louisiana residents need freshwater privileges plus the special Louisiana non-resident saltwater privilege.",
+        "The listed licence prices exclude agent and processing fees.",
+        "Create a red snapper trip in Tails n' Scales before departure and close it after return."
+      ],
+      "howToBuy": "Use MDWFP's official online purchase link.",
+      "sources": [
+        {
+          "title": "Fishing licence requirements",
+          "url": "https://www.mdwfp.com/licenses-permits/fishing-license-requirements"
+        },
+        {
+          "title": "Licence prices",
+          "url": "https://www.mdwfp.com/licenses-permits/hunting-and-fishing-license-prices"
+        },
+        {
+          "title": "Offshore permits and red snapper reporting",
+          "url": "https://dmr.ms.gov/wp-content/uploads/2025/03/ROLP-Fact-Sheet-20250312.pdf"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Confirm the current red snapper season, trip-system fees, and charter-client fishing licence requirements. Use the authority page to confirm the current online purchase link."
+    },
+    {
+      "id": "us-missouri",
+      "name": "Missouri",
+      "country": "United States",
+      "region": "Missouri",
+      "authority": {
+        "name": "Missouri Department of Conservation",
+        "url": "https://mdc.mo.gov/permits/fishing-permits"
+      },
+      "buyUrl": "https://mdc-web.s3licensing.com/",
+      "summary": "Anglers aged 16 or older generally need a fishing permit. Children and exempt seniors can still need a trout permit or a daily trout-park tag.",
+      "whoNeedsOne": [
+        "Anglers aged 16 or older, unless permit-exempt."
+      ],
+      "exemptions": [
+        "Children aged 15 or younger; trout permits and tags can still apply.",
+        "Missouri residents aged 65 or older; trout requirements remain.",
+        "Free fishing days in 2026: June 6–7."
+      ],
+      "options": [
+        {
+          "name": "Daily fishing permit",
+          "who": "any",
+          "duration": "1 day; multiple days available",
+          "price": 9,
+          "currency": "USD",
+          "water": "freshwater"
+        }
+      ],
+      "extras": [
+        {
+          "name": "Non-resident trout permit",
+          "when": "Required to possess trout outside trout parks, for winter trout-park fishing, and all fishing in upper Lake Taneycomo.",
+          "price": 24,
+          "currency": "USD"
+        },
+        {
+          "name": "Daily trout-park tag",
+          "when": "Required in trout parks when the daily-tag rules apply.",
+          "price": null,
+          "currency": "USD"
+        }
+      ],
+      "saltwater": null,
+      "guidedTrips": null,
+      "keyRules": [
+        "Upper Lake Taneycomo requires a trout permit even without trout harvest.",
+        "A general permit exemption does not remove required trout permits or tags."
+      ],
+      "howToBuy": "Use the Buy Permit link on the department's permit page.",
+      "sources": [
+        {
+          "title": "Fishing permits",
+          "url": "https://mdc.mo.gov/permits/fishing-permits"
+        },
+        {
+          "title": "Daily fishing permit",
+          "url": "https://mdc.mo.gov/fishing/permits/daily-fishing-permit"
+        },
+        {
+          "title": "Permit exemptions",
+          "url": "https://mdc.mo.gov/permits/permit-exemptions"
+        },
+        {
+          "title": "2026 fishing guide",
+          "url": "https://mdc.mo.gov/sites/default/files/2026-02/Fishing%20Summ%202026_508.pdf"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Confirm the non-resident annual permit price, trout-park tag fees, and guide coverage."
+    },
+    {
+      "id": "us-montana",
+      "name": "Montana",
+      "country": "United States",
+      "region": "Montana",
+      "authority": {
+        "name": "Montana Fish, Wildlife and Parks",
+        "url": "https://fwp.mt.gov/buyandapply/fishinglicenses"
+      },
+      "buyUrl": "https://ols.fwp.mt.gov/",
+      "summary": "Anglers aged 12 or older need a base fishing licence, Conservation Licence, and AIS prevention pass. The advertised base price does not include both required additions.",
+      "whoNeedsOne": [
+        "Residents and non-residents aged 12 or older."
+      ],
+      "exemptions": [
+        "Children aged 11 or younger need none of the three fishing licence items."
+      ],
+      "options": [
+        {
+          "name": "Non-resident 1-day base licence",
+          "who": "non-resident",
+          "duration": "1 day",
+          "price": 14,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Non-resident 5-day base licence",
+          "who": "non-resident",
+          "duration": "5 consecutive calendar days",
+          "price": 56,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Non-resident full-season base licence",
+          "who": "non-resident",
+          "duration": "March 1 through the last day of February",
+          "price": 100,
+          "currency": "USD",
+          "water": "freshwater"
+        }
+      ],
+      "extras": [
+        {
+          "name": "Non-resident Conservation Licence",
+          "when": "Required with the base fishing licence.",
+          "price": 10,
+          "currency": "USD"
+        },
+        {
+          "name": "Non-resident Angler AIS Prevention Pass",
+          "when": "Required with the base fishing licence.",
+          "price": 7.5,
+          "currency": "USD"
+        }
+      ],
+      "saltwater": null,
+      "guidedTrips": null,
+      "keyRules": [
+        "A fishing licence cannot be transferred or refunded.",
+        "Children still must obey all catch limits and fishing rules."
+      ],
+      "howToBuy": "Use FWP's online licence purchase service.",
+      "sources": [
+        {
+          "title": "Fishing licences and permits",
+          "url": "https://fwp.mt.gov/buyandapply/fishinglicenses"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Confirm whether a guided trip covers the client's licence."
+    },
+    {
+      "id": "us-nebraska",
+      "name": "Nebraska",
+      "country": "United States",
+      "region": "Nebraska",
+      "authority": {
+        "name": "Nebraska Game and Parks Commission",
+        "url": "https://outdoornebraska.gov/permits/fishing-permits/"
+      },
+      "buyUrl": null,
+      "summary": "Anglers aged 16 or older need a fishing permit. Visiting children under 16 need a companion who holds a Nebraska fishing permit.",
+      "whoNeedsOne": [
+        "Anglers aged 16 or older.",
+        "Non-residents under 16 without the required licensed companion."
+      ],
+      "exemptions": [
+        "Non-residents under 16 when accompanied by a Nebraska fishing permit holder."
+      ],
+      "options": [
+        {
+          "name": "Non-resident 1-day",
+          "who": "non-resident",
+          "duration": "1 day",
+          "price": 17.5,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Non-resident 3-day",
+          "who": "non-resident",
+          "duration": "3 days",
+          "price": 40,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Non-resident annual",
+          "who": "non-resident",
+          "duration": "2026 licence year",
+          "price": 95.5,
+          "currency": "USD",
+          "water": "freshwater"
+        }
+      ],
+      "extras": [
+        {
+          "name": "Aquatic Habitat Stamp",
+          "when": "Included in the listed fishing permit prices.",
+          "price": null,
+          "currency": "USD"
+        },
+        {
+          "name": "Non-resident boat AIS stamp",
+          "when": "Required yearly for motorised boats registered outside Nebraska.",
+          "price": null,
+          "currency": "USD"
+        }
+      ],
+      "saltwater": null,
+      "guidedTrips": null,
+      "keyRules": [
+        "The fishing permit includes the Aquatic Habitat Stamp.",
+        "An out-of-state motorised boat needs its separate AIS stamp."
+      ],
+      "howToBuy": "Use Nebraska Game and Parks' online permit service.",
+      "sources": [
+        {
+          "title": "Fishing permits",
+          "url": "https://outdoornebraska.gov/permits/fishing-permits/"
+        },
+        {
+          "title": "2026 permit prices",
+          "url": "https://digital.outdoornebraska.gov/i/1542421-fishing-guide-2026/3"
+        },
+        {
+          "title": "Fishing guide",
+          "url": "https://outdoornebraska.gov/guides-maps/fishing-guides-reports/fishing-guide/"
+        },
+        {
+          "title": "Boat AIS stamp",
+          "url": "https://outdoornebraska.gov/permits/fishing-permits/ais-stamp/"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Confirm the boat AIS fee and guide coverage. Use the authority page to confirm the current online purchase link."
+    },
+    {
+      "id": "us-nevada",
+      "name": "Nevada",
+      "country": "United States",
+      "region": "Nevada",
+      "authority": {
+        "name": "Nevada Department of Wildlife",
+        "url": "https://www.ndow.org/apply-buy/fishing/"
+      },
+      "buyUrl": "https://nevada.licensing.app/",
+      "summary": "Anglers aged 12 or older need a fishing licence. A person who helps another angler also needs a licence.",
+      "whoNeedsOne": [
+        "Anglers aged 12 or older.",
+        "People who assist another person with fishing."
+      ],
+      "exemptions": [
+        "Children under 12 need no base fishing licence."
+      ],
+      "options": [
+        {
+          "name": "Non-resident adult 1-day",
+          "who": "non-resident",
+          "duration": "1 day",
+          "price": 18,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Non-resident additional consecutive day",
+          "who": "non-resident",
+          "duration": "1 additional consecutive day",
+          "price": 7,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Non-resident adult annual",
+          "who": "non-resident",
+          "duration": "1 year",
+          "price": 80,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Youth combination, ages 12–17",
+          "who": "any",
+          "duration": "1 year",
+          "price": 15,
+          "currency": "USD",
+          "water": "freshwater"
+        }
+      ],
+      "extras": [],
+      "saltwater": null,
+      "guidedTrips": null,
+      "keyRules": [
+        "Carry the licence while in the field.",
+        "Check the season and limits for the specific water."
+      ],
+      "howToBuy": "Buy through the official online link. Listed prices exclude the processing fee.",
+      "sources": [
+        {
+          "title": "Fishing licences and fees",
+          "url": "https://www.ndow.org/apply-buy/fishing/"
+        },
+        {
+          "title": "Fishing regulations",
+          "url": "https://www.ndow.org/rules-regulations/"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Confirm whether a guided trip covers the client's licence."
+    },
+    {
+      "id": "us-new-hampshire",
+      "name": "New Hampshire",
+      "country": "United States",
+      "region": "New Hampshire",
+      "authority": {
+        "name": "New Hampshire Fish and Game Department",
+        "url": "https://www.wildlife.nh.gov/licenses-and-permits"
+      },
+      "buyUrl": null,
+      "summary": "Anglers aged 16 or older generally need freshwater or saltwater coverage. A short freshwater licence does not replace separate saltwater coverage.",
+      "whoNeedsOne": [
+        "Anglers aged 16 or older, unless exempt."
+      ],
+      "exemptions": [
+        "Children under 16."
+      ],
+      "options": [
+        {
+          "name": "Non-resident freshwater 1-day",
+          "who": "non-resident",
+          "duration": "1 day",
+          "price": 15,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Non-resident freshwater 3-day",
+          "who": "non-resident",
+          "duration": "3 days",
+          "price": 28,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Non-resident freshwater 7-day",
+          "who": "non-resident",
+          "duration": "7 days",
+          "price": 35,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Non-resident freshwater annual",
+          "who": "non-resident",
+          "duration": "Annual",
+          "price": 63,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Recreational saltwater",
+          "who": "any",
+          "duration": "Annual",
+          "price": 11,
+          "currency": "USD",
+          "water": "saltwater"
+        }
+      ],
+      "extras": [],
+      "saltwater": "The department offers a separate Recreational Saltwater Fishing licence.",
+      "guidedTrips": null,
+      "keyRules": [
+        "The mail application requires a copy of a current driving licence or non-driver photo ID.",
+        "Select the start time and date for a short-term freshwater licence."
+      ],
+      "howToBuy": "Use the official licensing service or mail the department's application with payment.",
+      "sources": [
+        {
+          "title": "Official licence application and prices",
+          "url": "https://www.wildlife.nh.gov/sites/g/files/ehbemt746/files/documents/printable-license-app.pdf"
+        },
+        {
+          "title": "Fishing licence exemptions",
+          "url": "https://gc.nh.gov/rsa/html/XVIII/214/214-2.htm"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Confirm current fees, reciprocity, and charter coverage. The available official application is dated October 2023. Use the authority page to confirm the current online purchase link."
+    },
+    {
+      "id": "us-new-jersey",
+      "name": "New Jersey",
+      "country": "United States",
+      "region": "New Jersey",
+      "authority": {
+        "name": "New Jersey Department of Environmental Protection, Fish and Wildlife",
+        "url": "https://dep.nj.gov/njfw/fishing/freshwater/buy-a-license/"
+      },
+      "buyUrl": null,
+      "summary": "Visitors aged 16 or older need a freshwater licence, including on private waters. Saltwater uses an annual registry instead of a general fishing licence.",
+      "whoNeedsOne": [
+        "Non-residents aged 16 or older in freshwater."
+      ],
+      "exemptions": [
+        "Children under 16.",
+        "New Jersey residents aged 70 or older need no freshwater licence or trout stamp; visiting seniors do."
+      ],
+      "options": [
+        {
+          "name": "Non-resident 2-day",
+          "who": "non-resident",
+          "duration": "2 days",
+          "price": 9,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Non-resident 7-day",
+          "who": "non-resident",
+          "duration": "7 days",
+          "price": 19.5,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Non-resident annual",
+          "who": "non-resident",
+          "duration": "Through December 31",
+          "price": 34,
+          "currency": "USD",
+          "water": "freshwater"
+        }
+      ],
+      "extras": [
+        {
+          "name": "Non-resident trout stamp",
+          "when": "Required from age 16 to fish for or possess trout or salmon, even when all fish are released.",
+          "price": 20,
+          "currency": "USD"
+        },
+        {
+          "name": "Saltwater Recreational Registry",
+          "when": "Annual saltwater registration unless exempt.",
+          "price": null,
+          "currency": "USD"
+        }
+      ],
+      "saltwater": "No general marine fishing licence is required, but the Saltwater Recreational Registry applies.",
+      "guidedTrips": "Anglers who fish only on registry-enrolled party or charter vessels have a saltwater registration exemption.",
+      "keyRules": [
+        "Display the freshwater licence visibly on outer clothing.",
+        "Annual freshwater licences and trout stamps expire December 31."
+      ],
+      "howToBuy": "Use NJ Fish and Wildlife's online licence system or a licence agent.",
+      "sources": [
+        {
+          "title": "Freshwater licences",
+          "url": "https://dep.nj.gov/njfw/fishing/freshwater/buy-a-license/"
+        },
+        {
+          "title": "Saltwater registry questions",
+          "url": "https://dep.nj.gov/njfw/fishing/marine/saltwater-registry/faq/"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Confirm the current saltwater registry fee and any species or shellfish permits. Use the authority page to confirm the current online purchase link."
+    },
+    {
+      "id": "us-new-mexico",
+      "name": "New Mexico",
+      "country": "United States",
+      "region": "New Mexico",
+      "authority": {
+        "name": "New Mexico Department of Wildlife",
+        "url": "https://wildlife.dgf.nm.gov/fishing/licenses-permits/"
+      },
+      "buyUrl": "https://onlinesales.wildlife.state.nm.us/",
+      "summary": "Anglers aged 12 or older need a state fishing licence outside exempt waters. Federal forest and BLM land can require a Habitat Stamp in addition to the access validation.",
+      "whoNeedsOne": [
+        "Residents and non-residents aged 12 or older."
+      ],
+      "exemptions": [
+        "Children aged 11 or younger.",
+        "State licences are not required on tribal reservations or private Class-A lakes; separate local rules apply."
+      ],
+      "options": [
+        {
+          "name": "One-day fishing",
+          "who": "any",
+          "duration": "1 day",
+          "price": 12,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Five-day fishing",
+          "who": "any",
+          "duration": "5 days",
+          "price": 30,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Non-resident annual",
+          "who": "non-resident",
+          "duration": "April 1, 2026–March 31, 2027",
+          "price": 90,
+          "currency": "USD",
+          "water": "freshwater"
+        }
+      ],
+      "extras": [
+        {
+          "name": "Habitat Management and Access Validation",
+          "when": "Required once per licence year from age 18, except with free licences.",
+          "price": 4,
+          "currency": "USD"
+        },
+        {
+          "name": "Habitat Stamp",
+          "when": "Required from age 12 on US Forest Service and BLM lands, except with free licences.",
+          "price": 10,
+          "currency": "USD"
+        },
+        {
+          "name": "Gila Trout Fishing Permit",
+          "when": "Required in the department's listed Gila trout waters.",
+          "price": 0,
+          "currency": "USD"
+        }
+      ],
+      "saltwater": null,
+      "guidedTrips": null,
+      "keyRules": [
+        "A Second Rod Validation is required for two rods from age 12 unless exempt.",
+        "Three rods are not allowed."
+      ],
+      "howToBuy": "Use the online sales portal, licence vendors, department offices, or 1-888-248-6866.",
+      "sources": [
+        {
+          "title": "Fishing licences and permits",
+          "url": "https://wildlife.dgf.nm.gov/fishing/licenses-permits/"
+        },
+        {
+          "title": "2026–2027 fishing rules and fees",
+          "url": "https://wildlife.dgf.nm.gov/wp-content/uploads/2026/03/2026-2027-FISH-RIB_Online.pdf"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Confirm whether a guided trip covers the client's licence."
+    },
+    {
+      "id": "us-new-york",
+      "name": "New York",
+      "country": "United States",
+      "region": "New York",
+      "authority": {
+        "name": "New York State Department of Environmental Conservation",
+        "url": "https://dec.ny.gov/sites/default/files/2026-03/fishguide26.pdf"
+      },
+      "buyUrl": null,
+      "summary": "Anglers aged 16 or older need a freshwater licence. Marine fishing uses a free registry, which also covers certain migratory fish in inland rivers.",
+      "whoNeedsOne": [
+        "Freshwater anglers aged 16 or older.",
+        "Marine anglers aged 16 or older, including those targeting specified migratory marine fish inland."
+      ],
+      "exemptions": [
+        "Children under 16.",
+        "2026 freshwater free days listed in the current guide: June 27–28, September 26, and November 11."
+      ],
+      "options": [
+        {
+          "name": "Non-resident 1-day",
+          "who": "non-resident",
+          "duration": "1 day",
+          "price": 10,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Non-resident 7-day",
+          "who": "non-resident",
+          "duration": "7 days",
+          "price": 28,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Non-resident annual",
+          "who": "non-resident",
+          "duration": "365 days",
+          "price": 50,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Recreational Marine Fishing Registry",
+          "who": "any",
+          "duration": "365 days",
+          "price": 0,
+          "currency": "USD",
+          "water": "saltwater"
+        }
+      ],
+      "extras": [],
+      "saltwater": "The free marine registry applies in the Marine and Coastal District and for listed migratory marine species in state waters.",
+      "guidedTrips": null,
+      "keyRules": [
+        "All other fishing rules remain in effect on free fishing days.",
+        "The marine registry can apply on the Hudson and Delaware rivers."
+      ],
+      "howToBuy": "Obtain a licence or marine registration through DEC licence sales or a licence-issuing agent.",
+      "sources": [
+        {
+          "title": "2026 freshwater fishing guide and marine registry",
+          "url": "https://dec.ny.gov/sites/default/files/2026-03/fishguide26.pdf"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Use the authority page to confirm the current online purchase link. Confirm whether a guided trip covers the client's licence."
+    },
+    {
+      "id": "us-north-carolina",
+      "name": "North Carolina",
+      "country": "United States",
+      "region": "North Carolina",
+      "authority": {
+        "name": "North Carolina Wildlife Resources Commission; Division of Marine Fisheries",
+        "url": "https://www.ncwildlife.gov/hunting/license-types-and-fees"
+      },
+      "buyUrl": "https://gooutdoorsnorthcarolina.com/",
+      "summary": "Anglers aged 16 or older generally need inland or coastal fishing coverage. An inland licence does not cover coastal waters.",
+      "whoNeedsOne": [
+        "Anglers aged 16 or older in public inland waters.",
+        "Anglers aged 16 or older in coastal waters, unless exempt."
+      ],
+      "exemptions": [
+        "Children under 16 are exempt from fishing licence requirements."
+      ],
+      "options": [
+        {
+          "name": "Non-resident inland annual",
+          "who": "non-resident",
+          "duration": "Annual",
+          "price": null,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Non-resident inland 10-day",
+          "who": "non-resident",
+          "duration": "10 consecutive days",
+          "price": null,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Non-resident coastal 10-day",
+          "who": "non-resident",
+          "duration": "10 consecutive days",
+          "price": 15,
+          "currency": "USD",
+          "water": "saltwater"
+        },
+        {
+          "name": "Non-resident coastal annual",
+          "who": "non-resident",
+          "duration": "12 months",
+          "price": 40,
+          "currency": "USD",
+          "water": "saltwater"
+        }
+      ],
+      "extras": [],
+      "saltwater": "Coastal waters require a Coastal Recreational Fishing Licence. Either coastal or inland coverage is valid in joint waters.",
+      "guidedTrips": null,
+      "keyRules": [
+        "Licences cannot be transferred.",
+        "Short-term licences apply only on the specified dates."
+      ],
+      "howToBuy": "Use Go Outdoors North Carolina or a Wildlife Service Agent.",
+      "sources": [
+        {
+          "title": "Licence types and exemptions",
+          "url": "https://www.ncwildlife.gov/hunting/license-types-and-fees"
+        },
+        {
+          "title": "Coastal recreational licences",
+          "url": "https://www.deq.nc.gov/about/divisions/marine-fisheries/licenses-permits-and-leases/recreational-fishing-licenses"
+        },
+        {
+          "title": "Inland licence law",
+          "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_113/GS_113-271.html"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Confirm inland licence fees, tribal permits, and charter coverage."
+    },
+    {
+      "id": "us-north-dakota",
+      "name": "North Dakota",
+      "country": "United States",
+      "region": "North Dakota",
+      "authority": {
+        "name": "North Dakota Game and Fish Department",
+        "url": "https://gf.nd.gov/fishing/licensing"
+      },
+      "buyUrl": null,
+      "summary": "Anglers aged 16 or older need a fishing licence. Visiting children under 16 can keep their own limit only under the stated licensed-companion exemption.",
+      "whoNeedsOne": [
+        "Residents and non-residents aged 16 or older."
+      ],
+      "exemptions": [
+        "Non-residents under 16 accompanied by a valid fishing licence holder.",
+        "Free fishing days apply to North Dakota residents, not visitors."
+      ],
+      "options": [
+        {
+          "name": "Non-resident 3-day",
+          "who": "non-resident",
+          "duration": "3 days",
+          "price": 48,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Non-resident 10-day",
+          "who": "non-resident",
+          "duration": "10 days",
+          "price": 58,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Non-resident season",
+          "who": "non-resident",
+          "duration": "April 1 through March 31",
+          "price": 68,
+          "currency": "USD",
+          "water": "freshwater"
+        }
+      ],
+      "extras": [
+        {
+          "name": "Fishing, Hunting, Furbearer Certificate",
+          "when": "Required with a non-resident fishing licence; one per licence year.",
+          "price": 5,
+          "currency": "USD"
+        },
+        {
+          "name": "Non-resident paddlefish tag",
+          "when": "Required for each paddlefish snagger, in addition to required fishing coverage.",
+          "price": 35,
+          "currency": "USD"
+        }
+      ],
+      "saltwater": null,
+      "guidedTrips": null,
+      "keyRules": [
+        "Carry the licence; a stored digital image is accepted.",
+        "Darkhouse spearfishers must complete free registration."
+      ],
+      "howToBuy": "Online, through the NDGF mobile app, at department offices, or at retail licence vendors.",
+      "sources": [
+        {
+          "title": "Fishing licence requirements",
+          "url": "https://gf.nd.gov/fishing/licensing"
+        },
+        {
+          "title": "Non-resident licences and fees",
+          "url": "https://gf.nd.gov/licensing/nonresident"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Use the authority page to confirm the current online purchase link. Confirm whether a guided trip covers the client's licence."
+    },
+    {
+      "id": "us-ohio",
+      "name": "Ohio",
+      "country": "United States",
+      "region": "Ohio",
+      "authority": {
+        "name": "Ohio Department of Natural Resources, Division of Wildlife",
+        "url": "https://ohiodnr.gov/buy-and-apply/hunting-fishing-boating/fishing-resources/fishing-licenses"
+      },
+      "buyUrl": null,
+      "summary": "Anglers aged 16 or older generally need a fishing licence. Ohio's free fishing days apply to residents, so visitors should not assume an exemption.",
+      "whoNeedsOne": [
+        "Anglers aged 16 or older, unless exempt."
+      ],
+      "exemptions": [
+        "Children under 16.",
+        "Private ponds, lakes, or reservoirs where fish do not migrate in or out, subject to the stated exceptions."
+      ],
+      "options": [
+        {
+          "name": "Non-resident 1-day",
+          "who": "non-resident",
+          "duration": "1 day",
+          "price": 27.04,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Non-resident 3-day",
+          "who": "non-resident",
+          "duration": "3 days",
+          "price": 52,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Non-resident annual",
+          "who": "non-resident",
+          "duration": "365 days",
+          "price": 76.96,
+          "currency": "USD",
+          "water": "freshwater"
+        }
+      ],
+      "extras": [],
+      "saltwater": null,
+      "guidedTrips": null,
+      "keyRules": [
+        "Carry the licence and show it on request; a mobile copy is accepted.",
+        "Public-access leased ponds can require a licence.",
+        "A one-day licence can count toward an annual licence upgrade."
+      ],
+      "howToBuy": "Use the Ohio Wildlife Licensing System or a licence sales outlet.",
+      "sources": [
+        {
+          "title": "Fishing licences and exemptions",
+          "url": "https://ohiodnr.gov/buy-and-apply/hunting-fishing-boating/fishing-resources/fishing-licenses"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Use the authority page to confirm the current online purchase link. Confirm whether a guided trip covers the client's licence."
+    },
+    {
+      "id": "us-oklahoma",
+      "name": "Oklahoma",
+      "country": "United States",
+      "region": "Oklahoma",
+      "authority": {
+        "name": "Oklahoma Department of Wildlife Conservation",
+        "url": "https://www.wildlifedepartment.com/licensing/regs/license-requirements"
+      },
+      "buyUrl": "https://gooutdoorsoklahoma.com/",
+      "summary": "Anglers aged 18 or older generally need a fishing licence. A Lake Texoma licence has its own boundary and is not valid below the dam.",
+      "whoNeedsOne": [
+        "Anglers aged 18 or older who take, attempt to take, or possess aquatic organisms."
+      ],
+      "exemptions": [
+        "Children under 18 need no general fishing licence."
+      ],
+      "options": [
+        {
+          "name": "Non-resident 1-day",
+          "who": "non-resident",
+          "duration": "Selected day, ending at midnight",
+          "price": 26,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Non-resident annual",
+          "who": "non-resident",
+          "duration": "365 days",
+          "price": 81,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Lake Texoma",
+          "who": "any",
+          "duration": "January 1–December 31",
+          "price": 12,
+          "currency": "USD",
+          "water": "freshwater"
+        }
+      ],
+      "extras": [
+        {
+          "name": "Land Access Permit",
+          "when": "Required on specified WMAs and Oklahoma Land Access Program areas unless exempt.",
+          "price": null,
+          "currency": "USD"
+        }
+      ],
+      "saltwater": null,
+      "guidedTrips": null,
+      "keyRules": [
+        "Carry the licence or exemption evidence and identification; electronic licences are allowed.",
+        "In designated trout areas during trout season, use only one rod and reel or pole and line.",
+        "A retained trout cannot later be released."
+      ],
+      "howToBuy": "Use the department's official licence purchase service.",
+      "sources": [
+        {
+          "title": "Licence requirements",
+          "url": "https://www.wildlifedepartment.com/licensing/regs/license-requirements"
+        },
+        {
+          "title": "Licence fees",
+          "url": "https://wildlifedepartment.com/licensing/regs/license-fees"
+        },
+        {
+          "title": "Trout regulations",
+          "url": "https://www.wildlifedepartment.com/fishing/regs/trout-regulations"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Confirm land-access permit prices, local fishing permits, and guide coverage."
+    },
+    {
+      "id": "us-oregon",
+      "name": "Oregon",
+      "country": "United States",
+      "region": "Oregon",
+      "authority": {
+        "name": "Oregon Department of Fish and Wildlife",
+        "url": "https://myodfw.com/articles/how-buy-oregon-fishing-license"
+      },
+      "buyUrl": "https://odfw.huntfishoregon.com/login",
+      "summary": "Anglers aged 12 or older need a fishing licence. In 2026, most ocean finfish trips also need the new Ocean Endorsement.",
+      "whoNeedsOne": [
+        "Residents and non-residents aged 12 or older."
+      ],
+      "exemptions": [
+        "Children under 12 need no base angling licence; species tags can still apply."
+      ],
+      "options": [
+        {
+          "name": "One-day angling and shellfish",
+          "who": "any",
+          "duration": "1 day",
+          "price": 29,
+          "currency": "USD",
+          "water": "both"
+        },
+        {
+          "name": "Three-day angling",
+          "who": "any",
+          "duration": "3 days",
+          "price": 68,
+          "currency": "USD",
+          "water": "both"
+        },
+        {
+          "name": "Non-resident annual angling",
+          "who": "non-resident",
+          "duration": "Calendar year",
+          "price": 138,
+          "currency": "USD",
+          "water": "both"
+        }
+      ],
+      "extras": [
+        {
+          "name": "Annual Ocean Endorsement",
+          "when": "Required for ocean finfish fishing, with salmon/steelhead-only and other stated exemptions.",
+          "price": 9,
+          "currency": "USD"
+        },
+        {
+          "name": "Non-resident Combined Angling Tag",
+          "when": "Required for the covered salmon, steelhead, sturgeon and halibut activities; daily-licence provisions differ.",
+          "price": 89,
+          "currency": "USD"
+        },
+        {
+          "name": "Columbia River Basin Endorsement",
+          "when": "Required for covered salmon, steelhead and sturgeon trips in the basin.",
+          "price": null,
+          "currency": "USD"
+        }
+      ],
+      "saltwater": "The base angling licence covers finfish in both water types. Shellfish have separate coverage, and the Ocean Endorsement can apply.",
+      "guidedTrips": null,
+      "keyRules": [
+        "Ocean fishing from beaches and jetties can require the endorsement.",
+        "Keeping other marine finfish removes the salmon/steelhead-only endorsement exemption."
+      ],
+      "howToBuy": "Use Hunt Fish Oregon, the MyODFW app, licence agents, or ODFW sales offices.",
+      "sources": [
+        {
+          "title": "Buy an Oregon fishing licence",
+          "url": "https://myodfw.com/articles/how-buy-oregon-fishing-license"
+        },
+        {
+          "title": "2026 fishing regulations",
+          "url": "https://myodfw.com/sites/default/files/2025-11/26_Fish_regs.pdf"
+        },
+        {
+          "title": "Ocean Endorsement",
+          "url": "https://myodfw.com/articles/ocean-endorsement"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Confirm tagging, regional steelhead fees, Columbia endorsement prices, and charter requirements for the selected licence."
+    },
+    {
+      "id": "us-pennsylvania",
+      "name": "Pennsylvania",
+      "country": "United States",
+      "region": "Pennsylvania",
+      "authority": {
+        "name": "Pennsylvania Fish and Boat Commission",
+        "url": "https://www.pa.gov/agencies/fishandboat/fishing/buy-fishing-license-permit"
+      },
+      "buyUrl": null,
+      "summary": "Anglers aged 16 or older need a fishing licence. The one-day tourist licence includes trout and Lake Erie permits but is invalid March 15–April 30.",
+      "whoNeedsOne": [
+        "Residents and visitors aged 16 or older, unless exempt."
+      ],
+      "exemptions": [
+        "Children under 16; special mentored youth events can require a youth permit."
+      ],
+      "options": [
+        {
+          "name": "Non-resident 1-day tourist",
+          "who": "non-resident",
+          "duration": "1 day; unavailable March 15–April 30",
+          "price": 31.97,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Non-resident 3-day tourist",
+          "who": "non-resident",
+          "duration": "3 days",
+          "price": 31.97,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Non-resident 7-day tourist",
+          "who": "non-resident",
+          "duration": "7 days",
+          "price": 39.47,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Non-resident annual",
+          "who": "non-resident",
+          "duration": "2026 licence year",
+          "price": 60.97,
+          "currency": "USD",
+          "water": "freshwater"
+        }
+      ],
+      "extras": [
+        {
+          "name": "Trout Permit",
+          "when": "Required for trout fishing unless exempt or included in the selected licence.",
+          "price": 14.97,
+          "currency": "USD"
+        },
+        {
+          "name": "Lake Erie Permit",
+          "when": "Required for Lake Erie, Presque Isle Bay, and their tributaries, unless exempt or included.",
+          "price": 9.97,
+          "currency": "USD"
+        },
+        {
+          "name": "Combination Trout/Lake Erie Permit",
+          "when": "Combined coverage when both permits are needed.",
+          "price": 20.97,
+          "currency": "USD"
+        }
+      ],
+      "saltwater": null,
+      "guidedTrips": null,
+      "keyRules": [
+        "The one-day tourist licence includes both named permits.",
+        "Listed prices include the issuing-agent and transaction fees."
+      ],
+      "howToBuy": "Use the PFBC online purchase link or a fishing licence issuing agent.",
+      "sources": [
+        {
+          "title": "2026 licences and permits",
+          "url": "https://www.pa.gov/agencies/fishandboat/fishing/buy-fishing-license-permit"
+        },
+        {
+          "title": "Licence requirement",
+          "url": "https://www.pa.gov/services/fishandboat/buy-a-fishing-license"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Use the authority page to confirm the current online purchase link. Confirm whether a guided trip covers the client's licence."
+    },
+    {
+      "id": "us-rhode-island",
+      "name": "Rhode Island",
+      "country": "United States",
+      "region": "Rhode Island",
+      "authority": {
+        "name": "Rhode Island Department of Environmental Management",
+        "url": "https://dem.ri.gov/natural-resources-bureau/natural-resources-divisions/fish-wildlife/freshwater-fishing/licenses-0"
+      },
+      "buyUrl": "https://rio.ri.gov/",
+      "summary": "Freshwater anglers need a licence from age 15; marine anglers generally need one from age 16. The two licences have different annual expiry dates.",
+      "whoNeedsOne": [
+        "Freshwater anglers aged 15 or older.",
+        "Marine finfish anglers and spearfishers aged 16 or older, unless exempt."
+      ],
+      "exemptions": [
+        "Children under 15 in freshwater and under 16 in saltwater.",
+        "Marine anglers on licensed party or charter boats."
+      ],
+      "options": [
+        {
+          "name": "Non-resident freshwater 3-day",
+          "who": "non-resident",
+          "duration": "3 consecutive days",
+          "price": 20,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Non-resident freshwater annual",
+          "who": "non-resident",
+          "duration": "March 1 through the last day of February",
+          "price": 41,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Saltwater 7-day",
+          "who": "any",
+          "duration": "7 days",
+          "price": 5,
+          "currency": "USD",
+          "water": "saltwater"
+        },
+        {
+          "name": "Non-resident saltwater annual",
+          "who": "non-resident",
+          "duration": "Through December 31",
+          "price": 10,
+          "currency": "USD",
+          "water": "saltwater"
+        }
+      ],
+      "extras": [
+        {
+          "name": "Trout Conservation Stamp",
+          "when": "Required to keep trout, salmon or char, or fish designated catch-and-release or fly-only areas, unless exempt.",
+          "price": 6,
+          "currency": "USD"
+        }
+      ],
+      "saltwater": "Separate marine coverage applies. DEM also recognises specified reciprocal licences and NOAA registration.",
+      "guidedTrips": "Licensed party and charter boats cover the individual marine licence requirement.",
+      "keyRules": [
+        "Non-residents may not harvest blue crabs.",
+        "Non-residents need separate shellfish coverage; lobster also has a separate licence."
+      ],
+      "howToBuy": "Use Rhode Island Outdoors, participating vendors, or town clerks for eligible products.",
+      "sources": [
+        {
+          "title": "Freshwater licence fees",
+          "url": "https://dem.ri.gov/natural-resources-bureau/natural-resources-divisions/fish-wildlife/freshwater-fishing/licenses-0"
+        },
+        {
+          "title": "Marine licence rules",
+          "url": "https://dem.ri.gov/office-divisions/natural-resources-bureau/natural-resources-divisions/marine-fisheries-1"
+        },
+        {
+          "title": "2026–2027 freshwater guide",
+          "url": "https://dem.ri.gov/sites/g/files/xkgbur861/files/2026-03/fw-abstract.pdf"
+        }
+      ],
+      "checked": "2026-11-11"
+    },
+    {
+      "id": "us-south-carolina",
+      "name": "South Carolina",
+      "country": "United States",
+      "region": "South Carolina",
+      "authority": {
+        "name": "South Carolina Department of Natural Resources",
+        "url": "https://www.dnr.sc.gov/licenses/pricingnonresident.html"
+      },
+      "buyUrl": null,
+      "summary": "Anglers aged 16 or older generally need freshwater or saltwater coverage. A licence is required from the beach unless an exemption applies.",
+      "whoNeedsOne": [
+        "Recreational anglers aged 16 or older, unless exempt."
+      ],
+      "exemptions": [
+        "Children under 16 for ordinary recreational angling.",
+        "Saltwater anglers on licensed public piers or hired licensed charter vessels."
+      ],
+      "options": [
+        {
+          "name": "Non-resident freshwater 14-day",
+          "who": "non-resident",
+          "duration": "14 consecutive days",
+          "price": 11,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Non-resident freshwater annual",
+          "who": "non-resident",
+          "duration": "1 year",
+          "price": 35,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Non-resident saltwater 1-day",
+          "who": "non-resident",
+          "duration": "1 day",
+          "price": 10,
+          "currency": "USD",
+          "water": "saltwater"
+        },
+        {
+          "name": "Non-resident saltwater 7-day",
+          "who": "non-resident",
+          "duration": "7 consecutive days",
+          "price": 35,
+          "currency": "USD",
+          "water": "saltwater"
+        },
+        {
+          "name": "Non-resident saltwater annual",
+          "who": "non-resident",
+          "duration": "1 year",
+          "price": 75,
+          "currency": "USD",
+          "water": "saltwater"
+        }
+      ],
+      "extras": [
+        {
+          "name": "Shrimp baiting licence and tags",
+          "when": "Required for shrimp baiting during the authorised season.",
+          "price": 500,
+          "currency": "USD"
+        }
+      ],
+      "saltwater": "Separate coverage applies. The boundary is usually US 17, but named exceptions change it.",
+      "guidedTrips": "A hired SCDNR-licensed saltwater charter vessel covers clients' individual saltwater licence requirement.",
+      "keyRules": [
+        "Carry the required licence while you fish.",
+        "Nongame fishing devices can require extra permits, including for children."
+      ],
+      "howToBuy": "Use the SCDNR online licence service or a licence agent.",
+      "sources": [
+        {
+          "title": "Non-resident prices",
+          "url": "https://www.dnr.sc.gov/licenses/pricingnonresident.html"
+        },
+        {
+          "title": "Licence questions",
+          "url": "https://www.dnr.sc.gov/licenses/faqs.html"
+        },
+        {
+          "title": "General licence requirements",
+          "url": "https://www.dnr.sc.gov/licenses/genlicense.html"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Use the authority page to confirm the current online purchase link."
+    },
+    {
+      "id": "us-south-dakota",
+      "name": "South Dakota",
+      "country": "United States",
+      "region": "South Dakota",
+      "authority": {
+        "name": "South Dakota Game, Fish and Parks",
+        "url": "https://gfp.sd.gov/license-types/"
+      },
+      "buyUrl": "https://license.gooutdoorssouthdakota.com/Licensing/CustomerLookup.aspx",
+      "summary": "Anglers aged 18 or older need a fishing licence. A visitor's three-day licence also needs a Habitat Stamp, while the one-day licence does not.",
+      "whoNeedsOne": [
+        "Residents and non-residents aged 18 or older."
+      ],
+      "exemptions": [
+        "Children under 18 can fish and keep their own limit without a licence."
+      ],
+      "options": [
+        {
+          "name": "Non-resident 1-day",
+          "who": "non-resident",
+          "duration": "Selected calendar day",
+          "price": 26,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Non-resident 3-day",
+          "who": "non-resident",
+          "duration": "3 consecutive calendar days",
+          "price": 45,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Non-resident annual",
+          "who": "non-resident",
+          "duration": "December 15, 2025–January 31, 2027",
+          "price": 80,
+          "currency": "USD",
+          "water": "freshwater"
+        }
+      ],
+      "extras": [
+        {
+          "name": "Non-resident Habitat Stamp",
+          "when": "Required once per licence year from age 18 with most licences; one-day fishing licences are exempt.",
+          "price": 25,
+          "currency": "USD"
+        }
+      ],
+      "saltwater": null,
+      "guidedTrips": null,
+      "keyRules": [
+        "The one-day licence ends at midnight.",
+        "Licences cannot be transferred or refunded.",
+        "The listed prices exclude agent fees."
+      ],
+      "howToBuy": "Use the GFP online licence service, retail stores, bait shops, or participating county treasurers.",
+      "sources": [
+        {
+          "title": "Licence types and costs",
+          "url": "https://gfp.sd.gov/license-types/"
+        },
+        {
+          "title": "2026 fishing handbook",
+          "url": "https://gfp.sd.gov/UserDocs/nav/FishingHandbook_2026.pdf"
+        },
+        {
+          "title": "General licence requirements",
+          "url": "https://gfp.sd.gov/fish-requirements/"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Confirm whether a guided trip covers the client's licence."
+    },
+    {
+      "id": "us-tennessee",
+      "name": "Tennessee",
+      "country": "United States",
+      "region": "Tennessee",
+      "authority": {
+        "name": "Tennessee Wildlife Resources Agency",
+        "url": "https://www.tn.gov/twra/license-sales.html"
+      },
+      "buyUrl": "https://gooutdoorstennessee.com/",
+      "summary": "Visitors aged 13 or older need a fishing licence. Adult visitors who target trout need an all-species licence, not the cheaper no-trout option.",
+      "whoNeedsOne": [
+        "Non-residents aged 13 or older, unless exempt."
+      ],
+      "exemptions": [
+        "Children aged 12 or younger need no base licence; special permits can still apply."
+      ],
+      "options": [
+        {
+          "name": "Non-resident junior hunt/fish, ages 13–15",
+          "who": "non-resident",
+          "duration": "365 days",
+          "price": 10,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Non-resident 3-day, no trout",
+          "who": "non-resident",
+          "duration": "3 days",
+          "price": 20,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Non-resident 3-day, all species",
+          "who": "non-resident",
+          "duration": "3 days",
+          "price": 40,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Non-resident 10-day, no trout",
+          "who": "non-resident",
+          "duration": "10 days",
+          "price": 30,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Non-resident 10-day, all species",
+          "who": "non-resident",
+          "duration": "10 days",
+          "price": 61,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Non-resident annual, no trout",
+          "who": "non-resident",
+          "duration": "365 days",
+          "price": 49,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Non-resident annual, all species",
+          "who": "non-resident",
+          "duration": "365 days",
+          "price": 98,
+          "currency": "USD",
+          "water": "freshwater"
+        }
+      ],
+      "extras": [
+        {
+          "name": "Tellico-Citico trout permit",
+          "when": "Required for all ages March 1–August 15 in the specified waters; daily permit.",
+          "price": 6,
+          "currency": "USD"
+        }
+      ],
+      "saltwater": null,
+      "guidedTrips": null,
+      "keyRules": [
+        "Special-water permits do not replace the base licence.",
+        "Processing fees apply to purchases."
+      ],
+      "howToBuy": "Use Go Outdoors Tennessee, a TWRA licence agent, or a regional office.",
+      "sources": [
+        {
+          "title": "TWRA licence types and fees",
+          "url": "https://www.tn.gov/twra/license-sales.html"
+        },
+        {
+          "title": "Official licence-fee rules",
+          "url": "https://publications.tnsosfiles.com/rules/1660/1660-01/1660-01-28.20230619.pdf"
+        },
+        {
+          "title": "Withdrawal of 2025 fee increase",
+          "url": "https://www.extglb.tn.gov/twra/news/2025/6/21/twra-withdraws-license-fee-increase-legislature-commits-to-alternative-funding.html"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Confirm special-water permits and guide coverage. Check the purchase service for the effective date of future fee changes."
+    },
+    {
+      "id": "us-texas",
+      "name": "Texas",
+      "country": "United States",
+      "region": "Texas",
+      "authority": {
+        "name": "Texas Parks and Wildlife Department",
+        "url": "https://tpwd.texas.gov/regulations/outdoor-annual/licenses/fishing-licenses-stamps-tags-packages/fishing-licenses-and-packages"
+      },
+      "buyUrl": "https://www.txfgsales.com/",
+      "summary": "Visitors aged 17 or older generally need a fishing licence and the correct water endorsement. Foreign residents must buy in person under the August 2026 identification rules.",
+      "whoNeedsOne": [
+        "Non-residents aged 17 or older who fish in public waters, unless exempt."
+      ],
+      "exemptions": [
+        "Children under 17.",
+        "Oklahoma residents aged 65 or older.",
+        "Louisiana residents aged 65 or older with a valid Louisiana recreational fishing licence."
+      ],
+      "options": [
+        {
+          "name": "Non-resident one-day all-water",
+          "who": "non-resident",
+          "duration": "Selected day",
+          "price": 16,
+          "currency": "USD",
+          "water": "both"
+        },
+        {
+          "name": "Non-resident freshwater package",
+          "who": "non-resident",
+          "duration": "Licence year ending August 31",
+          "price": 58,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Non-resident saltwater package",
+          "who": "non-resident",
+          "duration": "Licence year ending August 31",
+          "price": 63,
+          "currency": "USD",
+          "water": "saltwater"
+        },
+        {
+          "name": "Non-resident all-water package",
+          "who": "non-resident",
+          "duration": "Licence year ending August 31",
+          "price": 68,
+          "currency": "USD",
+          "water": "both"
+        }
+      ],
+      "extras": [
+        {
+          "name": "Freshwater or saltwater endorsement",
+          "when": "Included in the matching package; a one-day all-water licence needs no separate endorsement.",
+          "price": null,
+          "currency": "USD"
+        }
+      ],
+      "saltwater": "Choose a saltwater or all-water package. The freshwater package alone does not provide saltwater coverage.",
+      "guidedTrips": null,
+      "keyRules": [
+        "Annual visitor packages end August 31.",
+        "Since August 3, 2026, each buyer aged 17 or older must meet the individual ID-validation rules.",
+        "Foreign residents cannot buy online."
+      ],
+      "howToBuy": "Buy online after ID validation or in person at a licence retailer. Foreign residents must use an in-person seller.",
+      "sources": [
+        {
+          "title": "Fishing licences and packages",
+          "url": "https://tpwd.texas.gov/regulations/outdoor-annual/licenses/fishing-licenses-stamps-tags-packages/fishing-licenses-and-packages"
+        },
+        {
+          "title": "Purchase identification requirements",
+          "url": "https://tpwd.texas.gov/regulations/outdoor-annual/licenses/purchase-requirements"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Confirm whether a guided trip covers the client's licence."
+    },
+    {
+      "id": "us-utah",
+      "name": "Utah",
+      "country": "United States",
+      "region": "Utah",
+      "authority": {
+        "name": "Utah Division of Wildlife Resources",
+        "url": "https://wildlife.utah.gov/fees"
+      },
+      "buyUrl": null,
+      "summary": "Anglers aged 12 or older need a fishing licence. The reduced senior price applies to residents, not visiting seniors.",
+      "whoNeedsOne": [
+        "Residents and non-residents aged 12 or older."
+      ],
+      "exemptions": [
+        "Children aged 11 or younger."
+      ],
+      "options": [
+        {
+          "name": "Non-resident 3-day",
+          "who": "non-resident",
+          "duration": "3 days",
+          "price": 44,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Non-resident 7-day",
+          "who": "non-resident",
+          "duration": "7 days",
+          "price": 91,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Non-resident adult annual",
+          "who": "non-resident",
+          "duration": "365 days",
+          "price": 120,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Non-resident youth annual, ages 12–13",
+          "who": "non-resident",
+          "duration": "365 days",
+          "price": 18,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Non-resident youth annual, ages 14–17",
+          "who": "non-resident",
+          "duration": "365 days",
+          "price": 44,
+          "currency": "USD",
+          "water": "freshwater"
+        }
+      ],
+      "extras": [
+        {
+          "name": "Non-resident setline permit",
+          "when": "Required to use a setline, with a valid fishing licence.",
+          "price": 48,
+          "currency": "USD"
+        }
+      ],
+      "saltwater": null,
+      "guidedTrips": null,
+      "keyRules": [
+        "The setline permit is valid only with the fishing licence.",
+        "Online and in-person card payments have a 2.2 percent transaction fee."
+      ],
+      "howToBuy": "Use DWR's online licence service or an in-person licence seller.",
+      "sources": [
+        {
+          "title": "Licence and permit fees",
+          "url": "https://wildlife.utah.gov/fees"
+        },
+        {
+          "title": "2026 fishing guidebook",
+          "url": "https://wildlife.utah.gov/guidebooks/fishing_guidebook_2026.pdf"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Confirm boundary-water coverage and guide requirements before the trip. Use the authority page to confirm the current online purchase link."
+    },
+    {
+      "id": "us-vermont",
+      "name": "Vermont",
+      "country": "United States",
+      "region": "Vermont",
+      "authority": {
+        "name": "Vermont Fish and Wildlife Department",
+        "url": "https://vtfishandwildlife.com/licenses-and-lotteries/license-center/license-buying-faqs"
+      },
+      "buyUrl": "https://www.vtfwdsales.com/online/cid_entry.php",
+      "summary": "Anglers aged 15 or older need a fishing licence. A short-term licence covers consecutive dates, not separate days across a trip.",
+      "whoNeedsOne": [
+        "Residents and visitors aged 15 or older."
+      ],
+      "exemptions": [
+        "Children under 15."
+      ],
+      "options": [
+        {
+          "name": "Non-resident 1-day",
+          "who": "non-resident",
+          "duration": "1 day",
+          "price": 21,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Non-resident 3-day",
+          "who": "non-resident",
+          "duration": "3 consecutive days",
+          "price": 23,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Non-resident 7-day",
+          "who": "non-resident",
+          "duration": "7 consecutive days",
+          "price": 31,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Non-resident annual",
+          "who": "non-resident",
+          "duration": "Annual",
+          "price": 54,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Non-resident youth, ages 15–17",
+          "who": "non-resident",
+          "duration": "Annual",
+          "price": 15,
+          "currency": "USD",
+          "water": "freshwater"
+        }
+      ],
+      "extras": [],
+      "saltwater": null,
+      "guidedTrips": null,
+      "keyRules": [
+        "All short-term licence dates are inclusive and consecutive.",
+        "A parent or guardian must sign for a licence buyer aged 15 or younger."
+      ],
+      "howToBuy": "Buy online, at participating licence agents, or at department district offices.",
+      "sources": [
+        {
+          "title": "Fishing licence options",
+          "url": "https://www.vtfishandwildlife.com/fishvt"
+        },
+        {
+          "title": "Licence purchase questions",
+          "url": "https://vtfishandwildlife.com/licenses-and-lotteries/license-center/license-buying-faqs"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Confirm whether a guided trip covers the client's licence."
+    },
+    {
+      "id": "us-virginia",
+      "name": "Virginia",
+      "country": "United States",
+      "region": "Virginia",
+      "authority": {
+        "name": "Virginia Department of Wildlife Resources; Marine Resources Commission",
+        "url": "https://dwr.virginia.gov/fishing/regulations/licenses/"
+      },
+      "buyUrl": "https://gooutdoorsvirginia.com/",
+      "summary": "Visitors need the correct freshwater or saltwater coverage unless exempt. Designated stocked trout waters can require an additional trout licence.",
+      "whoNeedsOne": [
+        "Anglers aged 16 or older, unless exempt."
+      ],
+      "exemptions": [
+        "Children under 16 need no fishing or trout licence.",
+        "Anglers aged 65 or older need no saltwater licence, but FIP registration requirements remain."
+      ],
+      "options": [
+        {
+          "name": "Non-resident freshwater 1-day",
+          "who": "non-resident",
+          "duration": "1 day",
+          "price": 20,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Non-resident freshwater 5-day",
+          "who": "non-resident",
+          "duration": "5 consecutive days",
+          "price": 36,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Non-resident fresh/saltwater 5-day",
+          "who": "non-resident",
+          "duration": "5 consecutive days",
+          "price": 46,
+          "currency": "USD",
+          "water": "both"
+        },
+        {
+          "name": "Non-resident freshwater annual",
+          "who": "non-resident",
+          "duration": "Annual",
+          "price": 72,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Non-resident fresh/saltwater annual",
+          "who": "non-resident",
+          "duration": "Annual",
+          "price": 96,
+          "currency": "USD",
+          "water": "both"
+        }
+      ],
+      "extras": [
+        {
+          "name": "Non-resident stocked-trout licence",
+          "when": "Required when designated stocked trout-water rules apply, in addition to freshwater coverage.",
+          "price": 48,
+          "currency": "USD"
+        },
+        {
+          "name": "Fisherman Identification Program registration",
+          "when": "Applies to specified saltwater anglers exempt from a licence.",
+          "price": null,
+          "currency": "USD"
+        }
+      ],
+      "saltwater": "Separate saltwater coverage or a combined licence is available. Licence-exempt anglers can still need FIP registration.",
+      "guidedTrips": "A licensed saltwater charter boat, headboat, or pier covers the individual saltwater licence requirement.",
+      "keyRules": [
+        "A designated trout-area daily-use permit can be required.",
+        "Carry the licence and show it on request; an electronic copy is accepted."
+      ],
+      "howToBuy": "Use Go Outdoors Virginia, its mobile app, licence agents, DWR headquarters, or 804-367-1000.",
+      "sources": [
+        {
+          "title": "Fishing licence information and fees",
+          "url": "https://dwr.virginia.gov/fishing/regulations/licenses/"
+        },
+        {
+          "title": "Saltwater licence exemptions",
+          "url": "https://law.lis.virginia.gov/vacode/title28.2/chapter3/section28.2-302.5/"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Confirm trout-permit dates, FIP registration, and any special-area permit."
+    },
+    {
+      "id": "us-washington",
+      "name": "Washington",
+      "country": "United States",
+      "region": "Washington",
+      "authority": {
+        "name": "Washington Department of Fish and Wildlife",
+        "url": "https://wdfw.wa.gov/licenses/fishing/types-fees"
+      },
+      "buyUrl": null,
+      "summary": "Anglers aged 16 or older need the correct fishing licence. Children can still need catch record cards and species endorsements.",
+      "whoNeedsOne": [
+        "Anglers aged 16 or older.",
+        "Anglers of all ages who need a catch record card for their target species."
+      ],
+      "exemptions": [
+        "Anglers aged 15 or younger need no base fishing licence; catch records and some endorsements remain."
+      ],
+      "options": [
+        {
+          "name": "Non-resident 1-day combination",
+          "who": "non-resident",
+          "duration": "1 day",
+          "price": 27.05,
+          "currency": "USD",
+          "water": "both"
+        },
+        {
+          "name": "Non-resident 3-day combination",
+          "who": "non-resident",
+          "duration": "3 consecutive days",
+          "price": 48.3,
+          "currency": "USD",
+          "water": "both"
+        },
+        {
+          "name": "Non-resident annual freshwater",
+          "who": "non-resident",
+          "duration": "Annual",
+          "price": 115.85,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Non-resident annual saltwater",
+          "who": "non-resident",
+          "duration": "Annual",
+          "price": 81.7,
+          "currency": "USD",
+          "water": "saltwater"
+        },
+        {
+          "name": "Non-resident annual combination",
+          "who": "non-resident",
+          "duration": "Annual",
+          "price": 170,
+          "currency": "USD",
+          "water": "both"
+        }
+      ],
+      "extras": [
+        {
+          "name": "Fish catch record card",
+          "when": "Required for covered species such as salmon, steelhead and sturgeon; separate halibut charges can apply.",
+          "price": 0,
+          "currency": "USD"
+        },
+        {
+          "name": "Columbia River salmon and steelhead endorsement",
+          "when": "Required from age 15 for salmon or steelhead in the Columbia and its tributaries; youth rates differ.",
+          "price": null,
+          "currency": "USD"
+        },
+        {
+          "name": "Puget Sound crab endorsement",
+          "when": "Required for Puget Sound Dungeness crab.",
+          "price": null,
+          "currency": "USD"
+        }
+      ],
+      "saltwater": "Choose saltwater or combination coverage; shellfish and crab can need additional coverage.",
+      "guidedTrips": null,
+      "keyRules": [
+        "Temporary licences do not replace required catch record cards.",
+        "Short-term combination licences require consecutive dates."
+      ],
+      "howToBuy": "Use MyWDFW or Fish Washington mobile licensing, online sales, licence dealers, or 360-902-2464.",
+      "sources": [
+        {
+          "title": "2026 licence types and fees",
+          "url": "https://wdfw.wa.gov/licenses/fishing/types-fees"
+        },
+        {
+          "title": "Fishing and shellfishing licences",
+          "url": "https://wdfw.wa.gov/licenses/fishing"
+        },
+        {
+          "title": "Endorsements",
+          "url": "https://wdfw.wa.gov/licenses/fishing/endorsements"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Confirm catch-record returns, endorsement fees for your age and term, emergency closures, and guide coverage. Use the authority page to confirm the current online purchase link."
+    },
+    {
+      "id": "us-west-virginia",
+      "name": "West Virginia",
+      "country": "United States",
+      "region": "West Virginia",
+      "authority": {
+        "name": "West Virginia Division of Natural Resources",
+        "url": "https://wvdnr.gov/wp-content/uploads/2026/02/Pub_Regs_Fishing_2026_DNR_WILD_pp.pdf"
+      },
+      "buyUrl": null,
+      "summary": "Visitors aged 15 or older need fishing coverage. The low daily licence price excludes the mandatory Conservation/Law Enforcement Stamp.",
+      "whoNeedsOne": [
+        "Non-residents aged 15 or older."
+      ],
+      "exemptions": [
+        "Children under 15 need no general fishing licence."
+      ],
+      "options": [
+        {
+          "name": "Non-resident 1-day, Class LL",
+          "who": "non-resident",
+          "duration": "1 day",
+          "price": 3,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Non-resident annual, Class F",
+          "who": "non-resident",
+          "duration": "Annual",
+          "price": 37,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Non-resident junior sportsman, ages 15–17",
+          "who": "non-resident",
+          "duration": "Annual",
+          "price": 16,
+          "currency": "USD",
+          "water": "freshwater"
+        }
+      ],
+      "extras": [
+        {
+          "name": "Conservation/Law Enforcement Stamp, CS/LE",
+          "when": "Required with non-resident Class F, LL and XXJ licences.",
+          "price": 13,
+          "currency": "USD"
+        },
+        {
+          "name": "Non-resident trout stamp, OO",
+          "when": "Required for licensed anglers who fish for trout.",
+          "price": 16,
+          "currency": "USD"
+        },
+        {
+          "name": "National Forest stamp, I",
+          "when": "Required on National Forests with the specified non-resident fishing licences.",
+          "price": 2,
+          "currency": "USD"
+        }
+      ],
+      "saltwater": null,
+      "guidedTrips": null,
+      "keyRules": [
+        "A one-day licence still needs the CS/LE stamp.",
+        "National Forest coverage is separate from trout and base fishing coverage."
+      ],
+      "howToBuy": "Buy online through WVDNR or through a licence agent or DNR office.",
+      "sources": [
+        {
+          "title": "2026 fishing regulations and licensing",
+          "url": "https://wvdnr.gov/wp-content/uploads/2026/02/Pub_Regs_Fishing_2026_DNR_WILD_pp.pdf"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Use the authority page to confirm the current online purchase link. Confirm whether a guided trip covers the client's licence."
+    },
+    {
+      "id": "us-wisconsin",
+      "name": "Wisconsin",
+      "country": "United States",
+      "region": "Wisconsin",
+      "authority": {
+        "name": "Wisconsin Department of Natural Resources",
+        "url": "https://dnr.wisconsin.gov/topic/Fishing/outreach/FishingLicenses"
+      },
+      "buyUrl": "https://gowild.wi.gov/",
+      "summary": "Most anglers aged 16 or older need a fishing licence. A normal one-day licence still needs a trout or salmon stamp for those species.",
+      "whoNeedsOne": [
+        "Residents and visitors aged 16 or older, unless exempt."
+      ],
+      "exemptions": [
+        "Children aged 15 or younger."
+      ],
+      "options": [
+        {
+          "name": "Non-resident 1-day",
+          "who": "non-resident",
+          "duration": "Selected day, ending at midnight",
+          "price": 15,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Non-resident 4-day",
+          "who": "non-resident",
+          "duration": "4 days",
+          "price": 29,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Non-resident 15-day",
+          "who": "non-resident",
+          "duration": "15 days",
+          "price": 33,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Non-resident annual",
+          "who": "non-resident",
+          "duration": "Annual",
+          "price": 55,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Great Lakes 2-day, with salmon/trout stamp",
+          "who": "any",
+          "duration": "2 days",
+          "price": 14,
+          "currency": "USD",
+          "water": "freshwater"
+        }
+      ],
+      "extras": [
+        {
+          "name": "Inland Trout Stamp",
+          "when": "Required for inland trout fishing unless exempt.",
+          "price": 10,
+          "currency": "USD"
+        },
+        {
+          "name": "Great Lakes Salmon/Trout Stamp",
+          "when": "Required for Great Lakes trout or salmon unless exempt or included in the licence.",
+          "price": 10,
+          "currency": "USD"
+        }
+      ],
+      "saltwater": null,
+      "guidedTrips": null,
+      "keyRules": [
+        "The two-day Great Lakes licence includes its salmon/trout stamp.",
+        "Sturgeon harvest uses separate licences and season rules."
+      ],
+      "howToBuy": "Use Go Wild online or a DNR licence vendor.",
+      "sources": [
+        {
+          "title": "Fishing licences",
+          "url": "https://dnr.wisconsin.gov/topic/Fishing/outreach/FishingLicenses"
+        },
+        {
+          "title": "Non-resident licence prices",
+          "url": "https://dnr.wisconsin.gov/GoWild/nonresident.html"
+        },
+        {
+          "title": "One-day licence rules",
+          "url": "https://dnr.wisconsin.gov/topic/Fishing/outreach/onedaylicense"
+        },
+        {
+          "title": "Go Wild purchase guidance",
+          "url": "https://dnr.wisconsin.gov/sites/default/files/topic/GoWild/tutorials/SpousalAndFamilyFishingLicenses.pdf"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Confirm whether a guided trip covers the client's licence."
+    },
+    {
+      "id": "us-wyoming",
+      "name": "Wyoming",
+      "country": "United States",
+      "region": "Wyoming",
+      "authority": {
+        "name": "Wyoming Game and Fish Department",
+        "url": "https://wgfd.wyo.gov/licenses-applications/license-fee-list"
+      },
+      "buyUrl": null,
+      "summary": "Anglers aged 14 or older generally need a fishing licence. A state licence does not provide Yellowstone National Park fishing coverage.",
+      "whoNeedsOne": [
+        "Residents and visitors aged 14 or older, unless exempt."
+      ],
+      "exemptions": [
+        "Non-residents under 14 can fish with an adult who holds a valid Wyoming fishing licence; catch-limit conditions apply."
+      ],
+      "options": [
+        {
+          "name": "Non-resident daily",
+          "who": "non-resident",
+          "duration": "1 day",
+          "price": 14,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Non-resident 5-day",
+          "who": "non-resident",
+          "duration": "5 consecutive days",
+          "price": 56,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Non-resident annual",
+          "who": "non-resident",
+          "duration": "12 months",
+          "price": 102,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Non-resident youth annual, under 18",
+          "who": "non-resident",
+          "duration": "12 months",
+          "price": 15,
+          "currency": "USD",
+          "water": "freshwater"
+        }
+      ],
+      "extras": [
+        {
+          "name": "Conservation Stamp",
+          "when": "Required with most annual fishing licences; daily licences have an exemption.",
+          "price": 21.5,
+          "currency": "USD"
+        },
+        {
+          "name": "Yellowstone National Park permit",
+          "when": "Required separately under park rules; see the federal record.",
+          "price": null,
+          "currency": "USD"
+        }
+      ],
+      "saltwater": null,
+      "guidedTrips": null,
+      "keyRules": [
+        "The annual licence lasts 12 months.",
+        "Yellowstone has separate fishing permit rules."
+      ],
+      "howToBuy": "Use the department's official licence purchase service.",
+      "sources": [
+        {
+          "title": "Licence fees",
+          "url": "https://wgfd.wyo.gov/licenses-applications/license-fee-list"
+        },
+        {
+          "title": "Fishing licence requirements",
+          "url": "https://wgfd.wyo.gov/media/31734/download?inline="
+        },
+        {
+          "title": "Daily and annual licence guidance",
+          "url": "https://wgfd.wyo.gov/Ask-Game-and-Fish/Keri%2C-should-I-buy-a-daily-or-annual-fishing-licen"
+        },
+        {
+          "title": "Yellowstone fishing permits",
+          "url": "https://www.nps.gov/yell/planyourvisit/fishing.htm"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Confirm the five-day Conservation Stamp exemption, child catch limits, tribal permits, and guide coverage. Use the authority page to confirm the current online purchase link."
+    },
+    {
+      "id": "us-federal",
+      "name": "US federal waters and national parks",
+      "country": "United States",
+      "region": null,
+      "authority": {
+        "name": "NOAA Fisheries and National Park Service",
+        "url": "https://www.fisheries.noaa.gov/permit/atlantic-highly-migratory-species-angling-permit-open-access"
+      },
+      "buyUrl": "https://hmspermits.noaa.gov/",
+      "summary": "Atlantic HMS trips require the appropriate vessel permit for tunas, billfish, swordfish, and sharks. National parks apply park-specific rules; Yellowstone needs its own permit instead of a state fishing licence.",
+      "whoNeedsOne": [
+        "Vessels that fish for covered Atlantic HMS species.",
+        "Yellowstone anglers aged 16 or older."
+      ],
+      "exemptions": [
+        "Yellowstone children aged 15 or younger may fish under a permitted adult's direct supervision or obtain a free signed child permit."
+      ],
+      "options": [
+        {
+          "name": "Atlantic HMS Angling vessel permit",
+          "who": "any",
+          "duration": "Annual renewal",
+          "price": 24,
+          "currency": "USD",
+          "water": "saltwater"
+        },
+        {
+          "name": "Yellowstone 3-day permit",
+          "who": "any",
+          "duration": "3 days",
+          "price": 40,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Yellowstone 7-day permit",
+          "who": "any",
+          "duration": "7 days",
+          "price": 55,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Yellowstone season permit",
+          "who": "any",
+          "duration": "Through December 31, 2026",
+          "price": 75,
+          "currency": "USD",
+          "water": "freshwater"
+        }
+      ],
+      "extras": [
+        {
+          "name": "HMS shark endorsement",
+          "when": "Required to fish for sharks under an HMS Angling or Charter/Headboat permit; training and a quiz apply.",
+          "price": null,
+          "currency": "USD"
+        }
+      ],
+      "saltwater": "Atlantic HMS permits concern the Atlantic, Gulf, and Caribbean management area. Check other federal fisheries and state landing requirements separately.",
+      "guidedTrips": "For-hire HMS trips use the vessel's HMS Charter/Headboat permit. Check each state's client licence rules and each park's permit rules.",
+      "keyRules": [
+        "HMS permits attach to the vessel and require annual renewal.",
+        "HMS Angling vessels cannot sell their catch.",
+        "Yellowstone prohibits felt-soled fishing footwear.",
+        "Yellowstone requires barbless hooks and lead-free artificial lures or flies.",
+        "Park closures and special rules can override otherwise applicable state rules."
+      ],
+      "howToBuy": "Buy HMS permits through NOAA's permit portal. Buy Yellowstone permits through Recreation.gov or local permit sellers.",
+      "sources": [
+        {
+          "title": "HMS Angling permit",
+          "url": "https://www.fisheries.noaa.gov/permit/atlantic-highly-migratory-species-angling-permit-open-access"
+        },
+        {
+          "title": "HMS vessel permits",
+          "url": "https://www.fisheries.noaa.gov/atlantic-highly-migratory-species/atlantic-highly-migratory-species-permits"
+        },
+        {
+          "title": "Yellowstone fishing",
+          "url": "https://www.nps.gov/yell/planyourvisit/fishing.htm"
+        },
+        {
+          "title": "2026 Yellowstone regulations",
+          "url": "https://www.nps.gov/yell/planyourvisit/upload/2026-Fishing-Regulations-digital.pdf"
+        },
+        {
+          "title": "How park rules work",
+          "url": "https://home.nps.gov/subjects/fishing/how-regulations-work.htm"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Confirm current HMS reporting, species closures, shark endorsement fees, and the specific park's permit rules."
+    }
+  ]
+}

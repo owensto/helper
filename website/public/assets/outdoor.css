@@ -3,3 +3,54 @@ body{background:var(--paper)}h1,h2,h3,h4{font-weight:700;letter-spacing:-.015em}
 @media(max-width:1050px){.header-inner .nav{gap:18px}.header-action{gap:12px}.wrap{width:calc(100% - 56px)}.water-story>img{height:460px}.outdoor-hero{min-height:580px}.world-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:900px){.nav{background:var(--paper);top:81px}.nav.open{display:flex}.mobile-menu{display:block}.mobile-plan{display:block!important}.plan-link{display:none}.header-action{margin-left:auto}.header-inner .nav{gap:0}.nav a{padding:14px 20px}.outdoor-hero-copy{padding-bottom:60px}.region-band{gap:35px}}
 @media(max-width:600px){.wrap{width:calc(100% - 40px)}.site-header{height:72px}.nav{top:71px}.brand{font-size:20px}.brand svg{width:29px;height:29px}.outdoor-hero{height:calc(86svh - 72px);min-height:560px;max-height:800px}.outdoor-hero>img{object-position:63% center}.hero-shade{background:linear-gradient(0deg,rgba(7,24,23,.6),transparent 85%)}.outdoor-hero-copy{padding-bottom:40px}.outdoor-hero h1{font-size:68px;line-height:.92}.outdoor-hero p{font-size:15px;max-width:26ch;margin:24px 0}.outdoor-intro{padding:72px 0}.outdoor-intro p{font-size:14px}.outdoor-intro h2{font-size:55px}.water-story>img{height:360px}.story-copy{display:block;padding:28px 0 60px}.story-copy h2{font-size:54px;margin-bottom:16px}.story-copy>div{width:100%}.story-copy p{font-size:15px;margin-bottom:14px}.section{padding:65px 0}.featured-trips{padding-top:10px}.section-head h2{font-size:47px}.world-grid{grid-template-columns:1fr;gap:38px}.world-card h3{font-size:32px}.region-band{grid-template-columns:1fr;padding:45px 0 70px;gap:20px}.region-band h2{font-size:47px}.region-band a{font-size:20px}body[data-page=home] .reel-grid{grid-auto-columns:72%;gap:18px}.collection-photo{height:250px}.page-intro{padding:38px 0}.page-intro h1{font-size:54px}.guide-landscape img{height:320px}.reel-grid{gap:35px 16px}.reel-card h3{font-size:25px}dialog{padding:45px 22px 28px}dialog h2{font-size:42px}dialog input{width:100%}.footer-top{gap:36px}.footer-desc{font-size:14px}}
+
+/* Shopping lists (src/shopping-lists.json) */
+.shop-items{list-style:none;margin:1.25rem 0 0;padding:0;display:grid;gap:.75rem}
+.shop-item{display:flex;gap:1rem;align-items:center;justify-content:space-between;padding:1rem 1.1rem;border:1px solid rgba(25,58,44,.16);border-radius:14px;background:rgba(255,255,255,.55)}
+.shop-item h3{margin:0 0 .2rem;font-size:1.05rem}
+.shop-item p{margin:0;font-size:.95rem;opacity:.8}
+.shop-item .category-link{white-space:nowrap;flex:none}
+@media (max-width:600px){.shop-item{flex-direction:column;align-items:flex-start}}
+.shop-tier{display:inline-block;margin-bottom:.3rem;padding:.1rem .55rem;border-radius:99px;font-size:.72rem;font-weight:600;letter-spacing:.04em;text-transform:uppercase;background:rgba(25,58,44,.08)}
+.shop-tier-mid{background:rgba(52,110,120,.14)}
+.shop-tier-premium{background:rgba(160,120,40,.18)}
+
+/* Keep the expanded navigation clear and preserve 16px phone gutters. */
+@media(min-width:901px){.header-inner .nav{gap:clamp(10px,1.6vw,26px)}.header-inner .nav a{font-size:13px}.header-action{gap:12px}}
+@media(max-width:600px){.wrap{width:calc(100% - 32px)}}
+
+/* Fishing lingo page */
+.lingo-jump{display:flex;flex-wrap:wrap;gap:.5rem;margin:0 0 2rem}
+.lingo-jump a{padding:.35rem .8rem;border-radius:99px;border:1px solid rgba(25,58,44,.18);font-size:.9rem;text-decoration:none}
+.lingo-terms{display:grid;gap:.9rem;margin:1rem 0 0}
+.lingo-term{padding:1rem 1.1rem;border-radius:14px;background:rgba(255,255,255,.55);border:1px solid rgba(25,58,44,.12)}
+.lingo-term dt{font-weight:700;font-size:1.1rem;margin-bottom:.25rem}
+.lingo-term dd{margin:0}
+.lingo-example{font-style:italic;opacity:.85}
+.lingo-fish{display:inline-block;margin:.3rem .35rem 0 0;padding:.1rem .55rem;border-radius:99px;font-size:.8rem;background:rgba(52,110,120,.12)}
+.lingo-source{font-size:.85rem;opacity:.75}
+.lingo-link{margin:1.5rem 0}
+
+/* Fishing licences */
+.lic-panel{border:1px solid rgba(25,58,44,.16);border-radius:18px;padding:1.4rem 1.4rem 1rem;background:rgba(255,255,255,.6)}
+.lic-panel h2{margin-top:.2rem}
+.lic-chips{list-style:none;display:flex;flex-wrap:wrap;gap:.6rem;padding:0;margin:1rem 0}
+.lic-chips li{display:flex;flex-direction:column;padding:.55rem .9rem;border-radius:12px;background:rgba(25,58,44,.06);min-width:110px}
+.lic-chips b{font-size:.78rem;text-transform:uppercase;letter-spacing:.05em;opacity:.7}
+.lic-chips span{font-weight:700;font-size:1.05rem}
+.lic-actions{display:flex;flex-wrap:wrap;gap:.6rem;margin:1rem 0}
+.lic-actions .btn-quiet{background:transparent;color:inherit;border:1px solid currentColor}
+.lic-permits{padding-left:1.1rem}.lic-permits li{margin:.5rem 0}.lic-permits span{font-size:.92rem;opacity:.8}
+.lic-page{padding-top:2rem;padding-bottom:3rem}
+.lic-head{max-width:760px;margin-bottom:2rem}
+.lic-answer{font-size:1.15rem;line-height:1.55}
+.lic-grid{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:2.5rem}
+.lic-grid h2{margin-top:2rem;font-size:1.35rem}
+@media(max-width:900px){.lic-grid{grid-template-columns:1fr}}
+.lic-sources{margin-top:2.5rem;border-top:1px solid rgba(25,58,44,.15);padding-top:1rem}
+.lic-sources summary{cursor:pointer;font-weight:600}
+.lic-search{display:block;max-width:520px;margin:0 0 2rem}.lic-search span{display:block;font-size:.85rem;margin-bottom:.35rem}
+.lic-search input{width:100%;padding:.85rem 1rem;border-radius:12px;border:1px solid rgba(25,58,44,.25);font:inherit;background:#fff}
+.lic-groups{columns:3 260px;column-gap:2rem}
+.lic-group{break-inside:avoid;margin-bottom:1.5rem}.lic-group h2{font-size:1.05rem;margin:0 0 .4rem}
+.lic-group ul{list-style:none;padding:0;margin:0}.lic-group li{margin:.2rem 0}

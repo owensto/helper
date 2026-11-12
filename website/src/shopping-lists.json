@@ -1,0 +1,798 @@
+{
+  "/environments/ice-fishing/": {
+    "title": "Ice fishing shopping list",
+    "items": [
+      {
+        "name": "Ice fishing rod and reel combo",
+        "note": "A short 24–32 in rod for jigging through a hole.",
+        "query": "ice fishing rod reel combo"
+      },
+      {
+        "name": "Ice jigs and spoons",
+        "note": "Small tungsten jigs for perch and panfish; spoons for walleye and trout.",
+        "query": "ice fishing jigs kit"
+      },
+      {
+        "name": "Hand auger or auger blade",
+        "note": "Skip this if your guide drills the holes.",
+        "query": "hand ice auger"
+      },
+      {
+        "name": "Ice picks",
+        "note": "Wear them around your neck every time you walk on ice.",
+        "query": "ice safety picks"
+      },
+      {
+        "name": "Ice cleats",
+        "note": "Slip-on spikes for bare, slick ice.",
+        "query": "ice cleats for boots"
+      },
+      {
+        "name": "Insulated waterproof boots",
+        "note": "Rated for -40 °F; you stand still for hours.",
+        "query": "insulated waterproof winter boots -40"
+      },
+      {
+        "name": "Bucket seat with tackle storage",
+        "note": "A seat, a tackle box and a fish bucket in one.",
+        "query": "ice fishing bucket seat"
+      },
+      {
+        "name": "Skimmer scoop",
+        "note": "Keeps the hole clear of slush.",
+        "query": "ice fishing skimmer scoop"
+      },
+      {
+        "name": "Hand and toe warmers",
+        "note": "Cheap and easy to keep in every pocket.",
+        "query": "hand warmers toe warmers bulk"
+      }
+    ]
+  },
+  "/environments/rivers-streams/": {
+    "title": "River and stream shopping list",
+    "items": [
+      {
+        "name": "Breathable chest waders",
+        "note": "Stocking-foot waders plus wading boots.",
+        "query": "breathable chest waders"
+      },
+      {
+        "name": "Wading boots",
+        "note": "Felt or rubber soles; check local felt rules.",
+        "query": "wading boots"
+      },
+      {
+        "name": "Polarized sunglasses",
+        "note": "See into the water and protect your eyes from hooks.",
+        "query": "polarized fishing sunglasses"
+      },
+      {
+        "name": "Light spinning combo",
+        "note": "A 6–7 ft light rod for trout and smallmouth.",
+        "query": "light spinning rod combo trout"
+      },
+      {
+        "name": "Inline spinners",
+        "note": "A proven river lure for trout.",
+        "query": "inline spinners trout"
+      },
+      {
+        "name": "Landing net",
+        "note": "A rubber net is kinder to fish you release.",
+        "query": "rubber landing net trout"
+      },
+      {
+        "name": "Wading staff",
+        "note": "Extra stability in fast water.",
+        "query": "folding wading staff"
+      }
+    ]
+  },
+  "/environments/lakes-reservoirs/": {
+    "title": "Lake and reservoir shopping list",
+    "items": [
+      {
+        "name": "Medium spinning combo",
+        "note": "A 7 ft medium rod covers bass, walleye and pike.",
+        "query": "medium spinning rod combo"
+      },
+      {
+        "name": "Soft plastic baits",
+        "note": "Worms, grubs and swimbaits.",
+        "query": "soft plastic bass baits kit"
+      },
+      {
+        "name": "Crankbaits",
+        "note": "Cover water fast at different depths.",
+        "query": "crankbait assortment"
+      },
+      {
+        "name": "Tackle box",
+        "note": "A box with movable dividers.",
+        "query": "tackle box with dividers"
+      },
+      {
+        "name": "Fish grip and pliers",
+        "note": "Safe handling and fast hook removal.",
+        "query": "fishing pliers fish gripper"
+      },
+      {
+        "name": "Life jacket",
+        "note": "An inflatable PFD for boat days.",
+        "query": "inflatable life jacket fishing"
+      }
+    ]
+  },
+  "/environments/alpine-lakes/": {
+    "title": "Alpine lake shopping list",
+    "items": [
+      {
+        "name": "Telescopic or 4-piece pack rod",
+        "note": "Fits on your backpack for the hike in.",
+        "query": "backpacking fishing rod 4 piece"
+      },
+      {
+        "name": "Ultralight spinning reel",
+        "note": "Light line casts small lures a long way.",
+        "query": "ultralight spinning reel"
+      },
+      {
+        "name": "Small spoons and spinners",
+        "note": "Classic lures for high-lake trout.",
+        "query": "trout spoons spinners kit"
+      },
+      {
+        "name": "Water filter",
+        "note": "Refill at the lake.",
+        "query": "backpacking water filter"
+      },
+      {
+        "name": "Sun hat and sunscreen",
+        "note": "UV is strong at altitude.",
+        "query": "sun hat UPF 50 fishing"
+      },
+      {
+        "name": "Warm layer",
+        "note": "Mountain weather changes fast.",
+        "query": "packable insulated jacket"
+      }
+    ]
+  },
+  "/environments/saltwater-flats/": {
+    "title": "Saltwater flats shopping list",
+    "items": [
+      {
+        "name": "Flats boots",
+        "note": "Hard soles for coral, shells and sand.",
+        "query": "flats wading boots"
+      },
+      {
+        "name": "Polarized sunglasses (amber or copper lens)",
+        "note": "Essential to spot fish on the flat.",
+        "query": "polarized sunglasses copper lens"
+      },
+      {
+        "name": "Sun hoodie",
+        "note": "UPF shirt with a hood for all-day sun.",
+        "query": "UPF 50 sun hoodie fishing"
+      },
+      {
+        "name": "Buff face cover",
+        "note": "Protects your face and neck.",
+        "query": "UV face buff fishing"
+      },
+      {
+        "name": "Saltwater fly or spinning combo",
+        "note": "Ask the guide what weight they use.",
+        "query": "saltwater spinning combo"
+      },
+      {
+        "name": "Reef-safe sunscreen",
+        "note": "Many flats destinations require it.",
+        "query": "reef safe sunscreen"
+      }
+    ]
+  },
+  "/environments/offshore/": {
+    "title": "Offshore shopping list",
+    "items": [
+      {
+        "name": "Motion sickness bands or tablets",
+        "note": "Start them before the boat leaves.",
+        "query": "motion sickness relief"
+      },
+      {
+        "name": "Waterproof dry bag",
+        "note": "Keeps your phone and layers dry.",
+        "query": "waterproof dry bag 20L"
+      },
+      {
+        "name": "Rain jacket",
+        "note": "Spray and squalls are common.",
+        "query": "waterproof rain jacket fishing"
+      },
+      {
+        "name": "Non-marking deck shoes",
+        "note": "Grip on a wet deck.",
+        "query": "non marking boat shoes"
+      },
+      {
+        "name": "Polarized sunglasses",
+        "note": "Glare off open water is intense.",
+        "query": "polarized fishing sunglasses"
+      },
+      {
+        "name": "Soft cooler",
+        "note": "Bring food and water; ask about fish bags.",
+        "query": "soft cooler bag 30 can"
+      }
+    ]
+  },
+  "/environments/surf-beaches/": {
+    "title": "Surf fishing shopping list",
+    "items": [
+      {
+        "name": "Surf rod combo (9–12 ft)",
+        "note": "Long rods cast past the breakers.",
+        "query": "surf fishing rod combo"
+      },
+      {
+        "name": "Sand spike rod holder",
+        "note": "Holds the rod while you wait.",
+        "query": "sand spike rod holder"
+      },
+      {
+        "name": "Pyramid sinkers",
+        "note": "Hold bottom in the surf.",
+        "query": "pyramid sinkers surf"
+      },
+      {
+        "name": "Fishfinder rigs",
+        "note": "Pre-tied rigs for bait.",
+        "query": "surf fishing rigs"
+      },
+      {
+        "name": "Beach cart",
+        "note": "Carries rods, cooler and chair.",
+        "query": "beach fishing cart"
+      },
+      {
+        "name": "Headlamp",
+        "note": "Dawn and night tides.",
+        "query": "headlamp red light"
+      }
+    ]
+  },
+  "/environments/estuaries-mangroves/": {
+    "title": "Estuary and mangrove shopping list",
+    "items": [
+      {
+        "name": "Inshore spinning combo",
+        "note": "A 7 ft medium rod for redfish, snook and trout.",
+        "query": "inshore spinning rod combo"
+      },
+      {
+        "name": "Paddle tails and jig heads",
+        "note": "The core inshore lure.",
+        "query": "inshore paddle tail jig heads"
+      },
+      {
+        "name": "Popping cork rigs",
+        "note": "A simple way to fish shrimp or soft plastics.",
+        "query": "popping cork rig"
+      },
+      {
+        "name": "Fluorocarbon leader",
+        "note": "Abrasion resistant around oysters and roots.",
+        "query": "fluorocarbon leader 20lb"
+      },
+      {
+        "name": "Insect repellent",
+        "note": "Mangroves have biting insects.",
+        "query": "insect repellent picaridin"
+      },
+      {
+        "name": "Polarized sunglasses",
+        "note": "See fish and structure in shallow water.",
+        "query": "polarized fishing sunglasses"
+      }
+    ]
+  },
+  "/environments/reef-bottom/": {
+    "title": "Reef and bottom fishing shopping list",
+    "items": [
+      {
+        "name": "Heavy conventional combo",
+        "note": "Ask the captain; many boats supply rods.",
+        "query": "conventional saltwater rod combo"
+      },
+      {
+        "name": "Circle hooks",
+        "note": "Required in many reef fisheries.",
+        "query": "circle hooks saltwater"
+      },
+      {
+        "name": "Descending device",
+        "note": "Helps release fish caught from deep water.",
+        "query": "fish descending device"
+      },
+      {
+        "name": "Fishing gloves",
+        "note": "Grip and protection from spines.",
+        "query": "fishing gloves saltwater"
+      },
+      {
+        "name": "Motion sickness relief",
+        "note": "Bottom boats anchor and rock.",
+        "query": "motion sickness relief"
+      },
+      {
+        "name": "Waterproof phone pouch",
+        "note": "Photos without a wet phone.",
+        "query": "waterproof phone pouch"
+      }
+    ]
+  },
+  "/environments/spring-fed/": {
+    "title": "Spring creek shopping list",
+    "items": [
+      {
+        "name": "Light fly rod (3–5 weight)",
+        "note": "Delicate casts for selective trout.",
+        "query": "4 weight fly rod combo"
+      },
+      {
+        "name": "Long fine tippet",
+        "note": "6X–7X for clear water.",
+        "query": "fly fishing tippet 6x"
+      },
+      {
+        "name": "Small dry flies and nymphs",
+        "note": "Midges, mayflies and scuds.",
+        "query": "trout fly assortment small"
+      },
+      {
+        "name": "Polarized sunglasses",
+        "note": "Sight fishing in clear water.",
+        "query": "polarized fishing sunglasses"
+      },
+      {
+        "name": "Hip or chest waders",
+        "note": "Spring water is cold all year.",
+        "query": "breathable waders"
+      },
+      {
+        "name": "Floatant and strike indicators",
+        "note": "Keep dries floating; see subtle takes.",
+        "query": "fly floatant strike indicators"
+      }
+    ]
+  },
+  "/environments/glacier-influenced/": {
+    "title": "Glacier-fed water shopping list",
+    "items": [
+      {
+        "name": "Heavy spinning or casting combo",
+        "note": "Glacial rivers often hold salmon and big trout.",
+        "query": "salmon spinning rod combo"
+      },
+      {
+        "name": "Bright spoons and spinners",
+        "note": "Show up well in cloudy water.",
+        "query": "salmon spoons spinners"
+      },
+      {
+        "name": "Waterproof breathable waders",
+        "note": "Glacial water is very cold.",
+        "query": "breathable chest waders"
+      },
+      {
+        "name": "Bear spray",
+        "note": "Carry it in bear country and know how to use it.",
+        "query": "bear spray"
+      },
+      {
+        "name": "Rain gear",
+        "note": "Coastal glacier regions are wet.",
+        "query": "waterproof rain suit fishing"
+      },
+      {
+        "name": "Wading belt",
+        "note": "Wear one with every pair of waders.",
+        "query": "wading belt"
+      }
+    ]
+  },
+  "/environments/tropical-floodplains/": {
+    "title": "Tropical floodplain shopping list",
+    "items": [
+      {
+        "name": "Heavy baitcasting combo",
+        "note": "For peacock bass and other hard-fighting fish.",
+        "query": "heavy baitcasting combo"
+      },
+      {
+        "name": "Topwater lures",
+        "note": "Prop baits and walkers.",
+        "query": "topwater lures peacock bass"
+      },
+      {
+        "name": "Wire or heavy leader",
+        "note": "Many tropical fish have sharp teeth.",
+        "query": "wire leader fishing"
+      },
+      {
+        "name": "Sun hoodie and long pants",
+        "note": "Sun and insect protection.",
+        "query": "UPF 50 sun hoodie fishing"
+      },
+      {
+        "name": "Insect repellent",
+        "note": "Mosquitoes and sand flies.",
+        "query": "insect repellent picaridin"
+      },
+      {
+        "name": "Dry bag",
+        "note": "Keep your gear dry in the boat.",
+        "query": "waterproof dry bag 20L"
+      }
+    ]
+  },
+  "/guides/merino-wool-fishing-base-layers/": {
+    "rich": true,
+    "title": "Choose a base. Add a good sock.",
+    "items": [
+      {
+        "tier": "Mid-range",
+        "name": "Smartwool Classic Thermal",
+        "bestFor": "A warm layer for slower days",
+        "specs": [
+          "100% merino wool",
+          "250 g/m² interlock knit",
+          "Flatlock seams"
+        ],
+        "query": "Smartwool Classic Thermal Merino Crew SW016349",
+        "sources": [
+          "smart-thermal"
+        ],
+        "note": "Fit is slim; check the body chart.",
+        "pick": true
+      },
+      {
+        "tier": "Budget",
+        "name": "MERIWOOL 250 Crew",
+        "bestFor": "A simple cool-weather start",
+        "specs": [
+          "100% merino wool",
+          "250 g/m² fabric",
+          "18.5-micron fibers"
+        ],
+        "query": "MERIWOOL mens 250 merino long sleeve base layer",
+        "sources": [
+          "meriwool-250"
+        ],
+        "note": ""
+      },
+      {
+        "tier": "Premium",
+        "name": "Icebreaker 200 Oasis",
+        "bestFor": "A lighter everyday base",
+        "specs": [
+          "100% merino wool",
+          "200 warmth-system fabric",
+          "18.9-micron fibers"
+        ],
+        "query": "Icebreaker 200 Oasis long sleeve crewe",
+        "sources": [
+          "ice-oasis"
+        ],
+        "note": "A higher tier does not mean a warmer shirt."
+      },
+      {
+        "tier": "Socks",
+        "name": "Darn Tough Hiker 1466",
+        "bestFor": "Comfort inside your boots",
+        "specs": [
+          "Merino wool blend",
+          "Micro crew height",
+          "Midweight cushion"
+        ],
+        "query": "Darn Tough Hiker 1466 micro crew cushion socks",
+        "sources": [
+          "gr-darn"
+        ],
+        "note": "Choose the sock thickness with your boots on."
+      }
+    ]
+  },
+  "/guides/fishing-waders-buying-guide/": {
+    "rich": true,
+    "title": "Three pairs worth comparing",
+    "items": [
+      {
+        "tier": "Mid-range",
+        "name": "Orvis Clearwater",
+        "bestFor": "A versatile first pair",
+        "specs": [
+          "4-layer breathable nylon",
+          "Stockingfoot construction",
+          "Waist conversion buckles"
+        ],
+        "query": "Orvis Clearwater mens stockingfoot waders",
+        "sources": [
+          "gr-orvis-clearwater"
+        ],
+        "note": "Try them with your usual fishing layers.",
+        "pick": true
+      },
+      {
+        "tier": "Budget",
+        "name": "Frogg Toggs Canyon II",
+        "bestFor": "Occasional river days",
+        "specs": [
+          "4-ply nylon upper",
+          "4 mm neoprene booties",
+          "Adjustable wading belt"
+        ],
+        "query": "Frogg Toggs Canyon II stockingfoot waders",
+        "sources": [
+          "frog-canyon"
+        ],
+        "note": "Budget for separate wading boots."
+      },
+      {
+        "tier": "Premium",
+        "name": "Simms G3 Guide",
+        "bestFor": "Frequent river use",
+        "specs": [
+          "3-layer GORE-TEX upper",
+          "4-layer GORE-TEX Pro lower",
+          "Stockingfoot construction"
+        ],
+        "query": "Simms G3 Guide stockingfoot waders",
+        "sources": [
+          "gr-g3"
+        ],
+        "note": "Match the G3 Guide model name. G3 PRO is a different product."
+      }
+    ]
+  },
+  "/guides/fishing-layering-system-guide/": {
+    "rich": true,
+    "title": "Three useful gaps to fill",
+    "items": [
+      {
+        "tier": "Premium",
+        "name": "Patagonia Torrentshell 3L",
+        "bestFor": "A reusable rain shell",
+        "specs": [
+          "3-layer H2No construction",
+          "Venting pit zips",
+          "Adjustable hood"
+        ],
+        "query": "Patagonia Torrentshell 3L jacket 85241",
+        "sources": [
+          "gr-shell"
+        ],
+        "note": "Choose the base and insulation separately.",
+        "pick": true
+      },
+      {
+        "tier": "Budget",
+        "name": "Columbia Fast Trek II",
+        "bestFor": "An easy fleece midlayer",
+        "specs": [
+          "Polyester microfleece",
+          "Full front zip",
+          "Zipped pockets"
+        ],
+        "query": "Columbia Fast Trek II full zip fleece 1420421",
+        "sources": [
+          "columbia-fleece"
+        ],
+        "note": "This is insulation, not a rain shell."
+      },
+      {
+        "tier": "Mid-range",
+        "name": "Smartwool Classic Thermal",
+        "bestFor": "A warm base for slower days",
+        "specs": [
+          "100% merino wool",
+          "250 g/m² interlock knit",
+          "Flatlock seams"
+        ],
+        "query": "Smartwool Classic Thermal Merino Crew SW016349",
+        "sources": [
+          "smart-thermal"
+        ],
+        "note": "Fit is slim; check the body chart."
+      }
+    ]
+  },
+  "/guides/fishing-gear-quality-tiers/": {
+    "rich": true,
+    "title": "Three spinning reels to compare",
+    "items": [
+      {
+        "tier": "Mid-range",
+        "name": "Daiwa BG",
+        "bestFor": "A sturdy inshore setup",
+        "specs": [
+          "Machined aluminum housing",
+          "Screw-in handle",
+          "Spinning reel format"
+        ],
+        "query": "Daiwa BG spinning reel",
+        "sources": [
+          "gr-bg"
+        ],
+        "note": "Compare weight and line capacity in your chosen size.",
+        "pick": true
+      },
+      {
+        "tier": "Budget",
+        "name": "Daiwa 26 Crossfire LT",
+        "bestFor": "A modest freshwater setup",
+        "specs": [
+          "AIRDRIVE ROTOR",
+          "LT design",
+          "TOUGH DIGIGEAR"
+        ],
+        "query": "Daiwa 26 Crossfire LT spinning reel",
+        "sources": [
+          "gr-crossfire"
+        ],
+        "note": "Match the exact size to your line and rod."
+      },
+      {
+        "tier": "Premium",
+        "name": "Shimano Stradic FM",
+        "bestFor": "Frequent lure sessions",
+        "specs": [
+          "InfinityXross gearing",
+          "Infinity Drive",
+          "Spinning reel format"
+        ],
+        "query": "Shimano Stradic FM spinning reel",
+        "sources": [
+          "gr-stradic"
+        ],
+        "note": "Pay for features you will use; keep funds for the rest of the kit."
+      }
+    ]
+  },
+  "/guides/fly-tying-for-beginners/": {
+    "rich": true,
+    "title": "Keep the first basket small",
+    "items": [
+      {
+        "tier": "Start small",
+        "name": "Wapsi Ultra Chenille",
+        "bestFor": "Your first San Juan Worm",
+        "specs": [
+          "Standard size for this pattern",
+          "Red color option"
+        ],
+        "query": "Wapsi Ultra Chenille Standard Red",
+        "sources": [
+          "ft26-chenille"
+        ],
+        "note": "Buy the hooks and thread separately."
+      },
+      {
+        "tier": "Tools",
+        "name": "Dr. Slick Ceramic Bobbin",
+        "bestFor": "Controlled thread feed",
+        "specs": [
+          "Ceramic tube inserts",
+          "Holds a thread spool"
+        ],
+        "query": "Dr Slick Ceramic Bobbin CBOB4",
+        "sources": [
+          "gr-slick"
+        ],
+        "note": "A bobbin is not included with every vise."
+      },
+      {
+        "tier": "Build next",
+        "name": "Wapsi Ultra Wire",
+        "bestFor": "Ribs on nymphs and midges",
+        "specs": [
+          "Copper wire",
+          "Small silver and copper options"
+        ],
+        "query": "Wapsi Ultra Wire Small silver copper",
+        "sources": [
+          "ft26-wire"
+        ],
+        "note": "Choose the color from your recipe."
+      }
+    ]
+  },
+  "/guides/first-five-flies-to-tie/": {
+    "rich": true,
+    "title": "Buy for the next lesson",
+    "items": [
+      {
+        "tier": "Start small",
+        "name": "Wapsi Ultra Chenille",
+        "bestFor": "Your first San Juan Worm",
+        "specs": [
+          "Standard size for this pattern",
+          "Red color option"
+        ],
+        "query": "Wapsi Ultra Chenille Standard Red",
+        "sources": [
+          "ft26-chenille"
+        ],
+        "note": "Buy the hooks and thread separately."
+      },
+      {
+        "tier": "Build next",
+        "name": "Wapsi Ultra Wire",
+        "bestFor": "Ribs on nymphs and midges",
+        "specs": [
+          "Copper wire",
+          "Small silver and copper options"
+        ],
+        "query": "Wapsi Ultra Wire Small silver copper",
+        "sources": [
+          "ft26-wire"
+        ],
+        "note": "Choose the color from your recipe."
+      }
+    ]
+  },
+  "/guides/fly-tying-kit-buying-guide/": {
+    "rich": true,
+    "title": "A short list for three budgets",
+    "items": [
+      {
+        "tier": "Budget",
+        "name": "Wapsi Starter Kit",
+        "bestFor": "One complete first purchase",
+        "specs": [
+          "Tools and materials",
+          "Lessons for 10 trout patterns",
+          "Included handbook"
+        ],
+        "query": "Wapsi Fly Tying Starter Kit",
+        "sources": [
+          "ft26-wapsi-starter"
+        ],
+        "note": "Compare the listed patterns with the flies you want to tie.",
+        "pick": true
+      },
+      {
+        "tier": "Mid-range",
+        "name": "Griffin Odyssey Spider",
+        "bestFor": "A bench you assemble yourself",
+        "specs": [
+          "True rotating design",
+          "Maker hook range: 28 to 4/0"
+        ],
+        "query": "Griffin Odyssey Spider Vise",
+        "sources": [
+          "ft26-griffin"
+        ],
+        "note": "Add hand tools and recipe materials to the total."
+      },
+      {
+        "tier": "Premium",
+        "name": "PEAK PRV-G2",
+        "bestFor": "A fixed home bench",
+        "specs": [
+          "Rotary vise",
+          "Pedestal base",
+          "Adjustable bobbin cradle"
+        ],
+        "query": "PEAK PRV G2 rotary vise pedestal",
+        "sources": [
+          "ft26-peak"
+        ],
+        "note": "PEAK states a limited lifetime warranty against material or workmanship defects."
+      }
+    ]
+  }
+}

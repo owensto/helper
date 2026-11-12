@@ -1,0 +1,31 @@
+{
+  "checked": "2026-11-11",
+  "scope": "Rechecked the five manufacturer pages for the new first-person editorial picks. Existing technical, legal, care, and tutorial claims retain their prior source records.",
+  "sources": [
+    {
+      "id": "smart-thermal",
+      "url": "https://www.smartwool.com/en-us/products/mens-classic-thermal-merino-base-layer-crew-sw016349?variant=63206702874993",
+      "supports": "100% merino, 250 g/m\u00b2, flatlock seams; opinion applies to pure-wool base layers, not every brand product."
+    },
+    {
+      "id": "gr-orvis-clearwater",
+      "url": "https://www.orvis.com/product/mens-clearwater-waders/2TZX.html",
+      "supports": "Four-layer breathable nylon, waist conversion, stockingfoot construction."
+    },
+    {
+      "id": "gr-shell",
+      "url": "https://www.patagonia.com/product/mens-torrentshell-3-layer-rain-jacket/85241.html",
+      "supports": "Three-layer H2No construction, adjustable hood, venting pit zips."
+    },
+    {
+      "id": "gr-bg",
+      "url": "https://daiwa.us/collections/saltwater-spinning-reels/products/bg-sw-spinning",
+      "supports": "Machined aluminum housing, screw-in handle; exact size must match the setup."
+    },
+    {
+      "id": "ft26-wapsi-starter",
+      "url": "https://wapsifly.com/products/kits/wapsi-fly-tying-starter-kit/",
+      "supports": "Tools, materials, and handbook for ten trout patterns."
+    }
+  ]
+}

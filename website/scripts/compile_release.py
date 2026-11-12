@@ -136,6 +136,24 @@ from species_glossary import compile_into as compile_species
 compile_species(world, out, ROOT)
 from index_policy import compile_into as compile_index_policy
 compile_index_policy(out, ROOT)
+# Human titles and summaries (owner 2026-11-11) override generated ones.
+_ov=json.loads((ROOT/'src/title-overrides.json').read_text()) if (ROOT/'src/title-overrides.json').exists() else {}
+for t in out:
+ o=_ov.get('trips',{}).get(t['id'])
+ if o:
+  t['title']=o['title'];t['summary']=o['summary']
+  if isinstance(t.get('planningGuide'),dict):t['planningGuide']['title']=o['title']
+_waters=ROOT/'src/waters.json'
+if _waters.exists():
+ _w=json.loads(_waters.read_text())
+ for _k,_v in _w['sources'].items():
+  _v.setdefault('type','reference'); _v.setdefault('status','text-inspected'); _v.setdefault('scopeNote',''); _v.setdefault('checked','2026-11-11')
+ for _h in _w['habitats']:
+  _h.setdefault('review',{'checked':'2026-11-11','status':'source-checked','fieldTested':False,'independentExpertReviewed':False})
+ world['sources'].update(_w['sources']); world['habitats']=_w['habitats']
+for tt in world.get('tripTypes',[]):
+ o=_ov.get('tripTypes',{}).get(tt.get('slug'))
+ if o:tt['name']=o['name'];tt['definition']=o['definition']
 # Classify editorial regions before page rendering, so a single clean build has working filters.
 groups=json.loads((ROOT/'src/continent-regions.json').read_text())
 for t in out:

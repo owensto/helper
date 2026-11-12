@@ -22,3 +22,45 @@
 .guide-booking{border-style:dashed}.prose-block[id],#faq,#sources{scroll-margin-top:110px}
 @media(max-width:700px){.guide-toc ul{columns:1}.guide-table th,.guide-table td{padding:12px;font-size:.9rem}.guide-table-hint{display:block;font-size:.8rem!important}.guide-hero img{max-height:280px}.guide-end{padding-bottom:48px}}
 @media print{.guide-toc,.watch-section,.guide-booking{display:none}.guide-faq>p{display:block!important}.guide-table{overflow:visible}.guide-table th,.guide-table td{min-width:0}}
+
+/* Shared references: one compact disclosure for every authored guide. */
+.guide-sources{border-block:1px solid #d8dcd0;margin:32px 0 0;padding:0;color:#445344}
+.guide-sources summary{cursor:pointer;font-size:14px;font-weight:600;padding:22px 0;min-height:44px}
+.guide-sources .source-checked{font-size:12px;line-height:1.5;margin:0 0 22px;color:#65705f}
+.source-groups{display:grid;gap:24px;padding-bottom:24px;max-width:780px}
+.source-group h3{font-family:inherit;font-size:10px;text-transform:uppercase;letter-spacing:.1em;font-weight:600;margin:0 0 10px;color:#6c654e}
+.source-group ol{margin:0;padding-left:28px}
+.source-group li{font-size:13px;line-height:1.6;padding:7px 0 7px 5px;scroll-margin-top:120px;border-bottom:1px solid #e5e7de}
+.source-group li::marker{color:#7e684e;font-size:11px}
+.source-group a{text-decoration:underline;text-decoration-color:#b9c1ae;text-underline-offset:3px;overflow-wrap:anywhere}
+.source-group li:target,.source-group li:focus{background:#e9eddf;outline:2px solid #788869;outline-offset:3px}
+.guide-citations{display:inline;font-size:10px!important;line-height:0!important;vertical-align:super;margin-left:5px;white-space:nowrap}
+.guide-citations a{display:inline-block;padding:8px 3px;color:#6b553a;text-decoration:none;line-height:1}
+.guide-citations a:hover,.guide-citations a:focus-visible{text-decoration:underline;background:#e9eddf}
+.guide-sources summary:focus-visible,.gr-buy:focus-visible{outline:2px solid #788869;outline-offset:4px}
+
+/* Give the older trip guides the same section rhythm as the gear guides. */
+.article-layout:has(.guide-section){grid-template-columns:minmax(0,1fr) 270px;gap:64px}
+.article-main:has(.guide-section){max-width:none;min-width:0}
+.article-layout:has(.guide-section) .article-aside{position:static}
+.guide-section{border-top:1px solid #d8dcd0;margin-top:36px;padding-top:36px}
+.guide-section-heading{display:flex;gap:16px;align-items:baseline}
+.guide-section-heading>span{font-size:11px;color:#8d6849;flex:none}
+.guide-section-heading h2{font-size:30px;line-height:1.2}
+.guide-notes{display:grid;gap:16px;margin:0 0 18px}
+.guide-notes>p{margin:0;font-size:15px;line-height:1.75;max-width:68ch}
+.guide-notes:has(>p+p)>p{padding:20px 24px;background:#f0f2e8;border-left:2px solid #b5bea5}
+.article-main .guide-checks{display:grid;grid-template-columns:1fr 1fr;gap:12px 28px;padding-left:22px;font-size:14px;line-height:1.7}
+.article-main .guide-checks>li{padding:12px 6px;border-bottom:1px solid #d8dcd0;margin:0}
+.guide-table thead{background:#203c32;color:#fffefa}
+.guide-table tbody tr:nth-child(even){background:#f0f2e8}
+.guide-table th,.guide-table td{font-size:13px;line-height:1.65}
+.guide-toc{background:#e9eddf;border-radius:3px;font-size:13px;line-height:1.6}
+@media(max-width:900px){.article-layout:has(.guide-section){grid-template-columns:1fr;gap:40px}.article-main .guide-checks{grid-template-columns:1fr}.guide-section-heading h2{font-size:27px}}
+@media(max-width:600px){.guide-section{margin-top:30px;padding-top:30px}.guide-notes:has(>p+p)>p{padding:18px}.guide-section-heading{gap:10px}.guide-section-heading h2{font-size:26px}.source-group li{font-size:12px}.guide-sources{margin-top:24px}}
+.guide-section-heading h2{font-family:Georgia,'Times New Roman',serif;text-transform:none;font-weight:400;letter-spacing:-.025em}
+@media(max-width:600px){
+ body:has(.guide-section) .chat-launch{width:48px;height:48px;padding:0;border-radius:50%;font-size:0;display:grid;place-items:center}
+ body:has(.guide-section) .chat-launch::before{content:"";width:19px;height:15px;border:1.5px solid currentColor;border-radius:5px}
+ body:has(.guide-section) .chat-launch::after{content:"";position:absolute;width:6px;height:6px;border-left:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:skewY(-40deg);bottom:13px;left:16px;background:#183f32}
+}

@@ -1,0 +1,3045 @@
+{
+  "jurisdictions": [
+    {
+      "id": "ao",
+      "name": "Angola",
+      "country": "Angola",
+      "region": null,
+      "authority": {
+        "name": "Ministry of Fisheries and Marine Resources",
+        "url": "https://minpermar.gov.ao/web/documentos?page=2&type=Comunicados"
+      },
+      "buyUrl": null,
+      "summary": "Recreational anglers need an annual personal licence, including foreign visitors. A tourist fishing boat also needs approval, so do not treat the boat's licence as your own.",
+      "whoNeedsOne": [
+        "Resident and visiting recreational anglers."
+      ],
+      "exemptions": [],
+      "options": [
+        {
+          "name": "Personal recreational fishing licence",
+          "who": "any",
+          "duration": "1 year",
+          "price": null,
+          "currency": "AOA",
+          "water": "both"
+        }
+      ],
+      "extras": [
+        {
+          "name": "Tourist fishing vessel licence",
+          "when": "For a tourist fishing boat.",
+          "price": null,
+          "currency": "AOA"
+        }
+      ],
+      "saltwater": null,
+      "guidedTrips": null,
+      "keyRules": [
+        "Do not sell recreational catch.",
+        "An angler under 18 needs a parent's or guardian's express permission."
+      ],
+      "howToBuy": "Apply to the fisheries ministry or the relevant provincial government.",
+      "sources": [
+        {
+          "title": "Ministry recreational fishing regulations",
+          "url": "https://minpermar.gov.ao/web/documentos?page=2&type=Comunicados"
+        },
+        {
+          "title": "Presidential Decree 146/13, official gazette copy",
+          "url": "https://faolex.fao.org/docs/pdf/ang127326.pdf"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Confirm current fees and any amendments with the provincial fisheries office."
+    },
+    {
+      "id": "au-australian-capital-territory",
+      "name": "Australian Capital Territory",
+      "country": "Australia",
+      "region": "Australian Capital Territory",
+      "authority": {
+        "name": "ACT Government",
+        "url": "https://www.act.gov.au/environment/animals-and-plants/animals/wildlife-management/fish/recreational-fishing-in-the-act"
+      },
+      "buyUrl": null,
+      "summary": "No recreational fishing licence is required in public ACT waters. Googong Reservoir is in New South Wales, so the NSW fishing fee applies despite ACT management.",
+      "whoNeedsOne": [],
+      "exemptions": [],
+      "options": [],
+      "extras": [
+        {
+          "name": "NSW recreational fishing fee",
+          "when": "For Googong Reservoir, unless a NSW exemption applies.",
+          "price": null,
+          "currency": "AUD"
+        }
+      ],
+      "saltwater": null,
+      "guidedTrips": null,
+      "keyRules": [
+        "Use no more than two rods.",
+        "Stay within 10 metres of your rods and keep them in sight.",
+        "Do not use live fish, fish eggs or frogs as bait.",
+        "Release protected fish."
+      ],
+      "howToBuy": "No ACT licence purchase is required. Pay the NSW fee before fishing at Googong unless exempt.",
+      "sources": [
+        {
+          "title": "ACT Government",
+          "url": "https://www.act.gov.au/environment/animals-and-plants/animals/wildlife-management/fish/recreational-fishing-in-the-act"
+        }
+      ],
+      "checked": "2026-11-11"
+    },
+    {
+      "id": "au-new-south-wales",
+      "name": "New South Wales",
+      "country": "Australia",
+      "region": "New South Wales",
+      "authority": {
+        "name": "NSW Department of Primary Industries and Regional Development",
+        "url": "https://www.dpird.nsw.gov.au/fishing/recreational/recreational-fishing-fee"
+      },
+      "buyUrl": "https://www.service.nsw.gov.au/transaction/apply-for-a-recreational-fishing-licence-1-year-or-3-year",
+      "summary": "Most adult anglers must pay the recreational fishing fee in fresh and salt water. A charter covers you only if the operator holds a recreational fishing fee exemption certificate.",
+      "whoNeedsOne": [
+        "Anglers aged 18 or over, unless exempt.",
+        "People who collect bait or use fishing gear beside the water."
+      ],
+      "exemptions": [
+        "Children under 18.",
+        "Aboriginal people.",
+        "An adult who helps a child with one rod.",
+        "Eligible concession card holders; a Seniors Card alone does not qualify."
+      ],
+      "options": [
+        {
+          "name": "Three-day fee",
+          "who": "any",
+          "duration": "3 days",
+          "price": 7,
+          "currency": "AUD",
+          "water": "both"
+        },
+        {
+          "name": "Monthly fee",
+          "who": "any",
+          "duration": "1 month",
+          "price": 14,
+          "currency": "AUD",
+          "water": "both"
+        },
+        {
+          "name": "Annual fee",
+          "who": "any",
+          "duration": "1 year",
+          "price": 35,
+          "currency": "AUD",
+          "water": "both"
+        },
+        {
+          "name": "Three-year fee",
+          "who": "any",
+          "duration": "3 years",
+          "price": 85,
+          "currency": "AUD",
+          "water": "both"
+        }
+      ],
+      "extras": [],
+      "saltwater": "The same fee covers freshwater and saltwater.",
+      "guidedTrips": "Ask whether the operator holds a fee exemption certificate. Otherwise, each client must pay unless personally exempt.",
+      "keyRules": [
+        "Carry your fee receipt.",
+        "Observe the fishing rules even if you are exempt from the fee."
+      ],
+      "howToBuy": "Pay online through Service NSW, at an agent, or by phone on 1300 369 365.",
+      "sources": [
+        {
+          "title": "Recreational fishing fee",
+          "url": "https://www.dpird.nsw.gov.au/fishing/recreational/recreational-fishing-fee"
+        },
+        {
+          "title": "Fee exemptions",
+          "url": "https://www.dpird.nsw.gov.au/fishing/recreational/recreational-fishing-fee/exemptions"
+        }
+      ],
+      "checked": "2026-11-11"
+    },
+    {
+      "id": "au-northern-territory",
+      "name": "Northern Territory",
+      "country": "Australia",
+      "region": "Northern Territory",
+      "authority": {
+        "name": "Northern Territory Government",
+        "url": "https://nt.gov.au/marine/recreational-fishing/rules/about-recreational-fishing"
+      },
+      "buyUrl": null,
+      "summary": "The Northern Territory has no general recreational fishing licence. Some Aboriginal waters require a permit or registration, even when no fishing licence is needed.",
+      "whoNeedsOne": [],
+      "exemptions": [],
+      "options": [],
+      "extras": [
+        {
+          "name": "Aboriginal land or intertidal access permit",
+          "when": "Where the relevant land council requires a permit or registration.",
+          "price": null,
+          "currency": "AUD"
+        }
+      ],
+      "saltwater": "No general recreational licence applies to saltwater fishing.",
+      "guidedTrips": "Fishing tour operators need a licence. Recreational catch rules still apply to their clients.",
+      "keyRules": [
+        "Release protected fish.",
+        "Do not sell or barter recreational catch."
+      ],
+      "howToBuy": "Check the land council's access map and permit service for your fishing location.",
+      "sources": [
+        {
+          "title": "Recreational fishing rules",
+          "url": "https://nt.gov.au/marine/recreational-fishing/rules/about-recreational-fishing"
+        },
+        {
+          "title": "Fishing on Aboriginal land",
+          "url": "https://nt.gov.au/marine/fishing-on-aboriginal-land"
+        },
+        {
+          "title": "Fishing tour operator licence",
+          "url": "https://nt.gov.au/marine/commercial-fishing/fishing-tour-operators/fishing-tour-operator-licence"
+        }
+      ],
+      "checked": "2026-11-11"
+    },
+    {
+      "id": "au-queensland",
+      "name": "Queensland",
+      "country": "Australia",
+      "region": "Queensland",
+      "authority": {
+        "name": "Queensland Department of Primary Industries",
+        "url": "https://www.qld.gov.au/recreation/activities/boating-fishing/rec-fishing/dams/stocked-impoundment-permits/buy"
+      },
+      "buyUrl": "https://dpiqld.auspost.com.au/",
+      "summary": "Queensland has no general recreational fishing licence. Anglers aged 18 or over need a Stocked Impoundment Permit to use a line in listed dams and weirs.",
+      "whoNeedsOne": [
+        "People aged 18 or over who use a fishing line in a SIPS dam or weir."
+      ],
+      "exemptions": [
+        "Anglers under 18 do not need a SIPS permit."
+      ],
+      "options": [
+        {
+          "name": "Stocked Impoundment Permit",
+          "who": "any",
+          "duration": "1 week",
+          "price": 13.6,
+          "currency": "AUD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Stocked Impoundment Permit",
+          "who": "any",
+          "duration": "1 year",
+          "price": 64.58,
+          "currency": "AUD",
+          "water": "freshwater"
+        }
+      ],
+      "extras": [],
+      "saltwater": "No general marine recreational licence applies; marine park zones and fishing limits still apply.",
+      "guidedTrips": null,
+      "keyRules": [
+        "Carry your SIPS permit; a digital copy is acceptable.",
+        "Check whether your dam or weir appears in the permit scheme."
+      ],
+      "howToBuy": "Buy through the Queensland Government's Australia Post service, by phone on 1300 575 359, or at Queensland Australia Post outlets.",
+      "sources": [
+        {
+          "title": "Buy a SIPS permit",
+          "url": "https://www.qld.gov.au/recreation/activities/boating-fishing/rec-fishing/dams/stocked-impoundment-permits/buy"
+        },
+        {
+          "title": "Queensland Government fisheries submission",
+          "url": "https://www.pc.gov.au/__data/assets/pdf_file/0010/199567/sub060-fisheries-aquaculture.pdf"
+        },
+        {
+          "title": "Great Barrier Reef Marine Park management",
+          "url": "https://elibrary.gbrmpa.gov.au/server/api/core/bitstreams/2a66e404-8cc3-484c-8a21-99409fc3ffe0/content"
+        }
+      ],
+      "checked": "2026-11-11"
+    },
+    {
+      "id": "au-south-australia",
+      "name": "South Australia",
+      "country": "Australia",
+      "region": "South Australia",
+      "authority": {
+        "name": "Primary Industries and Regions South Australia",
+        "url": "https://pir.sa.gov.au/fishing-and-aquaculture/recreational-fishing/rules"
+      },
+      "buyUrl": null,
+      "summary": "South Australia has no general recreational fishing licence. A reservoir fishing permit is required at reservoirs open to fishing.",
+      "whoNeedsOne": [],
+      "exemptions": [],
+      "options": [],
+      "extras": [
+        {
+          "name": "Reservoir fishing permit",
+          "when": "For fishing at reservoirs that allow public fishing.",
+          "price": null,
+          "currency": "AUD"
+        }
+      ],
+      "saltwater": "No general saltwater recreational licence is required.",
+      "guidedTrips": null,
+      "keyRules": [
+        "Fish only in the permitted reservoir areas.",
+        "Follow the reservoir's catch and access rules."
+      ],
+      "howToBuy": "Use the reservoir permit link on PIRSA's reservoir fishing page.",
+      "sources": [
+        {
+          "title": "Recreational fishing rules",
+          "url": "https://pir.sa.gov.au/fishing-and-aquaculture/recreational-fishing/rules"
+        },
+        {
+          "title": "Reservoir fishing",
+          "url": "https://pir.sa.gov.au/fishing-and-aquaculture/recreational-fishing/rules/reservoir-fishing"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Confirm the current reservoir permit price and any special gear registrations."
+    },
+    {
+      "id": "au-tasmania",
+      "name": "Tasmania",
+      "country": "Australia",
+      "region": "Tasmania",
+      "authority": {
+        "name": "Inland Fisheries Service",
+        "url": "https://www.ifs.tas.gov.au/the-rules/angling-licence"
+      },
+      "buyUrl": "https://www.ifs.tas.gov.au/anglers/manage",
+      "summary": "An inland angling licence is required from age 14, including for most farm dams. Ordinary sea fishing with a rod needs no licence, but several marine methods and species need separate licences.",
+      "whoNeedsOne": [
+        "Anglers aged 14 or over in inland waters."
+      ],
+      "exemptions": [
+        "Children under 14 may use one rod without an inland licence.",
+        "Anglers aged 14–17 still need an inland licence, but it is free.",
+        "Registered private fisheries have separate arrangements."
+      ],
+      "options": [
+        {
+          "name": "Adult one-rod licence",
+          "who": "any",
+          "duration": "48 hours",
+          "price": 29,
+          "currency": "AUD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Adult one-rod licence",
+          "who": "any",
+          "duration": "7 days",
+          "price": 49,
+          "currency": "AUD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Adult one-rod licence",
+          "who": "any",
+          "duration": "28 days",
+          "price": 76,
+          "currency": "AUD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Adult one-rod season",
+          "who": "any",
+          "duration": "1 August–31 July",
+          "price": 96,
+          "currency": "AUD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Young person one-rod season, ages 14–17",
+          "who": "any",
+          "duration": "1 August–31 July",
+          "price": 0,
+          "currency": "AUD",
+          "water": "freshwater"
+        }
+      ],
+      "extras": [
+        {
+          "name": "Marine fishing licence",
+          "when": "For rock lobster, abalone, scallops, specified nets or set lines.",
+          "price": null,
+          "currency": "AUD"
+        },
+        {
+          "name": "Whitebait licence",
+          "when": "For recreational whitebait fishing under its separate rules.",
+          "price": 39,
+          "currency": "AUD"
+        }
+      ],
+      "saltwater": "No licence is required for ordinary rod and line fishing. Marine licences run from 1 November to 31 October.",
+      "guidedTrips": null,
+      "keyRules": [
+        "Buy the correct one-rod or two-rod licence.",
+        "Check the open season for your inland water."
+      ],
+      "howToBuy": "Buy inland licences online, through Service Tasmania or licence agents. Buy marine licences through the Tasmanian recreational sea fishing portal.",
+      "sources": [
+        {
+          "title": "Inland licences and 2026–27 fees",
+          "url": "https://www.ifs.tas.gov.au/the-rules/angling-licence"
+        },
+        {
+          "title": "Marine fishing licences",
+          "url": "https://fishing.tas.gov.au/recreational-fishing/recreational-sea-fishing-licences"
+        }
+      ],
+      "checked": "2026-11-11"
+    },
+    {
+      "id": "au-victoria",
+      "name": "Victoria",
+      "country": "Australia",
+      "region": "Victoria",
+      "authority": {
+        "name": "Victorian Fisheries Authority",
+        "url": "https://vfa.vic.gov.au/recreational-fishing/fishing-licence"
+      },
+      "buyUrl": "https://service.vic.gov.au/find-services/outdoor-and-recreation/buy-a-victorian-recreational-fishing-licence/",
+      "summary": "Most anglers aged 18 to 69 need a recreational fishing licence. The same licence covers fresh and salt water, but another state's licence does not cover Victoria.",
+      "whoNeedsOne": [
+        "People who take or try to take fish, bait or shellfish from public waters, unless exempt."
+      ],
+      "exemptions": [
+        "People under 18 or aged 70 and over.",
+        "Aboriginal and Torres Strait Islander people.",
+        "Holders of the specified senior, veteran and pensioner concession cards."
+      ],
+      "options": [
+        {
+          "name": "Three-day licence",
+          "who": "any",
+          "duration": "3 days",
+          "price": 10,
+          "currency": "AUD",
+          "water": "both"
+        },
+        {
+          "name": "28-day licence",
+          "who": "any",
+          "duration": "28 days",
+          "price": 24.7,
+          "currency": "AUD",
+          "water": "both"
+        },
+        {
+          "name": "Annual licence — online",
+          "who": "any",
+          "duration": "1 year",
+          "price": 40.8,
+          "currency": "AUD",
+          "water": "both"
+        },
+        {
+          "name": "Three-year licence — online",
+          "who": "any",
+          "duration": "3 years",
+          "price": 111.2,
+          "currency": "AUD",
+          "water": "both"
+        }
+      ],
+      "extras": [],
+      "saltwater": "The licence includes marine and estuary fishing.",
+      "guidedTrips": null,
+      "keyRules": [
+        "Do not lend or transfer your licence.",
+        "Carry evidence if you claim a concession exemption."
+      ],
+      "howToBuy": "Buy online through Service Victoria or from an authorised licence agent.",
+      "sources": [
+        {
+          "title": "Fishing licence and 2026–27 fees",
+          "url": "https://vfa.vic.gov.au/recreational-fishing/fishing-licence"
+        }
+      ],
+      "checked": "2026-11-11"
+    },
+    {
+      "id": "au-western-australia",
+      "name": "Western Australia",
+      "country": "Australia",
+      "region": "Western Australia",
+      "authority": {
+        "name": "WA Department of Primary Industries and Regional Development",
+        "url": "https://www.dpird.wa.gov.au/individuals/recreational-fishing/get-a-recreational-fishing-licence/"
+      },
+      "buyUrl": "https://online.transport.wa.gov.au/tso/selfservice/public/rec_fishing_lic_apply_entry.jsf",
+      "summary": "Western Australia licenses specific fishing activities. A powered boat can trigger the boat licence rule even when it only transports your gear to a shore fishing spot.",
+      "whoNeedsOne": [
+        "People who fish from a powered boat, subject to the stated exemptions.",
+        "South-west freshwater anglers and people who fish for licensed species or use licensed methods."
+      ],
+      "exemptions": [
+        "Children under 16 do not need the south-west freshwater licence.",
+        "Boat-licence exemptions include licensed fishing charters and non-powered boats.",
+        "An unlicensed boat angler may share a licensed angler's bag limit."
+      ],
+      "options": [
+        {
+          "name": "Recreational fishing from a boat",
+          "who": "any",
+          "duration": "12 months",
+          "price": 40,
+          "currency": "AUD",
+          "water": "both"
+        },
+        {
+          "name": "South-west freshwater angling",
+          "who": "any",
+          "duration": "12 months",
+          "price": 50,
+          "currency": "AUD",
+          "water": "freshwater"
+        }
+      ],
+      "extras": [
+        {
+          "name": "Species or method licence",
+          "when": "Separate licences apply to rock lobster, abalone, marron and net fishing.",
+          "price": 50,
+          "currency": "AUD"
+        }
+      ],
+      "saltwater": "Ordinary shore angling does not trigger the boat licence. Species and method licences can still apply.",
+      "guidedTrips": "A licensed fishing charter exempts clients from the boat licence. Other species and method licences remain separate.",
+      "keyRules": [
+        "Produce your licence when an officer asks.",
+        "If you share a licence holder's bag limit, the group's combined catch must stay within that limit."
+      ],
+      "howToBuy": "Apply through DoTDirect, by post or at a Department of Transport licensing office.",
+      "sources": [
+        {
+          "title": "Recreational licences and fees",
+          "url": "https://www.dpird.wa.gov.au/individuals/recreational-fishing/get-a-recreational-fishing-licence/"
+        },
+        {
+          "title": "Boat licence requirements and exemptions",
+          "url": "https://www.dpird.wa.gov.au/individuals/recreational-fishing/get-a-recreational-fishing-licence/recreational-fishing-from-a-boat/"
+        }
+      ],
+      "checked": "2026-11-11"
+    },
+    {
+      "id": "bt",
+      "name": "Bhutan",
+      "country": "Bhutan",
+      "region": null,
+      "authority": {
+        "name": "Department of Forests and Park Services",
+        "url": "https://ofs.dofps.gov.bt/apply/fishing?non_ndi_applicant=1"
+      },
+      "buyUrl": "https://ofs.dofps.gov.bt/apply/fishing?non_ndi_applicant=1",
+      "summary": "Visitors need a fishing permit for the approved water and dates. Foreign anglers must use a Bhutanese fishing guide and release their catch.",
+      "whoNeedsOne": [
+        "Foreign visitors who fish in approved recreational waters."
+      ],
+      "exemptions": [],
+      "options": [],
+      "extras": [],
+      "saltwater": null,
+      "guidedTrips": "A Bhutanese fishing guide is compulsory for foreign anglers. Each angler must appear on the permit application.",
+      "keyRules": [
+        "Release each fish immediately.",
+        "Use an artificial fly or lure with one single barbless hook."
+      ],
+      "howToBuy": "Apply through Online Forestry Services. Enter your passport number, fishing area and start date.",
+      "sources": [
+        {
+          "title": "Online fishing permit application",
+          "url": "https://ofs.dofps.gov.bt/apply/fishing?non_ndi_applicant=1"
+        },
+        {
+          "title": "Consolidated Forest and Nature Conservation Rules 2023–2025, sections 194–196",
+          "url": "https://www.moenr.gov.bt/wp-content/uploads/2017/07/Consolidated_Forest-and-Nature-Conservation-Rules-and-Regulations-2023-2025-1.pdf"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Confirm the fee and approved fishing dates with the issuing forest or park office."
+    },
+    {
+      "id": "bw",
+      "name": "Botswana",
+      "country": "Botswana",
+      "region": null,
+      "authority": {
+        "name": "Department of Wildlife and National Parks",
+        "url": "https://www.gov.bw/taxonomy/term/108?page=0"
+      },
+      "buyUrl": null,
+      "summary": "Recreational anglers need a licence, including visitors. A lodge booking does not replace the licence or a dam entrance permit.",
+      "whoNeedsOne": [
+        "Citizens and non-citizens aged 18 or over can apply."
+      ],
+      "exemptions": [],
+      "options": [
+        {
+          "name": "Non-citizen monthly",
+          "who": "non-resident",
+          "duration": "1 month",
+          "price": 300,
+          "currency": "BWP",
+          "water": "freshwater"
+        },
+        {
+          "name": "Non-citizen annual",
+          "who": "non-resident",
+          "duration": "1 year",
+          "price": 600,
+          "currency": "BWP",
+          "water": "freshwater"
+        }
+      ],
+      "extras": [
+        {
+          "name": "Water Utilities Corporation entrance permit",
+          "when": "For access to corporation dams.",
+          "price": null,
+          "currency": "BWP"
+        }
+      ],
+      "saltwater": null,
+      "guidedTrips": null,
+      "keyRules": [
+        "The open season runs from 1 March to 31 December.",
+        "Provide a certified passport copy and the required lodge letter or dam permit."
+      ],
+      "howToBuy": "Submit the recreational fishing licence form and documents at a Wildlife and National Parks office.",
+      "sources": [
+        {
+          "title": "Department of Wildlife and National Parks",
+          "url": "https://www.gov.bw/taxonomy/term/108?page=0"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "The published fee categories use citizenship, not residence. Confirm rules for anglers under 18 and the current fee."
+    },
+    {
+      "id": "cm",
+      "name": "Cameroon",
+      "country": "Cameroon",
+      "region": null,
+      "authority": {
+        "name": "Ministry of Livestock, Fisheries and Animal Industries",
+        "url": "https://minepia.cm/site/services/peches-aquaculture-et-industries/obtention-dun-permis-de-peche-sportive-permis-b/"
+      },
+      "buyUrl": null,
+      "summary": "Sport fishing uses a Permit B. Visitors should arrange it before travel: the published application process allows 60 days.",
+      "whoNeedsOne": [
+        "Applicants who wish to practise sport fishing."
+      ],
+      "exemptions": [],
+      "options": [
+        {
+          "name": "Sport fishing Permit B",
+          "who": "any",
+          "duration": null,
+          "price": null,
+          "currency": "XAF",
+          "water": "both"
+        }
+      ],
+      "extras": [],
+      "saltwater": null,
+      "guidedTrips": null,
+      "keyRules": [
+        "State the requested fishing zones and number of boats in the application.",
+        "Provide the required identity document, photographs and gear details."
+      ],
+      "howToBuy": "Apply to the ministry's inland and artisanal marine fisheries service; collect the issued permit.",
+      "sources": [
+        {
+          "title": "Ministry of Livestock, Fisheries and Animal Industries",
+          "url": "https://minepia.cm/site/services/peches-aquaculture-et-industries/obtention-dun-permis-de-peche-sportive-permis-b/"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Confirm visitor eligibility, permit duration, fees and guide coverage with MINEPIA."
+    },
+    {
+      "id": "ck",
+      "name": "Cook Islands",
+      "country": "Cook Islands",
+      "region": null,
+      "authority": {
+        "name": "Ministry of Marine Resources / Aitutaki Island Council",
+        "url": "https://www.environment.gov.ck/wp-content/uploads/2022/06/16.-MMR-Aitutaki-and-Manuae-Booklet.pdf"
+      },
+      "buyUrl": null,
+      "summary": "Visitors to Aitutaki and Manuae need local lagoon fishing permission. Bonefish waters also have guide, gear and closed-area rules; an offshore charter booking does not settle lagoon access.",
+      "whoNeedsOne": [
+        "Non-Cook Islanders who fish in Aitutaki and Manuae lagoons and surrounding reefs."
+      ],
+      "exemptions": [],
+      "options": [],
+      "extras": [
+        {
+          "name": "Visitor Lagoon Fishing Permit",
+          "when": "For visitors who fish in the Aitutaki and Manuae lagoons and surrounding reefs.",
+          "price": null,
+          "currency": "NZD"
+        }
+      ],
+      "saltwater": null,
+      "guidedTrips": "The bonefish fishery has fishing guide requirements. Confirm the approved guide and your visitor permit with the island council.",
+      "keyRules": [
+        "Stay out of bonefish nursery and spawning closures.",
+        "Do not export bonefish."
+      ],
+      "howToBuy": "Ask Aitutaki Island Council for the current visitor lagoon permit.",
+      "sources": [
+        {
+          "title": "Ministry of Marine Resources Aitutaki and Manuae booklet",
+          "url": "https://www.environment.gov.ck/wp-content/uploads/2022/06/16.-MMR-Aitutaki-and-Manuae-Booklet.pdf"
+        },
+        {
+          "title": "Government marine park legal review, visitor lagoon permits",
+          "url": "https://www.maraemoana.gov.ck/wp-content/uploads/2019/04/140409-PART-B-MARINE-PARK-REPORT-FINAL.pdf"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Confirm current fees, duration and permit rules on other islands. A nationwide personal licence exemption is not confirmed."
+    },
+    {
+      "id": "eg",
+      "name": "Egypt",
+      "country": "Egypt",
+      "region": null,
+      "authority": {
+        "name": "Lakes and Fish Resources Protection and Development Agency",
+        "url": "https://faolex.fao.org/docs/pdf/egy220107.pdf"
+      },
+      "buyUrl": null,
+      "summary": "Fishing normally requires a fishing card, but a limited rod-and-line exemption uses a separate certificate. Foreign visitors can receive this certificate only at approved tourist locations in the Red Sea and South Sinai.",
+      "whoNeedsOne": [
+        "Anglers who require a fishing card or the specific exemption certificate."
+      ],
+      "exemptions": [
+        "The exemption certificate permits one rod or line with no more than three hooks, subject to its conditions."
+      ],
+      "options": [],
+      "extras": [
+        {
+          "name": "Fishing-card exemption certificate",
+          "when": "For qualifying limited rod-and-line fishing; foreign visitors are restricted to approved tourist locations.",
+          "price": null,
+          "currency": "EGP"
+        }
+      ],
+      "saltwater": null,
+      "guidedTrips": null,
+      "keyRules": [
+        "Carry the exemption certificate and show it on request.",
+        "Follow the certificate's gear and area conditions."
+      ],
+      "howToBuy": "Apply through the competent fisheries office. Non-resident foreigners must provide passport, return-flight, hotel and responsible tourism-company details.",
+      "sources": [
+        {
+          "title": "Executive Regulations 706/2023, articles 40–42, official gazette copy",
+          "url": "https://faolex.fao.org/docs/pdf/egy220107.pdf"
+        },
+        {
+          "title": "EEAA marine activity permit conditions",
+          "url": "https://www.eeaa.gov.eg/Uploads/Service/Files/20221214114315825.pdf"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Confirm current fees, approved visitor locations, boat permits and protected-area restrictions with the fisheries office and EEAA."
+    },
+    {
+      "id": "fm",
+      "name": "Federated States of Micronesia",
+      "country": "Federated States of Micronesia",
+      "region": null,
+      "authority": {
+        "name": "National Oceanic Resource Management Authority",
+        "url": "https://norma.fm/licensing/"
+      },
+      "buyUrl": null,
+      "summary": "Foreign recreational fishing in the national exclusive economic zone requires the applicable NORMA permit. State waters have separate rules, so national vessel approval does not settle reef or lagoon access.",
+      "whoNeedsOne": [
+        "Operators undertaking foreign recreational fishing in the national exclusive economic zone."
+      ],
+      "exemptions": [],
+      "options": [],
+      "extras": [
+        {
+          "name": "NORMA foreign recreational fishing permit",
+          "when": "For foreign recreational fishing covered by the national Marine Resources Act.",
+          "price": null,
+          "currency": "USD"
+        }
+      ],
+      "saltwater": null,
+      "guidedTrips": null,
+      "keyRules": [],
+      "howToBuy": "Contact NORMA for offshore permits and the relevant state authority for coastal waters.",
+      "sources": [
+        {
+          "title": "NORMA licensing",
+          "url": "https://norma.fm/licensing/"
+        },
+        {
+          "title": "FSM Marine Resources Code, national and state jurisdiction",
+          "url": "https://www.fsmlaw.org/fsm/code/code2014/FSMCode2014Tit24Chap01.html"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Confirm the definition of foreign recreational fishing for your vessel and personal visitor permits in Chuuk, Kosrae, Pohnpei or Yap."
+    },
+    {
+      "id": "fj",
+      "name": "Fiji",
+      "country": "Fiji",
+      "region": null,
+      "authority": {
+        "name": "Tourism Fiji",
+        "url": "https://www.fiji.travel/things-to-do/charters/fiji-fishing"
+      },
+      "buyUrl": null,
+      "summary": "Fiji has no individual recreational fishing licence for visitors. A commercial charter must hold the appropriate licence, and customary fishing rights still apply.",
+      "whoNeedsOne": [],
+      "exemptions": [
+        "Charter clients use the licensed operator's cover, according to Tourism Fiji."
+      ],
+      "options": [],
+      "extras": [
+        {
+          "name": "Operator licence and qoliqoli access",
+          "when": "The charter must address commercial licensing and customary fishing rights.",
+          "price": null,
+          "currency": "FJD"
+        }
+      ],
+      "saltwater": "Local communities hold traditional fishing rights in qoliqoli areas.",
+      "guidedTrips": "Tourism Fiji states that the commercial operator's fishing licence covers its clients.",
+      "keyRules": [],
+      "howToBuy": "Book a licensed charter and ask how it arranges qoliqoli access.",
+      "sources": [
+        {
+          "title": "Tourism Fiji",
+          "url": "https://www.fiji.travel/things-to-do/charters/fiji-fishing"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "For independent shore or reef fishing, confirm local permission and closed areas with the Fisheries Ministry."
+    },
+    {
+      "id": "ga",
+      "name": "Gabon",
+      "country": "Gabon",
+      "region": null,
+      "authority": {
+        "name": "Fisheries administration — Official Gazette",
+        "url": "https://www.journal-officiel.ga/4856-013-maepa-sg-dgpa-/"
+      },
+      "buyUrl": null,
+      "summary": "Sport anglers need a personal fishing permit. A tour operator must check each client's permit; its business status does not replace yours.",
+      "whoNeedsOne": [
+        "People who practise recreational or sport fishing."
+      ],
+      "exemptions": [],
+      "options": [
+        {
+          "name": "Personal sport fishing permit",
+          "who": "any",
+          "duration": null,
+          "price": null,
+          "currency": "XAF",
+          "water": "both"
+        }
+      ],
+      "extras": [
+        {
+          "name": "Protected-area permission",
+          "when": "Where a national park, marine park or aquatic reserve imposes separate access rules.",
+          "price": null,
+          "currency": "XAF"
+        }
+      ],
+      "saltwater": null,
+      "guidedTrips": "The operator has responsibility for valid permits for its clients and staff.",
+      "keyRules": [
+        "Do not target fully protected species.",
+        "Do not sell or barter the catch.",
+        "Do not transfer your personal permit."
+      ],
+      "howToBuy": null,
+      "sources": [
+        {
+          "title": "Fisheries administration — Official Gazette",
+          "url": "https://www.journal-officiel.ga/4856-013-maepa-sg-dgpa-/"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Confirm the issuing office, visitor fees, duration and protected-area conditions."
+    },
+    {
+      "id": "gm",
+      "name": "Gambia",
+      "country": "Gambia",
+      "region": null,
+      "authority": {
+        "name": "Ministry of Fisheries and Water Resources",
+        "url": "https://www.mofwr.gm/fishing-license-fees"
+      },
+      "buyUrl": null,
+      "summary": "The official licence service lists sport-fishing vessel permits. It does not state whether each visiting angler needs a personal permit, so confirm this before a shore or charter trip.",
+      "whoNeedsOne": [
+        "Owners or agents of vessels that require registration and a fishing licence."
+      ],
+      "exemptions": [],
+      "options": [],
+      "extras": [
+        {
+          "name": "Foreign sport-fishing vessel licence",
+          "when": "For a foreign sport-fishing vessel; this is a vessel fee, not an angler ticket.",
+          "price": 9750,
+          "currency": "GMD"
+        }
+      ],
+      "saltwater": null,
+      "guidedTrips": null,
+      "keyRules": [],
+      "howToBuy": "Contact the Ministry of Fisheries and Water Resources; its online service handles vessel registration and licences.",
+      "sources": [
+        {
+          "title": "Ministry of Fisheries and Water Resources",
+          "url": "https://www.mofwr.gm/fishing-license-fees"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Confirm personal visitor requirements, vessel permit duration, local restrictions and charter client coverage."
+    },
+    {
+      "id": "gw",
+      "name": "Guinea-Bissau",
+      "country": "Guinea-Bissau",
+      "region": null,
+      "authority": {
+        "name": "Ministry of Fisheries",
+        "url": "https://www.pescas.gw/pesca-artesanal.php"
+      },
+      "buyUrl": null,
+      "summary": "The ministry states that fishing requires a licence except for subsistence fishing. This does not confirm a tourist exemption; ask for the sport-fishing requirements for your exact area.",
+      "whoNeedsOne": [
+        "People engaged in fishing outside the ministry's subsistence exemption."
+      ],
+      "exemptions": [
+        "Subsistence fishing is exempt under the ministry's published guidance; visitor eligibility is not stated."
+      ],
+      "options": [],
+      "extras": [],
+      "saltwater": null,
+      "guidedTrips": null,
+      "keyRules": [],
+      "howToBuy": "Contact the fisheries ministry for the appropriate licence category.",
+      "sources": [
+        {
+          "title": "Ministry of Fisheries",
+          "url": "https://www.pescas.gw/pesca-artesanal.php"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Confirm the visitor permit, fee, duration, charter coverage and any protected-area permission."
+    },
+    {
+      "id": "in",
+      "name": "India",
+      "country": "India",
+      "region": null,
+      "authority": {
+        "name": "Himachal Pradesh Fisheries Department",
+        "url": "https://himachal.nic.in/fisheries/"
+      },
+      "buyUrl": null,
+      "summary": "Visitors must check the permit for each state and water. Himachal Pradesh and Jammu and Kashmir issue local angling licences; neither licence provides nationwide cover.",
+      "whoNeedsOne": [
+        "Anglers in Himachal Pradesh's regulated trout and general waters.",
+        "Trout anglers in Jammu and Kashmir."
+      ],
+      "exemptions": [],
+      "options": [
+        {
+          "name": "Jammu and Kashmir foreign angler trout permit",
+          "who": "non-resident",
+          "duration": "1 day",
+          "price": 3500,
+          "currency": "INR",
+          "water": "freshwater"
+        }
+      ],
+      "extras": [],
+      "saltwater": null,
+      "guidedTrips": null,
+      "keyRules": [
+        "Use the permit for its approved water.",
+        "In Himachal Pradesh trout waters, the licence rules prohibit trout fishing from November through February."
+      ],
+      "howToBuy": "Use the relevant state Fisheries Department. Jammu and Kashmir advertises online trout permits; Himachal Pradesh lists local licence offices.",
+      "sources": [
+        {
+          "title": "Himachal Pradesh angling",
+          "url": "https://himachaltourism.gov.in/destination/angling/"
+        },
+        {
+          "title": "Jammu and Kashmir trout angling",
+          "url": "https://fisheries.jk.gov.in/trout_angling.htm"
+        },
+        {
+          "title": "Himachal Pradesh licence conditions",
+          "url": "https://himachal.nic.in/ControlsAsync/ViewFTPFile?ms=jRiHtBWiyFDNf6XbEqRSXw%3D%3D&qs=KI3gZ53zz1yZI8V2HmO7PXrjXJS0NfflOG7S3MXoRyrWahgGHQeQJLMOcYDf01QaQCGwCfkCsy1OZDEUb3TBNuoyyUFfec1c"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "These are state examples. Confirm current rules for your state, coast, park and exact water."
+    },
+    {
+      "id": "id",
+      "name": "Indonesia",
+      "country": "Indonesia",
+      "region": null,
+      "authority": {
+        "name": "Government Online Single Submission service",
+        "url": "https://oss.go.id/id/kbli/detail/c98ece05-98dd-575d-85ce-d8e39e16e80b"
+      },
+      "buyUrl": null,
+      "summary": "The official system lists business approvals for fishing tourism and guides. It does not confirm a general personal licence rule for visitors; check the exact water before you fish.",
+      "whoNeedsOne": [],
+      "exemptions": [],
+      "options": [],
+      "extras": [
+        {
+          "name": "Fishing tourism operator approval",
+          "when": "For businesses that provide fishing facilities or guided fishing trips.",
+          "price": null,
+          "currency": "IDR"
+        },
+        {
+          "name": "Surat Izin Wisata Bahari",
+          "when": "For a fishing tourism business established in marine waters for more than 30 days under the published business rules.",
+          "price": null,
+          "currency": "IDR"
+        }
+      ],
+      "saltwater": null,
+      "guidedTrips": "Operator approval is a business requirement. The cited pages do not confirm that it replaces any client or local water permission.",
+      "keyRules": [],
+      "howToBuy": "Ask the local fisheries office and the operator to confirm personal and location requirements.",
+      "sources": [
+        {
+          "title": "Official fishing tourism business classification",
+          "url": "https://oss.go.id/id/kbli/detail/c98ece05-98dd-575d-85ce-d8e39e16e80b"
+        },
+        {
+          "title": "Government Regulation 28/2025, fishing tourism business requirements",
+          "url": "https://peraturan.bpk.go.id/Download/394946/2.10%20Lampiran%20I.J%20sd.%20I.P%20PP%20Nomor%2028%20Tahun%202025.pdf"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Confirm individual visitor permits and marine park or local access rules. No personal licence exemption is verified."
+    },
+    {
+      "id": "jp",
+      "name": "Japan",
+      "country": "Japan",
+      "region": null,
+      "authority": {
+        "name": "Fisheries Agency of Japan",
+        "url": "https://www.jfa.maff.go.jp/j/kanri/gaikokujin_yugyo_en.html"
+      },
+      "buyUrl": null,
+      "summary": "Inland fishing can require a local cooperative's fishing ticket and compliance with prefectural rules. Foreign visitors also face specific boat restrictions; one river's ticket does not give access to another.",
+      "whoNeedsOne": [
+        "Anglers who target species covered by a local cooperative's recreational fishing rules."
+      ],
+      "exemptions": [],
+      "options": [],
+      "extras": [
+        {
+          "name": "Local cooperative fishing ticket",
+          "when": "Where the river or lake cooperative requires a fee and fishing approval.",
+          "price": null,
+          "currency": "JPY"
+        }
+      ],
+      "saltwater": "Foreign visitors may use permitted small-scale shore methods. Boat fishing has additional foreign-national restrictions and prefectural rules.",
+      "guidedTrips": "For foreign visitors on boats of 3 gross tons or more, the agency specifies a Japanese vessel controlled by a Japanese fisher.",
+      "keyRules": [
+        "Follow the local species, gear, season and area rules.",
+        "Do not enter restricted port areas or approach fishing nets.",
+        "Do not catch salmon in inland waters except under a specific authorised exception."
+      ],
+      "howToBuy": "Ask the fishing cooperative or prefectural fisheries office for the correct local ticket.",
+      "sources": [
+        {
+          "title": "Recreational fishing by foreign nationals",
+          "url": "https://www.jfa.maff.go.jp/j/kanri/gaikokujin_yugyo_en.html"
+        },
+        {
+          "title": "Inland recreational fishing rules and tickets",
+          "url": "https://www.jfa.maff.go.jp/j/yugyo/y_kisei/naisui_men/"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Confirm the ticket price and boat eligibility for your exact trip."
+    },
+    {
+      "id": "jo",
+      "name": "Jordan",
+      "country": "Jordan",
+      "region": null,
+      "authority": {
+        "name": "Aqaba Special Economic Zone Authority",
+        "url": "https://www.aseza.jo/Ar/NewsDetails/_Hunt_"
+      },
+      "buyUrl": null,
+      "summary": "Aqaba regulates both professional and recreational fishing through licences and seasonal restrictions. A visitor should confirm the correct licence before travel; the annual January–April closure includes shore anglers.",
+      "whoNeedsOne": [
+        "Recreational fishers covered by Aqaba's licensing rules; visitor eligibility needs confirmation."
+      ],
+      "exemptions": [],
+      "options": [],
+      "extras": [],
+      "saltwater": null,
+      "guidedTrips": null,
+      "keyRules": [
+        "Do not fish from shore during the January–April closure.",
+        "During the closure, only authorised boats may target the listed migratory fish.",
+        "Tourist and glass-bottom boats cannot fish during the closure."
+      ],
+      "howToBuy": "Ask ASEZA and the Ministry of Agriculture to confirm the visitor application route.",
+      "sources": [
+        {
+          "title": "Aqaba Special Economic Zone Authority",
+          "url": "https://www.aseza.jo/Ar/NewsDetails/_Hunt_"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Confirm non-resident eligibility, the current licence fee and permitted locations. The cited notice specifies the 2026 closure and its annual legal basis."
+    },
+    {
+      "id": "ke",
+      "name": "Kenya",
+      "country": "Kenya",
+      "region": null,
+      "authority": {
+        "name": "County fisheries authorities / Kenya Fisheries Service",
+        "url": "https://new.kenyalaw.org/akn/ke/act/ln/2024/127/eng%402024-08-02/source"
+      },
+      "buyUrl": null,
+      "summary": "Recreational anglers must apply to the county where they will fish. The 2024 rules require a personal fishing licence; do not assume a boat or club licence covers the client.",
+      "whoNeedsOne": [
+        "People who engage in recreational fishing in Kenyan fishery waters."
+      ],
+      "exemptions": [],
+      "options": [
+        {
+          "name": "Recreational fishing licence",
+          "who": "any",
+          "duration": null,
+          "price": null,
+          "currency": "KES",
+          "water": "both"
+        }
+      ],
+      "extras": [],
+      "saltwater": null,
+      "guidedTrips": null,
+      "keyRules": [
+        "Release fish unless the regulations permit retention of an injured or dead fish.",
+        "Observe the licensed fishing area and conditions."
+      ],
+      "howToBuy": "Apply to the relevant county fisheries authority. Confirm the separate trout permit route with Kenya Fisheries Service.",
+      "sources": [
+        {
+          "title": "County fisheries authorities / Kenya Fisheries Service",
+          "url": "https://new.kenyalaw.org/akn/ke/act/ln/2024/127/eng%402024-08-02/source"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Confirm current county fees, licence duration, processing time and trout-water or park permissions."
+    },
+    {
+      "id": "ki",
+      "name": "Kiribati",
+      "country": "Kiribati",
+      "region": null,
+      "authority": {
+        "name": "Director of Fisheries",
+        "url": "https://kiribati.gov.ki/sites/default/files/Fisheries%20Act%202010.pdf"
+      },
+      "buyUrl": null,
+      "summary": "Visitors need a personal licence to fish a customary ground belonging to a community of which they are not members. Confirm the island's requirements before assuming that a lodge or boat booking includes permission.",
+      "whoNeedsOne": [
+        "Non-members fishing another community's customary sea, lagoon or reef ground."
+      ],
+      "exemptions": [],
+      "options": [
+        {
+          "name": "Customary fishing-ground licence",
+          "who": "any",
+          "duration": "As endorsed; normally no more than 1 year",
+          "price": null,
+          "currency": "AUD",
+          "water": "saltwater"
+        }
+      ],
+      "extras": [],
+      "saltwater": null,
+      "guidedTrips": null,
+      "keyRules": [
+        "Use the licence only for the approved area and conditions.",
+        "Do not transfer the personal licence."
+      ],
+      "howToBuy": "Apply to the Director of Fisheries for the customary-ground licence.",
+      "sources": [
+        {
+          "title": "Director of Fisheries",
+          "url": "https://kiribati.gov.ki/sites/default/files/Fisheries%20Act%202010.pdf"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Confirm Kiritimati and other island visitor permits, current fees, local bylaws and charter client coverage."
+    },
+    {
+      "id": "ls",
+      "name": "Lesotho",
+      "country": "Lesotho",
+      "region": null,
+      "authority": {
+        "name": "Fisheries Unit / Lesotho Highlands Development Authority",
+        "url": "https://www.lhda.org.ls/home/tourism"
+      },
+      "buyUrl": null,
+      "summary": "Lesotho operates a fisheries permit system, but the available official guidance does not specify visitor angling terms. Ask the Fisheries Unit or LHDA about the exact river or dam before you fish.",
+      "whoNeedsOne": [],
+      "exemptions": [],
+      "options": [],
+      "extras": [],
+      "saltwater": null,
+      "guidedTrips": null,
+      "keyRules": [],
+      "howToBuy": "Contact the Fisheries Unit; for Katse or Mohale, contact LHDA's tourism or information office.",
+      "sources": [
+        {
+          "title": "Lesotho government 2025 national review, fisheries permit system",
+          "url": "https://lesotho.un.org/sites/default/files/2025-07/Lesotho%202025%20Voluntary%20National%20Review%2000001.pdf"
+        },
+        {
+          "title": "LHDA tourism offices",
+          "url": "https://www.lhda.org.ls/home/tourism"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Confirm visitor eligibility, the fishing and boat permits, current fees, duration and catch rules. No nationwide visitor exemption is verified."
+    },
+    {
+      "id": "mg",
+      "name": "Madagascar",
+      "country": "Madagascar",
+      "region": null,
+      "authority": {
+        "name": "Ministry responsible for Fisheries",
+        "url": "https://www.pic.commerce.mg/sites/default/files/2023-01/D2016-1308-VF.pdf"
+      },
+      "buyUrl": null,
+      "summary": "Recreational fishing in inland waters requires ministry authorisation. Do not apply the separate subsistence exemption to a visitor's recreational trip.",
+      "whoNeedsOne": [
+        "People who fish recreationally in inland waters."
+      ],
+      "exemptions": [],
+      "options": [
+        {
+          "name": "Inland recreational fishing authorisation",
+          "who": "any",
+          "duration": null,
+          "price": null,
+          "currency": "MGA",
+          "water": "freshwater"
+        }
+      ],
+      "extras": [],
+      "saltwater": null,
+      "guidedTrips": null,
+      "keyRules": [
+        "Do not sell recreational catch.",
+        "State your identity, fishing zones, gear and boat type in the application."
+      ],
+      "howToBuy": "Submit an application to the ministry responsible for fisheries.",
+      "sources": [
+        {
+          "title": "Decree 2016-1308, inland fishing, articles 5–6",
+          "url": "https://www.pic.commerce.mg/sites/default/files/2023-01/D2016-1308-VF.pdf"
+        },
+        {
+          "title": "Ministry fisheries information",
+          "url": "https://www.mpeb.mg/information-sur-la-peche/"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Confirm current marine sport-fishing licences, individual shore cards, fees and charter coverage with the ministry."
+    },
+    {
+      "id": "my",
+      "name": "Malaysia",
+      "country": "Malaysia",
+      "region": null,
+      "authority": {
+        "name": "Department of Fisheries Malaysia",
+        "url": "https://www.dof.gov.my/en/frequently-asked-questions/licensing-faq/"
+      },
+      "buyUrl": null,
+      "summary": "The Fisheries Department does not issue a general individual fisherman's licence. Boat and gear licences, charter approvals and local water rules require separate checks.",
+      "whoNeedsOne": [],
+      "exemptions": [
+        "The department states that it licenses vessels and equipment rather than individual fishermen."
+      ],
+      "options": [],
+      "extras": [
+        {
+          "name": "Marine Department recreational boat or operator approval",
+          "when": "For boats that carry anglers on recreational trips.",
+          "price": null,
+          "currency": "MYR"
+        }
+      ],
+      "saltwater": null,
+      "guidedTrips": "The Marine Department handles permission to carry recreational anglers. This is not permission to use other licensed fishing gear.",
+      "keyRules": [],
+      "howToBuy": "Contact the local District Fisheries Office or Marine Department for the relevant boat and water requirements.",
+      "sources": [
+        {
+          "title": "Department of Fisheries Malaysia",
+          "url": "https://www.dof.gov.my/en/frequently-asked-questions/licensing-faq/"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Confirm state freshwater permits, park restrictions and any visitor registration. The national FAQ does not resolve these."
+    },
+    {
+      "id": "mv",
+      "name": "Maldives",
+      "country": "Maldives",
+      "region": null,
+      "authority": {
+        "name": "Ministry of Fisheries, Agriculture and Ocean Resources",
+        "url": "https://keyolhu.mv/Home/FAQ"
+      },
+      "buyUrl": null,
+      "summary": "The official licensing service describes commercial fishing vessel licences. It does not confirm a personal tourist licence or exemption; ask the ministry about your planned shore or boat trip.",
+      "whoNeedsOne": [
+        "Commercial fishing vessels covered by the fisheries regulations."
+      ],
+      "exemptions": [],
+      "options": [],
+      "extras": [
+        {
+          "name": "Vessel fishing licence",
+          "when": "For commercial fishing vessels within the licensing rules.",
+          "price": null,
+          "currency": "MVR"
+        }
+      ],
+      "saltwater": null,
+      "guidedTrips": null,
+      "keyRules": [],
+      "howToBuy": "Operators apply through Keyolhu. Ask the ministry to confirm any personal visitor or location permission.",
+      "sources": [
+        {
+          "title": "Ministry of Fisheries, Agriculture and Ocean Resources",
+          "url": "https://keyolhu.mv/Home/FAQ"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Confirm personal tourist requirements, protected-area restrictions and charter client coverage; commercial vessel rules alone do not answer these questions."
+    },
+    {
+      "id": "mh",
+      "name": "Marshall Islands",
+      "country": "Marshall Islands",
+      "region": null,
+      "authority": {
+        "name": "Marshall Islands Marine Resources Authority",
+        "url": "https://www.rmimimra.com/media/attachments/2019/09/08/fishingaccessandlicensingact_1.pdf"
+      },
+      "buyUrl": null,
+      "summary": "The licensing law includes sport fishing and vessel licences. It does not provide a clear visitor angler application route; confirm national and local council permission before you fish.",
+      "whoNeedsOne": [
+        "Domestic-based and foreign fishing vessels require the applicable licence."
+      ],
+      "exemptions": [],
+      "options": [],
+      "extras": [
+        {
+          "name": "Sport-fishing or local council authorisation",
+          "when": "MIMRA and the local council must confirm the permissions for your trip.",
+          "price": null,
+          "currency": "USD"
+        }
+      ],
+      "saltwater": null,
+      "guidedTrips": null,
+      "keyRules": [
+        "Use a vessel with the required valid licence.",
+        "Follow the licence conditions."
+      ],
+      "howToBuy": "Ask MIMRA and the local government council about the trip and fishing area.",
+      "sources": [
+        {
+          "title": "Marshall Islands Marine Resources Authority",
+          "url": "https://www.rmimimra.com/media/attachments/2019/09/08/fishingaccessandlicensingact_1.pdf"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Confirm whether an individual visitor needs a permit, its fee and whether charter approval covers clients."
+    },
+    {
+      "id": "mu",
+      "name": "Mauritius",
+      "country": "Mauritius",
+      "region": null,
+      "authority": {
+        "name": "Ministry responsible for Fisheries",
+        "url": "https://blueconomy.govmu.org/Documents/Fisheries%20Regulations/Fisheries%20Act%202023.pdf"
+      },
+      "buyUrl": null,
+      "summary": "Sport and recreational anglers do not need the artisanal fisher registration. Boat licensing is separate, and the exemption does not give permission to fish in a protected area.",
+      "whoNeedsOne": [],
+      "exemptions": [
+        "Sports and recreational anglers are exempt from fisher registration under section 120(2)."
+      ],
+      "options": [],
+      "extras": [
+        {
+          "name": "Vessel licence",
+          "when": "Where the vessel and fishing activity fall within the Fisheries Act licensing requirements.",
+          "price": null,
+          "currency": "MUR"
+        }
+      ],
+      "saltwater": null,
+      "guidedTrips": null,
+      "keyRules": [
+        "Do not interfere with a registered fisher's lawful activity.",
+        "A foreign fishing vessel needs the applicable licence."
+      ],
+      "howToBuy": "Ask the fisheries ministry about vessel and location permissions; no artisanal fisher registration is needed for recreational angling.",
+      "sources": [
+        {
+          "title": "Ministry responsible for Fisheries",
+          "url": "https://blueconomy.govmu.org/Documents/Fisheries%20Regulations/Fisheries%20Act%202023.pdf"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Confirm any additional personal authorisation, marine park rules and charter conditions. The verified exemption concerns fisher registration."
+    },
+    {
+      "id": "mn",
+      "name": "Mongolia",
+      "country": "Mongolia",
+      "region": null,
+      "authority": {
+        "name": "Ministry responsible for Environment / local governors",
+        "url": "https://legalinfo.mn/en/edtl/16532634566601"
+      },
+      "buyUrl": null,
+      "summary": "Fishing permission depends on the species and purpose under the Law on Fauna. A household fishing permit does not establish a visitor's permission to target rare fish.",
+      "whoNeedsOne": [
+        "Anglers who require a household or special-purpose permission under the Law on Fauna."
+      ],
+      "exemptions": [],
+      "options": [],
+      "extras": [
+        {
+          "name": "Special-purpose or rare-species permission",
+          "when": "Where the species and fishing purpose require central environmental approval.",
+          "price": null,
+          "currency": "MNT"
+        }
+      ],
+      "saltwater": null,
+      "guidedTrips": null,
+      "keyRules": [],
+      "howToBuy": "Ask the local governor and environmental authority which permission applies to your species and trip.",
+      "sources": [
+        {
+          "title": "Ministry responsible for Environment / local governors",
+          "url": "https://legalinfo.mn/en/edtl/16532634566601"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Confirm the tourist permit, taimen authorisation, approved operator, current fees and catch-and-release conditions. Household eligibility does not establish tourist eligibility."
+    },
+    {
+      "id": "ma",
+      "name": "Morocco",
+      "country": "Morocco",
+      "region": null,
+      "authority": {
+        "name": "National Agency for Water and Forests — Ifrane National Park",
+        "url": "https://ifrane.pnm.ma/peche/"
+      },
+      "buyUrl": null,
+      "summary": "Freshwater anglers in Ifrane National Park need a daily or annual fishing permit. Amghass waters require a special permit, and some waters allow catch and release only.",
+      "whoNeedsOne": [
+        "Anglers in the regulated inland waters described by Ifrane National Park."
+      ],
+      "exemptions": [],
+      "options": [
+        {
+          "name": "Ifrane inland daily permit",
+          "who": "any",
+          "duration": "1 day",
+          "price": null,
+          "currency": "MAD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Ifrane inland annual permit",
+          "who": "any",
+          "duration": "1 year",
+          "price": null,
+          "currency": "MAD",
+          "water": "freshwater"
+        }
+      ],
+      "extras": [
+        {
+          "name": "Amghass special permit",
+          "when": "For the Amghass waters specified by the park.",
+          "price": null,
+          "currency": "MAD"
+        }
+      ],
+      "saltwater": null,
+      "guidedTrips": null,
+      "keyRules": [
+        "Release all fish in designated no-kill waters.",
+        "Follow the rules for the exact lake or river."
+      ],
+      "howToBuy": "Obtain the inland permit from the National Hydrobiology and Fish Farming Centre in Azrou.",
+      "sources": [
+        {
+          "title": "National Agency for Water and Forests — Ifrane National Park",
+          "url": "https://ifrane.pnm.ma/peche/"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Confirm current fees, national inland coverage and saltwater shore or boat requirements with the relevant fisheries office."
+    },
+    {
+      "id": "mz",
+      "name": "Mozambique",
+      "country": "Mozambique",
+      "region": null,
+      "authority": {
+        "name": "National Fisheries Administration",
+        "url": "https://adnap.gov.mz/download/regulamento-da-pesca-recreativa-de-desportiva"
+      },
+      "buyUrl": null,
+      "summary": "Each recreational angler needs a personal licence, including foreign visitors. The licence covers its issuing province; annual licences are limited to nationals and foreign residents.",
+      "whoNeedsOne": [
+        "Recreational anglers in marine and inland waters, with or without a boat."
+      ],
+      "exemptions": [],
+      "options": [
+        {
+          "name": "Daily recreational licence",
+          "who": "any",
+          "duration": "1 day",
+          "price": null,
+          "currency": "MZN",
+          "water": "both"
+        },
+        {
+          "name": "Weekly recreational licence",
+          "who": "any",
+          "duration": "1 week",
+          "price": null,
+          "currency": "MZN",
+          "water": "both"
+        },
+        {
+          "name": "Monthly recreational licence",
+          "who": "any",
+          "duration": "1 month",
+          "price": null,
+          "currency": "MZN",
+          "water": "both"
+        }
+      ],
+      "extras": [
+        {
+          "name": "Conservation-area access fee",
+          "when": "When fishing within a conservation area under its management plan.",
+          "price": null,
+          "currency": "MZN"
+        }
+      ],
+      "saltwater": null,
+      "guidedTrips": "Licensing is individual; arrange each client's licence as well as any boat and area permissions.",
+      "keyRules": [
+        "Carry identification that matches your personal licence.",
+        "Follow the province and dates on the licence.",
+        "An angler under 16 must have a parent, guardian or legal representative present."
+      ],
+      "howToBuy": "Apply to the provincial fisheries authority or its authorised issuing office with identification.",
+      "sources": [
+        {
+          "title": "Recreational and sport fishing regulations, Decree 82/2021",
+          "url": "https://sibmoz.gov.mz/content/uploads/2022/02/Decreto-82_2021-Regulamento-da-Pesca-Recreativa-e-Desportiva.pdf"
+        },
+        {
+          "title": "ADNAP regulations",
+          "url": "https://adnap.gov.mz/download/regulamento-da-pesca-recreativa-de-desportiva"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Confirm current provincial fees and the available application channel."
+    },
+    {
+      "id": "na",
+      "name": "Namibia",
+      "country": "Namibia",
+      "region": null,
+      "authority": {
+        "name": "Fisheries Ministry — Fisheries Law Enforcement",
+        "url": "https://mfmr.gov.na/directorate-operations"
+      },
+      "buyUrl": null,
+      "summary": "Recreational marine anglers need a fishing permit. Freshwater fishing has a separate licence, so confirm which permit covers your river or coast.",
+      "whoNeedsOne": [
+        "People who harvest marine resources for recreation.",
+        "People who fish inland waters unless a legal exemption applies."
+      ],
+      "exemptions": [],
+      "options": [
+        {
+          "name": "Marine recreational permit",
+          "who": "any",
+          "duration": null,
+          "price": null,
+          "currency": "NAD",
+          "water": "saltwater"
+        },
+        {
+          "name": "Freshwater recreational licence",
+          "who": "any",
+          "duration": null,
+          "price": null,
+          "currency": "NAD",
+          "water": "freshwater"
+        }
+      ],
+      "extras": [],
+      "saltwater": "Use the marine recreational permit for sea fishing; inland licensing is separate.",
+      "guidedTrips": null,
+      "keyRules": [
+        "Show your marine permit to a fisheries inspector on request.",
+        "Do not cut or dislodge red bait from its substrate; collect only washed-up red bait."
+      ],
+      "howToBuy": "Obtain the relevant form from the fisheries ministry and confirm the local issuing office.",
+      "sources": [
+        {
+          "title": "Fisheries Law Enforcement and recreational permit information",
+          "url": "https://mfmr.gov.na/directorate-operations"
+        },
+        {
+          "title": "Marine recreational fishing rules",
+          "url": "https://mfmr.gov.na/documents/411764/424491/Harvesting%2Bfor%2BRecreational%2BPurposes.pdf/7e61b71b-8050-6e35-a74c-d72c1368fd3a"
+        },
+        {
+          "title": "Inland fishing licences",
+          "url": "https://kavangoeastrc.gov.na/en/fishing-licences"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Confirm current foreign-visitor fees, permit duration, closed areas and charter arrangements."
+    },
+    {
+      "id": "np",
+      "name": "Nepal",
+      "country": "Nepal",
+      "region": null,
+      "authority": {
+        "name": "Department of National Parks and Wildlife Conservation",
+        "url": "https://dnpwc.gov.np/media/rules/%E0%A4%9A%E0%A4%A4%E0%A4%B5%E0%A4%A8-%E0%A4%B0%E0%A4%B7%E0%A4%9F%E0%A4%B0%E0%A4%AF-%E0%A4%A8%E0%A4%95%E0%A4%9E%E0%A4%9C-%E0%A4%A8%E0%A4%AF%E0%A4%AE%E0%A4%B5%E0%A4%B2-%E0%A5%A8%E0%A5%A6%E0%A5%A9%E0%A5%A6.pdf"
+      },
+      "buyUrl": null,
+      "summary": "Protected-area fishing needs the relevant park or conservation-area permit. A park entrance ticket does not itself establish fishing permission, and rules outside protected areas need a local check.",
+      "whoNeedsOne": [
+        "Anglers in protected areas where fishing requires a specific permit."
+      ],
+      "exemptions": [],
+      "options": [],
+      "extras": [
+        {
+          "name": "Park or conservation-area fishing permit",
+          "when": "Before fishing in a protected area that permits the activity.",
+          "price": null,
+          "currency": "NPR"
+        }
+      ],
+      "saltwater": null,
+      "guidedTrips": null,
+      "keyRules": [],
+      "howToBuy": "Ask the park warden or conservation-area office for fishing permission and conditions.",
+      "sources": [
+        {
+          "title": "Chitwan National Park Regulations",
+          "url": "https://dnpwc.gov.np/media/rules/%E0%A4%9A%E0%A4%A4%E0%A4%B5%E0%A4%A8-%E0%A4%B0%E0%A4%B7%E0%A4%9F%E0%A4%B0%E0%A4%AF-%E0%A4%A8%E0%A4%95%E0%A4%9E%E0%A4%9C-%E0%A4%A8%E0%A4%AF%E0%A4%AE%E0%A4%B5%E0%A4%B2-%E0%A5%A8%E0%A5%A6%E0%A5%A9%E0%A5%A6.pdf"
+        },
+        {
+          "title": "Government conservation-area regulations, official law copy",
+          "url": "https://faolex.fao.org/docs/pdf/nep187182.pdf"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Confirm the current fee, allowed river section, method and permit outside protected areas."
+    },
+    {
+      "id": "nz-fish-and-game",
+      "name": "New Zealand — Fish & Game",
+      "country": "New Zealand",
+      "region": null,
+      "authority": {
+        "name": "Fish & Game New Zealand",
+        "url": "https://www.fishandgame.org.nz/freshwater-fishing-in-new-zealand/fishing-licences-and-regulations/general-fishing-licence-info/"
+      },
+      "buyUrl": "https://fishandgame.eslltd.co.nz/",
+      "summary": "Everyone who fishes for sports fish needs a licence, including children and visitors. Overseas visitors need a non-resident licence; Fish & Game licences do not cover Taupo.",
+      "whoNeedsOne": [
+        "All anglers who fish for sports fish such as trout and salmon.",
+        "Overseas visitors must use the non-resident day or season option."
+      ],
+      "exemptions": [],
+      "options": [
+        {
+          "name": "Non-resident adult day",
+          "who": "non-resident",
+          "duration": "24 hours",
+          "price": 39,
+          "currency": "NZD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Non-resident adult season",
+          "who": "non-resident",
+          "duration": "1 October–30 September",
+          "price": 273,
+          "currency": "NZD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Non-resident junior or child day",
+          "who": "non-resident",
+          "duration": "24 hours",
+          "price": 24,
+          "currency": "NZD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Non-resident junior or child season",
+          "who": "non-resident",
+          "duration": "1 October–30 September",
+          "price": 52,
+          "currency": "NZD",
+          "water": "freshwater"
+        }
+      ],
+      "extras": [
+        {
+          "name": "Designated waters licence",
+          "when": "Non-residents need the full-season licence plus the relevant designated-waters permission.",
+          "price": null,
+          "currency": "NZD"
+        },
+        {
+          "name": "Sea-run salmon endorsement",
+          "when": "Where the regional rules require it.",
+          "price": null,
+          "currency": "NZD"
+        }
+      ],
+      "saltwater": "No general sea fishing licence is required. Marine reserves, catch limits and local closures still apply.",
+      "guidedTrips": "Each angler must carry a valid licence; a guide does not replace the personal requirement.",
+      "keyRules": [
+        "Carry your valid licence.",
+        "Check the rules for the Fish & Game region.",
+        "Do not use felt-soled waders."
+      ],
+      "howToBuy": "Buy through Fish & Game's online licence service or a licence agent.",
+      "sources": [
+        {
+          "title": "General licence rules",
+          "url": "https://www.fishandgame.org.nz/freshwater-fishing-in-new-zealand/fishing-licences-and-regulations/general-fishing-licence-info/"
+        },
+        {
+          "title": "2026–27 licence options",
+          "url": "https://www.fishandgame.org.nz/freshwater-fishing-in-new-zealand/fishing-licences-and-regulations/standard-licence-options"
+        },
+        {
+          "title": "Sea fishing rules",
+          "url": "https://www.mpi.govt.nz/fishing-aquaculture/recreational-fishing/fishing-rules"
+        },
+        {
+          "title": "Government fishing guidance",
+          "url": "https://www.govt.nz/browse/recreation-and-the-environment/hunting-and-fishing/fishing/"
+        }
+      ],
+      "checked": "2026-11-11"
+    },
+    {
+      "id": "nz-taupo",
+      "name": "Taupo Trout Fishery",
+      "country": "New Zealand",
+      "region": "Taupo",
+      "authority": {
+        "name": "Department of Conservation",
+        "url": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/central-north-island/places/taupo-trout-fishery/other-pages/licences"
+      },
+      "buyUrl": "https://permits-licences.doc.govt.nz/buy-fishing-licences/",
+      "summary": "You need a Taupo licence to fish for trout in the Taupo Fishing District. A Fish & Game licence is not valid here, and a Taupo licence does not cover other Fish & Game waters.",
+      "whoNeedsOne": [
+        "Trout anglers in the Taupo Fishing District, including visitors and children."
+      ],
+      "exemptions": [],
+      "options": [
+        {
+          "name": "Non-resident adult day",
+          "who": "non-resident",
+          "duration": "24 hours",
+          "price": 23,
+          "currency": "NZD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Non-resident adult week",
+          "who": "non-resident",
+          "duration": "1 week",
+          "price": 89,
+          "currency": "NZD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Non-resident adult season",
+          "who": "non-resident",
+          "duration": "1 July–30 June",
+          "price": 169,
+          "currency": "NZD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Non-resident child day",
+          "who": "non-resident",
+          "duration": "24 hours",
+          "price": 5,
+          "currency": "NZD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Non-resident child season",
+          "who": "non-resident",
+          "duration": "1 July–30 June",
+          "price": 13.5,
+          "currency": "NZD",
+          "water": "freshwater"
+        }
+      ],
+      "extras": [
+        {
+          "name": "Lake Rotoaira permit",
+          "when": "Lake Rotoaira has a separate permit; a Taupo licence is not required in addition.",
+          "price": null,
+          "currency": "NZD"
+        }
+      ],
+      "saltwater": null,
+      "guidedTrips": null,
+      "keyRules": [
+        "Choose the correct resident or non-resident category.",
+        "Adult licences apply from age 18 on 1 July."
+      ],
+      "howToBuy": "Buy through the Department of Conservation's online fishing licence shop.",
+      "sources": [
+        {
+          "title": "Taupo licences and fees",
+          "url": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/central-north-island/places/taupo-trout-fishery/other-pages/licences"
+        }
+      ],
+      "checked": "2026-11-11"
+    },
+    {
+      "id": "nu",
+      "name": "Niue",
+      "country": "Niue",
+      "region": null,
+      "authority": {
+        "name": "Department of Agriculture, Forestry and Fisheries",
+        "url": "https://www.gov.nu/media/pages/information/bfc8b91513-1764012795/niue_laws_vol2_ul2022.pdf"
+      },
+      "buyUrl": null,
+      "summary": "Niue requires a licence for boats continuously based on the island. A general personal licence for visiting anglers is not confirmed in the official text. Boat permission does not remove reserve closures or Sunday restrictions.",
+      "whoNeedsOne": [
+        "Boats continuously based in Niue need a boat licence before they put to sea."
+      ],
+      "exemptions": [
+        "Visiting yachts and their ancillary boats are exempt from the local boat licence if they do not operate for hire or reward."
+      ],
+      "options": [],
+      "extras": [
+        {
+          "name": "Local boat licence",
+          "when": "For a boat continuously based in Niue.",
+          "price": null,
+          "currency": "NZD"
+        }
+      ],
+      "saltwater": "The Sunday restriction applies in internal waters and the territorial sea.",
+      "guidedTrips": null,
+      "keyRules": [
+        "Do not fish between 4 am and 9 pm on Sunday in internal waters or the territorial sea.",
+        "Do not enter a marine reserve or an area closed by a fono for fishing.",
+        "Do not take egg-bearing or soft-shell crustaceans."
+      ],
+      "howToBuy": "Ask the fisheries officer about the boat licence and rules for your fishing area.",
+      "sources": [
+        {
+          "title": "Department of Agriculture, Forestry and Fisheries",
+          "url": "https://www.gov.nu/media/pages/information/bfc8b91513-1764012795/niue_laws_vol2_ul2022.pdf"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Confirm personal visitor requirements and current local closures with the fisheries officer."
+    },
+    {
+      "id": "om",
+      "name": "Oman",
+      "country": "Oman",
+      "region": null,
+      "authority": {
+        "name": "Ministry of Agriculture, Fisheries Wealth and Water Resources",
+        "url": "https://gov.om/en/w/get-a-fishing-amateur-license-annual-daily"
+      },
+      "buyUrl": null,
+      "summary": "Oman's official service offers daily and annual recreational fishing licences for rod fishing from boats or tourist vessels. It names Omanis and expatriates; short-stay visitors should confirm their eligibility.",
+      "whoNeedsOne": [
+        "Boat and tourist-vessel anglers covered by the ministry's recreational licensing service."
+      ],
+      "exemptions": [],
+      "options": [
+        {
+          "name": "Daily recreational licence",
+          "who": "any",
+          "duration": "1 day",
+          "price": null,
+          "currency": "OMR",
+          "water": "saltwater"
+        },
+        {
+          "name": "Annual recreational licence",
+          "who": "any",
+          "duration": "1 year",
+          "price": null,
+          "currency": "OMR",
+          "water": "saltwater"
+        }
+      ],
+      "extras": [],
+      "saltwater": null,
+      "guidedTrips": null,
+      "keyRules": [],
+      "howToBuy": "Use the Gov.om recreational fishing licence service or contact the fisheries ministry.",
+      "sources": [
+        {
+          "title": "Ministry of Agriculture, Fisheries Wealth and Water Resources",
+          "url": "https://gov.om/en/w/get-a-fishing-amateur-license-annual-daily"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Confirm tourist eligibility, fees, shore exemptions and whether a charter arranges a personal licence."
+    },
+    {
+      "id": "pw",
+      "name": "Palau",
+      "country": "Palau",
+      "region": null,
+      "authority": {
+        "name": "Koror State Government — Conservation Law Enforcement",
+        "url": "https://www.kororstategov.com/pdf/rangers/Tour-Guide-Interactive-Study-Booklet.pdf"
+      },
+      "buyUrl": null,
+      "summary": "Non-Palauan anglers need a Koror State fishing permit in Koror waters. A permit does not open conservation areas or docks to fishing, and other states require separate checks.",
+      "whoNeedsOne": [
+        "Non-Palauan citizens who fish in Koror State waters."
+      ],
+      "exemptions": [],
+      "options": [
+        {
+          "name": "Koror visitor fishing permit",
+          "who": "non-resident",
+          "duration": null,
+          "price": null,
+          "currency": "USD",
+          "water": "saltwater"
+        }
+      ],
+      "extras": [],
+      "saltwater": null,
+      "guidedTrips": null,
+      "keyRules": [
+        "Do not fish in conservation areas.",
+        "Do not fish from docks under the visitor permit.",
+        "Do not catch or harass sharks."
+      ],
+      "howToBuy": "Ask Koror State Conservation Law Enforcement for the current visitor permit and approved purchase channel.",
+      "sources": [
+        {
+          "title": "Koror State Government — Conservation Law Enforcement",
+          "url": "https://www.kororstategov.com/pdf/rangers/Tour-Guide-Interactive-Study-Booklet.pdf"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Confirm the 2026 fee, permit duration, shore restrictions, Rock Islands access permit and rules in other Palau states."
+    },
+    {
+      "id": "pg",
+      "name": "Papua New Guinea",
+      "country": "Papua New Guinea",
+      "region": null,
+      "authority": {
+        "name": "National Fisheries Authority",
+        "url": "https://www.fisheries.gov.pg/nfa-licensing-information"
+      },
+      "buyUrl": null,
+      "summary": "The national licensing page covers fishing vessels and related businesses. It does not confirm a general visitor angling licence or exemption; check your trip with NFA before travel.",
+      "whoNeedsOne": [],
+      "exemptions": [],
+      "options": [],
+      "extras": [
+        {
+          "name": "Fishing vessel or operator approval",
+          "when": "Where NFA licensing applies to the vessel or fishing business.",
+          "price": null,
+          "currency": "PGK"
+        }
+      ],
+      "saltwater": null,
+      "guidedTrips": null,
+      "keyRules": [],
+      "howToBuy": "Contact NFA to confirm the relevant approval and any local permission for your water.",
+      "sources": [
+        {
+          "title": "NFA licensing information",
+          "url": "https://www.fisheries.gov.pg/nfa-licensing-information"
+        },
+        {
+          "title": "NFA licensing policy",
+          "url": "https://www.fisheries.gov.pg/_files/ugd/2c6676_e4128df7cfc34807bebf903c8f41a4fc.pdf"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Confirm individual visitor requirements, customary-water access, protected areas and charter client coverage. Do not use commercial licence fees as personal angling prices."
+    },
+    {
+      "id": "ph",
+      "name": "Philippines",
+      "country": "Philippines",
+      "region": null,
+      "authority": {
+        "name": "Bureau of Fisheries and Aquatic Resources / local government units",
+        "url": "https://issuances-library.senate.gov.ph/legislative%2Bissuances/Republic%20Act%20No.%2010654"
+      },
+      "buyUrl": null,
+      "summary": "The Fisheries Code allows an exception for leisure fishing without commercial or livelihood purposes. It says this activity may be allowed, so confirm local permission instead of treating it as a national visitor exemption.",
+      "whoNeedsOne": [],
+      "exemptions": [
+        "Non-commercial leisure fishing may be allowed under section 86; confirm the local application of this exception."
+      ],
+      "options": [],
+      "extras": [
+        {
+          "name": "Local government fishing permission",
+          "when": "Where the local government requires authorisation for the water and activity.",
+          "price": null,
+          "currency": "PHP"
+        }
+      ],
+      "saltwater": null,
+      "guidedTrips": null,
+      "keyRules": [],
+      "howToBuy": "Ask the local government fisheries office and BFAR about visitor fishing at the exact location.",
+      "sources": [
+        {
+          "title": "Republic Act 10654, amended section 86",
+          "url": "https://issuances-library.senate.gov.ph/legislative%2Bissuances/Republic%20Act%20No.%2010654"
+        },
+        {
+          "title": "BFAR Fisheries Code and local government powers",
+          "url": "https://bfar4a.da.gov.ph/ra-8550/"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Confirm foreign-visitor eligibility, local permits, protected-area access, fees and charter client coverage."
+    },
+    {
+      "id": "qa",
+      "name": "Qatar",
+      "country": "Qatar",
+      "region": null,
+      "authority": {
+        "name": "Qatar Tourism",
+        "url": "https://visitqatar.com/intl-en/things-to-do/adventure-sports/the-water/fishing"
+      },
+      "buyUrl": null,
+      "summary": "No general recreational fishing licence is required, according to Qatar Tourism. Fishing vessels still need licences, and restricted areas still apply.",
+      "whoNeedsOne": [],
+      "exemptions": [
+        "Recreational anglers do not need an individual licence under the official tourism guidance."
+      ],
+      "options": [],
+      "extras": [
+        {
+          "name": "Fishing vessel licence",
+          "when": "The vessel must be licensed for a boat trip.",
+          "price": null,
+          "currency": "QAR"
+        }
+      ],
+      "saltwater": "Check local restrictions for the shore or boat fishing area.",
+      "guidedTrips": "Use a licensed vessel. Qatar Tourism does not require an individual recreational licence.",
+      "keyRules": [
+        "Observe local restricted areas.",
+        "Use a licensed fishing vessel."
+      ],
+      "howToBuy": "No individual licence purchase is listed. Arrange any vessel or location permissions with the operator.",
+      "sources": [
+        {
+          "title": "Qatar Tourism",
+          "url": "https://visitqatar.com/intl-en/things-to-do/adventure-sports/the-water/fishing"
+        }
+      ],
+      "checked": "2026-11-11"
+    },
+    {
+      "id": "ws",
+      "name": "Samoa",
+      "country": "Samoa",
+      "region": null,
+      "authority": {
+        "name": "Ministry of Agriculture and Fisheries",
+        "url": "https://www.ag.gov.ws/wp-content/uploads/2024/02/Fisheries-Management-Act-2016.pdf"
+      },
+      "buyUrl": null,
+      "summary": "A Samoan vessel used solely for sport or recreation is exempt from the fishing vessel licence if no catch is for sale. This exemption does not settle village access or foreign-vessel rules.",
+      "whoNeedsOne": [],
+      "exemptions": [
+        "Samoan vessels used solely for sport, pleasure, recreation or subsistence, without intended catch sales."
+      ],
+      "options": [],
+      "extras": [],
+      "saltwater": null,
+      "guidedTrips": null,
+      "keyRules": [
+        "Do not use the recreational exemption if the catch is intended for sale.",
+        "Check the rules of the coastal village fisheries management area."
+      ],
+      "howToBuy": "Ask the Fisheries Division and the relevant village about your location and vessel.",
+      "sources": [
+        {
+          "title": "Ministry of Agriculture and Fisheries",
+          "url": "https://www.ag.gov.ws/wp-content/uploads/2024/02/Fisheries-Management-Act-2016.pdf"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Confirm individual tourist requirements, foreign-vessel permits and village access before travel."
+    },
+    {
+      "id": "sa",
+      "name": "Saudi Arabia",
+      "country": "Saudi Arabia",
+      "region": null,
+      "authority": {
+        "name": "Saudi government — Zawel sailing permits",
+        "url": "https://my.gov.sa/en/services/20828"
+      },
+      "buyUrl": null,
+      "summary": "A fishing boat trip needs the appropriate sailing permit through Zawel. This vessel permission does not confirm a tourist's personal fishing entitlement. Check the rules for your shore site or charter before you fish.",
+      "whoNeedsOne": [],
+      "exemptions": [],
+      "options": [],
+      "extras": [
+        {
+          "name": "Zawel sailing permit",
+          "when": "For a vessel trip, with the fishing purpose, area, dates and passengers recorded.",
+          "price": null,
+          "currency": "SAR"
+        }
+      ],
+      "saltwater": null,
+      "guidedTrips": "Ask the operator to arrange the vessel's sailing permit and enter the passenger details. Personal visitor requirements need separate confirmation.",
+      "keyRules": [],
+      "howToBuy": "The vessel operator applies through the Zawel sailing-permit service.",
+      "sources": [
+        {
+          "title": "Saudi government — Zawel sailing permits",
+          "url": "https://my.gov.sa/en/services/20828"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Confirm tourist eligibility, any personal fishing licence, shore exemptions and current fees with the fisheries authority."
+    },
+    {
+      "id": "sn",
+      "name": "Senegal",
+      "country": "Senegal",
+      "region": null,
+      "authority": {
+        "name": "Ministry responsible for Maritime Fisheries",
+        "url": "https://www.dri.gouv.sn/sites/default/files/an-documents/LOI-N-2015-18-DU-13-JUILLET-2015.pdf"
+      },
+      "buyUrl": null,
+      "summary": "Sport-fishing boats need a valid ministry permit. Leisure fishing also needs authorisation, so a visitor should not assume shore fishing is automatically exempt.",
+      "whoNeedsOne": [
+        "Sport-fishing vessels under articles 58–59.",
+        "People who practise leisure fishing under article 61."
+      ],
+      "exemptions": [],
+      "options": [],
+      "extras": [
+        {
+          "name": "Sport-fishing vessel permit",
+          "when": "For sport fishing from any type of boat.",
+          "price": null,
+          "currency": "XOF"
+        }
+      ],
+      "saltwater": null,
+      "guidedTrips": "The sport-fishing permit identifies a vessel affiliated with an approved club or fishing centre. Confirm each client's requirements with the ministry.",
+      "keyRules": [
+        "Do not sell sport-fishing catch.",
+        "Use a boat with a valid permit for the activity."
+      ],
+      "howToBuy": "Apply through the competent maritime fisheries service.",
+      "sources": [
+        {
+          "title": "Ministry responsible for Maritime Fisheries",
+          "url": "https://www.dri.gouv.sn/sites/default/files/an-documents/LOI-N-2015-18-DU-13-JUILLET-2015.pdf"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Confirm individual authorisation, current fees, duration and inland-water rules."
+    },
+    {
+      "id": "sc",
+      "name": "Seychelles",
+      "country": "Seychelles",
+      "region": null,
+      "authority": {
+        "name": "Seychelles Fisheries Authority",
+        "url": "https://www.sfa.sc/faq-recreational-fisheries/"
+      },
+      "buyUrl": null,
+      "summary": "No general licence is required for recreational fishing under the published exemption. You cannot sell or trade the catch, and fishing restrictions still apply.",
+      "whoNeedsOne": [],
+      "exemptions": [
+        "Recreational fishing is exempt under section 71 of the 2025 Act, unless regulations prescribe otherwise."
+      ],
+      "options": [],
+      "extras": [],
+      "saltwater": "The recreational exemption applies in Seychelles waters; it does not remove area, species or gear restrictions.",
+      "guidedTrips": null,
+      "keyRules": [
+        "Do not sell, barter or supply recreational catch to a commercial business.",
+        "Do not use spearguns.",
+        "Observe the Mahe Plateau species and daily catch limits."
+      ],
+      "howToBuy": "No general personal recreational licence purchase is required under the exemption.",
+      "sources": [
+        {
+          "title": "Recreational fisheries FAQ",
+          "url": "https://www.sfa.sc/faq-recreational-fisheries/"
+        },
+        {
+          "title": "Fisheries and Aquaculture Act 2025, section 71",
+          "url": "https://www.sfa.sc/wp-content/uploads/2025/09/Act-3-2025-Fisheries-and-Aquaculture-Act-2025.pdf"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Confirm sport-fishing charter licensing and marine park access with SFA; the personal recreational exemption does not settle operator approvals."
+    },
+    {
+      "id": "sg",
+      "name": "Singapore",
+      "country": "Singapore",
+      "region": null,
+      "authority": {
+        "name": "PUB / Singapore Food Agency",
+        "url": "https://www.pub.gov.sg/Public/Places-of-Interest/Our-Reservoirs-and-Waterways/ABC-Waters/PUB-Fishing"
+      },
+      "buyUrl": null,
+      "summary": "Ordinary rod fishing with no more than three hooks does not need the fishing-gear licence. At PUB reservoirs and waterways, fish only in marked areas and use artificial lures.",
+      "whoNeedsOne": [
+        "Users of regulated fishing gear, including nets, traps and lines with more than three hooks."
+      ],
+      "exemptions": [
+        "Ordinary rod-and-line gear with no more than three hooks falls outside the listed gear requiring a licence."
+      ],
+      "options": [],
+      "extras": [
+        {
+          "name": "Fishing-gear licence",
+          "when": "For regulated gear such as nets, traps or lines with more than three hooks.",
+          "price": null,
+          "currency": "SGD"
+        },
+        {
+          "name": "PUB vessel or organised activity permit",
+          "when": "Where the reservoir rules require approval for a vessel or event.",
+          "price": null,
+          "currency": "SGD"
+        }
+      ],
+      "saltwater": "Separate port, vessel and site rules can apply at sea.",
+      "guidedTrips": null,
+      "keyRules": [
+        "Fish only in marked PUB fishing areas.",
+        "Use artificial lures in PUB reservoirs and waterways."
+      ],
+      "howToBuy": "No ordinary rod-and-line gear licence is needed. Apply to SFA or PUB for the relevant special gear or activity approval.",
+      "sources": [
+        {
+          "title": "PUB fishing areas and rules",
+          "url": "https://www.pub.gov.sg/Public/Places-of-Interest/Our-Reservoirs-and-Waterways/ABC-Waters/PUB-Fishing"
+        },
+        {
+          "title": "Fishing Gear Rules",
+          "url": "https://sso.agc.gov.sg/SL/FA1966-R6"
+        },
+        {
+          "title": "Reservoir and waterway regulations",
+          "url": "https://sso.agc.gov.sg/SL/PUA2001-S401-2006?DocDate=20250929&ProvIds=pr7-&ValidDate=20251001"
+        }
+      ],
+      "checked": "2026-11-11"
+    },
+    {
+      "id": "sb",
+      "name": "Solomon Islands",
+      "country": "Solomon Islands",
+      "region": null,
+      "authority": {
+        "name": "Ministry of Fisheries and Marine Resources — Fisheries Management Act 2015",
+        "url": "https://faolex.fao.org/docs/pdf/sol153557.pdf"
+      },
+      "buyUrl": null,
+      "summary": "The Act generally exempts recreational fishing, so no general licence applies under that exemption. A specific rule or fisheries management plan can change this. Visitors who take a boat into customary waters need the customary rights holders' permission.",
+      "whoNeedsOne": [],
+      "exemptions": [
+        "Recreational fishing is outside the Act's general scope unless the Act or a fisheries management plan specifies otherwise."
+      ],
+      "options": [],
+      "extras": [
+        {
+          "name": "Customary-water permission",
+          "when": "Before a visitor uses a boat to fish in or enter waters subject to customary rights.",
+          "price": null,
+          "currency": "SBD"
+        }
+      ],
+      "saltwater": null,
+      "guidedTrips": "Game-fishing operators need a tourism licence. Ask the operator to confirm customary-water permission and the local fisheries management plan.",
+      "keyRules": [
+        "Obtain permission before a visitor's boat enters or fishes in customary waters.",
+        "Follow any fishing closure or restriction in the local fisheries management plan."
+      ],
+      "howToBuy": "Arrange customary-water permission with the relevant rights holders. Check local permit requirements with the fisheries ministry.",
+      "sources": [
+        {
+          "title": "Fisheries Management Act 2015, sections 3 and 21",
+          "url": "https://faolex.fao.org/docs/pdf/sol153557.pdf"
+        },
+        {
+          "title": "Solomon Islands government — tourism licences",
+          "url": "https://solomons.gov.sb/tourism-solomons/essential-services/how-to-obtain-a-tourism-license/"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Confirm whether a local management plan imposes a recreational permit or fee."
+    },
+    {
+      "id": "za",
+      "name": "South Africa",
+      "country": "South Africa",
+      "region": null,
+      "authority": {
+        "name": "Department of Forestry, Fisheries and the Environment",
+        "url": "https://www.dffe.gov.za/mediareleases/onlineapplication_recreationalfishingpermits"
+      },
+      "buyUrl": "https://www.fishing.dffe.gov.za",
+      "summary": "Marine recreational fishing requires a permit. Freshwater licences follow provincial rules, and a provincial licence may not cover a national park.",
+      "whoNeedsOne": [
+        "Recreational marine anglers.",
+        "Freshwater anglers where provincial rules require a licence; Western Cape public waters require one above age six."
+      ],
+      "exemptions": [
+        "CapeNature states that no freshwater angling licence is required for privately owned farm dams."
+      ],
+      "options": [
+        {
+          "name": "Marine monthly recreational permit",
+          "who": "any",
+          "duration": "1 month",
+          "price": null,
+          "currency": "ZAR",
+          "water": "saltwater"
+        },
+        {
+          "name": "Marine annual recreational permit",
+          "who": "any",
+          "duration": "1 year",
+          "price": null,
+          "currency": "ZAR",
+          "water": "saltwater"
+        },
+        {
+          "name": "Western Cape freshwater angling licence",
+          "who": "any",
+          "duration": null,
+          "price": 45,
+          "currency": "ZAR",
+          "water": "freshwater"
+        }
+      ],
+      "extras": [
+        {
+          "name": "National park fishing permission",
+          "when": "Where a national park has separate fishing rules.",
+          "price": null,
+          "currency": "ZAR"
+        }
+      ],
+      "saltwater": "The DFFE marine permit differs from provincial freshwater licences.",
+      "guidedTrips": null,
+      "keyRules": [
+        "Choose the permit category for your fishing activity.",
+        "Do not use a CapeNature freshwater licence as permission for a national park."
+      ],
+      "howToBuy": "Buy marine permits through DFFE's eFishing portal. Apply to the relevant provincial authority for freshwater licences.",
+      "sources": [
+        {
+          "title": "DFFE online permit service",
+          "url": "https://www.dffe.gov.za/mediareleases/onlineapplication_recreationalfishingpermits"
+        },
+        {
+          "title": "CapeNature freshwater permits",
+          "url": "https://www.capenature.co.za/recreational-fishing-permit-dams-and-rivers"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Confirm current marine fees, species endorsements, charter client requirements and the province-specific freshwater rules."
+    },
+    {
+      "id": "kr",
+      "name": "South Korea",
+      "country": "South Korea",
+      "region": null,
+      "authority": {
+        "name": "Korea Legislation Research Institute — Fishing Management and Promotion Act",
+        "url": "https://elaw.klri.re.kr/eng_mobile/subjectViewer.do?hseq=56301&key=09&pCode=140&pName=Camping&type=subject"
+      },
+      "buyUrl": null,
+      "summary": "The official Act licenses fishing venues and registers fishing-boat businesses. It does not establish a clear general licence route for visiting anglers. Check local fishing restrictions and your operator's requirements before the trip.",
+      "whoNeedsOne": [],
+      "exemptions": [],
+      "options": [],
+      "extras": [],
+      "saltwater": null,
+      "guidedTrips": "Use a registered fishing-boat business. A child under 14 must have a guardian on board.",
+      "keyRules": [
+        "Do not fish in an area designated as a prohibited fishing area.",
+        "Follow the operator's life-jacket instructions.",
+        "A child under 14 needs a guardian on a fishing boat."
+      ],
+      "howToBuy": null,
+      "sources": [
+        {
+          "title": "Korea Legislation Research Institute — Fishing Management and Promotion Act",
+          "url": "https://elaw.klri.re.kr/eng_mobile/subjectViewer.do?hseq=56301&key=09&pCode=140&pName=Camping&type=subject"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Confirm any personal licence, local-water permit and current restrictions with the local government or registered operator."
+    },
+    {
+      "id": "lk",
+      "name": "Sri Lanka",
+      "country": "Sri Lanka",
+      "region": null,
+      "authority": {
+        "name": "Department of Fisheries and Aquatic Resources",
+        "url": "https://fisheriesdept.gov.lk/regulations/"
+      },
+      "buyUrl": null,
+      "summary": "Recreational anglers need a licence, including tourists. The tourist fee is charged per day; a boat's registration is a separate requirement.",
+      "whoNeedsOne": [
+        "Anyone who takes part in recreational fishing."
+      ],
+      "exemptions": [],
+      "options": [
+        {
+          "name": "Tourist visa holder recreational licence fee",
+          "who": "non-resident",
+          "duration": "Per fishing day",
+          "price": 500,
+          "currency": "LKR",
+          "water": "both"
+        },
+        {
+          "name": "Foreign residence visa holder licence",
+          "who": "resident",
+          "duration": "1 year",
+          "price": 5000,
+          "currency": "LKR",
+          "water": "both"
+        }
+      ],
+      "extras": [
+        {
+          "name": "Recreational vessel registration",
+          "when": "For a boat used for recreational fishing.",
+          "price": null,
+          "currency": "LKR"
+        }
+      ],
+      "saltwater": null,
+      "guidedTrips": "The rules require fishing authority and vessel registration. Confirm that the operator arranges the required permission for each client.",
+      "keyRules": [
+        "Show your licence to an authorised officer on request.",
+        "Release protected fish alive.",
+        "Do not sell or export recreational catch.",
+        "Do not use stainless-steel hooks.",
+        "Respect closed seasons and protected areas."
+      ],
+      "howToBuy": "Send Form A and the fee to the Director-General through the Fisheries Department.",
+      "sources": [
+        {
+          "title": "Department regulations list",
+          "url": "https://fisheriesdept.gov.lk/regulations/"
+        },
+        {
+          "title": "Recreational Fishing Management Regulations 2023, official gazette",
+          "url": "https://www.documents.gov.lk/view/extra-gazettes/2023/2/2319-19_E.pdf"
+        },
+        {
+          "title": "Official gazette copy hosted by FAO",
+          "url": "https://faolex.fao.org/docs/pdf/SRL231518.pdf"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Confirm the issued tourist licence dates: the regulations state annual validity but charge tourist visa holders per day."
+    },
+    {
+      "id": "tz",
+      "name": "Tanzania",
+      "country": "Tanzania",
+      "region": null,
+      "authority": {
+        "name": "Ministry of Livestock and Fisheries — Fisheries Act",
+        "url": "https://trade.tanzania.go.tz/media/Fisheries-Act-No.-22-of-2003.pdf"
+      },
+      "buyUrl": null,
+      "summary": "Mainland law exempts rod-and-line or handline fishing from a beach without a fishing vessel. This exemption excludes declared trout streams and spawning grounds. Boat trips, conserved areas and Zanzibar need separate checks.",
+      "whoNeedsOne": [
+        "Boat fishing falls outside the beach rod-and-line exemption.",
+        "Fishing in a conserved area needs a licence or other lawful authority."
+      ],
+      "exemptions": [
+        "Rod-and-line or handline fishing from a beach without a fishing vessel, except in a declared trout stream or spawning ground."
+      ],
+      "options": [],
+      "extras": [
+        {
+          "name": "National park sport-fishing permission and fee",
+          "when": "Where Tanzania National Parks permits sport fishing; each angler pays the applicable fee.",
+          "price": null,
+          "currency": "TZS"
+        }
+      ],
+      "saltwater": "The mainland beach exemption does not extend to a fishing vessel. Check Zanzibar's separate requirements.",
+      "guidedTrips": "A charter does not establish eligibility for the mainland beach exemption. National park sport-fishing rules require a park ranger on board.",
+      "keyRules": [
+        "Do not use the beach exemption in a declared trout stream or spawning ground.",
+        "Obtain permission before fishing in a conserved area.",
+        "National park sport fishing is for anglers aged 12 or older."
+      ],
+      "howToBuy": "Contact the relevant mainland fisheries office or park office. Ask Zanzibar's fisheries authority about trips in Zanzibar.",
+      "sources": [
+        {
+          "title": "Tanzania Fisheries Act, section 22",
+          "url": "https://trade.tanzania.go.tz/media/Fisheries-Act-No.-22-of-2003.pdf"
+        },
+        {
+          "title": "UNODC — official Fisheries Act section 22 text",
+          "url": "https://sherloc.unodc.org/cld/en/legislation/tza/fisheries_act_2003/part_v/sections_22_23_/sections_22_23.html?lng=en&tmpl=sherloc"
+        },
+        {
+          "title": "Tanzania National Parks — sport-fishing guidelines",
+          "url": "https://www.tanzaniaparks.go.tz/uploads/publications/en-1568735609-Guidelines%20for%20Sports%20fishing.pdf"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Confirm current boat-fishing permits, fees and Zanzibar rules for the exact trip."
+    },
+    {
+      "id": "th",
+      "name": "Thailand",
+      "country": "Thailand",
+      "region": null,
+      "authority": {
+        "name": "Department of Fisheries — national report to the Indian Ocean Tuna Commission",
+        "url": "https://iotc.org/sites/default/files/documents/2024/11/IOTC-2024-SC27-NR28E_Thailand.pdf"
+      },
+      "buyUrl": null,
+      "summary": "Thailand's official marine fisheries report states that recreational fishing is not regulated under its fisheries legislation. It therefore identifies no general marine recreational licence. Protected waters can still prohibit fishing, and freshwater access needs a separate check.",
+      "whoNeedsOne": [],
+      "exemptions": [
+        "The official marine fisheries report identifies no general recreational licensing scheme."
+      ],
+      "options": [],
+      "extras": [],
+      "saltwater": "The no-general-licence statement comes from the marine fisheries report. It does not establish freshwater or protected-area access.",
+      "guidedTrips": null,
+      "keyRules": [
+        "Do not fish in a fisheries sanctuary without the specific legal authorisation.",
+        "Check protected-area restrictions before you fish."
+      ],
+      "howToBuy": null,
+      "sources": [
+        {
+          "title": "Thailand national fisheries report 2024, recreational fishery section",
+          "url": "https://iotc.org/sites/default/files/documents/2024/11/IOTC-2024-SC27-NR28E_Thailand.pdf"
+        },
+        {
+          "title": "Department of Fisheries — Royal Ordinance on Fisheries",
+          "url": "https://www.fisheries.go.th/law/images/PR2558/6-royalfisheries.pdf"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Confirm current local rules, freshwater permission and any park authorisation. A park entrance ticket does not establish fishing permission."
+    },
+    {
+      "id": "to",
+      "name": "Tonga",
+      "country": "Tonga",
+      "region": null,
+      "authority": {
+        "name": "Ministry of Fisheries",
+        "url": "https://www.tongafish.gov.to/index.php/application-forms/local-fishing-vessel"
+      },
+      "buyUrl": null,
+      "summary": "Paid sport-fishing boats need a commercial sport fishing vessel licence. Community-managed waters can require additional permits, so boat approval alone does not settle local access.",
+      "whoNeedsOne": [
+        "Operators who use a vessel for sport fishing for reward or hire."
+      ],
+      "exemptions": [],
+      "options": [],
+      "extras": [
+        {
+          "name": "Commercial sport fishing vessel licence",
+          "when": "For a paid or hired sport-fishing vessel.",
+          "price": null,
+          "currency": "TOP"
+        },
+        {
+          "name": "Community-area permit",
+          "when": "Where a Special Management Area requires local permission.",
+          "price": null,
+          "currency": "TOP"
+        }
+      ],
+      "saltwater": null,
+      "guidedTrips": "The vessel must hold a commercial sport fishing licence. Confirm any individual or community permit with the ministry.",
+      "keyRules": [
+        "Stay within the areas and methods stated on the vessel licence.",
+        "Follow the local rules in Special Management Areas."
+      ],
+      "howToBuy": "Operators apply to the Ministry of Fisheries using the commercial sport fishing vessel forms.",
+      "sources": [
+        {
+          "title": "Fisheries Management Act 2002, section 30",
+          "url": "https://www.tongafish.gov.to/images/documents/Legislations/Act/Fisheries%20Management%20Act%202002.pdf"
+        },
+        {
+          "title": "Community and vessel regulations",
+          "url": "https://fisheries.gov.to/fisheries-regulation/"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Confirm whether independent visitors need a personal permit and ask for current community rules and fees."
+    },
+    {
+      "id": "tn",
+      "name": "Tunisia",
+      "country": "Tunisia",
+      "region": null,
+      "authority": {
+        "name": "Ministry of Agriculture, Water Resources and Maritime Fisheries",
+        "url": "https://lake.jort.tn/journal-officiel/fr/2025/048.pdf"
+      },
+      "buyUrl": null,
+      "summary": "Sea fishing with a rod from shore does not require the recreational authorisation. Boat fishing does; the permit belongs to the boat owner and allows accompanying anglers within the boat's capacity.",
+      "whoNeedsOne": [
+        "Owners of recreational fishing boats.",
+        "Recreational spearfishers under separate conditions."
+      ],
+      "exemptions": [
+        "Sea fishing with a rod on foot from shore."
+      ],
+      "options": [],
+      "extras": [
+        {
+          "name": "Recreational boat fishing authorisation",
+          "when": "For fishing from a pleasure boat.",
+          "price": null,
+          "currency": "TND"
+        }
+      ],
+      "saltwater": "The shore-rod exemption does not extend to boat fishing or spearfishing.",
+      "guidedTrips": "The authorised boat owner may carry accompanying anglers up to the vessel's approved capacity.",
+      "keyRules": [
+        "Use only one rod at a time on a recreational boat.",
+        "Carry no more than three rods per angler aboard.",
+        "The daily catch limit is 5 kg per angler, except one fish heavier than 5 kg.",
+        "Do not sell recreational catch."
+      ],
+      "howToBuy": "Ask the competent fisheries authority for the boat or spearfishing authorisation.",
+      "sources": [
+        {
+          "title": "Ministry of Agriculture, Water Resources and Maritime Fisheries",
+          "url": "https://lake.jort.tn/journal-officiel/fr/2025/048.pdf"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Confirm the application office, fees and inland-water permits."
+    },
+    {
+      "id": "ug",
+      "name": "Uganda",
+      "country": "Uganda",
+      "region": null,
+      "authority": {
+        "name": "Directorate of Fisheries Resources / Uganda Wildlife Authority",
+        "url": "https://fisheries.go.ug/?dad=info&id=10&jc=file"
+      },
+      "buyUrl": null,
+      "summary": "Recreational fishing requires a permit from the Chief Fisheries Officer or an authorised issuer. National park fishing permits exclude park entrance fees.",
+      "whoNeedsOne": [
+        "People who fish for sport, recreation or amusement."
+      ],
+      "exemptions": [],
+      "options": [
+        {
+          "name": "Recreational fishing permit",
+          "who": "any",
+          "duration": null,
+          "price": null,
+          "currency": "UGX",
+          "water": "freshwater"
+        }
+      ],
+      "extras": [
+        {
+          "name": "National park entry",
+          "when": "In addition to a UWA sport-fishing permit.",
+          "price": null,
+          "currency": "USD"
+        }
+      ],
+      "saltwater": null,
+      "guidedTrips": null,
+      "keyRules": [],
+      "howToBuy": "Contact the Directorate of Fisheries Resources or Uganda Wildlife Authority for the relevant water.",
+      "sources": [
+        {
+          "title": "Fisheries and Aquaculture Act, section 43",
+          "url": "https://fisheries.go.ug/?dad=info&id=10&jc=file"
+        },
+        {
+          "title": "UWA sport-fishing permit categories and separate entry charges",
+          "url": "https://ugandawildlife.org/wp-content/uploads/2024/03/UWA-Conservation-Tariff-July-2024-June-2026.pdf"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "The available UWA tariff expired in June 2026. Confirm the current fee, duration, park rules and guide arrangements."
+    },
+    {
+      "id": "ae",
+      "name": "United Arab Emirates",
+      "country": "United Arab Emirates",
+      "region": null,
+      "authority": {
+        "name": "Environment Agency — Abu Dhabi",
+        "url": "https://www.ead.gov.ae/en/experience-green-abu-dhabi/things-to-know/recreational-fishing"
+      },
+      "buyUrl": "https://www.tamm.abudhabi/",
+      "summary": "Fishing licences depend on the emirate. Abu Dhabi requires an individual recreational licence, including on a licensed fishing excursion. An operator's licence does not replace the client's licence.",
+      "whoNeedsOne": [
+        "Each angler covered by Abu Dhabi's recreational licensing rules, including clients on licensed excursions."
+      ],
+      "exemptions": [
+        "In Abu Dhabi, children under 18 may fish with an adult who holds a valid licence."
+      ],
+      "options": [
+        {
+          "name": "Abu Dhabi weekly recreational licence",
+          "who": "any",
+          "duration": "1 week",
+          "price": 30,
+          "currency": "AED",
+          "water": "saltwater"
+        },
+        {
+          "name": "Abu Dhabi annual recreational licence",
+          "who": "any",
+          "duration": "1 year",
+          "price": 120,
+          "currency": "AED",
+          "water": "saltwater"
+        }
+      ],
+      "extras": [],
+      "saltwater": "Abu Dhabi's licence covers recreational fishing under its local rules. Do not assume it is valid in another emirate.",
+      "guidedTrips": "In Abu Dhabi, each client needs the individual licence unless an exemption applies. The company's approval is separate.",
+      "keyRules": [
+        "Show the Abu Dhabi licence when an authorised officer requests it.",
+        "Do not fish in prohibited or protected areas.",
+        "Use permitted shore sites and follow the local boat-fishing rules."
+      ],
+      "howToBuy": "Apply for the Abu Dhabi licence through the TAMM website or app.",
+      "sources": [
+        {
+          "title": "Environment Agency — Abu Dhabi recreational fishing",
+          "url": "https://www.ead.gov.ae/en/experience-green-abu-dhabi/things-to-know/recreational-fishing"
+        },
+        {
+          "title": "Abu Dhabi recreational fishing factsheet",
+          "url": "https://www.ead.gov.ae/-/media/Project/EAD/EAD/Documents/KnowledgeHub/Resources-and-Materials/EN-Recreational-Fishing-Factsheet-2023.pdf"
+        },
+        {
+          "title": "UAE government — fishing regulation",
+          "url": "https://u.ae/en/information-and-services/environment-and-energy/animal-welfare/regulating-fishing-practices"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Confirm visitor application requirements and the rules in each other emirate. Abu Dhabi applicants must be at least 18."
+    },
+    {
+      "id": "vu",
+      "name": "Vanuatu",
+      "country": "Vanuatu",
+      "region": null,
+      "authority": {
+        "name": "Vanuatu Fisheries Department",
+        "url": "https://fisheries.gov.vu/media/attachments/2024/06/10/fisheries-act-no.-10-of-2014.pdf"
+      },
+      "buyUrl": null,
+      "summary": "Private recreational fishing is exempt from the commercial fishing licence under the published tuna plan. Commercial game-fishing vessels use a local fishing licence; confirm local access before your trip.",
+      "whoNeedsOne": [],
+      "exemptions": [
+        "Private recreational and subsistence fishing do not require a commercial licence under the published tuna management plan."
+      ],
+      "options": [],
+      "extras": [
+        {
+          "name": "Local fishing vessel licence",
+          "when": "For commercial game-fishing operations.",
+          "price": null,
+          "currency": "VUV"
+        }
+      ],
+      "saltwater": null,
+      "guidedTrips": "The Fisheries Act provides a local vessel licence for game-fishing operations. Confirm any separate client requirement with the department.",
+      "keyRules": [
+        "Do not take protected turtles, dugongs, whales or dolphins.",
+        "Do not take egg-bearing lobsters."
+      ],
+      "howToBuy": "Ask the Fisheries Department to confirm the charter's licence and any local access permission.",
+      "sources": [
+        {
+          "title": "Fisheries Act 2014, section 36",
+          "url": "https://fisheries.gov.vu/media/attachments/2024/06/10/fisheries-act-no.-10-of-2014.pdf"
+        },
+        {
+          "title": "Tuna management plan, recreational exemption",
+          "url": "https://fisheries.gov.vu/media/attachments/2024/06/11/vanuatu-fisheries_revised-tuna-management-plan-2014.pdf"
+        },
+        {
+          "title": "Vanuatu Tourism Office fishing rules",
+          "url": "https://www.vanuatu.travel/en/things-to-do/fishing"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Confirm whether any current personal angler or customary-area permit applies; a commercial-licence exemption is not unrestricted access."
+    },
+    {
+      "id": "vn",
+      "name": "Vietnam",
+      "country": "Vietnam",
+      "region": null,
+      "authority": {
+        "name": "Vietnam government — Law on Fisheries",
+        "url": "https://vanban.chinhphu.vn/?classid=1&docid=192336&pageid=27160&typegroupid=3"
+      },
+      "buyUrl": null,
+      "summary": "Vietnam's Fisheries Law requires a fishing licence for fishing vessels at least 6 metres long. This vessel rule does not confirm a personal licence requirement for visiting anglers. Check the local water and the operator's permissions before you fish.",
+      "whoNeedsOne": [
+        "Fishing vessels with a maximum length of at least 6 metres require a fishing licence under Article 50."
+      ],
+      "exemptions": [],
+      "options": [],
+      "extras": [
+        {
+          "name": "Fishing vessel licence",
+          "when": "For fishing vessels at least 6 metres long; this is a vessel requirement.",
+          "price": null,
+          "currency": "VND"
+        }
+      ],
+      "saltwater": null,
+      "guidedTrips": "Ask the operator to confirm the boat's required licence and permission for the fishing area. Personal visitor requirements are not confirmed.",
+      "keyRules": [],
+      "howToBuy": "Ask the provincial fisheries authority about the exact water and fishing activity.",
+      "sources": [
+        {
+          "title": "Vietnam government — Law 18/2017/QH14",
+          "url": "https://vanban.chinhphu.vn/?classid=1&docid=192336&pageid=27160&typegroupid=3"
+        },
+        {
+          "title": "Ministry of Justice legal database — Fisheries Law, Article 50",
+          "url": "https://vbpl.moj.gov.vn/dienbien/Pages/vbpq-toanvan.aspx?ItemID=126307"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Confirm personal visitor requirements, shore and freshwater access, protected-area permission and current fees."
+    },
+    {
+      "id": "zm",
+      "name": "Zambia",
+      "country": "Zambia",
+      "region": null,
+      "authority": {
+        "name": "Department of Fisheries",
+        "url": "https://www.businesslicenses.gov.zm/printlicense/id/310"
+      },
+      "buyUrl": null,
+      "summary": "The official licence registry lists a monthly recreational permit for non-residents. A lodge's institutional angling permit is a separate category; confirm whether your trip includes personal permission.",
+      "whoNeedsOne": [
+        "Non-residents who apply for recreational fishing permission."
+      ],
+      "exemptions": [],
+      "options": [
+        {
+          "name": "Non-resident recreational permit",
+          "who": "non-resident",
+          "duration": "1 month",
+          "price": 840,
+          "currency": "ZMW",
+          "water": "freshwater"
+        }
+      ],
+      "extras": [
+        {
+          "name": "Institutional angling permit",
+          "when": "A separate permit category for lodges, camps and hotels.",
+          "price": null,
+          "currency": "ZMW"
+        }
+      ],
+      "saltwater": null,
+      "guidedTrips": null,
+      "keyRules": [],
+      "howToBuy": "Contact the Department of Fisheries at the Ministry of Fisheries and Livestock.",
+      "sources": [
+        {
+          "title": "Official recreational licence fees",
+          "url": "https://www.businesslicenses.gov.zm/printlicense/id/310"
+        },
+        {
+          "title": "Official licence registry — institutional angling",
+          "url": "https://www.businesslicenses.gov.zm/browse/business-types/licenses/3"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Confirm the current fee, seasonal closures, park permissions and whether the lodge permit covers you."
+    },
+    {
+      "id": "zw",
+      "name": "Zimbabwe",
+      "country": "Zimbabwe",
+      "region": null,
+      "authority": {
+        "name": "Zimbabwe Parks and Wildlife Management Authority",
+        "url": "https://www.zimparks.org.zw/media/2024/04/SI-362-OF-1990-PARKS-AND-WILD-LIFE-GENERAL.pdf"
+      },
+      "buyUrl": null,
+      "summary": "ZimParks issues fishing permits for waters under its rules. A general angling-society block permit excludes Chimanimani and Rhodes Inyanga National Parks, so check your exact water.",
+      "whoNeedsOne": [
+        "Anglers in waters where ZimParks requires a fishing permit."
+      ],
+      "exemptions": [],
+      "options": [
+        {
+          "name": "ZimParks fishing permit",
+          "who": "any",
+          "duration": null,
+          "price": null,
+          "currency": "USD",
+          "water": "freshwater"
+        }
+      ],
+      "extras": [],
+      "saltwater": null,
+      "guidedTrips": null,
+      "keyRules": [
+        "Follow the species and catch limits on your permit.",
+        "Submit a catch return if the permit or an officer requires it."
+      ],
+      "howToBuy": "Obtain the permit from ZimParks; Kariba's fisheries institute and local ZimParks offices issue daily permits.",
+      "sources": [
+        {
+          "title": "Parks and Wild Life General Regulations, sections 28–30",
+          "url": "https://www.zimparks.org.zw/media/2024/04/SI-362-OF-1990-PARKS-AND-WILD-LIFE-GENERAL.pdf"
+        },
+        {
+          "title": "Lake Kariba Inshore Fishery Management Plan 2023–2032",
+          "url": "https://www.zimparks.org.zw/wp-content/uploads/2024/06/Lake-Kariba-Inshore-Fishery-Management-Plan-2023-2032.pdf"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Confirm current visitor fees, access charges and separate trout-water permits. Published Kariba local subsistence concessions are not visitor rates."
+    }
+  ]
+}

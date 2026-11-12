@@ -21,7 +21,11 @@ LEGAL = {
 'The contact form asks for your name, email address, topic, message and agreement to use those details to answer you. It also sends a form start time, a request identifier and an empty anti-spam field. These help validate requests and avoid duplicate delivery.',
 'If you email us, we receive your address, message, attachments and the usual email headers. Please send only what we need. Do not send payment card details, passwords, identity documents, health records or private details about another person.',
 'Vercel hosts the site and the contact endpoint. Network requests can include an IP address, browser information, requested path, query string, time and technical error information. These are needed to deliver the page, operate the endpoint and investigate abuse. Avoid private information in a URL.',
-'After analytics consent, Google Analytics 4 can receive online identifiers, device and browser details, approximate location and site activity. This is separate from the contact form. We do not ask the browser for precise location.')),
+'After analytics consent, Google Analytics 4 can receive online identifiers, device and browser details, approximate location and site activity. This is separate from the contact form. The weather and tides tools ask for browser location only after you select “Use my location”. Coordinates go to forecast providers and appear in the tool URL.')),
+('tools','Forecasts and trip chat',paragraphs(
+'The weather and tides tools send a place query or selected coordinates to Open-Meteo, and station requests to NOAA. These services also receive normal network request information.',
+'When you send a chat question, the site sends up to 12 recent messages and the current page path through Vercel AI Gateway to the configured Anthropic model. Do not include sensitive details. The server uses an IP address for a temporary abuse limit.',
+'The chat saves recent messages in session storage for this tab. Clear removes this browser history. The application does not keep a separate chat database. Provider records and retention depend on provider settings.')),
 ('plans','Your local plan and shared links',paragraphs(
 'The planner saves a plan in local storage on your browser. This can include your destination, trip type, dates, group size, equipment choices and checklist state. The site has no central plan account or cloud plan database.',
 'Your plan can remain on a shared device. Clear site data when appropriate. Export a copy first if you want to keep it. A different browser or device does not automatically receive your plan.',
@@ -174,8 +178,10 @@ LEGAL = {
 'Use this control to reopen the existing consent banner. You can also use Cookie settings in any footer. The choice applies to this browser and site; it does not automatically apply to another device.')+SETTINGS),
 ('meaning','Cookies, local storage and temporary values',paragraphs(
 'A cookie is a small browser value that can accompany requests to its domain. Local storage stays in the browser and is read by site code. Local storage does not have a built-in expiry unless the site checks one.',
-'The table lists the persistent values written by the current site code or its consented Google tag. The site does not use sessionStorage. Temporary contact identifiers, anti-spam timing values and motion state stay in page memory; the site does not save them as persistent keys.')),
+'The table lists the persistent values written by the current site code or its consented Google tag. The chat history and NOAA station list use sessionStorage for the current tab. Temporary contact identifiers, anti-spam timing values and motion state stay in page memory; the site does not save them as persistent keys.')),
 ('inventory','Current cookie and storage inventory','<div class="legal-table-wrap" role="region" aria-label="Cookie and storage inventory" tabindex="0"><table><caption>Castward browser storage as of November 10, 2026</caption><thead><tr><th scope="col">Exact key</th><th scope="col">Type and provider</th><th scope="col">Purpose and trigger</th><th scope="col">Duration</th></tr></thead><tbody>'+
+'<tr><th scope="row"><code>castward.chat.v1</code></th><td>Session storage · Castward</td><td>Recent trip chat messages after a completed answer.</td><td>Until Clear, tab closure, or browser removal.</td></tr>'+
+'<tr><th scope="row"><code>castward.tide-stations.v1</code></th><td>Session storage · Castward</td><td>Caches the NOAA station list after a tide request.</td><td>Until tab closure or browser removal.</td></tr>'+
 '<tr><th scope="row"><code>fishing-atlas.plan.v1</code></th><td>Local storage · Castward</td><td>Saves planner choices when you save or change a plan. Functional storage for the feature you request.</td><td>No automatic expiry. Until removed or replaced, or cleared by the browser.</td></tr>'+
 '<tr><th scope="row"><code>castward.analytics-consent.v1</code></th><td>Local storage · Castward</td><td>Saves your acceptance or rejection and its timestamp when you select a consent button.</td><td>Choice valid for 180 days. The stored record can remain until replaced or cleared, but an expired acceptance does not enable analytics.</td></tr>'+
 '<tr><th scope="row"><code>_ga</code></th><td>First-party cookie · Google Analytics</td><td>Distinguishes browser visits after analytics acceptance.</td><td>Configured to 180 days; can renew with activity. Browser limits can shorten it.</td></tr>'+
@@ -222,7 +228,7 @@ LEGAL = {
 ('weather','Weather and water conditions',paragraphs(
 'Weather, tides, river flow, dam releases, swell, visibility, heat and lightning can change. A seasonal guide describes a pattern or source reference; it does not forecast the day of your trip.',
 'Use official local forecasts and alerts before departure and during the trip where possible. Ask the captain or guide about cancellation limits and safe shelter. A favorable app icon is not a complete marine or river assessment.',
-'The site does not connect to a live weather or water-condition feed. Verify any time-sensitive information at its official source.')),
+'The weather and tides tools fetch forecast data from Open-Meteo and NOAA. Forecasts can be unavailable or inaccurate. Verify time-sensitive information at its official source.')),
 ('rules','Licences, limits and closures',paragraphs(
 'Check the responsible authority for the exact water and date. Confirm the required licences and permits, lawful methods, seasons, size and possession limits, protected species and access restrictions.',
 'A documented fishing month does not mean a legal open season. Rules can differ between adjacent waters, resident and visitor anglers, shore and boat fishing, or target species.',
@@ -250,7 +256,7 @@ LEGAL = {
 ('summary','How Castward may earn money',paragraphs(
 'Castward may earn a commission if you follow a marked affiliate link and complete an eligible purchase or booking. This can create a financial interest in the link. You should know about that interest before you choose.',
 'The current site provides trip information, independent source links and retailer category searches. It does not accept booking payments or operate a native booking checkout. A future guide booking slot is not evidence that a paid partnership already exists.',
-'This page explains the policy for future commercial links as well as any link-specific disclosure. It does not claim membership in a particular affiliate program.')),
+'This page explains the policy for future commercial links as well as any link-specific disclosure. Castward is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn fees by linking to Amazon.com. As an Amazon Associate, Castward earns from qualifying purchases.')),
 ('labels','Look for a disclosure beside the link',paragraphs(
 'A material relationship should be clear near the relevant recommendation or link. A suitable message is: “Castward may earn a commission if you book or buy through this link.” Paid editorial placements should be identified as sponsored.',
 'This general page does not replace a disclosure at the point where you make a decision. A disclosure hidden only in the footer is not our intended approach.',

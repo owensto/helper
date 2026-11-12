@@ -1,0 +1,1956 @@
+{
+  "sources": {
+    "base-rei": {
+      "title": "REI: How to choose base layers",
+      "url": "https://www.rei.com/learn/expert-advice/underwear.html",
+      "checked": "2026-11-11",
+      "scopeNote": "Base fabric, fit, drying, odor and abrasion tradeoffs."
+    },
+    "layers-rei": {
+      "title": "REI: How to dress in layers",
+      "url": "https://www.rei.com/learn/expert-advice/layering-basics.html",
+      "checked": "2026-11-11",
+      "scopeNote": "Base, insulation and shell roles; cotton and damp insulation."
+    },
+    "wool-benefits": {
+      "title": "Woolmark: Wool fibre facts and benefits",
+      "url": "https://www.woolmark.com/fibre",
+      "checked": "2026-11-11",
+      "scopeNote": "Moisture, odor and temperature management."
+    },
+    "wool-base": {
+      "title": "Woolmark: Merino wool base layers",
+      "url": "https://www.woolmark.com/performance/merino-wool-base-layers/",
+      "checked": "2026-11-11",
+      "scopeNote": "Light and heavy wool layers and their seasonal uses."
+    },
+    "wool-soft": {
+      "title": "Woolmark: Why merino wool is soft",
+      "url": "https://www.woolmark.com/fibre/soft-merino-wool",
+      "checked": "2026-11-11",
+      "scopeNote": "Fibre diameter, flexibility and prickle."
+    },
+    "wool-grades": {
+      "title": "Woolmark: Sustainable material guide, wool",
+      "url": "https://www.woolmark.com/globalassets/_06-new-woolmark/_industry/source-wool/supply-compass/sustainable-material-guide---wool.pdf",
+      "checked": "2026-11-11",
+      "scopeNote": "Ultrafine, superfine and fine micron ranges."
+    },
+    "lambswool": {
+      "title": "Woolmark: Worsted and woollen spinning",
+      "url": "https://www.woolmarklearningcentre.com/globalassets/woolmark-learning-centre/10-resources/facilitator-guides/gd2891-worsted-woollen-spinning-facilitator-guide_2020_final.pdf",
+      "checked": "2026-11-11",
+      "scopeNote": "Lambswool means wool from the first shearing."
+    },
+    "alpaca": {
+      "title": "Alpaca Owners Association: Alpaca handbook, chapter 2",
+      "url": "https://d1zbsmr931x3w0.cloudfront.net/8e9c-78639123-alpaca-handbook-chapter-02.pdf?versionId=TBh3cCsGbnBUhPrUZuBqipv.fe2PnYX8",
+      "checked": "2026-11-11",
+      "scopeNote": "Alpaca fibre, lack of lanolin and blends with merino."
+    },
+    "ice-weights": {
+      "title": "Icebreaker: Choose your base layer",
+      "url": "https://na.icebreaker.com/en-us/blogs/journal/icebreaker-baselayer-guide",
+      "checked": "2026-11-11",
+      "scopeNote": "150, 200, 240 and 320-plus fabric weight classes."
+    },
+    "meriwool-tops": {
+      "title": "Meriwool: Mens tops",
+      "url": "https://www.meriwoollayers.com/collections/mens-tops",
+      "checked": "2026-11-11",
+      "scopeNote": "190 tee and 250 crew product names and listed prices."
+    },
+    "meriwool-250": {
+      "title": "Meriwool: Mens Merino 250 long sleeve",
+      "url": "https://www.meriwoollayers.com/products/mens-merino-250-base-layer-long-sleeve",
+      "checked": "2026-11-11",
+      "scopeNote": "250 gsm, 18.5-micron pure merino and $65 price."
+    },
+    "minus-170": {
+      "title": "Minus33: Ticonderoga lightweight crew",
+      "url": "https://minus33.com/products/ticonderoga-mens-lightweight-wool-crew",
+      "checked": "2026-11-11",
+      "scopeNote": "170 gsm, 17.5-micron wool and $79.99 price."
+    },
+    "smart-season": {
+      "title": "Smartwool: Classic All-Season collection",
+      "url": "https://www.smartwool.com/en-us/collections/classic-all-season-collection",
+      "checked": "2026-11-11",
+      "scopeNote": "150 gsm, nylon core construction and $100 crew price."
+    },
+    "smart-thermal": {
+      "title": "Smartwool: Classic Thermal Merino crew",
+      "url": "https://www.smartwool.com/en-us/products/mens-classic-thermal-merino-base-layer-crew-sw016349?variant=63206702874993",
+      "checked": "2026-11-11",
+      "scopeNote": "250 gsm pure merino, seam construction, care and $115 price."
+    },
+    "smart-bottom": {
+      "title": "Smartwool: Classic Thermal Merino three-quarter bottom",
+      "url": "https://www.smartwool.com/en-us/products/mens-classic-thermal-merino-base-layer-3-4-bottom-sw016365?country=US&currency=USD&variant=63206717915505",
+      "checked": "2026-11-11",
+      "scopeNote": "250 gsm pure merino bottom with a shorter leg."
+    },
+    "ice-oasis": {
+      "title": "Icebreaker: Merino 200 Oasis long sleeve crewe",
+      "url": "https://na.icebreaker.com/en-us/products/mens-merino-200-oasis-long-sleeve-crewe-ib104365580",
+      "checked": "2026-11-11",
+      "scopeNote": "Pure merino, 200 weight, 18.9 microns, care and $120 price."
+    },
+    "smart-review": {
+      "title": "The Great Outdoors: Classic All-Season review",
+      "url": "https://www.thegreatoutdoorsmag.com/review/smartwool-classic-all-season-merino-baselayer/",
+      "checked": "2026-11-11",
+      "scopeNote": "Independent assessment of the nylon-core fabric and cost."
+    },
+    "smart-care": {
+      "title": "Smartwool: Wool washing and care",
+      "url": "https://www.smartwool.com/en-us/pages/how-to-wash-wool-socks",
+      "checked": "2026-11-11",
+      "scopeNote": "Gentle washing, inside-out care and air drying."
+    },
+    "smart-socks": {
+      "title": "Smartwool: Hike Classic Edition light cushion crew",
+      "url": "https://www.smartwool.com/en-us/products/hike-classic-edition-crew-socks-sw012900?variant=63206693503345",
+      "checked": "2026-11-11",
+      "scopeNote": "Crew sock, light cushion and wool/nylon/elastane composition."
+    },
+    "darn-socks": {
+      "title": "Darn Tough: Hiker Micro Crew Midweight",
+      "url": "https://darntough.com/collections/hiking-socks/products/mens-merino-wool-hiker-micro-crew-cushioned-midweight-hiking-socks?variant=43003608531130",
+      "checked": "2026-11-11",
+      "scopeNote": "1466 cushioned midweight sock and $26 price."
+    },
+    "darn-guarantee": {
+      "title": "Darn Tough: Unconditional lifetime guarantee",
+      "url": "https://darntough.com/pages/our-unconditional-lifetime-guarantee",
+      "checked": "2026-11-11",
+      "scopeNote": "Replacement terms, exclusions and US claim process."
+    },
+    "minus-accessories": {
+      "title": "Minus33: Merino wool accessories",
+      "url": "https://minus33.com/collections/wool-accessories",
+      "checked": "2026-11-11",
+      "scopeNote": "Ridge Cuff Beanie, wool glove liners and neck gaiters."
+    },
+    "buff-merino": {
+      "title": "BUFF: Merino wool technology",
+      "url": "https://www.buff.com/ca/merino-wool-technology",
+      "checked": "2026-11-11",
+      "scopeNote": "125 gsm lightweight merino neckwear and heavier variants."
+    },
+    "rws": {
+      "title": "Textile Exchange: Responsible Wool Standard",
+      "url": "https://textileexchange.org/app/uploads/2021/02/RWS-101a-V2.1-Responsible-Wool-Standard.pdf",
+      "checked": "2026-11-11",
+      "scopeNote": "Welfare, land management and wool chain of custody."
+    },
+    "rws-update": {
+      "title": "Textile Exchange: Standards policy updates",
+      "url": "https://hub.textileexchange.org/home/site-wide-content/standards-policy-updates",
+      "checked": "2026-11-11",
+      "scopeNote": "2026 mulesed-restocking exception and approval requirements."
+    },
+    "zq": {
+      "title": "ZQ: Grower standard",
+      "url": "https://www.discoverzq.com/_files/ugd/fdb7ce_8d764e66e96744b986afe90e321ac2bd.pdf",
+      "checked": "2026-11-11",
+      "scopeNote": "ZQ prohibition of mulesing and farm requirements."
+    },
+    "wader-types": {
+      "title": "Outdoor Canada: How to choose fly-fishing waders",
+      "url": "https://www.outdoorcanada.ca/what-you-need-to-know-about-buying-the-perfect-fly-fishing-waders/",
+      "checked": "2026-11-11",
+      "scopeNote": "Hip, waist and chest coverage; breathable and neoprene options."
+    },
+    "neoprene": {
+      "title": "Bass Pro Shops: Waterfowl waders buyers guide",
+      "url": "https://1source.basspro.com/news-tips/duck/27348/waterfowl-waders-buyers-guide",
+      "checked": "2026-11-11",
+      "scopeNote": "3mm and 5mm neoprene insulation tradeoffs."
+    },
+    "wader-review": {
+      "title": "Outdoor Life: The best waders",
+      "url": "https://www.outdoorlife.com/gear/best-waders-fishing-hunting/",
+      "checked": "2026-11-11",
+      "scopeNote": "Independent wader comparison including the budget Canyon II."
+    },
+    "frog-canyon": {
+      "title": "Frogg Toggs: Canyon II stockingfoot chest wader",
+      "url": "https://www.froggtoggs.com/products/canyon-ii-stockingfoot-breathable-chest-wader",
+      "checked": "2026-11-11",
+      "scopeNote": "Four-ply nylon, belt, stockingfeet and $165 price."
+    },
+    "redington-escape": {
+      "title": "Slaney Fishing: Redington Escape waders",
+      "url": "https://slaneyfishing.com/product/redington-escape-waders/",
+      "checked": "2026-11-11",
+      "scopeNote": "Three-layer upper and four-layer lower construction."
+    },
+    "orvis-waders": {
+      "title": "Orvis: Fly-fishing waders",
+      "url": "https://www.orvis.com/fly-fishing/wading-gear/waders",
+      "checked": "2026-11-11",
+      "scopeNote": "Clearwater, PRO and Ultralight products and current prices."
+    },
+    "simms-waders": {
+      "title": "Simms: All waders",
+      "url": "https://www.simmsfishing.com/collections/all-waders",
+      "checked": "2026-11-11",
+      "scopeNote": "Current G3 PRO, G4Z and Freestone prices and models."
+    },
+    "simms-g3": {
+      "title": "Simms: G3 Guide collection",
+      "url": "https://www.simmsfishing.com/collections/g3-guide",
+      "checked": "2026-11-11",
+      "scopeNote": "G3 Guide construction, sale price and Vibram boot option."
+    },
+    "simms-g4": {
+      "title": "Simms: G4Z stockingfoot waders",
+      "url": "https://www.simmsfishing.com/products/g4z-stockingfoot",
+      "checked": "2026-11-11",
+      "scopeNote": "Three/four-layer GORE-TEX Pro and waterproof front zipper."
+    },
+    "simms-fit": {
+      "title": "Simms: Size and fit guide",
+      "url": "https://www.simmsfishing.com/pages/size-fit-guide",
+      "checked": "2026-11-11",
+      "scopeNote": "Girth, inseam and bootie size measurements."
+    },
+    "simms-care": {
+      "title": "Simms: Wader and gear care",
+      "url": "https://www.simmsfishing.com/pages/wader-care",
+      "checked": "2026-11-11",
+      "scopeNote": "Rinse, dry, wash and storage instructions."
+    },
+    "simms-warranty": {
+      "title": "Simms: Warranty and repairs",
+      "url": "https://www.simmsfishing.com/pages/repairs",
+      "checked": "2026-11-11",
+      "scopeNote": "Inspection, repair process and limits of product service life."
+    },
+    "ak-felt": {
+      "title": "Alaska Department of Fish and Game: Invasive species prevention",
+      "url": "https://www.adfg.alaska.gov/index.cfm?adfg=invasive.prevention",
+      "checked": "2026-11-11",
+      "scopeNote": "Alaska freshwater restrictions on felt-soled footwear."
+    },
+    "md-felt": {
+      "title": "Maryland DNR: Felt sole FAQ",
+      "url": "https://dnr.maryland.gov/fisheries/documents/felt_sole_faq.pdf",
+      "checked": "2026-11-11",
+      "scopeNote": "External felt soles prohibited in or within five feet of state waters."
+    },
+    "ffi-safe": {
+      "title": "Fly Fishers International: Fly fishing safety",
+      "url": "https://www.flyfishersinternational.org/Portals/0/LearningCenter/Presentations/FlyFishingSkills/FFI_LC_Curriculum_FF_Safety.pdf",
+      "checked": "2026-11-11",
+      "scopeNote": "Wading belt, staff and conservative wading practice."
+    },
+    "orvis-boots": {
+      "title": "Orvis: Clearwater rubber sole wading boots",
+      "url": "https://www.orvis.com/product/mens-clearwater-wading-boots---rubber-sole/2P92.html",
+      "checked": "2026-11-11",
+      "scopeNote": "Rubber outsole, stud locations, toe protection and $198 price."
+    },
+    "orvis-belt": {
+      "title": "Orvis: Clearwater/Ultralight replacement belt",
+      "url": "https://www.orvis.com/product/clearwaterultralight-waders-replacement-belt/24JC.html",
+      "checked": "2026-11-11",
+      "scopeNote": "Belt compatibility and $19.95 price."
+    },
+    "orvis-staff": {
+      "title": "Orvis: Carbon fiber wading staff",
+      "url": "https://www.orvis.com/product/orvis-wading-staff/3FTS.html",
+      "checked": "2026-11-11",
+      "scopeNote": "Folding staff and belt-mounted sheath."
+    },
+    "simms-studs": {
+      "title": "Simms: Stud and cleat compatibility",
+      "url": "https://www.simmsfishing.com/en-ca/pages/stud-cleat-compatibility-chart",
+      "checked": "2026-11-11",
+      "scopeNote": "HardBite options and rubber/Vibram boot compatibility."
+    },
+    "repair-kit": {
+      "title": "GEAR AID: Aquaseal FD Repair Kit",
+      "url": "https://www.gearaid.com/products/aquaseal-repair-kit",
+      "checked": "2026-11-11",
+      "scopeNote": "Compatible fabrics, dry preparation and 8–12-hour cure time."
+    },
+    "cold-water": {
+      "title": "National Weather Service: Cold water safety",
+      "url": "https://www.weather.gov/safety/coldwater",
+      "checked": "2026-11-11",
+      "scopeNote": "Cold immersion hazards and life jacket use."
+    },
+    "ice-safety": {
+      "title": "Minnesota DNR: Ice safety gear",
+      "url": "https://www.dnr.state.mn.us/safety/ice/ice-safety-gear.html",
+      "checked": "2026-11-11",
+      "scopeNote": "Foam flotation, ice picks and dry spare clothing."
+    },
+    "hh-lifa": {
+      "title": "Helly Hansen: LIFA Active Crew",
+      "url": "https://www.hellyhansen.com/en_us/lifa-active-crew-49389",
+      "checked": "2026-11-11",
+      "scopeNote": "Two-layer polyester/polypropylene base layer."
+    },
+    "columbia-fleece": {
+      "title": "Columbia: Fast Trek II Full Zip Fleece",
+      "url": "https://www.columbia.com/p/mens-fast-trek-ii-full-zip-fleece-1420421.html",
+      "checked": "2026-11-11",
+      "scopeNote": "Polyester microfleece and $65 price."
+    },
+    "patagonia-2026": {
+      "title": "Patagonia: Spring 2026 product guide",
+      "url": "https://www.patagonia.com/on/demandware.static/Sites-patagonia-us-Site/Library-Sites-PatagoniaShared/en_US/PDF-US/GS_S26-021226.pdf",
+      "checked": "2026-11-11",
+      "scopeNote": "Nano Puff 60-g insulation; Torrentshell 3L and listed US prices."
+    },
+    "grundens-neptune": {
+      "title": "Grundens: Neptune 319 jacket",
+      "url": "https://grundens.com/products/neptune-319-jacket?bvstate=pg%3A2%2Fct%3Ar",
+      "checked": "2026-11-11",
+      "scopeNote": "PU-coated polyester shell and $109.99 price."
+    },
+    "grundens-bib": {
+      "title": "Grundens: Neptune 509 bib",
+      "url": "https://grundens.com/products/neptune-509-bib-pant?bvstate=pg%3A2%2Fct%3Ar",
+      "checked": "2026-11-11",
+      "scopeNote": "PU-coated polyester bib and $109.99 listed price."
+    },
+    "frog-rain": {
+      "title": "Frogg Toggs: Ultra-Lite2 waterproof rain suit",
+      "url": "https://www.froggtoggs.com/products/the-frogg-toggsr-ultra-lite2tm-4749",
+      "checked": "2026-11-11",
+      "scopeNote": "Nonwoven jacket and pants with a $32.99 selected price."
+    },
+    "rod-basics": {
+      "title": "Take Me Fishing: How to choose a fishing rod",
+      "url": "https://www.takemefishing.org/how-to-fish/fishing-gear-and-tackle/how-to-choose-a-fishing-rod/",
+      "checked": "2026-11-11",
+      "scopeNote": "Rod material, lure rating and balanced tackle choices."
+    },
+    "ugly-gx2": {
+      "title": "Ugly Stik: GX2 spinning rod",
+      "url": "https://www.uglystik.com/products/gx2-spinning-rod-1624495",
+      "checked": "2026-11-11",
+      "scopeNote": "Graphite/fiberglass blank, stainless guides and $59.95 price."
+    },
+    "stcroix-triumph": {
+      "title": "St Croix: Triumph freshwater rods",
+      "url": "https://stcroixrods.com/products/triumph-freshwater",
+      "checked": "2026-11-11",
+      "scopeNote": "Current 2027 series, SCII carbon and $115–145 listed range."
+    },
+    "daiwa-prices": {
+      "title": "Daiwa: Spinning reels",
+      "url": "https://daiwa.us/collections/spin-reels",
+      "checked": "2026-11-11",
+      "scopeNote": "Revros LT and 2026 BG LT price anchors."
+    },
+    "daiwa-bg": {
+      "title": "Daiwa: BG spinning reel",
+      "url": "https://daiwa.us/collections/reels/products/bg-sw-spinning",
+      "checked": "2026-11-11",
+      "scopeNote": "Original BG aluminum housing and screw-in handle."
+    },
+    "shimano-stradic": {
+      "title": "Shimano: Stradic FM",
+      "url": "https://fish.shimano.com/en-US/product/reels/spinning/frontdrag/a075f00003slvodqas.html",
+      "checked": "2026-11-11",
+      "scopeNote": "Gearing, model specifications and US price table."
+    },
+    "shimano-price": {
+      "title": "Tackle Warehouse: Stradic FM spinning reel",
+      "url": "https://www.tacklewarehouse.com/Shimano_Stradic_FM_Spinning_Reel/descpage-SHSM.html",
+      "checked": "2026-11-11",
+      "scopeNote": "2500HG size price of $254.99."
+    },
+    "shimano-care": {
+      "title": "Shimano: Reel maintenance",
+      "url": "https://fish.shimano.com/it-IT/service/c/Reel-Maintenance.html",
+      "checked": "2026-11-11",
+      "scopeNote": "Gentle fresh-water care without reel immersion."
+    },
+    "aao-polarized": {
+      "title": "American Academy of Ophthalmology: Polarized lenses",
+      "url": "https://www.aao.org/eye-health/glasses-contacts/polarized-lenses",
+      "checked": "2026-11-11",
+      "scopeNote": "Glare reduction and LCD visibility limits."
+    },
+    "aao-uv": {
+      "title": "American Academy of Ophthalmology: Choose sunglasses",
+      "url": "https://www.aao.org/eye-health/glasses-contacts/sunglasses-3",
+      "checked": "2026-11-11",
+      "scopeNote": "UV protection, price and glass/plastic impact tradeoffs."
+    },
+    "sungait": {
+      "title": "SUNGAIT: Metal rectangle polarized sunglasses",
+      "url": "https://www.sungait.com/products/metal-rectangular-sports-sunglasses-driving-fishing",
+      "checked": "2026-11-11",
+      "scopeNote": "Polarized metal-frame model and $18.99 displayed price."
+    },
+    "costa-fantail": {
+      "title": "Costa: Fantail PRO with gray 580G lenses",
+      "url": "https://www.costadelmar.com/en-us/sunglasses/6S9079-97963887533",
+      "checked": "2026-11-11",
+      "scopeNote": "Glass lenses, adjustable nose pads and side coverage."
+    },
+    "xtratuf": {
+      "title": "XTRATUF: Ankle Deck Boot 22733",
+      "url": "https://xtratuf.com/products/22733?variant=47867487912091",
+      "checked": "2026-11-11",
+      "scopeNote": "Waterproof boot, nonmarking sole and $115 price."
+    },
+    "sealline-bag": {
+      "title": "SealLine: Discovery Dry Bag",
+      "url": "https://cascadedesigns.com/products/discovery-dry-bag",
+      "checked": "2026-11-11",
+      "scopeNote": "Roll-top dry bag, welded seams and care."
+    },
+    "sealline-faq": {
+      "title": "SealLine: Frequently asked questions",
+      "url": "https://cascadedesigns.com/pages/faq-sealline",
+      "checked": "2026-11-11",
+      "scopeNote": "Dry bag capacity, closures and water protection classes."
+    },
+    "sealline-limits": {
+      "title": "SealLine: Pro Dry Pack owners manual",
+      "url": "https://www.seallinegear.com/on/demandware.static/-/Library-Sites-cdiSharedLibrary/default/dw39769492/pdf/manuals/Pro_DryPack-OwnersManual_2019_US.pdf",
+      "checked": "2026-11-11",
+      "scopeNote": "Roll-down pack immersion limits and protection of electronics."
+    },
+    "yeti-panga": {
+      "title": "YETI: Panga 28L backpack",
+      "url": "https://www.yeti.com/bags/backpacks/panga-backpack.html",
+      "checked": "2026-11-11",
+      "scopeNote": "28-litre waterproof backpack, closure and $325 price."
+    },
+    "yeti-rating": {
+      "title": "YETI: Outdoor bags and submersion FAQ",
+      "url": "https://www.yeti.com/bags/outdoor-bags?prefn1=collection&prefv1=Panga",
+      "checked": "2026-11-11",
+      "scopeNote": "Panga IPX7 claim with closure, depth and time conditions."
+    },
+    "shimano-expride": {
+      "title": "Shimano: Expride Spinning B",
+      "url": "https://fish.shimano.com/en-US/product/rods/bass/a075f00003xigdwqae.html",
+      "checked": "2026-11-11",
+      "scopeNote": "Hi-Power X blank, Carbon Monocoque handle and CI4+ reel seat."
+    },
+    "sealline-10": {
+      "title": "SealLine: Discovery 10L Dry Bag",
+      "url": "https://cascadedesigns.com/products/discovery-dry-bag?variant=41343688835206",
+      "checked": "2026-11-11",
+      "scopeNote": "10-litre bag specification and $39.95 listed price."
+    },
+    "showa-gloves": {
+      "title": "SHOWA: TEMRES 282 gloves",
+      "url": "https://www.showagroup.com/us-en/shop/temres-282/",
+      "checked": "2026-11-11",
+      "scopeNote": "Water-resistant polyurethane coating, fleece liner and grip."
+    },
+    "simms-boot-accessories": {
+      "title": "Simms: Wading boot accessories",
+      "url": "https://www.simmsfishing.com/collections/wading-boot-accessories",
+      "checked": "2026-11-11",
+      "scopeNote": "HardBite Wading Boot Studs for Vibram soles and pack sizes."
+    }
+  },
+  "articles": [
+    {
+      "slug": "merino-wool-fishing-base-layers",
+      "title": "Merino wool for fishing: benefits, grades and which to buy",
+      "description": "Choose merino fishing layers by fibre grade, fabric weight and blend. Compare budget buys, Smartwool, Icebreaker and durable wool socks.",
+      "category": "GEAR / MERINO WOOL",
+      "destination": "na-us-ak-019",
+      "sections": [
+        {
+          "id": "choose",
+          "title": "Start with the fishing day",
+          "paragraphs": [
+            "Merino earns its place on fishing trips through comfort, moisture control and odor resistance. It suits days that alternate between a walk, a boat ride and a long wait beside cold water. Start with a light or medium fabric. Add warmth above it when the trip calls for more insulation.",
+            "Choose the shirt for the work you will do, not just the lowest forecast temperature. A long walk to a river and a seat on an exposed boat need different systems. For a first purchase, compare a 150–200 gsm top with a 250 gsm top. Try both beneath the fleece and shell you plan to wear.",
+            "Smartwool is the Castward owner’s premium pick. The useful choice within that brand is specific: Classic All-Season for a light nylon-core fabric, or Classic Thermal for thicker pure wool. Buy the fabric that suits your day before you pay for a second color."
+          ],
+          "sources": [
+            "wool-base",
+            "smart-season",
+            "smart-thermal"
+          ]
+        },
+        {
+          "id": "benefits",
+          "title": "What merino does when the day turns damp",
+          "paragraphs": [
+            "Wool can absorb moisture vapor within its fibres and still feel comfortable against the skin. That helps during the change from an active approach to a quiet fishing session. Merino can retain useful warmth when damp. A soaked shirt still needs a dry replacement and protection from wind.",
+            "Odor resistance is another strong reason to choose wool for a lodge stay or a trip with limited laundry. It can need less frequent washing than a polyester top. Air the shirt after use, then wash it when dirty. Odor resistance does not remove fish slime, salt or spilled bait juice.",
+            "The temperature range depends on the fabric and the rest of your clothes. A thin merino tee can serve on a mild day. A thick crew belongs beneath insulation in colder conditions. Avoid a fixed temperature promise: wind, activity and personal comfort can change the answer."
+          ],
+          "sources": [
+            "wool-benefits",
+            "base-rei",
+            "cold-water"
+          ]
+        },
+        {
+          "id": "microns",
+          "title": "Microns measure fibre fineness",
+          "paragraphs": [
+            "A micron is one millionth of a metre. It describes fibre diameter, not shirt thickness. Finer fibres bend more easily against the skin, which helps explain why merino can feel softer than a coarse wool sweater. Itch also depends on the finished fabric and your own skin.",
+            "Woolmark’s material guide places ultrafine merino at 14.6–16.5 microns, superfine at 16.6–18.5, and fine at 18.6–20.5. Use those ranges as a named classification. Brand labels can use the terms differently. Ask for the actual micron figure when softness matters more than a marketing name.",
+            "The products here show the useful range for base layers. Minus33 lists 17.5 microns for its Ticonderoga crew. Meriwool lists 18.5 for its 250 crew. Icebreaker lists 18.9 for the Oasis crew. These figures describe the wool; they do not rank seam comfort, fit or resistance to wear.",
+            "Try a new top at home before you remove its return tags. Check the neck, wrists and underarms. If the fabric bothers your skin, choose a smoother alternative or a synthetic base. An expensive label cannot make an uncomfortable shirt a good purchase."
+          ],
+          "sources": [
+            "wool-grades",
+            "wool-soft",
+            "minus-170",
+            "meriwool-250",
+            "ice-oasis"
+          ]
+        },
+        {
+          "id": "weights",
+          "title": "Choose the fabric weight for the work",
+          "paragraphs": [
+            "Gsm means grams per square metre of fabric. It is different from the total weight of the garment. Use it to compare similar knits. A higher figure usually means more material, but the cut, weave and blend also affect comfort.",
+            "The choices below apply the brands’ weight guidance to fishing. Treat them as a starting point for your outfit. For a long approach, favor the lighter choice and carry separate insulation. For a mostly seated day, start heavier if that suits your usual comfort.",
+            "A 320 gsm layer can be useful for a cold, quiet session, but it is a specialist purchase. Do not buy one just because it sounds more capable. A lighter shirt with a removable fleece gives you more ways to adjust through the day."
+          ],
+          "sources": [
+            "ice-weights",
+            "wool-base"
+          ],
+          "table": {
+            "heads": [
+              "Fabric weight",
+              "Suggested fishing use",
+              "Main tradeoff"
+            ],
+            "rows": [
+              [
+                "150 gsm",
+                "Active river approaches, mild days and a light first layer.",
+                "Less warmth during a long stop."
+              ],
+              [
+                "200 gsm",
+                "Cool mixed days with some movement and some waiting.",
+                "A useful middle choice under removable insulation."
+              ],
+              [
+                "250 gsm",
+                "Cold-water trips and slow days beneath a shell.",
+                "Can feel too warm during a hard walk."
+              ],
+              [
+                "320 gsm",
+                "Very cold, low-activity sessions beneath suitable outerwear.",
+                "More bulk and less flexibility as the day warms."
+              ]
+            ]
+          }
+        },
+        {
+          "id": "blends",
+          "title": "Pure merino, nylon cores and polyester blends",
+          "paragraphs": [
+            "Choose 100% merino when wool feel is the priority. Meriwool 250, Icebreaker Oasis and Smartwool Classic Thermal offer that route. Pure wool does not automatically mean the longest service life. A thin shirt can wear through where a pack strap, belt or rough surface rubs it.",
+            "A nylon-core yarn places wool around a stronger synthetic centre. Smartwool uses this construction in Classic All-Season. It adds support to a light fabric while keeping wool against the skin. The Great Outdoors review also praised the durability of the reviewed All-Season model.",
+            "Corespun describes that construction approach. It is not a fibre grade, a fabric weight or a promise that every wool blend uses it. Read the product’s current composition. A familiar model name can cover different fabrics across generations.",
+            "Polyester blends offer another way to combine wool comfort with synthetic performance. Compare the wool percentage and fabric weight instead of treating every blend as equal. For repeated hard use or a need for fast drying, include a fully synthetic top in the comparison. Wool generally dries more slowly than polyester."
+          ],
+          "sources": [
+            "base-rei",
+            "smart-season",
+            "smart-review",
+            "meriwool-250",
+            "ice-oasis"
+          ]
+        },
+        {
+          "id": "wool-types",
+          "title": "Merino, lambswool, alpaca and synthetics",
+          "paragraphs": [
+            "Merino describes wool from merino sheep. Lambswool describes wool from a lamb’s first shearing. Those terms answer different questions, so a lambswool label alone cannot tell you the fibre diameter or whether the garment suits bare skin. Check the cut and care label before you use a sweater as a base layer.",
+            "Alpaca fibre comes from a different animal and contains no lanolin. It also appears in blends with merino. Choose an alpaca garment by its actual fabric and fit. The animal name alone cannot prove that it will be warmer, softer or more durable than the merino top beside it.",
+            "Synthetic fleece is a useful middle layer. A polyester microfleece jacket adds an adjustable layer above the base. Polypropylene, often called polypro, appears in base layers such as Helly Hansen LIFA Active. It offers a non-wool route for anglers who prefer that feel.",
+            "Keep the jobs separate when you compare them. A thick lambswool pullover and a fine merino crew are different garments. Compare bases with bases, then compare insulation with insulation. This prevents a heavy sweater from looking like the better value just because it contains more wool."
+          ],
+          "sources": [
+            "lambswool",
+            "alpaca",
+            "wool-soft",
+            "columbia-fleece",
+            "hh-lifa"
+          ]
+        },
+        {
+          "id": "tiers",
+          "title": "Budget to premium: what the money buys",
+          "paragraphs": [
+            "These US dollar prices were checked on 11 November 2026. They describe the named tops before tax and delivery. The bands below come from these products, rather than every wool shirt on sale. Sizes, colors and discounts can change the total.",
+            "The budget step covers Meriwool’s 190 tee and 250 crew at about $55–65. The middle step is the Minus33 Ticonderoga at $79.99. Premium examples here run from $100 for Classic All-Season to $120 for Oasis. Compare the same sleeve length and fabric weight before you judge the difference.",
+            "Start with one top. Wear it beneath your actual fishing clothes before you build a full set. Put the next purchase toward the missing job: a dry spare, warmer bottoms or better socks. A second premium shirt offers little value if your outer shell still lets the rain through."
+          ],
+          "sources": [
+            "meriwool-tops",
+            "meriwool-250",
+            "minus-170",
+            "smart-season",
+            "smart-thermal",
+            "ice-oasis"
+          ],
+          "table": {
+            "heads": [
+              "Tier",
+              "Product",
+              "Fabric and fit reason",
+              "USD, checked 11 November 2026"
+            ],
+            "rows": [
+              [
+                "Budget",
+                "Meriwool Merino 190 Short Sleeve T Shirt",
+                "A light entry point for mild days and layered use.",
+                "$54.99"
+              ],
+              [
+                "Budget",
+                "Meriwool Merino 250 Base Layer Long Sleeve",
+                "100% merino; 250 gsm; 18.5 microns.",
+                "$65"
+              ],
+              [
+                "Mid-range",
+                "Minus33 Ticonderoga Lightweight Crew",
+                "100% merino; 170 gsm; 17.5 microns.",
+                "$79.99"
+              ],
+              [
+                "Premium",
+                "Smartwool Classic All-Season Crew",
+                "150 gsm with a nylon core for added fabric strength.",
+                "$100"
+              ],
+              [
+                "Premium",
+                "Smartwool Classic Thermal Crew",
+                "250 gsm pure wool with flat seams.",
+                "$115"
+              ],
+              [
+                "Premium",
+                "Icebreaker Merino 200 Oasis Crewe",
+                "200-weight pure merino with offset shoulder seams.",
+                "$120"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "longevity",
+          "title": "Make the premium choice last",
+          "paragraphs": [
+            "Smartwool’s strongest durability case here is the nylon-core construction in Classic All-Season. Its Classic Thermal crew uses pure wool, so do not assume it has the same reinforcement. Flat and offset seams help comfort, but they cannot prevent a hook or a rough strap from making a hole.",
+            "For socks, look for a wool blend that suits the boot. Smartwool’s light-cushion Hike Classic Edition combines wool, nylon and elastane. Darn Tough’s Hiker Micro Crew is a cushioned midweight option. Try the socks inside your fishing footwear before you choose extra thickness.",
+            "Darn Tough states an unconditional lifetime guarantee. Its US process requires the socks and claim form to go back before it issues replacement credit. Seconds and irregulars are excluded. Resizing or dyeing also voids the warranty. Keep a spare pair for the trip; a future replacement cannot fix today’s wet feet.",
+            "For the rest of the outfit, Smartwool offers a 250 gsm three-quarter bottom. BUFF’s Merino Lightweight neckwear uses 125 gsm wool. Minus33 offers a pure-merino Ridge Cuff Beanie and thin wool glove liners. Fit these accessories with your boots, hood and outer gloves before the trip."
+          ],
+          "sources": [
+            "smart-season",
+            "smart-thermal",
+            "smart-socks",
+            "darn-socks",
+            "darn-guarantee",
+            "smart-bottom",
+            "buff-merino",
+            "minus-accessories"
+          ]
+        },
+        {
+          "id": "welfare",
+          "title": "Read the wool welfare label",
+          "paragraphs": [
+            "Look for a clear mulesing-free statement and named certification. ZQ prohibits mulesing within its program. The Responsible Wool Standard, or RWS, addresses animal welfare, land management and traceability through the supply chain. Neither label is a measure of softness or shirt thickness.",
+            "RWS prohibits the practice of mulesing, but its 2026 policy allows narrowly controlled requests to buy previously mulesed stock. Those requests require Textile Exchange’s written approval. Avoid turning the logo into a broader promise than the standard makes.",
+            "If animal welfare drives your choice, check the claim for the exact garment. Keep the product page with your purchase details. A brand’s general wool policy and an individual product’s certification are different pieces of information."
+          ],
+          "sources": [
+            "zq",
+            "rws",
+            "rws-update"
+          ]
+        },
+        {
+          "id": "care",
+          "title": "Care that protects the fabric",
+          "paragraphs": [
+            "Follow the garment label first. Smartwool’s care advice favors gentle washing and air drying. Turn wool clothes inside out before a wash. Keep them away from rough items and open hook-and-loop fasteners. Avoid bleach and fabric softener where the label forbids them.",
+            "Care instructions differ even among premium brands. The Oasis crew specifies a cold gentle wash and shade drying, with no tumble dryer. Do not copy a dryer setting from a different wool shirt. Support a wet garment rather than pulling it back into shape by the sleeves.",
+            "Protect thin wool beneath another layer when straps or hard surfaces can rub it. Inspect small worn areas before a long trip. Merino costs more than many synthetics, can develop abrasion holes, and needs more drying time. Buy it for the comfort and odor benefits you value, then give the fabric the care it needs."
+          ],
+          "sources": [
+            "smart-care",
+            "ice-oasis",
+            "base-rei"
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Which merino weight should I buy first?",
+          "a": "Start with 150–200 gsm for active or mixed days. Consider 250 gsm for colder, slower trips with suitable outer layers."
+        },
+        {
+          "q": "Is superfine wool always better than fine wool?",
+          "a": "A smaller micron figure can improve softness. It does not prove better fit, stronger seams or greater resistance to wear."
+        },
+        {
+          "q": "Does merino keep me warm if I fall in?",
+          "a": "Damp wool can retain useful warmth, but immersion needs a separate safety plan. Wear suitable flotation and carry dry clothes."
+        },
+        {
+          "q": "Why choose a blend instead of pure wool?",
+          "a": "A nylon core can reinforce a light wool fabric. Choose pure merino when wool feel matters more to you."
+        },
+        {
+          "q": "Which Smartwool base layer is the owner’s pick?",
+          "a": "Smartwool is the owner’s premium brand pick. Choose Classic All-Season for light reinforced fabric or Classic Thermal for thicker pure wool."
+        },
+        {
+          "q": "Do Darn Tough socks have a lifetime guarantee?",
+          "a": "Yes. The brand states an unconditional lifetime guarantee, with exclusions for seconds, irregulars and alterations such as dyeing or resizing."
+        }
+      ],
+      "relatedTrips": [],
+      "relatedGuides": [
+        "fishing-waders-buying-guide",
+        "fishing-layering-system-guide",
+        "fishing-gear-quality-tiers",
+        "what-to-bring-on-a-guided-fishing-trip",
+        "alaska-fishing-packing-list"
+      ],
+      "reel": null,
+      "regionPath": "/trips/",
+      "regionLabel": "All trips",
+      "nextStep": "Choose a base-layer weight for your trip, then check the fit under your outer layers.",
+      "new": true,
+      "plannerNote": "Add a dry spare base layer and the socks that fit your fishing footwear.",
+      "revision": "Written 11 November 2026 from manufacturer and independent sources."
+    },
+    {
+      "slug": "fishing-waders-buying-guide",
+      "title": "Fishing waders buying guide: fit, fabrics and price tiers",
+      "description": "Compare chest, waist and hip waders, breathable fabrics and neoprene. Choose the right fit, boots and safety gear from budget to premium.",
+      "category": "GEAR / WADERS",
+      "destination": "na-us-ak-019",
+      "sections": [
+        {
+          "id": "start",
+          "title": "Buy a complete wading system",
+          "paragraphs": [
+            "Choose waders around the water, the approach and your body measurements. The best purchase is a pair that fits with the required layers and works with suitable boots. Chest pockets and a premium logo come after those decisions.",
+            "Before you shop, confirm whether the trip includes wading. Ask which equipment the guide supplies, which soles suit the location and whether studs are allowed in the boat. For a single guided trip, a correctly fitted loan pair can remove the need to buy a full system.",
+            "Include boots, socks, a belt and a repair kit in the comparison. Stockingfoot waders need separate wading boots. A low wader price can lose its advantage once you add the missing parts. Keep enough money for secure footwear instead of spending the whole allowance on the wader body."
+          ],
+          "sources": [
+            "orvis-waders",
+            "ffi-safe",
+            "orvis-boots",
+            "repair-kit"
+          ]
+        },
+        {
+          "id": "height",
+          "title": "Chest, waist or hip: choose your coverage",
+          "paragraphs": [
+            "Chest waders offer the most upper-body coverage. They make sense when your trips include varied river edges, wet weather and occasional spray. The extra height gives more coverage above the water, but it does not make a deep or fast crossing safe.",
+            "Waist waders suit anglers who stay in shallow water and prefer a trouser-style upper. Consider them for familiar routes where you can choose the depth. Check the waistband fit when you sit or bend. Be realistic about whether you will miss chest coverage on a wet seat or during a change in conditions.",
+            "Hip waders cover each leg separately and suit limited shallow-water access. They can be practical for a short visit to a stream edge. Choose them only when that restricted coverage matches the plan. If the route requires more protection, change the route or select a different wader.",
+            "Use the height decision to set a limit before you enter the water. Keep an exit route in mind. When the conditions exceed your plan, fish from the bank or move. The height of the fabric is not a safe-depth marker."
+          ],
+          "sources": [
+            "wader-types",
+            "ffi-safe"
+          ]
+        },
+        {
+          "id": "feet",
+          "title": "Stockingfoot versus bootfoot",
+          "paragraphs": [
+            "Stockingfoot waders end in attached soft booties, usually neoprene. Separate wading boots provide the outsole and support. This arrangement lets you select the wader fit and boot fit separately. It also lets you choose a sole for the river and the local rules.",
+            "Bootfoot waders have boots attached. They reduce the number of separate pieces to put on and can suit short approaches or cold, slow sessions. The combined fit deserves close attention. A good body fit cannot compensate for a boot that pinches your toes or lets your heel move too much.",
+            "For frequent walks between pools, compare a stockingfoot setup first. For easy access and long stationary periods, compare a bootfoot setup too. Try both with your planned socks. Do not choose between them from the product photograph alone.",
+            "Budget for the entire setup when you compare prices. Put the wader and boot costs on the same line. Include the time you need to dry the equipment between days. Keep the booties off sharp ground while you change; use a mat or another clean protective surface."
+          ],
+          "sources": [
+            "orvis-waders",
+            "wader-types",
+            "simms-fit",
+            "simms-g4"
+          ]
+        },
+        {
+          "id": "fabric",
+          "title": "Breathable fabric or neoprene",
+          "paragraphs": [
+            "Breathable waders combine water protection with a way for moisture vapor to escape. They are a versatile choice when the weather and your activity vary. Add suitable base and middle layers for cold conditions. A breathable shell is not an insulation layer by itself.",
+            "Neoprene supplies insulation as part of the wader body. Thickness matters: 3mm is the lighter option, while 5mm offers more insulation for colder, less active use. The thicker choice also adds material around your legs and torso. Try the exact thickness before you commit.",
+            "For a long walk followed by cool-water fishing, start your comparison with breathable waders. For repeated cold, quiet sessions with little walking, include neoprene. Avoid buying the warmest option for every month. Choose around the trips you actually take most often.",
+            "Look closely at where a thickness figure applies. A breathable wader can have 4mm neoprene booties without having a neoprene body. Frogg Toggs lists a four-ply nylon upper for the Canyon II. Its stockingfeet do not turn it into an insulated neoprene chest wader."
+          ],
+          "sources": [
+            "wader-types",
+            "neoprene",
+            "frog-canyon"
+          ]
+        },
+        {
+          "id": "fit",
+          "title": "Fit the body, inseam and feet separately",
+          "paragraphs": [
+            "Simms starts its fit process with the largest body girth, then the inseam and bootie size. Use the chart for the exact model. A letter such as medium cannot describe all three measurements. Short, long or wider-body options can solve a fit problem better than a larger standard size.",
+            "Take your measurements before you order. Follow the brand’s method for each measurement, especially the inseam. Check whether the chart uses body dimensions or garment dimensions. If your body and foot sizes fall in different rows, ask the seller about the available combinations.",
+            "Try the waders with your fishing base layers and socks. Sit in a chair. Make a careful high step on dry ground. Reach forward as you would to land a fish. Reject a fit that pulls hard at the crotch or prevents a normal stride.",
+            "Next, lace the boots over the stockingfeet. Check for folded fabric, toe pressure and heel movement. Repeat the movement check with the whole system. Do not use a universal rule to add one boot size: boot shapes and brand size charts differ.",
+            "Choose the fit for the coldest layers you reasonably expect to use, without leaving excessive loose fabric. Keep the return labels until you complete the dry fit check. An attractive sale price cannot fix an awkward inseam."
+          ],
+          "sources": [
+            "simms-fit",
+            "orvis-boots",
+            "wader-review"
+          ]
+        },
+        {
+          "id": "soles",
+          "title": "Felt, rubber and the local rules",
+          "paragraphs": [
+            "Choose the sole for the surface and the destination. Felt and rubber are different options, and traction depends on the conditions. Rubber soles also offer routes for compatible studs or cleats. Ask a local guide which setup suits the riverbed instead of assuming one sole works everywhere.",
+            "Alaska restricts felt-soled footwear for fishing in fresh water. Maryland’s DNR says external felt soles are prohibited in state waters and within five feet of them. These are destination rules, not a nationwide list. Check the current rule for every state and waterbody on your itinerary.",
+            "Studs require a compatible boot. Simms lists separate options for felt and rubber or Vibram outsoles. Its G3 Guide Vibram boot accepts specified star cleats and studs. Do not transfer a screw layout from another boot without checking the manufacturer’s instructions.",
+            "Confirm the boat operator’s policy before you arrive with metal studs. Keep a permitted footwear option ready for the deck. Clean mud and debris from the whole boot between waters. A rubber sole does not remove the need for invasive-species precautions."
+          ],
+          "sources": [
+            "ak-felt",
+            "md-felt",
+            "simms-studs",
+            "orvis-boots",
+            "simms-boot-accessories"
+          ]
+        },
+        {
+          "id": "tiers",
+          "title": "Budget through premium: current buying choices",
+          "paragraphs": [
+            "The US prices below were checked on 11 November 2026, before tax and delivery. They apply to the listed waders without separate boots. The budget anchor is Canyon II at $165. Clearwater and Ultralight place the middle examples around $298–449. Premium regular prices in this selection reach $698–1,100.",
+            "Sale overlap matters. Orvis listed PRO waders below their regular price, while Simms discounted the older G3 Guide. Compare the construction and available size rather than moving a product into a different quality tier because one color is on sale.",
+            "Redington Escape is another model to compare where a dealer has your size. Its listed construction uses three layers above and four below. Check the seller’s actual stock and terms before you choose it over a current alternative. No US price is needed to assess those construction details.",
+            "The newer G3 PRO and the older G3 Guide are different model names. Simms lists both within its current range. Search the exact line before you compare prices or place an order."
+          ],
+          "sources": [
+            "frog-canyon",
+            "orvis-waders",
+            "simms-waders",
+            "simms-g3",
+            "simms-g4",
+            "redington-escape"
+          ],
+          "table": {
+            "heads": [
+              "Tier",
+              "Wader",
+              "Reason to compare it",
+              "USD, checked 11 November 2026"
+            ],
+            "rows": [
+              [
+                "Budget",
+                "Frogg Toggs Canyon II",
+                "Breathable stockingfoot entry point with an included belt.",
+                "$165"
+              ],
+              [
+                "Mid-range",
+                "Orvis Clearwater",
+                "A straightforward breathable stockingfoot option.",
+                "$298"
+              ],
+              [
+                "Mid-range",
+                "Orvis Ultralight",
+                "An alternative to compare for travel and mobility.",
+                "$449"
+              ],
+              [
+                "Premium",
+                "Orvis PRO",
+                "Consider with frequent use and a full fit check.",
+                "$558.40 sale; $698 regular"
+              ],
+              [
+                "Premium",
+                "Simms G3 Guide Stockingfoot",
+                "Three-layer upper and four-layer lower GORE-TEX construction.",
+                "$600 sale; $750 regular"
+              ],
+              [
+                "Premium",
+                "Simms G3 PRO Stockingfoot",
+                "Newer G3 line; compare the exact size and version.",
+                "$800"
+              ],
+              [
+                "Premium",
+                "Simms G4Z Stockingfoot",
+                "GORE-TEX Pro fabric and a waterproof front zipper.",
+                "$1,100"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "premium",
+          "title": "When the premium features matter",
+          "paragraphs": [
+            "A front zipper can be useful when you often enter and leave the waders. The G4Z uses a waterproof YKK Aquaseal centre zipper. Its body combines three-layer upper and four-layer lower GORE-TEX Pro fabric. Those are specific features to evaluate, not proof that every angler needs the highest tier.",
+            "Compare access with gloves on. Check the suspender adjustment and pocket positions while you wear a jacket. Put your usual small items in the pockets during the dry fit. A useful feature should solve a task you actually face beside the water.",
+            "For occasional trips, a simpler pair with the right fit can be the better purchase. Outdoor Life’s comparison included Canyon II as a budget option. For repeated use, investigate repair support as carefully as the fabric. Ask about the process before the trip, not after a leak."
+          ],
+          "sources": [
+            "simms-g4",
+            "wader-review",
+            "simms-warranty"
+          ]
+        },
+        {
+          "id": "safety",
+          "title": "Use the belt and keep the crossing conservative",
+          "paragraphs": [
+            "Fasten a snug wading belt before you enter the water. Fly Fishers International explains that a belt can delay water entry if you fall. It is not a substitute for a life jacket, safe access or sound judgment about the current.",
+            "A wading staff gives you another contact point and a way to probe uncertain ground. Set it up before the difficult section. Keep a hand free to use it. If the footing or flow feels uncertain, stop and choose a safer place.",
+            "Cold water adds risk even when the air feels mild. The National Weather Service recommends a life jacket in and around the water. Choose flotation that fits over the clothing system. Plan your exit before you concentrate on the next cast."
+          ],
+          "sources": [
+            "ffi-safe",
+            "cold-water",
+            "orvis-staff",
+            "orvis-belt"
+          ]
+        },
+        {
+          "id": "care",
+          "title": "Care and repairs that keep you fishing",
+          "paragraphs": [
+            "Rinse the waders after use, especially after salt exposure. Dry the inside as well as the outside before storage. Simms warns that damp storage and mildew can shorten service life. Follow the label for washing, heat and water-repellent treatment.",
+            "Inspect the booties, seams and areas that rub against gravel or a boat. Use a clean surface while you change. Do not pack the equipment wet for long-term storage. Make drying part of the trip plan, particularly when you move between lodges.",
+            "For a small compatible repair, GEAR AID’s Aquaseal FD kit includes adhesive and patches. Start with a clean, dry area. The stated cure time is 8–12 hours under the specified conditions. That makes an overnight repair practical; it is not an instant return-to-water promise.",
+            "Send a difficult seam failure or uncertain leak to the brand or a suitable repair service. Simms’ process includes inspection and a decision about the repair. Technical waders have a service life; a guarantee does not mean unlimited free replacement after all forms of damage.",
+            "Before a remote trip, inspect the repair kit as well as the waders. Confirm that the adhesive remains usable and that you understand the instructions. A backup plan has more value than a sealed tube you cannot use."
+          ],
+          "sources": [
+            "simms-care",
+            "simms-warranty",
+            "repair-kit"
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Are chest waders the best first pair?",
+          "a": "They offer the broadest coverage for varied trips. Waist or hip waders can suit a known shallow-water route."
+        },
+        {
+          "q": "Do stockingfoot waders include boots?",
+          "a": "They include soft attached booties. You still need separate wading boots with suitable soles."
+        },
+        {
+          "q": "Should I buy 3mm or 5mm neoprene?",
+          "a": "Compare 3mm for lighter insulation and 5mm for colder, less active use. Fit and the rest of your clothes still matter."
+        },
+        {
+          "q": "Can I wear felt soles in Alaska?",
+          "a": "Choose a permitted nonfelt sole for freshwater fishing. Check Alaska’s current rules and the guide’s requirements before travel."
+        },
+        {
+          "q": "Does a wading belt replace a life jacket?",
+          "a": "No. A belt can delay water entry into the waders. A life jacket provides flotation."
+        },
+        {
+          "q": "Can I repair a small hole at camp?",
+          "a": "A compatible adhesive and patch can repair a small tear. Aquaseal FD normally needs 8–12 hours to cure under its stated conditions."
+        }
+      ],
+      "relatedTrips": [],
+      "relatedGuides": [
+        "merino-wool-fishing-base-layers",
+        "fishing-layering-system-guide",
+        "fishing-gear-quality-tiers",
+        "what-to-bring-on-a-guided-fishing-trip",
+        "alaska-fishing-packing-list"
+      ],
+      "reel": null,
+      "regionPath": "/trips/",
+      "regionLabel": "All trips",
+      "nextStep": "Confirm the guide’s footwear rules, then try the full wader and boot system together.",
+      "new": true,
+      "plannerNote": "Record the wader size, boot size and permitted sole before you buy or reserve equipment.",
+      "revision": "Written 11 November 2026 from manufacturer and independent sources."
+    },
+    {
+      "slug": "fishing-layering-system-guide",
+      "title": "Fishing layering guide: stay warm through cold, rain and spray",
+      "description": "Build a fishing clothing system for cold water, ice, offshore spray and rain. Choose base layers, insulation, shells, socks and hand protection.",
+      "category": "GEAR / LAYERING",
+      "destination": "na-us-ak-019",
+      "sections": [
+        {
+          "id": "system",
+          "title": "Give each layer a job",
+          "paragraphs": [
+            "A useful fishing outfit has three jobs. The base layer manages moisture at the skin. The middle layer holds warmth. The outer shell protects against wind and water. Choose pieces that work together, then change the amount of insulation as your activity changes.",
+            "Build around the whole day. A cold boat ride, an active walk and a quiet afternoon need different amounts of clothing. Carry the layer you will need for the coldest stop where you can reach it. A jacket buried beneath the tackle is hard to add at the right time.",
+            "Start with the clothes you already own. Try a synthetic or wool base, a fleece and a waterproof shell together. Raise your arms and sit down. Check the neck, wrists and waist for awkward overlaps. Buy the missing function before you replace a useful piece with a more expensive one."
+          ],
+          "sources": [
+            "layers-rei",
+            "columbia-fleece",
+            "patagonia-2026"
+          ]
+        },
+        {
+          "id": "base",
+          "title": "Choose the base for your pace",
+          "paragraphs": [
+            "Merino and synthetic bases offer different strengths. Wool resists odor and suits repeated wear between washes. Polyester generally dries faster and can be a practical choice for a hard approach. Choose the fabric you find comfortable beneath the rest of the outfit.",
+            "For merino, compare a light 150–200 gsm top with a warmer 250 gsm top. A lighter shirt leaves more room to adjust with removable layers. A 250 gsm crew makes sense for a cold, quiet day if you know that you run cold. See the [merino wool fishing guide](/guides/merino-wool-fishing-base-layers/) for grades, blends and specific buys.",
+            "Helly Hansen LIFA Active offers a synthetic alternative with polyester and polypropylene in a two-layer construction. Smartwool Classic All-Season uses a nylon core beneath the wool. These are different solutions to the same first-layer task. Choose by feel and intended use rather than a single fibre slogan.",
+            "Fit the base close enough to sit beneath other clothes without folds. Check the sleeve length when you reach forward. Check the lower hem when you sit. Avoid a tight neck or waistband that becomes unpleasant under a complete outfit."
+          ],
+          "sources": [
+            "base-rei",
+            "hh-lifa",
+            "smart-season",
+            "smart-thermal"
+          ]
+        },
+        {
+          "id": "middle",
+          "title": "Use separate insulation for the long stop",
+          "paragraphs": [
+            "A fleece jacket is a simple place to start. Columbia’s Fast Trek II uses polyester microfleece and a full zipper. That gives you a middle layer you can open or remove. Wear the shell over it when the wind or rain demands protection.",
+            "A synthetic insulated jacket offers another option for the cold ride or the wait beside a hole in the ice. Patagonia’s Nano Puff uses 60-g PrimaLoft Gold Insulation Eco. It is water-resistant rather than a rain shell. Carry a waterproof outer layer when rain or repeated spray is part of the plan.",
+            "Choose insulation around the least active part of the day. If you expect a long stationary session, carry a warmer piece instead of relying on a very thick base alone. During the approach, keep that extra insulation dry and ready for the stop.",
+            "Try the middle layer under your actual shell before you buy. Reach across your body as if you were casting. Fasten the life jacket too. If the outfit restricts that movement, compare a different cut or reduce redundant bulk."
+          ],
+          "sources": [
+            "columbia-fleece",
+            "patagonia-2026",
+            "layers-rei",
+            "cold-water"
+          ]
+        },
+        {
+          "id": "shell",
+          "title": "Match the shell to rain, spray and effort",
+          "paragraphs": [
+            "A waterproof shell and a water-resistant insulated jacket do different work. For steady rain, choose a waterproof jacket with a hood and closures that fit your outfit. Add waterproof lower-body coverage when the seat, deck or shore will be wet.",
+            "The Patagonia Torrentshell 3L is a waterproof and breathable option. Grundens Neptune uses polyurethane-coated polyester for water protection on deck. The Neptune style suits a wet boat day where a simple protective shell matters. Compare ventilation needs carefully when the same day also includes hard physical effort.",
+            "Before departure, turn your head with the hood up. Check that you can see the area beside you. Reach forward with the cuffs closed. Bend at the waist and sit down. Make sure the jacket still overlaps the trousers or bibs.",
+            "For a short occasional trip, a Frogg Toggs Ultra-Lite2 suit offers a light, packable jacket-and-pants option. For frequent use, compare the fabric, closures and repair options of a stronger shell. Choose from the actual exposure you expect, not just the chance of rain at the dock."
+          ],
+          "sources": [
+            "patagonia-2026",
+            "grundens-neptune",
+            "frog-rain",
+            "layers-rei"
+          ]
+        },
+        {
+          "id": "conditions",
+          "title": "Four fishing systems to compare",
+          "paragraphs": [
+            "The table gives starting combinations, not fixed temperature ratings. Adjust them for the forecast, your usual comfort and the amount of movement. Bring the extra insulation you need for a delay or a colder return ride.",
+            "Try to make the changes simple. A removable fleece is easier to manage than several tight pullovers. A dry spare base is easier to use when it sits in its own bag. Decide where each removed layer will go before the boat or bank becomes wet.",
+            "Use the table to identify a missing piece rather than to buy four separate wardrobes. The same base, fleece and shell can serve several trips. Change the insulation and accessories around that core. For cold-water wading, check the separate [wader buying guide](/guides/fishing-waders-buying-guide/) before you choose the lower-body system."
+          ],
+          "sources": [
+            "layers-rei",
+            "ice-safety",
+            "cold-water",
+            "simms-fit",
+            "grundens-neptune"
+          ],
+          "table": {
+            "heads": [
+              "Trip",
+              "Base",
+              "Middle layer",
+              "Outer protection",
+              "Adjustment to plan"
+            ],
+            "rows": [
+              [
+                "Cold-water river",
+                "Light or medium wool or synthetic top and bottoms.",
+                "Fleece above; suitable insulation inside the waders.",
+                "Breathable waders and a waterproof jacket.",
+                "Reduce insulation for the walk; add it before a long stop."
+              ],
+              [
+                "Ice fishing",
+                "Wool or synthetic base chosen for the approach.",
+                "Warm insulation for the stationary session.",
+                "Wind and water protection with suitable flotation.",
+                "Keep dry gloves and a dry clothing set accessible."
+              ],
+              [
+                "Offshore spray",
+                "Comfortable wool or synthetic base.",
+                "Fleece or synthetic insulation for the ride.",
+                "Waterproof jacket and bibs with deck footwear.",
+                "Check hood, cuffs and life-jacket fit together."
+              ],
+              [
+                "Rainy lake or shore",
+                "A light moisture-managing base.",
+                "Removable fleece as conditions require.",
+                "Waterproof jacket and trousers.",
+                "Vent before hard activity; keep spare layers dry."
+              ]
+            ]
+          }
+        },
+        {
+          "id": "river",
+          "title": "Cold-water wading: fit the layers inside",
+          "paragraphs": [
+            "Start the lower-body fit with the base, socks and wader booties together. Simms’ size guide treats body girth, inseam and foot size as separate checks. Extra clothing must fit within that system without restricting a normal step.",
+            "Choose a smooth lower-body arrangement for the dry fit. Check for folds at the knees, ankles and toes. Sit down and rise again. If the outfit pulls at the crotch or bunches inside the boots, correct the fit before you enter the water.",
+            "Do not copy the warmth of the upper body blindly below the waist. Write down which parts of the outfit you can change at the river and which require removal of the waders. Pack the layers for those changes where you can reach them from dry ground.",
+            "Keep the belt in place and use suitable flotation. Wool, fleece and breathable waders form a clothing system. The National Weather Service’s cold-water guidance still applies if you fall. Plan a safe exit and carry dry clothes separately."
+          ],
+          "sources": [
+            "simms-fit",
+            "ffi-safe",
+            "cold-water"
+          ]
+        },
+        {
+          "id": "ice",
+          "title": "Ice fishing: prepare for the stop and the walk",
+          "paragraphs": [
+            "An ice trip can alternate between effort and long periods with little movement. Choose separate insulation so you can manage both parts. Put on the extra warmth when you settle into position instead of waiting until you feel cold.",
+            "Ordinary insulated clothes are not automatically flotation equipment. Minnesota DNR recommends a foam life jacket or flotation suit as part of ice safety gear. Check the actual flotation information for your equipment. Also carry accessible ice picks and the other equipment required by the local conditions.",
+            "Keep spare socks, gloves and clothing in dry storage. Plan how you will reach shelter if clothes become wet. Make this a practical arrangement: name the shelter, check the route and keep essential items within reach. Avoid a bag layout that requires emptying all the tackle to reach a spare pair of gloves.",
+            "Try your gloves with the zipper pulls and bag closures before departure. A warm outfit still needs controls you can use. If a closure defeats you during the home check, change the arrangement before the trip."
+          ],
+          "sources": [
+            "ice-safety",
+            "sealline-faq",
+            "cold-water"
+          ]
+        },
+        {
+          "id": "feet",
+          "title": "Socks and boots work as one unit",
+          "paragraphs": [
+            "Select sock height and cushion around the footwear. Smartwool’s Hike Classic Edition light-cushion crew places less bulk under the foot than a thick full-cushion style. Darn Tough’s Hiker Micro Crew offers a cushioned midweight option. Check that the cuff reaches above the boot where you want coverage.",
+            "Try the whole combination at home. Wear the socks, wader booties and boots together for a wading trip. For a boat, use the deck boots you will actually take. Check toe space and heel movement. More sock material is not useful if the combination no longer fits.",
+            "Carry a dry pair in a separate bag. Keep the used pair apart from the spare. After the trip, follow each sock’s wash instructions and dry the footwear as its maker directs. Use the fit you liked on the first trip as the basis for a second purchase."
+          ],
+          "sources": [
+            "smart-socks",
+            "darn-socks",
+            "simms-fit",
+            "xtratuf"
+          ]
+        },
+        {
+          "id": "hands-head",
+          "title": "Protect hands, ears and neck without losing control",
+          "paragraphs": [
+            "A thin glove liner lets you add a small amount of warmth beneath a suitable outer glove. Minus33 offers merino wool liners for that role. Treat a liner as an inner layer; it is not a waterproof hand covering. Choose the outer glove for the wet tasks you expect.",
+            "For wet tasks, SHOWA TEMRES 282 is an option with a water-resistant polyurethane coating and a fleece liner. Try the textured grip on your reel handle. Check the cuff with your jacket, and keep water from entering the open end.",
+            "Check your hand system against real jobs. Operate the reel handle, release a jacket zipper and open the dry bag. Carry a dry replacement for the gloves you will use around water. Choose a secure place to stow each glove during a brief task that needs bare fingers.",
+            "A beanie covers the ears beneath a hood. A neck gaiter fills the gap at the collar. BUFF’s Merino Lightweight neckwear uses 125 gsm wool; heavier options add fabric for colder conditions. Start with the light option if you want something easy to carry and adjust.",
+            "Check the hood, hat and gaiter together. Turn your head in both directions. Keep the fabric clear of your eyes. If you need to adjust several pieces every time you look around, simplify the combination."
+          ],
+          "sources": [
+            "minus-accessories",
+            "buff-merino",
+            "cold-water",
+            "showa-gloves"
+          ]
+        },
+        {
+          "id": "avoid",
+          "title": "Leave cotton out of the cold, wet outfit",
+          "paragraphs": [
+            "Cotton holds water and can leave you chilled in cold conditions. That includes a cotton tee hidden beneath an expensive shell. Check the inner shirt and socks as carefully as the outer jacket. Choose wool or a suitable synthetic for this cold, wet system.",
+            "Also avoid using a water-resistant puffer as the only rain layer. Patagonia identifies Nano Puff as water-resistant, while Torrentshell provides waterproof protection. Keep those roles clear when you pack. Choose the shell first for the expected rain, then fit the insulation beneath it.",
+            "Avoid buying several heavy bases to solve every temperature. Add or remove separate insulation instead. Keep a short record after the trip: what felt cold, what felt too warm and which piece was hard to adjust. Use that information for the next purchase."
+          ],
+          "sources": [
+            "layers-rei",
+            "patagonia-2026",
+            "ice-weights"
+          ]
+        },
+        {
+          "id": "pack",
+          "title": "Pack for a clothing change you can make",
+          "paragraphs": [
+            "Put spare clothes in a suitable dry bag before departure. SealLine distinguishes splash protection from submersible protection. Choose the bag around the likely exposure, and follow its closure instructions. A dry spare is only useful if the closure stays shut and the fabric remains intact.",
+            "Place the first likely addition near the top of the bag. Keep a complete dry change separate from a damp shell you remove during the day. Ask the guide where the bag can sit and how much space you have. Choose the smallest bag that holds the required clothes without forcing the closure.",
+            "After the trip, empty the bag and dry it. Dry and inspect the clothes before you store them. Replace the missing or damaged piece before the next departure. This simple routine protects the system you already own and shows exactly where a future upgrade will help."
+          ],
+          "sources": [
+            "sealline-faq",
+            "sealline-bag",
+            "smart-care",
+            "simms-care"
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "How many layers do I need for fishing?",
+          "a": "Start with a moisture-managing base, removable insulation and an outer shell. Adjust the insulation for activity and exposure."
+        },
+        {
+          "q": "Is merino better than polyester?",
+          "a": "Merino offers odor resistance and wool comfort. Polyester generally dries faster. Choose around your pace and personal preference."
+        },
+        {
+          "q": "Can I wear a cotton tee under the other layers?",
+          "a": "Choose wool or a suitable synthetic for cold, wet trips. Cotton can hold moisture next to the body."
+        },
+        {
+          "q": "Is a Nano Puff a rain jacket?",
+          "a": "No. Patagonia describes it as water-resistant insulation. Add a waterproof shell for steady rain or repeated spray."
+        },
+        {
+          "q": "Do I need two pairs of socks at once?",
+          "a": "Choose the sock combination that fits your boots. Extra thickness can create a poor fit; carry a separate dry spare."
+        },
+        {
+          "q": "Does an ice-fishing suit replace a life jacket?",
+          "a": "Only rely on stated flotation features and appropriate safety guidance. Ordinary insulation alone does not make a suit flotation equipment."
+        }
+      ],
+      "relatedTrips": [],
+      "relatedGuides": [
+        "merino-wool-fishing-base-layers",
+        "fishing-waders-buying-guide",
+        "fishing-gear-quality-tiers",
+        "what-to-bring-on-a-guided-fishing-trip",
+        "alaska-fishing-packing-list"
+      ],
+      "reel": null,
+      "regionPath": "/trips/",
+      "regionLabel": "All trips",
+      "nextStep": "Try the full outfit with your life jacket, then pack the dry spare layers separately.",
+      "new": true,
+      "plannerNote": "Separate the clothes you will wear from the dry clothes you will carry.",
+      "revision": "Written 11 November 2026 from manufacturer and independent sources."
+    },
+    {
+      "slug": "fishing-gear-quality-tiers",
+      "title": "Budget vs premium fishing gear: where to spend",
+      "description": "Spend wisely on fishing rods, reels, polarized glasses, rainwear, boots and dry bags. Compare real products and match upgrades to your trips.",
+      "category": "GEAR / BUYING ADVICE",
+      "destination": "na-us-ak-019",
+      "sections": [
+        {
+          "id": "priorities",
+          "title": "Spend where a weak item changes the day",
+          "paragraphs": [
+            "Put fit, weather protection and the required fishing method ahead of a matching set of premium gear. A rod must suit the lure and line. Glasses need suitable UV protection. Boots need to fit the activity. A dry bag needs the right level of water protection.",
+            "Choose your next purchase from a specific problem. Perhaps the reel feels rough, the jacket leaks at a closure, or the glasses slip when you look down. Name that problem before you compare products. This gives the extra cost a job to do.",
+            "For a guided trip, first confirm the supplied tackle. Then put your money toward personal equipment that fits. A well-chosen clothing system can serve many methods, while a specialist rod may only suit one. Keep the trip plan beside the product pages as you shop."
+          ],
+          "sources": [
+            "rod-basics",
+            "aao-uv",
+            "orvis-boots",
+            "sealline-faq"
+          ]
+        },
+        {
+          "id": "comparison",
+          "title": "Where budget works and where more can help",
+          "paragraphs": [
+            "The table compares purchase priorities, not catch rates. A higher tier buys particular materials or features. It cannot guarantee that you will catch more fish, stay comfortable in every condition or avoid every repair.",
+            "Start with the category that has a clear weakness. If all your equipment already serves the trip, keep it. Save the money for instruction, travel or a later replacement. An upgrade becomes useful when you can explain what changes on the water."
+          ],
+          "sources": [
+            "rod-basics",
+            "aao-uv",
+            "simms-warranty",
+            "yeti-rating"
+          ],
+          "table": {
+            "heads": [
+              "Category",
+              "Budget can work when",
+              "Spend more when",
+              "Check before purchase"
+            ],
+            "rows": [
+              [
+                "Rods",
+                "You need a general-purpose outfit and value a forgiving, durable blank.",
+                "You cast often or want a specific action and a lighter-feeling outfit.",
+                "Lure rating, line rating, grip and transport length."
+              ],
+              [
+                "Reels",
+                "Your method puts modest demands on a suitable reel.",
+                "You need a better fit for repeated use, loads or salt exposure.",
+                "Exact model size, line capacity and service support."
+              ],
+              [
+                "Polarized glasses",
+                "The lenses provide stated UV protection and the frame fits.",
+                "Better fit, side coverage or lens options solve a real problem.",
+                "UV label, polarization and screen visibility."
+              ],
+              [
+                "Rainwear",
+                "You need light cover for an occasional, low-abrasion outing.",
+                "Long wet days expose weak closures or unsuitable fabric.",
+                "Hood, cuffs, overlap and fit above insulation."
+              ],
+              [
+                "Boots",
+                "A suitable existing pair fits and the operator accepts its sole.",
+                "Poor support, poor fit or the wrong outsole limits the day.",
+                "Footwear type, local rules and sock fit."
+              ],
+              [
+                "Dry bags",
+                "A properly closed roll-top protects clothes from the expected exposure.",
+                "Submersion risk or expensive contents require a different closure and rating.",
+                "Water protection class, closure and usable capacity."
+              ]
+            ]
+          }
+        },
+        {
+          "id": "rods",
+          "title": "Rods: pay for the right action and useful feel",
+          "paragraphs": [
+            "Graphite and fiberglass offer different tradeoffs. Take Me Fishing describes fiberglass as tougher and more flexible, while graphite offers lighter weight and greater sensitivity with more care required. A mixed-material rod can offer a practical balance. Choose the lure rating before you choose the brand.",
+            "Ugly Stik’s GX2 uses graphite and fiberglass with one-piece stainless-steel guides. It is a sensible budget candidate for general use. Select the exact length and power for your method. The family includes very different models, so a favorable price on the wrong model is not a saving.",
+            "St Croix’s current Triumph page lists a 2027 freshwater series with SCII carbon blanks and a broad choice of lengths and powers. Compare it when you want a more specific freshwater setup. Match the current model code because older Triumph stock uses different specifications.",
+            "For a premium comparison, Shimano Expride Spinning B adds a Carbon Monocoque handle and CI4+ reel seat around its Hi-Power X construction. Those are useful features to inspect in hand. Mount a suitable reel and compare the grip, balance and response with a less expensive rod.",
+            "Spend more on the rod when repeated casts and lure control make those differences valuable to you. Keep the simpler option for an occasional trip if it suits the method. Ask the guide to confirm the lure and line range before you buy a specialist outfit."
+          ],
+          "sources": [
+            "rod-basics",
+            "ugly-gx2",
+            "stcroix-triumph",
+            "shimano-expride"
+          ]
+        },
+        {
+          "id": "reels",
+          "title": "Reels: compare the exact size and service needs",
+          "paragraphs": [
+            "A reel name covers a range of sizes. Start with the required line type and capacity, then compare the reel with the rod. Do not choose from maximum drag alone. Read the model table and make sure the weight, capacity and retrieve suit the work.",
+            "Daiwa’s current spinning range provides a useful cost ladder: Revros LT at the budget end and 2026 BG LT above it. Search the full product name. The original BG, BG LT and BG SW are separate lines; do not carry one model’s materials or specifications into another.",
+            "Shimano’s Stradic FM is a premium comparison for this shortlist. Shimano describes InfinityXross gearing as a way to distribute load across the gear teeth. Consider that design alongside the exact size’s capacity and weight. It is a specific mechanical feature, not a promise of maintenance-free use.",
+            "For saltwater trips, include care and service in the decision. Shimano’s maintenance guidance allows a gentle fresh-water rinse and warns against submerging the reel. Follow the instructions for your model. Ask about local service before travel if the reel is essential to the trip.",
+            "Upgrade when the current reel has a clear limitation in the intended setup. If the guide supplies the working outfit, you may gain more from better glasses or rainwear. Avoid purchasing a second reel before you know which rod and line it needs to match."
+          ],
+          "sources": [
+            "rod-basics",
+            "daiwa-prices",
+            "daiwa-bg",
+            "shimano-stradic",
+            "shimano-care"
+          ]
+        },
+        {
+          "id": "glasses",
+          "title": "Polarized glasses: protect your eyes at every tier",
+          "paragraphs": [
+            "Polarization reduces reflected glare from water. UV protection is a separate property. The American Academy of Ophthalmology says to choose lenses with full UV protection. A darker lens or a higher price does not establish that protection by itself.",
+            "A budget pair can be a good purchase when the stated protection and fit meet your needs. SUNGAIT’s Metal Rectangle model provides a low-cost polarized example. Read the product information and try the frame. Check whether it stays in place when you look toward your feet.",
+            "Costa’s Fantail PRO provides a premium example with adjustable nose pads, side shields and 580G glass lenses. These features can matter on repeated long days. Pay for a fit you prefer and coverage you can use, not just the lens name.",
+            "Glass and plastic also involve a tradeoff. The academy notes that plastic lenses are less likely to shatter than glass, and polycarbonate can tolerate stronger impacts than ordinary plastic. Choose around the activity rather than assuming the most expensive lens material is best for every task.",
+            "Try the glasses with the screens you use on the boat. Polarized lenses can make some LCD displays harder to read. Check the phone, navigation display and watch before the trip. Keep a case and a suitable retainer in your plan for either tier."
+          ],
+          "sources": [
+            "aao-polarized",
+            "aao-uv",
+            "sungait",
+            "costa-fantail"
+          ]
+        },
+        {
+          "id": "rainwear",
+          "title": "Rain gear: buy the exposure you expect",
+          "paragraphs": [
+            "Frogg Toggs Ultra-Lite2 provides a budget jacket-and-pants suit made from light nonwoven fabric. Consider it for an occasional trip when pack size and cost matter. Inspect the fit over your clothes and choose an outing where the fabric will avoid rough contact.",
+            "For repeated wet boat days, compare a fishing jacket and bib system. Grundens Neptune uses PU-coated polyester. The jacket and bib are separate purchases, so include both when you compare the total. Check the leg openings with your boots and the straps with your middle layer.",
+            "Patagonia’s Torrentshell 3L offers a waterproof and breathable shell for mixed use. It serves a different buyer from a simple coated deck suit. Compare how much you will walk, how often you will wear it away from fishing, and what lower-body rain protection you already own.",
+            "Spend more when the upgrade fixes a hood, cuff, fit or fabric problem that affects your trips. Do not replace an intact shell just to match a newer base layer. Use the [fishing layering guide](/guides/fishing-layering-system-guide/) to check the whole outfit before you choose its most expensive piece."
+          ],
+          "sources": [
+            "frog-rain",
+            "grundens-neptune",
+            "grundens-bib",
+            "patagonia-2026"
+          ]
+        },
+        {
+          "id": "boots",
+          "title": "Boots: the right sole comes before the price",
+          "paragraphs": [
+            "A deck boot and a wading boot are different tools. XTRATUF’s Ankle Deck Boot uses a waterproof body and a nonmarking, slip-resistant Chevron outsole. Orvis Clearwater wading boots use a rubber outsole with designated stud locations and protective areas around the foot.",
+            "Choose the type before the tier. On a guided boat, ask which sole the operator accepts. For a river, check local rules and the guide’s advice about traction. Felt restrictions in Alaska fresh water and Maryland make that check especially relevant for travel.",
+            "Pay for a better fit before decorative details. Try boots with your actual socks and, where needed, stockingfoot waders. Check the toe space and heel hold. A more expensive boot with the wrong shape still leaves you with the wrong boot.",
+            "Premium wading options such as Simms G3 Guide Vibram boots deserve comparison when you spend substantial time in them. Check the compatible studs rather than adding generic screws. Keep the purchase tied to fit, support and the required sole. No outsole removes the need to assess wet footing carefully."
+          ],
+          "sources": [
+            "xtratuf",
+            "orvis-boots",
+            "ak-felt",
+            "md-felt",
+            "simms-g3",
+            "simms-studs",
+            "ffi-safe"
+          ]
+        },
+        {
+          "id": "bags",
+          "title": "Dry bags: pay for the protection class",
+          "paragraphs": [
+            "A roll-top bag can be a practical choice for spare clothes. SealLine Discovery uses welded construction and comes in several sizes. Choose a capacity that leaves enough room to close it as directed. An overfilled bag can prevent a proper closure.",
+            "Keep splash protection and submersible protection separate. SealLine’s roll-down pack instructions warn that these packs are not for submerged use. The company recommends more protective storage for sensitive electronics. Do not treat a dry-bag label as permission to immerse your camera.",
+            "YETI’s Panga 28L backpack takes a different approach with a waterproof zipper. YETI states an IPX7 test for properly closed Panga bags: one metre of immersion for 30 minutes. That is a defined claim with conditions, not unlimited depth or unlimited time.",
+            "Choose premium storage when the exposure and contents justify that different closure and rating. For clothing in a protected boat locker, a simpler roll-top may do the job. For electronics, read both the bag and device requirements, then choose a protective case suitable for the risk.",
+            "Check the closure before each outing. Keep the sealing surfaces clean and protect the fabric from sharp tackle. Dry the bag after use. A costly bag with an open or dirty closure cannot provide the protection you bought."
+          ],
+          "sources": [
+            "sealline-bag",
+            "sealline-faq",
+            "sealline-limits",
+            "yeti-panga",
+            "yeti-rating"
+          ]
+        },
+        {
+          "id": "prices",
+          "title": "Use real price anchors, then compare the total",
+          "paragraphs": [
+            "These US dollar prices were checked on 11 November 2026. They exclude tax and delivery. They are listed examples, not a promise of stock in every size. Product generations, selected variants and discounts can change what you pay.",
+            "The rod examples below span about $60–145 for budget and middle choices. The reel examples span about $70–255. Keep those bands tied to the named products. They do not define the full market for specialist saltwater or fly tackle.",
+            "Compare complete purchases. The Frogg Toggs price includes jacket and pants. The Neptune row is a jacket only. The Torrentshell row is also a jacket only. The Discovery and Panga bags differ in capacity, closure and carrying system, so their price difference buys more than a change of logo."
+          ],
+          "sources": [
+            "ugly-gx2",
+            "stcroix-triumph",
+            "daiwa-prices",
+            "shimano-price",
+            "sungait",
+            "costa-fantail",
+            "frog-rain",
+            "grundens-neptune",
+            "patagonia-2026",
+            "xtratuf",
+            "sealline-10",
+            "yeti-panga"
+          ],
+          "table": {
+            "heads": [
+              "Product",
+              "Position in this shortlist",
+              "USD, checked 11 November 2026",
+              "Comparison note"
+            ],
+            "rows": [
+              [
+                "Ugly Stik GX2 spinning rod",
+                "Budget",
+                "$59.95",
+                "Select the correct length and power."
+              ],
+              [
+                "St Croix Triumph freshwater",
+                "Mid-range",
+                "$115–145",
+                "Current 2027 series; check model and stock."
+              ],
+              [
+                "Daiwa Revros LT",
+                "Budget",
+                "From $69.99 MSRP",
+                "Choose the required size."
+              ],
+              [
+                "Daiwa 2026 BG LT",
+                "Mid-range",
+                "$179.99 MSRP",
+                "Distinct from the original BG and BG SW."
+              ],
+              [
+                "Shimano Stradic FM 2500HG",
+                "Premium",
+                "$254.99",
+                "Price for the named size at Tackle Warehouse."
+              ],
+              [
+                "SUNGAIT Metal Rectangle",
+                "Budget",
+                "$18.99 displayed",
+                "Check the selected lens and frame."
+              ],
+              [
+                "Costa Fantail PRO gray 580G",
+                "Premium",
+                "$272 listed",
+                "Check availability of this frame/lens combination."
+              ],
+              [
+                "Frogg Toggs Ultra-Lite2",
+                "Budget",
+                "$32.99 selected variant",
+                "Jacket and pants included."
+              ],
+              [
+                "Grundens Neptune jacket",
+                "Mid-range",
+                "$109.99",
+                "Matching bib is a separate purchase."
+              ],
+              [
+                "Patagonia Torrentshell 3L",
+                "Mid-range",
+                "$189 listed",
+                "Jacket only; 2026 manufacturer catalog."
+              ],
+              [
+                "XTRATUF Ankle Deck Boot 22733",
+                "Mid-range",
+                "$115",
+                "Deck footwear."
+              ],
+              [
+                "SealLine Discovery 10L",
+                "Budget",
+                "$39.95 listed",
+                "Roll-top; check stock."
+              ],
+              [
+                "YETI Panga 28L backpack",
+                "Premium",
+                "$325",
+                "Larger pack with a submersible closure."
+              ]
+            ]
+          }
+        },
+        {
+          "id": "decision",
+          "title": "Make the next purchase specific",
+          "paragraphs": [
+            "List the equipment you own beside the guide’s supplied items. Mark only the gaps. Then choose one problem to solve: a rod that matches the lure, glasses that fit, a complete rain outfit, or suitable dry storage.",
+            "Use a simple cost-per-use calculation with your own numbers. Divide the full purchase cost by the number of trips you realistically expect. Treat that as a planning exercise, not a durability forecast. A lower figure only helps if the equipment actually fits and serves the trip.",
+            "Keep care and repair in the same plan. Rinse tackle as its manufacturer directs. Dry clothes and bags before storage. Inspect the boots and closures before departure. A suitable item that you maintain can be a better purchase than an upgrade you neglect."
+          ],
+          "sources": [
+            "rod-basics",
+            "shimano-care",
+            "simms-care",
+            "sealline-faq"
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Which fishing gear should I upgrade first?",
+          "a": "Fix the clearest problem in fit, protection or method suitability. For a guided trip, confirm the supplied tackle before you buy more."
+        },
+        {
+          "q": "Does a premium rod catch more fish?",
+          "a": "A premium rod can offer features you prefer. Match the lure, line and action first; a price tag cannot guarantee a catch."
+        },
+        {
+          "q": "Are cheap polarized sunglasses useful?",
+          "a": "Yes, when the frame fits and the lenses provide stated full UV protection. Polarization and UV protection are separate features."
+        },
+        {
+          "q": "Is a saltwater reel maintenance-free?",
+          "a": "No. Follow the model’s care instructions. Shimano warns against immersing a reel during cleaning."
+        },
+        {
+          "q": "Is every dry bag submersible?",
+          "a": "No. Read the protection class and closure instructions. A roll-top bag and a rated submersible zipper bag can have different limits."
+        },
+        {
+          "q": "When does premium equipment make financial sense?",
+          "a": "When its specific features solve a frequent problem and the total cost fits your planned use. Do not assume a longer life without evidence."
+        }
+      ],
+      "relatedTrips": [],
+      "relatedGuides": [
+        "merino-wool-fishing-base-layers",
+        "fishing-waders-buying-guide",
+        "fishing-layering-system-guide",
+        "what-to-bring-on-a-guided-fishing-trip",
+        "alaska-fishing-packing-list"
+      ],
+      "reel": null,
+      "regionPath": "/trips/",
+      "regionLabel": "All trips",
+      "nextStep": "Choose the one upgrade that fixes your biggest problem on the water.",
+      "new": true,
+      "plannerNote": "Check the guide’s supplied tackle before you add a rod or reel to the shopping list.",
+      "revision": "Written 11 November 2026 from manufacturer and independent sources."
+    }
+  ],
+  "shoppingLists": {
+    "/guides/merino-wool-fishing-base-layers/": {
+      "title": "Merino fishing layers: budget to premium",
+      "items": [
+        {
+          "name": "Meriwool Merino 190 Base Layer Short Sleeve T Shirt",
+          "tier": "Budget",
+          "note": "For a first wool tee or mild-day layer. The 190 line offers a lighter option than the 250 crew.",
+          "query": "Meriwool Merino 190 Base Layer Short Sleeve T Shirt"
+        },
+        {
+          "name": "Meriwool Merino 250 Base Layer Long Sleeve",
+          "tier": "Budget",
+          "note": "For cool, slower days. Pure merino at 250 gsm with 18.5-micron fibres.",
+          "query": "Meriwool Merino 250 Base Layer Long Sleeve"
+        },
+        {
+          "name": "Minus33 Ticonderoga Lightweight Crew",
+          "tier": "Mid-range",
+          "note": "For active approaches and layered use. Pure merino at 170 gsm and 17.5 microns.",
+          "query": "Minus33 Ticonderoga Lightweight Crew"
+        },
+        {
+          "name": "Icebreaker Merino 200 Oasis Long Sleeve Crewe",
+          "tier": "Premium",
+          "note": "For a versatile cool-weather base. Pure merino, 200-weight fabric and offset shoulder seams.",
+          "query": "Icebreaker Merino 200 Oasis Long Sleeve Crewe"
+        },
+        {
+          "name": "Smartwool Classic All-Season Merino Base Layer Crew",
+          "tier": "Premium",
+          "note": "For frequent use with a light fabric. The 150 gsm knit uses a nylon core for added strength.",
+          "query": "Smartwool Classic All-Season Merino Base Layer Crew"
+        },
+        {
+          "name": "Smartwool Classic Thermal Merino Base Layer Crew",
+          "tier": "Premium",
+          "note": "The owner’s premium brand pick for colder trips. Pure merino at 250 gsm with flat seams.",
+          "query": "Smartwool Classic Thermal Merino Base Layer Crew"
+        },
+        {
+          "name": "Smartwool Classic Thermal Merino Base Layer 3/4 Bottom",
+          "tier": "Premium",
+          "note": "For a warm lower-body base with a shorter leg. Pure merino at 250 gsm; check the fit with your socks.",
+          "query": "Smartwool Classic Thermal Merino Base Layer 3/4 Bottom"
+        },
+        {
+          "name": "Smartwool Hike Classic Edition Light Cushion Crew Socks",
+          "tier": "Premium",
+          "note": "For boots with limited room for thick socks. Crew height with wool, nylon and elastane.",
+          "query": "Smartwool Hike Classic Edition Light Cushion Crew Socks"
+        },
+        {
+          "name": "Darn Tough Hiker Micro Crew Midweight Hiking Socks 1466",
+          "tier": "Premium",
+          "note": "For a cushioned midweight sock. The brand backs eligible socks with its lifetime replacement guarantee.",
+          "query": "Darn Tough Hiker Micro Crew Midweight Hiking Socks 1466"
+        },
+        {
+          "name": "BUFF Merino Lightweight Neckwear",
+          "tier": "Mid-range",
+          "note": "For a light collar layer on cool days. The 125 gsm fabric is 100% merino.",
+          "query": "BUFF Merino Lightweight Neckwear"
+        },
+        {
+          "name": "Minus33 Lightweight Ridge Cuff Beanie",
+          "tier": "Budget",
+          "note": "For ear coverage beneath a roomy hood. A light, double-layer beanie in pure merino.",
+          "query": "Minus33 Lightweight Ridge Cuff Beanie"
+        },
+        {
+          "name": "Minus33 Lightweight Merino Wool Glove Liners",
+          "tier": "Budget",
+          "note": "For an inner hand layer beneath suitable outer gloves. Choose these for wool comfort, then check finger movement.",
+          "query": "Minus33 Lightweight Merino Wool Glove Liners"
+        }
+      ]
+    },
+    "/guides/fishing-waders-buying-guide/": {
+      "title": "Waders, boots and essential accessories",
+      "items": [
+        {
+          "name": "Frogg Toggs Canyon II Stockingfoot Chest Wader",
+          "tier": "Budget",
+          "note": "For occasional wading. A breathable four-ply nylon upper and included belt; separate boots required.",
+          "query": "Frogg Toggs Canyon II Stockingfoot Chest Wader"
+        },
+        {
+          "name": "Redington Escape Waders",
+          "tier": "Mid-range",
+          "note": "For anglers who find the right dealer size. Three-layer upper and four-layer lower construction.",
+          "query": "Redington Escape Waders"
+        },
+        {
+          "name": "Orvis Clearwater Waders",
+          "tier": "Mid-range",
+          "note": "For a straightforward breathable setup. Stockingfoot design; compare body, inseam and bootie fit.",
+          "query": "Orvis Clearwater Waders"
+        },
+        {
+          "name": "Orvis PRO Waders",
+          "tier": "Premium",
+          "note": "For frequent anglers who want to compare the PRO fit and features. Try them with the full lower-body outfit.",
+          "query": "Orvis PRO Waders"
+        },
+        {
+          "name": "Simms G3 Guide Stockingfoot Waders",
+          "tier": "Premium",
+          "note": "For repeated river trips. Three-layer upper and four-layer lower GORE-TEX construction; check the exact generation.",
+          "query": "Simms G3 Guide Stockingfoot Waders"
+        },
+        {
+          "name": "Simms G3 PRO Stockingfoot Waders",
+          "tier": "Premium",
+          "note": "For the newer G3 line. Compare the exact model with older G3 Guide stock before purchase.",
+          "query": "Simms G3 PRO Stockingfoot Waders"
+        },
+        {
+          "name": "Simms G4Z Stockingfoot Waders",
+          "tier": "Premium",
+          "note": "For frequent use where front-zip access matters. Three/four-layer GORE-TEX Pro and a waterproof centre zipper.",
+          "query": "Simms G4Z Stockingfoot Waders"
+        },
+        {
+          "name": "Orvis Clearwater Wading Boots Rubber Sole",
+          "tier": "Mid-range",
+          "note": "For stockingfoot waders. Rubber soles with designated stud locations and a protective toe bumper.",
+          "query": "Orvis Clearwater Wading Boots Rubber Sole"
+        },
+        {
+          "name": "Simms G3 Guide Wading Boots Vibram Sole",
+          "tier": "Premium",
+          "note": "For a premium boot fit to compare on long river days. Accepts specified Simms studs and star cleats.",
+          "query": "Simms G3 Guide Wading Boots Vibram Sole"
+        },
+        {
+          "name": "Orvis Clearwater Ultralight Waders Replacement Belt",
+          "tier": "Budget",
+          "note": "For a missing or spare belt on compatible Orvis waders. Adjust it snugly before you enter the water.",
+          "query": "Orvis Clearwater Ultralight Waders Replacement Belt"
+        },
+        {
+          "name": "Orvis Carbon Fiber Wading Staff",
+          "tier": "Premium",
+          "note": "For extra support and a probe for uncertain ground. Folds into a belt-mounted sheath.",
+          "query": "Orvis Wading Staff carbon fiber 3FTS"
+        },
+        {
+          "name": "GEAR AID Aquaseal FD Repair Kit",
+          "tier": "Budget",
+          "note": "For small compatible wader repairs. Prepare a clean, dry surface and allow the stated 8–12-hour cure.",
+          "query": "GEAR AID Aquaseal FD Repair Kit"
+        },
+        {
+          "name": "Simms HardBite Wading Boot Studs for Vibram Soles",
+          "tier": "Mid-range",
+          "note": "For compatible rubber or Vibram boots. Choose the 20-count pack and follow the boot maker’s placement instructions.",
+          "query": "Simms HardBite Wading Boot Studs Vibram Soles 20 Count"
+        }
+      ]
+    },
+    "/guides/fishing-layering-system-guide/": {
+      "title": "Build your fishing clothing system",
+      "items": [
+        {
+          "name": "Meriwool Merino 250 Base Layer Long Sleeve",
+          "tier": "Budget",
+          "note": "For cold, slower sessions. Pure merino at 250 gsm; add a separate shell for rain.",
+          "query": "Meriwool Merino 250 Base Layer Long Sleeve"
+        },
+        {
+          "name": "Helly Hansen LIFA Active Crew",
+          "tier": "Mid-range",
+          "note": "For an active approach or a non-wool base. A two-layer polyester/polypropylene construction.",
+          "query": "Helly Hansen LIFA Active Crew"
+        },
+        {
+          "name": "Smartwool Classic All-Season Merino Base Layer Crew",
+          "tier": "Premium",
+          "note": "For a light wool base on mixed days. The 150 gsm fabric has a nylon core.",
+          "query": "Smartwool Classic All-Season Merino Base Layer Crew"
+        },
+        {
+          "name": "Columbia Fast Trek II Full Zip Fleece",
+          "tier": "Budget",
+          "note": "For removable middle-layer warmth. Polyester microfleece with a full front zipper.",
+          "query": "Columbia Fast Trek II Full Zip Fleece"
+        },
+        {
+          "name": "Patagonia Nano Puff Jacket",
+          "tier": "Premium",
+          "note": "For extra insulation during a stop or boat ride. Uses 60-g PrimaLoft Gold Insulation Eco; add rain protection.",
+          "query": "Patagonia Nano Puff Jacket"
+        },
+        {
+          "name": "Frogg Toggs Ultra-Lite2 Waterproof Rain Suit",
+          "tier": "Budget",
+          "note": "For occasional light-duty rain cover. Packable nonwoven jacket and pants.",
+          "query": "Frogg Toggs Ultra-Lite2 Waterproof Rain Suit"
+        },
+        {
+          "name": "Patagonia Torrentshell 3L Rain Jacket",
+          "tier": "Mid-range",
+          "note": "For a waterproof and breathable outer layer. Try the three-layer shell over your insulation.",
+          "query": "Patagonia Torrentshell 3L Rain Jacket"
+        },
+        {
+          "name": "Grundens Neptune 319 Jacket",
+          "tier": "Mid-range",
+          "note": "For repeated deck spray and wet boat days. PU-coated polyester with an adjustable hem.",
+          "query": "Grundens Neptune 319 Jacket"
+        },
+        {
+          "name": "Grundens Neptune 509 Bib",
+          "tier": "Mid-range",
+          "note": "For lower-body water protection on deck. PU-coated polyester and adjustable leg closures.",
+          "query": "Grundens Neptune 509 Bib"
+        },
+        {
+          "name": "Darn Tough Hiker Micro Crew Midweight Hiking Socks 1466",
+          "tier": "Premium",
+          "note": "For a cushioned boot sock. Check the cuff height and available room inside your footwear.",
+          "query": "Darn Tough Hiker Micro Crew Midweight Hiking Socks 1466"
+        },
+        {
+          "name": "SHOWA TEMRES 282 Gloves",
+          "tier": "Mid-range",
+          "note": "For cold, wet tasks. A water-resistant polyurethane coating, fleece liner and textured grip.",
+          "query": "SHOWA TEMRES 282 Gloves"
+        },
+        {
+          "name": "Minus33 Lightweight Merino Wool Glove Liners",
+          "tier": "Budget",
+          "note": "For thin inner warmth beneath suitable gloves. Carry a dry spare for hand-layer changes.",
+          "query": "Minus33 Lightweight Merino Wool Glove Liners"
+        },
+        {
+          "name": "Minus33 Lightweight Ridge Cuff Beanie",
+          "tier": "Budget",
+          "note": "For ear coverage beneath the hood. Light double-layer pure merino.",
+          "query": "Minus33 Lightweight Ridge Cuff Beanie"
+        },
+        {
+          "name": "BUFF Merino Lightweight Neckwear",
+          "tier": "Mid-range",
+          "note": "For the gap at the collar. A light 125 gsm pure-merino tube that packs easily.",
+          "query": "BUFF Merino Lightweight Neckwear"
+        }
+      ]
+    },
+    "/guides/fishing-gear-quality-tiers/": {
+      "title": "Fishing gear worth your money",
+      "items": [
+        {
+          "name": "Ugly Stik GX2 Spinning Rod",
+          "tier": "Budget",
+          "note": "For a general-purpose outfit. Graphite/fiberglass construction; select the right lure rating and power.",
+          "query": "Ugly Stik GX2 Spinning Rod"
+        },
+        {
+          "name": "St Croix Triumph Freshwater Spinning Rod",
+          "tier": "Mid-range",
+          "note": "For a more specific freshwater setup. Current SCII carbon models span several lengths and powers; check the model code.",
+          "query": "St Croix Triumph Freshwater Spinning Rod"
+        },
+        {
+          "name": "Shimano Expride Spinning B Rod",
+          "tier": "Premium",
+          "note": "For anglers who value a specific casting feel. Carbon Monocoque handle and CI4+ reel seat.",
+          "query": "Shimano Expride Spinning B Rod"
+        },
+        {
+          "name": "Daiwa Revros LT Spinning Reel",
+          "tier": "Budget",
+          "note": "For a modest-cost spinning outfit. Choose the size from the required line capacity and rod match.",
+          "query": "Daiwa Revros LT Spinning Reel"
+        },
+        {
+          "name": "Daiwa 2026 BG LT Spinning Reel",
+          "tier": "Mid-range",
+          "note": "For the middle step in this reel shortlist. Compare the exact BG LT model rather than older BG specifications.",
+          "query": "Daiwa 2026 BG LT Spinning Reel"
+        },
+        {
+          "name": "Shimano Stradic FM 2500HG Spinning Reel",
+          "tier": "Premium",
+          "note": "For a premium spinning setup. InfinityXross gearing; check the 2500HG capacity against the trip’s line needs.",
+          "query": "Shimano Stradic FM 2500HG Spinning Reel"
+        },
+        {
+          "name": "SUNGAIT Metal Rectangle Polarized Sunglasses",
+          "tier": "Budget",
+          "note": "For a low-cost polarized option. Check the stated UV protection and whether the metal frame fits securely.",
+          "query": "SUNGAIT Metal Rectangle Polarized Sunglasses"
+        },
+        {
+          "name": "Costa Fantail PRO 580G Sunglasses",
+          "tier": "Premium",
+          "note": "For adjustable fit and side coverage. Choose the glass lens color for your light conditions.",
+          "query": "Costa Fantail PRO 580G Sunglasses"
+        },
+        {
+          "name": "Frogg Toggs Ultra-Lite2 Waterproof Rain Suit",
+          "tier": "Budget",
+          "note": "For occasional rain cover. Includes a light nonwoven jacket and pants.",
+          "query": "Frogg Toggs Ultra-Lite2 Waterproof Rain Suit"
+        },
+        {
+          "name": "Grundens Neptune 319 Jacket",
+          "tier": "Mid-range",
+          "note": "For a fishing shell on wet decks. PU-coated polyester; budget separately for lower-body cover.",
+          "query": "Grundens Neptune 319 Jacket"
+        },
+        {
+          "name": "Patagonia Torrentshell 3L Rain Jacket",
+          "tier": "Mid-range",
+          "note": "For a shell that can serve fishing and other outdoor trips. Waterproof and breathable three-layer construction.",
+          "query": "Patagonia Torrentshell 3L Rain Jacket"
+        },
+        {
+          "name": "XTRATUF Ankle Deck Boot 22733",
+          "tier": "Mid-range",
+          "note": "For boat use. Waterproof with a nonmarking Chevron sole; check the operator’s footwear requirements.",
+          "query": "XTRATUF Ankle Deck Boot 22733"
+        },
+        {
+          "name": "SealLine Discovery Dry Bag 10L",
+          "tier": "Budget",
+          "note": "For compact clothing storage. Welded roll-top bag; follow the closure instructions and avoid planned immersion.",
+          "query": "SealLine Discovery Dry Bag 10L"
+        },
+        {
+          "name": "YETI Panga 28L Waterproof Backpack",
+          "tier": "Premium",
+          "note": "For a backpack with a submersible closure. Keep the waterproof zipper fully closed; follow its care instructions.",
+          "query": "YETI Panga 28L Waterproof Backpack"
+        }
+      ]
+    }
+  }
+}

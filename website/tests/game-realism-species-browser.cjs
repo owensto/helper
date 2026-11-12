@@ -1,0 +1,15 @@
+/* Render the requested markings with the production fish model for visual review. */
+const {chromium}=require(process.env.PLAYWRIGHT_MODULE||'playwright');
+const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path');
+(async()=>{const out=process.env.SCREENSHOT_DIR||'test-results/realism';fs.mkdirSync(out,{recursive:true});const b=await chromium.launch({headless:true,...(process.env.CHROMIUM_PATH?{executablePath:process.env.CHROMIUM_PATH}:{})});try{
+ const p=await b.newPage({viewport:{width:1440,height:1000}}),errors=[];p.on('pageerror',e=>errors.push(e.message));await p.goto((process.env.TEST_ORIGIN||'http://127.0.0.1:8057')+'/play/');await p.waitForFunction(()=>CastwardPlay.snapshot().renderer==='3d');await p.locator('#game-pause').click();
+ const count=await p.evaluate(async()=>{
+  const T=await import('https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js'),{fishModel}=await import(document.querySelector('[data-fishing-game]').dataset.renderer);
+  const ids=['rainbow-trout','red-drum','largemouth-bass','common-snook','atlantic-salmon','bonefish'];const species=ids.map(id=>CastwardGame.species.find(s=>s.id===id));
+  // Striped bass is a renderer reference, not an added catch or save ID.
+  species.push({id:'striped-bass',name:'Striped bass · renderer reference',shape:'bass',color:'#aab7ad'});
+  const sheet=document.createElement('section');sheet.id='species-review';sheet.style='position:fixed;inset:0;z-index:99999;background:#e9eadc;padding:24px;display:grid;grid-template-columns:repeat(3,1fr);gap:16px;overflow:auto;font:18px sans-serif;color:#203b32';document.body.append(sheet);
+  const r=new T.WebGLRenderer({antialias:true,preserveDrawingBuffer:true});r.setSize(440,220);r.outputColorSpace=T.SRGBColorSpace;r.toneMapping=T.ACESFilmicToneMapping;
+  for(const s of species){const scene=new T.Scene();scene.background=new T.Color('#193e36');scene.add(new T.HemisphereLight('#edf5ff','#59665d',2.2));const key=new T.DirectionalLight('#fff4e7',2.8);key.position.set(-2,4,5);scene.add(key);const rim=new T.DirectionalLight('#bed8e2',3.2);rim.position.set(2,2,-2);scene.add(rim);const fish=fishModel(s);fish.rotation.set(.05,-.38,-.04);fish.scale.setScalar(['billfish','sail','pike','slim','sturgeon'].includes(s.shape)?1.2:1.5);scene.add(fish);const camera=new T.OrthographicCamera(-3.2,3.2,1.6,-1.6,.1,30);camera.position.set(0,.3,8);camera.lookAt(0,0,0);r.render(scene,camera);const card=document.createElement('article'),img=new Image();img.src=r.domElement.toDataURL();img.style='width:100%;display:block;border-radius:8px';card.append(img,document.createTextNode(s.name));sheet.append(card);fish.traverse(o=>{o.geometry?.dispose();o.material?.map?.dispose();o.material?.dispose();});}r.dispose();return species.length;
+ });assert.equal(count,7);await p.locator('#species-review').screenshot({path:path.join(out,'species-markings-1440.png')});assert.deepEqual(errors,[]);console.log(JSON.stringify({passed:true,species:count}));
+ }finally{await b.close();}})().catch(e=>{console.error(e);process.exitCode=1;});

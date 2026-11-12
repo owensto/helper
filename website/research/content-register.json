@@ -1,7 +1,7 @@
 {
   "reviewed": "2026-09-13",
   "tripGuides": 798,
-  "environmentGuides": 12,
+  "environmentGuides": 22,
   "countries": [
     "Andorra",
     "Angola",
@@ -130,7 +130,7 @@
     "Asia",
     "Oceania"
   ],
-  "sources": 848,
+  "sources": 1030,
   "articles": [
     {
       "id": "situk-coho-river",
@@ -12146,168 +12146,338 @@
       "id": "rivers-streams",
       "type": "environment",
       "sources": [
-        "reading-water"
+        "odfw-trout",
+        "reading-water",
+        "noaa-release"
       ],
       "review": {
+        "checked": "2026-11-11",
         "status": "source-checked",
-        "checked": "2026-09-13",
         "fieldTested": false,
-        "independentExpertReviewed": false,
-        "automatedAudit": "see research/quality-report.json"
+        "independentExpertReviewed": false
       }
     },
     {
       "id": "spring-fed",
       "type": "environment",
       "sources": [
-        "clearwater"
+        "orvis-leaders",
+        "clearwater",
+        "orvis-small-stream-tactics"
       ],
       "review": {
+        "checked": "2026-11-11",
         "status": "source-checked",
-        "checked": "2026-09-13",
         "fieldTested": false,
-        "independentExpertReviewed": false,
-        "automatedAudit": "see research/quality-report.json"
+        "independentExpertReviewed": false
       }
     },
     {
       "id": "glacier-influenced",
       "type": "environment",
       "sources": [
-        "tanana-report"
+        "alaska-aquatic",
+        "kenai-confluence",
+        "tanana-report",
+        "clearwater"
       ],
       "review": {
+        "checked": "2026-11-11",
         "status": "source-checked",
-        "checked": "2026-09-13",
         "fieldTested": false,
-        "independentExpertReviewed": false,
-        "automatedAudit": "see research/quality-report.json"
+        "independentExpertReviewed": false
       }
     },
     {
-      "id": "lakes-reservoirs",
+      "id": "backcountry-small-streams",
       "type": "environment",
       "sources": [
-        "stillwater"
+        "rocky",
+        "orvis-small-stream-tactics",
+        "orvis-small-stream-flies"
       ],
       "review": {
+        "checked": "2026-11-11",
         "status": "source-checked",
-        "checked": "2026-09-13",
         "fieldTested": false,
-        "independentExpertReviewed": false,
-        "automatedAudit": "see research/quality-report.json"
+        "independentExpertReviewed": false
       }
     },
     {
-      "id": "alpine-lakes",
+      "id": "tailwaters",
       "type": "environment",
       "sources": [
-        "rocky"
+        "tva-water-safety",
+        "species-bdb22b610d22",
+        "tennessee-tailwaters"
       ],
       "review": {
+        "checked": "2026-11-11",
         "status": "source-checked",
-        "checked": "2026-09-13",
         "fieldTested": false,
-        "independentExpertReviewed": false,
-        "automatedAudit": "see research/quality-report.json"
+        "independentExpertReviewed": false
       }
     },
     {
-      "id": "estuaries-mangroves",
+      "id": "big-rivers",
       "type": "environment",
       "sources": [
-        "estuary"
+        "reading-water",
+        "missouri-big-rivers"
       ],
       "review": {
+        "checked": "2026-11-11",
         "status": "source-checked",
-        "checked": "2026-09-13",
         "fieldTested": false,
-        "independentExpertReviewed": false,
-        "automatedAudit": "see research/quality-report.json"
-      }
-    },
-    {
-      "id": "saltwater-flats",
-      "type": "environment",
-      "sources": [
-        "flats-learning"
-      ],
-      "review": {
-        "status": "source-checked",
-        "checked": "2026-09-13",
-        "fieldTested": false,
-        "independentExpertReviewed": false,
-        "automatedAudit": "see research/quality-report.json"
-      }
-    },
-    {
-      "id": "surf-beaches",
-      "type": "environment",
-      "sources": [
-        "hatteras"
-      ],
-      "review": {
-        "status": "source-checked",
-        "checked": "2026-09-13",
-        "fieldTested": false,
-        "independentExpertReviewed": false,
-        "automatedAudit": "see research/quality-report.json"
-      }
-    },
-    {
-      "id": "reef-bottom",
-      "type": "environment",
-      "sources": [
-        "halibut"
-      ],
-      "review": {
-        "status": "source-checked",
-        "checked": "2026-09-13",
-        "fieldTested": false,
-        "independentExpertReviewed": false,
-        "automatedAudit": "see research/quality-report.json"
-      }
-    },
-    {
-      "id": "offshore",
-      "type": "environment",
-      "sources": [
-        "keys-world"
-      ],
-      "review": {
-        "status": "source-checked",
-        "checked": "2026-09-13",
-        "fieldTested": false,
-        "independentExpertReviewed": false,
-        "automatedAudit": "see research/quality-report.json"
-      }
-    },
-    {
-      "id": "ice-fishing",
-      "type": "environment",
-      "sources": [
-        "finland"
-      ],
-      "review": {
-        "status": "source-checked",
-        "checked": "2026-09-13",
-        "fieldTested": false,
-        "independentExpertReviewed": false,
-        "automatedAudit": "see research/quality-report.json"
+        "independentExpertReviewed": false
       }
     },
     {
       "id": "tropical-floodplains",
       "type": "environment",
       "sources": [
+        "igfa-peacock",
+        "kakadu-runoff",
         "amazon-planner"
       ],
       "review": {
+        "checked": "2026-11-11",
         "status": "source-checked",
-        "checked": "2026-09-13",
         "fieldTested": false,
-        "independentExpertReviewed": false,
-        "automatedAudit": "see research/quality-report.json"
+        "independentExpertReviewed": false
+      }
+    },
+    {
+      "id": "ponds-small-lakes",
+      "type": "environment",
+      "sources": [
+        "tmf-lakes",
+        "idaho-ponds"
+      ],
+      "review": {
+        "checked": "2026-11-11",
+        "status": "source-checked",
+        "fieldTested": false,
+        "independentExpertReviewed": false
+      }
+    },
+    {
+      "id": "lakes-reservoirs",
+      "type": "environment",
+      "sources": [
+        "tmf-bass",
+        "tmf-lakes",
+        "stillwater",
+        "odfw-trout"
+      ],
+      "review": {
+        "checked": "2026-11-11",
+        "status": "source-checked",
+        "fieldTested": false,
+        "independentExpertReviewed": false
+      }
+    },
+    {
+      "id": "alpine-lakes",
+      "type": "environment",
+      "sources": [
+        "rocky",
+        "washington-high-lakes",
+        "odfw-trout"
+      ],
+      "review": {
+        "checked": "2026-11-11",
+        "status": "source-checked",
+        "fieldTested": false,
+        "independentExpertReviewed": false
+      }
+    },
+    {
+      "id": "great-lakes",
+      "type": "environment",
+      "sources": [
+        "wisconsin-superior",
+        "wisconsin-shore-tackle",
+        "michigan-lake-trout",
+        "nws-great-lakes"
+      ],
+      "review": {
+        "checked": "2026-11-11",
+        "status": "source-checked",
+        "fieldTested": false,
+        "independentExpertReviewed": false
+      }
+    },
+    {
+      "id": "ice-fishing",
+      "type": "environment",
+      "sources": [
+        "minnesota-ice-travel",
+        "new-york-ice",
+        "minnesota-ice"
+      ],
+      "review": {
+        "checked": "2026-11-11",
+        "status": "source-checked",
+        "fieldTested": false,
+        "independentExpertReviewed": false
+      }
+    },
+    {
+      "id": "canals-urban-water",
+      "type": "environment",
+      "sources": [
+        "fwc-peacock",
+        "idaho-ponds"
+      ],
+      "review": {
+        "checked": "2026-11-11",
+        "status": "source-checked",
+        "fieldTested": false,
+        "independentExpertReviewed": false
+      }
+    },
+    {
+      "id": "estuaries-mangroves",
+      "type": "environment",
+      "sources": [
+        "fwc-marine-habitat",
+        "fwc-snook",
+        "estuary",
+        "noaa-habitat"
+      ],
+      "review": {
+        "checked": "2026-11-11",
+        "status": "source-checked",
+        "fieldTested": false,
+        "independentExpertReviewed": false
+      }
+    },
+    {
+      "id": "bayous-coastal-marsh",
+      "type": "environment",
+      "sources": [
+        "fwc-saltwater-tips",
+        "texas-red-drum",
+        "noaa-habitat"
+      ],
+      "review": {
+        "checked": "2026-11-11",
+        "status": "source-checked",
+        "fieldTested": false,
+        "independentExpertReviewed": false
+      }
+    },
+    {
+      "id": "saltwater-flats",
+      "type": "environment",
+      "sources": [
+        "fwc-saltwater-tips",
+        "flats-learning",
+        "orvis-wading-flats",
+        "orvis-bonefish-set"
+      ],
+      "review": {
+        "checked": "2026-11-11",
+        "status": "source-checked",
+        "fieldTested": false,
+        "independentExpertReviewed": false
+      }
+    },
+    {
+      "id": "surf-beaches",
+      "type": "environment",
+      "sources": [
+        "noaa-release",
+        "nws-waves",
+        "hatteras",
+        "tmf-surf"
+      ],
+      "review": {
+        "checked": "2026-11-11",
+        "status": "source-checked",
+        "fieldTested": false,
+        "independentExpertReviewed": false
+      }
+    },
+    {
+      "id": "piers-jetties-bridges",
+      "type": "environment",
+      "sources": [
+        "tmf-pier",
+        "nws-waves",
+        "nws-great-lakes",
+        "odfw-marine-shore",
+        "fwc-saltwater-tips"
+      ],
+      "review": {
+        "checked": "2026-11-11",
+        "status": "source-checked",
+        "fieldTested": false,
+        "independentExpertReviewed": false
+      }
+    },
+    {
+      "id": "rocky-shores-kelp",
+      "type": "environment",
+      "sources": [
+        "nws-waves",
+        "noaa-rockfish-release",
+        "igfa-kelp-bass",
+        "odfw-marine-shore"
+      ],
+      "review": {
+        "checked": "2026-11-11",
+        "status": "source-checked",
+        "fieldTested": false,
+        "independentExpertReviewed": false
+      }
+    },
+    {
+      "id": "reef-bottom",
+      "type": "environment",
+      "sources": [
+        "noaa-release",
+        "tmf-offshore",
+        "noaa-rockfish-release",
+        "halibut"
+      ],
+      "review": {
+        "checked": "2026-11-11",
+        "status": "source-checked",
+        "fieldTested": false,
+        "independentExpertReviewed": false
+      }
+    },
+    {
+      "id": "offshore",
+      "type": "environment",
+      "sources": [
+        "noaa-release",
+        "tmf-offshore",
+        "fwc-marine-habitat",
+        "noaa-sargassum"
+      ],
+      "review": {
+        "checked": "2026-11-11",
+        "status": "source-checked",
+        "fieldTested": false,
+        "independentExpertReviewed": false
+      }
+    },
+    {
+      "id": "kayak-fishing",
+      "type": "environment",
+      "sources": [
+        "tmf-kayak",
+        "fwc-paddling",
+        "nws-cold-water"
+      ],
+      "review": {
+        "checked": "2026-11-11",
+        "status": "source-checked",
+        "fieldTested": false,
+        "independentExpertReviewed": false
       }
     }
   ],

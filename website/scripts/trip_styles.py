@@ -74,7 +74,7 @@ def install(pages, root, origin, add, trips, destinations):
         matches = [r for r in records if s['slug'] in r['styles']]
         cards += '<article class="type-card"><a class="type-card-image" tabindex="-1" href="'+path(s)+'">'+preview_photo(path(s),'(max-width: 700px) 100vw, (max-width: 1000px) 50vw, 33vw', eager=index < 3, fallback=s['image'])+'</a><div class="type-card-meta"><span>'+str(len(matches))+' MATCHING DESTINATIONS</span></div><h2><a href="'+path(s)+'">'+E(s['name'])+'</a></h2><p>'+E(s['definition'])+'</p></article>'
         body = crumb+'<span> / </span>'+E(s['name'])+'</div><header class="wrap type-heading"><span class="eyebrow">TRIP STYLE</span><h1>'+E(s['name'])+'</h1><p class="type-deck">'+E(s['definition'])+'</p><a class="link" href="/atlas/?style='+s['slug']+'">Find this style on the atlas ↗</a></header>'
-        body += '<figure class="type-landscape">'+preview_photo(path(s), eager=True, fallback=s['image'])+'<figcaption>AI illustration of a representative trip environment. <a href="/about/#photo-credits">Image notes</a></figcaption></figure>'
+        body += '<figure class="type-landscape">'+preview_photo(path(s), eager=True, fallback=s['image'])+'</figure>'
         body += '<section class="wrap style-notes">'+''.join('<div><h2>'+title+'</h2><p>'+E(s[key])+'</p></div>' for title,key in [('Who it suits','suits'),('Boats & gear','gear'),('Seasons','season')])+'</section>'
         local = [c for c in classics if c['slug'] in s['classicIds']]
         if local:

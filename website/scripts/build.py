@@ -167,9 +167,13 @@ BOOT['tripTypes']=[{k:t[k] for k in ['slug','name','profileIds','plannerStyle']}
 
 form_index='''<div hidden><form name="trip-interest" method="POST" data-netlify="true" netlify-honeypot="company-fax" action="/thanks/"><input name="company-fax"><input name="email" type="email"><input name="destination"><input name="attribution"><input name="form-name" value="trip-interest"></form></div>'''
 
+from search_discovery import metadata as discovery_metadata, feeds as discovery_feeds
+
 def doc(path,p,preview=False):
     datafile='data.js' if preview or p['kind']=='planner' else 'boot.js'
-    guide_css = '<link rel="stylesheet" href="/assets/guides.css">' if p.get('guideStyle') else ''
+    guide_css = '<link rel="stylesheet" href="/assets/guides.css"><script src="/assets/guide-references.js" defer></script>' if p.get('guideStyle') else ''
+    if p.get('richGuide'):
+        guide_css += '<link rel="stylesheet" href="/assets/guide-rich.css">'
     canonical_path=p.get('redirectTo',path)
     canonical=f'<link rel="canonical" href="{E(CONFIG["siteUrl"]+canonical_path)}">' if CONFIG['siteUrl'] else ''
     if p.get('redirectTo'):canonical+=f'<meta http-equiv="refresh" content="0;url={E(p["redirectTo"],quote=True)}">'
@@ -177,7 +181,11 @@ def doc(path,p,preview=False):
     schema={'@context':'https://schema.org','@type':'Article' if p['kind']=='article' else 'WebPage','name':p['title'],'description':p['desc']}
     if CONFIG['siteUrl']:schema['url']=CONFIG['siteUrl']+path
     if p['kind']=='article':schema.update({'headline':p['title'],'datePublished':p.get('published',DATA['reviewed']),'dateModified':p.get('modified',DATA['reviewed']),'author':{'@type':'Organization','name':'Castward'}})
-    return f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#142e26"><title>{E(p['title'])}</title><meta name="description" content="{E(p['desc'],quote=True)}"><meta name="robots" content="{robots}">{canonical}{p.get('photoPreload','')}<meta property="og:image" content="https://castward.app{E(p.get('ogImage', '/media/scenes/og-1200.webp'),quote=True)}"><meta property="og:image:alt" content="{E(p.get('ogImageAlt', 'A pale sandbar curves across a coastal estuary at first light.'),quote=True)}"><meta name="twitter:card" content="summary_large_image"><meta property="og:type" content="{'article' if p['kind']=='article' else 'website'}"><meta property="og:title" content="{E(p['title'],quote=True)}"><meta property="og:description" content="{E(p['desc'],quote=True)}"><meta property="og:site_name" content="Castward"><link rel="icon" href="/assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/assets/style.css"><link rel="stylesheet" href="/assets/design.css"><link rel="stylesheet" href="/assets/fonts/fonts.css"><link rel="stylesheet" href="/assets/outdoor.css"><link rel="stylesheet" href="/assets/motion.css?v={ASSET_VERSIONS["motion.css"]}"><link rel="stylesheet" href="/assets/trip-types.css?v={ASSET_VERSIONS["trip-types.css"]}">{guide_css}{p.get("atlasAssets", "")}<script src="/assets/motion.js?v={ASSET_VERSIONS["motion.js"]}" defer></script><link rel="stylesheet" href="/assets/preview-cards.css?v={ASSET_VERSIONS["preview-cards.css"]}"><script src="/assets/preview-cards.js?v={ASSET_VERSIONS["preview-cards.js"]}" defer></script><script src="/assets/design.js" defer></script><script type="application/ld+json">{json.dumps(schema).replace('</','<\\/')}</script><script src="/assets/{datafile}" defer></script><script src="/assets/engine.js" defer></script><link rel="stylesheet" href="/assets/trust.css?v={ASSET_VERSIONS["trust.css"]}"><script src="/assets/trust.js?v={ASSET_VERSIONS["trust.js"]}" defer></script><script src="/assets/app.js?v={ASSET_VERSIONS["app.js"]}" defer></script></head><body data-page="{p['kind']}" data-analytics-kind="{p.get('analyticsKind',p['kind'])}">{HEADER}<main id="main">{p['body']}</main>{FOOTER}{form_index}<noscript><div class="wrap note">Destination and field guides work without JavaScript. The interactive checklist requires JavaScript.</div></noscript></body></html>'''
+    if p.get('citations'):
+        schema['citation'] = p['citations']
+    if p['kind']=='article' and p.get('ogImage'):
+        schema['image'] = (CONFIG.get('siteUrl') or 'https://castward.app') + p['ogImage']
+    return f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#142e26"><title>{E(p['title'])}</title><meta name="description" content="{E(p['desc'],quote=True)}"><meta name="robots" content="{robots}">{canonical}{p.get('photoPreload','')}<meta property="og:image" content="https://castward.app{E(p.get('ogImage', '/media/scenes/og-1200.webp'),quote=True)}"><meta property="og:image:alt" content="{E(p.get('ogImageAlt', 'A pale sandbar curves across a coastal estuary at first light.'),quote=True)}"><meta name="twitter:card" content="summary_large_image"><meta property="og:type" content="{'article' if p['kind']=='article' else 'website'}"><meta property="og:title" content="{E(p['title'],quote=True)}"><meta property="og:description" content="{E(p['desc'],quote=True)}"><meta property="og:site_name" content="Castward"><link rel="icon" href="/assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/assets/style.css"><link rel="stylesheet" href="/assets/design.css"><link rel="stylesheet" href="/assets/fonts/fonts.css"><link rel="stylesheet" href="/assets/outdoor.css"><link rel="stylesheet" href="/assets/motion.css?v={ASSET_VERSIONS["motion.css"]}"><link rel="stylesheet" href="/assets/trip-types.css?v={ASSET_VERSIONS["trip-types.css"]}">{guide_css}{p.get("atlasAssets", "")}<script src="/assets/motion.js?v={ASSET_VERSIONS["motion.js"]}" defer></script><link rel="stylesheet" href="/assets/preview-cards.css?v={ASSET_VERSIONS["preview-cards.css"]}"><script src="/assets/preview-cards.js?v={ASSET_VERSIONS["preview-cards.js"]}" defer></script><script src="/assets/design.js" defer></script><script type="application/ld+json">{json.dumps(schema).replace('</','<\\/')}</script>{discovery_metadata(path,p,CONFIG["siteUrl"])}<script src="/assets/{datafile}" defer></script><script src="/assets/engine.js" defer></script><link rel="stylesheet" href="/assets/trust.css?v={ASSET_VERSIONS["trust.css"]}"><script src="/assets/trust.js?v={ASSET_VERSIONS["trust.js"]}" defer></script><script src="/assets/app.js?v={ASSET_VERSIONS["app.js"]}" defer></script></head><body data-page="{p['kind']}" data-analytics-kind="{p.get('analyticsKind',p['kind'])}">{HEADER}<main id="main">{p['body']}</main>{FOOTER}{form_index}<noscript><div class="wrap note">Destination and field guides work without JavaScript. The interactive checklist requires JavaScript.</div></noscript></body></html>'''
 
 from outdoor import install as install_outdoor
 from videos import install as install_videos
@@ -200,16 +208,37 @@ from trip_styles import install as install_trip_styles
 TRIP_STYLES = install_trip_styles(pages, ROOT, CONFIG['siteUrl'], add, TRIPS, DATA['destinations'])
 from interactive_atlas import install as install_atlas
 install_atlas(pages, ROOT, CONFIG['siteUrl'], add, DATA, TRIPS, TRIP_STYLES)
+from fishing_game import install as install_fishing_game
+install_fishing_game(pages, add)
+from conditions import install as install_conditions
+install_conditions(pages, ROOT, add, TRIPS, DATA)
 from index_policy import install as install_index_policy, write_sitemaps
 install_index_policy(pages, TRIPS, CONFIG['siteUrl'], DIST)
 from preview_cards import install as install_preview_cards
 install_preview_cards(pages)
-FOOTER = FOOTER.replace("Illustrations are not navigation charts.", "Environment images are AI illustrations, not verified photographs or navigation charts.")
+FOOTER = FOOTER.replace("Illustrations are not navigation charts.", "Go prepared. Leave the water better.")
+from fishing_lingo import install as install_fishing_lingo
+install_fishing_lingo(pages, ROOT, add, intro, bread, CONFIG['siteUrl'])
+from clean_copy import install as install_clean_copy, clean_chrome
+from licenses import install as install_licenses
+print('licences', install_licenses(pages, ROOT, add, TRIPS))
+install_clean_copy(pages, ROOT, CONFIG)
+FOOTER = clean_chrome(FOOTER, CONFIG['amazonTag'])
+HEADER = clean_chrome(HEADER, CONFIG['amazonTag'])
 trip_paths = {t.get("canonicalPath", "/trips/"+t["id"]+"/") for t in TRIPS}
 for path, page in pages.items():
     page["analyticsKind"] = "trip" if path in trip_paths else page["kind"]
     for field in ("title", "desc", "body"):
         page[field] = page[field].replace("Fishing Atlas", "Castward")
+
+from search_discovery import compact_titles
+compact_titles(pages, DIST)
+
+from site_search import install as install_site_search
+install_site_search(pages, ROOT, add)
+
+from trip_chat import install as install_trip_chat
+install_trip_chat(pages, ROOT, TRIPS, DATA, HABITATS, ARTICLES)
 
 for path,p in pages.items():
     p['body']=p['body'].replace('/assets/trip-types.js\"', '/assets/trip-types.js?v='+ASSET_VERSIONS['trip-types.js']+'\"')
@@ -220,6 +249,7 @@ shutil.copyfile(DIST/'404/index.html',DIST/'404.html')
 # Metadata becomes indexable only after a real canonical origin is supplied.
 if CONFIG['siteUrl']:
     write_sitemaps(DIST, pages, CONFIG['siteUrl'], DATA['reviewed'])
+    discovery_feeds(DIST, pages, ROOT, CONFIG['siteUrl'])
     (DIST/'robots.txt').write_text('User-agent: *\nAllow: /\nSitemap: '+CONFIG['siteUrl']+'/sitemap.xml\n')
 else:
     (DIST/'robots.txt').write_text('User-agent: *\nDisallow: /\n# Preview build: set SITE_URL to generate production canonical URLs and sitemap.\n')
@@ -232,7 +262,10 @@ exports={('/downloads/'+x.name):x.read_text() for x in (DIST/'downloads').glob('
 payload=json.dumps(pages,ensure_ascii=False).replace('</','<\\/')
 preview=preview.replace('<body data-page="home">','<body data-page="home"><div class="preview-banner no-print">WORKING PREVIEW · Saved on this browser · No payments or form submissions are sent</div>')
 preview=preview.replace('</body>','<script>window.ATLAS_PREVIEW_PAGES='+payload+';window.ATLAS_EXPORTS='+json.dumps(exports,ensure_ascii=False).replace('</','<\\/')+';window.ATLAS_PREVIEW=true;\n'+(DIST/'assets/data.js').read_text()+'\n'+(DIST/'assets/engine.js').read_text()+'\n'+(DIST/'assets/app.js').read_text().replace('</script','<\\/script')+'</script></body>')
-(ROOT.parent/'Fishing-Atlas-World-Preview.html').write_text(preview)
+# Hosted builds keep all generated files inside the website workspace.
+preview_dir = ROOT/'test-results' if os.environ.get('ATLAS_HOSTING') == 'vercel' else ROOT.parent
+preview_dir.mkdir(parents=True, exist_ok=True)
+(preview_dir/'Fishing-Atlas-World-Preview.html').write_text(preview)
 (DIST/'route-manifest.json').write_text(json.dumps({p:{'kind':x['kind'],'title':x['title'],'noindex':x['noindex'],'redirectTo':x.get('redirectTo')} for p,x in pages.items()},indent=2))
-print(f'Built {len(pages)} pages, {len(TRIPS)} trip guides + {len(HABITATS)} environment guides + {len([p for p in pages if p.startswith("/guides/") and p != "/guides/"])} preparation articles; preview: {ROOT.parent / "Fishing-Atlas-World-Preview.html"}')
+print(f'Built {len(pages)} pages, {len(TRIPS)} trip guides + {len(HABITATS)} environment guides + {len([p for p in pages if p.startswith("/guides/") and p != "/guides/"])} preparation articles; preview: {preview_dir / "Fishing-Atlas-World-Preview.html"}')
 print('Production origin:',CONFIG['siteUrl'] or 'not configured; search indexing intentionally disabled')

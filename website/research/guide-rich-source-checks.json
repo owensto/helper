@@ -1,0 +1,396 @@
+{
+  "checked": "2026-11-11",
+  "method": "Live web search and primary page text inspection; recommendations are editorial.",
+  "sources": {
+    "layers-rei": {
+      "title": "REI: How to dress in layers",
+      "url": "https://www.rei.com/learn/expert-advice/layering-basics.html",
+      "checked": "2026-11-11",
+      "scopeNote": "Base, insulation and shell roles; cotton and damp insulation.",
+      "status": "text-inspected"
+    },
+    "wool-soft": {
+      "title": "Woolmark: Why merino wool is soft",
+      "url": "https://www.woolmark.com/fibre/soft-merino-wool",
+      "checked": "2026-11-11",
+      "scopeNote": "Fibre diameter, flexibility and prickle.",
+      "status": "text-inspected"
+    },
+    "meriwool-250": {
+      "title": "Meriwool: Mens Merino 250 long sleeve",
+      "url": "https://www.meriwoollayers.com/products/mens-merino-250-base-layer-long-sleeve",
+      "checked": "2026-11-11",
+      "scopeNote": "250 gsm, 18.5-micron pure merino and $65 price.",
+      "status": "text-inspected"
+    },
+    "ice-oasis": {
+      "title": "Icebreaker: Merino 200 Oasis long sleeve crewe",
+      "url": "https://na.icebreaker.com/en-us/products/mens-merino-200-oasis-long-sleeve-crewe-ib104365580",
+      "checked": "2026-11-11",
+      "scopeNote": "Pure merino, 200 weight, 18.9 microns, care and $120 price.",
+      "status": "text-inspected"
+    },
+    "ice-weights": {
+      "title": "Icebreaker: Choose your base layer",
+      "url": "https://na.icebreaker.com/en-us/blogs/journal/icebreaker-baselayer-guide",
+      "checked": "2026-11-11",
+      "scopeNote": "150, 200, 240 and 320-plus fabric weight classes.",
+      "status": "text-inspected"
+    },
+    "smart-thermal": {
+      "title": "Smartwool: Classic Thermal Merino crew",
+      "url": "https://www.smartwool.com/en-us/products/mens-classic-thermal-merino-base-layer-crew-sw016349?variant=63206702874993",
+      "checked": "2026-11-11",
+      "scopeNote": "250 gsm pure merino, seam construction, care and $115 price.",
+      "status": "text-inspected"
+    },
+    "rws-update": {
+      "title": "Textile Exchange: Standards policy updates",
+      "url": "https://hub.textileexchange.org/home/site-wide-content/standards-policy-updates",
+      "checked": "2026-11-11",
+      "scopeNote": "2026 mulesed-restocking exception and approval requirements.",
+      "status": "text-inspected"
+    },
+    "zq": {
+      "title": "ZQ: Grower standard",
+      "url": "https://www.discoverzq.com/_files/ugd/fdb7ce_8d764e66e96744b986afe90e321ac2bd.pdf",
+      "checked": "2026-11-11",
+      "scopeNote": "ZQ prohibition of mulesing and farm requirements.",
+      "status": "text-inspected"
+    },
+    "gr-ice-care": {
+      "title": "Icebreaker care guide",
+      "url": "https://na.icebreaker.com/en-us/pages/caring-for-your-icebreaker",
+      "checked": "2026-11-11",
+      "status": "text-inspected",
+      "type": "reference",
+      "scopeNote": "Use the garment care label, avoid fabric softener, store clean and dry. No universal service-life estimate."
+    },
+    "gr-darn": {
+      "title": "Darn Tough Hiker Micro Crew 1466",
+      "url": "https://darntough.com/products/mens-merino-wool-hiker-micro-crew-cushioned-midweight-hiking-socks",
+      "checked": "2026-11-11",
+      "status": "text-inspected",
+      "type": "reference",
+      "scopeNote": "Merino blend, micro crew, midweight cushion model; size and color can affect listed fiber percentages."
+    },
+    "gr-smart-guarantee": {
+      "title": "Smartwool US guarantee",
+      "url": "https://www.smartwool.com/en-us/pages/our-guarantee",
+      "checked": "2026-11-11",
+      "status": "text-inspected",
+      "type": "reference",
+      "scopeNote": "Two-year satisfaction guarantee; purchase eligibility, authorized retailer and claim conditions apply."
+    },
+    "gr-darn-guarantee": {
+      "title": "Darn Tough lifetime guarantee",
+      "url": "https://darntough.com/pages/our-unconditional-lifetime-guarantee",
+      "checked": "2026-11-11",
+      "status": "text-inspected",
+      "type": "reference",
+      "scopeNote": "Lifetime sock guarantee covers wear and inadvertent damage. Seconds and irregulars are excluded. Resizing or dyeing voids the warranty."
+    },
+    "gr-orvis-clearwater": {
+      "title": "Orvis Clearwater waders",
+      "url": "https://www.orvis.com/product/mens-clearwater-waders/2TZX.html",
+      "checked": "2026-11-11",
+      "status": "text-inspected",
+      "type": "reference",
+      "scopeNote": "Four-layer nylon fabric, stockingfoot design and waist conversion buckles; no price or lifetime claim."
+    },
+    "simms-care": {
+      "title": "Simms: Wader and gear care",
+      "url": "https://www.simmsfishing.com/pages/wader-care",
+      "checked": "2026-11-11",
+      "scopeNote": "Rinse, dry, wash and storage instructions.",
+      "status": "text-inspected"
+    },
+    "gr-g3": {
+      "title": "Simms G3 Guide Stockingfoot",
+      "url": "https://www.simmsfishing.com/products/g3-guide-stockingfoot",
+      "checked": "2026-11-11",
+      "status": "text-inspected",
+      "type": "reference",
+      "scopeNote": "G3 Guide model: three-layer GORE-TEX upper and four-layer GORE-TEX Pro lower. Do not apply these specs to G3 PRO."
+    },
+    "gr-orvis-size": {
+      "title": "Orvis wader size charts",
+      "url": "https://www.orvis.com/wader-sizing-information.html",
+      "checked": "2026-11-11",
+      "status": "text-inspected",
+      "type": "reference",
+      "scopeNote": "Men’s stockingfoot chart excerpt; body girth, pant inseam and US bootie ranges. Boot chart uses its own size conversion."
+    },
+    "simms-fit": {
+      "title": "Simms: Size and fit guide",
+      "url": "https://www.simmsfishing.com/pages/size-fit-guide",
+      "checked": "2026-11-11",
+      "scopeNote": "Girth, inseam and bootie size measurements.",
+      "status": "text-inspected"
+    },
+    "gr-wading": {
+      "title": "Orvis safe wading equipment",
+      "url": "https://www.orvis.com/what-gear-is-important-to-have-for-safe-wading.html",
+      "checked": "2026-11-11",
+      "status": "text-inspected",
+      "type": "reference",
+      "scopeNote": "Wading belt and staff use; these do not make a dangerous crossing safe."
+    },
+    "gr-cold": {
+      "title": "National Weather Service: cold water",
+      "url": "https://www.weather.gov/safety/coldwater",
+      "checked": "2026-11-11",
+      "status": "text-inspected",
+      "type": "reference",
+      "scopeNote": "Cold shock, loss of muscle control, and life jacket advice. No safe immersion time is inferred."
+    },
+    "gr-felt": {
+      "title": "Alaska Fish and Game: felt-sole rule",
+      "url": "https://www.adfg.alaska.gov/static/species/nonnative/invasive/pdfs/felt_soled_waders_faq.pdf",
+      "checked": "2026-11-11",
+      "status": "text-inspected",
+      "type": "reference",
+      "scopeNote": "Felt or fibrous soles prohibited for sport fishing in Alaska fresh waters. The FAQ excludes saltwater and personal-use fisheries."
+    },
+    "gr-simms-repair": {
+      "title": "Simms pinhole repair",
+      "url": "https://www.simmsfishing.com/blogs/the-plug/extend-the-life-of-the-unsung-hero-of-fishing-gear",
+      "checked": "2026-11-11",
+      "status": "text-inspected",
+      "type": "reference",
+      "scopeNote": "Inside-out alcohol test for pinholes, small Aquaseal applications, at least 24 hours before use; fabric pinholes only."
+    },
+    "gr-gearaid": {
+      "title": "GEAR AID wader repair",
+      "url": "https://www.gearaid.com/blogs/learn/repair-waders-how-to",
+      "checked": "2026-11-11",
+      "status": "text-inspected",
+      "type": "reference",
+      "scopeNote": "Cleaning, patches and adhesive repair. Adhesive cure time and patch method depend on the product and repair."
+    },
+    "gr-repair-kit": {
+      "title": "GEAR AID Aquaseal FD Repair Kit",
+      "url": "https://www.gearaid.com/products/aquaseal-repair-kit",
+      "checked": "2026-11-11",
+      "status": "text-inspected",
+      "type": "reference",
+      "scopeNote": "Aquaseal FD adhesive, repair patches and applicator; follow current insert and wader maker instructions."
+    },
+    "frog-canyon": {
+      "title": "Frogg Toggs: Canyon II stockingfoot chest wader",
+      "url": "https://www.froggtoggs.com/products/canyon-ii-stockingfoot-breathable-chest-wader",
+      "checked": "2026-11-11",
+      "scopeNote": "Four-ply nylon, belt, stockingfeet and $165 price.",
+      "status": "text-inspected"
+    },
+    "frog-rain": {
+      "title": "Frogg Toggs: Ultra-Lite2 waterproof rain suit",
+      "url": "https://www.froggtoggs.com/products/the-frogg-toggsr-ultra-lite2tm-4749",
+      "checked": "2026-11-11",
+      "scopeNote": "Manufacturer page identified the product. The accessible body did not expose its specifications. Removed from the final product picks.",
+      "status": "product-identity-only"
+    },
+    "columbia-fleece": {
+      "title": "Columbia: Fast Trek II Full Zip Fleece",
+      "url": "https://www.columbia.com/p/mens-fast-trek-ii-full-zip-fleece-1420421.html",
+      "checked": "2026-11-11",
+      "scopeNote": "Polyester microfleece and $65 price.",
+      "status": "text-inspected"
+    },
+    "gr-shell": {
+      "title": "Patagonia Torrentshell 3L",
+      "url": "https://www.patagonia.com/product/mens-torrentshell-3-layer-rain-jacket/85241.html",
+      "checked": "2026-11-11",
+      "status": "text-inspected",
+      "type": "reference",
+      "scopeNote": "Three-layer H2No shell, pit zips, adjustable hood; machine wash cold, tumble dry low, no fabric softener."
+    },
+    "gr-crossfire": {
+      "title": "Daiwa 26 Crossfire LT",
+      "url": "https://daiwa.us/products/26-crossfire-lt",
+      "checked": "2026-11-11",
+      "status": "text-inspected",
+      "type": "reference",
+      "scopeNote": "Current 26 Crossfire LT features: AIRDRIVE ROTOR, LT concept and TOUGH DIGIGEAR. No shared size-number assumption."
+    },
+    "gr-bg": {
+      "title": "Daiwa BG",
+      "url": "https://daiwa.us/collections/saltwater-spinning-reels/products/bg-sw-spinning",
+      "checked": "2026-11-11",
+      "status": "text-inspected",
+      "type": "reference",
+      "scopeNote": "Machined aluminum body and screw-in handle; consult exact size specifications."
+    },
+    "gr-stradic": {
+      "title": "Shimano Stradic FM",
+      "url": "https://fish.shimano.com/en-US/product/reels/spinning/frontdrag/a075f00003slvodqas.html",
+      "checked": "2026-11-11",
+      "status": "text-inspected",
+      "type": "reference",
+      "scopeNote": "Stradic FM product family includes InfinityXross and Infinity Drive. No catch-rate or immersion claim."
+    },
+    "gr-orvis101": {
+      "title": "Orvis Fly Tying 101",
+      "url": "https://howtoflyfish.orvis.com/fly-tying-101",
+      "checked": "2026-11-11",
+      "status": "text-inspected",
+      "type": "reference",
+      "scopeNote": "Beginner tools, thread handling and lesson sequence; no promise of instant proficiency."
+    },
+    "gr-slick": {
+      "title": "Dr. Slick tool catalogue",
+      "url": "https://www.drslick.com/download/catalog/Dr_Slick_Catalog_25-26.pdf",
+      "checked": "2026-11-11",
+      "status": "text-inspected",
+      "type": "reference",
+      "scopeNote": "Tool identity and ceramic bobbin, scissors, and whip finisher specifications."
+    },
+    "ft26-bugger-dnr": {
+      "title": "Minnesota DNR: Tying the Wooly Bugger",
+      "url": "https://files.dnr.state.mn.us/recreation/fishing/fin/tie_wooly_bugger.pdf",
+      "checked": "2026-11-11",
+      "scopeNote": "MinnAqua instruction on the basic marabou, chenille, and hackle fly, with attachment and finishing steps.",
+      "status": "text-inspected"
+    },
+    "ft26-pheasant": {
+      "title": "Orvis: American Pheasant Tail Nymph",
+      "url": "https://howtoflyfish.orvis.com/fly-tying-videos/nymph-flies/692-american_pheasant_tail_nymph",
+      "checked": "2026-11-11",
+      "scopeNote": "American-style recipe with thread, copper wire, pheasant fibers, peacock thorax, and mayfly-nymph imitation.",
+      "status": "text-inspected"
+    },
+    "ft26-caddis": {
+      "title": "Orvis: Elk Hair Caddis Pattern & Tying Instructions",
+      "url": "https://howtoflyfish.orvis.com/fly-tying-videos/dry-flies/735-elk_hair_caddis",
+      "checked": "2026-11-11",
+      "scopeNote": "The transcript supports a fine-wire rib, dry-fly dubbing, palmered hackle, and a cleaned, stacked hair wing.",
+      "status": "text-inspected"
+    },
+    "gr-wapsi-wire": {
+      "title": "Wapsi Ultra Wire",
+      "url": "https://wapsifly.com/products/spooled/ultra-wire/",
+      "checked": "2026-11-11",
+      "status": "text-inspected",
+      "type": "reference",
+      "scopeNote": "Fly-tying wire product identification; no single wire gauge prescribed for all hooks."
+    },
+    "gr-wapsi-chenille": {
+      "title": "Wapsi Ultra Chenille",
+      "url": "https://wapsifly.com/products/yarns/ultra-chenille/",
+      "checked": "2026-11-11",
+      "status": "text-inspected",
+      "type": "reference",
+      "scopeNote": "Synthetic chenille material identification."
+    },
+    "ft26-wapsi-kits": {
+      "title": "Wapsi: Kits",
+      "url": "https://wapsifly.com/products/kits/",
+      "checked": "2026-11-11",
+      "scopeNote": "Maker lists the San Juan Worm and Wooly Bugger pattern kits."
+    },
+    "ft26-wapsi-bugger-kit": {
+      "title": "Wapsi: Wooly Bugger Kit",
+      "url": "https://wapsifly.com/products/kits/wooly-bugger-kit/",
+      "checked": "2026-11-11",
+      "scopeNote": "Maker confirms the named pattern kit. The shopping notes make no quantity or tool-inclusion claim."
+    },
+    "ft26-zebra": {
+      "title": "Orvis: Zebra Midge Pattern & Tying Instructions",
+      "url": "https://howtoflyfish.orvis.com/fly-tying-videos/nymph-flies/659-zebra_midge",
+      "checked": "2026-11-11",
+      "scopeNote": "Short emerger hooks, a black thread body, silver wire, bead placement, and body construction. Demonstrated bead size applies to the demonstrated hook.",
+      "status": "text-inspected"
+    },
+    "ft26-worm": {
+      "title": "Charlie’s Fly Box: San Juan Worm",
+      "url": "https://charliesflybox.com/blogs/step-by-step-tutorials/san-juan-worm",
+      "checked": "2026-11-11",
+      "scopeNote": "Aquatic-worm imitation, TMC 3761 hooks, UNI 6/0 thread, Ultra-Chenille, and two attachment points. The beginner steps omit flame treatment.",
+      "status": "text-inspected"
+    },
+    "ft26-wapsi-starter": {
+      "title": "Wapsi: Fly Tying Starter Kit",
+      "url": "https://wapsifly.com/products/kits/wapsi-fly-tying-starter-kit/",
+      "checked": "2026-11-11",
+      "scopeNote": "Maker states that the kit has tools, materials, and handbook instructions for ten fly patterns.",
+      "status": "text-inspected"
+    },
+    "ft26-griffin": {
+      "title": "Griffin Enterprises: Odyssey Spider Vise",
+      "url": "https://www.griffinenterprisesinc.com/index.cfm/product/18_2/odyssey-spider-vise.htm",
+      "checked": "2026-11-11",
+      "scopeNote": "Maker describes true rotation and a hook range from size 28 through 4/0.",
+      "status": "text-inspected"
+    },
+    "ft26-peak": {
+      "title": "PEAK Fishing: PRV-G2 Rotary Vise with Pedestal Base",
+      "url": "https://peakfishing.com/products/fly-tying-vises/prv-g2/",
+      "checked": "2026-11-11",
+      "scopeNote": "Maker describes the base, adjustable rotation resistance, supplied bobbin cradle, and limited lifetime defect warranty.",
+      "status": "text-inspected"
+    },
+    "ft26-chenille": {
+      "title": "Wapsi: Ultra Chenille",
+      "url": "https://wapsifly.com/products/yarns/ultra-chenille/",
+      "checked": "2026-11-11",
+      "scopeNote": "Maker product identity for the worm material in the shopping lists.",
+      "status": "text-inspected"
+    },
+    "ft26-wire": {
+      "title": "Wapsi: Ultra Wire",
+      "url": "https://wapsifly.com/products/spooled/ultra-wire/",
+      "checked": "2026-11-11",
+      "scopeNote": "Maker identifies copper wire and its uses for ribs, weight, flash, and bodies; lists small copper, gold, and silver options.",
+      "status": "text-inspected"
+    }
+  },
+  "activeSourceIds": [
+    "columbia-fleece",
+    "frog-canyon",
+    "frog-rain",
+    "ft26-bugger-dnr",
+    "ft26-caddis",
+    "ft26-chenille",
+    "ft26-griffin",
+    "ft26-peak",
+    "ft26-pheasant",
+    "ft26-wapsi-bugger-kit",
+    "ft26-wapsi-kits",
+    "ft26-wapsi-starter",
+    "ft26-wire",
+    "ft26-worm",
+    "ft26-zebra",
+    "gr-bg",
+    "gr-cold",
+    "gr-crossfire",
+    "gr-darn",
+    "gr-darn-guarantee",
+    "gr-felt",
+    "gr-g3",
+    "gr-gearaid",
+    "gr-ice-care",
+    "gr-orvis-clearwater",
+    "gr-orvis-size",
+    "gr-orvis101",
+    "gr-repair-kit",
+    "gr-shell",
+    "gr-simms-repair",
+    "gr-slick",
+    "gr-smart-guarantee",
+    "gr-stradic",
+    "gr-wading",
+    "gr-wapsi-chenille",
+    "gr-wapsi-wire",
+    "ice-oasis",
+    "ice-weights",
+    "layers-rei",
+    "meriwool-250",
+    "rws-update",
+    "simms-care",
+    "simms-fit",
+    "smart-thermal",
+    "wool-soft",
+    "zq"
+  ],
+  "activePrimarySourceCount": 46
+}

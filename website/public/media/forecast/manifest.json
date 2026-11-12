@@ -1,0 +1,11 @@
+{
+  "asset": "estuary",
+  "generator": "Built-in GPT Image",
+  "original": true,
+  "illustrative": true,
+  "alt": "An illustrative tidal estuary at dawn, with marsh grasses, a dark pine shoreline and soft cloud light.",
+  "prompt": "Use case: photorealistic-natural. Asset type: wide editorial background for a premium fishing weather forecast. Create an ORIGINAL natural landscape: quiet tidal estuary at dawn, long low salt marsh grasses and dark pine shoreline, broad blue-green water with soft ripples, layered pale clouds catching warm peach light near the horizon. No people, no boats, no text, no logos. Wide cinematic composition with water and sky as generous negative space, subtle film grain, restrained colors, believable outdoor light. This is an illustrative landscape, not a real named location. Save the result for use in a website.",
+  "widths": [640, 1200, 1600],
+  "formats": ["webp", "avif"],
+  "raw_deleted": true
+}

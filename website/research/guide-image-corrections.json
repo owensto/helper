@@ -1,0 +1,18 @@
+{
+  "tool": "GPT Image built-in",
+  "edits": [
+    {
+      "id": "elk-hair-caddis-05",
+      "prompt": "Correct this fly-tying instructional image. Remove ALL the long tail fibers projecting left beyond the hook bend. This Elk Hair Caddis has NO TAIL; keep only the wrapped brown hackle along the tan dubbed body. Keep the gold rib, vise, hook, colors, style and composition. Add a thin tan tying thread hanging downward from just behind the eye. No other changes."
+    },
+    {
+      "id": "elk-hair-caddis-06",
+      "prompt": "Correct this fly-tying instructional image. Remove ALL the long tail fibers projecting left from the hook bend. This Elk Hair Caddis has NO TAIL. Keep the fingers and untied bunch of elk hair held above the fly exactly as shown. Keep the tan body, wrapped brown hackle, hook, vise, style and background. Add thin tan thread hanging from front behind eye. No other changes."
+    },
+    {
+      "id": "san-juan-worm-05",
+      "prompt": "Correct this fly-tying instructional image. Replace the entire brown feather tail projecting left from the rear of the hook with a soft RED CHENILLE cord tail, exactly matching the red chenille that projects upwards to the right. This is a San Juan Worm with NO FEATHERS. Keep hook, red thread base, front lifted chenille, vise and background unchanged. Red chenille rear tail extends left about half hook length. Keep the thread hanging at the front."
+    }
+  ],
+  "checked": "2026-11-11"
+}

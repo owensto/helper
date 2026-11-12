@@ -1,0 +1,2554 @@
+{
+  "jurisdictions": [
+    {
+      "id": "ca-alberta",
+      "name": "Alberta",
+      "country": "Canada",
+      "region": "Alberta",
+      "authority": {
+        "name": "Government of Alberta",
+        "url": "https://eservices.alberta.ca/visitors/fishing-licence.html"
+      },
+      "buyUrl": "https://www.albertarelm.com",
+      "summary": "Visitors aged 16 and older need a sportfishing licence. The senior exemption applies only to Alberta residents.",
+      "whoNeedsOne": [
+        "Visitors aged 16 and older, unless another exemption applies."
+      ],
+      "exemptions": [
+        "Children under 16.",
+        "Alberta residents aged 65 and older.",
+        "Holders of a Certificate of Indian Status under the Indian Act."
+      ],
+      "options": [
+        {
+          "name": "Non-resident Canadian annual",
+          "who": "non-resident",
+          "duration": "Annual",
+          "price": 62,
+          "currency": "CAD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Non-resident Canadian 1-day",
+          "who": "non-resident",
+          "duration": "1 day",
+          "price": 27,
+          "currency": "CAD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Non-resident Canadian 7-day",
+          "who": "non-resident",
+          "duration": "7 days",
+          "price": 43,
+          "currency": "CAD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Visitor from outside Canada annual",
+          "who": "non-resident",
+          "duration": "Annual",
+          "price": 87,
+          "currency": "CAD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Visitor from outside Canada 1-day",
+          "who": "non-resident",
+          "duration": "1 day",
+          "price": 29,
+          "currency": "CAD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Visitor from outside Canada 7-day",
+          "who": "non-resident",
+          "duration": "7 days",
+          "price": 57,
+          "currency": "CAD",
+          "water": "freshwater"
+        }
+      ],
+      "extras": [],
+      "saltwater": null,
+      "guidedTrips": null,
+      "keyRules": [
+        "Obtain a Wildlife Identification Number before an online purchase.",
+        "Exempt anglers must still follow the sportfishing rules."
+      ],
+      "howToBuy": "Buy through AlbertaRELM after you obtain a Wildlife Identification Number.",
+      "sources": [
+        {
+          "title": "Alberta fishing licence service",
+          "url": "https://eservices.alberta.ca/visitors/fishing-licence.html"
+        },
+        {
+          "title": "2026 Alberta Guide to Sportfishing Regulations: licence fees",
+          "url": "https://albertaregulations.ca/2026-Alberta-Guide-to-Sportfishing-Regulations.pdf"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Confirm taxes and any Wildlife Identification Number fee at purchase. No client exemption for guided trips was confirmed."
+    },
+    {
+      "id": "ca-british-columbia",
+      "name": "British Columbia",
+      "country": "Canada",
+      "region": "British Columbia",
+      "authority": {
+        "name": "Province of British Columbia; Fisheries and Oceans Canada for tidal waters",
+        "url": "https://www2.gov.bc.ca/gov/content/sports-culture/recreation/fishing-hunting/fishing/recreational-freshwater-fishing-licence"
+      },
+      "buyUrl": "https://www2.gov.bc.ca/buy-hunting-fishing-licences",
+      "summary": "Visitors aged 16 and older need a provincial freshwater licence. Tidal waters require a separate federal licence at every age.",
+      "whoNeedsOne": [
+        "Freshwater anglers aged 16 and older.",
+        "All tidal anglers, including children."
+      ],
+      "exemptions": [
+        "Visiting freshwater anglers under 16 can share an accompanying licence holder's quota.",
+        "Children under 16 need a tidal licence, but the basic licence is free."
+      ],
+      "options": [
+        {
+          "name": "Freshwater Canadian visitor annual",
+          "who": "non-resident",
+          "duration": "April 1 to March 31",
+          "price": 62.87,
+          "currency": "CAD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Freshwater foreign visitor annual",
+          "who": "non-resident",
+          "duration": "April 1 to March 31",
+          "price": 91.44,
+          "currency": "CAD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Freshwater visitor 1-day",
+          "who": "non-resident",
+          "duration": "1 day",
+          "price": 22.86,
+          "currency": "CAD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Freshwater Canadian visitor 8-day",
+          "who": "non-resident",
+          "duration": "8 days",
+          "price": 41.15,
+          "currency": "CAD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Freshwater foreign visitor 8-day",
+          "who": "non-resident",
+          "duration": "8 days",
+          "price": 57.14,
+          "currency": "CAD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Tidal foreign visitor 1-day",
+          "who": "non-resident",
+          "duration": "1 day",
+          "price": 8.62,
+          "currency": "CAD",
+          "water": "saltwater"
+        },
+        {
+          "name": "Tidal foreign visitor 3-day",
+          "who": "non-resident",
+          "duration": "3 days",
+          "price": 23.4,
+          "currency": "CAD",
+          "water": "saltwater"
+        },
+        {
+          "name": "Tidal foreign visitor 5-day",
+          "who": "non-resident",
+          "duration": "5 days",
+          "price": 38.18,
+          "currency": "CAD",
+          "water": "saltwater"
+        },
+        {
+          "name": "Tidal foreign visitor annual",
+          "who": "non-resident",
+          "duration": "April 1 to March 31",
+          "price": 124.41,
+          "currency": "CAD",
+          "water": "saltwater"
+        }
+      ],
+      "extras": [
+        {
+          "name": "Tidal salmon conservation stamp",
+          "when": "Required at every age to retain tidal salmon.",
+          "price": 7.39,
+          "currency": "CAD"
+        },
+        {
+          "name": "Freshwater species stamps and conservation licences",
+          "when": "Required for specified species and activities; consult the provincial licence page.",
+          "price": null,
+          "currency": "CAD"
+        },
+        {
+          "name": "Class I Classified Waters licence",
+          "when": "Required per day for visiting anglers on Class I waters.",
+          "price": 45.72,
+          "currency": "CAD"
+        },
+        {
+          "name": "Class II Classified Waters licence",
+          "when": "Required per day for visiting anglers on Class II waters.",
+          "price": 22.86,
+          "currency": "CAD"
+        }
+      ],
+      "saltwater": "DFO issues tidal licences through the National Recreational Licensing System. Tidal and freshwater salmon stamps are separate.",
+      "guidedTrips": "Guides can buy freshwater licences for clients. Confirm that the guide obtained your individual licences.",
+      "keyRules": [
+        "Carry the applicable licence.",
+        "Foreign visitors targeting halibut in Areas 23, 121 and 123 must buy the tidal licence from a vendor in Canada.",
+        "Record retained chinook and halibut immediately, plus lingcod in the specified areas.",
+        "Adult tidal licence holders must complete their assigned iREC report."
+      ],
+      "howToBuy": "Buy freshwater licences through WILD or a provincial vendor. Buy tidal licences through DFO's National Recreational Licensing System or a vendor.",
+      "sources": [
+        {
+          "title": "Freshwater licence requirements and fees",
+          "url": "https://www2.gov.bc.ca/gov/content/sports-culture/recreation/fishing-hunting/fishing/recreational-freshwater-fishing-licence"
+        },
+        {
+          "title": "DFO tidal licence requirements and 2026/27 fees",
+          "url": "https://www.pac.dfo-mpo.gc.ca/fm-gp/rec/licence-permis/index-eng.html"
+        },
+        {
+          "title": "Classified Waters licences",
+          "url": "https://www2.gov.bc.ca/gov/content/sports-culture/recreation/fishing-hunting/fishing/recreational-freshwater-fishing-licence/classified-waters-licences"
+        },
+        {
+          "title": "Buy fishing licences, including through a guide",
+          "url": "https://www2.gov.bc.ca/buy-hunting-fishing-licences"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Listed freshwater fees and tidal fees exclude applicable taxes. Confirm water-specific restrictions before purchase."
+    },
+    {
+      "id": "ca-manitoba",
+      "name": "Manitoba",
+      "country": "Canada",
+      "region": "Manitoba",
+      "authority": {
+        "name": "Government of Manitoba",
+        "url": "https://www.gov.mb.ca/elicensing/fees.html"
+      },
+      "buyUrl": "https://www.manitobaelicensing.ca/",
+      "summary": "Visitors aged 16 and older generally need a Manitoba angling licence. A licence's expiry date does not determine when a fishing season is open.",
+      "whoNeedsOne": [
+        "Canadian and foreign visitors aged 16 and older, unless exempt."
+      ],
+      "exemptions": [],
+      "options": [
+        {
+          "name": "Canadian visitor annual",
+          "who": "non-resident",
+          "duration": "May 1, 2026 to April 30, 2027",
+          "price": 45.15,
+          "currency": "CAD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Canadian visitor 1-day",
+          "who": "non-resident",
+          "duration": "1 day",
+          "price": 18.9,
+          "currency": "CAD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Foreign visitor annual",
+          "who": "non-resident",
+          "duration": "May 1, 2026 to April 30, 2027",
+          "price": 72.45,
+          "currency": "CAD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Foreign visitor 1-day",
+          "who": "non-resident",
+          "duration": "1 day",
+          "price": 27.3,
+          "currency": "CAD",
+          "water": "freshwater"
+        }
+      ],
+      "extras": [],
+      "saltwater": null,
+      "guidedTrips": null,
+      "keyRules": [
+        "Carry the licence on paper or an electronic device.",
+        "Follow the separate season dates for your water."
+      ],
+      "howToBuy": "Buy online through Manitoba eLicensing, at a participating store, or by phone.",
+      "sources": [
+        {
+          "title": "Licence fees effective April 1, 2026",
+          "url": "https://www.gov.mb.ca/elicensing/fees.html"
+        },
+        {
+          "title": "Manitoba 2026 Angler's Guide",
+          "url": "https://www.gov.mb.ca/nrnd/fish-wildlife/pubs/fish_wildlife/fish/angling-guide.pdf"
+        },
+        {
+          "title": "Manitoba eLicensing purchase methods",
+          "url": "https://payment.manitoba.ca/elicensing/faqs.html"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Prices use the government's 2026 fee table. The guide lists base amounts before GST; confirm the final total and youth conditions."
+    },
+    {
+      "id": "ca-new-brunswick",
+      "name": "New Brunswick",
+      "country": "Canada",
+      "region": "New Brunswick",
+      "authority": {
+        "name": "Government of New Brunswick",
+        "url": "https://www2.gnb.ca/content/gnb/en/departments/erd/fish-and-wildlife/content/go-fishing/content/non-res-angling-licences.html"
+      },
+      "buyUrl": null,
+      "summary": "Visitors aged 16 and older generally need an angling licence. A salmon licence and a guide can be necessary even when a basic angling licence seems sufficient.",
+      "whoNeedsOne": [
+        "Visiting anglers aged 16 and older.",
+        "Visitors targeting sea-run Atlantic salmon need the salmon licence category."
+      ],
+      "exemptions": [
+        "Visitors under 16 need no licence for fish other than Atlantic salmon.",
+        "An unlicensed visitor under 16 can share an accompanying salmon licence holder's catch-and-release limit."
+      ],
+      "options": [
+        {
+          "name": "Non-resident general season, except sea-run Atlantic salmon",
+          "who": "non-resident",
+          "duration": "Season",
+          "price": 64,
+          "currency": "CAD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Non-resident general 7-day, except sea-run Atlantic salmon",
+          "who": "non-resident",
+          "duration": "7 consecutive days",
+          "price": 41,
+          "currency": "CAD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Non-resident general 3-day, except sea-run Atlantic salmon",
+          "who": "non-resident",
+          "duration": "3 consecutive days",
+          "price": 30,
+          "currency": "CAD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Non-resident salmon season",
+          "who": "non-resident",
+          "duration": "Season",
+          "price": 173,
+          "currency": "CAD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Non-resident salmon 7-day",
+          "who": "non-resident",
+          "duration": "7 consecutive days",
+          "price": 100,
+          "currency": "CAD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Non-resident salmon 3-day",
+          "who": "non-resident",
+          "duration": "3 consecutive days",
+          "price": 53,
+          "currency": "CAD",
+          "water": "freshwater"
+        }
+      ],
+      "extras": [],
+      "saltwater": null,
+      "guidedTrips": "Visitors need their own appropriate licence. A licensed guide is required on Guide Required Waters after the designated date, unless an exemption applies.",
+      "keyRules": [
+        "Obtain a New Brunswick Outdoors Card number before purchase.",
+        "Short licences cover consecutive calendar days.",
+        "Check the guide requirement for the exact water and date."
+      ],
+      "howToBuy": "Use the Fish and Wildlife Licensing System, an authorized vendor, or Service New Brunswick.",
+      "sources": [
+        {
+          "title": "Non-resident licences and fees",
+          "url": "https://www2.gnb.ca/content/gnb/en/departments/erd/fish-and-wildlife/content/go-fishing/content/non-res-angling-licences.html"
+        },
+        {
+          "title": "Non-resident guide and licence requirements",
+          "url": "https://www2.gnb.ca/content/gnb/en/departments/erd/fish-and-wildlife/content/go-fishing/content/definition-requirements-non-res-angler.html"
+        },
+        {
+          "title": "Available angling licences",
+          "url": "https://www2.gnb.ca/content/gnb/en/departments/erd/fish-and-wildlife/content/e-Licensing/available_licences.html"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Prices exclude tax. Confirm the tidal-water boundary and applicable federal rules; no general saltwater exemption is asserted here."
+    },
+    {
+      "id": "ca-newfoundland-and-labrador",
+      "name": "Newfoundland and Labrador",
+      "country": "Canada",
+      "region": "Newfoundland and Labrador",
+      "authority": {
+        "name": "Department of Forestry, Agriculture and Lands; Fisheries and Oceans Canada",
+        "url": "https://www.nfl.dfo-mpo.gc.ca/en/anglers-guide-2026-2027-annexes-annex-2-licence-information"
+      },
+      "buyUrl": null,
+      "summary": "Visitors need a trout licence in non-scheduled inland waters and a salmon licence in scheduled inland waters. A visitor who keeps trout in scheduled waters also needs a trout licence.",
+      "whoNeedsOne": [
+        "Non-residents fishing for trout in non-scheduled inland waters.",
+        "Non-residents fishing in scheduled inland waters need a salmon licence."
+      ],
+      "exemptions": [
+        "Provincial residents need no inland trout licence.",
+        "No salmon or trout licence is required in coastal waters."
+      ],
+      "options": [
+        {
+          "name": "Non-resident individual trout",
+          "who": "non-resident",
+          "duration": "Season",
+          "price": 12,
+          "currency": "CAD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Non-resident individual salmon",
+          "who": "non-resident",
+          "duration": "Season",
+          "price": 80,
+          "currency": "CAD",
+          "water": "freshwater"
+        }
+      ],
+      "extras": [
+        {
+          "name": "Vendor processing fee",
+          "when": "Added per inland licence, plus applicable HST.",
+          "price": 3,
+          "currency": "CAD"
+        }
+      ],
+      "saltwater": "The coastal salmon and trout fishery does not require these licences. Coastal seasons and limits still apply.",
+      "guidedTrips": "On Newfoundland and south of 52°N in Labrador, visitors need a guide or eligible direct relative on scheduled rivers or beyond 800 metres from a provincial highway. Northern Labrador has additional outfitter requirements.",
+      "keyRules": [
+        "Carry the inland licence.",
+        "Check current river closures.",
+        "A family licence shares one catch limit."
+      ],
+      "howToBuy": "Buy from commercial licence vendors throughout the province.",
+      "sources": [
+        {
+          "title": "2026/27 licence requirements",
+          "url": "https://www.nfl.dfo-mpo.gc.ca/en/anglers-guide-2026-2027-annexes-annex-2-licence-information"
+        },
+        {
+          "title": "2026/27 trout fees",
+          "url": "https://www.nfl.dfo-mpo.gc.ca/en/anglers-guide-2026-2027-trout-trout-licence-fees"
+        },
+        {
+          "title": "2026/27 salmon fees",
+          "url": "https://www.nfl.dfo-mpo.gc.ca/en/anglers-guide-2026-2027-salmon-licence-fees"
+        },
+        {
+          "title": "Non-resident guide requirements",
+          "url": "https://www.gov.nl.ca/fal/public-education/wildlife/hunting/nonres/"
+        },
+        {
+          "title": "2026/27 Anglers' Guide and river status",
+          "url": "https://www.nfl.dfo-mpo.gc.ca/en/NL/AG/anglersguide"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Confirm northern Labrador outfitter exceptions and family-licence eligibility for your party."
+    },
+    {
+      "id": "ca-northwest-territories",
+      "name": "Northwest Territories",
+      "country": "Canada",
+      "region": "Northwest Territories",
+      "authority": {
+        "name": "Government of Northwest Territories",
+        "url": "https://www.gov.nt.ca/ecc/en/services/get-fishing-licence"
+      },
+      "buyUrl": null,
+      "summary": "Visitors generally need an NWT sport fishing licence. Great Bear Lake and the Inuvialuit Settlement Region require additional authorization.",
+      "whoNeedsOne": [
+        "Visiting anglers who do not meet an age or other exemption."
+      ],
+      "exemptions": [
+        "Canadian residents under 16 or aged 65 and older qualify for the stated age exemptions.",
+        "Foreign children under 16 can fish with a valid licence holder; confirm special-area conditions."
+      ],
+      "options": [
+        {
+          "name": "Canadian visitor season",
+          "who": "non-resident",
+          "duration": "Until March 31",
+          "price": 25.86,
+          "currency": "CAD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Canadian visitor 3-day",
+          "who": "non-resident",
+          "duration": "3 days",
+          "price": 19.39,
+          "currency": "CAD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Foreign visitor season",
+          "who": "non-resident",
+          "duration": "Until March 31",
+          "price": 51.73,
+          "currency": "CAD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Foreign visitor 3-day",
+          "who": "non-resident",
+          "duration": "3 days",
+          "price": 38.8,
+          "currency": "CAD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Visitor 1-day",
+          "who": "non-resident",
+          "duration": "1 day",
+          "price": 12.93,
+          "currency": "CAD",
+          "water": "freshwater"
+        }
+      ],
+      "extras": [
+        {
+          "name": "Great Bear Lake authorization",
+          "when": "Required in addition to the standard licence, regardless of age or residency.",
+          "price": 12.93,
+          "currency": "CAD"
+        },
+        {
+          "name": "Inuvialuit Settlement Region authorization",
+          "when": "Required in addition to the standard licence, regardless of age or residency.",
+          "price": 0,
+          "currency": "CAD"
+        },
+        {
+          "name": "National park permit",
+          "when": "An NWT licence is not valid in a national park.",
+          "price": null,
+          "currency": "CAD"
+        }
+      ],
+      "saltwater": null,
+      "guidedTrips": null,
+      "keyRules": [
+        "Carry the licence.",
+        "Use barbless hooks.",
+        "Stay within daily and possession limits."
+      ],
+      "howToBuy": "Buy through NWT eServices or a participating licence outlet.",
+      "sources": [
+        {
+          "title": "Northwest Territories fishing licences",
+          "url": "https://www.gov.nt.ca/ecc/en/services/get-fishing-licence"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Listed fees include GST. Confirm the youth boundary with the department: its page uses inconsistent wording around age 16. Saltwater coverage and guide-client exemptions were not confirmed."
+    },
+    {
+      "id": "ca-nova-scotia",
+      "name": "Nova Scotia",
+      "country": "Canada",
+      "region": "Nova Scotia",
+      "authority": {
+        "name": "Government of Nova Scotia",
+        "url": "https://www.novascotia.ca/apply-general-fishing-licence-sportfishing"
+      },
+      "buyUrl": null,
+      "summary": "Anglers aged 16 and older need a general licence for freshwater species other than salmon. Atlantic salmon requires a separate licence.",
+      "whoNeedsOne": [
+        "Resident and visiting freshwater anglers aged 16 and older."
+      ],
+      "exemptions": [
+        "Children aged 15 and younger need no general licence.",
+        "Anglers aged 16 or 17 receive a free general licence."
+      ],
+      "options": [
+        {
+          "name": "Visitor general season, age 18+",
+          "who": "non-resident",
+          "duration": "April 1 to March 31",
+          "price": 34.55,
+          "currency": "CAD",
+          "water": "freshwater"
+        },
+        {
+          "name": "General 1-day, age 18+",
+          "who": "any",
+          "duration": "1 day",
+          "price": 13.04,
+          "currency": "CAD",
+          "water": "freshwater"
+        },
+        {
+          "name": "General season, age 16–17",
+          "who": "any",
+          "duration": "April 1 to March 31",
+          "price": 0,
+          "currency": "CAD",
+          "water": "freshwater"
+        }
+      ],
+      "extras": [
+        {
+          "name": "Salmon licence",
+          "when": "Required for Atlantic salmon; the general licence does not cover salmon.",
+          "price": null,
+          "currency": "CAD"
+        }
+      ],
+      "saltwater": "No general fishing licence is required in tidal or salt water. Federal and provincial rules still apply.",
+      "guidedTrips": null,
+      "keyRules": [
+        "Carry a paper or phone copy of the licence.",
+        "Submit the general licence report card within seven days after the season ends, even with no catch.",
+        "The general licence does not authorize fishing in national parks."
+      ],
+      "howToBuy": "Apply online through the official licence service or buy from a licence vendor.",
+      "sources": [
+        {
+          "title": "General fishing licence requirements and fees",
+          "url": "https://www.novascotia.ca/apply-general-fishing-licence-sportfishing"
+        },
+        {
+          "title": "General and salmon licence services",
+          "url": "https://www.novascotia.ca/programs-and-services/sportfishing-licensing"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Confirm the salmon fee and final payment total. No guide-client exemption was confirmed."
+    },
+    {
+      "id": "ca-nunavut",
+      "name": "Nunavut",
+      "country": "Canada",
+      "region": "Nunavut",
+      "authority": {
+        "name": "Government of Nunavut",
+        "url": "https://www.gov.nu.ca/en/environment-and-wildlife/sport-fishing-guide"
+      },
+      "buyUrl": null,
+      "summary": "Visitors generally need a Nunavut sport fishing licence. A territorial licence does not cover national parks.",
+      "whoNeedsOne": [
+        "Visitors who do not meet an exemption."
+      ],
+      "exemptions": [
+        "Beneficiaries of the Nunavut Agreement.",
+        "Canadian residents under 16.",
+        "Foreign children under 16 when accompanied by a sport fishing licence holder.",
+        "Canadian residents over 65 need a licence but pay no licence fee."
+      ],
+      "options": [
+        {
+          "name": "Canadian visitor season",
+          "who": "non-resident",
+          "duration": "Season",
+          "price": 24.63,
+          "currency": "CAD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Canadian visitor 3-day",
+          "who": "non-resident",
+          "duration": "3 consecutive days",
+          "price": 18.47,
+          "currency": "CAD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Foreign visitor season",
+          "who": "non-resident",
+          "duration": "Season",
+          "price": 49.27,
+          "currency": "CAD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Foreign visitor 3-day",
+          "who": "non-resident",
+          "duration": "3 consecutive days",
+          "price": 36.95,
+          "currency": "CAD",
+          "water": "freshwater"
+        }
+      ],
+      "extras": [
+        {
+          "name": "National park permit",
+          "when": "Required where national park fishing is permitted.",
+          "price": null,
+          "currency": "CAD"
+        }
+      ],
+      "saltwater": null,
+      "guidedTrips": null,
+      "keyRules": [
+        "Carry the licence.",
+        "Do not use live fish as bait.",
+        "Do not sell sport-caught fish."
+      ],
+      "howToBuy": "Buy from the Department of Environment, most fishing lodges, or participating retail stores.",
+      "sources": [
+        {
+          "title": "Nunavut licence and regulations page",
+          "url": "https://www.gov.nu.ca/en/environment-and-wildlife/sport-fishing-guide"
+        },
+        {
+          "title": "Nunavut Sport Fishing Guide 2026/27",
+          "url": "https://www.gov.nu.ca/sites/default/files/documents/2026-04/9622_25_Nunavut_Sport_Fishing_Guide_Final__ENG__apr1.pdf"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Add 5% GST to listed fees. Confirm coastal-water coverage, local settlement conditions, and any guided-trip exemption with a conservation officer."
+    },
+    {
+      "id": "ca-ontario",
+      "name": "Ontario",
+      "country": "Canada",
+      "region": "Ontario",
+      "authority": {
+        "name": "Government of Ontario",
+        "url": "https://www.ontario.ca/page/fishing-licence-non-residents-canada"
+      },
+      "buyUrl": "https://www.huntandfishontario.com/",
+      "summary": "Most visitors need an Outdoors Card and a fishing licence. Foreign visitors aged 65 and older still need a licence; a one-day licence does not require an Outdoors Card.",
+      "whoNeedsOne": [
+        "Non-Canadian visitors aged 18 and older.",
+        "Canadian visitors aged 18 to 64, unless exempt."
+      ],
+      "exemptions": [
+        "Foreign visitors under 18 can share an accompanying licence holder's catch limit.",
+        "Canadian residents under 18 or aged 65 and older qualify for the age exemption with the required identification."
+      ],
+      "options": [
+        {
+          "name": "Foreign visitor sport 1-day",
+          "who": "non-resident",
+          "duration": "1 calendar day",
+          "price": 24.86,
+          "currency": "CAD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Foreign visitor sport 8-day",
+          "who": "non-resident",
+          "duration": "8 consecutive days",
+          "price": 54.38,
+          "currency": "CAD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Foreign visitor conservation 8-day",
+          "who": "non-resident",
+          "duration": "8 consecutive days",
+          "price": 31.52,
+          "currency": "CAD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Foreign visitor sport annual",
+          "who": "non-resident",
+          "duration": "1 calendar year",
+          "price": 83.19,
+          "currency": "CAD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Foreign visitor conservation annual",
+          "who": "non-resident",
+          "duration": "1 calendar year",
+          "price": 52.71,
+          "currency": "CAD",
+          "water": "freshwater"
+        }
+      ],
+      "extras": [
+        {
+          "name": "Outdoors Card",
+          "when": "Required with multi-day and annual licences unless exempt.",
+          "price": 8.57,
+          "currency": "CAD"
+        }
+      ],
+      "saltwater": null,
+      "guidedTrips": null,
+      "keyRules": [
+        "Carry the licence summary.",
+        "Conservation licences have lower catch limits.",
+        "A one-day licence ends at midnight."
+      ],
+      "howToBuy": "Use the Fish and Wildlife Licensing Service, a licence issuer, or a participating ServiceOntario office.",
+      "sources": [
+        {
+          "title": "Licence requirements for visitors from outside Canada",
+          "url": "https://www.ontario.ca/page/fishing-licence-non-residents-canada"
+        },
+        {
+          "title": "Official non-Canadian licence fee table",
+          "url": "https://www.ontario.ca/page/fishing-licence-fees-non-canadian-residents"
+        },
+        {
+          "title": "Licence requirements for Canadian residents",
+          "url": "https://www.ontario.ca/page/fishing-licence-ontario-and-canadian-residents"
+        },
+        {
+          "title": "2026 Ontario fishing rules",
+          "url": "https://www.ontario.ca/files/2025-12/mnr-2026-fishing-regulations-summary-en-2025-12-08.pdf"
+        },
+        {
+          "title": "Official Ontario 2026 licence shop fee table",
+          "url": "https://www.huntandfishontario.com/Home/LicenceFees"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Listed fees are the official 2026 shop prices before HST. Confirm water-specific limits and seasons before the trip."
+    },
+    {
+      "id": "ca-prince-edward-island",
+      "name": "Prince Edward Island",
+      "country": "Canada",
+      "region": "Prince Edward Island",
+      "authority": {
+        "name": "Government of Prince Edward Island",
+        "url": "https://www.princeedwardisland.ca/en/information/land-and-environment/angling-resources-and-information-centre"
+      },
+      "buyUrl": "https://www.princeedwardisland.ca/en/service/buy-an-angling-licence-online",
+      "summary": "Anglers aged 16 and older need an angling licence, including visitors. The basic fee does not replace the Wildlife Conservation Fund charge.",
+      "whoNeedsOne": [
+        "Resident and visiting anglers aged 16 and older."
+      ],
+      "exemptions": [
+        "Children under 16.",
+        "Courtesy licences have no basic fee for ages 16–18 and 60+, but conservation charges can still apply.",
+        "Active Canadian Forces members and veterans receive a courtesy licence with no conservation charge."
+      ],
+      "options": [
+        {
+          "name": "Annual basic licence",
+          "who": "any",
+          "duration": "2026 season",
+          "price": 10,
+          "currency": "CAD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Family 5-day basic licence",
+          "who": "any",
+          "duration": "5 consecutive days; available after May 1",
+          "price": 5,
+          "currency": "CAD",
+          "water": "freshwater"
+        }
+      ],
+      "extras": [
+        {
+          "name": "Wildlife Conservation Fund, ages 16–64",
+          "when": "Added to an annual licence unless exempt.",
+          "price": 20,
+          "currency": "CAD"
+        },
+        {
+          "name": "Wildlife Conservation Fund, ages 65+",
+          "when": "Added to an annual licence unless exempt.",
+          "price": 13,
+          "currency": "CAD"
+        },
+        {
+          "name": "Family 5-day conservation charge",
+          "when": "Added to the family licence.",
+          "price": 5,
+          "currency": "CAD"
+        }
+      ],
+      "saltwater": null,
+      "guidedTrips": null,
+      "keyRules": [
+        "Print and sign the emailed licence.",
+        "Check the Angling Summary for current restrictions."
+      ],
+      "howToBuy": "Buy online through the province or from an angling licence vendor.",
+      "sources": [
+        {
+          "title": "2026 angling licences and conservation charges",
+          "url": "https://www.princeedwardisland.ca/en/information/land-and-environment/angling-resources-and-information-centre"
+        },
+        {
+          "title": "Online purchase and licence instructions",
+          "url": "https://www.princeedwardisland.ca/en/service/buy-an-angling-licence-online"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Listed fees exclude HST. Confirm the rules for tidal species and any guide-client exemption."
+    },
+    {
+      "id": "ca-quebec",
+      "name": "Quebec",
+      "country": "Canada",
+      "region": "Quebec",
+      "authority": {
+        "name": "Government of Quebec",
+        "url": "https://www.quebec.ca/tourisme-loisirs-sport/activites-sportives-et-de-plein-air/peche-sportive/permis"
+      },
+      "buyUrl": "https://www.quebec.ca/en/tourism-recreation-sport/sporting-and-outdoor-activities/my-hunting-fishing-account",
+      "summary": "Visitors generally need a Quebec sport fishing licence. A licence does not remove the outfitter requirement in specified northern and eastern areas.",
+      "whoNeedsOne": [
+        "Non-residents fishing for species covered by Quebec's sport fishing rules."
+      ],
+      "exemptions": [],
+      "options": [
+        {
+          "name": "Non-resident general 1-day",
+          "who": "non-resident",
+          "duration": "1 day",
+          "price": 22.36,
+          "currency": "CAD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Non-resident general 3-day",
+          "who": "non-resident",
+          "duration": "3 consecutive days",
+          "price": 38.36,
+          "currency": "CAD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Non-resident general 7-day",
+          "who": "non-resident",
+          "duration": "7 consecutive days",
+          "price": 57.67,
+          "currency": "CAD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Non-resident general annual",
+          "who": "non-resident",
+          "duration": "April 1 to March 31",
+          "price": 95.68,
+          "currency": "CAD",
+          "water": "freshwater"
+        }
+      ],
+      "extras": [
+        {
+          "name": "Atlantic salmon licence",
+          "when": "The general licence excludes Atlantic salmon.",
+          "price": null,
+          "currency": "CAD"
+        }
+      ],
+      "saltwater": null,
+      "guidedTrips": "Non-residents must use an outfitter north of 52°N in the specified zones, or east of the Saint-Augustin River. Confirm the exact zone.",
+      "keyRules": [
+        "Carry the licence and government-issued photo identification.",
+        "Use the correct residency category.",
+        "Annual licences end on March 31."
+      ],
+      "howToBuy": "Use My Hunting and Fishing Account or a licence sales outlet.",
+      "sources": [
+        {
+          "title": "Current Quebec licence fees and identification rules",
+          "url": "https://www.quebec.ca/tourisme-loisirs-sport/activites-sportives-et-de-plein-air/peche-sportive/permis"
+        },
+        {
+          "title": "Quebec licence rules and non-resident outfitter requirement",
+          "url": "https://www.quebec.ca/en/tourism-recreation-sport/sporting-and-outdoor-activities/sport-fishing/fishing-licence"
+        },
+        {
+          "title": "Online licence account",
+          "url": "https://www.quebec.ca/en/tourism-recreation-sport/sporting-and-outdoor-activities/my-hunting-fishing-account"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Prices include taxes. Confirm salmon options, family exemptions, water-access fees, and zone 21 species rules for the exact trip."
+    },
+    {
+      "id": "ca-saskatchewan",
+      "name": "Saskatchewan",
+      "country": "Canada",
+      "region": "Saskatchewan",
+      "authority": {
+        "name": "Government of Saskatchewan",
+        "url": "https://www.saskatchewan.ca/residents/parks-culture-heritage-and-sport/hunting-trapping-and-angling/angling/buy-an-angling-licence"
+      },
+      "buyUrl": null,
+      "summary": "Visitors aged 16 and older need an angling licence unless exempt. Visiting seniors do not receive Saskatchewan's resident senior exemption.",
+      "whoNeedsOne": [
+        "Canadian and foreign visitors aged 16 and older, unless exempt."
+      ],
+      "exemptions": [
+        "Children under 16.",
+        "Saskatchewan residents aged 65 and older.",
+        "Eligible Canadian Armed Forces veterans receive free licences."
+      ],
+      "options": [
+        {
+          "name": "Canadian visitor annual",
+          "who": "non-resident",
+          "duration": "Annual",
+          "price": 86,
+          "currency": "CAD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Canadian visitor 3-day",
+          "who": "non-resident",
+          "duration": "3 consecutive days",
+          "price": 46,
+          "currency": "CAD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Canadian visitor 1-day",
+          "who": "non-resident",
+          "duration": "1 day",
+          "price": 23,
+          "currency": "CAD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Foreign visitor annual",
+          "who": "non-resident",
+          "duration": "Annual",
+          "price": 115,
+          "currency": "CAD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Foreign visitor 3-day",
+          "who": "non-resident",
+          "duration": "3 consecutive days",
+          "price": 57,
+          "currency": "CAD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Foreign visitor 1-day",
+          "who": "non-resident",
+          "duration": "1 day",
+          "price": 28,
+          "currency": "CAD",
+          "water": "freshwater"
+        }
+      ],
+      "extras": [
+        {
+          "name": "Annual Fisheries Habitat Certificate",
+          "when": "Listed for anglers aged 16–64 with an annual licence, unless exempt.",
+          "price": 21,
+          "currency": "CAD"
+        },
+        {
+          "name": "Short-term Fisheries Habitat Certificate",
+          "when": "Listed for anglers aged 16–64 with a one-day or three-day licence, unless exempt.",
+          "price": 5.25,
+          "currency": "CAD"
+        }
+      ],
+      "saltwater": null,
+      "guidedTrips": null,
+      "keyRules": [
+        "Use one permanent HAL account.",
+        "Do not apply for a licence while suspended."
+      ],
+      "howToBuy": "Buy through HAL, licence issuers, government offices, or 1-855-848-4773. SK Hunt & Fish stores purchased licences.",
+      "sources": [
+        {
+          "title": "Saskatchewan fishing licences",
+          "url": "https://www.saskatchewan.ca/residents/parks-culture-heritage-and-sport/hunting-trapping-and-angling/angling/buy-an-angling-licence"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Confirm the final licence and habitat-certificate total in HAL. The separate angling overview displays lower habitat figures than the licence fee table."
+    },
+    {
+      "id": "ca-yukon",
+      "name": "Yukon",
+      "country": "Canada",
+      "region": "Yukon",
+      "authority": {
+        "name": "Government of Yukon",
+        "url": "https://yukon.ca/en/outdoor-recreation-and-wildlife/fishing-and-boating/get-yukon-fishing-licence"
+      },
+      "buyUrl": null,
+      "summary": "Visitors generally need a Yukon fishing licence. Salmon other than kokanee also require a Yukon Salmon Conservation Catch Card.",
+      "whoNeedsOne": [
+        "Anglers aged 16 and older, unless exempt."
+      ],
+      "exemptions": [
+        "Visitors under 16 can share an accompanying adult licence holder's limits.",
+        "Yukon resident seniors receive free licences."
+      ],
+      "options": [
+        {
+          "name": "Canadian visitor season",
+          "who": "non-resident",
+          "duration": "April 1 to March 31",
+          "price": 30.79,
+          "currency": "CAD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Canadian visitor 6-day",
+          "who": "non-resident",
+          "duration": "6 days",
+          "price": 18.47,
+          "currency": "CAD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Foreign visitor season",
+          "who": "non-resident",
+          "duration": "April 1 to March 31",
+          "price": 43.11,
+          "currency": "CAD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Foreign visitor 6-day",
+          "who": "non-resident",
+          "duration": "6 days",
+          "price": 24.63,
+          "currency": "CAD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Visitor 1-day",
+          "who": "non-resident",
+          "duration": "1 day",
+          "price": 12.31,
+          "currency": "CAD",
+          "water": "freshwater"
+        }
+      ],
+      "extras": [
+        {
+          "name": "Yukon Salmon Conservation Catch Card",
+          "when": "Required for salmon other than kokanee, including for children.",
+          "price": null,
+          "currency": "CAD"
+        },
+        {
+          "name": "Additional sport fishing licence",
+          "when": "Required for specified methods and waters, including Tetl'ámǟn and Wellesley Lake.",
+          "price": 0,
+          "currency": "CAD"
+        },
+        {
+          "name": "National park fishing permit",
+          "when": "Required in national parks.",
+          "price": null,
+          "currency": "CAD"
+        }
+      ],
+      "saltwater": null,
+      "guidedTrips": null,
+      "keyRules": [
+        "Carry the licence.",
+        "Do not share or transfer a licence.",
+        "All children need their own salmon catch card to fish for salmon."
+      ],
+      "howToBuy": "Buy online through Yukon Environment eServices, a Department of Environment office, or an authorized vendor.",
+      "sources": [
+        {
+          "title": "Yukon fishing licences",
+          "url": "https://yukon.ca/en/outdoor-recreation-and-wildlife/fishing-and-boating/get-yukon-fishing-licence"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Confirm tax treatment and the salmon card fee at purchase. No guide-client exemption was confirmed."
+    },
+    {
+      "id": "ca-national-parks",
+      "name": "Canada national parks fishing permit",
+      "country": "Canada",
+      "region": null,
+      "authority": {
+        "name": "Parks Canada",
+        "url": "https://parks.canada.ca/pn-np/ab/jasper/activ/experience/ete-summer/peche-fishing"
+      },
+      "buyUrl": null,
+      "summary": "Anglers need a Parks Canada fishing permit where national park fishing is allowed. A provincial or territorial licence does not replace it, and permit coverage varies by park.",
+      "whoNeedsOne": [
+        "Anglers aged 16 and older in parks where fishing is permitted."
+      ],
+      "exemptions": [
+        "Children under 16 can share an accompanying permit holder's daily limit; that holder must be at least 16."
+      ],
+      "options": [
+        {
+          "name": "Daily permit: Banff, Jasper, Yoho and Kootenay",
+          "who": "any",
+          "duration": "1 day",
+          "price": 15,
+          "currency": "CAD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Annual permit: Banff, Jasper, Yoho and Kootenay",
+          "who": "any",
+          "duration": "Annual",
+          "price": 51.25,
+          "currency": "CAD",
+          "water": "freshwater"
+        }
+      ],
+      "extras": [
+        {
+          "name": "National park admission",
+          "when": "A park pass is also required in the mountain national parks; admission exemptions can apply.",
+          "price": null,
+          "currency": "CAD"
+        }
+      ],
+      "saltwater": null,
+      "guidedTrips": null,
+      "keyRules": [
+        "Confirm that your permit covers the park you plan to visit.",
+        "Check the park's open waters and aquatic invasive species restrictions."
+      ],
+      "howToBuy": "Contact the park for its permit sales locations.",
+      "sources": [
+        {
+          "title": "Parks Canada permit and youth requirements",
+          "url": "https://parks.canada.ca/pn-np/ab/jasper/activ/experience/ete-summer/peche-fishing"
+        },
+        {
+          "title": "Banff fees and four-park permit coverage",
+          "url": "https://www.parks.canada.ca/pn-np/ab/banff/visit/tarifs-fees"
+        },
+        {
+          "title": "Northern parks require separate permits",
+          "url": "https://www.gov.nt.ca/ecc/en/services/get-fishing-licence"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "The quoted prices and shared permit cover only the four named mountain parks. Confirm other parks' fees, sales methods, and permitted waters."
+    },
+    {
+      "id": "mx-national",
+      "name": "Mexico",
+      "country": "Mexico",
+      "region": null,
+      "authority": {
+        "name": "CONAPESCA",
+        "url": "https://www.gob.mx/conapesca/es/documentos/conapesca-01-016-pesca-deportivo-recreativa"
+      },
+      "buyUrl": "https://tramites.ebajacalifornia.gob.mx/ventanillaunica/tramites/pesca",
+      "summary": "Visitors need an individual permit for recreational fishing from a boat or underwater. Shore fishing has a permit exemption, but catch limits and closed seasons still apply.",
+      "whoNeedsOne": [
+        "Mexican and foreign anglers fishing from boats.",
+        "Underwater recreational anglers."
+      ],
+      "exemptions": [
+        "Recreational fishing from land does not require the national permit."
+      ],
+      "options": [
+        {
+          "name": "Individual 1-day",
+          "who": "any",
+          "duration": "1 day",
+          "price": 204,
+          "currency": "MXN",
+          "water": "both"
+        },
+        {
+          "name": "Individual 1-week",
+          "who": "any",
+          "duration": "7 days",
+          "price": 510,
+          "currency": "MXN",
+          "water": "both"
+        },
+        {
+          "name": "Individual 1-month",
+          "who": "any",
+          "duration": "1 month",
+          "price": 766,
+          "currency": "MXN",
+          "water": "both"
+        },
+        {
+          "name": "Individual 1-year",
+          "who": "any",
+          "duration": "1 year",
+          "price": 1021,
+          "currency": "MXN",
+          "water": "both"
+        }
+      ],
+      "extras": [],
+      "saltwater": "The shore exemption also applies at sea. Boat fishing requires a permit; marine protected areas have their own restrictions.",
+      "guidedTrips": "Baja California requires each person who fishes from a boat to hold an individual permit. Confirm whether the charter purchases it for you.",
+      "keyRules": [
+        "Follow the minimum sizes, closed seasons, catch limits and permitted gear.",
+        "Do not sell a recreational catch.",
+        "CONANP's Cabo Pulmo visitor page states that fishing inside the park is prohibited."
+      ],
+      "howToBuy": "Use CONAPESCA's e5cinco service or the official Baja California permit shop. Baja California Sur also sells permits through FONMAR.",
+      "sources": [
+        {
+          "title": "CONAPESCA individual permit and shore exemption",
+          "url": "https://www.gob.mx/conapesca/es/documentos/conapesca-01-016-pesca-deportivo-recreativa"
+        },
+        {
+          "title": "Baja California official online permit shop",
+          "url": "https://sportfishing.bajacalifornia.gob.mx/"
+        },
+        {
+          "title": "Baja California individual permit requirement",
+          "url": "https://retys.bajacalifornia.gob.mx/Portal/TyS/1582"
+        },
+        {
+          "title": "Baja California Sur permit sales",
+          "url": "https://tramites.bcs.gob.mx/catX/venta-de-permisos-de-pesca-deportiva/"
+        },
+        {
+          "title": "CONANP Cabo Pulmo visitor rules",
+          "url": "https://www.gob.mx/conanp/documentos/parque-nacional-cabo-pulmo"
+        },
+        {
+          "title": "CONAPESCA sport fishing guide",
+          "url": "https://www.gob.mx/conapesca/documentos/guia-de-pesca-deportiva"
+        },
+        {
+          "title": "Baja California official 2026 permit prices and purchase page",
+          "url": "https://tramites.ebajacalifornia.gob.mx/ventanillaunica/tramites/pesca"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Prices are the official Baja California 2026 schedule. Confirm marine-park zones and access with CONANP; the national permit does not establish park access."
+    },
+    {
+      "id": "ar-national",
+      "name": "Argentina",
+      "country": "Argentina",
+      "region": null,
+      "authority": {
+        "name": "Provincial fisheries authorities and National Parks Administration",
+        "url": "https://www.argentina.gob.ar/node/439151"
+      },
+      "buyUrl": null,
+      "summary": "Fishing permits depend on the province and water. Castward trips include Tierra del Fuego, Santa Cruz and Corrientes; do not treat one provincial permit as nationwide permission.",
+      "whoNeedsOne": [
+        "Visitors fishing in provincial waters that require a permit.",
+        "Anglers in national parks must obtain the permit for the chosen park and water."
+      ],
+      "exemptions": [],
+      "options": [
+        {
+          "name": "Tierra del Fuego foreign visitor daily",
+          "who": "non-resident",
+          "duration": "1 day",
+          "price": 78000,
+          "currency": "ARS",
+          "water": "freshwater"
+        },
+        {
+          "name": "Tierra del Fuego foreign visitor 3-day",
+          "who": "non-resident",
+          "duration": "3 days",
+          "price": 117000,
+          "currency": "ARS",
+          "water": "freshwater"
+        },
+        {
+          "name": "Tierra del Fuego foreign visitor weekly",
+          "who": "non-resident",
+          "duration": "7 days",
+          "price": 195000,
+          "currency": "ARS",
+          "water": "freshwater"
+        },
+        {
+          "name": "Tierra del Fuego foreign visitor season",
+          "who": "non-resident",
+          "duration": "2026/27 season",
+          "price": 260000,
+          "currency": "ARS",
+          "water": "freshwater"
+        },
+        {
+          "name": "Santa Cruz foreign visitor daily",
+          "who": "non-resident",
+          "duration": "1 day",
+          "price": 90000,
+          "currency": "ARS",
+          "water": "freshwater"
+        },
+        {
+          "name": "Santa Cruz foreign visitor weekly",
+          "who": "non-resident",
+          "duration": "1 week",
+          "price": 300000,
+          "currency": "ARS",
+          "water": "freshwater"
+        },
+        {
+          "name": "Santa Cruz foreign visitor season",
+          "who": "non-resident",
+          "duration": "2026/27 season",
+          "price": 450000,
+          "currency": "ARS",
+          "water": "freshwater"
+        }
+      ],
+      "extras": [
+        {
+          "name": "Santa Cruz trolling permit",
+          "when": "Required in addition to the ordinary permit; daily amount shown.",
+          "price": 20000,
+          "currency": "ARS"
+        }
+      ],
+      "saltwater": null,
+      "guidedTrips": null,
+      "keyRules": [
+        "Carry the provincial permit and required identity documents.",
+        "Iberá in Corrientes permits artificial lures only.",
+        "Check water-specific catch-and-release rules.",
+        "Río Negro states that its permit also covers Neuquén, Chubut and national parks, subject to each water's rules."
+      ],
+      "howToBuy": "Use Santa Cruz's SIPESQ portal, Tierra del Fuego's listed vendors and SIPED registration, or Corrientes' official natural resources licence service. Río Negro directs anglers to permisosdepesca.com.ar for the reciprocal northern Patagonia permit.",
+      "sources": [
+        {
+          "title": "National parks fishing and permits",
+          "url": "https://www.argentina.gob.ar/node/439151"
+        },
+        {
+          "title": "Tierra del Fuego 2026/27 permits",
+          "url": "https://prodyambiente.tierradelfuego.gob.ar/pesca-deportiva-tdf/"
+        },
+        {
+          "title": "Santa Cruz 2026/27 permits and trolling supplement",
+          "url": "https://minpro.santacruz.gob.ar/2026/10/01/santa-cruz-abrio-la-temporada-de-pesca-deportiva-2026-2027/"
+        },
+        {
+          "title": "Santa Cruz official permit portal",
+          "url": "https://pesca.santacruz.gob.ar/"
+        },
+        {
+          "title": "Corrientes licence and Iberá rules",
+          "url": "https://corrientes.tur.ar/tour/pesca-slide/"
+        },
+        {
+          "title": "Río Negro 2026/27 season and reciprocal permit",
+          "url": "https://rionegro.gov.ar/articulo/62581/rio-negro-inicio-una-nueva-temporada-de-pesca-deportiva"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Confirm each Paraná River reach, northern Patagonia trip location and private-water access before purchase. No guide-client exemption was confirmed."
+    },
+    {
+      "id": "bs-national",
+      "name": "Bahamas",
+      "country": "Bahamas",
+      "region": null,
+      "authority": {
+        "name": "Department of Marine Resources",
+        "url": "https://cdn.bahamas.gov.bs/tenant/tenanttgotb/documents/All%20Documents/FlatFishingRegulations-20240123161511.pdf"
+      },
+      "buyUrl": "https://license.gooutdoorsbahamas.com/Licensing/CustomerLookup.aspx",
+      "summary": "Anglers aged 12 and older need a personal licence for flats fishing. A foreign-owned boat also needs a sport fishing permit; the boat permit does not replace the flats licence.",
+      "whoNeedsOne": [
+        "Flats anglers aged 12 and older.",
+        "Foreign-owned boats used for sport fishing need a vessel permit."
+      ],
+      "exemptions": [
+        "Children under 12 are outside the personal flats-licence age requirement."
+      ],
+      "options": [
+        {
+          "name": "Visitor flats daily",
+          "who": "non-resident",
+          "duration": "Day of issue",
+          "price": null,
+          "currency": "BSD",
+          "water": "saltwater"
+        },
+        {
+          "name": "Visitor flats weekly",
+          "who": "non-resident",
+          "duration": "1 week",
+          "price": null,
+          "currency": "BSD",
+          "water": "saltwater"
+        },
+        {
+          "name": "Visitor flats monthly",
+          "who": "non-resident",
+          "duration": "1 month",
+          "price": null,
+          "currency": "BSD",
+          "water": "saltwater"
+        },
+        {
+          "name": "Visitor flats annual",
+          "who": "non-resident",
+          "duration": "1 year",
+          "price": null,
+          "currency": "BSD",
+          "water": "saltwater"
+        }
+      ],
+      "extras": [
+        {
+          "name": "Foreign-owned vessel sport fishing permit",
+          "when": "Required when a foreign-owned vessel is used for sport fishing.",
+          "price": null,
+          "currency": "BSD"
+        }
+      ],
+      "saltwater": "Flats licences and foreign-vessel permits are separate requirements.",
+      "guidedTrips": "A certified guide is required when two or more anglers fish the flats from a vessel. Anglers still need their personal flats licences.",
+      "keyRules": [
+        "Keep the flats licence available for inspection.",
+        "Do not sell fish caught on the flats.",
+        "Do not use a speargun."
+      ],
+      "howToBuy": "Use Go Outdoors Bahamas or apply through the Department of Marine Resources or an Out Island administrator.",
+      "sources": [
+        {
+          "title": "Official flats fishing regulations",
+          "url": "https://cdn.bahamas.gov.bs/tenant/tenanttgotb/documents/All%20Documents/FlatFishingRegulations-20240123161511.pdf"
+        },
+        {
+          "title": "Government fishing FAQ",
+          "url": "https://www.bahamas.com/plan-your-trip/fishing/fishing-faq"
+        },
+        {
+          "title": "Official online permit shop",
+          "url": "https://license.gooutdoorsbahamas.com/Licensing/CustomerLookup.aspx"
+        },
+        {
+          "title": "Government-hosted 2023 fee amendment document",
+          "url": "https://cdn.bahamas.gov.bs/tenant/tenantministryofattorneygenera/documents/All%20Documents/FisheriesResourcesJurisdictionandConservationFlatsFishingAmendmentRegulations2023-copysentforsignature-20240507125521.pdf"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Official fee documents conflict, and the 2023 amendment copy has blank signature details. Confirm all fees with Marine Resources before payment."
+    },
+    {
+      "id": "bb-national",
+      "name": "Barbados",
+      "country": "Barbados",
+      "region": null,
+      "authority": {
+        "name": "Fisheries Division",
+        "url": "https://www.fisheries.gov.bb/legal-framework/"
+      },
+      "buyUrl": null,
+      "summary": "The 2025 fisheries law requires recreational fishing licences for Barbados and foreign-registered fishing vessels. Confirm your charter's licence and any separate visitor requirement with the Fisheries Division.",
+      "whoNeedsOne": [
+        "Vessels used for non-commercial fishing in Barbados waters."
+      ],
+      "exemptions": [],
+      "options": [],
+      "extras": [],
+      "saltwater": "The official requirement covers recreational vessels in Barbados waters. A separate shore-angling rule was not confirmed.",
+      "guidedTrips": null,
+      "keyRules": [
+        "Do not conduct commercial fishing under a recreational licence.",
+        "Recreational vessels must follow the Fisheries Division's registration process."
+      ],
+      "howToBuy": "Apply to the Chief Fisheries Officer. Contact the Fisheries Division for the current recreational application process.",
+      "sources": [
+        {
+          "title": "Fisheries Division legal framework",
+          "url": "https://www.fisheries.gov.bb/legal-framework/"
+        },
+        {
+          "title": "Sustainable Fisheries Management and Development Act 2025, sections 134–136",
+          "url": "https://www.fisheries.gov.bb/content/files/2025/07/Sustainable-Fisheries-Management-and-Development-Act-2025-1.pdf"
+        },
+        {
+          "title": "Recreational vessel registration from June 2026",
+          "url": "https://www.fisheries.gov.bb/sport-and-recreational-fishing-vessel-registration-to-commence-on-world-oceans-day-8-june-2026/"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Individual visitor licensing, shore exemptions, charter-client coverage, fees and licence duration need confirmation."
+    },
+    {
+      "id": "bz-national",
+      "name": "Belize",
+      "country": "Belize",
+      "region": null,
+      "authority": {
+        "name": "Coastal Zone Management Authority and Institute",
+        "url": "https://apps.coastalzonebelize.org/"
+      },
+      "buyUrl": "https://apps.coastalzonebelize.org/",
+      "summary": "Belize's sport fishing licence programme covers shore, reef, flats and offshore sport fishing. Bonefish, tarpon and permit must be released; a licence does not allow you to keep them.",
+      "whoNeedsOne": [
+        "Anglers participating in sport fishing under the CZMAI licence programme."
+      ],
+      "exemptions": [],
+      "options": [
+        {
+          "name": "Sport fishing daily",
+          "who": "any",
+          "duration": "1 day",
+          "price": 20,
+          "currency": "BZD",
+          "water": "saltwater"
+        },
+        {
+          "name": "Sport fishing weekly",
+          "who": "any",
+          "duration": "1 week",
+          "price": 50,
+          "currency": "BZD",
+          "water": "saltwater"
+        },
+        {
+          "name": "Sport fishing annual",
+          "who": "any",
+          "duration": "1 year",
+          "price": 100,
+          "currency": "BZD",
+          "water": "saltwater"
+        }
+      ],
+      "extras": [
+        {
+          "name": "Hol Chan sport fishing user fee",
+          "when": "Required per person per day in the designated sport fishing area.",
+          "price": 20,
+          "currency": "BZD"
+        }
+      ],
+      "saltwater": "The programme includes shore, reef, offshore and flats fishing. Marine reserve licences and zone rules can also apply.",
+      "guidedTrips": null,
+      "keyRules": [
+        "Release all bonefish, tarpon and permit.",
+        "Do not fish in Hol Chan's closed zones.",
+        "Present photo identification for an annual licence."
+      ],
+      "howToBuy": "Buy short licences online. Buy an annual licence at CZMAI's office or an approved distributor.",
+      "sources": [
+        {
+          "title": "CZMAI official licence shop",
+          "url": "https://apps.coastalzonebelize.org/"
+        },
+        {
+          "title": "CZMAI sport fishing scope and fee schedule",
+          "url": "https://www.coastalzonebelize.org/wp-content/uploads/2019/09/Sport-fishing-Brochure.pdf"
+        },
+        {
+          "title": "Fisheries Department protected species rules",
+          "url": "https://fisheries.gov.bz/wp-content/uploads/2026/03/Special-Regulations-2024.pdf"
+        },
+        {
+          "title": "Hol Chan marine reserve rules and user fee",
+          "url": "https://fisheries.gov.bz/hcmr/"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Confirm freshwater coverage, age exemptions, and any charter-client exemption with CZMAI. Marine reserve charges depend on the reserve and zone."
+    },
+    {
+      "id": "bo-national",
+      "name": "Bolivia",
+      "country": "Bolivia",
+      "region": null,
+      "authority": {
+        "name": "Departmental fisheries authorities; Santa Cruz Department",
+        "url": "https://gacetaoficial.santacruz.gob.bo/verpdf/decreto-departamental-140"
+      },
+      "buyUrl": null,
+      "summary": "Permit requirements depend on the department and protected area. Santa Cruz requires sport anglers to register and obtain a licence or permit; confirm the rule for your exact destination.",
+      "whoNeedsOne": [
+        "Sport anglers in Santa Cruz Department must register and obtain authorization."
+      ],
+      "exemptions": [],
+      "options": [],
+      "extras": [],
+      "saltwater": null,
+      "guidedTrips": null,
+      "keyRules": [
+        "Do not sell a recreational catch under Santa Cruz's sport fishing category.",
+        "Follow the basin-specific species, size and gear rules."
+      ],
+      "howToBuy": "Contact the relevant departmental fisheries authority. In Santa Cruz, request the sport fishing registration and permit procedure.",
+      "sources": [
+        {
+          "title": "Santa Cruz departmental fishing regulation",
+          "url": "https://gacetaoficial.santacruz.gob.bo/verpdf/decreto-departamental-140"
+        },
+        {
+          "title": "SERNAP protected-area tourism rules",
+          "url": "https://www.sernap.gob.bo/wp-content/uploads/2025/09/Normas-SERNAP-SEP-2025.pdf"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "No nationwide visitor licence or online shop was confirmed. Verify current departmental permits, Indigenous-community access and protected-area authorization for the trip."
+    },
+    {
+      "id": "br-national",
+      "name": "Brazil",
+      "country": "Brazil",
+      "region": null,
+      "authority": {
+        "name": "Ministry of Fisheries and Aquaculture",
+        "url": "https://www.gov.br/pt-br/servicos/solicitar-licenca-de-pescador-amador-ou-esportivoo?id=23799&origem=servico"
+      },
+      "buyUrl": "https://www.gov.br/pt-br/servicos/solicitar-licenca-de-pescador-amador-ou-esportivoo?id=23799&origem=servico",
+      "summary": "Recreational anglers generally need a federal licence, including foreign visitors. Some states also require a local licence, and protected waters can have extra restrictions.",
+      "whoNeedsOne": [
+        "Brazilian and foreign recreational anglers who do not qualify for an exemption."
+      ],
+      "exemptions": [
+        "The federal guide exempts anglers who use only a handline or simple pole for non-commercial fishing."
+      ],
+      "options": [
+        {
+          "name": "Shore licence",
+          "who": "any",
+          "duration": "1 year",
+          "price": 20,
+          "currency": "BRL",
+          "water": "both"
+        },
+        {
+          "name": "Boat licence, also covers shore fishing",
+          "who": "any",
+          "duration": "1 year",
+          "price": 60,
+          "currency": "BRL",
+          "water": "both"
+        }
+      ],
+      "extras": [
+        {
+          "name": "State fishing licence",
+          "when": "Some states require a supplementary licence.",
+          "price": null,
+          "currency": "BRL"
+        }
+      ],
+      "saltwater": "The federal licence applies nationally, subject to state, municipal and protected-area rules.",
+      "guidedTrips": null,
+      "keyRules": [
+        "Do not sell a recreational catch.",
+        "Complete and submit the application; payment alone does not complete it."
+      ],
+      "howToBuy": "Apply through gov.br. The 2026 ministry guide allows a Brazilian citizen to apply for a foreign visitor without a CPF, using passport details.",
+      "sources": [
+        {
+          "title": "Federal licence service and fees",
+          "url": "https://www.gov.br/pt-br/servicos/solicitar-licenca-de-pescador-amador-ou-esportivoo?id=23799&origem=servico"
+        },
+        {
+          "title": "2026 ministry guide, including visitors without a CPF",
+          "url": "https://www.gov.br/mpa/pt-br/assuntos/pesca-amadora-e-esportiva/Cartilhadapescaamadoraeesportivaimpressoemlivreto.pdf"
+        },
+        {
+          "title": "Boat licence includes shore fishing",
+          "url": "https://www.gov.br/pt-br/temas/servicos/solicitar-registro-de-pescador-amador"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Confirm the state licence, closed seasons and current visitor application route. No guide-client exemption was confirmed."
+    },
+    {
+      "id": "cl-national",
+      "name": "Chile",
+      "country": "Chile",
+      "region": null,
+      "authority": {
+        "name": "SERNAPESCA",
+        "url": "https://www.sernapesca.cl/preguntas-frecuentes/obtencion-licencia-pesca-recreativa/"
+      },
+      "buyUrl": "https://pescarecreativa.sernapesca.cl/cart",
+      "summary": "Foreign visitors need a national recreational fishing licence for freshwater and sea fishing. Regional rules still apply; Castward's Futaleufú trip is in Los Lagos.",
+      "whoNeedsOne": [
+        "Foreign visitors, including children and seniors."
+      ],
+      "exemptions": [
+        "Age and registered-disability exemptions apply to Chileans and foreign residents, not visiting foreigners."
+      ],
+      "options": [
+        {
+          "name": "Foreign visitor weekly",
+          "who": "non-resident",
+          "duration": "1 week",
+          "price": 19900,
+          "currency": "CLP",
+          "water": "both"
+        },
+        {
+          "name": "Foreign visitor monthly",
+          "who": "non-resident",
+          "duration": "1 month",
+          "price": 39800,
+          "currency": "CLP",
+          "water": "both"
+        },
+        {
+          "name": "Foreign visitor annual",
+          "who": "non-resident",
+          "duration": "1 year",
+          "price": 59600,
+          "currency": "CLP",
+          "water": "both"
+        }
+      ],
+      "extras": [],
+      "saltwater": "The foreign visitor licence covers both marine and inland waters nationwide, except protected waters where fishing is restricted.",
+      "guidedTrips": null,
+      "keyRules": [
+        "Carry the licence on paper or an electronic device.",
+        "Carry the licence when you transport your catch.",
+        "Release all salmonids on the upper Futaleufú between the international border and the Sofía sector."
+      ],
+      "howToBuy": "Buy through SERNAPESCA's recreational fishing portal, its offices, or authorized sales points. Foreign visitors use passport or DNI details.",
+      "sources": [
+        {
+          "title": "Licence requirements and foreign visitor exemptions",
+          "url": "https://www.sernapesca.cl/preguntas-frecuentes/obtencion-licencia-pesca-recreativa/"
+        },
+        {
+          "title": "2026 official licence prices",
+          "url": "https://www.sernapesca.cl/app/uploads/2018/03/Precios-Licencias-Pesca-Recreativa-2026.pdf"
+        },
+        {
+          "title": "National licence shop and coverage",
+          "url": "https://pescarecreativa.sernapesca.cl/cart"
+        },
+        {
+          "title": "2026/27 regional rules, including Los Lagos and Futaleufú",
+          "url": "https://www.sernapesca.cl/app/uploads/2026/11/medidas_de_administracion_de_pesca_recreativa_en_chile_2026-2027_v20261104.pdf"
+        },
+        {
+          "title": "Foreign visitor identification for licence purchase",
+          "url": "https://www.chileatiende.gob.cl/fichas/4636/1/pdf"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Confirm the exact river section, season and tackle restrictions. No guide-client exemption was confirmed."
+    },
+    {
+      "id": "co-national",
+      "name": "Colombia",
+      "country": "Colombia",
+      "region": null,
+      "authority": {
+        "name": "AUNAP",
+        "url": "https://aunap.gov.co/permiso-pesca-deportiva/"
+      },
+      "buyUrl": null,
+      "summary": "Colombia's rules changed after the court decision on sport fishing. The 2025 tourism-fishing law requires permits for those who operate fishing tourism; confirm the visitor's position before you book.",
+      "whoNeedsOne": [
+        "People, organized communities and operators that conduct fishing tourism as an economic activity need AUNAP authorization under Law 2501."
+      ],
+      "exemptions": [],
+      "options": [],
+      "extras": [],
+      "saltwater": null,
+      "guidedTrips": null,
+      "keyRules": [
+        "Tourism fishing must follow the law's environmental and animal-welfare principles.",
+        "Use the current tourism-fishing authorization requirements, rather than an old sport fishing form alone."
+      ],
+      "howToBuy": "Ask AUNAP for the current tourism-fishing permit procedure and the requirements for your itinerary.",
+      "sources": [
+        {
+          "title": "AUNAP legacy sport fishing permit page",
+          "url": "https://aunap.gov.co/permiso-pesca-deportiva/"
+        },
+        {
+          "title": "Law 2501 of 2025, especially article 11",
+          "url": "https://www1.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=261716"
+        },
+        {
+          "title": "Constitutional Court C-148/2022",
+          "url": "https://www.corteconstitucional.gov.co/relatoria/2022/c-148-22.htm"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Confirm implementing rules, permitted waters and species, individual visitor documents, charter coverage and fees directly with AUNAP. The legacy permit page does not establish current permission."
+    },
+    {
+      "id": "cr-national",
+      "name": "Costa Rica",
+      "country": "Costa Rica",
+      "region": null,
+      "authority": {
+        "name": "INCOPESCA",
+        "url": "https://www.incopesca.go.cr/acerca_incopesca/transparencia_institucional/servicios_tramites/carnes.aspx"
+      },
+      "buyUrl": "https://www.incopesca.go.cr/carnets/tramites/solicitud.aspx",
+      "summary": "Visitors need an INCOPESCA sport fishing card for boat fishing. The captain's or boat's licence does not replace each angler's card.",
+      "whoNeedsOne": [
+        "Domestic and foreign anglers fishing from a boat.",
+        "Underwater anglers need the applicable card.",
+        "INCOPESCA also lists a shore and kayak card category."
+      ],
+      "exemptions": [],
+      "options": [
+        {
+          "name": "Boat fishing card",
+          "who": "any",
+          "duration": "8 days",
+          "price": 16.95,
+          "currency": "USD",
+          "water": "both"
+        },
+        {
+          "name": "Boat fishing card",
+          "who": "any",
+          "duration": "30 days",
+          "price": 28.25,
+          "currency": "USD",
+          "water": "both"
+        },
+        {
+          "name": "Boat fishing card",
+          "who": "any",
+          "duration": "1 year",
+          "price": 56.5,
+          "currency": "USD",
+          "water": "both"
+        }
+      ],
+      "extras": [],
+      "saltwater": "INCOPESCA's card requirements apply to both inland and marine fishing.",
+      "guidedTrips": "Each person who fishes aboard the boat must carry a sport fishing card. A tourist group can apply together.",
+      "keyRules": [
+        "Carry the card.",
+        "Release marlin and sailfish in the water."
+      ],
+      "howToBuy": "Apply and pay through INCOPESCA's online card service with your identification or passport details.",
+      "sources": [
+        {
+          "title": "INCOPESCA card requirements and dollar fees",
+          "url": "https://www.incopesca.go.cr/acerca_incopesca/transparencia_institucional/servicios_tramites/carnes.aspx"
+        },
+        {
+          "title": "Official card shop; prices include VAT",
+          "url": "https://www.incopesca.go.cr/carnets/tramites/solicitud.aspx"
+        },
+        {
+          "title": "INCOPESCA billfish release guidance",
+          "url": "https://www.incopesca.go.cr/pesca/pesca_deportiva.aspx"
+        },
+        {
+          "title": "Tourist group applications",
+          "url": "https://www.incopesca.go.cr/tramites_servicios/carne%20requisitos.aspx"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Prices include VAT. Confirm shore and kayak eligibility and fees for foreign visitors: official pages describe that category differently. Age exemptions were not confirmed."
+    },
+    {
+      "id": "cu-national",
+      "name": "Cuba",
+      "country": "Cuba",
+      "region": null,
+      "authority": {
+        "name": "Ministry of the Food Industry, National Office of State Inspection",
+        "url": "https://faolex.fao.org/docs/pdf/cub211923.pdf"
+      },
+      "buyUrl": null,
+      "summary": "Cuba distinguishes recreational licences from official sport-event licences. Boat fishing and fishing in state-interest freshwater reservoirs require the applicable authorization, so confirm your trip's licence category.",
+      "whoNeedsOne": [
+        "Recreational boat fishing requires the applicable licence.",
+        "Fishing from shore in freshwater reservoirs of state interest requires a licence."
+      ],
+      "exemptions": [],
+      "options": [
+        {
+          "name": "Recreational licence",
+          "who": "any",
+          "duration": "Duration depends on activity and applicant status",
+          "price": null,
+          "currency": "CUP",
+          "water": "both"
+        }
+      ],
+      "extras": [],
+      "saltwater": "Marine boat licences differ from freshwater reservoir and underwater licences.",
+      "guidedTrips": "Tourism providers can arrange recreational licences. Protected-area tourist fly fishing or trolling must use catch and release where the management plan allows it.",
+      "keyRules": [
+        "Use catch and release for the specified protected-area tourism activities.",
+        "Confirm that the protected area's management plan permits the activity."
+      ],
+      "howToBuy": "Apply through the provincial National Office of State Inspection, including Isla de la Juventud. A tourism provider can arrange the application.",
+      "sources": [
+        {
+          "title": "Cuban Official Gazette, Resolution 17/2022, original document hosted by FAO",
+          "url": "https://faolex.fao.org/docs/pdf/cub211923.pdf"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Confirm current visitor eligibility, fees, shore exemptions and whether the operator's authorization covers each guest. Published temporary-resident fees are not assumed to apply to tourists."
+    },
+    {
+      "id": "do-national",
+      "name": "Dominican Republic",
+      "country": "Dominican Republic",
+      "region": null,
+      "authority": {
+        "name": "CODOPESCA",
+        "url": "https://codopesca.gob.do/wp-content/uploads/2024/08/Resolucion-001-2024-Pesca-deportiva-Turistica-1.pdf"
+      },
+      "buyUrl": "https://solicitudes.codopesca.gob.do/",
+      "summary": "Sport and tourist anglers need a CODOPESCA licence or fishing card. The requirement applies from shore as well as from a boat or underwater.",
+      "whoNeedsOne": [
+        "Every person who practices sport or tourist fishing from land, a boat, or underwater."
+      ],
+      "exemptions": [],
+      "options": [],
+      "extras": [],
+      "saltwater": "The resolution covers shore, boat and underwater activity; shore fishing is not a general exemption.",
+      "guidedTrips": "The resolution requires both operator authorization and an angler licence or card. Confirm that the charter arranges your personal document.",
+      "keyRules": [
+        "Use only the equipment and method authorized on the document.",
+        "Tournament participants and vessels can require temporary permits."
+      ],
+      "howToBuy": "Start through CODOPESCA's official online service and select the fisher licence application.",
+      "sources": [
+        {
+          "title": "Sport and tourist fishing Resolution 001-2024",
+          "url": "https://codopesca.gob.do/wp-content/uploads/2024/08/Resolucion-001-2024-Pesca-deportiva-Turistica-1.pdf"
+        },
+        {
+          "title": "CODOPESCA online applications",
+          "url": "https://solicitudes.codopesca.gob.do/"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Confirm the individual tourist card's price, duration, age rules and required documents. The operator's two-year licence is not a visitor card duration."
+    },
+    {
+      "id": "ec-national",
+      "name": "Ecuador",
+      "country": "Ecuador",
+      "region": null,
+      "authority": {
+        "name": "Fisheries authority; Galápagos National Park Directorate",
+        "url": "https://www.gob.ec/sites/default/files/sign/procedure-7406-20210909151515-13279301-signed.pdf"
+      },
+      "buyUrl": null,
+      "summary": "Ecuador publishes a permit procedure for sport fishing vessels. Galápagos has a separate authorized fishing-tour system; do not treat a mainland vessel permit as permission to fish there.",
+      "whoNeedsOne": [
+        "Sport fishing vessel owners or operators must use the relevant vessel permit procedure.",
+        "Galápagos fishing-tour operators require the park's pesca vivencial authorization."
+      ],
+      "exemptions": [],
+      "options": [],
+      "extras": [],
+      "saltwater": "Galápagos Marine Reserve follows its own park rules and authorized tour conditions.",
+      "guidedTrips": "In Galápagos, use a vessel authorized for pesca vivencial. A separate individual visitor licence or blanket charter exemption was not confirmed.",
+      "keyRules": [
+        "Galápagos fishing tours may keep at most 50 pounds of fish per daily trip.",
+        "Release billfish and swordfish caught for demonstration during a Galápagos fishing tour.",
+        "Tour catches cannot be sold; consumption is limited to tour participants."
+      ],
+      "howToBuy": "Confirm the vessel permit with the fisheries authority. Confirm Galápagos tour authorization with the National Park Directorate.",
+      "sources": [
+        {
+          "title": "Official sport fishing vessel permit procedure",
+          "url": "https://www.gob.ec/sites/default/files/sign/procedure-7406-20210909151515-13279301-signed.pdf"
+        },
+        {
+          "title": "Galápagos fishing-tour Resolution 00009/2021",
+          "url": "https://www.galapagos.gob.ec/wp-content/uploads/downloads/RESOLUCIONES/2021/00009.pdf"
+        },
+        {
+          "title": "Official publication of the Galápagos fishing-tour reform",
+          "url": "https://www.registroficial.gob.ec/tercer-suplemento-al-registro-oficial-no-243/"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Individual mainland visitor requirements, fees, exemptions and a visitor purchase route remain unconfirmed. Ask the park about current Galápagos zones and operator authorization."
+    },
+    {
+      "id": "gd-national",
+      "name": "Grenada",
+      "country": "Grenada",
+      "region": null,
+      "authority": {
+        "name": "Fisheries Division; Grenada Tourism Authority",
+        "url": "https://grenadaparliament.gd/wp-content/uploads/2021/08/S.R.O.-15-of-2016-Grenada-Tourism-Authority-Tourist-Accommodation-and-Tourism-Enterprise-Regulations-2016.pdf"
+      },
+      "buyUrl": null,
+      "summary": "Grenada's tourism rules require sport fishing to take place with a licensed operator. A separate visitor licence requirement was not confirmed, so ask the Fisheries Division before an independent trip.",
+      "whoNeedsOne": [
+        "Tourism sport fishing operators must hold the required authorization."
+      ],
+      "exemptions": [],
+      "options": [],
+      "extras": [],
+      "saltwater": null,
+      "guidedTrips": "Tourism rules require a licensed operator. They do not establish an individual client licence exemption.",
+      "keyRules": [
+        "Use gear and methods that follow Fisheries Division rules.",
+        "Do not discard fishing line, gear or vessel rubbish at sea.",
+        "Do not use poisons, chemicals or explosives."
+      ],
+      "howToBuy": "Contact the Fisheries Division for individual and vessel requirements.",
+      "sources": [
+        {
+          "title": "Tourism regulations, section 4.13 on sport fishing",
+          "url": "https://grenadaparliament.gd/wp-content/uploads/2021/08/S.R.O.-15-of-2016-Grenada-Tourism-Authority-Tourist-Accommodation-and-Tourism-Enterprise-Regulations-2016.pdf"
+        },
+        {
+          "title": "Fisheries Act, vessel licensing",
+          "url": "https://grenadaparliament.gd/wp-content/uploads/2021/08/Cap108-FISHERIES-ACT.pdf"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Confirm personal visitor licences, shore rules, yacht fishing, fees and marine protected-area access. No general no-licence claim is supported here."
+    },
+    {
+      "id": "gt-national",
+      "name": "Guatemala",
+      "country": "Guatemala",
+      "region": null,
+      "authority": {
+        "name": "MAGA, Directorate of Fisheries and Aquaculture Regulations",
+        "url": "https://apps.maga.gob.gt/simplificacion/Formularios/Details/655"
+      },
+      "buyUrl": null,
+      "summary": "Guatemala requires authorization for sport fishing by national and foreign participants. Its application includes vessel documents, so confirm the permit that covers your boat and your role as a guest.",
+      "whoNeedsOne": [
+        "People or organizations that carry out sport fishing under the applicable licence or permit."
+      ],
+      "exemptions": [],
+      "options": [],
+      "extras": [],
+      "saltwater": "The regulations cover both coasts and public inland waters.",
+      "guidedTrips": null,
+      "keyRules": [
+        "Use circle hooks for billfish.",
+        "Follow the species, area, gear and term stated on the permit."
+      ],
+      "howToBuy": "Submit MAGA's sport fishing application with identity and applicable vessel documents through the listed procedure.",
+      "sources": [
+        {
+          "title": "2026 official sport fishing licence procedure",
+          "url": "https://apps.maga.gob.gt/simplificacion/Formularios/Details/655"
+        },
+        {
+          "title": "General Fisheries and Aquaculture Law, articles 26–27",
+          "url": "https://www.maga.gob.gt/wp-content/uploads/pdf/dipesca/nacional/ley_general_de_pesca_y_acuicultura.pdf"
+        },
+        {
+          "title": "Sport fishing regulations, articles 56–60",
+          "url": "https://apps.maga.gob.gt/normativas/Normativas/Download/410"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Confirm whether the charter authorization covers guests, plus shore requirements, permit duration, fees and any age exemption."
+    },
+    {
+      "id": "gy-national",
+      "name": "Guyana",
+      "country": "Guyana",
+      "region": null,
+      "authority": {
+        "name": "Ministry of Agriculture, Fisheries Department",
+        "url": "https://agriculture.gov.gy/fisheries/"
+      },
+      "buyUrl": null,
+      "summary": "The Fisheries Department handles fishing vessel registration and licences. A general tourist angling licence rule was not confirmed; ask the department about your exact river, coast or lodge trip.",
+      "whoNeedsOne": [],
+      "exemptions": [],
+      "options": [],
+      "extras": [],
+      "saltwater": null,
+      "guidedTrips": null,
+      "keyRules": [],
+      "howToBuy": "Contact the Fisheries Department at +592 225-9559 or +592 225-9552.",
+      "sources": [
+        {
+          "title": "Fisheries Department responsibilities and contact details",
+          "url": "https://agriculture.gov.gy/fisheries/"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Confirm individual visitor permits, Indigenous-community access, protected areas, charter coverage, fees and exemptions. The department page is not evidence that tourists can fish without a licence."
+    },
+    {
+      "id": "hn-national",
+      "name": "Honduras",
+      "country": "Honduras",
+      "region": null,
+      "authority": {
+        "name": "SAG, Directorate General of Fisheries and Aquaculture (DIGEPESCA)",
+        "url": "https://sag.gob.hn/acuerdo-sag-69-2023-requisitos-para-la-renovacion-de-licencias-de-pesca-2023/"
+      },
+      "buyUrl": null,
+      "summary": "DIGEPESCA lists a sport fisher permit and a separate permit category for tourism businesses. Confirm the visitor permit before your trip; a tourism operator's permit does not establish a guest exemption.",
+      "whoNeedsOne": [
+        "Sport fishers fall within DIGEPESCA's published permit categories."
+      ],
+      "exemptions": [],
+      "options": [
+        {
+          "name": "Sport fisher permit, published 2023 fee",
+          "who": "any",
+          "duration": null,
+          "price": 500,
+          "currency": "HNL",
+          "water": "both"
+        }
+      ],
+      "extras": [],
+      "saltwater": null,
+      "guidedTrips": null,
+      "keyRules": [
+        "Submit the applicable identity and photograph documents.",
+        "Pay the government fee through the prescribed TGR process.",
+        "Release billfish caught during sport or tourism fishing."
+      ],
+      "howToBuy": "Apply at a DIGEPESCA regional office or the central Control and Inspection Department.",
+      "sources": [
+        {
+          "title": "SAG permit requirements notice",
+          "url": "https://sag.gob.hn/acuerdo-sag-69-2023-requisitos-para-la-renovacion-de-licencias-de-pesca-2023/"
+        },
+        {
+          "title": "Official permit requirements and fee table",
+          "url": "https://sag.gob.hn/wp-content/uploads/2023/04/Requisitos-Renovacion-Licencias-Pesca-2023.pdf"
+        },
+        {
+          "title": "General Fisheries and Aquaculture Law, articles 41–42",
+          "url": "https://www.digepesca.sag.gob.hn/wp-content/uploads/2022/09/4.-Ley-de-Pesca-tamano-10x14-1.pdf"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Confirm the current fee, duration, foreign-passport procedure, shore rules and marine park permissions. The quoted fee comes from the 2023 official schedule."
+    },
+    {
+      "id": "jm-national",
+      "name": "Jamaica",
+      "country": "Jamaica",
+      "region": null,
+      "authority": {
+        "name": "National Fisheries Authority",
+        "url": "https://www.fisheries.gov.jm/licensing-and-compliance/"
+      },
+      "buyUrl": null,
+      "summary": "Jamaica requires fishers and their vessels to register, including recreational fishers. Do not assume a charter booking removes the licence requirement; confirm your visitor documents with the authority.",
+      "whoNeedsOne": [
+        "Recreational fishers and their vessels fall within the authority's licensing system."
+      ],
+      "exemptions": [],
+      "options": [],
+      "extras": [],
+      "saltwater": null,
+      "guidedTrips": null,
+      "keyRules": [
+        "Obtain the required licence before you fish or attempt to fish.",
+        "Provide current government identification and a passport-size photograph for the fisher application."
+      ],
+      "howToBuy": "Apply through the National Fisheries Authority's IrieFins service or a fisheries office.",
+      "sources": [
+        {
+          "title": "National Fisheries Authority licence requirements",
+          "url": "https://www.fisheries.gov.jm/licensing-and-compliance/"
+        },
+        {
+          "title": "2026 licence application documents",
+          "url": "https://www.fisheries.gov.jm/nfa-urges-fishers-to-have-required-documents-ready-for-licence-applications/"
+        },
+        {
+          "title": "Official IrieFins service entry",
+          "url": "https://www.fisheries.gov.jm/"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Confirm tourist eligibility, charter-client coverage, licence categories, fees, duration, shore rules and exemptions."
+    },
+    {
+      "id": "ni-national",
+      "name": "Nicaragua",
+      "country": "Nicaragua",
+      "region": null,
+      "authority": {
+        "name": "Nicaraguan Institute of Fisheries and Aquaculture (INPESCA)",
+        "url": "https://www.inpesca.gob.ni/index.php/en/direcciones/dopa/requisitos-pesca"
+      },
+      "buyUrl": null,
+      "summary": "Nicaraguan and foreign sport fishers need an INPESCA permit. The requirement includes shore, boat and underwater fishing.",
+      "whoNeedsOne": [
+        "National and foreign individuals or organizations that conduct sport fishing."
+      ],
+      "exemptions": [],
+      "options": [
+        {
+          "name": "Sport fishing permit",
+          "who": "any",
+          "duration": "Up to 1 year",
+          "price": null,
+          "currency": "NIO",
+          "water": "both"
+        }
+      ],
+      "extras": [],
+      "saltwater": "The permit requirement covers shore and boat fishing; no general sea-shore exemption appears in the cited law.",
+      "guidedTrips": null,
+      "keyRules": [
+        "Carry the personal, non-transferable permit.",
+        "Follow the catch-and-release principle and the applicable season, gear and catch rules."
+      ],
+      "howToBuy": "Apply to INPESCA with the fishing area, species, gear, dates and vessel details. The form lists daily, weekly and season categories.",
+      "sources": [
+        {
+          "title": "INPESCA sport fishing application requirements",
+          "url": "https://inpesca.gob.ni/images/Requisitos%20para%20Pesca%20Y%20Acuicultura/pesca/Permiso%20de%20Pesca%20Deportiva.pdf"
+        },
+        {
+          "title": "Consolidated Fisheries Law 489, articles 83–84",
+          "url": "https://www.inpesca.gob.ni/images/doc%20legal/Consolidado%20de%20Texto%20Ley%20489%20y%20su%20Reglamentos%20con%20sus%20reformas%20incorporadas.pdf"
+        },
+        {
+          "title": "Regulation of Law 489, article 84",
+          "url": "https://www.inpesca.gob.ni/images/reglamento%20de%20ley%20489/7.%20Decreto%20No.%20009-2005%20Reglamento%20de%20la%20Ley%20489%20Ley%20de%20Pesca%20y%20Acuicultura.pdf"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Confirm fees, short-term visitor documents, guide-client coverage and the separate Río San Juan conditions with INPESCA."
+    },
+    {
+      "id": "pa-national",
+      "name": "Panama",
+      "country": "Panama",
+      "region": null,
+      "authority": {
+        "name": "Aquatic Resources Authority of Panama (ARAP)",
+        "url": "https://arap.gob.pa/decretos-ejecutivos/"
+      },
+      "buyUrl": null,
+      "summary": "Panama's fisheries law requires an ARAP licence for sport fishing. A new personal-card system starts on December 10, 2026, after this record's check date.",
+      "whoNeedsOne": [
+        "Sport fishers fall under the licence requirement in article 66 of Law 204 of 2021."
+      ],
+      "exemptions": [],
+      "options": [],
+      "extras": [],
+      "saltwater": "The statutory requirement covers inland waters and marine waters under Panamanian jurisdiction.",
+      "guidedTrips": "Decree 9 provides a client exemption for authorized tourism fishing services from December 10, 2026. Confirm the present arrangement with ARAP.",
+      "keyRules": [
+        "Carry the applicable ARAP authorization.",
+        "Do not apply the new December 2026 card rules to an earlier trip."
+      ],
+      "howToBuy": "Ask ARAP for the permit process that applies on your trip date.",
+      "sources": [
+        {
+          "title": "ARAP executive decrees",
+          "url": "https://arap.gob.pa/decretos-ejecutivos/"
+        },
+        {
+          "title": "Official Gazette, Decree 9 of June 10, 2026, including commencement and Law 204 reference",
+          "url": "https://s3-legispan.asamblea.gob.pa/legispan/GACETAS/2020/2026/30543-E_2026.pdf"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Confirm the current permit, fee and client coverage. Decree 9 starts six months after June 10 publication; its new fees are not current on November 11."
+    },
+    {
+      "id": "pe-national",
+      "name": "Peru",
+      "country": "Peru",
+      "region": null,
+      "authority": {
+        "name": "Ministry of Production (PRODUCE) and regional fisheries authorities",
+        "url": "https://www.sanipes.gob.pe/normativas/14_DECRETOSUPREMO012-2001-PE.pdf"
+      },
+      "buyUrl": null,
+      "summary": "Individuals who fish for sport without a boat qualify for a national permit exemption. Do not assume this exemption covers a fishing boat or protected-area access.",
+      "whoNeedsOne": [],
+      "exemptions": [
+        "Individuals who fish for sport without a vessel, under article 29 of Supreme Decree 012-2001-PE."
+      ],
+      "options": [],
+      "extras": [],
+      "saltwater": "The general fisheries regulation covers sea and inland resources. The stated sport-fishing exemption depends on fishing without a vessel.",
+      "guidedTrips": null,
+      "keyRules": [
+        "Keep the activity non-commercial.",
+        "Check the applicable species, season and protected-water restrictions."
+      ],
+      "howToBuy": "No national permit purchase applies to the stated shore exemption. Ask PRODUCE or the regional fisheries office about a boat trip.",
+      "sources": [
+        {
+          "title": "General Fisheries Regulation, articles 4, 6 and 29",
+          "url": "https://www.sanipes.gob.pe/normativas/14_DECRETOSUPREMO012-2001-PE.pdf"
+        },
+        {
+          "title": "Compiled General Fisheries Regulation",
+          "url": "https://www.senace.gob.pe/wp-content/uploads/filebase/senacenormativa/normas_ambientales_sectoriales/pesqueria/NAS-4-8-02-DS-012-2001-PE.pdf"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Confirm boat permits, foreign visitor coverage, regional inland rules and protected-area access. No visitor boat-permit fee or purchase portal was confirmed."
+    },
+    {
+      "id": "lc-national",
+      "name": "Saint Lucia",
+      "country": "Saint Lucia",
+      "region": null,
+      "authority": {
+        "name": "Fisheries Department",
+        "url": "https://www.govt.lc/services/recreational-fishing-licence"
+      },
+      "buyUrl": null,
+      "summary": "The published recreational boat-fishing licence is only for Saint Lucia's citizens or residents. A visiting tourist must confirm a separate arrangement with the Fisheries Department.",
+      "whoNeedsOne": [
+        "Eligible citizens or residents use the published recreational licence to fish from a vessel."
+      ],
+      "exemptions": [],
+      "options": [
+        {
+          "name": "Citizen or resident recreational boat licence",
+          "who": "resident",
+          "duration": null,
+          "price": 50,
+          "currency": "XCD",
+          "water": null
+        }
+      ],
+      "extras": [],
+      "saltwater": null,
+      "guidedTrips": null,
+      "keyRules": [
+        "The published application is restricted to citizens or residents.",
+        "A fishing vessel requires the applicable vessel licence."
+      ],
+      "howToBuy": "Eligible applicants submit the form to the Fisheries Department. The stated processing time is three to five business days.",
+      "sources": [
+        {
+          "title": "Recreational fishing licence and EC$50 fee",
+          "url": "https://www.govt.lc/services/recreational-fishing-licence"
+        },
+        {
+          "title": "Local fishing vessel licence renewal",
+          "url": "https://www.govt.lc/services/renew-a-licence-for-a-fishing-vessel-local-"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Confirm the foreign tourist route, shore rules, water coverage, charter-client coverage and licence duration. The fee shown is not a verified tourist price."
+    },
+    {
+      "id": "sr-national",
+      "name": "Suriname",
+      "country": "Suriname",
+      "region": null,
+      "authority": {
+        "name": "Ministry of Agriculture, Animal Husbandry and Fisheries, Directorate of Fisheries",
+        "url": "https://gov.sr/document/aanvraagformulier-vergunning-sportvisserij/"
+      },
+      "buyUrl": null,
+      "summary": "Suriname publishes a sport-fishing permit application. The form does not establish whether each visiting angler needs a separate permit or a guide's permit covers clients.",
+      "whoNeedsOne": [],
+      "exemptions": [],
+      "options": [],
+      "extras": [],
+      "saltwater": null,
+      "guidedTrips": null,
+      "keyRules": [
+        "The application asks for the fishing area and equipment.",
+        "The application asks for the applicant's identity and the vessel's details."
+      ],
+      "howToBuy": "Contact the Directorate of Fisheries at Cornelis Jongbawstraat 50, Paramaribo, or +597 476741 / 472233 for the application.",
+      "sources": [
+        {
+          "title": "Official sport fishing permit application page",
+          "url": "https://gov.sr/document/aanvraagformulier-vergunning-sportvisserij/"
+        },
+        {
+          "title": "Sport fishing permit application form",
+          "url": "https://gov.sr/wp-content/uploads/2022/03/211013-aanvraagformulier-sportvisserij.pdf"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Confirm personal versus vessel coverage, foreign visitor eligibility, inland and marine rules, duration and fee. The form's stamp charge is not a verified licence price."
+    },
+    {
+      "id": "uy-national",
+      "name": "Uruguay",
+      "country": "Uruguay",
+      "region": null,
+      "authority": {
+        "name": "National Directorate of Aquatic Resources (DINARA)",
+        "url": "https://www.gub.uy/ministerio-ganaderia-agricultura-pesca/comunicacion/noticias/permisos-pesca-se-venden-se-transfieren"
+      },
+      "buyUrl": null,
+      "summary": "Uruguay generally allows sport fishing without a permit. Specific areas, species, dates or methods can require one, so check the exact water before your trip.",
+      "whoNeedsOne": [
+        "Anglers in an activity or area subject to a specific permit rule."
+      ],
+      "exemptions": [
+        "The general sport-fishing rule in article 44 allows fishing freely, subject to regulated exceptions."
+      ],
+      "options": [],
+      "extras": [],
+      "saltwater": null,
+      "guidedTrips": null,
+      "keyRules": [
+        "Do not sell a recreational catch.",
+        "Do not export a recreational catch; the law limits export authorization to research agreements.",
+        "Do not buy or transfer another person's fishing permit."
+      ],
+      "howToBuy": "There is no general sport-fishing permit purchase under article 44. Contact DINARA for any specific authorization.",
+      "sources": [
+        {
+          "title": "Fisheries Law 19175, article 44",
+          "url": "https://www.impo.com.uy/bases/leyes/19175-2013/44"
+        },
+        {
+          "title": "Fisheries Law 19175, article 45",
+          "url": "https://www.impo.com.uy/bases/leyes/19175-2013/45"
+        },
+        {
+          "title": "DINARA notice on permits and recreational catch, July 2026",
+          "url": "https://www.gub.uy/ministerio-ganaderia-agricultura-pesca/comunicacion/noticias/permisos-pesca-se-venden-se-transfieren"
+        }
+      ],
+      "checked": "2026-11-11",
+      "checkOfficial": "Ask DINARA about the Uruguay River and CARU requirements, protected waters, charter permissions and any local fees."
+    }
+  ]
+}

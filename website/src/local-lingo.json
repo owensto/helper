@@ -1,0 +1,2522 @@
+{
+  "sources": {
+    "igfa-grand": {
+      "title": "IGFA Grand Slam Clubs",
+      "url": "https://igfa.org/grand-slam-clubs/",
+      "checked": "2026-11-11"
+    },
+    "igfa-application": {
+      "title": "IGFA Grand Slam Clubs application",
+      "url": "https://igfa.org/wp-content/uploads/2024/04/IGFA2024_Grand-Slam-Clubs.pdf",
+      "checked": "2026-11-11"
+    },
+    "igfa-royal": {
+      "title": "IGFA Royal Slam Clubs",
+      "url": "https://igfa.org/royal-slam-clubs/",
+      "checked": "2026-11-11"
+    },
+    "marlin-slams": {
+      "title": "Chasing the Fantasy Billfish Slam — Marlin",
+      "url": "https://www.marlinmag.com/howto/chasing-fantasy-billfish-slam/",
+      "checked": "2026-11-11"
+    },
+    "louisiana-names": {
+      "title": "Louisiana Recreational Fisherman and Health Advisory Survey: species names",
+      "url": "https://www.wlf.louisiana.gov/assets/Resources/Publications/Recreational_Fishing/2008_Louisiana_Recreational_Fisherman_Health_Advisory_Survey_Report.pdf",
+      "checked": "2026-11-11"
+    },
+    "gulf-fish": {
+      "title": "Commonly Caught Inshore and Coastal Fish — Alabama Marine Information Calendar",
+      "url": "https://www.outdooralabama.com/sites/default/files/Marine%20Resources/AL%20Marine%20Tide%20Calendar/2024%20Alabama%20Marine%20Information%20Calendar.pdf",
+      "checked": "2026-11-11"
+    },
+    "texas-slam": {
+      "title": "Seeking the South Texas Slam — Salt Water Sportsman",
+      "url": "https://www.saltwatersportsman.com/travel/seeking-the-south-texas-slam/",
+      "checked": "2026-11-11"
+    },
+    "texas-names": {
+      "title": "Out With the Old; I Hope — Texas Saltwater Fishing Magazine",
+      "url": "https://www.texassaltwaterfishingmagazine.com/fishing/editorial/out-with-old-i-hope",
+      "checked": "2026-11-11"
+    },
+    "gator-trout": {
+      "title": "Spotted Seatrout Fishery of the Gulf of Mexico — Gulf States Marine Fisheries Commission",
+      "url": "https://www.gsmfc.org/publications/gsmfc%20number%20087.pdf",
+      "checked": "2026-11-11"
+    },
+    "lowcountry-slam": {
+      "title": "Cast your way to an inshore slam in Charleston’s waters — Carolina Sportsman",
+      "url": "https://www.carolinasportsman.com/?p=112312",
+      "checked": "2026-11-11"
+    },
+    "lowcountry-names": {
+      "title": "Your Guide to Fishing on Hilton Head Island",
+      "url": "https://compass.hiltonheadisland.org/island-time/trending/your-guide-fishing-hilton-head-island",
+      "checked": "2026-11-11"
+    },
+    "lowcountry-tails": {
+      "title": "Lowcountry Floodtide — Captain Justin Remegi",
+      "url": "https://fishingbooker.com/reports/view/76689",
+      "checked": "2026-11-11"
+    },
+    "lowcountry-bulls": {
+      "title": "The Lowcountry: Part Two — Tail Fly Fishing Magazine",
+      "url": "https://www.tailflyfishing.com/lowcountry-part-two-species-seasons-selections/",
+      "checked": "2026-11-11"
+    },
+    "fwc-slams": {
+      "title": "Saltwater Grand Slams — Catch a Florida Memory",
+      "url": "https://catchafloridamemory.com/programs/grand-slam/",
+      "checked": "2026-11-11"
+    },
+    "keys-slams": {
+      "title": "Permit Tarpon Bonefish Snapper Grouper — Key West Angling",
+      "url": "https://www.keywestangling.com/fishing-reports/permit-tarpon-bonefish-snapper-grouper",
+      "checked": "2026-11-11"
+    },
+    "tarpon-name": {
+      "title": "Tarpon Facts — Florida Fish and Wildlife Conservation Commission",
+      "url": "https://myfwc.com/research/saltwater/tarpon/information/facts/",
+      "checked": "2026-11-11"
+    },
+    "midatlantic-names": {
+      "title": "Acronyms, Nicknames, Slang — Daybreak Fishing",
+      "url": "https://www.daybreakfishing.com/outdoors/acronyms-nicknames-slang/",
+      "checked": "2026-11-11"
+    },
+    "virginia-citation": {
+      "title": "Virginia Saltwater Angler’s Guide — Virginia Marine Resources Commission",
+      "url": "https://www.mrc.virginia.gov/vswft/Angler_Guide/angler_web.pdf",
+      "checked": "2026-11-11"
+    },
+    "montauk-bass": {
+      "title": "Think Small: This Fall — The Fisherman",
+      "url": "https://www.thefisherman.com/article/think-small-this-fall/",
+      "checked": "2026-11-11"
+    },
+    "rhode-island-blitz": {
+      "title": "Early Action: Peanut Bunker Explosion — The Fisherman",
+      "url": "https://www.thefisherman.com/article/early-action-peanut-bunker-explosion/",
+      "checked": "2026-11-11"
+    },
+    "lakes-slam": {
+      "title": "Great Lakes Grand Slam — Game & Fish",
+      "url": "https://www.gameandfishmag.com/editorial/fishing_salmon-steelhead-fishing_ra_0708_01/244447",
+      "checked": "2026-11-11"
+    },
+    "lakes-names": {
+      "title": "Fish species FAQs — Silver Addiction Charters",
+      "url": "https://www.silveraddictioncharters.com/faqs",
+      "checked": "2026-11-11"
+    },
+    "skamania": {
+      "title": "Skamania Mania on Lake Michigan — Game & Fish",
+      "url": "https://www.gameandfishmag.com/editorial/fishing_in_aa071803a/243284",
+      "checked": "2026-11-11"
+    },
+    "ice-slabs": {
+      "title": "7 Spots For Hardwater Slabs — Game & Fish",
+      "url": "https://www.gameandfishmag.com/editorial/fishing_icefishing-fishing_mn_1209_02/242206",
+      "checked": "2026-11-11"
+    },
+    "pike-hammer": {
+      "title": "Northern Pike — Mississippi National River and Recreation Area",
+      "url": "https://www.nps.gov/miss/learn/nature/northern-pike.htm",
+      "checked": "2026-11-11"
+    },
+    "ice-jumbo": {
+      "title": "Greg Clusiau Archived Fishing Reports for 2013",
+      "url": "https://www.jeffsundin.com/greg-clusiau-fishing-archive-2013.html",
+      "checked": "2026-11-11"
+    },
+    "hawg": {
+      "title": "The Complete AnyCreek Fishing Lingo Glossary",
+      "url": "https://anycreek.com/academy/complete-any-creek-fishing-lingo-glossary",
+      "checked": "2026-11-11"
+    },
+    "wdfw-blackmouth": {
+      "title": "Fishing in Washington: salmon identification — WDFW",
+      "url": "https://wdfw.wa.gov/sites/default/files/publications/02077/wdfw02077.pdf",
+      "checked": "2026-11-11"
+    },
+    "pnw-jack": {
+      "title": "Outdoors Report: First major saltwater salmon area to open — Seattle Post-Intelligencer",
+      "url": "https://www.seattlepi.com/news/article/outdoors-report-first-major-saltwater-salmon-1115788.php",
+      "checked": "2026-11-11"
+    },
+    "pnw-springer": {
+      "title": "Northwest Fishing: Clearwater River Springers",
+      "url": "https://northwestfishing.net/episodes",
+      "checked": "2026-11-11"
+    },
+    "tyee": {
+      "title": "Official Rules and Regulations — Tyee Club of British Columbia",
+      "url": "https://www.tyeeclub.org/regulations/",
+      "checked": "2026-11-11"
+    },
+    "alaska-slam": {
+      "title": "Fishing Alaska: The Five Species of Pacific Salmon — Angler’s Alibi",
+      "url": "https://www.anglersalibi.com/blog-alaska-fishing-lodge/fishing-alaska-the-five-species-of-pacific-salmon",
+      "checked": "2026-11-11"
+    },
+    "alaska-names": {
+      "title": "Sitka’s Salmon Grand Slam: Five Species, Five Recipes — Angling Unlimited",
+      "url": "https://anglingunlimited.com/2025/12/10/sitkas-salmon-grand-slam-five-species-five-recipes/",
+      "checked": "2026-11-11"
+    },
+    "socal-names": {
+      "title": "California Saltwater Fish Species Slang Names — Channel Islands Sportfishing",
+      "url": "https://www.channelislandssportfishing.com/california-saltwater-fish-species-slang-names/",
+      "checked": "2026-11-11"
+    },
+    "hawaii-grander": {
+      "title": "The Hawaii Granders — Hawaii Fishing News",
+      "url": "https://www.hawaiifishingnews.com/grander_Order-Weight.html",
+      "checked": "2026-11-11"
+    },
+    "hawaii-charter": {
+      "title": "Commonly Caught Fish — UFO Maui Inshore Fishing",
+      "url": "https://ufomauifishing.com/commonly-caught-fish/",
+      "checked": "2026-11-11"
+    },
+    "hawaii-dar": {
+      "title": "Marine Fish — Hawaii Division of Aquatic Resources",
+      "url": "https://dar.hawaii.gov/learn-explore/species/fish/marine-fish/",
+      "checked": "2026-11-11"
+    },
+    "hawaii-local": {
+      "title": "Local, common, and scientific names of fishes commonly caught in Hawaii waters — NOAA repository",
+      "url": "https://repository.library.noaa.gov/view/noaa/39981/noaa_39981_DS1.pdf",
+      "checked": "2026-11-11"
+    },
+    "baja-park": {
+      "title": "Programa de Manejo: Parque Nacional Zona Marina del Archipiélago de Espíritu Santo — CONANP",
+      "url": "https://simec.conanp.gob.mx/pdf_libro_pm/141_libro_pm.pdf",
+      "checked": "2026-11-11"
+    },
+    "baja-names": {
+      "title": "Calendario de Pesca 2025 — SEPESCA Baja California",
+      "url": "https://www.bajacalifornia.gob.mx/Documentos/Sepesca/doctos/Calendario_SEPESCA_2025.pdf",
+      "checked": "2026-11-11"
+    },
+    "belize-flats": {
+      "title": "The best flyfishing in Belize — Turneffe Atoll Sustainability Association",
+      "url": "https://visitturneffe.org/discover/the-best-flyfishing-in-belize-at-turneffe-atoll/",
+      "checked": "2026-11-11"
+    },
+    "yucatan-slam": {
+      "title": "Fly Fishing in Mexico: Permit, Bonefish, Tarpon — Klejch",
+      "url": "https://www.klejch.at/en/mexiko",
+      "checked": "2026-11-11"
+    },
+    "igfa-inshore-members": {
+      "title": "IGFA Club Members by Species: Inshore",
+      "url": "https://igfa.org/club-members-by-species/?ClubSpecies=INSHORE",
+      "checked": "2026-11-11"
+    },
+    "bahamas-ghost": {
+      "title": "SFTV Season 4: The Flats Phantom — Outdoor America",
+      "url": "https://www.outdooramerica.com/shows/sftv/season-4",
+      "checked": "2026-11-11"
+    },
+    "central-slam": {
+      "title": "Billfish Grand Slam Costa Rica: What It Takes and When to Try",
+      "url": "https://manuelantoniodeepseafishing.com/blog/billfish-grand-slam-costa-rica/",
+      "checked": "2026-11-11"
+    },
+    "central-calendar": {
+      "title": "Costa Rica Fishing Calendar — Central America Fishing",
+      "url": "https://www.centralamericafishing.com/costa-rica-fishing-calendar/",
+      "checked": "2026-11-11"
+    },
+    "panama-names": {
+      "title": "Decreto Ejecutivo No. 9: species names — Gaceta Oficial de Panamá",
+      "url": "https://www.gacetaoficial.gob.pa/storage/gacetas/2026/06/30543_E/103351.pdf",
+      "checked": "2026-11-11"
+    },
+    "amazon-peacocks": {
+      "title": "T.C. Fishing — MidCurrent Travel",
+      "url": "https://travel.midcurrent.com/lodge/t-c-fishing/",
+      "checked": "2026-11-11"
+    },
+    "amazon-local": {
+      "title": "Tucunaré-açu: ficha e dicas de pesca — Peixe do Brasil",
+      "url": "https://peixedobrasil.com.br/peixe/tucunare-acu",
+      "checked": "2026-11-11"
+    },
+    "amazon-pirarucu": {
+      "title": "Sight fly fishing for Peacock Bass — Agua Boa Amazon Lodge",
+      "url": "https://www.amazonbass.com/the-fishing.html",
+      "checked": "2026-11-11"
+    },
+    "argentina-dorado": {
+      "title": "Argentina Golden Dorado fly fishing — Outfitters Patagonia",
+      "url": "https://outfitterspatagonia.com/detalle.php?a=argentina-golden-dorado-fly-fishing%21&d=12&t=10",
+      "checked": "2026-11-11"
+    },
+    "irish-salmon": {
+      "title": "Atlantic salmon — Inland Fisheries Ireland",
+      "url": "https://www.fisheriesireland.ie/fish-species/atlantic-salmon-salmo-salar",
+      "checked": "2026-11-11"
+    },
+    "irish-kelt": {
+      "title": "Annual Report 2021: glossary — Inland Fisheries Ireland",
+      "url": "https://www.fisheriesireland.ie/sites/default/files/2023-09/ifi-ar2021-a4-310823-final5-download.pdf",
+      "checked": "2026-11-11"
+    },
+    "irish-specimen": {
+      "title": "Irish Specimen Fish Committee Annual Report 2025: 2026 thresholds",
+      "url": "https://fishinginireland.info/wp-content/uploads/2026/01/Irish-Specimen-Fish-Committee-Annual-Report-2025.pdf",
+      "checked": "2026-11-11"
+    },
+    "norway-size": {
+      "title": "Analysar av skjelprøvar frå Hordaland: salmon size groups — Rådgivende Biologer",
+      "url": "https://www.radgivende-biologer.no/wp-content/uploads/2024/01/3989.pdf",
+      "checked": "2026-11-11"
+    },
+    "norway-names": {
+      "title": "Laks — Norwegian Institute of Marine Research",
+      "url": "https://www.hi.no/hi/temasider/arter/laks",
+      "checked": "2026-11-11"
+    },
+    "denmark-trout": {
+      "title": "Havørredtyper — Havørred Fyn",
+      "url": "https://seatrout.dk/planlaegning/tips-og-laering/havoerredtyper/",
+      "checked": "2026-11-11"
+    },
+    "australia-names": {
+      "title": "Dictionary of Fishing Terms — Sydney Premium Charters",
+      "url": "https://www.sydneypremiumcharters.com.au/fishing-and-tackle-terminolgy/",
+      "checked": "2026-11-11"
+    },
+    "australia-jewie": {
+      "title": "Get the name right — Sportshounds",
+      "url": "https://sportshounds.com.au/2017/07/29/get-name-right/",
+      "checked": "2026-11-11"
+    },
+    "metre-barra": {
+      "title": "1 Metre Barra Club — Dhipirri Barra and Sportfishing Lodge",
+      "url": "https://dhipirribarra.com.au/category/the-metre-barra-club/",
+      "checked": "2026-11-11"
+    },
+    "nz-lingo": {
+      "title": "New Zealand English Journal, Volume 25: recreational fishing vocabulary",
+      "url": "https://www.wgtn.ac.nz/lals/resources/nzej/Vol-25.pdf",
+      "checked": "2026-11-11"
+    },
+    "nz-moocher": {
+      "title": "A Guide to Soft-Bait Fishing in the Far North — The Fishing Website",
+      "url": "https://www.fishing.net.nz/fishing-destinations/new-zealand/northland/a-guide-to-soft-bait-fishing-in-the-far-north/",
+      "checked": "2026-11-11"
+    },
+    "south-africa-lingo": {
+      "title": "South African Fishing Phrases, Words and Terms — Fish The Sea",
+      "url": "https://www.fishthesea.co.za/fishingphrases.htm",
+      "checked": "2026-11-11"
+    },
+    "south-africa-kob": {
+      "title": "Getting Hooked on Daga — Ski-Boat Magazine",
+      "url": "https://www.anglerpublications.co.za/fishing/2025/08/getting-hooked-on-daga/",
+      "checked": "2026-11-11"
+    },
+    "south-africa-official": {
+      "title": "Marine Recreational Activity Information Brochure — South African environmental department",
+      "url": "https://www.dffe.gov.za/sites/default/files/docs/publications/marinerecreationalactivity_informationbrochure2010to2011.pdf",
+      "checked": "2026-11-11"
+    },
+    "seychelles-slam": {
+      "title": "Alphonse Fishing Report — Ripp Sporting",
+      "url": "https://www.rippsporting.com/news/mtf8xwybbkf7etrtpa763566jm8txz",
+      "checked": "2026-11-11"
+    },
+    "seychelles-super": {
+      "title": "Alphonse Island 2025/26 fishing news — Aardvark McLeod",
+      "url": "https://www.aardvarkmcleod.com/2025-26-alphonse-island-fishing-news/",
+      "checked": "2026-11-11"
+    },
+    "seychelles-fish": {
+      "title": "Farquhar Fishing Fact Sheet — Alphonse Fishing Company",
+      "url": "https://alphonsefishingco.com/wp-content/uploads/2025/05/Farquhar-Fishing-Fact-Sheet.pdf",
+      "checked": "2026-11-11"
+    },
+    "japan-size": {
+      "title": "大きさで名前が違う出世魚などの魚たち — Honda Fishing Club",
+      "url": "https://www.honda.co.jp/fishing/news/news-20201006/",
+      "checked": "2026-11-11"
+    },
+    "japan-shusseuo": {
+      "title": "出世魚 — Digital Daijisen and Nipponica, Kotobank",
+      "url": "https://kotobank.jp/word/%E5%87%BA%E4%B8%96%E9%AD%9A-528960",
+      "checked": "2026-11-11"
+    },
+    "malaysia-fish": {
+      "title": "Aquatic Life — Belum Temengor",
+      "url": "https://belum.com.my/aquatic-life/",
+      "checked": "2026-11-11"
+    },
+    "malaysia-haruan": {
+      "title": "Klasifikasi perangkaan piawaian ikan-ikan air tawar Sabah — Sabah Fisheries Department",
+      "url": "https://fishdept.sabah.gov.my/wp-content/uploads/2023/08/Klasifikasi-perangkaan-piawaian-ikan.pdf",
+      "checked": "2026-11-11"
+    },
+    "mississippi-slam": {
+      "title": "MS Outdoors TV: Mississippi Gulf Coast Inshore Slam — MDWFP",
+      "url": "https://www.mdwfp.com/news/ms-outdoors-tv-can-we-catch-all-3-mississippi-gulf-coast-inshore-slam",
+      "checked": "2026-11-11"
+    },
+    "doormat": {
+      "title": "10 Reasons You Haven’t Caught a Doormat Fluke — On The Water",
+      "url": "https://onthewater.com/10-reasons-you-havent-caught-a-10-pound-doormat-fluke",
+      "checked": "2026-11-11"
+    },
+    "welsh-sewin": {
+      "title": "Wales Rod and Line Byelaws: sea trout terminology — Natural Resources Wales",
+      "url": "https://cdn.naturalresources.wales/690926/fisheries-byelaws-confirmation-statement-wales-rod-line-eng.pdf",
+      "checked": "2026-11-11"
+    },
+    "hawaii-jack-size": {
+      "title": "Wai‘anae Baseline Environmental Study: ulua and papio — Hawaii DLNR",
+      "url": "https://files.hawaii.gov/dlnr/reports-to-the-legislature/2009/bd/BD09-WaianaeBaselineEnvironmentalStudyFeb09.pdf",
+      "checked": "2026-11-11"
+    }
+  },
+  "regions": [
+    {
+      "id": "gulf-coast",
+      "name": "US Gulf Coast and Louisiana",
+      "intro": "A speck means a seatrout along the coast. Head into Louisiana’s freshwater, and names such as sac-à-lait and gaspergou take over.",
+      "terms": [
+        {
+          "term": "Bar fish",
+          "meaning": "A Louisiana name for white bass.",
+          "species": [
+            "White bass"
+          ],
+          "sources": [
+            "louisiana-names"
+          ],
+          "example": "That’s a bar fish in the net."
+        },
+        {
+          "term": "Blackfish",
+          "meaning": "An Alabama coastal name for tripletail.",
+          "species": [
+            "Tripletail"
+          ],
+          "sources": [
+            "gulf-fish"
+          ],
+          "example": "Around here, that tripletail is a blackfish."
+        },
+        {
+          "term": "Choupique",
+          "meaning": "The Louisiana name for bowfin, also called grinnel.",
+          "species": [
+            "Bowfin"
+          ],
+          "sources": [
+            "louisiana-names"
+          ],
+          "example": "That choupique put a bend in the rod."
+        },
+        {
+          "term": "Gaspergou",
+          "meaning": "The Louisiana name for freshwater drum.",
+          "species": [
+            "Freshwater drum"
+          ],
+          "sources": [
+            "louisiana-names"
+          ],
+          "example": "That’s a gaspergou, not a redfish."
+        },
+        {
+          "term": "Inshore slam",
+          "meaning": "A redfish, speckled trout, and flounder caught in the same day, as used by Mississippi Gulf Coast anglers.",
+          "species": [
+            "Red drum",
+            "Spotted seatrout",
+            "Flounder"
+          ],
+          "sources": [
+            "mississippi-slam",
+            "lowcountry-slam"
+          ],
+          "also_in": [
+            "lowcountry"
+          ],
+          "alternate_anchors": [
+            "lowcountry-inshore-slam"
+          ],
+          "regional_notes": [
+            {
+              "region": "lowcountry",
+              "meaning": "A redfish, speckled trout, and flounder caught during the same day."
+            }
+          ],
+          "example": "We have the redfish and trout. One flounder would finish the slam."
+        },
+        {
+          "term": "Lemon fish / ling",
+          "meaning": "Gulf Coast names for cobia.",
+          "species": [
+            "Cobia"
+          ],
+          "sources": [
+            "louisiana-names"
+          ],
+          "example": "Keep an eye out for a lemon fish beside the boat."
+        },
+        {
+          "term": "Sac-à-lait",
+          "meaning": "The Louisiana name for crappie, including both black and white crappie.",
+          "species": [
+            "Black crappie",
+            "White crappie"
+          ],
+          "sources": [
+            "louisiana-names"
+          ],
+          "example": "We found a few sac-à-lait around the brush."
+        },
+        {
+          "term": "Speckled trout",
+          "meaning": "The local name for spotted seatrout, a saltwater drum.",
+          "species": [
+            "Spotted seatrout"
+          ],
+          "sources": [
+            "louisiana-names"
+          ],
+          "example": "That silver fish with the spots is a speckled trout."
+        },
+        {
+          "term": "White trout",
+          "meaning": "On the Alabama coast, this name covers sand seatrout and silver seatrout.",
+          "species": [
+            "Sand seatrout",
+            "Silver seatrout"
+          ],
+          "sources": [
+            "gulf-fish"
+          ],
+          "example": "We picked up a few white trout near the channel."
+        }
+      ],
+      "continent": "North America"
+    },
+    {
+      "id": "texas",
+      "name": "Texas Gulf Coast",
+      "intro": "The usual Texas slam has a red, a trout, and a flounder. Down near South Padre, snook changes the game.",
+      "terms": [
+        {
+          "term": "Bull red",
+          "meaning": "A big adult redfish. Anglers use bull for large females as well as males.",
+          "species": [
+            "Red drum"
+          ],
+          "sources": [
+            "texas-names"
+          ],
+          "example": "That’s a bull red. Give it a little room to run."
+        },
+        {
+          "term": "Gator trout / sow trout",
+          "meaning": "A large spotted seatrout, usually an older female.",
+          "species": [
+            "Spotted seatrout"
+          ],
+          "sources": [
+            "gator-trout"
+          ],
+          "example": "That’s a gator trout. Bring the net."
+        },
+        {
+          "term": "Slot fish",
+          "meaning": "A fish within the length range that the local harvest slot allows. The range depends on the species and rules.",
+          "species": [],
+          "sources": [
+            "midatlantic-names",
+            "texas-slam"
+          ],
+          "example": "Check the current size rules before you call it a slot fish."
+        },
+        {
+          "term": "South Texas grand slam",
+          "meaning": "The South Texas slam plus a tarpon in the same day.",
+          "species": [
+            "Red drum",
+            "Spotted seatrout",
+            "Common snook",
+            "Atlantic tarpon"
+          ],
+          "sources": [
+            "texas-slam"
+          ],
+          "example": "Now a tarpon would finish the South Texas grand slam."
+        },
+        {
+          "term": "South Texas slam",
+          "meaning": "A redfish, spotted seatrout, and snook caught in one day; this local version replaces the flounder with snook.",
+          "species": [
+            "Red drum",
+            "Spotted seatrout",
+            "Common snook"
+          ],
+          "sources": [
+            "texas-slam"
+          ],
+          "example": "That snook gives us a South Texas slam."
+        },
+        {
+          "term": "Speck",
+          "meaning": "Short for spotted seatrout, also called speckled trout.",
+          "species": [
+            "Spotted seatrout"
+          ],
+          "sources": [
+            "texas-names"
+          ],
+          "example": "There are specks over that grass bed."
+        },
+        {
+          "term": "Texas slam",
+          "meaning": "The traditional one-day combination of redfish, spotted seatrout, and southern flounder.",
+          "species": [
+            "Red drum",
+            "Spotted seatrout",
+            "Southern flounder"
+          ],
+          "sources": [
+            "texas-slam"
+          ],
+          "example": "A red, a trout, and a flounder. That’s our Texas slam."
+        }
+      ],
+      "continent": "North America"
+    },
+    {
+      "id": "lowcountry",
+      "name": "Carolina and Georgia Lowcountry",
+      "intro": "A spottail is a redfish here. On a high tide, its tail can show you where it feeds in the grass.",
+      "terms": [
+        {
+          "term": "Bull redfish",
+          "meaning": "A large adult redfish; Lowcountry anglers also target these fish around offshore reefs and ledges.",
+          "species": [
+            "Red drum"
+          ],
+          "sources": [
+            "lowcountry-bulls"
+          ],
+          "example": "We’re after bull redfish around the ledges today."
+        },
+        {
+          "term": "Flood-tide redfish",
+          "meaning": "Redfish that move onto normally dry marsh flats during unusually high tides to feed, often on fiddler crabs.",
+          "species": [
+            "Red drum"
+          ],
+          "sources": [
+            "lowcountry-tails"
+          ],
+          "example": "This is the kind of tide we wait for to find flood-tide redfish."
+        },
+        {
+          "term": "Spottail bass",
+          "meaning": "A local name for red drum, also called redfish.",
+          "species": [
+            "Red drum"
+          ],
+          "sources": [
+            "lowcountry-names"
+          ],
+          "example": "Look for spottail bass along that grass edge."
+        },
+        {
+          "term": "Tailing",
+          "meaning": "A redfish feeds head-down in shallow water with its tail above the surface.",
+          "example": "There’s a red tailing beside that grass.",
+          "species": [
+            "Red drum"
+          ],
+          "sources": [
+            "lowcountry-tails"
+          ]
+        }
+      ],
+      "continent": "North America"
+    },
+    {
+      "id": "florida",
+      "name": "Florida mainland",
+      "intro": "Florida has several named slams, each with its own fish list. The FWC award program gives one angler 24 hours.",
+      "terms": [
+        {
+          "term": "Bay and estuary grand slam",
+          "meaning": "The FWC award requires bluefish, Spanish mackerel, and ladyfish within 24 hours.",
+          "species": [
+            "Bluefish",
+            "Spanish mackerel",
+            "Ladyfish"
+          ],
+          "sources": [
+            "fwc-slams"
+          ],
+          "example": "We still need a ladyfish for the bay and estuary slam."
+        },
+        {
+          "term": "Blue water grand slam",
+          "meaning": "The FWC award requires dolphinfish, sailfish, and wahoo within 24 hours.",
+          "species": [
+            "Dolphinfish",
+            "Atlantic sailfish",
+            "Wahoo"
+          ],
+          "sources": [
+            "fwc-slams"
+          ],
+          "example": "Dolphinfish, sailfish, wahoo. That’s the blue water set."
+        },
+        {
+          "term": "Hawg",
+          "meaning": "A big, heavy fish, especially a bass. It is praise for the catch, with no single size threshold.",
+          "species": [
+            "Largemouth bass"
+          ],
+          "sources": [
+            "hawg"
+          ],
+          "example": "Now that’s a hawg of a bass."
+        },
+        {
+          "term": "Inshore grand slam",
+          "meaning": "The FWC award requires red drum and spotted seatrout, plus either flounder or snook, within 24 hours.",
+          "species": [
+            "Red drum",
+            "Spotted seatrout",
+            "Flounder",
+            "Snook"
+          ],
+          "sources": [
+            "fwc-slams"
+          ],
+          "example": "We have the red and trout. A snook could complete this slam."
+        },
+        {
+          "term": "Nearshore grand slam",
+          "meaning": "The FWC award requires cobia, great barracuda, and king mackerel within 24 hours.",
+          "species": [
+            "Cobia",
+            "Great barracuda",
+            "King mackerel"
+          ],
+          "sources": [
+            "fwc-slams"
+          ],
+          "example": "That king mackerel completes our nearshore set."
+        },
+        {
+          "term": "Shoreline grand slam",
+          "meaning": "The FWC award requires sheepshead, Florida pompano, and a whiting within 24 hours.",
+          "species": [
+            "Sheepshead",
+            "Florida pompano",
+            "Northern kingfish",
+            "Southern kingfish",
+            "Gulf kingfish"
+          ],
+          "sources": [
+            "fwc-slams"
+          ],
+          "example": "A whiting is the last fish on our shoreline list."
+        }
+      ],
+      "continent": "North America"
+    },
+    {
+      "id": "florida-keys",
+      "name": "Florida Keys",
+      "intro": "The Keys grand slam means bonefish, permit, and tarpon. A snook turns that day into a super grand slam.",
+      "terms": [
+        {
+          "term": "Grand slam",
+          "meaning": "A bonefish, permit, and tarpon caught in the same day.",
+          "species": [
+            "Atlantic bonefish",
+            "Permit",
+            "Atlantic tarpon"
+          ],
+          "sources": [
+            "keys-slams",
+            "yucatan-slam",
+            "igfa-inshore-members"
+          ],
+          "also_in": [
+            "caribbean-flats"
+          ],
+          "alternate_anchors": [
+            "caribbean-flats-grand-slam"
+          ],
+          "regional_notes": [
+            {
+              "region": "caribbean-flats",
+              "meaning": "A bonefish, permit, and tarpon caught in one day; this is the classic Yucatán and Belize flats combination."
+            }
+          ],
+          "example": "Bonefish, permit, tarpon. What a day on the flats."
+        },
+        {
+          "term": "Silver king",
+          "meaning": "The familiar nickname for tarpon, from its silver scales and impressive size.",
+          "species": [
+            "Atlantic tarpon"
+          ],
+          "sources": [
+            "tarpon-name"
+          ],
+          "example": "A silver king just rolled off the bow."
+        },
+        {
+          "term": "Super grand slam",
+          "meaning": "A bonefish, permit, tarpon, and snook caught in the same day.",
+          "species": [
+            "Atlantic bonefish",
+            "Permit",
+            "Atlantic tarpon",
+            "Common snook"
+          ],
+          "sources": [
+            "keys-slams",
+            "yucatan-slam",
+            "igfa-inshore-members"
+          ],
+          "also_in": [
+            "caribbean-flats"
+          ],
+          "alternate_anchors": [
+            "caribbean-flats-super-grand-slam"
+          ],
+          "regional_notes": [
+            {
+              "region": "caribbean-flats",
+              "meaning": "A bonefish, permit, tarpon, and snook caught in one day. IGFA lists this combination from Mexico, Belize, and Cuba."
+            }
+          ],
+          "example": "Add a snook and we have the super grand slam."
+        }
+      ],
+      "continent": "North America"
+    },
+    {
+      "id": "chesapeake-midatlantic",
+      "name": "Chesapeake Bay and Mid-Atlantic",
+      "intro": "Rockfish means striped bass on the Chesapeake. A citation is an award for a qualifying catch, rather than just a big-fish compliment.",
+      "terms": [
+        {
+          "term": "Chopper",
+          "meaning": "A large bluefish.",
+          "species": [
+            "Bluefish"
+          ],
+          "sources": [
+            "midatlantic-names"
+          ],
+          "example": "A chopper just tore through that bait."
+        },
+        {
+          "term": "Citation",
+          "meaning": "A Virginia Saltwater Fishing Tournament award for a fish that meets the species’ weight or release requirements.",
+          "species": [],
+          "sources": [
+            "virginia-citation"
+          ],
+          "example": "That catch might qualify for a citation."
+        },
+        {
+          "term": "Gaffer",
+          "meaning": "A large dolphinfish.",
+          "species": [
+            "Dolphinfish"
+          ],
+          "sources": [
+            "midatlantic-names"
+          ],
+          "example": "We found a gaffer under the weed line."
+        },
+        {
+          "term": "Puppy drum",
+          "meaning": "A juvenile drum; the name can mean a young red drum or black drum.",
+          "species": [
+            "Red drum",
+            "Black drum"
+          ],
+          "sources": [
+            "midatlantic-names"
+          ],
+          "example": "There are puppy drum in the creek."
+        },
+        {
+          "term": "Rockfish / rock",
+          "meaning": "The local name for striped bass.",
+          "species": [
+            "Striped bass"
+          ],
+          "sources": [
+            "midatlantic-names"
+          ],
+          "example": "We’re after rockfish on the Chesapeake."
+        },
+        {
+          "term": "Weakie",
+          "meaning": "Short for weakfish, also called gray seatrout.",
+          "species": [
+            "Weakfish"
+          ],
+          "sources": [
+            "midatlantic-names"
+          ],
+          "example": "That’s a nice weakie."
+        }
+      ],
+      "continent": "North America"
+    },
+    {
+      "id": "new-england-montauk",
+      "name": "New England and Montauk",
+      "intro": "A schoolie and a cow are both striped bass, but very different catches. A blitz can put either one within a cast.",
+      "terms": [
+        {
+          "term": "Blackback",
+          "meaning": "A local name for winter flounder.",
+          "species": [
+            "Winter flounder"
+          ],
+          "sources": [
+            "midatlantic-names"
+          ],
+          "example": "We used to catch blackbacks in this bay."
+        },
+        {
+          "term": "Blitz",
+          "meaning": "A burst of surface action as predators attack baitfish, often with birds above them.",
+          "example": "There’s a blitz just beyond the rocks.",
+          "species": [
+            "Striped bass",
+            "Bluefish"
+          ],
+          "sources": [
+            "rhode-island-blitz"
+          ]
+        },
+        {
+          "term": "Cow",
+          "meaning": "A large striped bass.",
+          "species": [
+            "Striped bass"
+          ],
+          "sources": [
+            "montauk-bass"
+          ],
+          "example": "That’s no schoolie. That’s a cow."
+        },
+        {
+          "term": "Doormat",
+          "meaning": "A very large summer flounder. On The Water uses 10 pounds or more for its doormat target.",
+          "species": [
+            "Summer flounder"
+          ],
+          "sources": [
+            "doormat"
+          ],
+          "example": "That fluke is the doormat we came for."
+        },
+        {
+          "term": "Fluke",
+          "meaning": "The local name for summer flounder.",
+          "species": [
+            "Summer flounder"
+          ],
+          "sources": [
+            "midatlantic-names"
+          ],
+          "example": "That fluke took the bait on the drift."
+        },
+        {
+          "term": "Peanut bunker",
+          "meaning": "Young Atlantic menhaden, a small baitfish that can draw striped bass into a surface frenzy.",
+          "species": [
+            "Atlantic menhaden"
+          ],
+          "sources": [
+            "rhode-island-blitz"
+          ],
+          "example": "The peanut bunker are packed against the beach."
+        },
+        {
+          "term": "Schoolie",
+          "meaning": "A small striped bass, often part of a school.",
+          "species": [
+            "Striped bass"
+          ],
+          "sources": [
+            "montauk-bass"
+          ],
+          "example": "A schoolie hit right beside the rocks."
+        },
+        {
+          "term": "Tog / blackfish",
+          "meaning": "Two everyday names for tautog.",
+          "species": [
+            "Tautog"
+          ],
+          "sources": [
+            "midatlantic-names"
+          ],
+          "example": "We’re after tog around the rocks."
+        }
+      ],
+      "continent": "North America"
+    },
+    {
+      "id": "great-lakes",
+      "name": "Great Lakes",
+      "intro": "Great Lakes crews talk about kings, lakers, and steelhead. Lake Michigan’s grand slam brings five salmon and trout species into one outing.",
+      "terms": [
+        {
+          "term": "Brown",
+          "meaning": "Short for brown trout.",
+          "species": [
+            "Brown trout"
+          ],
+          "sources": [
+            "lakes-names"
+          ],
+          "example": "There’s a good brown under that bank."
+        },
+        {
+          "term": "Great Lakes grand slam",
+          "meaning": "The Lake Michigan version requires Chinook, coho, lake trout, brown trout, and steelhead in one outing on the same day.",
+          "species": [
+            "Chinook salmon",
+            "Coho salmon",
+            "Lake trout",
+            "Brown trout",
+            "Rainbow trout"
+          ],
+          "sources": [
+            "lakes-slam"
+          ],
+          "example": "One more species would finish our Great Lakes grand slam."
+        },
+        {
+          "term": "King",
+          "meaning": "A Chinook salmon.",
+          "species": [
+            "Chinook salmon"
+          ],
+          "sources": [
+            "lakes-names",
+            "alaska-names"
+          ],
+          "also_in": [
+            "alaska"
+          ],
+          "alternate_anchors": [
+            "alaska-king"
+          ],
+          "regional_notes": [
+            {
+              "region": "alaska",
+              "meaning": "A Chinook salmon."
+            }
+          ],
+          "example": "The next bite could be a king."
+        },
+        {
+          "term": "Laker",
+          "meaning": "A lake trout.",
+          "species": [
+            "Lake trout"
+          ],
+          "sources": [
+            "lakes-names"
+          ],
+          "example": "That deep bite feels like a laker."
+        },
+        {
+          "term": "Skamania",
+          "meaning": "A summer-run strain of steelhead that supports the midsummer Lake Michigan tributary fishery.",
+          "species": [
+            "Rainbow trout"
+          ],
+          "sources": [
+            "skamania"
+          ],
+          "example": "The summer fish we’re after are Skamania."
+        },
+        {
+          "term": "Steelhead",
+          "meaning": "The Great Lakes name for a lake-run rainbow trout that enters tributaries.",
+          "species": [
+            "Rainbow trout"
+          ],
+          "sources": [
+            "lakes-names",
+            "skamania"
+          ],
+          "example": "A steelhead just ran up that riffle."
+        }
+      ],
+      "continent": "North America"
+    },
+    {
+      "id": "upper-midwest-ice",
+      "name": "Upper Midwest and ice country",
+      "intro": "On the ice, a slab means a good crappie. A hammer handle is the small pike that gets there first.",
+      "terms": [
+        {
+          "term": "Hammer handle",
+          "meaning": "A small, slender northern pike, including a young fish or one with slow growth.",
+          "species": [
+            "Northern pike"
+          ],
+          "sources": [
+            "pike-hammer"
+          ],
+          "example": "A hammer handle beat the bigger pike to it."
+        },
+        {
+          "term": "Hardwater",
+          "meaning": "Ice-covered water; a hardwater trip means a trip to fish through the ice.",
+          "species": [],
+          "sources": [
+            "ice-slabs"
+          ],
+          "example": "It’s our first hardwater trip of the season."
+        },
+        {
+          "term": "Jumbo perch",
+          "meaning": "A large yellow perch.",
+          "species": [
+            "Yellow perch"
+          ],
+          "sources": [
+            "ice-jumbo"
+          ],
+          "example": "We found a few jumbo perch today."
+        },
+        {
+          "term": "Slab",
+          "meaning": "A large crappie.",
+          "species": [
+            "Black crappie",
+            "White crappie"
+          ],
+          "sources": [
+            "ice-slabs"
+          ],
+          "example": "That’s a slab. Look at the size of that crappie."
+        }
+      ],
+      "continent": "North America"
+    },
+    {
+      "id": "pacific-northwest",
+      "name": "Pacific Northwest and coastal British Columbia",
+      "intro": "The salmon names often tell you when a fish returns or how big it is. In British Columbia, a tyee starts at 30 pounds.",
+      "terms": [
+        {
+          "term": "Blackmouth",
+          "meaning": "An immature Chinook salmon; this is a familiar name in Puget Sound fisheries.",
+          "species": [
+            "Chinook salmon"
+          ],
+          "sources": [
+            "wdfw-blackmouth"
+          ],
+          "example": "We’re after blackmouth in the Sound."
+        },
+        {
+          "term": "Jack",
+          "meaning": "A male Chinook salmon that returns to spawn a year earlier than most adults.",
+          "species": [
+            "Chinook salmon"
+          ],
+          "sources": [
+            "pnw-jack"
+          ],
+          "example": "That small male Chinook is a jack."
+        },
+        {
+          "term": "Springer",
+          "meaning": "A spring-run Chinook salmon.",
+          "species": [
+            "Chinook salmon"
+          ],
+          "sources": [
+            "pnw-springer"
+          ],
+          "example": "We’re hoping for a springer on this river."
+        },
+        {
+          "term": "Tyee",
+          "meaning": "A Chinook salmon of at least 30 pounds. Tyee Club recognition also requires the club’s tackle, location, and catch rules.",
+          "species": [
+            "Chinook salmon"
+          ],
+          "sources": [
+            "tyee"
+          ],
+          "example": "That Chinook might make the thirty-pound mark for a tyee."
+        }
+      ],
+      "continent": "North America"
+    },
+    {
+      "id": "alaska",
+      "name": "Alaska",
+      "intro": "Kings, reds, silvers, dogs, and humpies are Alaska’s five Pacific salmon targets. Lodge anglers call the complete set a salmon grand slam.",
+      "terms": [
+        {
+          "term": "Calico",
+          "meaning": "Another local name for chum salmon.",
+          "species": [
+            "Chum salmon"
+          ],
+          "sources": [
+            "alaska-slam"
+          ],
+          "example": "Here in Alaska, calico means chum salmon."
+        },
+        {
+          "term": "Dog salmon",
+          "meaning": "A chum salmon.",
+          "species": [
+            "Chum salmon"
+          ],
+          "sources": [
+            "alaska-names"
+          ],
+          "example": "That’s a dog salmon in its spawning colors."
+        },
+        {
+          "term": "Humpy",
+          "meaning": "A pink salmon.",
+          "species": [
+            "Pink salmon"
+          ],
+          "sources": [
+            "alaska-names"
+          ],
+          "example": "Look at the hump on that humpy."
+        },
+        {
+          "term": "Pacific salmon grand slam",
+          "meaning": "All five Alaska Pacific salmon species on one trip. The Alagnak lodge usage allows a week.",
+          "species": [
+            "Chinook salmon",
+            "Sockeye salmon",
+            "Coho salmon",
+            "Chum salmon",
+            "Pink salmon"
+          ],
+          "sources": [
+            "alaska-slam"
+          ],
+          "example": "Five salmon species in one trip. That’s the Alaska set."
+        },
+        {
+          "term": "Red",
+          "meaning": "A sockeye salmon.",
+          "species": [
+            "Sockeye salmon"
+          ],
+          "sources": [
+            "alaska-names"
+          ],
+          "example": "The reds are in the river."
+        },
+        {
+          "term": "Salmon royal slam",
+          "meaning": "The IGFA lifetime award requires one angler to catch Atlantic, Chinook, sockeye, chum, pink, and coho salmon under IGFA rules.",
+          "species": [
+            "Atlantic salmon",
+            "Chinook salmon",
+            "Sockeye salmon",
+            "Chum salmon",
+            "Pink salmon",
+            "Coho salmon"
+          ],
+          "sources": [
+            "igfa-royal"
+          ],
+          "example": "Atlantic salmon is still on my royal slam list."
+        },
+        {
+          "term": "Silver",
+          "meaning": "A coho salmon.",
+          "species": [
+            "Coho salmon"
+          ],
+          "sources": [
+            "alaska-names"
+          ],
+          "example": "That silver just jumped clear of the water."
+        }
+      ],
+      "continent": "North America"
+    },
+    {
+      "id": "california-socal",
+      "name": "California and Southern California boats",
+      "intro": "Southern California deck talk gives familiar fish some lively names. A goat, a ghost, and a checkerboard are three different catches.",
+      "terms": [
+        {
+          "term": "Calico / checkerboard",
+          "meaning": "A kelp bass.",
+          "species": [
+            "Kelp bass"
+          ],
+          "sources": [
+            "socal-names"
+          ],
+          "example": "The calicos are right against the kelp."
+        },
+        {
+          "term": "Goat",
+          "meaning": "A California sheephead.",
+          "species": [
+            "California sheephead"
+          ],
+          "sources": [
+            "socal-names"
+          ],
+          "example": "That red-and-black fish is a goat."
+        },
+        {
+          "term": "Grey ghost / biscuit",
+          "meaning": "Nicknames for white seabass.",
+          "species": [
+            "White seabass"
+          ],
+          "sources": [
+            "socal-names"
+          ],
+          "example": "A grey ghost finally showed up beside the kelp."
+        },
+        {
+          "term": "Ling / gator",
+          "meaning": "Local names for lingcod.",
+          "species": [
+            "Lingcod"
+          ],
+          "sources": [
+            "socal-names"
+          ],
+          "example": "That ling came up from the rocks."
+        },
+        {
+          "term": "Log",
+          "meaning": "A Pacific barracuda.",
+          "species": [
+            "Pacific barracuda"
+          ],
+          "sources": [
+            "socal-names"
+          ],
+          "example": "That’s a log of a barracuda."
+        },
+        {
+          "term": "Mossback / home guard",
+          "meaning": "Local names for California yellowtail.",
+          "species": [
+            "California yellowtail"
+          ],
+          "sources": [
+            "socal-names"
+          ],
+          "example": "That mossback knows every bit of this reef."
+        },
+        {
+          "term": "Reds",
+          "meaning": "On these boats, a name for vermilion rockfish.",
+          "species": [
+            "Vermilion rockfish"
+          ],
+          "sources": [
+            "socal-names"
+          ],
+          "example": "We found some reds over the deep reef."
+        },
+        {
+          "term": "Salmon grouper",
+          "meaning": "The local boat name for bocaccio, which is a rockfish.",
+          "species": [
+            "Bocaccio"
+          ],
+          "sources": [
+            "socal-names"
+          ],
+          "example": "The deckhand called that rockfish a salmon grouper."
+        }
+      ],
+      "continent": "North America"
+    },
+    {
+      "id": "mexico-baja",
+      "name": "Mexico and Baja California",
+      "intro": "A Baja captain may call out dorado or pez gallo. Those mean dolphinfish and roosterfish, two very different fights.",
+      "terms": [
+        {
+          "term": "Baya",
+          "meaning": "A Baja name for Gulf grouper.",
+          "species": [
+            "Gulf grouper"
+          ],
+          "sources": [
+            "baja-names"
+          ],
+          "example": "A baya just took the bait."
+        },
+        {
+          "term": "Cabrilla sardinera",
+          "meaning": "The local name for leopard grouper.",
+          "species": [
+            "Leopard grouper"
+          ],
+          "sources": [
+            "baja-park"
+          ],
+          "example": "That cabrilla sardinera came from the reef."
+        },
+        {
+          "term": "Dorado",
+          "meaning": "The local name for dolphinfish, also called mahi-mahi.",
+          "species": [
+            "Dolphinfish"
+          ],
+          "sources": [
+            "baja-names",
+            "panama-names"
+          ],
+          "also_in": [
+            "central-america"
+          ],
+          "alternate_anchors": [
+            "central-america-dorado"
+          ],
+          "regional_notes": [
+            {
+              "region": "central-america",
+              "meaning": "The Spanish name for dolphinfish in Panama’s sport-fish list."
+            }
+          ],
+          "example": "Dorado under the floating log!"
+        },
+        {
+          "term": "Jurel",
+          "meaning": "A La Paz name for yellowtail jack.",
+          "species": [
+            "California yellowtail"
+          ],
+          "sources": [
+            "baja-park"
+          ],
+          "example": "The jurel are down near the rocks."
+        },
+        {
+          "term": "Pargo liso",
+          "meaning": "The local name for mullet snapper.",
+          "species": [
+            "Mullet snapper"
+          ],
+          "sources": [
+            "baja-park"
+          ],
+          "example": "That’s a pargo liso in the net."
+        },
+        {
+          "term": "Pez gallo",
+          "meaning": "The Spanish name for roosterfish.",
+          "species": [
+            "Roosterfish"
+          ],
+          "sources": [
+            "baja-names"
+          ],
+          "example": "We’re hoping for a pez gallo along the beach."
+        }
+      ],
+      "continent": "Latin America & Caribbean"
+    },
+    {
+      "id": "caribbean-flats",
+      "name": "Caribbean, Bahamas, Belize, and Yucatán flats",
+      "intro": "The classic flats slam follows bonefish, permit, and tarpon across this region. The grey ghost is the bonefish you keep trying to see.",
+      "terms": [
+        {
+          "term": "Baby tarpon",
+          "meaning": "A young tarpon, smaller than the large migratory fish that visit the bays.",
+          "species": [
+            "Atlantic tarpon"
+          ],
+          "sources": [
+            "yucatan-slam"
+          ],
+          "example": "We found baby tarpon tucked into the mangroves."
+        },
+        {
+          "term": "Grey ghost",
+          "meaning": "A nickname for bonefish in Belize and the Bahamas, where its camouflage makes it hard to spot.",
+          "species": [
+            "Atlantic bonefish"
+          ],
+          "sources": [
+            "belize-flats",
+            "bahamas-ghost"
+          ],
+          "example": "That grey ghost is nearly invisible over the sand."
+        }
+      ],
+      "continent": "Latin America & Caribbean"
+    },
+    {
+      "id": "central-america",
+      "name": "Central America’s Pacific coast",
+      "intro": "A sailfish and one marlin give you two billfish species. A grand slam needs a third species that same day.",
+      "terms": [
+        {
+          "term": "Gallo",
+          "meaning": "A Panama name for roosterfish, also called pez gallo.",
+          "species": [
+            "Roosterfish"
+          ],
+          "sources": [
+            "panama-names"
+          ],
+          "example": "There’s a gallo behind the bait."
+        },
+        {
+          "term": "Jurel del Pacífico",
+          "meaning": "A Panama name for Pacific crevalle jack.",
+          "species": [
+            "Pacific crevalle jack"
+          ],
+          "sources": [
+            "panama-names"
+          ],
+          "example": "That jurel del Pacífico put up a fight."
+        }
+      ],
+      "continent": "Latin America & Caribbean"
+    },
+    {
+      "id": "south-america",
+      "name": "South America: Amazon, Argentina, and offshore waters",
+      "intro": "The Amazon has peacock names of its own. Farther south, the golden dorado earns the name tiger of the rivers.",
+      "terms": [
+        {
+          "term": "Borboleta / butterfly",
+          "meaning": "The local name for Cichla orinocensis, the butterfly or Orinoco peacock bass.",
+          "species": [
+            "Orinoco peacock bass"
+          ],
+          "sources": [
+            "amazon-peacocks"
+          ],
+          "example": "That one is a borboleta."
+        },
+        {
+          "term": "Paca / three-bar",
+          "meaning": "Two local names for Cichla temensis peacock bass.",
+          "species": [
+            "Speckled peacock bass"
+          ],
+          "sources": [
+            "amazon-peacocks"
+          ],
+          "example": "The guide called that peacock a paca."
+        },
+        {
+          "term": "Pirarucu",
+          "meaning": "The Amazon name for arapaima, a huge freshwater fish that anglers also pursue with flies.",
+          "species": [
+            "Arapaima"
+          ],
+          "sources": [
+            "amazon-pirarucu"
+          ],
+          "example": "A pirarucu just came up for air."
+        },
+        {
+          "term": "Popoca",
+          "meaning": "A local name for Cichla monoculus peacock bass.",
+          "species": [
+            "Monoculus peacock bass"
+          ],
+          "sources": [
+            "amazon-peacocks"
+          ],
+          "example": "We caught a popoca near the flooded trees."
+        },
+        {
+          "term": "South American royal slam",
+          "meaning": "The IGFA lifetime set: arawana, dorado, payara, peacock bass, redtail catfish, sorubim, and trahira. One angler must catch the set under IGFA rules.",
+          "species": [
+            "Arowana",
+            "Golden dorado",
+            "Payara",
+            "Peacock bass",
+            "Redtail catfish",
+            "Sorubim",
+            "Trahira"
+          ],
+          "sources": [
+            "igfa-royal"
+          ],
+          "example": "Payara is next on my South American royal slam list."
+        },
+        {
+          "term": "Tigre de los ríos",
+          "meaning": "Tiger of the rivers: an Argentine nickname for golden dorado.",
+          "species": [
+            "Golden dorado"
+          ],
+          "sources": [
+            "argentina-dorado"
+          ],
+          "example": "They call the golden dorado the tigre de los ríos."
+        },
+        {
+          "term": "Tucunaré-açu",
+          "meaning": "The Brazilian name for the large speckled peacock bass, Cichla temensis.",
+          "species": [
+            "Speckled peacock bass"
+          ],
+          "sources": [
+            "amazon-local"
+          ],
+          "example": "That tucunaré-açu is the fish we came for."
+        }
+      ],
+      "continent": "Latin America & Caribbean"
+    },
+    {
+      "id": "uk-ireland",
+      "name": "UK and Ireland",
+      "intro": "Salmon anglers use names that tell you a fish’s life stage. In Ireland, a specimen also has a formal award meaning.",
+      "terms": [
+        {
+          "term": "Grilse",
+          "meaning": "An Atlantic salmon that returns to freshwater after one winter at sea.",
+          "species": [
+            "Atlantic salmon"
+          ],
+          "sources": [
+            "irish-salmon"
+          ],
+          "example": "That fish is a grilse, back after one winter at sea."
+        },
+        {
+          "term": "Kelt",
+          "meaning": "An Atlantic salmon after it has spawned, usually thin and in poor condition.",
+          "species": [
+            "Atlantic salmon"
+          ],
+          "sources": [
+            "irish-kelt"
+          ],
+          "example": "That thin salmon is a kelt."
+        },
+        {
+          "term": "Kype",
+          "meaning": "The hooked jaw that male salmon develop as they approach the time to spawn.",
+          "species": [
+            "Atlantic salmon"
+          ],
+          "sources": [
+            "irish-salmon"
+          ],
+          "example": "Look at the kype on that male salmon."
+        },
+        {
+          "term": "Sewin",
+          "meaning": "The Welsh name for sea trout, the sea-run form of brown trout.",
+          "species": [
+            "Brown trout"
+          ],
+          "sources": [
+            "welsh-sewin"
+          ],
+          "example": "We call those sea trout sewin here in Wales."
+        },
+        {
+          "term": "Specimen fish",
+          "meaning": "A fish that meets the Irish Specimen Fish Committee’s species-specific size threshold. A claim also needs the required evidence.",
+          "species": [],
+          "sources": [
+            "irish-specimen"
+          ],
+          "example": "That catch could be a specimen fish. We need the measurements."
+        },
+        {
+          "term": "Springer",
+          "meaning": "An older Atlantic salmon that returns after multiple sea winters, usually in spring or early summer.",
+          "species": [
+            "Atlantic salmon"
+          ],
+          "sources": [
+            "irish-salmon"
+          ],
+          "example": "We’re hoping for a springer on this river."
+        }
+      ],
+      "continent": "Europe"
+    },
+    {
+      "id": "scandinavia",
+      "name": "Scandinavia: Norway and Denmark",
+      "intro": "Norwegian salmon talk sorts fish by size. Danish sea-trout names tell you whether a fish has spawned or stayed at sea.",
+      "terms": [
+        {
+          "term": "Grønlænder",
+          "meaning": "A small, silver Danish sea trout that has not yet reached sexual maturity.",
+          "species": [
+            "Brown trout"
+          ],
+          "sources": [
+            "denmark-trout"
+          ],
+          "example": "That small silver sea trout is a grønlænder."
+        },
+        {
+          "term": "Mellomlaks",
+          "meaning": "A medium Atlantic salmon from 3 to 7 kilograms in Norwegian catch records.",
+          "species": [
+            "Atlantic salmon"
+          ],
+          "sources": [
+            "norway-size"
+          ],
+          "example": "That salmon falls in the mellomlaks group."
+        },
+        {
+          "term": "Nedgænger / nedfaldsfisk",
+          "meaning": "A sea trout back at sea after it has spawned, often thin while it recovers.",
+          "species": [
+            "Brown trout"
+          ],
+          "sources": [
+            "denmark-trout"
+          ],
+          "example": "That sea trout is a nedgænger, back after spawning."
+        },
+        {
+          "term": "Overspringer",
+          "meaning": "A Danish sea trout that skips a season of spawning and stays in the sea.",
+          "species": [
+            "Brown trout"
+          ],
+          "sources": [
+            "denmark-trout"
+          ],
+          "example": "That sea trout stayed at sea. It’s an overspringer."
+        },
+        {
+          "term": "Smålaks",
+          "meaning": "A small Atlantic salmon under 3 kilograms in Norwegian catch records.",
+          "species": [
+            "Atlantic salmon"
+          ],
+          "sources": [
+            "norway-size"
+          ],
+          "example": "Record that small salmon as smålaks."
+        },
+        {
+          "term": "Storlaks",
+          "meaning": "A large Atlantic salmon over 7 kilograms in Norwegian catch records.",
+          "species": [
+            "Atlantic salmon"
+          ],
+          "sources": [
+            "norway-size"
+          ],
+          "example": "Over seven kilos. That’s a storlaks."
+        },
+        {
+          "term": "Tert / svidde",
+          "meaning": "Norwegian local names for small Atlantic salmon, usually back after one year at sea.",
+          "species": [
+            "Atlantic salmon"
+          ],
+          "sources": [
+            "norway-names"
+          ],
+          "example": "Around here, that small salmon is a tert."
+        }
+      ],
+      "continent": "Europe"
+    },
+    {
+      "id": "south-africa",
+      "name": "Southern Africa",
+      "intro": "A leerie is a garrick, and a shad is the fish anglers elsewhere call bluefish. The local names change along the coast.",
+      "terms": [
+        {
+          "term": "Brusher / cracker",
+          "meaning": "Names for white musselcracker.",
+          "species": [
+            "White musselcracker"
+          ],
+          "sources": [
+            "south-africa-lingo"
+          ],
+          "example": "That brusher came out of the rocks."
+        },
+        {
+          "term": "Edibles / eds",
+          "meaning": "Rock-and-surf anglers’ shorthand for bony fish, in contrast to their non-eds category of sharks and rays.",
+          "species": [],
+          "sources": [
+            "south-africa-lingo"
+          ],
+          "example": "We’re after edibles from the rocks today."
+        },
+        {
+          "term": "Kob / kabeljou / daga salmon",
+          "meaning": "Names for kob, especially dusky kob, also known overseas as mulloway.",
+          "species": [
+            "Dusky kob"
+          ],
+          "sources": [
+            "south-africa-kob"
+          ],
+          "example": "We’re after kob in the surf."
+        },
+        {
+          "term": "Leerie / garrick",
+          "meaning": "Names for leerfish, also called leervis.",
+          "species": [
+            "Leerfish"
+          ],
+          "sources": [
+            "south-africa-lingo",
+            "south-africa-official"
+          ],
+          "example": "A leerie just turned behind the lure."
+        },
+        {
+          "term": "Poensie / poenskop",
+          "meaning": "Names for black musselcracker.",
+          "species": [
+            "Black musselcracker"
+          ],
+          "sources": [
+            "south-africa-lingo"
+          ],
+          "example": "That big black musselcracker is a poensie."
+        },
+        {
+          "term": "Prodigal son",
+          "meaning": "A local nickname for cobia.",
+          "species": [
+            "Cobia"
+          ],
+          "sources": [
+            "south-africa-lingo"
+          ],
+          "example": "The crew called that cobia a prodigal son."
+        },
+        {
+          "term": "Shad / elf",
+          "meaning": "South African names for bluefish.",
+          "species": [
+            "Bluefish"
+          ],
+          "sources": [
+            "south-africa-lingo",
+            "south-africa-official"
+          ],
+          "example": "The shad are chasing bait along the beach."
+        },
+        {
+          "term": "Steenie / pignose grunter",
+          "meaning": "Names for white steenbras.",
+          "species": [
+            "White steenbras"
+          ],
+          "sources": [
+            "south-africa-lingo"
+          ],
+          "example": "We’re hoping for a steenie in the surf."
+        }
+      ],
+      "continent": "Africa"
+    },
+    {
+      "id": "kenya-billfish",
+      "name": "Kenya and East African billfish waters",
+      "intro": "Kenyan crews can put several billfish species together in one day. A boat slam can include catches from different anglers.",
+      "terms": [
+        {
+          "term": "Fantasy slam",
+          "meaning": "Five billfish species in one day; a Kenyan boat combination is sailfish, blue, black, and striped marlin, plus swordfish.",
+          "species": [
+            "Indo-Pacific sailfish",
+            "Blue marlin",
+            "Black marlin",
+            "Striped marlin",
+            "Swordfish"
+          ],
+          "sources": [
+            "marlin-slams"
+          ],
+          "example": "Five billfish species in a day. That’s a fantasy slam."
+        },
+        {
+          "term": "Grand slam",
+          "meaning": "Three billfish species in one day. A Watamu boat combination is sailfish, blue marlin, and striped marlin.",
+          "species": [
+            "Indo-Pacific sailfish",
+            "Blue marlin",
+            "Striped marlin"
+          ],
+          "sources": [
+            "marlin-slams"
+          ],
+          "example": "Three billfish species for the boat today. That’s a grand slam."
+        },
+        {
+          "term": "Super slam",
+          "meaning": "Four billfish species in one day. A Watamu boat combination adds swordfish to sailfish, blue marlin, and striped marlin.",
+          "species": [
+            "Indo-Pacific sailfish",
+            "Blue marlin",
+            "Striped marlin",
+            "Swordfish"
+          ],
+          "sources": [
+            "marlin-slams"
+          ],
+          "example": "A swordfish would make this a four-species super slam."
+        }
+      ],
+      "continent": "Africa"
+    },
+    {
+      "id": "seychelles",
+      "name": "Seychelles flats",
+      "intro": "A GT, a bonefish, and a trigger can make an Alphonse slam. The local reports also celebrate four-fish super slams.",
+      "terms": [
+        {
+          "term": "Flats slam / Alphonse slam",
+          "meaning": "One Alphonse version pairs a bonefish, giant trevally, and yellowmargin triggerfish, caught by one angler in one day.",
+          "species": [
+            "Bonefish",
+            "Giant trevally",
+            "Yellowmargin triggerfish"
+          ],
+          "sources": [
+            "seychelles-slam"
+          ],
+          "example": "Bonefish, GT, triggerfish. That’s our island slam."
+        },
+        {
+          "term": "GT / geet",
+          "meaning": "Short names for giant trevally.",
+          "species": [
+            "Giant trevally"
+          ],
+          "sources": [
+            "seychelles-slam",
+            "seychelles-fish"
+          ],
+          "example": "A geet just appeared at the edge of the flat."
+        },
+        {
+          "term": "Moustache trigger",
+          "meaning": "An angler’s name for titan triggerfish.",
+          "species": [
+            "Titan triggerfish"
+          ],
+          "sources": [
+            "seychelles-fish"
+          ],
+          "example": "That moustache trigger is working the coral."
+        },
+        {
+          "term": "Super slam",
+          "meaning": "An Alphonse combination of permit, yellowmargin triggerfish, bonefish, and giant trevally, caught by one angler in one day.",
+          "species": [
+            "Snubnose pompano",
+            "Yellowmargin triggerfish",
+            "Bonefish",
+            "Giant trevally"
+          ],
+          "sources": [
+            "seychelles-super"
+          ],
+          "example": "A permit would complete our Alphonse super slam."
+        }
+      ],
+      "continent": "Africa"
+    },
+    {
+      "id": "hawaii",
+      "name": "Hawaii",
+      "intro": "Ono, ahi, and aku are everyday fish names in Hawaii. Offshore, a grander is a marlin with four figures on the scale.",
+      "terms": [
+        {
+          "term": "Ahi",
+          "meaning": "A local name for yellowfin tuna and bigeye tuna.",
+          "species": [
+            "Yellowfin tuna",
+            "Bigeye tuna"
+          ],
+          "sources": [
+            "hawaii-charter",
+            "hawaii-local"
+          ],
+          "example": "We’re looking for ahi offshore."
+        },
+        {
+          "term": "Aku",
+          "meaning": "The Hawaiian name for skipjack tuna.",
+          "species": [
+            "Skipjack tuna"
+          ],
+          "sources": [
+            "hawaii-dar"
+          ],
+          "example": "The aku are chasing bait on the surface."
+        },
+        {
+          "term": "Grander",
+          "meaning": "A marlin that weighs at least 1,000 pounds. Hawaii’s list includes blue and black marlin.",
+          "species": [
+            "Pacific blue marlin",
+            "Black marlin"
+          ],
+          "sources": [
+            "hawaii-grander"
+          ],
+          "example": "The crew’s still talking about the grander from last season."
+        },
+        {
+          "term": "Hebi",
+          "meaning": "The local name for shortbill spearfish.",
+          "species": [
+            "Shortbill spearfish"
+          ],
+          "sources": [
+            "hawaii-charter"
+          ],
+          "example": "That short bill gives the hebi away."
+        },
+        {
+          "term": "Kahala",
+          "meaning": "A Hawaiian name for greater amberjack.",
+          "species": [
+            "Greater amberjack"
+          ],
+          "sources": [
+            "hawaii-local"
+          ],
+          "example": "That kahala came out of deep water."
+        },
+        {
+          "term": "Ono",
+          "meaning": "The Hawaiian name for wahoo.",
+          "species": [
+            "Wahoo"
+          ],
+          "sources": [
+            "hawaii-charter"
+          ],
+          "example": "That ono made the reel sing."
+        },
+        {
+          "term": "Pāpio",
+          "meaning": "The local name for jacks under 10 pounds; the larger fish are called ulua.",
+          "species": [
+            "Giant trevally",
+            "Bluefin trevally",
+            "Black trevally"
+          ],
+          "sources": [
+            "hawaii-jack-size"
+          ],
+          "example": "A pāpio hit beside the rocks."
+        },
+        {
+          "term": "Ulua",
+          "meaning": "The local name for jacks of at least 10 pounds, including giant, bluefin, and black trevally.",
+          "species": [
+            "Giant trevally",
+            "Bluefin trevally",
+            "Black trevally"
+          ],
+          "sources": [
+            "hawaii-jack-size"
+          ],
+          "example": "That jack is big enough to call an ulua."
+        }
+      ],
+      "continent": "Asia-Pacific"
+    },
+    {
+      "id": "australia",
+      "name": "Australia",
+      "intro": "A metre barra is a clear size milestone. Names such as croc, hoodie, and elbow slapper are the sort you hear after a good catch.",
+      "terms": [
+        {
+          "term": "Donut",
+          "meaning": "A trip with zero fish caught.",
+          "species": [],
+          "sources": [
+            "australia-names"
+          ],
+          "example": "Three hours out and a donut to show for it."
+        },
+        {
+          "term": "Elbow slapper",
+          "meaning": "A big whiting, imagined with its tail at your elbow when you hold its head.",
+          "species": [
+            "Whiting"
+          ],
+          "sources": [
+            "australia-names"
+          ],
+          "example": "Now that’s an elbow slapper of a whiting."
+        },
+        {
+          "term": "Hoodlum / hoodie",
+          "meaning": "A large yellowtail kingfish, often over a metre long. The nickname has no fixed cutoff.",
+          "species": [
+            "Yellowtail kingfish"
+          ],
+          "sources": [
+            "australia-names"
+          ],
+          "example": "That hoodlum headed straight for the reef."
+        },
+        {
+          "term": "Jewie",
+          "meaning": "A common angler’s name for mulloway.",
+          "species": [
+            "Mulloway"
+          ],
+          "sources": [
+            "australia-jewie"
+          ],
+          "example": "There are jewies around that deep hole."
+        },
+        {
+          "term": "Lizard / croc",
+          "meaning": "A large flathead; croc usually means an especially big one.",
+          "species": [
+            "Dusky flathead"
+          ],
+          "sources": [
+            "australia-names"
+          ],
+          "example": "That flathead is a proper lizard."
+        },
+        {
+          "term": "Metre barra / metrey",
+          "meaning": "A barramundi at least one metre long; the catch earns a place in a metre barra club.",
+          "species": [
+            "Barramundi"
+          ],
+          "sources": [
+            "metre-barra"
+          ],
+          "example": "Get the measure. That could be a metre barra."
+        },
+        {
+          "term": "Rat",
+          "meaning": "A small yellowtail kingfish.",
+          "species": [
+            "Yellowtail kingfish"
+          ],
+          "sources": [
+            "australia-names"
+          ],
+          "example": "That kingfish is only a rat."
+        },
+        {
+          "term": "Soapie",
+          "meaning": "A juvenile mulloway.",
+          "species": [
+            "Mulloway"
+          ],
+          "sources": [
+            "australia-names"
+          ],
+          "example": "A soapie picked up the bait."
+        },
+        {
+          "term": "Squire / pinkie",
+          "meaning": "Names for a small snapper.",
+          "species": [
+            "Australasian snapper"
+          ],
+          "sources": [
+            "australia-names"
+          ],
+          "example": "We found a few pinkies over the reef."
+        }
+      ],
+      "continent": "Asia-Pacific"
+    },
+    {
+      "id": "new-zealand",
+      "name": "New Zealand",
+      "intro": "A pannie and a moocher are both snapper. Kiwi anglers also shorten kingfish, skipjack, marlin, and swordfish into familiar dockside names.",
+      "terms": [
+        {
+          "term": "Kingie",
+          "meaning": "Short for yellowtail kingfish.",
+          "species": [
+            "Yellowtail kingfish"
+          ],
+          "sources": [
+            "nz-lingo"
+          ],
+          "example": "A kingie just followed the lure to the boat."
+        },
+        {
+          "term": "Moocher",
+          "meaning": "A big snapper, especially the trophy fish anglers seek around rocky ground.",
+          "species": [
+            "Australasian snapper"
+          ],
+          "sources": [
+            "nz-moocher"
+          ],
+          "example": "There’s a moocher hiding in that rocky ground."
+        },
+        {
+          "term": "Pannie / panny",
+          "meaning": "A pan-sized snapper.",
+          "species": [
+            "Australasian snapper"
+          ],
+          "sources": [
+            "nz-lingo"
+          ],
+          "example": "That snapper is a nice pannie."
+        },
+        {
+          "term": "Skippie",
+          "meaning": "Short for skipjack tuna.",
+          "species": [
+            "Skipjack tuna"
+          ],
+          "sources": [
+            "nz-lingo"
+          ],
+          "example": "The skippies are under those birds."
+        },
+        {
+          "term": "Stripey",
+          "meaning": "In this New Zealand usage, a striped marlin.",
+          "species": [
+            "Striped marlin"
+          ],
+          "sources": [
+            "nz-lingo"
+          ],
+          "example": "That stripey just lit up behind the lure."
+        },
+        {
+          "term": "Swordie",
+          "meaning": "Short for swordfish.",
+          "species": [
+            "Swordfish"
+          ],
+          "sources": [
+            "nz-lingo"
+          ],
+          "example": "We’re hoping for a swordie on this drop."
+        }
+      ],
+      "continent": "Asia-Pacific"
+    },
+    {
+      "id": "japan",
+      "name": "Japan",
+      "intro": "In Japan, a fish can get a new name as it grows. The names and rough size bands also change between Kantō and Kansai.",
+      "terms": [
+        {
+          "term": "Buri",
+          "meaning": "The adult-size name for Japanese amberjack, around 80 centimetres and up in these examples.",
+          "species": [
+            "Japanese amberjack"
+          ],
+          "sources": [
+            "japan-size"
+          ],
+          "example": "Now that’s an adult buri."
+        },
+        {
+          "term": "Fukko / hane",
+          "meaning": "A medium Japanese sea bass, roughly 30–60 centimetres: fukko in Kantō, hane in Kansai.",
+          "species": [
+            "Japanese sea bass"
+          ],
+          "sources": [
+            "japan-size"
+          ],
+          "example": "Here in Kantō, we call that size sea bass a fukko."
+        },
+        {
+          "term": "Inada / hamachi",
+          "meaning": "Names for young Japanese amberjack around 40 centimetres: inada in Kantō, hamachi in Kansai.",
+          "species": [
+            "Japanese amberjack"
+          ],
+          "sources": [
+            "japan-size"
+          ],
+          "example": "Here in Kansai, that young amberjack is a hamachi."
+        },
+        {
+          "term": "Seigo",
+          "meaning": "A small Japanese sea bass, roughly 30 centimetres or less in Honda’s Kantō and Kansai examples.",
+          "species": [
+            "Japanese sea bass"
+          ],
+          "sources": [
+            "japan-size"
+          ],
+          "example": "That small sea bass is a seigo."
+        },
+        {
+          "term": "Shusseuo",
+          "meaning": "A fish whose name changes as it grows, such as Japanese amberjack or Japanese sea bass.",
+          "species": [
+            "Japanese amberjack",
+            "Japanese sea bass"
+          ],
+          "sources": [
+            "japan-shusseuo"
+          ],
+          "example": "Its name changes as it grows. That’s a shusseuo."
+        },
+        {
+          "term": "Suzuki",
+          "meaning": "The adult-size name for Japanese sea bass, roughly 60 centimetres and up in these examples.",
+          "species": [
+            "Japanese sea bass"
+          ],
+          "sources": [
+            "japan-size"
+          ],
+          "example": "That sea bass is big enough to call a suzuki."
+        },
+        {
+          "term": "Toshinashi",
+          "meaning": "An angler’s name for a large black sea bream over 50 centimetres.",
+          "species": [
+            "Black sea bream"
+          ],
+          "sources": [
+            "japan-size"
+          ],
+          "example": "That black sea bream could be a toshinashi."
+        },
+        {
+          "term": "Warasa / mejiro",
+          "meaning": "Names for larger Japanese amberjack around 60 centimetres: warasa in Kantō, mejiro in Kansai.",
+          "species": [
+            "Japanese amberjack"
+          ],
+          "sources": [
+            "japan-size"
+          ],
+          "example": "That larger amberjack is a mejiro here in Kansai."
+        }
+      ],
+      "continent": "Asia-Pacific"
+    },
+    {
+      "id": "southeast-asia",
+      "name": "Southeast Asia: Malaysia",
+      "intro": "Toman and sebarau are familiar targets on Malaysian freshwater trips. Kelah is the local mahseer name that many river anglers hope to add.",
+      "terms": [
+        {
+          "term": "Haruan",
+          "meaning": "The Malay name for striped snakehead.",
+          "species": [
+            "Striped snakehead"
+          ],
+          "sources": [
+            "malaysia-haruan"
+          ],
+          "example": "A haruan struck beside the weeds."
+        },
+        {
+          "term": "Kelah",
+          "meaning": "A Malaysian name for mahseer.",
+          "species": [
+            "Malaysian mahseer"
+          ],
+          "sources": [
+            "malaysia-fish"
+          ],
+          "example": "We’re hoping for a kelah in that pool."
+        },
+        {
+          "term": "Sebarau",
+          "meaning": "The local name for hampala barb, also called jungle perch.",
+          "species": [
+            "Hampala barb"
+          ],
+          "sources": [
+            "malaysia-fish"
+          ],
+          "example": "There are sebarau below that rapid."
+        },
+        {
+          "term": "Toman",
+          "meaning": "The Malay name for giant snakehead.",
+          "species": [
+            "Giant snakehead"
+          ],
+          "sources": [
+            "malaysia-fish"
+          ],
+          "example": "A toman just broke the surface."
+        }
+      ],
+      "continent": "Asia-Pacific"
+    },
+    {
+      "id": "international-billfish",
+      "name": "International billfish and IGFA slams",
+      "intro": "A billfish slam counts different kinds of billfish. The IGFA awards belong to individual anglers; crews also talk about boat slams.",
+      "terms": [
+        {
+          "term": "Billfish fantasy slam",
+          "meaning": "One angler catches any five eligible billfish species in one calendar day under IGFA rules.",
+          "species": [
+            "Atlantic blue marlin",
+            "Pacific blue marlin",
+            "Black marlin",
+            "White marlin",
+            "Striped marlin",
+            "Atlantic sailfish",
+            "Pacific sailfish",
+            "Swordfish",
+            "Spearfish"
+          ],
+          "sources": [
+            "igfa-application",
+            "igfa-grand"
+          ],
+          "example": "Five billfish species in one day is a fantasy slam."
+        },
+        {
+          "term": "Billfish grand slam",
+          "meaning": "One angler catches any three eligible billfish species in one calendar day under IGFA rules.",
+          "species": [
+            "Atlantic blue marlin",
+            "Pacific blue marlin",
+            "Black marlin",
+            "White marlin",
+            "Striped marlin",
+            "Atlantic sailfish",
+            "Pacific sailfish",
+            "Swordfish",
+            "Spearfish"
+          ],
+          "sources": [
+            "igfa-grand",
+            "central-slam",
+            "central-calendar"
+          ],
+          "also_in": [
+            "central-america"
+          ],
+          "alternate_anchors": [
+            "central-america-billfish-grand-slam"
+          ],
+          "regional_notes": [
+            {
+              "region": "central-america",
+              "meaning": "Three different billfish species caught in one day. Off Quepos, a usual combination is sailfish, blue marlin, and black or striped marlin."
+            }
+          ],
+          "example": "Three different billfish today. That’s a grand slam."
+        },
+        {
+          "term": "Billfish royal slam",
+          "meaning": "One angler catches all nine listed billfish categories over a lifetime under IGFA rules. Any spearfish species fills the spearfish place.",
+          "species": [
+            "Atlantic blue marlin",
+            "Pacific blue marlin",
+            "Black marlin",
+            "White marlin",
+            "Striped marlin",
+            "Atlantic sailfish",
+            "Pacific sailfish",
+            "Swordfish",
+            "Spearfish"
+          ],
+          "sources": [
+            "igfa-royal"
+          ],
+          "example": "I’m still working toward my lifetime billfish royal slam."
+        },
+        {
+          "term": "Billfish super grand slam",
+          "meaning": "One angler catches any four eligible billfish species in one calendar day under IGFA rules.",
+          "species": [
+            "Atlantic blue marlin",
+            "Pacific blue marlin",
+            "Black marlin",
+            "White marlin",
+            "Striped marlin",
+            "Atlantic sailfish",
+            "Pacific sailfish",
+            "Swordfish",
+            "Spearfish"
+          ],
+          "sources": [
+            "igfa-application",
+            "igfa-grand",
+            "central-calendar"
+          ],
+          "also_in": [
+            "central-america"
+          ],
+          "alternate_anchors": [
+            "central-america-billfish-super-grand-slam"
+          ],
+          "regional_notes": [
+            {
+              "region": "central-america",
+              "meaning": "One angler catches four eligible billfish species in one calendar day under IGFA rules; sailfish plus blue, black, and striped marlin qualifies."
+            }
+          ],
+          "example": "Four billfish species for one angler. That’s some day."
+        },
+        {
+          "term": "Boat slam",
+          "meaning": "A crew completes a slam with catches from several anglers aboard one boat. IGFA requires one angler for its awards.",
+          "species": [],
+          "sources": [
+            "marlin-slams"
+          ],
+          "example": "The crew got a boat slam, with catches from three anglers."
+        }
+      ],
+      "continent": "Worldwide"
+    }
+  ]
+}

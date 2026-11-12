@@ -1,0 +1,3214 @@
+{
+  "trips": {
+    "situk-coho-river": {
+      "title": "Situk River Salmon Fishing Near Yakutat",
+      "summary": "Fish the Situk for sockeye or coho, with a bank session or a full river float. Pick the run that fits your Alaska trip."
+    },
+    "na-us-ak-002": {
+      "title": "Homer Bottom Fishing on Kachemak Bay",
+      "summary": "Head out from Homer for a day of bottom fishing on Kachemak Bay. Choose a short run from port or a longer charter day."
+    },
+    "na-us-ak-003": {
+      "title": "Kenai River Salmon Fishing in Alaska",
+      "summary": "Make salmon the focus of a day on the Kenai River. Pick a stretch to fish and spend your time working the current."
+    },
+    "na-us-ak-004": {
+      "title": "Kenai River Trout Fishing on the Drift",
+      "summary": "Spend a day drifting the Kenai with trout in mind. This Alaska river trip puts the casts and the next stretch of water first."
+    },
+    "na-us-ak-005": {
+      "title": "Russian River: Walk-In Salmon Fishing",
+      "summary": "Take the walk to Alaska's Russian River for a salmon trip on foot. Fish the river with the junction and other anglers in mind."
+    },
+    "yakutat-halibut": {
+      "title": "Yakutat Halibut Charters on Alaska's Coast",
+      "summary": "Head onto Yakutat Bay and nearby Gulf waters for halibut. A saltwater charter puts deep water at the heart of the day."
+    },
+    "delta-clearwater-grayling": {
+      "title": "Delta Clearwater: Alaska Grayling on the Fly",
+      "summary": "Cast small flies or lures for grayling on the Delta Clearwater. This spring-fed Alaska river calls for a careful approach."
+    },
+    "tanana-glacial-system": {
+      "title": "Tanana River: Alaska Fishing Beyond the Main Channel",
+      "summary": "Explore the Tanana drainage, from glacial river water to clear tributaries. Choose the water that suits your kind of fishing."
+    },
+    "na-us-ak-009": {
+      "title": "Naknek River Trout Fishing in Alaska",
+      "summary": "Make the Naknek River your Alaska trout stop. Choose an upper- or lower-river outing and settle into a day on the water."
+    },
+    "na-us-ak-010": {
+      "title": "Kvichak River: Remote Fishing in Alaska",
+      "summary": "Leave time for a remote fishing trip on the Kvichak River. A lodge stay makes the river, and time with a rod, the main event."
+    },
+    "na-us-ak-011": {
+      "title": "Nushagak River Salmon Fishing from Camp",
+      "summary": "Build an Alaska camp trip around salmon on the Nushagak River. Let the run shape your dates and the water you fish."
+    },
+    "na-us-ak-012": {
+      "title": "Togiak River: Alaska Fishing from Camp",
+      "summary": "Make camp on a Togiak River fishing trip. Stay in one spot or move along the river for a different stretch of water each day."
+    },
+    "na-us-ak-013": {
+      "title": "Goodnews River: A Multiday Alaska Fishing Float",
+      "summary": "Float the Goodnews River on a fishing trip that moves with camp. Give yourself several days to settle into the river's rhythm."
+    },
+    "na-us-ak-014": {
+      "title": "Karluk River Steelhead Fishing on Kodiak",
+      "summary": "Make steelhead the focus of a trip to the Karluk River on Kodiak. Remote river fishing gives this Alaska outing its appeal."
+    },
+    "na-us-ak-015": {
+      "title": "Kodiak Bottom Fishing Along Alaska's Coast",
+      "summary": "Head out along Kodiak's coast for a day of bottom fishing. Keep the focus on the saltwater and the next drop from the boat."
+    },
+    "na-us-ak-016": {
+      "title": "Seward Salmon Fishing on Resurrection Bay",
+      "summary": "Fish for salmon from Seward, with Resurrection Bay and the outer coast in the mix. Choose the boat day that suits you."
+    },
+    "na-us-ak-017": {
+      "title": "Valdez Salmon Fishing in Prince William Sound",
+      "summary": "Head out from Valdez for salmon in Prince William Sound. Take a charter or make a boat trip of your own on Alaska's coast."
+    },
+    "na-us-ak-018": {
+      "title": "Talkeetna: A Fishing Getaway on Clear Creek",
+      "summary": "Reach Clear Creek from Talkeetna for a remote river fishing trip. A jet-boat drop-off can put the water at the center of your day."
+    },
+    "na-us-ak-019": {
+      "title": "Quartz Lake Winter Ice Fishing in Alaska",
+      "summary": "Trade open water for a winter day on Quartz Lake. Ice fishing here puts the focus on a small hole and the next bite below."
+    },
+    "na-us-ak-020": {
+      "title": "Juneau Salmon Fishing on Alaska's Coast",
+      "summary": "Fit a salmon charter into your Juneau visit. Spend your time on the coastal water with a rod in hand and the port behind you."
+    },
+    "na-us-hi-001": {
+      "title": "Kona, Hawaii: A Day of Offshore Fishing",
+      "summary": "Leave Kona's harbor for an offshore fishing day. Share a boat or take a private charter and enjoy the wait for the next bite."
+    },
+    "na-us-hi-002": {
+      "title": "Oahu, Hawaii: Sight Fishing on the Flats",
+      "summary": "Look for your next cast on Oahu's saltwater flats. Choose a guided wade or a boat outing for a day focused on sight fishing."
+    },
+    "na-us-hi-003": {
+      "title": "Kauai Offshore Fishing from Nawiliwili",
+      "summary": "Set out from Nawiliwili for a day offshore from Kauai. Trolling puts the rods to work while you watch the water beyond the boat."
+    },
+    "na-us-hi-004": {
+      "title": "Maui Offshore Fishing from Maalaea Harbor",
+      "summary": "Start at Maalaea for a fishing trip offshore from Maui. Make room in your island visit for a boat day and the next bite."
+    },
+    "na-us-hi-005": {
+      "title": "Kokee, Kauai Trout Fishing in Small Streams",
+      "summary": "Take a small-stream trout trip in Kokee on Kauai. Spend a day with a rod beside the water when the local fishery is open."
+    },
+    "na-us-hi-006": {
+      "title": "Oahu, Hawaii: Fishing from the Rocky Shore",
+      "summary": "Keep your feet on shore for a fishing day on Oahu. Choose an accessible stretch of coast and enjoy a few hours casting out."
+    },
+    "na-us-wa-001": {
+      "title": "Puget Sound Salmon Fishing from Boat or Bank",
+      "summary": "Try salmon fishing on Puget Sound, with a boat or bank outing to suit your day. Pick your water and follow the local run."
+    },
+    "na-us-wa-002": {
+      "title": "Yakima River: Washington Trout on the Drift",
+      "summary": "Spend a day after trout on the Yakima River. Choose a float or suitable wading water and get to know a stretch of the river."
+    },
+    "na-us-wa-003": {
+      "title": "Lower Columbia River: Salmon from Washington",
+      "summary": "Head onto the lower Columbia for salmon from a Washington launch. Make a river day of it with a run and a reach in mind."
+    },
+    "na-us-wa-004": {
+      "title": "Sol Duc River: Olympic Peninsula Steelhead",
+      "summary": "Fish the Sol Duc for steelhead on Washington's Olympic Peninsula. A river trip here starts with the run you want to follow."
+    },
+    "na-us-wa-005": {
+      "title": "Hoh River: Steelhead in Glacial Waters",
+      "summary": "Try for steelhead on the Hoh River in Washington. Glacial water and changing flows give each day on the river its own feel."
+    },
+    "na-us-wa-006": {
+      "title": "Skagit River Steelhead Fishing in Washington",
+      "summary": "Put the Skagit River on your steelhead wish list. When the fishery is open, make time for a day focused on the river."
+    },
+    "na-us-wa-007": {
+      "title": "Lake Washington: A Day of Trolling Close to Town",
+      "summary": "Take a boat onto Lake Washington for a day of trolling. This urban lake offers a way to put fishing at the center of a city break."
+    },
+    "na-us-wa-008": {
+      "title": "Lake Chelan: Lake Trout and Kokanee Fishing",
+      "summary": "Choose lake trout or kokanee for a day on Lake Chelan. Each calls for its own approach on this Washington lake trip."
+    },
+    "na-us-wa-009": {
+      "title": "Potholes Reservoir: Washington Walleye Fishing",
+      "summary": "Make walleye the target at Potholes Reservoir. Choose a launch and spend the day getting to know this Washington water."
+    },
+    "na-us-wa-010": {
+      "title": "Lake Roosevelt: A Washington Reservoir Fishing Day",
+      "summary": "Spend a day fishing Lake Roosevelt in Washington. Pick a section of the reservoir and give yourself time to explore the water."
+    },
+    "na-us-wa-011": {
+      "title": "Westport, Washington: A Day of Offshore Fishing",
+      "summary": "Head offshore from Westport for a fishing day beyond the coast. A charter makes the run out and time at the rods part of the trip."
+    },
+    "na-us-wa-012": {
+      "title": "Spokane River Trout Fishing Close to Town",
+      "summary": "Work a stretch of the Spokane River for trout. Choose an urban outing or a float and make the river part of your Washington visit."
+    },
+    "na-us-or-001": {
+      "title": "Lower Deschutes Trout Fishing and River Camps",
+      "summary": "Fish the lower Deschutes for trout, with a day trip or a camp along the float. Give this Oregon river the time it deserves."
+    },
+    "g-united-states-rogue-river": {
+      "title": "Rogue River, Oregon: A Guided Fishing Day",
+      "summary": "Make room for a guided fishing day on Oregon's Rogue River. Choose your dates around the fish you and your guide hope to find."
+    },
+    "na-us-or-003": {
+      "title": "Columbia River: Sturgeon Fishing from Oregon",
+      "summary": "Try for sturgeon on the Columbia River from an Oregon launch. A guided boat trip puts this river fish at the heart of the day."
+    },
+    "na-us-or-004": {
+      "title": "McKenzie River: Oregon Trout by Drift Boat",
+      "summary": "Take a drift boat down the McKenzie or fish a walk-in stretch for trout. Spend an Oregon day working one piece of river at a time."
+    },
+    "na-us-or-005": {
+      "title": "Metolius River: Trout on Small Flies in Oregon",
+      "summary": "Bring a careful cast to the spring-fed Metolius River. Small-fly trout fishing makes this Oregon outing a day to slow down."
+    },
+    "na-us-or-006": {
+      "title": "North Umpqua River: Oregon Steelhead Fishing",
+      "summary": "Spend a day after steelhead on the North Umpqua. Choose a stretch of this Oregon river and let the water shape your approach."
+    },
+    "na-us-or-007": {
+      "title": "Klamath Lake, Oregon: An Open-Water Fishing Day",
+      "summary": "Make Klamath Lake the setting for an Oregon fishing trip. Spend time on the water and follow the bite as conditions change."
+    },
+    "na-us-or-008": {
+      "title": "Crane Prairie Reservoir: Oregon Lake Fishing",
+      "summary": "Explore the shallow water at Crane Prairie Reservoir. A boat or float-tube outing makes an Oregon fishing day of it."
+    },
+    "na-us-or-009": {
+      "title": "Newport, Oregon Offshore Fishing by Charter",
+      "summary": "Head offshore from Newport on a fishing charter. Leave the port behind and make a day of the open water with a rod in hand."
+    },
+    "na-us-or-010": {
+      "title": "Pacific City Surf Fishing on the Oregon Coast",
+      "summary": "Cast from the beaches at Pacific City on an Oregon surf fishing trip. Let the waves set the pace for a day beside the ocean."
+    },
+    "g-united-states-lower-sacramento-river": {
+      "title": "Lower Sacramento River: A Trout Fishing Float",
+      "summary": "Take a guided float on the Lower Sacramento River for trout. Spend a California day casting from the boat along the tailwater."
+    },
+    "na-us-ca-002": {
+      "title": "San Diego Offshore Fishing for a Day or More",
+      "summary": "Head offshore from San Diego for a full day, an overnight trip or a longer run. Choose how much time you want at the rods."
+    },
+    "g-united-states-mccloud-river": {
+      "title": "McCloud River Fly Fishing in California",
+      "summary": "Follow the McCloud River on a mountain fly fishing outing. Walk to a stretch of water and spend the day working your casts."
+    },
+    "g-united-states-hat-creek": {
+      "title": "Hat Creek: Spring-Fed Trout Fishing in California",
+      "summary": "Spend a day after trout on spring-fed Hat Creek. Pick a section of this California water and enjoy fishing at the creek's pace."
+    },
+    "g-united-states-fall-river-california": {
+      "title": "Fall River, California: Spring-Fed Fly Fishing",
+      "summary": "Fish the spring-fed Fall River in California with a fly rod. A guided outing gives you time to work on each cast and drift."
+    },
+    "g-united-states-smith-river-california": {
+      "title": "Smith River, California: A Guided Fishing Day",
+      "summary": "Spend a guided day fishing California's Smith River. Let the season and the state of the river shape the water you explore."
+    },
+    "na-us-ca-007": {
+      "title": "California Delta Bass Fishing with the Tide",
+      "summary": "Chase bass in the California Delta, where the tide helps shape the day. Choose a launch and work through the connected water."
+    },
+    "na-us-ca-008": {
+      "title": "Lake Shasta Bass Fishing in California",
+      "summary": "Make bass the focus of a day on Lake Shasta. Explore the reservoir and work the water as its level and the season change."
+    },
+    "na-us-ca-009": {
+      "title": "Clear Lake, California: Bass from Bank or Boat",
+      "summary": "Fish Clear Lake for bass from the bank or a boat. Choose your way onto this California water and settle in for the next bite."
+    },
+    "na-us-ca-010": {
+      "title": "Lake Tahoe: Fishing from the California Shore",
+      "summary": "Start on the California side for a fishing trip on Lake Tahoe. Make the lake the focus of your day and spend time on the water."
+    },
+    "na-us-ca-011": {
+      "title": "Truckee River Trout Fishing in California",
+      "summary": "Fish the California stretch of the Truckee for trout. Pick a reach and spend your day getting to know the river one cast at a time."
+    },
+    "na-us-ca-012": {
+      "title": "Upper Owens River: Eastern Sierra Trout Fishing",
+      "summary": "Head to the Upper Owens for a trout outing in the Eastern Sierra. Spend the day with a rod on this California river."
+    },
+    "na-us-ca-013": {
+      "title": "Mammoth Lakes: Alpine Fishing in California",
+      "summary": "Make a fishing day of the Mammoth Lakes basin. Choose a roadside lake or a walk into alpine water to suit your time outdoors."
+    },
+    "na-us-ca-014": {
+      "title": "San Francisco Bay: A Day of Inshore Fishing",
+      "summary": "Keep the trip inside San Francisco Bay for a day of inshore fishing. Drift the bay's water with the city on your doorstep."
+    },
+    "na-us-ca-015": {
+      "title": "Monterey Bay Bottom Fishing off California",
+      "summary": "Drop a line on a bottom fishing trip in Monterey Bay. Spend a day on the boat with California's coastal water all around you."
+    },
+    "na-us-ca-016": {
+      "title": "Huntington Beach Surf Fishing in California",
+      "summary": "Cast into the surf at Huntington Beach for a day on the sand. Try a light presentation or a bait rig that suits the conditions."
+    },
+    "na-us-nv-001": {
+      "title": "Pyramid Lake, Nevada: Fishing from the Shore",
+      "summary": "Spend a day fishing from shore at Pyramid Lake. Find a suitable place to cast and make this Nevada lake your next outing."
+    },
+    "na-us-nv-002": {
+      "title": "Lake Mead Bass Fishing from the Nevada Side",
+      "summary": "Start from Nevada for a bass fishing day on Lake Mead. Choose a launch and take your time exploring the reservoir by boat."
+    },
+    "na-us-nv-003": {
+      "title": "Wildhorse Reservoir: Open-Water Fishing in Nevada",
+      "summary": "Put Wildhorse Reservoir on your Nevada fishing route. Spend a day on the open water with the reservoir as your backdrop."
+    },
+    "na-us-nv-004": {
+      "title": "Ruby Mountains: Alpine Lake Fishing in Nevada",
+      "summary": "Pair a hike in Nevada's Ruby Mountains with time at an alpine lake. Choose your water and leave room in the day for fishing."
+    },
+    "na-us-az-001": {
+      "title": "Lees Ferry Trout Fishing on the Colorado River",
+      "summary": "Fish for trout at Lees Ferry on the Colorado River. Choose walk-in water or a boat trip for a day on this Arizona stretch."
+    },
+    "na-us-az-002": {
+      "title": "Lake Havasu Bass Fishing from Arizona",
+      "summary": "Head out from the Arizona side of Lake Havasu for bass. Spend the day on the water with a launch and a stretch of lake in mind."
+    },
+    "na-us-az-003": {
+      "title": "Roosevelt Lake, Arizona: A Day of Bass Fishing",
+      "summary": "Make Roosevelt Lake your next Arizona bass trip. Choose a launch area and work the reservoir at whatever pace suits you."
+    },
+    "na-us-az-004": {
+      "title": "Big Lake, Arizona: Fishing in the White Mountains",
+      "summary": "Visit Big Lake in Arizona's White Mountains for a fishing day. Choose time on the shore or a rental boat out on the water."
+    },
+    "na-us-az-005": {
+      "title": "Oak Creek, Arizona Small-Stream Fishing",
+      "summary": "Take a rod to Oak Creek for a small-stream fishing day in Arizona. Pick an accessible stretch and enjoy time beside the water."
+    },
+    "na-us-nm-001": {
+      "title": "San Juan River Trout Fishing Below Navajo Dam",
+      "summary": "Try for trout on the San Juan below Navajo Dam. Choose a guided drift or a wading outing on this New Mexican river stretch."
+    },
+    "na-us-nm-002": {
+      "title": "Rio Grande Trout Fishing in the Taos Canyon",
+      "summary": "Head to the Taos reach of the Rio Grande for trout. Canyon access makes the walk to the water part of this New Mexican trip."
+    },
+    "na-us-nm-003": {
+      "title": "Pecos River Small-Stream Fishing in New Mexico",
+      "summary": "Spend a day beside the Pecos River with a rod in hand. Choose an accessible stretch for a small-stream outing in New Mexico."
+    },
+    "na-us-nm-004": {
+      "title": "Eagle Nest Lake: Open-Water Fishing in New Mexico",
+      "summary": "Make time for a day fishing the open water at Eagle Nest Lake. Enjoy a New Mexican lake outing with the next bite in mind."
+    },
+    "na-us-nm-005": {
+      "title": "Elephant Butte Bass Fishing in New Mexico",
+      "summary": "Take a boat onto Elephant Butte Reservoir for bass. Spend the day exploring this New Mexican water and looking for the next bite."
+    },
+    "na-us-id-001": {
+      "title": "Henry's Fork: Spring-Fed Trout Fishing in Idaho",
+      "summary": "Cast for trout on Idaho's Henry's Fork. Pick a stretch that suits your pace and enjoy the challenge of a well-placed cast."
+    },
+    "na-us-id-002": {
+      "title": "South Fork Snake River: Idaho Trout on the Drift",
+      "summary": "Float the South Fork Snake River with trout in mind. A day on this Idaho water gives you new stretches to fish along the way."
+    },
+    "na-us-id-003": {
+      "title": "Silver Creek, Idaho: Trout on a Careful Cast",
+      "summary": "Bring your patience to Silver Creek for spring-fed trout fishing. Enjoy an Idaho day where a careful presentation is part of the fun."
+    },
+    "na-us-id-004": {
+      "title": "Clearwater River: Idaho Steelhead from Bank or Boat",
+      "summary": "Try for steelhead on Idaho's Clearwater River. Choose a guided bank outing or a boat trip to suit the reach you want to fish."
+    },
+    "na-us-id-005": {
+      "title": "Salmon River, Idaho: A Day After Steelhead",
+      "summary": "Spend a day after steelhead on Idaho's Salmon River. Choose a base and a stretch of river, then give the water your attention."
+    },
+    "na-us-id-006": {
+      "title": "Lake Pend Oreille: A Fishing Charter in Idaho",
+      "summary": "Head onto Lake Pend Oreille for an Idaho fishing charter. Make the lake your day's destination and settle in at the rods."
+    },
+    "na-us-id-007": {
+      "title": "Lake Coeur d'Alene: Salmon or Pike in Idaho",
+      "summary": "Choose salmon trolling or pike casting on Lake Coeur d'Alene. Each makes a different kind of fishing day on this Idaho lake."
+    },
+    "na-us-id-008": {
+      "title": "Sawtooth Mountains: Hike-In Lake Fishing in Idaho",
+      "summary": "Carry a rod into Idaho's Sawtooth Mountains for an alpine lake outing. Make room in your hike for time beside the water."
+    },
+    "na-us-mt-001": {
+      "title": "Madison River Trout Fishing in Montana",
+      "summary": "Spend a day after trout on Montana's Madison River. Choose an upper- or lower-river stretch and enjoy working the current."
+    },
+    "na-us-mt-002": {
+      "title": "Missouri River Trout Fishing Near Craig, Montana",
+      "summary": "Fish for trout on the Missouri near Craig. A tailwater float or a suitable wade makes a full Montana day on the river."
+    },
+    "na-us-mt-003": {
+      "title": "Yellowstone River: Trout in Paradise Valley",
+      "summary": "Float the Yellowstone through Paradise Valley with trout in mind. Spend a Montana fishing day moving from one cast to the next."
+    },
+    "na-us-mt-004": {
+      "title": "Gallatin River: Walk-and-Wade Trout in Montana",
+      "summary": "Take a walk-and-wade trout trip on the Gallatin River. Find a suitable stretch and enjoy a Montana day with your feet in the water."
+    },
+    "na-us-mt-005": {
+      "title": "Bighorn River: Montana Tailwater Trout Fishing",
+      "summary": "Spend a day fishing the Bighorn tailwater for trout. Pick your stretch of this Montana river and take time over each drift."
+    },
+    "na-us-mt-006": {
+      "title": "Bitterroot River Trout Fishing in Montana",
+      "summary": "Explore a stretch of the Bitterroot River for trout. A float or a wading day gives you time to settle into this Montana water."
+    },
+    "na-us-mt-007": {
+      "title": "Blackfoot River: A Montana Trout Fishing Float",
+      "summary": "Take a trout fishing float down Montana's Blackfoot River. Enjoy the changing water as each bend brings another place to cast."
+    },
+    "na-us-mt-008": {
+      "title": "Flathead Lake: Deep-Water Fishing in Montana",
+      "summary": "Head onto Flathead Lake for a deep-water fishing day. Take a charter or your own boat and make the most of time on this Montana lake."
+    },
+    "na-us-mt-009": {
+      "title": "Rock Creek Small-Stream Fishing Near Missoula",
+      "summary": "Take a rod to Rock Creek near Missoula for a small-stream outing. Enjoy time beside the water on this Montana fishing trip."
+    },
+    "na-us-mt-010": {
+      "title": "Beaverhead River: Montana Trout on the Tailwater",
+      "summary": "Fish the Beaverhead for trout on a Montana river outing. Choose a stretch below the releases and work each drift at your own pace."
+    },
+    "na-us-wy-001": {
+      "title": "Grey Reef Trout Fishing on the North Platte",
+      "summary": "Float the North Platte at Grey Reef for trout. Spend a Wyoming day fishing this river reach, with each drift bringing fresh water."
+    },
+    "na-us-wy-002": {
+      "title": "Snake River: A Trout Fishing Float Near Jackson",
+      "summary": "Make trout the focus of a Snake River float near Jackson. Spend your Wyoming day casting to the water as the boat moves downstream."
+    },
+    "na-us-wy-003": {
+      "title": "Miracle Mile: North Platte Trout in Wyoming",
+      "summary": "Fish the North Platte's Miracle Mile for trout. Make a day of this Wyoming river stretch, with open water and the next cast ahead."
+    },
+    "na-us-wy-004": {
+      "title": "Green River Trout Fishing Near Pinedale, Wyoming",
+      "summary": "Explore the Green River near Pinedale with trout in mind. Choose a Wyoming stretch and spend your day getting to know the water."
+    },
+    "na-us-wy-005": {
+      "title": "Wind River Trout Fishing Near Dubois, Wyoming",
+      "summary": "Fish the Wind River near Dubois for trout. Give yourself a day on a chosen stretch of Wyoming water, with time to linger over a cast."
+    },
+    "na-us-wy-006": {
+      "title": "Yellowstone National Park: River Trout Fishing",
+      "summary": "Take a rod to the Yellowstone River inside the national park. Make trout fishing part of your visit to this stretch of Wyoming."
+    },
+    "na-us-wy-007": {
+      "title": "Bighorn Mountains Small-Stream Fishing in Wyoming",
+      "summary": "Spend a day beside a mountain stream in Wyoming's Bighorns. Pair time outdoors with a rod and a few well-placed casts."
+    },
+    "na-us-wy-008": {
+      "title": "Flaming Gorge: Lake Fishing from Wyoming",
+      "summary": "Start from the Wyoming side for a day fishing Flaming Gorge. Choose your departure point and enjoy time out on the reservoir."
+    },
+    "na-us-co-001": {
+      "title": "Eleven Mile Canyon: South Platte Trout Fishing",
+      "summary": "Fish the South Platte through Eleven Mile Canyon for trout. Make a Colorado day of it with the canyon and current around you."
+    },
+    "rocky-mountain-alpine": {
+      "title": "Rocky Mountains: A Hike to Alpine Fishing Water",
+      "summary": "Take a rod on an alpine lake hike in the Rocky Mountains. Choose a lake with fishing in mind and save time for a cast at the end."
+    },
+    "na-us-co-003": {
+      "title": "Dream Stream: South Platte Trout in Colorado",
+      "summary": "Fish the Dream Stream for trout between the reservoirs. Open, weather-exposed water gives this South Platte outing its character."
+    },
+    "na-us-co-004": {
+      "title": "Arkansas River Trout Fishing Near Salida",
+      "summary": "Spend a day after trout on the Arkansas near Salida. A float or a wading outing puts you on a stretch of Colorado river."
+    },
+    "na-us-co-005": {
+      "title": "Fryingpan River: Colorado Tailwater Trout",
+      "summary": "Work a stretch of the Fryingpan tailwater for trout. Enjoy a Colorado river day with time to adjust your cast and settle into a drift."
+    },
+    "na-us-co-006": {
+      "title": "Roaring Fork River: A Day After Colorado Trout",
+      "summary": "Fish the Roaring Fork for trout on a Colorado day trip. Pick upper or lower river water and spend time exploring a stretch."
+    },
+    "na-us-co-007": {
+      "title": "Gunnison Gorge: A Remote River Fishing Float",
+      "summary": "Head into Gunnison Gorge for a fishing float with a more remote feel. The hike in and time on the river are both part of the trip."
+    },
+    "na-us-co-008": {
+      "title": "Animas River Trout Fishing in Durango",
+      "summary": "Fish the Animas for trout during a visit to Durango. Try town water or a guided stretch for a day beside this Colorado river."
+    },
+    "na-us-co-009": {
+      "title": "Blue Mesa Reservoir: A Colorado Trolling Trip",
+      "summary": "Spend a day trolling Blue Mesa Reservoir. Make this Colorado lake outing about time on the boat and the pull of the next bite."
+    },
+    "na-us-co-010": {
+      "title": "Steamboat Lake: Winter Ice Fishing in Colorado",
+      "summary": "Make Steamboat Lake your Colorado winter fishing stop. A guided ice trip puts the focus on the water beneath your feet."
+    },
+    "na-us-ut-001": {
+      "title": "Green River: Trout Below Flaming Gorge, Utah",
+      "summary": "Float the Green River below Flaming Gorge for trout. Choose a Utah river stretch and enjoy a day of casts from the boat."
+    },
+    "na-us-ut-002": {
+      "title": "Provo River: A Wading Trip for Utah Trout",
+      "summary": "Choose the middle or lower Provo for a Utah trout outing. Spend time beside the river and work a stretch at your own pace."
+    },
+    "na-us-ut-003": {
+      "title": "Weber River: A Utah Trout Fishing Day",
+      "summary": "Try for trout on an accessible stretch of the Weber River. Take a break beside this Utah water and give each cast a little time."
+    },
+    "na-us-ut-004": {
+      "title": "Strawberry Reservoir: Open-Water Fishing in Utah",
+      "summary": "Take a boat onto Strawberry Reservoir for a day of open-water fishing. Enjoy a Utah lake trip with room to follow the bite."
+    },
+    "na-us-ut-005": {
+      "title": "Flaming Gorge: Kokanee Fishing from Utah",
+      "summary": "Start from Utah for a kokanee trip on Flaming Gorge. Make these fish the focus of a day out on the reservoir with a rod in hand."
+    },
+    "na-us-ut-006": {
+      "title": "Lake Powell Bass Fishing from the Utah Side",
+      "summary": "Head onto Lake Powell from Utah for bass. Choose a boat outing or suitable shoreline and spend the day exploring the reservoir."
+    },
+    "na-us-ut-007": {
+      "title": "Uinta Mountains: Hike to Utah's Fishing Lakes",
+      "summary": "Pack a rod for an alpine lake hike in Utah's Uinta Mountains. Choose a fishing lake and leave yourself time to cast once you arrive."
+    },
+    "na-us-nd-001": {
+      "title": "Devils Lake: North Dakota Walleye by Boat",
+      "summary": "Take a boat onto Devils Lake for walleye. Spend a North Dakota day on open water, with time to search out the next bite."
+    },
+    "na-us-nd-002": {
+      "title": "Lake Sakakawea: North Dakota Walleye Fishing",
+      "summary": "Make walleye the target on Lake Sakakawea. Choose a section of the reservoir and spend your North Dakota day on the water."
+    },
+    "na-us-nd-003": {
+      "title": "Red River Catfish Fishing Near Fargo",
+      "summary": "Try for catfish on the Red River near Fargo. Start from the North Dakota side and settle in for a day with this river fish in mind."
+    },
+    "na-us-nd-004": {
+      "title": "Lake Audubon: North Dakota Ice Fishing",
+      "summary": "Trade open water for a winter outing on Lake Audubon. Spend a North Dakota fishing day focused on the fish beneath the ice."
+    },
+    "na-us-sd-001": {
+      "title": "Lake Oahe Walleye Fishing from Pierre",
+      "summary": "Head out from Pierre for walleye on Lake Oahe. Make the South Dakota side of this reservoir your base for a day at the rods."
+    },
+    "na-us-sd-002": {
+      "title": "Rapid Creek Small-Stream Fishing in the Black Hills",
+      "summary": "Take a rod to Rapid Creek in South Dakota's Black Hills. Spend time exploring a stream section and fishing at a slower pace."
+    },
+    "na-us-sd-003": {
+      "title": "Lake Sharpe: South Dakota Walleye Fishing",
+      "summary": "Fish Lake Sharpe for walleye on a South Dakota outing. Enjoy a reservoir day where the river's current remains part of the story."
+    },
+    "na-us-sd-004": {
+      "title": "Waubay Lake: A South Dakota Ice Fishing Trip",
+      "summary": "Spend a winter fishing day on Waubay Lake. Make time for a South Dakota ice outing and the anticipation of a bite below."
+    },
+    "na-us-ne-001": {
+      "title": "Lake McConaughy: Nebraska Walleye by Boat",
+      "summary": "Head onto Lake McConaughy for a walleye outing in Nebraska. Pick a launch and give yourself a full day to work the reservoir."
+    },
+    "na-us-ne-002": {
+      "title": "Niobrara River Trout Fishing in Nebraska",
+      "summary": "Explore a trout stretch of Nebraska's Niobrara River. Make a small-stream outing of it and enjoy time with a rod beside the water."
+    },
+    "na-us-ne-003": {
+      "title": "Harlan County Reservoir: Nebraska Walleye Fishing",
+      "summary": "Make walleye the focus of a trip to Harlan County Reservoir. Spend a Nebraska fishing day getting to know this lake's water."
+    },
+    "na-us-ks-001": {
+      "title": "Milford Lake: Kansas Catfish from Bank or Boat",
+      "summary": "Fish for catfish at Milford Lake in Kansas. Choose an accessible bank or a guided boat day and settle in for the next bite."
+    },
+    "na-us-ks-002": {
+      "title": "Wilson Lake, Kansas: A Day of Bass Fishing",
+      "summary": "Take a bass fishing trip to Wilson Lake in Kansas. Choose your launch and make a day of exploring the reservoir with a rod."
+    },
+    "na-us-ks-003": {
+      "title": "Clinton Lake, Kansas: Panfish with the Family",
+      "summary": "Keep it simple with a panfish trip to Clinton Lake. A short outing from an accessible bank makes room for the family to fish."
+    },
+    "na-us-ok-001": {
+      "title": "Lake Texoma Bass Fishing from Oklahoma",
+      "summary": "Set out from Oklahoma for a bass fishing day on Lake Texoma. A charter gives you time on the lake with the rods ready to go."
+    },
+    "na-us-ok-002": {
+      "title": "Lower Mountain Fork Trout Fishing in Oklahoma",
+      "summary": "Fish the Lower Mountain Fork for trout. Choose a river section and spend an Oklahoma day following the current with your casts."
+    },
+    "na-us-ok-003": {
+      "title": "Grand Lake O' the Cherokees: Oklahoma Bass Fishing",
+      "summary": "Put bass at the heart of a Grand Lake O' the Cherokees trip. Spend a day on the boat exploring this Oklahoma reservoir."
+    },
+    "na-us-ok-004": {
+      "title": "Lake Eufaula, Oklahoma: Panfish with the Family",
+      "summary": "Spend a family fishing day after panfish on Lake Eufaula. Choose a bank outing or a boat trip on this Oklahoma reservoir."
+    },
+    "na-us-ok-005": {
+      "title": "Illinois River: Smallmouth Floats Near Tahlequah",
+      "summary": "Float the Illinois River near Tahlequah with smallmouth in mind. Make the casts, and the water between them, part of your day."
+    },
+    "na-us-mn-001": {
+      "title": "Lake of the Woods: Walleye from Minnesota",
+      "summary": "Launch from Minnesota for a walleye trip on Lake of the Woods. Spend the day exploring the lake with your next bite in mind."
+    },
+    "na-us-mn-002": {
+      "title": "Boundary Waters: Canoe Camping and Lake Fishing",
+      "summary": "Pack the rods for a Boundary Waters canoe trip. Share a camp, paddle between lakes and leave plenty of time for fishing."
+    },
+    "na-us-mn-003": {
+      "title": "Mille Lacs Lake: Minnesota Smallmouth Fishing",
+      "summary": "Make smallmouth the focus of a day on Mille Lacs. Enjoy time on this Minnesota lake with a bass rod and another cast ahead."
+    },
+    "na-us-mn-004": {
+      "title": "Leech Lake: A Minnesota Predator Fishing Trip",
+      "summary": "Set aside a day on Leech Lake for freshwater predator fishing. A focused outing gives you time to work the water with purpose."
+    },
+    "na-us-mn-005": {
+      "title": "Lake Winnibigoshish: Minnesota Walleye Fishing",
+      "summary": "Fish Lake Winnibigoshish for walleye on a Minnesota lake trip. Choose open water or a winter outing to suit your visit."
+    },
+    "na-us-mn-006": {
+      "title": "Lake Vermilion: A Minnesota Walleye Fishing Day",
+      "summary": "Take a walleye rod to Lake Vermilion for a Minnesota outing. Spend the day getting to know the water with one target in mind."
+    },
+    "na-us-mn-007": {
+      "title": "Rainy River: Sturgeon Fishing in Minnesota",
+      "summary": "Make sturgeon the reason for a trip to the Rainy River. Spend a Minnesota river day focused on this distinctive fish."
+    },
+    "na-us-mn-008": {
+      "title": "Duluth: Open-Water Fishing on Lake Superior",
+      "summary": "Leave Duluth for a fishing day on Lake Superior. A big-water charter puts the boat, the rods and the lake at the center of the trip."
+    },
+    "na-us-mn-009": {
+      "title": "Root River: Trout in Southeast Minnesota",
+      "summary": "Explore a branch of the Root River for trout. Spend a day on spring-fed water in southeast Minnesota with time for each cast."
+    },
+    "na-us-mn-010": {
+      "title": "Upper Red Lake: Minnesota Ice Fishing",
+      "summary": "Settle into a winter fishing trip on Upper Red Lake. Choose an outing with local access and lodging for time focused on the ice."
+    },
+    "na-us-wi-001": {
+      "title": "Green Bay, Wisconsin: A Walleye Fishing Day",
+      "summary": "Head onto Green Bay for a walleye trip from Wisconsin. Choose a departure point and enjoy a day on the boat working the bay."
+    },
+    "na-us-wi-002": {
+      "title": "West Fork Kickapoo: Trout in Wisconsin's Driftless",
+      "summary": "Spend a day after trout on the West Fork Kickapoo. Spring-fed water makes this a stream-focused trip in Wisconsin's Driftless."
+    },
+    "na-us-wi-003": {
+      "title": "Lake Winnebago Walleye Fishing in Wisconsin",
+      "summary": "Try for walleye on Lake Winnebago and its connected river water. Make a Wisconsin fishing day of this lake-and-river system."
+    },
+    "na-us-wi-004": {
+      "title": "Eau Claire Chain: Wisconsin Predator Fishing",
+      "summary": "Fish a lake in the Eau Claire Chain for freshwater predators. Give yourself a day on the boat in northwest Wisconsin."
+    },
+    "na-us-wi-005": {
+      "title": "Chippewa Flowage: Muskie Fishing in Wisconsin",
+      "summary": "Make muskie the target on the Chippewa Flowage. Spend a Wisconsin day casting, searching the water and waiting for that strike."
+    },
+    "na-us-wi-006": {
+      "title": "Sturgeon Bay Bass Fishing in Door County",
+      "summary": "Fish for bass around Sturgeon Bay in Door County. Choose bay water or a lake outing that suits the day on Wisconsin's coast."
+    },
+    "na-us-wi-007": {
+      "title": "Milwaukee: A Lake Michigan Trolling Charter",
+      "summary": "Head out from Milwaukee for a trolling charter on Lake Michigan. Leave the city behind for a day with the rods over open water."
+    },
+    "na-us-wi-008": {
+      "title": "Apostle Islands: Lake Superior Fishing by Boat",
+      "summary": "Explore Lake Superior water around the Apostle Islands on a boat trip. Make fishing part of your visit to this Wisconsin shore."
+    },
+    "na-us-wi-009": {
+      "title": "Bois Brule River Steelhead Fishing in Wisconsin",
+      "summary": "Follow the steelhead run to the Bois Brule River. Choose an accessible section and spend a Wisconsin day working the current."
+    },
+    "na-us-wi-010": {
+      "title": "Petenwell Flowage Ice Fishing in Wisconsin",
+      "summary": "Spend a winter fishing day on the Petenwell Flowage. An ice outing gives you time to watch the line and wait for a bite below."
+    },
+    "na-us-mi-001": {
+      "title": "Manistee: A Lake Michigan Fishing Charter",
+      "summary": "Head onto Lake Michigan from Manistee for a fishing charter. Make the open water your day's destination and settle in at the rods."
+    },
+    "na-us-mi-002": {
+      "title": "Au Sable River: Michigan Trout by Float or Wade",
+      "summary": "Fish the Au Sable for trout on a Michigan river trip. Choose a float or a wading stretch and take time to explore a branch."
+    },
+    "na-us-mi-003": {
+      "title": "Pere Marquette River: Michigan Steelhead Fishing",
+      "summary": "Make steelhead the focus on the Pere Marquette River. Match your visit to the run and enjoy a day beside this Michigan water."
+    },
+    "na-us-mi-004": {
+      "title": "Manistee River: Steelhead Below Tippy Dam",
+      "summary": "Head to the Manistee River below Tippy Dam for steelhead. Spend a Michigan day working this stretch of moving water."
+    },
+    "na-us-mi-005": {
+      "title": "Muskegon River: Steelhead from Bank or Boat",
+      "summary": "Try for steelhead on Michigan's Muskegon River. Pick a boat outing or suitable bank water and spend the day with the current."
+    },
+    "na-us-mi-006": {
+      "title": "Lake St. Clair Predator Fishing from Michigan",
+      "summary": "Start from Michigan for freshwater predator fishing on Lake St. Clair. Make a day of the lake with a focused trip at the rods."
+    },
+    "na-us-mi-007": {
+      "title": "Saginaw Bay: A Michigan Walleye Fishing Trip",
+      "summary": "Take a boat onto Saginaw Bay for walleye. Choose your launch and enjoy a Michigan fishing day with the bay stretching ahead."
+    },
+    "na-us-mi-008": {
+      "title": "Detroit River: Jigging for Michigan Walleye",
+      "summary": "Work a jig in the Detroit River's current for walleye. A boat or guided outing puts this Michigan river fish at the center of the day."
+    },
+    "na-us-mi-009": {
+      "title": "Grand Traverse Bay Bass Fishing in Michigan",
+      "summary": "Try for bass in Grand Traverse Bay. Choose an arm of the bay and spend your Michigan outing casting and exploring the water."
+    },
+    "na-us-mi-010": {
+      "title": "Marquette: A Lake Superior Fishing Charter",
+      "summary": "Head out from Marquette for a fishing charter on Lake Superior. Make a big-water day of it from this Michigan departure point."
+    },
+    "na-us-mi-011": {
+      "title": "Houghton Lake: A Michigan Ice Fishing Day",
+      "summary": "Spend a winter day ice fishing on Houghton Lake. A local outing gives you time to enjoy the wait and the next bite beneath the ice."
+    },
+    "na-us-mi-012": {
+      "title": "Little Bay de Noc Walleye Fishing from Escanaba",
+      "summary": "Start at Escanaba for a walleye day on Little Bay de Noc. Enjoy an open-water outing on this stretch of Michigan's coast."
+    },
+    "na-us-il-001": {
+      "title": "Chicago: A Fishing Charter on Lake Michigan",
+      "summary": "Trade time in the city for a fishing charter from Chicago. Head onto Lake Michigan and spend a day with a rod over open water."
+    },
+    "na-us-il-002": {
+      "title": "Rend Lake, Illinois: Panfish from Bank or Boat",
+      "summary": "Take the family after panfish at Rend Lake. Choose an accessible bank or a boat outing and enjoy time on this Illinois water."
+    },
+    "na-us-il-003": {
+      "title": "Kankakee River: Illinois Smallmouth Fishing",
+      "summary": "Fish the Kankakee for smallmouth on an Illinois river day. Choose a float or a bank stretch and work the current at your own pace."
+    },
+    "na-us-il-004": {
+      "title": "Illinois River: Walleye Near Starved Rock",
+      "summary": "Try for walleye on the Illinois River near Starved Rock. Fish from an accessible bank or take a guided boat onto the current."
+    },
+    "na-us-in-001": {
+      "title": "Michigan City: Lake Michigan Fishing from Indiana",
+      "summary": "Leave Michigan City for a fishing charter on Lake Michigan. Spend your Indiana boat day with open water and the rods ahead."
+    },
+    "na-us-in-002": {
+      "title": "Lake Monroe, Indiana: A Family Panfish Trip",
+      "summary": "Spend a short fishing trip after panfish at Lake Monroe. Choose a shore spot or a boat outing for time together on this Indiana lake."
+    },
+    "na-us-in-003": {
+      "title": "St. Joseph River: Steelhead Near South Bend",
+      "summary": "Try steelhead fishing on the St. Joseph River near South Bend. Make an Indiana river day of it when the migration reaches this water."
+    },
+    "na-us-in-004": {
+      "title": "White River: Smallmouth Fishing in Central Indiana",
+      "summary": "Float a stretch of the White River for smallmouth. Spend a central Indiana day casting along the river as the boat moves downstream."
+    },
+    "na-us-oh-001": {
+      "title": "Port Clinton: Lake Erie Walleye by Charter",
+      "summary": "Head out from Port Clinton for Lake Erie walleye. Choose a drift or a trolling charter for an Ohio day with the rods at work."
+    },
+    "na-us-oh-002": {
+      "title": "Mad River, Ohio: Small-Stream Trout Fishing",
+      "summary": "Find a cold-water stretch of Ohio's Mad River for trout. Make a small-stream day of it and enjoy the time between casts."
+    },
+    "na-us-oh-003": {
+      "title": "Maumee River Walleye Fishing on the Run",
+      "summary": "Fish the Maumee for walleye when the run brings anglers to the river. Spend an Ohio day focused on the current and the next cast."
+    },
+    "na-us-oh-004": {
+      "title": "Grand River, Ohio: Lake Erie Steelhead Fishing",
+      "summary": "Try for steelhead on Ohio's Grand River, a Lake Erie tributary. Let the flow shape your day as you work a stretch of water."
+    },
+    "na-us-oh-005": {
+      "title": "Alum Creek Lake Predator Fishing in Ohio",
+      "summary": "Make freshwater predators the focus at Alum Creek Lake. Take a boat onto this Ohio water and give yourself time to search."
+    },
+    "na-us-oh-006": {
+      "title": "Ohio River Catfish Fishing Near Cincinnati",
+      "summary": "Try for catfish on the Ohio River near Cincinnati. Choose Ohio-side access and settle into a day with this river fish in mind."
+    },
+    "na-us-ia-001": {
+      "title": "Spirit Lake Walleye Fishing in the Iowa Great Lakes",
+      "summary": "Make Spirit Lake your walleye stop in the Iowa Great Lakes. Spend the day on this water with time to look for the next bite."
+    },
+    "na-us-ia-002": {
+      "title": "Big Spring Trout Fishing in Northeast Iowa",
+      "summary": "Spend a day after trout in northeast Iowa's Big Spring water. A spring-fed stream outing keeps the focus on the next cast."
+    },
+    "na-us-ia-003": {
+      "title": "Mississippi River Pool 9: Walleye from Iowa",
+      "summary": "Launch from Iowa for walleye on Pool 9 of the Mississippi. Spend the day exploring a stretch of river with a rod in hand."
+    },
+    "na-us-mo-001": {
+      "title": "Lake Taneycomo: Missouri Trout from Bank or Boat",
+      "summary": "Fish Lake Taneycomo for trout on a Missouri outing. Pick a bank session or a guided boat day and enjoy this moving water."
+    },
+    "na-us-mo-002": {
+      "title": "Table Rock Lake Bass Fishing in Missouri",
+      "summary": "Explore an arm of Table Rock Lake with bass in mind. Choose a launch and spend a Missouri day working your way along the water."
+    },
+    "na-us-mo-003": {
+      "title": "Lake of the Ozarks: A Missouri Bass Fishing Day",
+      "summary": "Take a bass trip to Lake of the Ozarks. Make time to explore the Missouri reservoir by boat and enjoy the search for a bite."
+    },
+    "na-us-mo-004": {
+      "title": "Current River: Smallmouth Fishing Downstream",
+      "summary": "Fish the downstream stretches of Missouri's Current River for smallmouth. Make a river outing of it, with a fresh cast at each stop."
+    },
+    "na-us-mo-005": {
+      "title": "Truman Lake, Missouri: Panfish with the Family",
+      "summary": "Try for panfish at Truman Lake in Missouri. Choose a guided boat day or a simple shore outing and enjoy time together at the water."
+    },
+    "na-us-me-001": {
+      "title": "Moosehead Lake: A Maine Lake Fishing Trip",
+      "summary": "Make Moosehead Lake the focus of a Maine fishing day. Choose a charter or time on shore and enjoy a trip built around the water."
+    },
+    "na-us-me-002": {
+      "title": "Upper Kennebec River Trout Fishing in Maine",
+      "summary": "Fish the upper Kennebec for trout on a Maine river trip. Take a guided drift or choose suitable water for a day of wading."
+    },
+    "na-us-me-003": {
+      "title": "Penobscot Bay: A Maine Inshore Fishing Day",
+      "summary": "Head onto Penobscot Bay for an inshore fishing outing. Choose a departure base and spend part of your Maine visit on the water."
+    },
+    "na-us-me-004": {
+      "title": "Rangeley Lake: Trolling and Shore Fishing in Maine",
+      "summary": "Make Rangeley Lake a stop on your Maine fishing trip. Choose trolling from a boat or time on shore with a rod in hand."
+    },
+    "na-us-me-005": {
+      "title": "Grand Lake Stream Small-Stream Fishing in Maine",
+      "summary": "Spend a day beside Grand Lake Stream with a rod. Enjoy a small-stream outing focused on this water in eastern Maine."
+    },
+    "na-us-me-006": {
+      "title": "Belgrade Lakes: A Maine Bass Fishing Trip",
+      "summary": "Choose a lake in the Belgrade Lakes for a day after bass. Take a boat out and make fishing the focus of your Maine visit."
+    },
+    "na-us-me-007": {
+      "title": "Moosehead Lake: A Guided Ice Fishing Day in Maine",
+      "summary": "See Moosehead Lake in winter on a guided ice fishing outing. Spend a Maine day focused on what moves beneath the ice."
+    },
+    "na-us-nh-001": {
+      "title": "Lake Winnipesaukee: New Hampshire Lake Fishing",
+      "summary": "Make Lake Winnipesaukee your New Hampshire fishing stop. Choose a trolling trip or time on shore and enjoy a day by the lake."
+    },
+    "na-us-nh-002": {
+      "title": "Upper Connecticut River: Trout Near Pittsburg",
+      "summary": "Fish the upper Connecticut near Pittsburg for trout. Spend a New Hampshire day on a river stretch with the current ahead."
+    },
+    "na-us-nh-003": {
+      "title": "Piscataqua River: Tidal Fishing from Portsmouth",
+      "summary": "Explore the Piscataqua from Portsmouth on a tidal fishing trip. Choose a boat outing or shore access on the New Hampshire side."
+    },
+    "na-us-nh-004": {
+      "title": "Ellis River Small-Stream Fishing in New Hampshire",
+      "summary": "Take a rod to the Ellis River in the White Mountains. Enjoy a New Hampshire stream outing with time to pause beside the water."
+    },
+    "na-us-vt-001": {
+      "title": "Lake Champlain Bass Fishing from Vermont",
+      "summary": "Start from Vermont for a bass fishing day on Lake Champlain. Take a boat out and spend time exploring your chosen stretch of lake."
+    },
+    "na-us-vt-002": {
+      "title": "Battenkill River Trout Fishing in Vermont",
+      "summary": "Fish the Vermont stretch of the Battenkill for trout. Choose suitable wading water and make a day of careful casts and river time."
+    },
+    "na-us-vt-003": {
+      "title": "Otter Creek: A Vermont Trout Fishing Day",
+      "summary": "Try for trout on a chosen stretch of Otter Creek. Give yourself a Vermont river day with time to explore the water at your own pace."
+    },
+    "na-us-vt-004": {
+      "title": "Lake Memphremagog: Lake Fishing from Vermont",
+      "summary": "Fish Lake Memphremagog from the Vermont side. Make this border lake your day's destination and enjoy time with a rod on the water."
+    },
+    "na-us-ma-001": {
+      "title": "Monomoy: Shallow-Water Fishing on Cape Cod",
+      "summary": "Explore shallow water around Monomoy by boat. Let the tide set the pace for an inshore fishing day during your Cape Cod visit."
+    },
+    "na-us-ma-002": {
+      "title": "Deerfield River: Trout by Float or Wade",
+      "summary": "Fish the Deerfield for trout on a Massachusetts river trip. Choose a float or suitable wading water for a day working the current."
+    },
+    "na-us-ma-003": {
+      "title": "Cape Cod Canal: Fishing from the Rocky Banks",
+      "summary": "Cast from the rocky banks of the Cape Cod Canal. Strong current gives this shore trip a different feel from a day on the beach."
+    },
+    "na-us-ma-004": {
+      "title": "Gloucester: An Offshore Tuna Fishing Charter",
+      "summary": "Leave Gloucester for a dedicated tuna charter. Spend a Massachusetts boat day offshore with the rods set for your chosen target."
+    },
+    "na-us-ma-005": {
+      "title": "Martha's Vineyard: A Day of Beach Fishing",
+      "summary": "Bring a surf rod to Martha's Vineyard for a beach fishing outing. Choose an accessible stretch and enjoy time beside the waves."
+    },
+    "na-us-ma-006": {
+      "title": "Quabbin Reservoir: Lake Fishing in Massachusetts",
+      "summary": "Make Quabbin Reservoir your next Massachusetts fishing stop. Enjoy a lake day with a rod in hand and time away from town."
+    },
+    "na-us-ri-001": {
+      "title": "Narragansett Bay: Rhode Island Inshore Fishing",
+      "summary": "Fish Narragansett Bay from shore or a guide's boat. Spend a Rhode Island day exploring tidal water with the next bite in mind."
+    },
+    "na-us-ri-002": {
+      "title": "Block Island Inshore Fishing in Rhode Island",
+      "summary": "Fish the water around Block Island on a coastal outing. Start from the island or take a mainland charter for your Rhode Island trip."
+    },
+    "na-us-ri-003": {
+      "title": "Wood River Small-Stream Fishing in Rhode Island",
+      "summary": "Spend a day fishing Rhode Island's Wood River. Keep the trip focused on a stream stretch and take your time over each cast."
+    },
+    "na-us-ct-001": {
+      "title": "Farmington River: Connecticut Tailwater Trout",
+      "summary": "Try for trout on the Farmington River tailwater. Choose suitable wading water for a Connecticut day of casts and drifts."
+    },
+    "na-us-ct-002": {
+      "title": "Long Island Sound Inshore Fishing from Connecticut",
+      "summary": "Head onto Long Island Sound from Connecticut for an inshore outing. Make the coast part of your visit with time at the rods."
+    },
+    "na-us-ct-003": {
+      "title": "Housatonic River Trout Fishing Near Cornwall",
+      "summary": "Fish the Housatonic near Cornwall for trout. Choose a suitable river day and enjoy time with a rod on this Connecticut stretch."
+    },
+    "na-us-ny-001": {
+      "title": "Salmon River Steelhead Fishing Near Pulaski",
+      "summary": "Make steelhead the focus of a Salmon River trip near Pulaski. Choose your stretch and enjoy a day on this New York river."
+    },
+    "na-us-ny-002": {
+      "title": "Beaver Kill Trout Fishing in the Catskills",
+      "summary": "Take a trout rod to the Beaver Kill in the Catskills. Spend a day on an accessible stretch, with time to watch the water and cast."
+    },
+    "na-us-ny-003": {
+      "title": "West Branch Delaware: Trout by Float or Wade",
+      "summary": "Explore the West Branch Delaware for trout. Choose a float or suitable wading water and enjoy a day working this river's current."
+    },
+    "na-us-ny-004": {
+      "title": "Oswego: A Lake Ontario Fishing Charter",
+      "summary": "Leave Oswego for a fishing charter on Lake Ontario. Spend a New York day out on the boat with the trolling rods at work."
+    },
+    "na-us-ny-005": {
+      "title": "Montauk, New York: Surf and Inshore Fishing",
+      "summary": "Make Montauk your base for an inshore fishing trip. Cast from the surf or take a boat outing to suit your time on the coast."
+    },
+    "na-us-ny-006": {
+      "title": "Ausable River Trout Fishing in the Adirondacks",
+      "summary": "Fish a branch of the Ausable for trout in the Adirondacks. Make time for the walk to the river and a day of casts on New York water."
+    },
+    "na-us-ny-007": {
+      "title": "Lake Champlain Bass Fishing from New York",
+      "summary": "Start from New York for a bass fishing trip on Lake Champlain. Choose a departure point and enjoy a day out on the lake."
+    },
+    "na-us-ny-008": {
+      "title": "Thousand Islands: St. Lawrence Predator Fishing",
+      "summary": "Try freshwater predator fishing on the St. Lawrence around the Thousand Islands. A focused boat trip makes the river your day out."
+    },
+    "na-us-ny-009": {
+      "title": "Cayuga Lake: Trolling in New York's Finger Lakes",
+      "summary": "Head onto Cayuga Lake for a trolling trip in the Finger Lakes. Spend a New York day on the boat with the next bite in mind."
+    },
+    "na-us-ny-010": {
+      "title": "Hudson River: Fishing the Tidal Water in New York",
+      "summary": "Explore a tidal stretch of the Hudson River with a rod. Choose a shore outing or a boat trip for time on this New York water."
+    },
+    "na-us-nj-001": {
+      "title": "Raritan Bay Inshore Fishing in New Jersey",
+      "summary": "Head onto Raritan Bay from New Jersey for an inshore outing. Fish bait or lures and make a coastal boat day of the trip."
+    },
+    "na-us-nj-002": {
+      "title": "Delaware River: Smallmouth from New Jersey",
+      "summary": "Fish the Delaware from New Jersey with smallmouth in mind. A river float gives you time to cast and explore a stretch of water."
+    },
+    "na-us-nj-003": {
+      "title": "Island Beach State Park: New Jersey Surf Fishing",
+      "summary": "Cast into the surf at Island Beach State Park. Make a New Jersey beach day of it, with the waves and your next bite ahead."
+    },
+    "na-us-nj-004": {
+      "title": "Manasquan Bottom Fishing off the Jersey Shore",
+      "summary": "Set out from Manasquan for a bottom fishing trip off the Jersey Shore. Spend a day on the boat with a line down in saltwater."
+    },
+    "na-us-nj-005": {
+      "title": "South Branch Raritan: New Jersey Stream Fishing",
+      "summary": "Take a rod to a public stretch of the South Branch Raritan. Enjoy a New Jersey stream outing and time beside the water."
+    },
+    "na-us-pa-001": {
+      "title": "Spring Creek: Trout in Pennsylvania's Centre County",
+      "summary": "Fish spring-fed water on Spring Creek in Centre County. Make a Pennsylvania trout day of it and enjoy working a careful cast."
+    },
+    "na-us-pa-002": {
+      "title": "Susquehanna River: Smallmouth Near Harrisburg",
+      "summary": "Fish the Susquehanna near Harrisburg for smallmouth. Choose a guided jet boat, a paddle trip or time casting from the bank."
+    },
+    "na-us-pa-003": {
+      "title": "Penns Creek: A Pennsylvania Trout Fishing Day",
+      "summary": "Walk to a stretch of Penns Creek for trout. Spend a Pennsylvania river day watching the water and taking time with each cast."
+    },
+    "na-us-pa-004": {
+      "title": "Little Juniata River Trout Fishing in Pennsylvania",
+      "summary": "Take a trout rod to the Little Juniata River. Pick an accessible stretch and enjoy a Pennsylvania day beside moving water."
+    },
+    "na-us-pa-005": {
+      "title": "Letort Spring Run: Pennsylvania Trout on the Fly",
+      "summary": "Bring a careful presentation to the trout of Letort Spring Run. Spend a Pennsylvania day focused on this spring-fed water."
+    },
+    "na-us-pa-006": {
+      "title": "Lake Erie Walleye Fishing from Pennsylvania",
+      "summary": "Head out from Erie for a walleye trip on Lake Erie. Start on the Pennsylvania shore and make a full boat day of your visit."
+    },
+    "na-us-pa-007": {
+      "title": "Elk Creek: Lake Erie Steelhead in Pennsylvania",
+      "summary": "Try for steelhead on Pennsylvania's Elk Creek. A day on this Lake Erie tributary puts changing flows and river casts in focus."
+    },
+    "na-us-pa-008": {
+      "title": "Raystown Lake: A Pennsylvania Lake Fishing Trip",
+      "summary": "Take a guided fishing trip on Raystown Lake. Spend a Pennsylvania day working the lake's depths with the boat and rods ready."
+    },
+    "na-us-de-001": {
+      "title": "Indian River Inlet Shore Fishing in Delaware",
+      "summary": "Cast beside the current at Indian River Inlet. This Delaware shore outing puts rocky access and tidal water at the heart of the day."
+    },
+    "na-us-de-002": {
+      "title": "Lewes Bottom Fishing on Delaware Bay",
+      "summary": "Set out from Lewes for a day of bottom fishing on Delaware Bay. Enjoy a coastal boat trip with time to settle in at the rods."
+    },
+    "na-us-de-003": {
+      "title": "Brandywine Creek Bass Fishing in Delaware",
+      "summary": "Try for bass on the Delaware stretch of Brandywine Creek. Pick a suitable section and spend a day with a rod beside the water."
+    },
+    "na-us-md-001": {
+      "title": "Chesapeake Bay Inshore Fishing from Maryland",
+      "summary": "Head onto the Chesapeake from Maryland for an inshore fishing trip. Choose a departure point and make the bay your day out."
+    },
+    "na-us-md-002": {
+      "title": "Gunpowder Falls: Maryland Tailwater Trout Fishing",
+      "summary": "Fish the Gunpowder Falls tailwater for trout. Enjoy a Maryland river day with time to work an accessible stretch of current."
+    },
+    "na-us-md-003": {
+      "title": "Ocean City, Maryland Offshore Fishing by Charter",
+      "summary": "Leave Ocean City for an offshore fishing charter. Choose a run that suits your time and make a Maryland boat day of it."
+    },
+    "na-us-md-004": {
+      "title": "Deep Creek Lake Walleye Fishing in Maryland",
+      "summary": "Take a walleye trip to Deep Creek Lake. Choose an open-water outing and spend a Maryland day exploring the lake with a rod."
+    },
+    "na-us-md-005": {
+      "title": "Potomac River: Smallmouth Fishing from Maryland",
+      "summary": "Fish a nontidal stretch of the Potomac for smallmouth. Start from Maryland and enjoy a river day with another cast ahead."
+    },
+    "na-us-va-001": {
+      "title": "Virginia Beach Inshore Fishing on Chesapeake Bay",
+      "summary": "Start from Virginia Beach for a lower Chesapeake Bay fishing trip. Spend the day on inshore water with the rods ready."
+    },
+    "na-us-va-002": {
+      "title": "Shenandoah River: A Virginia Smallmouth Float",
+      "summary": "Float a fork of the Shenandoah with smallmouth in mind. Enjoy a Virginia river day as each bend brings another place to cast."
+    },
+    "na-us-va-003": {
+      "title": "Jackson River: Virginia Tailwater Trout Fishing",
+      "summary": "Try for trout on the Jackson River tailwater. Spend a Virginia day working an accessible stretch and enjoying the current."
+    },
+    "na-us-va-004": {
+      "title": "Mossy Creek: Spring-Fed Trout Fishing in Virginia",
+      "summary": "Bring a careful cast to Mossy Creek for trout. Spend a Virginia stream day focused on presentation and the water in front of you."
+    },
+    "na-us-va-005": {
+      "title": "Smith Mountain Lake: A Virginia Bass Fishing Trip",
+      "summary": "Head onto Smith Mountain Lake for bass. Choose a departure area and spend your Virginia fishing day exploring the reservoir."
+    },
+    "na-us-va-006": {
+      "title": "James River: Catfish on Virginia's Tidal Water",
+      "summary": "Try for catfish on the tidal James River. Choose a guided boat outing or a bank session for a Virginia day at the water."
+    },
+    "na-us-va-007": {
+      "title": "South Holston Reservoir: Lake Fishing from Virginia",
+      "summary": "Launch from Virginia for a day fishing South Holston Reservoir. Enjoy time on the boat with this border lake as your backdrop."
+    },
+    "na-us-wv-001": {
+      "title": "New River: A Smallmouth Fishing Float in West Virginia",
+      "summary": "Float the New River with smallmouth in mind. Choose a guided raft trip and spend a West Virginia day casting along the current."
+    },
+    "na-us-wv-002": {
+      "title": "Upper Elk River Trout Fishing in West Virginia",
+      "summary": "Fish a trout stretch of the upper Elk River. Make a West Virginia day of spring-fed water, careful casts and time outdoors."
+    },
+    "na-us-wv-003": {
+      "title": "Cranberry River: Walk-In Fishing in West Virginia",
+      "summary": "Carry a rod to the Cranberry River for a stream fishing outing. Make the walk part of a West Virginia day beside the water."
+    },
+    "na-us-wv-004": {
+      "title": "Summersville Lake: West Virginia Bass Fishing",
+      "summary": "Try for bass in the clear water of Summersville Lake. Choose a boat outing or suitable shore access for a West Virginia lake day."
+    },
+    "na-us-ky-001": {
+      "title": "Cumberland River: Trout Below Wolf Creek Dam",
+      "summary": "Fish for trout on the Cumberland below Wolf Creek Dam. Choose a guided drift or bank access for a Kentucky river outing."
+    },
+    "na-us-ky-002": {
+      "title": "Kentucky Lake: A Family Panfish Trip from Kentucky",
+      "summary": "Start from Kentucky for a panfish trip on Kentucky Lake. Pick an accessible part of the lake and enjoy time with the family."
+    },
+    "na-us-ky-003": {
+      "title": "Dale Hollow Bass Fishing from Kentucky",
+      "summary": "Head out from Kentucky for a bass trip on Dale Hollow. Spend a day exploring the lake with your next cast and bite in mind."
+    },
+    "na-us-ky-004": {
+      "title": "Cave Run Lake: Kentucky Predator Fishing",
+      "summary": "Make freshwater predators the focus at Cave Run Lake. Spend a Kentucky fishing day with time to work the water cast by cast."
+    },
+    "na-us-ky-005": {
+      "title": "Green River Lake: A Kentucky Family Panfish Trip",
+      "summary": "Take the family after panfish at Green River Lake. Choose a bank outing or a boat day and enjoy time on this Kentucky water."
+    },
+    "na-us-tn-001": {
+      "title": "South Holston River: Tennessee Trout by Float or Wade",
+      "summary": "Fish the South Holston River for trout on a Tennessee outing. Choose a float or suitable wading water as the releases allow."
+    },
+    "na-us-tn-002": {
+      "title": "Chickamauga Lake: A Tennessee Bass Fishing Day",
+      "summary": "Take a bass rod to Chickamauga Lake. Pick a section of the Tennessee reservoir and spend the day looking for the next bite."
+    },
+    "na-us-tn-003": {
+      "title": "Watauga River: Tailwater Trout Fishing in Tennessee",
+      "summary": "Fish the Watauga tailwater for trout. Choose a suitable stretch for your Tennessee river day and take time over each drift."
+    },
+    "na-us-tn-004": {
+      "title": "Caney Fork River: A Tennessee Trout Fishing Float",
+      "summary": "Float the Caney Fork with trout in mind. Spend a Tennessee day working the river from the boat as fresh water comes into reach."
+    },
+    "na-us-tn-005": {
+      "title": "Dale Hollow Bass Fishing from Tennessee",
+      "summary": "Launch from Tennessee for a bass day on Dale Hollow. Take your time exploring the lake and working through the next set of casts."
+    },
+    "na-us-tn-006": {
+      "title": "Reelfoot Lake: A Tennessee Family Panfish Trip",
+      "summary": "Try for panfish in the shallow water of Reelfoot Lake. A boat or guided outing makes a Tennessee fishing day for the family."
+    },
+    "na-us-tn-007": {
+      "title": "Little River: Stream Fishing in the Great Smokies",
+      "summary": "Take a rod to the park-side Little River in the Great Smoky Mountains. Enjoy a small-stream day with time beside the water."
+    },
+    "cape-hatteras-surf": {
+      "title": "Cape Hatteras Surf Fishing on the Outer Banks",
+      "summary": "Cast into the surf at Cape Hatteras or fish from a pier. Make an Outer Banks day of saltwater, beach time and the next bite."
+    },
+    "na-us-nc-002": {
+      "title": "Oregon Inlet: Outer Banks Offshore Fishing Charters",
+      "summary": "Set out from Oregon Inlet for an Outer Banks offshore charter. Choose your boat and enjoy a day with the coast behind you."
+    },
+    "na-us-nc-003": {
+      "title": "Pamlico Sound Inshore Fishing in North Carolina",
+      "summary": "Fish Pamlico Sound on a North Carolina coastal outing. Choose shallow water or the open sound for a day on the boat."
+    },
+    "na-us-nc-004": {
+      "title": "Cape Fear Inshore Fishing Near Wilmington",
+      "summary": "Explore Cape Fear tidal water near Wilmington. A guide boat or suitable kayak outing makes an inshore fishing day of your visit."
+    },
+    "na-us-nc-005": {
+      "title": "Davidson River Trout Fishing Near Brevard",
+      "summary": "Bring a careful cast to the Davidson River near Brevard. Spend a North Carolina trout day getting to know a stretch of water."
+    },
+    "na-us-nc-006": {
+      "title": "Tuckasegee River: North Carolina Trout Fishing",
+      "summary": "Fish the Tuckasegee for trout on a North Carolina river day. Choose an accessible section and take your time working the current."
+    },
+    "na-us-nc-007": {
+      "title": "Fontana Lake Bass Fishing in North Carolina",
+      "summary": "Make bass the target on Fontana Lake. Choose a lake arm and enjoy a North Carolina boat day with time to look for the bite."
+    },
+    "na-us-nc-008": {
+      "title": "Lake Norman: A North Carolina Bass Fishing Trip",
+      "summary": "Head onto Lake Norman for a bass fishing day. Choose your launch and enjoy a North Carolina outing with a rod in hand."
+    },
+    "na-us-nc-009": {
+      "title": "Roanoke River: Bass Fishing Near Weldon, North Carolina",
+      "summary": "Make a river fishing day of the Roanoke near Weldon. Focus on bass and enjoy a North Carolina outing shaped by the current."
+    },
+    "na-us-nc-010": {
+      "title": "Albemarle Sound: North Carolina Inshore Fishing",
+      "summary": "Explore Albemarle Sound on an inshore fishing day. Make this North Carolina water the focus of a coastal outing at the rods."
+    },
+    "na-us-sc-001": {
+      "title": "Charleston: Redfish Fishing in the Marsh",
+      "summary": "Try for redfish around Charleston's marsh water. Follow the tides on a charter and make fishing part of your South Carolina visit."
+    },
+    "na-us-sc-002": {
+      "title": "Beaufort: Redfish in the Marsh and Port Royal Sound",
+      "summary": "Fish for redfish from Beaufort in shallow marsh water or Port Royal Sound. Choose the boat outing that fits your coastal day."
+    },
+    "na-us-sc-003": {
+      "title": "Lake Murray Bass Fishing in South Carolina",
+      "summary": "Spend a day after bass on Lake Murray. Choose a departure area and enjoy a South Carolina lake outing with the rods ready."
+    },
+    "na-us-sc-004": {
+      "title": "Lake Marion Catfish Fishing on Santee Cooper",
+      "summary": "Try for catfish on Lake Marion in the Santee Cooper system. Choose a bank outing or a guided boat day on South Carolina water."
+    },
+    "na-us-sc-005": {
+      "title": "Lake Hartwell Bass Fishing from South Carolina",
+      "summary": "Launch from South Carolina for a bass day on Lake Hartwell. Take time to explore the reservoir and work toward the next bite."
+    },
+    "na-us-sc-006": {
+      "title": "Myrtle Beach: Surf and Pier Fishing on the Grand Strand",
+      "summary": "Cast from a Grand Strand beach or fish a Myrtle Beach pier. Spend a South Carolina day by the ocean with your line in saltwater."
+    },
+    "na-us-ga-001": {
+      "title": "Lake Lanier: Stripers and Bass in Georgia",
+      "summary": "Choose bass or stripers for a day on Lake Lanier. Take a guided trip or enjoy bank access at Don Carter State Park in Georgia."
+    },
+    "na-us-ga-002": {
+      "title": "Chattahoochee River: Trout Below Buford Dam",
+      "summary": "Try for trout on the Chattahoochee below Buford Dam. Choose a bank outing or a guided trip on this stretch of Georgia river."
+    },
+    "na-us-ga-003": {
+      "title": "Savannah and Tybee: A Day of Inshore Fishing",
+      "summary": "Explore creek and sound water from Savannah or Tybee. Choose an inshore charter and make a Georgia coastal day of the trip."
+    },
+    "na-us-ga-004": {
+      "title": "St. Simons Inshore Fishing in the Golden Isles",
+      "summary": "Fish inshore water around St. Simons in the Golden Isles. Choose a general outing or a focused sight-fishing trip on Georgia's coast."
+    },
+    "na-us-ga-005": {
+      "title": "Lake Seminole Bass Fishing from Georgia",
+      "summary": "Start from Georgia for a bass trip on Lake Seminole. Spend a day around the reservoir's vegetation with your next cast in mind."
+    },
+    "na-us-ga-006": {
+      "title": "Toccoa River: Georgia Tailwater Trout Fishing",
+      "summary": "Fish the Toccoa below the dam for trout. Take a float or choose suitable wading water for a Georgia river day at your own pace."
+    },
+    "na-us-fl-001": {
+      "title": "Islamorada: Bonefish and Permit on the Flats",
+      "summary": "Cast for bonefish or permit on the Islamorada flats. A skiff trip puts shallow water and the next sighted fish at the heart of the day."
+    },
+    "na-us-fl-002": {
+      "title": "Lake Okeechobee: A Florida Bass Fishing Trip",
+      "summary": "Spend a day after bass on Lake Okeechobee. Choose a launch sector and make this Florida lake the focus of your fishing trip."
+    },
+    "na-us-fl-003": {
+      "title": "Florida Keys: Tarpon Fishing on the Flats",
+      "summary": "Make tarpon the target on a Florida Keys flats trip. Spend a day on the boat with shallow water and a focused fishing plan."
+    },
+    "na-us-fl-004": {
+      "title": "Key West: Offshore Trolling in the Florida Keys",
+      "summary": "Set the rods for a trolling trip offshore from Key West. Enjoy a Florida Keys boat day with open water and the next bite ahead."
+    },
+    "na-us-fl-005": {
+      "title": "Marathon: Reef and Wreck Fishing in the Keys",
+      "summary": "Drop a line over reef and wreck water from Marathon. Make bottom fishing the focus of a saltwater day in the Florida Keys."
+    },
+    "na-us-fl-006": {
+      "title": "Florida Bay Inshore Fishing in the Everglades",
+      "summary": "Explore Florida Bay with a guide on an Everglades fishing trip. Follow an inshore route through this mangrove setting by boat."
+    },
+    "na-us-fl-007": {
+      "title": "Biscayne Bay: A Day of Florida Flats Fishing",
+      "summary": "Head onto Biscayne Bay for a flats fishing outing. Start from the mainland and spend a Florida day focused on shallow water."
+    },
+    "na-us-fl-008": {
+      "title": "Mosquito Lagoon: Shallow-Water Fishing in Florida",
+      "summary": "Fish the shallow water of Mosquito Lagoon with a guide. Let the water level shape your route through this Florida lagoon."
+    },
+    "na-us-fl-009": {
+      "title": "Indian River Lagoon: Florida Inshore Fishing",
+      "summary": "Explore a stretch of the Indian River Lagoon on a fishing outing. Give this Florida inshore water a day of your attention."
+    },
+    "na-us-fl-010": {
+      "title": "Tampa Bay: Fishing the Flats and Mangroves",
+      "summary": "Choose flats, mangroves or bridge water for a Tampa Bay fishing trip. Let the tide shape your Florida day on the water."
+    },
+    "na-us-fl-011": {
+      "title": "Boca Grande: Fishing the Pass and Backcountry",
+      "summary": "Explore Boca Grande by boat on an inshore fishing outing. Choose the pass or backcountry water to suit your Florida coastal day."
+    },
+    "na-us-fl-012": {
+      "title": "Charlotte Harbor: A Florida Inshore Fishing Trip",
+      "summary": "Fish Charlotte Harbor on an estuary outing from a local departure point. Enjoy a Florida boat day with inshore water ahead."
+    },
+    "na-us-fl-013": {
+      "title": "St. Johns Estuary Inshore Fishing from Jacksonville",
+      "summary": "Fish the St. Johns estuary from Jacksonville. A Florida inshore outing puts tides, current and the next bite at the heart of the day."
+    },
+    "na-us-fl-014": {
+      "title": "St. Augustine: A Nearshore Fishing Day in Florida",
+      "summary": "Head onto nearshore water from St. Augustine for a fishing outing. Enjoy a Florida boat day with the coast still part of the trip."
+    },
+    "na-us-fl-015": {
+      "title": "Destin, Florida: An Offshore Fishing Charter",
+      "summary": "Set out from Destin for an offshore fishing charter. Choose your boat trip and enjoy time at the rods beyond the coast."
+    },
+    "na-us-fl-016": {
+      "title": "Pensacola: Bay and Pass Fishing in Florida",
+      "summary": "Take an inshore fishing trip from Pensacola. Choose bay or pass water and spend a Florida coastal day working toward the next bite."
+    },
+    "na-us-fl-017": {
+      "title": "Miami Canals: A Fishing Day Close to the City",
+      "summary": "Try a fishing outing on Miami's urban canals. Choose a public stretch with fish in mind and fit a few casts into your city visit."
+    },
+    "na-us-fl-018": {
+      "title": "St. Johns River: Freshwater Bass Fishing in Florida",
+      "summary": "Fish the freshwater St. Johns River for bass. Choose a launch and spend a Florida river day exploring beyond the estuary."
+    },
+    "na-us-fl-019": {
+      "title": "Suwannee River: A Florida Bass Fishing Day",
+      "summary": "Take a bass rod to a stretch of the Suwannee River. Spend a Florida day exploring the current and looking for your next bite."
+    },
+    "na-us-fl-020": {
+      "title": "Sebastian Inlet: Florida Fishing from Shore",
+      "summary": "Fish from accessible shoreline at Sebastian Inlet. Tidal current and structure make this a Florida outing with plenty to read in the water."
+    },
+    "na-us-al-001": {
+      "title": "Lake Guntersville Bass Fishing in Alabama",
+      "summary": "Work the vegetation at Lake Guntersville with bass in mind. Choose a launch and enjoy an Alabama day exploring the reservoir."
+    },
+    "na-us-al-002": {
+      "title": "Mobile Bay: An Alabama Inshore Fishing Trip",
+      "summary": "Take a fishing trip onto Mobile Bay. River influence and tides shape this Alabama outing as you explore the bay by boat."
+    },
+    "na-us-al-003": {
+      "title": "Orange Beach Offshore Fishing from Alabama",
+      "summary": "Head offshore from Orange Beach on a fishing charter. Choose trolling or a bottom trip and enjoy a day on Alabama saltwater."
+    },
+    "na-us-al-004": {
+      "title": "Pickwick Lake Bass Fishing from Alabama",
+      "summary": "Launch from Alabama for a bass trip on Pickwick Lake. Explore lake water or a suitable tailrace stretch for a day at the rods."
+    },
+    "na-us-al-005": {
+      "title": "Smith Lake, Alabama: Bass in Clear Water",
+      "summary": "Fish the clear water of Smith Lake for bass. Spend an Alabama day exploring the depths and working out where the next bite waits."
+    },
+    "na-us-al-006": {
+      "title": "Sipsey Fork: Alabama Trout Below Lewis Smith Dam",
+      "summary": "Fish for trout on the Sipsey Fork below Lewis Smith Dam. Make time for an Alabama river outing shaped by the dam's releases."
+    },
+    "na-us-ms-001": {
+      "title": "Biloxi and Gulfport: Mississippi Inshore Fishing",
+      "summary": "Start from Biloxi or Gulfport for an inshore fishing day. Choose protected water and enjoy time on Mississippi's coast."
+    },
+    "na-us-ms-002": {
+      "title": "Grenada Lake: A Mississippi Family Panfish Trip",
+      "summary": "Take a family fishing trip to Grenada Lake for panfish. Choose a suitable launch and enjoy a Mississippi day on the water."
+    },
+    "na-us-ms-003": {
+      "title": "Sardis Lake: Panfish Fishing in Mississippi",
+      "summary": "Spend a fishing day after panfish at Sardis Lake. Pick an accessible part of this Mississippi water for time with the family."
+    },
+    "na-us-ms-004": {
+      "title": "Ross Barnett Reservoir: Mississippi Bass Fishing",
+      "summary": "Look for bass around the vegetation of Ross Barnett Reservoir. Choose a launch and make a Mississippi boat day of it."
+    },
+    "na-us-la-001": {
+      "title": "Venice Marshes: Louisiana Inshore Sight Fishing",
+      "summary": "Search the Venice marshes on an inshore sight-fishing trip. Spend a Louisiana day watching the shallow water for your next cast."
+    },
+    "na-us-la-002": {
+      "title": "Venice, Louisiana: A Day of Offshore Fishing",
+      "summary": "Set out from Venice for an offshore fishing day. Leave the marsh behind and make the run out part of your Louisiana boat trip."
+    },
+    "na-us-la-003": {
+      "title": "Delacroix: Fishing Louisiana's Marsh Water",
+      "summary": "Explore the Delacroix marshes on an inshore outing. Wind and water levels help shape the route on this Louisiana fishing day."
+    },
+    "na-us-la-004": {
+      "title": "Hopedale Inshore Fishing in the Biloxi Marsh",
+      "summary": "Head out from Hopedale to fish the Biloxi Marsh. Choose a short sheltered trip or a longer run through Louisiana inshore water."
+    },
+    "na-us-la-005": {
+      "title": "Grand Isle Surf Fishing on Louisiana's Coast",
+      "summary": "Cast from the beach at Grand Isle for a Louisiana surf fishing day. Keep the trip simple with sand, saltwater and a rod in hand."
+    },
+    "na-us-la-006": {
+      "title": "Calcasieu Lake: A Louisiana Inshore Fishing Trip",
+      "summary": "Fish Calcasieu Lake on a Louisiana inshore outing. Spend the day reading the water and following the bite as conditions change."
+    },
+    "na-us-la-007": {
+      "title": "Atchafalaya Basin: Louisiana Bass by Boat",
+      "summary": "Explore part of the Atchafalaya Basin with bass in mind. A guided boat outing gives you time to focus on fishing this Louisiana water."
+    },
+    "na-us-la-008": {
+      "title": "Toledo Bend Bass Fishing from Louisiana",
+      "summary": "Start from Louisiana for a bass day on Toledo Bend. Choose a departure point and spend time exploring the reservoir by boat."
+    },
+    "na-us-la-009": {
+      "title": "Caney Creek Reservoir: Louisiana Bass Fishing",
+      "summary": "Take a bass trip to Caney Creek Reservoir in Louisiana. Make this lake your day's destination and settle in for the next cast."
+    },
+    "na-us-la-010": {
+      "title": "Cocodrie Inshore Fishing in the Terrebonne Marshes",
+      "summary": "Leave Cocodrie for a fishing trip through the Terrebonne marshes. Enjoy a Louisiana boat day on a route through inshore water."
+    },
+    "na-us-ar-001": {
+      "title": "White River: Trout Below Bull Shoals Dam",
+      "summary": "Fish the White River below Bull Shoals Dam for trout. Choose a guide boat or a bank outing for a day on this Arkansas tailwater."
+    },
+    "na-us-ar-002": {
+      "title": "Little Red River: An Arkansas Trout Fishing Day",
+      "summary": "Try for trout on the Little Red River in Arkansas. Spend time on a public stretch and let the current shape your casts."
+    },
+    "na-us-ar-003": {
+      "title": "Norfork River: Trout on an Arkansas Tailwater",
+      "summary": "Fish the short Norfork River tailwater for trout. Make an Arkansas outing of this river, with time to work a stretch of moving water."
+    },
+    "na-us-ar-004": {
+      "title": "Buffalo National River: Arkansas Smallmouth Floats",
+      "summary": "Float a stretch of the Buffalo National River for smallmouth. Enjoy an Arkansas day with new places to cast along the route."
+    },
+    "na-us-ar-005": {
+      "title": "Lake Ouachita: A Guided Arkansas Bass Trip",
+      "summary": "Head onto Lake Ouachita with bass in mind. A guided boat outing makes this Arkansas lake the focus of your fishing day."
+    },
+    "na-us-ar-006": {
+      "title": "Greers Ferry Lake: Arkansas Walleye Fishing",
+      "summary": "Try for walleye on Greers Ferry Lake. Choose a launch and spend an Arkansas day working the water with your target in mind."
+    },
+    "na-us-tx-001": {
+      "title": "Port Aransas: Bay Charters and Kayak Fishing",
+      "summary": "Take a bay charter from Port Aransas or paddle Lighthouse Lakes with a rod. Choose the Texas coastal trip that suits your pace."
+    },
+    "na-us-tx-002": {
+      "title": "Lake Fork: A Texas Bass Fishing Getaway",
+      "summary": "Make Lake Fork your next Texas bass trip. Choose a public ramp or a guided outing and spend the day working toward the next strike."
+    },
+    "na-us-tx-003": {
+      "title": "Galveston Bay: A Texas Inshore Fishing Charter",
+      "summary": "Explore Galveston Bay with a guide on an inshore outing. Pick a bay section and enjoy a Texas fishing day from the boat."
+    },
+    "na-us-tx-004": {
+      "title": "Lower Laguna Madre: Shallow-Water Fishing from Padre",
+      "summary": "Start from South Padre for a shallow-water fishing trip on the Lower Laguna Madre. Choose a guided boat outing or suitable wading."
+    },
+    "na-us-tx-005": {
+      "title": "Upper Laguna Madre Inshore Fishing from Corpus Christi",
+      "summary": "Leave Corpus Christi for a fishing trip on the Upper Laguna Madre. Spend a Texas coastal day exploring the lagoon's inshore water."
+    },
+    "na-us-tx-006": {
+      "title": "South Padre Island: A Texas Offshore Fishing Charter",
+      "summary": "Head offshore from South Padre for a fishing charter. Make time for the run out and a Texas saltwater day at the rods."
+    },
+    "na-us-tx-007": {
+      "title": "Matagorda Bay: A Texas Inshore Fishing Day",
+      "summary": "Take an inshore fishing outing on Matagorda Bay. Enjoy a Texas coastal day with a rod in hand and the bay in front of you."
+    },
+    "na-us-tx-008": {
+      "title": "Guadalupe River: Texas Trout Below Canyon Lake",
+      "summary": "Try for trout on the Guadalupe below Canyon Lake. Choose a stretch of managed river water and make a Texas fishing day of it."
+    },
+    "na-us-tx-009": {
+      "title": "Llano River Bass Fishing on a Texas River Float",
+      "summary": "Float a stretch of the Llano with bass in mind. Start from public access and spend a Texas river day working the water cast by cast."
+    },
+    "na-us-tx-010": {
+      "title": "Lake Texoma Bass Fishing from the Texas Side",
+      "summary": "Launch from Texas for a bass trip on Lake Texoma. Spend the day on the boat exploring this border lake with a rod ready."
+    },
+    "na-us-tx-011": {
+      "title": "Sam Rayburn Reservoir: A Texas Bass Fishing Trip",
+      "summary": "Explore an arm of Sam Rayburn Reservoir for bass. Choose a launch and enjoy a Texas day with time to work the lake's structure."
+    },
+    "na-us-tx-012": {
+      "title": "Toledo Bend: Crappie Fishing from Texas",
+      "summary": "Start from Texas for a crappie day on Toledo Bend. Keep the outing focused on this fish and enjoy time out on the reservoir."
+    },
+    "na-us-tx-013": {
+      "title": "Lake Amistad: A Texas Bass Fishing Day",
+      "summary": "Head onto Lake Amistad from Texas for a day after bass. Choose a usable launch and enjoy a fishing trip on this border water."
+    },
+    "na-us-tx-014": {
+      "title": "Padre Island National Seashore: Texas Surf Fishing",
+      "summary": "Bring a surf rod to Padre Island National Seashore. Make a Texas beach outing of it, with time to cast and watch the waves."
+    },
+    "na-ca-bc-001": {
+      "title": "Lower Fraser River: Sturgeon Fishing in Canada",
+      "summary": "Take a guided sturgeon trip on the lower Fraser River. Spend a British Columbia day focused on the current and this river fish."
+    },
+    "na-ca-bc-002": {
+      "title": "Skeena River: Steelhead in British Columbia",
+      "summary": "Try for steelhead on the Skeena system. Choose main river or tributary water for a guided British Columbia fishing outing."
+    },
+    "na-ca-bc-003": {
+      "title": "Campbell River: Coastal Salmon Fishing in Canada",
+      "summary": "Leave Campbell River for a coastal salmon charter. Spend a British Columbia saltwater day on the boat with the rods at work."
+    },
+    "g-canada-campbell-river-freshwater": {
+      "title": "Campbell River: Freshwater Salmon in British Columbia",
+      "summary": "Fish for salmon in the freshwater Campbell River. Make a British Columbia river day of it, with the current shaping each cast."
+    },
+    "g-canada-haida-gwaii-coastal-fishing": {
+      "title": "Haida Gwaii Coastal Fishing from a Lodge or Charter",
+      "summary": "Make a lodge or charter your base for coastal fishing in Haida Gwaii. Spend time on British Columbia saltwater with a rod in hand."
+    },
+    "na-ca-bc-006": {
+      "title": "Howe Sound Salmon Fishing from Vancouver",
+      "summary": "Fit a salmon trip on Howe Sound into your Vancouver visit. Choose a departure port and enjoy time fishing on coastal water."
+    },
+    "na-ca-bc-007": {
+      "title": "Ucluelet: Offshore Bottom Fishing in Canada",
+      "summary": "Head out from Ucluelet for offshore bottom fishing. Spend a British Columbia boat day with deeper saltwater beneath the rods."
+    },
+    "na-ca-bc-008": {
+      "title": "Tofino: Coastal Salmon Fishing in British Columbia",
+      "summary": "Set out from Tofino for a coastal salmon day. Take a charter and make time on British Columbia saltwater part of your visit."
+    },
+    "na-ca-bc-009": {
+      "title": "Port Hardy: A Coastal Salmon Fishing Trip",
+      "summary": "Make Port Hardy your base for a salmon charter. Enjoy a British Columbia coastal outing with the boat and rods ready for the day."
+    },
+    "na-ca-bc-010": {
+      "title": "Cowichan River: Trout by Float or Wade in Canada",
+      "summary": "Fish the Cowichan River for trout on a British Columbia outing. Choose a float or a suitable wade and take your time in the current."
+    },
+    "na-ca-bc-011": {
+      "title": "Elk River Trout Fishing Near Fernie, Canada",
+      "summary": "Take a trout trip on the Elk River near Fernie. Float or wade a suitable stretch and enjoy a British Columbia day on the water."
+    },
+    "na-ca-bc-012": {
+      "title": "Kootenay Lake: Fishing in British Columbia",
+      "summary": "Make Kootenay Lake your British Columbia fishing stop. Give yourself a day on the water with time to work toward the next bite."
+    },
+    "na-ca-bc-013": {
+      "title": "Shuswap Lake: A British Columbia Trolling Trip",
+      "summary": "Take a trolling trip on Shuswap Lake. Choose your departure and spend a British Columbia lake day with the rods over the water."
+    },
+    "na-ca-bc-014": {
+      "title": "Quesnel Lake: A Remote Canadian Fishing Getaway",
+      "summary": "Make a lodge your base for a remote fishing trip on Quesnel Lake. Enjoy time on British Columbia water with a boat at the heart of it."
+    },
+    "na-ca-bc-015": {
+      "title": "Adams Lake: A British Columbia Fishing Day",
+      "summary": "Set aside a day to fish Adams Lake in British Columbia. Choose your way onto the water and enjoy time with a rod in hand."
+    },
+    "na-ca-bc-016": {
+      "title": "Sheridan Lake Fly Fishing and Trolling in Canada",
+      "summary": "Choose stillwater flies or trolling for a day on Sheridan Lake. Make a British Columbia fishing trip of this lake water."
+    },
+    "na-ca-bc-017": {
+      "title": "Dragon Lake: Stillwater Fishing in British Columbia",
+      "summary": "Fish Dragon Lake from shore or a boat on a stillwater outing. Spend a British Columbia day taking your time over the next cast."
+    },
+    "na-ca-bc-018": {
+      "title": "Stamp River Steelhead Fishing in Canada",
+      "summary": "Try for steelhead on the Stamp River in British Columbia. Choose a guided river outing and make a day of the moving water."
+    },
+    "na-ca-bc-019": {
+      "title": "Vedder River Steelhead Fishing Near Chilliwack",
+      "summary": "Try for steelhead around the Chilliwack and Vedder River. Choose an accessible stretch and enjoy a British Columbia river day."
+    },
+    "na-ca-bc-020": {
+      "title": "Dean River: A Remote Fishing Lodge Trip in Canada",
+      "summary": "Make a lodge your base for a remote Dean River fishing trip. Spend time on British Columbia river water with your rod close at hand."
+    },
+    "na-ca-ab-001": {
+      "title": "Bow River Trout Fishing Near Calgary, Alberta",
+      "summary": "Fish the Bow near Calgary for trout. Choose city wading or a guided float and enjoy an Alberta river day with another cast ahead."
+    },
+    "na-ca-ab-002": {
+      "title": "Crowsnest River Small-Stream Fishing in Alberta",
+      "summary": "Take a rod to the Crowsnest River for a small-stream outing. Spend an Alberta day on public water and enjoy the challenge of a cast."
+    },
+    "na-ca-ab-003": {
+      "title": "Upper Oldman River Trout Fishing in Alberta",
+      "summary": "Explore a trout stretch of the upper Oldman River. Give yourself an Alberta day beside the current with time to fish at your own pace."
+    },
+    "na-ca-ab-004": {
+      "title": "Red Deer River: Tailwater Trout Fishing in Alberta",
+      "summary": "Fish a tailwater stretch of the Red Deer River for trout. Let the releases shape an Alberta outing focused on moving water."
+    },
+    "na-ca-ab-005": {
+      "title": "North Saskatchewan River: Sturgeon Near Edmonton",
+      "summary": "Take a guided trip for sturgeon on the North Saskatchewan near Edmonton. Spend an Alberta river day focused on this fish."
+    },
+    "na-ca-ab-006": {
+      "title": "Lesser Slave Lake Walleye Fishing in Alberta",
+      "summary": "Stay a few days beside Lesser Slave Lake with walleye in mind. Choose a launch and enjoy time on this Alberta lake from the boat."
+    },
+    "na-ca-ab-007": {
+      "title": "Lac La Biche: Open-Water Walleye Fishing in Alberta",
+      "summary": "Try for walleye on the open water of Lac La Biche. Enjoy an Alberta fishing day with time to explore the lake at your own pace."
+    },
+    "na-ca-ab-008": {
+      "title": "Cold Lake: A Fishing Trip from the Alberta Side",
+      "summary": "Start from Alberta for a day fishing Cold Lake. Make this border water your destination and enjoy an outing with the rods ready."
+    },
+    "na-ca-ab-009": {
+      "title": "Lake Newell: Pike Fishing on an Alberta Lake",
+      "summary": "Make pike the target at Lake Newell. Spend an Alberta lake day casting for these freshwater predators and watching for a strike."
+    },
+    "na-ca-ab-010": {
+      "title": "Upper Kananaskis Lake: Alpine Fishing in Alberta",
+      "summary": "Take a rod to Upper Kananaskis Lake for an alpine outing. Enjoy an Alberta day with mountain lake water as your fishing backdrop."
+    },
+    "na-ca-sk-001": {
+      "title": "Lake Diefenbaker: Trout or Walleye in Saskatchewan",
+      "summary": "Choose a deep-water trout trip or a walleye outing on Lake Diefenbaker. Make one fish the focus of your Saskatchewan day."
+    },
+    "na-ca-sk-002": {
+      "title": "Tobin Lake: A Saskatchewan Walleye Fishing Day",
+      "summary": "Fish Tobin Lake for walleye in river-like water or the lake itself. Enjoy a Saskatchewan outing with time to follow the bite."
+    },
+    "na-ca-sk-003": {
+      "title": "Lac La Ronge: A Remote Fishing Getaway in Canada",
+      "summary": "Make a lodge your base for a remote trip on Lac La Ronge. Spend a Saskatchewan fishing break with lake time at its center."
+    },
+    "na-ca-sk-004": {
+      "title": "Reindeer Lake: Lodge Fishing from Saskatchewan",
+      "summary": "Settle into a lodge trip on the Saskatchewan side of Reindeer Lake. Make time on this remote water the focus of your fishing break."
+    },
+    "na-ca-sk-005": {
+      "title": "Cree Lake: A Fly-In Fishing Camp in Saskatchewan",
+      "summary": "Fly into a Cree Lake camp for a remote fishing trip. Settle into a Saskatchewan stay where time on the water leads the day."
+    },
+    "na-ca-sk-006": {
+      "title": "Wollaston Lake: A Remote Saskatchewan Fishing Lodge Trip",
+      "summary": "Make a lodge your base on Wollaston Lake. Enjoy a Saskatchewan fishing break with remote water and time at the rods ahead."
+    },
+    "na-ca-sk-007": {
+      "title": "Last Mountain Lake: Saskatchewan Walleye Fishing",
+      "summary": "Take a walleye trip to Last Mountain Lake. Choose a launch and enjoy a Saskatchewan day with this water at the center of it."
+    },
+    "na-ca-sk-008": {
+      "title": "Lake Athabasca: Remote Fishing from Saskatchewan",
+      "summary": "Start from Saskatchewan for a remote trip on Lake Athabasca. Give yourself time to settle into the lake and enjoy the fishing."
+    },
+    "na-ca-mb-001": {
+      "title": "Red River Catfish Fishing Near Lockport, Manitoba",
+      "summary": "Fish the Red River near Lockport for catfish. Choose a guide or a bank outing and enjoy a Manitoba day focused on the next bite."
+    },
+    "na-ca-mb-002": {
+      "title": "Lake Winnipeg: A Manitoba Ice Fishing Trip",
+      "summary": "Make Lake Winnipeg your winter fishing destination. Choose an outing with local access and enjoy time over Manitoba ice."
+    },
+    "na-ca-mb-003": {
+      "title": "Lake Winnipeg: Open-Water Walleye in Manitoba",
+      "summary": "Head onto Lake Winnipeg for an open-water walleye trip. Spend a Manitoba day fishing from a boat with the lake stretching ahead."
+    },
+    "na-ca-mb-004": {
+      "title": "Lake of the Prairies Walleye Fishing from Manitoba",
+      "summary": "Launch from Manitoba for a walleye day on Lake of the Prairies. Take your time exploring this reservoir with a rod ready."
+    },
+    "na-ca-mb-005": {
+      "title": "Clear Lake: Fishing Near Riding Mountain, Manitoba",
+      "summary": "Make Clear Lake near Riding Mountain your Manitoba fishing stop. Spend a day with a rod and the lake at the center of your visit."
+    },
+    "na-ca-mb-006": {
+      "title": "West Hawk Lake: A Manitoba Lake Fishing Getaway",
+      "summary": "Drive to West Hawk Lake in the Whiteshell for a fishing break. Spend time by the shore or out on the lake with a rod in hand."
+    },
+    "na-ca-mb-007": {
+      "title": "Winnipeg River Walleye Fishing Near Pinawa",
+      "summary": "Explore a stretch of the Winnipeg River near Pinawa for walleye. Give yourself a Manitoba day to work the water from the boat."
+    },
+    "na-ca-mb-008": {
+      "title": "North Seal River: A Remote Manitoba Fishing Trip",
+      "summary": "Make the North Seal River lodge area your fishing getaway. Trade the daily routine for time on remote Manitoba water."
+    },
+    "na-ca-mb-009": {
+      "title": "Nueltin Lake: A Remote Fishing Trip from Manitoba",
+      "summary": "Start from Manitoba for a remote fishing trip to Nueltin Lake. Make a lodge your base and leave room for days on the water."
+    },
+    "na-ca-mb-010": {
+      "title": "Churchill River: Remote Fishing in Manitoba",
+      "summary": "Explore a stretch of the Churchill River in Manitoba. Build a remote fishing break around time on the water with a rod in hand."
+    },
+    "na-ca-on-001": {
+      "title": "Lake of the Woods Walleye Fishing from Ontario",
+      "summary": "Set out from an Ontario lodge or launch for walleye on Lake of the Woods. Enjoy a lake day focused on the next bite."
+    },
+    "na-ca-on-002": {
+      "title": "Lake Nipissing: A Walleye Fishing Trip in Ontario",
+      "summary": "Take a walleye trip to Lake Nipissing in Ontario. Choose your access point and give yourself time to explore the lake's water."
+    },
+    "na-ca-on-003": {
+      "title": "Lake Simcoe: A Guided Ontario Ice Fishing Day",
+      "summary": "See Lake Simcoe in winter on a guided ice fishing outing. Spend an Ontario day watching the line for a bite beneath the ice."
+    },
+    "na-ca-on-004": {
+      "title": "Lake Simcoe: Open-Water Bass Fishing in Ontario",
+      "summary": "Take a boat onto Lake Simcoe for bass in the warmer months. Enjoy an Ontario fishing day with open water and another cast ahead."
+    },
+    "na-ca-on-005": {
+      "title": "Toronto: A Lake Ontario Trolling Charter",
+      "summary": "Leave Toronto's harbor for a trolling charter on Lake Ontario. Make room in your city visit for a fishing day on the lake."
+    },
+    "na-ca-on-006": {
+      "title": "Niagara River Steelhead Fishing from Ontario",
+      "summary": "Fish the Niagara River from Ontario with steelhead in mind. Choose a section and enjoy a day focused on this moving water."
+    },
+    "na-ca-on-007": {
+      "title": "St. Lawrence River Predator Fishing from Ontario",
+      "summary": "Take a guided predator fishing trip on the St. Lawrence from Ontario. Spend a river day with a focused target and time to cast."
+    },
+    "na-ca-on-008": {
+      "title": "Ottawa River: Freshwater Predator Fishing in Canada",
+      "summary": "Explore a stretch of the Ottawa River for freshwater predators. Choose a departure area and make a Canadian river day of it."
+    },
+    "na-ca-on-009": {
+      "title": "Lake Temagami: Ontario Lodge and Canoe Fishing",
+      "summary": "Make a lodge or canoe route your way onto Lake Temagami. Enjoy an Ontario fishing break with time to explore the water."
+    },
+    "na-ca-on-010": {
+      "title": "Algonquin: Canoe Camping and Fishing in Ontario",
+      "summary": "Take the rods on an Algonquin canoe trip. Paddle between lakes, share a camp and save part of each Ontario day for fishing."
+    },
+    "na-ca-on-011": {
+      "title": "Nipigon River: An Ontario Trout Fishing Trip",
+      "summary": "Take a guided trip on a stretch of the Nipigon River for trout. Enjoy an Ontario day with moving water and time at the rods."
+    },
+    "na-ca-on-012": {
+      "title": "Lake Nipigon: A Remote Ontario Fishing Getaway",
+      "summary": "Make Lake Nipigon the focus of an Ontario fishing break. Choose a lodge or boat outing and enjoy days spent on the lake."
+    },
+    "na-ca-on-013": {
+      "title": "Rainy Lake Walleye Fishing from Ontario",
+      "summary": "Start from the Ontario side of Rainy Lake for walleye. Spend a fishing day exploring this border water with a rod ready."
+    },
+    "na-ca-on-014": {
+      "title": "Eagle Lake Predator Fishing in Northwest Ontario",
+      "summary": "Stay by Eagle Lake in northwest Ontario for freshwater predator fishing. Give yourself time to work the lake from a chosen base."
+    },
+    "na-ca-on-015": {
+      "title": "Lac Seul: A Walleye Fishing Getaway in Ontario",
+      "summary": "Choose an arm of Lac Seul for a walleye trip. Spend an Ontario fishing break on the boat, with time to explore the reservoir."
+    },
+    "na-ca-on-016": {
+      "title": "French River Predator Fishing in Ontario",
+      "summary": "Try freshwater predator fishing on the French River. Make a lodge stay or canoe outing your way into this Ontario water."
+    },
+    "na-ca-on-017": {
+      "title": "Grand River: Ontario Tailwater Trout Fishing",
+      "summary": "Take a trout rod to the Grand River tailwater in Ontario. Spend a day learning a stretch of current, one cast at a time."
+    },
+    "na-ca-on-018": {
+      "title": "Port Dover: Lake Erie Walleye Fishing from Canada",
+      "summary": "Head onto Lake Erie from Port Dover for walleye. Make a Canadian boat day of it with the rods ready and open water ahead."
+    },
+    "na-ca-qc-001": {
+      "title": "Bonaventure River Salmon Fishing in Quebec",
+      "summary": "Make salmon the focus on Quebec's Bonaventure River. Choose a river outing around the run and enjoy time working the current."
+    },
+    "na-ca-qc-002": {
+      "title": "Matapedia River: A Quebec Salmon Fishing Trip",
+      "summary": "Fish the Matapedia for salmon on a Quebec river outing. Choose a guided stretch and spend your day with the current ahead."
+    },
+    "na-ca-qc-003": {
+      "title": "Sainte-Marguerite River: Salmon Near Saguenay",
+      "summary": "Take a salmon fishing trip on the Sainte-Marguerite near Saguenay. Make time for a day beside this stretch of Quebec river."
+    },
+    "na-ca-qc-004": {
+      "title": "Moisie River: A Remote Fishing Camp in Quebec",
+      "summary": "Stay at a lodge or camp for a remote fishing trip on the Moisie. Enjoy a Quebec river break with time at the rods each day."
+    },
+    "na-ca-qc-005": {
+      "title": "Koksoak River: A Remote Fishing Trip in Ungava",
+      "summary": "Explore part of the Koksoak system on a remote fishing trip. Make river time the focus of your stay in Quebec's Ungava region."
+    },
+    "na-ca-qc-006": {
+      "title": "Lac Saint-Jean: A Quebec Lake Fishing Charter",
+      "summary": "Take a fishing charter on Lac Saint-Jean. Choose a departure point and enjoy a Quebec lake day with the boat and rods ready."
+    },
+    "na-ca-qc-007": {
+      "title": "Gouin Reservoir: A Quebec Fishing Camp Getaway",
+      "summary": "Make an outfitter's camp your base on Gouin Reservoir. Enjoy a Quebec fishing break with time to explore the water by boat."
+    },
+    "na-ca-qc-008": {
+      "title": "Cabonga Reservoir: A Fishing Lodge Trip in Quebec",
+      "summary": "Stay at a lodge for a fishing trip on Cabonga Reservoir. Spend your Quebec getaway on the boat with another stretch to explore."
+    },
+    "na-ca-qc-009": {
+      "title": "Lac Nominingue Walleye Fishing in the Laurentians",
+      "summary": "Take a walleye trip to Lac Nominingue in the Laurentians. Enjoy a Quebec lake outing with a rod and time on the water."
+    },
+    "na-ca-qc-010": {
+      "title": "St. Lawrence River Predator Fishing Near Montreal",
+      "summary": "Fish a stretch of the St. Lawrence near Montreal for freshwater predators. Put a river day at the heart of your Quebec visit."
+    },
+    "na-ca-qc-011": {
+      "title": "Gaspé Coast Inshore Fishing in Quebec",
+      "summary": "Take an inshore fishing trip on the Gaspé coast. Choose shore access or a boat outing and enjoy time on Quebec's coastal water."
+    },
+    "na-ca-qc-012": {
+      "title": "Lake Memphremagog: A Fishing Trip from Quebec",
+      "summary": "Start from Quebec for a fishing day on Lake Memphremagog. Enjoy this border lake with a rod in hand and time on the water."
+    },
+    "na-ca-nb-001": {
+      "title": "Miramichi River Salmon Fishing in New Brunswick",
+      "summary": "Follow a salmon run to a branch of the Miramichi. Enjoy a New Brunswick river day with time to work the current cast by cast."
+    },
+    "na-ca-nb-002": {
+      "title": "Restigouche River: Lodge Fishing from New Brunswick",
+      "summary": "Start from New Brunswick for a Restigouche River lodge trip. Make your break about time beside the river with a rod in hand."
+    },
+    "na-ca-nb-003": {
+      "title": "Saint John River Predator Fishing Near Fredericton",
+      "summary": "Try freshwater predator fishing on the Saint John near Fredericton. Pick a stretch of river for a New Brunswick day at the rods."
+    },
+    "na-ca-nb-004": {
+      "title": "Grand Manan Bottom Fishing in New Brunswick",
+      "summary": "Drop a line in coastal water around Grand Manan. Make bottom fishing the focus of a New Brunswick outing on saltwater."
+    },
+    "na-ca-ns-001": {
+      "title": "Margaree River Salmon Fishing on Cape Breton",
+      "summary": "Fish a pool on the Margaree River with salmon in mind. Enjoy a Cape Breton outing with time to settle into the river's pace."
+    },
+    "na-ca-ns-002": {
+      "title": "Bras d'Or Lakes Inshore Fishing in Nova Scotia",
+      "summary": "Explore the Bras d'Or Lakes on an inshore fishing outing. Make this Nova Scotia water the focus of a day with a rod in hand."
+    },
+    "na-ca-ns-003": {
+      "title": "Halifax: A Nearshore Fishing Trip in Nova Scotia",
+      "summary": "Head onto coastal water from Halifax for a nearshore fishing day. Fit a boat outing and time at the rods into your Nova Scotia visit."
+    },
+    "na-ca-ns-004": {
+      "title": "Shubenacadie River: Tidal Fishing in Nova Scotia",
+      "summary": "Fish a tidal stretch of the Shubenacadie River with guide support. Make a Nova Scotia outing of this changing river water."
+    },
+    "na-ca-nl-001": {
+      "title": "Gander River Salmon Fishing in Newfoundland",
+      "summary": "Take a guided salmon trip on the Gander River. Enjoy a Newfoundland day with time to work the current and wait for a take."
+    },
+    "na-ca-nl-002": {
+      "title": "Humber River Salmon Fishing in Newfoundland",
+      "summary": "Fish the Humber for salmon on a Newfoundland river outing. Choose your stretch and enjoy time on the water with a rod in hand."
+    },
+    "na-ca-nl-003": {
+      "title": "Exploits River: Newfoundland Salmon Fishing",
+      "summary": "Make the Exploits River your Newfoundland salmon stop. Choose an accessible reach and spend a day getting to know the current."
+    },
+    "na-ca-nl-004": {
+      "title": "Flowers River: A Remote Fishing Lodge in Labrador",
+      "summary": "Fly to a lodge for a remote fishing trip on the Flowers River. Make time on Labrador water the focus of your stay at camp."
+    },
+    "na-ca-nl-005": {
+      "title": "Minipi Watershed: A Fly-In Fishing Trip in Labrador",
+      "summary": "Explore lodge water in the Minipi watershed on a fly-in fishing trip. Enjoy a Labrador getaway built around its lakes and rivers."
+    },
+    "na-ca-nl-006": {
+      "title": "Labrador Coast: A Remote Char Fishing Trip",
+      "summary": "Make char the target on a remote Labrador coastal fishing trip. Give yourself time away with this northern fish in mind."
+    },
+    "na-ca-pe-001": {
+      "title": "North Lake Offshore Fishing from Prince Edward Island",
+      "summary": "Leave North Lake for an offshore fishing charter. Spend a Prince Edward Island boat day with open water and the rods ahead."
+    },
+    "na-ca-pe-002": {
+      "title": "Morell River: Stream Fishing on Prince Edward Island",
+      "summary": "Take a rod to the Morell River for a stream fishing outing. Slow down for a day beside the water on Prince Edward Island."
+    },
+    "na-ca-yt-001": {
+      "title": "Teslin Lake: A Remote Fishing Trip from Yukon",
+      "summary": "Start from Yukon for a fishing trip on Teslin Lake. Choose a lodge or launch and make time on remote water part of your visit."
+    },
+    "na-ca-yt-002": {
+      "title": "Yukon River: A Fishing Day Near Whitehorse",
+      "summary": "Fish a stretch of the Yukon River near Whitehorse. Fit an outing beside moving water into your visit, with time for a few casts."
+    },
+    "g-canada-great-bear-lake": {
+      "title": "Great Bear Lake: A Fly-In Fishing Lodge Trip",
+      "summary": "Fly to a lodge on Great Bear Lake for a northern fishing break. Give yourself several days to settle into life on the water."
+    },
+    "g-canada-great-slave-lake": {
+      "title": "Great Slave Lake: Guided Fishing in Northern Canada",
+      "summary": "Explore Great Slave Lake on a guided fishing trip. Make a day of northern lake water with your chosen target in mind."
+    },
+    "na-ca-nt-003": {
+      "title": "Mackenzie River: A Remote Fishing Trip in Canada",
+      "summary": "Make a stretch of the Mackenzie River the focus of a remote fishing trip. Leave time in your Canadian visit for a rod and river water."
+    },
+    "g-canada-tree-river-lodge": {
+      "title": "Tree River: A Remote River Fishing Trip in Canada",
+      "summary": "Add time on the Tree River to a northern fishing break. A remote river outing brings moving water into a lake-based trip."
+    },
+    "na-mx-bcn-001": {
+      "title": "Ensenada, Mexico: A Day of Offshore Fishing",
+      "summary": "Set out from Ensenada for an offshore fishing trip. Spend a Mexican boat day beyond the port with time to settle in at the rods."
+    },
+    "na-mx-bcn-002": {
+      "title": "San Quintin: Coastal Bottom Fishing in Mexico",
+      "summary": "Fish coastal banks or take a longer run from San Quintin. Make bottom fishing the focus of a Mexican outing on the boat."
+    },
+    "na-mx-bcn-003": {
+      "title": "Bahia de los Angeles Bottom Fishing in Baja",
+      "summary": "Make Bahia de los Angeles your base for bottom fishing. Enjoy a Baja boat day with coastal water beneath your line."
+    },
+    "na-mx-bcn-004": {
+      "title": "San Felipe, Baja: An Inshore Fishing Trip",
+      "summary": "Explore coastal water from San Felipe in Baja California. Take an inshore fishing outing and enjoy a Mexican day at the rods."
+    },
+    "na-mx-bcn-005": {
+      "title": "Cedros Island: A Remote Fishing Getaway in Mexico",
+      "summary": "Make Cedros Island your base for a remote fishing break. A lodge stay puts time on the water at the center of your Mexican trip."
+    },
+    "na-mx-bsc-001": {
+      "title": "Cabo San Lucas Offshore Fishing in Mexico",
+      "summary": "Leave Cabo San Lucas for an offshore fishing day. Choose a private or shared charter and enjoy time on the boat at the rods."
+    },
+    "na-mx-bsc-002": {
+      "title": "San Jose del Cabo: A Mexico Offshore Fishing Charter",
+      "summary": "Set out from San Jose del Cabo for an offshore fishing trip. Make a day of the open water with your charter boat and rods ready."
+    },
+    "na-mx-bsc-003": {
+      "title": "La Paz Coastal Fishing Near Espíritu Santo",
+      "summary": "Explore coastal water near La Paz and Espíritu Santo. Choose casting or a deeper-water outing for your Mexican fishing day."
+    },
+    "na-mx-bsc-004": {
+      "title": "Los Barriles: Sight Fishing on Mexico's East Cape",
+      "summary": "Look for a cast from the beach or a boat near Los Barriles. Make sight fishing the focus of an outing on Mexico's East Cape."
+    },
+    "na-mx-bsc-005": {
+      "title": "East Cape, Mexico: An Offshore Fishing Day",
+      "summary": "Head offshore from Mexico's East Cape for a fishing trip. Choose a boat outing and enjoy time at the rods beyond the coast."
+    },
+    "na-mx-bsc-006": {
+      "title": "Loreto, Mexico: A Day of Inshore Fishing",
+      "summary": "Make Loreto your base for an inshore fishing day. Spend time on Mexico's coastal water with your chosen fish in mind."
+    },
+    "na-mx-bsc-007": {
+      "title": "Magdalena Bay: Fishing Mexico's Mangrove Water",
+      "summary": "Take an estuary fishing trip through Magdalena Bay's mangrove water. Enjoy a Mexican outing focused on the bay's inshore side."
+    },
+    "na-mx-bsc-008": {
+      "title": "Magdalena Bay: A Mexico Offshore Fishing Trip",
+      "summary": "Head offshore from the Magdalena Bay area for a fishing day. Make the run to open water part of your Mexican boat outing."
+    },
+    "na-mx-bsc-009": {
+      "title": "Baja Sur Surf Fishing on Mexico's Pacific Coast",
+      "summary": "Take a surf rod to a beach on Baja Sur's Pacific coast. Make a Mexican fishing day of the sand, the waves and time beside the ocean."
+    },
+    "na-mx-bsc-010": {
+      "title": "La Ventana Inshore Fishing on Mexico's Coast",
+      "summary": "Explore the coastal water at La Ventana with a rod. Choose a guided outing to suit your pace on this Mexican fishing trip."
+    },
+    "na-mx-son-001": {
+      "title": "Puerto Penasco: Nearshore Fishing in Mexico",
+      "summary": "Leave Puerto Penasco for a nearshore fishing day. Make time on Mexico's coastal water part of your visit with a rod in hand."
+    },
+    "na-mx-son-002": {
+      "title": "San Carlos, Mexico: An Offshore Fishing Charter",
+      "summary": "Set out from San Carlos for offshore fishing. Enjoy a Mexican boat day from the marina with open water and the rods ahead."
+    },
+    "na-mx-son-003": {
+      "title": "Kino Bay: Coastal Bottom Fishing in Mexico",
+      "summary": "Take a bottom fishing trip from Kino Bay. Choose coastal water or a longer island run for a Mexican day out on the boat."
+    },
+    "na-mx-sin-001": {
+      "title": "Lake El Salto: A Bass Fishing Lodge Trip in Mexico",
+      "summary": "Stay at a lodge for a bass trip on Lake El Salto. Spend your Mexican fishing break on the boat with another cast always ahead."
+    },
+    "na-mx-sin-002": {
+      "title": "Lake Picachos: A Mexico Bass Fishing Getaway",
+      "summary": "Make a lodge your base for bass fishing on Lake Picachos. Enjoy a Mexican reservoir trip with time to search for the next bite."
+    },
+    "na-mx-sin-003": {
+      "title": "Mazatlan, Mexico: An Offshore Fishing Charter",
+      "summary": "Head offshore from Mazatlan on a fishing charter. Choose the boat day that suits your visit and settle in with the rods ready."
+    },
+    "na-mx-sin-004": {
+      "title": "Topolobampo Inshore Fishing on Mexico's Coast",
+      "summary": "Take an inshore fishing outing around Topolobampo. Spend part of your Mexican visit on coastal water with a rod in hand."
+    },
+    "na-mx-nay-001": {
+      "title": "San Blas, Mexico: Fishing the Mangrove Estuary",
+      "summary": "Explore the San Blas estuary with a fishing guide. Make a Mexican boat day of mangrove water and time to look for the next bite."
+    },
+    "na-mx-nay-002": {
+      "title": "Punta Mita: Coastal Casting on a Mexico Fishing Trip",
+      "summary": "Try coastal casting from Punta Mita on an inshore outing. Spend a Mexican fishing day on the boat with another cast ahead."
+    },
+    "na-mx-nay-003": {
+      "title": "Riviera Nayarit Offshore Fishing in Mexico",
+      "summary": "Head offshore from the Riviera Nayarit for a fishing day. Choose a departure port and enjoy a Mexican boat trip at the rods."
+    },
+    "na-mx-jal-001": {
+      "title": "Puerto Vallarta Offshore Fishing in Mexico",
+      "summary": "Make time for an offshore fishing trip from Puerto Vallarta. Leave the bay behind for a Mexican boat day on open water."
+    },
+    "na-mx-jal-002": {
+      "title": "Banderas Bay Inshore Fishing from Jalisco",
+      "summary": "Start from Jalisco for an inshore fishing day on Banderas Bay. Enjoy a Mexican coastal outing with the bay as your backdrop."
+    },
+    "na-mx-jal-003": {
+      "title": "Lake Chapala: A Freshwater Fishing Trip in Mexico",
+      "summary": "Make Lake Chapala your setting for a freshwater fishing day. Enjoy part of your Mexican visit beside the lake with a rod in hand."
+    },
+    "na-mx-col-001": {
+      "title": "Manzanillo Offshore Fishing on Mexico's Coast",
+      "summary": "Leave Manzanillo for an offshore fishing outing. Spend a Mexican day beyond the marina with open water and the rods ahead."
+    },
+    "na-mx-gu-001": {
+      "title": "Zihuatanejo: A Mexico Offshore Fishing Day",
+      "summary": "Head offshore from Zihuatanejo for a fishing trip. Choose a charter and spend part of your Mexican visit out on the water."
+    },
+    "na-mx-gu-002": {
+      "title": "Ixtapa, Mexico: Coastal Casting from Beach or Boat",
+      "summary": "Fish Ixtapa's coastal water from a beach or a boat. Pick the casting outing that suits your pace on this Mexican fishing day."
+    },
+    "na-mx-gu-003": {
+      "title": "Acapulco: An Offshore Fishing Trip in Mexico",
+      "summary": "Make room in your Acapulco visit for an offshore fishing day. Head out from the coast with time to settle into the boat trip."
+    },
+    "na-mx-oa-001": {
+      "title": "Puerto Escondido Offshore Fishing in Mexico",
+      "summary": "Start from Puerto Escondido for a fishing trip offshore. Spend a Mexican boat day with the coastal surf behind you and rods ahead."
+    },
+    "na-mx-oa-002": {
+      "title": "Huatulco, Mexico: An Offshore Fishing Charter",
+      "summary": "Leave a Huatulco bay for a day of offshore fishing. Enjoy a Mexican charter trip with time on open water and a rod ready."
+    },
+    "na-mx-ch-001": {
+      "title": "Puerto Chiapas Offshore Fishing in Mexico",
+      "summary": "Make Puerto Chiapas your departure for an offshore fishing day. Spend time on Mexican saltwater with the boat and rods ready."
+    },
+    "g-mexico-ascension-bay": {
+      "title": "Ascension Bay: Saltwater Fly Fishing in Mexico",
+      "summary": "Take a fly rod onto Ascension Bay for a saltwater outing. Choose a fish to focus on and enjoy a Mexican day working on your casts."
+    },
+    "g-mexico-espiritu-santo-bay": {
+      "title": "Espíritu Santo Bay: Permit on the Fly in Mexico",
+      "summary": "Stay at a lodge for permit fly fishing in Espíritu Santo Bay. Make a Mexican fishing break of the search for a well-placed cast."
+    },
+    "na-mx-qr-003": {
+      "title": "Xcalak, Mexico: Flats Fishing by Boat or Wade",
+      "summary": "Explore the Xcalak flats on a guided fishing day. Choose a boat outing or suitable wading water for time with a rod in Mexico."
+    },
+    "na-mx-qr-004": {
+      "title": "Isla Blanca: Lagoon and Flats Fishing in Mexico",
+      "summary": "Fish the lagoon and flats around Isla Blanca. Make a Mexican outing of shallow water, careful casts and time with a guide."
+    },
+    "na-mx-qr-005": {
+      "title": "Isla Mujeres: An Offshore Fishing Charter in Mexico",
+      "summary": "Head offshore from Isla Mujeres for a fishing charter. Add a boat day and time at the rods to your stay on Mexico's coast."
+    },
+    "na-mx-qr-006": {
+      "title": "Cozumel, Mexico: A Day of Offshore Fishing",
+      "summary": "Fit an offshore fishing trip into your Cozumel visit. Start from the marina and spend time on Mexican saltwater at the rods."
+    },
+    "na-mx-yuc-001": {
+      "title": "Rio Lagartos: Guided Lagoon Fishing in Mexico",
+      "summary": "Explore the lagoon at Rio Lagartos with a fishing guide. Make a Mexico inshore day of it with time to work the water."
+    },
+    "na-mx-yuc-002": {
+      "title": "San Felipe, Yucatan Inshore Fishing in Mexico",
+      "summary": "Take an inshore fishing outing from San Felipe in Yucatan. Make coastal water and a rod part of your Mexico travel day."
+    },
+    "na-mx-yuc-003": {
+      "title": "Progreso, Mexico: Coastal Bottom Fishing",
+      "summary": "Drop a line off Progreso on a bottom fishing outing. Spend part of your Mexican visit on coastal water with a rod in hand."
+    },
+    "na-mx-cam-001": {
+      "title": "Campeche Inshore Fishing in Mexico's Mangroves",
+      "summary": "Follow a guide through Campeche's mangrove water on a fishing day. Enjoy a Mexico inshore outing with time for each cast."
+    },
+    "na-mx-cam-002": {
+      "title": "Sabancuy: Lagoon Fishing on Mexico's Coast",
+      "summary": "Make the Sabancuy lagoon system your setting for a fishing day. Enjoy time on Mexico inshore water with a rod close at hand."
+    },
+    "na-mx-ver-001": {
+      "title": "Veracruz, Mexico: A Day of Offshore Fishing",
+      "summary": "Take an offshore fishing trip from Veracruz. Choose a charter format that suits your visit and enjoy a Mexican day on the boat."
+    },
+    "na-mx-ver-002": {
+      "title": "Tecolutla: Estuary Fishing on Mexico's Coast",
+      "summary": "Fish the Tecolutla estuary on a guided outing. Add a day of inshore water and time at the rods to your visit to Mexico."
+    },
+    "na-mx-tam-001": {
+      "title": "Lake Vicente Guerrero Bass Fishing in Mexico",
+      "summary": "Make bass the target on Lake Vicente Guerrero. Enjoy a Mexican reservoir trip with time to work the water and wait for a strike."
+    },
+    "na-mx-tam-002": {
+      "title": "La Pesca Inshore Fishing on Mexico's Laguna Madre",
+      "summary": "Explore Laguna Madre from La Pesca on a fishing day. Give this stretch of Mexico inshore water your time and a few casts."
+    },
+    "texas-inshore-redfish": {
+      "title": "Texas Bays: Redfish and Trout on the Flats",
+      "summary": "Fish Texas bays for redfish and trout among grass, shell and channels. Choose your water and enjoy an inshore day at the rods."
+    },
+    "keys-flats": {
+      "title": "Florida Keys: Bonefish, Permit and Tarpon on the Flats",
+      "summary": "Choose bonefish, permit or tarpon as the focus of a Florida Keys flats day. Enjoy shallow water and the challenge of the next cast."
+    },
+    "keys-offshore": {
+      "title": "Florida Keys: Offshore, Reef and Wreck Charters",
+      "summary": "Pick an offshore, reef or wreck charter for a day in the Florida Keys. Make time at sea and the fish you want the heart of the trip."
+    },
+    "andros-bonefish": {
+      "title": "Andros, Bahamas: Sight Fishing for Bonefish",
+      "summary": "Search the Andros flats with a guide for bonefish. Give yourself a Bahamian day of sight fishing and the chance to place a careful cast."
+    },
+    "belize-permit": {
+      "title": "Belize Flats: A Permit Fishing Getaway",
+      "summary": "Make permit the focus of a Belize flats trip. Settle into a base and enjoy shallow-water days built around the next fish you spot."
+    },
+    "belize-reef": {
+      "title": "Belize Reefs: A Saltwater Fishing Boat Trip",
+      "summary": "Head to Belize's reefs for a fishing outing by boat. Keep the day focused on reef water and enjoy time with a rod over the side."
+    },
+    "quepos-offshore": {
+      "title": "Quepos: Offshore Billfish Fishing in Costa Rica",
+      "summary": "Set out from Quepos with billfish in mind. Enjoy a Costa Rica offshore charter with time to watch the water and work the rods."
+    },
+    "costa-caribbean-canals": {
+      "title": "Costa Rica's Caribbean Canals: Tarpon and Snook",
+      "summary": "Try for tarpon and snook in Costa Rica's Caribbean canals. Explore the water by boat for a fishing day on this side of the country."
+    },
+    "rio-negro-peacock": {
+      "title": "Rio Negro: Peacock Bass Fishing in Brazil",
+      "summary": "Make peacock bass the target in Brazil's Rio Negro basin. Spend a fishing trip working your lures as the water level shapes each day."
+    },
+    "northern-patagonia-trout": {
+      "title": "Northern Patagonia: Trout by River, Creek and Lake",
+      "summary": "Mix river floats, spring creeks and lake days on a northern Patagonia trout trip. Explore different water on this Argentine getaway."
+    },
+    "norway-skrei": {
+      "title": "Northern Norway: Winter Cod Fishing for Skrei",
+      "summary": "Head onto northern Norway's coastal water for winter cod. Make skrei the focus of a cold-season boat trip with the rods ready."
+    },
+    "norway-summer-sea": {
+      "title": "Norway's Coast: Summer Sea Fishing by Boat",
+      "summary": "Spend a summer fishing break on Norway's coast. Choose a guided charter or a camp with a rental boat for your days at sea."
+    },
+    "finland-ice-fishing": {
+      "title": "Finland's Lakes: A Guided Ice Fishing Day",
+      "summary": "Try a guided ice fishing outing on a Finnish lake. Settle into a winter day over the water with the next bite beneath your feet."
+    },
+    "soca-fly-fishing": {
+      "title": "Soča Valley Fly Fishing for Trout in Slovenia",
+      "summary": "Cast for trout on a chosen reach in Slovenia's Soča Valley. Enjoy a river day with alpine scenery and time to work your fly."
+    },
+    "lower-zambezi-tiger": {
+      "title": "Lower Zambezi: Tigerfish Fishing in Zambia",
+      "summary": "Take a boat onto the lower Zambezi with tigerfish in mind. Spend a Zambian river day focused on your casts and the next strike."
+    },
+    "cosmoledo-gt": {
+      "title": "Cosmoledo: Giant Trevally on the Fly in Seychelles",
+      "summary": "Make giant trevally the goal of a Cosmoledo fly fishing trip. Enjoy a remote Seychelles atoll outing with a demanding fish in mind."
+    },
+    "mongolia-taimen": {
+      "title": "Mongolia: A Remote River Expedition for Taimen",
+      "summary": "Build a river expedition around taimen in Mongolia. Settle into camp and spend your days focused on the water and the next cast."
+    },
+    "hokkaido-char": {
+      "title": "Northern Hokkaido: Char Fishing in Japan",
+      "summary": "Make char the focus of a northern Hokkaido outing. Enjoy a Japanese fishing trip built around this fish and the water you choose."
+    },
+    "gangwon-streams": {
+      "title": "Gangwon: Mountain-Stream Fly Fishing in South Korea",
+      "summary": "Fit a mountain-stream fly fishing day into a South Korea visit. Explore Gangwon water with a fly rod and time for a few careful casts."
+    },
+    "top-end-barramundi": {
+      "title": "Top End, Australia: Barramundi by Boat",
+      "summary": "Chase barramundi in the Top End on a runoff, harbour or billabong trip. Choose the water that fits your Australian fishing break."
+    },
+    "tasmania-great-lake": {
+      "title": "Great Lake, Tasmania: Trout from Shore or Boat",
+      "summary": "Fish Yingina, or Great Lake, for trout. Try shore sight fishing, boat flies or trolling for a day on this Tasmanian highland lake."
+    },
+    "mataura-trout": {
+      "title": "Mataura River Trout Fishing in New Zealand",
+      "summary": "Take a trout rod to the Mataura River in Southland. Enjoy a New Zealand day focused on a chosen reach and a well-placed cast."
+    },
+    "eglinton-river": {
+      "title": "Eglinton River: Valley Fishing in New Zealand",
+      "summary": "Fish the Eglinton River on a Fiordland valley outing. Make time in your New Zealand visit for a rod and a day beside the current."
+    },
+    "g-iceland-west-ranga": {
+      "title": "West Rangá: Spring-Fed Salmon Fishing in Iceland",
+      "summary": "Make salmon the target on Iceland's West Rangá. Enjoy a river trip focused on spring-fed water and time working your casts."
+    },
+    "g-iceland-vatnsdalsa": {
+      "title": "Vatnsdalsá: River Fishing in Northwest Iceland",
+      "summary": "Fish a stretch of the Vatnsdalsá in northwest Iceland. Enjoy a day moving between river beats with time to get to know the water."
+    },
+    "g-iceland-myrarkvisl": {
+      "title": "Mýrarkvísl: Trout and Salmon Fishing in Iceland",
+      "summary": "Choose trout or salmon for an outing on the Mýrarkvísl. Spend an Icelandic fishing day focused on this small river and your next cast."
+    },
+    "g-iceland-reykjadalsa": {
+      "title": "Reykjadalsá: Dry-Fly Fishing in Iceland",
+      "summary": "Make dry flies the focus of a day on the Reykjadalsá. Enjoy an Icelandic river outing with time to watch your fly on the water."
+    },
+    "g-iceland-lonsa-langanes": {
+      "title": "Lónsá: Trout and Char in Northeast Iceland",
+      "summary": "Try for trout and char on the Lónsá in Langanes. Make a remote northeast Icelandic fishing break of this stretch of river water."
+    },
+    "g-norway-gaula": {
+      "title": "Gaula River Salmon Fishing on a Norwegian River Beat",
+      "summary": "Fish a stretch of the Gaula for salmon with a local host. Give yourself a Norwegian river day to settle into the water and your casts."
+    },
+    "g-norway-orkla": {
+      "title": "Orkla River Salmon Fishing on a Norwegian River Beat",
+      "summary": "Make an Orkla river beat your base for a salmon outing. Enjoy a Norwegian fishing day focused on your stretch of moving water."
+    },
+    "g-norway-namsen": {
+      "title": "Namsen River Salmon Fishing from Bank or Boat",
+      "summary": "Fish the Namsen for salmon from a bank or a host's boat. Choose your way onto the river for a Norwegian day with a rod in hand."
+    },
+    "g-norway-otra-kristiansand": {
+      "title": "Otra River: Fishing Near Kristiansand, Norway",
+      "summary": "Fit a river fishing day on the Otra into your Kristiansand visit. Spend time on a chosen reach during a break in southern Norway."
+    },
+    "g-sweden-swedish-lapland": {
+      "title": "Swedish Lapland: A Guided River Fly Fishing Trip",
+      "summary": "Explore a river in Swedish Lapland with a fly fishing guide. Settle into a northern base and make time for your next cast."
+    },
+    "g-sweden-high-coast": {
+      "title": "High Coast, Sweden: Coastal Predator Fishing",
+      "summary": "Choose sheltered water for a predator fishing trip on Sweden's High Coast. Enjoy a coastal outing with a focused target in mind."
+    },
+    "g-sweden-lake-vattern": {
+      "title": "Lake Vättern: Fishing from Bank or Boat in Sweden",
+      "summary": "Make Lake Vättern your Swedish fishing destination. Choose a boat outing or a bank session and spend time on this large lake."
+    },
+    "g-finland-lake-saimaa": {
+      "title": "Lake Saimaa: Casting and Trolling in Finland",
+      "summary": "Cast along reed margins or troll open water on Lake Saimaa. Choose your kind of Finnish lake day and enjoy time at the rods."
+    },
+    "g-finland-lake-inari": {
+      "title": "Lake Inari: A Northern Lake Fishing Trip in Finland",
+      "summary": "Explore part of Lake Inari on a northern Finnish fishing day. Choose a launch and spend time on the lake with your target in mind."
+    },
+    "g-denmark-helns-fyn": {
+      "title": "Helnæs, Denmark: Coastal Fly and Spin Fishing",
+      "summary": "Take a fly or spinning rod to the coast at Helnæs on Fyn. Enjoy a Danish shore outing with the wind and water shaping your day."
+    },
+    "g-denmark-mariager-fjord": {
+      "title": "Mariager Fjord Shore Fishing in Denmark",
+      "summary": "Fish a stretch of shore on Mariager Fjord. Spend a Danish coastal day with a rod in hand and time to explore the water's edge."
+    },
+    "g-denmark-little-belt": {
+      "title": "Little Belt: Shore and Boat Fishing in Denmark",
+      "summary": "Choose a shore session or a boat outing on the Little Belt. Make a Danish fishing day of coastal water and time at the rods."
+    },
+    "g-ireland-lough-corrib": {
+      "title": "Lough Corrib Trout Fishing with an Irish Boatman",
+      "summary": "Head onto Lough Corrib with a local boatman for trout. Enjoy an Irish fishing day with time to follow the water and the bite."
+    },
+    "g-ireland-river-shannon": {
+      "title": "River Shannon: A River Fishing Day in Ireland",
+      "summary": "Make a stretch of the Shannon your setting for an Irish fishing day. Choose a fish to focus on and enjoy time beside the river."
+    },
+    "g-ireland-lough-conn": {
+      "title": "Lough Conn: A Boat Fishing Day in Western Ireland",
+      "summary": "Take a local boatman onto Lough Conn for a fishing outing. Spend a day on western Ireland's lake water with the rods ready."
+    },
+    "g-ireland-lough-mask": {
+      "title": "Lough Mask: A Guided Boat Fishing Trip in Ireland",
+      "summary": "Fish Lough Mask with a guide on a western Irish outing. Start from a local launch and enjoy a day of time on the lake."
+    },
+    "g-ireland-lough-carra": {
+      "title": "Lough Carra: A Boat Fishing Day in Ireland",
+      "summary": "Make time for a fishing boat outing on Lough Carra. Enjoy western Irish lake water with a rod in hand and a day to explore."
+    },
+    "g-united-kingdom-river-tweed": {
+      "title": "River Tweed Salmon Fishing on a Scottish River Beat",
+      "summary": "Fish a beat on the River Tweed for salmon. Spend a Scottish river day with a local host and time to work your stretch of water."
+    },
+    "g-united-kingdom-river-tay": {
+      "title": "River Tay Salmon Fishing on a Scottish River Beat",
+      "summary": "Make a River Tay beat your base for salmon fishing. Learn a presentation or spend a full session working Scottish river water."
+    },
+    "g-united-kingdom-river-spey": {
+      "title": "River Spey Salmon Fishing and Casting in Scotland",
+      "summary": "Fish the River Spey for salmon on a Scottish river day. Add casting instruction to your visit or spend time working a beat."
+    },
+    "g-united-kingdom-river-dee": {
+      "title": "River Dee Salmon Fishing on a Scottish River Beat",
+      "summary": "Spend a day after salmon on a River Dee beat. Enjoy a Scottish river outing with time to move between places and work your casts."
+    },
+    "g-united-kingdom-barton-court-river-kennet": {
+      "title": "Barton Court: Chalkstream Fishing on the Kennet",
+      "summary": "Fish estate water at Barton Court on the River Kennet. Make a day of this English chalkstream, with time to settle into each cast."
+    },
+    "g-united-kingdom-llyn-y-gors-anglesey": {
+      "title": "Llyn Y Gors: A First Fishing Trip on Anglesey",
+      "summary": "Try a managed-lake outing at Llyn Y Gors on Anglesey. Choose a lake and a fish to focus on for an introduction to the water."
+    },
+    "g-netherlands-amsterdam-canals-and-ij": {
+      "title": "Amsterdam Predator Fishing on the Canals and IJ",
+      "summary": "Fish for predators in Amsterdam's canals and IJ. Choose a street-fishing walk or a guided boat outing for a different city day."
+    },
+    "g-netherlands-sneekermeer-friesland": {
+      "title": "Sneekermeer: A Predator Fishing Boat Trip in Friesland",
+      "summary": "Explore Sneekermeer on a guided predator fishing outing. Make a Dutch lake day of it from your base in Friesland."
+    },
+    "g-belgium-ourthe-valley-riveo": {
+      "title": "Ourthe Valley: A Guided Fishing Lesson in Belgium",
+      "summary": "Learn a fishing skill on the water in the Ourthe Valley. A guided RIVEO outing makes time by a Belgian river part of the lesson."
+    },
+    "g-belgium-nisramont-lake": {
+      "title": "Nisramont Lake: Freshwater Fishing in Belgium",
+      "summary": "Spend a day with a rod at Nisramont Lake. Make freshwater fishing part of your Belgian visit and enjoy time beside the water."
+    },
+    "g-belgium-semois-herbeumont": {
+      "title": "Semois River: Fishing Near Herbeumont, Belgium",
+      "summary": "Fish a stretch of the Semois near Herbeumont. Make a Belgian river day of it, with time to get to know the water and cast."
+    },
+    "g-belgium-eau-dheure-lakes": {
+      "title": "Eau d'Heure Lakes: A Belgium Lake Fishing Day",
+      "summary": "Choose a lake and a shore in the Eau d'Heure group for fishing. Spend part of your Belgian visit beside freshwater with a rod."
+    },
+    "g-luxembourg-sure-river": {
+      "title": "Sûre River: A River Fishing Day in Luxembourg",
+      "summary": "Take a rod to a stretch of the Sûre River in Luxembourg. Enjoy a small-country river outing with time to work your casts."
+    },
+    "g-luxembourg-moselle-wasserbillig": {
+      "title": "Moselle River: Bank Fishing Near Wasserbillig",
+      "summary": "Fish from a bank of the Moselle near Wasserbillig. Make a Luxembourg day of this border river with a rod and time beside the water."
+    },
+    "g-luxembourg-vianden-reservoir-our": {
+      "title": "Vianden Reservoir: A Fishing Day in Luxembourg",
+      "summary": "Make Vianden reservoir on the Our your fishing stop in Luxembourg. Spend a day beside freshwater with time to enjoy the next cast."
+    },
+    "g-germany-lake-muritz": {
+      "title": "Lake Müritz: Guided Predator Fishing in Germany",
+      "summary": "Try for freshwater predators on Lake Müritz. Choose a guide boat or a rental to suit your experience on this German lake."
+    },
+    "g-austria-ybbs-mostviertel": {
+      "title": "Ybbs River Fly Fishing in Austria's Mostviertel",
+      "summary": "Take a fly rod to a hosted stretch of the Ybbs in Mostviertel. Enjoy an Austrian river day with time to work your casts."
+    },
+    "g-austria-lunersee-ratikon": {
+      "title": "Lünersee: High-Mountain Lake Fishing in Austria",
+      "summary": "Combine mountain access with a fishing outing at Lünersee. Enjoy a day beside this Austrian high-country lake with a rod in hand."
+    },
+    "g-austria-formarinsee-arlberg": {
+      "title": "Formarinsee: A Mountain Lake Fishing Day in Austria",
+      "summary": "Make Formarinsee the setting for an Austrian mountain lake outing. Leave time in your Arlberg visit for fishing beside the water."
+    },
+    "g-austria-goiserer-traun": {
+      "title": "Goiserer Traun: A River Fly Fishing Day in Austria",
+      "summary": "Fish a stretch of the Goiserer Traun with a fly rod. Enjoy an Austrian river day with time for instruction or a few careful casts."
+    },
+    "g-austria-grundlsee": {
+      "title": "Grundlsee: A Lake Predator Fishing Trip in Austria",
+      "summary": "Make freshwater predators the focus of a Grundlsee outing. Spend an Austrian lake day with a rod and time to search the water."
+    },
+    "g-monaco-monaco-offshore": {
+      "title": "Monaco: An Offshore Fishing Charter on the Riviera",
+      "summary": "Head offshore from Monaco for a Riviera fishing charter. Choose your target and method, then enjoy a day on the boat at the rods."
+    },
+    "g-monaco-monaco-coastal-night-fishing": {
+      "title": "Monaco Coast: Light-Tackle Fishing After Dark",
+      "summary": "Take a light-tackle fishing outing on Monaco's coast after dark. Add time at the rods to an evening beside the Riviera water."
+    },
+    "g-france-ile-de-re": {
+      "title": "Île de Ré: Guided Coastal Lure Fishing in France",
+      "summary": "Cast lures from a small boat near Île de Ré with a guide. Enjoy a French coastal outing with time to work on your technique."
+    },
+    "g-france-var-coast": {
+      "title": "Var Coast: Shore and Boat Fishing in France",
+      "summary": "Choose a shore outing or a guided boat day on the Var coast. Make time for coastal fishing during your visit to France."
+    },
+    "g-spain-cistierna-leon": {
+      "title": "Cistierna Trout Fishing in León, Spain",
+      "summary": "Make Cistierna your base for a trout trip in León. Enjoy days on Cantabrian water with a rod at the heart of your Spanish visit."
+    },
+    "g-portugal-ponta-delgada-sao-miguel": {
+      "title": "Ponta Delgada: An Azores Fishing Charter",
+      "summary": "Start from Ponta Delgada on São Miguel for a fishing charter. Add a day of offshore water and time at the rods to your Azores visit."
+    },
+    "g-italy-sarca-regorie": {
+      "title": "Sarca River: Fishing the Regorie Stretch in Italy",
+      "summary": "Fish the Regorie stretch of the Sarca on an Italian river outing. Make time in your Trentino visit to explore this water with a rod."
+    },
+    "g-italy-chiese-val-di-fumo": {
+      "title": "Chiese River: Valley Fishing in Italy's Val di Fumo",
+      "summary": "Take a rod to the Chiese in Val di Fumo. Make the approach and time beside the river part of your fishing day in Trentino, Italy."
+    },
+    "g-italy-avisio-ck-reach": {
+      "title": "Avisio River: A Trentino Fishing Day in Italy",
+      "summary": "Fish the CK stretch of the Avisio River on a Trentino outing. Enjoy an Italian river day with time to focus on a chosen reach."
+    },
+    "g-italy-adige-nkc-reach": {
+      "title": "Adige River: A Trentino River Fishing Day in Italy",
+      "summary": "Explore the NKC stretch of the Adige on a fishing outing. Spend part of your Italian visit beside river water in Trentino."
+    },
+    "g-italy-sesia-varallo": {
+      "title": "Sesia River: Reserve Fishing Near Varallo, Italy",
+      "summary": "Fish a reserve stretch of the Sesia near Varallo. Make a guided river outing part of your Italian visit, with time to enjoy each cast."
+    },
+    "g-italy-sesia-alagna": {
+      "title": "Upper Sesia River: Fishing Near Alagna, Italy",
+      "summary": "Take a rod to the upper Sesia near Alagna. Spend an Italy valley day beside the river with time to get to know the water."
+    },
+    "g-estonia-lake-peipsi-varnja-winter": {
+      "title": "Lake Peipsi: Guided Ice Fishing from Varnja, Estonia",
+      "summary": "Join a hosted ice fishing outing on Lake Peipsi from Varnja. Make a winter Estonian day of time over the water at the rods."
+    },
+    "g-estonia-lake-peipsi-varnja-open-water": {
+      "title": "Lake Peipsi: Open-Water Fishing from Varnja, Estonia",
+      "summary": "Take a boat onto Lake Peipsi from Varnja for an open-water trip. Choose a rental or a guide for an Estonian fishing day."
+    },
+    "g-latvia-lake-burtnieks": {
+      "title": "Lake Burtnieks: A Latvia Lake Fishing Trip",
+      "summary": "Make Lake Burtnieks your setting for a fishing day near Valmiera. Take a boat route with a local host and enjoy Latvian lake water."
+    },
+    "g-latvia-lake-usma": {
+      "title": "Lake Usma: Pike and Perch Fishing in Latvia",
+      "summary": "Cast for pike or perch on Lake Usma with a guide. Make one fish the focus of your Latvian lake day and enjoy the search for a strike."
+    },
+    "g-latvia-lake-lubans": {
+      "title": "Lake Lubāns: Guided Predator Fishing in Latvia",
+      "summary": "Explore Lake Lubāns with a guide for freshwater predators. Enjoy a Latvian boat day with time to work your chosen water."
+    },
+    "g-poland-lake-mamry": {
+      "title": "Lake Mamry: Guided Predator Fishing in Poland",
+      "summary": "Fish Lake Mamry with a guide for freshwater predators. Make a boat outing part of your visit to Poland's Masurian lakes."
+    },
+    "g-poland-lake-sniardwy": {
+      "title": "Lake Śniardwy: A Predator Fishing Trip in Poland",
+      "summary": "Take a guided predator fishing trip on Lake Śniardwy. Enjoy a boat day among Poland's Masurian lakes with time to cast."
+    },
+    "g-poland-lake-niegocin": {
+      "title": "Lake Niegocin: Guided Predator Fishing in Poland",
+      "summary": "Choose Lake Niegocin for a guided predator fishing outing. Spend a day with a rod on this lake in Poland's Masurian region."
+    },
+    "g-bosnia-and-herzegovina-ribnik": {
+      "title": "Ribnik River: Clear-Water Fly Fishing in Bosnia",
+      "summary": "Bring a careful fly presentation to the clear water of the Ribnik. Enjoy a Bosnian river day where each cast earns your attention."
+    },
+    "g-bosnia-and-herzegovina-pliva": {
+      "title": "Pliva River: A Guided Fly Fishing Day in Bosnia",
+      "summary": "Take a guided fly fishing trip on the Pliva River. Spend a Bosnian day working your casts and getting to know a stretch of water."
+    },
+    "g-croatia-gacka": {
+      "title": "Gacka River: Trout on a Croatian Chalkstream",
+      "summary": "Fish the slow water of the Gacka for trout. Enjoy a Croatian chalkstream day with time to work on your approach and drift."
+    },
+    "g-croatia-kupa-gorski-kotar": {
+      "title": "Kupa River: Trout and Grayling Fishing in Croatia",
+      "summary": "Try for trout and grayling on the Kupa in Gorski Kotar. Enjoy a guided Croatian river trip with time to explore the water."
+    },
+    "g-croatia-kupica-gorski-kotar": {
+      "title": "Kupica River Small-Stream Fishing in Croatia",
+      "summary": "Explore the smaller water of the Kupica in Gorski Kotar. Make a guided Croatian fishing outing of this river and your next cast."
+    },
+    "g-montenegro-tara-river": {
+      "title": "Tara River Mountain Fly Fishing in Montenegro",
+      "summary": "Choose trout or grayling for a fly fishing day on the Tara. Spend time beside mountain river water on your Montenegro trip."
+    },
+    "g-montenegro-biograd-lake": {
+      "title": "Biograd Lake Trout Fishing in Montenegro",
+      "summary": "Make trout the focus of a Biograd Lake visit. Spend a Montenegro fishing day beside stillwater with time for a few more casts."
+    },
+    "g-montenegro-lim-river": {
+      "title": "Lim River: A Guided Grayling Trip in Montenegro",
+      "summary": "Make grayling the focus of a guided day on the Lim River. Enjoy time beside the water in Montenegro with each cast in mind."
+    },
+    "g-serbia-drina-serbian-bank": {
+      "title": "Drina River: Tailwater Fly Fishing from Serbia",
+      "summary": "Fish the Drina tailwater from the Serbian bank with a guide. Spend a day working a stretch of current with a fly rod."
+    },
+    "g-serbia-stari-slankamen-tisadanube-confluence": {
+      "title": "Stari Slankamen: Boat Fishing on the Tisa and Danube",
+      "summary": "Fish the Tisa-Danube confluence from Stari Slankamen with a guide. Make a Serbian boat day of these meeting river waters."
+    },
+    "g-czechia-otava-sumava": {
+      "title": "Otava River: Guided Nymph Fishing in Czechia",
+      "summary": "Work on nymph fishing with a guide on the Otava in Šumava. Enjoy a Czech river day built around casts, drifts and new skills."
+    },
+    "g-czechia-vltava": {
+      "title": "Vltava River: A Fishing Lesson on Czech Water",
+      "summary": "Take a river fishing lesson on a chosen stretch of the Vltava. Make time in your Czechia visit for hands-on practice at the water."
+    },
+    "g-czechia-jizera": {
+      "title": "Jizera River Fly Fishing in Northeastern Bohemia",
+      "summary": "Take a fly rod to the Jizera with a local host. Enjoy a day on northeastern Bohemian water during your visit to Czechia."
+    },
+    "g-slovakia-bela": {
+      "title": "Belá River: A Guided River Fishing Day in Slovakia",
+      "summary": "Explore a stretch of the Bela with a fishing guide. Enjoy a Slovak river outing where the state of the water shapes your day."
+    },
+    "g-slovakia-vah": {
+      "title": "Váh River: Wide-River Fly Fishing in Slovakia",
+      "summary": "Fish a wide stretch of the Vah with a fly rod. Give yourself time in Slovakia to work on your casts and enjoy the current."
+    },
+    "g-slovakia-poprad": {
+      "title": "Poprad River: An Urban Fishing Day in Slovakia",
+      "summary": "Fit a river fishing outing into your time in Poprad. Explore a locally chosen stretch of urban water during your Slovak visit."
+    },
+    "g-hungary-lake-balaton": {
+      "title": "Lake Balaton: A Carp Fishing Holiday in Hungary",
+      "summary": "Settle into a swim on Lake Balaton for a multiday carp trip. Make the bank your base and enjoy time beside Hungarian lake water."
+    },
+    "g-hungary-paradise-lake-hungary": {
+      "title": "Paradise Lake: A Fishing Chalet Holiday in Hungary",
+      "summary": "Stay in a chalet at Paradise Lake for a managed-fishery holiday. Spend your Hungarian break close to the water with a rod ready."
+    },
+    "g-hungary-valley-lake-hungary": {
+      "title": "Valley Lake: Overnight Carp Fishing in Hungary",
+      "summary": "Set up a bivvy at Valley Lake for a carp session in Hungary. Settle into your swim and enjoy time by the water after the day ends."
+    },
+    "g-romania-holbina-danube-delta": {
+      "title": "Holbina: Pike Fishing in Romania's Danube Delta",
+      "summary": "Make a Holbina lodge your base for pike fishing in the Danube Delta. Explore the water by boat on this Romanian fishing trip."
+    },
+    "g-bulgaria-arda-river": {
+      "title": "Arda River Fly Fishing in Bulgaria's Rhodopes",
+      "summary": "Take a guided fly fishing outing on the Arda River. Enjoy a day beside the water in Bulgaria's Rhodope region with time to cast."
+    },
+    "g-bulgaria-kanina-river": {
+      "title": "Kanina River: A Guided Fly Fishing Day in Bulgaria",
+      "summary": "Explore the Kanina River with a fly fishing guide. Mix time on the water with a little instruction during your visit to Bulgaria."
+    },
+    "g-bulgaria-iugovska-river": {
+      "title": "Iugovska River Fly Fishing in Bulgaria's Rhodopes",
+      "summary": "Make the Iugovska your river for a guided fly fishing day. Enjoy time with a rod in Bulgaria's Rhodope region at your own pace."
+    },
+    "g-greece-chania-bay-crete": {
+      "title": "Chania Bay: Jigging and Bottom Fishing in Crete",
+      "summary": "Work a jig or drop a line on a bottom fishing trip in Chania Bay. Enjoy a guided boat outing during your visit to Crete."
+    },
+    "g-greece-kissamos-bay-crete": {
+      "title": "Kissamos Bay: Bay and Reef Fishing in Crete",
+      "summary": "Fish Kissamos Bay and its reef water on a charter. Choose a local outing or a longer boat day during your stay in Crete."
+    },
+    "g-cyprus-ayia-napa-harbour": {
+      "title": "Ayia Napa: A Seasonal Tuna Fishing Trip in Cyprus",
+      "summary": "Set out from Ayia Napa harbour with tuna in mind. Match a Cyprus boat trip to the local season and enjoy time at the rods."
+    },
+    "g-malta-gozo-offshore": {
+      "title": "Gozo, Malta: Deep Bottom Fishing and Trolling",
+      "summary": "Head offshore from Gozo for deep bottom fishing, with trolling on the way. Make a Malta boat day of two ways to work the water."
+    },
+    "g-switzerland-oeschinensee": {
+      "title": "Oeschinensee: Summer Lake Fishing in Switzerland",
+      "summary": "Make a summer fishing outing part of a visit to Oeschinensee. Combine mountain access and time by the lake in Switzerland."
+    },
+    "g-switzerland-lake-lungern": {
+      "title": "Lake Lungern: Bank and Boat Fishing in Switzerland",
+      "summary": "Choose a bank session or a boat outing on Lake Lungern. Enjoy a day with a rod beside lake water in Switzerland's Alpine region."
+    },
+    "g-andorra-tristaina-lakes-ordino": {
+      "title": "Tristaina Lakes: Hiking and Fishing in Andorra",
+      "summary": "Carry a rod to a Tristaina lake near Ordino. Combine a Pyrenean hike with time beside the water on a fishing day in Andorra."
+    },
+    "g-lithuania-curonian-lagoon-lithuanian-side": {
+      "title": "Curonian Lagoon Predator Fishing from Lithuania",
+      "summary": "Launch from Lithuania for a predator fishing day on the Curonian Lagoon. Explore the water by boat with your target in mind."
+    },
+    "g-lithuania-lithuanian-baltic-coast": {
+      "title": "Lithuania's Baltic Coast: Salmon Trolling by Boat",
+      "summary": "Take a guided salmon trolling trip on Lithuania's Baltic coast. Choose a departure port and enjoy a fishing day on the boat."
+    },
+    "g-spain-river-ebro-caspe": {
+      "title": "River Ebro: A Guided Fishing Stay Near Caspe, Spain",
+      "summary": "Make Caspe your base for a guided fishing stay on the Ebro. Choose a target and enjoy time getting to know this Spanish river."
+    },
+    "g-slovenia-idrijca": {
+      "title": "Idrijca River: Marble Trout Fishing in Slovenia",
+      "summary": "Try for marble trout on a stretch of the Idrijca. Spend a Slovenian river day focused on a fish and the cast you want to make."
+    },
+    "g-slovenia-unec": {
+      "title": "Unec River: Clear-Stream Fishing in Slovenia",
+      "summary": "Bring a careful presentation to the clear water of the Unec. Enjoy a Slovenian stream day with time to work on each cast."
+    },
+    "g-slovenia-krka": {
+      "title": "Krka River: Trout or Huchen Fishing in Slovenia",
+      "summary": "Choose a trout day or a huchen outing on the Krka. Give one fish your attention on a guided fishing trip in Slovenia."
+    },
+    "g-angola-kwanza-river-mouth": {
+      "title": "Kwanza River Mouth: Fly and Lure Fishing in Angola",
+      "summary": "Work flies or lures at the Kwanza River mouth. Spend an Angolan fishing day exploring estuary water with your next cast in mind."
+    },
+    "g-angola-kwanza-coast-offshore": {
+      "title": "Kwanza Coast: An Offshore Fishing Charter in Angola",
+      "summary": "Head offshore from the Kwanza coast on a fishing charter. Spend a day on open water during your Angolan trip at the rods."
+    },
+    "g-cameroon-faro-river-gassa-camp": {
+      "title": "Faro River: A Fly Fishing Expedition in Cameroon",
+      "summary": "Make Gassa Camp your base for a guided fly fishing expedition on the Faro. Spend your Cameroonian trip focused on river water."
+    },
+    "g-gabon-sette-cama": {
+      "title": "Sette Cama: Lagoon and Coastal Casting in Gabon",
+      "summary": "Cast from shore or a boat around Sette Cama. Mix lagoon and coastal water on a Gabonese fishing trip with time for each outing."
+    },
+    "g-gabon-port-gentil": {
+      "title": "Port Gentil: A Guided Tarpon Fishing Trip in Gabon",
+      "summary": "Make tarpon the target on a guided outing from Port Gentil. Spend a Gabonese fishing day with a rod and this fish in mind."
+    },
+    "g-guinea-bissau-bijagos-archipelago": {
+      "title": "Bijagós Islands: Reef Casting in Guinea-Bissau",
+      "summary": "Cast and jig around island reefs in the Bijagós archipelago. Make an island base the start of a Guinea-Bissau fishing trip."
+    },
+    "g-madagascar-nosy-be": {
+      "title": "Nosy Be Reef Popping and Jigging in Madagascar",
+      "summary": "Work a popper over reef water or drop a jig from Nosy Be. Enjoy a Madagascar boat day with two active ways to fish."
+    },
+    "g-mozambique-pomene": {
+      "title": "Pomene: Coastal Lure Fishing in Mozambique",
+      "summary": "Make a lodge your base for lure fishing at Pomene. Mix shore sessions and guided boat outings on Mozambique's coast."
+    },
+    "g-mozambique-bazaruto-archipelago": {
+      "title": "Bazaruto Islands Offshore Fishing in Mozambique",
+      "summary": "Head offshore from a Bazaruto island or mainland base. Enjoy a Mozambique charter day with time on the boat and at the rods."
+    },
+    "g-mozambique-inhaca-island": {
+      "title": "Inhaca Island: A Coastal Fishing Charter in Mozambique",
+      "summary": "Make Inhaca Island your base for a fishing charter. Spend part of your Mozambique visit on coastal water with a rod in hand."
+    },
+    "g-mozambique-quirimbas-archipelago": {
+      "title": "Quirimbas Islands: A Remote Fishing Trip in Mozambique",
+      "summary": "Choose an island base in the Quirimbas for a remote fishing break. Enjoy time on Mozambique water with your rods close by."
+    },
+    "g-namibia-skeleton-coast": {
+      "title": "Skeleton Coast: Guided Surf Fishing in Namibia",
+      "summary": "Cast into the surf on Namibia's Skeleton Coast with a guide. Make a beach fishing day of the bait, the waves and the wait."
+    },
+    "g-tanzania-mnyera-river": {
+      "title": "Mnyera River: Tigerfish on the Fly in Tanzania",
+      "summary": "Drift the Mnyera from Dhala Camp with tigerfish in mind. Enjoy a Tanzanian fly fishing day with a moving boat and another cast ahead."
+    },
+    "g-tanzania-ruhudji-river": {
+      "title": "Ruhudji River: Tigerfish on the Fly in Tanzania",
+      "summary": "Start from Samaki Camp for a tigerfish float on the Ruhudji. Spend a Tanzanian river day working flies from the drift boat."
+    },
+    "g-tanzania-nyerere-dam-shangaa-camp": {
+      "title": "Nyerere Dam: A Reservoir Fishing Trip in Tanzania",
+      "summary": "Make Shangaa Camp your base for fishing Nyerere Dam. Enjoy a Tanzanian reservoir outing with time on the water at the rods."
+    },
+    "g-uganda-ngamba-island-lake-victoria": {
+      "title": "Ngamba Island: Guided Fishing on Uganda's Lake Victoria",
+      "summary": "Explore Lake Victoria water near Ngamba Island with a fishing guide. Add a boat day and time at the rods to your Ugandan visit."
+    },
+    "g-uganda-bulago-island-lake-victoria": {
+      "title": "Bulago Island: Lake Victoria Fishing in Uganda",
+      "summary": "Make Bulago Island part of a Lake Victoria fishing visit. Choose a guided boat outing for time on Uganda's lake water."
+    },
+    "g-uganda-kalangala-islands-lake-victoria": {
+      "title": "Kalangala Islands: Lake Victoria Fishing in Uganda",
+      "summary": "Choose a Kalangala island base for a Lake Victoria fishing trip. Enjoy a guided boat day during your stay in Uganda."
+    },
+    "g-uganda-victoria-nile-murchison-falls": {
+      "title": "Victoria Nile: Guided Fishing Near Murchison Falls",
+      "summary": "Fish the Victoria Nile near Murchison Falls with a guide. Spend a Ugandan river day on the boat with the current in focus."
+    },
+    "g-botswana-nxamaseri-okavango": {
+      "title": "Nxamaseri: Tigerfish Fishing in Botswana's Okavango",
+      "summary": "Fish delta channels from Nxamaseri with tigerfish in mind. Let the water level shape your route through Botswana's Okavango."
+    },
+    "g-zimbabwe-lake-kariba": {
+      "title": "Lake Kariba: Tigerfish Fishing in Zimbabwe",
+      "summary": "Try for tigerfish on Lake Kariba from a day boat, lodge or houseboat. Choose your way to stay close to Zimbabwe's lake water."
+    },
+    "g-zimbabwe-upper-zambezi-zimbabwe-bank": {
+      "title": "Upper Zambezi: Tigerfish Fishing from Zimbabwe",
+      "summary": "Start from Zimbabwe for a guided tigerfish outing on the upper Zambezi. Spend a day working a chosen reach of river water."
+    },
+    "g-zambia-mwandi-upper-zambezi": {
+      "title": "Mwandi: Lodge Fishing on Zambia's Upper Zambezi",
+      "summary": "Stay at a lodge near Mwandi for fishing on the upper Zambezi. Make your Zambian break about days beside this stretch of river."
+    },
+    "g-egypt-lake-nasser-abu-simbel": {
+      "title": "Lake Nasser: Nile Perch Fishing from Abu Simbel",
+      "summary": "Take a multiday Nile perch trip on Lake Nasser from Abu Simbel. Choose a mobile boat safari or a fixed base for your Egyptian stay."
+    },
+    "g-morocco-bin-el-ouidane": {
+      "title": "Bin el Ouidane: A Carp Fishing Holiday in Morocco",
+      "summary": "Settle in for a carp fishing holiday at Bin el Ouidane. Rent the bulky tackle and make time by this Moroccan lake the main event."
+    },
+    "g-gambia-barracuda-lodge-jetty": {
+      "title": "Barracuda Lodge: Jetty Handline Fishing in Gambia",
+      "summary": "Try handline fishing from the jetty at Barracuda Lodge. Enjoy a simple introduction to fishing during a stay in Gambia."
+    },
+    "g-senegal-saly-marina": {
+      "title": "Saly, Senegal: A Deep-Sea Fishing Trip",
+      "summary": "Make Saly marina your starting point for a deep-sea fishing outing. Add time on the boat and at the rods to your Senegalese visit."
+    },
+    "g-tunisia-djerba": {
+      "title": "Djerba, Tunisia: A First Boat Fishing Trip",
+      "summary": "Try a short fishing outing from Djerba with equipment included. Add an introduction to boat fishing to your Tunisian visit."
+    },
+    "g-south-africa-sterkfontein-dam": {
+      "title": "Sterkfontein Dam: Yellowfish on the Fly in South Africa",
+      "summary": "Cast for yellowfish on the stillwater of Sterkfontein Dam. Enjoy a South African fly fishing day with a careful presentation in mind."
+    },
+    "g-lesotho-bokong-river-makhangoa": {
+      "title": "Bokong River Mountain Fly Fishing in Lesotho",
+      "summary": "Make Makhangoa's community camp your base for a Bokong River trip. Enjoy mountain fly fishing and time on the water in Lesotho."
+    },
+    "g-argentina-rio-grande-tierra-del-fuego": {
+      "title": "Rio Grande: Sea-Run Trout in Tierra del Fuego",
+      "summary": "Fish a Rio Grande beat for sea-run trout in Tierra del Fuego. Make a lodge your base for an Argentine trip focused on the fly."
+    },
+    "g-argentina-rio-gallegos": {
+      "title": "Rio Gallegos: Sea Trout Fishing in Argentina",
+      "summary": "Explore lower or upper beats of the Rio Gallegos for sea trout. Give yourself time on the river during your Argentine fishing break."
+    },
+    "g-argentina-rio-irigoyen": {
+      "title": "Rio Irigoyen: Small-River Sea Trout in Argentina",
+      "summary": "Try for sea trout on the smaller water of the Rio Irigoyen. Enjoy an Argentine river day with attention to each cast and approach."
+    },
+    "g-argentina-ibera-wetlands-pira-lodge": {
+      "title": "Iberá Wetlands: Dorado on the Fly in Argentina",
+      "summary": "Set out from Pirá Lodge to fly fish for dorado in the Iberá wetlands. Explore channels by skiff on this Argentine fishing trip."
+    },
+    "g-argentina-parana-river-argentine-program": {
+      "title": "Paraná River: Dorado Fishing by Boat in Argentina",
+      "summary": "Make dorado the target on a Paraná River boat trip. Choose an Argentine base and enjoy time on this large river at the rods."
+    },
+    "g-bolivia-agua-negra-river": {
+      "title": "Agua Negra River: Jungle Dorado Fishing in Bolivia",
+      "summary": "Take a fly rod to the Agua Negra for dorado. Explore jungle river water on a Bolivian expedition with time to work each cast."
+    },
+    "g-bolivia-secure-river": {
+      "title": "Sécure River: Guided Jungle River Fishing in Bolivia",
+      "summary": "Explore the Sécure River with a fishing guide. Move between stretches by boat and enjoy time casting on tropical Bolivian water."
+    },
+    "g-bolivia-pluma-river": {
+      "title": "Pluma River: A Jungle Fly Fishing Trip in Bolivia",
+      "summary": "Make a lodge your base for fly fishing on the Pluma River. Spend your Bolivian trip beside jungle water with a fly rod in hand."
+    },
+    "g-chile-futaleufu-river": {
+      "title": "Futaleufú River Trout Fishing on Chile's Glacial Water",
+      "summary": "Fish the glacier-influenced Futaleufú for trout. Choose a floated reach or a bank session for time on this Chilean river."
+    },
+    "g-colombia-tomo-river": {
+      "title": "Tomo River: A Lowland Fishing Expedition in Colombia",
+      "summary": "Make a camp your base for a fishing expedition on the Tomo River. Explore Colombian lowland water with a rod at the center of the trip."
+    },
+    "g-colombia-orinoco-colombian-program": {
+      "title": "Orinoco River Predator Fishing from Colombia",
+      "summary": "Start from Colombia for predator fishing on the Orinoco. Make a stretch of this large river the focus of your outing at the rods."
+    },
+    "g-brazil-juruenateles-pires-confluence": {
+      "title": "Juruena and Teles Pires: River Lodge Fishing in Brazil",
+      "summary": "Stay at a lodge by the Juruena-Teles Pires confluence for fishing. Enjoy a Brazilian river break where two waterways meet."
+    },
+    "g-brazil-xingu-reservation-program": {
+      "title": "Xingu River: A Guided Fishing Expedition in Brazil",
+      "summary": "Explore the Xingu on a guided fishing expedition. Make locally arranged river access and time at the rods part of your Brazilian trip."
+    },
+    "g-brazil-acari-river-pinima-lodge": {
+      "title": "Acari River: A Remote Fishing Lodge Trip in Brazil",
+      "summary": "Make Pinima Lodge your base for a remote Acari River fishing trip. Settle into a Brazilian break focused on days at the water."
+    },
+    "g-brazil-sucunduri-river": {
+      "title": "Sucunduri River: A Jungle Fishing Lodge Trip in Brazil",
+      "summary": "Stay at a jungle lodge for a fishing trip on the Sucunduri River. Make boat outings and time on the water the focus in Brazil."
+    },
+    "g-brazil-agua-boa-river": {
+      "title": "Agua Boa River: Clear-Water Amazon Fly Fishing",
+      "summary": "Take a fly rod to the clear water of the Agua Boa River. Enjoy an Amazon fishing trip in Brazil with time to search for a cast."
+    },
+    "g-guyana-rewa-arapaima-waters": {
+      "title": "Rewa: Arapaima on the Fly in Guyana's Freshwater",
+      "summary": "Make arapaima the goal of a fly fishing trip on Rewa water. Spend a Guyanese outing focused on this fish and a well-placed cast."
+    },
+    "g-guyana-rewa-river-lodge-waters": {
+      "title": "Rewa River: A Short Fishing Lodge Stay in Guyana",
+      "summary": "Take a short fishing break on Rewa River lodge water. Settle into a Guyanese stay with time for casts and days on the river."
+    },
+    "g-guyana-corona-falls-expedition": {
+      "title": "Corona Falls: An Upriver Fishing Expedition in Guyana",
+      "summary": "Travel upriver toward Corona Falls on an extended camping trip. Make river fishing and time in camp the heart of your Guyanese stay."
+    },
+    "g-suriname-kabalebo-river": {
+      "title": "Kabalebo River: Peacock Bass and Catfish in Suriname",
+      "summary": "Stay at a rainforest lodge on the Kabalebo River. Choose peacock bass casting or a catfish outing for your Surinamese fishing day."
+    },
+    "g-suriname-wonotobo-falls": {
+      "title": "Wonotobo Falls: A Remote River Fishing Camp in Suriname",
+      "summary": "Make a remote river camp your base around Wonotobo Falls. Spend your Surinamese fishing break exploring stretches of moving water."
+    },
+    "g-suriname-amatopo": {
+      "title": "Amatopo: A Jungle Fishing Expedition in Suriname",
+      "summary": "Build a longer jungle fishing trip around Amatopo. Give yourself time in Suriname for river outings and days away from the routine."
+    },
+    "g-ecuador-galapagos-tesoro-charter": {
+      "title": "Galápagos Islands: An Offshore Fishing Charter",
+      "summary": "Take a fishing charter in the Galápagos with the Tesoro crew. Enjoy an Ecuadorian boat day focused on open water and time at the rods."
+    },
+    "g-peru-cusco-sacred-valley-lakes": {
+      "title": "Sacred Valley: Andean Lake Fly Fishing Near Cusco",
+      "summary": "Take a fly rod to a lake in Cusco's Sacred Valley. Make time during your Peruvian visit for an Andean fishing day beside stillwater."
+    },
+    "g-peru-cusco-sacred-valley-streams": {
+      "title": "Sacred Valley: Mountain-Stream Fly Fishing Near Cusco",
+      "summary": "Fish a mountain stream in Cusco's Sacred Valley with a fly rod. Spend a day beside moving water during your visit to Peru."
+    },
+    "g-peru-iquitos-paiche-tucunare-project": {
+      "title": "Iquitos: A Freshwater Amazon Fishing Trip in Peru",
+      "summary": "Make Iquitos your base for a freshwater fishing outing in the Amazon. Enjoy time with a rod during a visit to this part of Peru."
+    },
+    "g-peru-apurimac-river-cusco-program": {
+      "title": "Apurímac River: Highland Trout Fishing Near Cusco",
+      "summary": "Take a guided trout outing on an upper stretch of the Apurímac. Add a highland river day to your visit to Cusco in Peru."
+    },
+    "g-peru-punta-sal": {
+      "title": "Punta Sal: A Coastal Fishing Charter in Peru",
+      "summary": "Make Punta Sal your base for a fishing charter in northern Peru. Choose your target and enjoy a coastal day on the boat."
+    },
+    "g-uruguay-salto-grande-uruguay-side": {
+      "title": "Salto Grande: Tailwater Dorado Fishing from Uruguay",
+      "summary": "Fish the Salto Grande tailwater for dorado from the Uruguay side. Spend a river day with this fish at the center of your trip."
+    },
+    "g-belize-ambergris-caye": {
+      "title": "Ambergris Caye: Island Flats Fishing in Belize",
+      "summary": "Explore flats around Ambergris Caye with a local guide. Make a Belizean island day of shallow water and time to work your casts."
+    },
+    "g-belize-turneffe-atoll": {
+      "title": "Turneffe Atoll: Lodge and Skiff Fishing in Belize",
+      "summary": "Make a lodge your base on Turneffe Atoll. Choose skiff outings or suitable wading sessions for a Belizean fishing break on the flats."
+    },
+    "g-belize-placencia": {
+      "title": "Placencia: A Guided Fishing Getaway in Belize",
+      "summary": "Use Placencia as a base for a guided fishing getaway in southern Belize. Make the water you want to fish the center of your stay."
+    },
+    "g-belize-punta-gorda-belize": {
+      "title": "Punta Gorda, Belize: Guided Flats Fishing",
+      "summary": "Head onto the southern Belize flats from Punta Gorda with a guide. Enjoy a boat day with shallow water and the next cast ahead."
+    },
+    "g-costa-rica-playas-del-coco": {
+      "title": "Playas del Coco: A Costa Rica Fishing Charter",
+      "summary": "Leave Playas del Coco for a fishing charter in Guanacaste. Choose a target and spend a day on the boat during your Costa Rican visit."
+    },
+    "g-costa-rica-ocotal": {
+      "title": "Ocotal: A Coastal Fishing Trip in Costa Rica",
+      "summary": "Set out from Ocotal for a coastal fishing day. Choose a nearshore outing or a longer run to suit your Costa Rican visit."
+    },
+    "g-costa-rica-tamarindo": {
+      "title": "Tamarindo: Pacific Fishing Charters in Costa Rica",
+      "summary": "Make a Pacific fishing charter part of your Tamarindo stay. Enjoy a Costa Rican boat day with a chosen target and the rods ready."
+    },
+    "g-costa-rica-samara": {
+      "title": "Sámara: A Short Coastal Fishing Trip in Costa Rica",
+      "summary": "Fit a short fishing charter into your Sámara visit. Enjoy time on Costa Rica's coastal water with a rod in hand and the boat beneath you."
+    },
+    "g-costa-rica-carrillo": {
+      "title": "Carrillo: A Pacific Fishing Charter in Costa Rica",
+      "summary": "Leave Carrillo for a Pacific fishing trip by charter boat. Make time at the rods part of your stay on Costa Rica's coast."
+    },
+    "g-costa-rica-lake-arenal": {
+      "title": "Lake Arenal: Guapote Fishing in Costa Rica",
+      "summary": "Cast or troll for guapote on Lake Arenal with a guide. Enjoy a freshwater boat day during your Costa Rican fishing trip."
+    },
+    "g-costa-rica-los-suenos": {
+      "title": "Los Sueños: A Costa Rica Sport Fishing Charter",
+      "summary": "Start from Los Sueños marina for a sport fishing charter. Choose a fish to focus on and enjoy time on Costa Rica's coastal water."
+    },
+    "g-panama-hannibal-bank": {
+      "title": "Hannibal Bank Offshore Fishing on a Panama Boat Trip",
+      "summary": "Make Hannibal Bank the destination of a longer offshore fishing trip. Enjoy a Panamanian boat day with the run out and rods ahead."
+    },
+    "g-panama-isla-montuosa": {
+      "title": "Isla Montuosa Offshore Fishing in Panama",
+      "summary": "Take an offshore fishing trip around Isla Montuosa. Choose a target and boat route for a Panamanian day focused on open water."
+    },
+    "g-panama-gatun-lake-gamboa": {
+      "title": "Gatún Lake: Freshwater Casting Near Gamboa, Panama",
+      "summary": "Cast on Gatún Lake from a Gamboa fishing departure. Make freshwater time at the rods part of your Panama canal-region visit."
+    },
+    "g-bahamas-acklins-flats": {
+      "title": "Acklins, Bahamas: Bonefish Fishing on the Flats",
+      "summary": "Make Acklins your island base for bonefish on the flats. Enjoy a Bahamian outing with time to wade suitable water and cast."
+    },
+    "g-bahamas-crooked-island-flats": {
+      "title": "Crooked Island: Remote Flats Fishing in the Bahamas",
+      "summary": "Explore flats around Crooked Island with a guide. Enjoy a remote Bahamian fishing break focused on shallow water and your next cast."
+    },
+    "g-bahamas-bimini": {
+      "title": "Bimini, Bahamas: An Offshore Billfish Charter",
+      "summary": "Choose a billfish charter from Bimini for an offshore day. Spend time on Bahamian water with the boat and rods set for your target."
+    },
+    "g-bahamas-ragged-island": {
+      "title": "Ragged Island: Remote Flats Fishing in the Bahamas",
+      "summary": "Make Ragged Island your setting for a remote flats fishing break. Enjoy a Bahamian trip focused on shallow water and time to cast."
+    },
+    "g-bahamas-chub-cay-berry-islands": {
+      "title": "Chub Cay Offshore Fishing in the Berry Islands",
+      "summary": "Start from Chub Cay marina for an offshore fishing outing. Make a Bahamian boat day of open water beyond the Berry Islands."
+    },
+    "g-bahamas-abaco": {
+      "title": "Abaco, Bahamas: Guided Bonefish Fishing on the Flats",
+      "summary": "Head onto the Abaco flats with a guide for bonefish. Choose skiff outings, wading or a mix for your Bahamian fishing day."
+    },
+    "g-bahamas-exuma": {
+      "title": "Exuma, Bahamas: An Island Flats Fishing Trip",
+      "summary": "Make an Exuma island your base for flats fishing. Give yourself a Bahamian day focused on shallow water and a rod in hand."
+    },
+    "g-bahamas-long-island-bahamas": {
+      "title": "Long Island, Bahamas: A Guided Bonefish Trip",
+      "summary": "Fish for bonefish on Long Island in the Bahamas with a guide. Enjoy time working your flies and searching for a careful cast."
+    },
+    "g-guatemala-iztapa": {
+      "title": "Iztapa: Pacific Billfish Fishing in Guatemala",
+      "summary": "Make a lodge in Iztapa your base for a Pacific billfish charter. Choose conventional tackle or a fly rod for your Guatemalan outing."
+    },
+    "g-cuba-jardines-de-la-reina": {
+      "title": "Jardines de la Reina Saltwater Flats Fishing in Cuba",
+      "summary": "Focus on the saltwater flats of Jardines de la Reina for a Cuban fishing trip. Make shallow water and careful casts the appeal."
+    },
+    "g-cuba-cayo-largo": {
+      "title": "Cayo Largo: A Saltwater Flats Fishing Trip in Cuba",
+      "summary": "Put the Cayo Largo flats at the heart of a fishing visit to Cuba. Give yourself time to focus on shallow water and the next cast."
+    },
+    "g-cuba-cayo-romano": {
+      "title": "Cayo Romano Saltwater Flats Fishing in Cuba",
+      "summary": "Make Cayo Romano's flats the focus of a Cuban fishing break. Take time over the shallow water with a rod and your next cast in mind."
+    },
+    "g-cuba-zapata": {
+      "title": "Zapata, Cuba: A Saltwater Flats Fishing Trip",
+      "summary": "Explore the saltwater flats around Zapata on a fishing trip to Cuba. Give yourself a day of shallow water and careful casts."
+    },
+    "g-cuba-cayo-santa-maria": {
+      "title": "Cayo Santa María Saltwater Flats Fishing in Cuba",
+      "summary": "Make the flats around Cayo Santa María your Cuban fishing destination. Put shallow water and time at the rods at the heart of the trip."
+    },
+    "g-nepal-babai-river": {
+      "title": "Babai River: A Guided Mahseer Fishing Trip in Nepal",
+      "summary": "Take a guided river expedition on the Babai with mahseer in mind. Make days beside moving water the focus of your Nepalese trip."
+    },
+    "g-nepal-setikarnali-river-system": {
+      "title": "Seti and Karnali: Himalayan River Fishing in Nepal",
+      "summary": "Spend several days fishing the Seti-Karnali river system. Make time at the rods part of a Himalayan river journey in Nepal."
+    },
+    "g-nepal-trishuli-river": {
+      "title": "Trishuli River: A Guided Fishing Day in Nepal",
+      "summary": "Explore a stretch of the Trishuli with a fishing guide. Choose a fish to focus on and enjoy a Nepalese day beside moving water."
+    },
+    "g-bhutan-haa-river": {
+      "title": "Haa River: Guided Valley Fly Fishing in Bhutan",
+      "summary": "Fish a guided beat on the Haa River with a fly rod. Make time beside valley water part of your fishing visit to Bhutan."
+    },
+    "g-bhutan-paro-valley": {
+      "title": "Paro Valley: A Day Beside Bhutan's Fishing Water",
+      "summary": "Set aside a day in Paro Valley for fishing. Choose a stretch of water and enjoy time with a rod during your visit to Bhutan."
+    },
+    "g-bhutan-bumthang-valley": {
+      "title": "Bumthang Valley: Highland Fishing in Bhutan",
+      "summary": "Make fishing part of a visit to Bumthang Valley. Spend a Bhutanese highland day beside chosen water with time to enjoy your casts."
+    },
+    "g-bhutan-manas-river-lodge": {
+      "title": "Manas River: Mahseer on the Fly in Bhutan",
+      "summary": "Stay at Manas River Lodge for a guided mahseer fly fishing trip. Enjoy days with a rod on the water during your Bhutanese stay."
+    },
+    "g-sri-lanka-bolgoda-lake": {
+      "title": "Bolgoda Lake: Casting and Trolling in Sri Lanka",
+      "summary": "Cast or troll on Bolgoda Lake with a fishing guide. Choose a part of the lake system for a freshwater day during your Sri Lanka visit."
+    },
+    "g-malaysia-kuala-rompin": {
+      "title": "Kuala Rompin: A Sailfish Charter in Malaysia",
+      "summary": "Head out from Kuala Rompin with sailfish in mind. Choose conventional tackle or a fly-fishing attempt for your Malaysian boat day."
+    },
+    "g-malaysia-royal-belumtemenggor": {
+      "title": "Royal Belum: Rainforest Lake Fishing in Malaysia",
+      "summary": "Explore the Belum-Temenggor reservoir on a fishing trip. Choose a houseboat stay with time at the rods in Malaysia's rainforest."
+    },
+    "g-malaysia-sabah-borneo-program": {
+      "title": "Sabah, Borneo: A River or Sea Fishing Getaway",
+      "summary": "Make fishing the focus of a Sabah visit in Malaysian Borneo. Choose a river or sea outing and give yourself time at the water."
+    },
+    "g-indonesia-komodo-region": {
+      "title": "Komodo, Indonesia: A Guided Boat Fishing Trip",
+      "summary": "Take a guided fishing boat outing in the Komodo region. Make time at the rods part of your visit to this area of Indonesia."
+    },
+    "g-indonesia-bali": {
+      "title": "Bali, Indonesia: A Day on a Fishing Charter",
+      "summary": "Set aside a day in Bali for a dedicated fishing charter. Choose the method you want to try and enjoy time on the boat in Indonesia."
+    },
+    "g-indonesia-lombok-and-gili-area": {
+      "title": "Lombok and the Gilis: Island Fishing in Indonesia",
+      "summary": "Make a fishing charter part of your Lombok or Gili visit. Choose an island departure and spend a day at the rods in Indonesia."
+    },
+    "g-philippines-pilar-siargao": {
+      "title": "Pilar, Siargao: Trolling and Night Fishing",
+      "summary": "Choose trolling, drifting or a night session from Pilar on Siargao. Enjoy a Philippine boat day or evening focused on fishing."
+    },
+    "g-philippines-subic-bay-offshore": {
+      "title": "Subic Bay Offshore Fishing in the Philippines",
+      "summary": "Leave Subic Bay for a deeper-water fishing charter. Spend a Philippine day on the boat with time at the rods beyond the bay."
+    },
+    "g-vietnam-phu-quoc-offshore": {
+      "title": "Phú Quốc Offshore Fishing with a Local in Vietnam",
+      "summary": "Head offshore from Phú Quốc with a local fisherman. Make a dedicated fishing outing part of your visit to this Vietnamese island."
+    },
+    "g-singapore-singapore-charter-waters": {
+      "title": "Singapore: A Fishing Charter with Cooking Aboard",
+      "summary": "Take a private fishing charter from Singapore with cooking aboard. Make a day of time at the rods and food on the boat."
+    },
+    "g-japan-tokyo-bay": {
+      "title": "Tokyo Bay: Sea Bass Fishing by Fly or Spinning Rod",
+      "summary": "Cast for sea bass on Tokyo Bay from a boat. Choose a fly or spinning rod and make fishing part of a day in the Japanese city."
+    },
+    "g-japan-lake-akan": {
+      "title": "Lake Akan: Hokkaido Fishing from Shore or Boat",
+      "summary": "Make Lake Akan your setting for a fishing day in Hokkaido. Choose time on shore or an outing afloat during your Japanese visit."
+    },
+    "g-japan-takayama-area-guided-waters": {
+      "title": "Takayama: Guided Mountain Fly Fishing in Japan",
+      "summary": "Explore river water around Takayama with a fly fishing guide. Make a mountain-region day at the rods part of your Japanese trip."
+    },
+    "g-japan-lake-biwa": {
+      "title": "Lake Biwa: A Guided Bass Fishing Trip in Japan",
+      "summary": "Take a guided bass boat onto Lake Biwa. Spend a day in Japan working your chosen technique and looking for the next strike."
+    },
+    "g-south-korea-jeju-coastal-sunset-trip": {
+      "title": "Jeju, South Korea: Sunset Fishing from a Boat",
+      "summary": "Take a short evening fishing trip on Jeju's coast. Add time on the boat around sunset to your visit to South Korea."
+    },
+    "g-united-arab-emirates-dubai": {
+      "title": "Dubai: A Fishing Charter from the City Marina",
+      "summary": "Make room in your Dubai visit for a fishing charter. Leave the marina for a boat day with time at the rods as the main event."
+    },
+    "g-united-arab-emirates-abu-dhabi": {
+      "title": "Abu Dhabi: Guided Coastal Fishing in the UAE",
+      "summary": "Head onto coastal water from Abu Dhabi with a fishing guide. Spend a UAE day on the boat with a chosen method and the rods ready."
+    },
+    "g-united-arab-emirates-ras-al-khaimah": {
+      "title": "Ras Al Khaimah: A Coastal Fishing Charter in the UAE",
+      "summary": "Leave Ras Al Khaimah for a fishing charter in the northern emirate. Add a day on coastal water to your visit to the UAE."
+    },
+    "g-united-arab-emirates-fujairah": {
+      "title": "Fujairah: East Coast Fishing Charters in the UAE",
+      "summary": "Start from Fujairah for an east coast fishing charter. Spend a day on the boat during your UAE visit with a target in mind."
+    },
+    "g-qatar-doha-charter-program": {
+      "title": "Doha, Qatar: A Private Fishing Charter",
+      "summary": "Leave Doha's harbor on a private fishing outing. Add a day on the water and time at the rods to your visit to Qatar."
+    },
+    "g-jordan-aqaba": {
+      "title": "Aqaba: Red Sea Trolling and Jigging in Jordan",
+      "summary": "Choose trolling, jigging or bottom fishing from Aqaba. Make a day on the Red Sea part of your Jordan trip with a rod in hand."
+    },
+    "g-saudi-arabia-jeddah": {
+      "title": "Jeddah: Guided Red Sea Fishing in Saudi Arabia",
+      "summary": "Take a guided fishing outing from Jeddah on the Red Sea. Choose a target and enjoy a boat day during your Saudi Arabia visit."
+    },
+    "g-india-south-andaman-fishing-grounds": {
+      "title": "South Andaman: Popping and Jigging in India",
+      "summary": "Work poppers or jigs on a South Andaman fishing expedition. Enjoy days on the boat with these active methods during your Indian trip."
+    },
+    "g-maldives-kaafu-atoll": {
+      "title": "Kaafu Atoll: Flats Fishing in the Maldives",
+      "summary": "Explore flats around a chosen island in Kaafu Atoll. Make shallow water and time to cast the focus of your Maldives fishing day."
+    },
+    "g-maldives-baa-atoll": {
+      "title": "Baa Atoll: A Guided Fishing Trip in the Maldives",
+      "summary": "Fish Baa Atoll with a guide on a focused outing. Choose a target and spend part of your Maldives visit with a rod on the water."
+    },
+    "g-maldives-noonu-atoll": {
+      "title": "Noonu Atoll: A Remote Fishing Trip in the Maldives",
+      "summary": "Make Noonu Atoll your base for a remote fishing break. Choose a boat outing and enjoy time at the rods during your Maldives stay."
+    },
+    "g-maldives-laamu-atoll": {
+      "title": "Laamu Atoll Offshore Fishing in the Maldives",
+      "summary": "Head offshore from Laamu Atoll for a fishing trip. Add a boat day beyond the flats to your time in the southern Maldives."
+    },
+    "g-oman-hallaniyat-islands": {
+      "title": "Hallaniyat Islands: Giant Trevally Fishing in Oman",
+      "summary": "Cast for giant trevally from a boat around the Hallaniyat Islands. Make this fish the focus of a dedicated Oman fishing trip."
+    },
+    "g-oman-hasik": {
+      "title": "Hasik, Oman: A Coastal Fishing Getaway",
+      "summary": "Make Hasik your base for a fishing trip in southern Oman. Choose a target and method for a coastal day with a rod in hand."
+    },
+    "g-thailand-gillhams-krabi": {
+      "title": "Gillhams, Krabi: A Managed-Lake Fishing Trip in Thailand",
+      "summary": "Fish the stocked lake at Gillhams during a stay in Krabi. Enjoy a Thailand outing with several possible targets in a managed fishery."
+    },
+    "g-thailand-bangkok-managed-lake-circuit": {
+      "title": "Bangkok: Guided Stocked-Lake Fishing in Thailand",
+      "summary": "Take a guided outing to a stocked fishing lake near Bangkok. Choose your venue and target for a Thailand day at the rods."
+    },
+    "g-fiji-savusavu": {
+      "title": "Savusavu, Fiji: A Resort-Based Fishing Charter",
+      "summary": "Set out from Savusavu for a dedicated fishing charter. Make a boat day and time at the rods part of your Fiji resort stay."
+    },
+    "g-fiji-mamanuca-islands": {
+      "title": "Mamanuca Islands: A Fishing Charter in Fiji",
+      "summary": "Leave your Mamanuca island base for a fishing charter. Spend a day on Fijian water with the boat and rods at the heart of the trip."
+    },
+    "g-fiji-yasawa-islands": {
+      "title": "Yasawa Islands: A Remote Fishing Day in Fiji",
+      "summary": "Make time for a fishing outing from a Yasawa island base. Choose a boat route and enjoy a remote island day on Fijian water."
+    },
+    "g-fiji-taveuni-makaira": {
+      "title": "Taveuni, Fiji: A Sport Fishing Charter with Makaira",
+      "summary": "Take a sport fishing charter with Makaira from Taveuni. Choose a fish and technique to focus on during your Fijian island visit."
+    },
+    "g-fiji-coral-coast-cuvu-beach": {
+      "title": "Cuvu Beach: Fishing Charters on Fiji's Coral Coast",
+      "summary": "Start from Cuvu Beach for a Coral Coast fishing charter. Choose a family outing or a focused game-fishing day during your Fijian stay."
+    },
+    "g-vanuatu-luganville-espiritu-santo": {
+      "title": "Luganville: Guided Island Fishing in Vanuatu",
+      "summary": "Fish with a local guide from Luganville on Espíritu Santo. Make an island boat day part of your fishing visit to Vanuatu."
+    },
+    "g-vanuatu-trees-and-fishes-vanuatu": {
+      "title": "Vanuatu: A Multiday Offshore Fishing Getaway",
+      "summary": "Stay with Trees and Fishes for a multiday offshore fishing trip. Choose your target and enjoy time on Vanuatu water at the rods."
+    },
+    "g-solomon-islands-papatura-reef-waters": {
+      "title": "Papatura: Reef Fishing in the Solomon Islands",
+      "summary": "Make Papatura your lodge base for reef fishing. Choose a method and spend a day on reef water during your Solomon Islands stay."
+    },
+    "g-solomon-islands-papatura-nearby-rivers": {
+      "title": "Papatura: Tropical River Fishing in the Solomon Islands",
+      "summary": "Explore river water near Papatura from an island lodge base. Make a tropical river outing part of your Solomon Islands fishing trip."
+    },
+    "g-solomon-islands-munda-roviana-lagoon": {
+      "title": "Roviana Lagoon: Fishing from Munda, Solomon Islands",
+      "summary": "Make Agnes Lodge in Munda your base for Roviana Lagoon fishing. Enjoy a boat day on lagoon water in the Solomon Islands."
+    },
+    "g-tonga-vavau": {
+      "title": "Vava'u, Tonga: A Blue Marlin Fishing Charter",
+      "summary": "Take a skipper-led charter from Vava'u with blue marlin in mind. Enjoy a Tongan boat day focused on this offshore target."
+    },
+    "g-samoa-apia": {
+      "title": "Apia, Samoa: A Trolling Charter on Island Waters",
+      "summary": "Leave Apia for a trolling charter with a chosen target in mind. Make a boat day at the rods part of your Samoan island stay."
+    },
+    "g-palau-palau-swings-trolling-charter": {
+      "title": "Palau: An Offshore Trolling Charter with Swings",
+      "summary": "Take an offshore trolling charter with Swings in Palau. Choose a target and enjoy a day with the boat and rods on open water."
+    },
+    "g-palau-palau-swings-bottom-fishing-charter": {
+      "title": "Palau Bottom Fishing and Casting with Swings",
+      "summary": "Choose a guided bottom fishing and casting trip with Swings. Spend a Palau boat day working different parts of the water."
+    },
+    "g-marshall-islands-majuro": {
+      "title": "Majuro Offshore Fishing in the Marshall Islands",
+      "summary": "Leave Majuro for an offshore fishing outing arranged through your hotel. Enjoy a boat day during your Marshall Islands stay."
+    },
+    "g-marshall-islands-arno-atoll": {
+      "title": "Arno Atoll: Island Fishing in the Marshall Islands",
+      "summary": "Make Arno Atoll your destination for a fishing outing. Spend a Marshall Islands day focused on the atoll and time at the rods."
+    },
+    "g-federated-states-of-micronesia-pohnpei": {
+      "title": "Pohnpei, Micronesia: An Island Fishing Charter",
+      "summary": "Choose a dedicated fishing charter from Pohnpei. Enjoy a Micronesian island day on the boat with a target and water in mind."
+    },
+    "g-federated-states-of-micronesia-yap": {
+      "title": "Yap, Micronesia: A Half-Day or Full-Day Fishing Charter",
+      "summary": "Take a half-day or full-day fishing charter from Yap. Choose the time that fits your Micronesian stay and enjoy a boat outing."
+    },
+    "g-cook-islands-aitutaki": {
+      "title": "Aitutaki: Bonefish Fishing in the Cook Islands",
+      "summary": "Fish for bonefish around Aitutaki with a guide. Choose skiff time, wading or both for a day on the water in the Cook Islands."
+    },
+    "g-niue-niue-ocean-fishing-charter": {
+      "title": "Niue: A Day of Offshore Fishing by Charter",
+      "summary": "Head offshore from Niue for a fishing charter. Make room in your island stay for a day on the boat with the rods ready."
+    },
+    "g-kiribati-kiritimati-saltwater-flats": {
+      "title": "Kiritimati: Saltwater Flats Fly Fishing in Kiribati",
+      "summary": "Take a fly rod to the saltwater flats of Kiritimati in Kiribati. Spend an atoll fishing day focused on shallow water and your casts."
+    },
+    "g-kiribati-kiritimati-offshore-waters": {
+      "title": "Kiritimati: An Offshore Fishing Day in Kiribati",
+      "summary": "Head offshore from Kiritimati for a fishing day beyond the flats. Make a boat outing part of your atoll visit in Kiribati."
+    },
+    "g-kiribati-tabuaeran-fanning-island": {
+      "title": "Tabuaeran: Remote Atoll Fly Fishing in Kiribati",
+      "summary": "Take a fly fishing expedition to Tabuaeran, also called Fanning Island. Enjoy a remote atoll trip on the water in Kiribati."
+    },
+    "g-papua-new-guinea-wari-long-reef-milne-bay": {
+      "title": "Wari Long Reef: Popping and Jigging in Papua New Guinea",
+      "summary": "Work poppers and jigs around Wari Long Reef in Milne Bay. Make a remote Papua New Guinea boat trip of these active fishing methods."
+    },
+    "g-australia-lake-eucumbene": {
+      "title": "Lake Eucumbene: Guided Highland Fishing in Australia",
+      "summary": "Fish Lake Eucumbene with a guide on an Australian highland outing. Choose a boat trip, a shore session or time with a fly rod."
+    },
+    "g-australia-lake-jindabyne": {
+      "title": "Lake Jindabyne: Guided Trout Fishing in Australia",
+      "summary": "Take a guided trout trip on Lake Jindabyne. Spend an Australian lake day working your chosen technique with time at the rods."
+    },
+    "g-new-zealand-tongariro-river-lodge-based-fishing": {
+      "title": "Tongariro River: Lodge-Based Fly Fishing in New Zealand",
+      "summary": "Make a lodge your base for fly fishing on the Tongariro. Choose instruction, a river day or a longer stay on New Zealand water."
+    },
+    "g-new-zealand-upper-tongariro-river-raft-access": {
+      "title": "Upper Tongariro: Raft and Fly Fishing in New Zealand",
+      "summary": "Reach the upper Tongariro by raft for a fly fishing day. Mix time on the river with fishing stops during your New Zealand trip."
+    },
+    "g-new-zealand-lake-taupo": {
+      "title": "Lake Taupō: A New Zealand Lake Fishing Getaway",
+      "summary": "Make Lake Taupō the focus of a New Zealand fishing day. Choose your lake method and enjoy time on the water with a rod ready."
+    },
+    "g-grenada-st-georges-harbour": {
+      "title": "St. George's Harbour Offshore Fishing in Grenada",
+      "summary": "Leave St. George's Harbour for a private offshore fishing charter. Spend a Grenadian boat day with your chosen target in mind."
+    },
+    "g-barbados-barbados-cannon-charters": {
+      "title": "Barbados: A Shared or Private Game Fishing Charter",
+      "summary": "Take a shared or private outing with Cannon Charters in Barbados. Enjoy a game-fishing day on the boat that fits your group."
+    },
+    "g-jamaica-montego-bay": {
+      "title": "Montego Bay: Deep-Sea Sport Fishing in Jamaica",
+      "summary": "Make a deep-sea fishing charter part of your Montego Bay stay. Spend a Jamaican boat day with open water and the rods ahead."
+    },
+    "g-saint-lucia-marigot-caribbean-side-fishing": {
+      "title": "Marigot, Saint Lucia: Fishing with a Local Boatman",
+      "summary": "Fish Saint Lucia's Caribbean side from Marigot with a local fisherman. Enjoy a small-boat outing with time at the rods."
+    },
+    "g-honduras-west-end-roatan": {
+      "title": "West End, Roatán: A Private Fishing Charter in Honduras",
+      "summary": "Leave West End on Roatán for a private fishing charter. Make a boat day part of your stay in the Bay Islands of Honduras."
+    },
+    "g-nicaragua-san-juan-del-sur": {
+      "title": "San Juan del Sur: Pacific Fishing in Nicaragua",
+      "summary": "Take a guided Pacific fishing charter from San Juan del Sur. Make a chosen target the focus of your Nicaraguan day on the boat."
+    },
+    "g-dominican-republic-punta-cana-mikes-marina": {
+      "title": "Punta Cana Offshore Fishing in the Dominican Republic",
+      "summary": "Start at Mike's Marina for a Punta Cana offshore charter. Make time on the water part of your Dominican Republic fishing trip."
+    },
+    "g-mauritius-st-brandon": {
+      "title": "St. Brandon: Remote Shoal Fly Fishing from Mauritius",
+      "summary": "Explore the remote shoals of St. Brandon with a fly rod. Make days on shallow water the focus of this Mauritius fishing expedition."
+    },
+    "g-kenya-malindi-kingfisher": {
+      "title": "Malindi, Kenya: A Fishing Charter with Kingfisher",
+      "summary": "Take a Kingfisher charter from Malindi with a chosen target in mind. Enjoy a Kenyan coastal fishing day with the rods ready."
+    },
+    "g-turkey-antalya-mediterranean-boat-fishing": {
+      "title": "Antalya: A First Mediterranean Fishing Trip in Turkey",
+      "summary": "Try a boat fishing outing from Antalya with tackle included. Make an introduction to Mediterranean fishing part of your Turkish visit."
+    },
+    "g-new-zealand-owen-river-lodge": {
+      "title": "Owen River Lodge: South Island Fly Fishing in New Zealand",
+      "summary": "Make Owen River Lodge your base for a South Island fly fishing stay. Enjoy days on chosen water during your New Zealand trip."
+    },
+    "g-new-zealand-lake-brunner-eco-lodge": {
+      "title": "Lake Brunner: A Fishing Lodge Getaway in New Zealand",
+      "summary": "Stay at Lake Brunner Eco Lodge for a fishing break. Choose lake water or a nearby tributary for your days with a rod in New Zealand."
+    },
+    "kabinakagami-lake-fly-in": {
+      "title": "Kabinakagami Lake: Fly-In Lodge Fishing in Ontario",
+      "summary": "Fly from White River to Kaby Lodge on Kabinakagami Lake. Make an Ontario fishing break of remote lake water and time at the rods."
+    },
+    "cairns-heavy-tackle-marlin": {
+      "title": "Cairns: Heavy-Tackle Black Marlin on the Reef Edge",
+      "summary": "Head beyond the Great Barrier Reef near Cairns for black marlin. Choose a multiday heavy-tackle charter with life on the boat."
+    }
+  },
+  "tripTypes": {
+    "keys-grand-slam": {
+      "name": "Florida Keys: Bonefish, Permit and Tarpon",
+      "definition": "Fish the Florida Keys flats from Islamorada with bonefish, permit and tarpon in your sights."
+    },
+    "texas-slam": {
+      "name": "Matagorda Bay: Redfish, Trout and Flounder",
+      "definition": "Fish Matagorda Bay in Texas for redfish, speckled trout and flounder on an inshore outing."
+    },
+    "lowcountry-inshore-grand-slam": {
+      "name": "Charleston Inshore: Redfish, Trout and Flounder",
+      "definition": "Explore the inshore water around Charleston for redfish, speckled trout and flounder."
+    },
+    "ascension-bay-grand-slam": {
+      "name": "Ascension Bay: Bonefish, Permit and Tarpon",
+      "definition": "Fish the flats of Ascension Bay in Mexico with bonefish, permit and tarpon as your targets."
+    }
+  }
+}
