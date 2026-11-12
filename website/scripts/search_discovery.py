@@ -57,4 +57,5 @@ def compact_titles(pages, dist):
             page['title']=title
             page['modified']=max(page.get('modified','2026-11-10'),'2026-11-12')
             changes.append({'url':path,'old':old,'new':title})
+    (dist.parent/'test-results').mkdir(parents=True, exist_ok=True)
     (dist.parent/'test-results/title-changes.json').write_text(json.dumps(changes,indent=2)+'\n')
