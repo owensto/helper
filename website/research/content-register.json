@@ -12161,9 +12161,9 @@
       "id": "spring-fed",
       "type": "environment",
       "sources": [
-        "orvis-leaders",
         "clearwater",
-        "orvis-small-stream-tactics"
+        "orvis-small-stream-tactics",
+        "orvis-leaders"
       ],
       "review": {
         "checked": "2026-11-11",
@@ -12176,10 +12176,10 @@
       "id": "glacier-influenced",
       "type": "environment",
       "sources": [
-        "alaska-aquatic",
-        "kenai-confluence",
+        "clearwater",
         "tanana-report",
-        "clearwater"
+        "kenai-confluence",
+        "alaska-aquatic"
       ],
       "review": {
         "checked": "2026-11-11",
@@ -12192,9 +12192,9 @@
       "id": "backcountry-small-streams",
       "type": "environment",
       "sources": [
-        "rocky",
         "orvis-small-stream-tactics",
-        "orvis-small-stream-flies"
+        "orvis-small-stream-flies",
+        "rocky"
       ],
       "review": {
         "checked": "2026-11-11",
@@ -12222,8 +12222,8 @@
       "id": "big-rivers",
       "type": "environment",
       "sources": [
-        "reading-water",
-        "missouri-big-rivers"
+        "missouri-big-rivers",
+        "reading-water"
       ],
       "review": {
         "checked": "2026-11-11",
@@ -12236,9 +12236,9 @@
       "id": "tropical-floodplains",
       "type": "environment",
       "sources": [
-        "igfa-peacock",
         "kakadu-runoff",
-        "amazon-planner"
+        "amazon-planner",
+        "igfa-peacock"
       ],
       "review": {
         "checked": "2026-11-11",
@@ -12251,8 +12251,8 @@
       "id": "ponds-small-lakes",
       "type": "environment",
       "sources": [
-        "tmf-lakes",
-        "idaho-ponds"
+        "idaho-ponds",
+        "tmf-lakes"
       ],
       "review": {
         "checked": "2026-11-11",
@@ -12267,8 +12267,8 @@
       "sources": [
         "tmf-bass",
         "tmf-lakes",
-        "stillwater",
-        "odfw-trout"
+        "odfw-trout",
+        "stillwater"
       ],
       "review": {
         "checked": "2026-11-11",
@@ -12281,9 +12281,9 @@
       "id": "alpine-lakes",
       "type": "environment",
       "sources": [
+        "odfw-trout",
         "rocky",
-        "washington-high-lakes",
-        "odfw-trout"
+        "washington-high-lakes"
       ],
       "review": {
         "checked": "2026-11-11",
@@ -12296,10 +12296,10 @@
       "id": "great-lakes",
       "type": "environment",
       "sources": [
-        "wisconsin-superior",
+        "nws-great-lakes",
         "wisconsin-shore-tackle",
-        "michigan-lake-trout",
-        "nws-great-lakes"
+        "wisconsin-superior",
+        "michigan-lake-trout"
       ],
       "review": {
         "checked": "2026-11-11",
@@ -12313,8 +12313,8 @@
       "type": "environment",
       "sources": [
         "minnesota-ice-travel",
-        "new-york-ice",
-        "minnesota-ice"
+        "minnesota-ice",
+        "new-york-ice"
       ],
       "review": {
         "checked": "2026-11-11",
@@ -12327,8 +12327,8 @@
       "id": "canals-urban-water",
       "type": "environment",
       "sources": [
-        "fwc-peacock",
-        "idaho-ponds"
+        "idaho-ponds",
+        "fwc-peacock"
       ],
       "review": {
         "checked": "2026-11-11",
@@ -12343,8 +12343,8 @@
       "sources": [
         "fwc-marine-habitat",
         "fwc-snook",
-        "estuary",
-        "noaa-habitat"
+        "noaa-habitat",
+        "estuary"
       ],
       "review": {
         "checked": "2026-11-11",
@@ -12357,9 +12357,9 @@
       "id": "bayous-coastal-marsh",
       "type": "environment",
       "sources": [
+        "noaa-habitat",
         "fwc-saltwater-tips",
-        "texas-red-drum",
-        "noaa-habitat"
+        "texas-red-drum"
       ],
       "review": {
         "checked": "2026-11-11",
@@ -12372,8 +12372,8 @@
       "id": "saltwater-flats",
       "type": "environment",
       "sources": [
-        "fwc-saltwater-tips",
         "flats-learning",
+        "fwc-saltwater-tips",
         "orvis-wading-flats",
         "orvis-bonefish-set"
       ],
@@ -12388,10 +12388,10 @@
       "id": "surf-beaches",
       "type": "environment",
       "sources": [
-        "noaa-release",
-        "nws-waves",
         "hatteras",
-        "tmf-surf"
+        "noaa-release",
+        "tmf-surf",
+        "nws-waves"
       ],
       "review": {
         "checked": "2026-11-11",
@@ -12404,10 +12404,10 @@
       "id": "piers-jetties-bridges",
       "type": "environment",
       "sources": [
-        "tmf-pier",
-        "nws-waves",
         "nws-great-lakes",
         "odfw-marine-shore",
+        "tmf-pier",
+        "nws-waves",
         "fwc-saltwater-tips"
       ],
       "review": {
@@ -12421,10 +12421,10 @@
       "id": "rocky-shores-kelp",
       "type": "environment",
       "sources": [
-        "nws-waves",
-        "noaa-rockfish-release",
         "igfa-kelp-bass",
-        "odfw-marine-shore"
+        "nws-waves",
+        "odfw-marine-shore",
+        "noaa-rockfish-release"
       ],
       "review": {
         "checked": "2026-11-11",
@@ -12437,10 +12437,10 @@
       "id": "reef-bottom",
       "type": "environment",
       "sources": [
-        "noaa-release",
-        "tmf-offshore",
+        "halibut",
         "noaa-rockfish-release",
-        "halibut"
+        "tmf-offshore",
+        "noaa-release"
       ],
       "review": {
         "checked": "2026-11-11",
@@ -12453,10 +12453,10 @@
       "id": "offshore",
       "type": "environment",
       "sources": [
-        "noaa-release",
-        "tmf-offshore",
         "fwc-marine-habitat",
-        "noaa-sargassum"
+        "noaa-release",
+        "noaa-sargassum",
+        "tmf-offshore"
       ],
       "review": {
         "checked": "2026-11-11",
@@ -12469,9 +12469,9 @@
       "id": "kayak-fishing",
       "type": "environment",
       "sources": [
-        "tmf-kayak",
         "fwc-paddling",
-        "nws-cold-water"
+        "nws-cold-water",
+        "tmf-kayak"
       ],
       "review": {
         "checked": "2026-11-11",

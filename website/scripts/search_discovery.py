@@ -42,6 +42,12 @@ def compact_titles(pages, dist):
     for path,page in pages.items():
         old=page['title']
         title=old
+        if path.startswith('/species/') and path.endswith('-group/'):
+            sibling=path.replace('-group/', '/')
+            if sibling in pages and pages[sibling]['title'].split(' fishing')[0] == old.split(' fishing')[0]:
+                title=old.split(' fishing')[0] + ' group: fishing and local names | Castward'
+        if path == '/north-america/united-states/regions/alaska/':
+            title='Alaska regional fishing trips | Castward'
         if len(title)>60:
             title=re.sub(r'\s*[|—–-]\s*Castward$', '', title)
         if len(title)>60:
