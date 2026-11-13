@@ -12147,8 +12147,8 @@
       "type": "environment",
       "sources": [
         "reading-water",
-        "noaa-release",
-        "odfw-trout"
+        "odfw-trout",
+        "noaa-release"
       ],
       "review": {
         "checked": "2026-11-11",
@@ -12161,9 +12161,9 @@
       "id": "spring-fed",
       "type": "environment",
       "sources": [
-        "clearwater",
+        "orvis-leaders",
         "orvis-small-stream-tactics",
-        "orvis-leaders"
+        "clearwater"
       ],
       "review": {
         "checked": "2026-11-11",
@@ -12176,9 +12176,9 @@
       "id": "glacier-influenced",
       "type": "environment",
       "sources": [
+        "clearwater",
         "kenai-confluence",
         "alaska-aquatic",
-        "clearwater",
         "tanana-report"
       ],
       "review": {
@@ -12192,8 +12192,8 @@
       "id": "backcountry-small-streams",
       "type": "environment",
       "sources": [
-        "orvis-small-stream-flies",
         "orvis-small-stream-tactics",
+        "orvis-small-stream-flies",
         "rocky"
       ],
       "review": {
@@ -12207,9 +12207,9 @@
       "id": "tailwaters",
       "type": "environment",
       "sources": [
-        "species-bdb22b610d22",
+        "tva-water-safety",
         "tennessee-tailwaters",
-        "tva-water-safety"
+        "species-bdb22b610d22"
       ],
       "review": {
         "checked": "2026-11-11",
@@ -12222,8 +12222,8 @@
       "id": "big-rivers",
       "type": "environment",
       "sources": [
-        "reading-water",
-        "missouri-big-rivers"
+        "missouri-big-rivers",
+        "reading-water"
       ],
       "review": {
         "checked": "2026-11-11",
@@ -12265,8 +12265,8 @@
       "id": "lakes-reservoirs",
       "type": "environment",
       "sources": [
-        "tmf-bass",
         "tmf-lakes",
+        "tmf-bass",
         "odfw-trout",
         "stillwater"
       ],
@@ -12281,9 +12281,9 @@
       "id": "alpine-lakes",
       "type": "environment",
       "sources": [
+        "rocky",
         "odfw-trout",
-        "washington-high-lakes",
-        "rocky"
+        "washington-high-lakes"
       ],
       "review": {
         "checked": "2026-11-11",
@@ -12296,10 +12296,10 @@
       "id": "great-lakes",
       "type": "environment",
       "sources": [
-        "michigan-lake-trout",
         "nws-great-lakes",
-        "wisconsin-shore-tackle",
-        "wisconsin-superior"
+        "michigan-lake-trout",
+        "wisconsin-superior",
+        "wisconsin-shore-tackle"
       ],
       "review": {
         "checked": "2026-11-11",
@@ -12312,9 +12312,9 @@
       "id": "ice-fishing",
       "type": "environment",
       "sources": [
-        "new-york-ice",
         "minnesota-ice",
-        "minnesota-ice-travel"
+        "minnesota-ice-travel",
+        "new-york-ice"
       ],
       "review": {
         "checked": "2026-11-11",
@@ -12327,8 +12327,8 @@
       "id": "canals-urban-water",
       "type": "environment",
       "sources": [
-        "fwc-peacock",
-        "idaho-ponds"
+        "idaho-ponds",
+        "fwc-peacock"
       ],
       "review": {
         "checked": "2026-11-11",
@@ -12341,10 +12341,10 @@
       "id": "estuaries-mangroves",
       "type": "environment",
       "sources": [
-        "fwc-marine-habitat",
+        "fwc-snook",
         "noaa-habitat",
         "estuary",
-        "fwc-snook"
+        "fwc-marine-habitat"
       ],
       "review": {
         "checked": "2026-11-11",
@@ -12357,9 +12357,9 @@
       "id": "bayous-coastal-marsh",
       "type": "environment",
       "sources": [
-        "noaa-habitat",
         "fwc-saltwater-tips",
-        "texas-red-drum"
+        "texas-red-drum",
+        "noaa-habitat"
       ],
       "review": {
         "checked": "2026-11-11",
@@ -12372,10 +12372,10 @@
       "id": "saltwater-flats",
       "type": "environment",
       "sources": [
-        "orvis-wading-flats",
-        "flats-learning",
         "fwc-saltwater-tips",
-        "orvis-bonefish-set"
+        "orvis-wading-flats",
+        "orvis-bonefish-set",
+        "flats-learning"
       ],
       "review": {
         "checked": "2026-11-11",
@@ -12388,10 +12388,10 @@
       "id": "surf-beaches",
       "type": "environment",
       "sources": [
-        "hatteras",
-        "noaa-release",
         "tmf-surf",
-        "nws-waves"
+        "nws-waves",
+        "hatteras",
+        "noaa-release"
       ],
       "review": {
         "checked": "2026-11-11",
@@ -12404,11 +12404,11 @@
       "id": "piers-jetties-bridges",
       "type": "environment",
       "sources": [
-        "fwc-saltwater-tips",
-        "tmf-pier",
-        "nws-waves",
+        "odfw-marine-shore",
         "nws-great-lakes",
-        "odfw-marine-shore"
+        "fwc-saltwater-tips",
+        "nws-waves",
+        "tmf-pier"
       ],
       "review": {
         "checked": "2026-11-11",
@@ -12421,10 +12421,10 @@
       "id": "rocky-shores-kelp",
       "type": "environment",
       "sources": [
-        "igfa-kelp-bass",
-        "odfw-marine-shore",
         "noaa-rockfish-release",
-        "nws-waves"
+        "nws-waves",
+        "odfw-marine-shore",
+        "igfa-kelp-bass"
       ],
       "review": {
         "checked": "2026-11-11",
@@ -12437,10 +12437,10 @@
       "id": "reef-bottom",
       "type": "environment",
       "sources": [
+        "noaa-rockfish-release",
         "tmf-offshore",
         "halibut",
-        "noaa-release",
-        "noaa-rockfish-release"
+        "noaa-release"
       ],
       "review": {
         "checked": "2026-11-11",
@@ -12453,10 +12453,10 @@
       "id": "offshore",
       "type": "environment",
       "sources": [
+        "noaa-release",
         "tmf-offshore",
         "fwc-marine-habitat",
-        "noaa-sargassum",
-        "noaa-release"
+        "noaa-sargassum"
       ],
       "review": {
         "checked": "2026-11-11",
@@ -12470,8 +12470,8 @@
       "type": "environment",
       "sources": [
         "fwc-paddling",
-        "nws-cold-water",
-        "tmf-kayak"
+        "tmf-kayak",
+        "nws-cold-water"
       ],
       "review": {
         "checked": "2026-11-11",
