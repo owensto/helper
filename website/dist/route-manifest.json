@@ -10051,7 +10051,7 @@
   },
   "/guides/fishing-gear-quality-tiers/": {
     "kind": "article",
-    "title": "Spend where it matters. | Castward",
+    "title": "Fishing gear tiers: what is worth the upgrade? | Castward",
     "noindex": false,
     "redirectTo": null
   },
@@ -10106,6 +10106,12 @@
   "/guides/florida-visitor-fishing-license-planner/": {
     "kind": "article",
     "title": "Florida visitor fishing license planner | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/guides/minnesota-fish-house-rental-checklist/": {
+    "kind": "article",
+    "title": "Minnesota fish house rental: compare two trips | Castward",
     "noindex": false,
     "redirectTo": null
   },

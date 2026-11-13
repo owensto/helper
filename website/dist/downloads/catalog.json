@@ -2960,7 +2960,7 @@
     "layers-rei": {
       "title": "REI: How to dress in layers",
       "url": "https://www.rei.com/learn/expert-advice/layering-basics.html",
-      "checked": "2026-11-12",
+      "checked": "2026-11-13",
       "scopeNote": "Base, insulation and shell roles; cotton and damp insulation.",
       "status": "text-inspected",
       "publisher": "REI",
@@ -3334,7 +3334,7 @@
     "simms-fit": {
       "title": "Simms: Size and fit guide",
       "url": "https://www.simmsfishing.com/pages/size-fit-guide",
-      "checked": "2026-11-12",
+      "checked": "2026-11-13",
       "scopeNote": "Girth, inseam and bootie size measurements.",
       "status": "text-inspected",
       "publisher": "Simms",
@@ -3345,7 +3345,7 @@
     "simms-care": {
       "title": "Simms: Wader and gear care",
       "url": "https://www.simmsfishing.com/pages/wader-care",
-      "checked": "2026-11-12",
+      "checked": "2026-11-13",
       "scopeNote": "Rinse, dry, wash and storage instructions.",
       "status": "text-inspected",
       "publisher": "Simms",
@@ -3488,7 +3488,7 @@
     "columbia-fleece": {
       "title": "Columbia: Fast Trek II Full Zip Fleece",
       "url": "https://www.columbia.com/p/mens-fast-trek-ii-full-zip-fleece-1420421.html",
-      "checked": "2026-11-12",
+      "checked": "2026-11-13",
       "scopeNote": "Polyester microfleece and $65 price.",
       "status": "text-inspected",
       "publisher": "Columbia",
@@ -3532,7 +3532,7 @@
     "frog-rain": {
       "title": "Frogg Toggs: Ultra-Lite2 waterproof rain suit",
       "url": "https://www.froggtoggs.com/products/the-frogg-toggsr-ultra-lite2tm-4749",
-      "checked": "2026-11-11",
+      "checked": "2026-11-13",
       "scopeNote": "Manufacturer page identified the product. Specifications could not be confirmed in accessible page text; not used in the revised picks.",
       "status": "product-identity-only",
       "publisher": "Frogg Toggs",
@@ -4269,7 +4269,7 @@
     "gr-cold": {
       "title": "National Weather Service: cold water",
       "url": "https://www.weather.gov/safety/coldwater",
-      "checked": "2026-11-12",
+      "checked": "2026-11-13",
       "status": "text-inspected",
       "type": "reference",
       "scopeNote": "Cold shock, loss of muscle control, and life jacket advice. No safe immersion time is inferred.",
@@ -4302,7 +4302,7 @@
     "gr-ice-care": {
       "title": "Icebreaker care guide",
       "url": "https://na.icebreaker.com/en-us/pages/caring-for-your-icebreaker",
-      "checked": "2026-11-12",
+      "checked": "2026-11-13",
       "status": "text-inspected",
       "type": "reference",
       "scopeNote": "Use the garment care label, avoid fabric softener, store clean and dry. No universal service-life estimate.",
@@ -4335,7 +4335,7 @@
     "gr-shell": {
       "title": "Patagonia Torrentshell 3L",
       "url": "https://www.patagonia.com/product/mens-torrentshell-3-layer-rain-jacket/85241.html",
-      "checked": "2026-11-12",
+      "checked": "2026-11-13",
       "status": "text-inspected",
       "type": "reference",
       "scopeNote": "Three-layer H2No shell, pit zips, adjustable hood; machine wash cold, tumble dry low, no fabric softener.",
@@ -4346,7 +4346,7 @@
     "gr-crossfire": {
       "title": "Daiwa 26 Crossfire LT",
       "url": "https://daiwa.us/products/26-crossfire-lt",
-      "checked": "2026-11-11",
+      "checked": "2026-11-13",
       "status": "text-inspected",
       "type": "reference",
       "scopeNote": "Current 26 Crossfire LT features: AIRDRIVE ROTOR, LT concept and TOUGH DIGIGEAR. No shared size-number assumption.",
@@ -4357,7 +4357,7 @@
     "gr-bg": {
       "title": "Daiwa BG",
       "url": "https://daiwa.us/collections/saltwater-spinning-reels/products/bg-sw-spinning",
-      "checked": "2026-11-11",
+      "checked": "2026-11-13",
       "status": "text-inspected",
       "type": "reference",
       "scopeNote": "Machined aluminum body and screw-in handle; consult exact size specifications.",
@@ -4368,7 +4368,7 @@
     "gr-stradic": {
       "title": "Shimano Stradic FM",
       "url": "https://fish.shimano.com/en-US/product/reels/spinning/frontdrag/a075f00003slvodqas.html",
-      "checked": "2026-11-11",
+      "checked": "2026-11-13",
       "status": "text-inspected",
       "type": "reference",
       "scopeNote": "Stradic FM product family includes InfinityXross and Infinity Drive. No catch-rate or immersion claim.",
@@ -4484,6 +4484,61 @@
       "checked": "2026-11-12",
       "status": "text-inspected",
       "scopeNote": "Official purchase channels; no promise that every license appears in every channel.",
+      "type": "reference"
+    },
+    "daily-mn-ice": {
+      "publisher": "Minnesota DNR",
+      "shortTitle": "Ice safety",
+      "title": "Minnesota DNR — Ice safety",
+      "url": "https://www.dnr.state.mn.us/safety/ice/index.html",
+      "checked": "2026-11-13",
+      "status": "source-checked",
+      "scopeNote": "Ice is never completely safe; thickness and appearance alone do not establish strength.",
+      "group": "Government/agency",
+      "type": "reference"
+    },
+    "daily-mn-rental": {
+      "publisher": "Minnesota Recreational Rentals",
+      "shortTitle": "Fish house questions and packing",
+      "title": "Minnesota Recreational Rentals — Fish house questions and packing",
+      "url": "https://www.icefishmn.com/fish-house-faqs",
+      "checked": "2026-11-13",
+      "status": "source-checked",
+      "scopeNote": "Operator-specific meeting arrangements, equipment requests, packing and cancellation terms.",
+      "group": "Independent",
+      "type": "reference"
+    },
+    "daily-mn-service": {
+      "publisher": "Minnesota Guide Service",
+      "shortTitle": "Ice fishing trips and rentals",
+      "title": "Minnesota Guide Service — Ice fishing trips and rentals",
+      "url": "https://www.minnesotaguideservice.com/services/ice-fishing",
+      "checked": "2026-11-13",
+      "status": "source-checked",
+      "scopeNote": "Day and sleeper formats; rental equipment add-ons differ from fully guided inclusions. No price recommendation.",
+      "group": "Independent",
+      "type": "reference"
+    },
+    "daily-mn-lodge": {
+      "publisher": "Lakeroad Lodge",
+      "shortTitle": "Ice fishing and sleeper houses",
+      "title": "Lakeroad Lodge — Ice fishing and sleeper houses",
+      "url": "https://lakeroadlodge.com/ice-fishing-lake-of-the-woods/",
+      "checked": "2026-11-13",
+      "status": "source-checked",
+      "scopeNote": "Guests bring bedding and tackle for sleeper houses; generator rental is separate.",
+      "group": "Independent",
+      "type": "reference"
+    },
+    "daily-mn-traxx": {
+      "publisher": "FishTraxx",
+      "shortTitle": "Ice Castle rentals",
+      "title": "FishTraxx — Ice Castle rentals",
+      "url": "https://www.fishtraxx.com/ice-castle-fish-house-rentals.html",
+      "checked": "2026-11-13",
+      "status": "source-checked",
+      "scopeNote": "Operator lists generator and fuel included, rods on request, electronics as rentals.",
+      "group": "Independent",
       "type": "reference"
     },
     "species-e4b4ce359a5f": {
@@ -187346,13 +187401,14 @@
       "Cook Islands",
       "Niue"
     ],
-    "sources": 1030,
+    "sources": 1035,
     "sourceInspection": {
       "text-inspected": 201,
       "search-excerpt-inspected": 136,
       "page-text-inspected": 19,
       "source-linked": 92,
       "product-identity-only": 1,
+      "source-checked": 5,
       "existing-source-linked": 163,
       "reviewed-source": 418
     },

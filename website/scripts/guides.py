@@ -209,6 +209,9 @@ def render_rich(guide, content, root, origin, path):
         body += '<section class="gr-section" id="' + E(section['id']) + '"><div class="gr-section-heading"><span class="gr-index" aria-hidden="true">' + f'{number:02}' + '</span><h2>' + E(section['title']) + '</h2></div>'
         paragraphs = section.get('paragraphs', [])
         body += ''.join('<p class="gr-lede">' + E(p) + (citations(section.get('sources', []), numbers) if i == len(paragraphs) - 1 else '') + '</p>' for i, p in enumerate(paragraphs))
+        if section.get('type') == 'ice-rental-worksheet':
+            from ice_rental import render as render_ice_rental
+            body += render_ice_rental()
         if section.get('type') == 'florida-license-planner':
             from florida_license import render as render_license_planner
             body += render_license_planner()
@@ -279,6 +282,10 @@ def render_rich(guide, content, root, origin, path):
 def install(pages, root, origin, add, trips, trip_card, intro, bread):
     from photography import trip_metadata
     content = catalog(root)
+    ice_path = '/environments/ice-fishing/'
+    if ice_path in pages:
+        pages[ice_path]['body'] += '<section class="wrap section"><h2>Is this your first rental trip?</h2><p>Compare the guide time, transport, gear, and overnight supplies before you book.</p><a class="btn" href="/guides/minnesota-fish-house-rental-checklist/">Compare two fish-house rentals</a></section>'
+        pages[ice_path]['modified'] = '2026-11-13'
     by_id = {t['id']: t for t in trips}
     for tid, guide in content['trips'].items():
         path = by_id[tid]['canonicalPath']
@@ -298,8 +305,7 @@ def install(pages, root, origin, add, trips, trip_card, intro, bread):
             pages[path].update(richGuide=True, modified=guide['updated'],
                                ogImage='/media/guides/' + guide['hero']['name'] + '-1200.webp',
                                ogImageAlt=guide['hero']['alt'], photoPreload='')
-        if guide['new']:
-            pages[path]['published'] = guide.get('published', guide.get('updated', DATE))
+        pages[path]['published'] = guide.get('published', DATE)
     body = bread('Field guides') + intro('CHOOSE / PREPARE / GO', 'Fishing trip guides that answer the next question.', 'Compare a destination, choose your dates, and build a packing list around what your guide actually supplies.')
     body += '<section class="section"><div class="wrap"><h2>Start with your trip decision</h2><div class="article-grid">'
     for guide in sorted(content['articles'], key=lambda g: not g['new']):

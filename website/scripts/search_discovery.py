@@ -12,8 +12,12 @@ def metadata(path, page, origin):
     website = {'@type':'WebSite','@id':origin+'/#website','name':'Castward','url':origin+'/',
         'publisher':{'@id':origin+'/#organization'},'potentialAction':{'@type':'SearchAction','target':{'@type':'EntryPoint','urlTemplate':origin+'/search/?q={search_term_string}'},'query-input':'required name=search_term_string'}}
     crumbs = [{'@type':'ListItem','position':1,'name':'Home','item':origin+'/'}]
+    parents = {'guides':'Field guides', 'fishing-licenses':'Fishing licenses', 'environments':'Waters'}
+    parts = path.strip('/').split('/')
+    if len(parts) > 1 and parts[0] in parents:
+        crumbs.append({'@type':'ListItem','position':2,'name':parents[parts[0]],'item':origin+'/'+parts[0]+'/'})
     if path != '/':
-        crumbs.append({'@type':'ListItem','position':2,'name':page['title'].removesuffix(' | Castward'),'item':origin+path})
+        crumbs.append({'@type':'ListItem','position':len(crumbs)+1,'name':page['title'].removesuffix(' | Castward'),'item':origin+path})
     graph=[organization,website,{'@type':'BreadcrumbList','itemListElement':crumbs}]
     return '<script type="application/ld+json">'+json.dumps({'@context':'https://schema.org','@graph':graph}).replace('</','<\\/')+'</script>'
 
@@ -22,7 +26,7 @@ def feeds(dist, pages, root, origin):
     if not origin:
         return
     guides=json.loads((root/'src/guides.json').read_text())['articles']
-    selected=['/','/about/','/guides/','/fishing-licenses/','/guides/florida-visitor-fishing-license-planner/',
+    selected=['/','/about/','/guides/','/fishing-licenses/','/guides/florida-visitor-fishing-license-planner/','/environments/ice-fishing/','/guides/minnesota-fish-house-rental-checklist/',
               '/destinations/florida-keys/','/destinations/bozeman/','/destinations/yakutat/','/environments/','/fishing-lingo/','/tools/weather/','/tools/tides/','/atlas/','/plan/','/search/']
     selected += ['/guides/'+g['slug']+'/' for g in guides]
     selected += ['/fishing-licenses/'+s+'/' for s in ['us-florida','us-alaska','us-california','us-minnesota','us-montana']]

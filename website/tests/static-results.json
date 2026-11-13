@@ -1,6 +1,6 @@
 {
   "passed": true,
-  "routes_checked": 2672,
+  "routes_checked": 2673,
   "checks": [
     "one H1 per route",
     "nonempty descriptions",

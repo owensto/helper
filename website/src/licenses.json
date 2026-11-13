@@ -70,12 +70,20 @@
           "water": "freshwater"
         }
       ],
-      "extras": [],
+      "extras": [
+        {
+          "name": "Wildlife Identification Number activation",
+          "when": "One-time activation; the guide lists a $2 online discount. GST is extra.",
+          "price": 12,
+          "currency": "CAD"
+        }
+      ],
       "saltwater": null,
       "guidedTrips": null,
       "keyRules": [
         "Obtain a Wildlife Identification Number before an online purchase.",
-        "Exempt anglers must still follow the sportfishing rules."
+        "Exempt anglers must still follow the sportfishing rules.",
+        "Family Fishing Weekends: July 11–12, 2026 and February 13–15, 2027. Open-water rules still apply. A sportfishing licence is still needed with a Special Harvest Licence."
       ],
       "howToBuy": "Buy through AlbertaRELM after you obtain a Wildlife Identification Number.",
       "sources": [
@@ -88,7 +96,7 @@
           "url": "https://albertaregulations.ca/2026-Alberta-Guide-to-Sportfishing-Regulations.pdf"
         }
       ],
-      "checked": "2026-11-11",
+      "checked": "2026-11-13",
       "checkOfficial": "Confirm taxes and any Wildlife Identification Number fee at purchase. No client exemption for guided trips was confirmed."
     },
     {
@@ -108,7 +116,8 @@
       ],
       "exemptions": [
         "Visiting freshwater anglers under 16 can share an accompanying licence holder's quota.",
-        "Children under 16 need a tidal licence, but the basic licence is free."
+        "Children under 16 need a tidal licence, but the basic licence is free.",
+        "The freshwater Family Fishing Weekend exemption covers Canadian residents on the Father’s Day weekend and preceding Friday. It excludes Classified Waters and retention of species that need a conservation surcharge stamp."
       ],
       "options": [
         {
@@ -235,9 +244,13 @@
         {
           "title": "Buy fishing licences, including through a guide",
           "url": "https://www2.gov.bc.ca/buy-hunting-fishing-licences"
+        },
+        {
+          "title": "Family fishing exemption, section 4.1",
+          "url": "https://www.bclaws.gov.bc.ca/civix/document/id/lc/statreg/10_125_90"
         }
       ],
-      "checked": "2026-11-11",
+      "checked": "2026-11-13",
       "checkOfficial": "Listed freshwater fees and tidal fees exclude applicable taxes. Confirm water-specific restrictions before purchase."
     },
     {
@@ -294,7 +307,8 @@
       "guidedTrips": null,
       "keyRules": [
         "Carry the licence on paper or an electronic device.",
-        "Follow the separate season dates for your water."
+        "Follow the separate season dates for your water.",
+        "Family Fishing Weekends: June 12–14, 2026 and February 20–22, 2027. No angling licence is needed, except in federal parks. All other rules still apply."
       ],
       "howToBuy": "Buy online through Manitoba eLicensing, at a participating store, or by phone.",
       "sources": [
@@ -311,7 +325,7 @@
           "url": "https://payment.manitoba.ca/elicensing/faqs.html"
         }
       ],
-      "checked": "2026-11-11",
+      "checked": "2026-11-13",
       "checkOfficial": "Prices use the government's 2026 fee table. The guide lists base amounts before GST; confirm the final total and youth conditions."
     },
     {
@@ -406,7 +420,7 @@
           "url": "https://www2.gnb.ca/content/gnb/en/departments/erd/fish-and-wildlife/content/e-Licensing/available_licences.html"
         }
       ],
-      "checked": "2026-11-11",
+      "checked": "2026-11-13",
       "checkOfficial": "Prices exclude tax. Confirm the tidal-water boundary and applicable federal rules; no general saltwater exemption is asserted here."
     },
     {
@@ -459,7 +473,8 @@
       "keyRules": [
         "Carry the inland licence.",
         "Check current river closures.",
-        "A family licence shares one catch limit."
+        "A family licence shares one catch limit.",
+        "Visitors who retain trout in scheduled inland waters need a trout licence as well as the required salmon licence."
       ],
       "howToBuy": "Buy from commercial licence vendors throughout the province.",
       "sources": [
@@ -484,7 +499,7 @@
           "url": "https://www.nfl.dfo-mpo.gc.ca/en/NL/AG/anglersguide"
         }
       ],
-      "checked": "2026-11-11",
+      "checked": "2026-11-13",
       "checkOfficial": "Confirm northern Labrador outfitter exceptions and family-licence eligibility for your party."
     },
     {

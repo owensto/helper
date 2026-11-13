@@ -486,7 +486,7 @@
     "layers-rei": {
       "title": "REI: How to dress in layers",
       "url": "https://www.rei.com/learn/expert-advice/layering-basics.html",
-      "checked": "2026-11-12",
+      "checked": "2026-11-13",
       "scopeNote": "Base, insulation and shell roles; cotton and damp insulation.",
       "status": "text-inspected",
       "publisher": "REI",
@@ -801,7 +801,7 @@
     "simms-fit": {
       "title": "Simms: Size and fit guide",
       "url": "https://www.simmsfishing.com/pages/size-fit-guide",
-      "checked": "2026-11-12",
+      "checked": "2026-11-13",
       "scopeNote": "Girth, inseam and bootie size measurements.",
       "status": "text-inspected",
       "publisher": "Simms",
@@ -811,7 +811,7 @@
     "simms-care": {
       "title": "Simms: Wader and gear care",
       "url": "https://www.simmsfishing.com/pages/wader-care",
-      "checked": "2026-11-12",
+      "checked": "2026-11-13",
       "scopeNote": "Rinse, dry, wash and storage instructions.",
       "status": "text-inspected",
       "publisher": "Simms",
@@ -929,7 +929,7 @@
     "columbia-fleece": {
       "title": "Columbia: Fast Trek II Full Zip Fleece",
       "url": "https://www.columbia.com/p/mens-fast-trek-ii-full-zip-fleece-1420421.html",
-      "checked": "2026-11-12",
+      "checked": "2026-11-13",
       "scopeNote": "Polyester microfleece and $65 price.",
       "status": "text-inspected",
       "publisher": "Columbia",
@@ -966,7 +966,7 @@
     "frog-rain": {
       "title": "Frogg Toggs: Ultra-Lite2 waterproof rain suit",
       "url": "https://www.froggtoggs.com/products/the-frogg-toggsr-ultra-lite2tm-4749",
-      "checked": "2026-11-11",
+      "checked": "2026-11-13",
       "scopeNote": "Manufacturer page identified the product. Specifications could not be confirmed in accessible page text; not used in the revised picks.",
       "status": "product-identity-only",
       "publisher": "Frogg Toggs",
@@ -1592,7 +1592,7 @@
     "gr-cold": {
       "title": "National Weather Service: cold water",
       "url": "https://www.weather.gov/safety/coldwater",
-      "checked": "2026-11-12",
+      "checked": "2026-11-13",
       "status": "text-inspected",
       "type": "reference",
       "scopeNote": "Cold shock, loss of muscle control, and life jacket advice. No safe immersion time is inferred.",
@@ -1625,7 +1625,7 @@
     "gr-ice-care": {
       "title": "Icebreaker care guide",
       "url": "https://na.icebreaker.com/en-us/pages/caring-for-your-icebreaker",
-      "checked": "2026-11-12",
+      "checked": "2026-11-13",
       "status": "text-inspected",
       "type": "reference",
       "scopeNote": "Use the garment care label, avoid fabric softener, store clean and dry. No universal service-life estimate.",
@@ -1658,7 +1658,7 @@
     "gr-shell": {
       "title": "Patagonia Torrentshell 3L",
       "url": "https://www.patagonia.com/product/mens-torrentshell-3-layer-rain-jacket/85241.html",
-      "checked": "2026-11-12",
+      "checked": "2026-11-13",
       "status": "text-inspected",
       "type": "reference",
       "scopeNote": "Three-layer H2No shell, pit zips, adjustable hood; machine wash cold, tumble dry low, no fabric softener.",
@@ -1669,7 +1669,7 @@
     "gr-crossfire": {
       "title": "Daiwa 26 Crossfire LT",
       "url": "https://daiwa.us/products/26-crossfire-lt",
-      "checked": "2026-11-11",
+      "checked": "2026-11-13",
       "status": "text-inspected",
       "type": "reference",
       "scopeNote": "Current 26 Crossfire LT features: AIRDRIVE ROTOR, LT concept and TOUGH DIGIGEAR. No shared size-number assumption.",
@@ -1680,7 +1680,7 @@
     "gr-bg": {
       "title": "Daiwa BG",
       "url": "https://daiwa.us/collections/saltwater-spinning-reels/products/bg-sw-spinning",
-      "checked": "2026-11-11",
+      "checked": "2026-11-13",
       "status": "text-inspected",
       "type": "reference",
       "scopeNote": "Machined aluminum body and screw-in handle; consult exact size specifications.",
@@ -1691,7 +1691,7 @@
     "gr-stradic": {
       "title": "Shimano Stradic FM",
       "url": "https://fish.shimano.com/en-US/product/reels/spinning/frontdrag/a075f00003slvodqas.html",
-      "checked": "2026-11-11",
+      "checked": "2026-11-13",
       "status": "text-inspected",
       "type": "reference",
       "scopeNote": "Stradic FM product family includes InfinityXross and Infinity Drive. No catch-rate or immersion claim.",
@@ -1802,6 +1802,56 @@
       "checked": "2026-11-12",
       "status": "text-inspected",
       "scopeNote": "Official purchase channels; no promise that every license appears in every channel."
+    },
+    "daily-mn-ice": {
+      "publisher": "Minnesota DNR",
+      "shortTitle": "Ice safety",
+      "title": "Minnesota DNR — Ice safety",
+      "url": "https://www.dnr.state.mn.us/safety/ice/index.html",
+      "checked": "2026-11-13",
+      "status": "source-checked",
+      "scopeNote": "Ice is never completely safe; thickness and appearance alone do not establish strength.",
+      "group": "Government/agency"
+    },
+    "daily-mn-rental": {
+      "publisher": "Minnesota Recreational Rentals",
+      "shortTitle": "Fish house questions and packing",
+      "title": "Minnesota Recreational Rentals — Fish house questions and packing",
+      "url": "https://www.icefishmn.com/fish-house-faqs",
+      "checked": "2026-11-13",
+      "status": "source-checked",
+      "scopeNote": "Operator-specific meeting arrangements, equipment requests, packing and cancellation terms.",
+      "group": "Independent"
+    },
+    "daily-mn-service": {
+      "publisher": "Minnesota Guide Service",
+      "shortTitle": "Ice fishing trips and rentals",
+      "title": "Minnesota Guide Service — Ice fishing trips and rentals",
+      "url": "https://www.minnesotaguideservice.com/services/ice-fishing",
+      "checked": "2026-11-13",
+      "status": "source-checked",
+      "scopeNote": "Day and sleeper formats; rental equipment add-ons differ from fully guided inclusions. No price recommendation.",
+      "group": "Independent"
+    },
+    "daily-mn-lodge": {
+      "publisher": "Lakeroad Lodge",
+      "shortTitle": "Ice fishing and sleeper houses",
+      "title": "Lakeroad Lodge — Ice fishing and sleeper houses",
+      "url": "https://lakeroadlodge.com/ice-fishing-lake-of-the-woods/",
+      "checked": "2026-11-13",
+      "status": "source-checked",
+      "scopeNote": "Guests bring bedding and tackle for sleeper houses; generator rental is separate.",
+      "group": "Independent"
+    },
+    "daily-mn-traxx": {
+      "publisher": "FishTraxx",
+      "shortTitle": "Ice Castle rentals",
+      "title": "FishTraxx — Ice Castle rentals",
+      "url": "https://www.fishtraxx.com/ice-castle-fish-house-rentals.html",
+      "checked": "2026-11-13",
+      "status": "source-checked",
+      "scopeNote": "Operator lists generator and fuel included, rods on request, electronics as rentals.",
+      "group": "Independent"
     }
   },
   "trips": {
@@ -5238,7 +5288,8 @@
       ],
       "relatedGuides": [
         "how-to-choose-a-fishing-guide",
-        "what-to-bring-on-a-guided-fishing-trip"
+        "what-to-bring-on-a-guided-fishing-trip",
+        "minnesota-fish-house-rental-checklist"
       ],
       "reel": {
         "slug": "captain-guitar",
@@ -6330,7 +6381,7 @@
     {
       "slug": "fishing-layering-system-guide",
       "title": "Fishing layers: what to wear under waders",
-      "description": "Wear a moisture-managing base layer under your waders, then add insulation that fits without bunching. Keep a shell ready for exposed upper-body protection from wind and rain. Try the full outfit with your socks and boots before the trip. Carry dry spare clothes separately from wet gear.",
+      "description": "Wear a base layer, add insulation for the cold, and use a shell for wind or rain. Fit the whole system under your waders before the trip. For a rental ice house, pack for the journey across the ice as well as the time inside the shelter.",
       "category": "GEAR / LAYERING",
       "destination": "na-us-ak-019",
       "sections": [
@@ -6366,6 +6417,48 @@
           },
           "paragraphs": [
             "You do not need all three on your body all day. Keep the next layer where you can reach it."
+          ]
+        },
+        {
+          "id": "rental-house-layers",
+          "title": "What should you wear for a heated ice house?",
+          "paragraphs": [
+            "Plan for three parts of the day: the approach, the time seated inside, and the return. A warm house does not remove the outdoor part of the trip. Ask how you reach it and where spare clothing stays dry."
+          ],
+          "table": {
+            "heads": [
+              "Part of the trip",
+              "What to check"
+            ],
+            "rows": [
+              [
+                "Before travel",
+                "Try the full outfit with boots. Keep a dry spare set separate."
+              ],
+              [
+                "Approach",
+                "Adjust layers to effort; keep the shell accessible."
+              ],
+              [
+                "Inside the house",
+                "Remove an outer layer if you become too warm. Keep it dry and ready."
+              ],
+              [
+                "Return",
+                "Put the outdoor layers back on before you leave the shelter."
+              ]
+            ]
+          },
+          "sources": [
+            "layers-rei"
+          ],
+          "cards": [
+            {
+              "title": "Compare rental arrangements",
+              "text": "Confirm transport, storage, and the equipment included in the quote.",
+              "url": "/guides/minnesota-fish-house-rental-checklist/",
+              "label": "Use the rental worksheet"
+            }
           ]
         },
         {
@@ -6636,6 +6729,7 @@
       ],
       "relatedTrips": [],
       "relatedGuides": [
+        "minnesota-fish-house-rental-checklist",
         "merino-wool-fishing-base-layers",
         "fishing-waders-buying-guide",
         "fishing-gear-quality-tiers"
@@ -6648,7 +6742,7 @@
       "plannerNote": "Separate the clothes you will wear from the dry clothes you will carry.",
       "revision": "Rebuilt with original guide imagery, checked sources, concise tables and practical steps.",
       "rich": true,
-      "updated": "2026-11-12",
+      "updated": "2026-11-13",
       "hero": {
         "name": "layers",
         "alt": "A charcoal base layer, rust fleece, and olive rain shell on a wooden bench."
@@ -6675,14 +6769,14 @@
     },
     {
       "slug": "fishing-gear-quality-tiers",
-      "title": "Spend where it matters.",
-      "description": "A practical way to compare budget, mid-range, and premium gear—and keep more of your money for time on the water.",
+      "title": "Fishing gear tiers: what is worth the upgrade?",
+      "description": "Choose fishing gear for the water, method, and fit you need. Start with suitable items you own, then compare the missing pieces. For a first guided trip or ice-house rental, get the supplied equipment list before you spend money on rods, electronics, or a complete new outfit.",
       "category": "GEAR / BUYING ADVICE",
       "destination": "na-us-ak-019",
       "sections": [
         {
           "id": "tiers",
-          "title": "What a higher tier should buy",
+          "title": "What should a higher gear tier buy?",
           "sources": [],
           "table": {
             "heads": [
@@ -6713,8 +6807,56 @@
           ]
         },
         {
+          "id": "rent-before-buy",
+          "title": "What should you buy before a first ice-house rental?",
+          "paragraphs": [
+            "Get the equipment list first. Minnesota Guide Service separates house-rental add-ons from its fully guided package. FishTraxx lists rods on request and separate electronics rentals. These are examples of different packages, not a promise about your operator.",
+            "Put your money toward a confirmed gap. A reel intended for your usual open-water fishing does not establish a complete ice setup. Ask the operator about the target, rod, line, and tackle before you buy."
+          ],
+          "table": {
+            "heads": [
+              "Item",
+              "Decision before purchase"
+            ],
+            "rows": [
+              [
+                "Rod and tackle",
+                "Confirm the exact supplied setup and target species."
+              ],
+              [
+                "Electronics",
+                "Ask about rental availability and instruction."
+              ],
+              [
+                "Boots and layers",
+                "Check fit with the clothes you will use."
+              ],
+              [
+                "Bedding and cooking gear",
+                "Use the overnight house inventory."
+              ],
+              [
+                "Large equipment",
+                "Confirm transport and storage before bringing it."
+              ]
+            ]
+          },
+          "sources": [
+            "daily-mn-service",
+            "daily-mn-traxx"
+          ],
+          "cards": [
+            {
+              "title": "Check two quotes",
+              "text": "Record the included gear and each extra charge side by side.",
+              "url": "/guides/minnesota-fish-house-rental-checklist/",
+              "label": "Compare rental packages"
+            }
+          ]
+        },
+        {
           "id": "priorities",
-          "title": "Put the money next to the problem",
+          "title": "Which gear problem should you fix first?",
           "sources": [],
           "table": {
             "heads": [
@@ -6765,7 +6907,7 @@
         },
         {
           "id": "compare",
-          "title": "Compare like with like",
+          "title": "How do you compare two exact models?",
           "sources": [
             "gr-crossfire",
             "gr-bg",
@@ -6781,7 +6923,7 @@
         },
         {
           "id": "shopping-list",
-          "title": "Three spinning reels to compare",
+          "title": "Which spinning reels should you compare?",
           "sources": [
             "gr-crossfire",
             "gr-bg",
@@ -6792,7 +6934,7 @@
         },
         {
           "id": "decision",
-          "title": "Keep, repair, or replace?",
+          "title": "Should you keep, repair, or replace your gear?",
           "sources": [],
           "pros": [
             "Keep gear that still fits the task.",
@@ -6806,8 +6948,54 @@
           ]
         },
         {
+          "id": "test-a-quote",
+          "title": "How do you compare the cost of a complete setup?",
+          "paragraphs": [
+            "Make one list for the complete job before you compare brands. For a reel, include suitable line and any spool service you need. For stockingfoot waders, include the separate boots. A low price for one part is not the cost of an outfit you can use.",
+            "Work through one real trip. Suppose the operator supplies the rod, reel, bait, and tackle, but asks you to bring boots and outer clothing. Compare your own boots and shell against that list first. Buying a new reel does not fill either gap.",
+            "Now suppose you want to fish independently after the guided day. That is a second use case. Ask whether the supplied tackle stays with the guided session and which gear suits your separate outing. Do not count borrowed equipment as something you own.",
+            "Write the exact model and size next to each quote. A family of reels can include different weights and capacities. Compare the specification for the size you will order, not the largest drag number in a product headline.",
+            "Separate essential costs from optional ones. Use the same currency and include any delivery or service charges shown at checkout. Leave an unknown amount blank until you check it. These guides do not provide live prices or a promise that a seller has stock."
+          ],
+          "table": {
+            "heads": [
+              "Cost line",
+              "What to write down"
+            ],
+            "rows": [
+              [
+                "Main item",
+                "Exact model, size, and quoted price"
+              ],
+              [
+                "Required companion gear",
+                "Line, boots, or other items needed to use it"
+              ],
+              [
+                "Fit and service",
+                "Any work needed before departure"
+              ],
+              [
+                "Delivery",
+                "Confirmed charge and expected arrival"
+              ],
+              [
+                "Optional extras",
+                "Items you can leave out without changing the trip"
+              ]
+            ]
+          },
+          "checklist": [
+            "Compare the full setup, not only the headline price.",
+            "Check the exact item against the maker’s current specification.",
+            "Try clothing with the layers you will use.",
+            "Keep the order details and return terms with your receipt.",
+            "Leave enough time to correct a wrong size before departure."
+          ]
+        },
+        {
           "id": "care",
-          "title": "Make the next upgrade last",
+          "title": "How do you care for your gear after a trip?",
           "sources": [
             "simms-care",
             "gr-shell"
@@ -6840,10 +7028,19 @@
         {
           "q": "Do the links guarantee the pictured model is in stock?",
           "a": "The buy buttons open brand and product searches. Check the exact model, size, seller, and current price on Amazon."
+        },
+        {
+          "q": "Should I buy equipment before the rental is confirmed?",
+          "a": "Confirm the trip and the written provision list first. Buy only the missing items that suit the agreed method."
+        },
+        {
+          "q": "Does a heated rental house remove the need for outdoor clothing?",
+          "a": "No. Plan for travel to the house, time outside, and the return trip. Check the transport arrangements."
         }
       ],
       "relatedTrips": [],
       "relatedGuides": [
+        "minnesota-fish-house-rental-checklist",
         "fishing-waders-buying-guide",
         "fishing-layering-system-guide"
       ],
@@ -6855,7 +7052,7 @@
       "plannerNote": "Check the guide’s supplied tackle before you add a rod or reel to the shopping list.",
       "revision": "Rebuilt with original guide imagery, checked sources, concise tables and practical steps.",
       "rich": true,
-      "updated": "2026-11-11",
+      "updated": "2026-11-13",
       "hero": {
         "name": "gear",
         "alt": "A rod, reel, dry bag, wading boots, glasses, and rain shell arranged on a wooden dock."
@@ -8896,6 +9093,259 @@
       "nextStep": "Check your outing, then pack for the boat or shore.",
       "plannerNote": "Plan each outing separately.",
       "reel": null
+    },
+    {
+      "slug": "minnesota-fish-house-rental-checklist",
+      "title": "Minnesota fish house rental: compare two trips",
+      "description": "Before you rent a Minnesota fish house, confirm the guide time, transport, tackle, bedding, power, and cancellation terms. A heated house does not mean every item is included. Use this two-quote worksheet to record the answers, find missing details, and pack for the actual trip.",
+      "category": "MINNESOTA / FIRST ICE TRIP",
+      "destination": "na-us-mn-001",
+      "rich": true,
+      "published": "2026-11-13",
+      "updated": "2026-11-13",
+      "new": true,
+      "hero": {
+        "name": "minnesota-rental-planner",
+        "alt": "Two short ice rods beside fishing holes in a wooden rental house, with boots, a bag, and a checklist."
+      },
+      "quickAnswer": "Choose the amount of help you need before you compare the price. Ask who teaches the fishing setup, who takes you to the house, and how you return early. Then separate supplied gear from your own packing list. Get the changed-conditions policy in writing before you pay.",
+      "quickSources": [
+        "daily-mn-service",
+        "daily-mn-rental"
+      ],
+      "facts": [
+        {
+          "label": "Compare",
+          "value": "Two written quotes"
+        },
+        {
+          "label": "Ask first",
+          "value": "Instruction and transport"
+        },
+        {
+          "label": "Take home",
+          "value": "A printable checklist"
+        }
+      ],
+      "sections": [
+        {
+          "id": "formats",
+          "title": "Do you need a day house, sleeper, or guided trip?",
+          "paragraphs": [
+            "A day house gives you a place to fish for an agreed session. A sleeper adds an overnight stay. A guided trip adds help, but ask exactly how much time the guide spends with you. These labels do not describe a standard package.",
+            "Start with the least experienced person in your group. If nobody can set up the tackle or explain a bite indicator, ask for teaching time. If someone wants an easy return to shore, ask about transport before you consider an overnight stay."
+          ],
+          "table": {
+            "heads": [
+              "Format",
+              "Useful when",
+              "Question to settle"
+            ],
+            "rows": [
+              [
+                "Day house",
+                "You want a short first outing",
+                "When and how can we return?"
+              ],
+              [
+                "Sleeper house",
+                "The group wants to stay overnight",
+                "What bedding, food, toilet, and power arrangements apply?"
+              ],
+              [
+                "Guided session",
+                "You want instruction",
+                "Is the guide with us, or checking in?"
+              ]
+            ]
+          },
+          "sources": [
+            "daily-mn-service",
+            "daily-mn-lodge"
+          ]
+        },
+        {
+          "id": "worksheet",
+          "title": "What does each rental quote include?",
+          "type": "ice-rental-worksheet",
+          "paragraphs": [
+            "Use the same dates, party size, and trip length for both quotes. Write “included” only after the operator confirms the item. Record a separate amount for each extra charge; do not treat a missing answer as a zero cost."
+          ]
+        },
+        {
+          "id": "examples",
+          "title": "Why is “gear included” not enough?",
+          "paragraphs": [
+            "Minnesota Guide Service lists tackle and electronics add-ons for its house rentals, while its fully guided option lists rods, reels, and bait. Ask which package your quote covers.",
+            "Lakeroad Lodge asks sleeper guests to bring bedding and tackle, and lists a separate generator rental. FishTraxx lists a generator and fuel within its house package, with electronics available separately. These examples explain why a packing list must follow the exact booking. They are not rankings or current availability claims."
+          ],
+          "sources": [
+            "daily-mn-service",
+            "daily-mn-lodge",
+            "daily-mn-traxx"
+          ],
+          "table": {
+            "heads": [
+              "Vague answer",
+              "Useful follow-up"
+            ],
+            "rows": [
+              [
+                "All fishing gear",
+                "Which rods, line, bait, tackle, and electronics?"
+              ],
+              [
+                "A guide is included",
+                "How much instruction and how many visits?"
+              ],
+              [
+                "The house sleeps four",
+                "How many separate beds, and who brings bedding?"
+              ],
+              [
+                "Power included",
+                "What can we use, and who handles a failure?"
+              ],
+              [
+                "Transport available",
+                "Is our return included, including an early return?"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "pack",
+          "title": "What should you pack after the operator replies?",
+          "paragraphs": [
+            "Build three piles: personal essentials, items the operator asked you to bring, and optional extras. Keep the optional pile small until you know the storage space. A large tackle box helps little if the rental already supplies suitable gear.",
+            "Try your full cold-weather outfit before departure. Sit, bend, and move in the boots and layers you plan to use. Keep a separate dry change for the return trip. Ask about dry storage rather than assume that a heated room provides it."
+          ],
+          "checklist": [
+            "Keep the meeting instructions and trip contact available offline.",
+            "Bring the license and identification that apply to your trip.",
+            "Pack food and drinking water according to the written provision list.",
+            "Confirm bedding and personal towels for an overnight stay.",
+            "Ask about the toilet and hand-washing arrangements.",
+            "Bring the exact tackle requested, or confirm rental equipment in advance."
+          ],
+          "cards": [
+            {
+              "title": "Build your layers",
+              "text": "Match the base, insulation, and shell to the whole outing.",
+              "url": "/guides/fishing-layering-system-guide/",
+              "label": "Choose fishing layers"
+            },
+            {
+              "title": "Use the gear you own",
+              "text": "Check condition and suitability before you buy more equipment.",
+              "url": "/guides/fishing-gear-you-already-own/",
+              "label": "Check your existing gear"
+            },
+            {
+              "title": "Compare gear choices",
+              "text": "Put fit and the intended use ahead of a higher price tier.",
+              "url": "/guides/fishing-gear-quality-tiers/",
+              "label": "Compare gear choices"
+            }
+          ]
+        },
+        {
+          "id": "conditions",
+          "title": "What happens if ice or weather changes the plan?",
+          "paragraphs": [
+            "Ask who decides whether the trip runs, when they contact you, and what happens to your payment. Separate the operator cancelling from your group choosing not to travel. Ask whether a different lake or date requires your agreement.",
+            "Minnesota DNR says there is no completely safe ice. A rental booking, visible tracks, or a thickness measurement does not guarantee a safe route. Check current local conditions and follow the operator’s access instructions; do not drive onto the lake from an old map pin."
+          ],
+          "sources": [
+            "daily-mn-ice",
+            "daily-mn-rental"
+          ],
+          "callouts": [
+            {
+              "kind": "warning",
+              "title": "Confirm the return plan",
+              "text": "Save the house location and trip contact. Ask how to leave early and what to do if the heat, power, or phone service fails."
+            }
+          ]
+        },
+        {
+          "id": "rules",
+          "title": "Does a house rental cover your fishing license?",
+          "paragraphs": [
+            "Treat personal fishing permission and the house arrangements as separate checks. Use the Minnesota license reference, then open the DNR rules for your age, residency, dates, and exact water. Do not assume a rental payment buys a personal license.",
+            "Ask the operator about the house’s required identification and shelter license. Check current rules yourself before fishing. This worksheet does not calculate limits, seasons, or safe ice thickness."
+          ],
+          "cards": [
+            {
+              "title": "Minnesota licenses",
+              "text": "Check official purchase links and the options for your group.",
+              "url": "/fishing-licenses/us-minnesota/",
+              "label": "Check Minnesota licenses"
+            },
+            {
+              "title": "Ice fishing hub",
+              "text": "See the water guide and related trip choices.",
+              "url": "/environments/ice-fishing/",
+              "label": "Plan an ice trip"
+            }
+          ]
+        },
+        {
+          "id": "call",
+          "title": "How do you turn the answers into a trip plan?",
+          "howTo": true,
+          "steps": [
+            {
+              "title": "Match the quotes",
+              "text": "Use the same party, dates, duration, and level of help for both operators."
+            },
+            {
+              "title": "Resolve the blanks",
+              "text": "Ask one follow-up with every unanswered question. Save the reply with the quote."
+            },
+            {
+              "title": "Agree on the essentials",
+              "text": "Confirm transport, instruction, equipment, total cost, and changed-conditions terms."
+            },
+            {
+              "title": "Print and reconfirm",
+              "text": "Print your comparison. Reconfirm the meeting point and access instructions before departure."
+            }
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Is a fish house rental the same as a guided trip?",
+          "a": "No. Ask whether a guide stays with you, helps at the start, or visits later. Confirm instruction in writing."
+        },
+        {
+          "q": "Do sleeper rentals include bedding?",
+          "a": "Do not assume so. Some operators ask guests to bring sleeping bags, blankets, and pillows. Use the list for your exact house."
+        },
+        {
+          "q": "Should I buy ice rods before my first rental?",
+          "a": "Ask about the supplied tackle first. If you need your own rod, confirm the target and setup before you buy."
+        },
+        {
+          "q": "Can I drive my car to the rental house?",
+          "a": "Do not assume vehicle access. Confirm transport and current access instructions with the operator. Ice conditions can change."
+        },
+        {
+          "q": "Can I save this comparison?",
+          "a": "Use Print comparison to print it or save a PDF. Entries are not sent to an operator and clear when you reload the page."
+        },
+        {
+          "q": "Does a completed worksheet confirm a reservation?",
+          "a": "No. Make the reservation directly with the operator and retain their written confirmation."
+        }
+      ],
+      "relatedGuides": [
+        "fishing-layering-system-guide",
+        "fishing-gear-quality-tiers",
+        "guided-fishing-trip-questions",
+        "what-to-bring-on-a-guided-fishing-trip"
+      ]
     }
   ]
 }

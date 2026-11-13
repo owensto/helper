@@ -65,3 +65,8 @@
 .fl-license-form button{justify-self:start;min-height:48px}
 #fl-license-result{padding:1.25rem;line-height:1.65}
 @media(max-width:650px){.fl-license-form{grid-template-columns:1fr}}
+
+.ice-worksheet fieldset{border:1px solid var(--line,#cbd1cd);border-radius:8px;padding:20px;margin:22px 0;min-width:0}
+.ice-worksheet legend{font-weight:700;padding:0 8px}.ice-quote-names{display:grid;grid-template-columns:1fr 1fr;gap:20px}.ice-quote-names label{display:block;font-size:15px;font-weight:600}.ice-quote-names input,.ice-quote-names textarea{display:block;box-sizing:border-box;width:100%;margin-top:8px;padding:12px;border:1px solid #78887d;border-radius:5px;background:#fff;color:#172a20;font:inherit}.ice-quote-names textarea{resize:vertical;min-height:110px}
+@media(max-width:600px){.ice-quote-names{grid-template-columns:1fr}.ice-worksheet fieldset{padding:14px}}
+@media print{.ice-worksheet fieldset{break-inside:avoid}.ice-worksheet textarea{height:auto;min-height:120px;field-sizing:content}#ice-print{display:none}}

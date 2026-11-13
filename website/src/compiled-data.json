@@ -1651,6 +1651,26 @@
       "label": "How to order a license",
       "url": "https://myfwc.com/license/recreational/how-to-order/"
     },
+    "world-daily-mn-ice": {
+      "label": "Minnesota DNR — Ice safety",
+      "url": "https://www.dnr.state.mn.us/safety/ice/index.html"
+    },
+    "world-daily-mn-rental": {
+      "label": "Minnesota Recreational Rentals — Fish house questions and packing",
+      "url": "https://www.icefishmn.com/fish-house-faqs"
+    },
+    "world-daily-mn-service": {
+      "label": "Minnesota Guide Service — Ice fishing trips and rentals",
+      "url": "https://www.minnesotaguideservice.com/services/ice-fishing"
+    },
+    "world-daily-mn-lodge": {
+      "label": "Lakeroad Lodge — Ice fishing and sleeper houses",
+      "url": "https://lakeroadlodge.com/ice-fishing-lake-of-the-woods/"
+    },
+    "world-daily-mn-traxx": {
+      "label": "FishTraxx — Ice Castle rentals",
+      "url": "https://www.fishtraxx.com/ice-castle-fish-house-rentals.html"
+    },
     "world-species-e4b4ce359a5f": {
       "label": "Fishery source for Yakutat / Situk River",
       "url": "https://www.adfg.alaska.gov/index.cfm?adfg=ByAreaSoutheastYakutat.fishingOpps&fishery=Situk+River+sockeye+and+coho+salmon"

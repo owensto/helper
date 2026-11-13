@@ -1,0 +1,101 @@
+{
+  "checked": "2026-11-13",
+  "jurisdictions": [
+    "ca-alberta",
+    "ca-british-columbia",
+    "ca-manitoba",
+    "ca-new-brunswick",
+    "ca-newfoundland-and-labrador"
+  ],
+  "findings": {
+    "fees": "Existing listed licence prices match official pages. Alberta WIN activation detail added.",
+    "stamps": "BC tidal salmon stamp and classified-water fees match; freshwater weekend exception added.",
+    "freeDays": "Alberta and Manitoba guide dates verified. BC statutory rule verified. NB campaign page returned 403; no dates added. NL official guide has no general visitor free-day exemption; none added.",
+    "newfoundland": "Added requirement for a trout licence when a visitor retains trout in scheduled inland waters.",
+    "sourceEvidence": "seo-reports/evidence/castward-2026-11-13/sources/"
+  },
+  "sources": {
+    "ca-alberta": [
+      {
+        "title": "Alberta fishing licence service",
+        "url": "https://eservices.alberta.ca/visitors/fishing-licence.html"
+      },
+      {
+        "title": "2026 Alberta Guide to Sportfishing Regulations: licence fees",
+        "url": "https://albertaregulations.ca/2026-Alberta-Guide-to-Sportfishing-Regulations.pdf"
+      }
+    ],
+    "ca-british-columbia": [
+      {
+        "title": "Freshwater licence requirements and fees",
+        "url": "https://www2.gov.bc.ca/gov/content/sports-culture/recreation/fishing-hunting/fishing/recreational-freshwater-fishing-licence"
+      },
+      {
+        "title": "DFO tidal licence requirements and 2026/27 fees",
+        "url": "https://www.pac.dfo-mpo.gc.ca/fm-gp/rec/licence-permis/index-eng.html"
+      },
+      {
+        "title": "Classified Waters licences",
+        "url": "https://www2.gov.bc.ca/gov/content/sports-culture/recreation/fishing-hunting/fishing/recreational-freshwater-fishing-licence/classified-waters-licences"
+      },
+      {
+        "title": "Buy fishing licences, including through a guide",
+        "url": "https://www2.gov.bc.ca/buy-hunting-fishing-licences"
+      },
+      {
+        "title": "Family fishing exemption, section 4.1",
+        "url": "https://www.bclaws.gov.bc.ca/civix/document/id/lc/statreg/10_125_90"
+      }
+    ],
+    "ca-manitoba": [
+      {
+        "title": "Licence fees effective April 1, 2026",
+        "url": "https://www.gov.mb.ca/elicensing/fees.html"
+      },
+      {
+        "title": "Manitoba 2026 Angler's Guide",
+        "url": "https://www.gov.mb.ca/nrnd/fish-wildlife/pubs/fish_wildlife/fish/angling-guide.pdf"
+      },
+      {
+        "title": "Manitoba eLicensing purchase methods",
+        "url": "https://payment.manitoba.ca/elicensing/faqs.html"
+      }
+    ],
+    "ca-new-brunswick": [
+      {
+        "title": "Non-resident licences and fees",
+        "url": "https://www2.gnb.ca/content/gnb/en/departments/erd/fish-and-wildlife/content/go-fishing/content/non-res-angling-licences.html"
+      },
+      {
+        "title": "Non-resident guide and licence requirements",
+        "url": "https://www2.gnb.ca/content/gnb/en/departments/erd/fish-and-wildlife/content/go-fishing/content/definition-requirements-non-res-angler.html"
+      },
+      {
+        "title": "Available angling licences",
+        "url": "https://www2.gnb.ca/content/gnb/en/departments/erd/fish-and-wildlife/content/e-Licensing/available_licences.html"
+      }
+    ],
+    "ca-newfoundland-and-labrador": [
+      {
+        "title": "2026/27 licence requirements",
+        "url": "https://www.nfl.dfo-mpo.gc.ca/en/anglers-guide-2026-2027-annexes-annex-2-licence-information"
+      },
+      {
+        "title": "2026/27 trout fees",
+        "url": "https://www.nfl.dfo-mpo.gc.ca/en/anglers-guide-2026-2027-trout-trout-licence-fees"
+      },
+      {
+        "title": "2026/27 salmon fees",
+        "url": "https://www.nfl.dfo-mpo.gc.ca/en/anglers-guide-2026-2027-salmon-licence-fees"
+      },
+      {
+        "title": "Non-resident guide requirements",
+        "url": "https://www.gov.nl.ca/fal/public-education/wildlife/hunting/nonres/"
+      },
+      {
+        "title": "2026/27 Anglers' Guide and river status",
+        "url": "https://www.nfl.dfo-mpo.gc.ca/en/NL/AG/anglersguide"
+      }
+    ]
+  }
+}
