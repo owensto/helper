@@ -100,7 +100,7 @@ def install(pages, trips, origin, dist):
             marker = '<section class="wrap profile-species"'
             assert marker in page['body'], trip['id']
             page['body'] = page['body'].replace(marker, module + marker, 1)
-            page['modified'] = local['reviewed']
+            page['modified'] = max(page.get('modified', ''), local['reviewed'])
         # The same season text is rendered by both the regular and long-guide paths.
         if not re.search(r'<h[23][^>]*>[^<]*(?:When|Season|season)', page['body']):
             assessment['reasons'].append('Season section is absent from the rendered page')
