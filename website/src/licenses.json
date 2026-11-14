@@ -998,7 +998,9 @@
       "whoNeedsOne": [
         "Non-residents fishing for species covered by Quebec's sport fishing rules."
       ],
-      "exemptions": [],
+      "exemptions": [
+        "Quebec residents could fish without a licence during June 5–7, 2026, except for Atlantic salmon. All other fishing rules still applied."
+      ],
       "options": [
         {
           "name": "Non-resident general 1-day",
@@ -1061,9 +1063,13 @@
         {
           "title": "Online licence account",
           "url": "https://www.quebec.ca/en/tourism-recreation-sport/sporting-and-outdoor-activities/my-hunting-fishing-account"
+        },
+        {
+          "title": "Quebec 2026 fishing festival and resident-only exemption",
+          "url": "https://www.quebec.ca/tourisme-loisirs-sport/activites-sportives-et-de-plein-air/peche-sportive/fete-peche"
         }
       ],
-      "checked": "2026-11-11",
+      "checked": "2026-11-14",
       "checkOfficial": "Prices include taxes. Confirm salmon options, family exemptions, water-access fees, and zone 21 species rules for the exact trip."
     },
     {
@@ -1083,7 +1089,8 @@
       "exemptions": [
         "Children under 16.",
         "Saskatchewan residents aged 65 and older.",
-        "Eligible Canadian Armed Forces veterans receive free licences."
+        "Eligible Canadian Armed Forces veterans receive free licences.",
+        "Free fishing weekends: July 11–12, 2026, and February 12–14, 2027. All other rules apply; national parks are excluded. A licence is required to take fish out of the province. Suspended or prohibited anglers remain ineligible."
       ],
       "options": [
         {
@@ -1160,9 +1167,13 @@
         {
           "title": "Saskatchewan fishing licences",
           "url": "https://www.saskatchewan.ca/residents/parks-culture-heritage-and-sport/hunting-trapping-and-angling/angling/buy-an-angling-licence"
+        },
+        {
+          "title": "Free fishing weekend dates and restrictions",
+          "url": "https://www.saskatchewan.ca/residents/parks-culture-heritage-and-sport/hunting-trapping-and-angling/angling/anglers-extras"
         }
       ],
-      "checked": "2026-11-11",
+      "checked": "2026-11-14",
       "checkOfficial": "Confirm the final licence and habitat-certificate total in HAL. The separate angling overview displays lower habitat figures than the licence fee table."
     },
     {
@@ -1250,7 +1261,8 @@
       "keyRules": [
         "Carry the licence.",
         "Do not share or transfer a licence.",
-        "All children need their own salmon catch card to fish for salmon."
+        "All children need their own salmon catch card to fish for salmon.",
+        "Printed electronic licences do not need a signature. Sign other licence signature blocks."
       ],
       "howToBuy": "Buy online through Yukon Environment eServices, a Department of Environment office, or an authorized vendor.",
       "sources": [
@@ -1259,8 +1271,8 @@
           "url": "https://yukon.ca/en/outdoor-recreation-and-wildlife/fishing-and-boating/get-yukon-fishing-licence"
         }
       ],
-      "checked": "2026-11-11",
-      "checkOfficial": "Confirm tax treatment and the salmon card fee at purchase. No guide-client exemption was confirmed."
+      "checked": "2026-11-14",
+      "checkOfficial": "Confirm the salmon card fee and current salmon rules with Fisheries and Oceans Canada. The linked catch-card page redirects to the regional home page. Confirm any family-weekend exemption for your residency and dates."
     },
     {
       "id": "ca-national-parks",
@@ -1309,7 +1321,8 @@
       "guidedTrips": null,
       "keyRules": [
         "Confirm that your permit covers the park you plan to visit.",
-        "Check the park's open waters and aquatic invasive species restrictions."
+        "Check the park's open waters and aquatic invasive species restrictions.",
+        "Jasper prohibits felt-soled wading boots. Its Special Tactics and Water Preservation zones also prohibit waders and wading boots. Check the exact water before packing."
       ],
       "howToBuy": "Contact the park for its permit sales locations.",
       "sources": [
@@ -1326,8 +1339,8 @@
           "url": "https://www.gov.nt.ca/ecc/en/services/get-fishing-licence"
         }
       ],
-      "checked": "2026-11-11",
-      "checkOfficial": "The quoted prices and shared permit cover only the four named mountain parks. Confirm other parks' fees, sales methods, and permitted waters."
+      "checked": "2026-11-14",
+      "checkOfficial": "Banff lists the quoted prices for the four named mountain parks. Jasper lists additional park coverage; confirm acceptance with the destination park. Free park admission does not establish a fishing-permit exemption."
     },
     {
       "id": "mx-national",
@@ -1420,8 +1433,8 @@
           "url": "https://tramites.ebajacalifornia.gob.mx/ventanillaunica/tramites/pesca"
         }
       ],
-      "checked": "2026-11-11",
-      "checkOfficial": "Prices are the official Baja California 2026 schedule. Confirm marine-park zones and access with CONANP; the national permit does not establish park access."
+      "checked": "2026-11-14",
+      "checkOfficial": "The Baja California shop confirms the 2026 prices. Check CONAPESCA and CONANP for current shore, inland-water, and protected-area rules. The national document pages blocked this recheck; no free-fishing-day exemption was confirmed."
     },
     {
       "id": "ar-national",

@@ -1,0 +1,113 @@
+{
+  "date": "2026-11-14",
+  "jurisdictions": [
+    {
+      "id": "ca-quebec",
+      "checkedFields": "Published options and prices matched. Additional permits and exemptions reviewed; limitations below.",
+      "sources": [
+        {
+          "title": "Current Quebec licence fees and identification rules",
+          "url": "https://www.quebec.ca/tourisme-loisirs-sport/activites-sportives-et-de-plein-air/peche-sportive/permis"
+        },
+        {
+          "title": "Quebec licence rules and non-resident outfitter requirement",
+          "url": "https://www.quebec.ca/en/tourism-recreation-sport/sporting-and-outdoor-activities/sport-fishing/fishing-licence"
+        },
+        {
+          "title": "Online licence account",
+          "url": "https://www.quebec.ca/en/tourism-recreation-sport/sporting-and-outdoor-activities/my-hunting-fishing-account"
+        },
+        {
+          "title": "Quebec 2026 fishing festival and resident-only exemption",
+          "url": "https://www.quebec.ca/tourisme-loisirs-sport/activites-sportives-et-de-plein-air/peche-sportive/fete-peche"
+        }
+      ],
+      "limits": "Prices include taxes. Confirm salmon options, family exemptions, water-access fees, and zone 21 species rules for the exact trip."
+    },
+    {
+      "id": "ca-saskatchewan",
+      "checkedFields": "Published options and prices matched. Additional permits and exemptions reviewed; limitations below.",
+      "sources": [
+        {
+          "title": "Saskatchewan fishing licences",
+          "url": "https://www.saskatchewan.ca/residents/parks-culture-heritage-and-sport/hunting-trapping-and-angling/angling/buy-an-angling-licence"
+        },
+        {
+          "title": "Free fishing weekend dates and restrictions",
+          "url": "https://www.saskatchewan.ca/residents/parks-culture-heritage-and-sport/hunting-trapping-and-angling/angling/anglers-extras"
+        }
+      ],
+      "limits": "Confirm the final licence and habitat-certificate total in HAL. The separate angling overview displays lower habitat figures than the licence fee table."
+    },
+    {
+      "id": "ca-yukon",
+      "checkedFields": "Published options and prices matched. Additional permits and exemptions reviewed; limitations below.",
+      "sources": [
+        {
+          "title": "Yukon fishing licences",
+          "url": "https://yukon.ca/en/outdoor-recreation-and-wildlife/fishing-and-boating/get-yukon-fishing-licence"
+        }
+      ],
+      "limits": "Confirm the salmon card fee and current salmon rules with Fisheries and Oceans Canada. The linked catch-card page redirects to the regional home page. Confirm any family-weekend exemption for your residency and dates."
+    },
+    {
+      "id": "ca-national-parks",
+      "checkedFields": "Published options and prices matched. Additional permits and exemptions reviewed; limitations below.",
+      "sources": [
+        {
+          "title": "Parks Canada permit and youth requirements",
+          "url": "https://parks.canada.ca/pn-np/ab/jasper/activ/experience/ete-summer/peche-fishing"
+        },
+        {
+          "title": "Banff fees and four-park permit coverage",
+          "url": "https://www.parks.canada.ca/pn-np/ab/banff/visit/tarifs-fees"
+        },
+        {
+          "title": "Northern parks require separate permits",
+          "url": "https://www.gov.nt.ca/ecc/en/services/get-fishing-licence"
+        }
+      ],
+      "limits": "Banff lists the quoted prices for the four named mountain parks. Jasper lists additional park coverage; confirm acceptance with the destination park. Free park admission does not establish a fishing-permit exemption."
+    },
+    {
+      "id": "mx-national",
+      "checkedFields": "Published options and prices matched. Additional permits and exemptions reviewed; limitations below.",
+      "sources": [
+        {
+          "title": "CONAPESCA individual permit and shore exemption",
+          "url": "https://www.gob.mx/conapesca/es/documentos/conapesca-01-016-pesca-deportivo-recreativa"
+        },
+        {
+          "title": "Baja California official online permit shop",
+          "url": "https://sportfishing.bajacalifornia.gob.mx/"
+        },
+        {
+          "title": "Baja California individual permit requirement",
+          "url": "https://retys.bajacalifornia.gob.mx/Portal/TyS/1582"
+        },
+        {
+          "title": "Baja California Sur permit sales",
+          "url": "https://tramites.bcs.gob.mx/catX/venta-de-permisos-de-pesca-deportiva/"
+        },
+        {
+          "title": "CONANP Cabo Pulmo visitor rules",
+          "url": "https://www.gob.mx/conanp/documentos/parque-nacional-cabo-pulmo"
+        },
+        {
+          "title": "CONAPESCA sport fishing guide",
+          "url": "https://www.gob.mx/conapesca/documentos/guia-de-pesca-deportiva"
+        },
+        {
+          "title": "Baja California official 2026 permit prices and purchase page",
+          "url": "https://tramites.ebajacalifornia.gob.mx/ventanillaunica/tramites/pesca"
+        }
+      ],
+      "limits": "The Baja California shop confirms the 2026 prices. Check CONAPESCA and CONANP for current shore, inland-water, and protected-area rules. The national document pages blocked this recheck; no free-fishing-day exemption was confirmed."
+    }
+  ],
+  "limitations": [
+    "Mexico national documents returned HTTP 403; Baja California current price and permit page read.",
+    "Yukon catch-card link redirects. No new fee or family-weekend date asserted.",
+    "No general free-fishing-day exemption found for Canada national parks or Mexico. This is not proof that none exists."
+  ]
+}

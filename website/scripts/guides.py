@@ -218,6 +218,9 @@ def render_rich(guide, content, root, origin, path):
         if section.get('type') == 'ice-rental-worksheet':
             from ice_rental import render as render_ice_rental
             body += render_ice_rental()
+        if section.get('type') == 'ice-packing-worksheet':
+            from ice_packing import render as render_ice_packing
+            body += render_ice_packing()
         if section.get('type') == 'florida-license-planner':
             from florida_license import render as render_license_planner
             body += render_license_planner()
@@ -305,8 +308,13 @@ def install(pages, root, origin, add, trips, trip_card, intro, bread):
     ice_path = '/environments/ice-fishing/'
     if ice_path in pages:
         pages[ice_path]['body'] += '<section class="wrap section"><h2>Is this your first rental trip?</h2><p>Compare the guide time, transport, gear, and overnight supplies before you book.</p><a class="btn" href="/guides/minnesota-fish-house-rental-checklist/">Compare two fish-house rentals</a></section>'
-        pages[ice_path]['modified'] = '2026-11-13'
+        pages[ice_path]['modified'] = max(pages[ice_path].get('modified', DATE), '2026-11-13')
     by_id = {t['id']: t for t in trips}
+    minnesota = by_id.get('na-us-mn-001')
+    if minnesota and minnesota['canonicalPath'] in pages:
+        trip_page = pages[minnesota['canonicalPath']]
+        trip_page['body'] += '<section class="wrap panel"><h2>Planning a winter rental?</h2><p>First confirm the house, transport, and guide time. Then separate the operator’s supplies from your own bag.</p><ul><li><a href="/guides/minnesota-fish-house-rental-checklist/">Compare two rental quotes</a></li><li><a href="/guides/minnesota-ice-fishing-packing-list/">Build a day or overnight packing list</a></li><li><a href="/environments/ice-fishing/">Read the ice fishing guide</a></li></ul></section>'
+        trip_page['modified'] = '2026-11-14'
     for tid, guide in content['trips'].items():
         path = by_id[tid]['canonicalPath']
         pages[path].update(title=guide['title'] + ' | Castward', desc=guide['description'],
@@ -328,13 +336,22 @@ def install(pages, root, origin, add, trips, trip_card, intro, bread):
         pages[path]['published'] = guide.get('published', DATE)
     body = bread('Field guides') + intro('CHOOSE / PREPARE / GO', 'Fishing trip guides that answer the next question.', 'Compare a destination, choose your dates, and build a packing list around what your guide actually supplies.')
     body += '<section class="section"><div class="wrap"><h2>Start with your trip decision</h2><div class="article-grid">'
-    for guide in sorted(content['articles'], key=lambda g: not g['new']):
+    ordered_guides = sorted(content['articles'], key=lambda g: not g['new'])
+    for guide in ordered_guides:
         body += '<a class="article-card" href="/guides/' + guide['slug'] + '/"><span class="eyebrow">' + E(guide['category']) + '</span><h3>' + E(guide['title']) + '</h3><p>' + E(guide['description']) + '</p><span class="link">Read the guide ↗</span></a>'
     checked = [t for t in trips if t.get('review', {}).get('status') == 'source-checked']
     body += '</div><h2 class="spaced">Choose your fishing destination</h2><p>Compare the water, trip style, and season. Check current access and local rules before you travel.</p><div class="world-grid">'
     body += ''.join(trip_card(t) for t in sorted(checked, key=lambda t: (t['id'] not in content['trips'], t['country'], t['place'])))
     body += '</div><div class="panel spaced"><h2>Explore the atlas</h2><p>' + ' · '.join(link(u, text) for u, text in [('/trips/', 'All trip profiles'), ('/environments/', 'Fishing environments'), ('/seasons/', 'Seasonal evidence'), ('/trip-types/', 'Local trip types'), ('/glossary/', 'Fishing terms')]) + '</p></div></div></section>'
     add('/guides/', 'Fishing trip guides, seasons and packing lists | Castward', 'Plan a fishing trip with source-checked destination guides, charter comparisons, seasonal advice and practical packing lists from Castward.', body, 'guide-index')
+    if origin:
+        listing = {'@context': 'https://schema.org', '@type': 'ItemList',
+                   'name': 'Fishing trip and preparation guides',
+                   'numberOfItems': len(ordered_guides),
+                   'itemListElement': [{'@type': 'ListItem', 'position': i,
+                                        'name': g['title'], 'url': origin + '/guides/' + g['slug'] + '/'}
+                                       for i, g in enumerate(ordered_guides, 1)]}
+        pages['/guides/']['body'] += '<script type="application/ld+json">' + json.dumps(listing).replace('</', '<\\/') + '</script>'
     pages['/guides/']['modified'] = max(g.get('updated', DATE) for g in content['articles'])
     pages['/guides/']['guideStyle'] = True
     florida = pages.get('/destinations/florida-keys/')

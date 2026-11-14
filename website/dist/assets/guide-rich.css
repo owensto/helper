@@ -76,3 +76,14 @@
 
 .gr-cover .guide-hero picture{display:block;height:100%}
 .gr-cover-copy .guide-citations a:hover{color:#17362d}
+
+/* A packing decision remains readable on a phone and on paper. */
+.ice-packing>label{display:grid;gap:.5rem;max-width:24rem;margin:1.5rem 0}
+.ice-packing fieldset{border:1px solid var(--line,#ccd3ca);border-radius:12px;margin:1.5rem 0;padding:1rem}
+.ice-packing legend{padding:0 .5rem;font-weight:700}
+.packing-row{display:grid;grid-template-columns:minmax(0,1fr) 12rem;gap:1rem;align-items:center;padding:1rem 0;border-bottom:1px solid #dce1da}
+.packing-row:last-child{border-bottom:0}.packing-row small{display:block;margin-top:.3rem;line-height:1.5}
+.ice-packing select{max-width:100%;min-height:46px;padding:.65rem;border:1px solid #8b968a;border-radius:6px;background:#fff;color:#182b20;font:inherit}
+.ice-packing [hidden]{display:none}.packing-actions{display:flex;flex-wrap:wrap;gap:1rem}
+@media(max-width:600px){.packing-row{grid-template-columns:1fr;gap:.6rem}.packing-row select{width:100%}}
+@media print{.packing-actions{display:none}.packing-row{break-inside:avoid;grid-template-columns:1fr 12rem}.ice-packing fieldset{break-inside:auto}.ice-packing select{appearance:none;border:0;padding:0}}

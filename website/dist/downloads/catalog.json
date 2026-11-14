@@ -2960,7 +2960,7 @@
     "layers-rei": {
       "title": "REI: How to dress in layers",
       "url": "https://www.rei.com/learn/expert-advice/layering-basics.html",
-      "checked": "2026-11-13",
+      "checked": "2026-11-14",
       "scopeNote": "Base, insulation and shell roles; cotton and damp insulation.",
       "status": "text-inspected",
       "publisher": "REI",
@@ -3092,7 +3092,7 @@
     "smart-thermal": {
       "title": "Smartwool: Classic Thermal Merino crew",
       "url": "https://www.smartwool.com/en-us/products/mens-classic-thermal-merino-base-layer-crew-sw016349?variant=63206702874993",
-      "checked": "2026-11-13",
+      "checked": "2026-11-14",
       "scopeNote": "250 gsm pure merino, seam construction, care and $115 price.",
       "status": "text-inspected",
       "publisher": "Smartwool",
@@ -3334,7 +3334,7 @@
     "simms-fit": {
       "title": "Simms: Size and fit guide",
       "url": "https://www.simmsfishing.com/pages/size-fit-guide",
-      "checked": "2026-11-13",
+      "checked": "2026-11-14",
       "scopeNote": "Girth, inseam and bootie size measurements.",
       "status": "text-inspected",
       "publisher": "Simms",
@@ -3345,7 +3345,7 @@
     "simms-care": {
       "title": "Simms: Wader and gear care",
       "url": "https://www.simmsfishing.com/pages/wader-care",
-      "checked": "2026-11-13",
+      "checked": "2026-11-14",
       "scopeNote": "Rinse, dry, wash and storage instructions.",
       "status": "text-inspected",
       "publisher": "Simms",
@@ -3488,7 +3488,7 @@
     "columbia-fleece": {
       "title": "Columbia: Fast Trek II Full Zip Fleece",
       "url": "https://www.columbia.com/p/mens-fast-trek-ii-full-zip-fleece-1420421.html",
-      "checked": "2026-11-13",
+      "checked": "2026-11-14",
       "scopeNote": "Polyester microfleece and $65 price.",
       "status": "text-inspected",
       "publisher": "Columbia",
@@ -4269,7 +4269,7 @@
     "gr-cold": {
       "title": "National Weather Service: cold water",
       "url": "https://www.weather.gov/safety/coldwater",
-      "checked": "2026-11-13",
+      "checked": "2026-11-14",
       "status": "text-inspected",
       "type": "reference",
       "scopeNote": "Cold shock, loss of muscle control, and life jacket advice. No safe immersion time is inferred.",
@@ -4302,7 +4302,7 @@
     "gr-ice-care": {
       "title": "Icebreaker care guide",
       "url": "https://na.icebreaker.com/en-us/pages/caring-for-your-icebreaker",
-      "checked": "2026-11-13",
+      "checked": "2026-11-14",
       "status": "text-inspected",
       "type": "reference",
       "scopeNote": "Use the garment care label, avoid fabric softener, store clean and dry. No universal service-life estimate.",
@@ -4335,7 +4335,7 @@
     "gr-shell": {
       "title": "Patagonia Torrentshell 3L",
       "url": "https://www.patagonia.com/product/mens-torrentshell-3-layer-rain-jacket/85241.html",
-      "checked": "2026-11-13",
+      "checked": "2026-11-14",
       "status": "text-inspected",
       "type": "reference",
       "scopeNote": "Three-layer H2No shell, pit zips, adjustable hood; machine wash cold, tumble dry low, no fabric softener.",
@@ -4502,7 +4502,7 @@
       "shortTitle": "Fish house questions and packing",
       "title": "Minnesota Recreational Rentals — Fish house questions and packing",
       "url": "https://www.icefishmn.com/fish-house-faqs",
-      "checked": "2026-11-13",
+      "checked": "2026-11-14",
       "status": "source-checked",
       "scopeNote": "Operator-specific meeting arrangements, equipment requests, packing and cancellation terms.",
       "group": "Independent",
@@ -4513,7 +4513,7 @@
       "shortTitle": "Ice fishing trips and rentals",
       "title": "Minnesota Guide Service — Ice fishing trips and rentals",
       "url": "https://www.minnesotaguideservice.com/services/ice-fishing",
-      "checked": "2026-11-13",
+      "checked": "2026-11-14",
       "status": "source-checked",
       "scopeNote": "Day and sleeper formats; rental equipment add-ons differ from fully guided inclusions. No price recommendation.",
       "group": "Independent",
@@ -4524,7 +4524,7 @@
       "shortTitle": "Ice fishing and sleeper houses",
       "title": "Lakeroad Lodge — Ice fishing and sleeper houses",
       "url": "https://lakeroadlodge.com/ice-fishing-lake-of-the-woods/",
-      "checked": "2026-11-13",
+      "checked": "2026-11-14",
       "status": "source-checked",
       "scopeNote": "Guests bring bedding and tackle for sleeper houses; generator rental is separate.",
       "group": "Independent",
@@ -4535,7 +4535,7 @@
       "shortTitle": "Ice Castle rentals",
       "title": "FishTraxx — Ice Castle rentals",
       "url": "https://www.fishtraxx.com/ice-castle-fish-house-rentals.html",
-      "checked": "2026-11-13",
+      "checked": "2026-11-14",
       "status": "source-checked",
       "scopeNote": "Operator lists generator and fuel included, rods on request, electronics as rentals.",
       "group": "Independent",
@@ -4595,6 +4595,61 @@
       "shortTitle": "Learn to ice fish",
       "group": "Government/agency",
       "type": "reference"
+    },
+    "mn14-dnr": {
+      "title": "Learn to ice fish",
+      "url": "https://www.dnr.state.mn.us/gofishing/learn-ice-fish.html",
+      "publisher": "Minnesota DNR",
+      "shortTitle": "Learn to ice fish",
+      "group": "Government/agency",
+      "type": "official-agency",
+      "checked": "2026-11-14",
+      "status": "text-inspected",
+      "scopeNote": "Read expanded guidance in Orca. Layer choices, waterproof boots, rental equipment, offline regulations, and ice/CO cautions."
+    },
+    "mn14-jeff": {
+      "title": "Sleeper house questions",
+      "url": "https://iceominiums.com/faqs",
+      "publisher": "Jeff’s Ice-O-Miniums",
+      "shortTitle": "Sleeper house questions",
+      "group": "Independent",
+      "type": "operator",
+      "checked": "2026-11-14",
+      "status": "text-inspected",
+      "scopeNote": "Own rods and bedding; supplied minnows; indoor footwear; cookware. No fee or safety claim reused."
+    },
+    "mn14-river": {
+      "title": "Prepare for winter ice fishing",
+      "url": "https://riverbendresort.com/preparing-for-winter-ice-fishing-on-lake-of-the-woods/",
+      "publisher": "River Bend Resort",
+      "shortTitle": "Prepare for winter ice fishing",
+      "group": "Independent",
+      "type": "operator",
+      "checked": "2026-11-14",
+      "status": "text-inspected",
+      "scopeNote": "2026–27 sleeper provision list; own bedding, cookware and tackle; generator change. No opening date, fee, or ice threshold reused."
+    },
+    "mn14-service": {
+      "title": "Day and sleeper rentals",
+      "url": "https://www.minnesotaicefishhouserental.com/",
+      "publisher": "Minnesota Fishing Guide Service",
+      "shortTitle": "Day and sleeper rentals",
+      "group": "Independent",
+      "type": "operator",
+      "checked": "2026-11-14",
+      "status": "text-inspected",
+      "scopeNote": "Different day/sleeper inclusions, rental tackle, waste and cooking provision. No prices reproduced."
+    },
+    "mn14-angle": {
+      "title": "Ice trips",
+      "url": "https://anglenorth.com/ice-trips",
+      "publisher": "Angle North",
+      "shortTitle": "Ice trips",
+      "group": "Independent",
+      "type": "operator",
+      "checked": "2026-11-14",
+      "status": "text-inspected",
+      "scopeNote": "Bait and transport listed; rods/reels available for rental. No price or catch claim reproduced."
     },
     "species-e4b4ce359a5f": {
       "title": "Fishery source for Yakutat / Situk River",
@@ -187456,9 +187511,9 @@
       "Cook Islands",
       "Niue"
     ],
-    "sources": 1040,
+    "sources": 1045,
     "sourceInspection": {
-      "text-inspected": 201,
+      "text-inspected": 206,
       "search-excerpt-inspected": 136,
       "page-text-inspected": 19,
       "source-linked": 92,
