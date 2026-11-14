@@ -132,8 +132,8 @@ for h in HABITATS:
     body=bread(h['name'],('/environments/','Waters'))+intro('WATER GUIDE',E(h['name']),E(h['summary']))
     body+='<div class="wrap">'+review_line(len(ids))+'</div><section class="section article-section"><div class="wrap article-layout"><div class="article-main">'+evidence_block(h['evidence'])
     body+=''.join(f'<section class="prose-block"><h2>{E(s["title"])}</h2>'+''.join(f'<p>{E(x.strip())}</p>' for x in s["text"].split('\n\n') if x.strip())+'</section>' for s in h['sections'])
-    body+=refs_block(ids)+'</div><aside class="article-aside"><div class="panel"><span class="eyebrow">FIVE DECISIONS TO MAKE</span><ol class="decision-list">'+''.join(f'<li>{E(c)}</li>' for c in h['checklist'])+'</ol><p class="small">The environment narrows the question. A named water and seasonal assessment are still necessary.</p><a class="btn spaced" href="/trips/?'+urlencode({'habitat':h['name']})+'">Find matching trips ↗</a></div></aside></div></section>'
-    if links: body+='<section class="section soft"><div class="wrap"><div class="section-head"><div><span class="eyebrow">PUT THE ENVIRONMENT IN CONTEXT</span><h2>Related trip guides.</h2></div></div><div class="world-grid">'+''.join(trip_card(t) for t in links)+'</div></div></section>'
+    body+=refs_block(ids)+'</div><aside class="article-aside"><div class="panel"><span class="eyebrow">Before you go</span><ol class="decision-list">'+''.join(f'<li>{E(c)}</li>' for c in h['checklist'])+'</ol><p class="small">Choose a specific water, then check its season, access, and local rules.</p><a class="btn spaced" href="/trips/?'+urlencode({'habitat':h['name']})+'">Find matching trips ↗</a></div></aside></div></section>'
+    if links: body+='<section class="section soft"><div class="wrap"><div class="section-head"><div><span class="eyebrow">Choose a water</span><h2>Where can you try this?</h2></div></div><div class="world-grid">'+''.join(trip_card(t) for t in links)+'</div></div></section>'
     add('/environments/'+h['id']+'/',h['title']+' | Fishing Atlas',h['summary'],body,'article')
 
 # Local trip guides: attributed evidence -> seasonal context -> original planning -> specific kit.

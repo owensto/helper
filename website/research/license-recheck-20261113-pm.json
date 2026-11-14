@@ -1,0 +1,100 @@
+{
+  "checked": "2026-11-13",
+  "selection": "Five oldest checked dates, preserving catalog order for ties.",
+  "jurisdictions": [
+    {
+      "id": "ca-northwest-territories",
+      "sources": [
+        {
+          "title": "Northwest Territories fishing licences",
+          "url": "https://www.gov.nt.ca/ecc/en/services/get-fishing-licence"
+        }
+      ],
+      "notes": "Fees, licence options, additional permits and free-day information checked. No official free-day event found for NWT or Nunavut; no event inferred."
+    },
+    {
+      "id": "ca-nova-scotia",
+      "sources": [
+        {
+          "title": "General fishing licence requirements and fees",
+          "url": "https://www.novascotia.ca/apply-general-fishing-licence-sportfishing"
+        },
+        {
+          "title": "General and salmon licence services",
+          "url": "https://www.novascotia.ca/programs-and-services/sportfishing-licensing"
+        },
+        {
+          "title": "2026 free sportfishing weekends",
+          "url": "https://novascotia.ca/fish/activities-and-events/?wbdisable=true"
+        },
+        {
+          "title": "Atlantic salmon licence options and fees",
+          "url": "https://www.novascotia.ca/apply-salmon-fishing-licence-sportfishing"
+        },
+        {
+          "title": "Sportfishing weekend salmon exception",
+          "url": "https://novascotia.ca/just/regulations/regs/wifish.htm"
+        }
+      ],
+      "notes": "Fees, licence options, additional permits and free-day information checked. No official free-day event found for NWT or Nunavut; no event inferred."
+    },
+    {
+      "id": "ca-nunavut",
+      "sources": [
+        {
+          "title": "Nunavut licence and regulations page",
+          "url": "https://www.gov.nu.ca/en/environment-and-wildlife/sport-fishing-guide"
+        },
+        {
+          "title": "Nunavut Sport Fishing Guide 2026/27",
+          "url": "https://www.gov.nu.ca/sites/default/files/documents/2026-04/9622_25_Nunavut_Sport_Fishing_Guide_Final__ENG__apr1.pdf"
+        }
+      ],
+      "notes": "Fees, licence options, additional permits and free-day information checked. No official free-day event found for NWT or Nunavut; no event inferred."
+    },
+    {
+      "id": "ca-ontario",
+      "sources": [
+        {
+          "title": "Licence requirements for visitors from outside Canada",
+          "url": "https://www.ontario.ca/page/fishing-licence-non-residents-canada"
+        },
+        {
+          "title": "Official non-Canadian licence fee table",
+          "url": "https://www.ontario.ca/page/fishing-licence-fees-non-canadian-residents"
+        },
+        {
+          "title": "Licence requirements for Canadian residents",
+          "url": "https://www.ontario.ca/page/fishing-licence-ontario-and-canadian-residents"
+        },
+        {
+          "title": "2026 Ontario fishing rules",
+          "url": "https://www.ontario.ca/files/2025-12/mnr-2026-fishing-regulations-summary-en-2025-12-08.pdf"
+        },
+        {
+          "title": "Official Ontario 2026 licence shop fee table",
+          "url": "https://www.huntandfishontario.com/Home/LicenceFees"
+        },
+        {
+          "title": "Free family fishing dates and conditions",
+          "url": "https://www.ontario.ca/page/free-family-fishing"
+        }
+      ],
+      "notes": "Fees, licence options, additional permits and free-day information checked. No official free-day event found for NWT or Nunavut; no event inferred."
+    },
+    {
+      "id": "ca-prince-edward-island",
+      "sources": [
+        {
+          "title": "2026 angling licences and conservation charges",
+          "url": "https://www.princeedwardisland.ca/en/information/land-and-environment/angling-resources-and-information-centre"
+        },
+        {
+          "title": "Online purchase and licence instructions",
+          "url": "https://www.princeedwardisland.ca/en/service/buy-an-angling-licence-online"
+        }
+      ],
+      "notes": "Fees, licence options, additional permits and free-day information checked. No official free-day event found for NWT or Nunavut; no event inferred."
+    }
+  ]
+}

@@ -514,7 +514,7 @@
     "wool-soft": {
       "title": "Woolmark: Why merino wool is soft",
       "url": "https://www.woolmark.com/fibre/soft-merino-wool",
-      "checked": "2026-11-11",
+      "checked": "2026-11-13",
       "scopeNote": "Fibre diameter, flexibility and prickle.",
       "status": "text-inspected",
       "publisher": "Woolmark",
@@ -551,7 +551,7 @@
     "ice-weights": {
       "title": "Icebreaker: Choose your base layer",
       "url": "https://na.icebreaker.com/en-us/blogs/journal/icebreaker-baselayer-guide",
-      "checked": "2026-11-11",
+      "checked": "2026-11-13",
       "scopeNote": "150, 200, 240 and 320-plus fabric weight classes.",
       "status": "text-inspected",
       "publisher": "Icebreaker",
@@ -570,7 +570,7 @@
     "meriwool-250": {
       "title": "Meriwool: Mens Merino 250 long sleeve",
       "url": "https://www.meriwoollayers.com/products/mens-merino-250-base-layer-long-sleeve",
-      "checked": "2026-11-11",
+      "checked": "2026-11-13",
       "scopeNote": "250 gsm, 18.5-micron pure merino and $65 price.",
       "status": "text-inspected",
       "publisher": "Meriwool",
@@ -598,7 +598,7 @@
     "smart-thermal": {
       "title": "Smartwool: Classic Thermal Merino crew",
       "url": "https://www.smartwool.com/en-us/products/mens-classic-thermal-merino-base-layer-crew-sw016349?variant=63206702874993",
-      "checked": "2026-11-12",
+      "checked": "2026-11-13",
       "scopeNote": "250 gsm pure merino, seam construction, care and $115 price.",
       "status": "text-inspected",
       "publisher": "Smartwool",
@@ -617,7 +617,7 @@
     "ice-oasis": {
       "title": "Icebreaker: Merino 200 Oasis long sleeve crewe",
       "url": "https://na.icebreaker.com/en-us/products/mens-merino-200-oasis-long-sleeve-crewe-ib104365580",
-      "checked": "2026-11-11",
+      "checked": "2026-11-13",
       "scopeNote": "Pure merino, 200 weight, 18.9 microns, care and $120 price.",
       "status": "text-inspected",
       "publisher": "Icebreaker",
@@ -699,7 +699,7 @@
     "rws-update": {
       "title": "Textile Exchange: Standards policy updates",
       "url": "https://hub.textileexchange.org/home/site-wide-content/standards-policy-updates",
-      "checked": "2026-11-11",
+      "checked": "2026-11-13",
       "scopeNote": "2026 mulesed-restocking exception and approval requirements.",
       "status": "text-inspected",
       "publisher": "Textile Exchange",
@@ -707,13 +707,13 @@
       "group": "Independent"
     },
     "zq": {
-      "title": "ZQ: Grower standard",
-      "url": "https://www.discoverzq.com/_files/ugd/fdb7ce_8d764e66e96744b986afe90e321ac2bd.pdf",
-      "checked": "2026-11-11",
-      "scopeNote": "ZQ prohibition of mulesing and farm requirements.",
+      "title": "Zentera — ZQ certified wool",
+      "url": "https://www.zenterawool.com/zq-certified-wool",
+      "checked": "2026-11-13",
+      "scopeNote": "Official current certification overview: independent audits, animal welfare, traceability and prohibition of mulesing.",
       "status": "text-inspected",
-      "publisher": "ZQ",
-      "shortTitle": "Grower standard",
+      "publisher": "Zentera Wool Company",
+      "shortTitle": "ZQ certification",
       "group": "Independent"
     },
     "wader-types": {
@@ -746,7 +746,7 @@
     "frog-canyon": {
       "title": "Frogg Toggs: Canyon II stockingfoot chest wader",
       "url": "https://www.froggtoggs.com/products/canyon-ii-stockingfoot-breathable-chest-wader",
-      "checked": "2026-11-12",
+      "checked": "2026-11-13",
       "scopeNote": "Four-ply nylon, belt, stockingfeet and $165 price.",
       "status": "text-inspected",
       "publisher": "Frogg Toggs",
@@ -1515,7 +1515,7 @@
     "gr-orvis-size": {
       "title": "Orvis wader size charts",
       "url": "https://www.orvis.com/wader-sizing-information.html",
-      "checked": "2026-11-12",
+      "checked": "2026-11-13",
       "status": "text-inspected",
       "type": "reference",
       "scopeNote": "Men’s stockingfoot chart excerpt; body girth, pant inseam and US bootie ranges. Boot chart uses its own size conversion.",
@@ -1526,7 +1526,7 @@
     "gr-orvis-clearwater": {
       "title": "Orvis Clearwater waders",
       "url": "https://www.orvis.com/product/mens-clearwater-waders/2TZX.html",
-      "checked": "2026-11-12",
+      "checked": "2026-11-13",
       "status": "text-inspected",
       "type": "reference",
       "scopeNote": "Four-layer nylon fabric, stockingfoot design and waist conversion buckles; no price or lifetime claim.",
@@ -1537,7 +1537,7 @@
     "gr-g3": {
       "title": "Simms G3 Guide Stockingfoot",
       "url": "https://www.simmsfishing.com/products/g3-guide-stockingfoot",
-      "checked": "2026-11-12",
+      "checked": "2026-11-13",
       "status": "text-inspected",
       "type": "reference",
       "scopeNote": "G3 Guide model: three-layer GORE-TEX upper and four-layer GORE-TEX Pro lower. Do not apply these specs to G3 PRO.",
@@ -1548,7 +1548,7 @@
     "gr-simms-repair": {
       "title": "Simms pinhole repair",
       "url": "https://www.simmsfishing.com/blogs/the-plug/extend-the-life-of-the-unsung-hero-of-fishing-gear",
-      "checked": "2026-11-12",
+      "checked": "2026-11-13",
       "status": "text-inspected",
       "type": "reference",
       "scopeNote": "Inside-out alcohol test for pinholes, small Aquaseal applications, at least 24 hours before use; fabric pinholes only.",
@@ -1559,7 +1559,7 @@
     "gr-gearaid": {
       "title": "GEAR AID wader repair",
       "url": "https://www.gearaid.com/blogs/learn/repair-waders-how-to",
-      "checked": "2026-11-12",
+      "checked": "2026-11-13",
       "status": "text-inspected",
       "type": "reference",
       "scopeNote": "Cleaning, patches and adhesive repair. Adhesive cure time and patch method depend on the product and repair.",
@@ -1570,7 +1570,7 @@
     "gr-repair-kit": {
       "title": "GEAR AID Aquaseal FD Repair Kit",
       "url": "https://www.gearaid.com/products/aquaseal-repair-kit",
-      "checked": "2026-11-12",
+      "checked": "2026-11-13",
       "status": "text-inspected",
       "type": "reference",
       "scopeNote": "Aquaseal FD adhesive, repair patches and applicator; follow current insert and wader maker instructions.",
@@ -1581,7 +1581,7 @@
     "gr-wading": {
       "title": "Orvis safe wading equipment",
       "url": "https://www.orvis.com/what-gear-is-important-to-have-for-safe-wading.html",
-      "checked": "2026-11-12",
+      "checked": "2026-11-13",
       "status": "text-inspected",
       "type": "reference",
       "scopeNote": "Wading belt and staff use; these do not make a dangerous crossing safe.",
@@ -1603,7 +1603,7 @@
     "gr-felt": {
       "title": "Alaska Fish and Game: felt-sole rule",
       "url": "https://www.adfg.alaska.gov/static/species/nonnative/invasive/pdfs/felt_soled_waders_faq.pdf",
-      "checked": "2026-11-11",
+      "checked": "2026-11-13",
       "status": "text-inspected",
       "type": "reference",
       "scopeNote": "Felt or fibrous soles prohibited for sport fishing in Alaska fresh waters. The FAQ excludes saltwater and personal-use fisheries.",
@@ -1614,7 +1614,7 @@
     "gr-smart-guarantee": {
       "title": "Smartwool US guarantee",
       "url": "https://www.smartwool.com/en-us/pages/our-guarantee",
-      "checked": "2026-11-11",
+      "checked": "2026-11-13",
       "status": "text-inspected",
       "type": "reference",
       "scopeNote": "Two-year satisfaction guarantee; purchase eligibility, authorized retailer and claim conditions apply.",
@@ -1636,7 +1636,7 @@
     "gr-darn": {
       "title": "Darn Tough Hiker Micro Crew 1466",
       "url": "https://darntough.com/products/mens-merino-wool-hiker-micro-crew-cushioned-midweight-hiking-socks",
-      "checked": "2026-11-11",
+      "checked": "2026-11-13",
       "status": "text-inspected",
       "type": "reference",
       "scopeNote": "Merino blend, micro crew, midweight cushion model; size and color can affect listed fiber percentages.",
@@ -1647,7 +1647,7 @@
     "gr-darn-guarantee": {
       "title": "Darn Tough lifetime guarantee",
       "url": "https://darntough.com/pages/our-unconditional-lifetime-guarantee",
-      "checked": "2026-11-11",
+      "checked": "2026-11-13",
       "status": "text-inspected",
       "type": "reference",
       "scopeNote": "Lifetime sock guarantee covers wear and inadvertent damage. Seconds and irregulars are excluded. Resizing or dyeing voids the warranty.",
@@ -1852,6 +1852,56 @@
       "status": "source-checked",
       "scopeNote": "Operator lists generator and fuel included, rods on request, electronics as rentals.",
       "group": "Independent"
+    },
+    "pm-orvis-bootfoot": {
+      "title": "Orvis — Pro Tips: Bootfoot or Stockingfoot Waders?",
+      "url": "https://news.orvis.com/fly-fishing/pro-tips-bootfoot-stockingfoot-waders",
+      "checked": "2026-11-13",
+      "status": "checked",
+      "scopeNote": "Separate boots support walking and fit adjustment; bootfoot options for cold, stationary use. No universal size or temperature rating.",
+      "publisher": "Orvis",
+      "shortTitle": "Bootfoot or stockingfoot waders",
+      "group": "Manufacturer"
+    },
+    "pm-mn-travel": {
+      "title": "Minnesota DNR — Traveling on Ice",
+      "url": "https://www.dnr.state.mn.us/safety/ice/travel.html",
+      "checked": "2026-11-13",
+      "scopeNote": "Ice assessment, accessible ice picks, flotation and escape preparation.",
+      "status": "checked",
+      "publisher": "Minnesota DNR",
+      "shortTitle": "Travel on ice",
+      "group": "Government/agency"
+    },
+    "pm-mn-ice": {
+      "title": "Minnesota DNR — Learn to Ice Fish",
+      "url": "https://www.dnr.state.mn.us/gofishing/learn-ice-fish.html",
+      "checked": "2026-11-13",
+      "scopeNote": "Ice fishing locations, mobility, timing, clothing and shelter hazards.",
+      "status": "checked",
+      "publisher": "Minnesota DNR",
+      "shortTitle": "Ice fishing",
+      "group": "Government/agency"
+    },
+    "pm-ny-ice": {
+      "title": "New York State DEC — Learn How to Ice Fish",
+      "url": "https://dec.ny.gov/things-to-do/freshwater-fishing/learn-to-fish/tips-skills/how-to-ice-fish",
+      "checked": "2026-11-13",
+      "scopeNote": "Jigs, bait, tip-ups, clothing and variable ice conditions.",
+      "status": "checked",
+      "publisher": "New York DEC",
+      "shortTitle": "Ice fishing",
+      "group": "Government/agency"
+    },
+    "pm-mn-first": {
+      "title": "Minnesota DNR — Learn to ice fish",
+      "url": "https://www.dnr.state.mn.us/gofishing/learn-ice-fish.html",
+      "checked": "2026-11-13",
+      "status": "checked",
+      "scopeNote": "Beginner equipment, waterproof boots, rental shelters, lake information and regulations.",
+      "publisher": "Minnesota DNR",
+      "shortTitle": "Learn to ice fish",
+      "group": "Government/agency"
     }
   },
   "trips": {
@@ -5658,7 +5708,7 @@
     {
       "slug": "merino-wool-fishing-base-layers",
       "title": "A warmer start. A better base.",
-      "description": "Merino for fishing, without the guesswork: fabric weights, fit, care, and a few useful picks for cool mornings.",
+      "description": "Choose 200 or 250 gsm merino for your fishing trip. Compare fabric weight, fit, care labels, and layers for a river walk or a cold, still session.",
       "category": "GEAR / MERINO WOOL",
       "destination": "na-us-ak-019",
       "sections": [
@@ -5699,7 +5749,7 @@
         },
         {
           "id": "weight",
-          "title": "Two numbers. Two different jobs.",
+          "title": "What do gsm and microns tell you?",
           "sources": [
             "wool-soft",
             "meriwool-250",
@@ -5748,6 +5798,72 @@
           ]
         },
         {
+          "id": "weight-choice",
+          "title": "Should you choose 200 or 250 gsm for fishing?",
+          "sources": [
+            "ice-weights",
+            "ice-oasis",
+            "smart-thermal",
+            "layers-rei"
+          ],
+          "paragraphs": [
+            "Start with how much you move, then check the whole outfit. Icebreaker lists 200+ gsm as lightweight and 240+ gsm as midweight; those are fabric categories, not fishing temperature limits. The table below is a packing starting point, not a warmth guarantee."
+          ],
+          "table": {
+            "heads": [
+              "Trip example",
+              "Base to try",
+              "What to check over it"
+            ],
+            "rows": [
+              [
+                "Walk to several river pools",
+                "Around 200 g/m², or your existing synthetic base",
+                "Carry an insulating layer for stops; vent before you sweat."
+              ],
+              [
+                "Stand at one cold river spot",
+                "Compare 250 g/m² with your lighter base",
+                "Check movement under fleece, waders, and a shell."
+              ],
+              [
+                "Fish in a heated rental house",
+                "A base that stays comfortable indoors",
+                "Keep outdoor layers and waterproof boots ready for the return."
+              ],
+              [
+                "Fish outside with little movement",
+                "Compare a heavier base plus insulation",
+                "Check wind protection, dry spares, and the exit plan."
+              ]
+            ]
+          },
+          "callouts": [
+            {
+              "kind": "tip",
+              "title": "Compare fabric weight, not shirt weight",
+              "text": "A 250 g/m² fabric has 25% more mass per square metre than a 200 g/m² fabric. That calculation does not mean 25% more warmth; knit, fit, moisture, and the other layers differ."
+            }
+          ],
+          "cards": [
+            {
+              "title": "Build the full clothing system",
+              "text": "Match the base, insulation, and shell to the walk and the stop.",
+              "url": "/guides/fishing-layering-system-guide/"
+            },
+            {
+              "title": "Check winter boot fit",
+              "text": "Try socks inside the wader booties and the boots together.",
+              "url": "/guides/fishing-waders-buying-guide/"
+            },
+            {
+              "title": "Prepare for a rental house",
+              "text": "Separate personal clothing from operator-supplied equipment.",
+              "url": "/guides/minnesota-fish-house-rental-checklist/"
+            }
+          ]
+        },
+        {
           "id": "blends",
           "title": "Pure wool or a blend?",
           "sources": [
@@ -5768,7 +5884,7 @@
         },
         {
           "id": "fit",
-          "title": "Check the fit before the forecast",
+          "title": "How should a merino base layer fit?",
           "sources": [
             "smart-thermal",
             "ice-oasis"
@@ -5797,7 +5913,7 @@
         },
         {
           "id": "standards",
-          "title": "What the wool labels mean",
+          "title": "What do RWS and ZQ labels mean?",
           "sources": [
             "rws-update",
             "zq"
@@ -5816,7 +5932,7 @@
               ],
               [
                 "ZQ",
-                "A grower standard with animal-welfare and traceability requirements; mulesing is prohibited from entry.",
+                "A grower standard with animal-welfare and traceability requirements; mulesing is prohibited.",
                 "That every item from a brand uses certified wool."
               ],
               [
@@ -5839,7 +5955,7 @@
         },
         {
           "id": "care",
-          "title": "Care guide: keep the good feel",
+          "title": "How do you wash and dry merino?",
           "sources": [
             "gr-ice-care",
             "ice-oasis",
@@ -5873,7 +5989,7 @@
         },
         {
           "id": "shopping-list",
-          "title": "Choose a base. Add a good sock.",
+          "title": "Which merino layers are worth comparing?",
           "sources": [
             "meriwool-250",
             "smart-thermal",
@@ -5885,7 +6001,7 @@
         },
         {
           "id": "guarantees",
-          "title": "Read the guarantee with the receipt",
+          "title": "What does the guarantee cover?",
           "sources": [
             "gr-smart-guarantee",
             "gr-darn-guarantee"
@@ -5926,12 +6042,26 @@
         {
           "q": "Does a premium base layer mean more warmth?",
           "a": "No. Compare fabric weight and construction first. The 200 Oasis is lighter than the 250 gsm crews here."
+        },
+        {
+          "q": "Is 250 gsm merino 25% warmer than 200 gsm?",
+          "a": "No. The numbers describe fabric mass per square metre. A 250 gsm fabric has 25% more mass per unit area, but that is not a measured increase in warmth."
+        },
+        {
+          "q": "Do I need a heavier base layer inside a heated fish house?",
+          "a": "Choose a base that feels comfortable indoors and keep insulation and a shell available for outside. Confirm the heating arrangement with the operator; pack for the trip back as well as the time in the house."
+        },
+        {
+          "q": "Does 200 gsm have a fixed winter temperature limit?",
+          "a": "No. Fabric weight alone cannot set a useful temperature limit. Activity, wind, moisture, fit, and the rest of your clothing system change the result."
         }
       ],
       "relatedTrips": [],
       "relatedGuides": [
         "fishing-layering-system-guide",
-        "fishing-waders-buying-guide"
+        "fishing-waders-buying-guide",
+        "fishing-gear-quality-tiers",
+        "minnesota-fish-house-rental-checklist"
       ],
       "reel": null,
       "regionPath": "/trips/",
@@ -5941,12 +6071,12 @@
       "plannerNote": "Add a dry spare base layer and the socks that fit your fishing footwear.",
       "revision": "Rebuilt with original guide imagery, checked sources, concise tables and practical steps.",
       "rich": true,
-      "updated": "2026-11-11",
+      "updated": "2026-11-13",
       "hero": {
         "name": "merino",
         "alt": "An angler in a charcoal merino base layer beside a misty river at first light."
       },
-      "quickAnswer": "Smartwool is my pick for the best 100% merino wool brand. Its Classic Thermal crew has 250 g/m² fabric and flatlock seams for a warm base layer. Check the label: other Smartwool lines use blends.",
+      "quickAnswer": "Choose a lighter merino base for a long walk and compare heavier fabric for cold, quiet sessions. Smartwool is my pick for the best 100% merino wool brand: its Classic Thermal crew uses 250 g/m² fabric and flatlock seams. Add insulation and a shell for the conditions; fabric weight is not a temperature rating.",
       "facts": [
         {
           "label": "Look at",
@@ -5962,13 +6092,16 @@
         }
       ],
       "quickSources": [
-        "smart-thermal"
-      ]
+        "smart-thermal",
+        "ice-weights"
+      ],
+      "answerFirst": true,
+      "published": "2026-11-10"
     },
     {
       "slug": "fishing-waders-buying-guide",
       "title": "Fishing waders: fit, types and winter boot checks",
-      "description": "Choose fishing waders by coverage, fit, and the layers you will wear. Stockingfoot waders need separate wading boots; bootfoot pairs include the boots. Before a cold-water trip, try the full outfit together. Check toe room, knee movement, and seams before you decide that a thicker sock is the answer.",
+      "description": "Compare bootfoot and stockingfoot waders for winter fishing, check the fit with socks, and choose the right layers without crowding your boots.",
       "category": "GEAR / WADERS",
       "destination": "na-us-ak-019",
       "sections": [
@@ -6042,10 +6175,11 @@
         },
         {
           "id": "feet",
-          "title": "Bootfoot or stockingfoot?",
+          "title": "Bootfoot or stockingfoot for winter fishing?",
           "sources": [
             "gr-orvis-size",
-            "simms-fit"
+            "simms-fit",
+            "pm-orvis-bootfoot"
           ],
           "pros": [
             "Stockingfoot: choose a separate boot for your foot shape and river approach.",
@@ -6054,7 +6188,39 @@
           "cons": [
             "Stockingfoot needs a separate boot purchase and space for the neoprene sock.",
             "Bootfoot ties your body fit to the available attached boot sizes."
-          ]
+          ],
+          "paragraphs": [
+            "Choose for the walk as well as the time in the water. Orvis favors separate wading boots for longer approaches and notes the cold-weather advantages of bootfoot waders. Compare the actual insulation, fit, and sole on the pair you plan to wear."
+          ],
+          "table": {
+            "heads": [
+              "Your trip",
+              "Start by comparing",
+              "Check before you commit"
+            ],
+            "rows": [
+              [
+                "Long walk between river spots",
+                "Stockingfoot waders with separate boots",
+                "Try the boots over the wader booties and your fishing socks."
+              ],
+              [
+                "Short approach; long, cold stops",
+                "Bootfoot waders",
+                "Check the boot insulation and fit; an attached boot is not automatically insulated."
+              ],
+              [
+                "Sand or beach fishing",
+                "Bootfoot waders",
+                "Check grip and water depth; plan a route away from waves and current."
+              ],
+              [
+                "Travel with limited bag space",
+                "Stockingfoot waders and compact boots",
+                "Include both pieces when you compare luggage weight."
+              ]
+            ]
+          }
         },
         {
           "id": "measure",
@@ -6306,6 +6472,29 @@
           ]
         },
         {
+          "id": "ice-or-wading",
+          "title": "Can you use waders instead of ice-fishing boots?",
+          "paragraphs": [
+            "Do not treat river waders as an ice-safety system. For an ice trip, start with waterproof insulated boots, dry spare socks, and the flotation and rescue equipment appropriate to your route. Ask the operator about the walk, slush, and return transport before you pack."
+          ],
+          "sources": [
+            "pm-mn-first",
+            "pm-mn-travel"
+          ],
+          "cards": [
+            {
+              "title": "Plan an ice trip",
+              "text": "Check the route, personal gear, and first-trip options.",
+              "url": "/environments/ice-fishing/"
+            },
+            {
+              "title": "Compare rental inclusions",
+              "text": "Write down the clothing and equipment each operator supplies.",
+              "url": "/guides/minnesota-fish-house-rental-checklist/"
+            }
+          ]
+        },
+        {
           "id": "shopping-list",
           "title": "Three pairs worth comparing",
           "sources": [
@@ -6337,13 +6526,22 @@
         {
           "q": "Can extra socks fix a poor boot fit?",
           "a": "Do not use extra socks to solve an already cramped fit. Try the complete outfit and change the size or layers if you cannot move comfortably."
+        },
+        {
+          "q": "Are bootfoot waders always warmer than stockingfoot waders?",
+          "a": "No single rule covers every pair. Orvis identifies bootfoot advantages in cold conditions, but insulation, socks, fit, and activity still matter. Compare the actual boots rather than the style name alone."
+        },
+        {
+          "q": "Do waders replace an ice-fishing flotation suit?",
+          "a": "No. Waders keep water out during their intended use; they do not replace suitable flotation or the route checks and rescue equipment needed for an ice trip."
         }
       ],
       "relatedTrips": [],
       "relatedGuides": [
         "fishing-layering-system-guide",
         "merino-wool-fishing-base-layers",
-        "fishing-gear-quality-tiers"
+        "fishing-gear-quality-tiers",
+        "minnesota-fish-house-rental-checklist"
       ],
       "reel": null,
       "regionPath": "/trips/",
@@ -6353,7 +6551,7 @@
       "plannerNote": "Record the wader size, boot size and permitted sole before you buy or reserve equipment.",
       "revision": "Rebuilt with original guide imagery, checked sources, concise tables and practical steps.",
       "rich": true,
-      "updated": "2026-11-12",
+      "updated": "2026-11-13",
       "hero": {
         "name": "waders",
         "alt": "An angler in olive chest waders with a belt and staff in a shallow river."
@@ -6376,7 +6574,9 @@
       "quickSources": [
         "simms-fit",
         "gr-orvis-size"
-      ]
+      ],
+      "answerFirst": true,
+      "published": "2026-11-10"
     },
     {
       "slug": "fishing-layering-system-guide",
@@ -9347,5 +9547,242 @@
         "what-to-bring-on-a-guided-fishing-trip"
       ]
     }
-  ]
+  ],
+  "waters": {
+    "ice-fishing": {
+      "title": "Ice fishing",
+      "description": "Plan a first ice-fishing trip: compare a guide with a rental house, check the route, pack dry layers, and learn a simple panfish setup.",
+      "category": "WATERS / ICE FISHING",
+      "updated": "2026-11-13",
+      "published": "2026-11-11",
+      "rich": true,
+      "answerFirst": true,
+      "hero": {
+        "route": "/environments/ice-fishing/",
+        "alt": "Anglers and a shelter on a snow-covered lake."
+      },
+      "quickAnswer": "For a first ice-fishing trip, choose an experienced companion, a guided session, or a rental with clearly stated support. Check current access and the full route before stepping onto ice. Bring dry layers, waterproof insulated boots, and accessible rescue equipment. Confirm the licence, lake rules, tackle, and return transport before you leave.",
+      "quickSources": [
+        "pm-mn-first",
+        "pm-mn-travel"
+      ],
+      "facts": [
+        {
+          "label": "First decision",
+          "value": "Guide, day house, or sleeper"
+        },
+        {
+          "label": "Before travel",
+          "value": "Local access and route check"
+        },
+        {
+          "label": "Personal kit",
+          "value": "Dry layers and insulated boots"
+        }
+      ],
+      "sections": [
+        {
+          "id": "first-trip",
+          "title": "Should your first ice trip use a guide or a rental house?",
+          "sources": [
+            "pm-mn-first"
+          ],
+          "paragraphs": [
+            "Start by deciding which parts you want someone else to handle. A rental house can reduce the equipment you need, but a house booking alone does not tell you how much instruction you get. Ask for the service details in writing before you choose."
+          ],
+          "table": {
+            "heads": [
+              "Option",
+              "Useful when",
+              "Ask before booking"
+            ],
+            "rows": [
+              [
+                "Guided session",
+                "You want help with tackle, depth, and bites",
+                "Will the guide stay with you, or check in at intervals?"
+              ],
+              [
+                "Heated day-house rental",
+                "You want shelter without an overnight stay",
+                "Are rods, bait, transport, and help included?"
+              ],
+              [
+                "Sleeper-house rental",
+                "You want an overnight trip",
+                "What bedding, water, toilet, ventilation, and emergency contact arrangements apply?"
+              ],
+              [
+                "Trip with an experienced friend",
+                "You can borrow the large equipment",
+                "Who checks the route, brings rescue gear, and decides when to leave?"
+              ]
+            ]
+          },
+          "callouts": [
+            {
+              "kind": "tip",
+              "title": "Choose a short first outing",
+              "text": "Leave room to change the plan if someone gets cold, the access changes, or the fishing does not hold their interest. A shorter session also makes it easier to learn one setup before adding more gear."
+            }
+          ]
+        },
+        {
+          "id": "route",
+          "title": "How do you check the route before you fish?",
+          "paragraphs": [
+            "Start with a lake you know and an experienced local ice angler. Check recent conditions, access restrictions, and the forecast.",
+            "Inspect and measure the ice as you travel; one hole does not describe the whole route. Stay away from current, inlets, outlets, pressure ridges, and aerated water.",
+            "Snow can hide weak areas. Tracks and other anglers are not proof that your route will support you.",
+            "Carry accessible ice picks, a throw rope, and a charged phone protected from water. Wear suitable flotation for travel on foot.",
+            "Tell someone the location and return time, and go with a partner. Keep a clear way back to shore.",
+            "If the ice changes underfoot or the weather threatens that route, leave. Treat local thickness guidance as a minimum condition to assess, never as a promise of safety."
+          ],
+          "sources": [
+            "pm-mn-travel"
+          ]
+        },
+        {
+          "id": "pack",
+          "title": "What should you bring on your first ice-fishing trip?",
+          "sources": [
+            "pm-mn-first",
+            "pm-mn-travel"
+          ],
+          "table": {
+            "heads": [
+              "Bring or confirm",
+              "Personal check",
+              "Operator question"
+            ],
+            "rows": [
+              [
+                "Clothing",
+                "Dry layers, waterproof insulated boots, spare gloves and socks",
+                "How far is the walk, and what is the return transport?"
+              ],
+              [
+                "Fishing equipment",
+                "A rod and rig suited to the target, or a confirmed rental",
+                "Are bait, tackle, a scoop, and help with the rig included?"
+              ],
+              [
+                "Route and rescue gear",
+                "Accessible picks, a throw rope, communication, suitable flotation for travel on foot",
+                "Who checks today’s route and handles a change of plan?"
+              ],
+              [
+                "Licence and rules",
+                "The right licence and the exact lake rules",
+                "Which water and species will we fish?"
+              ]
+            ]
+          },
+          "cards": [
+            {
+              "title": "Minnesota licence choices",
+              "text": "Check the visitor option and any extra requirements.",
+              "url": "/fishing-licenses/us-minnesota/"
+            },
+            {
+              "title": "Clothing for the walk and the stop",
+              "text": "Plan the whole layer system.",
+              "url": "/guides/fishing-layering-system-guide/"
+            },
+            {
+              "title": "Merino weights compared",
+              "text": "Match fabric and activity without a temperature promise.",
+              "url": "/guides/merino-wool-fishing-base-layers/"
+            },
+            {
+              "title": "Compare two rentals",
+              "text": "Use the printable worksheet from the morning guide.",
+              "url": "/guides/minnesota-fish-house-rental-checklist/"
+            }
+          ]
+        },
+        {
+          "id": "depth",
+          "title": "Where should you start looking below the ice?",
+          "paragraphs": [
+            "Use a depth map to choose a weed edge, a point, or a break into deeper water. Pick a manageable area on the checked route.",
+            "Drill a few holes across the change in depth, then keep the loose ice clear. Measure the depth at each hole with your lure or a sounder.",
+            "Note where the weeds end and the bottom drops.",
+            "For panfish, start near remaining vegetation or a nearby deeper edge. Search above the bottom as well as close to it; fish can suspend.",
+            "A sonar unit helps show fish and your jig, but careful depth changes still teach you without one. Give each hole a fair try, then move within the assessed area if nothing happens.",
+            "Keep a productive hole quiet. Repeated drilling beside another angler can disturb both the fish and the day."
+          ],
+          "sources": [
+            "pm-mn-ice",
+            "pm-ny-ice"
+          ]
+        },
+        {
+          "id": "jig",
+          "title": "How do you work a jig for panfish?",
+          "paragraphs": [
+            "A short rod, light line, and a small jig make a useful panfish setup. Add a tiny soft plastic or a permitted piece of bait.",
+            "Lower it to the chosen depth, then use small lifts and pauses. Watch the line and rod tip.",
+            "Some bites pull down; others remove weight as a fish lifts the jig. Raise the lure slowly if a fish follows but stops short.",
+            "For walleye or larger trout, use a jigging spoon or other lure sized to the target. Avoid one heavy, constant pumping motion.",
+            "Try a lift, a fall under control, and a pause. Where tip-ups are legal, set an allowed bait at a measured depth and attend the gear closely.",
+            "Check local line and hook limits before setting more holes. Keep spare rigs ready so cold fingers spend less time tying knots."
+          ],
+          "sources": [
+            "pm-ny-ice"
+          ]
+        },
+        {
+          "id": "warm",
+          "title": "How do you stay warm in and outside a shelter?",
+          "paragraphs": [
+            "Wear dry layers and waterproof insulated boots. Carry spare gloves because bait, slush, and fish quickly wet the first pair.",
+            "Open layers before hard work, then close them when you stop. A small pad under your feet can make a stationary session more comfortable.",
+            "Keep warm drinks and food accessible, and shorten the trip if anyone becomes cold or tired.",
+            "A shelter blocks wind, but heaters need proper ventilation and the manufacturer’s clearances. Use suitable carbon monoxide protection with fuel-burning equipment.",
+            "Keep the exit free of tackle and loose line. Early and late light can be productive, so organize the return before darkness hides the route.",
+            "Follow local rules for shelter removal and marking large holes. Remove bait, litter, and line when you leave.",
+            "Keep released fish out of freezing air as briefly as possible."
+          ],
+          "sources": [
+            "pm-mn-first",
+            "pm-mn-ice"
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Do you need to buy an auger for your first ice trip?",
+          "a": "Not if an operator or companion supplies one. Confirm who drills the holes and what happens if you need to move before you buy large equipment."
+        },
+        {
+          "q": "Does a heated fish house include a guide?",
+          "a": "Do not assume it does. Ask whether someone stays with you, gives an initial lesson, or only checks in. Compare that answer separately from the house and transport."
+        },
+        {
+          "q": "Can one ice measurement prove that the whole lake is safe?",
+          "a": "No. Ice varies across a lake and changes with conditions. Check the full route repeatedly and follow local access restrictions. Other tracks do not establish safety."
+        },
+        {
+          "q": "What boots should you pack for ice fishing?",
+          "a": "Pack waterproof insulated boots suited to the conditions, with the socks you will actually wear. Carry dry spare socks. River waders do not replace appropriate flotation or rescue gear."
+        },
+        {
+          "q": "Do you need a Minnesota fishing licence in a rental house?",
+          "a": "Check your own licence requirement and any stated exemption. A house rental does not itself establish a personal licence exemption. Check the official rules for the exact water and species."
+        },
+        {
+          "q": "Can a beginner catch panfish without sonar?",
+          "a": "Yes, sonar is not required to try the method. Measure the depth, work a small jig at different levels, and watch the line. Sonar can help show fish and the lure, but it cannot promise a bite."
+        }
+      ],
+      "relatedGuides": [
+        "minnesota-fish-house-rental-checklist",
+        "fishing-layering-system-guide",
+        "merino-wool-fishing-base-layers",
+        "fishing-waders-buying-guide"
+      ],
+      "nextStep": "Choose the help you need, then confirm the access, gear, and return plan before you travel."
+    }
+  }
 }

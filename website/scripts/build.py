@@ -204,6 +204,8 @@ from premium_motion import install as install_premium_motion
 install_premium_motion(pages, ROOT, TRIPS, featured, trip_card)
 from species_glossary import install as install_species_glossary
 install_species_glossary(pages, ROOT, add, TRIPS, DATA)
+from videos import install_shorts
+install_shorts(pages, ROOT)
 from trip_styles import install as install_trip_styles
 TRIP_STYLES = install_trip_styles(pages, ROOT, CONFIG['siteUrl'], add, TRIPS, DATA['destinations'])
 from interactive_atlas import install as install_atlas

@@ -580,6 +580,12 @@
           "when": "An NWT licence is not valid in a national park.",
           "price": null,
           "currency": "CAD"
+        },
+        {
+          "name": "Edéhzhíe National Wildlife Area permit",
+          "when": "Required in addition to an NWT sport fishing licence inside the wildlife area.",
+          "price": null,
+          "currency": "CAD"
         }
       ],
       "saltwater": null,
@@ -596,7 +602,7 @@
           "url": "https://www.gov.nt.ca/ecc/en/services/get-fishing-licence"
         }
       ],
-      "checked": "2026-11-11",
+      "checked": "2026-11-13",
       "checkOfficial": "Listed fees include GST. Confirm the youth boundary with the department: its page uses inconsistent wording around age 16. Saltwater coverage and guide-client exemptions were not confirmed."
     },
     {
@@ -615,7 +621,8 @@
       ],
       "exemptions": [
         "Children aged 15 and younger need no general licence.",
-        "Anglers aged 16 or 17 receive a free general licence."
+        "Anglers aged 16 or 17 receive a free general licence.",
+        "The 2026 general-licence-free weekends were February 14–16 and June 6–7. Salmon licensing and all other fishing rules still applied."
       ],
       "options": [
         {
@@ -639,6 +646,30 @@
           "who": "any",
           "duration": "April 1 to March 31",
           "price": 0,
+          "currency": "CAD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Visitor Atlantic salmon season, age 18+",
+          "who": "non-resident",
+          "duration": "2026 salmon season, June 1–October 31",
+          "price": 156.08,
+          "currency": "CAD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Visitor Atlantic salmon 7-day, age 18+",
+          "who": "non-resident",
+          "duration": "7 consecutive days within the open season",
+          "price": 63.15,
+          "currency": "CAD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Atlantic salmon 1-day, age 18+",
+          "who": "any",
+          "duration": "1 day within the open season",
+          "price": 29.79,
           "currency": "CAD",
           "water": "freshwater"
         }
@@ -667,10 +698,22 @@
         {
           "title": "General and salmon licence services",
           "url": "https://www.novascotia.ca/programs-and-services/sportfishing-licensing"
+        },
+        {
+          "title": "2026 free sportfishing weekends",
+          "url": "https://novascotia.ca/fish/activities-and-events/?wbdisable=true"
+        },
+        {
+          "title": "Atlantic salmon licence options and fees",
+          "url": "https://www.novascotia.ca/apply-salmon-fishing-licence-sportfishing"
+        },
+        {
+          "title": "Sportfishing weekend salmon exception",
+          "url": "https://novascotia.ca/just/regulations/regs/wifish.htm"
         }
       ],
-      "checked": "2026-11-11",
-      "checkOfficial": "Confirm the salmon fee and final payment total. No guide-client exemption was confirmed."
+      "checked": "2026-11-13",
+      "checkOfficial": "Confirm the next salmon season and final payment total before purchase. The 2026 salmon dates have passed."
     },
     {
       "id": "ca-nunavut",
@@ -739,7 +782,8 @@
       "keyRules": [
         "Carry the licence.",
         "Do not use live fish as bait.",
-        "Do not sell sport-caught fish."
+        "Do not sell sport-caught fish.",
+        "Ask the local Hunters and Trappers Organization or a conservation officer about Nunavut Settlement Area conditions."
       ],
       "howToBuy": "Buy from the Department of Environment, most fishing lodges, or participating retail stores.",
       "sources": [
@@ -752,7 +796,7 @@
           "url": "https://www.gov.nu.ca/sites/default/files/documents/2026-04/9622_25_Nunavut_Sport_Fishing_Guide_Final__ENG__apr1.pdf"
         }
       ],
-      "checked": "2026-11-11",
+      "checked": "2026-11-13",
       "checkOfficial": "Add 5% GST to listed fees. Confirm coastal-water coverage, local settlement conditions, and any guided-trip exemption with a conservation officer."
     },
     {
@@ -772,7 +816,8 @@
       ],
       "exemptions": [
         "Foreign visitors under 18 can share an accompanying licence holder's catch limit.",
-        "Canadian residents under 18 or aged 65 and older qualify for the age exemption with the required identification."
+        "Canadian residents under 18 or aged 65 and older qualify for the age exemption with the required identification.",
+        "Canadian residents could fish without a licence on February 14–16, May 9–10, June 20–21, and June 27–July 5, 2026. Conservation catch limits and all other rules still applied; carry government-issued identification showing your name and date of birth."
       ],
       "options": [
         {
@@ -852,9 +897,13 @@
         {
           "title": "Official Ontario 2026 licence shop fee table",
           "url": "https://www.huntandfishontario.com/Home/LicenceFees"
+        },
+        {
+          "title": "Free family fishing dates and conditions",
+          "url": "https://www.ontario.ca/page/free-family-fishing"
         }
       ],
-      "checked": "2026-11-11",
+      "checked": "2026-11-13",
       "checkOfficial": "Listed fees are the official 2026 shop prices before HST. Confirm water-specific limits and seasons before the trip."
     },
     {
@@ -874,7 +923,8 @@
       "exemptions": [
         "Children under 16.",
         "Courtesy licences have no basic fee for ages 16–18 and 60+, but conservation charges can still apply.",
-        "Active Canadian Forces members and veterans receive a courtesy licence with no conservation charge."
+        "Active Canadian Forces members and veterans receive a courtesy licence with no conservation charge.",
+        "The 2026 Free Family Fishing Weekend ran May 15–18. All other fishing rules still applied."
       ],
       "options": [
         {
@@ -914,7 +964,7 @@
           "currency": "CAD"
         }
       ],
-      "saltwater": null,
+      "saltwater": "For saltwater species such as mackerel and striped bass, check Fisheries and Oceans Canada rules. Do not use the freshwater licence table to infer coastal requirements.",
       "guidedTrips": null,
       "keyRules": [
         "Print and sign the emailed licence.",
@@ -931,7 +981,7 @@
           "url": "https://www.princeedwardisland.ca/en/service/buy-an-angling-licence-online"
         }
       ],
-      "checked": "2026-11-11",
+      "checked": "2026-11-13",
       "checkOfficial": "Listed fees exclude HST. Confirm the rules for tidal species and any guide-client exemption."
     },
     {

@@ -10,7 +10,7 @@ def section(rows, origin, note="Short animated fishing stories. Find the guide b
         cards.append(f'''<article class="reel-card" id="{E(slug)}"><video controls playsinline preload="none" loading="lazy" width="720" height="1280" poster="{base}.jpg" aria-label="{E(v['title'],quote=True)}"><source data-src="{base}.mp4" type="video/mp4"><track kind="captions" src="{base}.vtt" srclang="en" label="English" default></video><h3>{E(v['title'])}</h3><p>{E(v['caption'])}</p><a href="{E(v['page_url'],quote=True)}">Explore this guide ↗</a><noscript><p><a href="{base}.mp4">Play this film</a></p></noscript></article>''')
         if origin:
             schema.append({'@context':'https://schema.org','@type':'VideoObject','name':v['title'],'description':v['caption'],'thumbnailUrl':origin+base+'.jpg','contentUrl':origin+base+'.mp4','embedUrl':origin+'/videos/#'+slug,'uploadDate':v['upload_date'],'duration':'PT16S','inLanguage':'en','isFamilyFriendly':True})
-    return '<section class="wrap section watch-section" aria-label="Watch"><div class="section-head"><div><span class="eyebrow">ON THE WATER</span><h2>Watch</h2><p>' + E(note) + '</p></div><a href="/videos/">All films ↗</a></div><div class="reel-grid">'+''.join(cards)+'</div></section><script type="application/ld+json">'+json.dumps(schema).replace('</','<\\/')+'</script><script src="/assets/videos.js" defer></script>'
+    return '<section class="wrap section watch-section" data-seo-skip aria-label="Watch"><div class="section-head"><div><span class="eyebrow">ON THE WATER</span><h2>Watch</h2><p>' + E(note) + '</p></div><a href="/videos/">All films ↗</a></div><div class="reel-grid">'+''.join(cards)+'</div></section><script type="application/ld+json">'+json.dumps(schema).replace('</','<\\/')+'</script><script src="/assets/videos.js" defer></script>'
 
 def install(pages, root, origin, add):
     videos=json.loads((root/'src/videos.json').read_text())
@@ -25,3 +25,11 @@ def install(pages, root, origin, add):
         if marker in body: body=body.replace(marker,section(rows, origin)+marker,1)
         else: body=body.replace('<section class="section"',section(rows, origin)+'<section class="section"',1)
         pages[path]['body']=body
+
+def install_shorts(pages, root):
+    # Published Shorts link back to these exact species pages.
+    for short in json.loads((root/'src/shorts.json').read_text()):
+        path=urlsplit(short['page_url']).path
+        if path not in pages:raise ValueError('Missing Short guide: '+path)
+        video_id=E(short['id'],quote=True)
+        pages[path]['body']+=f'''<section class="wrap section" data-seo-skip aria-label="Watch"><h2>{E(short['title'])}</h2><p>An animated fishing story from Castward.</p><iframe width="315" height="560" style="max-width:100%;border:0" loading="lazy" src="https://www.youtube-nocookie.com/embed/{video_id}" title="{E(short['title'],quote=True)}" allow="encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe><p><a href="https://www.youtube.com/shorts/{video_id}">Watch this Short on YouTube</a></p></section>'''

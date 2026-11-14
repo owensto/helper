@@ -2993,7 +2993,7 @@
     "wool-soft": {
       "title": "Woolmark: Why merino wool is soft",
       "url": "https://www.woolmark.com/fibre/soft-merino-wool",
-      "checked": "2026-11-11",
+      "checked": "2026-11-13",
       "scopeNote": "Fibre diameter, flexibility and prickle.",
       "status": "text-inspected",
       "publisher": "Woolmark",
@@ -3037,7 +3037,7 @@
     "ice-weights": {
       "title": "Icebreaker: Choose your base layer",
       "url": "https://na.icebreaker.com/en-us/blogs/journal/icebreaker-baselayer-guide",
-      "checked": "2026-11-11",
+      "checked": "2026-11-13",
       "scopeNote": "150, 200, 240 and 320-plus fabric weight classes.",
       "status": "text-inspected",
       "publisher": "Icebreaker",
@@ -3059,7 +3059,7 @@
     "meriwool-250": {
       "title": "Meriwool: Mens Merino 250 long sleeve",
       "url": "https://www.meriwoollayers.com/products/mens-merino-250-base-layer-long-sleeve",
-      "checked": "2026-11-11",
+      "checked": "2026-11-13",
       "scopeNote": "250 gsm, 18.5-micron pure merino and $65 price.",
       "status": "text-inspected",
       "publisher": "Meriwool",
@@ -3092,7 +3092,7 @@
     "smart-thermal": {
       "title": "Smartwool: Classic Thermal Merino crew",
       "url": "https://www.smartwool.com/en-us/products/mens-classic-thermal-merino-base-layer-crew-sw016349?variant=63206702874993",
-      "checked": "2026-11-12",
+      "checked": "2026-11-13",
       "scopeNote": "250 gsm pure merino, seam construction, care and $115 price.",
       "status": "text-inspected",
       "publisher": "Smartwool",
@@ -3114,7 +3114,7 @@
     "ice-oasis": {
       "title": "Icebreaker: Merino 200 Oasis long sleeve crewe",
       "url": "https://na.icebreaker.com/en-us/products/mens-merino-200-oasis-long-sleeve-crewe-ib104365580",
-      "checked": "2026-11-11",
+      "checked": "2026-11-13",
       "scopeNote": "Pure merino, 200 weight, 18.9 microns, care and $120 price.",
       "status": "text-inspected",
       "publisher": "Icebreaker",
@@ -3213,7 +3213,7 @@
     "rws-update": {
       "title": "Textile Exchange: Standards policy updates",
       "url": "https://hub.textileexchange.org/home/site-wide-content/standards-policy-updates",
-      "checked": "2026-11-11",
+      "checked": "2026-11-13",
       "scopeNote": "2026 mulesed-restocking exception and approval requirements.",
       "status": "text-inspected",
       "publisher": "Textile Exchange",
@@ -3222,13 +3222,13 @@
       "type": "reference"
     },
     "zq": {
-      "title": "ZQ: Grower standard",
-      "url": "https://www.discoverzq.com/_files/ugd/fdb7ce_8d764e66e96744b986afe90e321ac2bd.pdf",
-      "checked": "2026-11-11",
-      "scopeNote": "ZQ prohibition of mulesing and farm requirements.",
+      "title": "Zentera — ZQ certified wool",
+      "url": "https://www.zenterawool.com/zq-certified-wool",
+      "checked": "2026-11-13",
+      "scopeNote": "Official current certification overview: independent audits, animal welfare, traceability and prohibition of mulesing.",
       "status": "text-inspected",
-      "publisher": "ZQ",
-      "shortTitle": "Grower standard",
+      "publisher": "Zentera Wool Company",
+      "shortTitle": "ZQ certification",
       "group": "Independent",
       "type": "reference"
     },
@@ -3268,7 +3268,7 @@
     "frog-canyon": {
       "title": "Frogg Toggs: Canyon II stockingfoot chest wader",
       "url": "https://www.froggtoggs.com/products/canyon-ii-stockingfoot-breathable-chest-wader",
-      "checked": "2026-11-12",
+      "checked": "2026-11-13",
       "scopeNote": "Four-ply nylon, belt, stockingfeet and $165 price.",
       "status": "text-inspected",
       "publisher": "Frogg Toggs",
@@ -4192,7 +4192,7 @@
     "gr-orvis-size": {
       "title": "Orvis wader size charts",
       "url": "https://www.orvis.com/wader-sizing-information.html",
-      "checked": "2026-11-12",
+      "checked": "2026-11-13",
       "status": "text-inspected",
       "type": "reference",
       "scopeNote": "Men’s stockingfoot chart excerpt; body girth, pant inseam and US bootie ranges. Boot chart uses its own size conversion.",
@@ -4203,7 +4203,7 @@
     "gr-orvis-clearwater": {
       "title": "Orvis Clearwater waders",
       "url": "https://www.orvis.com/product/mens-clearwater-waders/2TZX.html",
-      "checked": "2026-11-12",
+      "checked": "2026-11-13",
       "status": "text-inspected",
       "type": "reference",
       "scopeNote": "Four-layer nylon fabric, stockingfoot design and waist conversion buckles; no price or lifetime claim.",
@@ -4214,7 +4214,7 @@
     "gr-g3": {
       "title": "Simms G3 Guide Stockingfoot",
       "url": "https://www.simmsfishing.com/products/g3-guide-stockingfoot",
-      "checked": "2026-11-12",
+      "checked": "2026-11-13",
       "status": "text-inspected",
       "type": "reference",
       "scopeNote": "G3 Guide model: three-layer GORE-TEX upper and four-layer GORE-TEX Pro lower. Do not apply these specs to G3 PRO.",
@@ -4225,7 +4225,7 @@
     "gr-simms-repair": {
       "title": "Simms pinhole repair",
       "url": "https://www.simmsfishing.com/blogs/the-plug/extend-the-life-of-the-unsung-hero-of-fishing-gear",
-      "checked": "2026-11-12",
+      "checked": "2026-11-13",
       "status": "text-inspected",
       "type": "reference",
       "scopeNote": "Inside-out alcohol test for pinholes, small Aquaseal applications, at least 24 hours before use; fabric pinholes only.",
@@ -4236,7 +4236,7 @@
     "gr-gearaid": {
       "title": "GEAR AID wader repair",
       "url": "https://www.gearaid.com/blogs/learn/repair-waders-how-to",
-      "checked": "2026-11-12",
+      "checked": "2026-11-13",
       "status": "text-inspected",
       "type": "reference",
       "scopeNote": "Cleaning, patches and adhesive repair. Adhesive cure time and patch method depend on the product and repair.",
@@ -4247,7 +4247,7 @@
     "gr-repair-kit": {
       "title": "GEAR AID Aquaseal FD Repair Kit",
       "url": "https://www.gearaid.com/products/aquaseal-repair-kit",
-      "checked": "2026-11-12",
+      "checked": "2026-11-13",
       "status": "text-inspected",
       "type": "reference",
       "scopeNote": "Aquaseal FD adhesive, repair patches and applicator; follow current insert and wader maker instructions.",
@@ -4258,7 +4258,7 @@
     "gr-wading": {
       "title": "Orvis safe wading equipment",
       "url": "https://www.orvis.com/what-gear-is-important-to-have-for-safe-wading.html",
-      "checked": "2026-11-12",
+      "checked": "2026-11-13",
       "status": "text-inspected",
       "type": "reference",
       "scopeNote": "Wading belt and staff use; these do not make a dangerous crossing safe.",
@@ -4280,7 +4280,7 @@
     "gr-felt": {
       "title": "Alaska Fish and Game: felt-sole rule",
       "url": "https://www.adfg.alaska.gov/static/species/nonnative/invasive/pdfs/felt_soled_waders_faq.pdf",
-      "checked": "2026-11-11",
+      "checked": "2026-11-13",
       "status": "text-inspected",
       "type": "reference",
       "scopeNote": "Felt or fibrous soles prohibited for sport fishing in Alaska fresh waters. The FAQ excludes saltwater and personal-use fisheries.",
@@ -4291,7 +4291,7 @@
     "gr-smart-guarantee": {
       "title": "Smartwool US guarantee",
       "url": "https://www.smartwool.com/en-us/pages/our-guarantee",
-      "checked": "2026-11-11",
+      "checked": "2026-11-13",
       "status": "text-inspected",
       "type": "reference",
       "scopeNote": "Two-year satisfaction guarantee; purchase eligibility, authorized retailer and claim conditions apply.",
@@ -4313,7 +4313,7 @@
     "gr-darn": {
       "title": "Darn Tough Hiker Micro Crew 1466",
       "url": "https://darntough.com/products/mens-merino-wool-hiker-micro-crew-cushioned-midweight-hiking-socks",
-      "checked": "2026-11-11",
+      "checked": "2026-11-13",
       "status": "text-inspected",
       "type": "reference",
       "scopeNote": "Merino blend, micro crew, midweight cushion model; size and color can affect listed fiber percentages.",
@@ -4324,7 +4324,7 @@
     "gr-darn-guarantee": {
       "title": "Darn Tough lifetime guarantee",
       "url": "https://darntough.com/pages/our-unconditional-lifetime-guarantee",
-      "checked": "2026-11-11",
+      "checked": "2026-11-13",
       "status": "text-inspected",
       "type": "reference",
       "scopeNote": "Lifetime sock guarantee covers wear and inadvertent damage. Seconds and irregulars are excluded. Resizing or dyeing voids the warranty.",
@@ -4539,6 +4539,61 @@
       "status": "source-checked",
       "scopeNote": "Operator lists generator and fuel included, rods on request, electronics as rentals.",
       "group": "Independent",
+      "type": "reference"
+    },
+    "pm-orvis-bootfoot": {
+      "title": "Orvis — Pro Tips: Bootfoot or Stockingfoot Waders?",
+      "url": "https://news.orvis.com/fly-fishing/pro-tips-bootfoot-stockingfoot-waders",
+      "checked": "2026-11-13",
+      "status": "checked",
+      "scopeNote": "Separate boots support walking and fit adjustment; bootfoot options for cold, stationary use. No universal size or temperature rating.",
+      "publisher": "Orvis",
+      "shortTitle": "Bootfoot or stockingfoot waders",
+      "group": "Manufacturer",
+      "type": "reference"
+    },
+    "pm-mn-travel": {
+      "title": "Minnesota DNR — Traveling on Ice",
+      "url": "https://www.dnr.state.mn.us/safety/ice/travel.html",
+      "checked": "2026-11-13",
+      "scopeNote": "Ice assessment, accessible ice picks, flotation and escape preparation.",
+      "status": "checked",
+      "publisher": "Minnesota DNR",
+      "shortTitle": "Travel on ice",
+      "group": "Government/agency",
+      "type": "reference"
+    },
+    "pm-mn-ice": {
+      "title": "Minnesota DNR — Learn to Ice Fish",
+      "url": "https://www.dnr.state.mn.us/gofishing/learn-ice-fish.html",
+      "checked": "2026-11-13",
+      "scopeNote": "Ice fishing locations, mobility, timing, clothing and shelter hazards.",
+      "status": "checked",
+      "publisher": "Minnesota DNR",
+      "shortTitle": "Ice fishing",
+      "group": "Government/agency",
+      "type": "reference"
+    },
+    "pm-ny-ice": {
+      "title": "New York State DEC — Learn How to Ice Fish",
+      "url": "https://dec.ny.gov/things-to-do/freshwater-fishing/learn-to-fish/tips-skills/how-to-ice-fish",
+      "checked": "2026-11-13",
+      "scopeNote": "Jigs, bait, tip-ups, clothing and variable ice conditions.",
+      "status": "checked",
+      "publisher": "New York DEC",
+      "shortTitle": "Ice fishing",
+      "group": "Government/agency",
+      "type": "reference"
+    },
+    "pm-mn-first": {
+      "title": "Minnesota DNR — Learn to ice fish",
+      "url": "https://www.dnr.state.mn.us/gofishing/learn-ice-fish.html",
+      "checked": "2026-11-13",
+      "status": "checked",
+      "scopeNote": "Beginner equipment, waterproof boots, rental shelters, lake information and regulations.",
+      "publisher": "Minnesota DNR",
+      "shortTitle": "Learn to ice fish",
+      "group": "Government/agency",
       "type": "reference"
     },
     "species-e4b4ce359a5f": {
@@ -187401,7 +187456,7 @@
       "Cook Islands",
       "Niue"
     ],
-    "sources": 1035,
+    "sources": 1040,
     "sourceInspection": {
       "text-inspected": 201,
       "search-excerpt-inspected": 136,
@@ -187409,6 +187464,7 @@
       "source-linked": 92,
       "product-identity-only": 1,
       "source-checked": 5,
+      "checked": 5,
       "existing-source-linked": 163,
       "reviewed-source": 418
     },

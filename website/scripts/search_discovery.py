@@ -25,7 +25,8 @@ def metadata(path, page, origin):
 def feeds(dist, pages, root, origin):
     if not origin:
         return
-    guides=json.loads((root/'src/guides.json').read_text())['articles']
+    catalog=json.loads((root/'src/guides.json').read_text())
+    guides=catalog['articles']
     selected=['/','/about/','/guides/','/fishing-licenses/','/guides/florida-visitor-fishing-license-planner/','/environments/ice-fishing/','/guides/minnesota-fish-house-rental-checklist/',
               '/destinations/florida-keys/','/destinations/bozeman/','/destinations/yakutat/','/environments/','/fishing-lingo/','/tools/weather/','/tools/tides/','/atlas/','/plan/','/search/']
     selected += ['/guides/'+g['slug']+'/' for g in guides]
@@ -37,6 +38,8 @@ def feeds(dist, pages, root, origin):
     full=lines+['','## Guide answers','']
     for g in guides:
         full += ['### '+g['title'],origin+'/guides/'+g['slug']+'/', 'Updated '+g.get('updated','2026-11-10'),g.get('quickAnswer',g['description']),'']
+    for water_id, g in catalog.get('waters', {}).items():
+        full += ['### '+g['title'],origin+'/environments/'+water_id+'/', 'Updated '+g['updated'],g['quickAnswer'],'']
     (dist/'llms-full.txt').write_text('\n'.join(full)+'\n')
 
 

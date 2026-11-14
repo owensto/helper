@@ -1192,8 +1192,8 @@
       "url": "https://hub.textileexchange.org/home/site-wide-content/standards-policy-updates"
     },
     "world-zq": {
-      "label": "ZQ: Grower standard",
-      "url": "https://www.discoverzq.com/_files/ugd/fdb7ce_8d764e66e96744b986afe90e321ac2bd.pdf"
+      "label": "Zentera — ZQ certified wool",
+      "url": "https://www.zenterawool.com/zq-certified-wool"
     },
     "world-wader-types": {
       "label": "Outdoor Canada: How to choose fly-fishing waders",
@@ -1670,6 +1670,26 @@
     "world-daily-mn-traxx": {
       "label": "FishTraxx — Ice Castle rentals",
       "url": "https://www.fishtraxx.com/ice-castle-fish-house-rentals.html"
+    },
+    "world-pm-orvis-bootfoot": {
+      "label": "Orvis — Pro Tips: Bootfoot or Stockingfoot Waders?",
+      "url": "https://news.orvis.com/fly-fishing/pro-tips-bootfoot-stockingfoot-waders"
+    },
+    "world-pm-mn-travel": {
+      "label": "Minnesota DNR — Traveling on Ice",
+      "url": "https://www.dnr.state.mn.us/safety/ice/travel.html"
+    },
+    "world-pm-mn-ice": {
+      "label": "Minnesota DNR — Learn to Ice Fish",
+      "url": "https://www.dnr.state.mn.us/gofishing/learn-ice-fish.html"
+    },
+    "world-pm-ny-ice": {
+      "label": "New York State DEC — Learn How to Ice Fish",
+      "url": "https://dec.ny.gov/things-to-do/freshwater-fishing/learn-to-fish/tips-skills/how-to-ice-fish"
+    },
+    "world-pm-mn-first": {
+      "label": "Minnesota DNR — Learn to ice fish",
+      "url": "https://www.dnr.state.mn.us/gofishing/learn-ice-fish.html"
     },
     "world-species-e4b4ce359a5f": {
       "label": "Fishery source for Yakutat / Situk River",

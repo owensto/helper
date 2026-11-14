@@ -169,6 +169,9 @@ def render(guide, content, trips, root, origin, path):
 
 def rich_image(image, eager=False, sizes='(max-width: 700px) calc(100vw - 32px), 560px'):
     """An image stem always addresses the same three generated WebP variants."""
+    if image.get('route'):
+        from photography import preview_photo
+        return preview_photo(image['route'], sizes, eager)
     stem = '/media/guides/' + image['name']
     loading = 'loading="eager" fetchpriority="high"' if eager else 'loading="lazy"'
     return (f'<img src="{E(stem)}-1200.webp" srcset="{E(stem)}-640.webp 640w, '
@@ -193,8 +196,11 @@ def render_rich(guide, content, root, origin, path):
     hero_class = ' gr-hero-contain' if guide['hero'].get('fit') == 'contain' else ''
     updated = date.fromisoformat(guide['updated']).strftime('%d %B %Y').lstrip('0')
     body = '<article class="guide-rich">'
-    body += '<div class="wrap gr-crumb">' + link('/guides/', 'Field guides') + '<span aria-hidden="true"> / </span>' + E(guide['category'].split(' / ')[0].title()) + '</div>'
-    body += '<header class="wrap gr-cover"><div class="gr-cover-copy"><span class="eyebrow">' + E(guide['category']) + '</span><h1>' + E(guide['title']) + '</h1><p>' + E(guide['description']) + '</p><div class="gr-byline">Castward field notes <span>Updated ' + E(updated) + '</span></div></div><figure class="guide-hero' + hero_class + '">' + rich_image(guide['hero'], True, '(max-width: 850px) 100vw, 720px') + '</figure></header>'
+    parent = ('/environments/', 'Waters') if path.startswith('/environments/') else ('/guides/', 'Field guides')
+    body += '<div class="wrap gr-crumb">' + link(*parent) + '<span aria-hidden="true"> / </span>' + E(guide['category'].split(' / ')[-1 if parent[1] == 'Waters' else 0].title()) + '</div>'
+    opening = guide['quickAnswer'] if guide.get('answerFirst') else guide['description']
+    opening_cites = citations(guide.get('quickSources', []), numbers) if guide.get('answerFirst') else ''
+    body += '<header class="wrap gr-cover"><div class="gr-cover-copy"><span class="eyebrow">' + E(guide['category']) + '</span><h1>' + E(guide['title']) + '</h1><p>' + E(opening) + opening_cites + '</p><div class="gr-byline">By <a href="/about/">Castward</a> <span>Updated ' + E(updated) + '</span></div></div><figure class="guide-hero' + hero_class + '">' + rich_image(guide['hero'], True, '(max-width: 850px) 100vw, 720px') + '</figure></header>'
     body += '<section class="wrap gr-glance" aria-label="At a glance"><span class="eyebrow">At a glance</span><dl>'
     body += ''.join('<div><dt>' + E(f['label']) + '</dt><dd>' + E(f['value']) + '</dd></div>' for f in guide['facts']) + '</dl></section>'
     body += '<div class="wrap gr-opening"><section class="gr-answer" aria-labelledby="quick-answer"><span class="eyebrow">Start here</span><h2 id="quick-answer">Quick answer</h2><p>' + E(guide['quickAnswer']) + citations(guide.get('quickSources', []), numbers) + '</p></section>'
@@ -275,13 +281,27 @@ def render_rich(guide, content, root, origin, path):
     for slug in guide['relatedGuides']:
         target = next(g for g in content['articles'] if g['slug'] == slug)
         body += link('/guides/' + slug + '/', target['title'] + ' ↗')
-    body += '</div><a class="btn" href="/plan/?' + urlencode({'destination': guide['destination']}) + '">Plan this trip ↗</a></section></div></article>'
+    plan = '/plan/?' + urlencode({'destination': guide['destination']}) if guide.get('destination') else '/plan/'
+    body += '</div><a class="btn" href="' + plan + '">Plan this trip ↗</a></section></div></article>'
     return body
 
 
 def install(pages, root, origin, add, trips, trip_card, intro, bread):
     from photography import trip_metadata
+    from preview_images import PREVIEWS, image_url
     content = catalog(root)
+    for water_id, guide in content.get('waters', {}).items():
+        path = '/environments/' + water_id + '/'
+        page = pages[path]
+        related_marker = '<section class="section soft">'
+        related_at = page['body'].find(related_marker)
+        related = page['body'][related_at:] if related_at >= 0 else ''
+        scene = PREVIEWS[path]
+        page.update(ogImage='/' + image_url(scene, 1200), ogImageAlt=scene['alt'], photoPreload='')
+        page.update(body=render_rich(guide, content, root, origin, path) + related, desc=guide['description'],
+                    modified=guide['updated'], published=guide['published'], richGuide=True, guideStyle=True,
+                    citations=[content['sources'][sid]['url'] for sid in source_ids(guide)],
+                    guideSourceNumbers=page_source_numbers(guide, content, root, path))
     ice_path = '/environments/ice-fishing/'
     if ice_path in pages:
         pages[ice_path]['body'] += '<section class="wrap section"><h2>Is this your first rental trip?</h2><p>Compare the guide time, transport, gear, and overnight supplies before you book.</p><a class="btn" href="/guides/minnesota-fish-house-rental-checklist/">Compare two fish-house rentals</a></section>'

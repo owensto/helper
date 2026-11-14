@@ -1,0 +1,40 @@
+{
+  "date": "2026-11-13",
+  "scope": "Winter wader and merino guide revisions; existing ice hub. Primary pages and exact product pages checked. Source fetch failures used the web search page cache where available.",
+  "sourceIds": [
+    "frog-canyon",
+    "gr-cold",
+    "gr-darn",
+    "gr-darn-guarantee",
+    "gr-felt",
+    "gr-g3",
+    "gr-gearaid",
+    "gr-ice-care",
+    "gr-orvis-clearwater",
+    "gr-orvis-size",
+    "gr-repair-kit",
+    "gr-simms-repair",
+    "gr-smart-guarantee",
+    "gr-wading",
+    "ice-oasis",
+    "ice-weights",
+    "layers-rei",
+    "meriwool-250",
+    "pm-mn-first",
+    "pm-mn-travel",
+    "pm-orvis-bootfoot",
+    "rws-update",
+    "simms-care",
+    "simms-fit",
+    "smart-thermal",
+    "wool-soft",
+    "zq"
+  ],
+  "calculation": {
+    "expression": "(250 / 200 - 1) * 100",
+    "result": 25,
+    "meaning": "Fabric mass per unit area only; not warmth."
+  },
+  "pending": [],
+  "resolved": "Replaced the timed-out archived ZQ PDF with the current official Zentera certification page."
+}

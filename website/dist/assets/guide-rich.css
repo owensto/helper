@@ -70,3 +70,9 @@
 .ice-worksheet legend{font-weight:700;padding:0 8px}.ice-quote-names{display:grid;grid-template-columns:1fr 1fr;gap:20px}.ice-quote-names label{display:block;font-size:15px;font-weight:600}.ice-quote-names input,.ice-quote-names textarea{display:block;box-sizing:border-box;width:100%;margin-top:8px;padding:12px;border:1px solid #78887d;border-radius:5px;background:#fff;color:#172a20;font:inherit}.ice-quote-names textarea{resize:vertical;min-height:110px}
 @media(max-width:600px){.ice-quote-names{grid-template-columns:1fr}.ice-worksheet fieldset{padding:14px}}
 @media print{.ice-worksheet fieldset{break-inside:avoid}.ice-worksheet textarea{height:auto;min-height:120px;field-sizing:content}#ice-print{display:none}}
+
+/* Keep source links readable on the dark article cover. */
+.gr-cover-copy .guide-citations a{color:#f1d4a0;text-decoration:underline;text-underline-offset:3px}
+
+.gr-cover .guide-hero picture{display:block;height:100%}
+.gr-cover-copy .guide-citations a:hover{color:#17362d}
