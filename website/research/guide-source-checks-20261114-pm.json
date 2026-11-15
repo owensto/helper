@@ -1,0 +1,31 @@
+{
+  "date": "2026-11-14",
+  "checks": [
+    {
+      "id": "simms-fit",
+      "url": "https://www.simmsfishing.com/pages/size-fit-guide",
+      "scope": "Live size chart: largest girth, crotch-to-floor inseam, stockingfoot size; not pant inseam."
+    },
+    {
+      "id": "gr-orvis-size",
+      "url": "https://www.orvis.com/wader-sizing-information.html",
+      "scope": "Live chart: Medium girth 38\u201340 in, pant inseam 30\u201332 in, US bootie 9\u201311. Worked example is an inference, not a fit guarantee."
+    },
+    {
+      "id": "ice-oasis",
+      "url": "https://na.icebreaker.com/en-us/products/mens-merino-200-oasis-long-sleeve-crewe-ib104365580",
+      "scope": "Live exact product: cold gentle wash, no softener, no tumble drying, line dry in shade."
+    },
+    {
+      "id": "smart-thermal",
+      "url": "https://www.smartwool.com/en-us/products/mens-classic-thermal-merino-base-layer-crew-sw016349?variant=63206702874993",
+      "scope": "Live exact product: warm gentle wash, tumble low, no ironing decoration."
+    },
+    {
+      "id": "gr-bg",
+      "url": "https://daiwa.us/collections/saltwater-spinning-reels/products/bg-sw-spinning",
+      "scope": "Live product: aluminum housing and screw-in handle. Pick is a stated preference, not a field test."
+    }
+  ],
+  "unchangedClaims": "Existing source records and prior review dates retained for unchanged claims. HTTP-only fetches do not establish factual verification."
+}

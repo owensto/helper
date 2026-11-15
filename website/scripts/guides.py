@@ -315,6 +315,10 @@ def install(pages, root, origin, add, trips, trip_card, intro, bread):
         trip_page = pages[minnesota['canonicalPath']]
         trip_page['body'] += '<section class="wrap panel"><h2>Planning a winter rental?</h2><p>First confirm the house, transport, and guide time. Then separate the operator’s supplies from your own bag.</p><ul><li><a href="/guides/minnesota-fish-house-rental-checklist/">Compare two rental quotes</a></li><li><a href="/guides/minnesota-ice-fishing-packing-list/">Build a day or overnight packing list</a></li><li><a href="/environments/ice-fishing/">Read the ice fishing guide</a></li></ul></section>'
         trip_page['modified'] = '2026-11-14'
+    for path in ['/north-america/united-states/minnesota/', '/north-america/united-states/minnesota/upper-red-lake-ice-fishing/']:
+        if path in pages:
+            pages[path]['body'] += '<section class="wrap panel"><h2>What should you confirm for a Minnesota ice-house trip?</h2><p>Ask about transport, supplied tackle, bedding, and weather cancellation terms. Use the <a href="/guides/minnesota-fish-house-rental-checklist/">rental comparison worksheet</a> before you book, then build your <a href="/guides/minnesota-ice-fishing-packing-list/">day or overnight packing list</a>.</p></section>'
+            pages[path]['modified'] = '2026-11-14'
     for tid, guide in content['trips'].items():
         path = by_id[tid]['canonicalPath']
         pages[path].update(title=guide['title'] + ' | Castward', desc=guide['description'],

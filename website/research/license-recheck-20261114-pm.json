@@ -1,0 +1,11 @@
+{
+  "date": "2026-11-14",
+  "checks": {
+    "ar-national": "Checked Tierra del Fuego and Santa Cruz 2026/27 official fee tables. Existing foreign visitor prices match. Added the Tierra del Fuego March catch-and-release rule.",
+    "bs-national": "Reopened official flats regulations and tourism FAQ. The FAQ conflicts with the flats guide requirement. Retain the specific regulations and fee-confirmation warning; no fee added.",
+    "bb-national": "Reopened the Fisheries Division registration notice. Registration starts June 8, 2026; it lists free registration, not a free individual fishing licence. No individual fee inferred.",
+    "bz-national": "Reopened CZMAI brochure: BZD 20 daily, 50 weekly, 100 annual. It requires an annual applicant to attend the CZMAI office with valid ID. Corrected the purchase route. Shop has no readable public text; Hol Chan fetch timed out.",
+    "bo-national": "Reopened official Decree 140 after initial timeouts. Article 3(d) requires sport angler registration and permission; Article 5 leaves limits to the permit. No nationwide fee or free-day claim added."
+  },
+  "limits": "No new free-day, stamp, or fee claims without official support. Existing regional limits remain."
+}

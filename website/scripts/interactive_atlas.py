@@ -63,9 +63,23 @@ def install(pages, root, origin, add, data, trips, styles):
     pages['/']['body']=pages['/']['body'][:start]+markup()+pages['/']['body'][end:]
     from atlas_view import markup as map_markup
     add('/atlas/','Interactive fishing atlas | Castward','Explore fishing trips on an interactive world map. Filter by water, environment, species and month, then find your next trip.',map_markup(records, styles, '/assets/atlas-gl-data-'+compact_version+'.json'),'atlas')
+    # Keep useful planning answers visible and match FAQ data to that copy.
+    questions = [
+        ('How do I find a fishing trip near a place?', 'Search the place name, then choose a water type. Open the map pin or list entry for the trip. Confirm the meeting point with the operator.'),
+        ('Does a map pin mark a boat ramp?', 'No. Pins show approximate places or regional references. Use the trip sources and local access information to choose an actual launch or meeting point.'),
+        ('Does a month filter show legal fishing seasons?', 'No. The filters use the month windows recorded in the atlas. Check current regulations for the exact water and species before the trip.'),
+        ('Can I book a guide through Castward?', 'Castward helps you prepare a trip. Contact the operator directly to confirm availability, equipment, terms, and a booking.'),
+        ('What should I check before buying fishing gear?', 'Ask which tackle the operator supplies. Check your clothing and footwear fit first, then buy only the items missing from the agreed list.')
+    ]
+    prep = '<section class="wrap section"><p class="small">Updated November 14, 2026 · By <a href="/about/">Castward</a></p><h2>How do you turn a trip idea into a plan?</h2><div class="panel"><ol><li>Choose a place and open its trip guide.</li><li>Check the linked license rules and current local access.</li><li>Ask the operator for a written equipment list.</li></ol><p>Start with <a href="/guides/fishing-gear-quality-tiers/">the gear you actually need</a>. For river trips, <a href="/guides/fishing-waders-buying-guide/">check the wader size chart</a>. For cold days, <a href="/guides/merino-wool-fishing-base-layers/">compare base layers and care labels</a>.</p></div><h2>What do the atlas details tell you?</h2><ul><li>Location pins: approximate places, not navigation points.</li><li>Months: recorded trip windows, not current legal openings.</li><li>Equipment: confirm the exact package with the operator.</li></ul><h2>What should you know before you choose?</h2>' + ''.join('<details><summary>'+E(q)+'</summary><p>'+E(a)+'</p></details>' for q,a in questions) + '</section>'
+    faq = '<script type="application/ld+json">'+json.dumps({'@context':'https://schema.org','@type':'FAQPage','mainEntity':[{'@type':'Question','name':q,'acceptedAnswer':{'@type':'Answer','text':a}} for q,a in questions]})+'</script>'
+    pages['/atlas/']['body'] = pages['/atlas/']['body'].replace('<details class="atlas-trip-list"', prep + faq + '<details class="atlas-trip-list"', 1)
+    pages['/trips/']['body'] = pages['/trips/']['body'].replace('<section class="section library-section">', prep + faq + '<section class="section library-section">', 1)
+    pages['/trips/']['desc'] = 'Find fishing trips by place, species, and water type. Check local licenses, access, supplied gear, and the questions to ask before you book.'
+    pages['/trips/']['modified'] = '2026-11-14'
     for route in ['/','/atlas/']:
         pages[route]['atlasAssets']='<link rel="stylesheet" href="'+versioned('atlas.css')+'"><script src="'+versioned('atlas-loader.js')+'" defer></script>'
-        pages[route]['modified']='2026-11-10'
+        pages[route]['modified']='2026-11-14' if route == '/atlas/' else '2026-11-10'
     pages['/atlas/']['atlasAssets'] = '<link rel="stylesheet" href="https://unpkg.com/maplibre-gl@5.6.2/dist/maplibre-gl.css"><link rel="stylesheet" href="'+versioned('atlas-gl.css')+'"><script src="https://unpkg.com/maplibre-gl@5.6.2/dist/maplibre-gl.js" defer></script><script src="'+versioned('atlas-gl.js')+'" defer></script>'
     for route,p in pages.items():
         if route.startswith('/trip-types/') or route in ['/local-classics/','/atlas/']:

@@ -617,7 +617,7 @@
     "ice-oasis": {
       "title": "Icebreaker: Merino 200 Oasis long sleeve crewe",
       "url": "https://na.icebreaker.com/en-us/products/mens-merino-200-oasis-long-sleeve-crewe-ib104365580",
-      "checked": "2026-11-13",
+      "checked": "2026-11-14",
       "scopeNote": "Pure merino, 200 weight, 18.9 microns, care and $120 price.",
       "status": "text-inspected",
       "publisher": "Icebreaker",
@@ -1515,7 +1515,7 @@
     "gr-orvis-size": {
       "title": "Orvis wader size charts",
       "url": "https://www.orvis.com/wader-sizing-information.html",
-      "checked": "2026-11-13",
+      "checked": "2026-11-14",
       "status": "text-inspected",
       "type": "reference",
       "scopeNote": "Men’s stockingfoot chart excerpt; body girth, pant inseam and US bootie ranges. Boot chart uses its own size conversion.",
@@ -1680,7 +1680,7 @@
     "gr-bg": {
       "title": "Daiwa BG",
       "url": "https://daiwa.us/collections/saltwater-spinning-reels/products/bg-sw-spinning",
-      "checked": "2026-11-13",
+      "checked": "2026-11-14",
       "status": "text-inspected",
       "type": "reference",
       "scopeNote": "Machined aluminum body and screw-in handle; consult exact size specifications.",
@@ -5763,7 +5763,7 @@
     {
       "slug": "merino-wool-fishing-base-layers",
       "title": "A warmer start. A better base.",
-      "description": "Choose 200 or 250 gsm merino for your fishing trip. Compare fabric weight, fit, care labels, and layers for a river walk or a cold, still session.",
+      "description": "Compare merino fishing base layers by weight, fit, and care. See why two pure-wool tops can need different wash and drying methods.",
       "category": "GEAR / MERINO WOOL",
       "destination": "na-us-ak-019",
       "sections": [
@@ -5916,6 +5916,42 @@
               "text": "Separate personal clothing from operator-supplied equipment.",
               "url": "/guides/minnesota-fish-house-rental-checklist/"
             }
+          ]
+        },
+        {
+          "id": "read-a-care-label",
+          "title": "Can you wash two merino base layers the same way?",
+          "paragraphs": [
+            "Read each label before you put the trip clothes in one load. Two pure-merino tops can have different wash and drying instructions. Sort the garments by their labels, not just by the word wool."
+          ],
+          "table": {
+            "heads": [
+              "Exact top",
+              "Wash instruction",
+              "Drying instruction"
+            ],
+            "rows": [
+              [
+                "Icebreaker 200 Oasis Crewe",
+                "Cold gentle machine wash; no softener",
+                "Line dry in shade; do not tumble dry"
+              ],
+              [
+                "Smartwool Classic Thermal Crew",
+                "Warm gentle machine wash; wash with like colors",
+                "Tumble dry low; do not iron decoration"
+              ]
+            ]
+          },
+          "sources": [
+            "ice-oasis",
+            "smart-thermal"
+          ],
+          "checklist": [
+            "Check the sewn label on the garment you own.",
+            "Separate items with different wash instructions.",
+            "Keep a dry spare base in your trip bag.",
+            "Dry the used layer before you put it away."
           ]
         },
         {
@@ -6109,6 +6145,10 @@
         {
           "q": "Does 200 gsm have a fixed winter temperature limit?",
           "a": "No. Fabric weight alone cannot set a useful temperature limit. Activity, wind, moisture, fit, and the rest of your clothing system change the result."
+        },
+        {
+          "q": "Can all merino base layers go in a tumble dryer?",
+          "a": "No. Icebreaker’s listed 200 Oasis Crewe says not to tumble dry. Smartwool’s listed Classic Thermal Crew permits low tumble drying. Follow the sewn label for your exact garment."
         }
       ],
       "relatedTrips": [],
@@ -6126,7 +6166,7 @@
       "plannerNote": "Add a dry spare base layer and the socks that fit your fishing footwear.",
       "revision": "Rebuilt with original guide imagery, checked sources, concise tables and practical steps.",
       "rich": true,
-      "updated": "2026-11-13",
+      "updated": "2026-11-14",
       "hero": {
         "name": "merino",
         "alt": "An angler in a charcoal merino base layer beside a misty river at first light."
@@ -6156,7 +6196,7 @@
     {
       "slug": "fishing-waders-buying-guide",
       "title": "Fishing waders: fit, types and winter boot checks",
-      "description": "Compare bootfoot and stockingfoot waders for winter fishing, check the fit with socks, and choose the right layers without crowding your boots.",
+      "description": "Choose fishing waders by body, inseam, and foot size. Use a worked size-chart example and winter fit checks before you buy.",
       "category": "GEAR / WADERS",
       "destination": "na-us-ak-019",
       "sections": [
@@ -6370,6 +6410,47 @@
               "text": "Do not squeeze a foot into a small bootie to get the right chest size. Ask the maker about another cut or size.",
               "kind": "tip"
             }
+          ]
+        },
+        {
+          "id": "between-sizes",
+          "title": "What if your wader measurements fall in different sizes?",
+          "paragraphs": [
+            "Do not average the chart columns. A body-size match does not solve an inseam or stockingfoot mismatch. Ask the maker about a short, long, fuller, or alternate-foot option before choosing a larger standard size.",
+            "For example, an Orvis chart match of 38–40 inches at the largest girth and a 30–32 inch pant inseam points toward Medium. Its listed bootie range is US 9–11. A US 12 foot falls outside that row, so this is a reason to ask about another fit, not a reason to squeeze into Medium."
+          ],
+          "table": {
+            "heads": [
+              "Mismatch",
+              "Check next",
+              "Avoid"
+            ],
+            "rows": [
+              [
+                "Body fits; foot does not",
+                "The exact model’s bootie options",
+                "Treating a bootie as a separate boot size"
+              ],
+              [
+                "Foot fits; legs are too long",
+                "The short-length chart",
+                "Choosing only by shoe size"
+              ],
+              [
+                "Winter layers strain the fabric",
+                "Movement with the actual outfit",
+                "Adding layers to a tight fit"
+              ],
+              [
+                "All measurements match",
+                "Sit, bend, and step in the complete outfit",
+                "Removing labels before a full fit check"
+              ]
+            ]
+          },
+          "sources": [
+            "simms-fit",
+            "gr-orvis-size"
           ]
         },
         {
@@ -6589,6 +6670,10 @@
         {
           "q": "Do waders replace an ice-fishing flotation suit?",
           "a": "No. Waders keep water out during their intended use; they do not replace suitable flotation or the route checks and rescue equipment needed for an ice trip."
+        },
+        {
+          "q": "What if my feet and body need different wader sizes?",
+          "a": "Use every column in the exact model’s chart. Ask the maker about another length, cut, or bootie option when one measurement falls outside the row. A larger body size alone may not solve the fit."
         }
       ],
       "relatedTrips": [],
@@ -6606,7 +6691,7 @@
       "plannerNote": "Record the wader size, boot size and permitted sole before you buy or reserve equipment.",
       "revision": "Rebuilt with original guide imagery, checked sources, concise tables and practical steps.",
       "rich": true,
-      "updated": "2026-11-13",
+      "updated": "2026-11-14",
       "hero": {
         "name": "waders",
         "alt": "An angler in olive chest waders with a belt and staff in a shallow river."
@@ -7071,7 +7156,7 @@
     {
       "slug": "fishing-gear-quality-tiers",
       "title": "Fishing gear tiers: what is worth the upgrade?",
-      "description": "Choose fishing gear for the water, method, and fit you need. Start with suitable items you own, then compare the missing pieces. For a first guided trip or ice-house rental, get the supplied equipment list before you spend money on rods, electronics, or a complete new outfit.",
+      "description": "Decide which fishing gear upgrade earns its place. Compare exact reel sizes, rental inclusions, fit, and the full setup before you spend.",
       "category": "GEAR / BUYING ADVICE",
       "destination": "na-us-ak-019",
       "sections": [
@@ -7223,6 +7308,59 @@
           ]
         },
         {
+          "id": "first-trip-example",
+          "title": "What would you upgrade for a first guided fishing trip?",
+          "paragraphs": [
+            "Use this worked decision as a starting point, then replace the assumptions with your operator’s written list. This example assumes that the guide supplies suitable tackle and asks you to bring your own clothing. It gives no price or package promise."
+          ],
+          "table": {
+            "heads": [
+              "What you find at home",
+              "Decision for this example",
+              "Reason"
+            ],
+            "rows": [
+              [
+                "A working reel that will stay at home",
+                "Keep it; buy no replacement for this trip",
+                "The guide supplies the tackle"
+              ],
+              [
+                "Waders that pinch with your trip socks",
+                "Resolve the fit before departure",
+                "A new reel cannot fix footwear"
+              ],
+              [
+                "A base layer with an unreadable care label",
+                "Identify the model and ask the maker",
+                "Care instructions differ between garments"
+              ],
+              [
+                "A shell with a damaged closure",
+                "Check repair or a suitable replacement",
+                "Choose the item that fills the actual gap"
+              ]
+            ]
+          },
+          "cards": [
+            {
+              "title": "Check wader measurements",
+              "text": "Compare body, inseam, and stockingfoot fit before a purchase.",
+              "url": "/guides/fishing-waders-buying-guide/#between-sizes"
+            },
+            {
+              "title": "Read the base-layer label",
+              "text": "Compare the wash instructions for two exact merino tops.",
+              "url": "/guides/merino-wool-fishing-base-layers/#read-a-care-label"
+            },
+            {
+              "title": "Pack for a rental house",
+              "text": "Separate your own gear from the supplied equipment.",
+              "url": "/guides/minnesota-ice-fishing-packing-list/"
+            }
+          ]
+        },
+        {
           "id": "shopping-list",
           "title": "Which spinning reels should you compare?",
           "sources": [
@@ -7354,12 +7492,12 @@
       "plannerNote": "Check the guide’s supplied tackle before you add a rod or reel to the shopping list.",
       "revision": "Rebuilt with original guide imagery, checked sources, concise tables and practical steps.",
       "rich": true,
-      "updated": "2026-11-13",
+      "updated": "2026-11-14",
       "hero": {
         "name": "gear",
         "alt": "A rod, reel, dry bag, wading boots, glasses, and rain shell arranged on a wooden dock."
       },
-      "quickAnswer": "Daiwa BG is my pick for an inshore setup. Its aluminum housing and screw-in handle are useful features at the middle tier. Match the reel size to your rod and line.",
+      "quickAnswer": "Choose fishing gear by the job it must do, not its price tier. Confirm the guide’s supplied tackle, then fill the gaps in fit, weather protection, and line setup. My inshore reel pick is Daiwa BG for its aluminum housing and screw-in handle; choose the exact size for your rod and line.",
       "facts": [
         {
           "label": "First question",
@@ -7376,7 +7514,8 @@
       ],
       "quickSources": [
         "gr-bg"
-      ]
+      ],
+      "answerFirst": true
     },
     {
       "slug": "fly-tying-for-beginners",
