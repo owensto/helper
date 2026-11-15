@@ -9792,7 +9792,7 @@
     "redirectTo": null
   },
   "/trip-types/fraser-white-sturgeon/": {
-    "kind": "trip-type",
+    "kind": "article",
     "title": "Fraser white sturgeon fishing: species, season and trip plan",
     "noindex": false,
     "redirectTo": null
@@ -9828,7 +9828,7 @@
     "redirectTo": null
   },
   "/trip-types/buoy-10-salmon/": {
-    "kind": "trip-type",
+    "kind": "article",
     "title": "Buoy 10 salmon: species, season and trip plan | Castward",
     "noindex": false,
     "redirectTo": null
@@ -10118,6 +10118,12 @@
   "/guides/minnesota-ice-fishing-packing-list/": {
     "kind": "article",
     "title": "Minnesota ice fishing packing list: rental houses | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
+  "/guides/first-tarpon-fishing-trip/": {
+    "kind": "article",
+    "title": "First tarpon fishing trip: a Florida starter guide",
     "noindex": false,
     "redirectTo": null
   },

@@ -9,7 +9,10 @@ def install(pages, root, trips, data, habitats, articles):
     by_path.update({'/destinations/'+d['id']+'/': d for d in data['destinations'] if not d.get('tripProfile')})
     by_id = {t['id']: t for t in trips}
     by_id.update({d['id']: d for d in data['destinations'] if not d.get('tripProfile')})
-    authored = json.loads((root/'src/guides.json').read_text())['articles']
+    guide_catalog = json.loads((root/'src/guides.json').read_text())
+    authored = guide_catalog['articles']
+    for slug, guide in guide_catalog.get('tripTypes', {}).items():
+        by_path['/trip-types/'+slug+'/'] = by_id.get(guide.get('destination'), {})
     for guide in [*articles, *authored]:
         slug = guide.get('slug', guide.get('id'))
         by_path['/guides/'+slug+'/'] = by_id.get(guide.get('destination'), {})

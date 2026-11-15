@@ -12,7 +12,7 @@ def metadata(path, page, origin):
     website = {'@type':'WebSite','@id':origin+'/#website','name':'Castward','url':origin+'/',
         'publisher':{'@id':origin+'/#organization'},'potentialAction':{'@type':'SearchAction','target':{'@type':'EntryPoint','urlTemplate':origin+'/search/?q={search_term_string}'},'query-input':'required name=search_term_string'}}
     crumbs = [{'@type':'ListItem','position':1,'name':'Home','item':origin+'/'}]
-    parents = {'guides':'Field guides', 'fishing-licenses':'Fishing licenses', 'environments':'Waters'}
+    parents = {'guides':'Field guides', 'fishing-licenses':'Fishing licenses', 'environments':'Waters', 'trip-types':'Trip types'}
     parts = path.strip('/').split('/')
     if len(parts) > 1 and parts[0] in parents:
         crumbs.append({'@type':'ListItem','position':2,'name':parents[parts[0]],'item':origin+'/'+parts[0]+'/'})
@@ -29,6 +29,7 @@ def feeds(dist, pages, root, origin):
     guides=catalog['articles']
     selected=['/','/about/','/guides/','/fishing-licenses/','/guides/florida-visitor-fishing-license-planner/','/environments/ice-fishing/','/guides/minnesota-fish-house-rental-checklist/',
               '/destinations/florida-keys/','/destinations/bozeman/','/destinations/yakutat/','/environments/','/fishing-lingo/','/tools/weather/','/tools/tides/','/atlas/','/plan/','/search/']
+    selected += ['/trip-types/'+slug+'/' for slug in catalog.get('tripTypes', {})]
     selected += ['/guides/'+g['slug']+'/' for g in guides]
     selected += ['/fishing-licenses/'+s+'/' for s in ['us-florida','us-alaska','us-california','us-minnesota','us-montana']]
     selected=list(dict.fromkeys(p for p in selected if p in pages and not pages[p].get('noindex') and not pages[p].get('redirectTo')))[:50]
@@ -40,6 +41,8 @@ def feeds(dist, pages, root, origin):
         full += ['### '+g['title'],origin+'/guides/'+g['slug']+'/', 'Updated '+g.get('updated','2026-11-10'),g.get('quickAnswer',g['description']),'']
     for water_id, g in catalog.get('waters', {}).items():
         full += ['### '+g['title'],origin+'/environments/'+water_id+'/', 'Updated '+g['updated'],g['quickAnswer'],'']
+    for slug, g in catalog.get('tripTypes', {}).items():
+        full += ['### '+g['title'],origin+'/trip-types/'+slug+'/', 'Updated '+g['updated'],g['quickAnswer'],'']
     (dist/'llms-full.txt').write_text('\n'.join(full)+'\n')
 
 

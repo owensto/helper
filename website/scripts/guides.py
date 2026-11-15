@@ -155,7 +155,8 @@ def render(guide, content, trips, root, origin, path):
             related += '<li>' + link('/trip-types/' + kind['slug'] + '/', kind['name']) + '</li>'
     related += '</ul>' + link(guide['regionPath'], guide['regionLabel']) + '</section>'
     body = '<div class="wrap breadcrumbs">' + link('/guides/', 'Field guides') + ' / ' + E(guide['title']) + '</div>'
-    body += '<header class="wrap page-intro"><span class="eyebrow">' + E(guide['category']) + '</span><h1>' + E(guide['title']) + '</h1><p>' + E(guide['description']) + '</p><p class="guide-review">Source-checked · Updated 10 November 2026 · Castward editorial</p><a class="btn" href="' + plan + '">Plan this trip ↗</a></header>'
+    updated = date.fromisoformat(guide.get('updated', DATE)).strftime('%d %B %Y').lstrip('0')
+    body += '<header class="wrap page-intro"><span class="eyebrow">' + E(guide['category']) + '</span><h1>' + E(guide['title']) + '</h1><p>' + E(guide['description']) + '</p><p class="guide-review">Updated ' + E(updated) + ' · By <a href="/about/">Castward</a></p><a class="btn" href="' + plan + '">Plan this trip ↗</a></header>'
     body += '<figure class="wrap guide-hero">' + trip_photo(by_id[destination], '(max-width: 900px) 100vw, 1100px', eager=True) + '</figure>'
     body += '<section class="section article-section"><div class="wrap article-layout"><div class="article-main">' + article + '</div><aside class="article-aside"><div class="panel plan-cta"><h2>Your trip plan</h2><p>' + E(guide['plannerNote']) + '</p><a class="btn" href="' + plan + '">Plan this trip ↗</a><p class="small">The plan saves in this browser. No reservation is created.</p></div>' + related + '<section class="panel guide-booking" aria-labelledby="booking-title"><span class="eyebrow">FUTURE BOOKING</span><h2 id="booking-title">Book a guide here</h2><p>Guide booking is not available on Castward yet. No operator inventory or availability is listed here.</p>' + link('/guides/how-to-choose-a-fishing-guide/', 'Use the guide selection checklist') + '</section></aside></div></section>'
     if guide.get('reel'):
@@ -196,7 +197,7 @@ def render_rich(guide, content, root, origin, path):
     hero_class = ' gr-hero-contain' if guide['hero'].get('fit') == 'contain' else ''
     updated = date.fromisoformat(guide['updated']).strftime('%d %B %Y').lstrip('0')
     body = '<article class="guide-rich">'
-    parent = ('/environments/', 'Waters') if path.startswith('/environments/') else ('/guides/', 'Field guides')
+    parent = ('/environments/', 'Waters') if path.startswith('/environments/') else ('/trip-types/', 'Trip types') if path.startswith('/trip-types/') else ('/guides/', 'Field guides')
     body += '<div class="wrap gr-crumb">' + link(*parent) + '<span aria-hidden="true"> / </span>' + E(guide['category'].split(' / ')[-1 if parent[1] == 'Waters' else 0].title()) + '</div>'
     opening = guide['quickAnswer'] if guide.get('answerFirst') else guide['description']
     opening_cites = citations(guide.get('quickSources', []), numbers) if guide.get('answerFirst') else ''
@@ -293,6 +294,15 @@ def install(pages, root, origin, add, trips, trip_card, intro, bread):
     from photography import trip_metadata
     from preview_images import PREVIEWS, image_url
     content = catalog(root)
+    # Keep established trip-type URLs while using the authored guide renderer.
+    for slug, guide in content.get('tripTypes', {}).items():
+        path = '/trip-types/' + slug + '/'
+        page = pages[path]
+        page.update(body=render_rich(guide, content, root, origin, path),
+                    desc=guide['description'], kind='article', richGuide=True, guideStyle=True,
+                    modified=guide['updated'], published=guide['published'],
+                    citations=[content['sources'][sid]['url'] for sid in source_ids(guide)],
+                    guideSourceNumbers=page_source_numbers(guide, content, root, path))
     for water_id, guide in content.get('waters', {}).items():
         path = '/environments/' + water_id + '/'
         page = pages[path]
@@ -361,4 +371,9 @@ def install(pages, root, origin, add, trips, trip_card, intro, bread):
     florida = pages.get('/destinations/florida-keys/')
     if florida:
         florida['body'] += '<section class="wrap panel"><h2>Does your Florida outing need a license?</h2><p>Check shore, pier, and charter coverage with the <a href="/guides/florida-visitor-fishing-license-planner/">Florida visitor fishing license planner</a>.</p></section>'
-        florida['modified'] = '2026-11-12'
+        florida['body'] += '<section class="wrap panel"><h2>Is this your first tarpon trip?</h2><p>Compare the region, method and release plan in the <a href="/guides/first-tarpon-fishing-trip/">Florida tarpon starter guide</a>.</p></section>'
+        florida['modified'] = '2026-11-15'
+    for path in ['/species/tarpon/', '/species/indo-pacific-tarpon/']:
+        if path in pages:
+            pages[path]['body'] += '<section class="wrap panel"><h2>Planning a Florida tarpon trip?</h2><p>Florida trips target Atlantic tarpon. Use the <a href="/guides/first-tarpon-fishing-trip/">first-trip guide</a> for Florida seasons, methods and release rules. Do not apply those rules to other countries.</p></section>'
+            pages[path]['modified'] = '2026-11-15'

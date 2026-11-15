@@ -4651,6 +4651,127 @@
       "status": "text-inspected",
       "scopeNote": "Bait and transport listed; rods/reels available for rental. No price or catch claim reproduced."
     },
+    "d15-tarpon": {
+      "title": "Tarpon rules and release practices",
+      "shortTitle": "Tarpon rules and release practices",
+      "url": "https://myfwc.com/fishing/saltwater/recreational/tarpon/",
+      "publisher": "Florida FWC",
+      "group": "Government/agency",
+      "checked": "2026-11-15",
+      "status": "text-inspected",
+      "scopeNote": "Catch-and-release rule, record exception, 40-inch threshold, bait hooks, Boca Grande and release practices.",
+      "type": "reference"
+    },
+    "d15-tarpon-faq": {
+      "title": "Tarpon rule questions",
+      "shortTitle": "Tarpon rule questions",
+      "url": "https://myfwc.com/fishing/saltwater/recreational/tarpon/faqs/",
+      "publisher": "Florida FWC",
+      "group": "Government/agency",
+      "checked": "2026-11-15",
+      "status": "text-inspected",
+      "scopeNote": "Tag exception and temporary possession for photographs; large fish stay in water.",
+      "type": "reference"
+    },
+    "d15-tarpon-biology": {
+      "title": "Tarpon habitat and tackle",
+      "shortTitle": "Tarpon habitat and tackle",
+      "url": "https://myfwc.com/wildlifehabitats/profiles/saltwater/tarpon/tarpon/",
+      "publisher": "Florida FWC",
+      "group": "Government/agency",
+      "checked": "2026-11-15",
+      "status": "text-inspected",
+      "scopeNote": "Summer statewide coastal presence, winter South Florida concentration; bait, lure and fly methods.",
+      "type": "reference"
+    },
+    "d15-fortmyers": {
+      "title": "Tarpon season around Fort Myers",
+      "shortTitle": "Tarpon season around Fort Myers",
+      "url": "https://www.visitfortmyers.com/visit/editorial/your-guide-tarpon-fishing-season",
+      "publisher": "Visit Fort Myers",
+      "group": "Independent",
+      "checked": "2026-11-15",
+      "status": "text-inspected",
+      "scopeNote": "April–June seasonal concentration; not a current catch report.",
+      "type": "reference"
+    },
+    "d15-keys": {
+      "title": "Florida Keys fishing places and seasons",
+      "shortTitle": "Florida Keys fishing places and seasons",
+      "url": "https://visitfloridakeys.com/plan-your-trip/plan-book/insiders-guide/seven-florida-keys-fishing-factoids",
+      "publisher": "Florida Keys & Key West",
+      "group": "Independent",
+      "checked": "2026-11-15",
+      "status": "text-inspected",
+      "scopeNote": "Spring flats and channels; April–July bridge pattern; not an opening or catch promise.",
+      "type": "reference"
+    },
+    "d15-marine": {
+      "title": "Florida Keys marine forecast",
+      "shortTitle": "Florida Keys marine forecast",
+      "url": "https://www.weather.gov/key/marine",
+      "publisher": "National Weather Service",
+      "group": "Government/agency",
+      "checked": "2026-11-15",
+      "status": "text-inspected",
+      "scopeNote": "Marine zones and forecast access; no trip-day conditions inferred.",
+      "type": "reference"
+    },
+    "d15-fraser": {
+      "title": "Fraser River white sturgeon plan",
+      "shortTitle": "Fraser River white sturgeon plan",
+      "url": "https://www2.gov.bc.ca/gov/content/environment/plants-animals-ecosystems/fish/fish-management/fraser-sturgeon-plan",
+      "publisher": "Province of British Columbia",
+      "group": "Government/agency",
+      "checked": "2026-11-15",
+      "status": "text-inspected",
+      "scopeNote": "Non-tidal freshwater and sturgeon conservation licences; lower, middle and upper Fraser distinction.",
+      "type": "reference"
+    },
+    "d15-sturgeon-handling": {
+      "title": "White sturgeon handling guidelines",
+      "shortTitle": "White sturgeon handling guidelines",
+      "url": "https://www2.gov.bc.ca/assets/gov/environment/plants-animals-and-ecosystems/fish-fish-habitat/fishery-resources/fraser-river-white-sturgeon/ws_guidelines.pdf",
+      "publisher": "Province of British Columbia",
+      "group": "Government/agency",
+      "checked": "2026-11-15",
+      "status": "text-inspected",
+      "scopeNote": "130 lb line guideline; single barbless hooks; 1.5 m large-fish threshold; keep large fish in water; release handling.",
+      "type": "reference"
+    },
+    "d15-dfo-sturgeon": {
+      "title": "Tidal Fraser sturgeon rules",
+      "shortTitle": "Tidal Fraser sturgeon rules",
+      "url": "https://www.pac.dfo-mpo.gc.ca/fm-gp/rec/finfish-peche-eng.html",
+      "publisher": "Fisheries and Oceans Canada",
+      "group": "Government/agency",
+      "checked": "2026-11-15",
+      "status": "text-inspected",
+      "scopeNote": "No sturgeon retention in BC; single barbless hook in tidal Fraser; check area notices.",
+      "type": "reference"
+    },
+    "d15-buoy": {
+      "title": "Ten tips for Buoy 10",
+      "shortTitle": "Ten tips for Buoy 10",
+      "url": "https://myodfw.com/articles/10-tips-buoy-10-fishing",
+      "publisher": "Oregon Department of Fish and Wildlife",
+      "group": "Government/agency",
+      "checked": "2026-11-15",
+      "status": "text-inspected",
+      "scopeNote": "General late summer pattern, tide/wind hazards, life jackets and trolling; not a current season authorization.",
+      "type": "reference"
+    },
+    "d15-columbia": {
+      "title": "Columbia Zone regulations",
+      "shortTitle": "Columbia Zone regulations",
+      "url": "https://myodfw.com/fishing/columbia-zone",
+      "publisher": "Oregon Department of Fish and Wildlife",
+      "group": "Government/agency",
+      "checked": "2026-11-15",
+      "status": "text-inspected",
+      "scopeNote": "Annual and in-season changes; current Recreation Report takes precedence over general seasonal advice.",
+      "type": "reference"
+    },
     "species-e4b4ce359a5f": {
       "title": "Fishery source for Yakutat / Situk River",
       "url": "https://www.adfg.alaska.gov/index.cfm?adfg=ByAreaSoutheastYakutat.fishingOpps&fishery=Situk+River+sockeye+and+coho+salmon",
@@ -187511,9 +187632,9 @@
       "Cook Islands",
       "Niue"
     ],
-    "sources": 1045,
+    "sources": 1056,
     "sourceInspection": {
-      "text-inspected": 206,
+      "text-inspected": 217,
       "search-excerpt-inspected": 136,
       "page-text-inspected": 19,
       "source-linked": 92,

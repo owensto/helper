@@ -1,0 +1,12 @@
+{
+  "tool": "Codex built-in imagegen",
+  "asset": "first-tarpon-trip",
+  "prompt": "Original naturalistic landscape illustration of an Atlantic tarpon entirely in water beside a plain skiff, distant mangroves, early light, no text or catch claim.",
+  "review": "Tarpon, boat and water visible. Use contain fit to retain the full fish.",
+  "digitalSourceType": "trainedAlgorithmicMedia",
+  "files": [
+    "public/media/guides/first-tarpon-trip-640.webp",
+    "public/media/guides/first-tarpon-trip-1200.webp",
+    "public/media/guides/first-tarpon-trip-1600.webp"
+  ]
+}

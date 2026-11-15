@@ -115,11 +115,11 @@ def install(pages, root, origin, add, trips, types):
         return f'''<article class="type-card" data-type-card data-search="{E(' '.join([kind['name'], *kind['aliases'], kind['region'], *[g['term'] for g in kind['glossary']]]), quote=True)}"><a class="type-card-image" href="{type_path(kind)}" tabindex="-1">{preview_photo(type_path(kind), '(max-width: 700px) 100vw, (max-width: 1000px) 50vw, 33vw', eager=number <= 3, fallback=kind['image'])}</a><div class="type-card-meta"><span>{number:02d} / LOCAL KNOWLEDGE</span><span>{E(kind['country'])}</span></div><h2><a href="{type_path(kind)}">{E(kind['name'])}</a></h2><p>{E(kind['region'])}</p><p class="type-card-fish">{E(' · '.join(s['local_name'] for s in kind['species'] if s.get('role') != 'Bait, not the target'))}</p><a class="link" href="{type_path(kind)}">Read the trip ↗</a></article>'''
 
     intro = '<section class="type-index-hero"><div class="type-index-image">' + photo('inshore', eager=True) + '</div><div class="wrap type-index-copy"><span class="eyebrow">THE WORDS OF THE WATER</span><h1>Local names.<br>Real trips.</h1><p>Know what a local name means before you plan the day.</p><a class="quiet-button" href="#type-library">Find your trip type <span aria-hidden="true">↓</span></a></div></section>'
-    body = intro + '<section class="section wrap" id="type-library"><div class="type-index-heading"><div><span class="eyebrow">40 PRIORITY GUIDES + THE DRUM RUN</span><h2>Ask for it by name.</h2></div><p>Species, seasons, and methods change with the place. Each guide names its waters, explains the evidence, and connects to a preparation plan.</p></div><div class="type-index-tools"><label for="type-search">Find a local name, fish, or place<input type="search" id="type-search" placeholder="Try Texas Slam, specks, or greenbacks"></label><a href="/glossary/">Explore the local glossary ↗</a></div><p id="type-count" role="status" aria-live="polite">41 trip types</p><div class="type-grid">'
+    body = intro + '<section class="section wrap" id="type-library"><div class="type-index-heading"><div><span class="eyebrow">LOCAL FISHING TRIPS</span><h2>Ask for it by name.</h2></div><p>Species, seasons, and methods change with the place. Each guide names the water, explains the local method, and helps you prepare for the trip.</p></div><div class="type-index-tools"><label for="type-search">Find a local name, fish, or place<input type="search" id="type-search" placeholder="Try Texas Slam, specks, or greenbacks"></label><a href="/glossary/">Explore the local glossary ↗</a></div><p id="type-count" role="status" aria-live="polite">41 trip types</p><div class="type-grid">'
     body += ''.join(card(kind, n) for n, kind in enumerate(types, 1))
     body += '</div><p id="type-empty" hidden>No matching local name. Try a place or another term.</p><p class="photo-note">AI illustrations show the landscape character of each named destination. They are not verified photographs.</p></section><script src="/assets/trip-types.js" defer></script>'
     add('/trip-types/', 'Local fishing trip types and regional names | Castward', 'Explore local fishing trip names, species, sourced season windows, destination guides, and practical planner presets.', body, 'trip-types')
-    pages['/trip-types/']['modified'] = '2026-11-10'
+    pages['/trip-types/']['modified'] = '2026-11-15'
 
     for kind in types:
         path = type_path(kind)
@@ -170,7 +170,7 @@ def install(pages, root, origin, add, trips, types):
         if not trip['tripTypeIds']:
             continue
         path = trip['canonicalPath']
-        module = '<section class="wrap profile-trip-types" aria-label="Local classics"><span class="eyebrow">ASK FOR IT BY NAME</span><h2>Local classics.</h2><p>These linked guides explain the local names and their sources. The destination profile keeps its own research status.</p>'
+        module = '<section class="wrap profile-trip-types" aria-label="Local classics"><span class="eyebrow">ASK FOR IT BY NAME</span><h2>Local classics.</h2><p>Use these guides to understand the local names, methods, and trip choices.</p>'
         for slug in trip['tripTypeIds']:
             kind = by_slug[slug]
             module += '<div><h3>' + link(type_path(kind), kind['name']) + '</h3><p>' + E(' · '.join(s['local_name'] + ' — ' + s['standard_name'] for s in kind['species'])) + '</p><p><b>Also called:</b> ' + E(' · '.join(kind['aliases'])) + '</p>' + link(planner_url(kind, trip['id']), 'Open this local-classic preset') + '</div>'
@@ -178,7 +178,7 @@ def install(pages, root, origin, add, trips, types):
         marker = '<section class="section article-section">'
         assert marker in pages[path]['body'], path
         pages[path]['body'] = pages[path]['body'].replace(marker, module + marker, 1)
-        pages[path]['modified'] = '2026-11-10'
+        pages[path]['modified'] = max(pages[path].get('modified', ''), '2026-11-15')
 
     # Ontario's older country/state collections use plan IDs. The sourced gap is
     # outside that import, so expose it there without fabricating a production ID.

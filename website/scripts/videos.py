@@ -34,4 +34,6 @@ def install_shorts(pages, root):
         if short.get('updated'):
             pages[path]['modified'] = max(pages[path].get('modified', ''), short['updated'])
         video_id=E(short['id'],quote=True)
-        pages[path]['body']+=f'''<section class="wrap section" data-seo-skip aria-label="Watch"><h2>{E(short['title'])}</h2><p>An animated fishing story from Castward.</p><iframe width="315" height="560" style="max-width:100%;border:0" loading="lazy" src="https://www.youtube-nocookie.com/embed/{video_id}" title="{E(short['title'],quote=True)}" allow="encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe><p><a href="https://www.youtube.com/shorts/{video_id}">Watch this Short on YouTube</a></p></section>'''
+        video_open = '<details><summary>Watch this fishing story</summary>' if short.get('collapsed') else ''
+        video_close = '</details>' if short.get('collapsed') else ''
+        pages[path]['body']+=f'''<section class="wrap section" data-seo-skip aria-label="Watch"><h2>{E(short['title'])}</h2>{video_open}<p>An animated fishing story from Castward.</p><iframe width="315" height="560" style="max-width:100%;border:0" loading="lazy" src="https://www.youtube-nocookie.com/embed/{video_id}" title="{E(short['title'],quote=True)}" allow="encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe><p><a href="https://www.youtube.com/shorts/{video_id}">Watch this Short on YouTube</a></p>{video_close}</section>'''

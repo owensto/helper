@@ -8,10 +8,10 @@ const data=JSON.parse(fs.readFileSync(root+'/src/guides.json'));
 const world=JSON.parse(fs.readFileSync(root+'/src/world.json'));
 const overrides=JSON.parse(fs.readFileSync(root+'/src/title-overrides.json'));
 for(const [id,override] of Object.entries(overrides.trips||{}))if(data.trips[id])data.trips[id].title=override.title;
-const guides=[...data.articles.map(g=>({route:'/guides/'+g.slug+'/',slug:g.slug,title:g.title})),...Object.entries(data.trips).map(([id,g])=>({route:world.trips.find(t=>t.id===id).canonicalPath,slug:id,title:g.title}))];
+const guides=[...data.articles.map(g=>({route:'/guides/'+g.slug+'/',slug:g.slug,title:g.title})),...Object.entries(data.trips).map(([id,g])=>({route:world.trips.find(t=>t.id===id).canonicalPath,slug:id,title:g.title})),...Object.entries(data.tripTypes||{}).map(([slug,g])=>({route:'/trip-types/'+slug+'/',slug,title:g.title}))];
 fs.mkdirSync(shots,{recursive:true});
 (async()=>{
- const browser=await chromium.launch({headless:true});const errors=[];const report=[];
+ const browser=await chromium.launch({headless:true,...(process.env.CHROMIUM_PATH?{executablePath:process.env.CHROMIUM_PATH}:{})});const errors=[];const report=[];
  try{
   for(const width of [390,1440]){
    const context=await browser.newContext({viewport:{width,height:1000},reducedMotion:'reduce'});

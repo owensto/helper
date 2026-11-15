@@ -1711,6 +1711,50 @@
       "label": "Ice trips",
       "url": "https://anglenorth.com/ice-trips"
     },
+    "world-d15-tarpon": {
+      "label": "Tarpon rules and release practices",
+      "url": "https://myfwc.com/fishing/saltwater/recreational/tarpon/"
+    },
+    "world-d15-tarpon-faq": {
+      "label": "Tarpon rule questions",
+      "url": "https://myfwc.com/fishing/saltwater/recreational/tarpon/faqs/"
+    },
+    "world-d15-tarpon-biology": {
+      "label": "Tarpon habitat and tackle",
+      "url": "https://myfwc.com/wildlifehabitats/profiles/saltwater/tarpon/tarpon/"
+    },
+    "world-d15-fortmyers": {
+      "label": "Tarpon season around Fort Myers",
+      "url": "https://www.visitfortmyers.com/visit/editorial/your-guide-tarpon-fishing-season"
+    },
+    "world-d15-keys": {
+      "label": "Florida Keys fishing places and seasons",
+      "url": "https://visitfloridakeys.com/plan-your-trip/plan-book/insiders-guide/seven-florida-keys-fishing-factoids"
+    },
+    "world-d15-marine": {
+      "label": "Florida Keys marine forecast",
+      "url": "https://www.weather.gov/key/marine"
+    },
+    "world-d15-fraser": {
+      "label": "Fraser River white sturgeon plan",
+      "url": "https://www2.gov.bc.ca/gov/content/environment/plants-animals-ecosystems/fish/fish-management/fraser-sturgeon-plan"
+    },
+    "world-d15-sturgeon-handling": {
+      "label": "White sturgeon handling guidelines",
+      "url": "https://www2.gov.bc.ca/assets/gov/environment/plants-animals-and-ecosystems/fish-fish-habitat/fishery-resources/fraser-river-white-sturgeon/ws_guidelines.pdf"
+    },
+    "world-d15-dfo-sturgeon": {
+      "label": "Tidal Fraser sturgeon rules",
+      "url": "https://www.pac.dfo-mpo.gc.ca/fm-gp/rec/finfish-peche-eng.html"
+    },
+    "world-d15-buoy": {
+      "label": "Ten tips for Buoy 10",
+      "url": "https://myodfw.com/articles/10-tips-buoy-10-fishing"
+    },
+    "world-d15-columbia": {
+      "label": "Columbia Zone regulations",
+      "url": "https://myodfw.com/fishing/columbia-zone"
+    },
     "world-species-e4b4ce359a5f": {
       "label": "Fishery source for Yakutat / Situk River",
       "url": "https://www.adfg.alaska.gov/index.cfm?adfg=ByAreaSoutheastYakutat.fishingOpps&fishery=Situk+River+sockeye+and+coho+salmon"
