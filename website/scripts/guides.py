@@ -298,6 +298,8 @@ def install(pages, root, origin, add, trips, trip_card, intro, bread):
     for slug, guide in content.get('tripTypes', {}).items():
         path = '/trip-types/' + slug + '/'
         page = pages[path]
+        if guide.get('seoTitle'):
+            page['title'] = guide['seoTitle']
         page.update(body=render_rich(guide, content, root, origin, path),
                     desc=guide['description'], kind='article', richGuide=True, guideStyle=True,
                     modified=guide['updated'], published=guide['published'],

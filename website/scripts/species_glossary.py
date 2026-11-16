@@ -106,6 +106,9 @@ def install(pages, root, add, trips, data):
 
     for s in species:
         body = heading('Species / ' + s['name'], s['name'], s['scientificName'] or 'A broad fishing name. Confirm the exact species before the trip.')
+        if s['id'] == 'cisco':
+            body = heading('Species / Cisco', 'Cisco (Coregonus artedi): lake herring', 'Coregonus artedi is the cisco, also called lake herring or tullibee. Look at the snout when comparing it with lake whitefish: the cisco’s lower jaw reaches the snout tip or extends beyond it. Confirm the fish and local rules before planning a catch. Regional names alone are not enough.')
+            body += '<div class="wrap"><p class="small">Updated November 16, 2026 · ' + link('https://www.dnr.state.mn.us/areas/fisheries/baudette/whitefish.html', 'Minnesota DNR: cisco and whitefish identification') + '</p></div>'
         body += '<div class="wrap field-reference field-detail"><article><nav class="field-local-nav" aria-label="Species sections">' + ' · '.join(link('#' + anchor, label) for anchor, label in [('where-to-fish', 'Where to fish'), ('local-names', 'Local names'), ('seasons', 'Seasons'), ('regulations', 'Rules')]) + '</nav>'
         body += '<section id="where-to-fish"><h2>Where to fish</h2>'
         matches = matched[s['id']]
@@ -143,6 +146,8 @@ def install(pages, root, add, trips, data):
             body += '<details><summary>Country occurrence records</summary><p>' + E(' · '.join(s['regions'])) + '</p><p class="small">A country record does not establish local abundance, fishing access or a legal target.</p></details>'
         body += source_links(s['sourceUrls']) + '</section></article><aside class="field-aside"><span class="eyebrow">KNOW THE WORDS</span><h2>Local fishing language.</h2><p>Connect the fish to its regional names, methods and equipment.</p>' + link('/glossary/?q=' + s['id'], 'Search the glossary', 'btn outline') + '<p>' + link('/species/', 'All fish species') + '</p></aside></div>' + assets
         add(species_url(s['id']), s['name'] + ' fishing, local names and destinations | Castward', 'Find ' + s['name'].lower() + ' names, source-linked destinations, seasonal evidence and official fisheries links.', body, 'species-detail')
+        if s['id'] == 'cisco':
+            pages[species_url(s['id'])].update(title='Cisco (Coregonus artedi): lake herring and local names', desc='Identify cisco, also called lake herring or tullibee. Compare its snout with lake whitefish and check local names, destinations and official rules.', modified='2026-11-16')
 
     region_map = {d['country']: d['region'] for d in destinations}
     region_map.update({'Alaska': 'North America', 'Pacific Northwest': 'North America', 'North Pacific': 'North America', 'Northern Territory': 'Oceania'})

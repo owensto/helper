@@ -2031,10 +2031,10 @@
     "d15-sturgeon-handling": {
       "title": "White sturgeon handling guidelines",
       "shortTitle": "White sturgeon handling guidelines",
-      "url": "https://www2.gov.bc.ca/assets/gov/environment/plants-animals-and-ecosystems/fish-fish-habitat/fishery-resources/fraser-river-white-sturgeon/ws_guidelines.pdf",
+      "url": "https://www2.gov.bc.ca/assets/gov/sports-recreation-arts-and-culture/outdoor-recreation/fishing-and-hunting/freshwater-fishing/ws_guidelines.pdf",
       "publisher": "Province of British Columbia",
       "group": "Government/agency",
-      "checked": "2026-11-15",
+      "checked": "2026-11-16",
       "status": "text-inspected",
       "scopeNote": "130 lb line guideline; single barbless hooks; 1.5 m large-fish threshold; keep large fish in water; release handling."
     },
@@ -2044,7 +2044,7 @@
       "url": "https://www.pac.dfo-mpo.gc.ca/fm-gp/rec/finfish-peche-eng.html",
       "publisher": "Fisheries and Oceans Canada",
       "group": "Government/agency",
-      "checked": "2026-11-15",
+      "checked": "2026-11-16",
       "status": "text-inspected",
       "scopeNote": "No sturgeon retention in BC; single barbless hook in tidal Fraser; check area notices."
     },
@@ -10920,14 +10920,14 @@
     "fraser-white-sturgeon": {
       "rich": true,
       "answerFirst": true,
-      "title": "Fraser white sturgeon fishing",
+      "title": "Fraser River catch-and-release sturgeon fishing",
       "description": "Plan a Fraser River catch-and-release sturgeon trip: tidal versus freshwater licences, a release checklist, suitable tackle and questions for the guide.",
       "category": "LOCAL TRIP / PREPARATION",
       "destination": "na-ca-bc-001",
       "hero": {
         "route": "/trip-types/fraser-white-sturgeon/"
       },
-      "updated": "2026-11-15",
+      "updated": "2026-11-16",
       "published": "2026-11-10",
       "quickAnswer": "Fraser River white sturgeon fishing is catch and release. Choose the exact river reach before you buy a licence: tidal and non-tidal trips use different rules. For non-tidal sturgeon fishing, British Columbia requires both a freshwater licence and a White Sturgeon Conservation Licence. Agree on an in-water release plan before you fish.",
       "facts": [
@@ -10956,7 +10956,7 @@
       "sections": [
         {
           "id": "licences",
-          "title": "Which licence do you need on the Fraser River?",
+          "title": "Can you catch sturgeon in the Fraser River?",
           "paragraphs": [
             "“Fraser River” is not enough detail for a licence purchase. Ask the guide to name the reach and confirm whether the trip crosses a tidal boundary. A catch-and-release plan still needs the appropriate licence and must comply with closures.",
             "The provincial sturgeon plan requires a basic freshwater licence plus the White Sturgeon Conservation Licence upstream of the tidal zone. DFO manages tidal sport-fishing rules. Check the exact water, date and licence conditions before you leave."
@@ -10992,9 +10992,9 @@
         },
         {
           "id": "release",
-          "title": "How should a Fraser sturgeon be released?",
+          "title": "What are the Fraser River sturgeon catch-and-release rules?",
           "paragraphs": [
-            "B.C.’s handling guide defines a large sturgeon as 1.5 metres or longer and says never to lift it from the water. It also advises against ropes, tailers, towing by the tail, and dragging a fish onto a dock or bank. Choose a release location before fishing.",
+            "Use a single barbless hook and plan a quick, in-water release. B.C.’s guideline defines a large sturgeon as 1.5 metres or longer: never lift it from the water. Do not use ropes or tailers, tow it by the tail, or drag it onto a bank or dock.",
             "Have the camera ready and keep any photo brief. The guidance says to recover the fish nose-first into the current and release it when it struggles to swim. Let the guide manage the fish; do not enter deep or fast water to improve a photograph."
           ],
           "sources": [
@@ -11059,9 +11059,9 @@
         },
         {
           "id": "season",
-          "title": "When should you plan the trip?",
+          "title": "What is the best month to catch sturgeon?",
           "paragraphs": [
-            "Do not treat an advertised year-round trip as permission to fish every reach on every day. Ask the guide to explain the intended water and the current restrictions for your date. A seasonal sales calendar does not replace the area regulations.",
+            "Choose your river reach before choosing a month. Seasonal opportunities and closures differ along the Fraser, so check the rules for your exact date and location. An advertised year-round trip does not mean every reach is open. Ask the guide to explain the current restrictions before you book.",
             "For a first visit, choose a date with room to change the plan. Ask when river and weather conditions are assessed, when the guide contacts you, and what happens if the outing cannot proceed. Keep that answer with the meeting address."
           ],
           "sources": [
@@ -11166,7 +11166,8 @@
           "q": "Is a high dock suitable for sturgeon fishing?",
           "a": "The provincial guideline says elevated docks are unsuitable for landing sturgeon. Choose a location where the fish can remain in the water."
         }
-      ]
+      ],
+      "seoTitle": "Fraser River sturgeon: catch-and-release rules"
     },
     "buoy-10-salmon": {
       "rich": true,
