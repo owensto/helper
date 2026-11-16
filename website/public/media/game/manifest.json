@@ -1,0 +1,389 @@
+[
+  {
+    "slot": "river",
+    "files": [
+      "river-1536.webp",
+      "river-1152.webp",
+      "river-768.webp",
+      "river-400.webp"
+    ],
+    "alt": "A broad mountain river pool at first light, seen from the bank.",
+    "prompt": "Use case: photorealistic-natural background plate for a first-person fishing game. The camera is at the eye height of an angler who stands at the water's edge (or on a low boat deck) and looks straight out across open water. The horizon / far shoreline sits at about 36% from the top of the frame, level. The lower 60% of the frame is open, unobstructed water: no boats, no people, no rocks, no posts, no plants and no objects in the central and lower water, so game elements can be drawn there. Shoreline detail only at the far side and at the extreme left and right edges in the upper half. No fishing rod, no hands, no people, no animals, no text, no logos, no watermarks. Natural documentary photograph look, soft natural light, fine detail, slightly desaturated film color, believable water texture with gentle ripples. Invent a new composition; do not imitate any existing photograph, photographer or brand. A broad, slow mountain river pool at first light. Conifer forest on both far banks, low mist, soft mountains behind, warm sun glow low in the sky left of center. Green-gold reflective water with gentle current lines.",
+    "ai_generated": true,
+    "width": 1536,
+    "height": 1024,
+    "digital_source_type": "http://cv.iptc.org/newscodes/digitalsourcetype/trainedAlgorithmicMedia",
+    "generator": "Built-in GPT Image",
+    "suggested_use": "Cast & Catch game scene; scripts/fishing_game.py"
+  },
+  {
+    "slot": "lake",
+    "files": [
+      "lake-1536.webp",
+      "lake-1152.webp",
+      "lake-768.webp",
+      "lake-400.webp"
+    ],
+    "alt": "A calm northern lake at dawn, seen from the shore.",
+    "prompt": "Use case: photorealistic-natural background plate for a first-person fishing game. The camera is at the eye height of an angler who stands at the water's edge (or on a low boat deck) and looks straight out across open water. The horizon / far shoreline sits at about 36% from the top of the frame, level. The lower 60% of the frame is open, unobstructed water: no boats, no people, no rocks, no posts, no plants and no objects in the central and lower water, so game elements can be drawn there. Shoreline detail only at the far side and at the extreme left and right edges in the upper half. No fishing rod, no hands, no people, no animals, no text, no logos, no watermarks. Natural documentary photograph look, soft natural light, fine detail, slightly desaturated film color, believable water texture with gentle ripples. Invent a new composition; do not imitate any existing photograph, photographer or brand. A calm northern lake at golden dawn. Far pine shoreline with light mist, soft pastel sky, glassy water with small ripples and pale reflections.",
+    "ai_generated": true,
+    "width": 1536,
+    "height": 1024,
+    "digital_source_type": "http://cv.iptc.org/newscodes/digitalsourcetype/trainedAlgorithmicMedia",
+    "generator": "Built-in GPT Image",
+    "suggested_use": "Cast & Catch game scene; scripts/fishing_game.py"
+  },
+  {
+    "slot": "ice",
+    "files": [
+      "ice-1536.webp",
+      "ice-1152.webp",
+      "ice-768.webp",
+      "ice-400.webp"
+    ],
+    "alt": "Open dark water at the edge of lake ice in winter.",
+    "prompt": "Use case: photorealistic-natural background plate for a first-person fishing game. The camera is at the eye height of an angler who stands at the water's edge (or on a low boat deck) and looks straight out across open water. The horizon / far shoreline sits at about 36% from the top of the frame, level. The lower 60% of the frame is open, unobstructed water: no boats, no people, no rocks, no posts, no plants and no objects in the central and lower water, so game elements can be drawn there. Shoreline detail only at the far side and at the extreme left and right edges in the upper half. No fishing rod, no hands, no people, no animals, no text, no logos, no watermarks. Natural documentary photograph look, soft natural light, fine detail, slightly desaturated film color, believable water texture with gentle ripples. Invent a new composition; do not imitate any existing photograph, photographer or brand. The open dark water of a wide lead at the edge of lake ice in deep winter, blue hour. Snow-covered ice shelf along the far side and the extreme left and right upper edges, distant spruce shoreline, cold pink-blue sky. The lower 60% is dark, cold open water with small ripples.",
+    "ai_generated": true,
+    "width": 1536,
+    "height": 1024,
+    "digital_source_type": "http://cv.iptc.org/newscodes/digitalsourcetype/trainedAlgorithmicMedia",
+    "generator": "Built-in GPT Image",
+    "suggested_use": "Cast & Catch game scene; scripts/fishing_game.py"
+  },
+  {
+    "slot": "flats",
+    "files": [
+      "flats-1536.webp",
+      "flats-1152.webp",
+      "flats-768.webp",
+      "flats-400.webp"
+    ],
+    "alt": "A clear tropical saltwater flat with mangrove islands on the horizon.",
+    "prompt": "Use case: photorealistic-natural background plate for a first-person fishing game. The camera is at the eye height of an angler who stands at the water's edge (or on a low boat deck) and looks straight out across open water. The horizon / far shoreline sits at about 36% from the top of the frame, level. The lower 60% of the frame is open, unobstructed water: no boats, no people, no rocks, no posts, no plants and no objects in the central and lower water, so game elements can be drawn there. Shoreline detail only at the far side and at the extreme left and right edges in the upper half. No fishing rod, no hands, no people, no animals, no text, no logos, no watermarks. Natural documentary photograph look, soft natural light, fine detail, slightly desaturated film color, believable water texture with gentle ripples. Invent a new composition; do not imitate any existing photograph, photographer or brand. A tropical saltwater flat at mid-morning. Clear shallow turquoise water over pale sand with soft ripple light patterns, low green mangrove islands along the horizon, bright sky with a few clouds.",
+    "ai_generated": true,
+    "width": 1536,
+    "height": 1024,
+    "digital_source_type": "http://cv.iptc.org/newscodes/digitalsourcetype/trainedAlgorithmicMedia",
+    "generator": "Built-in GPT Image",
+    "suggested_use": "Cast & Catch game scene; scripts/fishing_game.py"
+  },
+  {
+    "slot": "offshore",
+    "files": [
+      "offshore-1536.webp",
+      "offshore-1152.webp",
+      "offshore-768.webp",
+      "offshore-400.webp"
+    ],
+    "alt": "Deep blue open ocean under tall evening clouds.",
+    "prompt": "Use case: photorealistic-natural background plate for a first-person fishing game. The camera is at the eye height of an angler who stands at the water's edge (or on a low boat deck) and looks straight out across open water. The horizon / far shoreline sits at about 36% from the top of the frame, level. The lower 60% of the frame is open, unobstructed water: no boats, no people, no rocks, no posts, no plants and no objects in the central and lower water, so game elements can be drawn there. Shoreline detail only at the far side and at the extreme left and right edges in the upper half. No fishing rod, no hands, no people, no animals, no text, no logos, no watermarks. Natural documentary photograph look, soft natural light, fine detail, slightly desaturated film color, believable water texture with gentle ripples. Invent a new composition; do not imitate any existing photograph, photographer or brand. Deep blue open ocean far offshore in late golden afternoon, seen from a low boat deck (the boat itself is not visible). Long gentle swells, clean horizon, towering distant cumulus clouds lit warm.",
+    "ai_generated": true,
+    "width": 1536,
+    "height": 1024,
+    "digital_source_type": "http://cv.iptc.org/newscodes/digitalsourcetype/trainedAlgorithmicMedia",
+    "generator": "Built-in GPT Image",
+    "suggested_use": "Cast & Catch game scene; scripts/fishing_game.py"
+  },
+  {
+    "slot": "reef",
+    "files": [
+      "reef-1536.webp",
+      "reef-1152.webp",
+      "reef-768.webp",
+      "reef-400.webp"
+    ],
+    "alt": "Clear turquoise water over a patch reef with a small cay on the horizon.",
+    "prompt": "Use case: photorealistic-natural background plate for a first-person fishing game. The camera is at the eye height of an angler who stands at the water's edge (or on a low boat deck) and looks straight out across open water. The horizon / far shoreline sits at about 36% from the top of the frame, level. The lower 60% of the frame is open, unobstructed water: no boats, no people, no rocks, no posts, no plants and no objects in the central and lower water, so game elements can be drawn there. Shoreline detail only at the far side and at the extreme left and right edges in the upper half. No fishing rod, no hands, no people, no animals, no text, no logos, no watermarks. Natural documentary photograph look, soft natural light, fine detail, slightly desaturated film color, believable water texture with gentle ripples. Invent a new composition; do not imitate any existing photograph, photographer or brand. Clear tropical water over a patch reef on a sunny day. Turquoise water with darker coral patches visible under the surface in the far-middle distance, a small low sandy cay with a few palms on the horizon at the right, bright sky.",
+    "ai_generated": true,
+    "width": 1536,
+    "height": 1024,
+    "digital_source_type": "http://cv.iptc.org/newscodes/digitalsourcetype/trainedAlgorithmicMedia",
+    "generator": "Built-in GPT Image",
+    "suggested_use": "Cast & Catch game scene; scripts/fishing_game.py"
+  },
+  {
+    "slot": "fish",
+    "alt": "Side-view illustration of each game species.",
+    "prompt": "one single fish, exact side profile, head pointing to the RIGHT, the whole fish inside the frame with a small margin, centered, filling about 85 percent of the frame width. Anatomically accurate for the named species: correct body shape, fin count, fin positions, mouth, colours and markings. Style: a detailed realistic natural-history field-guide illustration with the look of a fresh, wet fish; soft even studio light; fine scale and fin-ray detail. Background: plain pure white (#ffffff), completely empty. No shadow on the ground, no water, no plants, no hook, no line, no hands, no text, no labels, no border, no watermark. Original artwork; do not copy any existing illustration or photograph.",
+    "species": [
+      {
+        "id": "arctic-char",
+        "subject": "Arctic char (Salvelinus alpinus), spawning colours",
+        "files": [
+          "fish/arctic-char-640.webp",
+          "fish/arctic-char-320.webp"
+        ]
+      },
+      {
+        "id": "arctic-grayling",
+        "subject": "Arctic grayling (Thymallus arcticus)",
+        "files": [
+          "fish/arctic-grayling-640.webp",
+          "fish/arctic-grayling-320.webp"
+        ]
+      },
+      {
+        "id": "atlantic-salmon",
+        "subject": "Atlantic salmon (Salmo salar), silver sea-run adult",
+        "files": [
+          "fish/atlantic-salmon-640.webp",
+          "fish/atlantic-salmon-320.webp"
+        ]
+      },
+      {
+        "id": "atlantic-tarpon",
+        "subject": "Atlantic tarpon (Megalops atlanticus)",
+        "files": [
+          "fish/atlantic-tarpon-640.webp",
+          "fish/atlantic-tarpon-320.webp"
+        ]
+      },
+      {
+        "id": "barracuda",
+        "subject": "Great barracuda (Sphyraena barracuda)",
+        "files": [
+          "fish/barracuda-640.webp",
+          "fish/barracuda-320.webp"
+        ]
+      },
+      {
+        "id": "barramundi",
+        "subject": "Barramundi (Lates calcarifer)",
+        "files": [
+          "fish/barramundi-640.webp",
+          "fish/barramundi-320.webp"
+        ]
+      },
+      {
+        "id": "black-marlin",
+        "subject": "Black marlin (Istiompax indica)",
+        "files": [
+          "fish/black-marlin-640.webp",
+          "fish/black-marlin-320.webp"
+        ]
+      },
+      {
+        "id": "blue-marlin",
+        "subject": "Blue marlin (Makaira nigricans)",
+        "files": [
+          "fish/blue-marlin-640.webp",
+          "fish/blue-marlin-320.webp"
+        ]
+      },
+      {
+        "id": "bonefish",
+        "subject": "Bonefish (Albula vulpes)",
+        "files": [
+          "fish/bonefish-640.webp",
+          "fish/bonefish-320.webp"
+        ]
+      },
+      {
+        "id": "brook-trout",
+        "subject": "Brook trout (Salvelinus fontinalis)",
+        "files": [
+          "fish/brook-trout-640.webp",
+          "fish/brook-trout-320.webp"
+        ]
+      },
+      {
+        "id": "brown-trout",
+        "subject": "Brown trout (Salmo trutta)",
+        "files": [
+          "fish/brown-trout-640.webp",
+          "fish/brown-trout-320.webp"
+        ]
+      },
+      {
+        "id": "burbot",
+        "subject": "Burbot (Lota lota)",
+        "files": [
+          "fish/burbot-640.webp",
+          "fish/burbot-320.webp"
+        ]
+      },
+      {
+        "id": "common-snook",
+        "subject": "Common snook (Centropomus undecimalis)",
+        "files": [
+          "fish/common-snook-640.webp",
+          "fish/common-snook-320.webp"
+        ]
+      },
+      {
+        "id": "giant-trevally",
+        "subject": "Giant trevally (Caranx ignobilis)",
+        "files": [
+          "fish/giant-trevally-640.webp",
+          "fish/giant-trevally-320.webp"
+        ]
+      },
+      {
+        "id": "grouper",
+        "subject": "Black grouper (Mycteroperca bonaci)",
+        "files": [
+          "fish/grouper-640.webp",
+          "fish/grouper-320.webp"
+        ]
+      },
+      {
+        "id": "lake-sturgeon",
+        "subject": "Lake sturgeon (Acipenser fulvescens)",
+        "files": [
+          "fish/lake-sturgeon-640.webp",
+          "fish/lake-sturgeon-320.webp"
+        ]
+      },
+      {
+        "id": "lake-trout",
+        "subject": "Lake trout (Salvelinus namaycush)",
+        "files": [
+          "fish/lake-trout-640.webp",
+          "fish/lake-trout-320.webp"
+        ]
+      },
+      {
+        "id": "largemouth-bass",
+        "subject": "Largemouth bass (Micropterus salmoides)",
+        "files": [
+          "fish/largemouth-bass-640.webp",
+          "fish/largemouth-bass-320.webp"
+        ]
+      },
+      {
+        "id": "mahi-mahi",
+        "subject": "Mahi-mahi, dolphinfish (Coryphaena hippurus), adult male",
+        "files": [
+          "fish/mahi-mahi-640.webp",
+          "fish/mahi-mahi-320.webp"
+        ]
+      },
+      {
+        "id": "muskellunge",
+        "subject": "Muskellunge (Esox masquinongy)",
+        "files": [
+          "fish/muskellunge-640.webp",
+          "fish/muskellunge-320.webp"
+        ]
+      },
+      {
+        "id": "northern-pike",
+        "subject": "Northern pike (Esox lucius)",
+        "files": [
+          "fish/northern-pike-640.webp",
+          "fish/northern-pike-320.webp"
+        ]
+      },
+      {
+        "id": "peacock-bass",
+        "subject": "Butterfly peacock bass (Cichla ocellaris)",
+        "files": [
+          "fish/peacock-bass-640.webp",
+          "fish/peacock-bass-320.webp"
+        ]
+      },
+      {
+        "id": "permit",
+        "subject": "Permit (Trachinotus falcatus)",
+        "files": [
+          "fish/permit-640.webp",
+          "fish/permit-320.webp"
+        ]
+      },
+      {
+        "id": "rainbow-trout",
+        "subject": "Rainbow trout (Oncorhynchus mykiss)",
+        "files": [
+          "fish/rainbow-trout-640.webp",
+          "fish/rainbow-trout-320.webp"
+        ]
+      },
+      {
+        "id": "red-drum",
+        "subject": "Red drum, redfish (Sciaenops ocellatus), with the black tail spot",
+        "files": [
+          "fish/red-drum-640.webp",
+          "fish/red-drum-320.webp"
+        ]
+      },
+      {
+        "id": "sailfish",
+        "subject": "Atlantic sailfish (Istiophorus platypterus), sail raised",
+        "files": [
+          "fish/sailfish-640.webp",
+          "fish/sailfish-320.webp"
+        ]
+      },
+      {
+        "id": "smallmouth-bass",
+        "subject": "Smallmouth bass (Micropterus dolomieu)",
+        "files": [
+          "fish/smallmouth-bass-640.webp",
+          "fish/smallmouth-bass-320.webp"
+        ]
+      },
+      {
+        "id": "snapper",
+        "subject": "Red snapper (Lutjanus campechanus)",
+        "files": [
+          "fish/snapper-640.webp",
+          "fish/snapper-320.webp"
+        ]
+      },
+      {
+        "id": "taimen",
+        "subject": "Taimen (Hucho taimen)",
+        "files": [
+          "fish/taimen-640.webp",
+          "fish/taimen-320.webp"
+        ]
+      },
+      {
+        "id": "tigerfish",
+        "subject": "African tigerfish (Hydrocynus vittatus)",
+        "files": [
+          "fish/tigerfish-640.webp",
+          "fish/tigerfish-320.webp"
+        ]
+      },
+      {
+        "id": "wahoo",
+        "subject": "Wahoo (Acanthocybium solandri)",
+        "files": [
+          "fish/wahoo-640.webp",
+          "fish/wahoo-320.webp"
+        ]
+      },
+      {
+        "id": "walleye",
+        "subject": "Walleye (Sander vitreus)",
+        "files": [
+          "fish/walleye-640.webp",
+          "fish/walleye-320.webp"
+        ]
+      },
+      {
+        "id": "yellow-perch",
+        "subject": "Yellow perch (Perca flavescens)",
+        "files": [
+          "fish/yellow-perch-640.webp",
+          "fish/yellow-perch-320.webp"
+        ]
+      },
+      {
+        "id": "yellowfin-tuna",
+        "subject": "Yellowfin tuna (Thunnus albacares)",
+        "files": [
+          "fish/yellowfin-tuna-640.webp",
+          "fish/yellowfin-tuna-320.webp"
+        ]
+      }
+    ],
+    "ai_generated": true,
+    "width": 1536,
+    "height": 1024,
+    "digital_source_type": "http://cv.iptc.org/newscodes/digitalsourcetype/trainedAlgorithmicMedia",
+    "generator": "Built-in GPT Image",
+    "suggested_use": "Cast & Catch catch card and Fish Log"
+  }
+]

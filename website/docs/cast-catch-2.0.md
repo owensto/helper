@@ -1,3 +1,5 @@
+> Replaced on 2026-11-15 by Cast & Catch 4: one file (`public/assets/game-play.js`), photo scenes in `public/media/game/`, no three.js. This document describes the earlier game and is kept for history only. Current notes: `seo-reports/agents/castward-function-fable/castward-function.md`.
+
 # Cast & Catch 2.0 — Game 4 polish
 
 This work stays in the `jobs/game4/website` workspace. No deployment was made.
