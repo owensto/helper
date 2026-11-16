@@ -31,6 +31,16 @@
   function wallNow(zone) {
     return localDate(Date.now(), zone) + ' ' + new Intl.DateTimeFormat('en-GB', {timeZone:zone, hour:'2-digit', minute:'2-digit', hourCycle:'h23'}).format(new Date());
   }
+  // Tide event times are station wall-clock strings ("YYYY-MM-DD HH:MM"); show them as "Today 6:50 PM".
+  function wallLabel(t, now) {
+    const m = /^(\d{4}-\d{2}-\d{2})[ T](\d{2}):(\d{2})/.exec(String(t || ''));
+    if (!m) return String(t || '');
+    const h = Number(m[2]), clock = `${h % 12 || 12}:${m[3]} ${h < 12 ? 'AM' : 'PM'}`;
+    const day = new Date(m[1] + 'T12:00:00Z'), today = now ? new Date(String(now).slice(0, 10) + 'T12:00:00Z') : null;
+    const diff = today ? Math.round((day - today) / 86400000) : NaN;
+    const name = diff === 0 ? 'Today' : diff === 1 ? 'Tomorrow' : day.toLocaleDateString('en-US', {timeZone:'UTC', weekday:'short', month:'short', day:'numeric'});
+    return name + ' ' + clock;
+  }
   const timeLabel = (seconds, zone) => Number.isFinite(seconds) ? new Intl.DateTimeFormat('en-US', {timeZone:zone, hour:'numeric', minute:'2-digit'}).format(new Date(seconds * 1000)) : 'Unavailable';
   const dayLabel = (seconds, zone) => new Intl.DateTimeFormat('en-US', {timeZone:zone, weekday:'short', month:'short', day:'numeric'}).format(new Date(seconds * 1000));
   const currentIndex = times => Math.max(0, times.findLastIndex(t => t <= Date.now() / 1000));
@@ -180,7 +190,7 @@
     }).join('');
   }
   function eventsHTML(events, unit) {
-    return '<div class="forecast-hours"><table><caption>High and low times</caption><thead><tr><th>Local date and time</th><th>Tide</th><th>Height '+unit+'</th></tr></thead><tbody>'+events.map(p => `<tr><td>${esc(p.t)}</td><td>${p.type === 'H' ? 'High' : 'Low'}</td><td>${num(p.v, 2)}</td></tr>`).join('')+'</tbody></table></div>';
+    return '<div class="forecast-hours"><table><caption>High and low times</caption><thead><tr><th>Local date and time</th><th>Tide</th><th>Height '+unit+'</th></tr></thead><tbody>'+events.map(p => `<tr><td>${esc(wallLabel(p.t))}</td><td>${p.type === 'H' ? 'High' : 'Low'}</td><td>${num(p.v, 2)}</td></tr>`).join('')+'</tbody></table></div>';
   }
   function tidesHTML(data) {
     const source = data.model ? '<h3>Modelled sea-level estimate</h3><p>No NOAA prediction station lies within 100 km. Open-Meteo heights use mean sea level (MSL), not MLLW. Highs and lows are approximate hourly model extrema. This estimate is not suitable for navigation.</p>' : `<h3>NOAA: ${esc(data.station.name)}</h3><p>Station ${esc(data.station.id)} · ${num(data.station.distance, 1)} km from this location · heights above MLLW. Times use station local time (LST/LDT). The nearest station may use a different inlet or waterway.</p>`;
@@ -188,7 +198,7 @@
     const now=wallNow(data.zone), upcoming=['H','L'].map(type=>data.events.find(p=>p.type===type&&p.t>now));
     const at=data.curve.findIndex(p=>p.t>=now), delta=at>0?data.curve[at].v-data.curve[at-1].v:null;
     const direction=delta===null?'Tide outlook':Math.abs(delta)<.005?'Near the turn':delta>0?'Water on the rise.':'Water on the ebb.';
-    const overview=`<section class="forecast-hero tide-overview"><span class="eyebrow">A LITTLE RHYTHM TO YOUR DAY</span><h3>${direction}</h3><div class="forecast-metrics">${upcoming.map((p,i)=>`<div><small>NEXT ${i?'LOW ↓':'HIGH ↑'}</small><strong>${p?num(p.v,1)+' <em>'+data.unit+'</em>':'—'}</strong><span>${p?esc(p.t):'No prediction available'}</span></div>`).join('')}<div><small>SUNRISE</small><strong>${timeLabel(data.sun.daily.sunrise[0],data.zone)}</strong><span>Sunset ${timeLabel(data.sun.daily.sunset[0],data.zone)}</span></div></div><small class="forecast-scene-note">${data.model?'Model estimate · MSL':'NOAA prediction · MLLW'} · ${esc(data.zone)} · Illustrative coastal scene</small></section>`;
+    const overview=`<section class="forecast-hero tide-overview"><span class="eyebrow">A LITTLE RHYTHM TO YOUR DAY</span><h3>${direction}</h3><div class="forecast-metrics">${upcoming.map((p,i)=>`<div><small>NEXT ${i?'LOW ↓':'HIGH ↑'}</small><strong>${p?num(p.v,1)+' <em>'+data.unit+'</em>':'—'}</strong><span>${p?esc(wallLabel(p.t,now)):'No prediction available'}</span></div>`).join('')}<div><small>SUNRISE</small><strong>${timeLabel(data.sun.daily.sunrise[0],data.zone)}</strong><span>Sunset ${timeLabel(data.sun.daily.sunset[0],data.zone)}</span></div></div><small class="forecast-scene-note">${data.model?'Model estimate · MSL':'NOAA prediction · MLLW'} · ${esc(data.zone)} · Illustrative coastal scene</small></section>`;
     return overview + '<div class="tide-source-note">'+source + `<p>${sunText(data.sun)}</p></div>` + reference + curveHTML(data.curve, data.curveEvents, data.unit) + (!data.model && data.curveStation.id !== data.station.id ? '<h3>Nearest station: '+esc(data.station.name)+'</h3>' : '') + eventsHTML(data.events, data.unit);
   }
   async function loadCard(card) {
@@ -201,7 +211,7 @@
       target.textContent = 'Load tides…';
       jobs.push(tides(place,unit).then(d => {
         const now = wallNow(d.zone), next = ['H', 'L'].map(type => d.events.find(p => p.type === type && p.t > now));
-        target.innerHTML = '<p>'+next.map((p, i) => p ? `Next ${i ? 'low' : 'high'}: ${esc(p.t)} (${num(p.v, 1)} ${d.unit})` : `Next ${i ? 'low' : 'high'} unavailable`).join(' · ')+'</p><small>'+ (d.model ? 'Modelled estimate · MSL · approximate times' : 'NOAA '+esc(d.station.name)+' · MLLW · '+num(d.station.distance, 1)+' km away')+' · '+esc(d.zone)+'</small>';
+        target.innerHTML = '<p>'+next.map((p, i) => p ? `Next ${i ? 'low' : 'high'}: ${esc(wallLabel(p.t, now))} (${num(p.v, 1)} ${d.unit})` : `Next ${i ? 'low' : 'high'} unavailable`).join(' · ')+'</p><small>'+ (d.model ? 'Modelled estimate · MSL · approximate times' : 'NOAA '+esc(d.station.name)+' · MLLW · '+num(d.station.distance, 1)+' km away')+' · '+esc(d.zone)+'</small>';
       }).catch(() => { target.textContent = 'Tides are unavailable. Open the full tool to try again.'; }));
     }
     await Promise.allSettled(jobs);
@@ -222,12 +232,12 @@
     setInterval(()=>{if(place&&!document.hidden)show(place,true);},900000);
     document.addEventListener('visibilitychange',()=>{if(!document.hidden&&place&&Date.now()-Number(tool.dataset.updated||0)>900000)show(place,true);});
     async function show(next, refresh=false) {
-      place = next;
+      place = {lat:next.lat, lon:next.lon, name:next.name};
       const run = ++revision, unit = units.value;
       const query = new URLSearchParams({lat:place.lat, lon:place.lon, name:place.name});
       history.replaceState(null, '', location.pathname+'?'+query);
       tool.querySelector('[data-other-tool]').href = '/tools/'+(tool.dataset.conditionsTool === 'weather' ? 'tides' : 'weather')+'/?'+query;
-      if(!refresh)output.innerHTML='<div class="forecast-skeleton" aria-hidden="true"><i></i><i></i><i></i></div>'; output.setAttribute('aria-busy','true'); status.textContent = 'Load forecast for '+place.name+'…';
+      if(!refresh)output.innerHTML='<div class="forecast-skeleton" aria-hidden="true"><i></i><i></i><i></i></div>'; if(!refresh&&next.pick){const top=output.getBoundingClientRect().top;if(top>innerHeight*.55)output.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'start'});} output.setAttribute('aria-busy','true'); status.textContent = 'Load forecast for '+place.name+'…';
       write(recentKey,[next,...read(recentKey).filter(p=>!same(p,next))]);placeButtons();
       try {
         if (tool.dataset.conditionsTool === 'weather') {
@@ -264,7 +274,7 @@
         for (const p of data.results || []) {
           const button = document.createElement('button'); button.type = 'button';
           const name = [p.name, p.admin1, p.country].filter(Boolean).join(', '); button.textContent = name;
-          button.onclick = () => { ++searchRevision; results.replaceChildren(); show({lat:p.latitude, lon:p.longitude, name}); };
+          button.onclick = () => { ++searchRevision; results.replaceChildren(); show({lat:p.latitude, lon:p.longitude, name, pick:true}); };
           results.append(button);
         }
       } catch (_) { if (run === searchRevision) status.textContent = 'Place search is unavailable. Please try again.'; }
@@ -272,7 +282,7 @@
     tool.querySelector('[data-locate]').addEventListener('click', () => {
       if (!navigator.geolocation) { status.textContent = 'This browser has no location service.'; return; }
       status.textContent = 'Wait for location permission…';
-      navigator.geolocation.getCurrentPosition(p => show({lat:p.coords.latitude, lon:p.coords.longitude, name:'My location'}), () => { status.textContent = 'Location is unavailable or permission was refused. Search for a place.'; }, {timeout:12000, maximumAge:300000});
+      navigator.geolocation.getCurrentPosition(p => show({lat:p.coords.latitude, lon:p.coords.longitude, name:'My location', pick:true}), () => { status.textContent = 'Location is unavailable or permission was refused. Search for a place.'; }, {timeout:12000, maximumAge:300000});
     });
     units.addEventListener('change', () => {try{localStorage.setItem('castward.units',units.value);}catch{} if (place) show(place); });
     const params = new URLSearchParams(location.search);

@@ -128,6 +128,7 @@
     try{libraries ||= Promise.all([load('/assets/vendor/gsap-3.13.0.min.js'),load('/assets/vendor/ScrollTrigger-3.13.0.min.js')]);await libraries;}catch{return;}
     if(version!==startVersion||reduced.matches||paused||!desktop.matches)return;
     gsap.registerPlugin(ScrollTrigger);
+    gsap.config({nullTargetWarn:false});
     context=gsap.matchMedia();
     context.add('(prefers-reduced-motion: no-preference)',()=>{
       gsap.from('.line-mask>span',{yPercent:110,duration:.55,stagger:.06,ease:'power3.out'});
