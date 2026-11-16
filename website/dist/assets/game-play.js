@@ -103,6 +103,44 @@
     c.bezierCurveTo(-len * .1, w * .9, len * .32, w, len * .5, 0); c.fill();
     c.restore();
   }
+  // Species photos are white rectangles. Cut the white out once, then draw the cached canvas.
+  const pics = Object.create(null);
+  function loadFish(id) {
+    let rec = pics[id];
+    if (rec) return rec.cv || null;
+    rec = pics[id] = { cv: null };
+    const img = new Image();
+    img.decoding = 'async';
+    img.onload = () => {
+      try {
+        const w = img.naturalWidth, h = img.naturalHeight, c = document.createElement('canvas');
+        c.width = w; c.height = h;
+        const g = c.getContext('2d');
+        g.drawImage(img, 0, 0);
+        const im = g.getImageData(0, 0, w, h), d = im.data, row = w * 4;
+        const corners = [0, row - 4, (h - 1) * row, h * row - 4];
+        let br = 0, bgc = 0, bb = 0;
+        for (const i of corners) { br += d[i]; bgc += d[i + 1]; bb += d[i + 2]; }
+        br /= 4; bgc /= 4; bb /= 4;
+        for (let i = 0; i < d.length; i += 4) {
+          const dr = d[i] - br, dg = d[i + 1] - bgc, db = d[i + 2] - bb;
+          const dist = Math.sqrt(dr * dr + dg * dg + db * db);
+          if (dist < 34) d[i + 3] = dist < 14 ? 0 : Math.min(255, (dist - 14) * 12.5);
+        }
+        g.putImageData(im, 0, 0);
+        rec.cv = c;
+      } catch {}
+    };
+    img.src = FISH_ART + id + '-320.webp';
+    return null;
+  }
+  function paintFish(c, sp, len, dir, tilt) {
+    const pic = pics[sp.id] && pics[sp.id].cv;
+    c.save(); c.rotate(tilt || 0); c.scale(dir < 0 ? -1 : 1, 1);
+    if (pic) { const w = len * 1.42, h = w * pic.height / pic.width; c.drawImage(pic, -w * .58, -h * .48, w, h); }
+    else drawFish(c, sp, len);
+    c.restore();
+  }
 
   /* ---------- Sound and touch feedback (small synth, off until the player turns it on) ---------- */
   let audio = null;
@@ -134,6 +172,10 @@
   let water = 'river', place = null, pool = [], gear = C.effects(career);
   let phase = 'ready', fish = [], lure = null, cast = null, wait = null, F = null, hooked = null, lost = null;
   let t = 0, rings = [], drops = [], hold = false, aim = null, keyAim = false, paused = false, visible = true, streak = 0, lastCatch = null, tapStart = null, rodKick = 0;
+  let shake = 0, boil = null, lift = null, aid = false;
+  const told = {};
+  const markPause = v => { paused = v; root.dataset.paused = v ? 'true' : 'false'; };
+  markPause(false);
   const still = () => reducedQuery.matches;
   const proj = (u, d) => { const k = Math.pow(1 - d, 1.7); return { x: W / 2 + u * W * (.2 + .46 * Math.pow(1 - d, 1.2)), y: hzY + (H - hzY) * (.05 + .9 * k), s: .2 + .8 * Math.pow(1 - d, 1.3) }; };
   function unproj(x, y) { const k = clamp(((y - hzY) / (H - hzY) - .05) / .9, 0, 1), d = clamp(1 - Math.pow(k, 1 / 1.7), .14, .9); return { u: clamp((x - W / 2) / (W * (.2 + .46 * Math.pow(1 - d, 1.2))), -1, 1), d }; }
@@ -167,6 +209,12 @@
   }
 
   /* ---------- Fish in the water ---------- */
+  function kindOf(sp, prof) {
+    if (prof.jump) return 'jump';
+    if (prof.run >= 4.2 || sp.shape === 'tuna' || sp.id === 'wahoo' || sp.id === 'barracuda') return 'run';
+    if (prof.force >= 1.3 || sp.shape === 'sturgeon' || sp.shape === 'pike' || sp.id === 'grouper' || sp.id === 'giant-trevally') return 'deep';
+    return 'pull';
+  }
   function pickSpecies() {
     const bonus = ((gear.attraction || 1) - 1) * .12, r = Math.random();
     const tier = !log.total ? 'common' : r > .955 - bonus ? 'legendary' : r > .68 - bonus ? 'rare' : 'common';
@@ -190,6 +238,8 @@
   /* ---------- Player actions ---------- */
   function castTo(x, y) {
     if (phase !== 'ready') return;
+    aid = C.firstCast(career);
+    if (aid) save();
     const p = unproj(x, Math.max(y, hzY + (H - hzY) * .08));
     cast = { from: rodTip(), to: p, t: 0 }; lure = { ...p }; phase = 'cast'; rodKick = 1; keyAim = false; hideCard();
     hiss(.28, .1, 2600); hint();
@@ -202,6 +252,15 @@
   }
   function startWait() {
     phase = 'wait'; splashAt(lure.u, lure.d, 9, .8); hiss(.16, .14, 900); tone(190, .12, 'sine', .1, -90);
+    if (aid) {
+      const sp = pool.find(s => s.rarity === 'common') || pool[0];
+      let best = fish.find(f => f.sp.rarity === 'common');
+      if (!best) { best = spawn(false); fish.push(best); }
+      if (best.sp.rarity !== 'common') best.sp = sp;
+      best.u = lure.u; best.d = lure.d; best.alpha = 1; best.state = 'cruise';
+      wait = { fish: best, t: 0, delay: .2, near: 0, seq: null, step: 0, stepT: 0, dip: 0, quality: 1, aid: true };
+      aid = false; toast('A fish is on your cast'); hint(); return;
+    }
     let best = null, bd = 9;
     for (const f of fish) { if (f.state !== 'cruise') continue; const dd = Math.hypot(f.u - lure.u, (f.d - lure.d) * 2.2); if (dd < bd) { bd = dd; best = f; } }
     if (!best) { best = spawn(true); fish.push(best); bd = 1; }
@@ -220,11 +279,14 @@
   }
   function hook() {
     hooked = wait.fish; hooked.state = 'hooked';
-    const sp = hooked.sp, prof = G.fightProfile(sp, hooked.spec.size);
+    const sp = hooked.sp, prof = G.fightProfile(sp, hooked.spec.size), kind = kindOf(sp, prof);
     const runs = sp.rarity === 'legendary' ? 4 + (hooked.spec.size > .5 ? 1 : 0) : sp.rarity === 'rare' ? 2 + (hooked.spec.size > .6 ? 1 : 0) : 1 + (hooked.spec.size > .7 ? 1 : 0);
     const hard = sp.rarity === 'legendary' ? 1.6 : sp.rarity === 'rare' ? 1.25 : 1;
-    F = { hard, prof, dist: 7 + lure.d * 24, tension: .38, stamina: 1, mode: 'pull', modeT: log.total ? rand(1.4, 2.4) : 3, runs: log.total ? runs : 1, time: 0, zone: 0, red: 0, slack: 0, u: lure.u, dir: Math.random() < .5 ? -1 : 1, jump: 0, clean: true, click: 0 };
-    phase = 'fight'; hold = false; streak++; buzz(60); tone(330, .1, 'square', .08, 200); splashAt(lure.u, lure.d, 14, 1.2); hint();
+    F = { hard, prof, kind, dist: 7 + lure.d * 24, tension: .38, stamina: 1, mode: 'pull', modeT: log.total ? rand(1.4, 2.4) : 3, runs: log.total ? runs : 1, time: 0, zone: 0, red: 0, slack: 0, u: lure.u, dir: Math.random() < .5 ? -1 : 1, jump: 0, clean: true, click: 0 };
+    phase = 'fight'; hold = false; streak++; if (!still()) shake = 1; loadFish(sp.id);
+    buzz(60); tone(330, .1, 'square', .08, 200); splashAt(lure.u, lure.d, still() ? 6 : 14, 1.2);
+    if (!told[kind]) { told[kind] = true; const msg = { jump: 'Jumper: let go when it jumps', run: 'Long run: let go until it stops', deep: 'Heavy fish: let go before the bar turns red' }[kind]; if (msg) toast(msg); }
+    hint();
   }
   function endCast(reason) {
     lost = { t: 0, reason }; phase = 'lost'; hold = false; streak = 0;
@@ -244,10 +306,12 @@
     const clean = F.clean, before = C.level(career);
     const reward = C.land(career, place, entry, clean, date, challenge);
     lastCatch = { sp, sz, entry, isNew, bestSpecies, bestWeight, reward, clean, levelUp: C.level(career) > before, dailyDone: challenge && log.daily[date] === 3 };
+    lift = { sp, u: hooked.u, dir: hooked.dir || 1, big: hooked.big, t: 0, card: false };
+    loadFish(sp.id); splashAt(hooked.u, .12, still() ? 4 : 14, 1.5);
     fish = fish.filter(f => f !== hooked); fish.push(spawn(true)); hooked = null; F = null; wait = null; lure = null; hold = false;
     phase = 'landed'; save(); buzz([40, 60, 120]);
     [523, 659, 784, 1046].forEach((f, i) => setTimeout(() => tone(f, .28, 'triangle', .1), i * 90));
-    showCard(); hud(); renderLog(); renderDaily(); hint();
+    hud(); renderLog(); renderDaily(); hint();
   }
 
   /* ---------- Simulation ---------- */
@@ -267,68 +331,97 @@
       const f = wait.fish; wait.t += dt;
       if (f.state === 'cruise' && wait.t > wait.delay) f.state = 'approach';
       if (f.state === 'approach' && Math.hypot(f.u - lure.u, (f.d - lure.d) * 2.2) < .05 && !wait.seq) {
-        const n = !log.total ? 1 : Math.floor(Math.random() * 3), seq = [['pause', rand(.35, .7)]];
+        const n = wait.aid ? 0 : !log.total ? 1 : Math.floor(Math.random() * 3), seq = [['pause', wait.aid ? .35 : rand(.35, .7)]];
         for (let i = 0; i < n; i++) seq.push(['nib', .32], ['pause', rand(.45, 1)]);
-        seq.push(['strike', (!log.total ? 2.6 : f.sp.rarity === 'legendary' ? 1 : 1.25) * (gear.stealth || 1)]); wait.seq = seq; wait.step = 0; wait.stepT = 0;
+        seq.push(['strike', (wait.aid || !log.total ? 2.8 : f.sp.rarity === 'legendary' ? 1 : 1.25) * (gear.stealth || 1)]); wait.seq = seq; wait.step = 0; wait.stepT = 0;
       }
       if (wait.seq) {
         const cur = wait.seq[wait.step]; wait.stepT += dt;
         if (wait.stepT === dt && cur[0] === 'nib') { rings.push({ u: lure.u, d: lure.d, age: 0, big: .4 }); tone(240, .05, 'sine', .05); buzz(12); }
-        if (cur[0] === 'strike' && phase !== 'strike') { phase = 'strike'; splashAt(lure.u, lure.d, 8, .9); tone(160, .16, 'sine', .14, -70); buzz(90); hint(); }
+        if (cur[0] === 'strike' && phase !== 'strike') { phase = 'strike'; boil = { u: lure.u, d: lure.d, t: 0 }; splashAt(lure.u, lure.d, still() ? 4 : 8, .9); tone(160, .16, 'sine', .14, -70); buzz(90); hint(); }
         wait.dip = cur[0] === 'nib' ? Math.sin(Math.min(1, wait.stepT / cur[1]) * Math.PI) * .45 : cur[0] === 'strike' ? Math.min(1, wait.stepT * 9) : 0;
         if (wait.stepT >= cur[1]) { if (cur[0] === 'strike') endCast('miss'); else { wait.step++; wait.stepT = 0; } }
       }
     }
     else if (phase === 'fight') fight(dt);
-    else if (phase === 'lost') { lost.t += dt; if (lost.t > 1.7) { phase = 'ready'; lure = null; lost = null; hint(); } }
+    else if (phase === 'lost') { lost.t += dt; if (lost.t > 3.2) { phase = 'ready'; lure = null; lost = null; hint(); } }
+    shake = Math.max(0, shake - dt / .28);
+    if (boil) { boil.t += dt; if (boil.t > .7) boil = null; }
+    if (lift) { lift.t += dt; if (!lift.card && lift.t > (still() ? .08 : .82)) { lift.card = true; showCard(); } if (lift.t > 1.35) lift = null; }
     for (const r of rings) r.age += dt; rings = rings.filter(r => r.age < 1.5);
     for (const p of drops) { p.life -= dt; p.x += p.vx * dt; p.y += p.vy * dt; p.vy += 420 * dt; } drops = drops.filter(p => p.life > 0);
   }
   function fight(dt) {
-    const f = F, tired = f.stamina <= 0, reel = hold;
+    const f = F, tired = f.stamina <= 0, air = f.jump > .12, reel = hold && !air;
+    const runScale = f.kind === 'run' ? Math.min(1.28, f.prof.run / 2.8) : 1;
     f.time += dt; f.modeT -= dt;
     if (f.modeT <= 0) {
       if (f.mode === 'run') { f.mode = 'pull'; f.modeT = rand(2.2, 3.4); hint(); }
       else if (f.runs > 0 && !tired) {
-        f.mode = 'run'; f.runs--; f.modeT = rand(1.3, 2) / (gear.control || 1); f.dir = -f.dir; buzz([30, 40, 30]); tone(140, .25, 'sawtooth', .07, 120);
-        if (f.prof.jump && Math.random() < .65 && !still()) f.jump = 1;
-        splashAt(f.u, fishD(), 14, 1.3); hint();
+        f.mode = 'run'; f.runs--; f.dir = -f.dir; f.modeT = rand(1.3, 2) * runScale / (gear.control || 1);
+        if (f.kind === 'jump') f.jump = 1;
+        buzz([30, 40, 30]); tone(140, .25, 'sawtooth', .07, 120); splashAt(f.u, fishD(), still() ? 4 : 12, 1.2); hint();
       } else { f.mode = 'pull'; f.modeT = 2.5; }
     }
-    const rise = f.mode === 'run' ? 1.05 * f.prof.force * f.hard : tired ? .06 : .23 * f.prof.force;
-    if (reel) f.tension += dt * rise / (gear.strength || 1); else f.tension -= dt * (f.mode === 'run' ? .85 : .55);
-    if (f.mode === 'run' && !reel) f.tension = Math.max(f.tension, .22);
+    const jumping = f.jump > .12;
+    let rise = f.mode === 'run' ? 1.05 * f.prof.force * f.hard : tired ? .06 : .23 * f.prof.force;
+    if (f.kind === 'deep') rise *= 1.32;
+    if (jumping && hold) f.tension += dt * 1.5 * f.hard;
+    else if (reel) f.tension += dt * rise / (gear.strength || 1);
+    else f.tension -= dt * (f.mode === 'run' ? .85 : .55);
+    if ((f.mode === 'run' || jumping) && !hold) f.tension = Math.max(f.tension, .22);
     f.tension = clamp(f.tension, 0, 1);
     const zone = f.tension > .3 && f.tension < .8, slow = .72 + .28 * f.prof.duration;
-    if (reel) f.dist -= dt * (f.mode === 'run' ? -.5 : zone ? 3.3 : f.tension >= .8 ? 1.3 : 1.9) * (gear.reel || 1) * (tired ? 1.3 : 1) / slow;
-    else f.dist += dt * (f.mode === 'run' ? 2.4 : .3);
+    const reelK = f.kind === 'deep' && zone ? 1.18 : 1;
+    if (jumping) { /* In the air the fish takes no line. */ }
+    else if (reel) f.dist -= dt * (f.mode === 'run' ? -.5 : zone ? 3.3 * reelK : f.tension >= .8 ? 1.3 : 1.9) * (gear.reel || 1) * (tired ? 1.3 : 1) / slow;
+    else f.dist += dt * (f.mode === 'run' ? 2.4 / runScale : .3);
     f.stamina -= dt * (f.mode === 'run' ? .2 : reel ? .1 : .025) / f.prof.duration;
     if (tired && f.mode !== 'run' && !f.tiredSaid) { f.tiredSaid = true; toast('It is tired. Bring it in.'); }
     if (zone && reel) f.zone += dt;
     f.red = f.tension >= .97 ? f.red + dt : Math.max(0, f.red - dt * 2); if (f.tension > .9) f.clean = false;
-    f.slack = f.tension <= .02 && f.mode !== 'run' ? f.slack + dt : 0;
+    f.slack = f.tension <= .02 && f.mode !== 'run' && !jumping ? f.slack + dt : 0;
     f.dist = clamp(f.dist, 0, 46);
-    const target = f.mode === 'run' ? f.dir * .8 : f.dir * .3 * Math.sin(f.time * 1.3); f.u += (target - f.u) * Math.min(1, dt * (f.mode === 'run' ? 1.6 : .9));
-    hooked.u = f.u; hooked.d = fishD(); hooked.dir = f.mode === 'run' ? f.dir : -Math.sign(f.u || 1);
-    if (f.jump > 0) { const was = f.jump; f.jump -= dt / .95; if (was > .05 && f.jump <= .05) { splashAt(f.u, fishD(), 18, 1.6); hiss(.3, .2, 800); } }
+    const span = f.kind === 'deep' ? .28 : .8;
+    const target = f.mode === 'run' ? f.dir * span : f.dir * .3 * Math.sin(f.time * 1.3);
+    f.u += (target - f.u) * Math.min(1, dt * (f.mode === 'run' ? (f.kind === 'deep' ? .7 : 1.6) : .9));
+    hooked.u = f.u; hooked.d = fishD(); hooked.dir = f.mode === 'run' && f.kind !== 'deep' ? f.dir : -Math.sign(f.u || 1);
+    if (f.jump > 0) { const was = f.jump; f.jump -= dt / .95; if (was > .05 && f.jump <= .05) { f.dist += 1.5; splashAt(f.u, fishD(), still() ? 3 : 16, 1.5); hiss(.28, .18, 800); } }
     if (reel && f.mode !== 'run') { f.click -= dt; if (f.click <= 0) { f.click = zone ? .07 : .12; tone(1700, .012, 'square', .02); } }
-    if (Math.random() < dt * (f.mode === 'run' ? 9 : 2.5)) splashAt(f.u + rand(-.03, .03), fishD(), 2, .7);
+    if (!still() && Math.random() < dt * (f.mode === 'run' ? 8 : 2.2)) splashAt(f.u + rand(-.03, .03), fishD(), 2, .65);
     if (f.red > (f.hard > 1.5 ? .4 : f.hard > 1 ? .5 : .6)) { tone(900, .08, 'sawtooth', .12, -700); buzz(160); endCast('snap'); }
     else if (f.slack > 3.6) endCast('slack');
     else if (f.dist <= 4) land();
   }
-  const fishD = () => clamp((F.dist - 4) / 34, .03, .88);
+  const fishD = () => clamp((F.dist - 4) / 34 + (F.kind === 'deep' ? .16 : 0), F.kind === 'deep' ? .24 : .03, .88);
 
   /* ---------- Drawing ---------- */
+  function drawBoil() {
+    if (!boil) return;
+    const p = proj(boil.u, boil.d), k = boil.t / .7;
+    ctx.save();
+    for (let i = 0; i < 3; i++) {
+      const a = Math.max(0, .62 - k * (.65 + i * .1)), rad = (12 + k * 52 + i * 9) * p.s;
+      ctx.strokeStyle = 'rgba(255,255,255,' + a + ')'; ctx.lineWidth = 2.1 - i * .35;
+      ctx.beginPath(); ctx.ellipse(p.x, p.y, rad, rad * .36, 0, 0, TAU); ctx.stroke();
+    }
+    if (!still()) for (let i = 0; i < 6; i++) {
+      const a = (k * 1.35 + i * .16) % 1, ang = i * 1.05 + .4;
+      ctx.globalAlpha = (1 - a) * .8; ctx.fillStyle = '#fff';
+      ctx.beginPath(); ctx.arc(p.x + Math.cos(ang) * a * 24 * p.s, p.y - a * 32 * p.s, (2.3 - a) * p.s + .4, 0, TAU); ctx.fill();
+    }
+    ctx.restore();
+  }
   function draw() {
     const CW = canvas.width, CH = canvas.height, P = PLATES[water];
-    ctx.setTransform(1, 0, 0, 1, 0, 0); ctx.drawImage(bg, 0, 0);
+    const sh = shake > 0 && !still() ? shake * 6 : 0, ox = sh ? Math.sin(t * 70) * sh : 0, oy = sh ? Math.cos(t * 49) * sh * .6 : 0;
+    ctx.setTransform(1, 0, 0, 1, ox * dpr, oy * dpr); ctx.drawImage(bg, 0, 0);
     if (!still()) {
       // The photo water moves: thin rows shift sideways, more near the camera.
       const y0 = Math.ceil(hzY * dpr) + 2, stepPx = Math.max(2, Math.round(2.5 * dpr)), span = CH - y0;
       for (let y = y0; y < CH; y += stepPx) { const k = (y - y0) / span, ph = 46 * Math.sqrt(k); const off = (Math.sin(ph - t * 1.5) * (.5 + k * 3.4) + Math.sin(ph * 2.7 + t * 2.2) * k * 1.3) * dpr; ctx.drawImage(bg, 0, y, CW, stepPx, off, y, CW, stepPx); }
     }
-    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    ctx.setTransform(dpr, 0, 0, dpr, ox * dpr, oy * dpr);
     if (!still()) { ctx.strokeStyle = 'rgba(255,255,255,.1)'; for (let i = 0; i < 22; i++) { const k = Math.pow((i * .618) % 1, 1.6), y = hzY + (H - hzY) * (.04 + .9 * k), len = (10 + (i % 5) * 9) * (.3 + k * 1.3), x = ((i * 173 + t * (9 + (i % 4) * 5) * (.3 + k)) % (W + 120)) - 60; ctx.lineWidth = .6 + k; ctx.beginPath(); ctx.moveTo(x, y); ctx.quadraticCurveTo(x + len / 2, y + Math.sin(t * 1.4 + i) * 1.6 * k, x + len, y); ctx.stroke(); } }
     // Fish under the surface.
     const base = Math.max(112, Math.min(W, 900) * .2);
@@ -341,6 +434,7 @@
     if (phase === 'ready' && !log.total && fish[0]) { const p = proj(fish[0].u, fish[0].d), a = (t * 1.1) % 1; ctx.strokeStyle = 'rgba(255,240,196,' + (1 - a) + ')'; ctx.lineWidth = 2; ctx.beginPath(); ctx.ellipse(p.x, p.y, (26 + a * 34) * p.s + 10, ((26 + a * 34) * p.s + 10) * .42, 0, 0, TAU); ctx.stroke(); }
     if (phase === 'ready' && keyAim && aim) { const p = proj(aim.u, aim.d); ctx.strokeStyle = '#fff0c4'; ctx.lineWidth = 1.5; ctx.beginPath(); ctx.ellipse(p.x, p.y, 20 * p.s + 6, (20 * p.s + 6) * .42, 0, 0, TAU); ctx.moveTo(p.x - 6, p.y); ctx.lineTo(p.x + 6, p.y); ctx.stroke(); }
     for (const r of rings) { const p = proj(r.u, r.d), a = r.age / 1.5, rad = (8 + a * 46) * p.s * r.big + 3; ctx.strokeStyle = 'rgba(255,255,255,' + (.55 * (1 - a)) + ')'; ctx.lineWidth = 1.4 * p.s + .4; ctx.beginPath(); ctx.ellipse(p.x, p.y, rad, rad * .36, 0, 0, TAU); ctx.stroke(); if (a > .25) { ctx.beginPath(); ctx.ellipse(p.x, p.y, rad * .55, rad * .2, 0, 0, TAU); ctx.stroke(); } }
+    drawBoil();
     // Rod, line and float.
     const tip = rodTip(), tension = F ? F.tension : 0; let end = null, floatP = null;
     if (phase === 'cast') { const k = Math.min(1, cast.t), q = proj(cast.to.u, cast.to.d), e = 1 - Math.pow(1 - k, 1.6); end = { x: lerp(tip.x, q.x, e), y: lerp(tip.y, q.y, e) - Math.sin(k * Math.PI) * H * .22 }; floatP = { ...end, s: lerp(.9, q.s, e), dip: 0 }; }
@@ -366,8 +460,15 @@
     }
     if (phase === 'fight' && hooked) {
       const q = proj(hooked.u, hooked.d), len = base * hooked.big * q.s;
-      if (F.jump > 0) { const k = 1 - F.jump, hgt = Math.sin(k * Math.PI) * (H * .1 + len * .5); ctx.save(); ctx.translate(q.x + hooked.dir * k * len * .5, q.y - hgt); ctx.scale(hooked.dir, 1); ctx.rotate(lerp(-.9, .9, k)); drawFish(ctx, hooked.sp, len * 1.15); ctx.restore(); }
+      if (F.jump > 0) { const k = 1 - F.jump, hgt = Math.sin(k * Math.PI) * (H * .1 + len * .5); ctx.save(); ctx.translate(q.x + (hooked.dir || 1) * k * len * .45, q.y - hgt); paintFish(ctx, hooked.sp, len * 1.2, hooked.dir || 1, lerp(-.8, .65, k)); ctx.restore(); }
       else { ctx.strokeStyle = 'rgba(255,255,255,.5)'; ctx.lineWidth = 1.2; for (let i = 0; i < 3; i++) { ctx.beginPath(); ctx.ellipse(q.x - hooked.dir * i * len * .22, q.y, len * (.3 + i * .14), len * (.07 + i * .03), 0, 0, TAU); ctx.globalAlpha = .5 - i * .14; ctx.stroke(); } ctx.globalAlpha = 1; }
+    }
+    if (lift && lift.t < 1.25) {
+      const k = Math.min(1, lift.t / .9), q = proj(lift.u, .16), len = base * lift.big * Math.max(.72, q.s);
+      const hgt = still() ? len * .12 : Math.sin(k * Math.PI * .5) * H * .16;
+      ctx.save(); ctx.translate(q.x, Math.min(q.y, hzY + 10) - hgt);
+      paintFish(ctx, lift.sp, len * 1.28, lift.dir, still() ? -.12 : lerp(-.5, .35, k));
+      ctx.restore();
     }
     // The rod: a tapered blank with a cork grip, drawn in short segments.
     ctx.lineCap = 'round'; let px = bx, py = by;
@@ -388,13 +489,20 @@
     else if (phase === 'cast') text = '';
     else if (phase === 'wait') { text = 'Watch the float'; sub = 'Tap when it goes under. Not before.'; }
     else if (phase === 'strike') { text = 'Tap now!'; }
-    else if (phase === 'fight') { if (F.mode === 'run') { text = 'It runs. Let go!'; sub = 'Hold again when the bar drops.'; } else { text = 'Hold to reel'; sub = 'Keep the bar in the green. Let go before the red.'; } }
+    else if (phase === 'fight') {
+      if (F.jump > .12) { text = 'It jumps. Let go!'; sub = 'Hold again when it lands.'; }
+      else if (F.mode === 'run' && F.kind === 'run') { text = 'Long run. Let go!'; sub = 'Hold again when the bar drops.'; }
+      else if (F.mode === 'run' && F.kind === 'deep') { text = 'It digs down'; sub = 'Let go before the bar turns red.'; }
+      else if (F.mode === 'run') { text = 'It runs. Let go!'; sub = 'Hold again when the bar drops.'; }
+      else if (F.kind === 'deep') { text = 'Hold to reel'; sub = 'Heavy fish. Let go before the bar turns red.'; }
+      else { text = 'Hold to reel'; sub = 'Keep the bar in the green band. Let go before the red.'; }
+    }
     else if (phase === 'lost') { text = { miss: 'Too late. It let go.', snap: 'The line broke.', slack: 'The hook came loose.' }[lost.reason]; sub = { miss: 'Tap the moment the float goes under.', snap: 'Let go when the bar turns red.', slack: 'Hold to keep the line tight.' }[lost.reason]; }
     el.innerHTML = text ? '<b>' + esc(text) + '</b>' + (sub ? '<span>' + esc(sub) + '</span>' : '') : '';
     el.dataset.phase = phase; el.hidden = !text || phase === 'landed';
     $('cc-fight').hidden = phase !== 'fight';
     canvas.style.touchAction = phase === 'fight' || phase === 'strike' || phase === 'wait' ? 'none' : 'pan-y';
-    root.dataset.phase = phase;
+    root.dataset.phase = phase; root.dataset.kind = phase === 'fight' && F ? F.kind : '';
   }
   function goalText() {
     const date = today(), n = Object.keys(log.collected).length;
@@ -457,8 +565,8 @@
   }
   // What each item does in this game. The names and prices come from the shared career rules.
   const TACKLE = { spinner: 'Fish come to the float sooner. A few more rare fish.', fly: 'The strongest pull on fish. More rare fish.', jig: 'Fish come to the float a little sooner.', rod: 'Shorter runs. One more fish in reach.', line: 'A stronger line. The bar climbs slower.', reel: 'Brings line in 18% faster.', waders: 'More time to tap when the float goes under.', kayak: 'Sonar: a dot shows how rare each shadow is. More time to hook.', boat: 'Sonar, and one more fish in reach.' };
-  function openSheet(id, render) { if (phase === 'fight' || phase === 'strike') return; render && render(); paused = true; const d = $(id); if (d.showModal) d.showModal(); else d.setAttribute('open', ''); if (id === 'cc-log-sheet') renderLog(); }
-  document.querySelectorAll('.cc-sheet').forEach(d => { d.addEventListener('close', () => { paused = false; last = 0; }); d.addEventListener('click', e => { if (e.target === d || e.target.closest('[data-close]')) d.close(); }); });
+  function openSheet(id, render) { if (phase === 'fight' || phase === 'strike') return; render && render(); markPause(true); const d = $(id); if (d.showModal) d.showModal(); else d.setAttribute('open', ''); if (id === 'cc-log-sheet') renderLog(); }
+  document.querySelectorAll('.cc-sheet').forEach(d => { d.addEventListener('close', () => { markPause(false); last = 0; }); d.addEventListener('click', e => { if (e.target === d || e.target.closest('[data-close]')) d.close(); }); });
 
   $('cc-water-btn').onclick = () => openSheet('cc-waters-sheet', renderWaters);
   $('cc-tackle-btn').onclick = () => openSheet('cc-tackle-sheet', renderTackle);
@@ -511,6 +619,6 @@
   resize(); setWater(startWater, startPlace || null); renderLog(); renderDaily();
   if (dailyBonus && log.total) setTimeout(() => toast('Welcome back. Day ' + career.streak + ': coins added.'), 900);
   // Test hooks: read the state, or move the clock by hand (browser tests run with a throttled frame clock).
-  window.CastwardPlay = { advance(sec, quiet) { for (let left = sec; left > 1e-6; left -= 1 / 60) step(Math.min(1 / 60, left)); if (!quiet) draw(); }, bench(n = 120) { const t0 = performance.now(); for (let i = 0; i < n; i++) { t += 1 / 60; draw(); } return (performance.now() - t0) / n; }, state: () => ({ rarity: hooked ? hooked.sp.rarity : '', size: hooked ? hooked.spec.size : 0, reason: lost ? lost.reason : '', phase, water, tension: F ? F.tension : 0, mode: F ? F.mode : '', dist: F ? F.dist : 0, fish: fish.map(f => { const p = proj(f.u, f.d); return { x: Math.round(p.x), y: Math.round(p.y), state: f.state, id: f.sp.id }; }), total: log.total, coins: career.coins }) };
+  window.CastwardPlay = { advance(sec, quiet) { for (let left = sec; left > 1e-6; left -= 1 / 60) step(Math.min(1 / 60, left)); if (!quiet) draw(); }, bench(n = 120) { const t0 = performance.now(); for (let i = 0; i < n; i++) { t += 1 / 60; draw(); } return (performance.now() - t0) / n; }, state: () => ({ rarity: hooked ? hooked.sp.rarity : '', size: hooked ? hooked.spec.size : 0, reason: lost ? lost.reason : '', phase, water, tension: F ? F.tension : 0, mode: F ? F.mode : '', kind: F ? F.kind : '', jump: F ? F.jump : 0, dist: F ? F.dist : 0, fish: fish.map(f => { const p = proj(f.u, f.d); return { x: Math.round(p.x), y: Math.round(p.y), state: f.state, id: f.sp.id }; }), total: log.total, coins: career.coins }) };
   wake();
 })();

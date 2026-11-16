@@ -11,9 +11,20 @@ const base = process.env.TEST_ORIGIN || 'http://127.0.0.1:8057';
   page.on('pageerror', error => errors.push(error.message));
   page.on('console', message => {if (message.type() === 'error') errors.push(message.text());});
   const reject = async p => {const b = p.getByRole('button',{name:'Reject non-essential',exact:true}); if(await b.isVisible()) await b.click();};
+  const tapAt = (x, y) => page.evaluate(({x, y}) => {
+    const canvas = document.querySelector('#cc-canvas');
+    const r = canvas.getBoundingClientRect();
+    const o = {bubbles:true, cancelable:true, clientX:r.left + x, clientY:r.top + y, button:0, pointerId:1, pointerType:'mouse', isPrimary:true};
+    canvas.dispatchEvent(new PointerEvent('pointerdown', o));
+    canvas.dispatchEvent(new PointerEvent('pointerup', o));
+  }, {x, y});
+  const hold = down => page.evaluate(down => {
+    const canvas = document.querySelector('#cc-canvas');
+    const r = canvas.getBoundingClientRect();
+    const o = {bubbles:true, cancelable:true, clientX:r.left + r.width * .5, clientY:r.top + r.height * .62, button:0, pointerId:1, pointerType:'mouse', isPrimary:true};
+    canvas.dispatchEvent(new PointerEvent(down ? 'pointerdown' : 'pointerup', o));
+  }, down);
   const count = async n => page.waitForFunction(n => Number(document.querySelector('[data-atlas-gl]').dataset.matches) === n, n);
-  const gameState = () => page.locator('[data-fishing-game]').getAttribute('data-state');
-  const helpers=require('./game-test-helpers.cjs');const cast=()=>helpers.cast(page),bite=()=>helpers.bite(page);
   try {
     await page.goto(base+'/atlas/'); await reject(page);
     await page.waitForSelector('[data-ready=true]',{timeout:45000});
@@ -58,29 +69,71 @@ const base = process.env.TEST_ORIGIN || 'http://127.0.0.1:8057';
     await count(data.filter(t=>t.styles.includes('ice-fishing')).length);
     checks.push('Atlas shared filter URL and 360–1440px layouts');
     await page.goto(base+'/play/');await reject(page);
-    await page.clock.install();await page.clock.pauseAt(new Date(Date.now()+1000));
-    await page.evaluate(()=>{Math.random=()=>.45;});
-    assert.equal(await page.locator('#game-sound').getAttribute('aria-pressed'),'false');
-    for(const water of ['river','lake','ice','flats','offshore']) {
-      await page.locator(`[data-water=${water}]`).click();
-      assert.equal(await page.locator(`[data-water=${water}]`).getAttribute('aria-pressed'),'true');
+    await page.evaluate(()=>localStorage.clear());await page.reload();await reject(page);
+    await page.waitForFunction(()=>window.CastwardPlay);
+    assert.equal(await page.locator('#cc-sound').getAttribute('aria-pressed'),'false');
+    const names={river:'River',lake:'Lake',ice:'Ice edge',flats:'Flats',offshore:'Offshore'};
+    for(const water of ['lake','ice','flats','offshore','river']) {
+      await page.locator('#cc-water-btn').click();
+      await page.locator(`[data-w=${water}]`).click();
+      assert.equal((await page.locator('#cc-water-name').innerText()).trim(), names[water]);
     }
-    await cast(); await page.keyboard.press('Enter'); assert.equal(await gameState(),'wait');await bite();await page.clock.runFor(3400);assert.equal(await gameState(),'lost');
-    await cast(); await bite(); await page.clock.runFor(2600); assert.equal(await gameState(),'lost');
-    await cast(); await bite(); await page.keyboard.press('Space'); await page.keyboard.down('Space'); await page.clock.runFor(5000); await page.keyboard.up('Space');
-    assert.equal(await gameState(),'lost');assert.match(await page.locator('#game-status').innerText(),/snapped/);
-    await cast(); await bite(); await page.keyboard.press('Enter');assert.equal(await gameState(),'reel');
-    await helpers.fight(page);
-    assert.equal(await page.locator('#catch-trip').getAttribute('href'),'/environments/offshore/');
-    assert.equal(await page.locator('#game-log li').count(),1);
-    const best = await page.locator('#game-best').innerText();assert.match(best,/kg/);
-    await page.reload();assert.equal(await page.locator('#game-best').innerText(),best);
-    checks.push('Game keyboard cast, early/missed bite, snapped line, controlled reel, catch card, matching trip link and persistent personal best');
-    await page.locator('#game-action').click();
-    assert.equal(await gameState(),'aim');
-    await page.locator('#game-pause').click();assert.equal(await page.locator('[data-fishing-game]').getAttribute('data-paused'),'true');
-    await page.clock.runFor(4000);assert.equal(await gameState(),'aim');
-    await page.locator('#game-pause').click();
+    await page.locator('#cc-canvas').scrollIntoViewIfNeeded();
+    const fish=await page.evaluate(()=>window.CastwardPlay.state().fish[0]);
+    await tapAt(fish.x, fish.y);
+    await page.evaluate(()=>window.CastwardPlay.advance(0.7));
+    let phase=await page.evaluate(()=>{for(let i=0;i<40 && !['strike','lost','fight'].includes(window.CastwardPlay.state().phase);i++)window.CastwardPlay.advance(0.15);return window.CastwardPlay.state().phase;});
+    assert.equal(phase,'strike');
+    await page.evaluate(()=>window.CastwardPlay.advance(3.4));
+    assert.equal(await page.evaluate(()=>window.CastwardPlay.state().phase),'lost');
+    assert.match(await page.locator('#cc-hint').innerText(),/Too late/i);
+    assert.match(await page.locator('#cc-hint').innerText(),/float goes under/);
+    await page.evaluate(()=>window.CastwardPlay.advance(3.4));
+    const fish2=await page.evaluate(()=>window.CastwardPlay.state().fish[0]);
+    await tapAt(fish2.x, fish2.y);
+    await page.evaluate(()=>window.CastwardPlay.advance(0.7));
+    phase=await page.evaluate(()=>{for(let i=0;i<50 && window.CastwardPlay.state().phase!=='strike';i++)window.CastwardPlay.advance(0.15);return window.CastwardPlay.state().phase;});
+    assert.equal(phase,'strike');
+    await hold(true);
+    assert.equal(await page.evaluate(()=>window.CastwardPlay.state().phase),'fight');
+    await hold(true);
+    let snap='';
+    for (let i=0;i<40;i++) {
+      const s=await page.evaluate(()=>{window.CastwardPlay.advance(0.25,true);return window.CastwardPlay.state();});
+      if (s.phase==='lost') { snap=s.reason; break; }
+    }
+    await hold(false);
+    assert.equal(snap,'snap');
+    assert.match(await page.locator('#cc-hint').innerText(),/Let go when the bar turns red/);
+    await page.evaluate(()=>localStorage.clear());await page.reload();await reject(page);await page.waitForFunction(()=>window.CastwardPlay);
+    const fishL=await page.evaluate(()=>window.CastwardPlay.state().fish[0]);
+    await tapAt(fishL.x, fishL.y);
+    await page.evaluate(()=>window.CastwardPlay.advance(0.7));
+    phase=await page.evaluate(()=>{for(let i=0;i<40 && window.CastwardPlay.state().phase!=='strike';i++)window.CastwardPlay.advance(0.1);return window.CastwardPlay.state().phase;});
+    assert.equal(phase,'strike');
+    await hold(true);
+    await hold(true);
+    for(let i=0;i<350;i++){
+      const s=await page.evaluate(()=>window.CastwardPlay.state());
+      if(s.phase==='landed'||s.phase==='lost'){phase=s.phase;break;}
+      const release=s.mode==='run'||s.jump>0.12||s.tension>(s.kind==='deep'?0.64:0.7);
+      await hold(!release);
+      await page.evaluate(()=>window.CastwardPlay.advance(0.1,true));
+      phase=s.phase;
+    }
+    await hold(false);
+    await page.evaluate(()=>window.CastwardPlay.advance(1));
+    assert.equal(await page.evaluate(()=>window.CastwardPlay.state().phase),'landed');
+    assert.match(await page.locator('#cc-card-real').getAttribute('href'),/\/environments\/rivers-streams\//);
+    assert.match(await page.locator('[data-log-count]').first().innerText(),/1 of 34/);
+    const best=await page.locator('#cc-best').innerText();assert.match(best,/in/);
+    await page.reload();await page.waitForFunction(()=>window.CastwardPlay);
+    assert.equal(await page.locator('#cc-best').innerText(),best);
+    checks.push('Game cast, missed bite, snapped line, reel, catch card, trip link and saved best');
+    await page.locator('#cc-tackle-btn').click();
+    assert.equal(await page.locator('[data-cast-game]').getAttribute('data-paused'),'true');
+    await page.keyboard.press('Escape');
+    await page.waitForFunction(()=>document.querySelector('[data-cast-game]').dataset.paused==='false');
     for(const width of [360,768,1024,1440]) {
       await page.setViewportSize({width,height:1000});
       assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth), 'Game overflow '+width);
@@ -99,13 +152,12 @@ const base = process.env.TEST_ORIGIN || 'http://127.0.0.1:8057';
     checks.push('Map library failure preserves filters and trip list');
     const phone=await browser.newContext({viewport:{width:360,height:900},isMobile:true,hasTouch:true,reducedMotion:'reduce'});
     const m=await phone.newPage(); m.on('pageerror',e=>errors.push(e.message));
-    await m.goto(base+'/play/');await reject(m);await m.locator('#game-action').tap();
-    assert.equal(await m.locator('[data-fishing-game]').getAttribute('data-state'),'aim');
-    await m.locator('#game-action').tap();assert.equal(await m.locator('[data-fishing-game]').getAttribute('data-state'),'wait');
+    await m.goto(base+'/play/');await reject(m);await m.locator('#cc-canvas').tap();
+    await m.waitForFunction(()=>['cast','wait','strike'].includes(document.querySelector('[data-cast-game]').dataset.phase));
     await m.goto(base+'/atlas/');await m.waitForSelector('[data-ready=true]');
     await m.locator('.atlas-gl-stage').scrollIntoViewIfNeeded();
-    const cdp=await phone.newCDPSession(m), box=await m.locator('#atlas-map').boundingBox();
-    const x=Math.round(box.x+box.width/2), y=Math.round(Math.min(650,box.y+box.height*.65));
+    const cdp=await phone.newCDPSession(m), mapBox=await m.locator('#atlas-map').boundingBox();
+    const x=Math.round(mapBox.x+mapBox.width/2), y=Math.round(Math.min(650,mapBox.y+mapBox.height*.65));
     const before=await m.evaluate(()=>scrollY);
     await cdp.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[{x,y,id:1}]});
     for(let step=1;step<=6;step++) await cdp.send('Input.dispatchTouchEvent',{type:'touchMove',touchPoints:[{x,y:y-step*30,id:1}]});

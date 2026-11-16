@@ -31,31 +31,67 @@ const out=process.env.SCREENSHOT_DIR||path.resolve(__dirname,'../test-results/pl
   await page.locator('#lingo-clear').click();await page.locator('button[data-letter="B"]').click();assert.ok(await terms.count()>0);assert.ok((await terms.locator('h4').allTextContents()).every(t=>t.startsWith('B')));
   await page.goto(base+'/fishing-lingo/#caribbean-flats-grand-slam');assert.ok(await page.locator('#florida-keys-grand-slam').isVisible());assert.ok(await page.locator('#florida-keys-grand-slam details').getAttribute('open')!==null);
   await page.goto(base+'/fishing-lingo/?q=haruan&region=southeast-asia');assert.equal(await terms.count(),1);
-  await page.goto(base+'/play/');await page.clock.install();await page.clock.pauseAt(new Date(Date.now()+1000));await page.evaluate(()=>{Math.random=()=>.45;});
-  const state=()=>page.locator('[data-fishing-game]').getAttribute('data-state');
-  const helpers=require('./game-test-helpers.cjs');const cast=()=>helpers.cast(page),bite=()=>helpers.bite(page),land=()=>helpers.land(page);
-  assert.equal(await page.locator('#game-sound').getAttribute('aria-pressed'),'false');
-  for(const water of ['lake','ice','flats','offshore','river']){await page.locator(`[data-water=${water}]`).click();assert.equal(await page.locator(`[data-water=${water}]`).getAttribute('aria-pressed'),'true');await page.locator('.game-scene').screenshot({path:path.join(out,`water-${water}.png`)});}
-  await cast();await page.keyboard.press('Enter');assert.equal(await state(),'wait');await bite();await page.clock.runFor(3400);assert.equal(await state(),'lost');
-  await cast();await bite();await page.clock.runFor(2600);assert.equal(await state(),'lost');
-  await cast();await bite();await page.keyboard.press('Space');await page.keyboard.down('Space');await page.clock.runFor(5000);await page.keyboard.up('Space');assert.equal(await state(),'lost');assert.match(await page.locator('#game-status').innerText(),/snapped/);
-  await land();assert.equal(await page.locator('#catch-trip').getAttribute('href'),'/environments/rivers-streams/');assert.equal(await page.locator('#collection-count').innerText(),'1');assert.equal(await page.locator('#game-log li').count(),1);
-  await page.locator('#game-catch').scrollIntoViewIfNeeded();await page.screenshot({path:path.join(out,'game-catch-1440.png')});
-  // Exercise the download fallback even when the browser exposes native sharing.
-  await page.evaluate(()=>Object.defineProperty(navigator,'canShare',{configurable:true,value:()=>false}));
-  const download=page.waitForEvent('download');await page.locator('#catch-share').click();const file=await download;assert.ok(file.suggestedFilename().endsWith('.png'));await file.saveAs(path.join(out,'catch-share.png'));
-  await page.evaluate(()=>{Object.defineProperty(navigator,'canShare',{configurable:true,value:()=>true});Object.defineProperty(navigator,'share',{configurable:true,value:async data=>{window.sharedCatch={type:data.files[0].type,size:data.files[0].size};}});});await page.locator('#catch-share').click();assert.equal(await page.evaluate(()=>window.sharedCatch.type),'image/png');assert.ok(await page.evaluate(()=>window.sharedCatch.size)>10000);
-  const best=await page.locator('#game-best').innerText();await page.reload();assert.equal(await page.locator('#game-best').innerText(),best);
-  await page.evaluate(()=>{Math.random=()=>.45;});await land();await land();assert.equal(await page.locator('[data-lure=spinner]').isEnabled(),true);assert.equal(await page.locator('[data-lure=fly]').isDisabled(),true);await page.locator('[data-lure=spinner]').click();assert.equal(await page.locator('[data-lure=spinner]').getAttribute('aria-pressed'),'true');
-  await page.locator('[data-mode=tournament]').click();await cast();await page.locator('#game-pause').click();const left=await page.locator('#game-streak').innerText();await page.clock.runFor(10000);assert.equal(await page.locator('#game-streak').innerText(),left);assert.equal(await state(),'wait');await page.locator('#game-pause').click();await page.clock.fastForward(61000);assert.ok(await page.locator('#tournament-result').isVisible());assert.equal(await page.locator('#game-leaderboard li b').count(),1);await page.locator('#tournament-close').click();
-  await page.locator('#daily-start').click();assert.equal(await page.locator('[data-mode=daily]').getAttribute('aria-pressed'),'true');assert.equal(await page.locator('[data-water]:enabled').count(),0);await land();assert.match(await page.locator('#daily-progress').innerText(),/1 \/ 3/);
-  await page.locator('#game-menu').click();assert.equal(await page.locator('[data-fishing-game]').getAttribute('data-paused'),'true');await page.locator('#game-time').selectOption('night');await page.locator('#game-weather').selectOption('rain');await page.keyboard.press('Escape');await page.clock.runFor(50);assert.equal(await page.locator('[data-fishing-game]').getAttribute('data-paused'),'false');await page.locator('.game-scene').screenshot({path:path.join(out,'water-night.png')});
-  await page.locator('#game-sound').click();assert.equal(await page.locator('#game-sound').getAttribute('aria-pressed'),'true');await page.locator('#game-sound').click();assert.equal(await page.locator('#game-sound').getAttribute('aria-pressed'),'false');
-  await page.locator('#collection-more').click();assert.equal(await page.locator('.fish-species-card:visible').count(),34);await page.locator('#collection-more').click();assert.equal(await page.locator('.fish-species-card:visible').count(),5);
+  await page.goto(base+'/play/');await page.evaluate(()=>localStorage.clear());await page.reload();
+  const rejectPlay=page.getByRole('button',{name:'Reject non-essential',exact:true});if(await rejectPlay.isVisible())await rejectPlay.click();
+  await page.waitForFunction(()=>window.CastwardPlay);
+  assert.equal(await page.locator('#cc-sound').getAttribute('aria-pressed'),'false');
+  const names={lake:'Lake',ice:'Ice edge',flats:'Flats',offshore:'Offshore',river:'River'};
+  for(const water of ['lake','ice','flats','offshore','river']){await page.locator('#cc-water-btn').click();await page.locator(`[data-w=${water}]`).click();assert.equal((await page.locator('#cc-water-name').innerText()).trim(),names[water]);await page.locator('.cc-stage').screenshot({path:path.join(out,`water-${water}.png`)});}
+  const box=await page.locator('#cc-canvas').boundingBox();
+  const fish=await page.evaluate(()=>window.CastwardPlay.state().fish[0]);
+  await page.mouse.click(box.x+fish.x, box.y+fish.y);
+  await page.evaluate(()=>window.CastwardPlay.advance(0.7));
+  let phase=await page.evaluate(()=>{for(let i=0;i<40&&window.CastwardPlay.state().phase!=='strike';i++)window.CastwardPlay.advance(0.1);return window.CastwardPlay.state().phase;});
+  assert.equal(phase,'strike');
+  await page.evaluate(()=>window.CastwardPlay.advance(3.4));
+  assert.equal(await page.evaluate(()=>window.CastwardPlay.state().phase),'lost');
+  assert.match(await page.locator('#cc-hint').innerText(),/Too late/i);
+  await page.evaluate(()=>window.CastwardPlay.advance(3.4));
+  const fish2=await page.evaluate(()=>window.CastwardPlay.state().fish[0]);
+  await page.mouse.click(box.x+fish2.x, box.y+fish2.y);
+  await page.evaluate(()=>window.CastwardPlay.advance(0.7));
+  phase=await page.evaluate(()=>{for(let i=0;i<50&&window.CastwardPlay.state().phase!=='strike';i++)window.CastwardPlay.advance(0.15);return window.CastwardPlay.state().phase;});
+  assert.equal(phase,'strike');
+  await page.mouse.click(box.x+box.width*0.5, box.y+box.height*0.62);
+  await page.mouse.move(box.x+box.width*0.5, box.y+box.height*0.62);
+  await page.mouse.down();
+  let snap='';
+  for(let i=0;i<40;i++){
+    const s=await page.evaluate(()=>{window.CastwardPlay.advance(0.25,true);return window.CastwardPlay.state();});
+    if(s.phase==='lost'){snap=s.reason;break;}
+  }
+  await page.mouse.up();
+  assert.equal(snap,'snap');
+  assert.match(await page.locator('#cc-hint').innerText(),/Let go when the bar turns red/);
+  await page.evaluate(()=>localStorage.clear());await page.reload();if(await rejectPlay.isVisible())await rejectPlay.click();await page.waitForFunction(()=>window.CastwardPlay);
+  const boxL=await page.locator('#cc-canvas').boundingBox();
+  const fishL=await page.evaluate(()=>window.CastwardPlay.state().fish[0]);
+  await page.mouse.click(boxL.x+fishL.x, boxL.y+fishL.y);
+  await page.evaluate(()=>window.CastwardPlay.advance(0.7));
+  phase=await page.evaluate(()=>{for(let i=0;i<40&&window.CastwardPlay.state().phase!=='strike';i++)window.CastwardPlay.advance(0.1);return window.CastwardPlay.state().phase;});
+  assert.equal(phase,'strike');
+  await page.mouse.click(boxL.x+boxL.width*0.5, boxL.y+boxL.height*0.62);
+  await page.mouse.move(boxL.x+boxL.width*0.5, boxL.y+boxL.height*0.62);
+  for(let i=0;i<350;i++){
+    const s=await page.evaluate(()=>window.CastwardPlay.state());
+    if(s.phase==='landed'||s.phase==='lost'){phase=s.phase;break;}
+    const release=s.mode==='run'||s.jump>0.12||s.tension>(s.kind==='deep'?0.64:0.7);
+    if(release) await page.mouse.up(); else await page.mouse.down();
+    await page.evaluate(()=>window.CastwardPlay.advance(0.1,true));
+  }
+  await page.mouse.up();
+  await page.evaluate(()=>window.CastwardPlay.advance(1));
+  assert.equal(await page.evaluate(()=>window.CastwardPlay.state().phase),'landed');
+  assert.match(await page.locator('#cc-card-real').getAttribute('href'),/\/environments\/rivers-streams\//);
+  assert.match(await page.locator('[data-log-count]').first().innerText(),/1 of 34/);
+  await page.locator('#cc-card').screenshot({path:path.join(out,'game-catch-1440.png')});
+  const best=await page.locator('#cc-best').innerText();await page.reload();await page.waitForFunction(()=>window.CastwardPlay);assert.equal(await page.locator('#cc-best').innerText(),best);
+  await page.locator('#cc-sound').click();assert.equal(await page.locator('#cc-sound').getAttribute('aria-pressed'),'true');await page.locator('#cc-sound').click();assert.equal(await page.locator('#cc-sound').getAttribute('aria-pressed'),'false');
+  await page.locator('#cc-tackle-btn').click();assert.equal(await page.locator('[data-cast-game]').getAttribute('data-paused'),'true');await page.keyboard.press('Escape');await page.waitForFunction(()=>document.querySelector('[data-cast-game]').dataset.paused==='false');
   await context.close();
-  const phone=await browser.newContext({viewport:{width:390,height:844},isMobile:true,hasTouch:true,reducedMotion:'reduce'});const m=await phone.newPage();await m.goto(base+'/play/');await m.locator('#game-action').tap();assert.equal(await m.locator('[data-fishing-game]').getAttribute('data-state'),'aim');await m.locator('#game-action').tap();assert.equal(await m.locator('[data-fishing-game]').getAttribute('data-state'),'wait');await m.locator('#game-menu').tap();await m.locator('[data-close-menu]').last().tap();await m.waitForFunction(()=>document.querySelector('[data-fishing-game]').dataset.paused==='false');assert.equal(await m.locator('[data-fishing-game]').getAttribute('data-paused'),'false');await phone.close();
+  const phone=await browser.newContext({viewport:{width:390,height:844},isMobile:true,hasTouch:true,reducedMotion:'reduce'});const m=await phone.newPage();await m.goto(base+'/play/');await m.locator('#cc-canvas').tap();await m.waitForFunction(()=>['cast','wait','strike'].includes(document.querySelector('[data-cast-game]').dataset.phase));await m.locator('#cc-log-btn').tap();await m.locator('[data-close]').last().tap();await m.waitForFunction(()=>document.querySelector('[data-cast-game]').dataset.paused==='false');assert.equal(await m.locator('[data-cast-game]').getAttribute('data-paused'),'false');await phone.close();
   const nojs=await browser.newContext({javaScriptEnabled:false});const n=await nojs.newPage();await n.goto(base+'/fishing-lingo/');assert.equal(await n.locator('[data-lingo-term]').count(),157);await n.goto(base+'/play/');assert.match(await n.locator('main noscript').innerText(),/needs JavaScript/);await nojs.close();
-  const denied=await browser.newContext();await denied.addInitScript(()=>Object.defineProperty(window,'localStorage',{get(){throw new DOMException('Blocked','SecurityError');}}));const d=await denied.newPage();await d.goto(base+'/play/');assert.ok(await d.locator('#game-action').isEnabled());assert.match(await d.locator('#game-storage-note').innerText(),/unavailable/);await denied.close();
+  const denied=await browser.newContext();await denied.addInitScript(()=>Object.defineProperty(window,'localStorage',{get(){throw new DOMException('Blocked','SecurityError');}}));const d=await denied.newPage();await d.goto(base+'/play/');await d.waitForFunction(()=>window.CastwardPlay);assert.equal(await d.locator('#cc-canvas').isVisible(),true);assert.match(await d.locator('#cc-hint').innerText(),/tap the water/i);await denied.close();
   assert.deepEqual(errors,[]);console.log(JSON.stringify({screenshots:out,errors}));
  }finally{await browser.close();}
 })().catch(e=>{console.error(e);process.exitCode=1;});
