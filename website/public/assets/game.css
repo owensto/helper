@@ -43,6 +43,7 @@
 .cc-card-art{position:relative;height:clamp(120px,24vh,210px);background:#fff;overflow:hidden}
 .cc-card-art img,.cc-card-art canvas{position:absolute;inset:8px 14px;width:calc(100% - 28px);height:calc(100% - 16px);object-fit:contain;display:block}
 .cc-card-art [hidden]{display:none}
+.cc-card-art img,.cc-log-grid img{mix-blend-mode:multiply}
 .cc-card-text{padding:14px 22px 16px}
 .cc-card-rarity{font:700 11px/1 var(--font);letter-spacing:.12em;text-transform:uppercase;color:#56705f}
 .cc-card-rarity[data-rarity=rare]{color:#2c6f8a}.cc-card-rarity[data-rarity=legendary]{color:#a2681a}

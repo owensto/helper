@@ -162,7 +162,7 @@
   function loadPlate() {
     const P = PLATES[water], want = water, img = new Image();
     img.decoding = 'async'; img.onload = () => { if (want !== water) return; plate = img; plateFor = want; bake(); };
-    const need = Math.max(W * dpr, H * dpr * 1.5) * .6, sizes = Object.keys(P.sizes).map(Number).sort((a, b) => a - b);
+    const need = Math.max(W * dpr, H * dpr * 1.5) * .55, sizes = Object.keys(P.sizes).map(Number).sort((a, b) => a - b);
     img.src = P.sizes[sizes.find(n => n >= need) || sizes[sizes.length - 1]];
   }
 
