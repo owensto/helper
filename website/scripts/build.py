@@ -224,6 +224,8 @@ install_fishing_lingo(pages, ROOT, add, intro, bread, CONFIG['siteUrl'])
 from clean_copy import install as install_clean_copy, clean_chrome
 from licenses import install as install_licenses
 print('licences', install_licenses(pages, ROOT, add, TRIPS))
+from near_me import install as install_near_me
+print('near-me places', install_near_me(pages, ROOT, add, DATA, TRIPS, CONFIG['amazonTag']))
 install_clean_copy(pages, ROOT, CONFIG)
 FOOTER = clean_chrome(FOOTER, CONFIG['amazonTag'])
 HEADER = clean_chrome(HEADER, CONFIG['amazonTag'])

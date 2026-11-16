@@ -16043,6 +16043,12 @@
     "noindex": false,
     "redirectTo": null
   },
+  "/near-me/": {
+    "kind": "tool",
+    "title": "Fish Near Me: Where and When to Go | Castward",
+    "noindex": false,
+    "redirectTo": null
+  },
   "/search/": {
     "kind": "search",
     "title": "Search | Castward",

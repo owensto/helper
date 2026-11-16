@@ -54,3 +54,4 @@ body{background:var(--paper)}h1,h2,h3,h4{font-weight:700;letter-spacing:-.015em}
 .lic-groups{columns:3 260px;column-gap:2rem}
 .lic-group{break-inside:avoid;margin-bottom:1.5rem}.lic-group h2{font-size:1.05rem;margin:0 0 .4rem}
 .lic-group ul{list-style:none;padding:0;margin:0}.lic-group li{margin:.2rem 0}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px}.quiet-button.solid{background:#fff;color:var(--forest);border-color:#fff;font-weight:600}
