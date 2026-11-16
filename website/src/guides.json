@@ -486,7 +486,7 @@
     "layers-rei": {
       "title": "REI: How to dress in layers",
       "url": "https://www.rei.com/learn/expert-advice/layering-basics.html",
-      "checked": "2026-11-14",
+      "checked": "2026-11-15",
       "scopeNote": "Base, insulation and shell roles; cotton and damp insulation.",
       "status": "text-inspected",
       "publisher": "REI",
@@ -1818,7 +1818,7 @@
       "shortTitle": "Fish house questions and packing",
       "title": "Minnesota Recreational Rentals — Fish house questions and packing",
       "url": "https://www.icefishmn.com/fish-house-faqs",
-      "checked": "2026-11-14",
+      "checked": "2026-11-15",
       "status": "source-checked",
       "scopeNote": "Operator-specific meeting arrangements, equipment requests, packing and cancellation terms.",
       "group": "Independent"
@@ -1828,7 +1828,7 @@
       "shortTitle": "Ice fishing trips and rentals",
       "title": "Minnesota Guide Service — Ice fishing trips and rentals",
       "url": "https://www.minnesotaguideservice.com/services/ice-fishing",
-      "checked": "2026-11-14",
+      "checked": "2026-11-15",
       "status": "source-checked",
       "scopeNote": "Day and sleeper formats; rental equipment add-ons differ from fully guided inclusions. No price recommendation.",
       "group": "Independent"
@@ -1910,7 +1910,7 @@
       "shortTitle": "Learn to ice fish",
       "group": "Government/agency",
       "type": "official-agency",
-      "checked": "2026-11-14",
+      "checked": "2026-11-15",
       "status": "text-inspected",
       "scopeNote": "Read expanded guidance in Orca. Layer choices, waterproof boots, rental equipment, offline regulations, and ice/CO cautions."
     },
@@ -1932,7 +1932,7 @@
       "shortTitle": "Prepare for winter ice fishing",
       "group": "Independent",
       "type": "operator",
-      "checked": "2026-11-14",
+      "checked": "2026-11-15",
       "status": "text-inspected",
       "scopeNote": "2026–27 sleeper provision list; own bedding, cookware and tackle; generator change. No opening date, fee, or ice threshold reused."
     },
@@ -6833,7 +6833,7 @@
     {
       "slug": "fishing-layering-system-guide",
       "title": "Fishing layers: what to wear under waders",
-      "description": "Wear a base layer, add insulation for the cold, and use a shell for wind or rain. Fit the whole system under your waders before the trip. For a rental ice house, pack for the transfer across the ice as well as the time inside the shelter.",
+      "description": "What to wear under waders or in an ice fishing house: compare base, insulation, and shell layers, test the full fit, and pack dry spares.",
       "category": "GEAR / LAYERING",
       "destination": "na-us-ak-019",
       "sections": [
@@ -6911,6 +6911,54 @@
               "url": "/guides/minnesota-fish-house-rental-checklist/",
               "label": "Use the rental worksheet"
             }
+          ]
+        },
+        {
+          "id": "first-ice-outfit",
+          "title": "What should you wear for your first ice fishing trip?",
+          "paragraphs": [
+            "Start with a base layer, adjustable insulation, and an outer layer for wind or wet weather. Add a warm hat, hand protection, waterproof winter boots, and dry spare socks. Minnesota DNR advises warm clothes for outside tasks and thinner layers inside heated shelters. Your transfer and fishing format decide what must stay on your body.",
+            "For a short ride to a heated rental, keep outdoor clothing ready for arrival and departure. If you walk to the spot or fish outside, ask the guide about the exposure and planned breaks before choosing the outfit. Do not use a heated-house packing list as an outdoor clothing limit."
+          ],
+          "table": {
+            "heads": [
+              "Trip stage",
+              "Clothing decision",
+              "Check before the trip"
+            ],
+            "rows": [
+              [
+                "Walk or transfer",
+                "Use layers you can adjust",
+                "Can you reach the shell without emptying the bag?"
+              ],
+              [
+                "Seated in a heated house",
+                "Remove warmth as needed",
+                "Where will removed clothes stay dry?"
+              ],
+              [
+                "Outside to fish or return",
+                "Put outdoor layers back on",
+                "Do boots still fit with the socks you chose?"
+              ],
+              [
+                "Wet clothing",
+                "Use the separate dry spare set",
+                "How will you return or change on dry ground?"
+              ]
+            ]
+          },
+          "callouts": [
+            {
+              "kind": "tip",
+              "title": "Try the whole outfit",
+              "text": "Sit, reach, and step up in the clothes and boots you plan to use. Test the life jacket by its own fit instructions. A clothing list does not establish safe ice or replace the local safety briefing."
+            }
+          ],
+          "sources": [
+            "mn14-dnr",
+            "layers-rei"
           ]
         },
         {
@@ -7096,22 +7144,6 @@
           ]
         },
         {
-          "id": "check-your-bag",
-          "title": "Which questions should you settle before you leave?",
-          "checklist": [
-            "Ask the guide whether the trip includes a long walk, a boat ride, or extended standing. The answer changes which layers need to stay accessible.",
-            "Check whether you will wear your own waders or borrow a pair. Try borrowed equipment with your clothes before you leave the meeting point.",
-            "Ask where spare clothes can stay dry on the boat. Use a bag that fits the available space and lets you reach the items you need.",
-            "Check the shell over the fullest layer combination you expect to wear. Raise both arms and sit down before you decide the fit works.",
-            "Keep one small place for wet gloves. Do not put them back in the dry-spare bag when you change into another pair.",
-            "Agree on the return plan with your partner. Choose a shorter outing if the clothing or conditions do not suit the day.",
-            "After the trip, note which item you used, carried, or missed. Use that list to change your next packing plan before you buy another garment."
-          ],
-          "paragraphs": [
-            "These are questions for your own trip plan. They do not establish a safe water temperature or a guaranteed time you can stay outside."
-          ]
-        },
-        {
           "id": "rental-bag",
           "title": "How do you split a heated-house outfit between bags?",
           "paragraphs": [
@@ -7221,6 +7253,10 @@
         {
           "q": "What spare clothes should stay dry?",
           "a": "Start with a dry base layer and socks. Add dry clothes for the return journey, stored separately from wet waders and boots."
+        },
+        {
+          "q": "Do I need heavy outdoor clothes in a heated ice house?",
+          "a": "Bring them for the transfer and time outside. Use removable layers so you can adjust inside the shelter. Keep the outdoor outfit dry and ready for the return."
         }
       ],
       "relatedTrips": [],
@@ -7239,7 +7275,7 @@
       "plannerNote": "Separate the clothes you will wear from the dry clothes you will carry.",
       "revision": "Rebuilt with original guide imagery, checked sources, concise tables and practical steps.",
       "rich": true,
-      "updated": "2026-11-14",
+      "updated": "2026-11-15",
       "hero": {
         "name": "layers",
         "alt": "A charcoal base layer, rust fleece, and olive rain shell on a wooden bench."
@@ -9650,12 +9686,12 @@
     {
       "slug": "minnesota-fish-house-rental-checklist",
       "title": "Minnesota fish house rental: compare two trips",
-      "description": "Before you rent a Minnesota fish house, confirm the guide time, transport, tackle, bedding, power, and cancellation terms. A heated house does not mean every item is included. Use this two-quote worksheet to record the answers, find missing details, and pack for the actual trip.",
+      "description": "Compare Minnesota guided ice trips and fish house rentals: instruction, tackle, transport, sleeper supplies, and a printable two-quote worksheet.",
       "category": "MINNESOTA / FIRST ICE TRIP",
       "destination": "na-us-mn-001",
       "rich": true,
       "published": "2026-11-13",
-      "updated": "2026-11-14",
+      "updated": "2026-11-15",
       "new": true,
       "hero": {
         "name": "minnesota-rental-planner",
@@ -9715,6 +9751,49 @@
           "sources": [
             "daily-mn-service",
             "daily-mn-lodge"
+          ]
+        },
+        {
+          "id": "guided-or-rental",
+          "title": "How do you choose between a guided ice trip and a rental house?",
+          "paragraphs": [
+            "Choose a guided session when you need someone to teach the setup and help you fish. Choose a rental when your group can handle the tackle and wants an agreed place to fish. Ask about guide contact separately: a transport ride or a check-in is not the same service as instruction throughout a session.",
+            "Minnesota Guide Service lists rods, reels, bait, and instruction with its fully guided trips. Its house-rental listing treats rods, reels, tackle, and electronics as separate add-ons. That difference matters more than the word “heated” when you compare the two packages. Confirm the current written quote for your dates."
+          ],
+          "table": {
+            "heads": [
+              "Your group",
+              "Start by asking for",
+              "Settle before booking"
+            ],
+            "rows": [
+              [
+                "Nobody has ice-fished",
+                "A guided teaching session",
+                "Who stays, what they teach, and which gear they supply"
+              ],
+              [
+                "One experienced angler helps the group",
+                "A day rental quote",
+                "Whether that person can help everyone with the supplied setup"
+              ],
+              [
+                "The group wants an overnight stay",
+                "A sleeper provision list",
+                "Bedding, cookware, power, toilets, and a return contact"
+              ]
+            ]
+          },
+          "callouts": [
+            {
+              "kind": "tip",
+              "title": "Compare the same day",
+              "text": "Put the same guest count and session length on both quotes. Add the equipment you need before you compare totals. Do not compare a house-only price with a fully guided package."
+            }
+          ],
+          "sources": [
+            "daily-mn-service",
+            "daily-mn-rental"
           ]
         },
         {
@@ -9917,6 +9996,10 @@
         {
           "q": "Does a completed worksheet confirm a reservation?",
           "a": "No. Make the reservation directly with the operator and retain their written confirmation."
+        },
+        {
+          "q": "Does a fish house rental include a fishing guide?",
+          "a": "Do not assume it does. Ask whether the booking includes teaching time, periodic check-ins, or only transport and a house. Get the service and equipment list in writing."
         }
       ],
       "relatedGuides": [
@@ -9931,13 +10014,13 @@
     {
       "slug": "minnesota-ice-fishing-packing-list",
       "title": "Minnesota ice fishing packing list: rental houses",
-      "description": "Build a day-house or overnight packing list. Separate your own gear from confirmed rental items, resolve missing answers, and print your list.",
+      "description": "Pack for a Minnesota ice fishing rental house with a day or overnight checklist. Check bedding, tackle, cookware, power, and the return plan.",
       "category": "MINNESOTA / FIRST ICE TRIP",
       "destination": "na-us-mn-001",
       "rich": true,
       "answerFirst": true,
       "published": "2026-11-14",
-      "updated": "2026-11-14",
+      "updated": "2026-11-15",
       "new": true,
       "hero": {
         "name": "minnesota-sleeper-packing",
@@ -10053,6 +10136,53 @@
               ]
             ]
           }
+        },
+        {
+          "id": "package-to-bag",
+          "title": "How do you turn a rental package into your own packing list?",
+          "paragraphs": [
+            "Read the provision list for the house you booked, not just the resort homepage. Mark each item as supplied only after you have an answer for your dates. A mattress does not answer the bedding question, and a cooktop does not answer the cookware question.",
+            "For a concrete example, River Bend Resort’s 2026–27 sleeper list includes foam mattresses, water, live bait, a two-burner cooktop, and a generator with its first tank of gas. Guests bring bedding, food, cooking supplies, and fishing gear. Its day houses have no cooking setup. These are River Bend’s listed arrangements, not a standard Minnesota package."
+          ],
+          "table": {
+            "heads": [
+              "The list says",
+              "Still ask",
+              "Your next action"
+            ],
+            "rows": [
+              [
+                "Mattresses",
+                "Are blankets, sleeping bags, and pillows supplied?",
+                "Pack the bedding the operator does not supply"
+              ],
+              [
+                "Water",
+                "Is it drinking water, and how much is supplied?",
+                "Confirm drinking water for each guest"
+              ],
+              [
+                "Cooktop",
+                "Which pots, dishes, and utensils are supplied?",
+                "Match one simple meal to confirmed equipment"
+              ],
+              [
+                "Generator and first fuel tank",
+                "Who handles fuel and what happens if power stops?",
+                "Agree on operator support; do not improvise equipment"
+              ]
+            ]
+          },
+          "callouts": [
+            {
+              "kind": "tip",
+              "title": "Do one final bag check",
+              "text": "Read the printed list aloud with your group. Give each shared item one person’s name. Keep personal warm clothes and dry spares on each guest’s list."
+            }
+          ],
+          "sources": [
+            "mn14-river"
+          ]
         },
         {
           "id": "clothes",

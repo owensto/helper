@@ -129,7 +129,7 @@ def jurisdiction_page(r, trips):
     body = f'<div class="wrap lic-page"><nav class="breadcrumbs"><a href="/">Home</a> / <a href="{HUB}">Fishing licenses</a> / {E(name)}</nav>'
     body += f'<header class="lic-head"><span class="eyebrow">FISHING LICENCE · {E(r["country"].upper())}</span><h1>{E(name)} fishing licence</h1><p class="lic-answer">{E(r["summary"])}</p>{buttons(r)}<p class="small">Updated {E(r['checked'])}</p></header>'
     body += '<div class="lic-grid"><div>'
-    body += bullets('Who needs one', r.get('whoNeedsOne')) + bullets('Who doesn’t', r.get('exemptions'))
+    body += bullets('Who needs one', r.get('whoNeedsOne')) + bullets('Who is exempt', r.get('exemptions'))
     if r.get('options'):
         body += '<h2>Licence options and prices</h2>' + options_table(r)
     if r.get('extras'):
@@ -140,8 +140,10 @@ def jurisdiction_page(r, trips):
     if r.get('guidedTrips'):
         body += f'<h2>Fishing with a guide or charter</h2><p>{E(r["guidedTrips"])}</p>'
     body += bullets('Rules visitors should know', r.get('keyRules'))
+    if r.get('checkOfficial'):
+        body += '<h2>What should you confirm before the trip?</h2><p>' + E(r['checkOfficial']) + '</p>'
     if r.get('howToBuy'):
-        body += f'<h2>How to buy</h2><p>{E(r["howToBuy"])}</p>'
+        body += f'<h2>How do you get the right licence?</h2><p>{E(r["howToBuy"])}</p>'
     if r.get('freeFishingDays'):
         body += '<h2>License-free days</h2><p>' + E(r['freeFishingDays']) + '</p>'
     if r['id'] == 'us-florida':
@@ -195,7 +197,7 @@ def install(pages, root, add, trips):
         if len(title) > 60:
             title = f'{r["name"]} Fishing License'
         add(page_path(r), title, (r['summary'][:150]).rstrip(), jurisdiction_page(r, per_rec.get(r['id'], [])), 'article')
-        pages[page_path(r)]['modified'] = max(r['checked'], '2026-11-12')
+        pages[page_path(r)]['modified'] = max(r['checked'], '2026-11-15')
         pages[page_path(r)]['citations'] = [s['url'] for s in r.get('sources', [])]
     groups = {}
     for r in recs:
@@ -211,5 +213,5 @@ def install(pages, root, add, trips):
     body += '<script>(()=>{const i=document.querySelector("[data-lic-filter]");if(!i)return;i.addEventListener("input",()=>{const q=i.value.trim().toLowerCase();document.querySelectorAll("[data-lic-group]").forEach(g=>{let n=0;g.querySelectorAll("li").forEach(li=>{const m=!q||li.dataset.licName.includes(q);li.hidden=!m;n+=m});g.hidden=!n;});});})();</script>'
     add(HUB, 'Fishing Licenses by State and Country | Castward',
         f'Fishing licence rules for {len(recs)} US states, Canadian provinces and countries: who needs one, visitor prices and official links to buy.', body, 'article')
-    pages[HUB]['modified'] = '2026-11-11'
+    pages[HUB]['modified'] = max(r['checked'] for r in recs)
     return len(recs), sum(len(v) for v in per_rec.values())

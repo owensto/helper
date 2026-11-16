@@ -1,0 +1,116 @@
+{
+  "daily-mn-service": {
+    "url": "https://www.minnesotaguideservice.com/services/ice-fishing",
+    "checked": "2026-11-15",
+    "scope": "Day and sleeper formats; rental equipment add-ons differ from fully guided inclusions. No price recommendation.",
+    "status": "live page read"
+  },
+  "daily-mn-rental": {
+    "url": "https://www.icefishmn.com/fish-house-faqs",
+    "checked": "2026-11-15",
+    "scope": "Operator-specific meeting arrangements, equipment requests, packing and cancellation terms.",
+    "status": "live page read"
+  },
+  "mn14-river": {
+    "url": "https://riverbendresort.com/preparing-for-winter-ice-fishing-on-lake-of-the-woods/",
+    "checked": "2026-11-15",
+    "scope": "2026\u201327 sleeper provision list; own bedding, cookware and tackle; generator change. No opening date, fee, or ice threshold reused.",
+    "status": "live page read"
+  },
+  "mn14-dnr": {
+    "url": "https://www.dnr.state.mn.us/gofishing/learn-ice-fish.html",
+    "checked": "2026-11-15",
+    "scope": "Read expanded guidance in Orca. Layer choices, waterproof boots, rental equipment, offline regulations, and ice/CO cautions.",
+    "status": "live page read"
+  },
+  "layers-rei": {
+    "url": "https://www.rei.com/learn/expert-advice/layering-basics.html",
+    "checked": "2026-11-15",
+    "scope": "Base, insulation and shell roles; cotton and damp insulation.",
+    "status": "live page read"
+  },
+  "gr-cold": {
+    "url": "https://www.weather.gov/safety/coldwater",
+    "checked": "2026-11-15",
+    "scope": "Cold shock, loss of muscle control, and life jacket advice. No safe immersion time is inferred.",
+    "status": "live page read"
+  },
+  "simms-fit": {
+    "url": "https://www.simmsfishing.com/pages/size-fit-guide",
+    "checked": "2026-11-15",
+    "scope": "Girth, inseam and bootie size measurements.",
+    "status": "live page read"
+  },
+  "frog-rain": {
+    "url": "https://www.froggtoggs.com/products/the-frogg-toggsr-ultra-lite2tm-4749",
+    "checked": "2026-11-15",
+    "scope": "Manufacturer page identified the product. Specifications could not be confirmed in accessible page text; not used in the revised picks.",
+    "status": "live page read"
+  },
+  "columbia-fleece": {
+    "url": "https://www.columbia.com/p/mens-fast-trek-ii-full-zip-fleece-1420421.html",
+    "checked": "2026-11-15",
+    "scope": "Polyester microfleece and $65 price.",
+    "status": "live page read"
+  },
+  "gr-shell": {
+    "url": "https://www.patagonia.com/product/mens-torrentshell-3-layer-rain-jacket/85241.html",
+    "checked": "2026-11-15",
+    "scope": "Three-layer H2No shell, pit zips, adjustable hood; machine wash cold, tumble dry low, no fabric softener.",
+    "status": "live page read"
+  },
+  "gr-ice-care": {
+    "url": "https://na.icebreaker.com/en-us/pages/caring-for-your-icebreaker",
+    "checked": "2026-11-15",
+    "scope": "Use the garment care label, avoid fabric softener, store clean and dry. No universal service-life estimate.",
+    "status": "live page read"
+  },
+  "simms-care": {
+    "url": "https://www.simmsfishing.com/pages/wader-care",
+    "checked": "2026-11-15",
+    "scope": "Rinse, dry, wash and storage instructions.",
+    "status": "live page read"
+  },
+  "mn14-jeff": {
+    "url": "https://iceominiums.com/faqs",
+    "checked": "2026-11-15",
+    "scope": "Own rods and bedding; supplied minnows; indoor footwear; cookware. No fee or safety claim reused.",
+    "status": "live page read"
+  },
+  "mn14-angle": {
+    "url": "https://anglenorth.com/ice-trips",
+    "checked": "2026-11-15",
+    "scope": "Bait and transport listed; rods/reels available for rental. No price or catch claim reproduced.",
+    "status": "live page read"
+  },
+  "mn14-service": {
+    "url": "https://www.minnesotaicefishhouserental.com/",
+    "checked": "2026-11-15",
+    "scope": "Different day/sleeper inclusions, rental tackle, waste and cooking provision. No prices reproduced.",
+    "status": "live page read"
+  },
+  "daily-mn-lodge": {
+    "url": "https://lakeroadlodge.com/ice-fishing-lake-of-the-woods/",
+    "checked": "2026-11-15",
+    "scope": "Guests bring bedding and tackle for sleeper houses; generator rental is separate.",
+    "status": "live page read"
+  },
+  "daily-mn-traxx": {
+    "url": "https://www.fishtraxx.com/ice-castle-fish-house-rentals.html",
+    "checked": "2026-11-15",
+    "scope": "Operator lists generator and fuel included, rods on request, electronics as rentals.",
+    "status": "live page read"
+  },
+  "daily-mn-ice": {
+    "url": "https://www.dnr.state.mn.us/safety/ice/index.html",
+    "checked": "2026-11-15",
+    "scope": "Ice is never completely safe; thickness and appearance alone do not establish strength.",
+    "status": "live page read"
+  },
+  "smart-thermal": {
+    "url": "https://www.smartwool.com/en-us/products/mens-classic-thermal-merino-base-layer-crew-sw016349?variant=63206702874993",
+    "checked": "2026-11-15",
+    "status": "live page read",
+    "scope": "Classic Thermal: 100% merino, 250 g/m2, slim fit and flatlock construction; no price reused."
+  }
+}

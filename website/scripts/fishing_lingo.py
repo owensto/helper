@@ -67,7 +67,7 @@ def install(pages, root, add, intro, bread, origin=''):
     letters={t['term'][0].upper() for _,t in terms}
     for letter in 'ABCDEFGHIJKLMNOPQRSTUVWXYZ':
         body += f'<button type="button" data-letter="{letter}" aria-pressed="false"'+(' disabled' if letter not in letters else '')+f'>{letter}</button>'
-    body += '</nav><p id="lingo-empty" hidden>No bites. Try another word or clear the filters.</p>'
+    body += '</nav><p id="lingo-empty" hidden>No terms match. Try another word or clear the filters.</p>'
     for r in regions:
         rid=r['id']
         body += f'<section class="lingo-region" id="{rid}" data-lingo-region data-continent="{E(r["continent"],quote=True)}"><header class="lingo-region-heading">{regional_art(r["continent"])}<div><span class="eyebrow">{E(r["continent"])}</span><h3>{E(r["name"])}</h3><p>{E(r["intro"])}</p></div><span class="region-count">{len(r["terms"]):02d} TERMS</span></header><div class="lingo-grid">'
@@ -94,7 +94,7 @@ def install(pages, root, add, intro, bread, origin=''):
                 body += f'<p><b>{E(region_by_id[note["region"]]["name"])}:</b> {E(note["meaning"])}</p>'
             body += '<div class="lingo-sources">'+''.join(f'<a href="{E(sources[s]["url"],quote=True)}" target="_blank" rel="noopener noreferrer">{E(sources[s]["title"])} ↗</a>' for s in t['sources'] if s in sources)+'</div></div></details></article>'
         body += '</div></section>'
-    body += '</section><footer class="lingo-end"><span class="eyebrow">PUT A PLACE TO THE WORDS</span><h2>Now go hear it for yourself.</h2><a href="/local-classics/">Find a local fishing classic ↗</a><a href="/glossary/">Explore the fish names A–Z ↗</a></footer></div></div>'
+    body += '</section><footer class="lingo-end"><span class="eyebrow">FIND A LOCAL TRIP</span><h2>Choose a trip where these terms are used.</h2><a href="/local-classics/">Find a local fishing classic ↗</a><a href="/glossary/">Explore the fish names A–Z ↗</a></footer></div></div>'
     schema={'@context':'https://schema.org','@type':'DefinedTermSet','name':'Fishing lingo by region','hasDefinedTerm':[{'@type':'DefinedTerm','name':t['term'],'description':t['meaning'],'url':origin+PATH+'#'+r['id']+'-'+slug(t['term']),'inDefinedTermSet':origin+PATH} for r,t in terms]}
     body += '<script type="application/ld+json">'+json.dumps(schema,ensure_ascii=False).replace('</','<\\/')+'</script>'
     add(PATH, 'Fishing Lingo by Region: Slams, Nicknames and Local Terms | Castward',f'A field guide to {count} fishing terms from {len(regions)} regions. Find local fish names, slams, and the words you hear on the water.',body,'article')
@@ -102,7 +102,7 @@ def install(pages, root, add, intro, bread, origin=''):
         digest=hashlib.sha256((root/'public/assets'/name).read_bytes()).hexdigest()[:12]
         return '/assets/'+name+'?v='+digest
     pages[PATH]['atlasAssets']='<link rel="stylesheet" href="'+asset('lingo.css')+'"><script defer src="'+asset('lingo.js')+'"></script>'
-    pages[PATH]['modified']='2026-11-11'
+    pages[PATH]['modified']='2026-11-15'
     link='<div class="wrap"><p class="lingo-link"><a class="link" href="/fishing-lingo/">Fishing lingo by region: slams, nicknames and local terms ↗</a></p></div>'
     for path in ['/glossary/','/local-classics/']+['/trip-types/'+s+'/' for s in ('keys-grand-slam','texas-slam','lowcountry-inshore-grand-slam','ascension-bay-grand-slam')]:
         if path in pages: pages[path]['body'] += link

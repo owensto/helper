@@ -1,0 +1,86 @@
+[
+  {
+    "id": "do-national",
+    "checked": "2026-11-15",
+    "sources": [
+      {
+        "title": "Sport and tourist fishing Resolution 001-2024",
+        "url": "https://codopesca.gob.do/transparencia/phocadownload/MarcoLegalDeTransparencia/Resoluciones/RESOLUCIONES-2024/Resolucion%20001-2024%20Pesca%20deportiva%20Turistica_ocred.pdf"
+      },
+      {
+        "title": "CODOPESCA online applications",
+        "url": "https://solicitudes.codopesca.gob.do/"
+      }
+    ],
+    "result": "Article 6 gives the sport and tourist angler licence a two-year term. Confirm the current fee, card option, age rules, and required documents with CODOPESCA before your trip.",
+    "feesStampsFreeDays": "No new visitor fee, stamp, or free-day exemption established by these sources. Guatemala procedure charge is distinct from visitor permission."
+  },
+  {
+    "id": "ec-national",
+    "checked": "2026-11-15",
+    "sources": [
+      {
+        "title": "Official sport fishing vessel permit procedure",
+        "url": "https://www.gob.ec/sites/default/files/sign/procedure-7406-20210909151515-13279301-signed.pdf"
+      },
+      {
+        "title": "Galápagos fishing-tour Resolution 00009/2021",
+        "url": "https://www.galapagos.gob.ec/wp-content/uploads/downloads/RESOLUCIONES/2021/00009.pdf"
+      },
+      {
+        "title": "Official publication of the Galápagos fishing-tour reform",
+        "url": "https://www.registroficial.gob.ec/tercer-suplemento-al-registro-oficial-no-243/"
+      }
+    ],
+    "result": "Individual mainland visitor requirements, fees, exemptions and a visitor purchase route remain unconfirmed. Ask the park about current Galápagos zones and operator authorization.",
+    "feesStampsFreeDays": "No new visitor fee, stamp, or free-day exemption established by these sources. Guatemala procedure charge is distinct from visitor permission."
+  },
+  {
+    "id": "gd-national",
+    "checked": "2026-11-15",
+    "sources": [
+      {
+        "title": "Tourism regulations, section 4.13 on sport fishing",
+        "url": "https://grenadaparliament.gd/wp-content/uploads/2021/08/S.R.O.-15-of-2016-Grenada-Tourism-Authority-Tourist-Accommodation-and-Tourism-Enterprise-Regulations-2016.pdf"
+      },
+      {
+        "title": "Fisheries Act, vessel licensing",
+        "url": "https://grenadaparliament.gd/wp-content/uploads/2021/08/Cap108-FISHERIES-ACT.pdf"
+      }
+    ],
+    "result": "Confirm personal visitor licences, shore rules, yacht fishing, fees and marine protected-area access. No general no-licence claim is supported here.",
+    "feesStampsFreeDays": "No new visitor fee, stamp, or free-day exemption established by these sources. Guatemala procedure charge is distinct from visitor permission."
+  },
+  {
+    "id": "gt-national",
+    "checked": "2026-11-15",
+    "sources": [
+      {
+        "title": "2026 official sport fishing licence procedure",
+        "url": "https://apps.maga.gob.gt/simplificacion/Formularios/Details/655"
+      },
+      {
+        "title": "General Fisheries and Aquaculture Law, articles 26–27",
+        "url": "https://www.maga.gob.gt/wp-content/uploads/pdf/dipesca/nacional/ley_general_de_pesca_y_acuicultura.pdf"
+      },
+      {
+        "title": "Sport fishing regulations, articles 56–60",
+        "url": "https://apps.maga.gob.gt/normativas/Normativas/Download/410"
+      }
+    ],
+    "result": "The MAGA application page lists no procedure charge and a 60-day process. This does not establish free visitor fishing or charter coverage. Confirm guest, shore, duration, and age requirements before travel.",
+    "feesStampsFreeDays": "No new visitor fee, stamp, or free-day exemption established by these sources. Guatemala procedure charge is distinct from visitor permission."
+  },
+  {
+    "id": "gy-national",
+    "checked": "2026-11-15",
+    "sources": [
+      {
+        "title": "Fisheries Department responsibilities and contact details",
+        "url": "https://agriculture.gov.gy/fisheries/"
+      }
+    ],
+    "result": "Confirm individual visitor permits, Indigenous-community access, protected areas, charter coverage, fees and exemptions. The department page is not evidence that tourists can fish without a licence.",
+    "feesStampsFreeDays": "No new visitor fee, stamp, or free-day exemption established by these sources. Guatemala procedure charge is distinct from visitor permission."
+  }
+]
