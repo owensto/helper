@@ -101,4 +101,6 @@ def install(pages, root, origin, add, trips, destinations):
         belonging=[s for s in styles if s['slug'] in r['styles']]
         pages[r['path']]['body']+='<section class="wrap section"><h2>Explore this trip style.</h2><div class="style-classics">'+''.join('<a href="'+path(s)+'">'+E(s['name'])+' ↗</a>' for s in belonging)+'</div></section>'
     pages['/trips/']['body']='<section class="wrap classics-row"><span class="eyebrow">LOCAL CLASSICS</span><p>Know the name of the day you want?</p><a href="/local-classics/">All 41 local classics ↗</a><a href="/trip-types/lowcountry-inshore-grand-slam/">Lowcountry Grand Slam ↗</a><a href="/trip-types/lake-erie-walleye-charter/">Lake Erie walleye ↗</a></section>'+pages['/trips/']['body']
+    from guides import install_trip_type_guides
+    install_trip_type_guides(pages, root, origin, {s['slug'] for s in styles})
     return styles

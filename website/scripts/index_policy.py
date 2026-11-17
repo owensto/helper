@@ -71,6 +71,8 @@ def compile_into(trips, root):
             assert record['sourceUrls'] and all(valid_source(u) for u in record['sourceUrls']), trip['id']
             assert set(record['sourceUrls']) <= {u for t in trip['speciesEvidence'] for u in t['sourceUrls']}, trip['id']
             trip['localDescription'] = record
+            if record.get('season'):
+                trip['season'] = record['season']
     counts = Counter(description_key(t) for t in trips if description(t))
     for trip in trips:
         assessment = evaluate(trip, species, counts[description_key(trip)] > 1)

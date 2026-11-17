@@ -290,13 +290,13 @@ def render_rich(guide, content, root, origin, path):
     return body
 
 
-def install(pages, root, origin, add, trips, trip_card, intro, bread):
-    from photography import trip_metadata
-    from preview_images import PREVIEWS, image_url
+def install_trip_type_guides(pages, root, origin, slugs=None):
     content = catalog(root)
     # Keep established trip-type URLs while using the authored guide renderer.
     for slug, guide in content.get('tripTypes', {}).items():
         path = '/trip-types/' + slug + '/'
+        if path not in pages or (slugs is not None and slug not in slugs):
+            continue
         page = pages[path]
         if guide.get('seoTitle'):
             page['title'] = guide['seoTitle']
@@ -305,6 +305,13 @@ def install(pages, root, origin, add, trips, trip_card, intro, bread):
                     modified=guide['updated'], published=guide['published'],
                     citations=[content['sources'][sid]['url'] for sid in source_ids(guide)],
                     guideSourceNumbers=page_source_numbers(guide, content, root, path))
+
+
+def install(pages, root, origin, add, trips, trip_card, intro, bread):
+    from photography import trip_metadata
+    from preview_images import PREVIEWS, image_url
+    content = catalog(root)
+    install_trip_type_guides(pages, root, origin)
     for water_id, guide in content.get('waters', {}).items():
         path = '/environments/' + water_id + '/'
         page = pages[path]

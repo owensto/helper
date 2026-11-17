@@ -2067,6 +2067,56 @@
       "checked": "2026-11-15",
       "status": "text-inspected",
       "scopeNote": "Annual and in-season changes; current Recreation Report takes precedence over general seasonal advice."
+    },
+    "d17-tpwd-red": {
+      "url": "https://tpwd.texas.gov/huntwild/wild/species/reddrum/",
+      "publisher": "TPWD",
+      "title": "Red drum",
+      "shortTitle": "Red drum",
+      "group": "Government/agency",
+      "checked": "2026-11-17",
+      "status": "text-inspected",
+      "scopeNote": "Tailing definition, shallow vegetated habitat and fly presentations. No local tide or light threshold."
+    },
+    "d17-loco": {
+      "url": "https://www.locoflycharters.com/tailingredfish-howto.html",
+      "publisher": "LoCo Fly Charters",
+      "title": "Tailing redfish in Hilton Head and Beaufort",
+      "shortTitle": "Tailing redfish in Hilton Head and Beaufort",
+      "group": "Independent",
+      "checked": "2026-11-17",
+      "status": "text-inspected",
+      "scopeNote": "Local flooded spartina flats and tide-station advice; not a Texas tide rule."
+    },
+    "d17-columbia": {
+      "url": "https://myodfw.com/articles/regulation-updates",
+      "publisher": "ODFW",
+      "title": "Columbia River regulation updates",
+      "shortTitle": "Columbia River regulation updates",
+      "group": "Government/agency",
+      "checked": "2026-11-17",
+      "status": "text-inspected",
+      "scopeNote": "November 1–December 31, 2026: Buoy 10 to Bonneville, two hatchery coho/steelhead adults combined; release Chinook."
+    },
+    "d17-hooks": {
+      "url": "https://myodfw.com/sites/default/files/2025-11/26_Fish_regs.pdf",
+      "publisher": "ODFW",
+      "title": "2026 Oregon fishing regulations",
+      "shortTitle": "2026 Oregon fishing regulations",
+      "group": "Government/agency",
+      "checked": "2026-11-17",
+      "status": "text-inspected",
+      "scopeNote": "Columbia barbless hook requirement; current in-season notices supersede annual rules."
+    },
+    "d17-wdfw-season": {
+      "url": "https://wdfw.medium.com/the-salmon-fishing-current-blog-summer-and-fall-2026-edition-7a5510a6071c",
+      "publisher": "WDFW",
+      "title": "2026 salmon season updates",
+      "shortTitle": "2026 salmon season updates",
+      "group": "Government/agency",
+      "checked": "2026-11-17",
+      "status": "text-inspected",
+      "scopeNote": "August 21 notice changed Buoy 10 Chinook retention; historical context only."
     }
   },
   "trips": {
@@ -11172,16 +11222,16 @@
     "buoy-10-salmon": {
       "rich": true,
       "answerFirst": true,
-      "title": "Buoy 10 salmon",
-      "description": "Prepare for Buoy 10 salmon fishing with a tide-and-wind decision table, current rule links, a captain checklist and a compact estuary packing plan.",
+      "title": "Buoy 10 salmon fishing: season and charter checklist",
+      "description": "Check Buoy 10 salmon fishing rules for late 2026, barbless hooks, tide risks and the questions to ask a guide before you book.",
       "category": "LOCAL TRIP / PREPARATION",
       "destination": "na-us-wa-003",
       "hero": {
         "route": "/trip-types/buoy-10-salmon/"
       },
-      "updated": "2026-11-15",
+      "updated": "2026-11-17",
       "published": "2026-11-10",
-      "quickAnswer": "Buoy 10 salmon fishing takes place in the Columbia River estuary. Plan around the current season notice, the tide and your boat’s limits. Oregon’s general guidance describes late-summer Chinook and coho fishing, but annual and in-season rules decide what you can target or keep on your actual trip date.",
+      "quickAnswer": "Buoy 10 salmon fishing starts with the rule for your date. For November 1–December 31, 2026, ODFW allows two adult hatchery coho or hatchery steelhead combined from Buoy 10 to Bonneville Dam; release all Chinook. Check the latest notice, barbless hooks, launch and weather plan before you book.",
       "facts": [
         {
           "label": "Water",
@@ -11202,8 +11252,8 @@
         "fishing-layering-system-guide"
       ],
       "quickSources": [
-        "d15-buoy",
-        "d15-columbia"
+        "d17-columbia",
+        "d17-hooks"
       ],
       "sections": [
         {
@@ -11219,43 +11269,54 @@
         },
         {
           "id": "season",
-          "title": "When is Buoy 10 salmon fishing open?",
+          "title": "2026 Buoy 10 season: dates, limits and hook rules",
           "paragraphs": [
-            "Use ODFW’s current Columbia Recreation Report and the rules for the state and water you will fish. The agency says seasons vary by year and can change during a run. Do not use an old news release as today’s opening notice.",
-            "The general Buoy 10 advice describes Chinook through late August and coho into at least mid-September. That is useful background for an enquiry, not permission to fish. Confirm the date, area, species and retention rule together."
+            "Checked November 17, 2026. The table covers the current late-season notice, not the summer opening. ODFW lists November 1–December 31 for the reach from Buoy 10 upstream to Bonneville Dam.",
+            "Summer rules changed during the run. WDFW’s August 21 update kept Chinook retention hatchery-only through September 2. Use the notice for your actual date, not an earlier season chart."
           ],
           "sources": [
-            "d15-columbia",
-            "d15-buoy"
+            "d17-columbia",
+            "d17-hooks",
+            "d17-wdfw-season"
           ],
           "table": {
             "heads": [
-              "Check",
-              "What you need to establish"
+              "Late-2026 check",
+              "Rule or next step"
             ],
             "rows": [
               [
-                "Date and area",
-                "The current notice covers the intended part of the estuary."
+                "Dates and reach",
+                "November 1–December 31; Buoy 10 upstream to Bonneville Dam."
               ],
               [
-                "Species",
-                "Chinook and coho can have different conditions."
+                "Adult daily limit",
+                "Two hatchery coho/steelhead combined."
               ],
               [
-                "Retention",
-                "Know which fish must be released before the first bite."
+                "Chinook",
+                "Release all Chinook."
               ],
               [
-                "Licence and endorsements",
-                "Use the requirements for your launch, water and angler."
+                "Hooks",
+                "Barbless hooks for salmon and steelhead."
               ],
               [
-                "Latest update",
-                "Check again close to departure, not only when you book."
+                "Before departure",
+                "Read the latest agency notice; all other permanent rules still apply."
               ]
             ]
           }
+        },
+        {
+          "id": "barbless",
+          "title": "Is Buoy 10 barbless hook fishing?",
+          "paragraphs": [
+            "Yes. Oregon’s 2026 rules require barbless hooks for salmon, steelhead, sturgeon and trout in the mainstem Columbia from Buoy 10 to the Oregon–Washington border above McNary Dam. Check the specific gear rules for the fish you target."
+          ],
+          "sources": [
+            "d17-hooks"
+          ]
         },
         {
           "id": "tides",
@@ -11332,10 +11393,10 @@
         },
         {
           "id": "example",
-          "title": "How should you compare two proposed trips?",
+          "title": "What does a guided Buoy 10 day include?",
           "paragraphs": [
-            "Suppose one offer starts near your accommodation but includes a long estuary run. Another uses a different launch with a shorter run to the planned water. Do not compare the headline hours alone. Ask each operator for the full travel and fishing plan.",
-            "Write the meeting time, time aboard, intended area, supplied tackle and return arrangements in separate rows. Then add the weather policy. This gives you a useful comparison without treating an advertised catch photograph as a promise."
+            "Ask for a written list of what the charter supplies. A guided day can use the crew’s trolling setup, but rods, bait, fish handling, food and licence arrangements belong in the operator’s own terms. Do not assume they come with every booking.",
+            "Compare the launch, time aboard, boat run and fishing time separately. Ask whether the plan stays in the estuary or crosses the bar. Then compare shelter, seating and cancellation terms. These questions help you choose a trip that fits your group."
           ],
           "sources": [],
           "checklist": [
@@ -11401,6 +11462,11 @@
               "title": "Compare local trip types",
               "url": "/trip-types/",
               "text": "Keep estuary salmon separate from other river trips."
+            },
+            {
+              "title": "WDFW Buoy 10 creel reports",
+              "url": "https://wdfw.wa.gov/fishing/reports/creel/buoy10",
+              "text": "Read the agency’s dated survey summaries. A past catch rate does not promise your result."
             }
           ]
         }
@@ -11429,6 +11495,212 @@
         {
           "q": "Does a charter price include a fishing licence?",
           "a": "Do not assume so. Ask the operator which licence and endorsements each angler needs for the intended water."
+        },
+        {
+          "q": "Are barbless hooks required at Buoy 10?",
+          "a": "Yes, for salmon and steelhead. Check the current Columbia River rules and any in-season changes before departure."
+        }
+      ],
+      "seoTitle": "Buoy 10 salmon fishing: season and charter checklist"
+    },
+    "sight-fishing": {
+      "rich": true,
+      "answerFirst": true,
+      "title": "Sight fishing: what tailing redfish mean",
+      "seoTitle": "Sight fishing: tailing redfish, tides and trip planning",
+      "description": "Learn what tailing redfish mean, compare Texas flats with South Carolina flood tides, and plan a sight-fishing trip with source-linked checks.",
+      "category": "FISHING METHOD / REDFISH",
+      "destination": "texas-inshore-redfish",
+      "hero": {
+        "route": "/trip-types/sight-fishing/"
+      },
+      "updated": "2026-11-17",
+      "published": "2026-11-10",
+      "quickAnswer": "Sight fishing means finding the fish before you cast. A tailing redfish feeds head-down in shallow water, with its tail above the surface. Look for that feeding posture, then plan your approach. The useful tide depends on the flat: a South Carolina flood-tide rule does not transfer to a Texas bay.",
+      "quickSources": [
+        "d17-tpwd-red",
+        "d17-loco"
+      ],
+      "facts": [
+        {
+          "label": "Look for",
+          "value": "A feeding posture"
+        },
+        {
+          "label": "Choose first",
+          "value": "The named flat"
+        },
+        {
+          "label": "Check locally",
+          "value": "Tide and access"
+        }
+      ],
+      "relatedGuides": [
+        "how-to-choose-a-fishing-guide",
+        "what-to-bring-on-a-guided-fishing-trip",
+        "first-tarpon-fishing-trip"
+      ],
+      "sections": [
+        {
+          "id": "meaning",
+          "title": "What does tailing redfish mean?",
+          "paragraphs": [
+            "The fish tips down to feed while its tail breaks the surface. TPWD describes this over shallow grass. A visible tail is a useful clue to the fish’s position; it does not promise that the fish will take your fly.",
+            "Pause before the cast. Locate the fish’s head and leave space for the fly or lure to reach it. Ask your guide to explain the approach before you start moving across the flat."
+          ],
+          "sources": [
+            "d17-tpwd-red"
+          ]
+        },
+        {
+          "id": "conditions",
+          "title": "When do redfish tail?",
+          "paragraphs": [
+            "Use this table to separate habitat facts from local tide advice. “Not stated” means the linked source gives no threshold. It does not mean that the factor has no effect."
+          ],
+          "table": {
+            "caption": "When redfish tail: two different flats settings",
+            "heads": [
+              "Factor",
+              "Texas agency guidance",
+              "Hilton Head and Beaufort guide"
+            ],
+            "rows": [
+              [
+                "Tide stage",
+                "No single stage stated.",
+                "High tides flood short spartina flats."
+              ],
+              [
+                "Depth",
+                "Shallow water; no tailing-depth threshold stated.",
+                "About a foot of water over the flat is the guide’s starting point."
+              ],
+              [
+                "Light",
+                "Not stated.",
+                "Not stated."
+              ],
+              [
+                "Bottom",
+                "Grass; vegetated bay habitat.",
+                "Short spartina grass or sand; avoid tall-grass wading routes."
+              ]
+            ]
+          },
+          "sources": [
+            "d17-tpwd-red",
+            "d17-loco"
+          ]
+        },
+        {
+          "id": "tide",
+          "title": "Which tide should you use for a first trip?",
+          "paragraphs": [
+            "Choose the place before you choose the tide. LoCo Fly Charters describes flooded flats around Hilton Head and Beaufort and identifies the Fort Pulaski station for its local planning. That station and those flats are not a tide prescription for another coast.",
+            "Ask your guide which station, flat and access window apply. Write down the time to leave as well as the time to arrive. A tide app gives a prediction; it does not show every small channel on your walking route."
+          ],
+          "sources": [
+            "d17-loco"
+          ],
+          "checklist": [
+            "Name the flat and the tide station.",
+            "Agree on the approach and return route.",
+            "Ask how wind changes the plan.",
+            "Keep a boat-based alternative if wading does not suit the group."
+          ]
+        },
+        {
+          "id": "approach",
+          "title": "How should you approach a sight-fishing trip?",
+          "paragraphs": [
+            "Decide whether you want a skiff day or a wading day before you pack. Ask the guide how far you must walk, how long you may stand and how the return route works. Choose footwear for the confirmed bottom, not just the word “flats”.",
+            "TPWD lists shrimp, crab and baitfish fly patterns for red drum. Ask the guide to choose the size and weight for the day. Start with the tackle you own and check that it suits the boat and method."
+          ],
+          "sources": [
+            "d17-tpwd-red"
+          ],
+          "table": {
+            "heads": [
+              "Before the trip",
+              "Question to settle"
+            ],
+            "rows": [
+              [
+                "Access",
+                "Will we stay in the boat or wade?"
+              ],
+              [
+                "Casting",
+                "Can we practise the cast before we reach the fish?"
+              ],
+              [
+                "Equipment",
+                "Which rod, line, leader and flies do you supply?"
+              ],
+              [
+                "Conditions",
+                "What changes the route or cancels the trip?"
+              ],
+              [
+                "Return",
+                "How will we leave the flat as the water changes?"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "next",
+          "title": "Where can you plan the next detail?",
+          "paragraphs": [],
+          "cards": [
+            {
+              "title": "Texas inshore redfish",
+              "url": "/trips/texas-inshore-redfish/",
+              "text": "Start with the Texas trip and its local sources."
+            },
+            {
+              "title": "Red drum names",
+              "url": "/species/red-drum/",
+              "text": "Check the species behind the local name."
+            },
+            {
+              "title": "Inshore and flats trips",
+              "url": "/trip-types/inshore-flats/",
+              "text": "Compare destinations for this style of day."
+            },
+            {
+              "title": "Lowcountry Grand Slam",
+              "url": "/trip-types/lowcountry-inshore-grand-slam/",
+              "text": "Read the South Carolina trip context."
+            }
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Is a tailing redfish feeding?",
+          "a": "The term describes a redfish feeding head-down with its tail exposed above shallow water."
+        },
+        {
+          "q": "Do redfish always tail at high tide?",
+          "a": "No universal tide rule is established here. The South Carolina guide describes flooded grass flats; choose the tide for the actual place."
+        },
+        {
+          "q": "Is sight fishing only fly fishing?",
+          "a": "No. The method starts with locating a fish before the cast. Ask which fly or conventional outfit suits the planned trip."
+        },
+        {
+          "q": "Does a visible tail guarantee a bite?",
+          "a": "No. Treat it as a clue to location and posture, not a promise of a catch."
+        },
+        {
+          "q": "Can a beginner take a sight-fishing trip?",
+          "a": "Ask the guide about casting help, walking distance and time on your feet. Agree on the access method and practise the required cast before the outing."
+        },
+        {
+          "q": "Should you wade through tall marsh grass?",
+          "a": "LoCo Fly Charters advises against it in its local flats guidance because of soft mud, deeper water and oysters. Use an agreed access route."
         }
       ]
     }

@@ -1033,17 +1033,15 @@
   {
     "id": "na-us-az-005",
     "place": "Oak Creek",
-    "eligible": false,
+    "eligible": true,
     "verifiedSpeciesIds": [
+      "gila-trout",
       "rainbow-trout"
     ],
-    "descriptionWords": 0,
+    "descriptionWords": 168,
     "seasonSection": true,
     "canonicalPath": "/north-america/united-states/arizona/oak-creek-small-stream-fishing/",
-    "reasons": [
-      "Only 1 verified individual target species with source links; at least 2 required",
-      "Water-specific description has 0 words; at least 120 required"
-    ]
+    "reasons": []
   },
   {
     "id": "na-us-nm-001",
@@ -2105,17 +2103,16 @@
   {
     "id": "na-us-mn-009",
     "place": "Root River / southeast Minnesota",
-    "eligible": false,
+    "eligible": true,
     "verifiedSpeciesIds": [
+      "brook-trout",
+      "rainbow-trout",
       "sea-trout"
     ],
-    "descriptionWords": 0,
+    "descriptionWords": 174,
     "seasonSection": true,
     "canonicalPath": "/north-america/united-states/minnesota/root-river-southeast-minnesota-spring-fed-trout-and-grayling/",
-    "reasons": [
-      "Only 1 verified individual target species with source links; at least 2 required",
-      "Water-specific description has 0 words; at least 120 required"
-    ]
+    "reasons": []
   },
   {
     "id": "na-us-mn-010",
@@ -2185,15 +2182,15 @@
   {
     "id": "na-us-wi-005",
     "place": "Chippewa Flowage",
-    "eligible": false,
-    "verifiedSpeciesIds": [],
-    "descriptionWords": 0,
+    "eligible": true,
+    "verifiedSpeciesIds": [
+      "muskellunge",
+      "walleye"
+    ],
+    "descriptionWords": 169,
     "seasonSection": true,
     "canonicalPath": "/north-america/united-states/wisconsin/chippewa-flowage-large-freshwater-predators/",
-    "reasons": [
-      "Only 0 verified individual target species with source links; at least 2 required",
-      "Water-specific description has 0 words; at least 120 required"
-    ]
+    "reasons": []
   },
   {
     "id": "na-us-wi-006",

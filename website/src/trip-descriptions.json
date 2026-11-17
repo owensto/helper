@@ -2314,6 +2314,46 @@
       "sourceUrls": [
         "https://www.hotelrobertreimers.com/"
       ]
+    },
+    "na-us-az-005": {
+      "place": "Oak Creek",
+      "paragraphs": [
+        "Oak Creek gives a Sedona visit two different fishing choices. For trout, the Arizona Game and Fish Department points anglers toward the colder canyon water above Grasshopper Point. Its Oak Creek guide identifies stocked rainbow trout and a wild brown trout population in the canyon. Choose that upper-creek setting when trout are the reason for your trip, rather than assuming every stretch below Sedona offers the same day.",
+        "State Route 89A follows the canyon north toward Flagstaff. The agency guide describes fishing access along the route from Grasshopper Point toward Cave Springs, with trailheads and day-use areas along the way. Pick a named access point before you pack. Check parking, the walk to the creek and the return route with the land manager.",
+        "Keep the fishery guide and the current rules separate. The older guide establishes the water and its fish; it does not replace today’s reach-specific regulations. Check the current Arizona rules for the exact bridge or boundary, permitted tackle and release requirements before the first cast."
+      ],
+      "sourceUrls": [
+        "https://s3-us-west-2.amazonaws.com/azgfd-portal-wordpress-pantheon/wp-content/uploads/archive/Oak-Creek-Fishing-Guide_2-28-19.pdf"
+      ],
+      "reviewed": "2026-11-17",
+      "season": "AZGFD’s Oak Creek guide describes year-round fishing and identifies colder water above Grasshopper Point for trout. Check the current stocking schedule and the current rules for your exact reach; the older guide’s stocking dates and boundaries are not today’s regulations."
+    },
+    "na-us-wi-005": {
+      "place": "Chippewa Flowage",
+      "reviewed": "2026-11-17",
+      "sourceUrls": [
+        "https://dnr.wisconsin.gov/topic/lands/chippewaflowage/recreation/fishing"
+      ],
+      "season": "Choose the species before the date. Wisconsin DNR describes spring bluegill activity in shallow bays and summer fishing around sunken bogs. Walleye and muskellunge need their own current season checks. Consult the Chippewa Flowage special regulations and the signs at the landing before fishing.",
+      "paragraphs": [
+        "Chippewa Flowage offers a choice between muskellunge, walleye and a quieter panfish day. Wisconsin DNR lists walleye, black crappie, muskellunge and bluegill among its main angling species. Start by choosing one target, then ask which basin and launch fit it. A plan for several hours of musky casting is different from a family bluegill outing.",
+        "The agency describes darker, river-connected water in the eastern basin and clearer, weedier water in the western basin. Its account connects smallmouth bass with the east and largemouth bass and northern pike with the west. Use those differences to frame a conversation with a local guide, not as a promise that one spot will produce fish.",
+        "Ask about the return route, spare fuel and the weather plan before a boat day. Read the special regulations for the flowage rather than relying on a statewide limit. DNR also asks anglers to exercise restraint with walleye harvest and encourages release of muskellunge and smallmouth bass. Decide how to handle a fish before it reaches the boat."
+      ]
+    },
+    "na-us-mn-009": {
+      "place": "Root River / southeast Minnesota",
+      "reviewed": "2026-11-17",
+      "sourceUrls": [
+        "https://files.dnr.state.mn.us/maps/trout_streams/south/stream_index.pdf",
+        "https://www.dnr.state.mn.us/fishing/trout_streams/readmaps.html"
+      ],
+      "season": "Check Minnesota’s current southeast trout seasons and special town or state-park boundaries for your exact date. The DNR stream maps identify fish and access, but their older regulation colors do not establish a current opening. Do not extend a town-section season to the whole Root River.",
+      "paragraphs": [
+        "For a trout day on the Root River, choose the branch before the access point. Minnesota DNR’s southern stream index lists brown, rainbow and brook trout for the South Branch Root River, with maps 1, 2 and 5. That is a more useful starting point than treating every mile of the Root system as the same trout fishery.",
+        "The DNR map guide identifies accessible sites at the South Branch dam in Lanesboro and in the city of Preston. Use the mapped location to plan the walk from your parking place. Confirm the current condition of the access before travel, especially if your group needs a firm path or a short approach.",
+        "Read the map legend carefully. Streamside fishing easements do not grant unrestricted use of the surrounding land. Stay within the permitted corridor and ask when a boundary is unclear. Use the current fishing regulations alongside the map, since an older color key can describe an earlier season. Choose a short stretch you can cover carefully and keep an easy return to the car."
+      ]
     }
   }
 }

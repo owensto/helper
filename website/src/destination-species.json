@@ -5501,10 +5501,25 @@
           "speciesId": "rainbow-trout",
           "commonName": "Rainbow trout",
           "sourceUrls": [
-            "https://awcs.azgfd.com/conservation-opportunity-areas/aquatic/oak-creek-grasshopper-point-to-confluence-with-verde-river"
+            "https://s3-us-west-2.amazonaws.com/azgfd-portal-wordpress-pantheon/wp-content/uploads/archive/Oak-Creek-Fishing-Guide_2-28-19.pdf"
           ],
           "scopeNotes": [
-            "The source documents rainbow trout in the Oak Creek fishery. Check the source for the exact reach or departure area."
+            "AZGFD Oak Creek guide identifies this trout in Oak Creek Canyon."
+          ],
+          "status": "reviewed-source",
+          "seasons": [],
+          "seasonStatus": "unverified",
+          "methods": [],
+          "methodStatus": "unverified"
+        },
+        {
+          "speciesId": "gila-trout",
+          "commonName": "Gila trout",
+          "sourceUrls": [
+            "https://s3-us-west-2.amazonaws.com/azgfd-portal-wordpress-pantheon/wp-content/uploads/archive/Oak-Creek-Fishing-Guide_2-28-19.pdf"
+          ],
+          "scopeNotes": [
+            "AZGFD identifies Gila trout in the West Fork/Call of the Canyon area."
           ],
           "status": "reviewed-source",
           "seasons": [],
@@ -5518,7 +5533,7 @@
       "methods": [],
       "methodStatus": "unverified",
       "sourceUrls": [
-        "https://awcs.azgfd.com/conservation-opportunity-areas/aquatic/oak-creek-grasshopper-point-to-confluence-with-verde-river"
+        "https://s3-us-west-2.amazonaws.com/azgfd-portal-wordpress-pantheon/wp-content/uploads/archive/Oak-Creek-Fishing-Guide_2-28-19.pdf"
       ],
       "researchSourceUrls": [
         "https://awcs.azgfd.com/conservation-opportunity-areas/aquatic/oak-creek-headwaters-to-grasshopper-point",
@@ -5535,7 +5550,7 @@
         "https://www.azgfd.com/2023/04/08/canyon-creek-fish-hatchery-closes-to-public/"
       ],
       "unverifiedCandidates": null,
-      "reviewed": "2026-11-10"
+      "reviewed": "2026-11-17"
     },
     {
       "id": "na-us-nm-001",
@@ -11021,6 +11036,38 @@
           "seasonStatus": "unverified",
           "methods": [],
           "methodStatus": "unverified"
+        },
+        {
+          "speciesId": "rainbow-trout",
+          "commonName": "Rainbow trout",
+          "sourceUrls": [
+            "https://files.dnr.state.mn.us/maps/trout_streams/south/stream_index.pdf",
+            "https://www.dnr.state.mn.us/fishing/trout_streams/readmaps.html"
+          ],
+          "scopeNotes": [
+            "DNR stream index lists this species for South Branch Root River; the access guide supports mapped public sites."
+          ],
+          "status": "reviewed-source",
+          "seasons": [],
+          "seasonStatus": "unverified",
+          "methods": [],
+          "methodStatus": "unverified"
+        },
+        {
+          "speciesId": "brook-trout",
+          "commonName": "Brook trout",
+          "sourceUrls": [
+            "https://files.dnr.state.mn.us/maps/trout_streams/south/stream_index.pdf",
+            "https://www.dnr.state.mn.us/fishing/trout_streams/readmaps.html"
+          ],
+          "scopeNotes": [
+            "DNR stream index lists this species for South Branch Root River; the access guide supports mapped public sites."
+          ],
+          "status": "reviewed-source",
+          "seasons": [],
+          "seasonStatus": "unverified",
+          "methods": [],
+          "methodStatus": "unverified"
         }
       ],
       "seasons": [],
@@ -11028,7 +11075,8 @@
       "methods": [],
       "methodStatus": "unverified",
       "sourceUrls": [
-        "https://www.dnr.state.mn.us/areas/fisheries/lanesboro/opportunities/fillmore.html"
+        "https://files.dnr.state.mn.us/maps/trout_streams/south/stream_index.pdf",
+        "https://www.dnr.state.mn.us/fishing/trout_streams/readmaps.html"
       ],
       "researchSourceUrls": [
         "https://www.dnr.state.mn.us/state-water-trails/root-river/index.html",
@@ -11051,7 +11099,7 @@
         "https://www.dnr.state.mn.us/eco/nongame/projects/research_reports/abstracts/fish/schmidt1993b.html"
       ],
       "unverifiedCandidates": null,
-      "reviewed": "2026-11-10"
+      "reviewed": "2026-11-17"
     },
     {
       "id": "na-us-mn-010",
@@ -11322,13 +11370,46 @@
       "country": "United States",
       "state": "Wisconsin",
       "region": "North America",
-      "status": "unverified",
-      "targets": [],
+      "status": "source-linked",
+      "targets": [
+        {
+          "speciesId": "walleye",
+          "commonName": "Walleye",
+          "sourceUrls": [
+            "https://dnr.wisconsin.gov/topic/lands/chippewaflowage/recreation/fishing"
+          ],
+          "scopeNotes": [
+            "Wisconsin DNR names this species in the Chippewa Flowage fishery."
+          ],
+          "status": "reviewed-source",
+          "seasons": [],
+          "seasonStatus": "unverified",
+          "methods": [],
+          "methodStatus": "unverified"
+        },
+        {
+          "speciesId": "muskellunge",
+          "commonName": "Muskellunge",
+          "sourceUrls": [
+            "https://dnr.wisconsin.gov/topic/lands/chippewaflowage/recreation/fishing"
+          ],
+          "scopeNotes": [
+            "Wisconsin DNR names this species in the Chippewa Flowage fishery."
+          ],
+          "status": "reviewed-source",
+          "seasons": [],
+          "seasonStatus": "unverified",
+          "methods": [],
+          "methodStatus": "unverified"
+        }
+      ],
       "seasons": [],
       "seasonStatus": "unverified",
       "methods": [],
       "methodStatus": "unverified",
-      "sourceUrls": [],
+      "sourceUrls": [
+        "https://dnr.wisconsin.gov/topic/lands/chippewaflowage/recreation/fishing"
+      ],
       "researchSourceUrls": [
         "https://apps.dnr.wi.gov/fisheriesmanagement/Public/LakeRegulation/Details?WBIC=2152600",
         "https://apps.dnr.wi.gov/fisheriesmanagement/Public/LakeRegulation/Details?WBIC=2152600&WBIC_NAME=Chippewa+Falls+Flowage+5555",
@@ -11357,7 +11438,7 @@
         "https://apps.dnr.wi.gov/lakes/lakebook/wilakes2009bma.pdf"
       ],
       "unverifiedCandidates": "Muskellunge",
-      "reviewed": "2026-11-10"
+      "reviewed": "2026-11-17"
     },
     {
       "id": "na-us-wi-006",
