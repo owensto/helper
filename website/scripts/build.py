@@ -207,7 +207,6 @@ install_species_glossary(pages, ROOT, add, TRIPS, DATA)
 from videos import install_shorts
 from trip_styles import install as install_trip_styles
 TRIP_STYLES = install_trip_styles(pages, ROOT, CONFIG['siteUrl'], add, TRIPS, DATA['destinations'])
-install_shorts(pages, ROOT)
 from interactive_atlas import install as install_atlas
 install_atlas(pages, ROOT, CONFIG['siteUrl'], add, DATA, TRIPS, TRIP_STYLES)
 from fishing_game import install as install_fishing_game
@@ -221,6 +220,7 @@ install_preview_cards(pages)
 FOOTER = FOOTER.replace("Illustrations are not navigation charts.", "Go prepared. Leave the water better.")
 from fishing_lingo import install as install_fishing_lingo
 install_fishing_lingo(pages, ROOT, add, intro, bread, CONFIG['siteUrl'])
+install_shorts(pages, ROOT)
 from clean_copy import install as install_clean_copy, clean_chrome
 from licenses import install as install_licenses
 print('licences', install_licenses(pages, ROOT, add, TRIPS))
