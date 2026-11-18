@@ -16255,13 +16255,20 @@
       "location": "Lac La Ronge",
       "url": "/north-america/canada/saskatchewan/lac-la-ronge-remote-lodge-and-expedition/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
-      "sourceIds": [],
+      "indexEligible": true,
+      "sourceIds": [
+        "species-6ef083afa355",
+        "species-3c7028da0076",
+        "species-b4e56742890c"
+      ],
       "evidenceDepth": "Production brief; local fishery claims not yet verified",
       "localDecision": "Research lodge transfer and boat provisioning before a self-guided or fly-in plan.",
       "candidateTargets": "Lake trout / northern pike candidates",
-      "confirmedTargets": [],
-      "seasonalEvidence": "Dates have not been verified for this opportunity. Before choosing travel dates, resolve: Operating program dates, water levels, transfers and resupply constraints.",
+      "confirmedTargets": [
+        "Lake trout",
+        "Northern pike"
+      ],
+      "seasonalEvidence": "For an open-water trip, confirm local ice-out and launch access before fixing your boat dates. Use Saskatchewan’s current season calendar together with the special regulations for Lac La Ronge; a general provincial season does not override a restriction on a particular water.",
       "accessToVerify": "Fly-in, boat transfer or multiday expedition",
       "tackleDecision": "Select the target-specific module first; inventory what the lodge actually supplies",
       "operatorQuestion": "Rod transport, specialist tackle, camp equipment and communications",
@@ -16292,13 +16299,22 @@
       "location": "Reindeer Lake / Saskatchewan base",
       "url": "/north-america/canada/saskatchewan/reindeer-lake-saskatchewan-base-remote-lodge-and-expedition/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
-      "sourceIds": [],
+      "indexEligible": true,
+      "sourceIds": [
+        "species-a300def62982",
+        "species-b5bb3ef90042",
+        "species-972cdeea2ea5",
+        "species-3c7028da0076",
+        "species-b4e56742890c"
+      ],
       "evidenceDepth": "Production brief; local fishery claims not yet verified",
       "localDecision": "Use a shared provincial lake entity and confirm the actual lodge location and target program.",
       "candidateTargets": "Northern pike / lake trout candidates",
-      "confirmedTargets": [],
-      "seasonalEvidence": "Dates have not been verified for this opportunity. Before choosing travel dates, resolve: Operating program dates, water levels, transfers and resupply constraints.",
+      "confirmedTargets": [
+        "Lake trout",
+        "Northern pike"
+      ],
+      "seasonalEvidence": "Nordic Lodge describes shallower lake-trout fishing after ice-out in early June, deeper fish by mid-July, and a return toward shallower water in September. These are the operator’s local patterns, not legal opening dates. Confirm the current Saskatchewan season and any special Reindeer Lake restrictions.",
       "accessToVerify": "Fly-in, boat transfer or multiday expedition",
       "tackleDecision": "Select the target-specific module first; inventory what the lodge actually supplies",
       "operatorQuestion": "Rod transport, specialist tackle, camp equipment and communications",
@@ -16371,13 +16387,21 @@
       "location": "Wollaston Lake",
       "url": "/north-america/canada/saskatchewan/wollaston-lake-remote-lodge-and-expedition/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
-      "sourceIds": [],
+      "indexEligible": true,
+      "sourceIds": [
+        "species-26ca14f8e8d1",
+        "species-eeb6f8a174b7",
+        "species-3c7028da0076",
+        "species-b4e56742890c"
+      ],
       "evidenceDepth": "Production brief; local fishery claims not yet verified",
       "localDecision": "Confirm lodge-based access and avoid generic provincial seasonal claims.",
       "candidateTargets": "Northern pike / lake trout candidates",
-      "confirmedTargets": [],
-      "seasonalEvidence": "Dates have not been verified for this opportunity. Before choosing travel dates, resolve: Operating program dates, water levels, transfers and resupply constraints.",
+      "confirmedTargets": [
+        "Lake trout",
+        "Northern pike"
+      ],
+      "seasonalEvidence": "For a boat-based visit, confirm ice-out, the transfer schedule and the camp’s actual operating dates. Check Saskatchewan’s current season calendar and the special rules for your chosen area. A legal open season does not establish that a flight, boat transfer or lodge is operating on your travel date.",
       "accessToVerify": "Fly-in, boat transfer or multiday expedition",
       "tackleDecision": "Select the target-specific module first; inventory what the lodge actually supplies",
       "operatorQuestion": "Rod transport, specialist tackle, camp equipment and communications",

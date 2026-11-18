@@ -11336,10 +11336,10 @@
       "region": null,
       "authority": {
         "name": "Department of National Parks and Wildlife Conservation",
-        "url": "https://dnpwc.gov.np/media/rules/%E0%A4%9A%E0%A4%A4%E0%A4%B5%E0%A4%A8-%E0%A4%B0%E0%A4%B7%E0%A4%9F%E0%A4%B0%E0%A4%AF-%E0%A4%A8%E0%A4%95%E0%A4%9E%E0%A4%9C-%E0%A4%A8%E0%A4%AF%E0%A4%AE%E0%A4%B5%E0%A4%B2-%E0%A5%A8%E0%A5%A6%E0%A5%A9%E0%A5%A6.pdf"
+        "url": "https://chitwannationalpark.gov.np/pages/citizen-charter/"
       },
       "buyUrl": null,
-      "summary": "Protected-area fishing needs the relevant park or conservation-area permit. A park entrance ticket does not itself establish fishing permission, and rules outside protected areas need a local check.",
+      "summary": "Fishing permission in Nepal depends on the water you choose. For a protected-area trip, ask the park or conservation office before you fish. A nationwide visitor licence price is not stated in the linked official sources. Chitwan lists fishing permission separately from park entry, so an entrance ticket is not enough.",
       "whoNeedsOne": [
         "Anglers in protected areas where fishing requires a specific permit."
       ],
@@ -11365,11 +11365,40 @@
         {
           "title": "Government conservation-area regulations, official law copy",
           "url": "https://faolex.fao.org/docs/pdf/nep187182.pdf"
+        },
+        {
+          "title": "Chitwan National Park citizen charter: entry and fishing permissions",
+          "url": "https://chitwannationalpark.gov.np/pages/citizen-charter/"
         }
       ],
-      "checked": "2026-11-11",
+      "checked": "2026-11-18",
       "checkOfficial": "Confirm the current fee, allowed river section, method and permit outside protected areas.",
-      "contentModified": "2026-11-15"
+      "contentModified": "2026-11-18",
+      "title": "Nepal fishing licence: permits, prices and where to ask",
+      "h1": "Nepal fishing licence: permits and visitor costs",
+      "description": "Nepal fishing permission depends on the water. Ask the park or conservation office; a national visitor price is not stated. See official permit sources.",
+      "faq": [
+        {
+          "q": "Do visitors need fishing permission in Nepal?",
+          "a": "Fishing permission in Nepal depends on the water you choose. For a protected-area trip, ask the park or conservation office before you fish. A nationwide visitor licence price is not stated in the linked official sources. Chitwan lists fishing permission separately from park entry, so an entrance ticket is not enough."
+        },
+        {
+          "q": "What does a Nepal visitor fishing licence cost?",
+          "a": "A nationwide visitor price is not stated in these sources. Ask the authority for the exact river and activity. Do not use a local subsistence-fishing fee as a visitor price."
+        },
+        {
+          "q": "Where can I arrange fishing permission?",
+          "a": "Ask the park warden or conservation-area office for fishing permission and conditions."
+        },
+        {
+          "q": "Does a Chitwan entrance ticket include fishing?",
+          "a": "The park lists entry and fishing permission as separate services. Confirm fishing permission with the park office before your trip."
+        },
+        {
+          "q": "Does one park permit cover all rivers in Nepal?",
+          "a": "Do not treat a park permit as nationwide permission. Ask the responsible office about each water, method and date."
+        }
+      ]
     },
     {
       "id": "nz-fish-and-game",

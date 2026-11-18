@@ -127,7 +127,7 @@ def trip_panel(trip, rec, permits, federal):
 def jurisdiction_page(r, trips):
     name = r['name']
     body = f'<div class="wrap lic-page"><nav class="breadcrumbs"><a href="/">Home</a> / <a href="{HUB}">Fishing licenses</a> / {E(name)}</nav>'
-    body += f'<header class="lic-head"><span class="eyebrow">FISHING LICENCE · {E(r["country"].upper())}</span><h1>{E(name)} fishing licence</h1><p class="lic-answer">{E(r["summary"])}</p>{buttons(r)}<p class="small">Sources checked {E(r['checked'])}</p></header>'
+    body += f'<header class="lic-head"><span class="eyebrow">FISHING LICENCE · {E(r["country"].upper())}</span><h1>{E(r.get("h1", name + " fishing licence"))}</h1><p class="lic-answer">{E(r["summary"])}</p>{buttons(r)}<p class="small">Sources checked {E(r['checked'])}</p></header>'
     body += '<div class="lic-grid"><div>'
     body += bullets('Who needs one', r.get('whoNeedsOne')) + bullets('Who is exempt', r.get('exemptions'))
     if r.get('options'):
@@ -162,6 +162,8 @@ def jurisdiction_page(r, trips):
         faq.append((f'How much is a visitor fishing licence in {name}?', '; '.join(f'{o["name"]}: {money(o)}' for o in vis[:4]) + f' (checked {MONTH}).'))
     if r.get('howToBuy'):
         faq.append((f'Where do I buy a fishing licence in {name}?', r['howToBuy']))
+    if r.get('faq'):
+        faq = [(x['q'], x['a']) for x in r['faq']]
     body += '<section class="wrap"><h2>Common license questions</h2>' + ''.join('<details><summary>' + E(q) + '</summary><p>' + E(a) + '</p></details>' for q,a in faq) + '</section>'
     schema = {'@context': 'https://schema.org', '@type': 'FAQPage', 'mainEntity': [
         {'@type': 'Question', 'name': q, 'acceptedAnswer': {'@type': 'Answer', 'text': a}} for q, a in faq]}
@@ -196,7 +198,8 @@ def install(pages, root, add, trips):
         title = f'{r["name"]} Fishing License | Castward'
         if len(title) > 60:
             title = f'{r["name"]} Fishing License'
-        add(page_path(r), title, (r['summary'][:150]).rstrip(), jurisdiction_page(r, per_rec.get(r['id'], [])), 'article')
+        title = r.get('title', title)
+        add(page_path(r), title, r.get('description', (r['summary'][:150]).rstrip()), jurisdiction_page(r, per_rec.get(r['id'], [])), 'article')
         pages[page_path(r)]['modified'] = r.get('contentModified', max(r['checked'], '2026-11-15'))
         pages[page_path(r)]['citations'] = [s['url'] for s in r.get('sources', [])]
     groups = {}

@@ -28399,13 +28399,52 @@
       "country": "Canada",
       "state": "Saskatchewan",
       "region": "North America",
-      "status": "unverified",
-      "targets": [],
+      "status": "source-linked",
+      "targets": [
+        {
+          "speciesId": "lake-trout",
+          "commonName": "Lake trout",
+          "sourceUrls": [
+            "https://sasklakes.ca/lac-la-ronge/",
+            "https://www.saskatchewan.ca/residents/parks-culture-heritage-and-sport/hunting-trapping-and-angling/angling/management-zones-and-special-regulations",
+            "https://www.saskatchewan.ca/residents/parks-culture-heritage-and-sport/hunting-trapping-and-angling/angling/season-dates-and-limits"
+          ],
+          "scopeNotes": [
+            "The linked lake source identifies lake trout at Lac La Ronge. The provincial sources govern seasons and special restrictions."
+          ],
+          "status": "reviewed-source",
+          "seasons": [],
+          "seasonStatus": "unverified",
+          "methods": [],
+          "methodStatus": "unverified"
+        },
+        {
+          "speciesId": "northern-pike",
+          "commonName": "Northern pike",
+          "sourceUrls": [
+            "https://sasklakes.ca/lac-la-ronge/",
+            "https://www.saskatchewan.ca/residents/parks-culture-heritage-and-sport/hunting-trapping-and-angling/angling/management-zones-and-special-regulations",
+            "https://www.saskatchewan.ca/residents/parks-culture-heritage-and-sport/hunting-trapping-and-angling/angling/season-dates-and-limits"
+          ],
+          "scopeNotes": [
+            "The linked lake source identifies northern pike at Lac La Ronge. The provincial sources govern seasons and special restrictions."
+          ],
+          "status": "reviewed-source",
+          "seasons": [],
+          "seasonStatus": "unverified",
+          "methods": [],
+          "methodStatus": "unverified"
+        }
+      ],
       "seasons": [],
       "seasonStatus": "unverified",
       "methods": [],
       "methodStatus": "unverified",
-      "sourceUrls": [],
+      "sourceUrls": [
+        "https://sasklakes.ca/lac-la-ronge/",
+        "https://www.saskatchewan.ca/residents/parks-culture-heritage-and-sport/hunting-trapping-and-angling/angling/management-zones-and-special-regulations",
+        "https://www.saskatchewan.ca/residents/parks-culture-heritage-and-sport/hunting-trapping-and-angling/angling/season-dates-and-limits"
+      ],
       "researchSourceUrls": [
         "https://sasklakes.ca/attractions/lac-la-ronge/",
         "https://sasklakes.ca/lac-la-ronge/",
@@ -28451,7 +28490,7 @@
         "https://www.reddit.com/r/IceFishing/comments/1rdkfik/went_on_an_epic_journey_for_lake_trout/"
       ],
       "unverifiedCandidates": "Lake trout / northern pike candidates",
-      "reviewed": "2026-11-10"
+      "reviewed": "2026-11-18"
     },
     {
       "id": "na-ca-sk-004",
@@ -28459,13 +28498,58 @@
       "country": "Canada",
       "state": "Saskatchewan",
       "region": "North America",
-      "status": "unverified",
-      "targets": [],
+      "status": "source-linked",
+      "targets": [
+        {
+          "speciesId": "lake-trout",
+          "commonName": "Lake trout",
+          "sourceUrls": [
+            "https://www.tourismsaskatchewan.com/listings/378/nordic-lodge",
+            "https://www.reindeerlake.com/fishing-packages",
+            "https://sasklakes.ca/reindeer-lake/",
+            "https://www.saskatchewan.ca/residents/parks-culture-heritage-and-sport/hunting-trapping-and-angling/angling/management-zones-and-special-regulations",
+            "https://www.saskatchewan.ca/residents/parks-culture-heritage-and-sport/hunting-trapping-and-angling/angling/season-dates-and-limits"
+          ],
+          "scopeNotes": [
+            "The linked lake source identifies lake trout at Reindeer Lake / Saskatchewan base. The provincial sources govern seasons and special restrictions."
+          ],
+          "status": "reviewed-source",
+          "seasons": [],
+          "seasonStatus": "unverified",
+          "methods": [],
+          "methodStatus": "unverified"
+        },
+        {
+          "speciesId": "northern-pike",
+          "commonName": "Northern pike",
+          "sourceUrls": [
+            "https://www.tourismsaskatchewan.com/listings/378/nordic-lodge",
+            "https://www.reindeerlake.com/fishing-packages",
+            "https://sasklakes.ca/reindeer-lake/",
+            "https://www.saskatchewan.ca/residents/parks-culture-heritage-and-sport/hunting-trapping-and-angling/angling/management-zones-and-special-regulations",
+            "https://www.saskatchewan.ca/residents/parks-culture-heritage-and-sport/hunting-trapping-and-angling/angling/season-dates-and-limits"
+          ],
+          "scopeNotes": [
+            "The linked lake source identifies northern pike at Reindeer Lake / Saskatchewan base. The provincial sources govern seasons and special restrictions."
+          ],
+          "status": "reviewed-source",
+          "seasons": [],
+          "seasonStatus": "unverified",
+          "methods": [],
+          "methodStatus": "unverified"
+        }
+      ],
       "seasons": [],
       "seasonStatus": "unverified",
       "methods": [],
       "methodStatus": "unverified",
-      "sourceUrls": [],
+      "sourceUrls": [
+        "https://www.tourismsaskatchewan.com/listings/378/nordic-lodge",
+        "https://www.reindeerlake.com/fishing-packages",
+        "https://sasklakes.ca/reindeer-lake/",
+        "https://www.saskatchewan.ca/residents/parks-culture-heritage-and-sport/hunting-trapping-and-angling/angling/management-zones-and-special-regulations",
+        "https://www.saskatchewan.ca/residents/parks-culture-heritage-and-sport/hunting-trapping-and-angling/angling/season-dates-and-limits"
+      ],
       "researchSourceUrls": [
         "https://sasklakes.ca/reindeer-lake/",
         "https://www.saskatchewan.ca/residents/parks-culture-heritage-and-sport/hunting-trapping-and-angling/angling/anglers-extras",
@@ -28512,7 +28596,7 @@
         "https://www.reddit.com/r/saskatchewan/comments/1smgmzb/i_won_a_trip_to_reindeer_lake_saskatchawan_but/"
       ],
       "unverifiedCandidates": "Northern pike / lake trout candidates",
-      "reviewed": "2026-11-10"
+      "reviewed": "2026-11-18"
     },
     {
       "id": "na-ca-sk-005",
@@ -28612,17 +28696,58 @@
       "country": "Canada",
       "state": "Saskatchewan",
       "region": "North America",
-      "status": "unverified",
-      "targets": [],
+      "status": "source-linked",
+      "targets": [
+        {
+          "speciesId": "lake-trout",
+          "commonName": "Lake trout",
+          "sourceUrls": [
+            "https://www.tourismsaskatchewan.com/community/492/wollaston-lake",
+            "https://sasklakes.ca/wollaston-lake/",
+            "https://www.saskatchewan.ca/residents/parks-culture-heritage-and-sport/hunting-trapping-and-angling/angling/management-zones-and-special-regulations",
+            "https://www.saskatchewan.ca/residents/parks-culture-heritage-and-sport/hunting-trapping-and-angling/angling/season-dates-and-limits"
+          ],
+          "scopeNotes": [
+            "The linked lake source identifies lake trout at Wollaston Lake. The provincial sources govern seasons and special restrictions."
+          ],
+          "status": "reviewed-source",
+          "seasons": [],
+          "seasonStatus": "unverified",
+          "methods": [],
+          "methodStatus": "unverified"
+        },
+        {
+          "speciesId": "northern-pike",
+          "commonName": "Northern pike",
+          "sourceUrls": [
+            "https://www.tourismsaskatchewan.com/community/492/wollaston-lake",
+            "https://sasklakes.ca/wollaston-lake/",
+            "https://www.saskatchewan.ca/residents/parks-culture-heritage-and-sport/hunting-trapping-and-angling/angling/management-zones-and-special-regulations",
+            "https://www.saskatchewan.ca/residents/parks-culture-heritage-and-sport/hunting-trapping-and-angling/angling/season-dates-and-limits"
+          ],
+          "scopeNotes": [
+            "The linked lake source identifies northern pike at Wollaston Lake. The provincial sources govern seasons and special restrictions."
+          ],
+          "status": "reviewed-source",
+          "seasons": [],
+          "seasonStatus": "unverified",
+          "methods": [],
+          "methodStatus": "unverified"
+        }
+      ],
       "seasons": [],
       "seasonStatus": "unverified",
       "methods": [],
       "methodStatus": "unverified",
-      "sourceUrls": [],
+      "sourceUrls": [
+        "https://www.tourismsaskatchewan.com/community/492/wollaston-lake",
+        "https://sasklakes.ca/wollaston-lake/",
+        "https://www.saskatchewan.ca/residents/parks-culture-heritage-and-sport/hunting-trapping-and-angling/angling/management-zones-and-special-regulations",
+        "https://www.saskatchewan.ca/residents/parks-culture-heritage-and-sport/hunting-trapping-and-angling/angling/season-dates-and-limits"
+      ],
       "researchSourceUrls": [
         "https://sasklakes.ca/wollaston-lake/",
         "https://www.tourismsaskatchewan.com/community/492/wollaston-lake",
-        "https://wollaston.ca/things-to-do/wollaston-lake/",
         "https://www.saskatchewan.ca/residents/parks-culture-heritage-and-sport/hunting-trapping-and-angling/angling/management-zones-and-special-regulations",
         "https://www.saskatchewan.ca/residents/parks-culture-heritage-and-sport/hunting-trapping-and-angling/angling/anglers-extras",
         "https://wollastonlakelodge.com/fishing-overview/",
@@ -28661,7 +28786,7 @@
         "https://www.reddit.com/r/Fishing/comments/ck8jrj"
       ],
       "unverifiedCandidates": "Northern pike / lake trout candidates",
-      "reviewed": "2026-11-10"
+      "reviewed": "2026-11-18"
     },
     {
       "id": "na-ca-sk-007",

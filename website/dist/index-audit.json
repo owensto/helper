@@ -5479,28 +5479,28 @@
   {
     "id": "na-ca-sk-003",
     "place": "Lac La Ronge",
-    "eligible": false,
-    "verifiedSpeciesIds": [],
-    "descriptionWords": 0,
+    "eligible": true,
+    "verifiedSpeciesIds": [
+      "lake-trout",
+      "northern-pike"
+    ],
+    "descriptionWords": 174,
     "seasonSection": true,
     "canonicalPath": "/north-america/canada/saskatchewan/lac-la-ronge-remote-lodge-and-expedition/",
-    "reasons": [
-      "Only 0 verified individual target species with source links; at least 2 required",
-      "Water-specific description has 0 words; at least 120 required"
-    ]
+    "reasons": []
   },
   {
     "id": "na-ca-sk-004",
     "place": "Reindeer Lake / Saskatchewan base",
-    "eligible": false,
-    "verifiedSpeciesIds": [],
-    "descriptionWords": 0,
+    "eligible": true,
+    "verifiedSpeciesIds": [
+      "lake-trout",
+      "northern-pike"
+    ],
+    "descriptionWords": 173,
     "seasonSection": true,
     "canonicalPath": "/north-america/canada/saskatchewan/reindeer-lake-saskatchewan-base-remote-lodge-and-expedition/",
-    "reasons": [
-      "Only 0 verified individual target species with source links; at least 2 required",
-      "Water-specific description has 0 words; at least 120 required"
-    ]
+    "reasons": []
   },
   {
     "id": "na-ca-sk-005",
@@ -5518,15 +5518,15 @@
   {
     "id": "na-ca-sk-006",
     "place": "Wollaston Lake",
-    "eligible": false,
-    "verifiedSpeciesIds": [],
-    "descriptionWords": 0,
+    "eligible": true,
+    "verifiedSpeciesIds": [
+      "lake-trout",
+      "northern-pike"
+    ],
+    "descriptionWords": 175,
     "seasonSection": true,
     "canonicalPath": "/north-america/canada/saskatchewan/wollaston-lake-remote-lodge-and-expedition/",
-    "reasons": [
-      "Only 0 verified individual target species with source links; at least 2 required",
-      "Water-specific description has 0 words; at least 120 required"
-    ]
+    "reasons": []
   },
   {
     "id": "na-ca-sk-007",

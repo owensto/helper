@@ -2354,6 +2354,54 @@
         "The DNR map guide identifies accessible sites at the South Branch dam in Lanesboro and in the city of Preston. Use the mapped location to plan the walk from your parking place. Confirm the current condition of the access before travel, especially if your group needs a firm path or a short approach.",
         "Read the map legend carefully. Streamside fishing easements do not grant unrestricted use of the surrounding land. Stay within the permitted corridor and ask when a boundary is unclear. Use the current fishing regulations alongside the map, since an older color key can describe an earlier season. Choose a short stretch you can cover carefully and keep an easy return to the car."
       ]
+    },
+    "na-ca-sk-003": {
+      "place": "Lac La Ronge",
+      "reviewed": "2026-11-18",
+      "paragraphs": [
+        "Lac La Ronge gives you a northern Saskatchewan lake trip without making every arrival a flight. Highway 2 reaches La Ronge on the west side, and the surrounding communities provide several ways onto the water. Lake trout and northern pike are two distinct targets here. Choose one as the main purpose of your day, then ask which part of the lake suits that plan.",
+        "Nut Point Campground has a boat launch, while La Ronge, Air Ronge and Wadin Bay provide other access choices. Napatak lies south of La Ronge and also has launches. Those locations are useful planning anchors: settle the meeting point before comparing accommodation, travel time or boat arrangements. A listing for the wider provincial park does not tell you where your particular boat will leave.",
+        "Build the day around your actual route rather than a promise to cover the whole lake. Confirm current launch access and the return plan. Check the Saskatchewan rules for Lac La Ronge itself, including any area-specific restrictions, before you choose tackle or decide to keep fish."
+      ],
+      "sourceUrls": [
+        "https://sasklakes.ca/lac-la-ronge/",
+        "https://www.saskatchewan.ca/residents/parks-culture-heritage-and-sport/hunting-trapping-and-angling/angling/management-zones-and-special-regulations",
+        "https://www.saskatchewan.ca/residents/parks-culture-heritage-and-sport/hunting-trapping-and-angling/angling/season-dates-and-limits"
+      ],
+      "season": "For an open-water trip, confirm local ice-out and launch access before fixing your boat dates. Use Saskatchewan’s current season calendar together with the special regulations for Lac La Ronge; a general provincial season does not override a restriction on a particular water."
+    },
+    "na-ca-sk-004": {
+      "place": "Reindeer Lake / Saskatchewan base",
+      "reviewed": "2026-11-18",
+      "paragraphs": [
+        "Reindeer Lake is a lake-trout and northern-pike destination, but the two fish need different plans. Tourism Saskatchewan confirms both species at the lake’s southern end. Ask where the boat will depart and which target leads the day before choosing tackle. A lodge address and the area you will actually fish are separate details worth settling before travel.",
+        "The southern approach includes road access from Highway 102. Other arrangements can involve air or boat transfers, so use your actual provider’s directions rather than a map pin at the centre of the lake. Confirm the transfer point, luggage allowance and weather arrangements together. Do not assume that a road to the lake gives road access to every camp.",
+        "Nordic Lodge describes lake trout in shallower water after ice-out, deeper in midsummer, then shallower again as September cools. Its pike advice follows the growth of weed beds through summer. Treat those as local seasonal patterns, not a catch forecast. Match the method to your dates, and use the Saskatchewan rules for the exact water before fishing."
+      ],
+      "sourceUrls": [
+        "https://www.tourismsaskatchewan.com/listings/378/nordic-lodge",
+        "https://www.reindeerlake.com/fishing-packages",
+        "https://sasklakes.ca/reindeer-lake/",
+        "https://www.saskatchewan.ca/residents/parks-culture-heritage-and-sport/hunting-trapping-and-angling/angling/management-zones-and-special-regulations",
+        "https://www.saskatchewan.ca/residents/parks-culture-heritage-and-sport/hunting-trapping-and-angling/angling/season-dates-and-limits"
+      ],
+      "season": "Nordic Lodge describes shallower lake-trout fishing after ice-out in early June, deeper fish by mid-July, and a return toward shallower water in September. These are the operator’s local patterns, not legal opening dates. Confirm the current Saskatchewan season and any special Reindeer Lake restrictions."
+    },
+    "na-ca-sk-006": {
+      "place": "Wollaston Lake",
+      "reviewed": "2026-11-18",
+      "paragraphs": [
+        "Wollaston Lake in northern Saskatchewan offers lake trout and northern pike as two clear targets for a remote trip. Tourism Saskatchewan also lists walleye and Arctic grayling, but a longer species list should not replace a plan for the fish you most want to pursue. Ask which target, water and method your chosen outing will focus on.",
+        "Access needs a precise answer. The east-shore settlement of Wollaston Lake is reached by boat or light aircraft, according to Tourism Saskatchewan. The wider lake can also be approached from Highway 905 on its western side. These are different arrival arrangements, not interchangeable directions. Check whether your transfer starts at an airport, a road landing or another named meeting point.",
+        "Make a written plan for the last transfer and the return journey. Confirm baggage restrictions, boat equipment and the response to a weather delay with the actual provider. Use Saskatchewan sources for this lake: the Township of Wollaston in Ontario describes a different water. Before departure, check the provincial season and the rules for your exact fishing area."
+      ],
+      "sourceUrls": [
+        "https://www.tourismsaskatchewan.com/community/492/wollaston-lake",
+        "https://sasklakes.ca/wollaston-lake/",
+        "https://www.saskatchewan.ca/residents/parks-culture-heritage-and-sport/hunting-trapping-and-angling/angling/management-zones-and-special-regulations",
+        "https://www.saskatchewan.ca/residents/parks-culture-heritage-and-sport/hunting-trapping-and-angling/angling/season-dates-and-limits"
+      ],
+      "season": "For a boat-based visit, confirm ice-out, the transfer schedule and the camp’s actual operating dates. Check Saskatchewan’s current season calendar and the special rules for your chosen area. A legal open season does not establish that a flight, boat transfer or lodge is operating on your travel date."
     }
   }
 }

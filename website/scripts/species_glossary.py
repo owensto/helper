@@ -106,6 +106,9 @@ def install(pages, root, add, trips, data):
 
     for s in species:
         body = heading('Species / ' + s['name'], s['name'], s['scientificName'] or 'A broad fishing name. Confirm the exact species before the trip.')
+        if s['id'] == 'cachama':
+            body = heading('Species / Cachama', 'Cachama fish (Colossoma macropomum): tambaqui', 'Cachama is Colossoma macropomum, also known as tambaqui, black pacu and gamitana. This freshwater fish comes from the Amazon and Orinoco river basins in South America. Use its scientific name when you compare regional names: a shared common name does not mean every fish or fishing destination is the same.')
+            body += '<div class="wrap"><p class="small">Updated November 18, 2026 · ' + link('https://www.fws.gov/sites/default/files/documents/Ecological-Risk-Screening-Summary-Tambaqui.pdf', 'U.S. Fish and Wildlife Service: tambaqui') + '</p></div>'
         if s['id'] == 'cisco':
             body = heading('Species / Cisco', 'Cisco (Coregonus artedi): lake herring', 'Coregonus artedi is the cisco, also called lake herring or tullibee. Look at the snout when comparing it with lake whitefish: the cisco’s lower jaw reaches the snout tip or extends beyond it. Confirm the fish and local rules before planning a catch. Regional names alone are not enough.')
             body += '<div class="wrap"><p class="small">Updated November 16, 2026 · ' + link('https://www.dnr.state.mn.us/areas/fisheries/baudette/whitefish.html', 'Minnesota DNR: cisco and whitefish identification') + '</p></div>'
@@ -167,6 +170,8 @@ def install(pages, root, add, trips, data):
             body += '<details><summary>Country occurrence records</summary><p>' + E(' · '.join(s['regions'])) + '</p><p class="small">A country record does not establish local abundance, fishing access or a legal target.</p></details>'
         body += source_links(s['sourceUrls']) + '</section></article><aside class="field-aside"><span class="eyebrow">KNOW THE WORDS</span><h2>Local fishing language.</h2><p>Connect the fish to its regional names, methods and equipment.</p>' + link('/glossary/?q=' + s['id'], 'Search the glossary', 'btn outline') + '<p>' + link('/species/', 'All fish species') + '</p></aside></div>' + assets
         add(species_url(s['id']), s['name'] + ' fishing, local names and destinations | Castward', 'Find ' + s['name'].lower() + ' names, source-linked destinations, seasonal evidence and official fisheries links.', body, 'species-detail')
+        if s['id'] == 'cachama':
+            pages[species_url(s['id'])].update(title='Cachama fish (Colossoma macropomum): tambaqui', desc='Cachama is Colossoma macropomum, also called tambaqui, black pacu or gamitana. Check its native river basins, regional names and linked destinations.', modified='2026-11-18')
         if s['id'] == 'largemouth-bass':
             pages[species_url(s['id'])].update(desc='Find largemouth bass from a pier or bank near weeds, lily pads and fallen wood. Use the beginner habitat table, bait advice and official rules.', modified='2026-11-17')
         if s['id'] == 'tarakihi':
