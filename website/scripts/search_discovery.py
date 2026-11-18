@@ -43,6 +43,9 @@ def feeds(dist, pages, root, origin):
         full += ['### '+g['title'],origin+'/environments/'+water_id+'/', 'Updated '+g['updated'],g['quickAnswer'],'']
     for slug, g in catalog.get('tripTypes', {}).items():
         full += ['### '+g['title'],origin+'/trip-types/'+slug+'/', 'Updated '+g['updated'],g['quickAnswer'],'']
+    full += ['## Fish identification and first trips', '']
+    for path in ['/species/tarakihi/', '/species/common-dace/', '/species/largemouth-bass/']:
+        full += ['### '+pages[path]['title'], origin+path, 'Updated '+pages[path]['modified'], pages[path]['desc'], '']
     (dist/'llms-full.txt').write_text('\n'.join(full)+'\n')
 
 
