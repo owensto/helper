@@ -340,7 +340,7 @@
         "name": "Government of New Brunswick",
         "url": "https://www2.gnb.ca/content/gnb/en/departments/erd/fish-and-wildlife/content/go-fishing/content/non-res-angling-licences.html"
       },
-      "buyUrl": null,
+      "buyUrl": "https://pxw5.snb.ca/dnred-mrnde/app/",
       "summary": "Visitors aged 16 and older generally need an angling licence. A salmon licence and a guide can be necessary even when a basic angling licence seems sufficient.",
       "whoNeedsOne": [
         "Visiting anglers aged 16 and older.",
@@ -425,7 +425,7 @@
       ],
       "checked": "2026-11-13",
       "checkOfficial": "Prices exclude tax. Confirm the tidal-water boundary and applicable federal rules; no general saltwater exemption is asserted here.",
-      "contentModified": "2026-11-15"
+      "contentModified": "2026-11-19"
     },
     {
       "id": "ca-newfoundland-and-labrador",
@@ -516,7 +516,7 @@
         "name": "Government of Northwest Territories",
         "url": "https://www.gov.nt.ca/ecc/en/services/get-fishing-licence"
       },
-      "buyUrl": null,
+      "buyUrl": "https://services.nwt-tno.ca/",
       "summary": "Visitors generally need an NWT sport fishing licence. Great Bear Lake and the Inuvialuit Settlement Region require additional authorization.",
       "whoNeedsOne": [
         "Visiting anglers who do not meet an age or other exemption."
@@ -609,7 +609,7 @@
       ],
       "checked": "2026-11-13",
       "checkOfficial": "Listed fees include GST. Confirm the youth boundary with the department: its page uses inconsistent wording around age 16. Saltwater coverage and guide-client exemptions were not confirmed.",
-      "contentModified": "2026-11-15"
+      "contentModified": "2026-11-19"
     },
     {
       "id": "ca-nova-scotia",
@@ -620,7 +620,7 @@
         "name": "Government of Nova Scotia",
         "url": "https://www.novascotia.ca/apply-general-fishing-licence-sportfishing"
       },
-      "buyUrl": null,
+      "buyUrl": "https://sportfishing.novascotia.ca/",
       "summary": "Anglers aged 16 and older need a general licence for freshwater species other than salmon. Atlantic salmon requires a separate licence.",
       "whoNeedsOne": [
         "Resident and visiting freshwater anglers aged 16 and older."
@@ -720,7 +720,7 @@
       ],
       "checked": "2026-11-13",
       "checkOfficial": "Confirm the next salmon season and final payment total before purchase. The 2026 salmon dates have passed.",
-      "contentModified": "2026-11-15"
+      "contentModified": "2026-11-19"
     },
     {
       "id": "ca-nunavut",
@@ -1092,7 +1092,7 @@
         "name": "Government of Saskatchewan",
         "url": "https://www.saskatchewan.ca/residents/parks-culture-heritage-and-sport/hunting-trapping-and-angling/angling/buy-an-angling-licence"
       },
-      "buyUrl": null,
+      "buyUrl": "https://www.saskatchewanhal.ca/licensing.page",
       "summary": "Visitors aged 16 and older need an angling licence unless exempt. Visiting seniors do not receive Saskatchewan's resident senior exemption.",
       "whoNeedsOne": [
         "Canadian and foreign visitors aged 16 and older, unless exempt."
@@ -1186,7 +1186,7 @@
       ],
       "checked": "2026-11-14",
       "checkOfficial": "Confirm the final licence and habitat-certificate total in HAL. The separate angling overview displays lower habitat figures than the licence fee table.",
-      "contentModified": "2026-11-15"
+      "contentModified": "2026-11-19"
     },
     {
       "id": "ca-yukon",
@@ -1197,7 +1197,7 @@
         "name": "Government of Yukon",
         "url": "https://yukon.ca/en/outdoor-recreation-and-wildlife/fishing-and-boating/get-yukon-fishing-licence"
       },
-      "buyUrl": null,
+      "buyUrl": "https://env.eservices.gov.yk.ca/WebUI/",
       "summary": "Visitors generally need a Yukon fishing licence. Salmon other than kokanee also require a Yukon Salmon Conservation Catch Card.",
       "whoNeedsOne": [
         "Anglers aged 16 and older, unless exempt."
@@ -1285,7 +1285,7 @@
       ],
       "checked": "2026-11-14",
       "checkOfficial": "Confirm the salmon card fee and current salmon rules with Fisheries and Oceans Canada. The linked catch-card page redirects to the regional home page. Confirm any family-weekend exemption for your residency and dates.",
-      "contentModified": "2026-11-15"
+      "contentModified": "2026-11-19"
     },
     {
       "id": "ca-national-parks",
@@ -5244,7 +5244,7 @@
         "name": "Alabama Department of Conservation and Natural Resources",
         "url": "https://www.outdooralabama.com/freshwater-fishing-lic/fw-fish--nr"
       },
-      "buyUrl": null,
+      "buyUrl": "https://www.myoutdooralabama.com/",
       "summary": "Visitors aged 16 or older need the correct freshwater or saltwater licence. The senior exemption applies to Alabama residents, not visiting seniors.",
       "whoNeedsOne": [
         "Non-residents aged 16 or older."
@@ -5310,7 +5310,7 @@
       ],
       "checked": "2026-11-11",
       "checkOfficial": "Confirm residence-based fees and charter coverage. The saltwater fee table is dated August 2025. Use the authority page to confirm the current online purchase link.",
-      "contentModified": "2026-11-15"
+      "contentModified": "2026-11-19"
     },
     {
       "id": "us-alaska",
@@ -5449,7 +5449,7 @@
         "name": "Arizona Game and Fish Department",
         "url": "https://www.azgfd.com/fishing-2/licenses-and-regulations/"
       },
-      "buyUrl": null,
+      "buyUrl": "https://license.azgfd.com/",
       "summary": "Residents and visitors aged 10 or older need a licence for publicly accessible waters. Children aged 10 to 17 need the youth licence.",
       "whoNeedsOne": [
         "Residents and non-residents aged 10 or older in publicly accessible water."
@@ -5500,7 +5500,7 @@
       ],
       "checked": "2026-11-11",
       "checkOfficial": "Confirm tribal-water permits, local rules, and guide coverage with the relevant authority. Use the authority page to confirm the current online purchase link.",
-      "contentModified": "2026-11-15"
+      "contentModified": "2026-11-19"
     },
     {
       "id": "us-arkansas",
@@ -5511,7 +5511,7 @@
         "name": "Arkansas Game and Fish Commission",
         "url": "https://www.agfc.com/resources/licensing/fishing-license-descriptions-and-fees/"
       },
-      "buyUrl": null,
+      "buyUrl": "https://ar-web.s3licensing.com/",
       "summary": "Anglers aged 16 or older need a fishing licence. A trout permit also applies in specified trout waters, even if you keep no trout.",
       "whoNeedsOne": [
         "Anyone aged 16 or older who takes or attempts to take aquatic wildlife."
@@ -5569,7 +5569,7 @@
       ],
       "checked": "2026-11-11",
       "checkOfficial": "Use the authority page to confirm the current online purchase link.",
-      "contentModified": "2026-11-15"
+      "contentModified": "2026-11-19"
     },
     {
       "id": "us-california",
@@ -6331,7 +6331,7 @@
         "name": "Illinois Department of Natural Resources",
         "url": "https://dnr.illinois.gov/lpr/non-residentlicensespermitsfees.html"
       },
-      "buyUrl": null,
+      "buyUrl": "https://www.exploremoreil.com/",
       "summary": "Visitors aged 16 or older generally need a sport fishing licence. Trout and Lake Michigan salmon fishing can require separate stamps.",
       "whoNeedsOne": [
         "Non-residents aged 16 or older, unless an exemption or boundary-water agreement applies."
@@ -6404,7 +6404,7 @@
       ],
       "checked": "2026-11-11",
       "checkOfficial": "Use the authority page to confirm the current online purchase link. Confirm whether a guided trip covers the client's licence.",
-      "contentModified": "2026-11-15"
+      "contentModified": "2026-11-19"
     },
     {
       "id": "us-indiana",
@@ -6733,7 +6733,7 @@
         "name": "Louisiana Department of Wildlife and Fisheries",
         "url": "https://www.wlf.louisiana.gov/page/recreational-fishing-licenses-and-permits"
       },
-      "buyUrl": null,
+      "buyUrl": "https://louisianaoutdoors.com/licenses-and-permits",
       "summary": "Anglers aged 18 or older need fishing coverage. Saltwater anglers generally need both Basic Fishing and Saltwater licences; a guide's licence alone is not the client licence.",
       "whoNeedsOne": [
         "Anglers aged 18 or older who take or possess fish."
@@ -6812,7 +6812,7 @@
       ],
       "checked": "2026-11-11",
       "checkOfficial": "The fee source is the 2025 guide. Confirm current prices and special gear permits at purchase. Use the authority page to confirm the current online purchase link.",
-      "contentModified": "2026-11-15"
+      "contentModified": "2026-11-19"
     },
     {
       "id": "us-maine",
@@ -6823,7 +6823,7 @@
         "name": "Maine Department of Inland Fisheries and Wildlife; Department of Marine Resources",
         "url": "https://www.maine.gov/ifw/fishing-boating/fishing/laws-rules/license-requirements.html"
       },
-      "buyUrl": null,
+      "buyUrl": "https://apps1.web.maine.gov/cgi-bin/online/moses_v3/index",
       "summary": "Anglers aged 16 or older need a licence for inland fishing. Saltwater uses a separate registry, with exemptions for many licence holders and charter clients.",
       "whoNeedsOne": [
         "Anglers aged 16 or older who fish inland or transport inland-caught fish.",
@@ -6894,7 +6894,7 @@
       ],
       "checked": "2026-11-11",
       "checkOfficial": "Use the authority page to confirm the current online purchase link.",
-      "contentModified": "2026-11-15"
+      "contentModified": "2026-11-19"
     },
     {
       "id": "us-maryland",
@@ -6991,7 +6991,7 @@
         "name": "Massachusetts Division of Fisheries and Wildlife; Division of Marine Fisheries",
         "url": "https://www.mass.gov/info-details/license-types-and-fees"
       },
-      "buyUrl": null,
+      "buyUrl": "https://massfishhunt.mass.gov/",
       "summary": "Freshwater anglers aged 15 or older need a licence. Saltwater uses a separate permit from age 16, and seniors must obtain it even when it is free.",
       "whoNeedsOne": [
         "Freshwater anglers aged 15 or older.",
@@ -7055,7 +7055,7 @@
       ],
       "checked": "2026-11-11",
       "checkOfficial": "Use the authority page to confirm the current online purchase link.",
-      "contentModified": "2026-11-15"
+      "contentModified": "2026-11-19"
     },
     {
       "id": "us-michigan",
@@ -7234,7 +7234,7 @@
         "name": "Mississippi Department of Wildlife, Fisheries, and Parks; Department of Marine Resources",
         "url": "https://www.mdwfp.com/licenses-permits/fishing-license-requirements"
       },
-      "buyUrl": null,
+      "buyUrl": "https://www.ms.gov/mdwfp/licensing/login",
       "summary": "Non-residents aged 16 or older need a fishing licence. Louisiana residents face an extra saltwater rule and must also buy freshwater privileges.",
       "whoNeedsOne": [
         "Non-residents aged 16 or older in fresh or marine waters."
@@ -7322,7 +7322,7 @@
       ],
       "checked": "2026-11-11",
       "checkOfficial": "Confirm the current red snapper season, trip-system fees, and charter-client fishing licence requirements. Use the authority page to confirm the current online purchase link.",
-      "contentModified": "2026-11-15"
+      "contentModified": "2026-11-19"
     },
     {
       "id": "us-missouri",
@@ -7484,7 +7484,7 @@
         "name": "Nebraska Game and Parks Commission",
         "url": "https://outdoornebraska.gov/permits/fishing-permits/"
       },
-      "buyUrl": null,
+      "buyUrl": "https://www.gooutdoorsne.com/login",
       "summary": "Anglers aged 16 or older need a fishing permit. Visiting children under 16 need a companion who holds a Nebraska fishing permit.",
       "whoNeedsOne": [
         "Anglers aged 16 or older.",
@@ -7560,7 +7560,7 @@
       ],
       "checked": "2026-11-11",
       "checkOfficial": "Confirm the boat AIS fee and guide coverage. Use the authority page to confirm the current online purchase link.",
-      "contentModified": "2026-11-15"
+      "contentModified": "2026-11-19"
     },
     {
       "id": "us-nevada",
@@ -7645,7 +7645,7 @@
         "name": "New Hampshire Fish and Game Department",
         "url": "https://www.wildlife.nh.gov/licenses-and-permits"
       },
-      "buyUrl": null,
+      "buyUrl": "https://www.nhfishandgame.com/",
       "summary": "Anglers aged 16 or older generally need freshwater or saltwater coverage. A short freshwater licence does not replace separate saltwater coverage.",
       "whoNeedsOne": [
         "Anglers aged 16 or older, unless exempt."
@@ -7715,7 +7715,7 @@
       ],
       "checked": "2026-11-11",
       "checkOfficial": "Confirm current fees, reciprocity, and charter coverage. The available official application is dated October 2023. Use the authority page to confirm the current online purchase link.",
-      "contentModified": "2026-11-15"
+      "contentModified": "2026-11-19"
     },
     {
       "id": "us-new-jersey",
@@ -7726,7 +7726,7 @@
         "name": "New Jersey Department of Environmental Protection, Fish and Wildlife",
         "url": "https://dep.nj.gov/njfw/fishing/freshwater/buy-a-license/"
       },
-      "buyUrl": null,
+      "buyUrl": "https://nj.aspirafocus.com/internetsales",
       "summary": "Visitors aged 16 or older need a freshwater licence, including on private waters. Saltwater uses an annual registry instead of a general fishing licence.",
       "whoNeedsOne": [
         "Non-residents aged 16 or older in freshwater."
@@ -7794,7 +7794,7 @@
       ],
       "checked": "2026-11-11",
       "checkOfficial": "Confirm the current saltwater registry fee and any species or shellfish permits. Use the authority page to confirm the current online purchase link.",
-      "contentModified": "2026-11-15"
+      "contentModified": "2026-11-19"
     },
     {
       "id": "us-new-mexico",
@@ -7890,7 +7890,7 @@
         "name": "New York State Department of Environmental Conservation",
         "url": "https://dec.ny.gov/sites/default/files/2026-03/fishguide26.pdf"
       },
-      "buyUrl": null,
+      "buyUrl": "https://decals.east.licensing.app/",
       "summary": "Anglers aged 16 or older need a freshwater licence. Marine fishing uses a free registry, which also covers certain migratory fish in inland rivers.",
       "whoNeedsOne": [
         "Freshwater anglers aged 16 or older.",
@@ -7950,7 +7950,7 @@
       ],
       "checked": "2026-11-11",
       "checkOfficial": "Use the authority page to confirm the current online purchase link. Confirm whether a guided trip covers the client's licence.",
-      "contentModified": "2026-11-15"
+      "contentModified": "2026-11-19"
     },
     {
       "id": "us-north-carolina",
@@ -8039,7 +8039,7 @@
         "name": "North Dakota Game and Fish Department",
         "url": "https://gf.nd.gov/fishing/licensing"
       },
-      "buyUrl": null,
+      "buyUrl": "https://gf.nd.gov/buy-apply",
       "summary": "Anglers aged 16 or older need a fishing licence. Visiting children under 16 can keep their own limit only under the stated licensed-companion exemption.",
       "whoNeedsOne": [
         "Residents and non-residents aged 16 or older."
@@ -8107,7 +8107,7 @@
       ],
       "checked": "2026-11-11",
       "checkOfficial": "Use the authority page to confirm the current online purchase link. Confirm whether a guided trip covers the client's licence.",
-      "contentModified": "2026-11-15"
+      "contentModified": "2026-11-19"
     },
     {
       "id": "us-ohio",
@@ -8118,7 +8118,7 @@
         "name": "Ohio Department of Natural Resources, Division of Wildlife",
         "url": "https://ohiodnr.gov/buy-and-apply/hunting-fishing-boating/fishing-resources/fishing-licenses"
       },
-      "buyUrl": null,
+      "buyUrl": "https://oh-web.s3licensing.com/Home",
       "summary": "Anglers aged 16 or older generally need a fishing licence. Ohio's free fishing days apply to residents, so visitors should not assume an exemption.",
       "whoNeedsOne": [
         "Anglers aged 16 or older, unless exempt."
@@ -8170,7 +8170,7 @@
       ],
       "checked": "2026-11-11",
       "checkOfficial": "Use the authority page to confirm the current online purchase link. Confirm whether a guided trip covers the client's licence.",
-      "contentModified": "2026-11-15"
+      "contentModified": "2026-11-19"
     },
     {
       "id": "us-oklahoma",
@@ -8346,7 +8346,7 @@
         "name": "Pennsylvania Fish and Boat Commission",
         "url": "https://www.pa.gov/agencies/fishandboat/fishing/buy-fishing-license-permit"
       },
-      "buyUrl": null,
+      "buyUrl": "https://huntfish.pa.gov/",
       "summary": "Anglers aged 16 or older need a fishing licence. The one-day tourist licence includes trout and Lake Erie permits but is invalid March 15–April 30.",
       "whoNeedsOne": [
         "Residents and visitors aged 16 or older, unless exempt."
@@ -8427,7 +8427,7 @@
       ],
       "checked": "2026-11-11",
       "checkOfficial": "Use the authority page to confirm the current online purchase link. Confirm whether a guided trip covers the client's licence.",
-      "contentModified": "2026-11-15"
+      "contentModified": "2026-11-19"
     },
     {
       "id": "us-rhode-island",
@@ -8523,7 +8523,7 @@
         "name": "South Carolina Department of Natural Resources",
         "url": "https://www.dnr.sc.gov/licenses/pricingnonresident.html"
       },
-      "buyUrl": null,
+      "buyUrl": "https://www.gooutdoorssouthcarolina.com/",
       "summary": "Anglers aged 16 or older generally need freshwater or saltwater coverage. A licence is required from the beach unless an exemption applies.",
       "whoNeedsOne": [
         "Recreational anglers aged 16 or older, unless exempt."
@@ -8605,7 +8605,7 @@
       ],
       "checked": "2026-11-11",
       "checkOfficial": "Use the authority page to confirm the current online purchase link.",
-      "contentModified": "2026-11-15"
+      "contentModified": "2026-11-19"
     },
     {
       "id": "us-south-dakota",
@@ -8884,7 +8884,7 @@
         "name": "Utah Division of Wildlife Resources",
         "url": "https://wildlife.utah.gov/fees"
       },
-      "buyUrl": null,
+      "buyUrl": "https://wildlifelicense.utah.gov/hflo",
       "summary": "Anglers aged 12 or older need a fishing licence. The reduced senior price applies to residents, not visiting seniors.",
       "whoNeedsOne": [
         "Residents and non-residents aged 12 or older."
@@ -8961,7 +8961,7 @@
       ],
       "checked": "2026-11-11",
       "checkOfficial": "Confirm boundary-water coverage and guide requirements before the trip. Use the authority page to confirm the current online purchase link.",
-      "contentModified": "2026-11-15"
+      "contentModified": "2026-11-19"
     },
     {
       "id": "us-vermont",
@@ -9148,7 +9148,7 @@
         "name": "Washington Department of Fish and Wildlife",
         "url": "https://wdfw.wa.gov/licenses/fishing/types-fees"
       },
-      "buyUrl": null,
+      "buyUrl": "https://fishhunt.dfw.wa.gov/#/login",
       "summary": "Anglers aged 16 or older need the correct fishing licence. Children can still need catch record cards and species endorsements.",
       "whoNeedsOne": [
         "Anglers aged 16 or older.",
@@ -9242,7 +9242,7 @@
       ],
       "checked": "2026-11-11",
       "checkOfficial": "Confirm catch-record returns, endorsement fees for your age and term, emergency closures, and guide coverage. Use the authority page to confirm the current online purchase link.",
-      "contentModified": "2026-11-15"
+      "contentModified": "2026-11-19"
     },
     {
       "id": "us-west-virginia",
@@ -9253,7 +9253,7 @@
         "name": "West Virginia Division of Natural Resources",
         "url": "https://wvdnr.gov/wp-content/uploads/2026/02/Pub_Regs_Fishing_2026_DNR_WILD_pp.pdf"
       },
-      "buyUrl": null,
+      "buyUrl": "https://www.wvhunt.com/login",
       "summary": "Visitors aged 15 or older need fishing coverage. The low daily licence price excludes the mandatory Conservation/Law Enforcement Stamp.",
       "whoNeedsOne": [
         "Non-residents aged 15 or older."
@@ -9322,7 +9322,7 @@
       ],
       "checked": "2026-11-11",
       "checkOfficial": "Use the authority page to confirm the current online purchase link. Confirm whether a guided trip covers the client's licence.",
-      "contentModified": "2026-11-15"
+      "contentModified": "2026-11-19"
     },
     {
       "id": "us-wisconsin",
@@ -9435,7 +9435,7 @@
         "name": "Wyoming Game and Fish Department",
         "url": "https://wgfd.wyo.gov/licenses-applications/license-fee-list"
       },
-      "buyUrl": null,
+      "buyUrl": "https://wgfapps.wyo.gov/elso/ELSOWelcome.aspx",
       "summary": "Anglers aged 14 or older generally need a fishing licence. A state licence does not provide Yellowstone National Park fishing coverage.",
       "whoNeedsOne": [
         "Residents and visitors aged 14 or older, unless exempt."
@@ -9518,7 +9518,7 @@
       ],
       "checked": "2026-11-11",
       "checkOfficial": "Confirm the five-day Conservation Stamp exemption, child catch limits, tribal permits, and guide coverage. Use the authority page to confirm the current online purchase link.",
-      "contentModified": "2026-11-15"
+      "contentModified": "2026-11-19"
     },
     {
       "id": "us-federal",

@@ -124,38 +124,157 @@ def trip_panel(trip, rec, permits, federal):
     return h + '</section>'
 
 
+MONTHS = 'Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec'.split()
+WATER = {'freshwater': 'Freshwater', 'saltwater': 'Saltwater', 'both': 'Fresh and salt water'}
+WHO = {'non-resident': 'Visitor', 'resident': 'Resident', 'any': 'Any angler'}
+
+STYLE = """<style>
+.lic2{max-width:1040px;padding-top:8px;padding-bottom:64px}
+.lic2 h1{font-size:clamp(38px,5.2vw,64px);line-height:1.02;margin:10px 0 18px}
+.lic2 h2{font-size:clamp(24px,2.4vw,30px);margin:0 0 16px;display:flex;gap:12px;align-items:baseline}
+.lic2 h3{font:600 12px/1.4 var(--font);letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin:0 0 10px}
+.lic2 ul{margin:0;padding:0;list-style:none}
+.lic-top{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:40px;align-items:start;margin:8px 0 44px}
+.lic-top .lic-answer{font-size:1.15rem;line-height:1.55;margin:0;max-width:56ch}
+.lic-ticket{background:var(--forest);color:#fffefa;border-radius:18px;padding:24px;display:grid;gap:14px}
+.lic-ticket small{display:block;font:600 11px/1.4 var(--font);letter-spacing:.12em;text-transform:uppercase;color:#d2c5b5}
+.lic-ticket strong{font:400 44px/1 var(--display);letter-spacing:-.02em;display:block;margin-top:6px}
+.lic-ticket span{font-size:14px;color:#e6e2d6}
+.lic-ticket .btn,.lic-step .btn{display:inline-flex;justify-content:center;align-items:center;width:100%;text-align:center;white-space:normal}
+.lic-ticket .btn{background:#f5f2e9;color:#142d3a}.lic-ticket .btn:hover{background:#fff;color:#142d3a}
+.lic-ticket em{font-style:normal;font-size:12px;color:#c9cdc6}
+.lic-step{border-top:1px solid var(--line);padding:32px 0}
+.lic-num{flex:0 0 auto;width:30px;height:30px;border-radius:50%;background:var(--lime);color:var(--ink);font:600 14px/30px var(--font);text-align:center;letter-spacing:0;transform:translateY(-3px)}
+.lic-two{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.lic-box{background:var(--white);border:1px solid var(--line);border-radius:14px;padding:18px 20px}
+.lic-box li{position:relative;padding-left:26px;margin:8px 0;line-height:1.45}
+.lic-box li:before{position:absolute;left:0;top:0;font-weight:700}
+.lic-yes li:before{content:"\\2713";color:#2f6b4f}
+.lic-no li:before{content:"\\2013";color:var(--gold)}
+.lic-cards+h3{margin-top:22px}
+.lic-cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:12px;margin-bottom:18px}
+.lic-card{background:var(--white);border:1px solid var(--line);border-radius:14px;padding:16px 18px;display:flex;flex-direction:column;gap:4px}
+.lic-card b{font:600 12px/1.3 var(--font);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.lic-card strong{font:400 30px/1.1 var(--display);letter-spacing:-.02em}
+.lic-card span{font-size:13px;line-height:1.35;color:var(--muted)}
+.lic-rows li{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px 18px;padding:14px 0;border-bottom:1px solid var(--line)}
+.lic-rows li:last-child{border-bottom:0}
+.lic-rows b{font-weight:600}
+.lic-rows i{font-style:normal;font-weight:600;white-space:nowrap}
+.lic-rows span{grid-column:1/-1;font-size:14px;color:var(--muted);line-height:1.45}
+.lic-buy{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:24px;align-items:center}
+.lic-buy p{margin:0}
+.lic-more details{border-top:1px solid var(--line);padding:16px 0}
+.lic-more details:last-child{border-bottom:1px solid var(--line)}
+.lic-more summary{cursor:pointer;font-weight:600;font-size:17px}
+.lic-more p,.lic-more ol{margin:12px 0 4px;color:var(--ink)}
+.lic-more ol{padding-left:20px}
+.lic-more .lic-sources{margin-top:0}
+.lic-hub header{margin:8px 0 28px}.lic-hub header .lic-answer{font-size:1.15rem;margin:0}.lic-hub .lic-search span{font-weight:600;margin-bottom:8px}
+.lic-trips{display:flex;flex-wrap:wrap;gap:8px}
+.lic-trips a,.lic-hub-list a{display:block;border:1px solid var(--line);background:var(--white);border-radius:12px;padding:10px 14px;font-size:14px;line-height:1.3;text-decoration:none}
+.lic-trips a:hover,.lic-hub-list a:hover{border-color:var(--gold)}
+.lic-note{font-size:13px;color:var(--muted);margin-top:14px}
+.lic-hub .lic-search{max-width:560px;margin:0 0 36px}
+.lic-hub .lic-search input{font-size:17px;padding:16px 18px;border-radius:14px}
+.lic-hub .lic-group{margin:0 0 36px}
+.lic-hub .lic-group h2{font-size:24px;margin-bottom:12px}
+.lic-hub-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:8px}
+.lic-hub-list b{display:block;font-weight:600}
+.lic-hub-list span{font-size:12px;color:var(--muted)}
+@media(max-width:820px){.lic-top,.lic-buy{grid-template-columns:1fr;gap:22px}.lic-two{grid-template-columns:1fr}.lic-cards{grid-template-columns:1fr 1fr}.lic-step{padding:26px 0}.lic-hub-list{grid-template-columns:1fr 1fr}}
+</style>"""
+
+
+def nice_date(d):
+    y, m, day = d.split('-')
+    return f'{int(day)} {MONTHS[int(m) - 1]} {y}'
+
+
+def price_text(o):
+    if o.get('price') == 0:
+        return 'Free'
+    return money(o)
+
+
+def cheapest(r):
+    priced = [o for o in r.get('options', []) if o.get('who') != 'resident' and o.get('price')]
+    return min(priced, key=lambda o: o['price']) if priced else None
+
+
+def buy_button(r, cls='btn'):
+    if r.get('buyUrl'):
+        return link(r['buyUrl'], 'Buy on the official site ↗', cls)
+    if r.get('authority', {}).get('url'):
+        return link(r['authority']['url'], 'Go to the official site ↗', cls)
+    return ''
+
+
+def option_cards(r):
+    opts = r.get('options', [])
+    waters = [w for w in ('freshwater', 'saltwater', 'both') if any(o.get('water') == w for o in opts)]
+    groups = [(WATER[w], [o for o in opts if o.get('water') == w]) for w in waters] if len(waters) > 1 else [('', opts)]
+    rest = [o for o in opts if o.get('water') not in WATER]
+    if rest and len(waters) > 1:
+        groups.append(('Other', rest))
+    h = ''
+    for label, rows in groups:
+        if label:
+            h += f'<h3>{E(label)}</h3>'
+        h += '<ul class="lic-cards">'
+        for o in sorted(rows, key=lambda o: (o.get('price') is None, o.get('price') or 0)):
+            h += (f'<li class="lic-card"><b>{E(o.get("duration") or WHO.get(o.get("who"), "Licence"))}</b>'
+                  f'<strong>{E(price_text(o) or "See site")}</strong><span>{E(o["name"])}</span></li>')
+        h += '</ul>'
+    return h
+
+
+def step(n, title, inner):
+    return f'<section class="lic-step"><h2><span class="lic-num">{n}</span>{E(title)}</h2>{inner}</section>'
+
+
 def jurisdiction_page(r, trips):
     name = r['name']
-    body = f'<div class="wrap lic-page"><nav class="breadcrumbs"><a href="/">Home</a> / <a href="{HUB}">Fishing licenses</a> / {E(name)}</nav>'
-    body += f'<header class="lic-head"><span class="eyebrow">FISHING LICENCE · {E(r["country"].upper())}</span><h1>{E(r.get("h1", name + " fishing licence"))}</h1><p class="lic-answer">{E(r["summary"])}</p>{buttons(r)}<p class="small">Sources checked {E(r['checked'])}</p></header>'
-    body += '<div class="lic-grid"><div>'
-    body += bullets('Who needs one', r.get('whoNeedsOne')) + bullets('Who is exempt', r.get('exemptions'))
+    checked = nice_date(r['checked'])
+    low = cheapest(r)
+    body = STYLE + f'<div class="wrap lic-page lic2"><nav class="breadcrumbs"><a href="/">Home</a> / <a href="{HUB}">Fishing licenses</a> / {E(name)}</nav>'
+    body += f'<header class="lic-top"><div><span class="eyebrow">FISHING LICENCE · {E(r["country"].upper())}</span><h1>{E(r.get("h1", name + " fishing licence"))}</h1><p class="lic-answer">{E(r["summary"])}</p></div>'
+    if low:
+        ticket = f'<div><small>Visitor licence from</small><strong>{E(price_text(low))}</strong><span>{E(low.get("duration") or low["name"])}</span></div>'
+    else:
+        ticket = f'<div><small>Official source</small><span>{E(r.get("authority", {}).get("name") or name)}</span></div>'
+    body += f'<aside class="lic-ticket">{ticket}{buy_button(r)}<em>Checked against official sources on {checked}.</em></aside></header>'
+    n = 1
+    need, exempt = [i for i in r.get('whoNeedsOne') or [] if i], [i for i in r.get('exemptions') or [] if i]
+    if need or exempt:
+        inner = '<div class="lic-two">'
+        if need:
+            inner += '<div class="lic-box lic-yes"><h3>You need a licence</h3><ul>' + ''.join(f'<li>{E(i)}</li>' for i in need) + '</ul></div>'
+        if exempt:
+            inner += '<div class="lic-box lic-no"><h3>You do not need one</h3><ul>' + ''.join(f'<li>{E(i)}</li>' for i in exempt) + '</ul></div>'
+        body += step(n, f'Who needs a fishing licence in {name}?', inner + '</div>')
+        n += 1
     if r.get('options'):
-        body += '<h2>Licence options and prices</h2>' + options_table(r)
+        body += step(n, 'Licence options and prices', option_cards(r) + f'<p class="lic-note">Prices from the official source, checked {checked}.</p>')
+        n += 1
     if r.get('extras'):
-        body += '<h2>Extra stamps and permits</h2><ul>' + ''.join(
-            f'<li><b>{E(x["name"])}</b>{(" · " + E(money(x))) if money(x) else ""}<br>{E(x.get("when") or "")}</li>' for x in r['extras']) + '</ul>'
-    if r.get('saltwater'):
-        body += f'<h2>Saltwater</h2><p>{E(r["saltwater"])}</p>'
-    if r.get('guidedTrips'):
-        body += f'<h2>Fishing with a guide or charter</h2><p>{E(r["guidedTrips"])}</p>'
-    body += bullets('Rules visitors should know', r.get('keyRules'))
-    if r.get('checkOfficial'):
-        body += '<h2>What should you confirm before the trip?</h2><p>' + E(r['checkOfficial']) + '</p>'
-    if r.get('howToBuy'):
-        body += f'<h2>How do you get the right licence?</h2><p>{E(r["howToBuy"])}</p>'
-    if r.get('freeFishingDays'):
-        body += '<h2>License-free days</h2><p>' + E(r['freeFishingDays']) + '</p>'
+        rows = ''.join(
+            f'<li><b>{E(x["name"])}</b><i>{E(price_text(x))}</i>' + (f'<span>{E(x["when"])}</span>' if x.get('when') else '') + '</li>' for x in r['extras'])
+        body += step(n, 'Extra stamps and permits', f'<ul class="lic-rows">{rows}</ul>')
+        n += 1
+    how = f'<p>{E(r["howToBuy"])}</p>' if r.get('howToBuy') else f'<p>Use the official {E(name)} site.</p>'
     if r['id'] == 'us-florida':
-        body += '<p><a href="/guides/florida-visitor-fishing-license-planner/">Check a visitor outing with the Florida license planner</a>.</p>'
-    body += '</div><aside>'
-    if trips:
-        body += f'<div class="panel"><span class="eyebrow">TRIPS IN {E(name.upper())}</span><ul>' + ''.join(
-            f'<li><a href="{t.get("canonicalPath", "/trips/" + t["id"] + "/")}">{E(t["title"])}</a></li>' for t in trips[:12]) + '</ul></div>'
-    body += '</aside></div>'
-    srcs = r.get('sources', [])
-    body += f'<details class="lic-sources"><summary>Sources ({len(srcs)})</summary><ol>' + ''.join(
-        f'<li>{link(s["url"], s.get("title") or s["url"])}</li>' for s in srcs) + f'</ol><p class="small">Checked {MONTH}. Prices and rules change: confirm on the official site before you fish.</p></details></div>'
+        how = how[:-4] + ' <a class="link" href="/guides/florida-visitor-fishing-license-planner/">Check a visitor outing with the Florida license planner</a>.</p>'
+    body += step(n, 'How to buy the licence', f'<div class="lic-buy"><div>{how}</div>{buy_button(r)}</div>')
+    n += 1
+    rules = [i for i in r.get('keyRules') or [] if i]
+    if rules:
+        body += step(n, 'Rules to know before you fish', '<div class="lic-box lic-yes"><ul>' + ''.join(f'<li>{E(i)}</li>' for i in rules) + '</ul></div>')
+    more = ''
+    for title, key in (('Saltwater fishing', 'saltwater'), ('Fishing with a guide or charter', 'guidedTrips'),
+                       ('Licence-free days', 'freeFishingDays'), ('What to confirm before the trip', 'checkOfficial')):
+        if r.get(key):
+            more += f'<details><summary>{title}</summary><p>{E(r[key])}</p></details>'
     faq = [(f'Do I need a fishing licence in {name}?', r['summary'])]
     vis = [o for o in r.get('options', []) if o.get('who') in ('non-resident', 'any') and money(o)]
     if vis:
@@ -164,7 +283,15 @@ def jurisdiction_page(r, trips):
         faq.append((f'Where do I buy a fishing licence in {name}?', r['howToBuy']))
     if r.get('faq'):
         faq = [(x['q'], x['a']) for x in r['faq']]
-    body += '<section class="wrap"><h2>Common license questions</h2>' + ''.join('<details><summary>' + E(q) + '</summary><p>' + E(a) + '</p></details>' for q,a in faq) + '</section>'
+    more += ''.join('<details><summary>' + E(q) + '</summary><p>' + E(a) + '</p></details>' for q, a in faq)
+    srcs = r.get('sources', [])
+    more += f'<details class="lic-sources"><summary>Sources ({len(srcs)})</summary><ol>' + ''.join(
+        f'<li>{link(s["url"], s.get("title") or s["url"])}</li>' for s in srcs) + '</ol><p class="small">Prices and rules change. Confirm on the official site before you fish.</p></details>'
+    body += f'<section class="lic-step lic-more"><h2>More detail</h2>{more}</section>'
+    if trips:
+        body += f'<section class="lic-step"><h2>Trips in {E(name)}</h2><div class="lic-trips">' + ''.join(
+            f'<a href="{t.get("canonicalPath", "/trips/" + t["id"] + "/")}">{E(t["title"])}</a>' for t in trips[:8]) + '</div></section>'
+    body += '</div>'
     schema = {'@context': 'https://schema.org', '@type': 'FAQPage', 'mainEntity': [
         {'@type': 'Question', 'name': q, 'acceptedAnswer': {'@type': 'Answer', 'text': a}} for q, a in faq]}
     body += '<script type="application/ld+json">' + json.dumps(schema, ensure_ascii=False).replace('</', '<\\/') + '</script>'
@@ -205,14 +332,20 @@ def install(pages, root, add, trips):
     groups = {}
     for r in recs:
         groups.setdefault(r['country'], []).append(r)
-    body = f'<div class="wrap lic-page"><header class="lic-head"><span class="eyebrow">FISHING LICENSES</span><h1>Fishing licenses, state by state and country by country.</h1><p class="lic-answer">Check the rules for the place you will fish. Compare visitor licenses, extra permits, and exemptions, then use the official purchase link.</p></header>'
-    body += '<label class="lic-search"><span>Find a state or country</span><input type="search" placeholder="Try “Alaska”, “Norway” or “Queensland”" data-lic-filter></label><div class="lic-groups">'
+    body = STYLE + f'<div class="wrap lic-page lic2 lic-hub"><header><span class="eyebrow">FISHING LICENSES</span><h1>Fishing licenses by state and country</h1><p class="lic-answer">Pick the place you will fish. See who needs a licence, the visitor price, and the official link to buy it.</p></header>'
+    body += '<label class="lic-search"><span>Where will you fish?</span><input type="search" placeholder="Try “Alaska”, “Norway” or “Queensland”" data-lic-filter></label><div>'
     order = ['United States', 'Canada', 'Mexico'] + sorted(c for c in groups if c not in ('United States', 'Canada', 'Mexico'))
-    for c in order:
-        items = sorted(groups[c], key=lambda r: r['name'])
-        body += f'<section class="lic-group" data-lic-group><h2>{E(c)}</h2><ul>' + ''.join(
-            f'<li data-lic-name="{E((r["name"] + " " + c).lower(), quote=True)}"><a href="{page_path(r)}">{E(r["name"])}</a></li>' for r in items) + '</ul></section>'
-    body += '</div><p><a href="/guides/florida-visitor-fishing-license-planner/">Florida visitors: check shore, pier, and charter coverage</a>.</p><p class="small">Checked ' + MONTH + ' against official sources. Always confirm on the official site before you fish.</p></div>'
+    solo = [c for c in order if len(groups[c]) == 1]
+    blocks = [(c, groups[c]) for c in order if len(groups[c]) > 1] + ([('Other countries', [groups[c][0] for c in solo])] if solo else [])
+    for c, rs in blocks:
+        items = sorted(rs, key=lambda r: r['name'])
+        body += f'<section class="lic-group" data-lic-group><h2>{E(c)}</h2><ul class="lic-hub-list">'
+        for r in items:
+            low = cheapest(r)
+            sub = f'<span>Visitor licence from {E(price_text(low))}</span>' if low else '<span>Rules and official link</span>'
+            body += f'<li data-lic-name="{E((r["name"] + " " + r["country"]).lower(), quote=True)}"><a href="{page_path(r)}"><b>{E(r["name"])}</b>{sub}</a></li>'
+        body += '</ul></section>'
+    body += '</div><p><a class="link" href="/guides/florida-visitor-fishing-license-planner/">Florida visitors: check shore, pier, and charter coverage</a>.</p><p class="small">Checked ' + MONTH + ' against official sources. Always confirm on the official site before you fish.</p></div>'
     body += '<script>(()=>{const i=document.querySelector("[data-lic-filter]");if(!i)return;i.addEventListener("input",()=>{const q=i.value.trim().toLowerCase();document.querySelectorAll("[data-lic-group]").forEach(g=>{let n=0;g.querySelectorAll("li").forEach(li=>{const m=!q||li.dataset.licName.includes(q);li.hidden=!m;n+=m});g.hidden=!n;});});})();</script>'
     add(HUB, 'Fishing Licenses by State and Country | Castward',
         f'Fishing licence rules for {len(recs)} US states, Canadian provinces and countries: who needs one, visitor prices and official links to buy.', body, 'article')
