@@ -1,0 +1,22 @@
+{
+  "created": "2026-11-19",
+  "generator": "OpenAI built-in imagegen",
+  "digitalSourceType": "trainedAlgorithmicMedia",
+  "scenes": [
+    {
+      "trip": "na-ca-sk-008",
+      "alt": "A small boat beside a rocky northern lake shore with spruce trees and distant sand.",
+      "original": "exec-52f4a786-5841-40c3-bd43-6121f6a45ef7.png"
+    },
+    {
+      "trip": "na-ca-mb-009",
+      "alt": "Low rocky islands and sparse spruce trees on a broad subarctic lake.",
+      "original": "exec-8e185cba-36d2-42a4-ba36-d6179338a8c7.png"
+    },
+    {
+      "trip": "na-ca-qc-007",
+      "alt": "A small boat beside forested reservoir islands and a granite shore at sunrise.",
+      "original": "exec-73113396-45be-422c-8de3-5f6286498f35.png"
+    }
+  ]
+}
