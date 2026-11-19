@@ -5544,15 +5544,15 @@
   {
     "id": "na-ca-sk-008",
     "place": "Athabasca Lake / Saskatchewan base",
-    "eligible": false,
-    "verifiedSpeciesIds": [],
-    "descriptionWords": 0,
+    "eligible": true,
+    "verifiedSpeciesIds": [
+      "lake-trout",
+      "northern-pike"
+    ],
+    "descriptionWords": 158,
     "seasonSection": true,
     "canonicalPath": "/north-america/canada/saskatchewan/athabasca-lake-saskatchewan-base-remote-lodge-and-expedition/",
-    "reasons": [
-      "Only 0 verified individual target species with source links; at least 2 required",
-      "Water-specific description has 0 words; at least 120 required"
-    ]
+    "reasons": []
   },
   {
     "id": "na-ca-mb-001",
@@ -5670,15 +5670,15 @@
   {
     "id": "na-ca-mb-009",
     "place": "Nueltin Lake / Manitoba base",
-    "eligible": false,
-    "verifiedSpeciesIds": [],
-    "descriptionWords": 0,
+    "eligible": true,
+    "verifiedSpeciesIds": [
+      "lake-trout",
+      "northern-pike"
+    ],
+    "descriptionWords": 159,
     "seasonSection": true,
     "canonicalPath": "/north-america/canada/manitoba/nueltin-lake-manitoba-base-remote-lodge-and-expedition/",
-    "reasons": [
-      "Only 0 verified individual target species with source links; at least 2 required",
-      "Water-specific description has 0 words; at least 120 required"
-    ]
+    "reasons": []
   },
   {
     "id": "na-ca-mb-010",
@@ -6027,15 +6027,15 @@
   {
     "id": "na-ca-qc-007",
     "place": "Gouin Reservoir",
-    "eligible": false,
-    "verifiedSpeciesIds": [],
-    "descriptionWords": 0,
+    "eligible": true,
+    "verifiedSpeciesIds": [
+      "northern-pike",
+      "walleye"
+    ],
+    "descriptionWords": 161,
     "seasonSection": true,
     "canonicalPath": "/north-america/canada/quebec/gouin-reservoir-remote-lodge-and-expedition/",
-    "reasons": [
-      "Only 0 verified individual target species with source links; at least 2 required",
-      "Water-specific description has 0 words; at least 120 required"
-    ]
+    "reasons": []
   },
   {
     "id": "na-ca-qc-008",

@@ -5149,8 +5149,8 @@
   },
   "/north-america/canada/saskatchewan/athabasca-lake-saskatchewan-base-remote-lodge-and-expedition/": {
     "kind": "article",
-    "title": "Lake Athabasca: Remote Fishing from Saskatchewan | Castward",
-    "noindex": true,
+    "title": "Lake Athabasca Fishing: Trout and Pike from Saskatchewan",
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/canada/manitoba/red-river-lockport-catfish-fishing/": {
@@ -5203,8 +5203,8 @@
   },
   "/north-america/canada/manitoba/nueltin-lake-manitoba-base-remote-lodge-and-expedition/": {
     "kind": "article",
-    "title": "Nueltin Lake: A Remote Fishing Trip from Manitoba | Castward",
-    "noindex": true,
+    "title": "Nueltin Lake Fishing: Manitoba Trout and Pike Trip",
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/canada/manitoba/churchill-river-manitoba-reach-remote-lodge-and-expedition/": {
@@ -5359,8 +5359,8 @@
   },
   "/north-america/canada/quebec/gouin-reservoir-remote-lodge-and-expedition/": {
     "kind": "article",
-    "title": "Gouin Reservoir: A Quebec Fishing Camp Getaway | Castward",
-    "noindex": true,
+    "title": "Gouin Reservoir Fishing: Walleye and Northern Pike",
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/canada/quebec/cabonga-reservoir-remote-lodge-and-expedition/": {
@@ -6218,7 +6218,7 @@
   "/north-america/canada/manitoba/": {
     "kind": "collection",
     "title": "Manitoba fishing trips and preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/canada/new-brunswick/": {
@@ -6266,7 +6266,7 @@
   "/north-america/canada/quebec/": {
     "kind": "collection",
     "title": "Quebec fishing trips and preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/canada/saskatchewan/": {
@@ -12643,7 +12643,7 @@
   },
   "/species/mozambique-tilapia/": {
     "kind": "species-detail",
-    "title": "Mozambique tilapia fishing, local names and destinations",
+    "title": "Mozambique tilapia: Oreochromis mossambicus facts",
     "noindex": false,
     "redirectTo": null
   },
@@ -13573,7 +13573,7 @@
   },
   "/species/shoal-bass/": {
     "kind": "species-detail",
-    "title": "Shoal bass fishing, local names and destinations | Castward",
+    "title": "Shoal bass (Micropterus cataractae): habitat and size",
     "noindex": false,
     "redirectTo": null
   },

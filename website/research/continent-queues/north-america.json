@@ -16469,13 +16469,20 @@
       "location": "Athabasca Lake / Saskatchewan base",
       "url": "/north-america/canada/saskatchewan/athabasca-lake-saskatchewan-base-remote-lodge-and-expedition/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
-      "sourceIds": [],
+      "indexEligible": true,
+      "sourceIds": [
+        "species-66cff5865bb1",
+        "species-b4e56742890c",
+        "species-3c7028da0076"
+      ],
       "evidenceDepth": "Production brief; local fishery claims not yet verified",
       "localDecision": "Research fly-in or community-based access and separate the Alberta and Saskatchewan itineraries.",
       "candidateTargets": "Lake trout / northern pike candidates",
-      "confirmedTargets": [],
-      "seasonalEvidence": "Dates have not been verified for this opportunity. Before choosing travel dates, resolve: Operating program dates, water levels, transfers and resupply constraints.",
+      "confirmedTargets": [
+        "Lake trout",
+        "Northern pike"
+      ],
+      "seasonalEvidence": "Plan open-water travel around confirmed local ice-out and transport. Check the Northern Zone season and any named-water exceptions in Saskatchewan’s current guide. A legal season does not establish that your boat route is open.",
       "accessToVerify": "Fly-in, boat transfer or multiday expedition",
       "tackleDecision": "Select the target-specific module first; inventory what the lodge actually supplies",
       "operatorQuestion": "Rod transport, specialist tackle, camp equipment and communications",
@@ -16824,13 +16831,19 @@
       "location": "Nueltin Lake / Manitoba base",
       "url": "/north-america/canada/manitoba/nueltin-lake-manitoba-base-remote-lodge-and-expedition/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
-      "sourceIds": [],
+      "indexEligible": true,
+      "sourceIds": [
+        "species-d0bdb57fcd82",
+        "species-6b27c269d331"
+      ],
       "evidenceDepth": "Production brief; local fishery claims not yet verified",
       "localDecision": "Resolve lodge location and shared territorial waterbody before a fly-in itinerary.",
       "candidateTargets": "Northern pike / lake trout candidates",
-      "confirmedTargets": [],
-      "seasonalEvidence": "Dates have not been verified for this opportunity. Before choosing travel dates, resolve: Operating program dates, water levels, transfers and resupply constraints.",
+      "confirmedTargets": [
+        "Lake trout",
+        "Northern pike"
+      ],
+      "seasonalEvidence": "Manitoba’s 2026 guide describes the Northeast Division as generally open all year, with species closures and local exceptions. Confirm Nueltin’s rules, the operator’s season and local ice conditions before choosing travel dates.",
       "accessToVerify": "Fly-in, boat transfer or multiday expedition",
       "tackleDecision": "Select the target-specific module first; inventory what the lodge actually supplies",
       "operatorQuestion": "Rod transport, specialist tackle, camp equipment and communications",
@@ -17863,13 +17876,20 @@
       "location": "Gouin Reservoir",
       "url": "/north-america/canada/quebec/gouin-reservoir-remote-lodge-and-expedition/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
-      "sourceIds": [],
+      "indexEligible": true,
+      "sourceIds": [
+        "species-bcc35d429dd6",
+        "species-0de28f1f2fb1",
+        "species-e7e85b57ac7f"
+      ],
       "evidenceDepth": "Production brief; local fishery claims not yet verified",
       "localDecision": "Choose an outfitter base and research navigation, resupply and shared camp equipment.",
       "candidateTargets": "Walleye / northern pike candidates",
-      "confirmedTargets": [],
-      "seasonalEvidence": "Dates have not been verified for this opportunity. Before choosing travel dates, resolve: Operating program dates, water levels, transfers and resupply constraints.",
+      "confirmedTargets": [
+        "Walleye",
+        "Northern pike"
+      ],
+      "seasonalEvidence": "AFC Gouin lists May 15–September 20 for the summer season and February 1–March 31 for winter fishing. Protected spawning areas open May 25 and remain closed in winter. Recheck the current provincial exceptions for your exact water before travel.",
       "accessToVerify": "Fly-in, boat transfer or multiday expedition",
       "tackleDecision": "Select the target-specific module first; inventory what the lodge actually supplies",
       "operatorQuestion": "Rod transport, specialist tackle, camp equipment and communications",

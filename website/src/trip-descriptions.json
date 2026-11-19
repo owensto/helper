@@ -2402,6 +2402,158 @@
         "https://www.saskatchewan.ca/residents/parks-culture-heritage-and-sport/hunting-trapping-and-angling/angling/season-dates-and-limits"
       ],
       "season": "For a boat-based visit, confirm ice-out, the transfer schedule and the camp’s actual operating dates. Check Saskatchewan’s current season calendar and the special rules for your chosen area. A legal open season does not establish that a flight, boat transfer or lodge is operating on your travel date."
+    },
+    "na-ca-sk-008": {
+      "place": "Athabasca Lake / Saskatchewan base",
+      "reviewed": "2026-11-19",
+      "paragraphs": [
+        "Lake Athabasca straddles Saskatchewan and Alberta, with most of its water on the Saskatchewan side. Lake trout and northern pike are both documented here. Choose your base and target fish together: a broad lake name is not enough to settle the boat route, transfer or rules for your day.",
+        "The south shore includes Athabasca Sand Dunes Provincial Park. Treat a visit to the dunes as a separate part of the itinerary, rather than an automatic stop on a fishing day. Ask where your boat will depart and which shoreline or islands the planned route uses. A map pin near the lake centre can send you toward the wrong access point.",
+        "Keep the provincial boundary in your plan. This page concerns a Saskatchewan base; do not assume its licence covers a move into Alberta waters. Confirm the return route, weather alternative and tackle before travel. Use the current Saskatchewan season calendar and named-water restrictions for the actual fishing area."
+      ],
+      "sourceUrls": [
+        "https://sasklakes.ca/lake-athabasca/",
+        "https://www.saskatchewan.ca/residents/parks-culture-heritage-and-sport/hunting-trapping-and-angling/angling/season-dates-and-limits",
+        "https://www.saskatchewan.ca/residents/parks-culture-heritage-and-sport/hunting-trapping-and-angling/angling/management-zones-and-special-regulations"
+      ],
+      "season": "Plan open-water travel around confirmed local ice-out and transport. Check the Northern Zone season and any named-water exceptions in Saskatchewan’s current guide. A legal season does not establish that your boat route is open.",
+      "facts": [
+        [
+          "Targets",
+          "Lake trout and northern pike"
+        ],
+        [
+          "Jurisdiction",
+          "Saskatchewan side of Lake Athabasca"
+        ],
+        [
+          "Next check",
+          "Exact base, route and provincial boundary"
+        ]
+      ],
+      "faq": [
+        [
+          "Which fish are documented in Lake Athabasca?",
+          "SaskLakes lists lake trout and northern pike among the lake’s fish."
+        ],
+        [
+          "Is all of Lake Athabasca in Saskatchewan?",
+          "No. The lake crosses the Saskatchewan–Alberta boundary."
+        ],
+        [
+          "Does this trip cover Alberta rules?",
+          "No. This page concerns a Saskatchewan base. Check Alberta requirements if your route crosses the boundary."
+        ],
+        [
+          "Can I use the centre of the lake as an arrival point?",
+          "Use the confirmed departure point instead. A general map pin does not identify your boat transfer."
+        ],
+        [
+          "Where do I check the fishing season?",
+          "Use Saskatchewan’s current Northern Zone calendar together with the named-water exceptions."
+        ]
+      ]
+    },
+    "na-ca-mb-009": {
+      "place": "Nueltin Lake / Manitoba base",
+      "reviewed": "2026-11-19",
+      "paragraphs": [
+        "Nueltin Lake offers lake trout and northern pike in a remote landscape where boreal forest meets tundra. Its southern third lies in Manitoba; the rest extends into Nunavut. Start with the exact base and fishing area, because crossing that boundary changes the jurisdiction you must check.",
+        "Manitoba describes a lake with many islands and a varied shoreline. Nueltin Lake Provincial Park has no visitor facilities on park land, while a lodge occupies an area outside the park designation. A lodge stay and a self-supported park trip therefore need different plans. Confirm the transfer, accommodation and supplied equipment before you pack for a fly-in visit.",
+        "For the Manitoba fishery, non-residents of Manitoba must stay with a licensed tourist operator that has an allocation and obtain its special angling licence. Confirm that requirement before arranging travel. The provincial guide also lists Nueltin among waters that require single barbless hooks. Carry the current guide and check the rules for your target species."
+      ],
+      "sourceUrls": [
+        "https://www.gov.mb.ca/sd/parks/park-maps-and-locations/northeast/nueltin_lake.html",
+        "https://www.gov.mb.ca/nrnd/fish-wildlife/pubs/fish_wildlife/fish/angling-guide.pdf"
+      ],
+      "season": "Manitoba’s 2026 guide describes the Northeast Division as generally open all year, with species closures and local exceptions. Confirm Nueltin’s rules, the operator’s season and local ice conditions before choosing travel dates.",
+      "facts": [
+        [
+          "Targets",
+          "Lake trout and northern pike"
+        ],
+        [
+          "Location",
+          "Manitoba’s southern portion of Nueltin Lake"
+        ],
+        [
+          "Visitor requirement",
+          "Special angling licence through an allocated tourist operator"
+        ]
+      ],
+      "faq": [
+        [
+          "Which fish can I plan for at Nueltin Lake?",
+          "Manitoba’s park page identifies lake trout and northern pike."
+        ],
+        [
+          "Does Nueltin Lake cross a border?",
+          "Yes. The southern third is in Manitoba; the remainder lies in Nunavut."
+        ],
+        [
+          "Do visitors need a special angling licence?",
+          "Manitoba’s guide requires non-residents of Manitoba to stay with an allocated licensed tourist operator and obtain its special angling licence."
+        ],
+        [
+          "Are there facilities inside Nueltin Lake Provincial Park?",
+          "Manitoba states that park land has no facilities. The lodge area is outside the park designation."
+        ],
+        [
+          "What hook rule applies to the Manitoba water?",
+          "The 2026 Manitoba guide includes Nueltin among waters that require single barbless hooks. Check the current guide before departure."
+        ]
+      ]
+    },
+    "na-ca-qc-007": {
+      "place": "Gouin Reservoir",
+      "reviewed": "2026-11-19",
+      "paragraphs": [
+        "Gouin Reservoir is a Quebec walleye and northern pike destination with rules that depend on the part of the reservoir you fish. Start with the named bay or lake, then check the Gouin community wildlife area map. Protected spawning areas do not share every opening date with the wider reservoir.",
+        "The local authority identifies walleye as Sander vitreus and northern pike as Esox lucius. Those names help when you read French rule sheets: doré jaune means walleye, while grand brochet means northern pike. Keep the two targets separate in your plan, because their size and possession rules differ. Check how a retained walleye must remain identifiable during transport.",
+        "Before the trip, compare the local rule sheet with Quebec’s current Zone 14 exceptions. The provincial rules take precedence if the sources differ. Mark your departure point and intended fishing area on the same map. That gives you a useful question for your host: which protected areas or seasonal boundaries affect this route?"
+      ],
+      "sourceUrls": [
+        "https://www.afcgouin.ca/reglementation/",
+        "https://www.afcgouin.ca/periodes-de-peche/",
+        "https://www.quebec.ca/en/tourism-recreation-sport/sporting-and-outdoor-activities/sport-fishing/zones-periods/particular-rules/zone-14"
+      ],
+      "season": "AFC Gouin lists May 15–September 20 for the summer season and February 1–March 31 for winter fishing. Protected spawning areas open May 25 and remain closed in winter. Recheck the current provincial exceptions for your exact water before travel.",
+      "facts": [
+        [
+          "Walleye name",
+          "Doré jaune — Sander vitreus"
+        ],
+        [
+          "Northern pike name",
+          "Grand brochet — Esox lucius"
+        ],
+        [
+          "Rule check",
+          "Zone 14 and Gouin named-water exceptions"
+        ]
+      ],
+      "faq": [
+        [
+          "Which fish are the main targets here?",
+          "AFC Gouin provides reservoir rules for walleye and northern pike."
+        ],
+        [
+          "What does doré jaune mean?",
+          "It is the French name for walleye, Sander vitreus."
+        ],
+        [
+          "Do all parts of Gouin open on the same date?",
+          "No. Protected spawning areas have a later summer opening and remain closed during winter."
+        ],
+        [
+          "Which source takes precedence if rules differ?",
+          "AFC Gouin states that the provincial regulations take precedence over its own summary."
+        ],
+        [
+          "Can I assume the general Zone 14 dates apply?",
+          "No. Quebec directs anglers to check water-specific exceptions. Find your named bay or lake in the Gouin entries."
+        ]
+      ]
     }
   }
 }

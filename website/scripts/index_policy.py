@@ -95,10 +95,16 @@ def install(pages, trips, origin, dist):
         local = trip.get('localDescription')
         if local:
             module = '<section class="wrap prose-block" id="local-water-description"><h2>About this water</h2>'
+            module += '<p class="small">Updated ' + escape(local['reviewed']) + '</p>'
             module += ''.join('<p>' + escape(p) + '</p>' for p in local['paragraphs'])
-            module += '<p class="small">Fishery references: ' + ' · '.join(
+            if local.get('facts'):
+                module += '<h3>What should you check before the trip?</h3><dl>' + ''.join('<dt>' + escape(k) + '</dt><dd>' + escape(v) + '</dd>' for k, v in local['facts']) + '</dl>'
+            if local.get('faq'):
+                module += ''.join('<details><summary>' + escape(q) + '</summary><p>' + escape(a) + '</p></details>' for q, a in local['faq'])
+                module += '<script type="application/ld+json">' + json.dumps({'@context': 'https://schema.org', '@type': 'FAQPage', 'mainEntity': [{'@type': 'Question', 'name': q, 'acceptedAnswer': {'@type': 'Answer', 'text': a}} for q, a in local['faq']]}).replace('</', '<\\/') + '</script>'
+            module += '<details><summary>Sources (' + str(len(local['sourceUrls'])) + ')</summary><p class="small">' + ' · '.join(
                 '<a href="' + escape(u, quote=True) + '">Source ' + str(i) + '</a>'
-                for i, u in enumerate(local['sourceUrls'], 1)) + '</p></section>'
+                for i, u in enumerate(local['sourceUrls'], 1)) + '</p></details></section>'
             marker = '<section class="wrap profile-species"'
             assert marker in page['body'], trip['id']
             page['body'] = page['body'].replace(marker, module + marker, 1)

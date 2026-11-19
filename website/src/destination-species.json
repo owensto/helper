@@ -28866,7 +28866,42 @@
       "state": "Saskatchewan",
       "region": "North America",
       "status": "unverified",
-      "targets": [],
+      "targets": [
+        {
+          "speciesId": "lake-trout",
+          "commonName": "Lake trout",
+          "sourceUrls": [
+            "https://sasklakes.ca/lake-athabasca/",
+            "https://www.saskatchewan.ca/residents/parks-culture-heritage-and-sport/hunting-trapping-and-angling/angling/season-dates-and-limits",
+            "https://www.saskatchewan.ca/residents/parks-culture-heritage-and-sport/hunting-trapping-and-angling/angling/management-zones-and-special-regulations"
+          ],
+          "scopeNotes": [
+            "The linked lake source identifies this species in this water. Rule sources apply to the stated jurisdiction."
+          ],
+          "status": "reviewed-source",
+          "seasons": [],
+          "seasonStatus": "unverified",
+          "methods": [],
+          "methodStatus": "unverified"
+        },
+        {
+          "speciesId": "northern-pike",
+          "commonName": "Northern pike",
+          "sourceUrls": [
+            "https://sasklakes.ca/lake-athabasca/",
+            "https://www.saskatchewan.ca/residents/parks-culture-heritage-and-sport/hunting-trapping-and-angling/angling/season-dates-and-limits",
+            "https://www.saskatchewan.ca/residents/parks-culture-heritage-and-sport/hunting-trapping-and-angling/angling/management-zones-and-special-regulations"
+          ],
+          "scopeNotes": [
+            "The linked lake source identifies this species in this water. Rule sources apply to the stated jurisdiction."
+          ],
+          "status": "reviewed-source",
+          "seasons": [],
+          "seasonStatus": "unverified",
+          "methods": [],
+          "methodStatus": "unverified"
+        }
+      ],
       "seasons": [],
       "seasonStatus": "unverified",
       "methods": [],
@@ -29638,7 +29673,40 @@
       "state": "Manitoba",
       "region": "North America",
       "status": "unverified",
-      "targets": [],
+      "targets": [
+        {
+          "speciesId": "lake-trout",
+          "commonName": "Lake trout",
+          "sourceUrls": [
+            "https://www.gov.mb.ca/sd/parks/park-maps-and-locations/northeast/nueltin_lake.html",
+            "https://www.gov.mb.ca/nrnd/fish-wildlife/pubs/fish_wildlife/fish/angling-guide.pdf"
+          ],
+          "scopeNotes": [
+            "The linked lake source identifies this species in this water. Rule sources apply to the stated jurisdiction."
+          ],
+          "status": "reviewed-source",
+          "seasons": [],
+          "seasonStatus": "unverified",
+          "methods": [],
+          "methodStatus": "unverified"
+        },
+        {
+          "speciesId": "northern-pike",
+          "commonName": "Northern pike",
+          "sourceUrls": [
+            "https://www.gov.mb.ca/sd/parks/park-maps-and-locations/northeast/nueltin_lake.html",
+            "https://www.gov.mb.ca/nrnd/fish-wildlife/pubs/fish_wildlife/fish/angling-guide.pdf"
+          ],
+          "scopeNotes": [
+            "The linked lake source identifies this species in this water. Rule sources apply to the stated jurisdiction."
+          ],
+          "status": "reviewed-source",
+          "seasons": [],
+          "seasonStatus": "unverified",
+          "methods": [],
+          "methodStatus": "unverified"
+        }
+      ],
       "seasons": [],
       "seasonStatus": "unverified",
       "methods": [],
@@ -31872,7 +31940,42 @@
       "state": "Quebec",
       "region": "North America",
       "status": "unverified",
-      "targets": [],
+      "targets": [
+        {
+          "speciesId": "walleye",
+          "commonName": "Walleye",
+          "sourceUrls": [
+            "https://www.afcgouin.ca/reglementation/",
+            "https://www.afcgouin.ca/periodes-de-peche/",
+            "https://www.quebec.ca/en/tourism-recreation-sport/sporting-and-outdoor-activities/sport-fishing/zones-periods/particular-rules/zone-14"
+          ],
+          "scopeNotes": [
+            "AFC Gouin identifies the fish and its reservoir rules."
+          ],
+          "status": "reviewed-source",
+          "seasons": [],
+          "seasonStatus": "unverified",
+          "methods": [],
+          "methodStatus": "unverified"
+        },
+        {
+          "speciesId": "northern-pike",
+          "commonName": "Northern pike",
+          "sourceUrls": [
+            "https://www.afcgouin.ca/reglementation/",
+            "https://www.afcgouin.ca/periodes-de-peche/",
+            "https://www.quebec.ca/en/tourism-recreation-sport/sporting-and-outdoor-activities/sport-fishing/zones-periods/particular-rules/zone-14"
+          ],
+          "scopeNotes": [
+            "AFC Gouin identifies the fish and its reservoir rules."
+          ],
+          "status": "reviewed-source",
+          "seasons": [],
+          "seasonStatus": "unverified",
+          "methods": [],
+          "methodStatus": "unverified"
+        }
+      ],
       "seasons": [],
       "seasonStatus": "unverified",
       "methods": [],

@@ -112,7 +112,7 @@ def install(pages, root, add, trips, data):
             body += '<div class="wrap field-reference"><p class="small">Updated ' + E(answer['updated']) + ' · ' + link('/about/', 'Castward') + '</p>'
             body += '<section><h2>' + E(answer['question']) + '</h2><div class="field-table-scroll" role="region" tabindex="0" aria-label="Species key facts"><table><thead><tr><th scope="col">Key fact</th><th scope="col">Detail</th></tr></thead><tbody>'
             body += ''.join('<tr><th scope="row">' + E(k) + '</th><td>' + E(v) + '</td></tr>' for k, v in answer['facts']) + '</tbody></table></div></section>'
-            body += '<section><h2>What else should you know?</h2>' + ''.join('<details><summary>' + E(q) + '</summary><p>' + E(a) + '</p></details>' for q, a in answer['faq']) + '</section>'
+            body += '<section><h2>What should you know about ' + E(s['name'].lower()) + '?</h2>' + ''.join('<details><summary>' + E(q) + '</summary><p>' + E(a) + '</p></details>' for q, a in answer['faq']) + '</section>'
             body += '<details><summary>Sources (' + str(len(answer['sources'])) + ')</summary><ul>' + ''.join('<li>' + link(u, label) + '</li>' for label, u in answer['sources']) + '</ul><p class="small">Checked November 2026</p></details></div>'
             schema = {'@context': 'https://schema.org', '@graph': [
                 {'@type': 'Article', 'headline': answer['title'], 'dateModified': answer['updated'], 'author': {'@type': 'Organization', 'name': 'Castward', 'url': 'https://castward.app/about/'}, 'citation': [u for _, u in answer['sources']]},

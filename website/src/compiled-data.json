@@ -3463,6 +3463,10 @@
       "label": "Fishery source for Wollaston Lake",
       "url": "https://sasklakes.ca/wollaston-lake/"
     },
+    "world-species-66cff5865bb1": {
+      "label": "Fishery source for Athabasca Lake / Saskatchewan base",
+      "url": "https://sasklakes.ca/lake-athabasca/"
+    },
     "world-species-e50d6e8303c3": {
       "label": "Fishery source for Red River / Lockport",
       "url": "https://www.gov.mb.ca/nrnd/fish-wildlife/pubs/fish_wildlife/2024_anglers_guide.pdf"
@@ -3482,6 +3486,10 @@
     "world-species-6b27c269d331": {
       "label": "Fishery source for Lake of the Prairies",
       "url": "https://www.gov.mb.ca/nrnd/fish-wildlife/pubs/fish_wildlife/fish/angling-guide.pdf"
+    },
+    "world-species-d0bdb57fcd82": {
+      "label": "Fishery source for Nueltin Lake / Manitoba base",
+      "url": "https://www.gov.mb.ca/sd/parks/park-maps-and-locations/northeast/nueltin_lake.html"
     },
     "world-species-5b9fd2f3f321": {
       "label": "Fishery source for Lake Nipissing",
@@ -3534,6 +3542,18 @@
     "world-species-da83bafdc428": {
       "label": "Fishery source for Lac Saint-Jean",
       "url": "https://www.quebec.ca/en/tourism-recreation-sport/sporting-and-outdoor-activities/sport-fishing/news"
+    },
+    "world-species-bcc35d429dd6": {
+      "label": "Fishery source for Gouin Reservoir",
+      "url": "https://www.afcgouin.ca/reglementation/"
+    },
+    "world-species-0de28f1f2fb1": {
+      "label": "Fishery source for Gouin Reservoir",
+      "url": "https://www.afcgouin.ca/periodes-de-peche/"
+    },
+    "world-species-e7e85b57ac7f": {
+      "label": "Fishery source for Gouin Reservoir",
+      "url": "https://www.quebec.ca/en/tourism-recreation-sport/sporting-and-outdoor-activities/sport-fishing/zones-periods/particular-rules/zone-14"
     },
     "world-species-18290baed370": {
       "label": "Fishery source for Cabonga Reservoir",
@@ -45435,9 +45455,12 @@
     },
     {
       "id": "na-ca-sk-008",
-      "name": "Lake Athabasca",
+      "name": "Lake Athabasca Fishing",
       "region": "Canada",
-      "species": [],
+      "species": [
+        "Lake trout",
+        "Northern pike"
+      ],
       "styles": [
         "guidedboat"
       ],
@@ -45446,7 +45469,7 @@
       "tripProfile": "na-ca-sk-008",
       "technicalGear": true,
       "guideUrl": "/north-america/canada/saskatchewan/athabasca-lake-saskatchewan-base-remote-lodge-and-expedition/",
-      "seasonNote": "Dates have not been verified for this opportunity. Before choosing travel dates, resolve: Operating program dates, water levels, transfers and resupply constraints.",
+      "seasonNote": "Plan open-water travel around confirmed local ice-out and transport. Check the Northern Zone season and any named-water exceptions in Saskatchewan’s current guide. A legal season does not establish that your boat route is open.",
       "seasonWindows": [],
       "tripTypeIds": [],
       "tripStyleIds": [
@@ -45455,9 +45478,9 @@
         "river-fishing"
       ],
       "operator": {
-        "name": "Open research and trip questions",
-        "type": "Research pending",
-        "url": "/production/north-america/",
+        "name": "Fishery source for Athabasca Lake / Saskatchewan base",
+        "type": "Research source",
+        "url": "https://sasklakes.ca/lake-athabasca/",
         "note": "A research resource, not a booked trip or Atlas operator partnership. Confirm all inclusions and availability independently."
       },
       "coordinates": [
@@ -45466,8 +45489,46 @@
       ],
       "locationPrecision": "place-area",
       "locationSource": "https://www.openstreetmap.org/relation/2791738",
-      "speciesIds": [],
-      "speciesEvidence": [],
+      "speciesIds": [
+        "lake-trout",
+        "northern-pike"
+      ],
+      "speciesEvidence": [
+        {
+          "speciesId": "lake-trout",
+          "commonName": "Lake trout",
+          "sourceUrls": [
+            "https://sasklakes.ca/lake-athabasca/",
+            "https://www.saskatchewan.ca/residents/parks-culture-heritage-and-sport/hunting-trapping-and-angling/angling/season-dates-and-limits",
+            "https://www.saskatchewan.ca/residents/parks-culture-heritage-and-sport/hunting-trapping-and-angling/angling/management-zones-and-special-regulations"
+          ],
+          "scopeNotes": [
+            "The linked lake source identifies this species in this water. Rule sources apply to the stated jurisdiction."
+          ],
+          "status": "reviewed-source",
+          "seasons": [],
+          "seasonStatus": "unverified",
+          "methods": [],
+          "methodStatus": "unverified"
+        },
+        {
+          "speciesId": "northern-pike",
+          "commonName": "Northern pike",
+          "sourceUrls": [
+            "https://sasklakes.ca/lake-athabasca/",
+            "https://www.saskatchewan.ca/residents/parks-culture-heritage-and-sport/hunting-trapping-and-angling/angling/season-dates-and-limits",
+            "https://www.saskatchewan.ca/residents/parks-culture-heritage-and-sport/hunting-trapping-and-angling/angling/management-zones-and-special-regulations"
+          ],
+          "scopeNotes": [
+            "The linked lake source identifies this species in this water. Rule sources apply to the stated jurisdiction."
+          ],
+          "status": "reviewed-source",
+          "seasons": [],
+          "seasonStatus": "unverified",
+          "methods": [],
+          "methodStatus": "unverified"
+        }
+      ],
       "speciesReview": {
         "status": "unverified",
         "reviewed": "2026-11-10",
@@ -46456,9 +46517,12 @@
     },
     {
       "id": "na-ca-mb-009",
-      "name": "Nueltin Lake",
+      "name": "Nueltin Lake Fishing",
       "region": "Canada",
-      "species": [],
+      "species": [
+        "Lake trout",
+        "Northern pike"
+      ],
       "styles": [
         "guidedboat"
       ],
@@ -46467,7 +46531,7 @@
       "tripProfile": "na-ca-mb-009",
       "technicalGear": true,
       "guideUrl": "/north-america/canada/manitoba/nueltin-lake-manitoba-base-remote-lodge-and-expedition/",
-      "seasonNote": "Dates have not been verified for this opportunity. Before choosing travel dates, resolve: Operating program dates, water levels, transfers and resupply constraints.",
+      "seasonNote": "Manitoba’s 2026 guide describes the Northeast Division as generally open all year, with species closures and local exceptions. Confirm Nueltin’s rules, the operator’s season and local ice conditions before choosing travel dates.",
       "seasonWindows": [],
       "tripTypeIds": [],
       "tripStyleIds": [
@@ -46476,9 +46540,9 @@
         "river-fishing"
       ],
       "operator": {
-        "name": "Open research and trip questions",
-        "type": "Research pending",
-        "url": "/production/north-america/",
+        "name": "Fishery source for Nueltin Lake / Manitoba base",
+        "type": "Research source",
+        "url": "https://www.gov.mb.ca/sd/parks/park-maps-and-locations/northeast/nueltin_lake.html",
         "note": "A research resource, not a booked trip or Atlas operator partnership. Confirm all inclusions and availability independently."
       },
       "coordinates": [
@@ -46487,8 +46551,44 @@
       ],
       "locationPrecision": "place-area",
       "locationSource": "https://www.openstreetmap.org/relation/17430754",
-      "speciesIds": [],
-      "speciesEvidence": [],
+      "speciesIds": [
+        "lake-trout",
+        "northern-pike"
+      ],
+      "speciesEvidence": [
+        {
+          "speciesId": "lake-trout",
+          "commonName": "Lake trout",
+          "sourceUrls": [
+            "https://www.gov.mb.ca/sd/parks/park-maps-and-locations/northeast/nueltin_lake.html",
+            "https://www.gov.mb.ca/nrnd/fish-wildlife/pubs/fish_wildlife/fish/angling-guide.pdf"
+          ],
+          "scopeNotes": [
+            "The linked lake source identifies this species in this water. Rule sources apply to the stated jurisdiction."
+          ],
+          "status": "reviewed-source",
+          "seasons": [],
+          "seasonStatus": "unverified",
+          "methods": [],
+          "methodStatus": "unverified"
+        },
+        {
+          "speciesId": "northern-pike",
+          "commonName": "Northern pike",
+          "sourceUrls": [
+            "https://www.gov.mb.ca/sd/parks/park-maps-and-locations/northeast/nueltin_lake.html",
+            "https://www.gov.mb.ca/nrnd/fish-wildlife/pubs/fish_wildlife/fish/angling-guide.pdf"
+          ],
+          "scopeNotes": [
+            "The linked lake source identifies this species in this water. Rule sources apply to the stated jurisdiction."
+          ],
+          "status": "reviewed-source",
+          "seasons": [],
+          "seasonStatus": "unverified",
+          "methods": [],
+          "methodStatus": "unverified"
+        }
+      ],
       "speciesReview": {
         "status": "unverified",
         "reviewed": "2026-11-10",
@@ -49422,9 +49522,12 @@
     },
     {
       "id": "na-ca-qc-007",
-      "name": "Gouin Reservoir",
+      "name": "Gouin Reservoir Fishing",
       "region": "Canada",
-      "species": [],
+      "species": [
+        "Walleye",
+        "Northern pike"
+      ],
       "styles": [
         "guidedboat"
       ],
@@ -49433,7 +49536,7 @@
       "tripProfile": "na-ca-qc-007",
       "technicalGear": true,
       "guideUrl": "/north-america/canada/quebec/gouin-reservoir-remote-lodge-and-expedition/",
-      "seasonNote": "Dates have not been verified for this opportunity. Before choosing travel dates, resolve: Operating program dates, water levels, transfers and resupply constraints.",
+      "seasonNote": "AFC Gouin lists May 15–September 20 for the summer season and February 1–March 31 for winter fishing. Protected spawning areas open May 25 and remain closed in winter. Recheck the current provincial exceptions for your exact water before travel.",
       "seasonWindows": [],
       "tripTypeIds": [],
       "tripStyleIds": [
@@ -49442,9 +49545,9 @@
         "river-fishing"
       ],
       "operator": {
-        "name": "Open research and trip questions",
-        "type": "Research pending",
-        "url": "/production/north-america/",
+        "name": "Fishery source for Gouin Reservoir",
+        "type": "Research source",
+        "url": "https://www.afcgouin.ca/reglementation/",
         "note": "A research resource, not a booked trip or Atlas operator partnership. Confirm all inclusions and availability independently."
       },
       "coordinates": [
@@ -49453,8 +49556,46 @@
       ],
       "locationPrecision": "place-area",
       "locationSource": "https://www.openstreetmap.org/relation/6365824",
-      "speciesIds": [],
-      "speciesEvidence": [],
+      "speciesIds": [
+        "walleye",
+        "northern-pike"
+      ],
+      "speciesEvidence": [
+        {
+          "speciesId": "walleye",
+          "commonName": "Walleye",
+          "sourceUrls": [
+            "https://www.afcgouin.ca/reglementation/",
+            "https://www.afcgouin.ca/periodes-de-peche/",
+            "https://www.quebec.ca/en/tourism-recreation-sport/sporting-and-outdoor-activities/sport-fishing/zones-periods/particular-rules/zone-14"
+          ],
+          "scopeNotes": [
+            "AFC Gouin identifies the fish and its reservoir rules."
+          ],
+          "status": "reviewed-source",
+          "seasons": [],
+          "seasonStatus": "unverified",
+          "methods": [],
+          "methodStatus": "unverified"
+        },
+        {
+          "speciesId": "northern-pike",
+          "commonName": "Northern pike",
+          "sourceUrls": [
+            "https://www.afcgouin.ca/reglementation/",
+            "https://www.afcgouin.ca/periodes-de-peche/",
+            "https://www.quebec.ca/en/tourism-recreation-sport/sporting-and-outdoor-activities/sport-fishing/zones-periods/particular-rules/zone-14"
+          ],
+          "scopeNotes": [
+            "AFC Gouin identifies the fish and its reservoir rules."
+          ],
+          "status": "reviewed-source",
+          "seasons": [],
+          "seasonStatus": "unverified",
+          "methods": [],
+          "methodStatus": "unverified"
+        }
+      ],
       "speciesReview": {
         "status": "unverified",
         "reviewed": "2026-11-10",
@@ -144498,7 +144639,7 @@
       },
       {
         "id": "na-ca-sk-008",
-        "title": "Lake Athabasca: Remote Fishing from Saskatchewan",
+        "title": "Lake Athabasca Fishing: Trout and Pike from Saskatchewan",
         "place": "Athabasca Lake / Saskatchewan base",
         "country": "Canada",
         "region": "North America",
@@ -144506,7 +144647,10 @@
         "subregion": "Prairie Canada",
         "canonicalPath": "/north-america/canada/saskatchewan/athabasca-lake-saskatchewan-base-remote-lodge-and-expedition/",
         "contentTier": "preparation-brief",
-        "fish": [],
+        "fish": [
+          "Lake trout",
+          "Northern pike"
+        ],
         "candidateTargets": "Lake trout / northern pike candidates",
         "tripTypeIds": [],
         "tripTypeNames": [],
@@ -144691,7 +144835,7 @@
       },
       {
         "id": "na-ca-mb-009",
-        "title": "Nueltin Lake: A Remote Fishing Trip from Manitoba",
+        "title": "Nueltin Lake Fishing: Manitoba Trout and Pike Trip",
         "place": "Nueltin Lake / Manitoba base",
         "country": "Canada",
         "region": "North America",
@@ -144699,7 +144843,10 @@
         "subregion": "Prairie Canada",
         "canonicalPath": "/north-america/canada/manitoba/nueltin-lake-manitoba-base-remote-lodge-and-expedition/",
         "contentTier": "preparation-brief",
-        "fish": [],
+        "fish": [
+          "Lake trout",
+          "Northern pike"
+        ],
         "candidateTargets": "Northern pike / lake trout candidates",
         "tripTypeIds": [],
         "tripTypeNames": [],
@@ -145241,7 +145388,7 @@
       },
       {
         "id": "na-ca-qc-007",
-        "title": "Gouin Reservoir: A Quebec Fishing Camp Getaway",
+        "title": "Gouin Reservoir Fishing: Walleye and Northern Pike",
         "place": "Gouin Reservoir",
         "country": "Canada",
         "region": "North America",
@@ -145249,7 +145396,10 @@
         "subregion": "Central Canada",
         "canonicalPath": "/north-america/canada/quebec/gouin-reservoir-remote-lodge-and-expedition/",
         "contentTier": "preparation-brief",
-        "fish": [],
+        "fish": [
+          "Walleye",
+          "Northern pike"
+        ],
         "candidateTargets": "Walleye / northern pike candidates",
         "tripTypeIds": [],
         "tripTypeNames": [],
