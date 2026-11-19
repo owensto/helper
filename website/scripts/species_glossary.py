@@ -106,6 +106,19 @@ def install(pages, root, add, trips, data):
 
     for s in species:
         body = heading('Species / ' + s['name'], s['name'], s['scientificName'] or 'A broad fishing name. Confirm the exact species before the trip.')
+        answer = s.get('searchAnswer')
+        if answer:
+            body = heading('Species / ' + s['name'], answer['title'], answer['answer'])
+            body += '<div class="wrap field-reference"><p class="small">Updated ' + E(answer['updated']) + ' · ' + link('/about/', 'Castward') + '</p>'
+            body += '<section><h2>' + E(answer['question']) + '</h2><div class="field-table-scroll" role="region" tabindex="0" aria-label="Species key facts"><table><thead><tr><th scope="col">Key fact</th><th scope="col">Detail</th></tr></thead><tbody>'
+            body += ''.join('<tr><th scope="row">' + E(k) + '</th><td>' + E(v) + '</td></tr>' for k, v in answer['facts']) + '</tbody></table></div></section>'
+            body += '<section><h2>What else should you know?</h2>' + ''.join('<details><summary>' + E(q) + '</summary><p>' + E(a) + '</p></details>' for q, a in answer['faq']) + '</section>'
+            body += '<details><summary>Sources (' + str(len(answer['sources'])) + ')</summary><ul>' + ''.join('<li>' + link(u, label) + '</li>' for label, u in answer['sources']) + '</ul><p class="small">Checked November 2026</p></details></div>'
+            schema = {'@context': 'https://schema.org', '@graph': [
+                {'@type': 'Article', 'headline': answer['title'], 'dateModified': answer['updated'], 'author': {'@type': 'Organization', 'name': 'Castward', 'url': 'https://castward.app/about/'}, 'citation': [u for _, u in answer['sources']]},
+                {'@type': 'FAQPage', 'mainEntity': [{'@type': 'Question', 'name': q, 'acceptedAnswer': {'@type': 'Answer', 'text': a}} for q, a in answer['faq']]}
+            ]}
+            body += '<script type="application/ld+json">' + json.dumps(schema).replace('</', '<\\/') + '</script>'
         if s['id'] == 'cachama':
             body = heading('Species / Cachama', 'Cachama fish (Colossoma macropomum): tambaqui', 'Cachama is Colossoma macropomum, also known as tambaqui, black pacu and gamitana. This freshwater fish comes from the Amazon and Orinoco river basins in South America. Use its scientific name when you compare regional names: a shared common name does not mean every fish or fishing destination is the same.')
             body += '<div class="wrap"><p class="small">Updated November 18, 2026 · ' + link('https://www.fws.gov/sites/default/files/documents/Ecological-Risk-Screening-Summary-Tambaqui.pdf', 'U.S. Fish and Wildlife Service: tambaqui') + '</p></div>'
@@ -170,6 +183,8 @@ def install(pages, root, add, trips, data):
             body += '<details><summary>Country occurrence records</summary><p>' + E(' · '.join(s['regions'])) + '</p><p class="small">A country record does not establish local abundance, fishing access or a legal target.</p></details>'
         body += source_links(s['sourceUrls']) + '</section></article><aside class="field-aside"><span class="eyebrow">KNOW THE WORDS</span><h2>Local fishing language.</h2><p>Connect the fish to its regional names, methods and equipment.</p>' + link('/glossary/?q=' + s['id'], 'Search the glossary', 'btn outline') + '<p>' + link('/species/', 'All fish species') + '</p></aside></div>' + assets
         add(species_url(s['id']), s['name'] + ' fishing, local names and destinations | Castward', 'Find ' + s['name'].lower() + ' names, source-linked destinations, seasonal evidence and official fisheries links.', body, 'species-detail')
+        if answer:
+            pages[species_url(s['id'])].update(title=answer['title'], desc=answer['description'], modified=answer['updated'])
         if s['id'] == 'cachama':
             pages[species_url(s['id'])].update(title='Cachama fish (Colossoma macropomum): tambaqui', desc='Cachama is Colossoma macropomum, also called tambaqui, black pacu or gamitana. Check its native river basins, regional names and linked destinations.', modified='2026-11-18')
         if s['id'] == 'largemouth-bass':

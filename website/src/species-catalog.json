@@ -84609,7 +84609,64 @@
           "note": "Find the national fisheries law and responsible agency. Local fishing rules remain unverified."
         }
       ],
-      "referenceRole": "game fish"
+      "referenceRole": "game fish",
+      "searchAnswer": {
+        "title": "European flounder (Platichthys flesus): ID and habitat",
+        "description": "Identify European flounder by its rough fin edges and mottled upper side. See its coastal, estuary and freshwater habitats with Irish fisheries sources.",
+        "answer": "European flounder (Platichthys flesus) is a flatfish of European coasts and estuaries. Young fish can move upriver into freshwater. Look for a mottled brown or green-grey upper side, a white underside and small rough prickles along the fin bases. These features help distinguish it from other flatfish.",
+        "question": "How do you identify a European flounder?",
+        "facts": [
+          [
+            "Scientific name",
+            "Platichthys flesus"
+          ],
+          [
+            "Identification",
+            "Rough prickles along the dorsal and anal fin bases"
+          ],
+          [
+            "Habitat",
+            "Coastal sand and mud, estuaries and lower rivers"
+          ],
+          [
+            "Length",
+            "Up to 50 cm in the MarLIN profile"
+          ]
+        ],
+        "faq": [
+          [
+            "Can European flounder live in freshwater?",
+            "Yes. Inland Fisheries Ireland describes young flounder upstream of the tidal limit, in lower rivers and sometimes lakes."
+          ],
+          [
+            "Are both eyes always on the right side?",
+            "No. MarLIN records left-eyed individuals too. Use the body and fin-edge features as well."
+          ],
+          [
+            "How big does a European flounder get?",
+            "MarLIN gives a length of up to 50 cm. This is a species description, not a local catch record."
+          ],
+          [
+            "Where do European flounder feed?",
+            "Inland Fisheries Ireland describes sandy and muddy areas, with feeding activity often at night."
+          ],
+          [
+            "What should I check before a flounder trip?",
+            "Check the exact water, access and local fishing rules through the linked destination and licence pages. A habitat record does not establish fishing permission."
+          ]
+        ],
+        "sources": [
+          [
+            "Inland Fisheries Ireland: flounder",
+            "https://www.fisheriesireland.ie/fish-species/flounder-platichthys-flesus"
+          ],
+          [
+            "Marine Biological Association, MarLIN: flounder",
+            "https://www.marlin.ac.uk/species/detail/1495/1000"
+          ]
+        ],
+        "updated": "2026-11-18"
+      }
     },
     {
       "id": "european-hake",
@@ -158096,7 +158153,68 @@
           "note": "Check the rules for the exact water, date, licence and fish identification. This link does not establish an open season."
         }
       ],
-      "referenceRole": "game fish"
+      "referenceRole": "game fish",
+      "searchAnswer": {
+        "title": "Pacific herring habitat: where Clupea pallasii lives",
+        "description": "Where are Pacific herring found? Compare coastal waters, sheltered bays and spawning habitat, from Baja California to Alaska, with NOAA and DFO sources.",
+        "answer": "Pacific herring (Clupea pallasii) live in coastal waters on both sides of the North Pacific. Their eastern range extends from Baja California to Alaska’s Beaufort Sea. Look at habitat by life stage: young fish use sheltered bays and inlets, while spawning adults deposit eggs on shallow coastal vegetation.",
+        "question": "Where are Pacific herring found?",
+        "facts": [
+          [
+            "Eastern Pacific range",
+            "Baja California to the Beaufort Sea, Alaska"
+          ],
+          [
+            "Young fish",
+            "Sheltered bays and inlets"
+          ],
+          [
+            "Spawning habitat",
+            "Intertidal and shallow subtidal shorelines; kelp and eelgrass"
+          ],
+          [
+            "Other habitat",
+            "Inshore and offshore ocean waters"
+          ]
+        ],
+        "faq": [
+          [
+            "Are Pacific herring coastal fish?",
+            "Yes. NOAA describes a coastal schooling species on both sides of the Pacific. DFO records both inshore and offshore habitat."
+          ],
+          [
+            "Where do young Pacific herring live?",
+            "Alaska Fish and Game describes sheltered bays and inlets before juveniles move to deeper water."
+          ],
+          [
+            "Where do Pacific herring lay their eggs?",
+            "NOAA identifies kelp, eelgrass and other structures along intertidal and shallow subtidal shorelines."
+          ],
+          [
+            "Do all Pacific herring spawn in the same month?",
+            "No. NOAA states that spawning timing varies with latitude. Check the local stock and area."
+          ],
+          [
+            "Does a herring habitat record show where I can fish?",
+            "No. Confirm local access, open dates and permitted gear with the fisheries authority before a trip."
+          ]
+        ],
+        "sources": [
+          [
+            "NOAA Fisheries: Pacific herring",
+            "https://www.fisheries.noaa.gov/species/pacific-herring"
+          ],
+          [
+            "Fisheries and Oceans Canada: Pacific herring",
+            "https://www.dfo-mpo.gc.ca/species-especes/profiles-profils/herring-hareng-eng.html"
+          ],
+          [
+            "Alaska Department of Fish and Game: Pacific herring",
+            "https://www.adfg.alaska.gov/index.cfm?adfg=herring.main"
+          ]
+        ],
+        "updated": "2026-11-18"
+      }
     },
     {
       "id": "pacific-ocean-perch",
