@@ -193,7 +193,7 @@ ${pick.s.length ? `<p class="nm-chips">${[...pick.s].sort((a, b) => (b === state
 <a class="nm-cta" href="${esc(pick.u)}">Open the ${esc(pick.n)} guide →</a></section>
 ${when}
 <section class="nm-box"><h2>What to bring</h2><ul class="nm-gear">${gear.map((g, i) => `<li${i >= 6 ? ' hidden' : ''}><b>${esc(g.n)}</b><span>${esc(g.w)}</span>${g.q ? `<a href="${esc(amazon(g.q))}" rel="sponsored nofollow noopener" target="_blank">See on Amazon ↗</a>` : '<em>Ask the local shop or guide</em>'}</li>`).join('')}</ul>${gear.length > 6 ? `<button type="button" class="nm-more" data-more>Show all ${gear.length} items</button>` : ''}
-<p class="nm-small">As an Amazon Associate, Castward earns from qualifying purchases. Prices are on Amazon. Bring what you already own first.</p></section>
+<p class="nm-small">We earn a commission from qualifying purchases through these links. Prices are on Amazon. Bring what you already own first.</p></section>
 <section class="nm-box"><h2>Next steps</h2><ul class="nm-next">
 <li><a href="${esc(pick.l)}">Check the fishing licence${pick.r ? ' for ' + esc(pick.r.split(', ')[0]) : ''}</a></li>
 <li><a href="${esc(pick.u)}">Read the full ${esc(pick.n)} guide</a></li>
