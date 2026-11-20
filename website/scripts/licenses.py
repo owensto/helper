@@ -255,7 +255,7 @@ def jurisdiction_page(r, trips):
         body += step(n, f'Who needs a fishing licence in {name}?', inner + '</div>')
         n += 1
     if r.get('options'):
-        body += step(n, 'Licence options and prices', option_cards(r) + f'<p class="lic-note">Prices from the official source, checked {checked}.</p>')
+        body += step(n, 'Which licence can you buy?', option_cards(r) + f'<p class="lic-note">Prices from the official source, checked {checked}.</p>')
         n += 1
     if r.get('extras'):
         rows = ''.join(
@@ -265,7 +265,7 @@ def jurisdiction_page(r, trips):
     how = f'<p>{E(r["howToBuy"])}</p>' if r.get('howToBuy') else f'<p>Use the official {E(name)} site.</p>'
     if r['id'] == 'us-florida':
         how = how[:-4] + ' <a class="link" href="/guides/florida-visitor-fishing-license-planner/">Check a visitor outing with the Florida license planner</a>.</p>'
-    body += step(n, 'How to buy the licence', f'<div class="lic-buy"><div>{how}</div>{buy_button(r)}</div>')
+    body += step(n, 'Where can you buy the licence?', f'<div class="lic-buy"><div>{how}</div>{buy_button(r)}</div>')
     n += 1
     rules = [i for i in r.get('keyRules') or [] if i]
     if rules:

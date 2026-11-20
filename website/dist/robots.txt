@@ -1,3 +1,7 @@
 User-agent: *
 Allow: /
+Disallow: /trips/?
+Disallow: /glossary/?
+Disallow: /tools/tides/?
+Disallow: /tools/weather/?
 Sitemap: https://castward.app/sitemap.xml

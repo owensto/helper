@@ -100357,13 +100357,78 @@
       "methodStatus": "unverified",
       "regulationNotes": [
         {
-          "region": "Global",
-          "agency": "FAOLEX",
-          "url": "https://www.fao.org/faolex/en/",
-          "note": "Find the national fisheries law and responsible agency. Local fishing rules remain unverified."
+          "region": "Japan",
+          "agency": "Japan Game Fish Association",
+          "url": "https://www.jgfa.or.jp/record/alltackle/",
+          "note": "Compare Kuromenuke with Sebastes glaucus in the species list. Ask the local fisheries authority about the water and dates you plan to fish."
         }
       ],
-      "referenceRole": "game fish"
+      "referenceRole": "game fish",
+      "searchAnswer": {
+        "title": "Kuromenuke: gray rockfish (Sebastes glaucus)",
+        "description": "Kuromenuke is the Japanese name for gray rockfish, Sebastes glaucus. Compare its names, Northwest Pacific range and recorded size before planning a trip.",
+        "answer": "Kuromenuke is the Japanese name for gray rockfish, Sebastes glaucus. Japan’s National Museum of Nature and Science lists that name for the species. This marine rockfish lives in the Northwest Pacific. Use the scientific name when you compare fishing information: a local name alone can point to the wrong fish.",
+        "question": "What fish is kuromenuke?",
+        "facts": [
+          [
+            "Japanese name",
+            "Kuromenuke; クロメヌケ"
+          ],
+          [
+            "English name",
+            "Gray rockfish"
+          ],
+          [
+            "Scientific name",
+            "Sebastes glaucus"
+          ],
+          [
+            "Range",
+            "Northwest Pacific, from Iwate in Japan toward the Sea of Okhotsk and Bering Sea"
+          ],
+          [
+            "Recorded maximum length",
+            "50 cm standard length in FishBase; not a typical catch size"
+          ]
+        ],
+        "faq": [
+          [
+            "Is kuromenuke a rockfish?",
+            "Yes. It is Sebastes glaucus, the gray rockfish."
+          ],
+          [
+            "How is kuromenuke written in Japanese?",
+            "The Japanese name is クロメヌケ. The museum checklist pairs Kuromenuke with Sebastes glaucus."
+          ],
+          [
+            "Where does gray rockfish live?",
+            "FishBase lists the Northwest Pacific, including northern Japan, the Sea of Okhotsk and the Bering Sea."
+          ],
+          [
+            "How large can gray rockfish grow?",
+            "FishBase lists a maximum of 50 cm standard length. Standard length excludes the tail fin; this is not a promised catch size."
+          ],
+          [
+            "Does the name identify an open fishing season?",
+            "No. Confirm the species, water and current local rules before a fishing trip."
+          ]
+        ],
+        "sources": [
+          [
+            "National Museum of Nature and Science: Pacific fishes off northern Japan",
+            "https://www.kahaku.go.jp/albums/abm.php?d=2978&f=abm00004078.pdf&n=p683-735.pdf"
+          ],
+          [
+            "FishBase: Sebastes glaucus",
+            "https://www.fishbase.se/summary/23844"
+          ],
+          [
+            "Japan Game Fish Association: Japanese species names",
+            "https://www.jgfa.or.jp/record/alltackle/"
+          ]
+        ],
+        "updated": "2026-11-20"
+      }
     },
     {
       "id": "gray-smoothhound",
@@ -231014,13 +231079,78 @@
       "methodStatus": "unverified",
       "regulationNotes": [
         {
-          "region": "New Zealand",
-          "agency": "Fish & Game New Zealand",
-          "url": "https://www.fishandgame.org.nz/freshwater-fishing-in-new-zealand/fishing-licences-and-regulations/",
-          "note": "Check the rules for the exact water, date, licence and fish identification. This link does not establish an open season."
+          "region": "Species identification",
+          "agency": "FAO",
+          "url": "https://www.fao.org/fishery/docs/DOCUMENT/aquaculture/CulturedSpecies/file/en/en_turbot.htm",
+          "note": "Compare the body shape and eye position in the turbot profile. Check local marine fishing rules for your chosen coast."
         }
       ],
-      "referenceRole": "game fish"
+      "referenceRole": "game fish",
+      "searchAnswer": {
+        "title": "Turbot fish: Scophthalmus maximus and the Turbot War",
+        "description": "Identify turbot and distinguish it from Greenland halibut, the fish in the 1995 Turbot War. Compare scientific names and flatfish features.",
+        "answer": "Turbot is the flatfish Scophthalmus maximus. The fish called turbot in the 1995 Canada–Spain Turbot War was a different species: Greenland halibut, Reinhardtius hippoglossoides. Check the scientific name before comparing fishery advice. A Canadian reference to turbot does not necessarily describe the European fish on this page.",
+        "question": "Is turbot the same fish as Greenland halibut?",
+        "facts": [
+          [
+            "European turbot",
+            "Scophthalmus maximus; also called Psetta maxima in the FAO profile"
+          ],
+          [
+            "Greenland halibut",
+            "Reinhardtius hippoglossoides"
+          ],
+          [
+            "Eye position",
+            "European turbot: left side. Greenland halibut: right side."
+          ],
+          [
+            "Turbot War",
+            "The 1995 Canada–Spain dispute concerned Greenland halibut"
+          ],
+          [
+            "Name check",
+            "Use both the common and scientific names when comparing regional sources"
+          ]
+        ],
+        "faq": [
+          [
+            "What was the Turbot War?",
+            "It was a 1995 fishing dispute involving Canada, Spain and the European Union. Carleton University describes the seizure of the Spanish trawler Estai on March 9 and an agreement on April 16."
+          ],
+          [
+            "Which fish was involved in the Turbot War?",
+            "Greenland halibut, Reinhardtius hippoglossoides. Canadian fishery sources also call this fish turbot."
+          ],
+          [
+            "Is European turbot a halibut?",
+            "No. Scophthalmus maximus and Reinhardtius hippoglossoides are different species."
+          ],
+          [
+            "How can I tell their body shapes apart?",
+            "FAO describes turbot as nearly circular, with both eyes on the left side. Fisheries and Oceans Canada describes Greenland halibut as diamond-shaped and right-eyed."
+          ],
+          [
+            "Why does an older source say Psetta maxima?",
+            "The FAO cultured-species profile uses Psetta maxima for turbot. Compare the common name and description as well as the scientific name when reading older sources."
+          ]
+        ],
+        "sources": [
+          [
+            "FAO: turbot species profile",
+            "https://www.fao.org/fishery/docs/DOCUMENT/aquaculture/CulturedSpecies/file/en/en_turbot.htm"
+          ],
+          [
+            "Fisheries and Oceans Canada: Greenland halibut",
+            "https://www.dfo-mpo.gc.ca/species-especes/profiles-profils/greenland-halibut-fletan-groenland-eng.html"
+          ],
+          [
+            "Carleton University: the Turbot War",
+            "https://carleton.ca/ces/eulearning/lesson-plans/turbot-war/"
+          ]
+        ],
+        "updated": "2026-11-20"
+      }
     },
     {
       "id": "two-spot-red-snapper",
