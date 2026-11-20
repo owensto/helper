@@ -3525,7 +3525,7 @@
           "url": "https://stadt.muenchen.de/service/en-GB/info/waffenbehorde/10423699/"
         }
       ],
-      "checked": "2026-11-11",
+      "checked": "2026-11-19",
       "checkOfficial": "Confirm your state's visitor qualifications, fee, coastal rules, age exemptions and guide coverage. These examples are not countrywide licence terms.",
       "contentModified": "2026-11-15"
     },
@@ -3564,7 +3564,7 @@
           "url": "https://alieia.hcg.gr/faq/faq_eng.php"
         }
       ],
-      "checked": "2026-11-11",
+      "checked": "2026-11-19",
       "checkOfficial": "Confirm inland-water permissions, local closures, the May restriction for your method, current registration duties and charter-client requirements.",
       "contentModified": "2026-11-15"
     },
@@ -3622,7 +3622,7 @@
           "url": "https://nyito.mohosz.hu/index.php/horgaszvizeink/69-jegyrendszer/824-evinditasi-informaciok-2026"
         }
       ],
-      "checked": "2026-11-11",
+      "checked": "2026-11-19",
       "checkOfficial": "Confirm the water's tourist-permit price, catch-log duties and the documents included in a guided trip.",
       "contentModified": "2026-11-15"
     },
@@ -3674,7 +3674,7 @@
           "url": "https://www.mast.is/en/import-export/import-of-fishing-equipment"
         }
       ],
-      "checked": "2026-11-11",
+      "checked": "2026-11-19",
       "checkOfficial": "Confirm local prices, seasons, child rules and any documents clients need on a guided freshwater trip.",
       "contentModified": "2026-11-15"
     },
@@ -3759,7 +3759,9 @@
       ],
       "checked": "2026-11-11",
       "checkOfficial": "Check the fishery permit and guide arrangements. Loughs Agency waters use a separate system.",
-      "contentModified": "2026-11-15"
+      "contentModified": "2026-11-15",
+      "lastCheckAttempt": "2026-11-19",
+      "sourceCheckNote": "Official FAQ read; licence shop and regulation page returned maintenance mode. Retain November 11 fee check until the shop returns."
     },
     {
       "id": "it-italy",

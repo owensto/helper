@@ -60306,7 +60306,72 @@
           "note": "Identify the exact species before checking local rules."
         }
       ],
-      "referenceRole": "Broad name; species identification required"
+      "referenceRole": "Broad name; species identification required",
+      "searchAnswer": {
+        "title": "Coarse fishing: fish species, methods and seasons",
+        "description": "What is coarse fishing? Learn which fish the name covers, compare float and feeder methods, and check river seasons before your trip.",
+        "answer": "Coarse fishing targets freshwater fish such as roach, rudd, bream, tench and perch. It describes a group of fish, not one species. Start with the fish and water you want to try, then choose a float or feeder setup. Check the local season and permission before you cast.",
+        "question": "Which fish and methods belong to coarse fishing?",
+        "facts": [
+          [
+            "Common targets",
+            "Roach, rudd, bream, tench and perch — Inland Fisheries Ireland"
+          ],
+          [
+            "Float approach",
+            "Present bait beneath a float in a river or lake"
+          ],
+          [
+            "Ledger or feeder approach",
+            "Present bait near the bottom; IFI lists bream, roach, perch and tench among targets"
+          ],
+          [
+            "England and Wales rivers",
+            "Coarse fishing closes from 15 March through 15 June; check local byelaws"
+          ],
+          [
+            "Stillwaters and canals",
+            "Most allow coarse fishing all year, but local and fishery rules can differ"
+          ]
+        ],
+        "faq": [
+          [
+            "Is coarse fish one species?",
+            "No. It is a collective fishing term. Identify the individual fish before you apply a size or catch rule."
+          ],
+          [
+            "Which fish count as coarse fish?",
+            "Inland Fisheries Ireland lists rudd, bream, tench, perch and roach. Regional group names can differ."
+          ],
+          [
+            "What is the difference between float and feeder fishing?",
+            "A float shows a bite above the water and supports the bait. A ledger or swimfeeder approach places the bait near the bottom. Choose the method for the fish and water."
+          ],
+          [
+            "Can I coarse fish in an English river all year?",
+            "No. GOV.UK gives a river close season from 15 March to 15 June. Check the local byelaws and fishery permission."
+          ],
+          [
+            "Do lakes have the same close season as rivers?",
+            "Not always. GOV.UK says most enclosed stillwaters and canals allow coarse fishing all year. Private fisheries can set their own seasons."
+          ]
+        ],
+        "sources": [
+          [
+            "Inland Fisheries Ireland: coarse fish",
+            "https://www.fisheriesireland.ie/what-we-do/protection/prosecutions/coarse-fishing"
+          ],
+          [
+            "Inland Fisheries Ireland: tackle, methods and bait",
+            "https://fishinginireland.info/coarse/cbait/"
+          ],
+          [
+            "GOV.UK: when and where you can fish",
+            "https://www.gov.uk/freshwater-rod-fishing-rules/when-and-where-you-can-fish"
+          ]
+        ],
+        "updated": "2026-11-19"
+      }
     },
     {
       "id": "cobia",
@@ -142669,7 +142734,72 @@
           "note": "Check the rules for the exact water, date, licence and fish identification. This link does not establish an open season."
         }
       ],
-      "referenceRole": "game fish"
+      "referenceRole": "game fish",
+      "searchAnswer": {
+        "title": "Milkfish (Chanos chanos): habitat, size and identification",
+        "description": "Identify milkfish, Chanos chanos, by the toothless mouth and deeply forked tail. Compare adult coastal habitat with juvenile mangrove and lagoon habitat.",
+        "answer": "Milkfish (Chanos chanos) are silver, toothless fish with a deeply forked tail. Adults form schools in warm coastal waters and around islands. Young fish use mangroves, estuaries and lagoons, and some enter freshwater lakes. Match the scientific name and body features before relying on a local name or choosing a fishing destination.",
+        "question": "Where do milkfish live, and how big do they get?",
+        "facts": [
+          [
+            "Scientific name",
+            "Chanos chanos"
+          ],
+          [
+            "Identification",
+            "Small toothless mouth, silver body and deeply forked tail — Smithsonian"
+          ],
+          [
+            "Adult habitat",
+            "Warm coastal waters and waters around islands — FAO"
+          ],
+          [
+            "Juvenile habitat",
+            "Mangroves, estuaries, coastal lagoons and sometimes freshwater lakes — FAO"
+          ],
+          [
+            "Maximum reported length",
+            "180 cm in the Smithsonian species account; this is not a typical catch size"
+          ],
+          [
+            "Eastern Pacific range",
+            "Southern California to Peru — Smithsonian"
+          ]
+        ],
+        "faq": [
+          [
+            "Are milkfish freshwater or saltwater fish?",
+            "They use both. FAO describes coastal adults and young fish in estuaries, mangroves and sometimes freshwater lakes. Spawning takes place in seawater."
+          ],
+          [
+            "Do milkfish have teeth?",
+            "The Smithsonian identification account describes a small mouth without teeth. Also check the silver body and deeply forked tail."
+          ],
+          [
+            "How big can milkfish get?",
+            "The Smithsonian account lists 180 cm. That maximum does not describe an average fish or promise a catch of that size."
+          ],
+          [
+            "What do milkfish eat?",
+            "FAO lists small, soft food items, including microbial mats, detritus, epiphytes and zooplankton. Diet alone does not establish a reliable local fishing method."
+          ],
+          [
+            "Does a country record mean I can fish for milkfish there?",
+            "No. A range record establishes occurrence. Confirm access, the exact water and local fishing rules before travel."
+          ]
+        ],
+        "sources": [
+          [
+            "Smithsonian Tropical Research Institute: milkfish",
+            "https://biogeodb.stri.si.edu/sftep/en/thefishes/species/562"
+          ],
+          [
+            "FAO: Chanos chanos habitat and biology",
+            "https://www.fao.org/fishery/docs/CDrom/aquaculture/I1129m/file/en/en_milkfish.htm"
+          ]
+        ],
+        "updated": "2026-11-19"
+      }
     },
     {
       "id": "mississippi-paddlefish",

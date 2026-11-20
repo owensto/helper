@@ -93,6 +93,7 @@ def install(pages, root, add, trips, data):
 
     species_count = sum(s['taxonType'] == 'species' for s in species)
     body = heading('Species', 'Find your fish.', 'Common names, local words and the waters that connect them.')
+    body += '<p class="wrap">Start with ' + link('/species/coarse-fish/', 'coarse fishing species and methods') + ' or compare ' + link('/species/milkfish/', 'milkfish habitat and identification') + '.</p>'
     body += '<section class="wrap field-reference"><div class="field-filter"><label for="species-search">Search fish or local names<input id="species-search" type="search" placeholder="Try rockfish, barra, carp or specks" autocomplete="off"></label></div><p id="species-count" role="status" aria-live="polite">' + str(species_count) + ' species and ' + str(len(species) - species_count) + ' broader fish groups</p><div class="field-species-grid">'
     for s in species:
         aliases = list(dict.fromkeys(a['name'] for a in s['localNames'] if a.get('language') == 'English'))
@@ -101,7 +102,7 @@ def install(pages, root, add, trips, data):
         if s['scientificName']:
             body += '<p class="field-scientific"><i>' + E(s['scientificName']) + '</i></p>'
         body += '<p>' + E(' · '.join(aliases[:3])) + '</p><span class="small">' + str(len(matched[s['id']])) + ' linked destination' + ('s' if len(matched[s['id']]) != 1 else '') + '</span></article>'
-    body += '</div><p id="species-empty" hidden>No fish matches this search. Try a common or scientific name.</p><button class="btn outline" id="species-more" type="button" hidden>Show more fish</button><p class="field-note">Country records describe occurrence. Trip links use separate destination evidence. ' + link('/glossary/', 'Read the fishing glossary') + '</p></section>' + assets
+    body += '</div><p id="species-empty" hidden>No match yet. Try the common name or scientific name.</p><button class="btn outline" id="species-more" type="button" hidden>Show more fish</button><p class="field-note">Country records describe occurrence. Trip links use separate destination evidence. ' + link('/glossary/', 'Read the fishing glossary') + '</p></section>' + assets
     add('/species/', 'World fish species and local names | Castward', 'Explore ' + str(species_count) + ' fish species, regional names, sourced fishing destinations and agency rules.', body, 'species')
 
     for s in species:
@@ -167,12 +168,12 @@ def install(pages, root, add, trips, data):
                 body += '<tr><td>' + E(a['name']) + '</td><td>' + E(a['region']) + (' · ' + E(a['language']) if a.get('language') not in (None, 'English') else '') + '</td><td>' + link(a['sourceUrls'][0], 'Reference') + '</td></tr>'
             body += '</tbody></table></div>'
         else:
-            body += '<p>No additional regional name is verified in this catalog.</p>'
+            body += '<p>Use the scientific name when you compare local names.</p>'
         body += '</section><section id="seasons"><h2>Seasons</h2>'
         for season in s['seasons']:
             body += '<h3>' + E(season['region']) + '</h3><p>' + E(season['text']) + '</p>' + source_links(season['sourceUrls'])
         if not s['seasons']:
-            body += '<p>A species-wide fishing season is not verified. Use the destination guide and local agency for the water and dates you choose.</p>'
+            body += '<p>Fishing seasons differ by water and region. Check the local fisheries agency for your chosen place and dates.</p>'
         else:
             body += '<p>These are fishing patterns from the linked sources. Check the agency for current legal seasons and closures.</p>'
         body += '</section><section id="regulations"><h2>Regulations and identification</h2><ul class="field-trip-links">'
@@ -211,7 +212,8 @@ def install(pages, root, add, trips, data):
         return sorted(tags)
     choices = ['Global', 'Alaska', 'North America', 'South America', 'United Kingdom', 'Europe', 'Africa', 'Asia', 'Australia', 'Oceania']
     body = heading('Glossary', 'Speak the water.', 'A name makes sense when you know the place.')
-    body += '<section class="wrap field-reference"><div class="field-filter"><label for="glossary-search">Find a fishing term<input id="glossary-search" type="search" placeholder="Try yelloweye, mooching, boilie or barra" autocomplete="off"></label><label for="glossary-region">Region<select id="glossary-region"><option value="">All regions</option>' + ''.join('<option>' + E(r) + '</option>' for r in choices) + '</select></label></div><p id="glossary-count" role="status" aria-live="polite">' + str(len(terms)) + ' fishing terms</p><nav class="field-alphabet" aria-label="Glossary A to Z">'
+    body += '<p class="wrap">Learn what ' + link('/species/coarse-fish/', 'coarse fishing') + ' means, or use the scientific name to identify ' + link('/species/milkfish/', 'milkfish, Chanos chanos') + '.</p>'
+    body += '<section class="wrap field-reference"><div class="field-filter"><label for="glossary-search">Find a word used on the water<input id="glossary-search" type="search" placeholder="Try yelloweye, mooching, boilie or barra" autocomplete="off"></label><label for="glossary-region">Region<select id="glossary-region"><option value="">All regions</option>' + ''.join('<option>' + E(r) + '</option>' for r in choices) + '</select></label></div><p id="glossary-count" role="status" aria-live="polite">' + str(len(terms)) + ' fishing terms</p><nav class="field-alphabet" aria-label="Glossary A to Z">'
     letters = sorted({t['term'][0].upper() if t['term'][0].isascii() and t['term'][0].isalpha() else '#' for t in terms})
     body += ''.join(link('#letter-' + ('other' if c == '#' else c), c) for c in letters) + '</nav>'
     for letter in letters:

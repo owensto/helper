@@ -62,6 +62,9 @@ def install(pages):
             markup = body[card['start']:card['end']]
             eager = counts[card['kind']] < 3
             counts[card['kind']] += 1
+            # A scenery fallback cannot identify a fish and repeats large markup on the species hub.
+            if card['kind'] == 'field-fish-card' and not card['image']:
+                continue
             if not card['image']:
                 route = card['href']
                 if available(PREVIEWS.get(route)):

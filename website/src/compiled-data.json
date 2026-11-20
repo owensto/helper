@@ -4359,7 +4359,7 @@
         "river",
         "boat"
       ],
-      "description": "Build your river-and-ocean escape around the fishing, not the packing anxiety.",
+      "description": "Yakutat fishing starts with a choice: Situk River salmon or steelhead, or a saltwater day for halibut. The river offers bank access and a 14-mile float between 9 Mile Bridge and Lower Landing. Pick your target and access first, then check current Alaska rules and pack for that kind of day.",
       "overview": "Yakutat’s reference fisheries include Situk River salmon and halibut in the coastal waters. Choose the fishing style before finalizing your equipment: a river day and a halibut charter have different preparation needs.",
       "season": "For halibut, ADF&G describes late April through September as the most productive period. This is seasonal context, not current availability or a forecast.",
       "planning": "Keep an offshore day flexible. Confirm transport, equipment provision, fish handling and a weather alternative directly with your operator.",
@@ -4374,6 +4374,67 @@
         "url": "https://www.leonardslanding.com/",
         "note": "An independent operator to research. Not an Atlas partner; dates, equipment and prices require direct confirmation."
       },
+      "searchTitle": "Yakutat fishing: Situk River, halibut and trip planning",
+      "searchDescription": "Plan a Yakutat fishing trip around Situk River salmon, steelhead or coastal halibut. Compare access, seasonal patterns and the gear questions to ask.",
+      "updated": "2026-11-19",
+      "searchFacts": [
+        [
+          "Situk salmon",
+          "Sockeye enter in June–July; coho anglers focus on the lower river."
+        ],
+        [
+          "Situk steelhead",
+          "ADF&G describes the main fishery from April to June, with peak effort in May."
+        ],
+        [
+          "River float",
+          "9 Mile Bridge to Lower Landing: 14 miles."
+        ],
+        [
+          "Bank access",
+          "Start your access check at 9 Mile Bridge or Lower Landing."
+        ],
+        [
+          "Halibut",
+          "A saltwater option; confirm the boat, weather plan and current rules."
+        ]
+      ],
+      "searchFaq": [
+        [
+          "Can you fish the Situk River from shore?",
+          "Yes. ADF&G describes bank access from Lower Landing and 9 Mile Bridge. Check the current access conditions and rules for your reach."
+        ],
+        [
+          "How long is the Situk River float?",
+          "ADF&G describes 14 miles between 9 Mile Bridge and Lower Landing. Arrange the shuttle and take-out before you launch."
+        ],
+        [
+          "When do sockeye enter the Situk River?",
+          "ADF&G describes the run in June and July. Run timing is not a legal-season notice or a catch forecast."
+        ],
+        [
+          "When is the main Situk steelhead fishery?",
+          "ADF&G describes April through June, with peak fishing effort in May. Check current rules before choosing dates."
+        ],
+        [
+          "Should I pack the same kit for river and halibut days?",
+          "Ask the operator what each day includes. Confirm rods, tackle, rain gear, boots and fish handling separately for the river and boat."
+        ]
+      ],
+      "searchSources": [
+        [
+          "ADF&G: Situk salmon",
+          "https://www.adfg.alaska.gov/index.cfm?adfg=ByAreaSoutheastYakutat.fishingOpps&fishery=Situk+River+sockeye+and+coho+salmon"
+        ],
+        [
+          "ADF&G: Situk steelhead",
+          "https://www.adfg.alaska.gov/index.cfm?adfg=ByAreaSoutheastYakutat.fishingOpps&fishery=Situk+River+Steelhead"
+        ],
+        [
+          "ADF&G: Yakutat halibut",
+          "https://www.adfg.alaska.gov/index.cfm?adfg=ByAreaSoutheastYakutat.fishingOpps&fishery=Yakutat+Halibut"
+        ]
+      ],
       "tripStyleIds": [
         "river-fishing",
         "bottom-combo",
