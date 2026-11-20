@@ -109894,7 +109894,88 @@
           "note": "Check the rules for the exact water, date, licence and fish identification. This link does not establish an open season."
         }
       ],
-      "referenceRole": "game fish"
+      "referenceRole": "game fish",
+      "searchAnswer": {
+        "title": "Gummy shark (Mustelus antarcticus): size and range",
+        "description": "Gummy shark is Mustelus antarcticus, a small houndshark of southern Australia. See how to identify it, its size, depth, range and other names, with sources.",
+        "answer": "The gummy shark is Mustelus antarcticus, a slender houndshark of southern Australia. It is grey or grey-brown above with white spots, and it has blunt, flat teeth. The Australian Fisheries Management Authority lists a length of up to 1.75 metres. It lives on or near the seabed, mostly in water shallower than 80 metres.",
+        "question": "What is a gummy shark?",
+        "facts": [
+          [
+            "Scientific name",
+            "Mustelus antarcticus; family Triakidae (houndsharks)"
+          ],
+          [
+            "Other names",
+            "Sweet William, Australian smooth hound, smooth dog-shark, white-spotted gummy shark"
+          ],
+          [
+            "How to identify it",
+            "Grey or grey-brown above and white below, white spots on the back and upper sides, second dorsal fin nearly as large as the first, blunt and flattened teeth"
+          ],
+          [
+            "Size",
+            "Up to 1.75 metres and 24.8 kg (AFMA). Females grow larger than males"
+          ],
+          [
+            "Life span",
+            "Up to 16 years"
+          ],
+          [
+            "Range",
+            "Southern Australia, from Bunbury in Western Australia to Jervis Bay in New South Wales (AFMA)"
+          ],
+          [
+            "Depth",
+            "Near shore to about 80 metres, sometimes as deep as 350 metres. FishBase records 0 to 403 metres"
+          ],
+          [
+            "Food",
+            "Cephalopods, crustaceans and occasionally fish"
+          ],
+          [
+            "Who catches it",
+            "Commercial gillnet and longline boats under a quota, and recreational anglers with rod and line"
+          ]
+        ],
+        "faq": [
+          [
+            "Why is it called a gummy shark?",
+            "Its teeth are blunt and flattened, not pointed. AFMA describes numerous rows of blunt, flattened teeth in a short, angular mouth."
+          ],
+          [
+            "How big does a gummy shark get?",
+            "AFMA lists up to 1.75 metres and 24.8 kg. Females grow larger than males. These are maximum figures, not a promised catch size."
+          ],
+          [
+            "Where do gummy sharks live?",
+            "They live across southern Australia, from Bunbury in Western Australia to Jervis Bay in New South Wales. FishBase lists the species as endemic to southern Australia."
+          ],
+          [
+            "How deep do gummy sharks live?",
+            "They stay on or near the seabed. AFMA lists shallow water down to 80 metres, and sometimes as deep as 350 metres."
+          ],
+          [
+            "Is gummy shark good to eat?",
+            "AFMA describes the flesh as sweet, boneless and thick-flaked, and commonly used for fish and chips."
+          ],
+          [
+            "Can recreational anglers fish for gummy shark?",
+            "Yes. AFMA lists the recreational sector as a targeted rod-and-line fishery. Bag and size limits differ by Australian state, so check the state fisheries agency for the water and date."
+          ]
+        ],
+        "sources": [
+          [
+            "Australian Fisheries Management Authority: gummy shark",
+            "https://www.afma.gov.au/species/gummy-shark"
+          ],
+          [
+            "FishBase: Mustelus antarcticus",
+            "https://www.fishbase.se/summary/5943"
+          ]
+        ],
+        "updated": "2026-11-20"
+      }
     },
     {
       "id": "haddock",
