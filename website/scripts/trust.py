@@ -4,7 +4,7 @@ from legal_content import LEGAL, legal_body
 PAGES = {
 'about': ('About Castward', [
 ('Find your water. Go prepared.', 'Castward brings fishing destinations, environment guides and preparation checklists into one atlas. Coverage includes source-linked research and editorial preparation frameworks. It is not a live conditions or regulations service. Check each guide’s source notes and confirm details locally.'),
-('Plans without an account', 'Create a fishing plan and save it in your browser. There is no central plan account. Export a copy before you clear browser data. Contact us about corrections, guide listings, partnerships or press requests.'),
+('Plans without an account', 'Create a fishing plan and save it in your browser. There is no central plan account. Export a copy before you clear browser data. Contact us about corrections, <a href="/for-guides/">guide listings</a>, partnerships or press requests.'),
 ('Scenes, not evidence', 'Our images and videos include AI-generated scenery. They show representative fishing environments, not verified footage of the named destinations. Video scenes use AI animation from generated images. They do not document actual conditions, trips or catches. See the <a href="/videos/">video collection</a> for film descriptions. Photo and AI source notes appear below.'),
 ('Independent decisions', 'Castward is the site operator. We do not claim local guide credentials or guarantee any third-party service. Future affiliate and booking links will carry relevant disclosures. Reach us at contact@castward.app.')])}
 
