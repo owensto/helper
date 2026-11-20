@@ -100,11 +100,14 @@ def trip_panel(trip, rec, permits, federal):
     h = '<section class="prose-block lic-panel" id="licence"><span class="eyebrow">LICENCE &amp; PERMITS</span>'
     if rec:
         h += f'<h2>Fishing licence for {E(rec["name"])}</h2><p>{E(rec["summary"])}</p>'
-        visitor = [o for o in rec.get('options', []) if o.get('who') in ('non-resident', 'any', None)][:4]
+        visitor = sorted([o for o in rec.get('options', []) if o.get('who') in ('non-resident', 'any', None)],
+                         key=lambda o: (o.get('price') is None, o.get('price') or 0))[:3]
         if visitor:
             h += '<ul class="lic-chips">' + ''.join(
-                f'<li><b>{E(o.get("duration") or o["name"])}</b><span>{E(money(o) or o["name"])}</span></li>' for o in visitor) + '</ul>'
-        h += buttons(rec)
+                f'<li><b>{E(o.get("duration") or o["name"])}</b><span>{E(price_text(o) or o["name"])}</span></li>' for o in visitor) + '</ul>'
+        if rec.get('howToBuy'):
+            h += f'<p class="small">{E(rec["howToBuy"])}</p>'
+        h += f'<div class="lic-actions">{buy_button(rec)}<a class="btn btn-quiet" href="{page_path(rec)}">{E(rec["name"])} licence steps</a></div>'
     else:
         h += f'<h2>Fishing licence for {E(trip["country"])}</h2><p>Rules depend on the exact water. Ask your guide or the local fisheries office which licence covers this trip.</p>'
     extra = p.get('permits') or []
@@ -120,7 +123,7 @@ def trip_panel(trip, rec, permits, federal):
     if federal and set(trip.get('habitats', [])) & OFFSHORE and trip['country'] == 'United States':
         h += f'<p class="small">Fishing for tuna or billfish offshore? You may also need a federal permit. <a class="link" href="{page_path(federal)}">US federal rules</a>.</p>'
     if rec:
-        h += f'<p class="small"><a class="link" href="{page_path(rec)}">Full {E(rec["name"])} licence guide ↗</a> · Checked {MONTH}.</p>'
+        h += f'<p class="small">Checked against official sources on {nice_date(rec["checked"])}.</p>'
     return h + '</section>'
 
 
@@ -203,10 +206,11 @@ def cheapest(r):
 
 
 def buy_button(r, cls='btn'):
+    kind = r.get('licenceNeeded')
     if r.get('buyUrl'):
-        return link(r['buyUrl'], 'Buy on the official site ↗', cls)
+        return link(r['buyUrl'], {'no': 'Get the local permit ↗', 'local': 'Find a local permit ↗'}.get(kind, 'Buy on the official site ↗'), cls)
     if r.get('authority', {}).get('url'):
-        return link(r['authority']['url'], 'Go to the official site ↗', cls)
+        return link(r['authority']['url'], 'Check the official rules ↗' if kind == 'no' else 'Go to the official site ↗', cls)
     return ''
 
 
@@ -239,8 +243,15 @@ def jurisdiction_page(r, trips):
     low = cheapest(r)
     body = STYLE + f'<div class="wrap lic-page lic2"><nav class="breadcrumbs"><a href="/">Home</a> / <a href="{HUB}">Fishing licenses</a> / {E(name)}</nav>'
     body += f'<header class="lic-top"><div><span class="eyebrow">FISHING LICENCE · {E(r["country"].upper())}</span><h1>{E(r.get("h1", name + " fishing licence"))}</h1><p class="lic-answer">{E(r["summary"])}</p></div>'
-    if low:
+    kind = r.get('licenceNeeded')
+    if kind == 'no':
+        ticket = '<div><small>General fishing licence</small><strong>Not needed</strong><span>Local permits and rules can still apply.</span></div>'
+    elif low:
         ticket = f'<div><small>Visitor licence from</small><strong>{E(price_text(low))}</strong><span>{E(low.get("duration") or low["name"])}</span></div>'
+    elif kind == 'local':
+        ticket = '<div><small>Fishing permit</small><strong>Sold per water</strong><span>The owner, club or region sets the price.</span></div>'
+    elif not r.get('buyUrl'):
+        ticket = '<div><small>Fishing licence</small><strong>Ask locally</strong><span>No official online sale. See “Where can you get the licence?” below.</span></div>'
     else:
         ticket = f'<div><small>Official source</small><span>{E(r.get("authority", {}).get("name") or name)}</span></div>'
     body += f'<aside class="lic-ticket">{ticket}{buy_button(r)}<em>Checked against official sources on {checked}.</em></aside></header>'
@@ -265,7 +276,7 @@ def jurisdiction_page(r, trips):
     how = f'<p>{E(r["howToBuy"])}</p>' if r.get('howToBuy') else f'<p>Use the official {E(name)} site.</p>'
     if r['id'] == 'us-florida':
         how = how[:-4] + ' <a class="link" href="/guides/florida-visitor-fishing-license-planner/">Check a visitor outing with the Florida license planner</a>.</p>'
-    body += step(n, 'Where can you buy the licence?', f'<div class="lic-buy"><div>{how}</div>{buy_button(r)}</div>')
+    body += step(n, 'What do you need instead?' if kind == 'no' else 'Where can you buy the licence?' if r.get('buyUrl') else 'Where can you get the licence?', f'<div class="lic-buy"><div>{how}</div>{buy_button(r)}</div>')
     n += 1
     rules = [i for i in r.get('keyRules') or [] if i]
     if rules:
@@ -342,7 +353,9 @@ def install(pages, root, add, trips):
         body += f'<section class="lic-group" data-lic-group><h2>{E(c)}</h2><ul class="lic-hub-list">'
         for r in items:
             low = cheapest(r)
-            sub = f'<span>Visitor licence from {E(price_text(low))}</span>' if low else '<span>Rules and official link</span>'
+            kind = r.get('licenceNeeded')
+            sub = ('<span>No general licence needed</span>' if kind == 'no' else f'<span>Visitor licence from {E(price_text(low))}</span>' if low
+                   else '<span>Permits sold per water</span>' if kind == 'local' else '<span>Online purchase link</span>' if r.get('buyUrl') else '<span>Where to get it</span>')
             body += f'<li data-lic-name="{E((r["name"] + " " + r["country"]).lower(), quote=True)}"><a href="{page_path(r)}"><b>{E(r["name"])}</b>{sub}</a></li>'
         body += '</ul></section>'
     body += '</div><p><a class="link" href="/guides/florida-visitor-fishing-license-planner/">Florida visitors: check shore, pier, and charter coverage</a>.</p><p class="small">Checked ' + MONTH + ' against official sources. Always confirm on the official site before you fish.</p></div>'
