@@ -238,6 +238,10 @@ print('licences', install_licenses(pages, ROOT, add, TRIPS))
 from near_me import install as install_near_me
 print('near-me places', install_near_me(pages, ROOT, add, DATA, TRIPS, CONFIG['amazonTag']))
 install_clean_copy(pages, ROOT, CONFIG)
+from affiliate_expansion import install as install_affiliate_expansion
+print('affiliate expansion', install_affiliate_expansion(pages, 'mediaatlas08-20'))
+(ROOT/'test-results').mkdir(exist_ok=True)
+(ROOT/'test-results/affiliate-items.json').write_text(json.dumps({path: p['affiliateItems'] for path,p in pages.items() if p.get('affiliateItems')},ensure_ascii=False,indent=2))
 FOOTER = clean_chrome(FOOTER, CONFIG['amazonTag'])
 HEADER = clean_chrome(HEADER, CONFIG['amazonTag'])
 trip_paths = {t.get("canonicalPath", "/trips/"+t["id"]+"/") for t in TRIPS}

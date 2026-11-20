@@ -256,7 +256,7 @@ LEGAL = {
 ('summary','How Castward may earn money',paragraphs(
 'Castward may earn a commission if you follow a marked affiliate link and complete an eligible purchase or booking. This can create a financial interest in the link. You should know about that interest before you choose.',
 'The current site provides trip information, independent source links and retailer category searches. It does not accept booking payments or operate a native booking checkout. A future guide booking slot is not evidence that a paid partnership already exists.',
-'This page explains the policy for future commercial links as well as any link-specific disclosure. Castward is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn fees by linking to Amazon.com. As an Amazon Associate, Castward earns from qualifying purchases.')),
+'This page explains our commercial links and the brief notices beside them. Castward is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn fees by linking to Amazon.com. As an Amazon Associate I earn from qualifying purchases.')),
 ('labels','Look for a disclosure beside the link',paragraphs(
 'A material relationship should be clear near the relevant recommendation or link. A suitable message is: “Castward may earn a commission if you book or buy through this link.” Paid editorial placements should be identified as sponsored.',
 'This general page does not replace a disclosure at the point where you make a decision. A disclosure hidden only in the footer is not our intended approach.',

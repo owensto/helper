@@ -8,7 +8,7 @@ from html import escape as E
 from pathlib import Path
 from urllib.parse import urlencode, urlsplit, urlunsplit, parse_qsl
 
-DISCLOSURE = 'As an Amazon Associate, Castward earns from qualifying purchases.'
+DISCLOSURE = 'We earn a commission from qualifying purchases through these links.'
 
 # Whole elements that only describe how the page was made.
 BLOCKS = [
@@ -161,6 +161,10 @@ def install(pages, root, config):
                     body = body.replace(marker, block + marker, 1) if marker in body else body + '<div class="wrap">' + block + '</div>'
         if tag:
             body = DISCLOSURE_RE.sub(f'<div class="shopping-disclosure">{DISCLOSURE}</div>', body)
+            # One short notice for the page's buying section, not repeated full statements.
+            notices = list(DISCLOSURE_RE.finditer(body))
+            for duplicate in reversed(notices[1:]):
+                body = body[:duplicate.start()] + body[duplicate.end():]
         page['body'] = tag_all(body, tag)
     return pages
 
