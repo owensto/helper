@@ -265,7 +265,9 @@ shutil.copyfile(DIST/'404/index.html',DIST/'404.html')
 if CONFIG['siteUrl']:
     write_sitemaps(DIST, pages, CONFIG['siteUrl'], DATA['reviewed'])
     discovery_feeds(DIST, pages, ROOT, CONFIG['siteUrl'])
-    (DIST/'robots.txt').write_text('User-agent: *\nAllow: /\nSitemap: '+CONFIG['siteUrl']+'/sitemap.xml\n')
+    # Filter and tool parameter URLs are canonical alternates of their base page (GSC 2026-11-20: 564 crawled alternates,
+    # 412 real pages still "Discovered - currently not indexed"). Keep the crawl on real pages.
+    (DIST/'robots.txt').write_text('User-agent: *\nAllow: /\nDisallow: /trips/?\nDisallow: /glossary/?\nDisallow: /tools/tides/?\nDisallow: /tools/weather/?\nSitemap: '+CONFIG['siteUrl']+'/sitemap.xml\n')
 else:
     (DIST/'robots.txt').write_text('User-agent: *\nDisallow: /\n# Preview build: set SITE_URL to generate production canonical URLs and sitemap.\n')
 # Single-file review build with all rendered pages and logic embedded. No server required.
