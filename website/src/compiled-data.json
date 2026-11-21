@@ -1741,7 +1741,7 @@
     },
     "world-d15-sturgeon-handling": {
       "label": "White sturgeon handling guidelines",
-      "url": "https://www2.gov.bc.ca/assets/gov/sports-recreation-arts-and-culture/outdoor-recreation/fishing-and-hunting/freshwater-fishing/ws_guidelines.pdf"
+      "url": "https://www2.gov.bc.ca/assets/gov/environment/plants-animals-and-ecosystems/fish-fish-habitat/fishery-resources/fraser-river-white-sturgeon/ws_guidelines.pdf"
     },
     "world-d15-dfo-sturgeon": {
       "label": "Tidal Fraser sturgeon rules",
@@ -1774,6 +1774,14 @@
     "world-d17-wdfw-season": {
       "label": "2026 salmon season updates",
       "url": "https://wdfw.medium.com/the-salmon-fishing-current-blog-summer-and-fall-2026-edition-7a5510a6071c"
+    },
+    "world-d21-sturgeon-closures": {
+      "label": "Lower Fraser River regulated sturgeon angling closure areas",
+      "url": "https://www2.gov.bc.ca/assets/gov/environment/plants-animals-and-ecosystems/fish-fish-habitat/fishery-resources/fraser-river-white-sturgeon/region_2_voluntary_sturgeon_closures.pdf"
+    },
+    "world-d21-sturgeon-licence": {
+      "label": "Angling and Scientific Collection Regulation, section 2.001",
+      "url": "https://www.bclaws.gov.bc.ca/civix/document/id/lc/statreg/10_125_90"
     },
     "world-species-e4b4ce359a5f": {
       "label": "Fishery source for Yakutat / Situk River",
@@ -3487,6 +3495,18 @@
       "label": "Fishery source for Lake of the Prairies",
       "url": "https://www.gov.mb.ca/nrnd/fish-wildlife/pubs/fish_wildlife/fish/angling-guide.pdf"
     },
+    "world-species-5c3ed96714ab": {
+      "label": "Fishery source for Clear Lake / Riding Mountain area",
+      "url": "https://parks.canada.ca/pn-np/mb/riding/nature/conserv/lac-clear-lake"
+    },
+    "world-species-997da8a83314": {
+      "label": "Fishery source for Clear Lake / Riding Mountain area",
+      "url": "https://parks.canada.ca/pn-np/mb/riding/activ/rec/activ1-fsh"
+    },
+    "world-species-c026ff8bce92": {
+      "label": "Fishery source for Whiteshell / West Hawk Lake",
+      "url": "https://www.gov.mb.ca/nrnd/fish-wildlife/pubs/lifa/pdf/westhawk_map.pdf"
+    },
     "world-species-d0bdb57fcd82": {
       "label": "Fishery source for Nueltin Lake / Manitoba base",
       "url": "https://www.gov.mb.ca/sd/parks/park-maps-and-locations/northeast/nueltin_lake.html"
@@ -3522,6 +3542,10 @@
     "world-species-77e089e9b1ec": {
       "label": "Fishery source for Rainy Lake / Ontario base",
       "url": "https://www.ontario.ca/page/rainy-lake-islands-conservation-reserve-management-statement"
+    },
+    "world-species-22a4e4e0bd4a": {
+      "label": "Fishery source for Rainy Lake / Ontario base",
+      "url": "https://fortfrances.ca/experience/rainy-lake/fishing-rainy-lake"
     },
     "world-species-5a48081fbe18": {
       "label": "Fishery source for Lake Erie / Port Dover",
@@ -46180,9 +46204,12 @@
     },
     {
       "id": "na-ca-mb-005",
-      "name": "Clear Lake",
+      "name": "Clear Lake Walleye and Pike Fishing, Riding Mountain",
       "region": "Canada",
-      "species": [],
+      "species": [
+        "Walleye",
+        "Northern pike"
+      ],
       "styles": [
         "bank",
         "guidedboat"
@@ -46192,7 +46219,7 @@
       "tripProfile": "na-ca-mb-005",
       "technicalGear": true,
       "guideUrl": "/north-america/canada/manitoba/clear-lake-riding-mountain-area-coldwater-lake-fishing/",
-      "seasonNote": "Dates have not been verified for this opportunity. Before choosing travel dates, resolve: Water temperature, turnover, depth, access and target-specific timing.",
+      "seasonNote": "Parks Canada lists Clear Lake’s fishing season as May 15 to March 31, with weekend adjustments stated on its rules page. Check current closures before travel. A winter opening does not establish safe ice.",
       "seasonWindows": [],
       "tripTypeIds": [],
       "tripStyleIds": [
@@ -46200,9 +46227,9 @@
         "bank-wading"
       ],
       "operator": {
-        "name": "Open research and trip questions",
-        "type": "Research pending",
-        "url": "/production/north-america/",
+        "name": "Fishery source for Clear Lake / Riding Mountain area",
+        "type": "Research source",
+        "url": "https://parks.canada.ca/pn-np/mb/riding/nature/conserv/lac-clear-lake",
         "note": "A research resource, not a booked trip or Atlas operator partnership. Confirm all inclusions and availability independently."
       },
       "coordinates": [
@@ -46211,11 +46238,47 @@
       ],
       "locationPrecision": "place-area",
       "locationSource": "https://www.openstreetmap.org/way/141110279",
-      "speciesIds": [],
-      "speciesEvidence": [],
+      "speciesIds": [
+        "walleye",
+        "northern-pike"
+      ],
+      "speciesEvidence": [
+        {
+          "speciesId": "walleye",
+          "commonName": "Walleye",
+          "sourceUrls": [
+            "https://parks.canada.ca/pn-np/mb/riding/nature/conserv/lac-clear-lake",
+            "https://parks.canada.ca/pn-np/mb/riding/activ/rec/activ1-fsh"
+          ],
+          "scopeNotes": [
+            "The linked local source lists this fish in this water."
+          ],
+          "status": "reviewed-source",
+          "seasons": [],
+          "seasonStatus": "unverified",
+          "methods": [],
+          "methodStatus": "unverified"
+        },
+        {
+          "speciesId": "northern-pike",
+          "commonName": "Northern pike",
+          "sourceUrls": [
+            "https://parks.canada.ca/pn-np/mb/riding/nature/conserv/lac-clear-lake",
+            "https://parks.canada.ca/pn-np/mb/riding/activ/rec/activ1-fsh"
+          ],
+          "scopeNotes": [
+            "The linked local source lists this fish in this water."
+          ],
+          "status": "reviewed-source",
+          "seasons": [],
+          "seasonStatus": "unverified",
+          "methods": [],
+          "methodStatus": "unverified"
+        }
+      ],
       "speciesReview": {
-        "status": "unverified",
-        "reviewed": "2026-11-10",
+        "status": "source-linked",
+        "reviewed": "2026-11-21",
         "seasonStatus": "unverified",
         "methodStatus": "unverified"
       },
@@ -46275,9 +46338,12 @@
     },
     {
       "id": "na-ca-mb-006",
-      "name": "West Hawk Lake",
+      "name": "West Hawk Lake Trout and Smallmouth Bass Fishing",
       "region": "Canada",
-      "species": [],
+      "species": [
+        "Lake trout",
+        "Smallmouth bass"
+      ],
       "styles": [
         "bank",
         "guidedboat"
@@ -46287,7 +46353,7 @@
       "tripProfile": "na-ca-mb-006",
       "technicalGear": true,
       "guideUrl": "/north-america/canada/manitoba/whiteshell-west-hawk-lake-coldwater-lake-fishing/",
-      "seasonNote": "Dates have not been verified for this opportunity. Before choosing travel dates, resolve: Water temperature, turnover, depth, access and target-specific timing.",
+      "seasonNote": "Choose an open-water or ice-fishing trip before you arrange access. Check the current Manitoba angling guide for West Hawk Lake and any connecting waters. An open season does not establish safe ice, an open ramp or suitable weather.",
       "seasonWindows": [],
       "tripTypeIds": [],
       "tripStyleIds": [
@@ -46295,9 +46361,9 @@
         "bank-wading"
       ],
       "operator": {
-        "name": "Open research and trip questions",
-        "type": "Research pending",
-        "url": "/production/north-america/",
+        "name": "Fishery source for Whiteshell / West Hawk Lake",
+        "type": "Research source",
+        "url": "https://www.gov.mb.ca/nrnd/fish-wildlife/pubs/lifa/pdf/westhawk_map.pdf",
         "note": "A research resource, not a booked trip or Atlas operator partnership. Confirm all inclusions and availability independently."
       },
       "coordinates": [
@@ -46306,11 +46372,45 @@
       ],
       "locationPrecision": "place-area",
       "locationSource": "https://www.openstreetmap.org/relation/2027251",
-      "speciesIds": [],
-      "speciesEvidence": [],
+      "speciesIds": [
+        "lake-trout",
+        "smallmouth-bass"
+      ],
+      "speciesEvidence": [
+        {
+          "speciesId": "lake-trout",
+          "commonName": "Lake trout",
+          "sourceUrls": [
+            "https://www.gov.mb.ca/nrnd/fish-wildlife/pubs/lifa/pdf/westhawk_map.pdf"
+          ],
+          "scopeNotes": [
+            "The linked local source lists this fish in this water."
+          ],
+          "status": "reviewed-source",
+          "seasons": [],
+          "seasonStatus": "unverified",
+          "methods": [],
+          "methodStatus": "unverified"
+        },
+        {
+          "speciesId": "smallmouth-bass",
+          "commonName": "Smallmouth bass",
+          "sourceUrls": [
+            "https://www.gov.mb.ca/nrnd/fish-wildlife/pubs/lifa/pdf/westhawk_map.pdf"
+          ],
+          "scopeNotes": [
+            "The linked local source lists this fish in this water."
+          ],
+          "status": "reviewed-source",
+          "seasons": [],
+          "seasonStatus": "unverified",
+          "methods": [],
+          "methodStatus": "unverified"
+        }
+      ],
       "speciesReview": {
-        "status": "unverified",
-        "reviewed": "2026-11-10",
+        "status": "source-linked",
+        "reviewed": "2026-11-21",
         "seasonStatus": "unverified",
         "methodStatus": "unverified"
       },
@@ -48267,10 +48367,12 @@
     },
     {
       "id": "na-ca-on-013",
-      "name": "Rainy Lake Walleye Fishing from Ontario",
+      "name": "Rainy Lake Walleye and Pike Fishing from Ontario",
       "region": "Canada",
       "species": [
-        "Black crappie"
+        "Black crappie",
+        "Walleye",
+        "Northern pike"
       ],
       "styles": [
         "bank",
@@ -48281,7 +48383,7 @@
       "tripProfile": "na-ca-on-013",
       "technicalGear": true,
       "guideUrl": "/north-america/canada/ontario/rainy-lake-ontario-base-walleye-and-reservoir-fishing/",
-      "seasonNote": "Dates have not been verified for this opportunity. Before choosing travel dates, resolve: Water level, temperature, structure, target and launch accessibility.",
+      "seasonNote": "The Fort Frances guide describes spring and fall as active periods for walleye. These are fishing patterns, not legal opening dates. Check the current Ontario regulations and Rainy Lake exceptions for your species and dates.",
       "seasonWindows": [],
       "tripTypeIds": [],
       "tripStyleIds": [
@@ -48301,7 +48403,9 @@
       "locationPrecision": "place-area",
       "locationSource": "https://www.openstreetmap.org/relation/12311888",
       "speciesIds": [
-        "black-crappie"
+        "black-crappie",
+        "walleye",
+        "northern-pike"
       ],
       "speciesEvidence": [
         {
@@ -48318,11 +48422,41 @@
           "seasonStatus": "unverified",
           "methods": [],
           "methodStatus": "unverified"
+        },
+        {
+          "speciesId": "walleye",
+          "commonName": "Walleye",
+          "sourceUrls": [
+            "https://fortfrances.ca/experience/rainy-lake/fishing-rainy-lake"
+          ],
+          "scopeNotes": [
+            "The linked local source lists this fish in this water."
+          ],
+          "status": "reviewed-source",
+          "seasons": [],
+          "seasonStatus": "unverified",
+          "methods": [],
+          "methodStatus": "unverified"
+        },
+        {
+          "speciesId": "northern-pike",
+          "commonName": "Northern pike",
+          "sourceUrls": [
+            "https://fortfrances.ca/experience/rainy-lake/fishing-rainy-lake"
+          ],
+          "scopeNotes": [
+            "The linked local source lists this fish in this water."
+          ],
+          "status": "reviewed-source",
+          "seasons": [],
+          "seasonStatus": "unverified",
+          "methods": [],
+          "methodStatus": "unverified"
         }
       ],
       "speciesReview": {
         "status": "source-linked",
-        "reviewed": "2026-11-10",
+        "reviewed": "2026-11-21",
         "seasonStatus": "unverified",
         "methodStatus": "unverified"
       },
@@ -144817,7 +144951,7 @@
       },
       {
         "id": "na-ca-mb-005",
-        "title": "Clear Lake: Fishing Near Riding Mountain, Manitoba",
+        "title": "Clear Lake Walleye and Pike Fishing, Riding Mountain",
         "place": "Clear Lake / Riding Mountain area",
         "country": "Canada",
         "region": "North America",
@@ -144825,7 +144959,10 @@
         "subregion": "Prairie Canada",
         "canonicalPath": "/north-america/canada/manitoba/clear-lake-riding-mountain-area-coldwater-lake-fishing/",
         "contentTier": "preparation-brief",
-        "fish": [],
+        "fish": [
+          "Walleye",
+          "Northern pike"
+        ],
         "candidateTargets": "Northern pike / lake trout candidates",
         "tripTypeIds": [],
         "tripTypeNames": [],
@@ -144836,7 +144973,7 @@
       },
       {
         "id": "na-ca-mb-006",
-        "title": "West Hawk Lake: A Manitoba Lake Fishing Getaway",
+        "title": "West Hawk Lake Trout and Smallmouth Bass Fishing",
         "place": "Whiteshell / West Hawk Lake",
         "country": "Canada",
         "region": "North America",
@@ -144844,7 +144981,10 @@
         "subregion": "Prairie Canada",
         "canonicalPath": "/north-america/canada/manitoba/whiteshell-west-hawk-lake-coldwater-lake-fishing/",
         "contentTier": "preparation-brief",
-        "fish": [],
+        "fish": [
+          "Lake trout",
+          "Smallmouth bass"
+        ],
         "candidateTargets": "Lake trout",
         "tripTypeIds": [],
         "tripTypeNames": [],
@@ -145194,7 +145334,7 @@
       },
       {
         "id": "na-ca-on-013",
-        "title": "Rainy Lake Walleye Fishing from Ontario",
+        "title": "Rainy Lake Walleye and Pike Fishing from Ontario",
         "place": "Rainy Lake / Ontario base",
         "country": "Canada",
         "region": "North America",
@@ -145203,7 +145343,9 @@
         "canonicalPath": "/north-america/canada/ontario/rainy-lake-ontario-base-walleye-and-reservoir-fishing/",
         "contentTier": "preparation-brief",
         "fish": [
-          "Black crappie"
+          "Black crappie",
+          "Walleye",
+          "Northern pike"
         ],
         "candidateTargets": "Smallmouth bass / walleye candidates",
         "tripTypeIds": [],

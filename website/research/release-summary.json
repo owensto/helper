@@ -55,11 +55,11 @@
   "states": 50,
   "canadianProvincesTerritories": 13,
   "mexicanStates": 15,
-  "sourceRecords": 1077,
+  "sourceRecords": 1083,
   "freshlyReviewedSourceRecords": 15,
   "freshlyReviewedGuides": 10,
   "redirects": 519,
-  "searchEligibleTrips": 205,
+  "searchEligibleTrips": 208,
   "deployment": "Not deployed; new Netlify site confirmation pending",
   "integrations": {
     "amazonTagConfigured": true,

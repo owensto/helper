@@ -91,6 +91,8 @@ def install(pages, trips, origin, dist):
             assessment['reasons'].append('Production canonical origin is not configured')
         if page.get('redirectTo'):
             assessment['reasons'].append('Trip route redirects to another URL')
+        if path == '/north-america/canada/british-columbia/fraser-river-lower-reach-sturgeon-fishing/':
+            page['body'] = re.sub(r'(<h1[^>]*>.*?</h1>\s*<p[^>]*>.*?</p>)', r'\1<p>Check the <a href="/trip-types/fraser-white-sturgeon/">Fraser River catch and release sturgeon rules and licences</a> before you choose a reach.</p>', page['body'], count=1, flags=re.S)
         # Render the description separately from shared gear modules and navigation.
         local = trip.get('localDescription')
         if local:

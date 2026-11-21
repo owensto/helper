@@ -29380,13 +29380,49 @@
       "country": "Canada",
       "state": "Manitoba",
       "region": "North America",
-      "status": "unverified",
-      "targets": [],
+      "status": "source-linked",
+      "targets": [
+        {
+          "speciesId": "walleye",
+          "commonName": "Walleye",
+          "sourceUrls": [
+            "https://parks.canada.ca/pn-np/mb/riding/nature/conserv/lac-clear-lake",
+            "https://parks.canada.ca/pn-np/mb/riding/activ/rec/activ1-fsh"
+          ],
+          "scopeNotes": [
+            "The linked local source lists this fish in this water."
+          ],
+          "status": "reviewed-source",
+          "seasons": [],
+          "seasonStatus": "unverified",
+          "methods": [],
+          "methodStatus": "unverified"
+        },
+        {
+          "speciesId": "northern-pike",
+          "commonName": "Northern pike",
+          "sourceUrls": [
+            "https://parks.canada.ca/pn-np/mb/riding/nature/conserv/lac-clear-lake",
+            "https://parks.canada.ca/pn-np/mb/riding/activ/rec/activ1-fsh"
+          ],
+          "scopeNotes": [
+            "The linked local source lists this fish in this water."
+          ],
+          "status": "reviewed-source",
+          "seasons": [],
+          "seasonStatus": "unverified",
+          "methods": [],
+          "methodStatus": "unverified"
+        }
+      ],
       "seasons": [],
       "seasonStatus": "unverified",
       "methods": [],
       "methodStatus": "unverified",
-      "sourceUrls": [],
+      "sourceUrls": [
+        "https://parks.canada.ca/pn-np/mb/riding/nature/conserv/lac-clear-lake",
+        "https://parks.canada.ca/pn-np/mb/riding/activ/rec/activ1-fsh"
+      ],
       "researchSourceUrls": [
         "https://parks.canada.ca/pn-np/mb/riding/nature/conserv/lac-clear-lake",
         "https://www.parks.canada.ca/pn-np/mb/riding/activ/rec/activ1-fsh?wbdisable=true",
@@ -29440,8 +29476,8 @@
         "https://en.wikipedia.org/wiki/List_of_lakes_of_Minnesota",
         "https://en.wikipedia.org/wiki/Clear_Lake_%28Canada%29"
       ],
-      "unverifiedCandidates": "Northern pike / lake trout candidates",
-      "reviewed": "2026-11-10"
+      "unverifiedCandidates": null,
+      "reviewed": "2026-11-21"
     },
     {
       "id": "na-ca-mb-006",
@@ -29449,13 +29485,46 @@
       "country": "Canada",
       "state": "Manitoba",
       "region": "North America",
-      "status": "unverified",
-      "targets": [],
+      "status": "source-linked",
+      "targets": [
+        {
+          "speciesId": "lake-trout",
+          "commonName": "Lake trout",
+          "sourceUrls": [
+            "https://www.gov.mb.ca/nrnd/fish-wildlife/pubs/lifa/pdf/westhawk_map.pdf"
+          ],
+          "scopeNotes": [
+            "The linked local source lists this fish in this water."
+          ],
+          "status": "reviewed-source",
+          "seasons": [],
+          "seasonStatus": "unverified",
+          "methods": [],
+          "methodStatus": "unverified"
+        },
+        {
+          "speciesId": "smallmouth-bass",
+          "commonName": "Smallmouth bass",
+          "sourceUrls": [
+            "https://www.gov.mb.ca/nrnd/fish-wildlife/pubs/lifa/pdf/westhawk_map.pdf"
+          ],
+          "scopeNotes": [
+            "The linked local source lists this fish in this water."
+          ],
+          "status": "reviewed-source",
+          "seasons": [],
+          "seasonStatus": "unverified",
+          "methods": [],
+          "methodStatus": "unverified"
+        }
+      ],
       "seasons": [],
       "seasonStatus": "unverified",
       "methods": [],
       "methodStatus": "unverified",
-      "sourceUrls": [],
+      "sourceUrls": [
+        "https://www.gov.mb.ca/nrnd/fish-wildlife/pubs/lifa/pdf/westhawk_map.pdf"
+      ],
       "researchSourceUrls": [
         "https://embed-rech-01.dialog.cm/travelmanitoba/docs/manitoba_anglers_guide_2026",
         "https://www.manitoba.ca/sd/parks/education-and-interpretation/whiteshell_fishhatchery.html",
@@ -29514,8 +29583,8 @@
         "https://www.reddit.com/r/Manitoba/comments/15ny0bn",
         "https://www.reddit.com/r/Winnipeg/comments/1n736e6"
       ],
-      "unverifiedCandidates": "Lake trout",
-      "reviewed": "2026-11-10"
+      "unverifiedCandidates": null,
+      "reviewed": "2026-11-21"
     },
     {
       "id": "na-ca-mb-007",
@@ -30980,6 +31049,36 @@
           "seasonStatus": "unverified",
           "methods": [],
           "methodStatus": "unverified"
+        },
+        {
+          "speciesId": "walleye",
+          "commonName": "Walleye",
+          "sourceUrls": [
+            "https://fortfrances.ca/experience/rainy-lake/fishing-rainy-lake"
+          ],
+          "scopeNotes": [
+            "The linked local source lists this fish in this water."
+          ],
+          "status": "reviewed-source",
+          "seasons": [],
+          "seasonStatus": "unverified",
+          "methods": [],
+          "methodStatus": "unverified"
+        },
+        {
+          "speciesId": "northern-pike",
+          "commonName": "Northern pike",
+          "sourceUrls": [
+            "https://fortfrances.ca/experience/rainy-lake/fishing-rainy-lake"
+          ],
+          "scopeNotes": [
+            "The linked local source lists this fish in this water."
+          ],
+          "status": "reviewed-source",
+          "seasons": [],
+          "seasonStatus": "unverified",
+          "methods": [],
+          "methodStatus": "unverified"
         }
       ],
       "seasons": [],
@@ -30987,7 +31086,8 @@
       "methods": [],
       "methodStatus": "unverified",
       "sourceUrls": [
-        "https://www.ontario.ca/page/rainy-lake-islands-conservation-reserve-management-statement"
+        "https://www.ontario.ca/page/rainy-lake-islands-conservation-reserve-management-statement",
+        "https://fortfrances.ca/experience/rainy-lake/fishing-rainy-lake"
       ],
       "researchSourceUrls": [
         "https://www.ontario.ca/document/ontario-fishing-regulations-summary",
@@ -31040,7 +31140,7 @@
         "https://www.reddit.com/r/flytying/comments/unqgw9"
       ],
       "unverifiedCandidates": null,
-      "reviewed": "2026-11-10"
+      "reviewed": "2026-11-21"
     },
     {
       "id": "na-ca-on-014",

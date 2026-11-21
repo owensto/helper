@@ -5179,14 +5179,14 @@
   },
   "/north-america/canada/manitoba/clear-lake-riding-mountain-area-coldwater-lake-fishing/": {
     "kind": "article",
-    "title": "Clear Lake: Fishing Near Riding Mountain, Manitoba",
-    "noindex": true,
+    "title": "Clear Lake Walleye and Pike Fishing, Riding Mountain",
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/canada/manitoba/whiteshell-west-hawk-lake-coldwater-lake-fishing/": {
     "kind": "article",
-    "title": "West Hawk Lake: A Manitoba Lake Fishing Getaway | Castward",
-    "noindex": true,
+    "title": "West Hawk Lake Trout and Smallmouth Bass Fishing | Castward",
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/canada/manitoba/winnipeg-river-pinawa-walleye-and-reservoir-fishing/": {
@@ -5287,8 +5287,8 @@
   },
   "/north-america/canada/ontario/rainy-lake-ontario-base-walleye-and-reservoir-fishing/": {
     "kind": "article",
-    "title": "Rainy Lake Walleye Fishing from Ontario | Castward",
-    "noindex": true,
+    "title": "Rainy Lake Walleye and Pike Fishing from Ontario | Castward",
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/canada/ontario/eagle-lake-northwest-ontario-large-freshwater-predators/": {
@@ -9793,7 +9793,7 @@
   },
   "/trip-types/fraser-white-sturgeon/": {
     "kind": "article",
-    "title": "Fraser River sturgeon: catch-and-release rules",
+    "title": "Fraser River catch and release sturgeon: rules & licences",
     "noindex": false,
     "redirectTo": null
   },
@@ -10261,7 +10261,7 @@
   },
   "/species/american-eel/": {
     "kind": "species-detail",
-    "title": "American eel fishing, local names and destinations",
+    "title": "American eel (Anguilla rostrata): size, range, life cycle",
     "noindex": false,
     "redirectTo": null
   },
@@ -10993,7 +10993,7 @@
   },
   "/species/bull-trout/": {
     "kind": "species-detail",
-    "title": "Bull trout fishing, local names and destinations | Castward",
+    "title": "Bull trout (Salvelinus confluentus): size, range, ID",
     "noindex": false,
     "redirectTo": null
   },
@@ -11737,7 +11737,7 @@
   },
   "/species/golden-trout/": {
     "kind": "species-detail",
-    "title": "Golden trout fishing, local names and destinations",
+    "title": "Golden trout: native range, size and identification",
     "noindex": false,
     "redirectTo": null
   },
@@ -12253,7 +12253,7 @@
   },
   "/species/lake-sturgeon/": {
     "kind": "species-detail",
-    "title": "Lake sturgeon fishing, local names and destinations",
+    "title": "Lake sturgeon (Acipenser fulvescens): size, age, range",
     "noindex": false,
     "redirectTo": null
   },

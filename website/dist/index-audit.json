@@ -5616,28 +5616,28 @@
   {
     "id": "na-ca-mb-005",
     "place": "Clear Lake / Riding Mountain area",
-    "eligible": false,
-    "verifiedSpeciesIds": [],
-    "descriptionWords": 0,
+    "eligible": true,
+    "verifiedSpeciesIds": [
+      "northern-pike",
+      "walleye"
+    ],
+    "descriptionWords": 174,
     "seasonSection": true,
     "canonicalPath": "/north-america/canada/manitoba/clear-lake-riding-mountain-area-coldwater-lake-fishing/",
-    "reasons": [
-      "Only 0 verified individual target species with source links; at least 2 required",
-      "Water-specific description has 0 words; at least 120 required"
-    ]
+    "reasons": []
   },
   {
     "id": "na-ca-mb-006",
     "place": "Whiteshell / West Hawk Lake",
-    "eligible": false,
-    "verifiedSpeciesIds": [],
-    "descriptionWords": 0,
+    "eligible": true,
+    "verifiedSpeciesIds": [
+      "lake-trout",
+      "smallmouth-bass"
+    ],
+    "descriptionWords": 174,
     "seasonSection": true,
     "canonicalPath": "/north-america/canada/manitoba/whiteshell-west-hawk-lake-coldwater-lake-fishing/",
-    "reasons": [
-      "Only 0 verified individual target species with source links; at least 2 required",
-      "Water-specific description has 0 words; at least 120 required"
-    ]
+    "reasons": []
   },
   {
     "id": "na-ca-mb-007",
@@ -5861,17 +5861,16 @@
   {
     "id": "na-ca-on-013",
     "place": "Rainy Lake / Ontario base",
-    "eligible": false,
+    "eligible": true,
     "verifiedSpeciesIds": [
-      "black-crappie"
+      "black-crappie",
+      "northern-pike",
+      "walleye"
     ],
-    "descriptionWords": 0,
+    "descriptionWords": 166,
     "seasonSection": true,
     "canonicalPath": "/north-america/canada/ontario/rainy-lake-ontario-base-walleye-and-reservoir-fishing/",
-    "reasons": [
-      "Only 1 verified individual target species with source links; at least 2 required",
-      "Water-specific description has 0 words; at least 120 required"
-    ]
+    "reasons": []
   },
   {
     "id": "na-ca-on-014",

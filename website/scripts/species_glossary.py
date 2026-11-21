@@ -113,10 +113,12 @@ def install(pages, root, add, trips, data):
             body += '<div class="wrap field-reference"><p class="small">Updated ' + E(answer['updated']) + ' · ' + link('/about/', 'Castward') + '</p>'
             body += '<section><h2>' + E(answer['question']) + '</h2><div class="field-table-scroll" role="region" tabindex="0" aria-label="Species key facts"><table><thead><tr><th scope="col">Key fact</th><th scope="col">Detail</th></tr></thead><tbody>'
             body += ''.join('<tr><th scope="row">' + E(k) + '</th><td>' + E(v) + '</td></tr>' for k, v in answer['facts']) + '</tbody></table></div></section>'
+            for section in answer.get('sections', []):
+                body += '<section><h2>' + E(section['question']) + '</h2><p>' + E(section['answer']) + '</p><p>' + link(section['source'], 'Read the source') + '</p></section>'
             body += '<section><h2>What should you know about ' + E(s['name'].lower()) + '?</h2>' + ''.join('<details><summary>' + E(q) + '</summary><p>' + E(a) + '</p></details>' for q, a in answer['faq']) + '</section>'
             body += '<details><summary>Sources (' + str(len(answer['sources'])) + ')</summary><ul>' + ''.join('<li>' + link(u, label) + '</li>' for label, u in answer['sources']) + '</ul><p class="small">Checked November 2026</p></details></div>'
             schema = {'@context': 'https://schema.org', '@graph': [
-                {'@type': 'Article', 'headline': answer['title'], 'dateModified': answer['updated'], 'author': {'@type': 'Organization', 'name': 'Castward', 'url': 'https://castward.app/about/'}, 'citation': [u for _, u in answer['sources']]},
+                {'@type': 'Article', 'headline': answer['title'], 'url': 'https://castward.app' + species_url(s['id']), 'mainEntityOfPage': 'https://castward.app' + species_url(s['id']), 'dateModified': answer['updated'], 'author': {'@type': 'Organization', 'name': 'Castward', 'url': 'https://castward.app/about/'}, 'citation': [u for _, u in answer['sources']]},
                 {'@type': 'FAQPage', 'mainEntity': [{'@type': 'Question', 'name': q, 'acceptedAnswer': {'@type': 'Answer', 'text': a}} for q, a in answer['faq']]}
             ]}
             body += '<script type="application/ld+json">' + json.dumps(schema).replace('</', '<\\/') + '</script>'
@@ -148,6 +150,8 @@ def install(pages, root, add, trips, data):
             body += '<section><h2>What else should a first-time bass angler know?</h2>' + ''.join('<details><summary>' + E(q) + '</summary><p>' + E(a) + '</p></details>' for q, a in questions) + '</section><details><summary>Sources (2)</summary><ul><li>' + link('https://www.dnr.state.mn.us/gofishing/how-catch-largemouth-bass.html', 'Minnesota DNR: where and how to catch largemouth bass') + '</li><li>' + link('https://www.dnr.state.mn.us/minnaqua/speciesprofile/largemouthbass.html', 'Minnesota DNR: shore access and beginner bait') + '</li></ul><p class="small">Checked November 2026</p></details><p>' + link('/environments/lakes-reservoirs/', 'Choose a lake trip') + ' · ' + link('/atlas/', 'Find a water on the map') + ' · ' + link('/fishing-licenses/', 'Check the licence') + '</p></div>'
             body += '<script type="application/ld+json">' + json.dumps({'@context':'https://schema.org','@type':'FAQPage','mainEntity':[{'@type':'Question','name':q,'acceptedAnswer':{'@type':'Answer','text':a}} for q,a in questions]}).replace('</','<\\/') + '</script>'
         body += '<div class="wrap field-reference field-detail"><article><nav class="field-local-nav" aria-label="Species sections">' + ' · '.join(link('#' + anchor, label) for anchor, label in [('where-to-fish', 'Where to fish'), ('local-names', 'Local names'), ('seasons', 'Seasons'), ('regulations', 'Rules')]) + '</nav>'
+        if s['id'] in ('northern-pike', 'lake-trout'):
+            body += '<p>Compare Canadian waters in ' + link('/north-america/canada/manitoba/', 'Manitoba') + ', ' + link('/north-america/canada/saskatchewan/', 'Saskatchewan') + ' and ' + link('/north-america/canada/quebec/', 'Quebec') + ' before you choose your base.</p>'
         body += '<section id="where-to-fish"><h2>Where to fish</h2>'
         matches = matched[s['id']]
         if matches:
@@ -235,7 +239,7 @@ def install(pages, root, add, trips, data):
                 body += '<details><summary>Sources</summary>' + source_links(entry['sourceUrls']) + '</details></dd>'
             body += '</div>'
         body += '</dl></section>'
-    body += '<p id="glossary-empty" hidden>No term matches these filters. Try another word or region.</p></section>' + assets
+    body += '<p id="glossary-empty" hidden>No matching word. Try a fish name or choose another region.</p></section>' + assets
     add('/glossary/', 'World fishing glossary: local fish names, methods and gear | Castward', 'Search ' + str(len(terms)) + ' fishing terms by name and region, including rockfish, yelloweye, lingcod, carp tackle and barra fishing.', body, 'glossary')
 
     for d in destinations:

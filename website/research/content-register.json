@@ -130,7 +130,7 @@
     "Asia",
     "Oceania"
   ],
-  "sources": 1077,
+  "sources": 1083,
   "articles": [
     {
       "id": "situk-coho-river",
@@ -6105,7 +6105,10 @@
       "id": "na-ca-mb-005",
       "type": "trip",
       "words": 211,
-      "sources": [],
+      "sources": [
+        "species-5c3ed96714ab",
+        "species-997da8a83314"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -6118,7 +6121,9 @@
       "id": "na-ca-mb-006",
       "type": "trip",
       "words": 209,
-      "sources": [],
+      "sources": [
+        "species-c026ff8bce92"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",
@@ -6363,7 +6368,8 @@
       "type": "trip",
       "words": 203,
       "sources": [
-        "species-77e089e9b1ec"
+        "species-77e089e9b1ec",
+        "species-22a4e4e0bd4a"
       ],
       "review": {
         "checked": null,

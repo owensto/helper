@@ -16679,13 +16679,19 @@
       "location": "Clear Lake / Riding Mountain area",
       "url": "/north-america/canada/manitoba/clear-lake-riding-mountain-area-coldwater-lake-fishing/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
-      "sourceIds": [],
+      "indexEligible": true,
+      "sourceIds": [
+        "species-5c3ed96714ab",
+        "species-997da8a83314"
+      ],
       "evidenceDepth": "Production brief; local fishery claims not yet verified",
       "localDecision": "Verify current target and access conditions before choosing tackle or a trip format.",
       "candidateTargets": "Northern pike / lake trout candidates",
-      "confirmedTargets": [],
-      "seasonalEvidence": "Dates have not been verified for this opportunity. Before choosing travel dates, resolve: Water temperature, turnover, depth, access and target-specific timing.",
+      "confirmedTargets": [
+        "Walleye",
+        "Northern pike"
+      ],
+      "seasonalEvidence": "Parks Canada lists Clear Lake’s fishing season as May 15 to March 31, with weekend adjustments stated on its rules page. Check current closures before travel. A winter opening does not establish safe ice.",
       "accessToVerify": "Shore, small boat or guided boat",
       "tackleDecision": "Choose shore casting, fly stillwater, jigging or trolling before rod/line selection",
       "operatorQuestion": "Boat electronics and trolling hardware when guided",
@@ -16716,13 +16722,18 @@
       "location": "Whiteshell / West Hawk Lake",
       "url": "/north-america/canada/manitoba/whiteshell-west-hawk-lake-coldwater-lake-fishing/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
-      "sourceIds": [],
+      "indexEligible": true,
+      "sourceIds": [
+        "species-c026ff8bce92"
+      ],
       "evidenceDepth": "Production brief; local fishery claims not yet verified",
       "localDecision": "Research launch, shore practicality and target depths for a short drive-in trip.",
       "candidateTargets": "Lake trout",
-      "confirmedTargets": [],
-      "seasonalEvidence": "Dates have not been verified for this opportunity. Before choosing travel dates, resolve: Water temperature, turnover, depth, access and target-specific timing.",
+      "confirmedTargets": [
+        "Lake trout",
+        "Smallmouth bass"
+      ],
+      "seasonalEvidence": "Choose an open-water or ice-fishing trip before you arrange access. Check the current Manitoba angling guide for West Hawk Lake and any connecting waters. An open season does not establish safe ice, an open ramp or suitable weather.",
       "accessToVerify": "Shore, small boat or guided boat",
       "tackleDecision": "Choose shore casting, fly stillwater, jigging or trolling before rod/line selection",
       "operatorQuestion": "Boat electronics and trolling hardware when guided",
@@ -17398,17 +17409,20 @@
       "location": "Rainy Lake / Ontario base",
       "url": "/north-america/canada/ontario/rainy-lake-ontario-base-walleye-and-reservoir-fishing/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
-        "species-77e089e9b1ec"
+        "species-77e089e9b1ec",
+        "species-22a4e4e0bd4a"
       ],
       "evidenceDepth": "Production brief; local fishery claims not yet verified",
       "localDecision": "Use a shared international lake record with Ontario-only itinerary assumptions.",
       "candidateTargets": "Smallmouth bass / walleye candidates",
       "confirmedTargets": [
-        "Black crappie"
+        "Black crappie",
+        "Walleye",
+        "Northern pike"
       ],
-      "seasonalEvidence": "Dates have not been verified for this opportunity. Before choosing travel dates, resolve: Water level, temperature, structure, target and launch accessibility.",
+      "seasonalEvidence": "The Fort Frances guide describes spring and fall as active periods for walleye. These are fishing patterns, not legal opening dates. Check the current Ontario regulations and Rainy Lake exceptions for your species and dates.",
       "accessToVerify": "Boat, bank or guided trip",
       "tackleDecision": "Match jigging, live-bait or trolling system; no universal rod-and-lure bundle",
       "operatorQuestion": "Electronics, trolling equipment and bait sourcing",

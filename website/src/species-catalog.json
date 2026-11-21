@@ -97302,7 +97302,113 @@
           "note": "Check the rules for the exact water, date, licence and fish identification. This link does not establish an open season."
         }
       ],
-      "referenceRole": "game fish"
+      "referenceRole": "game fish",
+      "searchAnswer": {
+        "title": "Golden trout: native range, size and identification",
+        "description": "Identify California golden trout, compare stream and lake sizes, and find official sources for native waters, access and fishing rules.",
+        "updated": "2026-11-21",
+        "answer": "California golden trout (Oncorhynchus aguabonita) are native to Golden Trout Creek and the South Fork Kern River in California. Look for gold sides, an orange-red belly and dark oval marks along the flank. Fish in small native streams grow much less than some introduced lake fish; compare size figures carefully.",
+        "question": "How big do golden trout get?",
+        "facts": [
+          [
+            "Scientific name",
+            "Oncorhynchus aguabonita; some agency reports use Oncorhynchus mykiss aguabonita."
+          ],
+          [
+            "Native range",
+            "Golden Trout Creek and South Fork Kern River, California (CDFW)."
+          ],
+          [
+            "Native-stream size",
+            "The CDFW species report gives a maximum of 19–20 cm standard length in studied streams."
+          ],
+          [
+            "Introduced lake populations",
+            "The same report describes 35–43 cm fork length by age seven. Standard length and fork length are different measurements."
+          ],
+          [
+            "Historical California record",
+            "CDFW reports a 4.5 kg fish from Virginia Lake in 1952, with a warning that introduced lake populations can contain rainbow trout hybrids. This is not a current world-record claim."
+          ],
+          [
+            "Identification",
+            "Gold flanks, olive back, red-orange belly, and dark marks along the side; most spots lie toward the tail (CDFW)."
+          ],
+          [
+            "Conservation",
+            "California Species of Special Concern (CDFW)."
+          ]
+        ],
+        "faq": [
+          [
+            "Where are golden trout native?",
+            "Their native waters are Golden Trout Creek and the South Fork Kern River. Stocked populations in other high lakes do not extend that native range."
+          ],
+          [
+            "Why do lake golden trout grow larger?",
+            "The CDFW report separates growth in small native streams from introduced alpine lakes. It also warns that hybrid ancestry complicates some lake-size records."
+          ],
+          [
+            "How can you identify a golden trout?",
+            "Check several marks together: gold sides, an orange-red belly, an olive back and dark flank marks. Colour alone does not establish genetic purity."
+          ],
+          [
+            "What flies can you use for golden trout?",
+            "CDFW names dry flies and terrestrial patterns for wilderness creeks. Small lures can also work, but bankside vegetation can limit a cast. Check tackle rules for the water."
+          ],
+          [
+            "Can you drive to golden trout waters?",
+            "Many Kern Plateau waters require a trail approach. CDFW notes road access near parts of the South Fork Kern around Kennedy, Troy and Monache meadows."
+          ],
+          [
+            "Where can you check golden trout fishing rules?",
+            "Use the California inland regulations and the named water entry before your trip. A species range map does not establish an open season or permission to keep fish."
+          ]
+        ],
+        "sources": [
+          [
+            "CDFW: identification and fishing access",
+            "https://wildlife.ca.gov/Fishing/Inland/California-Golden-Trout"
+          ],
+          [
+            "CDFW: native range and conservation",
+            "https://wildlife.ca.gov/Conservation/Fishes/California-Golden-Trout"
+          ],
+          [
+            "CDFW: golden trout species report, size and record limits",
+            "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=104274"
+          ],
+          [
+            "CDFW: current inland fishing regulations",
+            "https://wildlife.ca.gov/Regulations"
+          ],
+          [
+            "West Virginia DNR: golden rainbow trout",
+            "https://wvdnr.gov/plants-animals/sportfish/golden-trout/"
+          ],
+          [
+            "USFWS: Little Kern golden trout",
+            "https://www.fws.gov/species/little-kern-golden-trout-oncorhynchus-mykiss-whitei"
+          ]
+        ],
+        "sections": [
+          {
+            "question": "Are California golden trout the same as golden rainbow trout?",
+            "answer": "No. West Virginia’s golden rainbow trout are a selectively bred colour strain of rainbow trout. California golden trout come from the Kern River watershed. Match the scientific name and location when you compare the two; a yellow fish in an eastern stocking programme is not evidence of California golden trout.",
+            "source": "https://wvdnr.gov/plants-animals/sportfish/golden-trout/"
+          },
+          {
+            "question": "How do Little Kern golden trout differ?",
+            "answer": "Little Kern golden trout belong to the Little Kern River drainage. The U.S. Fish and Wildlife Service names them Oncorhynchus mykiss whitei. California golden trout belong to Golden Trout Creek and the South Fork Kern River. Use the drainage and scientific name together when you choose a water or read its rules.",
+            "source": "https://www.fws.gov/species/little-kern-golden-trout-oncorhynchus-mykiss-whitei"
+          },
+          {
+            "question": "Why do native golden trout need protection?",
+            "answer": "CDFW lists California golden trout as a Species of Special Concern. Introduced trout can compete with them, prey on them or interbreed with them. Habitat damage also affects their small native range. Before a backcountry trip, check the current water-specific rules and avoid moving fish between streams or lakes.",
+            "source": "https://wildlife.ca.gov/Conservation/Fishes/California-Golden-Trout"
+          }
+        ]
+      }
     },
     {
       "id": "goldfish",
