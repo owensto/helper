@@ -4221,7 +4221,92 @@
           "note": "Check the rules for the exact water, date, licence and fish identification. This link does not establish an open season."
         }
       ],
-      "referenceRole": "game fish"
+      "referenceRole": "game fish",
+      "searchAnswer": {
+        "title": "American eel (Anguilla rostrata): size, range, life cycle",
+        "description": "American eel is Anguilla rostrata, the only freshwater eel of North America. See its size, range, Sargasso Sea life cycle, food and habitat, with sources.",
+        "answer": "The American eel is Anguilla rostrata, the only freshwater eel found in North America. It lives in rivers, lakes and estuaries from Greenland to Venezuela, then swims to the Sargasso Sea to spawn once and die. The U.S. Fish and Wildlife Service says females grow up to 4 feet long and males reach about 1.5 feet.",
+        "question": "What is an American eel?",
+        "facts": [
+          [
+            "Scientific name",
+            "Anguilla rostrata"
+          ],
+          [
+            "How to identify it",
+            "Long, snake-like body with small fins and a slick mucous layer. The tail fin is rounded and joined to the dorsal and anal fins, and the lower jaw is longer than the upper (FishBase)"
+          ],
+          [
+            "Colour",
+            "Usually brownish to blue-black above and white or light below; the colour varies (FishBase)"
+          ],
+          [
+            "Size",
+            "Females up to 4 feet, males about 1.5 feet, weight up to nine pounds (U.S. Fish and Wildlife Service). FishBase records a maximum of 152 cm and 7.3 kg, and a common length of 50 cm"
+          ],
+          [
+            "Life span",
+            "Five to more than 40 years (U.S. Fish and Wildlife Service). FishBase records a maximum reported age of 43 years"
+          ],
+          [
+            "Range",
+            "Coasts and rivers from Greenland through Canada and the United States, south to Venezuela. In the United States: Atlantic and Gulf Coast rivers, the Mississippi River and tributaries, Lake Champlain and Lake Ontario"
+          ],
+          [
+            "Life cycle",
+            "Catadromous: it grows in fresh and brackish water and spawns in the Sargasso Sea. Larvae drift on ocean currents for up to a year and reach the coast as glass eels 2 to 3 inches long"
+          ],
+          [
+            "Habitat",
+            "Streams, rivers and muddy or silt-bottomed lakes. By day it hides near snags, plants, undercut banks, logs and boulders"
+          ],
+          [
+            "Food",
+            "It hunts at night for crustaceans, insects, worms and other fish"
+          ]
+        ],
+        "faq": [
+          [
+            "Where do American eels live?",
+            "The U.S. Fish and Wildlife Service lists the coasts of Greenland, Canada and the United States, south to Venezuela. In the United States they move up Atlantic and Gulf Coast rivers, including the Mississippi River and its tributaries, and they occur in Lake Champlain and Lake Ontario."
+          ],
+          [
+            "Where do American eels spawn?",
+            "In the Sargasso Sea, an area of warm water in the North Atlantic between the West Indies and the Azores. Mature eels leave their rivers and estuaries, spawn there and die. All American eels form a single breeding population."
+          ],
+          [
+            "How big do American eels get?",
+            "The U.S. Fish and Wildlife Service says females grow up to 4 feet, males reach only 1.5 feet, and an eel can weigh up to nine pounds. FishBase gives a common length of 50 cm."
+          ],
+          [
+            "How long do American eels live?",
+            "From five to more than 40 years, according to the U.S. Fish and Wildlife Service. Eels grow and mature more quickly in estuaries than in fresh water."
+          ],
+          [
+            "What do American eels eat?",
+            "They feed at night on crustaceans, small insects, worms and other fish. During the day they hide in shelter close to shore."
+          ],
+          [
+            "Is the American eel a freshwater or a saltwater fish?",
+            "Both. It hatches in the ocean, grows in rivers, lakes or brackish estuaries, and returns to the ocean to spawn. This life cycle is called catadromous."
+          ],
+          [
+            "Can you fish for American eel?",
+            "FishBase notes that adults are caught with eel pots and trot lines. Size limits, bag limits and seasons differ by state and province, so read the rules of the fisheries agency for the exact water and date."
+          ]
+        ],
+        "sources": [
+          [
+            "U.S. Fish and Wildlife Service: American eel",
+            "https://www.fws.gov/species/american-eel-anguilla-rostrata"
+          ],
+          [
+            "FishBase: Anguilla rostrata",
+            "https://www.fishbase.se/summary/296"
+          ]
+        ],
+        "updated": "2026-11-21"
+      }
     },
     {
       "id": "american-shad",
@@ -53137,7 +53222,92 @@
           "note": "Check the rules for the exact water, date, licence and fish identification. This link does not establish an open season."
         }
       ],
-      "referenceRole": "game fish"
+      "referenceRole": "game fish",
+      "searchAnswer": {
+        "title": "Bull trout (Salvelinus confluentus): size, range, ID",
+        "description": "Bull trout is Salvelinus confluentus, a char of cold rivers and lakes in northwestern North America. See its size, range, habitat and spawning, with sources.",
+        "answer": "The bull trout is Salvelinus confluentus, a char native to the Pacific Northwest, Alaska and Canada. It is olive in colour with pale orange, round spots on its sides. The U.S. Fish and Wildlife Service gives a common length of 25 inches. It needs cold, clean, complex and connected water, mostly deep pools of large, cold rivers and lakes.",
+        "question": "What is a bull trout?",
+        "facts": [
+          [
+            "Scientific name",
+            "Salvelinus confluentus; a char"
+          ],
+          [
+            "Other names",
+            "Bull char; omble à tête plate in Canadian French (FishBase)"
+          ],
+          [
+            "How to identify it",
+            "Olive or drab body with pale orange, round spots along the sides"
+          ],
+          [
+            "Size",
+            "Common length 25 inches; maximum reported 40.5 inches and 31 pounds 15 ounces (U.S. Fish and Wildlife Service)"
+          ],
+          [
+            "Range",
+            "Northwestern North America from Alaska to northern California. FishBase lists Arctic, Pacific and Missouri River drainages from southern Yukon to northern Nevada and the McCloud River drainage"
+          ],
+          [
+            "Habitat",
+            "Deep pools of large, cold rivers and lakes; most common in high mountain areas with snowfields and glaciers"
+          ],
+          [
+            "The Four Cs",
+            "Cold, clean, complex and connected habitat"
+          ],
+          [
+            "Spawning",
+            "Usually August to November, in small streams over clean gravel. Females lay about 5,000 eggs on average, and the eggs stay in the gravel for up to 210 days"
+          ],
+          [
+            "Maturity",
+            "Usually at four to seven years; a fish may spawn each year or every second year"
+          ]
+        ],
+        "faq": [
+          [
+            "Is a bull trout a trout or a char?",
+            "It is a char. The U.S. Fish and Wildlife Service describes bull trout as a char native to the Pacific Northwest, Alaska and Canada. Its genus, Salvelinus, is the char genus."
+          ],
+          [
+            "How big do bull trout get?",
+            "The U.S. Fish and Wildlife Service gives a common length of 25 inches, a maximum reported length of 40.5 inches and a maximum reported weight of 31 pounds 15 ounces. These are record figures, not a promised catch size."
+          ],
+          [
+            "Where do bull trout live?",
+            "In northwestern North America, from Alaska to northern California, in mountain and coastal streams. They are most common in high mountain areas and stay mainly in deep pools of large, cold rivers and lakes."
+          ],
+          [
+            "What are the Four Cs of bull trout habitat?",
+            "Cold, clean, complex and connected. The U.S. Fish and Wildlife Service uses these four words for the water that bull trout need."
+          ],
+          [
+            "Do bull trout migrate?",
+            "Most do. Some stay in one stream for life, but most move to larger rivers or lakes to feed and spend the winter, then return to small streams to spawn. A rare form goes to the sea."
+          ],
+          [
+            "When do bull trout spawn?",
+            "Typically between August and November, and sometimes as late as December. Females dig nests, called redds, in clean gravel."
+          ],
+          [
+            "Can you fish for bull trout?",
+            "It depends on the water. The U.S. Fish and Wildlife Service lists habitat damage, dams and non-native fish as pressures on bull trout, and rules can prohibit harvest. Read the rules of the state or provincial fisheries agency for the exact water and date before you fish."
+          ]
+        ],
+        "sources": [
+          [
+            "U.S. Fish and Wildlife Service: bull trout",
+            "https://www.fws.gov/species/bull-trout-salvelinus-confluentus"
+          ],
+          [
+            "FishBase: Salvelinus confluentus",
+            "https://www.fishbase.se/summary/2690"
+          ]
+        ],
+        "updated": "2026-11-21"
+      }
     },
     {
       "id": "burbot",
@@ -125112,7 +125282,92 @@
           "note": "Check the rules for the exact water, date, licence and fish identification. This link does not establish an open season."
         }
       ],
-      "referenceRole": "game fish"
+      "referenceRole": "game fish",
+      "searchAnswer": {
+        "title": "Lake sturgeon (Acipenser fulvescens): size, age, range",
+        "description": "Lake sturgeon is Acipenser fulvescens, one of the largest freshwater fish in North America. See its size, age, range, food and how to identify it, with sources.",
+        "answer": "The lake sturgeon is Acipenser fulvescens, one of the largest freshwater fish in North America. The U.S. Fish and Wildlife Service says adults are usually 4 to 6 feet long and 30 to 80 pounds, and live 50 to 100 years. It has a shark-like tail and bony plates, and it lives on the bottom of large lakes and rivers.",
+        "question": "What is a lake sturgeon?",
+        "facts": [
+          [
+            "Scientific name",
+            "Acipenser fulvescens"
+          ],
+          [
+            "How to identify it",
+            "Shark-like tail, a covering of bony plates, and four whisker-like barbels in front of a toothless mouth that extends to suck up food"
+          ],
+          [
+            "Typical adult size",
+            "4 to 6 feet and 30 to 80 pounds (U.S. Fish and Wildlife Service)"
+          ],
+          [
+            "Largest fish",
+            "About 7 feet and 200 to 300 pounds (U.S. Fish and Wildlife Service). FishBase records a maximum length of 274 cm and a maximum published weight of 125 kg"
+          ],
+          [
+            "Life span",
+            "Usually 50 to 100 years; the oldest reach about 150 years. FishBase records a maximum reported age of 152 years"
+          ],
+          [
+            "First spawning",
+            "At 10 to 30 years old, and not every year"
+          ],
+          [
+            "Range",
+            "St. Lawrence, Hudson Bay, Great Lakes, Mississippi River and Coosa River watersheds: five Canadian provinces and 24 U.S. states"
+          ],
+          [
+            "Habitat",
+            "The bottom of large lakes and rivers, usually in 5 to 9 metres of water over mud, sand and gravel (FishBase). It moves into rocky, fast river water to spawn"
+          ],
+          [
+            "Food",
+            "Snails, crayfish, mussels and aquatic insects; sometimes small fish and eggs"
+          ]
+        ],
+        "faq": [
+          [
+            "How big do lake sturgeon get?",
+            "The U.S. Fish and Wildlife Service says the largest and oldest fish grow to about 7 feet and 200 to 300 pounds. A typical adult is 4 to 6 feet and 30 to 80 pounds. These are size records and typical figures, not a promised catch size."
+          ],
+          [
+            "How long do lake sturgeon live?",
+            "Typical adults live 50 to 100 years, and the oldest reach about 150 years, according to the U.S. Fish and Wildlife Service. FishBase records a maximum reported age of 152 years."
+          ],
+          [
+            "Where do lake sturgeon live?",
+            "They live in the St. Lawrence, Hudson Bay, Great Lakes, Mississippi River and Coosa River watersheds. In Canada that covers Alberta, Saskatchewan, Manitoba, Ontario and Quebec. In the United States the range crosses 24 states."
+          ],
+          [
+            "Do lake sturgeon live only in lakes?",
+            "No. The U.S. Fish and Wildlife Service says they do well in lakes and in rivers. Adults move into large rivers to lay eggs over gravel, cobble and boulders in fast water."
+          ],
+          [
+            "What do lake sturgeon eat?",
+            "They feed on the bottom. Four barbels help them find snails, crayfish, mussels and aquatic insects, and sometimes small fish and eggs. They have no teeth and suck food up with an extendable mouth."
+          ],
+          [
+            "Can you fish for lake sturgeon?",
+            "Only where and when the state or province allows it. The U.S. Fish and Wildlife Service says harvest is heavily regulated and monitored. Rules differ by water and can prohibit harvest, so read the rules of the fisheries agency for the exact water and date."
+          ],
+          [
+            "Is the lake sturgeon an endangered species?",
+            "The U.S. Fish and Wildlife Service species record shows a finding of April 23, 2024 that a federal listing was not warranted. States and provinces set their own protection. Check the agency for your water."
+          ]
+        ],
+        "sources": [
+          [
+            "U.S. Fish and Wildlife Service: lake sturgeon",
+            "https://www.fws.gov/species/lake-sturgeon-acipenser-fulvescens"
+          ],
+          [
+            "FishBase: Acipenser fulvescens",
+            "https://www.fishbase.se/summary/2591"
+          ]
+        ],
+        "updated": "2026-11-21"
+      }
     },
     {
       "id": "lake-trout",
