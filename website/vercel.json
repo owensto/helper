@@ -64,6 +64,11 @@
       "permanent": true
     },
     {
+      "source": "/environments/lake/",
+      "destination": "/environments/lakes-reservoirs/",
+      "permanent": true
+    },
+    {
       "source": "/regions/africa/",
       "destination": "/continents/africa/",
       "permanent": true

@@ -6695,6 +6695,12 @@
     "noindex": true,
     "redirectTo": null
   },
+  "/environments/lake/": {
+    "kind": "redirect",
+    "title": "Continue to Castward",
+    "noindex": true,
+    "redirectTo": "/environments/lakes-reservoirs/"
+  },
   "/trips/situk-coho-river/": {
     "kind": "redirect",
     "title": "Continue to Castward",

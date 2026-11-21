@@ -54,7 +54,7 @@ COUNTS=Counter(t['contentTier'] for t in TRIPS)
 HEADER=f'<a class="skip" href="#main">Skip to content</a><header class="site-header"><div class="wrap header-inner">{BRAND}<nav class="nav" id="site-nav" aria-label="Main navigation"><a href="/north-america/">North America</a><a href="/continents/">World atlas</a><a href="/trips/">Find a trip</a><a href="/environments/">Types of water</a><a href="/research/">Research</a></nav><div class="header-action"><a class="btn small" href="/plan/">My fishing plan ↗</a><button class="mobile-menu" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="site-nav" data-action="menu">☰</button></div></div></header>'
 FOOTER=f'<footer class="site-footer"><div class="wrap"><div class="footer-top"><div>{BRAND}<p class="footer-desc">Choose your water, check the trip details, and pack what you need.</p></div><div class="footer-links"><a href="/north-america/">North America</a><a href="/continents/">Continents</a><a href="/countries/">Countries</a><a href="/environments/">Fishing environments</a><a href="/launch/">Share Castward</a><a href="/production/">Site coverage</a><a href="/about/">Release notes</a></div></div><div class="footer-bottom"><span>© 2026 Castward</span><span>Illustrations are not navigation charts.</span></div></div></footer><div id="toast" class="toast" role="status" aria-live="polite"></div>'
 # Canonical routes preserve working old links without keeping duplicate articles in search.
-REDIRECTS={}
+REDIRECTS={'/environments/lake/': '/environments/lakes-reservoirs/'}
 for t in PLANNED:
  old='/trips/'+t['id']+'/';new=t['canonicalPath']
  page=pages.pop(old);pages[new]=page
