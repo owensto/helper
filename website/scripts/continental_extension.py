@@ -88,6 +88,10 @@ for country,cslug in COUNTRY_PATH.items():
  groups=defaultdict(list)
  for t in ts:groups[t['state']].append(t)
  body=bread(country,('/north-america/','North America'))+intro('COUNTRY → REGION → '+sublabel.upper(),E(country)+' fishing.',f'{len(ts)} trip profiles across {len(groups)} {"provinces and territories" if country=="Canada" else "states"}. Compare preparation scenarios and source-checked guides without confusing the two.')
+ if country == 'Canada':
+  lake_names = ['Lac La Ronge', 'Reindeer Lake', 'Wollaston Lake', 'Athabasca Lake', 'Nueltin Lake', 'Gouin Reservoir']
+  lake_trips = [t for t in ts if any(t['place'].startswith(name) for name in lake_names)]
+  body += '<section class="wrap"><h2>Compare six Canadian lake trips</h2><p>Start with a water, then check its species, season and access sources.</p><ul>' + ''.join('<li><a href="' + E(t['canonicalPath'], quote=True) + '">' + E(t['place']) + '</a></li>' for t in lake_trips) + '</ul></section>'
  body+='<section class="section library-section"><div class="wrap"><div class="readiness-bar">'+E(readiness(ts))+'</div><div class="country-jump">'
  regions=list(dict.fromkeys(t['subregion'] for t in ts))
  for rg in regions:body+=f'<a class="pill" href="{cp}regions/{SLUG(rg)}/">{E(rg)} ↗</a>'

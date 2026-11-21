@@ -65514,7 +65514,84 @@
           "note": "Check the rules for the exact water, date, licence and fish identification. This link does not establish an open season."
         }
       ],
-      "referenceRole": "game fish"
+      "referenceRole": "game fish",
+      "searchAnswer": {
+        "title": "Common carp: identification, size and habitat",
+        "description": "Identify common carp by their mouth barbels and long dorsal fin. Compare typical sizes, habitat and food with agency sources and linked fishing waters.",
+        "answer": "Common carp are Cyprinus carpio, heavy-bodied fish with two pairs of barbels beside the upper jaw and a long dorsal fin. Look for them in lakes and slow rivers. Missouri lists a usual length of 12–25 inches; larger fish occur. Match the mouth and fin features before relying on a local name.",
+        "question": "How can you identify a common carp?",
+        "facts": [
+          [
+            "Scientific name",
+            "Cyprinus carpio (Missouri Department of Conservation)"
+          ],
+          [
+            "Mouth",
+            "Two barbels on each side of the upper jaw (Missouri)"
+          ],
+          [
+            "Dorsal fin",
+            "Long, with a stout toothed spine at its front (Missouri)"
+          ],
+          [
+            "Typical size in Missouri",
+            "12–25 inches long; 1–8 pounds (Missouri)"
+          ],
+          [
+            "Typical size in Connecticut",
+            "16–28 inches long; state survey maximum 39 inches (Connecticut DEEP)"
+          ],
+          [
+            "Habitat",
+            "Lakes and slow-moving waters, often over soft sediment (Connecticut DEEP)"
+          ],
+          [
+            "Food",
+            "Aquatic insects and other animal and plant matter (Missouri)"
+          ]
+        ],
+        "faq": [
+          [
+            "How big can common carp get?",
+            "Connecticut DEEP lists a common length of 16–28 inches and a state survey maximum of 39 inches. Typical size and a survey maximum describe different things; neither predicts the size of your catch."
+          ],
+          [
+            "Is common carp good to eat?",
+            "Missouri lists common carp as a food fish. Texas Parks and Wildlife notes that flavour varies with the water. Check the local fish-consumption advisory before keeping a fish for a meal."
+          ],
+          [
+            "Are common carp and goldfish the same fish?",
+            "No. Missouri identifies them as separate species in the same family. Use the carp’s mouth barbels and long dorsal fin as identification clues."
+          ],
+          [
+            "Where should you look for common carp?",
+            "Start with lakes and slow rivers. Connecticut DEEP describes a preference for soft sediment in larger, slow-moving waters. The linked trips below give water-specific sources."
+          ],
+          [
+            "What do common carp eat?",
+            "They eat both animal and plant material. Missouri identifies aquatic insects as an important food source and describes feeding mainly from the bottom."
+          ],
+          [
+            "Can you use corn to catch common carp?",
+            "Missouri lists whole-kernel corn, dough balls and worms as carp baits. Check the bait rules for your chosen water before use."
+          ]
+        ],
+        "sources": [
+          [
+            "Missouri Department of Conservation: common carp",
+            "https://mdc.mo.gov/discover-nature/field-guide/common-carp"
+          ],
+          [
+            "Connecticut DEEP: common carp",
+            "https://portal.ct.gov/deep/fishing/freshwater/freshwater-fishes-of-connecticut/common-carp"
+          ],
+          [
+            "Texas Parks and Wildlife: common carp",
+            "https://tpwd.texas.gov/huntwild/wild/species/crp/"
+          ]
+        ],
+        "updated": "2026-11-21"
+      }
     },
     {
       "id": "common-dab",

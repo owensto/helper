@@ -93,7 +93,7 @@ def install(pages, root, add, trips, data):
 
     species_count = sum(s['taxonType'] == 'species' for s in species)
     body = heading('Species', 'Find your fish.', 'Common names, local words and the waters that connect them.')
-    body += '<p class="wrap">Start with ' + link('/species/coarse-fish/', 'coarse fishing species and methods') + ' or compare ' + link('/species/milkfish/', 'milkfish habitat and identification') + '. Check regional names with ' + link('/species/gray-rockfish/', 'kuromenuke, the gray rockfish') + ' and ' + link('/species/turbot/', 'turbot and Greenland halibut') + '.</p>'
+    body += '<p class="wrap">Compare ' + link('/species/common-carp/', 'common carp size and identification') + ', then start with ' + link('/species/coarse-fish/', 'coarse fishing species and methods') + ' or compare ' + link('/species/milkfish/', 'milkfish habitat and identification') + '. Check regional names with ' + link('/species/gray-rockfish/', 'kuromenuke, the gray rockfish') + ' and ' + link('/species/turbot/', 'turbot and Greenland halibut') + '.</p>'
     body += '<section class="wrap field-reference"><div class="field-filter"><label for="species-search">Search fish or local names<input id="species-search" type="search" placeholder="Try rockfish, barra, carp or specks" autocomplete="off"></label></div><p id="species-count" role="status" aria-live="polite">' + str(species_count) + ' species and ' + str(len(species) - species_count) + ' broader fish groups</p><div class="field-species-grid">'
     for s in species:
         aliases = list(dict.fromkeys(a['name'] for a in s['localNames'] if a.get('language') == 'English'))
@@ -151,7 +151,7 @@ def install(pages, root, add, trips, data):
         body += '<section id="where-to-fish"><h2>Where to fish</h2>'
         matches = matched[s['id']]
         if matches:
-            body += '<p>These destinations have a source-linked record for this fish. Check the linked guide for the exact water and trip details.</p>' + trip_links([d['id'] for d in matches])
+            body += '<p>Find this fish at the waters below. Open a trip for its species sources, access and season details.</p>' + trip_links([d['id'] for d in matches])
         else:
             body += '<p>Choose a water in the trip library, then confirm the target fish with the local fisheries authority. The country list below shows where the species occurs.</p>' + link('/trips/', 'Explore the trip library')
         body += '</section><section id="local-names"><h2>Local names</h2>'
@@ -212,7 +212,7 @@ def install(pages, root, add, trips, data):
         return sorted(tags)
     choices = ['Global', 'Alaska', 'North America', 'South America', 'United Kingdom', 'Europe', 'Africa', 'Asia', 'Australia', 'Oceania']
     body = heading('Glossary', 'Speak the water.', 'A name makes sense when you know the place.')
-    body += '<p class="wrap">Learn what ' + link('/species/coarse-fish/', 'coarse fishing') + ' means, or use the scientific name to identify ' + link('/species/milkfish/', 'milkfish, Chanos chanos') + '.</p>'
+    body += '<p class="wrap">Identify ' + link('/species/common-carp/', 'common carp by their mouth and fins') + ', learn what ' + link('/species/coarse-fish/', 'coarse fishing') + ' means, or use the scientific name to identify ' + link('/species/milkfish/', 'milkfish, Chanos chanos') + '.</p>'
     body += '<section class="wrap field-reference"><div class="field-filter"><label for="glossary-search">Find a word used on the water<input id="glossary-search" type="search" placeholder="Try yelloweye, mooching, boilie or barra" autocomplete="off"></label><label for="glossary-region">Region<select id="glossary-region"><option value="">All regions</option>' + ''.join('<option>' + E(r) + '</option>' for r in choices) + '</select></label></div><p id="glossary-count" role="status" aria-live="polite">' + str(len(terms)) + ' fishing terms</p><nav class="field-alphabet" aria-label="Glossary A to Z">'
     letters = sorted({t['term'][0].upper() if t['term'][0].isascii() and t['term'][0].isalpha() else '#' for t in terms})
     body += ''.join(link('#letter-' + ('other' if c == '#' else c), c) for c in letters) + '</nav>'
