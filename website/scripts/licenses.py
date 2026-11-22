@@ -266,7 +266,8 @@ def jurisdiction_page(r, trips):
         body += step(n, f'Who needs a fishing licence in {name}?', inner + '</div>')
         n += 1
     if r.get('options'):
-        body += step(n, 'Which licence can you buy?', option_cards(r) + f'<p class="lic-note">Prices from the official source, checked {checked}.</p>')
+        cmp_link = f' <a class="link" href="{HUB}non-resident-prices/">Compare trip prices for all 50 states</a>.' if r.get('country') == 'United States' and r['id'] != 'us-federal' else ''
+        body += step(n, 'Which licence can you buy?', option_cards(r) + f'<p class="lic-note">Prices from the official source, checked {checked}.{cmp_link}</p>')
         n += 1
     if r.get('extras'):
         rows = ''.join(
@@ -309,6 +310,171 @@ def jurisdiction_page(r, trips):
     return body
 
 
+COMPARE = HUB + 'non-resident-prices/'
+COMPARE_STYLE = """<style>
+.lic-cmp table{width:100%;border-collapse:collapse;background:var(--white);border:1px solid var(--line);border-radius:14px;overflow:hidden;font-size:15px}
+.lic-cmp th,.lic-cmp td{padding:12px 14px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+.lic-cmp th{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);white-space:nowrap}
+.lic-cmp th[aria-sort]{cursor:pointer}.lic-cmp th[aria-sort]::after{content:" ↕"}.lic-cmp th[aria-sort=ascending]::after{content:" ↑"}.lic-cmp th[aria-sort=descending]::after{content:" ↓"}
+.lic-cmp td b{display:block;font-size:17px}.lic-cmp td span{display:block;font-size:12px;color:var(--muted)}
+.lic-cmp tr:last-child td{border-bottom:0}.lic-cmp .lic-scroll{overflow-x:auto}
+.lic-cmp .lic-facts{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:0 0 28px;padding:0;list-style:none}
+.lic-cmp .lic-facts li{background:var(--white);border:1px solid var(--line);border-radius:14px;padding:16px}
+.lic-cmp .lic-facts b{display:block;font-size:26px}.lic-cmp .lic-facts span{font-size:13px;color:var(--muted)}
+@media(max-width:820px){.lic-cmp .lic-facts{grid-template-columns:1fr}.lic-cmp th,.lic-cmp td{padding:10px}}
+</style>"""
+
+
+def usd(p):
+    return f'${int(p)}' if float(p).is_integer() else f'${float(p):.2f}'
+
+
+def trip_cost(r, n):
+    """Lowest adult non-resident licence cost for a trip of n days, from the record's own options.
+    Returns (total, label, extra lines) or None."""
+    opts = [o for o in r.get('options', []) if o.get('tripDays')]
+    need = lambda kind: [x for x in r.get('extras', []) if kind in (x.get('withCompare') or [])]
+    plus = lambda kind: sum(x['price'] for x in need(kind))
+    cands = []
+    for o in opts:
+        kind = 'annual' if o['tripDays'] >= 365 else 'short'
+        if o['tripDays'] >= n:
+            cands.append((round(o['price'] + plus(kind), 2), o['tripDays'], o['name'], kind))
+        if o.get('extraDay') is not None:
+            cands.append((round(o['price'] + (n - 1) * o['extraDay'] + plus('short'), 2), n, f'{n} days at the daily price', 'short'))
+    if not cands:
+        return None
+    total, _, label, kind = min(cands)
+    lines = [f'Includes the required {x["name"]}, {usd(x["price"])}' for x in need(kind)]
+    one = [o for o in opts if o['tripDays'] == 1 and o.get('extraDay') is None]
+    if one:
+        alt = round(min(o['price'] for o in one) * n + plus('short'), 2)
+        if alt < total:
+            lines.append(f'{n} one-day licences cost {usd(alt)}')
+    return total, label, lines
+
+
+def compare_rows(recs):
+    rows = []
+    for r in sorted(recs, key=lambda r: r['name']):
+        if r.get('country') != 'United States' or not any(o.get('compare') for o in r.get('options', [])):
+            continue
+        ann = next((o for o in r['options'] if o.get('compare') == 'annual'), None)
+        year = None
+        if ann and ann.get('price'):
+            add = [x for x in r.get('extras', []) if 'annual' in (x.get('withCompare') or [])]
+            year = (round(ann['price'] + sum(x['price'] for x in add), 2), ann, add)
+        rows.append({'r': r, 'd3': trip_cost(r, 3), 'd7': trip_cost(r, 7), 'year': year, 'ann': ann})
+    return rows
+
+
+def compare_page(recs):
+    rows = compare_rows(recs)
+    d3 = sorted((x['d3'][0], x['r']['name']) for x in rows if x['d3'])
+    d7 = sorted((x['d7'][0], x['r']['name']) for x in rows if x['d7'])
+    yr = sorted((x['year'][0], x['r']['name']) for x in rows if x['year'])
+    med = lambda v: v[len(v) // 2][0]
+    newest = max(x['r']['checked'] for x in rows)
+    answer = (f'For a fishing trip to another state, the licence costs from {usd(d3[0][0])} ({d3[0][1]}) to {usd(d3[-1][0])} ({d3[-1][1]}) for a 3-day weekend, '
+              f'and from {usd(d7[0][0])} ({d7[0][1]}) to {usd(d7[-1][0])} ({d7[-1][1]}) for a week. The median price is {usd(med(d3))} for 3 days and {usd(med(d7))} for 7 days. '
+              f'Each price is from the state agency.')
+    body = STYLE + COMPARE_STYLE + (f'<div class="wrap lic-page lic2 lic-cmp"><nav class="breadcrumbs"><a href="/">Home</a> / <a href="{HUB}">Fishing licenses</a> / Non-resident prices</nav>'
+            f'<header><span class="eyebrow">FISHING TRIPS · UNITED STATES</span><h1>Non-resident fishing license cost by state</h1><p class="lic-answer">{E(answer)}</p></header>')
+    body += ('<ul class="lic-facts">'
+             f'<li><span>Weekend trip, 3 days</span><b>{usd(d3[0][0])} to {usd(d3[-1][0])}</b><span>Median {usd(med(d3))}</span></li>'
+             f'<li><span>Week trip, 7 days</span><b>{usd(d7[0][0])} to {usd(d7[-1][0])}</b><span>Median {usd(med(d7))}</span></li>'
+             f'<li><span>Full year</span><b>{usd(yr[0][0])} to {usd(yr[-1][0])}</b><span>Median {usd(med(yr))}, {len(yr)} states with a listed price</span></li></ul>')
+    has_free = any(x['r'].get('freeDays') for x in rows)
+    body += ('<div class="lic-scroll"><table data-lic-sort><thead><tr><th aria-sort="ascending">State</th><th aria-sort="none">Weekend, 3 days</th>'
+             '<th aria-sort="none">Week, 7 days</th><th aria-sort="none">Full year</th>' + ('<th>Free fishing days</th>' if has_free else '') + '</tr></thead><tbody>')
+
+    def trip_cell(t):
+        if not t:
+            return '<td data-v="99999"><span>See the state page</span></td>'
+        return f'<td data-v="{t[0]}"><b>{usd(t[0])}</b><span>{E(t[1])}</span>' + ''.join(f'<span>{E(l)}</span>' for l in t[2]) + '</td>'
+
+    for x in rows:
+        r = x['r']
+        if x['year']:
+            total, o, add = x['year']
+            year = (f'<td data-v="{total}"><b>{usd(total)}</b><span>{E(o["name"])} · {E(o["duration"])}</span>'
+                    + ''.join(f'<span>Includes the required {E(a["name"])}, {usd(a["price"])}</span>' for a in add) + '</td>')
+        elif x['ann']:
+            year = f'<td data-v="99999"><span>{E(x["ann"]["name"])}: price on the official site</span></td>'
+        else:
+            year = '<td data-v="99999"><span>See the state page</span></td>'
+        fd = ''
+        if has_free:
+            f = r.get('freeDays')
+            if not f:
+                fd = '<td><span>Not confirmed</span></td>'
+            elif f['has'] == 'no':
+                fd = f'<td><span>None. {link(f["source"], "Source")}</span></td>'
+            else:
+                when = f.get('dates2027') and f'2027: {f["dates2027"]}' or f.get('rule') or (f.get('dates2026') and f'2026: {f["dates2026"]}') or 'Yes'
+                who = {'yes': 'Visitors included.', 'no': 'Residents only.'}.get(f.get('nonResidents'), '')
+                if 'residents only' in f.get('notes', '').lower():
+                    who = ''
+                fd = f'<td>{E(when)}<span>{E(" ".join(i for i in (who, f.get("notes", "")) if i))} {link(f["source"], "Source")}</span></td>'
+        body += (f'<tr><td data-v="{E(r["name"], quote=True)}"><a class="link" href="{page_path(r)}">{E(r["name"])}</a><span>Checked {nice_date(r["checked"])}</span></td>'
+                 f'{trip_cell(x["d3"])}{trip_cell(x["d7"])}{year}{fd}</tr>')
+    body += '</tbody></table></div>'
+    body += ('<section class="lic-step"><h2>How to read the table</h2><div class="lic-box lic-yes"><ul>'
+             '<li>Each price is for an adult who does not live in the state.</li>'
+             '<li>The trip price is the lowest-priced licence that covers all days of the trip. The name of that licence is below the price.</li>'
+             '<li>Where the state requires a stamp or fee with that licence, the price includes it and the row names it.</li>'
+             '<li>Stamps for one species or one water, such as trout, salmon or saltwater, are not in the price. The state page lists them.</li>'
+             '<li>Most rows show the freshwater licence. Where a state sells the coastal licence as the main visitor product, the licence name shows it.</li>'
+             '<li>Each row links to the state page, which has all visitor options, the rules and the official link to buy.</li></ul></div></section>')
+    fixed = [x['r']['name'] for x in rows if x['ann'] and re.search(r'december 31|calendar year', x['ann']['duration'], re.I)]
+    rolling = [x['r']['name'] for x in rows if x['ann'] and re.search(r'^(365 days|1 year|12 months)$', x['ann']['duration'], re.I)]
+    hol = '<section class="lic-step"><h2>Holiday and end-of-year trips</h2><div class="lic-box lic-yes"><ul>'
+    if fixed:
+        hol += (f'<li>In {len(fixed)} states the annual licence in this table ends on 31 December: {E(", ".join(fixed))}. '
+                'For a Thanksgiving, Christmas or New Year trip there, compare the short licence first. A trip that crosses 1 January can need a licence for each year.</li>')
+    if rolling:
+        hol += f'<li>In {len(rolling)} states the annual licence is valid for 12 months from the date you buy it: {E(", ".join(rolling))}. A licence for a holiday trip also covers a trip next summer.</li>'
+    season = []
+    for x in rows:
+        f = x['r'].get('freeDays') or {}
+        hit = next((f[k] for k in ('dates2026', 'rule', 'dates2027') if re.search(r'thanksgiving|november|december|veterans', f.get(k) or '', re.I)), None)
+        if hit:
+            season.append(f'<li><b>{E(x["r"]["name"])}:</b> {E(hit)}' + (' Residents only.' if f.get('nonResidents') == 'no' else '') + f' {link(f["source"], "Source")}</li>')
+    if season:
+        hol += '<li>Free fishing days in November and December, from the state agencies:<ul>' + ''.join(season) + '</ul></li>'
+    hol += ('<li>The other states use a licence year with a fixed end date. The full-year column shows that period for each state.</li>'
+            '<li>Buy the licence online before you travel. State offices and many licence agents close on public holidays.</li>'
+            f'<li>Seasons and closures change by water and by month. See the <a class="link" href="/seasons/">season notes</a> and the <a class="link" href="/trips/">trips</a> for each state.</li></ul></div></section>')
+    body += hol
+    low7 = [f'{n} ({usd(p)})' for p, n in d7[:5]]
+    faq = [
+        ('How much is a fishing license for an out-of-state trip?',
+         f'For a 3-day trip the licence costs from {usd(d3[0][0])} ({d3[0][1]}) to {usd(d3[-1][0])} ({d3[-1][1]}), with a median of {usd(med(d3))}. For a 7-day trip it costs from {usd(d7[0][0])} to {usd(d7[-1][0])}, with a median of {usd(med(d7))}.'),
+        ('Which states have the cheapest non-resident fishing license for a week?',
+         f'The five lowest prices for a 7-day trip in this table are: {", ".join(low7)}.'),
+        ('Which state has the most expensive non-resident annual fishing license?',
+         f'{yr[-1][1]} has the highest full-year price in this table: {usd(yr[-1][0])}. {yr[0][1]} has the lowest: {usd(yr[0][0])}.'),
+        ('Do I need a licence for each state I fish in?',
+         'Yes. Each state sells its own licence. A licence from one state is not valid in another state, except on some shared border waters. The state page shows the rule for each place.'),
+    ]
+    body += '<section class="lic-step lic-more"><h2>Questions</h2>' + ''.join(
+        '<details><summary>' + E(q) + '</summary><p>' + E(a) + '</p></details>' for q, a in faq)
+    body += '<details class="lic-sources"><summary>Sources (' + str(len(rows)) + ')</summary><ol>' + ''.join(
+        f'<li>{link(x["r"]["sources"][0]["url"], x["r"]["name"] + ": " + (x["r"].get("authority", {}).get("name") or "official source"))}</li>'
+        for x in rows if x['r'].get('sources')) + '</ol></details></section>'
+    body += (f'<p class="small">Prices come from each state agency. The last check of a row was on {nice_date(newest)}. Prices change; confirm on the official site before you buy. '
+             f'To cite this table: Castward, “Non-resident fishing license cost by state”, castward.app{COMPARE}.</p></div>')
+    body += ('<script>(()=>{const t=document.querySelector("[data-lic-sort]");if(!t)return;const hs=[...t.tHead.rows[0].cells];hs.forEach((h,i)=>{if(!h.hasAttribute("aria-sort"))return;'
+             'h.addEventListener("click",()=>{const up=h.getAttribute("aria-sort")!=="ascending";hs.forEach(x=>x.hasAttribute("aria-sort")&&x.setAttribute("aria-sort","none"));'
+             'h.setAttribute("aria-sort",up?"ascending":"descending");const rs=[...t.tBodies[0].rows];rs.sort((a,b)=>{const x=a.cells[i].dataset.v,y=b.cells[i].dataset.v;'
+             'const n=isNaN(x)||isNaN(y)?x.localeCompare(y):x-y;return up?n:-n});rs.forEach(r=>t.tBodies[0].append(r));});});})();</script>')
+    schema = {'@context': 'https://schema.org', '@type': 'FAQPage', 'mainEntity': [
+        {'@type': 'Question', 'name': q, 'acceptedAnswer': {'@type': 'Answer', 'text': a}} for q, a in faq]}
+    body += '<script type="application/ld+json">' + json.dumps(schema, ensure_ascii=False).replace('</', '<\\/') + '</script>'
+    cites = [x['r']['sources'][0]['url'] for x in rows if x['r'].get('sources')] + [x['r']['freeDays']['source'] for x in rows if x['r'].get('freeDays')]
+    return body, cites, newest
+
+
 def install(pages, root, add, trips):
     recs = json.loads((root / 'src/licenses.json').read_text())['jurisdictions']
     permits_path = root / 'src/trip-permits.json'
@@ -344,6 +510,7 @@ def install(pages, root, add, trips):
     for r in recs:
         groups.setdefault(r['country'], []).append(r)
     body = STYLE + f'<div class="wrap lic-page lic2 lic-hub"><header><span class="eyebrow">FISHING LICENSES</span><h1>Fishing licenses by state and country</h1><p class="lic-answer">Pick the place you will fish. See who needs a licence, the visitor price, and the official link to buy it.</p></header>'
+    body += f'<p><a class="link" href="{COMPARE}">Trip to another state? Compare non-resident prices for all 50 states</a></p>'
     body += '<label class="lic-search"><span>Where will you fish?</span><input type="search" placeholder="Try “Alaska”, “Norway” or “Queensland”" data-lic-filter></label><div>'
     order = ['United States', 'Canada', 'Mexico'] + sorted(c for c in groups if c not in ('United States', 'Canada', 'Mexico'))
     solo = [c for c in order if len(groups[c]) == 1]
@@ -368,5 +535,10 @@ def install(pages, root, add, trips):
     body += '<script type="application/ld+json">' + json.dumps(listing, ensure_ascii=False).replace('</', '<\\/') + '</script>'
     add(HUB, 'Fishing Licenses by State and Country | Castward',
         f'Fishing licence rules for {len(recs)} US states, Canadian provinces and countries: who needs one, visitor prices and official links to buy.', body, 'article')
+    cmp_body, cmp_sources, cmp_date = compare_page(recs)
+    add(COMPARE, 'Non-Resident Fishing License Cost by State: Trip Prices',
+        'What a fishing licence costs for a trip to another state: 3-day, 7-day and full-year non-resident prices for all 50 states, from each state agency.', cmp_body, 'article')
+    pages[COMPARE]['modified'] = max(cmp_date, '2026-11-22')
+    pages[COMPARE]['citations'] = cmp_sources
     pages[HUB]['modified'] = max(r.get('contentModified', max(r['checked'], '2026-11-15')) for r in recs)
     return len(recs), sum(len(v) for v in per_rec.values())
