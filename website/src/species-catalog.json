@@ -126036,7 +126036,120 @@
           "note": "Check the rules for the exact water, date, licence and fish identification. This link does not establish an open season."
         }
       ],
-      "referenceRole": "game fish"
+      "referenceRole": "game fish",
+      "searchAnswer": {
+        "title": "Lake trout: identification, size and seasonal habitat",
+        "description": "Identify lake trout by their pale spots and forked tail. Compare regional size ranges, seasonal depths and local names before you choose a fishing trip.",
+        "updated": "2026-11-21",
+        "answer": "Lake trout (Salvelinus namaycush) are cold-water fish with pale spots, a dark body and a deeply forked tail. They live in deep lakes and some large river systems. In spring and fall, look toward cooler shallows; summer warmth pushes them deeper. Match your trip to the lake, season and local rules.",
+        "question": "How big do lake trout get?",
+        "facts": [
+          [
+            "Scientific name",
+            "Salvelinus namaycush — U.S. Fish & Wildlife Service"
+          ],
+          [
+            "Ontario size range",
+            "30–80 cm; 1–5 kg. Regional figures, not a limit for every lake — Ontario Ministry of Natural Resources"
+          ],
+          [
+            "Large Alberta fish",
+            "Can exceed 10 kg (22 lb) — Government of Alberta"
+          ],
+          [
+            "Identification",
+            "Pale spots on a darker body; deeply forked tail; white leading edges on lower fins — Michigan DNR"
+          ],
+          [
+            "Habitat",
+            "Deep, cold lakes; some deep freshwater tributary rivers — U.S. Fish & Wildlife Service"
+          ]
+        ],
+        "sections": [
+          {
+            "question": "Are lake trout the same fish as togue or mackinaw?",
+            "answer": "Togue and mackinaw trout are regional names used for lake trout, Salvelinus namaycush. A local name can vary between waters, so compare the scientific name and the fish’s features together. The name table below links each name to its region and FishBase reference. It does not establish a legal fishing season.",
+            "source": "https://www.fishbase.se/ComNames/CommonNamesList.php?ID=248"
+          },
+          {
+            "question": "Where do lake trout live in spring, summer and fall?",
+            "answer": "Alberta describes lake trout near the surface when the water is cold in spring and fall. In summer, they follow colder water into deeper parts of the lake. Use that seasonal change to plan your search, then check the exact water’s access and rules. A depth alone does not guarantee fish.",
+            "source": "https://www.alberta.ca/lake-trout"
+          },
+          {
+            "question": "What do lake trout eat?",
+            "answer": "Young lake trout eat plankton, insects and small invertebrates. Adults often eat other fish, though some populations continue to feed on plankton and stay smaller. The U.S. Fish & Wildlife Service describes this difference in diet. It helps explain why two lakes can produce very different sizes of lake trout.",
+            "source": "https://www.fws.gov/species/lake-trout-salvelinus-namaycush"
+          },
+          {
+            "question": "When do lake trout spawn?",
+            "answer": "Lake trout spawn over rocks in fall. The U.S. Fish & Wildlife Service describes an October–November spawning period over boulder beds, with eggs settling into protected gaps. They do not dig nests. This biological window is not an open fishing season: check the rules for the water before you plan a trip.",
+            "source": "https://www.fws.gov/species/lake-trout-salvelinus-namaycush"
+          },
+          {
+            "question": "How can you identify a lake trout?",
+            "answer": "Start with the tail and spots. Michigan DNR describes a deeply forked tail, light spots on a dark grey or black background, and a white belly. The lower fins have a white leading edge. Compare those features together with the local species guide; a common name alone can be misleading.",
+            "source": "https://www.michigan.gov/dnr/education/michigan-species/fish-species/lake-trout"
+          },
+          {
+            "question": "How do I prepare for lake trout ice fishing?",
+            "answer": "Check the current ice conditions and the rules for your chosen lake first. Minnesota DNR recommends warm clothes, an auger, scoop, rod and reel, and emergency ice picks. Use a contour map to find structure beside deep water. Pack a medium-heavy or heavy jigging rod and fish through the water column.",
+            "source": "https://www.dnr.state.mn.us/gofishing/ice-fishing-lake-trout.html"
+          }
+        ],
+        "faq": [
+          [
+            "Is a 30-inch lake trout big?",
+            "It is near the upper end of Ontario’s published 12–31 inch range. Size varies by water; that range is not a universal maximum."
+          ],
+          [
+            "Do lake trout always stay deep?",
+            "No. Alberta notes that they feed near the surface in cold spring and fall water, then move deeper in summer."
+          ],
+          [
+            "How long can lake trout live?",
+            "Alberta describes fish that reach 20–25 years of age. Slow growth and late maturity make local harvest rules important."
+          ],
+          [
+            "Are all large lake trout fish-eaters?",
+            "Adults often eat fish, but the U.S. Fish & Wildlife Service also describes populations that feed on plankton throughout life."
+          ],
+          [
+            "Can I use the spawning months as the fishing season?",
+            "No. Spawning months describe the fish’s life cycle. Check the current licence, season, size and possession rules for your exact water."
+          ],
+          [
+            "Are lake trout actually char?",
+            "Yes. Minnesota DNR identifies lake trout as char within the trout and salmon family. Their scientific name is Salvelinus namaycush."
+          ]
+        ],
+        "sources": [
+          [
+            "Ontario: lake trout size and identification",
+            "https://www.ontario.ca/page/lake-trout"
+          ],
+          [
+            "Alberta: lake trout habitat, growth and conservation",
+            "https://www.alberta.ca/lake-trout"
+          ],
+          [
+            "Michigan DNR: lake trout identification",
+            "https://www.michigan.gov/dnr/education/michigan-species/fish-species/lake-trout"
+          ],
+          [
+            "U.S. Fish & Wildlife Service: lake trout biology",
+            "https://www.fws.gov/species/lake-trout-salvelinus-namaycush"
+          ],
+          [
+            "FishBase: regional lake trout names",
+            "https://www.fishbase.se/ComNames/CommonNamesList.php?ID=248"
+          ],
+          [
+            "Minnesota DNR: lake trout ice trip preparation and biology",
+            "https://www.dnr.state.mn.us/gofishing/ice-fishing-lake-trout.html"
+          ]
+        ]
+      }
     },
     {
       "id": "lake-trout-group",

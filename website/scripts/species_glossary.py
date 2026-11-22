@@ -102,7 +102,7 @@ def install(pages, root, add, trips, data):
         if s['scientificName']:
             body += '<p class="field-scientific"><i>' + E(s['scientificName']) + '</i></p>'
         body += '<p>' + E(' · '.join(aliases[:3])) + '</p><span class="small">' + str(len(matched[s['id']])) + ' linked destination' + ('s' if len(matched[s['id']]) != 1 else '') + '</span></article>'
-    body += '</div><p id="species-empty" hidden>No match yet. Try the common name or scientific name.</p><button class="btn outline" id="species-more" type="button" hidden>Show more fish</button><p class="field-note">Country records describe occurrence. Trip links use separate destination evidence. ' + link('/glossary/', 'Read the fishing glossary') + '</p></section>' + assets
+    body += '</div><p id="species-empty" hidden>No match yet. Try the common name or scientific name.</p><button class="btn outline" id="species-more" type="button" hidden>Show more species</button><p class="field-note">Country records describe occurrence. Trip links use separate destination evidence. ' + link('/glossary/', 'Read the fishing glossary') + '</p></section>' + assets
     add('/species/', 'World fish species and local names | Castward', 'Explore ' + str(species_count) + ' fish species, regional names, sourced fishing destinations and agency rules.', body, 'species')
 
     for s in species:
@@ -149,8 +149,12 @@ def install(pages, root, add, trips, data):
             ]
             body += '<section><h2>What else should a first-time bass angler know?</h2>' + ''.join('<details><summary>' + E(q) + '</summary><p>' + E(a) + '</p></details>' for q, a in questions) + '</section><details><summary>Sources (2)</summary><ul><li>' + link('https://www.dnr.state.mn.us/gofishing/how-catch-largemouth-bass.html', 'Minnesota DNR: where and how to catch largemouth bass') + '</li><li>' + link('https://www.dnr.state.mn.us/minnaqua/speciesprofile/largemouthbass.html', 'Minnesota DNR: shore access and beginner bait') + '</li></ul><p class="small">Checked November 2026</p></details><p>' + link('/environments/lakes-reservoirs/', 'Choose a lake trip') + ' · ' + link('/atlas/', 'Find a water on the map') + ' · ' + link('/fishing-licenses/', 'Check the licence') + '</p></div>'
             body += '<script type="application/ld+json">' + json.dumps({'@context':'https://schema.org','@type':'FAQPage','mainEntity':[{'@type':'Question','name':q,'acceptedAnswer':{'@type':'Answer','text':a}} for q,a in questions]}).replace('</','<\\/') + '</script>'
+        if s['id'] in ('cisco', 'rainbow-trout'):
+            body += '<p class="wrap">Compare ' + link('/species/lake-trout/', 'lake trout identification and seasonal habitat') + ' before you choose a cold-water trip.</p>'
+        if s['id'] == 'lake-trout-group':
+            body += '<p class="wrap">For the named species, see ' + link('/species/lake-trout/', 'lake trout identification, size and habitat') + '.</p>'
         body += '<div class="wrap field-reference field-detail"><article><nav class="field-local-nav" aria-label="Species sections">' + ' · '.join(link('#' + anchor, label) for anchor, label in [('where-to-fish', 'Where to fish'), ('local-names', 'Local names'), ('seasons', 'Seasons'), ('regulations', 'Rules')]) + '</nav>'
-        if s['id'] in ('northern-pike', 'lake-trout'):
+        if s['id'] in ('northern-pike', 'lake-trout', 'cisco', 'rainbow-trout'):
             body += '<p>Compare Canadian waters in ' + link('/north-america/canada/manitoba/', 'Manitoba') + ', ' + link('/north-america/canada/saskatchewan/', 'Saskatchewan') + ' and ' + link('/north-america/canada/quebec/', 'Quebec') + ' before you choose your base.</p>'
         body += '<section id="where-to-fish"><h2>Where to fish</h2>'
         matches = matched[s['id']]
@@ -185,7 +189,7 @@ def install(pages, root, add, trips, data):
             body += '<li>' + link(r['url'], r['region'] + ' — ' + r['agency']) + '<p class="small">' + E(r['note']) + '</p></li>'
         body += '</ul></section><section><h2>Source records</h2>'
         if s['regions']:
-            body += '<details><summary>Country occurrence records</summary><p>' + E(' · '.join(s['regions'])) + '</p><p class="small">A country record does not establish local abundance, fishing access or a legal target.</p></details>'
+            body += '<details><summary>Countries where this fish is recorded</summary><p>' + E(' · '.join(s['regions'])) + '</p><p class="small">A country record does not establish local abundance, fishing access or a legal target.</p></details>'
         body += source_links(s['sourceUrls']) + '</section></article><aside class="field-aside"><span class="eyebrow">KNOW THE WORDS</span><h2>Local fishing language.</h2><p>Connect the fish to its regional names, methods and equipment.</p>' + link('/glossary/?q=' + s['id'], 'Search the glossary', 'btn outline') + '<p>' + link('/species/', 'All fish species') + '</p></aside></div>' + assets
         add(species_url(s['id']), s['name'] + ' fishing, local names and destinations | Castward', 'Find ' + s['name'].lower() + ' names, source-linked destinations, seasonal evidence and official fisheries links.', body, 'species-detail')
         if answer:
@@ -226,8 +230,8 @@ def install(pages, root, add, trips, data):
             initial = term['term'][0].upper() if term['term'][0].isascii() and term['term'][0].isalpha() else '#'
             if initial != letter:continue
             tags = tags_for(term['regions'])
-            search = ' '.join([term['term'], *term['relatedSpecies'], *[sb[s]['name'] for s in term['relatedSpecies']], *term['regions']])
-            body += '<div id="' + E(term['id'], quote=True) + '" data-glossary-term data-search="' + E(search, quote=True) + '" data-regions="' + E(json.dumps(tags), quote=True) + '"><dt>' + E(term['term']) + '</dt>'
+            search = ' '.join(dict.fromkeys([term['term'], *term['relatedSpecies'], *[sb[s]['name'] for s in term['relatedSpecies']], *term['regions']]))
+            body += '<div id="' + E(term['id'], quote=True) + '" data-glossary-term data-search="' + E(search, quote=True) + '" data-regions="' + E(json.dumps(tags, separators=(',', ':')), quote=True) + '"><dt>' + E(term['term']) + '</dt>'
             for entry in term['entries']:
                 body += '<dd><p>' + E(entry['definition']) + '</p><p class="field-region">' + E(' · '.join(entry['regions'])) + '</p><div class="field-related">'
                 # Preserve the first legacy trip-type link and existing term anchors.

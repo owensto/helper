@@ -5567,7 +5567,7 @@
           "name": "Non-resident freshwater 7-day",
           "who": "non-resident",
           "duration": "7 days",
-          "price": 37,
+          "price": 38.05,
           "currency": "USD",
           "water": "freshwater"
         },
@@ -5617,9 +5617,9 @@
           "url": "https://www.outdooralabama.com/saltwater-fishing/saltwater-reef-fish-endorsement"
         }
       ],
-      "checked": "2026-11-11",
+      "checked": "2026-11-21",
       "checkOfficial": "Confirm residence-based fees and charter coverage. The saltwater fee table is dated August 2025. Use the authority page to confirm the current online purchase link.",
-      "contentModified": "2026-11-19"
+      "contentModified": "2026-11-21"
     },
     {
       "id": "us-alaska",
@@ -10524,7 +10524,7 @@
           "url": "https://www.dpird.wa.gov.au/individuals/recreational-fishing/get-a-recreational-fishing-licence/recreational-fishing-from-a-boat/"
         }
       ],
-      "checked": "2026-11-11",
+      "checked": "2026-11-21",
       "contentModified": "2026-11-15"
     },
     {
@@ -10857,7 +10857,7 @@
           "url": "https://www.eeaa.gov.eg/Uploads/Service/Files/20221214114315825.pdf"
         }
       ],
-      "checked": "2026-11-11",
+      "checked": "2026-11-21",
       "checkOfficial": "Confirm current fees, approved visitor locations, boat permits and protected-area restrictions with the fisheries office and EEAA.",
       "contentModified": "2026-11-15"
     },
@@ -12000,7 +12000,7 @@
           "url": "https://www.govt.nz/browse/recreation-and-the-environment/hunting-and-fishing/fishing/"
         }
       ],
-      "checked": "2026-11-11",
+      "checked": "2026-11-21",
       "contentModified": "2026-11-15"
     },
     {
@@ -12081,7 +12081,7 @@
           "url": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/central-north-island/places/taupo-trout-fishery/other-pages/licences"
         }
       ],
-      "checked": "2026-11-11",
+      "checked": "2026-11-21",
       "contentModified": "2026-11-15"
     },
     {

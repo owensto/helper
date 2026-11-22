@@ -91,6 +91,8 @@ def trip_card(t):
     attrs={'depth':t.get('contentTier','detailed-guide'),'region':t['region'],'country':t['country'],'water':t['water'],'habitat':'|'.join(t['habitats']),'method':'|'.join(t['methods']),'month':windows,'state':t.get('state',''),'subregion':t.get('subregion',''),'search':' '.join([t.get('candidateTargets',''),t.get('state',''),t.get('subregion',''),t['title'],t['place'],t['country'],t['region'],*t['fish'],*t['habitats'],*t['landscape'],*t['methods']])}
     attrs['type']='|'.join(t.get('tripTypeIds',[]))
     attrs['search']+=' '+' '.join(t.get('tripTypeNames',[]))
+    # The browser matches individual words; repeated tokens add no search value.
+    attrs['search']=' '.join(dict.fromkeys(attrs['search'].split()))
     attr=' '.join(f'data-{k}="{E(v,quote=True)}"' for k,v in attrs.items())
     tier={'detailed-guide':'Source-checked guide','trip-brief':'Source-linked brief','preparation-brief':'Preparation · research pending'}.get(t.get('contentTier'),'Trip profile')
     path=E(t.get('canonicalPath','/trips/'+t['id']+'/'),quote=True)
