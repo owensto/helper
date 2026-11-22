@@ -1783,6 +1783,34 @@
       "label": "Angling and Scientific Collection Regulation, section 2.001",
       "url": "https://www.bclaws.gov.bc.ca/civix/document/id/lc/statreg/10_125_90"
     },
+    "world-d22-on-visitor-licence": {
+      "label": "Fishing licence (non-residents of Canada)",
+      "url": "https://www.ontario.ca/page/fishing-licence-non-residents-canada"
+    },
+    "world-d22-on-visitor-fees": {
+      "label": "Fishing licence fees (non-Canadian residents)",
+      "url": "https://www.ontario.ca/page/fishing-licence-fees-non-canadian-residents"
+    },
+    "world-d22-on-limits": {
+      "label": "Fishing limits, size restrictions and catch and release",
+      "url": "https://www.ontario.ca/page/fishing-limits-size-restrictions-and-catch-and-release"
+    },
+    "world-d22-on-regs": {
+      "label": "Ontario Fishing Regulations Summary",
+      "url": "https://www.ontario.ca/document/ontario-fishing-regulations-summary"
+    },
+    "world-d22-not-flyin-walleye": {
+      "label": "The Fly-in Walleye Experience",
+      "url": "https://northernontario.travel/fishing/fly-walleye-experience"
+    },
+    "world-d22-not-kaby": {
+      "label": "My First Fly-In Fishing Lodge Experience",
+      "url": "https://northernontario.travel/algoma-country/my-first-fly-fishing-lodge-experience"
+    },
+    "world-d22-not-buck": {
+      "label": "Buck Lake: New Trip, New Plan",
+      "url": "https://northernontario.travel/fishing/fly-walleye-fishing-buck-lake-lodge-ontario"
+    },
     "world-species-e4b4ce359a5f": {
       "label": "Fishery source for Yakutat / Situk River",
       "url": "https://www.adfg.alaska.gov/index.cfm?adfg=ByAreaSoutheastYakutat.fishingOpps&fishery=Situk+River+sockeye+and+coho+salmon"

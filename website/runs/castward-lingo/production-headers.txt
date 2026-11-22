@@ -1,0 +1,20 @@
+HTTP/2 200 
+accept-ranges: bytes
+access-control-allow-origin: *
+age: 0
+cache-control: public, max-age=0, must-revalidate
+content-disposition: inline; filename="lowcountry-inshore-grand-slam"
+content-type: text/html; charset=utf-8
+date: Tue, 10 Nov 2026 23:08:11 GMT
+etag: "4ede3d1e4fcbf728597d9cae35c9ab2e"
+last-modified: Tue, 10 Nov 2026 23:08:11 GMT
+permissions-policy: geolocation=(), camera=(), microphone=()
+referrer-policy: strict-origin-when-cross-origin
+server: Vercel
+strict-transport-security: max-age=63072000
+x-content-type-options: nosniff
+x-frame-options: SAMEORIGIN
+x-vercel-cache: MISS
+x-vercel-id: cle1::4bhm6-1794352090845-261af63e86c5
+content-length: 19239
+

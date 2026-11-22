@@ -4849,6 +4849,83 @@
       "scopeNote": "Basic and conservation licences, annual, eight-day and one-day validity.",
       "type": "reference"
     },
+    "d22-on-visitor-licence": {
+      "title": "Fishing licence (non-residents of Canada)",
+      "shortTitle": "Ontario visitor fishing licence",
+      "url": "https://www.ontario.ca/page/fishing-licence-non-residents-canada",
+      "publisher": "Government of Ontario",
+      "group": "Government/agency",
+      "checked": "2026-11-22",
+      "status": "text-inspected",
+      "scopeNote": "Outdoors Card plus licence for visitors aged 18 and older; sport and conservation licences; one-day and eight-day rules; under-18 rule.",
+      "type": "reference"
+    },
+    "d22-on-visitor-fees": {
+      "title": "Fishing licence fees (non-Canadian residents)",
+      "shortTitle": "Ontario visitor licence fees",
+      "url": "https://www.ontario.ca/page/fishing-licence-fees-non-canadian-residents",
+      "publisher": "Government of Ontario",
+      "group": "Government/agency",
+      "checked": "2026-11-22",
+      "status": "text-inspected",
+      "scopeNote": "Official fee table for visitors from outside Canada. Fees are subject to HST.",
+      "type": "reference"
+    },
+    "d22-on-limits": {
+      "title": "Fishing limits, size restrictions and catch and release",
+      "shortTitle": "Ontario catch and possession limits",
+      "url": "https://www.ontario.ca/page/fishing-limits-size-restrictions-and-catch-and-release",
+      "publisher": "Government of Ontario",
+      "group": "Government/agency",
+      "checked": "2026-11-22",
+      "status": "text-inspected",
+      "scopeNote": "Seasons and limits differ in each of 20 fisheries management zones and by licence type; catch and possession limit definitions.",
+      "type": "reference"
+    },
+    "d22-on-regs": {
+      "title": "Ontario Fishing Regulations Summary",
+      "shortTitle": "Ontario Fishing Regulations Summary",
+      "url": "https://www.ontario.ca/document/ontario-fishing-regulations-summary",
+      "publisher": "Government of Ontario",
+      "group": "Government/agency",
+      "checked": "2026-11-22",
+      "status": "text-inspected",
+      "scopeNote": "Zone files with seasons, limits and waterbody exceptions. Read the file for the zone of the named lake.",
+      "type": "reference"
+    },
+    "d22-not-flyin-walleye": {
+      "title": "The Fly-in Walleye Experience",
+      "shortTitle": "Northern Ontario Travel: fly-in walleye",
+      "url": "https://northernontario.travel/fishing/fly-walleye-experience",
+      "publisher": "Northern Ontario Travel",
+      "group": "Independent",
+      "checked": "2026-11-22",
+      "status": "text-inspected",
+      "scopeNote": "Article dated February 17, 2026. Describes one lodge and two outpost operators, their equipment and one operator’s 100 lb per person limit. Operator details can change.",
+      "type": "reference"
+    },
+    "d22-not-kaby": {
+      "title": "My First Fly-In Fishing Lodge Experience",
+      "shortTitle": "Northern Ontario Travel: Kaby Lodge visit",
+      "url": "https://northernontario.travel/algoma-country/my-first-fly-fishing-lodge-experience",
+      "publisher": "Northern Ontario Travel",
+      "group": "Independent",
+      "checked": "2026-11-22",
+      "status": "text-inspected",
+      "scopeNote": "Article dated September 13, 2026. One early-June visit to Kaby Lodge on Kabinakagami Lake from White River. One visit does not establish a season.",
+      "type": "reference"
+    },
+    "d22-not-buck": {
+      "title": "Buck Lake: New Trip, New Plan",
+      "shortTitle": "Northern Ontario Travel: Buck Lake Lodge",
+      "url": "https://northernontario.travel/fishing/fly-walleye-fishing-buck-lake-lodge-ontario",
+      "publisher": "Northern Ontario Travel",
+      "group": "Independent",
+      "checked": "2026-11-22",
+      "status": "text-inspected",
+      "scopeNote": "Article dated March 13, 2026. Describes the Hornepayne overnight, morning flights, cabins and standard package contents at one operator.",
+      "type": "reference"
+    },
     "species-e4b4ce359a5f": {
       "title": "Fishery source for Yakutat / Situk River",
       "url": "https://www.adfg.alaska.gov/index.cfm?adfg=ByAreaSoutheastYakutat.fishingOpps&fishery=Situk+River+sockeye+and+coho+salmon",
@@ -188843,9 +188920,9 @@
       "Cook Islands",
       "Niue"
     ],
-    "sources": 1083,
+    "sources": 1090,
     "sourceInspection": {
-      "text-inspected": 224,
+      "text-inspected": 231,
       "search-excerpt-inspected": 136,
       "page-text-inspected": 19,
       "source-linked": 92,

@@ -2137,6 +2137,76 @@
       "checked": "2026-11-21",
       "status": "text-inspected",
       "scopeNote": "Basic and conservation licences, annual, eight-day and one-day validity."
+    },
+    "d22-on-visitor-licence": {
+      "title": "Fishing licence (non-residents of Canada)",
+      "shortTitle": "Ontario visitor fishing licence",
+      "url": "https://www.ontario.ca/page/fishing-licence-non-residents-canada",
+      "publisher": "Government of Ontario",
+      "group": "Government/agency",
+      "checked": "2026-11-22",
+      "status": "text-inspected",
+      "scopeNote": "Outdoors Card plus licence for visitors aged 18 and older; sport and conservation licences; one-day and eight-day rules; under-18 rule."
+    },
+    "d22-on-visitor-fees": {
+      "title": "Fishing licence fees (non-Canadian residents)",
+      "shortTitle": "Ontario visitor licence fees",
+      "url": "https://www.ontario.ca/page/fishing-licence-fees-non-canadian-residents",
+      "publisher": "Government of Ontario",
+      "group": "Government/agency",
+      "checked": "2026-11-22",
+      "status": "text-inspected",
+      "scopeNote": "Official fee table for visitors from outside Canada. Fees are subject to HST."
+    },
+    "d22-on-limits": {
+      "title": "Fishing limits, size restrictions and catch and release",
+      "shortTitle": "Ontario catch and possession limits",
+      "url": "https://www.ontario.ca/page/fishing-limits-size-restrictions-and-catch-and-release",
+      "publisher": "Government of Ontario",
+      "group": "Government/agency",
+      "checked": "2026-11-22",
+      "status": "text-inspected",
+      "scopeNote": "Seasons and limits differ in each of 20 fisheries management zones and by licence type; catch and possession limit definitions."
+    },
+    "d22-on-regs": {
+      "title": "Ontario Fishing Regulations Summary",
+      "shortTitle": "Ontario Fishing Regulations Summary",
+      "url": "https://www.ontario.ca/document/ontario-fishing-regulations-summary",
+      "publisher": "Government of Ontario",
+      "group": "Government/agency",
+      "checked": "2026-11-22",
+      "status": "text-inspected",
+      "scopeNote": "Zone files with seasons, limits and waterbody exceptions. Read the file for the zone of the named lake."
+    },
+    "d22-not-flyin-walleye": {
+      "title": "The Fly-in Walleye Experience",
+      "shortTitle": "Northern Ontario Travel: fly-in walleye",
+      "url": "https://northernontario.travel/fishing/fly-walleye-experience",
+      "publisher": "Northern Ontario Travel",
+      "group": "Independent",
+      "checked": "2026-11-22",
+      "status": "text-inspected",
+      "scopeNote": "Article dated February 17, 2026. Describes one lodge and two outpost operators, their equipment and one operator’s 100 lb per person limit. Operator details can change."
+    },
+    "d22-not-kaby": {
+      "title": "My First Fly-In Fishing Lodge Experience",
+      "shortTitle": "Northern Ontario Travel: Kaby Lodge visit",
+      "url": "https://northernontario.travel/algoma-country/my-first-fly-fishing-lodge-experience",
+      "publisher": "Northern Ontario Travel",
+      "group": "Independent",
+      "checked": "2026-11-22",
+      "status": "text-inspected",
+      "scopeNote": "Article dated September 13, 2026. One early-June visit to Kaby Lodge on Kabinakagami Lake from White River. One visit does not establish a season."
+    },
+    "d22-not-buck": {
+      "title": "Buck Lake: New Trip, New Plan",
+      "shortTitle": "Northern Ontario Travel: Buck Lake Lodge",
+      "url": "https://northernontario.travel/fishing/fly-walleye-fishing-buck-lake-lodge-ontario",
+      "publisher": "Northern Ontario Travel",
+      "group": "Independent",
+      "checked": "2026-11-22",
+      "status": "text-inspected",
+      "scopeNote": "Article dated March 13, 2026. Describes the Hornepayne overnight, morning flights, cabins and standard package contents at one operator."
     }
   },
   "trips": {
@@ -11778,6 +11848,322 @@
         {
           "q": "Should you wade through tall marsh grass?",
           "a": "LoCo Fly Charters advises against it in its local flats guidance because of soft mud, deeper water and oysters. Use an agreed access route."
+        }
+      ]
+    },
+    "ontario-fly-in-fishing": {
+      "rich": true,
+      "answerFirst": true,
+      "title": "Fly-in fishing in Ontario: outpost or lodge, licence and packing",
+      "seoTitle": "Ontario fly-in fishing: outpost vs lodge, licence, packing",
+      "description": "Fly-in fishing in Ontario means a floatplane to a lodge or outpost cabin for walleye and pike. Compare both, see visitor licence fees and pack to the weight limit.",
+      "category": "LOCAL TRIP / PREPARATION",
+      "destination": "kabinakagami-lake-fly-in",
+      "hero": {
+        "route": "/trip-types/ontario-fly-in-fishing/"
+      },
+      "updated": "2026-11-22",
+      "published": "2026-11-10",
+      "quickAnswer": "Fly-in fishing in Ontario means a floatplane takes you to a lake with no road. You stay at a full-service lodge or a self-catered outpost cabin and fish from small boats, mostly for walleye and northern pike. Most adult visitors need an Ontario fishing licence. Pack to your air operator’s weight limit.",
+      "quickSources": [
+        "d22-not-flyin-walleye",
+        "d22-on-visitor-licence"
+      ],
+      "facts": [
+        {
+          "label": "Access",
+          "value": "Floatplane, no road"
+        },
+        {
+          "label": "Main choice",
+          "value": "Lodge or outpost"
+        },
+        {
+          "label": "Visitor 8-day sport licence",
+          "value": "CAD 54.38 + card"
+        }
+      ],
+      "relatedGuides": [
+        "one-week-fishing-trip-checklist",
+        "guided-fishing-trip-questions",
+        "what-to-bring-on-a-guided-fishing-trip"
+      ],
+      "sections": [
+        {
+          "id": "meaning",
+          "title": "What is fly-in fishing in Ontario?",
+          "paragraphs": [
+            "It is an access method, not a fishing method. An aircraft on floats carries you from an air base to a lodge or cabin on a lake that has no road. “Fly-in” has nothing to do with fly fishing; most guests in the accounts below cast jigs, spoons and soft plastics from small boats.",
+            "The drive is part of the trip. In one Northern Ontario Travel account, two anglers drove about 12 hours from Ottawa to White River, slept at a motel, and took a 25-minute floatplane flight to Kaby Lodge on Kabinakagami Lake the next morning."
+          ],
+          "sources": [
+            "d22-not-kaby",
+            "d22-not-flyin-walleye"
+          ]
+        },
+        {
+          "id": "outpost-vs-lodge",
+          "title": "Outpost camp or full-service lodge: which fly-in trip fits you?",
+          "paragraphs": [
+            "Decide this first, because it changes the price, the packing and the work. A lodge feeds and guides you. An outpost gives your group a cabin, boats and a lake, and you cook and find the fish yourselves. The rows below come from named operators in Northern Ontario Travel articles. Use them as questions for your own operator; one camp’s inclusions do not transfer to another."
+          ],
+          "sources": [
+            "d22-not-flyin-walleye",
+            "d22-not-kaby",
+            "d22-not-buck"
+          ],
+          "table": {
+            "heads": [
+              "What you compare",
+              "Full-service lodge",
+              "Outpost camp"
+            ],
+            "rows": [
+              [
+                "Meals",
+                "Kaby Lodge served chef-prepared meals and a shore lunch. Kesagami is described as an “American Plan” lodge.",
+                "You bring and cook your food. Air-Dale outposts list a full kitchen, propane fridge, stove and fish fryers."
+              ],
+              [
+                "Guide",
+                "Kaby Lodge guests fished three days with a lodge guide. Kesagami offers guides through the outfitter.",
+                "No guide is described. You learn the lake yourselves."
+              ],
+              [
+                "Boats",
+                "Supplied by the lodge; Kesagami uses large square-back canoes.",
+                "Air-Dale lists 14-foot aluminum boats, 4 to 9.9 hp outboards and gas."
+              ],
+              [
+                "Other people",
+                "Other guests share the lodge and the lake.",
+                "Clark’s says most of its cabins are the only one on the lake."
+              ],
+              [
+                "Contact",
+                "Lodge staff are on site.",
+                "Air-Dale lists a satellite messenger at camp. Clark’s checks on camps to restock bait and ice."
+              ],
+              [
+                "Your packing",
+                "Clothes, tackle and personal items.",
+                "Everything, food and drinks included, inside the weight limit."
+              ]
+            ]
+          }
+        },
+        {
+          "id": "licence",
+          "title": "What fishing licence do you need for a fly-in trip in Ontario?",
+          "paragraphs": [
+            "If you live outside Canada and are 18 or older, you need an Outdoors Card plus a fishing licence. The one exception is the one-day sport licence, which needs no card. A sport licence carries the normal catch limits; a conservation licence costs less and carries reduced limits. Anglers under 18 can fish with a licensed adult, and their fish count toward that adult’s limit.",
+            "For a typical outpost week, the eight-day licence fits. The fees below are Ontario’s official table for non-Canadian residents; all are subject to HST. Buy before you reach the air base and carry the card or licence summary on the water. Canadian residents use a different fee table."
+          ],
+          "sources": [
+            "d22-on-visitor-licence",
+            "d22-on-visitor-fees"
+          ],
+          "table": {
+            "heads": [
+              "Licence for visitors from outside Canada",
+              "Fee (CAD, before HST)",
+              "Outdoors Card needed?"
+            ],
+            "rows": [
+              [
+                "1-day sport",
+                "$24.86",
+                "No"
+              ],
+              [
+                "8-day sport",
+                "$54.38",
+                "Yes"
+              ],
+              [
+                "8-day conservation",
+                "$31.52",
+                "Yes"
+              ],
+              [
+                "1-year sport",
+                "$83.19",
+                "Yes"
+              ],
+              [
+                "1-year conservation",
+                "$52.71",
+                "Yes"
+              ],
+              [
+                "Outdoors Card",
+                "$8.57",
+                "—"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "cost",
+          "title": "How much does a fly-in fishing trip in Ontario cost?",
+          "paragraphs": [
+            "Castward does not publish package prices, because each operator sets its own and they change by camp, week and group size. The official cost you can fix today is the licence: an eight-day sport licence plus the Outdoors Card comes to CAD 62.95 before HST for a visitor from outside Canada.",
+            "Group size moves the flight share. Northern Ontario Travel reports that Air-Dale flies a group smaller than four into an outpost at the same cost as a group of four, because of flight costs. Ask each operator how it prices a party of two or three."
+          ],
+          "sources": [
+            "d22-on-visitor-fees",
+            "d22-not-flyin-walleye"
+          ]
+        },
+        {
+          "id": "weight",
+          "title": "How much gear can you take on the floatplane?",
+          "paragraphs": [
+            "Ask your air operator for its limit in writing; there is no single Ontario number. As one published example, Clark’s Resorts and Outposts allows 100 lb or less for each person, with no exceptions. That figure covers everything that goes on the plane: food, drinks, tackle and personal gear.",
+            "The same operator asks guests to put rods in tubes and take lures off the lines. It flies in ice and live minnows at no extra charge. Other operators set their own rules."
+          ],
+          "sources": [
+            "d22-not-flyin-walleye"
+          ],
+          "checklist": [
+            "Weigh every bag at home, food and drinks included.",
+            "Use soft bags; put rods in tubes with the lures off.",
+            "Ask what the camp already holds: cookware, bedding, bait, ice.",
+            "Ask what happens to your return flight if weather stops the plane."
+          ]
+        },
+        {
+          "id": "species",
+          "title": "What fish do you catch on an Ontario fly-in trip?",
+          "paragraphs": [
+            "Walleye and northern pike lead the published accounts. At Kaby Lodge in early June, two anglers counted more than 100 walleye over three days in 5 to 9 feet of water and landed a 37.5-inch pike. At Buck Lake a 28-inch-plus walleye came from open water over 30 feet.",
+            "Other lakes add other fish. The Air-Dale account also names smallmouth bass, lake trout, speckled trout, whitefish and perch on its main lakes. These are reports from single visits. They show what a lake holds; they do not promise your catch."
+          ],
+          "sources": [
+            "d22-not-kaby",
+            "d22-not-buck",
+            "d22-not-flyin-walleye"
+          ],
+          "table": {
+            "heads": [
+              "Named example",
+              "Nearest town or air base",
+              "Published detail"
+            ],
+            "rows": [
+              [
+                "Kaby Lodge, Kabinakagami Lake",
+                "White River (White River Air)",
+                "25-minute flight; guided walleye and pike in early June."
+              ],
+              [
+                "Buck Lake Lodge, Obakamiga Lake",
+                "Hornepayne",
+                "About 25 km from town; morning flights, so guests stay in Hornepayne the night before."
+              ],
+              [
+                "Clark’s outposts",
+                "Cedar Lake, 25 miles north of Vermilion Bay",
+                "More than 25 locations; 100 lb per person limit."
+              ],
+              [
+                "Air-Dale outposts",
+                "Wawa",
+                "Nine-plus remote camps; boats, motors and gas listed."
+              ],
+              [
+                "Kesagami Wilderness Lodge",
+                "Cochrane",
+                "Shallow lake averaging 7 feet; pike and walleye."
+              ]
+            ]
+          }
+        },
+        {
+          "id": "season",
+          "title": "When is the season, and how many fish can you keep?",
+          "paragraphs": [
+            "It depends on the lake’s zone. Ontario has 20 fisheries management zones, and open seasons and limits differ in each one. Your limit also depends on the waterbody, the time of year, the size of the fish and whether you hold a sport or conservation licence.",
+            "Ask the operator which zone the lake is in, then open that zone’s file in the Ontario Fishing Regulations Summary and read the exceptions for the named water. A catch limit is what you keep in a day. A possession limit also counts the fish in your cooler and freezer, so it decides what you can fly home with. Some camps add their own release rules for larger fish, as Buck Lake Lodge does."
+          ],
+          "sources": [
+            "d22-on-limits",
+            "d22-on-regs",
+            "d22-not-buck"
+          ]
+        },
+        {
+          "id": "questions",
+          "title": "What should you ask before you book?",
+          "paragraphs": [],
+          "sources": [],
+          "checklist": [
+            "Which lake, which air base, and which fisheries management zone?",
+            "Is it a lodge plan with meals and a guide, or a self-catered outpost?",
+            "What is the weight limit for each person, and does it include food?",
+            "Which boats, motors, fuel, bait and safety equipment are included?",
+            "How does the camp call out, and how often does someone check on it?",
+            "How is a party smaller than four priced?",
+            "What is the plan if weather delays the flight in or out?"
+          ]
+        },
+        {
+          "id": "next",
+          "title": "Where can you check the next part of your plan?",
+          "paragraphs": [],
+          "sources": [],
+          "cards": [
+            {
+              "title": "Ontario fishing licence guide",
+              "url": "/fishing-licenses/ca-ontario/",
+              "text": "See who needs a licence, the fees and the official shop link."
+            },
+            {
+              "title": "Kabinakagami Lake fly-in",
+              "url": "/trips/kabinakagami-lake-fly-in/",
+              "text": "Read the destination profile for the named example."
+            },
+            {
+              "title": "Walleye",
+              "url": "/species/walleye/",
+              "text": "Know the fish most fly-in camps are built around."
+            },
+            {
+              "title": "Compare local trip types",
+              "url": "/trip-types/",
+              "text": "Match another named trip to its water."
+            }
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Does fly-in fishing mean fly fishing?",
+          "a": "No. Fly-in describes the aircraft access. Guests in the published Ontario accounts fished from small boats with jigs, spoons and soft plastics. Ask the lodge if you want to fly fish."
+        },
+        {
+          "q": "Do I need an Outdoors Card for a fly-in trip in Ontario?",
+          "a": "Yes, if you are 18 or older and buy an eight-day or one-year licence. Only the one-day sport licence needs no Outdoors Card. The card costs CAD 8.57 before HST for visitors from outside Canada."
+        },
+        {
+          "q": "What is the difference between an outpost and a lodge?",
+          "a": "A lodge supplies meals and usually a guide. An outpost is a cabin with boats on a remote lake where your group cooks and fishes on its own. Confirm each inclusion with the operator."
+        },
+        {
+          "q": "How much weight can I bring on a fly-in fishing trip?",
+          "a": "Each air operator sets its own limit. One Ontario operator, Clark’s Resorts and Outposts, publishes 100 lb or less per person, food and drinks included. Get your operator’s number before you pack."
+        },
+        {
+          "q": "Can children fish on a fly-in trip without a licence?",
+          "a": "Visitors under 18 can fish without their own card or licence when they are with a licensed adult. Any fish they keep count toward that adult’s limit."
+        },
+        {
+          "q": "Can I take walleye home from a fly-in trip?",
+          "a": "Only within the possession limit for the lake’s fisheries management zone and your licence type. Read the zone file in the Ontario Fishing Regulations Summary and ask the camp about its own release rules."
+        },
+        {
+          "q": "When do Ontario fly-in camps operate?",
+          "a": "Castward has no confirmed operating dates for these camps. One published visit to Kaby Lodge took place in early June. Ask the operator for its dates, then check the open season for the zone."
         }
       ]
     }
