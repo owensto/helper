@@ -70354,7 +70354,106 @@
           "note": "Check the rules for the exact water, date, licence and fish identification. This link does not establish an open season."
         }
       ],
-      "referenceRole": "game fish"
+      "referenceRole": "game fish",
+      "searchAnswer": {
+        "title": "Copper shark (bronze whaler): size and identification",
+        "description": "Identify copper sharks, also called bronze whalers. Compare their size, dorsal ridge and fins with similar sharks, with museum and fisheries sources.",
+        "updated": "2026-11-22",
+        "answer": "The copper shark (Carcharhinus brachyurus) is the bronze whaler, also called narrowtooth shark or bronzie. It has a bronze-grey back, a pale underside and usually no ridge between its dorsal fins. Colour alone is not enough: compare the fins and body shape before you identify a shark.",
+        "question": "How can you identify a copper shark?",
+        "facts": [
+          [
+            "Scientific name",
+            "Carcharhinus brachyurus; family Carcharhinidae (Florida Museum)."
+          ],
+          [
+            "Other names",
+            "Bronze whaler, narrowtooth shark and bronzie (Florida Museum)."
+          ],
+          [
+            "Size",
+            "Fishes of Australia lists 295 cm total length. Florida Museum reports rare lengths to 350 cm. These are species-size figures, not an angling record."
+          ],
+          [
+            "Back and fins",
+            "Bronze to grey-brown above, pale below; large pectoral fins and usually no ridge between the two dorsal fins (Fishes of Australia)."
+          ],
+          [
+            "Range",
+            "Warm temperate and subtropical coastal waters, with separated populations in the Atlantic, Indo-Pacific and Mediterranean (Florida Museum)."
+          ],
+          [
+            "Habitat",
+            "Bays, estuaries, surf beaches and continental shelves; an occurrence record does not establish legal fishing access."
+          ],
+          [
+            "Similar fish",
+            "Dusky, blacktip, sandbar and spinner sharks can be confused with this species (Florida Museum)."
+          ]
+        ],
+        "sections": [
+          {
+            "question": "How does a copper shark differ from a dusky shark?",
+            "answer": "PIRSA warns that bronze and dusky whalers look very similar. Copper sharks usually lack the low ridge between the dorsal fins. Use several features together, rather than the bronze colour alone. Compare a fisheries identification guide before any decision to retain a shark; a quick colour match is not enough.",
+            "source": "https://pir.sa.gov.au/fishing-and-aquaculture/recreational-fishing/rules/species-limits/species-profile/bronze_whaler_shark"
+          },
+          {
+            "question": "Where do bronze whalers occur in Australia?",
+            "answer": "Fishes of Australia describes a range from Moreton Bay around southern Australia to Shark Bay, including northern Tasmania. Bays, harbours and surf beaches form part of that habitat. The account also notes wider observer records. Check a local fishery source before treating a broad range map as a trip destination.",
+            "source": "https://fishesofaustralia.net.au/home/species/2883"
+          },
+          {
+            "question": "How large are bronze whalers at birth and maturity?",
+            "answer": "Florida Museum gives about 60 cm at birth. Its account places male maturity at 206–235 cm and female maturity at 227–244 cm. These are biological reference ranges, not legal size limits. The same source reports rare lengths of 350 cm; a large shark is not necessarily a record fish.",
+            "source": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/bronze-whaler-shark/"
+          },
+          {
+            "question": "Do copper shark teeth help with identification?",
+            "answer": "Florida Museum describes narrow, finely serrated upper teeth that slope more toward the mouth corners in adults. Teeth can help specialists separate similar sharks, but they are not a safe check for an angler beside a live fish. Use photographs and an official identification guide; keep clear of the mouth.",
+            "source": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/bronze-whaler-shark/"
+          }
+        ],
+        "faq": [
+          [
+            "Is a bronze whaler the same as a copper shark?",
+            "Yes. Both names refer to Carcharhinus brachyurus. Narrowtooth shark is another English name."
+          ],
+          [
+            "How big do copper sharks get?",
+            "Fishes of Australia lists 295 cm total length. Florida Museum notes rare reports to 350 cm."
+          ],
+          [
+            "Do copper sharks have a ridge between their dorsal fins?",
+            "Usually not. This feature helps identification, but check the fins, snout and body shape too."
+          ],
+          [
+            "What do copper sharks eat?",
+            "Fishes of Australia lists bottom-dwelling and open-water fish, cephalopods and some crustaceans among their prey."
+          ],
+          [
+            "Are copper sharks harmless?",
+            "No. Fishes of Australia describes them as potentially dangerous. Do not approach or handle a shark to check its teeth."
+          ],
+          [
+            "Can you keep a copper shark?",
+            "Rules depend on the jurisdiction and exact fishing area. Use the current fisheries rules for the place; a species profile is not permission to retain a fish."
+          ]
+        ],
+        "sources": [
+          [
+            "Florida Museum: bronze whaler identity, size and range",
+            "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/bronze-whaler-shark/"
+          ],
+          [
+            "Fishes of Australia: bronze whaler identification",
+            "https://fishesofaustralia.net.au/home/species/2883"
+          ],
+          [
+            "PIRSA: bronze whaler identification and local rules",
+            "https://pir.sa.gov.au/fishing-and-aquaculture/recreational-fishing/rules/species-limits/species-profile/bronze_whaler_shark"
+          ]
+        ]
+      }
     },
     {
       "id": "coral-hind",

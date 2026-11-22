@@ -32605,10 +32605,29 @@
           "speciesId": "smallmouth-bass",
           "commonName": "Smallmouth bass",
           "sourceUrls": [
-            "https://www.inter.dfo-mpo.gc.ca/en/gvo-2026-036nb"
+            "https://www.frederictoncapitalregion.ca/see-do/activities/fishing",
+            "https://tourismnewbrunswick.ca/story/fishing-new-brunswick-what-you-need-know",
+            "https://www2.gnb.ca/content/gnb/en/departments/erd/fish-and-wildlife/content/go-fishing/content/TidalWaters.html"
           ],
           "scopeNotes": [
-            "The source documents smallmouth bass in the Saint John River / Fredericton fishery. Check the source for the exact reach or departure area."
+            "The tourism sources name this species in the Saint John River system near Fredericton. The provincial page supplies the tidal-water distinction."
+          ],
+          "status": "reviewed-source",
+          "seasons": [],
+          "seasonStatus": "unverified",
+          "methods": [],
+          "methodStatus": "unverified"
+        },
+        {
+          "speciesId": "muskellunge",
+          "commonName": "Muskellunge",
+          "sourceUrls": [
+            "https://www.frederictoncapitalregion.ca/see-do/activities/fishing",
+            "https://tourismnewbrunswick.ca/story/fishing-new-brunswick-what-you-need-know",
+            "https://www2.gnb.ca/content/gnb/en/departments/erd/fish-and-wildlife/content/go-fishing/content/TidalWaters.html"
+          ],
+          "scopeNotes": [
+            "The tourism sources name this species in the Saint John River system near Fredericton. The provincial page supplies the tidal-water distinction."
           ],
           "status": "reviewed-source",
           "seasons": [],
@@ -32622,7 +32641,9 @@
       "methods": [],
       "methodStatus": "unverified",
       "sourceUrls": [
-        "https://www.inter.dfo-mpo.gc.ca/en/gvo-2026-036nb"
+        "https://www.frederictoncapitalregion.ca/see-do/activities/fishing",
+        "https://tourismnewbrunswick.ca/story/fishing-new-brunswick-what-you-need-know",
+        "https://www2.gnb.ca/content/gnb/en/departments/erd/fish-and-wildlife/content/go-fishing/content/TidalWaters.html"
       ],
       "researchSourceUrls": [
         "https://www.inter.dfo-mpo.gc.ca/en/gvo-2025-041nb",
@@ -32675,7 +32696,7 @@
         "https://en.wikipedia.org/wiki/List_of_bodies_of_water_of_New_Brunswick"
       ],
       "unverifiedCandidates": null,
-      "reviewed": "2026-11-10"
+      "reviewed": "2026-11-22"
     },
     {
       "id": "na-ca-nb-004",
@@ -33046,13 +33067,52 @@
       "country": "Canada",
       "state": "Newfoundland and Labrador",
       "region": "North America",
-      "status": "unverified",
-      "targets": [],
+      "status": "source-linked",
+      "targets": [
+        {
+          "speciesId": "atlantic-salmon",
+          "commonName": "Atlantic salmon",
+          "sourceUrls": [
+            "https://www.gov.nl.ca/eccc/files/env_assessment_y2026_2408-Registration-Document-Sections-10-17.pdf",
+            "https://www.nfl.dfo-mpo.gc.ca/en/anglers-guide-2026-2027-salmon-watershed-management-plans-and-closed-areas-salmon-fishing-area-sfa",
+            "https://www.nfl.dfo-mpo.gc.ca/en/isrs"
+          ],
+          "scopeNotes": [
+            "Primary sources establish this species in the described watershed or Labrador region. Access and legal dates require a water-specific check."
+          ],
+          "status": "reviewed-source",
+          "seasons": [],
+          "seasonStatus": "unverified",
+          "methods": [],
+          "methodStatus": "unverified"
+        },
+        {
+          "speciesId": "brook-trout",
+          "commonName": "Brook trout",
+          "sourceUrls": [
+            "https://www.gov.nl.ca/eccc/files/env_assessment_y2026_2408-Registration-Document-Sections-10-17.pdf",
+            "https://www.nfl.dfo-mpo.gc.ca/en/anglers-guide-2026-2027-salmon-watershed-management-plans-and-closed-areas-salmon-fishing-area-sfa",
+            "https://www.nfl.dfo-mpo.gc.ca/en/isrs"
+          ],
+          "scopeNotes": [
+            "Primary sources establish this species in the described watershed or Labrador region. Access and legal dates require a water-specific check."
+          ],
+          "status": "reviewed-source",
+          "seasons": [],
+          "seasonStatus": "unverified",
+          "methods": [],
+          "methodStatus": "unverified"
+        }
+      ],
       "seasons": [],
       "seasonStatus": "unverified",
       "methods": [],
       "methodStatus": "unverified",
-      "sourceUrls": [],
+      "sourceUrls": [
+        "https://www.gov.nl.ca/eccc/files/env_assessment_y2026_2408-Registration-Document-Sections-10-17.pdf",
+        "https://www.nfl.dfo-mpo.gc.ca/en/anglers-guide-2026-2027-salmon-watershed-management-plans-and-closed-areas-salmon-fishing-area-sfa",
+        "https://www.nfl.dfo-mpo.gc.ca/en/isrs"
+      ],
       "researchSourceUrls": [
         "https://www.asf.ca/rivernotes-september-10-2026/",
         "https://www.gov.nl.ca/tcar/home/parks/waterway/activities/",
@@ -33096,7 +33156,7 @@
         "https://www.reddit.com/r/flyfishing/comments/1v5tcmd/atlantic_salmon_on_the_gander_river_central/"
       ],
       "unverifiedCandidates": "Atlantic salmon",
-      "reviewed": "2026-11-10"
+      "reviewed": "2026-11-22"
     },
     {
       "id": "na-ca-nl-002",
@@ -33377,13 +33437,52 @@
       "country": "Canada",
       "state": "Newfoundland and Labrador",
       "region": "North America",
-      "status": "unverified",
-      "targets": [],
+      "status": "source-linked",
+      "targets": [
+        {
+          "speciesId": "arctic-char",
+          "commonName": "Arctic char",
+          "sourceUrls": [
+            "https://www.gov.nl.ca/fal/wildlife/all-species/animals/inland-fish/arctic-char/",
+            "https://www.gov.nl.ca/fal/wildlife/all-species/animals/inland-fish/brook-trout/",
+            "https://www.nfl.dfo-mpo.gc.ca/en/anglers-guide-2026-2027-other-species"
+          ],
+          "scopeNotes": [
+            "Primary sources establish this species in the described watershed or Labrador region. Access and legal dates require a water-specific check."
+          ],
+          "status": "reviewed-source",
+          "seasons": [],
+          "seasonStatus": "unverified",
+          "methods": [],
+          "methodStatus": "unverified"
+        },
+        {
+          "speciesId": "brook-trout",
+          "commonName": "Brook trout",
+          "sourceUrls": [
+            "https://www.gov.nl.ca/fal/wildlife/all-species/animals/inland-fish/arctic-char/",
+            "https://www.gov.nl.ca/fal/wildlife/all-species/animals/inland-fish/brook-trout/",
+            "https://www.nfl.dfo-mpo.gc.ca/en/anglers-guide-2026-2027-other-species"
+          ],
+          "scopeNotes": [
+            "Primary sources establish this species in the described watershed or Labrador region. Access and legal dates require a water-specific check."
+          ],
+          "status": "reviewed-source",
+          "seasons": [],
+          "seasonStatus": "unverified",
+          "methods": [],
+          "methodStatus": "unverified"
+        }
+      ],
       "seasons": [],
       "seasonStatus": "unverified",
       "methods": [],
       "methodStatus": "unverified",
-      "sourceUrls": [],
+      "sourceUrls": [
+        "https://www.gov.nl.ca/fal/wildlife/all-species/animals/inland-fish/arctic-char/",
+        "https://www.gov.nl.ca/fal/wildlife/all-species/animals/inland-fish/brook-trout/",
+        "https://www.nfl.dfo-mpo.gc.ca/en/anglers-guide-2026-2027-other-species"
+      ],
       "researchSourceUrls": [
         "https://www.nfl.dfo-mpo.gc.ca/en/coastal-water-recreational-fishery-information-newfoundland-and-labrador-region",
         "https://www.nfl.dfo-mpo.gc.ca/en/anglers-guide-2026-2027-other-species",
@@ -33415,7 +33514,7 @@
         "https://www.assembly.nl.ca/houseBusiness/Hansard/ga50session2/25-05-12.htm"
       ],
       "unverifiedCandidates": "Arctic char candidate",
-      "reviewed": "2026-11-10"
+      "reviewed": "2026-11-22"
     },
     {
       "id": "na-ca-pe-001",

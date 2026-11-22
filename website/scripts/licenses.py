@@ -360,6 +360,12 @@ def install(pages, root, add, trips):
         body += '</ul></section>'
     body += '</div><p><a class="link" href="/guides/florida-visitor-fishing-license-planner/">Florida visitors: check shore, pier, and charter coverage</a>.</p><p class="small">Checked ' + MONTH + ' against official sources. Always confirm on the official site before you fish.</p></div>'
     body += '<script>(()=>{const i=document.querySelector("[data-lic-filter]");if(!i)return;i.addEventListener("input",()=>{const q=i.value.trim().toLowerCase();document.querySelectorAll("[data-lic-group]").forEach(g=>{let n=0;g.querySelectorAll("li").forEach(li=>{const m=!q||li.dataset.licName.includes(q);li.hidden=!m;n+=m});g.hidden=!n;});});})();</script>'
+    listing = {'@context': 'https://schema.org', '@type': 'ItemList',
+               'name': 'Fishing licenses by state and country', 'numberOfItems': len(recs),
+               'itemListElement': [{'@type': 'ListItem', 'position': i, 'name': r['name'],
+                                    'url': 'https://castward.app' + page_path(r)}
+                                   for i, r in enumerate([r for _, rs in blocks for r in sorted(rs, key=lambda r: r['name'])], 1)]}
+    body += '<script type="application/ld+json">' + json.dumps(listing, ensure_ascii=False).replace('</', '<\\/') + '</script>'
     add(HUB, 'Fishing Licenses by State and Country | Castward',
         f'Fishing licence rules for {len(recs)} US states, Canadian provinces and countries: who needs one, visitor prices and official links to buy.', body, 'article')
     pages[HUB]['modified'] = max(r.get('contentModified', max(r['checked'], '2026-11-15')) for r in recs)

@@ -8542,9 +8542,25 @@
       "checked": "2026-11-10",
       "scopeNote": "Supports the attributed target. Exact access, method and legal season need a separate check."
     },
-    "species-c6e0a19d7275": {
+    "species-434ffc9d41ff": {
       "title": "Fishery source for Saint John River / Fredericton",
-      "url": "https://www.inter.dfo-mpo.gc.ca/en/gvo-2026-036nb",
+      "url": "https://www.frederictoncapitalregion.ca/see-do/activities/fishing",
+      "type": "species-reference",
+      "status": "reviewed-source",
+      "checked": "2026-11-10",
+      "scopeNote": "Supports the attributed target. Exact access, method and legal season need a separate check."
+    },
+    "species-6c5df88a2a41": {
+      "title": "Fishery source for Saint John River / Fredericton",
+      "url": "https://tourismnewbrunswick.ca/story/fishing-new-brunswick-what-you-need-know",
+      "type": "species-reference",
+      "status": "reviewed-source",
+      "checked": "2026-11-10",
+      "scopeNote": "Supports the attributed target. Exact access, method and legal season need a separate check."
+    },
+    "species-13ea80e63579": {
+      "title": "Fishery source for Saint John River / Fredericton",
+      "url": "https://www2.gnb.ca/content/gnb/en/departments/erd/fish-and-wildlife/content/go-fishing/content/TidalWaters.html",
       "type": "species-reference",
       "status": "reviewed-source",
       "checked": "2026-11-10",
@@ -8553,6 +8569,30 @@
     "species-a900e15e57d7": {
       "title": "Fishery source for Margaree River",
       "url": "https://novascotia.ca/fish/sportfishing/fallsalmonfishing/",
+      "type": "species-reference",
+      "status": "reviewed-source",
+      "checked": "2026-11-10",
+      "scopeNote": "Supports the attributed target. Exact access, method and legal season need a separate check."
+    },
+    "species-630342a3614e": {
+      "title": "Fishery source for Gander River",
+      "url": "https://www.gov.nl.ca/eccc/files/env_assessment_y2026_2408-Registration-Document-Sections-10-17.pdf",
+      "type": "species-reference",
+      "status": "reviewed-source",
+      "checked": "2026-11-10",
+      "scopeNote": "Supports the attributed target. Exact access, method and legal season need a separate check."
+    },
+    "species-2b545bd14c92": {
+      "title": "Fishery source for Gander River",
+      "url": "https://www.nfl.dfo-mpo.gc.ca/en/anglers-guide-2026-2027-salmon-watershed-management-plans-and-closed-areas-salmon-fishing-area-sfa",
+      "type": "species-reference",
+      "status": "reviewed-source",
+      "checked": "2026-11-10",
+      "scopeNote": "Supports the attributed target. Exact access, method and legal season need a separate check."
+    },
+    "species-dadc2683a980": {
+      "title": "Fishery source for Gander River",
+      "url": "https://www.nfl.dfo-mpo.gc.ca/en/isrs",
       "type": "species-reference",
       "status": "reviewed-source",
       "checked": "2026-11-10",
@@ -8577,6 +8617,30 @@
     "species-d300e60ad73a": {
       "title": "Fishery source for Minipi watershed / Labrador",
       "url": "https://www.releases.gov.nl.ca/releases/2009/intrd/0827n04.htm",
+      "type": "species-reference",
+      "status": "reviewed-source",
+      "checked": "2026-11-10",
+      "scopeNote": "Supports the attributed target. Exact access, method and legal season need a separate check."
+    },
+    "species-0760eeba6016": {
+      "title": "Fishery source for Labrador coastal char program",
+      "url": "https://www.gov.nl.ca/fal/wildlife/all-species/animals/inland-fish/arctic-char/",
+      "type": "species-reference",
+      "status": "reviewed-source",
+      "checked": "2026-11-10",
+      "scopeNote": "Supports the attributed target. Exact access, method and legal season need a separate check."
+    },
+    "species-0a07856345b6": {
+      "title": "Fishery source for Labrador coastal char program",
+      "url": "https://www.gov.nl.ca/fal/wildlife/all-species/animals/inland-fish/brook-trout/",
+      "type": "species-reference",
+      "status": "reviewed-source",
+      "checked": "2026-11-10",
+      "scopeNote": "Supports the attributed target. Exact access, method and legal season need a separate check."
+    },
+    "species-20fc25978e85": {
+      "title": "Fishery source for Labrador coastal char program",
+      "url": "https://www.nfl.dfo-mpo.gc.ca/en/anglers-guide-2026-2027-other-species",
       "type": "species-reference",
       "status": "reviewed-source",
       "checked": "2026-11-10",
@@ -115061,7 +115125,7 @@
     },
     {
       "id": "na-ca-nb-003",
-      "title": "Saint John River Predator Fishing Near Fredericton",
+      "title": "Saint John River Bass and Musky Fishing, Fredericton",
       "place": "Saint John River / Fredericton",
       "country": "Canada",
       "region": "North America",
@@ -115081,20 +115145,27 @@
       ],
       "climate": "mixed",
       "fish": [
-        "Smallmouth bass"
+        "Smallmouth bass",
+        "Muskellunge"
       ],
       "candidateTargets": "Muskellunge / striped bass candidates",
-      "summary": "Try freshwater predator fishing on the Saint John near Fredericton. Pick a stretch of river for a New Brunswick day at the rods.",
+      "summary": "The Wolastoq, also called the Saint John River, gives a Fredericton fishing trip two distinct targets: smallmouth bass and muskellunge. Provincial tourism names both in this river system. Start with the fish you want to pursue, then check the exact reach, access and rules before you choose tackle or arrange a boat.",
       "contentTier": "preparation-brief",
       "evidenceDepth": "Production brief; local fishery claims not yet verified",
       "catalogOrigin": "north-america-production-import",
       "sourceIds": [
-        "species-c6e0a19d7275"
+        "species-434ffc9d41ff",
+        "species-6c5df88a2a41",
+        "species-13ea80e63579"
       ],
       "evidence": [
         {
-          "source": "species-c6e0a19d7275",
+          "source": "species-434ffc9d41ff",
           "claim": "Smallmouth bass is documented in the linked fishery source. Check its named water or departure area."
+        },
+        {
+          "source": "species-434ffc9d41ff",
+          "claim": "Muskellunge is documented in the linked fishery source. Check its named water or departure area."
         }
       ],
       "related": [
@@ -115109,7 +115180,7 @@
         "fieldTested": false,
         "independentExpertReviewed": false
       },
-      "season": "Dates have not been verified for this opportunity. Before choosing travel dates, resolve: Identify pike versus muskie, seasonal habitat, structure and access.",
+      "season": "Tourism New Brunswick points to June through November for musky and striped bass around Fredericton. This is trip-planning guidance, not a legal open season. Check the current species and reach rules before travel.",
       "seasonWindows": [],
       "sections": [
         {
@@ -115193,24 +115264,44 @@
         "angle": "Saint John River / Fredericton: the preparation decision to settle before buying gear — Choose a specific target and section rather than one equipment list for different fisheries.",
         "searchIntentHypothesis": "Saint John River / Fredericton New Brunswick fishing Muskellunge / striped bass"
       },
-      "indexEligible": false,
+      "indexEligible": true,
       "tripTypeIds": [],
       "tripTypeNames": [],
       "tripStyleIds": [
         "lake-reservoir"
       ],
       "speciesIds": [
-        "smallmouth-bass"
+        "smallmouth-bass",
+        "muskellunge"
       ],
       "speciesEvidence": [
         {
           "speciesId": "smallmouth-bass",
           "commonName": "Smallmouth bass",
           "sourceUrls": [
-            "https://www.inter.dfo-mpo.gc.ca/en/gvo-2026-036nb"
+            "https://www.frederictoncapitalregion.ca/see-do/activities/fishing",
+            "https://tourismnewbrunswick.ca/story/fishing-new-brunswick-what-you-need-know",
+            "https://www2.gnb.ca/content/gnb/en/departments/erd/fish-and-wildlife/content/go-fishing/content/TidalWaters.html"
           ],
           "scopeNotes": [
-            "The source documents smallmouth bass in the Saint John River / Fredericton fishery. Check the source for the exact reach or departure area."
+            "The tourism sources name this species in the Saint John River system near Fredericton. The provincial page supplies the tidal-water distinction."
+          ],
+          "status": "reviewed-source",
+          "seasons": [],
+          "seasonStatus": "unverified",
+          "methods": [],
+          "methodStatus": "unverified"
+        },
+        {
+          "speciesId": "muskellunge",
+          "commonName": "Muskellunge",
+          "sourceUrls": [
+            "https://www.frederictoncapitalregion.ca/see-do/activities/fishing",
+            "https://tourismnewbrunswick.ca/story/fishing-new-brunswick-what-you-need-know",
+            "https://www2.gnb.ca/content/gnb/en/departments/erd/fish-and-wildlife/content/go-fishing/content/TidalWaters.html"
+          ],
+          "scopeNotes": [
+            "The tourism sources name this species in the Saint John River system near Fredericton. The provincial page supplies the tidal-water distinction."
           ],
           "status": "reviewed-source",
           "seasons": [],
@@ -115221,7 +115312,7 @@
       ],
       "speciesReview": {
         "status": "source-linked",
-        "reviewed": "2026-11-10",
+        "reviewed": "2026-11-22",
         "seasonStatus": "unverified",
         "methodStatus": "unverified"
       },
@@ -115275,18 +115366,71 @@
         "https://www.reddit.com/r/newbrunswickcanada/comments/1tojihy/coarse_fishing/",
         "https://en.wikipedia.org/wiki/List_of_bodies_of_water_of_New_Brunswick"
       ],
+      "localDescription": {
+        "place": "Saint John River / Fredericton",
+        "reviewed": "2026-11-22",
+        "paragraphs": [
+          "The Wolastoq, also called the Saint John River, gives a Fredericton fishing trip two distinct targets: smallmouth bass and muskellunge. Provincial tourism names both in this river system. Start with the fish you want to pursue, then check the exact reach, access and rules before you choose tackle or arrange a boat.",
+          "Fredericton Capital Region describes a river fishery close to the city, with musky, striped bass and other species in the wider area. That makes Fredericton a practical base for a river day without assuming every fish shares the same water or method. Keep a bass outing and a musky outing as separate plans; tell a guide which fish matters most to you.",
+          "New Brunswick separates tidal and inland licence requirements. Its tidal-water page says a fishing licence is not required on tidal waters, but directs anglers to the current regulation book for details. Check that boundary for your chosen reach. A city name is not a licence exemption, and a past tournament notice does not set the rules for an ordinary trip."
+        ],
+        "sourceUrls": [
+          "https://www.frederictoncapitalregion.ca/see-do/activities/fishing",
+          "https://tourismnewbrunswick.ca/story/fishing-new-brunswick-what-you-need-know",
+          "https://www2.gnb.ca/content/gnb/en/departments/erd/fish-and-wildlife/content/go-fishing/content/TidalWaters.html"
+        ],
+        "season": "Tourism New Brunswick points to June through November for musky and striped bass around Fredericton. This is trip-planning guidance, not a legal open season. Check the current species and reach rules before travel.",
+        "facts": [
+          [
+            "Two targets",
+            "Smallmouth bass and muskellunge"
+          ],
+          [
+            "River name",
+            "Wolastoq / Saint John River"
+          ],
+          [
+            "Base",
+            "Fredericton, New Brunswick"
+          ],
+          [
+            "Rule check",
+            "Exact reach, tidal boundary, species and date"
+          ]
+        ],
+        "faq": [
+          [
+            "Is the Wolastoq the Saint John River?",
+            "Yes. The local tourism authority uses both names."
+          ],
+          [
+            "Which two fish does this trip focus on?",
+            "Smallmouth bass and muskellunge, both named by the provincial tourism source."
+          ],
+          [
+            "Does one setup suit every fish in the river?",
+            "Choose your target first. Confirm the tackle and method for that fish before the trip."
+          ],
+          [
+            "Do you need a licence everywhere near Fredericton?",
+            "Check the exact reach. New Brunswick distinguishes tidal waters from inland waters."
+          ],
+          [
+            "Can you use an old tournament limit?",
+            "No. A tournament order applies to its stated event, water and dates. Read the current ordinary fishing rules."
+          ]
+        ]
+      },
       "indexAssessment": {
-        "eligible": false,
+        "eligible": true,
         "verifiedSpeciesIds": [
+          "muskellunge",
           "smallmouth-bass"
         ],
-        "descriptionWords": 0,
+        "descriptionWords": 174,
         "seasonSection": true,
         "canonicalPath": "/north-america/canada/new-brunswick/saint-john-river-fredericton-large-freshwater-predators/",
-        "reasons": [
-          "Only 1 verified individual target species with source links; at least 2 required",
-          "Water-specific description has 0 words; at least 120 required"
-        ]
+        "reasons": []
       },
       "articleWordCount": 214
     },
@@ -116357,7 +116501,7 @@
     },
     {
       "id": "na-ca-nl-001",
-      "title": "Gander River Salmon Fishing in Newfoundland",
+      "title": "Gander River Salmon and Brook Trout Fishing",
       "place": "Gander River",
       "country": "Canada",
       "region": "North America",
@@ -116378,14 +116522,30 @@
         "River float"
       ],
       "climate": "mixed",
-      "fish": [],
+      "fish": [
+        "Atlantic salmon",
+        "Brook trout"
+      ],
       "candidateTargets": "Atlantic salmon",
-      "summary": "Take a guided salmon trip on the Gander River. Enjoy a Newfoundland day with time to work the current and wait for a take.",
+      "summary": "The Gander River watershed holds Atlantic salmon and brook trout, but one rule does not cover the whole system. Start with your exact river section. The lower main stem, Northwest Gander and other tributaries have different salmon classifications. Check the current river status before you travel, then choose your fishing plan.",
       "contentTier": "preparation-brief",
       "evidenceDepth": "Production brief; local fishery claims not yet verified",
       "catalogOrigin": "north-america-production-import",
-      "sourceIds": [],
-      "evidence": [],
+      "sourceIds": [
+        "species-630342a3614e",
+        "species-2b545bd14c92",
+        "species-dadc2683a980"
+      ],
+      "evidence": [
+        {
+          "source": "species-630342a3614e",
+          "claim": "Atlantic salmon is documented in the linked fishery source. Check its named water or departure area."
+        },
+        {
+          "source": "species-630342a3614e",
+          "claim": "Brook trout is documented in the linked fishery source. Check its named water or departure area."
+        }
+      ],
       "related": [
         "na-ca-nl-002",
         "na-ca-nl-003",
@@ -116398,7 +116558,7 @@
         "fieldTested": false,
         "independentExpertReviewed": false
       },
-      "season": "Dates have not been verified for this opportunity. Before choosing travel dates, resolve: Run stage by species and reach; river level and access, not Alaska-wide months.",
+      "season": "Choose dates from the current DFO salmon season and river-status notices. Check again before departure because a river status can change. The watershed classification is not an opening date.",
       "seasonWindows": [],
       "sections": [
         {
@@ -116482,7 +116642,7 @@
         "angle": "Gander River: the preparation decision to settle before buying gear — Research guide access, target window and baggage or transport requirements.",
         "searchIntentHypothesis": "Gander River Newfoundland and Labrador fishing Atlantic salmon"
       },
-      "indexEligible": false,
+      "indexEligible": true,
       "tripTypeIds": [],
       "tripTypeNames": [],
       "tripStyleIds": [
@@ -116491,11 +116651,49 @@
         "bank-wading",
         "river-fishing"
       ],
-      "speciesIds": [],
-      "speciesEvidence": [],
+      "speciesIds": [
+        "atlantic-salmon",
+        "brook-trout"
+      ],
+      "speciesEvidence": [
+        {
+          "speciesId": "atlantic-salmon",
+          "commonName": "Atlantic salmon",
+          "sourceUrls": [
+            "https://www.gov.nl.ca/eccc/files/env_assessment_y2026_2408-Registration-Document-Sections-10-17.pdf",
+            "https://www.nfl.dfo-mpo.gc.ca/en/anglers-guide-2026-2027-salmon-watershed-management-plans-and-closed-areas-salmon-fishing-area-sfa",
+            "https://www.nfl.dfo-mpo.gc.ca/en/isrs"
+          ],
+          "scopeNotes": [
+            "Primary sources establish this species in the described watershed or Labrador region. Access and legal dates require a water-specific check."
+          ],
+          "status": "reviewed-source",
+          "seasons": [],
+          "seasonStatus": "unverified",
+          "methods": [],
+          "methodStatus": "unverified"
+        },
+        {
+          "speciesId": "brook-trout",
+          "commonName": "Brook trout",
+          "sourceUrls": [
+            "https://www.gov.nl.ca/eccc/files/env_assessment_y2026_2408-Registration-Document-Sections-10-17.pdf",
+            "https://www.nfl.dfo-mpo.gc.ca/en/anglers-guide-2026-2027-salmon-watershed-management-plans-and-closed-areas-salmon-fishing-area-sfa",
+            "https://www.nfl.dfo-mpo.gc.ca/en/isrs"
+          ],
+          "scopeNotes": [
+            "Primary sources establish this species in the described watershed or Labrador region. Access and legal dates require a water-specific check."
+          ],
+          "status": "reviewed-source",
+          "seasons": [],
+          "seasonStatus": "unverified",
+          "methods": [],
+          "methodStatus": "unverified"
+        }
+      ],
       "speciesReview": {
-        "status": "unverified",
-        "reviewed": "2026-11-10",
+        "status": "source-linked",
+        "reviewed": "2026-11-22",
         "seasonStatus": "unverified",
         "methodStatus": "unverified"
       },
@@ -116541,16 +116739,71 @@
         "https://www.gov.nl.ca/eccc/files/env-assessment-projects-y2006-1302-1302-regtext.pdf",
         "https://www.reddit.com/r/flyfishing/comments/1v5tcmd/atlantic_salmon_on_the_gander_river_central/"
       ],
+      "localDescription": {
+        "place": "Gander River",
+        "reviewed": "2026-11-22",
+        "paragraphs": [
+          "The Gander River watershed holds Atlantic salmon and brook trout, but one rule does not cover the whole system. Start with your exact river section. The lower main stem, Northwest Gander and other tributaries have different salmon classifications. Check the current river status before you travel, then choose your fishing plan.",
+          "A provincial environmental registration documents both species in the watershed and records fish surveys that found them. That supports a two-species river plan, not a promise of a catch in every pool. Tell a guide whether your priority is salmon or trout, and confirm the named reach before you agree on a day.",
+          "DFO lists the lower main stem as Class 6, Northwest Gander and its tributaries as Class 4, and most other tributaries as Class 2. Some upstream areas require catch and release. Closed sections also occur near Salmon Brook. Use the linked watershed plan for exact boundaries; a broad Gander River map cannot replace those instructions."
+        ],
+        "sourceUrls": [
+          "https://www.gov.nl.ca/eccc/files/env_assessment_y2026_2408-Registration-Document-Sections-10-17.pdf",
+          "https://www.nfl.dfo-mpo.gc.ca/en/anglers-guide-2026-2027-salmon-watershed-management-plans-and-closed-areas-salmon-fishing-area-sfa",
+          "https://www.nfl.dfo-mpo.gc.ca/en/isrs"
+        ],
+        "season": "Choose dates from the current DFO salmon season and river-status notices. Check again before departure because a river status can change. The watershed classification is not an opening date.",
+        "facts": [
+          [
+            "Fish",
+            "Atlantic salmon and brook trout"
+          ],
+          [
+            "Lower main stem",
+            "Class 6 in the 2026–27 salmon plan"
+          ],
+          [
+            "Northwest Gander",
+            "Class 4; check tributary exceptions"
+          ],
+          [
+            "Before departure",
+            "Read the live river status and exact boundaries"
+          ]
+        ],
+        "faq": [
+          [
+            "Which fish live in the Gander watershed?",
+            "The provincial environmental record confirms Atlantic salmon and brook trout."
+          ],
+          [
+            "Does every tributary have the same salmon rules?",
+            "No. DFO assigns different classes to the main stem and tributaries."
+          ],
+          [
+            "Where do I check current closures?",
+            "Use the DFO river-status page and the watershed management plan linked below."
+          ],
+          [
+            "Can I assume a named pool is open?",
+            "No. Check its location against the current closed-area boundaries."
+          ],
+          [
+            "Does a species record promise a catch?",
+            "No. It confirms presence in the watershed, not catches on your chosen day."
+          ]
+        ]
+      },
       "indexAssessment": {
-        "eligible": false,
-        "verifiedSpeciesIds": [],
-        "descriptionWords": 0,
+        "eligible": true,
+        "verifiedSpeciesIds": [
+          "atlantic-salmon",
+          "brook-trout"
+        ],
+        "descriptionWords": 159,
         "seasonSection": true,
         "canonicalPath": "/north-america/canada/newfoundland-and-labrador/gander-river-river-salmon/",
-        "reasons": [
-          "Only 0 verified individual target species with source links; at least 2 required",
-          "Water-specific description has 0 words; at least 120 required"
-        ]
+        "reasons": []
       },
       "articleWordCount": 219
     },
@@ -117422,7 +117675,7 @@
     },
     {
       "id": "na-ca-nl-006",
-      "title": "Labrador Coast: A Remote Char Fishing Trip",
+      "title": "Labrador Arctic Char and Brook Trout Trip Planning",
       "place": "Labrador coastal char program",
       "country": "Canada",
       "region": "North America",
@@ -117442,14 +117695,30 @@
         "Guided boat"
       ],
       "climate": "mixed",
-      "fish": [],
+      "fish": [
+        "Arctic char",
+        "Brook trout"
+      ],
       "candidateTargets": "Arctic char candidate",
-      "summary": "Make char the target on a remote Labrador coastal fishing trip. Give yourself time away with this northern fish in mind.",
+      "summary": "A Labrador char trip starts with a named river and a clear choice between coastal and inland water. Arctic char can feed at sea near their home rivers, while brook trout offer a separate inland target. Match the species, water and season before you arrange travel; Labrador is too large for one blanket plan.",
       "contentTier": "preparation-brief",
       "evidenceDepth": "Production brief; local fishery claims not yet verified",
       "catalogOrigin": "north-america-production-import",
-      "sourceIds": [],
-      "evidence": [],
+      "sourceIds": [
+        "species-0760eeba6016",
+        "species-0a07856345b6",
+        "species-20fc25978e85"
+      ],
+      "evidence": [
+        {
+          "source": "species-0760eeba6016",
+          "claim": "Arctic char is documented in the linked fishery source. Check its named water or departure area."
+        },
+        {
+          "source": "species-0760eeba6016",
+          "claim": "Brook trout is documented in the linked fishery source. Check its named water or departure area."
+        }
+      ],
       "related": [
         "na-ca-nl-001",
         "na-ca-nl-002",
@@ -117462,7 +117731,7 @@
         "fieldTested": false,
         "independentExpertReviewed": false
       },
-      "season": "Dates have not been verified for this opportunity. Before choosing travel dates, resolve: Operating program dates, water levels, transfers and resupply constraints.",
+      "season": "Summer sea feeding explains the appeal of coastal char, but it does not establish a legal season. DFO lists Arctic char dates by zone. Match the exact inland water to that zone and check any local restrictions before travel.",
       "seasonWindows": [],
       "sections": [
         {
@@ -117546,7 +117815,7 @@
         "angle": "Labrador coastal char program: the preparation decision to settle before buying gear — Find a real named water and active operator; hold publication until the broad candidate is resolved.",
         "searchIntentHypothesis": "Labrador coastal char program Newfoundland and Labrador fishing Arctic char"
       },
-      "indexEligible": false,
+      "indexEligible": true,
       "tripTypeIds": [],
       "tripTypeNames": [],
       "tripStyleIds": [
@@ -117554,11 +117823,49 @@
         "remote-lodge",
         "river-fishing"
       ],
-      "speciesIds": [],
-      "speciesEvidence": [],
+      "speciesIds": [
+        "arctic-char",
+        "brook-trout"
+      ],
+      "speciesEvidence": [
+        {
+          "speciesId": "arctic-char",
+          "commonName": "Arctic char",
+          "sourceUrls": [
+            "https://www.gov.nl.ca/fal/wildlife/all-species/animals/inland-fish/arctic-char/",
+            "https://www.gov.nl.ca/fal/wildlife/all-species/animals/inland-fish/brook-trout/",
+            "https://www.nfl.dfo-mpo.gc.ca/en/anglers-guide-2026-2027-other-species"
+          ],
+          "scopeNotes": [
+            "Primary sources establish this species in the described watershed or Labrador region. Access and legal dates require a water-specific check."
+          ],
+          "status": "reviewed-source",
+          "seasons": [],
+          "seasonStatus": "unverified",
+          "methods": [],
+          "methodStatus": "unverified"
+        },
+        {
+          "speciesId": "brook-trout",
+          "commonName": "Brook trout",
+          "sourceUrls": [
+            "https://www.gov.nl.ca/fal/wildlife/all-species/animals/inland-fish/arctic-char/",
+            "https://www.gov.nl.ca/fal/wildlife/all-species/animals/inland-fish/brook-trout/",
+            "https://www.nfl.dfo-mpo.gc.ca/en/anglers-guide-2026-2027-other-species"
+          ],
+          "scopeNotes": [
+            "Primary sources establish this species in the described watershed or Labrador region. Access and legal dates require a water-specific check."
+          ],
+          "status": "reviewed-source",
+          "seasons": [],
+          "seasonStatus": "unverified",
+          "methods": [],
+          "methodStatus": "unverified"
+        }
+      ],
       "speciesReview": {
-        "status": "unverified",
-        "reviewed": "2026-11-10",
+        "status": "source-linked",
+        "reviewed": "2026-11-22",
         "seasonStatus": "unverified",
         "methodStatus": "unverified"
       },
@@ -117592,16 +117899,71 @@
         "https://www.cirnac.gc.ca/eng/1692714043860/1692714083352",
         "https://www.assembly.nl.ca/houseBusiness/Hansard/ga50session2/25-05-12.htm"
       ],
+      "localDescription": {
+        "place": "Labrador coastal char program",
+        "reviewed": "2026-11-22",
+        "paragraphs": [
+          "A Labrador char trip starts with a named river and a clear choice between coastal and inland water. Arctic char can feed at sea near their home rivers, while brook trout offer a separate inland target. Match the species, water and season before you arrange travel; Labrador is too large for one blanket plan.",
+          "The province describes both sea-run and landlocked Arctic char. Sea-run fish stay comparatively close to their home rivers during summer feeding, so the river system matters more than a general coastal label. Ask for the actual fishing water and access route. This page does not identify a lodge, charter or available booking.",
+          "Brook trout are native to Newfoundland and Labrador. The provincial profile describes cold, clear lakes and stream cover as habitat. Treat a trout day as a separate part of the itinerary, with its own location and rules. DFO publishes char dates by zone and separate Labrador limits. Read that table for the selected water; do not borrow coastal trout rules for Arctic char."
+        ],
+        "sourceUrls": [
+          "https://www.gov.nl.ca/fal/wildlife/all-species/animals/inland-fish/arctic-char/",
+          "https://www.gov.nl.ca/fal/wildlife/all-species/animals/inland-fish/brook-trout/",
+          "https://www.nfl.dfo-mpo.gc.ca/en/anglers-guide-2026-2027-other-species"
+        ],
+        "season": "Summer sea feeding explains the appeal of coastal char, but it does not establish a legal season. DFO lists Arctic char dates by zone. Match the exact inland water to that zone and check any local restrictions before travel.",
+        "facts": [
+          [
+            "Main target",
+            "Arctic char"
+          ],
+          [
+            "Separate inland target",
+            "Brook trout"
+          ],
+          [
+            "First decision",
+            "Named river, coastal water or inland water"
+          ],
+          [
+            "Season source",
+            "DFO 2026–27 zone table"
+          ]
+        ],
+        "faq": [
+          [
+            "Are all Arctic char sea-run?",
+            "No. The province describes sea-run and landlocked populations."
+          ],
+          [
+            "Do char travel far from their home rivers at sea?",
+            "The provincial profile says they feed relatively near their home rivers."
+          ],
+          [
+            "Are brook trout native to Labrador?",
+            "Yes. The provincial species profile identifies them as native to Newfoundland and Labrador."
+          ],
+          [
+            "Does one season apply across Labrador?",
+            "No. Read the DFO zone table for the selected water and species."
+          ],
+          [
+            "Is this a named charter package?",
+            "No. Choose the river and verify access before you seek a booking."
+          ]
+        ]
+      },
       "indexAssessment": {
-        "eligible": false,
-        "verifiedSpeciesIds": [],
-        "descriptionWords": 0,
+        "eligible": true,
+        "verifiedSpeciesIds": [
+          "arctic-char",
+          "brook-trout"
+        ],
+        "descriptionWords": 169,
         "seasonSection": true,
         "canonicalPath": "/north-america/canada/newfoundland-and-labrador/labrador-coastal-char-program-remote-lodge-and-expedition/",
-        "reasons": [
-          "Only 0 verified individual target species with source links; at least 2 required",
-          "Water-specific description has 0 words; at least 120 required"
-        ]
+        "reasons": []
       },
       "articleWordCount": 219
     },
@@ -188920,7 +189282,7 @@
       "Cook Islands",
       "Niue"
     ],
-    "sources": 1090,
+    "sources": 1098,
     "sourceInspection": {
       "text-inspected": 231,
       "search-excerpt-inspected": 136,
@@ -188930,7 +189292,7 @@
       "source-checked": 5,
       "checked": 5,
       "existing-source-linked": 163,
-      "reviewed-source": 438
+      "reviewed-source": 446
     },
     "byRegion": {
       "North America": 551,

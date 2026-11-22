@@ -18205,17 +18205,20 @@
       "location": "Saint John River / Fredericton",
       "url": "/north-america/canada/new-brunswick/saint-john-river-fredericton-large-freshwater-predators/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
-        "species-c6e0a19d7275"
+        "species-434ffc9d41ff",
+        "species-6c5df88a2a41",
+        "species-13ea80e63579"
       ],
       "evidenceDepth": "Production brief; local fishery claims not yet verified",
       "localDecision": "Choose a specific target and section rather than one equipment list for different fisheries.",
       "candidateTargets": "Muskellunge / striped bass candidates",
       "confirmedTargets": [
-        "Smallmouth bass"
+        "Smallmouth bass",
+        "Muskellunge"
       ],
-      "seasonalEvidence": "Dates have not been verified for this opportunity. Before choosing travel dates, resolve: Identify pike versus muskie, seasonal habitat, structure and access.",
+      "seasonalEvidence": "Tourism New Brunswick points to June through November for musky and striped bass around Fredericton. This is trip-planning guidance, not a legal open season. Check the current species and reach rules before travel.",
       "accessToVerify": "Boat or specialist guide",
       "tackleDecision": "Match lure weight, bite protection, rod load, reel and line; confirm handling equipment",
       "operatorQuestion": "Guide tackle, landing gear and specialist lures",
@@ -18435,13 +18438,20 @@
       "location": "Gander River",
       "url": "/north-america/canada/newfoundland-and-labrador/gander-river-river-salmon/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
-      "sourceIds": [],
+      "indexEligible": true,
+      "sourceIds": [
+        "species-630342a3614e",
+        "species-2b545bd14c92",
+        "species-dadc2683a980"
+      ],
       "evidenceDepth": "Production brief; local fishery claims not yet verified",
       "localDecision": "Research guide access, target window and baggage or transport requirements.",
       "candidateTargets": "Atlantic salmon",
-      "confirmedTargets": [],
-      "seasonalEvidence": "Dates have not been verified for this opportunity. Before choosing travel dates, resolve: Run stage by species and reach; river level and access, not Alaska-wide months.",
+      "confirmedTargets": [
+        "Atlantic salmon",
+        "Brook trout"
+      ],
+      "seasonalEvidence": "Choose dates from the current DFO salmon season and river-status notices. Check again before departure because a river status can change. The watershed classification is not an opening date.",
       "accessToVerify": "Bank, wade or drift; choose before matching tackle",
       "tackleDecision": "Choose fly versus conventional presentation, then rod rating, line, leader and terminal components as a system",
       "operatorQuestion": "Waders and rods only after operator provision and access method are confirmed",
@@ -18632,13 +18642,20 @@
       "location": "Labrador coastal char program",
       "url": "/north-america/canada/newfoundland-and-labrador/labrador-coastal-char-program-remote-lodge-and-expedition/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
-      "sourceIds": [],
+      "indexEligible": true,
+      "sourceIds": [
+        "species-0760eeba6016",
+        "species-0a07856345b6",
+        "species-20fc25978e85"
+      ],
       "evidenceDepth": "Production brief; local fishery claims not yet verified",
       "localDecision": "Find a real named water and active operator; hold publication until the broad candidate is resolved.",
       "candidateTargets": "Arctic char candidate",
-      "confirmedTargets": [],
-      "seasonalEvidence": "Dates have not been verified for this opportunity. Before choosing travel dates, resolve: Operating program dates, water levels, transfers and resupply constraints.",
+      "confirmedTargets": [
+        "Arctic char",
+        "Brook trout"
+      ],
+      "seasonalEvidence": "Summer sea feeding explains the appeal of coastal char, but it does not establish a legal season. DFO lists Arctic char dates by zone. Match the exact inland water to that zone and check any local restrictions before travel.",
       "accessToVerify": "Fly-in, boat transfer or multiday expedition",
       "tackleDecision": "Select the target-specific module first; inventory what the lodge actually supplies",
       "operatorQuestion": "Rod transport, specialist tackle, camp equipment and communications",

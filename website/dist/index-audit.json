@@ -6136,17 +6136,15 @@
   {
     "id": "na-ca-nb-003",
     "place": "Saint John River / Fredericton",
-    "eligible": false,
+    "eligible": true,
     "verifiedSpeciesIds": [
+      "muskellunge",
       "smallmouth-bass"
     ],
-    "descriptionWords": 0,
+    "descriptionWords": 174,
     "seasonSection": true,
     "canonicalPath": "/north-america/canada/new-brunswick/saint-john-river-fredericton-large-freshwater-predators/",
-    "reasons": [
-      "Only 1 verified individual target species with source links; at least 2 required",
-      "Water-specific description has 0 words; at least 120 required"
-    ]
+    "reasons": []
   },
   {
     "id": "na-ca-nb-004",
@@ -6218,15 +6216,15 @@
   {
     "id": "na-ca-nl-001",
     "place": "Gander River",
-    "eligible": false,
-    "verifiedSpeciesIds": [],
-    "descriptionWords": 0,
+    "eligible": true,
+    "verifiedSpeciesIds": [
+      "atlantic-salmon",
+      "brook-trout"
+    ],
+    "descriptionWords": 159,
     "seasonSection": true,
     "canonicalPath": "/north-america/canada/newfoundland-and-labrador/gander-river-river-salmon/",
-    "reasons": [
-      "Only 0 verified individual target species with source links; at least 2 required",
-      "Water-specific description has 0 words; at least 120 required"
-    ]
+    "reasons": []
   },
   {
     "id": "na-ca-nl-002",
@@ -6289,15 +6287,15 @@
   {
     "id": "na-ca-nl-006",
     "place": "Labrador coastal char program",
-    "eligible": false,
-    "verifiedSpeciesIds": [],
-    "descriptionWords": 0,
+    "eligible": true,
+    "verifiedSpeciesIds": [
+      "arctic-char",
+      "brook-trout"
+    ],
+    "descriptionWords": 169,
     "seasonSection": true,
     "canonicalPath": "/north-america/canada/newfoundland-and-labrador/labrador-coastal-char-program-remote-lodge-and-expedition/",
-    "reasons": [
-      "Only 0 verified individual target species with source links; at least 2 required",
-      "Water-specific description has 0 words; at least 120 required"
-    ]
+    "reasons": []
   },
   {
     "id": "na-ca-pe-001",

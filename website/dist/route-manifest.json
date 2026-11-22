@@ -5407,8 +5407,8 @@
   },
   "/north-america/canada/new-brunswick/saint-john-river-fredericton-large-freshwater-predators/": {
     "kind": "article",
-    "title": "Saint John River Predator Fishing Near Fredericton",
-    "noindex": true,
+    "title": "Saint John River Bass and Musky Fishing, Fredericton",
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/canada/new-brunswick/grand-manan-coastal-waters-saltwater-bottom-fishing/": {
@@ -5443,8 +5443,8 @@
   },
   "/north-america/canada/newfoundland-and-labrador/gander-river-river-salmon/": {
     "kind": "article",
-    "title": "Gander River Salmon Fishing in Newfoundland | Castward",
-    "noindex": true,
+    "title": "Gander River Salmon and Brook Trout Fishing | Castward",
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/canada/newfoundland-and-labrador/humber-river-river-salmon/": {
@@ -5473,8 +5473,8 @@
   },
   "/north-america/canada/newfoundland-and-labrador/labrador-coastal-char-program-remote-lodge-and-expedition/": {
     "kind": "article",
-    "title": "Labrador Coast: A Remote Char Fishing Trip | Castward",
-    "noindex": true,
+    "title": "Labrador Arctic Char and Brook Trout Trip Planning",
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/canada/prince-edward-island/north-lake-prince-edward-island-offshore-pelagic-fishing/": {
@@ -6230,7 +6230,7 @@
   "/north-america/canada/newfoundland-and-labrador/": {
     "kind": "collection",
     "title": "Newfoundland and Labrador fishing trips and preparation",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/canada/northwest-territories/": {
@@ -6308,7 +6308,7 @@
   "/north-america/canada/regions/atlantic-canada/": {
     "kind": "collection",
     "title": "Atlantic Canada fishing trips and preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/canada/regions/northern-canada/": {
@@ -11299,7 +11299,7 @@
   },
   "/species/copper-shark/": {
     "kind": "species-detail",
-    "title": "Copper shark fishing, local names and destinations",
+    "title": "Copper shark (bronze whaler): size and identification",
     "noindex": false,
     "redirectTo": null
   },

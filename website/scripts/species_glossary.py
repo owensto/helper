@@ -102,7 +102,7 @@ def install(pages, root, add, trips, data):
         if s['scientificName']:
             body += '<p class="field-scientific"><i>' + E(s['scientificName']) + '</i></p>'
         body += '<p>' + E(' · '.join(aliases[:3])) + '</p><span class="small">' + str(len(matched[s['id']])) + ' linked destination' + ('s' if len(matched[s['id']]) != 1 else '') + '</span></article>'
-    body += '</div><p id="species-empty" hidden>No match yet. Try the common name or scientific name.</p><button class="btn outline" id="species-more" type="button" hidden>Show more species</button><p class="field-note">Country records describe occurrence. Trip links use separate destination evidence. ' + link('/glossary/', 'Read the fishing glossary') + '</p></section>' + assets
+    body += '</div><p id="species-empty" hidden>No species found. Try a common name or a scientific name.</p><button class="btn outline" id="species-more" type="button" hidden>Show more species</button><p class="field-note">Country records describe occurrence. Trip links use separate destination evidence. ' + link('/glossary/', 'Read the fishing glossary') + '</p></section>' + assets
     add('/species/', 'World fish species and local names | Castward', 'Explore ' + str(species_count) + ' fish species, regional names, sourced fishing destinations and agency rules.', body, 'species')
 
     for s in species:
@@ -153,8 +153,11 @@ def install(pages, root, add, trips, data):
             body += '<p class="wrap">Compare ' + link('/species/lake-trout/', 'lake trout identification and seasonal habitat') + ' before you choose a cold-water trip.</p>'
         if s['id'] == 'lake-trout-group':
             body += '<p class="wrap">For the named species, see ' + link('/species/lake-trout/', 'lake trout identification, size and habitat') + '.</p>'
+        if s['id'] in ('copper-shark', 'dusky-shark', 'blacktip-shark', 'spinner-shark'):
+            others = [('copper-shark', 'copper shark'), ('dusky-shark', 'dusky shark'), ('blacktip-shark', 'blacktip shark'), ('spinner-shark', 'spinner shark')]
+            body += '<p class="wrap">Compare names and identification sources for ' + ', '.join(link(species_url(sid), name) for sid, name in others if sid != s['id']) + '.</p>'
         body += '<div class="wrap field-reference field-detail"><article><nav class="field-local-nav" aria-label="Species sections">' + ' · '.join(link('#' + anchor, label) for anchor, label in [('where-to-fish', 'Where to fish'), ('local-names', 'Local names'), ('seasons', 'Seasons'), ('regulations', 'Rules')]) + '</nav>'
-        if s['id'] in ('northern-pike', 'lake-trout', 'cisco', 'rainbow-trout'):
+        if s['id'] in ('northern-pike', 'lake-trout', 'cisco', 'rainbow-trout', 'yellow-perch', 'brook-trout-group'):
             body += '<p>Compare Canadian waters in ' + link('/north-america/canada/manitoba/', 'Manitoba') + ', ' + link('/north-america/canada/saskatchewan/', 'Saskatchewan') + ' and ' + link('/north-america/canada/quebec/', 'Quebec') + ' before you choose your base.</p>'
         body += '<section id="where-to-fish"><h2>Where to fish</h2>'
         matches = matched[s['id']]

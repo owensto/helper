@@ -104,7 +104,7 @@ def habitat_card(h):
 
 def filters():
     fields=[('region','Region',REGIONS),('water','Water type',['Freshwater','Saltwater','Brackish','To confirm']),('habitat','Environment',[h['name'] for h in HABITATS]),('method','Method',sorted({m for t in TRIPS for m in t['methods']})),('country','Country / jurisdiction',COUNTRIES),('state','State / province',sorted({t['state'] for t in TRIPS if t.get('state')})),('subregion','Local region',sorted({t['subregion'] for t in TRIPS if t.get('subregion')}))]
-    out='<div class="library-filter" data-library-filter><label class="filter-search"><span>Search place, species or trip</span><input id="trip-search" type="search" placeholder="Try glacier, permit, Japan or alpine" autocomplete="off"></label>'
+    out='<div class="library-filter" data-library-filter><label class="filter-search"><span>Search place, species or trip</span><input id="trip-search" type="search" placeholder="Try a lake, fish or country" autocomplete="off"></label>'
     for key,label,values in fields:
         out+=f'<label><span>{label}</span><select id="filter-{key}" data-library-select="{key}"><option value="">All {label.lower()}s</option>'+''.join(f'<option value="{E(v,quote=True)}">{E(v)}</option>' for v in values)+'</select></label>'
     out+='<label><span>Local classic</span><select id="filter-type" data-library-select="type"><option value="">All local classics</option>'+''.join(f'<option value="{E(t["slug"],quote=True)}">{E(t["name"])}</option>' for t in sorted(TRIP_TYPES,key=lambda t:t['name']))+'</select></label>'
