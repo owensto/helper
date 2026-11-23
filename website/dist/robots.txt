@@ -4,4 +4,5 @@ Disallow: /trips/?
 Disallow: /glossary/?
 Disallow: /tools/tides/?
 Disallow: /tools/weather/?
+Disallow: /plan/?
 Sitemap: https://castward.app/sitemap.xml
