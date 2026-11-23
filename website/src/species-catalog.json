@@ -3279,7 +3279,114 @@
           "note": "Check the rules for the exact water, date, licence and fish identification. This link does not establish an open season."
         }
       ],
-      "referenceRole": "game fish"
+      "referenceRole": "game fish",
+      "searchAnswer": {
+        "title": "Alligator gar: identification, size and Texas trip rules",
+        "description": "Identify alligator gar by the broad snout. Compare gar species, plan around Texas spring closures and check harvest reporting before your trip.",
+        "question": "How do you identify an alligator gar?",
+        "answer": "Alligator gar (Atractosteus spatula), also called gator gar, have a short, broad snout and a heavy body covered in hard scales. Texas Parks and Wildlife describes fish over 300 pounds. For a Texas trip, check the exact water: harvest limits, spring closures and reporting rules can change what you may do.",
+        "facts": [
+          [
+            "Scientific name",
+            "Atractosteus spatula"
+          ],
+          [
+            "Local name",
+            "Gator gar"
+          ],
+          [
+            "Size reference",
+            "TPWD species profile: up to 8 feet and over 300 pounds; not an expected catch"
+          ],
+          [
+            "Alligator gar",
+            "Broad, short snout; heavy body"
+          ],
+          [
+            "Longnose gar",
+            "Much longer, narrower snout"
+          ],
+          [
+            "Spotted gar",
+            "Dark spots on head, body and fins"
+          ],
+          [
+            "Shortnose gar",
+            "Lacks the spotted gar’s dark marks on the head and paired fins"
+          ],
+          [
+            "Texas statewide harvest",
+            "1 daily; water-specific exceptions apply"
+          ],
+          [
+            "Texas reporting",
+            "Report harvest within 24 hours, except at Falcon International Reservoir"
+          ]
+        ],
+        "sections": [
+          {
+            "question": "Alligator gar or longnose gar: what is the difference?",
+            "answer": "Compare the head from above. An alligator gar has a broad muzzle; a longnose gar has a narrow, drawn-out snout. Size alone is a poor test because longnose gar can also grow large. Juvenile alligator gar can resemble spotted gar, so compare several features before you identify the fish.",
+            "source": "https://tpwd.texas.gov/fishboat/fish/management/alligator-gar/identify-gar.phtml"
+          },
+          {
+            "question": "When should you plan an alligator gar trip in Texas?",
+            "answer": "Spring travel needs a closure check. TPWD describes spawning in flooded vegetation, usually in April and May in Texas. That describes a biological season, not a promise of open fishing. Check the agency’s temporary-closure notice for your water before you set a date or choose a launch.",
+            "source": "https://tpwd.texas.gov/huntwild/wild/species/alg/"
+          },
+          {
+            "question": "Can you keep an alligator gar in Texas?",
+            "answer": "The statewide daily bag is one, with water-specific exceptions. Harvest from public waters must be reported within 24 hours, except at Falcon International Reservoir. Read the separate restrictions for your chosen water before keeping a fish. A statewide limit does not override a local closure or a special rule.",
+            "source": "https://tpwd.texas.gov/regulations/outdoor-annual/fishing/freshwater-fishing/bag-length-limits"
+          },
+          {
+            "question": "Can a spring closure stop an alligator gar trip?",
+            "answer": "Yes. TPWD can close an area to taking or attempting to take alligator gar for up to 30 days when spawning conditions occur. The notice gives the affected area and reopening date. Check this before travel, and keep an alternative target or water in your trip plan.",
+            "source": "https://tpwd.texas.gov/regulations/outdoor-annual/fishing/freshwater-fishing/gar-closure"
+          }
+        ],
+        "faq": [
+          [
+            "Is gator gar the same as alligator gar?",
+            "Yes. TPWD lists gator gar as another name for Atractosteus spatula."
+          ],
+          [
+            "Does a large gar have to be an alligator gar?",
+            "No. Longnose gar can also be large. Check the snout shape and body proportions."
+          ],
+          [
+            "Where do alligator gar live?",
+            "Their Gulf coastal range extends from Florida to Veracruz, Mexico. Texas records include large rivers, reservoirs and coastal bays."
+          ],
+          [
+            "Is spring always open for gar fishing?",
+            "No. Temporary spawning closures can apply to a named area. Read the current TPWD notice."
+          ],
+          [
+            "Do Texas anglers report released gar?",
+            "The cited mandatory report applies to harvested gar. Report harvest within 24 hours, except at Falcon International Reservoir."
+          ]
+        ],
+        "sources": [
+          [
+            "TPWD: alligator gar",
+            "https://tpwd.texas.gov/huntwild/wild/species/alg/"
+          ],
+          [
+            "TPWD: gar identification",
+            "https://tpwd.texas.gov/fishboat/fish/management/alligator-gar/identify-gar.phtml"
+          ],
+          [
+            "TPWD: freshwater limits",
+            "https://tpwd.texas.gov/regulations/outdoor-annual/fishing/freshwater-fishing/bag-length-limits"
+          ],
+          [
+            "TPWD: gar restrictions and reporting",
+            "https://tpwd.texas.gov/regulations/outdoor-annual/fishing/freshwater-fishing/gar-closure"
+          ]
+        ],
+        "updated": "2026-11-23"
+      }
     },
     {
       "id": "allis-shad",
@@ -212342,7 +212449,119 @@
           "note": "Check the rules for the exact water, date, licence and fish identification. This link does not establish an open season."
         }
       ],
-      "referenceRole": "game fish"
+      "referenceRole": "game fish",
+      "searchAnswer": {
+        "title": "Spotted bass: identification, size and seasonal trip tips",
+        "description": "Tell spotted bass from largemouth bass. See Kentucky bass names, Missouri seasonal movements, Florida size limits and a quick identification table.",
+        "question": "What is a spotted bass, and how big does it get?",
+        "answer": "Spotted bass (Micropterus punctulatus), also called Kentucky bass, have rows of dark spots below the side stripe and a rough tongue patch. Missouri Conservation lists a usual length of 10–17 inches. For a fishing trip, match the water and season first, then check the local black bass rules before keeping fish.",
+        "facts": [
+          [
+            "Scientific name",
+            "Micropterus punctulatus"
+          ],
+          [
+            "Other name",
+            "Kentucky bass"
+          ],
+          [
+            "Missouri size reference",
+            "Usually 10–17 inches and ½–3½ pounds (MDC)"
+          ],
+          [
+            "Jaw check",
+            "Reaches about the rear of the eye; largemouth jaw extends farther back"
+          ],
+          [
+            "Body check",
+            "Rows of spots below the main stripe"
+          ],
+          [
+            "Fin check",
+            "Dorsal fins connected; scales at the base of the second dorsal fin (FWC)"
+          ],
+          [
+            "Florida minimum",
+            "12 inches total length for spotted bass"
+          ],
+          [
+            "Florida daily bag",
+            "5 black bass combined; only one may be 16 inches or longer; local exceptions apply"
+          ]
+        ],
+        "sections": [
+          {
+            "question": "How do you tell spotted bass from largemouth bass?",
+            "answer": "Start with the jaw and dorsal fins. FWC describes a spotted bass jaw that does not extend past the eye, connected dorsal fins and scales at the base of the second dorsal fin. The rough tongue patch is another clue. Compare the whole fish rather than one mark alone.",
+            "source": "https://myfwc.com/wildlifehabitats/profiles/freshwater/spotted-bass/"
+          },
+          {
+            "question": "When should you plan a spotted bass trip in Missouri?",
+            "answer": "MDC describes a spring move into smaller tributaries after high water, followed by a fall return to larger rivers and reservoirs. Dawn and dusk are active periods. Use that pattern to choose a trip type, then check current access and conditions; it does not predict a catch.",
+            "source": "https://mdc.mo.gov/discover-nature/field-guide/spotted-bass"
+          },
+          {
+            "question": "What tackle can you use for spotted bass?",
+            "answer": "FWC lists jigs, crankbaits, spinners, small plastic worms and crayfish among the usual choices. Start with tackle you already own and match it to the water you will fish. If you book a guided day, ask which rods and lures are supplied before you buy more.",
+            "source": "https://myfwc.com/wildlifehabitats/profiles/freshwater/spotted-bass/"
+          },
+          {
+            "question": "What is the spotted bass size limit in Florida?",
+            "answer": "Florida’s general rule sets a 12-inch minimum total length for spotted bass. The daily bag is five black bass combined, with only one fish 16 inches or longer. Special waters have exceptions. Check the destination’s rule before you keep a fish, and measure total length rather than guessing.",
+            "source": "https://myfwc.com/fishing/freshwater/regulations/general/"
+          },
+          {
+            "question": "Where are spotted bass native in Texas?",
+            "answer": "TPWD places the native Texas range from the Guadalupe River to the Red River, excluding the Edwards Plateau. The agency highlights the Sabine, Neches and Cypress rivers. Use that range to narrow your search, then choose an actual access point and check the water’s current rules before travel.",
+            "source": "https://tpwd.texas.gov/huntwild/wild/species/spb/"
+          }
+        ],
+        "faq": [
+          [
+            "Is Kentucky bass another name for spotted bass?",
+            "Yes. Missouri Conservation lists Kentucky bass for Micropterus punctulatus."
+          ],
+          [
+            "How large are spotted bass?",
+            "MDC gives 10–17 inches as its usual length range. This regional guide is not a world-record claim."
+          ],
+          [
+            "Can spotted bass live in brackish water?",
+            "FWC says they do not enter brackish water. Choose a freshwater trip."
+          ],
+          [
+            "Are spotted bass always in rivers?",
+            "No. MDC also records them in large Ozark reservoirs."
+          ],
+          [
+            "Does Florida have a separate five-fish spotted bass bag?",
+            "No. Five is the combined black bass daily bag under the general rule. Local exceptions can apply."
+          ],
+          [
+            "Should I buy a new rod for a guided trip?",
+            "Ask what the guide supplies first. Match any purchase to the actual method and water."
+          ]
+        ],
+        "sources": [
+          [
+            "Missouri Conservation: spotted bass",
+            "https://mdc.mo.gov/discover-nature/field-guide/spotted-bass"
+          ],
+          [
+            "FWC: spotted bass profile",
+            "https://myfwc.com/wildlifehabitats/profiles/freshwater/spotted-bass/"
+          ],
+          [
+            "FWC: freshwater bag and length limits",
+            "https://myfwc.com/fishing/freshwater/regulations/general/"
+          ],
+          [
+            "TPWD: spotted bass range and habitat",
+            "https://tpwd.texas.gov/huntwild/wild/species/spb/"
+          ]
+        ],
+        "updated": "2026-11-23"
+      }
     },
     {
       "id": "spotted-coralgrouper",

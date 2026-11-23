@@ -3302,6 +3302,36 @@
           "seasonStatus": "unverified",
           "methods": [],
           "methodStatus": "unverified"
+        },
+        {
+          "speciesId": "chinook-salmon",
+          "commonName": "Chinook salmon",
+          "sourceUrls": [
+            "https://wdfw.wa.gov/fishing/locations/marine-areas/westport-ocean-shores"
+          ],
+          "scopeNotes": [
+            "The agency water profile names this target in the local fishery. Check current rules separately."
+          ],
+          "status": "reviewed-source",
+          "seasons": [],
+          "seasonStatus": "unverified",
+          "methods": [],
+          "methodStatus": "unverified"
+        },
+        {
+          "speciesId": "coho-salmon",
+          "commonName": "Coho salmon",
+          "sourceUrls": [
+            "https://wdfw.wa.gov/fishing/locations/marine-areas/westport-ocean-shores"
+          ],
+          "scopeNotes": [
+            "The agency water profile names this target in the local fishery. Check current rules separately."
+          ],
+          "status": "reviewed-source",
+          "seasons": [],
+          "seasonStatus": "unverified",
+          "methods": [],
+          "methodStatus": "unverified"
         }
       ],
       "seasons": [],
@@ -3327,7 +3357,7 @@
         "https://geodataservices.wdfw.wa.gov/arcgis/rest/services/FP_Projects/DRAFTWDFWFishProgramWACs/MapServer/layers"
       ],
       "unverifiedCandidates": null,
-      "reviewed": "2026-11-10"
+      "reviewed": "2026-11-23"
     },
     {
       "id": "na-us-wa-012",
@@ -15981,12 +16011,45 @@
       "state": "Massachusetts",
       "region": "North America",
       "status": "unverified",
-      "targets": [],
+      "targets": [
+        {
+          "speciesId": "striped-bass",
+          "commonName": "Striped bass",
+          "sourceUrls": [
+            "https://www.fws.gov/locations/monomoy-national-wildlife-refuge/fishing"
+          ],
+          "scopeNotes": [
+            "The agency water profile names this target in the local fishery. Check current rules separately."
+          ],
+          "status": "reviewed-source",
+          "seasons": [],
+          "seasonStatus": "unverified",
+          "methods": [],
+          "methodStatus": "unverified"
+        },
+        {
+          "speciesId": "bluefish",
+          "commonName": "Bluefish",
+          "sourceUrls": [
+            "https://www.fws.gov/locations/monomoy-national-wildlife-refuge/fishing"
+          ],
+          "scopeNotes": [
+            "The agency water profile names this target in the local fishery. Check current rules separately."
+          ],
+          "status": "reviewed-source",
+          "seasons": [],
+          "seasonStatus": "unverified",
+          "methods": [],
+          "methodStatus": "unverified"
+        }
+      ],
       "seasons": [],
       "seasonStatus": "unverified",
       "methods": [],
       "methodStatus": "unverified",
-      "sourceUrls": [],
+      "sourceUrls": [
+        "https://www.fws.gov/locations/monomoy-national-wildlife-refuge/fishing"
+      ],
       "researchSourceUrls": [
         "https://www.mass.gov/info-details/saltwater-fishing-public-access-projects",
         "https://www.mass.gov/doc/july-2017-regulation-summary/download",
@@ -16016,7 +16079,7 @@
         "https://www.mass.gov/doc/5725-new-shark-fishing-rules-for-2025/download"
       ],
       "unverifiedCandidates": "Striped bass",
-      "reviewed": "2026-11-10"
+      "reviewed": "2026-11-23"
     },
     {
       "id": "na-us-ma-002",
@@ -16918,12 +16981,49 @@
       "state": "New York",
       "region": "North America",
       "status": "unverified",
-      "targets": [],
+      "targets": [
+        {
+          "speciesId": "sea-trout",
+          "commonName": "Brown trout",
+          "sourceUrls": [
+            "https://content.govdelivery.com/accounts/NYSDEC/bulletins/3e6daa2",
+            "https://dec.ny.gov/things-to-do/freshwater-fishing/regulations/border-waters-special-regulations"
+          ],
+          "scopeNotes": [
+            "The agency water profile names this target in the local fishery. Check current rules separately.",
+            "Brown trout and sea trout share Salmo trutta. This inland fishery is not a sea-run trout claim."
+          ],
+          "status": "reviewed-source",
+          "seasons": [],
+          "seasonStatus": "unverified",
+          "methods": [],
+          "methodStatus": "unverified"
+        },
+        {
+          "speciesId": "rainbow-trout",
+          "commonName": "Rainbow trout",
+          "sourceUrls": [
+            "https://content.govdelivery.com/accounts/NYSDEC/bulletins/3e6daa2",
+            "https://dec.ny.gov/things-to-do/freshwater-fishing/regulations/border-waters-special-regulations"
+          ],
+          "scopeNotes": [
+            "The agency water profile names this target in the local fishery. Check current rules separately."
+          ],
+          "status": "reviewed-source",
+          "seasons": [],
+          "seasonStatus": "unverified",
+          "methods": [],
+          "methodStatus": "unverified"
+        }
+      ],
       "seasons": [],
       "seasonStatus": "unverified",
       "methods": [],
       "methodStatus": "unverified",
-      "sourceUrls": [],
+      "sourceUrls": [
+        "https://content.govdelivery.com/accounts/NYSDEC/bulletins/3e6daa2",
+        "https://dec.ny.gov/things-to-do/freshwater-fishing/regulations/border-waters-special-regulations"
+      ],
       "researchSourceUrls": [
         "https://extapps.dec.ny.gov/docs/fish_marine_pdf/fishguide.pdf",
         "https://dec.ny.gov/things-to-do/freshwater-fishing/regulations/border-waters-special-regulations",
@@ -16950,7 +17050,7 @@
         "https://dec.ny.gov/things-to-do/freshwater-fishing/regulations/great-lakes-tributaries"
       ],
       "unverifiedCandidates": "Trout candidates",
-      "reviewed": "2026-11-10"
+      "reviewed": "2026-11-23"
     },
     {
       "id": "na-us-ny-004",

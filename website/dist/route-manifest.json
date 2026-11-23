@@ -3001,8 +3001,8 @@
   },
   "/north-america/united-states/washington/westport-offshore-offshore-pelagic-fishing/": {
     "kind": "article",
-    "title": "Westport, Washington: A Day of Offshore Fishing | Castward",
-    "noindex": true,
+    "title": "Westport Chinook and Coho Salmon: Offshore Trip Plan",
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/washington/spokane-river-river-trout-and-grayling/": {
@@ -4039,8 +4039,8 @@
   },
   "/north-america/united-states/massachusetts/cape-cod-monomoy-inshore-estuary-fishing/": {
     "kind": "article",
-    "title": "Monomoy: Shallow-Water Fishing on Cape Cod | Castward",
-    "noindex": true,
+    "title": "Monomoy Striped Bass and Bluefish: Cape Cod Trip Plan",
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/massachusetts/deerfield-river-river-trout-and-grayling/": {
@@ -4123,8 +4123,8 @@
   },
   "/north-america/united-states/new-york/west-branch-delaware-river-river-trout-and-grayling/": {
     "kind": "article",
-    "title": "West Branch Delaware: Trout by Float or Wade | Castward",
-    "noindex": true,
+    "title": "West Branch Delaware: Wild Brown and Rainbow Trout",
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/new-york/lake-ontario-oswego-great-lakes-open-water-fishing/": {
@@ -10243,7 +10243,7 @@
   },
   "/species/alligator-gar/": {
     "kind": "species-detail",
-    "title": "Alligator gar fishing, local names and destinations",
+    "title": "Alligator gar: identification, size and Texas trip rules",
     "noindex": false,
     "redirectTo": null
   },
@@ -13933,7 +13933,7 @@
   },
   "/species/spotted-bass/": {
     "kind": "species-detail",
-    "title": "Spotted bass fishing, local names and destinations",
+    "title": "Spotted bass: identification, size and seasonal trip tips",
     "noindex": false,
     "redirectTo": null
   },

@@ -530,17 +530,16 @@
   {
     "id": "na-us-wa-011",
     "place": "Westport offshore",
-    "eligible": false,
+    "eligible": true,
     "verifiedSpeciesIds": [
-      "albacore"
+      "albacore",
+      "chinook-salmon",
+      "coho-salmon"
     ],
-    "descriptionWords": 0,
+    "descriptionWords": 170,
     "seasonSection": true,
     "canonicalPath": "/north-america/united-states/washington/westport-offshore-offshore-pelagic-fishing/",
-    "reasons": [
-      "Only 1 verified individual target species with source links; at least 2 required",
-      "Water-specific description has 0 words; at least 120 required"
-    ]
+    "reasons": []
   },
   {
     "id": "na-us-wa-012",
@@ -2976,15 +2975,15 @@
   {
     "id": "na-us-ma-001",
     "place": "Cape Cod / Monomoy",
-    "eligible": false,
-    "verifiedSpeciesIds": [],
-    "descriptionWords": 0,
+    "eligible": true,
+    "verifiedSpeciesIds": [
+      "bluefish",
+      "striped-bass"
+    ],
+    "descriptionWords": 160,
     "seasonSection": true,
     "canonicalPath": "/north-america/united-states/massachusetts/cape-cod-monomoy-inshore-estuary-fishing/",
-    "reasons": [
-      "Only 0 verified individual target species with source links; at least 2 required",
-      "Water-specific description has 0 words; at least 120 required"
-    ]
+    "reasons": []
   },
   {
     "id": "na-us-ma-002",
@@ -3175,15 +3174,15 @@
   {
     "id": "na-us-ny-003",
     "place": "West Branch Delaware River",
-    "eligible": false,
-    "verifiedSpeciesIds": [],
-    "descriptionWords": 0,
+    "eligible": true,
+    "verifiedSpeciesIds": [
+      "rainbow-trout",
+      "sea-trout"
+    ],
+    "descriptionWords": 166,
     "seasonSection": true,
     "canonicalPath": "/north-america/united-states/new-york/west-branch-delaware-river-river-trout-and-grayling/",
-    "reasons": [
-      "Only 0 verified individual target species with source links; at least 2 required",
-      "Water-specific description has 0 words; at least 120 required"
-    ]
+    "reasons": []
   },
   {
     "id": "na-us-ny-004",

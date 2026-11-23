@@ -9731,7 +9731,7 @@
     },
     {
       "id": "na-us-wa-011",
-      "title": "Westport, Washington: A Day of Offshore Fishing",
+      "title": "Westport Chinook and Coho Salmon: Offshore Trip Plan",
       "place": "Westport offshore",
       "country": "United States",
       "region": "North America",
@@ -9752,10 +9752,12 @@
       "climate": "mixed",
       "fish": [
         "Salmon",
-        "Albacore"
+        "Albacore",
+        "Chinook salmon",
+        "Coho salmon"
       ],
       "candidateTargets": "Albacore tuna",
-      "summary": "Head offshore from Westport for a fishing day beyond the coast. A charter makes the run out and time at the rods part of the trip.",
+      "summary": "Westport gives boat access to Chinook and coho salmon in Washington Marine Area 2. Start with the open season and the Grays Harbor Bar forecast before choosing a departure. A charter day offshore is different from a jetty outing: check the target, fishing area, supplied tackle and return plan with the skipper.",
       "contentTier": "preparation-brief",
       "evidenceDepth": "Production brief; local fishery claims not yet verified",
       "catalogOrigin": "north-america-production-import",
@@ -9771,6 +9773,14 @@
         {
           "source": "species-b3994403fafa",
           "claim": "Albacore is documented in the linked fishery source. Check its named water or departure area."
+        },
+        {
+          "source": "species-eaf5df4c3f40",
+          "claim": "Chinook salmon is documented in the linked fishery source. Check its named water or departure area."
+        },
+        {
+          "source": "species-eaf5df4c3f40",
+          "claim": "Coho salmon is documented in the linked fishery source. Check its named water or departure area."
         }
       ],
       "related": [
@@ -9785,7 +9795,7 @@
         "fieldTested": false,
         "independentExpertReviewed": false
       },
-      "season": "Dates have not been verified for this opportunity. Before choosing travel dates, resolve: Port departure, travel time, sea exposure and target-specific program.",
+      "season": "WDFW notes later-summer coho opportunities and seasonal Chinook fishing. These are fishery patterns, not open dates. Check current Marine Area 2 rules and emergency changes for the travel date.",
       "seasonWindows": [],
       "sections": [
         {
@@ -9869,7 +9879,7 @@
         "angle": "Westport offshore: the preparation decision to settle before buying gear — Distinguish offshore run length from nearshore alternatives and confirm heavy tackle is supplied.",
         "searchIntentHypothesis": "Westport offshore Washington fishing Albacore tuna"
       },
-      "indexEligible": false,
+      "indexEligible": true,
       "tripTypeIds": [],
       "tripTypeNames": [],
       "tripStyleIds": [
@@ -9877,7 +9887,9 @@
       ],
       "speciesIds": [
         "salmon",
-        "albacore"
+        "albacore",
+        "chinook-salmon",
+        "coho-salmon"
       ],
       "speciesEvidence": [
         {
@@ -9909,11 +9921,41 @@
           "seasonStatus": "unverified",
           "methods": [],
           "methodStatus": "unverified"
+        },
+        {
+          "speciesId": "chinook-salmon",
+          "commonName": "Chinook salmon",
+          "sourceUrls": [
+            "https://wdfw.wa.gov/fishing/locations/marine-areas/westport-ocean-shores"
+          ],
+          "scopeNotes": [
+            "The agency water profile names this target in the local fishery. Check current rules separately."
+          ],
+          "status": "reviewed-source",
+          "seasons": [],
+          "seasonStatus": "unverified",
+          "methods": [],
+          "methodStatus": "unverified"
+        },
+        {
+          "speciesId": "coho-salmon",
+          "commonName": "Coho salmon",
+          "sourceUrls": [
+            "https://wdfw.wa.gov/fishing/locations/marine-areas/westport-ocean-shores"
+          ],
+          "scopeNotes": [
+            "The agency water profile names this target in the local fishery. Check current rules separately."
+          ],
+          "status": "reviewed-source",
+          "seasons": [],
+          "seasonStatus": "unverified",
+          "methods": [],
+          "methodStatus": "unverified"
         }
       ],
       "speciesReview": {
         "status": "source-linked",
-        "reviewed": "2026-11-10",
+        "reviewed": "2026-11-23",
         "seasonStatus": "unverified",
         "methodStatus": "unverified"
       },
@@ -9931,18 +9973,74 @@
         "https://wdfw.wa.gov/species-habitats/ecosystems/marine-shorelines",
         "https://geodataservices.wdfw.wa.gov/arcgis/rest/services/FP_Projects/DRAFTWDFWFishProgramWACs/MapServer/layers"
       ],
-      "indexAssessment": {
-        "eligible": false,
-        "verifiedSpeciesIds": [
-          "albacore"
+      "localDescription": {
+        "place": "Westport offshore",
+        "reviewed": "2026-11-23",
+        "paragraphs": [
+          "Westport gives boat access to Chinook and coho salmon in Washington Marine Area 2. Start with the open season and the Grays Harbor Bar forecast before choosing a departure. A charter day offshore is different from a jetty outing: check the target, fishing area, supplied tackle and return plan with the skipper.",
+          "WDFW defines Marine Area 2 from Leadbetter Point north to the Queets River, excluding Willapa Bay and Grays Harbor. The Port of Westport is the main access point. Its profile lists Chinook and coho in the offshore fishing area and notes that coho opportunities can improve later in summer.",
+          "The bar deserves as much attention as the fish. WDFW warns about peak ebb tides and high swell, with conditions that can change quickly. Check both the outward and return crossings. For an initial ocean trip, the agency recommends an experienced local guide. Ask how a cancelled sailing works before you book, and confirm the current salmon rule rather than treating a seasonal fish profile as an opening notice."
         ],
-        "descriptionWords": 0,
+        "sourceUrls": [
+          "https://wdfw.wa.gov/fishing/locations/marine-areas/westport-ocean-shores"
+        ],
+        "season": "WDFW notes later-summer coho opportunities and seasonal Chinook fishing. These are fishery patterns, not open dates. Check current Marine Area 2 rules and emergency changes for the travel date.",
+        "facts": [
+          [
+            "Targets",
+            "Chinook salmon and coho salmon"
+          ],
+          [
+            "Fishing area",
+            "Marine Area 2; excludes Grays Harbor and Willapa Bay"
+          ],
+          [
+            "Boat access",
+            "Port of Westport"
+          ],
+          [
+            "Main trip decision",
+            "Safe outward and return bar crossings"
+          ],
+          [
+            "Before booking",
+            "Current opening, target, tackle and weather policy"
+          ]
+        ],
+        "faq": [
+          [
+            "Is this the same as fishing inside Grays Harbor?",
+            "No. Marine Area 2 excludes Grays Harbor. Use the rules for the actual fishing area."
+          ],
+          [
+            "Can I reach this offshore water from the beach?",
+            "The offshore salmon outing needs a boat. A Westport Jetty visit is a separate trip."
+          ],
+          [
+            "Is late summer always open for coho?",
+            "No. The seasonal pattern does not replace current opening notices or emergency rules."
+          ],
+          [
+            "Why does the tide matter to a charter?",
+            "The Grays Harbor Bar can be dangerous during peak ebb tides and high swell. The skipper must assess both crossings."
+          ],
+          [
+            "What should I ask before a first ocean trip?",
+            "Confirm the target, current opening, supplied tackle, sea conditions and cancellation terms."
+          ]
+        ]
+      },
+      "indexAssessment": {
+        "eligible": true,
+        "verifiedSpeciesIds": [
+          "albacore",
+          "chinook-salmon",
+          "coho-salmon"
+        ],
+        "descriptionWords": 170,
         "seasonSection": true,
         "canonicalPath": "/north-america/united-states/washington/westport-offshore-offshore-pelagic-fishing/",
-        "reasons": [
-          "Only 1 verified individual target species with source links; at least 2 required",
-          "Water-specific description has 0 words; at least 120 required"
-        ]
+        "reasons": []
       },
       "articleWordCount": 212
     },
@@ -50604,7 +50702,7 @@
     },
     {
       "id": "na-us-ma-001",
-      "title": "Monomoy: Shallow-Water Fishing on Cape Cod",
+      "title": "Monomoy Striped Bass and Bluefish: Cape Cod Trip Plan",
       "place": "Cape Cod / Monomoy",
       "country": "United States",
       "region": "North America",
@@ -50625,14 +50723,28 @@
         "Skiff"
       ],
       "climate": "mixed",
-      "fish": [],
+      "fish": [
+        "Striped bass",
+        "Bluefish"
+      ],
       "candidateTargets": "Striped bass",
-      "summary": "Explore shallow water around Monomoy by boat. Let the tide set the pace for an inshore fishing day during your Cape Cod visit.",
+      "summary": "Monomoy on Cape Cod offers striped bass and bluefish from designated shorelines and nearby salt water. Choose your access first: parts of Morris Island have shore access, while North Monomoy, South Monomoy and Minimoy need a boat. Check the refuge access map, wildlife closures and tide before you set out.",
       "contentTier": "preparation-brief",
       "evidenceDepth": "Production brief; local fishery claims not yet verified",
       "catalogOrigin": "north-america-production-import",
-      "sourceIds": [],
-      "evidence": [],
+      "sourceIds": [
+        "species-df21f272466e"
+      ],
+      "evidence": [
+        {
+          "source": "species-df21f272466e",
+          "claim": "Striped bass is documented in the linked fishery source. Check its named water or departure area."
+        },
+        {
+          "source": "species-df21f272466e",
+          "claim": "Bluefish is documented in the linked fishery source. Check its named water or departure area."
+        }
+      ],
       "related": [
         "na-us-ma-002",
         "na-us-ma-003",
@@ -50645,7 +50757,7 @@
         "fieldTested": false,
         "independentExpertReviewed": false
       },
-      "season": "Dates have not been verified for this opportunity. Before choosing travel dates, resolve: Tide, salinity, wind, temperature and target movement.",
+      "season": "Designated surf-fishing areas are open year-round, subject to wildlife closures. Check tides and current species rules; year-round access does not promise fish or permit harvest in every season.",
       "seasonWindows": [],
       "sections": [
         {
@@ -50729,18 +50841,52 @@
         "angle": "Cape Cod / Monomoy: the preparation decision to settle before buying gear — Compare shallow-water boat approaches and clarify wind and tide dependencies.",
         "searchIntentHypothesis": "Cape Cod / Monomoy Massachusetts fishing Striped bass"
       },
-      "indexEligible": false,
+      "indexEligible": true,
       "tripTypeIds": [],
       "tripTypeNames": [],
       "tripStyleIds": [
         "inshore-flats",
         "fly-fishing"
       ],
-      "speciesIds": [],
-      "speciesEvidence": [],
+      "speciesIds": [
+        "striped-bass",
+        "bluefish"
+      ],
+      "speciesEvidence": [
+        {
+          "speciesId": "striped-bass",
+          "commonName": "Striped bass",
+          "sourceUrls": [
+            "https://www.fws.gov/locations/monomoy-national-wildlife-refuge/fishing"
+          ],
+          "scopeNotes": [
+            "The agency water profile names this target in the local fishery. Check current rules separately."
+          ],
+          "status": "reviewed-source",
+          "seasons": [],
+          "seasonStatus": "unverified",
+          "methods": [],
+          "methodStatus": "unverified"
+        },
+        {
+          "speciesId": "bluefish",
+          "commonName": "Bluefish",
+          "sourceUrls": [
+            "https://www.fws.gov/locations/monomoy-national-wildlife-refuge/fishing"
+          ],
+          "scopeNotes": [
+            "The agency water profile names this target in the local fishery. Check current rules separately."
+          ],
+          "status": "reviewed-source",
+          "seasons": [],
+          "seasonStatus": "unverified",
+          "methods": [],
+          "methodStatus": "unverified"
+        }
+      ],
       "speciesReview": {
         "status": "unverified",
-        "reviewed": "2026-11-10",
+        "reviewed": "2026-11-23",
         "seasonStatus": "unverified",
         "methodStatus": "unverified"
       },
@@ -50772,16 +50918,69 @@
         "https://www.mass.gov/doc/cape-cod-dredging-recommendations/download",
         "https://www.mass.gov/doc/5725-new-shark-fishing-rules-for-2025/download"
       ],
+      "localDescription": {
+        "place": "Cape Cod / Monomoy",
+        "reviewed": "2026-11-23",
+        "paragraphs": [
+          "Monomoy on Cape Cod offers striped bass and bluefish from designated shorelines and nearby salt water. Choose your access first: parts of Morris Island have shore access, while North Monomoy, South Monomoy and Minimoy need a boat. Check the refuge access map, wildlife closures and tide before you set out.",
+          "The refuge permits surf fishing throughout the year in designated areas. That does not make every beach open or every tide suitable. The Fish and Wildlife Service warns that tides can change shoreline access, and it provides no public boat transport to the offshore islands.",
+          "For a first visit, decide whether you want a shore outing or a boat day before you compare tackle. Ask a boat provider where the trip starts, what it supplies and how it handles a weather change. Keep a separate check for the Massachusetts saltwater permit and current species rules. Pack for the access you choose, and carry used line and hooks out with you."
+        ],
+        "sourceUrls": [
+          "https://www.fws.gov/locations/monomoy-national-wildlife-refuge/fishing"
+        ],
+        "season": "Designated surf-fishing areas are open year-round, subject to wildlife closures. Check tides and current species rules; year-round access does not promise fish or permit harvest in every season.",
+        "facts": [
+          [
+            "Targets",
+            "Striped bass and bluefish"
+          ],
+          [
+            "Shore option",
+            "Designated parts of Morris Island"
+          ],
+          [
+            "Island access",
+            "Boat required; no refuge boat service"
+          ],
+          [
+            "Before travel",
+            "Access map, tides, wildlife closures and Massachusetts saltwater permit"
+          ]
+        ],
+        "faq": [
+          [
+            "Can I fish from shore at Monomoy?",
+            "Yes, in designated areas. Check the refuge map and posted closures before you enter."
+          ],
+          [
+            "Does the refuge run a boat service?",
+            "No. Arrange your own suitable transport for the offshore islands."
+          ],
+          [
+            "Is a summer booking required to fish?",
+            "The refuge allows designated surf fishing year-round. A boat reservation and the legal season are separate checks."
+          ],
+          [
+            "Can I fish any beach I reach?",
+            "No. Respect restricted habitat and seasonal wildlife closures."
+          ],
+          [
+            "What should I settle before I pack?",
+            "Choose shore or boat access, then confirm tackle, weather plans, permits and your return route."
+          ]
+        ]
+      },
       "indexAssessment": {
-        "eligible": false,
-        "verifiedSpeciesIds": [],
-        "descriptionWords": 0,
+        "eligible": true,
+        "verifiedSpeciesIds": [
+          "bluefish",
+          "striped-bass"
+        ],
+        "descriptionWords": 160,
         "seasonSection": true,
         "canonicalPath": "/north-america/united-states/massachusetts/cape-cod-monomoy-inshore-estuary-fishing/",
-        "reasons": [
-          "Only 0 verified individual target species with source links; at least 2 required",
-          "Water-specific description has 0 words; at least 120 required"
-        ]
+        "reasons": []
       },
       "articleWordCount": 214
     },
@@ -53722,7 +53921,7 @@
     },
     {
       "id": "na-us-ny-003",
-      "title": "West Branch Delaware: Trout by Float or Wade",
+      "title": "West Branch Delaware: Wild Brown and Rainbow Trout",
       "place": "West Branch Delaware River",
       "country": "United States",
       "region": "North America",
@@ -53743,14 +53942,29 @@
         "Guided wading"
       ],
       "climate": "mixed",
-      "fish": [],
+      "fish": [
+        "Brown trout",
+        "Rainbow trout"
+      ],
       "candidateTargets": "Trout candidates",
-      "summary": "Explore the West Branch Delaware for trout. Choose a float or suitable wading water and enjoy a day working this river's current.",
+      "summary": "The West Branch Delaware below Cannonsville Reservoir is a wild brown and rainbow trout trip. Cold reservoir releases shape the fishery from Deposit toward Hancock. Choose a reach and check the flow before deciding to wade or float. The New York–Pennsylvania boundary reach has its own trout season and tackle rules.",
       "contentTier": "preparation-brief",
       "evidenceDepth": "Production brief; local fishery claims not yet verified",
       "catalogOrigin": "north-america-production-import",
-      "sourceIds": [],
-      "evidence": [],
+      "sourceIds": [
+        "species-36fdf984a2d2",
+        "species-82f36cc6eef9"
+      ],
+      "evidence": [
+        {
+          "source": "species-36fdf984a2d2",
+          "claim": "Brown trout is documented in the linked fishery source. Check its named water or departure area."
+        },
+        {
+          "source": "species-36fdf984a2d2",
+          "claim": "Rainbow trout is documented in the linked fishery source. Check its named water or departure area."
+        }
+      ],
       "related": [
         "na-us-ny-001",
         "na-us-ny-002",
@@ -53763,7 +53977,7 @@
         "fieldTested": false,
         "independentExpertReviewed": false
       },
-      "season": "Dates have not been verified for this opportunity. Before choosing travel dates, resolve: Flow releases, runoff, temperature and local presentation windows.",
+      "season": "On the NY/PA boundary reach, the trout rule allows one fish daily from April 1 to October 15. October 16 to March 31 is catch-and-release with artificial lures only. Check separate rules for upstream reaches and avoid heat-stressed trout.",
       "seasonWindows": [],
       "sections": [
         {
@@ -53847,7 +54061,7 @@
         "angle": "West Branch Delaware River: the preparation decision to settle before buying gear — Share the interstate water entity and distinguish release-driven floats from wading plans.",
         "searchIntentHypothesis": "West Branch Delaware River New York fishing Trout"
       },
-      "indexEligible": false,
+      "indexEligible": true,
       "tripTypeIds": [],
       "tripTypeNames": [],
       "tripStyleIds": [
@@ -53855,11 +54069,48 @@
         "bank-wading",
         "river-fishing"
       ],
-      "speciesIds": [],
-      "speciesEvidence": [],
+      "speciesIds": [
+        "sea-trout",
+        "rainbow-trout"
+      ],
+      "speciesEvidence": [
+        {
+          "speciesId": "sea-trout",
+          "commonName": "Brown trout",
+          "sourceUrls": [
+            "https://content.govdelivery.com/accounts/NYSDEC/bulletins/3e6daa2",
+            "https://dec.ny.gov/things-to-do/freshwater-fishing/regulations/border-waters-special-regulations"
+          ],
+          "scopeNotes": [
+            "The agency water profile names this target in the local fishery. Check current rules separately.",
+            "Brown trout and sea trout share Salmo trutta. This inland fishery is not a sea-run trout claim."
+          ],
+          "status": "reviewed-source",
+          "seasons": [],
+          "seasonStatus": "unverified",
+          "methods": [],
+          "methodStatus": "unverified"
+        },
+        {
+          "speciesId": "rainbow-trout",
+          "commonName": "Rainbow trout",
+          "sourceUrls": [
+            "https://content.govdelivery.com/accounts/NYSDEC/bulletins/3e6daa2",
+            "https://dec.ny.gov/things-to-do/freshwater-fishing/regulations/border-waters-special-regulations"
+          ],
+          "scopeNotes": [
+            "The agency water profile names this target in the local fishery. Check current rules separately."
+          ],
+          "status": "reviewed-source",
+          "seasons": [],
+          "seasonStatus": "unverified",
+          "methods": [],
+          "methodStatus": "unverified"
+        }
+      ],
       "speciesReview": {
         "status": "unverified",
-        "reviewed": "2026-11-10",
+        "reviewed": "2026-11-23",
         "seasonStatus": "unverified",
         "methodStatus": "unverified"
       },
@@ -53888,16 +54139,74 @@
         "https://dec.ny.gov/nature/animals-fish-plants/hudson-delaware-marine-fisheries/river-herring",
         "https://dec.ny.gov/things-to-do/freshwater-fishing/regulations/great-lakes-tributaries"
       ],
+      "localDescription": {
+        "place": "West Branch Delaware River",
+        "reviewed": "2026-11-23",
+        "paragraphs": [
+          "The West Branch Delaware below Cannonsville Reservoir is a wild brown and rainbow trout trip. Cold reservoir releases shape the fishery from Deposit toward Hancock. Choose a reach and check the flow before deciding to wade or float. The New York–Pennsylvania boundary reach has its own trout season and tackle rules.",
+          "DEC describes the West Branch as a mix of wading and drift-boat water, with the choice dependent on conditions. Public trailered launches occur along the West Branch, alongside walk-in access across the wider tailwater system. Use the agency access map to choose a real entry and exit, rather than assuming every riverside pull-off gives public access.",
+          "The tailwater trout reproduce naturally; this is distinct from stocked stretches farther upstream. In warm weather, check conditions at the reach you plan to fish and avoid heat-stressed trout. For a guided float, ask about the take-out, shuttle, tackle and weather plan. For a wading day, keep the route short enough to change it if the water changes."
+        ],
+        "sourceUrls": [
+          "https://content.govdelivery.com/accounts/NYSDEC/bulletins/3e6daa2",
+          "https://dec.ny.gov/things-to-do/freshwater-fishing/regulations/border-waters-special-regulations"
+        ],
+        "season": "On the NY/PA boundary reach, the trout rule allows one fish daily from April 1 to October 15. October 16 to March 31 is catch-and-release with artificial lures only. Check separate rules for upstream reaches and avoid heat-stressed trout.",
+        "facts": [
+          [
+            "Targets",
+            "Wild brown trout and rainbow trout"
+          ],
+          [
+            "Water",
+            "Cannonsville tailwater, Deposit toward Hancock"
+          ],
+          [
+            "Access choice",
+            "Wade or drift boat, subject to conditions"
+          ],
+          [
+            "Boundary reach",
+            "Use the NY/PA border-water rules"
+          ],
+          [
+            "Summer check",
+            "Avoid heat-stressed trout"
+          ]
+        ],
+        "faq": [
+          [
+            "Is this the reservoir or the river?",
+            "This trip covers the river below Cannonsville Reservoir."
+          ],
+          [
+            "Are the tailwater trout stocked?",
+            "DEC describes naturally reproducing trout in the tailwater system. Upstream stocking lists cover different reaches."
+          ],
+          [
+            "Can I wade the whole West Branch?",
+            "No single access method fits every reach or flow. Check the conditions and public access for your route."
+          ],
+          [
+            "Can I keep trout in November on the boundary reach?",
+            "No. October 16 to March 31 is catch-and-release with artificial lures only under the cited border-water rule."
+          ],
+          [
+            "Does the border rule cover the whole river?",
+            "No. Check the exact reach against the border-water and inland trout rules."
+          ]
+        ]
+      },
       "indexAssessment": {
-        "eligible": false,
-        "verifiedSpeciesIds": [],
-        "descriptionWords": 0,
+        "eligible": true,
+        "verifiedSpeciesIds": [
+          "rainbow-trout",
+          "sea-trout"
+        ],
+        "descriptionWords": 166,
         "seasonSection": true,
         "canonicalPath": "/north-america/united-states/new-york/west-branch-delaware-river-river-trout-and-grayling/",
-        "reasons": [
-          "Only 0 verified individual target species with source links; at least 2 required",
-          "Water-specific description has 0 words; at least 120 required"
-        ]
+        "reasons": []
       },
       "articleWordCount": 217
     },

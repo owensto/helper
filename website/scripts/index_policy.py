@@ -96,9 +96,16 @@ def install(pages, trips, origin, dist):
         # Render the description separately from shared gear modules and navigation.
         local = trip.get('localDescription')
         if local:
-            module = '<section class="wrap prose-block" id="local-water-description"><h2>What should you know about this water?</h2>'
+            module = '<section class="wrap prose-block" id="local-water-description"><h2>How should you plan this water?</h2>'
             module += '<p class="small">Updated ' + escape(local['reviewed']) + '</p>'
             module += ''.join('<p>' + escape(p) + '</p>' for p in local['paragraphs'])
+            module += '<script type="application/ld+json">' + json.dumps({
+                '@context': 'https://schema.org', '@type': 'Article',
+                'headline': trip['title'], 'mainEntityOfPage': origin + path,
+                'dateModified': local['reviewed'],
+                'author': {'@type': 'Organization', 'name': 'Castward', 'url': origin + '/about/'},
+                'citation': local['sourceUrls'],
+            }).replace('</', '<\\/') + '</script>'
             if local.get('facts'):
                 module += '<h3>What should you check before the trip?</h3><dl>' + ''.join('<dt>' + escape(k) + '</dt><dd>' + escape(v) + '</dd>' for k, v in local['facts']) + '</dl>'
             if local.get('faq'):

@@ -1597,7 +1597,7 @@
       "location": "Westport offshore",
       "url": "/north-america/united-states/washington/westport-offshore-offshore-pelagic-fishing/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
         "species-eaf5df4c3f40",
         "species-b3994403fafa"
@@ -1607,9 +1607,11 @@
       "candidateTargets": "Albacore tuna",
       "confirmedTargets": [
         "Salmon",
-        "Albacore"
+        "Albacore",
+        "Chinook salmon",
+        "Coho salmon"
       ],
-      "seasonalEvidence": "Dates have not been verified for this opportunity. Before choosing travel dates, resolve: Port departure, travel time, sea exposure and target-specific program.",
+      "seasonalEvidence": "WDFW notes later-summer coho opportunities and seasonal Chinook fishing. These are fishery patterns, not open dates. Check current Marine Area 2 rules and emergency changes for the travel date.",
       "accessToVerify": "Charter / specialist boat",
       "tackleDecision": "Separate trolling, casting and jigging; confirm whether all fighting and terminal gear is provided",
       "operatorQuestion": "Rods, reels, harnesses, leaders, lures and fish-handling logistics",
@@ -8872,13 +8874,18 @@
       "location": "Cape Cod / Monomoy",
       "url": "/north-america/united-states/massachusetts/cape-cod-monomoy-inshore-estuary-fishing/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
-      "sourceIds": [],
+      "indexEligible": true,
+      "sourceIds": [
+        "species-df21f272466e"
+      ],
       "evidenceDepth": "Production brief; local fishery claims not yet verified",
       "localDecision": "Compare shallow-water boat approaches and clarify wind and tide dependencies.",
       "candidateTargets": "Striped bass",
-      "confirmedTargets": [],
-      "seasonalEvidence": "Dates have not been verified for this opportunity. Before choosing travel dates, resolve: Tide, salinity, wind, temperature and target movement.",
+      "confirmedTargets": [
+        "Striped bass",
+        "Bluefish"
+      ],
+      "seasonalEvidence": "Designated surf-fishing areas are open year-round, subject to wildlife closures. Check tides and current species rules; year-round access does not promise fish or permit harvest in every season.",
       "accessToVerify": "Skiff, kayak, bank or suitable wading",
       "tackleDecision": "Choose target and bait/lure/fly method; match rod, reel, leader, corrosion protection and landing gear",
       "operatorQuestion": "Provided tackle and boat versus bank access",
@@ -9447,13 +9454,19 @@
       "location": "West Branch Delaware River",
       "url": "/north-america/united-states/new-york/west-branch-delaware-river-river-trout-and-grayling/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
-      "sourceIds": [],
+      "indexEligible": true,
+      "sourceIds": [
+        "species-36fdf984a2d2",
+        "species-82f36cc6eef9"
+      ],
       "evidenceDepth": "Production brief; local fishery claims not yet verified",
       "localDecision": "Share the interstate water entity and distinguish release-driven floats from wading plans.",
       "candidateTargets": "Trout candidates",
-      "confirmedTargets": [],
-      "seasonalEvidence": "Dates have not been verified for this opportunity. Before choosing travel dates, resolve: Flow releases, runoff, temperature and local presentation windows.",
+      "confirmedTargets": [
+        "Brown trout",
+        "Rainbow trout"
+      ],
+      "seasonalEvidence": "On the NY/PA boundary reach, the trout rule allows one fish daily from April 1 to October 15. October 16 to March 31 is catch-and-release with artificial lures only. Check separate rules for upstream reaches and avoid heat-stressed trout.",
       "accessToVerify": "Wade, bank or drift by reach",
       "tackleDecision": "Decide dry fly, nymph, streamer or spinning; match line, leader, presentation weight and rod",
       "operatorQuestion": "Guide rods and wading rentals, local flies and permitted access",

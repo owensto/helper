@@ -2839,6 +2839,10 @@
       "label": "Fishery source for Lake Memphremagog / Vermont base",
       "url": "https://www.vtfishandwildlife.com/updated-fishing-regulations-overview"
     },
+    "world-species-df21f272466e": {
+      "label": "Fishery source for Cape Cod / Monomoy",
+      "url": "https://www.fws.gov/locations/monomoy-national-wildlife-refuge/fishing"
+    },
     "world-species-a043189f7151": {
       "label": "Fishery source for Deerfield River",
       "url": "https://www.mass.gov/info-details/gently-sloping-cold-rivers"
@@ -2890,6 +2894,14 @@
     "world-species-043030e04b5e": {
       "label": "Fishery source for Salmon River / Pulaski",
       "url": "https://extapps.dec.ny.gov/docs/fish_marine_pdf/r7salrivpfr.pdf"
+    },
+    "world-species-36fdf984a2d2": {
+      "label": "Fishery source for West Branch Delaware River",
+      "url": "https://content.govdelivery.com/accounts/NYSDEC/bulletins/3e6daa2"
+    },
+    "world-species-82f36cc6eef9": {
+      "label": "Fishery source for West Branch Delaware River",
+      "url": "https://dec.ny.gov/things-to-do/freshwater-fishing/regulations/border-waters-special-regulations"
     },
     "world-species-41cd6e043936": {
       "label": "Fishery source for Lake Ontario / Oswego",
@@ -9336,11 +9348,13 @@
     },
     {
       "id": "na-us-wa-011",
-      "name": "Westport, Washington",
+      "name": "Westport Chinook and Coho Salmon",
       "region": "United States",
       "species": [
         "Salmon",
-        "Albacore"
+        "Albacore",
+        "Chinook salmon",
+        "Coho salmon"
       ],
       "styles": [
         "charter"
@@ -9350,7 +9364,7 @@
       "tripProfile": "na-us-wa-011",
       "technicalGear": true,
       "guideUrl": "/north-america/united-states/washington/westport-offshore-offshore-pelagic-fishing/",
-      "seasonNote": "Dates have not been verified for this opportunity. Before choosing travel dates, resolve: Port departure, travel time, sea exposure and target-specific program.",
+      "seasonNote": "WDFW notes later-summer coho opportunities and seasonal Chinook fishing. These are fishery patterns, not open dates. Check current Marine Area 2 rules and emergency changes for the travel date.",
       "seasonWindows": [],
       "tripTypeIds": [],
       "tripStyleIds": [
@@ -9370,7 +9384,9 @@
       "locationSource": "https://www.openstreetmap.org/relation/237415",
       "speciesIds": [
         "salmon",
-        "albacore"
+        "albacore",
+        "chinook-salmon",
+        "coho-salmon"
       ],
       "speciesEvidence": [
         {
@@ -9402,11 +9418,41 @@
           "seasonStatus": "unverified",
           "methods": [],
           "methodStatus": "unverified"
+        },
+        {
+          "speciesId": "chinook-salmon",
+          "commonName": "Chinook salmon",
+          "sourceUrls": [
+            "https://wdfw.wa.gov/fishing/locations/marine-areas/westport-ocean-shores"
+          ],
+          "scopeNotes": [
+            "The agency water profile names this target in the local fishery. Check current rules separately."
+          ],
+          "status": "reviewed-source",
+          "seasons": [],
+          "seasonStatus": "unverified",
+          "methods": [],
+          "methodStatus": "unverified"
+        },
+        {
+          "speciesId": "coho-salmon",
+          "commonName": "Coho salmon",
+          "sourceUrls": [
+            "https://wdfw.wa.gov/fishing/locations/marine-areas/westport-ocean-shores"
+          ],
+          "scopeNotes": [
+            "The agency water profile names this target in the local fishery. Check current rules separately."
+          ],
+          "status": "reviewed-source",
+          "seasons": [],
+          "seasonStatus": "unverified",
+          "methods": [],
+          "methodStatus": "unverified"
         }
       ],
       "speciesReview": {
         "status": "source-linked",
-        "reviewed": "2026-11-10",
+        "reviewed": "2026-11-23",
         "seasonStatus": "unverified",
         "methodStatus": "unverified"
       },
@@ -27289,9 +27335,12 @@
     },
     {
       "id": "na-us-ma-001",
-      "name": "Monomoy",
+      "name": "Monomoy Striped Bass and Bluefish",
       "region": "United States",
-      "species": [],
+      "species": [
+        "Striped bass",
+        "Bluefish"
+      ],
       "styles": [
         "skiff"
       ],
@@ -27300,7 +27349,7 @@
       "tripProfile": "na-us-ma-001",
       "technicalGear": true,
       "guideUrl": "/north-america/united-states/massachusetts/cape-cod-monomoy-inshore-estuary-fishing/",
-      "seasonNote": "Dates have not been verified for this opportunity. Before choosing travel dates, resolve: Tide, salinity, wind, temperature and target movement.",
+      "seasonNote": "Designated surf-fishing areas are open year-round, subject to wildlife closures. Check tides and current species rules; year-round access does not promise fish or permit harvest in every season.",
       "seasonWindows": [],
       "tripTypeIds": [],
       "tripStyleIds": [
@@ -27308,9 +27357,9 @@
         "fly-fishing"
       ],
       "operator": {
-        "name": "Open research and trip questions",
-        "type": "Research pending",
-        "url": "/production/north-america/",
+        "name": "Fishery source for Cape Cod / Monomoy",
+        "type": "Research source",
+        "url": "https://www.fws.gov/locations/monomoy-national-wildlife-refuge/fishing",
         "note": "A research resource, not a booked trip or Atlas operator partnership. Confirm all inclusions and availability independently."
       },
       "coordinates": [
@@ -27319,11 +27368,45 @@
       ],
       "locationPrecision": "place-area",
       "locationSource": "https://www.openstreetmap.org/relation/9241337",
-      "speciesIds": [],
-      "speciesEvidence": [],
+      "speciesIds": [
+        "striped-bass",
+        "bluefish"
+      ],
+      "speciesEvidence": [
+        {
+          "speciesId": "striped-bass",
+          "commonName": "Striped bass",
+          "sourceUrls": [
+            "https://www.fws.gov/locations/monomoy-national-wildlife-refuge/fishing"
+          ],
+          "scopeNotes": [
+            "The agency water profile names this target in the local fishery. Check current rules separately."
+          ],
+          "status": "reviewed-source",
+          "seasons": [],
+          "seasonStatus": "unverified",
+          "methods": [],
+          "methodStatus": "unverified"
+        },
+        {
+          "speciesId": "bluefish",
+          "commonName": "Bluefish",
+          "sourceUrls": [
+            "https://www.fws.gov/locations/monomoy-national-wildlife-refuge/fishing"
+          ],
+          "scopeNotes": [
+            "The agency water profile names this target in the local fishery. Check current rules separately."
+          ],
+          "status": "reviewed-source",
+          "seasons": [],
+          "seasonStatus": "unverified",
+          "methods": [],
+          "methodStatus": "unverified"
+        }
+      ],
       "speciesReview": {
         "status": "unverified",
-        "reviewed": "2026-11-10",
+        "reviewed": "2026-11-23",
         "seasonStatus": "unverified",
         "methodStatus": "unverified"
       },
@@ -28635,7 +28718,10 @@
       "id": "na-us-ny-003",
       "name": "West Branch Delaware",
       "region": "United States",
-      "species": [],
+      "species": [
+        "Brown trout",
+        "Rainbow trout"
+      ],
       "styles": [
         "bank",
         "guidedwade"
@@ -28645,7 +28731,7 @@
       "tripProfile": "na-us-ny-003",
       "technicalGear": true,
       "guideUrl": "/north-america/united-states/new-york/west-branch-delaware-river-river-trout-and-grayling/",
-      "seasonNote": "Dates have not been verified for this opportunity. Before choosing travel dates, resolve: Flow releases, runoff, temperature and local presentation windows.",
+      "seasonNote": "On the NY/PA boundary reach, the trout rule allows one fish daily from April 1 to October 15. October 16 to March 31 is catch-and-release with artificial lures only. Check separate rules for upstream reaches and avoid heat-stressed trout.",
       "seasonWindows": [],
       "tripTypeIds": [],
       "tripStyleIds": [
@@ -28654,9 +28740,9 @@
         "river-fishing"
       ],
       "operator": {
-        "name": "Open research and trip questions",
-        "type": "Research pending",
-        "url": "/production/north-america/",
+        "name": "Fishery source for West Branch Delaware River",
+        "type": "Research source",
+        "url": "https://content.govdelivery.com/accounts/NYSDEC/bulletins/3e6daa2",
         "note": "A research resource, not a booked trip or Atlas operator partnership. Confirm all inclusions and availability independently."
       },
       "coordinates": [
@@ -28665,11 +28751,48 @@
       ],
       "locationPrecision": "place-area",
       "locationSource": "https://www.openstreetmap.org/way/1419381332",
-      "speciesIds": [],
-      "speciesEvidence": [],
+      "speciesIds": [
+        "sea-trout",
+        "rainbow-trout"
+      ],
+      "speciesEvidence": [
+        {
+          "speciesId": "sea-trout",
+          "commonName": "Brown trout",
+          "sourceUrls": [
+            "https://content.govdelivery.com/accounts/NYSDEC/bulletins/3e6daa2",
+            "https://dec.ny.gov/things-to-do/freshwater-fishing/regulations/border-waters-special-regulations"
+          ],
+          "scopeNotes": [
+            "The agency water profile names this target in the local fishery. Check current rules separately.",
+            "Brown trout and sea trout share Salmo trutta. This inland fishery is not a sea-run trout claim."
+          ],
+          "status": "reviewed-source",
+          "seasons": [],
+          "seasonStatus": "unverified",
+          "methods": [],
+          "methodStatus": "unverified"
+        },
+        {
+          "speciesId": "rainbow-trout",
+          "commonName": "Rainbow trout",
+          "sourceUrls": [
+            "https://content.govdelivery.com/accounts/NYSDEC/bulletins/3e6daa2",
+            "https://dec.ny.gov/things-to-do/freshwater-fishing/regulations/border-waters-special-regulations"
+          ],
+          "scopeNotes": [
+            "The agency water profile names this target in the local fishery. Check current rules separately."
+          ],
+          "status": "reviewed-source",
+          "seasons": [],
+          "seasonStatus": "unverified",
+          "methods": [],
+          "methodStatus": "unverified"
+        }
+      ],
       "speciesReview": {
         "status": "unverified",
-        "reviewed": "2026-11-10",
+        "reviewed": "2026-11-23",
         "seasonStatus": "unverified",
         "methodStatus": "unverified"
       },
@@ -136869,7 +136992,7 @@
       },
       {
         "id": "na-us-wa-011",
-        "title": "Westport, Washington: A Day of Offshore Fishing",
+        "title": "Westport Chinook and Coho Salmon: Offshore Trip Plan",
         "place": "Westport offshore",
         "country": "United States",
         "region": "North America",
@@ -136879,7 +137002,9 @@
         "contentTier": "preparation-brief",
         "fish": [
           "Salmon",
-          "Albacore"
+          "Albacore",
+          "Chinook salmon",
+          "Coho salmon"
         ],
         "candidateTargets": "Albacore tuna",
         "tripTypeIds": [],
@@ -140821,7 +140946,7 @@
       },
       {
         "id": "na-us-ma-001",
-        "title": "Monomoy: Shallow-Water Fishing on Cape Cod",
+        "title": "Monomoy Striped Bass and Bluefish: Cape Cod Trip Plan",
         "place": "Cape Cod / Monomoy",
         "country": "United States",
         "region": "North America",
@@ -140829,7 +140954,10 @@
         "subregion": "Northeast",
         "canonicalPath": "/north-america/united-states/massachusetts/cape-cod-monomoy-inshore-estuary-fishing/",
         "contentTier": "preparation-brief",
-        "fish": [],
+        "fish": [
+          "Striped bass",
+          "Bluefish"
+        ],
         "candidateTargets": "Striped bass",
         "tripTypeIds": [],
         "tripTypeNames": [],
@@ -141127,7 +141255,7 @@
       },
       {
         "id": "na-us-ny-003",
-        "title": "West Branch Delaware: Trout by Float or Wade",
+        "title": "West Branch Delaware: Wild Brown and Rainbow Trout",
         "place": "West Branch Delaware River",
         "country": "United States",
         "region": "North America",
@@ -141135,7 +141263,10 @@
         "subregion": "Northeast",
         "canonicalPath": "/north-america/united-states/new-york/west-branch-delaware-river-river-trout-and-grayling/",
         "contentTier": "preparation-brief",
-        "fish": [],
+        "fish": [
+          "Brown trout",
+          "Rainbow trout"
+        ],
         "candidateTargets": "Trout candidates",
         "tripTypeIds": [],
         "tripTypeNames": [],

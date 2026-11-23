@@ -22,7 +22,7 @@ def compile_into(world, trips, root):
     for trip in trips:
         record = research[trip['id']]
         trip['speciesIds'] = [t['speciesId'] for t in record['targets']]
-        trip['fish'] = [by_id[sid]['name'] for sid in trip['speciesIds']]
+        trip['fish'] = [t['commonName'] if t['speciesId'] == 'sea-trout' and t['commonName'].lower() == 'brown trout' else by_id[t['speciesId']]['name'] for t in record['targets']]
         trip['speciesEvidence'] = record['targets']
         trip['speciesReview'] = {k: record[k] for k in ('status', 'reviewed', 'seasonStatus', 'methodStatus')}
         trip['speciesResearchUrls'] = record['researchSourceUrls']
@@ -53,7 +53,7 @@ def planner_data(data, root):
     for d in data['destinations']:
         r = research[d['id']]
         d['speciesIds'] = [t['speciesId'] for t in r['targets']]
-        d['species'] = [by_id[sid]['name'] for sid in d['speciesIds']]
+        d['species'] = [t['commonName'] if t['speciesId'] == 'sea-trout' and t['commonName'].lower() == 'brown trout' else by_id[t['speciesId']]['name'] for t in r['targets']]
         d['speciesEvidence'] = r['targets']
         d['speciesReview'] = {k: r[k] for k in ('status', 'reviewed', 'seasonStatus', 'methodStatus')}
         d['speciesResearchUrls'] = r['researchSourceUrls']
@@ -151,7 +151,7 @@ def install(pages, root, add, trips, data):
             body += '<script type="application/ld+json">' + json.dumps({'@context':'https://schema.org','@type':'FAQPage','mainEntity':[{'@type':'Question','name':q,'acceptedAnswer':{'@type':'Answer','text':a}} for q,a in questions]}).replace('</','<\\/') + '</script>'
         if s['id'] in ('rainbow-trout', 'cutthroat-trout', 'mountain-whitefish'):
             body += '<p class="wrap">For an Idaho trip, check the ' + link('/fishing-licenses/us-idaho/', 'Idaho visitor fishing licence and annual access fee') + ' before you buy.</p>'
-        if s['id'] == 'sauger':
+        if s['id'] in ('sauger', 'channel-catfish'):
             body += '<p class="wrap">Compare trip waters in ' + link('/north-america/canada/manitoba/', 'Manitoba') + ', ' + link('/north-america/canada/saskatchewan/', 'Saskatchewan') + ' and ' + link('/north-america/canada/quebec/', 'Quebec') + ' before you choose a Canadian base.</p>'
         if s['id'] in ('black-drum', 'red-drum', 'sheepshead'):
             comparisons = [('black-drum', 'black drum identification and trip timing'), ('red-drum', 'red drum'), ('sheepshead', 'sheepshead')]
@@ -163,6 +163,9 @@ def install(pages, root, add, trips, data):
         if s['id'] in ('copper-shark', 'dusky-shark', 'blacktip-shark', 'spinner-shark'):
             others = [('copper-shark', 'copper shark'), ('dusky-shark', 'dusky shark'), ('blacktip-shark', 'blacktip shark'), ('spinner-shark', 'spinner shark')]
             body += '<p class="wrap">Compare names and identification sources for ' + ', '.join(link(species_url(sid), name) for sid, name in others if sid != s['id']) + '.</p>'
+        for comparisons in [('alligator-gar', 'longnose-gar', 'spotted-gar', 'shortnose-gar'), ('spotted-bass', 'largemouth-bass', 'smallmouth-bass')]:
+            if s['id'] in comparisons:
+                body += '<p class="wrap">Compare fish names and features: ' + ', '.join(link(species_url(sid), sb[sid]['name']) for sid in comparisons if sid != s['id']) + '.</p>'
         body += '<div class="wrap field-reference field-detail"><article><nav class="field-local-nav" aria-label="Species sections">' + ' · '.join(link('#' + anchor, label) for anchor, label in [('where-to-fish', 'Where to fish'), ('local-names', 'Local names'), ('seasons', 'Seasons'), ('regulations', 'Rules')]) + '</nav>'
         if s['id'] in ('northern-pike', 'lake-trout', 'cisco', 'rainbow-trout', 'yellow-perch', 'brook-trout-group'):
             body += '<p>Compare Canadian waters in ' + link('/north-america/canada/manitoba/', 'Manitoba') + ', ' + link('/north-america/canada/saskatchewan/', 'Saskatchewan') + ' and ' + link('/north-america/canada/quebec/', 'Quebec') + ' before you choose your base.</p>'
@@ -181,7 +184,7 @@ def install(pages, root, add, trips, data):
                 continue
             seen.add(key); aliases.append(a)
         if aliases:
-            body += '<p>A name can refer to different fish in different places.</p><div class="field-table-scroll"><table><thead><tr><th>Name</th><th>Region</th><th>Source</th></tr></thead><tbody>'
+            body += '<p>Check the scientific name: one local name can mean different fish.</p><div class="field-table-scroll"><table><thead><tr><th>Name</th><th>Region</th><th>Source</th></tr></thead><tbody>'
             for a in aliases:
                 body += '<tr><td>' + E(a['name']) + '</td><td>' + E(a['region']) + (' · ' + E(a['language']) if a.get('language') not in (None, 'English') else '') + '</td><td>' + link(a['sourceUrls'][0], 'Reference') + '</td></tr>'
             body += '</tbody></table></div>'
