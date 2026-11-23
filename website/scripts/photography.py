@@ -35,12 +35,14 @@ TRIP_IMAGES = json.loads(TRIP_MANIFEST_PATH.read_text()) if TRIP_MANIFEST_PATH.e
 def trip_srcset(slug, ext):
     return ', '.join(f'/media/trips/{slug}-{w}.{ext} {w}w' for w in (640, 1200, 1600))
 
-def trip_photo(trip, sizes='100vw', eager=False):
+def trip_photo(trip, sizes='100vw', eager=False, card=False):
     slug = trip.get('id')
     image = TRIP_IMAGES.get(slug)
     if not image:
         return photo(water_photo(trip), sizes, eager)
     loading = 'loading="eager" fetchpriority="high"' if eager else 'loading="lazy"'
+    if card:
+        return f'<picture class="scene-picture"><source type="image/avif" srcset="/media/trips/{slug}-640.avif 640w, /media/trips/{slug}-1200.avif 1200w" sizes="{sizes}"><img src="/media/trips/{slug}-640.webp" width="{image["width"]}" height="{image["height"]}" alt="{E(image["alt"], quote=True)}" {loading} decoding="async"></picture>'
     return f'<picture class="scene-picture"><source type="image/avif" srcset="{trip_srcset(slug, "avif")}" sizes="{sizes}"><img src="/media/trips/{slug}-1600.webp" srcset="{trip_srcset(slug, "webp")}" sizes="{sizes}" width="{image["width"]}" height="{image["height"]}" alt="{E(image["alt"], quote=True)}" {loading} decoding="async"></picture>'
 
 def trip_metadata(trip):

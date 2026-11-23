@@ -6580,7 +6580,7 @@
           "url": "https://georgiawildlife.com/licenses-permits-passes/help"
         }
       ],
-      "checked": "2026-11-11",
+      "checked": "2026-11-22",
       "checkOfficial": "Confirm the trout licence price and charter coverage.",
       "contentModified": "2026-11-15",
       "freeDays": {
@@ -6685,7 +6685,7 @@
           "url": "https://dlnr.hawaii.gov/dar/files/2025/01/NRMFL-FAQs.pdf"
         }
       ],
-      "checked": "2026-11-11",
+      "checked": "2026-11-22",
       "checkOfficial": "Confirm freshwater age exemptions before a family trip.",
       "contentModified": "2026-11-15"
     },
@@ -6755,8 +6755,11 @@
         {
           "name": "Depredation Management/Access fee",
           "when": "Added to annual fishing licences.",
-          "price": null,
-          "currency": "USD"
+          "price": 10,
+          "currency": "USD",
+          "withCompare": [
+            "annual"
+          ]
         }
       ],
       "saltwater": null,
@@ -6776,9 +6779,9 @@
           "url": "https://idfg.idaho.gov/sites/default/files/seasons-rules-fishing-2025-2027.pdf"
         }
       ],
-      "checked": "2026-11-11",
-      "checkOfficial": "Confirm the annual access surcharge and guide coverage.",
-      "contentModified": "2026-11-15",
+      "checked": "2026-11-22",
+      "checkOfficial": "Confirm the current water-specific rules and any salmon or steelhead permit before the trip.",
+      "contentModified": "2026-11-22",
       "freeDays": {
         "has": "yes",
         "rule": "The second Saturday in June each year",
@@ -6875,7 +6878,7 @@
           "url": "https://dnr.illinois.gov/content/dam/soi/en/web/dnr/publications/documents/00000924.pdf"
         }
       ],
-      "checked": "2026-11-11",
+      "checked": "2026-11-22",
       "checkOfficial": "Use the authority page to confirm the current online purchase link. Confirm whether a guided trip covers the client's licence.",
       "contentModified": "2026-11-19",
       "freeDays": {
@@ -6966,7 +6969,7 @@
           "url": "https://www.in.gov/nrc/files/LSA24-165_Final-Rule.pdf"
         }
       ],
-      "checked": "2026-11-11",
+      "checked": "2026-11-22",
       "checkOfficial": "Confirm whether a guided trip covers the client's licence.",
       "contentModified": "2026-11-15",
       "freeDays": {

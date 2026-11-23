@@ -27934,7 +27934,110 @@
           "note": "Check the rules for the exact water, date, licence and fish identification. This link does not establish an open season."
         }
       ],
-      "referenceRole": "game fish"
+      "referenceRole": "game fish",
+      "searchAnswer": {
+        "title": "Black drum fish: identification, size and trip timing",
+        "description": "Identify black drum by their chin barbels. Compare puppy and bull drum, check regional spawning months, and plan a coastal trip with agency sources.",
+        "answer": "Black drum (Pogonias cromis) are coastal fish with a high back and whisker-like barbels beneath the chin. Young fish have dark vertical bars that fade with age. For a trip, look for bays, oyster beds and bridge pilings. Check the local season and licence before you choose your dates.",
+        "question": "How do you identify a black drum fish?",
+        "facts": [
+          [
+            "Scientific name",
+            "Pogonias cromis (Texas Parks and Wildlife)."
+          ],
+          [
+            "Other names",
+            "Drum and tambour (Louisiana Sea Grant); Texas drum and sea drum (TPWD)."
+          ],
+          [
+            "Best identification check",
+            "Chin barbels. Red drum and sheepshead lack these barbels (FWC)."
+          ],
+          [
+            "Small fish",
+            "Louisiana Sea Grant calls common 1–10 lb fish “puppy drum”."
+          ],
+          [
+            "Large fish",
+            "TPWD describes many bull drum catches at 30–40 lb. These are not promised catch sizes."
+          ],
+          [
+            "Maximum length",
+            "FWC lists up to 67 inches. This is a species maximum, not a legal size limit."
+          ],
+          [
+            "Trip habitat",
+            "Bays, river mouths, lagoons and bottom structure such as oyster beds, docks and bridge pilings (FWC)."
+          ]
+        ],
+        "sections": [
+          {
+            "question": "When should you plan a black drum trip?",
+            "answer": "Choose the region before the month. Texas Parks and Wildlife describes large drum schools before spawning and February–March catches around deeper bays, channels and jetties. Louisiana Sea Grant gives a January–April spawning window. These are regional life-cycle patterns, not open-season dates or a guarantee that fish will bite.",
+            "source": "https://tpwd.texas.gov/huntwild/wild/species/blackdrum/"
+          },
+          {
+            "question": "How do black drum change as they grow?",
+            "answer": "Young black drum have dark bars that disappear as the fish grows. Texas Parks and Wildlife describes lengths of about 6 inches after one year, 12 after two and 16 after three. Colour also varies with the water. Use the chin barbels as well as colour when you identify a fish.",
+            "source": "https://tpwd.texas.gov/huntwild/wild/species/blackdrum/"
+          },
+          {
+            "question": "What bait and access should a visitor consider?",
+            "answer": "North Carolina DEQ describes black drum trips from banks, surf and anchored boats. Its bait examples include shrimp, cut fish, clams and pieces of crab. Pick a lawful access point before the drive. Then check local bait rules, the tide and the current forecast for that specific water.",
+            "source": "https://www.deq.nc.gov/about/divisions/marine-fisheries/public-information-and-education/species-profiles/black-drum"
+          },
+          {
+            "question": "What do black drum eat?",
+            "answer": "Black drum feed along the bottom. Their chin barbels help them find food, and strong teeth in the throat crush shells. North Carolina DEQ lists clams, mussels, oysters and crabs among their foods. This explains why a bottom presentation matters more than a bait that drifts high above the fish.",
+            "source": "https://www.deq.nc.gov/about/divisions/marine-fisheries/public-information-and-education/species-profiles/black-drum"
+          }
+        ],
+        "faq": [
+          [
+            "Are black drum and red drum the same fish?",
+            "No. They are related fish. Black drum have chin barbels; red drum lack them. Compare both species before you apply a size limit."
+          ],
+          [
+            "How can I tell a young black drum from a sheepshead?",
+            "Both can have dark bars. Check under the chin: FWC identifies barbels on black drum, but not on sheepshead."
+          ],
+          [
+            "How big is a puppy drum?",
+            "Louisiana Sea Grant uses “puppy drum” for commonly caught black drum of 1–10 lb. The nickname is not a legal size category."
+          ],
+          [
+            "Is black drum good to eat?",
+            "Louisiana Sea Grant rates smaller black drum more highly for food and describes larger fish as coarser. Check local consumption advice and harvest rules before keeping a fish."
+          ],
+          [
+            "What is the legal size for black drum?",
+            "The rule depends on the state and water. Use the official fisheries links below for your destination; a species maximum is not a keeper limit."
+          ],
+          [
+            "Do I need a licence for a black drum trip?",
+            "Check the licence rules for your chosen state, access point and trip type. A bank trip and a charter can have different licence requirements."
+          ]
+        ],
+        "sources": [
+          [
+            "Florida FWC: black drum identification and habitat",
+            "https://myfwc.com/wildlifehabitats/profiles/saltwater/drums/black-drum/"
+          ],
+          [
+            "Texas Parks and Wildlife: black drum life history",
+            "https://tpwd.texas.gov/huntwild/wild/species/blackdrum/"
+          ],
+          [
+            "North Carolina DEQ: black drum trip methods",
+            "https://www.deq.nc.gov/about/divisions/marine-fisheries/public-information-and-education/species-profiles/black-drum"
+          ],
+          [
+            "Louisiana Sea Grant: black drum names and size",
+            "https://www.seagrantfish.lsu.edu/biological/drum/blackdrum.htm"
+          ]
+        ],
+        "updated": "2026-11-22"
+      }
     },
     {
       "id": "black-grouper",

@@ -149,6 +149,13 @@ def install(pages, root, add, trips, data):
             ]
             body += '<section><h2>What else should a first-time bass angler know?</h2>' + ''.join('<details><summary>' + E(q) + '</summary><p>' + E(a) + '</p></details>' for q, a in questions) + '</section><details><summary>Sources (2)</summary><ul><li>' + link('https://www.dnr.state.mn.us/gofishing/how-catch-largemouth-bass.html', 'Minnesota DNR: where and how to catch largemouth bass') + '</li><li>' + link('https://www.dnr.state.mn.us/minnaqua/speciesprofile/largemouthbass.html', 'Minnesota DNR: shore access and beginner bait') + '</li></ul><p class="small">Checked November 2026</p></details><p>' + link('/environments/lakes-reservoirs/', 'Choose a lake trip') + ' · ' + link('/atlas/', 'Find a water on the map') + ' · ' + link('/fishing-licenses/', 'Check the licence') + '</p></div>'
             body += '<script type="application/ld+json">' + json.dumps({'@context':'https://schema.org','@type':'FAQPage','mainEntity':[{'@type':'Question','name':q,'acceptedAnswer':{'@type':'Answer','text':a}} for q,a in questions]}).replace('</','<\\/') + '</script>'
+        if s['id'] in ('rainbow-trout', 'cutthroat-trout', 'mountain-whitefish'):
+            body += '<p class="wrap">For an Idaho trip, check the ' + link('/fishing-licenses/us-idaho/', 'Idaho visitor fishing licence and annual access fee') + ' before you buy.</p>'
+        if s['id'] == 'sauger':
+            body += '<p class="wrap">Compare trip waters in ' + link('/north-america/canada/manitoba/', 'Manitoba') + ', ' + link('/north-america/canada/saskatchewan/', 'Saskatchewan') + ' and ' + link('/north-america/canada/quebec/', 'Quebec') + ' before you choose a Canadian base.</p>'
+        if s['id'] in ('black-drum', 'red-drum', 'sheepshead'):
+            comparisons = [('black-drum', 'black drum identification and trip timing'), ('red-drum', 'red drum'), ('sheepshead', 'sheepshead')]
+            body += '<p class="wrap">Compare ' + ', '.join(link(species_url(sid), name) for sid, name in comparisons if sid != s['id']) + ' before you apply local catch rules.</p>'
         if s['id'] in ('cisco', 'rainbow-trout'):
             body += '<p class="wrap">Compare ' + link('/species/lake-trout/', 'lake trout identification and seasonal habitat') + ' before you choose a cold-water trip.</p>'
         if s['id'] == 'lake-trout-group':
@@ -224,7 +231,7 @@ def install(pages, root, add, trips, data):
     choices = ['Global', 'Alaska', 'North America', 'South America', 'United Kingdom', 'Europe', 'Africa', 'Asia', 'Australia', 'Oceania']
     body = heading('Glossary', 'Speak the water.', 'A name makes sense when you know the place.')
     body += '<p class="wrap">Identify ' + link('/species/common-carp/', 'common carp by their mouth and fins') + ', learn what ' + link('/species/coarse-fish/', 'coarse fishing') + ' means, or use the scientific name to identify ' + link('/species/milkfish/', 'milkfish, Chanos chanos') + '.</p>'
-    body += '<section class="wrap field-reference"><div class="field-filter"><label for="glossary-search">Find a word used on the water<input id="glossary-search" type="search" placeholder="Try yelloweye, mooching, boilie or barra" autocomplete="off"></label><label for="glossary-region">Region<select id="glossary-region"><option value="">All regions</option>' + ''.join('<option>' + E(r) + '</option>' for r in choices) + '</select></label></div><p id="glossary-count" role="status" aria-live="polite">' + str(len(terms)) + ' fishing terms</p><nav class="field-alphabet" aria-label="Glossary A to Z">'
+    body += '<section class="wrap field-reference"><div class="field-filter"><label for="glossary-search">Find a fish name or fishing term<input id="glossary-search" type="search" placeholder="Try yelloweye, mooching, boilie or barra" autocomplete="off"></label><label for="glossary-region">Region<select id="glossary-region"><option value="">All regions</option>' + ''.join('<option>' + E(r) + '</option>' for r in choices) + '</select></label></div><p id="glossary-count" role="status" aria-live="polite">' + str(len(terms)) + ' fishing terms</p><nav class="field-alphabet" aria-label="Glossary A to Z">'
     letters = sorted({t['term'][0].upper() if t['term'][0].isascii() and t['term'][0].isalpha() else '#' for t in terms})
     body += ''.join(link('#letter-' + ('other' if c == '#' else c), c) for c in letters) + '</nav>'
     for letter in letters:
@@ -246,7 +253,7 @@ def install(pages, root, add, trips, data):
                 body += '<details><summary>Sources</summary>' + source_links(entry['sourceUrls']) + '</details></dd>'
             body += '</div>'
         body += '</dl></section>'
-    body += '<p id="glossary-empty" hidden>No matching word. Try a fish name or choose another region.</p></section>' + assets
+    body += '<p id="glossary-empty" hidden>No term found. Try a fish name or another region.</p></section>' + assets
     add('/glossary/', 'World fishing glossary: local fish names, methods and gear | Castward', 'Search ' + str(len(terms)) + ' fishing terms by name and region, including rockfish, yelloweye, lingcod, carp tackle and barra fishing.', body, 'glossary')
 
     for d in destinations:
