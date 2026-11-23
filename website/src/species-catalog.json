@@ -189750,7 +189750,135 @@
           "note": "Check the rules for the exact water, date, licence and fish identification. This link does not establish an open season."
         }
       ],
-      "referenceRole": "game fish"
+      "referenceRole": "game fish",
+      "searchAnswer": {
+        "title": "Scup (porgy): size, range and catch limits",
+        "description": "Scup, or porgy, reach about 20 inches and 4 pounds. See the range, the summer inshore run, the federal 10-inch and 40-fish limits, and the sources.",
+        "question": "How big do scup get, and where do they live?",
+        "answer": "Scup (Stenotomus chrysops), also called porgy, live in the Northwest Atlantic, mainly from Cape Cod to Cape Hatteras. NOAA Fisheries lists a top size of about 20 inches and 4 pounds. They move inshore in spring and offshore by December. In federal waters you may keep 40 fish of 10 inches or more; state rules differ.",
+        "facts": [
+          [
+            "Scientific name",
+            "Stenotomus chrysops"
+          ],
+          [
+            "Other names",
+            "Porgy, northern porgy, golden sea bream, maiden, fair maid, ironsides (NOAA Fisheries)"
+          ],
+          [
+            "Maximum size",
+            "About 20 inches and 4 pounds (NOAA Fisheries); FishBase records 46 cm and 2.1 kg"
+          ],
+          [
+            "Common length",
+            "25 cm, about 10 inches (FishBase)"
+          ],
+          [
+            "Lifespan",
+            "Up to about 20 years (NOAA Fisheries)"
+          ],
+          [
+            "Maturity",
+            "Age 2, at about 8 inches (NOAA Fisheries)"
+          ],
+          [
+            "Range",
+            "Northwest Atlantic, mainly Cape Cod, Massachusetts, to Cape Hatteras, North Carolina (NOAA Fisheries)"
+          ],
+          [
+            "Spawning",
+            "May through August, with a peak in June, from Massachusetts Bay to the New York Bight (NOAA Fisheries)"
+          ],
+          [
+            "Food",
+            "Bottom invertebrates; FishBase lists amphipods, worms, sand dollars and young squid"
+          ],
+          [
+            "Stock status",
+            "Atlantic coast stock not overfished, no overfishing (2025 assessment, NOAA Fisheries)"
+          ],
+          [
+            "Federal recreational limit",
+            "40 fish per person, 10-inch minimum, open January 1 to December 31 (NOAA Fisheries)"
+          ]
+        ],
+        "sections": [
+          {
+            "question": "Are scup and porgy the same fish?",
+            "answer": "Yes. NOAA Fisheries lists porgy and northern porgy as other names for scup, with golden sea bream, maiden, fair maid and ironsides. The longspine porgy is a different fish that looks similar; NOAA separates it by the long spines on its back.",
+            "source": "https://www.fisheries.noaa.gov/species/scup"
+          },
+          {
+            "question": "How do you identify a scup?",
+            "answer": "Look for a deep body, deeper from back to belly than it is wide. NOAA Fisheries describes a dusky brown fish with bright silver below and spiny fins. Adult fins have dark brown mottling. The front teeth are narrow, and the upper jaw has two rows of molars for crushing shells.",
+            "source": "https://www.fisheries.noaa.gov/species/scup"
+          },
+          {
+            "question": "When do scup come inshore?",
+            "answer": "NOAA Fisheries describes a spring move north and inshore to coastal waters and bays, where scup spawn from May through August. In summer and early fall they hold over large estuaries, open sand, mussel beds, reefs and rock rubble. They leave in autumn as the water cools and reach offshore wintering areas by December.",
+            "source": "https://www.fisheries.noaa.gov/species/scup"
+          },
+          {
+            "question": "What are the scup size and bag limits?",
+            "answer": "In federal waters NOAA Fisheries sets a 10-inch minimum size and a 40-fish possession limit per person, with the season open all year. State waters have their own sizes, bags and seasons, and managers set them each year. Massachusetts, Rhode Island, Connecticut and New York set theirs as one northern region. Check your state agency before you keep a fish.",
+            "source": "https://www.fisheries.noaa.gov/species/scup/recreational"
+          },
+          {
+            "question": "Is the scup population healthy?",
+            "answer": "Yes, on the Atlantic coast. The 2025 assessment found the stock not overfished, with no overfishing. The Atlantic States Marine Fisheries Commission reports spawning stock biomass at more than three times its target. NOAA records 11 million pounds landed by recreational anglers in 2024, mostly in New York, Connecticut and Rhode Island.",
+            "source": "https://asmfc.org/species/scup"
+          }
+        ],
+        "faq": [
+          [
+            "How big do scup get?",
+            "NOAA Fisheries lists about 20 inches and 4 pounds as the top size. FishBase gives a common length of 25 cm, about 10 inches, so most fish you catch are much smaller than the maximum."
+          ],
+          [
+            "Is a scup a porgy?",
+            "Yes. Porgy is the usual name for scup from New York south. NOAA Fisheries lists porgy and northern porgy as other names for Stenotomus chrysops."
+          ],
+          [
+            "Where can you catch scup?",
+            "The main range runs from Cape Cod to Cape Hatteras. NOAA names New York, Connecticut and Rhode Island as the top three states for recreational landings."
+          ],
+          [
+            "What is the size limit for scup?",
+            "The federal minimum is 10 inches, with 40 fish per person. State limits differ and change each year, so check the state agency for the water you fish."
+          ],
+          [
+            "When is the best season for scup?",
+            "Scup are inshore from spring to early fall. NOAA Fisheries describes them in estuaries and over reefs, mussel beds and sand in summer, then offshore by December."
+          ],
+          [
+            "What do scup eat?",
+            "They browse the bottom for invertebrates and crush shelled animals with their molars. FishBase lists amphipods, worms, sand dollars and young squid."
+          ],
+          [
+            "How long do scup live?",
+            "Up to about 20 years, according to NOAA Fisheries. They can spawn from age 2, at about 8 inches."
+          ]
+        ],
+        "sources": [
+          [
+            "NOAA Fisheries: scup species profile",
+            "https://www.fisheries.noaa.gov/species/scup"
+          ],
+          [
+            "NOAA Fisheries: scup recreational fishing regulations",
+            "https://www.fisheries.noaa.gov/species/scup/recreational"
+          ],
+          [
+            "Atlantic States Marine Fisheries Commission: scup",
+            "https://asmfc.org/species/scup"
+          ],
+          [
+            "FishBase: Stenotomus chrysops",
+            "https://www.fishbase.se/summary/452"
+          ]
+        ],
+        "updated": "2026-11-23"
+      }
     },
     {
       "id": "sea-trout",
