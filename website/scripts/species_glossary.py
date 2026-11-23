@@ -34,7 +34,7 @@ def compile_into(world, trips, root):
                 world['sources'].setdefault(sid, {
                     'title': 'Fishery source for ' + record['place'], 'url': url,
                     'type': 'species-reference', 'status': target['status'],
-                    'checked': '2026-11-10', 'scopeNote': 'Supports the attributed target. Exact access, method and legal season need a separate check.',
+                    'checked': record['reviewed'], 'scopeNote': 'Supports the attributed target. Exact access, method and legal season need a separate check.',
                 })
                 if sid not in trip['sourceIds']:
                     trip['sourceIds'].append(sid)

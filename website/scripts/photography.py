@@ -16,6 +16,7 @@ def photo(key, sizes='100vw', eager=False):
     mobile=(f'<source media="(max-width: 600px)" type="image/avif" srcset="{srcset("hero-mobile",".avif")}" sizes="100vw"><source media="(max-width: 600px)" srcset="{srcset("hero-mobile",".webp")}" sizes="100vw">' if key=='hero' else '')
     return f'<picture class="scene-picture">{mobile}<source type="image/avif" srcset="{srcset(key,".avif")}" sizes="{sizes}"><img src="/media/scenes/{Path(p["file"]).name}" srcset="{srcset(key,".webp")}" sizes="{sizes}" width="{p["width"]}" height="{p["height"]}" alt="{E(p["alt"],quote=True)}" {loading} decoding="async"></picture>'
 def water_photo(t):
+    if t.get('planId')=='US-MA-001':return 'surf-beach'
     if t.get('planId')=='US-NC-002':return 'mountain-river'
     if t.get('planId')=='US-GA-002':return 'reservoir'
     if t.get('planId')=='US-FL-001':return 'tropical-flats'
