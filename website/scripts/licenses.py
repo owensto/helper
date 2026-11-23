@@ -201,7 +201,7 @@ def price_text(o):
 
 
 def cheapest(r):
-    priced = [o for o in r.get('options', []) if o.get('who') != 'resident' and o.get('price')]
+    priced = [o for o in r.get('options', []) if o.get('who') != 'resident' and o.get('price') and not o.get('supplementOnly')]
     return min(priced, key=lambda o: o['price']) if priced else None
 
 

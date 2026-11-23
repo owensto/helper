@@ -6536,7 +6536,8 @@
           "duration": "Per additional day",
           "price": 3.5,
           "currency": "USD",
-          "water": "both"
+          "water": "both",
+          "supplementOnly": true
         },
         {
           "name": "Non-resident annual",
@@ -6724,7 +6725,8 @@
           "duration": "Per consecutive day bought at the same time",
           "price": 7,
           "currency": "USD",
-          "water": "freshwater"
+          "water": "freshwater",
+          "supplementOnly": true
         },
         {
           "name": "Non-resident annual adult",
@@ -8318,7 +8320,8 @@
           "duration": "1 additional consecutive day",
           "price": 7,
           "currency": "USD",
-          "water": "freshwater"
+          "water": "freshwater",
+          "supplementOnly": true
         },
         {
           "name": "Non-resident adult annual",

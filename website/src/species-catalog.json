@@ -27936,14 +27936,18 @@
       ],
       "referenceRole": "game fish",
       "searchAnswer": {
-        "title": "Black drum fish: identification, size and trip timing",
-        "description": "Identify black drum by their chin barbels. Compare puppy and bull drum, check regional spawning months, and plan a coastal trip with agency sources.",
-        "answer": "Black drum (Pogonias cromis) are coastal fish with a high back and whisker-like barbels beneath the chin. Young fish have dark vertical bars that fade with age. For a trip, look for bays, oyster beds and bridge pilings. Check the local season and licence before you choose your dates.",
+        "title": "Black drum fish in Spanish: names, size and trip tips",
+        "description": "Black drum is corvina negra or tambor negro in Spanish. Match Pogonias cromis to its chin barbels, compare sizes, and plan a coastal trip with official sources.",
+        "answer": "The Spanish names for black drum fish are corvina negra and tambor negro. ITIS lists both for Pogonias cromis, and Mexico’s CONABIO uses tambor negro. Look for the whisker-like barbels beneath the chin. Before a coastal trip, match the scientific name to the local rules rather than relying on a translated name alone.",
         "question": "How do you identify a black drum fish?",
         "facts": [
           [
             "Scientific name",
             "Pogonias cromis (Texas Parks and Wildlife)."
+          ],
+          [
+            "Spanish names",
+            "Corvina negra and tambor negro (ITIS); tambor negro is the CONABIO page title."
           ],
           [
             "Other names",
@@ -27971,6 +27975,11 @@
           ]
         ],
         "sections": [
+          {
+            "question": "What is black drum fish called in Spanish?",
+            "answer": "Use corvina negra or tambor negro for Pogonias cromis. ITIS records both Spanish names alongside black drum in English. Mexico’s CONABIO labels the species tambor negro. When you discuss a trip or read a fish list, carry the scientific name with the common name to make the species clear.",
+            "source": "https://itis.gov/servlet/SingleRpt/SingleRpt?search_topic=TSN&search_value=169288"
+          },
           {
             "question": "When should you plan a black drum trip?",
             "answer": "Choose the region before the month. Texas Parks and Wildlife describes large drum schools before spawning and February–March catches around deeper bays, channels and jetties. Louisiana Sea Grant gives a January–April spawning window. These are regional life-cycle patterns, not open-season dates or a guarantee that fish will bite.",
@@ -28034,6 +28043,14 @@
           [
             "Louisiana Sea Grant: black drum names and size",
             "https://www.seagrantfish.lsu.edu/biological/drum/blackdrum.htm"
+          ],
+          [
+            "ITIS: Pogonias cromis and Spanish common names",
+            "https://itis.gov/servlet/SingleRpt/SingleRpt?search_topic=TSN&search_value=169288"
+          ],
+          [
+            "CONABIO Enciclovida: tambor negro",
+            "https://enciclovida.mx/especies/30112"
           ]
         ],
         "updated": "2026-11-22"
