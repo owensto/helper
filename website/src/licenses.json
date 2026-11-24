@@ -112,12 +112,14 @@
       "buyUrl": "https://www2.gov.bc.ca/buy-hunting-fishing-licences",
       "summary": "Visitors aged 16 and older need a provincial freshwater licence. Tidal waters require a separate federal licence at every age.",
       "whoNeedsOne": [
-        "Freshwater anglers aged 16 and older.",
+        "Freshwater anglers aged 16 and older, residents and visitors.",
         "All tidal anglers, including children."
       ],
       "exemptions": [
+        "B.C. residents under 16 need no freshwater licence or stamps and keep their own quota.",
         "Visiting freshwater anglers under 16 can share an accompanying licence holder's quota.",
-        "Children under 16 need a tidal licence, but the basic licence is free.",
+        "Children under 16 need a tidal licence, but the juvenile annual licence is free.",
+        "B.C. resident First Nations individuals eligible under the Indian Act do not need a freshwater licence.",
         "The freshwater Family Fishing Weekend exemption covers Canadian residents on the Father’s Day weekend and preceding Friday. It excludes Classified Waters and retention of species that need a conservation surcharge stamp."
       ],
       "options": [
@@ -192,6 +194,54 @@
           "price": 124.41,
           "currency": "CAD",
           "water": "saltwater"
+        },
+        {
+          "name": "Freshwater B.C. resident annual",
+          "who": "resident",
+          "duration": "April 1 to March 31",
+          "price": 41.15,
+          "currency": "CAD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Freshwater B.C. resident 65+ annual",
+          "who": "resident",
+          "duration": "April 1 to March 31",
+          "price": 5.71,
+          "currency": "CAD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Freshwater B.C. resident 8-day",
+          "who": "resident",
+          "duration": "8 days",
+          "price": 22.86,
+          "currency": "CAD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Freshwater B.C. resident 1-day",
+          "who": "resident",
+          "duration": "1 day",
+          "price": 11.43,
+          "currency": "CAD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Tidal Canadian resident adult annual (16-64)",
+          "who": "resident",
+          "duration": "April 1 to March 31",
+          "price": 25.86,
+          "currency": "CAD",
+          "water": "saltwater"
+        },
+        {
+          "name": "Tidal Canadian resident senior annual (65+)",
+          "who": "resident",
+          "duration": "April 1 to March 31",
+          "price": 13.54,
+          "currency": "CAD",
+          "water": "saltwater"
         }
       ],
       "extras": [
@@ -251,9 +301,39 @@
           "url": "https://www.bclaws.gov.bc.ca/civix/document/id/lc/statreg/10_125_90"
         }
       ],
-      "checked": "2026-11-13",
+      "checked": "2026-11-24",
       "checkOfficial": "Listed freshwater fees and tidal fees exclude applicable taxes. Confirm water-specific restrictions before purchase.",
-      "contentModified": "2026-11-15"
+      "contentModified": "2026-11-24",
+      "faq": [
+        {
+          "q": "Do seniors need a fishing licence in British Columbia?",
+          "a": "Yes. Age 65 does not remove the licence rule. A B.C. resident aged 65 or older buys the freshwater annual licence for 65+ at $5.71 CAD instead of $41.15. In tidal waters, a Canadian resident aged 65 or older buys the senior annual Tidal Waters Sport Fishing licence at $13.54 CAD (adult: $25.86). Non-residents pay the full price at every age: $124.41 CAD for the tidal annual licence. Fees exclude GST."
+        },
+        {
+          "q": "What age do you need a fishing licence in BC?",
+          "a": "In fresh water, you need a licence from age 16. In tidal (salt) water, you need a licence at every age. Anglers aged 16 to 64 pay the adult price and anglers 65 and older can buy the resident senior licence."
+        },
+        {
+          "q": "Do children need a tidal licence in BC?",
+          "a": "Yes. Every angler in tidal waters needs a B.C. Tidal Waters Sport Fishing licence, but the juvenile annual licence for under-16s is free for residents and non-residents. A child who keeps salmon also needs the $7.39 CAD salmon conservation stamp. Juvenile licence holders do not complete an iREC report."
+        },
+        {
+          "q": "Do children need a freshwater fishing licence in BC?",
+          "a": "No, not under 16. B.C. residents under 16 need no licence or stamps and keep their own quota. Visitors under 16 can fish without a licence when a licence holder aged 16 or older is with them, but their fish count toward that holder's quota. To keep their own quota, they buy their own licence."
+        },
+        {
+          "q": "What is the difference between a tidal and a freshwater licence in BC?",
+          "a": "They are two separate licences. The Province of B.C. sells the freshwater (non-tidal) licence through the WILD system. Fisheries and Oceans Canada sells the B.C. Tidal Waters Sport Fishing licence for salt water through the National Recreational Licensing System (NRLS). Neither licence covers the other water, and salmon stamps for tidal and non-tidal water are not interchangeable."
+        },
+        {
+          "q": "How much is a fishing licence in BC?",
+          "a": "Freshwater, B.C. resident: $41.15 CAD a year, $22.86 for 8 days, $11.43 for 1 day. Freshwater visitors: $62.87 a year for Canadian non-residents and $91.44 for non-Canadians. Tidal annual: $25.86 for Canadian resident adults and $124.41 for non-residents (2026/27 fees, before GST)."
+        },
+        {
+          "q": "Can I buy a BC fishing licence online?",
+          "a": "Yes. Buy the freshwater licence online in WILD with your Fish and Wildlife ID, and carry that ID and photo ID while you fish. Buy the tidal licence online in NRLS or from a licence vendor. Exception: non-Canadians who fish for halibut in Areas 121, 23 and 123 must buy the tidal licence from a vendor in Canada."
+        }
+      ]
     },
     {
       "id": "ca-manitoba",
