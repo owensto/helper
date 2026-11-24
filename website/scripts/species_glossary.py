@@ -107,9 +107,17 @@ def install(pages, root, add, trips, data):
 
     for s in species:
         body = heading('Species / ' + s['name'], s['name'], s['scientificName'] or 'A broad fishing name. Confirm the exact species before the trip.')
+        if s['id'] == 'mahi-mahi-group':
+            body += '<p class="wrap">For dorado or common dolphinfish, start with ' + link('/species/mahi-mahi/', 'mahi-mahi identification and trip rules') + '.</p>'
+        if s['id'] == 'peacock-bass':
+            body += '<p class="wrap">Planning a Central American guapote trip? Compare ' + link('/species/rainbow-bass/', 'rainbow bass (Parachromis dovii)') + ' before choosing your water.</p>'
         answer = s.get('searchAnswer')
         if answer:
             body = heading('Species / ' + s['name'], answer['title'], answer['answer'])
+            if s['id'] == 'mahi-mahi':
+                body += '<p class="wrap">Plan the next step: ' + link('/fishing-licenses/us-florida/', 'Florida fishing licences') + ' · ' + link('/guides/best-time-to-fish-florida-keys/', 'Florida Keys trip timing') + ' · ' + link('/species/mahi-mahi-group/', 'Other mahi-mahi name records') + '.</p>'
+            if s['id'] == 'rainbow-bass':
+                body += '<p class="wrap">Compare ' + link('/species/peacock-bass/', 'peacock bass') + ', check the ' + link('/fishing-licenses/cr-national/', 'Costa Rica fishing card') + ', then choose a ' + link('/environments/lakes-reservoirs/', 'lake trip') + '.</p>'
             if s['id'] == 'white-sturgeon':
                 body += '<p class="wrap">Compare ' + link('/species/green-sturgeon/', 'green sturgeon') + ', then check the ' + link('/trip-types/fraser-white-sturgeon/', 'Fraser River catch-and-release trip') + ' and ' + link('/fishing-licenses/ca-british-columbia/', 'British Columbia licence') + '.</p>'
             if s['id'] == 'marlin':
@@ -217,7 +225,7 @@ def install(pages, root, add, trips, data):
         body += '</ul></section><section><h2>Source records</h2>'
         if s['regions']:
             body += '<details><summary>Countries where this fish is recorded</summary><p>' + E(' · '.join(s['regions'])) + '</p><p class="small">A country record does not establish local abundance, fishing access or a legal target.</p></details>'
-        body += source_links(s['sourceUrls']) + '</section></article><aside class="field-aside"><span class="eyebrow">KNOW THE WORDS</span><h2>Local fishing language.</h2><p>Connect the fish to its regional names, methods and equipment.</p>' + link('/glossary/?q=' + s['id'], 'Search the glossary', 'btn outline') + '<p>' + link('/species/', 'All fish species') + '</p></aside></div>' + assets
+        body += source_links(s['sourceUrls']) + '</section></article><aside class="field-aside"><span class="eyebrow">KNOW THE WORDS</span><h2>Local fishing language.</h2><p>Check what anglers call this fish in the place you plan to visit.</p>' + link('/glossary/?q=' + s['id'], 'Search the glossary', 'btn outline') + '<p>' + link('/species/', 'All fish species') + '</p></aside></div>' + assets
         add(species_url(s['id']), s['name'] + ' fishing, local names and destinations | Castward', 'Find ' + s['name'].lower() + ' names, source-linked destinations, seasonal evidence and official fisheries links.', body, 'species-detail')
         if answer:
             pages[species_url(s['id'])].update(title=answer['title'], desc=answer['description'], modified=answer['updated'])

@@ -24232,13 +24232,13 @@
       "status": "source-linked",
       "targets": [
         {
-          "speciesId": "trout",
-          "commonName": "Trout",
+          "speciesId": "rainbow-trout",
+          "commonName": "Rainbow trout",
           "sourceUrls": [
-            "https://www.agfc.com/news/arkansas-wildlife-weekly-fishing-report-317/"
+            "https://www.agfc.com/fishing/where-to-fish/trout-waters/bull-shoals-tailwater/"
           ],
           "scopeNotes": [
-            "The source documents trout in the White River / below Bull Shoals Dam fishery. Check the source for the exact reach or departure area."
+            "AGFC documents this species in the named tailwater. Current retention rules require a separate check."
           ],
           "status": "reviewed-source",
           "seasons": [],
@@ -24247,13 +24247,13 @@
           "methodStatus": "unverified"
         },
         {
-          "speciesId": "walleye",
-          "commonName": "Walleye",
+          "speciesId": "sea-trout",
+          "commonName": "Brown trout",
           "sourceUrls": [
-            "https://www.agfc.com/news/arkansas-wildlife-weekly-fishing-report-299/"
+            "https://www.agfc.com/fishing/where-to-fish/trout-waters/bull-shoals-tailwater/"
           ],
           "scopeNotes": [
-            "The source documents walleye in the White River / below Bull Shoals Dam fishery. Check the source for the exact reach or departure area."
+            "AGFC documents this species in the named tailwater. Current retention rules require a separate check."
           ],
           "status": "reviewed-source",
           "seasons": [],
@@ -24267,27 +24267,13 @@
       "methods": [],
       "methodStatus": "unverified",
       "sourceUrls": [
-        "https://www.agfc.com/news/arkansas-wildlife-weekly-fishing-report-317/",
-        "https://www.agfc.com/news/arkansas-wildlife-weekly-fishing-report-299/"
+        "https://www.agfc.com/fishing/where-to-fish/trout-waters/bull-shoals-tailwater/"
       ],
       "researchSourceUrls": [
-        "https://www.agfc.com/news/arkansas-wildlife-weekly-fishing-report-317/",
-        "https://www.agfc.com/news/arkansas-wildlife-weekly-fishing-report-319/",
-        "https://www.agfc.com/news/arkansas-wildlife-weekly-fishing-report-316/",
-        "https://www.agfc.com/news/arkansas-wildlife-weekly-fishing-report-300/",
-        "https://www.agfc.com/news/arkansas-wildlife-weekly-fishing-report-308/",
-        "https://www.agfc.com/news/arkansas-wildlife-weekly-fishing-report-313/",
-        "https://www.agfc.com/news/arkansas-wildlife-weekly-fishing-report-299/",
-        "https://www.agfc.com/news/arkansas-wildlife-weekly-fishing-report-297/",
-        "https://www.agfc.com/news/arkansas-wildlife-weekly-fishing-report-296/",
-        "https://www.agfc.com/news/arkansas-wildlife-weekly-fishing-report-303/",
-        "https://www.agfc.com/news/arkansas-wildlife-weekly-fishing-report-315/",
-        "https://www.agfc.com/news/arkansas-wildlife-weekly-fishing-report-294/",
-        "https://www.agfc.com/wp-content/uploads/2023/04/Arkansas-Wildlife-Action-Plan.pdf",
-        "https://www.agfc.com/wp-content/uploads/2023/04/07-Fish.pdf"
+        "https://www.agfc.com/fishing/where-to-fish/trout-waters/bull-shoals-tailwater/"
       ],
       "unverifiedCandidates": null,
-      "reviewed": "2026-11-10"
+      "reviewed": "2026-11-24"
     },
     {
       "id": "na-us-ar-002",
@@ -24298,13 +24284,28 @@
       "status": "source-linked",
       "targets": [
         {
-          "speciesId": "trout",
-          "commonName": "Trout",
+          "speciesId": "rainbow-trout",
+          "commonName": "Rainbow trout",
           "sourceUrls": [
-            "https://www.agfc.com/news/arkansas-wildlife-weekly-fishing-report-320/"
+            "https://www.agfc.com/fishing/where-to-fish/trout-waters/greers-ferry-tailwater-little-red-river/"
           ],
           "scopeNotes": [
-            "The source documents trout in the Little Red River fishery. Check the source for the exact reach or departure area."
+            "AGFC documents this species in the named tailwater. Current retention rules require a separate check."
+          ],
+          "status": "reviewed-source",
+          "seasons": [],
+          "seasonStatus": "unverified",
+          "methods": [],
+          "methodStatus": "unverified"
+        },
+        {
+          "speciesId": "sea-trout",
+          "commonName": "Brown trout",
+          "sourceUrls": [
+            "https://www.agfc.com/fishing/where-to-fish/trout-waters/greers-ferry-tailwater-little-red-river/"
+          ],
+          "scopeNotes": [
+            "AGFC documents this species in the named tailwater. Current retention rules require a separate check."
           ],
           "status": "reviewed-source",
           "seasons": [],
@@ -24318,28 +24319,13 @@
       "methods": [],
       "methodStatus": "unverified",
       "sourceUrls": [
-        "https://www.agfc.com/news/arkansas-wildlife-weekly-fishing-report-320/"
+        "https://www.agfc.com/fishing/where-to-fish/trout-waters/greers-ferry-tailwater-little-red-river/"
       ],
       "researchSourceUrls": [
-        "https://www.agfc.com/news/arkansas-wildlife-weekly-fishing-report-320/",
-        "https://www.agfc.com/news/arkansas-wildlife-weekly-fishing-report-317/",
-        "https://www.agfc.com/news/arkansas-wildlife-weekly-fishing-report-319/",
-        "https://www.agfc.com/news/arkansas-wildlife-weekly-fishing-report-316/",
-        "https://www.agfc.com/news/arkansas-wildlife-weekly-fishing-report-290/",
-        "https://www.agfc.com/news/arkansas-wildlife-weekly-fishing-report-312/",
-        "https://www.agfc.com/fishing/where-to-fish/trout-waters/greers-ferry-tailwater-little-red-river/",
-        "https://www.agfc.com/news/arkansas-wildlife-weekly-fishing-report-313/",
-        "https://www.agfc.com/news/arkansas-wildlife-weekly-fishing-report-289/",
-        "https://www.agfc.com/news/arkansas-wildlife-weekly-fishing-report-308/",
-        "https://www.agfc.com/news/arkansas-wildlife-weekly-fishing-report-296/",
-        "https://www.agfc.com/news/arkansas-wildlife-weekly-fishing-report-298/",
-        "https://apps.agfc.com/regulations/pdf/a42aa1e4-55c3-47ee-b321-52a2fc70f139",
-        "https://www.agfc.com/wp-content/uploads/2023/04/11-Mussels.pdf",
-        "https://www.agfc.com/wp-content/uploads/2023/04/Arkansas-Wildlife-Action-Plan.pdf",
-        "https://www.agfc.com/wp-content/uploads/2023/04/07-Fish.pdf"
+        "https://www.agfc.com/fishing/where-to-fish/trout-waters/greers-ferry-tailwater-little-red-river/"
       ],
       "unverifiedCandidates": null,
-      "reviewed": "2026-11-10"
+      "reviewed": "2026-11-24"
     },
     {
       "id": "na-us-ar-003",
@@ -24347,36 +24333,51 @@
       "country": "United States",
       "state": "Arkansas",
       "region": "North America",
-      "status": "unverified",
-      "targets": [],
+      "status": "source-linked",
+      "targets": [
+        {
+          "speciesId": "rainbow-trout",
+          "commonName": "Rainbow trout",
+          "sourceUrls": [
+            "https://www.agfc.com/fishing/where-to-fish/trout-waters/norfork-tailwater/"
+          ],
+          "scopeNotes": [
+            "AGFC documents this species in the named tailwater. Current retention rules require a separate check."
+          ],
+          "status": "reviewed-source",
+          "seasons": [],
+          "seasonStatus": "unverified",
+          "methods": [],
+          "methodStatus": "unverified"
+        },
+        {
+          "speciesId": "sea-trout",
+          "commonName": "Brown trout",
+          "sourceUrls": [
+            "https://www.agfc.com/fishing/where-to-fish/trout-waters/norfork-tailwater/"
+          ],
+          "scopeNotes": [
+            "AGFC documents this species in the named tailwater. Current retention rules require a separate check."
+          ],
+          "status": "reviewed-source",
+          "seasons": [],
+          "seasonStatus": "unverified",
+          "methods": [],
+          "methodStatus": "unverified"
+        }
+      ],
       "seasons": [],
       "seasonStatus": "unverified",
       "methods": [],
       "methodStatus": "unverified",
-      "sourceUrls": [],
+      "sourceUrls": [
+        "https://www.agfc.com/fishing/where-to-fish/trout-waters/norfork-tailwater/"
+      ],
       "researchSourceUrls": [
-        "https://www.agfc.com/news/arkansas-wildlife-weekly-fishing-report-317/",
-        "https://www.agfc.com/fishing/where-to-fish/trout-waters/norfork-tailwater/",
-        "https://www.agfc.com/news/arkansas-wildlife-weekly-fishing-report-316/",
-        "https://www.agfc.com/news/arkansas-wildlife-weekly-fishing-report-287/",
-        "https://www.agfc.com/news/arkansas-wildlife-weekly-fishing-report-314/",
-        "https://www.agfc.com/news/arkansas-wildlife-weekly-fishing-report-313/",
-        "https://www.agfc.com/news/arkansas-wildlife-weekly-fishing-report-297/",
-        "https://www.agfc.com/news/arkansas-wildlife-weekly-fishing-report-309/",
-        "https://www.agfc.com/news/arkansas-wildlife-weekly-fishing-report-305/",
-        "https://www.agfc.com/news/arkansas-wildlife-weekly-fishing-report-302/",
-        "https://www.agfc.com/news/arkansas-wildlife-weekly-fishing-report-165/",
-        "https://www.agfc.com/news/arkansas-wildlife-weekly-fishing-report-38/",
-        "https://apps.agfc.com/regulations/pdf/a42aa1e4-55c3-47ee-b321-52a2fc70f139",
-        "https://www.agfc.com/wp-content/uploads/2023/04/5-Reservoir-Black-Bass-Management-Plan.pdf",
-        "https://www.agfc.com/wp-content/uploads/2023/05/2016_2017_beavercreelsurvey.pdf",
-        "https://www.agfc.com/wp-content/uploads/2024/04/arkansas-handbook-entire.pdf",
-        "https://www.agfc.com/news/arkansas-wildlife-weekly-fishing-report-299/",
-        "https://www.agfc.com/news/arkansas-wildlife-weekly-fishing-report-298/",
-        "https://www.agfc.com/news/arkansas-wildlife-fishing-report-50/"
+        "https://www.agfc.com/fishing/where-to-fish/trout-waters/norfork-tailwater/"
       ],
       "unverifiedCandidates": "Trout candidates",
-      "reviewed": "2026-11-10"
+      "reviewed": "2026-11-24"
     },
     {
       "id": "na-us-ar-004",

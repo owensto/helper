@@ -14142,19 +14142,18 @@
       "location": "White River / below Bull Shoals Dam",
       "url": "/north-america/united-states/arkansas/white-river-below-bull-shoals-dam-river-trout-and-grayling/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
-        "species-28770e01073f",
-        "species-c9ec49e23241"
+        "species-de68edae3c8a"
       ],
       "evidenceDepth": "Production brief; local fishery claims not yet verified",
       "localDecision": "Compare guide boats and bank fishing under generation schedules and clarify supplied tackle.",
       "candidateTargets": "Rainbow / brown trout",
       "confirmedTargets": [
-        "Trout",
-        "Walleye"
+        "Rainbow trout",
+        "Brown trout"
       ],
-      "seasonalEvidence": "Dates have not been verified for this opportunity. Before choosing travel dates, resolve: Flow releases, runoff, temperature and local presentation windows.",
+      "seasonalEvidence": "Plan around dam releases and current reach-specific openings, rather than a promised peak month. AGFC links emergency trout rules from this tailwater profile. Check the current notice, flow and access before each day on the river.",
       "accessToVerify": "Wade, bank or drift by reach",
       "tackleDecision": "Decide dry fly, nymph, streamer or spinning; match line, leader, presentation weight and rod",
       "operatorQuestion": "Guide rods and wading rentals, local flies and permitted access",
@@ -14185,17 +14184,18 @@
       "location": "Little Red River",
       "url": "/north-america/united-states/arkansas/little-red-river-river-trout-and-grayling/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
-        "species-01a56c0cc57b"
+        "species-6fd73cd244a7"
       ],
       "evidenceDepth": "Production brief; local fishery claims not yet verified",
       "localDecision": "Research releases, public access and a realistic beginner outing in the named reach.",
       "candidateTargets": "Brown / rainbow trout",
       "confirmedTargets": [
-        "Trout"
+        "Rainbow trout",
+        "Brown trout"
       ],
-      "seasonalEvidence": "Dates have not been verified for this opportunity. Before choosing travel dates, resolve: Flow releases, runoff, temperature and local presentation windows.",
+      "seasonalEvidence": "Plan around dam releases and current reach-specific openings, rather than a promised peak month. AGFC links emergency trout rules from this tailwater profile. Check the current notice, flow and access before each day on the river.",
       "accessToVerify": "Wade, bank or drift by reach",
       "tackleDecision": "Decide dry fly, nymph, streamer or spinning; match line, leader, presentation weight and rod",
       "operatorQuestion": "Guide rods and wading rentals, local flies and permitted access",
@@ -14226,13 +14226,18 @@
       "location": "Norfork River",
       "url": "/north-america/united-states/arkansas/norfork-river-river-trout-and-grayling/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
-      "sourceIds": [],
+      "indexEligible": true,
+      "sourceIds": [
+        "species-945fa8ecfbd1"
+      ],
       "evidenceDepth": "Production brief; local fishery claims not yet verified",
       "localDecision": "Distinguish this short tailwater from Norfork Lake and identify flow-sensitive access.",
       "candidateTargets": "Trout candidates",
-      "confirmedTargets": [],
-      "seasonalEvidence": "Dates have not been verified for this opportunity. Before choosing travel dates, resolve: Flow releases, runoff, temperature and local presentation windows.",
+      "confirmedTargets": [
+        "Rainbow trout",
+        "Brown trout"
+      ],
+      "seasonalEvidence": "Plan around dam releases and current reach-specific openings, rather than a promised peak month. AGFC links emergency trout rules from this tailwater profile. Check the current notice, flow and access before each day on the river.",
       "accessToVerify": "Wade, bank or drift by reach",
       "tackleDecision": "Decide dry fly, nymph, streamer or spinning; match line, leader, presentation weight and rod",
       "operatorQuestion": "Guide rods and wading rentals, local flies and permitted access",

@@ -4750,43 +4750,41 @@
   {
     "id": "na-us-ar-001",
     "place": "White River / below Bull Shoals Dam",
-    "eligible": false,
+    "eligible": true,
     "verifiedSpeciesIds": [
-      "walleye"
+      "rainbow-trout",
+      "sea-trout"
     ],
-    "descriptionWords": 0,
+    "descriptionWords": 167,
     "seasonSection": true,
     "canonicalPath": "/north-america/united-states/arkansas/white-river-below-bull-shoals-dam-river-trout-and-grayling/",
-    "reasons": [
-      "Only 1 verified individual target species with source links; at least 2 required",
-      "Water-specific description has 0 words; at least 120 required"
-    ]
+    "reasons": []
   },
   {
     "id": "na-us-ar-002",
     "place": "Little Red River",
-    "eligible": false,
-    "verifiedSpeciesIds": [],
-    "descriptionWords": 0,
+    "eligible": true,
+    "verifiedSpeciesIds": [
+      "rainbow-trout",
+      "sea-trout"
+    ],
+    "descriptionWords": 172,
     "seasonSection": true,
     "canonicalPath": "/north-america/united-states/arkansas/little-red-river-river-trout-and-grayling/",
-    "reasons": [
-      "Only 0 verified individual target species with source links; at least 2 required",
-      "Water-specific description has 0 words; at least 120 required"
-    ]
+    "reasons": []
   },
   {
     "id": "na-us-ar-003",
     "place": "Norfork River",
-    "eligible": false,
-    "verifiedSpeciesIds": [],
-    "descriptionWords": 0,
+    "eligible": true,
+    "verifiedSpeciesIds": [
+      "rainbow-trout",
+      "sea-trout"
+    ],
+    "descriptionWords": 171,
     "seasonSection": true,
     "canonicalPath": "/north-america/united-states/arkansas/norfork-river-river-trout-and-grayling/",
-    "reasons": [
-      "Only 0 verified individual target species with source links; at least 2 required",
-      "Water-specific description has 0 words; at least 120 required"
-    ]
+    "reasons": []
   },
   {
     "id": "na-us-ar-004",

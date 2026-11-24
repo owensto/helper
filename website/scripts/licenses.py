@@ -272,7 +272,7 @@ def jurisdiction_page(r, trips):
     if r.get('extras'):
         rows = ''.join(
             f'<li><b>{E(x["name"])}</b><i>{E(price_text(x))}</i>' + (f'<span>{E(x["when"])}</span>' if x.get('when') else '') + '</li>' for x in r['extras'])
-        body += step(n, 'Extra stamps and permits', f'<ul class="lic-rows">{rows}</ul>')
+        body += step(n, 'Do you need an extra stamp or permit?', f'<ul class="lic-rows">{rows}</ul>')
         n += 1
     how = f'<p>{E(r["howToBuy"])}</p>' if r.get('howToBuy') else f'<p>Use the official {E(name)} site.</p>'
     if r['id'] == 'us-florida':

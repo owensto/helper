@@ -139282,7 +139282,123 @@
           "note": "Check the rules for the exact water, date, licence and fish identification. This link does not establish an open season."
         }
       ],
-      "referenceRole": "game fish"
+      "referenceRole": "game fish",
+      "searchAnswer": {
+        "title": "Mahi-mahi (dorado): identification and Florida trip rules",
+        "description": "Mahi-mahi, dorado and dolphinfish are the same fish. Compare male and female features, ocean range and Florida limits before an offshore trip.",
+        "question": "What should you know before a mahi-mahi trip?",
+        "answer": "Mahi-mahi is Coryphaena hippurus, the saltwater fish also called dorado, dolphin or dolphinfish. It is not a marine mammal. Look for a long dorsal fin and blue-green and gold colours. Before an offshore trip, check the fishing area: Florida Atlantic and Gulf state waters have different size and bag limits.",
+        "facts": [
+          [
+            "Names",
+            "Mahi-mahi, dorado, dolphin and dolphinfish; Coryphaena hippurus — NOAA / TPWD"
+          ],
+          [
+            "Average length reference",
+            "About 1 m (3 ft), California Sea Grant; not a catch forecast"
+          ],
+          [
+            "Maximum size reference",
+            "Almost 7 ft and 88 lb, NOAA; not a typical catch or record claim"
+          ],
+          [
+            "Adult head shape",
+            "Male: square forehead; female: rounded forehead — NOAA"
+          ],
+          [
+            "Atlantic range",
+            "Atlantic, Gulf and Caribbean; U.S. catches from Massachusetts to Texas — NOAA"
+          ],
+          [
+            "Florida Atlantic state waters",
+            "20-inch fork-length minimum; private boat: 5 per person or 30 per vessel, whichever is less — FWC"
+          ],
+          [
+            "Florida Gulf state waters",
+            "No minimum size; 10 per person or 60 per vessel, whichever is less — FWC"
+          ],
+          [
+            "Rules checked",
+            "2026-11-24; check the rules for the actual water before departure"
+          ]
+        ],
+        "sections": [
+          {
+            "question": "Are dorado, dolphin and mahi-mahi the same fish?",
+            "answer": "For this saltwater species, yes. Texas Parks and Wildlife uses all three names for the same fish. The word dolphin can also mean a marine mammal, so ask for the scientific name when the context is unclear. A trip description should name the fish, the water and the departure port.",
+            "source": "https://tpwd.texas.gov/fishing/sea-center-texas/flora-fauna-guide/gulf-waters/animals-of-the-gulf-waters/dolphin-fish"
+          },
+          {
+            "question": "How can you tell a male mahi-mahi from a female?",
+            "answer": "NOAA describes a square forehead on adult males and a rounded forehead on females. Both have bright blue-green, gold and silver colouring. Colour fades quickly after harvest, so use body and head shape as well. The related pompano dolphinfish is a different species; colour alone does not separate them.",
+            "source": "https://www.fisheries.noaa.gov/species/atlantic-mahi-mahi"
+          },
+          {
+            "question": "Which Florida mahi-mahi limits apply to a charter?",
+            "answer": "Choose the fishing area before applying a limit. In Atlantic state waters, FWC lists five fish per customer on a for-hire trip and a 20-inch fork-length minimum. Captain and crew cannot retain a bag limit. Gulf state-water limits differ. Ask the captain to confirm any federal-water rules for the route.",
+            "source": "https://myfwc.com/fishing/saltwater/recreational/dolphinfish/"
+          },
+          {
+            "question": "When should you plan a Pacific mahi-mahi trip?",
+            "answer": "California Sea Grant describes year-round catches in its Pacific fishery profile. That broad window does not establish a local peak month or guarantee a boat can sail. For a holiday trip, compare the port, travel month and weather policy before choosing a boat; keep a spare day if possible.",
+            "source": "https://caseagrant.ucsd.edu/seafood-profiles/dorado-mahi-mahi"
+          },
+          {
+            "question": "Is mahi-mahi good to eat, and how should you choose it?",
+            "answer": "California Sea Grant describes firm, moist flesh and a mild flavour. Its seafood profile also separates the fishery and harvest method when discussing environmental concerns. Check where the fish came from instead of treating every mahi-mahi fishery alike. For a fishing trip, arrange cold storage before you decide to retain a legal catch.",
+            "source": "https://caseagrant.ucsd.edu/seafood-profiles/dorado-mahi-mahi"
+          }
+        ],
+        "faq": [
+          [
+            "Is mahi-mahi a dolphin mammal?",
+            "No. Dolphinfish is a fish; the shared common name causes the confusion."
+          ],
+          [
+            "Is dorado always this species?",
+            "Use Coryphaena hippurus for the saltwater fish on this page. A common name alone is not enough to identify a fish."
+          ],
+          [
+            "How large do mahi-mahi grow?",
+            "NOAA gives a maximum of almost 7 feet and 88 pounds. That maximum does not describe an average charter catch."
+          ],
+          [
+            "Is the Florida limit the same on both coasts?",
+            "No. The table separates Atlantic and Gulf state waters. Check federal waters separately."
+          ],
+          [
+            "Can the captain keep an extra Florida bag limit?",
+            "FWC prohibits captain and crew from retaining a bag limit."
+          ],
+          [
+            "Does year-round availability guarantee a trip can sail?",
+            "No. Check the weather, local conditions and current rules for your port and travel dates."
+          ]
+        ],
+        "sources": [
+          [
+            "NOAA: Atlantic identity and size",
+            "https://www.fisheries.noaa.gov/species/atlantic-mahi-mahi"
+          ],
+          [
+            "NOAA: Pacific trip timing",
+            "https://www.fisheries.noaa.gov/species/pacific-mahimahi"
+          ],
+          [
+            "FWC: current Florida state-water limits",
+            "https://myfwc.com/fishing/saltwater/recreational/dolphinfish/"
+          ],
+          [
+            "California Sea Grant: size and seafood",
+            "https://caseagrant.ucsd.edu/seafood-profiles/dorado-mahi-mahi"
+          ],
+          [
+            "TPWD: dolphin fish names",
+            "https://tpwd.texas.gov/fishing/sea-center-texas/flora-fauna-guide/gulf-waters/animals-of-the-gulf-waters/dolphin-fish"
+          ]
+        ],
+        "updated": "2026-11-24"
+      }
     },
     {
       "id": "mahi-mahi-group",
@@ -173022,7 +173138,123 @@
           "note": "Identify the exact species before checking local rules."
         }
       ],
-      "referenceRole": "Broad name; species identification required"
+      "referenceRole": "Broad name; species identification required",
+      "searchAnswer": {
+        "title": "Rainbow bass (guapote): identity, size and trip checks",
+        "description": "Identify rainbow bass, Parachromis dovii, before a Central America trip. Compare guapote, peacock bass and the marine rainbow basslet, with sources.",
+        "question": "Which fish does rainbow bass mean?",
+        "answer": "For a Central American freshwater trip, rainbow bass means Parachromis dovii, a cichlid also called guapote or guapote lagunero. It is different from peacock bass and the marine rainbow basslet. Confirm the scientific name and water before booking: the same English name can point to a very different fish and trip.",
+        "facts": [
+          [
+            "Freshwater rainbow bass",
+            "Parachromis dovii; family Cichlidae — FishBase"
+          ],
+          [
+            "Local names",
+            "Guapote lagunero, guapote azul and guapote morrudo — CRAFF-ACPM"
+          ],
+          [
+            "Published maximum",
+            "72 cm total length; 6.8 kg maximum published weight — FishBase"
+          ],
+          [
+            "Freshwater habitat",
+            "Lakes and lower or middle river valleys — FishBase"
+          ],
+          [
+            "Native range",
+            "Central America, from named Honduras rivers to named Costa Rica rivers — FishBase"
+          ],
+          [
+            "Marine name collision",
+            "Liopropoma fasciatum, rainbow basslet: rocky and coral reefs; to 26.5 cm — Smithsonian"
+          ],
+          [
+            "Current local bag limit",
+            "Not stated in these species profiles; check the authority for the exact water"
+          ],
+          [
+            "Source check",
+            "2026-11-24"
+          ]
+        ],
+        "sections": [
+          {
+            "question": "Is rainbow bass the same as peacock bass?",
+            "answer": "No. This page covers Parachromis dovii. CRAFF-ACPM identifies it as guapote lagunero and rainbow bass. Do not choose a destination from the English word bass alone. Ask the operator to write the scientific name in the trip details, then match it to the species and water you want to fish.",
+            "source": "https://www.craff-acpm.org/guapote-lagunero"
+          },
+          {
+            "question": "Can rainbow bass also mean a saltwater fish?",
+            "answer": "Yes. The Smithsonian uses rainbow bass and rainbow basslet for Liopropoma fasciatum, a marine reef fish. Its profile lists a maximum length of 26.5 cm and a range from the central Gulf of California to Ecuador and several offshore islands. That is not the freshwater guapote described on this page.",
+            "source": "https://biogeodb.stri.si.edu/sftep/en/thefishes/species/1140"
+          },
+          {
+            "question": "How big do freshwater rainbow bass get?",
+            "answer": "FishBase lists 72 cm total length and 6.8 kg as published maxima for Parachromis dovii. Those values are size references, not an expected catch. For a trip, ask about the water and method before comparing trophy claims. Keep a maximum-size figure separate from an independently confirmed current world record.",
+            "source": "https://www.fishbase.se/summary/Parachromis-dovii.html"
+          },
+          {
+            "question": "What must you check before a Costa Rica fishing trip?",
+            "answer": "INCOPESCA states that people who fish in marine or inland waters must carry the appropriate fishing card. Check the card category and dates before departure. Ask who arranges your card, whether the planned water needs separate permission, and what happens if conditions change. Do not assume the boat price includes every permission.",
+            "source": "https://incopesca.go.cr/acerca_incopesca/transparencia_institucional/servicios_tramites/carnes.aspx"
+          },
+          {
+            "question": "Are rainbow bass good to eat?",
+            "answer": "FishBase records food use of Parachromis dovii, including fillets and baked fish. That does not establish permission to keep one from a particular lake. Before you retain a fish, check the local rule and any water-specific consumption advice. Tell the operator beforehand if you prefer to release your catch.",
+            "source": "https://www.fishbase.se/summary/Parachromis-dovii.html"
+          }
+        ],
+        "faq": [
+          [
+            "What is the scientific name of guapote lagunero?",
+            "Parachromis dovii. CRAFF-ACPM lists rainbow bass among its English names."
+          ],
+          [
+            "Is rainbow bass a cichlid?",
+            "Yes. FishBase places Parachromis dovii in the cichlid family."
+          ],
+          [
+            "Does it live in freshwater?",
+            "Parachromis dovii lives in freshwater. The marine rainbow basslet is a different fish."
+          ],
+          [
+            "Is 6.8 kg an average catch?",
+            "No. FishBase lists that figure as a maximum published weight."
+          ],
+          [
+            "Is there one legal size across Central America?",
+            "The species sources do not state one. Use the rules for the country and exact water."
+          ],
+          [
+            "What month should I book?",
+            "These sources do not give one fishing peak for every water. Choose the water first and check local conditions for your travel month."
+          ]
+        ],
+        "sources": [
+          [
+            "FishBase: Parachromis dovii",
+            "https://www.fishbase.se/summary/Parachromis-dovii.html"
+          ],
+          [
+            "CRAFF-ACPM: regional names",
+            "https://www.craff-acpm.org/guapote-lagunero"
+          ],
+          [
+            "Smithsonian: marine rainbow basslet",
+            "https://biogeodb.stri.si.edu/sftep/en/thefishes/species/1140"
+          ],
+          [
+            "INCOPESCA: fishing cards",
+            "https://incopesca.go.cr/acerca_incopesca/transparencia_institucional/servicios_tramites/carnes.aspx"
+          ],
+          [
+            "IGFA: check current records",
+            "https://igfa.org/member-services/world-record/search"
+          ]
+        ],
+        "updated": "2026-11-24"
+      }
     },
     {
       "id": "rainbow-runner",

@@ -4807,20 +4807,20 @@
   },
   "/north-america/united-states/arkansas/white-river-below-bull-shoals-dam-river-trout-and-grayling/": {
     "kind": "article",
-    "title": "White River: Trout Below Bull Shoals Dam | Castward",
-    "noindex": true,
+    "title": "White River: Brown and Rainbow Trout Below Bull Shoals",
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/arkansas/little-red-river-river-trout-and-grayling/": {
     "kind": "article",
-    "title": "Little Red River: An Arkansas Trout Fishing Day | Castward",
-    "noindex": true,
+    "title": "Little Red River: Wild Brown and Rainbow Trout | Castward",
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/arkansas/norfork-river-river-trout-and-grayling/": {
     "kind": "article",
-    "title": "Norfork River: Trout on an Arkansas Tailwater | Castward",
-    "noindex": true,
+    "title": "Norfork River: Rainbow and Brown Trout Trip Plan | Castward",
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/arkansas/buffalo-national-river-river-smallmouth-and-bass/": {
@@ -5846,7 +5846,7 @@
   "/north-america/united-states/arkansas/": {
     "kind": "collection",
     "title": "Arkansas fishing trips and preparation | Castward",
-    "noindex": true,
+    "noindex": false,
     "redirectTo": null
   },
   "/north-america/united-states/california/": {
@@ -12505,13 +12505,13 @@
   },
   "/species/mahi-mahi/": {
     "kind": "species-detail",
-    "title": "Mahi-mahi fishing, local names and destinations | Castward",
+    "title": "Mahi-mahi (dorado): identification and Florida trip rules",
     "noindex": false,
     "redirectTo": null
   },
   "/species/mahi-mahi-group/": {
     "kind": "species-detail",
-    "title": "Mahi-mahi group: fishing and local names | Castward",
+    "title": "Mahi-mahi fishing, local names and destinations | Castward",
     "noindex": false,
     "redirectTo": null
   },
@@ -13171,7 +13171,7 @@
   },
   "/species/rainbow-bass/": {
     "kind": "species-detail",
-    "title": "Rainbow bass fishing, local names and destinations",
+    "title": "Rainbow bass (guapote): identity, size and trip checks",
     "noindex": false,
     "redirectTo": null
   },

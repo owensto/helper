@@ -5192,8 +5192,7 @@
       "type": "trip",
       "words": 221,
       "sources": [
-        "species-28770e01073f",
-        "species-c9ec49e23241"
+        "species-de68edae3c8a"
       ],
       "review": {
         "checked": null,
@@ -5208,7 +5207,7 @@
       "type": "trip",
       "words": 217,
       "sources": [
-        "species-01a56c0cc57b"
+        "species-6fd73cd244a7"
       ],
       "review": {
         "checked": null,
@@ -5222,7 +5221,9 @@
       "id": "na-us-ar-003",
       "type": "trip",
       "words": 214,
-      "sources": [],
+      "sources": [
+        "species-945fa8ecfbd1"
+      ],
       "review": {
         "checked": null,
         "imported": "2026-09-13",

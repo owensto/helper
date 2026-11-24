@@ -3311,17 +3311,17 @@
       "label": "Fishery source for Ross Barnett Reservoir",
       "url": "https://www.mdwfp.com/fishing-boating/public-waters-program"
     },
-    "world-species-28770e01073f": {
+    "world-species-de68edae3c8a": {
       "label": "Fishery source for White River / below Bull Shoals Dam",
-      "url": "https://www.agfc.com/news/arkansas-wildlife-weekly-fishing-report-317/"
+      "url": "https://www.agfc.com/fishing/where-to-fish/trout-waters/bull-shoals-tailwater/"
     },
-    "world-species-c9ec49e23241": {
-      "label": "Fishery source for White River / below Bull Shoals Dam",
-      "url": "https://www.agfc.com/news/arkansas-wildlife-weekly-fishing-report-299/"
-    },
-    "world-species-01a56c0cc57b": {
+    "world-species-6fd73cd244a7": {
       "label": "Fishery source for Little Red River",
-      "url": "https://www.agfc.com/news/arkansas-wildlife-weekly-fishing-report-320/"
+      "url": "https://www.agfc.com/fishing/where-to-fish/trout-waters/greers-ferry-tailwater-little-red-river/"
+    },
+    "world-species-945fa8ecfbd1": {
+      "label": "Fishery source for Norfork River",
+      "url": "https://www.agfc.com/fishing/where-to-fish/trout-waters/norfork-tailwater/"
     },
     "world-species-ec41f6cca9f7": {
       "label": "Fishery source for Lake Ouachita",
@@ -39333,8 +39333,8 @@
       "name": "White River",
       "region": "United States",
       "species": [
-        "Trout",
-        "Walleye"
+        "Rainbow trout",
+        "Brown trout"
       ],
       "styles": [
         "bank",
@@ -39345,7 +39345,7 @@
       "tripProfile": "na-us-ar-001",
       "technicalGear": true,
       "guideUrl": "/north-america/united-states/arkansas/white-river-below-bull-shoals-dam-river-trout-and-grayling/",
-      "seasonNote": "Dates have not been verified for this opportunity. Before choosing travel dates, resolve: Flow releases, runoff, temperature and local presentation windows.",
+      "seasonNote": "Plan around dam releases and current reach-specific openings, rather than a promised peak month. AGFC links emergency trout rules from this tailwater profile. Check the current notice, flow and access before each day on the river.",
       "seasonWindows": [],
       "tripTypeIds": [],
       "tripStyleIds": [
@@ -39356,7 +39356,7 @@
       "operator": {
         "name": "Fishery source for White River / below Bull Shoals Dam",
         "type": "Research source",
-        "url": "https://www.agfc.com/news/arkansas-wildlife-weekly-fishing-report-317/",
+        "url": "https://www.agfc.com/fishing/where-to-fish/trout-waters/bull-shoals-tailwater/",
         "note": "A research resource, not a booked trip or Atlas operator partnership. Confirm all inclusions and availability independently."
       },
       "coordinates": [
@@ -39366,18 +39366,18 @@
       "locationPrecision": "place-area",
       "locationSource": "https://www.openstreetmap.org/way/1442759729",
       "speciesIds": [
-        "trout",
-        "walleye"
+        "rainbow-trout",
+        "sea-trout"
       ],
       "speciesEvidence": [
         {
-          "speciesId": "trout",
-          "commonName": "Trout",
+          "speciesId": "rainbow-trout",
+          "commonName": "Rainbow trout",
           "sourceUrls": [
-            "https://www.agfc.com/news/arkansas-wildlife-weekly-fishing-report-317/"
+            "https://www.agfc.com/fishing/where-to-fish/trout-waters/bull-shoals-tailwater/"
           ],
           "scopeNotes": [
-            "The source documents trout in the White River / below Bull Shoals Dam fishery. Check the source for the exact reach or departure area."
+            "AGFC documents this species in the named tailwater. Current retention rules require a separate check."
           ],
           "status": "reviewed-source",
           "seasons": [],
@@ -39386,13 +39386,13 @@
           "methodStatus": "unverified"
         },
         {
-          "speciesId": "walleye",
-          "commonName": "Walleye",
+          "speciesId": "sea-trout",
+          "commonName": "Brown trout",
           "sourceUrls": [
-            "https://www.agfc.com/news/arkansas-wildlife-weekly-fishing-report-299/"
+            "https://www.agfc.com/fishing/where-to-fish/trout-waters/bull-shoals-tailwater/"
           ],
           "scopeNotes": [
-            "The source documents walleye in the White River / below Bull Shoals Dam fishery. Check the source for the exact reach or departure area."
+            "AGFC documents this species in the named tailwater. Current retention rules require a separate check."
           ],
           "status": "reviewed-source",
           "seasons": [],
@@ -39403,25 +39403,12 @@
       ],
       "speciesReview": {
         "status": "source-linked",
-        "reviewed": "2026-11-10",
+        "reviewed": "2026-11-24",
         "seasonStatus": "unverified",
         "methodStatus": "unverified"
       },
       "speciesResearchUrls": [
-        "https://www.agfc.com/news/arkansas-wildlife-weekly-fishing-report-317/",
-        "https://www.agfc.com/news/arkansas-wildlife-weekly-fishing-report-319/",
-        "https://www.agfc.com/news/arkansas-wildlife-weekly-fishing-report-316/",
-        "https://www.agfc.com/news/arkansas-wildlife-weekly-fishing-report-300/",
-        "https://www.agfc.com/news/arkansas-wildlife-weekly-fishing-report-308/",
-        "https://www.agfc.com/news/arkansas-wildlife-weekly-fishing-report-313/",
-        "https://www.agfc.com/news/arkansas-wildlife-weekly-fishing-report-299/",
-        "https://www.agfc.com/news/arkansas-wildlife-weekly-fishing-report-297/",
-        "https://www.agfc.com/news/arkansas-wildlife-weekly-fishing-report-296/",
-        "https://www.agfc.com/news/arkansas-wildlife-weekly-fishing-report-303/",
-        "https://www.agfc.com/news/arkansas-wildlife-weekly-fishing-report-315/",
-        "https://www.agfc.com/news/arkansas-wildlife-weekly-fishing-report-294/",
-        "https://www.agfc.com/wp-content/uploads/2023/04/Arkansas-Wildlife-Action-Plan.pdf",
-        "https://www.agfc.com/wp-content/uploads/2023/04/07-Fish.pdf"
+        "https://www.agfc.com/fishing/where-to-fish/trout-waters/bull-shoals-tailwater/"
       ]
     },
     {
@@ -39429,7 +39416,8 @@
       "name": "Little Red River",
       "region": "United States",
       "species": [
-        "Trout"
+        "Rainbow trout",
+        "Brown trout"
       ],
       "styles": [
         "bank",
@@ -39440,7 +39428,7 @@
       "tripProfile": "na-us-ar-002",
       "technicalGear": true,
       "guideUrl": "/north-america/united-states/arkansas/little-red-river-river-trout-and-grayling/",
-      "seasonNote": "Dates have not been verified for this opportunity. Before choosing travel dates, resolve: Flow releases, runoff, temperature and local presentation windows.",
+      "seasonNote": "Plan around dam releases and current reach-specific openings, rather than a promised peak month. AGFC links emergency trout rules from this tailwater profile. Check the current notice, flow and access before each day on the river.",
       "seasonWindows": [],
       "tripTypeIds": [],
       "tripStyleIds": [
@@ -39451,7 +39439,7 @@
       "operator": {
         "name": "Fishery source for Little Red River",
         "type": "Research source",
-        "url": "https://www.agfc.com/news/arkansas-wildlife-weekly-fishing-report-320/",
+        "url": "https://www.agfc.com/fishing/where-to-fish/trout-waters/greers-ferry-tailwater-little-red-river/",
         "note": "A research resource, not a booked trip or Atlas operator partnership. Confirm all inclusions and availability independently."
       },
       "coordinates": [
@@ -39461,17 +39449,33 @@
       "locationPrecision": "place-area",
       "locationSource": "https://www.openstreetmap.org/relation/11059278",
       "speciesIds": [
-        "trout"
+        "rainbow-trout",
+        "sea-trout"
       ],
       "speciesEvidence": [
         {
-          "speciesId": "trout",
-          "commonName": "Trout",
+          "speciesId": "rainbow-trout",
+          "commonName": "Rainbow trout",
           "sourceUrls": [
-            "https://www.agfc.com/news/arkansas-wildlife-weekly-fishing-report-320/"
+            "https://www.agfc.com/fishing/where-to-fish/trout-waters/greers-ferry-tailwater-little-red-river/"
           ],
           "scopeNotes": [
-            "The source documents trout in the Little Red River fishery. Check the source for the exact reach or departure area."
+            "AGFC documents this species in the named tailwater. Current retention rules require a separate check."
+          ],
+          "status": "reviewed-source",
+          "seasons": [],
+          "seasonStatus": "unverified",
+          "methods": [],
+          "methodStatus": "unverified"
+        },
+        {
+          "speciesId": "sea-trout",
+          "commonName": "Brown trout",
+          "sourceUrls": [
+            "https://www.agfc.com/fishing/where-to-fish/trout-waters/greers-ferry-tailwater-little-red-river/"
+          ],
+          "scopeNotes": [
+            "AGFC documents this species in the named tailwater. Current retention rules require a separate check."
           ],
           "status": "reviewed-source",
           "seasons": [],
@@ -39482,34 +39486,22 @@
       ],
       "speciesReview": {
         "status": "source-linked",
-        "reviewed": "2026-11-10",
+        "reviewed": "2026-11-24",
         "seasonStatus": "unverified",
         "methodStatus": "unverified"
       },
       "speciesResearchUrls": [
-        "https://www.agfc.com/news/arkansas-wildlife-weekly-fishing-report-320/",
-        "https://www.agfc.com/news/arkansas-wildlife-weekly-fishing-report-317/",
-        "https://www.agfc.com/news/arkansas-wildlife-weekly-fishing-report-319/",
-        "https://www.agfc.com/news/arkansas-wildlife-weekly-fishing-report-316/",
-        "https://www.agfc.com/news/arkansas-wildlife-weekly-fishing-report-290/",
-        "https://www.agfc.com/news/arkansas-wildlife-weekly-fishing-report-312/",
-        "https://www.agfc.com/fishing/where-to-fish/trout-waters/greers-ferry-tailwater-little-red-river/",
-        "https://www.agfc.com/news/arkansas-wildlife-weekly-fishing-report-313/",
-        "https://www.agfc.com/news/arkansas-wildlife-weekly-fishing-report-289/",
-        "https://www.agfc.com/news/arkansas-wildlife-weekly-fishing-report-308/",
-        "https://www.agfc.com/news/arkansas-wildlife-weekly-fishing-report-296/",
-        "https://www.agfc.com/news/arkansas-wildlife-weekly-fishing-report-298/",
-        "https://apps.agfc.com/regulations/pdf/a42aa1e4-55c3-47ee-b321-52a2fc70f139",
-        "https://www.agfc.com/wp-content/uploads/2023/04/11-Mussels.pdf",
-        "https://www.agfc.com/wp-content/uploads/2023/04/Arkansas-Wildlife-Action-Plan.pdf",
-        "https://www.agfc.com/wp-content/uploads/2023/04/07-Fish.pdf"
+        "https://www.agfc.com/fishing/where-to-fish/trout-waters/greers-ferry-tailwater-little-red-river/"
       ]
     },
     {
       "id": "na-us-ar-003",
       "name": "Norfork River",
       "region": "United States",
-      "species": [],
+      "species": [
+        "Rainbow trout",
+        "Brown trout"
+      ],
       "styles": [
         "bank",
         "guidedwade"
@@ -39519,7 +39511,7 @@
       "tripProfile": "na-us-ar-003",
       "technicalGear": true,
       "guideUrl": "/north-america/united-states/arkansas/norfork-river-river-trout-and-grayling/",
-      "seasonNote": "Dates have not been verified for this opportunity. Before choosing travel dates, resolve: Flow releases, runoff, temperature and local presentation windows.",
+      "seasonNote": "Plan around dam releases and current reach-specific openings, rather than a promised peak month. AGFC links emergency trout rules from this tailwater profile. Check the current notice, flow and access before each day on the river.",
       "seasonWindows": [],
       "tripTypeIds": [],
       "tripStyleIds": [
@@ -39528,9 +39520,9 @@
         "river-fishing"
       ],
       "operator": {
-        "name": "Open research and trip questions",
-        "type": "Research pending",
-        "url": "/production/north-america/",
+        "name": "Fishery source for Norfork River",
+        "type": "Research source",
+        "url": "https://www.agfc.com/fishing/where-to-fish/trout-waters/norfork-tailwater/",
         "note": "A research resource, not a booked trip or Atlas operator partnership. Confirm all inclusions and availability independently."
       },
       "coordinates": [
@@ -39539,34 +39531,50 @@
       ],
       "locationPrecision": "place-area",
       "locationSource": "https://www.openstreetmap.org/way/144715716",
-      "speciesIds": [],
-      "speciesEvidence": [],
+      "speciesIds": [
+        "rainbow-trout",
+        "sea-trout"
+      ],
+      "speciesEvidence": [
+        {
+          "speciesId": "rainbow-trout",
+          "commonName": "Rainbow trout",
+          "sourceUrls": [
+            "https://www.agfc.com/fishing/where-to-fish/trout-waters/norfork-tailwater/"
+          ],
+          "scopeNotes": [
+            "AGFC documents this species in the named tailwater. Current retention rules require a separate check."
+          ],
+          "status": "reviewed-source",
+          "seasons": [],
+          "seasonStatus": "unverified",
+          "methods": [],
+          "methodStatus": "unverified"
+        },
+        {
+          "speciesId": "sea-trout",
+          "commonName": "Brown trout",
+          "sourceUrls": [
+            "https://www.agfc.com/fishing/where-to-fish/trout-waters/norfork-tailwater/"
+          ],
+          "scopeNotes": [
+            "AGFC documents this species in the named tailwater. Current retention rules require a separate check."
+          ],
+          "status": "reviewed-source",
+          "seasons": [],
+          "seasonStatus": "unverified",
+          "methods": [],
+          "methodStatus": "unverified"
+        }
+      ],
       "speciesReview": {
-        "status": "unverified",
-        "reviewed": "2026-11-10",
+        "status": "source-linked",
+        "reviewed": "2026-11-24",
         "seasonStatus": "unverified",
         "methodStatus": "unverified"
       },
       "speciesResearchUrls": [
-        "https://www.agfc.com/news/arkansas-wildlife-weekly-fishing-report-317/",
-        "https://www.agfc.com/fishing/where-to-fish/trout-waters/norfork-tailwater/",
-        "https://www.agfc.com/news/arkansas-wildlife-weekly-fishing-report-316/",
-        "https://www.agfc.com/news/arkansas-wildlife-weekly-fishing-report-287/",
-        "https://www.agfc.com/news/arkansas-wildlife-weekly-fishing-report-314/",
-        "https://www.agfc.com/news/arkansas-wildlife-weekly-fishing-report-313/",
-        "https://www.agfc.com/news/arkansas-wildlife-weekly-fishing-report-297/",
-        "https://www.agfc.com/news/arkansas-wildlife-weekly-fishing-report-309/",
-        "https://www.agfc.com/news/arkansas-wildlife-weekly-fishing-report-305/",
-        "https://www.agfc.com/news/arkansas-wildlife-weekly-fishing-report-302/",
-        "https://www.agfc.com/news/arkansas-wildlife-weekly-fishing-report-165/",
-        "https://www.agfc.com/news/arkansas-wildlife-weekly-fishing-report-38/",
-        "https://apps.agfc.com/regulations/pdf/a42aa1e4-55c3-47ee-b321-52a2fc70f139",
-        "https://www.agfc.com/wp-content/uploads/2023/04/5-Reservoir-Black-Bass-Management-Plan.pdf",
-        "https://www.agfc.com/wp-content/uploads/2023/05/2016_2017_beavercreelsurvey.pdf",
-        "https://www.agfc.com/wp-content/uploads/2024/04/arkansas-handbook-entire.pdf",
-        "https://www.agfc.com/news/arkansas-wildlife-weekly-fishing-report-299/",
-        "https://www.agfc.com/news/arkansas-wildlife-weekly-fishing-report-298/",
-        "https://www.agfc.com/news/arkansas-wildlife-fishing-report-50/"
+        "https://www.agfc.com/fishing/where-to-fish/trout-waters/norfork-tailwater/"
       ]
     },
     {
@@ -143872,7 +143880,7 @@
       },
       {
         "id": "na-us-ar-001",
-        "title": "White River: Trout Below Bull Shoals Dam",
+        "title": "White River: Brown and Rainbow Trout Below Bull Shoals",
         "place": "White River / below Bull Shoals Dam",
         "country": "United States",
         "region": "North America",
@@ -143881,8 +143889,8 @@
         "canonicalPath": "/north-america/united-states/arkansas/white-river-below-bull-shoals-dam-river-trout-and-grayling/",
         "contentTier": "preparation-brief",
         "fish": [
-          "Trout",
-          "Walleye"
+          "Rainbow trout",
+          "Brown trout"
         ],
         "candidateTargets": "Rainbow / brown trout",
         "tripTypeIds": [],
@@ -143895,7 +143903,7 @@
       },
       {
         "id": "na-us-ar-002",
-        "title": "Little Red River: An Arkansas Trout Fishing Day",
+        "title": "Little Red River: Wild Brown and Rainbow Trout",
         "place": "Little Red River",
         "country": "United States",
         "region": "North America",
@@ -143904,7 +143912,8 @@
         "canonicalPath": "/north-america/united-states/arkansas/little-red-river-river-trout-and-grayling/",
         "contentTier": "preparation-brief",
         "fish": [
-          "Trout"
+          "Rainbow trout",
+          "Brown trout"
         ],
         "candidateTargets": "Brown / rainbow trout",
         "tripTypeIds": [],
@@ -143917,7 +143926,7 @@
       },
       {
         "id": "na-us-ar-003",
-        "title": "Norfork River: Trout on an Arkansas Tailwater",
+        "title": "Norfork River: Rainbow and Brown Trout Trip Plan",
         "place": "Norfork River",
         "country": "United States",
         "region": "North America",
@@ -143925,7 +143934,10 @@
         "subregion": "South Central & Gulf",
         "canonicalPath": "/north-america/united-states/arkansas/norfork-river-river-trout-and-grayling/",
         "contentTier": "preparation-brief",
-        "fish": [],
+        "fish": [
+          "Rainbow trout",
+          "Brown trout"
+        ],
         "candidateTargets": "Trout candidates",
         "tripTypeIds": [],
         "tripTypeNames": [],

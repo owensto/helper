@@ -1,0 +1,74 @@
+{
+  "date": "2026-11-24",
+  "species": {
+    "mahi-mahi": {
+      "lastOwnEdit": "2026-11-10",
+      "lastCrawl": "2026-11-14 19:47:01",
+      "impressions": 172,
+      "position": 45.5,
+      "sources": "See searchAnswer.sources in species-catalog.json. All opened live on November 24. The unsupported Hawaii peak-month statement was removed before the source file was changed."
+    },
+    "rainbow-bass": {
+      "lastOwnEdit": "2026-11-10",
+      "lastCrawl": "2026-11-12 22:53:06",
+      "impressions": 11,
+      "position": 15.6,
+      "sources": "FishBase, Smithsonian, CRAFF-ACPM and INCOPESCA opened live. IGFA current record details were unavailable; no current record claimed."
+    }
+  },
+  "trips": {
+    "na-us-ar-001": {
+      "lastCrawl": "2026-11-10 20:55:00",
+      "source": "https://www.agfc.com/fishing/where-to-fish/trout-waters/bull-shoals-tailwater/"
+    },
+    "na-us-ar-002": {
+      "lastCrawl": "2026-11-10 21:04:20",
+      "source": "https://www.agfc.com/fishing/where-to-fish/trout-waters/greers-ferry-tailwater-little-red-river/"
+    },
+    "na-us-ar-003": {
+      "lastCrawl": "2026-11-10 21:57:41",
+      "source": "https://www.agfc.com/fishing/where-to-fish/trout-waters/norfork-tailwater/"
+    }
+  },
+  "licences": {
+    "us-nebraska": {
+      "result": "Retained 2026 guide fees: USD 17.50 / 40 / 95.50. Live general price page conflicts: USD 12 for the 2026 nonresident day licence. Do not infer a price change. Follow up against the official shop. Habitat stamp and free-day law checked.",
+      "sources": [
+        "https://digital.outdoornebraska.gov/i/1542421-fishing-guide-2026/3",
+        "https://outdoornebraska.gov/permits/permit-pricing/",
+        "https://outdoornebraska.gov/permits/fishing-permits/",
+        "https://nebraskalegislature.gov/laws/statutes.php?statute=37-318"
+      ]
+    },
+    "us-nevada": {
+      "result": "Retained USD 18 first day, USD 7 additional day, USD 80 annual and USD 15 youth. Agency fee and free-day pages checked.",
+      "sources": [
+        "https://www.ndow.org/apply-buy/fishing/",
+        "https://www.ndow.org/blog/nevada-free-fishing-day/"
+      ]
+    },
+    "us-new-hampshire": {
+      "result": "Official price page opened in Orca after HTTP 403. Retained nonresident USD 15 / 28 / 35 / 63; saltwater USD 11. June 6 free day confirmed by agency newsroom. The source states separate transaction fees.",
+      "sources": [
+        "https://www.wildlife.nh.gov/licenses-and-permits/license-prices",
+        "https://nhfishgame.com/2026/05/22/free-fishing-day-in-new-hampshire-is-saturday-june-6/"
+      ]
+    },
+    "us-new-jersey": {
+      "result": "Agency website access failed. The agency-authored 2026 digest on its publication partner confirms USD 9 / 19.50 / 34, USD 20 trout stamp, free saltwater registry, and June 6 / September 26 free days. Existing content retained.",
+      "sources": [
+        "https://www.eregulations.com/assets/docs/resources/NJ/26NJFW_LR.pdf"
+      ]
+    },
+    "us-new-mexico": {
+      "result": "Official 2026–27 rules PDF confirms USD 12 / 30 / 90, USD 4 access validation and USD 10 habitat stamp. The free-weekend regulation remains unchanged.",
+      "sources": [
+        "https://wildlife.dgf.nm.gov/download/new-mexico-fishing-rules-and-info/?wpdmdl=54215",
+        "https://www.srca.nm.gov/nmac/nmregister/xxxiv/19.31.4amend.html"
+      ]
+    }
+  },
+  "licenceDatePolicy": "Source-check dates changed. Own-content dates and fees did not change.",
+  "searchEvidence": "seo-reports/evidence/castward-2026-11-24: live Google SERPs and AI Overviews. Grok unavailable in the fixed daily measurement; no paid retry. Rainbow bass AI Overview incorrectly discussed peacock bass; the page distinguishes these identities using primary sources. Facebook result pages could not be read. No competitor wording copied.",
+  "tripsTargetPolicy": "Removed broad trout and unrelated walleye entries from the three reviewed records. Each now has only rainbow trout and brown trout from its own official water profile."
+}
