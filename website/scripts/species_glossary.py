@@ -80,7 +80,7 @@ def install(pages, root, add, trips, data):
     paths.update({t['id']: t.get('canonicalPath', '/trips/' + t['id'] + '/') for t in trips})
     names = {d['id']: d['place'] for d in destinations}
     matched = {s['id']: [d for d in destinations if any(t['speciesId'] == s['id'] for t in d['targets'])] for s in species}
-    assets = '<link rel="stylesheet" href="/assets/field-reference.css"><script src="/assets/field-reference.js" defer></script>'
+    assets = '<link rel="stylesheet" href="/assets/field-reference.css"><script src="/assets/field-reference.js?v=20261123" defer></script>'
 
     def heading(label, title, deck):
         return '<div class="wrap breadcrumb">' + link('/', 'Home') + ' / ' + E(label) + '</div><header class="wrap type-heading"><span class="eyebrow">FIELD REFERENCE</span><h1>' + E(title) + '</h1><p class="type-deck">' + E(deck) + '</p></header>'
@@ -110,6 +110,10 @@ def install(pages, root, add, trips, data):
         answer = s.get('searchAnswer')
         if answer:
             body = heading('Species / ' + s['name'], answer['title'], answer['answer'])
+            if s['id'] == 'white-sturgeon':
+                body += '<p class="wrap">Compare ' + link('/species/green-sturgeon/', 'green sturgeon') + ', then check the ' + link('/trip-types/fraser-white-sturgeon/', 'Fraser River catch-and-release trip') + ' and ' + link('/fishing-licenses/ca-british-columbia/', 'British Columbia licence') + '.</p>'
+            if s['id'] == 'marlin':
+                body += '<p class="wrap">Compare ' + ', '.join(link(species_url(sid), sb[sid]['name']) for sid in ('blue-marlin', 'black-marlin', 'striped-marlin', 'atlantic-white-marlin')) + ' before you choose a trip.</p>'
             body += '<div class="wrap field-reference"><p class="small">Updated ' + E(answer['updated']) + ' · ' + link('/about/', 'Castward') + '</p>'
             body += '<section><h2>' + E(answer['question']) + '</h2><div class="field-table-scroll" role="region" tabindex="0" aria-label="Species key facts"><table><thead><tr><th scope="col">Key fact</th><th scope="col">Detail</th></tr></thead><tbody>'
             body += ''.join('<tr><th scope="row">' + E(k) + '</th><td>' + E(v) + '</td></tr>' for k, v in answer['facts']) + '</tbody></table></div></section>'
@@ -151,6 +155,16 @@ def install(pages, root, add, trips, data):
             body += '<script type="application/ld+json">' + json.dumps({'@context':'https://schema.org','@type':'FAQPage','mainEntity':[{'@type':'Question','name':q,'acceptedAnswer':{'@type':'Answer','text':a}} for q,a in questions]}).replace('</','<\\/') + '</script>'
         if s['id'] in ('rainbow-trout', 'cutthroat-trout', 'mountain-whitefish'):
             body += '<p class="wrap">For an Idaho trip, check the ' + link('/fishing-licenses/us-idaho/', 'Idaho visitor fishing licence and annual access fee') + ' before you buy.</p>'
+        if s['id'] == 'green-sturgeon':
+            body += '<p class="wrap">Compare ' + link('/species/white-sturgeon/', 'white sturgeon identification and trip rules') + ' before you apply a local sturgeon rule.</p>'
+        if s['id'] in ('northern-pike', 'lake-trout'):
+            body += '<p class="wrap">For a Michigan trip, compare the ' + link('/fishing-licenses/us-michigan/', 'daily and annual visitor fishing licences') + ' before you choose your travel dates.</p>'
+        if s['id'] in ('rock-bass', 'white-bass'):
+            body += '<p class="wrap">Explore ' + link('/north-america/canada/manitoba/', 'Manitoba trip waters') + ' and confirm the fish listed for each destination.</p>'
+        if s['id'] in ('rock-bass', 'sea-trout'):
+            body += '<p class="wrap">Compare ' + link('/north-america/canada/quebec/', 'Quebec trip waters') + ' before you choose a Canadian base.</p>'
+        if s['id'] in ('blue-marlin', 'black-marlin', 'striped-marlin', 'atlantic-white-marlin'):
+            body += '<p class="wrap">Use the ' + link('/species/marlin/', 'marlin species comparison and Atlantic trip rules') + ' to check similar billfish.</p>'
         if s['id'] in ('sauger', 'channel-catfish'):
             body += '<p class="wrap">Compare trip waters in ' + link('/north-america/canada/manitoba/', 'Manitoba') + ', ' + link('/north-america/canada/saskatchewan/', 'Saskatchewan') + ' and ' + link('/north-america/canada/quebec/', 'Quebec') + ' before you choose a Canadian base.</p>'
         if s['id'] in ('black-drum', 'red-drum', 'sheepshead'):
@@ -244,7 +258,7 @@ def install(pages, root, add, trips, data):
             if initial != letter:continue
             tags = tags_for(term['regions'])
             search = ' '.join(dict.fromkeys([term['term'], *term['relatedSpecies'], *[sb[s]['name'] for s in term['relatedSpecies']], *term['regions']]))
-            body += '<div id="' + E(term['id'], quote=True) + '" data-glossary-term data-search="' + E(search, quote=True) + '" data-regions="' + E(json.dumps(tags, separators=(',', ':')), quote=True) + '"><dt>' + E(term['term']) + '</dt>'
+            body += '<div id="' + E(term['id'], quote=True) + '" data-glossary-term data-search="' + E(search, quote=True) + '" data-regions="' + E('|'.join(tags), quote=True) + '"><dt>' + E(term['term']) + '</dt>'
             for entry in term['entries']:
                 body += '<dd><p>' + E(entry['definition']) + '</p><p class="field-region">' + E(' · '.join(entry['regions'])) + '</p><div class="field-related">'
                 # Preserve the first legacy trip-type link and existing term anchors.

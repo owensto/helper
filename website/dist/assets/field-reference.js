@@ -6,7 +6,7 @@
   const input = document.getElementById('glossary-search');
   if (input) {
     const region = document.getElementById('glossary-region');
-    const items = [...document.querySelectorAll('[data-glossary-term]')].map(el => ({el, text: normalize(el.dataset.search), regions: JSON.parse(el.dataset.regions)}));
+    const items = [...document.querySelectorAll('[data-glossary-term]')].map(el => ({el, text: normalize(el.dataset.search), regions: el.dataset.regions.startsWith('[') ? JSON.parse(el.dataset.regions) : el.dataset.regions.split('|')}));
     const apply = () => {
       const q = normalize(input.value);
       let count = 0;
@@ -16,7 +16,7 @@
         if (match) count++;
       });
       document.querySelectorAll('[data-glossary-letter]').forEach(el => { el.hidden = !el.querySelector('[data-glossary-term]:not([hidden])'); });
-      document.getElementById('glossary-count').textContent = count + ' of ' + items.length + ' terms';
+      document.getElementById('glossary-count').textContent = count + ' of ' + items.length + ' terms found';
       document.getElementById('glossary-empty').hidden = count !== 0;
     };
     input.value = params.get('q') || '';
@@ -39,7 +39,7 @@
         if (match) count++;
       });
       more.hidden = count <= limit;
-      document.getElementById('species-count').textContent = count + ' matching fish references';
+      document.getElementById('species-count').textContent = count + ' fish found';
       document.getElementById('species-empty').hidden = count !== 0;
     };
     search.value = params.get('q') || '';

@@ -141812,7 +141812,127 @@
           "note": "Identify the exact species before checking local rules."
         }
       ],
-      "referenceRole": "Broad name; species identification required"
+      "referenceRole": "Broad name; species identification required",
+      "searchAnswer": {
+        "title": "Marlin fish: species identification and trip rules",
+        "description": "Compare blue, black, striped and white marlin. Check fin shapes, ocean range and U.S. Atlantic permit and minimum-size rules before your trip.",
+        "question": "Which marlin species are you looking at?",
+        "answer": "Marlin is a group name, not one fish species. Blue, black, striped and white marlin differ in fin shape, body pattern and ocean range. Compare several features before naming a fish. For a fishing trip, identify the target species first, then check the local permit, measurement method and current retention rules.",
+        "facts": [
+          [
+            "Blue marlin",
+            "Makaira nigricans; pectoral fins fold against the body; pointed front dorsal fin"
+          ],
+          [
+            "Black marlin",
+            "Istiompax indica; rigid pectoral fins in fish over about 20 kg"
+          ],
+          [
+            "Striped marlin",
+            "Kajikia audax; tall dorsal fin and visible vertical stripes; Pacific and Indian oceans"
+          ],
+          [
+            "White marlin",
+            "Kajikia albida; rounded fin tips; Atlantic Ocean; compare roundscale spearfish"
+          ],
+          [
+            "U.S. Atlantic blue marlin minimum",
+            "99 inches, lower-jaw fork length; current restrictions also apply"
+          ],
+          [
+            "U.S. Atlantic white marlin minimum",
+            "66 inches, lower-jaw fork length; current restrictions also apply"
+          ],
+          [
+            "Private U.S. Atlantic vessel permit",
+            "HMS Angling permit: USD 24 application fee; annual renewal"
+          ],
+          [
+            "Striped marlin size reference",
+            "NOAA lists 250–450 lb in its quick facts; not a promised catch weight"
+          ]
+        ],
+        "sections": [
+          {
+            "question": "How do you separate black, blue and striped marlin?",
+            "answer": "Compare the pectoral fins and the height of the first dorsal fin. GFAA describes rigid pectoral fins in black marlin over about 20 kg, while blue and striped marlin can fold theirs against the body. Striped marlin have a particularly tall dorsal fin. Check several traits together, especially on small fish.",
+            "source": "https://www.gfaa.asn.au/rules/idenification-guide"
+          },
+          {
+            "question": "Are white marlin, sailfish and swordfish the same fish?",
+            "answer": "No. White marlin have rounded fin tips and can resemble roundscale spearfish. Sailfish have a much larger, sail-like dorsal fin. Adult swordfish have a broad, flat bill and lack pelvic fins. Use the whole fish and its location for identification; a pointed bill alone does not identify a marlin.",
+            "source": "https://billfish.org/education/species-identification/"
+          },
+          {
+            "question": "Which ocean should you choose for a striped marlin trip?",
+            "answer": "Striped marlin occur in the tropical and subtropical Pacific and Indian oceans. NOAA describes them around the Baja Peninsula and off southern California, among other areas. Choose a specific port and travel month before comparing trips. A species-wide range is too broad to establish a local season or likely catch.",
+            "source": "https://www.fisheries.noaa.gov/species/striped-marlin"
+          },
+          {
+            "question": "Which permit covers an Atlantic marlin trip?",
+            "answer": "For U.S. Atlantic billfish, NOAA requires an HMS Angling or HMS Charterboat/Headboat vessel permit. That permit covers the people fishing aboard the vessel. Ask the captain which permit covers the planned trip, then check any separate state requirements. A private HMS Angling permit requires annual renewal and has a USD 24 application fee.",
+            "source": "https://www.fisheries.noaa.gov/permit/atlantic-highly-migratory-species-angling-permit-open-access"
+          },
+          {
+            "question": "Can you keep a marlin in the U.S. Atlantic?",
+            "answer": "Check NOAA’s live fishery status before departure. Its minimum sizes are 99 inches for blue marlin and 66 inches for white marlin, measured from the lower jaw to the tail fork. A shared annual U.S. landings limit and shark-related restrictions also apply. These numbers are not a worldwide marlin rule.",
+            "source": "https://www.fisheries.noaa.gov/atlantic-highly-migratory-species/recreational-atlantic-billfish-fishery-statuses-minimum-sizes-and"
+          }
+        ],
+        "faq": [
+          [
+            "Does every marlin have the same scientific name?",
+            "No. Marlin covers several species. The table separates blue, black, striped and white marlin."
+          ],
+          [
+            "Do stripes prove that a fish is a striped marlin?",
+            "No. Blue and black marlin can also show body markings. Compare fin shape and other features."
+          ],
+          [
+            "What is lower-jaw fork length?",
+            "Measure in a straight line from the tip of the lower jaw to the fork of the tail. Do not include the upper bill."
+          ],
+          [
+            "Is a white marlin a small blue marlin?",
+            "No. It is a separate species with different identification features."
+          ],
+          [
+            "Is there one best month for marlin everywhere?",
+            "No single month fits every ocean and species. Choose the port and species, then check local seasonal information and current regulations."
+          ],
+          [
+            "Can a private HMS Angling vessel sell its marlin catch?",
+            "No. NOAA states that vessels with an HMS Angling permit may not sell their catch."
+          ]
+        ],
+        "sources": [
+          [
+            "GFAA: marlin identification",
+            "https://www.gfaa.asn.au/rules/idenification-guide"
+          ],
+          [
+            "The Billfish Foundation: species features",
+            "https://billfish.org/education/species-identification/"
+          ],
+          [
+            "NOAA: striped marlin",
+            "https://www.fisheries.noaa.gov/species/striped-marlin"
+          ],
+          [
+            "Florida Museum: blue marlin",
+            "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/blue-marlin/"
+          ],
+          [
+            "NOAA: Atlantic vessel permit",
+            "https://www.fisheries.noaa.gov/permit/atlantic-highly-migratory-species-angling-permit-open-access"
+          ],
+          [
+            "NOAA: Atlantic billfish limits",
+            "https://www.fisheries.noaa.gov/atlantic-highly-migratory-species/recreational-atlantic-billfish-fishery-statuses-minimum-sizes-and"
+          ]
+        ],
+        "updated": "2026-11-23"
+      }
     },
     {
       "id": "masked-greenling",
@@ -240839,7 +240959,123 @@
           "note": "Check the rules for the exact water, date, licence and fish identification. This link does not establish an open season."
         }
       ],
-      "referenceRole": "game fish"
+      "referenceRole": "game fish",
+      "searchAnswer": {
+        "title": "White sturgeon: identification, size and trip rules",
+        "description": "Identify white sturgeon by their snout and barbels. Compare green sturgeon, check California report-card dates and plan a catch-and-release trip.",
+        "question": "How do you identify a white sturgeon?",
+        "answer": "White sturgeon (Acipenser transmontanus) are large Pacific-coast fish with five rows of bony plates, a blunt snout and four barbels nearer the snout tip than the mouth. Do not identify them by size alone. Before a trip, check the exact river, season and release rules: nearby sturgeon fisheries can have different restrictions.",
+        "facts": [
+          [
+            "Scientific name",
+            "Acipenser transmontanus"
+          ],
+          [
+            "White sturgeon",
+            "Blunt snout; barbels nearer the snout tip than the mouth"
+          ],
+          [
+            "Green sturgeon",
+            "Barbels nearer the mouth; do not rely on colour alone"
+          ],
+          [
+            "Size reference",
+            "Oregon Sea Grant: up to 20 ft (6 m) and over 1,500 lb (680 kg); not a likely catch size"
+          ],
+          [
+            "Range",
+            "Pacific coast, southern Alaska to Baja California; mainly freshwater, with some marine use"
+          ],
+          [
+            "California",
+            "Catch and release only; report-card season October 1–June 30"
+          ],
+          [
+            "California report deadline",
+            "July 31 after the report card expires"
+          ],
+          [
+            "Idaho",
+            "No harvest; record fish must be measured in the water"
+          ]
+        ],
+        "sections": [
+          {
+            "question": "White or green sturgeon: which features matter?",
+            "answer": "Start with the head and barbels, then compare the bony plates. White sturgeon have barbels nearer the snout tip; green sturgeon have them nearer the mouth. California lists at least 36 lateral plates for white sturgeon and 33 or fewer for green sturgeon. A single colour or size clue is not enough.",
+            "source": "https://wildlife.ca.gov/Conservation/Fishes/Sturgeon/report-card"
+          },
+          {
+            "question": "When can you plan a California white sturgeon trip?",
+            "answer": "California’s report-card season runs from October 1 through June 30, and white sturgeon fishing is catch and release only. Carry the card while fishing. Return it, or report online, by July 31 after it expires. Check the current water-specific regulations before travel; a card does not open a closed water.",
+            "source": "https://wildlife.ca.gov/Conservation/Fishes/Sturgeon/report-card"
+          },
+          {
+            "question": "Can you keep a white sturgeon in Oregon?",
+            "answer": "Do not assume that a general species page gives permission to keep a fish. Oregon directs anglers to the regulations for each water and season. Green sturgeon cannot be targeted there, even for catch and release. Release an accidentally caught green sturgeon immediately and unharmed.",
+            "source": "https://myodfw.com/fishing/species/sturgeon"
+          },
+          {
+            "question": "How should you measure a white sturgeon in Idaho?",
+            "answer": "Idaho requires white sturgeon entered for a record to stay in the water for measurement. Its instructions use the belly side, from the snout to the tip of the upper tail lobe. Prepare the tape and photographs first, reduce handling time and release the fish promptly. Idaho does not allow white sturgeon harvest.",
+            "source": "https://idfg.idaho.gov/fish/record/guidelines"
+          },
+          {
+            "question": "Do white sturgeon live only in rivers?",
+            "answer": "No. Fisheries and Oceans Canada describes white sturgeon as mainly freshwater fish that can also enter Pacific coastal waters. Its guide names the Fraser estuary and nearby straits. That range describes where the species occurs; it does not establish an open fishery or a public launch for your trip.",
+            "source": "https://www.pac.dfo-mpo.gc.ca/fm-gp/rec/docs/sturgeon-esturgeon-idguide-pub-eng.html"
+          }
+        ],
+        "faq": [
+          [
+            "Is white sturgeon the same as green sturgeon?",
+            "No. They are different species. Compare the barbels and bony plates before you apply the rules."
+          ],
+          [
+            "How big can white sturgeon grow?",
+            "Oregon Sea Grant gives an upper size reference of 20 ft (6 m) and over 1,500 lb (680 kg). These figures are not a catch forecast or a current angling record."
+          ],
+          [
+            "Can you tell a sturgeon’s age from its length?",
+            "Length alone does not establish an individual fish’s age. Do not assign an age to a catch from a photograph or tape measurement."
+          ],
+          [
+            "Do California anglers need a report card for released fish?",
+            "Yes. Carry a Sturgeon Fishing Report Card while targeting white sturgeon, even though the fishery is catch and release only."
+          ],
+          [
+            "Can you target green sturgeon in Oregon?",
+            "No. Oregon prohibits targeting green sturgeon for retention or catch and release."
+          ],
+          [
+            "Can an Idaho white sturgeon qualify for a weight record?",
+            "No. Idaho allows no white sturgeon harvest and accepts the species only in its catch-and-release record category."
+          ]
+        ],
+        "sources": [
+          [
+            "CDFW: identification and report cards",
+            "https://wildlife.ca.gov/Conservation/Fishes/Sturgeon/report-card"
+          ],
+          [
+            "DFO: white and green sturgeon",
+            "https://www.pac.dfo-mpo.gc.ca/fm-gp/rec/docs/sturgeon-esturgeon-idguide-pub-eng.html"
+          ],
+          [
+            "ODFW: sturgeon fishing",
+            "https://myodfw.com/fishing/species/sturgeon"
+          ],
+          [
+            "Idaho Fish and Game: record measurement",
+            "https://idfg.idaho.gov/fish/record/guidelines"
+          ],
+          [
+            "Oregon Sea Grant: white sturgeon size and features",
+            "https://seagrant.oregonstate.edu/WRF/native-fishes/sturgeons/white-sturgeon"
+          ]
+        ],
+        "updated": "2026-11-23"
+      }
     },
     {
       "id": "white-trevally",

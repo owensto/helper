@@ -1,0 +1,82 @@
+{
+  "date": "2026-11-23",
+  "run": "evening",
+  "species": {
+    "marlin": {
+      "lastOwnRecordEdit": "2026-11-10",
+      "lastCrawl": "2026-11-14 07:34:29",
+      "sources": [
+        {
+          "title": "GFAA: marlin identification",
+          "url": "https://www.gfaa.asn.au/rules/idenification-guide",
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "The Billfish Foundation: species features",
+          "url": "https://billfish.org/education/species-identification/",
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "NOAA: striped marlin",
+          "url": "https://www.fisheries.noaa.gov/species/striped-marlin",
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Florida Museum: blue marlin",
+          "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/blue-marlin/",
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "NOAA: Atlantic vessel permit",
+          "url": "https://www.fisheries.noaa.gov/permit/atlantic-highly-migratory-species-angling-permit-open-access",
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "NOAA: Atlantic billfish limits",
+          "url": "https://www.fisheries.noaa.gov/atlantic-highly-migratory-species/recreational-atlantic-billfish-fishery-statuses-minimum-sizes-and",
+          "checked": "2026-11-23"
+        }
+      ]
+    },
+    "white-sturgeon": {
+      "lastOwnRecordEdit": "2026-11-10",
+      "lastCrawl": "2026-11-13 18:13:24",
+      "sources": [
+        {
+          "title": "CDFW: identification and report cards",
+          "url": "https://wildlife.ca.gov/Conservation/Fishes/Sturgeon/report-card",
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "DFO: white and green sturgeon",
+          "url": "https://www.pac.dfo-mpo.gc.ca/fm-gp/rec/docs/sturgeon-esturgeon-idguide-pub-eng.html",
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "ODFW: sturgeon fishing",
+          "url": "https://myodfw.com/fishing/species/sturgeon",
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Idaho Fish and Game: record measurement",
+          "url": "https://idfg.idaho.gov/fish/record/guidelines",
+          "checked": "2026-11-23"
+        },
+        {
+          "title": "Oregon Sea Grant: white sturgeon size and features",
+          "url": "https://seagrant.oregonstate.edu/WRF/native-fishes/sturgeons/white-sturgeon",
+          "checked": "2026-11-23"
+        }
+      ]
+    }
+  },
+  "licences": [
+    "us-federal",
+    "us-massachusetts",
+    "us-michigan",
+    "us-mississippi",
+    "us-missouri"
+  ],
+  "licenceResult": "Existing fees retained; source-check dates refreshed without changing contentModified. Massachusetts free-day additions deferred: Nov 14 crawl precedes Nov 19 own edit. Michigan March 2 official notice confirms the additional USD 1 annual surcharge.",
+  "extraAI": "Perplexity 0 completed / 5 attempted; sign-in required. Grok sign-in required for both research questions. Google AI Overviews captured for both species."
+}
