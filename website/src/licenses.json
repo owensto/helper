@@ -5378,19 +5378,21 @@
         "url": "https://www.gov.uk/fishing-licences"
       },
       "buyUrl": "https://get-fishing-licence.service.gov.uk/",
-      "summary": "Anglers aged 13 and above need a rod licence for salmon, trout, freshwater fish, smelt or eel. They also need the land or fishery owner's permission, including on private fishing lakes.",
+      "summary": "Anglers aged 13 and older need an England and Wales rod fishing licence for salmon, trout, freshwater fish, smelt or eel, plus landowner or fishery permission. Children under 13 need no licence, ages 13–16 get a free junior licence, and 12-month concessions apply at 66+ or with qualifying disability benefits.",
       "whoNeedsOne": [
-        "Anglers aged 13 and above who target the listed species in England, Wales or the Border Esk region.",
-        "The River Tweed is outside this licence system."
+        "Anglers aged 13 and older fishing with rod and line for salmon, trout, freshwater fish, smelt or eel in England (except the River Tweed), Wales, and the Border Esk region (including parts in Scotland).",
+        "Applies on private land too, including angling club waters and private fishing lakes.",
+        "You also need permission (a day ticket or club permit) from the landowner or fishery owner."
       ],
       "exemptions": [
-        "Children under 13 need no rod licence.",
-        "Children aged 13–16 need a free junior licence.",
-        "A carer who does not fish needs no licence."
+        "Children under 13 do not need a rod fishing licence.",
+        "Junior anglers aged 13 to 16 must hold a junior licence, which is free for 12 months (covers trout, coarse, salmon and sea trout).",
+        "Carers accompanying someone who is fishing do not need a licence unless they fish themselves.",
+        "Fishing in the River Tweed or elsewhere in Scotland outside the Border Esk does not require an England and Wales rod licence (landowner or club permission still applies)."
       ],
       "options": [
         {
-          "name": "Trout and coarse, up to two rods",
+          "name": "Trout and coarse, up to 2 rods",
           "who": "any",
           "duration": "1 day",
           "price": 7.3,
@@ -5398,7 +5400,7 @@
           "water": "freshwater"
         },
         {
-          "name": "Trout and coarse, up to two rods",
+          "name": "Trout and coarse, up to 2 rods",
           "who": "any",
           "duration": "8 days",
           "price": 14.7,
@@ -5406,7 +5408,31 @@
           "water": "freshwater"
         },
         {
-          "name": "Trout and coarse, up to two rods",
+          "name": "Trout and coarse, up to 2 rods",
+          "who": "any",
+          "duration": "12 months",
+          "price": 36.8,
+          "currency": "GBP",
+          "water": "freshwater"
+        },
+        {
+          "name": "Trout and coarse, up to 3 rods (excludes non-migratory trout)",
+          "who": "any",
+          "duration": "12 months",
+          "price": 55.3,
+          "currency": "GBP",
+          "water": "freshwater"
+        },
+        {
+          "name": "Trout and coarse, up to 2 rods (66+ or disabled concession)",
+          "who": "any",
+          "duration": "12 months",
+          "price": 24.5,
+          "currency": "GBP",
+          "water": "freshwater"
+        },
+        {
+          "name": "Trout and coarse, up to 3 rods (66+ or disabled concession)",
           "who": "any",
           "duration": "12 months",
           "price": 36.8,
@@ -5436,6 +5462,22 @@
           "price": 93.1,
           "currency": "GBP",
           "water": "both"
+        },
+        {
+          "name": "Salmon and sea trout (66+ or disabled concession)",
+          "who": "any",
+          "duration": "12 months",
+          "price": 62.0,
+          "currency": "GBP",
+          "water": "both"
+        },
+        {
+          "name": "Junior licence (ages 13–16, all licence types)",
+          "who": "any",
+          "duration": "12 months",
+          "price": 0,
+          "currency": "GBP",
+          "water": "both"
         }
       ],
       "extras": [
@@ -5446,32 +5488,71 @@
           "currency": "GBP"
         }
       ],
-      "saltwater": "Targeting salmon or sea trout requires the appropriate rod licence. Confirm the rules for other tidal species and locations.",
+      "saltwater": "The England and Wales rod licence is required for salmon, trout, freshwater fish, smelt and eel with rod and line, including tidal salmon and sea trout. Other marine species are outside the freshwater rod licence; check local Inshore Fisheries and Conservation Authority (IFCA) and national sea angling rules before fishing coastal waters.",
       "guidedTrips": null,
       "keyRules": [
-        "Show a valid rod licence when requested.",
-        "Observe the rod limits for the licence and species.",
-        "Submit the annual salmon and sea trout catch return even if you did not fish.",
-        "Follow national and local fishing byelaws."
+        "Fishing without a valid rod licence carries a fine of up to £2,500.",
+        "Show your rod licence when requested; you can buy up to 30 days before your start date (email/text usually arrives within 1 hour, post within 10 working days).",
+        "Rod limits: 2-rod trout/coarse allows 1 rod for non-migratory trout in rivers/streams/drains/canals, up to 2 in lakes/reservoirs/ponds, and up to 2 for other freshwater fish; 3-rod 12-month covers up to 3 rods for non-trout freshwater fish. Spod and marker rods without hooks are excluded.",
+        "Salmon and sea trout holders must submit an annual catch return even if they did not fish.",
+        "Follow national and regional Environment Agency and Natural Resources Wales byelaws, including closed seasons and landowner rules."
       ],
-      "howToBuy": "Buy online through GOV.UK or call the Environment Agency licence service on 0344 800 5386.",
+      "howToBuy": "Buy online on GOV.UK (English or Welsh) up to 30 days before your start date, or call the Environment Agency fishing licence service on 0344 800 5386 (Monday to Friday, 8am to 6pm). Concession applicants on PIP or DLA need their National Insurance number.",
       "sources": [
         {
-          "title": "Rod licence and water permission",
-          "url": "https://www.gov.uk/fishing-licences"
+          "title": "GOV.UK — When you need a rod fishing licence",
+          "url": "https://www.gov.uk/fishing-licences/when-you-need-a-licence"
         },
         {
-          "title": "Current licence prices and purchase",
+          "title": "GOV.UK — Buy a rod fishing licence (prices and concessions)",
           "url": "https://www.gov.uk/fishing-licences/buy-a-fishing-licence"
         },
         {
-          "title": "Licence types and rod limits",
+          "title": "GOV.UK — Types of licences and rod limits",
           "url": "https://www.gov.uk/fishing-licences/types-of-licences-and-rod-limits"
+        },
+        {
+          "title": "GOV.UK — Fishing in Scotland and Northern Ireland",
+          "url": "https://www.gov.uk/fishing-licences/fishing-in-scotland-and-northern-ireland"
+        },
+        {
+          "title": "GOV.UK — Freshwater rod fishing rules",
+          "url": "https://www.gov.uk/freshwater-rod-fishing-rules"
         }
       ],
-      "checked": "2026-11-21",
+      "checked": "2026-11-25",
       "checkOfficial": "Confirm the fishery ticket, local season and any guided-trip package.",
-      "contentModified": "2026-11-15"
+      "contentModified": "2026-11-25",
+      "faqs": [
+        {
+          "q": "How much is a fishing licence in England and Wales?",
+          "a": "A trout and coarse licence (up to 2 rods) costs £7.30 for 1 day, £14.70 for 8 days, or £36.80 for 12 months (£55.30 for up to 3 rods). A salmon and sea trout licence costs £13.50 for 1 day, £30.50 for 8 days, or £93.10 for 12 months. There are no concession discounts on 1-day or 8-day licences."
+        },
+        {
+          "q": "What age do you need a fishing licence in England and Wales?",
+          "a": "Children under 13 do not need a rod fishing licence. Anglers aged 13 to 16 need a junior licence, which is free for 12 months and covers trout, coarse fish, salmon and sea trout. Full adult fees start at age 17."
+        },
+        {
+          "q": "Who qualifies for a senior or disabled fishing licence concession?",
+          "a": "Anglers aged 66 or over, and disabled anglers who hold or qualify for a Blue Badge or receive Personal Independence Payment (PIP, any rate) or Disability Living Allowance (DLA), pay reduced 12-month fees: £24.50 for 2-rod trout and coarse, £36.80 for 3-rod trout and coarse, or £62.00 for salmon and sea trout."
+        },
+        {
+          "q": "Is the fishing licence for Wales the same as England?",
+          "a": "Yes. One rod fishing licence bought through GOV.UK covers England (except the River Tweed), all of Wales, and the Border Esk region including its Scottish stretch. You still need local fishery or club permission and must follow regional byelaws."
+        },
+        {
+          "q": "What is the difference between a 2-rod and 3-rod licence?",
+          "a": "A 2-rod trout and coarse licence lets you use up to 2 rods for freshwater fish (1 rod for non-migratory trout in rivers, streams, drains and canals; up to 2 in lakes and reservoirs). The 12-month 3-rod licence (£55.30, or £36.80 concession) adds a third rod for non-trout freshwater fish only; 3-rod cover is not sold as a 1-day or 8-day licence."
+        },
+        {
+          "q": "Do you need a rod licence for sea fishing in England and Wales?",
+          "a": "The GOV.UK rod fishing licence applies when fishing with rod and line for salmon, trout, freshwater fish, smelt or eel, including tidal salmon and sea trout. Other marine species are not covered by the freshwater rod licence, though local fishery rules and size limits still apply."
+        },
+        {
+          "q": "Do you need a rod licence on private fishing lakes, and what is the fine?",
+          "a": "Yes. You need both a valid rod fishing licence and the landowner's or fishery owner's permission (such as a day ticket or club membership) even on private lakes. Fishing without a valid rod licence can result in a fine of up to £2,500."
+        }
+      ]
     },
     {
       "id": "gb-scotland",
