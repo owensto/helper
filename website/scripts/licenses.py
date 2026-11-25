@@ -107,7 +107,7 @@ def trip_panel(trip, rec, permits, federal):
                 f'<li><b>{E(o.get("duration") or o["name"])}</b><span>{E(price_text(o) or o["name"])}</span></li>' for o in visitor) + '</ul>'
         if rec.get('howToBuy'):
             h += f'<p class="small">{E(rec["howToBuy"])}</p>'
-        h += f'<div class="lic-actions">{buy_button(rec)}<a class="btn btn-quiet" href="{page_path(rec)}">{E(rec["name"])} licence steps</a></div>'
+        h += f'<div class="lic-actions">{buy_button(rec)}<a class="btn btn-quiet" href="{page_path(rec)}">{E(rec["name"])} licence prices and rules</a></div>'
     else:
         h += f'<h2>Fishing licence for {E(trip["country"])}</h2><p>Rules depend on the exact water. Ask your guide or the local fisheries office which licence covers this trip.</p>'
     extra = p.get('permits') or []
@@ -180,6 +180,7 @@ STYLE = """<style>
 .lic-note{font-size:13px;color:var(--muted);margin-top:14px}
 .lic-hub .lic-search{max-width:560px;margin:0 0 36px}
 .lic-hub .lic-search input{font-size:17px;padding:16px 18px;border-radius:14px}
+.lic-hub .lic-table{overflow-x:auto}.lic-hub .lic-table table{min-width:760px}
 .lic-hub .lic-group{margin:0 0 36px}
 .lic-hub .lic-group h2{font-size:24px;margin-bottom:12px}
 .lic-hub-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:8px}
@@ -299,7 +300,7 @@ def jurisdiction_page(r, trips):
     srcs = r.get('sources', [])
     more += f'<details class="lic-sources"><summary>Sources ({len(srcs)})</summary><ol>' + ''.join(
         f'<li>{link(s["url"], s.get("title") or s["url"])}</li>' for s in srcs) + '</ol><p class="small">Prices and rules change. Confirm on the official site before you fish.</p></details>'
-    body += f'<section class="lic-step lic-more"><h2>More detail</h2>{more}</section>'
+    body += f'<section class="lic-step lic-more"><h2>Questions before your trip</h2>{more}</section>'
     if trips:
         body += f'<section class="lic-step"><h2>Trips in {E(name)}</h2><div class="lic-trips">' + ''.join(
             f'<a href="{t.get("canonicalPath", "/trips/" + t["id"] + "/")}">{E(t["title"])}</a>' for t in trips[:8]) + '</div></section>'
@@ -509,7 +510,13 @@ def install(pages, root, add, trips):
     groups = {}
     for r in recs:
         groups.setdefault(r['country'], []).append(r)
-    body = STYLE + f'<div class="wrap lic-page lic2 lic-hub"><header><span class="eyebrow">FISHING LICENSES</span><h1>Fishing licenses by state and country</h1><p class="lic-answer">Pick the place you will fish. See who needs a licence, the visitor price, and the official link to buy it.</p></header>'
+    hub = json.loads((root / 'src/license-hub.json').read_text())
+    body = STYLE + f'<div class="wrap lic-page lic2 lic-hub"><header><span class="eyebrow">FISHING LICENSES</span><h1>Fishing license and licence prices by state and country</h1><p class="lic-answer">Buy a fishing licence for the place and water you plan to fish. Your age, residency and trip length determine which option fits. Use the official links below to check exemptions, compare resident prices and find visitor permits. Check extra stamps and access permits before you leave for your trip.</p><p class="small">Updated {nice_date(hub["updated"])} · By <a href="/about/">Castward</a></p></header>'
+    body += '<section><h2>How much is a fishing licence in these 15 places?</h2><div class="guide-table lic-table" role="region" tabindex="0" aria-label="Resident fishing licence prices"><table><thead><tr><th scope="col">Place</th><th scope="col">Resident adult price</th><th scope="col">What it covers</th><th scope="col">Official source and purchase</th></tr></thead><tbody>'
+    for row in hub['rows']:
+        r = by_id[row['id']]
+        body += f'<tr><th scope="row"><a href="{page_path(r)}">{E(r["name"])}</a></th><td>{E(row["price"])}</td><td>{E(row["scope"])}</td><td>{link(row["source"], "Source")} · {link(r["buyUrl"], "Official purchase")}<br><small>Checked {nice_date(row["checked"])}</small></td></tr>'
+    body += '</tbody></table></div><p class="lic-note">Each row names its water type and term. These are not interchangeable licences. Visitor prices, stamps, access permits and purchase fees can differ. Open the place page before you buy.</p></section>'
     body += f'<p><a class="link" href="{COMPARE}">Trip to another state? Compare non-resident prices for all 50 states</a></p>'
     body += '<label class="lic-search"><span>Where will you fish?</span><input type="search" placeholder="Try “Alaska”, “Norway” or “Queensland”" data-lic-filter></label><div>'
     order = ['United States', 'Canada', 'Mexico'] + sorted(c for c in groups if c not in ('United States', 'Canada', 'Mexico'))
@@ -525,7 +532,13 @@ def install(pages, root, add, trips):
                    else '<span>Permits sold per water</span>' if kind == 'local' else '<span>Online purchase link</span>' if r.get('buyUrl') else '<span>Where to get it</span>')
             body += f'<li data-lic-name="{E((r["name"] + " " + r["country"]).lower(), quote=True)}"><a href="{page_path(r)}"><b>{E(r["name"])}</b>{sub}</a></li>'
         body += '</ul></section>'
-    body += '</div><p><a class="link" href="/guides/florida-visitor-fishing-license-planner/">Florida visitors: check shore, pier, and charter coverage</a>.</p><p class="small">Checked ' + MONTH + ' against official sources. Always confirm on the official site before you fish.</p></div>'
+    body += '</div><p><a class="link" href="/guides/florida-visitor-fishing-license-planner/">Florida visitors: check shore, pier, and charter coverage</a>.</p>'
+    body += '<section class="lic-more"><h2>What should you check before buying a fishing license?</h2>'
+    body += ''.join(f'<details><summary>{E(x["q"])}</summary><p>{E(x["a"])}</p></details>' for x in hub['faq'])
+    body += f'<details><summary>Sources ({len(hub["rows"])})</summary><ol>' + ''.join(f'<li>{link(x["source"], by_id[x["id"]]["authority"]["name"] + " — " + by_id[x["id"]]["name"])}</li>' for x in hub['rows']) + '</ol></details></section></div>'
+    faq_schema = {'@context': 'https://schema.org', '@type': 'FAQPage', 'mainEntity': [
+        {'@type': 'Question', 'name': x['q'], 'acceptedAnswer': {'@type': 'Answer', 'text': x['a']}} for x in hub['faq']]}
+    body += '<script type="application/ld+json">' + json.dumps(faq_schema, ensure_ascii=False).replace('</', '<\\/') + '</script>'
     body += '<script>(()=>{const i=document.querySelector("[data-lic-filter]");if(!i)return;i.addEventListener("input",()=>{const q=i.value.trim().toLowerCase();document.querySelectorAll("[data-lic-group]").forEach(g=>{let n=0;g.querySelectorAll("li").forEach(li=>{const m=!q||li.dataset.licName.includes(q);li.hidden=!m;n+=m});g.hidden=!n;});});})();</script>'
     listing = {'@context': 'https://schema.org', '@type': 'ItemList',
                'name': 'Fishing licenses by state and country', 'numberOfItems': len(recs),
@@ -533,12 +546,13 @@ def install(pages, root, add, trips):
                                     'url': 'https://castward.app' + page_path(r)}
                                    for i, r in enumerate([r for _, rs in blocks for r in sorted(rs, key=lambda r: r['name'])], 1)]}
     body += '<script type="application/ld+json">' + json.dumps(listing, ensure_ascii=False).replace('</', '<\\/') + '</script>'
-    add(HUB, 'Fishing Licenses by State and Country | Castward',
-        f'Fishing licence rules for {len(recs)} US states, Canadian provinces and countries: who needs one, visitor prices and official links to buy.', body, 'article')
+    add(HUB, 'Fishing License & Licence Prices by State and Country',
+        'Find fishing license prices, age rules and official purchase links by state and country. Compare 15 resident options and plan your visitor permit.', body, 'article')
     cmp_body, cmp_sources, cmp_date = compare_page(recs)
     add(COMPARE, 'Non-Resident Fishing License Cost by State: Trip Prices',
         'What a fishing licence costs for a trip to another state: 3-day, 7-day and full-year non-resident prices for all 50 states, from each state agency.', cmp_body, 'article')
     pages[COMPARE]['modified'] = max(cmp_date, '2026-11-22')
     pages[COMPARE]['citations'] = cmp_sources
-    pages[HUB]['modified'] = max(r.get('contentModified', max(r['checked'], '2026-11-15')) for r in recs)
+    pages[HUB]['modified'] = hub['updated']
+    pages[HUB]['citations'] = [x['source'] for x in hub['rows']]
     return len(recs), sum(len(v) for v in per_rec.values())

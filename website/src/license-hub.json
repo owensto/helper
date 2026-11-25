@@ -1,0 +1,132 @@
+{
+  "updated": "2026-11-24",
+  "rows": [
+    {
+      "id": "ca-british-columbia",
+      "price": "CAD 41.15",
+      "scope": "B.C. resident adult annual freshwater licence; tidal water and special stamps are separate.",
+      "source": "https://www2.gov.bc.ca/gov/content/sports-culture/recreation/fishing-hunting/fishing/recreational-freshwater-fishing-licence",
+      "checked": "2026-11-24"
+    },
+    {
+      "id": "gb-england-and-wales",
+      "price": "GBP 36.80",
+      "scope": "12 months, trout and coarse fish, up to two rods. Water-owner permission is separate.",
+      "source": "https://www.gov.uk/fishing-licences/buy-a-fishing-licence",
+      "checked": "2026-11-24"
+    },
+    {
+      "id": "au-western-australia",
+      "price": "AUD 40 / AUD 50",
+      "scope": "12 months: powered-boat fishing / south-west freshwater angling. Other licensed activities cost extra.",
+      "source": "https://www.dpird.wa.gov.au/individuals/recreational-fishing/get-a-recreational-fishing-licence/",
+      "checked": "2026-11-24"
+    },
+    {
+      "id": "ca-ontario",
+      "price": "CAD 26.57",
+      "scope": "Ontario resident one-year sport licence, before HST; Outdoors Card costs CAD 8.57.",
+      "source": "https://www.ontario.ca/files/2025-12/mnr-2026-fishing-regulations-summary-en-2025-12-08.pdf",
+      "checked": "2026-11-24"
+    },
+    {
+      "id": "us-west-virginia",
+      "price": "USD 19 + USD 5",
+      "scope": "Resident annual fishing licence plus Conservation Stamp; trout coverage is separate.",
+      "source": "https://wvdnr.gov/wp-content/uploads/2026/02/Pub_Regs_Fishing_2026_DNR_WILD_pp.pdf",
+      "checked": "2026-11-24"
+    },
+    {
+      "id": "us-louisiana",
+      "price": "USD 17",
+      "scope": "Resident annual Basic Fishing licence. Saltwater coverage costs extra.",
+      "source": "https://www.eregulations.com/assets/docs/resources/LA/26LAFW_LR4.pdf",
+      "checked": "2026-11-24"
+    },
+    {
+      "id": "au-victoria",
+      "price": "AUD 40.80",
+      "scope": "One year, online price; the full-price option is AUD 43.30.",
+      "source": "https://vfa.vic.gov.au/recreational-fishing/fishing-licence",
+      "checked": "2026-11-24"
+    },
+    {
+      "id": "br-national",
+      "price": "BRL 20 / BRL 60",
+      "scope": "Federal annual licence: shore / boat fishing; local restrictions still apply.",
+      "source": "https://www.gov.br/pt-br/servicos/solicitar-licenca-de-pescador-amador-ou-esportivoo?id=23799&origem=servico",
+      "checked": "2026-11-24"
+    },
+    {
+      "id": "nz-fish-and-game",
+      "price": "NZD 158",
+      "scope": "Resident adult whole-season licence; Fish & Game regions, excluding Taupō.",
+      "source": "https://www.fishandgame.org.nz/about-us/national-newsletters/2026-27-fishing-licences-available-now",
+      "checked": "2026-11-24"
+    },
+    {
+      "id": "fr-france",
+      "price": "Varies by card and association",
+      "scope": "No single nationwide adult total. Select the fishing association and waters before purchase.",
+      "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2117",
+      "checked": "2026-11-24"
+    },
+    {
+      "id": "us-kansas",
+      "price": "USD 27.50",
+      "scope": "Resident annual fishing licence; special permits can cost extra.",
+      "source": "https://kdwpt.ks.gov/Fishing/Fishing-Application-and-Fees",
+      "checked": "2026-11-24"
+    },
+    {
+      "id": "us-maine",
+      "price": "USD 30",
+      "scope": "Resident season fishing licence, age 16 and older.",
+      "source": "https://www1.maine.gov/ifw/fishing-boating/fishing/laws-rules/license-requirements.html",
+      "checked": "2026-11-24"
+    },
+    {
+      "id": "ca-manitoba",
+      "price": "CAD 29.40",
+      "scope": "Manitoba resident annual angling licence; use the current fee schedule.",
+      "source": "https://www.gov.mb.ca/elicensing/fees.html",
+      "checked": "2026-11-24"
+    },
+    {
+      "id": "us-maryland",
+      "price": "USD 32 / USD 15",
+      "scope": "Resident annual non-tidal / Chesapeake Bay and coastal licence. Trout stamp is separate.",
+      "source": "https://dnr.maryland.gov/Pages/service_fishing_license.aspx",
+      "checked": "2026-11-24"
+    },
+    {
+      "id": "za",
+      "price": "Marine fee: not stated",
+      "scope": "The DFFE announcement links to marine permits but gives no price. Western Cape freshwater permits are separate.",
+      "source": "https://www.dffe.gov.za/mediareleases/onlineapplication_recreationalfishingpermits",
+      "checked": "2026-11-24"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Is there one fishing license for every state and country?",
+      "a": "Choose the jurisdiction where you will fish. A home-state licence is not a worldwide pass. Check border-water agreements, the water type and any local permit before you travel. This directory links to the agency for each place."
+    },
+    {
+      "q": "How much does a fishing licence cost?",
+      "a": "The price depends on the place, your residency, age, water type and trip length. The table shows named resident options in their own currencies, not equivalent worldwide packages. For a US holiday, use our separate 3-day, 7-day and annual non-resident comparison."
+    },
+    {
+      "q": "Where can I buy a fishing license online?",
+      "a": "Choose your destination below, then follow its official purchase link. For example, England and Wales uses the government rod-licence service; British Columbia uses WILD for freshwater fishing. Castward compares the rules and sends you to the issuing service; it does not sell licences."
+    },
+    {
+      "q": "Do children need a fishing licence?",
+      "a": "There is no single age rule. In England and Wales, children aged 13 to 16 need a free junior rod licence. B.C. residents under 16 do not need a basic freshwater licence. Check the destination page for the rule that applies to your child and water."
+    },
+    {
+      "q": "Does a freshwater fishing licence cover the sea or a charter?",
+      "a": "Check before you book. Western Australia has a separate powered-boat licence and named activity licences. British Columbia separates freshwater and tidal licences. Charter exemptions also depend on the place, so confirm which licence the operator covers and which permits you must buy yourself."
+    }
+  ]
+}

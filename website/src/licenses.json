@@ -8821,7 +8821,7 @@
           "url": "https://dec.ny.gov/sites/default/files/2026-03/fishguide26.pdf"
         }
       ],
-      "checked": "2026-11-11",
+      "checked": "2026-11-24",
       "checkOfficial": "Use the authority page to confirm the current online purchase link. Confirm whether a guided trip covers the client's licence.",
       "contentModified": "2026-11-19",
       "freeDays": {
@@ -8832,7 +8832,7 @@
         "nonResidents": "yes",
         "notes": "Waives the freshwater fishing licence only, for age 16 and older. All other fishing regulations apply.",
         "source": "https://dec.ny.gov/node/123581",
-        "checked": "2026-11-22"
+        "checked": "2026-11-24"
       }
     },
     {
@@ -8913,7 +8913,7 @@
           "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_113/GS_113-271.html"
         }
       ],
-      "checked": "2026-11-11",
+      "checked": "2026-11-24",
       "checkOfficial": "Confirm inland licence fees, tribal permits, and charter coverage.",
       "contentModified": "2026-11-15",
       "freeDays": {
@@ -8924,7 +8924,7 @@
         "nonResidents": "yes",
         "notes": "No hook-and-line licence needed in public waters. All other laws and rules apply.",
         "source": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_113/GS_113-276.html",
-        "checked": "2026-11-22"
+        "checked": "2026-11-24"
       }
     },
     {
@@ -9011,7 +9011,7 @@
           "url": "https://gf.nd.gov/licensing/nonresident"
         }
       ],
-      "checked": "2026-11-11",
+      "checked": "2026-11-24",
       "checkOfficial": "Use the authority page to confirm the current online purchase link. Confirm whether a guided trip covers the client's licence.",
       "contentModified": "2026-11-19",
       "freeDays": {
@@ -9022,7 +9022,7 @@
         "nonResidents": "no",
         "notes": "Residents only. Paddlefish is not included. Nonresidents need a licence.",
         "source": "https://gf.nd.gov/gnf/regulations/docs/fish/Fishing-Guide-2026-2028.pdf",
-        "checked": "2026-11-22"
+        "checked": "2026-11-24"
       }
     },
     {
@@ -9087,9 +9087,13 @@
         {
           "title": "Fishing licences and exemptions",
           "url": "https://ohiodnr.gov/buy-and-apply/hunting-fishing-boating/fishing-resources/fishing-licenses"
+        },
+        {
+          "title": "2026 Ohio fishing regulations and licence fees",
+          "url": "https://dam.assets.ohio.gov/image/upload/ohiodnr.gov/documents/wildlife/laws-regs-licenses/OhioFishingRegs_English.pdf"
         }
       ],
-      "checked": "2026-11-11",
+      "checked": "2026-11-24",
       "checkOfficial": "Use the authority page to confirm the current online purchase link. Confirm whether a guided trip covers the client's licence.",
       "contentModified": "2026-11-19",
       "freeDays": {
@@ -9100,7 +9104,7 @@
         "nonResidents": "no",
         "notes": "Ohio residents only. All size and daily limits apply.",
         "source": "https://codes.ohio.gov/ohio-administrative-code/rule-1501:31-13-10",
-        "checked": "2026-11-22"
+        "checked": "2026-11-24"
       }
     },
     {
@@ -9180,7 +9184,7 @@
           "url": "https://www.wildlifedepartment.com/fishing/regs/trout-regulations"
         }
       ],
-      "checked": "2026-11-11",
+      "checked": "2026-11-24",
       "checkOfficial": "Confirm land-access permit prices, local fishing permits, and guide coverage.",
       "contentModified": "2026-11-15",
       "freeDays": {
@@ -9191,7 +9195,7 @@
         "nonResidents": "yes",
         "notes": "No state licence needed for anyone. A free paddlefish permit is still required. Some city permits may still be required.",
         "source": "https://www.wildlifedepartment.com/fishing/regs/regulation-changes",
-        "checked": "2026-11-22"
+        "checked": "2026-11-24"
       }
     },
     {
