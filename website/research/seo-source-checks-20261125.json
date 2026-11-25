@@ -1,0 +1,57 @@
+{
+  "checked": "2026-11-25",
+  "scope": "Five oldest licence records. Fees retained. Check dates do not change contentModified.",
+  "jurisdictions": [
+    {
+      "id": "us-oregon",
+      "result": "ODFW fee schedule confirms USD 29 one day, 68 three days, 138 nonresident annual and 89 combined tag. Ocean Endorsement page confirms 9 annual and 4 daily. Official free days remain February 14–15, June 6–7 and November 27–28.",
+      "sources": [
+        "https://www.dfw.state.or.us/agency/budget/docs/25-27/Updated%20Recreational%20License%20Fee%20Schedule%20Table.pdf",
+        "https://myodfw.com/articles/ocean-endorsement",
+        "https://myodfw.com/articles/2026-free-fishing-days-and-events"
+      ]
+    },
+    {
+      "id": "us-pennsylvania",
+      "result": "PFBC 2026 price page confirms 31.97 one/three day, 39.47 seven day and 60.97 annual. One-day restriction remains March 15–April 30. Free days confirmed May 24 and July 4.",
+      "sources": [
+        "https://www.pa.gov/agencies/fishandboat/fishing/buy-fishing-license-permit",
+        "https://www.pa.gov/agencies/fishandboat/fishing/regulations"
+      ]
+    },
+    {
+      "id": "us-rhode-island",
+      "result": "Dedicated fee page confirms 41 annual, 20 three day and 6 trout stamp. Marine page confirms 10 annual and 5 seven day. Agency FAQ shows conflicting older fees; dedicated fee table retained. Official 2026 guide confirms May 2–3 free days; date expansion awaits crawl inspection.",
+      "sources": [
+        "https://dem.ri.gov/natural-resources-bureau/natural-resources-divisions/fish-wildlife/freshwater-fishing/licenses-0",
+        "https://dem.ri.gov/office-divisions/natural-resources-bureau/natural-resources-divisions/marine-fisheries-1",
+        "https://dem.ri.gov/sites/g/files/xkgbur861/files/2026-03/fw-abstract.pdf"
+      ]
+    },
+    {
+      "id": "us-south-carolina",
+      "result": "Agency table confirms 11/35 freshwater and 10/35/75 saltwater visitor options, plus 500 shrimp baiting. Section 50-9-730 confirms resident freshwater exemption on July 4 and observed Memorial Day.",
+      "sources": [
+        "https://www.dnr.sc.gov/licenses/pricingnonresident.html",
+        "https://www.dnr.sc.gov/licenses/genlicense.html",
+        "https://www.scstatehouse.gov/code/t50c009.php"
+      ]
+    },
+    {
+      "id": "us-south-dakota",
+      "result": "Agency table and 2026 handbook confirm 26 one day, 45 three days and 80 annual. Handbook confirms 25 habitat stamp, one-day exemption and age 18 threshold. Handbook gives May 15–17 free weekend; added content awaits crawl inspection.",
+      "sources": [
+        "https://gfp.sd.gov/license-types/",
+        "https://gfp.sd.gov/UserDocs/nav/FishingHandbook_2026.pdf"
+      ]
+    }
+  ],
+  "browser": {
+    "status": "unavailable",
+    "errors": [
+      "runtime_timeout: Timed out waiting for the Orca runtime to respond.",
+      "runtime_open_timeout: Timed out waiting for an Orca desktop window. The runtime may still be running headlessly."
+    ],
+    "effect": "Fresh GSC last-crawl, manual actions, security, CWV and indexing requests could not be completed. No repeated own-content edits or trip releases."
+  }
+}
