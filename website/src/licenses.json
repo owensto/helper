@@ -11469,26 +11469,30 @@
         "url": "https://vfa.vic.gov.au/recreational-fishing/fishing-licence"
       },
       "buyUrl": "https://service.vic.gov.au/find-services/outdoor-and-recreation/buy-a-victorian-recreational-fishing-licence/",
-      "summary": "Most anglers aged 18 to 69 need a recreational fishing licence. The same licence covers fresh and salt water, but another state's licence does not cover Victoria.",
+      "summary": "Most anglers aged 18 to 69 need a Victorian Recreational Fishing Licence (RFL) to fish any public marine, estuarine or inland water in Victoria. For 2026–27 (from 1 July 2026, GST-exempt), licences cost $10.00 AUD for 3 days, $24.70 for 28 days, $40.80 online ($43.30 in person) for 1 year, and $111.20 online ($117.40 in person) for 3 years. People under 18, aged 70 and over, Aboriginal and Torres Strait Islander people, and holders of qualifying Seniors, Veterans or Pensioner cards are exempt.",
       "whoNeedsOne": [
-        "People who take or try to take fish, bait or shellfish from public waters, unless exempt."
+        "Anglers aged 18 to 69 who take or attempt to take any fish, bait, shellfish, yabbies or prawns from public waters in Victoria, unless exempt.",
+        "Anyone aged 18 to 69 using or possessing recreational fishing equipment in, on or next to Victorian waters, unless exempt."
       ],
       "exemptions": [
-        "People under 18 or aged 70 and over.",
-        "Aboriginal and Torres Strait Islander people.",
-        "Holders of the specified senior, veteran and pensioner concession cards."
+        "People under 18 years of age or aged 70 years and over.",
+        "Holders of a Victorian Seniors Card or an interstate equivalent Seniors Card.",
+        "Holders of a Victorian Veterans Card, Veterans' Affairs Pensioner Card, or Department of Veterans' Affairs (DVA) Gold Card coded TPI.",
+        "Holders of a Commonwealth Pensioner Concession Card coded DSP, DSP Blind, AGE, AGE Blind, or CAR.",
+        "People who identify as Aboriginal or Torres Strait Islander.",
+        "Not exempt: ordinary Health Care Cards, Parenting Payment Single (PPS) and JobSeeker cards, Victorian Seniors Business Discount Cards, and DVA White or Orange Cards."
       ],
       "options": [
         {
-          "name": "Three-day licence",
+          "name": "3-day licence (online or agent)",
           "who": "any",
           "duration": "3 days",
-          "price": 10,
+          "price": 10.0,
           "currency": "AUD",
           "water": "both"
         },
         {
-          "name": "28-day licence",
+          "name": "28-day licence (online or agent)",
           "who": "any",
           "duration": "28 days",
           "price": 24.7,
@@ -11496,7 +11500,7 @@
           "water": "both"
         },
         {
-          "name": "Annual licence — online",
+          "name": "1-year licence — online (Service Victoria)",
           "who": "any",
           "duration": "1 year",
           "price": 40.8,
@@ -11504,30 +11508,93 @@
           "water": "both"
         },
         {
-          "name": "Three-year licence — online",
+          "name": "1-year licence — authorised agent (full price)",
+          "who": "any",
+          "duration": "1 year",
+          "price": 43.3,
+          "currency": "AUD",
+          "water": "both"
+        },
+        {
+          "name": "3-year licence — online (Service Victoria)",
           "who": "any",
           "duration": "3 years",
           "price": 111.2,
           "currency": "AUD",
           "water": "both"
+        },
+        {
+          "name": "3-year licence — authorised agent (full price)",
+          "who": "any",
+          "duration": "3 years",
+          "price": 117.4,
+          "currency": "AUD",
+          "water": "both"
         }
       ],
       "extras": [],
-      "saltwater": "The licence includes marine and estuary fishing.",
+      "saltwater": "One Victorian RFL covers all public marine, estuarine and inland waters across Victoria, including line fishing, spearfishing, prawning, yabbying, and bait or shellfish collection.",
       "guidedTrips": null,
       "keyRules": [
-        "Do not lend or transfer your licence.",
-        "Carry evidence if you claim a concession exemption."
+        "Do not lend or transfer your licence to another person; penalties apply for fishing without a current RFL.",
+        "Carry your qualifying concession card whenever you claim a Seniors, Veterans or Pensioner exemption.",
+        "Fisheries Officers accept a plastic RFL card, a digital RFL in the Service Victoria app (works offline in My wallet) or confirmation email, or a hand-written agent licence.",
+        "You can pre-date a licence up to 3 months ahead; plastic 1-year and 3-year cards take up to 4 weeks by post.",
+        "An interstate fishing licence does not cover Victoria, except for specific border-water arrangements such as reciprocal rules on Lake Hume."
       ],
-      "howToBuy": "Buy online through Service Victoria or from an authorised licence agent.",
+      "howToBuy": "Buy direct online through Service Victoria (cheapest for 1-year and 3-year licences, instant digital wallet and confirmation email) or in person from an authorised licence sales agent across Victoria (standard fees apply).",
       "sources": [
         {
-          "title": "Fishing licence and 2026–27 fees",
+          "title": "Victorian Fisheries Authority: Recreational Fishing Licence and 2026–27 fees",
           "url": "https://vfa.vic.gov.au/recreational-fishing/fishing-licence"
+        },
+        {
+          "title": "Service Victoria: Buy a Victorian recreational fishing licence",
+          "url": "https://service.vic.gov.au/find-services/outdoor-and-recreation/buy-a-victorian-recreational-fishing-licence/"
+        },
+        {
+          "title": "Victorian Fisheries Authority: Authorised licence outlets",
+          "url": "https://vfa.vic.gov.au/recreational-fishing/fishing-licence/find-a-licence-outlet"
+        },
+        {
+          "title": "Victorian Fisheries Authority: Reciprocal licences for Lake Hume",
+          "url": "https://vfa.vic.gov.au/recreational-fishing/fishing-licence/your-fishing-licence-fees-at-work/reciprocal-licences-for-lake-hume"
         }
       ],
-      "checked": "2026-11-21",
-      "contentModified": "2026-11-15"
+      "checked": "2026-11-26",
+      "contentModified": "2026-11-26",
+      "checkOfficial": "Listed fees are the official 2026–27 GST-exempt VFA prices effective from 1 July 2026. Check current size limits, bag limits and closures in the Victorian Recreational Fishing Guide before fishing.",
+      "description": "Victoria fishing licence fees 2026–27: $10 (3-day), $24.70 (28-day), $40.80/yr online. Age 18–69, Seniors Card and Pensioner exemptions, digital RFL.",
+      "faq": [
+        {
+          "q": "How much is a fishing licence in Victoria in 2026–27?",
+          "a": "From 1 July 2026 (GST-exempt), a 3-day licence costs $10.00 AUD and a 28-day licence costs $24.70 online or through an agent. Buying online via Service Victoria costs $40.80 for 1 year or $111.20 for 3 years, compared with full agent prices of $43.30 (1 year) and $117.40 (3 years)."
+        },
+        {
+          "q": "What age do you need a fishing licence in Victoria?",
+          "a": "Most anglers need a Victorian Recreational Fishing Licence from age 18 through 69. Anyone under 18 years of age or aged 70 and over is exempt and does not need to buy a licence."
+        },
+        {
+          "q": "Do Seniors Card holders need a fishing licence in Victoria?",
+          "a": "No. Holders of a Victorian Seniors Card or an interstate equivalent Seniors Card are exempt, provided they carry the card while fishing. However, a Victorian Seniors Business Discount Card does not qualify for the exemption."
+        },
+        {
+          "q": "Does a Health Care Card or Pensioner Concession Card exempt you from a Victorian fishing licence?",
+          "a": "Only specific Pensioner Concession Cards are exempt: Commonwealth Pensioner Concession Cards coded DSP, DSP Blind, AGE, AGE Blind or CAR, plus Veterans' Affairs Pensioner Cards, Victorian Veterans Cards and DVA Gold Cards coded TPI. Ordinary Health Care Cards, PPS, JobSeeker cards, and DVA White or Orange Cards are not exempt."
+        },
+        {
+          "q": "Does one Victorian fishing licence cover both freshwater and saltwater?",
+          "a": "Yes. One Victorian Recreational Fishing Licence covers all public marine, estuarine and inland waters across Victoria, including line fishing, bait or shellfish collection, yabby fishing, prawning and spearfishing."
+        },
+        {
+          "q": "Can interstate or overseas visitors use another state's fishing licence in Victoria?",
+          "a": "No. Visitors aged 18 to 69 need a Victorian RFL unless they hold an eligible interstate Seniors Card or Commonwealth concession card (or fish under a specific border-water arrangement such as Lake Hume). Visitors pay the same fees as Victorian residents."
+        },
+        {
+          "q": "How do I show proof of a digital Victorian fishing licence?",
+          "a": "Fisheries Officers accept a digital RFL in the Service Victoria app's My wallet section (available offline), your Service Victoria confirmation email, a plastic RFL card, or a hand-written licence from an authorised agent. You can also pre-date a licence up to 3 months ahead."
+        }
+      ]
     },
     {
       "id": "au-western-australia",

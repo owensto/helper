@@ -1,8 +1,3 @@
 User-agent: *
-Allow: /
-Disallow: /trips/?
-Disallow: /glossary/?
-Disallow: /tools/tides/?
-Disallow: /tools/weather/?
-Disallow: /plan/?
-Sitemap: https://castward.app/sitemap.xml
+Disallow: /
+# Preview build: set SITE_URL to generate production canonical URLs and sitemap.
