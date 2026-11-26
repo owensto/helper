@@ -4866,18 +4866,18 @@
       "checked": "2026-11-10"
     },
     "na-ca-ns-002": {
-      "lat": 62.4012455,
-      "lon": -115.7173651,
-      "label": "Bras d'or Lake",
-      "displayName": "Bras d'or Lake, North Slave Region, Northwest Territories, Canada",
-      "query": "Bras d’Or Lake, Canada",
+      "lat": 45.8274275,
+      "lon": -60.8020748,
+      "label": "Bras d'Or Lake",
+      "displayName": "Bras d'Or Lake, Red Islands, Municipality of the County of Richmond, Richmond County, Nova Scotia, Canada",
+      "query": "Bras d'Or Lake, Nova Scotia, Canada",
       "precision": "place-area",
-      "source": "https://www.openstreetmap.org/relation/1635819",
+      "source": "https://www.openstreetmap.org/relation/13467215",
       "osmType": "relation",
-      "osmId": 1635819,
-      "featureType": "lake",
+      "osmId": 13467215,
+      "featureType": "bay",
       "sourceProvider": "OpenStreetMap",
-      "checked": "2026-11-10"
+      "checked": "2026-11-26"
     },
     "na-ca-ns-003": {
       "lat": 44.648618,
@@ -7487,18 +7487,18 @@
       "checked": "2026-11-10"
     },
     "na-us-ia-003": {
-      "lat": 44.4071204,
-      "lon": -92.0485737,
-      "label": "Upper Mississippi River National Wildlife and Fish Refuge",
-      "displayName": "Upper Mississippi River National Wildlife and Fish Refuge, Buffalo County, Wisconsin, United States",
-      "query": "Mississippi River, Iowa, United States",
+      "lat": 43.3620647,
+      "lon": -91.2156355,
+      "label": "Lansing",
+      "displayName": "Lansing, Lansing Township, Allamakee County, Iowa, United States",
+      "query": "Lansing, Allamakee County, Iowa, United States",
       "precision": "place-area",
-      "source": "https://www.openstreetmap.org/relation/2276890",
+      "source": "https://www.openstreetmap.org/relation/128409",
       "osmType": "relation",
-      "osmId": 2276890,
-      "featureType": "nature_reserve",
+      "osmId": 128409,
+      "featureType": "administrative",
       "sourceProvider": "OpenStreetMap",
-      "checked": "2026-11-10"
+      "checked": "2026-11-26"
     },
     "na-us-id-001": {
       "lat": 44.1016083,
@@ -7613,18 +7613,18 @@
       "checked": "2026-11-10"
     },
     "na-us-il-001": {
-      "lat": 43.8556466,
-      "lon": -87.0818686,
-      "label": "Lake Michigan",
-      "displayName": "Lake Michigan, United States",
-      "query": "Lake Michigan",
+      "lat": 41.8755616,
+      "lon": -87.6244212,
+      "label": "Chicago",
+      "displayName": "Chicago, South Chicago Township, Cook County, Illinois, United States",
+      "query": "Chicago, Illinois, United States",
       "precision": "place-area",
-      "source": "https://www.openstreetmap.org/relation/1205149",
+      "source": "https://www.openstreetmap.org/relation/122604",
       "osmType": "relation",
-      "osmId": 1205149,
-      "featureType": "lake",
+      "osmId": 122604,
+      "featureType": "administrative",
       "sourceProvider": "OpenStreetMap",
-      "checked": "2026-11-10"
+      "checked": "2026-11-26"
     },
     "na-us-il-002": {
       "lat": 38.1112343,
@@ -7669,18 +7669,18 @@
       "checked": "2026-11-10"
     },
     "na-us-in-001": {
-      "lat": 43.8556466,
-      "lon": -87.0818686,
-      "label": "Lake Michigan",
-      "displayName": "Lake Michigan, United States",
-      "query": "Lake Michigan",
+      "lat": 41.7075394,
+      "lon": -86.8950297,
+      "label": "Michigan City",
+      "displayName": "Michigan City, LaPorte County, Indiana, United States",
+      "query": "Michigan City, Indiana, United States",
       "precision": "place-area",
-      "source": "https://www.openstreetmap.org/relation/1205149",
+      "source": "https://www.openstreetmap.org/relation/127358",
       "osmType": "relation",
-      "osmId": 1205149,
-      "featureType": "lake",
+      "osmId": 127358,
+      "featureType": "administrative",
       "sourceProvider": "OpenStreetMap",
-      "checked": "2026-11-10"
+      "checked": "2026-11-26"
     },
     "na-us-in-002": {
       "lat": 39.0581798,
@@ -7837,18 +7837,18 @@
       "checked": "2026-11-10"
     },
     "na-us-la-001": {
-      "lat": 27.0998315,
-      "lon": -82.4442832,
+      "lat": 29.2790634,
+      "lon": -89.3587403,
       "label": "Venice",
-      "displayName": "Venice, Sarasota County, Florida, 34285, United States",
-      "query": "Venice, United States",
-      "precision": "region",
-      "source": "https://www.openstreetmap.org/relation/117980",
-      "osmType": "relation",
-      "osmId": 117980,
-      "featureType": "administrative",
+      "displayName": "Venice, Plaquemines Parish, Louisiana, 70091, United States",
+      "query": "Venice, Plaquemines Parish, Louisiana, United States",
+      "precision": "place-area",
+      "source": "https://www.openstreetmap.org/node/153691391",
+      "osmType": "node",
+      "osmId": 153691391,
+      "featureType": "village",
       "sourceProvider": "OpenStreetMap",
-      "checked": "2026-11-10"
+      "checked": "2026-11-26"
     },
     "na-us-la-002": {
       "lat": 29.2790634,
@@ -7893,18 +7893,18 @@
       "checked": "2026-11-10"
     },
     "na-us-la-005": {
-      "lat": 47.3053186,
-      "lon": -68.1519797,
+      "lat": 29.2366172,
+      "lon": -89.9872942,
       "label": "Grand Isle",
-      "displayName": "Grand Isle, Aroostook County, Maine, 04746, United States",
-      "query": "Grand Isle, United States",
-      "precision": "region",
-      "source": "https://www.openstreetmap.org/relation/3122078",
+      "displayName": "Grand Isle, Jefferson Parish, Louisiana, United States",
+      "query": "Grand Isle, Jefferson Parish, Louisiana, United States",
+      "precision": "place-area",
+      "source": "https://www.openstreetmap.org/relation/131887",
       "osmType": "relation",
-      "osmId": 3122078,
+      "osmId": 131887,
       "featureType": "administrative",
       "sourceProvider": "OpenStreetMap",
-      "checked": "2026-11-10"
+      "checked": "2026-11-26"
     },
     "na-us-la-006": {
       "lat": 29.9456708,
@@ -8411,18 +8411,18 @@
       "checked": "2026-11-10"
     },
     "na-us-mn-002": {
-      "lat": 48.7846346,
-      "lon": -116.4339511,
-      "label": "Boundary County",
-      "displayName": "Boundary County, Idaho, United States",
-      "query": "Boundary, United States",
-      "precision": "region",
-      "source": "https://www.openstreetmap.org/relation/1536521",
+      "lat": 47.901571,
+      "lon": -91.8572479,
+      "label": "Ely, Boundary Waters entry town",
+      "displayName": "Ely, Saint Louis County, Minnesota, 55731, United States",
+      "query": "Ely, Saint Louis County, Minnesota, United States",
+      "precision": "place-area",
+      "source": "https://www.openstreetmap.org/relation/137427",
       "osmType": "relation",
-      "osmId": 1536521,
+      "osmId": 137427,
       "featureType": "administrative",
       "sourceProvider": "OpenStreetMap",
-      "checked": "2026-11-10"
+      "checked": "2026-11-26"
     },
     "na-us-mn-003": {
       "lat": 46.2387411,
@@ -8495,18 +8495,18 @@
       "checked": "2026-11-10"
     },
     "na-us-mn-008": {
-      "lat": 47.7144346,
-      "lon": -88.2116356,
-      "label": "Lake Superior",
-      "displayName": "Lake Superior, United States",
-      "query": "Lake Superior",
+      "lat": 46.7838287,
+      "lon": -92.1052679,
+      "label": "Duluth",
+      "displayName": "Duluth, Saint Louis County, Minnesota, United States",
+      "query": "Duluth, Minnesota, United States",
       "precision": "place-area",
-      "source": "https://www.openstreetmap.org/relation/4039486",
+      "source": "https://www.openstreetmap.org/relation/136669",
       "osmType": "relation",
-      "osmId": 4039486,
-      "featureType": "lake",
+      "osmId": 136669,
+      "featureType": "administrative",
       "sourceProvider": "OpenStreetMap",
-      "checked": "2026-11-10"
+      "checked": "2026-11-26"
     },
     "na-us-mn-009": {
       "lat": 43.7708584,
@@ -9069,18 +9069,18 @@
       "checked": "2026-11-10"
     },
     "na-us-nh-004": {
-      "lat": 48.007901,
-      "lon": -120.9221651,
-      "label": "White Mountains",
-      "displayName": "White Mountains, Chelan County, Washington, United States",
-      "query": "White Mountains, United States",
-      "precision": "region",
-      "source": "https://www.openstreetmap.org/way/1225546510",
-      "osmType": "way",
-      "osmId": 1225546510,
-      "featureType": "mountain_range",
+      "lat": 44.144276,
+      "lon": -71.181107,
+      "label": "Jackson",
+      "displayName": "Jackson, Carroll County, New Hampshire, 03846, United States",
+      "query": "Jackson, Carroll County, New Hampshire, United States",
+      "precision": "place-area",
+      "source": "https://www.openstreetmap.org/relation/2023980",
+      "osmType": "relation",
+      "osmId": 2023980,
+      "featureType": "administrative",
       "sourceProvider": "OpenStreetMap",
-      "checked": "2026-11-10"
+      "checked": "2026-11-26"
     },
     "na-us-nj-001": {
       "lat": 40.4834398,
@@ -9321,18 +9321,18 @@
       "checked": "2026-11-10"
     },
     "na-us-ny-004": {
-      "lat": 34.0308819,
-      "lon": -117.6106533,
-      "label": "Ontario",
-      "displayName": "Ontario, San Bernardino County, California, United States",
-      "query": "Ontario, United States",
-      "precision": "region",
-      "source": "https://www.openstreetmap.org/relation/11066252",
+      "lat": 43.4548063,
+      "lon": -76.5094143,
+      "label": "City of Oswego",
+      "displayName": "City of Oswego, Oswego County, New York, 13126, United States",
+      "query": "Oswego, Oswego County, New York, United States",
+      "precision": "place-area",
+      "source": "https://www.openstreetmap.org/relation/174996",
       "osmType": "relation",
-      "osmId": 11066252,
+      "osmId": 174996,
       "featureType": "administrative",
       "sourceProvider": "OpenStreetMap",
-      "checked": "2026-11-10"
+      "checked": "2026-11-26"
     },
     "na-us-ny-005": {
       "lat": 41.0419705,
@@ -10988,18 +10988,18 @@
       "checked": "2026-11-10"
     },
     "na-us-wy-007": {
-      "lat": 34.3093257,
-      "lon": -116.6311315,
-      "label": "Bighorn Mountains",
-      "displayName": "Bighorn Mountains, San Bernardino County, California, United States",
-      "query": "Bighorn Mountains, United States",
+      "lat": 44.471904,
+      "lon": -107.1907071,
+      "label": "Bighorn National Forest",
+      "displayName": "Bighorn National Forest, Wyoming, United States",
+      "query": "Bighorn National Forest, Wyoming, United States",
       "precision": "place-area",
-      "source": "https://www.openstreetmap.org/node/9632166464",
-      "osmType": "node",
-      "osmId": 9632166464,
-      "featureType": "peak",
+      "source": "https://www.openstreetmap.org/relation/3621676",
+      "osmType": "relation",
+      "osmId": 3621676,
+      "featureType": "protected_area",
       "sourceProvider": "OpenStreetMap",
-      "checked": "2026-11-10"
+      "checked": "2026-11-26"
     },
     "na-us-wy-008": {
       "lat": 41.1765475,

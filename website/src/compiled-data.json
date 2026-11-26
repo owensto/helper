@@ -15541,11 +15541,11 @@
         "note": "A research resource, not a booked trip or Atlas operator partnership. Confirm all inclusions and availability independently."
       },
       "coordinates": [
-        -116.6311315,
-        34.3093257
+        -107.1907071,
+        44.471904
       ],
       "locationPrecision": "place-area",
-      "locationSource": "https://www.openstreetmap.org/node/9632166464",
+      "locationSource": "https://www.openstreetmap.org/relation/3621676",
       "speciesIds": [
         "trout"
       ],
@@ -19632,11 +19632,11 @@
         "note": "A research resource, not a booked trip or Atlas operator partnership. Confirm all inclusions and availability independently."
       },
       "coordinates": [
-        -116.4339511,
-        48.7846346
+        -91.8572479,
+        47.901571
       ],
-      "locationPrecision": "region",
-      "locationSource": "https://www.openstreetmap.org/relation/1536521",
+      "locationPrecision": "place-area",
+      "locationSource": "https://www.openstreetmap.org/relation/137427",
       "speciesIds": [
         "lake-trout"
       ],
@@ -20435,11 +20435,11 @@
         "note": "A research resource, not a booked trip or Atlas operator partnership. Confirm all inclusions and availability independently."
       },
       "coordinates": [
-        -88.2116356,
-        47.7144346
+        -92.1052679,
+        46.7838287
       ],
       "locationPrecision": "place-area",
-      "locationSource": "https://www.openstreetmap.org/relation/4039486",
+      "locationSource": "https://www.openstreetmap.org/relation/136669",
       "speciesIds": [
         "brook-trout",
         "lake-trout",
@@ -22972,11 +22972,11 @@
         "note": "A research resource, not a booked trip or Atlas operator partnership. Confirm all inclusions and availability independently."
       },
       "coordinates": [
-        -87.0818686,
-        43.8556466
+        -87.6244212,
+        41.8755616
       ],
       "locationPrecision": "place-area",
-      "locationSource": "https://www.openstreetmap.org/relation/1205149",
+      "locationSource": "https://www.openstreetmap.org/relation/122604",
       "speciesIds": [
         "chinook-salmon",
         "burbot"
@@ -23631,11 +23631,11 @@
         "note": "A research resource, not a booked trip or Atlas operator partnership. Confirm all inclusions and availability independently."
       },
       "coordinates": [
-        -87.0818686,
-        43.8556466
+        -86.8950297,
+        41.7075394
       ],
       "locationPrecision": "place-area",
-      "locationSource": "https://www.openstreetmap.org/relation/1205149",
+      "locationSource": "https://www.openstreetmap.org/relation/127358",
       "speciesIds": [
         "sea-trout",
         "rainbow-trout",
@@ -25060,11 +25060,11 @@
         "note": "A research resource, not a booked trip or Atlas operator partnership. Confirm all inclusions and availability independently."
       },
       "coordinates": [
-        -92.0485737,
-        44.4071204
+        -91.2156355,
+        43.3620647
       ],
       "locationPrecision": "place-area",
-      "locationSource": "https://www.openstreetmap.org/relation/2276890",
+      "locationSource": "https://www.openstreetmap.org/relation/128409",
       "speciesIds": [
         "walleye",
         "sauger"
@@ -26854,11 +26854,11 @@
         "note": "A research resource, not a booked trip or Atlas operator partnership. Confirm all inclusions and availability independently."
       },
       "coordinates": [
-        -120.9221651,
-        48.007901
+        -71.181107,
+        44.144276
       ],
-      "locationPrecision": "region",
-      "locationSource": "https://www.openstreetmap.org/way/1225546510",
+      "locationPrecision": "place-area",
+      "locationSource": "https://www.openstreetmap.org/relation/2023980",
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -28954,11 +28954,11 @@
         "note": "A research resource, not a booked trip or Atlas operator partnership. Confirm all inclusions and availability independently."
       },
       "coordinates": [
-        -117.6106533,
-        34.0308819
+        -76.5094143,
+        43.4548063
       ],
-      "locationPrecision": "region",
-      "locationSource": "https://www.openstreetmap.org/relation/11066252",
+      "locationPrecision": "place-area",
+      "locationSource": "https://www.openstreetmap.org/relation/174996",
       "speciesIds": [
         "lake-trout",
         "sea-trout",
@@ -38924,11 +38924,11 @@
         "note": "A research resource, not a booked trip or Atlas operator partnership. Confirm all inclusions and availability independently."
       },
       "coordinates": [
-        -82.4442832,
-        27.0998315
+        -89.3587403,
+        29.2790634
       ],
-      "locationPrecision": "region",
-      "locationSource": "https://www.openstreetmap.org/relation/117980",
+      "locationPrecision": "place-area",
+      "locationSource": "https://www.openstreetmap.org/node/153691391",
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -39142,11 +39142,11 @@
         "note": "A research resource, not a booked trip or Atlas operator partnership. Confirm all inclusions and availability independently."
       },
       "coordinates": [
-        -68.1519797,
-        47.3053186
+        -89.9872942,
+        29.2366172
       ],
-      "locationPrecision": "region",
-      "locationSource": "https://www.openstreetmap.org/relation/3122078",
+      "locationPrecision": "place-area",
+      "locationSource": "https://www.openstreetmap.org/relation/131887",
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
@@ -51146,11 +51146,11 @@
         "note": "A research resource, not a booked trip or Atlas operator partnership. Confirm all inclusions and availability independently."
       },
       "coordinates": [
-        -115.7173651,
-        62.4012455
+        -60.8020748,
+        45.8274275
       ],
       "locationPrecision": "place-area",
-      "locationSource": "https://www.openstreetmap.org/relation/1635819",
+      "locationSource": "https://www.openstreetmap.org/relation/13467215",
       "speciesIds": [],
       "speciesEvidence": [],
       "speciesReview": {
