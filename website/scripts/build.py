@@ -201,6 +201,8 @@ def doc(path,p,preview=False):
 from outdoor import install as install_outdoor
 from videos import install as install_videos
 install_videos(pages, ROOT, CONFIG['siteUrl'], add)
+from gear_links import install as install_gear_links
+install_gear_links(pages, ROOT, add, intro, bread)
 HEADER, FOOTER = install_outdoor(pages, ROOT, HEADER, FOOTER, BRAND, featured, trip_card, TRIPS)
 
 from trip_types import install as install_trip_types
