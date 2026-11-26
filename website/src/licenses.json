@@ -913,14 +913,16 @@
         "url": "https://www.ontario.ca/page/fishing-licence-non-residents-canada"
       },
       "buyUrl": "https://www.huntandfishontario.com/",
-      "summary": "Most visitors need an Outdoors Card and a fishing licence. Foreign visitors aged 65 and older still need a licence; a one-day licence does not require an Outdoors Card.",
+      "summary": "Anglers aged 18 to 64 need an Outdoors Card and a fishing licence in Ontario. Ontario and Canadian residents under 18 or aged 65 and older fish with government identification instead. Visitors from outside Canada need a licence from age 18, including at 65 and older. A one-day licence does not need an Outdoors Card.",
       "whoNeedsOne": [
-        "Non-Canadian visitors aged 18 and older.",
-        "Canadian visitors aged 18 to 64, unless exempt."
+        "Ontario residents and other Canadian residents aged 18 to 64.",
+        "Visitors from outside Canada aged 18 and older, including those aged 65 and older."
       ],
       "exemptions": [
-        "Foreign visitors under 18 can share an accompanying licence holder's catch limit.",
-        "Canadian residents under 18 or aged 65 and older qualify for the age exemption with the required identification.",
+        "Ontario and Canadian residents under 18 or aged 65 and older need no Outdoors Card or licence. They carry government-issued identification that shows their name and date of birth.",
+        "Visitors from outside Canada under 18 can fish with a licence holder and share that holder's catch limit, or buy their own Outdoors Card and licence for their own limit.",
+        "Ontario-resident veterans and active Canadian Armed Forces members fish with an NDI 20 or NDI 75 card instead of a licence.",
+        "Holders of an Ontario accessible parking permit or a CNIB national identity card fish with that document, regardless of residency.",
         "Canadian residents could fish without a licence on February 14–16, May 9–10, June 20–21, and June 27–July 5, 2026. Conservation catch limits and all other rules still applied; carry government-issued identification showing your name and date of birth."
       ],
       "options": [
@@ -951,7 +953,7 @@
         {
           "name": "Foreign visitor sport annual",
           "who": "non-resident",
-          "duration": "1 calendar year",
+          "duration": "January 1 to December 31",
           "price": 83.19,
           "currency": "CAD",
           "water": "freshwater"
@@ -959,8 +961,104 @@
         {
           "name": "Foreign visitor conservation annual",
           "who": "non-resident",
-          "duration": "1 calendar year",
+          "duration": "January 1 to December 31",
           "price": 52.71,
+          "currency": "CAD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Ontario resident sport 1-year",
+          "who": "resident",
+          "duration": "January 1 to December 31",
+          "price": 26.57,
+          "currency": "CAD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Ontario resident sport 3-year",
+          "who": "resident",
+          "duration": "3 calendar years",
+          "price": 79.71,
+          "currency": "CAD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Ontario resident conservation 1-year",
+          "who": "resident",
+          "duration": "January 1 to December 31",
+          "price": 15.07,
+          "currency": "CAD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Ontario resident conservation 3-year",
+          "who": "resident",
+          "duration": "3 calendar years",
+          "price": 45.21,
+          "currency": "CAD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Ontario resident sport 1-day",
+          "who": "resident",
+          "duration": "1 calendar day",
+          "price": 12.21,
+          "currency": "CAD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Canadian resident (outside Ontario) sport 1-year",
+          "who": "non-resident",
+          "duration": "January 1 to December 31",
+          "price": 55.81,
+          "currency": "CAD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Canadian resident (outside Ontario) sport 3-year",
+          "who": "non-resident",
+          "duration": "3 calendar years",
+          "price": 167.43,
+          "currency": "CAD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Canadian resident (outside Ontario) conservation 1-year",
+          "who": "non-resident",
+          "duration": "January 1 to December 31",
+          "price": 33.43,
+          "currency": "CAD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Canadian resident (outside Ontario) conservation 3-year",
+          "who": "non-resident",
+          "duration": "3 calendar years",
+          "price": 100.29,
+          "currency": "CAD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Canadian resident (outside Ontario) sport 1-day",
+          "who": "non-resident",
+          "duration": "1 calendar day",
+          "price": 15.21,
+          "currency": "CAD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Foreign visitor sport 3-year",
+          "who": "non-resident",
+          "duration": "3 calendar years",
+          "price": 249.57,
+          "currency": "CAD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Foreign visitor conservation 3-year",
+          "who": "non-resident",
+          "duration": "3 calendar years",
+          "price": 158.13,
           "currency": "CAD",
           "water": "freshwater"
         }
@@ -968,7 +1066,7 @@
       "extras": [
         {
           "name": "Outdoors Card",
-          "when": "Required with multi-day and annual licences unless exempt.",
+          "when": "Required with every licence except the one-day licence. Valid for 3 calendar years.",
           "price": 8.57,
           "currency": "CAD"
         }
@@ -976,12 +1074,21 @@
       "saltwater": null,
       "guidedTrips": null,
       "keyRules": [
-        "Carry the licence summary.",
-        "Conservation licences have lower catch limits.",
-        "A one-day licence ends at midnight."
+        "Carry your Outdoors Card and licence summary. A digital summary must be the PDF from the licensing service; a photo or screenshot is not valid.",
+        "Conservation licences have lower catch and possession limits than sport licences.",
+        "Every licence runs on the calendar year. A one-year licence expires on December 31, whatever the purchase date.",
+        "A one-day licence is valid for one calendar day and ends at midnight. An eight-day licence covers eight consecutive calendar days."
       ],
-      "howToBuy": "Use the Fish and Wildlife Licensing Service, a licence issuer, or a participating ServiceOntario office.",
+      "howToBuy": "Buy online through the Fish and Wildlife Licensing Service with Visa or Mastercard, at a licence issuer, or at a participating ServiceOntario office. Buy the Outdoors Card first, except for a one-day licence. Renew an Outdoors Card and three-year licence by phone at 1-800-288-1155.",
       "sources": [
+        {
+          "title": "Official Canadian resident licence fee table",
+          "url": "https://www.ontario.ca/page/fishing-licence-fees-canadian-residents"
+        },
+        {
+          "title": "Ontario Fishing Regulations Summary: recreational fishing licences and 2026 fees",
+          "url": "https://www.ontario.ca/document/ontario-fishing-regulations-summary/recreational-fishing-licences-and-fees"
+        },
         {
           "title": "Licence requirements for visitors from outside Canada",
           "url": "https://www.ontario.ca/page/fishing-licence-non-residents-canada"
@@ -1007,9 +1114,48 @@
           "url": "https://www.ontario.ca/page/free-family-fishing"
         }
       ],
-      "checked": "2026-11-13",
-      "checkOfficial": "Listed fees are the official 2026 shop prices before HST. Confirm water-specific limits and seasons before the trip.",
-      "contentModified": "2026-11-15"
+      "checked": "2026-11-26",
+      "checkOfficial": "Listed fees are the official 2026 prices before 13% HST, in effect until December 31, 2026. Confirm zone limits and seasons before the trip.",
+      "contentModified": "2026-11-26",
+      "faq": [
+        {
+          "q": "How much is a fishing licence in Ontario?",
+          "a": "For Ontario residents in 2026, a one-year sport fishing licence costs $26.57 CAD and a three-year sport licence costs $79.71. A conservation licence costs $15.07 for one year or $45.21 for three years. A one-day sport licence costs $12.21. Add the Outdoors Card at $8.57, valid for 3 calendar years. All fees are before 13% HST."
+        },
+        {
+          "q": "Do seniors need a fishing licence in Ontario?",
+          "a": "Ontario and Canadian residents aged 65 and older do not need to buy an Outdoors Card or fishing licence. They carry government-issued identification that shows their name and date of birth, and sport licence limits apply. Visitors from outside Canada still need an Outdoors Card and licence at 65 and older."
+        },
+        {
+          "q": "What age do you need a fishing licence in Ontario?",
+          "a": "Ontario and Canadian residents need a licence from age 18 to 64. Residents under 18 fish with government-issued identification. Visitors from outside Canada need a licence from age 18; those under 18 can fish with a licence holder and share that holder's limit, or buy their own licence."
+        },
+        {
+          "q": "What is the difference between a sport and a conservation fishing licence in Ontario?",
+          "a": "A sport fishing licence gives full catch and possession limits. A conservation fishing licence costs less and has reduced catch and possession limits, so it suits anglers who release most fish. The regulations show the two limits as S and C for each species and zone."
+        },
+        {
+          "q": "How much is a non-resident fishing licence in Ontario?",
+          "a": "Canadian residents from outside Ontario pay $55.81 CAD for a one-year sport licence, $33.43 for a one-year conservation licence, or $15.21 for a one-day sport licence. Visitors from outside Canada pay $83.19 for one year sport, $52.71 for one year conservation, $54.38 for an eight-day sport licence, $31.52 for an eight-day conservation licence, or $24.86 for one day. Fees are before 13% HST."
+        },
+        {
+          "q": "Do I need an Outdoors Card to fish in Ontario?",
+          "a": "Yes, with every licence except the one-day sport licence. The Outdoors Card costs $8.57 CAD and is valid for 3 calendar years. Ontario mails the plastic card in about 20 days; until it arrives, carry the licence summary you receive at purchase."
+        },
+        {
+          "q": "When does an Ontario fishing licence expire?",
+          "a": "Ontario issues fishing licences on a calendar year basis, January 1 to December 31. A one-year licence expires on December 31 of the year printed on it, whatever the purchase date. A three-year licence expires on December 31 of its third year."
+        },
+        {
+          "q": "Can veterans and people with disabilities fish without a licence in Ontario?",
+          "a": "Ontario-resident veterans and active Canadian Armed Forces members can fish with an NDI 20 or NDI 75 card instead of a licence. A person with an Ontario accessible parking permit or a CNIB national identity card can fish with that document, regardless of residency. Sport licence limits apply."
+        },
+        {
+          "q": "When are the free fishing days in Ontario?",
+          "a": "Canadian residents could fish without a licence four times in 2026: February 14–16, May 9–10, June 20–21, and June 27–July 5. Conservation licence catch limits apply on those days, and each angler carries government-issued identification with name and date of birth."
+        }
+      ],
+      "description": "Ontario fishing licence fees for 2026: residents from $15.07 a year, visitors from $24.86 a day. Who needs one, senior and under-18 rules, Outdoors Card."
     },
     {
       "id": "ca-prince-edward-island",
