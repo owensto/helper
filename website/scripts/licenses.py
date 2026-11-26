@@ -443,6 +443,7 @@ def compare_page(recs):
             season.append(f'<li><b>{E(x["r"]["name"])}:</b> {E(hit)}' + (' Residents only.' if f.get('nonResidents') == 'no' else '') + f' {link(f["source"], "Source")}</li>')
     if season:
         hol += '<li>Free fishing days in November and December, from the state agencies:<ul>' + ''.join(season) + '</ul></li>'
+    hol += f'<li>See <a class="link" href="{HUB}free-fishing-days/">free fishing days by state</a> for every date, rule and visitor answer.</li>'
     hol += ('<li>The other states use a licence year with a fixed end date. The full-year column shows that period for each state.</li>'
             '<li>Buy the licence online before you travel. State offices and many licence agents close on public holidays.</li>'
             f'<li>Seasons and closures change by water and by month. See the <a class="link" href="/seasons/">season notes</a> and the <a class="link" href="/trips/">trips</a> for each state.</li></ul></div></section>')
@@ -474,6 +475,82 @@ def compare_page(recs):
     body += '<script type="application/ld+json">' + json.dumps(schema, ensure_ascii=False).replace('</', '<\\/') + '</script>'
     cites = [x['r']['sources'][0]['url'] for x in rows if x['r'].get('sources')] + [x['r']['freeDays']['source'] for x in rows if x['r'].get('freeDays')]
     return body, cites, newest
+
+
+FREEDAYS = HUB + 'free-fishing-days/'
+
+
+def free_page(recs):
+    rows = sorted((r for r in recs if r.get('country') == 'United States' and (r.get('freeDays') or {}).get('has') == 'yes'), key=lambda r: r['name'])
+    missing = sorted(r['name'] for r in recs if r.get('country') == 'United States' and not r.get('freeDays') and r['id'] != 'us-federal')
+    with27 = [r['name'] for r in rows if r['freeDays'].get('dates2027')]
+    open_v = [r['name'] for r in rows if r['freeDays'].get('nonResidents') == 'yes']
+    res_only = [r['name'] for r in rows if r['freeDays'].get('nonResidents') == 'no']
+    newest = max(r['freeDays']['checked'] for r in rows)
+    answer = (f'{len(rows)} US states have free fishing days: days when you can fish in public waters without a fishing licence. '
+              f'{len(with27)} states have published their 2027 dates. For the other states, this table gives the state rule and the 2026 dates. '
+              f'Bag limits, size limits and seasons still apply on a free day.')
+    body = STYLE + COMPARE_STYLE + (f'<div class="wrap lic-page lic2 lic-cmp"><nav class="breadcrumbs"><a href="/">Home</a> / <a href="{HUB}">Fishing licenses</a> / Free fishing days</nav>'
+            f'<header><span class="eyebrow">FISHING TRIPS · UNITED STATES</span><h1>Free fishing days 2027 by state</h1><p class="lic-answer">{E(answer)}</p></header>')
+    body += ('<ul class="lic-facts">'
+             f'<li><span>States with free fishing days</span><b>{len(rows)}</b><span>From each state agency</span></li>'
+             f'<li><span>2027 dates published</span><b>{len(with27)}</b><span>The others publish later</span></li>'
+             f'<li><span>Open to visitors</span><b>{len(open_v)}</b><span>{len(res_only)} states: residents only</span></li></ul>')
+    body += ('<p class="free-tools"><label>Find a state <input type="search" placeholder="Texas" data-free-q></label>'
+             '<label><input type="checkbox" data-free-v> Open to visitors only</label><label><input type="checkbox" data-free-27> 2027 dates published</label></p>')
+    body += ('<div class="lic-scroll"><table data-free><thead><tr><th>State</th><th>2027 dates</th><th>2026 dates</th><th>State rule</th><th>Visitors</th></tr></thead><tbody>')
+    who = {'yes': 'Yes', 'no': 'Residents only'}
+    for r in rows:
+        f = r['freeDays']
+        d27 = f'<b>{E(f["dates2027"])}</b>' if f.get('dates2027') else '<span>Not published yet</span>'
+        d26 = E(f['dates2026']) if f.get('dates2026') else '<span>No dates listed</span>'
+        rule = E(f['rule']) if f.get('rule') else '<span>Set each year by the agency</span>'
+        if f.get('notes'):
+            rule += f'<span>{E(f["notes"])}</span>'
+        body += (f'<tr data-n="{E(r["name"].lower())}" data-v="{1 if f.get("nonResidents") == "yes" else 0}" data-y="{1 if f.get("dates2027") else 0}"><th scope="row"><a class="link" href="{page_path(r)}">{E(r["name"])}</a></th><td>{d27}</td><td>{d26}</td><td>{rule}</td>'
+                 f'<td>{who.get(f.get("nonResidents"), "Ask the agency")}<span>{link(f["source"], "Official source")}</span></td></tr>')
+    body += '</tbody></table></div>'
+    plan = ('<section class="lic-step"><h2>Plan a trip on a free fishing day</h2><div class="lic-card"><ul>'
+            f'<li>{len(open_v)} states open their free days to visitors from other states: {E(", ".join(open_v))}.</li>')
+    if res_only:
+        plan += f'<li>{len(res_only)} states limit the free days to residents: {E(", ".join(res_only))}. A visitor buys a licence there on every day.</li>'
+    winter = []
+    for r in rows:
+        f = r['freeDays']
+        hit = next((f[k] for k in ('dates2027', 'dates2026', 'rule') if re.search(r'january|february|november|december|thanksgiving|veterans|\bice\b', f.get(k) or '', re.I)), None)
+        if hit:
+            winter.append(f'<li><b>{E(r["name"])}:</b> {E(hit)}</li>')
+    if winter:
+        plan += '<li>Most free days are in June. These states also have free days in winter or on autumn holidays:<ul>' + ''.join(winter) + '</ul></li>'
+    plan += ('<li>A free day removes the licence only. Some states keep species tags, report cards, trout permits or park entry fees. The rule column shows what each agency says.</li>'
+             f'<li>For the other days of a trip, <a class="link" href="{COMPARE}">compare non-resident licence prices for 3 days, 7 days and a full year</a>.</li></ul></div></section>')
+    body += plan
+    if missing:
+        body += f'<p class="small">Not confirmed from an official source: {E(", ".join(missing))}. These states are not in the table.</p>'
+    faq = [
+        ('What is a free fishing day?',
+         'A free fishing day is a day when a state lets people fish in its public waters without a fishing licence. Bag limits, size limits, seasons and gear rules still apply.'),
+        ('Which states have announced free fishing days for 2027?',
+         f'{len(with27)} states in this table have published 2027 dates: {", ".join(with27)}. The other states publish their dates later; the table gives the state rule and the 2026 dates.'),
+        ('Can non-residents fish on a free fishing day?',
+         f'In {len(open_v)} states the free days are open to visitors. ' + (f'{len(res_only)} states limit them to residents: {", ".join(res_only)}. ' if res_only else '') + 'For the other states, ask the agency before you travel.'),
+        ('Do I need a trout stamp or tag on a free fishing day?',
+         'It depends on the state. Some states also remove the stamp or permit for the day. Other states still require report cards, tags or special permits. Read the rule for the state in the table and confirm on the official source.'),
+    ]
+    body += '<section class="lic-step lic-more"><h2>Questions</h2>' + ''.join(
+        '<details><summary>' + E(q) + '</summary><p>' + E(a) + '</p></details>' for q, a in faq)
+    body += '<details class="lic-sources"><summary>Sources (' + str(len(rows)) + ')</summary><ol>' + ''.join(
+        f'<li>{link(r["freeDays"]["source"], r["name"] + ": official free fishing day source")}</li>' for r in rows) + '</ol></details></section>'
+    body += (f'<p class="small">Dates and rules come from each state agency. The last check of a row was on {nice_date(newest)}. Agencies can change a date; confirm on the official source before you travel. '
+             f'To cite this table: Castward, “Free fishing days 2027 by state”, castward.app{FREEDAYS}.</p></div>')
+    body += ('<style>.free-tools{display:flex;flex-wrap:wrap;gap:12px 22px;align-items:center;margin:0 0 14px}.free-tools input[type=search]{font-size:16px;padding:10px 12px;border-radius:10px;border:1px solid rgba(20,46,38,.3);margin-left:6px}</style>'
+             '<script>(()=>{const t=document.querySelector("[data-free]");if(!t)return;const q=document.querySelector("[data-free-q]"),v=document.querySelector("[data-free-v]"),y=document.querySelector("[data-free-27]");'
+             'const f=()=>{const s=q.value.trim().toLowerCase();[...t.tBodies[0].rows].forEach(r=>{r.hidden=!(r.dataset.n.includes(s)&&(!v.checked||r.dataset.v==="1")&&(!y.checked||r.dataset.y==="1"));});};'
+             '[q,v,y].forEach(e=>e.addEventListener("input",f));})();</script>')
+    schema = {'@context': 'https://schema.org', '@type': 'FAQPage', 'mainEntity': [
+        {'@type': 'Question', 'name': q, 'acceptedAnswer': {'@type': 'Answer', 'text': a}} for q, a in faq]}
+    body += '<script type="application/ld+json">' + json.dumps(schema, ensure_ascii=False).replace('</', '<\\/') + '</script>'
+    return body, [r['freeDays']['source'] for r in rows], newest
 
 
 def install(pages, root, add, trips):
@@ -518,6 +595,7 @@ def install(pages, root, add, trips):
         body += f'<tr><th scope="row"><a href="{page_path(r)}">{E(r["name"])}</a></th><td>{E(row["price"])}</td><td>{E(row["scope"])}</td><td>{link(row["source"], "Source")} · {link(r["buyUrl"], "Official purchase")}<br><small>Checked {nice_date(row["checked"])}</small></td></tr>'
     body += '</tbody></table></div><p class="lic-note">Each row names its water type and term. These are not interchangeable licences. Visitor prices, stamps, access permits and purchase fees can differ. Open the place page before you buy.</p></section>'
     body += f'<p><a class="link" href="{COMPARE}">Trip to another state? Compare non-resident prices for all 50 states</a></p>'
+    body += f'<p><a class="link" href="{FREEDAYS}">Free fishing days 2027 by state: dates, rules and visitor access</a></p>'
     body += '<label class="lic-search"><span>Where will you fish?</span><input type="search" placeholder="Try “Alaska”, “Norway” or “Queensland”" data-lic-filter></label><div>'
     order = ['United States', 'Canada', 'Mexico'] + sorted(c for c in groups if c not in ('United States', 'Canada', 'Mexico'))
     solo = [c for c in order if len(groups[c]) == 1]
@@ -553,6 +631,11 @@ def install(pages, root, add, trips):
         'What a fishing licence costs for a trip to another state: 3-day, 7-day and full-year non-resident prices for all 50 states, from each state agency.', cmp_body, 'article')
     pages[COMPARE]['modified'] = max(cmp_date, '2026-11-22')
     pages[COMPARE]['citations'] = cmp_sources
+    free_body, free_sources, free_date = free_page(recs)
+    add(FREEDAYS, 'Free Fishing Days 2027 by State: Dates and Rules',
+        'Free fishing days by state: published 2027 dates, 2026 dates, the state rule, and if visitors can fish without a licence. From each state agency.', free_body, 'article')
+    pages[FREEDAYS]['modified'] = max(free_date, '2026-11-26')
+    pages[FREEDAYS]['citations'] = free_sources
     pages[HUB]['modified'] = hub['updated']
     pages[HUB]['citations'] = [x['source'] for x in hub['rows']]
     return len(recs), sum(len(v) for v in per_rec.values())
