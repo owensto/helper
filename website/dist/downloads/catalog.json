@@ -5982,12 +5982,28 @@
       "checked": "2026-11-10",
       "scopeNote": "Supports the attributed target. Exact access, method and legal season need a separate check."
     },
+    "species-df3cba7f9c20": {
+      "title": "Fishery source for Green River / below Flaming Gorge",
+      "url": "https://www.visitutah.com/things-to-do/fishing/green-river",
+      "type": "species-reference",
+      "status": "reviewed-source",
+      "checked": "2026-11-26",
+      "scopeNote": "Supports the attributed target. Exact access, method and legal season need a separate check."
+    },
     "species-83e93573ea7e": {
       "title": "Fishery source for Provo River",
       "url": "https://wildlife.utah.gov/guidebooks/fishing_guidebook_2026.pdf",
       "type": "species-reference",
       "status": "reviewed-source",
-      "checked": "2026-11-10",
+      "checked": "2026-11-26",
+      "scopeNote": "Supports the attributed target. Exact access, method and legal season need a separate check."
+    },
+    "species-c26f43c5b758": {
+      "title": "Fishery source for Provo River",
+      "url": "https://www.visitutah.com/things-to-do/fishing/provo-river",
+      "type": "species-reference",
+      "status": "reviewed-source",
+      "checked": "2026-11-26",
       "scopeNote": "Supports the attributed target. Exact access, method and legal season need a separate check."
     },
     "species-03e6a0711d42": {
@@ -6003,7 +6019,15 @@
       "url": "https://wildlife.utah.gov/blog/2024/03/13/six-great-fishing-spots-for-this-spring",
       "type": "species-reference",
       "status": "reviewed-source",
-      "checked": "2026-11-10",
+      "checked": "2026-11-26",
+      "scopeNote": "Supports the attributed target. Exact access, method and legal season need a separate check."
+    },
+    "species-3f973c4d5a5d": {
+      "title": "Fishery source for Strawberry Reservoir",
+      "url": "https://www.visitutah.com/things-to-do/fishing/strawberry-reservoir",
+      "type": "species-reference",
+      "status": "reviewed-source",
+      "checked": "2026-11-26",
       "scopeNote": "Supports the attributed target. Exact access, method and legal season need a separate check."
     },
     "species-99661cdbe999": {
@@ -37249,7 +37273,7 @@
     },
     {
       "id": "na-us-ut-001",
-      "title": "Green River: Trout Below Flaming Gorge, Utah",
+      "title": "Green River Below Flaming Gorge: Rainbow and Brown Trout",
       "place": "Green River / below Flaming Gorge",
       "country": "United States",
       "region": "North America",
@@ -37270,14 +37294,28 @@
         "Guided wading"
       ],
       "climate": "mixed",
-      "fish": [],
+      "fish": [
+        "Rainbow trout",
+        "Brown trout"
+      ],
       "candidateTargets": "Trout candidates",
-      "summary": "Float the Green River below Flaming Gorge for trout. Choose a Utah river stretch and enjoy a day of casts from the boat.",
+      "summary": "The Green River below Flaming Gorge Dam offers rainbow and brown trout in three distinct reaches. Start with Section A, from the dam to Little Hole, when you compare access. The next reaches continue through Browns Park toward the Colorado border. Choose the reach before you choose a boat or a bank itinerary.",
       "contentTier": "preparation-brief",
       "evidenceDepth": "Production brief; local fishery claims not yet verified",
       "catalogOrigin": "north-america-production-import",
-      "sourceIds": [],
-      "evidence": [],
+      "sourceIds": [
+        "species-df3cba7f9c20"
+      ],
+      "evidence": [
+        {
+          "source": "species-df3cba7f9c20",
+          "claim": "Rainbow trout is documented in the linked fishery source. Check its named water or departure area."
+        },
+        {
+          "source": "species-df3cba7f9c20",
+          "claim": "Brown trout is documented in the linked fishery source. Check its named water or departure area."
+        }
+      ],
       "related": [
         "na-us-ut-002",
         "na-us-ut-003",
@@ -37290,7 +37328,7 @@
         "fieldTested": false,
         "independentExpertReviewed": false
       },
-      "season": "Dates have not been verified for this opportunity. Before choosing travel dates, resolve: Flow releases, runoff, temperature and local presentation windows.",
+      "season": "Check current dam releases, weather and reach-specific rules before choosing dates. Visit Utah describes year-round cold water; that is a habitat description, not a guarantee of conditions or an opening notice.",
       "seasonWindows": [],
       "sections": [
         {
@@ -37374,7 +37412,7 @@
         "angle": "Green River / below Flaming Gorge: the preparation decision to settle before buying gear — Distinguish river sections, float distance and supplied equipment before creating a day plan.",
         "searchIntentHypothesis": "Green River / below Flaming Gorge Utah fishing Trout"
       },
-      "indexEligible": false,
+      "indexEligible": true,
       "tripTypeIds": [],
       "tripTypeNames": [],
       "tripStyleIds": [
@@ -37382,11 +37420,45 @@
         "bank-wading",
         "river-fishing"
       ],
-      "speciesIds": [],
-      "speciesEvidence": [],
+      "speciesIds": [
+        "rainbow-trout",
+        "sea-trout"
+      ],
+      "speciesEvidence": [
+        {
+          "speciesId": "rainbow-trout",
+          "commonName": "Rainbow trout",
+          "sourceUrls": [
+            "https://www.visitutah.com/things-to-do/fishing/green-river"
+          ],
+          "scopeNotes": [
+            "Visit Utah names this species in this water. This does not establish current harvest rules."
+          ],
+          "status": "reviewed-source",
+          "seasons": [],
+          "seasonStatus": "unverified",
+          "methods": [],
+          "methodStatus": "unverified"
+        },
+        {
+          "speciesId": "sea-trout",
+          "commonName": "Brown trout",
+          "sourceUrls": [
+            "https://www.visitutah.com/things-to-do/fishing/green-river"
+          ],
+          "scopeNotes": [
+            "Visit Utah names this species in this water. This does not establish current harvest rules."
+          ],
+          "status": "reviewed-source",
+          "seasons": [],
+          "seasonStatus": "unverified",
+          "methods": [],
+          "methodStatus": "unverified"
+        }
+      ],
       "speciesReview": {
         "status": "unverified",
-        "reviewed": "2026-11-10",
+        "reviewed": "2026-11-26",
         "seasonStatus": "unverified",
         "methodStatus": "unverified"
       },
@@ -37414,22 +37486,71 @@
         "https://wildlife.utah.gov/guidebooks?sec=03",
         "https://wildlife.utah.gov/guidebooks?sec=01"
       ],
+      "localDescription": {
+        "place": "Green River / below Flaming Gorge",
+        "reviewed": "2026-11-26",
+        "paragraphs": [
+          "The Green River below Flaming Gorge Dam offers rainbow and brown trout in three distinct reaches. Start with Section A, from the dam to Little Hole, when you compare access. The next reaches continue through Browns Park toward the Colorado border. Choose the reach before you choose a boat or a bank itinerary.",
+          "Visit Utah describes a 7.2-mile A section with trails and a boardwalk. Section B runs from Little Hole to Indian Crossing, and Section C continues to the state line. Access to B and C uses boats and gravel roads. That makes the take-out and shuttle plan part of the trip, not an afterthought.",
+          "For a weekend visit, reserve one reach as the main plan and keep time for a change in conditions. Ask about current dam releases, the meeting point and the return route. Pack a river map and agree on a turnaround time. Check the current Utah guidebook for the exact reach; a trout population does not establish open access or a legal method."
+        ],
+        "sourceUrls": [
+          "https://www.visitutah.com/things-to-do/fishing/green-river"
+        ],
+        "season": "Check current dam releases, weather and reach-specific rules before choosing dates. Visit Utah describes year-round cold water; that is a habitat description, not a guarantee of conditions or an opening notice.",
+        "facts": [
+          [
+            "Section A",
+            "Flaming Gorge Dam to Little Hole"
+          ],
+          [
+            "Section B",
+            "Little Hole to Indian Crossing"
+          ],
+          [
+            "Section C",
+            "Indian Crossing to the Utah–Colorado border"
+          ]
+        ],
+        "faq": [
+          [
+            "Which fish should I identify before the trip?",
+            "Learn the named trout targets in the facts above, then check their separate rules in the Utah guidebook."
+          ],
+          [
+            "Does this page promise a catch?",
+            "No. The sources establish a fishery and planning details, not a catch forecast."
+          ],
+          [
+            "What should I confirm before departure?",
+            "Confirm the exact access point, current conditions, return route and equipment."
+          ],
+          [
+            "Does a species record mean fishing is open?",
+            "No. Check the current rules for the named water and your chosen date."
+          ],
+          [
+            "What should I do if conditions change?",
+            "Change the access or itinerary. Keep enough time to return safely rather than trying to complete a fixed route."
+          ]
+        ]
+      },
       "indexAssessment": {
-        "eligible": false,
-        "verifiedSpeciesIds": [],
-        "descriptionWords": 0,
+        "eligible": true,
+        "verifiedSpeciesIds": [
+          "rainbow-trout",
+          "sea-trout"
+        ],
+        "descriptionWords": 169,
         "seasonSection": true,
         "canonicalPath": "/north-america/united-states/utah/green-river-below-flaming-gorge-river-trout-and-grayling/",
-        "reasons": [
-          "Only 0 verified individual target species with source links; at least 2 required",
-          "Water-specific description has 0 words; at least 120 required"
-        ]
+        "reasons": []
       },
       "articleWordCount": 220
     },
     {
       "id": "na-us-ut-002",
-      "title": "Provo River: A Wading Trip for Utah Trout",
+      "title": "Provo River: Middle and Lower River Trout Trips",
       "place": "Provo River",
       "country": "United States",
       "region": "North America",
@@ -37451,20 +37572,26 @@
       ],
       "climate": "mixed",
       "fish": [
-        "Sea trout"
+        "Sea trout",
+        "Rainbow trout"
       ],
       "candidateTargets": "Brown / rainbow trout",
-      "summary": "Choose the middle or lower Provo for a Utah trout outing. Spend time beside the river and work a stretch at your own pace.",
+      "summary": "The Provo River offers brown and rainbow trout, with separate Middle and Lower river outings. The Middle Provo runs through Heber Valley between Jordanelle and Deer Creek reservoirs. Choose the reach and public access point before you travel. A river name alone is not enough to select the right regulations or parking.",
       "contentTier": "preparation-brief",
       "evidenceDepth": "Production brief; local fishery claims not yet verified",
       "catalogOrigin": "north-america-production-import",
       "sourceIds": [
-        "species-83e93573ea7e"
+        "species-83e93573ea7e",
+        "species-c26f43c5b758"
       ],
       "evidence": [
         {
           "source": "species-83e93573ea7e",
           "claim": "Sea trout is documented in the linked fishery source. Check its named water or departure area."
+        },
+        {
+          "source": "species-c26f43c5b758",
+          "claim": "Rainbow trout is documented in the linked fishery source. Check its named water or departure area."
         }
       ],
       "related": [
@@ -37479,7 +37606,7 @@
         "fieldTested": false,
         "independentExpertReviewed": false
       },
-      "season": "Dates have not been verified for this opportunity. Before choosing travel dates, resolve: Flow releases, runoff, temperature and local presentation windows.",
+      "season": "Visit Utah describes year-round flow in the Middle and Lower Provo. Hatches vary with the reach, time of year and daily conditions. Confirm the current flow and regulations rather than treating a hatch list as a fixed calendar.",
       "seasonWindows": [],
       "sections": [
         {
@@ -37563,7 +37690,7 @@
         "angle": "Provo River: the preparation decision to settle before buying gear — Separate middle and lower river experiences and compare beginner wading access.",
         "searchIntentHypothesis": "Provo River Utah fishing Brown / rainbow trout"
       },
-      "indexEligible": false,
+      "indexEligible": true,
       "tripTypeIds": [],
       "tripTypeNames": [],
       "tripStyleIds": [
@@ -37572,17 +37699,35 @@
         "river-fishing"
       ],
       "speciesIds": [
-        "sea-trout"
+        "sea-trout",
+        "rainbow-trout"
       ],
       "speciesEvidence": [
         {
           "speciesId": "sea-trout",
           "commonName": "Sea trout",
           "sourceUrls": [
-            "https://wildlife.utah.gov/guidebooks/fishing_guidebook_2026.pdf"
+            "https://wildlife.utah.gov/guidebooks/fishing_guidebook_2026.pdf",
+            "https://www.visitutah.com/things-to-do/fishing/provo-river"
           ],
           "scopeNotes": [
-            "The source documents brown trout in the Provo River fishery. Check the source for the exact reach or departure area."
+            "The source documents brown trout in the Provo River fishery. Check the source for the exact reach or departure area.",
+            "Visit Utah names this species in this water. This does not establish current harvest rules."
+          ],
+          "status": "reviewed-source",
+          "seasons": [],
+          "seasonStatus": "unverified",
+          "methods": [],
+          "methodStatus": "unverified"
+        },
+        {
+          "speciesId": "rainbow-trout",
+          "commonName": "Rainbow trout",
+          "sourceUrls": [
+            "https://www.visitutah.com/things-to-do/fishing/provo-river"
+          ],
+          "scopeNotes": [
+            "Visit Utah names this species in this water. This does not establish current harvest rules."
           ],
           "status": "reviewed-source",
           "seasons": [],
@@ -37593,7 +37738,7 @@
       ],
       "speciesReview": {
         "status": "source-linked",
-        "reviewed": "2026-11-10",
+        "reviewed": "2026-11-26",
         "seasonStatus": "unverified",
         "methodStatus": "unverified"
       },
@@ -37615,18 +37760,65 @@
         "https://wildlife.utah.gov/en-us/blueribbon",
         "https://wildlife.utah.gov/blog/2022/08/26/fishing-and-fun-in-central-utah"
       ],
+      "localDescription": {
+        "place": "Provo River",
+        "reviewed": "2026-11-26",
+        "paragraphs": [
+          "The Provo River offers brown and rainbow trout, with separate Middle and Lower river outings. The Middle Provo runs through Heber Valley between Jordanelle and Deer Creek reservoirs. Choose the reach and public access point before you travel. A river name alone is not enough to select the right regulations or parking.",
+          "Visit Utah describes riffles, pools and runs across the fishery. Its Middle Provo route extends about 12 miles through meadows, cottonwoods and farmland. The Lower Provo is a separate choice below Deer Creek. Match your route to the time available, and use the linked agency map to check the access rather than assuming every bank is public.",
+          "For a short break, plan one reach per day instead of rushing between them. Ask about the current flow, the walk from parking and the tackle needed for that day. Keep a dry change of clothes for the return. Read the current Utah rules for the precise river section, including method and harvest restrictions, before you make the first cast."
+        ],
+        "sourceUrls": [
+          "https://www.visitutah.com/things-to-do/fishing/provo-river"
+        ],
+        "season": "Visit Utah describes year-round flow in the Middle and Lower Provo. Hatches vary with the reach, time of year and daily conditions. Confirm the current flow and regulations rather than treating a hatch list as a fixed calendar.",
+        "facts": [
+          [
+            "Middle Provo",
+            "Jordanelle Reservoir to Deer Creek Reservoir"
+          ],
+          [
+            "Lower Provo",
+            "Below Deer Creek Reservoir"
+          ],
+          [
+            "Targets documented",
+            "Brown trout and rainbow trout"
+          ]
+        ],
+        "faq": [
+          [
+            "Which fish should I identify before the trip?",
+            "Learn the named trout targets in the facts above, then check their separate rules in the Utah guidebook."
+          ],
+          [
+            "Does this page promise a catch?",
+            "No. The sources establish a fishery and planning details, not a catch forecast."
+          ],
+          [
+            "What should I confirm before departure?",
+            "Confirm the exact access point, current conditions, return route and equipment."
+          ],
+          [
+            "Does a species record mean fishing is open?",
+            "No. Check the current rules for the named water and your chosen date."
+          ],
+          [
+            "What should I do if conditions change?",
+            "Change the access or itinerary. Keep enough time to return safely rather than trying to complete a fixed route."
+          ]
+        ]
+      },
       "indexAssessment": {
-        "eligible": false,
+        "eligible": true,
         "verifiedSpeciesIds": [
+          "rainbow-trout",
           "sea-trout"
         ],
-        "descriptionWords": 0,
+        "descriptionWords": 169,
         "seasonSection": true,
         "canonicalPath": "/north-america/united-states/utah/provo-river-river-trout-and-grayling/",
-        "reasons": [
-          "Only 1 verified individual target species with source links; at least 2 required",
-          "Water-specific description has 0 words; at least 120 required"
-        ]
+        "reasons": []
       },
       "articleWordCount": 214
     },
@@ -37835,7 +38027,7 @@
     },
     {
       "id": "na-us-ut-004",
-      "title": "Strawberry Reservoir: Open-Water Fishing in Utah",
+      "title": "Strawberry Reservoir: Rainbow and Cutthroat Trout",
       "place": "Strawberry Reservoir",
       "country": "United States",
       "region": "North America",
@@ -37857,20 +38049,31 @@
       ],
       "climate": "mixed",
       "fish": [
-        "Sockeye salmon"
+        "Sockeye salmon",
+        "Rainbow trout",
+        "Cutthroat trout"
       ],
       "candidateTargets": "Cutthroat trout / kokanee candidates",
-      "summary": "Take a boat onto Strawberry Reservoir for a day of open-water fishing. Enjoy a Utah lake trip with room to follow the bite.",
+      "summary": "Strawberry Reservoir offers rainbow and cutthroat trout in a mountain valley east of the Wasatch Front. Choose among Strawberry Basin, Meadows Basin, the Narrows and Soldier Creek Basin. A spring ice-off trip and a summer boat outing need different access plans. Check the actual shoreline, ramp and weather before you leave.",
       "contentTier": "preparation-brief",
       "evidenceDepth": "Production brief; local fishery claims not yet verified",
       "catalogOrigin": "north-america-production-import",
       "sourceIds": [
-        "species-bdb6c009fcfb"
+        "species-bdb6c009fcfb",
+        "species-3f973c4d5a5d"
       ],
       "evidence": [
         {
           "source": "species-bdb6c009fcfb",
           "claim": "Sockeye salmon is documented in the linked fishery source. Check its named water or departure area."
+        },
+        {
+          "source": "species-3f973c4d5a5d",
+          "claim": "Rainbow trout is documented in the linked fishery source. Check its named water or departure area."
+        },
+        {
+          "source": "species-3f973c4d5a5d",
+          "claim": "Cutthroat trout is documented in the linked fishery source. Check its named water or departure area."
         }
       ],
       "related": [
@@ -37885,7 +38088,7 @@
         "fieldTested": false,
         "independentExpertReviewed": false
       },
-      "season": "Dates have not been verified for this opportunity. Before choosing travel dates, resolve: Water temperature, turnover, depth, access and target-specific timing.",
+      "season": "Spring ice-off is a named trout opportunity in the official tourism profile. The date depends on conditions. Check current access and weather; neither a calendar date nor retreating shoreline ice establishes safe ice travel.",
       "seasonWindows": [],
       "sections": [
         {
@@ -37969,7 +38172,7 @@
         "angle": "Strawberry Reservoir: the preparation decision to settle before buying gear — Split open-water target setups from winter fishing and investigate boat rental options.",
         "searchIntentHypothesis": "Strawberry Reservoir Utah fishing Cutthroat trout / kokanee"
       },
-      "indexEligible": false,
+      "indexEligible": true,
       "tripTypeIds": [],
       "tripTypeNames": [],
       "tripStyleIds": [
@@ -37977,7 +38180,9 @@
         "bank-wading"
       ],
       "speciesIds": [
-        "sockeye-salmon"
+        "sockeye-salmon",
+        "rainbow-trout",
+        "cutthroat-trout"
       ],
       "speciesEvidence": [
         {
@@ -37994,11 +38199,41 @@
           "seasonStatus": "unverified",
           "methods": [],
           "methodStatus": "unverified"
+        },
+        {
+          "speciesId": "rainbow-trout",
+          "commonName": "Rainbow trout",
+          "sourceUrls": [
+            "https://www.visitutah.com/things-to-do/fishing/strawberry-reservoir"
+          ],
+          "scopeNotes": [
+            "Visit Utah names this species in this water. This does not establish current harvest rules."
+          ],
+          "status": "reviewed-source",
+          "seasons": [],
+          "seasonStatus": "unverified",
+          "methods": [],
+          "methodStatus": "unverified"
+        },
+        {
+          "speciesId": "cutthroat-trout",
+          "commonName": "Cutthroat trout",
+          "sourceUrls": [
+            "https://www.visitutah.com/things-to-do/fishing/strawberry-reservoir"
+          ],
+          "scopeNotes": [
+            "Visit Utah names this species in this water. This does not establish current harvest rules."
+          ],
+          "status": "reviewed-source",
+          "seasons": [],
+          "seasonStatus": "unverified",
+          "methods": [],
+          "methodStatus": "unverified"
         }
       ],
       "speciesReview": {
         "status": "source-linked",
-        "reviewed": "2026-11-10",
+        "reviewed": "2026-11-26",
         "seasonStatus": "unverified",
         "methodStatus": "unverified"
       },
@@ -38022,18 +38257,66 @@
         "https://wildlife.utah.gov/accessibility/fishing",
         "https://wildlife.utah.gov/rules/r657-13?highlight=WyJ3ZWJlciIsInJpdmVycyIsInJpdmVyIiwicml2ZXIncyJd"
       ],
+      "localDescription": {
+        "place": "Strawberry Reservoir",
+        "reviewed": "2026-11-26",
+        "paragraphs": [
+          "Strawberry Reservoir offers rainbow and cutthroat trout in a mountain valley east of the Wasatch Front. Choose among Strawberry Basin, Meadows Basin, the Narrows and Soldier Creek Basin. A spring ice-off trip and a summer boat outing need different access plans. Check the actual shoreline, ramp and weather before you leave.",
+          "Visit Utah describes ice-off as the retreat of the winter ice sheet, when trout move toward the banks. The date changes with conditions. Its reservoir profile names four fishing zones, so start with a specific basin rather than searching the whole lake. Use the agency map and report linked from the profile to narrow the plan.",
+          "For a two-day visit, keep one session flexible in case wind or access changes. Decide whether you will fish from shore or a boat before you pack. Learn to distinguish rainbow and cutthroat trout before checking the reservoir’s special rules. Carry the current Utah guidebook, and confirm the licence, launch arrangements and return plan. A seasonal opportunity does not make remaining ice safe to enter."
+        ],
+        "sourceUrls": [
+          "https://www.visitutah.com/things-to-do/fishing/strawberry-reservoir"
+        ],
+        "season": "Spring ice-off is a named trout opportunity in the official tourism profile. The date depends on conditions. Check current access and weather; neither a calendar date nor retreating shoreline ice establishes safe ice travel.",
+        "facts": [
+          [
+            "Fishing zones",
+            "Strawberry Basin, Meadows Basin, the Narrows and Soldier Creek Basin"
+          ],
+          [
+            "Trout targets",
+            "Rainbow trout and cutthroat trout"
+          ],
+          [
+            "Spring planning",
+            "Check actual ice-off and shore access"
+          ]
+        ],
+        "faq": [
+          [
+            "Which fish should I identify before the trip?",
+            "Learn the named trout targets in the facts above, then check their separate rules in the Utah guidebook."
+          ],
+          [
+            "Does this page promise a catch?",
+            "No. The sources establish a fishery and planning details, not a catch forecast."
+          ],
+          [
+            "What should I confirm before departure?",
+            "Confirm the exact access point, current conditions, return route and equipment."
+          ],
+          [
+            "Does a species record mean fishing is open?",
+            "No. Check the current rules for the named water and your chosen date."
+          ],
+          [
+            "What should I do if conditions change?",
+            "Change the access or itinerary. Keep enough time to return safely rather than trying to complete a fixed route."
+          ]
+        ]
+      },
       "indexAssessment": {
-        "eligible": false,
+        "eligible": true,
         "verifiedSpeciesIds": [
+          "cutthroat-trout",
+          "rainbow-trout",
           "sockeye-salmon"
         ],
-        "descriptionWords": 0,
+        "descriptionWords": 172,
         "seasonSection": true,
         "canonicalPath": "/north-america/united-states/utah/strawberry-reservoir-coldwater-lake-fishing/",
-        "reasons": [
-          "Only 1 verified individual target species with source links; at least 2 required",
-          "Water-specific description has 0 words; at least 120 required"
-        ]
+        "reasons": []
       },
       "articleWordCount": 206
     },
@@ -189794,7 +190077,7 @@
       "Cook Islands",
       "Niue"
     ],
-    "sources": 1101,
+    "sources": 1104,
     "sourceInspection": {
       "text-inspected": 231,
       "search-excerpt-inspected": 136,
@@ -189804,7 +190087,7 @@
       "source-checked": 5,
       "checked": 5,
       "existing-source-linked": 163,
-      "reviewed-source": 449
+      "reviewed-source": 452
     },
     "byRegion": {
       "North America": 551,

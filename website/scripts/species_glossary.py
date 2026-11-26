@@ -111,9 +111,22 @@ def install(pages, root, add, trips, data):
             body += '<p class="wrap">For dorado or common dolphinfish, start with ' + link('/species/mahi-mahi/', 'mahi-mahi identification and trip rules') + '.</p>'
         if s['id'] == 'peacock-bass':
             body += '<p class="wrap">Planning a Central American guapote trip? Compare ' + link('/species/rainbow-bass/', 'rainbow bass (Parachromis dovii)') + ' before choosing your water.</p>'
+        discovery_trips = {
+            'rainbow-trout': ['na-us-ut-001', 'na-us-ut-002', 'na-us-ut-004'],
+            'sea-trout': ['na-us-ut-001', 'na-us-ut-002'],
+            'cutthroat-trout': ['na-us-ut-004'],
+        }
+        if s['id'] in discovery_trips:
+            body += '<div class="wrap"><p>Plan a Utah trout trip:</p>' + trip_links(discovery_trips[s['id']]) + '</div>'
+        if s['id'] == 'giant-trevally-group':
+            body += '<p class="wrap">For GT or ulua aukea, see ' + link('/species/giant-trevally/', 'giant trevally names, size and trip planning') + '.</p>'
         answer = s.get('searchAnswer')
         if answer:
             body = heading('Species / ' + s['name'], answer['title'], answer['answer'])
+            if s['id'] == 'giant-trevally':
+                body += '<p class="wrap">Check ' + link('/fishing-licenses/us-hawaii/', 'Hawaii fishing licences') + ', compare ' + link('/species/giant-trevally-group/', 'trevally name records') + ', then explore ' + link('/environments/reef-bottom/', 'reef and bottom trips') + '.</p>'
+            if s['id'] == 'barramundi':
+                body += '<p class="wrap">Check ' + link('/fishing-licenses/au-northern-territory/', 'Northern Territory fishing access') + ' and ' + link('/fishing-licenses/au-queensland/', 'Queensland permits') + ', then compare ' + link('/environments/estuaries-mangroves/', 'estuary trips') + '.</p>'
             if s['id'] == 'mahi-mahi':
                 body += '<p class="wrap">Plan the next step: ' + link('/fishing-licenses/us-florida/', 'Florida fishing licences') + ' · ' + link('/guides/best-time-to-fish-florida-keys/', 'Florida Keys trip timing') + ' · ' + link('/species/mahi-mahi-group/', 'Other mahi-mahi name records') + '.</p>'
             if s['id'] == 'rainbow-bass':

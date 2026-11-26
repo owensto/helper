@@ -4810,13 +4810,18 @@
       "location": "Green River / below Flaming Gorge",
       "url": "/north-america/united-states/utah/green-river-below-flaming-gorge-river-trout-and-grayling/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
-      "sourceIds": [],
+      "indexEligible": true,
+      "sourceIds": [
+        "species-df3cba7f9c20"
+      ],
       "evidenceDepth": "Production brief; local fishery claims not yet verified",
       "localDecision": "Distinguish river sections, float distance and supplied equipment before creating a day plan.",
       "candidateTargets": "Trout candidates",
-      "confirmedTargets": [],
-      "seasonalEvidence": "Dates have not been verified for this opportunity. Before choosing travel dates, resolve: Flow releases, runoff, temperature and local presentation windows.",
+      "confirmedTargets": [
+        "Rainbow trout",
+        "Brown trout"
+      ],
+      "seasonalEvidence": "Check current dam releases, weather and reach-specific rules before choosing dates. Visit Utah describes year-round cold water; that is a habitat description, not a guarantee of conditions or an opening notice.",
       "accessToVerify": "Wade, bank or drift by reach",
       "tackleDecision": "Decide dry fly, nymph, streamer or spinning; match line, leader, presentation weight and rod",
       "operatorQuestion": "Guide rods and wading rentals, local flies and permitted access",
@@ -4847,17 +4852,19 @@
       "location": "Provo River",
       "url": "/north-america/united-states/utah/provo-river-river-trout-and-grayling/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
-        "species-83e93573ea7e"
+        "species-83e93573ea7e",
+        "species-c26f43c5b758"
       ],
       "evidenceDepth": "Production brief; local fishery claims not yet verified",
       "localDecision": "Separate middle and lower river experiences and compare beginner wading access.",
       "candidateTargets": "Brown / rainbow trout",
       "confirmedTargets": [
-        "Sea trout"
+        "Sea trout",
+        "Rainbow trout"
       ],
-      "seasonalEvidence": "Dates have not been verified for this opportunity. Before choosing travel dates, resolve: Flow releases, runoff, temperature and local presentation windows.",
+      "seasonalEvidence": "Visit Utah describes year-round flow in the Middle and Lower Provo. Hatches vary with the reach, time of year and daily conditions. Confirm the current flow and regulations rather than treating a hatch list as a fixed calendar.",
       "accessToVerify": "Wade, bank or drift by reach",
       "tackleDecision": "Decide dry fly, nymph, streamer or spinning; match line, leader, presentation weight and rod",
       "operatorQuestion": "Guide rods and wading rentals, local flies and permitted access",
@@ -4929,17 +4936,20 @@
       "location": "Strawberry Reservoir",
       "url": "/north-america/united-states/utah/strawberry-reservoir-coldwater-lake-fishing/",
       "currentTier": "preparation-brief",
-      "indexEligible": false,
+      "indexEligible": true,
       "sourceIds": [
-        "species-bdb6c009fcfb"
+        "species-bdb6c009fcfb",
+        "species-3f973c4d5a5d"
       ],
       "evidenceDepth": "Production brief; local fishery claims not yet verified",
       "localDecision": "Split open-water target setups from winter fishing and investigate boat rental options.",
       "candidateTargets": "Cutthroat trout / kokanee candidates",
       "confirmedTargets": [
-        "Sockeye salmon"
+        "Sockeye salmon",
+        "Rainbow trout",
+        "Cutthroat trout"
       ],
-      "seasonalEvidence": "Dates have not been verified for this opportunity. Before choosing travel dates, resolve: Water temperature, turnover, depth, access and target-specific timing.",
+      "seasonalEvidence": "Spring ice-off is a named trout opportunity in the official tourism profile. The date depends on conditions. Check current access and weather; neither a calendar date nor retreating shoreline ice establishes safe ice travel.",
       "accessToVerify": "Shore, small boat or guided boat",
       "tackleDecision": "Choose shore casting, fly stillwater, jigging or trolling before rod/line selection",
       "operatorQuestion": "Boat electronics and trolling hardware when guided",

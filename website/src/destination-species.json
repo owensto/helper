@@ -8272,12 +8272,45 @@
       "state": "Utah",
       "region": "North America",
       "status": "unverified",
-      "targets": [],
+      "targets": [
+        {
+          "speciesId": "rainbow-trout",
+          "commonName": "Rainbow trout",
+          "sourceUrls": [
+            "https://www.visitutah.com/things-to-do/fishing/green-river"
+          ],
+          "scopeNotes": [
+            "Visit Utah names this species in this water. This does not establish current harvest rules."
+          ],
+          "status": "reviewed-source",
+          "seasons": [],
+          "seasonStatus": "unverified",
+          "methods": [],
+          "methodStatus": "unverified"
+        },
+        {
+          "speciesId": "sea-trout",
+          "commonName": "Brown trout",
+          "sourceUrls": [
+            "https://www.visitutah.com/things-to-do/fishing/green-river"
+          ],
+          "scopeNotes": [
+            "Visit Utah names this species in this water. This does not establish current harvest rules."
+          ],
+          "status": "reviewed-source",
+          "seasons": [],
+          "seasonStatus": "unverified",
+          "methods": [],
+          "methodStatus": "unverified"
+        }
+      ],
       "seasons": [],
       "seasonStatus": "unverified",
       "methods": [],
       "methodStatus": "unverified",
-      "sourceUrls": [],
+      "sourceUrls": [
+        "https://www.visitutah.com/things-to-do/fishing/green-river"
+      ],
       "researchSourceUrls": [
         "https://wildlife.utah.gov/guidebooks/fishing_guidebook_2026.pdf",
         "https://wildlife.utah.gov/guidebooks/2024_fishing_guidebook.pdf",
@@ -8303,7 +8336,7 @@
         "https://wildlife.utah.gov/guidebooks?sec=01"
       ],
       "unverifiedCandidates": "Trout candidates",
-      "reviewed": "2026-11-10"
+      "reviewed": "2026-11-26"
     },
     {
       "id": "na-us-ut-002",
@@ -8317,10 +8350,27 @@
           "speciesId": "sea-trout",
           "commonName": "Sea trout",
           "sourceUrls": [
-            "https://wildlife.utah.gov/guidebooks/fishing_guidebook_2026.pdf"
+            "https://wildlife.utah.gov/guidebooks/fishing_guidebook_2026.pdf",
+            "https://www.visitutah.com/things-to-do/fishing/provo-river"
           ],
           "scopeNotes": [
-            "The source documents brown trout in the Provo River fishery. Check the source for the exact reach or departure area."
+            "The source documents brown trout in the Provo River fishery. Check the source for the exact reach or departure area.",
+            "Visit Utah names this species in this water. This does not establish current harvest rules."
+          ],
+          "status": "reviewed-source",
+          "seasons": [],
+          "seasonStatus": "unverified",
+          "methods": [],
+          "methodStatus": "unverified"
+        },
+        {
+          "speciesId": "rainbow-trout",
+          "commonName": "Rainbow trout",
+          "sourceUrls": [
+            "https://www.visitutah.com/things-to-do/fishing/provo-river"
+          ],
+          "scopeNotes": [
+            "Visit Utah names this species in this water. This does not establish current harvest rules."
           ],
           "status": "reviewed-source",
           "seasons": [],
@@ -8334,7 +8384,8 @@
       "methods": [],
       "methodStatus": "unverified",
       "sourceUrls": [
-        "https://wildlife.utah.gov/guidebooks/fishing_guidebook_2026.pdf"
+        "https://wildlife.utah.gov/guidebooks/fishing_guidebook_2026.pdf",
+        "https://www.visitutah.com/things-to-do/fishing/provo-river"
       ],
       "researchSourceUrls": [
         "https://wildlife.utah.gov/guidebooks/fishing_guidebook_2026.pdf",
@@ -8355,7 +8406,7 @@
         "https://wildlife.utah.gov/blog/2022/08/26/fishing-and-fun-in-central-utah"
       ],
       "unverifiedCandidates": null,
-      "reviewed": "2026-11-10"
+      "reviewed": "2026-11-26"
     },
     {
       "id": "na-us-ut-003",
@@ -8431,6 +8482,36 @@
           "seasonStatus": "unverified",
           "methods": [],
           "methodStatus": "unverified"
+        },
+        {
+          "speciesId": "rainbow-trout",
+          "commonName": "Rainbow trout",
+          "sourceUrls": [
+            "https://www.visitutah.com/things-to-do/fishing/strawberry-reservoir"
+          ],
+          "scopeNotes": [
+            "Visit Utah names this species in this water. This does not establish current harvest rules."
+          ],
+          "status": "reviewed-source",
+          "seasons": [],
+          "seasonStatus": "unverified",
+          "methods": [],
+          "methodStatus": "unverified"
+        },
+        {
+          "speciesId": "cutthroat-trout",
+          "commonName": "Cutthroat trout",
+          "sourceUrls": [
+            "https://www.visitutah.com/things-to-do/fishing/strawberry-reservoir"
+          ],
+          "scopeNotes": [
+            "Visit Utah names this species in this water. This does not establish current harvest rules."
+          ],
+          "status": "reviewed-source",
+          "seasons": [],
+          "seasonStatus": "unverified",
+          "methods": [],
+          "methodStatus": "unverified"
         }
       ],
       "seasons": [],
@@ -8438,7 +8519,8 @@
       "methods": [],
       "methodStatus": "unverified",
       "sourceUrls": [
-        "https://wildlife.utah.gov/blog/2024/03/13/six-great-fishing-spots-for-this-spring"
+        "https://wildlife.utah.gov/blog/2024/03/13/six-great-fishing-spots-for-this-spring",
+        "https://www.visitutah.com/things-to-do/fishing/strawberry-reservoir"
       ],
       "researchSourceUrls": [
         "https://wildlife.utah.gov/blog/2024/03/13/six-great-fishing-spots-for-this-spring",
@@ -8461,7 +8543,7 @@
         "https://wildlife.utah.gov/rules/r657-13?highlight=WyJ3ZWJlciIsInJpdmVycyIsInJpdmVyIiwicml2ZXIncyJd"
       ],
       "unverifiedCandidates": null,
-      "reviewed": "2026-11-10"
+      "reviewed": "2026-11-26"
     },
     {
       "id": "na-us-ut-005",

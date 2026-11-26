@@ -21466,7 +21466,97 @@
           "note": "Check the rules for the exact water, date, licence and fish identification. This link does not establish an open season."
         }
       ],
-      "referenceRole": "game fish"
+      "referenceRole": "game fish",
+      "searchAnswer": {
+        "title": "Barramundi: freshwater or saltwater, size and trip timing",
+        "description": "Barramundi (Lates calcarifer) live in fresh and salt water. Learn how habitat and spawning differ, then check the rules for your Australian fishing trip.",
+        "question": "Is barramundi a freshwater or saltwater fish?",
+        "answer": "Barramundi (Lates calcarifer), also called barra, live in both fresh and salt water. NSW fisheries lists rivers, billabongs, estuaries and coastal waters as habitats. They need salt water to spawn. For a fishing holiday, choose the exact river or stocked lake first, then check its access and seasonal rules.",
+        "facts": [
+          [
+            "Scientific name",
+            "Lates calcarifer — NSW fisheries"
+          ],
+          [
+            "Common short name",
+            "Barra — Northern Territory Government"
+          ],
+          [
+            "Water types",
+            "Fresh water through seawater — NSW fisheries"
+          ],
+          [
+            "Habitats",
+            "Coasts, estuaries, rivers and freshwater billabongs — NSW fisheries"
+          ],
+          [
+            "Spawning habitat",
+            "Marine bays and river mouths — Northern Territory Government"
+          ],
+          [
+            "NT spawning period",
+            "September to March; not an open-season statement"
+          ],
+          [
+            "Large recorded fish",
+            "Over 45 kg and 150 cm — Northern Territory Government"
+          ],
+          [
+            "Typical holiday catch",
+            "Not stated by the cited sources"
+          ]
+        ],
+        "sections": [
+          {
+            "question": "Why can barramundi live in fresh water and salt water?",
+            "answer": "NSW fisheries describes barramundi as tolerant of the full salinity range from fresh water to seawater. This lets the same species occupy rivers, estuaries and coastal habitats. Choose your trip by the actual water and access plan. The species name alone does not tell you whether a trip goes offshore.",
+            "source": "https://www.dpird.nsw.gov.au/dpi/fishing/aquaculture/resources/publications/species2/freshwater/barramundi"
+          },
+          {
+            "question": "When do barramundi spawn in the Northern Territory?",
+            "answer": "The Northern Territory Government gives September to March as the spawning period. Spawning occurs in marine bays and river mouths because eggs and larvae need salt water. This is a life-cycle description, not an opening notice. Check current rules for your chosen water before you book travel around those months.",
+            "source": "https://nt.gov.au/marine/recreational-fishing/types-of-fish/fish-species/barramundi"
+          },
+          {
+            "question": "What should you ask before a barramundi fishing holiday?",
+            "answer": "Ask whether the day uses a tidal river, an estuary, a billabong or a stocked impoundment. Confirm the meeting point, return time, tackle and weather cancellation terms. Then read the local access and fishing rules for that water. Do not apply one state’s season or licence rules to another.",
+            "source": "https://www.dpird.nsw.gov.au/dpi/fishing/aquaculture/resources/publications/species2/freshwater/barramundi"
+          }
+        ],
+        "faq": [
+          [
+            "Is barra the same as barramundi?",
+            "Yes. The Northern Territory Government uses barra as its common short name."
+          ],
+          [
+            "Can barramundi live in freshwater?",
+            "Yes. NSW fisheries lists freshwater billabongs and rivers among their habitats."
+          ],
+          [
+            "Do barramundi need salt water to spawn?",
+            "Yes. Their eggs and larvae require salt water."
+          ],
+          [
+            "How large can barramundi grow?",
+            "The Northern Territory Government reports fish over 45 kg and 150 cm. These are large records, not expected catches."
+          ],
+          [
+            "Does spawning season mean fishing is open?",
+            "No. Check the current fishing rules for the state and named water."
+          ]
+        ],
+        "sources": [
+          [
+            "NSW fisheries: barramundi biology",
+            "https://www.dpird.nsw.gov.au/dpi/fishing/aquaculture/resources/publications/species2/freshwater/barramundi"
+          ],
+          [
+            "Northern Territory Government: barramundi",
+            "https://nt.gov.au/marine/recreational-fishing/types-of-fish/fish-species/barramundi"
+          ]
+        ],
+        "updated": "2026-11-26"
+      }
     },
     {
       "id": "barred-sorubim",
@@ -95662,7 +95752,106 @@
           "note": "Check the rules for the exact water, date, licence and fish identification. This link does not establish an open season."
         }
       ],
-      "referenceRole": "game fish"
+      "referenceRole": "game fish",
+      "searchAnswer": {
+        "title": "Giant trevally (GT, ulua): size, names and trip planning",
+        "description": "Giant trevally, GT and ulua aukea name Caranx ignobilis. Compare the size, reef habitat and local names before you plan an Indo-Pacific fishing trip.",
+        "question": "What fish is a giant trevally?",
+        "answer": "Giant trevally (Caranx ignobilis), often called GT, is a large Indo-Pacific reef predator. In Hawaii, its name is ulua aukea. The University of Hawaii gives an upper size of 170 cm and 80 kg. Those are species maxima, not the size to expect on a fishing trip.",
+        "facts": [
+          [
+            "Scientific name",
+            "Caranx ignobilis"
+          ],
+          [
+            "Angler abbreviation",
+            "GT"
+          ],
+          [
+            "Hawaiian name",
+            "Ulua aukea"
+          ],
+          [
+            "Range and habitat",
+            "Indo-Pacific coral reefs — University of Hawaii"
+          ],
+          [
+            "Upper size reported",
+            "170 cm total length; 80 kg — University of Hawaii"
+          ],
+          [
+            "Social behaviour",
+            "Alone or in schools — Maui Ocean Center"
+          ],
+          [
+            "Typical trip catch size",
+            "Not stated by the cited sources"
+          ],
+          [
+            "Identification",
+            "Steep head profile; dark mark at pectoral-fin base — Maui Ocean Center"
+          ]
+        ],
+        "sections": [
+          {
+            "question": "Is ulua the same fish as giant trevally?",
+            "answer": "Ulua aukea identifies giant trevally in the University of Hawaii study. Use the full local name and Caranx ignobilis when you compare destinations. A short label on a trip listing can leave the target unclear. Ask which species the trip targets before you choose tackle or compare itineraries.",
+            "source": "https://www.himb.hawaii.edu/ReefPredator/Ulua.html"
+          },
+          {
+            "question": "How do you recognise a giant trevally?",
+            "answer": "Maui Ocean Center describes a steep head profile and a dark mark at the base of the pectoral fin. Courting males can look black, while females are silver. Use several features together when comparing trevally species; colour alone is a poor basis for identifying a fish before applying catch rules.",
+            "source": "https://mauioceancenter.com/marine-life/giant-trevally/"
+          },
+          {
+            "question": "How big can giant trevally get?",
+            "answer": "The University of Hawaii lists an upper size of 170 cm total length and 80 kg. Treat that as a biological size reference. It is not a catch forecast, an average fish size or a verified angling record. Ask for the tackle requirements for your particular trip instead.",
+            "source": "https://www.himb.hawaii.edu/ReefPredator/Ulua.html"
+          },
+          {
+            "question": "What should you check before a GT fishing trip?",
+            "answer": "Start with the exact island, reef area and departure point. Then ask about boat or shore access, included tackle, the return time and the cancellation terms. Check that place’s licence and protected-area rules separately. A species range shows where a fish occurs; it does not establish permission to fish.",
+            "source": "https://www.himb.hawaii.edu/ReefPredator/Ulua.html"
+          }
+        ],
+        "faq": [
+          [
+            "What does GT mean in fishing?",
+            "GT is the common angler abbreviation for giant trevally."
+          ],
+          [
+            "What is the scientific name?",
+            "Caranx ignobilis."
+          ],
+          [
+            "What is its Hawaiian name?",
+            "Ulua aukea is the name used by the University of Hawaii."
+          ],
+          [
+            "Is every GT a large fish?",
+            "No. A maximum size does not describe every individual or an expected catch."
+          ],
+          [
+            "Do giant trevally live in groups?",
+            "Maui Ocean Center describes both solitary fish and schools."
+          ]
+        ],
+        "sources": [
+          [
+            "University of Hawaii: giant trevally research",
+            "https://www.himb.hawaii.edu/ReefPredator/Ulua.html"
+          ],
+          [
+            "Maui Ocean Center: giant trevally",
+            "https://mauioceancenter.com/marine-life/giant-trevally/"
+          ],
+          [
+            "FishBase: names",
+            "https://www.fishbase.se/ComNames/CommonNamesList.php?ID=1895"
+          ]
+        ],
+        "updated": "2026-11-26"
+      }
     },
     {
       "id": "giant-trevally-group",

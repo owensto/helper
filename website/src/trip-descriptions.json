@@ -3198,6 +3198,153 @@
           "No. The source establishes the fishery, not your catch."
         ]
       ]
+    },
+    "na-us-ut-001": {
+      "place": "Green River / below Flaming Gorge",
+      "reviewed": "2026-11-26",
+      "paragraphs": [
+        "The Green River below Flaming Gorge Dam offers rainbow and brown trout in three distinct reaches. Start with Section A, from the dam to Little Hole, when you compare access. The next reaches continue through Browns Park toward the Colorado border. Choose the reach before you choose a boat or a bank itinerary.",
+        "Visit Utah describes a 7.2-mile A section with trails and a boardwalk. Section B runs from Little Hole to Indian Crossing, and Section C continues to the state line. Access to B and C uses boats and gravel roads. That makes the take-out and shuttle plan part of the trip, not an afterthought.",
+        "For a weekend visit, reserve one reach as the main plan and keep time for a change in conditions. Ask about current dam releases, the meeting point and the return route. Pack a river map and agree on a turnaround time. Check the current Utah guidebook for the exact reach; a trout population does not establish open access or a legal method."
+      ],
+      "sourceUrls": [
+        "https://www.visitutah.com/things-to-do/fishing/green-river"
+      ],
+      "season": "Check current dam releases, weather and reach-specific rules before choosing dates. Visit Utah describes year-round cold water; that is a habitat description, not a guarantee of conditions or an opening notice.",
+      "facts": [
+        [
+          "Section A",
+          "Flaming Gorge Dam to Little Hole"
+        ],
+        [
+          "Section B",
+          "Little Hole to Indian Crossing"
+        ],
+        [
+          "Section C",
+          "Indian Crossing to the Utah–Colorado border"
+        ]
+      ],
+      "faq": [
+        [
+          "Which fish should I identify before the trip?",
+          "Learn the named trout targets in the facts above, then check their separate rules in the Utah guidebook."
+        ],
+        [
+          "Does this page promise a catch?",
+          "No. The sources establish a fishery and planning details, not a catch forecast."
+        ],
+        [
+          "What should I confirm before departure?",
+          "Confirm the exact access point, current conditions, return route and equipment."
+        ],
+        [
+          "Does a species record mean fishing is open?",
+          "No. Check the current rules for the named water and your chosen date."
+        ],
+        [
+          "What should I do if conditions change?",
+          "Change the access or itinerary. Keep enough time to return safely rather than trying to complete a fixed route."
+        ]
+      ]
+    },
+    "na-us-ut-002": {
+      "place": "Provo River",
+      "reviewed": "2026-11-26",
+      "paragraphs": [
+        "The Provo River offers brown and rainbow trout, with separate Middle and Lower river outings. The Middle Provo runs through Heber Valley between Jordanelle and Deer Creek reservoirs. Choose the reach and public access point before you travel. A river name alone is not enough to select the right regulations or parking.",
+        "Visit Utah describes riffles, pools and runs across the fishery. Its Middle Provo route extends about 12 miles through meadows, cottonwoods and farmland. The Lower Provo is a separate choice below Deer Creek. Match your route to the time available, and use the linked agency map to check the access rather than assuming every bank is public.",
+        "For a short break, plan one reach per day instead of rushing between them. Ask about the current flow, the walk from parking and the tackle needed for that day. Keep a dry change of clothes for the return. Read the current Utah rules for the precise river section, including method and harvest restrictions, before you make the first cast."
+      ],
+      "sourceUrls": [
+        "https://www.visitutah.com/things-to-do/fishing/provo-river"
+      ],
+      "season": "Visit Utah describes year-round flow in the Middle and Lower Provo. Hatches vary with the reach, time of year and daily conditions. Confirm the current flow and regulations rather than treating a hatch list as a fixed calendar.",
+      "facts": [
+        [
+          "Middle Provo",
+          "Jordanelle Reservoir to Deer Creek Reservoir"
+        ],
+        [
+          "Lower Provo",
+          "Below Deer Creek Reservoir"
+        ],
+        [
+          "Targets documented",
+          "Brown trout and rainbow trout"
+        ]
+      ],
+      "faq": [
+        [
+          "Which fish should I identify before the trip?",
+          "Learn the named trout targets in the facts above, then check their separate rules in the Utah guidebook."
+        ],
+        [
+          "Does this page promise a catch?",
+          "No. The sources establish a fishery and planning details, not a catch forecast."
+        ],
+        [
+          "What should I confirm before departure?",
+          "Confirm the exact access point, current conditions, return route and equipment."
+        ],
+        [
+          "Does a species record mean fishing is open?",
+          "No. Check the current rules for the named water and your chosen date."
+        ],
+        [
+          "What should I do if conditions change?",
+          "Change the access or itinerary. Keep enough time to return safely rather than trying to complete a fixed route."
+        ]
+      ]
+    },
+    "na-us-ut-004": {
+      "place": "Strawberry Reservoir",
+      "reviewed": "2026-11-26",
+      "paragraphs": [
+        "Strawberry Reservoir offers rainbow and cutthroat trout in a mountain valley east of the Wasatch Front. Choose among Strawberry Basin, Meadows Basin, the Narrows and Soldier Creek Basin. A spring ice-off trip and a summer boat outing need different access plans. Check the actual shoreline, ramp and weather before you leave.",
+        "Visit Utah describes ice-off as the retreat of the winter ice sheet, when trout move toward the banks. The date changes with conditions. Its reservoir profile names four fishing zones, so start with a specific basin rather than searching the whole lake. Use the agency map and report linked from the profile to narrow the plan.",
+        "For a two-day visit, keep one session flexible in case wind or access changes. Decide whether you will fish from shore or a boat before you pack. Learn to distinguish rainbow and cutthroat trout before checking the reservoir’s special rules. Carry the current Utah guidebook, and confirm the licence, launch arrangements and return plan. A seasonal opportunity does not make remaining ice safe to enter."
+      ],
+      "sourceUrls": [
+        "https://www.visitutah.com/things-to-do/fishing/strawberry-reservoir"
+      ],
+      "season": "Spring ice-off is a named trout opportunity in the official tourism profile. The date depends on conditions. Check current access and weather; neither a calendar date nor retreating shoreline ice establishes safe ice travel.",
+      "facts": [
+        [
+          "Fishing zones",
+          "Strawberry Basin, Meadows Basin, the Narrows and Soldier Creek Basin"
+        ],
+        [
+          "Trout targets",
+          "Rainbow trout and cutthroat trout"
+        ],
+        [
+          "Spring planning",
+          "Check actual ice-off and shore access"
+        ]
+      ],
+      "faq": [
+        [
+          "Which fish should I identify before the trip?",
+          "Learn the named trout targets in the facts above, then check their separate rules in the Utah guidebook."
+        ],
+        [
+          "Does this page promise a catch?",
+          "No. The sources establish a fishery and planning details, not a catch forecast."
+        ],
+        [
+          "What should I confirm before departure?",
+          "Confirm the exact access point, current conditions, return route and equipment."
+        ],
+        [
+          "Does a species record mean fishing is open?",
+          "No. Check the current rules for the named water and your chosen date."
+        ],
+        [
+          "What should I do if conditions change?",
+          "Change the access or itinerary. Keep enough time to return safely rather than trying to complete a fixed route."
+        ]
+      ]
     }
   }
 }

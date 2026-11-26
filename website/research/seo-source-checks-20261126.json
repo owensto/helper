@@ -1,0 +1,67 @@
+{
+  "checked": "2026-11-26",
+  "licences": {
+    "us-tennessee": {
+      "status": "checked",
+      "evidence": "Orca TWRA non-resident tab confirms 10/20/40/30/61/49/98 USD. Official search extract confirms Tellico-Citico 6 USD. Official event confirms June 6 and youth June 6\u201312."
+    },
+    "us-texas": {
+      "status": "checked",
+      "evidence": "TPWD package and ID pages confirm 16/58/63/68 USD, endorsements and foreign-resident in-person requirement. Free-day page checked."
+    },
+    "us-utah": {
+      "status": "checked",
+      "evidence": "DWR fee table confirms 44/91/120 USD adult visitor options, youth 18/44 and setline 48. Current 2026 guidebook confirms June 6 free day. Replaced 404 source URL with live official guidebook URL."
+    },
+    "us-vermont": {
+      "status": "checked",
+      "evidence": "Fish Vermont confirms 21/23/31/54 USD visitor options, youth 15. Statute confirms two free days; no exact dates added."
+    },
+    "us-virginia": {
+      "status": "checked",
+      "evidence": "DWR fee table confirms 20/36/46/72/96 USD and trout 48. Official free-day notice and saltwater exemption law checked; retained existing values."
+    },
+    "au-victoria": {
+      "status": "extra check",
+      "evidence": "Live VFA Orca page confirms every fee and exemption in the earlier November 26 release. No content correction needed."
+    }
+  },
+  "species": {
+    "giant-trevally": {
+      "lastCrawl": "2026-11-14 02:35:21",
+      "ownRecordUnchangedSince": "2026-11-14",
+      "sources": [
+        "https://www.himb.hawaii.edu/ReefPredator/Ulua.html",
+        "https://mauioceancenter.com/marine-life/giant-trevally/"
+      ]
+    },
+    "barramundi": {
+      "lastCrawl": "2026-11-14 00:45:55",
+      "ownRecordUnchangedSince": "2026-11-14",
+      "sources": [
+        "https://nt.gov.au/marine/recreational-fishing/types-of-fish/fish-species/barramundi",
+        "https://www.dpird.nsw.gov.au/dpi/fishing/aquaculture/resources/publications/species2/freshwater/barramundi"
+      ]
+    }
+  },
+  "trips": {
+    "na-us-ut-001": {
+      "lastCrawl": null,
+      "source": "https://www.visitutah.com/things-to-do/fishing/green-river"
+    },
+    "na-us-ut-002": {
+      "lastCrawl": "2026-11-10 21:09:15",
+      "source": "https://www.visitutah.com/things-to-do/fishing/provo-river"
+    },
+    "na-us-ut-004": {
+      "lastCrawl": "2026-11-10 22:03:03",
+      "source": "https://www.visitutah.com/things-to-do/fishing/strawberry-reservoir"
+    }
+  },
+  "notes": [
+    "The existing sea-trout catalog ID represents Salmo trutta; the trip evidence calls the freshwater fish brown trout.",
+    "The initial dist was a preview build. Its global canonical-origin hold does not indicate a production content hold. Trip selection excludes that reason.",
+    "Species pages are the exact own match. The giant-trevally group now links to the species record.",
+    "Google AI Overview captures are extra research, separate from the fixed score. Grok is unavailable; no paid call occurred."
+  ]
+}

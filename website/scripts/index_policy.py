@@ -96,7 +96,7 @@ def install(pages, trips, origin, dist):
         # Render the description separately from shared gear modules and navigation.
         local = trip.get('localDescription')
         if local:
-            module = '<section class="wrap prose-block" id="local-water-description"><h2>How should you plan this water?</h2>'
+            module = '<section class="wrap prose-block" id="local-water-description"><h2>What should you know before this trip?</h2>'
             module += '<p class="small">Updated ' + escape(local['reviewed']) + '</p>'
             module += ''.join('<p>' + escape(p) + '</p>' for p in local['paragraphs'])
             module += '<script type="application/ld+json">' + json.dumps({

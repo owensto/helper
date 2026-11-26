@@ -2339,9 +2339,17 @@
       "label": "Fishery source for Steamboat Lake",
       "url": "https://cpw.state.co.us/sites/default/files/dam/jxbwjvncno/steamboat-lake-and-pearl-lake-state-parks.pdf"
     },
+    "world-species-df3cba7f9c20": {
+      "label": "Fishery source for Green River / below Flaming Gorge",
+      "url": "https://www.visitutah.com/things-to-do/fishing/green-river"
+    },
     "world-species-83e93573ea7e": {
       "label": "Fishery source for Provo River",
       "url": "https://wildlife.utah.gov/guidebooks/fishing_guidebook_2026.pdf"
+    },
+    "world-species-c26f43c5b758": {
+      "label": "Fishery source for Provo River",
+      "url": "https://www.visitutah.com/things-to-do/fishing/provo-river"
     },
     "world-species-03e6a0711d42": {
       "label": "Fishery source for Weber River",
@@ -2350,6 +2358,10 @@
     "world-species-bdb6c009fcfb": {
       "label": "Fishery source for Strawberry Reservoir",
       "url": "https://wildlife.utah.gov/blog/2024/03/13/six-great-fishing-spots-for-this-spring"
+    },
+    "world-species-3f973c4d5a5d": {
+      "label": "Fishery source for Strawberry Reservoir",
+      "url": "https://www.visitutah.com/things-to-do/fishing/strawberry-reservoir"
     },
     "world-species-99661cdbe999": {
       "label": "Fishery source for Flaming Gorge / Utah base",
@@ -16645,9 +16657,12 @@
     },
     {
       "id": "na-us-ut-001",
-      "name": "Green River",
+      "name": "Green River Below Flaming Gorge",
       "region": "United States",
-      "species": [],
+      "species": [
+        "Rainbow trout",
+        "Brown trout"
+      ],
       "styles": [
         "bank",
         "guidedwade"
@@ -16657,7 +16672,7 @@
       "tripProfile": "na-us-ut-001",
       "technicalGear": true,
       "guideUrl": "/north-america/united-states/utah/green-river-below-flaming-gorge-river-trout-and-grayling/",
-      "seasonNote": "Dates have not been verified for this opportunity. Before choosing travel dates, resolve: Flow releases, runoff, temperature and local presentation windows.",
+      "seasonNote": "Check current dam releases, weather and reach-specific rules before choosing dates. Visit Utah describes year-round cold water; that is a habitat description, not a guarantee of conditions or an opening notice.",
       "seasonWindows": [],
       "tripTypeIds": [],
       "tripStyleIds": [
@@ -16666,9 +16681,9 @@
         "river-fishing"
       ],
       "operator": {
-        "name": "Open research and trip questions",
-        "type": "Research pending",
-        "url": "/production/north-america/",
+        "name": "Fishery source for Green River / below Flaming Gorge",
+        "type": "Research source",
+        "url": "https://www.visitutah.com/things-to-do/fishing/green-river",
         "note": "A research resource, not a booked trip or Atlas operator partnership. Confirm all inclusions and availability independently."
       },
       "coordinates": [
@@ -16677,11 +16692,45 @@
       ],
       "locationPrecision": "place-area",
       "locationSource": "https://www.openstreetmap.org/way/184877726",
-      "speciesIds": [],
-      "speciesEvidence": [],
+      "speciesIds": [
+        "rainbow-trout",
+        "sea-trout"
+      ],
+      "speciesEvidence": [
+        {
+          "speciesId": "rainbow-trout",
+          "commonName": "Rainbow trout",
+          "sourceUrls": [
+            "https://www.visitutah.com/things-to-do/fishing/green-river"
+          ],
+          "scopeNotes": [
+            "Visit Utah names this species in this water. This does not establish current harvest rules."
+          ],
+          "status": "reviewed-source",
+          "seasons": [],
+          "seasonStatus": "unverified",
+          "methods": [],
+          "methodStatus": "unverified"
+        },
+        {
+          "speciesId": "sea-trout",
+          "commonName": "Brown trout",
+          "sourceUrls": [
+            "https://www.visitutah.com/things-to-do/fishing/green-river"
+          ],
+          "scopeNotes": [
+            "Visit Utah names this species in this water. This does not establish current harvest rules."
+          ],
+          "status": "reviewed-source",
+          "seasons": [],
+          "seasonStatus": "unverified",
+          "methods": [],
+          "methodStatus": "unverified"
+        }
+      ],
       "speciesReview": {
         "status": "unverified",
-        "reviewed": "2026-11-10",
+        "reviewed": "2026-11-26",
         "seasonStatus": "unverified",
         "methodStatus": "unverified"
       },
@@ -16715,7 +16764,8 @@
       "name": "Provo River",
       "region": "United States",
       "species": [
-        "Sea trout"
+        "Sea trout",
+        "Rainbow trout"
       ],
       "styles": [
         "bank",
@@ -16726,7 +16776,7 @@
       "tripProfile": "na-us-ut-002",
       "technicalGear": true,
       "guideUrl": "/north-america/united-states/utah/provo-river-river-trout-and-grayling/",
-      "seasonNote": "Dates have not been verified for this opportunity. Before choosing travel dates, resolve: Flow releases, runoff, temperature and local presentation windows.",
+      "seasonNote": "Visit Utah describes year-round flow in the Middle and Lower Provo. Hatches vary with the reach, time of year and daily conditions. Confirm the current flow and regulations rather than treating a hatch list as a fixed calendar.",
       "seasonWindows": [],
       "tripTypeIds": [],
       "tripStyleIds": [
@@ -16747,17 +16797,35 @@
       "locationPrecision": "place-area",
       "locationSource": "https://www.openstreetmap.org/relation/15353136",
       "speciesIds": [
-        "sea-trout"
+        "sea-trout",
+        "rainbow-trout"
       ],
       "speciesEvidence": [
         {
           "speciesId": "sea-trout",
           "commonName": "Sea trout",
           "sourceUrls": [
-            "https://wildlife.utah.gov/guidebooks/fishing_guidebook_2026.pdf"
+            "https://wildlife.utah.gov/guidebooks/fishing_guidebook_2026.pdf",
+            "https://www.visitutah.com/things-to-do/fishing/provo-river"
           ],
           "scopeNotes": [
-            "The source documents brown trout in the Provo River fishery. Check the source for the exact reach or departure area."
+            "The source documents brown trout in the Provo River fishery. Check the source for the exact reach or departure area.",
+            "Visit Utah names this species in this water. This does not establish current harvest rules."
+          ],
+          "status": "reviewed-source",
+          "seasons": [],
+          "seasonStatus": "unverified",
+          "methods": [],
+          "methodStatus": "unverified"
+        },
+        {
+          "speciesId": "rainbow-trout",
+          "commonName": "Rainbow trout",
+          "sourceUrls": [
+            "https://www.visitutah.com/things-to-do/fishing/provo-river"
+          ],
+          "scopeNotes": [
+            "Visit Utah names this species in this water. This does not establish current harvest rules."
           ],
           "status": "reviewed-source",
           "seasons": [],
@@ -16768,7 +16836,7 @@
       ],
       "speciesReview": {
         "status": "source-linked",
-        "reviewed": "2026-11-10",
+        "reviewed": "2026-11-26",
         "seasonStatus": "unverified",
         "methodStatus": "unverified"
       },
@@ -16877,7 +16945,9 @@
       "name": "Strawberry Reservoir",
       "region": "United States",
       "species": [
-        "Sockeye salmon"
+        "Sockeye salmon",
+        "Rainbow trout",
+        "Cutthroat trout"
       ],
       "styles": [
         "bank",
@@ -16888,7 +16958,7 @@
       "tripProfile": "na-us-ut-004",
       "technicalGear": true,
       "guideUrl": "/north-america/united-states/utah/strawberry-reservoir-coldwater-lake-fishing/",
-      "seasonNote": "Dates have not been verified for this opportunity. Before choosing travel dates, resolve: Water temperature, turnover, depth, access and target-specific timing.",
+      "seasonNote": "Spring ice-off is a named trout opportunity in the official tourism profile. The date depends on conditions. Check current access and weather; neither a calendar date nor retreating shoreline ice establishes safe ice travel.",
       "seasonWindows": [],
       "tripTypeIds": [],
       "tripStyleIds": [
@@ -16908,7 +16978,9 @@
       "locationPrecision": "place-area",
       "locationSource": "https://www.openstreetmap.org/relation/1346547",
       "speciesIds": [
-        "sockeye-salmon"
+        "sockeye-salmon",
+        "rainbow-trout",
+        "cutthroat-trout"
       ],
       "speciesEvidence": [
         {
@@ -16925,11 +16997,41 @@
           "seasonStatus": "unverified",
           "methods": [],
           "methodStatus": "unverified"
+        },
+        {
+          "speciesId": "rainbow-trout",
+          "commonName": "Rainbow trout",
+          "sourceUrls": [
+            "https://www.visitutah.com/things-to-do/fishing/strawberry-reservoir"
+          ],
+          "scopeNotes": [
+            "Visit Utah names this species in this water. This does not establish current harvest rules."
+          ],
+          "status": "reviewed-source",
+          "seasons": [],
+          "seasonStatus": "unverified",
+          "methods": [],
+          "methodStatus": "unverified"
+        },
+        {
+          "speciesId": "cutthroat-trout",
+          "commonName": "Cutthroat trout",
+          "sourceUrls": [
+            "https://www.visitutah.com/things-to-do/fishing/strawberry-reservoir"
+          ],
+          "scopeNotes": [
+            "Visit Utah names this species in this water. This does not establish current harvest rules."
+          ],
+          "status": "reviewed-source",
+          "seasons": [],
+          "seasonStatus": "unverified",
+          "methods": [],
+          "methodStatus": "unverified"
         }
       ],
       "speciesReview": {
         "status": "source-linked",
-        "reviewed": "2026-11-10",
+        "reviewed": "2026-11-26",
         "seasonStatus": "unverified",
         "methodStatus": "unverified"
       },
@@ -138742,7 +138844,7 @@
       },
       {
         "id": "na-us-ut-001",
-        "title": "Green River: Trout Below Flaming Gorge, Utah",
+        "title": "Green River Below Flaming Gorge: Rainbow and Brown Trout",
         "place": "Green River / below Flaming Gorge",
         "country": "United States",
         "region": "North America",
@@ -138750,7 +138852,10 @@
         "subregion": "Rockies",
         "canonicalPath": "/north-america/united-states/utah/green-river-below-flaming-gorge-river-trout-and-grayling/",
         "contentTier": "preparation-brief",
-        "fish": [],
+        "fish": [
+          "Rainbow trout",
+          "Brown trout"
+        ],
         "candidateTargets": "Trout candidates",
         "tripTypeIds": [],
         "tripTypeNames": [],
@@ -138762,7 +138867,7 @@
       },
       {
         "id": "na-us-ut-002",
-        "title": "Provo River: A Wading Trip for Utah Trout",
+        "title": "Provo River: Middle and Lower River Trout Trips",
         "place": "Provo River",
         "country": "United States",
         "region": "North America",
@@ -138771,7 +138876,8 @@
         "canonicalPath": "/north-america/united-states/utah/provo-river-river-trout-and-grayling/",
         "contentTier": "preparation-brief",
         "fish": [
-          "Sea trout"
+          "Sea trout",
+          "Rainbow trout"
         ],
         "candidateTargets": "Brown / rainbow trout",
         "tripTypeIds": [],
@@ -138806,7 +138912,7 @@
       },
       {
         "id": "na-us-ut-004",
-        "title": "Strawberry Reservoir: Open-Water Fishing in Utah",
+        "title": "Strawberry Reservoir: Rainbow and Cutthroat Trout",
         "place": "Strawberry Reservoir",
         "country": "United States",
         "region": "North America",
@@ -138815,7 +138921,9 @@
         "canonicalPath": "/north-america/united-states/utah/strawberry-reservoir-coldwater-lake-fishing/",
         "contentTier": "preparation-brief",
         "fish": [
-          "Sockeye salmon"
+          "Sockeye salmon",
+          "Rainbow trout",
+          "Cutthroat trout"
         ],
         "candidateTargets": "Cutthroat trout / kokanee candidates",
         "tripTypeIds": [],
