@@ -211,7 +211,7 @@ def buy_button(r, cls='btn'):
     if r.get('buyUrl'):
         return link(r['buyUrl'], {'no': 'Get the local permit ↗', 'local': 'Find a local permit ↗'}.get(kind, 'Buy on the official site ↗'), cls)
     if r.get('authority', {}).get('url'):
-        return link(r['authority']['url'], 'Check the official rules ↗' if kind == 'no' else 'Go to the official site ↗', cls)
+        return link(r['authority']['url'], 'Check the official rules ↗' if kind == 'no' else 'See official licence options ↗', cls)
     return ''
 
 
