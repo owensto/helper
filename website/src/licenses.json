@@ -10591,14 +10591,94 @@
         "url": "https://wvdnr.gov/wp-content/uploads/2026/02/Pub_Regs_Fishing_2026_DNR_WILD_pp.pdf"
       },
       "buyUrl": "https://www.wvhunt.com/login",
-      "summary": "Visitors aged 15 or older need fishing coverage. The low daily licence price excludes the mandatory Conservation/Law Enforcement Stamp.",
+      "summary": "Anglers aged 15 or older need a West Virginia fishing licence for the calendar year (January 1 to December 31): residents pay $19 annual (Class B) or $8 for 5 days (Class L) plus the mandatory $5 Conservation Stamp (Class CS), while visitors pay $3 for 1 day (Class LL) or $37 annual (Class F) plus the mandatory $13 Conservation/Law Enforcement Stamp (Class CS/LE). Domiciled West Virginia seniors aged 65+ pay $25 once for the Class XS Senior Lifetime Licence (trout stamp included); residents born before January 1, 1947 and all youth under 15 fish free.",
       "whoNeedsOne": [
-        "Non-residents aged 15 or older."
+        "West Virginia residents aged 15 to 64 (domiciled continuously in WV for 30 consecutive days, plus qualifying military and full-time WV college students).",
+        "West Virginia residents aged 65 or older who turned 65 on or after January 1, 2012 (one-time $25 Class XS Senior Lifetime Licence, unless holding a Class A-L or AB-L lifetime licence).",
+        "Non-residents aged 15 or older, including non-resident seniors aged 65 and older."
       ],
       "exemptions": [
-        "Children under 15 need no general fishing licence."
+        "Resident and non-resident youth under 15 years of age need no fishing licence or trout stamp.",
+        "West Virginia residents born before January 1, 1947 (turned 65 before January 1, 2012) fish free without a licence or trout stamp; carry a WV driver's license or WV DMV photo ID.",
+        "West Virginia resident landowners, their resident children, resident parents, and bona fide resident tenants fishing on their own land during open seasons.",
+        "West Virginia residents who are totally blind (carry a physician's statement; no trout stamp needed) or developmentally disabled (carry a DNR DDFL card; no trout stamp needed).",
+        "West Virginia resident 100% permanent service-connected disabled veterans and former POWs (carry a DNR card; no trout stamp needed) and resident active-duty U.S. military on leave (carry leave number; no trout stamp needed).",
+        "Special Class DT licence is FREE for resident and non-resident anglers aged 20 or younger with a life-threatening condition (requires no additional licences or stamps).",
+        "Free Fishing Days: June 13–14, 2026 — no licence required for residents or visitors on public waters."
       ],
       "options": [
+        {
+          "name": "Resident 5-day fishing, Class L (+$5 CS stamp required)",
+          "who": "resident",
+          "duration": "5 days",
+          "price": 8,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Resident annual fishing, Class B (+$5 CS stamp required)",
+          "who": "resident",
+          "duration": "Annual",
+          "price": 19,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Resident junior sportsman, ages 15–17, Class XJ",
+          "who": "resident",
+          "duration": "Annual",
+          "price": 16,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Resident sportsman, ages 18–64, Class X",
+          "who": "resident",
+          "duration": "Annual",
+          "price": 35,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Resident sportsman plus (includes trout stamp), Class XP",
+          "who": "resident",
+          "duration": "Annual",
+          "price": 45,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Resident sportsman 3-year, Class X3 (Plus with trout XP3: $135)",
+          "who": "resident",
+          "duration": "3 years",
+          "price": 105,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Resident senior lifetime (age 65+, includes trout stamp), Class XS",
+          "who": "resident",
+          "duration": "Lifetime",
+          "price": 25,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Resident lifetime fishing, adult, Class B-L (child tiers $220.80–$496.80)",
+          "who": "resident",
+          "duration": "Lifetime",
+          "price": 552,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Resident lifetime combination, adult, Class AB-L (child tiers $322–$724.50)",
+          "who": "resident",
+          "duration": "Lifetime",
+          "price": 805,
+          "currency": "USD",
+          "water": "freshwater"
+        },
         {
           "name": "Non-resident 1-day, Class LL",
           "who": "non-resident",
@@ -10620,18 +10700,38 @@
           "tripDays": 365
         },
         {
-          "name": "Non-resident junior sportsman, ages 15–17",
+          "name": "Non-resident junior sportsman, ages 15–17, Class XXJ",
           "who": "non-resident",
           "duration": "Annual",
           "price": 16,
+          "currency": "USD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Non-resident lifetime fishing, adult, Class F-L (child tiers $460–$1,035)",
+          "who": "non-resident",
+          "duration": "Lifetime",
+          "price": 1150,
           "currency": "USD",
           "water": "freshwater"
         }
       ],
       "extras": [
         {
-          "name": "Conservation/Law Enforcement Stamp, CS/LE",
-          "when": "Required with non-resident Class F, LL and XXJ licences.",
+          "name": "Resident Conservation Stamp, Class CS",
+          "when": "Required for residents with Class B, L, A or AH licences (not required with Class B-L, AB-L or XS lifetime licences).",
+          "price": 5,
+          "currency": "USD"
+        },
+        {
+          "name": "Resident trout stamp, Class O (Lifetime Class O-L: $230)",
+          "when": "Required for licensed residents fishing for trout, except Class XS, XP and XP3 holders.",
+          "price": 10,
+          "currency": "USD"
+        },
+        {
+          "name": "Conservation/Law Enforcement Stamp, Class CS/LE",
+          "when": "Required with non-resident Class F, LL, XXJ and AAHJ licences.",
           "price": 13,
           "currency": "USD",
           "withCompare": [
@@ -10640,14 +10740,14 @@
           ]
         },
         {
-          "name": "Non-resident trout stamp, OO",
-          "when": "Required for licensed anglers who fish for trout.",
+          "name": "Non-resident trout stamp, Class OO (Lifetime Class OO-L: $368)",
+          "when": "Required for licensed non-residents who fish for trout.",
           "price": 16,
           "currency": "USD"
         },
         {
-          "name": "National Forest stamp, I",
-          "when": "Required on National Forests with the specified non-resident fishing licences.",
+          "name": "National Forest stamp, Class I (Lifetime Class I-L: $46)",
+          "when": "Required on National Forest land in addition to non-resident Class F, LL and F-L licences.",
           "price": 2,
           "currency": "USD"
         }
@@ -10655,8 +10755,11 @@
       "saltwater": null,
       "guidedTrips": null,
       "keyRules": [
-        "A one-day licence still needs the CS/LE stamp.",
-        "National Forest coverage is separate from trout and base fishing coverage."
+        "All annual West Virginia fishing licences run for the calendar year (January 1 to December 31) and require valid identification while fishing.",
+        "Budget for the mandatory conservation stamp: a $3 non-resident 1-day Class LL licence plus the $13 Class CS/LE stamp totals $16 ($32 with the $16 Class OO trout stamp); a $19 resident Class B plus the $5 Class CS stamp totals $24 ($34 with the $10 Class O trout stamp).",
+        "Resident Class XS Senior Lifetime ($25) includes the trout stamp and bear damage stamp. Other lifetime fishing licence holders (Class B-L or AB-L) who turned 65 after December 31, 2011 still need a trout stamp (Class O $10 or Class O-L $230) or Class XS to fish for trout.",
+        "Non-resident full-time students at a West Virginia college or university qualify to buy resident lifetime licences. Child lifetime tiers (under age 1, 1–4, 5–9, 10–14) also apply to legally adopted and foster children.",
+        "National Forest stamp (Class I, $2) is separate from trout and base fishing coverage on National Forest waters."
       ],
       "howToBuy": "Buy online through WVDNR or through a licence agent or DNR office.",
       "sources": [
@@ -10665,9 +10768,9 @@
           "url": "https://wvdnr.gov/wp-content/uploads/2026/02/Pub_Regs_Fishing_2026_DNR_WILD_pp.pdf"
         }
       ],
-      "checked": "2026-11-26",
+      "checked": "2026-11-27",
       "checkOfficial": "Use the authority page to confirm the current online purchase link. Confirm whether a guided trip covers the client's licence.",
-      "contentModified": "2026-11-19",
+      "contentModified": "2026-11-27",
       "freeDays": {
         "has": "yes",
         "rule": "",
@@ -10677,7 +10780,42 @@
         "notes": "Applies to public waters.",
         "source": "https://wvdnr.gov/free-fishing-days/",
         "checked": "2026-11-22"
-      }
+      },
+      "description": "West Virginia fishing license 2026 fees: residents $19/yr (+$5 CS stamp), visitors $3/day or $37/yr (+$13 CS/LE stamp), senior lifetime Class XS $25 (trout stamp included). Age 15+, lifetime tiers, free days.",
+      "faq": [
+        {
+          "q": "How much is a West Virginia lifetime fishing license for seniors?",
+          "a": "The West Virginia Resident Senior Lifetime Hunting, Trapping, and Fishing License (Class XS) costs $25 for domiciled residents aged 65 or older who turned 65 on or after January 1, 2012, per the 2026 WVDNR Fishing Regulations Summary. Class XS includes both the trout stamp and bear damage stamp. Residents born before January 1, 1947 (who turned 65 before January 1, 2012) fish free with a West Virginia driver's license or DMV photo ID and need no trout stamp."
+        },
+        {
+          "q": "How much is a West Virginia fishing license in 2026?",
+          "a": "Residents pay $19 for an annual Class B fishing license or $8 for a 5-day Class L license, plus the mandatory $5 Class CS Conservation Stamp ($24 annual or $13 for 5 days). Non-residents pay $3 for a 1-day Class LL license or $37 for an annual Class F license, plus the mandatory $13 Class CS/LE Conservation/Law Enforcement Stamp ($16 for 1 day or $50 annual). Trout stamps add $10 for residents (Class O) or $16 for non-residents (Class OO)."
+        },
+        {
+          "q": "What age do you need a fishing license in West Virginia?",
+          "a": "Both residents and non-residents need a West Virginia fishing license starting at age 15. Youth under age 15 do not need a general fishing license or a trout stamp. Anglers aged 15 through 17 can buy a Junior Sportsman license for $16 (resident Class XJ, or non-resident Class XXJ plus the $13 Class CS/LE stamp)."
+        },
+        {
+          "q": "How much is a West Virginia lifetime fishing license for adults and children?",
+          "a": "In the 2026 WVDNR schedule, a resident adult Lifetime Fishing License (Class B-L) costs $552 (no Conservation Stamp required). Resident child Class B-L fees are $220.80 under age 1, $303.60 for ages 1 to under 5, $414.00 for ages 5 to under 10, and $496.80 for ages 10 to under 15. A resident Lifetime Trout Stamp (Class O-L) is $230 ($92 to $207 for children). Non-resident Lifetime Fishing (Class F-L) is $1,150 ($460 to $1,035 for children) and Lifetime Trout (Class OO-L) is $368."
+        },
+        {
+          "q": "Do I need a trout stamp in West Virginia?",
+          "a": "Yes, licensed anglers fishing for trout need a Class O resident trout stamp ($10) or Class OO non-resident trout stamp ($16). Exempt groups include youth under 15, resident Class XS senior lifetime holders, resident Class XP ($45) and XP3 ($135) Sportsman Plus holders, residents born before January 1, 1947, resident 100% disabled veterans and former POWs, resident active-duty military on leave, totally blind residents, and developmentally disabled residents with a DNR DDFL card."
+        },
+        {
+          "q": "Why does a $3 West Virginia 1-day non-resident license cost $16 at checkout?",
+          "a": "Every non-resident fishing license in West Virginia—including the $3 one-day Class LL, the $37 annual Class F, and the $16 junior Class XXJ—requires the $13 Class CS/LE Conservation/Law Enforcement Stamp. Buying both brings a 1-day visitor total to $16 before any trout stamp ($16 Class OO) or National Forest stamp ($2 Class I)."
+        },
+        {
+          "q": "When are West Virginia Free Fishing Days in 2026?",
+          "a": "West Virginia's 2026 Free Fishing Days are June 13–14, 2026, per the 2026 WVDNR Fishing Regulations Summary. Both residents and non-residents may fish public waters without a fishing license on those two days while following all size, creel, and catch-and-release rules."
+        },
+        {
+          "q": "How do you qualify as a West Virginia resident for a fishing license?",
+          "a": "WVDNR defines a resident as a person domiciled continuously in West Virginia for 30 consecutive days immediately prior to applying. The rule also includes U.S. armed forces members stationed out of state who were WV residents upon entry and full-time students of any West Virginia college or university. Non-resident full-time students at WV colleges are also eligible to purchase lifetime licenses."
+        }
+      ]
     },
     {
       "id": "us-wisconsin",
