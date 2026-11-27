@@ -338,6 +338,15 @@ def install(pages, root, origin, add, trips, trip_card, intro, bread):
         if path in pages:
             pages[path]['body'] += '<section class="wrap panel"><h2>What should you confirm for a Minnesota ice-house trip?</h2><p>Ask about transport, supplied tackle, bedding, and weather cancellation terms. Use the <a href="/guides/minnesota-fish-house-rental-checklist/">rental comparison worksheet</a> before you book, then build your <a href="/guides/minnesota-ice-fishing-packing-list/">day or overnight packing list</a>.</p></section>'
             pages[path]['modified'] = '2026-11-14'
+    # Packing lists: link every matching trip page (2026-11-27; the lists had 1-3 trip links before).
+    ak = '/north-america/united-states/alaska/'
+    fl = '/north-america/united-states/florida/'
+    keys = ('florida-keys-', 'islamorada-', 'key-west-', 'marathon-')
+    for path in list(pages):
+        if path.startswith(ak) and 'ice-fishing' not in path and 'alaska-fishing-packing-list' not in pages[path]['body']:
+            pages[path]['body'] += '<section class="wrap panel"><h2>What should you pack for an Alaska fishing trip?</h2><p>Separate the river kit, the boat-day kit and the travel items. Confirm what the lodge or guide supplies before you buy. Use the <a href="/guides/alaska-fishing-packing-list/">Alaska fishing trip packing list</a>, then check the <a href="/fishing-licenses/us-alaska/">Alaska fishing licence rules</a>.</p></section>'
+        elif path.startswith(fl) and (path == fl or path[len(fl):].startswith(keys)) and 'florida-keys-fishing-packing-list' not in pages[path]['body']:
+            pages[path]['body'] += '<section class="wrap panel"><h2>What should you pack for a Florida Keys fishing day?</h2><p>The list changes with the trip style: flats skiff, reef boat or offshore boat. Use the <a href="/guides/florida-keys-fishing-packing-list/">Florida Keys fishing packing list</a>, then check the <a href="/fishing-licenses/us-florida/">Florida fishing licence rules</a>.</p></section>'
     for tid, guide in content['trips'].items():
         path = by_id[tid]['canonicalPath']
         pages[path].update(title=guide['title'] + ' | Castward', desc=guide['description'],
