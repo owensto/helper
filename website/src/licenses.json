@@ -11744,19 +11744,25 @@
         "url": "https://www.dpird.wa.gov.au/individuals/recreational-fishing/get-a-recreational-fishing-licence/"
       },
       "buyUrl": "https://online.transport.wa.gov.au/tso/selfservice/public/rec_fishing_lic_apply_entry.jsf",
-      "summary": "Western Australia licenses specific fishing activities. A powered boat can trigger the boat licence rule even when it only transports your gear to a shore fishing spot.",
+      "summary": "Western Australia has no general fishing licence. Line fishing from the shore, a jetty or a boat without a motor needs no licence. You need a licence for six activities: fishing from a powered boat ($40 a year), and south-west freshwater angling, rock lobster, abalone, marron and net fishing ($50 a year each). The department lists one fee for each licence. There is no separate visitor price.",
       "whoNeedsOne": [
-        "People who fish from a powered boat, subject to the stated exemptions.",
-        "South-west freshwater anglers and people who fish for licensed species or use licensed methods."
+        "Anyone who fishes from a powered boat: line fishing, squid jigging, crabbing, spearfishing, catching octopus and dip netting for prawns. Catch and release also needs the licence.",
+        "Anyone who uses a powered boat to carry their catch or fishing gear from a land-based spot, including an island or a sandbar.",
+        "Anglers aged 16 and older who fish freshwater south of Greenough (29°S) and above the tidal influence, including lakes, dams, rivers and their tributaries.",
+        "Anyone who fishes for rock lobster, abalone or marron, or who uses a haul, set or throw net."
       ],
       "exemptions": [
-        "Children under 16 do not need the south-west freshwater licence.",
-        "Boat-licence exemptions include licensed fishing charters and non-powered boats.",
-        "An unlicensed boat angler may share a licensed angler's bag limit."
+        "Line fishing from the shore, a jetty or a boat without a motor needs no licence.",
+        "You need no boat licence on a licensed fishing tour or fishing charter boat.",
+        "You need no boat licence when another person on board holds one. The total catch of everyone on board must stay within the bag limit of the licensed fishers. This rule applies to the boat licence only.",
+        "You need no boat licence when the only fishing on the boat is an activity that you already hold a licence for, such as rock lobster, abalone or south-west freshwater angling.",
+        "Anglers under 16 do not need the south-west freshwater angling licence.",
+        "Crab drop netting, crab scoop netting and prawn netting need no net fishing licence, unless you use a throw net.",
+        "An Aboriginal person who fishes in accordance with customary law and tradition, for personal, family or non-commercial community needs, does not need a recreational fishing licence."
       ],
       "options": [
         {
-          "name": "Recreational fishing from a boat",
+          "name": "Recreational fishing from a boat (statewide)",
           "who": "any",
           "duration": "12 months",
           "price": 40,
@@ -11770,35 +11776,127 @@
           "price": 50,
           "currency": "AUD",
           "water": "freshwater"
-        }
-      ],
-      "extras": [
+        },
         {
-          "name": "Species or method licence",
-          "when": "Separate licences apply to rock lobster, abalone, marron and net fishing.",
+          "name": "Rock lobster",
+          "who": "any",
+          "duration": "12 months",
           "price": 50,
-          "currency": "AUD"
+          "currency": "AUD",
+          "water": "saltwater"
+        },
+        {
+          "name": "Abalone",
+          "who": "any",
+          "duration": "12 months",
+          "price": 50,
+          "currency": "AUD",
+          "water": "saltwater"
+        },
+        {
+          "name": "Marron",
+          "who": "any",
+          "duration": "12 months",
+          "price": 50,
+          "currency": "AUD",
+          "water": "freshwater"
+        },
+        {
+          "name": "Net fishing (haul, set and throw)",
+          "who": "any",
+          "duration": "12 months",
+          "price": 50,
+          "currency": "AUD",
+          "water": "both"
         }
       ],
-      "saltwater": "Ordinary shore angling does not trigger the boat licence. Species and method licences can still apply.",
-      "guidedTrips": "A licensed fishing charter exempts clients from the boat licence. Other species and method licences remain separate.",
+      "extras": [],
+      "saltwater": "Shore, beach and jetty line fishing in the sea needs no licence. From a powered boat you need the $40 boat licence. Rock lobster, abalone and net fishing each need their own licence.",
+      "guidedTrips": "Clients on a licensed fishing tour or charter boat do not need the boat licence. Fishers on a fishing tour do not need a rock lobster licence to possess rock lobster.",
       "keyRules": [
-        "Produce your licence when an officer asks.",
-        "If you share a licence holder's bag limit, the group's combined catch must stay within that limit."
+        "You are not entitled to fish until you receive a receipt for your licence from the department.",
+        "A licence is valid for 12 months from the date of payment. The plastic licence card arrives within 30 days.",
+        "Carry your licence at all times when you fish. Produce it when a Fisheries and Marine Officer asks.",
+        "Apply for more than one licence type in a single transaction and the department gives a 10% discount.",
+        "To take a boat limit on a powered boat, two or more boat licence holders must be on board. This includes crabbing.",
+        "South-west freshwater angling: the daily mixed bag limit is 4 rainbow trout, brown trout and freshwater cobbler combined for each licensed angler. The minimum size for trout is 300 mm.",
+        "Marron: the open season is from 12 noon on 8 January to 12 noon on 5 February. Fishing for marron and transporting marron are prohibited at all other times.",
+        "Rock lobster pots and nets must show your gear identification number on every float.",
+        "All drinking water supply dams managed by Water Corporation are closed to fishing."
       ],
-      "howToBuy": "Apply through DoTDirect, by post or at a Department of Transport licensing office.",
+      "howToBuy": "Apply or renew online through the Department of Transport's DoTDirect website. You can also post the application form with payment to the department, or pay in person at a department office. Existing licence holders get a renewal form by post.",
       "sources": [
         {
-          "title": "Recreational licences and fees",
+          "title": "DPIRD: Get a recreational fishing licence (fees, concessions, discount)",
           "url": "https://www.dpird.wa.gov.au/individuals/recreational-fishing/get-a-recreational-fishing-licence/"
         },
         {
-          "title": "Boat licence requirements and exemptions",
+          "title": "DPIRD: Recreational fishing from a boat",
           "url": "https://www.dpird.wa.gov.au/individuals/recreational-fishing/get-a-recreational-fishing-licence/recreational-fishing-from-a-boat/"
+        },
+        {
+          "title": "DPIRD guide: South-west freshwater angling (published September 2026)",
+          "url": "https://www.dpird.wa.gov.au/siteassets/documents/fisheries/recreational/guides-and-infographics/rec_licence_freshwater_angling.pdf"
+        },
+        {
+          "title": "DPIRD guide: Marron (published November 2026)",
+          "url": "https://www.dpird.wa.gov.au/siteassets/documents/fisheries/recreational/guides-and-infographics/rec-licence-marron.pdf"
+        },
+        {
+          "title": "DPIRD guide: Rock lobster 2026",
+          "url": "https://www.dpird.wa.gov.au/siteassets/documents/fisheries/recreational/guides-and-infographics/rec_licence_rock_lobster.pdf"
+        },
+        {
+          "title": "DPIRD guide: Abalone 2026/27",
+          "url": "https://www.dpird.wa.gov.au/siteassets/documents/fisheries/recreational/guides-and-infographics/rec_licence_abalone.pdf"
+        },
+        {
+          "title": "DPIRD guide: Recreational net fishing",
+          "url": "https://www.dpird.wa.gov.au/siteassets/documents/fisheries/recreational/guides-and-infographics/rec-licence-netting.pdf"
         }
       ],
-      "checked": "2026-11-21",
-      "contentModified": "2026-11-15"
+      "checked": "2026-11-27",
+      "contentModified": "2026-11-27",
+      "description": "Western Australia fishing licence fees for 2026: boat licence $40, freshwater, rock lobster, abalone, marron and net $50 each. Who needs one, half-fee concessions.",
+      "checkOfficial": "Fees and rules are from the department's licence page and its 2026 guides. Abalone seasons, zones and bag limits change each year; read the current guide before you fish.",
+      "faq": [
+        {
+          "q": "Do you need a fishing licence in Western Australia?",
+          "a": "Not for line fishing from the shore, a jetty or a boat without a motor. You need a licence for six activities: fishing from a powered boat, south-west freshwater angling, rock lobster, abalone, marron and net fishing."
+        },
+        {
+          "q": "How much is a fishing licence in WA?",
+          "a": "The Recreational Fishing from Boat Licence costs $40 for 12 months. The south-west freshwater angling, rock lobster, abalone, marron and net fishing licences cost $50 each for 12 months. A single application for more than one licence type gets a 10% discount."
+        },
+        {
+          "q": "Do I need a licence to fish from the shore or a jetty in WA?",
+          "a": "No. Shore, beach and jetty line fishing in the sea needs no licence. You need a licence on the shore only for a licensed activity: rock lobster, abalone, marron, net fishing, or freshwater angling south of Greenough."
+        },
+        {
+          "q": "Do pensioners and seniors pay for a fishing licence in WA?",
+          "a": "They pay half the fee. The concession applies to holders of a Seniors Card issued by the Department of Communities and to people who receive an age, disability support or widow's pension, or a listed veterans' pension. Their spouse or de facto partner also pays half."
+        },
+        {
+          "q": "Do children need a fishing licence in WA?",
+          "a": "Anglers under 16 do not need the south-west freshwater angling licence. For the other licences, a person under 16 pays half the fee. On a powered boat, a child can fish without a licence when a licence holder on board shares their bag limit."
+        },
+        {
+          "q": "Do tourists need a fishing licence in Western Australia?",
+          "a": "Yes, for the six licensed activities. The department lists one fee for each licence, with no separate visitor price. A visitor who only fishes with a line from the shore or a jetty needs no licence, and clients on a licensed fishing charter need no boat licence."
+        },
+        {
+          "q": "Does everyone on the boat need a licence?",
+          "a": "No. Unlicensed people can fish when one or more people on board hold the boat licence. The total catch of everyone on board must stay within the bag limit of the licence holders. To take a boat limit, two or more licence holders must be on board."
+        },
+        {
+          "q": "Do I need a licence for crabbing in WA?",
+          "a": "From a powered boat, yes: crabbing needs the $40 boat licence. Crab drop netting and scoop netting do not need the net fishing licence."
+        },
+        {
+          "q": "How long does a WA fishing licence last?",
+          "a": "12 months from the date of payment. The department sends the plastic licence card within 30 days. You can fish from the time you receive the receipt for your licence."
+        }
+      ]
     },
     {
       "id": "bt",
