@@ -1,5 +1,6 @@
 """Apply the image and first-row contract to every static discovery card."""
 import re
+from hashlib import sha256
 from collections import Counter
 from html.parser import HTMLParser
 from photography import preview_photo, photo
@@ -58,6 +59,7 @@ def install(pages):
             continue
         cards = sorted(Cards(body).cards, key=lambda c: c['start'])
         counts, changes = Counter(), []
+        posters = {}
         for card in cards:
             markup = body[card['start']:card['end']]
             eager = counts[card['kind']] < 3
@@ -87,7 +89,12 @@ def install(pages):
             markup = re.sub(r'(<picture\b[^>]*>)', lambda match: match.group() + ''.join(mobile_sources), markup, count=1)
             image_source = re.search(r'<img[^>]*src="([^"]+)"', markup)
             poster = placeholder(image_source.group(1)) if image_source else ''
-            poster_style = f' style="background-image:url({poster})"' if poster else ''
+            if poster:
+                poster_id = sha256(poster.encode()).hexdigest()[:16]
+                posters[poster_id] = poster
+                poster_style = f' data-preview-poster="{poster_id}"'
+            else:
+                poster_style = ''
             markup = markup.replace('<picture ', '<picture data-preview-media' + poster_style + ' ', 1)
             def loading(match):
                 image = re.sub(r'\s(?:loading|fetchpriority)="[^"]*"', '', match.group())
@@ -96,4 +103,8 @@ def install(pages):
             changes.append((card['start'], card['end'], markup))
         for start, end, markup in reversed(changes):
             body = body[:start] + markup + body[end:]
+        if posters:
+            body += '<style>' + ''.join(
+                f'[data-preview-poster="{key}"]{{background-image:url({value})}}'
+                for key, value in posters.items()) + '</style>'
         page['body'] = body

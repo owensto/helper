@@ -16,7 +16,7 @@
         if (match) count++;
       });
       document.querySelectorAll('[data-glossary-letter]').forEach(el => { el.hidden = !el.querySelector('[data-glossary-term]:not([hidden])'); });
-      document.getElementById('glossary-count').textContent = count + ' of ' + items.length + ' terms found';
+      document.getElementById('glossary-count').textContent = count + ' of ' + items.length + ' matching terms';
       document.getElementById('glossary-empty').hidden = count !== 0;
     };
     input.value = params.get('q') || '';
@@ -39,7 +39,7 @@
         if (match) count++;
       });
       more.hidden = count <= limit;
-      document.getElementById('species-count').textContent = count + ' fish found';
+      document.getElementById('species-count').textContent = count + ' matching fish';
       document.getElementById('species-empty').hidden = count !== 0;
     };
     search.value = params.get('q') || '';
