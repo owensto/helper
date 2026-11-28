@@ -347,6 +347,10 @@ def install(pages, root, origin, add, trips, trip_card, intro, bread):
             pages[path]['body'] += '<section class="wrap panel"><h2>What should you pack for an Alaska fishing trip?</h2><p>Separate the river kit, the boat-day kit and the travel items. Confirm what the lodge or guide supplies before you buy. Use the <a href="/guides/alaska-fishing-packing-list/">Alaska fishing trip packing list</a>, then check the <a href="/fishing-licenses/us-alaska/">Alaska fishing licence rules</a>.</p></section>'
         elif path.startswith(fl) and (path == fl or path[len(fl):].startswith(keys)) and 'florida-keys-fishing-packing-list' not in pages[path]['body']:
             pages[path]['body'] += '<section class="wrap panel"><h2>What should you pack for a Florida Keys fishing day?</h2><p>The list changes with the trip style: flats skiff, reef boat or offshore boat. Use the <a href="/guides/florida-keys-fishing-packing-list/">Florida Keys fishing packing list</a>, then check the <a href="/fishing-licenses/us-florida/">Florida fishing licence rules</a>.</p></section>'
+    # Keep the winter checklist reachable from every Minnesota destination.
+    for path, page in pages.items():
+        if path.startswith('/north-america/united-states/minnesota/') and 'href="/guides/minnesota-ice-fishing-packing-list/"' not in page['body']:
+            page['body'] += '<p class="wrap"><a href="/guides/minnesota-ice-fishing-packing-list/">Minnesota ice fishing packing list</a></p>'
     for tid, guide in content['trips'].items():
         path = by_id[tid]['canonicalPath']
         pages[path].update(title=guide['title'] + ' | Castward', desc=guide['description'],

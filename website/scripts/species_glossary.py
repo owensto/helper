@@ -67,8 +67,8 @@ def species_url(sid):
     return '/species/' + sid + '/'
 
 
-def source_links(urls):
-    return '<ul class="field-sources">' + ''.join('<li>' + link(u, 'Source ' + str(i)) + '</li>' for i, u in enumerate(dict.fromkeys(urls), 1)) + '</ul>'
+def source_links(urls, compact=False):
+    return ('<ul>' if compact else '<ul class="field-sources">') + ''.join('<li>' + link(u, 'Source ' + str(i)) + '</li>' for i, u in enumerate(dict.fromkeys(urls), 1)) + '</ul>'
 
 
 def install(pages, root, add, trips, data):
@@ -85,11 +85,11 @@ def install(pages, root, add, trips, data):
     def heading(label, title, deck):
         return '<div class="wrap breadcrumb">' + link('/', 'Home') + ' / ' + E(label) + '</div><header class="wrap type-heading"><span class="eyebrow">FIELD REFERENCE</span><h1>' + E(title) + '</h1><p class="type-deck">' + E(deck) + '</p></header>'
 
-    def trip_links(ids, limit=None):
+    def trip_links(ids, limit=None, compact=False):
         selected = list(dict.fromkeys(i for i in ids if i in paths))
         if limit is not None:
             selected = selected[:limit]
-        return '<ul class="field-trip-links">' + ''.join('<li>' + link(paths[i], names[i]) + '</li>' for i in selected) + '</ul>' if selected else ''
+        return ('<ul>' if compact else '<ul class="field-trip-links">') + ''.join('<li>' + link(paths[i], names[i]) + '</li>' for i in selected) + '</ul>' if selected else ''
 
     species_count = sum(s['taxonType'] == 'species' for s in species)
     body = heading('Species', 'Find your fish.', 'Common names, local words and the waters that connect them.')
@@ -281,14 +281,14 @@ def install(pages, root, add, trips, data):
             search = ' '.join(dict.fromkeys([term['term'], *term['relatedSpecies'], *[sb[s]['name'] for s in term['relatedSpecies']], *term['regions']]))
             body += '<div id="' + E(term['id'], quote=True) + '" data-glossary-term data-search="' + E(search, quote=True) + '" data-regions="' + E('|'.join(tags), quote=True) + '"><dt>' + E(term['term']) + '</dt>'
             for entry in term['entries']:
-                body += '<dd><p>' + E(entry['definition']) + '</p><p class="field-region">' + E(' · '.join(entry['regions'])) + '</p><div class="field-related">'
+                body += '<dd><p>' + E(entry['definition']) + '</p><p>' + E(' · '.join(entry['regions'])) + '</p><div>'
                 # Preserve the first legacy trip-type link and existing term anchors.
                 body += ' '.join(link('/trip-types/' + tid + '/', tid.replace('-', ' ').capitalize()) for tid in entry['relatedTripTypes'])
                 body += ' '.join(link(species_url(sid), sb[sid]['name']) for sid in entry['relatedSpecies'])
-                body += '</div>' + trip_links(entry['relatedTrips'], 3)
+                body += '</div>' + trip_links(entry['relatedTrips'], 3, compact=True)
                 if not entry['relatedTrips']:
                     body += '<p class="small">' + link('/trips/', 'Explore trip methods') + '</p>'
-                body += '<details><summary>Sources</summary>' + source_links(entry['sourceUrls']) + '</details></dd>'
+                body += '<details><summary>Sources</summary>' + source_links(entry['sourceUrls'], compact=True) + '</details></dd>'
             body += '</div>'
         body += '</dl></section>'
     body += '<p id="glossary-empty" hidden>No term found. Try a fish name or another region.</p></section>' + assets
