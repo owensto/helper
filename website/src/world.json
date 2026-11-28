@@ -3367,7 +3367,7 @@
     "ak-felt": {
       "title": "Alaska Department of Fish and Game: Invasive species prevention",
       "url": "https://www.adfg.alaska.gov/index.cfm?adfg=invasive.prevention",
-      "checked": "2026-11-11",
+      "checked": "2026-11-28",
       "scopeNote": "Alaska freshwater restrictions on felt-soled footwear.",
       "publisher": "Alaska Department of Fish and Game",
       "shortTitle": "Invasive species prevention",
@@ -4925,6 +4925,39 @@
       "status": "text-inspected",
       "scopeNote": "Article dated March 13, 2026. Describes the Hornepayne overnight, morning flights, cabins and standard package contents at one operator.",
       "type": "reference"
+    },
+    "g26-ak-prices": {
+      "title": "ADF&G: License, Stamp, and Tag Prices",
+      "url": "https://www.adfg.alaska.gov/index.cfm?adfg=license.prices",
+      "type": "official-agency",
+      "status": "text-inspected",
+      "checked": "2026-11-28",
+      "scopeNote": "Official ADF&G nonresident sport fishing license fees ($15 1-day, $30 3-day, $45 7-day, $75 14-day, $100 annual) and king salmon stamp pricing.",
+      "publisher": "ADF&G",
+      "shortTitle": "License, Stamp, and Tag Prices",
+      "group": "Government/agency"
+    },
+    "tsa-fishing": {
+      "title": "TSA: What Can I Bring? Fishing Poles and Tackle",
+      "url": "https://www.tsa.gov/travel/security-screening/whatcanibring/all?combine=fishing",
+      "type": "official-agency",
+      "status": "text-inspected",
+      "checked": "2026-11-28",
+      "scopeNote": "TSA permits fishing rods in carry-on (within airline size limits) and checked bags; sharp hooks and tackle must be sheathed and packed in checked bags.",
+      "publisher": "TSA",
+      "shortTitle": "What Can I Bring? Fishing Poles and Tackle",
+      "group": "Government/agency"
+    },
+    "alaska-air-sports": {
+      "title": "Alaska Airlines: Traveling with Sports Equipment",
+      "url": "https://www.alaskaair.com/content/travel-info/baggage/special-baggage/traveling-with-sporting-equipment",
+      "type": "reference",
+      "status": "text-inspected",
+      "checked": "2026-11-28",
+      "scopeNote": "Airline checked sporting equipment rules for fishing rods, tackle containers, and baggage handling.",
+      "publisher": "Alaska Airlines",
+      "shortTitle": "Traveling with Sports Equipment",
+      "group": "Independent"
     },
     "species-e4b4ce359a5f": {
       "title": "Fishery source for Yakutat / Situk River",
@@ -37457,7 +37490,7 @@
         }
       ],
       "speciesReview": {
-        "status": "unverified",
+        "status": "source-linked",
         "reviewed": "2026-11-26",
         "seasonStatus": "unverified",
         "methodStatus": "unverified"
@@ -61335,7 +61368,7 @@
         }
       ],
       "speciesReview": {
-        "status": "unverified",
+        "status": "source-linked",
         "reviewed": "2026-11-23",
         "seasonStatus": "unverified",
         "methodStatus": "unverified"
@@ -64559,7 +64592,7 @@
         }
       ],
       "speciesReview": {
-        "status": "unverified",
+        "status": "source-linked",
         "reviewed": "2026-11-23",
         "seasonStatus": "unverified",
         "methodStatus": "unverified"
@@ -105568,7 +105601,7 @@
         }
       ],
       "speciesReview": {
-        "status": "unverified",
+        "status": "source-linked",
         "reviewed": "2026-11-10",
         "seasonStatus": "unverified",
         "methodStatus": "unverified"
@@ -107984,7 +108017,7 @@
         }
       ],
       "speciesReview": {
-        "status": "unverified",
+        "status": "source-linked",
         "reviewed": "2026-11-10",
         "seasonStatus": "unverified",
         "methodStatus": "unverified"
@@ -114335,7 +114368,7 @@
         }
       ],
       "speciesReview": {
-        "status": "unverified",
+        "status": "source-linked",
         "reviewed": "2026-11-10",
         "seasonStatus": "unverified",
         "methodStatus": "unverified"
@@ -190077,9 +190110,9 @@
       "Cook Islands",
       "Niue"
     ],
-    "sources": 1104,
+    "sources": 1107,
     "sourceInspection": {
-      "text-inspected": 231,
+      "text-inspected": 234,
       "search-excerpt-inspected": 136,
       "page-text-inspected": 19,
       "source-linked": 92,

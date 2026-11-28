@@ -183,7 +183,7 @@ from search_discovery import metadata as discovery_metadata, feeds as discovery_
 def doc(path,p,preview=False):
     datafile='data.js' if preview or p['kind']=='planner' else 'boot.js'
     guide_css = '<link rel="stylesheet" href="/assets/guides.css"><script src="/assets/guide-references.js" defer></script>' if p.get('guideStyle') else ''
-    if p.get('richGuide'):
+    if p.get('richGuide') or 'class="ice-packing"' in p.get('body', ''):
         guide_css += '<link rel="stylesheet" href="/assets/guide-rich.css">'
     canonical_path=p.get('redirectTo',path)
     canonical=f'<link rel="canonical" href="{E(CONFIG["siteUrl"]+canonical_path)}">' if CONFIG['siteUrl'] else ''

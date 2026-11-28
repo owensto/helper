@@ -8271,7 +8271,7 @@
       "country": "United States",
       "state": "Utah",
       "region": "North America",
-      "status": "unverified",
+      "status": "source-linked",
       "targets": [
         {
           "speciesId": "rainbow-trout",
@@ -16092,7 +16092,7 @@
       "country": "United States",
       "state": "Massachusetts",
       "region": "North America",
-      "status": "unverified",
+      "status": "source-linked",
       "targets": [
         {
           "speciesId": "striped-bass",
@@ -17062,7 +17062,7 @@
       "country": "United States",
       "state": "New York",
       "region": "North America",
-      "status": "unverified",
+      "status": "source-linked",
       "targets": [
         {
           "speciesId": "sea-trout",
@@ -29048,7 +29048,7 @@
       "country": "Canada",
       "state": "Saskatchewan",
       "region": "North America",
-      "status": "unverified",
+      "status": "source-linked",
       "targets": [
         {
           "speciesId": "lake-trout",
@@ -29924,7 +29924,7 @@
       "country": "Canada",
       "state": "Manitoba",
       "region": "North America",
-      "status": "unverified",
+      "status": "source-linked",
       "targets": [
         {
           "speciesId": "lake-trout",
@@ -32222,7 +32222,7 @@
       "country": "Canada",
       "state": "Quebec",
       "region": "North America",
-      "status": "unverified",
+      "status": "source-linked",
       "targets": [
         {
           "speciesId": "walleye",

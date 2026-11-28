@@ -1811,6 +1811,18 @@
       "label": "Buck Lake: New Trip, New Plan",
       "url": "https://northernontario.travel/fishing/fly-walleye-fishing-buck-lake-lodge-ontario"
     },
+    "world-g26-ak-prices": {
+      "label": "ADF&G: License, Stamp, and Tag Prices",
+      "url": "https://www.adfg.alaska.gov/index.cfm?adfg=license.prices"
+    },
+    "world-tsa-fishing": {
+      "label": "TSA: What Can I Bring? Fishing Poles and Tackle",
+      "url": "https://www.tsa.gov/travel/security-screening/whatcanibring/all?combine=fishing"
+    },
+    "world-alaska-air-sports": {
+      "label": "Alaska Airlines: Traveling with Sports Equipment",
+      "url": "https://www.alaskaair.com/content/travel-info/baggage/special-baggage/traveling-with-sporting-equipment"
+    },
     "world-species-e4b4ce359a5f": {
       "label": "Fishery source for Yakutat / Situk River",
       "url": "https://www.adfg.alaska.gov/index.cfm?adfg=ByAreaSoutheastYakutat.fishingOpps&fishery=Situk+River+sockeye+and+coho+salmon"
@@ -16729,7 +16741,7 @@
         }
       ],
       "speciesReview": {
-        "status": "unverified",
+        "status": "source-linked",
         "reviewed": "2026-11-26",
         "seasonStatus": "unverified",
         "methodStatus": "unverified"
@@ -27507,7 +27519,7 @@
         }
       ],
       "speciesReview": {
-        "status": "unverified",
+        "status": "source-linked",
         "reviewed": "2026-11-23",
         "seasonStatus": "unverified",
         "methodStatus": "unverified"
@@ -28893,7 +28905,7 @@
         }
       ],
       "speciesReview": {
-        "status": "unverified",
+        "status": "source-linked",
         "reviewed": "2026-11-23",
         "seasonStatus": "unverified",
         "methodStatus": "unverified"
@@ -45908,7 +45920,7 @@
         }
       ],
       "speciesReview": {
-        "status": "unverified",
+        "status": "source-linked",
         "reviewed": "2026-11-10",
         "seasonStatus": "unverified",
         "methodStatus": "unverified"
@@ -47044,7 +47056,7 @@
         }
       ],
       "speciesReview": {
-        "status": "unverified",
+        "status": "source-linked",
         "reviewed": "2026-11-10",
         "seasonStatus": "unverified",
         "methodStatus": "unverified"
@@ -50085,7 +50097,7 @@
         }
       ],
       "speciesReview": {
-        "status": "unverified",
+        "status": "source-linked",
         "reviewed": "2026-11-10",
         "seasonStatus": "unverified",
         "methodStatus": "unverified"
