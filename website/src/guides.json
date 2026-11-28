@@ -830,7 +830,7 @@
     "ak-felt": {
       "title": "Alaska Department of Fish and Game: Invasive species prevention",
       "url": "https://www.adfg.alaska.gov/index.cfm?adfg=invasive.prevention",
-      "checked": "2026-11-11",
+      "checked": "2026-11-28",
       "scopeNote": "Alaska freshwater restrictions on felt-soled footwear.",
       "publisher": "Alaska Department of Fish and Game",
       "shortTitle": "Invasive species prevention",
@@ -2207,6 +2207,39 @@
       "checked": "2026-11-22",
       "status": "text-inspected",
       "scopeNote": "Article dated March 13, 2026. Describes the Hornepayne overnight, morning flights, cabins and standard package contents at one operator."
+    },
+    "g26-ak-prices": {
+      "title": "ADF&G: License, Stamp, and Tag Prices",
+      "url": "https://www.adfg.alaska.gov/index.cfm?adfg=license.prices",
+      "type": "official-agency",
+      "status": "text-inspected",
+      "checked": "2026-11-28",
+      "scopeNote": "Official ADF&G nonresident sport fishing license fees ($15 1-day, $30 3-day, $45 7-day, $75 14-day, $100 annual) and king salmon stamp pricing.",
+      "publisher": "ADF&G",
+      "shortTitle": "License, Stamp, and Tag Prices",
+      "group": "Government/agency"
+    },
+    "tsa-fishing": {
+      "title": "TSA: What Can I Bring? Fishing Poles and Tackle",
+      "url": "https://www.tsa.gov/travel/security-screening/whatcanibring/all?combine=fishing",
+      "type": "official-agency",
+      "status": "text-inspected",
+      "checked": "2026-11-28",
+      "scopeNote": "TSA permits fishing rods in carry-on (within airline size limits) and checked bags; sharp hooks and tackle must be sheathed and packed in checked bags.",
+      "publisher": "TSA",
+      "shortTitle": "What Can I Bring? Fishing Poles and Tackle",
+      "group": "Government/agency"
+    },
+    "alaska-air-sports": {
+      "title": "Alaska Airlines: Traveling with Sports Equipment",
+      "url": "https://www.alaskaair.com/content/travel-info/baggage/special-baggage/traveling-with-sporting-equipment",
+      "type": "reference",
+      "status": "text-inspected",
+      "checked": "2026-11-28",
+      "scopeNote": "Airline checked sporting equipment rules for fishing rods, tackle containers, and baggage handling.",
+      "publisher": "Alaska Airlines",
+      "shortTitle": "Traveling with Sports Equipment",
+      "group": "Independent"
     }
   },
   "trips": {
@@ -5061,123 +5094,201 @@
     },
     {
       "slug": "alaska-fishing-packing-list",
-      "title": "Alaska fishing packing list: river, boat and lodge",
-      "description": "Pack for an Alaska fishing trip with separate river, boat and lodge lists. Confirm waders, tackle, drying access, baggage and current license rules.",
+      "title": "Alaska Fishing Trip Packing List: Layers, Gear, and Rules",
+      "description": "Pack for an Alaska fishing trip with a printable checklist, three-layer clothing chart, felt-soled wader ban, nonresident license fees, and TSA rod rules.",
       "category": "PACKING / ALASKA",
       "destination": "situk-coho-river",
+      "updated": "2026-11-28",
       "sections": [
         {
-          "id": "suits",
-          "title": "Who this list suits",
+          "id": "answer",
+          "title": "What should you pack for an Alaska fishing trip?",
           "paragraphs": [
-            "Use this list for an Alaska trip that combines travel with river, boat or lodge days. Start by writing the fishing method beside each day. A Situk bank session and a Yakutat Bay boat day need separate equipment decisions.",
-            "This list does not establish the safety of a river crossing, a sea departure or a remote route. Confirm the actual itinerary with the operator before selecting technical gear."
+            "Pack a three-layer clothing system (merino wool or synthetic base layer, fleece mid-layer, waterproof rain jacket and rain pants), wool socks, polarized sunglasses, bug repellent, a soft duffel bag, and rubber-soled footwear. Skip cotton and jeans on the water, leave felt-soled wading boots at home (banned statewide in Alaska fresh water), and buy your nonresident fishing license if you are age 16 or older.",
+            "Every Alaska itinerary splits into two bags: what you wear on the river or boat, and what stays dry at the lodge or hotel. Confirm what your guide or lodge supplies—especially breathable waders, boots, rods, and fish boxes—before you buy or check extra luggage."
+          ],
+          "sources": [
+            "ak-felt",
+            "g26-ak-prices"
+          ]
+        },
+        {
+          "id": "checklist",
+          "title": "Interactive Alaska fishing packing checklist (printable)",
+          "paragraphs": [
+            "Switch between a multi-day lodge/float trip and a single-day charter or bank outing, mark what your operator confirmed, and print or save a PDF before you pack."
+          ],
+          "type": "alaska-packing-worksheet",
+          "sources": [
+            "ak-felt",
+            "g26-ak-prices",
+            "tsa-fishing"
+          ]
+        },
+        {
+          "id": "layers",
+          "title": "What clothing and layers do you need by Alaska fishing season?",
+          "paragraphs": [
+            "Alaska weather shifts fast from sunny calm to sideways rain and cold glacial wind in the same afternoon. Build your kit around moisture-wicking merino wool or synthetic base layers, an insulating fleece or synthetic pullover, and a hooded waterproof rain jacket plus waterproof rain pants. Pack a soft-sided waterproof duffel bag (easier for floatplanes and small bush planes than hard-shell rollers) and a 10 to 20 L dry bag for spare gloves, wool socks, and cameras."
+          ],
+          "table": {
+            "heads": [
+              "Season window",
+              "Typical fisheries",
+              "Base and mid-layers",
+              "Outer shell, footwear, and extras"
+            ],
+            "rows": [
+              [
+                "May to June (early season)",
+                "Early sockeye, king salmon, halibut, spring trout",
+                "Midweight merino wool or synthetic base top/bottoms, heavier fleece pullover, 3–4 pairs wool socks",
+                "Waterproof rain jacket and rain pants, warm beanie, fingerless wool/fleece gloves, polarized amber glasses, bug repellent"
+              ],
+              [
+                "July to August (peak summer)",
+                "Peak sockeye, pink, chum, early silver (coho) salmon, halibut",
+                "Lightweight merino or synthetic base layer, light fleece or packable insulated vest, 3–4 pairs wool socks",
+                "Waterproof rain shell and rain pants, brimmed sun cap, polarized sunglasses, insect repellent and head net, soft duffel + dry bag"
+              ],
+              [
+                "September to October (late season)",
+                "Late coho salmon, trophy rainbow trout, steelhead, Dolly Varden",
+                "Heavyweight merino wool base top/bottoms, thick fleece mid-layer, windproof beanie, 4+ pairs wool socks",
+                "Heavy-duty waterproof rain jacket and rain pants, warm gloves, headlamp for shorter daylight, sealed dry spare outfit"
+              ]
+            ]
+          },
+          "sources": [
+            "g26-situk"
+          ]
+        },
+        {
+          "id": "cotton",
+          "title": "Can you wear jeans or cotton on an Alaska fishing trip?",
+          "paragraphs": [
+            "Do not wear jeans, cotton hoodies, or cotton socks on the water. Cotton holds water and sweat next to your skin, drains body heat under breathable waders or rain gear, and rarely dries overnight in coastal humidity.",
+            "Pack one pair of jeans or casual trousers strictly for evenings at the lodge, town dinners, or the commercial flight home. Under waders and rain pants, wear merino wool or synthetic fleece pants and wool socks."
           ],
           "sources": []
         },
         {
-          "id": "when",
-          "title": "When to pack and choose quantities",
+          "id": "rules",
+          "title": "What Alaska fishing license and footwear rules apply before you pack?",
           "paragraphs": [
-            "Choose the named fishery and target before clothing or tackle. For the Situk example, ADF&G describes June–July sockeye entry and different coho reach choices. A general Alaska salmon label is not enough.",
-            "Set clothing quantities around the actual duration, laundry and drying access. Recheck the local forecast before departure. For a multi-day trip, keep one dry backup available rather than assume wet clothing will dry overnight."
+            "Two statewide Alaska Department of Fish and Game (ADF&G) rules catch visiting anglers off guard: felt-soled wading boots are illegal in Alaska fresh waters, and every nonresident angler age 16 or older must carry a valid Alaska sport fishing license (plus a King Salmon stamp if fishing for king salmon). Check ADF&G emergency orders for your exact river or bay the week you travel."
+          ],
+          "table": {
+            "heads": [
+              "Rule or permit (checked 2026-11-28)",
+              "Official requirement",
+              "Packing or purchase action",
+              "Agency source"
+            ],
+            "rows": [
+              [
+                "Felt-soled wading boots ban",
+                "Absorbent felt or fibrous soles are prohibited in Alaska fresh waters to stop invasive species such as Didymo and whirling disease.",
+                "Pack rubber-soled or metal-studded wading boots only; clean and dry gear between waters.",
+                "ADF&G Invasive Species Prevention"
+              ],
+              [
+                "Nonresident sport fishing license (age 16+)",
+                "Required for all nonresidents age 16 and older. Official fees: 1-day $15, 3-day $30, 7-day $45, 14-day $75, Annual $100.",
+                "Buy online before departure and carry a printed or offline digital copy with photo ID.",
+                "ADF&G License Prices"
+              ],
+              [
+                "King Salmon stamp & emergency orders",
+                "Separate King Salmon stamp required when targeting king salmon; area closures can change on short notice.",
+                "Check ADF&G Sport Regulations and Emergency Orders for your river before packing terminal tackle.",
+                "ADF&G Sport Regulations & Orders"
+              ],
+              [
+                "TSA carry-on vs checked rods and tackle",
+                "Fishing rods are allowed in carry-on (if within airline size limits) and checked bags; sharp hooks and large lures belong wrapped in checked bags.",
+                "Put reels and small flies in carry-on; sheath sharp hooks, knives, and pliers in checked luggage.",
+                "TSA What Can I Bring"
+              ],
+              [
+                "Airline sporting equipment & fish boxes",
+                "Airlines apply sporting-equipment and checked-baggage rules to rod tubes, tackle boxes, and insulated seafood boxes.",
+                "Confirm your carrier's rod-tube length, weight cap, and fish-box rules—and any floatplane weight cap—before departure.",
+                "Alaska Airlines Sports Equipment"
+              ]
+            ]
+          },
+          "sources": [
+            "ak-felt",
+            "g26-ak-prices",
+            "g26-ak-rules",
+            "g26-ak-orders",
+            "tsa-fishing",
+            "alaska-air-sports"
+          ]
+        },
+        {
+          "id": "best-month",
+          "title": "What is the best month to fish in Alaska?",
+          "paragraphs": [
+            "There is no single best month for all of Alaska—your target species sets your packing list. June and July bring peak sockeye salmon runs and long summer daylight across Southcentral and Southeast waters such as the Situk River and Kenai Peninsula; August and September shift toward silver (coho) salmon and heavier rain; late September and October favor rainbow trout, Dolly Varden, and steelhead with colder mornings.",
+            "Pick your named water and target species first, then match your layers, bug protection, and footwear to that month's conditions."
           ],
           "sources": [
             "g26-situk"
           ]
         },
         {
-          "id": "bring",
-          "title": "What to bring by fishing day",
-          "paragraphs": [],
-          "table": {
-            "heads": [
-              "Day",
-              "Personal kit",
-              "Confirm before purchase"
-            ],
-            "rows": [
-              [
-                "River bank or wade",
-                "Layer system, rain shell, dry bag and backup socks.",
-                "Whether you will wade; wader size, boots and permitted soles."
-              ],
-              [
-                "Guided river float",
-                "Personal layers, day food, water and protected essentials.",
-                "Shuttle, boat safety equipment and the full route duration."
-              ],
-              [
-                "Saltwater boat",
-                "Boat-approved shoes, weather layers and compact storage.",
-                "Heavy tackle, fighting support, fish handling and motion comfort."
-              ],
-              [
-                "Lodge or remote transfer",
-                "Travel documents, agreed luggage and a wet-gear bag.",
-                "Aircraft or boat baggage rules, drying facilities and what camp supplies."
-              ]
-            ]
-          },
-          "sources": []
-        },
-        {
-          "id": "how",
-          "title": "How to build a layer and luggage plan",
+          "id": "tipping",
+          "title": "How much should you tip an Alaska fishing guide?",
           "paragraphs": [
-            "Try your base layer, insulation and shell together before packing. Check movement and fit. Use the actual forecast and time exposed to decide the weight; this article does not give one temperature rating for all Alaska.",
-            "Separate the first fishing day’s essentials from the larger travel bag. Protect the dry backup from wet boots or waders. Confirm baggage limits with every transport provider and ask how rods must travel."
-          ],
-          "sources": []
-        },
-        {
-          "id": "provided",
-          "title": "What the guide provides: check sizes and transport",
-          "paragraphs": [
-            "Request rods, reels, line systems, terminal tackle, waders, boots, life jackets and any shuttle as named items. Ask about sizes and replacement options. “Fishing equipment included” does not prove clothing or transport provision.",
-            "Confirm food, water, drying space and any catch processing separately. Agree the legal retention plan before arranging a box or freezer space. No lodge package is verified by this article."
+            "Standard practice across Alaska charters and lodges is to bring cash for guide gratuities, as remote lodges often cannot add tips to a credit card. Because tipping norms vary between half-day salt charters, full-day river guides, and all-inclusive lodges (where lodge staff and boat guides may be tipped separately), ask your booking contact for their written tipping guideline before you fly.",
+            "Separate cash envelopes for a day guide or multi-day lodge staff save an ATM hunt in small coastal towns."
           ],
           "sources": []
         },
         {
           "id": "mistakes",
-          "title": "Local mistakes to avoid",
+          "title": "What common Alaska fishing packing mistakes should you avoid?",
           "paragraphs": [],
           "items": [
-            "Buying a generic salmon setup before choosing the species and method.",
-            "Packing waders for every boat day.",
-            "Omitting the shuttle from a river-float plan.",
-            "Assuming a small-aircraft transfer accepts the same luggage as an airline.",
-            "Packing wet and dry equipment together on the trip home."
-          ],
-          "sources": []
-        },
-        {
-          "id": "rules",
-          "title": "Regulations and licenses",
-          "paragraphs": [
-            "Use ADF&G’s license and sport-regulations pages for the named water and target. Check emergency orders near the trip date. For the Situk, select the Southeast/Yakutat context.",
-            "Ask the operator to identify the legal method, current restrictions and required documents. Follow official pages for current fees and limits. A travel packing list does not establish a legal harvest allowance."
+            "Bringing felt-soled wading boots—they are illegal in Alaska fresh waters and guides will turn them away at the river.",
+            "Wearing cotton shirts, cotton socks, or jeans under waders or rain gear instead of merino wool or synthetic fleece.",
+            "Packing a hard-shell wheeled suitcase for a floatplane or bush-plane lodge transfer instead of a soft-sided duffel bag.",
+            "Forgetting waterproof rain pants—a rain jacket alone leaves your legs soaked on open boat runs and brushy banks.",
+            "Packing sharp hooks, fillet knives, or pliers in your carry-on bag instead of sheathing them in checked baggage.",
+            "Assuming a lodge package includes waders, boots, fish processing, or airline fish boxes without checking the written quote."
           ],
           "sources": [
-            "g26-ak-license",
-            "g26-ak-rules",
-            "g26-ak-orders"
+            "ak-felt",
+            "tsa-fishing"
           ]
         }
       ],
       "faq": [
         {
-          "q": "Do I need waders for an Alaska fishing trip?",
-          "a": "Only if the actual access and method call for them. Ask about provision, fit and footwear before buying."
+          "q": "Are felt-soled waders banned in Alaska?",
+          "a": "Yes. The Alaska Board of Fisheries prohibits absorbent felt or fibrous soles in Alaska fresh waters to prevent spreading invasive species such as Didymo and whirling disease. Pack rubber-soled or metal-studded wading boots instead."
         },
         {
-          "q": "How many dry clothing sets should I bring?",
-          "a": "Start with a usable layer system and a separate dry backup. Adjust quantities for duration, laundry, drying access and baggage restrictions."
+          "q": "Can I wear jeans on an Alaska fishing trip?",
+          "a": "Save jeans for evenings at the lodge or flights. On the river or boat, jeans and cotton hold cold moisture under waders and rain gear; wear merino wool or synthetic fleece pants and wool socks."
         },
         {
-          "q": "Does a lodge package include fish processing?",
-          "a": "Do not assume so. Ask about processing, storage, packaging and transport as separate items in the written quote."
+          "q": "Do nonresidents need an Alaska fishing license, and what does it cost?",
+          "a": "Nonresidents age 16 and older need an Alaska sport fishing license. Verified ADF&G nonresident fees are $15 (1-day), $30 (3-day), $45 (7-day), $75 (14-day), and $100 (annual), plus a King Salmon stamp if targeting king salmon."
+        },
+        {
+          "q": "Can I bring fishing rods in my carry-on bag to Alaska?",
+          "a": "TSA permits fishing rods in both carry-on and checked bags, provided a carry-on rod fits your airline's cabin size limits. Pack sharp hooks, knives, and heavy terminal tackle sheathed in checked baggage."
+        },
+        {
+          "q": "Should I pack a hard suitcase or a soft duffel bag for an Alaska fishing lodge?",
+          "a": "Pack a soft-sided waterproof duffel bag. Small floatplanes and bush planes have tight cargo compartments and weight limits that often reject rigid wheeled suitcases."
+        },
+        {
+          "q": "Do Alaska fishing lodges supply waders, rods, and fish boxes?",
+          "a": "Policies vary by operator. Ask for a written list covering breathable waders, rubber-soled boots, rods, reels, tackle, vacuum-packing, and insulated fish boxes before you buy or pack your own."
         }
       ],
       "relatedTrips": [
@@ -5195,10 +5306,10 @@
       },
       "regionPath": "/north-america/united-states/alaska/",
       "regionLabel": "Explore Alaska trips",
-      "nextStep": "List your river, boat and transfer days. Ask the operator which equipment and transport it will provide.",
+      "nextStep": "Print your checklist above, confirm your operator's supplied gear, and buy your Alaska sport fishing license before you fly.",
       "new": false,
-      "plannerNote": "The planner starts with the Situk River. Change the destination for a boat or lodge day, and keep each method’s equipment separate.",
-      "revision": "Expanded the existing article with a decision checklist, official source links, a reel and a visible FAQ."
+      "plannerNote": "The planner starts with the Situk River. Change the destination for a boat or lodge day, and keep your river, boat, and travel kits separate.",
+      "revision": "Rebuilt with printable interactive checklist, by-season 3-layer table, verified ADF&G felt-sole ban and nonresident license fees, TSA rod rules, and PAA answers."
     },
     {
       "slug": "florida-keys-fishing-packing-list",

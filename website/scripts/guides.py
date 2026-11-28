@@ -122,6 +122,9 @@ def render(guide, content, trips, root, origin, path):
         paragraphs = section.get('paragraphs', [])
         if paragraphs:
             article += '<div class="guide-notes">' + ''.join('<p>' + E(p) + (citations(section.get('sources', []), numbers) if i == len(paragraphs) - 1 else '') + '</p>' for i, p in enumerate(paragraphs)) + '</div>'
+        if section.get('type') == 'alaska-packing-worksheet':
+            from alaska_packing import render as render_alaska_packing
+            article += render_alaska_packing()
         if section.get('table'):
             table = section['table']
             article += '<p class="guide-table-hint">Scroll the table to compare all columns.</p><div class="guide-table" role="region" tabindex="0" aria-label="' + E(section['title'], quote=True) + '"><table><thead><tr>'
